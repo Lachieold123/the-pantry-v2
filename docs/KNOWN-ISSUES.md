@@ -14,3 +14,6 @@ Things deliberately deferred. Each has a phase in which it gets fixed. Nothing h
 | K-8 | Sentry isn't set up: it needs a Sentry account and project (the map wants a DSN from the first build). | Needs Lachlan to create the project. | Before first TestFlight |
 | K-9 | Cook Mode moves on by tapping the screen or Next; swiping between steps isn't built yet. | Tap works one-handed with messy fingers; swipe needs a gesture library check on the phone first. | Phase 9 |
 | K-10 | Component and journey test coverage is thin: 3 component tests, no Maestro flows yet. The domain maths is well covered (97 tests). | Maestro needs Xcode's simulator, which was still installing. | Phase 9 (start once Xcode is ready) |
+| K-11 | On the web preview, multi-line fields (ingredients, method) scroll inside a fixed box instead of growing. | Web-only; on phones they grow with the text. | Phase 9 if it shows on a phone |
+| K-12 | The old-app import is tested with sample data only. It needs one run on a phone that has the old TestFlight build installed (map Phase 7 "done when"). | Needs Lachlan's phone. | Before first TestFlight |
+| K-13 | An imported recipe keeps the link it came from, but the recipe page doesn't show it yet (only the editor does). | Small; wants a design for credits on your own recipes. | Phase 9 |

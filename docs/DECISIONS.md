@@ -114,3 +114,30 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
 
 - **Date:** 29 September 2026 · **Decided by:** Claude (delegated)
 - **Decision:** Package installs and Expo builds run in the Claude workspace on Lachlan's Mac mini (which can reach npm); commits come back through this session to GitHub. Supersedes the "cloud workspace" part of D-002.
+
+## D-021 · Your own recipes are stored as the words you typed
+
+- **Date:** 29 September 2026 · **Decided by:** Claude (delegated)
+- **Decision:** A recipe you write or import is saved as its text (ingredients one per line, method one step per line) and turned into a structured recipe each time it's read, using the same parser as the catalogue. Ids start with `my-`, so they can never clash with a built-in recipe. An unfinished recipe (no cuisine, no method) is kept under "To finish" and can't be planned or cooked until it's complete.
+- **Why:** One source of truth. Editing never fights a half-converted copy, and improvements to the parser or ingredient database fix old recipes for free.
+
+## D-022 · Import from a link reads the recipe sites embed for search engines
+
+- **Date:** 29 September 2026 · **Decided by:** Claude (delegated)
+- **Decision:** The phone fetches the page and reads its schema.org "Recipe" data (JSON-LD), never the visible layout. The result opens in the editor to check before anything is saved. Photos aren't imported in v1. Sites that block apps or hide their data get a plain message and a "Write it in by hand" button.
+
+## D-023 · "Tonight, for you" rules
+
+- **Date:** 29 September 2026 · **Decided by:** Claude (delegated)
+- **Decision:** Diet, avoid list and hidden dishes are hard rules (as in Surprise me). Loved cuisines and weeknight time only move recipes up the list, so picky answers still get a suggestion. Planned and recently cooked dishes move down. The order is fixed for the day. Used by the onboarding reveal and by Today when nothing is planned.
+
+## D-024 · How the old-app import works (extends D-005)
+
+- **Date:** 29 September 2026 · **Decided by:** Claude (delegated, within D-005)
+- **Decision:**
+  - Reads the old app's saved data (`the-pantry/v1`, or the two older key names) once, on first launch, before the first screen. The old data is never changed or deleted.
+  - A marker is written before anything is applied, so an interrupted import can't run twice and duplicate things. Everything is merged into what's already there.
+  - References to dishes that exist in the catalogue are kept even if the dish isn't vetted yet, so they reappear once it is. Only dishes missing entirely are dropped, and the "Welcome back" line says how many.
+  - An old edited built-in recipe comes across as "(my version)" of your own; references keep pointing at the built-in.
+  - If the tester finished the old onboarding, their answers carry over and the welcome is skipped.
+- **Still needs:** a check on a phone that has the old TestFlight build (K-12).

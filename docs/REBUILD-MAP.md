@@ -1,7 +1,7 @@
 # The Pantry v2: Rebuild Map
 
 **Owner:** Lachlan · **Builder:** Claude, with Expo (D-001, D-002) · **Written:** 29 September 2026 · **Last updated:** 29 September 2026
-**Status:** Phases 0–2 done; Phases 3–6 built (see each phase's status line); next is Phase 7. Code: github.com/Lachieold123/the-pantry-v2.
+**Status:** Phases 0–2 done; Phases 3–7 built (see each phase's status line); next is Phase 9 polish, with Phase 8 (Pro) waiting on Lachlan. Code: github.com/Lachieold123/the-pantry-v2.
 
 This is the blueprint for rebuilding The Pantry from the ground up. It covers:
 
@@ -532,7 +532,7 @@ Each phase lists its **Goal**, **Build** (what gets built), **Done when** (accep
   - The editor validates with the same schema as the catalogue.
 - **Reference:** old `CookmarksModal`, `CollectionsModal`, `RecipeEditorModal`, `CustomMealsModal`, `importRecipe`.
 
-> **Status 29 Sep:** saving, collections, hiding a recipe and recently viewed are built. **Still to do:** the recipe editor and import (user recipes).
+> **Status 29 Sep:** built. Saving, collections, hiding a recipe, recently viewed, and your own recipes: a text-first editor, import from a link, drafts kept to finish later, edit, share as text and delete with undo (D-021, D-022).
 
 ### Phase 5: Plan and Shop (the heart of the app)
 
@@ -584,6 +584,8 @@ These are built late on purpose, because they combine everything else.
   - Old data imports correctly on a phone that has the old TestFlight build installed.
 - **Question first:** held-back recipes, the old weekday plan, and free-text custom recipes (`PRODUCT.md` §6, decisions C–E).
 - **Reference:** old `OnboardingModal`, `FirstRunChecklist`, `useStore` legacy-key migration.
+
+> **Status 29 Sep:** built. Welcome → two taste questions → "Tonight, for you" reveal → optional Sunday reminder, skippable anywhere, five taps to a planned dinner. Today suggests a dinner when nothing is planned and shows the one-line "Welcome back" after an old-app import (D-023, D-024). **Still to do:** the import check on a phone with the old TestFlight build (K-12); an editorial pick on Today waits for vetted content.
 
 ### Phase 8: Pro
 
