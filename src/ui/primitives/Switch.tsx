@@ -19,9 +19,9 @@ export function Switch({ label, detail, value, onChange }: Props) {
         value={value}
         onValueChange={onChange}
         accessibilityLabel={label}
-        trackColor={{ true: colours.accent, false: colours.surfaceSunken }}
+        trackColor={{ true: colours.accent, false: colours.inkMuted }}
         thumbColor={colours.surface}
-        ios_backgroundColor={colours.surfaceSunken}
+        ios_backgroundColor={colours.inkMuted}
       />
     </View>
   );

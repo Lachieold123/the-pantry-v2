@@ -3,6 +3,7 @@ import { View } from 'react-native';
 
 import { splitStepTimers } from '@/domain/cook/cook';
 import { formatLine, scaleLine, type UnitSystem } from '@/domain/ingredients/format';
+import { substitutionFor } from '@/domain/recipes/substitutions';
 import type { Recipe } from '@/domain/recipes/types';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { Divider } from '@/ui/primitives/Divider';
@@ -16,14 +17,18 @@ export function Ingredients({ recipe, servings, units }: { recipe: Recipe; servi
       {recipe.ingredientGroups.map((group, gi) => (
         <View key={gi} style={{ gap: SPACE.xxs }}>
           {group.title ? <Text variant="kicker">{group.title}</Text> : null}
-          {group.items.map((line, li) => (
-            <View key={li}>
-              <Text variant="body" style={{ paddingVertical: SPACE.xs }}>
-                {capitalise(formatLine(scaleLine(line, ratio), units))}
-              </Text>
-              <Divider />
-            </View>
-          ))}
+          {group.items.map((line, li) => {
+            const tip = substitutionFor(line.ingredientId);
+            return (
+              <View key={li}>
+                <View style={{ paddingVertical: SPACE.xs, gap: 2 }}>
+                  <Text variant="body">{capitalise(formatLine(scaleLine(line, ratio), units))}</Text>
+                  {tip ? <Text variant="meta">{tip}</Text> : null}
+                </View>
+                <Divider />
+              </View>
+            );
+          })}
         </View>
       ))}
     </View>

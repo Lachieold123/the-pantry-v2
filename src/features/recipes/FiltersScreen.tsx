@@ -1,0 +1,126 @@
+// The filters sheet (map Phase 3): results update as you choose, and the
+// footer says exactly how many recipes you'll see.
+import { useRouter } from 'expo-router';
+import { View } from 'react-native';
+
+import type { DietPreference } from '@/domain/recipes/diets';
+import { CUISINE_LABELS, MEAL_TYPE_LABELS } from '@/domain/recipes/labels';
+import { seasonOn, type TimeFilter } from '@/domain/recipes/search';
+import { CUISINES, DIFFICULTIES, MEAL_TYPES } from '@/domain/recipes/types';
+import { toggleIn, useRecipeFilters } from '@/store/recipeFilters';
+import { ActionBar } from '@/ui/patterns/ActionBar';
+import { SectionHeader } from '@/ui/patterns/SectionHeader';
+import { Button } from '@/ui/primitives/Button';
+import { Chip } from '@/ui/primitives/Chip';
+import { Sheet } from '@/ui/primitives/Sheet';
+import { Switch } from '@/ui/primitives/Switch';
+import { SPACE } from '@/ui/tokens/type';
+import { useRecipeResults } from './useRecipeResults';
+
+const DIETS: readonly { value: DietPreference; label: string }[] = [
+  { value: 'everything', label: 'Everything' },
+  { value: 'vegetarian', label: 'Vegetarian' },
+  { value: 'vegan', label: 'Vegan' },
+  { value: 'pescatarian', label: 'Pescatarian' },
+];
+const TIMES: { value: TimeFilter; label: string }[] = [
+  { value: 'under-30', label: '30 min or less' },
+  { value: 'under-45', label: '45 min or less' },
+  { value: 'under-60', label: 'An hour or less' },
+  { value: 'over-60', label: 'Longer cooks' },
+];
+const DIFFICULTY_LABELS = { easy: 'Easy', medium: 'Medium', hard: 'Hard' } as const;
+
+function ChipRow({ children }: { children: React.ReactNode }) {
+  return <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: SPACE.xs }}>{children}</View>;
+}
+
+export function FiltersScreen() {
+  const router = useRouter();
+  const { filters, update, clear } = useRecipeFilters();
+  const { results, activeFilters, browsing } = useRecipeResults();
+  const season = seasonOn(new Date());
+  const count = browsing ? 'all recipes' : results.length === 1 ? '1 recipe' : `${results.length} recipes`;
+
+  return (
+    <View style={{ flex: 1 }}>
+      <Sheet title="Filters" onClose={() => router.back()}>
+        <View style={{ gap: SPACE.sm }}>
+          <SectionHeader title="Diet" />
+          <ChipRow>
+            {DIETS.map((d) => (
+              <Chip key={d.value} label={d.label} selected={filters.diet === d.value} onPress={() => update({ diet: d.value })} />
+            ))}
+          </ChipRow>
+        </View>
+        <View style={{ gap: SPACE.sm }}>
+          <SectionHeader title="Time" />
+          <ChipRow>
+            {TIMES.map((t) => (
+              <Chip
+                key={t.value}
+                label={t.label}
+                selected={filters.time === t.value}
+                onPress={() => update(filters.time === t.value ? { time: undefined } : { time: t.value })}
+              />
+            ))}
+          </ChipRow>
+        </View>
+        <View style={{ gap: SPACE.sm }}>
+          <SectionHeader title="Meal" />
+          <ChipRow>
+            {MEAL_TYPES.map((m) => (
+              <Chip
+                key={m}
+                label={MEAL_TYPE_LABELS[m]}
+                selected={filters.mealTypes.includes(m)}
+                onPress={() => update({ mealTypes: toggleIn(filters.mealTypes, m) })}
+              />
+            ))}
+          </ChipRow>
+        </View>
+        <View style={{ gap: SPACE.sm }}>
+          <SectionHeader title="Difficulty" />
+          <ChipRow>
+            {DIFFICULTIES.map((d) => (
+              <Chip
+                key={d}
+                label={DIFFICULTY_LABELS[d]}
+                selected={filters.difficulties.includes(d)}
+                onPress={() => update({ difficulties: toggleIn(filters.difficulties, d) })}
+              />
+            ))}
+          </ChipRow>
+        </View>
+        <View>
+          <Switch label="One pot or pan" detail="Fewer dishes to wash" value={filters.onePot} onChange={(onePot) => update({ onePot })} />
+          <Switch
+            label="In season now"
+            detail={`Recipes that suit ${season}`}
+            value={filters.inSeason === season}
+            onChange={(on) => update({ inSeason: on ? season : undefined })}
+          />
+        </View>
+        <View style={{ gap: SPACE.sm }}>
+          <SectionHeader title="Cuisine" />
+          <ChipRow>
+            {CUISINES.map((c) => (
+              <Chip
+                key={c}
+                label={CUISINE_LABELS[c]}
+                selected={filters.cuisines.includes(c)}
+                onPress={() => update({ cuisines: toggleIn(filters.cuisines, c) })}
+              />
+            ))}
+          </ChipRow>
+        </View>
+      </Sheet>
+      <ActionBar>
+        <Button label="Clear all" kind="quiet" onPress={clear} disabled={activeFilters === 0} />
+        <View style={{ flex: 1 }}>
+          <Button label={`Show ${count}`} kind="primary" block onPress={() => router.back()} />
+        </View>
+      </ActionBar>
+    </View>
+  );
+}

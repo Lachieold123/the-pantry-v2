@@ -48,6 +48,7 @@ function RootStack() {
       <Stack.Screen name="settings/index" options={{ presentation: 'modal' }} />
       <Stack.Screen name="dev/gallery" />
       <Stack.Screen name="recipe/[id]" />
+      <Stack.Screen name="filters" options={{ presentation: 'formSheet', sheetAllowedDetents: [0.75, 1], sheetGrabberVisible: true }} />
     </Stack>
   );
 }

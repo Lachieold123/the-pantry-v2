@@ -34,6 +34,7 @@ type Tags = { title: string; cuisine: CuisineId; mealTypes: MealType[]; onePot: 
 type Credit = { photographer?: string; source?: string };
 type Replacement = { from: string; to: string };
 type Fix = { steps?: Replacement[]; ingredients?: Replacement[]; addNotes?: string[] };
+type GlobalReplacement = { from: string; to: string; why: string };
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const oldApp = process.argv[2];
@@ -45,7 +46,21 @@ if (!oldApp || !existsSync(join(oldApp, 'src/data/recipes.ts'))) {
 const { RECIPES } = (await import(pathToFileURL(join(oldApp, 'src/data/recipes.ts')).href)) as { RECIPES: Record<string, OldRecipe> };
 const tags = JSON.parse(readFileSync(join(root, 'scripts/data/recipe-tags.json'), 'utf8')) as Record<string, Tags>;
 const credits = JSON.parse(readFileSync(join(oldApp, 'src/data/recipeImageCredits.json'), 'utf8')) as Record<string, Credit>;
-const { fixes } = JSON.parse(readFileSync(join(root, 'scripts/data/recipe-fixes.json'), 'utf8')) as { fixes: Record<string, Fix> };
+const { fixes, everywhere } = JSON.parse(readFileSync(join(root, 'scripts/data/recipe-fixes.json'), 'utf8')) as {
+  fixes: Record<string, Fix>;
+  everywhere: GlobalReplacement[];
+};
+
+/** Wording changes applied to every ingredient line and step, matching case at the start of a sentence. */
+function applyEverywhere(text: string): string {
+  let out = text;
+  for (const r of everywhere) {
+    out = out.replace(new RegExp(r.from, 'gi'), (m) =>
+      m[0] === m[0]?.toUpperCase() ? r.to.charAt(0).toUpperCase() + r.to.slice(1) : r.to,
+    );
+  }
+  return out;
+}
 const applied: string[] = [];
 
 /** Replace text that must appear exactly once in the list; anything else is a conversion error. */
@@ -72,7 +87,13 @@ const problems: string[] = [];
 const noImage: string[] = [];
 
 for (const id of Object.keys(RECIPES).sort()) {
-  const old = RECIPES[id] as OldRecipe;
+  const source = RECIPES[id] as OldRecipe;
+  const old: OldRecipe = {
+    ...source,
+    ingredients: source.ingredients.map((g) => ({ ...g, items: g.items.map(applyEverywhere) })),
+    steps: source.steps.map(applyEverywhere),
+    ...(source.notes ? { notes: source.notes.map(applyEverywhere) } : {}),
+  };
   const tag = tags[id];
   if (!tag) {
     problems.push(`${id}: no tags in scripts/data/recipe-tags.json`);

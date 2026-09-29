@@ -96,10 +96,10 @@ export type RecipeFilters = {
   cuisines: CuisineId[];
   diet: DietPreference;
   mealTypes: MealType[];
-  time?: TimeFilter;
+  time?: TimeFilter | undefined;
   difficulties: Difficulty[];
   onePot: boolean;
-  inSeason?: Season;
+  inSeason?: Season | undefined;
 };
 
 export const NO_FILTERS: RecipeFilters = { cuisines: [], diet: 'everything', mealTypes: [], difficulties: [], onePot: false };

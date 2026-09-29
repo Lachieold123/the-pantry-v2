@@ -5,6 +5,7 @@ import { catalogue, index, makeRecipe } from '../testing/fixtures';
 import { containsAvoided, deriveDiets, fitsDietPreference } from './diets';
 import { countActiveFilters, editDistance, indexForSearch, matchesFilters, NO_FILTERS, searchRecipes, seasonOn } from './search';
 import { allLines } from './types';
+import { substitutionFor, SUBSTITUTION_IDS } from './substitutions';
 import { validateRecipe } from './validate';
 
 const diets = (lines: string[]) => deriveDiets(allLines(makeRecipe('x', lines)), index.byId);
@@ -172,5 +173,20 @@ describe('validateRecipe', () => {
     assert.ok(p.includes('ingredientGroups[0].items[0]'));
     assert.ok(p.includes('ingredientGroups[0].items[1].quantity'));
     assert.ok(p.includes('ingredientGroups[1]'));
+  });
+});
+
+describe('substitutions', () => {
+  it('every tip is for an ingredient that exists in the database', () => {
+    for (const id of SUBSTITUTION_IDS) assert.ok(index.byId.has(id), id);
+  });
+  it('finds a tip by ingredient, however the recipe words it', () => {
+    const line = makeRecipe('r', ['250ml buttermilk, well shaken']).ingredientGroups[0]?.items[0];
+    assert.match(substitutionFor(line?.ingredientId) ?? '', /No buttermilk/);
+    assert.equal(substitutionFor(undefined), undefined);
+    assert.equal(substitutionFor('brown-onion'), undefined);
+  });
+  it('makes no allergy promises', () => {
+    for (const id of SUBSTITUTION_IDS) assert.doesNotMatch(substitutionFor(id) ?? '', /gluten-free|allergy|safe for/i, id);
   });
 });
