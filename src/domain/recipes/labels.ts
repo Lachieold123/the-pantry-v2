@@ -1,5 +1,6 @@
 // How the app names things to the cook, in Australian English.
 import type { AisleId } from '../ingredients/database';
+import type { AvoidOption, DietPreference } from './diets';
 import type { CuisineId, DietTag, MealType } from './types';
 
 export const CUISINE_LABELS: Readonly<Record<CuisineId, string>> = {
@@ -71,3 +72,26 @@ export function formatMinutes(total: number): string {
   const m = total % 60;
   return m === 0 ? `${h} hr` : `${h} hr ${m}`;
 }
+
+export const AVOID_LABELS: Readonly<Record<AvoidOption, string>> = {
+  nuts: 'Nuts',
+  shellfish: 'Shellfish',
+  fish: 'Fish',
+  pork: 'Pork',
+  beef: 'Beef',
+  lamb: 'Lamb',
+  dairy: 'Dairy',
+  eggs: 'Eggs',
+  gluten: 'Gluten',
+  sesame: 'Sesame',
+  soy: 'Soy',
+  spicy: 'Chilli heat',
+  alcohol: 'Alcohol',
+};
+
+export const DIET_PREFERENCE_LABELS: Readonly<Record<DietPreference, string>> = {
+  everything: 'Everything',
+  vegetarian: 'Vegetarian',
+  vegan: 'Vegan',
+  pescatarian: 'Pescatarian',
+};

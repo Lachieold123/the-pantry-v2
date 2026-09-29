@@ -41,10 +41,13 @@
           "imageWidth": 160,
           "resizeMode": "contain",
           "backgroundColor": "#F7F3EA",
-          "dark": { "backgroundColor": "#0A0A0A" }
+          "dark": {
+            "backgroundColor": "#0A0A0A"
+          }
         }
       ],
-      "expo-font"
+      "expo-font",
+      "expo-notifications"
     ],
     "experiments": {
       "typedRoutes": true

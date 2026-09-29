@@ -10,6 +10,7 @@ import { CUISINE_LABELS } from '@/domain/recipes/labels';
 import { seasonOn } from '@/domain/recipes/search';
 import { totalMinutes, type CuisineId, type Recipe } from '@/domain/recipes/types';
 import { useRecipeFilters } from '@/store/recipeFilters';
+import { useSaved } from '@/store/saved';
 import { RecipeCard } from '@/ui/patterns/RecipeCard';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { Button } from '@/ui/primitives/Button';
@@ -48,17 +49,20 @@ function Shelf({ title, recipes, onSeeAll }: { title: string; recipes: Recipe[];
 export function BrowseSections() {
   const update = useRecipeFilters((s) => s.update);
   const season = seasonOn(new Date());
+  const hidden = useSaved((s) => s.hidden);
   const shelves = useMemo(() => {
-    const inSeason = CATALOGUE.filter((r) => r.seasons?.includes(season));
-    const quick = CATALOGUE.filter((r) => r.mealTypes.includes('dinner') && totalMinutes(r) <= 30);
+    // "Not for us" dishes never appear on the shelves.
+    const visible = CATALOGUE.filter((r) => !hidden.includes(r.id));
+    const inSeason = visible.filter((r) => r.seasons?.includes(season));
+    const quick = visible.filter((r) => r.mealTypes.includes('dinner') && totalMinutes(r) <= 30);
     const counts = new Map<CuisineId, number>();
-    for (const r of CATALOGUE) counts.set(r.cuisine, (counts.get(r.cuisine) ?? 0) + 1);
+    for (const r of visible) counts.set(r.cuisine, (counts.get(r.cuisine) ?? 0) + 1);
     const topCuisines = [...counts]
       .sort((a, b) => b[1] - a[1])
       .slice(0, 4)
       .map(([c]) => c);
-    return { inSeason, quick, topCuisines };
-  }, [season]);
+    return { inSeason, quick, topCuisines, visible };
+  }, [season, hidden]);
 
   return (
     <View style={{ gap: SPACE.xl }}>
@@ -68,7 +72,7 @@ export function BrowseSections() {
         <Shelf
           key={c}
           title={CUISINE_LABELS[c]}
-          recipes={CATALOGUE.filter((r) => r.cuisine === c)}
+          recipes={shelves.visible.filter((r) => r.cuisine === c)}
           onSeeAll={() => update({ cuisines: [c] })}
         />
       ))}

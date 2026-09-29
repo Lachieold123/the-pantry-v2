@@ -5,7 +5,7 @@ import { View } from 'react-native';
 
 import { getCatalogueRecipe } from '@/data/catalogue/catalogue';
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
-import { recentlyCooked } from '@/domain/cook/cook';
+import { recentlyCooked, weeklyStreak } from '@/domain/cook/cook';
 import type { Recipe } from '@/domain/recipes/types';
 import { useCookLog } from '@/store/cookLog';
 import { useSaved } from '@/store/saved';
@@ -130,5 +130,11 @@ export function CookedList() {
       />
     );
   }
-  return <RecipeRows recipes={recipes} note={(r) => (times(r.id) === 1 ? 'Cooked once' : `Cooked ${times(r.id)} times`)} />;
+  const streak = weeklyStreak(log, new Date());
+  return (
+    <View style={{ gap: SPACE.md }}>
+      {streak >= 2 ? <SectionHeader title={`Cooking ${streak} weeks in a row`} /> : null}
+      <RecipeRows recipes={recipes} note={(r) => (times(r.id) === 1 ? 'Cooked once' : `Cooked ${times(r.id)} times`)} />
+    </View>
+  );
 }

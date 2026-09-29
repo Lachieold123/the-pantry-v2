@@ -1,6 +1,5 @@
 // The recipe page (map Phase 3): decide whether to cook it, then cook it.
-// Save and Plan live in the action bar; Cook joins it with Cook Mode (Phase 6),
-// hidden until then rather than shown as a dead button (map rule 4).
+// Save, Plan and Cook stay pinned in the action bar (map §6).
 import { useRouter } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { Share, View } from 'react-native';
@@ -151,9 +150,17 @@ export function RecipeScreen({ id }: { id: string }) {
           <Button
             label="Plan"
             icon="plan"
-            kind="primary"
             block
             onPress={() => router.push({ pathname: '/recipe/[id]/plan', params: { id: recipe.id } })}
+          />
+        </View>
+        <View style={{ flex: 1 }}>
+          <Button
+            label="Cook"
+            icon="timer"
+            kind="primary"
+            block
+            onPress={() => router.push({ pathname: '/recipe/[id]/cook', params: { id: recipe.id, servings: String(servings) } })}
           />
         </View>
       </ActionBar>

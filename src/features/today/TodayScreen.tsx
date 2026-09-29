@@ -11,6 +11,7 @@ import { EmptyState } from '@/ui/patterns/EmptyState';
 import { Masthead } from '@/ui/patterns/Masthead';
 import { RecipeCard } from '@/ui/patterns/RecipeCard';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
+import { Button } from '@/ui/primitives/Button';
 import { IconButton } from '@/ui/primitives/IconButton';
 import { Screen } from '@/ui/primitives/Screen';
 import { SPACE } from '@/ui/tokens/type';
@@ -36,19 +37,35 @@ export function TodayScreen() {
         action={<IconButton icon="settings" label="Settings" onPress={() => router.push('/settings')} />}
       />
       {tonight && tonightRecipe ? (
-        <RecipeCard
-          recipe={tonightRecipe}
-          image={RECIPE_IMAGES[tonightRecipe.id]}
-          size="large"
-          note={`Dinner for ${tonight.servings}`}
-          onPress={() => open(tonightRecipe.id)}
-        />
+        <View style={{ gap: SPACE.md }}>
+          <RecipeCard
+            recipe={tonightRecipe}
+            image={RECIPE_IMAGES[tonightRecipe.id]}
+            size="large"
+            note={`Dinner for ${tonight.servings}`}
+            onPress={() => open(tonightRecipe.id)}
+          />
+          <Button
+            label="Cook"
+            icon="timer"
+            kind="primary"
+            block
+            onPress={() =>
+              router.push({ pathname: '/recipe/[id]/cook', params: { id: tonightRecipe.id, servings: String(tonight.servings) } })
+            }
+          />
+        </View>
       ) : (
         <EmptyState
           title="Nothing planned for tonight"
-          body="Plan a few dinners and tonight’s shows up here, ready to cook. Until then, find something you’d like to make."
-          action={{ label: 'Browse recipes', onPress: () => router.navigate('/recipes') }}
+          body="Plan a few dinners and tonight’s shows up here, ready to cook. Or let us choose."
+          action={{ label: 'Surprise me', onPress: () => router.push('/surprise') }}
         />
+      )}
+      {tonight && tonightRecipe ? (
+        <Button label="Not feeling it? Surprise me" kind="quiet" onPress={() => router.push('/surprise')} />
+      ) : (
+        <Button label="Browse recipes" kind="quiet" onPress={() => router.navigate('/recipes')} />
       )}
       {ahead.length ? (
         <View style={{ gap: SPACE.sm }}>

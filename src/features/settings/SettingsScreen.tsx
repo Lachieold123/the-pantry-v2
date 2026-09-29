@@ -12,6 +12,7 @@ import { Sheet } from '@/ui/primitives/Sheet';
 import { Switch } from '@/ui/primitives/Switch';
 import { Text } from '@/ui/primitives/Text';
 import { SPACE } from '@/ui/tokens/type';
+import { FoodSettings } from './FoodSettings';
 
 const APPEARANCE = [
   { value: 'system', label: 'Match phone' },
@@ -33,6 +34,8 @@ export function SettingsScreen() {
         <Segmented<Appearance> label="Appearance" options={APPEARANCE} value={appearance} onChange={setAppearance} />
         <Switch label="High contrast" detail="Stronger text and dividers" value={highContrast} onChange={setHighContrast} />
       </View>
+      <Divider />
+      <FoodSettings />
       <Divider />
       <View style={{ gap: SPACE.sm }}>
         <SectionHeader title="Measurements" />

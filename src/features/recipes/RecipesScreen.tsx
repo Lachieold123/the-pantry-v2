@@ -30,7 +30,7 @@ export function RecipesScreen() {
 
   const header = (
     <View style={{ gap: SPACE.md }}>
-      <Masthead title="Recipes" />
+      <Masthead title="Recipes" action={<Button label="Surprise me" kind="quiet" onPress={() => router.push('/surprise')} />} />
       <View style={{ flexDirection: 'row', gap: SPACE.xs, alignItems: 'center' }}>
         <SearchField value={query} onChange={setQuery} placeholder="Search recipes" label="Search recipes" />
         <Button label={activeFilters ? `Filters · ${activeFilters}` : 'Filters'} icon="filter" onPress={() => router.push('/filters')} />

@@ -53,8 +53,10 @@ function RootStack() {
       <Stack.Screen name="recipe/[id]/index" />
       <Stack.Screen name="recipe/[id]/plan" options={SHEET} />
       <Stack.Screen name="recipe/[id]/collect" options={SHEET} />
+      <Stack.Screen name="recipe/[id]/cook" options={{ presentation: 'fullScreenModal', gestureEnabled: false }} />
       <Stack.Screen name="filters" options={SHEET} />
       <Stack.Screen name="plan/add" options={SHEET} />
+      <Stack.Screen name="surprise" options={{ presentation: 'modal' }} />
       <Stack.Screen name="saved/collection/[id]" />
     </Stack>
   );

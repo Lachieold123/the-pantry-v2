@@ -3,6 +3,7 @@ import { describe, it } from 'node:test';
 
 import { fromISODate } from '../plan/week';
 import { hasCooked, recentlyCooked, splitStepTimers, weeklyStreak, type CookEvent } from './cook';
+import { formatCountdown, isFinished, secondsLeft, startTimer } from './timers';
 
 describe('Cook Mode timers', () => {
   it('finds timers and uses the upper bound of a range', () => {
@@ -42,5 +43,20 @@ describe('cooked log', () => {
   it('a streak counts consecutive weeks and doesn’t break before the week is over', () => {
     assert.equal(weeklyStreak(log, fromISODate('2026-09-28')), 2); // Monday, nothing cooked yet this week
     assert.equal(weeklyStreak(log, fromISODate('2026-10-06')), 0); // a whole week missed
+  });
+});
+
+describe('Cook Mode timer clock', () => {
+  it('counts from an end time, so it survives the phone locking', () => {
+    const t = startTimer('t1', '10 minutes', 1, 600, 1_000_000);
+    assert.equal(secondsLeft(t, 1_000_000), 600);
+    assert.equal(secondsLeft(t, 1_000_000 + 299_500), 301);
+    assert.equal(secondsLeft(t, 1_000_000 + 600_000), 0);
+    assert.ok(isFinished(t, 2_000_000));
+  });
+  it('formats countdowns', () => {
+    assert.equal(formatCountdown(545), '9:05');
+    assert.equal(formatCountdown(3750), '1:02:30');
+    assert.equal(formatCountdown(0), '0:00');
   });
 });
