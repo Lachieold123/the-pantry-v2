@@ -117,12 +117,17 @@ export function deriveShoppingList(args: {
       removedCount++;
       continue;
     }
+    const name = def?.name ?? (contributions[0]?.line.item ?? key);
     const amount = mergeAmounts(contributions.map((c) => c.line))
-      .map((a) => formatQuantity(a.quantity, a.unit, units))
+      .map((a) => {
+        // "2 leaves bay leaf" reads badly: when the name already says the unit, show just the number.
+        const redundant = a.unit !== undefined && UNITS[a.unit].kind === 'count' && normaliseWords(name).includes(UNITS[a.unit].singular);
+        return formatQuantity(a.quantity, redundant ? undefined : a.unit, units);
+      })
       .join(' + ');
     const item: ShoppingItem = {
       key,
-      name: def?.name ?? (contributions[0]?.line.item ?? key),
+      name,
       aisle: def?.aisle ?? 'other',
       amount,
       recipeIds: [...new Set(contributions.map((c) => c.recipeId))],

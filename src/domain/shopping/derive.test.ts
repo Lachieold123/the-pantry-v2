@@ -65,6 +65,11 @@ describe('deriveShoppingList', () => {
     assert.ok(withStaples.inCupboard.some((i) => i.key === 'salt'));
     assert.ok(withStaples.inCupboard.some((i) => i.key === 'olive-oil'));
   });
+  it('does not repeat a unit the name already says: "2 bay leaves", not "2 leaves bay leaf"', () => {
+    recipes.set('stew', makeRecipe('stew', ['2 bay leaves']));
+    const bay = list([entry('stew')]).sections.flatMap((s) => s.items).find((i) => i.key === 'bay-leaf');
+    assert.equal(bay?.amount, '2');
+  });
   it('ignores entries whose recipe no longer exists', () => {
     assert.equal(list([entry('deleted-recipe')]).sections.length, 0);
   });
