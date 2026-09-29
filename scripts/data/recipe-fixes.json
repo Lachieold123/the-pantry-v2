@@ -1,0 +1,35 @@
+{
+  "_about": "Hand-made corrections applied by scripts/convert-old-recipes.ts on top of the old catalogue. Each replacement must match the old text exactly once, or the conversion fails, so fixes never apply silently to the wrong thing. Logged in DECISIONS.md D-014.",
+  "fixes": {
+    "chicken-kiev": {
+      "steps": [{ "from": "until the chicken hits 70°C internally", "to": "until the chicken reaches 75°C in the thickest part" }]
+    },
+    "burgers": {
+      "steps": [{ "from": "Cook 1.5 more minutes for medium.", "to": "Cook 2–3 more minutes, until cooked through with no pink in the middle (71°C)." }]
+    },
+    "lobster-roll": {
+      "steps": [{ "from": "For live lobsters: bring a large pot", "to": "For live lobsters: chill them in the freezer for 30–60 minutes until they no longer move, as animal welfare guidance recommends. Bring a large pot" }]
+    },
+    "gyudon": {
+      "addNotes": ["Raw or soft-cooked egg isn't recommended if you're pregnant, cooking for young children or older people, or have a weakened immune system. Use a hard-boiled egg instead."]
+    },
+    "chicken-gyudon": {
+      "addNotes": ["Raw or soft-cooked egg isn't recommended if you're pregnant, cooking for young children or older people, or have a weakened immune system. Use a hard-boiled egg instead."]
+    },
+    "caesar-salad": {
+      "addNotes": ["The dressing uses raw egg yolks. If you're pregnant, cooking for young children or older people, or have a weakened immune system, use good-quality mayonnaise as the base instead."]
+    },
+    "ceviche": { "addNotes": ["The fish is cured, not cooked. Not recommended during pregnancy or for anyone with a weakened immune system."] },
+    "sushi-rolls": { "addNotes": ["Uses raw fish. Not recommended during pregnancy or for anyone with a weakened immune system."] },
+    "poke-bowl": { "addNotes": ["Uses raw fish. Not recommended during pregnancy or for anyone with a weakened immune system."] },
+    "tuna-poke": { "addNotes": ["Uses raw fish. Not recommended during pregnancy or for anyone with a weakened immune system."] },
+    "salmon-poke": { "addNotes": ["Uses raw fish. Not recommended during pregnancy or for anyone with a weakened immune system."] },
+    "salmon-nigiri": { "addNotes": ["Uses raw fish. Not recommended during pregnancy or for anyone with a weakened immune system."] },
+    "butternut-squash-risotto": { "ingredients": [{ "from": "1L chicken or vegetable stock, warm", "to": "1L vegetable stock (or chicken stock), warm" }] },
+    "couscous": { "ingredients": [{ "from": "350ml hot chicken or vegetable stock", "to": "350ml hot vegetable stock (or chicken stock)" }] },
+    "minestrone": { "ingredients": [{ "from": "1.5L chicken or vegetable stock", "to": "1.5L vegetable stock (or chicken stock)" }] },
+    "mushroom-risotto": { "ingredients": [{ "from": "1L chicken or vegetable stock, kept warm", "to": "1L vegetable stock (or chicken stock), kept warm" }] },
+    "pumpkin-soup": { "ingredients": [{ "from": "1L chicken or vegetable stock", "to": "1L vegetable stock (or chicken stock)" }] },
+    "risotto": { "ingredients": [{ "from": "1.2L chicken or vegetable stock, kept warm", "to": "1.2L vegetable stock (or chicken stock), kept warm" }] }
+  }
+}
