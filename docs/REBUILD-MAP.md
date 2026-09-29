@@ -1,7 +1,7 @@
 # The Pantry v2: Rebuild Map
 
 **Owner:** Lachlan · **Builder:** Claude, with Expo (D-001, D-002) · **Written:** 29 September 2026 · **Last updated:** 29 September 2026
-**Status:** Phase 0 in progress. `PRODUCT.md` drafted for review; no v2 code exists yet.
+**Status:** Phase 0 done; Phase 2 logic done; Phase 1 app shell blocked on package downloads. Code: github.com/Lachieold123/the-pantry-v2.
 
 This is the blueprint for rebuilding The Pantry from the ground up. It covers:
 
@@ -465,6 +465,8 @@ Each phase lists its **Goal**, **Build** (what gets built), **Done when** (accep
 
 ### Phase 1: Foundations and design system
 
+> **Status 29 Sep:** colour, type, space and motion tokens done and tested (contrast AA, no green); CI running on GitHub; design specimen published for approval. **Blocked:** creating the Expo app needs package downloads, which the build workspace can't do yet (KNOWN-ISSUES K-1).
+
 - **Goal:** an empty app that already looks and behaves like The Pantry.
 - **Build:**
   - New repo `the-pantry-v2` (same bundle ID `com.lachlanoldfield.thepantry`, same EAS project).
@@ -483,6 +485,8 @@ Each phase lists its **Goal**, **Build** (what gets built), **Done when** (accep
 - **Question first:** confirm the palette and fonts from rendered samples, not hex codes.
 
 ### Phase 2: Catalogue and domain logic
+
+> **Status 29 Sep:** done except Lachlan's review. 552-entry ingredient database (99.98% of lines matched); all 285 recipes converted, tagged and validated; domain logic written with 90 tests (99% line coverage). Waiting on: Lachlan's pass through `docs/reports/recipe-review.csv`. Nutrition moved to Phase 3 (K-5).
 
 - **Goal:** trustworthy recipe data and pure, tested logic.
 - **Build:**
