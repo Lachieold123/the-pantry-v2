@@ -120,3 +120,34 @@ describe('the converted catalogue', () => {
     assert.ok(catalogue.every((r) => r.provenance === 'ai-draft'));
   });
 });
+
+describe('validateRecipe', () => {
+  const good = makeRecipe('good-dish', ['1 egg']);
+  const paths = (r: Parameters<typeof validateRecipe>[0]) => validateRecipe(r).map((p) => p.path);
+  it('accepts a well-formed recipe', () => {
+    assert.deepEqual(validateRecipe(good), []);
+  });
+  it('rejects bad ids, empty titles, unknown tags and impossible numbers', () => {
+    const bad = {
+      ...good,
+      id: 'Bad Id',
+      title: ' ',
+      cuisine: 'martian' as never,
+      mealTypes: [],
+      diets: ['vegan' as const],
+      servings: 0,
+      prepMinutes: -5,
+      steps: [{ text: '' }],
+    };
+    const p = paths(bad);
+    for (const expected of ['id', 'title', 'cuisine', 'mealTypes', 'diets', 'servings', 'prepMinutes', 'steps[0]']) assert.ok(p.includes(expected), expected);
+  });
+  it('rejects broken ingredient lines', () => {
+    const r = { ...good, ingredientGroups: [{ items: [{ item: '', raw: 'x', unit: 'g' as const }, { item: 'rice', raw: 'y', quantity: { min: 3, max: 2 } }] }, { items: [] }] };
+    const p = paths(r);
+    assert.ok(p.includes('ingredientGroups[0].items[0].item'));
+    assert.ok(p.includes('ingredientGroups[0].items[0]'));
+    assert.ok(p.includes('ingredientGroups[0].items[1].quantity'));
+    assert.ok(p.includes('ingredientGroups[1]'));
+  });
+});
