@@ -12,3 +12,5 @@ Things deliberately deferred. Each has a phase in which it gets fixed. Nothing h
 | K-6 | Cuisine calls marked "unsure" in `recipe-tags-notes.md` (Tex-Mex, Italian-American, Hawaiian) need Lachlan's view. | Editorial choice. | Recipe review |
 | K-7 | On the web preview the tab labels' descenders ("Today", "Shop") are slightly clipped. | Web-only layout; check on the phone before changing anything. | Phase 1 phone check |
 | K-8 | Sentry isn't set up: it needs a Sentry account and project (the map wants a DSN from the first build). | Needs Lachlan to create the project. | Before first TestFlight |
+| K-9 | Cook Mode moves on by tapping the screen or Next; swiping between steps isn't built yet. | Tap works one-handed with messy fingers; swipe needs a gesture library check on the phone first. | Phase 9 |
+| K-10 | Component and journey test coverage is thin: 3 component tests, no Maestro flows yet. The domain maths is well covered (97 tests). | Maestro needs Xcode's simulator, which was still installing. | Phase 9 (start once Xcode is ready) |

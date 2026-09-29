@@ -1,7 +1,7 @@
 # The Pantry v2: Rebuild Map
 
 **Owner:** Lachlan · **Builder:** Claude, with Expo (D-001, D-002) · **Written:** 29 September 2026 · **Last updated:** 29 September 2026
-**Status:** Phase 0 done; Phase 2 logic done; Phase 1 app shell blocked on package downloads. Code: github.com/Lachieold123/the-pantry-v2.
+**Status:** Phases 0–2 done; Phases 3–6 built (see each phase's status line); next is Phase 7. Code: github.com/Lachieold123/the-pantry-v2.
 
 This is the blueprint for rebuilding The Pantry from the ground up. It covers:
 
@@ -520,6 +520,8 @@ Each phase lists its **Goal**, **Build** (what gets built), **Done when** (accep
   - It deep-links cold.
 - **Reference:** old `RecipeModal`, `RecipeBody`, `BrowseModal`, `FiltersModal`, `searchRecipes`.
 
+> **Status 29 Sep:** built. Browse shelves, typo-tolerant search, filters sheet with active count, recipe page with servings scaling, Australian measures and substitution tips. **Still to do:** nutrition (K-5), plural wording (K-2).
+
 ### Phase 4: Save
 
 - **Build:** bookmarks, collections (create, rename, reorder, delete with undo), the Saved tab segments, add-to-collection sheet, My recipes (editor and import-from-link), Cooked list.
@@ -529,6 +531,8 @@ Each phase lists its **Goal**, **Build** (what gets built), **Done when** (accep
   - Import handles a failed or non-recipe link gracefully.
   - The editor validates with the same schema as the catalogue.
 - **Reference:** old `CookmarksModal`, `CollectionsModal`, `RecipeEditorModal`, `CustomMealsModal`, `importRecipe`.
+
+> **Status 29 Sep:** saving, collections, hiding a recipe and recently viewed are built. **Still to do:** the recipe editor and import (user recipes).
 
 ### Phase 5: Plan and Shop (the heart of the app)
 
@@ -548,6 +552,8 @@ Each phase lists its **Goal**, **Build** (what gets built), **Done when** (accep
 - **Question first:** behaviour when a planned day passes; which list edits are sticky; how cupboard items show on the list (§7).
 - **Reference:** old `CartModal`, `SlotPickerSheet`, `MealPickerSheet`, `PantryModal`, `groceryConsolidate`, `pantryMatch`.
 
+> **Status 29 Sep:** built. Week plan on real dates, shopping list derived from the plan (edits kept per week), cupboard with "What can I make?", ticked items move to the cupboard. **Still to do:** the Maestro North Star flow (needs Xcode's simulator).
+
 ### Phase 6: Cook
 
 - **Build:**
@@ -561,6 +567,8 @@ Each phase lists its **Goal**, **Build** (what gets built), **Done when** (accep
   - Reduce Motion gives a simple fade instead of the spin.
 - **Question first:** what "hands-free" means (`PRODUCT.md` §6, decision B).
 - **Reference:** old `CookModeModal`, `stepDuration`, `SpinnerModal`, `cookStats`.
+
+> **Status 29 Sep:** built. Cook Mode (screen stays on, tap anywhere or Next, timers from step text that notify when the phone is locked, ingredients drawer, Done logs the cook with undo); Surprise me honouring diet, avoid list, hidden, planned and recent recipes, with a fade under Reduce Motion; Cooked list with a weekly streak; diet and avoid list in Settings. "Hands-free" means screen-on plus a whole-screen tap target (PRODUCT.md decision B). **Still to do:** swipe between steps (K-9).
 
 ### Phase 7: Today and onboarding
 
