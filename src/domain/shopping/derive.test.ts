@@ -121,8 +121,8 @@ describe('list edits', () => {
     const l = list([entry('bolognese')], { edits: { ...EMPTY_EDITS, extras: [{ id: 'x', text: 'Dishwashing liquid', addedAt: 0 }] } });
     const text = formatListForSharing(l, (a) => a.toUpperCase(), 'Shopping list');
     assert.match(text, /^Shopping list/);
-    assert.match(text, /- beef mince, 500 g/);
+    assert.match(text, /- Beef mince, 500 g/);
     assert.match(text, /Also\n- Dishwashing liquid/);
-    assert.doesNotMatch(text, /salt/);
+    assert.doesNotMatch(text, /salt/i);
   });
 });

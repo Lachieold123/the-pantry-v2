@@ -6,7 +6,7 @@ import { Divider } from '@/ui/primitives/Divider';
 import { Text } from '@/ui/primitives/Text';
 import { SPACE } from '@/ui/tokens/type';
 
-type Props = { kicker?: string; title: string; action?: ReactNode };
+type Props = { kicker?: string | undefined; title: string; action?: ReactNode };
 
 export function Masthead({ kicker, title, action }: Props) {
   return (

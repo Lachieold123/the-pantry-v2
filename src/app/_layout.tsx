@@ -40,6 +40,9 @@ export default function RootLayout() {
   );
 }
 
+// Short, focused tasks open as sheets over the current screen (map §6).
+const SHEET = { presentation: 'formSheet' as const, sheetAllowedDetents: [0.75, 1], sheetGrabberVisible: true };
+
 function RootStack() {
   const { colours } = useTheme();
   return (
@@ -47,8 +50,12 @@ function RootStack() {
       <Stack.Screen name="(tabs)" />
       <Stack.Screen name="settings/index" options={{ presentation: 'modal' }} />
       <Stack.Screen name="dev/gallery" />
-      <Stack.Screen name="recipe/[id]" />
-      <Stack.Screen name="filters" options={{ presentation: 'formSheet', sheetAllowedDetents: [0.75, 1], sheetGrabberVisible: true }} />
+      <Stack.Screen name="recipe/[id]/index" />
+      <Stack.Screen name="recipe/[id]/plan" options={SHEET} />
+      <Stack.Screen name="recipe/[id]/collect" options={SHEET} />
+      <Stack.Screen name="filters" options={SHEET} />
+      <Stack.Screen name="plan/add" options={SHEET} />
+      <Stack.Screen name="saved/collection/[id]" />
     </Stack>
   );
 }

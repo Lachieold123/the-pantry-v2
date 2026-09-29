@@ -29,6 +29,16 @@ export function fromISODate(iso: ISODate): Date {
   return date;
 }
 
+export function isISODate(value: unknown): value is ISODate {
+  if (typeof value !== 'string') return false;
+  try {
+    fromISODate(value);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 export function addDays(iso: ISODate, days: number): ISODate {
   const d = fromISODate(iso);
   d.setDate(d.getDate() + days);
@@ -69,8 +79,12 @@ export function tonightsDinner(entries: readonly PlanEntry[], today: ISODate): P
 }
 
 /** Entries older than 8 weeks are pruned on launch; the cook log keeps the history (D-009). */
+export function pruneCutoff(today: ISODate): ISODate {
+  return addDays(weekStart(today), -7 * 8);
+}
+
 export function pruneOldEntries(entries: readonly PlanEntry[], today: ISODate): PlanEntry[] {
-  const cutoff = addDays(weekStart(today), -7 * 8);
+  const cutoff = pruneCutoff(today);
   return entries.filter((e) => e.day >= cutoff);
 }
 

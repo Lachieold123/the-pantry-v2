@@ -5,6 +5,7 @@ import {
   addDays,
   entriesInWeek,
   fromISODate,
+  isISODate,
   pruneOldEntries,
   tonightsDinner,
   visibleWeeks,
@@ -27,6 +28,11 @@ describe('week plan dates', () => {
     assert.equal(addDays('2026-12-31', 1), '2027-01-01');
     assert.equal(addDays('2026-10-03', 2), '2026-10-05'); // NSW clocks go forward 4 Oct 2026
     assert.equal(weekStart('2027-01-01'), '2026-12-28');
+  });
+  it('checks a value is a real date', () => {
+    assert.ok(isISODate('2026-10-05'));
+    assert.ok(!isISODate('2026-02-30'));
+    assert.ok(!isISODate(undefined));
   });
   it('rejects impossible dates', () => {
     assert.throws(() => fromISODate('2026-02-30'));

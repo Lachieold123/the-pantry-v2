@@ -180,7 +180,7 @@ export function formatListForSharing(list: ShoppingList, aisleLabel: (a: AisleId
     const items = section.items.filter((i) => !i.checked);
     if (!items.length) continue;
     out.push('', aisleLabel(section.aisle));
-    for (const i of items) out.push(`- ${i.name}${i.amount ? `, ${i.amount}` : ''}${i.optional ? ' (optional)' : ''}`);
+    for (const i of items) out.push(`- ${capitalise(i.name)}${i.amount ? `, ${i.amount}` : ''}${i.optional ? ' (optional)' : ''}`);
   }
   const extras = list.extras.filter((e) => !e.checked);
   if (extras.length) {
@@ -188,4 +188,9 @@ export function formatListForSharing(list: ShoppingList, aisleLabel: (a: AisleId
     for (const e of extras) out.push(`- ${e.extra.text}`);
   }
   return out.join('\n');
+}
+
+/** Names are stored lower case ("brown onion") so they read naturally mid-sentence; lists start them with a capital. */
+export function capitalise(text: string): string {
+  return text.charAt(0).toUpperCase() + text.slice(1);
 }

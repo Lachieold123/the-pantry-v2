@@ -1,14 +1,15 @@
 // The recipe page (map Phase 3): decide whether to cook it, then cook it.
-// Save, Plan and Cook join the action bar as their phases land; until then
-// they're hidden, never shown as dead buttons (map rule 4).
+// Save and Plan live in the action bar; Cook joins it with Cook Mode (Phase 6),
+// hidden until then rather than shown as a dead button (map rule 4).
 import { useRouter } from 'expo-router';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Share, View } from 'react-native';
 
 import { getCatalogueRecipe } from '@/data/catalogue/catalogue';
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { CUISINE_LABELS, DIET_LABELS, formatMinutes } from '@/domain/recipes/labels';
 import { usePreferences } from '@/store/preferences';
+import { useSaved } from '@/store/saved';
 import { ActionBar } from '@/ui/patterns/ActionBar';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { RecipeImage } from '@/ui/patterns/RecipeImage';
@@ -38,6 +39,14 @@ export function RecipeScreen({ id }: { id: string }) {
   const units = usePreferences((s) => s.units);
   const setUnits = usePreferences((s) => s.setUnits);
   const [servings, setServings] = useState(recipe?.servings ?? 4);
+  const saved = useSaved((s) => s.bookmarks.some((b) => b.recipeId === id));
+  const hidden = useSaved((s) => s.hidden.includes(id));
+  const toggleBookmark = useSaved((s) => s.toggleBookmark);
+  const toggleHidden = useSaved((s) => s.toggleHidden);
+  const recordView = useSaved((s) => s.recordView);
+  useEffect(() => {
+    if (recipe) recordView(recipe.id);
+  }, [recipe, recordView]);
 
   if (!recipe) {
     return (
@@ -104,10 +113,49 @@ export function RecipeScreen({ id }: { id: string }) {
             ))}
           </View>
         ) : null}
+        <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: SPACE.xs }}>
+          <Button
+            label="Add to collection"
+            kind="quiet"
+            onPress={() => router.push({ pathname: '/recipe/[id]/collect', params: { id: recipe.id } })}
+          />
+          <Button label="Share" kind="quiet" icon="share" onPress={() => void share()} />
+          <Button
+            label={hidden ? 'Show this again' : 'Not for us'}
+            kind="quiet"
+            accessibilityHint={hidden ? undefined : 'Stops this recipe appearing in suggestions and Surprise me'}
+            onPress={() => {
+              const nowHidden = toggleHidden(recipe.id);
+              toast({
+                message: nowHidden ? 'We won\u2019t suggest this again' : 'Back in suggestions',
+                undo: () => toggleHidden(recipe.id),
+              });
+            }}
+          />
+        </View>
         {recipe.image?.credit ? <Text variant="meta">{recipe.image.credit}</Text> : null}
       </Screen>
       <ActionBar>
-        <Button label="Share" icon="share" onPress={() => void share()} block />
+        <View style={{ flex: 1 }}>
+          <Button
+            label={saved ? 'Saved' : 'Save'}
+            icon={saved ? 'check' : 'saved'}
+            block
+            onPress={() => {
+              const nowSaved = toggleBookmark(recipe.id);
+              toast({ message: nowSaved ? 'Saved' : 'Removed from Saved', undo: () => toggleBookmark(recipe.id) });
+            }}
+          />
+        </View>
+        <View style={{ flex: 1 }}>
+          <Button
+            label="Plan"
+            icon="plan"
+            kind="primary"
+            block
+            onPress={() => router.push({ pathname: '/recipe/[id]/plan', params: { id: recipe.id } })}
+          />
+        </View>
       </ActionBar>
     </View>
   );

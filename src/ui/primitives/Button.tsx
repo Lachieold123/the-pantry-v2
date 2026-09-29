@@ -19,7 +19,7 @@ type Props = {
   busy?: boolean;
   /** Stretch to fill the row. */
   block?: boolean;
-  accessibilityHint?: string;
+  accessibilityHint?: string | undefined;
 };
 
 export function Button({
