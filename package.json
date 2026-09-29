@@ -8,5 +8,13 @@
     "test": "tsx --test \"src/**/*.test.ts\"",
     "catalogue:convert": "tsx scripts/convert-old-recipes.ts",
     "catalogue:check-ingredients": "tsx scripts/check-ingredient-coverage.ts"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@types/node": ">=22",
+    "tsx": ">=4.19",
+    "typescript": ">=5.8"
   }
 }

@@ -1,0 +1,19 @@
+# Runs on every push and pull request: the build must typecheck and every test must pass.
+name: CI
+on:
+  push:
+  pull_request:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-audit --no-fund
+      - run: npm run typecheck
+      - run: npm test
+        env:
+          TZ: Australia/Sydney
+      - run: npm run catalogue:check-ingredients
