@@ -1,9 +1,12 @@
 // Settings: appearance and units change the app immediately (map Phase 1).
+// The Sunday reminder only reads as on when the phone will actually deliver it.
 import Constants from 'expo-constants';
 import { useRouter } from 'expo-router';
 import { View } from 'react-native';
 
+import { setSundayReminder } from '@/lib/notifications';
 import { usePreferences, type Appearance } from '@/store/preferences';
+import { useToast } from '@/ui/patterns/Toast';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { Divider } from '@/ui/primitives/Divider';
 import { ListRow } from '@/ui/primitives/ListRow';
@@ -26,7 +29,22 @@ const UNITS = [
 
 export function SettingsScreen() {
   const router = useRouter();
-  const { appearance, highContrast, units, setAppearance, setHighContrast, setUnits } = usePreferences();
+  const toast = useToast();
+  const {
+    appearance,
+    highContrast,
+    units,
+    sundayReminder,
+    setAppearance,
+    setHighContrast,
+    setUnits,
+    setSundayReminder: saveReminder,
+  } = usePreferences();
+  const toggleReminder = async (on: boolean) => {
+    const scheduled = await setSundayReminder(on);
+    saveReminder(scheduled);
+    if (on && !scheduled) toast({ message: 'Notifications are off for The Pantry. Turn them on in your phone’s Settings.' });
+  };
   return (
     <Sheet title="Settings" onClose={() => router.back()}>
       <View style={{ gap: SPACE.sm }}>
@@ -36,6 +54,17 @@ export function SettingsScreen() {
       </View>
       <Divider />
       <FoodSettings />
+      <ListRow title="Retake the taste quiz" detail="Cuisines you love and weeknight time" onPress={() => router.push('/welcome')} />
+      <Divider />
+      <View style={{ gap: SPACE.sm }}>
+        <SectionHeader title="Reminders" />
+        <Switch
+          label="Sunday planning reminder"
+          detail="4pm on Sundays, and nothing else"
+          value={sundayReminder}
+          onChange={(on) => void toggleReminder(on)}
+        />
+      </View>
       <Divider />
       <View style={{ gap: SPACE.sm }}>
         <SectionHeader title="Measurements" />

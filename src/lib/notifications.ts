@@ -1,5 +1,5 @@
 // Local notifications only (map §3: no server push in v1). Used for Cook Mode
-// timers finishing while the phone is locked, and later the Sunday reminder.
+// timers finishing while the phone is locked, and the Sunday planning reminder.
 import * as Notifications from 'expo-notifications';
 
 let configured = false;
@@ -12,7 +12,7 @@ function configure(): void {
   });
 }
 
-/** Asks once, only when the cook first starts a timer. Returns false if they said no. */
+/** Asks only when the cook first wants a notification (a timer, the Sunday reminder). Returns false if they said no. */
 export async function ensureNotificationPermission(): Promise<boolean> {
   configure();
   const current = await Notifications.getPermissionsAsync();
@@ -41,5 +41,33 @@ export async function cancelScheduled(id: string | undefined): Promise<void> {
     await Notifications.cancelScheduledNotificationAsync(id);
   } catch {
     // Already fired or never scheduled: nothing to cancel.
+  }
+}
+
+const SUNDAY_REMINDER = 'sunday-plan';
+
+/**
+ * A weekly nudge at 4pm on Sunday to plan the week. Returns whether it's on:
+ * false if notifications aren't allowed, so the switch can say so honestly.
+ */
+export async function setSundayReminder(on: boolean): Promise<boolean> {
+  configure();
+  try {
+    await Notifications.cancelScheduledNotificationAsync(SUNDAY_REMINDER);
+  } catch {
+    // Nothing scheduled yet.
+  }
+  if (!on) return false;
+  try {
+    if (!(await ensureNotificationPermission())) return false;
+    await Notifications.scheduleNotificationAsync({
+      identifier: SUNDAY_REMINDER,
+      content: { title: 'Plan the week?', body: 'Pick a few dinners and your shopping list writes itself.' },
+      // Expo counts weekdays from Sunday = 1.
+      trigger: { type: Notifications.SchedulableTriggerInputTypes.WEEKLY, weekday: 1, hour: 16, minute: 0 },
+    });
+    return true;
+  } catch {
+    return false;
   }
 }

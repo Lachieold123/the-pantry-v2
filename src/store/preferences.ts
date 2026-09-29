@@ -5,6 +5,8 @@ import { persist } from 'zustand/middleware';
 
 import type { UnitSystem } from '@/domain/ingredients/format';
 import type { AvoidList, AvoidOption, DietPreference } from '@/domain/recipes/diets';
+import type { TimeFilter } from '@/domain/recipes/search';
+import type { CuisineId } from '@/domain/recipes/types';
 import { persistentStorage, STORAGE_PREFIX } from './storage';
 
 export type Appearance = 'system' | 'light' | 'dark';
@@ -15,6 +17,13 @@ type PreferencesState = {
   units: UnitSystem;
   diet: DietPreference;
   avoid: AvoidList;
+  /** Cuisines picked in the taste quiz: they lift suggestions, never filter them out. */
+  cuisines: CuisineId[];
+  /** How long a weeknight dinner can take. Undefined means no rush. */
+  weeknight: TimeFilter | undefined;
+  sundayReminder: boolean;
+  /** False until the welcome and taste quiz are finished or skipped. */
+  onboarded: boolean;
   setAppearance: (appearance: Appearance) => void;
   setDiet: (diet: DietPreference) => void;
   toggleAvoidOption: (option: AvoidOption) => void;
@@ -22,6 +31,12 @@ type PreferencesState = {
   removeAvoidWord: (word: string) => void;
   setHighContrast: (on: boolean) => void;
   setUnits: (units: UnitSystem) => void;
+  toggleCuisine: (cuisine: CuisineId) => void;
+  setWeeknight: (weeknight: TimeFilter | undefined) => void;
+  setSundayReminder: (on: boolean) => void;
+  setOnboarded: (done: boolean) => void;
+  /** Replaces the taste answers wholesale, e.g. from the old app's onboarding. */
+  applyTaste: (taste: Pick<PreferencesState, 'diet' | 'avoid' | 'cuisines' | 'weeknight' | 'units'>) => void;
 };
 
 export const usePreferences = create<PreferencesState>()(
@@ -32,6 +47,10 @@ export const usePreferences = create<PreferencesState>()(
       units: 'metric',
       diet: 'everything',
       avoid: { options: [], custom: [] },
+      cuisines: [],
+      weeknight: undefined,
+      sundayReminder: false,
+      onboarded: false,
       setAppearance: (appearance) => set({ appearance }),
       setDiet: (diet) => set({ diet }),
       toggleAvoidOption: (option) =>
@@ -49,14 +68,39 @@ export const usePreferences = create<PreferencesState>()(
       removeAvoidWord: (word) => set((s) => ({ avoid: { ...s.avoid, custom: s.avoid.custom.filter((c) => c !== word) } })),
       setHighContrast: (highContrast) => set({ highContrast }),
       setUnits: (units) => set({ units }),
+      toggleCuisine: (cuisine) =>
+        set((s) => ({ cuisines: s.cuisines.includes(cuisine) ? s.cuisines.filter((c) => c !== cuisine) : [...s.cuisines, cuisine] })),
+      setWeeknight: (weeknight) => set({ weeknight }),
+      setSundayReminder: (sundayReminder) => set({ sundayReminder }),
+      setOnboarded: (onboarded) => set({ onboarded }),
+      applyTaste: (taste) => set(taste),
     }),
     {
       name: `${STORAGE_PREFIX}/preferences`,
-      version: 2,
+      version: 3,
       storage: persistentStorage,
-      partialize: ({ appearance, highContrast, units, diet, avoid }) => ({ appearance, highContrast, units, diet, avoid }),
-      // Version 1 had no diet or avoid list; they start empty.
-      migrate: (saved) => ({ diet: 'everything', avoid: { options: [], custom: [] }, ...(saved as object) }) as unknown as PreferencesState,
+      partialize: ({ appearance, highContrast, units, diet, avoid, cuisines, weeknight, sundayReminder, onboarded }) => ({
+        appearance,
+        highContrast,
+        units,
+        diet,
+        avoid,
+        cuisines,
+        weeknight,
+        sundayReminder,
+        onboarded,
+      }),
+      // Each version only added fields, so older saves just gain the defaults.
+      migrate: (saved) =>
+        ({
+          diet: 'everything',
+          avoid: { options: [], custom: [] },
+          cuisines: [],
+          weeknight: undefined,
+          sundayReminder: false,
+          onboarded: false,
+          ...(saved as object),
+        }) as unknown as PreferencesState,
     },
   ),
 );

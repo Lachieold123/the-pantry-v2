@@ -48,6 +48,7 @@ function RootStack() {
   return (
     <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: colours.bg } }}>
       <Stack.Screen name="(tabs)" />
+      <Stack.Screen name="welcome" options={{ gestureEnabled: false, animation: 'fade' }} />
       <Stack.Screen name="settings/index" options={{ presentation: 'modal' }} />
       <Stack.Screen name="dev/gallery" />
       <Stack.Screen name="recipe/[id]/index" />

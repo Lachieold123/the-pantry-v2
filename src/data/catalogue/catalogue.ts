@@ -18,4 +18,12 @@ export function getCatalogueRecipe(id: string): Recipe | undefined {
   return byId.get(id);
 }
 
+// Every catalogue id, drafts included: imported old data may point at a dish
+// that isn't vetted yet, and it should reappear once it is.
+const allById = new Map(all.map((r) => [r.id, r]));
+export const ALL_CATALOGUE_IDS: ReadonlySet<string> = new Set(allById.keys());
+export function catalogueTitle(id: string): string | undefined {
+  return allById.get(id)?.title;
+}
+
 export const INGREDIENTS = buildIngredientIndex(ingredientsJson as unknown as IngredientDef[]);
