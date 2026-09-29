@@ -1,27 +1,32 @@
 // Checks how well the ingredient database covers real recipe lines.
-// Run from the repo root: tsx scripts/check-ingredient-coverage.ts [lines-file]
+// Run from the repo root: npm run catalogue:check-ingredients [-- lines-file]
+// With no file, it checks the original text of every line in the converted catalogue.
 // Parses every line with the real parser and matcher, reports the share of
 // lines that resolved to an ingredient, lists the most common misses, prints
 // a random sample of matches for eyeballing, and asserts the tricky cases.
 // Exits non-zero if coverage is under 98% or any assertion fails.
 
-/// <reference types="node" />
 import { readFileSync } from 'node:fs';
 import { buildIngredientIndex, type IngredientDef, type IngredientGroup } from '../src/domain/ingredients/database.ts';
 import { parseIngredientLine } from '../src/domain/ingredients/parse.ts';
 
-// Read rather than import the JSON so the script type-checks as CommonJS (the repo has no package.json).
 const defs = JSON.parse(readFileSync(new URL('../src/data/ingredients/ingredients.json', import.meta.url), 'utf8')) as IngredientDef[];
 
-const LINES_FILE = process.argv[2] ?? '/tmp/lines.txt';
+const LINES_FILE = process.argv[2];
 const MIN_COVERAGE = 98;
 const SAMPLE_SIZE = 60;
 
 const index = buildIngredientIndex(defs);
 
 // ---- coverage ----
-const lines = readFileSync(LINES_FILE, 'utf8')
-  .split('\n')
+type CatalogueRecipe = { ingredientGroups: { items: { raw: string }[] }[] };
+const lines = (
+  LINES_FILE
+    ? readFileSync(LINES_FILE, 'utf8').split('\n')
+    : (JSON.parse(readFileSync(new URL('../src/data/catalogue/recipes.json', import.meta.url), 'utf8')) as CatalogueRecipe[]).flatMap((r) =>
+        r.ingredientGroups.flatMap((g) => g.items.map((i) => i.raw)),
+      )
+)
   .map((l: string) => l.trim())
   .filter(Boolean);
 
