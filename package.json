@@ -1,0 +1,13 @@
+{
+  "name": "the-pantry-v2",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test \"src/**/*.test.ts\" \"scripts/**/*.test.ts\"",
+    "lint": "eslint .",
+    "catalogue:convert": "tsx scripts/convert-old-recipes.ts",
+    "catalogue:check-ingredients": "tsx scripts/check-ingredient-coverage.ts"
+  }
+}

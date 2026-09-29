@@ -1,0 +1,2927 @@
+{
+  "arancini": {
+    "title": "Arancini",
+    "cuisine": "italian",
+    "mealTypes": [
+      "snack"
+    ],
+    "onePot": false,
+    "summary": "Cold risotto balls around mozzarella and ragù, crumbed and fried until golden."
+  },
+  "arepas": {
+    "title": "Arepas",
+    "cuisine": "latin-american",
+    "mealTypes": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Crisp cornmeal rounds split and stuffed with a creamy avocado and chicken filling."
+  },
+  "avocado-toast": {
+    "title": "Avocado Toast",
+    "cuisine": "modern-australian",
+    "mealTypes": [
+      "breakfast"
+    ],
+    "onePot": false,
+    "summary": "Garlic-rubbed sourdough under a thick layer of smashed avocado, lemon and chilli."
+  },
+  "baked-cod": {
+    "title": "Baked Cod",
+    "cuisine": "modern-australian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Cod baked under a herby parmesan crumb, with a lemon, caper and white wine butter."
+  },
+  "baked-salmon": {
+    "title": "Baked Salmon",
+    "cuisine": "modern-australian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Salmon baked under a lemon, dill and garlic butter that becomes its own sauce."
+  },
+  "baked-ziti": {
+    "title": "Baked Ziti",
+    "cuisine": "american",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Pasta baked with sausage ragù, pockets of ricotta and a golden mozzarella top."
+  },
+  "baked-zucchini-boats": {
+    "title": "Baked Zucchini Boats",
+    "cuisine": "modern-australian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Zucchini halves filled with spiced mince and tomato, baked under melted mozzarella."
+  },
+  "bangers-and-mash": {
+    "title": "Bangers and Mash",
+    "cuisine": "british",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Butcher's sausages in a slow caramelised onion gravy over mustardy mash."
+  },
+  "banh-mi": {
+    "title": "Banh Mi",
+    "cuisine": "vietnamese",
+    "mealTypes": [
+      "lunch"
+    ],
+    "onePot": false,
+    "summary": "Caramelised lemongrass pork in a crisp roll with pickled carrot, daikon and coriander."
+  },
+  "bbq-chicken-pizza": {
+    "title": "BBQ Chicken Pizza",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Barbecue-sauced chicken, bacon and red onion on a crisp base, finished with coriander."
+  },
+  "bbq-pulled-chicken": {
+    "title": "BBQ Pulled Chicken",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Seared chicken thighs braised in a homemade barbecue sauce and shredded for soft rolls."
+  },
+  "bbq-ribs": {
+    "title": "BBQ Ribs",
+    "cuisine": "american",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Pork spare ribs rubbed, roasted low, braised in foil and glazed in barbecue sauce."
+  },
+  "bbq-ribs-plate": {
+    "title": "BBQ Ribs Plate",
+    "cuisine": "american",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Rubbed, foil-braised and glazed pork ribs served with slaw, cornbread and pickles."
+  },
+  "beef-bourguignon": {
+    "title": "Beef Bourguignon",
+    "cuisine": "french",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Chuck braised in burgundy, the sauce strained and reduced, with onions and mushrooms."
+  },
+  "beef-brisket": {
+    "title": "Beef Brisket",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Whole brisket rubbed with salt and pepper, cooked low for hours, wrapped and rested."
+  },
+  "beef-bulgogi-bowl": {
+    "title": "Beef Bulgogi Bowl",
+    "cuisine": "korean",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Pear-marinated bulgogi over rice with seasoned vegetables, kimchi and a fried egg."
+  },
+  "beef-burrito": {
+    "title": "Beef Burrito",
+    "cuisine": "mexican",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Spiced beef, lime rice, beans and cheese rolled tight and toasted in the pan."
+  },
+  "beef-curry": {
+    "title": "Beef Curry",
+    "cuisine": "indian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Chuck braised slowly with deep-browned onion, whole spices and tomato until spoon-tender."
+  },
+  "beef-enchiladas": {
+    "title": "Beef Enchiladas",
+    "cuisine": "mexican",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Spiced beef rolled in sauce-dipped corn tortillas and baked in dried chilli sauce."
+  },
+  "beef-korma": {
+    "title": "Beef Korma",
+    "cuisine": "indian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Chuck braised gently with yoghurt, browned onion and cashews in a mild, fragrant sauce."
+  },
+  "beef-lasagna": {
+    "title": "Beef Lasagna",
+    "cuisine": "italian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "A beef and red wine ragù layered with béchamel and cheese, rested so it slices cleanly."
+  },
+  "beef-noodle-soup": {
+    "title": "Beef Noodle Soup",
+    "cuisine": "chinese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Beef shin braised in a spiced chilli bean broth, served over wheat noodles with greens."
+  },
+  "beef-pho": {
+    "title": "Beef Pho",
+    "cuisine": "vietnamese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "A quick spiced and charred-onion beef broth poured over noodles and raw fillet."
+  },
+  "beef-rendang": {
+    "title": "Beef Rendang",
+    "cuisine": "indonesian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Chuck cooked for hours in spiced coconut until the liquid is gone and the beef is dark."
+  },
+  "beef-roast-dinner": {
+    "title": "Beef Roast Dinner",
+    "cuisine": "british",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Garlic-studded beef roasted over vegetables, the tray juices reduced to gravy."
+  },
+  "beef-shawarma-plate": {
+    "title": "Beef Shawarma Plate",
+    "cuisine": "middle-eastern",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Thin spiced beef seared fast and piled on rice with hummus, tabbouleh and tahini."
+  },
+  "beef-stroganoff": {
+    "title": "Beef Stroganoff",
+    "cuisine": "central-european",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Seared beef strips in a mushroom, mustard and sour cream sauce, served over noodles."
+  },
+  "beef-tacos": {
+    "title": "Beef Tacos",
+    "cuisine": "mexican",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Well-browned spiced mince in charred corn tortillas with lime, avocado and feta."
+  },
+  "beef-tikka": {
+    "title": "Beef Tikka",
+    "cuisine": "indian",
+    "mealTypes": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "onePot": true,
+    "summary": "Yoghurt-marinated beef skewers roasted hot and charred, kept pink in the middle."
+  },
+  "beef-wellington": {
+    "title": "Beef Wellington",
+    "cuisine": "british",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Seared fillet wrapped in duxelles, prosciutto and puff pastry, baked to mahogany."
+  },
+  "bibimbap": {
+    "title": "Bibimbap",
+    "cuisine": "korean",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Rice crowned with separately cooked vegetables, seared beef, a fried egg and gochujang."
+  },
+  "biryani": {
+    "title": "Biryani",
+    "cuisine": "indian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Marinated chicken and parboiled basmati layered with fried onion and saffron, cooked dum."
+  },
+  "black-bean-chili": {
+    "title": "Black Bean Chili",
+    "cuisine": "american",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "A meatless chilli of black beans and chipotle, deepened with cocoa and dark chocolate."
+  },
+  "blt-sandwich": {
+    "title": "BLT Sandwich",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch"
+    ],
+    "onePot": false,
+    "summary": "Crisp bacon, salted ripe tomato and lettuce on thick toast with mustard mayonnaise."
+  },
+  "bobotie": {
+    "title": "Bobotie",
+    "cuisine": "south-african",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Sweetly spiced Cape Malay mince with fruit and almonds, baked under a golden egg custard."
+  },
+  "bratwurst": {
+    "title": "Bratwurst",
+    "cuisine": "central-european",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Beer-braised bratwurst seared and piled into rolls with jammy onions and sauerkraut."
+  },
+  "breakfast-burrito": {
+    "title": "Breakfast Burrito",
+    "cuisine": "mexican",
+    "mealTypes": [
+      "breakfast"
+    ],
+    "onePot": false,
+    "summary": "Crisp potatoes, bacon and soft scrambled eggs rolled in a tortilla and toasted to seal."
+  },
+  "buffalo-wings": {
+    "title": "Buffalo Wings",
+    "cuisine": "american",
+    "mealTypes": [
+      "dinner",
+      "snack"
+    ],
+    "onePot": false,
+    "summary": "Crackling oven-baked wings tossed in buttery hot sauce with a chunky blue cheese dip."
+  },
+  "bulgogi": {
+    "title": "Bulgogi",
+    "cuisine": "korean",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Paper-thin beef marinated with grated pear, seared fast in batches to a sweet glaze."
+  },
+  "bunny-chow": {
+    "title": "Bunny Chow",
+    "cuisine": "south-african",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Durban lamb and potato curry spooned into a hollowed half-loaf of white bread."
+  },
+  "burgers": {
+    "title": "Burgers",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Smashed beef patties with a deep crust, cheese and a tangy pickle sauce."
+  },
+  "butter-chicken": {
+    "title": "Butter Chicken",
+    "cuisine": "indian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Charred thigh pieces in a silky tomato and cream sauce lifted by fenugreek."
+  },
+  "butternut-squash-risotto": {
+    "title": "Butternut Squash Risotto",
+    "cuisine": "italian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Roasted butternut, half mashed through the rice, finished with sage, walnuts and parmesan."
+  },
+  "caesar-salad": {
+    "title": "Caesar Salad",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Crisp cos in an anchovy and parmesan dressing with garlic-rubbed sourdough croutons."
+  },
+  "calzone": {
+    "title": "Calzone",
+    "cuisine": "italian",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Folded pizza dough filled with ricotta, mozzarella and salami, with sauce for dipping."
+  },
+  "caprese-salad": {
+    "title": "Caprese Salad",
+    "cuisine": "italian",
+    "mealTypes": [
+      "lunch"
+    ],
+    "onePot": false,
+    "seasons": [
+      "summer"
+    ],
+    "summary": "Ripe heirloom tomatoes, torn buffalo mozzarella and basil with the best olive oil."
+  },
+  "carbonara": {
+    "title": "Carbonara",
+    "cuisine": "italian",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Guanciale, egg yolk and pecorino turned into a glossy sauce by the pasta's own heat."
+  },
+  "carbonnade": {
+    "title": "Carbonnade",
+    "cuisine": "french",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "A Flemish beef and brown ale stew thickened with mustard-smeared bread."
+  },
+  "ceviche": {
+    "title": "Ceviche",
+    "cuisine": "latin-american",
+    "mealTypes": [
+      "lunch"
+    ],
+    "onePot": false,
+    "seasons": [
+      "summer"
+    ],
+    "summary": "Firm white fish cured briefly in lime with chilli and red onion, served with sweet potato."
+  },
+  "chana-masala": {
+    "title": "Chana Masala",
+    "cuisine": "indian",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Chickpeas in a tangy tomato and onion gravy sharpened with amchur."
+  },
+  "chicken-adobo": {
+    "title": "Chicken Adobo",
+    "cuisine": "filipino",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Chicken braised in soy, vinegar, garlic and bay, then reduced to a glossy glaze."
+  },
+  "chicken-alfredo": {
+    "title": "Chicken Alfredo",
+    "cuisine": "american",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Fettuccine in a butter, cream and parmesan sauce with sliced golden chicken breast."
+  },
+  "chicken-alfredo-bake": {
+    "title": "Chicken Alfredo Bake",
+    "cuisine": "american",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Penne and chicken in a parmesan cream sauce, baked under mozzarella and buttery crumbs."
+  },
+  "chicken-and-rice": {
+    "title": "Chicken and Rice",
+    "cuisine": "modern-australian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Crisp-skinned thighs baked over turmeric and lemon rice that soaks up the pan juices."
+  },
+  "chicken-and-waffles": {
+    "title": "Chicken and Waffles",
+    "cuisine": "american",
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "onePot": false,
+    "summary": "Buttermilk fried chicken on light waffles with warm maple syrup and hot honey."
+  },
+  "chicken-biryani": {
+    "title": "Chicken Biryani",
+    "cuisine": "indian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Marinated chicken under parboiled spiced basmati, sealed and cooked dum with saffron."
+  },
+  "chicken-burrito-bowl": {
+    "title": "Chicken Burrito Bowl",
+    "cuisine": "mexican",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Charred spiced chicken over lime rice with beans, corn, pico de gallo and avocado."
+  },
+  "chicken-caesar-pasta": {
+    "title": "Chicken Caesar Pasta",
+    "cuisine": "american",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Pasta in an anchovy, parmesan and cream sauce with chicken, bacon, croutons and cos."
+  },
+  "chicken-caesar-wrap": {
+    "title": "Chicken Caesar Wrap",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch"
+    ],
+    "onePot": false,
+    "summary": "Sliced chicken, bacon, cos and crushed croutons rolled with a punchy Caesar dressing."
+  },
+  "chicken-cordon-bleu": {
+    "title": "Chicken Cordon Bleu",
+    "cuisine": "central-european",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Chicken rolled around ham and Gruyère, double-crumbed and baked, with a Dijon cream sauce."
+  },
+  "chicken-enchilada-casserole": {
+    "title": "Chicken Enchilada Casserole",
+    "cuisine": "mexican",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Layers of tortilla, chicken, beans and corn baked in red chilli sauce with melted cheese."
+  },
+  "chicken-fajita-bowl": {
+    "title": "Chicken Fajita Bowl",
+    "cuisine": "mexican",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Charred chicken and capsicum over lime rice with beans, pico de gallo and avocado."
+  },
+  "chicken-fried-rice": {
+    "title": "Chicken Fried Rice",
+    "cuisine": "chinese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Cold rice fried hard in a smoking wok with chicken, egg, peas and soy."
+  },
+  "chicken-fried-steak": {
+    "title": "Chicken Fried Steak",
+    "cuisine": "american",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Double-dredged cube steak fried crisp and smothered in a peppery cream gravy."
+  },
+  "chicken-gyoza": {
+    "title": "Chicken Gyoza",
+    "cuisine": "japanese",
+    "mealTypes": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "onePot": false,
+    "summary": "Pleated chicken and cabbage dumplings fried, steamed and re-crisped on the base."
+  },
+  "chicken-gyro": {
+    "title": "Chicken Gyro",
+    "cuisine": "greek",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Charred oregano and lemon chicken in warm pita with tzatziki, tomato and hot chips."
+  },
+  "chicken-gyudon": {
+    "title": "Chicken Gyudon",
+    "cuisine": "japanese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Chicken and onion simmered in sweet dashi and soy, spooned over rice with an egg."
+  },
+  "chicken-katsu": {
+    "title": "Chicken Katsu",
+    "cuisine": "japanese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Panko-crumbed chicken fried crisp, served with rice, shredded cabbage and tonkatsu sauce."
+  },
+  "chicken-kiev": {
+    "title": "Chicken Kiev",
+    "cuisine": "central-european",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Double-crumbed chicken breast sealed around frozen garlic butter that floods out when cut."
+  },
+  "chicken-marsala": {
+    "title": "Chicken Marsala",
+    "cuisine": "italian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Floured chicken in a dry Marsala and mushroom sauce, softened with cream and butter."
+  },
+  "chicken-meatballs": {
+    "title": "Chicken Meatballs",
+    "cuisine": "italian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Lemon and herb chicken meatballs simmered in a white wine and lemon cream sauce."
+  },
+  "chicken-milanese": {
+    "title": "Chicken Milanese",
+    "cuisine": "italian",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "A thin parmesan and lemon-crumbed cutlet fried in butter, heaped with dressed rocket."
+  },
+  "chicken-noodle-soup": {
+    "title": "Chicken Noodle Soup",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "A whole-chicken broth with egg noodles and vegetables, brightened with lemon and dill."
+  },
+  "chicken-pad-see-ew": {
+    "title": "Chicken Pad See Ew",
+    "cuisine": "thai",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Wide rice noodles charred in the wok with chicken, egg, gai lan and dark soy."
+  },
+  "chicken-parmesan": {
+    "title": "Chicken Parmesan",
+    "cuisine": "american",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Crumbed chicken breast baked under marinara and mozzarella, the crisp edges left showing."
+  },
+  "chicken-pesto-pasta": {
+    "title": "Chicken Pesto Pasta",
+    "cuisine": "italian",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Fresh basil pesto tossed off the heat with pasta, sliced chicken and cherry tomatoes."
+  },
+  "chicken-piccata": {
+    "title": "Chicken Piccata",
+    "cuisine": "italian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Floured chicken escalopes in a lemon, caper and white wine pan sauce mounted with butter."
+  },
+  "chicken-pot-pie": {
+    "title": "Chicken Pot Pie",
+    "cuisine": "american",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Chicken, leek and mushroom in a creamy mustard sauce beneath a puff pastry lid."
+  },
+  "chicken-quesadilla": {
+    "title": "Chicken Quesadilla",
+    "cuisine": "mexican",
+    "mealTypes": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "onePot": false,
+    "summary": "Chipotle chicken and melted cheese folded into crisp, golden flour tortillas."
+  },
+  "chicken-ramen-bowl": {
+    "title": "Chicken Ramen Bowl",
+    "cuisine": "japanese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Crisp-skinned chicken thigh over ramen in a shiitake broth seasoned with miso tare."
+  },
+  "chicken-satay": {
+    "title": "Chicken Satay",
+    "cuisine": "malaysian",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Lemongrass and turmeric chicken skewers charred hot and served with peanut sauce."
+  },
+  "chicken-satay-bowl": {
+    "title": "Chicken Satay Bowl",
+    "cuisine": "malaysian",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Charred lemongrass and turmeric chicken over rice with fresh vegetables and peanut sauce."
+  },
+  "chicken-schnitzel": {
+    "title": "Chicken Schnitzel",
+    "cuisine": "central-european",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Thin parmesan-crumbed chicken fried in foaming butter until the crust puffs."
+  },
+  "chicken-shawarma-bowl": {
+    "title": "Chicken Shawarma Bowl",
+    "cuisine": "middle-eastern",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Warm-spiced roast chicken over turmeric rice with hummus, pickles and tahini."
+  },
+  "chicken-shawarma-plate": {
+    "title": "Chicken Shawarma Plate",
+    "cuisine": "middle-eastern",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Warm-spiced roast chicken on saffron rice with hummus, salad, pickles and garlic sauce."
+  },
+  "chicken-souvlaki": {
+    "title": "Chicken Souvlaki",
+    "cuisine": "greek",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Lemon and oregano chicken skewers charred and wrapped with tzatziki, salad and chips."
+  },
+  "chicken-stir-fry": {
+    "title": "Chicken Stir Fry",
+    "cuisine": "chinese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Velveted chicken thigh with crisp vegetables in a glossy soy and oyster sauce."
+  },
+  "chicken-tagine": {
+    "title": "Chicken Tagine",
+    "cuisine": "north-african",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Chicken simmered with saffron and warm spices, sharpened by preserved lemon and olives."
+  },
+  "chicken-teriyaki": {
+    "title": "Chicken Teriyaki",
+    "cuisine": "japanese",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Crisp-skinned thighs glazed in the pan with soy, mirin and sake until sticky."
+  },
+  "chicken-tikka": {
+    "title": "Chicken Tikka",
+    "cuisine": "indian",
+    "mealTypes": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "onePot": true,
+    "summary": "Yoghurt-marinated thigh pieces roasted on skewers and charred under the grill."
+  },
+  "chicken-wings": {
+    "title": "Chicken Wings",
+    "cuisine": "modern-australian",
+    "mealTypes": [
+      "dinner",
+      "snack"
+    ],
+    "onePot": false,
+    "summary": "Oven wings dried with baking powder until crackling, tossed in a honey soy glaze."
+  },
+  "chicken-wrap": {
+    "title": "Chicken Wrap",
+    "cuisine": "modern-australian",
+    "mealTypes": [
+      "lunch"
+    ],
+    "onePot": false,
+    "summary": "Charred spiced chicken rolled with a yoghurt dill sauce, salad, feta and herbs."
+  },
+  "chicken-yakitori": {
+    "title": "Chicken Yakitori",
+    "cuisine": "japanese",
+    "mealTypes": [
+      "dinner",
+      "snack"
+    ],
+    "onePot": false,
+    "summary": "Chicken and spring onion skewers grilled and brushed with layer upon layer of tare."
+  },
+  "chili-cheese-fries": {
+    "title": "Chili Cheese Fries",
+    "cuisine": "american",
+    "mealTypes": [
+      "dinner",
+      "snack"
+    ],
+    "onePot": false,
+    "summary": "Crisp fries under a quick beef and bean chilli and melted cheese."
+  },
+  "chili-con-carne": {
+    "title": "Chili Con Carne",
+    "cuisine": "american",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Cubed chuck simmered for hours with dried chillies, beer and a square of chocolate."
+  },
+  "chili-garlic-noodles": {
+    "title": "Chili Garlic Noodles",
+    "cuisine": "chinese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Thick wheat noodles tossed in sizzled garlic oil, black vinegar and Sichuan chilli oil."
+  },
+  "chow-mein": {
+    "title": "Chow Mein",
+    "cuisine": "chinese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Egg noodles left to crisp in a hot wok, tossed with chicken, vegetables and soy."
+  },
+  "chowder": {
+    "title": "Chowder",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "A creamy corn and potato chowder with bacon, half-blended for body."
+  },
+  "clam-chowder": {
+    "title": "Clam Chowder",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "A creamy New England chowder of clams, potato and bacon, gently warmed through."
+  },
+  "club-sandwich": {
+    "title": "Club Sandwich",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch"
+    ],
+    "onePot": false,
+    "summary": "A three-tier toasted sandwich of chicken, bacon, lettuce and tomato, cut into quarters."
+  },
+  "cobb-salad": {
+    "title": "Cobb Salad",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Chicken, bacon, egg, avocado and blue cheese laid out in stripes with a sharp dressing."
+  },
+  "coq-au-vin": {
+    "title": "Coq au Vin",
+    "cuisine": "french",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Chicken marinated overnight in red wine and braised with bacon, mushrooms and onions."
+  },
+  "cottage-pie": {
+    "title": "Cottage Pie",
+    "cuisine": "british",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Beef mince in a rich red wine gravy under a forked, golden potato crust."
+  },
+  "couscous": {
+    "title": "Couscous",
+    "cuisine": "north-african",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Buttery couscous tossed with herbs, nuts, apricot, feta and lemon."
+  },
+  "crispy-duck-pancakes": {
+    "title": "Crispy Duck Pancakes",
+    "cuisine": "chinese",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Five-spice duck legs roasted until crackling, shredded and rolled in pancakes with hoisin."
+  },
+  "croque-monsieur": {
+    "title": "Croque Monsieur",
+    "cuisine": "french",
+    "mealTypes": [
+      "lunch"
+    ],
+    "onePot": false,
+    "summary": "Ham and Gruyère toasted, blanketed in béchamel and grilled until blistered."
+  },
+  "dhal": {
+    "title": "Dhal",
+    "cuisine": "indian",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Soft red lentils finished at the table with a sizzling tadka of spices and curry leaves."
+  },
+  "dim-sum": {
+    "title": "Dim Sum",
+    "cuisine": "chinese",
+    "mealTypes": [
+      "lunch",
+      "snack"
+    ],
+    "onePot": false,
+    "summary": "Steamed pork and prawn siu mai with a black vinegar and ginger dipping sauce."
+  },
+  "eggplant-parmesan": {
+    "title": "Eggplant Parmesan",
+    "cuisine": "italian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Crumbed, fried eggplant layered with tomato sauce, mozzarella and parmesan, then baked."
+  },
+  "empanadas": {
+    "title": "Empanadas",
+    "cuisine": "latin-american",
+    "mealTypes": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "onePot": false,
+    "summary": "Flaky baked pastries filled Argentine-style with spiced beef, egg, olives and raisins."
+  },
+  "enchiladas": {
+    "title": "Enchiladas",
+    "cuisine": "mexican",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Chicken-filled corn tortillas dipped in a dried chilli sauce and baked with cheese."
+  },
+  "fajitas": {
+    "title": "Fajitas",
+    "cuisine": "mexican",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Charred skirt steak and capsicum brought sizzling to the table with warm tortillas."
+  },
+  "falafel-salad": {
+    "title": "Falafel Salad",
+    "cuisine": "middle-eastern",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Halved falafel over a crisp salad with feta and olives, finished with tahini and sumac."
+  },
+  "falafel-wrap": {
+    "title": "Falafel Wrap",
+    "cuisine": "middle-eastern",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Crisp herb falafel from soaked dried chickpeas, wrapped with tahini and pickles."
+  },
+  "feijoada": {
+    "title": "Feijoada",
+    "cuisine": "latin-american",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Black beans slow-cooked with pork belly, sausage and beef, served with rice and farofa."
+  },
+  "fish-and-chips": {
+    "title": "Fish and Chips",
+    "cuisine": "british",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Cold beer-battered fish and twice-fried chips, crisp and light."
+  },
+  "fish-curry": {
+    "title": "Fish Curry",
+    "cuisine": "indian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Firm white fish poached gently in a South Indian coconut, tamarind and curry leaf sauce."
+  },
+  "fish-tacos": {
+    "title": "Fish Tacos",
+    "cuisine": "mexican",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "summer"
+    ],
+    "summary": "Spiced white fish in charred corn tortillas with lime slaw and chipotle crema."
+  },
+  "four-cheese-pizza": {
+    "title": "Four Cheese Pizza",
+    "cuisine": "italian",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "A white pizza of mozzarella, Gorgonzola, Gruyère and parmesan, finished with honey."
+  },
+  "french-onion-soup": {
+    "title": "French Onion Soup",
+    "cuisine": "french",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Onions cooked slowly to mahogany in beef stock, under a grilled Gruyère crouton."
+  },
+  "fried-chicken": {
+    "title": "Fried Chicken",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Buttermilk-marinated chicken in a craggy spiced coating, fried steadily until deep golden."
+  },
+  "gazpacho": {
+    "title": "Gazpacho",
+    "cuisine": "spanish",
+    "mealTypes": [
+      "lunch"
+    ],
+    "onePot": false,
+    "seasons": [
+      "summer"
+    ],
+    "summary": "A chilled blended soup of ripe tomato, cucumber and capsicum, thickened with bread."
+  },
+  "gnocchi": {
+    "title": "Gnocchi",
+    "cuisine": "italian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Light potato gnocchi from baked floury potatoes, tossed in nutty sage butter."
+  },
+  "gnocchi-bake": {
+    "title": "Gnocchi Bake",
+    "cuisine": "italian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Shop-bought gnocchi baked straight into a sausage and tomato sauce under mozzarella."
+  },
+  "goulash": {
+    "title": "Goulash",
+    "cuisine": "central-european",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Beef braised with jammy onions and sweet Hungarian paprika, brightened with vinegar."
+  },
+  "greek-chicken-bowl": {
+    "title": "Greek Chicken Bowl",
+    "cuisine": "greek",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Oregano and lemon chicken over lemon rice with tzatziki, feta and olives."
+  },
+  "greek-lamb": {
+    "title": "Greek Lamb",
+    "cuisine": "greek",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Garlic-studded lamb shoulder slow-roasted over potatoes until it pulls apart."
+  },
+  "greek-salad": {
+    "title": "Greek Salad",
+    "cuisine": "greek",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "summer"
+    ],
+    "summary": "Ripe tomato, cucumber, olives and onion under a whole slab of feta and oregano."
+  },
+  "green-papaya-salad": {
+    "title": "Green Papaya Salad",
+    "cuisine": "thai",
+    "mealTypes": [
+      "lunch"
+    ],
+    "onePot": false,
+    "seasons": [
+      "summer"
+    ],
+    "summary": "Shredded green papaya pounded with lime, chilli, fish sauce and peanuts."
+  },
+  "grilled-cheese": {
+    "title": "Grilled Cheese",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch",
+      "snack"
+    ],
+    "onePot": true,
+    "summary": "Cheddar, Gruyère and mozzarella in bread crisped slowly with butter and mayonnaise."
+  },
+  "grilled-chicken-salad": {
+    "title": "Grilled Chicken Salad",
+    "cuisine": "modern-australian",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Chargrilled lemon and oregano chicken over a crisp salad with feta, olives and avocado."
+  },
+  "grilled-halloumi": {
+    "title": "Grilled Halloumi",
+    "cuisine": "middle-eastern",
+    "mealTypes": [
+      "lunch",
+      "snack"
+    ],
+    "onePot": false,
+    "seasons": [
+      "summer"
+    ],
+    "summary": "Seared halloumi with watermelon and mint under a warm honey-chilli drizzle."
+  },
+  "grilled-salmon": {
+    "title": "Grilled Salmon",
+    "cuisine": "modern-australian",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Lemon and herb salmon cooked skin-side down on the barbecue, finished with herb butter."
+  },
+  "grilled-steak": {
+    "title": "Grilled Steak",
+    "cuisine": "modern-australian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "A well-salted steak seared hard, rested, and topped with garlic herb butter."
+  },
+  "gumbo": {
+    "title": "Gumbo",
+    "cuisine": "american",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "A dark roux stew of andouille, chicken and prawns, thickened with okra or filé."
+  },
+  "gyros": {
+    "title": "Gyros",
+    "cuisine": "greek",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Charred marinated pork in warm pita with tzatziki, tomato, onion and hot chips."
+  },
+  "gyudon": {
+    "title": "Gyudon",
+    "cuisine": "japanese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Thin beef and onion simmered in a sweet dashi and soy sauce over rice with an egg."
+  },
+  "halloumi-wrap": {
+    "title": "Halloumi Wrap",
+    "cuisine": "middle-eastern",
+    "mealTypes": [
+      "lunch"
+    ],
+    "onePot": false,
+    "summary": "Golden seared halloumi rolled with salad, mint and a yoghurt tahini sauce."
+  },
+  "hawaiian-pizza": {
+    "title": "Hawaiian Pizza",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Ham and pineapple over tomato and mozzarella, baked until the fruit caramelises."
+  },
+  "honey-garlic-chicken": {
+    "title": "Honey Garlic Chicken",
+    "cuisine": "chinese",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Crisp-skinned thighs basted in the pan with a sticky honey, soy and garlic glaze."
+  },
+  "hot-dogs": {
+    "title": "Hot Dogs",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Simmered then charred franks in toasted buns with slow-cooked onions and sauerkraut."
+  },
+  "huevos-rancheros": {
+    "title": "Huevos Rancheros",
+    "cuisine": "mexican",
+    "mealTypes": [
+      "breakfast"
+    ],
+    "onePot": false,
+    "summary": "Fried eggs on charred corn tortillas with black beans and a spiced tomato sauce."
+  },
+  "hummus-plate": {
+    "title": "Hummus Plate",
+    "cuisine": "middle-eastern",
+    "mealTypes": [
+      "lunch",
+      "snack"
+    ],
+    "onePot": false,
+    "summary": "Silky hummus from peeled, well-cooked chickpeas, served with warm pita and crudités."
+  },
+  "italian-meatballs": {
+    "title": "Italian Meatballs",
+    "cuisine": "italian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Browned beef and pork meatballs simmered in a garlicky tomato sauce over spaghetti."
+  },
+  "jambalaya": {
+    "title": "Jambalaya",
+    "cuisine": "american",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Creole rice cooked with andouille, chicken and prawns in a spiced tomato base."
+  },
+  "jollof-rice": {
+    "title": "Jollof Rice",
+    "cuisine": "west-african",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Rice cooked unstirred in a stewed pepper and tomato base until smoky at the bottom."
+  },
+  "kare-kare": {
+    "title": "Kare Kare",
+    "cuisine": "filipino",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Tender oxtail in a thick peanut and annatto sauce, served with vegetables and bagoong."
+  },
+  "katsu-curry": {
+    "title": "Katsu Curry",
+    "cuisine": "japanese",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Crisp panko cutlets beside a smooth, gently sweet Japanese curry sauce and rice."
+  },
+  "kebab": {
+    "title": "Kebab",
+    "cuisine": "turkish",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Yoghurt-marinated lamb skewers charred on the grill, with flatbread, tzatziki and sumac."
+  },
+  "korean-bbq-beef": {
+    "title": "Korean BBQ Beef",
+    "cuisine": "korean",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Pear-marinated rib eye seared fast and wrapped at the table in lettuce with ssamjang."
+  },
+  "korean-fried-chicken": {
+    "title": "Korean Fried Chicken",
+    "cuisine": "korean",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Double-fried wings, shatteringly crisp, tossed in a sweet and spicy gochujang glaze."
+  },
+  "kung-pao-chicken": {
+    "title": "Kung Pao Chicken",
+    "cuisine": "chinese",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Seared chicken with dried chillies, Sichuan pepper and peanuts in a glossy, tart sauce."
+  },
+  "laksa": {
+    "title": "Laksa",
+    "cuisine": "malaysian",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "A rich coconut curry broth with chicken, prawns and tofu puffs over thick noodles."
+  },
+  "lamb-chops": {
+    "title": "Lamb Chops",
+    "cuisine": "modern-australian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Rosemary and garlic lamb cutlets seared fast and served under a sharp salsa verde."
+  },
+  "lamb-kofta": {
+    "title": "Lamb Kofta",
+    "cuisine": "middle-eastern",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Spiced lamb shaped around skewers, charred on the grill and wrapped with yoghurt sauce."
+  },
+  "lamb-tagine": {
+    "title": "Lamb Tagine",
+    "cuisine": "north-african",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Lamb shoulder braised with ras el hanout and saffron, sweetened with apricots and honey."
+  },
+  "lasagna": {
+    "title": "Lasagna",
+    "cuisine": "italian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Layers of slow ragù, béchamel and mozzarella, rested so each slice holds."
+  },
+  "lemon-herb-chicken": {
+    "title": "Lemon Herb Chicken",
+    "cuisine": "modern-australian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Seared, oven-finished chicken with a lemon, wine and butter pan sauce."
+  },
+  "lemon-pepper-salmon": {
+    "title": "Lemon Pepper Salmon",
+    "cuisine": "modern-australian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Salmon crusted with lemon zest and cracked pepper, with a quick caper butter sauce."
+  },
+  "lentil-soup": {
+    "title": "Lentil Soup",
+    "cuisine": "middle-eastern",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Brown lentils simmered with cumin and tomato, finished with spinach and lemon."
+  },
+  "lo-mein": {
+    "title": "Lo Mein",
+    "cuisine": "chinese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Soft egg noodles tossed with chicken, cabbage and a glossy soy and oyster sauce."
+  },
+  "loaded-nachos": {
+    "title": "Loaded Nachos",
+    "cuisine": "mexican",
+    "mealTypes": [
+      "dinner",
+      "snack"
+    ],
+    "onePot": false,
+    "summary": "Corn chips layered with spiced beef, beans and cheese, baked and piled with cold toppings."
+  },
+  "lobster-roll": {
+    "title": "Lobster Roll",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch"
+    ],
+    "onePot": false,
+    "summary": "Chunks of lobster lightly dressed in mayonnaise, piled into butter-toasted rolls."
+  },
+  "mac-and-cheese": {
+    "title": "Mac and Cheese",
+    "cuisine": "american",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Macaroni baked in a three-cheese sauce beneath a crisp paprika crumb."
+  },
+  "mango-curry": {
+    "title": "Mango Curry",
+    "cuisine": "indian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "seasons": [
+      "summer"
+    ],
+    "summary": "Chicken in a coconut and ripe mango sauce with curry leaves, finished with fresh mango."
+  },
+  "mapo-tofu": {
+    "title": "Mapo Tofu",
+    "cuisine": "chinese",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Silken tofu in a fiery doubanjiang and pork sauce, finished with numbing Sichuan pepper."
+  },
+  "margarita-flatbread": {
+    "title": "Margherita Flatbread",
+    "cuisine": "italian",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Store-bought flatbread topped with raw tomato sauce and mozzarella, baked hot, with basil."
+  },
+  "margherita-pizza": {
+    "title": "Margherita Pizza",
+    "cuisine": "italian",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Blistered crust, raw tomato and torn fior di latte, baked as hot as the oven allows."
+  },
+  "massaman-curry": {
+    "title": "Massaman Curry",
+    "cuisine": "thai",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Beef chuck and potato slowly braised in a mild, warm-spiced coconut and peanut curry."
+  },
+  "meatloaf": {
+    "title": "Meatloaf",
+    "cuisine": "american",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "A tender beef and pork loaf baked free-form under a sweet, tangy ketchup glaze."
+  },
+  "mediterranean-platter": {
+    "title": "Mediterranean Platter",
+    "cuisine": "middle-eastern",
+    "mealTypes": [
+      "lunch",
+      "snack"
+    ],
+    "onePot": false,
+    "summary": "A generous board of dips, cheeses, cured meats, pickles and warm pita for sharing."
+  },
+  "minestrone": {
+    "title": "Minestrone",
+    "cuisine": "italian",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "A thick vegetable, bean and pasta soup built on a parmesan rind, finished with pesto."
+  },
+  "miso-soup": {
+    "title": "Miso Soup",
+    "cuisine": "japanese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "A homemade kombu and bonito dashi with miso, silken tofu, wakame and spring onion."
+  },
+  "moussaka": {
+    "title": "Moussaka",
+    "cuisine": "greek",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Grilled eggplant and cinnamon-spiced lamb under a firm, golden béchamel."
+  },
+  "mushroom-risotto": {
+    "title": "Mushroom Risotto",
+    "cuisine": "italian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Carnaroli cooked with porcini-enriched stock and golden mixed mushrooms."
+  },
+  "nasi-goreng": {
+    "title": "Nasi Goreng",
+    "cuisine": "indonesian",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Day-old rice fried hard with shrimp paste and kecap manis, topped with a runny egg."
+  },
+  "nicoise-salad": {
+    "title": "Niçoise Salad",
+    "cuisine": "french",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "summer"
+    ],
+    "summary": "A composed platter of tuna, jammy eggs, potatoes, beans and olives with a sharp dressing."
+  },
+  "okonomiyaki": {
+    "title": "Okonomiyaki",
+    "cuisine": "japanese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "A savoury cabbage pancake topped with pork belly, sauce, mayonnaise and bonito."
+  },
+  "omelette": {
+    "title": "Omelette",
+    "cuisine": "french",
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "onePot": true,
+    "summary": "A pale, soft French omelette rolled around its filling while still glossy inside."
+  },
+  "osso-buco": {
+    "title": "Osso Buco",
+    "cuisine": "italian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Veal shanks braised in white wine and tomato, finished with a sharp gremolata."
+  },
+  "pad-thai": {
+    "title": "Pad Thai",
+    "cuisine": "thai",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Rice noodles tossed hot with tamarind, fish sauce, prawns and a crunch of peanuts."
+  },
+  "paella": {
+    "title": "Paella",
+    "cuisine": "spanish",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Saffron rice with chicken, chorizo and seafood, left unstirred to form the socarrat."
+  },
+  "paneer-butter-masala": {
+    "title": "Paneer Butter Masala",
+    "cuisine": "indian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Golden paneer in a velvety tomato, cashew and cream sauce scented with fenugreek."
+  },
+  "pastrami-sandwich": {
+    "title": "Pastrami Sandwich",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch"
+    ],
+    "onePot": false,
+    "summary": "Steamed deli pastrami piled high on rye with mustard and dill pickles."
+  },
+  "peking-duck": {
+    "title": "Peking Duck",
+    "cuisine": "chinese",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Air-dried, lacquered duck roasted to crackling, rolled in pancakes with hoisin."
+  },
+  "penne-arrabbiata": {
+    "title": "Penne Arrabbiata",
+    "cuisine": "italian",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Penne in a sharp, fiery tomato sauce built on garlic and plenty of chilli."
+  },
+  "pepperoni-pizza": {
+    "title": "Pepperoni Pizza",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Spicy pepperoni that curls into crisp cups over tomato and mozzarella."
+  },
+  "peri-peri-chicken": {
+    "title": "Peri Peri Chicken",
+    "cuisine": "south-african",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Spatchcocked chicken roasted in a fiery chilli, garlic and lemon sauce."
+  },
+  "pesto-pasta": {
+    "title": "Pesto Pasta",
+    "cuisine": "italian",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "summer"
+    ],
+    "summary": "Fresh basil and pine nut pesto loosened with pasta water and never cooked."
+  },
+  "pho": {
+    "title": "Pho",
+    "cuisine": "vietnamese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "A clear, charred-onion beef broth poured over rice noodles and paper-thin fillet."
+  },
+  "picanha": {
+    "title": "Picanha",
+    "cuisine": "latin-american",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Rump cap grilled fat-side down with rock salt, sliced thin with a sharp tomato vinagrete."
+  },
+  "pierogi": {
+    "title": "Pierogi",
+    "cuisine": "central-european",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Potato and cheese dumplings, boiled then crisped in caramelised onion butter."
+  },
+  "poke-bowl": {
+    "title": "Poke Bowl",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "summer"
+    ],
+    "summary": "Marinated raw tuna over seasoned sushi rice with avocado, edamame and spicy mayonnaise."
+  },
+  "pork-adobo": {
+    "title": "Pork Adobo",
+    "cuisine": "filipino",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Pork braised in soy, vinegar and garlic, reduced to a glaze and crisped at the edges."
+  },
+  "pork-belly-bao": {
+    "title": "Pork Belly Bao",
+    "cuisine": "chinese",
+    "mealTypes": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "onePot": false,
+    "summary": "Soy-braised pork belly in steamed buns with pickled cucumber, hoisin and peanuts."
+  },
+  "pork-dumplings": {
+    "title": "Pork Dumplings",
+    "cuisine": "chinese",
+    "mealTypes": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "onePot": false,
+    "summary": "Juicy pork and cabbage dumplings, boiled or pan-fried, with a black vinegar dip."
+  },
+  "pork-fried-rice": {
+    "title": "Pork Fried Rice",
+    "cuisine": "chinese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Cold rice fried with crisp-edged pork mince, egg and peas in a hot wok."
+  },
+  "pork-roast": {
+    "title": "Pork Roast",
+    "cuisine": "british",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Dry-salted pork roasted high then low for deep crackling, with fennel and rosemary."
+  },
+  "pork-schnitzel": {
+    "title": "Pork Schnitzel",
+    "cuisine": "central-european",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Thin pork loin crumbed and fried in foaming butter, with lemon and apple sauce."
+  },
+  "pork-tacos": {
+    "title": "Pork Tacos",
+    "cuisine": "mexican",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Orange-braised pork shoulder fried crisp as carnitas, in charred corn tortillas."
+  },
+  "prawn-curry": {
+    "title": "Prawn Curry",
+    "cuisine": "indian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Prawns simmered briefly in a coconut, tomato and curry leaf sauce."
+  },
+  "prawn-linguine": {
+    "title": "Prawn Linguine",
+    "cuisine": "italian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Linguine with prawns, cherry tomato, chilli and white wine, lifted by prawn-shell oil."
+  },
+  "pulled-pork": {
+    "title": "Pulled Pork",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Spice-rubbed pork shoulder roasted low for hours, shredded and tossed with barbecue sauce."
+  },
+  "pumpkin-soup": {
+    "title": "Pumpkin Soup",
+    "cuisine": "modern-australian",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Roasted pumpkin, carrot and garlic blended with gentle spice and a little cream."
+  },
+  "quesadillas": {
+    "title": "Quesadillas",
+    "cuisine": "mexican",
+    "mealTypes": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "onePot": false,
+    "summary": "Chipotle chicken and melted cheese in crisp, blistered flour tortillas."
+  },
+  "quiche-lorraine": {
+    "title": "Quiche Lorraine",
+    "cuisine": "french",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Crisp blind-baked pastry holding a wobbling custard of bacon and Gruyère."
+  },
+  "ramen": {
+    "title": "Ramen",
+    "cuisine": "japanese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "A gentle shiitake and kombu broth seasoned in the bowl, with jammy eggs and pork."
+  },
+  "ratatouille": {
+    "title": "Ratatouille",
+    "cuisine": "french",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "summer"
+    ],
+    "summary": "Eggplant, courgette and capsicum browned separately and folded into a rich tomato base."
+  },
+  "reuben-sandwich": {
+    "title": "Reuben Sandwich",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch"
+    ],
+    "onePot": false,
+    "summary": "Corned beef, sauerkraut and Swiss on rye with Russian dressing, toasted until melting."
+  },
+  "risotto": {
+    "title": "Risotto",
+    "cuisine": "italian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Carnaroli stirred with stock and wine, finished all'onda with cold butter and parmesan."
+  },
+  "roast-chicken": {
+    "title": "Roast Chicken",
+    "cuisine": "british",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "A whole bird roasted with herb butter under the skin, with a pan gravy from the tray."
+  },
+  "roasted-veggie-bowl": {
+    "title": "Roasted Veggie Bowl",
+    "cuisine": "modern-australian",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Spiced roast vegetables and crisp chickpeas over quinoa with tahini, feta and pomegranate."
+  },
+  "rogan-josh": {
+    "title": "Rogan Josh",
+    "cuisine": "indian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Lamb shoulder braised in yoghurt and Kashmiri chilli until it yields to a fork."
+  },
+  "saag-paneer": {
+    "title": "Saag Paneer",
+    "cuisine": "indian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Golden paneer in a vivid, gently spiced spinach sauce enriched with cream."
+  },
+  "salisbury-steak": {
+    "title": "Salisbury Steak",
+    "cuisine": "american",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Tender beef patties simmered in a browned mushroom and onion gravy, served over mash."
+  },
+  "salmon-nigiri": {
+    "title": "Salmon Nigiri",
+    "cuisine": "japanese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Slices of cold, sashimi-grade salmon pressed onto hand-shaped vinegared rice."
+  },
+  "salmon-poke": {
+    "title": "Salmon Poke",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Raw salmon dressed in soy, sesame and honey over sushi rice with avocado and edamame."
+  },
+  "salmon-teriyaki": {
+    "title": "Salmon Teriyaki",
+    "cuisine": "japanese",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Crisp-skinned salmon glazed in the pan with a reduced soy and mirin sauce."
+  },
+  "samosas": {
+    "title": "Samosas",
+    "cuisine": "indian",
+    "mealTypes": [
+      "snack"
+    ],
+    "onePot": false,
+    "summary": "Hand-folded pastries of spiced potato and peas, fried slowly and served with chutneys."
+  },
+  "satay-skewers": {
+    "title": "Satay Skewers",
+    "cuisine": "malaysian",
+    "mealTypes": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "onePot": false,
+    "summary": "Turmeric and lemongrass chicken skewers charred on the grill, with a coarse peanut sauce."
+  },
+  "schnitzel": {
+    "title": "Schnitzel",
+    "cuisine": "central-european",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Thin veal escalopes fried in foaming butter until the crumb ripples and puffs."
+  },
+  "seafood-paella": {
+    "title": "Seafood Paella",
+    "cuisine": "spanish",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Saffron rice with prawns, mussels, clams and calamari, crisped underneath into socarrat."
+  },
+  "seafood-pasta": {
+    "title": "Seafood Pasta",
+    "cuisine": "italian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Linguine with mussels, clams, prawns and calamari in a garlic, wine and tomato broth."
+  },
+  "seafood-risotto": {
+    "title": "Seafood Risotto",
+    "cuisine": "italian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Saffron risotto with mussels, clams, prawns and calamari, finished with butter and lemon."
+  },
+  "shakshuka": {
+    "title": "Shakshuka",
+    "cuisine": "north-african",
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "onePot": true,
+    "summary": "Eggs poached in a spiced tomato and capsicum sauce, finished with feta and herbs."
+  },
+  "shawarma": {
+    "title": "Shawarma",
+    "cuisine": "middle-eastern",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Warm-spiced roast chicken thighs rolled in flatbread with tahini and pickled turnip."
+  },
+  "shepherd-s-pie": {
+    "title": "Shepherd’s Pie",
+    "cuisine": "british",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Lamb mince in a thick, herby gravy under a ridged crust of buttery mash."
+  },
+  "shrimp-alfredo": {
+    "title": "Shrimp Alfredo",
+    "cuisine": "american",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Fettuccine in a lemony parmesan cream sauce with garlic and chilli prawns."
+  },
+  "shrimp-fried-rice": {
+    "title": "Shrimp Fried Rice",
+    "cuisine": "chinese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Day-old rice fried hard with prawns, egg and peas, glossed with soy."
+  },
+  "shrimp-pad-thai": {
+    "title": "Shrimp Pad Thai",
+    "cuisine": "thai",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Rice noodles tossed with prawns, tamarind, egg, sprouts and peanuts."
+  },
+  "shrimp-scampi": {
+    "title": "Shrimp Scampi",
+    "cuisine": "american",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Linguine and prawns tossed in garlic, white wine, lemon and butter."
+  },
+  "shrimp-tacos": {
+    "title": "Shrimp Tacos",
+    "cuisine": "mexican",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "summer"
+    ],
+    "summary": "Quick-charred spiced prawns in corn tortillas with avocado sauce and mango."
+  },
+  "shrimp-tempura": {
+    "title": "Shrimp Tempura",
+    "cuisine": "japanese",
+    "mealTypes": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "onePot": false,
+    "summary": "Prawns in a pale, lacy batter of ice-cold soda water, with a light dashi dipping sauce."
+  },
+  "sisig": {
+    "title": "Sisig",
+    "cuisine": "filipino",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Boiled then crisped chopped pork, sharpened with calamansi and served sizzling with egg."
+  },
+  "sloppy-joes": {
+    "title": "Sloppy Joes",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Beef mince in a tangy, sweet tomato sauce spooned onto toasted buns."
+  },
+  "smash-burger": {
+    "title": "Smash Burger",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Thin beef patties smashed onto a smoking pan for lacy edges, stacked two to a bun."
+  },
+  "soba-noodles": {
+    "title": "Soba Noodles",
+    "cuisine": "japanese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "summer"
+    ],
+    "summary": "Chilled buckwheat noodles dipped into a cold dashi and soy tsuyu."
+  },
+  "spaghetti-aglio-e-olio": {
+    "title": "Spaghetti Aglio e Olio",
+    "cuisine": "italian",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Spaghetti emulsified with gently sizzled garlic, olive oil, chilli and parsley."
+  },
+  "spaghetti-bolognese": {
+    "title": "Spaghetti Bolognese",
+    "cuisine": "italian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "A slow ragù with milk and wine, simmered until glossy and deeply savoury."
+  },
+  "spicy-beef-bowl": {
+    "title": "Spicy Beef Bowl",
+    "cuisine": "korean",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Gochujang-glazed beef over rice with crunchy vegetables, kimchi and a jammy egg."
+  },
+  "spicy-ramen": {
+    "title": "Spicy Ramen",
+    "cuisine": "japanese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "A miso and gochujang broth over ramen, topped with jammy eggs and sizzled chilli oil."
+  },
+  "spicy-sausage-pasta": {
+    "title": "Spicy Sausage Pasta",
+    "cuisine": "italian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Rigatoni in a tomato and cream sauce with crisp-edged spicy sausage and chilli."
+  },
+  "spicy-thai-noodles": {
+    "title": "Spicy Thai Noodles",
+    "cuisine": "thai",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Rice noodles stir-fried with chilli, tamarind and fish sauce, finished with Thai basil."
+  },
+  "spring-rolls": {
+    "title": "Spring Rolls",
+    "cuisine": "vietnamese",
+    "mealTypes": [
+      "lunch",
+      "snack"
+    ],
+    "onePot": false,
+    "seasons": [
+      "summer"
+    ],
+    "summary": "Fresh rice paper rolls of prawn, herbs and vermicelli with a peanut hoisin dip."
+  },
+  "stuffed-cabbage": {
+    "title": "Stuffed Cabbage",
+    "cuisine": "central-european",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Cabbage leaves rolled around beef, pork and rice, baked slowly in sweet-sour tomato."
+  },
+  "stuffed-chicken-breast": {
+    "title": "Stuffed Chicken Breast",
+    "cuisine": "modern-australian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Chicken breast filled with spinach, feta and sun-dried tomato, seared then roasted."
+  },
+  "stuffed-eggplant": {
+    "title": "Stuffed Eggplant",
+    "cuisine": "turkish",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Roasted eggplant filled with spiced lamb, topped with feta, yoghurt and pomegranate."
+  },
+  "stuffed-mushrooms": {
+    "title": "Stuffed Mushrooms",
+    "cuisine": "american",
+    "mealTypes": [
+      "snack"
+    ],
+    "onePot": false,
+    "summary": "Mushroom caps filled with bacon and cream cheese, baked under a buttery parmesan crumb."
+  },
+  "stuffed-peppers": {
+    "title": "Stuffed Peppers",
+    "cuisine": "modern-australian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Capsicums filled with spiced mince, rice and feta, baked until soft and golden."
+  },
+  "stuffed-shells": {
+    "title": "Stuffed Shells",
+    "cuisine": "american",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Jumbo pasta shells filled with ricotta and spinach, baked in tomato sauce with mozzarella."
+  },
+  "sunday-roast": {
+    "title": "Sunday Roast",
+    "cuisine": "british",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Roast beef with crisp potatoes, Yorkshire puddings and a red wine gravy."
+  },
+  "sushi-rolls": {
+    "title": "Sushi Rolls",
+    "cuisine": "japanese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Hand-rolled maki with seasoned rice, salmon, cucumber and avocado."
+  },
+  "swedish-meatballs": {
+    "title": "Swedish Meatballs",
+    "cuisine": "scandinavian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Small allspice-scented meatballs in a creamy gravy, with mash and lingonberry jam."
+  },
+  "sweet-and-sour-pork": {
+    "title": "Sweet and Sour Pork",
+    "cuisine": "chinese",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Double-fried pork tossed at the last moment in a glossy pineapple and vinegar sauce."
+  },
+  "tagine": {
+    "title": "Tagine",
+    "cuisine": "north-african",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Chicken braised gently with saffron, preserved lemon and green olives."
+  },
+  "takoyaki": {
+    "title": "Takoyaki",
+    "cuisine": "japanese",
+    "mealTypes": [
+      "snack"
+    ],
+    "onePot": true,
+    "summary": "Octopus batter balls turned in their wells until golden, with sauce and bonito."
+  },
+  "tandoori-chicken": {
+    "title": "Tandoori Chicken",
+    "cuisine": "indian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Yoghurt-marinated chicken roasted hot and charred under the grill."
+  },
+  "tapas-platter": {
+    "title": "Tapas Platter",
+    "cuisine": "spanish",
+    "mealTypes": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "onePot": false,
+    "summary": "Patatas bravas and garlic prawns with jamón, manchego and olives for the table."
+  },
+  "teriyaki-beef-bowl": {
+    "title": "Teriyaki Beef Bowl",
+    "cuisine": "japanese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Thin beef glazed in teriyaki over rice with broccoli, carrot and cucumber."
+  },
+  "teriyaki-chicken-bowl": {
+    "title": "Teriyaki Chicken Bowl",
+    "cuisine": "japanese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Crisp-skinned, pan-glazed teriyaki chicken over rice with fresh vegetables and avocado."
+  },
+  "teriyaki-pork": {
+    "title": "Teriyaki Pork",
+    "cuisine": "japanese",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Seared and roasted pork tenderloin, sliced and glossed in a pan-reduced teriyaki."
+  },
+  "teriyaki-shrimp-bowl": {
+    "title": "Teriyaki Shrimp Bowl",
+    "cuisine": "japanese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Quick-glazed teriyaki prawns over rice with broccoli, avocado and cucumber."
+  },
+  "teriyaki-tofu": {
+    "title": "Teriyaki Tofu",
+    "cuisine": "japanese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Crisp cornflour-dusted tofu tossed briefly in a glossy teriyaki glaze."
+  },
+  "thai-basil-chicken": {
+    "title": "Thai Basil Chicken",
+    "cuisine": "thai",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Knife-cut chicken stir-fried with garlic, chilli and holy basil, topped with a crisp egg."
+  },
+  "thai-green-curry": {
+    "title": "Thai Green Curry",
+    "cuisine": "thai",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Chicken simmered in coconut milk with a paste fried until fragrant, finished with basil."
+  },
+  "tikka-masala": {
+    "title": "Tikka Masala",
+    "cuisine": "indian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Charred yoghurt-marinated chicken finished in a smooth, creamy spiced tomato sauce."
+  },
+  "tofu-buddha-bowl": {
+    "title": "Tofu Buddha Bowl",
+    "cuisine": "modern-australian",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Glazed crisp tofu and roasted sweet potato over quinoa with a lemon tahini drizzle."
+  },
+  "tofu-stir-fry": {
+    "title": "Tofu Stir Fry",
+    "cuisine": "chinese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Pressed, cornflour-dusted tofu fried golden and tossed with vegetables in a hoisin glaze."
+  },
+  "tom-kha-gai": {
+    "title": "Tom Kha Gai",
+    "cuisine": "thai",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Chicken simmered gently in coconut milk with galangal, lemongrass and lime leaves."
+  },
+  "tom-yum-soup": {
+    "title": "Tom Yum Soup",
+    "cuisine": "thai",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "A hot and sour lemongrass and galangal broth with prawns, mushrooms and lime."
+  },
+  "tortellini-alfredo": {
+    "title": "Tortellini Alfredo",
+    "cuisine": "american",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Cheese tortellini in a quick butter, cream and parmesan sauce, ready in minutes."
+  },
+  "tortilla-soup": {
+    "title": "Tortilla Soup",
+    "cuisine": "mexican",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "A spiced tomato and chicken broth with beans and corn, piled with crisp tortilla strips."
+  },
+  "tteokbokki": {
+    "title": "Tteokbokki",
+    "cuisine": "korean",
+    "mealTypes": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "onePot": true,
+    "summary": "Chewy rice cakes and fish cake simmered in a sticky, sweet and spicy gochujang sauce."
+  },
+  "tuna-melt": {
+    "title": "Tuna Melt",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch"
+    ],
+    "onePot": true,
+    "summary": "A tangy tuna salad and cheddar toasted slowly in a buttered pan until molten."
+  },
+  "tuna-poke": {
+    "title": "Tuna Poke",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "summer"
+    ],
+    "summary": "Soy and sesame-marinated raw tuna over warm sushi rice with avocado, edamame and cabbage."
+  },
+  "turkey-burger": {
+    "title": "Turkey Burger",
+    "cuisine": "american",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "A moist turkey patty with avocado mayonnaise, pickled onion and jalapeño."
+  },
+  "turkish-pide": {
+    "title": "Turkish Pide",
+    "cuisine": "turkish",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Boat-shaped flatbreads filled with spiced lamb and cheese, one crowned with a runny egg."
+  },
+  "udon-noodles": {
+    "title": "Udon Noodles",
+    "cuisine": "japanese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "summary": "Thick, chewy udon in a hot dashi, soy and mirin broth with fish cake and egg."
+  },
+  "vegetable-curry": {
+    "title": "Vegetable Curry",
+    "cuisine": "indian",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Sweet potato, cauliflower and chickpeas simmered in a spiced coconut sauce."
+  },
+  "vegetable-lasagna": {
+    "title": "Vegetable Lasagna",
+    "cuisine": "italian",
+    "mealTypes": [
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Roasted eggplant, zucchini, capsicum and mushroom layered with spinach ricotta and tomato."
+  },
+  "vegetarian-sushi": {
+    "title": "Vegetarian Sushi",
+    "cuisine": "japanese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Maki rolls filled with crisp vegetables, pickled radish and glazed pan-fried tofu."
+  },
+  "veggie-burger": {
+    "title": "Veggie Burger",
+    "cuisine": "modern-australian",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": false,
+    "summary": "Black bean, rice and walnut patties fried crisp and stacked with a tangy burger sauce."
+  },
+  "veggie-stir-fry": {
+    "title": "Veggie Stir Fry",
+    "cuisine": "chinese",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "summary": "Crisp vegetables stir-fried in order over high heat, glossed with soy and oyster sauce."
+  },
+  "veggie-tempura": {
+    "title": "Veggie Tempura",
+    "cuisine": "japanese",
+    "mealTypes": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "onePot": false,
+    "summary": "Sweet potato, pumpkin, eggplant and mushrooms in a light, crisp tempura batter."
+  },
+  "zucchini-noodles": {
+    "title": "Zucchini Noodles",
+    "cuisine": "modern-australian",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "onePot": true,
+    "seasons": [
+      "summer"
+    ],
+    "summary": "Salted zucchini ribbons tossed briefly with garlic, cherry tomato, lemon and basil."
+  }
+}

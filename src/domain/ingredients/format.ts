@@ -1,0 +1,75 @@
+// Scaling a recipe to more or fewer servings, and printing an ingredient
+// line for the cook in their chosen units.
+
+import { formatKitchenNumber, formatMeasuredNumber, isRange, mapQuantity, type Quantity } from './quantity';
+import type { IngredientLine } from './types';
+import { convert, UNITS, unitLabel, type UnitId } from './units';
+
+export type UnitSystem = 'metric' | 'imperial';
+
+/** Multiply a line's quantity. Lines without a quantity ("salt, to taste") are unchanged. */
+export function scaleLine(line: IngredientLine, ratio: number): IngredientLine {
+  if (line.quantity === undefined || ratio === 1) return line;
+  if (!Number.isFinite(ratio) || ratio <= 0) throw new Error(`Invalid scale ratio: ${ratio}`);
+  return { ...line, quantity: mapQuantity(line.quantity, (n) => n * ratio) };
+}
+
+/** Pinches, cloves and eggs come in halves at best: round counts up to the nearest half. */
+function roundCount(n: number): number {
+  return Math.max(0.5, Math.ceil(n * 2 - 1e-9) / 2);
+}
+
+/**
+ * Pick the unit to show. Metric keeps grams and millilitres (switching to kg
+ * or L at 1000). Imperial turns weights into oz/lb and liquids over 60 ml
+ * into fl oz; spoons and cups are left alone because they work in both.
+ */
+function displayUnit(amount: number, unit: UnitId, system: UnitSystem): { amount: number; unit: UnitId } {
+  if (system === 'metric') {
+    if (unit === 'oz' || unit === 'lb') return displayUnit(convert(amount, unit, 'g'), 'g', system);
+    if (unit === 'fl-oz') return displayUnit(convert(amount, unit, 'ml'), 'ml', system);
+    if (unit === 'g' && amount >= 1000) return { amount: convert(amount, 'g', 'kg'), unit: 'kg' };
+    if (unit === 'ml' && amount >= 1000) return { amount: convert(amount, 'ml', 'l'), unit: 'l' };
+    return { amount, unit };
+  }
+  if (unit === 'g' || unit === 'kg') {
+    const grams = convert(amount, unit, 'g');
+    return grams >= 453 ? { amount: convert(grams, 'g', 'lb'), unit: 'lb' } : { amount: convert(grams, 'g', 'oz'), unit: 'oz' };
+  }
+  if ((unit === 'ml' || unit === 'l') && convert(amount, unit, 'ml') > 60) {
+    return { amount: convert(amount, unit, 'fl-oz'), unit: 'fl-oz' };
+  }
+  return { amount, unit };
+}
+
+function formatAmount(amount: number, unit: UnitId | undefined): string {
+  if (unit === undefined || UNITS[unit].kind === 'count') return formatKitchenNumber(roundCount(amount));
+  if (unit === 'oz' || unit === 'lb' || unit === 'fl-oz') return formatKitchenNumber(amount, 'quarters');
+  if (unit === 'tsp' || unit === 'tbsp' || unit === 'cup' || unit === 'kg' || unit === 'l') return formatKitchenNumber(amount);
+  return formatMeasuredNumber(amount);
+}
+
+/** The quantity and unit as printed: "⅓ cup", "1.2 kg", "2–3 cloves", "400 g". */
+export function formatQuantity(quantity: Quantity, unit: UnitId | undefined, system: UnitSystem): string {
+  const lo = isRange(quantity) ? quantity.min : quantity;
+  const hi = isRange(quantity) ? quantity.max : quantity;
+  const shown = unit === undefined ? { amount: hi, unit: undefined } : displayUnit(hi, unit, system);
+  const ratio = hi === 0 ? 1 : shown.amount / hi;
+  const hiText = formatAmount(shown.amount, shown.unit);
+  const loText = formatAmount(lo * ratio, shown.unit);
+  const number = isRange(quantity) && loText !== hiText ? `${loText}–${hiText}` : hiText;
+  if (shown.unit === undefined) return number;
+  return `${number} ${unitLabel(shown.unit, hi * ratio)}`;
+}
+
+/** One ingredient line as the cook reads it: "2 cloves garlic, minced". */
+export function formatLine(line: IngredientLine, system: UnitSystem): string {
+  const parts: string[] = [];
+  if (line.quantity !== undefined) parts.push(formatQuantity(line.quantity, line.unit, system));
+  parts.push(line.item);
+  let text = parts.join(' ');
+  if (line.prep) text += `, ${line.prep}`;
+  if (line.note) text += ` (${line.note})`;
+  if (line.optional) text += ' (optional)';
+  return text;
+}
