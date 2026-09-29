@@ -11,7 +11,12 @@ const diets = (lines: string[]) => deriveDiets(allLines(makeRecipe('x', lines)),
 
 describe('deriveDiets', () => {
   it('tags a plant-only dish vegan and vegetarian', () => {
-    assert.deepEqual(diets(['400g tinned chickpeas', '1 brown onion', '2 tbsp olive oil']), ['vegetarian', 'vegan', 'no-gluten', 'no-dairy']);
+    assert.deepEqual(diets(['400g tinned chickpeas', '1 brown onion', '2 tbsp olive oil']), [
+      'vegetarian',
+      'vegan',
+      'no-gluten',
+      'no-dairy',
+    ]);
   });
   it('dairy and eggs are vegetarian but not vegan', () => {
     assert.deepEqual(diets(['100g butter', '2 eggs']), ['vegetarian', 'no-gluten']);
@@ -54,7 +59,9 @@ describe('containsAvoided', () => {
   });
   it('custom entries match the database and plain words', () => {
     const r = makeRecipe('r', ['1 bunch coriander', '1 tbsp kasuri methi']);
-    assert.ok(containsAvoided(r, { options: [], custom: ['cilantro'] }, index) || containsAvoided(r, { options: [], custom: ['coriander'] }, index));
+    assert.ok(
+      containsAvoided(r, { options: [], custom: ['cilantro'] }, index) || containsAvoided(r, { options: [], custom: ['coriander'] }, index),
+    );
     assert.ok(containsAvoided(r, { options: [], custom: ['methi'] }, index));
     assert.ok(!containsAvoided(r, { options: [], custom: ['mushroom'] }, index));
   });
@@ -113,7 +120,11 @@ describe('the converted catalogue', () => {
     for (const r of catalogue) assert.ok(r.cuisine && r.mealTypes.length > 0, r.id);
   });
   it('every quantified, non-optional line is identified', () => {
-    const unknown = catalogue.flatMap((r) => allLines(r).filter((l) => l.quantity !== undefined && !l.optional && !l.ingredientId).map((l) => `${r.id}: ${l.raw}`));
+    const unknown = catalogue.flatMap((r) =>
+      allLines(r)
+        .filter((l) => l.quantity !== undefined && !l.optional && !l.ingredientId)
+        .map((l) => `${r.id}: ${l.raw}`),
+    );
     assert.deepEqual(unknown, []);
   });
   it('stays drafts until Lachlan vets them (D-008)', () => {
@@ -140,10 +151,22 @@ describe('validateRecipe', () => {
       steps: [{ text: '' }],
     };
     const p = paths(bad);
-    for (const expected of ['id', 'title', 'cuisine', 'mealTypes', 'diets', 'servings', 'prepMinutes', 'steps[0]']) assert.ok(p.includes(expected), expected);
+    for (const expected of ['id', 'title', 'cuisine', 'mealTypes', 'diets', 'servings', 'prepMinutes', 'steps[0]'])
+      assert.ok(p.includes(expected), expected);
   });
   it('rejects broken ingredient lines', () => {
-    const r = { ...good, ingredientGroups: [{ items: [{ item: '', raw: 'x', unit: 'g' as const }, { item: 'rice', raw: 'y', quantity: { min: 3, max: 2 } }] }, { items: [] }] };
+    const r = {
+      ...good,
+      ingredientGroups: [
+        {
+          items: [
+            { item: '', raw: 'x', unit: 'g' as const },
+            { item: 'rice', raw: 'y', quantity: { min: 3, max: 2 } },
+          ],
+        },
+        { items: [] },
+      ],
+    };
     const p = paths(r);
     assert.ok(p.includes('ingredientGroups[0].items[0].item'));
     assert.ok(p.includes('ingredientGroups[0].items[0]'));

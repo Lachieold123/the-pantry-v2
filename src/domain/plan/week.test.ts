@@ -1,7 +1,17 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
-import { addDays, entriesInWeek, fromISODate, pruneOldEntries, tonightsDinner, visibleWeeks, weekDays, weekStart, type PlanEntry } from './week';
+import {
+  addDays,
+  entriesInWeek,
+  fromISODate,
+  pruneOldEntries,
+  tonightsDinner,
+  visibleWeeks,
+  weekDays,
+  weekStart,
+  type PlanEntry,
+} from './week';
 
 describe('week plan dates', () => {
   it('weeks start on Monday', () => {
@@ -31,9 +41,15 @@ describe('week plan dates', () => {
   it('finds tonight’s dinner and the entries in a week', () => {
     assert.equal(tonightsDinner(entries, '2026-09-29')?.id, 'a');
     assert.equal(tonightsDinner(entries, '2026-09-30'), undefined);
-    assert.deepEqual(entriesInWeek(entries, '2026-09-28').map((e) => e.id), ['a', 'b']);
+    assert.deepEqual(
+      entriesInWeek(entries, '2026-09-28').map((e) => e.id),
+      ['a', 'b'],
+    );
   });
   it('prunes entries older than 8 weeks', () => {
-    assert.deepEqual(pruneOldEntries(entries, '2026-09-29').map((e) => e.id), ['a', 'b', 'c']);
+    assert.deepEqual(
+      pruneOldEntries(entries, '2026-09-29').map((e) => e.id),
+      ['a', 'b', 'c'],
+    );
   });
 });

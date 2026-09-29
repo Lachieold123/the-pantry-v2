@@ -64,10 +64,14 @@ export function formatQuantity(quantity: Quantity, unit: UnitId | undefined, sys
 
 /** One ingredient line as the cook reads it: "2 cloves garlic, minced". */
 export function formatLine(line: IngredientLine, system: UnitSystem): string {
-  const parts: string[] = [];
-  if (line.quantity !== undefined) parts.push(formatQuantity(line.quantity, line.unit, system));
-  parts.push(line.item);
-  let text = parts.join(' ');
+  let text: string;
+  if (line.quantity !== undefined && line.unit === 'leaf') {
+    // "2 bay leaves", not "2 leaves bay": this unit reads after the item.
+    const [amount = '', ...unitWords] = formatQuantity(line.quantity, line.unit, system).split(' ');
+    text = `${amount} ${line.item} ${unitWords.join(' ')}`;
+  } else {
+    text = line.quantity !== undefined ? `${formatQuantity(line.quantity, line.unit, system)} ${line.item}` : line.item;
+  }
   if (line.prep) text += `, ${line.prep}`;
   if (line.note) text += ` (${line.note})`;
   if (line.optional) text += ' (optional)';

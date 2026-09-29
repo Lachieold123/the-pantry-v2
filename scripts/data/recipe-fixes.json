@@ -1,5 +1,5 @@
 {
-  "_about": "Hand-made corrections applied by scripts/convert-old-recipes.ts on top of the old catalogue. Each replacement must match the old text exactly once, or the conversion fails, so fixes never apply silently to the wrong thing. Logged in DECISIONS.md D-014.",
+  "_about": "Hand-made corrections applied by scripts/convert-old-recipes.mts on top of the old catalogue. Each replacement must match the old text exactly once, or the conversion fails, so fixes never apply silently to the wrong thing. Logged in DECISIONS.md D-014.",
   "fixes": {
     "chicken-kiev": {
       "steps": [{ "from": "until the chicken hits 70°C internally", "to": "until the chicken reaches 75°C in the thickest part" }]

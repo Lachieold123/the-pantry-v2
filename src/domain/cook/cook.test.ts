@@ -8,12 +8,18 @@ describe('Cook Mode timers', () => {
   it('finds timers and uses the upper bound of a range', () => {
     const segs = splitStepTimers('Simmer for 8–10 minutes, then rest 30 seconds.');
     const timers = segs.filter((s) => s.type === 'timer');
-    assert.deepEqual(timers.map((t) => (t.type === 'timer' ? t.seconds : 0)), [600, 30]);
+    assert.deepEqual(
+      timers.map((t) => (t.type === 'timer' ? t.seconds : 0)),
+      [600, 30],
+    );
     assert.equal(segs.map((s) => (s.type === 'text' ? s.text : s.label)).join(''), 'Simmer for 8–10 minutes, then rest 30 seconds.');
   });
   it('leaves storage times and long plans as text', () => {
     for (const text of ['Keeps for 3 days in the fridge.', 'Make up to 2 hours ahead.', 'Marinate for at least 8 hours or overnight.']) {
-      assert.ok(splitStepTimers(text).every((s) => s.type === 'text'), text);
+      assert.ok(
+        splitStepTimers(text).every((s) => s.type === 'text'),
+        text,
+      );
     }
   });
   it('handles hours', () => {

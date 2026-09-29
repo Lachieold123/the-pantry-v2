@@ -55,10 +55,15 @@ Offer 2–3 options with a recommendation.
 ## Commands
 
 ```
+npm start                            # Expo dev server (then open the development build on the phone)
 npm run typecheck                    # tsc --noEmit
-npm test                             # domain and token tests (node:test via tsx)
+npm run lint                         # ESLint, including the map's structure rules
+npm test                             # domain + token tests (node:test) then component tests (Jest)
+npm run export:web                   # static web build, used for screenshots
 npm run catalogue:convert -- <old>   # rebuild the catalogue from the old app at <old>
-npm run catalogue:check-ingredients   # ingredient database coverage over the catalogue
+npm run catalogue:check-ingredients  # ingredient database coverage over the catalogue
 ```
 
-(The Expo app and its `lint`, `e2e` and `start` scripts are added in Phase 1. Keep this list accurate as scripts are added.)
+Routes live in `src/app/` (Expo Router, SDK 57 convention). Route files stay thin: they render a screen from `src/features/`.
+
+(Keep this list accurate as scripts are added.)

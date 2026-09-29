@@ -2,19 +2,63 @@
   "name": "the-pantry-v2",
   "private": true,
   "version": "1.0.0",
-  "type": "module",
   "scripts": {
+    "start": "expo start",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
     "typecheck": "tsc --noEmit",
-    "test": "tsx --test \"src/**/*.test.ts\"",
-    "catalogue:convert": "tsx scripts/convert-old-recipes.ts",
-    "catalogue:check-ingredients": "tsx scripts/check-ingredient-coverage.ts"
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "npm run test:domain && npm run test:ui",
+    "test:domain": "tsx --test \"src/domain/**/*.test.ts\" \"src/ui/tokens/*.test.ts\"",
+    "test:ui": "jest",
+    "catalogue:convert": "tsx scripts/convert-old-recipes.mts",
+    "catalogue:check-ingredients": "tsx scripts/check-ingredient-coverage.mts",
+    "export:web": "expo export --platform web",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx}\" \"scripts/**/*.mts\""
   },
   "engines": {
     "node": ">=22"
   },
   "devDependencies": {
+    "@testing-library/react-native": "^14.0.1",
+    "@types/jest": "^30.0.0",
     "@types/node": ">=22",
+    "@types/react": "~19.2.2",
+    "eslint": "^9.39.5",
+    "eslint-config-expo": "^57.0.2",
+    "jest": "^29.7.0",
+    "jest-expo": "~57.0.5",
+    "prettier": "^3.9.9",
     "tsx": ">=4.19",
-    "typescript": ">=5.8"
+    "typescript": "~6.0.3"
+  },
+  "main": "expo-router/entry",
+  "dependencies": {
+    "@expo-google-fonts/manrope": "^0.4.2",
+    "@expo-google-fonts/newsreader": "^0.4.1",
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "expo": "~57.0.25",
+    "expo-constants": "~57.0.19",
+    "expo-dev-client": "~57.0.19",
+    "expo-font": "~57.0.4",
+    "expo-haptics": "~57.0.3",
+    "expo-image": "~57.0.5",
+    "expo-linking": "~57.0.11",
+    "expo-router": "~57.0.23",
+    "expo-splash-screen": "~57.0.9",
+    "expo-status-bar": "~57.0.1",
+    "expo-symbols": "~57.0.3",
+    "expo-system-ui": "~57.0.4",
+    "react": "19.2.3",
+    "react-dom": "^19.2.3",
+    "react-native": "0.86.3",
+    "react-native-gesture-handler": "~2.32.0",
+    "react-native-reanimated": "^4.5.1",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-screens": "~4.26.0",
+    "react-native-web": "^0.21.3",
+    "react-native-worklets": "^0.10.1",
+    "zustand": "^5.0.15"
   }
 }

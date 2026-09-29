@@ -1,10 +1,31 @@
 import type { IngredientLine } from '../ingredients/types';
 
 export const CUISINES = [
-  'italian', 'french', 'spanish', 'greek', 'turkish', 'middle-eastern', 'north-african',
-  'west-african', 'south-african', 'indian', 'thai', 'vietnamese', 'chinese', 'japanese',
-  'korean', 'malaysian', 'indonesian', 'filipino', 'mexican', 'latin-american', 'american',
-  'british', 'central-european', 'scandinavian', 'modern-australian',
+  'italian',
+  'french',
+  'spanish',
+  'greek',
+  'turkish',
+  'middle-eastern',
+  'north-african',
+  'west-african',
+  'south-african',
+  'indian',
+  'thai',
+  'vietnamese',
+  'chinese',
+  'japanese',
+  'korean',
+  'malaysian',
+  'indonesian',
+  'filipino',
+  'mexican',
+  'latin-american',
+  'american',
+  'british',
+  'central-european',
+  'scandinavian',
+  'modern-australian',
 ] as const;
 export type CuisineId = (typeof CUISINES)[number];
 

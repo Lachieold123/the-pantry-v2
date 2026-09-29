@@ -12,7 +12,12 @@ export function cupboardIds(items: readonly CupboardItem[]): Set<string> {
 }
 
 /** Add ingredients, ignoring ones already there. Returns the same array when nothing changes. */
-export function addToCupboard(items: readonly CupboardItem[], ids: readonly string[], source: CupboardItem['source'], now: number): CupboardItem[] {
+export function addToCupboard(
+  items: readonly CupboardItem[],
+  ids: readonly string[],
+  source: CupboardItem['source'],
+  now: number,
+): CupboardItem[] {
   const have = cupboardIds(items);
   const fresh = [...new Set(ids)].filter((id) => !have.has(id)).map((ingredientId) => ({ ingredientId, addedAt: now, source }));
   return fresh.length ? [...items, ...fresh] : (items as CupboardItem[]);
@@ -45,7 +50,12 @@ export function recipeCoverage(recipe: Recipe, cupboard: ReadonlySet<string>, in
  * empty cupboard gives an empty (designed) state rather than a random list.
  * Ties go to the recipe missing fewer things, then the quicker one.
  */
-export function whatCanIMake(recipes: readonly Recipe[], cupboard: ReadonlySet<string>, index: IngredientIndex, limit = 30): { recipe: Recipe; coverage: Coverage }[] {
+export function whatCanIMake(
+  recipes: readonly Recipe[],
+  cupboard: ReadonlySet<string>,
+  index: IngredientIndex,
+  limit = 30,
+): { recipe: Recipe; coverage: Coverage }[] {
   if (cupboard.size === 0) return [];
   return recipes
     .map((recipe) => ({ recipe, coverage: recipeCoverage(recipe, cupboard, index) }))

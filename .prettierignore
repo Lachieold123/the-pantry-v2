@@ -1,0 +1,7 @@
+dist
+node_modules
+.expo
+src/data/catalogue/recipes.json
+src/data/ingredients/ingredients.json
+docs
+*.md

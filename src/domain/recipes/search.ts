@@ -106,8 +106,13 @@ export const NO_FILTERS: RecipeFilters = { cuisines: [], diet: 'everything', mea
 
 export function countActiveFilters(f: RecipeFilters): number {
   return (
-    (f.cuisines.length ? 1 : 0) + (f.diet !== 'everything' ? 1 : 0) + (f.mealTypes.length ? 1 : 0) +
-    (f.time ? 1 : 0) + (f.difficulties.length ? 1 : 0) + (f.onePot ? 1 : 0) + (f.inSeason ? 1 : 0)
+    (f.cuisines.length ? 1 : 0) +
+    (f.diet !== 'everything' ? 1 : 0) +
+    (f.mealTypes.length ? 1 : 0) +
+    (f.time ? 1 : 0) +
+    (f.difficulties.length ? 1 : 0) +
+    (f.onePot ? 1 : 0) +
+    (f.inSeason ? 1 : 0)
   );
 }
 

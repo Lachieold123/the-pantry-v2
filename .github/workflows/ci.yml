@@ -1,4 +1,5 @@
-# Runs on every push and pull request: the build must typecheck and every test must pass.
+# Runs on every push and pull request: the app must typecheck, lint clean
+# and pass every test before anything reaches Lachlan's phone.
 name: CI
 on:
   push:
@@ -11,9 +12,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm install --no-audit --no-fund
+          cache: npm
+      - run: npm ci --no-audit --no-fund
       - run: npm run typecheck
-      - run: npm test
+      - run: npm run lint
+      - run: npm run format:check
+      - run: npm run test:domain
         env:
           TZ: Australia/Sydney
+      - run: npm run test:ui
       - run: npm run catalogue:check-ingredients

@@ -5,8 +5,17 @@ export type Range = { min: number; max: number };
 export type Quantity = number | Range;
 
 const UNICODE_FRACTIONS: Readonly<Record<string, number>> = {
-  '¼': 1 / 4, '½': 1 / 2, '¾': 3 / 4, '⅓': 1 / 3, '⅔': 2 / 3, '⅛': 1 / 8,
-  '⅜': 3 / 8, '⅝': 5 / 8, '⅞': 7 / 8, '⅕': 1 / 5, '⅙': 1 / 6,
+  '¼': 1 / 4,
+  '½': 1 / 2,
+  '¾': 3 / 4,
+  '⅓': 1 / 3,
+  '⅔': 2 / 3,
+  '⅛': 1 / 8,
+  '⅜': 3 / 8,
+  '⅝': 5 / 8,
+  '⅞': 7 / 8,
+  '⅕': 1 / 5,
+  '⅙': 1 / 6,
 };
 
 /** Matches one number as written in recipes: 2, 2.5, 1/2, 1 1/2, ½, 1½. */
@@ -45,10 +54,19 @@ export function upper(q: Quantity): number {
 }
 
 const PRINT_FRACTIONS: readonly [number, string][] = [
-  [1 / 8, '⅛'], [1 / 4, '¼'], [1 / 3, '⅓'], [1 / 2, '½'], [2 / 3, '⅔'], [3 / 4, '¾'],
+  [1 / 8, '⅛'],
+  [1 / 4, '¼'],
+  [1 / 3, '⅓'],
+  [1 / 2, '½'],
+  [2 / 3, '⅔'],
+  [3 / 4, '¾'],
 ];
 /** Imperial weights read oddly in eighths and thirds ("1⅛ lb"), so they snap to quarters only. */
-const QUARTER_FRACTIONS: readonly [number, string][] = [[1 / 4, '¼'], [1 / 2, '½'], [3 / 4, '¾']];
+const QUARTER_FRACTIONS: readonly [number, string][] = [
+  [1 / 4, '¼'],
+  [1 / 2, '½'],
+  [3 / 4, '¾'],
+];
 
 /**
  * Format a number for spoons, cups and counts. Snaps to the nearest kitchen

@@ -10,12 +10,19 @@ const AA_LARGE = 3;
 
 function checkTheme(name: string, t: ColourTokens, quietRules = true) {
   const text: [keyof ColourTokens, keyof ColourTokens][] = [
-    ['ink', 'bg'], ['ink', 'surface'], ['ink', 'surfaceSunken'],
-    ['inkSecondary', 'bg'], ['inkSecondary', 'surface'],
-    ['inkMuted', 'bg'], ['inkMuted', 'surface'],
-    ['accent', 'bg'], ['accent', 'surface'],
-    ['onAccent', 'accent'], ['ink', 'accentSoft'],
-    ['danger', 'bg'], ['danger', 'surface'],
+    ['ink', 'bg'],
+    ['ink', 'surface'],
+    ['ink', 'surfaceSunken'],
+    ['inkSecondary', 'bg'],
+    ['inkSecondary', 'surface'],
+    ['inkMuted', 'bg'],
+    ['inkMuted', 'surface'],
+    ['accent', 'bg'],
+    ['accent', 'surface'],
+    ['onAccent', 'accent'],
+    ['ink', 'accentSoft'],
+    ['danger', 'bg'],
+    ['danger', 'surface'],
   ];
   for (const [fg, bg] of text) {
     const ratio = contrastRatio(t[fg], t[bg]);
@@ -30,7 +37,10 @@ describe('colour tokens', () => {
     it(`${name} passes WCAG AA for every text pair`, () => checkTheme(name, variants.normal));
     it(`${name} high contrast passes WCAG AA and is at least as strong`, () => {
       checkTheme(`${name} high contrast`, variants.highContrast, false);
-      assert.ok(contrastRatio(variants.highContrast.inkMuted, variants.highContrast.bg) >= contrastRatio(variants.normal.inkMuted, variants.normal.bg));
+      assert.ok(
+        contrastRatio(variants.highContrast.inkMuted, variants.highContrast.bg) >=
+          contrastRatio(variants.normal.inkMuted, variants.normal.bg),
+      );
     });
   }
 

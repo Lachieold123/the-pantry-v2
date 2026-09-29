@@ -4,7 +4,15 @@ import { describe, it } from 'node:test';
 import type { PlanEntry } from '../plan/week';
 import type { Recipe } from '../recipes/types';
 import { index, makeRecipe } from '../testing/fixtures';
-import { deriveShoppingList, EMPTY_EDITS, formatListForSharing, mergeAmounts, removeItem, toggleChecked, type WeekListEdits } from './derive';
+import {
+  deriveShoppingList,
+  EMPTY_EDITS,
+  formatListForSharing,
+  mergeAmounts,
+  removeItem,
+  toggleChecked,
+  type WeekListEdits,
+} from './derive';
 import { parseIngredientLine } from '../ingredients/parse';
 
 const bolognese = makeRecipe('bolognese', ['1 brown onion, diced', '500g beef mince', '2 tbsp olive oil', '1 tsp salt']);
@@ -13,7 +21,13 @@ const soup = makeRecipe('soup', ['200g brown onion', '1L vegetable stock'], { se
 const recipes = new Map<string, Recipe>([bolognese, curry, soup].map((r) => [r.id, r]));
 
 let n = 0;
-const entry = (recipeId: string, servings = 4, day = '2026-10-05'): PlanEntry => ({ id: `e${++n}`, recipeId, day, slot: 'dinner', servings });
+const entry = (recipeId: string, servings = 4, day = '2026-10-05'): PlanEntry => ({
+  id: `e${++n}`,
+  recipeId,
+  day,
+  slot: 'dinner',
+  servings,
+});
 
 function list(entries: PlanEntry[], opts: { edits?: WeekListEdits; cupboard?: string[] } = {}) {
   return deriveShoppingList({
@@ -67,7 +81,9 @@ describe('deriveShoppingList', () => {
   });
   it('does not repeat a unit the name already says: "2 bay leaves", not "2 leaves bay leaf"', () => {
     recipes.set('stew', makeRecipe('stew', ['2 bay leaves']));
-    const bay = list([entry('stew')]).sections.flatMap((s) => s.items).find((i) => i.key === 'bay-leaf');
+    const bay = list([entry('stew')])
+      .sections.flatMap((s) => s.items)
+      .find((i) => i.key === 'bay-leaf');
     assert.equal(bay?.amount, '2');
   });
   it('ignores entries whose recipe no longer exists', () => {

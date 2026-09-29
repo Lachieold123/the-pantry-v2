@@ -9,3 +9,5 @@ android/
 !.env.example
 *.log
 .DS_Store
+expo-env.d.ts
+.expo/

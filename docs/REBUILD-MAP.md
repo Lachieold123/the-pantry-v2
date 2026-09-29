@@ -335,7 +335,7 @@ Streaks/Stats = from CookEvent[]
 
 ```
 the-pantry-v2/
-  app/                        # routes only (thin)
+  src/app/                    # routes only (thin); SDK 57 convention (D-019)
   src/
     domain/                   # PURE TypeScript. No React, no storage, no Expo.
       recipes/                #   types, zod schema, search, filter, season
@@ -465,7 +465,7 @@ Each phase lists its **Goal**, **Build** (what gets built), **Done when** (accep
 
 ### Phase 1: Foundations and design system
 
-> **Status 29 Sep:** colour, type, space and motion tokens done and tested (contrast AA, no green); CI running on GitHub; design specimen published for approval. **Blocked:** creating the Expo app needs package downloads, which the build workspace can't do yet (KNOWN-ISSUES K-1).
+> **Status 29 Sep:** built. Expo SDK 57 app with Expo Router, TypeScript strict, ESLint (with the §8 structure rules), Jest + React Native Testing Library, CI; fonts bundled; tokens and theme provider (light, dark, system, high contrast, switching live from Settings); all §9 primitives and patterns; design gallery at `/dev/gallery`; five tabs with designed empty states; root error boundary with a working "Try again". Palette approved (D-016). **Still to do:** Maestro flows, Sentry (K-8), and Lachlan trying it on his phone.
 
 - **Goal:** an empty app that already looks and behaves like The Pantry.
 - **Build:**
@@ -491,7 +491,7 @@ Each phase lists its **Goal**, **Build** (what gets built), **Done when** (accep
 - **Goal:** trustworthy recipe data and pure, tested logic.
 - **Build:**
   - Zod recipe schema (§7).
-  - `scripts/convert-old-recipes.ts`: turns the old free-text recipes into structured `IngredientLine`s, **keeping old IDs**.
+  - `scripts/convert-old-recipes.mts`: turns the old free-text recipes into structured `IngredientLine`s, **keeping old IDs**.
   - **Hand-tagging** of every v1 recipe's cuisine, diets, meal types and seasons (the old data has none; see §7). Claude drafts the tags, Lachlan approves them in a review sheet. Nothing is guessed from titles.
   - Avoid-list ingredient groups in the ingredient database (§7).
   - A **validation report** listing every line it couldn't parse confidently, every missing tag, every image problem. Lachlan and Claude go through it and fix the data rather than hide it.
@@ -743,15 +743,18 @@ These need an answer before (or early in) the phase shown. Once answered, each m
 | Plan by date (#3) | Real dates, Monday start, this week and next | D-009 |
 | Shopping list rules | Merge only convertible units; edits scoped to the week; "In your cupboard" section | D-010 |
 | Android (#6) | iOS only at launch | D-011 |
-| Palette and fonts (#2) | §9 proposal as a starting point | D-012 |
+| Palette and fonts (#2) | Approved by Lachlan from the design specimen | D-012, D-016 |
 | Measures | Australian metric (250 ml cup, 20 ml tbsp) | D-013 |
 | Recipe corrections | One reviewed fixes file, applied by the converter | D-014 |
 | Domain dependencies | None; hand-written validation, Node test runner | D-015 |
+| App version | 2.0.0, so old-app updates can't reach v2 or vice versa | D-017 |
+| Draft recipes in test builds | Shown in development and preview builds only | D-018 |
+| Route folder | `src/app/` | D-019 |
+| Build machine | Claude's workspace on the Mac mini | D-020 |
 
 **Still open (Lachlan)**
 
 | # | Decision | Needed by |
 |---|---|---|
-| 2 | Approve or change the palette and fonts from the design gallery screenshots | Before Phase 3 |
 | 1 | Cook-test and mark the launch recipes as vetted | Before Phase 10 |
 | 7 | Restore or back up the paused Supabase project | **This week** |

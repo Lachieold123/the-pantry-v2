@@ -88,3 +88,29 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
 - **Date:** 29 September 2026 · **Decided by:** Claude (delegated)
 - **Decision:** Everything in `src/domain` is plain TypeScript with no packages. Recipe validation is a hand-written checker (`src/domain/recipes/validate.ts`) rather than Zod, and domain tests use Node's built-in test runner (`node:test`, run with `tsx --test`). Jest and React Native Testing Library are for components only; Maestro for journeys.
 - **Why:** Package downloads were blocked in the build workspace, and it's cleaner anyway: the maths that matters most can be tested anywhere in under a second, and it can't break when a library changes.
+
+## D-016 · Palette, fonts and cuisine tones approved
+
+- **Date:** 29 September 2026 · **Decided by:** Lachlan
+- **Decision:** The Paper and Night palettes, Newsreader + Manrope, and the 25 cuisine tones shown in the design specimen are approved as the v2 design system. This closes map §14 #2.
+
+## D-017 · v2 ships as version 2.0.0
+
+- **Date:** 29 September 2026 · **Decided by:** Claude (delegated)
+- **Decision:** The app version is 2.0.0, same bundle ID and EAS project.
+- **Why:** Over-the-air updates are matched to installed apps by version. The old TestFlight build is 1.0.0 on the `production` channel; if v2 also said 1.0.0, an update could land on the old app's native code and crash it on launch (handover lesson 4).
+
+## D-018 · Test builds show draft recipes
+
+- **Date:** 29 September 2026 · **Decided by:** Claude (delegated)
+- **Decision:** Development and preview builds set `EXPO_PUBLIC_SHOW_DRAFT_RECIPES=1` (in `eas.json`), so Lachlan and testers see all 285 recipes. Store builds show vetted recipes only (D-008).
+
+## D-019 · Routes live in `src/app/`
+
+- **Date:** 29 September 2026 · **Decided by:** Claude (delegated)
+- **Decision:** Expo Router routes live in `src/app/`, the SDK 57 convention, rather than a top-level `app/` as the map first drew. Everything else in §8 stands. Lint enforces the structure: no colour literals outside tokens, no React or Expo in `src/domain`, no feature importing another feature, thin route files, 300-line limit.
+
+## D-020 · Where the app is built
+
+- **Date:** 29 September 2026 · **Decided by:** Claude (delegated)
+- **Decision:** Package installs and Expo builds run in the Claude workspace on Lachlan's Mac mini (which can reach npm); commits come back through this session to GitHub. Supersedes the "cloud workspace" part of D-002.

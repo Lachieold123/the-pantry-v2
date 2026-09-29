@@ -134,7 +134,8 @@ expect(groupsOf('vegetable stock').length === 0, 'vegetable stock has no groups'
 // Data sanity.
 for (const d of defs) {
   if (d.staple && !['salt', 'black-pepper', 'water', 'olive-oil', 'neutral-oil'].includes(d.id)) failures.push(`unexpected staple ${d.id}`);
-  if (d.groups.includes('meat') && !d.groups.some((g) => ['beef', 'pork', 'lamb', 'poultry'].includes(g))) failures.push(`${d.id}: meat without a specific animal`);
+  if (d.groups.includes('meat') && !d.groups.some((g) => ['beef', 'pork', 'lamb', 'poultry'].includes(g)))
+    failures.push(`${d.id}: meat without a specific animal`);
   for (const a of d.aliases) if (a !== a.toLowerCase()) failures.push(`${d.id}: alias not lower case: ${a}`);
 }
 

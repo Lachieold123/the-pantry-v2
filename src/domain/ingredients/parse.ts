@@ -8,13 +8,14 @@ import { NUMBER_PATTERN, parseNumber, type Quantity } from './quantity';
 import type { IngredientLine, IngredientMatcher, ParsedLine, ParseIssue } from './types';
 import { unitFromText, UNITS, type UnitId } from './units';
 
-const LEADING_QUANTITY = new RegExp(
-  String.raw`^(${NUMBER_PATTERN})(?:\s*(?:-|–|—|to)\s*(${NUMBER_PATTERN}))?\s*(?:x\s+)?`,
+const LEADING_QUANTITY = new RegExp(String.raw`^(${NUMBER_PATTERN})(?:\s*(?:-|–|—|to)\s*(${NUMBER_PATTERN}))?\s*(?:x\s+)?`, 'i');
+
+const MEASURE_PHRASE =
+  /^(?:an?\s+)?(?:(small|large|big|generous|good)\s+)?(pinch|dash|splash|knob|handful|bunch|sprig|drizzle|squeeze|sprinkle)(?:es|s)?(?:\s+of)?\s+(.+)$/i;
+const JUICE_OR_ZEST = new RegExp(
+  String.raw`^(juice|zest|juice and zest|zest and juice)\s+of\s+(${NUMBER_PATTERN}|half|an?|one|two)\s+(.+)$`,
   'i',
 );
-
-const MEASURE_PHRASE = /^(?:an?\s+)?(?:(small|large|big|generous|good)\s+)?(pinch|dash|splash|knob|handful|bunch|sprig|drizzle|squeeze|sprinkle)(?:es|s)?(?:\s+of)?\s+(.+)$/i;
-const JUICE_OR_ZEST = new RegExp(String.raw`^(juice|zest|juice and zest|zest and juice)\s+of\s+(${NUMBER_PATTERN}|half|an?|one|two)\s+(.+)$`, 'i');
 const WORD_NUMBERS: Readonly<Record<string, number>> = { half: 0.5, a: 1, an: 1, one: 1, two: 2 };
 
 /** Units that may trail the item when no unit follows the number: "3 garlic cloves" → 3 clove, garlic. */
@@ -73,7 +74,12 @@ export function parseIngredientLine(raw: string, match?: IngredientMatcher): Par
   // "400g tin crushed tomatoes": the tin is packaging, not the thing to buy.
   if (unit && UNITS[unit].kind !== 'count') {
     text = text.replace(/^(?:tins?|cans?|jars?|packets?|bags?)\s+(?:of\s+)?/i, (m) => {
-      notes.push(m.trim().replace(/\s+of$/i, '').toLowerCase());
+      notes.push(
+        m
+          .trim()
+          .replace(/\s+of$/i, '')
+          .toLowerCase(),
+      );
       return '';
     });
   }

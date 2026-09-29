@@ -151,6 +151,10 @@ describe('formatting', () => {
     assert.equal(formatQuantity(mince.quantity ?? 0, 'g', 'metric'), '500 g');
     assert.equal(formatQuantity(2, 'tbsp', 'imperial'), '2 tbsp');
   });
+  it('puts leaves after the item: "2 bay leaves"', () => {
+    assert.equal(formatLine(parse('2 bay leaves').line, 'metric'), '2 bay leaves');
+    assert.equal(formatLine(parse('1 bay leaf').line, 'metric'), '1 bay leaf');
+  });
   it('prints ranges', () => {
     assert.equal(formatQuantity({ min: 2, max: 3 }, 'clove', 'metric'), '2–3 cloves');
   });

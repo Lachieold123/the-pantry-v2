@@ -18,11 +18,7 @@ export type IngredientLine = {
   raw: string;
 };
 
-export type ParseIssue =
-  | 'no-ingredient-match'
-  | 'no-quantity'
-  | 'multiple-ingredients'
-  | 'serving-suggestion';
+export type ParseIssue = 'no-ingredient-match' | 'no-quantity' | 'multiple-ingredients' | 'serving-suggestion';
 
 export type ParsedLine = { line: IngredientLine; issues: ParseIssue[] };
 

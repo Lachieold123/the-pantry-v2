@@ -71,7 +71,11 @@ export function mergeAmounts(lines: readonly IngredientLine[]): { quantity: Quan
     const allSpoons = [...existing.units, unit].every((u) => SPOON_OR_CUP.has(u));
     const target: UnitId = allSpoons
       ? ([...existing.units, unit].sort((a, b) => (UNITS[b].base ?? 0) - (UNITS[a].base ?? 0))[0] as UnitId)
-      : UNITS[unit].kind === 'mass' ? 'g' : UNITS[unit].kind === 'volume' ? 'ml' : unit;
+      : UNITS[unit].kind === 'mass'
+        ? 'g'
+        : UNITS[unit].kind === 'volume'
+          ? 'ml'
+          : unit;
     const from = existing.unit;
     const a = mapQuantity(existing.quantity, (n) => convert(n, from, target));
     const b = mapQuantity(line.quantity, (n) => convert(n, unit, target));
@@ -117,7 +121,7 @@ export function deriveShoppingList(args: {
       removedCount++;
       continue;
     }
-    const name = def?.name ?? (contributions[0]?.line.item ?? key);
+    const name = def?.name ?? contributions[0]?.line.item ?? key;
     const amount = mergeAmounts(contributions.map((c) => c.line))
       .map((a) => {
         // "2 leaves bay leaf" reads badly: when the name already says the unit, show just the number.

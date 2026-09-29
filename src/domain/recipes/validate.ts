@@ -15,7 +15,8 @@ function isOneOf<T extends string>(list: readonly T[], value: unknown): value is
 }
 
 function checkMinutes(value: number, path: string, problems: RecipeProblem[]): void {
-  if (!Number.isInteger(value) || value < 0 || value > 24 * 60 * 3) problems.push({ path, message: 'must be whole minutes between 0 and 3 days' });
+  if (!Number.isInteger(value) || value < 0 || value > 24 * 60 * 3)
+    problems.push({ path, message: 'must be whole minutes between 0 and 3 days' });
 }
 
 export function validateRecipe(r: Recipe): RecipeProblem[] {

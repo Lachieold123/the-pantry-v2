@@ -6,7 +6,14 @@ import { addToCupboard, cupboardIds, recipeCoverage, whatCanIMake } from './matc
 
 describe('cupboard', () => {
   const cup = new Set(['brown-onion', 'garlic', 'chickpeas']);
-  const dish = makeRecipe('dish', ['1 brown onion', '2 garlic cloves', '400g tinned chickpeas', '1 tsp salt', '100g feta', '1 lemon (optional)']);
+  const dish = makeRecipe('dish', [
+    '1 brown onion',
+    '2 garlic cloves',
+    '400g tinned chickpeas',
+    '1 tsp salt',
+    '100g feta',
+    '1 lemon (optional)',
+  ]);
   it('ignores staples and optional lines when measuring coverage', () => {
     const c = recipeCoverage(dish, cup, index);
     assert.equal(c.needed, 4);
