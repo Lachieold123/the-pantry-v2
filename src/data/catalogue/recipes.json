@@ -18649,7 +18649,9 @@
     "title": "Club Sandwich",
     "summary": "A three-tier toasted sandwich of chicken, bacon, lettuce and tomato, cut into quarters.",
     "cuisine": "american",
-    "diets": [],
+    "diets": [
+      "no-dairy"
+    ],
     "mealTypes": [
       "lunch"
     ],
@@ -18747,7 +18749,8 @@
           {
             "item": "cocktail picks or skewers",
             "raw": "8 cocktail picks or skewers",
-            "quantity": 8
+            "quantity": 8,
+            "ingredientId": "cocktail-picks"
           },
           {
             "item": "Pickles",

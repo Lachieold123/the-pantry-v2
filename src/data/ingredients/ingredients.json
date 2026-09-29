@@ -1,15 +1,5 @@
 [
   {
-    "id": "apple",
-    "name": "apple",
-    "aisle": "fruit-veg",
-    "aliases": [
-      "green apple",
-      "granny smith"
-    ],
-    "groups": []
-  },
-  {
     "id": "asian-eggplant",
     "name": "Asian eggplant",
     "aisle": "fruit-veg",
@@ -18,6 +8,64 @@
       "lebanese eggplant",
       "chinese eggplant",
       "small asian eggplant"
+    ],
+    "groups": []
+  },
+  {
+    "id": "spinach",
+    "name": "English spinach",
+    "plural": "English spinach",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "spinach",
+      "silverbeet"
+    ],
+    "groups": []
+  },
+  {
+    "id": "swiss-brown-mushroom",
+    "name": "Swiss brown mushroom",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "chestnut mushroom",
+      "brown mushroom",
+      "portobello mushroom",
+      "portobello"
+    ],
+    "groups": []
+  },
+  {
+    "id": "thai-basil",
+    "name": "Thai basil",
+    "plural": "Thai basil",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "holy basil",
+      "thai holy basil",
+      "thai basil leaf",
+      "thai basil leaves"
+    ],
+    "groups": []
+  },
+  {
+    "id": "vietnamese-mint",
+    "name": "Vietnamese mint",
+    "plural": "Vietnamese mint",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "laksa leaf",
+      "laksa leaves",
+      "rau ram"
+    ],
+    "groups": []
+  },
+  {
+    "id": "apple",
+    "name": "apple",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "green apple",
+      "granny smith"
     ],
     "groups": []
   },
@@ -327,17 +375,6 @@
     "aisle": "fruit-veg",
     "aliases": [
       "aubergine"
-    ],
-    "groups": []
-  },
-  {
-    "id": "spinach",
-    "name": "English spinach",
-    "plural": "English spinach",
-    "aisle": "fruit-veg",
-    "aliases": [
-      "spinach",
-      "silverbeet"
     ],
     "groups": []
   },
@@ -956,36 +993,11 @@
     "groups": []
   },
   {
-    "id": "swiss-brown-mushroom",
-    "name": "Swiss brown mushroom",
-    "aisle": "fruit-veg",
-    "aliases": [
-      "chestnut mushroom",
-      "brown mushroom",
-      "portobello mushroom",
-      "portobello"
-    ],
-    "groups": []
-  },
-  {
     "id": "tarragon",
     "name": "tarragon",
     "plural": "tarragon",
     "aisle": "fruit-veg",
     "aliases": [],
-    "groups": []
-  },
-  {
-    "id": "thai-basil",
-    "name": "Thai basil",
-    "plural": "Thai basil",
-    "aisle": "fruit-veg",
-    "aliases": [
-      "holy basil",
-      "thai holy basil",
-      "thai basil leaf",
-      "thai basil leaves"
-    ],
     "groups": []
   },
   {
@@ -1011,18 +1023,6 @@
       "roma tomato",
       "heirloom tomato",
       "truss tomato"
-    ],
-    "groups": []
-  },
-  {
-    "id": "vietnamese-mint",
-    "name": "Vietnamese mint",
-    "plural": "Vietnamese mint",
-    "aisle": "fruit-veg",
-    "aliases": [
-      "laksa leaf",
-      "laksa leaves",
-      "rau ram"
     ],
     "groups": []
   },
@@ -1074,6 +1074,21 @@
       "courgette"
     ],
     "groups": []
+  },
+  {
+    "id": "italian-sausage",
+    "name": "Italian sausage",
+    "aisle": "meat",
+    "aliases": [
+      "spicy italian sausage",
+      "italian pork sausage",
+      "salsiccia"
+    ],
+    "groups": [
+      "meat",
+      "pork",
+      "gluten"
+    ]
   },
   {
     "id": "andouille",
@@ -1484,21 +1499,6 @@
     "groups": [
       "meat",
       "pork"
-    ]
-  },
-  {
-    "id": "italian-sausage",
-    "name": "Italian sausage",
-    "aisle": "meat",
-    "aliases": [
-      "spicy italian sausage",
-      "italian pork sausage",
-      "salsiccia"
-    ],
-    "groups": [
-      "meat",
-      "pork",
-      "gluten"
     ]
   },
   {
@@ -2222,22 +2222,6 @@
     ]
   },
   {
-    "id": "pate",
-    "name": "pâté",
-    "aisle": "deli",
-    "aliases": [
-      "pate",
-      "chicken liver pâté",
-      "liver pâté"
-    ],
-    "groups": [
-      "meat",
-      "pork",
-      "poultry",
-      "dairy"
-    ]
-  },
-  {
     "id": "pepperoni",
     "name": "pepperoni",
     "plural": "pepperoni",
@@ -2295,6 +2279,22 @@
     "groups": [
       "meat",
       "pork"
+    ]
+  },
+  {
+    "id": "pate",
+    "name": "pâté",
+    "aisle": "deli",
+    "aliases": [
+      "pate",
+      "chicken liver pâté",
+      "liver pâté"
+    ],
+    "groups": [
+      "meat",
+      "pork",
+      "poultry",
+      "dairy"
     ]
   },
   {
@@ -2388,16 +2388,6 @@
     ]
   },
   {
-    "id": "almond-milk",
-    "name": "almond milk",
-    "plural": "almond milk",
-    "aisle": "dairy-eggs",
-    "aliases": [],
-    "groups": [
-      "tree-nuts"
-    ]
-  },
-  {
     "id": "american-cheese",
     "name": "American cheese",
     "plural": "American cheese",
@@ -2410,6 +2400,68 @@
     ],
     "groups": [
       "dairy"
+    ]
+  },
+  {
+    "id": "greek-yoghurt",
+    "name": "Greek yoghurt",
+    "plural": "Greek yoghurt",
+    "aisle": "dairy-eggs",
+    "aliases": [
+      "greek yogurt",
+      "yoghurt",
+      "yogurt",
+      "natural yoghurt",
+      "natural yogurt",
+      "plain yoghurt",
+      "plain yogurt",
+      "thick yogurt",
+      "thick yoghurt",
+      "garlic yogurt sauce",
+      "garlic yoghurt sauce",
+      "yogurt sauce",
+      "yoghurt sauce"
+    ],
+    "groups": [
+      "dairy"
+    ]
+  },
+  {
+    "id": "monterey-jack",
+    "name": "Monterey Jack",
+    "plural": "Monterey Jack",
+    "aisle": "dairy-eggs",
+    "aliases": [
+      "monterey jack cheese",
+      "pepper jack"
+    ],
+    "groups": [
+      "dairy"
+    ]
+  },
+  {
+    "id": "swiss-cheese",
+    "name": "Swiss cheese",
+    "plural": "Swiss cheese",
+    "aisle": "dairy-eggs",
+    "aliases": [
+      "emmental",
+      "emmentaler",
+      "jarlsberg",
+      "swiss"
+    ],
+    "groups": [
+      "dairy"
+    ]
+  },
+  {
+    "id": "almond-milk",
+    "name": "almond milk",
+    "plural": "almond milk",
+    "aisle": "dairy-eggs",
+    "aliases": [],
+    "groups": [
+      "tree-nuts"
     ]
   },
   {
@@ -2576,30 +2628,6 @@
     ]
   },
   {
-    "id": "greek-yoghurt",
-    "name": "Greek yoghurt",
-    "plural": "Greek yoghurt",
-    "aisle": "dairy-eggs",
-    "aliases": [
-      "greek yogurt",
-      "yoghurt",
-      "yogurt",
-      "natural yoghurt",
-      "natural yogurt",
-      "plain yoghurt",
-      "plain yogurt",
-      "thick yogurt",
-      "thick yoghurt",
-      "garlic yogurt sauce",
-      "garlic yoghurt sauce",
-      "yogurt sauce",
-      "yoghurt sauce"
-    ],
-    "groups": [
-      "dairy"
-    ]
-  },
-  {
     "id": "gruyere",
     "name": "gruyère",
     "plural": "gruyère",
@@ -2675,19 +2703,6 @@
       "full cream milk",
       "skim milk",
       "warm milk infused"
-    ],
-    "groups": [
-      "dairy"
-    ]
-  },
-  {
-    "id": "monterey-jack",
-    "name": "Monterey Jack",
-    "plural": "Monterey Jack",
-    "aisle": "dairy-eggs",
-    "aliases": [
-      "monterey jack cheese",
-      "pepper jack"
     ],
     "groups": [
       "dairy"
@@ -2794,21 +2809,6 @@
       "sour cream or greek yogurt",
       "sour cream or crème fraîche",
       "sour cream or creme fraiche"
-    ],
-    "groups": [
-      "dairy"
-    ]
-  },
-  {
-    "id": "swiss-cheese",
-    "name": "Swiss cheese",
-    "plural": "Swiss cheese",
-    "aisle": "dairy-eggs",
-    "aliases": [
-      "emmental",
-      "emmentaler",
-      "jarlsberg",
-      "swiss"
     ],
     "groups": [
       "dairy"
@@ -3969,6 +3969,72 @@
     "groups": []
   },
   {
+    "id": "yellow-mustard",
+    "name": "American mustard",
+    "plural": "American mustard",
+    "aisle": "sauces-oils",
+    "aliases": [
+      "yellow mustard",
+      "ballpark mustard"
+    ],
+    "groups": []
+  },
+  {
+    "id": "dijon-mustard",
+    "name": "Dijon mustard",
+    "plural": "Dijon mustard",
+    "aisle": "sauces-oils",
+    "aliases": [
+      "dijon",
+      "french mustard",
+      "mustard"
+    ],
+    "groups": []
+  },
+  {
+    "id": "english-mustard",
+    "name": "English mustard",
+    "plural": "English mustard",
+    "aisle": "sauces-oils",
+    "aliases": [
+      "hot english mustard",
+      "colmans"
+    ],
+    "groups": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "kewpie-mayonnaise",
+    "name": "Kewpie mayonnaise",
+    "plural": "Kewpie mayonnaise",
+    "aisle": "sauces-oils",
+    "aliases": [
+      "kewpie",
+      "japanese mayonnaise",
+      "japanese mayo",
+      "kewpie mayo"
+    ],
+    "groups": [
+      "egg"
+    ]
+  },
+  {
+    "id": "worcestershire-sauce",
+    "name": "Worcestershire sauce",
+    "plural": "Worcestershire sauce",
+    "aisle": "sauces-oils",
+    "aliases": [
+      "worcestershire",
+      "worcester sauce",
+      "lea & perrins"
+    ],
+    "groups": [
+      "fish",
+      "gluten"
+    ]
+  },
+  {
     "id": "aioli",
     "name": "aioli",
     "plural": "aioli",
@@ -3981,17 +4047,6 @@
     "groups": [
       "egg"
     ]
-  },
-  {
-    "id": "yellow-mustard",
-    "name": "American mustard",
-    "plural": "American mustard",
-    "aisle": "sauces-oils",
-    "aliases": [
-      "yellow mustard",
-      "ballpark mustard"
-    ],
-    "groups": []
   },
   {
     "id": "apple-cider-vinegar",
@@ -4080,18 +4135,6 @@
     ]
   },
   {
-    "id": "dijon-mustard",
-    "name": "Dijon mustard",
-    "plural": "Dijon mustard",
-    "aisle": "sauces-oils",
-    "aliases": [
-      "dijon",
-      "french mustard",
-      "mustard"
-    ],
-    "groups": []
-  },
-  {
     "id": "enchilada-sauce",
     "name": "enchilada sauce",
     "plural": "enchilada sauce",
@@ -4102,19 +4145,6 @@
     "groups": [
       "gluten",
       "chilli"
-    ]
-  },
-  {
-    "id": "english-mustard",
-    "name": "English mustard",
-    "plural": "English mustard",
-    "aisle": "sauces-oils",
-    "aliases": [
-      "hot english mustard",
-      "colmans"
-    ],
-    "groups": [
-      "gluten"
     ]
   },
   {
@@ -4189,21 +4219,6 @@
     ],
     "groups": [
       "chilli"
-    ]
-  },
-  {
-    "id": "kewpie-mayonnaise",
-    "name": "Kewpie mayonnaise",
-    "plural": "Kewpie mayonnaise",
-    "aisle": "sauces-oils",
-    "aliases": [
-      "kewpie",
-      "japanese mayonnaise",
-      "japanese mayo",
-      "kewpie mayo"
-    ],
-    "groups": [
-      "egg"
     ]
   },
   {
@@ -4558,31 +4573,6 @@
     "groups": []
   },
   {
-    "id": "worcestershire-sauce",
-    "name": "Worcestershire sauce",
-    "plural": "Worcestershire sauce",
-    "aisle": "sauces-oils",
-    "aliases": [
-      "worcestershire",
-      "worcester sauce",
-      "lea & perrins"
-    ],
-    "groups": [
-      "fish",
-      "gluten"
-    ]
-  },
-  {
-    "id": "ajwain",
-    "name": "ajwain seed",
-    "aisle": "herbs-spices",
-    "aliases": [
-      "ajwain",
-      "carom seed"
-    ],
-    "groups": []
-  },
-  {
     "id": "aleppo-pepper",
     "name": "Aleppo pepper",
     "plural": "Aleppo pepper",
@@ -4595,6 +4585,83 @@
     "groups": [
       "chilli"
     ]
+  },
+  {
+    "id": "cajun-seasoning",
+    "name": "Cajun seasoning",
+    "plural": "Cajun seasoning",
+    "aisle": "herbs-spices",
+    "aliases": [
+      "cajun spice",
+      "creole seasoning"
+    ],
+    "groups": [
+      "chilli"
+    ]
+  },
+  {
+    "id": "five-spice",
+    "name": "Chinese five spice",
+    "plural": "Chinese five spice",
+    "aisle": "herbs-spices",
+    "aliases": [
+      "five spice",
+      "five-spice",
+      "five spice powder",
+      "five-spice powder",
+      "chinese five-spice"
+    ],
+    "groups": []
+  },
+  {
+    "id": "italian-seasoning",
+    "name": "Italian seasoning",
+    "plural": "Italian seasoning",
+    "aisle": "herbs-spices",
+    "aliases": [
+      "mixed herbs",
+      "dried mixed herbs",
+      "italian herbs",
+      "dried italian herbs"
+    ],
+    "groups": []
+  },
+  {
+    "id": "kashmiri-chilli-powder",
+    "name": "Kashmiri chilli powder",
+    "plural": "Kashmiri chilli powder",
+    "aisle": "herbs-spices",
+    "aliases": [
+      "kashmiri chilli",
+      "kashmiri chillies",
+      "deggi mirch",
+      "kashmiri red chilli powder"
+    ],
+    "groups": [
+      "chilli"
+    ]
+  },
+  {
+    "id": "sichuan-pepper",
+    "name": "Sichuan peppercorn",
+    "aisle": "herbs-spices",
+    "aliases": [
+      "szechuan peppercorn",
+      "sichuan pepper",
+      "szechuan pepper",
+      "ground sichuan pepper"
+    ],
+    "groups": []
+  },
+  {
+    "id": "ajwain",
+    "name": "ajwain seed",
+    "aisle": "herbs-spices",
+    "aliases": [
+      "ajwain",
+      "carom seed"
+    ],
+    "groups": []
   },
   {
     "id": "allspice",
@@ -4687,19 +4754,6 @@
     "staple": true
   },
   {
-    "id": "cajun-seasoning",
-    "name": "Cajun seasoning",
-    "plural": "Cajun seasoning",
-    "aisle": "herbs-spices",
-    "aliases": [
-      "cajun spice",
-      "creole seasoning"
-    ],
-    "groups": [
-      "chilli"
-    ]
-  },
-  {
     "id": "caraway-seeds",
     "name": "caraway seed",
     "aisle": "herbs-spices",
@@ -4767,20 +4821,6 @@
     "groups": [
       "chilli"
     ]
-  },
-  {
-    "id": "five-spice",
-    "name": "Chinese five spice",
-    "plural": "Chinese five spice",
-    "aisle": "herbs-spices",
-    "aliases": [
-      "five spice",
-      "five-spice",
-      "five spice powder",
-      "five-spice powder",
-      "chinese five-spice"
-    ],
-    "groups": []
   },
   {
     "id": "cinnamon-stick",
@@ -5071,34 +5111,6 @@
     "groups": []
   },
   {
-    "id": "italian-seasoning",
-    "name": "Italian seasoning",
-    "plural": "Italian seasoning",
-    "aisle": "herbs-spices",
-    "aliases": [
-      "mixed herbs",
-      "dried mixed herbs",
-      "italian herbs",
-      "dried italian herbs"
-    ],
-    "groups": []
-  },
-  {
-    "id": "kashmiri-chilli-powder",
-    "name": "Kashmiri chilli powder",
-    "plural": "Kashmiri chilli powder",
-    "aisle": "herbs-spices",
-    "aliases": [
-      "kashmiri chilli",
-      "kashmiri chillies",
-      "deggi mirch",
-      "kashmiri red chilli powder"
-    ],
-    "groups": [
-      "chilli"
-    ]
-  },
-  {
     "id": "mustard-powder",
     "name": "mustard powder",
     "plural": "mustard powder",
@@ -5208,18 +5220,6 @@
       "sesame",
       "chilli"
     ]
-  },
-  {
-    "id": "sichuan-pepper",
-    "name": "Sichuan peppercorn",
-    "aisle": "herbs-spices",
-    "aliases": [
-      "szechuan peppercorn",
-      "sichuan pepper",
-      "szechuan pepper",
-      "ground sichuan pepper"
-    ],
-    "groups": []
   },
   {
     "id": "smoked-paprika",
@@ -5729,6 +5729,109 @@
     "groups": []
   },
   {
+    "id": "black-vinegar",
+    "name": "Chinkiang black vinegar",
+    "plural": "Chinkiang black vinegar",
+    "aisle": "asian-international",
+    "aliases": [
+      "black vinegar",
+      "chinkiang vinegar",
+      "zhenjiang vinegar",
+      "chinese black vinegar"
+    ],
+    "groups": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "fukujinzuke",
+    "name": "Japanese pickles",
+    "plural": "Japanese pickles",
+    "aisle": "asian-international",
+    "aliases": [
+      "fukujinzuke",
+      "tsukemono"
+    ],
+    "groups": []
+  },
+  {
+    "id": "rice-cakes",
+    "name": "Korean rice cake",
+    "aisle": "asian-international",
+    "aliases": [
+      "tteok",
+      "tteokbokki tteok",
+      "garaetteok",
+      "rice cake"
+    ],
+    "groups": []
+  },
+  {
+    "id": "maggi-seasoning",
+    "name": "Maggi seasoning",
+    "plural": "Maggi seasoning",
+    "aisle": "asian-international",
+    "aliases": [
+      "maggi",
+      "maggi sauce",
+      "seasoning sauce"
+    ],
+    "groups": [
+      "gluten",
+      "soy"
+    ]
+  },
+  {
+    "id": "peking-duck-pancakes",
+    "name": "Peking duck pancake",
+    "aisle": "asian-international",
+    "aliases": [
+      "thin pancake",
+      "chinese pancake",
+      "mandarin pancake",
+      "chinese steamed pancake",
+      "duck pancake"
+    ],
+    "groups": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "shaoxing-wine",
+    "name": "Shaoxing wine",
+    "plural": "Shaoxing wine",
+    "aisle": "asian-international",
+    "aliases": [
+      "shaoxing",
+      "shao hsing wine",
+      "chinese cooking wine",
+      "shaoxing rice wine",
+      "shaoxing wine or sake"
+    ],
+    "groups": [
+      "gluten",
+      "alcohol"
+    ]
+  },
+  {
+    "id": "thai-chilli-jam",
+    "name": "Thai chilli jam",
+    "plural": "Thai chilli jam",
+    "aisle": "asian-international",
+    "aliases": [
+      "nam prik pao",
+      "thai chilli paste",
+      "chilli paste in oil",
+      "thai chilli paste in oil",
+      "chilli jam"
+    ],
+    "groups": [
+      "fish",
+      "shellfish",
+      "chilli"
+    ]
+  },
+  {
     "id": "aonori",
     "name": "aonori",
     "plural": "aonori",
@@ -5767,21 +5870,6 @@
     ],
     "groups": [
       "fish"
-    ]
-  },
-  {
-    "id": "black-vinegar",
-    "name": "Chinkiang black vinegar",
-    "plural": "Chinkiang black vinegar",
-    "aisle": "asian-international",
-    "aliases": [
-      "black vinegar",
-      "chinkiang vinegar",
-      "zhenjiang vinegar",
-      "chinese black vinegar"
-    ],
-    "groups": [
-      "gluten"
     ]
   },
   {
@@ -6067,17 +6155,6 @@
     ]
   },
   {
-    "id": "fukujinzuke",
-    "name": "Japanese pickles",
-    "plural": "Japanese pickles",
-    "aisle": "asian-international",
-    "aliases": [
-      "fukujinzuke",
-      "tsukemono"
-    ],
-    "groups": []
-  },
-  {
     "id": "kecap-manis",
     "name": "kecap manis",
     "plural": "kecap manis",
@@ -6119,18 +6196,6 @@
     "groups": []
   },
   {
-    "id": "rice-cakes",
-    "name": "Korean rice cake",
-    "aisle": "asian-international",
-    "aliases": [
-      "tteok",
-      "tteokbokki tteok",
-      "garaetteok",
-      "rice cake"
-    ],
-    "groups": []
-  },
-  {
     "id": "laksa-paste",
     "name": "laksa paste",
     "plural": "laksa paste",
@@ -6142,21 +6207,6 @@
       "shellfish",
       "tree-nuts",
       "chilli"
-    ]
-  },
-  {
-    "id": "maggi-seasoning",
-    "name": "Maggi seasoning",
-    "plural": "Maggi seasoning",
-    "aisle": "asian-international",
-    "aliases": [
-      "maggi",
-      "maggi sauce",
-      "seasoning sauce"
-    ],
-    "groups": [
-      "gluten",
-      "soy"
     ]
   },
   {
@@ -6256,21 +6306,6 @@
       "gula melaka"
     ],
     "groups": []
-  },
-  {
-    "id": "peking-duck-pancakes",
-    "name": "Peking duck pancake",
-    "aisle": "asian-international",
-    "aliases": [
-      "thin pancake",
-      "chinese pancake",
-      "mandarin pancake",
-      "chinese steamed pancake",
-      "duck pancake"
-    ],
-    "groups": [
-      "gluten"
-    ]
   },
   {
     "id": "pickled-ginger",
@@ -6418,23 +6453,6 @@
     ]
   },
   {
-    "id": "shaoxing-wine",
-    "name": "Shaoxing wine",
-    "plural": "Shaoxing wine",
-    "aisle": "asian-international",
-    "aliases": [
-      "shaoxing",
-      "shao hsing wine",
-      "chinese cooking wine",
-      "shaoxing rice wine",
-      "shaoxing wine or sake"
-    ],
-    "groups": [
-      "gluten",
-      "alcohol"
-    ]
-  },
-  {
     "id": "shrimp-paste",
     "name": "shrimp paste",
     "plural": "shrimp paste",
@@ -6550,24 +6568,6 @@
     ],
     "groups": [
       "gluten"
-    ]
-  },
-  {
-    "id": "thai-chilli-jam",
-    "name": "Thai chilli jam",
-    "plural": "Thai chilli jam",
-    "aisle": "asian-international",
-    "aliases": [
-      "nam prik pao",
-      "thai chilli paste",
-      "chilli paste in oil",
-      "thai chilli paste in oil",
-      "chilli jam"
-    ],
-    "groups": [
-      "fish",
-      "shellfish",
-      "chilli"
     ]
   },
   {
@@ -7166,5 +7166,15 @@
     "groups": [
       "alcohol"
     ]
+  },
+  {
+    "id": "cocktail-picks",
+    "name": "cocktail pick",
+    "aisle": "other",
+    "aliases": [
+      "toothpick",
+      "cocktail stick"
+    ],
+    "groups": []
   }
 ]
