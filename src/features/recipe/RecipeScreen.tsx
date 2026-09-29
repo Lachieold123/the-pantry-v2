@@ -4,10 +4,10 @@ import { useRouter } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { Share, View } from 'react-native';
 
-import { getCatalogueRecipe } from '@/data/catalogue/catalogue';
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
-import { CUISINE_LABELS, DIET_LABELS, formatMinutes } from '@/domain/recipes/labels';
+import { CUISINE_LABELS, DIET_LABELS, formatMinutes, recipeAsText } from '@/domain/recipes/labels';
 import { usePreferences } from '@/store/preferences';
+import { useRecipe } from '@/store/recipeBook';
 import { useSaved } from '@/store/saved';
 import { ActionBar } from '@/ui/patterns/ActionBar';
 import { EmptyState } from '@/ui/patterns/EmptyState';
@@ -32,7 +32,7 @@ const UNITS = [
 
 export function RecipeScreen({ id }: { id: string }) {
   const router = useRouter();
-  const recipe = getCatalogueRecipe(id);
+  const recipe = useRecipe(id);
   const { name } = useTheme();
   const toast = useToast();
   const units = usePreferences((s) => s.units);
@@ -62,9 +62,14 @@ export function RecipeScreen({ id }: { id: string }) {
 
   const cuisine = CUISINE_LABELS[recipe.cuisine];
   const diets = recipe.diets.filter((d) => d === 'vegetarian' || d === 'vegan' || d === 'pescatarian').map((d) => DIET_LABELS[d]);
+  const mine = recipe.source !== 'house';
   const share = async () => {
     try {
-      await Share.share({ title: recipe.title, message: `${recipe.title}: ${recipe.summary ?? ''}\nthepantry://recipe/${recipe.id}` });
+      // Your own recipes aren't on anyone else's phone, so they're shared as the full text.
+      await Share.share({
+        title: recipe.title,
+        message: mine ? recipeAsText(recipe) : `${recipe.title}: ${recipe.summary ?? ''}\nthepantry://recipe/${recipe.id}`,
+      });
     } catch {
       toast({ message: "Couldn't open sharing. Try again." });
     }
@@ -119,6 +124,14 @@ export function RecipeScreen({ id }: { id: string }) {
             onPress={() => router.push({ pathname: '/recipe/[id]/collect', params: { id: recipe.id } })}
           />
           <Button label="Share" kind="quiet" icon="share" onPress={() => void share()} />
+          {mine ? (
+            <Button
+              label="Edit"
+              kind="quiet"
+              icon="edit"
+              onPress={() => router.push({ pathname: '/my-recipe/edit', params: { id: recipe.id } })}
+            />
+          ) : null}
           <Button
             label={hidden ? 'Show this again' : 'Not for us'}
             kind="quiet"

@@ -1,7 +1,7 @@
 // How the app names things to the cook, in Australian English.
 import type { AisleId } from '../ingredients/database';
 import type { AvoidOption, DietPreference } from './diets';
-import type { CuisineId, DietTag, MealType } from './types';
+import type { CuisineId, DietTag, MealType, Recipe } from './types';
 
 export const CUISINE_LABELS: Readonly<Record<CuisineId, string>> = {
   italian: 'Italian',
@@ -95,3 +95,20 @@ export const DIET_PREFERENCE_LABELS: Readonly<Record<DietPreference, string>> = 
   vegan: 'Vegan',
   pescatarian: 'Pescatarian',
 };
+
+/** A recipe as plain text, for sharing one of your own with someone who doesn't have it. */
+export function recipeAsText(recipe: Pick<Recipe, 'title' | 'summary' | 'servings' | 'ingredientGroups' | 'steps' | 'notes'>): string {
+  const ingredients = recipe.ingredientGroups.flatMap((g) => [...(g.title ? [`${g.title}:`] : []), ...g.items.map((i) => `- ${i.raw}`)]);
+  const steps = recipe.steps.map((s, i) => `${i + 1}. ${s.text}`);
+  return [
+    recipe.title,
+    ...(recipe.summary ? [recipe.summary] : []),
+    '',
+    `Ingredients (serves ${recipe.servings})`,
+    ...ingredients,
+    '',
+    'Method',
+    ...steps,
+    ...(recipe.notes?.length ? ['', 'Notes', ...recipe.notes] : []),
+  ].join('\n');
+}

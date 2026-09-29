@@ -3,8 +3,8 @@ import { useRouter } from 'expo-router';
 import { useState } from 'react';
 import { View } from 'react-native';
 
-import { getCatalogueRecipe } from '@/data/catalogue/catalogue';
 import type { Recipe } from '@/domain/recipes/types';
+import { useRecipeLookup } from '@/store/recipeBook';
 import { useSaved } from '@/store/saved';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { Masthead } from '@/ui/patterns/Masthead';
@@ -17,6 +17,7 @@ import { SPACE } from '@/ui/tokens/type';
 import { RecipeRows } from './SavedLists';
 
 export function CollectionScreen({ id }: { id: string }) {
+  const getRecipe = useRecipeLookup();
   const router = useRouter();
   const toast = useToast();
   const collection = useSaved((s) => s.collections.find((c) => c.id === id));
@@ -42,7 +43,7 @@ export function CollectionScreen({ id }: { id: string }) {
 
   const trimmed = name.trim();
   const clash = collections.some((c) => c.id !== id && c.name.toLowerCase() === trimmed.toLowerCase());
-  const recipes = collection.recipeIds.map(getCatalogueRecipe).filter((r): r is Recipe => r !== undefined);
+  const recipes = collection.recipeIds.map(getRecipe).filter((r): r is Recipe => r !== undefined);
 
   return (
     <Screen>

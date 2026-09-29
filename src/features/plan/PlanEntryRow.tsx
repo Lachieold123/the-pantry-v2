@@ -2,10 +2,10 @@
 import { useRouter } from 'expo-router';
 import { View } from 'react-native';
 
-import { getCatalogueRecipe } from '@/data/catalogue/catalogue';
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import type { PlanEntry } from '@/domain/plan/week';
 import { usePlan } from '@/store/plan';
+import { useRecipe } from '@/store/recipeBook';
 import { RecipeCard } from '@/ui/patterns/RecipeCard';
 import { useToast } from '@/ui/patterns/Toast';
 import { IconButton } from '@/ui/primitives/IconButton';
@@ -21,7 +21,7 @@ export function PlanEntryRow({ entry, past }: { entry: PlanEntry; past: boolean 
   const removeEntry = usePlan((s) => s.removeEntry);
   const restoreEntry = usePlan((s) => s.restoreEntry);
   const setServings = usePlan((s) => s.setServings);
-  const recipe = getCatalogueRecipe(entry.recipeId);
+  const recipe = useRecipe(entry.recipeId);
 
   if (!recipe) {
     return (

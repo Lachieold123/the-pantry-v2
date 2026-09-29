@@ -3,9 +3,9 @@ import { useRouter } from 'expo-router';
 import { useState } from 'react';
 import { View } from 'react-native';
 
-import { getCatalogueRecipe } from '@/data/catalogue/catalogue';
 import type { Slot } from '@/domain/plan/week';
 import { usePlan } from '@/store/plan';
+import { useRecipe } from '@/store/recipeBook';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { useToast } from '@/ui/patterns/Toast';
 import { Button } from '@/ui/primitives/Button';
@@ -26,7 +26,7 @@ const SLOTS = [
 export function PlanRecipeSheet({ id }: { id: string }) {
   const router = useRouter();
   const toast = useToast();
-  const recipe = getCatalogueRecipe(id);
+  const recipe = useRecipe(id);
   const addEntry = usePlan((s) => s.addEntry);
   const removeEntry = usePlan((s) => s.removeEntry);
   const days = planningDays();

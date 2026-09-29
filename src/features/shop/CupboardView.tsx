@@ -3,11 +3,12 @@ import { useRouter } from 'expo-router';
 import { useMemo, useState } from 'react';
 import { View } from 'react-native';
 
-import { CATALOGUE, INGREDIENTS } from '@/data/catalogue/catalogue';
+import { INGREDIENTS } from '@/data/catalogue/catalogue';
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { cupboardIds, whatCanIMake } from '@/domain/cupboard/match';
 import { normaliseWords } from '@/domain/ingredients/database';
 import { useCupboard } from '@/store/cupboard';
+import { useAllRecipes } from '@/store/recipeBook';
 import { useSaved } from '@/store/saved';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { RecipeCard } from '@/ui/patterns/RecipeCard';
@@ -29,6 +30,7 @@ export function CupboardView() {
   const toast = useToast();
   const { items, add, remove, moveTickedToCupboard, setMoveTicked } = useCupboard();
   const hidden = useSaved((s) => s.hidden);
+  const all = useAllRecipes();
   const [query, setQuery] = useState('');
   const have = useMemo(() => cupboardIds(items), [items]);
 
@@ -42,12 +44,12 @@ export function CupboardView() {
   const canMake = useMemo(
     () =>
       whatCanIMake(
-        CATALOGUE.filter((r) => !hidden.includes(r.id)),
+        all.filter((r) => !hidden.includes(r.id)),
         have,
         INGREDIENTS,
         6,
       ),
-    [have, hidden],
+    [have, hidden, all],
   );
   const listed = useMemo(
     () =>

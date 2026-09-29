@@ -2,7 +2,7 @@
 // hidden dishes) and soft ones (not already planned or recently cooked).
 import { useMemo, useRef } from 'react';
 
-import { CATALOGUE, INGREDIENTS } from '@/data/catalogue/catalogue';
+import { INGREDIENTS } from '@/data/catalogue/catalogue';
 import { recentlyCooked } from '@/domain/cook/cook';
 import { entriesInWeek, toISODate, visibleWeeks } from '@/domain/plan/week';
 import { NO_FILTERS, type TimeFilter } from '@/domain/recipes/search';
@@ -11,6 +11,7 @@ import { eligibleForSurprise, pickSurprise } from '@/domain/suggestions/surprise
 import { useCookLog } from '@/store/cookLog';
 import { usePlan } from '@/store/plan';
 import { usePreferences } from '@/store/preferences';
+import { useAllRecipes } from '@/store/recipeBook';
 import { useSaved } from '@/store/saved';
 
 export function useSurprise(time: TimeFilter | undefined) {
@@ -19,12 +20,13 @@ export function useSurprise(time: TimeFilter | undefined) {
   const hidden = useSaved((s) => s.hidden);
   const entries = usePlan((s) => s.entries);
   const log = useCookLog((s) => s.log);
+  const all = useAllRecipes();
   const shown = useRef<string[]>([]);
 
   const input = useMemo(() => {
     const week = visibleWeeks(toISODate(new Date())).thisWeek;
     return {
-      recipes: CATALOGUE.filter((r) => r.mealTypes.includes('dinner')),
+      recipes: all.filter((r) => r.mealTypes.includes('dinner')),
       filters: { ...NO_FILTERS, time },
       diet,
       avoid,
@@ -33,7 +35,7 @@ export function useSurprise(time: TimeFilter | undefined) {
       recentlyCooked: recentlyCooked(log),
       index: INGREDIENTS,
     };
-  }, [diet, avoid, hidden, entries, log, time]);
+  }, [diet, avoid, hidden, entries, log, time, all]);
 
   const pool = useMemo(() => eligibleForSurprise(input), [input]);
   const pick = (): Recipe | undefined => {

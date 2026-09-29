@@ -2,11 +2,11 @@
 import { useRouter } from 'expo-router';
 import { View } from 'react-native';
 
-import { getCatalogueRecipe } from '@/data/catalogue/catalogue';
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { addDays, entriesFor, fromISODate, toISODate, tonightsDinner } from '@/domain/plan/week';
 import { longDate } from '@/lib/dates';
 import { usePlan } from '@/store/plan';
+import { useRecipeLookup } from '@/store/recipeBook';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { Masthead } from '@/ui/patterns/Masthead';
 import { RecipeCard } from '@/ui/patterns/RecipeCard';
@@ -23,10 +23,11 @@ export function TodayScreen() {
   const entries = usePlan((s) => s.entries);
   const today = toISODate(new Date());
   const tonight = tonightsDinner(entries, today);
-  const tonightRecipe = tonight ? getCatalogueRecipe(tonight.recipeId) : undefined;
+  const getRecipe = useRecipeLookup();
+  const tonightRecipe = tonight ? getRecipe(tonight.recipeId) : undefined;
   const open = (id: string) => router.push({ pathname: '/recipe/[id]', params: { id } });
   const ahead = Array.from({ length: AHEAD_DAYS }, (_, i) => addDays(today, i + 1)).flatMap((day) =>
-    entriesFor(entries, day, 'dinner').map((entry) => ({ day, entry, recipe: getCatalogueRecipe(entry.recipeId) })),
+    entriesFor(entries, day, 'dinner').map((entry) => ({ day, entry, recipe: getRecipe(entry.recipeId) })),
   );
 
   return (

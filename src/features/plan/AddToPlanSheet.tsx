@@ -3,7 +3,6 @@ import { useRouter } from 'expo-router';
 import { useMemo, useState } from 'react';
 import { View } from 'react-native';
 
-import { CATALOGUE, getCatalogueRecipe } from '@/data/catalogue/catalogue';
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { CUISINE_LABELS } from '@/domain/recipes/labels';
 import { indexForSearch, searchRecipes } from '@/domain/recipes/search';
@@ -11,6 +10,7 @@ import type { Recipe } from '@/domain/recipes/types';
 import { fromISODate, isISODate, toISODate, type Slot } from '@/domain/plan/week';
 import { longDate } from '@/lib/dates';
 import { usePlan } from '@/store/plan';
+import { useAllRecipes, useRecipeLookup } from '@/store/recipeBook';
 import { useSaved } from '@/store/saved';
 import { RecipeCard } from '@/ui/patterns/RecipeCard';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
@@ -21,7 +21,6 @@ import { Sheet } from '@/ui/primitives/Sheet';
 import { Text } from '@/ui/primitives/Text';
 import { SPACE } from '@/ui/tokens/type';
 
-const SEARCH_INDEX = indexForSearch(CATALOGUE, (c) => CUISINE_LABELS[c]);
 const SLOTS = [
   { value: 'breakfast', label: 'Breakfast' },
   { value: 'lunch', label: 'Lunch' },
@@ -40,15 +39,18 @@ export function AddToPlanSheet({ day: requested }: { day: string | undefined }) 
   const hidden = useSaved((s) => s.hidden);
   const [slot, setSlot] = useState<Slot>('dinner');
   const [query, setQuery] = useState('');
+  const all = useAllRecipes();
+  const getRecipe = useRecipeLookup();
+  const searchIndex = useMemo(() => indexForSearch(all, (c) => CUISINE_LABELS[c]), [all]);
 
   const saved = useMemo(
-    () => bookmarks.map((b) => getCatalogueRecipe(b.recipeId)).filter((r): r is Recipe => r !== undefined),
-    [bookmarks],
+    () => bookmarks.map((b) => getRecipe(b.recipeId)).filter((r): r is Recipe => r !== undefined),
+    [bookmarks, getRecipe],
   );
   const results = useMemo(() => {
-    const pool = query.trim() ? searchRecipes(SEARCH_INDEX, query) : CATALOGUE.filter((r) => r.mealTypes.includes(slot));
+    const pool = query.trim() ? searchRecipes(searchIndex, query) : all.filter((r) => r.mealTypes.includes(slot));
     return pool.filter((r) => !hidden.includes(r.id)).slice(0, MAX_RESULTS);
-  }, [query, slot, hidden]);
+  }, [query, slot, hidden, searchIndex, all]);
 
   const dayName = day === toISODate(new Date()) ? 'today' : (longDate(fromISODate(day)).split(' ')[0] ?? day);
   const pick = (recipe: Recipe) => {

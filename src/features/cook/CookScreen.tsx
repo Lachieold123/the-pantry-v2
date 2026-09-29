@@ -7,12 +7,12 @@ import { Pressable, ScrollView, View } from 'react-native';
 import Animated, { FadeIn, useReducedMotion } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { getCatalogueRecipe } from '@/data/catalogue/catalogue';
 import { splitStepTimers } from '@/domain/cook/cook';
 import { formatLine, scaleLine } from '@/domain/ingredients/format';
 import { allLines } from '@/domain/recipes/types';
 import { useCookLog } from '@/store/cookLog';
 import { usePreferences } from '@/store/preferences';
+import { useRecipe } from '@/store/recipeBook';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { useToast } from '@/ui/patterns/Toast';
 import { Button } from '@/ui/primitives/Button';
@@ -33,7 +33,7 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
   const units = usePreferences((s) => s.units);
   const markCooked = useCookLog((s) => s.markCooked);
   const undoCooked = useCookLog((s) => s.undo);
-  const recipe = getCatalogueRecipe(id);
+  const recipe = useRecipe(id);
   const [step, setStep] = useState(0);
   const [showIngredients, setShowIngredients] = useState(false);
   const { timers, now, start, dismiss } = useCookTimers(recipe?.title ?? '');

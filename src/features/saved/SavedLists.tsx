@@ -3,11 +3,11 @@ import { useRouter } from 'expo-router';
 import { useState } from 'react';
 import { View } from 'react-native';
 
-import { getCatalogueRecipe } from '@/data/catalogue/catalogue';
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { recentlyCooked, weeklyStreak } from '@/domain/cook/cook';
 import type { Recipe } from '@/domain/recipes/types';
 import { useCookLog } from '@/store/cookLog';
+import { useRecipeLookup } from '@/store/recipeBook';
 import { useSaved } from '@/store/saved';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { RecipeCard } from '@/ui/patterns/RecipeCard';
@@ -18,7 +18,11 @@ import { ListRow } from '@/ui/primitives/ListRow';
 import { TextField } from '@/ui/primitives/TextField';
 import { SPACE } from '@/ui/tokens/type';
 
-const recipesFor = (ids: readonly string[]) => ids.map(getCatalogueRecipe).filter((r): r is Recipe => r !== undefined);
+/** The recipes behind a list of ids, skipping any that no longer exist. */
+function useRecipesFor() {
+  const getRecipe = useRecipeLookup();
+  return (ids: readonly string[]) => ids.map(getRecipe).filter((r): r is Recipe => r !== undefined);
+}
 
 function useOpen() {
   const router = useRouter();
@@ -46,6 +50,7 @@ export function RecipeRows({ recipes, note }: { recipes: Recipe[]; note?: (r: Re
 export function BookmarksList() {
   const router = useRouter();
   const bookmarks = useSaved((s) => s.bookmarks);
+  const recipesFor = useRecipesFor();
   const recent = useSaved((s) => s.recentlyViewed);
   const saved = recipesFor(bookmarks.map((b) => b.recipeId));
   return (
@@ -117,6 +122,7 @@ export function CollectionsList() {
 }
 
 export function CookedList() {
+  const recipesFor = useRecipesFor();
   const router = useRouter();
   const log = useCookLog((s) => s.log);
   const recipes = recipesFor(recentlyCooked(log));

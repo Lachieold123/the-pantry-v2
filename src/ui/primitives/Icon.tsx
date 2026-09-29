@@ -23,6 +23,8 @@ const ICONS = {
   timer: { ios: 'timer', android: 'timer', web: 'timer' },
   share: { ios: 'square.and.arrow.up', android: 'share', web: 'share' },
   warning: { ios: 'exclamationmark.triangle', android: 'warning', web: 'warning' },
+  edit: { ios: 'pencil', android: 'edit', web: 'edit' },
+  link: { ios: 'link', android: 'link', web: 'link' },
 } as const;
 
 export type IconName = keyof typeof ICONS;

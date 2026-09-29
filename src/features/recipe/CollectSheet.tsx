@@ -3,7 +3,7 @@ import { useRouter } from 'expo-router';
 import { useState } from 'react';
 import { View } from 'react-native';
 
-import { getCatalogueRecipe } from '@/data/catalogue/catalogue';
+import { useRecipe } from '@/store/recipeBook';
 import { useSaved } from '@/store/saved';
 import { Button } from '@/ui/primitives/Button';
 import { Checkbox } from '@/ui/primitives/Checkbox';
@@ -15,7 +15,7 @@ import { SPACE } from '@/ui/tokens/type';
 
 export function CollectSheet({ id }: { id: string }) {
   const router = useRouter();
-  const recipe = getCatalogueRecipe(id);
+  const recipe = useRecipe(id);
   const collections = useSaved((s) => s.collections);
   const toggleInCollection = useSaved((s) => s.toggleInCollection);
   const createCollection = useSaved((s) => s.createCollection);
