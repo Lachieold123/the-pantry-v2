@@ -520,7 +520,7 @@ Each phase lists its **Goal**, **Build** (what gets built), **Done when** (accep
   - It deep-links cold.
 - **Reference:** old `RecipeModal`, `RecipeBody`, `BrowseModal`, `FiltersModal`, `searchRecipes`.
 
-> **Status 29 Sep:** built. Browse shelves, typo-tolerant search, filters sheet with active count, recipe page with servings scaling, Australian measures and substitution tips. **Still to do:** nutrition (K-5), plural wording (K-2).
+> **Status 29 Sep:** built. Browse shelves, typo-tolerant search, filters sheet with active count, recipe page with servings scaling, Australian measures and substitution tips. **Still to do:** nutrition (K-5).
 
 ### Phase 4: Save
 
@@ -568,7 +568,7 @@ Each phase lists its **Goal**, **Build** (what gets built), **Done when** (accep
 - **Question first:** what "hands-free" means (`PRODUCT.md` §6, decision B).
 - **Reference:** old `CookModeModal`, `stepDuration`, `SpinnerModal`, `cookStats`.
 
-> **Status 29 Sep:** built. Cook Mode (screen stays on, tap anywhere or Next, timers from step text that notify when the phone is locked, ingredients drawer, Done logs the cook with undo); Surprise me honouring diet, avoid list, hidden, planned and recent recipes, with a fade under Reduce Motion; Cooked list with a weekly streak; diet and avoid list in Settings. "Hands-free" means screen-on plus a whole-screen tap target (PRODUCT.md decision B). **Still to do:** swipe between steps (K-9).
+> **Status 29 Sep:** built. Cook Mode (screen stays on, tap anywhere or Next, timers from step text that notify when the phone is locked, ingredients drawer, Done logs the cook with undo); Surprise me honouring diet, avoid list, hidden, planned and recent recipes, with a fade under Reduce Motion; Cooked list with a weekly streak; diet and avoid list in Settings. "Hands-free" means screen-on plus a whole-screen tap target (PRODUCT.md decision B).
 
 ### Phase 7: Today and onboarding
 

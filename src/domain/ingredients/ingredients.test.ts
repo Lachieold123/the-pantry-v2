@@ -163,3 +163,23 @@ describe('formatting', () => {
     assert.deepEqual(addQuantities(1, { min: 2, max: 3 }), { min: 3, max: 4 });
   });
 });
+
+describe('counted items agree with their number after scaling (K-2)', () => {
+  const line = (raw: string) => parseIngredientLine(raw, index.match).line;
+  const scaled = (raw: string, ratio: number) => formatLine(scaleLine(line(raw), ratio), 'metric');
+  it('goes singular when scaled down to one', () => {
+    assert.equal(scaled('3 large onions', 1 / 3), '1 large onion');
+    assert.equal(scaled('4 tomatoes, diced', 0.25), '1 tomato, diced');
+    assert.equal(scaled('2 chillies', 0.5), '1 chilli');
+    assert.equal(scaled('2 chicken breasts', 0.5), '1 chicken breast');
+  });
+  it('goes plural when scaled up from one', () => {
+    assert.equal(scaled('1 lemon, juiced', 2), '2 lemons, juiced');
+    assert.equal(scaled('1 sweet potato', 3), '3 sweet potatoes');
+    assert.equal(scaled('1 bok choy', 2), '2 bok choy');
+  });
+  it('leaves the wording alone when the number stays on the same side of one', () => {
+    assert.equal(scaled('2 bok choy', 2), '4 bok choy');
+    assert.equal(scaled('3 eggs', 2), '6 eggs');
+  });
+});

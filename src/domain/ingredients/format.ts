@@ -2,6 +2,7 @@
 // line for the cook in their chosen units.
 
 import { formatKitchenNumber, formatMeasuredNumber, isRange, mapQuantity, type Quantity } from './quantity';
+import { inflectItem } from './nouns';
 import type { IngredientLine } from './types';
 import { convert, UNITS, unitLabel, type UnitId } from './units';
 
@@ -11,7 +12,13 @@ export type UnitSystem = 'metric' | 'imperial';
 export function scaleLine(line: IngredientLine, ratio: number): IngredientLine {
   if (line.quantity === undefined || ratio === 1) return line;
   if (!Number.isFinite(ratio) || ratio <= 0) throw new Error(`Invalid scale ratio: ${ratio}`);
-  return { ...line, quantity: mapQuantity(line.quantity, (n) => n * ratio) };
+  const quantity = mapQuantity(line.quantity, (n) => n * ratio);
+  if (line.unit !== undefined) return { ...line, quantity };
+  // Counted things agree with their number when it crosses one: "3 large onions" → "1 large onion" (K-2).
+  const top = (q: Quantity) => (isRange(q) ? q.max : q);
+  const wasOne = top(line.quantity) <= 1;
+  const isOne = roundCount(top(quantity)) <= 1;
+  return { ...line, quantity, ...(wasOne !== isOne ? { item: inflectItem(line.item, isOne ? 1 : 2) } : {}) };
 }
 
 /** Pinches, cloves and eggs come in halves at best: round counts up to the nearest half. */

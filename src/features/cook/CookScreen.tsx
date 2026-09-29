@@ -4,6 +4,7 @@ import { useKeepAwake } from 'expo-keep-awake';
 import { useRouter } from 'expo-router';
 import { useState } from 'react';
 import { Pressable, ScrollView, View } from 'react-native';
+import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, { FadeIn, useReducedMotion } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -22,6 +23,8 @@ import { useTheme } from '@/ui/theme/ThemeProvider';
 import { MOTION, SPACE } from '@/ui/tokens/type';
 import { TimerBar } from './TimerBar';
 import { useCookTimers } from './useCookTimers';
+
+const SWIPE_DISTANCE = 60;
 
 export function CookScreen({ id, servings: requested }: { id: string; servings?: number | undefined }) {
   useKeepAwake('cook-mode');
@@ -54,6 +57,16 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
   const last = step === total - 1;
   const servings = requested && requested > 0 ? requested : recipe.servings;
   const next = () => (last ? undefined : setStep(step + 1));
+  const previous = () => (step === 0 ? undefined : setStep(step - 1));
+  // Swipe left for the next step, right to go back. Horizontal only, so the step text still scrolls.
+  const swipe = Gesture.Pan()
+    .activeOffsetX([-30, 30])
+    .failOffsetY([-20, 20])
+    .runOnJS(true)
+    .onEnd((e) => {
+      if (e.translationX < -SWIPE_DISTANCE) next();
+      else if (e.translationX > SWIPE_DISTANCE) previous();
+    });
   const done = () => {
     const event = markCooked(recipe.id);
     router.back();
@@ -85,40 +98,42 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
       ) : (
         // Tapping anywhere moves on for floury hands; VoiceOver uses the Next button instead, so the
         // step text and its timer buttons stay individually reachable.
-        <Pressable onPress={next} disabled={last} accessible={false} style={{ flex: 1 }}>
-          <ScrollView contentContainerStyle={{ padding: SPACE.screen, flexGrow: 1, justifyContent: 'center' }}>
-            <Animated.View key={step} {...(reduceMotion ? {} : { entering: FadeIn.duration(MOTION.standard) })}>
-              <Text variant="numeral">{step + 1}</Text>
-              <Text variant="title" style={{ fontSize: 30, lineHeight: 42 }}>
-                {splitStepTimers(text).map((seg, i) =>
-                  seg.type === 'text' ? (
-                    seg.text
-                  ) : (
-                    <Text
-                      key={i}
-                      variant="title"
-                      colour="accent"
-                      style={{ fontSize: 30, lineHeight: 42, textDecorationLine: 'underline' }}
-                      accessibilityRole="button"
-                      accessibilityLabel={`Start a ${seg.label} timer`}
-                      onPress={() => void start(seg.label, step, seg.seconds)}
-                    >
-                      {seg.label}
-                    </Text>
-                  ),
-                )}
-              </Text>
-              {splitStepTimers(text).some((s) => s.type === 'timer') ? (
-                <Text variant="meta" style={{ paddingTop: SPACE.sm }}>
-                  Tap a time to start a timer.
+        <GestureDetector gesture={swipe}>
+          <Pressable onPress={next} disabled={last} accessible={false} style={{ flex: 1 }}>
+            <ScrollView contentContainerStyle={{ padding: SPACE.screen, flexGrow: 1, justifyContent: 'center' }}>
+              <Animated.View key={step} {...(reduceMotion ? {} : { entering: FadeIn.duration(MOTION.standard) })}>
+                <Text variant="numeral">{step + 1}</Text>
+                <Text variant="title" style={{ fontSize: 30, lineHeight: 42 }}>
+                  {splitStepTimers(text).map((seg, i) =>
+                    seg.type === 'text' ? (
+                      seg.text
+                    ) : (
+                      <Text
+                        key={i}
+                        variant="title"
+                        colour="accent"
+                        style={{ fontSize: 30, lineHeight: 42, textDecorationLine: 'underline' }}
+                        accessibilityRole="button"
+                        accessibilityLabel={`Start a ${seg.label} timer`}
+                        onPress={() => void start(seg.label, step, seg.seconds)}
+                      >
+                        {seg.label}
+                      </Text>
+                    ),
+                  )}
                 </Text>
-              ) : null}
-            </Animated.View>
-          </ScrollView>
-        </Pressable>
+                {splitStepTimers(text).some((s) => s.type === 'timer') ? (
+                  <Text variant="meta" style={{ paddingTop: SPACE.sm }}>
+                    Tap a time to start a timer.
+                  </Text>
+                ) : null}
+              </Animated.View>
+            </ScrollView>
+          </Pressable>
+        </GestureDetector>
       )}
       <View style={{ flexDirection: 'row', gap: SPACE.xs, paddingHorizontal: SPACE.screen, paddingTop: SPACE.sm }}>
-        <Button label="Back" icon="back" onPress={() => setStep(step - 1)} disabled={step === 0} />
+        <Button label="Back" icon="back" onPress={previous} disabled={step === 0} />
         <View style={{ flex: 1 }}>
           {last ? (
             <Button label="Done" icon="check" kind="primary" block onPress={done} />
