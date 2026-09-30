@@ -1,16 +1,19 @@
-// Today: tonight's dinner first (or a suggestion), then the rest of the week (map §6).
+// The Feed tab, the app's home. Until posts arrive with social (P9) it carries
+// v2's "Tonight" (the North Star's Tuesday 6pm moment), what's coming up, and
+// recipes picked for you, all real (D-027). Posts join below in P9.
 import { useRouter } from 'expo-router';
 import { View } from 'react-native';
 
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { addDays, entriesFor, fromISODate, toISODate, tonightsDinner } from '@/domain/plan/week';
+import type { Recipe } from '@/domain/recipes/types';
 import { longDate } from '@/lib/dates';
 import { useWelcomeBack } from '@/store/oldAppImport';
 import { usePlan } from '@/store/plan';
 import { useRecipeLookup } from '@/store/recipeBook';
+import { useSaved } from '@/store/saved';
 import { useForYou } from '@/store/suggestions';
 import { EmptyState } from '@/ui/patterns/EmptyState';
-import { TitleBlock } from '@/ui/patterns/TitleBlock';
 import { RecipeCard } from '@/ui/patterns/RecipeCard';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { useToast } from '@/ui/patterns/Toast';
@@ -21,8 +24,9 @@ import { Text } from '@/ui/primitives/Text';
 import { SPACE } from '@/ui/tokens/type';
 
 const AHEAD_DAYS = 6;
+const PICKS = 5;
 
-export function TodayScreen() {
+export function FeedScreen() {
   const router = useRouter();
   const toast = useToast();
   const entries = usePlan((s) => s.entries);
@@ -30,7 +34,7 @@ export function TodayScreen() {
   const removeEntry = usePlan((s) => s.removeEntry);
   const welcome = useWelcomeBack((s) => s.message);
   const dismissWelcome = useWelcomeBack((s) => s.dismiss);
-  const [suggestion] = useForYou(1);
+  const [suggestion, ...picks] = useForYou(PICKS);
   const today = toISODate(new Date());
   const tonight = tonightsDinner(entries, today);
   const getRecipe = useRecipeLookup();
@@ -41,69 +45,75 @@ export function TodayScreen() {
   );
 
   return (
-    <Screen>
-      <TitleBlock
-        kicker={longDate(new Date())}
-        title="Tonight"
-        action={<IconButton icon="settings" label="Settings" onPress={() => router.push('/settings')} />}
-      />
+    <Screen tab testID="feed-screen">
       {welcome ? (
         <View style={{ flexDirection: 'row', alignItems: 'flex-start', gap: SPACE.xs }} accessibilityLiveRegion="polite">
           <Text variant="body" colour="inkSoft" style={{ flex: 1 }}>
             {welcome}
           </Text>
-          <IconButton icon="close" label="Dismiss" onPress={dismissWelcome} colour="inkMuted" />
+          <IconButton icon="close" label="Dismiss" onPress={dismissWelcome} colour="inkMuted" testID="welcome-back-dismiss" />
         </View>
       ) : null}
+
       {tonight && tonightRecipe ? (
         <View style={{ gap: SPACE.md }}>
+          <SectionHeader kicker={`Tonight · ${longDate(new Date())}`} tone="accent" title="On for dinner" />
           <RecipeCard
             recipe={tonightRecipe}
             image={RECIPE_IMAGES[tonightRecipe.id]}
             size="large"
             note={`Dinner for ${tonight.servings}`}
             onPress={() => open(tonightRecipe.id)}
+            testID="feed-tonight"
           />
           <Button
-            label="Cook"
-            icon="timer"
+            label="Start cooking"
+            icon="flame"
             kind="primary"
+            size="lg"
             block
+            testID="feed-cook"
             onPress={() =>
               router.push({ pathname: '/recipe/[id]/cook', params: { id: tonightRecipe.id, servings: String(tonight.servings) } })
             }
           />
+          <Button label="Not feeling it? Surprise me" kind="quiet" onPress={() => router.push('/surprise')} testID="feed-surprise" />
         </View>
       ) : suggestion ? (
         <View style={{ gap: SPACE.md }}>
-          <Text variant="meta">Nothing planned yet. How about this?</Text>
-          <RecipeCard recipe={suggestion} image={RECIPE_IMAGES[suggestion.id]} size="large" onPress={() => open(suggestion.id)} />
+          <SectionHeader kicker={`Tonight · ${longDate(new Date())}`} tone="accent" title="How about this?" />
+          <RecipeCard
+            recipe={suggestion}
+            image={RECIPE_IMAGES[suggestion.id]}
+            size="large"
+            onPress={() => open(suggestion.id)}
+            testID="feed-tonight"
+          />
           <Button
             label="Have this tonight"
             icon="plan"
             kind="primary"
+            size="lg"
             block
+            testID="feed-have-tonight"
             onPress={() => {
               const entry = addEntry(suggestion.id, today, 'dinner', suggestion.servings);
               toast({ message: `${suggestion.title} is on for tonight`, undo: () => removeEntry(entry.id) });
             }}
           />
+          <Button label="Surprise me instead" kind="quiet" onPress={() => router.push('/surprise')} testID="feed-surprise" />
         </View>
       ) : (
         <EmptyState
           title="Nothing planned for tonight"
-          body="Plan a few dinners and tonight’s shows up here, ready to cook. Or let us choose."
+          body="Plan a few dinners and tonight's shows up here, ready to cook. Or let us choose."
           action={{ label: 'Surprise me', onPress: () => router.push('/surprise') }}
         />
       )}
-      {tonight && tonightRecipe ? (
-        <Button label="Not feeling it? Surprise me" kind="quiet" onPress={() => router.push('/surprise')} />
-      ) : suggestion ? (
-        <Button label="Surprise me instead" kind="quiet" onPress={() => router.push('/surprise')} />
-      ) : null}
+
       {ahead.length ? (
-        <View style={{ gap: SPACE.sm }}>
-          <SectionHeader title="Coming up" />
+        <View>
+          <SectionHeader kicker="Coming up" tone="accent" title="This week" />
           {ahead.map(({ day, entry, recipe }) =>
             recipe ? (
               <RecipeCard
@@ -118,6 +128,41 @@ export function TodayScreen() {
           )}
         </View>
       ) : null}
+
+      {picks.length ? (
+        <View>
+          <SectionHeader kicker="For you" tone="accent" title="What's cooking?" />
+          <PickGrid recipes={picks} onOpen={open} />
+        </View>
+      ) : null}
     </Screen>
+  );
+}
+
+/** Two columns. An odd last card keeps its width (the original stretched it across both). */
+function PickGrid({ recipes, onOpen }: { recipes: Recipe[]; onOpen: (id: string) => void }) {
+  const saved = useSaved((s) => s.bookmarks);
+  const toggle = useSaved((s) => s.toggleBookmark);
+  const rows: Recipe[][] = [];
+  for (let i = 0; i < recipes.length; i += 2) rows.push(recipes.slice(i, i + 2));
+  return (
+    <View style={{ gap: SPACE.sm }}>
+      {rows.map((row) => (
+        <View key={row.map((r) => r.id).join()} style={{ flexDirection: 'row', gap: SPACE.sm }}>
+          {row.map((r) => (
+            <RecipeCard
+              key={r.id}
+              recipe={r}
+              image={RECIPE_IMAGES[r.id]}
+              size="medium"
+              onPress={() => onOpen(r.id)}
+              saved={saved.some((b) => b.recipeId === r.id)}
+              onToggleSave={() => toggle(r.id)}
+            />
+          ))}
+          {row.length === 1 ? <View style={{ flex: 1 }} /> : null}
+        </View>
+      ))}
+    </View>
   );
 }

@@ -49,7 +49,18 @@ function RootStack() {
     <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: colours.bg } }}>
       <Stack.Screen name="(tabs)" />
       <Stack.Screen name="welcome" options={{ gestureEnabled: false, animation: 'fade' }} />
-      <Stack.Screen name="settings/index" options={{ presentation: 'modal' }} />
+      {/* The side menu draws its own slide and backdrop over whatever is underneath. */}
+      <Stack.Screen
+        name="menu"
+        options={{ presentation: 'transparentModal', animation: 'none', contentStyle: { backgroundColor: 'transparent' } }}
+      />
+      <Stack.Screen name="settings/index" />
+      <Stack.Screen name="saved/index" />
+      <Stack.Screen name="collections/index" />
+      <Stack.Screen name="collections/[id]" />
+      <Stack.Screen name="my-recipes" />
+      <Stack.Screen name="recent" />
+      <Stack.Screen name="stats" />
       <Stack.Screen name="dev/gallery" />
       <Stack.Screen name="recipe/[id]/index" />
       <Stack.Screen name="recipe/[id]/plan" options={SHEET} />
@@ -58,7 +69,6 @@ function RootStack() {
       <Stack.Screen name="filters" options={SHEET} />
       <Stack.Screen name="plan/add" options={SHEET} />
       <Stack.Screen name="surprise" options={{ presentation: 'modal' }} />
-      <Stack.Screen name="saved/collection/[id]" />
       {/* Editing is a deliberate task: no swipe-to-dismiss, so a stray gesture can't lose a typed recipe. */}
       <Stack.Screen name="my-recipe/edit" options={{ presentation: 'modal', gestureEnabled: false }} />
       <Stack.Screen name="my-recipe/import" options={SHEET} />

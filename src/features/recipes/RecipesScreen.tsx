@@ -1,7 +1,7 @@
-// Recipes: browse shelves, or search and filter the whole catalogue (Phase 3).
+// The Browse tab: shelves to explore, or search and filter the whole catalogue.
+// P3 rebuilds the shelves to v1's; P2 gives the screen its home and header.
 import { useRouter } from 'expo-router';
 import { FlatList, ScrollView, View } from 'react-native';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { CATALOGUE } from '@/data/catalogue/catalogue';
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
@@ -10,30 +10,36 @@ import { EmptyState } from '@/ui/patterns/EmptyState';
 import { TitleBlock } from '@/ui/patterns/TitleBlock';
 import { RecipeCard } from '@/ui/patterns/RecipeCard';
 import { Button } from '@/ui/primitives/Button';
+import { IconButton } from '@/ui/primitives/IconButton';
 import { SearchField } from '@/ui/primitives/SearchField';
 import { Text } from '@/ui/primitives/Text';
 import { useTheme } from '@/ui/theme/ThemeProvider';
-import { SPACE } from '@/ui/tokens/type';
+import { CARD, SPACE } from '@/ui/tokens/type';
 import { BrowseSections } from './BrowseSections';
 import { useRecipeResults } from './useRecipeResults';
 
 export function RecipesScreen() {
   const router = useRouter();
-  const insets = useSafeAreaInsets();
   const { colours } = useTheme();
   const query = useRecipeFilters((s) => s.query);
   const setQuery = useRecipeFilters((s) => s.setQuery);
   const clear = useRecipeFilters((s) => s.clear);
   const { browsing, results, activeFilters } = useRecipeResults();
   const open = (id: string) => router.push({ pathname: '/recipe/[id]', params: { id } });
-  const pad = { paddingTop: insets.top + SPACE.md, paddingHorizontal: SPACE.gutter, paddingBottom: SPACE.xxl, gap: SPACE.lg };
+  const pad = { paddingTop: SPACE.xs, paddingHorizontal: SPACE.gutter, paddingBottom: CARD.scrollBottom, gap: SPACE.lg };
 
   const header = (
     <View style={{ gap: SPACE.md }}>
-      <TitleBlock title="Recipes" action={<Button label="Surprise me" kind="quiet" onPress={() => router.push('/surprise')} />} />
-      <View style={{ flexDirection: 'row', gap: SPACE.xs, alignItems: 'center' }}>
-        <SearchField value={query} onChange={setQuery} placeholder="Search recipes" label="Search recipes" />
-        <Button label={activeFilters ? `Filters · ${activeFilters}` : 'Filters'} icon="filter" onPress={() => router.push('/filters')} />
+      <TitleBlock kicker="Browse" tone="accent" title="Discover" />
+      <View style={{ flexDirection: 'row', gap: SPACE.xs + 2, alignItems: 'center' }}>
+        <SearchField value={query} onChange={setQuery} placeholder="Recipes, ingredients…" label="Search recipes" testID="browse-search" />
+        <IconButton
+          icon="filter"
+          shape={activeFilters ? 'filled' : 'square'}
+          label={activeFilters ? `Filters, ${activeFilters} on` : 'Filters'}
+          onPress={() => router.push('/filters')}
+          testID="browse-filters"
+        />
       </View>
       {!browsing ? (
         <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
@@ -49,7 +55,7 @@ export function RecipesScreen() {
   if (CATALOGUE.length === 0) {
     return (
       <ScrollView style={{ flex: 1, backgroundColor: colours.bg }} contentContainerStyle={pad}>
-        <TitleBlock title="Recipes" />
+        <TitleBlock kicker="Browse" tone="accent" title="Discover" />
         <EmptyState
           title="The kitchen is still testing"
           body="Recipes appear here once they've been cooked and checked in The Pantry kitchen."

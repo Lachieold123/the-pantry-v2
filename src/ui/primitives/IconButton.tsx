@@ -9,7 +9,8 @@ import type { ColourTokens } from '@/ui/tokens/colour';
 import { RADIUS, TAP_TARGET } from '@/ui/tokens/type';
 import { Icon, type IconName } from './Icon';
 
-type Shape = 'plain' | 'square' | 'round' | 'chip' | 'filled';
+/** squareOnSoft: the square back button on a grey page (Settings, Filters), where grey would vanish. */
+type Shape = 'plain' | 'square' | 'squareOnSoft' | 'round' | 'chip' | 'filled';
 
 type Props = {
   icon: IconName;
@@ -27,6 +28,7 @@ export function IconButton({ icon, label, onPress, shape = 'plain', size, colour
   const frame: Record<Shape, ViewStyle> = {
     plain: {},
     square: { backgroundColor: colours.bgSoft, borderRadius: RADIUS.lg },
+    squareOnSoft: { backgroundColor: colours.card, borderRadius: RADIUS.lg },
     round: { backgroundColor: colours.card, borderRadius: RADIUS.pill },
     chip: {
       width: 38,

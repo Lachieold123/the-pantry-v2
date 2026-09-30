@@ -45,6 +45,7 @@ export const TYPE = {
   title: serif(30, '700', 34, -0.6),
   dayName: serif(26, '700', 30, -0.4),
   sectionTitle: serif(22, '700', 26, -0.4),
+  brandMark: serif(20, '700', 24),
   cardTitleLarge: serif(18, '700', 20, -0.3),
   cardTitle: serif(17, '700', 20, -0.3),
   cardTitleMedium: serif(16, '700', 19, -0.3),
@@ -128,6 +129,18 @@ export const CHROME = {
   drawerMin: 280,
   recipeHero: 280,
   titleBottom: 18,
+  headerBottom: 10,
+  /** The tab bar: visible height, the fade above it, and the gaps inside. */
+  tabBar: 86,
+  tabFade: 110,
+  tabPadY: 6,
+  tabGap: 5,
+  tabHide: 180,
+  fabBottom: 6,
+  drawerMark: 36,
+  drawerBrandY: 18,
+  drawerSection: 14,
+  drawerAvatar: 42,
 } as const;
 
 /** Recipe card measurements from the original (spec §3.2, §4.6), kept exact so cards match. */

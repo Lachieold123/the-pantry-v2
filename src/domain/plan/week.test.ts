@@ -8,6 +8,7 @@ import {
   isISODate,
   pruneOldEntries,
   tonightsDinner,
+  upcomingCount,
   visibleWeeks,
   weekDays,
   weekStart,
@@ -57,5 +58,15 @@ describe('week plan dates', () => {
       pruneOldEntries(entries, '2026-09-29').map((e) => e.id),
       ['a', 'b', 'c'],
     );
+  });
+});
+
+describe('upcoming meals', () => {
+  const entry = (day: string): PlanEntry => ({ id: day, recipeId: 'r', day, slot: 'dinner', servings: 2 });
+  it('counts today and later, never the past', () => {
+    assert.equal(upcomingCount([entry('2026-09-29'), entry('2026-09-30'), entry('2026-10-06')], '2026-09-30'), 2);
+  });
+  it('is zero for an empty plan', () => {
+    assert.equal(upcomingCount([], '2026-09-30'), 0);
   });
 });

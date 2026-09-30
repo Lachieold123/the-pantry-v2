@@ -2,6 +2,7 @@
 // hard rules. The avoid list is a convenience, not an allergy filter (D-006).
 import { useState } from 'react';
 import { View } from 'react-native';
+import { useShallow } from 'zustand/react/shallow';
 
 import { AVOID_OPTIONS, type DietPreference } from '@/domain/recipes/diets';
 import { AVOID_LABELS, DIET_PREFERENCE_LABELS } from '@/domain/recipes/labels';
@@ -16,7 +17,16 @@ const DIETS = Object.keys(DIET_PREFERENCE_LABELS) as DietPreference[];
 const OPTIONS = Object.keys(AVOID_OPTIONS) as (keyof typeof AVOID_OPTIONS)[];
 
 export function FoodSettings() {
-  const { diet, avoid, setDiet, toggleAvoidOption, addAvoidWord, removeAvoidWord } = usePreferences();
+  const { diet, avoid, setDiet, toggleAvoidOption, addAvoidWord, removeAvoidWord } = usePreferences(
+    useShallow(({ diet, avoid, setDiet, toggleAvoidOption, addAvoidWord, removeAvoidWord }) => ({
+      diet,
+      avoid,
+      setDiet,
+      toggleAvoidOption,
+      addAvoidWord,
+      removeAvoidWord,
+    })),
+  );
   const [word, setWord] = useState('');
   const add = () => {
     addAvoidWord(word);

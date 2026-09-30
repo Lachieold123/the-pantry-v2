@@ -167,3 +167,14 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
 
   This replaces PRODUCT §5 and D-002's "local-first, no accounts".
 - **How it's built:** to the standard in `docs/V1-PARITY-PLAN.md`. The server enforces every rule, including two-way blocking and counts kept by the database. Moderation meets Apple guideline 1.2 before any social feature ships. All server data goes through TanStack Query. None of the audit's social or security findings may come across.
+
+## D-027 · The shell before social arrives
+
+- **Date:** 30 September 2026 · **Decided by:** Claude, under D-025/D-026 (Lachlan to confirm when he reviews P2)
+- **Decision:** until accounts and social ship (P8–P9), v1's shell shows only what works:
+  - **Feed** is the home: "Tonight" (planned dinner or a suggestion, with Cook or "Have this tonight"), what's coming up this week, and recipes picked for you. Posts join below it in P9.
+  - The header's **inbox** button and the drawer's **Notifications** and **Messages** rows appear with P9. Before that they would open nothing.
+  - The centre **"+"** adds a recipe (the recipe editor). In P9 it becomes "Share a bite", which can also save to My recipes.
+  - The **avatar** and the drawer's profile row open Settings, and read "Local profile" until accounts exist.
+- **Why:** "No fake, no dead" (CLAUDE.md). A button that opens an empty inbox, or a feed of placeholder posts, is exactly what the audit flagged in v1 (ARCH-7, SOC-2, QUAL-1).
+- **Also:** the drawer is a route (`/menu`), not an always-mounted overlay (ARCH-1, PERF-1). Settings and the library pages are pushed screens, as in v1.

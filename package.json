@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "test": "npm run test:domain && npm run test:ui",
-    "test:domain": "tsx --test \"src/domain/**/*.test.ts\" \"src/ui/tokens/*.test.ts\"",
+    "test:domain": "tsx --test \"src/domain/**/*.test.ts\" \"src/lib/*.test.ts\" \"src/ui/tokens/*.test.ts\"",
     "test:ui": "jest",
     "catalogue:convert": "tsx scripts/convert-old-recipes.mts",
     "catalogue:check-ingredients": "tsx scripts/check-ingredient-coverage.mts",

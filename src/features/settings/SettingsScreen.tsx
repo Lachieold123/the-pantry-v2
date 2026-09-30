@@ -1,4 +1,5 @@
-// Settings: appearance and units change the app immediately (map Phase 1).
+// Settings, opened from the side menu and the avatar: appearance and units
+// change the app immediately. P6 restyles it to v1's grouped white cards.
 // The Sunday reminder only reads as on when the phone will actually deliver it.
 import Constants from 'expo-constants';
 import { useRouter } from 'expo-router';
@@ -6,12 +7,13 @@ import { View } from 'react-native';
 
 import { setSundayReminder } from '@/lib/notifications';
 import { usePreferences, type Appearance } from '@/store/preferences';
+import { PushedHeader } from '@/ui/patterns/PushedHeader';
 import { useToast } from '@/ui/patterns/Toast';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { Divider } from '@/ui/primitives/Divider';
 import { ListRow } from '@/ui/primitives/ListRow';
 import { Segmented } from '@/ui/primitives/Segmented';
-import { Sheet } from '@/ui/primitives/Sheet';
+import { Screen } from '@/ui/primitives/Screen';
 import { Switch } from '@/ui/primitives/Switch';
 import { Text } from '@/ui/primitives/Text';
 import { SPACE } from '@/ui/tokens/type';
@@ -30,23 +32,23 @@ const UNITS = [
 export function SettingsScreen() {
   const router = useRouter();
   const toast = useToast();
-  const {
-    appearance,
-    highContrast,
-    units,
-    sundayReminder,
-    setAppearance,
-    setHighContrast,
-    setUnits,
-    setSundayReminder: saveReminder,
-  } = usePreferences();
+  // One selector per value (audit PERF-1: whole-store reads re-render on every change).
+  const appearance = usePreferences((s) => s.appearance);
+  const highContrast = usePreferences((s) => s.highContrast);
+  const units = usePreferences((s) => s.units);
+  const sundayReminder = usePreferences((s) => s.sundayReminder);
+  const setAppearance = usePreferences((s) => s.setAppearance);
+  const setHighContrast = usePreferences((s) => s.setHighContrast);
+  const setUnits = usePreferences((s) => s.setUnits);
+  const saveReminder = usePreferences((s) => s.setSundayReminder);
   const toggleReminder = async (on: boolean) => {
     const scheduled = await setSundayReminder(on);
     saveReminder(scheduled);
     if (on && !scheduled) toast({ message: 'Notifications are off for The Pantry. Turn them on in your phone’s Settings.' });
   };
   return (
-    <Sheet title="Settings" onClose={() => router.back()}>
+    <Screen surface="bgSoft" testID="settings-screen">
+      <PushedHeader kicker="Settings" title="Preferences" surface="bgSoft" />
       <View style={{ gap: SPACE.sm }}>
         <SectionHeader title="Appearance" />
         <Segmented<Appearance> label="Appearance" options={APPEARANCE} value={appearance} onChange={setAppearance} />
@@ -79,6 +81,6 @@ export function SettingsScreen() {
           <ListRow title="Design gallery" detail="Every component in every state" onPress={() => router.push('/dev/gallery')} />
         ) : null}
       </View>
-    </Sheet>
+    </Screen>
   );
 }

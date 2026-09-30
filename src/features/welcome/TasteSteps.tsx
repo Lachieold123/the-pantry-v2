@@ -2,6 +2,7 @@
 // way keeps whatever was chosen.
 import type { ReactNode } from 'react';
 import { View } from 'react-native';
+import { useShallow } from 'zustand/react/shallow';
 
 import { AVOID_OPTIONS, type AvoidOption, type DietPreference } from '@/domain/recipes/diets';
 import { AVOID_LABELS, CUISINE_LABELS, DIET_PREFERENCE_LABELS } from '@/domain/recipes/labels';
@@ -28,7 +29,9 @@ function Row({ children }: { children: ReactNode }) {
 }
 
 export function EatStep() {
-  const { diet, avoid, setDiet, toggleAvoidOption } = usePreferences();
+  const { diet, avoid, setDiet, toggleAvoidOption } = usePreferences(
+    useShallow(({ diet, avoid, setDiet, toggleAvoidOption }) => ({ diet, avoid, setDiet, toggleAvoidOption })),
+  );
   return (
     <View style={{ gap: SPACE.lg }}>
       <View style={{ gap: SPACE.sm }}>
@@ -53,7 +56,9 @@ export function EatStep() {
 }
 
 export function LikeStep() {
-  const { cuisines, weeknight, toggleCuisine, setWeeknight } = usePreferences();
+  const { cuisines, weeknight, toggleCuisine, setWeeknight } = usePreferences(
+    useShallow(({ cuisines, weeknight, toggleCuisine, setWeeknight }) => ({ cuisines, weeknight, toggleCuisine, setWeeknight })),
+  );
   return (
     <View style={{ gap: SPACE.lg }}>
       <View style={{ gap: SPACE.sm }}>

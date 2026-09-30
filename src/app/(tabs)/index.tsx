@@ -1,3 +1,3 @@
-import { TodayScreen } from '@/features/today/TodayScreen';
+import { FeedScreen } from '@/features/feed/FeedScreen';
 
-export default TodayScreen;
+export default FeedScreen;

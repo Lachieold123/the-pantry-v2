@@ -1,4 +1,4 @@
-// The four Saved segments' contents.
+// The contents of the library pages the drawer opens.
 import { useRouter } from 'expo-router';
 import { useState } from 'react';
 import { View } from 'react-native';
@@ -51,26 +51,30 @@ export function BookmarksList() {
   const router = useRouter();
   const bookmarks = useSaved((s) => s.bookmarks);
   const recipesFor = useRecipesFor();
-  const recent = useSaved((s) => s.recentlyViewed);
   const saved = recipesFor(bookmarks.map((b) => b.recipeId));
-  return (
-    <View style={{ gap: SPACE.lg }}>
-      {saved.length ? (
-        <RecipeRows recipes={saved} />
-      ) : (
-        <EmptyState
-          title="Nothing saved yet"
-          body="Tap Save on any recipe and it waits for you here."
-          action={{ label: 'Browse recipes', onPress: () => router.navigate('/recipes') }}
-        />
-      )}
-      {recent.length ? (
-        <View style={{ gap: SPACE.sm }}>
-          <SectionHeader title="Recently viewed" />
-          <RecipeRows recipes={recipesFor(recent.slice(0, 5))} />
-        </View>
-      ) : null}
-    </View>
+  return saved.length ? (
+    <RecipeRows recipes={saved} />
+  ) : (
+    <EmptyState
+      title="Nothing saved yet"
+      body="Tap Save on any recipe and it waits for you here."
+      action={{ label: 'Browse recipes', onPress: () => router.navigate('/browse') }}
+    />
+  );
+}
+
+export function RecentList() {
+  const router = useRouter();
+  const recent = useSaved((s) => s.recentlyViewed);
+  const recipes = useRecipesFor()(recent);
+  return recipes.length ? (
+    <RecipeRows recipes={recipes} />
+  ) : (
+    <EmptyState
+      title="Nothing viewed yet"
+      body="Recipes you open show up here, so the one you were looking at is easy to find again."
+      action={{ label: 'Browse recipes', onPress: () => router.navigate('/browse') }}
+    />
   );
 }
 
@@ -95,7 +99,7 @@ export function CollectionsList() {
               <ListRow
                 title={c.name}
                 detail={c.recipeIds.length === 1 ? '1 recipe' : `${c.recipeIds.length} recipes`}
-                onPress={() => router.push({ pathname: '/saved/collection/[id]', params: { id: c.id } })}
+                onPress={() => router.push({ pathname: '/collections/[id]', params: { id: c.id } })}
               />
               <Divider />
             </View>
@@ -132,7 +136,7 @@ export function CookedList() {
       <EmptyState
         title="Nothing cooked yet"
         body="Tap Done when you finish a recipe in Cook Mode, and it goes here."
-        action={{ label: 'Browse recipes', onPress: () => router.navigate('/recipes') }}
+        action={{ label: 'Browse recipes', onPress: () => router.navigate('/browse') }}
       />
     );
   }

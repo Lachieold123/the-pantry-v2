@@ -2,6 +2,7 @@
 // with a theme switch at the top so both themes can be reviewed in one place.
 import { useRouter } from 'expo-router';
 import { View } from 'react-native';
+import { useShallow } from 'zustand/react/shallow';
 
 import { usePreferences, type Appearance } from '@/store/preferences';
 import { EmptyState } from '@/ui/patterns/EmptyState';
@@ -27,7 +28,14 @@ const THEMES = [
 export function GalleryScreen() {
   const router = useRouter();
   const toast = useToast();
-  const { appearance, highContrast, setAppearance, setHighContrast } = usePreferences();
+  const { appearance, highContrast, setAppearance, setHighContrast } = usePreferences(
+    useShallow(({ appearance, highContrast, setAppearance, setHighContrast }) => ({
+      appearance,
+      highContrast,
+      setAppearance,
+      setHighContrast,
+    })),
+  );
   return (
     <Screen>
       <TitleBlock
@@ -76,7 +84,7 @@ export function GalleryScreen() {
         <EmptyState
           title="Nothing planned for tonight"
           body="Plan a few dinners and tonight's shows up here."
-          action={{ label: 'Browse recipes', onPress: () => router.navigate('/recipes') }}
+          action={{ label: 'Browse recipes', onPress: () => router.navigate('/browse') }}
         />
         <ErrorState
           body="The recipe link couldn't be read. Check you're online, then try again."

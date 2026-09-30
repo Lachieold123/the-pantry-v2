@@ -91,3 +91,8 @@ export function pruneOldEntries(entries: readonly PlanEntry[], today: ISODate): 
 export function isPast(day: ISODate, today: ISODate): boolean {
   return day < today;
 }
+
+/** Meals still ahead, today included: the number on the Plan tab and in the drawer. */
+export function upcomingCount(entries: readonly PlanEntry[], today: ISODate): number {
+  return entries.filter((e) => e.day >= today).length;
+}

@@ -1,4 +1,5 @@
-// The cupboard: what you have, and what that lets you make tonight.
+// The Cupboard tab: what you have, and what that lets you make tonight.
+// P5 rebuilds it to v1's categories and quick adds; P2 gives it its home.
 import { useRouter } from 'expo-router';
 import { useMemo, useState } from 'react';
 import { View } from 'react-native';
@@ -13,10 +14,12 @@ import { useSaved } from '@/store/saved';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { RecipeCard } from '@/ui/patterns/RecipeCard';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
+import { TitleBlock } from '@/ui/patterns/TitleBlock';
 import { useToast } from '@/ui/patterns/Toast';
 import { Chip } from '@/ui/primitives/Chip';
 import { Divider } from '@/ui/primitives/Divider';
 import { IconButton } from '@/ui/primitives/IconButton';
+import { Screen } from '@/ui/primitives/Screen';
 import { SearchField } from '@/ui/primitives/SearchField';
 import { Switch } from '@/ui/primitives/Switch';
 import { Text } from '@/ui/primitives/Text';
@@ -25,10 +28,15 @@ import { SPACE } from '@/ui/tokens/type';
 const ALL = [...INGREDIENTS.byId.values()].filter((d) => !d.staple).sort((a, b) => a.name.localeCompare(b.name));
 const SUGGESTIONS = 8;
 
-export function CupboardView() {
+export function CupboardScreen() {
   const router = useRouter();
   const toast = useToast();
-  const { items, add, remove, moveTickedToCupboard, setMoveTicked } = useCupboard();
+  // One selector per value, so the screen only re-renders for what it shows (audit PERF-1).
+  const items = useCupboard((s) => s.items);
+  const add = useCupboard((s) => s.add);
+  const remove = useCupboard((s) => s.remove);
+  const moveTickedToCupboard = useCupboard((s) => s.moveTickedToCupboard);
+  const setMoveTicked = useCupboard((s) => s.setMoveTicked);
   const hidden = useSaved((s) => s.hidden);
   const all = useAllRecipes();
   const [query, setQuery] = useState('');
@@ -61,7 +69,12 @@ export function CupboardView() {
   );
 
   return (
-    <View style={{ gap: SPACE.lg }}>
+    <Screen tab testID="cupboard-screen">
+      <TitleBlock
+        kicker="Cupboard"
+        title="What do you have?"
+        subtitle="Tell us what you have. We'll surface recipes that use the most of it."
+      />
       <View style={{ gap: SPACE.sm }}>
         <SearchField value={query} onChange={setQuery} placeholder="Add an ingredient" label="Add an ingredient to the cupboard" />
         {query.trim() && suggestions.length === 0 ? (
@@ -131,6 +144,6 @@ export function CupboardView() {
           ))}
         </View>
       ) : null}
-    </View>
+    </Screen>
   );
 }

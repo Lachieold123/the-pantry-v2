@@ -99,7 +99,7 @@ export function CollectionScreen({ id }: { id: string }) {
         <EmptyState
           title="Nothing in here yet"
           body="Open any recipe and tap Add to collection."
-          action={{ label: 'Browse recipes', onPress: () => router.navigate('/recipes') }}
+          action={{ label: 'Browse recipes', onPress: () => router.navigate('/browse') }}
         />
       )}
     </Screen>

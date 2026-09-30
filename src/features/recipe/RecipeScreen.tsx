@@ -52,7 +52,7 @@ export function RecipeScreen({ id }: { id: string }) {
         <EmptyState
           title="We couldn't find that recipe"
           body="It may have been removed or renamed."
-          action={{ label: 'Browse recipes', onPress: () => router.navigate('/recipes') }}
+          action={{ label: 'Browse recipes', onPress: () => router.navigate('/browse') }}
         />
       </Screen>
     );

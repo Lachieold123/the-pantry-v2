@@ -6,6 +6,8 @@
 export type ColourTokens = {
   /** Page background; also the text colour on ink-filled buttons and cards. */
   bg: string;
+  /** The page colour at zero opacity: where a fade into the page starts (behind the tab bar). */
+  bgFade: string;
   /** Inputs, chips, tiles, sunken cards, pressed rows. */
   bgSoft: string;
   /** Raised cards, the drawer panel, round buttons over photos. */
@@ -43,6 +45,7 @@ export type ColourTokens = {
 
 export const light: ColourTokens = {
   bg: '#FFFFFF',
+  bgFade: 'rgba(255,255,255,0)',
   bgSoft: '#F7F7F7',
   card: '#FFFFFF',
   border: 'rgba(0,0,0,0.06)',
@@ -70,6 +73,7 @@ export const light: ColourTokens = {
 
 export const dark: ColourTokens = {
   bg: '#0A0A0A',
+  bgFade: 'rgba(10,10,10,0)',
   bgSoft: '#141414',
   card: '#141414',
   border: 'rgba(255,255,255,0.10)',
@@ -111,6 +115,7 @@ export const lightHighContrast: ColourTokens = {
 export const darkHighContrast: ColourTokens = {
   ...dark,
   bg: '#000000',
+  bgFade: 'rgba(0,0,0,0)',
   bgSoft: '#101010',
   card: '#000000',
   border: 'rgba(255,255,255,0.6)',

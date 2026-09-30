@@ -2,6 +2,7 @@
 // footer says exactly how many recipes you'll see.
 import { useRouter } from 'expo-router';
 import { View } from 'react-native';
+import { useShallow } from 'zustand/react/shallow';
 
 import type { DietPreference } from '@/domain/recipes/diets';
 import { CUISINE_LABELS, MEAL_TYPE_LABELS } from '@/domain/recipes/labels';
@@ -37,7 +38,7 @@ function ChipRow({ children }: { children: React.ReactNode }) {
 
 export function FiltersScreen() {
   const router = useRouter();
-  const { filters, update, clear } = useRecipeFilters();
+  const { filters, update, clear } = useRecipeFilters(useShallow(({ filters, update, clear }) => ({ filters, update, clear })));
   const { results, activeFilters, browsing } = useRecipeResults();
   const season = seasonOn(new Date());
   const count = browsing ? 'all recipes' : results.length === 1 ? '1 recipe' : `${results.length} recipes`;

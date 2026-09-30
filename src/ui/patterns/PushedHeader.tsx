@@ -9,9 +9,18 @@ import { IconButton } from '@/ui/primitives/IconButton';
 import { Text } from '@/ui/primitives/Text';
 import { SPACE } from '@/ui/tokens/type';
 
-type Props = { kicker?: string | undefined; title: string; action?: ReactNode; onBack?: (() => void) | undefined };
+type Props = {
+  kicker?: string | undefined;
+  title: string;
+  action?: ReactNode;
+  onBack?: (() => void) | undefined;
+  /** Pad the sides itself, when the page around it doesn't. */
+  inset?: boolean;
+  /** The page colour behind it, so the back button stays visible on grey pages. */
+  surface?: 'bg' | 'bgSoft';
+};
 
-export function PushedHeader({ kicker, title, action, onBack }: Props) {
+export function PushedHeader({ kicker, title, action, onBack, inset = false, surface = 'bg' }: Props) {
   const router = useRouter();
   return (
     <View
@@ -19,13 +28,18 @@ export function PushedHeader({ kicker, title, action, onBack }: Props) {
         flexDirection: 'row',
         alignItems: 'flex-start',
         gap: SPACE.sm,
-        paddingHorizontal: SPACE.gutter,
-        paddingTop: SPACE.sm,
-        paddingBottom: 14,
+        paddingHorizontal: inset ? SPACE.gutter : 0,
       }}
     >
       <View style={{ marginTop: SPACE.xxs }}>
-        <IconButton icon="back" label="Back" shape="square" size={24} onPress={onBack ?? (() => router.back())} testID="back" />
+        <IconButton
+          icon="back"
+          label="Back"
+          shape={surface === 'bgSoft' ? 'squareOnSoft' : 'square'}
+          size={24}
+          onPress={onBack ?? (() => router.back())}
+          testID="back"
+        />
       </View>
       <View style={{ flex: 1, gap: 2 }}>
         {kicker ? (

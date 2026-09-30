@@ -13,12 +13,18 @@ type Props<T extends string> = {
   onChange: (value: T) => void;
   label: string;
   fill?: boolean;
+  /** Pad the sides itself, for full-bleed screens. */
+  inset?: boolean;
 };
 
-export function UnderlineTabs<T extends string>({ options, value, onChange, label, fill = false }: Props<T>) {
+export function UnderlineTabs<T extends string>({ options, value, onChange, label, fill = false, inset = false }: Props<T>) {
   const styles = useStyles();
   return (
-    <View style={[styles.strip, fill && styles.stripFill]} accessibilityRole="tablist" accessibilityLabel={label}>
+    <View
+      style={[styles.strip, inset && styles.stripInset, fill && styles.stripFill]}
+      accessibilityRole="tablist"
+      accessibilityLabel={label}
+    >
       {options.map((o) => {
         const selected = o.value === value;
         return (
@@ -43,7 +49,8 @@ export function UnderlineTabs<T extends string>({ options, value, onChange, labe
 }
 
 const useStyles = makeStyles(({ colours }) => ({
-  strip: { flexDirection: 'row', gap: 22, paddingHorizontal: SPACE.gutter, borderBottomWidth: 1, borderBottomColor: colours.border },
+  strip: { flexDirection: 'row', gap: 22, borderBottomWidth: 1, borderBottomColor: colours.border },
+  stripInset: { paddingHorizontal: SPACE.gutter },
   stripFill: { gap: 0 },
   tab: { minHeight: TAP_TARGET, justifyContent: 'flex-end' },
   tabFill: { flex: 1, alignItems: 'center' },
