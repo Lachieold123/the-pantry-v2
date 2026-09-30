@@ -19,10 +19,15 @@ export function usePlanBadge(): number {
 }
 
 export function useDrawerCounts() {
+  // Counted from the recipes the lists can actually show: an old bookmark for a
+  // recipe that isn't in this version (or an unfinished one of yours) isn't listed, so it isn't counted.
+  const getRecipe = useRecipeLookup();
+  const bookmarks = useSaved((s) => s.bookmarks);
+  const recent = useSaved((s) => s.recentlyViewed);
   return {
-    saved: useSaved((s) => s.bookmarks.length),
+    saved: bookmarks.filter((b) => getRecipe(b.recipeId) !== undefined).length,
     collections: useSaved((s) => s.collections.length),
-    recent: useSaved((s) => s.recentlyViewed.length),
+    recent: recent.filter((id) => getRecipe(id) !== undefined).length,
     mine: useMyRecipes((s) => Object.keys(s.recipes).length),
     planned: usePlanBadge(),
   };

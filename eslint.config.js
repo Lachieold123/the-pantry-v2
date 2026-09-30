@@ -56,7 +56,7 @@ const otherFeaturePatterns = (feature) => [
 module.exports = defineConfig([
   expoConfig,
   {
-    ignores: ['dist/*', '.expo/*', 'node_modules/*', 'ios/*', 'android/*', 'coverage/*', 'src/data/catalogue/images.ts'],
+    ignores: ['dist/*', '.expo/*', '.claude/*', 'node_modules/*', 'ios/*', 'android/*', 'coverage/*', 'src/data/catalogue/images.ts'],
   },
   {
     // Resolve the @/ alias, so import/no-restricted-paths sees where an import really goes.

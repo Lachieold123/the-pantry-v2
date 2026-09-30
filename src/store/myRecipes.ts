@@ -19,23 +19,32 @@ export type MyRecipe = {
 
 type MyRecipesState = {
   recipes: Record<string, MyRecipe>;
-  save: (recipe: Omit<MyRecipe, 'createdAt' | 'updatedAt'>) => void;
+  /** Saves, or with `isNew` refuses (false) when that id is already taken, so a new recipe never overwrites another. */
+  save: (recipe: Omit<MyRecipe, 'createdAt' | 'updatedAt'>, options?: { isNew?: boolean }) => boolean;
   remove: (id: string) => MyRecipe | undefined;
   restore: (recipe: MyRecipe) => void;
 };
+
+/** The recipe with this id, never something inherited from Object.prototype. */
+export function ownRecipe(recipes: Record<string, MyRecipe>, id: string): MyRecipe | undefined {
+  return Object.hasOwn(recipes, id) ? recipes[id] : undefined;
+}
 
 export const useMyRecipes = create<MyRecipesState>()(
   persist(
     (set, get) => ({
       recipes: {},
-      save: (recipe) =>
-        set((s) => {
-          const now = Date.now();
-          const existing = s.recipes[recipe.id];
-          return { recipes: { ...s.recipes, [recipe.id]: { ...recipe, createdAt: existing?.createdAt ?? now, updatedAt: now } } };
-        }),
+      save: (recipe, options) => {
+        // hasOwn throughout: ids come from links, and "constructor" must not count as a recipe.
+        const existing = ownRecipe(get().recipes, recipe.id);
+        if (options?.isNew && existing) return false;
+        const now = Date.now();
+        set((s) => ({ recipes: { ...s.recipes, [recipe.id]: { ...recipe, createdAt: existing?.createdAt ?? now, updatedAt: now } } }));
+        return true;
+      },
       remove: (id) => {
-        const removed = get().recipes[id];
+        const removed = ownRecipe(get().recipes, id);
+        if (!removed) return undefined;
         set((s) => {
           const { [id]: _gone, ...rest } = s.recipes;
           return { recipes: rest };

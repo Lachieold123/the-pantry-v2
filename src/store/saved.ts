@@ -1,5 +1,4 @@
 // Saved recipes: bookmarks, named collections, hidden dishes and recently viewed.
-import { useCallback, useMemo } from 'react';
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
@@ -18,12 +17,17 @@ type SavedState = {
   hidden: string[];
   recentlyViewed: string[];
   toggleBookmark: (recipeId: string) => boolean;
+  /** Saved or not, whatever it was: Undo sets the old value rather than toggling, so it can't redo by mistake. */
+  setBookmark: (recipeId: string, saved: boolean) => void;
+  /** Puts a removed bookmark back where its date says, not at the top with a new date. */
+  restoreBookmark: (bookmark: Bookmark) => void;
   createCollection: (name: string) => string;
   renameCollection: (id: string, name: string) => void;
   deleteCollection: (id: string) => Collection | undefined;
   restoreCollection: (collection: Collection) => void;
   toggleInCollection: (collectionId: string, recipeId: string) => boolean;
   toggleHidden: (recipeId: string) => boolean;
+  setHidden: (recipeId: string, hidden: boolean) => void;
   recordView: (recipeId: string) => void;
 };
 
@@ -41,6 +45,16 @@ export const useSaved = create<SavedState>()(
         }));
         return !saved;
       },
+      setBookmark: (recipeId, saved) => {
+        if (get().bookmarks.some((b) => b.recipeId === recipeId) !== saved) get().toggleBookmark(recipeId);
+      },
+      restoreBookmark: (bookmark) =>
+        set((s) => {
+          const rest = s.bookmarks.filter((b) => b.recipeId !== bookmark.recipeId);
+          // Newest first, so it goes in before the first one saved earlier than it.
+          const at = rest.findIndex((b) => b.savedAt < bookmark.savedAt);
+          return { bookmarks: at < 0 ? [...rest, bookmark] : [...rest.slice(0, at), bookmark, ...rest.slice(at)] };
+        }),
       // Names stay unique (domain/saved/collections): asking for a name that's taken gives back that collection.
       createCollection: (name) => {
         const existing = collectionNamed(get().collections, name);
@@ -74,6 +88,9 @@ export const useSaved = create<SavedState>()(
         set((s) => ({ hidden: had ? s.hidden.filter((r) => r !== recipeId) : [...s.hidden, recipeId] }));
         return !had;
       },
+      setHidden: (recipeId, hidden) => {
+        if (get().hidden.includes(recipeId) !== hidden) get().toggleHidden(recipeId);
+      },
       recordView: (recipeId) =>
         set((s) => ({ recentlyViewed: [recipeId, ...s.recentlyViewed.filter((r) => r !== recipeId)].slice(0, RECENT_MAX) })),
     }),
@@ -84,17 +101,3 @@ export const useSaved = create<SavedState>()(
     },
   ),
 );
-
-/** For card grids: whether a recipe is saved, and a toggle. Re-renders only when bookmarks change. */
-export function useBookmarks(): { isSaved: (id: string) => boolean; toggle: (id: string) => void } {
-  const bookmarks = useSaved((s) => s.bookmarks);
-  const toggle = useSaved((s) => s.toggleBookmark);
-  // Memoised so the functions keep their identity between renders: memoised
-  // cards then redraw only when bookmarks actually change.
-  const isSaved = useMemo(() => {
-    const ids = new Set(bookmarks.map((b) => b.recipeId));
-    return (id: string) => ids.has(id);
-  }, [bookmarks]);
-  const toggleSaved = useCallback((id: string) => void toggle(id), [toggle]);
-  return useMemo(() => ({ isSaved, toggle: toggleSaved }), [isSaved, toggleSaved]);
-}

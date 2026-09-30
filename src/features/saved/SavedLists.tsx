@@ -27,6 +27,9 @@ function useRecipesFor() {
   return (ids: readonly string[]) => ids.map(getRecipe).filter((r): r is Recipe => r !== undefined);
 }
 
+// Counts only what the collection page will list (see useDrawerCounts).
+const countLabel = (n: number) => (n === 1 ? '1 recipe' : `${n} recipes`);
+
 function useOpen() {
   const router = useRouter();
   return (id: string) => router.push({ pathname: '/recipe/[id]', params: { id } });
@@ -85,6 +88,7 @@ export function RecentList() {
 
 export function CollectionsList() {
   const router = useRouter();
+  const getRecipe = useRecipeLookup();
   const collections = useSaved((s) => s.collections);
   const createCollection = useSaved((s) => s.createCollection);
   const [name, setName] = useState('');
@@ -103,7 +107,7 @@ export function CollectionsList() {
             <View key={c.id}>
               <ListRow
                 title={c.name}
-                detail={c.recipeIds.length === 1 ? '1 recipe' : `${c.recipeIds.length} recipes`}
+                detail={countLabel(c.recipeIds.filter((r) => getRecipe(r) !== undefined).length)}
                 onPress={() => router.push({ pathname: '/collections/[id]', params: { id: c.id } })}
                 testID={`collection-row-${c.id}`}
               />

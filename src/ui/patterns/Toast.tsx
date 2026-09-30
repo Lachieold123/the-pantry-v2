@@ -1,6 +1,6 @@
 // Short confirmations ("Added to Tuesday dinner"), with an optional Undo.
 // One at a time; each replaces the last. Announced to VoiceOver.
-import { createContext, useCallback, useContext, useEffect, useRef, useState, type ReactNode } from 'react';
+import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
 import { AccessibilityInfo, Pressable, View } from 'react-native';
 import Animated, { FadeInDown, FadeOutDown } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -10,12 +10,10 @@ import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { FIXED } from '@/ui/tokens/colour';
 import { MOTION, RADIUS, SHADOW, SPACE, TAP_TARGET } from '@/ui/tokens/type';
+import { ToastContext, type ToastInput } from './toastContext';
 
-// `actionLabel` renames the one action when it isn't an undo ("Open Settings").
-type ToastInput = { message: string; undo?: () => void; actionLabel?: string };
 type ToastState = ToastInput & { id: number };
 
-const ToastContext = createContext<(t: ToastInput) => void>(() => {});
 // The original shows a toast for 2.5 s; one with Undo stays longer so there's time to reach it.
 const VISIBLE_MS = MOTION.toast;
 const VISIBLE_WITH_UNDO_MS = 4500;
@@ -41,9 +39,8 @@ export function ToastProvider({ children }: { children: ReactNode }) {
   );
 }
 
-export function useToast() {
-  return useContext(ToastContext);
-}
+// Screens import useToast from here, next to the provider.
+export { useToast } from './toastContext';
 
 function ToastView({ toast, onDone }: { toast: ToastState; onDone: () => void }) {
   const styles = useStyles();

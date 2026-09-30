@@ -13,7 +13,7 @@ import type { Recipe } from '@/domain/recipes/types';
 import { useToday } from '@/lib/useToday';
 import { useAllRecipes } from '@/store/recipeBook';
 import { useRecipeFilters } from '@/store/recipeFilters';
-import { useBookmarks } from '@/store/saved';
+import { useBookmarks } from '@/ui/patterns/useBookmarks';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { RecipeRow } from '@/ui/patterns/RecipeGrid';
 import { TitleBlock } from '@/ui/patterns/TitleBlock';

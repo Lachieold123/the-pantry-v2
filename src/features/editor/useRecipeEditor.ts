@@ -2,12 +2,13 @@
 // what it would build into right now. Saving keeps unfinished recipes too,
 // so nobody loses Nan's recipe because the method isn't typed in yet.
 import { useRouter } from 'expo-router';
-import { useMemo, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 
 import { INGREDIENTS } from '@/data/catalogue/catalogue';
 import { buildRecipe, EMPTY_DRAFT, myRecipeId, type RecipeDraft } from '@/domain/recipes/draft';
+import { newId } from '@/lib/ids';
 import { goBackOr } from '@/lib/navigation';
-import { useMyRecipes } from '@/store/myRecipes';
+import { ownRecipe, useMyRecipes } from '@/store/myRecipes';
 import { useToast } from '@/ui/patterns/Toast';
 import { usePendingImport } from '@/store/pendingImport';
 import { useLeaveGuard } from './useLeaveGuard';
@@ -15,7 +16,7 @@ import { useLeaveGuard } from './useLeaveGuard';
 export function useRecipeEditor(id: string | undefined, fromImport: boolean) {
   const router = useRouter();
   const toast = useToast();
-  const existing = useMyRecipes((s) => (id ? s.recipes[id] : undefined));
+  const existing = useMyRecipes((s) => (id ? ownRecipe(s.recipes, id) : undefined));
   const saveRecipe = useMyRecipes((s) => s.save);
   const removeRecipe = useMyRecipes((s) => s.remove);
   const restoreRecipe = useMyRecipes((s) => s.restore);
@@ -32,6 +33,13 @@ export function useRecipeEditor(id: string | undefined, fromImport: boolean) {
   const guard = useLeaveGuard(dirty);
 
   const built = useMemo(() => buildRecipe(id ?? 'my-new', draft, source, INGREDIENTS), [draft, id, source]);
+  // A recipe that was finished when the editor opened. Saving it half-done would
+  // drop it out of the plan, Cookmarks and collections, so it can't be parked as a draft.
+  const [wasFinished] = useState(
+    () => existing !== undefined && buildRecipe(existing.id, existing.draft, existing.source, INGREDIENTS).recipe !== undefined,
+  );
+  // Set on the first save so a double tap can't store the recipe twice; the screen is leaving anyway.
+  const saving = useRef(false);
 
   const update = <K extends keyof RecipeDraft>(key: K, value: RecipeDraft[K]) => {
     setDraft((d) => ({ ...d, [key]: value }));
@@ -46,9 +54,12 @@ export function useRecipeEditor(id: string | undefined, fromImport: boolean) {
     router.dismissTo('/my-recipes');
   };
 
-  const store = () => {
-    const recipeId = id ?? myRecipeId(draft.title, Math.random().toString(36).slice(2, 6));
-    saveRecipe({ id: recipeId, draft: { ...draft, title: draft.title.trim() }, source, sourceUrl });
+  /** Stores the draft once, returning its id, or undefined if it was already saved or the new id is taken. */
+  const store = (): string | undefined => {
+    if (saving.current) return undefined;
+    const recipeId = id ?? myRecipeId(draft.title, newId());
+    if (!saveRecipe({ id: recipeId, draft: { ...draft, title: draft.title.trim() }, source, sourceUrl }, { isNew: !id })) return undefined;
+    saving.current = true;
     usePendingImport.getState().set(undefined);
     setDirty(false);
     return recipeId;
@@ -59,6 +70,7 @@ export function useRecipeEditor(id: string | undefined, fromImport: boolean) {
     setShowProblems(true);
     if (!draft.title.trim() || !built.recipe) return;
     const recipeId = store();
+    if (!recipeId) return;
     toast({ message: id ? 'Changes saved' : 'Recipe saved' });
     guard.leave(() => (id ? goBackOr(router) : router.replace({ pathname: '/recipe/[id]', params: { id: recipeId } })));
   };
@@ -66,8 +78,7 @@ export function useRecipeEditor(id: string | undefined, fromImport: boolean) {
   /** Keeps an unfinished recipe to come back to. Only needs a name. */
   const saveDraft = () => {
     setShowProblems(true);
-    if (!draft.title.trim()) return;
-    store();
+    if (!draft.title.trim() || wasFinished || !store()) return;
     toast({ message: 'Saved to finish later' });
     guard.leave(toMyRecipes);
   };
@@ -92,6 +103,8 @@ export function useRecipeEditor(id: string | undefined, fromImport: boolean) {
     saveDraft,
     showProblems,
     remove,
+    /** Offer "Discard changes" rather than "Save to finish later" (see wasFinished). */
+    canSaveDraft: !wasFinished,
     problem,
     titleProblem,
     sourceUrl,

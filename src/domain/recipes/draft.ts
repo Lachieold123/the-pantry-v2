@@ -125,6 +125,13 @@ function problemLine(p: RecipeProblem, recipe: Recipe): string | undefined {
   return m ? recipe.ingredientGroups[Number(m[1])]?.items[Number(m[2])]?.raw : undefined;
 }
 
+/** Fields the editor has no own slot for, in the editor's words rather than the validator's (which names the field in code). */
+const OTHER_MESSAGES: Record<string, string> = {
+  prepMinutes: 'Prep time needs to be whole minutes, up to 3 days.',
+  cookMinutes: 'Cook time needs to be whole minutes, up to 3 days.',
+  servings: 'Servings need to be from 1 to 50.',
+};
+
 const LINE_REASONS: Record<string, string> = {
   'must be greater than zero': 'the amount needs to be more than zero',
   'range must go from low to high': 'the amount needs to go from low to high',
@@ -147,7 +154,9 @@ function toDraftProblem(p: RecipeProblem, recipe: Recipe): DraftProblem {
             ? 'Add at least one step.'
             : field === 'mealTypes'
               ? 'Pick at least one meal.'
-              : `${root} ${p.message}.`;
+              : Object.hasOwn(OTHER_MESSAGES, root)
+                ? (OTHER_MESSAGES[root] ?? p.message)
+                : `${root} ${p.message}.`;
   return { field, message };
 }
 

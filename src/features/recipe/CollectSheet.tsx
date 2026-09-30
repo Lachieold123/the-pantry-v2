@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { View } from 'react-native';
 
 import { goBackOr } from '@/lib/navigation';
-import { useRecipe } from '@/store/recipeBook';
+import { useRecipe, useRecipeLookup } from '@/store/recipeBook';
 import { useSaved } from '@/store/saved';
 import { Button } from '@/ui/primitives/Button';
 import { Checkbox } from '@/ui/primitives/Checkbox';
@@ -17,6 +17,7 @@ import { SPACE } from '@/ui/tokens/type';
 export function CollectSheet({ id }: { id: string }) {
   const router = useRouter();
   const recipe = useRecipe(id);
+  const getRecipe = useRecipeLookup();
   const collections = useSaved((s) => s.collections);
   const toggleInCollection = useSaved((s) => s.toggleInCollection);
   const createCollection = useSaved((s) => s.createCollection);
@@ -53,7 +54,8 @@ export function CollectSheet({ id }: { id: string }) {
             <View key={c.id}>
               <Checkbox
                 label={c.name}
-                detail={`${c.recipeIds.length}`}
+                // Only recipes the collection page can show, so the numbers agree.
+                detail={`${c.recipeIds.filter((r) => getRecipe(r) !== undefined).length}`}
                 checked={c.recipeIds.includes(id)}
                 onToggle={() => toggleInCollection(c.id, id)}
                 testID={`collect-row-${c.id}`}

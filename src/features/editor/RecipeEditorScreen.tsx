@@ -26,6 +26,11 @@ function hostOf(url: string): string {
   }
 }
 
+/** Only the first letter: the rest quotes the cook's own words ("Check “Nan’s Gravy”"), which keep their capitals. */
+function lowerFirst(text: string): string {
+  return text.charAt(0).toLowerCase() + text.slice(1);
+}
+
 function UnsureNote({ lines }: { lines: UnsureLine[] }) {
   const unknown = lines.filter((l) => l.reason === 'not-recognised');
   const options = lines.filter((l) => l.reason === 'two-options');
@@ -76,8 +81,12 @@ export function RecipeEditorScreen({ id, fromImport }: { id: string | undefined;
       </View>
       {editor.showProblems && !editor.built.recipe ? (
         <View style={{ gap: SPACE.sm }} accessibilityLiveRegion="polite">
-          <Text variant="body">{`Almost there: ${editor.built.problems.map((p) => p.message.replace(/\.$/, '').toLowerCase()).join(', ')}.`}</Text>
-          <Button label="Save to finish later" onPress={editor.saveDraft} testID="editor-save-draft" />
+          <Text variant="body">{`Almost there: ${editor.built.problems.map((p) => lowerFirst(p.message.replace(/\.$/, ''))).join(', ')}.`}</Text>
+          {editor.canSaveDraft ? (
+            <Button label="Save to finish later" onPress={editor.saveDraft} testID="editor-save-draft" />
+          ) : (
+            <Button label="Discard changes" kind="destructive" onPress={() => router.back()} testID="editor-discard-changes" />
+          )}
         </View>
       ) : null}
       {guard.asking ? (
