@@ -1,12 +1,26 @@
-// Cook Mode helpers: finding timers in step text, and the cooked log.
+// Cook Mode helpers: finding timers in step text, oven temperatures in the
+// cook's units, and the cooked log.
+
+import type { UnitSystem } from '../ingredients/format';
+import { NUMBER_PATTERN, parseNumber } from '../ingredients/quantity';
 
 export type StepSegment = { type: 'text'; text: string } | { type: 'timer'; label: string; seconds: number };
 
-const DURATION = /(\d+(?:\.\d+)?)(?:\s*(?:-|–|to)\s*(\d+(?:\.\d+)?))?\s*(hours?|hrs?|minutes?|mins?|seconds?|secs?)\b/gi;
+const N = NUMBER_PATTERN;
+const TIME_UNIT = String.raw`(hours?|hrs?|minutes?|mins?|seconds?|secs?)\b`;
+/**
+ * "10 minutes", "8–10 mins", "1 1/2 hours", "1½ hours", and a compound
+ * "1 hour 15 minutes" or "1 hour and 15 minutes", which is one timer, not two.
+ */
+const DURATION = new RegExp(
+  String.raw`(${N})(?:\s*(?:-|–|to)\s*(${N}))?\s*${TIME_UNIT}(?:,?\s+(?:and\s+)?(${N})\s*(minutes?|mins?|seconds?|secs?)\b)?`,
+  'gi',
+);
 
 /** Phrases where a duration is advice, not something to time: "keeps for 3 days", "up to 2 hours ahead". */
 const NOT_A_TIMER_BEFORE = /\b(keeps?|lasts?|store[sd]?|up to|ahead|in advance|within|every|marinate[sd]? (?:for )?(?:at least )?)\s*$/i;
-const NOT_A_TIMER_AFTER = /^\s*(ahead|in advance|before serving|or overnight)/i;
+// "Rest 10 minutes before serving" is a real wait at the stove, so it keeps its timer.
+const NOT_A_TIMER_AFTER = /^\s*(ahead|in advance|or overnight)/i;
 
 function toSeconds(n: number, unit: string): number {
   const u = unit.toLowerCase();
@@ -28,8 +42,10 @@ export function splitStepTimers(text: string): StepSegment[] {
     const end = start + m[0].length;
     const before = text.slice(Math.max(0, start - 30), start);
     const after = text.slice(end, end + 25);
-    const upperBound = Number(m[2] ?? m[1]);
-    const seconds = toSeconds(upperBound, m[3] ?? 'min');
+    const a = parseNumber(m[1] ?? '') ?? 0;
+    const upperBound = Math.max(a, parseNumber(m[2] ?? '') ?? a);
+    const extra = m[4] ? toSeconds(parseNumber(m[4]) ?? 0, m[5] ?? 'min') : 0;
+    const seconds = toSeconds(upperBound, m[3] ?? 'min') + extra;
     if (NOT_A_TIMER_BEFORE.test(before) || NOT_A_TIMER_AFTER.test(after) || seconds <= 0 || seconds > 4 * 3600) continue;
     if (start > last) out.push({ type: 'text', text: text.slice(last, start) });
     out.push({ type: 'timer', label: m[0], seconds });
@@ -37,6 +53,30 @@ export function splitStepTimers(text: string): StepSegment[] {
   }
   if (last < text.length) out.push({ type: 'text', text: text.slice(last) });
   return out.length ? out : [{ type: 'text', text }];
+}
+
+/** "200°C", "180–200 °C", "200 degrees C", "200 degrees Celsius", with any "(fan)" and any Fahrenheit already given. */
+const CELSIUS =
+  /(\d{2,3})(?:\s*(?:-|–|to)\s*(\d{2,3}))?\s*(?:°\s*C|degrees?\s*(?:C\b|Celsius))(?:\s*\(fan(?:-forced)?\))?(?:\s*\/\s*(\d{2,3}\s*°\s*F)|\s*\(\s*(\d{2,3}\s*°\s*F)\s*\))?/gi;
+
+/** Oven dials go in fives: 200°C is 390°F on the page, not 392°F. */
+const toFahrenheit = (c: number) => Math.round((c * 9) / 5 / 5 + 32 / 5) * 5;
+
+/**
+ * A step's text in the cook's units. Imperial cooks get oven temperatures in
+ * °F, so "Heat the oven to 200°C" doesn't get set to 200 on a Fahrenheit dial.
+ * Ingredient amounts inside steps are left as written: they read as the
+ * recipe's own words, and the ingredient list above carries the converted ones.
+ */
+export function localiseStepText(text: string, system: UnitSystem): string {
+  if (system === 'metric') return text;
+  return text.replace(CELSIUS, (whole: string, lo: string, hi: string | undefined, slashF?: string, bracketF?: string) => {
+    // "250°C / 480°F" already gives both: keep the writer's Fahrenheit rather than print it twice.
+    const given = slashF ?? bracketF;
+    if (given) return given.replace(/\s+/g, '');
+    const fan = /\(fan/i.test(whole) ? ' (fan)' : '';
+    return hi ? `${toFahrenheit(Number(lo))}–${toFahrenheit(Number(hi))}°F${fan}` : `${toFahrenheit(Number(lo))}°F${fan}`;
+  });
 }
 
 export type CookEvent = {

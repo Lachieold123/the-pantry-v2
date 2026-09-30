@@ -3,7 +3,7 @@
 import { fireEvent, render, screen } from '@testing-library/react-native';
 
 import type { Recipe } from '@/domain/recipes/types';
-import { Ingredients } from './RecipeBody';
+import { Ingredients, Method } from './RecipeBody';
 
 const line = (item: string) => ({ item, raw: item });
 const base: Recipe = {
@@ -49,4 +49,23 @@ test('an edited recipe (new lines) starts unticked', async () => {
   const edited = { ...base, ingredientGroups: base.ingredientGroups.map((g) => ({ ...g, items: g.items.map((l) => ({ ...l })) })) };
   await rerender(<Ingredients recipe={edited} servings={2} units="metric" have={none} />);
   expect(checked('ingredient-0-0')).toBe(false);
+});
+
+const roast = {
+  id: 'roast',
+  title: 'Roast',
+  steps: [{ text: 'Heat the oven to 200°C.' }, { text: 'Roast for 1 hour 15 minutes.' }],
+} as unknown as Recipe;
+
+describe('Method', () => {
+  it('shows oven temperatures in °F for imperial cooks (F49)', async () => {
+    await render(<Method recipe={roast} units="imperial" />);
+    expect(screen.getByLabelText('Step 1. Heat the oven to 390°F.')).toBeTruthy();
+  });
+
+  it('leaves metric steps as written, with one timer for a compound time', async () => {
+    await render(<Method recipe={roast} units="metric" />);
+    expect(screen.getByLabelText('Step 1. Heat the oven to 200°C.')).toBeTruthy();
+    expect(screen.getByText(' 1 hour 15 minutes ')).toBeTruthy();
+  });
 });

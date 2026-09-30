@@ -5,7 +5,7 @@
 import { useState } from 'react';
 import { Pressable, View } from 'react-native';
 
-import { splitStepTimers } from '@/domain/cook/cook';
+import { localiseStepText, splitStepTimers } from '@/domain/cook/cook';
 import { formatLine, scaleLine, type UnitSystem } from '@/domain/ingredients/format';
 import type { IngredientLine } from '@/domain/ingredients/types';
 import { substitutionFor } from '@/domain/recipes/substitutions';
@@ -88,31 +88,34 @@ export function Ingredients({ recipe, servings, units, have }: IngredientsProps)
   );
 }
 
-export function Method({ recipe }: { recipe: Recipe }) {
+export function Method({ recipe, units }: { recipe: Recipe; units: UnitSystem }) {
   const styles = useStyles();
   return (
     <View style={styles.section}>
       <Heading>Directions</Heading>
-      {recipe.steps.map((step, i) => (
-        <View key={i} style={styles.step} accessible accessibilityLabel={`Step ${i + 1}. ${step.text}`}>
-          <Text variant="stepNumber" align="center" style={styles.stepNumber}>
-            {i + 1}
-          </Text>
-          <View style={styles.stepRule} />
-          <Text variant="body" colour="inkSoft" style={styles.stepText}>
-            {splitStepTimers(step.text).map((seg, si) =>
-              seg.type === 'text' ? (
-                seg.text
-              ) : (
-                // Times read as chips here; in Cook Mode they become tap-to-start timers.
-                <Text key={si} variant="bodyMedium" colour="accentDeep" style={styles.timer}>
-                  {` ${seg.label} `}
-                </Text>
-              ),
-            )}
-          </Text>
-        </View>
-      ))}
+      {recipe.steps.map((step, i) => {
+        const text = localiseStepText(step.text, units);
+        return (
+          <View key={i} style={styles.step} accessible accessibilityLabel={`Step ${i + 1}. ${text}`}>
+            <Text variant="stepNumber" align="center" style={styles.stepNumber}>
+              {i + 1}
+            </Text>
+            <View style={styles.stepRule} />
+            <Text variant="body" colour="inkSoft" style={styles.stepText}>
+              {splitStepTimers(text).map((seg, si) =>
+                seg.type === 'text' ? (
+                  seg.text
+                ) : (
+                  // Times read as chips here; in Cook Mode they become tap-to-start timers.
+                  <Text key={si} variant="bodyMedium" colour="accentDeep" style={styles.timer}>
+                    {` ${seg.label} `}
+                  </Text>
+                ),
+              )}
+            </Text>
+          </View>
+        );
+      })}
     </View>
   );
 }

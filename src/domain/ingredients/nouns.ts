@@ -70,10 +70,39 @@ export function pluralWord(word: string): string {
   return keepCase(word, `${w}s`);
 }
 
-/** The item with its last word made singular (amount ≤ 1) or plural. Callers only use it when the number crossed one. */
+/**
+ * Words that count the thing after them: in "2 portions fresh ramen noodles"
+ * it's "portions" that agrees with the number, not "noodles".
+ */
+const COUNTER_NOUNS = new Set([
+  'portion',
+  'bottle',
+  'square',
+  'rack',
+  'bulb',
+  'strip',
+  'ball',
+  'block',
+  'bag',
+  'box',
+  'carton',
+  'cube',
+  'loaf',
+  'wedge',
+  'punnet',
+]);
+
+/**
+ * The item with its counting word made singular (amount ≤ 1) or plural: a
+ * leading counter noun if there is one ("1 portion fresh ramen noodles"),
+ * otherwise the last word. Callers only use it when the number crossed one.
+ */
 export function inflectItem(item: string, amount: number): string {
+  const inflect = (word: string) => (amount <= 1 ? singularWord(word) : pluralWord(word));
+  const lead = /^([A-Za-z]+)(\s.*)$/.exec(item);
+  if (lead?.[1] && COUNTER_NOUNS.has(singularWord(lead[1]).toLowerCase())) return inflect(lead[1]) + (lead[2] ?? '');
   const match = /^(.*?)([A-Za-z]+)$/.exec(item);
   if (!match) return item;
   const [, head = '', last = ''] = match;
-  return head + (amount <= 1 ? singularWord(last) : pluralWord(last));
+  return head + inflect(last);
 }

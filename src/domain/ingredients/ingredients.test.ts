@@ -67,7 +67,8 @@ describe('parseIngredientLine', () => {
   it('reads measure phrases like "Pinch of salt" and "Small bunch parsley"', () => {
     assert.deepEqual([parse('Pinch of salt').line.unit, parse('Pinch of salt').line.item], ['pinch', 'salt']);
     const bunch = parse('Small bunch parsley').line;
-    assert.deepEqual([bunch.quantity, bunch.unit, bunch.item, bunch.note], [1, 'bunch', 'parsley', 'small bunch']);
+    // The unit already says "bunch": the note keeps only the size (F193).
+    assert.deepEqual([bunch.quantity, bunch.unit, bunch.item, bunch.note], [1, 'bunch', 'parsley', 'small']);
   });
   it('reads "Juice of 1 lemon" as a lemon, juiced', () => {
     const { line } = parse('Juice of 1 lemon');
@@ -146,8 +147,9 @@ describe('formatting', () => {
   });
   it('converts to imperial and back without drift', () => {
     const mince = parse('500g beef mince').line;
-    assert.equal(formatQuantity(mince.quantity ?? 0, 'g', 'imperial'), '1 lb'); // D-013: pounds snap to quarters
-    assert.equal(formatQuantity(250, 'g', 'imperial'), '8.8 oz');
+    // Imperial weights snap to quarters (F180): nobody weighs "1.1 lb".
+    assert.equal(formatQuantity(mince.quantity ?? 0, 'g', 'imperial'), '1 lb');
+    assert.equal(formatQuantity(250, 'g', 'imperial'), '8¾ oz');
     assert.equal(formatQuantity(mince.quantity ?? 0, 'g', 'metric'), '500 g');
     assert.equal(formatQuantity(2, 'tbsp', 'imperial'), '2 tbsp');
   });

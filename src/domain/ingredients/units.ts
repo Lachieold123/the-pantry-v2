@@ -18,6 +18,7 @@ export type UnitId =
   | 'tbsp'
   | 'cup'
   | 'fl-oz'
+  | 'qt'
   | 'cm'
   | 'clove'
   | 'tin'
@@ -79,6 +80,8 @@ export const UNITS: Readonly<Record<UnitId, UnitDef>> = {
     plural: 'fl oz',
     spellings: ['fl oz', 'fl. oz', 'fluid ounce', 'fluid ounces'],
   },
+  // US quart: imperial mode shows big liquid amounts in quarts rather than "68 fl oz" (F180).
+  qt: { kind: 'volume', base: 946.353, singular: 'qt', plural: 'qt', spellings: ['qt', 'qts', 'quart', 'quarts'] },
   cm: { kind: 'length', base: 1, singular: 'cm', plural: 'cm', spellings: ['cm'] },
   clove: { kind: 'count', singular: 'clove', plural: 'cloves', spellings: ['clove', 'cloves'] },
   tin: { kind: 'count', singular: 'tin', plural: 'tins', spellings: ['tin', 'tins', 'can', 'cans'] },

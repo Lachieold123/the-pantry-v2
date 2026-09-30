@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
 import { fromISODate } from '../plan/week';
-import { hasCooked, recentlyCooked, splitStepTimers, weeklyStreak, type CookEvent } from './cook';
+import { hasCooked, localiseStepText, recentlyCooked, splitStepTimers, weeklyStreak, type CookEvent } from './cook';
 import { formatCountdown, isFinished, secondsLeft, startTimer } from './timers';
 
 describe('Cook Mode timers', () => {
@@ -26,6 +26,34 @@ describe('Cook Mode timers', () => {
   it('handles hours', () => {
     const t = splitStepTimers('Bake 1.5 hours.').find((s) => s.type === 'timer');
     assert.equal(t?.type === 'timer' ? t.seconds : 0, 5400);
+  });
+  const timers = (text: string) => splitStepTimers(text).flatMap((s) => (s.type === 'timer' ? [[s.label, s.seconds]] : []));
+  it('reads mixed and unicode fractions (F36)', () => {
+    assert.deepEqual(timers('Bake 1 1/2 hours.'), [['1 1/2 hours', 5400]]);
+    assert.deepEqual(timers('Bake 1½ hours.'), [['1½ hours', 5400]]);
+  });
+  it('makes "1 hour 15 minutes" one timer, not two (F36)', () => {
+    assert.deepEqual(timers('Braise 1 hour 15 minutes, then rest.'), [['1 hour 15 minutes', 4500]]);
+    assert.deepEqual(timers('Braise 1 hour and 15 minutes.'), [['1 hour and 15 minutes', 4500]]);
+  });
+  it('times a rest before serving, and a range by its upper bound (F36)', () => {
+    assert.deepEqual(timers('Rest 10 minutes before serving.'), [['10 minutes', 600]]);
+    assert.deepEqual(timers('Simmer 1½–2 hours.'), [['1½–2 hours', 7200]]);
+  });
+});
+
+describe('localiseStepText (F49)', () => {
+  it('leaves metric steps alone', () => {
+    assert.equal(localiseStepText('Heat the oven to 200°C.', 'metric'), 'Heat the oven to 200°C.');
+  });
+  it('gives imperial cooks °F, rounded to the nearest 5', () => {
+    assert.equal(localiseStepText('Heat the oven to 200°C.', 'imperial'), 'Heat the oven to 390°F.');
+    assert.equal(localiseStepText('Roast at 180–200 °C (fan-forced).', 'imperial'), 'Roast at 355–390°F (fan).');
+    assert.equal(localiseStepText('Set it to 220 degrees C.', 'imperial'), 'Set it to 430°F.');
+  });
+  it('doesn’t print °F twice when the recipe already gives it', () => {
+    assert.equal(localiseStepText('As hot as it goes (250°C / 480°F).', 'imperial'), 'As hot as it goes (480°F).');
+    assert.equal(localiseStepText('Heat to 250°C (480°F).', 'imperial'), 'Heat to 480°F.');
   });
 });
 
