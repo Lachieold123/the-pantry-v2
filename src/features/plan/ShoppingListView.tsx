@@ -9,7 +9,21 @@ import { Pressable, View } from 'react-native';
 
 import { INGREDIENTS } from '@/data/catalogue/catalogue';
 import { AISLE_LABELS } from '@/domain/recipes/labels';
-import { clearList, EMPTY_EDITS, itemsAtoZ, removeItem, restoreRemoved, toggleChecked, type ShoppingItem } from '@/domain/shopping/derive';
+import {
+  addExtras,
+  clearList,
+  deleteExtra,
+  EMPTY_EDITS,
+  itemsAtoZ,
+  removeItem,
+  restoreExtra,
+  restoreRemoved,
+  toggleChecked,
+  toggleExtra,
+  untickLeavesCupboard,
+  type ShoppingItem,
+  type ShoppingList,
+} from '@/domain/shopping/derive';
 import type { ISODate } from '@/domain/plan/week';
 import { newId } from '@/lib/ids';
 import { useCupboard } from '@/store/cupboard';
@@ -29,6 +43,7 @@ export function ShoppingListView({ week, weekLabel, onBrowse }: { week: ISODate;
   const edits = usePlan((s) => s.listEdits[week]) ?? EMPTY_EDITS;
   const editList = usePlan((s) => s.editList);
   const moveTicked = useCupboard((s) => s.moveTickedToCupboard);
+  const cupboardItems = useCupboard((s) => s.items);
   const addToCupboard = useCupboard((s) => s.add);
   const removeFromCupboard = useCupboard((s) => s.remove);
   const [byAisle, setByAisle] = useState(true);
@@ -37,6 +52,8 @@ export function ShoppingListView({ week, weekLabel, onBrowse }: { week: ISODate;
   const tick = (item: ShoppingItem) => {
     edit((e) => toggleChecked(e, item));
     if (!item.checked && moveTicked && INGREDIENTS.byId.has(item.key)) addToCupboard([item.key], 'shop');
+    // Unticking a mis-tap takes back the move into the cupboard, so the item stays on the list (F14).
+    if (item.checked && untickLeavesCupboard(cupboardItems, item.key)) removeFromCupboard(item.key);
   };
   const remove = (item: ShoppingItem) => {
     edit((e) => removeItem(e, item));
@@ -46,12 +63,36 @@ export function ShoppingListView({ week, weekLabel, onBrowse }: { week: ISODate;
     });
   };
   const clearAll = () => {
-    // Undo stands in for a confirm step: the old edits come straight back.
-    const before = edits;
+    // Undo stands in for a confirm step: the old edits come straight back,
+    // including those of earlier weeks whose extras had come forward.
+    const weeks = [week, ...new Set(list.extras.flatMap((x) => (x.fromWeek ? [x.fromWeek] : [])))];
+    const all = usePlan.getState().listEdits;
+    const before = weeks.map((w) => [w, all[w] ?? EMPTY_EDITS] as const);
     edit((e) => clearList(e, list));
-    toast({ message: 'List cleared', undo: () => edit(() => before) });
+    for (const x of list.extras) if (x.fromWeek) editList(x.fromWeek, (e) => deleteExtra(e, x.extra.id));
+    toast({ message: 'List cleared', undo: () => before.forEach(([w, e]) => editList(w, () => e)) });
   };
-  const addExtra = (text: string) => edit((e) => ({ ...e, extras: [...e.extras, { id: newId(), text, addedAt: Date.now() }] }));
+  const addExtra = (text: string) => {
+    const shown = list.extras.map((x) => x.extra.text);
+    if (addExtras(edits, [text], newId, Date.now(), shown).added.length === 0) {
+      toast({ message: `${text} is already on the list` });
+      return;
+    }
+    edit((e) => addExtras(e, [text], newId, Date.now(), shown).edits);
+  };
+  // An extra carried forward still lives in its own week: delete it there. Its tick lives in this week.
+  const deleteExtraRow = ({ extra, checked, fromWeek }: ShoppingList['extras'][number]) => {
+    const home = fromWeek ?? week;
+    editList(home, (e) => deleteExtra(e, extra.id));
+    if (fromWeek) edit((e) => deleteExtra(e, extra.id));
+    toast({
+      message: `${extra.text} removed from the list`,
+      undo: () => {
+        editList(home, (e) => restoreExtra(e, extra, checked && !fromWeek));
+        if (fromWeek && checked) edit((e) => toggleExtra(e, extra.id));
+      },
+    });
+  };
 
   const items = list.sections.flatMap((s) => s.items);
   const total = items.length + list.extras.length;
@@ -101,18 +142,16 @@ export function ShoppingListView({ week, weekLabel, onBrowse }: { week: ISODate;
         ) : null,
       )}
       <ListCard title={list.extras.length ? 'Also' : undefined}>
-        {list.extras.map(({ extra: x, checked }, i) => (
+        {list.extras.map((row, i) => (
           <ShoppingRow
-            key={x.id}
-            label={x.text}
-            checked={checked}
+            key={row.extra.id}
+            label={row.extra.text}
+            checked={row.checked}
             first={i === 0}
-            onToggle={() =>
-              edit((e) => ({ ...e, checkedExtras: checked ? e.checkedExtras.filter((id) => id !== x.id) : [...e.checkedExtras, x.id] }))
-            }
-            onRemove={() => edit((e) => ({ ...e, extras: e.extras.filter((item) => item.id !== x.id) }))}
-            removeLabel={`Remove ${x.text}`}
-            testID={`shopping-extra-${x.id}`}
+            onToggle={() => edit((e) => toggleExtra(e, row.extra.id))}
+            onRemove={() => deleteExtraRow(row)}
+            removeLabel={`Remove ${row.extra.text}`}
+            testID={`shopping-extra-${row.extra.id}`}
           />
         ))}
         <AddItemRow onAdd={addExtra} first={list.extras.length === 0} />

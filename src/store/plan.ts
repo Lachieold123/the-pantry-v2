@@ -11,11 +11,13 @@ import {
   pruneOldEntries,
   shoppingWeek,
   toISODate,
+  weekStart,
   type ISODate,
   type PlanEntry,
   type Slot,
 } from '@/domain/plan/week';
 import { addExtras, EMPTY_EDITS, type WeekListEdits } from '@/domain/shopping/derive';
+import { migrateListEdits } from '@/domain/shopping/edits';
 import { persistentStorage, savedAs } from './storage';
 
 type PlanState = {
@@ -64,9 +66,15 @@ export const usePlan = create<PlanState>()(
       },
     }),
     {
-      ...savedAs<PlanState>('plan', 1),
+      ...savedAs<PlanState>('plan', 2),
       storage: persistentStorage(),
       partialize: ({ entries, listEdits, prunedTo }) => ({ entries, listEdits, prunedTo }),
+      // Version 2 stores a tick as base amounts instead of the amount text shown (F11, F12).
+      migrate: (saved) => {
+        const state = (typeof saved === 'object' && saved !== null ? saved : {}) as { entries?: unknown; listEdits?: unknown };
+        const entries = Array.isArray(state.entries) ? (state.entries as PlanEntry[]).filter(isPlanEntry) : [];
+        return { ...state, entries, listEdits: migrateListEdits(state.listEdits, entries, weekStart) } as unknown as PlanState;
+      },
       // Old weeks are pruned when the app starts (D-009); the cook log keeps the history.
       // Pruning follows a high-water mark rather than the raw clock (audit F08), and
       // wrong-shaped entries are dropped rather than crashing the Plan tab (F02, F04).

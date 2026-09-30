@@ -146,7 +146,7 @@ describe('formatting', () => {
   });
   it('converts to imperial and back without drift', () => {
     const mince = parse('500g beef mince').line;
-    assert.equal(formatQuantity(mince.quantity ?? 0, 'g', 'imperial'), '1.1 lb');
+    assert.equal(formatQuantity(mince.quantity ?? 0, 'g', 'imperial'), '1 lb'); // D-013: pounds snap to quarters
     assert.equal(formatQuantity(250, 'g', 'imperial'), '8.8 oz');
     assert.equal(formatQuantity(mince.quantity ?? 0, 'g', 'metric'), '500 g');
     assert.equal(formatQuantity(2, 'tbsp', 'imperial'), '2 tbsp');
