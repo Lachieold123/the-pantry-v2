@@ -3,7 +3,9 @@
 // a failed permission check reads as "no" rather than throwing (F46).
 import { renderHook } from '@testing-library/react-native';
 
-import { ensureNotificationPermission, notificationPermission, scheduleAt, setSundayReminder, useNotificationTaps } from './notifications';
+import { useNotificationTaps } from './notificationTaps';
+import { useNotificationTaps as useWebNotificationTaps } from './notificationTaps.web';
+import { ensureNotificationPermission, notificationPermission, scheduleAt, setSundayReminder } from './notifications';
 
 const mockSchedule = jest.fn(async (_req: unknown) => 'id');
 let mockResponse: unknown = null;
@@ -76,4 +78,14 @@ test('ignores links that leave the app, and non-tap actions', async () => {
   mockResponse = tap('/plan', 'dismiss');
   await renderHook(() => useNotificationTaps(open));
   expect(open).not.toHaveBeenCalled();
+});
+
+test('on web a tap is never followed, and the native hook is never called', async () => {
+  const native = jest.requireMock<{ useLastNotificationResponse: () => unknown }>('expo-notifications');
+  const spy = jest.spyOn(native, 'useLastNotificationResponse');
+  mockResponse = tap('/plan');
+  const open = jest.fn();
+  await renderHook(() => useWebNotificationTaps(open));
+  expect(open).not.toHaveBeenCalled();
+  expect(spy).not.toHaveBeenCalled();
 });

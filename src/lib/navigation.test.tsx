@@ -15,7 +15,8 @@ import { goBackOr, goToTab } from './navigation';
 
 jest.mock('expo-splash-screen', () => ({ preventAutoHideAsync: async () => undefined, hideAsync: async () => undefined }));
 // Importing the root layout runs its start-up calls; these stand in for the native parts.
-jest.mock('@/lib/notifications', () => ({ configureNotifications: () => undefined, useNotificationTaps: () => undefined }));
+jest.mock('@/lib/notifications', () => ({ configureNotifications: () => undefined }));
+jest.mock('@/lib/notificationTaps', () => ({ useNotificationTaps: () => undefined }));
 
 type Nav = { name: string; state?: StackState };
 type StackState = { index: number; routes: Nav[] };
