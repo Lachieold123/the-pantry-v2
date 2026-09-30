@@ -193,3 +193,15 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
 
 - **Date:** 30 September 2026 · **Decided by:** Lachlan
 - **Decision:** the 120 catalogue photos with no photographer credit are v1's AI-generated images. They stay, labelled "AI-generated photo" on the recipe page, and are replaced with real photos over time (audit QUAL-18).
+
+## D-030 · Cooking from your cupboard is central, and scanning is in
+
+- **Date:** 30 September 2026 · **Decided by:** Lachlan
+- **Decision:**
+  - "Cook from what you have" is a central feature. It's rebuilt before the Plan work (P5 moves ahead of P4), to the design in `docs/audits/2026-09-30-v2-check/cupboard-brief.md`:
+    - one shared "what can I cook" engine, with **Ready tonight** and **Need 1–2** tiers;
+    - category jars, quick adds, "Add one thing" and "Add a list";
+    - cupboard matches on the Feed, in Browse, on recipes and in Plan.
+  - Photo scanning of shelves or the fridge, and receipt scanning, are in scope for launch.
+    - **Access:** every account gets 3 free scans a month. Pro is unlimited within a daily cap of about 15.
+    - **Model:** chosen by testing Claude and OpenAI vision models on about 30 real photos, then decided on accuracy and cost. The API key and server come to Lachlan for approval when we get there.
