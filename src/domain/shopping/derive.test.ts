@@ -5,6 +5,7 @@ import type { PlanEntry } from '../plan/week';
 import type { Recipe } from '../recipes/types';
 import { index, makeRecipe } from '../testing/fixtures';
 import {
+  addExtras,
   deriveShoppingList,
   EMPTY_EDITS,
   formatListForSharing,
@@ -124,5 +125,24 @@ describe('list edits', () => {
     assert.match(text, /- Beef mince, 500 g/);
     assert.match(text, /Also\n- Dishwashing liquid/);
     assert.doesNotMatch(text, /salt/i);
+  });
+});
+
+describe('adding extras to the list', () => {
+  it('skips blanks and ones already on the list, whatever the case', () => {
+    let n = 0;
+    const first = addExtras(EMPTY_EDITS, ['Lemon', ' '], () => `x${n++}`, 1);
+    const second = addExtras(first.edits, ['lemon', 'feta'], () => `x${n++}`, 2);
+    assert.deepEqual(
+      second.edits.extras.map((x) => x.text),
+      ['Lemon', 'feta'],
+    );
+    assert.deepEqual(
+      second.added.map((x) => x.text),
+      ['feta'],
+    );
+  });
+  it('returns the same edits when nothing is added', () => {
+    assert.equal(addExtras(EMPTY_EDITS, [], () => 'x', 1).edits, EMPTY_EDITS);
   });
 });

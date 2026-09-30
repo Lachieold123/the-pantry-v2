@@ -6,12 +6,16 @@ import { useEffect, useMemo, useState } from 'react';
 import { ScrollView, Share, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { INGREDIENTS, KITCHEN } from '@/data/catalogue/catalogue';
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { hasCooked } from '@/domain/cook/cook';
+import { cookable } from '@/domain/cupboard/cookable';
 import { cupboardIds } from '@/domain/cupboard/match';
 import { recipeAsText } from '@/domain/recipes/labels';
 import { useCookLog } from '@/store/cookLog';
+import { ingredientName } from '@/store/cookable';
 import { useCupboard } from '@/store/cupboard';
+import { usePlan } from '@/store/plan';
 import { usePreferences } from '@/store/preferences';
 import { useRecipe } from '@/store/recipeBook';
 import { useSaved } from '@/store/saved';
@@ -27,6 +31,7 @@ import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { RADIUS, RECIPE, SPACE } from '@/ui/tokens/type';
 import { Ingredients, Method, Notes } from './RecipeBody';
+import { CupboardSummary } from './CupboardSummary';
 import { RecipeHeader } from './RecipeHeader';
 import { ServingsSheet } from './ServingsSheet';
 
@@ -50,7 +55,18 @@ export function RecipeScreen({ id }: { id: string }) {
   const markCooked = useCookLog((s) => s.markCooked);
   const undoCooked = useCookLog((s) => s.undo);
   const items = useCupboard((s) => s.items);
+  const shelf = useCupboard((s) => s.shelf);
+  const addToList = usePlan((s) => s.addToList);
   const have = useMemo(() => cupboardIds(items), [items]);
+  const fromCupboard = useMemo(
+    () => (recipe && have.size ? cookable(recipe, have, shelf, INGREDIENTS, KITCHEN) : undefined),
+    [recipe, have, shelf],
+  );
+  // A same-family stand-in you have (brown onion for white) earns the HAVE pill too.
+  const havePills = useMemo(
+    () => (fromCupboard ? new Set([...have, ...fromCupboard.swaps.map((s) => s.need)]) : have),
+    [have, fromCupboard],
+  );
   useEffect(() => {
     if (recipe) recordView(recipe.id);
   }, [recipe, recordView]);
@@ -122,7 +138,22 @@ export function RecipeScreen({ id }: { id: string }) {
               {recipe.summary}
             </Text>
           ) : null}
-          <Ingredients recipe={recipe} servings={servings} units={units} have={have} />
+          {fromCupboard ? (
+            <CupboardSummary
+              result={fromCupboard}
+              nameOf={ingredientName}
+              onPlan={plan}
+              onAddMissing={() => {
+                const names = fromCupboard.missing.map((id) => capitalise(ingredientName(id)));
+                const undo = addToList(names);
+                toast({
+                  message: undo ? `${names.length} added to your shopping list` : 'Already on your shopping list',
+                  ...(undo ? { undo } : {}),
+                });
+              }}
+            />
+          ) : null}
+          <Ingredients recipe={recipe} servings={servings} units={units} have={havePills} />
           <Method recipe={recipe} />
           <Notes notes={recipe.notes ?? []} />
           {photoNote ? (
@@ -202,3 +233,7 @@ const useStyles = makeStyles(({ colours }) => ({
   nav: { position: 'absolute', left: SPACE.gutter, right: SPACE.gutter, flexDirection: 'row', justifyContent: 'space-between' },
   credit: { paddingTop: SPACE.md, borderTopWidth: 1, borderTopColor: colours.border },
 }));
+
+function capitalise(s: string): string {
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}

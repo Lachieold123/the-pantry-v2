@@ -4,8 +4,8 @@ import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
 import { newId } from '@/lib/ids';
-import { pruneCutoff, pruneOldEntries, toISODate, type ISODate, type PlanEntry, type Slot } from '@/domain/plan/week';
-import { EMPTY_EDITS, type WeekListEdits } from '@/domain/shopping/derive';
+import { pruneCutoff, pruneOldEntries, shoppingWeek, toISODate, type ISODate, type PlanEntry, type Slot } from '@/domain/plan/week';
+import { addExtras, EMPTY_EDITS, type WeekListEdits } from '@/domain/shopping/derive';
 import { persistentStorage, STORAGE_PREFIX } from './storage';
 
 type PlanState = {
@@ -18,6 +18,8 @@ type PlanState = {
   setServings: (id: string, servings: number) => void;
   moveEntry: (id: string, day: ISODate, slot: Slot) => void;
   editList: (week: ISODate, change: (edits: WeekListEdits) => WeekListEdits) => void;
+  /** Adds free-text items to the list you're shopping for. Returns an undo, or undefined if nothing was new. */
+  addToList: (texts: string[]) => (() => void) | undefined;
 };
 
 export const usePlan = create<PlanState>()(
@@ -39,6 +41,14 @@ export const usePlan = create<PlanState>()(
       setServings: (id, servings) => set((s) => ({ entries: s.entries.map((e) => (e.id === id ? { ...e, servings } : e)) })),
       moveEntry: (id, day, slot) => set((s) => ({ entries: s.entries.map((e) => (e.id === id ? { ...e, day, slot } : e)) })),
       editList: (week, change) => set((s) => ({ listEdits: { ...s.listEdits, [week]: change(s.listEdits[week] ?? EMPTY_EDITS) } })),
+      addToList: (texts) => {
+        const week = shoppingWeek(toISODate(new Date()));
+        const { edits, added } = addExtras(get().listEdits[week] ?? EMPTY_EDITS, texts, newId, Date.now());
+        if (added.length === 0) return undefined;
+        set((s) => ({ listEdits: { ...s.listEdits, [week]: edits } }));
+        const ids = new Set(added.map((x) => x.id));
+        return () => get().editList(week, (e) => ({ ...e, extras: e.extras.filter((x) => !ids.has(x.id)) }));
+      },
     }),
     {
       name: `${STORAGE_PREFIX}/plan`,

@@ -46,6 +46,7 @@ export const TYPE = {
   dayName: serif(26, '700', 30, -0.4),
   sectionTitle: serif(22, '700', 26, -0.4),
   brandMark: serif(20, '700', 24),
+  jarInitial: italic(serif(16, '400', 18)),
   cardTitleLarge: serif(18, '700', 20, -0.3),
   cardTitle: serif(17, '700', 20, -0.3),
   cardTitleMedium: serif(16, '700', 19, -0.3),
@@ -157,6 +158,9 @@ export const CARD = {
   discIcon: 15,
   discInset: 8,
   shelfWidth: 260,
+  /** The ink "what you can cook" card on the Cupboard rail (spec §4.6). */
+  matchWidth: 196,
+  matchPillInset: 10,
   shelfBody: 14,
   /** Space kept clear under content so the floating tab bar never covers it. */
   scrollBottom: 160,
@@ -175,6 +179,9 @@ export const RECIPE = {
   byline: 32,
   heroButton: 44,
 } as const;
+
+/** v1's cupboard "jar" chip (spec §4.7). */
+export const JAR = { gap: 7, padY: 6, padX: 9, initial: 12, matchBody: 14 } as const;
 
 /** Pressed feedback: the original dims, it never scales cards. */
 export const PRESSED = { card: 0.94, row: 0.7, subtle: 0.85 } as const;

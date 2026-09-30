@@ -1,9 +1,11 @@
 // The bundled recipe catalogue and ingredient database, loaded once.
 // Store builds show only cook-tested recipes (D-008). Development and preview
 // builds (EXPO_PUBLIC_SHOW_DRAFT_RECIPES=1, set in eas.json) show the drafts too.
+import { buildKitchen, type KitchenData } from '@/domain/cupboard/kitchen';
 import { buildIngredientIndex, type IngredientDef } from '@/domain/ingredients/database';
 import type { Recipe } from '@/domain/recipes/types';
 import ingredientsJson from '../ingredients/ingredients.json';
+import kitchenJson from '../ingredients/kitchen.json';
 import recipesJson from './recipes.json';
 
 const all = recipesJson as unknown as Recipe[];
@@ -27,3 +29,6 @@ export function catalogueTitle(id: string): string | undefined {
 }
 
 export const INGREDIENTS = buildIngredientIndex(ingredientsJson as unknown as IngredientDef[]);
+
+/** How each ingredient behaves in a kitchen: swaps, shelf items, cupboard jars (D-030). */
+export const KITCHEN = buildKitchen(INGREDIENTS, kitchenJson as unknown as KitchenData);

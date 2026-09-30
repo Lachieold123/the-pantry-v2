@@ -7,14 +7,13 @@ import { useRouter } from 'expo-router';
 import { useMemo } from 'react';
 import { ScrollView, View } from 'react-native';
 
-import { INGREDIENTS } from '@/data/catalogue/catalogue';
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { dailyPicks, moods, presetActive, quickChips, recipeOfTheDay, recipesFor, togglePreset } from '@/domain/recipes/browse';
-import { cupboardIds, whatCanIMake } from '@/domain/cupboard/match';
+import { needLine } from '@/domain/cupboard/cookable';
 import { toISODate } from '@/domain/plan/week';
 import { seasonOn } from '@/domain/recipes/search';
 import type { Recipe } from '@/domain/recipes/types';
-import { useCupboard } from '@/store/cupboard';
+import { ingredientName, useCookableNow } from '@/store/cookable';
 import { useAllRecipes } from '@/store/recipeBook';
 import { useRecipeFilters } from '@/store/recipeFilters';
 import { useBookmarks, useSaved } from '@/store/saved';
@@ -33,7 +32,7 @@ export function BrowseSections() {
   const router = useRouter();
   const all = useAllRecipes();
   const hidden = useSaved((s) => s.hidden);
-  const items = useCupboard((s) => s.items);
+  const cook = useCookableNow();
   const query = useRecipeFilters((s) => s.query);
   const filters = useRecipeFilters((s) => s.filters);
   const apply = useRecipeFilters((s) => s.apply);
@@ -50,14 +49,15 @@ export function BrowseSections() {
     const shelves = moods(season)
       .map((mood) => ({ mood, recipes: recipesFor(mood, visible) }))
       .filter((s) => s.recipes.length > 0);
-    const canMake = whatCanIMake(visible, cupboardIds(items), INGREDIENTS, PICKS);
     const picks = dailyPicks(
       visible.filter((r) => r.id !== featured?.id),
       today,
       PICKS,
     );
-    return { visible, featured, shelves, canMake, picks };
-  }, [all, hidden, items, today, season]);
+    return { visible, featured, shelves, picks };
+  }, [all, hidden, today, season]);
+  // One engine for every cupboard surface: diet, avoid list and "not for us" always apply.
+  const canMake = [...cook.ready, ...cook.nearly].slice(0, PICKS);
 
   const featured = data.featured;
 
@@ -119,18 +119,23 @@ export function BrowseSections() {
         </View>
       ) : null}
 
-      {data.canMake.length ? (
+      {canMake.length ? (
         <View style={{ paddingHorizontal: SPACE.gutter }}>
-          <SectionHeader kicker="Your cupboard" tone="accent" title="Cook with what you have" />
+          <SectionHeader
+            kicker="Your cupboard"
+            tone="accent"
+            title="Cook with what you have"
+            action={<Button label="See all" kind="quiet" onPress={() => router.push('/cupboard/cookable')} testID="browse-cupboard-all" />}
+          />
           <RecipeGrid
-            recipes={data.canMake.map((m) => m.recipe)}
+            recipes={canMake.map((m) => m.recipe)}
             imageFor={image}
             onOpen={open}
             isSaved={bookmarks.isSaved}
             onToggleSave={bookmarks.toggle}
             noteFor={(r: Recipe) => {
-              const c = data.canMake.find((m) => m.recipe.id === r.id)?.coverage;
-              return c && c.missing.length === 0 ? 'You have everything' : c ? `You have ${c.have} of ${c.needed}` : undefined;
+              const m = canMake.find((x) => x.recipe.id === r.id);
+              return m ? needLine(m.result, ingredientName) : undefined;
             }}
           />
         </View>

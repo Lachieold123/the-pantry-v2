@@ -2,17 +2,20 @@
 // v2's "Tonight" (the North Star's Tuesday 6pm moment), what's coming up, and
 // recipes picked for you, all real (D-027). Posts join below in P9.
 import { useRouter } from 'expo-router';
-import { View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
+import { needLine } from '@/domain/cupboard/cookable';
 import { addDays, entriesFor, fromISODate, toISODate, tonightsDinner } from '@/domain/plan/week';
 import { longDate } from '@/lib/dates';
+import { ingredientName, useCookableNow } from '@/store/cookable';
 import { useWelcomeBack } from '@/store/oldAppImport';
 import { usePlan } from '@/store/plan';
 import { useRecipeLookup } from '@/store/recipeBook';
 import { useBookmarks } from '@/store/saved';
 import { useForYou } from '@/store/suggestions';
 import { EmptyState } from '@/ui/patterns/EmptyState';
+import { MatchCard } from '@/ui/patterns/MatchCard';
 import { RecipeCard } from '@/ui/patterns/RecipeCard';
 import { RecipeGrid } from '@/ui/patterns/RecipeGrid';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
@@ -34,10 +37,14 @@ export function FeedScreen() {
   const removeEntry = usePlan((s) => s.removeEntry);
   const welcome = useWelcomeBack((s) => s.message);
   const dismissWelcome = useWelcomeBack((s) => s.dismiss);
-  const [suggestion, ...picks] = useForYou(PICKS);
+  const [forYouPick, ...picks] = useForYou(PICKS);
   const today = toISODate(new Date());
   const tonight = tonightsDinner(entries, today);
   const getRecipe = useRecipeLookup();
+  const cook = useCookableNow();
+  // Nothing planned? Something you can cook right now beats a suggestion you'd have to shop for.
+  const suggestion = cook.ready[0]?.recipe ?? forYouPick;
+  const fromCupboard = [...cook.ready, ...cook.nearly].slice(0, 6);
   const bookmarks = useBookmarks();
   const tonightRecipe = tonight ? getRecipe(tonight.recipeId) : undefined;
   const open = (id: string) => router.push({ pathname: '/recipe/[id]', params: { id } });
@@ -82,7 +89,11 @@ export function FeedScreen() {
         </View>
       ) : suggestion ? (
         <View style={{ gap: SPACE.md }}>
-          <SectionHeader kicker={`Tonight · ${longDate(new Date())}`} tone="accent" title="How about this?" />
+          <SectionHeader
+            kicker={`Tonight · ${longDate(new Date())}`}
+            tone="accent"
+            title={cook.ready[0] ? 'You can cook this now' : 'How about this?'}
+          />
           <RecipeCard
             recipe={suggestion}
             image={RECIPE_IMAGES[suggestion.id]}
@@ -131,6 +142,44 @@ export function FeedScreen() {
           )}
         </View>
       ) : null}
+
+      {fromCupboard.length ? (
+        <View>
+          <SectionHeader
+            kicker="From your cupboard"
+            tone="accent"
+            title="Cook with what you have"
+            action={<Button label="See all" kind="quiet" onPress={() => router.push('/cupboard/cookable')} testID="feed-cupboard-all" />}
+          />
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            style={{ marginHorizontal: -SPACE.gutter }}
+            contentContainerStyle={{ gap: SPACE.sm, paddingHorizontal: SPACE.gutter }}
+          >
+            {fromCupboard.map((m) => (
+              <MatchCard
+                key={m.recipe.id}
+                recipe={m.recipe}
+                image={RECIPE_IMAGES[m.recipe.id]}
+                ready={m.tier === 'ready'}
+                need={needLine(m.result, ingredientName)}
+                onPress={() => open(m.recipe.id)}
+                testID={`feed-match-${m.recipe.id}`}
+              />
+            ))}
+          </ScrollView>
+        </View>
+      ) : (
+        <Button
+          label="What can I cook from my cupboard?"
+          icon="cupboard"
+          kind="soft"
+          block
+          onPress={() => router.navigate('/cupboard')}
+          testID="feed-to-cupboard"
+        />
+      )}
 
       {picks.length ? (
         <View>

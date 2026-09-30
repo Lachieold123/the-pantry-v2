@@ -96,3 +96,9 @@ export function isPast(day: ISODate, today: ISODate): boolean {
 export function upcomingCount(entries: readonly PlanEntry[], today: ISODate): number {
   return entries.filter((e) => e.day >= today).length;
 }
+
+/** The week you're shopping for: this week, except on Sunday, when it's the week ahead. */
+export function shoppingWeek(today: ISODate): ISODate {
+  const start = weekStart(today);
+  return fromISODate(today).getDay() === 0 ? addDays(start, 7) : start;
+}

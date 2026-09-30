@@ -9,6 +9,7 @@ import {
   pruneOldEntries,
   tonightsDinner,
   upcomingCount,
+  shoppingWeek,
   visibleWeeks,
   weekDays,
   weekStart,
@@ -68,5 +69,12 @@ describe('upcoming meals', () => {
   });
   it('is zero for an empty plan', () => {
     assert.equal(upcomingCount([], '2026-09-30'), 0);
+  });
+});
+
+describe('the week you shop for', () => {
+  it('is this week, except on Sunday when it is the week ahead', () => {
+    assert.equal(shoppingWeek('2026-09-30'), '2026-09-28'); // Wednesday
+    assert.equal(shoppingWeek('2026-10-04'), '2026-10-05'); // Sunday
   });
 });

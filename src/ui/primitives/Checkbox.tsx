@@ -6,9 +6,17 @@ import { RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 import { Icon } from './Icon';
 import { Text } from './Text';
 
-type Props = { label: string; detail?: string; checked: boolean; onToggle: () => void; testID?: string | undefined };
+type Props = {
+  label: string;
+  detail?: string;
+  checked: boolean;
+  onToggle: () => void;
+  testID?: string | undefined;
+  /** Shopping lists cross ticked things off; a pick-list ("add these") doesn't. */
+  strikeWhenChecked?: boolean;
+};
 
-export function Checkbox({ label, detail, checked, onToggle, testID }: Props) {
+export function Checkbox({ label, detail, checked, onToggle, testID, strikeWhenChecked = true }: Props) {
   const styles = useStyles();
   return (
     <Pressable
@@ -20,7 +28,11 @@ export function Checkbox({ label, detail, checked, onToggle, testID }: Props) {
       style={styles.row}
     >
       <View style={[styles.box, checked && styles.boxOn]}>{checked ? <Icon name="check" size={14} colour="bg" /> : null}</View>
-      <Text variant="body" colour={checked ? 'inkMuted' : 'ink'} style={[styles.label, checked && styles.struck]}>
+      <Text
+        variant="body"
+        colour={checked && strikeWhenChecked ? 'inkMuted' : 'ink'}
+        style={[styles.label, checked && strikeWhenChecked && styles.struck]}
+      >
         {label}
       </Text>
       {detail ? (

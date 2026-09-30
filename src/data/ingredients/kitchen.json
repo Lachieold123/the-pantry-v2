@@ -1,0 +1,204 @@
+{
+  "_about": "How ingredients behave in a real kitchen, for 'what can I cook'. Families are interchangeable swaps, kept deliberately conservative (D-030, cupboard-brief §4.2). Shelf items are long-life things most kitchens keep; categories group the cupboard into v1's jars.",
+  "families": {
+    "onion": [
+      "brown-onion",
+      "white-onion"
+    ],
+    "white-rice": [
+      "white-rice",
+      "jasmine-rice",
+      "basmati-rice"
+    ],
+    "spinach": [
+      "spinach",
+      "baby-spinach"
+    ],
+    "lettuce": [
+      "lettuce",
+      "cos-lettuce",
+      "iceberg-lettuce",
+      "salad-leaves"
+    ],
+    "mushroom": [
+      "button-mushroom",
+      "swiss-brown-mushroom",
+      "mixed-mushrooms"
+    ],
+    "cheddar": [
+      "cheddar",
+      "tasty-cheese"
+    ],
+    "capsicum": [
+      "capsicum",
+      "green-capsicum"
+    ],
+    "potato": [
+      "potato",
+      "waxy-potato"
+    ],
+    "sugar": [
+      "sugar",
+      "caster-sugar"
+    ],
+    "soy-sauce": [
+      "soy-sauce",
+      "tamari"
+    ],
+    "parmesan": [
+      "parmesan",
+      "pecorino"
+    ],
+    "chicken-thigh": [
+      "chicken-thigh",
+      "chicken-thigh-bone-in"
+    ],
+    "long-pasta": [
+      "spaghetti",
+      "linguine",
+      "fettuccine"
+    ],
+    "short-pasta": [
+      "penne",
+      "rigatoni",
+      "macaroni"
+    ],
+    "breadcrumbs": [
+      "breadcrumbs",
+      "panko"
+    ]
+  },
+  "shelfAisles": [
+    "herbs-spices",
+    "sauces-oils",
+    "baking"
+  ],
+  "shelfExtra": [
+    "black-vinegar",
+    "maggi-seasoning",
+    "shaoxing-wine",
+    "coconut-vinegar",
+    "doubanjiang",
+    "douchi",
+    "furikake",
+    "gochujang",
+    "kecap-manis",
+    "mirin",
+    "palm-sugar",
+    "rice-wine",
+    "rock-sugar",
+    "sambal-oelek",
+    "shrimp-paste",
+    "ssamjang",
+    "taco-seasoning",
+    "tamarind-paste",
+    "wasabi",
+    "fried-shallots",
+    "fried-garlic",
+    "dashi",
+    "sesame-seeds",
+    "beef-stock",
+    "chicken-stock",
+    "vegetable-stock",
+    "tomato-paste",
+    "butter"
+  ],
+  "notShelf": [
+    "puff-pastry",
+    "butter-puff-pastry",
+    "dark-chocolate",
+    "hot-honey",
+    "truffle-oil",
+    "horseradish-cream",
+    "aioli",
+    "tartare-sauce",
+    "spicy-mayo"
+  ],
+  "perishableAisles": [
+    "fruit-veg",
+    "meat",
+    "seafood",
+    "dairy-eggs",
+    "bakery",
+    "deli"
+  ],
+  "fruit": [
+    "apple",
+    "avocado",
+    "lemon",
+    "lime",
+    "mango",
+    "orange",
+    "pear",
+    "pineapple",
+    "pomegranate",
+    "watermelon",
+    "plantain",
+    "frozen-berries",
+    "tinned-pineapple"
+  ],
+  "freshHerbs": [
+    "basil",
+    "thai-basil",
+    "vietnamese-mint",
+    "chives",
+    "coriander",
+    "dill",
+    "fresh-oregano",
+    "mint",
+    "parsley",
+    "rosemary",
+    "sage",
+    "tarragon",
+    "thyme",
+    "curry-leaf",
+    "makrut-lime-leaf",
+    "lemongrass",
+    "garlic-chives",
+    "microgreens"
+  ],
+  "proteins": [
+    "tofu",
+    "silken-tofu",
+    "chorizo",
+    "corned-beef",
+    "ham",
+    "pastrami",
+    "pepperoni",
+    "prosciutto",
+    "salami",
+    "pate",
+    "tinned-tuna",
+    "anchovy",
+    "tofu-puffs",
+    "fish-cake",
+    "falafel"
+  ],
+  "pantryFromAsian": [
+    "rice-cakes",
+    "peking-duck-pancakes",
+    "bao-buns",
+    "corn-chips",
+    "rice-noodles",
+    "dried-shrimp",
+    "egg-noodles",
+    "fresh-rice-noodles",
+    "glass-noodles",
+    "gyoza-wrappers",
+    "hokkien-noodles",
+    "kombu",
+    "nori",
+    "prawn-crackers",
+    "ramen-noodles",
+    "rice-paper",
+    "rice-vermicelli",
+    "soba-noodles",
+    "udon-noodles",
+    "wakame",
+    "wheat-noodles",
+    "wonton-wrappers",
+    "aonori",
+    "bonito-flakes",
+    "tenkasu"
+  ]
+}

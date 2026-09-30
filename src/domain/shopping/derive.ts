@@ -194,3 +194,25 @@ export function formatListForSharing(list: ShoppingList, aisleLabel: (a: AisleId
 export function capitalise(text: string): string {
   return text.charAt(0).toUpperCase() + text.slice(1);
 }
+
+/**
+ * Adds free-text extras (for example the things a cupboard match is missing),
+ * skipping any already on the list, whatever their case. Returns the edits and
+ * the extras actually added, so the caller can offer undo.
+ */
+export function addExtras(
+  edits: WeekListEdits,
+  texts: readonly string[],
+  makeId: () => string,
+  now: number,
+): { edits: WeekListEdits; added: ListExtra[] } {
+  const onList = new Set(edits.extras.map((x) => x.text.trim().toLowerCase()));
+  const added: ListExtra[] = [];
+  for (const raw of texts) {
+    const text = raw.trim();
+    if (!text || onList.has(text.toLowerCase())) continue;
+    onList.add(text.toLowerCase());
+    added.push({ id: makeId(), text, addedAt: now });
+  }
+  return { edits: added.length ? { ...edits, extras: [...edits.extras, ...added] } : edits, added };
+}
