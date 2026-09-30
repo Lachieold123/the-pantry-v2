@@ -168,7 +168,7 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
                         colour="accent"
                         style={{ fontSize: 30, lineHeight: 42, textDecorationLine: 'underline' }}
                         accessibilityRole="button"
-                        accessibilityLabel={`Start a ${seg.label} timer`}
+                        accessibilityLabel={`Start a timer for ${seg.label}`}
                         onPress={() => void start(seg.label, step, seg.seconds, text)}
                       >
                         {seg.label}

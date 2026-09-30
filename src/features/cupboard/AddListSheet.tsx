@@ -83,7 +83,7 @@ export function AddListSheet() {
               />
             ) : (
               <Text key={`unknown-${i}`} variant="bodySmall" colour="inkMuted">
-                {`“${g.text}”: not one we know yet, so it's skipped. Try a simpler word, like “rice”.`}
+                {`“${g.text}”: not one we know yet, so it’s skipped. Try a simpler word, like “rice”.`}
               </Text>
             ),
           )}

@@ -14,7 +14,6 @@ import { deckPosition, SPIN_DELAYS, type SpinSettings } from '@/domain/suggestio
 import { logger } from '@/lib/logger';
 import { goBackOr } from '@/lib/navigation';
 import { announce } from '@/ui/a11y/announce';
-import { EmptyState } from '@/ui/patterns/EmptyState';
 import { PhotoScrim } from '@/ui/patterns/PhotoScrim';
 import { Button } from '@/ui/primitives/Button';
 import { Icon } from '@/ui/primitives/Icon';
@@ -23,7 +22,7 @@ import { Text } from '@/ui/primitives/Text';
 import { FIXED } from '@/ui/tokens/colour';
 import { SPACE, SPINNER } from '@/ui/tokens/type';
 import { SpinDeck } from './SpinDeck';
-import { HowItWorks, SettingChips, SpinnerHeader, WhyThis } from './SpinnerParts';
+import { HowItWorks, SettingChips, SpinnerEmpty, SpinnerHeader, WhyThis } from './SpinnerParts';
 import { useSpinner } from './useSpinner';
 
 const KICKER: Record<NonNullable<SpinSettings['meal']> | 'any', string> = {
@@ -37,16 +36,20 @@ const KICKER: Record<NonNullable<SpinSettings['meal']> | 'any', string> = {
 export function SpinnerScreen() {
   const router = useRouter();
   const reduceMotion = useReducedMotion();
-  const { settings, setSettings, pool, current, reasons, plan, land } = useSpinner();
+  const { settings, setSettings, pool, current, reasons, plan, land, emptyBecause } = useSpinner();
   const [flash, setFlash] = useState<Recipe | undefined>();
   const [spinning, setSpinning] = useState(false);
   const [tick, setTick] = useState(0);
   const [landed, setLanded] = useState(0);
   const [howOpen, setHowOpen] = useState(false);
   const timers = useRef<ReturnType<typeof setTimeout>[]>([]);
+  // State lags a render behind: a tap on the card and on Spin again in the same frame
+  // would both start a reel, so the guard is a ref (audit F29).
+  const busy = useRef(false);
   useEffect(() => () => timers.current.forEach(clearTimeout), []);
 
   const finish = (recipe: Recipe) => {
+    busy.current = false;
     land(recipe);
     setFlash(undefined);
     setSpinning(false);
@@ -58,10 +61,11 @@ export function SpinnerScreen() {
     );
   };
   const spin = () => {
-    if (spinning) return;
+    if (busy.current) return;
     const reel = plan();
     const last = reel?.at(-1);
     if (!reel || !last) return;
+    busy.current = true;
     if (reduceMotion) {
       finish(last);
       return;
@@ -105,19 +109,17 @@ export function SpinnerScreen() {
         <Text variant="bodyMedium" colour="inkSoft" style={{ maxWidth: 320 }}>
           {settings.fromCupboard
             ? 'Spin and we’ll pick something you can cook from what you have.'
-            : 'Spin and we’ll pick something you’d like to cook tonight.'}
+            : `Spin and we’ll pick something you’d like to cook${settings.meal === 'dinner' ? ' tonight' : ''}.`}
         </Text>
       </View>
       <SettingChips settings={settings} onChange={setSettingsFresh} />
       {!shown ? (
-        <EmptyState
-          title="No dishes match"
-          body={
-            settings.fromCupboard
-              ? 'Nothing fits with what’s in your cupboard. Loosen a setting above, or add a few things to the cupboard.'
-              : 'Loosen a setting above to find one.'
-          }
-          testID="spinner-empty"
+        <SpinnerEmpty
+          because={emptyBecause ?? 'settings'}
+          fromCupboard={settings.fromCupboard}
+          onAnything={() => setSettings({ meal: undefined, time: undefined, fromCupboard: false })}
+          onSettings={() => router.push('/settings')}
+          onAddRecipe={() => router.push('/my-recipe/edit')}
         />
       ) : (
         <>

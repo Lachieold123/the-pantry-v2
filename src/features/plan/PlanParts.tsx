@@ -7,7 +7,8 @@ import { Pressable, ScrollView, View } from 'react-native';
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { CUISINE_LABELS, formatMinutes } from '@/domain/recipes/labels';
 import { totalMinutes, type Recipe } from '@/domain/recipes/types';
-import type { ISODate, Slot } from '@/domain/plan/week';
+import { planWhere } from '@/domain/plan/summary';
+import { toISODate, type ISODate, type Slot } from '@/domain/plan/week';
 import { capitalise, type ShoppingList } from '@/domain/shopping/derive';
 import { useCookableNow } from '@/store/cookable';
 import { usePlan } from '@/store/plan';
@@ -72,7 +73,7 @@ export function DaySuggestions({ day, slot }: SuggestProps) {
       return;
     }
     const entry = addEntry(recipe.id, day, slot, recipe.servings);
-    toast({ message: `${recipe.title} added for ${slot}`, undo: () => removeEntry(entry.id) });
+    toast({ message: `${recipe.title} planned for ${planWhere(day, slot, toISODate(new Date()))}`, undo: () => removeEntry(entry.id) });
   };
   return (
     <View>

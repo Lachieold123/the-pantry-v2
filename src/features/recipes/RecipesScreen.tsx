@@ -85,7 +85,7 @@ export function RecipesScreen() {
         <View>
           <IconButton
             icon="filter"
-            shape={activeFilters ? 'filled' : 'square'}
+            shape={activeFilters ? 'fieldFilled' : 'field'}
             label={activeFilters ? `Filters, ${activeFilters} on` : 'Filters'}
             onPress={() => router.push('/filters')}
             testID="browse-filters"
@@ -129,7 +129,7 @@ export function RecipesScreen() {
           <TitleBlock kicker="Browse" tone="accent" title="Discover" />
           <EmptyState
             title="The kitchen is still testing"
-            body="Recipes appear here once they've been cooked and checked in The Pantry kitchen."
+            body="Recipes appear here once they’ve been cooked and checked in The Pantry kitchen."
           />
         </View>
       </View>
@@ -171,11 +171,12 @@ export function RecipesScreen() {
 const useStyles = makeStyles(({ colours }) => ({
   page: { flex: 1 },
   list: { paddingTop: SPACE.xs, paddingBottom: CARD.scrollBottom },
-  header: { paddingHorizontal: SPACE.gutter, gap: SPACE.md, paddingBottom: SPACE.lg },
+  // No gap under the title: TitleBlock already leaves v1's space below it (audit F111).
+  header: { paddingHorizontal: SPACE.gutter, paddingBottom: SPACE.lg },
   inset: { paddingHorizontal: SPACE.gutter },
   searchRow: { flexDirection: 'row', gap: SPACE.xs + 2, alignItems: 'center' },
   filterBadge: { position: 'absolute', top: -SPACE.xxs, right: -SPACE.xxs },
-  resultsBar: { flexDirection: 'row', alignItems: 'center', gap: SPACE.sm, minHeight: TAP_TARGET },
+  resultsBar: { flexDirection: 'row', alignItems: 'center', gap: SPACE.sm, minHeight: TAP_TARGET, marginTop: SPACE.md },
   pill: {
     flexDirection: 'row',
     alignItems: 'center',

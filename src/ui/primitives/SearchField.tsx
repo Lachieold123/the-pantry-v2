@@ -60,7 +60,7 @@ const useStyles = makeStyles(({ colours }) => ({
   box: {
     flex: 1,
     // A minimum, not a fixed height, so text at the largest sizes isn't clipped (audit F105).
-    minHeight: CHROME.searchField,
+    minHeight: CHROME.field,
     flexDirection: 'row',
     alignItems: 'center',
     gap: SPACE.xs,
@@ -70,5 +70,5 @@ const useStyles = makeStyles(({ colours }) => ({
     borderColor: colours.border,
     backgroundColor: colours.bgSoft,
   },
-  input: { flex: 1, minHeight: CHROME.searchField, color: colours.ink, ...textStyle(TYPE.body), lineHeight: undefined },
+  input: { flex: 1, minHeight: CHROME.field, color: colours.ink, ...textStyle(TYPE.body), lineHeight: undefined },
 }));

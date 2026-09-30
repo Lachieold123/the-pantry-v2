@@ -77,7 +77,7 @@ export function Controls() {
         testID="gallery-field-error"
         label="Recipe link"
         defaultValue="not a link"
-        error="That doesn't look like a web address. Check it starts with https://"
+        error="That doesn’t look like a web address. Check it starts with https://"
       />
     </View>
   );
@@ -86,7 +86,7 @@ export function Controls() {
 export function Cards({ onOpen }: { onOpen: (id: string) => void }) {
   const bolognese = getCatalogueRecipe('spaghetti-bolognese');
   const curry = getCatalogueRecipe('thai-green-curry');
-  if (!bolognese || !curry) return <Text variant="meta">{"Sample recipes aren't in this build."}</Text>;
+  if (!bolognese || !curry) return <Text variant="meta">{'Sample recipes aren’t in this build.'}</Text>;
   return (
     <View style={{ gap: SPACE.lg }}>
       <RecipeCard

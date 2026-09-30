@@ -1,4 +1,5 @@
 import { act, fireEvent, render, screen } from '@testing-library/react-native';
+import { StyleSheet } from 'react-native';
 
 import { NO_FILTERS } from '@/domain/recipes/search';
 import { useRecipeFilters } from '@/store/recipeFilters';
@@ -37,5 +38,11 @@ describe('FiltersScreen', () => {
     await act(() => useRecipeFilters.setState({ query: 'moussaka' }));
     await render(<FiltersScreen />);
     expect(screen.getByText(/^1 recipe matches$/i)).toBeTruthy();
+  });
+
+  it('titles its sections in v1’s 16/800 sans, not the serif section header (F199)', async () => {
+    await render(<FiltersScreen />);
+    const diet = StyleSheet.flatten(screen.getByRole('header', { name: 'Diet' }).props.style);
+    expect(diet).toMatchObject({ fontSize: 16, fontWeight: '800' });
   });
 });

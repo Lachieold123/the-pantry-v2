@@ -1,7 +1,7 @@
 // The week at a glance: how full it is ("2 of 21 meals") and the plan as text
 // to send someone ("Mon: Dal. Tue: Tacos…"), v1's share button (M19).
 
-import { entriesFor, SLOTS, weekDays, type ISODate, type PlanEntry, type Slot } from './week';
+import { addDays, entriesFor, fromISODate, SLOTS, weekDays, weekStart, type ISODate, type PlanEntry, type Slot } from './week';
 
 export const MEALS_PER_WEEK = SLOTS.length * 7;
 
@@ -37,4 +37,23 @@ export function weekAsText(
 /** The first meal of the day with nothing planned, or undefined when the day is full. */
 export function firstOpenSlot(entries: readonly PlanEntry[], day: ISODate): Slot | undefined {
   return SLOTS.find((slot) => entriesFor(entries, day, slot).length === 0);
+}
+
+const WEEKDAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+/**
+ * Where a planned meal went, for "Dal planned for …" (audit F141, F172):
+ * "tonight", "lunch today", "dinner tomorrow", "dinner on Thursday", and
+ * "dinner on Thursday next week" so next week's toast can't be read as this week's.
+ */
+export function planWhere(day: ISODate, slot: Slot, today: ISODate): string {
+  if (day === today) return slot === 'dinner' ? 'tonight' : `${slot} today`;
+  if (day === addDays(today, 1)) return `${slot} tomorrow`;
+  const date = fromISODate(day);
+  const name = WEEKDAYS[date.getDay()] ?? day;
+  const week = weekStart(day);
+  if (week === weekStart(today)) return `${slot} on ${name}`;
+  if (week === addDays(weekStart(today), 7)) return `${slot} on ${name} next week`;
+  return `${slot} on ${name} ${date.getDate()} ${MONTHS[date.getMonth()] ?? ''}`.trimEnd();
 }

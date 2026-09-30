@@ -140,7 +140,7 @@ function SlotCard({ entry, past }: { entry: PlanEntry; past: boolean }) {
               <Pressable
                 onPress={() => setServingsOpen(true)}
                 accessibilityRole="button"
-                accessibilityLabel={`For ${entry.servings}. Change how many it's for`}
+                accessibilityLabel={`For ${entry.servings}. Change how many it’s for`}
                 hitSlop={8}
                 testID={`plan-entry-${entry.id}-servings`}
                 style={({ pressed }) => [styles.servings, pressed && styles.pressed]}

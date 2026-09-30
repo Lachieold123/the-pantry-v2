@@ -146,6 +146,8 @@ export const CHROME = {
   avatar: 36,
   fab: 56,
   fabRing: 5,
+  /** The search field's height, which the Browse filter button matches (spec §4.10). */
+  field: 46,
   tabIcon: 24,
   drawerMax: 320,
   drawerMin: 280,
@@ -161,7 +163,6 @@ export const CHROME = {
   tabMark: 3,
   /** A small Segmented option's drawn height; hit slop grows it to 44pt inside the track's padding. */
   segmentSmall: 36,
-  searchField: 46,
   tabHide: 180,
   fabBottom: 6,
   drawerMark: 36,
@@ -201,6 +202,8 @@ export const RECIPE = {
   bullet: 9,
   stepRule: 2,
   stepNumber: 22,
+  /** Two-digit step numbers (10 and up) need more room than v1's 22 (audit F93). */
+  stepNumberWide: 30,
   iconDisc: 30,
   byline: 32,
   heroButton: 44,

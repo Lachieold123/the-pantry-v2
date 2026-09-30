@@ -44,12 +44,12 @@ export function CupboardScreen() {
 
   return (
     <Screen tab testID="cupboard-screen">
-      <TitleBlock kicker="Cupboard" title="What do you have?" subtitle="Tell us what you have. We'll show what you can cook tonight." />
+      <TitleBlock kicker="Cupboard" title="What do you have?" subtitle="Tell us what you have. We’ll show what you can cook tonight." />
       <AddBar have={have} onAdd={addOne} />
       {ids.length === 0 ? (
         <EmptyState
           title="Your cupboard is empty"
-          body="Add a few things you have and we'll show what you can cook tonight. Salt, pepper, oil and water are always assumed."
+          body="Add a few things you have and we’ll show what you can cook tonight. Salt, pepper, oil and water are always assumed."
         />
       ) : (
         <CookRail ready={ready} nearly={nearly} />

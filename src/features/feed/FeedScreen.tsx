@@ -138,7 +138,7 @@ export function FeedScreen() {
       ) : (
         <EmptyState
           title="Nothing planned for tonight"
-          body="Plan a few dinners and tonight's shows up here, ready to cook. Or let us choose."
+          body="Plan a few dinners and tonight’s shows up here, ready to cook. Or let us choose."
           action={{ label: 'Surprise me', onPress: () => router.push('/surprise') }}
           testID="feed-empty"
         />
@@ -204,7 +204,7 @@ export function FeedScreen() {
 
       {picks.length ? (
         <View>
-          <SectionHeader kicker="For you" tone="accent" title="What's cooking?" />
+          <SectionHeader kicker="For you" tone="accent" title="What’s cooking?" />
           <RecipeGrid
             recipes={picks}
             imageFor={(id) => RECIPE_IMAGES[id]}

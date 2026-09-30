@@ -27,7 +27,8 @@ const SRC_SYNTAX = [
   },
   {
     // A store hook with no selector re-renders on every change to that store (audit PERF-1).
-    selector: 'CallExpression[callee.name=/^use(Preferences|Plan|Saved|Cupboard|CookLog|MyRecipes|RecipeFilters|WelcomeBack)$/][arguments.length=0]',
+    selector:
+      'CallExpression[callee.name=/^use(Preferences|Plan|Saved|Cupboard|CookLog|MyRecipes|RecipeFilters|WelcomeBack)$/][arguments.length=0]',
     message: 'Pass a selector (or useShallow) so the component only re-renders for what it reads.',
   },
 ];
@@ -51,6 +52,19 @@ const otherFeaturePatterns = (feature) => [
     regex: `(^|/)features/(?!${feature}(/|$))`,
     message: 'Features never import other features (map §8). Move shared code down to src/ui, src/lib or src/domain.',
   },
+];
+
+// UI copy uses the typographic apostrophe (’), never the straight one, so one
+// sentence can't appear both ways across screens (audit F177, v1 QUAL-28).
+// Comments are not checked; they are not shown to the cook.
+const APOSTROPHE = "/[A-Za-z]'[A-Za-z]/";
+const APOSTROPHE_MESSAGE = 'Use the curly apostrophe (’) in UI copy, not a straight one.';
+// Log lines are for developers, not the cook, so logger.* arguments are exempt.
+const NOT_LOG = ':not(CallExpression[callee.object.name="logger"] > Literal)';
+const curlyApostrophes = [
+  { selector: `Literal[value=${APOSTROPHE}]${NOT_LOG}`, message: APOSTROPHE_MESSAGE },
+  { selector: `TemplateElement[value.raw=${APOSTROPHE}]`, message: APOSTROPHE_MESSAGE },
+  { selector: `JSXText[value=${APOSTROPHE}]`, message: APOSTROPHE_MESSAGE },
 ];
 
 module.exports = defineConfig([
@@ -92,6 +106,13 @@ module.exports = defineConfig([
         },
       ],
     },
+  },
+  {
+    // Screens and UI also get the apostrophe rule. One rule entry replaces another in flat
+    // config, so the shared and colour checks are repeated here.
+    files: ['src/features/**/*.{ts,tsx}', 'src/ui/**/*.{ts,tsx}'],
+    ignores: ['src/ui/tokens/**', '**/*.test.{ts,tsx}'],
+    rules: { 'no-restricted-syntax': ['error', ...SRC_SYNTAX, ...COLOUR_SYNTAX, ...curlyApostrophes] },
   },
   {
     // Tests may render a route or a real screen to check the wiring (e.g. the root layout's

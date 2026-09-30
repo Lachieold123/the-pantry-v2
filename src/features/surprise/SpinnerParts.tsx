@@ -8,6 +8,7 @@ import { MEAL_TYPE_LABELS } from '@/domain/recipes/labels';
 import type { TimeFilter } from '@/domain/recipes/search';
 import type { MealType } from '@/domain/recipes/types';
 import type { Reason, SpinSettings } from '@/domain/suggestions/spinner';
+import { EmptyState } from '@/ui/patterns/EmptyState';
 import { ModalSheet } from '@/ui/patterns/ModalSheet';
 import { Button } from '@/ui/primitives/Button';
 import { Chip } from '@/ui/primitives/Chip';
@@ -144,6 +145,50 @@ export function WhyThis({ reasons }: { reasons: Reason[] }) {
         </View>
       ))}
     </View>
+  );
+}
+
+type EmptyProps = {
+  because: 'no-recipes' | 'taste' | 'settings';
+  fromCupboard: boolean;
+  onAnything: () => void;
+  onSettings: () => void;
+  onAddRecipe: () => void;
+};
+
+/** An empty deck names its real cause and offers the one thing that fixes it (audit F31). */
+export function SpinnerEmpty({ because, fromCupboard, onAnything, onSettings, onAddRecipe }: EmptyProps) {
+  if (because === 'no-recipes') {
+    return (
+      <EmptyState
+        title="No recipes to spin yet"
+        body="House recipes appear once they’ve been cooked and checked in The Pantry kitchen. Your own recipes count too."
+        action={{ label: 'Add a recipe', onPress: onAddRecipe }}
+        testID="spinner-empty"
+      />
+    );
+  }
+  if (because === 'taste') {
+    return (
+      <EmptyState
+        title="Nothing fits what you eat"
+        body="Your diet, the things you avoid and the dishes marked Not for us rule out every recipe we have."
+        action={{ label: 'Open Settings', onPress: onSettings }}
+        testID="spinner-empty"
+      />
+    );
+  }
+  return (
+    <EmptyState
+      title="No dishes match"
+      body={
+        fromCupboard
+          ? 'Nothing fits with what’s in your cupboard. Loosen a setting above, or add a few things to the cupboard.'
+          : 'Nothing fits this meal and time. Loosen a setting above, or spin across everything.'
+      }
+      action={{ label: 'Spin across everything', onPress: onAnything }}
+      testID="spinner-empty"
+    />
   );
 }
 

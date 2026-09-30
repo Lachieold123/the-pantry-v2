@@ -75,5 +75,9 @@ export function useSpinner() {
     setCurrentId(recipe.id);
   };
 
-  return { settings, setSettings, pool, current, reasons, plan, land, cupboardEmpty: have.size === 0 };
+  // Why the deck is empty, so the screen blames the right thing (audit F31).
+  const emptyBecause: 'no-recipes' | 'taste' | 'settings' | undefined =
+    pool.length > 0 ? undefined : all.length === 0 ? 'no-recipes' : eligible.length === 0 ? 'taste' : 'settings';
+
+  return { settings, setSettings, pool, current, reasons, plan, land, emptyBecause, cupboardEmpty: have.size === 0 };
 }

@@ -27,7 +27,7 @@ export function RootErrorScreen({ error, retry }: ErrorBoundaryProps) {
     <View style={{ flex: 1, backgroundColor: colours.bg, paddingTop: insets.top + SPACE.xl, paddingHorizontal: SPACE.gutter }}>
       <ErrorState
         title="Something went wrong"
-        body="This screen hit a problem it couldn't recover from. Your saved recipes and plans are safe."
+        body="This screen hit a problem it couldn’t recover from. Your saved recipes and plans are safe."
         onRetry={() => void retry()}
         secondary={{ label: 'Go to Tonight', onPress: goHome, testID: 'error-home' }}
       />

@@ -36,7 +36,7 @@ appId: com.lachlanoldfield.thepantry
 - inputText: "carbonara"
 - tapOn:
     id: "add-plan-result-carbonara"
-- assertVisible: "Carbonara planned for today dinner"
+- assertVisible: "Carbonara planned for tonight"
 - assertVisible:
     id: "plan-entry-[a-z0-9]+-[a-z0-9]+"
 - assertVisible: "1 of 21 meals"

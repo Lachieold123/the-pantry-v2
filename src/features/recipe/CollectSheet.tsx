@@ -42,8 +42,8 @@ export function CollectSheet({ id }: { id: string }) {
   }
 
   return (
-    <Sheet title="Add to collection" onClose={() => goBackOr(router)}>
-      <Text variant="meta">{recipe.title}</Text>
+    <Sheet title="Add to a collection" onClose={() => goBackOr(router)}>
+      {recipe ? <Text variant="meta">{recipe.title}</Text> : null}
       {collections.length === 0 ? (
         <Text variant="body" colour="inkSoft">
           No collections yet. Name your first one below.

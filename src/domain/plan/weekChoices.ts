@@ -2,14 +2,13 @@
 import { addDays, toISODate, visibleWeeks, weekDays, type ISODate } from './week';
 
 const SHORT = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-const LONG = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-export type DayChoice = { iso: ISODate; short: string; long: string };
+export type DayChoice = { iso: ISODate; short: string };
 
 function describe(iso: ISODate, today: ISODate): DayChoice {
   const d = new Date(Number(iso.slice(0, 4)), Number(iso.slice(5, 7)) - 1, Number(iso.slice(8, 10)));
   const short = iso === today ? 'Today' : iso === addDays(today, 1) ? 'Tomorrow' : `${SHORT[d.getDay()]} ${d.getDate()}`;
-  return { iso, short, long: iso === today ? 'tonight' : (LONG[d.getDay()] ?? iso) };
+  return { iso, short };
 }
 
 export function planningDays(now: Date = new Date()): { thisWeek: DayChoice[]; nextWeek: DayChoice[] } {
