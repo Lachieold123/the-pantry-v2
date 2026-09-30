@@ -30,7 +30,7 @@ appId: host.exp.Exponent
 # Add dinner to today (the strip opens on today) from the Add sheet.
 - tapOn:
     id: "plan-add-.*-dinner"
-- assertVisible: "Add to .*"
+- assertVisible: "Add dinner for .*"
 - tapOn:
     id: "add-plan-search"
 - inputText: "carbonara"

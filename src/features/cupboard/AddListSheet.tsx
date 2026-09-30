@@ -17,6 +17,7 @@ import { Text } from '@/ui/primitives/Text';
 import { TextField } from '@/ui/primitives/TextField';
 import { SPACE } from '@/ui/tokens/type';
 import { capitalise } from './CupboardParts';
+import { goBack } from '@/lib/navigation';
 
 export function AddListSheet() {
   const router = useRouter();
@@ -38,11 +39,11 @@ export function AddListSheet() {
     const before = items;
     add([...ticked], 'list');
     toast({ message: `${ticked.size} added to your cupboard`, undo: () => restore(before) });
-    router.back();
+    goBack(router);
   };
 
   return (
-    <Sheet kicker="Cupboard" title="Add a list" onClose={() => router.back()}>
+    <Sheet kicker="Cupboard" title="Add a list" onClose={() => goBack(router)}>
       {guesses === undefined ? (
         <View style={{ gap: SPACE.md }}>
           <TextField

@@ -4,7 +4,7 @@
 import { useMemo } from 'react';
 
 import { INGREDIENTS } from '@/data/catalogue/catalogue';
-import { entriesInWeek, isPast, toISODate, type ISODate } from '@/domain/plan/week';
+import { entriesInWeek, isPast, mealCount, toISODate, type ISODate } from '@/domain/plan/week';
 import { deriveShoppingList, EMPTY_EDITS, type ShoppingList } from '@/domain/shopping/derive';
 import { useCupboard } from '@/store/cupboard';
 import { usePlan } from '@/store/plan';
@@ -23,6 +23,6 @@ export function useWeekList(week: ISODate): { list: ShoppingList; meals: number 
     const checkedKeys = new Set(Object.keys(edits.checked));
     const cupboard = new Set(cupboardItems.map((i) => i.ingredientId).filter((id) => !checkedKeys.has(id)));
     const list = deriveShoppingList({ entries: upcoming, getRecipe, index: INGREDIENTS, cupboard, edits, units });
-    return { list, meals: upcoming.length };
+    return { list, meals: mealCount(upcoming) };
   }, [entries, week, edits, cupboardItems, units, getRecipe]);
 }

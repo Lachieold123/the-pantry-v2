@@ -9,6 +9,7 @@ import { buildRecipe, EMPTY_DRAFT, myRecipeId, type RecipeDraft } from '@/domain
 import { useMyRecipes } from '@/store/myRecipes';
 import { useToast } from '@/ui/patterns/Toast';
 import { usePendingImport } from './pendingImport';
+import { goBack } from '@/lib/navigation';
 
 export function useRecipeEditor(id: string | undefined, fromImport: boolean) {
   const router = useRouter();
@@ -49,7 +50,7 @@ export function useRecipeEditor(id: string | undefined, fromImport: boolean) {
     if (!draft.title.trim() || !built.recipe) return;
     const recipeId = store();
     toast({ message: id ? 'Changes saved' : 'Recipe saved' });
-    if (id) router.back();
+    if (id) goBack(router);
     else router.replace({ pathname: '/recipe/[id]', params: { id: recipeId } });
   };
 

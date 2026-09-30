@@ -2,7 +2,7 @@
 // action row, the three info tiles and the Cook Mode button.
 import { Pressable, View } from 'react-native';
 
-import { formatMinutes } from '@/domain/recipes/labels';
+import { minutesParts } from '@/domain/recipes/labels';
 import { totalMinutes, type Recipe } from '@/domain/recipes/types';
 import { Avatar } from '@/ui/primitives/Avatar';
 import { Icon, type IconName } from '@/ui/primitives/Icon';
@@ -84,7 +84,7 @@ export function RecipeHeader(p: Props) {
       </View>
 
       <View style={styles.tiles}>
-        <Tile icon="time" value={formatMinutes(totalMinutes(recipe))} label="Total time" />
+        <Tile icon="time" {...minutesParts(totalMinutes(recipe))} label="Total time" />
         <Tile icon="difficulty" value={recipe.difficulty.charAt(0).toUpperCase() + recipe.difficulty.slice(1)} label="Difficulty" />
         <Pressable
           onPress={p.onServings}

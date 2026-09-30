@@ -46,7 +46,7 @@ export function WeekStrip({ days, selected, today, entries, onSelect }: Props) {
             accessibilityState={{ selected: on }}
             accessibilityLabel={label}
             testID={`plan-day-${day}`}
-            style={[styles.cell, on && styles.cellOn, day < today && !on && styles.past]}
+            style={[styles.cell, on && styles.cellOn]}
           >
             <Text variant="infoLabel" colour={on ? 'bgSoft' : 'inkSoft'}>
               {WEEKDAY[d.getDay()]}
@@ -83,7 +83,6 @@ const useStyles = makeStyles(({ colours }) => ({
     gap: 2,
   },
   cellOn: { backgroundColor: colours.ink, borderColor: colours.ink },
-  past: { opacity: 0.55 },
   dots: { flexDirection: 'row', gap: 3, marginTop: SPACE.xxs },
   dot: { width: PLAN.dot, height: PLAN.dot, borderRadius: PLAN.dot, backgroundColor: colours.border },
   dotOn: { backgroundColor: colours.ink },

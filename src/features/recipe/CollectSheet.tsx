@@ -12,6 +12,7 @@ import { Sheet } from '@/ui/primitives/Sheet';
 import { Text } from '@/ui/primitives/Text';
 import { TextField } from '@/ui/primitives/TextField';
 import { SPACE } from '@/ui/tokens/type';
+import { goBack } from '@/lib/navigation';
 
 export function CollectSheet({ id }: { id: string }) {
   const router = useRouter();
@@ -31,7 +32,7 @@ export function CollectSheet({ id }: { id: string }) {
   };
 
   return (
-    <Sheet title="Add to collection" onClose={() => router.back()}>
+    <Sheet title="Add to collection" onClose={() => goBack(router)}>
       {recipe ? <Text variant="meta">{recipe.title}</Text> : null}
       {collections.length === 0 ? (
         <Text variant="body" colour="inkSoft">
@@ -46,6 +47,7 @@ export function CollectSheet({ id }: { id: string }) {
                 detail={`${c.recipeIds.length}`}
                 checked={c.recipeIds.includes(id)}
                 onToggle={() => toggleInCollection(c.id, id)}
+                strikeWhenChecked={false}
                 testID={`collect-row-${c.id}`}
               />
               <Divider />
@@ -56,7 +58,7 @@ export function CollectSheet({ id }: { id: string }) {
       <View style={{ gap: SPACE.sm }}>
         <TextField
           label="New collection"
-          placeholder="Weeknights"
+          placeholder="Name your collection"
           value={name}
           onChangeText={setName}
           returnKeyType="done"

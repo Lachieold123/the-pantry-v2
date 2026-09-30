@@ -16,6 +16,7 @@ import { FIXED } from '@/ui/tokens/colour';
 import { CHROME, MOTION, RADIUS, SHADOW, SPACE } from '@/ui/tokens/type';
 import { DrawerRow } from './DrawerRow';
 import { useDrawerCounts } from './useCounts';
+import { goBack } from '@/lib/navigation';
 
 export function DrawerScreen() {
   const router = useRouter();
@@ -36,7 +37,7 @@ export function DrawerScreen() {
     if (closing) return;
     setClosing(true);
     open.set(withTiming(0, { duration: MOTION.quick }));
-    setTimeout(() => (then ? then() : router.back()), MOTION.quick);
+    setTimeout(() => (then ? then() : goBack(router)), MOTION.quick);
   };
   const tab = (href: Href) => close(() => router.dismissTo(href));
   const page = (href: Href) => close(() => router.replace(href));

@@ -16,6 +16,7 @@ import { TextField } from '@/ui/primitives/TextField';
 import { SPACE } from '@/ui/tokens/type';
 import { EditorDetails } from './EditorDetails';
 import { useRecipeEditor } from './useRecipeEditor';
+import { goBack } from '@/lib/navigation';
 
 function hostOf(url: string): string {
   try {
@@ -58,14 +59,14 @@ export function RecipeEditorScreen({ id, fromImport }: { id: string | undefined;
         <EmptyState
           title="That recipe is gone"
           body="It may have been deleted."
-          action={{ label: 'Back', onPress: () => router.back() }}
+          action={{ label: 'Back', onPress: () => goBack(router) }}
           testID="editor-missing"
         />
       </Screen>
     );
   }
 
-  const cancel = () => (editor.dirty ? setConfirmingCancel(true) : router.back());
+  const cancel = () => (editor.dirty ? setConfirmingCancel(true) : goBack(router));
 
   return (
     <Screen>
@@ -87,7 +88,7 @@ export function RecipeEditorScreen({ id, fromImport }: { id: string | undefined;
           <Text variant="body">Throw away your changes?</Text>
           <View style={{ flexDirection: 'row', gap: SPACE.sm }}>
             <Button label="Keep editing" onPress={() => setConfirmingCancel(false)} testID="editor-keep-editing" />
-            <Button label="Discard" kind="destructive" onPress={() => router.back()} testID="editor-discard" />
+            <Button label="Discard" kind="destructive" onPress={() => goBack(router)} testID="editor-discard" />
           </View>
         </View>
       ) : null}

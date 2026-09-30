@@ -64,11 +64,17 @@ export function indexForSearch(recipes: readonly Recipe[], cuisineLabel: (c: Cui
 /**
  * Every query word must match somewhere. Title matches outrank ingredient
  * and cuisine matches; exact beats prefix beats typo. Ties keep catalogue order.
+ * Typos are only forgiven for a word nothing matches as typed: otherwise
+ * "pasta" would also find every recipe with curry paste.
  */
 export function searchRecipes(index: readonly Indexed[], query: string): Recipe[] {
   const words = normaliseWords(query);
   if (words.length === 0) return index.map((i) => i.recipe);
-  const weight = { exact: 3, prefix: 2, fuzzy: 1 } as const;
+  const weight = { exact: 3, prefix: 2, fuzzy: 0 } as const;
+  const spelledRight = new Set(
+    words.filter((q) => index.some((e) => [...e.titleWords, ...e.otherWords].some((w) => w === q || (q.length >= 2 && w.startsWith(q))))),
+  );
+  const fuzzyWeight = (q: string) => (spelledRight.has(q) ? 0 : 1);
   const scored: { recipe: Recipe; score: number; order: number }[] = [];
   index.forEach((entry, order) => {
     let score = 0;
@@ -76,11 +82,11 @@ export function searchRecipes(index: readonly Indexed[], query: string): Recipe[
       let best = 0;
       for (const w of entry.titleWords) {
         const m = wordMatches(q, w);
-        if (m) best = Math.max(best, weight[m] * 10);
+        if (m) best = Math.max(best, (m === 'fuzzy' ? fuzzyWeight(q) : weight[m]) * 10);
       }
       for (const w of entry.otherWords) {
         const m = wordMatches(q, w);
-        if (m) best = Math.max(best, weight[m]);
+        if (m) best = Math.max(best, m === 'fuzzy' ? fuzzyWeight(q) : weight[m]);
       }
       if (best === 0) return;
       score += best;

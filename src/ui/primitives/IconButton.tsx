@@ -28,7 +28,7 @@ export function IconButton({ icon, label, onPress, shape = 'plain', size, colour
   const frame: Record<Shape, ViewStyle> = {
     plain: {},
     square: { backgroundColor: colours.bgSoft, borderRadius: RADIUS.lg },
-    squareOnSoft: { backgroundColor: colours.card, borderRadius: RADIUS.lg },
+    squareOnSoft: { backgroundColor: colours.bg, borderRadius: RADIUS.lg },
     round: { backgroundColor: colours.card, borderRadius: RADIUS.pill },
     chip: {
       width: 38,

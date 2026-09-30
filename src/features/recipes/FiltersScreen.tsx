@@ -17,6 +17,7 @@ import { Sheet } from '@/ui/primitives/Sheet';
 import { Switch } from '@/ui/primitives/Switch';
 import { SPACE } from '@/ui/tokens/type';
 import { useRecipeResults } from './useRecipeResults';
+import { goBack } from '@/lib/navigation';
 
 const DIETS: readonly { value: DietPreference; label: string }[] = [
   { value: 'everything', label: 'Everything' },
@@ -45,7 +46,7 @@ export function FiltersScreen() {
 
   return (
     <View style={{ flex: 1 }}>
-      <Sheet kicker={browsing ? 'Filters' : `${count} match`} title="Refine your rotation" onClose={() => router.back()}>
+      <Sheet kicker={browsing ? 'Filters' : `${count} match`} title="Refine your rotation" onClose={() => goBack(router)}>
         <View style={{ gap: SPACE.sm }}>
           <SectionHeader title="Diet" />
           <ChipRow>
@@ -136,7 +137,7 @@ export function FiltersScreen() {
       <ActionBar>
         <Button label="Clear all" kind="quiet" onPress={clear} disabled={activeFilters === 0} testID="filters-clear" />
         <View style={{ flex: 1 }}>
-          <Button label={`Show ${count}`} kind="primary" block onPress={() => router.back()} testID="filters-show" />
+          <Button label={`Show ${count}`} kind="primary" block onPress={() => goBack(router)} testID="filters-show" />
         </View>
       </ActionBar>
     </View>

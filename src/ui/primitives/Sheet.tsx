@@ -5,7 +5,7 @@ import type { ReactNode } from 'react';
 import { ScrollView, View } from 'react-native';
 
 import { makeStyles } from '@/ui/theme/makeStyles';
-import { RADIUS, SPACE } from '@/ui/tokens/type';
+import { RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 import { IconButton } from './IconButton';
 import { Text } from './Text';
 
@@ -17,9 +17,11 @@ export function Sheet({ title, kicker, onClose, children }: Props) {
     <View style={styles.sheet}>
       <View style={styles.handle} />
       <View style={styles.head}>
-        <View style={{ flex: 1 }}>
+        {/* Balances the close button so the title sits in the middle, as in v1. */}
+        <View style={styles.balance} />
+        <View style={{ flex: 1, alignItems: 'center' }}>
           {kicker ? <Text variant="kickerSmall">{kicker}</Text> : null}
-          <Text variant="sectionTitle" accessibilityRole="header">
+          <Text variant="cardTitle" align="center" numberOfLines={2} accessibilityRole="header">
             {title}
           </Text>
         </View>
@@ -48,9 +50,10 @@ const useStyles = makeStyles(({ colours }) => ({
     alignItems: 'center',
     gap: SPACE.sm,
     paddingHorizontal: SPACE.gutter,
-    paddingBottom: 14,
+    paddingBottom: SPACE.sm,
     borderBottomWidth: 1,
     borderBottomColor: colours.border,
   },
+  balance: { width: TAP_TARGET - SPACE.xxs },
   body: { padding: SPACE.gutter, gap: SPACE.lg },
 }));

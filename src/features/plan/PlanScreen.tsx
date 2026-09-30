@@ -31,7 +31,7 @@ import { IconButton } from '@/ui/primitives/IconButton';
 import { Screen } from '@/ui/primitives/Screen';
 import { Text } from '@/ui/primitives/Text';
 import { UnderlineTabs } from '@/ui/primitives/UnderlineTabs';
-import { PLAN, SPACE } from '@/ui/tokens/type';
+import { CHROME, PLAN, SPACE } from '@/ui/tokens/type';
 import { DaySlots } from './DaySlots';
 import { DaySuggestions, ListSummaryCard, WeekProgress } from './PlanParts';
 import { ShoppingListView } from './ShoppingListView';
@@ -123,7 +123,7 @@ export function PlanScreen() {
             <WeekProgress planned={progress.planned} total={progress.total} />
           </View>
         </TitleBlock>
-        <View style={{ marginBottom: PLAN.afterTabs }}>
+        <View style={{ marginTop: CHROME.titleBottom, marginBottom: PLAN.afterTabs }}>
           <UnderlineTabs<PlanView> label="Plan view" options={VIEWS} value={view} onChange={setView} />
         </View>
         {view === 'week' ? (

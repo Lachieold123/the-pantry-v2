@@ -154,7 +154,7 @@ export function FeedScreen() {
             horizontal
             showsHorizontalScrollIndicator={false}
             style={{ marginHorizontal: -SPACE.gutter }}
-            contentContainerStyle={{ gap: SPACE.sm, paddingHorizontal: SPACE.gutter }}
+            contentContainerStyle={{ gap: SPACE.sm, paddingHorizontal: SPACE.gutter, alignItems: 'flex-start' }}
           >
             {fromCupboard.map((m) => (
               <MatchCard

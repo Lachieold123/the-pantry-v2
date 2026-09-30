@@ -1,8 +1,8 @@
 // Cook Mode: one step at a time in large type, screen kept on, tap anywhere
 // to move on (D-004), timers you start with a tap, and Done logs the cook.
-import { useKeepAwake } from 'expo-keep-awake';
+import { activateKeepAwakeAsync, deactivateKeepAwake } from 'expo-keep-awake';
 import { useRouter } from 'expo-router';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Pressable, ScrollView, View } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, { FadeIn, useReducedMotion } from 'react-native-reanimated';
@@ -29,11 +29,18 @@ import { MOTION, SPACE } from '@/ui/tokens/type';
 import { TimerBar } from './TimerBar';
 import { useCookTimers } from './useCookTimers';
 import { UsedUpSheet } from './UsedUpSheet';
+import { goBack } from '@/lib/navigation';
 
 const SWIPE_DISTANCE = 60;
 
 export function CookScreen({ id, servings: requested }: { id: string; servings?: number | undefined }) {
-  useKeepAwake('cook-mode');
+  // Keep the screen on while cooking. Where it can't (some browsers), cooking still works.
+  useEffect(() => {
+    activateKeepAwakeAsync('cook-mode').catch(() => undefined);
+    return () => {
+      void Promise.resolve(deactivateKeepAwake('cook-mode')).catch(() => undefined);
+    };
+  }, []);
   const router = useRouter();
   const toast = useToast();
   const insets = useSafeAreaInsets();
@@ -58,7 +65,7 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
         <EmptyState
           title="We couldn’t find that recipe"
           body="It may have been removed."
-          action={{ label: 'Close', onPress: () => router.back() }}
+          action={{ label: 'Close', onPress: () => goBack(router) }}
           testID="cook-missing"
         />
       </View>
@@ -89,7 +96,7 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
     setAskUsedUp(false);
     const event = markCooked(recipe.id);
     for (const i of usedUp) removeFromCupboard(i);
-    router.back();
+    goBack(router);
     toast({ message: `${recipe.title} cooked. Nice work.`, undo: () => undoCooked(event.id) });
   };
   const done = () => (used.length ? setAskUsedUp(true) : finish([]));
@@ -98,7 +105,7 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
   return (
     <View style={{ flex: 1, backgroundColor: colours.bg, paddingTop: insets.top, paddingBottom: Math.max(insets.bottom, SPACE.sm) }}>
       <View style={{ flexDirection: 'row', alignItems: 'center', paddingHorizontal: SPACE.xs }}>
-        <IconButton icon="close" label="Leave Cook Mode" onPress={() => router.back()} testID="cook-close" />
+        <IconButton icon="close" label="Leave Cook Mode" onPress={() => goBack(router)} testID="cook-close" />
         <Text variant="kicker" align="center" style={{ flex: 1 }} accessibilityLiveRegion="polite">
           Step {step + 1} of {total}
         </Text>

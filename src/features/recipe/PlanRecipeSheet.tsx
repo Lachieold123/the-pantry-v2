@@ -6,7 +6,6 @@ import { View } from 'react-native';
 import type { Slot } from '@/domain/plan/week';
 import { usePlan } from '@/store/plan';
 import { useRecipe } from '@/store/recipeBook';
-import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { useToast } from '@/ui/patterns/Toast';
 import { Button } from '@/ui/primitives/Button';
 import { Chip } from '@/ui/primitives/Chip';
@@ -16,6 +15,7 @@ import { Stepper } from '@/ui/primitives/Stepper';
 import { Text } from '@/ui/primitives/Text';
 import { SPACE } from '@/ui/tokens/type';
 import { planningDays } from './weekChoices';
+import { goBack } from '@/lib/navigation';
 
 const SLOTS = [
   { value: 'breakfast', label: 'Breakfast' },
@@ -42,7 +42,7 @@ export function PlanRecipeSheet({ id }: { id: string }) {
 
   if (!recipe) {
     return (
-      <Sheet title="Plan" onClose={() => router.back()}>
+      <Sheet title="Plan" onClose={() => goBack(router)}>
         <Text variant="body">This recipe isn’t available any more.</Text>
       </Sheet>
     );
@@ -57,18 +57,20 @@ export function PlanRecipeSheet({ id }: { id: string }) {
   const add = () => {
     const entry = addEntry(recipe.id, day, slot, servings);
     toast({ message: `${recipe.title} planned for ${where}`, undo: () => removeEntry(entry.id) });
-    router.back();
+    goBack(router);
   };
 
   return (
-    <Sheet title={`Plan ${recipe.title}`} onClose={() => router.back()}>
+    <Sheet title={`Plan ${recipe.title}`} onClose={() => goBack(router)}>
       {[
         { title: 'This week', key: 'this', list: days.thisWeek },
         { title: 'Next week', key: 'next', list: days.nextWeek },
       ].map((w) =>
         w.list.length ? (
           <View key={w.title} style={{ gap: SPACE.sm }}>
-            <SectionHeader title={w.title} />
+            <Text variant="kickerSection" accessibilityRole="header">
+              {w.title}
+            </Text>
             <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: SPACE.xs }}>
               {/* Ids by position, so a test can always pick "today" (this-0) or next week's first day (next-0). */}
               {w.list.map((d, i) => (
@@ -85,11 +87,15 @@ export function PlanRecipeSheet({ id }: { id: string }) {
         ) : null,
       )}
       <View style={{ gap: SPACE.sm }}>
-        <SectionHeader title="Meal" />
+        <Text variant="kickerSection" accessibilityRole="header">
+          Meal
+        </Text>
         <Segmented<Slot> label="Meal" options={SLOTS} value={slot} onChange={setSlot} />
       </View>
       <View style={{ gap: SPACE.sm }}>
-        <SectionHeader title="For" />
+        <Text variant="kickerSection" accessibilityRole="header">
+          For
+        </Text>
         <Stepper
           label="Servings"
           value={servings}

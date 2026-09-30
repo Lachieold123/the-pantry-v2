@@ -91,3 +91,19 @@ export const PANTRY_CATEGORY = {
 } as const;
 export type PantryCategory = keyof typeof PANTRY_CATEGORY;
 export const PANTRY_CHIP_INK = '#2A2218';
+
+/**
+ * The same jars for dark mode. v1 kept the light pastels, which glared on
+ * black (spec §8.2 #7, D-025): these are deep tints with light ink instead.
+ */
+export const PANTRY_CATEGORY_DARK: Readonly<Record<PantryCategory, { tint: string; bold: string; soft: string }>> = {
+  proteins: { tint: '#3A2320', bold: '#F0A393', soft: '#7A4238' },
+  vegetables: { tint: '#1E3324', bold: '#8FD6A0', soft: '#3F6E4B' },
+  fruit: { tint: '#372D17', bold: '#E7C67A', soft: '#7A6330' },
+  sauces: { tint: '#3A2618', bold: '#F2AE82', soft: '#7C4F33' },
+  pantry: { tint: '#362A18', bold: '#E9C286', soft: '#7A5E32' },
+  dairy: { tint: '#332E18', bold: '#E2CF83', soft: '#6F6430' },
+  herbs: { tint: '#22321B', bold: '#A9D78F', soft: '#4E6E3D' },
+  other: { tint: '#38281A', bold: '#EFB585', soft: '#7A5536' },
+};
+export const PANTRY_CHIP_INK_DARK = '#EDE6DA';

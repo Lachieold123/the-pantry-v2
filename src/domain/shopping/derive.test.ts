@@ -169,3 +169,32 @@ describe('clear all and A–Z', () => {
     assert.ok(names.length > 2);
   });
 });
+
+describe('ingredients added by hand', () => {
+  it('merge with the same ingredient from the plan, as one line that ticks like the rest', () => {
+    const edits = addExtras(
+      EMPTY_EDITS,
+      [{ text: 'Brown onion', ingredientId: 'brown-onion' }, 'Dishwashing liquid'],
+      () => `x${Math.random()}`,
+      1,
+    ).edits;
+    const l = list([entry('bolognese')], { edits });
+    const onions = l.sections.flatMap((s) => s.items).filter((i) => i.key === 'brown-onion');
+    assert.equal(onions.length, 1);
+    assert.deepEqual(
+      l.extras.map((x) => x.extra.text),
+      ['Dishwashing liquid'],
+    );
+  });
+  it('show on their own, in their aisle, when no planned recipe needs them', () => {
+    const edits = addExtras(EMPTY_EDITS, [{ text: 'Brown onion', ingredientId: 'brown-onion' }], () => 'x1', 1).edits;
+    const item = list([], { edits }).sections.flatMap((s) => s.items)[0];
+    assert.equal(item?.key, 'brown-onion');
+    assert.equal(item?.amount, '');
+    assert.deepEqual(item?.recipeIds, []);
+  });
+  it("aren't added twice", () => {
+    const first = addExtras(EMPTY_EDITS, [{ text: 'Brown onion', ingredientId: 'brown-onion' }], () => 'x1', 1);
+    assert.equal(addExtras(first.edits, [{ text: 'Onions', ingredientId: 'brown-onion' }], () => 'x2', 2).added.length, 0);
+  });
+});

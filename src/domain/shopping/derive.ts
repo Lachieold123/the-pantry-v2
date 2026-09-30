@@ -12,7 +12,14 @@ import { convert, UNITS, type UnitId } from '../ingredients/units';
 import type { PlanEntry } from '../plan/week';
 import { allLines, type Recipe } from '../recipes/types';
 
-export type ListExtra = { id: string; text: string; addedAt: number };
+/**
+ * Something added to the list by hand. When it's a known ingredient (from the
+ * Cupboard's "add one thing" or a recipe's "add what's missing") it carries the
+ * id, so it merges with the same ingredient from the plan and, once ticked,
+ * moves into the cupboard like any other line. Free text ("dishwashing
+ * liquid") stays a plain extra.
+ */
+export type ListExtra = { id: string; text: string; addedAt: number; ingredientId?: string | undefined };
 
 /** The cook's edits to one week's list. Values record what the edit applied to. */
 export type WeekListEdits = {
@@ -110,6 +117,18 @@ export function deriveShoppingList(args: {
     }
   }
 
+  // Known ingredients added by hand join the plan's lines, so they merge and tick like them.
+  for (const extra of edits.extras) {
+    if (!extra.ingredientId) continue;
+    const list = groups.get(extra.ingredientId) ?? [];
+    list.push({
+      line: { item: extra.text, raw: extra.text, ingredientId: extra.ingredientId },
+      entryId: `extra:${extra.id}`,
+      recipeId: '',
+    });
+    groups.set(extra.ingredientId, list);
+  }
+
   const bySection = new Map<AisleId, ShoppingItem[]>();
   const inCupboard: ShoppingItem[] = [];
   let removedCount = 0;
@@ -134,7 +153,7 @@ export function deriveShoppingList(args: {
       name,
       aisle: def?.aisle ?? 'other',
       amount,
-      recipeIds: [...new Set(contributions.map((c) => c.recipeId))],
+      recipeIds: [...new Set(contributions.map((c) => c.recipeId).filter(Boolean))],
       optional: contributions.every((c) => c.line.optional === true),
       checked: edits.checked[key] === amount,
       sourceStamp,
@@ -152,7 +171,7 @@ export function deriveShoppingList(args: {
   return {
     sections: AISLES.filter((a) => bySection.has(a)).map((aisle) => ({ aisle, items: (bySection.get(aisle) ?? []).sort(byName) })),
     inCupboard: inCupboard.sort(byName),
-    extras: edits.extras.map((extra) => ({ extra, checked: edits.checkedExtras.includes(extra.id) })),
+    extras: edits.extras.filter((x) => !x.ingredientId).map((extra) => ({ extra, checked: edits.checkedExtras.includes(extra.id) })),
     removedCount,
   };
 }
@@ -207,24 +226,31 @@ export function capitalise(text: string): string {
   return text.charAt(0).toUpperCase() + text.slice(1);
 }
 
+/** Something to put on the list: free text, or a known ingredient by id. */
+export type ListAddition = { text: string; ingredientId?: string | undefined };
+
 /**
- * Adds free-text extras (for example the things a cupboard match is missing),
- * skipping any already on the list, whatever their case. Returns the edits and
- * the extras actually added, so the caller can offer undo.
+ * Adds extras (for example the things a cupboard match is missing), skipping
+ * any already on the list: the same ingredient, or the same text whatever its
+ * case. Returns the edits and the extras actually added, so the caller can
+ * offer undo.
  */
 export function addExtras(
   edits: WeekListEdits,
-  texts: readonly string[],
+  additions: readonly (ListAddition | string)[],
   makeId: () => string,
   now: number,
 ): { edits: WeekListEdits; added: ListExtra[] } {
   const onList = new Set(edits.extras.map((x) => x.text.trim().toLowerCase()));
+  const ids = new Set(edits.extras.flatMap((x) => (x.ingredientId ? [x.ingredientId] : [])));
   const added: ListExtra[] = [];
-  for (const raw of texts) {
+  for (const a of additions) {
+    const { text: raw, ingredientId } = typeof a === 'string' ? { text: a, ingredientId: undefined } : a;
     const text = raw.trim();
-    if (!text || onList.has(text.toLowerCase())) continue;
+    if (!text || onList.has(text.toLowerCase()) || (ingredientId && ids.has(ingredientId))) continue;
     onList.add(text.toLowerCase());
-    added.push({ id: makeId(), text, addedAt: now });
+    if (ingredientId) ids.add(ingredientId);
+    added.push({ id: makeId(), text, addedAt: now, ...(ingredientId ? { ingredientId } : {}) });
   }
   return { edits: added.length ? { ...edits, extras: [...edits.extras, ...added] } : edits, added };
 }

@@ -66,11 +66,20 @@ export const AISLE_LABELS: Readonly<Record<AisleId, string>> = {
 };
 
 /** "1 hr 45", "35 min". */
+/** v1's short durations: "20m", "1h 30m", "2h". */
 export function formatMinutes(total: number): string {
-  if (total < 60) return `${total} min`;
+  if (total < 60) return `${total}m`;
   const h = Math.floor(total / 60);
   const m = total % 60;
-  return m === 0 ? `${h} hr` : `${h} hr ${m}`;
+  return m === 0 ? `${h}h` : `${h}h ${m}m`;
+}
+
+/** A duration split for a big number with a small unit (the recipe's info tiles): "45" + "min", "1h 30" + "min". */
+export function minutesParts(total: number): { value: string; unit: string } {
+  if (total < 60) return { value: `${total}`, unit: 'min' };
+  const h = Math.floor(total / 60);
+  const m = total % 60;
+  return m === 0 ? { value: `${h}`, unit: h === 1 ? 'hr' : 'hrs' } : { value: `${h}h ${m}`, unit: 'min' };
 }
 
 export const AVOID_LABELS: Readonly<Record<AvoidOption, string>> = {

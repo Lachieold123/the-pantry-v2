@@ -77,7 +77,7 @@ describe('why this', () => {
     const reasons = spinReasons({ recipe: dinner, cupboard: result([]), saved: false, cooked: false, nameOf: name });
     assert.deepEqual(reasons, [
       { key: 'Pantry', value: 'Uses 2 things you have. Ready to cook' },
-      { key: 'Time', value: '40 min: 10 prep, 30 cooking' },
+      { key: 'Time', value: '40m · 10m prep, 30m cooking' },
       { key: 'For you', value: 'Something you haven’t cooked yet' },
     ]);
   });

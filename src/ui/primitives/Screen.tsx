@@ -26,7 +26,8 @@ export function Screen({ children, scroll = true, edges = 'top', tab = false, su
   const { colours } = useTheme();
   const insets = useSafeAreaInsets();
   const padding = {
-    paddingTop: (edges === 'top' && !tab ? insets.top : 0) + (tab ? SPACE.xs : SPACE.md),
+    // A tab's title block brings its own top space, as v1's did under the masthead.
+    paddingTop: (edges === 'top' && !tab ? insets.top : 0) + (tab ? 0 : SPACE.md),
     paddingHorizontal: SPACE.gutter,
     paddingBottom: tab ? CARD.scrollBottom : SPACE.xxl + insets.bottom,
     gap: SPACE.lg,

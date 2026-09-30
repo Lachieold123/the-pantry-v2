@@ -11,6 +11,7 @@ import { Text } from '@/ui/primitives/Text';
 import { TextField } from '@/ui/primitives/TextField';
 import { SPACE } from '@/ui/tokens/type';
 import { usePendingImport } from './pendingImport';
+import { goBack } from '@/lib/navigation';
 
 const TIMEOUT_MS = 15_000;
 
@@ -60,7 +61,7 @@ export function ImportLinkScreen() {
   };
 
   return (
-    <Sheet title="Import from a link" onClose={() => router.back()}>
+    <Sheet title="Import from a link" onClose={() => goBack(router)}>
       <Text variant="body" colour="inkSoft">
         Paste a link to a recipe page. You’ll check it over before it’s saved.
       </Text>

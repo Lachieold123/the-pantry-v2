@@ -12,14 +12,15 @@ import { longDate } from '@/lib/dates';
 import { usePlan } from '@/store/plan';
 import { useAllRecipes, useRecipeLookup } from '@/store/recipeBook';
 import { useSaved } from '@/store/saved';
+import { useForYou } from '@/store/suggestions';
 import { RecipeCard } from '@/ui/patterns/RecipeCard';
-import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { useToast } from '@/ui/patterns/Toast';
 import { SearchField } from '@/ui/primitives/SearchField';
 import { Segmented } from '@/ui/primitives/Segmented';
 import { Sheet } from '@/ui/primitives/Sheet';
 import { Text } from '@/ui/primitives/Text';
 import { SPACE } from '@/ui/tokens/type';
+import { goBack } from '@/lib/navigation';
 
 const SLOTS = [
   { value: 'breakfast', label: 'Breakfast' },
@@ -47,25 +48,29 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
     () => bookmarks.map((b) => getRecipe(b.recipeId)).filter((r): r is Recipe => r !== undefined),
     [bookmarks, getRecipe],
   );
+  // Before a search, ideas that suit this cook (diet, taste, not planned or cooked lately), not the catalogue A–Z.
+  const forYou = useForYou(MAX_RESULTS * 3);
   const results = useMemo(() => {
-    const pool = query.trim() ? searchRecipes(searchIndex, query) : all.filter((r) => r.mealTypes.includes(slot));
+    const pool = query.trim() ? searchRecipes(searchIndex, query) : forYou.filter((r) => r.mealTypes.includes(slot));
     return pool.filter((r) => !hidden.includes(r.id)).slice(0, MAX_RESULTS);
-  }, [query, slot, hidden, searchIndex, all]);
+  }, [query, slot, hidden, searchIndex, forYou]);
 
   const dayName = day === toISODate(new Date()) ? 'today' : (longDate(fromISODate(day)).split(' ')[0] ?? day);
   const pick = (recipe: Recipe) => {
     const entry = addEntry(recipe.id, day, slot, recipe.servings);
     toast({ message: `${recipe.title} planned for ${dayName} ${slot}`, undo: () => removeEntry(entry.id) });
-    router.back();
+    goBack(router);
   };
 
   return (
-    <Sheet title={`Add to ${longDate(fromISODate(day))}`} onClose={() => router.back()}>
+    <Sheet kicker="Plan" title={`Add ${slot} for ${dayName === 'today' ? 'today' : dayName}`} onClose={() => goBack(router)}>
       <Segmented<Slot> label="Meal" options={SLOTS} value={slot} onChange={setSlot} />
       <SearchField value={query} onChange={setQuery} placeholder="Search recipes" label="Search recipes to plan" testID="add-plan-search" />
       {!query.trim() && saved.length ? (
         <View style={{ gap: SPACE.sm }}>
-          <SectionHeader title="Saved" />
+          <Text variant="kickerSection" accessibilityRole="header">
+            Saved
+          </Text>
           {saved.map((r) => (
             <RecipeCard
               key={r.id}
@@ -79,7 +84,9 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
         </View>
       ) : null}
       <View style={{ gap: SPACE.sm }}>
-        <SectionHeader title={query.trim() ? 'Results' : `Ideas for ${slot}`} />
+        <Text variant="kickerSection" accessibilityRole="header">
+          {query.trim() ? 'Results' : `Ideas for ${slot}`}
+        </Text>
         {results.length === 0 ? (
           <Text variant="body" colour="inkSoft">
             No recipes match. Check the spelling, or try an ingredient.

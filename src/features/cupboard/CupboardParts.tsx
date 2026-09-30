@@ -116,7 +116,7 @@ export function CookRail({ ready, nearly }: { ready: CookableMatch[]; nearly: Co
         horizontal
         showsHorizontalScrollIndicator={false}
         style={{ marginHorizontal: -SPACE.gutter }}
-        contentContainerStyle={{ gap: SPACE.sm, paddingHorizontal: SPACE.gutter }}
+        contentContainerStyle={{ gap: SPACE.sm, paddingHorizontal: SPACE.gutter, alignItems: 'flex-start' }}
       >
         {matches.map((m) => (
           <MatchCard
@@ -172,7 +172,7 @@ export function Jars({ ids, onRemove, onClear }: JarProps) {
         <Text variant="kickerSection" style={{ flex: 1 }} numberOfLines={1}>
           {`Your cupboard · ${ids.length}`}
         </Text>
-        <Button label="Clear" kind="quiet" onPress={onClear} testID="cupboard-clear" />
+        <Button label="Clear" kind="destructive" onPress={onClear} testID="cupboard-clear" />
       </View>
       {groups.map((g) => (
         <View key={g.category} style={{ gap: SPACE.xs }}>

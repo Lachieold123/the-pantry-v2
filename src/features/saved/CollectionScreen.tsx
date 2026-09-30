@@ -15,6 +15,7 @@ import { Screen } from '@/ui/primitives/Screen';
 import { TextField } from '@/ui/primitives/TextField';
 import { SPACE } from '@/ui/tokens/type';
 import { RecipeRows } from './SavedLists';
+import { goBack } from '@/lib/navigation';
 
 export function CollectionScreen({ id }: { id: string }) {
   const getRecipe = useRecipeLookup();
@@ -31,11 +32,11 @@ export function CollectionScreen({ id }: { id: string }) {
   if (!collection) {
     return (
       <Screen>
-        <IconButton icon="back" label="Back" onPress={() => router.back()} testID="back" />
+        <IconButton icon="back" label="Back" onPress={() => goBack(router)} testID="back" />
         <EmptyState
           title="This collection is gone"
           body="It may have been deleted."
-          action={{ label: 'Back to Saved', onPress: () => router.back() }}
+          action={{ label: 'Back to Saved', onPress: () => goBack(router) }}
           testID="collection-missing"
         />
       </Screen>
@@ -48,7 +49,7 @@ export function CollectionScreen({ id }: { id: string }) {
 
   return (
     <Screen testID="collection-screen">
-      <IconButton icon="back" label="Back" onPress={() => router.back()} testID="back" />
+      <IconButton icon="back" label="Back" onPress={() => goBack(router)} testID="back" />
       <TitleBlock kicker="Collection" title={collection.name} />
       {editing ? (
         <View style={{ gap: SPACE.sm }}>
@@ -91,7 +92,7 @@ export function CollectionScreen({ id }: { id: string }) {
             kind="destructive"
             onPress={() => {
               const removed = del(id);
-              router.back();
+              goBack(router);
               if (removed) toast({ message: `${removed.name} deleted`, undo: () => restore(removed) });
             }}
             testID="collection-delete"

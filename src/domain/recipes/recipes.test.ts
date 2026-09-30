@@ -90,6 +90,18 @@ describe('search', () => {
     assert.equal(searchRecipes(searchIndex, 'zzqxj').length, 0);
     assert.equal(searchRecipes(searchIndex, '  ').length, catalogue.length);
   });
+  it('only forgives typos for words nothing matches as typed ("pasta" is not "paste")', () => {
+    const results = searchRecipes(searchIndex, 'pasta');
+    assert.ok(results.length > 0);
+    const words = (r: (typeof results)[number]) => [r.title, ...allLines(r).map((l) => l.item), r.cuisine].join(' ').toLowerCase();
+    assert.ok(
+      results.every((r) => /pasta/.test(words(r))),
+      results
+        .filter((r) => !/pasta/.test(words(r)))
+        .map((r) => r.id)
+        .join(', '),
+    );
+  });
   it('does not fuzz short words', () => {
     assert.equal(editDistance('pie', 'pig', 0), 1);
   });

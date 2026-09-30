@@ -7,13 +7,16 @@ import { useRouter } from 'expo-router';
 import { useMemo } from 'react';
 import { ScrollView, View } from 'react-native';
 
+import { INGREDIENTS } from '@/data/catalogue/catalogue';
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { dailyPicks, moods, presetActive, quickChips, recipeOfTheDay, recipesFor, togglePreset } from '@/domain/recipes/browse';
 import { needLine } from '@/domain/cupboard/cookable';
 import { toISODate } from '@/domain/plan/week';
-import { seasonOn } from '@/domain/recipes/search';
+import { NO_FILTERS, seasonOn } from '@/domain/recipes/search';
 import type { Recipe } from '@/domain/recipes/types';
+import { eligibleForSurprise } from '@/domain/suggestions/surprise';
 import { ingredientName, useCookableNow } from '@/store/cookable';
+import { usePreferences } from '@/store/preferences';
 import { useAllRecipes } from '@/store/recipeBook';
 import { useRecipeFilters } from '@/store/recipeFilters';
 import { useBookmarks, useSaved } from '@/store/saved';
@@ -32,6 +35,8 @@ export function BrowseSections() {
   const router = useRouter();
   const all = useAllRecipes();
   const hidden = useSaved((s) => s.hidden);
+  const diet = usePreferences((s) => s.diet);
+  const avoid = usePreferences((s) => s.avoid);
   const cook = useCookableNow();
   const query = useRecipeFilters((s) => s.query);
   const filters = useRecipeFilters((s) => s.filters);
@@ -43,8 +48,8 @@ export function BrowseSections() {
   const open = (id: string) => router.push({ pathname: '/recipe/[id]', params: { id } });
 
   const data = useMemo(() => {
-    // "Not for us" dishes never appear here.
-    const visible = all.filter((r) => !hidden.includes(r.id));
+    // Suggestions follow the same hard rules as everywhere else: diet, avoid list and "not for us".
+    const visible = eligibleForSurprise({ recipes: all, filters: NO_FILTERS, diet, avoid, hidden: new Set(hidden), index: INGREDIENTS });
     const featured = recipeOfTheDay(visible, today, (r) => image(r.id) !== undefined);
     const shelves = moods(season)
       .map((mood) => ({ mood, recipes: recipesFor(mood, visible) }))
@@ -55,7 +60,7 @@ export function BrowseSections() {
       PICKS,
     );
     return { visible, featured, shelves, picks };
-  }, [all, hidden, today, season]);
+  }, [all, hidden, diet, avoid, today, season]);
   // One engine for every cupboard surface: diet, avoid list and "not for us" always apply.
   const canMake = [...cook.ready, ...cook.nearly].slice(0, PICKS);
 
@@ -144,13 +149,7 @@ export function BrowseSections() {
       <View style={{ paddingHorizontal: SPACE.gutter, gap: SPACE.md }}>
         <SectionHeader kicker="All recipes" tone="accent" title="Something new" />
         <RecipeGrid recipes={data.picks} imageFor={image} onOpen={open} isSaved={bookmarks.isSaved} onToggleSave={bookmarks.toggle} />
-        <Button
-          label={`See all ${data.visible.length} recipes`}
-          kind="secondary"
-          block
-          onPress={() => setShowAll(true)}
-          testID="browse-see-all"
-        />
+        <Button label="See all recipes" kind="secondary" block onPress={() => setShowAll(true)} testID="browse-see-all" />
       </View>
     </View>
   );

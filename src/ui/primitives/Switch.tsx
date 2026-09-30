@@ -21,9 +21,10 @@ export function Switch({ label, detail, value, onChange, testID }: Props) {
         onValueChange={onChange}
         accessibilityLabel={label}
         {...(testID ? { testID } : {})}
-        trackColor={{ true: colours.accent, false: colours.bgSoft }}
+        // Off uses a mid grey so it shows on white and on the grey Settings page alike.
+        trackColor={{ true: colours.accent, false: colours.inkSubtle }}
         thumbColor={FIXED.onPhoto}
-        ios_backgroundColor={colours.bgSoft}
+        ios_backgroundColor={colours.inkSubtle}
       />
     </View>
   );

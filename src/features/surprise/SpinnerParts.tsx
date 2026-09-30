@@ -180,7 +180,7 @@ export function HowItWorks({ visible, onClose }: { visible: boolean; onClose: ()
 
 const useStyles = makeStyles(({ colours }) => ({
   option: { flexDirection: 'row', alignItems: 'center', minHeight: 48, paddingHorizontal: SPACE.xs },
-  reason: { flexDirection: 'row', alignItems: 'center', paddingVertical: SPACE.sm, gap: SPACE.sm },
+  reason: { flexDirection: 'row', alignItems: 'flex-start', paddingVertical: SPACE.sm, gap: SPACE.sm },
   howRow: { alignItems: 'flex-start' },
   divided: { borderTopWidth: 1, borderTopColor: colours.border },
 }));

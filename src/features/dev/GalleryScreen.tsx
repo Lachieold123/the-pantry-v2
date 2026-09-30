@@ -19,6 +19,7 @@ import { Segmented } from '@/ui/primitives/Segmented';
 import { Switch } from '@/ui/primitives/Switch';
 import { SPACE } from '@/ui/tokens/type';
 import { Block, Cards, Controls, Swatches, TypeScale } from './GalleryParts';
+import { goBack } from '@/lib/navigation';
 
 const THEMES = [
   { value: 'light', label: 'Paper' },
@@ -41,7 +42,7 @@ export function GalleryScreen() {
       <TitleBlock
         kicker="Development only"
         title="Gallery"
-        action={<IconButton icon="close" label="Close gallery" onPress={() => router.back()} testID="gallery-close" />}
+        action={<IconButton icon="close" label="Close gallery" onPress={() => goBack(router)} testID="gallery-close" />}
       />
       <Segmented<Appearance> label="Theme" options={THEMES} value={appearance === 'dark' ? 'dark' : 'light'} onChange={setAppearance} />
       <Switch label="High contrast" value={highContrast} onChange={setHighContrast} testID="gallery-high-contrast" />

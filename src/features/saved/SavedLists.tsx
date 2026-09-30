@@ -118,7 +118,7 @@ export function CollectionsList() {
       <View style={{ gap: SPACE.sm }}>
         <TextField
           label="New collection"
-          placeholder="Weeknights"
+          placeholder="Name your collection"
           value={name}
           onChangeText={setName}
           onSubmitEditing={create}

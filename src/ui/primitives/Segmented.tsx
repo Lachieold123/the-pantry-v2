@@ -46,7 +46,14 @@ export function Segmented<T extends string>({ options, value, onChange, label, s
 }
 
 const useStyles = makeStyles(({ colours }) => ({
-  track: { flexDirection: 'row', backgroundColor: colours.bgSoft, borderRadius: RADIUS.pill, padding: SPACE.xxs },
+  track: {
+    flexDirection: 'row',
+    backgroundColor: colours.bgSoft,
+    borderWidth: 1,
+    borderColor: colours.border,
+    borderRadius: RADIUS.pill,
+    padding: SPACE.xxs,
+  },
   segment: { flex: 1, minHeight: TAP_TARGET, justifyContent: 'center', borderRadius: RADIUS.pill, paddingHorizontal: SPACE.xs },
   small: { minHeight: 36 },
   selected: { backgroundColor: colours.ink },

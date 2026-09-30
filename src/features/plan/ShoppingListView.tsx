@@ -29,6 +29,7 @@ export function ShoppingListView({ week, weekLabel, onBrowse }: { week: ISODate;
   const edits = usePlan((s) => s.listEdits[week]) ?? EMPTY_EDITS;
   const editList = usePlan((s) => s.editList);
   const moveTicked = useCupboard((s) => s.moveTickedToCupboard);
+  const cupboardItems = useCupboard((s) => s.items);
   const addToCupboard = useCupboard((s) => s.add);
   const removeFromCupboard = useCupboard((s) => s.remove);
   const [byAisle, setByAisle] = useState(true);
@@ -36,7 +37,10 @@ export function ShoppingListView({ week, weekLabel, onBrowse }: { week: ISODate;
 
   const tick = (item: ShoppingItem) => {
     edit((e) => toggleChecked(e, item));
-    if (!item.checked && moveTicked && INGREDIENTS.byId.has(item.key)) addToCupboard([item.key], 'shop');
+    if (!moveTicked || !INGREDIENTS.byId.has(item.key)) return;
+    if (!item.checked) addToCupboard([item.key], 'shop');
+    // Unticking takes back only what the tick put there, never something you already had.
+    else if (cupboardItems.some((c) => c.ingredientId === item.key && c.source === 'shop')) removeFromCupboard(item.key);
   };
   const remove = (item: ShoppingItem) => {
     edit((e) => removeItem(e, item));

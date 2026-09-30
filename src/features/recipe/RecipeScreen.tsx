@@ -34,6 +34,7 @@ import { Ingredients, Method, Notes } from './RecipeBody';
 import { CupboardSummary } from './CupboardSummary';
 import { RecipeHeader } from './RecipeHeader';
 import { ServingsSheet } from './ServingsSheet';
+import { goBack } from '@/lib/navigation';
 
 export function RecipeScreen({ id }: { id: string }) {
   const router = useRouter();
@@ -110,9 +111,15 @@ export function RecipeScreen({ id }: { id: string }) {
         </RecipeImage>
       </View>
 
-      <ScrollView style={styles.scroll} contentContainerStyle={{ paddingTop: RECIPE.hero - RECIPE.overlap }} testID="recipe-screen">
-        <View style={[styles.sheet, { paddingBottom: insets.bottom + SPACE.xxl }]}>
-          <View style={styles.handle} />
+      {/* The sheet stays put below the photo and scrolls inside itself (v1), so the
+          back and ⋯ buttons always sit on the photo, never over the text. */}
+      <View style={[styles.sheetFrame, { marginTop: RECIPE.hero - RECIPE.overlap }]}>
+        <View style={styles.handle} />
+        <ScrollView
+          style={styles.scroll}
+          contentContainerStyle={[styles.sheet, { paddingBottom: insets.bottom + SPACE.xxl }]}
+          testID="recipe-screen"
+        >
           <RecipeHeader
             recipe={recipe}
             mine={mine}
@@ -144,10 +151,10 @@ export function RecipeScreen({ id }: { id: string }) {
               nameOf={ingredientName}
               onPlan={plan}
               onAddMissing={() => {
-                const names = fromCupboard.missing.map((id) => capitalise(ingredientName(id)));
-                const undo = addToList(names);
+                const items = fromCupboard.missing.map((id) => ({ text: capitalise(ingredientName(id)), ingredientId: id }));
+                const undo = addToList(items);
                 toast({
-                  message: undo ? `${names.length} added to your shopping list` : 'Already on your shopping list',
+                  message: undo ? `${items.length} added to your shopping list` : 'Already on your shopping list',
                   ...(undo ? { undo } : {}),
                 });
               }}
@@ -163,11 +170,11 @@ export function RecipeScreen({ id }: { id: string }) {
               </Text>
             </View>
           ) : null}
-        </View>
-      </ScrollView>
+        </ScrollView>
+      </View>
 
       <View style={[styles.nav, { top: insets.top + SPACE.sm }]} pointerEvents="box-none">
-        <IconButton icon="arrowBack" label="Back" shape="round" onPress={() => router.back()} testID="back" />
+        <IconButton icon="arrowBack" label="Back" shape="round" onPress={() => goBack(router)} testID="back" />
         <IconButton icon="more" label="More actions" shape="round" onPress={() => setMenu(true)} testID="recipe-more" />
       </View>
 
@@ -212,14 +219,17 @@ export function RecipeScreen({ id }: { id: string }) {
 const useStyles = makeStyles(({ colours }) => ({
   page: { flex: 1, backgroundColor: colours.bg },
   hero: { position: 'absolute', top: 0, left: 0, right: 0 },
-  scroll: { flex: 1 },
-  sheet: {
-    minHeight: '100%',
+  sheetFrame: {
+    flex: 1,
     backgroundColor: colours.bg,
     borderTopLeftRadius: RADIUS.sheet,
     borderTopRightRadius: RADIUS.sheet,
+    overflow: 'hidden',
+  },
+  scroll: { flex: 1 },
+  sheet: {
     paddingHorizontal: SPACE.sheet,
-    paddingTop: SPACE.xs,
+    paddingTop: SPACE.md,
     gap: SPACE.lg,
   },
   handle: {
@@ -228,7 +238,7 @@ const useStyles = makeStyles(({ colours }) => ({
     height: RECIPE.handleHeight,
     borderRadius: 3,
     backgroundColor: colours.border,
-    marginBottom: -SPACE.xs,
+    marginTop: SPACE.xs,
   },
   nav: { position: 'absolute', left: SPACE.gutter, right: SPACE.gutter, flexDirection: 'row', justifyContent: 'space-between' },
   credit: { paddingTop: SPACE.md, borderTopWidth: 1, borderTopColor: colours.border },

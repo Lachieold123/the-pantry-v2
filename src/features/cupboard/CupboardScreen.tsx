@@ -35,7 +35,7 @@ export function CupboardScreen() {
     toast({ message: `${capitalise(ingredientName(id))} added`, undo: () => remove(id) });
   };
   const listOne = (id: string) => {
-    const undo = addToList([capitalise(ingredientName(id))]);
+    const undo = addToList([{ text: capitalise(ingredientName(id)), ingredientId: id }]);
     toast({
       message: undo ? `${capitalise(ingredientName(id))} is on your shopping list` : 'Already on your shopping list',
       ...(undo ? { undo } : {}),
