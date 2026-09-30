@@ -103,12 +103,23 @@ appId: host.exp.Exponent
     id: "browse-search-clear"
 - hideKeyboard
 
-# Filters sheet: diet, time, one-pot, clear all, then one filter applied.
+# Filters: diet, time, one-pot, clear all, then one filter applied.
 - tapOn:
     id: "browse-filters"
-- assertVisible: "Refine your rotation"
+- assertVisible:
+    id: "filters-screen"
+- assertVisible: '\d+ meals? match(es)?'
+# Cuisine comes first, as in v1, so the other sections sit further down.
+- scrollUntilVisible:
+    element:
+      id: "filter-diet-vegetarian"
+    direction: DOWN
 - tapOn:
     id: "filter-diet-vegetarian"
+- scrollUntilVisible:
+    element:
+      id: "filter-time-under-30"
+    direction: DOWN
 - tapOn:
     id: "filter-time-under-30"
 - scrollUntilVisible:
@@ -119,9 +130,13 @@ appId: host.exp.Exponent
     id: "filter-one-pot"
 - assertVisible: 'Show \d+ recipes?'
 - takeScreenshot: browse-filters
+- scrollUntilVisible:
+    element:
+      id: "filters-clear"
+    direction: DOWN
 - tapOn:
     id: "filters-clear"
-- assertVisible: "Show all recipes"
+- assertVisible: 'Show \d+ recipes?'
 - scrollUntilVisible:
     element:
       id: "filter-diet-vegan"

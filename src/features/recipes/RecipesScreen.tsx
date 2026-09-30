@@ -43,8 +43,9 @@ export function RecipesScreen() {
   const { browsing, results, activeFilters } = useRecipeResults();
   const open = (id: string) => router.push({ pathname: '/recipe/[id]', params: { id } });
   const season = seasonOn(new Date());
-  // The named shelf or chip being shown, for the pill that says what you're looking at.
-  const shown = [...moods(season), ...quickChips(season)].find((p) => presetActive(p, filters, query));
+  // The named chip or shelf being shown, for the pill that says what you're looking at. Chips
+  // first: "Vegetarian" and the "Plant forward" shelf set the same filter, and the plain name reads truer.
+  const shown = [...quickChips(season), ...moods(season)].find((p) => presetActive(p, filters, query));
   const rows = useMemo(() => {
     const out: Recipe[][] = [];
     for (let i = 0; i < results.length; i += 2) out.push(results.slice(i, i + 2));

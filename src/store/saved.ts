@@ -16,6 +16,8 @@ type SavedState = {
   hidden: string[];
   recentlyViewed: string[];
   toggleBookmark: (recipeId: string) => boolean;
+  /** Puts a removed bookmark back where it was (undo), keeping its original date. */
+  restoreBookmark: (bookmark: Bookmark) => void;
   createCollection: (name: string) => string;
   renameCollection: (id: string, name: string) => void;
   deleteCollection: (id: string) => Collection | undefined;
@@ -23,6 +25,9 @@ type SavedState = {
   toggleInCollection: (collectionId: string, recipeId: string) => boolean;
   toggleHidden: (recipeId: string) => boolean;
   recordView: (recipeId: string) => void;
+  /** Empties Recently viewed and returns what was there, for undo. */
+  clearRecent: () => string[];
+  restoreRecent: (ids: readonly string[]) => void;
 };
 
 export const useSaved = create<SavedState>()(
@@ -39,6 +44,12 @@ export const useSaved = create<SavedState>()(
         }));
         return !saved;
       },
+      restoreBookmark: (bookmark) =>
+        set((s) =>
+          s.bookmarks.some((b) => b.recipeId === bookmark.recipeId)
+            ? s
+            : { bookmarks: [...s.bookmarks, bookmark].sort((a, b) => b.savedAt - a.savedAt) },
+        ),
       createCollection: (name) => {
         const id = newId();
         const now = Date.now();
@@ -77,6 +88,16 @@ export const useSaved = create<SavedState>()(
       },
       recordView: (recipeId) =>
         set((s) => ({ recentlyViewed: [recipeId, ...s.recentlyViewed.filter((r) => r !== recipeId)].slice(0, RECENT_MAX) })),
+      clearRecent: () => {
+        const cleared = get().recentlyViewed;
+        set({ recentlyViewed: [] });
+        return cleared;
+      },
+      // Anything viewed since the clear stays on top; the restored list follows it.
+      restoreRecent: (ids) =>
+        set((s) => ({
+          recentlyViewed: [...s.recentlyViewed, ...ids.filter((id) => !s.recentlyViewed.includes(id))].slice(0, RECENT_MAX),
+        })),
     }),
     {
       name: `${STORAGE_PREFIX}/saved`,

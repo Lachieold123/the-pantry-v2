@@ -198,3 +198,19 @@ describe('ingredients added by hand', () => {
     assert.equal(addExtras(first.edits, [{ text: 'Onions', ingredientId: 'brown-onion' }], () => 'x2', 2).added.length, 0);
   });
 });
+
+describe('juice from whole fruit', () => {
+  it('lists limes to buy, not tablespoons of juice', () => {
+    const r = makeRecipe('dressing', ['2 tbsp lime juice', '1 lime, cut into wedges']);
+    const l = deriveShoppingList({
+      entries: [entry('dressing')],
+      getRecipe: () => r,
+      index,
+      cupboard: new Set(),
+      edits: EMPTY_EDITS,
+      units: 'metric',
+    });
+    const lime = l.sections.flatMap((s) => s.items).find((i) => i.key === 'lime');
+    assert.equal(lime?.amount, '3');
+  });
+});

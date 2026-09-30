@@ -40,6 +40,10 @@ export default function RootLayout() {
   );
 }
 
+// A screen opened straight from a link (the menu, a recipe) still has the tabs
+// underneath it, so closing it lands somewhere sensible and the menu dims a real screen.
+export const unstable_settings = { initialRouteName: '(tabs)' };
+
 // Short, focused tasks open as sheets over the current screen (map §6).
 const SHEET = { presentation: 'formSheet' as const, sheetAllowedDetents: [0.75, 1], sheetGrabberVisible: false };
 // The sheet draws its own grabber, so it looks the same on every platform; the system one would make two.

@@ -9,10 +9,10 @@ import { usePlan } from '@/store/plan';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { TitleBlock } from '@/ui/patterns/TitleBlock';
 import { useToast } from '@/ui/patterns/Toast';
-import { ListRow } from '@/ui/primitives/ListRow';
 import { Screen } from '@/ui/primitives/Screen';
-import { Switch } from '@/ui/primitives/Switch';
-import { AddBar, capitalise, CookRail, Jars, QuickAdds, UnlockRows } from './CupboardParts';
+import { Jars, QuickAdds, UnlockRows } from './CupboardLists';
+import { AddBar, capitalise, CookRail } from './CupboardParts';
+import { CupboardSettings } from './CupboardSettings';
 import { StockGrid } from './StockGrid';
 
 export function CupboardScreen() {
@@ -50,6 +50,7 @@ export function CupboardScreen() {
         <EmptyState
           title="Your cupboard is empty"
           body="Add a few things you have and we'll show what you can cook tonight. Salt, pepper, oil and water are always assumed."
+          testID="cupboard-empty"
         />
       ) : (
         <CookRail ready={ready} nearly={nearly} />
@@ -71,21 +72,13 @@ export function CupboardScreen() {
       ) : null}
       <QuickAdds ids={quick} onAdd={addOne} />
       <StockGrid have={have} onAdd={(id) => add([id], 'manual')} onRemove={(id) => remove(id)} />
-      <ListRow
-        icon="basket"
-        title="Always in my kitchen"
-        detail={
+      <CupboardSettings
+        shelfDetail={
           shelf.mode === 'assume' ? 'Assuming a stocked spice rack, sauces and baking basics' : `${shelf.ids.length} shelf items ticked`
         }
-        onPress={() => router.push('/cupboard/shelf')}
-        testID="cupboard-shelf"
-      />
-      <Switch
-        label="Move ticked shopping here"
-        detail="When you tick something off the list, it goes into the cupboard"
-        value={moveTickedToCupboard}
-        onChange={setMoveTicked}
-        testID="cupboard-move-ticked"
+        onShelf={() => router.push('/cupboard/shelf')}
+        moveTicked={moveTickedToCupboard}
+        onMoveTicked={setMoveTicked}
       />
     </Screen>
   );

@@ -1,5 +1,5 @@
-# Settings: appearance, high contrast, units, diet and avoid, the Sunday
-# reminder, and retaking the taste quiz.
+# Settings: appearance, high contrast, units, the four cooking preferences,
+# the Sunday reminder, and redoing the welcome flow.
 appId: host.exp.Exponent
 ---
 - launchApp:
@@ -29,23 +29,26 @@ appId: host.exp.Exponent
 - tapOn:
     id: "settings-high-contrast"
 
-# Diet and things to avoid
+# Cooking: each row opens a small sheet with just that choice.
+- scrollUntilVisible:
+    element:
+      id: "settings-cooking-diet"
+    direction: DOWN
+- tapOn:
+    id: "settings-cooking-diet"
 - tapOn:
     id: "settings-diet-vegetarian"
 - tapOn:
+    id: "settings-editor-done"
+- assertVisible: "Vegetarian"
+- tapOn:
+    id: "settings-cooking-avoid"
+- tapOn:
     id: "settings-avoid-nuts"
-- scrollUntilVisible:
-    element:
-      id: "settings-avoid-word"
-    direction: DOWN
 - tapOn:
     id: "settings-avoid-word"
 - inputText: "coriander"
 - pressKey: Enter
-- scrollUntilVisible:
-    element:
-      id: "settings-avoid-custom-coriander"
-    direction: UP
 - assertVisible: "coriander ×"
 - takeScreenshot: settings-food
 - tapOn:
@@ -54,8 +57,30 @@ appId: host.exp.Exponent
     id: "settings-avoid-custom-coriander"
 - tapOn:
     id: "settings-avoid-nuts"
+- hideKeyboard
+- tapOn:
+    id: "settings-editor-done"
+- assertVisible: "Nothing"
+- tapOn:
+    id: "settings-cooking-cuisines"
+- tapOn:
+    id: "settings-cuisine-italian"
+- tapOn:
+    id: "settings-editor-done"
+- assertVisible: "1 picked"
+- tapOn:
+    id: "settings-cooking-weeknight"
+- tapOn:
+    id: "settings-weeknight-under-30"
+- tapOn:
+    id: "settings-editor-done"
+- assertVisible: "≤ 30 min"
+- tapOn:
+    id: "settings-cooking-diet"
 - tapOn:
     id: "settings-diet-everything"
+- tapOn:
+    id: "settings-editor-done"
 
 # Sunday reminder: iOS asks for permission the first time.
 - scrollUntilVisible:
@@ -73,7 +98,7 @@ appId: host.exp.Exponent
 - scrollUntilVisible:
     element:
       id: "segment-imperial"
-    direction: DOWN
+    direction: UP
 - tapOn:
     id: "segment-imperial"
 - takeScreenshot: settings-imperial
@@ -84,10 +109,11 @@ appId: host.exp.Exponent
 - scrollUntilVisible:
     element:
       id: "settings-retake-quiz"
-    direction: UP
+    direction: DOWN
 - tapOn:
     id: "settings-retake-quiz"
-- assertVisible: "Welcome to"
+- assertVisible:
+    id: "welcome-start"
 - tapOn:
     id: "welcome-skip"
 - assertVisible:

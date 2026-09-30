@@ -10,11 +10,14 @@ type CookLogState = {
   log: CookEvent[];
   markCooked: (recipeId: string) => CookEvent;
   undo: (eventId: string) => void;
+  /** Empties the log and returns it, so the clear can be undone. */
+  clearLog: () => CookEvent[];
+  restoreLog: (events: readonly CookEvent[]) => void;
 };
 
 export const useCookLog = create<CookLogState>()(
   persist(
-    (set) => ({
+    (set, get) => ({
       log: [],
       markCooked: (recipeId) => {
         const event: CookEvent = { id: newId(), recipeId, cookedAt: Date.now() };
@@ -22,6 +25,17 @@ export const useCookLog = create<CookLogState>()(
         return event;
       },
       undo: (eventId) => set((s) => ({ log: s.log.filter((e) => e.id !== eventId) })),
+      clearLog: () => {
+        const cleared = get().log;
+        set({ log: [] });
+        return cleared;
+      },
+      // Cooks logged since the clear are kept; the log stays in time order.
+      restoreLog: (events) =>
+        set((s) => {
+          const have = new Set(s.log.map((e) => e.id));
+          return { log: [...s.log, ...events.filter((e) => !have.has(e.id))].sort((a, b) => a.cookedAt - b.cookedAt) };
+        }),
     }),
     { name: `${STORAGE_PREFIX}/cook-log`, version: 1, storage: persistentStorage(), partialize: ({ log }) => ({ log }) },
   ),

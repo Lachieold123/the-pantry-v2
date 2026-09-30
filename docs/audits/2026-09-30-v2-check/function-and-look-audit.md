@@ -21,47 +21,51 @@ Every screen was shot in light and dark with realistic data and compared with v1
 | Spacing | Titles sat ~14pt low; big stacked gaps under them | v1's positions |
 | Small | Past days faded; ticked collection struck through; clashing placeholder; empty shelf sheet; bare "3" kickers; spinner keys | All fixed |
 
-## Still to do (not started, by phase)
+## Fixed the same evening (second pass)
 
-**Library screens (P6).** Cookmarks, Collections, Recently viewed and Kitchen stats still share one placeholder list layout. v1 has its own look for each:
+- **Library in v1's look:**
+  - Cookmarks: library header and cream cards.
+  - Collections: mosaics, the "New collection" dialog, and ⋯ rename/delete with undo.
+  - Recently viewed: grid and Clear with undo.
+  - Kitchen stats: streak card, tiles and top lists from the real cook log, and clear history with undo.
+  - Dark variants of the cream cards.
+- **Cook Mode in v1's look:**
+  - Header with "COOK MODE", the meal name and "1 / 7".
+  - Progress segments, the italic "01", 22pt step text and timer chips.
+  - The ingredients bottom sheet with HAVE pills.
+  - Previous as text, and the black Next pill.
+- **Settings:** v1's grouped white cards in v1's order. Diet, avoid, cuisines and weeknight time open as sheets.
+- **Filters:** v1's "Refine your rotation", a live "N meals match", cuisine first, pastel active chips and "Show N recipes".
+- **Welcome:** v1's full-bleed photo page ("Tonight's dinner, sorted."). The quiz, reveal and reminder share the dark look. It uses a still from v1's video, because video needs a native module.
+- **Cupboard:**
+  - v1's stock tabs and tinted tiles.
+  - Jar headings with the rule and italic count.
+  - One row of quick adds.
+  - "01" add-one-thing rows.
+  - Aligned settings rows.
+  - Return adds the top match.
+- **Recipe cupboard card:**
+  - The recipe's own wording ("courgette").
+  - Counts that match the HAVE pills.
+  - "✓ On your list" after adding.
+  - Matching pills: "I have these" is new (see below).
+- **Deep links:** a deep link now opens with the tabs underneath, so the menu dims a real screen and closing lands somewhere.
+- **Sharing on the web:** copies the text when there's no share sheet.
+- **Browse:** the Vegetarian chip is labelled Vegetarian.
+- **Shopping list:**
+  - Lime/lemon/orange juice becomes whole fruit.
+  - Cinnamon sticks are no longer ground cinnamon (catalogue regenerated).
+  - Litres and kilos finer than a quarter show as decimals.
+- **Switches:** one shared switch control, with no teal thumb on the web.
 
-- cream library cards and the "Saved" count header;
-- 2×2 collection mosaics with a "New collection" pill;
-- the streak card, tiles and top lists on Stats;
-- the grid and Clear button on Recent.
+## Still open
 
-**Cook Mode (P6).** v1's header ("COOK MODE" + meal name, list button, "1 / 7"), progress segments, the big italic "01" and 22pt step text, timer chips, and the ingredients bottom sheet.
-
-**Settings and Filters (P6).**
-- Settings: v1's white grouped cards and section order.
-- Filters: v1's page, "N meals match", pastel active chips and cuisine first.
-
-**Welcome (P7).** v1's full-bleed video page with bottom-aligned copy. The 13+/Terms/Privacy consent is needed again with social at launch.
-
-**Cupboard polish.**
-- "Stock the cupboard": v1's underline tabs and tinted tiles, not black tiles.
-- Jar group heads with the rule and italic count.
-- One-row quick adds.
-- v1's "01" add-one-thing rows.
-- Menu over a dimmed live screen.
-
-**Recipe page.**
-- The cupboard card should show the recipe's own ingredient names ("courgette", not "zucchini"), with counts that match the pills.
-- Its two actions should match.
-
-**Catalogue content** (via `recipe-fixes.json`).
-- Near-duplicate recipes share photos (Schnitzel ×3, BBQ ribs ×2).
-- The Pepperoni Pizza photo is wrong.
-- Shopping merges that read oddly:
-  - lime juice → "Lime, 1 tbsp + 1";
-  - cinnamon stick → ground cinnamon;
-  - "2⅛ L" stock.
-
-**Small.**
-- Enter in the cupboard search should add the top match.
-- Restore undone items in their old place.
-- Share should fall back to copying on the web.
-- The Vegetarian chip opens "Plant forward".
+- **Needs Lachlan:**
+  - the 13+/Terms/Privacy consent (there are no real terms yet);
+  - the welcome video (needs expo-video, a native module);
+  - the recipe card's new "I have these" action;
+  - whether near-duplicate recipes that share a photo should get their own (chicken/beef gyudon, schnitzel ×3, beef curry/rendang, bibimbap/bulgogi bowl, chicken tagine/tagine, quesadillas).
+- **Small:** editor polish (chip wall for cuisine, heading styles), import-from-link as a sheet, and ModalSheet needing a header slot (Cook Mode copies its shell).
 
 ## Needs the phone, not the web
 

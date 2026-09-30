@@ -62,6 +62,38 @@ export const TYPE = {
   numberTile: serif(28, '700', 32, -0.6),
   numberDay: serif(18, '700', 22, -0.4),
   numberItalic: italic(serif(16, '400', 18, -0.3)),
+  // Cupboard (v1 PantryModal): tile initials, jar-group counts, "Add one thing" rows.
+  cupboardTileInitial: italic(serif(22, '400', 24, -0.4)),
+  cupboardGroupCount: italic(serif(13, '400', 16, -0.1)),
+  cupboardNumeral: italic(serif(22, '400', 26, -0.4)),
+  cupboardUnlockTitle: serif(18, '700', 22, -0.3),
+  cupboardTab: sans(14, '600', 18),
+  cupboardTileName: sans(12.5, '500', 16, 0.1),
+  cupboardTileNameOn: sans(12.5, '700', 16, 0.1),
+  cupboardGroupName: upper(sans(10.5, '700', 13, 2.8)),
+  cupboardQuickAdd: sans(13, '500', 17),
+  drawerProfileSub: sans(12, '500', 16),
+  // Settings, Filters and Welcome (group C): v1's sizes for those screens.
+  titleOnboarding: serif(34, '700', 38, -0.8),
+  titleSansLarge: sans(28, '800', 32, -0.8),
+  lead: sans(14, '500', 20),
+  leadLarge: sans(16, '500', 24),
+  kickerList: upper(sans(11, '800', 14, 2)),
+  kickerWide: upper(sans(11, '800', 14, 4)),
+  labelOnVideo: sans(15, '800', 20, 0.3),
+  pillLabel: sans(13, '700', 17, 0.3),
+  chipLarge: sans(14, '700', 18),
+  tileLabel: sans(16, '800', 20, -0.2),
+  /** Library pages (Saved, Collections): the italic amber count, "4 items" (v1 15 italic). */
+  countLibrary: italic(serif(15, '400', 18, -0.1)),
+  /** Library pages: the small kicker after the 22×1 rule (v1 10.5/700/2.5). */
+  kickerLibrary: upper(sans(10.5, '700', 13, 2.5)),
+  /** Kitchen stats: the label under a tile's number (v1 11/700/0.3). */
+  statLabel: sans(11, '700', 14, 0.3),
+  /** Cook Mode: a time inside the step text, bold so it reads as a tappable chip. */
+  cookStepTimer: serif(22, '700', 32, -0.2),
+  /** Cook Mode's "COOK MODE" header kicker (v1 9.5/800/2.5). */
+  cookKicker: upper(sans(9.5, '800', 12, 2.5)),
   displaySpinner: serif(48, '400', 52, -1.2),
   displaySpinnerAccent: italic(serif(48, '400', 52, -1.2)),
   counter: serif(18, '700', 22, -0.2),

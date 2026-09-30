@@ -52,7 +52,12 @@ function displayUnit(amount: number, unit: UnitId, system: UnitSystem): { amount
 function formatAmount(amount: number, unit: UnitId | undefined): string {
   if (unit === undefined || UNITS[unit].kind === 'count') return formatKitchenNumber(roundCount(amount));
   if (unit === 'oz' || unit === 'lb' || unit === 'fl-oz') return formatKitchenNumber(amount, 'quarters');
-  if (unit === 'tsp' || unit === 'tbsp' || unit === 'cup' || unit === 'kg' || unit === 'l') return formatKitchenNumber(amount);
+  if (unit === 'kg' || unit === 'l') {
+    // "1½ kg" reads well; "2⅛ L" doesn't. Halves and quarters stay fractions, anything finer is a decimal.
+    const quarters = Math.round(amount * 4) / 4;
+    return Math.abs(quarters - amount) < 0.01 ? formatKitchenNumber(quarters) : String(Math.round(amount * 10) / 10);
+  }
+  if (unit === 'tsp' || unit === 'tbsp' || unit === 'cup') return formatKitchenNumber(amount);
   return formatMeasuredNumber(amount);
 }
 

@@ -1,19 +1,19 @@
-// Cook Mode: one step at a time in large type, screen kept on, tap anywhere
-// to move on (D-004), timers you start with a tap, and Done logs the cook.
+// Cook Mode in v1's look (spec §4.20): one step at a time in large type, screen
+// kept on, tap anywhere or swipe to move on (D-004), timers you start with a
+// tap, the ingredients a sheet away, and Done logs the cook.
+import * as Haptics from 'expo-haptics';
 import { activateKeepAwakeAsync, deactivateKeepAwake } from 'expo-keep-awake';
 import { useRouter } from 'expo-router';
 import { useEffect, useMemo, useState } from 'react';
-import { Pressable, ScrollView, View } from 'react-native';
+import { Platform, Pressable, ScrollView, View } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, { FadeIn, useReducedMotion } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { INGREDIENTS, KITCHEN } from '@/data/catalogue/catalogue';
-import { splitStepTimers } from '@/domain/cook/cook';
 import { cookable } from '@/domain/cupboard/cookable';
 import { cupboardIds } from '@/domain/cupboard/match';
-import { formatLine, scaleLine } from '@/domain/ingredients/format';
-import { allLines } from '@/domain/recipes/types';
+import { goBack } from '@/lib/navigation';
 import { ingredientName } from '@/store/cookable';
 import { useCookLog } from '@/store/cookLog';
 import { useCupboard } from '@/store/cupboard';
@@ -21,15 +21,16 @@ import { usePreferences } from '@/store/preferences';
 import { useRecipe } from '@/store/recipeBook';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { useToast } from '@/ui/patterns/Toast';
-import { Button } from '@/ui/primitives/Button';
-import { IconButton } from '@/ui/primitives/IconButton';
-import { Text } from '@/ui/primitives/Text';
-import { useTheme } from '@/ui/theme/ThemeProvider';
+import { makeStyles } from '@/ui/theme/makeStyles';
+import { COOK } from '@/ui/tokens/cook';
 import { MOTION, SPACE } from '@/ui/tokens/type';
+import { CookFooter } from './CookFooter';
+import { CookHeader } from './CookHeader';
+import { CookIngredientsSheet } from './CookIngredientsSheet';
+import { CookStep } from './CookStep';
 import { TimerBar } from './TimerBar';
 import { useCookTimers } from './useCookTimers';
 import { UsedUpSheet } from './UsedUpSheet';
-import { goBack } from '@/lib/navigation';
 
 const SWIPE_DISTANCE = 60;
 
@@ -44,7 +45,7 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
   const router = useRouter();
   const toast = useToast();
   const insets = useSafeAreaInsets();
-  const { colours } = useTheme();
+  const styles = useStyles();
   const reduceMotion = useReducedMotion();
   const units = usePreferences((s) => s.units);
   const markCooked = useCookLog((s) => s.markCooked);
@@ -57,11 +58,20 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
   const shelf = useCupboard((s) => s.shelf);
   const removeFromCupboard = useCupboard((s) => s.remove);
   const cupboard = useMemo(() => cupboardIds(items), [items]);
+  const fromCupboard = useMemo(
+    () => (recipe && cupboard.size ? cookable(recipe, cupboard, shelf, INGREDIENTS, KITCHEN) : undefined),
+    [recipe, cupboard, shelf],
+  );
+  // A same-family stand-in you have (brown onion for white) earns the HAVE pill too, as on the recipe page.
+  const have = useMemo(
+    () => (fromCupboard ? new Set([...cupboard, ...fromCupboard.swaps.map((s) => s.need)]) : cupboard),
+    [cupboard, fromCupboard],
+  );
   const { timers, now, start, dismiss } = useCookTimers(recipe?.title ?? '');
 
   if (!recipe) {
     return (
-      <View style={{ flex: 1, backgroundColor: colours.bg, paddingTop: insets.top + SPACE.xl, paddingHorizontal: SPACE.gutter }}>
+      <View style={[styles.page, styles.missing, { paddingTop: insets.top + SPACE.xl }]}>
         <EmptyState
           title="We couldn’t find that recipe"
           body="It may have been removed."
@@ -75,8 +85,14 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
   const total = recipe.steps.length;
   const last = step === total - 1;
   const servings = requested && requested > 0 ? requested : recipe.servings;
-  const next = () => (last ? undefined : setStep(step + 1));
-  const previous = () => (step === 0 ? undefined : setStep(step - 1));
+  // A light tick under the thumb confirms the step changed without looking (v1 did the same).
+  const go = (to: number) => {
+    if (to < 0 || to >= total) return;
+    if (Platform.OS !== 'web') Haptics.selectionAsync().catch(() => undefined);
+    setStep(to);
+  };
+  const next = () => go(step + 1);
+  const previous = () => go(step - 1);
   // Swipe left for the next step, right to go back. Horizontal only, so the step text still scrolls.
   const swipe = Gesture.Pan()
     .activeOffsetX([-30, 30])
@@ -87,11 +103,7 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
       else if (e.translationX > SWIPE_DISTANCE) previous();
     });
   // Fresh things this recipe took from the cupboard: offered for removal once you're done.
-  const used = (() => {
-    if (!cupboard.size) return [];
-    const c = cookable(recipe, cupboard, shelf, INGREDIENTS, KITCHEN);
-    return [...c.have, ...c.swaps.map((s) => s.use)].filter((i) => KITCHEN.isPerishable(i));
-  })();
+  const used = fromCupboard ? [...fromCupboard.have, ...fromCupboard.swaps.map((s) => s.use)].filter((i) => KITCHEN.isPerishable(i)) : [];
   const finish = (usedUp: string[]) => {
     setAskUsedUp(false);
     const event = markCooked(recipe.id);
@@ -100,81 +112,45 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
     toast({ message: `${recipe.title} cooked. Nice work.`, undo: () => undoCooked(event.id) });
   };
   const done = () => (used.length ? setAskUsedUp(true) : finish([]));
-  const text = recipe.steps[step]?.text ?? '';
 
   return (
-    <View style={{ flex: 1, backgroundColor: colours.bg, paddingTop: insets.top, paddingBottom: Math.max(insets.bottom, SPACE.sm) }}>
-      <View style={{ flexDirection: 'row', alignItems: 'center', paddingHorizontal: SPACE.xs }}>
-        <IconButton icon="close" label="Leave Cook Mode" onPress={() => goBack(router)} testID="cook-close" />
-        <Text variant="kicker" align="center" style={{ flex: 1 }} accessibilityLiveRegion="polite">
-          Step {step + 1} of {total}
-        </Text>
-        <Button
-          label={showIngredients ? 'Steps' : 'Ingredients'}
-          kind="quiet"
-          onPress={() => setShowIngredients(!showIngredients)}
-          testID="cook-toggle-ingredients"
-        />
-      </View>
-      <View style={{ paddingHorizontal: SPACE.gutter, paddingTop: SPACE.xs }}>
+    <View style={[styles.page, { paddingTop: insets.top, paddingBottom: Math.max(insets.bottom, SPACE.sm) }]}>
+      <CookHeader
+        title={recipe.title}
+        step={step}
+        total={total}
+        onClose={() => goBack(router)}
+        onIngredients={() => setShowIngredients(true)}
+      />
+      <View style={styles.timers}>
         <TimerBar timers={timers} now={now} onDismiss={dismiss} />
       </View>
-      {showIngredients ? (
-        <ScrollView contentContainerStyle={{ padding: SPACE.gutter, gap: SPACE.sm }}>
-          <Text variant="title">For {servings}</Text>
-          {allLines(recipe).map((line, i) => (
-            <Text key={i} variant="body">
-              {formatLine(scaleLine(line, servings / recipe.servings), units)}
-            </Text>
-          ))}
-        </ScrollView>
-      ) : (
-        // Tapping anywhere moves on for floury hands; VoiceOver uses the Next button instead, so the
-        // step text and its timer buttons stay individually reachable.
-        <GestureDetector gesture={swipe}>
-          <Pressable onPress={next} disabled={last} accessible={false} style={{ flex: 1 }} testID="cook-step">
-            <ScrollView contentContainerStyle={{ padding: SPACE.gutter, flexGrow: 1, justifyContent: 'center' }}>
-              <Animated.View key={step} {...(reduceMotion ? {} : { entering: FadeIn.duration(MOTION.standard) })}>
-                <Text variant="numberItalic">{step + 1}</Text>
-                <Text variant="title" style={{ fontSize: 30, lineHeight: 42 }} testID="cook-step-text">
-                  {splitStepTimers(text).map((seg, i) =>
-                    seg.type === 'text' ? (
-                      seg.text
-                    ) : (
-                      <Text
-                        key={i}
-                        variant="title"
-                        colour="accent"
-                        style={{ fontSize: 30, lineHeight: 42, textDecorationLine: 'underline' }}
-                        accessibilityRole="button"
-                        accessibilityLabel={`Start a ${seg.label} timer`}
-                        onPress={() => void start(seg.label, step, seg.seconds)}
-                      >
-                        {seg.label}
-                      </Text>
-                    ),
-                  )}
-                </Text>
-                {splitStepTimers(text).some((s) => s.type === 'timer') ? (
-                  <Text variant="meta" style={{ paddingTop: SPACE.sm }}>
-                    Tap a time to start a timer.
-                  </Text>
-                ) : null}
-              </Animated.View>
-            </ScrollView>
-          </Pressable>
-        </GestureDetector>
-      )}
-      <View style={{ flexDirection: 'row', gap: SPACE.xs, paddingHorizontal: SPACE.gutter, paddingTop: SPACE.sm }}>
-        <Button label="Back" icon="back" onPress={previous} disabled={step === 0} testID="cook-back" />
-        <View style={{ flex: 1 }}>
-          {last ? (
-            <Button label="Done" icon="check" kind="primary" block onPress={done} testID="cook-done" />
-          ) : (
-            <Button label="Next step" kind="primary" block onPress={next} testID="cook-next" />
-          )}
-        </View>
-      </View>
+      {/* Tapping anywhere moves on for floury hands; VoiceOver uses the Next button instead, so the
+          step text and its timer chips stay individually reachable. */}
+      <GestureDetector gesture={swipe}>
+        <Pressable onPress={next} disabled={last} accessible={false} style={styles.body} testID="cook-step">
+          <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
+            <Animated.View key={step} {...(reduceMotion ? {} : { entering: FadeIn.duration(MOTION.standard) })}>
+              <CookStep
+                text={recipe.steps[step]?.text ?? ''}
+                step={step}
+                timers={timers}
+                now={now}
+                onStartTimer={(label, seconds) => void start(label, step, seconds)}
+              />
+            </Animated.View>
+          </ScrollView>
+        </Pressable>
+      </GestureDetector>
+      <CookFooter first={step === 0} last={last} onPrevious={previous} onNext={next} onDone={done} />
+      <CookIngredientsSheet
+        visible={showIngredients}
+        recipe={recipe}
+        servings={servings}
+        units={units}
+        have={have}
+        onClose={() => setShowIngredients(false)}
+      />
       <UsedUpSheet visible={askUsedUp} ids={used} nameOf={(i) => capitalise(ingredientName(i))} onFinish={finish} />
     </View>
   );
@@ -183,3 +159,11 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
 function capitalise(s: string): string {
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
+
+const useStyles = makeStyles(({ colours }) => ({
+  page: { flex: 1, backgroundColor: colours.bg },
+  missing: { paddingHorizontal: SPACE.gutter },
+  timers: { paddingHorizontal: SPACE.gutter, paddingTop: SPACE.xs },
+  body: { flex: 1, paddingHorizontal: SPACE.sheet, paddingTop: COOK.bodyTop },
+  scroll: { flexGrow: 1, justifyContent: 'center', paddingBottom: COOK.bodyBottom },
+}));

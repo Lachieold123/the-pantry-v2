@@ -1,3 +1,3 @@
-import { CollectionsScreen } from '@/features/saved/LibraryScreens';
+import { CollectionsScreen } from '@/features/saved/CollectionsScreen';
 
 export default CollectionsScreen;

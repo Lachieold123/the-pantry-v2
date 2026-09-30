@@ -3,7 +3,7 @@
 // v2 used to pin at the bottom became v1's action row and "⋯" menu.
 import { useRouter } from 'expo-router';
 import { useEffect, useMemo, useState } from 'react';
-import { ScrollView, Share, View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { INGREDIENTS, KITCHEN } from '@/data/catalogue/catalogue';
@@ -11,6 +11,8 @@ import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { hasCooked } from '@/domain/cook/cook';
 import { cookable } from '@/domain/cupboard/cookable';
 import { cupboardIds } from '@/domain/cupboard/match';
+import { allOnList, cupboardTally, recipeWords } from '@/domain/cupboard/summary';
+import { shoppingWeek, toISODate } from '@/domain/plan/week';
 import { recipeAsText } from '@/domain/recipes/labels';
 import { useCookLog } from '@/store/cookLog';
 import { ingredientName } from '@/store/cookable';
@@ -35,6 +37,7 @@ import { CupboardSummary } from './CupboardSummary';
 import { RecipeHeader } from './RecipeHeader';
 import { ServingsSheet } from './ServingsSheet';
 import { goBack } from '@/lib/navigation';
+import { shareText } from '@/lib/share';
 
 export function RecipeScreen({ id }: { id: string }) {
   const router = useRouter();
@@ -58,16 +61,20 @@ export function RecipeScreen({ id }: { id: string }) {
   const items = useCupboard((s) => s.items);
   const shelf = useCupboard((s) => s.shelf);
   const addToList = usePlan((s) => s.addToList);
+  const addToCupboard = useCupboard((s) => s.add);
+  const removeFromCupboard = useCupboard((s) => s.remove);
+  // "On your list" is read from the list itself, so undo (or clearing the list) turns the button back on.
+  const listExtras = usePlan((s) => s.listEdits[shoppingWeek(toISODate(new Date()))]?.extras);
   const have = useMemo(() => cupboardIds(items), [items]);
   const fromCupboard = useMemo(
     () => (recipe && have.size ? cookable(recipe, have, shelf, INGREDIENTS, KITCHEN) : undefined),
     [recipe, have, shelf],
   );
-  // A same-family stand-in you have (brown onion for white) earns the HAVE pill too.
-  const havePills = useMemo(
-    () => (fromCupboard ? new Set([...have, ...fromCupboard.swaps.map((s) => s.need)]) : have),
-    [have, fromCupboard],
-  );
+  // The pills and the card's "You have X of Y" share one tally, so they always agree. A same-family
+  // stand-in you have (brown onion for white) earns the pill too.
+  const tally = useMemo(() => (recipe && fromCupboard ? cupboardTally(recipe, fromCupboard) : undefined), [recipe, fromCupboard]);
+  const havePills = tally?.haveIds ?? NONE;
+  const words = useMemo(() => (recipe ? recipeWords(recipe) : undefined), [recipe]);
   useEffect(() => {
     if (recipe) recordView(recipe.id);
   }, [recipe, recordView]);
@@ -87,20 +94,17 @@ export function RecipeScreen({ id }: { id: string }) {
   }
 
   const mine = recipe.source !== 'house';
+  const wordOf = (ingredientId: string) => words?.get(ingredientId) ?? ingredientName(ingredientId);
   // House photos without a photographer's credit are the original app's AI-generated images (D-029).
   const photoNote = recipe.image?.credit ?? (!mine && RECIPE_IMAGES[recipe.id] !== undefined ? 'AI-generated photo' : undefined);
   const edit = () => router.push({ pathname: '/my-recipe/edit', params: { id: recipe.id } });
   const plan = () => router.push({ pathname: '/recipe/[id]/plan', params: { id: recipe.id } });
   const share = async () => {
-    try {
-      // Your own recipes aren't on anyone else's phone, so they're shared as the full text.
-      await Share.share({
-        title: recipe.title,
-        message: mine ? recipeAsText(recipe) : `${recipe.title}: ${recipe.summary ?? ''}\nthepantry://recipe/${recipe.id}`,
-      });
-    } catch {
-      toast({ message: "Couldn't open sharing. Try again." });
-    }
+    // Your own recipes aren't on anyone else's phone, so they're shared as the full text.
+    const message = mine ? recipeAsText(recipe) : `${recipe.title}: ${recipe.summary ?? ''}\nthepantry://recipe/${recipe.id}`;
+    const result = await shareText(message, recipe.title);
+    if (result === 'copied') toast({ message: 'Copied. Paste it into a message.' });
+    if (result === 'failed') toast({ message: "Couldn't open sharing. Try again." });
   };
 
   return (
@@ -145,17 +149,29 @@ export function RecipeScreen({ id }: { id: string }) {
               {recipe.summary}
             </Text>
           ) : null}
-          {fromCupboard ? (
+          {fromCupboard && tally ? (
             <CupboardSummary
               result={fromCupboard}
-              nameOf={ingredientName}
-              onPlan={plan}
+              tally={tally}
+              wordOf={wordOf}
+              onList={allOnList(fromCupboard.missing, listExtras ?? [])}
               onAddMissing={() => {
-                const items = fromCupboard.missing.map((id) => ({ text: capitalise(ingredientName(id)), ingredientId: id }));
+                const items = fromCupboard.missing.map((id) => ({ text: capitalise(wordOf(id)), ingredientId: id }));
                 const undo = addToList(items);
                 toast({
                   message: undo ? `${items.length} added to your shopping list` : 'Already on your shopping list',
                   ...(undo ? { undo } : {}),
+                });
+              }}
+              onHaveMissing={() => {
+                const ids = fromCupboard.missing;
+                addToCupboard(ids, 'manual');
+                toast({
+                  message:
+                    ids.length === 1
+                      ? `${capitalise(wordOf(ids[0] ?? ''))} added to your cupboard`
+                      : `${ids.length} added to your cupboard`,
+                  undo: () => ids.forEach(removeFromCupboard),
                 });
               }}
             />
@@ -243,6 +259,8 @@ const useStyles = makeStyles(({ colours }) => ({
   nav: { position: 'absolute', left: SPACE.gutter, right: SPACE.gutter, flexDirection: 'row', justifyContent: 'space-between' },
   credit: { paddingTop: SPACE.md, borderTopWidth: 1, borderTopColor: colours.border },
 }));
+
+const NONE: ReadonlySet<string> = new Set();
 
 function capitalise(s: string): string {
   return s.charAt(0).toUpperCase() + s.slice(1);

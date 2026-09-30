@@ -6,7 +6,7 @@
 import { AISLES, normaliseWords, type AisleId, type IngredientIndex } from '../ingredients/database';
 import type { UnitSystem } from '../ingredients/format';
 import { formatQuantity } from '../ingredients/format';
-import { addQuantities, mapQuantity, type Quantity } from '../ingredients/quantity';
+import { addQuantities, mapQuantity, upper, type Quantity } from '../ingredients/quantity';
 import type { IngredientLine } from '../ingredients/types';
 import { convert, UNITS, type UnitId } from '../ingredients/units';
 import type { PlanEntry } from '../plan/week';
@@ -93,6 +93,23 @@ export function mergeAmounts(lines: readonly IngredientLine[]): { quantity: Quan
   return [...families.values()].map(({ quantity, unit }) => ({ quantity, unit }));
 }
 
+/**
+ * Roughly how much juice one fruit gives, in millilitres. Recipes ask for
+ * "1 tbsp lime juice"; you buy limes, so the list says "Lime, 1" rather than
+ * "Lime, 1 tbsp + 1".
+ */
+const JUICE_PER_FRUIT_ML: Readonly<Record<string, number>> = { lime: 30, lemon: 45, orange: 80 };
+
+function asWholeFruit(line: IngredientLine): IngredientLine {
+  const perFruit = line.ingredientId ? JUICE_PER_FRUIT_ML[line.ingredientId] : undefined;
+  const base = line.unit ? UNITS[line.unit].base : undefined;
+  if (!perFruit || line.quantity === undefined || !line.unit || UNITS[line.unit].kind !== 'volume' || base === undefined) return line;
+  const fruits = Math.max(1, Math.ceil((upper(line.quantity) * base) / perFruit - 1e-9));
+  const whole: IngredientLine = { ...line, quantity: fruits };
+  delete whole.unit;
+  return whole;
+}
+
 export function deriveShoppingList(args: {
   entries: readonly PlanEntry[];
   getRecipe: (id: string) => Recipe | undefined;
@@ -109,7 +126,7 @@ export function deriveShoppingList(args: {
     if (!recipe) continue; // A deleted custom recipe simply stops contributing.
     const ratio = entry.servings / recipe.servings;
     for (const line of allLines(recipe)) {
-      const scaled = line.quantity === undefined ? line : { ...line, quantity: mapQuantity(line.quantity, (n) => n * ratio) };
+      const scaled = asWholeFruit(line.quantity === undefined ? line : { ...line, quantity: mapQuantity(line.quantity, (n) => n * ratio) });
       const key = line.ingredientId ?? `text:${normaliseWords(line.item).join(' ')}`;
       const list = groups.get(key) ?? [];
       list.push({ line: scaled, entryId: entry.id, recipeId: entry.recipeId });

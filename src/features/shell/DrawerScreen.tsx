@@ -1,6 +1,9 @@
 // The side menu (spec §4.3): every place in the app, with live counts. It is a
 // route (/menu) rather than an always-mounted overlay, so it has a URL, a back
 // gesture and nothing running while it's closed (audit ARCH-1, PERF-1).
+// The route is a transparent modal, so the tab you came from stays visible,
+// dimmed by the scrim, as in v1. Nothing here may paint a full-screen
+// background: only the scrim and the panel.
 import { useRouter, type Href } from 'expo-router';
 import { useEffect, useState, type ReactNode } from 'react';
 import { Pressable, ScrollView, StyleSheet, useWindowDimensions, View } from 'react-native';
@@ -104,8 +107,12 @@ export function DrawerScreen() {
         >
           <Avatar size={CHROME.drawerAvatar} />
           <View style={styles.profileText}>
-            <Text variant="name">Your kitchen</Text>
-            <Text variant="meta">Local profile</Text>
+            <Text variant="name" numberOfLines={1}>
+              Your kitchen
+            </Text>
+            <Text variant="drawerProfileSub" colour="inkMuted">
+              Local profile
+            </Text>
           </View>
           <Icon name="forward" size={18} colour="inkMuted" />
         </Pressable>

@@ -5,7 +5,9 @@ appId: host.exp.Exponent
     clearState: true
 - openLink: ${METRO_URL}
 - runFlow: subflows/_wait_for_app.yaml
-- assertVisible: "Welcome to"
+- assertVisible:
+    id: "welcome-start"
+- assertVisible: "THE PANTRY"
 - takeScreenshot: welcome-hello
 
 - tapOn:
@@ -38,9 +40,9 @@ appId: host.exp.Exponent
     id: "cuisine-italian"
 - scrollUntilVisible:
     element:
-      id: "segment-under-45"
+      id: "weeknight-under-45"
 - tapOn:
-    id: "segment-under-45"
+    id: "weeknight-under-45"
 - takeScreenshot: welcome-like
 - scrollUntilVisible:
     element:

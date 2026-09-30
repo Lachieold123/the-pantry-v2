@@ -1,4 +1,6 @@
-# Collections: create, open, rename, delete with undo, and a recipe added to one.
+# Collections ("Your shelves"): create in the naming dialog, refuse a duplicate,
+# open, rename and delete from the ⋯ sheet (with Undo), long-press actions, and
+# a recipe added to one from its page showing in the mosaic and inside.
 appId: host.exp.Exponent
 ---
 - launchApp:
@@ -9,59 +11,79 @@ appId: host.exp.Exponent
     id: "header-menu"
 - tapOn:
     id: "menu-collections"
+- assertVisible: "Your shelves"
 - assertVisible:
     id: "collections-empty"
 - takeScreenshot: collections-empty
 
 # Create
 - tapOn:
-    id: "collections-new-name"
-- inputText: "Weeknight dinners"
-# These pages don't hide the keyboard on a swipe, so tap plain text instead (it closes the keyboard).
-- tapOn: "Collections"
-- tapOn:
-    id: "collections-create"
+    id: "collections-new"
 - assertVisible:
-    id: "collection-row-.*"
-- assertVisible: "Weeknight dinners"
-
-# A second one with the same name is refused.
+    id: "name-dialog"
+- inputText: "Weeknight dinners"
 - tapOn:
-    id: "collections-new-name"
+    id: "name-dialog-save"
+- assertVisible:
+    id: "collection-card-.*"
+- assertVisible: "Weeknight dinners"
+- assertVisible: "1 collection"
+
+# A second one with the same name is refused; Cancel closes the dialog.
+- tapOn:
+    id: "collections-new"
 - inputText: "weeknight dinners"
 - assertVisible: "You already have a collection with that name."
-- eraseText: 20
-- tapOn: "Collections"
-
-# Open, rename
 - tapOn:
-    id: "collection-row-.*"
+    id: "name-dialog-cancel"
+- assertNotVisible:
+    id: "name-dialog"
+
+# Open, rename from the ⋯ sheet
+- tapOn:
+    id: "collection-card-.*"
 - assertVisible:
     id: "collection-screen"
 - assertVisible:
     id: "collection-empty"
 - takeScreenshot: collection-empty
 - tapOn:
+    id: "collection-more"
+- tapOn:
     id: "collection-rename"
+- assertVisible:
+    id: "name-dialog"
 - eraseText: 20
 - inputText: "Fridays"
 - tapOn:
-    id: "collection-save-name"
+    id: "name-dialog-save"
 - assertVisible: "Fridays"
 
-# Delete goes back to the list; undo brings it back.
+# Delete goes back to the list; Undo brings it back.
+- tapOn:
+    id: "collection-more"
 - tapOn:
     id: "collection-delete"
 - assertVisible: "Fridays deleted"
+- assertVisible:
+    id: "collections-screen"
 - tapOn:
     id: "toast-undo"
 - assertVisible:
-    id: "collection-row-.*"
+    id: "collection-card-.*"
 - assertVisible: "Fridays"
+
+# A long press on the card opens the same actions.
+- longPressOn:
+    id: "collection-card-.*"
+- assertVisible:
+    id: "collection-rename"
+- tapOn:
+    id: "sheet-cancel"
 - tapOn:
     id: "back"
 
-# Add a recipe to it from the recipe page, then find it inside.
+# Add a recipe to it from the recipe page, then find it in the mosaic and inside.
 - runFlow:
     file: subflows/_open_recipe.yaml
     env:
@@ -82,9 +104,9 @@ appId: host.exp.Exponent
     id: "header-menu"
 - tapOn:
     id: "menu-collections"
-- assertVisible: "Fridays"
+- assertVisible: "Fridays, 1 recipe"
 - tapOn:
-    id: "collection-row-.*"
+    id: "collection-card-.*"
 - assertVisible:
     id: "recipe-card-carbonara"
 - takeScreenshot: collection-with-recipe

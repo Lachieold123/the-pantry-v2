@@ -6,7 +6,7 @@
 // Sundays it opens on next week, because that's the one you're shopping for.
 import { useRouter } from 'expo-router';
 import { useRef, useState } from 'react';
-import { ScrollView, Share, View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 
 import { firstOpenSlot, weekAsText, weekProgress } from '@/domain/plan/summary';
 import {
@@ -22,6 +22,7 @@ import {
 } from '@/domain/plan/week';
 import { AISLE_LABELS } from '@/domain/recipes/labels';
 import { formatListForSharing } from '@/domain/shopping/derive';
+import { shareText } from '@/lib/share';
 import { longDate, shortDate, weekdayName, weekRange } from '@/lib/dates';
 import { usePlan } from '@/store/plan';
 import { useRecipeLookup } from '@/store/recipeBook';
@@ -78,11 +79,9 @@ export function PlanScreen() {
       toast({ message: empty });
       return;
     }
-    try {
-      await Share.share({ message: text });
-    } catch {
-      toast({ message: "Couldn't open sharing. Try again." });
-    }
+    const result = await shareText(text);
+    if (result === 'copied') toast({ message: 'Copied. Paste it into a message.' });
+    if (result === 'failed') toast({ message: "Couldn't open sharing. Try again." });
   };
   const share = () =>
     view === 'week'
