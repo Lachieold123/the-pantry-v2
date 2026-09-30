@@ -12,9 +12,10 @@ import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { fitsTaste } from '@/domain/recipes/diets';
 import { dailyPicks, moods, presetActive, quickChips, recipeOfTheDay, recipesFor, togglePreset } from '@/domain/recipes/browse';
 import { needLine } from '@/domain/cupboard/cookable';
-import { toISODate } from '@/domain/plan/week';
+import { fromISODate } from '@/domain/plan/week';
 import { seasonOn } from '@/domain/recipes/search';
 import type { Recipe } from '@/domain/recipes/types';
+import { useToday } from '@/lib/useToday';
 import { ingredientName, useCookableNow } from '@/store/cookable';
 import { usePreferences } from '@/store/preferences';
 import { useAllRecipes } from '@/store/recipeBook';
@@ -43,8 +44,8 @@ export function BrowseSections() {
   const apply = useRecipeFilters((s) => s.apply);
   const setShowAll = useRecipeFilters((s) => s.setShowAll);
   const bookmarks = useBookmarks();
-  const today = toISODate(new Date());
-  const season = seasonOn(new Date());
+  const today = useToday();
+  const season = seasonOn(fromISODate(today));
   const open = (id: string) => router.push({ pathname: '/recipe/[id]', params: { id } });
 
   const data = useMemo(() => {

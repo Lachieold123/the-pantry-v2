@@ -7,8 +7,10 @@ import { FlatList, Pressable, View } from 'react-native';
 
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { moods, presetShown, quickChips, togglePreset } from '@/domain/recipes/browse';
+import { fromISODate } from '@/domain/plan/week';
 import { seasonOn } from '@/domain/recipes/search';
 import type { Recipe } from '@/domain/recipes/types';
+import { useToday } from '@/lib/useToday';
 import { useAllRecipes } from '@/store/recipeBook';
 import { useRecipeFilters } from '@/store/recipeFilters';
 import { useBookmarks } from '@/store/saved';
@@ -46,7 +48,7 @@ export function RecipesScreen() {
   const { browsing, results, activeFilters } = useRecipeResults();
   // Stable, so the memoised cards don't all redraw on every keystroke.
   const open = useCallback((id: string) => router.push({ pathname: '/recipe/[id]', params: { id } }), [router]);
-  const season = seasonOn(new Date());
+  const season = seasonOn(fromISODate(useToday()));
   // The named shelf or chip being shown, for the pill that says what you're looking at.
   const shown = presetShown([...moods(season), ...quickChips(season)], filters, query, presetLabel);
   const rows = useMemo(() => {

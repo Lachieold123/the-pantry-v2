@@ -6,6 +6,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { needLine } from '@/domain/cupboard/cookable';
+import { goBackOr } from '@/lib/navigation';
 import { ingredientName, useCookableNow } from '@/store/cookable';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { PushedHeader } from '@/ui/patterns/PushedHeader';
@@ -40,7 +41,7 @@ export function CookableList() {
         <EmptyState
           title="Nothing close yet"
           body="Add a few more things to your cupboard and recipes will show up here."
-          action={{ label: 'Back to the cupboard', onPress: () => router.back() }}
+          action={{ label: 'Back to the cupboard', onPress: () => goBackOr(router) }}
         />
       }
       renderSectionHeader={({ section }) => (

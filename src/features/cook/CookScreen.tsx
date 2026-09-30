@@ -15,6 +15,7 @@ import { cupboardIds } from '@/domain/cupboard/match';
 import { anyRunning } from '@/domain/cook/timers';
 import { formatLine, scaleLine } from '@/domain/ingredients/format';
 import { parseServings } from '@/domain/recipes/servings';
+import { goBackOr } from '@/lib/navigation';
 import { ingredientName } from '@/store/cookable';
 import { useCookLog } from '@/store/cookLog';
 import { useCupboard } from '@/store/cupboard';
@@ -59,7 +60,7 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
   const once = useOnce();
   const [confirmLeave, setConfirmLeave] = useState(false);
   // Leaving with a timer still counting down asks first (audit F45); finished timers don't count.
-  const leave = () => (anyRunning(timers, Date.now()) ? setConfirmLeave(true) : router.back());
+  const leave = () => (anyRunning(timers, Date.now()) ? setConfirmLeave(true) : goBackOr(router));
   useEffect(() => {
     // Android's back button leaves the same way × does, so it asks too.
     const sub = BackHandler.addEventListener('hardwareBackPress', () => {
@@ -76,7 +77,7 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
         <EmptyState
           title="We couldn’t find that recipe"
           body="It may have been removed."
-          action={{ label: 'Close', onPress: () => router.back() }}
+          action={{ label: 'Close', onPress: () => goBackOr(router) }}
           testID="cook-missing"
         />
       </View>
@@ -108,7 +109,7 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
     setAskUsedUp(false);
     const event = markCooked(recipe.id);
     for (const i of usedUp) removeFromCupboard(i);
-    router.back();
+    goBackOr(router);
     toast({ message: `${recipe.title} cooked. Nice work.`, undo: () => undoCooked(event.id) });
   });
   const done = () => (used.length ? setAskUsedUp(true) : finish([]));
@@ -129,7 +130,7 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
         />
       </View>
       <View style={{ paddingHorizontal: SPACE.gutter, paddingTop: SPACE.xs, gap: SPACE.xs }}>
-        {confirmLeave ? <LeaveConfirm onStay={() => setConfirmLeave(false)} onLeave={() => router.back()} /> : null}
+        {confirmLeave ? <LeaveConfirm onStay={() => setConfirmLeave(false)} onLeave={() => goBackOr(router)} /> : null}
         <TimerBar timers={timers} onDismiss={dismiss} />
       </View>
       {showIngredients ? (

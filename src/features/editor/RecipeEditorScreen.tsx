@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { View } from 'react-native';
 
 import type { UnsureLine } from '@/domain/recipes/draft';
+import { goBackOr } from '@/lib/navigation';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { Button } from '@/ui/primitives/Button';
@@ -48,8 +49,7 @@ function UnsureNote({ lines }: { lines: UnsureLine[] }) {
 export function RecipeEditorScreen({ id, fromImport }: { id: string | undefined; fromImport: boolean }) {
   const router = useRouter();
   const editor = useRecipeEditor(id, fromImport);
-  const { draft, update } = editor;
-  const [confirmingCancel, setConfirmingCancel] = useState(false);
+  const { draft, update, guard } = editor;
   const [confirmingDelete, setConfirmingDelete] = useState(false);
 
   if (!editor.exists) {
@@ -58,19 +58,17 @@ export function RecipeEditorScreen({ id, fromImport }: { id: string | undefined;
         <EmptyState
           title="That recipe is gone"
           body="It may have been deleted."
-          action={{ label: 'Back', onPress: () => router.back() }}
+          action={{ label: 'Back', onPress: () => goBackOr(router) }}
           testID="editor-missing"
         />
       </Screen>
     );
   }
 
-  const cancel = () => (editor.dirty ? setConfirmingCancel(true) : router.back());
-
   return (
     <Screen>
       <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
-        <Button label="Cancel" kind="quiet" onPress={cancel} testID="editor-cancel" />
+        <Button label="Cancel" kind="quiet" onPress={guard.cancel} testID="editor-cancel" />
         <Text variant="row" accessibilityRole="header">
           {fromImport ? 'Check and save' : editor.isNew ? 'New recipe' : 'Edit recipe'}
         </Text>
@@ -82,12 +80,12 @@ export function RecipeEditorScreen({ id, fromImport }: { id: string | undefined;
           <Button label="Save to finish later" onPress={editor.saveDraft} testID="editor-save-draft" />
         </View>
       ) : null}
-      {confirmingCancel ? (
+      {guard.asking ? (
         <View style={{ gap: SPACE.sm }} accessibilityLiveRegion="polite">
           <Text variant="body">Throw away your changes?</Text>
           <View style={{ flexDirection: 'row', gap: SPACE.sm }}>
-            <Button label="Keep editing" onPress={() => setConfirmingCancel(false)} testID="editor-keep-editing" />
-            <Button label="Discard" kind="destructive" onPress={() => router.back()} testID="editor-discard" />
+            <Button label="Keep editing" onPress={guard.stay} testID="editor-keep-editing" />
+            <Button label="Discard" kind="destructive" onPress={guard.discard} testID="editor-discard" />
           </View>
         </View>
       ) : null}

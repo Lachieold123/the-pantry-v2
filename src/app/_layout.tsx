@@ -13,6 +13,10 @@ import { configureNotifications, useNotificationTaps } from '@/lib/notifications
 import { AppChrome } from '@/ui/theme/AppChrome';
 import { ThemeProvider, useTheme } from '@/ui/theme/ThemeProvider';
 
+// The tabs sit under every other screen, even one opened cold from a link (a
+// shared recipe, a notification), so Back and Done always have somewhere to go (audit F48).
+export const unstable_settings = { anchor: '(tabs)' };
+
 void SplashScreen.preventAutoHideAsync();
 configureNotifications();
 

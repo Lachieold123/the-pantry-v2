@@ -1,13 +1,21 @@
 // The numbers on the tab bar and in the drawer, each read from its own store.
-import { toISODate, upcomingCount } from '@/domain/plan/week';
+import { upcomingCount } from '@/domain/plan/week';
+import { useToday } from '@/lib/useToday';
 import { useMyRecipes } from '@/store/myRecipes';
 import { usePlan } from '@/store/plan';
+import { useRecipeLookup } from '@/store/recipeBook';
 import { useSaved } from '@/store/saved';
 
 export function usePlanBadge(): number {
-  // Today's date is read on render; the tab bar re-renders on every tab change, which is often enough.
-  const today = toISODate(new Date());
-  return usePlan((s) => upcomingCount(s.entries, today));
+  const today = useToday();
+  const getRecipe = useRecipeLookup();
+  // Entries for a recipe that's gone aren't meals, so they don't count (F17).
+  return usePlan((s) =>
+    upcomingCount(
+      s.entries.filter((e) => getRecipe(e.recipeId) !== undefined),
+      today,
+    ),
+  );
 }
 
 export function useDrawerCounts() {

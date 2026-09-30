@@ -3,9 +3,10 @@ import { useMemo } from 'react';
 
 import { INGREDIENTS } from '@/data/catalogue/catalogue';
 import { recentlyCooked } from '@/domain/cook/cook';
-import { entriesInWeek, toISODate, visibleWeeks } from '@/domain/plan/week';
+import { entriesInWeek, visibleWeeks } from '@/domain/plan/week';
 import type { MealType, Recipe } from '@/domain/recipes/types';
 import { forYou } from '@/domain/suggestions/forYou';
+import { useToday } from '@/lib/useToday';
 import { useCookLog } from './cookLog';
 import { usePlan } from './plan';
 import { usePreferences } from './preferences';
@@ -21,7 +22,7 @@ export function useForYou(count: number, mealType: MealType = 'dinner'): Recipe[
   const entries = usePlan((s) => s.entries);
   const log = useCookLog((s) => s.log);
   const recipes = useAllRecipes();
-  const today = toISODate(new Date());
+  const today = useToday();
   return useMemo(
     () =>
       forYou({

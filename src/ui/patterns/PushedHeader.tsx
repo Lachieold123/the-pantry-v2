@@ -5,6 +5,7 @@ import { useRouter } from 'expo-router';
 import type { ReactNode } from 'react';
 import { View } from 'react-native';
 
+import { goBackOr } from '@/lib/navigation';
 import { IconButton } from '@/ui/primitives/IconButton';
 import { Text } from '@/ui/primitives/Text';
 import { SPACE } from '@/ui/tokens/type';
@@ -37,7 +38,7 @@ export function PushedHeader({ kicker, title, action, onBack, inset = false, sur
           label="Back"
           shape={surface === 'bgSoft' ? 'squareOnSoft' : 'square'}
           size={24}
-          onPress={onBack ?? (() => router.back())}
+          onPress={onBack ?? (() => goBackOr(router))}
           testID="back"
         />
       </View>

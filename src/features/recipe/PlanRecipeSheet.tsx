@@ -5,6 +5,7 @@ import { View } from 'react-native';
 
 import type { Slot } from '@/domain/plan/week';
 import { parseServings } from '@/domain/recipes/servings';
+import { goBackOr } from '@/lib/navigation';
 import { usePlan } from '@/store/plan';
 import { useRecipe } from '@/store/recipeBook';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
@@ -46,7 +47,7 @@ export function PlanRecipeSheet({ id, servings: requested }: { id: string; servi
 
   if (!recipe) {
     return (
-      <Sheet title="Plan" onClose={() => router.back()}>
+      <Sheet title="Plan" onClose={() => goBackOr(router)}>
         <Text variant="body">This recipe isn’t available any more.</Text>
       </Sheet>
     );
@@ -62,11 +63,11 @@ export function PlanRecipeSheet({ id, servings: requested }: { id: string; servi
   const add = once(() => {
     const entry = addEntry(recipe.id, day, slot, servings);
     toast({ message: `${recipe.title} planned for ${where}`, undo: () => removeEntry(entry.id) });
-    router.back();
+    goBackOr(router);
   });
 
   return (
-    <Sheet title={`Plan ${recipe.title}`} onClose={() => router.back()}>
+    <Sheet title={`Plan ${recipe.title}`} onClose={() => goBackOr(router)}>
       {[
         { title: 'This week', key: 'this', list: days.thisWeek },
         { title: 'Next week', key: 'next', list: days.nextWeek },

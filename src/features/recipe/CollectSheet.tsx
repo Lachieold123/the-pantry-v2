@@ -3,6 +3,7 @@ import { useRouter } from 'expo-router';
 import { useState } from 'react';
 import { View } from 'react-native';
 
+import { goBackOr } from '@/lib/navigation';
 import { useRecipe } from '@/store/recipeBook';
 import { useSaved } from '@/store/saved';
 import { Button } from '@/ui/primitives/Button';
@@ -30,9 +31,18 @@ export function CollectSheet({ id }: { id: string }) {
     setName('');
   };
 
+  // A garbled or stale link must not file an id that resolves to nothing (F144).
+  if (!recipe) {
+    return (
+      <Sheet title="Add to collection" onClose={() => goBackOr(router)}>
+        <Text variant="body">This recipe isn’t available any more.</Text>
+      </Sheet>
+    );
+  }
+
   return (
-    <Sheet title="Add to collection" onClose={() => router.back()}>
-      {recipe ? <Text variant="meta">{recipe.title}</Text> : null}
+    <Sheet title="Add to collection" onClose={() => goBackOr(router)}>
+      <Text variant="meta">{recipe.title}</Text>
       {collections.length === 0 ? (
         <Text variant="body" colour="inkSoft">
           No collections yet. Name your first one below.

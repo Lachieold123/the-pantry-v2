@@ -11,6 +11,7 @@ import { useReducedMotion } from 'react-native-reanimated';
 
 import type { Recipe } from '@/domain/recipes/types';
 import { deckPosition, SPIN_DELAYS, type SpinSettings } from '@/domain/suggestions/spinner';
+import { goBackOr } from '@/lib/navigation';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { PhotoScrim } from '@/ui/patterns/PhotoScrim';
 import { Button } from '@/ui/primitives/Button';
@@ -86,7 +87,7 @@ export function SpinnerScreen() {
     <Screen testID="spinner-screen">
       <PhotoScrim kind="spinnerGlow" />
       <PhotoScrim kind="spinnerGlowFoot" />
-      <SpinnerHeader at={shown ? at : 0} of={pool.length} onBack={() => router.back()} onInfo={() => setHowOpen(true)} />
+      <SpinnerHeader at={shown ? at : 0} of={pool.length} onBack={() => goBackOr(router)} onInfo={() => setHowOpen(true)} />
       <View style={{ gap: SPACE.sm }}>
         <Text variant="kicker">{KICKER[settings.meal ?? 'any']}</Text>
         <Text variant="displaySpinner" accessibilityRole="header">

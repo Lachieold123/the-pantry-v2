@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
 import { fromISODate } from '../plan/week';
-import { hasCooked, localiseStepText, recentlyCooked, splitStepTimers, weeklyStreak, type CookEvent } from './cook';
+import { cookedOn, hasCooked, localiseStepText, recentlyCooked, splitStepTimers, weeklyStreak, type CookEvent } from './cook';
 import { formatCountdown, isFinished, secondsLeft, startTimer } from './timers';
 
 describe('Cook Mode timers', () => {
@@ -83,6 +83,18 @@ describe('cooked log', () => {
   it('lists undated cooks after every real one', () => {
     const undated: CookEvent = { id: 'v1-c', recipeId: 'c', cookedAt: day('2026-09-29'), dateUnknown: true };
     assert.deepEqual(recentlyCooked([undated, ...log]), ['a', 'b', 'c']);
+  });
+});
+
+describe('cooked on a day (F22)', () => {
+  it('finds the recipes cooked on a local day, ignoring cooks with no real date', () => {
+    const at = (d: number, h: number) => new Date(2026, 8, d, h).getTime();
+    const log: CookEvent[] = [
+      { id: '1', recipeId: 'a', cookedAt: at(30, 19) },
+      { id: '2', recipeId: 'b', cookedAt: at(29, 23) },
+      { id: '3', recipeId: 'c', cookedAt: at(30, 9), dateUnknown: true },
+    ];
+    assert.deepEqual([...cookedOn(log, '2026-09-30')], ['a']);
   });
 });
 

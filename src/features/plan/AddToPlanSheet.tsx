@@ -6,8 +6,10 @@ import { View } from 'react-native';
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { searchRecipes } from '@/domain/recipes/search';
 import type { Recipe } from '@/domain/recipes/types';
-import { fromISODate, isISODate, toISODate, type Slot } from '@/domain/plan/week';
+import { fromISODate, plannableDay, type Slot } from '@/domain/plan/week';
 import { longDate } from '@/lib/dates';
+import { goBackOr } from '@/lib/navigation';
+import { useToday } from '@/lib/useToday';
 import { usePlan } from '@/store/plan';
 import { useRecipeLookup, useRecipeSearchIndex } from '@/store/recipeBook';
 import { useSaved } from '@/store/saved';
@@ -30,8 +32,9 @@ const SLOTS = [
 const MAX_RESULTS = 25;
 
 export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: string | undefined; slot?: string | undefined }) {
-  // A malformed link falls back to today rather than crashing.
-  const day = isISODate(requested) ? requested : toISODate(new Date());
+  // A malformed or crafted link lands on a day the Plan tab shows, never the past or 2099 (F144).
+  const today = useToday();
+  const day = plannableDay(requested, today);
   const router = useRouter();
   const toast = useToast();
   const once = useOnce();
@@ -63,16 +66,16 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
     [deferredQuery, hidden, searchIndex, ideas],
   );
 
-  const dayName = day === toISODate(new Date()) ? 'today' : (longDate(fromISODate(day)).split(' ')[0] ?? day);
+  const dayName = day === today ? 'today' : (longDate(fromISODate(day)).split(' ')[0] ?? day);
   // Once only: the sheet takes a moment to close, and a second tap would plan twice (audit F163).
   const pick = once((recipe: Recipe) => {
     const entry = addEntry(recipe.id, day, slot, recipe.servings);
     toast({ message: `${recipe.title} planned for ${dayName} ${slot}`, undo: () => removeEntry(entry.id) });
-    router.back();
+    goBackOr(router);
   });
 
   return (
-    <Sheet title={`Add to ${longDate(fromISODate(day))}`} onClose={() => router.back()}>
+    <Sheet title={`Add to ${longDate(fromISODate(day))}`} onClose={() => goBackOr(router)}>
       <Segmented<Slot> label="Meal" options={SLOTS} value={slot} onChange={setSlot} />
       <SearchField value={query} onChange={setQuery} placeholder="Search recipes" label="Search recipes to plan" testID="add-plan-search" />
       {!query.trim() && saved.length ? (

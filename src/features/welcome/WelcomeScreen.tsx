@@ -7,6 +7,7 @@ import { View } from 'react-native';
 
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { toISODate } from '@/domain/plan/week';
+import { goToTab } from '@/lib/navigation';
 import { setSundayReminder } from '@/lib/notifications';
 import { usePlan } from '@/store/plan';
 import { usePreferences } from '@/store/preferences';
@@ -37,7 +38,9 @@ export function WelcomeScreen() {
 
   const finish = () => {
     setOnboarded(true);
-    router.replace('/');
+    // A retaken quiz sits over Settings and the tabs: go back down to them, not
+    // onto a second tab bar (audit F57). On first run there's nothing under it.
+    goToTab(router, '/');
   };
   const next = () => {
     const to = NEXT[step];

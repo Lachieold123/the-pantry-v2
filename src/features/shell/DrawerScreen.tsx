@@ -2,11 +2,12 @@
 // route (/menu) rather than an always-mounted overlay, so it has a URL, a back
 // gesture and nothing running while it's closed (audit ARCH-1, PERF-1).
 import { useRouter, type Href } from 'expo-router';
-import { useEffect, useState, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { Pressable, ScrollView, StyleSheet, useWindowDimensions, View } from 'react-native';
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { goBackOr, goToTab } from '@/lib/navigation';
 import { Avatar } from '@/ui/primitives/Avatar';
 import { Divider } from '@/ui/primitives/Divider';
 import { Icon } from '@/ui/primitives/Icon';
@@ -26,19 +27,23 @@ export function DrawerScreen() {
   const panelWidth = Math.max(CHROME.drawerMin, Math.min(CHROME.drawerMax, Math.round(width * 0.86)));
   const open = useSharedValue(0);
   const [closing, setClosing] = useState(false);
+  const leaving = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
 
   useEffect(() => {
     open.set(withTiming(1, { duration: MOTION.standard }));
   }, [open]);
+  // Android Back can close the menu while it slides out. The pending move must
+  // not then run from whatever screen is underneath (audit F207).
+  useEffect(() => () => clearTimeout(leaving.current), []);
 
   // Slide out, then leave the route; `then` runs once the panel has gone.
   const close = (then?: () => void) => {
     if (closing) return;
     setClosing(true);
     open.set(withTiming(0, { duration: MOTION.quick }));
-    setTimeout(() => (then ? then() : router.back()), MOTION.quick);
+    leaving.current = setTimeout(() => (then ? then() : goBackOr(router)), MOTION.quick);
   };
-  const tab = (href: Href) => close(() => router.dismissTo(href));
+  const tab = (href: Href) => close(() => goToTab(router, href));
   const page = (href: Href) => close(() => router.replace(href));
 
   const backdrop = useAnimatedStyle(() => ({ opacity: open.value }));
