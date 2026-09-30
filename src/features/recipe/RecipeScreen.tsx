@@ -69,6 +69,8 @@ export function RecipeScreen({ id }: { id: string }) {
   }
 
   const mine = recipe.source !== 'house';
+  // House photos without a photographer's credit are the original app's AI-generated images (D-029).
+  const photoNote = recipe.image?.credit ?? (!mine && RECIPE_IMAGES[recipe.id] !== undefined ? 'AI-generated photo' : undefined);
   const edit = () => router.push({ pathname: '/my-recipe/edit', params: { id: recipe.id } });
   const plan = () => router.push({ pathname: '/recipe/[id]/plan', params: { id: recipe.id } });
   const share = async () => {
@@ -122,10 +124,10 @@ export function RecipeScreen({ id }: { id: string }) {
           <Ingredients recipe={recipe} servings={servings} units={units} have={have} />
           <Method recipe={recipe} />
           <Notes notes={recipe.notes ?? []} />
-          {recipe.image?.credit ? (
+          {photoNote ? (
             <View style={styles.credit}>
-              <Text variant="metaSmall" align="center">
-                {recipe.image.credit}
+              <Text variant="metaSmall" align="center" testID="recipe-photo-credit">
+                {photoNote}
               </Text>
             </View>
           ) : null}
