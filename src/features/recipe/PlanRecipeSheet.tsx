@@ -17,7 +17,7 @@ import { Sheet } from '@/ui/primitives/Sheet';
 import { Stepper } from '@/ui/primitives/Stepper';
 import { Text } from '@/ui/primitives/Text';
 import { SPACE } from '@/ui/tokens/type';
-import { planningDays } from './weekChoices';
+import { planningDays } from '@/domain/plan/weekChoices';
 
 const SLOTS = [
   { value: 'breakfast', label: 'Breakfast' },

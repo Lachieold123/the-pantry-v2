@@ -7,6 +7,9 @@ import { AppHeader } from '@/features/shell/AppHeader';
 import { TabBar } from '@/features/shell/TabBar';
 import { useTheme } from '@/ui/theme/ThemeProvider';
 
+// A crash here replaces this screen only, with a way to retry or go home (audit F69).
+export { RootErrorScreen as ErrorBoundary } from '@/features/app/RootErrorScreen';
+
 export default function TabsLayout() {
   const { colours } = useTheme();
   // First launch goes through the welcome and taste quiz (skippable) before the app.

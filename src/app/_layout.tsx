@@ -16,10 +16,12 @@ import { ThemeProvider, useTheme } from '@/ui/theme/ThemeProvider';
 void SplashScreen.preventAutoHideAsync();
 configureNotifications();
 
-export function ErrorBoundary({ retry }: ErrorBoundaryProps) {
+// Route groups have their own boundaries; this one catches a crash in the root itself,
+// above the app's ThemeProvider, so it brings its own.
+export function ErrorBoundary(props: ErrorBoundaryProps) {
   return (
     <ThemeProvider>
-      <RootErrorScreen retry={retry} />
+      <RootErrorScreen {...props} />
     </ThemeProvider>
   );
 }

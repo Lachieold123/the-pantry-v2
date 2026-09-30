@@ -1,5 +1,5 @@
 # Cookmarks: the empty state and its way out, then a saved recipe listed and opened.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

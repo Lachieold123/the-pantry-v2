@@ -1,6 +1,6 @@
 # Cook Mode: next and back, swipe, ingredients, a timer, and Done counts as cooked.
 # Uses Vegetable Lasagna: 8 steps, and the last is "Rest 20 minutes."
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true
@@ -56,7 +56,7 @@ appId: host.exp.Exponent
 - tapOn:
     id: "cook-step-text"
     point: "35%,50%"
-# iOS asks once whether Expo Go may send notifications (for a timer that ends while locked).
+# iOS asks once whether The Pantry may send notifications (for a timer that ends while locked).
 - tapOn:
     text: "Allow"
     optional: true

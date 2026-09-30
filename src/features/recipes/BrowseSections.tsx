@@ -1,8 +1,8 @@
 // What Browse shows before you search (spec §7 Browse): the recipe of the day,
 // quick chips, "cook by mood" shelves, what your cupboard can make, and a few
 // fresh picks with a way into the whole catalogue. Finite by design (map §2).
-// v1's "trending" row and People tab need real activity, so they arrive with
-// social (P9) rather than as made-up numbers.
+// v1's "trending" row and People tab need real activity from other cooks, so
+// they wait for accounts and social rather than showing made-up numbers.
 import { useRouter } from 'expo-router';
 import { useMemo } from 'react';
 import { ScrollView, View } from 'react-native';

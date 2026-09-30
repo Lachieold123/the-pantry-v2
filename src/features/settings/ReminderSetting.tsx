@@ -7,6 +7,7 @@ import { useFocusEffect } from 'expo-router';
 import { useCallback, useEffect, useState } from 'react';
 import { AppState, Linking, Platform, View } from 'react-native';
 
+import { logger } from '@/lib/logger';
 import { notificationPermission, setSundayReminder } from '@/lib/notifications';
 import { usePreferences } from '@/store/preferences';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
@@ -45,7 +46,8 @@ export function ReminderSetting() {
     return () => sub.remove();
   }, [reconcile]);
 
-  const openSettings = () => void Linking.openSettings().catch(() => undefined);
+  const openSettings = () =>
+    void Linking.openSettings().catch((e: unknown) => logger.warn('settings', "couldn't open the phone's Settings", e));
 
   const toggle = async (on: boolean) => {
     if (pending !== null) return;

@@ -1,5 +1,5 @@
-// The filters sheet (map Phase 3): results update as you choose, and the
-// footer says exactly how many recipes you'll see.
+// The filters sheet: results update as you choose, and the footer says
+// exactly how many recipes you'll see, so nobody applies a filter to find nothing.
 import { useRouter } from 'expo-router';
 import { View } from 'react-native';
 import { useShallow } from 'zustand/react/shallow';

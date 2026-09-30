@@ -1,5 +1,5 @@
 {
-  "_about": "Hand-made corrections applied by scripts/convert-old-recipes.mts on top of the old catalogue. Each replacement must match the old text exactly once, or the conversion fails, so fixes never apply silently to the wrong thing. Logged in DECISIONS.md D-014. In an ingredient fix, \"\\n\" in the replacement splits the line into several, and an empty replacement removes it.",
+  "_about": "Hand-made corrections applied by scripts/convert-old-recipes.mts on top of the old catalogue. Each replacement must match the old text exactly once, or the conversion fails, so fixes never apply silently to the wrong thing. Logged in DECISIONS.md D-014. In an ingredient fix, \"\\n\" in the replacement splits the line into several, and an empty replacement removes it. A fix can also correct prepMinutes, cookMinutes, servings or difficulty after cook-testing (unknown fields and impossible numbers fail the conversion). Mark a recipe cook-tested with \"vetted\": true on its entry in recipe-tags.json; only vetted recipes appear in store builds (D-008).",
   "everywhere": [
     {
       "from": "kaffir lime",

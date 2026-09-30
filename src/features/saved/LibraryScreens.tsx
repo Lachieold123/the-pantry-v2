@@ -1,6 +1,6 @@
 // The library pages the side menu opens (spec §4.3): Cookmarks, Collections,
-// My recipes, Recently viewed and Kitchen stats. P6 gives each v1's own layout;
-// here each gets its route and a pushed-screen header.
+// My recipes, Recently viewed and Kitchen stats. Each gets its route and a
+// pushed-screen header here, so the pages share one frame and back behaviour.
 import type { ReactNode } from 'react';
 
 import { PushedHeader } from '@/ui/patterns/PushedHeader';

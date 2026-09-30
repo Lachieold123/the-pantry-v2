@@ -8,6 +8,7 @@ import { Linking, Platform } from 'react-native';
 
 import { isRunningAlready, startTimer, timerNotice, type CookTimer } from '@/domain/cook/timers';
 import { newId } from '@/lib/ids';
+import { logger } from '@/lib/logger';
 import { cancelScheduled, ensureNotificationPermission, scheduleAt } from '@/lib/notifications';
 import { useToast } from '@/ui/patterns/Toast';
 
@@ -49,7 +50,7 @@ export function useCookTimers() {
     toast({
       message: 'Notifications are off, so timers can’t alert you with the phone locked.',
       actionLabel: 'Open Settings',
-      undo: () => void Linking.openSettings().catch(() => undefined),
+      undo: () => void Linking.openSettings().catch((e: unknown) => logger.warn('settings', "couldn't open the phone's Settings", e)),
     });
   };
 

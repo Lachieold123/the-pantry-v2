@@ -8,7 +8,7 @@
     "orientation": "portrait",
     "icon": "./assets/brand/icon.png",
     "userInterfaceStyle": "automatic",
-    "backgroundColor": "#F7F3EA",
+    "backgroundColor": "#FFFFFF",
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.lachlanoldfield.thepantry",
@@ -30,7 +30,12 @@
         "foregroundImage": "./assets/brand/adaptive-icon.png",
         "backgroundColor": "#0A0A0A"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "blockedPermissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.SYSTEM_ALERT_WINDOW"
+      ]
     },
     "web": {
       "favicon": "./assets/brand/favicon.png"
@@ -41,10 +46,11 @@
         "expo-splash-screen",
         {
           "image": "./assets/brand/splash-icon.png",
-          "imageWidth": 160,
+          "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#F7F3EA",
+          "backgroundColor": "#FFFFFF",
           "dark": {
+            "image": "./assets/brand/splash-icon-dark.png",
             "backgroundColor": "#0A0A0A"
           }
         }
@@ -56,7 +62,7 @@
       "typedRoutes": true
     },
     "runtimeVersion": {
-      "policy": "appVersion"
+      "policy": "fingerprint"
     },
     "updates": {
       "url": "https://u.expo.dev/f9f673ff-2f39-4e07-9832-49f9df87b3b2"

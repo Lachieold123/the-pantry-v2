@@ -1,5 +1,6 @@
 // Cook Mode timers are stored as an end time, not a countdown, so they stay
-// right when the phone locks or the app is in the background (map Phase 6).
+// right when the phone locks or the app is in the background: a countdown
+// would freeze while JavaScript is paused.
 
 export type CookTimer = { id: string; label: string; stepIndex: number; seconds: number; endsAt: number };
 

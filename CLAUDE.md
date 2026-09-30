@@ -58,10 +58,11 @@ Offer 2–3 options with a recommendation.
 npm start                            # Expo dev server (then open the development build on the phone)
 npm run typecheck                    # tsc --noEmit
 npm run lint                         # ESLint, including the map's structure rules
-npm test                             # domain + token tests (node:test) then component tests (Jest)
-npm run export:web                   # static web build, used for screenshots
+npm test                             # checks every test file has a runner, then node:test (*.test.ts, scripts/*.test.mts) and Jest (*.test.tsx)
+npm run export:web                   # static web build (draft recipes shown), used for screenshots
 npm run catalogue:convert -- <old>   # rebuild the catalogue from the old app at <old>
 npm run catalogue:check-ingredients  # ingredient database coverage over the catalogue
+VETTED_MIN=<n> npm run catalogue:check-vetted  # fails if fewer than n recipes are vetted; run before a production build
 ```
 
 Routes live in `src/app/` (Expo Router, SDK 57 convention). Route files stay thin: they render a screen from `src/features/`.

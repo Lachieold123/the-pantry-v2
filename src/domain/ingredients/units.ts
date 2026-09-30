@@ -138,7 +138,3 @@ export function unitLabel(unit: UnitId, amount: number): string {
   const def = UNITS[unit];
   return amount > 1 ? def.plural : def.singular;
 }
-
-export function unitKind(unit: UnitId): UnitKind {
-  return UNITS[unit].kind;
-}

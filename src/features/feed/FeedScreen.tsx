@@ -1,6 +1,7 @@
-// The Feed tab, the app's home. Until posts arrive with social (P9) it carries
-// v2's "Tonight" (the North Star's Tuesday 6pm moment), what's coming up, and
-// recipes picked for you, all real (D-027). Posts join below in P9.
+// The Feed tab, the app's home. It carries v2's "Tonight" (the North Star's
+// Tuesday 6pm moment), what's coming up, and recipes picked for you, all real
+// (D-027): there are no posts to show until cooks have accounts, and a feed of
+// invented posts would be fake.
 import { useRouter } from 'expo-router';
 import { ScrollView, View } from 'react-native';
 

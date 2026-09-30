@@ -1,6 +1,6 @@
 # Settings: appearance, high contrast, units, diet and avoid, the Sunday
 # reminder, and retaking the taste quiz.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

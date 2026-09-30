@@ -55,6 +55,12 @@ export function RecipeHeader(p: Props) {
         <View>
           <Text variant="metaSmall">By</Text>
           <Text variant="name">{p.mine ? 'You' : 'The Pantry'}</Text>
+          {/* Only for recipes Lachlan has cook-tested (D-008); an AI draft never claims it. */}
+          {!p.mine && recipe.provenance === 'vetted' ? (
+            <Text variant="metaSmall" colour="accentDeep" testID="recipe-vetted">
+              Tested in The Pantry kitchen
+            </Text>
+          ) : null}
         </View>
       </View>
 

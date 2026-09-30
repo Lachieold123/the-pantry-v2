@@ -1,5 +1,5 @@
 # First launch: Skip goes straight to the app with a suggestion for tonight.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

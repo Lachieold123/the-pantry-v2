@@ -1,5 +1,5 @@
 # Recently viewed and Kitchen stats: empty, then filled by opening and cooking a recipe.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

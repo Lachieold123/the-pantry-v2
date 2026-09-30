@@ -6,9 +6,15 @@ import { Icon } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
 import { SPACE } from '@/ui/tokens/type';
 
-type Props = { title?: string; body: string; onRetry: () => void };
+type Props = {
+  title?: string;
+  body: string;
+  onRetry: () => void;
+  /** A way out when trying again keeps failing, such as going home. */
+  secondary?: { label: string; onPress: () => void; testID: string };
+};
 
-export function ErrorState({ title = 'That didn’t work', body, onRetry }: Props) {
+export function ErrorState({ title = 'That didn’t work', body, onRetry, secondary }: Props) {
   return (
     <View style={{ gap: SPACE.sm, paddingVertical: SPACE.xl }} accessibilityRole="alert">
       <Icon name="warning" colour="danger" />
@@ -19,6 +25,7 @@ export function ErrorState({ title = 'That didn’t work', body, onRetry }: Prop
       <View style={{ paddingTop: SPACE.xs }}>
         <Button label="Try again" onPress={onRetry} kind="primary" testID="error-retry" />
       </View>
+      {secondary ? <Button label={secondary.label} onPress={secondary.onPress} testID={secondary.testID} /> : null}
     </View>
   );
 }

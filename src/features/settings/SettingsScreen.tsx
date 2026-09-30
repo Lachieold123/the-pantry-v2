@@ -1,5 +1,5 @@
 // Settings, opened from the side menu and the avatar: appearance and units
-// change the app immediately. P6 restyles it to v1's grouped white cards.
+// change the app immediately, so there's no Save button to forget.
 import Constants from 'expo-constants';
 import { useRouter } from 'expo-router';
 import { View } from 'react-native';

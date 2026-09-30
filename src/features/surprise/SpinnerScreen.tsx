@@ -11,6 +11,7 @@ import { useReducedMotion } from 'react-native-reanimated';
 
 import type { Recipe } from '@/domain/recipes/types';
 import { deckPosition, SPIN_DELAYS, type SpinSettings } from '@/domain/suggestions/spinner';
+import { logger } from '@/lib/logger';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { PhotoScrim } from '@/ui/patterns/PhotoScrim';
 import { Button } from '@/ui/primitives/Button';
@@ -48,7 +49,9 @@ export function SpinnerScreen() {
     setFlash(undefined);
     setSpinning(false);
     setLanded((n) => n + 1);
-    void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success).catch(() => undefined);
+    void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success).catch((e: unknown) =>
+      logger.warn('haptics', 'no haptic feedback', e),
+    );
   };
   const spin = () => {
     if (spinning) return;

@@ -3,6 +3,8 @@
 import * as Notifications from 'expo-notifications';
 import { useEffect, useRef } from 'react';
 
+import { logger } from './logger';
+
 let configured = false;
 
 /**
@@ -31,7 +33,8 @@ export async function notificationPermission(): Promise<NotificationPermission> 
     const current = await Notifications.getPermissionsAsync();
     if (current.granted) return 'granted';
     return current.canAskAgain ? 'undetermined' : 'blocked';
-  } catch {
+  } catch (e) {
+    logger.warn('notifications', "couldn't read the permission", e);
     return 'blocked';
   }
 }
@@ -45,8 +48,9 @@ export async function ensureNotificationPermission(): Promise<boolean> {
     if (!current.canAskAgain) return false;
     const asked = await Notifications.requestPermissionsAsync();
     return asked.granted;
-  } catch {
+  } catch (e) {
     // A failed permission check must not break the caller (audit F46): treat it as "no".
+    logger.warn('notifications', "couldn't check or ask for permission", e);
     return false;
   }
 }
@@ -67,8 +71,9 @@ export async function scheduleAt(when: number, title: string, body: string, opti
       content: { title, body, sound: true, ...(options.timeSensitive ? { interruptionLevel: 'timeSensitive' as const } : {}) },
       trigger: { type: Notifications.SchedulableTriggerInputTypes.DATE, date: when },
     });
-  } catch {
+  } catch (e) {
     // Scheduling can fail on web or without permission; the in-app timer still runs.
+    logger.warn('notifications', "couldn't schedule", e);
     return undefined;
   }
 }
@@ -106,7 +111,8 @@ export async function setSundayReminder(on: boolean): Promise<boolean> {
       trigger: { type: Notifications.SchedulableTriggerInputTypes.WEEKLY, weekday: 1, hour: 16, minute: 0 },
     });
     return true;
-  } catch {
+  } catch (e) {
+    logger.warn('notifications', "couldn't schedule the Sunday reminder", e);
     return false;
   }
 }

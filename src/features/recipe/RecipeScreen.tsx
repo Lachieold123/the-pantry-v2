@@ -13,6 +13,7 @@ import { cookable } from '@/domain/cupboard/cookable';
 import { cupboardIds } from '@/domain/cupboard/match';
 import { recipeAsText } from '@/domain/recipes/labels';
 import { parseServings } from '@/domain/recipes/servings';
+import { logger } from '@/lib/logger';
 import { useCookLog } from '@/store/cookLog';
 import { ingredientName } from '@/store/cookable';
 import { useCupboard } from '@/store/cupboard';
@@ -108,7 +109,8 @@ export function RecipeScreen({ id, servings: requested }: { id: string; servings
         title: recipe.title,
         message: mine ? recipeAsText(recipe) : `${recipe.title}: ${recipe.summary ?? ''}\nthepantry://recipe/${recipe.id}`,
       });
-    } catch {
+    } catch (e) {
+      logger.warn('share', "couldn't open the share sheet", e);
       toast({ message: "Couldn't open sharing. Try again." });
     }
   };

@@ -1,7 +1,7 @@
 # The recipe page: save with undo, plan it, share, mark cooked with undo,
 # servings and units, tick an ingredient, and the "⋯" menu.
 # Uses Carbonara (written for 2, 200 g spaghetti).
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true
