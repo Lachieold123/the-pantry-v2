@@ -29,14 +29,7 @@ export function ServingsSheet({ visible, onClose, servings, original, onServings
     <ModalSheet visible={visible} onClose={onClose} title="Servings" testID="servings-sheet">
       <View style={{ gap: SPACE.md, paddingVertical: SPACE.sm, alignItems: 'center' }}>
         <View style={{ alignSelf: 'center' }}>
-          <Stepper
-            label="Servings"
-            value={servings}
-            onChange={onServings}
-            max={24}
-            format={(n) => `Serves ${n}`}
-            testID="servings-stepper"
-          />
+          <Stepper label="Servings" value={servings} onChange={onServings} format={(n) => `Serves ${n}`} testID="servings-stepper" />
         </View>
         <Text variant="caption" align="center">
           The recipe is written for {original}. Amounts scale as you change it.

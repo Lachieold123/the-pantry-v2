@@ -11,7 +11,8 @@ import { makeStyles } from '@/ui/theme/makeStyles';
 import { FIXED } from '@/ui/tokens/colour';
 import { MOTION, RADIUS, SHADOW, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 
-type ToastInput = { message: string; undo?: () => void };
+// `actionLabel` renames the one action when it isn't an undo ("Open Settings").
+type ToastInput = { message: string; undo?: () => void; actionLabel?: string };
 type ToastState = ToastInput & { id: number };
 
 const ToastContext = createContext<(t: ToastInput) => void>(() => {});
@@ -66,12 +67,12 @@ function ToastView({ toast, onDone }: { toast: ToastState; onDone: () => void })
               onDone();
             }}
             accessibilityRole="button"
-            accessibilityLabel="Undo"
-            testID="toast-undo"
+            accessibilityLabel={toast.actionLabel ?? 'Undo'}
+            testID={toast.actionLabel ? 'toast-action' : 'toast-undo'}
             style={styles.undo}
           >
             <Text variant="toast" tone={FIXED.toastInk} style={{ textDecorationLine: 'underline' }}>
-              Undo
+              {toast.actionLabel ?? 'Undo'}
             </Text>
           </Pressable>
         ) : null}

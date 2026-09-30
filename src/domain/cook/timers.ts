@@ -23,3 +23,30 @@ export function formatCountdown(seconds: number): string {
   const ss = String(s).padStart(2, '0');
   return h > 0 ? `${h}:${String(m).padStart(2, '0')}:${ss}` : `${m}:${ss}`;
 }
+
+/** True while any timer is still counting down: leaving Cook Mode would silence it. */
+export function anyRunning(timers: readonly CookTimer[], now: number): boolean {
+  return timers.some((t) => !isFinished(t, now));
+}
+
+/** A second tap on the same time in the same step shouldn't start a twin (audit F45). */
+export function isRunningAlready(timers: readonly CookTimer[], stepIndex: number, label: string, now: number): boolean {
+  return timers.some((t) => t.stepIndex === stepIndex && t.label === label && !isFinished(t, now));
+}
+
+const SNIPPET_LENGTH = 90;
+
+/**
+ * What the lock screen says when a timer ends. The step number and what the
+ * step was doing tell you which pot to check; "8–10 minutes is up" didn't (audit F185).
+ */
+export function timerNotice(stepIndex: number, label: string, stepText: string): { title: string; body: string } {
+  const text = stepText.replace(/\s+/g, ' ').trim();
+  let body = text;
+  if (text.length > SNIPPET_LENGTH) {
+    const cut = text.slice(0, SNIPPET_LENGTH);
+    const space = cut.lastIndexOf(' ');
+    body = `${(space > SNIPPET_LENGTH / 2 ? cut.slice(0, space) : cut).replace(/[\s,;:.]+$/, '')}…`;
+  }
+  return { title: `Step ${stepIndex + 1} timer done`, body: body || `${label} is up` };
+}
