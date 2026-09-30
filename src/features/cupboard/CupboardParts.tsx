@@ -22,7 +22,7 @@ import { SPACE } from '@/ui/tokens/type';
 const ALL = [...INGREDIENTS.byId.values()].filter((d) => !d.staple).sort((a, b) => a.name.localeCompare(b.name));
 const SUGGESTIONS = 8;
 const RAIL = 10;
-const CATEGORY_LABEL: Record<(typeof CUPBOARD_CATEGORIES)[number], string> = {
+export const CATEGORY_LABEL: Record<(typeof CUPBOARD_CATEGORIES)[number], string> = {
   proteins: 'Proteins',
   vegetables: 'Vegetables',
   fruit: 'Fruit',

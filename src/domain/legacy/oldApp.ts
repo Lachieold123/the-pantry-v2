@@ -14,6 +14,25 @@ import type { TimeFilter } from '../recipes/search';
 import type { CuisineId, Difficulty } from '../recipes/types';
 
 /** Storage keys the old app used, newest first (it was renamed twice). */
+/**
+ * v1's cupboard stored loose names ("Chicken", "Pork"). Where the ingredient
+ * matcher would guess badly or find nothing, this says what they meant: the
+ * cut or kind v2's recipes actually use most.
+ */
+const OLD_PANTRY_NAMES: Readonly<Record<string, string>> = {
+  chicken: 'chicken-thigh',
+  beef: 'beef-mince',
+  pork: 'pork-shoulder',
+  lamb: 'lamb-shoulder',
+  turkey: 'turkey-mince',
+  noodles: 'egg-noodles',
+  'curry paste': 'red-curry-paste',
+  jam: 'apricot-jam',
+  berries: 'frozen-berries',
+  'stock cube': 'chicken-stock',
+  'wholemeal flour': 'plain-flour',
+};
+
 export const OLD_STORAGE_KEYS = ['the-pantry/v1', 'the-hub/v1', 'dinner-spinner/v1'] as const;
 
 export type ImportedRecipe = { id: string; draft: RecipeDraft };
@@ -167,9 +186,9 @@ export function importOldApp(raw: string, ctx: ImportContext): OldAppImport | un
     const recipeId = resolve(e.id);
     return recipeId ? [{ recipeId, cookedAt: e.at }] : [];
   });
-  const cupboard = [...new Set(strings(old.pantryItems).map((name) => ctx.index.match(name)))].filter(
-    (id): id is string => id !== undefined,
-  );
+  const cupboard = [
+    ...new Set(strings(old.pantryItems).map((name) => OLD_PANTRY_NAMES[name.trim().toLowerCase()] ?? ctx.index.match(name))),
+  ].filter((id): id is string => id !== undefined);
 
   return {
     bookmarks: resolveAll(strings(old.favorites)),

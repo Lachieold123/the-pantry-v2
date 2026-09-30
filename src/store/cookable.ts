@@ -5,7 +5,7 @@
 import { useMemo } from 'react';
 
 import { INGREDIENTS, KITCHEN } from '@/data/catalogue/catalogue';
-import { addOneThing, quickAdds, whatCanICook, type CookableMatch } from '@/domain/cupboard/cookable';
+import { addOneThing, popularIngredients, quickAdds, whatCanICook, type CookableMatch } from '@/domain/cupboard/cookable';
 import { cupboardIds } from '@/domain/cupboard/match';
 import { toISODate } from '@/domain/plan/week';
 import { NO_FILTERS } from '@/domain/recipes/search';
@@ -52,4 +52,10 @@ export function useCookableNow(): CookableNow {
 /** The name a cook reads for an ingredient id. */
 export function ingredientName(id: string): string {
   return INGREDIENTS.byId.get(id)?.name ?? id;
+}
+
+/** Ingredients by how often this cook's recipes use them, for the stocking grid. */
+export function usePopularIngredients(): string[] {
+  const recipes = useAllRecipes();
+  return useMemo(() => popularIngredients(recipes, INGREDIENTS), [recipes]);
 }

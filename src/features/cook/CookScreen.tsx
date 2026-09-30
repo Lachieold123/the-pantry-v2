@@ -2,16 +2,21 @@
 // to move on (D-004), timers you start with a tap, and Done logs the cook.
 import { useKeepAwake } from 'expo-keep-awake';
 import { useRouter } from 'expo-router';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { Pressable, ScrollView, View } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, { FadeIn, useReducedMotion } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { INGREDIENTS, KITCHEN } from '@/data/catalogue/catalogue';
 import { splitStepTimers } from '@/domain/cook/cook';
+import { cookable } from '@/domain/cupboard/cookable';
+import { cupboardIds } from '@/domain/cupboard/match';
 import { formatLine, scaleLine } from '@/domain/ingredients/format';
 import { allLines } from '@/domain/recipes/types';
+import { ingredientName } from '@/store/cookable';
 import { useCookLog } from '@/store/cookLog';
+import { useCupboard } from '@/store/cupboard';
 import { usePreferences } from '@/store/preferences';
 import { useRecipe } from '@/store/recipeBook';
 import { EmptyState } from '@/ui/patterns/EmptyState';
@@ -23,6 +28,7 @@ import { useTheme } from '@/ui/theme/ThemeProvider';
 import { MOTION, SPACE } from '@/ui/tokens/type';
 import { TimerBar } from './TimerBar';
 import { useCookTimers } from './useCookTimers';
+import { UsedUpSheet } from './UsedUpSheet';
 
 const SWIPE_DISTANCE = 60;
 
@@ -39,6 +45,11 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
   const recipe = useRecipe(id);
   const [step, setStep] = useState(0);
   const [showIngredients, setShowIngredients] = useState(false);
+  const [askUsedUp, setAskUsedUp] = useState(false);
+  const items = useCupboard((s) => s.items);
+  const shelf = useCupboard((s) => s.shelf);
+  const removeFromCupboard = useCupboard((s) => s.remove);
+  const cupboard = useMemo(() => cupboardIds(items), [items]);
   const { timers, now, start, dismiss } = useCookTimers(recipe?.title ?? '');
 
   if (!recipe) {
@@ -68,11 +79,20 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
       if (e.translationX < -SWIPE_DISTANCE) next();
       else if (e.translationX > SWIPE_DISTANCE) previous();
     });
-  const done = () => {
+  // Fresh things this recipe took from the cupboard: offered for removal once you're done.
+  const used = (() => {
+    if (!cupboard.size) return [];
+    const c = cookable(recipe, cupboard, shelf, INGREDIENTS, KITCHEN);
+    return [...c.have, ...c.swaps.map((s) => s.use)].filter((i) => KITCHEN.isPerishable(i));
+  })();
+  const finish = (usedUp: string[]) => {
+    setAskUsedUp(false);
     const event = markCooked(recipe.id);
+    for (const i of usedUp) removeFromCupboard(i);
     router.back();
     toast({ message: `${recipe.title} cooked. Nice work.`, undo: () => undoCooked(event.id) });
   };
+  const done = () => (used.length ? setAskUsedUp(true) : finish([]));
   const text = recipe.steps[step]?.text ?? '';
 
   return (
@@ -148,6 +168,11 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
           )}
         </View>
       </View>
+      <UsedUpSheet visible={askUsedUp} ids={used} nameOf={(i) => capitalise(ingredientName(i))} onFinish={finish} />
     </View>
   );
+}
+
+function capitalise(s: string): string {
+  return s.charAt(0).toUpperCase() + s.slice(1);
 }

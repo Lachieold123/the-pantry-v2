@@ -104,6 +104,11 @@ describe('importOldApp', () => {
     assert.equal(result.cupboard.length, 2);
   });
 
+  it('reads v1 loose names as the cut our recipes use: Chicken means thigh, not pieces', () => {
+    assert.ok(result);
+    assert.deepEqual([...result.cupboard].sort(), ['chicken-thigh', 'white-rice']);
+  });
+
   it('carries the old onboarding answers over', () => {
     assert.ok(result?.taste);
     assert.equal(result.taste.diet, 'pescatarian');

@@ -2,7 +2,17 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
 import { catalogue, index, kitchen, makeRecipe } from '../testing/fixtures';
-import { addOneThing, cookable, DEFAULT_SHELF, needLine, quickAdds, tierOf, whatCanICook, type Shelf } from './cookable';
+import {
+  addOneThing,
+  cookable,
+  DEFAULT_SHELF,
+  needLine,
+  popularIngredients,
+  quickAdds,
+  tierOf,
+  whatCanICook,
+  type Shelf,
+} from './cookable';
 
 const ONLY_MINE: Shelf = { mode: 'mine', ids: [] };
 const dish = makeRecipe('dish', [
@@ -115,6 +125,14 @@ describe('quick adds', () => {
     assert.equal(picks.length, 10);
     assert.ok(!picks.includes('garlic'));
     for (const id of picks) assert.ok(!kitchen.isShelf(id) && !index.byId.get(id)?.staple, id);
+  });
+});
+
+describe('stocking grid order', () => {
+  it('puts the most-used ingredients first and leaves staples out', () => {
+    const ranked = popularIngredients(catalogue, index);
+    assert.ok(ranked.indexOf('garlic') < 5, `garlic at ${ranked.indexOf('garlic')}`);
+    assert.ok(!ranked.includes('salt'));
   });
 });
 

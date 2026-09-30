@@ -13,6 +13,7 @@ import { ListRow } from '@/ui/primitives/ListRow';
 import { Screen } from '@/ui/primitives/Screen';
 import { Switch } from '@/ui/primitives/Switch';
 import { AddBar, capitalise, CookRail, Jars, QuickAdds, UnlockRows } from './CupboardParts';
+import { StockGrid } from './StockGrid';
 
 export function CupboardScreen() {
   const router = useRouter();
@@ -69,6 +70,7 @@ export function CupboardScreen() {
         />
       ) : null}
       <QuickAdds ids={quick} onAdd={addOne} />
+      <StockGrid have={have} onAdd={(id) => add([id], 'manual')} onRemove={(id) => remove(id)} />
       <ListRow
         icon="basket"
         title="Always in my kitchen"

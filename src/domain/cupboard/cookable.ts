@@ -164,3 +164,14 @@ export function quickAdds(
     .slice(0, limit)
     .map(([id]) => id);
 }
+
+/** Every ingredient recipes use, most-used first (staples left out): the order for the "stock the cupboard" grid. */
+export function popularIngredients(recipes: readonly Recipe[], index: IngredientIndex): string[] {
+  const counts = new Map<string, number>();
+  for (const recipe of recipes) {
+    for (const id of new Set(allLines(recipe).flatMap((l) => (l.ingredientId && !l.optional ? [l.ingredientId] : [])))) {
+      if (!index.byId.get(id)?.staple) counts.set(id, (counts.get(id) ?? 0) + 1);
+    }
+  }
+  return [...counts].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([id]) => id);
+}

@@ -51,6 +51,19 @@ if [ -s "$HOME/.nvm/nvm.sh" ]; then
 fi
 export PATH="$PATH:$HOME/.maestro/bin"
 
+# Maestro needs Java. Homebrew's OpenJDK is "keg-only": installed but not on the
+# path, so macOS says "Unable to locate a Java Runtime". Find it and use it.
+if ! /usr/libexec/java_home >/dev/null 2>&1; then
+  for jdk in /opt/homebrew/opt/openjdk@21 /opt/homebrew/opt/openjdk@17 /opt/homebrew/opt/openjdk /usr/local/opt/openjdk@21 /usr/local/opt/openjdk@17 /usr/local/opt/openjdk; do
+    if [ -x "$jdk/bin/java" ]; then
+      export JAVA_HOME="$jdk/libexec/openjdk.jdk/Contents/Home"
+      [ -d "$JAVA_HOME" ] || export JAVA_HOME="$jdk"
+      export PATH="$jdk/bin:$PATH"
+      break
+    fi
+  done
+fi
+
 say "Checking the tools"
 if ! xcrun --find simctl >/dev/null 2>&1; then
   echo "Xcode isn't installed (or hasn't been opened yet)."
@@ -64,6 +77,14 @@ if ! command -v maestro >/dev/null 2>&1; then
   echo '  curl -fsSL "https://get.maestro.mobile.dev" | bash'
   echo
   echo "When it finishes, close Terminal and double-click this file again."
+  finish 1
+fi
+if ! java -version >/dev/null 2>&1; then
+  echo "Java isn't installed. Open Terminal, paste this line and press Return:"
+  echo
+  echo '  brew install openjdk@17'
+  echo
+  echo "Then double-click this file again."
   finish 1
 fi
 if ! command -v npm >/dev/null 2>&1; then
@@ -86,7 +107,9 @@ else
   xcrun simctl boot "$UDID" || finish 1
   xcrun simctl bootstatus "$UDID" -b >/dev/null 2>&1
 fi
-open -a Simulator
+# Simulator.app lives inside Xcode, so open it by path.
+open -a "$(xcode-select -p)/Applications/Simulator.app" 2>/dev/null ||
+  open -a /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app 2>/dev/null || true
 
 if [ ! -d "$REPO_ROOT/node_modules" ]; then
   say "Installing npm packages (first run only)"
@@ -97,6 +120,27 @@ mkdir -p "$OUT_DIR"
 
 if curl -fs "$METRO_STATUS_URL" 2>/dev/null | grep -q "packager-status:running"; then
   say "Metro is already running; using it"
+  # The flows need Expo Go on the simulator. Normally "expo start --ios" installs it;
+  # with Metro already running, a short second start on a spare port does the install.
+  if ! xcrun simctl listapps booted 2>/dev/null | grep -q "host.exp.Exponent"; then
+    say "Installing Expo Go on the simulator"
+    set -m
+    npx expo start --go --ios --port 8083 </dev/null >"$OUT_DIR/expo-go-install.log" 2>&1 &
+    INSTALL_PID=$!
+    set +m
+    for _ in $(seq 1 240); do
+      xcrun simctl listapps booted 2>/dev/null | grep -q "host.exp.Exponent" && break
+      sleep 1
+    done
+    sleep 5
+    kill -TERM -- "-$INSTALL_PID" 2>/dev/null || kill -TERM "$INSTALL_PID" 2>/dev/null
+    wait "$INSTALL_PID" 2>/dev/null
+    if ! xcrun simctl listapps booted 2>/dev/null | grep -q "host.exp.Exponent"; then
+      echo "Couldn't install Expo Go on the simulator. The log:"
+      tail -n 30 "$OUT_DIR/expo-go-install.log"
+      finish 1
+    fi
+  fi
 else
   say "Starting Metro with Expo Go (log: $METRO_LOG)"
   # --go opens the project in Expo Go (installing Expo Go on the simulator if needed).
