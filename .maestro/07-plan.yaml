@@ -1,0 +1,113 @@
+# Plan: both views and both weeks, add a meal, change who it's for, remove
+# with undo; the shopping list: tick, remove with undo, add an extra, send it.
+appId: host.exp.Exponent
+---
+- launchApp:
+    clearState: true
+- openLink: exp://127.0.0.1:8081
+- runFlow: subflows/_setup_skip_welcome.yaml
+- tapOn:
+    id: "tab-plan"
+- assertVisible:
+    id: "plan-screen"
+- assertVisible: "Nothing planned yet"
+- takeScreenshot: plan-empty
+
+# Both views and both weeks, empty
+- tapOn:
+    id: "tab-list"
+- assertVisible: "Your list is empty"
+- tapOn:
+    id: "tab-week"
+- tapOn:
+    id: "segment-next"
+- assertVisible: "Next week is clear"
+- tapOn:
+    id: "segment-this"
+- assertVisible: "Nothing planned yet"
+
+# Add a meal to today (the first day with an Add button) from the Add sheet.
+- tapOn:
+    id: "plan-add-.*"
+    index: 0
+- assertVisible: "Add to .*"
+- tapOn:
+    id: "add-plan-search"
+- inputText: "carbonara"
+- tapOn:
+    id: "add-plan-result-carbonara"
+- assertVisible: "Carbonara planned for today dinner"
+- assertVisible:
+    id: "plan-entry-[a-z0-9]+-[a-z0-9]+"
+- assertVisible: "1 dinner planned"
+- takeScreenshot: plan-week
+
+# Change who it's for: tap the "+" end of the entry's stepper.
+- tapOn:
+    id: "plan-entry-.*-servings"
+    point: "88%,50%"
+- takeScreenshot: plan-servings-changed
+
+# Remove, then undo
+- tapOn:
+    id: "plan-entry-.*-remove"
+- assertVisible: "Carbonara taken off the plan"
+- tapOn:
+    id: "toast-undo"
+- assertVisible:
+    id: "plan-entry-[a-z0-9]+-[a-z0-9]+"
+
+# Shopping list for this week
+- tapOn:
+    id: "tab-list"
+- assertVisible:
+    id: "shopping-share"
+- assertVisible: ".* to buy for 1 meal"
+- takeScreenshot: shopping-list
+- tapOn:
+    id: "shopping-item-guanciale"
+- takeScreenshot: shopping-ticked
+
+# Remove an item, then undo
+- tapOn:
+    id: "shopping-item-pecorino-remove"
+- assertVisible: ".* removed from the list"
+- tapOn:
+    id: "toast-undo"
+- assertVisible:
+    id: "shopping-item-pecorino"
+
+# Add something that isn't in any recipe
+- scrollUntilVisible:
+    element:
+      id: "shopping-add-extra"
+    direction: DOWN
+- tapOn:
+    id: "shopping-add-extra"
+- inputText: "Paper towels"
+- pressKey: Enter
+- assertVisible: "Paper towels"
+
+# Send it: the share sheet opens; close it.
+- scrollUntilVisible:
+    element:
+      id: "shopping-share"
+    direction: UP
+- tapOn:
+    id: "shopping-share"
+- waitForAnimationToEnd:
+    timeout: 3000
+- tapOn:
+    text: "Close"
+    optional: true
+- assertVisible:
+    id: "plan-screen"
+
+# Next week's list is still empty
+- tapOn:
+    id: "segment-next"
+- assertVisible: "Your list is empty"
+- tapOn:
+    id: "segment-this"
+- assertVisible:
+    id: "shopping-share"

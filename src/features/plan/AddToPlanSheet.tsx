@@ -62,12 +62,19 @@ export function AddToPlanSheet({ day: requested }: { day: string | undefined }) 
   return (
     <Sheet title={`Add to ${longDate(fromISODate(day))}`} onClose={() => router.back()}>
       <Segmented<Slot> label="Meal" options={SLOTS} value={slot} onChange={setSlot} />
-      <SearchField value={query} onChange={setQuery} placeholder="Search recipes" label="Search recipes to plan" />
+      <SearchField value={query} onChange={setQuery} placeholder="Search recipes" label="Search recipes to plan" testID="add-plan-search" />
       {!query.trim() && saved.length ? (
         <View style={{ gap: SPACE.sm }}>
           <SectionHeader title="Saved" />
           {saved.map((r) => (
-            <RecipeCard key={r.id} recipe={r} image={RECIPE_IMAGES[r.id]} size="row" onPress={() => pick(r)} />
+            <RecipeCard
+              key={r.id}
+              recipe={r}
+              image={RECIPE_IMAGES[r.id]}
+              size="row"
+              onPress={() => pick(r)}
+              testID={`add-plan-saved-${r.id}`}
+            />
           ))}
         </View>
       ) : null}
@@ -79,7 +86,14 @@ export function AddToPlanSheet({ day: requested }: { day: string | undefined }) 
           </Text>
         ) : null}
         {results.map((r) => (
-          <RecipeCard key={r.id} recipe={r} image={RECIPE_IMAGES[r.id]} size="row" onPress={() => pick(r)} />
+          <RecipeCard
+            key={r.id}
+            recipe={r}
+            image={RECIPE_IMAGES[r.id]}
+            size="row"
+            onPress={() => pick(r)}
+            testID={`add-plan-result-${r.id}`}
+          />
         ))}
       </View>
     </Sheet>

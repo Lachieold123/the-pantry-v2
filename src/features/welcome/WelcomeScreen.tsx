@@ -65,8 +65,10 @@ export function WelcomeScreen() {
   return (
     <Screen>
       <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', minHeight: 44 }}>
-        {back ? <Button label="Back" kind="quiet" onPress={() => setStep(back)} /> : <View />}
-        {step === 'reminder' ? null : <Button label="Skip" kind="quiet" onPress={finish} accessibilityHint="Go straight to the app" />}
+        {back ? <Button label="Back" kind="quiet" onPress={() => setStep(back)} testID="welcome-back" /> : <View />}
+        {step === 'reminder' ? null : (
+          <Button label="Skip" kind="quiet" onPress={finish} accessibilityHint="Go straight to the app" testID="welcome-skip" />
+        )}
       </View>
 
       {step === 'hello' ? (
@@ -78,20 +80,20 @@ export function WelcomeScreen() {
           <Text variant="body" colour="inkSoft">
             Plan the week on Sunday, shop once, and know what’s for dinner every night. Two quick questions and we’ll suggest tonight’s.
           </Text>
-          <Button label="Get started" kind="primary" block onPress={next} />
+          <Button label="Get started" kind="primary" block onPress={next} testID="welcome-start" />
         </View>
       ) : null}
 
       {step === 'eat' ? <EatStep /> : null}
       {step === 'like' ? <LikeStep /> : null}
-      {step === 'eat' || step === 'like' ? <Button label="Next" kind="primary" block onPress={next} /> : null}
+      {step === 'eat' || step === 'like' ? <Button label="Next" kind="primary" block onPress={next} testID="welcome-next" /> : null}
 
       {step === 'reveal' ? (
         hero ? (
           <View style={{ gap: SPACE.md }}>
             <Text variant="kicker">Tonight, for you</Text>
-            <RecipeCard recipe={hero} image={RECIPE_IMAGES[hero.id]} size="large" onPress={planTonight} />
-            <Button label="Cook this tonight" kind="primary" block onPress={planTonight} />
+            <RecipeCard recipe={hero} image={RECIPE_IMAGES[hero.id]} size="large" onPress={planTonight} testID="welcome-pick" />
+            <Button label="Cook this tonight" kind="primary" block onPress={planTonight} testID="welcome-cook-tonight" />
             {more.map((r) => (
               <RecipeCard
                 key={r.id}
@@ -100,18 +102,25 @@ export function WelcomeScreen() {
                 size="row"
                 note="Or this"
                 onPress={() => setOffset(picks.indexOf(r))}
+                testID={`welcome-other-${r.id}`}
               />
             ))}
             {picks.length > PICKS ? (
-              <Button label="Show me others" kind="quiet" onPress={() => setOffset((o) => (o + PICKS < picks.length ? o + PICKS : 0))} />
+              <Button
+                label="Show me others"
+                kind="quiet"
+                onPress={() => setOffset((o) => (o + PICKS < picks.length ? o + PICKS : 0))}
+                testID="welcome-show-others"
+              />
             ) : null}
-            <Button label="Not tonight" kind="quiet" onPress={next} />
+            <Button label="Not tonight" kind="quiet" onPress={next} testID="welcome-not-tonight" />
           </View>
         ) : (
           <EmptyState
             title="Nothing fits all of that yet"
             body="Your answers rule out every dinner we have. Try loosening what you avoid."
             action={{ label: 'Change answers', onPress: () => setStep('eat') }}
+            testID="welcome-empty"
           />
         )
       ) : null}
@@ -124,8 +133,8 @@ export function WelcomeScreen() {
           <Text variant="body" colour="inkSoft">
             We’ll remind you at 4pm on Sunday to plan the week. Nothing else, ever. You can change it in Settings.
           </Text>
-          <Button label="Remind me on Sundays" kind="primary" block onPress={() => void remind()} />
-          <Button label="Not now" kind="quiet" onPress={finish} />
+          <Button label="Remind me on Sundays" kind="primary" block onPress={() => void remind()} testID="welcome-remind" />
+          <Button label="Not now" kind="quiet" onPress={finish} testID="welcome-not-now" />
         </View>
       ) : null}
     </Screen>

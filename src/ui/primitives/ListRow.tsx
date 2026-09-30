@@ -8,14 +8,14 @@ import { SPACE, TAP_TARGET } from '@/ui/tokens/type';
 import { Icon, type IconName } from './Icon';
 import { Text } from './Text';
 
-type Props = { title: string; detail?: string; value?: string; icon?: IconName; onPress: () => void; testID?: string };
+type Props = { title: string; detail?: string; value?: string; icon?: IconName; onPress: () => void; testID?: string | undefined };
 
 export function ListRow({ title, detail, value, icon, onPress, testID }: Props) {
   const styles = useStyles();
   return (
     <Pressable
       onPress={onPress}
-      testID={testID}
+      {...(testID ? { testID } : {})}
       accessibilityRole="button"
       accessibilityLabel={value ? `${title}, ${value}` : title}
       style={({ pressed }) => [styles.row, pressed && styles.pressed]}

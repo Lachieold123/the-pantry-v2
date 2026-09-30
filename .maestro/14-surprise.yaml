@@ -1,0 +1,75 @@
+# Surprise me / Spinner: time limits, spin, spin again, open the pick, plan it, cook it.
+appId: host.exp.Exponent
+---
+- launchApp:
+    clearState: true
+- openLink: exp://127.0.0.1:8081
+- runFlow: subflows/_setup_skip_welcome.yaml
+
+# From the side menu's Spinner
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-spinner"
+- assertVisible: 'Can.t decide\?'
+- takeScreenshot: surprise-start
+- tapOn:
+    id: "surprise-time-under-45"
+- tapOn:
+    id: "surprise-time-under-30"
+- tapOn:
+    id: "surprise-spin"
+# The reel runs for about a second and a half before it settles.
+- extendedWaitUntil:
+    visible:
+      id: "surprise-result"
+    timeout: 10000
+- takeScreenshot: surprise-result
+- tapOn:
+    id: "surprise-spin-again"
+- extendedWaitUntil:
+    visible:
+      id: "surprise-result"
+    timeout: 10000
+
+# The pick opens its recipe
+- tapOn:
+    id: "surprise-result"
+- assertVisible:
+    id: "recipe-screen"
+- tapOn:
+    id: "back"
+
+# Plan it opens the plan sheet for the pick
+- extendedWaitUntil:
+    visible:
+      id: "surprise-plan"
+    timeout: 10000
+- tapOn:
+    id: "surprise-plan"
+- assertVisible:
+    id: "plan-confirm"
+- tapOn:
+    id: "plan-confirm"
+- assertVisible: ".* planned for .*"
+- assertVisible:
+    id: "feed-screen"
+
+# From the Feed: Cook it goes straight into Cook Mode
+- tapOn:
+    id: "feed-surprise"
+- tapOn:
+    id: "surprise-time-any"
+- tapOn:
+    id: "surprise-spin"
+- extendedWaitUntil:
+    visible:
+      id: "surprise-cook"
+    timeout: 10000
+- tapOn:
+    id: "surprise-cook"
+- assertVisible: "Step 1 of .*"
+- tapOn:
+    id: "cook-close"
+- assertVisible:
+    id: "feed-screen"

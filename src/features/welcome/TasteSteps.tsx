@@ -38,7 +38,7 @@ export function EatStep() {
         <SectionHeader title="What do you eat?" />
         <Row>
           {DIETS.map((d) => (
-            <Chip key={d} label={DIET_PREFERENCE_LABELS[d]} selected={diet === d} onPress={() => setDiet(d)} />
+            <Chip key={d} label={DIET_PREFERENCE_LABELS[d]} selected={diet === d} onPress={() => setDiet(d)} testID={`diet-${d}`} />
           ))}
         </Row>
       </View>
@@ -46,7 +46,13 @@ export function EatStep() {
         <SectionHeader title="Anything to avoid?" />
         <Row>
           {AVOIDS.map((o) => (
-            <Chip key={o} label={AVOID_LABELS[o]} selected={avoid.options.includes(o)} onPress={() => toggleAvoidOption(o)} />
+            <Chip
+              key={o}
+              label={AVOID_LABELS[o]}
+              selected={avoid.options.includes(o)}
+              onPress={() => toggleAvoidOption(o)}
+              testID={`avoid-${o}`}
+            />
           ))}
         </Row>
         <Text variant="meta">We won’t suggest recipes with these. It’s a convenience, not an allergy filter.</Text>
@@ -66,7 +72,13 @@ export function LikeStep() {
         <Text variant="meta">Pick a few, or none. We’ll show these first, not only these.</Text>
         <Row>
           {CUISINES.map((c) => (
-            <Chip key={c} label={CUISINE_LABELS[c]} selected={cuisines.includes(c)} onPress={() => toggleCuisine(c)} />
+            <Chip
+              key={c}
+              label={CUISINE_LABELS[c]}
+              selected={cuisines.includes(c)}
+              onPress={() => toggleCuisine(c)}
+              testID={`cuisine-${c}`}
+            />
           ))}
         </Row>
       </View>

@@ -1,0 +1,32 @@
+# Turns one Browse quick chip on, checks the results pill appears, then
+# clears it with the pill. env: CHIP (the chip's testID, e.g. chip-pasta).
+# Start on Browse with no search or filters.
+appId: host.exp.Exponent
+---
+# Back to the top, then bring the chip row to the middle of the screen so the
+# horizontal scroll below swipes the chip row rather than the recipe of the day.
+- scrollUntilVisible:
+    element:
+      id: "browse-search"
+    direction: UP
+- scrollUntilVisible:
+    element:
+      id: "chip-pasta"
+    direction: DOWN
+    centerElement: true
+- scrollUntilVisible:
+    element:
+      id: "${CHIP}"
+    direction: RIGHT
+- tapOn:
+    id: "${CHIP}"
+# Results replace the shelves; the pill names what's showing.
+- scrollUntilVisible:
+    element:
+      id: "browse-pill"
+    direction: UP
+- assertVisible: '\d+ recipes?'
+- tapOn:
+    id: "browse-pill"
+- assertNotVisible:
+    id: "browse-pill"

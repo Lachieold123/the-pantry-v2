@@ -46,6 +46,7 @@ export function CollectSheet({ id }: { id: string }) {
                 detail={`${c.recipeIds.length}`}
                 checked={c.recipeIds.includes(id)}
                 onToggle={() => toggleInCollection(c.id, id)}
+                testID={`collect-row-${c.id}`}
               />
               <Divider />
             </View>
@@ -61,9 +62,10 @@ export function CollectSheet({ id }: { id: string }) {
           returnKeyType="done"
           onSubmitEditing={create}
           maxLength={40}
+          testID="collect-new-name"
           {...(duplicate && trimmed ? { error: 'You already have a collection with that name.' } : {})}
         />
-        <Button label="Create and add" onPress={create} disabled={!trimmed || duplicate} />
+        <Button label="Create and add" onPress={create} disabled={!trimmed || duplicate} testID="collect-create" />
       </View>
     </Sheet>
   );

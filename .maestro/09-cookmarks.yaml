@@ -1,0 +1,48 @@
+# Cookmarks: the empty state and its way out, then a saved recipe listed and opened.
+appId: host.exp.Exponent
+---
+- launchApp:
+    clearState: true
+- openLink: exp://127.0.0.1:8081
+- runFlow: subflows/_setup_skip_welcome.yaml
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-saved"
+- assertVisible:
+    id: "cookmarks-empty"
+- assertVisible: "Nothing saved yet"
+- takeScreenshot: cookmarks-empty
+- tapOn:
+    id: "cookmarks-empty-action"
+- assertVisible: "Discover"
+
+# Save one from its page
+- runFlow:
+    file: subflows/_open_recipe.yaml
+    env:
+      QUERY: carbonara
+      RECIPE_ID: carbonara
+- tapOn:
+    id: "recipe-save"
+- assertVisible: "Saved to Cookmarks"
+- tapOn:
+    id: "back"
+
+- tapOn:
+    id: "header-menu"
+- assertVisible: "Cookmarks, 1"
+- tapOn:
+    id: "menu-saved"
+- assertVisible:
+    id: "recipe-card-carbonara"
+- takeScreenshot: cookmarks-one
+- tapOn:
+    id: "recipe-card-carbonara"
+- assertVisible:
+    id: "recipe-screen"
+- assertVisible: "Saved"
+- tapOn:
+    id: "back"
+- assertVisible:
+    id: "cookmarks-screen"

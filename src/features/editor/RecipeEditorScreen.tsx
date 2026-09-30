@@ -55,7 +55,12 @@ export function RecipeEditorScreen({ id, fromImport }: { id: string | undefined;
   if (!editor.exists) {
     return (
       <Screen>
-        <EmptyState title="That recipe is gone" body="It may have been deleted." action={{ label: 'Back', onPress: () => router.back() }} />
+        <EmptyState
+          title="That recipe is gone"
+          body="It may have been deleted."
+          action={{ label: 'Back', onPress: () => router.back() }}
+          testID="editor-missing"
+        />
       </Screen>
     );
   }
@@ -65,24 +70,24 @@ export function RecipeEditorScreen({ id, fromImport }: { id: string | undefined;
   return (
     <Screen>
       <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
-        <Button label="Cancel" kind="quiet" onPress={cancel} />
+        <Button label="Cancel" kind="quiet" onPress={cancel} testID="editor-cancel" />
         <Text variant="row" accessibilityRole="header">
           {fromImport ? 'Check and save' : editor.isNew ? 'New recipe' : 'Edit recipe'}
         </Text>
-        <Button label="Save" kind="primary" onPress={editor.save} />
+        <Button label="Save" kind="primary" onPress={editor.save} testID="editor-save" />
       </View>
       {editor.showProblems && !editor.built.recipe ? (
         <View style={{ gap: SPACE.sm }} accessibilityLiveRegion="polite">
           <Text variant="body">{`Almost there: ${editor.built.problems.map((p) => p.message.replace(/\.$/, '').toLowerCase()).join(', ')}.`}</Text>
-          <Button label="Save to finish later" onPress={editor.saveDraft} />
+          <Button label="Save to finish later" onPress={editor.saveDraft} testID="editor-save-draft" />
         </View>
       ) : null}
       {confirmingCancel ? (
         <View style={{ gap: SPACE.sm }} accessibilityLiveRegion="polite">
           <Text variant="body">Throw away your changes?</Text>
           <View style={{ flexDirection: 'row', gap: SPACE.sm }}>
-            <Button label="Keep editing" onPress={() => setConfirmingCancel(false)} />
-            <Button label="Discard" kind="destructive" onPress={() => router.back()} />
+            <Button label="Keep editing" onPress={() => setConfirmingCancel(false)} testID="editor-keep-editing" />
+            <Button label="Discard" kind="destructive" onPress={() => router.back()} testID="editor-discard" />
           </View>
         </View>
       ) : null}
@@ -98,6 +103,7 @@ export function RecipeEditorScreen({ id, fromImport }: { id: string | undefined;
         maxLength={80}
         autoCapitalize="sentences"
         error={editor.titleProblem}
+        testID="editor-title"
       />
       <TextField
         label="Short description"
@@ -105,6 +111,7 @@ export function RecipeEditorScreen({ id, fromImport }: { id: string | undefined;
         value={draft.summary}
         onChangeText={(t) => update('summary', t)}
         maxLength={120}
+        testID="editor-summary"
       />
 
       <View style={{ gap: SPACE.sm }}>
@@ -117,6 +124,7 @@ export function RecipeEditorScreen({ id, fromImport }: { id: string | undefined;
           multiline
           autoCapitalize="none"
           error={editor.problem('ingredients')}
+          testID="editor-ingredients"
         />
         <UnsureNote lines={editor.built.unsure} />
       </View>
@@ -128,6 +136,7 @@ export function RecipeEditorScreen({ id, fromImport }: { id: string | undefined;
         onChangeText={(t) => update('methodText', t)}
         multiline
         error={editor.problem('method')}
+        testID="editor-method"
       />
 
       <Divider />
@@ -140,6 +149,7 @@ export function RecipeEditorScreen({ id, fromImport }: { id: string | undefined;
         value={draft.notesText}
         onChangeText={(t) => update('notesText', t)}
         multiline
+        testID="editor-notes"
       />
 
       {editor.isNew ? null : (
@@ -149,12 +159,12 @@ export function RecipeEditorScreen({ id, fromImport }: { id: string | undefined;
             <View style={{ gap: SPACE.sm }}>
               <Text variant="body">Delete this recipe? You can undo it straight after.</Text>
               <View style={{ flexDirection: 'row', gap: SPACE.sm }}>
-                <Button label="Keep it" onPress={() => setConfirmingDelete(false)} />
-                <Button label="Delete" kind="destructive" onPress={editor.remove} />
+                <Button label="Keep it" onPress={() => setConfirmingDelete(false)} testID="editor-keep" />
+                <Button label="Delete" kind="destructive" onPress={editor.remove} testID="editor-confirm-delete" />
               </View>
             </View>
           ) : (
-            <Button label="Delete recipe" kind="destructive" onPress={() => setConfirmingDelete(true)} />
+            <Button label="Delete recipe" kind="destructive" onPress={() => setConfirmingDelete(true)} testID="editor-delete" />
           )}
         </View>
       )}

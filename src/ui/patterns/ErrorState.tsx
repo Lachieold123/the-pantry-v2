@@ -17,7 +17,7 @@ export function ErrorState({ title = 'That didn’t work', body, onRetry }: Prop
         {body}
       </Text>
       <View style={{ paddingTop: SPACE.xs }}>
-        <Button label="Try again" onPress={onRetry} kind="primary" />
+        <Button label="Try again" onPress={onRetry} kind="primary" testID="error-retry" />
       </View>
     </View>
   );

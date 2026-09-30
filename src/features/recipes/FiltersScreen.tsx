@@ -50,7 +50,13 @@ export function FiltersScreen() {
           <SectionHeader title="Diet" />
           <ChipRow>
             {DIETS.map((d) => (
-              <Chip key={d.value} label={d.label} selected={filters.diet === d.value} onPress={() => update({ diet: d.value })} />
+              <Chip
+                key={d.value}
+                label={d.label}
+                selected={filters.diet === d.value}
+                onPress={() => update({ diet: d.value })}
+                testID={`filter-diet-${d.value}`}
+              />
             ))}
           </ChipRow>
         </View>
@@ -63,6 +69,7 @@ export function FiltersScreen() {
                 label={t.label}
                 selected={filters.time === t.value}
                 onPress={() => update(filters.time === t.value ? { time: undefined } : { time: t.value })}
+                testID={`filter-time-${t.value}`}
               />
             ))}
           </ChipRow>
@@ -76,6 +83,7 @@ export function FiltersScreen() {
                 label={MEAL_TYPE_LABELS[m]}
                 selected={filters.mealTypes.includes(m)}
                 onPress={() => update({ mealTypes: toggleIn(filters.mealTypes, m) })}
+                testID={`filter-meal-${m}`}
               />
             ))}
           </ChipRow>
@@ -89,17 +97,25 @@ export function FiltersScreen() {
                 label={DIFFICULTY_LABELS[d]}
                 selected={filters.difficulties.includes(d)}
                 onPress={() => update({ difficulties: toggleIn(filters.difficulties, d) })}
+                testID={`filter-difficulty-${d}`}
               />
             ))}
           </ChipRow>
         </View>
         <View>
-          <Switch label="One pot or pan" detail="Fewer dishes to wash" value={filters.onePot} onChange={(onePot) => update({ onePot })} />
+          <Switch
+            label="One pot or pan"
+            detail="Fewer dishes to wash"
+            value={filters.onePot}
+            onChange={(onePot) => update({ onePot })}
+            testID="filter-one-pot"
+          />
           <Switch
             label="In season now"
             detail={`Recipes that suit ${season}`}
             value={filters.inSeason === season}
             onChange={(on) => update({ inSeason: on ? season : undefined })}
+            testID="filter-in-season"
           />
         </View>
         <View style={{ gap: SPACE.sm }}>
@@ -111,15 +127,16 @@ export function FiltersScreen() {
                 label={CUISINE_LABELS[c]}
                 selected={filters.cuisines.includes(c)}
                 onPress={() => update({ cuisines: toggleIn(filters.cuisines, c) })}
+                testID={`filter-cuisine-${c}`}
               />
             ))}
           </ChipRow>
         </View>
       </Sheet>
       <ActionBar>
-        <Button label="Clear all" kind="quiet" onPress={clear} disabled={activeFilters === 0} />
+        <Button label="Clear all" kind="quiet" onPress={clear} disabled={activeFilters === 0} testID="filters-clear" />
         <View style={{ flex: 1 }}>
-          <Button label={`Show ${count}`} kind="primary" block onPress={() => router.back()} />
+          <Button label={`Show ${count}`} kind="primary" block onPress={() => router.back()} testID="filters-show" />
         </View>
       </ActionBar>
     </View>

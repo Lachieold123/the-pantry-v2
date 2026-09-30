@@ -63,6 +63,7 @@ export function RecipeScreen({ id }: { id: string }) {
           title="We couldn't find that recipe"
           body="It may have been removed or renamed."
           action={{ label: 'Browse recipes', onPress: () => router.navigate('/browse') }}
+          testID="recipe-missing"
         />
       </Screen>
     );

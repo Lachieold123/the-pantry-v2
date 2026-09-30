@@ -1,0 +1,90 @@
+# Collections: create, open, rename, delete with undo, and a recipe added to one.
+appId: host.exp.Exponent
+---
+- launchApp:
+    clearState: true
+- openLink: exp://127.0.0.1:8081
+- runFlow: subflows/_setup_skip_welcome.yaml
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-collections"
+- assertVisible:
+    id: "collections-empty"
+- takeScreenshot: collections-empty
+
+# Create
+- tapOn:
+    id: "collections-new-name"
+- inputText: "Weeknight dinners"
+# These pages don't hide the keyboard on a swipe, so tap plain text instead (it closes the keyboard).
+- tapOn: "Collections"
+- tapOn:
+    id: "collections-create"
+- assertVisible:
+    id: "collection-row-.*"
+- assertVisible: "Weeknight dinners"
+
+# A second one with the same name is refused.
+- tapOn:
+    id: "collections-new-name"
+- inputText: "weeknight dinners"
+- assertVisible: "You already have a collection with that name."
+- eraseText: 20
+- tapOn: "Collections"
+
+# Open, rename
+- tapOn:
+    id: "collection-row-.*"
+- assertVisible:
+    id: "collection-screen"
+- assertVisible:
+    id: "collection-empty"
+- takeScreenshot: collection-empty
+- tapOn:
+    id: "collection-rename"
+- eraseText: 20
+- inputText: "Fridays"
+- tapOn:
+    id: "collection-save-name"
+- assertVisible: "Fridays"
+
+# Delete goes back to the list; undo brings it back.
+- tapOn:
+    id: "collection-delete"
+- assertVisible: "Fridays deleted"
+- tapOn:
+    id: "toast-undo"
+- assertVisible:
+    id: "collection-row-.*"
+- assertVisible: "Fridays"
+- tapOn:
+    id: "back"
+
+# Add a recipe to it from the recipe page, then find it inside.
+- runFlow:
+    file: subflows/_open_recipe.yaml
+    env:
+      QUERY: carbonara
+      RECIPE_ID: carbonara
+- tapOn:
+    id: "recipe-more"
+- tapOn:
+    id: "action-collect"
+- tapOn:
+    id: "collect-row-.*"
+- assertVisible: "Fridays, 1"
+- tapOn:
+    id: "sheet-close"
+- tapOn:
+    id: "back"
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-collections"
+- assertVisible: "Fridays"
+- tapOn:
+    id: "collection-row-.*"
+- assertVisible:
+    id: "recipe-card-carbonara"
+- takeScreenshot: collection-with-recipe

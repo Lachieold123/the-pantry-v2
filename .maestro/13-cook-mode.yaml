@@ -1,0 +1,85 @@
+# Cook Mode: next and back, swipe, ingredients, a timer, and Done counts as cooked.
+# Uses Vegetable Lasagna: 8 steps, and the last is "Rest 20 minutes."
+appId: host.exp.Exponent
+---
+- launchApp:
+    clearState: true
+- openLink: exp://127.0.0.1:8081
+- runFlow: subflows/_setup_skip_welcome.yaml
+- runFlow:
+    file: subflows/_open_recipe.yaml
+    env:
+      QUERY: vegetable lasagna
+      RECIPE_ID: vegetable-lasagna
+- tapOn:
+    id: "recipe-cook"
+- assertVisible: "Step 1 of 8"
+- takeScreenshot: cook-step-1
+
+# Buttons
+- tapOn:
+    id: "cook-next"
+- assertVisible: "Step 2 of 8"
+- tapOn:
+    id: "cook-back"
+- assertVisible: "Step 1 of 8"
+
+# Swipe left for the next step, right to go back
+- swipe:
+    direction: LEFT
+- assertVisible: "Step 2 of 8"
+- swipe:
+    direction: RIGHT
+- assertVisible: "Step 1 of 8"
+
+# The ingredients, and back to the steps
+- tapOn:
+    id: "cook-toggle-ingredients"
+- assertVisible: "For 6"
+- takeScreenshot: cook-ingredients
+- tapOn:
+    id: "cook-toggle-ingredients"
+- assertVisible: "Step 1 of 8"
+
+# On to the last step
+- repeat:
+    times: 7
+    commands:
+      - tapOn:
+          id: "cook-next"
+- assertVisible: "Step 8 of 8"
+- assertVisible:
+    id: "cook-done"
+
+# Start the timer: "20 minutes" is the underlined part of "Rest 20 minutes.",
+# a phrase inside the step's text, so tap that spot on the text.
+- tapOn:
+    id: "cook-step-text"
+    point: "35%,50%"
+# iOS asks once whether Expo Go may send notifications (for a timer that ends while locked).
+- tapOn:
+    text: "Allow"
+    optional: true
+- assertVisible: "Step 8 · 20 minutes"
+- takeScreenshot: cook-timer
+- tapOn:
+    id: "cook-timer-.*-dismiss"
+- assertNotVisible: "Step 8 · 20 minutes"
+
+# Done logs the cook and returns to the recipe
+- tapOn:
+    id: "cook-done"
+- assertVisible: "Vegetable Lasagna cooked. Nice work."
+- assertVisible:
+    id: "recipe-screen"
+- assertVisible: "Cooked. Mark as cooked again"
+- tapOn:
+    id: "back"
+
+# ...and Kitchen stats shows it
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-stats"
+- assertVisible: "Vegetable Lasagna, .*, Cooked once"
+- takeScreenshot: cook-stats

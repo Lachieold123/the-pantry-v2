@@ -109,6 +109,7 @@ export function FeedScreen() {
           title="Nothing planned for tonight"
           body="Plan a few dinners and tonight's shows up here, ready to cook. Or let us choose."
           action={{ label: 'Surprise me', onPress: () => router.push('/surprise') }}
+          testID="feed-empty"
         />
       )}
 
@@ -124,6 +125,7 @@ export function FeedScreen() {
                 size="row"
                 note={longDate(fromISODate(day))}
                 onPress={() => open(recipe.id)}
+                testID={`feed-ahead-${entry.id}`}
               />
             ) : null,
           )}
