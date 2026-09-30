@@ -31,6 +31,48 @@ export function backupKey(name: string, at: number): string {
   return `${name}.corrupt.${at}`;
 }
 
+/** How many backups each store keeps. A blob that keeps going bad mustn't fill the phone (audit F218). */
+export const BACKUPS_KEPT = 3;
+
+/** The backups of `name` to delete so that, with one more added, only the newest `BACKUPS_KEPT` remain. */
+export function backupsToPrune(keys: readonly string[], name: string): string[] {
+  const prefix = `${name}.corrupt.`;
+  const mine = keys
+    .filter((k) => k.startsWith(prefix) && /^\d+$/.test(k.slice(prefix.length)))
+    .sort((a, b) => Number(b.slice(prefix.length)) - Number(a.slice(prefix.length)));
+  return mine.slice(BACKUPS_KEPT - 1);
+}
+
+/** True when the blob was saved by a newer build than this one, which must not overwrite it (audit F03). */
+export function isNewerThan(saved: Saved | null, version: number): boolean {
+  return saved?.version !== undefined && saved.version > version;
+}
+
+type Kind = 'array' | 'null' | 'string' | 'number' | 'boolean' | 'object' | 'other';
+function kindOf(value: unknown): Kind {
+  if (value === null) return 'null';
+  if (Array.isArray(value)) return 'array';
+  const t = typeof value;
+  return t === 'string' || t === 'number' || t === 'boolean' || t === 'object' ? t : 'other';
+}
+
+/**
+ * Lays saved fields over the store's defaults, keeping only fields of the same
+ * kind as the default. `bookmarks: "oops"` from a bad write would otherwise load
+ * and crash every screen that reads it, on every launch (audit F04). Actions are
+ * never replaced. A field with no default (optional, or from a newer build) is kept.
+ */
+export function mergeSaved<S>(saved: unknown, current: S): S {
+  if (typeof saved !== 'object' || saved === null || Array.isArray(saved)) return current;
+  const out: Record<string, unknown> = { ...(current as Record<string, unknown>) };
+  for (const [key, value] of Object.entries(saved)) {
+    const now = out[key];
+    if (typeof now === 'function') continue;
+    if (now === undefined || kindOf(now) === kindOf(value)) out[key] = value;
+  }
+  return out as S;
+}
+
 /** Resolves when `ready` resolves, or after `ms` at the latest: startup never waits forever. */
 export function withTimeout(ready: Promise<void>, ms: number): Promise<'ready' | 'timed-out'> {
   return new Promise((resolve) => {

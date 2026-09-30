@@ -5,7 +5,7 @@ import { persist } from 'zustand/middleware';
 
 import { DEFAULT_SHELF, type Shelf } from '@/domain/cupboard/cookable';
 import { addToCupboard, type CupboardItem } from '@/domain/cupboard/match';
-import { persistentStorage, STORAGE_PREFIX } from './storage';
+import { persistentStorage, savedAs } from './storage';
 
 type CupboardState = {
   items: CupboardItem[];
@@ -38,8 +38,7 @@ export const useCupboard = create<CupboardState>()(
       setMoveTicked: (moveTickedToCupboard) => set({ moveTickedToCupboard }),
     }),
     {
-      name: `${STORAGE_PREFIX}/cupboard`,
-      version: 2,
+      ...savedAs<CupboardState>('cupboard', 2),
       storage: persistentStorage(),
       partialize: ({ items, shelf, moveTickedToCupboard }) => ({ items, shelf, moveTickedToCupboard }),
       // Version 2 added the shelf; older saves keep their items and assume a stocked shelf.

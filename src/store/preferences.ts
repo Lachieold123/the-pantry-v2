@@ -7,7 +7,7 @@ import type { UnitSystem } from '@/domain/ingredients/format';
 import type { AvoidList, AvoidOption, DietPreference } from '@/domain/recipes/diets';
 import type { TimeFilter } from '@/domain/recipes/search';
 import type { CuisineId } from '@/domain/recipes/types';
-import { persistentStorage, STORAGE_PREFIX } from './storage';
+import { persistentStorage, savedAs } from './storage';
 
 export type Appearance = 'system' | 'light' | 'dark';
 
@@ -76,8 +76,7 @@ export const usePreferences = create<PreferencesState>()(
       applyTaste: (taste) => set(taste),
     }),
     {
-      name: `${STORAGE_PREFIX}/preferences`,
-      version: 3,
+      ...savedAs<PreferencesState>('preferences', 3),
       storage: persistentStorage(),
       partialize: ({ appearance, highContrast, units, diet, avoid, cuisines, weeknight, sundayReminder, onboarded }) => ({
         appearance,
