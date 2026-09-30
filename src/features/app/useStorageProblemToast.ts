@@ -21,7 +21,7 @@ export function useStorageProblemToast(): void {
       const now = Date.now();
       if (now - (shownAt[problem.kind] ?? -Infinity) < QUIET_MS) return;
       shownAt[problem.kind] = now;
-      toast({ message: STORAGE_PROBLEM_MESSAGES[problem.kind] });
+      toast({ message: STORAGE_PROBLEM_MESSAGES[problem.kind], tone: 'problem' });
     });
   }, [toast]);
 }

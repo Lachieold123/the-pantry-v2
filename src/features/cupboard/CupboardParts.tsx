@@ -75,7 +75,9 @@ export function AddBar({ have, onAdd }: { have: ReadonlySet<string>; onAdd: (id:
               key={r.id}
               kind="quick"
               icon={r.inCupboard ? 'check' : 'add'}
+              role="button"
               label={r.inCupboard ? `${r.name} · in cupboard` : r.name}
+              accessibilityLabel={r.inCupboard ? `${r.name}, already in your cupboard` : `Add ${r.name} to the cupboard`}
               selected={r.inCupboard}
               // The field keeps its text so you can keep adding from the same search.
               onPress={() => (r.inCupboard ? undefined : onAdd(r.id))}
@@ -208,7 +210,9 @@ export function QuickAdds({ ids, onAdd }: { ids: readonly string[]; onAdd: (id: 
           <Chip
             key={id}
             icon="add"
+            role="button"
             label={capitalise(ingredientName(id))}
+            accessibilityLabel={`Add ${capitalise(ingredientName(id))}`}
             selected={false}
             onPress={() => onAdd(id)}
             testID={`quick-add-${id}`}

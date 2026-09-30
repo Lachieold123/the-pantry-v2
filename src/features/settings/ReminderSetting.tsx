@@ -60,6 +60,7 @@ export function ReminderSetting() {
         setBlocked(permission === 'blocked');
         toast({
           message: 'Notifications are off for The Pantry, so the reminder can’t reach you.',
+          tone: 'problem',
           ...(CAN_OPEN_SETTINGS ? { actionLabel: 'Open Settings', undo: openSettings } : {}),
         });
       }

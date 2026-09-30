@@ -1,6 +1,7 @@
 // Category colours, from the original app (spec §1.2–1.4). The original had
 // eight coarse cuisines; v2 has 25, so each maps to its original family's colour.
 
+import type { CuisineId } from '../../domain/recipes/types';
 import type { ColourTokens } from './colour';
 
 type Family =
@@ -36,7 +37,8 @@ const TINT: Readonly<Record<Family, keyof ColourTokens>> = {
   other: 'tintNeutral',
 };
 
-const FAMILY: Readonly<Record<string, Family>> = {
+// `satisfies` makes adding a cuisine without choosing its colours a type error, not a silent grey.
+const FAMILY = {
   italian: 'italian',
   french: 'french',
   spanish: 'european',
@@ -62,17 +64,20 @@ const FAMILY: Readonly<Record<string, Family>> = {
   'central-european': 'european',
   scandinavian: 'european',
   'modern-australian': 'other',
-};
+} as const satisfies Readonly<Record<CuisineId, Family>>;
+
+// Callers may hold a cuisine from an older save or none at all (a cover with no recipe), so look up by string.
+function familyOf(cuisine: string): Family {
+  return (FAMILY as Readonly<Record<string, Family>>)[cuisine] ?? 'other';
+}
 
 export function cuisineEyebrow(cuisine: string): string {
-  return EYEBROW[FAMILY[cuisine] ?? 'other'];
+  return EYEBROW[familyOf(cuisine)];
 }
 
 export function cuisineTint(cuisine: string): keyof ColourTokens {
-  return TINT[FAMILY[cuisine] ?? 'other'];
+  return TINT[familyOf(cuisine)];
 }
-
-export const CUISINE_FAMILY_KEYS = Object.keys(FAMILY);
 
 /**
  * Cupboard categories: a pastel fill, a bold ink for the initial and ×, and a

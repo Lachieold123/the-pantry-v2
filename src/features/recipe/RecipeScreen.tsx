@@ -114,7 +114,7 @@ export function RecipeScreen({ id, servings: requested }: { id: string; servings
       });
     } catch (e) {
       logger.warn('share', "couldn't open the share sheet", e);
-      toast({ message: "Couldn't open sharing. Try again." });
+      toast({ message: "Couldn't open sharing. Try again.", tone: 'problem' });
     }
   };
 
@@ -124,6 +124,12 @@ export function RecipeScreen({ id, servings: requested }: { id: string; servings
         <RecipeImage source={RECIPE_IMAGES[recipe.id]} shape="hero" cuisine={recipe.cuisine} radius={0} height={RECIPE.hero} iconSize={64}>
           <PhotoScrim kind="photoTop" />
         </RecipeImage>
+      </View>
+
+      {/* Before the page in the tree, so TalkBack reads Back and ⋯ first; zIndex keeps them drawn on top (audit F108). */}
+      <View style={[styles.nav, { top: insets.top + SPACE.sm }]} pointerEvents="box-none">
+        <IconButton icon="arrowBack" label="Back" shape="round" onPress={() => goBackOr(router)} testID="back" />
+        <IconButton icon="more" label="More actions" shape="round" onPress={() => setMenu(true)} testID="recipe-more" />
       </View>
 
       <ScrollView style={styles.scroll} contentContainerStyle={{ paddingTop: RECIPE.hero - RECIPE.overlap }} testID="recipe-screen">
@@ -178,11 +184,6 @@ export function RecipeScreen({ id, servings: requested }: { id: string; servings
           ) : null}
         </View>
       </ScrollView>
-
-      <View style={[styles.nav, { top: insets.top + SPACE.sm }]} pointerEvents="box-none">
-        <IconButton icon="arrowBack" label="Back" shape="round" onPress={() => goBackOr(router)} testID="back" />
-        <IconButton icon="more" label="More actions" shape="round" onPress={() => setMenu(true)} testID="recipe-more" />
-      </View>
 
       <ActionSheet
         visible={menu}
@@ -247,7 +248,7 @@ const useStyles = makeStyles(({ colours }) => ({
     backgroundColor: colours.border,
     marginBottom: -SPACE.xs,
   },
-  nav: { position: 'absolute', left: SPACE.gutter, right: SPACE.gutter, flexDirection: 'row', justifyContent: 'space-between' },
+  nav: { position: 'absolute', zIndex: 1, left: SPACE.gutter, right: SPACE.gutter, flexDirection: 'row', justifyContent: 'space-between' },
   credit: { paddingTop: SPACE.md, borderTopWidth: 1, borderTopColor: colours.border },
 }));
 

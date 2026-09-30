@@ -50,7 +50,8 @@ export function DrawerScreen() {
   const panel = useAnimatedStyle(() => ({ transform: [{ translateX: (open.value - 1) * panelWidth }] }));
 
   return (
-    <View style={StyleSheet.absoluteFill} accessibilityViewIsModal>
+    // The two-finger scrub closes the menu, as it does every iOS overlay (audit F104).
+    <View style={StyleSheet.absoluteFill} accessibilityViewIsModal onAccessibilityEscape={() => close()}>
       <Animated.View style={[StyleSheet.absoluteFill, styles.backdrop, backdrop]}>
         <Pressable
           style={StyleSheet.absoluteFill}

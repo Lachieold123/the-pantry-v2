@@ -64,6 +64,7 @@ export function FiltersScreen() {
             {DIETS.map((d) => (
               <Chip
                 key={d.value}
+                role="radio"
                 label={d.label}
                 selected={filters.diet === d.value}
                 onPress={() => update({ diet: d.value })}
@@ -78,6 +79,7 @@ export function FiltersScreen() {
             {TIMES.map((t) => (
               <Chip
                 key={t.value}
+                role="radio"
                 label={t.label}
                 selected={filters.time === t.value}
                 onPress={() => update(filters.time === t.value ? { time: undefined } : { time: t.value })}

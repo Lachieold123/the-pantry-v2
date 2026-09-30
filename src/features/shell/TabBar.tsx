@@ -31,7 +31,7 @@ const TABS: Record<string, { label: string; icon: IconName }> = {
 export function TabBar({ state, navigation }: TabBarProps) {
   const router = useRouter();
   const insets = useSafeAreaInsets();
-  const { colours } = useTheme();
+  const { colours, highContrast } = useTheme();
   const styles = useStyles();
   const planned = usePlanBadge();
   const keyboard = useKeyboardShown();
@@ -68,6 +68,8 @@ export function TabBar({ state, navigation }: TabBarProps) {
         <Text variant="tabBar" colour={focused ? 'ink' : 'inkMuted'} numberOfLines={1} maxFontSizeMultiplier={1.2}>
           {tab.label}
         </Text>
+        {/* High contrast: the chosen tab also gets a bar, so it isn't shown by colour alone. */}
+        {highContrast ? <View style={[styles.mark, focused && styles.markOn]} /> : null}
       </Pressable>
     );
   };
@@ -101,6 +103,8 @@ const useStyles = makeStyles(({ colours }) => ({
   tab: { flex: 1, alignItems: 'center', paddingVertical: CHROME.tabPadY, paddingHorizontal: SPACE.xxs, gap: CHROME.tabGap },
   pressed: { transform: [{ scale: 0.96 }] },
   badge: { position: 'absolute', top: -SPACE.xxs, right: -SPACE.sm },
+  mark: { width: SPACE.md, height: CHROME.tabMark, borderRadius: CHROME.tabMark / 2 },
+  markOn: { backgroundColor: colours.ink },
   fab: {
     width: CHROME.fab + CHROME.fabRing * 2,
     height: CHROME.fab + CHROME.fabRing * 2,

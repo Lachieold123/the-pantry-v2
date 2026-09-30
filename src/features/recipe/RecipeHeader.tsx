@@ -8,7 +8,7 @@ import { Avatar } from '@/ui/primitives/Avatar';
 import { Icon, type IconName } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
-import { RADIUS, RECIPE, SPACE, TAP_TARGET } from '@/ui/tokens/type';
+import { hitSlopFor, RADIUS, RECIPE, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 
 type Props = {
   recipe: Recipe;
@@ -39,6 +39,7 @@ export function RecipeHeader(p: Props) {
           <Pressable
             onPress={p.onEdit}
             style={styles.editPill}
+            hitSlop={hitSlopFor(RECIPE.editPill)}
             accessibilityRole="button"
             accessibilityLabel="Edit this recipe"
             testID="recipe-edit"
@@ -77,8 +78,10 @@ export function RecipeHeader(p: Props) {
         <View style={{ flex: 1 }} />
         <Pressable
           onPress={p.onMarkCooked}
+          hitSlop={hitSlopFor(RECIPE.cookPill)}
           accessibilityRole="button"
-          accessibilityLabel={p.cooked ? 'Cooked. Mark as cooked again' : 'Mark as cooked'}
+          // Starts with the word on the pill, so Voice Control's "tap Cook" finds it (audit F174).
+          accessibilityLabel={p.cooked ? 'Cooked, mark as cooked again' : 'Cook, mark as cooked'}
           testID="recipe-mark-cooked"
           style={({ pressed }) => [styles.cookPill, p.cooked && styles.cookPillOn, pressed && styles.pressed]}
         >
@@ -199,7 +202,7 @@ const useStyles = makeStyles(({ colours }) => ({
     alignItems: 'center',
     gap: 6,
     paddingHorizontal: SPACE.sm,
-    minHeight: 36,
+    minHeight: RECIPE.cookPill,
     borderRadius: RADIUS.pill,
     backgroundColor: colours.bgSoft,
   },

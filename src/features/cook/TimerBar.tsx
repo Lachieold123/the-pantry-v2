@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { View } from 'react-native';
 
 import { anyRunning, formatCountdown, secondsLeft, type CookTimer } from '@/domain/cook/timers';
+import { useAnnounce } from '@/ui/a11y/announce';
 import { IconButton } from '@/ui/primitives/IconButton';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
@@ -27,18 +28,16 @@ export function TimerBar({ timers, onDismiss }: { timers: CookTimer[]; onDismiss
       clearInterval(every);
     };
   }, [running, timers]);
+  // Say each timer as it finishes: the tint alone is silent to VoiceOver (audit F97).
+  const finished = timers.filter((t) => secondsLeft(t, now) === 0);
+  useAnnounce(finished.length ? `Time’s up: ${finished.map((t) => t.label).join(', ')}` : null);
   if (timers.length === 0) return null;
   return (
     <View style={styles.bar}>
       {timers.map((t) => {
         const left = secondsLeft(t, now);
         return (
-          <View
-            key={t.id}
-            style={[styles.timer, left === 0 && styles.done]}
-            accessibilityLiveRegion={left === 0 ? 'assertive' : 'none'}
-            testID={`cook-timer-${t.id}`}
-          >
+          <View key={t.id} style={[styles.timer, left === 0 && styles.done]} testID={`cook-timer-${t.id}`}>
             <View style={{ flex: 1 }}>
               <Text variant="meta" colour={left === 0 ? 'onAccent' : 'inkMuted'}>
                 Step {t.stepIndex + 1} · {t.label}

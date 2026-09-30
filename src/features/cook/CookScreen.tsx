@@ -21,6 +21,7 @@ import { useCookLog } from '@/store/cookLog';
 import { useCupboard } from '@/store/cupboard';
 import { usePreferences } from '@/store/preferences';
 import { useRecipe } from '@/store/recipeBook';
+import { useAnnounce } from '@/ui/a11y/announce';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { capitaliseLine, IngredientGroups } from '@/ui/patterns/IngredientGroups';
 import { useToast } from '@/ui/patterns/Toast';
@@ -70,6 +71,8 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
     });
     return () => sub.remove();
   }, [timers]);
+  // VoiceOver hears the new step when you move on, not silence (audit F97).
+  useAnnounce(recipe ? `Step ${step + 1} of ${recipe.steps.length}. ${localiseStepText(recipe.steps[step]?.text ?? '', units)}` : null);
 
   if (!recipe) {
     return (
@@ -119,7 +122,7 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
     <View style={{ flex: 1, backgroundColor: colours.bg, paddingTop: insets.top, paddingBottom: Math.max(insets.bottom, SPACE.sm) }}>
       <View style={{ flexDirection: 'row', alignItems: 'center', paddingHorizontal: SPACE.xs }}>
         <IconButton icon="close" label="Leave Cook Mode" onPress={leave} testID="cook-close" />
-        <Text variant="kicker" align="center" style={{ flex: 1 }} accessibilityLiveRegion="polite">
+        <Text variant="kicker" align="center" style={{ flex: 1 }}>
           Step {step + 1} of {total}
         </Text>
         <Button

@@ -21,9 +21,9 @@ export function Switch({ label, detail, value, onChange, testID }: Props) {
         onValueChange={onChange}
         accessibilityLabel={label}
         {...(testID ? { testID } : {})}
-        trackColor={{ true: colours.accent, false: colours.bgSoft }}
+        trackColor={{ true: colours.accent, false: colours.switchTrackOff }}
         thumbColor={FIXED.onPhoto}
-        ios_backgroundColor={colours.bgSoft}
+        ios_backgroundColor={colours.switchTrackOff}
       />
     </View>
   );

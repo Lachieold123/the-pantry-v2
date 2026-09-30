@@ -13,6 +13,7 @@ import type { Recipe } from '@/domain/recipes/types';
 import { deckPosition, SPIN_DELAYS, type SpinSettings } from '@/domain/suggestions/spinner';
 import { logger } from '@/lib/logger';
 import { goBackOr } from '@/lib/navigation';
+import { announce } from '@/ui/a11y/announce';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { PhotoScrim } from '@/ui/patterns/PhotoScrim';
 import { Button } from '@/ui/primitives/Button';
@@ -50,6 +51,8 @@ export function SpinnerScreen() {
     setFlash(undefined);
     setSpinning(false);
     setLanded((n) => n + 1);
+    // The deck's motion and haptic say "landed" to sighted cooks; VoiceOver needs it said (audit F97).
+    announce(`Landed on ${recipe.title}`);
     void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success).catch((e: unknown) =>
       logger.warn('haptics', 'no haptic feedback', e),
     );
@@ -144,7 +147,7 @@ export function SpinnerScreen() {
               {spinning ? 'Spinning…' : 'Tap card to spin'}
             </Text>
           </View>
-          <View accessibilityLiveRegion="polite" style={{ opacity: spinning ? SPINNER.hintDim : 1 }}>
+          <View style={{ opacity: spinning ? SPINNER.hintDim : 1 }}>
             <WhyThis reasons={reasons} />
           </View>
           <View style={{ gap: SPACE.sm }}>

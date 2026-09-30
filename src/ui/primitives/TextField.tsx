@@ -2,6 +2,7 @@
 // Multi-line fields (ingredients, method) grow with their text.
 import { TextInput, View, type TextInputProps } from 'react-native';
 
+import { useAnnounce } from '@/ui/a11y/announce';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { useTheme } from '@/ui/theme/ThemeProvider';
 import { textStyle } from '@/ui/theme/fonts';
@@ -13,6 +14,8 @@ type Props = Omit<TextInputProps, 'style'> & { label: string; hint?: string | un
 export function TextField({ label, hint, error, ...input }: Props) {
   const styles = useStyles();
   const { colours } = useTheme();
+  // Spoken when it appears or changes, on iPhone too (audit F97).
+  useAnnounce(error ? `${label}: ${error}` : null, { initial: true });
   return (
     <View style={styles.wrap}>
       <Text variant="kicker">{label}</Text>
@@ -26,7 +29,7 @@ export function TextField({ label, hint, error, ...input }: Props) {
         {...input}
       />
       {error ? (
-        <Text variant="meta" colour="danger" accessibilityLiveRegion="polite">
+        <Text variant="meta" colour="danger">
           {error}
         </Text>
       ) : null}

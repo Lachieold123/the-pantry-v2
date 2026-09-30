@@ -3,7 +3,7 @@
 // grid card, row = the trending row with a square thumbnail. Every card opens its
 // recipe; the bookmark disc appears only when the caller can actually save.
 import { memo } from 'react';
-import { Pressable, View } from 'react-native';
+import { Pressable, View, type AccessibilityActionEvent } from 'react-native';
 
 import { formatMinutes, CUISINE_LABELS } from '@/domain/recipes/labels';
 import { totalMinutes, type Recipe } from '@/domain/recipes/types';
@@ -35,8 +35,20 @@ function RecipeCardView({ recipe, image, size, onPress, note, rank, saved, onTog
   const cuisine = CUISINE_LABELS[recipe.cuisine];
   const eyebrow = cuisineEyebrow(recipe.cuisine);
   const meta = note ?? `${formatMinutes(totalMinutes(recipe))} · Serves ${recipe.servings}`;
-  const label = `${recipe.title}, ${cuisine}, ${meta}`;
+  const label = `${recipe.title}, ${cuisine}, ${meta}${onToggleSave && saved ? ', saved' : ''}`;
   const id = testID ?? `recipe-card-${recipe.id}`;
+
+  // VoiceOver treats the card as one element, so the disc inside it can't be reached;
+  // the save is offered as a card action instead (swipe up or down, audit F98).
+  const saveAction =
+    onToggleSave !== undefined
+      ? {
+          accessibilityActions: [{ name: 'save', label: saved ? 'Remove from saved' : 'Save' }],
+          onAccessibilityAction: (e: AccessibilityActionEvent) => {
+            if (e.nativeEvent.actionName === 'save') onToggleSave();
+          },
+        }
+      : {};
 
   if (size === 'row') {
     return (
@@ -45,6 +57,7 @@ function RecipeCardView({ recipe, image, size, onPress, note, rank, saved, onTog
         testID={id}
         accessibilityRole="button"
         accessibilityLabel={label}
+        {...saveAction}
         style={({ pressed }) => [styles.row, pressed && styles.rowPressed]}
       >
         {rank !== undefined ? (
@@ -92,6 +105,7 @@ function RecipeCardView({ recipe, image, size, onPress, note, rank, saved, onTog
         testID={id}
         accessibilityRole="button"
         accessibilityLabel={label}
+        {...saveAction}
         style={({ pressed }) => pressed && styles.cardPressed}
       >
         <RecipeImage source={image} shape="hero" cuisine={recipe.cuisine} radius={RADIUS.card} iconSize={56}>
@@ -122,6 +136,7 @@ function RecipeCardView({ recipe, image, size, onPress, note, rank, saved, onTog
       testID={id}
       accessibilityRole="button"
       accessibilityLabel={label}
+      {...saveAction}
       style={({ pressed }) => [styles.card, pressed && styles.cardPressed]}
     >
       <RecipeImage source={image} shape="card" cuisine={recipe.cuisine} radius={0}>

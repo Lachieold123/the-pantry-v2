@@ -7,6 +7,7 @@ import { View } from 'react-native';
 
 import type { UnsureLine } from '@/domain/recipes/draft';
 import { goBackOr } from '@/lib/navigation';
+import { useAnnounce } from '@/ui/a11y/announce';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { Button } from '@/ui/primitives/Button';
@@ -56,6 +57,12 @@ export function RecipeEditorScreen({ id, fromImport }: { id: string | undefined;
   const editor = useRecipeEditor(id, fromImport);
   const { draft, update, guard } = editor;
   const [confirmingDelete, setConfirmingDelete] = useState(false);
+  const problems =
+    editor.showProblems && !editor.built.recipe
+      ? `Almost there: ${editor.built.problems.map((p) => lowerFirst(p.message.replace(/\.$/, ''))).join(', ')}.`
+      : null;
+  // Said aloud when Save finds problems; a live region alone is silent on iPhone (audit F97).
+  useAnnounce(problems, { initial: true });
 
   if (!editor.exists) {
     return (
@@ -79,13 +86,14 @@ export function RecipeEditorScreen({ id, fromImport }: { id: string | undefined;
         </Text>
         <Button label="Save" kind="primary" onPress={editor.save} testID="editor-save" />
       </View>
-      {editor.showProblems && !editor.built.recipe ? (
-        <View style={{ gap: SPACE.sm }} accessibilityLiveRegion="polite">
-          <Text variant="body">{`Almost there: ${editor.built.problems.map((p) => lowerFirst(p.message.replace(/\.$/, ''))).join(', ')}.`}</Text>
+      {problems ? (
+        <View style={{ gap: SPACE.sm }}>
+          <Text variant="body">{problems}</Text>
           {editor.canSaveDraft ? (
             <Button label="Save to finish later" onPress={editor.saveDraft} testID="editor-save-draft" />
           ) : (
-            <Button label="Discard changes" kind="destructive" onPress={() => router.back()} testID="editor-discard-changes" />
+            // Through the guard, so it doesn't ask "Throw away your changes?" about the choice just made.
+            <Button label="Discard changes" kind="destructive" onPress={guard.discard} testID="editor-discard-changes" />
           )}
         </View>
       ) : null}

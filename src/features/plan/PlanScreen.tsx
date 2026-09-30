@@ -80,7 +80,7 @@ export function PlanScreen() {
       await Share.share({ message: text });
     } catch (e) {
       logger.warn('share', "couldn't open the share sheet", e);
-      toast({ message: "Couldn't open sharing. Try again." });
+      toast({ message: "Couldn't open sharing. Try again.", tone: 'problem' });
     }
   };
   const share = () =>

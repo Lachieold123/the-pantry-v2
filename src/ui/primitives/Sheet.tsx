@@ -25,7 +25,8 @@ export function Sheet({ title, kicker, onClose, children }: Props) {
         </View>
         <IconButton icon="close" label="Close" onPress={onClose} shape="chip" testID="sheet-close" />
       </View>
-      <ScrollView contentContainerStyle={styles.body} keyboardShouldPersistTaps="handled">
+      {/* iOS only insets for the keyboard when asked, so a field low in a sheet would sit under it (audit F182). */}
+      <ScrollView contentContainerStyle={styles.body} keyboardShouldPersistTaps="handled" automaticallyAdjustKeyboardInsets>
         {children}
       </ScrollView>
     </View>

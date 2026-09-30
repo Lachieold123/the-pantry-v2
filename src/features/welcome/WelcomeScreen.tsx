@@ -2,8 +2,8 @@
 // optional Sunday reminder. Skippable at every step; a useful screen within
 // five taps (PRODUCT §4.12).
 import { useRouter } from 'expo-router';
-import { useState } from 'react';
-import { View } from 'react-native';
+import { useEffect, useRef, useState } from 'react';
+import { View, type Text as RNText } from 'react-native';
 
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { toISODate } from '@/domain/plan/week';
@@ -12,6 +12,7 @@ import { setSundayReminder } from '@/lib/notifications';
 import { usePlan } from '@/store/plan';
 import { usePreferences } from '@/store/preferences';
 import { useForYou } from '@/store/suggestions';
+import { focusOn } from '@/ui/a11y/announce';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { RecipeCard } from '@/ui/patterns/RecipeCard';
 import { useToast } from '@/ui/patterns/Toast';
@@ -48,6 +49,16 @@ export function WelcomeScreen() {
     else setStep(to);
   };
   const back = BACK[step];
+  // The button you pressed has gone with the old step; take VoiceOver to the new step's heading (audit F101).
+  const heading = useRef<RNText>(null);
+  const firstStep = useRef(true);
+  useEffect(() => {
+    if (firstStep.current) {
+      firstStep.current = false;
+      return;
+    }
+    focusOn(heading);
+  }, [step]);
 
   const shown = picks.slice(offset, offset + PICKS);
   const [hero, ...more] = shown.length ? shown : picks.slice(0, PICKS);
@@ -61,7 +72,7 @@ export function WelcomeScreen() {
   const remind = async () => {
     const on = await setSundayReminder(true);
     setReminderPref(on);
-    if (!on) toast({ message: 'Notifications are off for The Pantry. You can turn them on in Settings.' });
+    if (!on) toast({ message: 'Notifications are off for The Pantry. You can turn them on in Settings.', tone: 'problem' });
     finish();
   };
 
@@ -77,7 +88,7 @@ export function WelcomeScreen() {
       {step === 'hello' ? (
         <View style={{ gap: SPACE.md, paddingTop: SPACE.xxl }}>
           <Text variant="kicker">Welcome to</Text>
-          <Text variant="display" accessibilityRole="header">
+          <Text variant="display" accessibilityRole="header" ref={heading}>
             The Pantry
           </Text>
           <Text variant="body" colour="inkSoft">
@@ -87,14 +98,16 @@ export function WelcomeScreen() {
         </View>
       ) : null}
 
-      {step === 'eat' ? <EatStep /> : null}
-      {step === 'like' ? <LikeStep /> : null}
+      {step === 'eat' ? <EatStep headingRef={heading} /> : null}
+      {step === 'like' ? <LikeStep headingRef={heading} /> : null}
       {step === 'eat' || step === 'like' ? <Button label="Next" kind="primary" block onPress={next} testID="welcome-next" /> : null}
 
       {step === 'reveal' ? (
         hero ? (
           <View style={{ gap: SPACE.md }}>
-            <Text variant="kicker">Tonight, for you</Text>
+            <Text variant="kicker" accessibilityRole="header" ref={heading}>
+              Tonight, for you
+            </Text>
             <RecipeCard recipe={hero} image={RECIPE_IMAGES[hero.id]} size="large" onPress={planTonight} testID="welcome-pick" />
             <Button label="Cook this tonight" kind="primary" block onPress={planTonight} testID="welcome-cook-tonight" />
             {more.map((r) => (
@@ -130,7 +143,7 @@ export function WelcomeScreen() {
 
       {step === 'reminder' ? (
         <View style={{ gap: SPACE.md, paddingTop: SPACE.xl }}>
-          <Text variant="title" accessibilityRole="header">
+          <Text variant="title" accessibilityRole="header" ref={heading}>
             A nudge on Sundays?
           </Text>
           <Text variant="body" colour="inkSoft">

@@ -1,6 +1,7 @@
 // Chips, in the original's three shapes (spec §4.7): filter (white with a
 // border, ink when on), quick (grey, ink when on) and dropdown (grey with a
-// chevron). Checkable chips announce their state to VoiceOver.
+// chevron). Checkable chips announce their state to VoiceOver; action chips
+// ("+ rice") are plain buttons, since there's nothing to be checked.
 import { Pressable } from 'react-native';
 
 import { makeStyles } from '@/ui/theme/makeStyles';
@@ -14,20 +15,27 @@ type Props = {
   onPress: () => void;
   kind?: 'filter' | 'quick' | 'dropdown';
   icon?: IconName;
-  /** For a single choice among several (radio) rather than an on/off toggle. */
-  role?: 'checkbox' | 'radio';
+  /**
+   * checkbox: an on/off toggle. radio: one choice among several (a diet, a day).
+   * button: an action that adds or removes something; pass an `accessibilityLabel`
+   * that says so ("Add rice"), as VoiceOver can't read the + icon.
+   */
+  role?: 'checkbox' | 'radio' | 'button';
+  /** What VoiceOver says, when the visible text alone doesn't say what a tap does. Must contain the visible words. */
+  accessibilityLabel?: string;
   testID?: string | undefined;
 };
 
-export function Chip({ label, selected, onPress, kind = 'filter', icon, role = 'checkbox', testID }: Props) {
+export function Chip({ label, selected, onPress, kind = 'filter', icon, role = 'checkbox', accessibilityLabel, testID }: Props) {
   const styles = useStyles();
   const ink = selected ? 'bg' : 'ink';
+  const button = kind === 'dropdown' || role === 'button';
   return (
     <Pressable
       onPress={onPress}
-      accessibilityRole={kind === 'dropdown' ? 'button' : role}
-      accessibilityState={kind === 'dropdown' ? { expanded: selected } : { checked: selected }}
-      accessibilityLabel={label}
+      accessibilityRole={button ? 'button' : role}
+      accessibilityState={kind === 'dropdown' ? { expanded: selected } : button ? {} : { checked: selected }}
+      accessibilityLabel={accessibilityLabel ?? label}
       {...(testID ? { testID } : {})}
       hitSlop={{ top: 4, bottom: 4 }}
       style={({ pressed }) => [styles.chip, kind !== 'filter' && styles.soft, selected && styles.selected, pressed && styles.pressed]}

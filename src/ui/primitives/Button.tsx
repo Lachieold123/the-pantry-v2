@@ -74,7 +74,8 @@ export function Button({
     >
       <View style={styles.row}>
         {busy ? <ActivityIndicator size="small" color={colours[ink]} /> : icon ? <Icon name={icon} size={18} colour={ink} /> : null}
-        <Text variant={size === 'lg' ? 'labelLarge' : 'label'} colour={ink}>
+        {/* At the largest text sizes a label beside an icon wraps inside the pill instead of spilling out (audit F198). */}
+        <Text variant={size === 'lg' ? 'labelLarge' : 'label'} colour={ink} numberOfLines={2} align="center" style={styles.label}>
           {label}
         </Text>
         {trailingIcon ? <Icon name={trailingIcon} size={16} colour={ink} /> : null}
@@ -95,7 +96,8 @@ const useStyles = makeStyles(({ colours }) => ({
   },
   large: { paddingVertical: SPACE.md, paddingHorizontal: SPACE.lg },
   block: { alignSelf: 'stretch' },
-  row: { flexDirection: 'row', alignItems: 'center', gap: SPACE.xs },
+  row: { flexDirection: 'row', alignItems: 'center', gap: SPACE.xs, maxWidth: '100%' },
+  label: { flexShrink: 1 },
   primary: { backgroundColor: colours.ink },
   accent: { backgroundColor: colours.accent },
   secondary: { borderWidth: 1, borderColor: colours.border },

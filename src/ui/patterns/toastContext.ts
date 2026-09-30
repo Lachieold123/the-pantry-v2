@@ -3,7 +3,8 @@
 import { createContext, useContext } from 'react';
 
 // `actionLabel` renames the one action when it isn't an undo ("Open Settings").
-export type ToastInput = { message: string; undo?: () => void; actionLabel?: string };
+// `tone: 'problem'` swaps the tick for a warning sign, for things that went wrong (audit F170).
+export type ToastInput = { message: string; undo?: () => void; actionLabel?: string; tone?: 'done' | 'problem' };
 
 export const ToastContext = createContext<(t: ToastInput) => void>(() => {});
 
