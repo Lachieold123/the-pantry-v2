@@ -24,6 +24,17 @@ const noColourLiterals = {
   ],
 };
 
+// UI copy uses the typographic apostrophe (’), never the straight one, so one
+// sentence can't appear both ways across screens (audit F177, v1 QUAL-28).
+// Comments are not checked; they are not shown to the cook.
+const APOSTROPHE = "/[A-Za-z]'[A-Za-z]/";
+const APOSTROPHE_MESSAGE = 'Use the curly apostrophe (’) in UI copy, not a straight one.';
+const curlyApostrophes = [
+  { selector: `Literal[value=${APOSTROPHE}]`, message: APOSTROPHE_MESSAGE },
+  { selector: `TemplateElement[value.raw=${APOSTROPHE}]`, message: APOSTROPHE_MESSAGE },
+  { selector: `JSXText[value=${APOSTROPHE}]`, message: APOSTROPHE_MESSAGE },
+];
+
 module.exports = defineConfig([
   expoConfig,
   { ignores: ['dist/*', '.expo/*', 'node_modules/*', 'ios/*', 'android/*', 'coverage/*'] },
@@ -31,6 +42,12 @@ module.exports = defineConfig([
     files: ['src/**/*.{ts,tsx}'],
     ignores: ['src/ui/tokens/**'],
     rules: noColourLiterals,
+  },
+  {
+    // One rule entry replaces another in flat config, so the colour checks are repeated here.
+    files: ['src/features/**/*.{ts,tsx}', 'src/ui/**/*.{ts,tsx}'],
+    ignores: ['src/ui/tokens/**', '**/*.test.{ts,tsx}'],
+    rules: { 'no-restricted-syntax': [...noColourLiterals['no-restricted-syntax'], ...curlyApostrophes] },
   },
   {
     // The domain is pure TypeScript: no React, no Expo, no storage (map §8, D-015).

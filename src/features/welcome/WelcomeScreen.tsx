@@ -33,6 +33,7 @@ export function WelcomeScreen() {
   const setOnboarded = usePreferences((s) => s.setOnboarded);
   const setReminderPref = usePreferences((s) => s.setSundayReminder);
   const addEntry = usePlan((s) => s.addEntry);
+  const removeEntry = usePlan((s) => s.removeEntry);
   const picks = useForYou(PICKS * 3);
 
   const finish = () => {
@@ -42,7 +43,11 @@ export function WelcomeScreen() {
   const next = () => {
     const to = NEXT[step];
     if (to === 'done') finish();
-    else setStep(to);
+    else {
+      // Fresh answers deserve their best match first, not the page an old offset left open (audit F166).
+      if (to === 'reveal') setOffset(0);
+      setStep(to);
+    }
   };
   const back = BACK[step];
 
@@ -51,9 +56,13 @@ export function WelcomeScreen() {
 
   const planTonight = () => {
     if (!hero) return next();
-    addEntry(hero.id, toISODate(new Date()), 'dinner', hero.servings);
-    toast({ message: `${hero.title} is on for tonight` });
+    const entry = addEntry(hero.id, toISODate(new Date()), 'dinner', hero.servings);
+    toast({ message: `${hero.title} is on for tonight`, undo: () => removeEntry(entry.id) });
     next();
+  };
+  // Tapping the photo is a look, not a decision: only the button plans it (audit F146).
+  const openHero = () => {
+    if (hero) router.push({ pathname: '/recipe/[id]', params: { id: hero.id } });
   };
   const remind = async () => {
     const on = await setSundayReminder(true);
@@ -78,7 +87,7 @@ export function WelcomeScreen() {
             The Pantry
           </Text>
           <Text variant="body" colour="inkSoft">
-            Plan the week on Sunday, shop once, and know what’s for dinner every night. Two quick questions and we’ll suggest tonight’s.
+            Plan the week on Sunday, shop once, and know what’s for dinner every night. A few quick questions and we’ll suggest tonight’s.
           </Text>
           <Button label="Get started" kind="primary" block onPress={next} testID="welcome-start" />
         </View>
@@ -92,7 +101,7 @@ export function WelcomeScreen() {
         hero ? (
           <View style={{ gap: SPACE.md }}>
             <Text variant="kicker">Tonight, for you</Text>
-            <RecipeCard recipe={hero} image={RECIPE_IMAGES[hero.id]} size="large" onPress={planTonight} testID="welcome-pick" />
+            <RecipeCard recipe={hero} image={RECIPE_IMAGES[hero.id]} size="large" onPress={openHero} testID="welcome-pick" />
             <Button label="Cook this tonight" kind="primary" block onPress={planTonight} testID="welcome-cook-tonight" />
             {more.map((r) => (
               <RecipeCard

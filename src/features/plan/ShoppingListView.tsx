@@ -11,6 +11,7 @@ import { INGREDIENTS } from '@/data/catalogue/catalogue';
 import { AISLE_LABELS } from '@/domain/recipes/labels';
 import {
   addExtras,
+  capitalise,
   clearList,
   deleteExtra,
   EMPTY_EDITS,
@@ -58,7 +59,7 @@ export function ShoppingListView({ week, weekLabel, onBrowse }: { week: ISODate;
   const remove = (item: ShoppingItem) => {
     edit((e) => removeItem(e, item));
     toast({
-      message: `${item.name} removed from the list`,
+      message: `${capitalise(item.name)} removed from the list`,
       undo: () => edit((e) => ({ ...e, removed: Object.fromEntries(Object.entries(e.removed).filter(([k]) => k !== item.key)) })),
     });
   };
@@ -75,7 +76,7 @@ export function ShoppingListView({ week, weekLabel, onBrowse }: { week: ISODate;
   const addExtra = (text: string) => {
     const shown = list.extras.map((x) => x.extra.text);
     if (addExtras(edits, [text], newId, Date.now(), shown).added.length === 0) {
-      toast({ message: `${text} is already on the list` });
+      toast({ message: `${capitalise(text.trim())} is already on the list` });
       return;
     }
     edit((e) => addExtras(e, [text], newId, Date.now(), shown).edits);
@@ -86,7 +87,7 @@ export function ShoppingListView({ week, weekLabel, onBrowse }: { week: ISODate;
     editList(home, (e) => deleteExtra(e, extra.id));
     if (fromWeek) edit((e) => deleteExtra(e, extra.id));
     toast({
-      message: `${extra.text} removed from the list`,
+      message: `${capitalise(extra.text)} removed from the list`,
       undo: () => {
         editList(home, (e) => restoreExtra(e, extra, checked && !fromWeek));
         if (fromWeek && checked) edit((e) => toggleExtra(e, extra.id));
@@ -145,7 +146,7 @@ export function ShoppingListView({ week, weekLabel, onBrowse }: { week: ISODate;
         {list.extras.map((row, i) => (
           <ShoppingRow
             key={row.extra.id}
-            label={row.extra.text}
+            label={capitalise(row.extra.text)}
             checked={row.checked}
             first={i === 0}
             onToggle={() => edit((e) => toggleExtra(e, row.extra.id))}
@@ -173,7 +174,7 @@ export function ShoppingListView({ week, weekLabel, onBrowse }: { week: ISODate;
         items={list.inCupboard}
         onBack={(item) => {
           removeFromCupboard(item.key);
-          toast({ message: `${item.name} is back on the list`, undo: () => addToCupboard([item.key], 'manual') });
+          toast({ message: `${capitalise(item.name)} is back on the list`, undo: () => addToCupboard([item.key], 'manual') });
         }}
       />
     </View>

@@ -68,7 +68,6 @@ export function RecipeHeader(p: Props) {
         />
         <Action icon="plan" label="Plan" onPress={p.onPlan} testID="recipe-plan" />
         <Action icon="send" label="Share" onPress={p.onShare} testID="recipe-share" />
-        <View style={{ flex: 1 }} />
         <Pressable
           onPress={p.onMarkCooked}
           accessibilityRole="button"
@@ -168,7 +167,7 @@ function Tile({ icon, value, unit, label, on = false }: { icon: IconName; value:
           </Text>
         ) : null}
       </View>
-      <Text variant="infoLabel" colour={on ? 'accent' : 'inkMuted'}>
+      <Text variant="infoLabel" colour={on ? 'accent' : 'inkMuted'} align="center">
         {label}
       </Text>
     </View>
@@ -186,9 +185,12 @@ const useStyles = makeStyles(({ colours }) => ({
     backgroundColor: colours.accentSoft,
   },
   byline: { flexDirection: 'row', alignItems: 'center', gap: SPACE.sm - 2 },
-  actions: { flexDirection: 'row', alignItems: 'center', gap: 2 },
+  // Wraps rather than overflowing at 320 pt or with large text (audit F92); the Cook pill
+  // keeps to the right edge of whichever line it lands on.
+  actions: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', columnGap: 2, rowGap: SPACE.xs },
   action: { flexDirection: 'row', alignItems: 'center', gap: 5, paddingHorizontal: 6, minHeight: TAP_TARGET },
   cookPill: {
+    marginLeft: 'auto',
     flexDirection: 'row',
     alignItems: 'center',
     gap: 6,

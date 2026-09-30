@@ -3,6 +3,7 @@
 import { fireEvent, render, screen } from '@testing-library/react-native';
 
 import type { Recipe } from '@/domain/recipes/types';
+import { RECIPE } from '@/ui/tokens/type';
 import { Ingredients, Method } from './RecipeBody';
 
 const line = (item: string) => ({ item, raw: item });
@@ -66,6 +67,25 @@ describe('Method', () => {
   it('leaves metric steps as written, with one timer for a compound time', async () => {
     await render(<Method recipe={roast} units="metric" />);
     expect(screen.getByLabelText('Step 1. Heat the oven to 200°C.')).toBeTruthy();
-    expect(screen.getByText(' 1 hour 15 minutes ')).toBeTruthy();
+    // Non-breaking spaces, so the chip never splits across lines (F112).
+    expect(screen.getByText('\u00A01\u00A0hour\u00A015\u00A0minutes\u00A0')).toBeTruthy();
+  });
+
+  it('keeps a range together too, with no break after its dash (F112)', async () => {
+    await render(<Method recipe={{ ...roast, steps: [{ text: 'Bake for 35–40 minutes.' }] } as Recipe} units="metric" />);
+    expect(screen.getByText('\u00A035–\u206040\u00A0minutes\u00A0')).toBeTruthy();
+  });
+
+  it('gives two-digit step numbers room to stay on one line (F93)', async () => {
+    const long = { ...roast, steps: Array.from({ length: 12 }, (_, i) => ({ text: `Step ${i + 1}.` })) } as Recipe;
+    await render(<Method recipe={long} units="metric" />);
+    const twelve = screen.getByText('12');
+    expect(twelve.props.numberOfLines).toBe(1);
+    expect(twelve.props.style).toEqual(expect.arrayContaining([{ width: RECIPE.stepNumberWide }]));
+  });
+
+  it('heads the steps "Method", as the editor does (F173)', async () => {
+    await render(<Method recipe={roast} units="metric" />);
+    expect(screen.getByText('Method :')).toBeTruthy();
   });
 });

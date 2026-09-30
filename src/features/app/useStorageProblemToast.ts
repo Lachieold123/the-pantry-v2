@@ -6,8 +6,8 @@ import { onStorageProblem, type StorageProblem } from '@/store/storage';
 import { useToast } from '@/ui/patterns/Toast';
 
 export const STORAGE_PROBLEM_MESSAGES: Record<StorageProblem['kind'], string> = {
-  'save-failed': "Couldn't save your changes. Your phone's storage may be full.",
-  'read-only': "Some saved data couldn't be loaded, so changes to it won't be kept for now.",
+  'save-failed': 'Couldn’t save your changes. Your phone’s storage may be full.',
+  'read-only': 'Some saved data couldn’t be loaded, so changes to it won’t be kept for now.',
 };
 
 const QUIET_MS = 10_000;

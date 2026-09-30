@@ -84,12 +84,12 @@ export function GalleryScreen() {
       <Block title="Empty and error">
         <EmptyState
           title="Nothing planned for tonight"
-          body="Plan a few dinners and tonight's shows up here."
+          body="Plan a few dinners and tonight’s shows up here."
           action={{ label: 'Browse recipes', onPress: () => router.navigate('/browse') }}
           testID="gallery-empty"
         />
         <ErrorState
-          body="The recipe link couldn't be read. Check you're online, then try again."
+          body="The recipe link couldn’t be read. Check you’re online, then try again."
           onRetry={() => toast({ message: 'Retrying' })}
         />
       </Block>

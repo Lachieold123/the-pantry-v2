@@ -4,6 +4,7 @@ import { useDeferredValue, useMemo, useState } from 'react';
 import { View } from 'react-native';
 
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
+import { planWhere } from '@/domain/plan/summary';
 import { searchRecipes } from '@/domain/recipes/search';
 import type { Recipe } from '@/domain/recipes/types';
 import { fromISODate, isISODate, toISODate, type Slot } from '@/domain/plan/week';
@@ -63,11 +64,10 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
     [deferredQuery, hidden, searchIndex, ideas],
   );
 
-  const dayName = day === toISODate(new Date()) ? 'today' : (longDate(fromISODate(day)).split(' ')[0] ?? day);
   // Once only: the sheet takes a moment to close, and a second tap would plan twice (audit F163).
   const pick = once((recipe: Recipe) => {
     const entry = addEntry(recipe.id, day, slot, recipe.servings);
-    toast({ message: `${recipe.title} planned for ${dayName} ${slot}`, undo: () => removeEntry(entry.id) });
+    toast({ message: `${recipe.title} planned for ${planWhere(day, slot, toISODate(new Date()))}`, undo: () => removeEntry(entry.id) });
     router.back();
   });
 

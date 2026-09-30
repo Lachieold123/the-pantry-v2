@@ -15,7 +15,7 @@ import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { useTheme } from '@/ui/theme/ThemeProvider';
 import { FIXED } from '@/ui/tokens/colour';
-import { CHROME, MOTION, SHADOW, SPACE } from '@/ui/tokens/type';
+import { CHROME, MOTION, RADIUS, SHADOW, SPACE } from '@/ui/tokens/type';
 import { useKeyboardShown } from './useKeyboardShown';
 import { usePlanBadge } from './useCounts';
 
@@ -98,13 +98,15 @@ const useStyles = makeStyles(({ colours }) => ({
   wrap: { position: 'absolute', left: 0, right: 0, bottom: 0 },
   fade: { position: 'absolute', left: 0, right: 0, bottom: 0, top: -(CHROME.tabFade - CHROME.tabBar) },
   row: { flexDirection: 'row', alignItems: 'flex-end', paddingHorizontal: SPACE.sm, paddingTop: SPACE.sm - 2 },
-  tab: { flex: 1, alignItems: 'center', paddingVertical: CHROME.tabPadY, paddingHorizontal: SPACE.xxs, gap: CHROME.tabGap },
+  // No side padding: at 320 pt "Cupboard" needs the tab's full width (audit F94).
+  tab: { flex: 1, alignItems: 'center', paddingVertical: CHROME.tabPadY, gap: CHROME.tabGap },
   pressed: { transform: [{ scale: 0.96 }] },
   badge: { position: 'absolute', top: -SPACE.xxs, right: -SPACE.sm },
+  // v1's Toolbar draws the ring inside the 56 pt button, not around it (audit F94).
   fab: {
-    width: CHROME.fab + CHROME.fabRing * 2,
-    height: CHROME.fab + CHROME.fabRing * 2,
-    borderRadius: CHROME.fab,
+    width: CHROME.fab,
+    height: CHROME.fab,
+    borderRadius: RADIUS.pill,
     borderWidth: CHROME.fabRing,
     borderColor: colours.bg,
     backgroundColor: colours.ink,

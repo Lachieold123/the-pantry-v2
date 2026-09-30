@@ -16,6 +16,10 @@ import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { RADIUS, RECIPE, SPACE } from '@/ui/tokens/type';
 
+const NBSP = '\u00A0';
+/** Keeps "35–40 minutes" on one line: no break at its spaces, or after its dash (the word joiner). */
+const unbreakable = (text: string) => text.replace(/ /g, NBSP).replace(/([–-])/g, '$1\u2060');
+
 function Heading({ children }: { children: string }) {
   return (
     <Text variant="headingSans" accessibilityRole="header">
@@ -90,14 +94,17 @@ export function Ingredients({ recipe, servings, units, have }: IngredientsProps)
 
 export function Method({ recipe, units }: { recipe: Recipe; units: UnitSystem }) {
   const styles = useStyles();
+  // Every number in a recipe gets the same width, so the rules line up down the page.
+  const numberWidth = recipe.steps.length >= 10 ? RECIPE.stepNumberWide : RECIPE.stepNumber;
   return (
     <View style={styles.section}>
-      <Heading>Directions</Heading>
+      {/* "Method", as the editor and a shared recipe call it (audit F173). */}
+      <Heading>Method</Heading>
       {recipe.steps.map((step, i) => {
         const text = localiseStepText(step.text, units);
         return (
           <View key={i} style={styles.step} accessible accessibilityLabel={`Step ${i + 1}. ${text}`}>
-            <Text variant="stepNumber" align="center" style={styles.stepNumber}>
+            <Text variant="stepNumber" align="center" numberOfLines={1} style={{ width: numberWidth }}>
               {i + 1}
             </Text>
             <View style={styles.stepRule} />
@@ -107,8 +114,9 @@ export function Method({ recipe, units }: { recipe: Recipe; units: UnitSystem })
                   seg.text
                 ) : (
                   // Times read as chips here; in Cook Mode they become tap-to-start timers.
+                  // The chip stays whole, so a wrap can't leave an amber stub (audit F112).
                   <Text key={si} variant="bodyMedium" colour="accentDeep" style={styles.timer}>
-                    {` ${seg.label} `}
+                    {`${NBSP}${unbreakable(seg.label)}${NBSP}`}
                   </Text>
                 ),
               )}
@@ -161,7 +169,6 @@ const useStyles = makeStyles(({ colours }) => ({
   },
   tip: { flexDirection: 'row', gap: SPACE.xs, marginLeft: RECIPE.bullet + SPACE.sm, marginTop: -2, marginBottom: 6 },
   step: { flexDirection: 'row', gap: SPACE.md - 2, marginBottom: SPACE.xs, paddingLeft: 2 },
-  stepNumber: { width: RECIPE.stepNumber },
   stepRule: { width: RECIPE.stepRule, borderRadius: 1, backgroundColor: colours.accent, marginRight: SPACE.xxs },
   stepText: { flex: 1 },
   timer: { fontWeight: '700', backgroundColor: colours.accentSoft },

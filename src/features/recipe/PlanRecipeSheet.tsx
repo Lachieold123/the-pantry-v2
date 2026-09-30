@@ -3,7 +3,8 @@ import { useRouter } from 'expo-router';
 import { useState } from 'react';
 import { View } from 'react-native';
 
-import type { Slot } from '@/domain/plan/week';
+import { planWhere } from '@/domain/plan/summary';
+import { toISODate, type Slot } from '@/domain/plan/week';
 import { parseServings } from '@/domain/recipes/servings';
 import { usePlan } from '@/store/plan';
 import { useRecipe } from '@/store/recipeBook';
@@ -52,12 +53,7 @@ export function PlanRecipeSheet({ id, servings: requested }: { id: string; servi
     );
   }
 
-  const chosen = [...days.thisWeek, ...days.nextWeek].find((d) => d.iso === day);
-  const where = chosen
-    ? chosen.long === 'tonight' && slot === 'dinner'
-      ? 'tonight'
-      : `${chosen.long === 'tonight' ? 'today' : chosen.long} ${slot}`
-    : slot;
+  const where = day ? planWhere(day, slot, toISODate(new Date())) : slot;
   // Once only: the sheet takes a moment to close, and a second tap would plan it twice.
   const add = once(() => {
     const entry = addEntry(recipe.id, day, slot, servings);

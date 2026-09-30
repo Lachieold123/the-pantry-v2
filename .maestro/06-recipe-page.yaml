@@ -42,7 +42,7 @@ appId: host.exp.Exponent
 - takeScreenshot: recipe-plan-sheet
 - tapOn:
     id: "plan-confirm"
-- assertVisible: "Carbonara planned for .* lunch"
+- assertVisible: "Carbonara planned for lunch .*"
 
 # Share opens the system share sheet; close it and carry on.
 - tapOn:
@@ -125,7 +125,7 @@ appId: host.exp.Exponent
     id: "recipe-more"
 - tapOn:
     id: "action-collect"
-- assertVisible: "Add to collection"
+- assertVisible: "Add to a collection"
 - assertVisible: "No collections yet. Name your first one below."
 - tapOn:
     id: "collect-new-name"

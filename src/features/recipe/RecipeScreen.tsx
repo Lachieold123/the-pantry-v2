@@ -34,6 +34,7 @@ import { RADIUS, RECIPE, SPACE } from '@/ui/tokens/type';
 import { Ingredients, Method, Notes } from './RecipeBody';
 import { CupboardSummary } from './CupboardSummary';
 import { RecipeHeader } from './RecipeHeader';
+import { RecipeStatusBar } from './RecipeStatusBar';
 import { ServingsSheet } from './ServingsSheet';
 
 /** `servings` is the raw route param: a planned dinner opens scaled to what it was planned for (audit F37). */
@@ -55,6 +56,7 @@ export function RecipeScreen({ id, servings: requested }: { id: string; servings
     setServings(shownRecipe && recipe && shownRecipe.id === recipe.id ? recipe.servings : startServings);
   }
   const [menu, setMenu] = useState(false);
+  const [overPhoto, setOverPhoto] = useState(true);
   const [servingsOpen, setServingsOpen] = useState(false);
   const saved = useSaved((s) => s.bookmarks.some((b) => b.recipeId === id));
   const hidden = useSaved((s) => s.hidden.includes(id));
@@ -86,7 +88,7 @@ export function RecipeScreen({ id, servings: requested }: { id: string; servings
       <Screen>
         <PushedHeader title="Recipe" />
         <EmptyState
-          title="We couldn't find that recipe"
+          title="We couldn’t find that recipe"
           body="It may have been removed or renamed."
           action={{ label: 'Browse recipes', onPress: () => router.navigate('/browse') }}
           testID="recipe-missing"
@@ -109,7 +111,7 @@ export function RecipeScreen({ id, servings: requested }: { id: string; servings
         message: mine ? recipeAsText(recipe) : `${recipe.title}: ${recipe.summary ?? ''}\nthepantry://recipe/${recipe.id}`,
       });
     } catch {
-      toast({ message: "Couldn't open sharing. Try again." });
+      toast({ message: 'Couldn’t open sharing. Try again.' });
     }
   };
 
@@ -121,7 +123,15 @@ export function RecipeScreen({ id, servings: requested }: { id: string; servings
         </RecipeImage>
       </View>
 
-      <ScrollView style={styles.scroll} contentContainerStyle={{ paddingTop: RECIPE.hero - RECIPE.overlap }} testID="recipe-screen">
+      <RecipeStatusBar overPhoto={overPhoto} />
+      <ScrollView
+        style={styles.scroll}
+        contentContainerStyle={{ paddingTop: RECIPE.hero - RECIPE.overlap }}
+        // The sheet reaches the status bar once it has scrolled the photo's height less the notch.
+        onScroll={(e) => setOverPhoto(e.nativeEvent.contentOffset.y < RECIPE.hero - RECIPE.overlap - insets.top)}
+        scrollEventThrottle={16}
+        testID="recipe-screen"
+      >
         <View style={[styles.sheet, { paddingBottom: insets.bottom + SPACE.xxl }]}>
           <View style={styles.handle} />
           <RecipeHeader

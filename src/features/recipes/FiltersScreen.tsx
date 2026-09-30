@@ -10,11 +10,11 @@ import { seasonOn, type TimeFilter } from '@/domain/recipes/search';
 import { CUISINES, DIFFICULTIES, MEAL_TYPES } from '@/domain/recipes/types';
 import { toggleIn, useRecipeFilters } from '@/store/recipeFilters';
 import { ActionBar } from '@/ui/patterns/ActionBar';
-import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { Button } from '@/ui/primitives/Button';
 import { Chip } from '@/ui/primitives/Chip';
 import { Sheet } from '@/ui/primitives/Sheet';
 import { Switch } from '@/ui/primitives/Switch';
+import { Text } from '@/ui/primitives/Text';
 import { SPACE } from '@/ui/tokens/type';
 import { useRecipeResults } from './useRecipeResults';
 
@@ -34,6 +34,15 @@ const DIFFICULTY_LABELS = { easy: 'Easy', medium: 'Medium', hard: 'Hard' } as co
 
 function ChipRow({ children }: { children: React.ReactNode }) {
   return <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: SPACE.xs }}>{children}</View>;
+}
+
+/** v1's Filters section titles are 16/800 sans, not the serif section header (spec §7, audit F199). */
+function Heading({ children }: { children: string }) {
+  return (
+    <Text variant="headingSansSmall" accessibilityRole="header">
+      {children}
+    </Text>
+  );
 }
 
 export function FiltersScreen() {
@@ -56,7 +65,7 @@ export function FiltersScreen() {
     <View style={{ flex: 1 }}>
       <Sheet kicker={browsing ? 'Filters' : matches} title="Refine your rotation" onClose={() => router.back()}>
         <View style={{ gap: SPACE.sm }}>
-          <SectionHeader title="Diet" />
+          <Heading>Diet</Heading>
           <ChipRow>
             {DIETS.map((d) => (
               <Chip
@@ -70,7 +79,7 @@ export function FiltersScreen() {
           </ChipRow>
         </View>
         <View style={{ gap: SPACE.sm }}>
-          <SectionHeader title="Time" />
+          <Heading>Time</Heading>
           <ChipRow>
             {TIMES.map((t) => (
               <Chip
@@ -84,7 +93,7 @@ export function FiltersScreen() {
           </ChipRow>
         </View>
         <View style={{ gap: SPACE.sm }}>
-          <SectionHeader title="Meal" />
+          <Heading>Meal</Heading>
           <ChipRow>
             {MEAL_TYPES.map((m) => (
               <Chip
@@ -98,7 +107,7 @@ export function FiltersScreen() {
           </ChipRow>
         </View>
         <View style={{ gap: SPACE.sm }}>
-          <SectionHeader title="Difficulty" />
+          <Heading>Difficulty</Heading>
           <ChipRow>
             {DIFFICULTIES.map((d) => (
               <Chip
@@ -128,7 +137,7 @@ export function FiltersScreen() {
           />
         </View>
         <View style={{ gap: SPACE.sm }}>
-          <SectionHeader title="Cuisine" />
+          <Heading>Cuisine</Heading>
           <ChipRow>
             {CUISINES.map((c) => (
               <Chip

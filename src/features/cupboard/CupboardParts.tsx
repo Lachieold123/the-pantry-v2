@@ -20,6 +20,8 @@ import { Text } from '@/ui/primitives/Text';
 import { SPACE } from '@/ui/tokens/type';
 
 const ALL = [...INGREDIENTS.byId.values()].filter((d) => !d.staple).sort((a, b) => a.name.localeCompare(b.name));
+// Salt, oil and the like are always assumed, so they're never added; a search for one says so (audit F139).
+const STAPLES = [...INGREDIENTS.byId.values()].filter((d) => d.staple);
 const SUGGESTIONS = 8;
 const RAIL = 10;
 export const CATEGORY_LABEL: Record<(typeof CUPBOARD_CATEGORIES)[number], string> = {
@@ -34,28 +36,32 @@ export const CATEGORY_LABEL: Record<(typeof CUPBOARD_CATEGORIES)[number], string
 };
 
 /** Ranks names so "rice" finds rice before rice paper: exact, then starts-with, then any word. */
-function searchIngredients(query: string, have: ReadonlySet<string>) {
+function searchIngredients(query: string, have: ReadonlySet<string>, pool: typeof ALL = ALL) {
   const words = normaliseWords(query);
   if (!words.length) return [];
-  const scored = ALL.map((d) => {
-    // An alias only counts when the search hits its main word: "garlic naan" is naan, so "garl" shouldn't find it.
-    const aliases = d.aliases.map((a) => normaliseWords(a)).filter((a) => words.some((w) => a[a.length - 1]?.startsWith(w)));
-    const names = [normaliseWords(d.name), ...aliases];
-    if (!words.every((w) => names.some((n) => n.some((nw) => nw.startsWith(w))))) return undefined;
-    const joined = words.join(' ');
-    const exact = names.some((n) => n.join(' ') === joined) ? 0 : normaliseWords(d.name).join(' ').startsWith(joined) ? 1 : 2;
-    return { d, exact };
-  }).filter((x) => x !== undefined);
+  const scored = pool
+    .map((d) => {
+      // An alias only counts when the search hits its main word: "garlic naan" is naan, so "garl" shouldn't find it.
+      const aliases = d.aliases.map((a) => normaliseWords(a)).filter((a) => words.some((w) => a[a.length - 1]?.startsWith(w)));
+      const names = [normaliseWords(d.name), ...aliases];
+      if (!words.every((w) => names.some((n) => n.some((nw) => nw.startsWith(w))))) return undefined;
+      const joined = words.join(' ');
+      const exact = names.some((n) => n.join(' ') === joined) ? 0 : normaliseWords(d.name).join(' ').startsWith(joined) ? 1 : 2;
+      return { d, exact };
+    })
+    .filter((x) => x !== undefined);
   return scored
     .sort((a, b) => a.exact - b.exact || a.d.name.length - b.d.name.length)
     .slice(0, SUGGESTIONS)
-    .map(({ d }) => ({ id: d.id, name: d.name, inCupboard: have.has(d.id) }));
+    .map(({ d, exact }) => ({ id: d.id, name: d.name, inCupboard: have.has(d.id), close: exact < 2 }));
 }
 
 export function AddBar({ have, onAdd }: { have: ReadonlySet<string>; onAdd: (id: string) => void }) {
   const router = useRouter();
   const [query, setQuery] = useState('');
   const results = useMemo(() => searchIngredients(query, have), [query, have]);
+  // Only a close match: "salt" is the staple, even though salted things turn up too.
+  const staple = useMemo(() => searchIngredients(query, have, STAPLES).find((r) => r.close), [query, have]);
   return (
     <View style={{ gap: SPACE.sm }}>
       <SearchField
@@ -65,7 +71,12 @@ export function AddBar({ have, onAdd }: { have: ReadonlySet<string>; onAdd: (id:
         label="Add an ingredient"
         testID="cupboard-search"
       />
-      {query.trim() && results.length === 0 ? (
+      {staple ? (
+        <Text
+          variant="meta"
+          testID="cupboard-search-staple"
+        >{`${capitalise(staple.name)} is always assumed, so there’s no need to add it.`}</Text>
+      ) : query.trim() && results.length === 0 ? (
         <Text variant="meta">No ingredient by that name. Try a simpler word, like “rice”.</Text>
       ) : null}
       {results.length ? (

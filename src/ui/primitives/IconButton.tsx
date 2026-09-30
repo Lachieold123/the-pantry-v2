@@ -1,16 +1,17 @@
 // An icon on its own still needs a 44pt target and a spoken label. Shapes from
 // the original (spec §4.4, §4.8): plain (header), square (pushed-screen back,
 // 44 r14 grey), round (over a photo, 44 circle card) and chip (38 circle, grey
-// with a border).
+// with a border) and field (46, grey with a border, beside a search field;
+// fieldFilled is the same shape in ink, for filters that are on).
 import { Pressable, type ViewStyle } from 'react-native';
 
 import { useTheme } from '@/ui/theme/ThemeProvider';
 import type { ColourTokens } from '@/ui/tokens/colour';
-import { RADIUS, TAP_TARGET } from '@/ui/tokens/type';
+import { CHROME, RADIUS, TAP_TARGET } from '@/ui/tokens/type';
 import { Icon, type IconName } from './Icon';
 
 /** squareOnSoft: the square back button on a grey page (Settings, Filters), where grey would vanish. */
-type Shape = 'plain' | 'square' | 'squareOnSoft' | 'round' | 'chip' | 'filled';
+type Shape = 'plain' | 'square' | 'squareOnSoft' | 'round' | 'chip' | 'filled' | 'field' | 'fieldFilled';
 
 type Props = {
   icon: IconName;
@@ -22,6 +23,8 @@ type Props = {
   disabled?: boolean;
   testID?: string | undefined;
 };
+
+const fieldBox: ViewStyle = { width: CHROME.field, height: CHROME.field, borderRadius: RADIUS.lg, borderWidth: 1 };
 
 export function IconButton({ icon, label, onPress, shape = 'plain', size, colour, disabled = false, testID }: Props) {
   const { colours } = useTheme();
@@ -39,9 +42,11 @@ export function IconButton({ icon, label, onPress, shape = 'plain', size, colour
       borderColor: colours.border,
     },
     filled: { backgroundColor: colours.ink, borderRadius: RADIUS.lg },
+    field: { ...fieldBox, backgroundColor: colours.bgSoft, borderColor: colours.border },
+    fieldFilled: { ...fieldBox, backgroundColor: colours.ink, borderColor: colours.ink },
   };
   const iconSize = size ?? (shape === 'chip' ? 18 : 22);
-  const ink = colour ?? (shape === 'filled' ? 'bg' : 'ink');
+  const ink = colour ?? (shape === 'filled' || shape === 'fieldFilled' ? 'bg' : 'ink');
   return (
     <Pressable
       onPress={onPress}

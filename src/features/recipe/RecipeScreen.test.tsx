@@ -5,7 +5,14 @@ import { fireEvent, render, screen } from '@testing-library/react-native';
 import { RecipeScreen } from './RecipeScreen';
 
 const mockPush = jest.fn();
-jest.mock('expo-router', () => ({ useRouter: () => ({ push: mockPush, back: jest.fn(), navigate: jest.fn() }) }));
+jest.mock('expo-router', () => ({
+  useRouter: () => ({ push: mockPush, back: jest.fn(), navigate: jest.fn() }),
+  useFocusEffect: (cb: () => void) => jest.requireActual('react').useEffect(cb, [cb]),
+}));
+jest.mock('expo-status-bar', () => {
+  const { View } = jest.requireActual('react-native');
+  return { StatusBar: ({ style }: { style: string }) => <View testID="status-bar" accessibilityLabel={style} /> };
+});
 jest.mock('react-native-safe-area-context', () => ({ useSafeAreaInsets: () => ({ top: 0, bottom: 0, left: 0, right: 0 }) }));
 jest.mock('react-native-reanimated', () => {
   const { View } = jest.requireActual('react-native');
@@ -32,4 +39,11 @@ test('opens at the planned servings and passes them on to Cook and the plan shee
 test('without a param, or with a bad one, opens at the recipe’s own servings', async () => {
   await render(<RecipeScreen id={RECIPE} servings="Infinity" />);
   expect(screen.getByLabelText('Serves 4. Change servings and units')).toBeTruthy();
+});
+
+test('the status bar is light over the photo and dark once the sheet covers it (F113)', async () => {
+  await render(<RecipeScreen id={RECIPE} />);
+  expect(screen.getByTestId('status-bar').props.accessibilityLabel).toBe('light');
+  await fireEvent.scroll(screen.getByTestId('recipe-screen'), { nativeEvent: { contentOffset: { y: 400 } } });
+  expect(screen.getByTestId('status-bar').props.accessibilityLabel).toBe('dark');
 });

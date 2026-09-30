@@ -81,7 +81,7 @@ export function PlanScreen() {
     try {
       await Share.share({ message: text });
     } catch {
-      toast({ message: "Couldn't open sharing. Try again." });
+      toast({ message: 'Couldn’t open sharing. Try again.' });
     }
   };
   const share = () =>

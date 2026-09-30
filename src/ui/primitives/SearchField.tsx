@@ -5,7 +5,7 @@ import { Pressable, TextInput, View } from 'react-native';
 import { textStyle } from '@/ui/theme/fonts';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { useTheme } from '@/ui/theme/ThemeProvider';
-import { RADIUS, SPACE, TYPE } from '@/ui/tokens/type';
+import { CHROME, RADIUS, SPACE, TYPE } from '@/ui/tokens/type';
 import { Icon } from './Icon';
 
 type Props = {
@@ -57,7 +57,7 @@ export function SearchField({ value, onChange, placeholder, label, onSubmit, tes
 const useStyles = makeStyles(({ colours }) => ({
   box: {
     flex: 1,
-    height: 46,
+    height: CHROME.field,
     flexDirection: 'row',
     alignItems: 'center',
     gap: SPACE.xs,
@@ -67,5 +67,5 @@ const useStyles = makeStyles(({ colours }) => ({
     borderColor: colours.border,
     backgroundColor: colours.bgSoft,
   },
-  input: { flex: 1, height: 46, color: colours.ink, ...textStyle(TYPE.body), lineHeight: undefined },
+  input: { flex: 1, height: CHROME.field, color: colours.ink, ...textStyle(TYPE.body), lineHeight: undefined },
 }));

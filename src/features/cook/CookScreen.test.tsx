@@ -41,7 +41,7 @@ test('× leaves straight away when no timer is running', async () => {
 
 test('× asks first while a timer runs, and Keep cooking stays', async () => {
   await render(<CookScreen id={RECIPE} />);
-  await fireEvent.press(screen.getByLabelText('Start a 15 minutes timer'));
+  await fireEvent.press(screen.getByLabelText('Start a timer for 15 minutes'));
   expect(await screen.findByText('Step 1 · 15 minutes')).toBeTruthy();
 
   await fireEvent.press(screen.getByTestId('cook-close'));

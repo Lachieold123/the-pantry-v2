@@ -103,7 +103,7 @@ export function CollectionScreen({ id }: { id: string }) {
       ) : (
         <EmptyState
           title="Nothing in here yet"
-          body="Open any recipe and tap Add to collection."
+          body="Open any recipe, tap ⋯ at the top, then Add to a collection."
           action={{ label: 'Browse recipes', onPress: () => router.navigate('/browse') }}
           testID="collection-empty"
         />
