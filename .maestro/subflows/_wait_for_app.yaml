@@ -25,12 +25,11 @@ appId: host.exp.Exponent
 # top of the welcome screen's Skip, so taps meant for Skip open Expo's menu.
 # Open that menu once from the gear and turn the button off. clearState
 # brings it back on every launch, so this runs for every flow.
-- tapOn:
-    point: "89%,9.6%"
 - runFlow:
     when:
-      visible: "Reload"
+      visible: "Gear Shape, Filled"
     commands:
+      - tapOn: "Gear Shape, Filled"
       - scrollUntilVisible:
           element: "Tools button"
           direction: DOWN
