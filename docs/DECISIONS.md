@@ -178,3 +178,18 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
   - The **avatar** and the drawer's profile row open Settings, and read "Local profile" until accounts exist.
 - **Why:** "No fake, no dead" (CLAUDE.md). A button that opens an empty inbox, or a feed of placeholder posts, is exactly what the audit flagged in v1 (ARCH-7, SOC-2, QUAL-1).
 - **Also:** the drawer is a route (`/menu`), not an always-mounted overlay (ARCH-1, PERF-1). Settings and the library pages are pushed screens, as in v1.
+
+## D-028 · Nutrition is calculated, with AI only for the gaps
+
+- **Date:** 30 September 2026 · **Decided by:** Lachlan
+- **Decision:** every recipe shows a per-serving nutrition panel, worked out like this:
+  - Each ingredient in our database gets values per 100 g and typical weights (1 onion ≈ 150 g, 1 cup of flour ≈ 150 g). Sources: Food Standards Australia New Zealand's food composition data (AFCD) where it covers the food.
+  - Recipes, including ones people post, are calculated on the phone from their matched ingredient lines. The same recipe always gives the same numbers, and it costs nothing to run.
+  - An AI fills in only the lines the calculator can't match or weigh (P8/P10, server side, needs the API key approved).
+  - Every panel carries a disclaimer: estimates from the ingredient list, a guide only, not medical or dietary advice. It also says how many lines were left out, if any.
+- **Replaces:** D-007's "no nutrition" for this feature; V1-PARITY-PLAN's "ask Lachlan" row.
+
+## D-029 · AI-generated photos are labelled
+
+- **Date:** 30 September 2026 · **Decided by:** Lachlan
+- **Decision:** the 120 catalogue photos with no photographer credit are v1's AI-generated images. They stay, labelled "AI-generated photo" on the recipe page, and are replaced with real photos over time (audit QUAL-18).
