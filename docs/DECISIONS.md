@@ -141,3 +141,29 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
   - An old edited built-in recipe comes across as "(my version)" of your own; references keep pointing at the built-in.
   - If the tester finished the old onboarding, their answers carry over and the welcome is skipped.
 - **Still needs:** a check on a phone that has the old TestFlight build (K-12).
+
+## D-025 · v2 takes on v1's look and shell
+
+- **Date:** 30 September 2026 · **Decided by:** Lachlan
+- **Decision:** v2 looks visually indistinguishable from the original app for now. That means:
+  - v1's palette (white, amber accent `#C99155`, pastel tints);
+  - Georgia serif and the system sans;
+  - v1's layouts and components;
+  - v1's shell: a header with menu, wordmark, inbox and avatar; tabs Feed · Browse · + · Cupboard · Plan; a side drawer.
+- **What it replaces:** D-016 (Paper/Night palettes, Newsreader + Manrope) and D-012's tab layout. It also changes CLAUDE.md's brand line: v1's greens and the few emoji it shows are allowed for now.
+- **How it's built:** the look is expressed only through design tokens and shared components (`docs/design/V1-DESIGN-SPEC.md`), so the later redesign is a change of tokens, not of screens.
+- **v1's own bugs aren't copied:** things like invisible dark-mode badges and light-only tints in dark mode are fixed (spec §8.2). Contrast failures that would change the look (the amber accent as text is 2.7:1) are logged for the redesign instead.
+
+## D-026 · Social at launch
+
+- **Date:** 30 September 2026 · **Decided by:** Lachlan
+- **Decision:** v2 launches with v1's social features:
+  - accounts and profiles;
+  - the feed and posts (photos and video);
+  - likes, comments and saves;
+  - follows;
+  - messages and notifications;
+  - report and block.
+
+  This replaces PRODUCT §5 and D-002's "local-first, no accounts".
+- **How it's built:** to the standard in `docs/V1-PARITY-PLAN.md`. The server enforces every rule, including two-way blocking and counts kept by the database. Moderation meets Apple guideline 1.2 before any social feature ships. All server data goes through TanStack Query. None of the audit's social or security findings may come across.
