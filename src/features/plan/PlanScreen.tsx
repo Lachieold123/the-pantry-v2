@@ -1,11 +1,12 @@
-// The Plan tab (spec §4.11–4.13): "This week" is a day strip over this week
-// and next, one day's breakfast, lunch and dinner, ideas for its next open
-// meal and a card for the shopping list. "Shopping list" is derived from the
-// plan, never stored (D-009, map rule 3). On Sundays the list opens on next
-// week, because that's the one you're shopping for.
+// The Plan tab (spec §4.11–4.13), laid out as v1's CartModal: the title with
+// a round share button and "N of 21 meals", the two tabs, then either the
+// week (day strip, the day's three meals, ideas, the shopping-list card) or
+// the shopping list. The share button sends whichever you're looking at.
+// The list is derived from the plan, never stored (D-009, map rule 3); on
+// Sundays it opens on next week, because that's the one you're shopping for.
 import { useRouter } from 'expo-router';
 import { useRef, useState } from 'react';
-import { ScrollView, Share } from 'react-native';
+import { ScrollView, Share, View } from 'react-native';
 
 import { firstOpenSlot, weekAsText, weekProgress } from '@/domain/plan/summary';
 import {
@@ -19,6 +20,8 @@ import {
   weekStart,
   type ISODate,
 } from '@/domain/plan/week';
+import { AISLE_LABELS } from '@/domain/recipes/labels';
+import { formatListForSharing } from '@/domain/shopping/derive';
 import { longDate, shortDate, weekdayName, weekRange } from '@/lib/dates';
 import { usePlan } from '@/store/plan';
 import { useRecipeLookup } from '@/store/recipeBook';
@@ -26,16 +29,18 @@ import { TitleBlock } from '@/ui/patterns/TitleBlock';
 import { useToast } from '@/ui/patterns/Toast';
 import { IconButton } from '@/ui/primitives/IconButton';
 import { Screen } from '@/ui/primitives/Screen';
-import { Segmented } from '@/ui/primitives/Segmented';
 import { Text } from '@/ui/primitives/Text';
 import { UnderlineTabs } from '@/ui/primitives/UnderlineTabs';
+import { PLAN, SPACE } from '@/ui/tokens/type';
 import { DaySlots } from './DaySlots';
 import { DaySuggestions, ListSummaryCard, WeekProgress } from './PlanParts';
 import { ShoppingListView } from './ShoppingListView';
+import { Pill } from './ShoppingRows';
 import { useWeekList } from './useWeekList';
 import { WeekStrip } from './WeekStrip';
 
 type PlanView = 'week' | 'list';
+type Which = 'this' | 'next';
 const VIEWS = [
   { value: 'week', label: 'This week' },
   { value: 'list', label: 'Shopping list' },
@@ -57,25 +62,20 @@ export function PlanScreen() {
     scroll.current?.scrollTo({ y: 0, animated: false });
   };
   const [selected, setSelected] = useState<ISODate>(today);
-  const [listWhich, setListWhich] = useState<'this' | 'next'>(() =>
+  const [listWhich, setListWhich] = useState<Which>(() =>
     new Date().getDay() === 0 && entriesInWeek(entries, weeks.nextWeek).length > 0 ? 'next' : 'this',
   );
   const listWeek = listWhich === 'this' ? weeks.thisWeek : weeks.nextWeek;
-  const week = weekStart(selected);
+  const listLabel = listWhich === 'this' ? 'This week' : 'Next week';
+  const week = view === 'week' ? weekStart(selected) : listWeek;
   const progress = weekProgress(entries, week);
-  const { list, meals } = useWeekList(week);
+  const dayWeek = useWeekList(weekStart(selected));
+  const listWeekList = useWeekList(listWeek);
   const past = isPast(selected, today);
-  const open = past ? undefined : firstOpenSlot(entries, selected);
 
-  const share = async () => {
-    const text = weekAsText(
-      entries,
-      week,
-      (id) => getRecipe(id)?.title,
-      (d) => longDate(fromISODate(d)),
-    );
+  const send = async (text: string, empty: string) => {
     if (!text) {
-      toast({ message: 'Nothing planned this week yet' });
+      toast({ message: empty });
       return;
     }
     try {
@@ -84,53 +84,85 @@ export function PlanScreen() {
       toast({ message: "Couldn't open sharing. Try again." });
     }
   };
+  const share = () =>
+    view === 'week'
+      ? send(
+          weekAsText(
+            entries,
+            week,
+            (id) => getRecipe(id)?.title,
+            (d) => longDate(fromISODate(d)),
+          ),
+          'Nothing planned this week yet',
+        )
+      : send(
+          listWeekList.list.sections.length || listWeekList.list.extras.length
+            ? formatListForSharing(listWeekList.list, (a) => AISLE_LABELS[a], `Shopping list, ${listLabel.toLowerCase()}`)
+            : '',
+          'Your list is empty. Plan a meal first.',
+        );
 
   return (
     <Screen tab testID="plan-screen" scrollRef={scroll}>
-      <TitleBlock
-        kicker="Plan"
-        title="Your week"
-        action={<IconButton icon="share" shape="round" label="Send the week's plan" onPress={() => void share()} testID="plan-share" />}
-      >
-        <WeekProgress planned={progress.planned} total={progress.total} />
-      </TitleBlock>
-      <UnderlineTabs<PlanView> label="Plan view" options={VIEWS} value={view} onChange={setView} />
-      {view === 'week' ? (
-        <>
-          <WeekStrip days={days} selected={selected} today={today} entries={entries} onSelect={setSelected} />
-          <Text variant="dayName" accessibilityRole="header" testID="plan-day-heading">
-            {weekdayName(fromISODate(selected))}
-            <Text variant="numberDay" colour="inkMuted">{` · ${shortDate(fromISODate(selected))}`}</Text>
-          </Text>
-          <DaySlots day={selected} entries={entriesFor(entries, selected)} past={past} />
-          {open ? <DaySuggestions day={selected} slot={open} /> : null}
-          <ListSummaryCard
-            list={list}
-            meals={meals}
-            onOpen={() => {
-              setListWhich(week === weeks.nextWeek ? 'next' : 'this');
-              setView('list');
-            }}
-          />
-        </>
-      ) : (
-        <>
-          <Segmented<'this' | 'next'>
-            label="Week"
-            options={[
-              { value: 'this', label: weekRange(fromISODate(weeks.thisWeek)) },
-              { value: 'next', label: weekRange(fromISODate(weeks.nextWeek)) },
-            ]}
-            value={listWhich}
-            onChange={setListWhich}
-          />
-          <ShoppingListView
-            week={listWeek}
-            weekLabel={listWhich === 'this' ? 'This week' : 'Next week'}
-            onBrowse={() => router.navigate('/browse')}
-          />
-        </>
-      )}
+      <View>
+        <TitleBlock
+          kicker="Plan"
+          title="Your week"
+          action={
+            <IconButton
+              icon="share"
+              shape="chip"
+              size={18}
+              label={view === 'week' ? 'Send the week’s plan' : 'Send the shopping list'}
+              onPress={() => void share()}
+              testID={view === 'week' ? 'plan-share' : 'shopping-share'}
+            />
+          }
+        >
+          <View style={{ marginTop: PLAN.afterProgress - SPACE.xxs }}>
+            <WeekProgress planned={progress.planned} total={progress.total} />
+          </View>
+        </TitleBlock>
+        <View style={{ marginBottom: PLAN.afterTabs }}>
+          <UnderlineTabs<PlanView> label="Plan view" options={VIEWS} value={view} onChange={setView} />
+        </View>
+        {view === 'week' ? (
+          <>
+            <View style={{ marginBottom: PLAN.afterStrip }}>
+              <WeekStrip days={days} selected={selected} today={today} entries={entries} onSelect={setSelected} />
+            </View>
+            <Text variant="dayName" accessibilityRole="header" testID="plan-day-heading" style={{ marginBottom: PLAN.afterDayName }}>
+              {weekdayName(fromISODate(selected))}
+              <Text variant="numberDay" colour="inkMuted">{` · ${shortDate(fromISODate(selected))}`}</Text>
+            </Text>
+            <DaySlots day={selected} entries={entriesFor(entries, selected)} past={past} />
+            {past ? null : <DaySuggestions day={selected} slot={firstOpenSlot(entries, selected)} />}
+            <ListSummaryCard
+              list={dayWeek.list}
+              meals={dayWeek.meals}
+              onOpen={() => {
+                setListWhich(weekStart(selected) === weeks.nextWeek ? 'next' : 'this');
+                setView('list');
+              }}
+            />
+          </>
+        ) : (
+          <View style={{ gap: PLAN.aisleGap }}>
+            <View style={{ flexDirection: 'row', gap: SPACE.xs }} accessibilityRole="radiogroup" accessibilityLabel="Which week">
+              {(['this', 'next'] as const).map((w) => (
+                <Pill
+                  key={w}
+                  label={`${w === 'this' ? 'This week' : 'Next week'} · ${weekRange(fromISODate(w === 'this' ? weeks.thisWeek : weeks.nextWeek))}`}
+                  on={listWhich === w}
+                  onPress={() => setListWhich(w)}
+                  testID={`segment-${w}`}
+                />
+              ))}
+            </View>
+            <ShoppingListView week={listWeek} weekLabel={listLabel} onBrowse={() => router.navigate('/browse')} />
+          </View>
+        )}
+      </View>
     </Screen>
   );
 }

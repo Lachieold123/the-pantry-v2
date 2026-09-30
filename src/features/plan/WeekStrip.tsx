@@ -9,6 +9,8 @@ import { makeStyles } from '@/ui/theme/makeStyles';
 import { PLAN, RADIUS, SPACE } from '@/ui/tokens/type';
 
 const WEEKDAY = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+/** Day cells that fit on a phone before the strip scrolls. */
+const VISIBLE = 5;
 
 type Props = { days: ISODate[]; selected: ISODate; today: ISODate; entries: readonly PlanEntry[]; onSelect: (day: ISODate) => void };
 
@@ -17,8 +19,9 @@ export function WeekStrip({ days, selected, today, entries, onSelect }: Props) {
   const scroll = useRef<ScrollView>(null);
   const index = Math.max(0, days.indexOf(today));
   useEffect(() => {
-    // Start with today in view rather than last Monday.
-    scroll.current?.scrollTo({ x: Math.max(0, index - 1) * (PLAN.dayWidth + SPACE.xs), animated: false });
+    // Open on Monday, as v1 did, unless today is too far along to be seen.
+    const late = Math.max(0, index - VISIBLE + 1);
+    scroll.current?.scrollTo({ x: late * (PLAN.dayWidth + SPACE.xs), animated: false });
   }, [index]);
   return (
     <ScrollView

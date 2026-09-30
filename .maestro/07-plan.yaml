@@ -42,11 +42,16 @@ appId: host.exp.Exponent
 - assertVisible: "1 of 21 meals"
 - takeScreenshot: plan-week
 
-# Change who it's for: tap the "+" end of the entry's stepper.
+# Change who it's for: the "For 4" pill opens a small sheet with a stepper.
 - tapOn:
     id: "plan-entry-.*-servings"
-    point: "88%,50%"
+- assertVisible:
+    id: "plan-servings-sheet"
+- tapOn:
+    id: "plan-entry-.*-stepper-plus"
 - takeScreenshot: plan-servings-changed
+- tapOn:
+    id: "plan-servings-done"
 
 # Remove, then undo
 - tapOn:
@@ -81,7 +86,8 @@ appId: host.exp.Exponent
     id: "plan-list-card"
 - assertVisible:
     id: "shopping-share"
-- assertVisible: ".* · 1 meal"
+- assertVisible:
+    id: "shopping-count"
 - takeScreenshot: shopping-list
 - tapOn:
     id: "shopping-item-guanciale"

@@ -74,6 +74,7 @@ export const TYPE = {
   kickerSmall: upper(sans(10, '800', 13, 2)),
   eyebrow: upper(sans(9.5, '800', 12, 1.8)),
   eyebrowLarge: upper(sans(10.5, '800', 13, 2)),
+  chipSmall: sans(11.5, '600', 15),
   eyebrowSpinner: upper(sans(10, '800', 13, 2.8)),
   reasonKey: upper(sans(10.5, '700', 13, 2.3)),
   hint: upper(sans(11, '600', 14, 0.7)),
@@ -191,7 +192,39 @@ export const RECIPE = {
 } as const;
 
 /** The Plan tab (spec §4.11–4.13): day cells, slot cards, suggestion cards, the progress track. */
-export const PLAN = { dayWidth: 52, dayHeight: 70, dot: 4, thumb: 56, suggestion: 158, progress: 4, slotPad: 10 } as const;
+/** The Plan tab (spec §4.11–4.13): v1's sizes and the space between its sections. */
+export const PLAN = {
+  dayWidth: 52,
+  dayHeight: 70,
+  dot: 4,
+  thumb: 56,
+  suggestion: 158,
+  progress: 4,
+  slotPad: 10,
+  /** Space under each part of the page, top to bottom. */
+  afterProgress: 14,
+  afterTabs: 20,
+  afterStrip: 22,
+  afterDayName: 10,
+  afterSlots: 28,
+  afterSectionHead: 14,
+  afterRail: 24,
+  /** Suggestion card body and the shopping card. */
+  cardBodyX: 12,
+  cardBodyTop: 10,
+  cardBodyBottom: 12,
+  listCardY: 14,
+  chipX: 10,
+  chipY: 5,
+  rowY: 14,
+  rowX: 16,
+  aisleGap: 18,
+  chipGap: 6,
+  pillY: 6,
+  /** The small gap between a card's title and its meta, and the servings pill's height padding. */
+  hair: 2,
+  addRowMin: 48,
+} as const;
 
 /** v1's cupboard "jar" chip (spec §4.7). */
 export const JAR = { gap: 7, padY: 6, padX: 9, initial: 12, matchBody: 14 } as const;
