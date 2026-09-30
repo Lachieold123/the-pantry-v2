@@ -2,14 +2,14 @@
 // the browse shelves or a two-column grid of results. The grid is a virtualised
 // list of rows, so the whole catalogue scrolls smoothly (audit PERF-17).
 import { useRouter } from 'expo-router';
-import { useMemo } from 'react';
+import { useCallback, useMemo } from 'react';
 import { FlatList, Pressable, View } from 'react-native';
 
-import { CATALOGUE } from '@/data/catalogue/catalogue';
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
-import { moods, presetActive, quickChips } from '@/domain/recipes/browse';
+import { moods, presetShown, quickChips, togglePreset } from '@/domain/recipes/browse';
 import { seasonOn } from '@/domain/recipes/search';
 import type { Recipe } from '@/domain/recipes/types';
+import { useAllRecipes } from '@/store/recipeBook';
 import { useRecipeFilters } from '@/store/recipeFilters';
 import { useBookmarks } from '@/store/saved';
 import { EmptyState } from '@/ui/patterns/EmptyState';
@@ -39,17 +39,30 @@ export function RecipesScreen() {
   const showAll = useRecipeFilters((s) => s.showAll);
   const setQuery = useRecipeFilters((s) => s.setQuery);
   const clear = useRecipeFilters((s) => s.clear);
+  const apply = useRecipeFilters((s) => s.apply);
+  const presetLabel = useRecipeFilters((s) => s.presetLabel);
   const bookmarks = useBookmarks();
+  const all = useAllRecipes();
   const { browsing, results, activeFilters } = useRecipeResults();
-  const open = (id: string) => router.push({ pathname: '/recipe/[id]', params: { id } });
+  // Stable, so the memoised cards don't all redraw on every keystroke.
+  const open = useCallback((id: string) => router.push({ pathname: '/recipe/[id]', params: { id } }), [router]);
   const season = seasonOn(new Date());
   // The named shelf or chip being shown, for the pill that says what you're looking at.
-  const shown = [...moods(season), ...quickChips(season)].find((p) => presetActive(p, filters, query));
+  const shown = presetShown([...moods(season), ...quickChips(season)], filters, query, presetLabel);
   const rows = useMemo(() => {
     const out: Recipe[][] = [];
     for (let i = 0; i < results.length; i += 2) out.push(results.slice(i, i + 2));
     return out;
   }, [results]);
+  const { isSaved, toggle } = bookmarks;
+  const renderRow = useCallback(
+    ({ item }: { item: Recipe[] }) => (
+      <View style={styles.inset}>
+        <RecipeRow row={item} imageFor={image} onOpen={open} isSaved={isSaved} onToggleSave={toggle} />
+      </View>
+    ),
+    [styles.inset, open, isSaved, toggle],
+  );
   const reset = () => {
     clear();
     setQuery('');
@@ -77,7 +90,7 @@ export function RecipesScreen() {
         <View style={styles.resultsBar}>
           {shown ? (
             <Pressable
-              onPress={reset}
+              onPress={() => apply(togglePreset(shown, filters, query))}
               style={styles.pill}
               accessibilityRole="button"
               accessibilityLabel={`${shown.label}, clear`}
@@ -98,7 +111,8 @@ export function RecipesScreen() {
     </View>
   );
 
-  if (CATALOGUE.length === 0) {
+  // Your own recipes count: a store build with no vetted recipes yet still shows them.
+  if (all.length === 0) {
     return (
       <View style={[styles.page, { backgroundColor: colours.bg }]}>
         <View style={styles.header}>
@@ -138,11 +152,7 @@ export function RecipesScreen() {
           </View>
         )
       }
-      renderItem={({ item }) => (
-        <View style={styles.inset}>
-          <RecipeRow row={item} imageFor={image} onOpen={open} isSaved={bookmarks.isSaved} onToggleSave={bookmarks.toggle} />
-        </View>
-      )}
+      renderItem={renderRow}
       ItemSeparatorComponent={RowGap}
     />
   );

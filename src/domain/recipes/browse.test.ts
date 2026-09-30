@@ -2,7 +2,17 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
 import { makeRecipe } from '../testing/fixtures';
-import { dailyPicks, moods, presetActive, quickChips, recipeOfTheDay, recipesFor, togglePreset } from './browse';
+import {
+  dailyPicks,
+  moods,
+  presetActive,
+  presetIsExactly,
+  presetShown,
+  quickChips,
+  recipeOfTheDay,
+  recipesFor,
+  togglePreset,
+} from './browse';
 import { NO_FILTERS } from './search';
 import type { Recipe } from './types';
 
@@ -32,6 +42,29 @@ describe('quick chips', () => {
   });
   it('a list filter counts as on only when it matches exactly', () => {
     assert.ok(!presetActive(chip('easy'), { ...NO_FILTERS, difficulties: ['easy', 'hard'] }, ''));
+  });
+});
+
+describe('the results pill (presetIsExactly)', () => {
+  it('names the preset only when nothing else is on', () => {
+    const on = togglePreset(chip('quick'), NO_FILTERS, '');
+    assert.ok(presetIsExactly(chip('quick'), on.filters, on.query));
+    assert.ok(!presetIsExactly(chip('quick'), { ...on.filters, diet: 'vegan' }, ''));
+    assert.ok(!presetIsExactly(chip('quick'), on.filters, 'chicken'));
+    assert.ok(presetIsExactly(chip('pasta'), NO_FILTERS, 'pasta'));
+    assert.ok(!presetIsExactly(chip('pasta'), { ...NO_FILTERS, onePot: true }, 'pasta'));
+  });
+  it('uses the label you tapped when a chip and a shelf set the same filters', () => {
+    const all = [...moods('spring'), ...chips];
+    const on = togglePreset(chip('quick'), NO_FILTERS, '');
+    assert.equal(presetShown(all, on.filters, on.query, '30 min')?.label, '30 min');
+    assert.equal(presetShown(all, on.filters, on.query, 'Under 30 minutes')?.label, 'Under 30 minutes');
+    assert.equal(presetShown(all, { ...on.filters, onePot: true }, on.query, '30 min'), undefined);
+  });
+  it('closing the pill turns off only its own preset', () => {
+    const on = togglePreset(chip('vegan'), NO_FILTERS, '');
+    const off = togglePreset(chip('vegan'), on.filters, on.query);
+    assert.deepEqual(off, { filters: NO_FILTERS, query: '' });
   });
 });
 

@@ -2,6 +2,7 @@
 // large = "recipe of the day" photo with the title on it, medium = the bordered
 // grid card, row = the trending row with a square thumbnail. Every card opens its
 // recipe; the bookmark disc appears only when the caller can actually save.
+import { memo } from 'react';
 import { Pressable, View } from 'react-native';
 
 import { formatMinutes, CUISINE_LABELS } from '@/domain/recipes/labels';
@@ -29,7 +30,7 @@ type Props = {
   testID?: string;
 };
 
-export function RecipeCard({ recipe, image, size, onPress, note, rank, saved, onToggleSave, testID }: Props) {
+function RecipeCardView({ recipe, image, size, onPress, note, rank, saved, onToggleSave, testID }: Props) {
   const styles = useStyles();
   const cuisine = CUISINE_LABELS[recipe.cuisine];
   const eyebrow = cuisineEyebrow(recipe.cuisine);
@@ -142,6 +143,10 @@ export function RecipeCard({ recipe, image, size, onPress, note, rank, saved, on
     </Pressable>
   );
 }
+
+// Memoised: a Browse grid holds dozens of cards, and a keystroke or bookmark
+// elsewhere shouldn't redraw every one of them.
+export const RecipeCard = memo(RecipeCardView);
 
 const useStyles = makeStyles(({ colours }) => ({
   row: {
