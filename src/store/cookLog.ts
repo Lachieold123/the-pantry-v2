@@ -23,6 +23,6 @@ export const useCookLog = create<CookLogState>()(
       },
       undo: (eventId) => set((s) => ({ log: s.log.filter((e) => e.id !== eventId) })),
     }),
-    { name: `${STORAGE_PREFIX}/cook-log`, version: 1, storage: persistentStorage, partialize: ({ log }) => ({ log }) },
+    { name: `${STORAGE_PREFIX}/cook-log`, version: 1, storage: persistentStorage(), partialize: ({ log }) => ({ log }) },
   ),
 );

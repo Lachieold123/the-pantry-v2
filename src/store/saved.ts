@@ -81,7 +81,7 @@ export const useSaved = create<SavedState>()(
     {
       name: `${STORAGE_PREFIX}/saved`,
       version: 1,
-      storage: persistentStorage,
+      storage: persistentStorage(),
       partialize: ({ bookmarks, collections, hidden, recentlyViewed }) => ({ bookmarks, collections, hidden, recentlyViewed }),
     },
   ),

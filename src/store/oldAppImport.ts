@@ -15,7 +15,7 @@ import { useCupboard } from './cupboard';
 import { useMyRecipes } from './myRecipes';
 import { usePreferences } from './preferences';
 import { useSaved } from './saved';
-import { persistentStorage, STORAGE_PREFIX } from './storage';
+import { allHydrated, persistentStorage, STORAGE_PREFIX } from './storage';
 
 const MARKER = `${STORAGE_PREFIX}/old-app-import`;
 
@@ -24,28 +24,17 @@ export const useWelcomeBack = create<{ message?: string | undefined; dismiss: ()
   persist((set) => ({ dismiss: () => set({ message: undefined }) }), {
     name: `${STORAGE_PREFIX}/welcome-back`,
     version: 1,
-    storage: persistentStorage,
+    storage: persistentStorage(),
     partialize: ({ message }) => ({ message }),
   }),
 );
-
-type Persisted = { persist: { hasHydrated: () => boolean; onFinishHydration: (fn: () => void) => () => void } };
-
-function hydrated(store: Persisted): Promise<void> {
-  if (store.persist.hasHydrated()) return Promise.resolve();
-  return new Promise((resolve) => {
-    const off = store.persist.onFinishHydration(() => {
-      off();
-      resolve();
-    });
-  });
-}
 
 const uniq = <T>(items: T[]) => [...new Set(items)];
 
 export async function importFromOldAppOnce(): Promise<void> {
   // Stores load asynchronously; writing before they finish would be overwritten by the load.
-  await Promise.all([useSaved, useCookLog, useCupboard, useMyRecipes, usePreferences, useWelcomeBack].map(hydrated));
+  // If they never finish loading, skip the import this launch rather than risk overwriting anything.
+  if ((await allHydrated([useSaved, useCookLog, useCupboard, useMyRecipes, usePreferences, useWelcomeBack])) === 'timed-out') return;
   if (await AsyncStorage.getItem(MARKER)) return;
 
   let raw: string | null = null;

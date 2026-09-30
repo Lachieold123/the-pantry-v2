@@ -44,6 +44,6 @@ export const useMyRecipes = create<MyRecipesState>()(
       },
       restore: (recipe) => set((s) => ({ recipes: { ...s.recipes, [recipe.id]: recipe } })),
     }),
-    { name: `${STORAGE_PREFIX}/my-recipes`, version: 1, storage: persistentStorage, partialize: ({ recipes }) => ({ recipes }) },
+    { name: `${STORAGE_PREFIX}/my-recipes`, version: 1, storage: persistentStorage(), partialize: ({ recipes }) => ({ recipes }) },
   ),
 );

@@ -25,7 +25,7 @@ export const useCupboard = create<CupboardState>()(
     {
       name: `${STORAGE_PREFIX}/cupboard`,
       version: 1,
-      storage: persistentStorage,
+      storage: persistentStorage(),
       partialize: ({ items, moveTickedToCupboard }) => ({ items, moveTickedToCupboard }),
     },
   ),

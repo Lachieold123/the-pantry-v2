@@ -5,16 +5,26 @@
 import { useFonts } from 'expo-font';
 import { useEffect, useState } from 'react';
 
-import { importFromOldAppOnce } from '@/store/oldAppImport';
-import { preferencesHydrated } from '@/store/preferences';
+import { useCookLog } from '@/store/cookLog';
+import { useCupboard } from '@/store/cupboard';
+import { useMyRecipes } from '@/store/myRecipes';
+import { importFromOldAppOnce, useWelcomeBack } from '@/store/oldAppImport';
+import { usePlan } from '@/store/plan';
+import { usePreferences } from '@/store/preferences';
+import { useSaved } from '@/store/saved';
+import { allHydrated } from '@/store/storage';
 import { FONT_FILES } from '@/ui/theme/fonts';
 
 async function prepare(): Promise<void> {
-  await preferencesHydrated();
+  // Every store, so nothing on the first screen jumps in late (audit PERF-7). The wait has
+  // a limit, so a store that never loads can't hold the splash screen up forever (ARCH-6).
+  const loaded = await allHydrated([usePreferences, usePlan, useSaved, useCookLog, useCupboard, useMyRecipes, useWelcomeBack]);
+  if (loaded === 'timed-out') console.warn('[startup] saved data took too long to load; opening anyway');
   try {
     await importFromOldAppOnce();
-  } catch {
+  } catch (e) {
     // A failed import must never stop the app opening.
+    console.warn('[startup] old-app import failed', e);
   }
 }
 

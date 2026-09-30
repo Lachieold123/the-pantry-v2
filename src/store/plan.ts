@@ -43,7 +43,7 @@ export const usePlan = create<PlanState>()(
     {
       name: `${STORAGE_PREFIX}/plan`,
       version: 1,
-      storage: persistentStorage,
+      storage: persistentStorage(),
       partialize: ({ entries, listEdits }) => ({ entries, listEdits }),
       // Old weeks are pruned when the app starts (D-009); the cook log keeps the history.
       onRehydrateStorage: () => (state) => {

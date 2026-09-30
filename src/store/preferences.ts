@@ -78,7 +78,7 @@ export const usePreferences = create<PreferencesState>()(
     {
       name: `${STORAGE_PREFIX}/preferences`,
       version: 3,
-      storage: persistentStorage,
+      storage: persistentStorage(),
       partialize: ({ appearance, highContrast, units, diet, avoid, cuisines, weeknight, sundayReminder, onboarded }) => ({
         appearance,
         highContrast,
@@ -104,14 +104,3 @@ export const usePreferences = create<PreferencesState>()(
     },
   ),
 );
-
-/** Resolves once saved preferences are loaded, so the first frame uses the right theme. */
-export function preferencesHydrated(): Promise<void> {
-  if (usePreferences.persist.hasHydrated()) return Promise.resolve();
-  return new Promise((resolve) => {
-    const unsubscribe = usePreferences.persist.onFinishHydration(() => {
-      unsubscribe();
-      resolve();
-    });
-  });
-}
