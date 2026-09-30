@@ -21,3 +21,20 @@ appId: host.exp.Exponent
       visible: "Continue"
     commands:
       - tapOn: "Continue"
+# Expo Go (SDK 57) floats a "tools" gear over the top-right corner, right on
+# top of the welcome screen's Skip, so taps meant for Skip open Expo's menu.
+# Open that menu once from the gear and turn the button off. clearState
+# brings it back on every launch, so this runs for every flow.
+- tapOn:
+    point: "89%,9.6%"
+- runFlow:
+    when:
+      visible: "Reload"
+    commands:
+      - scrollUntilVisible:
+          element: "Tools button"
+          direction: DOWN
+      - tapOn: "Tools button"
+      - tapOn: "Close"
+      - waitForAnimationToEnd:
+          timeout: 3000
