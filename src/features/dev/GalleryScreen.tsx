@@ -41,10 +41,10 @@ export function GalleryScreen() {
       <TitleBlock
         kicker="Development only"
         title="Gallery"
-        action={<IconButton icon="close" label="Close gallery" onPress={() => router.back()} />}
+        action={<IconButton icon="close" label="Close gallery" onPress={() => router.back()} testID="gallery-close" />}
       />
       <Segmented<Appearance> label="Theme" options={THEMES} value={appearance === 'dark' ? 'dark' : 'light'} onChange={setAppearance} />
-      <Switch label="High contrast" value={highContrast} onChange={setHighContrast} />
+      <Switch label="High contrast" value={highContrast} onChange={setHighContrast} testID="gallery-high-contrast" />
       <Block title="Type">
         <TypeScale />
       </Block>
@@ -53,13 +53,14 @@ export function GalleryScreen() {
       </Block>
       <Block title="Buttons">
         <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: SPACE.xs }}>
-          <Button label="Cook" kind="primary" onPress={() => toast({ message: 'Primary pressed' })} />
-          <Button label="Plan" onPress={() => toast({ message: 'Secondary pressed' })} />
-          <Button label="Clear filters" kind="quiet" onPress={() => toast({ message: 'Quiet pressed' })} />
+          <Button label="Cook" kind="primary" onPress={() => toast({ message: 'Primary pressed' })} testID="gallery-primary" />
+          <Button label="Plan" onPress={() => toast({ message: 'Secondary pressed' })} testID="gallery-secondary" />
+          <Button label="Clear filters" kind="quiet" onPress={() => toast({ message: 'Quiet pressed' })} testID="gallery-quiet" />
           <Button
             label="Delete collection"
             kind="destructive"
             onPress={() => toast({ message: 'Collection deleted', undo: () => toast({ message: 'Restored' }) })}
+            testID="gallery-destructive"
           />
           <Button label="Disabled" disabled onPress={() => undefined} />
           <Button label="Saving" busy onPress={() => undefined} />
@@ -69,9 +70,9 @@ export function GalleryScreen() {
         <Controls />
       </Block>
       <Block title="Rows">
-        <ListRow title="Weeknights" detail="12 recipes" onPress={() => toast({ message: 'Row pressed' })} />
+        <ListRow title="Weeknights" detail="12 recipes" onPress={() => toast({ message: 'Row pressed' })} testID="gallery-row-detail" />
         <Divider />
-        <ListRow title="Measurements" value="Metric" onPress={() => toast({ message: 'Row pressed' })} />
+        <ListRow title="Measurements" value="Metric" onPress={() => toast({ message: 'Row pressed' })} testID="gallery-row-value" />
       </Block>
       <Block title="Recipe cards">
         <Cards onOpen={(id) => router.push({ pathname: '/recipe/[id]', params: { id } })} />
@@ -85,6 +86,7 @@ export function GalleryScreen() {
           title="Nothing planned for tonight"
           body="Plan a few dinners and tonight's shows up here."
           action={{ label: 'Browse recipes', onPress: () => router.navigate('/browse') }}
+          testID="gallery-empty"
         />
         <ErrorState
           body="The recipe link couldn't be read. Check you're online, then try again."

@@ -70,13 +70,20 @@ export function SurpriseScreen() {
     <Sheet title="Surprise me" onClose={() => router.back()}>
       <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: SPACE.xs }}>
         {TIMES.map((t) => (
-          <Chip key={t.label} label={t.label} selected={time === t.value} onPress={() => setTime(t.value)} />
+          <Chip
+            key={t.label}
+            label={t.label}
+            selected={time === t.value}
+            onPress={() => setTime(t.value)}
+            testID={`surprise-time-${t.value ?? 'any'}`}
+          />
         ))}
       </View>
       {pool.length === 0 ? (
         <EmptyState
           title="Nothing fits right now"
           body="Your diet, things to avoid and time limit rule out every dinner. Try a longer time, or change them in Settings."
+          testID="surprise-empty"
         />
       ) : reel ? (
         <View
@@ -95,16 +102,24 @@ export function SurpriseScreen() {
             image={RECIPE_IMAGES[result.id]}
             size="large"
             onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: result.id } })}
+            testID="surprise-result"
           />
           <View style={{ flexDirection: 'row', gap: SPACE.xs }}>
             <View style={{ flex: 1 }}>
-              <Button label="Plan it" icon="plan" block onPress={() => open('/recipe/[id]/plan', result)} />
+              <Button label="Plan it" icon="plan" block onPress={() => open('/recipe/[id]/plan', result)} testID="surprise-plan" />
             </View>
             <View style={{ flex: 1 }}>
-              <Button label="Cook it" icon="timer" kind="primary" block onPress={() => open('/recipe/[id]/cook', result)} />
+              <Button
+                label="Cook it"
+                icon="timer"
+                kind="primary"
+                block
+                onPress={() => open('/recipe/[id]/cook', result)}
+                testID="surprise-cook"
+              />
             </View>
           </View>
-          <Button label="Spin again" kind="quiet" onPress={spin} />
+          <Button label="Spin again" kind="quiet" onPress={spin} testID="surprise-spin-again" />
         </Animated.View>
       ) : (
         <View style={{ gap: SPACE.md, paddingVertical: SPACE.xl }}>
@@ -112,7 +127,7 @@ export function SurpriseScreen() {
           <Text variant="body" colour="inkSoft">
             We’ll pick one of {pool.length} dinners that suit you, leaving out what’s already planned and what you’ve cooked lately.
           </Text>
-          <Button label="Spin" kind="primary" block onPress={spin} />
+          <Button label="Spin" kind="primary" block onPress={spin} testID="surprise-spin" />
         </View>
       )}
     </Sheet>

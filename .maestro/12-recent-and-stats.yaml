@@ -1,0 +1,66 @@
+# Recently viewed and Kitchen stats: empty, then filled by opening and cooking a recipe.
+appId: host.exp.Exponent
+---
+- launchApp:
+    clearState: true
+- openLink: exp://127.0.0.1:8081
+- runFlow: subflows/_setup_skip_welcome.yaml
+
+# Both start empty
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-recent"
+- assertVisible:
+    id: "recent-empty"
+- takeScreenshot: recent-empty
+- tapOn:
+    id: "back"
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-stats"
+- assertVisible:
+    id: "stats-empty"
+- takeScreenshot: stats-empty
+- tapOn:
+    id: "stats-empty-action"
+- assertVisible: "Discover"
+
+# Open a recipe and mark it cooked
+- runFlow:
+    file: subflows/_open_recipe.yaml
+    env:
+      QUERY: carbonara
+      RECIPE_ID: carbonara
+- tapOn:
+    id: "recipe-mark-cooked"
+- assertVisible: "Marked as cooked"
+- tapOn:
+    id: "back"
+
+# Recently viewed lists it and opens it
+- tapOn:
+    id: "header-menu"
+- assertVisible: "Recently viewed, 1"
+- tapOn:
+    id: "menu-recent"
+- assertVisible:
+    id: "recipe-card-carbonara"
+- takeScreenshot: recent-one
+- tapOn:
+    id: "recipe-card-carbonara"
+- assertVisible:
+    id: "recipe-screen"
+- tapOn:
+    id: "back"
+- tapOn:
+    id: "back"
+
+# Kitchen stats counts the cook
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-stats"
+- assertVisible: "Carbonara, .*, Cooked once"
+- takeScreenshot: stats-one

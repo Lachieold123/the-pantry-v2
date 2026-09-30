@@ -62,6 +62,7 @@ export function ShoppingListView({ week, weekLabel, onBrowse }: { week: ISODate;
         title="Your list is empty"
         body={`Plan a few meals for ${weekLabel.toLowerCase()} and everything you need appears here, sorted by aisle.`}
         action={{ label: 'Browse recipes', onPress: onBrowse }}
+        testID="shopping-empty"
       />
     );
   }
@@ -70,7 +71,7 @@ export function ShoppingListView({ week, weekLabel, onBrowse }: { week: ISODate;
     <View style={{ gap: SPACE.lg }}>
       <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
         <Text variant="meta">{toBuy === 0 ? 'All done' : `${toBuy} to buy for ${meals} ${meals === 1 ? 'meal' : 'meals'}`}</Text>
-        <Button label="Send list" icon="share" onPress={() => void share()} />
+        <Button label="Send list" icon="share" onPress={() => void share()} testID="shopping-share" />
       </View>
       {list.sections.map((section) => (
         <View key={section.aisle}>
@@ -83,9 +84,16 @@ export function ShoppingListView({ week, weekLabel, onBrowse }: { week: ISODate;
                   detail={item.amount}
                   checked={item.checked}
                   onToggle={() => tick(item)}
+                  testID={`shopping-item-${item.key}`}
                 />
               </View>
-              <IconButton icon="close" label={`Remove ${item.name}`} onPress={() => remove(item)} colour="inkMuted" />
+              <IconButton
+                icon="close"
+                label={`Remove ${item.name}`}
+                onPress={() => remove(item)}
+                colour="inkMuted"
+                testID={`shopping-item-${item.key}-remove`}
+              />
             </View>
           ))}
         </View>
@@ -101,6 +109,7 @@ export function ShoppingListView({ week, weekLabel, onBrowse }: { week: ISODate;
                 onToggle={() =>
                   edit((e) => ({ ...e, checkedExtras: checked ? e.checkedExtras.filter((i) => i !== x.id) : [...e.checkedExtras, x.id] }))
                 }
+                testID={`shopping-extra-${x.id}`}
               />
             </View>
             <IconButton
@@ -108,6 +117,7 @@ export function ShoppingListView({ week, weekLabel, onBrowse }: { week: ISODate;
               label={`Remove ${x.text}`}
               onPress={() => edit((e) => ({ ...e, extras: e.extras.filter((i) => i.id !== x.id) }))}
               colour="inkMuted"
+              testID={`shopping-extra-${x.id}-remove`}
             />
           </View>
         ))}
@@ -119,6 +129,7 @@ export function ShoppingListView({ week, weekLabel, onBrowse }: { week: ISODate;
           onSubmitEditing={addExtra}
           returnKeyType="done"
           maxLength={60}
+          testID="shopping-add-extra"
         />
       </View>
       {list.removedCount > 0 ? (
@@ -126,6 +137,7 @@ export function ShoppingListView({ week, weekLabel, onBrowse }: { week: ISODate;
           label={`Restore ${list.removedCount} removed ${list.removedCount === 1 ? 'item' : 'items'}`}
           kind="quiet"
           onPress={() => edit(restoreRemoved)}
+          testID="shopping-restore"
         />
       ) : null}
       {list.inCupboard.length > 0 ? (
@@ -152,6 +164,7 @@ export function ShoppingListView({ week, weekLabel, onBrowse }: { week: ISODate;
                     removeFromCupboard(item.key);
                     toast({ message: `${item.name} is back on the list`, undo: () => addToCupboard([item.key], 'manual') });
                   }}
+                  testID={`shopping-back-${item.key}`}
                 />
               );
             })}

@@ -67,6 +67,7 @@ export function PlanScreen() {
           title={week === 'this' ? 'Nothing planned yet' : 'Next week is clear'}
           body="Pick a few dinners and your shopping list writes itself, sorted by aisle."
           action={{ label: 'Browse recipes', onPress: () => router.navigate('/browse') }}
+          testID="plan-empty"
         />
       ) : null}
       {view === 'week'
@@ -80,7 +81,13 @@ export function PlanScreen() {
                   title={day === today ? `Today · ${longDate(fromISODate(day))}` : longDate(fromISODate(day))}
                   action={
                     past ? undefined : (
-                      <Button label="Add" icon="add" kind="quiet" onPress={() => router.push({ pathname: '/plan/add', params: { day } })} />
+                      <Button
+                        label="Add"
+                        icon="add"
+                        kind="quiet"
+                        onPress={() => router.push({ pathname: '/plan/add', params: { day } })}
+                        testID={`plan-add-${day}`}
+                      />
                     )
                   }
                 />

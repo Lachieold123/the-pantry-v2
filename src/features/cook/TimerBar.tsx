@@ -15,7 +15,12 @@ export function TimerBar({ timers, now, onDismiss }: { timers: CookTimer[]; now:
       {timers.map((t) => {
         const left = secondsLeft(t, now);
         return (
-          <View key={t.id} style={[styles.timer, left === 0 && styles.done]} accessibilityLiveRegion={left === 0 ? 'assertive' : 'none'}>
+          <View
+            key={t.id}
+            style={[styles.timer, left === 0 && styles.done]}
+            accessibilityLiveRegion={left === 0 ? 'assertive' : 'none'}
+            testID={`cook-timer-${t.id}`}
+          >
             <View style={{ flex: 1 }}>
               <Text variant="meta" colour={left === 0 ? 'onAccent' : 'inkMuted'}>
                 Step {t.stepIndex + 1} · {t.label}
@@ -29,6 +34,7 @@ export function TimerBar({ timers, now, onDismiss }: { timers: CookTimer[]; now:
               label={left === 0 ? 'Dismiss timer' : 'Cancel timer'}
               onPress={() => onDismiss(t.id)}
               colour={left === 0 ? 'onAccent' : 'inkMuted'}
+              testID={`cook-timer-${t.id}-dismiss`}
             />
           </View>
         );

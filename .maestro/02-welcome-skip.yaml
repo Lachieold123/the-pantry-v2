@@ -1,0 +1,25 @@
+# First launch: Skip goes straight to the app with a suggestion for tonight.
+appId: host.exp.Exponent
+---
+- launchApp:
+    clearState: true
+- openLink: exp://127.0.0.1:8081
+- runFlow: subflows/_setup_skip_welcome.yaml
+- assertVisible: 'How about this\?'
+- assertVisible:
+    id: "feed-have-tonight"
+- takeScreenshot: welcome-skipped-feed
+
+# Skipping counts as onboarded: a relaunch (state kept) opens on the Feed, not the quiz.
+- launchApp:
+    clearState: false
+- openLink: exp://127.0.0.1:8081
+- tapOn:
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: "feed-screen"
+    timeout: 60000
+- assertNotVisible:
+    id: "welcome-skip"

@@ -1,0 +1,104 @@
+# Cupboard: add by search, remove with undo, the "move ticked shopping here"
+# switch (and that ticking really moves it), and what-can-I-make results.
+appId: host.exp.Exponent
+---
+- launchApp:
+    clearState: true
+- openLink: exp://127.0.0.1:8081
+- runFlow: subflows/_setup_skip_welcome.yaml
+- tapOn:
+    id: "tab-cupboard"
+- assertVisible:
+    id: "cupboard-empty"
+- takeScreenshot: cupboard-empty
+
+# Add two ingredients by search
+- tapOn:
+    id: "cupboard-search"
+- inputText: "basmati"
+- tapOn:
+    id: "cupboard-suggestion-basmati-rice"
+- assertVisible:
+    id: "cupboard-item-basmati-rice"
+- tapOn:
+    id: "cupboard-search"
+- inputText: "egg"
+- tapOn:
+    id: "cupboard-suggestion-egg"
+- assertVisible: "In the cupboard · 2"
+# These pages don't hide the keyboard on a swipe, so tap plain text instead (it closes the keyboard).
+- tapOn: 'What do you have\?'
+- takeScreenshot: cupboard-two-items
+
+# Nonsense gets a plain "no such ingredient"
+- tapOn:
+    id: "cupboard-search"
+- inputText: "zzqq"
+- assertVisible: "No ingredient by that name.*"
+- tapOn:
+    id: "cupboard-search-clear"
+- tapOn: 'What do you have\?'
+
+# Remove, then undo
+- tapOn:
+    id: "cupboard-item-egg-remove"
+- assertVisible: "egg used up"
+- tapOn:
+    id: "toast-undo"
+- assertVisible:
+    id: "cupboard-item-egg"
+
+# The switch: off, then back on (it starts on).
+- scrollUntilVisible:
+    element:
+      id: "cupboard-move-ticked"
+    direction: DOWN
+- tapOn:
+    id: "cupboard-move-ticked"
+- takeScreenshot: cupboard-move-ticked-off
+- tapOn:
+    id: "cupboard-move-ticked"
+
+# What can I make? Open the first result.
+- scrollUntilVisible:
+    element:
+      id: "cupboard-make-.*"
+    direction: DOWN
+- takeScreenshot: cupboard-can-make
+- tapOn:
+    id: "cupboard-make-.*"
+    index: 0
+- assertVisible:
+    id: "recipe-screen"
+- tapOn:
+    id: "back"
+- assertVisible:
+    id: "cupboard-screen"
+
+# With the switch on, ticking an item on the shopping list moves it here.
+- runFlow:
+    file: subflows/_open_recipe.yaml
+    env:
+      QUERY: carbonara
+      RECIPE_ID: carbonara
+- tapOn:
+    id: "recipe-plan"
+- tapOn:
+    id: "plan-day-this-0"
+- tapOn:
+    id: "plan-confirm"
+- assertVisible: "Carbonara planned for tonight"
+- tapOn:
+    id: "back"
+- tapOn:
+    id: "tab-plan"
+- tapOn:
+    id: "tab-list"
+- tapOn:
+    id: "shopping-item-guanciale"
+- tapOn:
+    id: "tab-cupboard"
+- assertVisible:
+    id: "cupboard-item-guanciale"
+- assertVisible: "In the cupboard · 3"
+- takeScreenshot: cupboard-moved-from-list

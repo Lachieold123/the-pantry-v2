@@ -40,7 +40,13 @@ export function SearchField({ value, onChange, placeholder, label, onSubmit, tes
         style={styles.input}
       />
       {value ? (
-        <Pressable onPress={() => onChange('')} accessibilityRole="button" accessibilityLabel="Clear search" hitSlop={12}>
+        <Pressable
+          onPress={() => onChange('')}
+          accessibilityRole="button"
+          accessibilityLabel="Clear search"
+          hitSlop={12}
+          {...(testID ? { testID: `${testID}-clear` } : {})}
+        >
           <Icon name="clear" size={18} colour="inkMuted" />
         </Pressable>
       ) : null}

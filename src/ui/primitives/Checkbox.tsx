@@ -6,9 +6,9 @@ import { RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 import { Icon } from './Icon';
 import { Text } from './Text';
 
-type Props = { label: string; detail?: string; checked: boolean; onToggle: () => void };
+type Props = { label: string; detail?: string; checked: boolean; onToggle: () => void; testID?: string | undefined };
 
-export function Checkbox({ label, detail, checked, onToggle }: Props) {
+export function Checkbox({ label, detail, checked, onToggle, testID }: Props) {
   const styles = useStyles();
   return (
     <Pressable
@@ -16,6 +16,7 @@ export function Checkbox({ label, detail, checked, onToggle }: Props) {
       accessibilityRole="checkbox"
       accessibilityState={{ checked }}
       accessibilityLabel={detail ? `${label}, ${detail}` : label}
+      {...(testID ? { testID } : {})}
       style={styles.row}
     >
       <View style={[styles.box, checked && styles.boxOn]}>{checked ? <Icon name="check" size={14} colour="bg" /> : null}</View>

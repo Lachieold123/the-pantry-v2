@@ -1,0 +1,181 @@
+# The recipe page: save with undo, plan it, share, mark cooked with undo,
+# servings and units, tick an ingredient, and the "⋯" menu.
+# Uses Carbonara (written for 2, 200 g spaghetti).
+appId: host.exp.Exponent
+---
+- launchApp:
+    clearState: true
+- openLink: exp://127.0.0.1:8081
+- runFlow: subflows/_setup_skip_welcome.yaml
+- runFlow:
+    file: subflows/_open_recipe.yaml
+    env:
+      QUERY: carbonara
+      RECIPE_ID: carbonara
+- assertVisible: "Carbonara"
+- takeScreenshot: recipe-page
+
+# Save, undo, save again
+- tapOn:
+    id: "recipe-save"
+- assertVisible: "Saved to Cookmarks"
+- tapOn:
+    id: "toast-undo"
+- assertVisible: "Save"
+- tapOn:
+    id: "recipe-save"
+- assertVisible: "Saved"
+
+# Plan it: next week's first day, lunch, for 3.
+- tapOn:
+    id: "recipe-plan"
+- assertVisible: "Plan Carbonara"
+- tapOn:
+    id: "plan-day-next-0"
+- tapOn:
+    id: "segment-lunch"
+# The stepper is one adjustable control to iOS, so tap its "+" end.
+- tapOn:
+    id: "plan-servings"
+    point: "88%,50%"
+- assertVisible: "Add to .* lunch"
+- takeScreenshot: recipe-plan-sheet
+- tapOn:
+    id: "plan-confirm"
+- assertVisible: "Carbonara planned for .* lunch"
+
+# Share opens the system share sheet; close it and carry on.
+- tapOn:
+    id: "recipe-share"
+- waitForAnimationToEnd:
+    timeout: 3000
+- tapOn:
+    text: "Close"
+    optional: true
+- assertVisible:
+    id: "recipe-screen"
+
+# Mark cooked, undo
+- tapOn:
+    id: "recipe-mark-cooked"
+- assertVisible: "Marked as cooked"
+- tapOn:
+    id: "toast-undo"
+- assertVisible: "Mark as cooked"
+
+# Servings: up two, reset, up one, imperial, done.
+- tapOn:
+    id: "recipe-servings"
+- assertVisible:
+    id: "servings-sheet"
+- tapOn:
+    id: "servings-stepper"
+    point: "88%,50%"
+- tapOn:
+    id: "servings-stepper"
+    point: "88%,50%"
+- assertVisible: "Reset to 2"
+- tapOn:
+    id: "servings-reset"
+- assertNotVisible:
+    id: "servings-reset"
+- tapOn:
+    id: "servings-stepper"
+    point: "88%,50%"
+- tapOn:
+    id: "segment-imperial"
+- takeScreenshot: recipe-servings-sheet
+- tapOn:
+    id: "servings-done"
+- assertVisible: "Serves 3. Change servings and units"
+# Ingredients may sit below the fold, so scroll to them (this fails if they never appear).
+- scrollUntilVisible:
+    element:
+      text: "10.6 oz spaghetti.*"
+    direction: DOWN
+- takeScreenshot: recipe-imperial
+
+# And back to metric
+- scrollUntilVisible:
+    element:
+      id: "recipe-servings"
+    direction: UP
+- tapOn:
+    id: "recipe-servings"
+- tapOn:
+    id: "segment-metric"
+- tapOn:
+    id: "servings-done"
+- scrollUntilVisible:
+    element:
+      text: "300 g spaghetti.*"
+    direction: DOWN
+
+# Tick an ingredient off while gathering
+- scrollUntilVisible:
+    element:
+      id: "ingredient-0-1"
+    direction: DOWN
+- tapOn:
+    id: "ingredient-0-1"
+- takeScreenshot: recipe-ingredient-ticked
+
+# ⋯ → Add to a collection, making a new one there
+- tapOn:
+    id: "recipe-more"
+- tapOn:
+    id: "action-collect"
+- assertVisible: "Add to collection"
+- assertVisible: "No collections yet. Name your first one below."
+- tapOn:
+    id: "collect-new-name"
+- inputText: "Weeknights"
+- pressKey: Enter
+- assertVisible: "Weeknights, 1"
+- takeScreenshot: recipe-collect-sheet
+- tapOn:
+    id: "sheet-close"
+
+# ⋯ → Add to plan opens the plan sheet
+- tapOn:
+    id: "recipe-more"
+- tapOn:
+    id: "action-plan"
+- assertVisible: "Plan Carbonara"
+- tapOn:
+    id: "sheet-close"
+
+# ⋯ → Share
+- tapOn:
+    id: "recipe-more"
+- tapOn:
+    id: "action-share"
+- waitForAnimationToEnd:
+    timeout: 3000
+- tapOn:
+    text: "Close"
+    optional: true
+- assertVisible:
+    id: "recipe-screen"
+
+# ⋯ → Not for us, then Show this again
+- tapOn:
+    id: "recipe-more"
+- takeScreenshot: recipe-more-menu
+- tapOn:
+    id: "action-hide"
+- assertVisible: "We won.t suggest this again"
+- tapOn:
+    id: "recipe-more"
+- assertVisible: "Show this again"
+- tapOn:
+    id: "action-hide"
+- assertVisible: "Back in suggestions"
+
+- scrollUntilVisible:
+    element:
+      id: "recipe-save"
+    direction: UP
+- tapOn:
+    id: "back"
+- assertVisible: "Discover"

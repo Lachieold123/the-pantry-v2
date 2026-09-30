@@ -48,6 +48,7 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
           title="We couldn’t find that recipe"
           body="It may have been removed."
           action={{ label: 'Close', onPress: () => router.back() }}
+          testID="cook-missing"
         />
       </View>
     );
@@ -77,11 +78,16 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
   return (
     <View style={{ flex: 1, backgroundColor: colours.bg, paddingTop: insets.top, paddingBottom: Math.max(insets.bottom, SPACE.sm) }}>
       <View style={{ flexDirection: 'row', alignItems: 'center', paddingHorizontal: SPACE.xs }}>
-        <IconButton icon="close" label="Leave Cook Mode" onPress={() => router.back()} />
+        <IconButton icon="close" label="Leave Cook Mode" onPress={() => router.back()} testID="cook-close" />
         <Text variant="kicker" align="center" style={{ flex: 1 }} accessibilityLiveRegion="polite">
           Step {step + 1} of {total}
         </Text>
-        <Button label={showIngredients ? 'Steps' : 'Ingredients'} kind="quiet" onPress={() => setShowIngredients(!showIngredients)} />
+        <Button
+          label={showIngredients ? 'Steps' : 'Ingredients'}
+          kind="quiet"
+          onPress={() => setShowIngredients(!showIngredients)}
+          testID="cook-toggle-ingredients"
+        />
       </View>
       <View style={{ paddingHorizontal: SPACE.gutter, paddingTop: SPACE.xs }}>
         <TimerBar timers={timers} now={now} onDismiss={dismiss} />
@@ -99,11 +105,11 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
         // Tapping anywhere moves on for floury hands; VoiceOver uses the Next button instead, so the
         // step text and its timer buttons stay individually reachable.
         <GestureDetector gesture={swipe}>
-          <Pressable onPress={next} disabled={last} accessible={false} style={{ flex: 1 }}>
+          <Pressable onPress={next} disabled={last} accessible={false} style={{ flex: 1 }} testID="cook-step">
             <ScrollView contentContainerStyle={{ padding: SPACE.gutter, flexGrow: 1, justifyContent: 'center' }}>
               <Animated.View key={step} {...(reduceMotion ? {} : { entering: FadeIn.duration(MOTION.standard) })}>
                 <Text variant="numberItalic">{step + 1}</Text>
-                <Text variant="title" style={{ fontSize: 30, lineHeight: 42 }}>
+                <Text variant="title" style={{ fontSize: 30, lineHeight: 42 }} testID="cook-step-text">
                   {splitStepTimers(text).map((seg, i) =>
                     seg.type === 'text' ? (
                       seg.text
@@ -133,12 +139,12 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
         </GestureDetector>
       )}
       <View style={{ flexDirection: 'row', gap: SPACE.xs, paddingHorizontal: SPACE.gutter, paddingTop: SPACE.sm }}>
-        <Button label="Back" icon="back" onPress={previous} disabled={step === 0} />
+        <Button label="Back" icon="back" onPress={previous} disabled={step === 0} testID="cook-back" />
         <View style={{ flex: 1 }}>
           {last ? (
-            <Button label="Done" icon="check" kind="primary" block onPress={done} />
+            <Button label="Done" icon="check" kind="primary" block onPress={done} testID="cook-done" />
           ) : (
-            <Button label="Next step" kind="primary" block onPress={next} />
+            <Button label="Next step" kind="primary" block onPress={next} testID="cook-next" />
           )}
         </View>
       </View>

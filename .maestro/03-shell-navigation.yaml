@@ -1,0 +1,169 @@
+# The shell: tab bar, the side menu to every destination and back, "+" and the avatar.
+appId: host.exp.Exponent
+---
+- launchApp:
+    clearState: true
+- openLink: exp://127.0.0.1:8081
+- runFlow: subflows/_setup_skip_welcome.yaml
+
+# Tab bar
+- tapOn:
+    id: "tab-browse"
+- assertVisible: "Discover"
+- tapOn:
+    id: "tab-cupboard"
+- assertVisible:
+    id: "cupboard-screen"
+- tapOn:
+    id: "tab-plan"
+- assertVisible:
+    id: "plan-screen"
+- tapOn:
+    id: "tab-index"
+- assertVisible:
+    id: "feed-screen"
+
+# Side menu: open, look, close by tapping the backdrop beside the panel.
+- tapOn:
+    id: "header-menu"
+- assertVisible:
+    id: "menu-feed"
+- takeScreenshot: menu-open
+- tapOn:
+    id: "menu-close"
+    point: "95%,50%"
+- assertNotVisible:
+    id: "menu-feed"
+
+# Side menu: the tabs
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-browse"
+- assertVisible: "Discover"
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-cupboard"
+- assertVisible:
+    id: "cupboard-screen"
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-plan"
+- assertVisible:
+    id: "plan-screen"
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-feed"
+- assertVisible:
+    id: "feed-screen"
+
+# Side menu: the pages, each with a way back
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-saved"
+- assertVisible:
+    id: "cookmarks-screen"
+- tapOn:
+    id: "back"
+- assertVisible:
+    id: "feed-screen"
+
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-collections"
+- assertVisible:
+    id: "collections-screen"
+- tapOn:
+    id: "back"
+- assertVisible:
+    id: "feed-screen"
+
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-my-recipes"
+- assertVisible:
+    id: "my-recipes-screen"
+- tapOn:
+    id: "back"
+- assertVisible:
+    id: "feed-screen"
+
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-recent"
+- assertVisible:
+    id: "recent-screen"
+- tapOn:
+    id: "back"
+- assertVisible:
+    id: "feed-screen"
+
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-stats"
+- assertVisible:
+    id: "stats-screen"
+- tapOn:
+    id: "back"
+- assertVisible:
+    id: "feed-screen"
+
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-spinner"
+- assertVisible: 'Can.t decide\?'
+- tapOn:
+    id: "sheet-close"
+- assertVisible:
+    id: "feed-screen"
+
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-settings"
+- assertVisible:
+    id: "settings-screen"
+- tapOn:
+    id: "back"
+- assertVisible:
+    id: "feed-screen"
+
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-profile"
+- assertVisible:
+    id: "settings-screen"
+- tapOn:
+    id: "back"
+- assertVisible:
+    id: "feed-screen"
+
+# "+" opens the recipe editor; Cancel with nothing typed just closes it.
+- tapOn:
+    id: "tab-add"
+- assertVisible: "New recipe"
+- takeScreenshot: editor-new
+- tapOn:
+    id: "editor-cancel"
+- assertVisible:
+    id: "feed-screen"
+
+# The avatar opens Settings.
+- tapOn:
+    id: "header-avatar"
+- assertVisible:
+    id: "settings-screen"
+- tapOn:
+    id: "back"
+- assertVisible:
+    id: "feed-screen"

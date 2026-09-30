@@ -10,7 +10,7 @@ import { makeStyles } from '@/ui/theme/makeStyles';
 import { FIXED } from '@/ui/tokens/colour';
 import { RADIUS, SHADOW, SPACE } from '@/ui/tokens/type';
 
-type Props = { visible: boolean; onClose: () => void; title: string; children: ReactNode; testID?: string };
+type Props = { visible: boolean; onClose: () => void; title: string; children: ReactNode; testID?: string | undefined };
 
 export function ModalSheet({ visible, onClose, title, children, testID }: Props) {
   const styles = useStyles();
@@ -23,8 +23,13 @@ export function ModalSheet({ visible, onClose, title, children, testID }: Props)
           onPress={onClose}
           accessibilityRole="button"
           accessibilityLabel="Close"
+          testID="sheet-backdrop"
         />
-        <View style={[styles.sheet, { paddingBottom: Math.max(insets.bottom, SPACE.md) }]} testID={testID} accessibilityViewIsModal>
+        <View
+          style={[styles.sheet, { paddingBottom: Math.max(insets.bottom, SPACE.md) }]}
+          {...(testID ? { testID } : {})}
+          accessibilityViewIsModal
+        >
           <View style={styles.handle} />
           <Text variant="cardTitleMedium" align="center" accessibilityRole="header" style={styles.title}>
             {title}

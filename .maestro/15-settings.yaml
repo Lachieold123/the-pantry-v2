@@ -1,0 +1,94 @@
+# Settings: appearance, high contrast, units, diet and avoid, the Sunday
+# reminder, and retaking the taste quiz.
+appId: host.exp.Exponent
+---
+- launchApp:
+    clearState: true
+- openLink: exp://127.0.0.1:8081
+- runFlow: subflows/_setup_skip_welcome.yaml
+- tapOn:
+    id: "header-avatar"
+- assertVisible:
+    id: "settings-screen"
+- assertVisible: "Preferences"
+
+# Appearance: dark, light, then back to matching the phone
+- tapOn:
+    id: "segment-dark"
+- takeScreenshot: settings-dark
+- tapOn:
+    id: "segment-light"
+- takeScreenshot: settings-light
+- tapOn:
+    id: "segment-system"
+
+# High contrast on, then off
+- tapOn:
+    id: "settings-high-contrast"
+- takeScreenshot: settings-high-contrast
+- tapOn:
+    id: "settings-high-contrast"
+
+# Diet and things to avoid
+- tapOn:
+    id: "settings-diet-vegetarian"
+- tapOn:
+    id: "settings-avoid-nuts"
+- scrollUntilVisible:
+    element:
+      id: "settings-avoid-word"
+    direction: DOWN
+- tapOn:
+    id: "settings-avoid-word"
+- inputText: "coriander"
+- pressKey: Enter
+- scrollUntilVisible:
+    element:
+      id: "settings-avoid-custom-coriander"
+    direction: UP
+- assertVisible: "coriander ×"
+- takeScreenshot: settings-food
+- tapOn:
+    id: "settings-avoid-custom-coriander"
+- assertNotVisible:
+    id: "settings-avoid-custom-coriander"
+- tapOn:
+    id: "settings-avoid-nuts"
+- tapOn:
+    id: "settings-diet-everything"
+
+# Sunday reminder: iOS asks for permission the first time.
+- scrollUntilVisible:
+    element:
+      id: "settings-sunday-reminder"
+    direction: DOWN
+- tapOn:
+    id: "settings-sunday-reminder"
+- tapOn:
+    text: "Allow"
+    optional: true
+- takeScreenshot: settings-reminder
+
+# Units
+- scrollUntilVisible:
+    element:
+      id: "segment-imperial"
+    direction: DOWN
+- tapOn:
+    id: "segment-imperial"
+- takeScreenshot: settings-imperial
+- tapOn:
+    id: "segment-metric"
+
+# Retake the taste quiz, and skip out of it again
+- scrollUntilVisible:
+    element:
+      id: "settings-retake-quiz"
+    direction: UP
+- tapOn:
+    id: "settings-retake-quiz"
+- assertVisible: "Welcome to"
+- tapOn:
+    id: "welcome-skip"
+- assertVisible:
+    id: "feed-screen"

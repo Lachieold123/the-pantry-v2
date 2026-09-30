@@ -1,0 +1,79 @@
+# First launch: answer the taste quiz, plan tonight's pick, decline the reminder.
+appId: host.exp.Exponent
+---
+- launchApp:
+    clearState: true
+- openLink: exp://127.0.0.1:8081
+- runFlow: subflows/_wait_for_app.yaml
+- assertVisible: "Welcome to"
+- takeScreenshot: welcome-hello
+
+- tapOn:
+    id: "welcome-start"
+- assertVisible: 'What do you eat\?'
+- tapOn:
+    id: "diet-vegetarian"
+- tapOn:
+    id: "avoid-nuts"
+- takeScreenshot: welcome-eat
+- scrollUntilVisible:
+    element:
+      id: "welcome-next"
+- tapOn:
+    id: "welcome-next"
+
+# Back goes back a step and keeps the answers.
+- assertVisible: 'What do you love\?'
+- tapOn:
+    id: "welcome-back"
+- assertVisible: 'What do you eat\?'
+- scrollUntilVisible:
+    element:
+      id: "welcome-next"
+- tapOn:
+    id: "welcome-next"
+
+- assertVisible: 'What do you love\?'
+- tapOn:
+    id: "cuisine-italian"
+- scrollUntilVisible:
+    element:
+      id: "segment-under-45"
+- tapOn:
+    id: "segment-under-45"
+- takeScreenshot: welcome-like
+- scrollUntilVisible:
+    element:
+      id: "welcome-next"
+- tapOn:
+    id: "welcome-next"
+
+- assertVisible: "Tonight, for you"
+- assertVisible:
+    id: "welcome-pick"
+- takeScreenshot: welcome-reveal
+- runFlow:
+    when:
+      visible:
+        id: "welcome-show-others"
+    commands:
+      - tapOn:
+          id: "welcome-show-others"
+      - assertVisible:
+          id: "welcome-pick"
+- tapOn:
+    id: "welcome-cook-tonight"
+
+- assertVisible: 'A nudge on Sundays\?'
+- takeScreenshot: welcome-reminder
+- tapOn:
+    id: "welcome-not-now"
+
+# Tonight's pick is on the plan, so the Feed leads with it.
+- extendedWaitUntil:
+    visible:
+      id: "feed-screen"
+    timeout: 10000
+- assertVisible: "On for dinner"
+- assertVisible: "Plan, 1 planned"
+- takeScreenshot: welcome-done-feed

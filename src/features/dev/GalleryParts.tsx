@@ -66,14 +66,15 @@ export function Controls() {
   return (
     <View style={{ gap: SPACE.md }}>
       <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: SPACE.xs }}>
-        <Chip label="Vegetarian" selected={chip} onPress={() => setChip(!chip)} />
-        <Chip label="Under 30 min" selected={!chip} onPress={() => setChip(!chip)} />
+        <Chip label="Vegetarian" selected={chip} onPress={() => setChip(!chip)} testID="gallery-chip-vegetarian" />
+        <Chip label="Under 30 min" selected={!chip} onPress={() => setChip(!chip)} testID="gallery-chip-quick" />
       </View>
-      <Stepper label="Servings" value={servings} onChange={setServings} />
-      <Checkbox label="brown onion" detail="3" checked={ticked} onToggle={() => setTicked(!ticked)} />
-      <Switch label="Move ticked items to the cupboard" value={on} onChange={setOn} />
-      <TextField label="Collection name" placeholder="Weeknights" />
+      <Stepper label="Servings" value={servings} onChange={setServings} testID="gallery-stepper" />
+      <Checkbox label="brown onion" detail="3" checked={ticked} onToggle={() => setTicked(!ticked)} testID="gallery-checkbox" />
+      <Switch label="Move ticked items to the cupboard" value={on} onChange={setOn} testID="gallery-switch" />
+      <TextField label="Collection name" placeholder="Weeknights" testID="gallery-field" />
       <TextField
+        testID="gallery-field-error"
         label="Recipe link"
         defaultValue="not a link"
         error="That doesn't look like a web address. Check it starts with https://"
@@ -88,10 +89,22 @@ export function Cards({ onOpen }: { onOpen: (id: string) => void }) {
   if (!bolognese || !curry) return <Text variant="meta">{"Sample recipes aren't in this build."}</Text>;
   return (
     <View style={{ gap: SPACE.lg }}>
-      <RecipeCard recipe={bolognese} image={RECIPE_IMAGES[bolognese.id]} size="large" onPress={() => onOpen(bolognese.id)} />
+      <RecipeCard
+        recipe={bolognese}
+        image={RECIPE_IMAGES[bolognese.id]}
+        size="large"
+        onPress={() => onOpen(bolognese.id)}
+        testID="gallery-card-large"
+      />
       <View style={{ flexDirection: 'row', gap: SPACE.md }}>
         <View style={{ flex: 1 }}>
-          <RecipeCard recipe={curry} image={RECIPE_IMAGES[curry.id]} size="medium" onPress={() => onOpen(curry.id)} />
+          <RecipeCard
+            recipe={curry}
+            image={RECIPE_IMAGES[curry.id]}
+            size="medium"
+            onPress={() => onOpen(curry.id)}
+            testID="gallery-card-medium"
+          />
         </View>
         <View style={{ flex: 1 }}>
           <RecipeCard
@@ -99,10 +112,17 @@ export function Cards({ onOpen }: { onOpen: (id: string) => void }) {
             image={undefined}
             size="medium"
             onPress={() => onOpen(curry.id)}
+            testID="gallery-card-long-title"
           />
         </View>
       </View>
-      <RecipeCard recipe={bolognese} image={RECIPE_IMAGES[bolognese.id]} size="row" onPress={() => onOpen(bolognese.id)} />
+      <RecipeCard
+        recipe={bolognese}
+        image={RECIPE_IMAGES[bolognese.id]}
+        size="row"
+        onPress={() => onOpen(bolognese.id)}
+        testID="gallery-card-row"
+      />
     </View>
   );
 }

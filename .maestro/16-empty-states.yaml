@@ -1,0 +1,99 @@
+# Every empty state on a fresh install says what's missing and offers a next step.
+appId: host.exp.Exponent
+---
+- launchApp:
+    clearState: true
+- openLink: exp://127.0.0.1:8081
+- runFlow: subflows/_setup_skip_welcome.yaml
+
+# Cookmarks
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-saved"
+- assertVisible:
+    id: "cookmarks-empty"
+- assertVisible:
+    id: "cookmarks-empty-action"
+- takeScreenshot: empty-cookmarks
+- tapOn:
+    id: "back"
+
+# Plan: this week, next week, and the shopping list
+- tapOn:
+    id: "tab-plan"
+- assertVisible:
+    id: "plan-empty"
+- assertVisible: "Nothing planned yet"
+- takeScreenshot: empty-plan
+- tapOn:
+    id: "segment-next"
+- assertVisible: "Next week is clear"
+- tapOn:
+    id: "tab-list"
+- assertVisible:
+    id: "shopping-empty"
+- takeScreenshot: empty-shopping-list
+- tapOn:
+    id: "shopping-empty-action"
+- assertVisible: "Discover"
+
+# Cupboard
+- tapOn:
+    id: "tab-cupboard"
+- assertVisible:
+    id: "cupboard-empty"
+- assertVisible: "Your cupboard is empty.*"
+- takeScreenshot: empty-cupboard
+
+# The library pages
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-collections"
+- assertVisible:
+    id: "collections-empty"
+- takeScreenshot: empty-collections
+- tapOn:
+    id: "back"
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-my-recipes"
+- assertVisible:
+    id: "mine-empty"
+- takeScreenshot: empty-my-recipes
+- tapOn:
+    id: "back"
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-recent"
+- assertVisible:
+    id: "recent-empty"
+- takeScreenshot: empty-recent
+- tapOn:
+    id: "back"
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-stats"
+- assertVisible:
+    id: "stats-empty"
+- takeScreenshot: empty-stats
+- tapOn:
+    id: "back"
+
+# Browse with nothing matching
+- tapOn:
+    id: "tab-browse"
+- tapOn:
+    id: "browse-search"
+- inputText: "zzzzqqq"
+- assertVisible:
+    id: "browse-empty"
+- takeScreenshot: empty-browse
+- tapOn:
+    id: "browse-empty-action"
+- assertNotVisible:
+    id: "browse-empty"

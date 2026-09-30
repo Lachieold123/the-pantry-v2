@@ -1,0 +1,53 @@
+# Feed: have tonight's suggestion, see it on the plan badge, start cooking; Surprise me.
+appId: host.exp.Exponent
+---
+- launchApp:
+    clearState: true
+- openLink: exp://127.0.0.1:8081
+- runFlow: subflows/_setup_skip_welcome.yaml
+- assertVisible: 'How about this\?'
+- assertVisible:
+    id: "feed-tonight"
+- takeScreenshot: feed-home
+
+- tapOn:
+    id: "feed-have-tonight"
+- assertVisible: ".* is on for tonight"
+# The Plan tab's badge now counts one planned meal.
+- assertVisible: "Plan, 1 planned"
+- assertVisible: "On for dinner"
+- takeScreenshot: feed-tonight-planned
+
+# Start cooking goes straight into Cook Mode for tonight's dinner.
+- tapOn:
+    id: "feed-cook"
+- assertVisible: "Step 1 of .*"
+- takeScreenshot: feed-cook-mode
+- tapOn:
+    id: "cook-close"
+- assertVisible:
+    id: "feed-screen"
+
+# Tonight's card opens the recipe.
+- tapOn:
+    id: "feed-tonight"
+- assertVisible:
+    id: "recipe-screen"
+- tapOn:
+    id: "back"
+
+# Surprise me
+- tapOn:
+    id: "feed-surprise"
+- assertVisible: 'Can.t decide\?'
+- tapOn:
+    id: "surprise-spin"
+- extendedWaitUntil:
+    visible:
+      id: "surprise-result"
+    timeout: 10000
+- takeScreenshot: feed-surprise-result
+- tapOn:
+    id: "sheet-close"
+- assertVisible:
+    id: "feed-screen"

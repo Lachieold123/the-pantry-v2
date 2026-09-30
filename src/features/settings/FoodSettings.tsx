@@ -37,16 +37,22 @@ export function FoodSettings() {
       <SectionHeader title="What you eat" />
       <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: SPACE.xs }}>
         {DIETS.map((d) => (
-          <Chip key={d} label={DIET_PREFERENCE_LABELS[d]} selected={diet === d} onPress={() => setDiet(d)} />
+          <Chip key={d} label={DIET_PREFERENCE_LABELS[d]} selected={diet === d} onPress={() => setDiet(d)} testID={`settings-diet-${d}`} />
         ))}
       </View>
       <SectionHeader title="Ingredients to avoid" />
       <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: SPACE.xs }}>
         {OPTIONS.map((o) => (
-          <Chip key={o} label={AVOID_LABELS[o]} selected={avoid.options.includes(o)} onPress={() => toggleAvoidOption(o)} />
+          <Chip
+            key={o}
+            label={AVOID_LABELS[o]}
+            selected={avoid.options.includes(o)}
+            onPress={() => toggleAvoidOption(o)}
+            testID={`settings-avoid-${o}`}
+          />
         ))}
         {avoid.custom.map((c) => (
-          <Chip key={c} label={`${c} ×`} selected onPress={() => removeAvoidWord(c)} />
+          <Chip key={c} label={`${c} ×`} selected onPress={() => removeAvoidWord(c)} testID={`settings-avoid-custom-${c}`} />
         ))}
       </View>
       <TextField
@@ -57,6 +63,7 @@ export function FoodSettings() {
         onSubmitEditing={add}
         returnKeyType="done"
         maxLength={30}
+        testID="settings-avoid-word"
       />
       <Text variant="meta">
         Recipes using these won’t be suggested. This is a convenience, not an allergy filter: always check labels and recipes yourself.

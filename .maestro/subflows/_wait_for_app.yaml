@@ -1,0 +1,23 @@
+# Waits for The Pantry to finish loading in Expo Go after `openLink`.
+# Only used straight after `launchApp: clearState: true`, so the app always
+# opens on the welcome screen.
+appId: host.exp.Exponent
+---
+# iOS asks before a link opens another app ("Open in Expo Go?"). OS dialog, so optional.
+- tapOn:
+    text: "Open"
+    optional: true
+# The first bundle can take a while to build.
+- extendedWaitUntil:
+    visible:
+      id: "welcome-skip"
+    timeout: 240000
+# Expo Go shows its developer-menu introduction on a fresh install. It is
+# Expo Go's own overlay, not the app, so close it only if it is there.
+- waitForAnimationToEnd:
+    timeout: 3000
+- runFlow:
+    when:
+      visible: "Continue"
+    commands:
+      - tapOn: "Continue"

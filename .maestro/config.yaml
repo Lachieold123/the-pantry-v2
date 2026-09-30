@@ -1,0 +1,25 @@
+# Maestro workspace settings for The Pantry v2.
+# Every numbered flow starts from a fresh install (clearState), so each one
+# stands alone; the order below just runs them in the order a person meets them.
+# Subflows live in subflows/ and are not run on their own.
+flows:
+  - "*"
+executionOrder:
+  continueOnFailure: true
+  flowsOrder:
+    - 01-welcome-complete
+    - 02-welcome-skip
+    - 03-shell-navigation
+    - 04-feed
+    - 05-browse
+    - 06-recipe-page
+    - 07-plan
+    - 08-cupboard
+    - 09-cookmarks
+    - 10-collections
+    - 11-my-recipes
+    - 12-recent-and-stats
+    - 13-cook-mode
+    - 14-surprise
+    - 15-settings
+    - 16-empty-states

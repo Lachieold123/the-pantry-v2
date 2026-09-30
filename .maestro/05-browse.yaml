@@ -1,0 +1,171 @@
+# Browse: every quick chip, a mood shelf, see all, a misspelt search, the
+# filters sheet, saving from a grid card, and the no-results state.
+appId: host.exp.Exponent
+---
+- launchApp:
+    clearState: true
+- openLink: exp://127.0.0.1:8081
+- runFlow: subflows/_setup_skip_welcome.yaml
+- tapOn:
+    id: "tab-browse"
+- assertVisible: "Discover"
+- assertVisible:
+    id: "browse-featured"
+- takeScreenshot: browse-home
+
+# Every quick chip turns on, shows the results pill, and the pill clears it.
+- runFlow:
+    file: subflows/_browse_toggle_chip.yaml
+    env:
+      CHIP: chip-pasta
+- runFlow:
+    file: subflows/_browse_toggle_chip.yaml
+    env:
+      CHIP: chip-curry
+- runFlow:
+    file: subflows/_browse_toggle_chip.yaml
+    env:
+      CHIP: chip-quick
+- runFlow:
+    file: subflows/_browse_toggle_chip.yaml
+    env:
+      CHIP: chip-vegetarian
+- runFlow:
+    file: subflows/_browse_toggle_chip.yaml
+    env:
+      CHIP: chip-vegan
+- runFlow:
+    file: subflows/_browse_toggle_chip.yaml
+    env:
+      CHIP: chip-one-pot
+- runFlow:
+    file: subflows/_browse_toggle_chip.yaml
+    env:
+      CHIP: chip-season
+- runFlow:
+    file: subflows/_browse_toggle_chip.yaml
+    env:
+      CHIP: chip-soup
+- runFlow:
+    file: subflows/_browse_toggle_chip.yaml
+    env:
+      CHIP: chip-easy
+- runFlow:
+    file: subflows/_browse_toggle_chip.yaml
+    env:
+      CHIP: chip-breakfast
+
+# A mood shelf
+- scrollUntilVisible:
+    element:
+      id: "mood-weeknight"
+    direction: DOWN
+- tapOn:
+    id: "mood-weeknight"
+- scrollUntilVisible:
+    element:
+      id: "browse-pill"
+    direction: UP
+- assertVisible: "Easy weeknights, clear"
+- takeScreenshot: browse-mood
+- tapOn:
+    id: "browse-clear"
+- assertNotVisible:
+    id: "browse-pill"
+
+# See all
+- scrollUntilVisible:
+    element:
+      id: "browse-see-all"
+    direction: DOWN
+    timeout: 30000
+- tapOn:
+    id: "browse-see-all"
+- scrollUntilVisible:
+    element:
+      id: "browse-clear"
+    direction: UP
+- assertVisible: '\d+ recipes'
+- takeScreenshot: browse-see-all
+- tapOn:
+    id: "browse-clear"
+- assertNotVisible:
+    id: "browse-clear"
+
+# Search forgives a typo.
+- tapOn:
+    id: "browse-search"
+- inputText: "chiken"
+- assertVisible: ".*Chicken.*"
+- assertNotVisible: "No recipes match"
+- takeScreenshot: browse-search-typo
+- tapOn:
+    id: "browse-search-clear"
+- hideKeyboard
+
+# Filters sheet: diet, time, one-pot, clear all, then one filter applied.
+- tapOn:
+    id: "browse-filters"
+- assertVisible: "Refine your rotation"
+- tapOn:
+    id: "filter-diet-vegetarian"
+- tapOn:
+    id: "filter-time-under-30"
+- scrollUntilVisible:
+    element:
+      id: "filter-one-pot"
+    direction: DOWN
+- tapOn:
+    id: "filter-one-pot"
+- assertVisible: 'Show \d+ recipes?'
+- takeScreenshot: browse-filters
+- tapOn:
+    id: "filters-clear"
+- assertVisible: "Show all recipes"
+- scrollUntilVisible:
+    element:
+      id: "filter-diet-vegan"
+    direction: UP
+- tapOn:
+    id: "filter-diet-vegan"
+- tapOn:
+    id: "filters-show"
+- assertVisible: "Filters, 1 on"
+- takeScreenshot: browse-filtered
+- tapOn:
+    id: "browse-clear"
+- assertVisible: "Filters"
+
+# Save from a grid card: the bookmark disc sits in the card's top-right corner.
+# The disc is inside the card, and iOS can hide a control nested in another
+# tappable one from tests, so tap that spot on the card.
+- tapOn:
+    id: "browse-search"
+- inputText: "carbonara"
+- tapOn:
+    id: "recipe-card-carbonara"
+    point: "87%,10%"
+- tapOn:
+    id: "browse-search-clear"
+- hideKeyboard
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-saved"
+- assertVisible:
+    id: "recipe-card-carbonara"
+- takeScreenshot: browse-saved-from-grid
+- tapOn:
+    id: "back"
+
+# No results: say so, and offer a way out.
+- tapOn:
+    id: "tab-browse"
+- tapOn:
+    id: "browse-search"
+- inputText: "zzzzqqq"
+- assertVisible: "No recipes match"
+- takeScreenshot: browse-no-results
+- tapOn:
+    id: "browse-empty-action"
+- assertNotVisible: "No recipes match"

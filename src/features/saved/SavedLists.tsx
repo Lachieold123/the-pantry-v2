@@ -59,6 +59,7 @@ export function BookmarksList() {
       title="Nothing saved yet"
       body="Tap Save on any recipe and it waits for you here."
       action={{ label: 'Browse recipes', onPress: () => router.navigate('/browse') }}
+      testID="cookmarks-empty"
     />
   );
 }
@@ -74,6 +75,7 @@ export function RecentList() {
       title="Nothing viewed yet"
       body="Recipes you open show up here, so the one you were looking at is easy to find again."
       action={{ label: 'Browse recipes', onPress: () => router.navigate('/browse') }}
+      testID="recent-empty"
     />
   );
 }
@@ -100,13 +102,18 @@ export function CollectionsList() {
                 title={c.name}
                 detail={c.recipeIds.length === 1 ? '1 recipe' : `${c.recipeIds.length} recipes`}
                 onPress={() => router.push({ pathname: '/collections/[id]', params: { id: c.id } })}
+                testID={`collection-row-${c.id}`}
               />
               <Divider />
             </View>
           ))}
         </View>
       ) : (
-        <EmptyState title="No collections yet" body="Group recipes your way: weeknights, for guests, the ones the kids will eat." />
+        <EmptyState
+          title="No collections yet"
+          body="Group recipes your way: weeknights, for guests, the ones the kids will eat."
+          testID="collections-empty"
+        />
       )}
       <View style={{ gap: SPACE.sm }}>
         <TextField
@@ -117,9 +124,10 @@ export function CollectionsList() {
           onSubmitEditing={create}
           returnKeyType="done"
           maxLength={40}
+          testID="collections-new-name"
           {...(duplicate && trimmed ? { error: 'You already have a collection with that name.' } : {})}
         />
-        <Button label="Create collection" onPress={create} disabled={!trimmed || duplicate} />
+        <Button label="Create collection" onPress={create} disabled={!trimmed || duplicate} testID="collections-create" />
       </View>
     </View>
   );
@@ -137,6 +145,7 @@ export function CookedList() {
         title="Nothing cooked yet"
         body="Tap Done when you finish a recipe in Cook Mode, and it goes here."
         action={{ label: 'Browse recipes', onPress: () => router.navigate('/browse') }}
+        testID="stats-empty"
       />
     );
   }

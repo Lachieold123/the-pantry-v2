@@ -12,14 +12,17 @@ type Props = {
   body: string;
   action?: { label: string; onPress: () => void } | undefined;
   look?: 'standard' | 'library';
+  /** The block's id; its button gets `-action` after it. */
+  testID?: string | undefined;
 };
 
-export function EmptyState({ title, body, action, look = 'standard' }: Props) {
+export function EmptyState({ title, body, action, look = 'standard', testID }: Props) {
   return (
     <View
       style={{ alignItems: 'center', gap: SPACE.xs, paddingHorizontal: SPACE.xl, paddingVertical: SPACE.xxl }}
       accessible={!action}
       accessibilityLabel={`${title}. ${body}`}
+      {...(testID ? { testID } : {})}
     >
       <Text variant={look === 'library' ? 'dayName' : 'headingSans'} align="center">
         {title}
@@ -29,7 +32,7 @@ export function EmptyState({ title, body, action, look = 'standard' }: Props) {
       </Text>
       {action ? (
         <View style={{ paddingTop: SPACE.sm }}>
-          <Button label={action.label} onPress={action.onPress} kind="primary" />
+          <Button label={action.label} onPress={action.onPress} kind="primary" testID={testID ? `${testID}-action` : undefined} />
         </View>
       ) : null}
     </View>

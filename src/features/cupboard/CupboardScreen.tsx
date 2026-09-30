@@ -76,7 +76,13 @@ export function CupboardScreen() {
         subtitle="Tell us what you have. We'll surface recipes that use the most of it."
       />
       <View style={{ gap: SPACE.sm }}>
-        <SearchField value={query} onChange={setQuery} placeholder="Add an ingredient" label="Add an ingredient to the cupboard" />
+        <SearchField
+          value={query}
+          onChange={setQuery}
+          placeholder="Add an ingredient"
+          label="Add an ingredient to the cupboard"
+          testID="cupboard-search"
+        />
         {query.trim() && suggestions.length === 0 ? (
           <Text variant="meta">No ingredient by that name. Try a simpler word, like “rice”.</Text>
         ) : null}
@@ -90,6 +96,7 @@ export function CupboardScreen() {
                 add([d.id], 'manual');
                 setQuery('');
               }}
+              testID={`cupboard-suggestion-${d.id}`}
             />
           ))}
         </View>
@@ -98,13 +105,14 @@ export function CupboardScreen() {
         <EmptyState
           title="Your cupboard is empty"
           body="Add what you already have, and The Pantry won't put it on your shopping list. Salt, pepper, oil and water are always assumed."
+          testID="cupboard-empty"
         />
       ) : (
         <View>
           <SectionHeader title={`In the cupboard · ${listed.length}`} />
           {listed.map((d) => (
             <View key={d.id}>
-              <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+              <View style={{ flexDirection: 'row', alignItems: 'center' }} testID={`cupboard-item-${d.id}`}>
                 <Text variant="body" style={{ flex: 1 }}>
                   {d.name}
                 </Text>
@@ -116,6 +124,7 @@ export function CupboardScreen() {
                     remove(d.id);
                     toast({ message: `${d.name} used up`, undo: () => add([d.id], 'manual') });
                   }}
+                  testID={`cupboard-item-${d.id}-remove`}
                 />
               </View>
               <Divider />
@@ -128,6 +137,7 @@ export function CupboardScreen() {
         detail="When you tick something off the list, it goes into the cupboard"
         value={moveTickedToCupboard}
         onChange={setMoveTicked}
+        testID="cupboard-move-ticked"
       />
       {canMake.length ? (
         <View style={{ gap: SPACE.sm }}>
@@ -140,6 +150,7 @@ export function CupboardScreen() {
               size="row"
               note={coverage.missing.length === 0 ? 'You have everything' : `You have ${coverage.have} of ${coverage.needed}`}
               onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: recipe.id } })}
+              testID={`cupboard-make-${recipe.id}`}
             />
           ))}
         </View>

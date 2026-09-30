@@ -44,7 +44,13 @@ export function EditorDetails({ draft, update, cuisineProblem, mealProblem }: Pr
         <SectionHeader title="Cuisine" />
         <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: SPACE.xs }}>
           {CUISINES.map((c) => (
-            <Chip key={c} label={CUISINE_LABELS[c]} selected={draft.cuisine === c} onPress={() => update('cuisine', c)} />
+            <Chip
+              key={c}
+              label={CUISINE_LABELS[c]}
+              selected={draft.cuisine === c}
+              onPress={() => update('cuisine', c)}
+              testID={`editor-cuisine-${c}`}
+            />
           ))}
         </View>
         {cuisineProblem ? (
@@ -58,7 +64,13 @@ export function EditorDetails({ draft, update, cuisineProblem, mealProblem }: Pr
         <SectionHeader title="Good for" />
         <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: SPACE.xs }}>
           {MEAL_TYPES.map((m) => (
-            <Chip key={m} label={MEAL_TYPE_LABELS[m]} selected={draft.mealTypes.includes(m)} onPress={() => toggleMeal(m)} />
+            <Chip
+              key={m}
+              label={MEAL_TYPE_LABELS[m]}
+              selected={draft.mealTypes.includes(m)}
+              onPress={() => toggleMeal(m)}
+              testID={`editor-meal-${m}`}
+            />
           ))}
         </View>
         {mealProblem ? (
@@ -80,6 +92,7 @@ export function EditorDetails({ draft, update, cuisineProblem, mealProblem }: Pr
               onChangeText={(t) => update('prepMinutes', minutesFrom(t))}
               maxLength={4}
               selectTextOnFocus
+              testID="editor-prep"
             />
           </View>
           <View style={{ flex: 1 }}>
@@ -90,11 +103,19 @@ export function EditorDetails({ draft, update, cuisineProblem, mealProblem }: Pr
               onChangeText={(t) => update('cookMinutes', minutesFrom(t))}
               maxLength={4}
               selectTextOnFocus
+              testID="editor-cook"
             />
           </View>
         </View>
-        <Stepper label="Serves" value={draft.servings} onChange={(n) => update('servings', n)} max={50} format={(n) => `Serves ${n}`} />
-        <Switch label="One pot or pan" value={draft.onePot} onChange={(v) => update('onePot', v)} />
+        <Stepper
+          label="Serves"
+          value={draft.servings}
+          onChange={(n) => update('servings', n)}
+          max={50}
+          format={(n) => `Serves ${n}`}
+          testID="editor-servings"
+        />
+        <Switch label="One pot or pan" value={draft.onePot} onChange={(v) => update('onePot', v)} testID="editor-one-pot" />
       </View>
     </View>
   );

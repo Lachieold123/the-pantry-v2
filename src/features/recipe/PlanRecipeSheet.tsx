@@ -63,15 +63,22 @@ export function PlanRecipeSheet({ id }: { id: string }) {
   return (
     <Sheet title={`Plan ${recipe.title}`} onClose={() => router.back()}>
       {[
-        { title: 'This week', list: days.thisWeek },
-        { title: 'Next week', list: days.nextWeek },
+        { title: 'This week', key: 'this', list: days.thisWeek },
+        { title: 'Next week', key: 'next', list: days.nextWeek },
       ].map((w) =>
         w.list.length ? (
           <View key={w.title} style={{ gap: SPACE.sm }}>
             <SectionHeader title={w.title} />
             <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: SPACE.xs }}>
-              {w.list.map((d) => (
-                <Chip key={d.iso} label={d.short} selected={d.iso === day} onPress={() => setDay(d.iso)} />
+              {/* Ids by position, so a test can always pick "today" (this-0) or next week's first day (next-0). */}
+              {w.list.map((d, i) => (
+                <Chip
+                  key={d.iso}
+                  label={d.short}
+                  selected={d.iso === day}
+                  onPress={() => setDay(d.iso)}
+                  testID={`plan-day-${w.key}-${i}`}
+                />
               ))}
             </View>
           </View>
@@ -83,9 +90,15 @@ export function PlanRecipeSheet({ id }: { id: string }) {
       </View>
       <View style={{ gap: SPACE.sm }}>
         <SectionHeader title="For" />
-        <Stepper label="Servings" value={servings} onChange={setServings} format={(n) => `${n} ${n === 1 ? 'person' : 'people'}`} />
+        <Stepper
+          label="Servings"
+          value={servings}
+          onChange={setServings}
+          format={(n) => `${n} ${n === 1 ? 'person' : 'people'}`}
+          testID="plan-servings"
+        />
       </View>
-      <Button label={`Add to ${where}`} kind="primary" block onPress={add} />
+      <Button label={`Add to ${where}`} kind="primary" block onPress={add} testID="plan-confirm" />
     </Sheet>
   );
 }

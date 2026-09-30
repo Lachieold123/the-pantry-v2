@@ -29,7 +29,7 @@ export function PlanEntryRow({ entry, past }: { entry: PlanEntry; past: boolean 
         <Text variant="meta" style={{ flex: 1 }}>
           {SLOT_NAMES[entry.slot]}: a recipe that’s no longer available
         </Text>
-        <IconButton icon="close" label="Remove from plan" onPress={() => removeEntry(entry.id)} />
+        <IconButton icon="close" label="Remove from plan" onPress={() => removeEntry(entry.id)} testID={`plan-entry-${entry.id}-remove`} />
       </View>
     );
   }
@@ -47,11 +47,24 @@ export function PlanEntryRow({ entry, past }: { entry: PlanEntry; past: boolean 
         size="row"
         note={past ? `${SLOT_NAMES[entry.slot]} · for ${entry.servings}` : SLOT_NAMES[entry.slot]}
         onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: recipe.id } })}
+        testID={`plan-entry-${entry.id}`}
       />
       {past ? null : (
         <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingLeft: 72 + SPACE.md }}>
-          <Stepper label="People" value={entry.servings} onChange={(n) => setServings(entry.id, n)} format={(n) => `For ${n}`} />
-          <IconButton icon="close" label={`Take ${recipe.title} off the plan`} onPress={remove} colour="inkMuted" />
+          <Stepper
+            label="People"
+            value={entry.servings}
+            onChange={(n) => setServings(entry.id, n)}
+            format={(n) => `For ${n}`}
+            testID={`plan-entry-${entry.id}-servings`}
+          />
+          <IconButton
+            icon="close"
+            label={`Take ${recipe.title} off the plan`}
+            onPress={remove}
+            colour="inkMuted"
+            testID={`plan-entry-${entry.id}-remove`}
+          />
         </View>
       )}
     </View>

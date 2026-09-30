@@ -12,6 +12,7 @@ export function NotFoundScreen() {
         title="This page doesn't exist"
         body="The link may be old or mistyped."
         action={{ label: 'Go to Today', onPress: () => router.replace('/') }}
+        testID="not-found"
       />
     </Screen>
   );

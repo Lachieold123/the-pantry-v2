@@ -25,8 +25,9 @@ export function MineList() {
           title="Your own recipes live here"
           body="Write down the ones you already cook, or bring one in from a website. They scale, go on the shopping list and work in Cook Mode like any other."
           action={{ label: 'Write a recipe', onPress: write }}
+          testID="mine-empty"
         />
-        <Button label="Import from a link" icon="link" kind="quiet" onPress={importLink} />
+        <Button label="Import from a link" icon="link" kind="quiet" onPress={importLink} testID="mine-import" />
       </View>
     );
   }
@@ -36,14 +37,20 @@ export function MineList() {
   return (
     <View style={{ gap: SPACE.lg }}>
       <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: SPACE.sm }}>
-        <Button label="Write a recipe" icon="add" onPress={write} />
-        <Button label="Import from a link" icon="link" kind="quiet" onPress={importLink} />
+        <Button label="Write a recipe" icon="add" onPress={write} testID="mine-write" />
+        <Button label="Import from a link" icon="link" kind="quiet" onPress={importLink} testID="mine-import" />
       </View>
       {drafts.length ? (
         <View style={{ gap: SPACE.xs }}>
           <SectionHeader title="To finish" />
           {drafts.map((d) => (
-            <ListRow key={d.id} title={d.draft.title} detail={d.problems[0]?.message ?? 'Needs a little more'} onPress={() => edit(d.id)} />
+            <ListRow
+              key={d.id}
+              title={d.draft.title}
+              detail={d.problems[0]?.message ?? 'Needs a little more'}
+              onPress={() => edit(d.id)}
+              testID={`mine-draft-${d.id}`}
+            />
           ))}
         </View>
       ) : null}
@@ -58,6 +65,7 @@ export function MineList() {
                 image={undefined}
                 size="row"
                 onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: m.id } })}
+                testID={`mine-recipe-${m.id}`}
               />
             ) : null,
           )}

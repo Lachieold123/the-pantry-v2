@@ -6,9 +6,9 @@ import { FIXED } from '@/ui/tokens/colour';
 import { SPACE, TAP_TARGET } from '@/ui/tokens/type';
 import { Text } from './Text';
 
-type Props = { label: string; detail?: string; value: boolean; onChange: (value: boolean) => void };
+type Props = { label: string; detail?: string; value: boolean; onChange: (value: boolean) => void; testID?: string | undefined };
 
-export function Switch({ label, detail, value, onChange }: Props) {
+export function Switch({ label, detail, value, onChange, testID }: Props) {
   const { colours } = useTheme();
   return (
     <View style={{ minHeight: TAP_TARGET, flexDirection: 'row', alignItems: 'center', gap: SPACE.md, paddingVertical: SPACE.xs }}>
@@ -20,6 +20,7 @@ export function Switch({ label, detail, value, onChange }: Props) {
         value={value}
         onValueChange={onChange}
         accessibilityLabel={label}
+        {...(testID ? { testID } : {})}
         trackColor={{ true: colours.accent, false: colours.bgSoft }}
         thumbColor={FIXED.onPhoto}
         ios_backgroundColor={colours.bgSoft}

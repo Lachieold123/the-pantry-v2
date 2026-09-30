@@ -67,6 +67,7 @@ function ToastView({ toast, onDone }: { toast: ToastState; onDone: () => void })
             }}
             accessibilityRole="button"
             accessibilityLabel="Undo"
+            testID="toast-undo"
             style={styles.undo}
           >
             <Text variant="toast" tone={FIXED.toastInk} style={{ textDecorationLine: 'underline' }}>

@@ -52,11 +52,22 @@ export function SettingsScreen() {
       <View style={{ gap: SPACE.sm }}>
         <SectionHeader title="Appearance" />
         <Segmented<Appearance> label="Appearance" options={APPEARANCE} value={appearance} onChange={setAppearance} />
-        <Switch label="High contrast" detail="Stronger text and dividers" value={highContrast} onChange={setHighContrast} />
+        <Switch
+          label="High contrast"
+          detail="Stronger text and dividers"
+          value={highContrast}
+          onChange={setHighContrast}
+          testID="settings-high-contrast"
+        />
       </View>
       <Divider />
       <FoodSettings />
-      <ListRow title="Retake the taste quiz" detail="Cuisines you love and weeknight time" onPress={() => router.push('/welcome')} />
+      <ListRow
+        title="Retake the taste quiz"
+        detail="Cuisines you love and weeknight time"
+        onPress={() => router.push('/welcome')}
+        testID="settings-retake-quiz"
+      />
       <Divider />
       <View style={{ gap: SPACE.sm }}>
         <SectionHeader title="Reminders" />
@@ -65,6 +76,7 @@ export function SettingsScreen() {
           detail="4pm on Sundays, and nothing else"
           value={sundayReminder}
           onChange={(on) => void toggleReminder(on)}
+          testID="settings-sunday-reminder"
         />
       </View>
       <Divider />
@@ -78,7 +90,12 @@ export function SettingsScreen() {
         <SectionHeader title="About" />
         <Text variant="meta">The Pantry {Constants.expoConfig?.version ?? ''}</Text>
         {__DEV__ ? (
-          <ListRow title="Design gallery" detail="Every component in every state" onPress={() => router.push('/dev/gallery')} />
+          <ListRow
+            title="Design gallery"
+            detail="Every component in every state"
+            onPress={() => router.push('/dev/gallery')}
+            testID="settings-gallery"
+          />
         ) : null}
       </View>
     </Screen>

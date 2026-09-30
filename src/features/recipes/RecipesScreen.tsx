@@ -133,6 +133,7 @@ export function RecipesScreen() {
               title="No recipes match"
               body={activeFilters ? 'Try loosening a filter or two.' : 'Check the spelling, or search for an ingredient instead.'}
               action={{ label: 'Clear search and filters', onPress: reset }}
+              testID="browse-empty"
             />
           </View>
         )

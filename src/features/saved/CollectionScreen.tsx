@@ -31,11 +31,12 @@ export function CollectionScreen({ id }: { id: string }) {
   if (!collection) {
     return (
       <Screen>
-        <IconButton icon="back" label="Back" onPress={() => router.back()} />
+        <IconButton icon="back" label="Back" onPress={() => router.back()} testID="back" />
         <EmptyState
           title="This collection is gone"
           body="It may have been deleted."
           action={{ label: 'Back to Saved', onPress: () => router.back() }}
+          testID="collection-missing"
         />
       </Screen>
     );
@@ -46,8 +47,8 @@ export function CollectionScreen({ id }: { id: string }) {
   const recipes = collection.recipeIds.map(getRecipe).filter((r): r is Recipe => r !== undefined);
 
   return (
-    <Screen>
-      <IconButton icon="back" label="Back" onPress={() => router.back()} />
+    <Screen testID="collection-screen">
+      <IconButton icon="back" label="Back" onPress={() => router.back()} testID="back" />
       <TitleBlock kicker="Collection" title={collection.name} />
       {editing ? (
         <View style={{ gap: SPACE.sm }}>
@@ -57,6 +58,7 @@ export function CollectionScreen({ id }: { id: string }) {
             onChangeText={setName}
             maxLength={40}
             autoFocus
+            testID="collection-name"
             {...(clash ? { error: 'You already have a collection with that name.' } : {})}
           />
           <View style={{ flexDirection: 'row', gap: SPACE.xs }}>
@@ -68,6 +70,7 @@ export function CollectionScreen({ id }: { id: string }) {
                 rename(id, trimmed);
                 setEditing(false);
               }}
+              testID="collection-save-name"
             />
             <Button
               label="Cancel"
@@ -76,12 +79,13 @@ export function CollectionScreen({ id }: { id: string }) {
                 setName(collection.name);
                 setEditing(false);
               }}
+              testID="collection-cancel-rename"
             />
           </View>
         </View>
       ) : (
         <View style={{ flexDirection: 'row', gap: SPACE.xs }}>
-          <Button label="Rename" onPress={() => setEditing(true)} />
+          <Button label="Rename" onPress={() => setEditing(true)} testID="collection-rename" />
           <Button
             label="Delete"
             kind="destructive"
@@ -90,6 +94,7 @@ export function CollectionScreen({ id }: { id: string }) {
               router.back();
               if (removed) toast({ message: `${removed.name} deleted`, undo: () => restore(removed) });
             }}
+            testID="collection-delete"
           />
         </View>
       )}
@@ -100,6 +105,7 @@ export function CollectionScreen({ id }: { id: string }) {
           title="Nothing in here yet"
           body="Open any recipe and tap Add to collection."
           action={{ label: 'Browse recipes', onPress: () => router.navigate('/browse') }}
+          testID="collection-empty"
         />
       )}
     </Screen>

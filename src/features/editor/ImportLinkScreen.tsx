@@ -78,11 +78,19 @@ export function ImportLinkScreen() {
         returnKeyType="go"
         onSubmitEditing={() => void run()}
         error={failure ? MESSAGES[failure] : undefined}
+        testID="import-link"
       />
       <View style={{ gap: SPACE.sm }}>
-        <Button label="Import" kind="primary" busy={busy} disabled={!link.trim() || busy} onPress={() => void run()} />
+        <Button
+          label="Import"
+          kind="primary"
+          busy={busy}
+          disabled={!link.trim() || busy}
+          onPress={() => void run()}
+          testID="import-submit"
+        />
         {failure === 'unreachable' || failure === 'no-recipe' ? (
-          <Button label="Write it in by hand" onPress={() => router.replace('/my-recipe/edit')} />
+          <Button label="Write it in by hand" onPress={() => router.replace('/my-recipe/edit')} testID="import-write-by-hand" />
         ) : null}
       </View>
     </Sheet>

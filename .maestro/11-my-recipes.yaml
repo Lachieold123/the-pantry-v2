@@ -1,0 +1,141 @@
+# My recipes: import rejects a bad link; write a recipe (validation first),
+# save, open, edit, delete with undo; cancelling with changes asks first.
+appId: host.exp.Exponent
+---
+- launchApp:
+    clearState: true
+- openLink: exp://127.0.0.1:8081
+- runFlow: subflows/_setup_skip_welcome.yaml
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-my-recipes"
+- assertVisible:
+    id: "mine-empty"
+- takeScreenshot: my-recipes-empty
+
+# Import from a link: a bad link is refused in plain words.
+- tapOn:
+    id: "mine-import"
+- assertVisible: "Import from a link"
+- tapOn:
+    id: "import-link"
+- inputText: "not a link"
+- tapOn:
+    id: "import-submit"
+- assertVisible: ".*look like a web link.*"
+- takeScreenshot: import-bad-link
+- tapOn:
+    id: "sheet-close"
+
+# Write a recipe: saving empty shows what's missing.
+- tapOn:
+    id: "mine-empty-action"
+- assertVisible: "New recipe"
+- tapOn:
+    id: "editor-save"
+- assertVisible: "Give it a name."
+- assertVisible: "Almost there: .*"
+- takeScreenshot: editor-validation
+
+- tapOn:
+    id: "editor-title"
+- inputText: "Nans lentil soup"
+# These pages don't hide the keyboard on a swipe, so tap plain text instead (it closes the keyboard).
+- tapOn: "New recipe"
+- scrollUntilVisible:
+    element:
+      id: "editor-ingredients"
+    direction: DOWN
+- tapOn:
+    id: "editor-ingredients"
+- inputText: "1 cup red lentils\n1 brown onion, diced"
+- tapOn: "One per line.*"
+- scrollUntilVisible:
+    element:
+      id: "editor-method"
+    direction: DOWN
+- tapOn:
+    id: "editor-method"
+- inputText: "Simmer the lentils with the onion until soft."
+- tapOn: "One step per line."
+- scrollUntilVisible:
+    element:
+      id: "editor-cuisine-british"
+    direction: DOWN
+- tapOn:
+    id: "editor-cuisine-british"
+- takeScreenshot: editor-filled
+- scrollUntilVisible:
+    element:
+      id: "editor-save"
+    direction: UP
+- tapOn:
+    id: "editor-save"
+- assertVisible: "Recipe saved"
+- assertVisible:
+    id: "recipe-screen"
+- assertVisible: "Nans lentil soup"
+- takeScreenshot: my-recipe-page
+
+# Edit it
+- tapOn:
+    id: "recipe-edit"
+- assertVisible: "Edit recipe"
+- tapOn:
+    id: "editor-summary"
+- inputText: "Warming and cheap"
+- tapOn: "Edit recipe"
+- tapOn:
+    id: "editor-save"
+- assertVisible: "Changes saved"
+- assertVisible: "Warming and cheap"
+
+# Back to the list, open it from there
+- tapOn:
+    id: "back"
+- assertVisible:
+    id: "my-recipes-screen"
+- tapOn:
+    id: "mine-recipe-.*"
+- assertVisible:
+    id: "recipe-screen"
+
+# Delete (asks first), then undo
+- tapOn:
+    id: "recipe-edit"
+- scrollUntilVisible:
+    element:
+      id: "editor-delete"
+    direction: DOWN
+- tapOn:
+    id: "editor-delete"
+- assertVisible: "Delete this recipe.*"
+- tapOn:
+    id: "editor-confirm-delete"
+- assertVisible: "Nans lentil soup deleted"
+- tapOn:
+    id: "toast-undo"
+- assertVisible:
+    id: "mine-recipe-.*"
+- takeScreenshot: my-recipes-one
+
+# Cancelling with changes asks before throwing them away.
+- tapOn:
+    id: "mine-write"
+- tapOn:
+    id: "editor-title"
+- inputText: "Test"
+- tapOn: "New recipe"
+- tapOn:
+    id: "editor-cancel"
+- assertVisible: 'Throw away your changes\?'
+- tapOn:
+    id: "editor-keep-editing"
+- assertNotVisible: 'Throw away your changes\?'
+- tapOn:
+    id: "editor-cancel"
+- tapOn:
+    id: "editor-discard"
+- assertVisible:
+    id: "my-recipes-screen"
