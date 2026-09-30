@@ -1,5 +1,5 @@
 # First launch: answer the taste quiz, plan tonight's pick, decline the reminder.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

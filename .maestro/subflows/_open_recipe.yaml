@@ -1,7 +1,7 @@
 # Opens a recipe by searching for it on Browse.
 # env: QUERY (what to type), RECIPE_ID (the card to tap).
 # Start from any tab screen (the tab bar must be showing).
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - tapOn:
     id: "tab-browse"

@@ -9,6 +9,7 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import type { PersistStorage, StorageValue } from 'zustand/middleware';
 
+import { logger } from '@/lib/logger';
 import { backupKey, backupsToPrune, isNewerThan, mergeSaved, readSaved, withTimeout } from '@/lib/savedState';
 
 export const STORAGE_PREFIX = 'the-pantry-v2';
@@ -42,7 +43,7 @@ export function onStorageProblem(listener: (problem: StorageProblem) => void): (
 }
 
 function report(problem: StorageProblem, why: string, error?: unknown) {
-  console.warn(`[storage] ${problem.key}: ${why}`, error ?? '');
+  logger.warn('storage', `${problem.key}: ${why}`, error);
   listeners.forEach((fn) => fn(problem));
 }
 
@@ -68,13 +69,15 @@ async function write(name: string, json: string): Promise<void> {
 async function backUp(name: string, raw: string): Promise<boolean> {
   try {
     await AsyncStorage.multiRemove(backupsToPrune(await AsyncStorage.getAllKeys(), name));
-  } catch {
+  } catch (e) {
     // Pruning is housekeeping; a failure here mustn't stop the backup.
+    logger.warn('storage', `couldn't prune old backups of ${name}`, e);
   }
   try {
     await AsyncStorage.setItem(backupKey(name, Date.now()), raw);
     return true;
-  } catch {
+  } catch (e) {
+    logger.warn('storage', `couldn't back up ${name}`, e);
     return false;
   }
 }
@@ -94,7 +97,7 @@ const storage: PersistStorage<unknown> = {
       lock(name, 'read-only', `was ${problem} and couldn't be backed up`);
       return null;
     }
-    if (problem) console.warn(`[storage] ${name} was ${problem}; kept a copy and started fresh`);
+    if (problem) logger.warn('storage', `${name} was ${problem}; kept a copy and started fresh`);
     const version = versions.get(name);
     if (version !== undefined && isNewerThan(saved, version)) {
       // Loaded as-is (the field guards drop anything this build can't read) but never written back.
@@ -117,7 +120,7 @@ const storage: PersistStorage<unknown> = {
     if (state === 'read-only') return;
     if (state === 'read-failed') {
       // Try the read again: if there's now nothing saved, there's nothing to clobber.
-      const again = await AsyncStorage.getItem(name).catch(() => undefined);
+      const again = await AsyncStorage.getItem(name).catch((e: unknown) => logger.warn('storage', `${name} still can't be read`, e));
       if (again !== null || keys.get(name) !== 'read-failed') return;
       keys.set(name, 'writable');
     }

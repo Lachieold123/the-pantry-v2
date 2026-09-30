@@ -1,5 +1,5 @@
 // The days a recipe can be planned on: the rest of this week, and next week.
-import { addDays, toISODate, visibleWeeks, weekDays, type ISODate } from '@/domain/plan/week';
+import { addDays, toISODate, visibleWeeks, weekDays, type ISODate } from './week';
 
 const SHORT = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const LONG = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];

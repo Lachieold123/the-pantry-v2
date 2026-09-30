@@ -1,6 +1,6 @@
 // The header on the four tabs: menu, the wordmark, and the avatar (spec §4.1).
-// The inbox button joins it with social (P9); until then there is nothing to
-// open, so it isn't shown (no dead buttons).
+// There's no inbox button yet: without accounts there is nothing to open, and
+// a button that does nothing is a dead button.
 import { useRouter } from 'expo-router';
 import { Pressable, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';

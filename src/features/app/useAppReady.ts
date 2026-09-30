@@ -5,6 +5,7 @@
 import { useFonts } from 'expo-font';
 import { useEffect, useState } from 'react';
 
+import { logger } from '@/lib/logger';
 import { useCookLog } from '@/store/cookLog';
 import { useCupboard } from '@/store/cupboard';
 import { useMyRecipes } from '@/store/myRecipes';
@@ -21,12 +22,12 @@ async function prepare(): Promise<void> {
   // This is the only wait (audit F217): a store still loading after it can't save until its
   // read finishes, so opening early never overwrites anything (see store/storage).
   const loaded = await allHydrated([usePreferences, usePlan, useSaved, useCookLog, useCupboard, useMyRecipes, useWelcomeBack]);
-  if (loaded === 'timed-out') console.warn('[startup] saved data took too long to load; opening anyway');
+  if (loaded === 'timed-out') logger.warn('startup', 'saved data took too long to load; opening anyway');
   try {
     await importFromOldAppOnce();
   } catch (e) {
     // A failed import must never stop the app opening.
-    console.warn('[startup] old-app import failed', e);
+    logger.warn('startup', 'old-app import failed', e);
   }
 }
 

@@ -4,9 +4,15 @@ name: CI
 on:
   push:
   pull_request:
+# A newer push to the same branch makes an older run pointless, so cancel it.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   check:
     runs-on: ubuntu-latest
+    # A hung Metro or test run shouldn't burn an hour of runner time.
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -15,10 +21,14 @@ jobs:
           cache: npm
       - run: npm ci --no-audit --no-fund
       - run: npm run typecheck
+      # The script passes --max-warnings 0, so a warning fails CI too.
       - run: npm run lint
       - run: npm run format:check
+      - run: npm run test:runners
+      # test:domain sets TZ=Australia/Sydney itself, so date tests run where Lachlan lives.
       - run: npm run test:domain
-        env:
-          TZ: Australia/Sydney
       - run: npm run test:ui
       - run: npm run catalogue:check-ingredients
+      # Bundles the app the way a release build does, so a missing asset or a
+      # module that only breaks in the iOS bundle fails here, not on EAS.
+      - run: npx expo export --platform ios

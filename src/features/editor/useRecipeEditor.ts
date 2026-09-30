@@ -8,7 +8,7 @@ import { INGREDIENTS } from '@/data/catalogue/catalogue';
 import { buildRecipe, EMPTY_DRAFT, myRecipeId, type RecipeDraft } from '@/domain/recipes/draft';
 import { useMyRecipes } from '@/store/myRecipes';
 import { useToast } from '@/ui/patterns/Toast';
-import { usePendingImport } from './pendingImport';
+import { usePendingImport } from '@/store/pendingImport';
 
 export function useRecipeEditor(id: string | undefined, fromImport: boolean) {
   const router = useRouter();

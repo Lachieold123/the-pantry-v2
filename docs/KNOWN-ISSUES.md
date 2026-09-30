@@ -15,4 +15,5 @@ Things deliberately deferred. Each has a phase in which it gets fixed. Nothing h
 | K-11 | On the web preview, multi-line fields (ingredients, method) scroll inside a fixed box instead of growing. | Web-only; on phones they grow with the text. | Phase 9 if it shows on a phone |
 | K-12 | The old-app import is tested with sample data only. It needs one run on a phone that has the old TestFlight build installed (map Phase 7 "done when"). | Needs Lachlan's phone. | Before first TestFlight |
 | K-13 | An imported recipe keeps the link it came from, but the recipe page doesn't show it yet (only the editor does). | Small; wants a design for credits on your own recipes. | Phase 9 |
+| K-14 | A store build shows only vetted recipes, and none are vetted yet, so a production build would ship an empty app (F68). `VETTED_MIN=<n> npm run catalogue:check-vetted` prints the vetted count and fails below n. It isn't wired into `eas.json` as a build hook yet. | Lachlan picks n; then run it before every `eas build --profile production` (or make it an EAS pre-build hook). | Before first TestFlight |
 

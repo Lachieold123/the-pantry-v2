@@ -1,15 +1,16 @@
 #!/usr/bin/env bash
-# Runs the whole Maestro suite (.maestro/) against The Pantry in Expo Go on the
-# iOS Simulator. Double-click it in Finder, or run it from Terminal.
+# Runs the whole Maestro suite (.maestro/) against The Pantry's development
+# build on the iOS Simulator (the same build CLAUDE.md uses on the phone). Double-click it in Finder, or run it from Terminal.
 #
 # What it does:
 #   1. checks Xcode's simulator tools and the Maestro CLI are installed
 #   2. boots an iPhone simulator if none is running
 #   3. installs npm packages if they're missing
-#   4. starts its own Metro (port 8082, no questions asked) with Expo Go, and waits for it
-#   5. runs every flow and writes the report and screenshots to
+#   4. checks the development build is installed on the simulator
+#   5. starts its own Metro (port 8082, no questions asked) for it, and waits for it
+#   6. runs every flow and writes the report and screenshots to
 #      ~/Desktop/HQ/11-ThePantryV2/.transfer/
-#   6. stops the Metro it started
+#   7. stops the Metro it started
 set -uo pipefail
 
 # Finder starts .command files in the home folder, so move to the repo root
@@ -117,6 +118,15 @@ if [ ! -d "$REPO_ROOT/node_modules" ]; then
   npm install || finish 1
 fi
 
+APP_ID="com.lachlanoldfield.thepantry"
+say "Checking the development build is on the simulator"
+if ! xcrun simctl listapps booted 2>/dev/null | grep -q "$APP_ID"; then
+  echo "The Pantry's development build isn't installed on this simulator."
+  echo "Build it once (eas build --profile development-simulator, or npx expo run:ios),"
+  echo "drag the .app onto the simulator, then double-click this file again."
+  finish 1
+fi
+
 mkdir -p "$OUT_DIR"
 
 # The suite always runs against its own Metro on its own port, started
@@ -128,10 +138,10 @@ if curl -fs "$METRO_STATUS_URL" 2>/dev/null | grep -q "packager-status"; then
 fi
 say "Starting a Metro for the tests on port $METRO_PORT (log: $METRO_LOG)"
 # CI=1 makes Expo non-interactive: no questions, anonymous signing.
-# --go opens the project in Expo Go, installing Expo Go on the simulator if needed.
+# --dev-client serves the bundle to the development build; each flow opens it with a link.
 # set -m gives the background job its own process group, so it can be stopped as a whole.
 set -m
-CI=1 npx expo start --go --ios --port "$METRO_PORT" </dev/null >"$METRO_LOG" 2>&1 &
+CI=1 npx expo start --dev-client --port "$METRO_PORT" </dev/null >"$METRO_LOG" 2>&1 &
 METRO_PID=$!
 set +m
 echo "Waiting for Metro to answer on $METRO_STATUS_URL"
@@ -152,20 +162,9 @@ if ! curl -fs "$METRO_STATUS_URL" 2>/dev/null | grep -q "packager-status:running
   tail -n 30 "$METRO_LOG"
   finish 1
 fi
-echo "Waiting for Expo Go on the simulator"
-for _ in $(seq 1 240); do
-  xcrun simctl listapps booted 2>/dev/null | grep -q "host.exp.Exponent" && break
-  sleep 1
-done
-if ! xcrun simctl listapps booted 2>/dev/null | grep -q "host.exp.Exponent"; then
-  echo "Expo Go didn't install on the simulator. The last lines of Metro's log:"
-  tail -n 30 "$METRO_LOG"
-  finish 1
-fi
-
 say "Running the Maestro suite"
 rm -rf "$TEST_OUTPUT" "$REPORT"
-maestro test .maestro/ -e METRO_URL="exp://127.0.0.1:$METRO_PORT" --format junit --output "$REPORT" --test-output-dir "$TEST_OUTPUT"
+maestro test .maestro/ -e METRO_URL="exp+the-pantry://expo-development-client/?url=http%3A%2F%2F127.0.0.1%3A$METRO_PORT" --format junit --output "$REPORT" --test-output-dir "$TEST_OUTPUT"
 RESULT=$?
 
 if [ "$RESULT" -eq 0 ]; then

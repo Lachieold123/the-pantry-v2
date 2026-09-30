@@ -4,7 +4,7 @@
 import { Pressable } from 'react-native';
 
 import { makeStyles } from '@/ui/theme/makeStyles';
-import { RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
+import { RADIUS, SPACE } from '@/ui/tokens/type';
 import { Icon, type IconName } from './Icon';
 import { Text } from './Text';
 
@@ -56,5 +56,4 @@ const useStyles = makeStyles(({ colours }) => ({
   soft: { backgroundColor: colours.bgSoft, paddingHorizontal: 14 },
   selected: { backgroundColor: colours.ink, borderColor: colours.ink },
   pressed: { opacity: 0.8 },
-  target: { minHeight: TAP_TARGET },
 }));

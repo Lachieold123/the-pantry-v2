@@ -1,7 +1,7 @@
 # Plan: the day strip, add a meal to a slot, change who it's for, remove with
 # undo, plan a suggestion; the shopping list: summary card, tick, remove with
 # undo, add an extra, By aisle, clear all with undo, send it, both weeks.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

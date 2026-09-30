@@ -7,8 +7,12 @@
 //
 // Writes:
 //   src/data/catalogue/recipes.json   the catalogue the app bundles
-//   docs/reports/catalogue-report.md  lines to check, validation problems
+//   docs/reports/catalogue-report.md  lines to check, warnings
 //   docs/reports/recipe-review.csv    one row per recipe for Lachlan to approve tags
+//
+// Nothing is written if there are errors (a fix that matches nothing or more
+// than once, an unknown recipe key, an invalid recipe), so a half-applied
+// conversion can never be committed. Warnings are reported but don't block.
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
@@ -21,6 +25,7 @@ import { deriveDiets } from '../src/domain/recipes/diets.ts';
 import { isOptionalHeading } from '../src/domain/recipes/draft.ts';
 import type { CuisineId, Difficulty, MealType, Recipe, Season } from '../src/domain/recipes/types.ts';
 import { validateRecipe } from '../src/domain/recipes/validate.ts';
+import { applyAcross, checkFixes, checkTags, type Fix } from './catalogue/fixes.mts';
 
 type OldRecipe = {
   servings: number;
@@ -31,10 +36,17 @@ type OldRecipe = {
   steps: string[];
   notes?: string[];
 };
-type Tags = { title: string; cuisine: CuisineId; mealTypes: MealType[]; onePot: boolean; seasons?: Season[]; summary: string };
+type Tags = {
+  title: string;
+  cuisine: CuisineId;
+  mealTypes: MealType[];
+  onePot: boolean;
+  seasons?: Season[];
+  summary: string;
+  /** Set once Lachlan has cook-tested the recipe (D-008): store builds show only these. */
+  vetted?: true;
+};
 type Credit = { photographer?: string; source?: string };
-type Replacement = { from: string; to: string };
-type Fix = { steps?: Replacement[]; ingredients?: Replacement[]; addNotes?: string[] };
 type GlobalReplacement = { from: string; to: string; why: string };
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -62,30 +74,21 @@ function applyEverywhere(text: string): string {
   }
   return out;
 }
-const applied: string[] = [];
-
-/** Replace text that must appear exactly once in the list; anything else is a conversion error. */
-function applyReplacements(id: string, where: string, texts: string[], replacements: Replacement[] | undefined): string[] {
-  let out = texts;
-  for (const r of replacements ?? []) {
-    const hits = out.filter((t) => t.includes(r.from)).length;
-    if (hits !== 1) {
-      problems.push(`${id}: fix for ${where} matched ${hits} times: "${r.from}"`);
-      continue;
-    }
-    out = out.map((t) => (t.includes(r.from) ? t.replace(r.from, r.to) : t));
-    applied.push(`${id} (${where})`);
-  }
-  return out;
-}
+let applied = 0;
 
 const defs = JSON.parse(readFileSync(join(root, 'src/data/ingredients/ingredients.json'), 'utf8')) as IngredientDef[];
 const index = buildIngredientIndex(defs);
 
 const recipes: Recipe[] = [];
 const lineIssues: { id: string; raw: string; issues: ParseIssue[] }[] = [];
+/** Anything here stops the conversion writing its outputs. */
 const problems: string[] = [];
+/** Worth a look, but the catalogue is still correct. */
+const warnings: string[] = [];
 const noImage: string[] = [];
+
+const oldIds = new Set(Object.keys(RECIPES));
+problems.push(...checkFixes(fixes, oldIds), ...checkTags(tags, oldIds));
 
 for (const id of Object.keys(RECIPES).sort()) {
   const source = RECIPES[id] as OldRecipe;
@@ -101,13 +104,18 @@ for (const id of Object.keys(RECIPES).sort()) {
     continue;
   }
   const fix = fixes[id];
-  const ingredientGroups = old.ingredients.map((group) => {
-    const items = applyReplacements(
-      id,
-      'ingredients',
-      group.items,
-      fix?.ingredients?.filter((r) => group.items.some((t) => t.includes(r.from))),
-    )
+  // Counted across every group, so a fix can't match once in two groups and apply twice.
+  const fixedIngredients = applyAcross(
+    id,
+    'ingredients',
+    old.ingredients.map((g) => g.items),
+    fix?.ingredients,
+    problems,
+  );
+  const fixedSteps = applyAcross(id, 'steps', [old.steps], fix?.steps, problems);
+  applied += fixedIngredients.applied + fixedSteps.applied + (fix?.addNotes?.length ?? 0);
+  const ingredientGroups = old.ingredients.map((group, g) => {
+    const items = (fixedIngredients.groups[g] ?? [])
       // A fix can split one line into several ("\n") or remove it (""): see recipe-fixes.json.
       .flatMap((raw) => raw.split('\n'))
       .filter((raw) => raw.trim() !== '')
@@ -133,10 +141,11 @@ for (const id of Object.keys(RECIPES).sort()) {
       index,
     ),
     mealTypes: tag.mealTypes,
-    difficulty: old.difficulty ?? 'easy',
-    prepMinutes: old.prepMinutes,
-    cookMinutes: old.cookMinutes,
-    servings: old.servings,
+    // A cook-tested correction in recipe-fixes.json wins over the old data (K-4).
+    difficulty: fix?.difficulty ?? old.difficulty ?? 'easy',
+    prepMinutes: fix?.prepMinutes ?? old.prepMinutes,
+    cookMinutes: fix?.cookMinutes ?? old.cookMinutes,
+    servings: fix?.servings ?? old.servings,
     onePot: tag.onePot,
     ...(tag.seasons ? { seasons: tag.seasons } : {}),
     ...(hasImage
@@ -150,14 +159,22 @@ for (const id of Object.keys(RECIPES).sort()) {
         }
       : {}),
     ingredientGroups,
-    steps: applyReplacements(id, 'steps', old.steps, fix?.steps).map((text) => ({ text })),
+    steps: (fixedSteps.groups[0] ?? []).map((text) => ({ text })),
     ...((old.notes?.length ?? 0) + (fix?.addNotes?.length ?? 0) ? { notes: [...(old.notes ?? []), ...(fix?.addNotes ?? [])] } : {}),
     source: 'house',
-    provenance: 'ai-draft',
+    provenance: tag.vetted ? 'vetted' : 'ai-draft',
   };
-  if (!old.difficulty) problems.push(`${id}: no difficulty in the old data; set to easy`);
+  if (!old.difficulty && !fix?.difficulty) warnings.push(`${id}: no difficulty in the old data; set to easy`);
   for (const p of validateRecipe(recipe)) problems.push(`${id}: ${p.path} ${p.message}`);
   recipes.push(recipe);
+}
+
+const byIssue = (issue: ParseIssue) => lineIssues.filter((l) => l.issues.includes(issue));
+for (const w of warnings) console.warn(`warning: ${w}`);
+if (problems.length) {
+  for (const p of problems) console.error(`error: ${p}`);
+  console.error(`\n${problems.length} errors. Nothing was written: fix them and run the conversion again.`);
+  process.exit(1);
 }
 
 mkdirSync(join(root, 'src/data/catalogue'), { recursive: true });
@@ -171,7 +188,8 @@ writeFileSync(
   [
     '// Generated by scripts/convert-old-recipes.mts. Do not edit by hand.',
     'export const RECIPE_IMAGES: Readonly<Record<string, number>> = {',
-    ...withImages.map((id) => `  '${id}': require('../../../assets/recipes/${id}.jpg'),`),
+    // Quoted only where needed, the way Prettier writes it, so format:check passes on a fresh conversion.
+    ...withImages.map((id) => `  ${/^[A-Za-z_$][\w$]*$/.test(id) ? id : `'${id}'`}: require('../../../assets/recipes/${id}.jpg'),`),
     '};',
     '',
   ].join('\n'),
@@ -216,22 +234,22 @@ const vegetarianIfRewritten = recipes
   })
   .filter((x) => x.orLines.length > 0 && x.restDiets.includes('vegetarian'));
 
-const byIssue = (issue: ParseIssue) => lineIssues.filter((l) => l.issues.includes(issue));
 const totalLines = recipes.reduce((n, r) => n + r.ingredientGroups.reduce((m, g) => m + g.items.length, 0), 0);
 const report = [
   '# Catalogue conversion report',
   '',
   `Generated by \`scripts/convert-old-recipes.mts\`. Recipes: ${recipes.length}. Ingredient lines: ${totalLines}.`,
   '',
-  `- Validation problems: **${problems.length}**`,
+  `- Vetted (shown in store builds): **${recipes.filter((r) => r.provenance === 'vetted').length}**`,
+  `- Warnings: **${warnings.length}**`,
   `- Lines matched to no ingredient: **${byIssue('no-ingredient-match').length}**`,
   `- Lines naming two ingredients ("A or B"): **${byIssue('multiple-ingredients').length}** (the list uses one; diets and the avoid list check every option)`,
   `- Recipes with no photo: **${noImage.length}**`,
-  `- Hand fixes applied from \`scripts/data/recipe-fixes.json\`: **${applied.length + Object.values(fixes).reduce((n, f) => n + (f.addNotes?.length ?? 0), 0)}**`,
+  `- Hand fixes applied from \`scripts/data/recipe-fixes.json\`: **${applied}**`,
   '',
-  '## Validation problems',
+  '## Warnings',
   '',
-  ...(problems.length ? problems.map((p) => `- ${p}`) : ['None.']),
+  ...(warnings.length ? warnings.map((w) => `- ${w}`) : ['None.']),
   '',
   '## Lines with no ingredient match',
   '',
@@ -254,5 +272,4 @@ const report = [
 ].join('\n');
 writeFileSync(join(root, 'docs/reports/catalogue-report.md'), report);
 
-console.log(`${recipes.length} recipes, ${problems.length} problems, ${byIssue('no-ingredient-match').length} unmatched lines.`);
-if (problems.length) process.exitCode = 1;
+console.log(`${recipes.length} recipes, ${warnings.length} warnings, ${byIssue('no-ingredient-match').length} unmatched lines.`);

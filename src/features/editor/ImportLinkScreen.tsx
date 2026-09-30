@@ -5,12 +5,13 @@ import { useState } from 'react';
 import { View } from 'react-native';
 
 import { extractRecipe, normaliseLink } from '@/domain/recipes/importLink';
+import { logger } from '@/lib/logger';
 import { Button } from '@/ui/primitives/Button';
 import { Sheet } from '@/ui/primitives/Sheet';
 import { Text } from '@/ui/primitives/Text';
 import { TextField } from '@/ui/primitives/TextField';
 import { SPACE } from '@/ui/tokens/type';
-import { usePendingImport } from './pendingImport';
+import { usePendingImport } from '@/store/pendingImport';
 
 const TIMEOUT_MS = 15_000;
 
@@ -48,7 +49,8 @@ export function ImportLinkScreen() {
     let html: string;
     try {
       html = await fetchPage(url);
-    } catch {
+    } catch (e) {
+      logger.warn('import', "couldn't fetch the page", e);
       setBusy(false);
       return setFailure('unreachable');
     }

@@ -1,6 +1,6 @@
 # Browse: every quick chip, a mood shelf, see all, a misspelt search, the
 # filters sheet, saving from a grid card, and the no-results state.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

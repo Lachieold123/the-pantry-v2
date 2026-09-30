@@ -23,6 +23,7 @@ import {
 import { AISLE_LABELS } from '@/domain/recipes/labels';
 import { formatListForSharing } from '@/domain/shopping/derive';
 import { longDate, shortDate, weekdayName, weekRange } from '@/lib/dates';
+import { logger } from '@/lib/logger';
 import { usePlan } from '@/store/plan';
 import { useRecipeLookup } from '@/store/recipeBook';
 import { TitleBlock } from '@/ui/patterns/TitleBlock';
@@ -80,7 +81,8 @@ export function PlanScreen() {
     }
     try {
       await Share.share({ message: text });
-    } catch {
+    } catch (e) {
+      logger.warn('share', "couldn't open the share sheet", e);
       toast({ message: "Couldn't open sharing. Try again." });
     }
   };

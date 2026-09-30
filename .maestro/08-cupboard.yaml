@@ -1,6 +1,6 @@
 # Cupboard: add by search, remove with undo, the "move ticked shopping here"
 # switch (and that ticking really moves it), and what-can-I-make results.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

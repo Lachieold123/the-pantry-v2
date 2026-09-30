@@ -1,7 +1,7 @@
 // How the app names things to the cook, in Australian English.
 import type { AisleId } from '../ingredients/database';
 import type { AvoidOption, DietPreference } from './diets';
-import type { CuisineId, DietTag, MealType, Recipe } from './types';
+import type { CuisineId, MealType, Recipe } from './types';
 
 export const CUISINE_LABELS: Readonly<Record<CuisineId, string>> = {
   italian: 'Italian',
@@ -36,14 +36,6 @@ export const MEAL_TYPE_LABELS: Readonly<Record<MealType, string>> = {
   lunch: 'Lunch',
   dinner: 'Dinner',
   snack: 'Snack',
-};
-
-export const DIET_LABELS: Readonly<Record<DietTag, string>> = {
-  vegetarian: 'Vegetarian',
-  vegan: 'Vegan',
-  pescatarian: 'Pescatarian',
-  'no-gluten': 'No gluten ingredients',
-  'no-dairy': 'No dairy ingredients',
 };
 
 export const AISLE_LABELS: Readonly<Record<AisleId, string>> = {

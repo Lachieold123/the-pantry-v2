@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
 
 import { catalogue, index, makeRecipe } from '../testing/fixtures';
@@ -63,8 +64,12 @@ describe('the converted catalogue', () => {
     );
     assert.deepEqual(unknown, []);
   });
-  it('stays drafts until Lachlan vets them (D-008)', () => {
-    assert.ok(catalogue.every((r) => r.provenance === 'ai-draft'));
+  it('is vetted exactly where recipe-tags.json says Lachlan cook-tested it, and a draft everywhere else (D-008)', () => {
+    const tags = JSON.parse(readFileSync(new URL('../../../scripts/data/recipe-tags.json', import.meta.url), 'utf8')) as Record<
+      string,
+      { vetted?: true }
+    >;
+    for (const r of catalogue) assert.equal(r.provenance, tags[r.id]?.vetted ? 'vetted' : 'ai-draft', r.id);
   });
 });
 

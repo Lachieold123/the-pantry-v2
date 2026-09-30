@@ -1,5 +1,5 @@
 # Feed: have tonight's suggestion, see it on the plan badge, start cooking; Surprise me.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true
