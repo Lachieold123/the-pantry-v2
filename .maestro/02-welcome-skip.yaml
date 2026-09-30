@@ -3,7 +3,7 @@ appId: host.exp.Exponent
 ---
 - launchApp:
     clearState: true
-- openLink: exp://127.0.0.1:8081
+- openLink: ${METRO_URL}
 - runFlow: subflows/_setup_skip_welcome.yaml
 - assertVisible: 'How about this\?'
 - assertVisible:
@@ -13,7 +13,7 @@ appId: host.exp.Exponent
 # Skipping counts as onboarded: a relaunch (state kept) opens on the Feed, not the quiz.
 - launchApp:
     clearState: false
-- openLink: exp://127.0.0.1:8081
+- openLink: ${METRO_URL}
 - tapOn:
     text: "Open"
     optional: true

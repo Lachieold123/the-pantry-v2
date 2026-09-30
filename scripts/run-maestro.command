@@ -6,7 +6,7 @@
 #   1. checks Xcode's simulator tools and the Maestro CLI are installed
 #   2. boots an iPhone simulator if none is running
 #   3. installs npm packages if they're missing
-#   4. starts Metro with Expo Go (unless it's already running) and waits for it
+#   4. starts its own Metro (port 8082, no questions asked) with Expo Go, and waits for it
 #   5. runs every flow and writes the report and screenshots to
 #      ~/Desktop/HQ/11-ThePantryV2/.transfer/
 #   6. stops the Metro it started
@@ -21,7 +21,8 @@ OUT_DIR="$HOME/Desktop/HQ/11-ThePantryV2/.transfer"
 REPORT="$OUT_DIR/maestro-report.xml"
 TEST_OUTPUT="$OUT_DIR/maestro-output"
 METRO_LOG="$OUT_DIR/metro.log"
-METRO_STATUS_URL="http://127.0.0.1:8081/status"
+METRO_PORT=8082
+METRO_STATUS_URL="http://127.0.0.1:$METRO_PORT/status"
 METRO_PID=""
 
 say() { printf '\n==> %s\n' "$*"; }
@@ -118,59 +119,53 @@ fi
 
 mkdir -p "$OUT_DIR"
 
-if curl -fs "$METRO_STATUS_URL" 2>/dev/null | grep -q "packager-status:running"; then
-  say "Metro is already running; using it"
-  # The flows need Expo Go on the simulator. Normally "expo start --ios" installs it;
-  # with Metro already running, a short second start on a spare port does the install.
-  if ! xcrun simctl listapps booted 2>/dev/null | grep -q "host.exp.Exponent"; then
-    say "Installing Expo Go on the simulator"
-    set -m
-    npx expo start --go --ios --port 8083 </dev/null >"$OUT_DIR/expo-go-install.log" 2>&1 &
-    INSTALL_PID=$!
-    set +m
-    for _ in $(seq 1 240); do
-      xcrun simctl listapps booted 2>/dev/null | grep -q "host.exp.Exponent" && break
-      sleep 1
-    done
-    sleep 5
-    kill -TERM -- "-$INSTALL_PID" 2>/dev/null || kill -TERM "$INSTALL_PID" 2>/dev/null
-    wait "$INSTALL_PID" 2>/dev/null
-    if ! xcrun simctl listapps booted 2>/dev/null | grep -q "host.exp.Exponent"; then
-      echo "Couldn't install Expo Go on the simulator. The log:"
-      tail -n 30 "$OUT_DIR/expo-go-install.log"
-      finish 1
-    fi
+# The suite always runs against its own Metro on its own port, started
+# non-interactively. Sharing the Metro in your Expo window is what broke the
+# first runs: that one stops to ask about logging in, and nobody answers.
+if curl -fs "$METRO_STATUS_URL" 2>/dev/null | grep -q "packager-status"; then
+  echo "Something is already using port $METRO_PORT. Close the other Maestro run (or whatever uses it) and try again."
+  finish 1
+fi
+say "Starting a Metro for the tests on port $METRO_PORT (log: $METRO_LOG)"
+# CI=1 makes Expo non-interactive: no questions, anonymous signing.
+# --go opens the project in Expo Go, installing Expo Go on the simulator if needed.
+# set -m gives the background job its own process group, so it can be stopped as a whole.
+set -m
+CI=1 npx expo start --go --ios --port "$METRO_PORT" </dev/null >"$METRO_LOG" 2>&1 &
+METRO_PID=$!
+set +m
+echo "Waiting for Metro to answer on $METRO_STATUS_URL"
+for _ in $(seq 1 180); do
+  if curl -fs "$METRO_STATUS_URL" 2>/dev/null | grep -q "packager-status:running"; then
+    break
   fi
-else
-  say "Starting Metro with Expo Go (log: $METRO_LOG)"
-  # --go opens the project in Expo Go (installing Expo Go on the simulator if needed).
-  # set -m gives the background job its own process group, so it can be stopped as a whole.
-  set -m
-  npx expo start --go --ios </dev/null >"$METRO_LOG" 2>&1 &
-  METRO_PID=$!
-  set +m
-  echo "Waiting for Metro to answer on $METRO_STATUS_URL"
-  for _ in $(seq 1 180); do
-    if curl -fs "$METRO_STATUS_URL" 2>/dev/null | grep -q "packager-status:running"; then
-      break
-    fi
-    if ! kill -0 "$METRO_PID" 2>/dev/null; then
-      echo "Metro stopped before it was ready. The last lines of its log:"
-      tail -n 30 "$METRO_LOG"
-      METRO_PID=""
-      finish 1
-    fi
-    sleep 1
-  done
-  if ! curl -fs "$METRO_STATUS_URL" 2>/dev/null | grep -q "packager-status:running"; then
-    echo "Metro didn't start within 3 minutes. The last lines of its log:"
+  if ! kill -0 "$METRO_PID" 2>/dev/null; then
+    echo "Metro stopped before it was ready. The last lines of its log:"
     tail -n 30 "$METRO_LOG"
+    METRO_PID=""
     finish 1
   fi
+  sleep 1
+done
+if ! curl -fs "$METRO_STATUS_URL" 2>/dev/null | grep -q "packager-status:running"; then
+  echo "Metro didn't start within 3 minutes. The last lines of its log:"
+  tail -n 30 "$METRO_LOG"
+  finish 1
+fi
+echo "Waiting for Expo Go on the simulator"
+for _ in $(seq 1 240); do
+  xcrun simctl listapps booted 2>/dev/null | grep -q "host.exp.Exponent" && break
+  sleep 1
+done
+if ! xcrun simctl listapps booted 2>/dev/null | grep -q "host.exp.Exponent"; then
+  echo "Expo Go didn't install on the simulator. The last lines of Metro's log:"
+  tail -n 30 "$METRO_LOG"
+  finish 1
 fi
 
 say "Running the Maestro suite"
-maestro test .maestro/ --format junit --output "$REPORT" --test-output-dir "$TEST_OUTPUT"
+rm -rf "$TEST_OUTPUT" "$REPORT"
+maestro test .maestro/ -e METRO_URL="exp://127.0.0.1:$METRO_PORT" --format junit --output "$REPORT" --test-output-dir "$TEST_OUTPUT"
 RESULT=$?
 
 if [ "$RESULT" -eq 0 ]; then

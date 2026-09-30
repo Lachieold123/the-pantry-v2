@@ -22,7 +22,7 @@ when it's done. The report and screenshots go to
 - **Node 22 or later**, and the project's packages (`npm install`).
 - **Expo Go on the simulator.** `npx expo start --go --ios` installs it the first
   time and opens the app in it. Keep that Metro server running while the tests
-  run. Flows open the app at `exp://127.0.0.1:8081`.
+  run. Flows open the app at `${METRO_URL}`; the runner starts its own Metro on port 8082 and passes `-e METRO_URL=exp://127.0.0.1:8082`. To run a flow by hand: `maestro test -e METRO_URL=exp://127.0.0.1:8081 .maestro/07-plan.yaml`.
 
 ## Run them
 
