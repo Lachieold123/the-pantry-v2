@@ -1,7 +1,7 @@
 # The Pantry v2: Rebuild Map
 
-**Owner:** Lachlan · **Builder:** Claude, with Expo (D-001, D-002) · **Written:** 29 September 2026 · **Last updated:** 29 September 2026
-**Status:** Phases 0–2 done; Phases 3–7 built (see each phase's status line); next is Phase 9 polish, with Phase 8 (Pro) waiting on Lachlan. Code: github.com/Lachieold123/the-pantry-v2.
+**Owner:** Lachlan · **Builder:** Claude, with Expo (D-001, D-002) · **Written:** 29 September 2026 · **Last updated:** 30 September 2026
+**Status:** Since 30 September the work follows `docs/V1-PARITY-PLAN.md` (D-025, D-026, D-030), which has its own phases P1–P11 and the open decisions for Lachlan. Sections 3, 6, 9, 10 and 11, and parts of 7 and 8, are superseded and say so. Code: github.com/Lachieold123/the-pantry-v2.
 
 This is the blueprint for rebuilding The Pantry from the ground up. It covers:
 
@@ -88,9 +88,13 @@ Companion documents (paths from `HQ/11-ThePantryV2/`; they move into the repo in
 - Restrained motion. The spinner is the only playful moment.
 - Vocabulary: **bites** (future posts), **home cooks** (users), **Cupboard** (pantry), **Inbox** (future messages).
 
+> **Note (30 Sep 2026):** social is now in the launch (D-026), and D-027 makes the Feed the home screen. That collides with "no public counts on the home screen", "no infinite scroll" and "no For You feed". Until Lachlan decides (`V1-PARITY-PLAN.md`, O-5), these three rules still stand. v1's greens and the few emoji it shows are allowed for now (D-025).
+
 ---
 
 ## 3. v1 scope
+
+> **Superseded (30 Sep 2026).** The launch now has every v1 feature, social included (D-025, D-026), with photo and receipt scanning for every account (D-030) and calculated nutrition (D-028). The "OUT" and "LATER" lists below no longer apply. The current scope is `docs/V1-PARITY-PLAN.md`; this section is kept for history.
 
 **IN (v1, the first App Store release):**
 
@@ -177,6 +181,8 @@ The old app had many bugs, but they came from a handful of *structural* causes. 
 
 ## 6. App map
 
+> **Superseded (30 Sep 2026).** v2 uses v1's shell: a header, tabs Feed · Browse · + · Cupboard · Plan, and a side drawer (D-025, D-027). Where each screen lives is in `V1-PARITY-PLAN.md` ("Where v2's screens land"), and the routes are in `src/app/`. The rules under the route tree (thin routes, deep links from a cold start) still hold.
+
 ### Information architecture: five tabs
 
 | Tab | Purpose | Loop |
@@ -235,6 +241,11 @@ Rules:
 ---
 
 ## 7. Domain model
+
+> **Superseded in part (30 Sep 2026).** The catalogue and on-phone data below still describe v2, with these changes:
+> - `Entitlement` is no longer stored. The app reads Pro from RevenueCat each time (`V1-PARITY-PLAN.md`, P10).
+> - The nutrition rule at the end (70% coverage, never AI) is replaced by D-028: calculated from the ingredient database, with AI only for the gaps.
+> - "Stored on the device" is no longer the whole story once accounts arrive (P8). What happens to local data on sign-in and sign-out is open decision O-1.
 
 These are the nouns of the app. **Stored** means it's saved on the device. **Derived** means it's calculated whenever it's needed.
 
@@ -309,6 +320,12 @@ Streaks/Stats = from CookEvent[]
 
 ## 8. Architecture
 
+> **Superseded in part (30 Sep 2026).** The folder structure and dependency rules still hold. In the stack table:
+> - **Fonts:** Georgia and the system sans (D-025), not Newsreader and Manrope.
+> - **Payments:** the Supabase user id is the RevenueCat app user id, not an anonymous one, and the entitlement is never stored (`V1-PARITY-PLAN.md`, P10).
+> - **Server data:** Supabase and TanStack Query arrive in P8 (plan rule 3); push notifications from the server arrive in P9.
+> - **Lists:** FlashList is on the plan's list of native modules for P8–P10 (plan rule 12).
+
 ### Stack
 
 | Concern | Choice | Why |
@@ -378,6 +395,8 @@ the-pantry-v2/
 
 ## 9. Design system
 
+> **Superseded (30 Sep 2026).** v2 takes on v1's look: white and amber, pastel tints, Georgia and the system sans (D-025). The source is `docs/design/V1-DESIGN-SPEC.md`. The principle that style lives only in tokens still holds (plan rule 7).
+
 **The aim:** it should feel like a beautifully typeset cookbook printed on good paper. Calm, confident, generous with space. Photography does the talking.
 
 ### Colour (resolving the old drift)
@@ -444,6 +463,8 @@ Warm, brief, confident. Talk like a good cookbook, not an app. For example, "Not
 ---
 
 ## 10. Build phases
+
+> **Superseded (30 Sep 2026).** The remaining work follows the phases P1–P11 in `docs/V1-PARITY-PLAN.md`. The numbers don't match: the map's "Phase 8: Pro" is the plan's P10, for example. The status lines below are history.
 
 Each phase lists its **Goal**, **Build** (what gets built), **Done when** (acceptance criteria), **Question first** (questions to settle before building) and **Reference** (where to look in the old app).
 
@@ -635,6 +656,8 @@ These phases get their own maps when the time comes:
 
 ## 11. Quality gates
 
+> **Superseded (30 Sep 2026)** by the phase gate in `docs/V1-PARITY-PLAN.md` and the checks in CLAUDE.md. The checklist below is still a good definition of done for a single feature.
+
 A feature is **done** only when every box is ticked:
 
 - [ ] `tsc --noEmit`, ESLint and Prettier are clean. No `any`, no `@ts-ignore` without a written reason.
@@ -737,6 +760,8 @@ Old repo: `The Pantry - Transfer/the-pantry-app/` (branch `wave2/freeze-fix`).
 ## 14. Open decisions for Lachlan
 
 These need an answer before (or early in) the phase shown. Once answered, each moves to `DECISIONS.md` and is marked here.
+
+> **Note (30 Sep 2026):** new open questions live at the top of `docs/V1-PARITY-PLAN.md` (O-1 to O-8). #7 below is now "back up only": whether the old project is restored at all is O-2.
 
 **Decided** (details in `DECISIONS.md`)
 

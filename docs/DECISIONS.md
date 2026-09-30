@@ -1,6 +1,6 @@
 # The Pantry v2: Decision log
 
-One entry per decision, newest at the bottom. Open questions live in `PRODUCT.md` §6 until they're answered here.
+One entry per decision, newest at the bottom. Open questions live in `V1-PARITY-PLAN.md` ("Open decisions for Lachlan") until they're answered here. The older ones from `PRODUCT.md` §6 are all answered.
 
 ---
 
@@ -31,6 +31,7 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
 
 - **Decision:** Free covers this week's plan, the shopping list, sharing it, the cupboard, Surprise me, and Cook Mode with timers. Pro adds planning next week, more than 3 collections, and full nutrition detail. Prices and products stay as they are in RevenueCat; changing them is Lachlan's call.
 - **Why:** A free user who can't plan and cook one week never learns why the app is good. The old app gated the planner and Cook Mode.
+- **Still open (30 Sep audit):** what "planning next week" means on a Sunday, and whether free limits ever lock people out of what they already have. See `V1-PARITY-PLAN.md`, O-6 and O-7.
 
 ## D-004 · "Hands-free" in v1 (decision B)
 
@@ -76,6 +77,12 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
 - **Date:** 29 September 2026 · **Decided by:** Claude (delegated)
 - **Decision:** 1 cup = 250 ml, 1 tbsp = 20 ml, 1 tsp = 5 ml. Imperial display converts weights to oz/lb and larger liquid amounts to fl oz; spoons and cups stay as written. Imperial weights snap to quarters ("1¼ lb"), not eighths or thirds.
 - **Why:** The app and its cooks are Australian. The difference from US measures (15 ml tablespoon) matters when merging spoons on the shopping list, so it's fixed in one place.
+- **Clarified (30 Sep, audit F180) · Decided by:** Claude (delegated). Imperial display rounds like this:
+  - liquids over 60 ml show as fl oz, and above 10 fl oz as whole numbers (500 ml reads "17 fl oz", not "16.9 fl oz");
+  - from 32 fl oz, liquids show as quarts;
+  - oz, lb and quarts print in quarters (1.5 kg reads "3¼ lb", not "3.3 lb").
+
+  Spoons and cups still stay as written; US cups weren't chosen, because the recipes are written in Australian cups. Lachlan can overturn this cheaply: it lives in `src/domain/ingredients/format.ts`.
 
 ## D-014 · Hand fixes to recipe content live in one reviewed file
 
@@ -217,3 +224,28 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
     - **Why this** used to say "Similar to dishes you liked", which wasn't true. Now it only says true things: what it uses from the pantry, the time, and whether it's in Cookmarks or cooked before.
     - The **"@recipe-id" handle** on the card was fake. It's dropped until recipes have real authors.
   - The Feed's "Surprise me instead" button under tonight's suggestion is removed. The spinner stays in the side menu, under "Not feeling it?" and in the empty Feed.
+
+## D-032 · Old-app cook history comes across with "date unknown"
+
+- **Date:** 30 September 2026 · **Decided by:** Lachlan
+- **Decision:** v1 kept only a list of dishes you'd cooked (`cookedRecipes`), with no dates. The import brings across one cook per dish, dated at the time of the import and marked "date unknown".
+  - "Cooked before" and kitchen stats count them.
+  - The weekly streak ignores them, and "recently cooked" sorts them behind real cooks, so the import never fakes a streak or a busy week.
+- **Extends:** D-005 and D-024. Audit F09.
+
+## D-033 · Cook timers are time-sensitive; the Sunday reminder isn't
+
+- **Date:** 30 September 2026 · **Decided by:** Lachlan
+- **Decision:** Cook Mode's timer alerts are iOS time-sensitive notifications (`interruptionLevel: 'timeSensitive'`), with the `com.apple.developer.usernotifications.time-sensitive` entitlement in `app.json`, so they get through Focus modes. The Sunday planning reminder stays a normal notification.
+- **Why:** a missed timer burns dinner; a missed reminder doesn't. Apple expects time-sensitive alerts to be things that need attention right now, so using it for the reminder would be a misuse.
+- **Note:** the entitlement is native configuration, so it only takes effect in a new development build. Audit F188.
+
+## D-034 · An optional meat or fish line rules out vegetarian tags
+
+- **Date:** 30 September 2026 · **Decided by:** Lachlan
+- **Decision:** optional meat, fish and seafood lines count when a recipe's diet tags are worked out:
+  - An optional meat line ("bacon, optional") rules out vegetarian, vegan and pescatarian.
+  - An optional fish or seafood line rules out vegetarian and vegan.
+  - Cheeses made with animal rennet (parmesan and the like) stay vegetarian, as Australian recipes usually treat them.
+  - Other optional lines ("feta, optional") still don't decide the diet.
+- **Why:** someone who filters for vegetarian shouldn't meet a recipe that suggests adding bacon. Audit F152.

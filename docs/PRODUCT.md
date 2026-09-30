@@ -7,6 +7,8 @@ This is the app in my own words: what it is, who it's for, what every v1 feature
 
 Nothing in here is final until you agree it's right.
 
+> **Superseded in part (30 Sep 2026).** v2 now launches with every v1 feature, social included, in v1's look (D-025, D-026), with photo and receipt scanning (D-030) and calculated nutrition (D-028). The current plan is `docs/V1-PARITY-PLAN.md`. Where this document says "no accounts", "no social" or "no AI scanning" (§1, §2, §3's note on the third loop, §4.13, §4.14 and §5), the plan wins; those sections carry a note. The jobs, edge cases and "working" checks for each feature still hold.
+
 ---
 
 ## Contents
@@ -23,6 +25,8 @@ Nothing in here is final until you agree it's right.
 ---
 
 ## 1. The app in one paragraph
+
+> **Superseded in part (30 Sep 2026):** the last two sentences no longer hold. There are accounts, a social feed (D-026) and AI scanning (D-030). Whether the Feed shows counts, and in what order, is open (`V1-PARITY-PLAN.md`, O-5).
 
 The Pantry helps a household answer "what are we eating this week?" once, on Sunday, and then stops them having to think about it again. You pick a handful of dinners, the app writes one tidy shopping list for you, and on a weeknight it tells you what's on tonight and walks you through cooking it. It looks and reads like a good cookbook rather than a social app: quiet, typeset, photography-led, with no feeds, counts or engagement tricks. In v1 everything lives on your phone. There are no accounts, no social network and no AI scanning.
 
@@ -121,7 +125,7 @@ For each feature: its **job** (what it does for the user), **edge cases** (where
 - **Edge cases:**
   - The same recipe twice in one week (leftovers, a favourite).
   - A planned day passes. Does it stay visible, fade, or roll off?
-  - It's Sunday night. Is "this week" the one ending tonight or the one starting tomorrow?
+  - It's Sunday night. Is "this week" the one ending tonight or the one starting tomorrow? (D-009 shows next week from Sunday; what that means for the Pro gate is still open: `V1-PARITY-PLAN.md`, O-6.)
   - The phone's date or timezone changes.
 - **Working:** add from recipe page, card menu and Surprise me result; per-entry servings change the list immediately; the plan survives restarts and rolls over cleanly at the week boundary.
 - **vs old app, and this is a big one:** the old plan was stored by **weekday, not date** ("Tuesday", not "Tuesday 7 October"), so last week's plan silently became this week's. It could also hold each recipe **only once** in the whole week, had **no servings per meal**, and clearing a slot deleted the recipe from the shopping list too. The map's recommendation (real dates, this week and next) fixes all of that.
@@ -191,12 +195,16 @@ For each feature: its **job** (what it does for the user), **edge cases** (where
 - **Working:** theme switches live; export produces a file the user can save; legal links load real pages.
 - **vs old app:** drops social settings (private account, activity and message notifications, sign out).
 
+> **Superseded (30 Sep 2026):** with accounts and social at launch, Settings also needs sign out and sign out everywhere, delete account, forgot password, notification preferences, Pro status with "Manage subscription", a crash-report switch and the AI photo consent. Where each is built is in `V1-PARITY-PLAN.md` (P6, P8, P9, P10). The private-account switch is part of open decision O-8.
+
 ### 4.14 Pro (paid)
 
 - **Job:** pay for the app's development without making the free version feel broken.
 - **Includes:** RevenueCat with the existing products (`thepantry_pro_monthly` $4.99, `thepantry_pro_yearly` $44.99), a paywall sheet worded for whatever feature triggered it, restore purchases.
 - **Working:** sandbox purchase, restore and expiry all work on a real phone; Pro survives restarts; no purchase button is ever dead; terms and privacy links on the paywall load.
 - **Which features are Pro is an open decision.** See §6, decision A.
+
+> **Superseded in part (30 Sep 2026):** Pro is decided (D-003), with two follow-ups still open (O-6, O-7). "Pro survives restarts" now comes from RevenueCat's own cache; the app never stores the entitlement (`V1-PARITY-PLAN.md`, P10). The paywall also needs App Store guideline 3.1.2's subscription details and a "Manage subscription" link.
 
 ### 4.15 Bringing across old TestFlight data
 
@@ -208,21 +216,23 @@ For each feature: its **job** (what it does for the user), **edge cases** (where
 
 ## 5. What v1 drops
 
+> **Superseded (30 Sep 2026).** Parity with v1 (D-025, D-026) brings most of these back at launch. The "Now" column says where each landed.
+
 These exist in the old app and are deliberately out of v1. Everything marked **Later** comes back after launch; the rest I'd drop unless you say otherwise.
 
-| Old feature | v1 | Why |
-|---|---|---|
-| Accounts and sign-in (email, Google, Apple) | **Later** (v1.1) | Local-first removes most App Review burden |
-| Bites, comments, likes, follows, DMs, notifications, block, report | **Later** (v1.2) | Half the old code; heavy review obligations; not needed for the North Star |
-| AI cupboard and receipt scanning | **Later** (v1.3) | Server costs; not needed for the North Star |
-| Recipe of the Day (Pro) | Replaced | Becomes the free "editorial pick" on Today |
-| Mood collections, Recommended tab | Replaced | Folded into Recipes browse sections and Today |
-| Stats screen | Replaced | Cooked log with a quiet streak |
-| Recently viewed | Not mentioned | Your call (§6) |
-| Hidden dishes | Not mentioned | Your call (§6) |
-| "Pair with" suggestions | Not mentioned | Your call (§6) |
-| Name-only custom meals (a dish name with no recipe) | Not mentioned | Your call (§6) |
-| Liquid Glass dock, video backgrounds | Dropped | Native risk; not core |
+| Old feature | v1 (29 Sep) | Why | Now (30 Sep) |
+|---|---|---|---|
+| Accounts and sign-in (email, Google, Apple) | **Later** (v1.1) | Local-first removes most App Review burden | **At launch** (D-026), plan P8 |
+| Bites, comments, likes, follows, DMs, notifications, block, report | **Later** (v1.2) | Half the old code; heavy review obligations; not needed for the North Star | **At launch** (D-026), plan P9 |
+| AI cupboard and receipt scanning | **Later** (v1.3) | Server costs; not needed for the North Star | **At launch**, 3 free scans a month for every account (D-030), plan P10 |
+| Recipe of the Day (Pro) | Replaced | Becomes the free "editorial pick" on Today | Back in Browse (plan P3) |
+| Mood collections, Recommended tab | Replaced | Folded into Recipes browse sections and Today | Back in Browse (plan P3) |
+| Stats screen | Replaced | Cooked log with a quiet streak | Kitchen stats in the drawer (plan P6) |
+| Recently viewed | Not mentioned | Your call (§6) | Kept (D-007) |
+| Hidden dishes | Not mentioned | Your call (§6) | Kept as "Not for us" (D-007) |
+| "Pair with" suggestions | Not mentioned | Your call (§6) | Dropped (D-007) |
+| Name-only custom meals (a dish name with no recipe) | Not mentioned | Your call (§6) | Imported as draft recipes (D-005) |
+| Liquid Glass dock, video backgrounds | Dropped | Native risk; not core | Still dropped |
 
 ---
 
@@ -278,7 +288,7 @@ The old "things to avoid" list worked by finding words in ingredient text. "Nuts
 | 4 | Pro gates | Free tier genuinely useful | See decision A |
 | 5 | Old TestFlight users | Import | Agree, with decisions C–E |
 | 6 | Android at launch | iOS only | Agree |
-| 7 | Supabase project (paused) | Back up now | **Urgent, your job this week**, along with pushing the old code to GitHub |
+| 7 | Supabase project (paused) | Back up now | **Urgent, your job this week**, along with pushing the old code to GitHub. Back up only: whether it's ever restored is open decision O-2 in `V1-PARITY-PLAN.md` |
 
 ---
 
@@ -307,6 +317,6 @@ Phase 0 is done when you agree this document is right and every §6 decision is 
 2. **Walk through the old app on your phone together.** Note what to keep, drop or change.
 3. **Start `docs/DECISIONS.md`**, recording your answers from step 1.
 
-Two non-code jobs that shouldn't wait: **restore or back up the Supabase project** and **push the old app's ~107 unpushed commits to GitHub** (handover §0).
+Two non-code jobs that shouldn't wait: **back up the Supabase project** (don't restore it: that's open decision O-2 in `V1-PARITY-PLAN.md`) and **push the old app's ~107 unpushed commits to GitHub** (handover §0).
 
 One housekeeping note: there's no `the-pantry-v2` repo yet, so this file lives in `HQ/11-ThePantryV2/docs/`. It moves into the repo's `docs/` folder when Phase 1 creates it.
