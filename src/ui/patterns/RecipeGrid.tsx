@@ -1,5 +1,6 @@
 // Recipe cards two to a row (spec §3.2). An odd last card keeps its width; the
 // original stretched it across both columns.
+import { memo } from 'react';
 import { View } from 'react-native';
 
 import type { Recipe } from '@/domain/recipes/types';
@@ -27,8 +28,9 @@ export function RecipeGrid({ recipes, imageFor, onOpen, isSaved, onToggleSave, n
   );
 }
 
-/** One row of two; also used by virtualised lists that render a row per item. */
-export function RecipeRow({ row, imageFor, onOpen, isSaved, onToggleSave, noteFor }: Omit<Props, 'recipes'> & { row: readonly Recipe[] }) {
+type RowProps = Omit<Props, 'recipes'> & { row: readonly Recipe[] };
+
+function RecipeRowView({ row, imageFor, onOpen, isSaved, onToggleSave, noteFor }: RowProps) {
   return (
     <View style={{ flexDirection: 'row', gap: SPACE.sm }}>
       {row.map((r) => {
@@ -49,3 +51,21 @@ export function RecipeRow({ row, imageFor, onOpen, isSaved, onToggleSave, noteFo
     </View>
   );
 }
+
+// A row redraws only when its recipes, handlers or their saved state change,
+// not for every keystroke or for a bookmark on another row. `row` is a fresh
+// array each time results are recomputed, so compare by recipe, and compare
+// `isSaved` by what it says about this row rather than by function identity.
+function sameRow(a: RowProps, b: RowProps): boolean {
+  return (
+    a.imageFor === b.imageFor &&
+    a.onOpen === b.onOpen &&
+    a.onToggleSave === b.onToggleSave &&
+    a.noteFor === b.noteFor &&
+    a.row.length === b.row.length &&
+    a.row.every((r, i) => r === b.row[i] && (a.isSaved?.(r.id) ?? false) === (b.isSaved?.(r.id) ?? false))
+  );
+}
+
+/** One row of two; also used by virtualised lists that render a row per item. */
+export const RecipeRow = memo(RecipeRowView, sameRow);

@@ -38,14 +38,23 @@ function ChipRow({ children }: { children: React.ReactNode }) {
 
 export function FiltersScreen() {
   const router = useRouter();
-  const { filters, update, clear } = useRecipeFilters(useShallow(({ filters, update, clear }) => ({ filters, update, clear })));
+  const { filters, update, clear, setShowAll } = useRecipeFilters(
+    useShallow(({ filters, update, clear, setShowAll }) => ({ filters, update, clear, setShowAll })),
+  );
   const { results, activeFilters, browsing } = useRecipeResults();
   const season = seasonOn(new Date());
   const count = browsing ? 'all recipes' : results.length === 1 ? '1 recipe' : `${results.length} recipes`;
+  const matches = results.length === 1 ? '1 recipe matches' : `${results.length} recipes match`;
+  // With nothing chosen the footer promises "all recipes", so it opens the full
+  // list rather than dropping you back on the browse shelves.
+  const show = () => {
+    if (browsing) setShowAll(true);
+    router.back();
+  };
 
   return (
     <View style={{ flex: 1 }}>
-      <Sheet kicker={browsing ? 'Filters' : `${count} match`} title="Refine your rotation" onClose={() => router.back()}>
+      <Sheet kicker={browsing ? 'Filters' : matches} title="Refine your rotation" onClose={() => router.back()}>
         <View style={{ gap: SPACE.sm }}>
           <SectionHeader title="Diet" />
           <ChipRow>
@@ -136,7 +145,7 @@ export function FiltersScreen() {
       <ActionBar>
         <Button label="Clear all" kind="quiet" onPress={clear} disabled={activeFilters === 0} testID="filters-clear" />
         <View style={{ flex: 1 }}>
-          <Button label={`Show ${count}`} kind="primary" block onPress={() => router.back()} testID="filters-show" />
+          <Button label={`Show ${count}`} kind="primary" block onPress={show} testID="filters-show" />
         </View>
       </ActionBar>
     </View>

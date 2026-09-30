@@ -4,7 +4,7 @@
 // real filter or search, so tapping it always means something.
 
 import { stableJitter } from '../suggestions/forYou';
-import { matchesFilters, NO_FILTERS, type RecipeFilters } from './search';
+import { countActiveFilters, matchesFilters, NO_FILTERS, type RecipeFilters } from './search';
 import type { Recipe, Season } from './types';
 
 export type Preset = { id: string; label: string; filters?: Partial<RecipeFilters>; query?: string };
@@ -49,6 +49,30 @@ export function presetActive(p: Preset, filters: RecipeFilters, query: string): 
     if (Array.isArray(value) ? !Array.isArray(current) || !sameList(value, current) : current !== value) return false;
   }
   return true;
+}
+
+/**
+ * The preset is the whole of what you're looking at: it's on and nothing else
+ * is. Browse names its results after a preset only then, so "30 min" never
+ * labels a list that is also vegan and Thai.
+ */
+export function presetIsExactly(p: Preset, filters: RecipeFilters, query: string): boolean {
+  if (!presetActive(p, filters, query)) return false;
+  if (p.query === undefined && query.trim() !== '') return false;
+  const rest = { ...filters };
+  for (const key of Object.keys(p.filters ?? {}) as (keyof RecipeFilters)[]) Object.assign(rest, { [key]: NO_FILTERS[key] });
+  return countActiveFilters(rest) === 0;
+}
+
+/** The preset to name the results after: the one you tapped when two set the same filters. */
+export function presetShown(
+  presets: readonly Preset[],
+  filters: RecipeFilters,
+  query: string,
+  lastTapped: string | undefined,
+): Preset | undefined {
+  const exact = presets.filter((p) => presetIsExactly(p, filters, query));
+  return exact.find((p) => p.label === lastTapped) ?? exact[0];
 }
 
 /** Tapping a preset turns it on, or off again if it was on. Turning it off resets only what it set. */

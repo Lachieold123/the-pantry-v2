@@ -87,7 +87,7 @@ export function BrowseSections() {
             kind="quick"
             label={chip.label}
             selected={presetActive(chip, filters, query)}
-            onPress={() => apply(togglePreset(chip, filters, query))}
+            onPress={() => apply(togglePreset(chip, filters, query), chip.label)}
             testID={`chip-${chip.id}`}
           />
         ))}
@@ -110,7 +110,7 @@ export function BrowseSections() {
                   count={recipes.length}
                   image={cover ? image(cover.id) : undefined}
                   cuisine={cover?.cuisine ?? ''}
-                  onPress={() => apply(togglePreset(mood, filters, query))}
+                  onPress={() => apply(togglePreset(mood, filters, query), mood.label)}
                   testID={`mood-${mood.id}`}
                 />
               );

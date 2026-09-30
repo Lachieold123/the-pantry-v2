@@ -1,4 +1,5 @@
 // Saved recipes: bookmarks, named collections, hidden dishes and recently viewed.
+import { useCallback, useMemo } from 'react';
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
@@ -88,6 +89,12 @@ export const useSaved = create<SavedState>()(
 export function useBookmarks(): { isSaved: (id: string) => boolean; toggle: (id: string) => void } {
   const bookmarks = useSaved((s) => s.bookmarks);
   const toggle = useSaved((s) => s.toggleBookmark);
-  const ids = new Set(bookmarks.map((b) => b.recipeId));
-  return { isSaved: (id) => ids.has(id), toggle: (id) => void toggle(id) };
+  // Memoised so the functions keep their identity between renders: memoised
+  // cards then redraw only when bookmarks actually change.
+  const isSaved = useMemo(() => {
+    const ids = new Set(bookmarks.map((b) => b.recipeId));
+    return (id: string) => ids.has(id);
+  }, [bookmarks]);
+  const toggleSaved = useCallback((id: string) => void toggle(id), [toggle]);
+  return useMemo(() => ({ isSaved, toggle: toggleSaved }), [isSaved, toggleSaved]);
 }
