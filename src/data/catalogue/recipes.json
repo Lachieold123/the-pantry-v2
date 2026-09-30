@@ -3157,9 +3157,7 @@
     "title": "Beef Curry",
     "summary": "Chuck braised slowly with deep-browned onion, whole spices and tomato until spoon-tender.",
     "cuisine": "indian",
-    "diets": [
-      "no-gluten"
-    ],
+    "diets": [],
     "mealTypes": [
       "dinner"
     ],
@@ -5525,9 +5523,7 @@
     "title": "Beef Tikka",
     "summary": "Yoghurt-marinated beef skewers roasted hot and charred, kept pink in the middle.",
     "cuisine": "indian",
-    "diets": [
-      "no-gluten"
-    ],
+    "diets": [],
     "mealTypes": [
       "lunch",
       "dinner",
@@ -8404,9 +8400,7 @@
     "title": "Caesar Salad",
     "summary": "Crisp cos in an anchovy and parmesan dressing with garlic-rubbed sourdough croutons.",
     "cuisine": "american",
-    "diets": [
-      "pescatarian"
-    ],
+    "diets": [],
     "mealTypes": [
       "lunch",
       "dinner"
@@ -9350,8 +9344,7 @@
     "summary": "Chickpeas in a tangy tomato and onion gravy sharpened with amchur.",
     "cuisine": "indian",
     "diets": [
-      "vegetarian",
-      "no-gluten"
+      "vegetarian"
     ],
     "mealTypes": [
       "lunch",
@@ -31933,9 +31926,7 @@
     "title": "Minestrone",
     "summary": "A thick vegetable, bean and pasta soup built on a parmesan rind, finished with pesto.",
     "cuisine": "italian",
-    "diets": [
-      "vegetarian"
-    ],
+    "diets": [],
     "mealTypes": [
       "lunch",
       "dinner"
@@ -33232,7 +33223,6 @@
     "summary": "A pale, soft French omelette rolled around its filling while still glossy inside.",
     "cuisine": "french",
     "diets": [
-      "vegetarian",
       "no-gluten"
     ],
     "mealTypes": [
@@ -33271,10 +33261,39 @@
             "ingredientId": "white-pepper"
           },
           {
-            "item": "Optional fillings: grated Gruyère",
-            "raw": "Optional fillings: grated Gruyère, chopped chives, ham, sautéed mushrooms, smoked salmon",
+            "item": "Grated Gruyère",
+            "raw": "Grated Gruyère, to fill (optional)",
             "ingredientId": "gruyere",
-            "prep": "chopped chives, ham, sautéed mushrooms, smoked salmon"
+            "prep": "to fill",
+            "optional": true
+          },
+          {
+            "item": "Chopped chives",
+            "raw": "Chopped chives, to fill (optional)",
+            "ingredientId": "chives",
+            "prep": "to fill",
+            "optional": true
+          },
+          {
+            "item": "Ham",
+            "raw": "Ham, to fill (optional)",
+            "ingredientId": "ham",
+            "prep": "to fill",
+            "optional": true
+          },
+          {
+            "item": "Sautéed mushrooms",
+            "raw": "Sautéed mushrooms, to fill (optional)",
+            "ingredientId": "button-mushroom",
+            "prep": "to fill",
+            "optional": true
+          },
+          {
+            "item": "Smoked salmon",
+            "raw": "Smoked salmon, to fill (optional)",
+            "ingredientId": "smoked-salmon",
+            "prep": "to fill",
+            "optional": true
           }
         ]
       }
@@ -33913,8 +33932,7 @@
     "summary": "Golden paneer in a velvety tomato, cashew and cream sauce scented with fenugreek.",
     "cuisine": "indian",
     "diets": [
-      "vegetarian",
-      "no-gluten"
+      "vegetarian"
     ],
     "mealTypes": [
       "dinner"
@@ -36917,8 +36935,7 @@
     "cuisine": "indian",
     "diets": [
       "pescatarian",
-      "no-gluten",
-      "no-dairy"
+      "no-gluten"
     ],
     "mealTypes": [
       "dinner"
@@ -37440,10 +37457,6 @@
             "quantity": 1,
             "unit": "tsp",
             "ingredientId": "salt"
-          },
-          {
-            "item": "Pan juices from the pork",
-            "raw": "Pan juices from the pork"
           }
         ]
       },
@@ -44807,7 +44820,6 @@
     "summary": "Fresh rice paper rolls of prawn, herbs and vermicelli with a peanut hoisin dip.",
     "cuisine": "vietnamese",
     "diets": [
-      "pescatarian",
       "no-dairy"
     ],
     "mealTypes": [
@@ -51323,7 +51335,6 @@
     "summary": "Thick, chewy udon in a hot dashi, soy and mirin broth with fish cake and egg.",
     "cuisine": "japanese",
     "diets": [
-      "pescatarian",
       "no-dairy"
     ],
     "mealTypes": [
@@ -51467,8 +51478,7 @@
     "summary": "Sweet potato, cauliflower and chickpeas simmered in a spiced coconut sauce.",
     "cuisine": "indian",
     "diets": [
-      "vegetarian",
-      "no-gluten"
+      "vegetarian"
     ],
     "mealTypes": [
       "lunch",
@@ -52750,7 +52760,6 @@
     "summary": "Salted zucchini ribbons tossed briefly with garlic, cherry tomato, lemon and basil.",
     "cuisine": "modern-australian",
     "diets": [
-      "pescatarian",
       "no-gluten"
     ],
     "mealTypes": [

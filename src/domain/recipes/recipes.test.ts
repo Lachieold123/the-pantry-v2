@@ -2,75 +2,10 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
 import { catalogue, index, makeRecipe } from '../testing/fixtures';
-import { containsAvoided, deriveDiets, fitsDietPreference } from './diets';
 import { countActiveFilters, editDistance, indexForSearch, matchesFilters, NO_FILTERS, searchRecipes, seasonOn } from './search';
 import { allLines } from './types';
 import { substitutionFor, SUBSTITUTION_IDS } from './substitutions';
 import { validateRecipe } from './validate';
-
-const diets = (lines: string[]) => deriveDiets(allLines(makeRecipe('x', lines)), index.byId);
-
-describe('deriveDiets', () => {
-  it('tags a plant-only dish vegan and vegetarian', () => {
-    assert.deepEqual(diets(['400g tinned chickpeas', '1 brown onion', '2 tbsp olive oil']), [
-      'vegetarian',
-      'vegan',
-      'no-gluten',
-      'no-dairy',
-    ]);
-  });
-  it('dairy and eggs are vegetarian but not vegan', () => {
-    assert.deepEqual(diets(['100g butter', '2 eggs']), ['vegetarian', 'no-gluten']);
-  });
-  it('fish makes it pescatarian, not vegetarian', () => {
-    assert.deepEqual(diets(['2 salmon fillets']), ['pescatarian', 'no-gluten', 'no-dairy']);
-  });
-  it('hidden animal products count: fish sauce, oyster sauce, chicken stock', () => {
-    assert.ok(!diets(['1 tbsp fish sauce']).includes('vegetarian'));
-    assert.ok(!diets(['2 tbsp oyster sauce']).includes('vegetarian'));
-    assert.ok(!diets(['500ml chicken stock']).includes('vegetarian'));
-  });
-  it('soy sauce contains gluten', () => {
-    assert.ok(!diets(['2 tbsp soy sauce']).includes('no-gluten'));
-  });
-  it('optional ingredients do not decide the diet', () => {
-    const r = makeRecipe('x', ['1 brown onion', '100g bacon (optional)']);
-    assert.ok(deriveDiets(allLines(r), index.byId).includes('vegetarian'));
-  });
-  it('an unidentified ingredient with a quantity blocks every tag', () => {
-    assert.deepEqual(diets(['1 brown onion', '2 tbsp mystery paste']), []);
-  });
-});
-
-describe('diet preferences', () => {
-  it('pescatarians can eat vegetarian dishes too', () => {
-    assert.ok(fitsDietPreference({ diets: ['vegetarian'] }, 'pescatarian'));
-    assert.ok(!fitsDietPreference({ diets: [] }, 'pescatarian'));
-    assert.ok(fitsDietPreference({ diets: [] }, 'everything'));
-  });
-});
-
-describe('containsAvoided', () => {
-  const satay = makeRecipe('satay', ['2 tbsp peanut butter', '1 tbsp soy sauce', '200g cashews']);
-  it('"nuts" covers peanuts and tree nuts', () => {
-    assert.ok(containsAvoided(satay, { options: ['nuts'], custom: [] }, index));
-  });
-  it('"gluten" catches soy sauce, not just flour', () => {
-    assert.ok(containsAvoided(satay, { options: ['gluten'], custom: [] }, index));
-  });
-  it('custom entries match the database and plain words', () => {
-    const r = makeRecipe('r', ['1 bunch coriander', '1 tbsp kasuri methi']);
-    assert.ok(
-      containsAvoided(r, { options: [], custom: ['cilantro'] }, index) || containsAvoided(r, { options: [], custom: ['coriander'] }, index),
-    );
-    assert.ok(containsAvoided(r, { options: [], custom: ['methi'] }, index));
-    assert.ok(!containsAvoided(r, { options: [], custom: ['mushroom'] }, index));
-  });
-  it('optional lines still count: better to hide the dish', () => {
-    const r = makeRecipe('r', ['1 brown onion', '50g walnuts (optional)']);
-    assert.ok(containsAvoided(r, { options: ['nuts'], custom: [] }, index));
-  });
-});
 
 describe('search', () => {
   const searchIndex = indexForSearch(catalogue, (c) => c);

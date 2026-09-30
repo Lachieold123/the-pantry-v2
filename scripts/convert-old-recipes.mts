@@ -106,12 +106,16 @@ for (const id of Object.keys(RECIPES).sort()) {
       'ingredients',
       group.items,
       fix?.ingredients?.filter((r) => group.items.some((t) => t.includes(r.from))),
-    ).map((raw) => {
-      const parsed = parseIngredientLine(raw, index.match);
-      const worth = parsed.issues.filter((i) => i !== 'serving-suggestion' && i !== 'no-quantity');
-      if (worth.length) lineIssues.push({ id, raw, issues: worth });
-      return parsed.line;
-    });
+    )
+      // A fix can split one line into several ("\n") or remove it (""): see recipe-fixes.json.
+      .flatMap((raw) => raw.split('\n'))
+      .filter((raw) => raw.trim() !== '')
+      .map((raw) => {
+        const parsed = parseIngredientLine(raw, index.match);
+        const worth = parsed.issues.filter((i) => i !== 'serving-suggestion' && i !== 'no-quantity');
+        if (worth.length) lineIssues.push({ id, raw, issues: worth });
+        return parsed.line;
+      });
     return group.section ? { title: group.section, items } : { items };
   });
   const hasImage = existsSync(join(oldApp, 'assets/recipes', `${id}.jpg`));
@@ -124,7 +128,7 @@ for (const id of Object.keys(RECIPES).sort()) {
     cuisine: tag.cuisine,
     diets: deriveDiets(
       ingredientGroups.flatMap((g) => g.items),
-      index.byId,
+      index,
     ),
     mealTypes: tag.mealTypes,
     difficulty: old.difficulty ?? 'easy',
@@ -193,7 +197,7 @@ const csv = [
 ].join('\n');
 writeFileSync(join(root, 'docs/reports/recipe-review.csv'), `${csv}\n`);
 
-// Diets are worked out from the first-named option of "A or B" lines, which is the cautious choice.
+// A diet tag needs every option of an "A or B" line to fit it, which is the cautious choice.
 // These recipes would gain "vegetarian" if the line were rewritten to name the meat-free option.
 const vegetarianIfRewritten = recipes
   .filter((r) => !r.diets.includes('vegetarian'))
@@ -202,11 +206,11 @@ const vegetarianIfRewritten = recipes
     // Only lines where one of the options is itself meat- and fish-free ("chicken or vegetable stock", "beef stock or water").
     const meatFreeOption = (text: string) => {
       const id = index.match(text);
-      return id !== undefined && deriveDiets([{ item: text, raw: text, quantity: 1, ingredientId: id }], index.byId).includes('vegetarian');
+      return id !== undefined && deriveDiets([{ item: text, raw: text, quantity: 1, ingredientId: id }], index).includes('vegetarian');
     };
     const orLines = lines.filter((l) => / or /i.test(l.item) && l.item.split(/ or /i).some((alt) => meatFreeOption(alt.trim())));
     const rest = lines.filter((l) => !orLines.includes(l));
-    return { r, orLines, restDiets: deriveDiets(rest, index.byId) };
+    return { r, orLines, restDiets: deriveDiets(rest, index) };
   })
   .filter((x) => x.orLines.length > 0 && x.restDiets.includes('vegetarian'));
 
@@ -219,7 +223,7 @@ const report = [
   '',
   `- Validation problems: **${problems.length}**`,
   `- Lines matched to no ingredient: **${byIssue('no-ingredient-match').length}**`,
-  `- Lines naming two ingredients ("A or B"): **${byIssue('multiple-ingredients').length}** (the first-named is used for the list and diets)`,
+  `- Lines naming two ingredients ("A or B"): **${byIssue('multiple-ingredients').length}** (the list uses one; diets and the avoid list check every option)`,
   `- Recipes with no photo: **${noImage.length}**`,
   `- Hand fixes applied from \`scripts/data/recipe-fixes.json\`: **${applied.length + Object.values(fixes).reduce((n, f) => n + (f.addNotes?.length ?? 0), 0)}**`,
   '',

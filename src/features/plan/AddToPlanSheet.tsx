@@ -12,6 +12,7 @@ import { longDate } from '@/lib/dates';
 import { usePlan } from '@/store/plan';
 import { useAllRecipes, useRecipeLookup } from '@/store/recipeBook';
 import { useSaved } from '@/store/saved';
+import { useForYou } from '@/store/suggestions';
 import { RecipeCard } from '@/ui/patterns/RecipeCard';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { useToast } from '@/ui/patterns/Toast';
@@ -47,10 +48,18 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
     () => bookmarks.map((b) => getRecipe(b.recipeId)).filter((r): r is Recipe => r !== undefined),
     [bookmarks, getRecipe],
   );
-  const results = useMemo(() => {
-    const pool = query.trim() ? searchRecipes(searchIndex, query) : all.filter((r) => r.mealTypes.includes(slot));
-    return pool.filter((r) => !hidden.includes(r.id)).slice(0, MAX_RESULTS);
-  }, [query, slot, hidden, searchIndex, all]);
+  // Ideas follow the cook's diet and avoid list and are ranked for them, like every other suggestion.
+  // A search is an explicit ask, so it shows whatever matches (bar "not for us").
+  const ideas = useForYou(MAX_RESULTS, slot);
+  const results = useMemo(
+    () =>
+      query.trim()
+        ? searchRecipes(searchIndex, query)
+            .filter((r) => !hidden.includes(r.id))
+            .slice(0, MAX_RESULTS)
+        : ideas,
+    [query, hidden, searchIndex, ideas],
+  );
 
   const dayName = day === toISODate(new Date()) ? 'today' : (longDate(fromISODate(day)).split(' ')[0] ?? day);
   const pick = (recipe: Recipe) => {
@@ -82,7 +91,9 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
         <SectionHeader title={query.trim() ? 'Results' : `Ideas for ${slot}`} />
         {results.length === 0 ? (
           <Text variant="body" colour="inkSoft">
-            No recipes match. Check the spelling, or try an ingredient.
+            {query.trim()
+              ? 'No recipes match. Check the spelling, or try an ingredient.'
+              : `Nothing for ${slot} fits what you eat and avoid yet. Search to find something else.`}
           </Text>
         ) : null}
         {results.map((r) => (

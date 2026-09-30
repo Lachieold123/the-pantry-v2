@@ -3,7 +3,7 @@
 // not suggestions, and the randomness is injectable so tests are exact.
 
 import type { IngredientIndex } from '../ingredients/database';
-import { containsAvoided, fitsDietPreference, type AvoidList, type DietPreference } from '../recipes/diets';
+import { fitsTaste, type AvoidList, type DietPreference } from '../recipes/diets';
 import { matchesFilters, type RecipeFilters } from '../recipes/search';
 import type { Recipe } from '../recipes/types';
 
@@ -27,10 +27,7 @@ export type SurpriseInput = {
 export function eligibleForSurprise(input: Omit<SurpriseInput, 'random' | 'recentlyCooked' | 'alreadyShown' | 'planned'>): Recipe[] {
   return input.recipes.filter(
     (r) =>
-      !input.hidden.has(r.id) &&
-      fitsDietPreference(r, input.diet) &&
-      matchesFilters(r, input.filters) &&
-      !containsAvoided(r, input.avoid, input.index),
+      !input.hidden.has(r.id) && matchesFilters(r, input.filters) && fitsTaste(r, { diet: input.diet, avoid: input.avoid }, input.index),
   );
 }
 

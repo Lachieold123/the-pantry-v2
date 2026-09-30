@@ -395,6 +395,16 @@
     ]
   },
   {
+    "id": "tempeh",
+    "name": "tempeh",
+    "plural": "tempeh",
+    "aisle": "fruit-veg",
+    "aliases": [],
+    "groups": [
+      "soy"
+    ]
+  },
+  {
     "id": "fresh-oregano",
     "name": "fresh oregano",
     "plural": "fresh oregano",
@@ -1558,6 +1568,20 @@
     ]
   },
   {
+    "id": "lamb",
+    "name": "lamb",
+    "plural": "lamb",
+    "aisle": "meat",
+    "aliases": [
+      "diced lamb",
+      "lamb meat"
+    ],
+    "groups": [
+      "meat",
+      "lamb"
+    ]
+  },
+  {
     "id": "lard",
     "name": "lard",
     "plural": "lard",
@@ -1716,6 +1740,20 @@
       "pork neck",
       "boston butt",
       "pork butt"
+    ],
+    "groups": [
+      "meat",
+      "pork"
+    ]
+  },
+  {
+    "id": "pork",
+    "name": "pork",
+    "plural": "pork",
+    "aisle": "meat",
+    "aliases": [
+      "diced pork",
+      "pork meat"
     ],
     "groups": [
       "meat",
@@ -2025,6 +2063,18 @@
       "hake",
       "basa",
       "blue-eye"
+    ],
+    "groups": [
+      "fish"
+    ]
+  },
+  {
+    "id": "fish",
+    "name": "fish",
+    "plural": "fish",
+    "aisle": "seafood",
+    "aliases": [
+      "fresh fish"
     ],
     "groups": [
       "fish"
@@ -2574,7 +2624,8 @@
       "greek feta",
       "danish feta",
       "queso fresco",
-      "crumbled feta"
+      "crumbled feta",
+      "feta cheese"
     ],
     "groups": [
       "dairy"
@@ -2591,7 +2642,9 @@
       "bocconcini",
       "cherry mozzarella",
       "fior di latte",
-      "burrata"
+      "burrata",
+      "bocconcini cheese",
+      "burrata cheese"
     ],
     "groups": [
       "dairy"
@@ -2638,7 +2691,9 @@
       "gruyere or fontina",
       "comté",
       "comte",
-      "fontina"
+      "fontina",
+      "gruyère cheese",
+      "gruyere cheese"
     ],
     "groups": [
       "dairy",
@@ -2651,7 +2706,8 @@
     "plural": "halloumi",
     "aisle": "dairy-eggs",
     "aliases": [
-      "haloumi"
+      "haloumi",
+      "halloumi cheese"
     ],
     "groups": [
       "dairy"
@@ -2687,7 +2743,9 @@
     "name": "mascarpone",
     "plural": "mascarpone",
     "aisle": "dairy-eggs",
-    "aliases": [],
+    "aliases": [
+      "mascarpone cheese"
+    ],
     "groups": [
       "dairy"
     ]
@@ -2718,7 +2776,8 @@
       "shredded mozzarella",
       "pizza cheese",
       "low-moisture mozzarella",
-      "kasar"
+      "kasar",
+      "mozzarella cheese"
     ],
     "groups": [
       "dairy"
@@ -2739,7 +2798,9 @@
     "name": "paneer",
     "plural": "paneer",
     "aisle": "dairy-eggs",
-    "aliases": [],
+    "aliases": [
+      "paneer cheese"
+    ],
     "groups": [
       "dairy"
     ]
@@ -2754,7 +2815,8 @@
       "parmigiano",
       "grana padano",
       "parmesan rind",
-      "parmesan or pecorino"
+      "parmesan or pecorino",
+      "parmesan cheese"
     ],
     "groups": [
       "dairy",
@@ -2767,7 +2829,8 @@
     "plural": "pecorino",
     "aisle": "dairy-eggs",
     "aliases": [
-      "pecorino romano"
+      "pecorino romano",
+      "pecorino cheese"
     ],
     "groups": [
       "dairy",
@@ -2794,7 +2857,8 @@
     "aliases": [
       "whole-milk ricotta",
       "whole milk ricotta",
-      "fresh ricotta"
+      "fresh ricotta",
+      "ricotta cheese"
     ],
     "groups": [
       "dairy"
@@ -4091,8 +4155,7 @@
     "aisle": "sauces-oils",
     "aliases": [
       "white cane vinegar",
-      "sukang iloko",
-      "coconut vinegar"
+      "sukang iloko"
     ],
     "groups": []
   },
