@@ -72,7 +72,7 @@ appId: host.exp.Exponent
 - assertVisible: "Vegetable Lasagna cooked. Nice work."
 - assertVisible:
     id: "recipe-screen"
-- assertVisible: "Cooked. Mark as cooked again"
+- assertVisible: "Cooked, mark as cooked again"
 - tapOn:
     id: "back"
 

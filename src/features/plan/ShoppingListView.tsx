@@ -196,7 +196,9 @@ function InCupboard({ items, onBack }: { items: ShoppingItem[]; onBack: (item: S
             key={item.key}
             kind="quick"
             icon="add"
+            role="button"
             label={itemLabel(item)}
+            accessibilityLabel={`Add ${itemLabel(item)} back to the list`}
             selected={false}
             onPress={() => onBack(item)}
             testID={`shopping-back-${item.key}`}

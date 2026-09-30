@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { View } from 'react-native';
 
 import type { UnsureLine } from '@/domain/recipes/draft';
+import { useAnnounce } from '@/ui/a11y/announce';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { Button } from '@/ui/primitives/Button';
@@ -51,6 +52,12 @@ export function RecipeEditorScreen({ id, fromImport }: { id: string | undefined;
   const { draft, update } = editor;
   const [confirmingCancel, setConfirmingCancel] = useState(false);
   const [confirmingDelete, setConfirmingDelete] = useState(false);
+  const problems =
+    editor.showProblems && !editor.built.recipe
+      ? `Almost there: ${editor.built.problems.map((p) => p.message.replace(/\.$/, '').toLowerCase()).join(', ')}.`
+      : null;
+  // Said aloud when Save finds problems; a live region alone is silent on iPhone (audit F97).
+  useAnnounce(problems, { initial: true });
 
   if (!editor.exists) {
     return (
@@ -76,9 +83,9 @@ export function RecipeEditorScreen({ id, fromImport }: { id: string | undefined;
         </Text>
         <Button label="Save" kind="primary" onPress={editor.save} testID="editor-save" />
       </View>
-      {editor.showProblems && !editor.built.recipe ? (
-        <View style={{ gap: SPACE.sm }} accessibilityLiveRegion="polite">
-          <Text variant="body">{`Almost there: ${editor.built.problems.map((p) => p.message.replace(/\.$/, '').toLowerCase()).join(', ')}.`}</Text>
+      {problems ? (
+        <View style={{ gap: SPACE.sm }}>
+          <Text variant="body">{problems}</Text>
           <Button label="Save to finish later" onPress={editor.saveDraft} testID="editor-save-draft" />
         </View>
       ) : null}

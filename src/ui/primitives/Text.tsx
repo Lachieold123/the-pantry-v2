@@ -1,6 +1,7 @@
 // The only way text appears in the app: every string uses a type token and a
 // colour token. Dynamic Type is respected, with a ceiling so large type can't
 // break layouts (the original had none; audit QUAL-21).
+import type { Ref } from 'react';
 import { Text as RNText, type TextProps as RNTextProps } from 'react-native';
 
 import { textStyle } from '@/ui/theme/fonts';
@@ -14,6 +15,8 @@ export type TextProps = RNTextProps & {
   /** A literal colour from another token set (a cuisine colour, text on a photo). */
   tone?: string | undefined;
   align?: 'left' | 'center' | 'right';
+  /** For moving screen reader focus to this text (a new heading); see focusOn(). */
+  ref?: Ref<RNText>;
 };
 
 const MUTED_BY_DEFAULT = new Set<TextVariant>(['kicker', 'kickerSection', 'kickerSmall', 'meta', 'metaSmall', 'caption', 'infoLabel']);

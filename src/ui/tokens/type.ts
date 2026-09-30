@@ -128,6 +128,16 @@ export const MOTION = { quick: 180, standard: 240, slow: 320, toast: 2500 } as c
 /** Minimum tap target, in points. */
 export const TAP_TARGET = 44;
 
+/**
+ * Invisible padding that grows a control drawn smaller than TAP_TARGET to a full
+ * target, so the original's compact pills keep their look but take a floury thumb.
+ */
+export function hitSlopFor(height: number, width = TAP_TARGET): { top: number; bottom: number; left: number; right: number } {
+  const y = Math.max(0, Math.ceil((TAP_TARGET - height) / 2));
+  const x = Math.max(0, Math.ceil((TAP_TARGET - width) / 2));
+  return { top: y, bottom: y, left: x, right: x };
+}
+
 export const ASPECT = { card: 4 / 3, hero: 16 / 9, square: 1, portrait: 4 / 5, spinner: 4 / 5.2 } as const;
 
 /** Fixed chrome sizes (spec §3.6). */
@@ -147,6 +157,11 @@ export const CHROME = {
   tabFade: 110,
   tabPadY: 6,
   tabGap: 5,
+  /** High contrast only: the bar under the chosen tab's label. */
+  tabMark: 3,
+  /** A small Segmented option's drawn height; hit slop grows it to 44pt inside the track's padding. */
+  segmentSmall: 36,
+  searchField: 46,
   tabHide: 180,
   fabBottom: 6,
   drawerMark: 36,
@@ -189,6 +204,9 @@ export const RECIPE = {
   iconDisc: 30,
   byline: 32,
   heroButton: 44,
+  /** The Cook pill's drawn height, and the Edit pill's (18pt label + 8pt padding each side). Both are grown to 44pt with hit slop. */
+  cookPill: 36,
+  editPill: 34,
 } as const;
 
 /** The Plan tab (spec §4.11–4.13): day cells, slot cards, suggestion cards, the progress track. */

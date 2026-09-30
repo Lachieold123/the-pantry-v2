@@ -61,7 +61,7 @@ appId: host.exp.Exponent
 - assertVisible: "Marked as cooked"
 - tapOn:
     id: "toast-undo"
-- assertVisible: "Mark as cooked"
+- assertVisible: "Cook, mark as cooked"
 
 # Servings: up two, reset, up one, imperial, done.
 - tapOn:

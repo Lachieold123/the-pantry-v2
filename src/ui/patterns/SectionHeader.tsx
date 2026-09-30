@@ -1,14 +1,22 @@
 // A section start: a small uppercase kicker over a serif title (spec §4.5).
 // The kicker is amber on Browse and Feed, grey on Cupboard and Plan.
-import type { ReactNode } from 'react';
-import { View } from 'react-native';
+import type { ReactNode, Ref } from 'react';
+import { View, type Text as RNText } from 'react-native';
 
 import { Text } from '@/ui/primitives/Text';
 import { SPACE } from '@/ui/tokens/type';
 
-type Props = { kicker?: string | undefined; title?: string | undefined; tone?: 'accent' | 'muted'; action?: ReactNode; inset?: boolean };
+type Props = {
+  kicker?: string | undefined;
+  title?: string | undefined;
+  tone?: 'accent' | 'muted';
+  action?: ReactNode;
+  inset?: boolean;
+  /** The title, for moving screen reader focus to it when it replaces what was on screen. */
+  titleRef?: Ref<RNText> | undefined;
+};
 
-export function SectionHeader({ kicker, title, tone = 'muted', action, inset = false }: Props) {
+export function SectionHeader({ kicker, title, tone = 'muted', action, inset = false, titleRef }: Props) {
   return (
     <View
       style={{
@@ -27,7 +35,7 @@ export function SectionHeader({ kicker, title, tone = 'muted', action, inset = f
           </Text>
         ) : null}
         {title ? (
-          <Text variant="sectionTitle" accessibilityRole="header">
+          <Text variant="sectionTitle" accessibilityRole="header" {...(titleRef ? { ref: titleRef } : {})}>
             {title}
           </Text>
         ) : null}

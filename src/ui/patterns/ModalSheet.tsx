@@ -3,6 +3,7 @@
 // mounted in the background (audit ARCH-1). Full tasks use route sheets instead.
 import type { ReactNode } from 'react';
 import { Modal, Pressable, StyleSheet, View } from 'react-native';
+import { useReducedMotion } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Text } from '@/ui/primitives/Text';
@@ -15,9 +16,12 @@ type Props = { visible: boolean; onClose: () => void; title: string; children: R
 export function ModalSheet({ visible, onClose, title, children, testID }: Props) {
   const styles = useStyles();
   const insets = useSafeAreaInsets();
+  // Reduce Motion asks for fades, not slides (audit F108).
+  const reduceMotion = useReducedMotion();
   return (
-    <Modal visible={visible} transparent animationType="slide" onRequestClose={onClose} statusBarTranslucent>
-      <View style={styles.wrap}>
+    <Modal visible={visible} transparent animationType={reduceMotion ? 'fade' : 'slide'} onRequestClose={onClose} statusBarTranslucent>
+      {/* Modal as a whole, backdrop included, so VoiceOver can reach "Close" and the scrub gesture closes it (audit F104). */}
+      <View style={styles.wrap} accessibilityViewIsModal onAccessibilityEscape={onClose}>
         <Pressable
           style={[StyleSheet.absoluteFill, styles.backdrop]}
           onPress={onClose}
@@ -25,11 +29,7 @@ export function ModalSheet({ visible, onClose, title, children, testID }: Props)
           accessibilityLabel="Close"
           testID="sheet-backdrop"
         />
-        <View
-          style={[styles.sheet, { paddingBottom: Math.max(insets.bottom, SPACE.md) }]}
-          {...(testID ? { testID } : {})}
-          accessibilityViewIsModal
-        >
+        <View style={[styles.sheet, { paddingBottom: Math.max(insets.bottom, SPACE.md) }]} {...(testID ? { testID } : {})}>
           <View style={styles.handle} />
           <Text variant="cardTitleMedium" align="center" accessibilityRole="header" style={styles.title}>
             {title}

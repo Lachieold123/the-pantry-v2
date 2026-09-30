@@ -32,6 +32,8 @@ export type ColourTokens = {
   danger: string;
   /** Text or icons on a danger fill (badges). */
   onDanger: string;
+  /** A switch's track when off. The original's grey all but vanishes on white, so high contrast darkens it. */
+  switchTrackOff: string;
   /** Soft category fills: cuisines, meal types, difficulty. */
   tintOrange: string;
   tintPeach: string;
@@ -61,6 +63,7 @@ export const light: ColourTokens = {
   bullet: '#F5B945',
   danger: '#D85A5A',
   onDanger: '#FFFFFF',
+  switchTrackOff: '#F7F7F7',
   tintOrange: '#FCE9C5',
   tintPeach: '#FBDDD0',
   tintButter: '#FFF3CC',
@@ -88,6 +91,7 @@ export const dark: ColourTokens = {
   bullet: '#F5B945',
   danger: '#FF6B6B',
   onDanger: '#FFFFFF',
+  switchTrackOff: '#141414',
   // The original kept light tints in dark mode by accident (spec §8.2); these are its own dark values.
   tintOrange: '#3A2C12',
   tintPeach: '#3A201A',
@@ -99,7 +103,11 @@ export const dark: ColourTokens = {
   tintNeutral: '#1F1F1F',
 };
 
-/** High contrast: pure ink, solid borders, deeper accents. Everything else inherits. */
+/**
+ * High contrast: pure ink, solid borders, deeper accents. Everything else inherits.
+ * High contrast is opt-in and v2's own, so unlike the normal themes it isn't bound to
+ * the original's look (D-025): every text pair here passes AA.
+ */
 export const lightHighContrast: ColourTokens = {
   ...light,
   bgSoft: '#F0F0F0',
@@ -110,6 +118,9 @@ export const lightHighContrast: ColourTokens = {
   inkSubtle: '#595959',
   accent: '#8A5A22',
   accentDeep: '#6E4A1C',
+  // The normal red is 3.8:1 on white; this one reads at 6.6:1 and still carries white badge text.
+  danger: '#A83232',
+  switchTrackOff: '#595959',
 };
 
 export const darkHighContrast: ColourTokens = {
@@ -125,6 +136,10 @@ export const darkHighContrast: ColourTokens = {
   inkSubtle: '#9A9A9A',
   accent: '#F0C081',
   accentDeep: '#E0AC6E',
+  // A light amber and a light red need dark text: white on them was under 3:1.
+  onAccent: '#000000',
+  onDanger: '#000000',
+  switchTrackOff: '#9A9A9A',
 };
 
 export type ThemeName = 'light' | 'dark';

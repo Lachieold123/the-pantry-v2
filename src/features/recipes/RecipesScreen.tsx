@@ -12,6 +12,7 @@ import type { Recipe } from '@/domain/recipes/types';
 import { useAllRecipes } from '@/store/recipeBook';
 import { useRecipeFilters } from '@/store/recipeFilters';
 import { useBookmarks } from '@/store/saved';
+import { useAnnounce } from '@/ui/a11y/announce';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { RecipeRow } from '@/ui/patterns/RecipeGrid';
 import { TitleBlock } from '@/ui/patterns/TitleBlock';
@@ -23,12 +24,15 @@ import { SearchField } from '@/ui/primitives/SearchField';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { useTheme } from '@/ui/theme/ThemeProvider';
-import { CARD, RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
+import { CARD, hitSlopFor, RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 import { BrowseSections } from './BrowseSections';
 import { useRecipeResults } from './useRecipeResults';
 
 const image = (id: string) => RECIPE_IMAGES[id];
 const RowGap = () => <View style={{ height: SPACE.sm }} />;
+// The "Quick meals ×" pill is drawn about 30pt tall (7pt padding around 16pt chip text).
+const BROWSE_PILL_HEIGHT = 30;
+const RESULTS_ANNOUNCE_MS = 800;
 
 export function RecipesScreen() {
   const router = useRouter();
@@ -55,6 +59,9 @@ export function RecipesScreen() {
     return out;
   }, [results]);
   const { isSaved, toggle } = bookmarks;
+  const count = results.length === 1 ? '1 recipe' : `${results.length} recipes`;
+  // Spoken once typing pauses, so VoiceOver isn't reading a count per keystroke (audit F97).
+  useAnnounce(browsing ? null : count, { delayMs: RESULTS_ANNOUNCE_MS });
   const renderRow = useCallback(
     ({ item }: { item: Recipe[] }) => (
       <View style={styles.inset}>
@@ -92,6 +99,7 @@ export function RecipesScreen() {
             <Pressable
               onPress={() => apply(togglePreset(shown, filters, query))}
               style={styles.pill}
+              hitSlop={hitSlopFor(BROWSE_PILL_HEIGHT)}
               accessibilityRole="button"
               accessibilityLabel={`${shown.label}, clear`}
               testID="browse-pill"
@@ -102,8 +110,8 @@ export function RecipesScreen() {
               <Icon name="close" size={14} colour="bg" />
             </Pressable>
           ) : null}
-          <Text variant="meta" accessibilityLiveRegion="polite" style={{ flex: 1 }}>
-            {results.length === 1 ? '1 recipe' : `${results.length} recipes`}
+          <Text variant="meta" style={{ flex: 1 }}>
+            {count}
           </Text>
           {activeFilters || showAll || query ? <Button label="Clear" kind="quiet" onPress={reset} testID="browse-clear" /> : null}
         </View>

@@ -49,7 +49,14 @@ export function FoodSettings() {
       <SectionHeader title="What you eat" />
       <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: SPACE.xs }}>
         {DIETS.map((d) => (
-          <Chip key={d} label={DIET_PREFERENCE_LABELS[d]} selected={diet === d} onPress={() => setDiet(d)} testID={`settings-diet-${d}`} />
+          <Chip
+            key={d}
+            role="radio"
+            label={DIET_PREFERENCE_LABELS[d]}
+            selected={diet === d}
+            onPress={() => setDiet(d)}
+            testID={`settings-diet-${d}`}
+          />
         ))}
       </View>
       <SectionHeader title="Ingredients to avoid" />
@@ -64,7 +71,15 @@ export function FoodSettings() {
           />
         ))}
         {avoid.custom.map((c) => (
-          <Chip key={c} label={`${c} ×`} selected onPress={() => removeAvoidWord(c)} testID={`settings-avoid-custom-${c}`} />
+          <Chip
+            key={c}
+            role="button"
+            label={`${c} ×`}
+            accessibilityLabel={`Remove ${c}`}
+            selected
+            onPress={() => removeAvoidWord(c)}
+            testID={`settings-avoid-custom-${c}`}
+          />
         ))}
       </View>
       {reach.length ? (

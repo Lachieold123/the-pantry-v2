@@ -1,11 +1,11 @@
-// The original's search box (spec §4.10): 46 tall, grey, rounded 14, with a
+// The original’s search box (spec §4.10): at least 46 tall, grey, rounded 14, with a
 // clear button once there's text. Results update as you type.
 import { Pressable, TextInput, View } from 'react-native';
 
 import { textStyle } from '@/ui/theme/fonts';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { useTheme } from '@/ui/theme/ThemeProvider';
-import { RADIUS, SPACE, TYPE } from '@/ui/tokens/type';
+import { CHROME, hitSlopFor, RADIUS, SPACE, TYPE } from '@/ui/tokens/type';
 import { Icon } from './Icon';
 
 type Props = {
@@ -17,12 +17,14 @@ type Props = {
   testID?: string | undefined;
 };
 
+const SEARCH_ICON = 18;
+
 export function SearchField({ value, onChange, placeholder, label, onSubmit, testID }: Props) {
   const styles = useStyles();
   const { colours } = useTheme();
   return (
     <View style={styles.box}>
-      <Icon name="search" size={18} colour="inkMuted" />
+      <Icon name="search" size={SEARCH_ICON} colour="inkMuted" />
       <TextInput
         value={value}
         onChangeText={onChange}
@@ -44,10 +46,10 @@ export function SearchField({ value, onChange, placeholder, label, onSubmit, tes
           onPress={() => onChange('')}
           accessibilityRole="button"
           accessibilityLabel="Clear search"
-          hitSlop={12}
+          hitSlop={hitSlopFor(SEARCH_ICON, SEARCH_ICON)}
           {...(testID ? { testID: `${testID}-clear` } : {})}
         >
-          <Icon name="clear" size={18} colour="inkMuted" />
+          <Icon name="clear" size={SEARCH_ICON} colour="inkMuted" />
         </Pressable>
       ) : null}
     </View>
@@ -57,7 +59,8 @@ export function SearchField({ value, onChange, placeholder, label, onSubmit, tes
 const useStyles = makeStyles(({ colours }) => ({
   box: {
     flex: 1,
-    height: 46,
+    // A minimum, not a fixed height, so text at the largest sizes isn't clipped (audit F105).
+    minHeight: CHROME.searchField,
     flexDirection: 'row',
     alignItems: 'center',
     gap: SPACE.xs,
@@ -67,5 +70,5 @@ const useStyles = makeStyles(({ colours }) => ({
     borderColor: colours.border,
     backgroundColor: colours.bgSoft,
   },
-  input: { flex: 1, height: 46, color: colours.ink, ...textStyle(TYPE.body), lineHeight: undefined },
+  input: { flex: 1, minHeight: CHROME.searchField, color: colours.ink, ...textStyle(TYPE.body), lineHeight: undefined },
 }));

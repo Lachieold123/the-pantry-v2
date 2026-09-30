@@ -1,7 +1,7 @@
 // Supplies the active colour tokens to every component. Screens read colours
 // only through useTheme(), so light, dark and high contrast are one switch.
-import { createContext, useContext, useMemo, type ReactNode } from 'react';
-import { useColorScheme } from 'react-native';
+import { createContext, useContext, useEffect, useMemo, type ReactNode } from 'react';
+import { Appearance, Platform, useColorScheme } from 'react-native';
 
 import { usePreferences } from '@/store/preferences';
 import { THEMES, type ColourTokens, type ThemeName } from '@/ui/tokens/colour';
@@ -15,6 +15,10 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   const appearance = usePreferences((s) => s.appearance);
   const highContrast = usePreferences((s) => s.highContrast);
   const name: ThemeName = appearance === 'system' ? (system === 'dark' ? 'dark' : 'light') : appearance;
+  // Native parts (the keyboard, the share sheet, alerts) follow the app's choice, not only the phone's (audit F142).
+  useEffect(() => {
+    if (Platform.OS !== 'web') Appearance.setColorScheme(appearance === 'system' ? 'unspecified' : appearance);
+  }, [appearance]);
   const value = useMemo<Theme>(
     () => ({ name, highContrast, colours: highContrast ? THEMES[name].highContrast : THEMES[name].normal }),
     [name, highContrast],

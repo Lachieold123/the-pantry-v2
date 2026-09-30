@@ -48,6 +48,7 @@ export function useCookTimers() {
     warnedOff.current = true;
     toast({
       message: 'Notifications are off, so timers can’t alert you with the phone locked.',
+      tone: 'problem',
       actionLabel: 'Open Settings',
       undo: () => void Linking.openSettings().catch(() => undefined),
     });

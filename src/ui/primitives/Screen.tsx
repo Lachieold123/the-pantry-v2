@@ -45,6 +45,8 @@ export function Screen({ children, scroll = true, edges = 'top', tab = false, su
       style={background}
       contentContainerStyle={padding}
       contentInsetAdjustmentBehavior="never"
+      // iOS only insets for the keyboard when asked, so low fields would sit under it (audit F182).
+      automaticallyAdjustKeyboardInsets
       keyboardShouldPersistTaps="handled"
       testID={testID}
       {...(refreshControl ? { refreshControl } : {})}

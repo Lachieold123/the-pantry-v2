@@ -79,6 +79,7 @@ export function PlanRecipeSheet({ id, servings: requested }: { id: string; servi
               {w.list.map((d, i) => (
                 <Chip
                   key={d.iso}
+                  role="radio"
                   label={d.short}
                   selected={d.iso === day}
                   onPress={() => setDay(d.iso)}

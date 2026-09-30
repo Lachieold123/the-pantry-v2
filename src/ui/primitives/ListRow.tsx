@@ -12,17 +12,21 @@ type Props = { title: string; detail?: string; value?: string; icon?: IconName; 
 
 export function ListRow({ title, detail, value, icon, onPress, testID }: Props) {
   const styles = useStyles();
+  // A row named by the user (a collection) can be blank; it still needs something to read and tap.
+  const name = title.trim() || 'Untitled';
+  // Everything visible is read, detail included ("Weeknights, 12 recipes"), not only the title (audit F103).
+  const label = [name, detail, value].filter(Boolean).join(', ');
   return (
     <Pressable
       onPress={onPress}
       {...(testID ? { testID } : {})}
       accessibilityRole="button"
-      accessibilityLabel={value ? `${title}, ${value}` : title}
+      accessibilityLabel={label}
       style={({ pressed }) => [styles.row, pressed && styles.pressed]}
     >
       {icon ? <Icon name={icon} size={20} /> : null}
       <View style={styles.text}>
-        <Text variant="rowSmall">{title}</Text>
+        <Text variant="rowSmall">{name}</Text>
         {detail ? <Text variant="caption">{detail}</Text> : null}
       </View>
       {value ? (
