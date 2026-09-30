@@ -39,17 +39,27 @@ export function splitStepTimers(text: string): StepSegment[] {
   return out.length ? out : [{ type: 'text', text }];
 }
 
-export type CookEvent = { id: string; recipeId: string; cookedAt: number };
+export type CookEvent = {
+  id: string;
+  recipeId: string;
+  cookedAt: number;
+  /**
+   * The old app only remembered *that* a dish was cooked, not when, so its
+   * history arrives dated at import time. Flagged so nothing reads that date as
+   * a real one: no fake streak, and it sorts behind every real cook.
+   */
+  dateUnknown?: true;
+};
 
 export function hasCooked(log: readonly CookEvent[], recipeId: string): boolean {
   return log.some((e) => e.recipeId === recipeId);
 }
 
-/** Most recent first, each recipe once. */
+/** Most recent first, each recipe once. Cooks with no real date come after every dated one. */
 export function recentlyCooked(log: readonly CookEvent[]): string[] {
   const seen = new Set<string>();
   return [...log]
-    .sort((a, b) => b.cookedAt - a.cookedAt)
+    .sort((a, b) => Number(!!a.dateUnknown) - Number(!!b.dateUnknown) || b.cookedAt - a.cookedAt)
     .map((e) => e.recipeId)
     .filter((id) => (seen.has(id) ? false : (seen.add(id), true)));
 }
@@ -58,6 +68,7 @@ export function recentlyCooked(log: readonly CookEvent[]): string[] {
  * Weeks in a row (Monday-start, local time) with at least one cook, counting
  * back from this week. This week not having a cook yet doesn't break the
  * streak until the week is over: a quiet streak shouldn't nag on Monday.
+ * Cooks with no real date are left out: they'd all land in the import week.
  */
 export function weeklyStreak(log: readonly CookEvent[], now: Date): number {
   const weekKey = (t: number) => {
@@ -66,7 +77,7 @@ export function weeklyStreak(log: readonly CookEvent[], now: Date): number {
     d.setDate(d.getDate() - ((d.getDay() + 6) % 7));
     return d.getTime();
   };
-  const weeks = new Set(log.map((e) => weekKey(e.cookedAt)));
+  const weeks = new Set(log.filter((e) => !e.dateUnknown).map((e) => weekKey(e.cookedAt)));
   const cursor = new Date(weekKey(now.getTime()));
   let streak = 0;
   if (!weeks.has(cursor.getTime())) cursor.setDate(cursor.getDate() - 7);

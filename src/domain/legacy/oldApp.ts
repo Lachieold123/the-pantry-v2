@@ -1,19 +1,24 @@
 // Reads what testers saved in the old app (the TestFlight builds) and turns
 // it into v2 records (D-005). Pure: the caller loads the old JSON and writes
 // the result into the v2 stores. The old data itself is never changed or
-// deleted, so a mistake here can always be fixed and re-run.
+// deleted, so a mistake here can be fixed and re-run: ids are derived from the
+// old ids, so a second run finds the same records (see merge.ts, audit F07).
 //
-// Imported: bookmarks, collections, hidden dishes, recently viewed, the cook
-// log, the cupboard, custom recipes and onboarding answers.
-// Not imported: the plan and shopping list (weekday-based and stale).
+// The field names are the old app's own (its `Persisted` type in
+// src/store/useStore.ts), not guesses: `favorites`, `recents`, `cookedRecipes`…
+//
+// Imported: bookmarks, collections, hidden dishes, recently viewed, what was
+// cooked, the cupboard, custom recipes and onboarding answers.
+// Not imported: the plan and shopping list (weekday-based and stale), the
+// profile, filters, notification settings and Pro status.
 
 import type { IngredientIndex } from '../ingredients/database';
 import { AVOID_OPTIONS, type AvoidList, type AvoidOption, type DietPreference } from '../recipes/diets';
 import { EMPTY_DRAFT, myRecipeId, type RecipeDraft } from '../recipes/draft';
 import type { TimeFilter } from '../recipes/search';
-import type { CuisineId, Difficulty } from '../recipes/types';
+import type { CuisineId, Difficulty, MealType } from '../recipes/types';
+import type { CookEvent } from '../cook/cook';
 
-/** Storage keys the old app used, newest first (it was renamed twice). */
 /**
  * v1's cupboard stored loose names ("Chicken", "Pork"). Where the ingredient
  * matcher would guess badly or find nothing, this says what they meant: the
@@ -33,6 +38,7 @@ const OLD_PANTRY_NAMES: Readonly<Record<string, string>> = {
   'wholemeal flour': 'plain-flour',
 };
 
+/** Storage keys the old app used, newest first (it was renamed twice). */
 export const OLD_STORAGE_KEYS = ['the-pantry/v1', 'the-hub/v1', 'dinner-spinner/v1'] as const;
 
 export type ImportedRecipe = { id: string; draft: RecipeDraft };
@@ -45,14 +51,18 @@ export type ImportedTaste = {
 };
 
 export type OldAppImport = {
+  /** Newest first, the way the old app showed them. */
   bookmarks: string[];
-  collections: { name: string; recipeIds: string[]; createdAt: number }[];
+  collections: { id: string; name: string; recipeIds: string[]; createdAt: number }[];
   hidden: string[];
   recentlyViewed: string[];
-  cooks: { recipeId: string; cookedAt: number }[];
+  /** One per dish the old app had ticked as cooked. It never kept dates, so each is dated now and flagged. */
+  cooks: CookEvent[];
   cupboard: string[];
+  /** Cupboard names nothing here matched, so the welcome line can say so. */
+  cupboardMissed: string[];
   recipes: ImportedRecipe[];
-  /** Only when the tester finished the old onboarding. */
+  /** Only when the tester actually answered the old onboarding. */
   taste?: ImportedTaste | undefined;
   /** References to dishes that aren't in v2, left behind. */
   dropped: number;
@@ -80,8 +90,26 @@ const OLD_DIETS: Readonly<Record<string, DietPreference>> = {
 };
 const OLD_TIMES: Readonly<Record<string, TimeFilter | undefined>> = { quick: 'under-30', medium: 'under-45', long: undefined };
 
+/**
+ * Skipping the old onboarding saved `completed: true` with every answer left at
+ * its default (v1 HomeScreen `onSkip`). That's no answer at all, so it mustn't
+ * skip v2's welcome or leave a 45-minute preference nobody chose (audit F148).
+ */
+function skipped(prefs: Obj): boolean {
+  const empty = (v: unknown) => strings(v).length === 0;
+  const either = (v: unknown, dflt: string) => v === undefined || v === dflt;
+  return (
+    either(prefs.diet, 'omnivore') &&
+    either(prefs.time, 'medium') &&
+    either(prefs.skill, 'medium') &&
+    either(prefs.unitSystem, 'metric') &&
+    empty(prefs.cuisines) &&
+    empty(prefs.avoid)
+  );
+}
+
 function taste(prefs: unknown): ImportedTaste | undefined {
-  if (!isObj(prefs) || prefs.completed !== true) return undefined;
+  if (!isObj(prefs) || prefs.completed !== true || skipped(prefs)) return undefined;
   const options: AvoidOption[] = [];
   const custom: string[] = [];
   for (const word of strings(prefs.avoid).map((w) => w.trim().toLowerCase())) {
@@ -109,8 +137,22 @@ function titleFromId(id: string): string {
   return words ? words.charAt(0).toUpperCase() + words.slice(1) : 'My recipe';
 }
 
-function draftFromOld(title: string, old: unknown): RecipeDraft {
-  if (!isObj(old)) return { ...EMPTY_DRAFT, title };
+/** A short, stable tag for an old id, so the same old recipe always gets the same new id (FNV-1a). */
+function stableTag(oldId: string): string {
+  let h = 0x811c9dc5;
+  for (let i = 0; i < oldId.length; i++) h = Math.imul(h ^ oldId.charCodeAt(i), 0x01000193) >>> 0;
+  return `v1${h.toString(36)}`;
+}
+
+type CatalogueDish = { title: string; cuisine: CuisineId; mealTypes: readonly MealType[] };
+
+function draftFromOld(title: string, old: unknown, dish: CatalogueDish | undefined): RecipeDraft {
+  // Your version of a built-in dish is still that dish: same cuisine and meals,
+  // so it isn't held back as a draft just for want of a cuisine (audit F10).
+  const base: RecipeDraft = dish
+    ? { ...EMPTY_DRAFT, title, cuisine: dish.cuisine, mealTypes: [...dish.mealTypes] }
+    : { ...EMPTY_DRAFT, title };
+  if (!isObj(old)) return base;
   const ingredients = (Array.isArray(old.ingredients) ? old.ingredients : []).flatMap((group: unknown) =>
     isObj(group)
       ? [...(typeof group.section === 'string' && group.section.trim() ? [`${group.section.trim()}:`] : []), ...strings(group.items)]
@@ -118,8 +160,7 @@ function draftFromOld(title: string, old: unknown): RecipeDraft {
   );
   const difficulty: Difficulty = old.difficulty === 'medium' || old.difficulty === 'hard' ? old.difficulty : 'easy';
   return {
-    ...EMPTY_DRAFT,
-    title,
+    ...base,
     difficulty,
     prepMinutes: Math.max(0, Math.round(num(old.prepMinutes, EMPTY_DRAFT.prepMinutes))),
     cookMinutes: Math.max(0, Math.round(num(old.cookMinutes, EMPTY_DRAFT.cookMinutes))),
@@ -133,10 +174,15 @@ function draftFromOld(title: string, old: unknown): RecipeDraft {
 export type ImportContext = {
   /** Every recipe id in the v2 catalogue, drafts included, so nothing is lost when a dish is vetted later. */
   catalogueIds: ReadonlySet<string>;
-  titleOf: (catalogueId: string) => string | undefined;
+  dish: (catalogueId: string) => CatalogueDish | undefined;
   index: IngredientIndex;
   now: number;
-  random: () => string;
+  /**
+   * Your recipe with this exact title, if you already have one. An earlier
+   * importer gave recipes random ids; reusing the one it made stops a re-run
+   * adding a second copy.
+   */
+  mine?: ((title: string) => string | undefined) | undefined;
 };
 
 export function importOldApp(raw: string, ctx: ImportContext): OldAppImport | undefined {
@@ -148,7 +194,7 @@ export function importOldApp(raw: string, ctx: ImportContext): OldAppImport | un
   }
   if (!isObj(old)) return undefined;
 
-  // Custom recipes and name-only custom meals become your own recipes, with new ids.
+  // Custom recipes and name-only custom meals become your own recipes, with ids made from the old ones.
   const newIds = new Map<string, string>();
   const recipes: ImportedRecipe[] = [];
   const names = new Map<string, string>();
@@ -159,13 +205,11 @@ export function importOldApp(raw: string, ctx: ImportContext): OldAppImport | un
   for (const oldId of new Set([...names.keys(), ...Object.keys(oldRecipes)])) {
     // An edited built-in keeps pointing at the catalogue; the edit comes across as your own version.
     const edited = ctx.catalogueIds.has(oldId);
-    const title = (names.get(oldId) || (edited ? `${ctx.titleOf(oldId) ?? titleFromId(oldId)} (my version)` : titleFromId(oldId))).slice(
-      0,
-      80,
-    );
-    const id = myRecipeId(title, ctx.random());
+    const dish = edited ? ctx.dish(oldId) : undefined;
+    const title = (names.get(oldId) || (edited ? `${dish?.title ?? titleFromId(oldId)} (my version)` : titleFromId(oldId))).slice(0, 80);
+    const id = ctx.mine?.(title) ?? myRecipeId(title, stableTag(oldId));
     if (!edited) newIds.set(oldId, id);
-    recipes.push({ id, draft: draftFromOld(title, oldRecipes[oldId]) });
+    recipes.push({ id, draft: draftFromOld(title, oldRecipes[oldId], dish) });
   }
 
   const dropped = new Set<string>();
@@ -176,46 +220,44 @@ export function importOldApp(raw: string, ctx: ImportContext): OldAppImport | un
   };
   const resolveAll = (ids: string[]) => [...new Set(ids.map(resolve).filter((id): id is string => id !== undefined))];
 
-  const collections = (Array.isArray(old.collections) ? old.collections : []).flatMap((c: unknown) =>
+  const collections = (Array.isArray(old.collections) ? old.collections : []).flatMap((c: unknown, i: number) =>
     isObj(c) && typeof c.name === 'string' && c.name.trim()
-      ? [{ name: c.name.trim().slice(0, 40), recipeIds: resolveAll(strings(c.recipeIds)), createdAt: num(c.createdAt, ctx.now) }]
+      ? [
+          {
+            id: `v1-${typeof c.id === 'string' && c.id ? c.id : i}`,
+            name: c.name.trim().slice(0, 40),
+            recipeIds: resolveAll(strings(c.recipeIds)),
+            createdAt: num(c.createdAt, ctx.now),
+          },
+        ]
       : [],
   );
-  const cooks = (Array.isArray(old.cookLog) ? old.cookLog : []).flatMap((e: unknown) => {
-    if (!isObj(e) || typeof e.id !== 'string' || typeof e.at !== 'number') return [];
-    const recipeId = resolve(e.id);
-    return recipeId ? [{ recipeId, cookedAt: e.at }] : [];
-  });
-  const cupboard = [
-    ...new Set(strings(old.pantryItems).map((name) => OLD_PANTRY_NAMES[name.trim().toLowerCase()] ?? ctx.index.match(name))),
-  ].filter((id): id is string => id !== undefined);
+  // The old app kept a set of cooked dish ids with no dates (Lachlan, 30 Sep 2026: one cook each, dated now, flagged).
+  const cooks = resolveAll(strings(old.cookedRecipes)).map((recipeId): CookEvent => ({
+    id: `v1-cooked-${recipeId}`,
+    recipeId,
+    cookedAt: ctx.now,
+    dateUnknown: true,
+  }));
+  const cupboard = new Set<string>();
+  const cupboardMissed = new Set<string>();
+  for (const name of strings(old.pantryItems).map((n) => n.trim())) {
+    const id = OLD_PANTRY_NAMES[name.toLowerCase()] ?? ctx.index.match(name);
+    if (id) cupboard.add(id);
+    else if (name) cupboardMissed.add(name);
+  }
 
   return {
-    bookmarks: resolveAll(strings(old.favorites)),
+    // The old app kept favourites in the order they were added and showed them newest first.
+    bookmarks: resolveAll(strings(old.favorites).reverse()),
     collections,
     hidden: resolveAll(strings(old.hidden)),
-    recentlyViewed: resolveAll(strings(old.recentlyViewed)),
+    recentlyViewed: resolveAll(strings(old.recents)),
     cooks,
-    cupboard,
+    cupboard: [...cupboard],
+    cupboardMissed: [...cupboardMissed],
     recipes,
     taste: taste(old.preferences),
     dropped: dropped.size,
   };
-}
-
-/** The single "Welcome back" line (D-005). Undefined when there was nothing worth saying. */
-export function welcomeBackLine(result: OldAppImport): string | undefined {
-  const parts: string[] = [];
-  const count = (n: number, one: string, many: string) => (n > 0 ? `${n} ${n === 1 ? one : many}` : undefined);
-  const saved = count(result.bookmarks.length, 'saved recipe', 'saved recipes');
-  const collections = count(result.collections.length, 'collection', 'collections');
-  const mine = count(result.recipes.length, 'recipe of your own', 'recipes of your own');
-  const cooks = count(result.cooks.length, 'cook', 'cooks');
-  for (const p of [saved, collections, mine, cooks ? `${cooks} in your history` : undefined]) if (p) parts.push(p);
-  if (!parts.length) return undefined;
-  const list = parts.length === 1 ? parts[0] : `${parts.slice(0, -1).join(', ')} and ${parts[parts.length - 1]}`;
-  const gone = result.dropped
-    ? ` ${result.dropped === 1 ? 'One dish is' : `${result.dropped} dishes are`} no longer in the app, so ${result.dropped === 1 ? 'it was' : 'they were'} left behind.`
-    : '';
-  return `Welcome back. We brought over ${list}.${gone}`;
 }
