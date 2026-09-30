@@ -336,7 +336,9 @@
     "summary": "Garlic-rubbed sourdough under a thick layer of smashed avocado, lemon and chilli.",
     "cuisine": "modern-australian",
     "diets": [
-      "pescatarian"
+      "vegetarian",
+      "vegan",
+      "no-dairy"
     ],
     "mealTypes": [
       "breakfast"
@@ -410,41 +412,48 @@
           {
             "item": "Crumbled feta",
             "raw": "Crumbled feta",
-            "ingredientId": "feta"
+            "ingredientId": "feta",
+            "optional": true
           },
           {
             "item": "soft-boiled eggs",
             "raw": "2 soft-boiled eggs, halved",
             "quantity": 2,
             "ingredientId": "egg",
-            "prep": "halved"
+            "prep": "halved",
+            "optional": true
           },
           {
             "item": "Smoked salmon",
             "raw": "Smoked salmon",
-            "ingredientId": "smoked-salmon"
+            "ingredientId": "smoked-salmon",
+            "optional": true
           },
           {
             "item": "Cherry tomatoes",
             "raw": "Cherry tomatoes, halved",
             "ingredientId": "cherry-tomato",
-            "prep": "halved"
+            "prep": "halved",
+            "optional": true
           },
           {
             "item": "Pickled red onion",
             "raw": "Pickled red onion",
-            "ingredientId": "pickled-onion"
+            "ingredientId": "pickled-onion",
+            "optional": true
           },
           {
             "item": "Microgreens or fresh basil",
             "raw": "Microgreens or fresh basil",
-            "ingredientId": "microgreens"
+            "ingredientId": "microgreens",
+            "optional": true
           },
           {
             "item": "Toasted seeds",
             "raw": "Toasted seeds (sesame, pumpkin, sunflower)",
             "ingredientId": "mixed-seeds",
-            "note": "sesame, pumpkin, sunflower"
+            "note": "sesame, pumpkin, sunflower",
+            "optional": true
           }
         ]
       }
@@ -980,7 +989,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "basil",
-            "note": "small handful"
+            "note": "small"
           }
         ]
       }
@@ -1389,7 +1398,9 @@
     "title": "Banh Mi",
     "summary": "Caramelised lemongrass pork in a crisp roll with pickled carrot, daikon and coriander.",
     "cuisine": "vietnamese",
-    "diets": [],
+    "diets": [
+      "no-dairy"
+    ],
     "mealTypes": [
       "lunch"
     ],
@@ -1583,7 +1594,8 @@
             "item": "Pâté",
             "raw": "Pâté (optional, traditional)",
             "ingredientId": "pate",
-            "note": "optional, traditional"
+            "note": "traditional",
+            "optional": true
           }
         ]
       }
@@ -1692,7 +1704,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "coriander",
-            "note": "small handful"
+            "note": "small"
           },
           {
             "item": "Extra BBQ sauce to drizzle",
@@ -2691,7 +2703,8 @@
             "item": "BBQ sauce",
             "raw": "BBQ sauce (optional, proper brisket needs no sauce)",
             "ingredientId": "bbq-sauce",
-            "note": "optional, proper brisket needs no sauce"
+            "note": "proper brisket needs no sauce",
+            "optional": true
           }
         ]
       }
@@ -4427,7 +4440,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "thai-basil",
-            "note": "large handful"
+            "note": "large"
           },
           {
             "item": "mint",
@@ -4435,7 +4448,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "mint",
-            "note": "large handful"
+            "note": "large"
           },
           {
             "item": "coriander",
@@ -4443,7 +4456,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "coriander",
-            "note": "large handful"
+            "note": "large"
           },
           {
             "item": "Bean sprouts",
@@ -5467,7 +5480,7 @@
             "quantity": 1,
             "unit": "bunch",
             "ingredientId": "coriander",
-            "note": "small bunch"
+            "note": "small"
           },
           {
             "item": "lime",
@@ -6246,7 +6259,7 @@
             "unit": "handful",
             "ingredientId": "coriander",
             "prep": "chopped",
-            "note": "small handful"
+            "note": "small"
           },
           {
             "item": "warm milk infused with a pinch of saffron",
@@ -7709,7 +7722,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "coriander",
-            "note": "small handful"
+            "note": "small"
           }
         ]
       },
@@ -8838,7 +8851,7 @@
             "quantity": 1,
             "unit": "bunch",
             "ingredientId": "basil",
-            "note": "large bunch"
+            "note": "large"
           },
           {
             "item": "Flaky sea salt",
@@ -10455,7 +10468,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "coriander",
-            "note": "small handful"
+            "note": "small"
           }
         ]
       },
@@ -10536,7 +10549,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "coriander",
-            "note": "small handful"
+            "note": "small"
           },
           {
             "item": "warm milk infused with a pinch of saffron",
@@ -14098,7 +14111,8 @@
             "quantity": 400,
             "unit": "g",
             "ingredientId": "spaghetti",
-            "note": "optional traditional"
+            "note": "traditional",
+            "optional": true
           },
           {
             "item": "Tossed green salad",
@@ -15948,7 +15962,7 @@
             "quantity": 1,
             "unit": "pinch",
             "ingredientId": "saffron",
-            "note": "large pinch"
+            "note": "large"
           },
           {
             "item": "salt",
@@ -16600,7 +16614,7 @@
             "unit": "handful",
             "ingredientId": "coriander",
             "prep": "chopped",
-            "note": "small handful"
+            "note": "small"
           },
           {
             "item": "parsley",
@@ -16609,7 +16623,7 @@
             "unit": "handful",
             "ingredientId": "parsley",
             "prep": "chopped",
-            "note": "small handful"
+            "note": "small"
           },
           {
             "item": "Salt and pepper",
@@ -18720,7 +18734,8 @@
             "quantity": 2,
             "ingredientId": "egg",
             "prep": "sliced",
-            "note": "optional traditional"
+            "note": "traditional",
+            "optional": true
           },
           {
             "item": "mayonnaise",
@@ -19450,7 +19465,7 @@
             "unit": "handful",
             "ingredientId": "almonds",
             "prep": "chopped",
-            "note": "small handful"
+            "note": "small"
           },
           {
             "item": "dried apricots",
@@ -20343,7 +20358,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "basil",
-            "note": "small handful"
+            "note": "small"
           },
           {
             "item": "sugar",
@@ -20595,7 +20610,8 @@
             "quantity": 2,
             "unit": "tbsp",
             "ingredientId": "raisins",
-            "note": "optional but traditional"
+            "note": "traditional",
+            "optional": true
           },
           {
             "item": "Salt and pepper",
@@ -21145,7 +21161,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "parsley",
-            "note": "small handful"
+            "note": "small"
           },
           {
             "item": "mint",
@@ -21153,7 +21169,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "mint",
-            "note": "small handful"
+            "note": "small"
           }
         ]
       },
@@ -21305,7 +21321,7 @@
             "unit": "bunch",
             "ingredientId": "parsley",
             "prep": "leaves and stems",
-            "note": "small bunch"
+            "note": "small"
           },
           {
             "item": "coriander",
@@ -21314,7 +21330,7 @@
             "unit": "bunch",
             "ingredientId": "coriander",
             "prep": "leaves and stems",
-            "note": "small bunch"
+            "note": "small"
           },
           {
             "item": "ground cumin",
@@ -21963,7 +21979,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "coriander",
-            "note": "small handful"
+            "note": "small"
           }
         ]
       },
@@ -22365,7 +22381,8 @@
             "item": "Honey to drizzle",
             "raw": "Honey to drizzle (optional but transformative)",
             "ingredientId": "honey",
-            "note": "optional but transformative"
+            "note": "transformative",
+            "optional": true
           },
           {
             "item": "Cracked black pepper",
@@ -22907,8 +22924,8 @@
           {
             "item": "olive oil",
             "raw": "Drizzle of olive oil",
-            "quantity": 1,
-            "ingredientId": "olive-oil"
+            "ingredientId": "olive-oil",
+            "prep": "to drizzle"
           },
           {
             "item": "Cracked black pepper",
@@ -23215,13 +23232,13 @@
             "unit": "handful",
             "ingredientId": "basil",
             "prep": "torn",
-            "note": "small handful"
+            "note": "small"
           },
           {
             "item": "olive oil",
             "raw": "Drizzle of olive oil",
-            "quantity": 1,
-            "ingredientId": "olive-oil"
+            "ingredientId": "olive-oil",
+            "prep": "to drizzle"
           }
         ]
       }
@@ -27326,7 +27343,8 @@
             "raw": "1 banana heart (optional traditional)",
             "quantity": 1,
             "ingredientId": "banana-blossom",
-            "note": "optional traditional"
+            "note": "traditional",
+            "optional": true
           }
         ]
       },
@@ -28662,7 +28680,7 @@
             "quantity": 1,
             "unit": "bunch",
             "ingredientId": "parsley",
-            "note": "small bunch"
+            "note": "small"
           },
           {
             "item": "mint",
@@ -28670,7 +28688,7 @@
             "quantity": 1,
             "unit": "bunch",
             "ingredientId": "mint",
-            "note": "small bunch"
+            "note": "small"
           },
           {
             "item": "capers",
@@ -29105,7 +29123,7 @@
             "unit": "bunch",
             "ingredientId": "coriander",
             "prep": "chopped",
-            "note": "small bunch"
+            "note": "small"
           },
           {
             "item": "parsley",
@@ -29114,7 +29132,7 @@
             "unit": "bunch",
             "ingredientId": "parsley",
             "prep": "chopped",
-            "note": "small bunch"
+            "note": "small"
           },
           {
             "item": "Salt and pepper",
@@ -29879,7 +29897,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "baby-spinach",
-            "note": "large handful"
+            "note": "large"
           },
           {
             "item": "lemon",
@@ -29894,7 +29912,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "parsley",
-            "note": "small handful"
+            "note": "small"
           },
           {
             "item": "Salt and pepper",
@@ -30825,7 +30843,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "coriander",
-            "note": "small handful"
+            "note": "small"
           }
         ]
       },
@@ -32090,7 +32108,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "baby-spinach",
-            "note": "large handful"
+            "note": "large"
           }
         ]
       },
@@ -33271,10 +33289,11 @@
             "ingredientId": "white-pepper"
           },
           {
-            "item": "Optional fillings: grated Gruyère",
+            "item": "grated Gruyère",
             "raw": "Optional fillings: grated Gruyère, chopped chives, ham, sautéed mushrooms, smoked salmon",
             "ingredientId": "gruyere",
-            "prep": "chopped chives, ham, sautéed mushrooms, smoked salmon"
+            "prep": "chopped chives, ham, sautéed mushrooms, smoked salmon",
+            "optional": true
           }
         ]
       }
@@ -33474,7 +33493,7 @@
             "unit": "handful",
             "ingredientId": "parsley",
             "prep": "finely chopped",
-            "note": "large handful"
+            "note": "large"
           }
         ]
       },
@@ -33811,7 +33830,7 @@
             "unit": "pinch",
             "ingredientId": "saffron",
             "prep": "steeped in 2 tbsp hot water",
-            "note": "large pinch"
+            "note": "large"
           },
           {
             "item": "raw prawns",
@@ -34200,12 +34219,14 @@
             "quantity": 4,
             "unit": "slice",
             "ingredientId": "swiss-cheese",
-            "note": "for Reuben-ish style"
+            "note": "for Reuben-ish style",
+            "optional": true
           },
           {
             "item": "Sauerkraut",
             "raw": "Sauerkraut",
-            "ingredientId": "sauerkraut"
+            "ingredientId": "sauerkraut",
+            "optional": true
           }
         ]
       }
@@ -34399,7 +34420,9 @@
     "summary": "Penne in a sharp, fiery tomato sauce built on garlic and plenty of chilli.",
     "cuisine": "italian",
     "diets": [
-      "vegetarian"
+      "vegetarian",
+      "vegan",
+      "no-dairy"
     ],
     "mealTypes": [
       "lunch",
@@ -34489,7 +34512,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "parsley",
-            "note": "large handful"
+            "note": "large"
           },
           {
             "item": "grated parmesan or pecorino",
@@ -34497,7 +34520,8 @@
             "quantity": 40,
             "unit": "g",
             "ingredientId": "parmesan",
-            "note": "optional, Romans purists skip cheese"
+            "note": "Romans purists skip cheese",
+            "optional": true
           }
         ]
       }
@@ -34625,8 +34649,8 @@
           {
             "item": "olive oil",
             "raw": "Drizzle of olive oil",
-            "quantity": 1,
-            "ingredientId": "olive-oil"
+            "ingredientId": "olive-oil",
+            "prep": "to drizzle"
           }
         ]
       }
@@ -37633,8 +37657,8 @@
           {
             "item": "good olive oil or chilli oil",
             "raw": "Drizzle of good olive oil or chilli oil",
-            "quantity": 1,
-            "ingredientId": "olive-oil"
+            "ingredientId": "olive-oil",
+            "prep": "to drizzle"
           },
           {
             "item": "Crusty bread",
@@ -40338,7 +40362,7 @@
             "unit": "handful",
             "ingredientId": "coriander",
             "prep": "chopped",
-            "note": "small handful"
+            "note": "small"
           }
         ]
       },
@@ -40864,7 +40888,7 @@
             "unit": "pinch",
             "ingredientId": "saffron",
             "prep": "steeped in 2 tbsp hot water",
-            "note": "large pinch"
+            "note": "large"
           },
           {
             "item": "raw prawns",
@@ -41480,7 +41504,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "coriander",
-            "note": "small handful"
+            "note": "small"
           },
           {
             "item": "Crusty bread to serve",
@@ -42751,7 +42775,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "coriander",
-            "note": "small handful"
+            "note": "small"
           },
           {
             "item": "salt",
@@ -42787,7 +42811,8 @@
             "quantity": 1,
             "ingredientId": "mango",
             "prep": "diced",
-            "note": "optional but excellent"
+            "note": "excellent",
+            "optional": true
           },
           {
             "item": "Pickled jalapeños",
@@ -43046,7 +43071,8 @@
             "quantity": 300,
             "unit": "g",
             "ingredientId": "pork-ear",
-            "note": "optional but traditional"
+            "note": "traditional",
+            "optional": true
           },
           {
             "item": "onion",
@@ -43797,7 +43823,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "parsley",
-            "note": "large handful"
+            "note": "large"
           },
           {
             "item": "parmesan",
@@ -44555,7 +44581,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "basil",
-            "note": "small handful"
+            "note": "small"
           },
           {
             "item": "Salt for the water",
@@ -44751,7 +44777,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "thai-basil",
-            "note": "large handful"
+            "note": "large"
           },
           {
             "item": "Crushed peanuts",
@@ -44886,7 +44912,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "mint",
-            "note": "large handful"
+            "note": "large"
           },
           {
             "item": "coriander leaves",
@@ -44894,7 +44920,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "coriander",
-            "note": "large handful"
+            "note": "large"
           },
           {
             "item": "Vietnamese mint or Thai basil if you have it",
@@ -44906,7 +44932,8 @@
             "raw": "Garlic chives, in long pieces (optional but classic)",
             "ingredientId": "garlic-chives",
             "prep": "in long pieces",
-            "note": "optional but classic"
+            "note": "classic",
+            "optional": true
           }
         ]
       },
@@ -45526,7 +45553,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "parsley",
-            "note": "small handful"
+            "note": "small"
           },
           {
             "item": "Salt and pepper",
@@ -45890,7 +45917,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "parsley",
-            "note": "small handful"
+            "note": "small"
           },
           {
             "item": "Salt and pepper",
@@ -45912,8 +45939,8 @@
           {
             "item": "olive oil",
             "raw": "Drizzle of olive oil",
-            "quantity": 1,
-            "ingredientId": "olive-oil"
+            "ingredientId": "olive-oil",
+            "prep": "to drizzle"
           },
           {
             "item": "Fresh basil or parsley to serve",
@@ -47155,7 +47182,7 @@
             "unit": "bunch",
             "ingredientId": "coriander",
             "prep": "chopped",
-            "note": "small bunch"
+            "note": "small"
           },
           {
             "item": "parsley",
@@ -47164,7 +47191,7 @@
             "unit": "bunch",
             "ingredientId": "parsley",
             "prep": "chopped",
-            "note": "small bunch"
+            "note": "small"
           },
           {
             "item": "Salt and pepper",
@@ -51229,7 +51256,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "parsley",
-            "note": "small handful"
+            "note": "small"
           },
           {
             "item": "Salt and pepper",
@@ -51616,7 +51643,7 @@
             "quantity": 1,
             "unit": "handful",
             "ingredientId": "coriander",
-            "note": "small handful"
+            "note": "small"
           },
           {
             "item": "Salt to taste",
@@ -52750,7 +52777,7 @@
     "summary": "Salted zucchini ribbons tossed briefly with garlic, cherry tomato, lemon and basil.",
     "cuisine": "modern-australian",
     "diets": [
-      "pescatarian",
+      "vegetarian",
       "no-gluten"
     ],
     "mealTypes": [
@@ -52852,7 +52879,8 @@
             "raw": "300g raw prawns or 300g cooked chicken",
             "quantity": 300,
             "unit": "g",
-            "ingredientId": "prawn"
+            "ingredientId": "prawn",
+            "optional": true
           },
           {
             "item": "cherry mozzarella",
@@ -52860,13 +52888,15 @@
             "quantity": 200,
             "unit": "g",
             "ingredientId": "fresh-mozzarella",
-            "prep": "halved"
+            "prep": "halved",
+            "optional": true
           },
           {
             "item": "Pine nuts",
             "raw": "Pine nuts, toasted",
             "ingredientId": "pine-nuts",
-            "prep": "toasted"
+            "prep": "toasted",
+            "optional": true
           }
         ]
       }

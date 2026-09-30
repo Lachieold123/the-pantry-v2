@@ -8,6 +8,8 @@
 
 import type { IngredientIndex } from '../ingredients/database';
 import { parseIngredientLine } from '../ingredients/parse';
+import { isRange } from '../ingredients/quantity';
+import type { IngredientLine } from '../ingredients/types';
 import { deriveDiets } from './diets';
 import type { CuisineId, Difficulty, IngredientGroupBlock, MealType, Recipe, RecipeSource, Step } from './types';
 import { validateRecipe, type RecipeProblem } from './validate';
@@ -43,8 +45,12 @@ export const EMPTY_DRAFT: RecipeDraft = {
   notesText: '',
 };
 
-/** Bullets and numbering people paste in from notes apps and websites. */
-const LIST_MARKER = /^\s*(?:[-*•·▢□◦‣]+|\d+[.)]|step\s+\d+[:.)]?)\s*/i;
+/**
+ * Bullets and numbering people paste in from notes apps, Word and websites:
+ * "- ", "● ", "☐ ", "1. ", "a) ", "Step 2 – ". A number followed by a digit
+ * is a decimal, not a list number: "1.5 kg" must keep its 1.
+ */
+const LIST_MARKER = /^\s*(?:[-*•·▢□◦‣–—●○▪■▫◆◇✓✔☐☑➤►▶→]+|\d+[.)](?!\d)|[a-z][.)](?=\s)|step\s+\d+\s*[:.)\-–—]?)\s*/i;
 
 function cleanLines(text: string): string[] {
   return text
@@ -57,6 +63,13 @@ function cleanLines(text: string): string[] {
 const HEADING_MAX = 60;
 
 export type UnsureLine = { raw: string; reason: 'not-recognised' | 'two-options' };
+
+/** "Optional:", "Optional extras:", "Optional toppings (pick any)": everything under it is optional. Shared with the catalogue converter. */
+export function isOptionalHeading(title: string | undefined): boolean {
+  return title !== undefined && /^optional\b/i.test(title.trim());
+}
+
+const hasNoAmount = (q: IngredientLine['quantity']) => q !== undefined && (isRange(q) ? q.min <= 0 || q.max <= 0 : q <= 0);
 
 export function parseIngredientsText(text: string, index: IngredientIndex): { groups: IngredientGroupBlock[]; unsure: UnsureLine[] } {
   const groups: IngredientGroupBlock[] = [];
@@ -73,6 +86,15 @@ export function parseIngredientsText(text: string, index: IngredientIndex): { gr
       groups.push(current);
     }
     const { line, issues } = parseIngredientLine(raw, index.match);
+    if (isOptionalHeading(current.title)) line.optional = true;
+    // "0 cups flour" or "0-1 tsp chilli" isn't an amount to scale or shop for: keep the words, drop the number, and say so.
+    if (hasNoAmount(line.quantity)) {
+      delete line.quantity;
+      delete line.unit;
+      current.items.push(line);
+      unsure.push({ raw, reason: 'not-recognised' });
+      continue;
+    }
     current.items.push(line);
     // Quantity-less lines ("salt and pepper") are normal; only flag what changes the list or the diet tags.
     if (issues.includes('no-ingredient-match') && line.quantity !== undefined) unsure.push({ raw, reason: 'not-recognised' });
@@ -97,19 +119,35 @@ const FIELD_FOR: Record<string, DraftProblem['field']> = {
   steps: 'method',
 };
 
-function toDraftProblem(p: RecipeProblem): DraftProblem {
+/** The line a problem points at ("ingredientGroups[0].items[3].quantity"), so the message can quote it. */
+function problemLine(p: RecipeProblem, recipe: Recipe): string | undefined {
+  const m = /^ingredientGroups\[(\d+)\]\.items\[(\d+)\]/.exec(p.path);
+  return m ? recipe.ingredientGroups[Number(m[1])]?.items[Number(m[2])]?.raw : undefined;
+}
+
+const LINE_REASONS: Record<string, string> = {
+  'must be greater than zero': 'the amount needs to be more than zero',
+  'range must go from low to high': 'the amount needs to go from low to high',
+  'has a unit but no quantity': 'it has a unit but no amount',
+  'is empty': 'it needs an ingredient name',
+};
+
+function toDraftProblem(p: RecipeProblem, recipe: Recipe): DraftProblem {
   const root = p.path.split(/[.[]/)[0] ?? '';
   const field = FIELD_FOR[root] ?? 'other';
+  const line = field === 'ingredients' ? problemLine(p, recipe) : undefined;
   const message =
     field === 'title' && p.message === 'is empty'
       ? 'Give it a name.'
-      : field === 'ingredients'
-        ? 'Add at least one ingredient.'
-        : field === 'method'
-          ? 'Add at least one step.'
-          : field === 'mealTypes'
-            ? 'Pick at least one meal.'
-            : `${root} ${p.message}.`;
+      : line !== undefined
+        ? `Check “${line}”: ${LINE_REASONS[p.message] ?? 'we couldn’t read it'}.`
+        : field === 'ingredients'
+          ? 'Add at least one ingredient.'
+          : field === 'method'
+            ? 'Add at least one step.'
+            : field === 'mealTypes'
+              ? 'Pick at least one meal.'
+              : `${root} ${p.message}.`;
   return { field, message };
 }
 
@@ -142,7 +180,7 @@ export function buildRecipe(id: string, draft: RecipeDraft, source: RecipeSource
   if (draft.summary.trim()) recipe.summary = draft.summary.trim();
   if (notes.length) recipe.notes = notes;
   for (const p of validateRecipe(recipe)) {
-    const d = toDraftProblem(p);
+    const d = toDraftProblem(p, recipe);
     if (!problems.some((x) => x.field === d.field)) problems.push(d);
   }
   return problems.length ? { problems, unsure } : { recipe, problems, unsure };

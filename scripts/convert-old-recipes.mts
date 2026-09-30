@@ -18,6 +18,7 @@ import { buildIngredientIndex, type IngredientDef } from '../src/domain/ingredie
 import { parseIngredientLine } from '../src/domain/ingredients/parse.ts';
 import type { ParseIssue } from '../src/domain/ingredients/types.ts';
 import { deriveDiets } from '../src/domain/recipes/diets.ts';
+import { isOptionalHeading } from '../src/domain/recipes/draft.ts';
 import type { CuisineId, Difficulty, MealType, Recipe, Season } from '../src/domain/recipes/types.ts';
 import { validateRecipe } from '../src/domain/recipes/validate.ts';
 
@@ -110,7 +111,8 @@ for (const id of Object.keys(RECIPES).sort()) {
       const parsed = parseIngredientLine(raw, index.match);
       const worth = parsed.issues.filter((i) => i !== 'serving-suggestion' && i !== 'no-quantity');
       if (worth.length) lineIssues.push({ id, raw, issues: worth });
-      return parsed.line;
+      // Same rule as the editor: lines under an "Optional…" heading are optional.
+      return isOptionalHeading(group.section) ? { ...parsed.line, optional: true } : parsed.line;
     });
     return group.section ? { title: group.section, items } : { items };
   });

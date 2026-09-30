@@ -154,7 +154,7 @@ export function RecipeScreen({ id }: { id: string }) {
             />
           ) : null}
           <Ingredients recipe={recipe} servings={servings} units={units} have={havePills} />
-          <Method recipe={recipe} />
+          <Method recipe={recipe} units={units} />
           <Notes notes={recipe.notes ?? []} />
           {photoNote ? (
             <View style={styles.credit}>

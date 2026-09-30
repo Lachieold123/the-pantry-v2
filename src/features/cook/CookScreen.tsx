@@ -9,7 +9,7 @@ import Animated, { FadeIn, useReducedMotion } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { INGREDIENTS, KITCHEN } from '@/data/catalogue/catalogue';
-import { splitStepTimers } from '@/domain/cook/cook';
+import { localiseStepText, splitStepTimers } from '@/domain/cook/cook';
 import { cookable } from '@/domain/cupboard/cookable';
 import { cupboardIds } from '@/domain/cupboard/match';
 import { formatLine, scaleLine } from '@/domain/ingredients/format';
@@ -93,7 +93,7 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
     toast({ message: `${recipe.title} cooked. Nice work.`, undo: () => undoCooked(event.id) });
   };
   const done = () => (used.length ? setAskUsedUp(true) : finish([]));
-  const text = recipe.steps[step]?.text ?? '';
+  const text = localiseStepText(recipe.steps[step]?.text ?? '', units);
 
   return (
     <View style={{ flex: 1, backgroundColor: colours.bg, paddingTop: insets.top, paddingBottom: Math.max(insets.bottom, SPACE.sm) }}>
