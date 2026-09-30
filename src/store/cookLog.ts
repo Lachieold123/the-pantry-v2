@@ -4,7 +4,7 @@ import { persist } from 'zustand/middleware';
 
 import type { CookEvent } from '@/domain/cook/cook';
 import { newId } from '@/lib/ids';
-import { persistentStorage, STORAGE_PREFIX } from './storage';
+import { persistentStorage, savedAs } from './storage';
 
 type CookLogState = {
   log: CookEvent[];
@@ -23,6 +23,6 @@ export const useCookLog = create<CookLogState>()(
       },
       undo: (eventId) => set((s) => ({ log: s.log.filter((e) => e.id !== eventId) })),
     }),
-    { name: `${STORAGE_PREFIX}/cook-log`, version: 1, storage: persistentStorage(), partialize: ({ log }) => ({ log }) },
+    { ...savedAs<CookLogState>('cook-log', 1), storage: persistentStorage(), partialize: ({ log }) => ({ log }) },
   ),
 );

@@ -4,14 +4,26 @@ import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
 import { newId } from '@/lib/ids';
-import { pruneCutoff, pruneOldEntries, shoppingWeek, toISODate, type ISODate, type PlanEntry, type Slot } from '@/domain/plan/week';
+import {
+  isPlanEntry,
+  pruneCutoff,
+  pruneDay,
+  pruneOldEntries,
+  shoppingWeek,
+  toISODate,
+  type ISODate,
+  type PlanEntry,
+  type Slot,
+} from '@/domain/plan/week';
 import { addExtras, EMPTY_EDITS, type WeekListEdits } from '@/domain/shopping/derive';
-import { persistentStorage, STORAGE_PREFIX } from './storage';
+import { persistentStorage, savedAs } from './storage';
 
 type PlanState = {
   entries: PlanEntry[];
   /** Keyed by the Monday that starts the week. */
   listEdits: Record<ISODate, WeekListEdits>;
+  /** The latest day old weeks were pruned against: see pruneDay. */
+  prunedTo: ISODate | undefined;
   addEntry: (recipeId: string, day: ISODate, slot: Slot, servings: number) => PlanEntry;
   removeEntry: (id: string) => PlanEntry | undefined;
   restoreEntry: (entry: PlanEntry) => void;
@@ -27,6 +39,7 @@ export const usePlan = create<PlanState>()(
     (set, get) => ({
       entries: [],
       listEdits: {},
+      prunedTo: undefined,
       addEntry: (recipeId, day, slot, servings) => {
         const entry: PlanEntry = { id: newId(), recipeId, day, slot, servings };
         set((s) => ({ entries: [...s.entries, entry] }));
@@ -51,18 +64,20 @@ export const usePlan = create<PlanState>()(
       },
     }),
     {
-      name: `${STORAGE_PREFIX}/plan`,
-      version: 1,
+      ...savedAs<PlanState>('plan', 1),
       storage: persistentStorage(),
-      partialize: ({ entries, listEdits }) => ({ entries, listEdits }),
+      partialize: ({ entries, listEdits, prunedTo }) => ({ entries, listEdits, prunedTo }),
       // Old weeks are pruned when the app starts (D-009); the cook log keeps the history.
+      // Pruning follows a high-water mark rather than the raw clock (audit F08), and
+      // wrong-shaped entries are dropped rather than crashing the Plan tab (F02, F04).
       onRehydrateStorage: () => (state) => {
         if (!state) return;
-        const today = toISODate(new Date());
-        const cutoff = pruneCutoff(today);
+        const { day, seen } = pruneDay(state.prunedTo, toISODate(new Date()));
+        const cutoff = pruneCutoff(day);
         usePlan.setState({
-          entries: pruneOldEntries(state.entries, today),
+          entries: pruneOldEntries(state.entries.filter(isPlanEntry), day),
           listEdits: Object.fromEntries(Object.entries(state.listEdits).filter(([week]) => week >= cutoff)),
+          prunedTo: seen,
         });
       },
     },

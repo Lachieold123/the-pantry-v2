@@ -6,6 +6,8 @@ import {
   entriesInWeek,
   fromISODate,
   isISODate,
+  isPlanEntry,
+  pruneDay,
   pruneOldEntries,
   tonightsDinner,
   upcomingCount,
@@ -59,6 +61,38 @@ describe('week plan dates', () => {
       pruneOldEntries(entries, '2026-09-29').map((e) => e.id),
       ['a', 'b', 'c'],
     );
+  });
+});
+
+describe('pruning high-water mark (audit F08)', () => {
+  it('starts from today on the first launch', () => {
+    assert.deepEqual(pruneDay(undefined, '2026-09-30'), { day: '2026-09-30', seen: '2026-09-30' });
+  });
+  it('follows the clock day by day', () => {
+    assert.deepEqual(pruneDay('2026-09-29', '2026-09-30'), { day: '2026-09-30', seen: '2026-09-30' });
+  });
+  it('moves at most two weeks when the clock jumps a year ahead, so the plan survives', () => {
+    const { day, seen } = pruneDay('2026-09-30', '2027-09-30');
+    assert.equal(day, '2026-10-14');
+    assert.equal(seen, '2026-10-14');
+    const plan: PlanEntry[] = [{ id: 'a', recipeId: 'x', day: '2026-10-01', slot: 'dinner', servings: 2 }];
+    assert.equal(pruneOldEntries(plan, day).length, 1);
+  });
+  it('never moves the mark backwards when the clock goes back', () => {
+    assert.deepEqual(pruneDay('2026-10-14', '2026-09-30'), { day: '2026-09-30', seen: '2026-10-14' });
+  });
+  it('ignores a corrupt mark', () => {
+    assert.deepEqual(pruneDay('soon', '2026-09-30'), { day: '2026-09-30', seen: '2026-09-30' });
+  });
+});
+
+describe('saved plan entries', () => {
+  it('keeps good entries and drops wrong-shaped ones', () => {
+    const good = { id: 'a', recipeId: 'x', day: '2026-10-01', slot: 'dinner', servings: 2 };
+    assert.ok(isPlanEntry(good));
+    for (const bad of [null, 'x', { ...good, day: 'tomorrow' }, { ...good, slot: 'brunch' }, { ...good, servings: '2' }]) {
+      assert.ok(!isPlanEntry(bad), JSON.stringify(bad));
+    }
   });
 });
 

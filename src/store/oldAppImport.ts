@@ -15,15 +15,15 @@ import { useCupboard } from './cupboard';
 import { useMyRecipes } from './myRecipes';
 import { usePreferences } from './preferences';
 import { useSaved } from './saved';
-import { allHydrated, persistentStorage, STORAGE_PREFIX } from './storage';
+import { canSave, persistentStorage, savedAs, STORAGE_PREFIX } from './storage';
 
 const MARKER = `${STORAGE_PREFIX}/old-app-import`;
 
 /** The one-line "Welcome back" on Today, until it's dismissed. */
-export const useWelcomeBack = create<{ message?: string | undefined; dismiss: () => void }>()(
+type WelcomeBackState = { message?: string | undefined; dismiss: () => void };
+export const useWelcomeBack = create<WelcomeBackState>()(
   persist((set) => ({ dismiss: () => set({ message: undefined }) }), {
-    name: `${STORAGE_PREFIX}/welcome-back`,
-    version: 1,
+    ...savedAs<WelcomeBackState>('welcome-back', 1),
     storage: persistentStorage(),
     partialize: ({ message }) => ({ message }),
   }),
@@ -32,9 +32,9 @@ export const useWelcomeBack = create<{ message?: string | undefined; dismiss: ()
 const uniq = <T>(items: T[]) => [...new Set(items)];
 
 export async function importFromOldAppOnce(): Promise<void> {
-  // Stores load asynchronously; writing before they finish would be overwritten by the load.
-  // If they never finish loading, skip the import this launch rather than risk overwriting anything.
-  if ((await allHydrated([useSaved, useCookLog, useCupboard, useMyRecipes, usePreferences, useWelcomeBack])) === 'timed-out') return;
+  // Startup has already waited for the stores (once, audit F217). If any didn't load, or can't
+  // save this launch, skip the import rather than write the marker and lose what it brought in.
+  if (!canSave([useSaved, useCookLog, useCupboard, useMyRecipes, usePreferences, useWelcomeBack])) return;
   if (await AsyncStorage.getItem(MARKER)) return;
 
   let raw: string | null = null;

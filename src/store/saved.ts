@@ -3,7 +3,7 @@ import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
 import { newId } from '@/lib/ids';
-import { persistentStorage, STORAGE_PREFIX } from './storage';
+import { persistentStorage, savedAs } from './storage';
 
 export type Bookmark = { recipeId: string; savedAt: number };
 export type Collection = { id: string; name: string; recipeIds: string[]; createdAt: number; updatedAt: number };
@@ -79,8 +79,7 @@ export const useSaved = create<SavedState>()(
         set((s) => ({ recentlyViewed: [recipeId, ...s.recentlyViewed.filter((r) => r !== recipeId)].slice(0, RECENT_MAX) })),
     }),
     {
-      name: `${STORAGE_PREFIX}/saved`,
-      version: 1,
+      ...savedAs<SavedState>('saved', 1),
       storage: persistentStorage(),
       partialize: ({ bookmarks, collections, hidden, recentlyViewed }) => ({ bookmarks, collections, hidden, recentlyViewed }),
     },

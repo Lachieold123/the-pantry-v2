@@ -7,6 +7,7 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import { RootErrorScreen } from '@/features/app/RootErrorScreen';
 import { useAppReady } from '@/features/app/useAppReady';
+import { useStorageProblemToast } from '@/features/app/useStorageProblemToast';
 import { ToastProvider } from '@/ui/patterns/Toast';
 import { AppChrome } from '@/ui/theme/AppChrome';
 import { ThemeProvider, useTheme } from '@/ui/theme/ThemeProvider';
@@ -45,6 +46,7 @@ const SHEET = { presentation: 'formSheet' as const, sheetAllowedDetents: [0.75, 
 
 function RootStack() {
   const { colours } = useTheme();
+  useStorageProblemToast();
   return (
     <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: colours.bg } }}>
       <Stack.Screen name="(tabs)" />

@@ -18,6 +18,8 @@ import { FONT_FILES } from '@/ui/theme/fonts';
 async function prepare(): Promise<void> {
   // Every store, so nothing on the first screen jumps in late (audit PERF-7). The wait has
   // a limit, so a store that never loads can't hold the splash screen up forever (ARCH-6).
+  // This is the only wait (audit F217): a store still loading after it can't save until its
+  // read finishes, so opening early never overwrites anything (see store/storage).
   const loaded = await allHydrated([usePreferences, usePlan, useSaved, useCookLog, useCupboard, useMyRecipes, useWelcomeBack]);
   if (loaded === 'timed-out') console.warn('[startup] saved data took too long to load; opening anyway');
   try {

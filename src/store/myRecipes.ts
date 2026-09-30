@@ -5,7 +5,7 @@ import { persist } from 'zustand/middleware';
 
 import type { RecipeDraft } from '@/domain/recipes/draft';
 import type { RecipeSource } from '@/domain/recipes/types';
-import { persistentStorage, STORAGE_PREFIX } from './storage';
+import { persistentStorage, savedAs } from './storage';
 
 export type MyRecipe = {
   id: string;
@@ -44,6 +44,6 @@ export const useMyRecipes = create<MyRecipesState>()(
       },
       restore: (recipe) => set((s) => ({ recipes: { ...s.recipes, [recipe.id]: recipe } })),
     }),
-    { name: `${STORAGE_PREFIX}/my-recipes`, version: 1, storage: persistentStorage(), partialize: ({ recipes }) => ({ recipes }) },
+    { ...savedAs<MyRecipesState>('my-recipes', 1), storage: persistentStorage(), partialize: ({ recipes }) => ({ recipes }) },
   ),
 );

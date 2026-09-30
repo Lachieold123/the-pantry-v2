@@ -88,6 +88,34 @@ export function pruneOldEntries(entries: readonly PlanEntry[], today: ISODate): 
   return entries.filter((e) => e.day >= cutoff);
 }
 
+/** How far pruning may move forward per launch. A clock set months ahead, even once, must not prune the whole plan (audit F08). */
+export const PRUNE_STEP_DAYS = 14;
+
+/**
+ * The day to prune against, and the new high-water mark to save. `seen` is the
+ * last day pruning used. A real gap (a month away) catches up over a few
+ * launches; a clock jump can only ever prune two weeks more than it should.
+ */
+export function pruneDay(seen: ISODate | undefined, today: ISODate): { day: ISODate; seen: ISODate } {
+  if (!isISODate(seen)) return { day: today, seen: today };
+  const limit = addDays(seen, PRUNE_STEP_DAYS);
+  const day = today < limit ? today : limit;
+  return { day, seen: day > seen ? day : seen };
+}
+
+/** A saved entry good enough to show and prune. Anything else (a bad write, a bad migration) is dropped rather than crashing the Plan tab. */
+export function isPlanEntry(value: unknown): value is PlanEntry {
+  if (typeof value !== 'object' || value === null) return false;
+  const e = value as Record<string, unknown>;
+  return (
+    typeof e.id === 'string' &&
+    typeof e.recipeId === 'string' &&
+    isISODate(e.day) &&
+    (SLOTS as readonly unknown[]).includes(e.slot) &&
+    typeof e.servings === 'number'
+  );
+}
+
 export function isPast(day: ISODate, today: ISODate): boolean {
   return day < today;
 }
