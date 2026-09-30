@@ -20,6 +20,7 @@ import { usePlan } from '@/store/plan';
 import { usePreferences } from '@/store/preferences';
 import { useRecipe } from '@/store/recipeBook';
 import { useSaved } from '@/store/saved';
+import { useToggleBookmark } from '@/ui/patterns/useBookmarks';
 import { ActionSheet } from '@/ui/patterns/ActionSheet';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { PhotoScrim } from '@/ui/patterns/PhotoScrim';
@@ -58,8 +59,9 @@ export function RecipeScreen({ id, servings: requested }: { id: string; servings
   const [servingsOpen, setServingsOpen] = useState(false);
   const saved = useSaved((s) => s.bookmarks.some((b) => b.recipeId === id));
   const hidden = useSaved((s) => s.hidden.includes(id));
-  const toggleBookmark = useSaved((s) => s.toggleBookmark);
+  const toggleBookmark = useToggleBookmark({ toastOnSave: true });
   const toggleHidden = useSaved((s) => s.toggleHidden);
+  const setHidden = useSaved((s) => s.setHidden);
   const recordView = useSaved((s) => s.recordView);
   const cooked = useCookLog((s) => hasCooked(s.log, id));
   const markCooked = useCookLog((s) => s.markCooked);
@@ -131,10 +133,7 @@ export function RecipeScreen({ id, servings: requested }: { id: string; servings
             cooked={cooked}
             servings={servings}
             onEdit={edit}
-            onSave={() => {
-              const nowSaved = toggleBookmark(recipe.id);
-              toast({ message: nowSaved ? 'Saved to Cookmarks' : 'Removed from Cookmarks', undo: () => toggleBookmark(recipe.id) });
-            }}
+            onSave={() => void toggleBookmark(recipe.id)}
             onPlan={plan}
             onShare={() => void share()}
             onMarkCooked={() => {
@@ -202,7 +201,11 @@ export function RecipeScreen({ id, servings: requested }: { id: string; servings
             testID: 'action-hide',
             onPress: () => {
               const nowHidden = toggleHidden(recipe.id);
-              toast({ message: nowHidden ? 'We won’t suggest this again' : 'Back in suggestions', undo: () => toggleHidden(recipe.id) });
+              // Undo sets the old value, so after another change it can't flip the wrong way.
+              toast({
+                message: nowHidden ? 'We won’t suggest this again' : 'Back in suggestions',
+                undo: () => setHidden(recipe.id, !nowHidden),
+              });
             },
           },
         ]}

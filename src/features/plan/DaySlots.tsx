@@ -11,6 +11,7 @@ import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { CUISINE_LABELS, formatMinutes } from '@/domain/recipes/labels';
 import { totalMinutes } from '@/domain/recipes/types';
 import { entriesFor, SLOTS, type ISODate, type PlanEntry, type Slot } from '@/domain/plan/week';
+import { ownRecipe, useMyRecipes } from '@/store/myRecipes';
 import { usePlan } from '@/store/plan';
 import { useRecipe } from '@/store/recipeBook';
 import { ModalSheet } from '@/ui/patterns/ModalSheet';
@@ -69,19 +70,33 @@ function SlotCard({ entry, past }: { entry: PlanEntry; past: boolean }) {
   const styles = useStyles();
   const toast = useToast();
   const recipe = useRecipe(entry.recipeId);
+  // One of yours that's saved but unfinished can't be shown as a recipe, but it isn't gone either.
+  const unfinished = useMyRecipes((s) => ownRecipe(s.recipes, entry.recipeId)?.draft.title);
   const removeEntry = usePlan((s) => s.removeEntry);
   const restoreEntry = usePlan((s) => s.restoreEntry);
   const [servingsOpen, setServingsOpen] = useState(false);
   const remove = () => {
     const removed = removeEntry(entry.id);
-    if (removed) toast({ message: `${recipe?.title ?? 'Meal'} taken off the plan`, undo: () => restoreEntry(removed) });
+    if (removed) toast({ message: `${recipe?.title ?? unfinished ?? 'Meal'} taken off the plan`, undo: () => restoreEntry(removed) });
   };
   if (!recipe) {
+    // Not "gone": an unfinished recipe of yours comes back once it's finished, and one this
+    // version of the catalogue doesn't carry comes back if it's added. Remove still has Undo.
     return (
       <View style={styles.card}>
-        <Text variant="meta" style={{ flex: 1 }}>
-          A recipe that’s no longer available
-        </Text>
+        <View style={{ flex: 1, gap: PLAN.hair }}>
+          <Text variant="meta" numberOfLines={2}>
+            {unfinished !== undefined ? `${unfinished}: unfinished, finish it to cook it` : 'A recipe that’s not in this version yet'}
+          </Text>
+          {unfinished !== undefined ? (
+            <Button
+              label="Finish it"
+              kind="quiet"
+              onPress={() => router.push({ pathname: '/my-recipe/edit', params: { id: entry.recipeId } })}
+              testID={`plan-entry-${entry.id}-finish`}
+            />
+          ) : null}
+        </View>
         <IconButton
           icon="close"
           label="Remove from plan"

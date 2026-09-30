@@ -12,7 +12,7 @@ import { ingredientName, useCookableNow } from '@/store/cookable';
 import { useWelcomeBack } from '@/store/oldAppImport';
 import { usePlan } from '@/store/plan';
 import { useRecipeLookup } from '@/store/recipeBook';
-import { useBookmarks } from '@/store/saved';
+import { useBookmarks } from '@/ui/patterns/useBookmarks';
 import { useForYou } from '@/store/suggestions';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { MatchCard } from '@/ui/patterns/MatchCard';

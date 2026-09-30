@@ -15,11 +15,24 @@ type Book = { mine: MyRecipeView[]; get: (id: string) => Recipe | undefined; all
 // Parsing is cheap but not free, so the book is rebuilt only when your recipes change.
 let cache: { source: Record<string, MyRecipe>; book: Book } | undefined;
 
+// And within a rebuild, only the recipes that changed are parsed again: the
+// store keeps an untouched recipe as the same object, so it keys its own build.
+const built = new WeakMap<MyRecipe, MyRecipeView>();
+
+function view(r: MyRecipe): MyRecipeView {
+  let v = built.get(r);
+  if (!v) {
+    v = { ...r, ...buildRecipe(r.id, r.draft, r.source, INGREDIENTS) };
+    built.set(r, v);
+  }
+  return v;
+}
+
 function bookFor(recipes: Record<string, MyRecipe>): Book {
   if (cache?.source === recipes) return cache.book;
   const mine = Object.values(recipes)
     .sort((a, b) => b.updatedAt - a.updatedAt)
-    .map((r) => ({ ...r, ...buildRecipe(r.id, r.draft, r.source, INGREDIENTS) }));
+    .map(view);
   const complete = mine.flatMap((m) => (m.recipe ? [m.recipe] : []));
   const byId = new Map(complete.map((r) => [r.id, r]));
   const all = [...complete, ...CATALOGUE];

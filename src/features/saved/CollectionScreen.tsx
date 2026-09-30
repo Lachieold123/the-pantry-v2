@@ -1,11 +1,11 @@
 // One collection: its recipes, rename it, or delete it (with undo).
 import { useRouter } from 'expo-router';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { View } from 'react-native';
 
 import type { Recipe } from '@/domain/recipes/types';
 import { useRecipeLookup } from '@/store/recipeBook';
-import { useSaved } from '@/store/saved';
+import { useSaved, type Collection } from '@/store/saved';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { TitleBlock } from '@/ui/patterns/TitleBlock';
 import { useToast } from '@/ui/patterns/Toast';
@@ -20,7 +20,12 @@ export function CollectionScreen({ id }: { id: string }) {
   const getRecipe = useRecipeLookup();
   const router = useRouter();
   const toast = useToast();
-  const collection = useSaved((s) => s.collections.find((c) => c.id === id));
+  const current = useSaved((s) => s.collections.find((c) => c.id === id));
+  // After Delete the screen is on its way out: keep drawing what was there
+  // rather than flashing "This collection is gone" during the back animation.
+  const [leaving, setLeaving] = useState<Collection | undefined>();
+  const deleting = useRef(false);
+  const collection = current ?? leaving;
   const collections = useSaved((s) => s.collections);
   const rename = useSaved((s) => s.renameCollection);
   const del = useSaved((s) => s.deleteCollection);
@@ -90,8 +95,11 @@ export function CollectionScreen({ id }: { id: string }) {
             label="Delete"
             kind="destructive"
             onPress={() => {
-              const removed = del(id);
+              if (deleting.current) return;
+              deleting.current = true;
+              setLeaving(collection);
               router.back();
+              const removed = del(id);
               if (removed) toast({ message: `${removed.name} deleted`, undo: () => restore(removed) });
             }}
             testID="collection-delete"

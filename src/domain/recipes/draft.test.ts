@@ -161,3 +161,12 @@ describe('myRecipeId', () => {
     assert.ok(catalogue.every((r) => !r.id.startsWith('my-')));
   });
 });
+
+describe('buildRecipe: times and servings in the editor’s words (audit F59)', () => {
+  it('names the time field instead of quoting the validator', () => {
+    const message = (over: Partial<RecipeDraft>) => buildRecipe('my-x-1', draft(over), 'user', index).problems.map((p) => p.message);
+    assert.deepEqual(message({ prepMinutes: 5000 }), ['Prep time needs to be whole minutes, up to 3 days.']);
+    assert.deepEqual(message({ cookMinutes: 5000 }), ['Cook time needs to be whole minutes, up to 3 days.']);
+    assert.deepEqual(message({ servings: 99 }), ['Servings need to be from 1 to 50.']);
+  });
+});
