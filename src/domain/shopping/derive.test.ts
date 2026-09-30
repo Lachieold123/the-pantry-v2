@@ -42,7 +42,9 @@ function list(entries: PlanEntry[], opts: { edits?: WeekListEdits; cupboard?: st
     units: 'metric',
   });
 }
-const find = (l: ReturnType<typeof list>, name: string) => l.sections.flatMap((s) => s.items).find((i) => i.name === name);
+// By the database name, since the shown name takes a plural ("brown onions").
+const find = (l: ReturnType<typeof list>, name: string) =>
+  l.sections.flatMap((s) => s.items).find((i) => (index.byId.get(i.key)?.name ?? i.name) === name);
 
 describe('mergeAmounts', () => {
   const parse = (s: string) => parseIngredientLine(s, index.match).line;

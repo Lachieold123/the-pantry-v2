@@ -1,7 +1,7 @@
 // Scaling a recipe to more or fewer servings, and printing an ingredient
 // line for the cook in their chosen units.
 
-import { formatKitchenNumber, formatMeasuredNumber, isRange, mapQuantity, type Quantity } from './quantity';
+import { formatKitchenNumber, formatMeasuredNumber, isRange, mapQuantity, parseNumber, type Quantity } from './quantity';
 import { inflectItem } from './nouns';
 import type { IngredientLine } from './types';
 import { convert, UNITS, unitLabel, type UnitId } from './units';
@@ -51,7 +51,9 @@ function displayUnit(amount: number, unit: UnitId, system: UnitSystem): { amount
 
 function formatAmount(amount: number, unit: UnitId | undefined): string {
   if (unit === undefined || UNITS[unit].kind === 'count') return formatKitchenNumber(roundCount(amount));
-  if (unit === 'oz' || unit === 'lb' || unit === 'fl-oz') return formatKitchenNumber(amount, 'quarters');
+  // D-013: pounds snap to the nearest quarter ("3¼ lb", never "3.3 lb").
+  if (unit === 'lb') return formatKitchenNumber(Math.max(1 / 4, Math.round(amount * 4) / 4), 'quarters');
+  if (unit === 'oz' || unit === 'fl-oz') return formatKitchenNumber(amount, 'quarters');
   if (unit === 'tsp' || unit === 'tbsp' || unit === 'cup' || unit === 'kg' || unit === 'l') return formatKitchenNumber(amount);
   return formatMeasuredNumber(amount);
 }
@@ -66,7 +68,8 @@ export function formatQuantity(quantity: Quantity, unit: UnitId | undefined, sys
   const loText = formatAmount(lo * ratio, shown.unit);
   const number = isRange(quantity) && loText !== hiText ? `${loText}–${hiText}` : hiText;
   if (shown.unit === undefined) return number;
-  return `${number} ${unitLabel(shown.unit, hi * ratio)}`;
+  // Plural agrees with the number printed, not the one behind it: 1.02 cups prints "1 cup" (F20).
+  return `${number} ${unitLabel(shown.unit, parseNumber(hiText) ?? hi * ratio)}`;
 }
 
 /** One ingredient line as the cook reads it: "2 cloves garlic, minced". */

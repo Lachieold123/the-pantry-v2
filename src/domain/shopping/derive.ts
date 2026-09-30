@@ -1,33 +1,40 @@
 // The shopping list is never stored: it's worked out from the week's plan
 // every time (map principle 3). Only the cook's edits for that week are
 // stored, and each edit remembers what it applied to, so a change to the
-// plan quietly retires an edit that no longer fits (D-010).
+// plan quietly retires an edit that no longer fits (D-010, edits.ts).
 
 import { AISLES, normaliseWords, type AisleId, type IngredientIndex } from '../ingredients/database';
 import type { UnitSystem } from '../ingredients/format';
 import { formatQuantity } from '../ingredients/format';
-import { addQuantities, mapQuantity, type Quantity } from '../ingredients/quantity';
+import { mapQuantity } from '../ingredients/quantity';
 import type { IngredientLine } from '../ingredients/types';
-import { convert, UNITS, type UnitId } from '../ingredients/units';
-import type { PlanEntry } from '../plan/week';
+import { UNITS } from '../ingredients/units';
+import { combineZestAndJuice, displayName, mergeAmounts, needOf } from './amounts';
+import type { ISODate, PlanEntry } from '../plan/week';
 import { allLines, type Recipe } from '../recipes/types';
+import { covers, removalHolds, tickBelongs, type CarriedExtra, type ListExtra, type Need, type WeekListEdits } from './edits';
 
-export type ListExtra = { id: string; text: string; addedAt: number };
-
-/** The cook's edits to one week's list. Values record what the edit applied to. */
-export type WeekListEdits = {
-  /** key → the amount text that was ticked. Ticks lapse if the amount changes. */
-  checked: Record<string, string>;
-  /** key → the plan entries it came from when removed. Removals lapse if those change. */
-  removed: Record<string, string>;
-  extras: ListExtra[];
-  checkedExtras: string[];
-};
-
-export const EMPTY_EDITS: WeekListEdits = { checked: {}, removed: {}, extras: [], checkedExtras: [] };
+export { mergeAmounts } from './amounts';
+export {
+  addExtras,
+  carriedExtras,
+  clearList,
+  deleteExtra,
+  EMPTY_EDITS,
+  removeItem,
+  restoreExtra,
+  restoreRemoved,
+  toggleChecked,
+  toggleExtra,
+  untickLeavesCupboard,
+  type CarriedExtra,
+  type ListExtra,
+  type WeekListEdits,
+} from './edits';
 
 export type ShoppingItem = {
   key: string;
+  /** Singular or plural to match the amount: "brown onions, 3", "egg, 1". */
   name: string;
   aisle: AisleId;
   /** "400 g + 2", "1¼ tbsp"; empty when no recipe gave an amount. */
@@ -35,77 +42,61 @@ export type ShoppingItem = {
   recipeIds: string[];
   optional: boolean;
   checked: boolean;
-  /** Identifies which plan entries this line came from, for edit bookkeeping. */
+  /** The whole week's plan entries this line comes from, for edit bookkeeping. */
   sourceStamp: string;
+  /** The whole week's need in base units: what a tick records. */
+  need: Need;
 };
 
 export type ShoppingList = {
   sections: { aisle: AisleId; items: ShoppingItem[] }[];
   /** Covered by the cupboard (or a staple): shown quietly, never dropped (D-010). */
   inCupboard: ShoppingItem[];
-  extras: { extra: ListExtra; checked: boolean }[];
+  /** `fromWeek` is set on an extra carried forward from an earlier week. */
+  extras: { extra: ListExtra; checked: boolean; fromWeek?: ISODate }[];
   removedCount: number;
 };
 
-type Contribution = { line: IngredientLine; entryId: string; recipeId: string };
+type Contribution = { line: IngredientLine; entryId: string; recipeId: string; shown: boolean };
 
-const SPOON_OR_CUP: ReadonlySet<UnitId> = new Set(['tsp', 'tbsp', 'cup']);
-
-/** Adds amounts that can be added (D-010): same unit family merges, others sit side by side. */
-export function mergeAmounts(lines: readonly IngredientLine[]): { quantity: Quantity; unit: UnitId | undefined }[] {
-  const families = new Map<string, { quantity: Quantity; unit: UnitId | undefined; units: UnitId[] }>();
-  for (const line of lines) {
-    if (line.quantity === undefined) continue;
-    const unit = line.unit;
-    const kind = unit === undefined ? 'count:none' : UNITS[unit].kind === 'count' ? `count:${unit}` : UNITS[unit].kind;
-    const existing = families.get(kind);
-    if (!existing) {
-      families.set(kind, { quantity: line.quantity, unit, units: unit ? [unit] : [] });
-      continue;
-    }
-    if (unit === undefined || existing.unit === undefined) {
-      existing.quantity = addQuantities(existing.quantity, line.quantity);
-      continue;
-    }
-    // Spoons and cups stay in the largest spoon/cup used; everything else goes to g or ml and is re-displayed later.
-    const allSpoons = [...existing.units, unit].every((u) => SPOON_OR_CUP.has(u));
-    const target: UnitId = allSpoons
-      ? ([...existing.units, unit].sort((a, b) => (UNITS[b].base ?? 0) - (UNITS[a].base ?? 0))[0] as UnitId)
-      : UNITS[unit].kind === 'mass'
-        ? 'g'
-        : UNITS[unit].kind === 'volume'
-          ? 'ml'
-          : unit;
-    const from = existing.unit;
-    const a = mapQuantity(existing.quantity, (n) => convert(n, from, target));
-    const b = mapQuantity(line.quantity, (n) => convert(n, unit, target));
-    existing.quantity = addQuantities(a, b);
-    existing.unit = target;
-    existing.units.push(unit);
-  }
-  return [...families.values()].map(({ quantity, unit }) => ({ quantity, unit }));
+/**
+ * The key that merges lines. Lines matched to the database merge by id. Free
+ * text merges by its words, except text the word rules can't read (another
+ * script, emoji), which keeps its own raw text so unrelated items don't all
+ * collapse into one row (F190).
+ */
+function lineKey(line: IngredientLine): string {
+  if (line.ingredientId) return line.ingredientId;
+  const plain = line.item.normalize('NFKD').replace(/\p{M}/gu, '');
+  if (/[^\p{P}\p{Z}a-z0-9]/iu.test(plain)) return `text:${line.item.trim().toLowerCase()}`;
+  return `text:${normaliseWords(line.item).join(' ')}`;
 }
 
 export function deriveShoppingList(args: {
+  /** Every entry in the week: edits are kept over the whole week, so a day passing never undoes them (F11). */
   entries: readonly PlanEntry[];
+  /** Meals before this day are over: they count for edits but aren't shown. */
+  shownFrom?: ISODate;
   getRecipe: (id: string) => Recipe | undefined;
   index: IngredientIndex;
   cupboard: ReadonlySet<string>;
   edits: WeekListEdits;
   units: UnitSystem;
+  carried?: readonly CarriedExtra[];
 }): ShoppingList {
-  const { entries, getRecipe, index, cupboard, edits, units } = args;
+  const { entries, shownFrom, getRecipe, index, cupboard, edits, units, carried = [] } = args;
   const groups = new Map<string, Contribution[]>();
 
   for (const entry of entries) {
     const recipe = getRecipe(entry.recipeId);
     if (!recipe) continue; // A deleted custom recipe simply stops contributing.
     const ratio = entry.servings / recipe.servings;
-    for (const line of allLines(recipe)) {
+    const shown = shownFrom === undefined || entry.day >= shownFrom;
+    for (const line of combineZestAndJuice(allLines(recipe))) {
       const scaled = line.quantity === undefined ? line : { ...line, quantity: mapQuantity(line.quantity, (n) => n * ratio) };
-      const key = line.ingredientId ?? `text:${normaliseWords(line.item).join(' ')}`;
+      const key = lineKey(line);
       const list = groups.get(key) ?? [];
-      list.push({ line: scaled, entryId: entry.id, recipeId: entry.recipeId });
+      list.push({ line: scaled, entryId: entry.id, recipeId: entry.recipeId, shown });
       groups.set(key, list);
     }
   }
@@ -115,31 +106,38 @@ export function deriveShoppingList(args: {
   let removedCount = 0;
 
   for (const [key, contributions] of groups) {
+    const shown = contributions.filter((c) => c.shown);
+    if (shown.length === 0) continue; // Only needed for meals already eaten.
     const def = key.startsWith('text:') ? undefined : index.byId.get(key);
     const sourceStamp = [...new Set(contributions.map((c) => c.entryId))].sort().join(',');
-    if (edits.removed[key] === sourceStamp) {
+    if (removalHolds(edits.removed[key], sourceStamp)) {
       removedCount++;
       continue;
     }
-    const name = def?.name ?? contributions[0]?.line.item ?? key;
-    const amount = mergeAmounts(contributions.map((c) => c.line))
-      .map((a) => {
-        // "2 leaves bay leaf" reads badly: when the name already says the unit, show just the number.
-        const redundant = a.unit !== undefined && UNITS[a.unit].kind === 'count' && normaliseWords(name).includes(UNITS[a.unit].singular);
-        return formatQuantity(a.quantity, redundant ? undefined : a.unit, units);
-      })
-      .join(' + ');
+    const amounts = mergeAmounts(shown.map((c) => c.line));
+    const fallback = shown[0]?.line.item ?? key;
+    const printed = amounts.map((a) => {
+      // "2 leaves bay leaf" reads badly: when the name already says the unit, show just the number.
+      const redundant =
+        a.unit !== undefined && UNITS[a.unit].kind === 'count' && normaliseWords(def?.name ?? fallback).includes(UNITS[a.unit].singular);
+      return formatQuantity(a.quantity, redundant ? undefined : a.unit, units);
+    });
+    const need = needOf(contributions.map((c) => c.line));
+    const tick = edits.checked[key];
+    const belongs = tickBelongs(tick, sourceStamp);
     const item: ShoppingItem = {
       key,
-      name,
+      name: displayName(def, fallback, amounts, printed),
       aisle: def?.aisle ?? 'other',
-      amount,
-      recipeIds: [...new Set(contributions.map((c) => c.recipeId))],
-      optional: contributions.every((c) => c.line.optional === true),
-      checked: edits.checked[key] === amount,
+      amount: printed.join(' + '),
+      recipeIds: [...new Set(shown.map((c) => c.recipeId))],
+      optional: shown.every((c) => c.line.optional === true),
+      checked: belongs && covers(tick.need, need),
       sourceStamp,
+      need,
     };
-    if (def?.staple || cupboard.has(key)) {
+    // A line ticked for this plan stays in its aisle even once it's in the cupboard, so nothing jumps mid-shop.
+    if (def?.staple || (cupboard.has(key) && !belongs)) {
       inCupboard.push(item);
       continue;
     }
@@ -152,32 +150,12 @@ export function deriveShoppingList(args: {
   return {
     sections: AISLES.filter((a) => bySection.has(a)).map((aisle) => ({ aisle, items: (bySection.get(aisle) ?? []).sort(byName) })),
     inCupboard: inCupboard.sort(byName),
-    extras: edits.extras.map((extra) => ({ extra, checked: edits.checkedExtras.includes(extra.id) })),
+    extras: [
+      ...carried.map(({ extra, fromWeek }) => ({ extra, checked: edits.checkedExtras.includes(extra.id), fromWeek })),
+      ...edits.extras.map((extra) => ({ extra, checked: edits.checkedExtras.includes(extra.id) })),
+    ],
     removedCount,
   };
-}
-
-/** Tick or untick a line. The tick remembers the amount, so needing more later unticks it. */
-export function toggleChecked(edits: WeekListEdits, item: ShoppingItem): WeekListEdits {
-  const checked = { ...edits.checked };
-  if (item.checked) delete checked[item.key];
-  else checked[item.key] = item.amount;
-  return { ...edits, checked };
-}
-
-export function removeItem(edits: WeekListEdits, item: ShoppingItem): WeekListEdits {
-  return { ...edits, removed: { ...edits.removed, [item.key]: item.sourceStamp } };
-}
-
-export function restoreRemoved(edits: WeekListEdits): WeekListEdits {
-  return { ...edits, removed: {} };
-}
-
-/** "Clear all": takes every line off and drops the extras. The caller keeps the old edits for undo. */
-export function clearList(edits: WeekListEdits, list: ShoppingList): WeekListEdits {
-  const removed = { ...edits.removed };
-  for (const item of list.sections.flatMap((s) => s.items)) removed[item.key] = item.sourceStamp;
-  return { ...edits, removed, extras: [], checkedExtras: [] };
 }
 
 /** Every line in one A–Z list, for when the cook turns "By aisle" off. */
@@ -185,7 +163,10 @@ export function itemsAtoZ(list: ShoppingList): ShoppingItem[] {
   return list.sections.flatMap((s) => s.items).sort((a, b) => a.name.localeCompare(b.name));
 }
 
-/** Plain text for the share sheet, grouped by aisle, unticked items only. */
+/**
+ * Plain text for the share sheet, grouped by aisle, unticked items only.
+ * Empty when there's nothing left to buy, so the caller never sends just a title (F132).
+ */
 export function formatListForSharing(list: ShoppingList, aisleLabel: (a: AisleId) => string, title: string): string {
   const out: string[] = [title];
   for (const section of list.sections) {
@@ -199,32 +180,10 @@ export function formatListForSharing(list: ShoppingList, aisleLabel: (a: AisleId
     out.push('', 'Also');
     for (const e of extras) out.push(`- ${e.extra.text}`);
   }
-  return out.join('\n');
+  return out.length === 1 ? '' : out.join('\n');
 }
 
 /** Names are stored lower case ("brown onion") so they read naturally mid-sentence; lists start them with a capital. */
 export function capitalise(text: string): string {
   return text.charAt(0).toUpperCase() + text.slice(1);
-}
-
-/**
- * Adds free-text extras (for example the things a cupboard match is missing),
- * skipping any already on the list, whatever their case. Returns the edits and
- * the extras actually added, so the caller can offer undo.
- */
-export function addExtras(
-  edits: WeekListEdits,
-  texts: readonly string[],
-  makeId: () => string,
-  now: number,
-): { edits: WeekListEdits; added: ListExtra[] } {
-  const onList = new Set(edits.extras.map((x) => x.text.trim().toLowerCase()));
-  const added: ListExtra[] = [];
-  for (const raw of texts) {
-    const text = raw.trim();
-    if (!text || onList.has(text.toLowerCase())) continue;
-    onList.add(text.toLowerCase());
-    added.push({ id: makeId(), text, addedAt: now });
-  }
-  return { edits: added.length ? { ...edits, extras: [...edits.extras, ...added] } : edits, added };
 }

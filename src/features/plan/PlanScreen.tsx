@@ -96,10 +96,15 @@ export function PlanScreen() {
           'Nothing planned this week yet',
         )
       : send(
+          // Dates in the title: the person it's sent to may read it on another day (F132).
+          formatListForSharing(
+            listWeekList.list,
+            (a) => AISLE_LABELS[a],
+            `Shopping list, ${listLabel.toLowerCase()} (${weekRange(fromISODate(listWeek))})`,
+          ),
           listWeekList.list.sections.length || listWeekList.list.extras.length
-            ? formatListForSharing(listWeekList.list, (a) => AISLE_LABELS[a], `Shopping list, ${listLabel.toLowerCase()}`)
-            : '',
-          'Your list is empty. Plan a meal first.',
+            ? 'Everything’s ticked off. Nothing left to send.'
+            : 'Your list is empty. Plan a meal first.',
         );
 
   return (

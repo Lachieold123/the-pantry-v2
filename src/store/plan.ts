@@ -4,8 +4,18 @@ import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
 import { newId } from '@/lib/ids';
-import { pruneCutoff, pruneOldEntries, shoppingWeek, toISODate, type ISODate, type PlanEntry, type Slot } from '@/domain/plan/week';
+import {
+  pruneCutoff,
+  pruneOldEntries,
+  shoppingWeek,
+  toISODate,
+  weekStart,
+  type ISODate,
+  type PlanEntry,
+  type Slot,
+} from '@/domain/plan/week';
 import { addExtras, EMPTY_EDITS, type WeekListEdits } from '@/domain/shopping/derive';
+import { migrateListEdits } from '@/domain/shopping/edits';
 import { persistentStorage, STORAGE_PREFIX } from './storage';
 
 type PlanState = {
@@ -52,9 +62,15 @@ export const usePlan = create<PlanState>()(
     }),
     {
       name: `${STORAGE_PREFIX}/plan`,
-      version: 1,
+      version: 2,
       storage: persistentStorage(),
       partialize: ({ entries, listEdits }) => ({ entries, listEdits }),
+      // Version 2 stores a tick as base amounts instead of the amount text shown (F11, F12).
+      migrate: (saved) => {
+        const state = (typeof saved === 'object' && saved !== null ? saved : {}) as { entries?: unknown; listEdits?: unknown };
+        const entries = Array.isArray(state.entries) ? (state.entries as PlanEntry[]) : [];
+        return { ...state, entries, listEdits: migrateListEdits(state.listEdits, entries, weekStart) } as unknown as PlanState;
+      },
       // Old weeks are pruned when the app starts (D-009); the cook log keeps the history.
       onRehydrateStorage: () => (state) => {
         if (!state) return;
