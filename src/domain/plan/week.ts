@@ -73,9 +73,19 @@ export function entriesFor(entries: readonly PlanEntry[], day: ISODate, slot?: S
     .sort((a, b) => SLOTS.indexOf(a.slot) - SLOTS.indexOf(b.slot));
 }
 
-/** Tonight's dinner, if one is planned. More than one dinner is allowed; the first wins here. */
-export function tonightsDinner(entries: readonly PlanEntry[], today: ISODate): PlanEntry | undefined {
-  return entriesFor(entries, today, 'dinner')[0];
+/**
+ * Tonight's dinner, if one is planned. More than one dinner is allowed: the
+ * first one not yet cooked today wins, so a second dinner shows up once the
+ * first is done (audit F22). When every one is cooked, the first comes back
+ * and the caller shows it as cooked.
+ */
+export function tonightsDinner(
+  entries: readonly PlanEntry[],
+  today: ISODate,
+  cookedToday: ReadonlySet<string> = new Set(),
+): PlanEntry | undefined {
+  const dinners = entriesFor(entries, today, 'dinner');
+  return dinners.find((e) => !cookedToday.has(e.recipeId)) ?? dinners[0];
 }
 
 /** Entries older than 8 weeks are pruned on launch; the cook log keeps the history (D-009). */
@@ -114,6 +124,17 @@ export function isPlanEntry(value: unknown): value is PlanEntry {
     (SLOTS as readonly unknown[]).includes(e.slot) &&
     typeof e.servings === 'number'
   );
+}
+
+/**
+ * A day a meal can be added to from a link: today to the end of next week, the
+ * days the Plan tab shows. A garbled or crafted link lands on the nearest one
+ * rather than planning for 2099 or the past (audit F144).
+ */
+export function plannableDay(requested: unknown, today: ISODate): ISODate {
+  if (!isISODate(requested) || requested < today) return today;
+  const last = addDays(visibleWeeks(today).nextWeek, 6);
+  return requested > last ? last : requested;
 }
 
 export function isPast(day: ISODate, today: ISODate): boolean {

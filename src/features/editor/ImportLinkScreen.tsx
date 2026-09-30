@@ -6,6 +6,7 @@ import { View } from 'react-native';
 
 import { extractRecipe, normaliseLink } from '@/domain/recipes/importLink';
 import { logger } from '@/lib/logger';
+import { goBackOr } from '@/lib/navigation';
 import { Button } from '@/ui/primitives/Button';
 import { Sheet } from '@/ui/primitives/Sheet';
 import { Text } from '@/ui/primitives/Text';
@@ -62,7 +63,7 @@ export function ImportLinkScreen() {
   };
 
   return (
-    <Sheet title="Import from a link" onClose={() => router.back()}>
+    <Sheet title="Import from a link" onClose={() => goBackOr(router)}>
       <Text variant="body" colour="inkSoft">
         Paste a link to a recipe page. You’ll check it over before it’s saved.
       </Text>

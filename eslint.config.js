@@ -94,6 +94,12 @@ module.exports = defineConfig([
     },
   },
   {
+    // Tests may render a route or a real screen to check the wiring (e.g. the root layout's
+    // cold-link anchor); the layering rules are for app code, not for the harness around it.
+    files: ['src/**/*.test.{ts,tsx}'],
+    rules: { 'import/no-restricted-paths': 'off' },
+  },
+  {
     files: ['src/ui/tokens/**/*.{ts,tsx}'],
     rules: { 'no-restricted-syntax': ['error', ...SRC_SYNTAX] },
   },

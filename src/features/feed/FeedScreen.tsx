@@ -3,12 +3,16 @@
 // (D-027): there are no posts to show until cooks have accounts, and a feed of
 // invented posts would be fake.
 import { useRouter } from 'expo-router';
+import { useMemo } from 'react';
 import { ScrollView, View } from 'react-native';
 
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
+import { cookedOn } from '@/domain/cook/cook';
 import { needLine } from '@/domain/cupboard/cookable';
 import { addDays, entriesFor, fromISODate, toISODate, tonightsDinner } from '@/domain/plan/week';
 import { longDate } from '@/lib/dates';
+import { useToday } from '@/lib/useToday';
+import { useCookLog } from '@/store/cookLog';
 import { ingredientName, useCookableNow } from '@/store/cookable';
 import { useWelcomeBack } from '@/store/oldAppImport';
 import { usePlan } from '@/store/plan';
@@ -39,9 +43,14 @@ export function FeedScreen() {
   const welcome = useWelcomeBack((s) => s.message);
   const dismissWelcome = useWelcomeBack((s) => s.dismiss);
   const [forYouPick, ...picks] = useForYou(PICKS);
-  const today = toISODate(new Date());
-  const tonight = tonightsDinner(entries, today);
+  const today = useToday();
   const getRecipe = useRecipeLookup();
+  const log = useCookLog((s) => s.log);
+  // A plan entry whose recipe is gone (a deleted own recipe) is not a meal: it mustn't hide tonight's real dinner (F17).
+  const planned = useMemo(() => entries.filter((e) => getRecipe(e.recipeId) !== undefined), [entries, getRecipe]);
+  const cookedToday = useMemo(() => cookedOn(log, today), [log, today]);
+  const tonight = tonightsDinner(planned, today, cookedToday);
+  const cookedTonight = tonight !== undefined && cookedToday.has(tonight.recipeId);
   const cook = useCookableNow();
   // Nothing planned? Something you can cook right now beats a suggestion you'd have to shop for.
   const suggestion = cook.ready[0]?.recipe ?? forYouPick;
@@ -50,7 +59,7 @@ export function FeedScreen() {
   const tonightRecipe = tonight ? getRecipe(tonight.recipeId) : undefined;
   const open = (id: string) => router.push({ pathname: '/recipe/[id]', params: { id } });
   const ahead = Array.from({ length: AHEAD_DAYS }, (_, i) => addDays(today, i + 1)).flatMap((day) =>
-    entriesFor(entries, day, 'dinner').map((entry) => ({ day, entry, recipe: getRecipe(entry.recipeId) })),
+    entriesFor(planned, day, 'dinner').map((entry) => ({ day, entry, recipe: getRecipe(entry.recipeId) })),
   );
 
   return (
@@ -66,33 +75,42 @@ export function FeedScreen() {
 
       {tonight && tonightRecipe ? (
         <View style={{ gap: SPACE.md }}>
-          <SectionHeader kicker={`Tonight · ${longDate(new Date())}`} tone="accent" title="On for dinner" />
+          <SectionHeader
+            kicker={`Tonight · ${longDate(fromISODate(today))}`}
+            tone="accent"
+            title={cookedTonight ? 'Cooked tonight' : 'On for dinner'}
+          />
           <RecipeCard
             recipe={tonightRecipe}
             image={RECIPE_IMAGES[tonightRecipe.id]}
             size="large"
-            note={`Dinner for ${tonight.servings}`}
+            note={cookedTonight ? 'Cooked. Enjoy!' : `Dinner for ${tonight.servings}`}
             // Opens scaled to tonight's planned servings, as Start cooking does (audit F37).
             onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: tonightRecipe.id, servings: String(tonight.servings) } })}
             testID="feed-tonight"
           />
-          <Button
-            label="Start cooking"
-            icon="flame"
-            kind="primary"
-            size="lg"
-            block
-            testID="feed-cook"
-            onPress={() =>
-              router.push({ pathname: '/recipe/[id]/cook', params: { id: tonightRecipe.id, servings: String(tonight.servings) } })
-            }
-          />
-          <Button label="Not feeling it? Surprise me" kind="quiet" onPress={() => router.push('/surprise')} testID="feed-surprise" />
+          {/* Once it's cooked, "Start cooking" and "Not feeling it?" no longer fit the moment (F22). */}
+          {cookedTonight ? null : (
+            <>
+              <Button
+                label="Start cooking"
+                icon="flame"
+                kind="primary"
+                size="lg"
+                block
+                testID="feed-cook"
+                onPress={() =>
+                  router.push({ pathname: '/recipe/[id]/cook', params: { id: tonightRecipe.id, servings: String(tonight.servings) } })
+                }
+              />
+              <Button label="Not feeling it? Surprise me" kind="quiet" onPress={() => router.push('/surprise')} testID="feed-surprise" />
+            </>
+          )}
         </View>
       ) : suggestion ? (
         <View style={{ gap: SPACE.md }}>
           <SectionHeader
-            kicker={`Tonight · ${longDate(new Date())}`}
+            kicker={`Tonight · ${longDate(fromISODate(today))}`}
             tone="accent"
             title={cook.ready[0] ? 'You can cook this now' : 'How about this?'}
           />
@@ -111,7 +129,8 @@ export function FeedScreen() {
             block
             testID="feed-have-tonight"
             onPress={() => {
-              const entry = addEntry(suggestion.id, today, 'dinner', suggestion.servings);
+              // The day at the moment of the tap, not the last render: the screen may have sat open past midnight (F16).
+              const entry = addEntry(suggestion.id, toISODate(new Date()), 'dinner', suggestion.servings);
               toast({ message: `${suggestion.title} is on for tonight`, undo: () => removeEntry(entry.id) });
             }}
           />
@@ -127,7 +146,8 @@ export function FeedScreen() {
 
       {ahead.length ? (
         <View>
-          <SectionHeader kicker="Coming up" tone="accent" title="This week" />
+          {/* A rolling six days after tonight, not the calendar week (F143). */}
+          <SectionHeader kicker="Coming up" tone="accent" title="Next few days" />
           {ahead.map(({ day, entry, recipe }) =>
             recipe ? (
               <RecipeCard

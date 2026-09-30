@@ -6,8 +6,11 @@ import { useShallow } from 'zustand/react/shallow';
 
 import type { DietPreference } from '@/domain/recipes/diets';
 import { CUISINE_LABELS, MEAL_TYPE_LABELS } from '@/domain/recipes/labels';
+import { fromISODate } from '@/domain/plan/week';
 import { seasonOn, type TimeFilter } from '@/domain/recipes/search';
 import { CUISINES, DIFFICULTIES, MEAL_TYPES } from '@/domain/recipes/types';
+import { goBackOr } from '@/lib/navigation';
+import { useToday } from '@/lib/useToday';
 import { toggleIn, useRecipeFilters } from '@/store/recipeFilters';
 import { ActionBar } from '@/ui/patterns/ActionBar';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
@@ -42,19 +45,19 @@ export function FiltersScreen() {
     useShallow(({ filters, update, clear, setShowAll }) => ({ filters, update, clear, setShowAll })),
   );
   const { results, activeFilters, browsing } = useRecipeResults();
-  const season = seasonOn(new Date());
+  const season = seasonOn(fromISODate(useToday()));
   const count = browsing ? 'all recipes' : results.length === 1 ? '1 recipe' : `${results.length} recipes`;
   const matches = results.length === 1 ? '1 recipe matches' : `${results.length} recipes match`;
   // With nothing chosen the footer promises "all recipes", so it opens the full
   // list rather than dropping you back on the browse shelves.
   const show = () => {
     if (browsing) setShowAll(true);
-    router.back();
+    goBackOr(router);
   };
 
   return (
     <View style={{ flex: 1 }}>
-      <Sheet kicker={browsing ? 'Filters' : matches} title="Refine your rotation" onClose={() => router.back()}>
+      <Sheet kicker={browsing ? 'Filters' : matches} title="Refine your rotation" onClose={() => goBackOr(router)}>
         <View style={{ gap: SPACE.sm }}>
           <SectionHeader title="Diet" />
           <ChipRow>

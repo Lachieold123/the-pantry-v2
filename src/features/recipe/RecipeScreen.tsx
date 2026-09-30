@@ -14,6 +14,7 @@ import { cupboardIds } from '@/domain/cupboard/match';
 import { recipeAsText } from '@/domain/recipes/labels';
 import { parseServings } from '@/domain/recipes/servings';
 import { logger } from '@/lib/logger';
+import { goBackOr, goToTab } from '@/lib/navigation';
 import { useCookLog } from '@/store/cookLog';
 import { ingredientName } from '@/store/cookable';
 import { useCupboard } from '@/store/cupboard';
@@ -89,7 +90,7 @@ export function RecipeScreen({ id, servings: requested }: { id: string; servings
         <EmptyState
           title="We couldn't find that recipe"
           body="It may have been removed or renamed."
-          action={{ label: 'Browse recipes', onPress: () => router.navigate('/browse') }}
+          action={{ label: 'Browse recipes', onPress: () => goToTab(router, '/browse') }}
           testID="recipe-missing"
         />
       </Screen>
@@ -180,7 +181,7 @@ export function RecipeScreen({ id, servings: requested }: { id: string; servings
       </ScrollView>
 
       <View style={[styles.nav, { top: insets.top + SPACE.sm }]} pointerEvents="box-none">
-        <IconButton icon="arrowBack" label="Back" shape="round" onPress={() => router.back()} testID="back" />
+        <IconButton icon="arrowBack" label="Back" shape="round" onPress={() => goBackOr(router)} testID="back" />
         <IconButton icon="more" label="More actions" shape="round" onPress={() => setMenu(true)} testID="recipe-more" />
       </View>
 

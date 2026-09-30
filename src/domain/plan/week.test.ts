@@ -7,6 +7,7 @@ import {
   fromISODate,
   isISODate,
   isPlanEntry,
+  plannableDay,
   pruneDay,
   pruneOldEntries,
   tonightsDinner,
@@ -51,6 +52,12 @@ describe('week plan dates', () => {
   it('finds tonight’s dinner and the entries in a week', () => {
     assert.equal(tonightsDinner(entries, '2026-09-29')?.id, 'a');
     assert.equal(tonightsDinner(entries, '2026-09-30'), undefined);
+  });
+  it('moves on to a second dinner once the first is cooked (F22)', () => {
+    const two: PlanEntry[] = [...entries, { id: 'e', recipeId: 'w', day: '2026-09-29', slot: 'dinner', servings: 2 }];
+    assert.equal(tonightsDinner(two, '2026-09-29', new Set(['x']))?.id, 'e');
+    // All cooked: the first comes back, for the caller to show as done.
+    assert.equal(tonightsDinner(two, '2026-09-29', new Set(['x', 'w']))?.id, 'a');
     assert.deepEqual(
       entriesInWeek(entries, '2026-09-28').map((e) => e.id),
       ['a', 'b'],
@@ -93,6 +100,22 @@ describe('saved plan entries', () => {
     for (const bad of [null, 'x', { ...good, day: 'tomorrow' }, { ...good, slot: 'brunch' }, { ...good, servings: '2' }]) {
       assert.ok(!isPlanEntry(bad), JSON.stringify(bad));
     }
+  });
+});
+
+describe('a day to plan on from a link (F144)', () => {
+  const today = '2026-09-30'; // a Wednesday; next week ends Sunday 11 October
+  it('keeps a day in the two weeks the Plan tab shows', () => {
+    assert.equal(plannableDay('2026-10-04', today), '2026-10-04');
+    assert.equal(plannableDay(today, today), today);
+  });
+  it('clamps the past to today and the far future to the end of next week', () => {
+    assert.equal(plannableDay('2026-09-01', today), today);
+    assert.equal(plannableDay('2099-01-01', today), '2026-10-11');
+  });
+  it('falls back to today for garbage', () => {
+    assert.equal(plannableDay('soon', today), today);
+    assert.equal(plannableDay(undefined, today), today);
   });
 });
 

@@ -7,6 +7,7 @@ import { View } from 'react-native';
 
 import { INGREDIENTS } from '@/data/catalogue/catalogue';
 import { readPantryList, type ListGuess } from '@/domain/cupboard/addList';
+import { goBackOr } from '@/lib/navigation';
 import { ingredientName } from '@/store/cookable';
 import { useCupboard } from '@/store/cupboard';
 import { useToast } from '@/ui/patterns/Toast';
@@ -38,11 +39,11 @@ export function AddListSheet() {
     const before = items;
     add([...ticked], 'list');
     toast({ message: `${ticked.size} added to your cupboard`, undo: () => restore(before) });
-    router.back();
+    goBackOr(router);
   };
 
   return (
-    <Sheet kicker="Cupboard" title="Add a list" onClose={() => router.back()}>
+    <Sheet kicker="Cupboard" title="Add a list" onClose={() => goBackOr(router)}>
       {guesses === undefined ? (
         <View style={{ gap: SPACE.md }}>
           <TextField

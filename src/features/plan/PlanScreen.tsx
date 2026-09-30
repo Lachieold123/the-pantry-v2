@@ -9,21 +9,12 @@ import { useRef, useState } from 'react';
 import { ScrollView, Share, View } from 'react-native';
 
 import { firstOpenSlot, weekAsText, weekProgress } from '@/domain/plan/summary';
-import {
-  entriesFor,
-  entriesInWeek,
-  fromISODate,
-  isPast,
-  toISODate,
-  visibleWeeks,
-  weekDays,
-  weekStart,
-  type ISODate,
-} from '@/domain/plan/week';
+import { entriesFor, entriesInWeek, fromISODate, isPast, visibleWeeks, weekDays, weekStart, type ISODate } from '@/domain/plan/week';
 import { AISLE_LABELS } from '@/domain/recipes/labels';
 import { formatListForSharing } from '@/domain/shopping/derive';
 import { longDate, shortDate, weekdayName, weekRange } from '@/lib/dates';
 import { logger } from '@/lib/logger';
+import { useToday } from '@/lib/useToday';
 import { usePlan } from '@/store/plan';
 import { useRecipeLookup } from '@/store/recipeBook';
 import { TitleBlock } from '@/ui/patterns/TitleBlock';
@@ -52,7 +43,7 @@ export function PlanScreen() {
   const toast = useToast();
   const entries = usePlan((s) => s.entries);
   const getRecipe = useRecipeLookup();
-  const today = toISODate(new Date());
+  const today = useToday();
   const weeks = visibleWeeks(today);
   const days = [...weekDays(weeks.thisWeek), ...weekDays(weeks.nextWeek)];
   const scroll = useRef<ScrollView>(null);
@@ -63,8 +54,14 @@ export function PlanScreen() {
     scroll.current?.scrollTo({ y: 0, animated: false });
   };
   const [selected, setSelected] = useState<ISODate>(today);
+  // Overnight, a selected "Today" moves on with the date; a day the cook picked stays picked (F16).
+  const [selectedToday, setSelectedToday] = useState(today);
+  if (selectedToday !== today) {
+    setSelectedToday(today);
+    if (selected === selectedToday) setSelected(today);
+  }
   const [listWhich, setListWhich] = useState<Which>(() =>
-    new Date().getDay() === 0 && entriesInWeek(entries, weeks.nextWeek).length > 0 ? 'next' : 'this',
+    fromISODate(today).getDay() === 0 && entriesInWeek(entries, weeks.nextWeek).length > 0 ? 'next' : 'this',
   );
   const listWeek = listWhich === 'this' ? weeks.thisWeek : weeks.nextWeek;
   const listLabel = listWhich === 'this' ? 'This week' : 'Next week';

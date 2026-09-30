@@ -5,7 +5,10 @@ import { View } from 'react-native';
 
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { recentlyCooked, weeklyStreak } from '@/domain/cook/cook';
+import { fromISODate } from '@/domain/plan/week';
 import type { Recipe } from '@/domain/recipes/types';
+import { goToTab } from '@/lib/navigation';
+import { useToday } from '@/lib/useToday';
 import { useCookLog } from '@/store/cookLog';
 import { useRecipeLookup } from '@/store/recipeBook';
 import { useSaved } from '@/store/saved';
@@ -58,7 +61,7 @@ export function BookmarksList() {
     <EmptyState
       title="Nothing saved yet"
       body="Tap Save on any recipe and it waits for you here."
-      action={{ label: 'Browse recipes', onPress: () => router.navigate('/browse') }}
+      action={{ label: 'Browse recipes', onPress: () => goToTab(router, '/browse') }}
       testID="cookmarks-empty"
     />
   );
@@ -74,7 +77,7 @@ export function RecentList() {
     <EmptyState
       title="Nothing viewed yet"
       body="Recipes you open show up here, so the one you were looking at is easy to find again."
-      action={{ label: 'Browse recipes', onPress: () => router.navigate('/browse') }}
+      action={{ label: 'Browse recipes', onPress: () => goToTab(router, '/browse') }}
       testID="recent-empty"
     />
   );
@@ -137,6 +140,7 @@ export function CookedList() {
   const recipesFor = useRecipesFor();
   const router = useRouter();
   const log = useCookLog((s) => s.log);
+  const today = useToday();
   const recipes = recipesFor(recentlyCooked(log));
   const times = (id: string) => log.filter((e) => e.recipeId === id).length;
   if (!recipes.length) {
@@ -144,12 +148,12 @@ export function CookedList() {
       <EmptyState
         title="Nothing cooked yet"
         body="Tap Done when you finish a recipe in Cook Mode, and it goes here."
-        action={{ label: 'Browse recipes', onPress: () => router.navigate('/browse') }}
+        action={{ label: 'Browse recipes', onPress: () => goToTab(router, '/browse') }}
         testID="stats-empty"
       />
     );
   }
-  const streak = weeklyStreak(log, new Date());
+  const streak = weeklyStreak(log, fromISODate(today));
   return (
     <View style={{ gap: SPACE.md }}>
       {streak >= 2 ? <SectionHeader title={`Cooking ${streak} weeks in a row`} /> : null}

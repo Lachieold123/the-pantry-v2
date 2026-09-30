@@ -5,8 +5,9 @@
 import { useMemo } from 'react';
 
 import { INGREDIENTS } from '@/data/catalogue/catalogue';
-import { entriesInWeek, isPast, toISODate, weekStart, type ISODate } from '@/domain/plan/week';
+import { entriesInWeek, isPast, weekStart, type ISODate } from '@/domain/plan/week';
 import { carriedExtras, deriveShoppingList, EMPTY_EDITS, type ShoppingList } from '@/domain/shopping/derive';
+import { useToday } from '@/lib/useToday';
 import { useCupboard } from '@/store/cupboard';
 import { usePlan } from '@/store/plan';
 import { usePreferences } from '@/store/preferences';
@@ -18,8 +19,8 @@ export function useWeekList(week: ISODate): { list: ShoppingList; meals: number 
   const cupboardItems = useCupboard((s) => s.items);
   const units = usePreferences((s) => s.units);
   const getRecipe = useRecipeLookup();
+  const today = useToday();
   return useMemo(() => {
-    const today = toISODate(new Date());
     const inWeek = entriesInWeek(entries, week);
     const list = deriveShoppingList({
       entries: inWeek,
@@ -31,6 +32,7 @@ export function useWeekList(week: ISODate): { list: ShoppingList; meals: number 
       units,
       carried: carriedExtras(allEdits, week, weekStart(today)),
     });
-    return { list, meals: inWeek.filter((e) => !isPast(e.day, today)).length };
-  }, [entries, week, allEdits, cupboardItems, units, getRecipe]);
+    // A meal whose recipe is gone buys nothing, so it isn't counted (F17).
+    return { list, meals: inWeek.filter((e) => !isPast(e.day, today) && getRecipe(e.recipeId) !== undefined).length };
+  }, [entries, week, allEdits, cupboardItems, units, getRecipe, today]);
 }

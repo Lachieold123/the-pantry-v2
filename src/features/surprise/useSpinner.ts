@@ -7,11 +7,12 @@ import { useMemo, useRef, useState } from 'react';
 import { INGREDIENTS, KITCHEN } from '@/data/catalogue/catalogue';
 import { hasCooked, recentlyCooked } from '@/domain/cook/cook';
 import { cookable } from '@/domain/cupboard/cookable';
-import { entriesInWeek, toISODate, visibleWeeks } from '@/domain/plan/week';
+import { entriesInWeek, visibleWeeks } from '@/domain/plan/week';
 import { NO_FILTERS } from '@/domain/recipes/search';
 import type { Recipe } from '@/domain/recipes/types';
 import { DEFAULT_SPIN, spinLanding, spinPool, spinReasons, spinReel, type SpinSettings } from '@/domain/suggestions/spinner';
 import { eligibleForSurprise } from '@/domain/suggestions/surprise';
+import { useToday } from '@/lib/useToday';
 import { ingredientName, useCookableNow } from '@/store/cookable';
 import { useCookLog } from '@/store/cookLog';
 import { useCupboard } from '@/store/cupboard';
@@ -40,10 +41,11 @@ export function useSpinner() {
   );
   const cookableIds = useMemo(() => new Set([...ready, ...nearly].map((m) => m.recipe.id)), [ready, nearly]);
   const pool = useMemo(() => spinPool(eligible, settings, cookableIds), [eligible, settings, cookableIds]);
+  const today = useToday();
   const leave = useMemo(() => {
-    const week = visibleWeeks(toISODate(new Date())).thisWeek;
+    const week = visibleWeeks(today).thisWeek;
     return { planned: new Set(entriesInWeek(entries, week).map((e) => e.recipeId)), recentlyCooked: recentlyCooked(log) };
-  }, [entries, log]);
+  }, [entries, log, today]);
 
   // The card on show: the one last landed on while it's still in the deck,
   // otherwise a random first card, so changing a setting never shows a stale

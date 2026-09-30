@@ -6,9 +6,11 @@ import { useMemo, useState } from 'react';
 
 import { INGREDIENTS } from '@/data/catalogue/catalogue';
 import { buildRecipe, EMPTY_DRAFT, myRecipeId, type RecipeDraft } from '@/domain/recipes/draft';
+import { goBackOr } from '@/lib/navigation';
 import { useMyRecipes } from '@/store/myRecipes';
 import { useToast } from '@/ui/patterns/Toast';
 import { usePendingImport } from '@/store/pendingImport';
+import { useLeaveGuard } from './useLeaveGuard';
 
 export function useRecipeEditor(id: string | undefined, fromImport: boolean) {
   const router = useRouter();
@@ -27,12 +29,21 @@ export function useRecipeEditor(id: string | undefined, fromImport: boolean) {
   const [dirty, setDirty] = useState(imported !== undefined);
   // Problems show only after the first save attempt, so a blank form doesn't start out shouting.
   const [showProblems, setShowProblems] = useState(false);
+  const guard = useLeaveGuard(dirty);
 
   const built = useMemo(() => buildRecipe(id ?? 'my-new', draft, source, INGREDIENTS), [draft, id, source]);
 
   const update = <K extends keyof RecipeDraft>(key: K, value: RecipeDraft[K]) => {
     setDraft((d) => ({ ...d, [key]: value }));
     setDirty(true);
+  };
+
+  // Close the editor first, then go down to My recipes, or open it if it isn't
+  // underneath. Navigating from the editor pushed My recipes on top of it, so
+  // Back reopened a stale editor and saving again made a duplicate (audit F56).
+  const toMyRecipes = () => {
+    if (router.canGoBack()) router.dismiss();
+    router.dismissTo('/my-recipes');
   };
 
   const store = () => {
@@ -49,8 +60,7 @@ export function useRecipeEditor(id: string | undefined, fromImport: boolean) {
     if (!draft.title.trim() || !built.recipe) return;
     const recipeId = store();
     toast({ message: id ? 'Changes saved' : 'Recipe saved' });
-    if (id) router.back();
-    else router.replace({ pathname: '/recipe/[id]', params: { id: recipeId } });
+    guard.leave(() => (id ? goBackOr(router) : router.replace({ pathname: '/recipe/[id]', params: { id: recipeId } })));
   };
 
   /** Keeps an unfinished recipe to come back to. Only needs a name. */
@@ -59,7 +69,7 @@ export function useRecipeEditor(id: string | undefined, fromImport: boolean) {
     if (!draft.title.trim()) return;
     store();
     toast({ message: 'Saved to finish later' });
-    router.navigate('/my-recipes');
+    guard.leave(toMyRecipes);
   };
 
   const remove = () => {
@@ -67,7 +77,7 @@ export function useRecipeEditor(id: string | undefined, fromImport: boolean) {
     const removed = removeRecipe(id);
     if (removed) toast({ message: `${removed.draft.title} deleted`, undo: () => restoreRecipe(removed) });
     // The recipe page underneath would now be empty, so go back to where your recipes live.
-    router.navigate('/my-recipes');
+    guard.leave(toMyRecipes);
   };
 
   const problem = (field: string) => (showProblems ? built.problems.find((p) => p.field === field)?.message : undefined);
@@ -85,6 +95,7 @@ export function useRecipeEditor(id: string | undefined, fromImport: boolean) {
     problem,
     titleProblem,
     sourceUrl,
+    guard,
     isNew: !id,
     exists: !id || existing !== undefined,
   };

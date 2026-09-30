@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { View } from 'react-native';
 
 import type { Recipe } from '@/domain/recipes/types';
+import { goBackOr, goToTab } from '@/lib/navigation';
 import { useRecipeLookup } from '@/store/recipeBook';
 import { useSaved } from '@/store/saved';
 import { EmptyState } from '@/ui/patterns/EmptyState';
@@ -31,11 +32,11 @@ export function CollectionScreen({ id }: { id: string }) {
   if (!collection) {
     return (
       <Screen>
-        <IconButton icon="back" label="Back" onPress={() => router.back()} testID="back" />
+        <IconButton icon="back" label="Back" onPress={() => goBackOr(router)} testID="back" />
         <EmptyState
           title="This collection is gone"
           body="It may have been deleted."
-          action={{ label: 'Back to Saved', onPress: () => router.back() }}
+          action={{ label: 'Back to Saved', onPress: () => goBackOr(router) }}
           testID="collection-missing"
         />
       </Screen>
@@ -48,7 +49,7 @@ export function CollectionScreen({ id }: { id: string }) {
 
   return (
     <Screen testID="collection-screen">
-      <IconButton icon="back" label="Back" onPress={() => router.back()} testID="back" />
+      <IconButton icon="back" label="Back" onPress={() => goBackOr(router)} testID="back" />
       <TitleBlock kicker="Collection" title={collection.name} />
       {editing ? (
         <View style={{ gap: SPACE.sm }}>
@@ -91,7 +92,7 @@ export function CollectionScreen({ id }: { id: string }) {
             kind="destructive"
             onPress={() => {
               const removed = del(id);
-              router.back();
+              goBackOr(router);
               if (removed) toast({ message: `${removed.name} deleted`, undo: () => restore(removed) });
             }}
             testID="collection-delete"
@@ -104,7 +105,7 @@ export function CollectionScreen({ id }: { id: string }) {
         <EmptyState
           title="Nothing in here yet"
           body="Open any recipe and tap Add to collection."
-          action={{ label: 'Browse recipes', onPress: () => router.navigate('/browse') }}
+          action={{ label: 'Browse recipes', onPress: () => goToTab(router, '/browse') }}
           testID="collection-empty"
         />
       )}

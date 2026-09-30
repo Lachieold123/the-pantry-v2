@@ -6,6 +6,7 @@ import { View } from 'react-native';
 
 import { KITCHEN } from '@/data/catalogue/catalogue';
 import { CUPBOARD_CATEGORIES } from '@/domain/cupboard/kitchen';
+import { goBackOr } from '@/lib/navigation';
 import { ingredientName } from '@/store/cookable';
 import { useCupboard } from '@/store/cupboard';
 import { Chip } from '@/ui/primitives/Chip';
@@ -27,7 +28,7 @@ export function ShelfSheet() {
   const toggle = (id: string) =>
     setShelf({ ...shelf, ids: shelf.ids.includes(id) ? shelf.ids.filter((x) => x !== id) : [...shelf.ids, id] });
   return (
-    <Sheet kicker="Cupboard" title="Always in my kitchen" onClose={() => router.back()}>
+    <Sheet kicker="Cupboard" title="Always in my kitchen" onClose={() => goBackOr(router)}>
       <Text variant="body" colour="inkSoft">
         Salt, pepper, oil and water are always assumed. These are the other long-life things most kitchens keep. Recipes that only need
         these from the shelf count as ready, with a “check you have” note.

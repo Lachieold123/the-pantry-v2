@@ -3,6 +3,7 @@
 
 import type { UnitSystem } from '../ingredients/format';
 import { NUMBER_PATTERN, parseNumber } from '../ingredients/quantity';
+import { toISODate, type ISODate } from '../plan/week';
 
 export type StepSegment = { type: 'text'; text: string } | { type: 'timer'; label: string; seconds: number };
 
@@ -93,6 +94,11 @@ export type CookEvent = {
 
 export function hasCooked(log: readonly CookEvent[], recipeId: string): boolean {
   return log.some((e) => e.recipeId === recipeId);
+}
+
+/** Recipes cooked on a local day. Cooks with no real date never count as today's. */
+export function cookedOn(log: readonly CookEvent[], day: ISODate): Set<string> {
+  return new Set(log.filter((e) => !e.dateUnknown && toISODate(new Date(e.cookedAt)) === day).map((e) => e.recipeId));
 }
 
 /** Most recent first, each recipe once. Cooks with no real date come after every dated one. */
