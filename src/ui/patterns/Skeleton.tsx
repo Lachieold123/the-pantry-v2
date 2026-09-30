@@ -21,7 +21,7 @@ export function Skeleton({ width = '100%', height, radius = RADIUS.sm }: Props) 
     <Animated.View
       accessibilityElementsHidden
       importantForAccessibility="no"
-      style={[{ width, height, borderRadius: radius, backgroundColor: colours.surfaceSunken }, style]}
+      style={[{ width, height, borderRadius: radius, backgroundColor: colours.bgSoft }, style]}
     />
   );
 }

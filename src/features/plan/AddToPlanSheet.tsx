@@ -74,7 +74,7 @@ export function AddToPlanSheet({ day: requested }: { day: string | undefined }) 
       <View style={{ gap: SPACE.sm }}>
         <SectionHeader title={query.trim() ? 'Results' : `Ideas for ${slot}`} />
         {results.length === 0 ? (
-          <Text variant="body" colour="inkSecondary">
+          <Text variant="body" colour="inkSoft">
             No recipes match. Check the spelling, or try an ingredient.
           </Text>
         ) : null}

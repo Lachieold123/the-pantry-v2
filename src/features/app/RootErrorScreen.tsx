@@ -11,7 +11,7 @@ export function RootErrorScreen({ retry }: { retry: () => Promise<void> }) {
   const { colours } = useTheme();
   const insets = useSafeAreaInsets();
   return (
-    <View style={{ flex: 1, backgroundColor: colours.bg, paddingTop: insets.top + SPACE.xl, paddingHorizontal: SPACE.screen }}>
+    <View style={{ flex: 1, backgroundColor: colours.bg, paddingTop: insets.top + SPACE.xl, paddingHorizontal: SPACE.gutter }}>
       <ErrorState
         title="Something went wrong"
         body="This screen hit a problem it couldn't recover from. Your saved recipes and plans are safe."

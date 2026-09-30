@@ -18,12 +18,12 @@ export function Checkbox({ label, detail, checked, onToggle }: Props) {
       accessibilityLabel={detail ? `${label}, ${detail}` : label}
       style={styles.row}
     >
-      <View style={[styles.box, checked && styles.boxOn]}>{checked ? <Icon name="check" size={14} colour="onAccent" /> : null}</View>
+      <View style={[styles.box, checked && styles.boxOn]}>{checked ? <Icon name="check" size={14} colour="bg" /> : null}</View>
       <Text variant="body" colour={checked ? 'inkMuted' : 'ink'} style={[styles.label, checked && styles.struck]}>
         {label}
       </Text>
       {detail ? (
-        <Text variant="meta" colour="inkSecondary" style={{ fontVariant: ['tabular-nums'] }}>
+        <Text variant="meta" colour="inkSoft" style={{ fontVariant: ['tabular-nums'] }}>
           {detail}
         </Text>
       ) : null}
@@ -42,7 +42,7 @@ const useStyles = makeStyles(({ colours }) => ({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  boxOn: { backgroundColor: colours.accent, borderColor: colours.accent },
+  boxOn: { backgroundColor: colours.ink, borderColor: colours.ink },
   label: { flex: 1 },
   struck: { textDecorationLine: 'line-through' },
 }));

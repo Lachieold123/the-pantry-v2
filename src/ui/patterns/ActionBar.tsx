@@ -14,12 +14,12 @@ export function ActionBar({ children }: { children: ReactNode }) {
       style={{
         flexDirection: 'row',
         gap: SPACE.xs,
-        paddingHorizontal: SPACE.screen,
+        paddingHorizontal: SPACE.gutter,
         paddingTop: SPACE.sm,
         paddingBottom: Math.max(insets.bottom, SPACE.sm),
         backgroundColor: colours.bg,
         borderTopWidth: StyleSheet.hairlineWidth,
-        borderTopColor: colours.rule,
+        borderTopColor: colours.border,
       }}
     >
       {children}

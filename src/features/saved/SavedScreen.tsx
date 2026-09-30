@@ -2,7 +2,7 @@
 import { useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
 
-import { Masthead } from '@/ui/patterns/Masthead';
+import { TitleBlock } from '@/ui/patterns/TitleBlock';
 import { Screen } from '@/ui/primitives/Screen';
 import { Segmented } from '@/ui/primitives/Segmented';
 import { MineList } from './MineList';
@@ -29,7 +29,7 @@ export function SavedScreen() {
   }
   return (
     <Screen>
-      <Masthead title="Saved" />
+      <TitleBlock title="Saved" />
       <Segmented<Segment> label="Show" options={SEGMENTS} value={segment} onChange={setSegment} />
       {segment === 'bookmarks' ? <BookmarksList /> : null}
       {segment === 'collections' ? <CollectionsList /> : null}

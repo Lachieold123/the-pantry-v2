@@ -75,7 +75,7 @@ export function WelcomeScreen() {
           <Text variant="display" accessibilityRole="header">
             The Pantry
           </Text>
-          <Text variant="body" colour="inkSecondary">
+          <Text variant="body" colour="inkSoft">
             Plan the week on Sunday, shop once, and know what’s for dinner every night. Two quick questions and we’ll suggest tonight’s.
           </Text>
           <Button label="Get started" kind="primary" block onPress={next} />
@@ -121,7 +121,7 @@ export function WelcomeScreen() {
           <Text variant="title" accessibilityRole="header">
             A nudge on Sundays?
           </Text>
-          <Text variant="body" colour="inkSecondary">
+          <Text variant="body" colour="inkSoft">
             We’ll remind you at 4pm on Sunday to plan the week. Nothing else, ever. You can change it in Settings.
           </Text>
           <Button label="Remind me on Sundays" kind="primary" block onPress={() => void remind()} />

@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 import { entriesInWeek, toISODate, visibleWeeks } from '@/domain/plan/week';
 import { usePlan } from '@/store/plan';
-import { Masthead } from '@/ui/patterns/Masthead';
+import { TitleBlock } from '@/ui/patterns/TitleBlock';
 import { Screen } from '@/ui/primitives/Screen';
 import { Segmented } from '@/ui/primitives/Segmented';
 import { CupboardView } from './CupboardView';
@@ -32,7 +32,7 @@ export function ShopScreen() {
 
   return (
     <Screen>
-      <Masthead title="Shop" />
+      <TitleBlock title="Shop" />
       <Segmented<Segment> label="Show" options={SEGMENTS} value={segment} onChange={setSegment} />
       {segment === 'list' ? (
         <>

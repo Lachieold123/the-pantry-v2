@@ -61,7 +61,7 @@ export function ImportLinkScreen() {
 
   return (
     <Sheet title="Import from a link" onClose={() => router.back()}>
-      <Text variant="body" colour="inkSecondary">
+      <Text variant="body" colour="inkSoft">
         Paste a link to a recipe page. You’ll check it over before it’s saved.
       </Text>
       <TextField

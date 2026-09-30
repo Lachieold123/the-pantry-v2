@@ -13,7 +13,7 @@ export function Screen({ children, scroll = true, edges = 'top', refreshControl 
   const insets = useSafeAreaInsets();
   const padding = {
     paddingTop: (edges === 'top' ? insets.top : 0) + SPACE.md,
-    paddingHorizontal: SPACE.screen,
+    paddingHorizontal: SPACE.gutter,
     paddingBottom: SPACE.xxl,
     gap: SPACE.lg,
   };

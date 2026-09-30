@@ -10,7 +10,7 @@ import { usePlan } from '@/store/plan';
 import { useRecipeLookup } from '@/store/recipeBook';
 import { useForYou } from '@/store/suggestions';
 import { EmptyState } from '@/ui/patterns/EmptyState';
-import { Masthead } from '@/ui/patterns/Masthead';
+import { TitleBlock } from '@/ui/patterns/TitleBlock';
 import { RecipeCard } from '@/ui/patterns/RecipeCard';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { useToast } from '@/ui/patterns/Toast';
@@ -42,14 +42,14 @@ export function TodayScreen() {
 
   return (
     <Screen>
-      <Masthead
+      <TitleBlock
         kicker={longDate(new Date())}
         title="Tonight"
         action={<IconButton icon="settings" label="Settings" onPress={() => router.push('/settings')} />}
       />
       {welcome ? (
         <View style={{ flexDirection: 'row', alignItems: 'flex-start', gap: SPACE.xs }} accessibilityLiveRegion="polite">
-          <Text variant="body" colour="inkSecondary" style={{ flex: 1 }}>
+          <Text variant="body" colour="inkSoft" style={{ flex: 1 }}>
             {welcome}
           </Text>
           <IconButton icon="close" label="Dismiss" onPress={dismissWelcome} colour="inkMuted" />

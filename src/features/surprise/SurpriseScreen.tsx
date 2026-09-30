@@ -109,7 +109,7 @@ export function SurpriseScreen() {
       ) : (
         <View style={{ gap: SPACE.md, paddingVertical: SPACE.xl }}>
           <Text variant="title">Can’t decide?</Text>
-          <Text variant="body" colour="inkSecondary">
+          <Text variant="body" colour="inkSoft">
             We’ll pick one of {pool.length} dinners that suit you, leaving out what’s already planned and what you’ve cooked lately.
           </Text>
           <Button label="Spin" kind="primary" block onPress={spin} />

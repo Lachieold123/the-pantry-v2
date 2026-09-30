@@ -7,7 +7,7 @@ import { CATALOGUE } from '@/data/catalogue/catalogue';
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { useRecipeFilters } from '@/store/recipeFilters';
 import { EmptyState } from '@/ui/patterns/EmptyState';
-import { Masthead } from '@/ui/patterns/Masthead';
+import { TitleBlock } from '@/ui/patterns/TitleBlock';
 import { RecipeCard } from '@/ui/patterns/RecipeCard';
 import { Button } from '@/ui/primitives/Button';
 import { SearchField } from '@/ui/primitives/SearchField';
@@ -26,11 +26,11 @@ export function RecipesScreen() {
   const clear = useRecipeFilters((s) => s.clear);
   const { browsing, results, activeFilters } = useRecipeResults();
   const open = (id: string) => router.push({ pathname: '/recipe/[id]', params: { id } });
-  const pad = { paddingTop: insets.top + SPACE.md, paddingHorizontal: SPACE.screen, paddingBottom: SPACE.xxl, gap: SPACE.lg };
+  const pad = { paddingTop: insets.top + SPACE.md, paddingHorizontal: SPACE.gutter, paddingBottom: SPACE.xxl, gap: SPACE.lg };
 
   const header = (
     <View style={{ gap: SPACE.md }}>
-      <Masthead title="Recipes" action={<Button label="Surprise me" kind="quiet" onPress={() => router.push('/surprise')} />} />
+      <TitleBlock title="Recipes" action={<Button label="Surprise me" kind="quiet" onPress={() => router.push('/surprise')} />} />
       <View style={{ flexDirection: 'row', gap: SPACE.xs, alignItems: 'center' }}>
         <SearchField value={query} onChange={setQuery} placeholder="Search recipes" label="Search recipes" />
         <Button label={activeFilters ? `Filters · ${activeFilters}` : 'Filters'} icon="filter" onPress={() => router.push('/filters')} />
@@ -49,7 +49,7 @@ export function RecipesScreen() {
   if (CATALOGUE.length === 0) {
     return (
       <ScrollView style={{ flex: 1, backgroundColor: colours.bg }} contentContainerStyle={pad}>
-        <Masthead title="Recipes" />
+        <TitleBlock title="Recipes" />
         <EmptyState
           title="The kitchen is still testing"
           body="Recipes appear here once they've been cooked and checked in The Pantry kitchen."

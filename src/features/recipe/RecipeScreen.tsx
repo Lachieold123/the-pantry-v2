@@ -20,9 +20,8 @@ import { Screen } from '@/ui/primitives/Screen';
 import { Segmented } from '@/ui/primitives/Segmented';
 import { Stepper } from '@/ui/primitives/Stepper';
 import { Text } from '@/ui/primitives/Text';
-import { useTheme } from '@/ui/theme/ThemeProvider';
-import { CUISINE_TONES } from '@/ui/tokens/colour';
-import { SPACE } from '@/ui/tokens/type';
+import { cuisineEyebrow } from '@/ui/tokens/cuisine';
+import { RADIUS, SPACE } from '@/ui/tokens/type';
 import { Ingredients, Method } from './RecipeBody';
 
 const UNITS = [
@@ -33,7 +32,6 @@ const UNITS = [
 export function RecipeScreen({ id }: { id: string }) {
   const router = useRouter();
   const recipe = useRecipe(id);
-  const { name } = useTheme();
   const toast = useToast();
   const units = usePreferences((s) => s.units);
   const setUnits = usePreferences((s) => s.setUnits);
@@ -79,16 +77,16 @@ export function RecipeScreen({ id }: { id: string }) {
     <View style={{ flex: 1 }}>
       <Screen>
         <IconButton icon="back" label="Back" onPress={() => router.back()} />
-        <RecipeImage source={RECIPE_IMAGES[recipe.id]} shape="hero" initial={cuisine.charAt(0)} />
+        <RecipeImage source={RECIPE_IMAGES[recipe.id]} shape="hero" cuisine={recipe.cuisine} radius={RADIUS.card} iconSize={56} />
         <View style={{ gap: SPACE.xs }}>
-          <Text variant="kicker" tone={CUISINE_TONES[recipe.cuisine]?.[name]}>
+          <Text variant="kicker" tone={cuisineEyebrow(recipe.cuisine)}>
             {cuisine}
           </Text>
           <Text variant="display" accessibilityRole="header">
             {recipe.title}
           </Text>
           {recipe.summary ? (
-            <Text variant="body" colour="inkSecondary">
+            <Text variant="body" colour="inkSoft">
               {recipe.summary}
             </Text>
           ) : null}
@@ -111,7 +109,7 @@ export function RecipeScreen({ id }: { id: string }) {
           <View style={{ gap: SPACE.xs }}>
             <SectionHeader title="Notes" />
             {recipe.notes.map((n, i) => (
-              <Text key={i} variant="body" colour="inkSecondary">
+              <Text key={i} variant="body" colour="inkSoft">
                 {n}
               </Text>
             ))}

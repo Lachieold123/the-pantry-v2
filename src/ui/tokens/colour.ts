@@ -1,104 +1,162 @@
-// Colour tokens. Screens use these names, never hex values (map §9, rule 8).
-// Tokens are named for their job, not their colour, so dark mode and high
-// contrast are just different values for the same names.
-// These values are the §9 starting proposal (D-012), for Lachlan to approve
-// from the design gallery.
+// Colour tokens. Screens use these names, never hex values.
+// The values reproduce the original app's look (D-025, docs/design/V1-DESIGN-SPEC.md §1)
+// so the later redesign is a change here, not in every screen. Tokens are named for
+// their job, so dark mode and high contrast are different values for the same names.
 
 export type ColourTokens = {
+  /** Page background; also the text colour on ink-filled buttons and cards. */
   bg: string;
-  surface: string;
-  surfaceSunken: string;
+  /** Inputs, chips, tiles, sunken cards, pressed rows. */
+  bgSoft: string;
+  /** Raised cards, the drawer panel, round buttons over photos. */
+  card: string;
+  /** Every 1pt border, divider and progress track. */
+  border: string;
+  /** Primary text, and the fill of every "black" pill or card (cream in dark mode). */
   ink: string;
-  inkSecondary: string;
+  /** Body copy, step text, secondary labels. */
+  inkSoft: string;
+  /** Meta, kickers, placeholders, inactive tabs. */
   inkMuted: string;
-  rule: string;
+  /** Handles, rules, disabled text, big italic numerals. */
+  inkSubtle: string;
   accent: string;
-  /** Text or icons placed on an accent-filled button. */
-  onAccent: string;
+  accentDeep: string;
   accentSoft: string;
+  /** Text or icons on an accent fill. */
+  onAccent: string;
+  /** The small dot beside each ingredient. */
+  bullet: string;
   danger: string;
+  /** Text or icons on a danger fill (badges). */
+  onDanger: string;
+  /** Soft category fills: cuisines, meal types, difficulty. */
+  tintOrange: string;
+  tintPeach: string;
+  tintButter: string;
+  tintMint: string;
+  tintSky: string;
+  tintLavender: string;
+  tintRose: string;
+  tintNeutral: string;
 };
 
-export const paper: ColourTokens = {
-  bg: '#F7F3EA',
-  surface: '#FFFDF8',
-  surfaceSunken: '#EFE9DC',
-  ink: '#1A1714',
-  inkSecondary: '#4A443C',
-  inkMuted: '#6E665A',
-  rule: 'rgba(26,23,20,0.12)',
-  accent: '#8E6232',
-  onAccent: '#FFFDF8',
-  accentSoft: '#F1E3CC',
-  danger: '#B3443A',
+export const light: ColourTokens = {
+  bg: '#FFFFFF',
+  bgSoft: '#F7F7F7',
+  card: '#FFFFFF',
+  border: 'rgba(0,0,0,0.06)',
+  ink: '#1A1A1A',
+  inkSoft: '#4A4A4A',
+  inkMuted: '#6E6E6E',
+  inkSubtle: '#BCBCBC',
+  accent: '#C99155',
+  // The original's #A2723D read at 3.6:1 on accentSoft; this is a shade darker and passes AA.
+  accentDeep: '#8F6232',
+  accentSoft: '#FBEDD6',
+  onAccent: '#FFFFFF',
+  bullet: '#F5B945',
+  danger: '#D85A5A',
+  onDanger: '#FFFFFF',
+  tintOrange: '#FCE9C5',
+  tintPeach: '#FBDDD0',
+  tintButter: '#FFF3CC',
+  tintMint: '#D6EFE0',
+  tintSky: '#D6E6F2',
+  tintLavender: '#E3DCF3',
+  tintRose: '#F8D2DD',
+  tintNeutral: '#F4F4F4',
 };
 
-export const night: ColourTokens = {
+export const dark: ColourTokens = {
   bg: '#0A0A0A',
-  surface: '#141312',
-  surfaceSunken: '#1C1A17',
+  bgSoft: '#141414',
+  card: '#141414',
+  border: 'rgba(255,255,255,0.10)',
   ink: '#F7F3EA',
-  inkSecondary: '#CFC8BA',
+  inkSoft: '#D1D1D6',
   inkMuted: '#9C968C',
-  rule: 'rgba(247,243,234,0.12)',
-  accent: '#E8C891',
-  onAccent: '#1A1714',
+  inkSubtle: '#48484A',
+  accent: '#E0AC6E',
+  accentDeep: '#C99155',
   accentSoft: '#3D2C13',
-  danger: '#FF7A6B',
+  onAccent: '#FFFFFF',
+  bullet: '#F5B945',
+  danger: '#FF6B6B',
+  onDanger: '#FFFFFF',
+  // The original kept light tints in dark mode by accident (spec §8.2); these are its own dark values.
+  tintOrange: '#3A2C12',
+  tintPeach: '#3A201A',
+  tintButter: '#3A2F18',
+  tintMint: '#1F3D2C',
+  tintSky: '#1F2E3D',
+  tintLavender: '#28213D',
+  tintRose: '#3D202A',
+  tintNeutral: '#1F1F1F',
 };
 
-/** High contrast keeps the same character with stronger ink and rules. */
-export const paperHighContrast: ColourTokens = {
-  ...paper,
-  inkSecondary: '#2E2A24',
-  inkMuted: '#4A443C',
-  rule: 'rgba(26,23,20,0.4)',
-  accent: '#6B4520',
+/** High contrast: pure ink, solid borders, deeper accents. Everything else inherits. */
+export const lightHighContrast: ColourTokens = {
+  ...light,
+  bgSoft: '#F0F0F0',
+  border: 'rgba(0,0,0,0.55)',
+  ink: '#000000',
+  inkSoft: '#1A1A1A',
+  inkMuted: '#363636',
+  inkSubtle: '#595959',
+  accent: '#8A5A22',
+  accentDeep: '#6E4A1C',
 };
 
-export const nightHighContrast: ColourTokens = {
-  ...night,
-  inkSecondary: '#EDE7DA',
-  inkMuted: '#CFC8BA',
-  rule: 'rgba(247,243,234,0.4)',
-  accent: '#F4DDB0',
+export const darkHighContrast: ColourTokens = {
+  ...dark,
+  bg: '#000000',
+  bgSoft: '#101010',
+  card: '#000000',
+  border: 'rgba(255,255,255,0.6)',
+  ink: '#FFFFFF',
+  inkSoft: '#F0F0F0',
+  inkMuted: '#C8C8C8',
+  inkSubtle: '#9A9A9A',
+  accent: '#F0C081',
+  accentDeep: '#E0AC6E',
 };
 
-export type ThemeName = 'paper' | 'night';
+export type ThemeName = 'light' | 'dark';
 export const THEMES: Readonly<Record<ThemeName, { normal: ColourTokens; highContrast: ColourTokens }>> = {
-  paper: { normal: paper, highContrast: paperHighContrast },
-  night: { normal: night, highContrast: nightHighContrast },
+  light: { normal: light, highContrast: lightHighContrast },
+  dark: { normal: dark, highContrast: darkHighContrast },
 };
 
-/**
- * One quiet tone per cuisine, used only for the small cuisine label above a
- * title, never as a fill (map §9). No greens anywhere (brand rule). Two
- * values each so the label passes contrast on both paper and night.
- */
-export const CUISINE_TONES: Readonly<Record<string, { paper: string; night: string }>> = {
-  italian: { paper: '#9A4630', night: '#E4937C' },
-  french: { paper: '#5E5494', night: '#B3A8E6' },
-  spanish: { paper: '#9C3F2E', night: '#EE9A84' },
-  greek: { paper: '#2F5E8C', night: '#8FB6DE' },
-  turkish: { paper: '#8C3B46', night: '#E698A3' },
-  'middle-eastern': { paper: '#8A5A1E', night: '#E2B574' },
-  'north-african': { paper: '#94521F', night: '#EAA56E' },
-  'west-african': { paper: '#8F4A1C', night: '#E9A26F' },
-  'south-african': { paper: '#7E4B2A', night: '#DDA784' },
-  indian: { paper: '#9A4E1E', night: '#EDA16C' },
-  thai: { paper: '#8E3F5E', night: '#E596B5' },
-  vietnamese: { paper: '#3F5A8C', night: '#9CB3E3' },
-  chinese: { paper: '#9A3A32', night: '#EE958C' },
-  japanese: { paper: '#A03A2E', night: '#F0978A' },
-  korean: { paper: '#7A3F72', night: '#D99ACF' },
-  malaysian: { paper: '#8A4E36', night: '#E4A68D' },
-  indonesian: { paper: '#8E4A2A', night: '#E8A283' },
-  filipino: { paper: '#39588A', night: '#98B2E0' },
-  mexican: { paper: '#9C4A1E', night: '#EFA06C' },
-  'latin-american': { paper: '#8A3E52', night: '#E498AB' },
-  american: { paper: '#7C5A22', night: '#DDB679' },
-  british: { paper: '#4C4F7A', night: '#A9ACDA' },
-  'central-european': { paper: '#6A4F7E', night: '#C4A8DA' },
-  scandinavian: { paper: '#3E5A7A', night: '#9FB9D8' },
-  'modern-australian': { paper: '#7A5A3A', night: '#D9B891' },
-};
+/** Colours that are the same in every theme because they sit on photos, video or fixed cream surfaces. */
+export const FIXED = {
+  onPhoto: '#FFFFFF',
+  onPhotoCream: '#F7F3EA',
+  onPhotoMuted: 'rgba(255,255,255,0.85)',
+  onPhotoFaint: 'rgba(255,255,255,0.75)',
+  onPhotoDot: 'rgba(255,255,255,0.55)',
+  /** The white disc behind a bookmark or heart on a photo. */
+  photoDisc: 'rgba(255,255,255,0.92)',
+  photoDiscInk: '#1A1A1A',
+  scrim: 'rgba(0,0,0,0.5)',
+  scrimDrawer: 'rgba(0,0,0,0.42)',
+  scrimHidden: 'rgba(0,0,0,0.4)',
+  toastBg: '#F7F3EA',
+  toastInk: '#0A0A0A',
+  /** The cream recipe cards in Saved and Collections, the same in both modes. */
+  libraryCard: '#F7F3EA',
+  libraryCardInk: '#0E0E0E',
+  libraryCardMeta: 'rgba(20,18,16,0.55)',
+  libraryWell: '#1A1815',
+  amberLight: '#E8C891',
+  shadow: '#000000',
+} as const;
+
+/** Photo scrims, as gradient stops. */
+export const GRADIENTS = {
+  heroBottom: { colors: ['transparent', 'rgba(0,0,0,0.78)'], locations: [0.4, 1] },
+  shelfBottom: { colors: ['transparent', 'rgba(0,0,0,0.75)'], locations: [0.55, 1] },
+  feedBottom: { colors: ['rgba(0,0,0,0)', 'rgba(0,0,0,0.85)'], locations: [0.45, 1] },
+  spinnerBottom: { colors: ['transparent', 'rgba(0,0,0,0.2)', 'rgba(0,0,0,0.92)'], locations: [0.3, 0.45, 0.92] },
+  photoTop: { colors: ['rgba(0,0,0,0.25)', 'rgba(0,0,0,0)'], locations: [0, 1] },
+} as const;

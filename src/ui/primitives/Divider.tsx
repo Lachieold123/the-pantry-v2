@@ -5,5 +5,5 @@ import { useTheme } from '@/ui/theme/ThemeProvider';
 
 export function Divider({ inset = 0 }: { inset?: number }) {
   const { colours } = useTheme();
-  return <View style={{ height: StyleSheet.hairlineWidth, backgroundColor: colours.rule, marginLeft: inset }} />;
+  return <View style={{ height: StyleSheet.hairlineWidth, backgroundColor: colours.border, marginLeft: inset }} />;
 }

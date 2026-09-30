@@ -28,8 +28,8 @@ function Shelf({ title, recipes, onSeeAll }: { title: string; recipes: Recipe[];
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
-        contentContainerStyle={{ gap: SPACE.md, paddingRight: SPACE.screen }}
-        style={{ marginRight: -SPACE.screen }}
+        contentContainerStyle={{ gap: SPACE.md, paddingRight: SPACE.gutter }}
+        style={{ marginRight: -SPACE.gutter }}
       >
         {recipes.slice(0, SHELF_SIZE).map((r) => (
           <View key={r.id} style={{ width: 156 }}>

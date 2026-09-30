@@ -34,7 +34,7 @@ export function CollectSheet({ id }: { id: string }) {
     <Sheet title="Add to collection" onClose={() => router.back()}>
       {recipe ? <Text variant="meta">{recipe.title}</Text> : null}
       {collections.length === 0 ? (
-        <Text variant="body" colour="inkSecondary">
+        <Text variant="body" colour="inkSoft">
           No collections yet. Name your first one below.
         </Text>
       ) : (

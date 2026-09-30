@@ -66,7 +66,7 @@ export function RecipeEditorScreen({ id, fromImport }: { id: string | undefined;
     <Screen>
       <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
         <Button label="Cancel" kind="quiet" onPress={cancel} />
-        <Text variant="ui" accessibilityRole="header">
+        <Text variant="row" accessibilityRole="header">
           {fromImport ? 'Check and save' : editor.isNew ? 'New recipe' : 'Edit recipe'}
         </Text>
         <Button label="Save" kind="primary" onPress={editor.save} />

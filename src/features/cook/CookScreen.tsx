@@ -43,7 +43,7 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
 
   if (!recipe) {
     return (
-      <View style={{ flex: 1, backgroundColor: colours.bg, paddingTop: insets.top + SPACE.xl, paddingHorizontal: SPACE.screen }}>
+      <View style={{ flex: 1, backgroundColor: colours.bg, paddingTop: insets.top + SPACE.xl, paddingHorizontal: SPACE.gutter }}>
         <EmptyState
           title="We couldn’t find that recipe"
           body="It may have been removed."
@@ -83,11 +83,11 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
         </Text>
         <Button label={showIngredients ? 'Steps' : 'Ingredients'} kind="quiet" onPress={() => setShowIngredients(!showIngredients)} />
       </View>
-      <View style={{ paddingHorizontal: SPACE.screen, paddingTop: SPACE.xs }}>
+      <View style={{ paddingHorizontal: SPACE.gutter, paddingTop: SPACE.xs }}>
         <TimerBar timers={timers} now={now} onDismiss={dismiss} />
       </View>
       {showIngredients ? (
-        <ScrollView contentContainerStyle={{ padding: SPACE.screen, gap: SPACE.sm }}>
+        <ScrollView contentContainerStyle={{ padding: SPACE.gutter, gap: SPACE.sm }}>
           <Text variant="title">For {servings}</Text>
           {allLines(recipe).map((line, i) => (
             <Text key={i} variant="body">
@@ -100,9 +100,9 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
         // step text and its timer buttons stay individually reachable.
         <GestureDetector gesture={swipe}>
           <Pressable onPress={next} disabled={last} accessible={false} style={{ flex: 1 }}>
-            <ScrollView contentContainerStyle={{ padding: SPACE.screen, flexGrow: 1, justifyContent: 'center' }}>
+            <ScrollView contentContainerStyle={{ padding: SPACE.gutter, flexGrow: 1, justifyContent: 'center' }}>
               <Animated.View key={step} {...(reduceMotion ? {} : { entering: FadeIn.duration(MOTION.standard) })}>
-                <Text variant="numeral">{step + 1}</Text>
+                <Text variant="numberItalic">{step + 1}</Text>
                 <Text variant="title" style={{ fontSize: 30, lineHeight: 42 }}>
                   {splitStepTimers(text).map((seg, i) =>
                     seg.type === 'text' ? (
@@ -132,7 +132,7 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
           </Pressable>
         </GestureDetector>
       )}
-      <View style={{ flexDirection: 'row', gap: SPACE.xs, paddingHorizontal: SPACE.screen, paddingTop: SPACE.sm }}>
+      <View style={{ flexDirection: 'row', gap: SPACE.xs, paddingHorizontal: SPACE.gutter, paddingTop: SPACE.sm }}>
         <Button label="Back" icon="back" onPress={previous} disabled={step === 0} />
         <View style={{ flex: 1 }}>
           {last ? (

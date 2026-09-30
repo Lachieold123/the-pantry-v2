@@ -1,13 +1,20 @@
-// A row of mutually exclusive choices: List | Cupboard, Light | Dark | System.
-import { Pressable, StyleSheet, View } from 'react-native';
+// A pill track of mutually exclusive choices (Recipes | People, Light | Dark).
+// The chosen one fills with ink, as in the original (spec §4.9).
+import { Pressable, View } from 'react-native';
 
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 import { Text } from './Text';
 
-type Props<T extends string> = { options: readonly { value: T; label: string }[]; value: T; onChange: (value: T) => void; label: string };
+type Props<T extends string> = {
+  options: readonly { value: T; label: string }[];
+  value: T;
+  onChange: (value: T) => void;
+  label: string;
+  size?: 'md' | 'sm';
+};
 
-export function Segmented<T extends string>({ options, value, onChange, label }: Props<T>) {
+export function Segmented<T extends string>({ options, value, onChange, label, size = 'md' }: Props<T>) {
   const styles = useStyles();
   return (
     <View style={styles.track} accessibilityRole="radiogroup" accessibilityLabel={label}>
@@ -20,9 +27,15 @@ export function Segmented<T extends string>({ options, value, onChange, label }:
             accessibilityRole="radio"
             accessibilityState={{ selected }}
             accessibilityLabel={o.label}
-            style={[styles.segment, selected && styles.selected]}
+            testID={`segment-${o.value}`}
+            style={[styles.segment, size === 'sm' && styles.small, selected && styles.selected]}
           >
-            <Text variant="ui" colour={selected ? 'ink' : 'inkSecondary'} align="center">
+            <Text
+              variant={size === 'sm' ? 'chip' : 'row'}
+              colour={selected ? 'bg' : 'inkMuted'}
+              align="center"
+              style={selected ? styles.boldLabel : null}
+            >
               {o.label}
             </Text>
           </Pressable>
@@ -33,14 +46,9 @@ export function Segmented<T extends string>({ options, value, onChange, label }:
 }
 
 const useStyles = makeStyles(({ colours }) => ({
-  track: { flexDirection: 'row', backgroundColor: colours.surfaceSunken, borderRadius: RADIUS.md, padding: SPACE.xxs, gap: SPACE.xxs },
-  segment: {
-    flex: 1,
-    minHeight: TAP_TARGET - SPACE.xs,
-    borderRadius: RADIUS.sm + 2,
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingHorizontal: SPACE.xs,
-  },
-  selected: { backgroundColor: colours.surface, borderWidth: StyleSheet.hairlineWidth, borderColor: colours.rule },
+  track: { flexDirection: 'row', backgroundColor: colours.bgSoft, borderRadius: RADIUS.pill, padding: SPACE.xxs },
+  segment: { flex: 1, minHeight: TAP_TARGET, justifyContent: 'center', borderRadius: RADIUS.pill, paddingHorizontal: SPACE.xs },
+  small: { minHeight: 36 },
+  selected: { backgroundColor: colours.ink },
+  boldLabel: { fontWeight: '800' },
 }));

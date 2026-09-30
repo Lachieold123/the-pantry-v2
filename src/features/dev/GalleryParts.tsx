@@ -14,7 +14,7 @@ import { Text } from '@/ui/primitives/Text';
 import { TextField } from '@/ui/primitives/TextField';
 import { useTheme } from '@/ui/theme/ThemeProvider';
 import type { ColourTokens } from '@/ui/tokens/colour';
-import { RADIUS, SPACE, type TextVariant } from '@/ui/tokens/type';
+import { RADIUS, SPACE, TYPE, type TextVariant } from '@/ui/tokens/type';
 
 export function Block({ title, children }: { title: string; children: ReactNode }) {
   return (
@@ -25,16 +25,17 @@ export function Block({ title, children }: { title: string; children: ReactNode 
   );
 }
 
-const VARIANTS: TextVariant[] = ['display', 'title', 'heading', 'body', 'ui', 'kicker', 'meta', 'numeral'];
+// Every type role, so the whole scale can be checked against the original in one place.
+const VARIANTS = Object.keys(TYPE) as TextVariant[];
 
 export function TypeScale() {
   return (
     <View style={{ gap: SPACE.xs }}>
       {VARIANTS.map((v) => (
         <Text key={v} variant={v}>
-          {v === 'numeral'
+          {v.startsWith('number')
             ? '1 · 2 · 3'
-            : v === 'body'
+            : v.startsWith('body')
               ? 'Turn the heat up and add the mince. Let it actually colour.'
               : `${v[0]?.toUpperCase()}${v.slice(1)}: Spaghetti Bolognese`}
         </Text>
@@ -49,7 +50,7 @@ export function Swatches() {
     <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: SPACE.xs }}>
       {(Object.keys(colours) as (keyof ColourTokens)[]).map((k) => (
         <View key={k} style={{ width: 96, gap: SPACE.xxs }}>
-          <View style={{ height: 40, borderRadius: RADIUS.sm, backgroundColor: colours[k], borderWidth: 1, borderColor: colours.rule }} />
+          <View style={{ height: 40, borderRadius: RADIUS.sm, backgroundColor: colours[k], borderWidth: 1, borderColor: colours.border }} />
           <Text variant="meta">{k}</Text>
         </View>
       ))}

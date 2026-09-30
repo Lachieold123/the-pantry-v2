@@ -13,7 +13,7 @@ export function ErrorState({ title = 'That didn’t work', body, onRetry }: Prop
     <View style={{ gap: SPACE.sm, paddingVertical: SPACE.xl }} accessibilityRole="alert">
       <Icon name="warning" colour="danger" />
       <Text variant="title">{title}</Text>
-      <Text variant="body" colour="inkSecondary">
+      <Text variant="body" colour="inkSoft">
         {body}
       </Text>
       <View style={{ paddingTop: SPACE.xs }}>

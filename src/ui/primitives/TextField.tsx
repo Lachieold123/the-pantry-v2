@@ -1,10 +1,11 @@
 // A labelled text input. The label is always visible, never only a placeholder.
 // Multi-line fields (ingredients, method) grow with their text.
-import { StyleSheet, TextInput, View, type TextInputProps } from 'react-native';
+import { TextInput, View, type TextInputProps } from 'react-native';
 
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { useTheme } from '@/ui/theme/ThemeProvider';
-import { FONT, RADIUS, SPACE, TAP_TARGET, TYPE } from '@/ui/tokens/type';
+import { textStyle } from '@/ui/theme/fonts';
+import { RADIUS, SPACE, TAP_TARGET, TYPE } from '@/ui/tokens/type';
 import { Text } from './Text';
 
 type Props = Omit<TextInputProps, 'style'> & { label: string; hint?: string | undefined; error?: string | undefined };
@@ -37,15 +38,15 @@ const useStyles = makeStyles(({ colours }) => ({
   wrap: { gap: SPACE.xs },
   input: {
     minHeight: TAP_TARGET,
-    paddingHorizontal: SPACE.md,
-    borderRadius: RADIUS.md,
-    borderWidth: StyleSheet.hairlineWidth * 2,
-    borderColor: colours.rule,
-    backgroundColor: colours.surface,
+    paddingHorizontal: 14,
+    borderRadius: RADIUS.lg,
+    borderWidth: 1,
+    borderColor: colours.border,
+    backgroundColor: colours.bgSoft,
     color: colours.ink,
-    fontFamily: FONT.sans,
-    fontSize: TYPE.ui.fontSize,
+    ...textStyle(TYPE.body),
+    lineHeight: undefined,
   },
-  multiline: { minHeight: TAP_TARGET * 3, paddingVertical: SPACE.sm, textAlignVertical: 'top', lineHeight: TYPE.ui.lineHeight + 4 },
+  multiline: { minHeight: TAP_TARGET * 3, paddingVertical: SPACE.sm, textAlignVertical: 'top', lineHeight: TYPE.body.lineHeight },
   invalid: { borderColor: colours.danger },
 }));

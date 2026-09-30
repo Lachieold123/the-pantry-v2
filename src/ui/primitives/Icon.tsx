@@ -1,35 +1,90 @@
-// One icon set: SF Symbols on iOS, Material Symbols elsewhere (map §8).
-// Each icon is named once here, so screens ask for "plan", not a glyph.
-import { SymbolView } from 'expo-symbols';
+// One icon set, Ionicons, as in the original app (D-025). Each icon is named
+// once here by its job, so screens ask for "plan", not a glyph.
+import Ionicons from '@expo/vector-icons/Ionicons';
+import type { ComponentProps } from 'react';
 
 import { useTheme } from '@/ui/theme/ThemeProvider';
 import type { ColourTokens } from '@/ui/tokens/colour';
 
 const ICONS = {
-  today: { ios: 'sun.horizon', android: 'wb_twilight', web: 'wb_twilight' },
-  recipes: { ios: 'book', android: 'menu_book', web: 'menu_book' },
-  plan: { ios: 'calendar', android: 'calendar_month', web: 'calendar_month' },
-  shop: { ios: 'basket', android: 'shopping_basket', web: 'shopping_basket' },
-  saved: { ios: 'bookmark', android: 'bookmark', web: 'bookmark' },
-  settings: { ios: 'gearshape', android: 'settings', web: 'settings' },
-  close: { ios: 'xmark', android: 'close', web: 'close' },
-  back: { ios: 'chevron.left', android: 'arrow_back', web: 'arrow_back' },
-  forward: { ios: 'chevron.right', android: 'chevron_right', web: 'chevron_right' },
-  add: { ios: 'plus', android: 'add', web: 'add' },
-  remove: { ios: 'minus', android: 'remove', web: 'remove' },
-  check: { ios: 'checkmark', android: 'check', web: 'check' },
-  search: { ios: 'magnifyingglass', android: 'search', web: 'search' },
-  filter: { ios: 'line.3.horizontal.decrease', android: 'filter_list', web: 'filter_list' },
-  timer: { ios: 'timer', android: 'timer', web: 'timer' },
-  share: { ios: 'square.and.arrow.up', android: 'share', web: 'share' },
-  warning: { ios: 'exclamationmark.triangle', android: 'warning', web: 'warning' },
-  edit: { ios: 'pencil', android: 'edit', web: 'edit' },
-  link: { ios: 'link', android: 'link', web: 'link' },
-} as const;
+  menu: 'menu-outline',
+  inbox: 'paper-plane-outline',
+  feed: 'home-outline',
+  browse: 'search-outline',
+  search: 'search-outline',
+  cupboard: 'grid-outline',
+  plan: 'calendar-outline',
+  add: 'add',
+  back: 'chevron-back',
+  arrowBack: 'arrow-back',
+  forward: 'chevron-forward',
+  arrowForward: 'arrow-forward',
+  down: 'chevron-down',
+  close: 'close',
+  clear: 'close-circle',
+  filter: 'options-outline',
+  check: 'checkmark',
+  checkCircle: 'checkmark-circle',
+  saved: 'bookmark-outline',
+  savedFilled: 'bookmark',
+  comment: 'chatbubble-outline',
+  share: 'share-outline',
+  send: 'paper-plane-outline',
+  cook: 'restaurant-outline',
+  flame: 'flame-outline',
+  list: 'list-outline',
+  time: 'time-outline',
+  difficulty: 'bar-chart-outline',
+  people: 'people-outline',
+  info: 'information-circle-outline',
+  infoFilled: 'information-circle',
+  aisles: 'file-tray-stacked-outline',
+  refresh: 'refresh',
+  refreshOutline: 'refresh-outline',
+  hand: 'hand-left-outline',
+  notifications: 'notifications-outline',
+  collections: 'albums-outline',
+  spinner: 'sync-outline',
+  settings: 'settings-outline',
+  camera: 'camera-outline',
+  receipt: 'receipt-outline',
+  compose: 'create-outline',
+  edit: 'create-outline',
+  link: 'link-outline',
+  more: 'ellipsis-horizontal',
+  heart: 'heart-outline',
+  heartFilled: 'heart',
+  timer: 'timer-outline',
+  remove: 'remove',
+  pause: 'pause',
+  substitute: 'return-down-forward-outline',
+  mail: 'mail-outline',
+  eye: 'eye-outline',
+  eyeOff: 'eye-off-outline',
+  palette: 'color-palette-outline',
+  contrast: 'contrast-outline',
+  speed: 'speedometer-outline',
+  leaf: 'leaf-outline',
+  globe: 'globe-outline',
+  logOut: 'log-out-outline',
+  trash: 'trash-outline',
+  block: 'ban-outline',
+  flag: 'flag-outline',
+  sparkles: 'sparkles-outline',
+  basket: 'basket-outline',
+  dice: 'dice-outline',
+  person: 'person-outline',
+  warning: 'warning-outline',
+  circle: 'ellipse-outline',
+} as const satisfies Record<string, ComponentProps<typeof Ionicons>['name']>;
 
 export type IconName = keyof typeof ICONS;
 
-export function Icon({ name, size = 22, colour = 'ink' }: { name: IconName; size?: number; colour?: keyof ColourTokens }) {
+type Props = { name: IconName; size?: number; colour?: keyof ColourTokens; tone?: string | undefined };
+
+export function Icon({ name, size = 22, colour = 'ink', tone }: Props) {
   const { colours } = useTheme();
-  return <SymbolView name={ICONS[name]} size={size} tintColor={colours[colour]} weight="regular" accessible={false} />;
+  return (
+    <Ionicons name={ICONS[name]} size={size} color={tone ?? colours[colour]} accessibilityElementsHidden importantForAccessibility="no" />
+  );
 }

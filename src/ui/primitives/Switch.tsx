@@ -2,6 +2,7 @@
 import { Switch as RNSwitch, View } from 'react-native';
 
 import { useTheme } from '@/ui/theme/ThemeProvider';
+import { FIXED } from '@/ui/tokens/colour';
 import { SPACE, TAP_TARGET } from '@/ui/tokens/type';
 import { Text } from './Text';
 
@@ -12,16 +13,16 @@ export function Switch({ label, detail, value, onChange }: Props) {
   return (
     <View style={{ minHeight: TAP_TARGET, flexDirection: 'row', alignItems: 'center', gap: SPACE.md, paddingVertical: SPACE.xs }}>
       <View style={{ flex: 1, gap: 2 }}>
-        <Text variant="ui">{label}</Text>
+        <Text variant="row">{label}</Text>
         {detail ? <Text variant="meta">{detail}</Text> : null}
       </View>
       <RNSwitch
         value={value}
         onValueChange={onChange}
         accessibilityLabel={label}
-        trackColor={{ true: colours.accent, false: colours.inkMuted }}
-        thumbColor={colours.surface}
-        ios_backgroundColor={colours.inkMuted}
+        trackColor={{ true: colours.accent, false: colours.bgSoft }}
+        thumbColor={FIXED.onPhoto}
+        ios_backgroundColor={colours.bgSoft}
       />
     </View>
   );

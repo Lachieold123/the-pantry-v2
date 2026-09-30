@@ -1,43 +1,38 @@
-// The only way text appears in the app: every string uses one of the type
-// scale's variants (map §9) and a colour token. Dynamic Type is respected,
-// with a ceiling so display type can't break layouts at the largest sizes.
+// The only way text appears in the app: every string uses a type token and a
+// colour token. Dynamic Type is respected, with a ceiling so large type can't
+// break layouts (the original had none; audit QUAL-21).
 import { Text as RNText, type TextProps as RNTextProps } from 'react-native';
 
+import { textStyle } from '@/ui/theme/fonts';
 import { useTheme } from '@/ui/theme/ThemeProvider';
 import type { ColourTokens } from '@/ui/tokens/colour';
 import { TYPE, type TextVariant } from '@/ui/tokens/type';
 
-type InkColour = Extract<keyof ColourTokens, 'ink' | 'inkSecondary' | 'inkMuted' | 'accent' | 'onAccent' | 'danger'>;
-
 export type TextProps = RNTextProps & {
   variant?: TextVariant;
-  colour?: InkColour;
-  /** A literal colour from a token set other than the theme's ink, e.g. a cuisine tone. */
+  colour?: keyof ColourTokens;
+  /** A literal colour from another token set (a cuisine colour, text on a photo). */
   tone?: string | undefined;
   align?: 'left' | 'center' | 'right';
 };
 
-const MAX_SCALE: Partial<Record<TextVariant, number>> = { display: 1.4, title: 1.6 };
+const MUTED_BY_DEFAULT = new Set<TextVariant>(['kicker', 'kickerSection', 'kickerSmall', 'meta', 'metaSmall', 'caption', 'infoLabel']);
+
+/** Big display type may grow less than body text before it wraps awkwardly. */
+function maxScale(size: number): number {
+  if (size >= 30) return 1.3;
+  if (size >= 20) return 1.5;
+  return 1.8;
+}
 
 export function Text({ variant = 'body', colour, tone, align, style, ...rest }: TextProps) {
   const { colours } = useTheme();
   const t = TYPE[variant];
-  const defaultColour: InkColour = variant === 'meta' || variant === 'kicker' ? 'inkMuted' : variant === 'numeral' ? 'accent' : 'ink';
+  const fallback: keyof ColourTokens = MUTED_BY_DEFAULT.has(variant) ? 'inkMuted' : 'ink';
   return (
     <RNText
-      maxFontSizeMultiplier={MAX_SCALE[variant] ?? 2}
-      style={[
-        {
-          fontFamily: t.fontFamily,
-          fontSize: t.fontSize,
-          lineHeight: t.lineHeight,
-          letterSpacing: t.letterSpacing ?? 0,
-          textTransform: t.textTransform ?? 'none',
-          color: tone ?? colours[colour ?? defaultColour],
-          textAlign: align ?? 'left',
-        },
-        style,
-      ]}
+      maxFontSizeMultiplier={maxScale(t.size)}
+      style={[textStyle(t), { color: tone ?? colours[colour ?? fallback] }, align ? { textAlign: align } : null, style]}
       {...rest}
     />
   );

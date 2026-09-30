@@ -1,15 +1,23 @@
-// A search box with a clear button. Results update as you type.
-import { StyleSheet, TextInput, View } from 'react-native';
+// The original's search box (spec §4.10): 46 tall, grey, rounded 14, with a
+// clear button once there's text. Results update as you type.
+import { Pressable, TextInput, View } from 'react-native';
 
+import { textStyle } from '@/ui/theme/fonts';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { useTheme } from '@/ui/theme/ThemeProvider';
-import { FONT, RADIUS, SPACE, TAP_TARGET, TYPE } from '@/ui/tokens/type';
+import { RADIUS, SPACE, TYPE } from '@/ui/tokens/type';
 import { Icon } from './Icon';
-import { IconButton } from './IconButton';
 
-type Props = { value: string; onChange: (text: string) => void; placeholder: string; label: string };
+type Props = {
+  value: string;
+  onChange: (text: string) => void;
+  placeholder: string;
+  label: string;
+  onSubmit?: (() => void) | undefined;
+  testID?: string | undefined;
+};
 
-export function SearchField({ value, onChange, placeholder, label }: Props) {
+export function SearchField({ value, onChange, placeholder, label, onSubmit, testID }: Props) {
   const styles = useStyles();
   const { colours } = useTheme();
   return (
@@ -26,9 +34,16 @@ export function SearchField({ value, onChange, placeholder, label }: Props) {
         autoCorrect={false}
         autoCapitalize="none"
         clearButtonMode="never"
+        maxFontSizeMultiplier={1.6}
+        {...(onSubmit ? { onSubmitEditing: onSubmit } : {})}
+        {...(testID ? { testID } : {})}
         style={styles.input}
       />
-      {value ? <IconButton icon="close" label="Clear search" onPress={() => onChange('')} colour="inkMuted" /> : null}
+      {value ? (
+        <Pressable onPress={() => onChange('')} accessibilityRole="button" accessibilityLabel="Clear search" hitSlop={12}>
+          <Icon name="clear" size={18} colour="inkMuted" />
+        </Pressable>
+      ) : null}
     </View>
   );
 }
@@ -36,15 +51,15 @@ export function SearchField({ value, onChange, placeholder, label }: Props) {
 const useStyles = makeStyles(({ colours }) => ({
   box: {
     flex: 1,
-    minHeight: TAP_TARGET,
+    height: 46,
     flexDirection: 'row',
     alignItems: 'center',
     gap: SPACE.xs,
-    paddingLeft: SPACE.md,
-    borderRadius: RADIUS.md,
-    borderWidth: StyleSheet.hairlineWidth * 2,
-    borderColor: colours.rule,
-    backgroundColor: colours.surface,
+    paddingHorizontal: 14,
+    borderRadius: RADIUS.lg,
+    borderWidth: 1,
+    borderColor: colours.border,
+    backgroundColor: colours.bgSoft,
   },
-  input: { flex: 1, minHeight: TAP_TARGET, color: colours.ink, fontFamily: FONT.sans, fontSize: TYPE.ui.fontSize },
+  input: { flex: 1, height: 46, color: colours.ink, ...textStyle(TYPE.body), lineHeight: undefined },
 }));

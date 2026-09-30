@@ -8,13 +8,13 @@ import { THEMES, type ColourTokens, type ThemeName } from '@/ui/tokens/colour';
 
 export type Theme = { name: ThemeName; colours: ColourTokens; highContrast: boolean };
 
-const ThemeContext = createContext<Theme>({ name: 'paper', colours: THEMES.paper.normal, highContrast: false });
+const ThemeContext = createContext<Theme>({ name: 'light', colours: THEMES.light.normal, highContrast: false });
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const system = useColorScheme();
   const appearance = usePreferences((s) => s.appearance);
   const highContrast = usePreferences((s) => s.highContrast);
-  const name: ThemeName = appearance === 'system' ? (system === 'dark' ? 'night' : 'paper') : appearance === 'dark' ? 'night' : 'paper';
+  const name: ThemeName = appearance === 'system' ? (system === 'dark' ? 'dark' : 'light') : appearance;
   const value = useMemo<Theme>(
     () => ({ name, highContrast, colours: highContrast ? THEMES[name].highContrast : THEMES[name].normal }),
     [name, highContrast],

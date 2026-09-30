@@ -1,19 +1,23 @@
-// The two brand typefaces, registered under the names the type tokens use.
-// Each weight is imported on its own so only these six files ship in the app.
-import { Manrope_400Regular } from '@expo-google-fonts/manrope/400Regular';
-import { Manrope_500Medium } from '@expo-google-fonts/manrope/500Medium';
-import { Manrope_700Bold } from '@expo-google-fonts/manrope/700Bold';
-import { Newsreader_400Regular } from '@expo-google-fonts/newsreader/400Regular';
-import { Newsreader_400Regular_Italic } from '@expo-google-fonts/newsreader/400Regular_Italic';
-import { Newsreader_500Medium } from '@expo-google-fonts/newsreader/500Medium';
+// Fonts the app loads before its first frame. Georgia and the system sans are
+// built into the phone (D-025), so only the icon font ships with the app.
+import Ionicons from '@expo/vector-icons/Ionicons';
+import { Platform, type TextStyle } from 'react-native';
 
-import { FONT } from '@/ui/tokens/type';
+import { FONT_FAMILY, type TextStyleToken } from '@/ui/tokens/type';
 
-export const FONT_FILES = {
-  [FONT.serif]: Newsreader_400Regular,
-  [FONT.serifItalic]: Newsreader_400Regular_Italic,
-  [FONT.serifMedium]: Newsreader_500Medium,
-  [FONT.sans]: Manrope_400Regular,
-  [FONT.sansMedium]: Manrope_500Medium,
-  [FONT.sansBold]: Manrope_700Bold,
-};
+export const FONT_FILES = { ...Ionicons.font };
+
+const SERIF = Platform.select({ ios: FONT_FAMILY.serif.ios, android: FONT_FAMILY.serif.android, default: FONT_FAMILY.serif.web });
+
+/** A type token as a React Native text style. Used by Text and by text inputs. */
+export function textStyle(t: TextStyleToken): TextStyle {
+  return {
+    ...(t.family === 'serif' ? { fontFamily: SERIF } : {}),
+    fontSize: t.size,
+    fontWeight: t.weight,
+    ...(t.lineHeight ? { lineHeight: t.lineHeight } : {}),
+    letterSpacing: t.letterSpacing ?? 0,
+    ...(t.upper ? { textTransform: 'uppercase' as const } : {}),
+    ...(t.italic ? { fontStyle: 'italic' as const } : {}),
+  };
+}

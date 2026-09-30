@@ -11,5 +11,5 @@ export function AppChrome() {
   useEffect(() => {
     void SystemUI.setBackgroundColorAsync(colours.bg);
   }, [colours.bg]);
-  return <StatusBar style={name === 'night' ? 'light' : 'dark'} />;
+  return <StatusBar style={name === 'dark' ? 'light' : 'dark'} />;
 }

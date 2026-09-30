@@ -1,28 +1,56 @@
-// The frame for short, focused tasks shown as sheets (map §6): a title, a
-// close button and the content. Sheets are routes presented as form sheets.
+// A bottom sheet in the original's shape (spec §4.15): rounded top, a grab
+// handle, a centred title with a hairline under it. Sheets are routes shown as
+// form sheets, so swipe-down and the system back gesture close them.
 import type { ReactNode } from 'react';
 import { ScrollView, View } from 'react-native';
 
-import { useTheme } from '@/ui/theme/ThemeProvider';
-import { SPACE } from '@/ui/tokens/type';
+import { makeStyles } from '@/ui/theme/makeStyles';
+import { RADIUS, SPACE } from '@/ui/tokens/type';
 import { IconButton } from './IconButton';
 import { Text } from './Text';
 
-type Props = { title: string; onClose: () => void; children: ReactNode };
+type Props = { title: string; kicker?: string | undefined; onClose: () => void; children: ReactNode };
 
-export function Sheet({ title, onClose, children }: Props) {
-  const { colours } = useTheme();
+export function Sheet({ title, kicker, onClose, children }: Props) {
+  const styles = useStyles();
   return (
-    <View style={{ flex: 1, backgroundColor: colours.surface }}>
-      <View style={{ flexDirection: 'row', alignItems: 'center', paddingLeft: SPACE.screen, paddingRight: SPACE.xs, paddingTop: SPACE.sm }}>
-        <Text variant="title" style={{ flex: 1 }} accessibilityRole="header">
-          {title}
-        </Text>
-        <IconButton icon="close" label="Close" onPress={onClose} />
+    <View style={styles.sheet}>
+      <View style={styles.handle} />
+      <View style={styles.head}>
+        <View style={{ flex: 1 }}>
+          {kicker ? <Text variant="kickerSmall">{kicker}</Text> : null}
+          <Text variant="sectionTitle" accessibilityRole="header">
+            {title}
+          </Text>
+        </View>
+        <IconButton icon="close" label="Close" onPress={onClose} shape="chip" testID="sheet-close" />
       </View>
-      <ScrollView contentContainerStyle={{ padding: SPACE.screen, gap: SPACE.lg }} keyboardShouldPersistTaps="handled">
+      <ScrollView contentContainerStyle={styles.body} keyboardShouldPersistTaps="handled">
         {children}
       </ScrollView>
     </View>
   );
 }
+
+const useStyles = makeStyles(({ colours }) => ({
+  sheet: { flex: 1, backgroundColor: colours.bg, borderTopLeftRadius: RADIUS.big, borderTopRightRadius: RADIUS.big },
+  handle: {
+    alignSelf: 'center',
+    width: 40,
+    height: 4,
+    borderRadius: 2,
+    backgroundColor: colours.inkSubtle,
+    marginTop: SPACE.xs,
+    marginBottom: SPACE.xs,
+  },
+  head: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: SPACE.sm,
+    paddingHorizontal: SPACE.gutter,
+    paddingBottom: 14,
+    borderBottomWidth: 1,
+    borderBottomColor: colours.border,
+  },
+  body: { padding: SPACE.gutter, gap: SPACE.lg },
+}));

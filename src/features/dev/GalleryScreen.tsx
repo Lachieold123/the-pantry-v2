@@ -6,7 +6,7 @@ import { View } from 'react-native';
 import { usePreferences, type Appearance } from '@/store/preferences';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { ErrorState } from '@/ui/patterns/ErrorState';
-import { Masthead } from '@/ui/patterns/Masthead';
+import { TitleBlock } from '@/ui/patterns/TitleBlock';
 import { Skeleton } from '@/ui/patterns/Skeleton';
 import { useToast } from '@/ui/patterns/Toast';
 import { Button } from '@/ui/primitives/Button';
@@ -30,7 +30,7 @@ export function GalleryScreen() {
   const { appearance, highContrast, setAppearance, setHighContrast } = usePreferences();
   return (
     <Screen>
-      <Masthead
+      <TitleBlock
         kicker="Development only"
         title="Gallery"
         action={<IconButton icon="close" label="Close gallery" onPress={() => router.back()} />}

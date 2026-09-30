@@ -7,7 +7,7 @@ import type { Recipe } from '@/domain/recipes/types';
 import { useRecipeLookup } from '@/store/recipeBook';
 import { useSaved } from '@/store/saved';
 import { EmptyState } from '@/ui/patterns/EmptyState';
-import { Masthead } from '@/ui/patterns/Masthead';
+import { TitleBlock } from '@/ui/patterns/TitleBlock';
 import { useToast } from '@/ui/patterns/Toast';
 import { Button } from '@/ui/primitives/Button';
 import { IconButton } from '@/ui/primitives/IconButton';
@@ -48,7 +48,7 @@ export function CollectionScreen({ id }: { id: string }) {
   return (
     <Screen>
       <IconButton icon="back" label="Back" onPress={() => router.back()} />
-      <Masthead kicker="Collection" title={collection.name} />
+      <TitleBlock kicker="Collection" title={collection.name} />
       {editing ? (
         <View style={{ gap: SPACE.sm }}>
           <TextField

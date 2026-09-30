@@ -30,7 +30,7 @@ export function Stepper({ value, onChange, min = 1, max = 24, label, format = St
     >
       <IconButton icon="remove" label={`Fewer ${label.toLowerCase()}`} onPress={() => step(-1)} disabled={value <= min} />
       <View style={styles.value}>
-        <Text variant="ui" align="center" style={{ fontVariant: ['tabular-nums'] }}>
+        <Text variant="row" align="center" style={{ fontVariant: ['tabular-nums'] }}>
           {format(value)}
         </Text>
       </View>
@@ -45,7 +45,7 @@ const useStyles = makeStyles(({ colours }) => ({
     alignItems: 'center',
     alignSelf: 'flex-start',
     borderWidth: StyleSheet.hairlineWidth * 2,
-    borderColor: colours.rule,
+    borderColor: colours.border,
     borderRadius: RADIUS.lg,
   },
   value: { minWidth: 36, paddingHorizontal: SPACE.xxs },

@@ -1,5 +1,4 @@
-// WCAG 2.x contrast maths, used by the token tests so no colour pair can
-// ship below AA (map §9).
+// WCAG 2.x contrast maths, used by the token tests.
 
 function channel(c: number): number {
   const s = c / 255;
@@ -35,18 +34,4 @@ export function contrastRatio(fg: string, bg: string): number {
   const b = luminance(parseColour(bg));
   const [hi, lo] = a > b ? [a, b] : [b, a];
   return (hi + 0.05) / (lo + 0.05);
-}
-
-/** True for obviously green hues, which the brand rules out. */
-export function isGreen(colour: string): boolean {
-  const { r, g, b } = parseColour(colour);
-  const max = Math.max(r, g, b);
-  const min = Math.min(r, g, b);
-  if (max - min < 20) return false; // near-grey
-  let hue: number;
-  if (max === g) hue = 60 * ((b - r) / (max - min) + 2);
-  else if (max === r) hue = 60 * (((g - b) / (max - min)) % 6);
-  else hue = 60 * ((r - g) / (max - min) + 4);
-  if (hue < 0) hue += 360;
-  return hue >= 75 && hue <= 165;
 }

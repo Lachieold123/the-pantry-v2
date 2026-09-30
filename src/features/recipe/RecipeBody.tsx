@@ -41,7 +41,7 @@ export function Method({ recipe }: { recipe: Recipe }) {
       <SectionHeader title="Method" />
       {recipe.steps.map((step, i) => (
         <View key={i} style={{ flexDirection: 'row', gap: SPACE.sm }} accessible accessibilityLabel={`Step ${i + 1}. ${step.text}`}>
-          <Text variant="numeral" style={{ width: 28 }}>
+          <Text variant="numberItalic" style={{ width: 28 }}>
             {i + 1}
           </Text>
           <Text variant="body" style={{ flex: 1 }}>

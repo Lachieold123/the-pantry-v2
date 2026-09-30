@@ -5,15 +5,19 @@ import { AccessibilityInfo, Pressable, View } from 'react-native';
 import Animated, { FadeInDown, FadeOutDown } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { Icon } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
-import { MOTION, RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
+import { FIXED } from '@/ui/tokens/colour';
+import { MOTION, RADIUS, SHADOW, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 
 type ToastInput = { message: string; undo?: () => void };
 type ToastState = ToastInput & { id: number };
 
 const ToastContext = createContext<(t: ToastInput) => void>(() => {});
-const VISIBLE_MS = 4000;
+// The original shows a toast for 2.5 s; one with Undo stays longer so there's time to reach it.
+const VISIBLE_MS = MOTION.toast;
+const VISIBLE_WITH_UNDO_MS = 4500;
 
 export function ToastProvider({ children }: { children: ReactNode }) {
   const [toast, setToast] = useState<ToastState | null>(null);
@@ -25,7 +29,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
   }, []);
   useEffect(() => {
     if (!toast) return;
-    const timer = setTimeout(() => setToast((cur) => (cur?.id === toast.id ? null : cur)), VISIBLE_MS);
+    const timer = setTimeout(() => setToast((cur) => (cur?.id === toast.id ? null : cur)), toast.undo ? VISIBLE_WITH_UNDO_MS : VISIBLE_MS);
     return () => clearTimeout(timer);
   }, [toast]);
   return (
@@ -47,11 +51,12 @@ function ToastView({ toast, onDone }: { toast: ToastState; onDone: () => void })
     <Animated.View
       entering={FadeInDown.duration(MOTION.standard)}
       exiting={FadeOutDown.duration(MOTION.quick)}
-      style={[styles.wrap, { bottom: insets.bottom + 72 }]}
+      style={[styles.wrap, { bottom: insets.bottom + 90 }]}
       pointerEvents="box-none"
     >
-      <View style={styles.toast}>
-        <Text variant="ui" colour="onAccent" style={{ flex: 1 }}>
+      <View style={styles.toast} testID="toast">
+        <Icon name="checkCircle" size={18} tone={FIXED.toastInk} />
+        <Text variant="toast" tone={FIXED.toastInk} style={{ flexShrink: 1 }} numberOfLines={4}>
           {toast.message}
         </Text>
         {toast.undo ? (
@@ -64,7 +69,7 @@ function ToastView({ toast, onDone }: { toast: ToastState; onDone: () => void })
             accessibilityLabel="Undo"
             style={styles.undo}
           >
-            <Text variant="ui" colour="onAccent" style={{ textDecorationLine: 'underline' }}>
+            <Text variant="toast" tone={FIXED.toastInk} style={{ textDecorationLine: 'underline' }}>
               Undo
             </Text>
           </Pressable>
@@ -74,17 +79,21 @@ function ToastView({ toast, onDone }: { toast: ToastState; onDone: () => void })
   );
 }
 
-const useStyles = makeStyles(({ colours }) => ({
-  wrap: { position: 'absolute', left: SPACE.screen, right: SPACE.screen },
+// Cream in both light and dark, as in the original (spec §4.16).
+const useStyles = makeStyles(() => ({
+  wrap: { position: 'absolute', left: SPACE.gutter, right: SPACE.gutter, alignItems: 'center' },
   toast: {
+    maxWidth: '100%',
     flexDirection: 'row',
     alignItems: 'center',
-    gap: SPACE.sm,
-    minHeight: TAP_TARGET + SPACE.xs,
-    paddingLeft: SPACE.md,
-    paddingRight: SPACE.xs,
-    borderRadius: RADIUS.md,
-    backgroundColor: colours.accent,
+    gap: SPACE.xs,
+    minHeight: TAP_TARGET,
+    paddingHorizontal: SPACE.md,
+    paddingVertical: SPACE.sm,
+    borderRadius: RADIUS.pill,
+    backgroundColor: FIXED.toastBg,
+    shadowColor: FIXED.shadow,
+    ...SHADOW.toast,
   },
-  undo: { minHeight: TAP_TARGET, paddingHorizontal: SPACE.sm, justifyContent: 'center' },
+  undo: { minHeight: TAP_TARGET, paddingLeft: SPACE.xs, justifyContent: 'center' },
 }));

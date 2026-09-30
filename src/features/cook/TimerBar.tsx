@@ -45,7 +45,7 @@ const useStyles = makeStyles(({ colours }) => ({
     paddingLeft: SPACE.md,
     paddingVertical: SPACE.xs,
     borderRadius: RADIUS.md,
-    backgroundColor: colours.surfaceSunken,
+    backgroundColor: colours.bgSoft,
   },
   done: { backgroundColor: colours.accent },
 }));

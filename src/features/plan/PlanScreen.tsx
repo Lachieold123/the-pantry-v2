@@ -8,7 +8,7 @@ import { entriesFor, entriesInWeek, fromISODate, isPast, toISODate, visibleWeeks
 import { longDate } from '@/lib/dates';
 import { usePlan } from '@/store/plan';
 import { EmptyState } from '@/ui/patterns/EmptyState';
-import { Masthead } from '@/ui/patterns/Masthead';
+import { TitleBlock } from '@/ui/patterns/TitleBlock';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { Button } from '@/ui/primitives/Button';
 import { Divider } from '@/ui/primitives/Divider';
@@ -36,7 +36,7 @@ export function PlanScreen() {
 
   return (
     <Screen>
-      <Masthead title="Plan" kicker={inWeek.length ? `${dinners} ${dinners === 1 ? 'dinner' : 'dinners'} planned` : undefined} />
+      <TitleBlock title="Plan" kicker={inWeek.length ? `${dinners} ${dinners === 1 ? 'dinner' : 'dinners'} planned` : undefined} />
       <Segmented<Week> label="Week" options={WEEKS} value={week} onChange={setWeek} />
       {inWeek.length === 0 ? (
         <EmptyState

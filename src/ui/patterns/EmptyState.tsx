@@ -1,22 +1,34 @@
-// Every empty screen says what's missing and offers one next step (map §9 voice):
-// "Nothing planned for tonight. Surprise me?" rather than a blank page.
+// Every empty screen says what's missing and offers one next step. Two looks
+// from the original (spec §2.2): the standard centred sans title, and the
+// library's serif title for Saved and Collections.
 import { View } from 'react-native';
 
 import { Button } from '@/ui/primitives/Button';
 import { Text } from '@/ui/primitives/Text';
 import { SPACE } from '@/ui/tokens/type';
 
-type Props = { title: string; body: string; action?: { label: string; onPress: () => void } };
+type Props = {
+  title: string;
+  body: string;
+  action?: { label: string; onPress: () => void } | undefined;
+  look?: 'standard' | 'library';
+};
 
-export function EmptyState({ title, body, action }: Props) {
+export function EmptyState({ title, body, action, look = 'standard' }: Props) {
   return (
-    <View style={{ gap: SPACE.sm, paddingVertical: SPACE.xl }} accessible={!action} accessibilityLabel={`${title}. ${body}`}>
-      <Text variant="title">{title}</Text>
-      <Text variant="body" colour="inkSecondary">
+    <View
+      style={{ alignItems: 'center', gap: SPACE.xs, paddingHorizontal: SPACE.xl, paddingVertical: SPACE.xxl }}
+      accessible={!action}
+      accessibilityLabel={`${title}. ${body}`}
+    >
+      <Text variant={look === 'library' ? 'dayName' : 'headingSans'} align="center">
+        {title}
+      </Text>
+      <Text variant="bodyMedium" colour={look === 'library' ? 'inkSoft' : 'inkMuted'} align="center" style={{ maxWidth: 300 }}>
         {body}
       </Text>
       {action ? (
-        <View style={{ paddingTop: SPACE.xs }}>
+        <View style={{ paddingTop: SPACE.sm }}>
           <Button label={action.label} onPress={action.onPress} kind="primary" />
         </View>
       ) : null}
