@@ -24,8 +24,9 @@ export function getCatalogueRecipe(id: string): Recipe | undefined {
 // that isn't vetted yet, and it should reappear once it is.
 const allById = new Map(all.map((r) => [r.id, r]));
 export const ALL_CATALOGUE_IDS: ReadonlySet<string> = new Set(allById.keys());
-export function catalogueTitle(id: string): string | undefined {
-  return allById.get(id)?.title;
+/** A dish by id, drafts included: the old-app import copies its title, cuisine and meals onto "my version" copies. */
+export function catalogueDish(id: string): Recipe | undefined {
+  return allById.get(id);
 }
 
 export const INGREDIENTS = buildIngredientIndex(ingredientsJson as unknown as IngredientDef[]);

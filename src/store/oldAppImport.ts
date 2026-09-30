@@ -1,15 +1,18 @@
 // On first launch, brings a tester's data across from the old app (D-005).
 // Same bundle id, so the old app's saved data sits in the same storage.
-// Runs once (a marker records it), never deletes the old data, and merges
-// into anything already here rather than replacing it.
+// Runs once per importer version (a marker records it), never deletes the old
+// data, and only adds what's missing, so a re-run after a fix or an interrupted
+// run can't duplicate anything (audit F07).
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
-import { ALL_CATALOGUE_IDS, catalogueTitle, INGREDIENTS } from '@/data/catalogue/catalogue';
+import { ALL_CATALOGUE_IDS, catalogueDish, INGREDIENTS } from '@/data/catalogue/catalogue';
 import { addToCupboard } from '@/domain/cupboard/match';
-import { importOldApp, OLD_STORAGE_KEYS, welcomeBackLine } from '@/domain/legacy/oldApp';
-import { newId } from '@/lib/ids';
+import { IMPORT_VERSION, mergeBookmarks, mergeCooks, shouldImport, wipeableKeys } from '@/domain/legacy/merge';
+import { importOldApp, OLD_STORAGE_KEYS, type OldAppImport } from '@/domain/legacy/oldApp';
+import { welcomeBackLine } from '@/domain/legacy/welcome';
+import { addCollection } from '@/domain/saved/collections';
 import { useCookLog } from './cookLog';
 import { useCupboard } from './cupboard';
 import { useMyRecipes } from './myRecipes';
@@ -17,7 +20,17 @@ import { usePreferences } from './preferences';
 import { useSaved } from './saved';
 import { allHydrated, persistentStorage, STORAGE_PREFIX } from './storage';
 
-const MARKER = `${STORAGE_PREFIX}/old-app-import`;
+/**
+ * Records that the import ran, and with which version. It lives under v2's
+ * prefix, so a wipe of v2's data must keep it or the old data comes straight
+ * back: wipe with `wipeableStorageKeys` (audit F214).
+ */
+export const IMPORT_MARKER = `${STORAGE_PREFIX}/old-app-import`;
+
+/** The v2 keys a wipe may remove: all of v2's, except the import marker. */
+export function wipeableStorageKeys(allKeys: readonly string[]): string[] {
+  return wipeableKeys(allKeys, STORAGE_PREFIX, IMPORT_MARKER);
+}
 
 /** The one-line "Welcome back" on Today, until it's dismissed. */
 export const useWelcomeBack = create<{ message?: string | undefined; dismiss: () => void }>()(
@@ -35,7 +48,8 @@ export async function importFromOldAppOnce(): Promise<void> {
   // Stores load asynchronously; writing before they finish would be overwritten by the load.
   // If they never finish loading, skip the import this launch rather than risk overwriting anything.
   if ((await allHydrated([useSaved, useCookLog, useCupboard, useMyRecipes, usePreferences, useWelcomeBack])) === 'timed-out') return;
-  if (await AsyncStorage.getItem(MARKER)) return;
+  const { run, importedBefore } = shouldImport(await AsyncStorage.getItem(IMPORT_MARKER));
+  if (!run) return;
 
   let raw: string | null = null;
   for (const key of OLD_STORAGE_KEYS) {
@@ -43,45 +57,37 @@ export async function importFromOldAppOnce(): Promise<void> {
     if (raw) break;
   }
   const now = Date.now();
+  // Only after an earlier run: that importer gave recipes random ids, so reuse the ones it made rather than copy them again.
+  const mine = new Map(importedBefore ? Object.values(useMyRecipes.getState().recipes).map((r) => [r.draft.title, r.id]) : []);
   const result = raw
-    ? importOldApp(raw, {
-        catalogueIds: ALL_CATALOGUE_IDS,
-        titleOf: catalogueTitle,
-        index: INGREDIENTS,
-        now,
-        random: () => Math.random().toString(36).slice(2, 6),
-      })
+    ? importOldApp(raw, { catalogueIds: ALL_CATALOGUE_IDS, dish: catalogueDish, index: INGREDIENTS, now, mine: (title) => mine.get(title) })
     : undefined;
-  // Recorded before applying, so an interrupted import can't run twice and duplicate things.
-  await AsyncStorage.setItem(MARKER, JSON.stringify({ at: now, found: raw !== null, imported: result !== undefined }));
+  if (result) apply(result, now, !importedBefore);
+  // Written after applying: if applying stops half way, the next launch runs it again, and that's safe.
+  await AsyncStorage.setItem(
+    IMPORT_MARKER,
+    JSON.stringify({ version: IMPORT_VERSION, at: now, found: raw !== null, imported: result !== undefined }),
+  );
+}
 
-  if (result) {
-    useSaved.setState((s) => {
-      const have = new Set(s.bookmarks.map((b) => b.recipeId));
-      // Older favourites get older dates, so Saved keeps the old app's order.
-      const bookmarks = result.bookmarks.filter((id) => !have.has(id)).map((recipeId, i) => ({ recipeId, savedAt: now - i }));
-      const names = new Set(s.collections.map((c) => c.name.toLowerCase()));
-      const collections = result.collections
-        .filter((c) => !names.has(c.name.toLowerCase()))
-        .map((c) => ({ id: newId(), name: c.name, recipeIds: c.recipeIds, createdAt: c.createdAt, updatedAt: now }));
-      return {
-        bookmarks: [...s.bookmarks, ...bookmarks],
-        collections: [...s.collections, ...collections],
-        hidden: uniq([...s.hidden, ...result.hidden]),
-        recentlyViewed: uniq([...s.recentlyViewed, ...result.recentlyViewed]).slice(0, 20),
-      };
-    });
-    useCookLog.setState((s) => ({
-      log: [...s.log, ...result.cooks.map((c) => ({ id: newId(), ...c }))].sort((a, b) => a.cookedAt - b.cookedAt),
-    }));
-    useCupboard.setState((s) => ({ items: addToCupboard(s.items, result.cupboard, 'manual', now) }));
-    const saveRecipe = useMyRecipes.getState().save;
-    for (const r of result.recipes) saveRecipe({ id: r.id, draft: r.draft, source: 'user' });
-    if (result.taste) {
-      usePreferences.getState().applyTaste(result.taste);
-      usePreferences.getState().setOnboarded(true);
-    }
-    const line = welcomeBackLine(result);
-    if (line) useWelcomeBack.setState({ message: line });
+function apply(result: OldAppImport, now: number, firstTime: boolean): void {
+  useSaved.setState((s) => ({
+    bookmarks: mergeBookmarks(s.bookmarks, result.bookmarks, now),
+    collections: result.collections.reduce((list, c) => addCollection(list, { ...c, updatedAt: now }), s.collections),
+    hidden: uniq([...s.hidden, ...result.hidden]),
+    recentlyViewed: uniq([...s.recentlyViewed, ...result.recentlyViewed]).slice(0, 20),
+  }));
+  useCookLog.setState((s) => ({ log: mergeCooks(s.log, result.cooks) }));
+  useCupboard.setState((s) => ({ items: addToCupboard(s.items, result.cupboard, 'manual', now) }));
+  const { recipes, save } = useMyRecipes.getState();
+  // Never overwrite one that's already here: it may have been edited since the last run.
+  for (const r of result.recipes) if (!recipes[r.id]) save({ id: r.id, draft: r.draft, source: 'user' });
+  // Old answers only fill in a v2 that hasn't been set up yet; they never overwrite v2 choices.
+  if (result.taste && !usePreferences.getState().onboarded) {
+    usePreferences.getState().applyTaste(result.taste);
+    usePreferences.getState().setOnboarded(true);
   }
+  // A re-run adds quietly: the tester already had their welcome.
+  const line = firstTime ? welcomeBackLine(result) : undefined;
+  if (line) useWelcomeBack.setState({ message: line });
 }

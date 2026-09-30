@@ -2,6 +2,7 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
+import { addCollection, collectionNamed, renameCollection } from '@/domain/saved/collections';
 import { newId } from '@/lib/ids';
 import { persistentStorage, STORAGE_PREFIX } from './storage';
 
@@ -39,25 +40,22 @@ export const useSaved = create<SavedState>()(
         }));
         return !saved;
       },
+      // Names stay unique (domain/saved/collections): asking for a name that's taken gives back that collection.
       createCollection: (name) => {
+        const existing = collectionNamed(get().collections, name);
+        if (existing) return existing.id;
         const id = newId();
         const now = Date.now();
-        set((s) => ({ collections: [...s.collections, { id, name: name.trim(), recipeIds: [], createdAt: now, updatedAt: now }] }));
+        set((s) => ({ collections: addCollection(s.collections, { id, name, recipeIds: [], createdAt: now, updatedAt: now }) }));
         return id;
       },
-      renameCollection: (id, name) =>
-        set((s) => ({ collections: s.collections.map((c) => (c.id === id ? { ...c, name: name.trim(), updatedAt: Date.now() } : c)) })),
+      renameCollection: (id, name) => set((s) => ({ collections: renameCollection(s.collections, id, name, Date.now()) })),
       deleteCollection: (id) => {
         const removed = get().collections.find((c) => c.id === id);
         set((s) => ({ collections: s.collections.filter((c) => c.id !== id) }));
         return removed;
       },
-      restoreCollection: (collection) =>
-        set((s) =>
-          s.collections.some((c) => c.id === collection.id)
-            ? s
-            : { collections: [...s.collections, collection].sort((a, b) => a.createdAt - b.createdAt) },
-        ),
+      restoreCollection: (collection) => set((s) => ({ collections: addCollection(s.collections, collection) })),
       toggleInCollection: (collectionId, recipeId) => {
         const c = get().collections.find((x) => x.id === collectionId);
         const had = c?.recipeIds.includes(recipeId) ?? false;

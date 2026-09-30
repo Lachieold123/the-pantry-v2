@@ -44,6 +44,18 @@ describe('cooked log', () => {
     assert.equal(weeklyStreak(log, fromISODate('2026-09-28')), 2); // Monday, nothing cooked yet this week
     assert.equal(weeklyStreak(log, fromISODate('2026-10-06')), 0); // a whole week missed
   });
+  it('ignores old-app cooks with no real date, so an import can’t fake a streak', () => {
+    const imported: CookEvent[] = [
+      { id: 'v1-a', recipeId: 'c', cookedAt: day('2026-09-29'), dateUnknown: true },
+      { id: 'v1-b', recipeId: 'd', cookedAt: day('2026-09-29'), dateUnknown: true },
+    ];
+    assert.equal(weeklyStreak(imported, fromISODate('2026-09-30')), 0);
+    assert.equal(weeklyStreak([...log, ...imported], fromISODate('2026-09-30')), 2);
+  });
+  it('lists undated cooks after every real one', () => {
+    const undated: CookEvent = { id: 'v1-c', recipeId: 'c', cookedAt: day('2026-09-29'), dateUnknown: true };
+    assert.deepEqual(recentlyCooked([undated, ...log]), ['a', 'b', 'c']);
+  });
 });
 
 describe('Cook Mode timer clock', () => {

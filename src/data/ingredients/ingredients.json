@@ -7176,5 +7176,79 @@
       "cocktail stick"
     ],
     "groups": []
+  },
+  {
+    "id": "sardines",
+    "name": "sardine",
+    "plural": "sardines",
+    "aisle": "tins-jars",
+    "aliases": [
+      "sardines",
+      "tinned sardine",
+      "sardines in oil"
+    ],
+    "groups": [
+      "fish"
+    ]
+  },
+  {
+    "id": "tempeh",
+    "name": "tempeh",
+    "plural": "tempeh",
+    "aisle": "fruit-veg",
+    "aliases": [],
+    "groups": [
+      "soy"
+    ]
+  },
+  {
+    "id": "fennel",
+    "name": "fennel bulb",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "fennel",
+      "baby fennel"
+    ],
+    "groups": []
+  },
+  {
+    "id": "banana",
+    "name": "banana",
+    "aisle": "fruit-veg",
+    "aliases": [],
+    "groups": []
+  },
+  {
+    "id": "grapes",
+    "name": "grape",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "grapes",
+      "red grape",
+      "green grape"
+    ],
+    "groups": []
+  },
+  {
+    "id": "chia-seeds",
+    "name": "chia seed",
+    "aisle": "nuts-dried",
+    "aliases": [
+      "chia seeds",
+      "chia"
+    ],
+    "groups": []
+  },
+  {
+    "id": "flaxseed",
+    "name": "flaxseed",
+    "aisle": "nuts-dried",
+    "aliases": [
+      "flax seed",
+      "flax seeds",
+      "linseed",
+      "ground flaxseed"
+    ],
+    "groups": []
   }
 ]
