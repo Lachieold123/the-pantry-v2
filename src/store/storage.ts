@@ -59,5 +59,8 @@ export function hydrated(store: Persisted): Promise<void> {
 
 /** Waits for stores to load, but never longer than the startup limit. */
 export function allHydrated(stores: Persisted[]): Promise<'ready' | 'timed-out'> {
-  return withTimeout(Promise.all(stores.map(hydrated)).then(() => undefined), STARTUP_WAIT_MS);
+  return withTimeout(
+    Promise.all(stores.map(hydrated)).then(() => undefined),
+    STARTUP_WAIT_MS,
+  );
 }

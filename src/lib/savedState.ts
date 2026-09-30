@@ -21,7 +21,9 @@ export function readSaved(raw: string | null): ReadResult {
   const { state, version } = parsed as { state?: unknown; version?: unknown };
   if (typeof state !== 'object' || state === null || Array.isArray(state)) return { saved: null, problem: 'wrong-shape' };
   if (version !== undefined && typeof version !== 'number') return { saved: null, problem: 'wrong-shape' };
-  return { saved: version === undefined ? { state: state as Record<string, unknown> } : { state: state as Record<string, unknown>, version } };
+  return {
+    saved: version === undefined ? { state: state as Record<string, unknown> } : { state: state as Record<string, unknown>, version },
+  };
 }
 
 /** Where a bad blob is kept, so it can be recovered by hand or by a later build. */
