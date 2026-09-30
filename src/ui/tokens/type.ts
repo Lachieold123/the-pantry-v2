@@ -156,8 +156,24 @@ export const CARD = {
   disc: 28,
   discIcon: 15,
   discInset: 8,
+  shelfWidth: 260,
+  shelfBody: 14,
   /** Space kept clear under content so the floating tab bar never covers it. */
   scrollBottom: 160,
+} as const;
+
+/** The recipe page (spec §4.18): a fixed photo with the sheet sliding up over it. */
+export const RECIPE = {
+  hero: 280,
+  overlap: 32,
+  handleWidth: 44,
+  handleHeight: 5,
+  bullet: 9,
+  stepRule: 2,
+  stepNumber: 22,
+  iconDisc: 30,
+  byline: 32,
+  heroButton: 44,
 } as const;
 
 /** Pressed feedback: the original dims, it never scales cards. */

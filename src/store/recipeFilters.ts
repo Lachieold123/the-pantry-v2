@@ -1,5 +1,5 @@
-// The Recipes tab's search text and filters. Kept for the session only:
-// a fresh launch starts with the full catalogue.
+// Browse's search text and filters. Kept for the session only: a fresh launch
+// starts on the browse shelves.
 import { create } from 'zustand';
 
 import { NO_FILTERS, type RecipeFilters } from '@/domain/recipes/search';
@@ -7,17 +7,25 @@ import { NO_FILTERS, type RecipeFilters } from '@/domain/recipes/search';
 type RecipeFiltersState = {
   query: string;
   filters: RecipeFilters;
+  /** "See all recipes": the full list with nothing filtered. */
+  showAll: boolean;
   setQuery: (query: string) => void;
   update: (patch: Partial<RecipeFilters>) => void;
+  /** Sets search and filters together (a chip or a mood shelf). */
+  apply: (next: { filters: RecipeFilters; query: string }) => void;
+  setShowAll: (showAll: boolean) => void;
   clear: () => void;
 };
 
 export const useRecipeFilters = create<RecipeFiltersState>()((set) => ({
   query: '',
   filters: NO_FILTERS,
+  showAll: false,
   setQuery: (query) => set({ query }),
   update: (patch) => set((s) => ({ filters: { ...s.filters, ...patch } })),
-  clear: () => set({ filters: NO_FILTERS }),
+  apply: ({ filters, query }) => set({ filters, query }),
+  setShowAll: (showAll) => set({ showAll }),
+  clear: () => set({ filters: NO_FILTERS, showAll: false }),
 }));
 
 /** Adds the value if absent, removes it if present. */

@@ -86,3 +86,11 @@ export const useSaved = create<SavedState>()(
     },
   ),
 );
+
+/** For card grids: whether a recipe is saved, and a toggle. Re-renders only when bookmarks change. */
+export function useBookmarks(): { isSaved: (id: string) => boolean; toggle: (id: string) => void } {
+  const bookmarks = useSaved((s) => s.bookmarks);
+  const toggle = useSaved((s) => s.toggleBookmark);
+  const ids = new Set(bookmarks.map((b) => b.recipeId));
+  return { isSaved: (id) => ids.has(id), toggle: (id) => void toggle(id) };
+}

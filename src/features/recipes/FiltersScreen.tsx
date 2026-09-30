@@ -45,7 +45,7 @@ export function FiltersScreen() {
 
   return (
     <View style={{ flex: 1 }}>
-      <Sheet title="Filters" onClose={() => router.back()}>
+      <Sheet kicker={browsing ? 'Filters' : `${count} match`} title="Refine your rotation" onClose={() => router.back()}>
         <View style={{ gap: SPACE.sm }}>
           <SectionHeader title="Diet" />
           <ChipRow>

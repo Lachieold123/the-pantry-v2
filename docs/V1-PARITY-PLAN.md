@@ -115,3 +115,12 @@ Approved in principle by the 30 September request. Each is still listed here so 
 - @shopify/flash-list;
 - @sentry/react-native;
 - react-native-purchases.
+
+## Parts of v1 held back until they can be real
+
+| v1 part | Why it waits | When |
+| --- | --- | --- |
+| Header inbox, drawer Notifications and Messages | Nothing to show before accounts (D-027) | P9 |
+| Browse "Trending this week" and the People tab | Need real activity from other cooks | P9 |
+| Recipe comments | Need accounts and moderation | P9 |
+| Recipe nutrition panel | v2's catalogue has no nutrition data, and v1's figures had no stated source. Needs a decision on a data source (for example, calculated from a food database) before it can be shown honestly | Ask Lachlan |

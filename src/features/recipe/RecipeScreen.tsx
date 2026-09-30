@@ -1,46 +1,56 @@
-// The recipe page (map Phase 3): decide whether to cook it, then cook it.
-// Save, Plan and Cook stay pinned in the action bar (map §6).
+// The recipe page (spec §4.18): the photo stays put and the recipe sheet slides
+// up over it as you read. Everything the old page did is here; the action bar
+// v2 used to pin at the bottom became v1's action row and "⋯" menu.
 import { useRouter } from 'expo-router';
-import { useEffect, useState } from 'react';
-import { Share, View } from 'react-native';
+import { useEffect, useMemo, useState } from 'react';
+import { ScrollView, Share, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
-import { CUISINE_LABELS, DIET_LABELS, formatMinutes, recipeAsText } from '@/domain/recipes/labels';
+import { hasCooked } from '@/domain/cook/cook';
+import { cupboardIds } from '@/domain/cupboard/match';
+import { recipeAsText } from '@/domain/recipes/labels';
+import { useCookLog } from '@/store/cookLog';
+import { useCupboard } from '@/store/cupboard';
 import { usePreferences } from '@/store/preferences';
 import { useRecipe } from '@/store/recipeBook';
 import { useSaved } from '@/store/saved';
-import { ActionBar } from '@/ui/patterns/ActionBar';
+import { ActionSheet } from '@/ui/patterns/ActionSheet';
 import { EmptyState } from '@/ui/patterns/EmptyState';
+import { PhotoScrim } from '@/ui/patterns/PhotoScrim';
+import { PushedHeader } from '@/ui/patterns/PushedHeader';
 import { RecipeImage } from '@/ui/patterns/RecipeImage';
-import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { useToast } from '@/ui/patterns/Toast';
-import { Button } from '@/ui/primitives/Button';
 import { IconButton } from '@/ui/primitives/IconButton';
 import { Screen } from '@/ui/primitives/Screen';
-import { Segmented } from '@/ui/primitives/Segmented';
-import { Stepper } from '@/ui/primitives/Stepper';
 import { Text } from '@/ui/primitives/Text';
-import { cuisineEyebrow } from '@/ui/tokens/cuisine';
-import { RADIUS, SPACE } from '@/ui/tokens/type';
-import { Ingredients, Method } from './RecipeBody';
-
-const UNITS = [
-  { value: 'metric', label: 'Metric' },
-  { value: 'imperial', label: 'Imperial' },
-] as const;
+import { makeStyles } from '@/ui/theme/makeStyles';
+import { RADIUS, RECIPE, SPACE } from '@/ui/tokens/type';
+import { Ingredients, Method, Notes } from './RecipeBody';
+import { RecipeHeader } from './RecipeHeader';
+import { ServingsSheet } from './ServingsSheet';
 
 export function RecipeScreen({ id }: { id: string }) {
   const router = useRouter();
+  const insets = useSafeAreaInsets();
+  const styles = useStyles();
   const recipe = useRecipe(id);
   const toast = useToast();
   const units = usePreferences((s) => s.units);
   const setUnits = usePreferences((s) => s.setUnits);
   const [servings, setServings] = useState(recipe?.servings ?? 4);
+  const [menu, setMenu] = useState(false);
+  const [servingsOpen, setServingsOpen] = useState(false);
   const saved = useSaved((s) => s.bookmarks.some((b) => b.recipeId === id));
   const hidden = useSaved((s) => s.hidden.includes(id));
   const toggleBookmark = useSaved((s) => s.toggleBookmark);
   const toggleHidden = useSaved((s) => s.toggleHidden);
   const recordView = useSaved((s) => s.recordView);
+  const cooked = useCookLog((s) => hasCooked(s.log, id));
+  const markCooked = useCookLog((s) => s.markCooked);
+  const undoCooked = useCookLog((s) => s.undo);
+  const items = useCupboard((s) => s.items);
+  const have = useMemo(() => cupboardIds(items), [items]);
   useEffect(() => {
     if (recipe) recordView(recipe.id);
   }, [recipe, recordView]);
@@ -48,7 +58,7 @@ export function RecipeScreen({ id }: { id: string }) {
   if (!recipe) {
     return (
       <Screen>
-        <IconButton icon="back" label="Back" onPress={() => router.back()} />
+        <PushedHeader title="Recipe" />
         <EmptyState
           title="We couldn't find that recipe"
           body="It may have been removed or renamed."
@@ -58,9 +68,9 @@ export function RecipeScreen({ id }: { id: string }) {
     );
   }
 
-  const cuisine = CUISINE_LABELS[recipe.cuisine];
-  const diets = recipe.diets.filter((d) => d === 'vegetarian' || d === 'vegan' || d === 'pescatarian').map((d) => DIET_LABELS[d]);
   const mine = recipe.source !== 'house';
+  const edit = () => router.push({ pathname: '/my-recipe/edit', params: { id: recipe.id } });
+  const plan = () => router.push({ pathname: '/recipe/[id]/plan', params: { id: recipe.id } });
   const share = async () => {
     try {
       // Your own recipes aren't on anyone else's phone, so they're shared as the full text.
@@ -74,107 +84,118 @@ export function RecipeScreen({ id }: { id: string }) {
   };
 
   return (
-    <View style={{ flex: 1 }}>
-      <Screen>
-        <IconButton icon="back" label="Back" onPress={() => router.back()} />
-        <RecipeImage source={RECIPE_IMAGES[recipe.id]} shape="hero" cuisine={recipe.cuisine} radius={RADIUS.card} iconSize={56} />
-        <View style={{ gap: SPACE.xs }}>
-          <Text variant="kicker" tone={cuisineEyebrow(recipe.cuisine)}>
-            {cuisine}
-          </Text>
-          <Text variant="display" accessibilityRole="header">
-            {recipe.title}
-          </Text>
+    <View style={styles.page}>
+      <View style={styles.hero} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
+        <RecipeImage source={RECIPE_IMAGES[recipe.id]} shape="hero" cuisine={recipe.cuisine} radius={0} height={RECIPE.hero} iconSize={64}>
+          <PhotoScrim kind="photoTop" />
+        </RecipeImage>
+      </View>
+
+      <ScrollView style={styles.scroll} contentContainerStyle={{ paddingTop: RECIPE.hero - RECIPE.overlap }} testID="recipe-screen">
+        <View style={[styles.sheet, { paddingBottom: insets.bottom + SPACE.xxl }]}>
+          <View style={styles.handle} />
+          <RecipeHeader
+            recipe={recipe}
+            mine={mine}
+            saved={saved}
+            cooked={cooked}
+            servings={servings}
+            onEdit={edit}
+            onSave={() => {
+              const nowSaved = toggleBookmark(recipe.id);
+              toast({ message: nowSaved ? 'Saved to Cookmarks' : 'Removed from Cookmarks', undo: () => toggleBookmark(recipe.id) });
+            }}
+            onPlan={plan}
+            onShare={() => void share()}
+            onMarkCooked={() => {
+              const event = markCooked(recipe.id);
+              toast({ message: 'Marked as cooked', undo: () => undoCooked(event.id) });
+            }}
+            onServings={() => setServingsOpen(true)}
+            onCook={() => router.push({ pathname: '/recipe/[id]/cook', params: { id: recipe.id, servings: String(servings) } })}
+          />
           {recipe.summary ? (
             <Text variant="body" colour="inkSoft">
               {recipe.summary}
             </Text>
           ) : null}
-          <Text variant="meta">
-            {[`${formatMinutes(recipe.prepMinutes)} prep`, `${formatMinutes(recipe.cookMinutes)} cook`, ...diets].join(' · ')}
-          </Text>
-        </View>
-        <View style={{ gap: SPACE.sm }}>
-          <SectionHeader title="Ingredients" />
-          <View style={{ flexDirection: 'row', alignItems: 'center', gap: SPACE.md, flexWrap: 'wrap' }}>
-            <Stepper label="Servings" value={servings} onChange={setServings} max={24} format={(n) => `Serves ${n}`} />
-            <View style={{ flex: 1, minWidth: 180 }}>
-              <Segmented label="Measurements" options={UNITS} value={units} onChange={setUnits} />
-            </View>
-          </View>
-          <Ingredients recipe={recipe} servings={servings} units={units} />
-        </View>
-        <Method recipe={recipe} />
-        {recipe.notes?.length ? (
-          <View style={{ gap: SPACE.xs }}>
-            <SectionHeader title="Notes" />
-            {recipe.notes.map((n, i) => (
-              <Text key={i} variant="body" colour="inkSoft">
-                {n}
+          <Ingredients recipe={recipe} servings={servings} units={units} have={have} />
+          <Method recipe={recipe} />
+          <Notes notes={recipe.notes ?? []} />
+          {recipe.image?.credit ? (
+            <View style={styles.credit}>
+              <Text variant="metaSmall" align="center">
+                {recipe.image.credit}
               </Text>
-            ))}
-          </View>
-        ) : null}
-        <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: SPACE.xs }}>
-          <Button
-            label="Add to collection"
-            kind="quiet"
-            onPress={() => router.push({ pathname: '/recipe/[id]/collect', params: { id: recipe.id } })}
-          />
-          <Button label="Share" kind="quiet" icon="share" onPress={() => void share()} />
-          {mine ? (
-            <Button
-              label="Edit"
-              kind="quiet"
-              icon="edit"
-              onPress={() => router.push({ pathname: '/my-recipe/edit', params: { id: recipe.id } })}
-            />
+            </View>
           ) : null}
-          <Button
-            label={hidden ? 'Show this again' : 'Not for us'}
-            kind="quiet"
-            accessibilityHint={hidden ? undefined : 'Stops this recipe appearing in suggestions and Surprise me'}
-            onPress={() => {
+        </View>
+      </ScrollView>
+
+      <View style={[styles.nav, { top: insets.top + SPACE.sm }]} pointerEvents="box-none">
+        <IconButton icon="arrowBack" label="Back" shape="round" onPress={() => router.back()} testID="back" />
+        <IconButton icon="more" label="More actions" shape="round" onPress={() => setMenu(true)} testID="recipe-more" />
+      </View>
+
+      <ActionSheet
+        visible={menu}
+        onClose={() => setMenu(false)}
+        title={recipe.title}
+        actions={[
+          { label: 'Add to plan', icon: 'plan', onPress: plan, testID: 'action-plan' },
+          {
+            label: 'Add to a collection',
+            icon: 'collections',
+            onPress: () => router.push({ pathname: '/recipe/[id]/collect', params: { id: recipe.id } }),
+            testID: 'action-collect',
+          },
+          { label: 'Share', icon: 'share', onPress: () => void share(), testID: 'action-share' },
+          ...(mine ? [{ label: 'Edit recipe', icon: 'edit' as const, onPress: edit, testID: 'action-edit' }] : []),
+          {
+            label: hidden ? 'Show this again' : 'Not for us',
+            icon: hidden ? 'eye' : 'eyeOff',
+            testID: 'action-hide',
+            onPress: () => {
               const nowHidden = toggleHidden(recipe.id);
-              toast({
-                message: nowHidden ? 'We won\u2019t suggest this again' : 'Back in suggestions',
-                undo: () => toggleHidden(recipe.id),
-              });
-            }}
-          />
-        </View>
-        {recipe.image?.credit ? <Text variant="meta">{recipe.image.credit}</Text> : null}
-      </Screen>
-      <ActionBar>
-        <View style={{ flex: 1 }}>
-          <Button
-            label={saved ? 'Saved' : 'Save'}
-            icon={saved ? 'check' : 'saved'}
-            block
-            onPress={() => {
-              const nowSaved = toggleBookmark(recipe.id);
-              toast({ message: nowSaved ? 'Saved' : 'Removed from Saved', undo: () => toggleBookmark(recipe.id) });
-            }}
-          />
-        </View>
-        <View style={{ flex: 1 }}>
-          <Button
-            label="Plan"
-            icon="plan"
-            block
-            onPress={() => router.push({ pathname: '/recipe/[id]/plan', params: { id: recipe.id } })}
-          />
-        </View>
-        <View style={{ flex: 1 }}>
-          <Button
-            label="Cook"
-            icon="timer"
-            kind="primary"
-            block
-            onPress={() => router.push({ pathname: '/recipe/[id]/cook', params: { id: recipe.id, servings: String(servings) } })}
-          />
-        </View>
-      </ActionBar>
+              toast({ message: nowHidden ? 'We won’t suggest this again' : 'Back in suggestions', undo: () => toggleHidden(recipe.id) });
+            },
+          },
+        ]}
+      />
+      <ServingsSheet
+        visible={servingsOpen}
+        onClose={() => setServingsOpen(false)}
+        servings={servings}
+        original={recipe.servings}
+        onServings={setServings}
+        units={units}
+        onUnits={setUnits}
+      />
     </View>
   );
 }
+
+const useStyles = makeStyles(({ colours }) => ({
+  page: { flex: 1, backgroundColor: colours.bg },
+  hero: { position: 'absolute', top: 0, left: 0, right: 0 },
+  scroll: { flex: 1 },
+  sheet: {
+    minHeight: '100%',
+    backgroundColor: colours.bg,
+    borderTopLeftRadius: RADIUS.sheet,
+    borderTopRightRadius: RADIUS.sheet,
+    paddingHorizontal: SPACE.sheet,
+    paddingTop: SPACE.xs,
+    gap: SPACE.lg,
+  },
+  handle: {
+    alignSelf: 'center',
+    width: RECIPE.handleWidth,
+    height: RECIPE.handleHeight,
+    borderRadius: 3,
+    backgroundColor: colours.border,
+    marginBottom: -SPACE.xs,
+  },
+  nav: { position: 'absolute', left: SPACE.gutter, right: SPACE.gutter, flexDirection: 'row', justifyContent: 'space-between' },
+  credit: { paddingTop: SPACE.md, borderTopWidth: 1, borderTopColor: colours.border },
+}));

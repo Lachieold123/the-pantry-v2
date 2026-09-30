@@ -16,15 +16,17 @@ type Props = {
   radius?: number;
   /** Size of the fallback icon: big on heroes, small on thumbnails. */
   iconSize?: number;
+  /** A fixed height instead of the shape's ratio (the recipe page's hero band). */
+  height?: number;
   /** Overlays drawn on top of the photo (scrims, discs, pills). */
   children?: ReactNode;
 };
 
-export function RecipeImage({ source, shape, cuisine, radius = RADIUS.md, iconSize = 32, children }: Props) {
+export function RecipeImage({ source, shape, cuisine, radius = RADIUS.md, iconSize = 32, height, children }: Props) {
   const { colours } = useTheme();
   const frame = {
     width: '100%' as const,
-    aspectRatio: ASPECT[shape],
+    ...(height !== undefined ? { height } : { aspectRatio: ASPECT[shape] }),
     borderRadius: radius,
     overflow: 'hidden' as const,
     backgroundColor: source === undefined ? colours[cuisineTint(cuisine)] : colours.bgSoft,

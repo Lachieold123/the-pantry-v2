@@ -6,15 +6,15 @@ import { View } from 'react-native';
 
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { addDays, entriesFor, fromISODate, toISODate, tonightsDinner } from '@/domain/plan/week';
-import type { Recipe } from '@/domain/recipes/types';
 import { longDate } from '@/lib/dates';
 import { useWelcomeBack } from '@/store/oldAppImport';
 import { usePlan } from '@/store/plan';
 import { useRecipeLookup } from '@/store/recipeBook';
-import { useSaved } from '@/store/saved';
+import { useBookmarks } from '@/store/saved';
 import { useForYou } from '@/store/suggestions';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { RecipeCard } from '@/ui/patterns/RecipeCard';
+import { RecipeGrid } from '@/ui/patterns/RecipeGrid';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { useToast } from '@/ui/patterns/Toast';
 import { Button } from '@/ui/primitives/Button';
@@ -38,6 +38,7 @@ export function FeedScreen() {
   const today = toISODate(new Date());
   const tonight = tonightsDinner(entries, today);
   const getRecipe = useRecipeLookup();
+  const bookmarks = useBookmarks();
   const tonightRecipe = tonight ? getRecipe(tonight.recipeId) : undefined;
   const open = (id: string) => router.push({ pathname: '/recipe/[id]', params: { id } });
   const ahead = Array.from({ length: AHEAD_DAYS }, (_, i) => addDays(today, i + 1)).flatMap((day) =>
@@ -132,37 +133,15 @@ export function FeedScreen() {
       {picks.length ? (
         <View>
           <SectionHeader kicker="For you" tone="accent" title="What's cooking?" />
-          <PickGrid recipes={picks} onOpen={open} />
+          <RecipeGrid
+            recipes={picks}
+            imageFor={(id) => RECIPE_IMAGES[id]}
+            onOpen={open}
+            isSaved={bookmarks.isSaved}
+            onToggleSave={bookmarks.toggle}
+          />
         </View>
       ) : null}
     </Screen>
-  );
-}
-
-/** Two columns. An odd last card keeps its width (the original stretched it across both). */
-function PickGrid({ recipes, onOpen }: { recipes: Recipe[]; onOpen: (id: string) => void }) {
-  const saved = useSaved((s) => s.bookmarks);
-  const toggle = useSaved((s) => s.toggleBookmark);
-  const rows: Recipe[][] = [];
-  for (let i = 0; i < recipes.length; i += 2) rows.push(recipes.slice(i, i + 2));
-  return (
-    <View style={{ gap: SPACE.sm }}>
-      {rows.map((row) => (
-        <View key={row.map((r) => r.id).join()} style={{ flexDirection: 'row', gap: SPACE.sm }}>
-          {row.map((r) => (
-            <RecipeCard
-              key={r.id}
-              recipe={r}
-              image={RECIPE_IMAGES[r.id]}
-              size="medium"
-              onPress={() => onOpen(r.id)}
-              saved={saved.some((b) => b.recipeId === r.id)}
-              onToggleSave={() => toggle(r.id)}
-            />
-          ))}
-          {row.length === 1 ? <View style={{ flex: 1 }} /> : null}
-        </View>
-      ))}
-    </View>
   );
 }

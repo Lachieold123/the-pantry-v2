@@ -12,13 +12,14 @@ import { useSaved } from '@/store/saved';
 export function useRecipeResults(): { browsing: boolean; results: Recipe[]; activeFilters: number } {
   const query = useRecipeFilters((s) => s.query);
   const filters = useRecipeFilters((s) => s.filters);
+  const showAll = useRecipeFilters((s) => s.showAll);
   const hidden = useSaved((s) => s.hidden);
   const all = useAllRecipes();
   const searchIndex = useMemo(() => indexForSearch(all, (c) => CUISINE_LABELS[c]), [all]);
   return useMemo(() => {
     const activeFilters = countActiveFilters(filters);
-    const browsing = query.trim() === '' && activeFilters === 0;
+    const browsing = !showAll && query.trim() === '' && activeFilters === 0;
     const results = browsing ? [] : searchRecipes(searchIndex, query).filter((r) => !hidden.includes(r.id) && matchesFilters(r, filters));
     return { browsing, results, activeFilters };
-  }, [query, filters, hidden, searchIndex]);
+  }, [query, filters, showAll, hidden, searchIndex]);
 }

@@ -1,31 +1,86 @@
-// The ingredients and method, scaled and in the cook's units.
-import { View } from 'react-native';
+// The ingredients, method and notes, scaled and in the cook's units, in the
+// original's look (spec §4.18 items 8–10). Tapping an ingredient ticks it off
+// while you gather things; ticks last only while the page is open.
+import { useState } from 'react';
+import { Pressable, View } from 'react-native';
 
 import { splitStepTimers } from '@/domain/cook/cook';
 import { formatLine, scaleLine, type UnitSystem } from '@/domain/ingredients/format';
 import { substitutionFor } from '@/domain/recipes/substitutions';
 import type { Recipe } from '@/domain/recipes/types';
-import { SectionHeader } from '@/ui/patterns/SectionHeader';
-import { Divider } from '@/ui/primitives/Divider';
+import { Icon } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
-import { SPACE } from '@/ui/tokens/type';
+import { makeStyles } from '@/ui/theme/makeStyles';
+import { RADIUS, RECIPE, SPACE } from '@/ui/tokens/type';
 
-export function Ingredients({ recipe, servings, units }: { recipe: Recipe; servings: number; units: UnitSystem }) {
-  const ratio = servings / recipe.servings;
+function Heading({ children }: { children: string }) {
   return (
-    <View style={{ gap: SPACE.md }}>
+    <Text variant="headingSans" accessibilityRole="header">
+      {children} :
+    </Text>
+  );
+}
+
+type IngredientsProps = { recipe: Recipe; servings: number; units: UnitSystem; have: ReadonlySet<string> };
+
+export function Ingredients({ recipe, servings, units, have }: IngredientsProps) {
+  const styles = useStyles();
+  const [ticked, setTicked] = useState<ReadonlySet<string>>(new Set());
+  const ratio = servings / recipe.servings;
+  const tick = (key: string) =>
+    setTicked((t) => {
+      const next = new Set(t);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
+  return (
+    <View style={styles.section}>
+      <Heading>Ingredients</Heading>
       {recipe.ingredientGroups.map((group, gi) => (
-        <View key={gi} style={{ gap: SPACE.xxs }}>
-          {group.title ? <Text variant="kicker">{group.title}</Text> : null}
+        <View key={gi}>
+          {group.title ? (
+            <Text variant="kickerSection" style={styles.groupTitle} accessibilityRole="header">
+              {group.title}
+            </Text>
+          ) : null}
           {group.items.map((line, li) => {
+            const key = `${gi}-${li}`;
+            const done = ticked.has(key);
+            const inCupboard = line.ingredientId !== undefined && have.has(line.ingredientId);
             const tip = substitutionFor(line.ingredientId);
+            const text = capitalise(formatLine(scaleLine(line, ratio), units));
             return (
-              <View key={li}>
-                <View style={{ paddingVertical: SPACE.xs, gap: 2 }}>
-                  <Text variant="body">{capitalise(formatLine(scaleLine(line, ratio), units))}</Text>
-                  {tip ? <Text variant="meta">{tip}</Text> : null}
-                </View>
-                <Divider />
+              <View key={key}>
+                <Pressable
+                  onPress={() => tick(key)}
+                  accessibilityRole="checkbox"
+                  aria-checked={done}
+                  accessibilityLabel={inCupboard ? `${text}, in your cupboard` : text}
+                  style={styles.line}
+                  testID={`ingredient-${key}`}
+                >
+                  <View style={[styles.bullet, done && styles.bulletDone]} />
+                  <Text variant="body" colour={done ? 'inkSubtle' : 'ink'} style={[styles.lineText, done && styles.struck]}>
+                    {text}
+                  </Text>
+                  {inCupboard ? (
+                    <View style={styles.have}>
+                      <Icon name="check" size={10} colour="bg" />
+                      <Text variant="pill" colour="bg">
+                        Have
+                      </Text>
+                    </View>
+                  ) : null}
+                </Pressable>
+                {tip ? (
+                  <View style={styles.tip}>
+                    <Icon name="substitute" size={12} colour="accent" />
+                    <Text variant="note" colour="inkMuted" style={{ flex: 1 }}>
+                      {tip}
+                    </Text>
+                  </View>
+                ) : null}
               </View>
             );
           })}
@@ -36,22 +91,24 @@ export function Ingredients({ recipe, servings, units }: { recipe: Recipe; servi
 }
 
 export function Method({ recipe }: { recipe: Recipe }) {
+  const styles = useStyles();
   return (
-    <View style={{ gap: SPACE.lg }}>
-      <SectionHeader title="Method" />
+    <View style={styles.section}>
+      <Heading>Directions</Heading>
       {recipe.steps.map((step, i) => (
-        <View key={i} style={{ flexDirection: 'row', gap: SPACE.sm }} accessible accessibilityLabel={`Step ${i + 1}. ${step.text}`}>
-          <Text variant="numberItalic" style={{ width: 28 }}>
+        <View key={i} style={styles.step} accessible accessibilityLabel={`Step ${i + 1}. ${step.text}`}>
+          <Text variant="stepNumber" align="center" style={styles.stepNumber}>
             {i + 1}
           </Text>
-          <Text variant="body" style={{ flex: 1 }}>
+          <View style={styles.stepRule} />
+          <Text variant="body" colour="inkSoft" style={styles.stepText}>
             {splitStepTimers(step.text).map((seg, si) =>
               seg.type === 'text' ? (
                 seg.text
               ) : (
-                // Times are highlighted here; they become tap-to-start timers in Cook Mode (Phase 6).
-                <Text key={si} variant="body" colour="accent">
-                  {seg.label}
+                // Times read as chips here; in Cook Mode they become tap-to-start timers.
+                <Text key={si} variant="bodyMedium" colour="accentDeep" style={styles.timer}>
+                  {` ${seg.label} `}
                 </Text>
               ),
             )}
@@ -62,6 +119,56 @@ export function Method({ recipe }: { recipe: Recipe }) {
   );
 }
 
+export function Notes({ notes }: { notes: readonly string[] }) {
+  const styles = useStyles();
+  if (notes.length === 0) return null;
+  return (
+    <View style={styles.section}>
+      <Heading>Notes</Heading>
+      <View style={styles.notes}>
+        {notes.map((n, i) => (
+          <View key={i} style={styles.note}>
+            <Text variant="body" colour="accent">
+              ·
+            </Text>
+            <Text variant="bodyMedium" colour="inkSoft" style={{ flex: 1 }}>
+              {n}
+            </Text>
+          </View>
+        ))}
+      </View>
+    </View>
+  );
+}
+
 function capitalise(s: string): string {
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
+
+const useStyles = makeStyles(({ colours }) => ({
+  section: { gap: SPACE.sm },
+  groupTitle: { marginTop: SPACE.sm, marginBottom: SPACE.xxs },
+  line: { flexDirection: 'row', alignItems: 'center', gap: SPACE.sm, paddingVertical: 7, minHeight: 36 },
+  bullet: { width: RECIPE.bullet, height: RECIPE.bullet, borderRadius: RECIPE.bullet, backgroundColor: colours.bullet },
+  bulletDone: { backgroundColor: colours.accent },
+  lineText: { flex: 1 },
+  struck: { textDecorationLine: 'line-through' },
+  have: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 3,
+    paddingLeft: 5,
+    paddingRight: 7,
+    paddingVertical: 3,
+    borderRadius: RADIUS.pill,
+    backgroundColor: colours.ink,
+  },
+  tip: { flexDirection: 'row', gap: SPACE.xs, marginLeft: RECIPE.bullet + SPACE.sm, marginTop: -2, marginBottom: 6 },
+  step: { flexDirection: 'row', gap: SPACE.md - 2, marginBottom: SPACE.xs, paddingLeft: 2 },
+  stepNumber: { width: RECIPE.stepNumber },
+  stepRule: { width: RECIPE.stepRule, borderRadius: 1, backgroundColor: colours.accent, marginRight: SPACE.xxs },
+  stepText: { flex: 1 },
+  timer: { fontWeight: '700', backgroundColor: colours.accentSoft },
+  notes: { backgroundColor: colours.bgSoft, borderRadius: RADIUS.big, padding: SPACE.md, gap: 6 },
+  note: { flexDirection: 'row', gap: SPACE.sm - 2 },
+}));
