@@ -94,7 +94,7 @@ Each phase ends the same way:
 | P1 | Design system | v1's colours, type, spacing, radii and shadows as tokens. Primitives restyled: buttons, chips, cards, tabs, inputs, sheets, toasts, empty states. Gallery updated. | No |
 | P2 | Shell | Header, the five-tab bar with the centre "+" and badge, and the side drawer. Every v2 screen moved to its v1 home. | No |
 | P3 | Browse and recipe page | Recipe of the day, quick chips, cook by mood, trending, browse by your pantry, all recipes, recommended, filters. The recipe page with the actions sheet, servings, nutrition and credits. | No |
-| P4 | Plan and shopping list | Week strip, day view, slots, suggestions, the shopping list tab, sharing, clearing. | No |
+| P4 | Plan and shopping list **(done 30 Sep, except M18)** | Week strip, day view, slots, suggestions, the shopping list tab, sharing, clearing. | No |
 | P5 | Cupboard | Categories, quick adds, the staples toggle, matches from saved recipes, suggestions. | No |
 | P6 | Library and cooking | Cookmarks, collections, my recipes and the editor, import, recently viewed, kitchen stats, the spinner, Cook Mode. | No |
 | P7 | Onboarding | v1's flow: terms, what you came for, diet, avoid list, cuisines, time, skill, the reveal, the notification primer, the first-run checklist. | No |

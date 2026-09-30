@@ -173,6 +173,18 @@ export function restoreRemoved(edits: WeekListEdits): WeekListEdits {
   return { ...edits, removed: {} };
 }
 
+/** "Clear all": takes every line off and drops the extras. The caller keeps the old edits for undo. */
+export function clearList(edits: WeekListEdits, list: ShoppingList): WeekListEdits {
+  const removed = { ...edits.removed };
+  for (const item of list.sections.flatMap((s) => s.items)) removed[item.key] = item.sourceStamp;
+  return { ...edits, removed, extras: [], checkedExtras: [] };
+}
+
+/** Every line in one A–Z list, for when the cook turns "By aisle" off. */
+export function itemsAtoZ(list: ShoppingList): ShoppingItem[] {
+  return list.sections.flatMap((s) => s.items).sort((a, b) => a.name.localeCompare(b.name));
+}
+
 /** Plain text for the share sheet, grouped by aisle, unticked items only. */
 export function formatListForSharing(list: ShoppingList, aisleLabel: (a: AisleId) => string, title: string): string {
   const out: string[] = [title];

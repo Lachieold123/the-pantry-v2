@@ -16,3 +16,13 @@ export function weekRange(start: Date): string {
     ? `${start.getDate()} – ${endText}`
     : `${start.getDate()} ${SHORT_MONTHS[start.getMonth()]} – ${endText}`;
 }
+
+/** "Wednesday". */
+export function weekdayName(d: Date): string {
+  return DAYS[d.getDay()] ?? '';
+}
+
+/** "30 Sep". */
+export function shortDate(d: Date): string {
+  return `${d.getDate()} ${SHORT_MONTHS[d.getMonth()]}`;
+}

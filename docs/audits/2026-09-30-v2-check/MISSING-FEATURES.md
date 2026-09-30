@@ -73,7 +73,7 @@ This is drawn from a line-by-line read of v1's code: 285 features, with the sour
 | M16 | Share links that open for people without the app | P11 |
 | M17 | "Search the web" (recommend dropping) | Your call |
 | M18 | Add a recipe to the shopping list without giving it a day | P4 |
-| M19 | Share the week's plan as text | P4 |
+| M19 | Share the week's plan as text | P4 (done) |
 | M20 | List of "Not for us" dishes, with un-hide | P6 |
 | M21 | iPad support (v1 on, v2 off) | P11, your call |
 
@@ -86,7 +86,7 @@ This is drawn from a line-by-line read of v1's code: 285 features, with the sour
 | Spinner (Surprise me) | dinners only (v1 had breakfast and lunch too) |
 | Cook Mode | ingredients view lacks sections, HAVE and swaps; timers can't be paused |
 | Photo credits | shown as plain text rather than links |
-| Plan (P4) | "N of 21 meals" progress bar, and the shopping list preview card |
+| Plan (P4) | "N of 21 meals" progress bar, and the shopping list preview card (done) |
 | Library (P6) | "Clear" on Recently viewed; remove a recipe from a collection while viewing it |
 | Plan | moving or swapping a planned meal: the logic exists, but there's no button |
 

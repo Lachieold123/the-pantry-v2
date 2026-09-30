@@ -125,7 +125,7 @@ if curl -fs "$METRO_STATUS_URL" 2>/dev/null | grep -q "packager-status:running";
   if ! xcrun simctl listapps booted 2>/dev/null | grep -q "host.exp.Exponent"; then
     say "Installing Expo Go on the simulator"
     set -m
-    npx expo start --go --ios --port 8083 </dev/null >"$OUT_DIR/expo-go-install.log" 2>&1 &
+    npx expo start --go --ios --offline --port 8083 </dev/null >"$OUT_DIR/expo-go-install.log" 2>&1 &
     INSTALL_PID=$!
     set +m
     for _ in $(seq 1 240); do
@@ -146,7 +146,7 @@ else
   # --go opens the project in Expo Go (installing Expo Go on the simulator if needed).
   # set -m gives the background job its own process group, so it can be stopped as a whole.
   set -m
-  npx expo start --go --ios </dev/null >"$METRO_LOG" 2>&1 &
+  npx expo start --go --ios --offline </dev/null >"$METRO_LOG" 2>&1 &
   METRO_PID=$!
   set +m
   echo "Waiting for Metro to answer on $METRO_STATUS_URL"

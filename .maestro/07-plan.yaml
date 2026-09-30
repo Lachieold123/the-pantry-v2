@@ -1,5 +1,6 @@
-# Plan: both views and both weeks, add a meal, change who it's for, remove
-# with undo; the shopping list: tick, remove with undo, add an extra, send it.
+# Plan: the day strip, add a meal to a slot, change who it's for, remove with
+# undo, plan a suggestion; the shopping list: summary card, tick, remove with
+# undo, add an extra, By aisle, clear all with undo, send it, both weeks.
 appId: host.exp.Exponent
 ---
 - launchApp:
@@ -10,26 +11,25 @@ appId: host.exp.Exponent
     id: "tab-plan"
 - assertVisible:
     id: "plan-screen"
-- assertVisible: "Nothing planned yet"
+- assertVisible: "0 of 21 meals"
+- assertVisible: "Add dinner"
 - takeScreenshot: plan-empty
 
-# Both views and both weeks, empty
+# The list is empty in both weeks
 - tapOn:
     id: "tab-list"
 - assertVisible: "Your list is empty"
 - tapOn:
-    id: "tab-week"
-- tapOn:
     id: "segment-next"
-- assertVisible: "Next week is clear"
+- assertVisible: "Your list is empty"
 - tapOn:
     id: "segment-this"
-- assertVisible: "Nothing planned yet"
-
-# Add a meal to today (the first day with an Add button) from the Add sheet.
 - tapOn:
-    id: "plan-add-.*"
-    index: 0
+    id: "tab-week"
+
+# Add dinner to today (the strip opens on today) from the Add sheet.
+- tapOn:
+    id: "plan-add-.*-dinner"
 - assertVisible: "Add to .*"
 - tapOn:
     id: "add-plan-search"
@@ -39,7 +39,7 @@ appId: host.exp.Exponent
 - assertVisible: "Carbonara planned for today dinner"
 - assertVisible:
     id: "plan-entry-[a-z0-9]+-[a-z0-9]+"
-- assertVisible: "1 dinner planned"
+- assertVisible: "1 of 21 meals"
 - takeScreenshot: plan-week
 
 # Change who it's for: tap the "+" end of the entry's stepper.
@@ -57,12 +57,31 @@ appId: host.exp.Exponent
 - assertVisible:
     id: "plan-entry-[a-z0-9]+-[a-z0-9]+"
 
-# Shopping list for this week
+# Plan a suggestion for the next open meal (breakfast), then undo it.
+- scrollUntilVisible:
+    element:
+      id: "plan-suggest-.*"
+    direction: DOWN
+    optional: true
 - tapOn:
-    id: "tab-list"
+    id: "plan-suggest-.*"
+    index: 0
+    optional: true
+- tapOn:
+    id: "toast-undo"
+    optional: true
+
+# The black card opens the shopping list
+- scrollUntilVisible:
+    element:
+      id: "plan-list-card"
+    direction: DOWN
+- assertVisible: ".* items? for 1 meal"
+- tapOn:
+    id: "plan-list-card"
 - assertVisible:
     id: "shopping-share"
-- assertVisible: ".* to buy for 1 meal"
+- assertVisible: ".* · 1 meal"
 - takeScreenshot: shopping-list
 - tapOn:
     id: "shopping-item-guanciale"
@@ -87,6 +106,30 @@ appId: host.exp.Exponent
 - inputText: "Paper towels"
 - pressKey: Enter
 - assertVisible: "Paper towels"
+
+# A–Z instead of by aisle, and back
+- scrollUntilVisible:
+    element:
+      id: "shopping-by-aisle"
+    direction: UP
+- tapOn:
+    id: "shopping-by-aisle"
+- takeScreenshot: shopping-a-to-z
+- tapOn:
+    id: "shopping-by-aisle"
+
+# Clear all, then undo
+- scrollUntilVisible:
+    element:
+      id: "shopping-clear"
+    direction: UP
+- tapOn:
+    id: "shopping-clear"
+- assertVisible: "List cleared"
+- tapOn:
+    id: "toast-undo"
+- assertVisible:
+    id: "shopping-item-pecorino"
 
 # Send it: the share sheet opens; close it.
 - scrollUntilVisible:

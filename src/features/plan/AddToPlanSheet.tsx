@@ -28,7 +28,7 @@ const SLOTS = [
 ] as const;
 const MAX_RESULTS = 25;
 
-export function AddToPlanSheet({ day: requested }: { day: string | undefined }) {
+export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: string | undefined; slot?: string | undefined }) {
   // A malformed link falls back to today rather than crashing.
   const day = isISODate(requested) ? requested : toISODate(new Date());
   const router = useRouter();
@@ -37,7 +37,7 @@ export function AddToPlanSheet({ day: requested }: { day: string | undefined }) 
   const removeEntry = usePlan((s) => s.removeEntry);
   const bookmarks = useSaved((s) => s.bookmarks);
   const hidden = useSaved((s) => s.hidden);
-  const [slot, setSlot] = useState<Slot>('dinner');
+  const [slot, setSlot] = useState<Slot>(() => SLOTS.find((s) => s.value === requestedSlot)?.value ?? 'dinner');
   const [query, setQuery] = useState('');
   const all = useAllRecipes();
   const getRecipe = useRecipeLookup();

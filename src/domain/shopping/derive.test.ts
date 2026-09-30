@@ -6,9 +6,11 @@ import type { Recipe } from '../recipes/types';
 import { index, makeRecipe } from '../testing/fixtures';
 import {
   addExtras,
+  clearList,
   deriveShoppingList,
   EMPTY_EDITS,
   formatListForSharing,
+  itemsAtoZ,
   mergeAmounts,
   removeItem,
   toggleChecked,
@@ -144,5 +146,26 @@ describe('adding extras to the list', () => {
   });
   it('returns the same edits when nothing is added', () => {
     assert.equal(addExtras(EMPTY_EDITS, [], () => 'x', 1).edits, EMPTY_EDITS);
+  });
+});
+
+describe('clear all and A–Z', () => {
+  it('clears every line and extra, and the old edits bring it all back', () => {
+    const entries = [entry('bolognese'), entry('curry')];
+    const withExtra = addExtras(EMPTY_EDITS, ['Dishwashing liquid'], () => 'x1', 1).edits;
+    const cleared = clearList(withExtra, list(entries, { edits: withExtra }));
+    const after = list(entries, { edits: cleared });
+    assert.equal(after.sections.length, 0);
+    assert.equal(after.extras.length, 0);
+    assert.ok(after.removedCount > 0);
+    assert.ok(list(entries, { edits: withExtra }).sections.length > 0);
+  });
+  it('lists every line A to Z', () => {
+    const names = itemsAtoZ(list([entry('bolognese'), entry('curry')])).map((i) => i.name);
+    assert.deepEqual(
+      names,
+      [...names].sort((a, b) => a.localeCompare(b)),
+    );
+    assert.ok(names.length > 2);
   });
 });

@@ -180,6 +180,9 @@ export const RECIPE = {
   heroButton: 44,
 } as const;
 
+/** The Plan tab (spec §4.11–4.13): day cells, slot cards, suggestion cards, the progress track. */
+export const PLAN = { dayWidth: 52, dayHeight: 70, dot: 4, thumb: 56, suggestion: 158, progress: 4, slotPad: 10 } as const;
+
 /** v1's cupboard "jar" chip (spec §4.7). */
 export const JAR = { gap: 7, padY: 6, padX: 9, initial: 12, matchBody: 14 } as const;
 
