@@ -272,7 +272,7 @@ v2's Feed carries "Tonight", "Coming up" and "For you" until posts arrive (D-027
 
 | Feature | Where in v1 | v2 status | Notes |
 |---|---|---|---|
-| "TONIGHT'S DINNER / Surprise me" page with the tab bar | `screens/SpinnerModal.tsx` | PARTIAL `features/surprise/SurpriseScreen.tsx` (a sheet); PLANNED P6 | v1 wrongly showed the Plan tab as active (spec §8.2). |
+| "TONIGHT'S DINNER / Surprise me" page with the tab bar | `screens/SpinnerModal.tsx` | DONE `features/surprise/SpinnerScreen.tsx` (pushed page, D-031) | v1 wrongly showed the Plan tab as active (spec §8.2). |
 | Card deck: hero card with two tilted peek cards; tap the card to spin | `SpinnerModal.tsx` | PLANNED P6 | v2 shows a text reel then a result card. |
 | Decelerating spin with wobble and settle, success haptic, respects Reduce Motion | `SpinnerModal.tsx` | DONE (diff) `SurpriseScreen.tsx` (reel with selection haptics each tick; fade under Reduce Motion) | Motion values in spec §6 for P6. |
 | Counter "03 / 42" | `SpinnerModal.tsx:Header` | IMPLIED P6 | |

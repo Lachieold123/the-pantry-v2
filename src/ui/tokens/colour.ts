@@ -154,6 +154,9 @@ export const FIXED = {
   libraryCardMeta: 'rgba(20,18,16,0.55)',
   libraryWell: '#1A1815',
   amberLight: '#E8C891',
+  amberRule: 'rgba(232,200,145,0.85)',
+  /** Darkens the spinner's peek cards so they read as the deck, not choices. */
+  peekDim: 'rgba(0,0,0,0.55)',
   shadow: '#000000',
 } as const;
 
@@ -164,4 +167,7 @@ export const GRADIENTS = {
   feedBottom: { colors: ['rgba(0,0,0,0)', 'rgba(0,0,0,0.85)'], locations: [0.45, 1] },
   spinnerBottom: { colors: ['transparent', 'rgba(0,0,0,0.2)', 'rgba(0,0,0,0.92)'], locations: [0.3, 0.45, 0.92] },
   photoTop: { colors: ['rgba(0,0,0,0.25)', 'rgba(0,0,0,0)'], locations: [0, 1] },
+  /** The faint warm air behind the spinner's deck. */
+  spinnerGlow: { colors: ['transparent', 'rgba(232,200,145,0.05)', 'transparent'], locations: [0.2, 0.55, 0.9] },
+  spinnerGlowFoot: { colors: ['transparent', 'rgba(232,200,145,0.04)'], locations: [0.7, 1] },
 } as const;

@@ -71,7 +71,7 @@ function RootStack() {
       <Stack.Screen name="cupboard/add-list" options={SHEET} />
       <Stack.Screen name="cupboard/shelf" options={SHEET} />
       <Stack.Screen name="cupboard/cookable" />
-      <Stack.Screen name="surprise" options={{ presentation: 'modal' }} />
+      <Stack.Screen name="surprise" />
       {/* Editing is a deliberate task: no swipe-to-dismiss, so a stray gesture can't lose a typed recipe. */}
       <Stack.Screen name="my-recipe/edit" options={{ presentation: 'modal', gestureEnabled: false }} />
       <Stack.Screen name="my-recipe/import" options={SHEET} />

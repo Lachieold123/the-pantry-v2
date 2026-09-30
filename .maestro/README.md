@@ -54,7 +54,7 @@ writing or fixing a flow.
 | `11-my-recipes.yaml` | Import rejects a bad link; write a recipe with validation, save, open, edit, delete/undo; cancel asks first |
 | `12-recent-and-stats.yaml` | Recently viewed and Kitchen stats, empty then filled |
 | `13-cook-mode.yaml` | Next/back, swipe, ingredients, a timer, Done counts as cooked |
-| `14-surprise.yaml` | Time limits, spin, spin again, open, plan it, cook it |
+| `14-surprise.yaml` | The spinner: deck, meal and time settings, tap to spin, spin again, how it works, plan it, cook this |
 | `15-settings.yaml` | Appearance, high contrast, diet and avoid, Sunday reminder, units, retake the quiz |
 | `16-empty-states.yaml` | Every empty state on a fresh install |
 

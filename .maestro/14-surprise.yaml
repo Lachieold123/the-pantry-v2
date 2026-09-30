@@ -1,4 +1,5 @@
-# Surprise me / Spinner: time limits, spin, spin again, open the pick, plan it, cook it.
+# Surprise me (the spinner): the deck, settings and their pickers, tap the
+# card to spin, spin again, Why this, how it works, plan it, cook this.
 appId: host.exp.Exponent
 ---
 - launchApp:
@@ -11,65 +12,85 @@ appId: host.exp.Exponent
     id: "header-menu"
 - tapOn:
     id: "menu-spinner"
-- assertVisible: 'Can.t decide\?'
-- takeScreenshot: surprise-start
-- tapOn:
-    id: "surprise-time-under-45"
-- tapOn:
-    id: "surprise-time-under-30"
-- tapOn:
-    id: "surprise-spin"
-# The reel runs for about a second and a half before it settles.
-- extendedWaitUntil:
-    visible:
-      id: "surprise-result"
-    timeout: 10000
-- takeScreenshot: surprise-result
-- tapOn:
-    id: "surprise-spin-again"
-- extendedWaitUntil:
-    visible:
-      id: "surprise-result"
-    timeout: 10000
-
-# The pick opens its recipe
-- tapOn:
-    id: "surprise-result"
 - assertVisible:
-    id: "recipe-screen"
-- tapOn:
-    id: "back"
+    id: "spinner-card"
+- assertVisible: "Tonight’s dinner"
+- assertVisible:
+    id: "spinner-why"
+- takeScreenshot: spinner-start
 
-# Plan it opens the plan sheet for the pick
-- extendedWaitUntil:
-    visible:
-      id: "surprise-plan"
-    timeout: 10000
+# Tap the card: the deck runs for about a second, then lands
 - tapOn:
-    id: "surprise-plan"
+    id: "spinner-card"
+- extendedWaitUntil:
+    visible: "Tap card to spin"
+    timeout: 10000
+- takeScreenshot: spinner-landed
+
+# Settings: Time ≤ 15 min, then back to Any
+- tapOn:
+    id: "spinner-time"
+- tapOn:
+    id: "spinner-option-under-15"
+- assertVisible: "≤ 15 min"
+- tapOn:
+    id: "spinner-time"
+- tapOn:
+    id: "spinner-option-any"
+# Meal: Lunch changes the kicker
+- tapOn:
+    id: "spinner-meal"
+- tapOn:
+    id: "spinner-option-lunch"
+- assertVisible: "Today’s lunch"
+- tapOn:
+    id: "spinner-meal"
+- tapOn:
+    id: "spinner-option-dinner"
+
+# Spin again
+- scrollUntilVisible:
+    element:
+      id: "spinner-spin"
+    direction: DOWN
+- tapOn:
+    id: "spinner-spin"
+- extendedWaitUntil:
+    visible: "Tap card to spin"
+    timeout: 10000
+
+# How it works
+- scrollUntilVisible:
+    element:
+      id: "spinner-info"
+    direction: UP
+- tapOn:
+    id: "spinner-info"
+- assertVisible: "How Surprise me works"
+- tapOn:
+    id: "spinner-how-close"
+
+# Plan it opens the plan sheet for the pick, and comes back to the spinner
+- scrollUntilVisible:
+    element:
+      id: "spinner-plan"
+    direction: DOWN
+- tapOn:
+    id: "spinner-plan"
 - assertVisible:
     id: "plan-confirm"
 - tapOn:
     id: "plan-confirm"
 - assertVisible: ".* planned for .*"
 - assertVisible:
-    id: "feed-screen"
+    id: "spinner-screen"
 
-# From the Feed: Cook it goes straight into Cook Mode
+# Cook this opens the recipe
 - tapOn:
-    id: "feed-surprise"
-- tapOn:
-    id: "surprise-time-any"
-- tapOn:
-    id: "surprise-spin"
-- extendedWaitUntil:
-    visible:
-      id: "surprise-cook"
-    timeout: 10000
-- tapOn:
-    id: "surprise-cook"
-- assertVisible: "Step 1 of .*"
-- tapOn:
-    id: "cook-close"
+    id: "spinner-cook"
 - assertVisible:
-    id: "feed-screen"
+    id: "recipe-screen"
+- tapOn:
+    id: "back"
+- assertVisible:
+    id: "spinner-screen"

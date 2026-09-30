@@ -205,3 +205,15 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
   - Photo scanning of shelves or the fridge, and receipt scanning, are in scope for launch.
     - **Access:** every account gets 3 free scans a month. Pro is unlimited within a daily cap of about 15.
     - **Model:** chosen by testing Claude and OpenAI vision models on about 30 real photos, then decided on accuracy and cost. The API key and server come to Lachlan for approval when we get there.
+
+## D-031 · The spinner is v1's card deck, with honest parts
+
+- **Date:** 30 September 2026 · **Decided by:** Lachlan
+- **Decision:**
+  - Surprise me is v1's full-screen card deck again: the "03 / 42" counter, "Surprise *me*", the Meal, Time and Pantry chips, the tilted deck with tap-to-spin, Why this, Spin again and Cook this. It keeps v2's Plan it.
+  - The choosing lives in `domain/suggestions/spinner.ts`. It uses the same hard rules as everything else (diet, avoid list, "not for us"), and a spin never lands on the card it started from.
+  - Three v1 parts are replaced, not copied:
+    - **From cupboard** used to mean "six ingredients or fewer". Now it uses the shared cupboard engine (Ready or Need 1–2).
+    - **Why this** used to say "Similar to dishes you liked", which wasn't true. Now it only says true things: what it uses from the pantry, the time, and whether it's in Cookmarks or cooked before.
+    - The **"@recipe-id" handle** on the card was fake. It's dropped until recipes have real authors.
+  - The Feed's "Surprise me instead" button under tonight's suggestion is removed. The spinner stays in the side menu, under "Not feeling it?" and in the empty Feed.

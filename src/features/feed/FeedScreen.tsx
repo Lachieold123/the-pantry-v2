@@ -113,7 +113,6 @@ export function FeedScreen() {
               toast({ message: `${suggestion.title} is on for tonight`, undo: () => removeEntry(entry.id) });
             }}
           />
-          <Button label="Surprise me instead" kind="quiet" onPress={() => router.push('/surprise')} testID="feed-surprise" />
         </View>
       ) : (
         <EmptyState

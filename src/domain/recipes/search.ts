@@ -90,7 +90,7 @@ export function searchRecipes(index: readonly Indexed[], query: string): Recipe[
   return scored.sort((a, b) => b.score - a.score || a.order - b.order).map((s) => s.recipe);
 }
 
-export type TimeFilter = 'under-30' | 'under-45' | 'under-60' | 'over-60';
+export type TimeFilter = 'under-15' | 'under-30' | 'under-45' | 'under-60' | 'over-60';
 
 export type RecipeFilters = {
   cuisines: CuisineId[];
@@ -118,6 +118,8 @@ export function countActiveFilters(f: RecipeFilters): number {
 
 function fitsTime(minutes: number, time: TimeFilter): boolean {
   switch (time) {
+    case 'under-15':
+      return minutes <= 15;
     case 'under-30':
       return minutes <= 30;
     case 'under-45':

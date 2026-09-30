@@ -62,12 +62,21 @@ export const TYPE = {
   numberTile: serif(28, '700', 32, -0.6),
   numberDay: serif(18, '700', 22, -0.4),
   numberItalic: italic(serif(16, '400', 18, -0.3)),
+  displaySpinner: serif(48, '400', 52, -1.2),
+  displaySpinnerAccent: italic(serif(48, '400', 52, -1.2)),
+  counter: serif(18, '700', 22, -0.2),
+  counterSlash: serif(16, '400', 22),
+  counterTotal: serif(14, '400', 22),
+  reasonValue: serif(13.5, '400', 19),
   // Kickers and eyebrows (sans, uppercase)
   kicker: upper(sans(11, '800', 14, 3)),
   kickerSection: upper(sans(11, '800', 14, 2.5)),
   kickerSmall: upper(sans(10, '800', 13, 2)),
   eyebrow: upper(sans(9.5, '800', 12, 1.8)),
   eyebrowLarge: upper(sans(10.5, '800', 13, 2)),
+  eyebrowSpinner: upper(sans(10, '800', 13, 2.8)),
+  reasonKey: upper(sans(10.5, '700', 13, 2.3)),
+  hint: upper(sans(11, '600', 14, 0.7)),
   // Body and controls (sans)
   headingSans: sans(20, '800', 25, -0.4),
   headingSansSmall: sans(16, '800', 20, -0.3),
@@ -109,6 +118,7 @@ export const SHADOW = {
   sheet: { shadowOpacity: 0.25, shadowRadius: 24, shadowOffset: { width: 0, height: -8 }, elevation: 12 },
   photoDisc: { shadowOpacity: 0.18, shadowRadius: 4, shadowOffset: { width: 0, height: 2 }, elevation: 2 },
   hero: { shadowOpacity: 0.55, shadowRadius: 30, shadowOffset: { width: 0, height: 30 }, elevation: 10 },
+  peek: { shadowOpacity: 0.35, shadowRadius: 16, shadowOffset: { width: 0, height: 12 }, elevation: 4 },
 } as const satisfies Record<string, Shadow>;
 
 /** The original's timings. Nothing bounces except the spinner, which defines its own curve. */
@@ -117,7 +127,7 @@ export const MOTION = { quick: 180, standard: 240, slow: 320, toast: 2500 } as c
 /** Minimum tap target, in points. */
 export const TAP_TARGET = 44;
 
-export const ASPECT = { card: 4 / 3, hero: 16 / 9, square: 1, portrait: 4 / 5 } as const;
+export const ASPECT = { card: 4 / 3, hero: 16 / 9, square: 1, portrait: 4 / 5, spinner: 4 / 5.2 } as const;
 
 /** Fixed chrome sizes (spec §3.6). */
 export const CHROME = {
@@ -188,3 +198,31 @@ export const JAR = { gap: 7, padY: 6, padX: 9, initial: 12, matchBody: 14 } as c
 
 /** Pressed feedback: the original dims, it never scales cards. */
 export const PRESSED = { card: 0.94, row: 0.7, subtle: 0.85 } as const;
+
+/** The spinner's deck and motion (spec §4.19, §6). v1's numbers, kept so it moves the same. */
+export const SPINNER = {
+  heroMax: 320,
+  peekMax: 260,
+  /** A peek card is this share of the stage width. */
+  peekShare: 0.78,
+  radius: 22,
+  stagePadX: 28,
+  cornerInset: 18,
+  cornerRule: 24,
+  cornerGap: 10,
+  labelTop: 30,
+  labelBottom: 22,
+  metaGap: 6,
+  peek: { x: 22, xOpen: 30, y: 14, yOpen: 18, tilt: 7, tiltOpen: 11 },
+  tick: { x: 8, tilt: 2, scale: 0.97, ms: 140 },
+  settle: { scale: 1.04, ms: 220, backMs: 200 },
+  driftMs: 400,
+  hintMs: 250,
+  hintDim: 0.4,
+  iconMs: 600,
+  iconTurns: 720,
+  /** Bezier control points: the settle overshoots a little; the drift eases out. */
+  settleCurve: [0.34, 1.56, 0.64, 1],
+  driftCurve: [0.2, 0.7, 0.3, 1],
+  reasonKeyWidth: 78,
+} as const;

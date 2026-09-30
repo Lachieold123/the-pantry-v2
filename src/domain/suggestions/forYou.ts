@@ -35,7 +35,13 @@ export function stableJitter(seed: string, id: string): number {
   return h / 0xffffffff;
 }
 
-const LIMITS: Readonly<Record<TimeFilter, number>> = { 'under-30': 30, 'under-45': 45, 'under-60': 60, 'over-60': Infinity };
+const LIMITS: Readonly<Record<TimeFilter, number>> = {
+  'under-15': 15,
+  'under-30': 30,
+  'under-45': 45,
+  'under-60': 60,
+  'over-60': Infinity,
+};
 
 export function forYou(input: ForYouInput): Recipe[] {
   const { taste } = input;

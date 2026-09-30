@@ -43,13 +43,20 @@ export function eligibleForSurprise(input: Omit<SurpriseInput, 'random' | 'recen
 export function pickSurprise(input: SurpriseInput): Recipe | undefined {
   const hard = eligibleForSurprise(input);
   if (hard.length === 0) return undefined;
-  const recent = new Set(input.recentlyCooked.slice(0, 14));
-  const shown = new Set(input.alreadyShown);
-  let pool = hard;
-  for (const exclude of [input.planned, recent, shown]) {
-    const narrower = pool.filter((r) => !exclude.has(r.id));
-    if (narrower.length > 0) pool = narrower;
+  return softPick(hard, [input.planned, new Set(input.recentlyCooked.slice(0, 14)), new Set(input.alreadyShown)], input.random);
+}
+
+/** Narrows by each set of ids to leave out, in order, skipping any that would leave nothing. */
+export function softPick<T extends { id: string }>(
+  pool: readonly T[],
+  leaveOut: readonly ReadonlySet<string>[],
+  random: () => number,
+): T | undefined {
+  let narrowed = pool;
+  for (const exclude of leaveOut) {
+    const narrower = narrowed.filter((r) => !exclude.has(r.id));
+    if (narrower.length > 0) narrowed = narrower;
   }
-  const i = Math.min(pool.length - 1, Math.floor(input.random() * pool.length));
-  return pool[i];
+  const i = Math.min(narrowed.length - 1, Math.floor(random() * narrowed.length));
+  return narrowed[i];
 }

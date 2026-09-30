@@ -36,18 +36,13 @@ appId: host.exp.Exponent
 - tapOn:
     id: "back"
 
-# Surprise me
+# Not feeling it? Surprise me: the spinner opens on a dish
 - tapOn:
     id: "feed-surprise"
-- assertVisible: 'Can.t decide\?'
+- assertVisible:
+    id: "spinner-card"
+- takeScreenshot: feed-surprise-spinner
 - tapOn:
-    id: "surprise-spin"
-- extendedWaitUntil:
-    visible:
-      id: "surprise-result"
-    timeout: 10000
-- takeScreenshot: feed-surprise-result
-- tapOn:
-    id: "sheet-close"
+    id: "spinner-back"
 - assertVisible:
     id: "feed-screen"

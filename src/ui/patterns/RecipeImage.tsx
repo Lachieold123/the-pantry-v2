@@ -18,11 +18,13 @@ type Props = {
   iconSize?: number;
   /** A fixed height instead of the shape's ratio (the recipe page's hero band). */
   height?: number;
+  /** Cross-fade time for a new photo; the spinner turns it off so fast-changing cards stay sharp. */
+  transition?: number;
   /** Overlays drawn on top of the photo (scrims, discs, pills). */
   children?: ReactNode;
 };
 
-export function RecipeImage({ source, shape, cuisine, radius = RADIUS.md, iconSize = 32, height, children }: Props) {
+export function RecipeImage({ source, shape, cuisine, radius = RADIUS.md, iconSize = 32, height, transition = 200, children }: Props) {
   const { colours } = useTheme();
   const frame = {
     width: '100%' as const,
@@ -42,7 +44,7 @@ export function RecipeImage({ source, shape, cuisine, radius = RADIUS.md, iconSi
           <Icon name="cook" size={iconSize} colour="inkMuted" />
         </View>
       ) : (
-        <Image source={source} style={{ width: '100%', height: '100%' }} contentFit="cover" transition={200} accessible={false} />
+        <Image source={source} style={{ width: '100%', height: '100%' }} contentFit="cover" transition={transition} accessible={false} />
       )}
       {children}
     </View>
