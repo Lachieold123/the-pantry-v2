@@ -9,8 +9,9 @@ import type { Recipe } from '@/domain/recipes/types';
 import { fromISODate, isISODate, toISODate, type Slot } from '@/domain/plan/week';
 import { longDate } from '@/lib/dates';
 import { usePlan } from '@/store/plan';
-import { useAllRecipes, useRecipeLookup, useRecipeSearchIndex } from '@/store/recipeBook';
+import { useRecipeLookup, useRecipeSearchIndex } from '@/store/recipeBook';
 import { useSaved } from '@/store/saved';
+import { useForYou } from '@/store/suggestions';
 import { RecipeCard } from '@/ui/patterns/RecipeCard';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { useToast } from '@/ui/patterns/Toast';
@@ -40,7 +41,6 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
   const hidden = useSaved((s) => s.hidden);
   const [slot, setSlot] = useState<Slot>(() => SLOTS.find((s) => s.value === requestedSlot)?.value ?? 'dinner');
   const [query, setQuery] = useState('');
-  const all = useAllRecipes();
   const getRecipe = useRecipeLookup();
   const searchIndex = useRecipeSearchIndex();
   // The field updates on every letter; the results follow when there's time.
@@ -50,10 +50,18 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
     () => bookmarks.map((b) => getRecipe(b.recipeId)).filter((r): r is Recipe => r !== undefined),
     [bookmarks, getRecipe],
   );
-  const results = useMemo(() => {
-    const pool = deferredQuery.trim() ? searchRecipes(searchIndex(), deferredQuery) : all.filter((r) => r.mealTypes.includes(slot));
-    return pool.filter((r) => !hidden.includes(r.id)).slice(0, MAX_RESULTS);
-  }, [deferredQuery, slot, hidden, searchIndex, all]);
+  // Ideas follow the cook's diet and avoid list and are ranked for them, like every other suggestion.
+  // A search is an explicit ask, so it shows whatever matches (bar "not for us").
+  const ideas = useForYou(MAX_RESULTS, slot);
+  const results = useMemo(
+    () =>
+      deferredQuery.trim()
+        ? searchRecipes(searchIndex(), deferredQuery)
+            .filter((r) => !hidden.includes(r.id))
+            .slice(0, MAX_RESULTS)
+        : ideas,
+    [deferredQuery, hidden, searchIndex, ideas],
+  );
 
   const dayName = day === toISODate(new Date()) ? 'today' : (longDate(fromISODate(day)).split(' ')[0] ?? day);
   // Once only: the sheet takes a moment to close, and a second tap would plan twice (audit F163).
@@ -86,7 +94,9 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
         <SectionHeader title={query.trim() ? 'Results' : `Ideas for ${slot}`} />
         {results.length === 0 ? (
           <Text variant="body" colour="inkSoft">
-            No recipes match. Check the spelling, or try an ingredient.
+            {query.trim()
+              ? 'No recipes match. Check the spelling, or try an ingredient.'
+              : `Nothing for ${slot} fits what you eat and avoid yet. Search to find something else.`}
           </Text>
         ) : null}
         {results.map((r) => (

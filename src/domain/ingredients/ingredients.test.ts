@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
-import { buildIngredientIndex } from './database';
+import { index as catalogueIndex } from '../testing/fixtures';
+import { buildIngredientIndex, normaliseWords } from './database';
 import { formatLine, formatQuantity, scaleLine } from './format';
 import { parseIngredientLine } from './parse';
 import { addQuantities, formatKitchenNumber, formatMeasuredNumber, parseNumber } from './quantity';
@@ -103,6 +104,17 @@ describe('ingredient index', () => {
   it('rejects duplicate ids', () => {
     const def = { id: 'x', name: 'x', aisle: 'other' as const, aliases: [], groups: [] };
     assert.throws(() => buildIngredientIndex([def, def]));
+  });
+  it('rejects one phrase naming two ingredients (F156)', () => {
+    const a = { id: 'cane-vinegar', name: 'cane vinegar', aisle: 'other' as const, aliases: ['coconut vinegar'], groups: [] };
+    const b = { id: 'coconut-vinegar', name: 'coconut vinegar', aisle: 'other' as const, aliases: [], groups: [] };
+    assert.throws(() => buildIngredientIndex([a, b]), /coconut vinegar/);
+    assert.equal(catalogueIndex.match('2 tbsp coconut vinegar'), 'coconut-vinegar');
+  });
+  it('"-ies" plurals meet their singular: chillies, berries (F136)', () => {
+    assert.deepEqual(normaliseWords('red chillies'), normaliseWords('red chilli'));
+    assert.deepEqual(normaliseWords('berries'), normaliseWords('berry'));
+    assert.equal(catalogueIndex.match('2 long red chillies'), catalogueIndex.match('1 long red chilli'));
   });
 });
 

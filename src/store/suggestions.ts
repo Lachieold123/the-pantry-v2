@@ -4,7 +4,7 @@ import { useMemo } from 'react';
 import { INGREDIENTS } from '@/data/catalogue/catalogue';
 import { recentlyCooked } from '@/domain/cook/cook';
 import { entriesInWeek, toISODate, visibleWeeks } from '@/domain/plan/week';
-import type { Recipe } from '@/domain/recipes/types';
+import type { MealType, Recipe } from '@/domain/recipes/types';
 import { forYou } from '@/domain/suggestions/forYou';
 import { useCookLog } from './cookLog';
 import { usePlan } from './plan';
@@ -12,7 +12,7 @@ import { usePreferences } from './preferences';
 import { useAllRecipes } from './recipeBook';
 import { useSaved } from './saved';
 
-export function useForYou(count: number): Recipe[] {
+export function useForYou(count: number, mealType: MealType = 'dinner'): Recipe[] {
   const diet = usePreferences((s) => s.diet);
   const avoid = usePreferences((s) => s.avoid);
   const cuisines = usePreferences((s) => s.cuisines);
@@ -34,7 +34,8 @@ export function useForYou(count: number): Recipe[] {
         // Same suggestions all day; fresh ones tomorrow.
         seed: today,
         count,
+        mealType,
       }),
-    [recipes, diet, avoid, cuisines, weeknight, hidden, entries, log, today, count],
+    [recipes, diet, avoid, cuisines, weeknight, hidden, entries, log, today, count, mealType],
   );
 }

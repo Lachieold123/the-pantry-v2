@@ -37,6 +37,15 @@ describe('forYou', () => {
     }
   });
 
+  it('suggests for the meal asked, still within the diet (F131: Add to plan ideas)', () => {
+    const picks = forYou({ ...base, count: 10, mealType: 'breakfast', taste: { ...base.taste, diet: 'vegetarian' } });
+    assert.ok(picks.length > 0);
+    for (const p of picks) {
+      assert.ok(p.mealTypes.includes('breakfast'), p.id);
+      assert.ok(p.diets.includes('vegetarian'), p.id);
+    }
+  });
+
   it('returns nothing, rather than breaking a rule, when no dinner fits', () => {
     const avoid = {
       options: ['nuts' as const, 'soy' as const, 'gluten' as const, 'sesame' as const],

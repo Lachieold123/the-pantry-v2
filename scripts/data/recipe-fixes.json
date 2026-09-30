@@ -1,5 +1,5 @@
 {
-  "_about": "Hand-made corrections applied by scripts/convert-old-recipes.mts on top of the old catalogue. Each replacement must match the old text exactly once, or the conversion fails, so fixes never apply silently to the wrong thing. Logged in DECISIONS.md D-014.",
+  "_about": "Hand-made corrections applied by scripts/convert-old-recipes.mts on top of the old catalogue. Each replacement must match the old text exactly once, or the conversion fails, so fixes never apply silently to the wrong thing. Logged in DECISIONS.md D-014. In an ingredient fix, \"\\n\" in the replacement splits the line into several, and an empty replacement removes it.",
   "everywhere": [
     {
       "from": "kaffir lime",
@@ -122,6 +122,24 @@
         {
           "from": "1.2L chicken or vegetable stock, kept warm",
           "to": "1.2L vegetable stock (or chicken stock), kept warm"
+        }
+      ]
+    },
+    "omelette": {
+      "ingredients": [
+        {
+          "from": "Optional fillings: grated Gruyère, chopped chives, ham, sautéed mushrooms, smoked salmon",
+          "to": "Grated Gruyère, to fill (optional)\nChopped chives, to fill (optional)\nHam, to fill (optional)\nSautéed mushrooms, to fill (optional)\nSmoked salmon, to fill (optional)",
+          "why": "One line hid ham and smoked salmon in the prep text, so the diet tags missed them (audit F187). One filling per line."
+        }
+      ]
+    },
+    "pulled-pork": {
+      "ingredients": [
+        {
+          "from": "Pan juices from the pork",
+          "to": "",
+          "why": "Not something to buy: it comes from the pork, and the BBQ sauce step says to add it. As a line it would put \"pork\" on the shopping list."
         }
       ]
     }

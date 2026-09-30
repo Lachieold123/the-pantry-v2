@@ -165,7 +165,7 @@ export function buildRecipe(id: string, draft: RecipeDraft, source: RecipeSource
     cuisine: draft.cuisine ?? 'modern-australian',
     diets: deriveDiets(
       groups.flatMap((g) => g.items),
-      index.byId,
+      index,
     ),
     mealTypes: draft.mealTypes,
     difficulty: draft.difficulty,

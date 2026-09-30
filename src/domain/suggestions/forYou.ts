@@ -9,7 +9,7 @@
 import type { IngredientIndex } from '../ingredients/database';
 import type { AvoidList, DietPreference } from '../recipes/diets';
 import { NO_FILTERS, type TimeFilter } from '../recipes/search';
-import { totalMinutes, type CuisineId, type Recipe } from '../recipes/types';
+import { totalMinutes, type CuisineId, type MealType, type Recipe } from '../recipes/types';
 import { eligibleForSurprise } from './surprise';
 
 export type Taste = { diet: DietPreference; avoid: AvoidList; cuisines: readonly CuisineId[]; weeknight: TimeFilter | undefined };
@@ -23,6 +23,8 @@ export type ForYouInput = {
   index: IngredientIndex;
   seed: string;
   count: number;
+  /** Which meal to suggest for; dinner unless a screen is planning another. */
+  mealType?: MealType;
 };
 
 /** A cheap, stable 0–1 number per recipe and seed (FNV-1a), so ties break the same way all day. */
@@ -47,7 +49,7 @@ export function forYou(input: ForYouInput): Recipe[] {
   const { taste } = input;
   const pool = eligibleForSurprise({
     recipes: input.recipes,
-    filters: { ...NO_FILTERS, mealTypes: ['dinner'] },
+    filters: { ...NO_FILTERS, mealTypes: [input.mealType ?? 'dinner'] },
     diet: taste.diet,
     avoid: taste.avoid,
     hidden: input.hidden,

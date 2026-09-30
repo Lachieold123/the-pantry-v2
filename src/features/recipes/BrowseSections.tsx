@@ -7,13 +7,16 @@ import { useRouter } from 'expo-router';
 import { useMemo } from 'react';
 import { ScrollView, View } from 'react-native';
 
+import { INGREDIENTS } from '@/data/catalogue/catalogue';
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
+import { fitsTaste } from '@/domain/recipes/diets';
 import { dailyPicks, moods, presetActive, quickChips, recipeOfTheDay, recipesFor, togglePreset } from '@/domain/recipes/browse';
 import { needLine } from '@/domain/cupboard/cookable';
 import { toISODate } from '@/domain/plan/week';
 import { seasonOn } from '@/domain/recipes/search';
 import type { Recipe } from '@/domain/recipes/types';
 import { ingredientName, useCookableNow } from '@/store/cookable';
+import { usePreferences } from '@/store/preferences';
 import { useAllRecipes } from '@/store/recipeBook';
 import { useRecipeFilters } from '@/store/recipeFilters';
 import { useBookmarks, useSaved } from '@/store/saved';
@@ -32,6 +35,8 @@ export function BrowseSections() {
   const router = useRouter();
   const all = useAllRecipes();
   const hidden = useSaved((s) => s.hidden);
+  const diet = usePreferences((s) => s.diet);
+  const avoid = usePreferences((s) => s.avoid);
   const cook = useCookableNow();
   const query = useRecipeFilters((s) => s.query);
   const filters = useRecipeFilters((s) => s.filters);
@@ -43,19 +48,22 @@ export function BrowseSections() {
   const open = (id: string) => router.push({ pathname: '/recipe/[id]', params: { id } });
 
   const data = useMemo(() => {
-    // "Not for us" dishes never appear here.
+    // Editorial picks are suggestions, so the cook's hard rules apply (F33): no "not for us"
+    // dishes, nothing outside their diet, nothing on their avoid list.
+    // "See all" still counts the whole catalogue, which is what it opens.
     const visible = all.filter((r) => !hidden.includes(r.id));
-    const featured = recipeOfTheDay(visible, today, (r) => image(r.id) !== undefined);
+    const suited = visible.filter((r) => fitsTaste(r, { diet, avoid }, INGREDIENTS));
+    const featured = recipeOfTheDay(suited, today, (r) => image(r.id) !== undefined);
     const shelves = moods(season)
-      .map((mood) => ({ mood, recipes: recipesFor(mood, visible) }))
+      .map((mood) => ({ mood, recipes: recipesFor(mood, suited) }))
       .filter((s) => s.recipes.length > 0);
     const picks = dailyPicks(
-      visible.filter((r) => r.id !== featured?.id),
+      suited.filter((r) => r.id !== featured?.id),
       today,
       PICKS,
     );
     return { visible, featured, shelves, picks };
-  }, [all, hidden, today, season]);
+  }, [all, hidden, diet, avoid, today, season]);
   // One engine for every cupboard surface: diet, avoid list and "not for us" always apply.
   const canMake = [...cook.ready, ...cook.nearly].slice(0, PICKS);
 

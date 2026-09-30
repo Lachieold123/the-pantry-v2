@@ -38,7 +38,7 @@ function UnsureNote({ lines }: { lines: UnsureLine[] }) {
       ) : null}
       {options.length ? (
         <Text variant="meta">
-          {`${options.length === 1 ? 'One line gives' : `${options.length} lines give`} two options. The shopping list and diet tags use the first one.`}
+          {`${options.length === 1 ? 'One line gives' : `${options.length} lines give`} two options. Diet tags and your avoid list check both; the shopping list shows one, so check it.`}
         </Text>
       ) : null}
     </View>
