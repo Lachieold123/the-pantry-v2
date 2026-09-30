@@ -12,6 +12,7 @@ import { hasCooked } from '@/domain/cook/cook';
 import { cookable } from '@/domain/cupboard/cookable';
 import { cupboardIds } from '@/domain/cupboard/match';
 import { recipeAsText } from '@/domain/recipes/labels';
+import { parseServings } from '@/domain/recipes/servings';
 import { useCookLog } from '@/store/cookLog';
 import { ingredientName } from '@/store/cookable';
 import { useCupboard } from '@/store/cupboard';
@@ -35,7 +36,8 @@ import { CupboardSummary } from './CupboardSummary';
 import { RecipeHeader } from './RecipeHeader';
 import { ServingsSheet } from './ServingsSheet';
 
-export function RecipeScreen({ id }: { id: string }) {
+/** `servings` is the raw route param: a planned dinner opens scaled to what it was planned for (audit F37). */
+export function RecipeScreen({ id, servings: requested }: { id: string; servings?: string | undefined }) {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const styles = useStyles();
@@ -43,7 +45,15 @@ export function RecipeScreen({ id }: { id: string }) {
   const toast = useToast();
   const units = usePreferences((s) => s.units);
   const setUnits = usePreferences((s) => s.setUnits);
-  const [servings, setServings] = useState(recipe?.servings ?? 4);
+  const startServings = parseServings(requested) ?? recipe?.servings ?? 4;
+  const [servings, setServings] = useState(startServings);
+  // Editing your own recipe makes a new recipe object: start again from its servings rather
+  // than keep the old ones (audit F50). Ticks reset with it, as they belong to the old lines.
+  const [shownRecipe, setShownRecipe] = useState(recipe);
+  if (shownRecipe !== recipe) {
+    setShownRecipe(recipe);
+    setServings(shownRecipe && recipe && shownRecipe.id === recipe.id ? recipe.servings : startServings);
+  }
   const [menu, setMenu] = useState(false);
   const [servingsOpen, setServingsOpen] = useState(false);
   const saved = useSaved((s) => s.bookmarks.some((b) => b.recipeId === id));
@@ -89,7 +99,8 @@ export function RecipeScreen({ id }: { id: string }) {
   // House photos without a photographer's credit are the original app's AI-generated images (D-029).
   const photoNote = recipe.image?.credit ?? (!mine && RECIPE_IMAGES[recipe.id] !== undefined ? 'AI-generated photo' : undefined);
   const edit = () => router.push({ pathname: '/my-recipe/edit', params: { id: recipe.id } });
-  const plan = () => router.push({ pathname: '/recipe/[id]/plan', params: { id: recipe.id } });
+  // The plan sheet starts at the servings you're looking at, not the recipe's own.
+  const plan = () => router.push({ pathname: '/recipe/[id]/plan', params: { id: recipe.id, servings: String(servings) } });
   const share = async () => {
     try {
       // Your own recipes aren't on anyone else's phone, so they're shared as the full text.

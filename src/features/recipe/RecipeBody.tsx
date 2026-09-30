@@ -1,13 +1,16 @@
 // The ingredients, method and notes, scaled and in the cook's units, in the
 // original's look (spec §4.18 items 8–10). Tapping an ingredient ticks it off
-// while you gather things; ticks last only while the page is open.
+// while you gather things; ticks last only while the page is open, and only
+// for this version of the recipe.
 import { useState } from 'react';
 import { Pressable, View } from 'react-native';
 
 import { splitStepTimers } from '@/domain/cook/cook';
 import { formatLine, scaleLine, type UnitSystem } from '@/domain/ingredients/format';
+import type { IngredientLine } from '@/domain/ingredients/types';
 import { substitutionFor } from '@/domain/recipes/substitutions';
 import type { Recipe } from '@/domain/recipes/types';
+import { capitaliseLine, IngredientGroups } from '@/ui/patterns/IngredientGroups';
 import { Icon } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
@@ -25,67 +28,62 @@ type IngredientsProps = { recipe: Recipe; servings: number; units: UnitSystem; h
 
 export function Ingredients({ recipe, servings, units, have }: IngredientsProps) {
   const styles = useStyles();
-  const [ticked, setTicked] = useState<ReadonlySet<string>>(new Set());
+  // Ticks belong to the line itself, not its position, so a line moving (or the recipe being
+  // edited, which makes new lines) can't leave a different ingredient ticked (audit F50).
+  const [ticked, setTicked] = useState<ReadonlySet<IngredientLine>>(new Set());
   const ratio = servings / recipe.servings;
-  const tick = (key: string) =>
+  const tick = (line: IngredientLine) =>
     setTicked((t) => {
       const next = new Set(t);
-      if (next.has(key)) next.delete(key);
-      else next.add(key);
+      if (next.has(line)) next.delete(line);
+      else next.add(line);
       return next;
     });
   return (
     <View style={styles.section}>
       <Heading>Ingredients</Heading>
-      {recipe.ingredientGroups.map((group, gi) => (
-        <View key={gi}>
-          {group.title ? (
-            <Text variant="kickerSection" style={styles.groupTitle} accessibilityRole="header">
-              {group.title}
-            </Text>
-          ) : null}
-          {group.items.map((line, li) => {
-            const key = `${gi}-${li}`;
-            const done = ticked.has(key);
-            const inCupboard = line.ingredientId !== undefined && have.has(line.ingredientId);
-            const tip = substitutionFor(line.ingredientId);
-            const text = capitalise(formatLine(scaleLine(line, ratio), units));
-            return (
-              <View key={key}>
-                <Pressable
-                  onPress={() => tick(key)}
-                  accessibilityRole="checkbox"
-                  aria-checked={done}
-                  accessibilityLabel={inCupboard ? `${text}, in your cupboard` : text}
-                  style={styles.line}
-                  testID={`ingredient-${key}`}
-                >
-                  <View style={[styles.bullet, done && styles.bulletDone]} />
-                  <Text variant="body" colour={done ? 'inkSubtle' : 'ink'} style={[styles.lineText, done && styles.struck]}>
-                    {text}
-                  </Text>
-                  {inCupboard ? (
-                    <View style={styles.have}>
-                      <Icon name="check" size={10} colour="bg" />
-                      <Text variant="pill" colour="bg">
-                        Have
-                      </Text>
-                    </View>
-                  ) : null}
-                </Pressable>
-                {tip ? (
-                  <View style={styles.tip}>
-                    <Icon name="substitute" size={12} colour="accent" />
-                    <Text variant="note" colour="inkMuted" style={{ flex: 1 }}>
-                      {tip}
+      <IngredientGroups
+        groups={recipe.ingredientGroups}
+        renderLine={(line, key) => {
+          const done = ticked.has(line);
+          const inCupboard = line.ingredientId !== undefined && have.has(line.ingredientId);
+          const tip = substitutionFor(line.ingredientId);
+          const text = capitaliseLine(formatLine(scaleLine(line, ratio), units));
+          return (
+            <View key={key}>
+              <Pressable
+                onPress={() => tick(line)}
+                accessibilityRole="checkbox"
+                aria-checked={done}
+                accessibilityLabel={inCupboard ? `${text}, in your cupboard` : text}
+                style={styles.line}
+                testID={`ingredient-${key}`}
+              >
+                <View style={[styles.bullet, done && styles.bulletDone]} />
+                <Text variant="body" colour={done ? 'inkSubtle' : 'ink'} style={[styles.lineText, done && styles.struck]}>
+                  {text}
+                </Text>
+                {inCupboard ? (
+                  <View style={styles.have}>
+                    <Icon name="check" size={10} colour="bg" />
+                    <Text variant="pill" colour="bg">
+                      Have
                     </Text>
                   </View>
                 ) : null}
-              </View>
-            );
-          })}
-        </View>
-      ))}
+              </Pressable>
+              {tip ? (
+                <View style={styles.tip}>
+                  <Icon name="substitute" size={12} colour="accent" />
+                  <Text variant="note" colour="inkMuted" style={{ flex: 1 }}>
+                    {tip}
+                  </Text>
+                </View>
+              ) : null}
+            </View>
+          );
+        }}
+      />
     </View>
   );
 }
@@ -141,13 +139,8 @@ export function Notes({ notes }: { notes: readonly string[] }) {
   );
 }
 
-function capitalise(s: string): string {
-  return s.charAt(0).toUpperCase() + s.slice(1);
-}
-
 const useStyles = makeStyles(({ colours }) => ({
   section: { gap: SPACE.sm },
-  groupTitle: { marginTop: SPACE.sm, marginBottom: SPACE.xxs },
   line: { flexDirection: 'row', alignItems: 'center', gap: SPACE.sm, paddingVertical: 7, minHeight: 36 },
   bullet: { width: RECIPE.bullet, height: RECIPE.bullet, borderRadius: RECIPE.bullet, backgroundColor: colours.bullet },
   bulletDone: { backgroundColor: colours.accent },

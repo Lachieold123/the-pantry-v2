@@ -1,6 +1,6 @@
 // Root: fonts, saved preferences, theme and the splash screen. The splash
 // stays up until fonts and preferences are ready, so the first frame is final.
-import { Stack, type ErrorBoundaryProps } from 'expo-router';
+import { Stack, useRouter, type ErrorBoundaryProps, type Href } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
@@ -8,10 +8,12 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { RootErrorScreen } from '@/features/app/RootErrorScreen';
 import { useAppReady } from '@/features/app/useAppReady';
 import { ToastProvider } from '@/ui/patterns/Toast';
+import { configureNotifications, useNotificationTaps } from '@/lib/notifications';
 import { AppChrome } from '@/ui/theme/AppChrome';
 import { ThemeProvider, useTheme } from '@/ui/theme/ThemeProvider';
 
 void SplashScreen.preventAutoHideAsync();
+configureNotifications();
 
 export function ErrorBoundary({ retry }: ErrorBoundaryProps) {
   return (
@@ -45,6 +47,9 @@ const SHEET = { presentation: 'formSheet' as const, sheetAllowedDetents: [0.75, 
 
 function RootStack() {
   const { colours } = useTheme();
+  const router = useRouter();
+  // Tapping the Sunday reminder opens Plan (audit F133). Here, so the stack exists to push onto.
+  useNotificationTaps((path) => router.navigate(path as Href));
   return (
     <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: colours.bg } }}>
       <Stack.Screen name="(tabs)" />

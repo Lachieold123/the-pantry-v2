@@ -71,7 +71,8 @@ export function FeedScreen() {
             image={RECIPE_IMAGES[tonightRecipe.id]}
             size="large"
             note={`Dinner for ${tonight.servings}`}
-            onPress={() => open(tonightRecipe.id)}
+            // Opens scaled to tonight's planned servings, as Start cooking does (audit F37).
+            onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: tonightRecipe.id, servings: String(tonight.servings) } })}
             testID="feed-tonight"
           />
           <Button

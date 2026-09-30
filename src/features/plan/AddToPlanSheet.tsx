@@ -15,6 +15,7 @@ import { useSaved } from '@/store/saved';
 import { RecipeCard } from '@/ui/patterns/RecipeCard';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { useToast } from '@/ui/patterns/Toast';
+import { useOnce } from '@/ui/patterns/useOnce';
 import { SearchField } from '@/ui/primitives/SearchField';
 import { Segmented } from '@/ui/primitives/Segmented';
 import { Sheet } from '@/ui/primitives/Sheet';
@@ -33,6 +34,7 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
   const day = isISODate(requested) ? requested : toISODate(new Date());
   const router = useRouter();
   const toast = useToast();
+  const once = useOnce();
   const addEntry = usePlan((s) => s.addEntry);
   const removeEntry = usePlan((s) => s.removeEntry);
   const bookmarks = useSaved((s) => s.bookmarks);
@@ -53,11 +55,12 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
   }, [query, slot, hidden, searchIndex, all]);
 
   const dayName = day === toISODate(new Date()) ? 'today' : (longDate(fromISODate(day)).split(' ')[0] ?? day);
-  const pick = (recipe: Recipe) => {
+  // Once only: the sheet takes a moment to close, and a second tap would plan twice (audit F163).
+  const pick = once((recipe: Recipe) => {
     const entry = addEntry(recipe.id, day, slot, recipe.servings);
     toast({ message: `${recipe.title} planned for ${dayName} ${slot}`, undo: () => removeEntry(entry.id) });
     router.back();
-  };
+  });
 
   return (
     <Sheet title={`Add to ${longDate(fromISODate(day))}`} onClose={() => router.back()}>

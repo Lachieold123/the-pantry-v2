@@ -111,7 +111,6 @@ export function EditorDetails({ draft, update, cuisineProblem, mealProblem }: Pr
           label="Serves"
           value={draft.servings}
           onChange={(n) => update('servings', n)}
-          max={50}
           format={(n) => `Serves ${n}`}
           testID="editor-servings"
         />

@@ -1,14 +1,32 @@
 // Running timers, pinned above the step. Finished ones say so until dismissed.
+// The clock ticks here, not in Cook Mode, so only this bar re-renders each
+// half second, and it stops once every timer has finished (audit F53).
+import { useEffect, useState } from 'react';
 import { View } from 'react-native';
 
-import { formatCountdown, secondsLeft, type CookTimer } from '@/domain/cook/timers';
+import { anyRunning, formatCountdown, secondsLeft, type CookTimer } from '@/domain/cook/timers';
 import { IconButton } from '@/ui/primitives/IconButton';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { RADIUS, SPACE } from '@/ui/tokens/type';
 
-export function TimerBar({ timers, now, onDismiss }: { timers: CookTimer[]; now: number; onDismiss: (id: string) => void }) {
+const TICK_MS = 500;
+
+export function TimerBar({ timers, onDismiss }: { timers: CookTimer[]; onDismiss: (id: string) => void }) {
   const styles = useStyles();
+  const [now, setNow] = useState(() => Date.now());
+  const running = anyRunning(timers, now);
+  useEffect(() => {
+    if (!running) return;
+    const tick = () => setNow(Date.now());
+    // Straight away too: a timer just added counts from the real time, not the last tick.
+    const first = setTimeout(tick, 0);
+    const every = setInterval(tick, TICK_MS);
+    return () => {
+      clearTimeout(first);
+      clearInterval(every);
+    };
+  }, [running, timers]);
   if (timers.length === 0) return null;
   return (
     <View style={styles.bar}>

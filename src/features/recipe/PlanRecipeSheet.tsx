@@ -4,10 +4,12 @@ import { useState } from 'react';
 import { View } from 'react-native';
 
 import type { Slot } from '@/domain/plan/week';
+import { parseServings } from '@/domain/recipes/servings';
 import { usePlan } from '@/store/plan';
 import { useRecipe } from '@/store/recipeBook';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { useToast } from '@/ui/patterns/Toast';
+import { useOnce } from '@/ui/patterns/useOnce';
 import { Button } from '@/ui/primitives/Button';
 import { Chip } from '@/ui/primitives/Chip';
 import { Segmented } from '@/ui/primitives/Segmented';
@@ -23,9 +25,11 @@ const SLOTS = [
   { value: 'dinner', label: 'Dinner' },
 ] as const;
 
-export function PlanRecipeSheet({ id }: { id: string }) {
+/** `servings` is the raw route param: the recipe page's current servings, so planning keeps them (audit F37). */
+export function PlanRecipeSheet({ id, servings: requested }: { id: string; servings?: string | undefined }) {
   const router = useRouter();
   const toast = useToast();
+  const once = useOnce();
   const recipe = useRecipe(id);
   const addEntry = usePlan((s) => s.addEntry);
   const removeEntry = usePlan((s) => s.removeEntry);
@@ -38,7 +42,7 @@ export function PlanRecipeSheet({ id }: { id: string }) {
         ? 'lunch'
         : 'dinner';
   const [slot, setSlot] = useState<Slot>(defaultSlot);
-  const [servings, setServings] = useState(recipe?.servings ?? 4);
+  const [servings, setServings] = useState(parseServings(requested) ?? recipe?.servings ?? 4);
 
   if (!recipe) {
     return (
@@ -54,11 +58,12 @@ export function PlanRecipeSheet({ id }: { id: string }) {
       ? 'tonight'
       : `${chosen.long === 'tonight' ? 'today' : chosen.long} ${slot}`
     : slot;
-  const add = () => {
+  // Once only: the sheet takes a moment to close, and a second tap would plan it twice.
+  const add = once(() => {
     const entry = addEntry(recipe.id, day, slot, servings);
     toast({ message: `${recipe.title} planned for ${where}`, undo: () => removeEntry(entry.id) });
     router.back();
-  };
+  });
 
   return (
     <Sheet title={`Plan ${recipe.title}`} onClose={() => router.back()}>

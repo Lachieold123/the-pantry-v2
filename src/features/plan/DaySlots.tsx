@@ -98,7 +98,8 @@ function SlotCard({ entry, past }: { entry: PlanEntry; past: boolean }) {
   return (
     <>
       <Pressable
-        onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: recipe.id } })}
+        // Opens scaled to what it's planned for, matching the shopping list (audit F37).
+        onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: recipe.id, servings: String(entry.servings) } })}
         accessibilityRole="button"
         accessibilityLabel={`${recipe.title}, for ${entry.servings}`}
         testID={`plan-entry-${entry.id}`}

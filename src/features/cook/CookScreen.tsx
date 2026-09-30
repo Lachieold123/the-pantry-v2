@@ -2,8 +2,8 @@
 // to move on (D-004), timers you start with a tap, and Done logs the cook.
 import { useKeepAwake } from 'expo-keep-awake';
 import { useRouter } from 'expo-router';
-import { useMemo, useState } from 'react';
-import { Pressable, ScrollView, View } from 'react-native';
+import { useEffect, useMemo, useState } from 'react';
+import { BackHandler, Pressable, ScrollView, View } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, { FadeIn, useReducedMotion } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -12,27 +12,32 @@ import { INGREDIENTS, KITCHEN } from '@/data/catalogue/catalogue';
 import { splitStepTimers } from '@/domain/cook/cook';
 import { cookable } from '@/domain/cupboard/cookable';
 import { cupboardIds } from '@/domain/cupboard/match';
+import { anyRunning } from '@/domain/cook/timers';
 import { formatLine, scaleLine } from '@/domain/ingredients/format';
-import { allLines } from '@/domain/recipes/types';
+import { parseServings } from '@/domain/recipes/servings';
 import { ingredientName } from '@/store/cookable';
 import { useCookLog } from '@/store/cookLog';
 import { useCupboard } from '@/store/cupboard';
 import { usePreferences } from '@/store/preferences';
 import { useRecipe } from '@/store/recipeBook';
 import { EmptyState } from '@/ui/patterns/EmptyState';
+import { capitaliseLine, IngredientGroups } from '@/ui/patterns/IngredientGroups';
 import { useToast } from '@/ui/patterns/Toast';
+import { useOnce } from '@/ui/patterns/useOnce';
 import { Button } from '@/ui/primitives/Button';
 import { IconButton } from '@/ui/primitives/IconButton';
 import { Text } from '@/ui/primitives/Text';
 import { useTheme } from '@/ui/theme/ThemeProvider';
 import { MOTION, SPACE } from '@/ui/tokens/type';
+import { LeaveConfirm } from './LeaveConfirm';
 import { TimerBar } from './TimerBar';
 import { useCookTimers } from './useCookTimers';
 import { UsedUpSheet } from './UsedUpSheet';
 
 const SWIPE_DISTANCE = 60;
 
-export function CookScreen({ id, servings: requested }: { id: string; servings?: number | undefined }) {
+/** `servings` is the raw route param; anything but a whole number 1–50 falls back to the recipe's own (audit F52). */
+export function CookScreen({ id, servings: requested }: { id: string; servings?: string | undefined }) {
   useKeepAwake('cook-mode');
   const router = useRouter();
   const toast = useToast();
@@ -50,7 +55,20 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
   const shelf = useCupboard((s) => s.shelf);
   const removeFromCupboard = useCupboard((s) => s.remove);
   const cupboard = useMemo(() => cupboardIds(items), [items]);
-  const { timers, now, start, dismiss } = useCookTimers(recipe?.title ?? '');
+  const { timers, start, dismiss } = useCookTimers();
+  const once = useOnce();
+  const [confirmLeave, setConfirmLeave] = useState(false);
+  // Leaving with a timer still counting down asks first (audit F45); finished timers don't count.
+  const leave = () => (anyRunning(timers, Date.now()) ? setConfirmLeave(true) : router.back());
+  useEffect(() => {
+    // Android's back button leaves the same way × does, so it asks too.
+    const sub = BackHandler.addEventListener('hardwareBackPress', () => {
+      if (!anyRunning(timers, Date.now())) return false;
+      setConfirmLeave(true);
+      return true;
+    });
+    return () => sub.remove();
+  }, [timers]);
 
   if (!recipe) {
     return (
@@ -67,7 +85,7 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
 
   const total = recipe.steps.length;
   const last = step === total - 1;
-  const servings = requested && requested > 0 ? requested : recipe.servings;
+  const servings = parseServings(requested) ?? recipe.servings;
   const next = () => (last ? undefined : setStep(step + 1));
   const previous = () => (step === 0 ? undefined : setStep(step - 1));
   // Swipe left for the next step, right to go back. Horizontal only, so the step text still scrolls.
@@ -85,20 +103,21 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
     const c = cookable(recipe, cupboard, shelf, INGREDIENTS, KITCHEN);
     return [...c.have, ...c.swaps.map((s) => s.use)].filter((i) => KITCHEN.isPerishable(i));
   })();
-  const finish = (usedUp: string[]) => {
+  // Once only: Cook Mode takes a moment to close, and a second tap would log the cook twice (audit F163).
+  const finish = once((usedUp: string[]) => {
     setAskUsedUp(false);
     const event = markCooked(recipe.id);
     for (const i of usedUp) removeFromCupboard(i);
     router.back();
     toast({ message: `${recipe.title} cooked. Nice work.`, undo: () => undoCooked(event.id) });
-  };
+  });
   const done = () => (used.length ? setAskUsedUp(true) : finish([]));
   const text = recipe.steps[step]?.text ?? '';
 
   return (
     <View style={{ flex: 1, backgroundColor: colours.bg, paddingTop: insets.top, paddingBottom: Math.max(insets.bottom, SPACE.sm) }}>
       <View style={{ flexDirection: 'row', alignItems: 'center', paddingHorizontal: SPACE.xs }}>
-        <IconButton icon="close" label="Leave Cook Mode" onPress={() => router.back()} testID="cook-close" />
+        <IconButton icon="close" label="Leave Cook Mode" onPress={leave} testID="cook-close" />
         <Text variant="kicker" align="center" style={{ flex: 1 }} accessibilityLiveRegion="polite">
           Step {step + 1} of {total}
         </Text>
@@ -109,17 +128,22 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
           testID="cook-toggle-ingredients"
         />
       </View>
-      <View style={{ paddingHorizontal: SPACE.gutter, paddingTop: SPACE.xs }}>
-        <TimerBar timers={timers} now={now} onDismiss={dismiss} />
+      <View style={{ paddingHorizontal: SPACE.gutter, paddingTop: SPACE.xs, gap: SPACE.xs }}>
+        {confirmLeave ? <LeaveConfirm onStay={() => setConfirmLeave(false)} onLeave={() => router.back()} /> : null}
+        <TimerBar timers={timers} onDismiss={dismiss} />
       </View>
       {showIngredients ? (
         <ScrollView contentContainerStyle={{ padding: SPACE.gutter, gap: SPACE.sm }}>
           <Text variant="title">For {servings}</Text>
-          {allLines(recipe).map((line, i) => (
-            <Text key={i} variant="body">
-              {formatLine(scaleLine(line, servings / recipe.servings), units)}
-            </Text>
-          ))}
+          <IngredientGroups
+            groups={recipe.ingredientGroups}
+            gap={SPACE.sm}
+            renderLine={(line, key) => (
+              <Text key={key} variant="body" testID={`cook-ingredient-${key}`}>
+                {capitaliseLine(formatLine(scaleLine(line, servings / recipe.servings), units))}
+              </Text>
+            )}
+          />
         </ScrollView>
       ) : (
         // Tapping anywhere moves on for floury hands; VoiceOver uses the Next button instead, so the
@@ -141,7 +165,7 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
                         style={{ fontSize: 30, lineHeight: 42, textDecorationLine: 'underline' }}
                         accessibilityRole="button"
                         accessibilityLabel={`Start a ${seg.label} timer`}
-                        onPress={() => void start(seg.label, step, seg.seconds)}
+                        onPress={() => void start(seg.label, step, seg.seconds, text)}
                       >
                         {seg.label}
                       </Text>
@@ -168,11 +192,7 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
           )}
         </View>
       </View>
-      <UsedUpSheet visible={askUsedUp} ids={used} nameOf={(i) => capitalise(ingredientName(i))} onFinish={finish} />
+      <UsedUpSheet visible={askUsedUp} ids={used} nameOf={(i) => capitaliseLine(ingredientName(i))} onFinish={finish} />
     </View>
   );
-}
-
-function capitalise(s: string): string {
-  return s.charAt(0).toUpperCase() + s.slice(1);
 }
