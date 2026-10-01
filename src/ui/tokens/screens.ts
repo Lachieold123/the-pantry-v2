@@ -105,6 +105,9 @@ export const WELCOME_SCRIMS = {
 export const HOME = {
   /** Space under the chip row, and under the dots before the grid's heading. */
   afterFilters: 14,
+  /** The "What I have" side of the switch is this much wider than "Everything" (D-034). */
+  pantryShare: 1.7,
+  countPill: 22,
   afterCarousel: 22,
   cardBodyX: 22,
   cardBodyBottom: 22,

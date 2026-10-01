@@ -16,9 +16,15 @@ import { FIXED } from '@/ui/tokens/colour';
 import { HOME } from '@/ui/tokens/screens';
 import { PRESSED, RADIUS, SPACE } from '@/ui/tokens/type';
 
-type Props = { heroes: readonly Hero[]; servingsFor: (hero: Hero) => number; onOpen: (id: string) => void };
+type Props = {
+  heroes: readonly Hero[];
+  servingsFor: (hero: Hero) => number;
+  /** What a "nearly" dish still needs, for its label. */
+  needFor?: ((id: string) => string | undefined) | undefined;
+  onOpen: (id: string) => void;
+};
 
-export function HeroCarousel({ heroes, servingsFor, onOpen }: Props) {
+export function HeroCarousel({ heroes, servingsFor, needFor, onOpen }: Props) {
   const styles = useStyles();
   // Measured, not the window width: the page may be narrower than the window (web, tablets).
   const [width, setWidth] = useState(0);
@@ -42,7 +48,7 @@ export function HeroCarousel({ heroes, servingsFor, onOpen }: Props) {
         >
           {heroes.map((hero) => (
             <View key={hero.recipe.id} style={{ width: pageWidth, paddingHorizontal: SPACE.gutter }}>
-              <HeroCard hero={hero} servings={servingsFor(hero)} onPress={() => onOpen(hero.recipe.id)} />
+              <HeroCard hero={hero} servings={servingsFor(hero)} need={needFor?.(hero.recipe.id)} onPress={() => onOpen(hero.recipe.id)} />
             </View>
           ))}
         </ScrollView>
@@ -58,7 +64,7 @@ export function HeroCarousel({ heroes, servingsFor, onOpen }: Props) {
   );
 }
 
-function HeroCard({ hero, servings, onPress }: { hero: Hero; servings: number; onPress: () => void }) {
+function HeroCard({ hero, servings, need, onPress }: { hero: Hero; servings: number; need: string | undefined; onPress: () => void }) {
   const styles = useStyles();
   const { recipe } = hero;
   const minutes = totalMinutes(recipe);
@@ -69,7 +75,7 @@ function HeroCard({ hero, servings, onPress }: { hero: Hero; servings: number; o
   ]
     .filter(Boolean)
     .join(' · ');
-  const kicker = heroKicker(hero, DIFFICULTY_LABELS[recipe.difficulty]);
+  const kicker = heroKicker(hero, DIFFICULTY_LABELS[recipe.difficulty], need);
   return (
     <Pressable
       onPress={onPress}

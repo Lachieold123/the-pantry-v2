@@ -1,8 +1,8 @@
-// The home tab, in v1's layout (FeedScreen.tsx, spec §7 Feed): a search bar
-// that opens Browse (D-033), a row of filter chips, five big cards to swipe through, then "What's cooking?" as a
-// two-column grid. Until posts arrive with social (P9) the cards are recipes,
-// each labelled with why it's there (domain/suggestions/home.ts). Tonight's
-// planned dinner leads, so Tuesday 6pm still opens on what you're cooking.
+// The home tab, in v1's layout (FeedScreen.tsx, spec §7 Feed). At the top, the
+// "What I have / Everything" switch with search beside it (D-034), then Meal,
+// Time, Cuisine and Difficulty; then five big cards to swipe through and a
+// two-column grid. In "What I have" the grid is followed by "Nearly there".
+// Each card says why it's there (domain/suggestions/home.ts).
 import { useRouter } from 'expo-router';
 import { useState } from 'react';
 import { View } from 'react-native';
@@ -10,27 +10,28 @@ import { View } from 'react-native';
 import { CUISINE_LABELS, DIFFICULTY_LABELS, MEAL_TYPE_LABELS, TIME_FILTER_LABELS } from '@/domain/recipes/labels';
 import type { TimeFilter } from '@/domain/recipes/search';
 import { CUISINES, DIFFICULTIES } from '@/domain/recipes/types';
-import { hasHomeFilters, homeFeed, NO_HOME_FILTERS, type HomeFilters } from '@/domain/suggestions/home';
+import { needLine } from '@/domain/cupboard/cookable';
+import { defaultHomeMode, hasHomeFilters, homeFeed, NO_HOME_FILTERS, type HomeFilters, type HomeMode } from '@/domain/suggestions/home';
 import { toISODate, tonightsDinner } from '@/domain/plan/week';
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
-import { useCookableNow } from '@/store/cookable';
+import { ingredientName, useCookableNow } from '@/store/cookable';
 import { useWelcomeBack } from '@/store/oldAppImport';
 import { usePlan } from '@/store/plan';
 import { useAllRecipes, useRecipeLookup } from '@/store/recipeBook';
 import { useBookmarks } from '@/store/saved';
 import { useForYou } from '@/store/suggestions';
 import { DropdownChips, type Dropdown } from '@/ui/patterns/DropdownChips';
-import { EmptyState } from '@/ui/patterns/EmptyState';
 import { RecipeGrid } from '@/ui/patterns/RecipeGrid';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { Button } from '@/ui/primitives/Button';
 import { IconButton } from '@/ui/primitives/IconButton';
 import { Screen } from '@/ui/primitives/Screen';
-import { SearchButton } from '@/ui/primitives/SearchField';
 import { Text } from '@/ui/primitives/Text';
 import { HOME } from '@/ui/tokens/screens';
 import { SPACE } from '@/ui/tokens/type';
 import { HeroCarousel } from './HeroCarousel';
+import { PantrySwitch } from './PantrySwitch';
+import { HomeEmpty } from './HomeEmpty';
 import { PlatesRail } from './PlatesRail';
 
 const MEALS = (['breakfast', 'lunch', 'dinner', 'snack'] as const).map((m) => ({ value: m, label: MEAL_TYPE_LABELS[m] }));
@@ -51,13 +52,20 @@ export function FeedScreen() {
   const getRecipe = useRecipeLookup();
   const bookmarks = useBookmarks();
   const tonight = tonightsDinner(entries, toISODate(new Date()));
-  const { heroes, grid } = homeFeed({
+  // Starts on "What I have" whenever the cupboard can make something; a tap on the switch wins after that.
+  const [chosenMode, setMode] = useState<HomeMode | undefined>();
+  const mode = chosenMode ?? defaultHomeMode(cook.ready.length);
+  const needs = new Map(cook.nearly.map((m) => [m.recipe.id, needLine(m.result, ingredientName)]));
+  const { heroes, grid, nearly, readyCount } = homeFeed({
+    mode,
     tonight: tonight ? getRecipe(tonight.recipeId) : undefined,
-    cookableNow: cook.ready.map((m) => m.recipe),
+    ready: cook.ready.map((m) => m.recipe),
+    nearly: cook.nearly.map((m) => m.recipe),
     forYou,
     filters,
     gridCount: HOME.gridCount,
   });
+  const pantry = mode === 'pantry';
   const open = (id: string) => router.push({ pathname: '/recipe/[id]', params: { id } });
 
   const dropdowns: Dropdown[] = [
@@ -92,10 +100,13 @@ export function FeedScreen() {
 
         {/* The same top space TitleBlock gives the other tabs. */}
         <View style={{ marginTop: SPACE.xs, marginBottom: SPACE.sm }}>
-          <SearchButton
-            placeholder="Search recipes, ingredients…"
-            onPress={() => router.push({ pathname: '/browse', params: { search: '1' } })}
-            testID="home-search"
+          <PantrySwitch
+            mode={mode}
+            onMode={setMode}
+            ready={readyCount}
+            stocked={cook.have.size}
+            onCupboard={() => router.navigate('/cupboard')}
+            onSearch={() => router.push({ pathname: '/browse', params: { search: '1' } })}
           />
         </View>
         <View style={{ marginBottom: HOME.afterFilters }}>
@@ -103,36 +114,42 @@ export function FeedScreen() {
         </View>
 
         {heroes.length === 0 ? (
-          hasHomeFilters(filters) ? (
-            <EmptyState
-              title="Nothing here yet"
-              body="No recipes match all of those. Try a different filter."
-              action={{ label: 'Clear filters', onPress: () => setFilters(NO_HOME_FILTERS) }}
-              testID="home-no-match"
-            />
-          ) : (
-            <EmptyState
-              title="Nothing to suggest yet"
-              body="Your diet and avoid list rule out every recipe. Loosen them in Settings, or browse everything."
-              action={{ label: 'Browse recipes', onPress: () => router.push('/browse') }}
-              testID="feed-empty"
-            />
-          )
+          <HomeEmpty
+            pantry={pantry}
+            stocked={cook.have.size}
+            filtered={hasHomeFilters(filters)}
+            onClear={() => setFilters(NO_HOME_FILTERS)}
+            onCupboard={() => router.navigate('/cupboard')}
+            onEverything={() => setMode('all')}
+            onBrowse={() => router.push('/browse')}
+          />
         ) : (
-          <View style={{ marginBottom: HOME.afterCarousel }}>
+          <View style={{ marginBottom: HOME.afterCarousel, gap: SPACE.sm }}>
+            {pantry && heroes[0]?.reason === 'nearly' ? (
+              <Text variant="meta" testID="home-nearly-note">
+                Nothing’s fully ready yet. These are one or two things short.
+              </Text>
+            ) : null}
             <HeroCarousel
+              // A new set of cards starts again at the first one, with its dot.
+              key={heroes.map((h) => h.recipe.id).join()}
               heroes={heroes}
               servingsFor={(h) => (h.reason === 'planned' && tonight ? tonight.servings : h.recipe.servings)}
+              needFor={(id) => needs.get(id)}
               onOpen={open}
             />
           </View>
         )}
 
-        <PlatesRail />
+        {pantry ? null : <PlatesRail />}
 
         {grid.length ? (
-          <View>
-            <SectionHeader kicker="More for you" tone="accent" title="What's cooking?" />
+          <View style={{ marginBottom: HOME.afterCarousel }}>
+            <SectionHeader
+              kicker={pantry ? `Ready now · ${readyCount}` : 'More for you'}
+              tone="accent"
+              title={pantry ? 'More you can cook' : "What's cooking?"}
+            />
             <RecipeGrid
               recipes={grid}
               imageFor={(id) => RECIPE_IMAGES[id]}
@@ -140,10 +157,25 @@ export function FeedScreen() {
               isSaved={bookmarks.isSaved}
               onToggleSave={bookmarks.toggle}
             />
-            <View style={{ marginTop: SPACE.lg }}>
-              <Button label="Browse all recipes" kind="soft" block onPress={() => router.push('/browse')} testID="home-browse-all" />
-            </View>
           </View>
+        ) : null}
+
+        {nearly.length ? (
+          <View style={{ marginBottom: HOME.afterCarousel }} testID="home-nearly">
+            <SectionHeader kicker="One or two things short" tone="accent" title="Nearly there" />
+            <RecipeGrid
+              recipes={nearly}
+              imageFor={(id) => RECIPE_IMAGES[id]}
+              onOpen={open}
+              noteFor={(r) => needs.get(r.id)}
+              isSaved={bookmarks.isSaved}
+              onToggleSave={bookmarks.toggle}
+            />
+          </View>
+        ) : null}
+
+        {heroes.length ? (
+          <Button label="Browse all recipes" kind="soft" block onPress={() => router.push('/browse')} testID="home-browse-all" />
         ) : null}
       </View>
     </Screen>

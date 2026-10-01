@@ -1,15 +1,26 @@
-# Home: v1's layout. Filter chips, five cards to swipe, the grid; a filter
-# narrows both and "Clear filters" brings them back; tonight's planned dinner leads.
+# Home: the "What I have / Everything" switch, filter chips, five cards to swipe,
+# the grid; a filter narrows both and "Clear filters" brings them back; tonight's
+# planned dinner leads; with something in the cupboard, "What I have" shows it.
 appId: host.exp.Exponent
 ---
 - launchApp:
     clearState: true
 - openLink: ${METRO_URL}
 - runFlow: subflows/_setup_skip_welcome.yaml
+# A new cupboard is empty, so Home opens on Everything.
 - assertVisible:
     id: "home-heroes"
 - assertVisible: "What's cooking\\?"
 - takeScreenshot: home
+
+# "What I have" with an empty cupboard says so and points at the Cupboard.
+- tapOn:
+    id: "home-mode-pantry"
+- assertVisible:
+    id: "home-pantry-empty"
+- takeScreenshot: home-pantry-empty
+- tapOn:
+    id: "home-mode-all"
 
 # Swipe through the cards
 - swipe:
@@ -79,3 +90,22 @@ appId: host.exp.Exponent
     id: "home-hero-carbonara"
 - assertVisible: ".*Tonight · On the plan.*"
 - takeScreenshot: home-tonight-planned
+
+# Stock the cupboard a little, then "What I have" shows only what it can make.
+- tapOn:
+    id: "tab-cupboard"
+- tapOn:
+    id: "cupboard-add-list"
+- tapOn:
+    id: "add-list-input"
+- inputText: "eggs, butter, milk, plain flour, sugar, bread, cheddar, ham, tomato, onion, garlic, rice, chicken thigh, soy sauce"
+- tapOn:
+    id: "add-list-read"
+- tapOn:
+    id: "add-list-commit"
+- tapOn:
+    id: "tab-index"
+- tapOn:
+    id: "home-mode-pantry"
+- assertVisible: "From .* things in your cupboard · Change"
+- takeScreenshot: home-what-i-have

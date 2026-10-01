@@ -258,3 +258,23 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
     3. Step 3: what you can cook.
     4. Then "Unlock more" and "Stock up". When the cupboard is empty, the stock-up grid sits right under the add tools.
   - The scan camera now works, but scanning stays "Coming soon" until the reader is connected (K-14).
+
+## D-034 · "What I have" is the first thing on Home
+
+- **Date:** 2 October 2026 · **Decided by:** Lachlan asked for it ("the central purpose … recipes you can cook using only the items you have on hand", "extremely clean and concise", "at the top of the home page"). Claude chose the design below.
+- **Research:**
+  - SuperCook splits results into "Recipes you can make" and "missing 1–2 ingredients". Reviewers call that its best decision, because it tells you at a glance whether you can cook now or need one shop.
+  - Most pantry apps hide the match behind an input step, or a filter among many. Nothing on their first screen says "here's what you can cook now".
+- **Options considered:**
+  1. A pantry chip as the first of the filter chips. It's compact, but it reads as one filter among equals, which undersells the point of the app.
+  2. A big "You can cook 12 dishes" card above the feed. It's clear, but it adds a block above the content and duplicates the cards.
+  3. **Chosen:** a two-way switch at the very top, **What I have · 12 | Everything**, with search as an icon beside it. Meal, Time, Cuisine and Difficulty sit in one row underneath.
+- **Decision:**
+  - The pantry side comes first and is wider. It's amber, and it shows the live count of dishes ready now, so the count follows the other filters.
+  - Home opens on it whenever the cupboard can make something. Otherwise it opens on Everything.
+  - A quiet line under the switch says "From 12 things in your cupboard · Change", and opens the Cupboard.
+  - In "What I have", the cards and grid are only dishes ready now, labelled "Ready now · Nothing to buy". Then comes a **Nearly there** shelf of dishes one or two things short, each saying what it needs.
+  - If nothing is ready, the closest dishes take the cards, clearly labelled with what they need.
+  - Tonight's planned dinner leads only when the cupboard can make it.
+  - Everything works from the same engine as the Cupboard tab (`store/cookable`). The diet and avoid list always apply.
+  - "Your plates" shows in Everything only, so "What I have" stays about what you can cook now.
