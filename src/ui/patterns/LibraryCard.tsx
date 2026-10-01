@@ -5,7 +5,7 @@
 import { Image } from 'expo-image';
 import { Pressable, View } from 'react-native';
 
-import { CUISINE_LABELS, formatMinutes } from '@/domain/recipes/labels';
+import { CUISINE_LABELS, DIFFICULTY_LABELS, formatMinutes } from '@/domain/recipes/labels';
 import { totalMinutes, type Recipe } from '@/domain/recipes/types';
 import { Icon } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
@@ -15,8 +15,6 @@ import { cuisineEyebrow } from '@/ui/tokens/cuisine';
 import { FIXED } from '@/ui/tokens/colour';
 import { LIBRARY, libraryColours } from '@/ui/tokens/library';
 import { PRESSED, RADIUS, SHADOW, SPACE, TAP_TARGET } from '@/ui/tokens/type';
-
-const DIFFICULTY = { easy: 'Easy', medium: 'Medium', hard: 'Hard' } as const;
 
 type CardProps = {
   recipe: Recipe;
@@ -31,7 +29,7 @@ export function LibraryCard({ recipe, image, onPress, onUnsave }: CardProps) {
   const c = libraryColours(useTheme().name);
   const cuisine = CUISINE_LABELS[recipe.cuisine];
   const time = formatMinutes(totalMinutes(recipe));
-  const difficulty = DIFFICULTY[recipe.difficulty];
+  const difficulty = DIFFICULTY_LABELS[recipe.difficulty];
   const id = `recipe-card-${recipe.id}`;
   return (
     <Pressable

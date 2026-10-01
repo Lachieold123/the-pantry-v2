@@ -1,7 +1,8 @@
 // How the app names things to the cook, in Australian English.
 import type { AisleId } from '../ingredients/database';
 import type { AvoidOption, DietPreference } from './diets';
-import type { CuisineId, DietTag, MealType, Recipe } from './types';
+import type { TimeFilter } from './search';
+import type { CuisineId, DietTag, Difficulty, MealType, Recipe } from './types';
 
 export const CUISINE_LABELS: Readonly<Record<CuisineId, string>> = {
   italian: 'Italian',
@@ -36,6 +37,16 @@ export const MEAL_TYPE_LABELS: Readonly<Record<MealType, string>> = {
   lunch: 'Lunch',
   dinner: 'Dinner',
   snack: 'Snack',
+};
+
+export const DIFFICULTY_LABELS: Readonly<Record<Difficulty, string>> = { easy: 'Easy', medium: 'Medium', hard: 'Hard' };
+
+export const TIME_FILTER_LABELS: Readonly<Record<TimeFilter, string>> = {
+  'under-15': '≤ 15 min',
+  'under-30': '≤ 30 min',
+  'under-45': '≤ 45 min',
+  'under-60': '≤ 1 hr',
+  'over-60': 'Over 1 hr',
 };
 
 export const DIET_LABELS: Readonly<Record<DietTag, string>> = {

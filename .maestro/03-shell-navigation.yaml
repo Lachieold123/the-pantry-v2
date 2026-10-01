@@ -1,4 +1,4 @@
-# The shell: tab bar, the side menu to every destination and back, "+" and the avatar.
+# The shell: the five tabs, the side menu to every destination and back, adding a recipe and the avatar.
 appId: host.exp.Exponent
 ---
 - launchApp:
@@ -18,6 +18,10 @@ appId: host.exp.Exponent
     id: "tab-plan"
 - assertVisible:
     id: "plan-screen"
+- tapOn:
+    id: "tab-list"
+- assertVisible:
+    id: "shopping-screen"
 - tapOn:
     id: "tab-index"
 - assertVisible:
@@ -160,15 +164,25 @@ appId: host.exp.Exponent
 - assertVisible:
     id: "feed-screen"
 
-# "+" opens the recipe editor; Cancel with nothing typed just closes it.
+# Browse's "+" opens the recipe editor; Cancel with nothing typed just closes it.
 - tapOn:
-    id: "tab-add"
+    id: "tab-browse"
+- tapOn:
+    id: "browse-add-recipe"
 - assertVisible: "New recipe"
 - takeScreenshot: editor-new
 - tapOn:
     id: "editor-cancel"
+- assertVisible: "Discover"
+# The menu has the shopping list and "Add a recipe" too.
+- tapOn:
+    id: "header-menu"
+- tapOn:
+    id: "menu-list"
 - assertVisible:
-    id: "feed-screen"
+    id: "shopping-screen"
+- tapOn:
+    id: "tab-index"
 
 # The avatar opens Settings.
 - tapOn:

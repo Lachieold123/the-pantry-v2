@@ -1,17 +1,14 @@
 // The spinner's supporting pieces (spec §7): the header with the deck
 // counter, the setting chips and their pickers, "Why this", and the sheet
 // that explains how it works.
-import { useState } from 'react';
-import { Pressable, ScrollView, View } from 'react-native';
+import { View } from 'react-native';
 
-import { MEAL_TYPE_LABELS } from '@/domain/recipes/labels';
+import { MEAL_TYPE_LABELS, TIME_FILTER_LABELS } from '@/domain/recipes/labels';
 import type { TimeFilter } from '@/domain/recipes/search';
-import type { MealType } from '@/domain/recipes/types';
 import type { Reason, SpinSettings } from '@/domain/suggestions/spinner';
+import { DropdownChips, type Dropdown } from '@/ui/patterns/DropdownChips';
 import { ModalSheet } from '@/ui/patterns/ModalSheet';
 import { Button } from '@/ui/primitives/Button';
-import { Chip } from '@/ui/primitives/Chip';
-import { Icon } from '@/ui/primitives/Icon';
 import { IconButton } from '@/ui/primitives/IconButton';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
@@ -42,87 +39,22 @@ export function SpinnerHeader({ at, of, onBack, onInfo }: { at: number; of: numb
   );
 }
 
-type Option<T extends string> = { value: T; label: string };
-const MEALS: Option<MealType>[] = (['dinner', 'lunch', 'breakfast', 'snack'] as const).map((m) => ({
-  value: m,
-  label: MEAL_TYPE_LABELS[m],
-}));
-const TIMES: Option<TimeFilter>[] = [
-  { value: 'under-15', label: '≤ 15 min' },
-  { value: 'under-30', label: '≤ 30 min' },
-  { value: 'under-45', label: '≤ 45 min' },
-  { value: 'under-60', label: '≤ 1 hr' },
-  { value: 'over-60', label: 'Over 1 hr' },
-];
-const PANTRY: Option<'cupboard'>[] = [{ value: 'cupboard', label: 'From cupboard' }];
-type Picker = 'meal' | 'time' | 'pantry';
+const MEALS = (['dinner', 'lunch', 'breakfast', 'snack'] as const).map((m) => ({ value: m, label: MEAL_TYPE_LABELS[m] }));
+const TIMES = (Object.keys(TIME_FILTER_LABELS) as TimeFilter[]).map((t) => ({ value: t, label: TIME_FILTER_LABELS[t] }));
+const PANTRY = [{ value: 'cupboard', label: 'From cupboard' }] as const;
 
 export function SettingChips({ settings, onChange }: { settings: SpinSettings; onChange: (next: SpinSettings) => void }) {
-  const [open, setOpen] = useState<Picker | undefined>();
-  const chips: { key: Picker; name: string; value: string | undefined; options: Option<string>[] }[] = [
+  const dropdowns: Dropdown[] = [
     { key: 'meal', name: 'Meal', value: settings.meal, options: MEALS },
     { key: 'time', name: 'Time', value: settings.time, options: TIMES },
     { key: 'pantry', name: 'Pantry', value: settings.fromCupboard ? 'cupboard' : undefined, options: PANTRY },
   ];
-  const choose = (key: Picker, value: string | undefined) => {
-    setOpen(undefined);
+  const choose = (key: string, value: string | undefined) => {
     if (key === 'meal') onChange({ ...settings, meal: MEALS.find((m) => m.value === value)?.value });
     if (key === 'time') onChange({ ...settings, time: TIMES.find((t) => t.value === value)?.value });
     if (key === 'pantry') onChange({ ...settings, fromCupboard: value === 'cupboard' });
   };
-  const picking = chips.find((c) => c.key === open);
-  return (
-    <>
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        style={{ marginHorizontal: -SPACE.gutter }}
-        contentContainerStyle={{ gap: SPACE.xs, paddingHorizontal: SPACE.gutter }}
-      >
-        {chips.map((c) => (
-          <Chip
-            key={c.key}
-            kind="dropdown"
-            label={c.options.find((o) => o.value === c.value)?.label ?? c.name}
-            selected={c.value !== undefined}
-            onPress={() => setOpen(c.key)}
-            testID={`spinner-${c.key}`}
-          />
-        ))}
-      </ScrollView>
-      <ModalSheet visible={picking !== undefined} onClose={() => setOpen(undefined)} title={picking?.name ?? ''}>
-        {picking
-          ? [{ value: undefined, label: 'Any' }, ...picking.options].map((o) => (
-              <OptionRow
-                key={o.label}
-                label={o.label}
-                on={picking.value === o.value}
-                onPress={() => choose(picking.key, o.value)}
-                testID={`spinner-option-${o.value ?? 'any'}`}
-              />
-            ))
-          : null}
-      </ModalSheet>
-    </>
-  );
-}
-
-function OptionRow({ label, on, onPress, testID }: { label: string; on: boolean; onPress: () => void; testID: string }) {
-  const styles = useStyles();
-  return (
-    <Pressable
-      onPress={onPress}
-      accessibilityRole="radio"
-      accessibilityState={{ selected: on }}
-      testID={testID}
-      style={({ pressed }) => [styles.option, pressed && { opacity: 0.6 }]}
-    >
-      <Text variant="row" style={{ flex: 1 }}>
-        {label}
-      </Text>
-      {on ? <Icon name="check" size={18} /> : null}
-    </Pressable>
-  );
+  return <DropdownChips dropdowns={dropdowns} onChoose={choose} testIDPrefix="spinner" />;
 }
 
 /** Editorial key and value rows: PANTRY, TIME, FOR YOU. */
@@ -179,7 +111,6 @@ export function HowItWorks({ visible, onClose }: { visible: boolean; onClose: ()
 }
 
 const useStyles = makeStyles(({ colours }) => ({
-  option: { flexDirection: 'row', alignItems: 'center', minHeight: 48, paddingHorizontal: SPACE.xs },
   reason: { flexDirection: 'row', alignItems: 'flex-start', paddingVertical: SPACE.sm, gap: SPACE.sm },
   howRow: { alignItems: 'flex-start' },
   divided: { borderTopWidth: 1, borderTopColor: colours.border },

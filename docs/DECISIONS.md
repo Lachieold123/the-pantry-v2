@@ -217,3 +217,22 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
     - **Why this** used to say "Similar to dishes you liked", which wasn't true. Now it only says true things: what it uses from the pantry, the time, and whether it's in Cookmarks or cooked before.
     - The **"@recipe-id" handle** on the card was fake. It's dropped until recipes have real authors.
   - The Feed's "Surprise me instead" button under tonight's suggestion is removed. The spinner stays in the side menu, under "Not feeling it?" and in the empty Feed.
+
+## D-032 · Simpler shape: Plan and List are separate tabs, and Home is v1's feed
+
+- **Date:** 1 October 2026 · **Decided by:** Lachlan asked for it ("shopping list and plan should be two separate things"; "too complicated and needs simplifying"); Claude chose the layout below, and Lachlan can still reverse it.
+- **Decision:**
+  - **Five tabs:** Home · Browse · Plan · List · Cupboard, in the order a week goes (plan it, shop for it, put it away).
+    - Plan is the week only.
+    - List is the shopping list only, still worked out from the plan (D-009). Its badge counts what's left to buy this week.
+    - The Plan tab's black list card opens List on that week.
+  - **v1's centre "+" is gone.** "Add a recipe" is the "+" beside Browse's title, in the side menu, and in My recipes.
+  - **Home is v1's feed layout:** Meal, Time, Cuisine and Difficulty chips; five big cards to swipe, with dots; then "What's cooking?" in two columns.
+    - Until social arrives (P9), the cards are recipes, and each label says why it's there: "Tonight · On the plan", "From your cupboard · Ready now" or "Picked for you · Easy".
+    - Nothing says "Editor's pick" or "Trending", because neither is true yet.
+    - v2's separate Tonight, Coming up and From your cupboard sections are folded into the cards. The Plan and Cupboard tabs carry the detail.
+  - **Scanning skeleton (D-030):**
+    - The Cupboard has "Scan receipt" and "Photo of food" beside "Type a list".
+    - The flow is: choose a photo, read it, check the same review list as "Add a list", then add.
+    - It is fully built and tested, including the 3-a-month allowance.
+    - The camera (expo-image-picker, a native module) and the reader (server and API key) wait for Lachlan's approval. Until then the sheet says "Coming soon" and offers the typed list.

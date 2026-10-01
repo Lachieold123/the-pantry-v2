@@ -16,3 +16,5 @@ Things deliberately deferred. Each has a phase in which it gets fixed. Nothing h
 | K-12 | The old-app import is tested with sample data only. It needs one run on a phone that has the old TestFlight build installed (map Phase 7 "done when"). | Needs Lachlan's phone. | Before first TestFlight |
 | K-13 | An imported recipe keeps the link it came from, but the recipe page doesn't show it yet (only the editor does). | Small; wants a design for credits on your own recipes. | Phase 9 |
 
+| K-14 | Scanning (D-030, D-032) is built but not switched on. The camera needs expo-image-picker (a native module), and reading photos needs our server and a vision model's API key. Until both are in, `SCAN_CONNECTED` is false and the sheet says "Coming soon". | Both need Lachlan's approval. | When Lachlan approves the module and the server |
+| K-15 | Route sheets drew their body over the title on iOS (1 October screenshot). The fix puts the title inside the sheet's scroll view as a sticky header. That's checked on the web and in tests, but the overlap only ever showed on the phone. | It needs a look on the phone. | Next phone check |

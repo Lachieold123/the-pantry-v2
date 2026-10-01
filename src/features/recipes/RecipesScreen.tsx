@@ -58,7 +58,22 @@ export function RecipesScreen() {
 
   const header = (
     <View style={styles.header}>
-      <TitleBlock kicker="Browse" tone="accent" title="Discover" />
+      <TitleBlock
+        kicker="Browse"
+        tone="accent"
+        title="Discover"
+        action={
+          // Where the tab bar's old "+" went: your own recipe sits beside everyone else's.
+          <IconButton
+            icon="add"
+            shape="chip"
+            size={18}
+            label="Add a recipe"
+            onPress={() => router.push('/my-recipe/edit')}
+            testID="browse-add-recipe"
+          />
+        }
+      />
       <View style={styles.searchRow}>
         <SearchField value={query} onChange={setQuery} placeholder="Recipes, ingredients…" label="Search recipes" testID="browse-search" />
         <View>

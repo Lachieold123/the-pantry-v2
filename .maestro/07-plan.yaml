@@ -1,6 +1,6 @@
 # Plan: the day strip, add a meal to a slot, change who it's for, remove with
-# undo, plan a suggestion; the shopping list: summary card, tick, remove with
-# undo, add an extra, By aisle, clear all with undo, send it, both weeks.
+# undo, plan a suggestion. Then the List tab: the plan's card opens it, tick,
+# remove with undo, add an extra, By aisle, clear all with undo, send it, both weeks.
 appId: host.exp.Exponent
 ---
 - launchApp:
@@ -25,7 +25,7 @@ appId: host.exp.Exponent
 - tapOn:
     id: "segment-this"
 - tapOn:
-    id: "tab-week"
+    id: "tab-plan"
 
 # Add dinner to today (the strip opens on today) from the Add sheet.
 - tapOn:
@@ -76,7 +76,7 @@ appId: host.exp.Exponent
     id: "toast-undo"
     optional: true
 
-# The black card opens the shopping list
+# The black card opens the List tab on this week
 - scrollUntilVisible:
     element:
       id: "plan-list-card"
@@ -85,7 +85,8 @@ appId: host.exp.Exponent
 - tapOn:
     id: "plan-list-card"
 - assertVisible:
-    id: "shopping-share"
+    id: "shopping-screen"
+- assertVisible: "List, .* to buy"
 - assertVisible:
     id: "shopping-count"
 - takeScreenshot: shopping-list
@@ -150,7 +151,7 @@ appId: host.exp.Exponent
     text: "Close"
     optional: true
 - assertVisible:
-    id: "plan-screen"
+    id: "shopping-screen"
 
 # Next week's list is still empty
 - tapOn:

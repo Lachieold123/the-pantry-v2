@@ -44,12 +44,14 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
   const getRecipe = useRecipeLookup();
   const searchIndex = useMemo(() => indexForSearch(all, (c) => CUISINE_LABELS[c]), [all]);
 
+  // Saved recipes for this meal only: arancini isn't a breakfast. Search still finds anything.
   const saved = useMemo(
-    () => bookmarks.map((b) => getRecipe(b.recipeId)).filter((r): r is Recipe => r !== undefined),
-    [bookmarks, getRecipe],
+    () => bookmarks.map((b) => getRecipe(b.recipeId)).filter((r): r is Recipe => r !== undefined && r.mealTypes.includes(slot)),
+    [bookmarks, getRecipe, slot],
   );
   // Before a search, ideas that suit this cook (diet, taste, not planned or cooked lately), not the catalogue A–Z.
-  const forYou = useForYou(MAX_RESULTS * 3);
+  // The whole ranked catalogue, then filtered by meal: a top-75 cut left breakfast with one idea.
+  const forYou = useForYou(all.length);
   const results = useMemo(() => {
     const pool = query.trim() ? searchRecipes(searchIndex, query) : forYou.filter((r) => r.mealTypes.includes(slot));
     return pool.filter((r) => !hidden.includes(r.id)).slice(0, MAX_RESULTS);

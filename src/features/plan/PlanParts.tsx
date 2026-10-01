@@ -8,7 +8,7 @@ import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { CUISINE_LABELS, formatMinutes } from '@/domain/recipes/labels';
 import { totalMinutes, type Recipe } from '@/domain/recipes/types';
 import type { ISODate, Slot } from '@/domain/plan/week';
-import { capitalise, type ShoppingList } from '@/domain/shopping/derive';
+import { capitalise, countToBuy, type ShoppingList } from '@/domain/shopping/derive';
 import { useCookableNow } from '@/store/cookable';
 import { usePlan } from '@/store/plan';
 import { useForYou } from '@/store/suggestions';
@@ -122,11 +122,11 @@ function SuggestionCard({ recipe, slot, onPress }: { recipe: Recipe; slot: Slot 
 
 type SummaryProps = { list: ShoppingList; meals: number; onOpen: () => void };
 
-/** The black card under the week: how much to buy, a peek at the list, tap to open it. */
+/** The black card under the week: how much to buy, a peek at the list, tap to open it on the List tab. */
 export function ListSummaryCard({ list, meals, onOpen }: SummaryProps) {
   const styles = useStyles();
   const toBuy = list.sections.flatMap((s) => s.items.filter((i) => !i.checked));
-  const count = toBuy.length + list.extras.filter((x) => !x.checked).length;
+  const count = countToBuy(list);
   if (meals === 0 && list.extras.length === 0) return null;
   const preview = toBuy.slice(0, PREVIEW);
   const more = count - preview.length;
