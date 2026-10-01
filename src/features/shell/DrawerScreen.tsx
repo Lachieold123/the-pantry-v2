@@ -77,7 +77,7 @@ export function DrawerScreen() {
         </View>
         <ScrollView contentContainerStyle={styles.body}>
           <Section label="Discover">
-            <DrawerRow icon="feed" label="Feed" onPress={() => tab('/')} testID="menu-feed" />
+            <DrawerRow icon="feed" label="Home" onPress={() => tab('/')} testID="menu-feed" />
             <DrawerRow icon="browse" label="Browse" onPress={() => tab('/browse')} testID="menu-browse" />
             <DrawerRow icon="cupboard" label="Cupboard" onPress={() => tab('/cupboard')} testID="menu-cupboard" />
           </Section>
@@ -97,6 +97,8 @@ export function DrawerScreen() {
           <Section label="Tools">
             <DrawerRow icon="spinner" label="Spinner" onPress={() => page('/surprise')} testID="menu-spinner" />
             <DrawerRow icon="plan" label="Plan" count={counts.planned} onPress={() => tab('/plan')} testID="menu-plan" />
+            <DrawerRow icon="basket" label="Shopping list" onPress={() => tab('/list')} testID="menu-list" />
+            <DrawerRow icon="add" label="Add a recipe" onPress={() => page('/my-recipe/edit')} testID="menu-add-recipe" />
           </Section>
           <View style={styles.rule}>
             <Divider />

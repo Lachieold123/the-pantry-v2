@@ -49,9 +49,10 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
   // The field updates on every letter; the results follow when there's time.
   const deferredQuery = useDeferredValue(query);
 
+  // Saved recipes for this meal only: arancini isn't a breakfast. Search still finds anything.
   const saved = useMemo(
-    () => bookmarks.map((b) => getRecipe(b.recipeId)).filter((r): r is Recipe => r !== undefined),
-    [bookmarks, getRecipe],
+    () => bookmarks.map((b) => getRecipe(b.recipeId)).filter((r): r is Recipe => r !== undefined && r.mealTypes.includes(slot)),
+    [bookmarks, getRecipe, slot],
   );
   // Ideas follow the cook's diet and avoid list and are ranked for them, like every other suggestion.
   // A search is an explicit ask, so it shows whatever matches (bar "not for us").

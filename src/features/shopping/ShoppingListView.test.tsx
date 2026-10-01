@@ -22,7 +22,7 @@ beforeEach(() => {
 });
 
 test('removing an ingredient names it with a capital', async () => {
-  await render(<ShoppingListView week={week} weekLabel="This week" onBrowse={jest.fn()} />);
+  await render(<ShoppingListView week={week} weekLabel="This week" onPlan={jest.fn()} />);
   const [remove] = screen.getAllByTestId(/^shopping-item-.+-remove$/);
   await fireEvent.press(remove!);
   expect(mockToast).toHaveBeenLastCalledWith(
@@ -31,7 +31,7 @@ test('removing an ingredient names it with a capital', async () => {
 });
 
 test('a typed extra is capitalised on the list and in its toasts', async () => {
-  await render(<ShoppingListView week={week} weekLabel="This week" onBrowse={jest.fn()} />);
+  await render(<ShoppingListView week={week} weekLabel="This week" onPlan={jest.fn()} />);
   await fireEvent.changeText(screen.getByTestId('shopping-add-extra'), 'dishwashing liquid');
   await fireEvent(screen.getByTestId('shopping-add-extra'), 'submitEditing');
   expect(screen.getByText('Dishwashing liquid')).toBeTruthy();

@@ -1,4 +1,4 @@
-// The Shopping list tab (spec §4.13), in v1's shape: a head row with the
+// The shopping list itself (spec §4.13), in v1's shape: a head row with the
 // count, "By aisle" and "Clear all", then the list in soft cards. v2 keeps
 // what v1 lacked: ticking as you shop, amounts, extras you type in, and the
 // things left off because they're in the cupboard. Sending the list is the
@@ -13,6 +13,7 @@ import {
   addExtras,
   capitalise,
   clearList,
+  countToBuy,
   deleteExtra,
   EMPTY_EDITS,
   itemsAtoZ,
@@ -28,6 +29,7 @@ import type { ISODate } from '@/domain/plan/week';
 import { newId } from '@/lib/ids';
 import { useCupboard } from '@/store/cupboard';
 import { usePlan } from '@/store/plan';
+import { useWeekList } from '@/store/shoppingList';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { useToast } from '@/ui/patterns/Toast';
 import { Chip } from '@/ui/primitives/Chip';
@@ -35,9 +37,8 @@ import { Icon } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
 import { PLAN, SPACE } from '@/ui/tokens/type';
 import { AddItemRow, itemLabel, ListCard, Pill, ShoppingRow } from './ShoppingRows';
-import { useWeekList } from './useWeekList';
 
-export function ShoppingListView({ week, weekLabel, onBrowse }: { week: ISODate; weekLabel: string; onBrowse: () => void }) {
+export function ShoppingListView({ week, weekLabel, onPlan }: { week: ISODate; weekLabel: string; onPlan: () => void }) {
   const toast = useToast();
   const { list, meals } = useWeekList(week);
   const edits = usePlan((s) => s.listEdits[week]) ?? EMPTY_EDITS;
@@ -97,7 +98,7 @@ export function ShoppingListView({ week, weekLabel, onBrowse }: { week: ISODate;
 
   const items = list.sections.flatMap((s) => s.items);
   const total = items.length + list.extras.length;
-  const toBuy = items.filter((i) => !i.checked).length + list.extras.filter((x) => !x.checked).length;
+  const toBuy = countToBuy(list);
   const groups = byAisle
     ? list.sections.map((s) => ({ key: s.aisle, title: AISLE_LABELS[s.aisle], items: s.items }))
     : [{ key: 'all', title: undefined, items: itemsAtoZ(list) }];
@@ -115,14 +116,20 @@ export function ShoppingListView({ week, weekLabel, onBrowse }: { week: ISODate;
     />
   );
 
+  // Nothing planned yet: say how the list fills itself, but still let you jot down milk.
   if (meals === 0 && list.extras.length === 0 && list.removedCount === 0) {
     return (
-      <EmptyState
-        title="Your list is empty"
-        body={`Plan a few meals for ${weekLabel.toLowerCase()} and everything you need appears here, sorted by aisle.`}
-        action={{ label: 'Browse recipes', onPress: onBrowse }}
-        testID="shopping-empty"
-      />
+      <View style={{ gap: PLAN.aisleGap }}>
+        <EmptyState
+          title="Your list is empty"
+          body={`Plan a few meals for ${weekLabel.toLowerCase()} and everything you need appears here, sorted by aisle. Or add things yourself below.`}
+          action={{ label: 'Plan a meal', onPress: onPlan }}
+          testID="shopping-empty"
+        />
+        <ListCard>
+          <AddItemRow onAdd={addExtra} first />
+        </ListCard>
+      </View>
     );
   }
 

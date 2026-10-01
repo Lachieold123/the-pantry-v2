@@ -7,7 +7,7 @@ import { Pressable, ScrollView, View } from 'react-native';
 import { useShallow } from 'zustand/react/shallow';
 
 import type { DietPreference } from '@/domain/recipes/diets';
-import { CUISINE_LABELS, MEAL_TYPE_LABELS } from '@/domain/recipes/labels';
+import { CUISINE_LABELS, DIFFICULTY_LABELS, MEAL_TYPE_LABELS } from '@/domain/recipes/labels';
 import { fromISODate } from '@/domain/plan/week';
 import { seasonOn, type TimeFilter } from '@/domain/recipes/search';
 import { CUISINES, DIFFICULTIES, MEAL_TYPES } from '@/domain/recipes/types';
@@ -40,7 +40,6 @@ const TIMES: readonly { value: TimeFilter; label: string }[] = [
   { value: 'under-60', label: 'An hour or less' },
   { value: 'over-60', label: 'Longer cooks' },
 ];
-const DIFFICULTY_LABELS = { easy: 'Easy', medium: 'Medium', hard: 'Hard' } as const;
 
 type ChipProps = { label: string; selected: boolean; tint: keyof ColourTokens; onPress: () => void; testID: string; radio?: boolean };
 

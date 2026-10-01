@@ -19,16 +19,13 @@ appId: host.exp.Exponent
 - tapOn:
     id: "back"
 
-# Plan: this week, next week, and the shopping list
+# Plan, then the List tab, empty
 - tapOn:
     id: "tab-plan"
 - assertVisible:
-    id: "plan-empty"
-- assertVisible: "Nothing planned yet"
+    id: "plan-screen"
+- assertVisible: "0 of 21 meals"
 - takeScreenshot: empty-plan
-- tapOn:
-    id: "segment-next"
-- assertVisible: "Next week is clear"
 - tapOn:
     id: "tab-list"
 - assertVisible:
@@ -36,7 +33,8 @@ appId: host.exp.Exponent
 - takeScreenshot: empty-shopping-list
 - tapOn:
     id: "shopping-empty-action"
-- assertVisible: "Discover"
+- assertVisible:
+    id: "plan-screen"
 
 # Cupboard
 - tapOn:

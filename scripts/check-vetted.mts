@@ -6,7 +6,7 @@
 //
 // It prints how many recipes are vetted and fails when that is below VETTED_MIN
 // (1 when unset: zero vetted recipes is never shippable). Lachlan picks the real
-// number; it is deliberately not an EAS build hook yet (see KNOWN-ISSUES K-14).
+// number; it is deliberately not an EAS build hook yet (see KNOWN-ISSUES K-16).
 
 import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';

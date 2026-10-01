@@ -82,10 +82,12 @@ function RootStack() {
       <Stack.Screen name="recipe/[id]/plan" options={SHEET} />
       <Stack.Screen name="recipe/[id]/collect" options={SHEET} />
       <Stack.Screen name="recipe/[id]/cook" options={{ presentation: 'fullScreenModal', gestureEnabled: false }} />
-      <Stack.Screen name="filters" options={SHEET} />
+      {/* v1's Filters is a page with a back button, so it pushes like one rather than rising as a sheet. */}
+      <Stack.Screen name="filters" />
       <Stack.Screen name="plan/add" options={SHEET} />
       <Stack.Screen name="cupboard/add-list" options={SHEET} />
       <Stack.Screen name="cupboard/shelf" options={SHEET} />
+      <Stack.Screen name="cupboard/scan" options={SHEET} />
       <Stack.Screen name="cupboard/cookable" />
       <Stack.Screen name="surprise" />
       {/* Editing is a deliberate task: no swipe-to-dismiss, so a stray gesture can't lose a typed recipe. */}

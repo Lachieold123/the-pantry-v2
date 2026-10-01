@@ -191,6 +191,11 @@ export function deriveShoppingList(args: {
 }
 
 /** Every line in one A–Z list, for when the cook turns "By aisle" off. */
+/** How many things are still to buy: unticked list items and unticked extras. One count for the tab badge, the plan's card and the list's head. */
+export function countToBuy(list: ShoppingList): number {
+  return list.sections.reduce((n, s) => n + s.items.filter((i) => !i.checked).length, 0) + list.extras.filter((x) => !x.checked).length;
+}
+
 export function itemsAtoZ(list: ShoppingList): ShoppingItem[] {
   return list.sections.flatMap((s) => s.items).sort((a, b) => a.name.localeCompare(b.name));
 }

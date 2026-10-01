@@ -145,7 +145,6 @@ export const RADIUS = { xs: 6, sm: 10, md: 12, lg: 14, xl: 16, card: 18, sheetSm
 
 type Shadow = { shadowOpacity: number; shadowRadius: number; shadowOffset: { width: number; height: number }; elevation: number };
 export const SHADOW = {
-  fab: { shadowOpacity: 0.45, shadowRadius: 12, shadowOffset: { width: 0, height: 8 }, elevation: 8 },
   toast: { shadowOpacity: 0.35, shadowRadius: 14, shadowOffset: { width: 0, height: 6 }, elevation: 8 },
   drawer: { shadowOpacity: 0.18, shadowRadius: 24, shadowOffset: { width: 6, height: 0 }, elevation: 8 },
   sheet: { shadowOpacity: 0.25, shadowRadius: 24, shadowOffset: { width: 0, height: -8 }, elevation: 12 },
@@ -176,8 +175,6 @@ export const ASPECT = { card: 4 / 3, hero: 16 / 9, square: 1, portrait: 4 / 5, s
 export const CHROME = {
   headerRow: 40,
   avatar: 36,
-  fab: 56,
-  fabRing: 5,
   /** The search field's height, which the Browse filter button matches (spec §4.10). */
   field: 46,
   tabIcon: 24,
@@ -196,7 +193,6 @@ export const CHROME = {
   /** A small Segmented option's drawn height; hit slop grows it to 44pt inside the track's padding. */
   segmentSmall: 36,
   tabHide: 180,
-  fabBottom: 6,
   drawerMark: 36,
   drawerBrandY: 18,
   drawerSection: 14,
@@ -256,7 +252,6 @@ export const PLAN = {
   slotPad: 10,
   /** Space under each part of the page, top to bottom. */
   afterProgress: 14,
-  afterTabs: 20,
   afterStrip: 22,
   afterDayName: 10,
   afterSlots: 28,

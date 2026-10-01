@@ -7,16 +7,14 @@ import { View } from 'react-native';
 
 import { INGREDIENTS } from '@/data/catalogue/catalogue';
 import { readPantryList, type ListGuess } from '@/domain/cupboard/addList';
-import { ingredientName } from '@/store/cookable';
+import { startTicked } from '@/domain/cupboard/scan';
 import { useCupboard } from '@/store/cupboard';
 import { useToast } from '@/ui/patterns/Toast';
 import { Button } from '@/ui/primitives/Button';
-import { Checkbox } from '@/ui/primitives/Checkbox';
 import { Sheet } from '@/ui/primitives/Sheet';
-import { Text } from '@/ui/primitives/Text';
 import { TextField } from '@/ui/primitives/TextField';
 import { SPACE } from '@/ui/tokens/type';
-import { capitalise } from './CupboardParts';
+import { ListReview, toggled } from './ListReview';
 import { goBack } from '@/lib/navigation';
 
 export function AddListSheet() {
@@ -33,7 +31,7 @@ export function AddListSheet() {
   const read = () => {
     const got = readPantryList(text, INGREDIENTS);
     setGuesses(got);
-    setTicked(new Set(got.flatMap((g) => (g.id && !have.has(g.id) ? [g.id] : []))));
+    setTicked(startTicked(got, have));
   };
   const commit = () => {
     const before = items;
@@ -60,33 +58,13 @@ export function AddListSheet() {
         </View>
       ) : (
         <View style={{ gap: SPACE.md }}>
-          <Text variant="meta">Untick anything we got wrong.</Text>
-          {guesses.map((g, i) =>
-            g.id ? (
-              <Checkbox
-                key={`${g.id}-${i}`}
-                label={capitalise(ingredientName(g.id))}
-                detail={have.has(g.id) ? 'Already in your cupboard' : `from “${g.text}”`}
-                checked={ticked.has(g.id)}
-                strikeWhenChecked={false}
-                onToggle={() => {
-                  const id = g.id;
-                  if (!id || have.has(id)) return;
-                  setTicked((t) => {
-                    const next = new Set(t);
-                    if (next.has(id)) next.delete(id);
-                    else next.add(id);
-                    return next;
-                  });
-                }}
-                testID={`add-list-item-${g.id}`}
-              />
-            ) : (
-              <Text key={`unknown-${i}`} variant="bodySmall" colour="inkMuted">
-                {`“${g.text}”: not one we know yet, so it’s skipped. Try a simpler word, like “rice”.`}
-              </Text>
-            ),
-          )}
+          <ListReview
+            guesses={guesses}
+            have={have}
+            ticked={ticked}
+            onToggle={(id) => setTicked((t) => toggled(t, id))}
+            testIDPrefix="add-list"
+          />
           <View style={{ flexDirection: 'row', gap: SPACE.sm }}>
             <View style={{ flex: 1 }}>
               <Button label="Edit list" kind="soft" block onPress={() => setGuesses(undefined)} testID="add-list-edit" />

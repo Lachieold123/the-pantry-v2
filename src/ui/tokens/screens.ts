@@ -1,5 +1,5 @@
-// Measurements for three screens rebuilt to v1's look: Settings, Filters and
-// Welcome (spec §4.21, §7 Settings and Filters). Kept here, not in the screens,
+// Measurements for screens rebuilt to v1's look: Settings, Filters, Welcome
+// and Home (spec §4.21, §7). Kept here, not in the screens,
 // so the redesign can change them without touching feature code.
 import { FIXED, type ColourTokens } from './colour';
 
@@ -99,4 +99,20 @@ export const WELCOME = {
 export const WELCOME_SCRIMS = {
   quiz: { colors: [FIXED.videoScrim50, FIXED.videoScrim70, FIXED.videoScrim88], locations: [0, 0.45, 1] },
   reveal: { colors: [FIXED.videoScrim55, FIXED.videoScrim72, FIXED.videoScrim90], locations: [0, 0.45, 1] },
+} as const;
+
+/** Home: v1's feed (FeedScreen.tsx): filter chips, a swipeable stack of big cards with dots, then a grid. */
+export const HOME = {
+  /** Space under the chip row, and under the dots before the grid's heading. */
+  afterFilters: 14,
+  afterCarousel: 22,
+  cardBodyX: 22,
+  cardBodyBottom: 22,
+  kickerGap: 6,
+  titleGap: 10,
+  dotsTop: 12,
+  dot: 6,
+  dotActive: 18,
+  dotGap: 6,
+  gridCount: 24,
 } as const;

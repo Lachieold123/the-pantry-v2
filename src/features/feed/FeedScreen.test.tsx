@@ -1,6 +1,6 @@
-// The Feed's "Tonight": it follows the real date (audit F16), ignores plan
-// entries whose recipe is gone (F17), knows when tonight's dinner is cooked
-// (F22), and labels the rolling days ahead honestly (F143).
+// Home's lead card, tonight's planned dinner: it follows the real date (audit
+// F16), ignores plan entries whose recipe is gone (F17), and steps aside once
+// tonight's dinner is cooked (F22).
 import { act, fireEvent, render, screen } from '@testing-library/react-native';
 
 import { toISODate } from '@/domain/plan/week';
@@ -20,7 +20,6 @@ jest.setTimeout(30_000);
 
 const RECIPE = 'chicken-burrito-bowl';
 const today = () => toISODate(new Date());
-const tomorrow = () => toISODate(new Date(Date.now() + 24 * 60 * 60 * 1000));
 const dinner = (id: string, recipeId: string, day: string) => ({ id, recipeId, day, slot: 'dinner' as const, servings: 4 });
 
 beforeEach(() => {
@@ -29,34 +28,31 @@ beforeEach(() => {
 });
 afterEach(() => jest.useRealTimers());
 
+// The carousel draws its cards once it knows its width, which a test has to tell it.
+const showHome = async () => {
+  await render(<FeedScreen />);
+  await fireEvent(screen.getByTestId('home-heroes'), 'layout', { nativeEvent: { layout: { x: 0, y: 0, width: 390, height: 500 } } });
+};
+const tonightCard = () => screen.queryByLabelText(/^Chicken Burrito Bowl\. Tonight · On the plan\./i);
+
 test('a dinner whose recipe is gone doesn’t hide tonight’s real one (F17)', async () => {
   usePlan.setState({ entries: [dinner('gone', 'mine-deleted-recipe', today()), dinner('real', RECIPE, today())] });
-  await render(<FeedScreen />);
-  expect(screen.getByText('On for dinner')).toBeTruthy();
-  expect(screen.getByTestId('feed-cook')).toBeTruthy();
+  await showHome();
+  expect(tonightCard()).toBeTruthy();
 });
 
-test('once tonight’s dinner is cooked, the Feed says so and stops offering Start cooking (F22)', async () => {
+test('once tonight’s dinner is cooked, it stops leading as "On the plan" (F22)', async () => {
   usePlan.setState({ entries: [dinner('real', RECIPE, today())] });
   useCookLog.setState({ log: [{ id: 'c1', recipeId: RECIPE, cookedAt: Date.now() }] });
-  await render(<FeedScreen />);
-  expect(screen.getByText('Cooked tonight')).toBeTruthy();
-  expect(screen.queryByTestId('feed-cook')).toBeNull();
+  await showHome();
+  expect(tonightCard()).toBeNull();
 });
 
-test('the days ahead are labelled as a rolling window, not "This week" (F143)', async () => {
-  usePlan.setState({ entries: [dinner('soon', RECIPE, tomorrow())] });
-  await render(<FeedScreen />);
-  expect(screen.getByText('Next few days')).toBeTruthy();
-  expect(screen.queryByText('This week')).toBeNull();
-});
-
-test('left open past midnight, "Have this tonight" plans for the new day (F16)', async () => {
+test('left open past midnight, the next day’s planned dinner takes the lead (F16)', async () => {
   jest.useFakeTimers({ now: new Date(2026, 8, 29, 23, 58) });
-  await render(<FeedScreen />);
-  expect(screen.getByText(/Tonight · Tuesday 29 September/)).toBeTruthy();
+  usePlan.setState({ entries: [dinner('wed', RECIPE, '2026-09-30')] });
+  await showHome();
+  expect(tonightCard()).toBeNull();
   await act(async () => jest.advanceTimersByTime(5 * 60 * 1000));
-  expect(screen.getByText(/Tonight · Wednesday 30 September/)).toBeTruthy();
-  await fireEvent.press(screen.getByTestId('feed-have-tonight'));
-  expect(usePlan.getState().entries.map((e) => e.day)).toEqual(['2026-09-30']);
+  expect(tonightCard()).toBeTruthy();
 });

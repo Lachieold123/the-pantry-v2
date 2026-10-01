@@ -1,219 +1,149 @@
-// The Feed tab, the app's home. It carries v2's "Tonight" (the North Star's
-// Tuesday 6pm moment), what's coming up, and recipes picked for you, all real
-// (D-027): there are no posts to show until cooks have accounts, and a feed of
-// invented posts would be fake.
+// The home tab, in v1's layout (FeedScreen.tsx, spec §7 Feed): a row of
+// filter chips, five big cards to swipe through, then "What's cooking?" as a
+// two-column grid. Until posts arrive with social (P9) the cards are recipes,
+// each labelled with why it's there (domain/suggestions/home.ts). Tonight's
+// planned dinner leads, so Tuesday 6pm still opens on what you're cooking.
 import { useRouter } from 'expo-router';
-import { useMemo } from 'react';
-import { ScrollView, View } from 'react-native';
+import { useMemo, useState } from 'react';
+import { View } from 'react-native';
 
-import { RECIPE_IMAGES } from '@/data/catalogue/images';
+import { CUISINE_LABELS, DIFFICULTY_LABELS, MEAL_TYPE_LABELS, TIME_FILTER_LABELS } from '@/domain/recipes/labels';
+import type { TimeFilter } from '@/domain/recipes/search';
+import { CUISINES, DIFFICULTIES } from '@/domain/recipes/types';
+import { hasHomeFilters, homeFeed, NO_HOME_FILTERS, type HomeFilters } from '@/domain/suggestions/home';
 import { cookedOn } from '@/domain/cook/cook';
-import { needLine } from '@/domain/cupboard/cookable';
-import { addDays, entriesFor, fromISODate, toISODate, tonightsDinner } from '@/domain/plan/week';
-import { longDate } from '@/lib/dates';
+import { tonightsDinner } from '@/domain/plan/week';
+import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { useToday } from '@/lib/useToday';
 import { useCookLog } from '@/store/cookLog';
-import { ingredientName, useCookableNow } from '@/store/cookable';
+import { useCookableNow } from '@/store/cookable';
 import { useWelcomeBack } from '@/store/oldAppImport';
 import { usePlan } from '@/store/plan';
-import { useRecipeLookup } from '@/store/recipeBook';
-import { useBookmarks } from '@/ui/patterns/useBookmarks';
+import { useAllRecipes, useRecipeLookup } from '@/store/recipeBook';
 import { useForYou } from '@/store/suggestions';
+import { DropdownChips, type Dropdown } from '@/ui/patterns/DropdownChips';
 import { EmptyState } from '@/ui/patterns/EmptyState';
-import { MatchCard } from '@/ui/patterns/MatchCard';
-import { RecipeCard } from '@/ui/patterns/RecipeCard';
 import { RecipeGrid } from '@/ui/patterns/RecipeGrid';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
-import { useToast } from '@/ui/patterns/Toast';
+import { useBookmarks } from '@/ui/patterns/useBookmarks';
 import { Button } from '@/ui/primitives/Button';
 import { IconButton } from '@/ui/primitives/IconButton';
 import { Screen } from '@/ui/primitives/Screen';
 import { Text } from '@/ui/primitives/Text';
+import { HOME } from '@/ui/tokens/screens';
 import { SPACE } from '@/ui/tokens/type';
+import { HeroCarousel } from './HeroCarousel';
 
-const AHEAD_DAYS = 6;
-const PICKS = 5;
+const MEALS = (['breakfast', 'lunch', 'dinner', 'snack'] as const).map((m) => ({ value: m, label: MEAL_TYPE_LABELS[m] }));
+const TIMES = (Object.keys(TIME_FILTER_LABELS) as TimeFilter[]).map((t) => ({ value: t, label: TIME_FILTER_LABELS[t] }));
+const CUISINE_OPTIONS = CUISINES.map((c) => ({ value: c, label: CUISINE_LABELS[c] })).sort((a, b) => a.label.localeCompare(b.label));
+const LEVELS = DIFFICULTIES.map((d) => ({ value: d, label: DIFFICULTY_LABELS[d] }));
 
 export function FeedScreen() {
   const router = useRouter();
-  const toast = useToast();
+  const [filters, setFilters] = useState<HomeFilters>(NO_HOME_FILTERS);
   const entries = usePlan((s) => s.entries);
-  const addEntry = usePlan((s) => s.addEntry);
-  const removeEntry = usePlan((s) => s.removeEntry);
   const welcome = useWelcomeBack((s) => s.message);
   const dismissWelcome = useWelcomeBack((s) => s.dismiss);
-  const [forYouPick, ...picks] = useForYou(PICKS);
-  const today = useToday();
+  const all = useAllRecipes();
+  // The whole ranked list, so a filter like "Breakfast" still has plenty to show.
+  const forYou = useForYou(all.length);
+  const cook = useCookableNow();
   const getRecipe = useRecipeLookup();
+  const bookmarks = useBookmarks();
+  const today = useToday();
   const log = useCookLog((s) => s.log);
   // A plan entry whose recipe is gone (a deleted own recipe) is not a meal: it mustn't hide tonight's real dinner (F17).
   const planned = useMemo(() => entries.filter((e) => getRecipe(e.recipeId) !== undefined), [entries, getRecipe]);
   const cookedToday = useMemo(() => cookedOn(log, today), [log, today]);
-  const tonight = tonightsDinner(planned, today, cookedToday);
-  const cookedTonight = tonight !== undefined && cookedToday.has(tonight.recipeId);
-  const cook = useCookableNow();
-  // Nothing planned? Something you can cook right now beats a suggestion you'd have to shop for.
-  const suggestion = cook.ready[0]?.recipe ?? forYouPick;
-  const fromCupboard = [...cook.ready, ...cook.nearly].slice(0, 6);
-  const bookmarks = useBookmarks();
-  const tonightRecipe = tonight ? getRecipe(tonight.recipeId) : undefined;
+  const next = tonightsDinner(planned, today, cookedToday);
+  // Once tonight's dinner is cooked it stops leading the cards: "On the plan" no longer fits (F22).
+  const tonight = next && !cookedToday.has(next.recipeId) ? next : undefined;
+  const { heroes, grid } = homeFeed({
+    tonight: tonight ? getRecipe(tonight.recipeId) : undefined,
+    cookableNow: cook.ready.map((m) => m.recipe),
+    forYou,
+    filters,
+    gridCount: HOME.gridCount,
+  });
   const open = (id: string) => router.push({ pathname: '/recipe/[id]', params: { id } });
-  const ahead = Array.from({ length: AHEAD_DAYS }, (_, i) => addDays(today, i + 1)).flatMap((day) =>
-    entriesFor(planned, day, 'dinner').map((entry) => ({ day, entry, recipe: getRecipe(entry.recipeId) })),
-  );
+
+  const dropdowns: Dropdown[] = [
+    { key: 'meal', name: 'Meal', value: filters.meal, options: MEALS },
+    { key: 'time', name: 'Time', value: filters.time, options: TIMES },
+    { key: 'cuisine', name: 'Cuisine', value: filters.cuisine, options: CUISINE_OPTIONS },
+    { key: 'difficulty', name: 'Difficulty', value: filters.difficulty, options: LEVELS },
+  ];
+  const choose = (key: string, value: string | undefined) =>
+    setFilters((f) => ({
+      ...f,
+      ...(key === 'meal' ? { meal: MEALS.find((o) => o.value === value)?.value } : {}),
+      ...(key === 'time' ? { time: TIMES.find((o) => o.value === value)?.value } : {}),
+      ...(key === 'cuisine' ? { cuisine: CUISINE_OPTIONS.find((o) => o.value === value)?.value } : {}),
+      ...(key === 'difficulty' ? { difficulty: LEVELS.find((o) => o.value === value)?.value } : {}),
+    }));
 
   return (
     <Screen tab testID="feed-screen">
-      {welcome ? (
-        <View style={{ flexDirection: 'row', alignItems: 'flex-start', gap: SPACE.xs }} accessibilityLiveRegion="polite">
-          <Text variant="body" colour="inkSoft" style={{ flex: 1 }}>
-            {welcome}
-          </Text>
-          <IconButton icon="close" label="Dismiss" onPress={dismissWelcome} colour="inkMuted" testID="welcome-back-dismiss" />
-        </View>
-      ) : null}
-
-      {tonight && tonightRecipe ? (
-        <View style={{ gap: SPACE.md }}>
-          <SectionHeader
-            kicker={`Tonight · ${longDate(fromISODate(today))}`}
-            tone="accent"
-            title={cookedTonight ? 'Cooked tonight' : 'On for dinner'}
-          />
-          <RecipeCard
-            recipe={tonightRecipe}
-            image={RECIPE_IMAGES[tonightRecipe.id]}
-            size="large"
-            note={cookedTonight ? 'Cooked. Enjoy!' : `Dinner for ${tonight.servings}`}
-            // Opens scaled to tonight's planned servings, as Start cooking does (audit F37).
-            onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: tonightRecipe.id, servings: String(tonight.servings) } })}
-            testID="feed-tonight"
-          />
-          {/* Once it's cooked, "Start cooking" and "Not feeling it?" no longer fit the moment (F22). */}
-          {cookedTonight ? null : (
-            <>
-              <Button
-                label="Start cooking"
-                icon="flame"
-                kind="primary"
-                size="lg"
-                block
-                testID="feed-cook"
-                onPress={() =>
-                  router.push({ pathname: '/recipe/[id]/cook', params: { id: tonightRecipe.id, servings: String(tonight.servings) } })
-                }
-              />
-              <Button label="Not feeling it? Surprise me" kind="quiet" onPress={() => router.push('/surprise')} testID="feed-surprise" />
-            </>
-          )}
-        </View>
-      ) : suggestion ? (
-        <View style={{ gap: SPACE.md }}>
-          <SectionHeader
-            kicker={`Tonight · ${longDate(fromISODate(today))}`}
-            tone="accent"
-            title={cook.ready[0] ? 'You can cook this now' : 'How about this?'}
-          />
-          <RecipeCard
-            recipe={suggestion}
-            image={RECIPE_IMAGES[suggestion.id]}
-            size="large"
-            onPress={() => open(suggestion.id)}
-            testID="feed-tonight"
-          />
-          <Button
-            label="Have this tonight"
-            icon="plan"
-            kind="primary"
-            size="lg"
-            block
-            testID="feed-have-tonight"
-            onPress={() => {
-              // The day at the moment of the tap, not the last render: the screen may have sat open past midnight (F16).
-              const entry = addEntry(suggestion.id, toISODate(new Date()), 'dinner', suggestion.servings);
-              toast({ message: `${suggestion.title} is on for tonight`, undo: () => removeEntry(entry.id) });
-            }}
-          />
-        </View>
-      ) : (
-        <EmptyState
-          title="Nothing planned for tonight"
-          body="Plan a few dinners and tonight’s shows up here, ready to cook. Or let us choose."
-          action={{ label: 'Surprise me', onPress: () => router.push('/surprise') }}
-          testID="feed-empty"
-        />
-      )}
-
-      {ahead.length ? (
-        <View>
-          {/* A rolling six days after tonight, not the calendar week (F143). */}
-          <SectionHeader kicker="Coming up" tone="accent" title="Next few days" />
-          {ahead.map(({ day, entry, recipe }) =>
-            recipe ? (
-              <RecipeCard
-                key={entry.id}
-                recipe={recipe}
-                image={RECIPE_IMAGES[recipe.id]}
-                size="row"
-                note={longDate(fromISODate(day))}
-                onPress={() => open(recipe.id)}
-                testID={`feed-ahead-${entry.id}`}
-              />
-            ) : null,
-          )}
-        </View>
-      ) : null}
-
-      {fromCupboard.length ? (
-        <View>
-          <SectionHeader
-            kicker="From your cupboard"
-            tone="accent"
-            title="Cook with what you have"
-            action={<Button label="See all" kind="quiet" onPress={() => router.push('/cupboard/cookable')} testID="feed-cupboard-all" />}
-          />
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            style={{ marginHorizontal: -SPACE.gutter }}
-            contentContainerStyle={{ gap: SPACE.sm, paddingHorizontal: SPACE.gutter, alignItems: 'flex-start' }}
+      <View>
+        {welcome ? (
+          <View
+            style={{ flexDirection: 'row', alignItems: 'flex-start', gap: SPACE.xs, marginBottom: SPACE.md }}
+            accessibilityLiveRegion="polite"
           >
-            {fromCupboard.map((m) => (
-              <MatchCard
-                key={m.recipe.id}
-                recipe={m.recipe}
-                image={RECIPE_IMAGES[m.recipe.id]}
-                ready={m.tier === 'ready'}
-                need={needLine(m.result, ingredientName)}
-                onPress={() => open(m.recipe.id)}
-                testID={`feed-match-${m.recipe.id}`}
-              />
-            ))}
-          </ScrollView>
-        </View>
-      ) : (
-        <Button
-          label="What can I cook from my cupboard?"
-          icon="cupboard"
-          kind="soft"
-          block
-          onPress={() => router.navigate('/cupboard')}
-          testID="feed-to-cupboard"
-        />
-      )}
+            <Text variant="body" colour="inkSoft" style={{ flex: 1 }}>
+              {welcome}
+            </Text>
+            <IconButton icon="close" label="Dismiss" onPress={dismissWelcome} colour="inkMuted" testID="welcome-back-dismiss" />
+          </View>
+        ) : null}
 
-      {picks.length ? (
-        <View>
-          <SectionHeader kicker="For you" tone="accent" title="What’s cooking?" />
-          <RecipeGrid
-            recipes={picks}
-            imageFor={(id) => RECIPE_IMAGES[id]}
-            onOpen={open}
-            isSaved={bookmarks.isSaved}
-            onToggleSave={bookmarks.toggle}
-          />
+        <View style={{ marginBottom: HOME.afterFilters }}>
+          <DropdownChips dropdowns={dropdowns} onChoose={choose} testIDPrefix="home-filter" />
         </View>
-      ) : null}
+
+        {heroes.length === 0 ? (
+          hasHomeFilters(filters) ? (
+            <EmptyState
+              title="Nothing here yet"
+              body="No recipes match all of those. Try a different filter."
+              action={{ label: 'Clear filters', onPress: () => setFilters(NO_HOME_FILTERS) }}
+              testID="home-no-match"
+            />
+          ) : (
+            <EmptyState
+              title="Nothing to suggest yet"
+              body="Your diet and avoid list rule out every recipe. Loosen them in Settings, or browse everything."
+              action={{ label: 'Browse recipes', onPress: () => router.navigate('/browse') }}
+              testID="feed-empty"
+            />
+          )
+        ) : (
+          <View style={{ marginBottom: HOME.afterCarousel }}>
+            <HeroCarousel
+              heroes={heroes}
+              servingsFor={(h) => (h.reason === 'planned' && tonight ? tonight.servings : h.recipe.servings)}
+              onOpen={open}
+            />
+          </View>
+        )}
+
+        {grid.length ? (
+          <View>
+            <SectionHeader kicker="More for you" tone="accent" title="What’s cooking?" />
+            <RecipeGrid
+              recipes={grid}
+              imageFor={(id) => RECIPE_IMAGES[id]}
+              onOpen={open}
+              isSaved={bookmarks.isSaved}
+              onToggleSave={bookmarks.toggle}
+            />
+            <View style={{ marginTop: SPACE.lg }}>
+              <Button label="Browse all recipes" kind="soft" block onPress={() => router.navigate('/browse')} testID="home-browse-all" />
+            </View>
+          </View>
+        ) : null}
+      </View>
     </Screen>
   );
 }

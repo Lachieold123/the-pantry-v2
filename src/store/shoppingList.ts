@@ -1,12 +1,15 @@
 // The shopping list for one week, worked out from the plan (never stored).
 // Edits are judged against the whole week, and meals already eaten are only
-// hidden, so a day passing never unticks or restores anything (F11).
-// Unticked extras from weeks that have ended come forward (F134).
+// hidden, so a day passing never unticks or restores anything (F11). Items
+// ticked this week stay in their aisle even after they move into the cupboard,
+// so nothing jumps around mid-shop. Unticked extras from weeks that have ended
+// come forward (F134). Shared by the List tab, the Plan tab's list card and the
+// tab bar's badge, so all three agree.
 import { useMemo } from 'react';
 
 import { INGREDIENTS } from '@/data/catalogue/catalogue';
-import { entriesInWeek, isPast, mealCount, weekStart, type ISODate } from '@/domain/plan/week';
-import { carriedExtras, deriveShoppingList, EMPTY_EDITS, type ShoppingList } from '@/domain/shopping/derive';
+import { entriesInWeek, isPast, mealCount, visibleWeeks, weekStart, type ISODate } from '@/domain/plan/week';
+import { carriedExtras, countToBuy, deriveShoppingList, EMPTY_EDITS, type ShoppingList } from '@/domain/shopping/derive';
 import { useToday } from '@/lib/useToday';
 import { useCupboard } from '@/store/cupboard';
 import { usePlan } from '@/store/plan';
@@ -35,4 +38,11 @@ export function useWeekList(week: ISODate): { list: ShoppingList; meals: number 
     // A meal whose recipe is gone buys nothing, so it isn't counted (F17).
     return { list, meals: mealCount(inWeek.filter((e) => !isPast(e.day, today) && getRecipe(e.recipeId) !== undefined)) };
   }, [entries, week, allEdits, cupboardItems, units, getRecipe, today]);
+}
+
+/** Things left to buy this week, for the List tab's badge. */
+export function useToBuyThisWeek(): number {
+  // The live date, so the badge moves to the new week at midnight on Sunday (F16).
+  const { list } = useWeekList(visibleWeeks(useToday()).thisWeek);
+  return countToBuy(list);
 }

@@ -18,6 +18,7 @@ import { Chip } from '@/ui/primitives/Chip';
 import { SearchField } from '@/ui/primitives/SearchField';
 import { Text } from '@/ui/primitives/Text';
 import { SPACE } from '@/ui/tokens/type';
+import { WaysIn } from './WaysIn';
 
 const ALL = [...INGREDIENTS.byId.values()].filter((d) => !d.staple).sort((a, b) => a.name.localeCompare(b.name));
 // Salt, oil and the like are always assumed, so they're never added; a search for one says so (audit F139).
@@ -57,7 +58,6 @@ function searchIngredients(query: string, have: ReadonlySet<string>, pool: typeo
 }
 
 export function AddBar({ have, onAdd }: { have: ReadonlySet<string>; onAdd: (id: string) => void }) {
-  const router = useRouter();
   const [query, setQuery] = useState('');
   const results = useMemo(() => searchIngredients(query, have), [query, have]);
   // Only a close match: "salt" is the staple, even though salted things turn up too.
@@ -107,7 +107,7 @@ export function AddBar({ have, onAdd }: { have: ReadonlySet<string>; onAdd: (id:
           ))}
         </View>
       ) : null}
-      <Button label="Add a list" icon="list" kind="soft" onPress={() => router.push('/cupboard/add-list')} testID="cupboard-add-list" />
+      <WaysIn />
     </View>
   );
 }

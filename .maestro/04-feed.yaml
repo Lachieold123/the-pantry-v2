@@ -1,48 +1,81 @@
-# Feed: have tonight's suggestion, see it on the plan badge, start cooking; Surprise me.
+# Home: v1's layout. Filter chips, five cards to swipe, the grid; a filter
+# narrows both and "Clear filters" brings them back; tonight's planned dinner leads.
 appId: host.exp.Exponent
 ---
 - launchApp:
     clearState: true
 - openLink: ${METRO_URL}
 - runFlow: subflows/_setup_skip_welcome.yaml
-- assertVisible: 'How about this\?'
 - assertVisible:
-    id: "feed-tonight"
-- takeScreenshot: feed-home
+    id: "home-heroes"
+- assertVisible: "What's cooking\\?"
+- takeScreenshot: home
 
-- tapOn:
-    id: "feed-have-tonight"
-- assertVisible: ".* is on for tonight"
-# The Plan tab's badge now counts one planned meal.
-- assertVisible: "Plan, 1 planned"
-- assertVisible: "On for dinner"
-- takeScreenshot: feed-tonight-planned
+# Swipe through the cards
+- swipe:
+    from:
+      id: "home-heroes"
+    direction: LEFT
+- takeScreenshot: home-second-card
 
-# Start cooking goes straight into Cook Mode for tonight's dinner.
+# A filter: Meal → Breakfast narrows the cards and the grid
 - tapOn:
-    id: "feed-cook"
-- assertVisible: "Step 1 of .*"
-- takeScreenshot: feed-cook-mode
+    id: "home-filter-meal"
 - tapOn:
-    id: "cook-close"
+    id: "home-filter-option-breakfast"
+- assertVisible: "Breakfast"
+- takeScreenshot: home-breakfast
+- tapOn:
+    id: "home-filter-meal"
+- tapOn:
+    id: "home-filter-option-any"
+
+# Nothing matches: say so, and clear the filters
+- tapOn:
+    id: "home-filter-cuisine"
+- scrollUntilVisible:
+    element:
+      id: "home-filter-option-scandinavian"
+    direction: DOWN
+- tapOn:
+    id: "home-filter-option-scandinavian"
+- tapOn:
+    id: "home-filter-time"
+- tapOn:
+    id: "home-filter-option-under-15"
 - assertVisible:
-    id: "feed-screen"
-
-# Tonight's card opens the recipe.
+    id: "home-no-match"
 - tapOn:
-    id: "feed-tonight"
+    id: "home-no-match-action"
+- assertVisible:
+    id: "home-heroes"
+
+# A card opens its recipe
+- tapOn:
+    id: "home-hero-.*"
+    index: 0
 - assertVisible:
     id: "recipe-screen"
 - tapOn:
     id: "back"
 
-# Not feeling it? Surprise me: the spinner opens on a dish
+# Plan carbonara for tonight; it leads the home page
+- runFlow:
+    file: subflows/_open_recipe.yaml
+    env:
+      QUERY: carbonara
+      RECIPE_ID: carbonara
 - tapOn:
-    id: "feed-surprise"
-- assertVisible:
-    id: "spinner-card"
-- takeScreenshot: feed-surprise-spinner
+    id: "recipe-plan"
 - tapOn:
-    id: "spinner-back"
+    id: "plan-day-this-0"
+- tapOn:
+    id: "plan-confirm"
+- tapOn:
+    id: "back"
+- tapOn:
+    id: "tab-index"
 - assertVisible:
-    id: "feed-screen"
+    id: "home-hero-carbonara"
+- assertVisible: ".*Tonight · On the plan.*"
+- takeScreenshot: home-tonight-planned

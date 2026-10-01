@@ -2,7 +2,7 @@
 // with just that choice. Surprise me and suggestions treat diet and avoid as
 // hard rules; cuisines and weeknight time only reorder.
 import { useState } from 'react';
-import { KeyboardAvoidingView, Platform, View } from 'react-native';
+import { View } from 'react-native';
 import { useShallow } from 'zustand/react/shallow';
 
 import { DIET_PREFERENCE_LABELS } from '@/domain/recipes/labels';
@@ -56,13 +56,11 @@ export function CookingSection() {
         />
       </SettingsSection>
       <ModalSheet visible={editing !== null} onClose={close} title={editing ? EDITOR_TITLES[editing] : ''} testID="settings-editor">
-        {/* The avoid sheet has a text field; this lifts the sheet above the keyboard. */}
-        <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
-          <View style={{ gap: SPACE.lg, paddingVertical: SPACE.sm }}>
-            {editing ? <PreferenceEditor section={editing} /> : null}
-            <Button label="Done" kind="primary" block onPress={close} testID="settings-editor-done" />
-          </View>
-        </KeyboardAvoidingView>
+        {/* The sheet itself rises above the keyboard for the avoid list's text field. */}
+        <View style={{ gap: SPACE.lg, paddingVertical: SPACE.sm }}>
+          {editing ? <PreferenceEditor section={editing} /> : null}
+          <Button label="Done" kind="primary" block onPress={close} testID="settings-editor-done" />
+        </View>
       </ModalSheet>
     </>
   );
