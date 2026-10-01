@@ -78,6 +78,10 @@ function RootStack() {
       <Stack.Screen name="cupboard/shelf" options={SHEET} />
       <Stack.Screen name="cupboard/scan" options={SHEET} />
       <Stack.Screen name="cupboard/cookable" />
+      <Stack.Screen name="browse" />
+      <Stack.Screen name="plate/[id]" />
+      {/* Sharing a dish keeps a draft as you type, so a swipe down loses nothing. */}
+      <Stack.Screen name="post" options={{ presentation: 'modal' }} />
       <Stack.Screen name="surprise" />
       {/* Editing is a deliberate task: no swipe-to-dismiss, so a stray gesture can't lose a typed recipe. */}
       <Stack.Screen name="my-recipe/edit" options={{ presentation: 'modal', gestureEnabled: false }} />

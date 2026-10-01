@@ -1,30 +1,16 @@
-// The two outside pieces a scan needs, behind one small interface so the
-// screens never change when they're connected (D-030):
+// Reading a scan (D-030). The photo itself comes from src/lib/photos.ts; the
+// reading needs our server and a vision model's API key. The model is picked
+// by testing about 30 real photos, and the key goes to Lachlan first.
 //
-// 1. Taking or choosing a photo. Needs expo-image-picker, a native module,
-//    which waits for Lachlan's go-ahead (CLAUDE.md: ask before adding one).
-// 2. Reading the photo. Needs our server and a vision model's API key; the
-//    model is picked by testing ~30 real photos, and the key goes to Lachlan.
-//
-// Until then both answer honestly that they aren't connected, and the scan
-// sheet says so in plain words instead of pretending. Nothing here returns
+// Until then readPhoto answers honestly that it isn't connected, and the scan
+// sheet says "Coming soon" instead of pretending. Nothing here returns
 // made-up items (CLAUDE.md: no fake data).
 import type { ScanKind, ScanResult } from '@/domain/cupboard/scan';
 
-export type PhotoSource = 'camera' | 'library';
-
-export type Capture = { status: 'ok'; uri: string } | { status: 'cancelled' } | { status: 'unavailable' };
-
 export type Reading = { status: 'ok'; result: ScanResult } | { status: 'not-connected' } | { status: 'failed'; message: string };
 
-/** True once both pieces are in. The scan sheet shows the camera buttons only then. */
+/** True once the reader is in. The scan sheet shows the camera buttons only then, so nobody takes a photo for nothing. */
 export const SCAN_CONNECTED: boolean = false;
-
-/** Opens the camera or the photo library. Connect: expo-image-picker's launchCameraAsync / launchImageLibraryAsync, after asking permission. */
-export async function capturePhoto(source: PhotoSource): Promise<Capture> {
-  void source;
-  return { status: 'unavailable' };
-}
 
 /**
  * Sends the photo to the server to read. Connect: shrink the photo (about

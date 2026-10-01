@@ -116,3 +116,11 @@ export const HOME = {
   dotGap: 6,
   gridCount: 24,
 } as const;
+
+/** Plates: the "+" composer's photo strip and preview, and the rail on Home (D-033). */
+export const PLATE = {
+  tile: 96,
+  removeDisc: 24,
+  preview: 180,
+  railCard: 150,
+} as const;

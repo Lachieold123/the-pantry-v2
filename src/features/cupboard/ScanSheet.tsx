@@ -1,8 +1,9 @@
 // Scan a receipt or a photo of your food into the cupboard (D-030; v1's
 // PantryScanFlow). Four steps: choose a photo, read it, check the list, add.
-// The camera and the reader aren't connected yet (src/lib/scan.ts), and until
-// they are this sheet says so plainly and offers the typed list instead; the
-// rest of the flow is built and tested so connecting them is the only step left.
+// The camera works (src/lib/photos.ts); the reader isn't connected yet
+// (src/lib/scan.ts), and until it is this sheet says so plainly and offers the
+// typed list instead. The rest is built and tested, so connecting the reader
+// is the only step left.
 import { useRouter } from 'expo-router';
 import { useState } from 'react';
 import { ActivityIndicator, View } from 'react-native';
@@ -11,7 +12,8 @@ import { INGREDIENTS } from '@/data/catalogue/catalogue';
 import { guessesFromScan, startTicked, type ScanGuess, type ScanKind } from '@/domain/cupboard/scan';
 import { shortDate } from '@/lib/dates';
 import { goBack } from '@/lib/navigation';
-import { capturePhoto, readPhoto, SCAN_CONNECTED, type PhotoSource } from '@/lib/scan';
+import { capturePhotos, captureProblem, type PhotoSource } from '@/lib/photos';
+import { readPhoto, SCAN_CONNECTED } from '@/lib/scan';
 import { useCupboard } from '@/store/cupboard';
 import { useScanAllowance, useScans } from '@/store/scans';
 import { useToast } from '@/ui/patterns/Toast';
@@ -56,14 +58,14 @@ export function ScanSheet({ kind: requested }: { kind: string | undefined }) {
 
   const scan = async (source: PhotoSource) => {
     setProblem(undefined);
-    const photo = await capturePhoto(source);
+    const photo = await capturePhotos(source);
     if (photo.status === 'cancelled') return;
-    if (photo.status === 'unavailable') {
-      setProblem('The camera isn’t connected yet.');
+    if (photo.status !== 'ok' || !photo.uris[0]) {
+      if (photo.status !== 'ok') setProblem(captureProblem(photo, source));
       return;
     }
     setStage({ at: 'reading' });
-    const reading = await readPhoto(kind, photo.uri);
+    const reading = await readPhoto(kind, photo.uris[0]);
     if (reading.status !== 'ok') {
       // A failed read doesn't use up a scan; back to the start to try again.
       setProblem(reading.status === 'failed' ? reading.message : 'Reading photos isn’t connected yet.');

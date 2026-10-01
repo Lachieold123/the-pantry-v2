@@ -1,9 +1,11 @@
-// The Browse tab (spec §7 Browse): "Discover", search and filters, then either
-// the browse shelves or a two-column grid of results. The grid is a virtualised
+// Browse (spec §7 Browse): "Discover", search and filters, then either the
+// browse shelves or a two-column grid of results. Opened from Home's search
+// bar (D-033), so it's a page with a back button rather than a tab. The grid is a virtualised
 // list of rows, so the whole catalogue scrolls smoothly (audit PERF-17).
 import { useRouter } from 'expo-router';
 import { useMemo } from 'react';
 import { FlatList, Pressable, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { CATALOGUE } from '@/data/catalogue/catalogue';
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
@@ -14,7 +16,7 @@ import { useRecipeFilters } from '@/store/recipeFilters';
 import { useBookmarks } from '@/store/saved';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { RecipeRow } from '@/ui/patterns/RecipeGrid';
-import { TitleBlock } from '@/ui/patterns/TitleBlock';
+import { PushedHeader } from '@/ui/patterns/PushedHeader';
 import { Badge } from '@/ui/primitives/Badge';
 import { Button } from '@/ui/primitives/Button';
 import { Icon } from '@/ui/primitives/Icon';
@@ -23,15 +25,16 @@ import { SearchField } from '@/ui/primitives/SearchField';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { useTheme } from '@/ui/theme/ThemeProvider';
-import { CARD, RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
+import { RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 import { BrowseSections } from './BrowseSections';
 import { useRecipeResults } from './useRecipeResults';
 
 const image = (id: string) => RECIPE_IMAGES[id];
 const RowGap = () => <View style={{ height: SPACE.sm }} />;
 
-export function RecipesScreen() {
+export function RecipesScreen({ focusSearch = false }: { focusSearch?: boolean }) {
   const router = useRouter();
+  const insets = useSafeAreaInsets();
   const { colours } = useTheme();
   const styles = useStyles();
   const query = useRecipeFilters((s) => s.query);
@@ -58,12 +61,11 @@ export function RecipesScreen() {
 
   const header = (
     <View style={styles.header}>
-      <TitleBlock
+      <PushedHeader
         kicker="Browse"
-        tone="accent"
         title="Discover"
         action={
-          // Where the tab bar's old "+" went: your own recipe sits beside everyone else's.
+          // Your own recipe sits beside everyone else's.
           <IconButton
             icon="add"
             shape="chip"
@@ -75,7 +77,14 @@ export function RecipesScreen() {
         }
       />
       <View style={styles.searchRow}>
-        <SearchField value={query} onChange={setQuery} placeholder="Recipes, ingredients…" label="Search recipes" testID="browse-search" />
+        <SearchField
+          value={query}
+          onChange={setQuery}
+          placeholder="Recipes, ingredients…"
+          label="Search recipes"
+          autoFocus={focusSearch}
+          testID="browse-search"
+        />
         <View>
           <IconButton
             icon="filter"
@@ -116,9 +125,9 @@ export function RecipesScreen() {
 
   if (CATALOGUE.length === 0) {
     return (
-      <View style={[styles.page, { backgroundColor: colours.bg }]}>
+      <View style={[styles.page, { backgroundColor: colours.bg, paddingTop: insets.top + SPACE.md }]}>
         <View style={styles.header}>
-          <TitleBlock kicker="Browse" tone="accent" title="Discover" />
+          <PushedHeader kicker="Browse" title="Discover" />
           <EmptyState
             title="The kitchen is still testing"
             body="Recipes appear here once they've been cooked and checked in The Pantry kitchen."
@@ -131,7 +140,7 @@ export function RecipesScreen() {
   return (
     <FlatList
       style={{ flex: 1, backgroundColor: colours.bg }}
-      contentContainerStyle={styles.list}
+      contentContainerStyle={[{ paddingTop: insets.top + SPACE.md, paddingBottom: insets.bottom + SPACE.xxl }]}
       keyboardShouldPersistTaps="handled"
       keyboardDismissMode="on-drag"
       data={browsing ? [] : rows}
@@ -166,7 +175,6 @@ export function RecipesScreen() {
 
 const useStyles = makeStyles(({ colours }) => ({
   page: { flex: 1 },
-  list: { paddingTop: SPACE.xs, paddingBottom: CARD.scrollBottom },
   header: { paddingHorizontal: SPACE.gutter, gap: SPACE.md, paddingBottom: SPACE.lg },
   inset: { paddingHorizontal: SPACE.gutter },
   searchRow: { flexDirection: 'row', gap: SPACE.xs + 2, alignItems: 'center' },

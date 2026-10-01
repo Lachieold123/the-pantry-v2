@@ -30,7 +30,7 @@ appId: host.exp.Exponent
 - pressKey: Enter
 - assertVisible:
     id: "cupboard-item-egg"
-- assertVisible: "Your cupboard · 2"
+- assertVisible: "Step 2 · 2 things"
 # These pages don't hide the keyboard on a swipe, so tap plain text instead (it closes the keyboard).
 - tapOn: 'What do you have\?'
 - takeScreenshot: cupboard-two-items
@@ -131,5 +131,5 @@ appId: host.exp.Exponent
     id: "tab-cupboard"
 - assertVisible:
     id: "cupboard-item-guanciale"
-- assertVisible: "Your cupboard · 3"
+- assertVisible: "Step 2 · 3 things"
 - takeScreenshot: cupboard-moved-from-list

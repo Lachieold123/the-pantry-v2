@@ -1,0 +1,17 @@
+# Opens Browse from Home's search bar (Browse isn't a tab since D-033).
+# Works from any tab, or from Browse itself (it goes back to Home first).
+appId: host.exp.Exponent
+---
+- runFlow:
+    when:
+      visible:
+        id: "browse-search"
+    commands:
+      - tapOn:
+          id: "back"
+- tapOn:
+    id: "tab-index"
+- tapOn:
+    id: "home-search"
+- hideKeyboard
+- assertVisible: "Discover"

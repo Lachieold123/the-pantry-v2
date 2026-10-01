@@ -34,7 +34,7 @@ export function StockGrid({ have, onAdd, onRemove }: Props) {
   const c = palette[category];
   return (
     <View>
-      <SectionHeader kicker="Stock the cupboard" title="Tap what you have" />
+      <SectionHeader kicker="Stock up" title="Tap what you have" />
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}

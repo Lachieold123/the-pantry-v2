@@ -83,8 +83,7 @@ appId: host.exp.Exponent
     id: "back"
 
 # Browse with nothing matching
-- tapOn:
-    id: "tab-browse"
+- runFlow: subflows/_open_browse.yaml
 - tapOn:
     id: "browse-search"
 - inputText: "zzzzqqq"

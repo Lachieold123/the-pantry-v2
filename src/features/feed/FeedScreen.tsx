@@ -1,5 +1,5 @@
-// The home tab, in v1's layout (FeedScreen.tsx, spec §7 Feed): a row of
-// filter chips, five big cards to swipe through, then "What's cooking?" as a
+// The home tab, in v1's layout (FeedScreen.tsx, spec §7 Feed): a search bar
+// that opens Browse (D-033), a row of filter chips, five big cards to swipe through, then "What's cooking?" as a
 // two-column grid. Until posts arrive with social (P9) the cards are recipes,
 // each labelled with why it's there (domain/suggestions/home.ts). Tonight's
 // planned dinner leads, so Tuesday 6pm still opens on what you're cooking.
@@ -26,10 +26,12 @@ import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { Button } from '@/ui/primitives/Button';
 import { IconButton } from '@/ui/primitives/IconButton';
 import { Screen } from '@/ui/primitives/Screen';
+import { SearchButton } from '@/ui/primitives/SearchField';
 import { Text } from '@/ui/primitives/Text';
 import { HOME } from '@/ui/tokens/screens';
 import { SPACE } from '@/ui/tokens/type';
 import { HeroCarousel } from './HeroCarousel';
+import { PlatesRail } from './PlatesRail';
 
 const MEALS = (['breakfast', 'lunch', 'dinner', 'snack'] as const).map((m) => ({ value: m, label: MEAL_TYPE_LABELS[m] }));
 const TIMES = (Object.keys(TIME_FILTER_LABELS) as TimeFilter[]).map((t) => ({ value: t, label: TIME_FILTER_LABELS[t] }));
@@ -88,6 +90,14 @@ export function FeedScreen() {
           </View>
         ) : null}
 
+        {/* The same top space TitleBlock gives the other tabs. */}
+        <View style={{ marginTop: SPACE.xs, marginBottom: SPACE.sm }}>
+          <SearchButton
+            placeholder="Search recipes, ingredients…"
+            onPress={() => router.push({ pathname: '/browse', params: { search: '1' } })}
+            testID="home-search"
+          />
+        </View>
         <View style={{ marginBottom: HOME.afterFilters }}>
           <DropdownChips dropdowns={dropdowns} onChoose={choose} testIDPrefix="home-filter" />
         </View>
@@ -104,7 +114,7 @@ export function FeedScreen() {
             <EmptyState
               title="Nothing to suggest yet"
               body="Your diet and avoid list rule out every recipe. Loosen them in Settings, or browse everything."
-              action={{ label: 'Browse recipes', onPress: () => router.navigate('/browse') }}
+              action={{ label: 'Browse recipes', onPress: () => router.push('/browse') }}
               testID="feed-empty"
             />
           )
@@ -118,6 +128,8 @@ export function FeedScreen() {
           </View>
         )}
 
+        <PlatesRail />
+
         {grid.length ? (
           <View>
             <SectionHeader kicker="More for you" tone="accent" title="What's cooking?" />
@@ -129,7 +141,7 @@ export function FeedScreen() {
               onToggleSave={bookmarks.toggle}
             />
             <View style={{ marginTop: SPACE.lg }}>
-              <Button label="Browse all recipes" kind="soft" block onPress={() => router.navigate('/browse')} testID="home-browse-all" />
+              <Button label="Browse all recipes" kind="soft" block onPress={() => router.push('/browse')} testID="home-browse-all" />
             </View>
           </View>
         ) : null}

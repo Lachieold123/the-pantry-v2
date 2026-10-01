@@ -236,3 +236,25 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
     - The flow is: choose a photo, read it, check the same review list as "Add a list", then add.
     - It is fully built and tested, including the 3-a-month allowance.
     - The camera (expo-image-picker, a native module) and the reader (server and API key) wait for Lachlan's approval. Until then the sheet says "Coming soon" and offers the typed list.
+
+## D-033 · The centre "+" is back as "Share a dish", and Browse opens from Home
+
+- **Date:** 1 October 2026 · **Decided by:** Lachlan (chose "Browse moves to Home" from three options)
+- **Decision:** this replaces part of D-032.
+  - **Tabs:** Home · Plan · ＋ · List · Cupboard. Browse is no longer a tab:
+    - it opens from a "Search recipes" bar at the top of Home, ready to type;
+    - it's also in the side menu, and behind "Browse all recipes" under Home's grid.
+  - **The ＋ is v1's camera post, "Share a dish":**
+    - up to five photos, taken or chosen (expo-image-picker, approved);
+    - what it is, a few words, time, serves, and how hard;
+    - optionally linked to one of our recipes, which fills the blanks;
+    - a preview of the card it makes.
+  - **Plates stay on this phone until accounts and social arrive (P9).** They show on Home under "Your plates", and each opens to its own page with the photos, the words and the linked recipe. The page says plainly that only you can see them for now.
+  - What you type is kept as a draft, so closing never loses it.
+  - "Add a recipe" is on Browse and in the menu. "Share a dish" is in the menu too.
+  - **The Cupboard reads in the order you use it:**
+    1. Step 1: add what you have (search, quick adds, then type a list, scan a receipt or take a photo of your food).
+    2. Step 2: what's in your cupboard.
+    3. Step 3: what you can cook.
+    4. Then "Unlock more" and "Stock up". When the cupboard is empty, the stock-up grid sits right under the add tools.
+  - The scan camera now works, but scanning stays "Coming soon" until the reader is connected (K-14).

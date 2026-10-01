@@ -15,8 +15,11 @@ jest.mock('@/lib/scan', () => ({
   get SCAN_CONNECTED() {
     return mockScan.connected;
   },
-  capturePhoto: async () => ({ status: 'ok', uri: 'file://receipt.jpg' }),
   readPhoto: async () => mockScan.reading,
+}));
+jest.mock('@/lib/photos', () => ({
+  capturePhotos: async () => ({ status: 'ok', uris: ['file://receipt.jpg'] }),
+  captureProblem: () => 'problem',
 }));
 
 beforeEach(() => {

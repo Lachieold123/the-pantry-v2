@@ -18,7 +18,6 @@ import { Chip } from '@/ui/primitives/Chip';
 import { SearchField } from '@/ui/primitives/SearchField';
 import { Text } from '@/ui/primitives/Text';
 import { SPACE } from '@/ui/tokens/type';
-import { WaysIn } from './WaysIn';
 
 const ALL = [...INGREDIENTS.byId.values()].filter((d) => !d.staple).sort((a, b) => a.name.localeCompare(b.name));
 const SUGGESTIONS = 8;
@@ -94,7 +93,6 @@ export function AddBar({ have, onAdd }: { have: ReadonlySet<string>; onAdd: (id:
           ))}
         </View>
       ) : null}
-      <WaysIn />
     </View>
   );
 }
@@ -102,13 +100,13 @@ export function AddBar({ have, onAdd }: { have: ReadonlySet<string>; onAdd: (id:
 export function CookRail({ ready, nearly }: { ready: CookableMatch[]; nearly: CookableMatch[] }) {
   const router = useRouter();
   const matches = [...ready, ...nearly].slice(0, RAIL);
-  const kicker = [ready.length ? `${ready.length} ready` : '', nearly.length ? `${nearly.length} need 1–2` : '']
+  const kicker = ['Step 3', ready.length ? `${ready.length} ready` : '', nearly.length ? `${nearly.length} need 1–2` : '']
     .filter(Boolean)
     .join(' · ');
   if (matches.length === 0) {
     return (
       <View style={{ gap: SPACE.xs }}>
-        <SectionHeader kicker="Tonight from your cupboard" title="Nothing close yet" />
+        <SectionHeader kicker="Step 3 · What you can cook" title="Nothing close yet" />
         <Text variant="body" colour="inkSoft">
           Most recipes need a few more things. Add what else you have, or try one of the ideas below.
         </Text>

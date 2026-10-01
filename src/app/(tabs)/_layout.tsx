@@ -1,5 +1,6 @@
-// The five tabs, under the app header and over the floating tab bar
-// (spec §4.1–4.2). Plan and the shopping list are separate tabs (D-032).
+// The four tabs and the centre "+", under the app header and over the
+// floating tab bar (spec §4.1–4.2, D-033). Plan and List are separate tabs;
+// Browse opens from Home's search bar.
 import { Redirect, Tabs } from 'expo-router';
 
 import { useNeedsWelcome } from '@/features/app/useNeedsWelcome';
@@ -17,7 +18,6 @@ export default function TabsLayout() {
       screenOptions={{ header: () => <AppHeader />, sceneStyle: { backgroundColor: colours.bg } }}
     >
       <Tabs.Screen name="index" options={{ title: 'Home' }} />
-      <Tabs.Screen name="browse" options={{ title: 'Browse' }} />
       <Tabs.Screen name="plan" options={{ title: 'Plan' }} />
       <Tabs.Screen name="list" options={{ title: 'List' }} />
       <Tabs.Screen name="cupboard" options={{ title: 'Cupboard' }} />

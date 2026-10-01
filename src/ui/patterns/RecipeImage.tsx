@@ -10,7 +10,8 @@ import { cuisineTint } from '@/ui/tokens/cuisine';
 import { ASPECT, RADIUS } from '@/ui/tokens/type';
 
 type Props = {
-  source: number | undefined;
+  /** A bundled photo, or a photo on this phone (your plates). */
+  source: number | { uri: string } | undefined;
   shape: keyof typeof ASPECT;
   cuisine: string;
   radius?: number;

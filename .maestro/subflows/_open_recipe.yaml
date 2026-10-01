@@ -1,25 +1,12 @@
-# Opens a recipe by searching for it on Browse.
-# env: QUERY (what to type), RECIPE_ID (the card to tap).
-# Start from any tab screen (the tab bar must be showing).
+# Opens a recipe straight from a link, so Home is underneath and Back lands there.
+# env: RECIPE_ID (the recipe to open). QUERY is no longer needed but harmless.
 appId: host.exp.Exponent
 ---
+- openLink: ${METRO_URL}/--/recipe/${RECIPE_ID}
 - tapOn:
-    id: "tab-browse"
-- runFlow:
-    when:
-      visible:
-        id: "browse-search-clear"
-    commands:
-      - tapOn:
-          id: "browse-search-clear"
-- tapOn:
-    id: "browse-search"
-- inputText: ${QUERY}
-# Put the keyboard away so the tab bar is back when we return from the recipe.
-- hideKeyboard
-- tapOn:
-    id: "recipe-card-${RECIPE_ID}"
+    text: "Open"
+    optional: true
 - extendedWaitUntil:
     visible:
       id: "recipe-screen"
-    timeout: 10000
+    timeout: 15000

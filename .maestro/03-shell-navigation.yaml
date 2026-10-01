@@ -1,4 +1,4 @@
-# The shell: the five tabs, the side menu to every destination and back, adding a recipe and the avatar.
+# The shell: the four tabs and the centre "+", the side menu to every destination and back, adding a recipe and the avatar.
 appId: host.exp.Exponent
 ---
 - launchApp:
@@ -7,9 +7,10 @@ appId: host.exp.Exponent
 - runFlow: subflows/_setup_skip_welcome.yaml
 
 # Tab bar
-- tapOn:
-    id: "tab-browse"
+- runFlow: subflows/_open_browse.yaml
 - assertVisible: "Discover"
+- tapOn:
+    id: "back"
 - tapOn:
     id: "tab-cupboard"
 - assertVisible:
@@ -46,6 +47,8 @@ appId: host.exp.Exponent
 - tapOn:
     id: "menu-browse"
 - assertVisible: "Discover"
+- tapOn:
+    id: "back"
 - tapOn:
     id: "header-menu"
 - tapOn:
@@ -165,8 +168,7 @@ appId: host.exp.Exponent
     id: "feed-screen"
 
 # Browse's "+" opens the recipe editor; Cancel with nothing typed just closes it.
-- tapOn:
-    id: "tab-browse"
+- runFlow: subflows/_open_browse.yaml
 - tapOn:
     id: "browse-add-recipe"
 - assertVisible: "New recipe"
@@ -174,7 +176,25 @@ appId: host.exp.Exponent
 - tapOn:
     id: "editor-cancel"
 - assertVisible: "Discover"
-# The menu has the shopping list and "Add a recipe" too.
+- tapOn:
+    id: "back"
+
+# The centre "+" opens "Share a dish"; Close with nothing typed just closes it.
+- tapOn:
+    id: "tab-add"
+- assertVisible: "Share a dish"
+- assertVisible:
+    id: "post-add-photo"
+- takeScreenshot: post-new
+- tapOn:
+    id: "post-share"
+- assertVisible: "Almost there: add a photo and name the dish."
+- tapOn:
+    id: "post-close"
+- assertVisible:
+    id: "feed-screen"
+
+# The menu has the shopping list too.
 - tapOn:
     id: "header-menu"
 - tapOn:

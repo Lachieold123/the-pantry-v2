@@ -1,4 +1,4 @@
-// Minus / value / plus, for servings. Announces as an adjustable control to VoiceOver.
+// Minus / value / plus, for servings and minutes. Announces as an adjustable control to VoiceOver.
 import { StyleSheet, View } from 'react-native';
 
 import { makeStyles } from '@/ui/theme/makeStyles';
@@ -13,13 +13,15 @@ type Props = {
   max?: number;
   label: string;
   format?: (n: number) => string;
+  /** How far one press moves: 1 for people, 5 for minutes. */
+  step?: number;
   /** The control's id; its buttons get `-minus` and `-plus` after it. */
   testID?: string | undefined;
 };
 
-export function Stepper({ value, onChange, min = 1, max = 24, label, format = String, testID }: Props) {
+export function Stepper({ value, onChange, min = 1, max = 24, label, format = String, step: by = 1, testID }: Props) {
   const styles = useStyles();
-  const step = (d: number) => onChange(Math.min(max, Math.max(min, value + d)));
+  const step = (d: number) => onChange(Math.min(max, Math.max(min, value + d * by)));
   return (
     <View
       style={styles.row}

@@ -1,4 +1,4 @@
-# Browse: every quick chip, a mood shelf, see all, a misspelt search, the
+# Browse (opened from Home's search bar): every quick chip, a mood shelf, see all, a misspelt search, the
 # filters sheet, saving from a grid card, and the no-results state.
 appId: host.exp.Exponent
 ---
@@ -6,8 +6,7 @@ appId: host.exp.Exponent
     clearState: true
 - openLink: ${METRO_URL}
 - runFlow: subflows/_setup_skip_welcome.yaml
-- tapOn:
-    id: "tab-browse"
+- runFlow: subflows/_open_browse.yaml
 - assertVisible: "Discover"
 - assertVisible:
     id: "browse-featured"
@@ -164,6 +163,8 @@ appId: host.exp.Exponent
     id: "browse-search-clear"
 - hideKeyboard
 - tapOn:
+    id: "back"
+- tapOn:
     id: "header-menu"
 - tapOn:
     id: "menu-saved"
@@ -174,8 +175,7 @@ appId: host.exp.Exponent
     id: "back"
 
 # No results: say so, and offer a way out.
-- tapOn:
-    id: "tab-browse"
+- runFlow: subflows/_open_browse.yaml
 - tapOn:
     id: "browse-search"
 - inputText: "zzzzqqq"

@@ -8,7 +8,6 @@ import { CUPBOARD_CATEGORIES } from '@/domain/cupboard/kitchen';
 import { ingredientName } from '@/store/cookable';
 import { JarChip } from '@/ui/patterns/JarChip';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
-import { Button } from '@/ui/primitives/Button';
 import { Icon, type IconName } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
@@ -30,7 +29,7 @@ export function UnlockRows({ unlocks, onHave, onList }: UnlockProps) {
   if (unlocks.length === 0) return null;
   return (
     <View>
-      <SectionHeader kicker="Add one thing" title="Get closer to dinner" />
+      <SectionHeader kicker="Unlock more" title="Add one thing" />
       {unlocks.map((u, i) => {
         const name = capitalise(ingredientName(u.id));
         return (
@@ -96,9 +95,9 @@ function SmallPill({
   );
 }
 
-type JarProps = { ids: readonly string[]; onRemove: (id: string) => void; onClear: () => void };
+type JarProps = { ids: readonly string[]; onRemove: (id: string) => void };
 
-export function Jars({ ids, onRemove, onClear }: JarProps) {
+export function Jars({ ids, onRemove }: JarProps) {
   const styles = useStyles();
   const dark = useTheme().name === 'dark';
   const palette = dark ? PANTRY_CATEGORY_DARK : PANTRY_CATEGORY;
@@ -108,12 +107,6 @@ export function Jars({ ids, onRemove, onClear }: JarProps) {
   })).filter((g) => g.ids.length > 0);
   return (
     <View style={styles.groups}>
-      <View style={styles.jarsHead}>
-        <Text variant="kickerSection" style={styles.grow} numberOfLines={1}>
-          {`Your cupboard · ${ids.length}`}
-        </Text>
-        <Button label="Clear" kind="destructive" onPress={onClear} testID="cupboard-clear" />
-      </View>
       {groups.map((g) => (
         <View key={g.category} testID={`jar-group-${g.category}`}>
           <View
@@ -199,8 +192,6 @@ const useStyles = makeStyles(({ colours }) => ({
   },
   pressed: { opacity: PRESSED.row },
   groups: { gap: CUPBOARD.groupGap },
-  jarsHead: { flexDirection: 'row', alignItems: 'center', gap: SPACE.sm },
-  grow: { flex: 1 },
   groupHead: { flexDirection: 'row', alignItems: 'center', gap: CUPBOARD.groupHeadGap, marginBottom: CUPBOARD.groupHeadGap },
   groupName: { opacity: CUPBOARD.groupNameOpacity },
   rule: { flex: 1, height: StyleSheet.hairlineWidth, opacity: CUPBOARD.groupRuleOpacity },

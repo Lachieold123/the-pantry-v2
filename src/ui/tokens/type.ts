@@ -145,6 +145,7 @@ export const RADIUS = { xs: 6, sm: 10, md: 12, lg: 14, xl: 16, card: 18, sheetSm
 
 type Shadow = { shadowOpacity: number; shadowRadius: number; shadowOffset: { width: number; height: number }; elevation: number };
 export const SHADOW = {
+  fab: { shadowOpacity: 0.45, shadowRadius: 12, shadowOffset: { width: 0, height: 8 }, elevation: 8 },
   toast: { shadowOpacity: 0.35, shadowRadius: 14, shadowOffset: { width: 0, height: 6 }, elevation: 8 },
   drawer: { shadowOpacity: 0.18, shadowRadius: 24, shadowOffset: { width: 6, height: 0 }, elevation: 8 },
   sheet: { shadowOpacity: 0.25, shadowRadius: 24, shadowOffset: { width: 0, height: -8 }, elevation: 12 },
@@ -165,6 +166,10 @@ export const ASPECT = { card: 4 / 3, hero: 16 / 9, square: 1, portrait: 4 / 5, s
 export const CHROME = {
   headerRow: 40,
   avatar: 36,
+  /** The centre "+": the button, the ring of page colour round it, and its lift. */
+  fab: 56,
+  fabRing: 5,
+  fabBottom: 6,
   tabIcon: 24,
   drawerMax: 320,
   drawerMin: 280,
