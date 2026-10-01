@@ -1,3 +1,3 @@
-import { CookmarksScreen } from '@/features/saved/LibraryScreens';
+import { CookmarksScreen } from '@/features/saved/CookmarksScreen';
 
 export default CookmarksScreen;

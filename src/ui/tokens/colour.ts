@@ -173,6 +173,25 @@ export const FIXED = {
   /** Darkens the spinner's peek cards so they read as the deck, not choices. */
   peekDim: 'rgba(0,0,0,0.55)',
   shadow: '#000000',
+  /** Welcome and the taste quiz sit on a dark photo in both modes, as v1's video did. */
+  videoBg: '#000000',
+  videoInk: '#1A1A1A',
+  videoKicker: 'rgba(255,255,255,0.9)',
+  videoSoft: 'rgba(255,255,255,0.82)',
+  videoSub: 'rgba(255,255,255,0.7)',
+  videoQuiet: 'rgba(255,255,255,0.45)',
+  glassTile: 'rgba(255,255,255,0.12)',
+  glassChip: 'rgba(255,255,255,0.14)',
+  glassBorder: 'rgba(255,255,255,0.16)',
+  glassPill: 'rgba(255,255,255,0.18)',
+  glassTrack: 'rgba(255,255,255,0.22)',
+  glassOutline: 'rgba(255,255,255,0.3)',
+  videoScrim50: 'rgba(0,0,0,0.5)',
+  videoScrim55: 'rgba(0,0,0,0.55)',
+  videoScrim70: 'rgba(0,0,0,0.7)',
+  videoScrim72: 'rgba(0,0,0,0.72)',
+  videoScrim88: 'rgba(0,0,0,0.88)',
+  videoScrim90: 'rgba(0,0,0,0.9)',
 } as const;
 
 /** Photo scrims, as gradient stops. */

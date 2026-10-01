@@ -1,3 +1,3 @@
-import { RecentScreen } from '@/features/saved/LibraryScreens';
+import { RecentScreen } from '@/features/saved/RecentScreen';
 
 export default RecentScreen;

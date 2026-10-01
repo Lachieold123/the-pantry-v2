@@ -144,7 +144,8 @@ export function parseIngredientLine(raw: string, match?: IngredientMatcher): Par
   if (quantity === undefined) issues.push(SERVING_WORDS.test(raw) ? 'serving-suggestion' : 'no-quantity');
   if (/\band\b|\bor\b|&/i.test(item) && !/\bsalt and (black )?pepper\b/i.test(item)) issues.push('multiple-ingredients');
 
-  const ingredientId = match?.(item);
+  // "1 cinnamon stick" reads as a stick unit of "cinnamon", but a stick is its own thing to buy, not ground cinnamon.
+  const ingredientId = (unit === 'stick' ? match?.(`${item} stick`) : undefined) ?? match?.(item);
   if (!ingredientId) issues.push('no-ingredient-match');
 
   const line: IngredientLine = { item, raw };

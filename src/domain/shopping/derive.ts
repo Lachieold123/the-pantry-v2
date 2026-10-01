@@ -6,7 +6,7 @@
 import { AISLES, normaliseWords, type AisleId, type IngredientIndex } from '../ingredients/database';
 import type { UnitSystem } from '../ingredients/format';
 import { formatQuantity } from '../ingredients/format';
-import { mapQuantity } from '../ingredients/quantity';
+import { mapQuantity, upper } from '../ingredients/quantity';
 import type { IngredientLine } from '../ingredients/types';
 import { UNITS } from '../ingredients/units';
 import { combineZestAndJuice, displayName, mergeAmounts, needOf } from './amounts';
@@ -28,6 +28,7 @@ export {
   toggleExtra,
   untickLeavesCupboard,
   type CarriedExtra,
+  type ListAddition,
   type ListExtra,
   type WeekListEdits,
 } from './edits';
@@ -72,6 +73,23 @@ function lineKey(line: IngredientLine): string {
   return `text:${normaliseWords(line.item).join(' ')}`;
 }
 
+/**
+ * Roughly how much juice one fruit gives, in millilitres. Recipes ask for
+ * "1 tbsp lime juice"; you buy limes, so the list says "Lime, 1" rather than
+ * "Lime, 1 tbsp + 1".
+ */
+const JUICE_PER_FRUIT_ML: Readonly<Record<string, number>> = { lime: 30, lemon: 45, orange: 80 };
+
+function asWholeFruit(line: IngredientLine): IngredientLine {
+  const perFruit = line.ingredientId ? JUICE_PER_FRUIT_ML[line.ingredientId] : undefined;
+  const base = line.unit ? UNITS[line.unit].base : undefined;
+  if (!perFruit || line.quantity === undefined || !line.unit || UNITS[line.unit].kind !== 'volume' || base === undefined) return line;
+  const fruits = Math.max(1, Math.ceil((upper(line.quantity) * base) / perFruit - 1e-9));
+  const whole: IngredientLine = { ...line, quantity: fruits };
+  delete whole.unit;
+  return whole;
+}
+
 export function deriveShoppingList(args: {
   /** Every entry in the week: edits are kept over the whole week, so a day passing never undoes them (F11). */
   entries: readonly PlanEntry[];
@@ -93,12 +111,25 @@ export function deriveShoppingList(args: {
     const ratio = entry.servings / recipe.servings;
     const shown = shownFrom === undefined || entry.day >= shownFrom;
     for (const line of combineZestAndJuice(allLines(recipe))) {
-      const scaled = line.quantity === undefined ? line : { ...line, quantity: mapQuantity(line.quantity, (n) => n * ratio) };
+      const scaled = asWholeFruit(line.quantity === undefined ? line : { ...line, quantity: mapQuantity(line.quantity, (n) => n * ratio) });
       const key = lineKey(line);
       const list = groups.get(key) ?? [];
       list.push({ line: scaled, entryId: entry.id, recipeId: entry.recipeId, shown });
       groups.set(key, list);
     }
+  }
+
+  // Known ingredients added by hand join the plan's lines, so they merge and tick like them.
+  for (const extra of edits.extras) {
+    if (!extra.ingredientId) continue;
+    const list = groups.get(extra.ingredientId) ?? [];
+    list.push({
+      line: { item: extra.text, raw: extra.text, ingredientId: extra.ingredientId },
+      entryId: `extra:${extra.id}`,
+      recipeId: '',
+      shown: true,
+    });
+    groups.set(extra.ingredientId, list);
   }
 
   const bySection = new Map<AisleId, ShoppingItem[]>();
@@ -130,7 +161,7 @@ export function deriveShoppingList(args: {
       name: displayName(def, fallback, amounts, printed),
       aisle: def?.aisle ?? 'other',
       amount: printed.join(' + '),
-      recipeIds: [...new Set(shown.map((c) => c.recipeId))],
+      recipeIds: [...new Set(shown.map((c) => c.recipeId).filter(Boolean))],
       optional: shown.every((c) => c.line.optional === true),
       checked: belongs && covers(tick.need, need),
       sourceStamp,
@@ -150,9 +181,10 @@ export function deriveShoppingList(args: {
   return {
     sections: AISLES.filter((a) => bySection.has(a)).map((aisle) => ({ aisle, items: (bySection.get(aisle) ?? []).sort(byName) })),
     inCupboard: inCupboard.sort(byName),
+    // Known ingredients added by hand are lines above, so only free text shows as an extra.
     extras: [
       ...carried.map(({ extra, fromWeek }) => ({ extra, checked: edits.checkedExtras.includes(extra.id), fromWeek })),
-      ...edits.extras.map((extra) => ({ extra, checked: edits.checkedExtras.includes(extra.id) })),
+      ...edits.extras.filter((x) => !x.ingredientId).map((extra) => ({ extra, checked: edits.checkedExtras.includes(extra.id) })),
     ],
     removedCount,
   };

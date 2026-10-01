@@ -6,7 +6,6 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { needLine } from '@/domain/cupboard/cookable';
-import { goBackOr } from '@/lib/navigation';
 import { ingredientName, useCookableNow } from '@/store/cookable';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { PushedHeader } from '@/ui/patterns/PushedHeader';
@@ -14,6 +13,7 @@ import { RecipeCard } from '@/ui/patterns/RecipeCard';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { useTheme } from '@/ui/theme/ThemeProvider';
 import { SPACE } from '@/ui/tokens/type';
+import { goBack } from '@/lib/navigation';
 
 export function CookableList() {
   const router = useRouter();
@@ -41,12 +41,12 @@ export function CookableList() {
         <EmptyState
           title="Nothing close yet"
           body="Add a few more things to your cupboard and recipes will show up here."
-          action={{ label: 'Back to the cupboard', onPress: () => goBackOr(router) }}
+          action={{ label: 'Back to the cupboard', onPress: () => goBack(router) }}
         />
       }
       renderSectionHeader={({ section }) => (
         <View style={{ paddingTop: SPACE.lg }}>
-          <SectionHeader kicker={`${section.data.length}`} title={section.title} />
+          <SectionHeader kicker={`${section.data.length} ${section.data.length === 1 ? 'recipe' : 'recipes'}`} title={section.title} />
         </View>
       )}
       renderItem={({ item }) => (

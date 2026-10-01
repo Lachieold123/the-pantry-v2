@@ -1,4 +1,4 @@
-import { CollectionsScreen } from '@/features/saved/LibraryScreens';
+import { CollectionsScreen } from '@/features/saved/CollectionsScreen';
 
 // A crash here replaces this screen only, with a way to retry or go home (audit F69).
 export { RootErrorScreen as ErrorBoundary } from '@/features/app/RootErrorScreen';

@@ -1,7 +1,7 @@
 # The recipe page: save with undo, plan it, share, mark cooked with undo,
 # servings and units, tick an ingredient, and the "⋯" menu.
 # Uses Carbonara (written for 2, 200 g spaghetti).
-appId: com.lachlanoldfield.thepantry
+appId: host.exp.Exponent
 ---
 - launchApp:
     clearState: true
@@ -42,7 +42,7 @@ appId: com.lachlanoldfield.thepantry
 - takeScreenshot: recipe-plan-sheet
 - tapOn:
     id: "plan-confirm"
-- assertVisible: "Carbonara planned for lunch .*"
+- assertVisible: "Carbonara planned for .* lunch"
 
 # Share opens the system share sheet; close it and carry on.
 - tapOn:
@@ -61,7 +61,7 @@ appId: com.lachlanoldfield.thepantry
 - assertVisible: "Marked as cooked"
 - tapOn:
     id: "toast-undo"
-- assertVisible: "Cook, mark as cooked"
+- assertVisible: "Mark as cooked"
 
 # Servings: up two, reset, up one, imperial, done.
 - tapOn:
@@ -125,7 +125,7 @@ appId: com.lachlanoldfield.thepantry
     id: "recipe-more"
 - tapOn:
     id: "action-collect"
-- assertVisible: "Add to a collection"
+- assertVisible: "Add to collection"
 - assertVisible: "No collections yet. Name your first one below."
 - tapOn:
     id: "collect-new-name"

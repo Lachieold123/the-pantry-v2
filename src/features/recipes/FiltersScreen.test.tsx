@@ -34,10 +34,11 @@ describe('FiltersScreen', () => {
     expect(mockBack).toHaveBeenCalledTimes(1);
   });
 
-  it('says "1 recipe matches", in the singular', async () => {
+  it('says "1 meal matches" and "Show 1 recipe", in the singular', async () => {
     await act(() => useRecipeFilters.setState({ query: 'moussaka' }));
     await render(<FiltersScreen />);
-    expect(screen.getByText(/^1 recipe matches$/i)).toBeTruthy();
+    expect(screen.getByText(/^1 meal matches$/i)).toBeTruthy();
+    expect(screen.getByText('Show 1 recipe')).toBeTruthy();
   });
 
   it('titles its sections in v1’s 16/800 sans, not the serif section header (F199)', async () => {

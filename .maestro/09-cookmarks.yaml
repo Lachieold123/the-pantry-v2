@@ -1,5 +1,6 @@
-# Cookmarks: the empty state and its way out, then a saved recipe listed and opened.
-appId: com.lachlanoldfield.thepantry
+# Cookmarks (v1's "Saved" page): the empty state and its way out, then a saved
+# recipe listed as a cream card, opened, unsaved from its disc and put back with Undo.
+appId: host.exp.Exponent
 ---
 - launchApp:
     clearState: true
@@ -12,6 +13,7 @@ appId: com.lachlanoldfield.thepantry
 - assertVisible:
     id: "cookmarks-empty"
 - assertVisible: "Nothing saved yet"
+- assertVisible: "0 items"
 - takeScreenshot: cookmarks-empty
 - tapOn:
     id: "cookmarks-empty-action"
@@ -34,6 +36,7 @@ appId: com.lachlanoldfield.thepantry
 - assertVisible: "Cookmarks, 1"
 - tapOn:
     id: "menu-saved"
+- assertVisible: "1 item"
 - assertVisible:
     id: "recipe-card-carbonara"
 - takeScreenshot: cookmarks-one
@@ -46,3 +49,14 @@ appId: com.lachlanoldfield.thepantry
     id: "back"
 - assertVisible:
     id: "cookmarks-screen"
+
+# Unsave from the card's disc; Undo puts it back.
+- tapOn:
+    id: "recipe-card-carbonara-save"
+- assertVisible: "Removed from Cookmarks"
+- assertVisible:
+    id: "cookmarks-empty"
+- tapOn:
+    id: "toast-undo"
+- assertVisible:
+    id: "recipe-card-carbonara"

@@ -19,7 +19,17 @@ export type TextProps = RNTextProps & {
   ref?: Ref<RNText>;
 };
 
-const MUTED_BY_DEFAULT = new Set<TextVariant>(['kicker', 'kickerSection', 'kickerSmall', 'meta', 'metaSmall', 'caption', 'infoLabel']);
+const MUTED_BY_DEFAULT = new Set<TextVariant>([
+  'kicker',
+  'kickerSection',
+  'kickerSmall',
+  'meta',
+  'metaSmall',
+  'caption',
+  'infoLabel',
+  'reasonKey',
+  'hint',
+]);
 
 /** Big display type may grow less than body text before it wraps awkwardly. */
 function maxScale(size: number): number {

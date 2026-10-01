@@ -1,9 +1,9 @@
-# Waits for The Pantry's development build to load its bundle after `openLink`.
+# Waits for The Pantry to finish loading in Expo Go after `openLink`.
 # Only used straight after `launchApp: clearState: true`, so the app always
 # opens on the welcome screen.
-appId: com.lachlanoldfield.thepantry
+appId: host.exp.Exponent
 ---
-# iOS may ask before a link opens the app ("Open in The Pantry?"). OS dialog, so optional.
+# iOS asks before a link opens another app ("Open in Expo Go?"). OS dialog, so optional.
 - tapOn:
     text: "Open"
     optional: true
@@ -12,9 +12,8 @@ appId: com.lachlanoldfield.thepantry
     visible:
       id: "welcome-skip"
     timeout: 240000
-# The development build shows its developer-menu introduction on a fresh
-# install. It is the dev client's own overlay, not the app, so close it only if
-# it is there.
+# Expo Go shows its developer-menu introduction on a fresh install. It is
+# Expo Go's own overlay, not the app, so close it only if it is there.
 - waitForAnimationToEnd:
     timeout: 3000
 - runFlow:
@@ -22,3 +21,19 @@ appId: com.lachlanoldfield.thepantry
       visible: "Continue"
     commands:
       - tapOn: "Continue"
+# Expo Go (SDK 57) floats a "tools" gear over the top-right corner, right on
+# top of the welcome screen's Skip, so taps meant for Skip open Expo's menu.
+# Open that menu once from the gear and turn the button off. clearState
+# brings it back on every launch, so this runs for every flow.
+- runFlow:
+    when:
+      visible: "Gear Shape, Filled"
+    commands:
+      - tapOn: "Gear Shape, Filled"
+      - scrollUntilVisible:
+          element: "Tools button"
+          direction: DOWN
+      - tapOn: "Tools button"
+      - tapOn: "Close"
+      - waitForAnimationToEnd:
+          timeout: 3000

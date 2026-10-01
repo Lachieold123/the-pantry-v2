@@ -15,7 +15,8 @@ import { AppChrome } from '@/ui/theme/AppChrome';
 import { ThemeProvider, useTheme } from '@/ui/theme/ThemeProvider';
 
 // The tabs sit under every other screen, even one opened cold from a link (a
-// shared recipe, a notification), so Back and Done always have somewhere to go (audit F48).
+// shared recipe, a notification, the menu), so Back and Done always have somewhere
+// to go and the menu dims a real screen (audit F48).
 export const unstable_settings = { anchor: '(tabs)' };
 
 void SplashScreen.preventAutoHideAsync();
@@ -51,7 +52,8 @@ export default function RootLayout() {
 }
 
 // Short, focused tasks open as sheets over the current screen (map §6).
-const SHEET = { presentation: 'formSheet' as const, sheetAllowedDetents: [0.75, 1], sheetGrabberVisible: true };
+const SHEET = { presentation: 'formSheet' as const, sheetAllowedDetents: [0.75, 1], sheetGrabberVisible: false };
+// The sheet draws its own grabber, so it looks the same on every platform; the system one would make two.
 
 function RootStack() {
   const { colours } = useTheme();

@@ -8,8 +8,12 @@ import { CookScreen } from './CookScreen';
 
 const mockBack = jest.fn();
 jest.mock('expo-router', () => ({ useRouter: () => ({ back: mockBack, canGoBack: () => true }) }));
-jest.mock('expo-keep-awake', () => ({ useKeepAwake: jest.fn() }));
-jest.mock('expo-haptics', () => ({ notificationAsync: jest.fn(), NotificationFeedbackType: { Success: 's' } }));
+jest.mock('expo-keep-awake', () => ({ activateKeepAwakeAsync: jest.fn(async () => undefined), deactivateKeepAwake: jest.fn() }));
+jest.mock('expo-haptics', () => ({
+  notificationAsync: jest.fn(async () => undefined),
+  selectionAsync: jest.fn(async () => undefined),
+  NotificationFeedbackType: { Success: 's' },
+}));
 jest.mock('react-native-safe-area-context', () => ({ useSafeAreaInsets: () => ({ top: 0, bottom: 0, left: 0, right: 0 }) }));
 // Only what Cook Mode uses: the real module needs the native worklets runtime.
 jest.mock('react-native-reanimated', () => {
@@ -41,7 +45,7 @@ test('× leaves straight away when no timer is running', async () => {
 
 test('× asks first while a timer runs, and Keep cooking stays', async () => {
   await render(<CookScreen id={RECIPE} />);
-  await fireEvent.press(screen.getByLabelText('Start a timer for 15 minutes'));
+  await fireEvent.press(screen.getByLabelText('Start a 15 minutes timer'));
   expect(await screen.findByText('Step 1 · 15 minutes')).toBeTruthy();
 
   await fireEvent.press(screen.getByTestId('cook-close'));
@@ -69,7 +73,7 @@ test('Done tapped twice logs one cook', async () => {
 
 test('ingredients show their group headings, capitalised, and a bad servings link falls back', async () => {
   await render(<CookScreen id={RECIPE} servings="Infinity" />);
-  await fireEvent.press(screen.getByTestId('cook-toggle-ingredients'));
+  await fireEvent.press(screen.getByTestId('cook-ingredients'));
   expect(screen.getByText('For 4')).toBeTruthy();
   expect(screen.getByText('Chicken')).toBeTruthy();
   expect(screen.getByText('Cilantro lime rice')).toBeTruthy();

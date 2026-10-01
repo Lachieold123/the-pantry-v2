@@ -1,5 +1,5 @@
 # Every empty state on a fresh install says what's missing and offers a next step.
-appId: com.lachlanoldfield.thepantry
+appId: host.exp.Exponent
 ---
 - launchApp:
     clearState: true

@@ -1,33 +1,18 @@
 // Running timers, pinned above the step. Finished ones say so until dismissed.
-// The clock ticks here, not in Cook Mode, so only this bar re-renders each
-// half second, and it stops once every timer has finished (audit F53).
-import { useEffect, useState } from 'react';
+// The clock ticks here (useTimerClock), not in Cook Mode (audit F53).
 import { View } from 'react-native';
 
-import { anyRunning, formatCountdown, secondsLeft, type CookTimer } from '@/domain/cook/timers';
+import { formatCountdown, secondsLeft, type CookTimer } from '@/domain/cook/timers';
 import { useAnnounce } from '@/ui/a11y/announce';
 import { IconButton } from '@/ui/primitives/IconButton';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { RADIUS, SPACE } from '@/ui/tokens/type';
-
-const TICK_MS = 500;
+import { useTimerClock } from './useTimerClock';
 
 export function TimerBar({ timers, onDismiss }: { timers: CookTimer[]; onDismiss: (id: string) => void }) {
   const styles = useStyles();
-  const [now, setNow] = useState(() => Date.now());
-  const running = anyRunning(timers, now);
-  useEffect(() => {
-    if (!running) return;
-    const tick = () => setNow(Date.now());
-    // Straight away too: a timer just added counts from the real time, not the last tick.
-    const first = setTimeout(tick, 0);
-    const every = setInterval(tick, TICK_MS);
-    return () => {
-      clearTimeout(first);
-      clearInterval(every);
-    };
-  }, [running, timers]);
+  const now = useTimerClock(timers);
   // Say each timer as it finishes: the tint alone is silent to VoiceOver (audit F97).
   const finished = timers.filter((t) => secondsLeft(t, now) === 0);
   useAnnounce(finished.length ? `Time’s up: ${finished.map((t) => t.label).join(', ')}` : null);

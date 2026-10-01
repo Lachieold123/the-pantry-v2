@@ -37,7 +37,8 @@ export function SearchField({ value, onChange, placeholder, label, onSubmit, tes
         autoCapitalize="none"
         clearButtonMode="never"
         maxFontSizeMultiplier={1.6}
-        {...(onSubmit ? { onSubmitEditing: onSubmit } : {})}
+        // With a submit action (add the top match), the keyboard stays up for the next one.
+        {...(onSubmit ? { onSubmitEditing: onSubmit, submitBehavior: 'submit' as const } : {})}
         {...(testID ? { testID } : {})}
         style={styles.input}
       />

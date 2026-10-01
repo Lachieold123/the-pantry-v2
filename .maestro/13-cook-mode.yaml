@@ -1,6 +1,6 @@
-# Cook Mode: next and back, swipe, ingredients, a timer, and Done counts as cooked.
+# Cook Mode: next and previous, swipe, the ingredients sheet, a timer, and Done counts as cooked.
 # Uses Vegetable Lasagna: 8 steps, and the last is "Rest 20 minutes."
-appId: com.lachlanoldfield.thepantry
+appId: host.exp.Exponent
 ---
 - launchApp:
     clearState: true
@@ -13,33 +13,49 @@ appId: com.lachlanoldfield.thepantry
       RECIPE_ID: vegetable-lasagna
 - tapOn:
     id: "recipe-cook"
-- assertVisible: "Step 1 of 8"
+- assertVisible:
+    id: "cook-counter"
+    text: "Step 1 of 8|1 / 8"
 - takeScreenshot: cook-step-1
 
 # Buttons
 - tapOn:
     id: "cook-next"
-- assertVisible: "Step 2 of 8"
+- assertVisible:
+    id: "cook-counter"
+    text: "Step 2 of 8|2 / 8"
 - tapOn:
     id: "cook-back"
-- assertVisible: "Step 1 of 8"
+- assertVisible:
+    id: "cook-counter"
+    text: "Step 1 of 8|1 / 8"
 
 # Swipe left for the next step, right to go back
 - swipe:
     direction: LEFT
-- assertVisible: "Step 2 of 8"
+- assertVisible:
+    id: "cook-counter"
+    text: "Step 2 of 8|2 / 8"
 - swipe:
     direction: RIGHT
-- assertVisible: "Step 1 of 8"
+- assertVisible:
+    id: "cook-counter"
+    text: "Step 1 of 8|1 / 8"
 
-# The ingredients, and back to the steps
+# The ingredients sheet, and back to the steps
 - tapOn:
-    id: "cook-toggle-ingredients"
+    id: "cook-ingredients"
+- assertVisible:
+    id: "cook-ingredients-sheet"
 - assertVisible: "For 6"
 - takeScreenshot: cook-ingredients
 - tapOn:
-    id: "cook-toggle-ingredients"
-- assertVisible: "Step 1 of 8"
+    id: "cook-ingredients-done"
+- assertNotVisible:
+    id: "cook-ingredients-sheet"
+- assertVisible:
+    id: "cook-counter"
+    text: "Step 1 of 8|1 / 8"
 
 # On to the last step
 - repeat:
@@ -47,16 +63,18 @@ appId: com.lachlanoldfield.thepantry
     commands:
       - tapOn:
           id: "cook-next"
-- assertVisible: "Step 8 of 8"
+- assertVisible:
+    id: "cook-counter"
+    text: "Step 8 of 8|8 / 8"
 - assertVisible:
     id: "cook-done"
 
-# Start the timer: "20 minutes" is the underlined part of "Rest 20 minutes.",
+# Start the timer: "20 minutes" is the amber chip inside "Rest 20 minutes.",
 # a phrase inside the step's text, so tap that spot on the text.
 - tapOn:
     id: "cook-step-text"
     point: "35%,50%"
-# iOS asks once whether The Pantry may send notifications (for a timer that ends while locked).
+# iOS asks once whether Expo Go may send notifications (for a timer that ends while locked).
 - tapOn:
     text: "Allow"
     optional: true
@@ -72,7 +90,7 @@ appId: com.lachlanoldfield.thepantry
 - assertVisible: "Vegetable Lasagna cooked. Nice work."
 - assertVisible:
     id: "recipe-screen"
-- assertVisible: "Cooked, mark as cooked again"
+- assertVisible: "Cooked. Mark as cooked again"
 - tapOn:
     id: "back"
 

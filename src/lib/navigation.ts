@@ -27,3 +27,8 @@ export function goToTab(router: Router, href: Href): void {
   if (router.canGoBack()) router.dismissTo(href);
   else router.replace(href);
 }
+
+/** Main's name for goBackOr: one behaviour, both spellings, so either side's screens work. */
+export function goBack(router: Router): void {
+  goBackOr(router);
+}

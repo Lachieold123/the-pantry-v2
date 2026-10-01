@@ -1,12 +1,12 @@
 import { act, render, screen } from '@testing-library/react-native';
 
 import { usePreferences } from '@/store/preferences';
-import { FoodSettings } from './FoodSettings';
+import { PreferenceEditor } from './PreferenceEditors';
 
-describe('FoodSettings', () => {
+describe('the avoid editor', () => {
   // Generous: the first run loads and matches the whole catalogue.
   it('says how many recipes each avoid word hides (F136)', async () => {
-    await render(<FoodSettings />);
+    await render(<PreferenceEditor section="avoid" />);
     expect(screen.queryByTestId('settings-avoid-reach')).toBeNull();
     await act(async () => usePreferences.getState().addAvoidWord('olives'));
     // Kalamata and green olives only (about a dozen dishes): olive oil doesn't count.

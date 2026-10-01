@@ -12,8 +12,8 @@ export function NotFoundScreen() {
       <EmptyState
         title="This page doesn’t exist"
         body="The link may be old or mistyped."
-        // The home tab is called Feed (F84). Back down to the existing tabs, not a second copy on top (F206).
-        action={{ label: 'Go to Feed', onPress: () => goToTab(router, '/') }}
+        // Back down to the existing tabs, not a second copy on top (F206).
+        action={{ label: 'Back to Feed', onPress: () => goToTab(router, '/') }}
         testID="not-found"
       />
     </Screen>

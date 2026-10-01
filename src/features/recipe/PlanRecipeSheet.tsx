@@ -9,7 +9,6 @@ import { parseServings } from '@/domain/recipes/servings';
 import { goBackOr } from '@/lib/navigation';
 import { usePlan } from '@/store/plan';
 import { useRecipe } from '@/store/recipeBook';
-import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { useToast } from '@/ui/patterns/Toast';
 import { useOnce } from '@/ui/patterns/useOnce';
 import { Button } from '@/ui/primitives/Button';
@@ -70,7 +69,9 @@ export function PlanRecipeSheet({ id, servings: requested }: { id: string; servi
       ].map((w) =>
         w.list.length ? (
           <View key={w.title} style={{ gap: SPACE.sm }}>
-            <SectionHeader title={w.title} />
+            <Text variant="kickerSection" accessibilityRole="header">
+              {w.title}
+            </Text>
             <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: SPACE.xs }}>
               {/* Ids by position, so a test can always pick "today" (this-0) or next week's first day (next-0). */}
               {w.list.map((d, i) => (
@@ -88,11 +89,15 @@ export function PlanRecipeSheet({ id, servings: requested }: { id: string; servi
         ) : null,
       )}
       <View style={{ gap: SPACE.sm }}>
-        <SectionHeader title="Meal" />
+        <Text variant="kickerSection" accessibilityRole="header">
+          Meal
+        </Text>
         <Segmented<Slot> label="Meal" options={SLOTS} value={slot} onChange={setSlot} />
       </View>
       <View style={{ gap: SPACE.sm }}>
-        <SectionHeader title="For" />
+        <Text variant="kickerSection" accessibilityRole="header">
+          For
+        </Text>
         <Stepper
           label="Servings"
           value={servings}

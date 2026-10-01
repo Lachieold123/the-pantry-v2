@@ -6,14 +6,14 @@
 // Sundays it opens on next week, because that's the one you're shopping for.
 import { useRouter } from 'expo-router';
 import { useRef, useState } from 'react';
-import { ScrollView, Share, View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 
 import { firstOpenSlot, weekAsText, weekProgress } from '@/domain/plan/summary';
 import { entriesFor, entriesInWeek, fromISODate, isPast, visibleWeeks, weekDays, weekStart, type ISODate } from '@/domain/plan/week';
 import { AISLE_LABELS } from '@/domain/recipes/labels';
 import { formatListForSharing } from '@/domain/shopping/derive';
+import { shareText } from '@/lib/share';
 import { longDate, shortDate, weekdayName, weekRange } from '@/lib/dates';
-import { logger } from '@/lib/logger';
 import { useToday } from '@/lib/useToday';
 import { usePlan } from '@/store/plan';
 import { useRecipeLookup } from '@/store/recipeBook';
@@ -23,7 +23,7 @@ import { IconButton } from '@/ui/primitives/IconButton';
 import { Screen } from '@/ui/primitives/Screen';
 import { Text } from '@/ui/primitives/Text';
 import { UnderlineTabs } from '@/ui/primitives/UnderlineTabs';
-import { PLAN, SPACE } from '@/ui/tokens/type';
+import { CHROME, PLAN, SPACE } from '@/ui/tokens/type';
 import { DaySlots } from './DaySlots';
 import { DaySuggestions, ListSummaryCard, WeekProgress } from './PlanParts';
 import { ShoppingListView } from './ShoppingListView';
@@ -76,12 +76,9 @@ export function PlanScreen() {
       toast({ message: empty });
       return;
     }
-    try {
-      await Share.share({ message: text });
-    } catch (e) {
-      logger.warn('share', "couldn't open the share sheet", e);
-      toast({ message: 'Couldn’t open sharing. Try again.', tone: 'problem' });
-    }
+    const result = await shareText(text);
+    if (result === 'copied') toast({ message: 'Copied. Paste it into a message.' });
+    if (result === 'failed') toast({ message: 'Couldn’t open sharing. Try again.', tone: 'problem' });
   };
   const share = () =>
     view === 'week'
@@ -127,7 +124,7 @@ export function PlanScreen() {
             <WeekProgress planned={progress.planned} total={progress.total} />
           </View>
         </TitleBlock>
-        <View style={{ marginBottom: PLAN.afterTabs }}>
+        <View style={{ marginTop: CHROME.titleBottom, marginBottom: PLAN.afterTabs }}>
           <UnderlineTabs<PlanView> label="Plan view" options={VIEWS} value={view} onChange={setView} />
         </View>
         {view === 'week' ? (

@@ -150,6 +150,8 @@ describe('formatting', () => {
     const mince = parse('500g beef mince').line;
     assert.equal(formatLine(scaleLine(mince, 1 / 4), 'metric'), '125 g beef mince');
     assert.equal(formatLine(scaleLine(mince, 3), 'metric'), '1½ kg beef mince');
+    // Finer than a quarter reads as a decimal: 2⅛ L is hard to measure.
+    assert.equal(formatQuantity(2.125, 'l', 'metric'), '2.1 L');
   });
   it('rounds counted things up to the nearest half', () => {
     const onion = parse('1 onion, diced').line;
@@ -195,5 +197,17 @@ describe('counted items agree with their number after scaling (K-2)', () => {
   it('leaves the wording alone when the number stays on the same side of one', () => {
     assert.equal(scaled('2 bok choy', 2), '4 bok choy');
     assert.equal(scaled('3 eggs', 2), '6 eggs');
+  });
+});
+
+describe('things bought whole', () => {
+  const spices = buildIngredientIndex([
+    { id: 'cinnamon-stick', name: 'cinnamon stick', aisle: 'herbs-spices', aliases: [], groups: [] },
+    { id: 'ground-cinnamon', name: 'ground cinnamon', aisle: 'herbs-spices', aliases: ['cinnamon'], groups: [] },
+  ]);
+  const read = (raw: string) => parseIngredientLine(raw, spices.match).line.ingredientId;
+  it('reads "1 cinnamon stick" as a cinnamon stick, not ground cinnamon', () => {
+    assert.equal(read('1 cinnamon stick'), 'cinnamon-stick');
+    assert.equal(read('1 tsp ground cinnamon'), 'ground-cinnamon');
   });
 });

@@ -1,16 +1,16 @@
-// The pieces of the Cupboard tab (D-030, cupboard-brief §4.4): the add bar,
-// the "what you can cook" rail, "Add one thing", the jars and quick adds.
+// The pieces of the Cupboard tab (D-030, cupboard-brief §4.4): the add bar
+// and the "what you can cook" rail. The lists below them (Add one thing, the
+// jars, quick adds) are in CupboardLists.
 import { useRouter } from 'expo-router';
 import { useMemo, useState } from 'react';
 import { ScrollView, View } from 'react-native';
 
-import { INGREDIENTS, KITCHEN } from '@/data/catalogue/catalogue';
+import { INGREDIENTS } from '@/data/catalogue/catalogue';
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { needLine, type CookableMatch } from '@/domain/cupboard/cookable';
 import { CUPBOARD_CATEGORIES } from '@/domain/cupboard/kitchen';
 import { normaliseWords } from '@/domain/ingredients/database';
 import { ingredientName } from '@/store/cookable';
-import { JarChip } from '@/ui/patterns/JarChip';
 import { MatchCard } from '@/ui/patterns/MatchCard';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { Button } from '@/ui/primitives/Button';
@@ -62,6 +62,12 @@ export function AddBar({ have, onAdd }: { have: ReadonlySet<string>; onAdd: (id:
   const results = useMemo(() => searchIngredients(query, have), [query, have]);
   // Only a close match: "salt" is the staple, even though salted things turn up too.
   const staple = useMemo(() => searchIngredients(query, have, STAPLES).find((r) => r.close), [query, have]);
+  // Adding empties the field (as v1 did) so the next thing can be typed straight away;
+  // the page keeps taps "handled", so the keyboard stays up.
+  const pick = (id: string) => {
+    onAdd(id);
+    setQuery('');
+  };
   return (
     <View style={{ gap: SPACE.sm }}>
       <SearchField
@@ -69,6 +75,11 @@ export function AddBar({ have, onAdd }: { have: ReadonlySet<string>; onAdd: (id:
         onChange={setQuery}
         placeholder="Search ingredients to add…"
         label="Add an ingredient"
+        onSubmit={() => {
+          // Return adds the best match, so "rice ⏎" is enough. Something already in stays put.
+          const top = results[0];
+          if (top && !top.inCupboard) pick(top.id);
+        }}
         testID="cupboard-search"
       />
       {staple ? (
@@ -90,8 +101,7 @@ export function AddBar({ have, onAdd }: { have: ReadonlySet<string>; onAdd: (id:
               label={r.inCupboard ? `${r.name} · in cupboard` : r.name}
               accessibilityLabel={r.inCupboard ? `${r.name}, already in your cupboard` : `Add ${r.name} to the cupboard`}
               selected={r.inCupboard}
-              // The field keeps its text so you can keep adding from the same search.
-              onPress={() => (r.inCupboard ? undefined : onAdd(r.id))}
+              onPress={() => (r.inCupboard ? undefined : pick(r.id))}
               testID={`cupboard-add-${r.id}`}
             />
           ))}
@@ -129,7 +139,7 @@ export function CookRail({ ready, nearly }: { ready: CookableMatch[]; nearly: Co
         horizontal
         showsHorizontalScrollIndicator={false}
         style={{ marginHorizontal: -SPACE.gutter }}
-        contentContainerStyle={{ gap: SPACE.sm, paddingHorizontal: SPACE.gutter }}
+        contentContainerStyle={{ gap: SPACE.sm, paddingHorizontal: SPACE.gutter, alignItems: 'flex-start' }}
       >
         {matches.map((m) => (
           <MatchCard
@@ -143,93 +153,6 @@ export function CookRail({ ready, nearly }: { ready: CookableMatch[]; nearly: Co
           />
         ))}
       </ScrollView>
-    </View>
-  );
-}
-
-type UnlockProps = { unlocks: { id: string; unlocks: number }[]; onHave: (id: string) => void; onList: (id: string) => void };
-
-export function UnlockRows({ unlocks, onHave, onList }: UnlockProps) {
-  if (unlocks.length === 0) return null;
-  return (
-    <View>
-      <SectionHeader kicker="Add one thing" title="Get closer to dinner" />
-      {unlocks.map((u) => (
-        <View
-          key={u.id}
-          style={{ flexDirection: 'row', alignItems: 'center', gap: SPACE.sm, paddingVertical: SPACE.xs }}
-          testID={`unlock-${u.id}`}
-        >
-          <View style={{ flex: 1 }}>
-            <Text variant="row">{capitalise(ingredientName(u.id))}</Text>
-            <Text variant="meta">{u.unlocks === 1 ? 'Makes 1 more recipe ready' : `Makes ${u.unlocks} more recipes ready`}</Text>
-          </View>
-          <Button label="I have it" kind="quiet" onPress={() => onHave(u.id)} testID={`unlock-${u.id}-have`} />
-          <Button label="List" icon="add" kind="secondary" onPress={() => onList(u.id)} testID={`unlock-${u.id}-list`} />
-        </View>
-      ))}
-    </View>
-  );
-}
-
-type JarProps = { ids: readonly string[]; onRemove: (id: string) => void; onClear: () => void };
-
-export function Jars({ ids, onRemove, onClear }: JarProps) {
-  const groups = CUPBOARD_CATEGORIES.map((category) => ({
-    category,
-    ids: ids.filter((id) => KITCHEN.category(id) === category).sort((a, b) => ingredientName(a).localeCompare(ingredientName(b))),
-  })).filter((g) => g.ids.length > 0);
-  return (
-    <View style={{ gap: SPACE.md }}>
-      <View style={{ flexDirection: 'row', alignItems: 'center', gap: SPACE.sm }}>
-        <Text variant="kickerSection" style={{ flex: 1 }} numberOfLines={1}>
-          {`Your cupboard · ${ids.length}`}
-        </Text>
-        <Button label="Clear" kind="quiet" onPress={onClear} testID="cupboard-clear" />
-      </View>
-      {groups.map((g) => (
-        <View key={g.category} style={{ gap: SPACE.xs }}>
-          <Text variant="kickerSmall" colour="ink" accessibilityRole="header">
-            {`${CATEGORY_LABEL[g.category]} · ${g.ids.length}`}
-          </Text>
-          <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: SPACE.xs }}>
-            {g.ids.map((id) => (
-              <JarChip
-                key={id}
-                name={ingredientName(id)}
-                category={g.category}
-                onRemove={() => onRemove(id)}
-                testID={`cupboard-item-${id}`}
-              />
-            ))}
-          </View>
-        </View>
-      ))}
-    </View>
-  );
-}
-
-export function QuickAdds({ ids, onAdd }: { ids: readonly string[]; onAdd: (id: string) => void }) {
-  if (ids.length === 0) return null;
-  return (
-    <View style={{ gap: SPACE.sm }}>
-      <Text variant="kickerSection" accessibilityRole="header">
-        Quick adds
-      </Text>
-      <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: SPACE.xs }}>
-        {ids.map((id) => (
-          <Chip
-            key={id}
-            icon="add"
-            role="button"
-            label={capitalise(ingredientName(id))}
-            accessibilityLabel={`Add ${capitalise(ingredientName(id))}`}
-            selected={false}
-            onPress={() => onAdd(id)}
-            testID={`quick-add-${id}`}
-          />
-        ))}
-      </View>
     </View>
   );
 }

@@ -92,7 +92,10 @@ export function spinReasons({ recipe, cupboard, saved, cooked, nameOf }: ReasonI
   }
   const minutes = totalMinutes(recipe);
   if (minutes > 0) {
-    const split = recipe.prepMinutes && recipe.cookMinutes ? `: ${recipe.prepMinutes} prep, ${recipe.cookMinutes} cooking` : '';
+    const split =
+      recipe.prepMinutes && recipe.cookMinutes
+        ? ` · ${formatMinutes(recipe.prepMinutes)} prep, ${formatMinutes(recipe.cookMinutes)} cooking`
+        : '';
     reasons.push({ key: 'Time', value: `${formatMinutes(minutes)}${split}` });
   }
   reasons.push({

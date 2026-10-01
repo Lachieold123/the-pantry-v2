@@ -4,7 +4,7 @@ import { useRouter } from 'expo-router';
 import { View } from 'react-native';
 import { useShallow } from 'zustand/react/shallow';
 
-import { goBackOr, goToTab } from '@/lib/navigation';
+import { goBack, goToTab } from '@/lib/navigation';
 import { usePreferences, type Appearance } from '@/store/preferences';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { ErrorState } from '@/ui/patterns/ErrorState';
@@ -42,7 +42,7 @@ export function GalleryScreen() {
       <TitleBlock
         kicker="Development only"
         title="Gallery"
-        action={<IconButton icon="close" label="Close gallery" onPress={() => goBackOr(router)} testID="gallery-close" />}
+        action={<IconButton icon="close" label="Close gallery" onPress={() => goBack(router)} testID="gallery-close" />}
       />
       <Segmented<Appearance> label="Theme" options={THEMES} value={appearance === 'dark' ? 'dark' : 'light'} onChange={setAppearance} />
       <Switch label="High contrast" value={highContrast} onChange={setHighContrast} testID="gallery-high-contrast" />

@@ -127,6 +127,10 @@ describe('upcoming meals', () => {
   it('is zero for an empty plan', () => {
     assert.equal(upcomingCount([], '2026-09-30'), 0);
   });
+  it('counts a meal once, however many dishes are in it', () => {
+    const two = [entry('2026-09-30'), { ...entry('2026-09-30'), id: 'second', recipeId: 'salad' }];
+    assert.equal(upcomingCount(two, '2026-09-30'), 1);
+  });
 });
 
 describe('the week you shop for', () => {

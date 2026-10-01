@@ -11,6 +11,11 @@ describe('metric liquids', () => {
     assert.equal(formatQuantity(1500, 'ml', 'metric'), '1½ L');
     assert.equal(formatQuantity(750, 'ml', 'metric'), '750 ml');
   });
+  it('never print "1000 ml" or "1000 g": an amount that rounds to 1000 is already 1 L or 1 kg', () => {
+    assert.equal(formatQuantity(999, 'ml', 'metric'), '1 L');
+    assert.equal(formatQuantity(998, 'g', 'metric'), '1 kg');
+    assert.equal(formatQuantity(997, 'ml', 'metric'), '995 ml');
+  });
 });
 
 describe('imperial liquids', () => {

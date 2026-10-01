@@ -41,9 +41,9 @@ test('without a param, or with a bad one, opens at the recipe’s own servings',
   expect(screen.getByLabelText('Serves 4. Change servings and units')).toBeTruthy();
 });
 
-test('the status bar is light over the photo and dark once the sheet covers it (F113)', async () => {
+test('the status bar stays light: the sheet scrolls inside itself, under the photo (F113)', async () => {
   await render(<RecipeScreen id={RECIPE} />);
   expect(screen.getByTestId('status-bar').props.accessibilityLabel).toBe('light');
   await fireEvent.scroll(screen.getByTestId('recipe-screen'), { nativeEvent: { contentOffset: { y: 400 } } });
-  expect(screen.getByTestId('status-bar').props.accessibilityLabel).toBe('dark');
+  expect(screen.getByTestId('status-bar').props.accessibilityLabel).toBe('light');
 });

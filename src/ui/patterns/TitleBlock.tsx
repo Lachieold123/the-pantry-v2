@@ -1,11 +1,12 @@
 // The title at the top of a tab (Browse, Cupboard, Plan): a kicker, a big
 // serif title and an optional subtitle, with an optional action beside the
-// title (spec §4.4).
+// title (spec §4.4). The space below it belongs to the page, which knows what
+// comes next (v1 spaced each screen's title differently).
 import type { ReactNode } from 'react';
 import { View } from 'react-native';
 
 import { Text } from '@/ui/primitives/Text';
-import { CHROME, SPACE } from '@/ui/tokens/type';
+import { SPACE } from '@/ui/tokens/type';
 
 type Props = {
   kicker?: string | undefined;
@@ -20,7 +21,7 @@ type Props = {
 
 export function TitleBlock({ kicker, title, subtitle, tone = 'muted', action, children, inset = false }: Props) {
   return (
-    <View style={{ paddingHorizontal: inset ? SPACE.gutter : 0, paddingTop: SPACE.xs, paddingBottom: CHROME.titleBottom, gap: SPACE.xxs }}>
+    <View style={{ paddingHorizontal: inset ? SPACE.gutter : 0, paddingTop: SPACE.xs, gap: SPACE.xxs }}>
       {kicker ? (
         <Text variant="kicker" colour={tone === 'accent' ? 'accent' : 'inkMuted'}>
           {kicker}

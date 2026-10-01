@@ -21,7 +21,6 @@ import {
   restoreRemoved,
   toggleChecked,
   toggleExtra,
-  untickLeavesCupboard,
   type ShoppingItem,
   type ShoppingList,
 } from '@/domain/shopping/derive';
@@ -52,9 +51,10 @@ export function ShoppingListView({ week, weekLabel, onBrowse }: { week: ISODate;
 
   const tick = (item: ShoppingItem) => {
     edit((e) => toggleChecked(e, item));
-    if (!item.checked && moveTicked && INGREDIENTS.byId.has(item.key)) addToCupboard([item.key], 'shop');
-    // Unticking a mis-tap takes back the move into the cupboard, so the item stays on the list (F14).
-    if (item.checked && untickLeavesCupboard(cupboardItems, item.key)) removeFromCupboard(item.key);
+    if (!moveTicked || !INGREDIENTS.byId.has(item.key)) return;
+    if (!item.checked) addToCupboard([item.key], 'shop');
+    // Unticking takes back only what the tick put there, never something you already had.
+    else if (cupboardItems.some((c) => c.ingredientId === item.key && c.source === 'shop')) removeFromCupboard(item.key);
   };
   const remove = (item: ShoppingItem) => {
     edit((e) => removeItem(e, item));

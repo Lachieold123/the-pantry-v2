@@ -18,7 +18,16 @@ import { UNITS, unitFromText } from '../ingredients/units';
 import type { ISODate, PlanEntry } from '../plan/week';
 import type { ShoppingItem, ShoppingList } from './derive';
 
-export type ListExtra = { id: string; text: string; addedAt: number };
+/**
+ * Something added to the list by hand. A known ingredient (from the Cupboard's
+ * "add one thing" or a recipe's "add what's missing") carries its id, so it
+ * merges with the plan's line and ticks into the cupboard like one. Free text
+ * ("dishwashing liquid") stays a plain extra.
+ */
+export type ListExtra = { id: string; text: string; addedAt: number; ingredientId?: string | undefined };
+
+/** Something to put on the list: free text, or a known ingredient by id. */
+export type ListAddition = { text: string; ingredientId?: string | undefined };
 
 /** Amount per unit family ("mass", "volume", "count", "count:clove"), in base units. */
 export type Need = Record<string, number>;
@@ -109,24 +118,28 @@ export function restoreExtra(edits: WeekListEdits, extra: ListExtra, checked: bo
 }
 
 /**
- * Adds free-text extras (for example the things a cupboard match is missing),
- * skipping any already on the list, whatever their case. Returns the edits and
- * the extras actually added, so the caller can offer undo.
+ * Adds extras (for example the things a cupboard match is missing), skipping
+ * any already on the list: the same ingredient, or the same text whatever its
+ * case. Returns the edits and the extras actually added, so the caller can
+ * offer undo.
  */
 export function addExtras(
   edits: WeekListEdits,
-  texts: readonly string[],
+  additions: readonly (ListAddition | string)[],
   makeId: () => string,
   now: number,
   alsoOnList: readonly string[] = [],
 ): { edits: WeekListEdits; added: ListExtra[] } {
   const onList = new Set([...edits.extras.map((x) => x.text), ...alsoOnList].map((t) => t.trim().toLowerCase()));
+  const ids = new Set(edits.extras.flatMap((x) => (x.ingredientId ? [x.ingredientId] : [])));
   const added: ListExtra[] = [];
-  for (const raw of texts) {
+  for (const a of additions) {
+    const { text: raw, ingredientId } = typeof a === 'string' ? { text: a, ingredientId: undefined } : a;
     const text = raw.trim();
-    if (!text || onList.has(text.toLowerCase())) continue;
+    if (!text || onList.has(text.toLowerCase()) || (ingredientId && ids.has(ingredientId))) continue;
     onList.add(text.toLowerCase());
-    added.push({ id: makeId(), text, addedAt: now });
+    if (ingredientId) ids.add(ingredientId);
+    added.push({ id: makeId(), text, addedAt: now, ...(ingredientId ? { ingredientId } : {}) });
   }
   return { edits: added.length ? { ...edits, extras: [...edits.extras, ...added] } : edits, added };
 }
@@ -146,6 +159,8 @@ export function carriedExtras(all: Readonly<Record<ISODate, WeekListEdits>>, wee
   for (const origin of weeks.filter((w) => w < week && w < thisWeek)) {
     for (const extra of all[origin]?.extras ?? []) {
       const settled = weeks.some((w) => w >= origin && w < week && all[w]?.checkedExtras.includes(extra.id));
+      // A known ingredient was a line of that week's list, bought or not; only free text comes forward.
+      if (extra.ingredientId) continue;
       const text = extra.text.trim().toLowerCase();
       if (settled || own.has(text)) continue;
       own.add(text);
@@ -219,7 +234,11 @@ export function migrateListEdits(
       Object.entries(isRecord(raw.removed) ? raw.removed : {}).filter(([, v]) => typeof v === 'string'),
     ) as Record<string, string>;
     const extras = (Array.isArray(raw.extras) ? raw.extras : []).filter(
-      (x): x is ListExtra => isRecord(x) && typeof x.id === 'string' && typeof x.text === 'string',
+      (x): x is ListExtra =>
+        isRecord(x) &&
+        typeof x.id === 'string' &&
+        typeof x.text === 'string' &&
+        (x.ingredientId === undefined || typeof x.ingredientId === 'string'),
     );
     const checkedExtras = (Array.isArray(raw.checkedExtras) ? raw.checkedExtras : []).filter(
       (id): id is string => typeof id === 'string' && extras.some((x) => x.id === id),

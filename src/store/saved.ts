@@ -29,6 +29,9 @@ type SavedState = {
   toggleHidden: (recipeId: string) => boolean;
   setHidden: (recipeId: string, hidden: boolean) => void;
   recordView: (recipeId: string) => void;
+  /** Empties Recently viewed and returns what was there, for undo. */
+  clearRecent: () => string[];
+  restoreRecent: (ids: readonly string[]) => void;
 };
 
 export const useSaved = create<SavedState>()(
@@ -93,6 +96,16 @@ export const useSaved = create<SavedState>()(
       },
       recordView: (recipeId) =>
         set((s) => ({ recentlyViewed: [recipeId, ...s.recentlyViewed.filter((r) => r !== recipeId)].slice(0, RECENT_MAX) })),
+      clearRecent: () => {
+        const cleared = get().recentlyViewed;
+        set({ recentlyViewed: [] });
+        return cleared;
+      },
+      // Anything viewed since the clear stays on top; the restored list follows it.
+      restoreRecent: (ids) =>
+        set((s) => ({
+          recentlyViewed: [...s.recentlyViewed, ...ids.filter((id) => !s.recentlyViewed.includes(id))].slice(0, RECENT_MAX),
+        })),
     }),
     {
       ...savedAs<SavedState>('saved', 1),

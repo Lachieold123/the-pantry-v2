@@ -3,7 +3,7 @@
 // v2 used to pin at the bottom became v1's action row and "⋯" menu.
 import { useRouter } from 'expo-router';
 import { useEffect, useMemo, useState } from 'react';
-import { ScrollView, Share, View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { INGREDIENTS, KITCHEN } from '@/data/catalogue/catalogue';
@@ -11,9 +11,10 @@ import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { hasCooked } from '@/domain/cook/cook';
 import { cookable } from '@/domain/cupboard/cookable';
 import { cupboardIds } from '@/domain/cupboard/match';
+import { allOnList, cupboardTally, recipeWords } from '@/domain/cupboard/summary';
+import { shoppingWeek } from '@/domain/plan/week';
 import { recipeAsText } from '@/domain/recipes/labels';
 import { parseServings } from '@/domain/recipes/servings';
-import { logger } from '@/lib/logger';
 import { goBackOr, goToTab } from '@/lib/navigation';
 import { useCookLog } from '@/store/cookLog';
 import { ingredientName } from '@/store/cookable';
@@ -39,6 +40,8 @@ import { CupboardSummary } from './CupboardSummary';
 import { RecipeHeader } from './RecipeHeader';
 import { RecipeStatusBar } from './RecipeStatusBar';
 import { ServingsSheet } from './ServingsSheet';
+import { shareText } from '@/lib/share';
+import { useToday } from '@/lib/useToday';
 
 /** `servings` is the raw route param: a planned dinner opens scaled to what it was planned for (audit F37). */
 export function RecipeScreen({ id, servings: requested }: { id: string; servings?: string | undefined }) {
@@ -59,7 +62,6 @@ export function RecipeScreen({ id, servings: requested }: { id: string; servings
     setServings(shownRecipe && recipe && shownRecipe.id === recipe.id ? recipe.servings : startServings);
   }
   const [menu, setMenu] = useState(false);
-  const [overPhoto, setOverPhoto] = useState(true);
   const [servingsOpen, setServingsOpen] = useState(false);
   const saved = useSaved((s) => s.bookmarks.some((b) => b.recipeId === id));
   const hidden = useSaved((s) => s.hidden.includes(id));
@@ -73,16 +75,21 @@ export function RecipeScreen({ id, servings: requested }: { id: string; servings
   const items = useCupboard((s) => s.items);
   const shelf = useCupboard((s) => s.shelf);
   const addToList = usePlan((s) => s.addToList);
+  const addToCupboard = useCupboard((s) => s.add);
+  const removeFromCupboard = useCupboard((s) => s.remove);
+  // "On your list" is read from the list itself, so undo (or clearing the list) turns the button back on.
+  const shopWeek = shoppingWeek(useToday());
+  const listExtras = usePlan((s) => s.listEdits[shopWeek]?.extras);
   const have = useMemo(() => cupboardIds(items), [items]);
   const fromCupboard = useMemo(
     () => (recipe && have.size ? cookable(recipe, have, shelf, INGREDIENTS, KITCHEN) : undefined),
     [recipe, have, shelf],
   );
-  // A same-family stand-in you have (brown onion for white) earns the HAVE pill too.
-  const havePills = useMemo(
-    () => (fromCupboard ? new Set([...have, ...fromCupboard.swaps.map((s) => s.need)]) : have),
-    [have, fromCupboard],
-  );
+  // The pills and the card's "You have X of Y" share one tally, so they always agree. A same-family
+  // stand-in you have (brown onion for white) earns the pill too.
+  const tally = useMemo(() => (recipe && fromCupboard ? cupboardTally(recipe, fromCupboard) : undefined), [recipe, fromCupboard]);
+  const havePills = tally?.haveIds ?? NONE;
+  const words = useMemo(() => (recipe ? recipeWords(recipe) : undefined), [recipe]);
   useEffect(() => {
     if (recipe) recordView(recipe.id);
   }, [recipe, recordView]);
@@ -102,22 +109,18 @@ export function RecipeScreen({ id, servings: requested }: { id: string; servings
   }
 
   const mine = recipe.source !== 'house';
+  const wordOf = (ingredientId: string) => words?.get(ingredientId) ?? ingredientName(ingredientId);
   // House photos without a photographer's credit are the original app's AI-generated images (D-029).
   const photoNote = recipe.image?.credit ?? (!mine && RECIPE_IMAGES[recipe.id] !== undefined ? 'AI-generated photo' : undefined);
   const edit = () => router.push({ pathname: '/my-recipe/edit', params: { id: recipe.id } });
   // The plan sheet starts at the servings you're looking at, not the recipe's own.
   const plan = () => router.push({ pathname: '/recipe/[id]/plan', params: { id: recipe.id, servings: String(servings) } });
   const share = async () => {
-    try {
-      // Your own recipes aren't on anyone else's phone, so they're shared as the full text.
-      await Share.share({
-        title: recipe.title,
-        message: mine ? recipeAsText(recipe) : `${recipe.title}: ${recipe.summary ?? ''}\nthepantry://recipe/${recipe.id}`,
-      });
-    } catch (e) {
-      logger.warn('share', "couldn't open the share sheet", e);
-      toast({ message: 'Couldn’t open sharing. Try again.', tone: 'problem' });
-    }
+    // Your own recipes aren't on anyone else's phone, so they're shared as the full text.
+    const message = mine ? recipeAsText(recipe) : `${recipe.title}: ${recipe.summary ?? ''}\nthepantry://recipe/${recipe.id}`;
+    const result = await shareText(message, recipe.title);
+    if (result === 'copied') toast({ message: 'Copied. Paste it into a message.' });
+    if (result === 'failed') toast({ message: 'Couldn’t open sharing. Try again.', tone: 'problem' });
   };
 
   return (
@@ -134,17 +137,17 @@ export function RecipeScreen({ id, servings: requested }: { id: string; servings
         <IconButton icon="more" label="More actions" shape="round" onPress={() => setMenu(true)} testID="recipe-more" />
       </View>
 
-      <RecipeStatusBar overPhoto={overPhoto} />
-      <ScrollView
-        style={styles.scroll}
-        contentContainerStyle={{ paddingTop: RECIPE.hero - RECIPE.overlap }}
-        // The sheet reaches the status bar once it has scrolled the photo's height less the notch.
-        onScroll={(e) => setOverPhoto(e.nativeEvent.contentOffset.y < RECIPE.hero - RECIPE.overlap - insets.top)}
-        scrollEventThrottle={16}
-        testID="recipe-screen"
-      >
-        <View style={[styles.sheet, { paddingBottom: insets.bottom + SPACE.xxl }]}>
-          <View style={styles.handle} />
+      {/* The status bar always sits over the photo now the sheet never scrolls up to it. */}
+      <RecipeStatusBar overPhoto />
+      {/* The sheet stays put below the photo and scrolls inside itself (v1), so the
+          back and ⋯ buttons always sit on the photo, never over the text. */}
+      <View style={[styles.sheetFrame, { marginTop: RECIPE.hero - RECIPE.overlap }]}>
+        <View style={styles.handle} />
+        <ScrollView
+          style={styles.scroll}
+          contentContainerStyle={[styles.sheet, { paddingBottom: insets.bottom + SPACE.xxl }]}
+          testID="recipe-screen"
+        >
           <RecipeHeader
             recipe={recipe}
             mine={mine}
@@ -167,17 +170,29 @@ export function RecipeScreen({ id, servings: requested }: { id: string; servings
               {recipe.summary}
             </Text>
           ) : null}
-          {fromCupboard ? (
+          {fromCupboard && tally ? (
             <CupboardSummary
               result={fromCupboard}
-              nameOf={ingredientName}
-              onPlan={plan}
+              tally={tally}
+              wordOf={wordOf}
+              onList={allOnList(fromCupboard.missing, listExtras ?? [])}
               onAddMissing={() => {
-                const names = fromCupboard.missing.map((id) => capitalise(ingredientName(id)));
-                const undo = addToList(names);
+                const items = fromCupboard.missing.map((id) => ({ text: capitalise(wordOf(id)), ingredientId: id }));
+                const undo = addToList(items);
                 toast({
-                  message: undo ? `${names.length} added to your shopping list` : 'Already on your shopping list',
+                  message: undo ? `${items.length} added to your shopping list` : 'Already on your shopping list',
                   ...(undo ? { undo } : {}),
+                });
+              }}
+              onHaveMissing={() => {
+                const ids = fromCupboard.missing;
+                addToCupboard(ids, 'manual');
+                toast({
+                  message:
+                    ids.length === 1
+                      ? `${capitalise(wordOf(ids[0] ?? ''))} added to your cupboard`
+                      : `${ids.length} added to your cupboard`,
+                  undo: () => ids.forEach(removeFromCupboard),
                 });
               }}
             />
@@ -192,8 +207,8 @@ export function RecipeScreen({ id, servings: requested }: { id: string; servings
               </Text>
             </View>
           ) : null}
-        </View>
-      </ScrollView>
+        </ScrollView>
+      </View>
 
       <ActionSheet
         visible={menu}
@@ -240,14 +255,17 @@ export function RecipeScreen({ id, servings: requested }: { id: string; servings
 const useStyles = makeStyles(({ colours }) => ({
   page: { flex: 1, backgroundColor: colours.bg },
   hero: { position: 'absolute', top: 0, left: 0, right: 0 },
-  scroll: { flex: 1 },
-  sheet: {
-    minHeight: '100%',
+  sheetFrame: {
+    flex: 1,
     backgroundColor: colours.bg,
     borderTopLeftRadius: RADIUS.sheet,
     borderTopRightRadius: RADIUS.sheet,
+    overflow: 'hidden',
+  },
+  scroll: { flex: 1 },
+  sheet: {
     paddingHorizontal: SPACE.sheet,
-    paddingTop: SPACE.xs,
+    paddingTop: SPACE.md,
     gap: SPACE.lg,
   },
   handle: {
@@ -256,11 +274,13 @@ const useStyles = makeStyles(({ colours }) => ({
     height: RECIPE.handleHeight,
     borderRadius: 3,
     backgroundColor: colours.border,
-    marginBottom: -SPACE.xs,
+    marginTop: SPACE.xs,
   },
   nav: { position: 'absolute', zIndex: 1, left: SPACE.gutter, right: SPACE.gutter, flexDirection: 'row', justifyContent: 'space-between' },
   credit: { paddingTop: SPACE.md, borderTopWidth: 1, borderTopColor: colours.border },
 }));
+
+const NONE: ReadonlySet<string> = new Set();
 
 function capitalise(s: string): string {
   return s.charAt(0).toUpperCase() + s.slice(1);

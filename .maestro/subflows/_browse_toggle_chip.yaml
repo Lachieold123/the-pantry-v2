@@ -1,7 +1,7 @@
 # Turns one Browse quick chip on, checks the results pill appears, then
 # clears it with the pill. env: CHIP (the chip's testID, e.g. chip-pasta).
 # Start on Browse with no search or filters.
-appId: com.lachlanoldfield.thepantry
+appId: host.exp.Exponent
 ---
 # Back to the top, then bring the chip row to the middle of the screen so the
 # horizontal scroll below swipes the chip row rather than the recipe of the day.

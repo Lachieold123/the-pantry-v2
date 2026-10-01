@@ -12,7 +12,6 @@ import { useReducedMotion } from 'react-native-reanimated';
 import type { Recipe } from '@/domain/recipes/types';
 import { deckPosition, SPIN_DELAYS, type SpinSettings } from '@/domain/suggestions/spinner';
 import { logger } from '@/lib/logger';
-import { goBackOr } from '@/lib/navigation';
 import { announce } from '@/ui/a11y/announce';
 import { PhotoScrim } from '@/ui/patterns/PhotoScrim';
 import { Button } from '@/ui/primitives/Button';
@@ -24,6 +23,7 @@ import { SPACE, SPINNER } from '@/ui/tokens/type';
 import { SpinDeck } from './SpinDeck';
 import { HowItWorks, SettingChips, SpinnerEmpty, SpinnerHeader, WhyThis } from './SpinnerParts';
 import { useSpinner } from './useSpinner';
+import { goBack } from '@/lib/navigation';
 
 const KICKER: Record<NonNullable<SpinSettings['meal']> | 'any', string> = {
   dinner: 'Tonight’s dinner',
@@ -97,7 +97,7 @@ export function SpinnerScreen() {
     <Screen testID="spinner-screen">
       <PhotoScrim kind="spinnerGlow" />
       <PhotoScrim kind="spinnerGlowFoot" />
-      <SpinnerHeader at={shown ? at : 0} of={pool.length} onBack={() => goBackOr(router)} onInfo={() => setHowOpen(true)} />
+      <SpinnerHeader at={shown ? at : 0} of={pool.length} onBack={() => goBack(router)} onInfo={() => setHowOpen(true)} />
       <View style={{ gap: SPACE.sm }}>
         <Text variant="kicker">{KICKER[settings.meal ?? 'any']}</Text>
         <Text variant="displaySpinner" accessibilityRole="header">
@@ -177,7 +177,7 @@ export function SpinnerScreen() {
               <View style={{ flex: 1 }}>
                 <Button
                   label="Cook this"
-                  icon="arrowForward"
+                  trailingIcon="arrowForward"
                   block
                   disabled={spinning}
                   onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: shown.id } })}

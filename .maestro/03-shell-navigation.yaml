@@ -1,5 +1,5 @@
 # The shell: tab bar, the side menu to every destination and back, "+" and the avatar.
-appId: com.lachlanoldfield.thepantry
+appId: host.exp.Exponent
 ---
 - launchApp:
     clearState: true
@@ -28,6 +28,7 @@ appId: com.lachlanoldfield.thepantry
     id: "header-menu"
 - assertVisible:
     id: "menu-feed"
+- assertVisible: "Local profile"
 - takeScreenshot: menu-open
 - tapOn:
     id: "menu-close"
@@ -45,6 +46,17 @@ appId: com.lachlanoldfield.thepantry
     id: "header-menu"
 - tapOn:
     id: "menu-cupboard"
+- assertVisible:
+    id: "cupboard-screen"
+# The menu opens over the tab you're on, dimmed behind it, not over a blank page.
+- tapOn:
+    id: "header-menu"
+- assertVisible:
+    id: "menu-feed"
+- takeScreenshot: menu-over-cupboard
+- tapOn:
+    id: "menu-close"
+    point: "95%,50%"
 - assertVisible:
     id: "cupboard-screen"
 - tapOn:

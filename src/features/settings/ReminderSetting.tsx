@@ -5,16 +5,13 @@
 // instead of snapping back (audit F164).
 import { useFocusEffect } from 'expo-router';
 import { useCallback, useEffect, useState } from 'react';
-import { AppState, Linking, Platform, View } from 'react-native';
+import { AppState, Linking, Platform } from 'react-native';
 
 import { logger } from '@/lib/logger';
 import { notificationPermission, setSundayReminder } from '@/lib/notifications';
 import { usePreferences } from '@/store/preferences';
-import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { useToast } from '@/ui/patterns/Toast';
-import { ListRow } from '@/ui/primitives/ListRow';
-import { Switch } from '@/ui/primitives/Switch';
-import { SPACE } from '@/ui/tokens/type';
+import { CardButton, SettingsSection, SwitchRow } from './SettingsParts';
 
 // The web build has no phone Settings to send anyone to.
 const CAN_OPEN_SETTINGS = Platform.OS !== 'web';
@@ -70,23 +67,26 @@ export function ReminderSetting() {
   };
 
   return (
-    <View style={{ gap: SPACE.sm }}>
-      <SectionHeader title="Reminders" />
-      <Switch
-        label="Sunday planning reminder"
-        detail="4pm on Sundays, and nothing else"
-        value={pending ?? saved}
-        onChange={(on) => void toggle(on)}
-        testID="settings-sunday-reminder"
-      />
+    <>
+      <SettingsSection label="Notifications">
+        <SwitchRow
+          icon="notifications"
+          label="Sunday planning reminder"
+          detail="4pm on Sundays, and nothing else"
+          value={pending ?? saved}
+          onChange={(on) => void toggle(on)}
+          testID="settings-sunday-reminder"
+        />
+      </SettingsSection>
+      {/* Its own card under the section, like "Redo welcome flow": the switch alone can't fix this. */}
       {blocked && CAN_OPEN_SETTINGS ? (
-        <ListRow
-          title="Notifications are off"
-          detail="Allow them in your phone’s Settings to get the reminder"
+        <CardButton
+          icon="notifications"
+          label="Notifications are off: open Settings"
           onPress={openSettings}
           testID="settings-open-notifications"
         />
       ) : null}
-    </View>
+    </>
   );
 }

@@ -1,6 +1,6 @@
 # Gets past the first-launch welcome and taste quiz by tapping Skip, and
 # leaves the app on the Feed. Run it straight after launchApp + openLink.
-appId: com.lachlanoldfield.thepantry
+appId: host.exp.Exponent
 ---
 - runFlow: _wait_for_app.yaml
 - tapOn:

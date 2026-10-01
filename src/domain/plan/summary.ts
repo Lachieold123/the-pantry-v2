@@ -1,15 +1,13 @@
 // The week at a glance: how full it is ("2 of 21 meals") and the plan as text
 // to send someone ("Mon: Dal. Tue: Tacos…"), v1's share button (M19).
 
-import { addDays, entriesFor, fromISODate, SLOTS, weekDays, weekStart, type ISODate, type PlanEntry, type Slot } from './week';
+import { addDays, entriesFor, fromISODate, mealCount, SLOTS, weekDays, weekStart, type ISODate, type PlanEntry, type Slot } from './week';
 
 export const MEALS_PER_WEEK = SLOTS.length * 7;
 
 export function weekProgress(entries: readonly PlanEntry[], start: ISODate): { planned: number; total: number } {
   const days = new Set(weekDays(start));
-  // A slot counts once, however many dishes are in it.
-  const filled = new Set(entries.filter((e) => days.has(e.day)).map((e) => `${e.day}:${e.slot}`));
-  return { planned: filled.size, total: MEALS_PER_WEEK };
+  return { planned: mealCount(entries.filter((e) => days.has(e.day))), total: MEALS_PER_WEEK };
 }
 
 const SLOT_LABEL = { breakfast: 'Breakfast', lunch: 'Lunch', dinner: 'Dinner' } as const;

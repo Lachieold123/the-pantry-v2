@@ -1,7 +1,7 @@
 # Plan: the day strip, add a meal to a slot, change who it's for, remove with
 # undo, plan a suggestion; the shopping list: summary card, tick, remove with
 # undo, add an extra, By aisle, clear all with undo, send it, both weeks.
-appId: com.lachlanoldfield.thepantry
+appId: host.exp.Exponent
 ---
 - launchApp:
     clearState: true
@@ -30,13 +30,13 @@ appId: com.lachlanoldfield.thepantry
 # Add dinner to today (the strip opens on today) from the Add sheet.
 - tapOn:
     id: "plan-add-.*-dinner"
-- assertVisible: "Add to .*"
+- assertVisible: "Add dinner for .*"
 - tapOn:
     id: "add-plan-search"
 - inputText: "carbonara"
 - tapOn:
     id: "add-plan-result-carbonara"
-- assertVisible: "Carbonara planned for tonight"
+- assertVisible: "Carbonara planned for today dinner"
 - assertVisible:
     id: "plan-entry-[a-z0-9]+-[a-z0-9]+"
 - assertVisible: "1 of 21 meals"

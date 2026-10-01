@@ -3,7 +3,7 @@ import { useRouter } from 'expo-router';
 import { useState } from 'react';
 import { View } from 'react-native';
 
-import { goBackOr } from '@/lib/navigation';
+import { goBack, goBackOr } from '@/lib/navigation';
 import { useRecipe, useRecipeLookup } from '@/store/recipeBook';
 import { useSaved } from '@/store/saved';
 import { Button } from '@/ui/primitives/Button';
@@ -42,7 +42,7 @@ export function CollectSheet({ id }: { id: string }) {
   }
 
   return (
-    <Sheet title="Add to a collection" onClose={() => goBackOr(router)}>
+    <Sheet title="Add to a collection" onClose={() => goBack(router)}>
       {recipe ? <Text variant="meta">{recipe.title}</Text> : null}
       {collections.length === 0 ? (
         <Text variant="body" colour="inkSoft">
@@ -58,6 +58,7 @@ export function CollectSheet({ id }: { id: string }) {
                 detail={`${c.recipeIds.filter((r) => getRecipe(r) !== undefined).length}`}
                 checked={c.recipeIds.includes(id)}
                 onToggle={() => toggleInCollection(c.id, id)}
+                strikeWhenChecked={false}
                 testID={`collect-row-${c.id}`}
               />
               <Divider />
@@ -68,7 +69,7 @@ export function CollectSheet({ id }: { id: string }) {
       <View style={{ gap: SPACE.sm }}>
         <TextField
           label="New collection"
-          placeholder="Weeknights"
+          placeholder="Name your collection"
           value={name}
           onChangeText={setName}
           returnKeyType="done"

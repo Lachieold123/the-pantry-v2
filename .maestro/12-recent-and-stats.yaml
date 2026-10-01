@@ -1,5 +1,6 @@
-# Recently viewed and Kitchen stats: empty, then filled by opening and cooking a recipe.
-appId: com.lachlanoldfield.thepantry
+# Recently viewed and Kitchen stats: empty, then filled by opening and cooking
+# a recipe, then each cleared and restored with Undo.
+appId: host.exp.Exponent
 ---
 - launchApp:
     clearState: true
@@ -13,6 +14,8 @@ appId: com.lachlanoldfield.thepantry
     id: "menu-recent"
 - assertVisible:
     id: "recent-empty"
+- assertNotVisible:
+    id: "recent-clear"
 - takeScreenshot: recent-empty
 - tapOn:
     id: "back"
@@ -20,6 +23,7 @@ appId: com.lachlanoldfield.thepantry
     id: "header-menu"
 - tapOn:
     id: "menu-stats"
+- assertVisible: "No cooks logged yet"
 - assertVisible:
     id: "stats-empty"
 - takeScreenshot: stats-empty
@@ -45,6 +49,7 @@ appId: com.lachlanoldfield.thepantry
 - assertVisible: "Recently viewed, 1"
 - tapOn:
     id: "menu-recent"
+- assertVisible: "1 recipe"
 - assertVisible:
     id: "recipe-card-carbonara"
 - takeScreenshot: recent-one
@@ -54,6 +59,17 @@ appId: com.lachlanoldfield.thepantry
     id: "recipe-screen"
 - tapOn:
     id: "back"
+
+# Clear, then Undo
+- tapOn:
+    id: "recent-clear"
+- assertVisible: "Recently viewed cleared"
+- assertVisible:
+    id: "recent-empty"
+- tapOn:
+    id: "toast-undo"
+- assertVisible:
+    id: "recipe-card-carbonara"
 - tapOn:
     id: "back"
 
@@ -62,5 +78,23 @@ appId: com.lachlanoldfield.thepantry
     id: "header-menu"
 - tapOn:
     id: "menu-stats"
-- assertVisible: "Carbonara, .*, Cooked once"
+- assertVisible: "1 day cooking streak"
+- assertVisible: "Total cooks: 1"
+- assertVisible: "Best streak: 1"
+- assertVisible:
+    id: "stats-most-cooked"
+- assertVisible: "1. Carbonara, once"
 - takeScreenshot: stats-one
+
+# Clear the history, then Undo
+- scrollUntilVisible:
+    element:
+      id: "stats-clear"
+- tapOn:
+    id: "stats-clear"
+- assertVisible: "Cooking history cleared"
+- assertVisible:
+    id: "stats-empty"
+- tapOn:
+    id: "toast-undo"
+- assertVisible: "1 day cooking streak"

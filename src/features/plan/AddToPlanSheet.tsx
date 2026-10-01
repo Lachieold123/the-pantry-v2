@@ -16,7 +16,6 @@ import { useRecipeLookup, useRecipeSearchIndex } from '@/store/recipeBook';
 import { useSaved } from '@/store/saved';
 import { useForYou } from '@/store/suggestions';
 import { RecipeCard } from '@/ui/patterns/RecipeCard';
-import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { useToast } from '@/ui/patterns/Toast';
 import { useOnce } from '@/ui/patterns/useOnce';
 import { SearchField } from '@/ui/primitives/SearchField';
@@ -74,13 +73,17 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
     goBackOr(router);
   });
 
+  // "Add dinner for today", "Add lunch for Friday": the day's weekday name, as on the Plan tab.
+  const dayName = day === today ? 'today' : (longDate(fromISODate(day)).split(' ')[0] ?? day);
   return (
-    <Sheet title={`Add to ${longDate(fromISODate(day))}`} onClose={() => goBackOr(router)}>
+    <Sheet kicker="Plan" title={`Add ${slot} for ${dayName}`} onClose={() => goBackOr(router)}>
       <Segmented<Slot> label="Meal" options={SLOTS} value={slot} onChange={setSlot} />
       <SearchField value={query} onChange={setQuery} placeholder="Search recipes" label="Search recipes to plan" testID="add-plan-search" />
       {!query.trim() && saved.length ? (
         <View style={{ gap: SPACE.sm }}>
-          <SectionHeader title="Saved" />
+          <Text variant="kickerSection" accessibilityRole="header">
+            Saved
+          </Text>
           {saved.map((r) => (
             <RecipeCard
               key={r.id}
@@ -94,7 +97,9 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
         </View>
       ) : null}
       <View style={{ gap: SPACE.sm }}>
-        <SectionHeader title={query.trim() ? 'Results' : `Ideas for ${slot}`} />
+        <Text variant="kickerSection" accessibilityRole="header">
+          {query.trim() ? 'Results' : `Ideas for ${slot}`}
+        </Text>
         {results.length === 0 ? (
           <Text variant="body" colour="inkSoft">
             {query.trim()

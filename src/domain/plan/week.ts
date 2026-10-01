@@ -141,9 +141,18 @@ export function isPast(day: ISODate, today: ISODate): boolean {
   return day < today;
 }
 
+/**
+ * How many meals: filled breakfast, lunch and dinner slots, each counted once
+ * however many dishes are in it. Every count on screen uses this, so the tab
+ * badge, the week's progress and the shopping card agree.
+ */
+export function mealCount(entries: readonly PlanEntry[]): number {
+  return new Set(entries.map((e) => `${e.day}:${e.slot}`)).size;
+}
+
 /** Meals still ahead, today included: the number on the Plan tab and in the drawer. */
 export function upcomingCount(entries: readonly PlanEntry[], today: ISODate): number {
-  return entries.filter((e) => e.day >= today).length;
+  return mealCount(entries.filter((e) => e.day >= today));
 }
 
 /** The week you're shopping for: this week, except on Sunday, when it's the week ahead. */

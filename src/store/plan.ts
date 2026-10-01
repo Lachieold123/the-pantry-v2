@@ -16,7 +16,7 @@ import {
   type PlanEntry,
   type Slot,
 } from '@/domain/plan/week';
-import { addExtras, EMPTY_EDITS, type WeekListEdits } from '@/domain/shopping/derive';
+import { addExtras, EMPTY_EDITS, type ListAddition, type WeekListEdits } from '@/domain/shopping/derive';
 import { migrateListEdits } from '@/domain/shopping/edits';
 import { persistentStorage, savedAs } from './storage';
 
@@ -32,8 +32,8 @@ type PlanState = {
   setServings: (id: string, servings: number) => void;
   moveEntry: (id: string, day: ISODate, slot: Slot) => void;
   editList: (week: ISODate, change: (edits: WeekListEdits) => WeekListEdits) => void;
-  /** Adds free-text items to the list you're shopping for. Returns an undo, or undefined if nothing was new. */
-  addToList: (texts: string[]) => (() => void) | undefined;
+  /** Adds things to the list you're shopping for: known ingredients by id, or free text. Returns an undo, or undefined if nothing was new. */
+  addToList: (items: (ListAddition | string)[]) => (() => void) | undefined;
 };
 
 export const usePlan = create<PlanState>()(
@@ -56,9 +56,9 @@ export const usePlan = create<PlanState>()(
       setServings: (id, servings) => set((s) => ({ entries: s.entries.map((e) => (e.id === id ? { ...e, servings } : e)) })),
       moveEntry: (id, day, slot) => set((s) => ({ entries: s.entries.map((e) => (e.id === id ? { ...e, day, slot } : e)) })),
       editList: (week, change) => set((s) => ({ listEdits: { ...s.listEdits, [week]: change(s.listEdits[week] ?? EMPTY_EDITS) } })),
-      addToList: (texts) => {
+      addToList: (items) => {
         const week = shoppingWeek(toISODate(new Date()));
-        const { edits, added } = addExtras(get().listEdits[week] ?? EMPTY_EDITS, texts, newId, Date.now());
+        const { edits, added } = addExtras(get().listEdits[week] ?? EMPTY_EDITS, items, newId, Date.now());
         if (added.length === 0) return undefined;
         set((s) => ({ listEdits: { ...s.listEdits, [week]: edits } }));
         const ids = new Set(added.map((x) => x.id));

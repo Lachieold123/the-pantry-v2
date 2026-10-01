@@ -53,8 +53,9 @@ export function RecipesScreen() {
   // Stable, so the memoised cards don't all redraw on every keystroke.
   const open = useCallback((id: string) => router.push({ pathname: '/recipe/[id]', params: { id } }), [router]);
   const season = seasonOn(fromISODate(useToday()));
-  // The named shelf or chip being shown, for the pill that says what you're looking at.
-  const shown = presetShown([...moods(season), ...quickChips(season)], filters, query, presetLabel);
+  // The named chip or shelf being shown, for the pill that says what you're looking at. Chips
+  // first: "Vegetarian" and the "Plant forward" shelf set the same filter, and the plain name reads truer.
+  const shown = presetShown([...quickChips(season), ...moods(season)], filters, query, presetLabel);
   const rows = useMemo(() => {
     const out: Recipe[][] = [];
     for (let i = 0; i < results.length; i += 2) out.push(results.slice(i, i + 2));

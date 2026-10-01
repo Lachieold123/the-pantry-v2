@@ -41,14 +41,17 @@ function printableCount(n: number): number {
  * quarts; spoons and cups are left alone because they work in both. In
  * either system a spoon or cup too small to print steps down a size.
  */
+const BIG_METRIC = 997.5;
+
 function displayUnit(amount: number, unit: UnitId, system: UnitSystem): { amount: number; unit: UnitId } {
   if (unit === 'cup' && amount < 1 / 4) return displayUnit(convert(amount, 'cup', 'tbsp'), 'tbsp', system);
   if (unit === 'tbsp' && amount < 1 / 2) return { amount: convert(amount, 'tbsp', 'tsp'), unit: 'tsp' };
   if (system === 'metric') {
     if (unit === 'oz' || unit === 'lb' || unit === 'kg') return displayUnit(convert(amount, unit, 'g'), 'g', system);
     if (unit === 'fl-oz' || unit === 'qt' || unit === 'l') return displayUnit(convert(amount, unit, 'ml'), 'ml', system);
-    if (unit === 'g' && amount >= 1000) return { amount: convert(amount, 'g', 'kg'), unit: 'kg' };
-    if (unit === 'ml' && amount >= 1000) return { amount: convert(amount, 'ml', 'l'), unit: 'l' };
+    // From 997.5 the amount prints rounded to "1000", so it reads as 1 kg / 1 L instead.
+    if (unit === 'g' && amount >= BIG_METRIC) return { amount: convert(amount, 'g', 'kg'), unit: 'kg' };
+    if (unit === 'ml' && amount >= BIG_METRIC) return { amount: convert(amount, 'ml', 'l'), unit: 'l' };
     return { amount, unit };
   }
   if (unit === 'g' || unit === 'kg') {
@@ -71,7 +74,11 @@ function formatAmount(amount: number, unit: UnitId | undefined): string {
   if (unit === 'fl-oz' && amount > 10) return String(Math.round(amount));
   if (unit === 'oz' || unit === 'lb' || unit === 'fl-oz' || unit === 'qt') return formatKitchenNumber(amount, 'quarters');
   if (unit === 'tsp' || unit === 'tbsp' || unit === 'cup') return formatKitchenNumber(amount, 'spoons');
-  if (unit === 'kg' || unit === 'l') return formatKitchenNumber(amount);
+  if (unit === 'kg' || unit === 'l') {
+    // "1½ kg" reads well; "2⅛ L" doesn't. Halves and quarters stay fractions, anything finer is a decimal.
+    const quarters = Math.round(amount * 4) / 4;
+    return Math.abs(quarters - amount) < 0.01 ? formatKitchenNumber(quarters) : String(Math.round(amount * 10) / 10);
+  }
   return formatMeasuredNumber(amount);
 }
 

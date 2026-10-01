@@ -9,12 +9,12 @@ import { ScrollView, View } from 'react-native';
 
 import { INGREDIENTS } from '@/data/catalogue/catalogue';
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
-import { fitsTaste } from '@/domain/recipes/diets';
 import { dailyPicks, moods, presetActive, quickChips, recipeOfTheDay, recipesFor, togglePreset } from '@/domain/recipes/browse';
 import { needLine } from '@/domain/cupboard/cookable';
 import { fromISODate } from '@/domain/plan/week';
-import { seasonOn } from '@/domain/recipes/search';
+import { NO_FILTERS, seasonOn } from '@/domain/recipes/search';
 import type { Recipe } from '@/domain/recipes/types';
+import { eligibleForSurprise } from '@/domain/suggestions/surprise';
 import { useToday } from '@/lib/useToday';
 import { ingredientName, useCookableNow } from '@/store/cookable';
 import { usePreferences } from '@/store/preferences';
@@ -50,17 +50,14 @@ export function BrowseSections() {
   const open = (id: string) => router.push({ pathname: '/recipe/[id]', params: { id } });
 
   const data = useMemo(() => {
-    // Editorial picks are suggestions, so the cook's hard rules apply (F33): no "not for us"
-    // dishes, nothing outside their diet, nothing on their avoid list.
-    // "See all" still counts the whole catalogue, which is what it opens.
-    const visible = all.filter((r) => !hidden.includes(r.id));
-    const suited = visible.filter((r) => fitsTaste(r, { diet, avoid }, INGREDIENTS));
-    const featured = recipeOfTheDay(suited, today, (r) => image(r.id) !== undefined);
+    // Suggestions follow the same hard rules as everywhere else: diet, avoid list and "not for us".
+    const visible = eligibleForSurprise({ recipes: all, filters: NO_FILTERS, diet, avoid, hidden: new Set(hidden), index: INGREDIENTS });
+    const featured = recipeOfTheDay(visible, today, (r) => image(r.id) !== undefined);
     const shelves = moods(season)
-      .map((mood) => ({ mood, recipes: recipesFor(mood, suited) }))
+      .map((mood) => ({ mood, recipes: recipesFor(mood, visible) }))
       .filter((s) => s.recipes.length > 0);
     const picks = dailyPicks(
-      suited.filter((r) => r.id !== featured?.id),
+      visible.filter((r) => r.id !== featured?.id),
       today,
       PICKS,
     );
@@ -154,13 +151,7 @@ export function BrowseSections() {
       <View style={{ paddingHorizontal: SPACE.gutter, gap: SPACE.md }}>
         <SectionHeader kicker="All recipes" tone="accent" title="Something new" />
         <RecipeGrid recipes={data.picks} imageFor={image} onOpen={open} isSaved={bookmarks.isSaved} onToggleSave={bookmarks.toggle} />
-        <Button
-          label={`See all ${data.visible.length} recipes`}
-          kind="secondary"
-          block
-          onPress={() => setShowAll(true)}
-          testID="browse-see-all"
-        />
+        <Button label="See all recipes" kind="secondary" block onPress={() => setShowAll(true)} testID="browse-see-all" />
       </View>
     </View>
   );

@@ -8,9 +8,9 @@ const mockRouter = { dismissTo: jest.fn(), replace: jest.fn(), canGoBack: () => 
 jest.mock('expo-router', () => ({ useRouter: () => mockRouter }));
 jest.mock('react-native-safe-area-context', () => ({ useSafeAreaInsets: () => ({ top: 0, bottom: 0, left: 0, right: 0 }) }));
 
-test('"Go to Feed" returns to the tabs underneath', async () => {
+test('"Back to Feed" returns to the tabs underneath', async () => {
   await render(<NotFoundScreen />);
-  await fireEvent.press(screen.getByText('Go to Feed'));
+  await fireEvent.press(screen.getByText('Back to Feed'));
   expect(mockRouter.dismissTo).toHaveBeenCalledWith('/');
   expect(mockRouter.replace).not.toHaveBeenCalled();
 });
