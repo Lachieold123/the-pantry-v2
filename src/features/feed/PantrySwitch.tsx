@@ -6,6 +6,7 @@
 import { Pressable, View } from 'react-native';
 
 import type { HomeMode } from '@/domain/suggestions/home';
+import { useTourTarget } from '@/store/tour';
 import { Icon } from '@/ui/primitives/Icon';
 import { IconButton } from '@/ui/primitives/IconButton';
 import { Text } from '@/ui/primitives/Text';
@@ -27,10 +28,12 @@ type Props = {
 export function PantrySwitch({ mode, onMode, ready, stocked, onCupboard, onSearch }: Props) {
   const styles = useStyles();
   const pantry = mode === 'pantry';
+  // The first stop of the first-use tour (D-035).
+  const tourRef = useTourTarget('home-pantry');
   const readyLabel = ready === 1 ? '1 dish ready' : `${ready} dishes ready`;
   return (
     <View style={{ gap: SPACE.xs }}>
-      <View style={styles.row}>
+      <View style={styles.row} ref={tourRef} collapsable={false}>
         <View style={styles.track} accessibilityRole="radiogroup" accessibilityLabel="Show recipes">
           <Pressable
             onPress={() => onMode('pantry')}

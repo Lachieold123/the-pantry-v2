@@ -278,3 +278,18 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
   - Tonight's planned dinner leads only when the cupboard can make it.
   - Everything works from the same engine as the Cupboard tab (`store/cookable`). The diet and avoid list always apply.
   - "Your plates" shows in Everything only, so "What I have" stays about what you can cook now.
+
+## D-035 · A four-stop tour on first use
+
+- **Date:** 2 October 2026 · **Decided by:** Lachlan. He chose an in-app tour over a video, shown right after the welcome, covering What I have, filling the cupboard, and Plan and List, in 4–5 steps.
+- **Decision:**
+  - On first open, after the welcome and taste quiz (or Skip), Home dims and a spotlight steps through four real controls. Each has one short line:
+    1. **What I have**
+    2. **the Cupboard tab**
+    3. **the Plan tab**
+    4. **the List tab**
+  - Every stop has "N of 4", dots, Next and Skip. The last one says "Start cooking".
+  - Skipping or finishing marks it seen, and it never returns on its own. "Show me around again" in Settings replays it.
+  - It points at the live views (`useTourTarget` in `store/tour`), not pictures, so it can't go stale when a screen changes. A recorded video would.
+  - If a target isn't on screen, the card shows centred without a spotlight, rather than pointing at nothing.
+  - It needs no new native module.

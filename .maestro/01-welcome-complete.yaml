@@ -71,11 +71,49 @@ appId: host.exp.Exponent
 - tapOn:
     id: "welcome-not-now"
 
-# Tonight's pick is on the plan, so the Feed leads with it.
+# Then the four-stop tour over Home (D-035): Next, Next, Next, Start cooking.
 - extendedWaitUntil:
     visible:
-      id: "feed-screen"
-    timeout: 10000
-- assertVisible: "On for dinner"
+      id: "tour"
+    timeout: 15000
+- assertVisible: "What I have"
+- assertVisible: "1 of 4"
+- takeScreenshot: tour-1-what-i-have
+- tapOn:
+    id: "tour-next"
+- assertVisible: "Fill your cupboard"
+- takeScreenshot: tour-2-cupboard
+- tapOn:
+    id: "tour-next"
+- assertVisible: "Plan the week"
+- tapOn:
+    id: "tour-next"
+- assertVisible: "Your shopping list"
+- takeScreenshot: tour-4-list
+- tapOn:
+    id: "tour-done"
+- assertNotVisible:
+    id: "tour"
+
+# Tonight's pick is on the plan, so Home leads with it.
+- assertVisible: ".*Tonight · On the plan.*"
 - assertVisible: "Plan, 1 planned"
 - takeScreenshot: welcome-done-feed
+
+# It doesn't come back on its own; Settings can replay it.
+- tapOn:
+    id: "header-avatar"
+- scrollUntilVisible:
+    element:
+      id: "settings-replay-tour"
+    direction: DOWN
+- tapOn:
+    id: "settings-replay-tour"
+- extendedWaitUntil:
+    visible:
+      id: "tour"
+    timeout: 10000
+- tapOn:
+    id: "tour-skip"
+- assertNotVisible:
+    id: "tour"

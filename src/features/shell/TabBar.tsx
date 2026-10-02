@@ -20,6 +20,7 @@ import { CHROME, MOTION, SHADOW, SPACE } from '@/ui/tokens/type';
 import { useKeyboardShown } from './useKeyboardShown';
 import { usePlanBadge } from './useCounts';
 import { useToBuyThisWeek } from '@/store/shoppingList';
+import { useTourTarget } from '@/store/tour';
 
 type TabBarProps = Parameters<NonNullable<ComponentProps<typeof Tabs>['tabBar']>>[0];
 
@@ -38,6 +39,12 @@ export function TabBar({ state, navigation }: TabBarProps) {
   const styles = useStyles();
   const counts: Counts = { planned: usePlanBadge(), toBuy: useToBuyThisWeek() };
   const keyboard = useKeyboardShown();
+  // The first-use tour points at these three (D-035).
+  const tourRefs: Record<string, ReturnType<typeof useTourTarget> | undefined> = {
+    cupboard: useTourTarget('tab-cupboard'),
+    plan: useTourTarget('tab-plan'),
+    list: useTourTarget('tab-list'),
+  };
   const slide = useAnimatedStyle(() => ({
     transform: [{ translateY: withTiming(keyboard ? CHROME.tabHide : 0, { duration: MOTION.quick }) }],
   }));
@@ -55,6 +62,7 @@ export function TabBar({ state, navigation }: TabBarProps) {
     return (
       <Pressable
         key={route.key}
+        ref={tourRefs[route.name]}
         onPress={onPress}
         testID={`tab-${route.name}`}
         accessibilityRole="tab"

@@ -10,11 +10,12 @@ import { setSundayReminder } from '@/lib/notifications';
 import { usePreferences, type Appearance } from '@/store/preferences';
 import { PushedHeader } from '@/ui/patterns/PushedHeader';
 import { useToast } from '@/ui/patterns/Toast';
+import { useTour } from '@/store/tour';
 import { ListRow } from '@/ui/primitives/ListRow';
 import { Screen } from '@/ui/primitives/Screen';
 import { Segmented } from '@/ui/primitives/Segmented';
 import { Text } from '@/ui/primitives/Text';
-import { SETTINGS } from '@/ui/tokens/screens';
+import { SETTINGS, TOUR } from '@/ui/tokens/screens';
 import { CookingSection } from './CookingSection';
 import { CardButton, ChoiceRow, InfoRow, SettingsSection, SwitchRow } from './SettingsParts';
 
@@ -31,6 +32,7 @@ const VERSION = Constants.expoConfig?.version ?? '';
 
 export function SettingsScreen() {
   const router = useRouter();
+  const startTour = useTour((s) => s.start);
   const toast = useToast();
   // One selector per value (audit PERF-1: whole-store reads re-render on every change).
   const appearance = usePreferences((s) => s.appearance);
@@ -98,6 +100,16 @@ export function SettingsScreen() {
 
       {/* Answers are kept, so this revisits the quiz rather than wiping it (v1 reset everything). */}
       <CardButton icon="refreshOutline" label="Redo welcome flow" onPress={() => router.push('/welcome')} testID="settings-retake-quiz" />
+      <CardButton
+        icon="info"
+        label="Show me around again"
+        onPress={() => {
+          // Home first, then the tour once it has settled, so the spotlight lands on the real switch.
+          router.dismissTo('/');
+          setTimeout(startTour, TOUR.startDelay);
+        }}
+        testID="settings-replay-tour"
+      />
 
       <Text variant="caption" align="center" style={{ marginTop: -SETTINGS.footerTop }}>
         The Pantry · v{VERSION}

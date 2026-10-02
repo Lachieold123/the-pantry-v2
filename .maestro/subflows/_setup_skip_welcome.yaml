@@ -1,5 +1,5 @@
-# Gets past the first-launch welcome and taste quiz by tapping Skip, and
-# leaves the app on the Feed. Run it straight after launchApp + openLink.
+# Gets past the first-launch welcome and taste quiz by tapping Skip, then the
+# first-use tour, and leaves the app on Home. Run it straight after launchApp + openLink.
 appId: host.exp.Exponent
 ---
 - runFlow: _wait_for_app.yaml
@@ -9,3 +9,12 @@ appId: host.exp.Exponent
     visible:
       id: "feed-screen"
     timeout: 30000
+# The first-use tour (D-035) opens a moment later; skip it.
+- extendedWaitUntil:
+    visible:
+      id: "tour-skip"
+    timeout: 8000
+    optional: true
+- tapOn:
+    id: "tour-skip"
+    optional: true

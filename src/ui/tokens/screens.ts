@@ -127,3 +127,13 @@ export const PLATE = {
   preview: 180,
   railCard: 150,
 } as const;
+
+/** The first-use tour (D-035): spotlight padding and ring, the dots, and a beat before it starts. */
+export const TOUR = {
+  pad: 6,
+  ring: 2,
+  dot: 6,
+  dotOn: 18,
+  dotGap: 6,
+  startDelay: 700,
+} as const;
