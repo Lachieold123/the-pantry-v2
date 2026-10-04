@@ -82,6 +82,7 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
 - **Date:** 29 September 2026 · **Decided by:** Claude (delegated)
 - **Decision:** Corrections to the old recipes are made in `scripts/data/recipe-fixes.json` and applied by the conversion script, never by hand-editing the generated catalogue. Each replacement must match exactly once or the conversion fails.
 - **First fixes:** chicken kiev cooked to 75°C (was 70°C); burgers cooked through (were "medium"); live lobsters chilled before cooking; raw egg and raw fish notes on 9 recipes; 6 risottos and soups now list vegetable stock first, so they're correctly vegetarian.
+- **Full review (5 October 2026):** every recipe read against `docs/reports/recipe-review-brief.md`; 255 recipes now carry fixes. The file gained `times`, `difficulty`, `servings`, `addIngredients`, `moveIngredients` and `addSteps`, applied by `scripts/recipe-fix.mts` with the same match-exactly-once rule. Results and the cook-test shortlist: `docs/reports/recipe-review-2026-10.md`. Gating is unchanged: everything is still `ai-draft` until Lachlan decides what "vetted" means (question 1 there).
 
 ## D-015 · The domain layer has no dependencies
 

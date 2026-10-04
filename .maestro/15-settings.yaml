@@ -29,7 +29,8 @@ appId: host.exp.Exponent
 - tapOn:
     id: "settings-high-contrast"
 
-# Cooking: each row opens a small sheet with just that choice.
+# Cooking: each row opens a small sheet with just that choice. A row reads as
+# one button, "Diet, Vegetarian", so the checks use the whole label.
 - scrollUntilVisible:
     element:
       id: "settings-cooking-diet"
@@ -40,7 +41,7 @@ appId: host.exp.Exponent
     id: "settings-diet-vegetarian"
 - tapOn:
     id: "settings-editor-done"
-- assertVisible: "Vegetarian"
+- assertVisible: "Diet, Vegetarian"
 - tapOn:
     id: "settings-cooking-avoid"
 - tapOn:
@@ -60,21 +61,21 @@ appId: host.exp.Exponent
 - hideKeyboard
 - tapOn:
     id: "settings-editor-done"
-- assertVisible: "Nothing"
+- assertVisible: "Avoid, Nothing"
 - tapOn:
     id: "settings-cooking-cuisines"
 - tapOn:
     id: "settings-cuisine-italian"
 - tapOn:
     id: "settings-editor-done"
-- assertVisible: "1 picked"
+- assertVisible: "Cuisines, 1 picked"
 - tapOn:
     id: "settings-cooking-weeknight"
 - tapOn:
     id: "settings-weeknight-under-30"
 - tapOn:
     id: "settings-editor-done"
-- assertVisible: "≤ 30 min"
+- assertVisible: "Weeknight time, ≤ 30 min"
 - tapOn:
     id: "settings-cooking-diet"
 - tapOn:

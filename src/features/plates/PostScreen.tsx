@@ -71,7 +71,7 @@ export function PostScreen() {
   };
 
   return (
-    <Screen>
+    <Screen testID="post-screen">
       <View style={styles.bar}>
         <Button label="Close" kind="quiet" onPress={close} testID="post-close" />
         <Text variant="row" accessibilityRole="header">

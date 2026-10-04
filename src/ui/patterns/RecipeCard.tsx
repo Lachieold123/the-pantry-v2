@@ -8,6 +8,7 @@ import { formatMinutes, CUISINE_LABELS } from '@/domain/recipes/labels';
 import { totalMinutes, type Recipe } from '@/domain/recipes/types';
 import { Icon } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
+import { useTheme } from '@/ui/theme/ThemeProvider';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { FIXED } from '@/ui/tokens/colour';
 import { cuisineEyebrow } from '@/ui/tokens/cuisine';
@@ -32,7 +33,7 @@ type Props = {
 export function RecipeCard({ recipe, image, size, onPress, note, rank, saved, onToggleSave, testID }: Props) {
   const styles = useStyles();
   const cuisine = CUISINE_LABELS[recipe.cuisine];
-  const eyebrow = cuisineEyebrow(recipe.cuisine);
+  const eyebrow = cuisineEyebrow(recipe.cuisine, useTheme().name);
   const meta = note ?? `${formatMinutes(totalMinutes(recipe))} · Serves ${recipe.servings}`;
   const label = `${recipe.title}, ${cuisine}, ${meta}`;
   const id = testID ?? `recipe-card-${recipe.id}`;
@@ -105,7 +106,7 @@ export function RecipeCard({ recipe, image, size, onPress, note, rank, saved, on
               {recipe.title}
             </Text>
             {note ? (
-              <Text variant="meta" tone={FIXED.onPhotoFaint} numberOfLines={1}>
+              <Text variant="meta" tone={FIXED.onPhotoFaint} numberOfLines={2}>
                 {note}
               </Text>
             ) : null}
@@ -133,8 +134,9 @@ export function RecipeCard({ recipe, image, size, onPress, note, rank, saved, on
         <Text variant="cardTitle" numberOfLines={2}>
           {recipe.title}
         </Text>
+        {/* Two lines: a "Need 2: cabbage, cucumber" note is the point of the card (health check #9). */}
         {note ? (
-          <Text variant="meta" numberOfLines={1}>
+          <Text variant="meta" numberOfLines={2}>
             {note}
           </Text>
         ) : null}

@@ -8,7 +8,7 @@ import { Avatar } from '@/ui/primitives/Avatar';
 import { Icon, type IconName } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
-import { RADIUS, RECIPE, SPACE, TAP_TARGET } from '@/ui/tokens/type';
+import { RADIUS, RECIPE, SMALL_CONTROL, SPACE, TAP_TARGET, slopFor } from '@/ui/tokens/type';
 
 type Props = {
   recipe: Recipe;
@@ -74,6 +74,7 @@ export function RecipeHeader(p: Props) {
           accessibilityRole="button"
           accessibilityLabel={p.cooked ? 'Cooked. Mark as cooked again' : 'Mark as cooked'}
           testID="recipe-mark-cooked"
+          hitSlop={slopFor(SMALL_CONTROL)}
           style={({ pressed }) => [styles.cookPill, p.cooked && styles.cookPillOn, pressed && styles.pressed]}
         >
           <Icon name={p.cooked ? 'checkCircle' : 'cook'} size={18} colour={p.cooked ? 'onAccent' : 'ink'} />
@@ -145,7 +146,7 @@ function Action({
       testID={testID}
       style={({ pressed }) => [styles.action, pressed && styles.pressed]}
     >
-      <Icon name={icon} size={20} colour={on ? 'accent' : 'ink'} />
+      <Icon name={icon} size={20} colour={on ? 'accentText' : 'ink'} />
       <Text variant="meta" colour="ink">
         {label}
       </Text>
@@ -157,9 +158,9 @@ function Tile({ icon, value, unit, label, on = false }: { icon: IconName; value:
   const styles = useStyles();
   return (
     <View style={styles.tile} accessible accessibilityLabel={`${label}: ${value}${unit ? ` ${unit}` : ''}`}>
-      <Icon name={icon} size={18} colour={on ? 'accent' : 'inkSoft'} />
+      <Icon name={icon} size={18} colour={on ? 'accentText' : 'inkSoft'} />
       <View style={styles.tileValue}>
-        <Text variant="infoValue" colour={on ? 'accent' : 'ink'}>
+        <Text variant="infoValue" colour={on ? 'accentText' : 'ink'}>
           {value}
         </Text>
         {unit ? (
@@ -168,7 +169,7 @@ function Tile({ icon, value, unit, label, on = false }: { icon: IconName; value:
           </Text>
         ) : null}
       </View>
-      <Text variant="infoLabel" colour={on ? 'accent' : 'inkMuted'}>
+      <Text variant="infoLabel" colour={on ? 'accentText' : 'inkMuted'}>
         {label}
       </Text>
     </View>
@@ -193,7 +194,7 @@ const useStyles = makeStyles(({ colours }) => ({
     alignItems: 'center',
     gap: 6,
     paddingHorizontal: SPACE.sm,
-    minHeight: 36,
+    minHeight: SMALL_CONTROL,
     borderRadius: RADIUS.pill,
     backgroundColor: colours.bgSoft,
   },

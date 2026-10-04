@@ -1,0 +1,94 @@
+# The first-use tour (D-035): it appears by itself after the welcome on a
+# fresh install, Skip tour ends it from any stop, it doesn't come back after a
+# relaunch, and Settings replays it from the start over Home.
+# (01-welcome-complete walks it after finishing the quiz; this is the Skip path.)
+appId: host.exp.Exponent
+---
+- launchApp:
+    clearState: true
+- openLink: ${METRO_URL}
+- runFlow: subflows/_wait_for_app.yaml
+- tapOn:
+    id: "welcome-skip"
+- extendedWaitUntil:
+    visible:
+      id: "feed-screen"
+    timeout: 30000
+
+# It starts by itself a moment after Home appears.
+- extendedWaitUntil:
+    visible:
+      id: "tour"
+    timeout: 10000
+- assertVisible: "1 of 4"
+- assertVisible: "What I have"
+- assertVisible:
+    id: "tour-skip"
+- takeScreenshot: tour-first-stop
+- tapOn:
+    id: "tour-next"
+- assertVisible: "2 of 4"
+- assertVisible: "Fill your cupboard"
+
+# Skip tour (on the card) ends it from any stop before the last.
+- tapOn:
+    id: "tour-skip"
+- assertNotVisible:
+    id: "tour"
+- assertVisible:
+    id: "feed-screen"
+
+# A relaunch (state kept) doesn't bring it back. Give it longer than it takes
+# to start; if it shows up, the check after fails.
+- launchApp:
+    clearState: false
+- openLink: ${METRO_URL}
+- tapOn:
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: "feed-screen"
+    timeout: 60000
+- extendedWaitUntil:
+    visible:
+      id: "tour"
+    timeout: 3000
+    optional: true
+- assertNotVisible:
+    id: "tour"
+
+# Settings replays it from the first stop, back on Home, and it walks to the end.
+- tapOn:
+    id: "header-avatar"
+- scrollUntilVisible:
+    element:
+      id: "settings-replay-tour"
+    direction: DOWN
+- tapOn:
+    id: "settings-replay-tour"
+- extendedWaitUntil:
+    visible:
+      id: "tour"
+    timeout: 10000
+- assertVisible: "1 of 4"
+- tapOn:
+    id: "tour-next"
+- assertVisible: "Fill your cupboard"
+- tapOn:
+    id: "tour-next"
+- assertVisible: "Plan the week"
+- tapOn:
+    id: "tour-next"
+- assertVisible: "4 of 4"
+- assertVisible: "Your shopping list"
+# Skip sits on the card at every stop but the last, where "Start cooking" ends it.
+- assertNotVisible:
+    id: "tour-skip"
+- takeScreenshot: tour-last-stop
+- tapOn:
+    id: "tour-done"
+- assertNotVisible:
+    id: "tour"
+- assertVisible:
+    id: "feed-screen"

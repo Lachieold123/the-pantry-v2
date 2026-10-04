@@ -1,0 +1,108 @@
+# The centre "+": Share a dish (D-033). Everything that works without a photo:
+# Share says what's missing, the photo choice opens and cancels, naming the
+# dish suggests a recipe to link, the preview follows, Close keeps a draft and
+# Discard clears it.
+# Not covered: picking a photo. The camera and photo library are the system's
+# own screens, which tests can't drive, so a plate is never actually shared here.
+appId: host.exp.Exponent
+---
+- launchApp:
+    clearState: true
+- openLink: ${METRO_URL}
+- runFlow: subflows/_setup_skip_welcome.yaml
+- tapOn:
+    id: "tab-add"
+- assertVisible:
+    id: "post-screen"
+- assertVisible: "Share a dish"
+- assertVisible: "Photos · 0 of \\d+"
+- assertNotVisible:
+    id: "post-discard"
+- takeScreenshot: post-empty
+
+# Share with nothing in: it says what's missing and stays put.
+- tapOn:
+    id: "post-share"
+- assertVisible:
+    id: "post-problems"
+    text: "Almost there: add a photo and name the dish."
+- assertVisible:
+    id: "post-screen"
+
+# Add a photo offers the camera or the library. Cancel, since the pickers can't be automated.
+- tapOn:
+    id: "post-add-photo"
+- assertVisible:
+    id: "post-camera"
+- assertVisible:
+    id: "post-library"
+- takeScreenshot: post-photo-choice
+- tapOn:
+    id: "sheet-cancel"
+- assertNotVisible:
+    id: "post-camera"
+
+# Name it: a recipe of ours that matches is offered as a link.
+- tapOn:
+    id: "post-title"
+- inputText: "carbonara"
+- assertVisible:
+    id: "post-link-carbonara"
+- tapOn:
+    id: "post-link-carbonara"
+- assertVisible: "From the recipe: Carbonara"
+# Tap the plain header to close the keyboard (the page doesn't hide it on a swipe).
+- tapOn: "Share a dish"
+# The preview card follows: the name, and the time and serves the link filled in.
+- scrollUntilVisible:
+    element:
+      id: "post-preview"
+    direction: DOWN
+- assertVisible: ".*Serves 2.*"
+- takeScreenshot: post-linked-preview
+
+# Still no photo, so Share now asks only for that.
+- scrollUntilVisible:
+    element:
+      id: "post-share"
+    direction: UP
+- tapOn:
+    id: "post-share"
+- assertVisible:
+    id: "post-problems"
+    text: "Almost there: add a photo."
+
+# Unlinking keeps the name and offers the link again.
+- tapOn:
+    id: "post-unlink"
+- assertNotVisible:
+    id: "post-unlink"
+- assertVisible:
+    id: "post-link-carbonara"
+
+# Close keeps what you typed as a draft, and it's there next time.
+- tapOn:
+    id: "post-close"
+- assertVisible: "Kept as a draft.*"
+- assertVisible:
+    id: "feed-screen"
+- tapOn:
+    id: "tab-add"
+- scrollUntilVisible:
+    element:
+      id: "post-discard"
+    direction: DOWN
+
+# Discard clears it: the next "+" starts empty.
+- tapOn:
+    id: "post-discard"
+- assertVisible:
+    id: "feed-screen"
+- tapOn:
+    id: "tab-add"
+- assertNotVisible:
+    id: "post-discard"
+- tapOn:
+    id: "post-close"
+- assertVisible:
+    id: "feed-screen"

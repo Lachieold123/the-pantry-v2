@@ -24,7 +24,7 @@ appId: host.exp.Exponent
     id: "tab-plan"
 - assertVisible:
     id: "plan-screen"
-- assertVisible: "0 of 21 meals"
+- assertVisible: "0 of 21 meals planned this week"
 - takeScreenshot: empty-plan
 - tapOn:
     id: "tab-list"
@@ -39,8 +39,11 @@ appId: host.exp.Exponent
 # Cupboard
 - tapOn:
     id: "tab-cupboard"
-- assertVisible:
-    id: "cupboard-empty"
+# Under the ways to add things, so it can sit below the fold.
+- scrollUntilVisible:
+    element:
+      id: "cupboard-empty"
+    direction: DOWN
 - assertVisible: "Your cupboard is empty.*"
 - takeScreenshot: empty-cupboard
 

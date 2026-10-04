@@ -24,9 +24,10 @@ appId: host.exp.Exponent
 - inputText: "Weeknight dinners"
 - tapOn:
     id: "name-dialog-save"
+# A card reads as one button: its name and count together.
 - assertVisible:
     id: "collection-card-.*"
-- assertVisible: "Weeknight dinners"
+- assertVisible: "Weeknight dinners, 0 recipes"
 - assertVisible: "1 collection"
 
 # A second one with the same name is refused; Cancel closes the dialog.
@@ -71,7 +72,7 @@ appId: host.exp.Exponent
     id: "toast-undo"
 - assertVisible:
     id: "collection-card-.*"
-- assertVisible: "Fridays"
+- assertVisible: "Fridays, 0 recipes"
 
 # A long press on the card opens the same actions.
 - longPressOn:

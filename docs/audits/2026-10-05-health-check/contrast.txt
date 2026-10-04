@@ -1,0 +1,128 @@
+light  ink                          on bg                               text  17.40 ok  everywhere
+light  inkSoft                      on bg                               text   8.86 ok  body copy
+light  inkMuted                     on bg                               text   5.10 ok  meta/kickers 11-12px (42 uses)
+light  inkMuted                     on bgSoft                           text   4.76 ok  inactive segment/chip/meta on soft
+light  inkMuted                     on card                             text   5.10 ok  meta on cards
+light  inkSoft                      on bgSoft                           text   8.27 ok  body on soft
+light  inkSubtle                    on bg                               text   1.90 FAIL  RecipeBody ticked lines; CookFooter disabled Back
+light  inkSubtle                    on bg                               large  1.90 FAIL  CookStep numeral 64px, cupboard numeral 22px, counterSlash
+light  accent                       on bg                               text   2.74 FAIL  kicker 11px colour=accent (LibraryHeader, PushedHeader, ShoppingRows aisle 10px, SectionHeader, TitleBlock, RecipeBody body text)
+light  accent                       on bgSoft                           text   2.56 FAIL  accent kicker on soft
+light  accent                       on bg                               ui     2.74 FAIL  RecipeHeader on-state icons/infoValue
+light  accentDeep                   on bg                               text   5.30 ok  labels, timer text
+light  accentDeep                   on accentSoft                       text   4.59 ok  PantrySwitch What I have, CupboardSummary
+light  accentDeep                   on bgSoft                           text   4.95 ok  accentDeep on soft
+light  onAccent                     on accent                           text   2.74 FAIL  Button accent label 14px, Badge accent 11px, cooked pill, TimerBar done
+light  bg                           on accentDeep                       text   5.30 ok  PantrySwitch count badge 11px
+light  bg                           on ink                              text  17.40 ok  primary buttons, selected chips
+light  bgSoft                       on ink                              text  16.25 ok  meta on ink cards (MatchCard, PlanParts list card, WeekStrip)
+light  inkMuted                     on tintNeutral                      text   4.64 ok  meta on tint
+light  danger                       on bg                               text   3.80 FAIL  error meta 12-13px
+light  danger                       on bgSoft                           text   3.54 FAIL  danger on soft
+light  onDanger                     on danger                           text   3.80 FAIL  badge
+light  bullet                       on bg                               ui     1.76 FAIL  ingredient dot
+light  border                       on bg                               ui     1.14 FAIL  input/chip/card borders
+light  bgSoft                       on bg                               ui     1.07 FAIL  input field fill vs page (field boundary)
+light  inkSubtle                    on bg                               ui     1.90 FAIL  handles, progress tracks, disabled icons
+light  ink                          on tintOrange                       text  14.59 ok  category tint chip text
+light  inkSoft                      on tintOrange                       text   7.43 ok  meta on tint
+light  ink                          on tintPeach                        text  13.55 ok  category tint chip text
+light  inkSoft                      on tintPeach                        text   6.90 ok  meta on tint
+light  ink                          on tintButter                       text  15.70 ok  category tint chip text
+light  inkSoft                      on tintButter                       text   7.99 ok  meta on tint
+light  ink                          on tintMint                         text  14.32 ok  category tint chip text
+light  inkSoft                      on tintMint                         text   7.29 ok  meta on tint
+light  ink                          on tintSky                          text  13.64 ok  category tint chip text
+light  inkSoft                      on tintSky                          text   6.95 ok  meta on tint
+light  ink                          on tintLavender                     text  13.09 ok  category tint chip text
+light  inkSoft                      on tintLavender                     text   6.67 ok  meta on tint
+light  ink                          on tintRose                         text  12.64 ok  category tint chip text
+light  inkSoft                      on tintRose                         text   6.44 ok  meta on tint
+dark   ink                          on bg                               text  17.88 ok  everywhere
+dark   inkSoft                      on bg                               text  13.01 ok  body copy
+dark   inkMuted                     on bg                               text   6.75 ok  meta/kickers 11-12px (42 uses)
+dark   inkMuted                     on bgSoft                           text   6.28 ok  inactive segment/chip/meta on soft
+dark   inkMuted                     on card                             text   6.28 ok  meta on cards
+dark   inkSoft                      on bgSoft                           text  12.11 ok  body on soft
+dark   inkSubtle                    on bg                               text   2.17 FAIL  RecipeBody ticked lines; CookFooter disabled Back
+dark   inkSubtle                    on bg                               large  2.17 FAIL  CookStep numeral 64px, cupboard numeral 22px, counterSlash
+dark   accent                       on bg                               text   9.71 ok  kicker 11px colour=accent (LibraryHeader, PushedHeader, ShoppingRows aisle 10px, SectionHeader, TitleBlock, RecipeBody body text)
+dark   accent                       on bgSoft                           text   9.03 ok  accent kicker on soft
+dark   accent                       on bg                               ui     9.71 ok  RecipeHeader on-state icons/infoValue
+dark   accentDeep                   on bg                               text   7.23 ok  labels, timer text
+dark   accentDeep                   on accentSoft                       text   4.89 ok  PantrySwitch What I have, CupboardSummary
+dark   accentDeep                   on bgSoft                           text   6.72 ok  accentDeep on soft
+dark   onAccent                     on accent                           text   2.04 FAIL  Button accent label 14px, Badge accent 11px, cooked pill, TimerBar done
+dark   bg                           on accentDeep                       text   7.23 ok  PantrySwitch count badge 11px
+dark   bg                           on ink                              text  17.88 ok  primary buttons, selected chips
+dark   bgSoft                       on ink                              text  16.64 ok  meta on ink cards (MatchCard, PlanParts list card, WeekStrip)
+dark   inkMuted                     on tintNeutral                      text   5.62 ok  meta on tint
+dark   danger                       on bg                               text   7.13 ok  error meta 12-13px
+dark   danger                       on bgSoft                           text   6.64 ok  danger on soft
+dark   onDanger                     on danger                           text   2.78 FAIL  badge
+dark   bullet                       on bg                               ui    11.23 ok  ingredient dot
+dark   border                       on bg                               ui     1.25 FAIL  input/chip/card borders
+dark   bgSoft                       on bg                               ui     1.07 FAIL  input field fill vs page (field boundary)
+dark   inkSubtle                    on bg                               ui     2.17 FAIL  handles, progress tracks, disabled icons
+dark   ink                          on tintOrange                       text  12.24 ok  category tint chip text
+dark   inkSoft                      on tintOrange                       text   8.91 ok  meta on tint
+dark   ink                          on tintPeach                        text  13.53 ok  category tint chip text
+dark   inkSoft                      on tintPeach                        text   9.85 ok  meta on tint
+dark   ink                          on tintButter                       text  11.85 ok  category tint chip text
+dark   inkSoft                      on tintButter                       text   8.63 ok  meta on tint
+dark   ink                          on tintMint                         text  10.76 ok  category tint chip text
+dark   inkSoft                      on tintMint                         text   7.83 ok  meta on tint
+dark   ink                          on tintSky                          text  12.51 ok  category tint chip text
+dark   inkSoft                      on tintSky                          text   9.10 ok  meta on tint
+dark   ink                          on tintLavender                     text  13.79 ok  category tint chip text
+dark   inkSoft                      on tintLavender                     text  10.04 ok  meta on tint
+dark   ink                          on tintRose                         text  13.18 ok  category tint chip text
+dark   inkSoft                      on tintRose                         text   9.60 ok  meta on tint
+fixed  libraryCardMeta              on libraryCard                      text   4.01 FAIL  
+fixed  toastInk                     on toastBg                          text  17.88 ok  
+fixed  rgba(255,255,255,0.45)       on videoBg #000                     text   4.41 FAIL  welcome text on pure black (photo may be lighter)
+fixed  rgba(255,255,255,0.7)        on videoBg #000                     text   9.96 ok  welcome text on pure black (photo may be lighter)
+fixed  rgba(255,255,255,0.82)       on videoBg #000                     text  13.77 ok  welcome text on pure black (photo may be lighter)
+photo  white                        on feedBottom@0.85 over #FFFFFF     text  15.08 ok  
+photo  white                        on feedBottom@0.85 over #C0C0C0     text  16.89 ok  
+photo  white                        on feedBottom@0.85 over #808080     text  18.55 ok  
+photo  white                        on heroBottom@0.78 over #FFFFFF     text  11.71 ok  
+photo  white                        on heroBottom@0.78 over #C0C0C0     text  14.31 ok  
+photo  white                        on heroBottom@0.78 over #808080     text  17.01 ok  
+photo  white                        on scrim mid-stop ~0.45 over #FFFFFF text   3.35 FAIL  
+photo  white                        on scrim mid-stop ~0.45 over #C0C0C0 text   5.44 ok  
+photo  white                        on scrim mid-stop ~0.45 over #808080 text   9.38 ok  
+--- cuisine eyebrows (same hex both themes)
+italian        light bg 4.60  dark bg 4.31  libCard light 4.15 libCard dark 3.81
+mexican        light bg 3.39  dark bg 5.84  libCard light 3.06 libCard dark 5.17
+asian          light bg 5.05  dark bg 3.92  libCard light 4.56 libCard dark 3.47
+japanese       light bg 4.91  dark bg 4.03  libCard light 4.43 libCard dark 3.57
+korean         light bg 3.40  dark bg 5.83  libCard light 3.07 libCard dark 5.15
+indian         light bg 3.80  dark bg 5.21  libCard light 3.43 libCard dark 4.61
+middleEastern  light bg 3.28  dark bg 6.04  libCard light 2.96 libCard dark 5.35
+american       light bg 3.00  dark bg 6.60  libCard light 2.71 libCard dark 5.84
+european       light bg 4.22  dark bg 4.70  libCard light 3.81 libCard dark 4.15
+french         light bg 4.35  dark bg 4.55  libCard light 3.93 libCard dark 4.02
+--- library
+light title 17.43 meta 4.01 count on bg 4.29 count on card 3.87
+dark title 15.81 meta 6.73 count on bg 12.35 count on card 10.92
+--- jar/stock tiles
+light #973023 on #FFDBD2 5.91 chipInk 12.17
+light #006C28 on #CFF3D5 5.49 chipInk 13.01
+light #7B4E00 on #F9E6BF 5.83 chipInk 12.76
+light #923900 on #FFDEC8 5.89 chipInk 12.34
+light #814A00 on #FDE4BF 5.85 chipInk 12.7
+light #715400 on #F3E8BF 5.76 chipInk 12.76
+light #316800 on #D8F1CC 5.59 chipInk 12.96
+light #8D3E00 on #FFE0C4 5.92 chipInk 12.47
+dark #F0A393 on #3A2320 7.19 chipInk 11.75
+dark #8FD6A0 on #1E3324 7.91 chipInk 10.89
+dark #E7C67A on #372D17 8.23 chipInk 10.92
+dark #F2AE82 on #3A2618 7.58 chipInk 11.52
+dark #E9C286 on #362A18 8.34 chipInk 11.28
+dark #E2CF83 on #332E18 8.73 chipInk 10.96
+dark #A9D78F on #22321B 8.31 chipInk 10.99
+dark #EFB585 on #38281A 7.82 chipInk 11.39
+--- tab bar / misc dark accent on bgSoft etc
+dark accent on bgSoft 9.03 dark accentDeep on bg 7.23
+HC light onAccent on accent 5.89 HC dark onAccent on accent 1.67

@@ -30,6 +30,15 @@ appId: host.exp.Exponent
 - tapOn:
     id: "stats-empty-action"
 - assertVisible: "Discover"
+# Browse opened over Kitchen stats: back twice to Home, where the side menu is.
+- tapOn:
+    id: "back"
+- assertVisible:
+    id: "stats-screen"
+- tapOn:
+    id: "back"
+- assertVisible:
+    id: "feed-screen"
 
 # Open a recipe and mark it cooked
 - runFlow:
@@ -81,9 +90,13 @@ appId: host.exp.Exponent
 - assertVisible: "1 day cooking streak"
 - assertVisible: "Total cooks: 1"
 - assertVisible: "Best streak: 1"
+# Most cooked comes after the tiles and top cuisines, so it can sit below the fold.
+- scrollUntilVisible:
+    element:
+      text: "1. Carbonara, once"
+    direction: DOWN
 - assertVisible:
     id: "stats-most-cooked"
-- assertVisible: "1. Carbonara, once"
 - takeScreenshot: stats-one
 
 # Clear the history, then Undo

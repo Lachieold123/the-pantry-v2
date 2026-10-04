@@ -23,6 +23,14 @@ describe('parseIngredientsText', () => {
     );
   });
 
+  it('keeps decimal quantities whole instead of reading "1." as numbering', () => {
+    const { groups } = parseIngredientsText('1.5 kg lamb shoulder\n0.5 tsp salt\n1. 2 eggs', index);
+    assert.deepEqual(
+      groups[0]?.items.map((i) => i.raw),
+      ['1.5 kg lamb shoulder', '0.5 tsp salt', '2 eggs'],
+    );
+  });
+
   it('starts a group at a line ending in a colon', () => {
     const { groups } = parseIngredientsText('Sauce:\n2 tbsp soy sauce\nTo serve:\nsteamed rice', index);
     assert.deepEqual(
@@ -48,6 +56,10 @@ describe('parseIngredientsText', () => {
 describe('parseMethodText', () => {
   it('makes one step per line without the numbering', () => {
     assert.deepEqual(parseMethodText('1. Chop.\nStep 2: Fry.\n\n3) Serve.'), [{ text: 'Chop.' }, { text: 'Fry.' }, { text: 'Serve.' }]);
+  });
+
+  it('leaves a step that starts with a decimal alone', () => {
+    assert.deepEqual(parseMethodText('1.5 hours in a low oven.'), [{ text: '1.5 hours in a low oven.' }]);
   });
 });
 

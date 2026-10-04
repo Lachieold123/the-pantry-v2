@@ -40,6 +40,11 @@ appId: host.exp.Exponent
     point: "88%,50%"
 - assertVisible: "Add to .* lunch"
 - takeScreenshot: recipe-plan-sheet
+# Two weeks of days, the meal and the stepper can push the button below the sheet's fold.
+- scrollUntilVisible:
+    element:
+      id: "plan-confirm"
+    direction: DOWN
 - tapOn:
     id: "plan-confirm"
 - assertVisible: "Carbonara planned for .* lunch"
@@ -176,6 +181,8 @@ appId: host.exp.Exponent
     element:
       id: "recipe-save"
     direction: UP
+# The recipe was opened from a link over Home, so Back lands there.
 - tapOn:
     id: "back"
-- assertVisible: "Discover"
+- assertVisible:
+    id: "feed-screen"

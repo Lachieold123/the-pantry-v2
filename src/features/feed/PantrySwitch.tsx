@@ -32,8 +32,9 @@ export function PantrySwitch({ mode, onMode, ready, stocked, onCupboard, onSearc
   const tourRef = useTourTarget('home-pantry');
   const readyLabel = ready === 1 ? '1 dish ready' : `${ready} dishes ready`;
   return (
-    <View style={{ gap: SPACE.xs }}>
-      <View style={styles.row} ref={tourRef} collapsable={false}>
+    // The tour's first stop takes in the switch and the line under it.
+    <View style={{ gap: SPACE.xs }} ref={tourRef} collapsable={false}>
+      <View style={styles.row}>
         <View style={styles.track} accessibilityRole="radiogroup" accessibilityLabel="Show recipes">
           <Pressable
             onPress={() => onMode('pantry')}
@@ -44,11 +45,18 @@ export function PantrySwitch({ mode, onMode, ready, stocked, onCupboard, onSearc
             style={({ pressed }) => [styles.segment, styles.pantrySegment, pantry && styles.pantryOn, pressed && styles.pressed]}
           >
             <Icon name="basket" size={18} colour={pantry ? 'accentDeep' : 'inkMuted'} />
-            <Text variant="label" colour={pantry ? 'accentDeep' : 'inkMuted'} style={pantry ? styles.bold : null} numberOfLines={1}>
+            <Text
+              variant="label"
+              colour={pantry ? 'accentDeep' : 'inkMuted'}
+              style={pantry ? styles.bold : null}
+              numberOfLines={1}
+              adjustsFontSizeToFit
+              minimumFontScale={HOME.labelMinScale}
+            >
               What I have
             </Text>
             <View style={[styles.count, pantry && styles.countOn]}>
-              <Text variant="badge" colour={pantry ? 'bg' : 'inkMuted'}>
+              <Text variant="badge" colour={pantry ? 'bg' : 'inkMuted'} maxFontSizeMultiplier={HOME.countMaxScale}>
                 {String(ready)}
               </Text>
             </View>
@@ -61,7 +69,14 @@ export function PantrySwitch({ mode, onMode, ready, stocked, onCupboard, onSearc
             testID="home-mode-all"
             style={({ pressed }) => [styles.segment, !pantry && styles.allOn, pressed && styles.pressed]}
           >
-            <Text variant="label" colour={pantry ? 'inkMuted' : 'bg'} style={pantry ? null : styles.bold} numberOfLines={1}>
+            <Text
+              variant="label"
+              colour={pantry ? 'inkMuted' : 'bg'}
+              style={pantry ? null : styles.bold}
+              numberOfLines={1}
+              adjustsFontSizeToFit
+              minimumFontScale={HOME.labelMinScale}
+            >
               Everything
             </Text>
           </Pressable>
@@ -70,7 +85,7 @@ export function PantrySwitch({ mode, onMode, ready, stocked, onCupboard, onSearc
       </View>
       {/* Only in "What I have": it says what the answer is worked out from. */}
       {pantry ? (
-        <Pressable onPress={onCupboard} accessibilityRole="button" testID="home-pantry-line" hitSlop={SPACE.xs}>
+        <Pressable onPress={onCupboard} accessibilityRole="button" testID="home-pantry-line" style={styles.line}>
           <Text variant="meta" colour="inkMuted" numberOfLines={1}>
             {stocked === 0 ? (
               <>
@@ -123,7 +138,7 @@ const useStyles = makeStyles(({ colours }) => ({
   bold: { fontWeight: '800' },
   count: {
     minWidth: HOME.countPill,
-    height: HOME.countPill,
+    minHeight: HOME.countPill,
     paddingHorizontal: SPACE.xxs + 2,
     borderRadius: RADIUS.pill,
     alignItems: 'center',
@@ -132,4 +147,6 @@ const useStyles = makeStyles(({ colours }) => ({
   },
   countOn: { backgroundColor: colours.accentDeep },
   pressed: { opacity: PRESSED.row },
+  // A full-height tap target; the text alone was 32pt (health check #12).
+  line: { minHeight: TAP_TARGET, justifyContent: 'center' },
 }));

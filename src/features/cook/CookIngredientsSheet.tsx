@@ -43,6 +43,7 @@ export function CookIngredientsSheet({ visible, recipe, servings, units, have, o
         <View
           style={[styles.sheet, { paddingBottom: Math.max(insets.bottom, SPACE.md) }]}
           accessibilityViewIsModal
+          onAccessibilityEscape={onClose}
           testID="cook-ingredients-sheet"
         >
           <View style={styles.handle} />
@@ -87,7 +88,7 @@ export function CookIngredientsSheet({ visible, recipe, servings, units, have, o
                       </View>
                       {tip ? (
                         <View style={styles.tip}>
-                          <Icon name="substitute" size={COOK.tipIcon} colour="accent" />
+                          <Icon name="substitute" size={COOK.tipIcon} colour="accentText" />
                           <Text variant="note" colour="inkMuted" style={styles.item}>
                             {tip}
                           </Text>

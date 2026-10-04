@@ -108,6 +108,10 @@ export const HOME = {
   /** The "What I have" side of the switch is this much wider than "Everything" (D-034). */
   pantryShare: 1.7,
   countPill: 22,
+  /** The switch's labels shrink this far before truncating, at 320pt wide or large text sizes. */
+  labelMinScale: 0.7,
+  /** The count digits stop growing here, so the pill keeps its shape at the largest text sizes. */
+  countMaxScale: 1.3,
   afterCarousel: 22,
   cardBodyX: 22,
   cardBodyBottom: 22,
@@ -136,5 +140,4 @@ export const TOUR = {
   dotOn: 18,
   dotGap: 6,
   startDelay: 700,
-  skipHeight: 36,
 } as const;

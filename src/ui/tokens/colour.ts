@@ -25,7 +25,9 @@ export type ColourTokens = {
   accent: string;
   accentDeep: string;
   accentSoft: string;
-  /** Text or icons on an accent fill. */
+  /** Amber text and icons on the page: kickers, aisle labels, "on" states. `accent` is for fills only (2.7:1 as text on white). */
+  accentText: string;
+  /** Text or icons on an accent fill. Dark ink: white on amber is 2.7:1 (health check 2026-10-05 #2). */
   onAccent: string;
   /** The small dot beside each ingredient. */
   bullet: string;
@@ -57,9 +59,11 @@ export const light: ColourTokens = {
   // The original's #A2723D read at 3.6:1 on accentSoft; this is a shade darker and passes AA.
   accentDeep: '#8F6232',
   accentSoft: '#FBEDD6',
-  onAccent: '#FFFFFF',
+  accentText: '#8F6232',
+  onAccent: '#1A1A1A',
   bullet: '#F5B945',
-  danger: '#D85A5A',
+  // The original's #D85A5A was 3.8:1 on white.
+  danger: '#B33A3A',
   onDanger: '#FFFFFF',
   tintOrange: '#FCE9C5',
   tintPeach: '#FBDDD0',
@@ -84,10 +88,11 @@ export const dark: ColourTokens = {
   accent: '#E0AC6E',
   accentDeep: '#C99155',
   accentSoft: '#3D2C13',
-  onAccent: '#FFFFFF',
+  accentText: '#E0AC6E',
+  onAccent: '#0A0A0A',
   bullet: '#F5B945',
   danger: '#FF6B6B',
-  onDanger: '#FFFFFF',
+  onDanger: '#0A0A0A',
   // The original kept light tints in dark mode by accident (spec §8.2); these are its own dark values.
   tintOrange: '#3A2C12',
   tintPeach: '#3A201A',
@@ -110,6 +115,9 @@ export const lightHighContrast: ColourTokens = {
   inkSubtle: '#595959',
   accent: '#8A5A22',
   accentDeep: '#6E4A1C',
+  accentText: '#6E4A1C',
+  // High contrast's deeper amber carries white text at 5.9:1.
+  onAccent: '#FFFFFF',
 };
 
 export const darkHighContrast: ColourTokens = {
@@ -125,6 +133,7 @@ export const darkHighContrast: ColourTokens = {
   inkSubtle: '#9A9A9A',
   accent: '#F0C081',
   accentDeep: '#E0AC6E',
+  accentText: '#F0C081',
 };
 
 export type ThemeName = 'light' | 'dark';
@@ -186,6 +195,8 @@ export const GRADIENTS = {
   feedBottom: { colors: ['rgba(0,0,0,0)', 'rgba(0,0,0,0.85)'], locations: [0.45, 1] },
   spinnerBottom: { colors: ['transparent', 'rgba(0,0,0,0.2)', 'rgba(0,0,0,0.92)'], locations: [0.3, 0.45, 0.92] },
   photoTop: { colors: ['rgba(0,0,0,0.25)', 'rgba(0,0,0,0)'], locations: [0, 1] },
+  /** Behind the spinner card's cuisine label, which vanished on pale photos (health check #5). */
+  spinnerTop: { colors: ['rgba(0,0,0,0.55)', 'rgba(0,0,0,0)'], locations: [0, 0.3] },
   /** The faint warm air behind the spinner's deck. */
   spinnerGlow: { colors: ['transparent', 'rgba(232,200,145,0.05)', 'transparent'], locations: [0.2, 0.55, 0.9] },
   spinnerGlowFoot: { colors: ['transparent', 'rgba(232,200,145,0.04)'], locations: [0.7, 1] },

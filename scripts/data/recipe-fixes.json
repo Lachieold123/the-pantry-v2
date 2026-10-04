@@ -8,11 +8,529 @@
     }
   ],
   "fixes": {
-    "chicken-kiev": {
+    "arancini": {
+      "times": {
+        "prepMinutes": 510,
+        "cookMinutes": 45
+      },
+      "ingredients": [
+        {
+          "from": "900ml chicken or vegetable stock, kept warm",
+          "to": "900ml chicken stock (or vegetable stock), kept warm"
+        }
+      ],
       "steps": [
         {
-          "from": "until the chicken hits 70°C internally",
-          "to": "until the chicken reaches 75°C in the thickest part"
+          "from": "Spread on a tray and cool completely, ideally overnight in the fridge.",
+          "to": "Spread on a tray to cool quickly, then refrigerate until cold, ideally overnight."
+        }
+      ]
+    },
+    "arepas": {
+      "times": {
+        "cookMinutes": 30
+      },
+      "steps": [
+        {
+          "from": "mix the cornmeal, water, and salt with your hand",
+          "to": "mix the cornmeal, water, salt, and oil with your hand"
+        }
+      ]
+    },
+    "avocado-toast": {
+      "addNotes": [
+        "Soft-boiled eggs and smoked salmon: if you're pregnant, cooking for young children or older people, or have a weakened immune system, boil the eggs until the yolks are firm and skip the smoked salmon."
+      ]
+    },
+    "baked-cod": {
+      "ingredients": [
+        {
+          "from": "Steamed asparagus or green beans",
+          "to": "Steamed asparagus (or green beans)"
+        },
+        {
+          "from": "Mashed potato or rice",
+          "to": "Mashed potato (or rice)"
+        }
+      ]
+    },
+    "baked-salmon": {
+      "ingredients": [
+        {
+          "from": "Roasted asparagus or green beans",
+          "to": "Roasted asparagus (or green beans)"
+        }
+      ]
+    },
+    "baked-ziti": {
+      "times": {
+        "prepMinutes": 30
+      }
+    },
+    "baked-zucchini-boats": {
+      "ingredients": [
+        {
+          "from": "500g beef or lamb mince",
+          "to": "500g beef mince (or lamb mince)"
+        }
+      ]
+    },
+    "bangers-and-mash": {
+      "times": {
+        "cookMinutes": 45
+      },
+      "ingredients": [
+        {
+          "from": "2 tbsp sour cream or crème fraîche",
+          "to": "2 tbsp sour cream (or crème fraîche)"
+        },
+        {
+          "from": "Mushy peas or buttered green peas",
+          "to": "Mushy peas (or buttered green peas)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "and the sausages cook through.",
+          "to": "and the sausages are cooked through (75°C in the centre)."
+        }
+      ]
+    },
+    "banh-mi": {
+      "times": {
+        "prepMinutes": 45
+      },
+      "ingredients": [
+        {
+          "from": "Sliced jalapeño or fresh red chilli",
+          "to": "Sliced jalapeño (or fresh red chilli)"
+        }
+      ]
+    },
+    "bbq-chicken-pizza": {
+      "times": {
+        "cookMinutes": 20
+      }
+    },
+    "bbq-ribs": {
+      "times": {
+        "prepMinutes": 55,
+        "cookMinutes": 230
+      }
+    },
+    "bbq-ribs-plate": {
+      "times": {
+        "prepMinutes": 55,
+        "cookMinutes": 230
+      },
+      "ingredients": [
+        {
+          "from": "Cornbread or buttery dinner rolls",
+          "to": "Cornbread (or buttery dinner rolls)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "2 tbsp butter, 2 tbsp sugar,",
+          "to": "2 tbsp butter, 2 tbsp brown sugar,"
+        }
+      ]
+    },
+    "beef-bourguignon": {
+      "times": {
+        "cookMinutes": 195
+      },
+      "ingredients": [
+        {
+          "from": "good red burgundy or pinot noir",
+          "to": "good pinot noir (or red burgundy)"
+        },
+        {
+          "from": "300g pearl onions or shallots, peeled",
+          "to": "300g pearl onions (or shallots), peeled"
+        }
+      ]
+    },
+    "beef-brisket": {
+      "times": {
+        "prepMinutes": 140,
+        "cookMinutes": 480
+      },
+      "ingredients": [
+        {
+          "from": "Soft white rolls or texas toast",
+          "to": "Soft white rolls (or Texas toast)"
+        }
+      ]
+    },
+    "beef-bulgogi-bowl": {
+      "times": {
+        "prepMinutes": 50,
+        "cookMinutes": 15
+      },
+      "ingredients": [
+        {
+          "from": "700g beef rib eye or sirloin, sliced paper-thin",
+          "to": "700g beef rib eye (or sirloin), sliced paper-thin"
+        },
+        {
+          "from": "Gochujang sauce (gochujang + sesame oil + sugar + vinegar)",
+          "to": "Gochujang sauce (3 tbsp gochujang, 1 tbsp sesame oil, 1 tbsp sugar, 1 tbsp rice vinegar)"
+        }
+      ],
+      "addSteps": [
+        {
+          "after": "Mix the marinade. Toss with the beef. Rest 30 minutes.",
+          "text": "While the beef marinates, cook the rice, blanch the spinach and bean sprouts, and quickly sauté the carrot. Fry the eggs just before serving."
+        }
+      ]
+    },
+    "beef-burrito": {
+      "times": {
+        "cookMinutes": 30
+      }
+    },
+    "beef-curry": {
+      "times": {
+        "prepMinutes": 25,
+        "cookMinutes": 160
+      },
+      "ingredients": [
+        {
+          "from": "3 tbsp ghee or neutral oil",
+          "to": "3 tbsp ghee (or neutral oil)"
+        },
+        {
+          "from": "Basmati rice or naan",
+          "to": "Basmati rice (or naan)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Serve over rice with naan and yogurt.",
+          "to": "Serve over rice (or with naan) and yogurt."
+        }
+      ]
+    },
+    "beef-enchiladas": {
+      "times": {
+        "prepMinutes": 35
+      },
+      "ingredients": [
+        {
+          "from": "300g grated Monterey Jack or mozzarella",
+          "to": "300g grated Monterey Jack (or mozzarella)"
+        },
+        {
+          "from": "Crumbled feta or queso fresco",
+          "to": "Crumbled feta (or queso fresco)"
+        }
+      ]
+    },
+    "beef-korma": {
+      "times": {
+        "prepMinutes": 80,
+        "cookMinutes": 140
+      },
+      "ingredients": [
+        {
+          "from": "1/2 tsp ground mace or nutmeg",
+          "to": "1/2 tsp ground mace (or nutmeg)"
+        }
+      ]
+    },
+    "beef-lasagna": {
+      "times": {
+        "prepMinutes": 50,
+        "cookMinutes": 125
+      },
+      "steps": [
+        {
+          "from": "Repeat 4 times.",
+          "to": "Repeat to make 4 layers in all."
+        }
+      ]
+    },
+    "beef-noodle-soup": {
+      "ingredients": [
+        {
+          "from": "800g beef shin or chuck, in 3cm cubes",
+          "to": "800g beef shin (or chuck), in 3cm cubes"
+        },
+        {
+          "from": "2L beef stock or water",
+          "to": "2L beef stock (or water)"
+        },
+        {
+          "from": "400g wheat noodles or udon",
+          "to": "400g wheat noodles (or udon)"
+        },
+        {
+          "from": "1 small bunch bok choy or gai lan",
+          "to": "1 small bunch bok choy (or gai lan)"
+        }
+      ]
+    },
+    "beef-pho": {
+      "ingredients": [
+        {
+          "from": "2 tbsp rock or brown sugar",
+          "to": "2 tbsp rock sugar (or brown sugar)"
+        },
+        {
+          "from": "1 tbsp salt",
+          "to": "1 tsp salt"
+        }
+      ]
+    },
+    "beef-rendang": {
+      "times": {
+        "prepMinutes": 45
+      }
+    },
+    "beef-roast-dinner": {
+      "times": {
+        "prepMinutes": 50,
+        "cookMinutes": 100
+      },
+      "ingredients": [
+        {
+          "from": "1.5kg beef topside or sirloin roast",
+          "to": "1.5kg beef topside roast (or sirloin)"
+        },
+        {
+          "from": "1kg roast potatoes (parboiled, roughed in colander, roasted in 4 tbsp duck fat)",
+          "to": "1kg roasting potatoes, peeled and halved"
+        },
+        {
+          "from": "Mustard or horseradish",
+          "to": "Mustard (or horseradish)"
+        }
+      ],
+      "addIngredients": [
+        {
+          "group": "Roasting tray",
+          "line": "4 tbsp duck fat"
+        }
+      ],
+      "addSteps": [
+        {
+          "after": "Heat the oven to 220°C.",
+          "text": "Boil the potatoes in salted water for 10 minutes. Drain, then shake in the colander to rough up the edges. Heat the duck fat in a second roasting tray in the oven for 5 minutes, add the potatoes, turn to coat, and roast alongside the beef."
+        }
+      ],
+      "steps": [
+        {
+          "from": "Rest the beef 20 minutes on a board, tented with foil.",
+          "to": "Rest the beef 20 minutes on a board, tented with foil. Meanwhile, turn the oven back up to 220°C and roast the potatoes until crisp and golden."
+        }
+      ]
+    },
+    "beef-shawarma-plate": {
+      "times": {
+        "prepMinutes": 140
+      },
+      "ingredients": [
+        {
+          "from": "800g beef sirloin or rump, sliced",
+          "to": "800g beef sirloin (or rump), sliced"
+        },
+        {
+          "from": "Saffron or plain basmati rice",
+          "to": "Saffron basmati rice (or plain basmati rice)"
+        },
+        {
+          "from": "Tabbouleh or tomato cucumber salad",
+          "to": "Tabbouleh (or tomato and cucumber salad)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Drizzle with tahini.",
+          "to": "Drizzle with tahini sauce and toum."
+        }
+      ]
+    },
+    "beef-stroganoff": {
+      "ingredients": [
+        {
+          "from": "600g beef fillet or rump steak,",
+          "to": "600g beef fillet (or rump steak),"
+        },
+        {
+          "from": "Buttered pappardelle, egg noodles, or rice",
+          "to": "Buttered pappardelle (or egg noodles or rice)"
+        }
+      ]
+    },
+    "beef-tacos": {
+      "ingredients": [
+        {
+          "from": "Sour cream or Greek yogurt",
+          "to": "Sour cream (or Greek yogurt)"
+        },
+        {
+          "from": "Crumbled feta or queso fresco",
+          "to": "Crumbled feta (or queso fresco)"
+        }
+      ]
+    },
+    "beef-tikka": {
+      "times": {
+        "prepMinutes": 500
+      },
+      "ingredients": [
+        {
+          "from": "800g beef sirloin or rump, in 3cm cubes",
+          "to": "800g beef sirloin (or rump), in 3cm cubes"
+        },
+        {
+          "from": "Naan or basmati rice",
+          "to": "Basmati rice (or naan)"
+        }
+      ],
+      "addNotes": [
+        "Start the day before: the beef marinates overnight."
+      ]
+    },
+    "beef-wellington": {
+      "times": {
+        "prepMinutes": 105,
+        "cookMinutes": 65
+      },
+      "ingredients": [
+        {
+          "from": "2 tbsp dry sherry or madeira",
+          "to": "2 tbsp dry sherry (or madeira)"
+        }
+      ]
+    },
+    "bibimbap": {
+      "ingredients": [
+        {
+          "from": "250g beef sirloin or rump, thinly sliced",
+          "to": "250g beef sirloin (or rump), thinly sliced"
+        },
+        {
+          "from": "1 small courgette, julienned",
+          "to": "1 small zucchini, julienned"
+        }
+      ],
+      "steps": [
+        {
+          "from": "with a drop of sesame oil and a pinch of salt",
+          "to": "with a drop of sesame oil, a little of the garlic, and a pinch of salt"
+        }
+      ],
+      "addNotes": [
+        "Soft or runny egg: if you're pregnant, cooking for young children or older people, or have a weakened immune system, cook the egg until the yolk is firm."
+      ]
+    },
+    "biryani": {
+      "times": {
+        "prepMinutes": 520
+      },
+      "addIngredients": [
+        {
+          "group": "Layers and finish",
+          "line": "250ml neutral oil, for frying the onions"
+        }
+      ],
+      "addSteps": [
+        {
+          "after": "Marinate the chicken with all marinade ingredients.",
+          "text": "Fry the sliced onions in the oil over medium heat, stirring often, for 15–20 minutes until crisp and golden. Drain on paper towel."
+        }
+      ],
+      "steps": [
+        {
+          "from": "Rest 10 minutes off the heat.",
+          "to": "Rest 10 minutes off the heat. Check the chicken near the bone reads 75°C; if not, reseal and cook 10 minutes more."
+        }
+      ],
+      "addNotes": [
+        "Start the day before: the chicken marinates overnight."
+      ]
+    },
+    "blt-sandwich": {
+      "ingredients": [
+        {
+          "from": "4 thick slices good sourdough or rustic white bread",
+          "to": "4 thick slices good sourdough (or rustic white bread)"
+        },
+        {
+          "from": "Crisp iceberg or romaine lettuce",
+          "to": "Crisp iceberg lettuce (or romaine)"
+        }
+      ]
+    },
+    "bobotie": {
+      "ingredients": [
+        {
+          "from": "900g beef or lamb mince",
+          "to": "900g beef mince (or lamb mince)"
+        },
+        {
+          "from": "6 bay leaves or lemon leaves",
+          "to": "6 bay leaves (or lemon leaves)"
+        }
+      ]
+    },
+    "bratwurst": {
+      "times": {
+        "cookMinutes": 40
+      },
+      "ingredients": [
+        {
+          "from": "8 soft white rolls or pretzel buns",
+          "to": "8 soft white rolls (or pretzel buns)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "they should split slightly and develop dark patches.",
+          "to": "they should split slightly and develop dark patches, and reach 75°C in the centre."
+        }
+      ]
+    },
+    "breakfast-burrito": {
+      "times": {
+        "cookMinutes": 35
+      },
+      "ingredients": [
+        {
+          "from": "Salsa or pico de gallo",
+          "to": "Salsa (or pico de gallo)"
+        }
+      ],
+      "addNotes": [
+        "Soft scrambled eggs: if you're pregnant, cooking for young children or older people, or have a weakened immune system, cook the eggs until firm."
+      ]
+    },
+    "buffalo-wings": {
+      "times": {
+        "prepMinutes": 70
+      }
+    },
+    "bulgogi": {
+      "times": {
+        "prepMinutes": 80
+      },
+      "ingredients": [
+        {
+          "from": "700g beef rib eye or sirloin, frozen",
+          "to": "700g beef rib eye (or sirloin), frozen"
+        }
+      ]
+    },
+    "bunny-chow": {
+      "times": {
+        "cookMinutes": 120
+      },
+      "ingredients": [
+        {
+          "from": "500ml beef stock or water",
+          "to": "500ml beef stock (or water)"
         }
       ]
     },
@@ -21,60 +539,39 @@
         {
           "from": "Cook 1.5 more minutes for medium.",
           "to": "Cook 2–3 more minutes, until cooked through with no pink in the middle (71°C)."
+        },
+        {
+          "from": "no pink in the middle (71°C)",
+          "to": "no pink in the middle (75°C)"
+        }
+      ],
+      "ingredients": [
+        {
+          "from": "4 slices American or cheddar cheese",
+          "to": "4 slices American cheese (or cheddar)"
         }
       ]
     },
-    "lobster-roll": {
+    "butter-chicken": {
+      "times": {
+        "prepMinutes": 50,
+        "cookMinutes": 40
+      },
+      "addIngredients": [
+        {
+          "group": "Sauce",
+          "line": "1 tbsp neutral oil"
+        },
+        {
+          "group": "Sauce",
+          "line": "20g butter, extra, to finish"
+        }
+      ],
       "steps": [
         {
-          "from": "For live lobsters: bring a large pot",
-          "to": "For live lobsters: chill them in the freezer for 30–60 minutes until they no longer move, as animal welfare guidance recommends. Bring a large pot"
+          "from": "until the chicken is cooked through and the sauce coats a spoon",
+          "to": "until the chicken is cooked through (75°C in the centre) and the sauce coats a spoon"
         }
-      ]
-    },
-    "gyudon": {
-      "addNotes": [
-        "Raw or soft-cooked egg isn't recommended if you're pregnant, cooking for young children or older people, or have a weakened immune system. Use a hard-boiled egg instead."
-      ]
-    },
-    "chicken-gyudon": {
-      "addNotes": [
-        "Raw or soft-cooked egg isn't recommended if you're pregnant, cooking for young children or older people, or have a weakened immune system. Use a hard-boiled egg instead."
-      ]
-    },
-    "caesar-salad": {
-      "addNotes": [
-        "The dressing uses raw egg yolks. If you're pregnant, cooking for young children or older people, or have a weakened immune system, use good-quality mayonnaise as the base instead."
-      ]
-    },
-    "ceviche": {
-      "addNotes": [
-        "The fish is cured, not cooked. Not recommended during pregnancy or for anyone with a weakened immune system."
-      ]
-    },
-    "sushi-rolls": {
-      "addNotes": [
-        "Uses raw fish. Not recommended during pregnancy or for anyone with a weakened immune system."
-      ]
-    },
-    "poke-bowl": {
-      "addNotes": [
-        "Uses raw fish. Not recommended during pregnancy or for anyone with a weakened immune system."
-      ]
-    },
-    "tuna-poke": {
-      "addNotes": [
-        "Uses raw fish. Not recommended during pregnancy or for anyone with a weakened immune system."
-      ]
-    },
-    "salmon-poke": {
-      "addNotes": [
-        "Uses raw fish. Not recommended during pregnancy or for anyone with a weakened immune system."
-      ]
-    },
-    "salmon-nigiri": {
-      "addNotes": [
-        "Uses raw fish. Not recommended during pregnancy or for anyone with a weakened immune system."
       ]
     },
     "butternut-squash-risotto": {
@@ -82,7 +579,801 @@
         {
           "from": "1L chicken or vegetable stock, warm",
           "to": "1L vegetable stock (or chicken stock), warm"
+        },
+        {
+          "from": "Crispy sage leaves",
+          "to": "12 sage leaves"
         }
+      ],
+      "addIngredients": [
+        {
+          "group": "To serve",
+          "line": "2 tbsp olive oil, for frying the sage"
+        }
+      ],
+      "addSteps": [
+        {
+          "after": "Mash half; leave half whole.",
+          "text": "While the squash roasts, fry the sage leaves in the olive oil over medium heat for 30 seconds until crisp. Drain on paper towel."
+        }
+      ]
+    },
+    "caesar-salad": {
+      "addNotes": [
+        "The dressing uses raw egg yolks. If you're pregnant, cooking for young children or older people, or have a weakened immune system, use good-quality mayonnaise as the base instead."
+      ]
+    },
+    "calzone": {
+      "times": {
+        "prepMinutes": 115,
+        "cookMinutes": 35
+      },
+      "ingredients": [
+        {
+          "from": "100g good salami or prosciutto, sliced",
+          "to": "100g good salami (or prosciutto), sliced"
+        }
+      ],
+      "moveIngredients": [
+        {
+          "line": "1 egg, beaten with 1 tbsp water",
+          "toGroup": "Filling"
+        }
+      ]
+    },
+    "caprese-salad": {
+      "times": {
+        "prepMinutes": 40
+      }
+    },
+    "carbonara": {
+      "ingredients": [
+        {
+          "from": "200g spaghetti or rigatoni",
+          "to": "200g spaghetti (or rigatoni)"
+        }
+      ],
+      "addNotes": [
+        "The egg is only lightly cooked by the pasta's heat. If you're pregnant, cooking for young children or older people, or have a weakened immune system, choose a fully cooked pasta dish instead."
+      ]
+    },
+    "carbonnade": {
+      "times": {
+        "cookMinutes": 200
+      },
+      "ingredients": [
+        {
+          "from": "Crispy fries or boiled new potatoes",
+          "to": "Crispy fries (or boiled new potatoes)"
+        }
+      ]
+    },
+    "ceviche": {
+      "addNotes": [
+        "The fish is cured, not cooked. Not recommended during pregnancy or for anyone with a weakened immune system."
+      ],
+      "ingredients": [
+        {
+          "from": "2 ají amarillo or yellow chillies, deseeded and finely chopped (or 1 mild chilli)",
+          "to": "2 ají amarillo chillies, deseeded and finely chopped (or yellow chillies, or 1 mild chilli)"
+        },
+        {
+          "from": "Crispy corn cancha or popcorn",
+          "to": "Crispy corn cancha (or popcorn)"
+        }
+      ]
+    },
+    "chana-masala": {
+      "ingredients": [
+        {
+          "from": "3 tbsp ghee or oil",
+          "to": "3 tbsp ghee (or oil)"
+        },
+        {
+          "from": "Basmati rice or warm chapati",
+          "to": "Basmati rice (or warm chapati)"
+        }
+      ]
+    },
+    "chicken-alfredo": {
+      "steps": [
+        {
+          "from": "until golden and just cooked through",
+          "to": "until golden and cooked through (75°C in the thickest part)"
+        }
+      ]
+    },
+    "chicken-alfredo-bake": {
+      "times": {
+        "cookMinutes": 40
+      },
+      "ingredients": [
+        {
+          "from": "500g penne or rigatoni",
+          "to": "500g penne (or rigatoni)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Drain.",
+          "to": "Drain and toss with the olive oil so it doesn't stick."
+        }
+      ]
+    },
+    "chicken-and-rice": {
+      "times": {
+        "cookMinutes": 55
+      },
+      "ingredients": [
+        {
+          "from": "Garlic yogurt sauce or hot sauce",
+          "to": "Garlic yogurt sauce (or hot sauce)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Season chicken with paprika",
+          "to": "Heat the oven to 180°C. Season chicken with paprika"
+        },
+        {
+          "from": "Rest 10 minutes covered.",
+          "to": "Check the thickest thigh reaches 75°C, then rest 10 minutes covered."
+        }
+      ]
+    },
+    "chicken-and-waffles": {
+      "times": {
+        "prepMinutes": 280,
+        "cookMinutes": 60
+      },
+      "ingredients": [
+        {
+          "from": "8 bone-in chicken thighs or drumsticks",
+          "to": "8 bone-in chicken thighs (or drumsticks)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "with buttermilk, hot sauce, salt, pepper.",
+          "to": "with buttermilk, hot sauce, the 1 tbsp salt and pepper."
+        },
+        {
+          "from": "cayenne, and salt for the coating",
+          "to": "cayenne, and the 1 tsp salt for the coating"
+        },
+        {
+          "from": "hits 75°C. Drain on a rack.",
+          "to": "hits 75°C. Drain on a rack and keep warm in a low oven."
+        }
+      ],
+      "addNotes": [
+        "Start in the morning or the day before: the chicken marinates for at least 4 hours, ideally overnight."
+      ]
+    },
+    "chicken-biryani": {
+      "times": {
+        "prepMinutes": 90,
+        "cookMinutes": 95
+      },
+      "addIngredients": [
+        {
+          "group": "Layers and finish",
+          "line": "125ml neutral oil, for frying the onions"
+        }
+      ],
+      "addSteps": [
+        {
+          "after": "Marinate the chicken at least 1 hour, ideally overnight.",
+          "text": "Fry the onions: heat the oil in a wide pan over medium heat and fry the sliced onions, stirring often, for 15–20 minutes until crisp and deep golden. Drain on paper towel."
+        }
+      ],
+      "steps": [
+        {
+          "from": "Cook 8 minutes, the yogurt thickens around the chicken.",
+          "to": "Cook 15 minutes, turning once, until the yogurt thickens around the chicken and it's nearly cooked through."
+        },
+        {
+          "from": "Cook on the lowest heat for 25 minutes, this is the dum.",
+          "to": "Cook on the lowest heat for 25 minutes, this is the dum. The chicken should reach 75°C at the bone."
+        }
+      ],
+      "addNotes": [
+        "Start at least an hour ahead: the chicken marinates for 1 hour, ideally overnight."
+      ]
+    },
+    "chicken-burrito-bowl": {
+      "times": {
+        "prepMinutes": 25
+      },
+      "addNotes": [
+        "Cool any cooked rice quickly (spread it out on a tray), refrigerate it within an hour and reheat it until steaming hot."
+      ]
+    },
+    "chicken-caesar-pasta": {
+      "ingredients": [
+        {
+          "from": "400g penne or rigatoni",
+          "to": "400g penne (or rigatoni)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "sear 4 minutes a side in oil.",
+          "to": "sear 4 minutes a side in oil until cooked through (75°C in the thickest part)."
+        }
+      ]
+    },
+    "chicken-caesar-wrap": {
+      "steps": [
+        {
+          "from": "until golden and just done.",
+          "to": "until golden and cooked through (75°C in the thickest part)."
+        }
+      ]
+    },
+    "chicken-cordon-bleu": {
+      "ingredients": [
+        {
+          "from": "4 slices Gruyère or Swiss",
+          "to": "4 slices Gruyère (or Swiss cheese)"
+        }
+      ]
+    },
+    "chicken-enchilada-casserole": {
+      "times": {
+        "cookMinutes": 45
+      },
+      "steps": [
+        {
+          "from": "half the remaining sauce, a third of the cheese",
+          "to": "a third of the remaining sauce, a third of the cheese"
+        }
+      ]
+    },
+    "chicken-fajita-bowl": {
+      "times": {
+        "prepMinutes": 25
+      },
+      "steps": [
+        {
+          "from": "3 minutes a side until charred. Lift out.",
+          "to": "3 minutes a side until charred and cooked through. Lift out."
+        }
+      ],
+      "addNotes": [
+        "Cool any cooked rice quickly (spread it out on a tray), refrigerate it within an hour and reheat it until steaming hot."
+      ]
+    },
+    "chicken-fried-rice": {
+      "steps": [
+        {
+          "from": "Cook the chicken 3 minutes until just done.",
+          "to": "Cook the chicken 3 minutes until cooked through."
+        }
+      ],
+      "addNotes": [
+        "If you cook rice for this, spread it on a tray to cool quickly, then refrigerate within an hour. Don't leave cooked rice sitting out."
+      ]
+    },
+    "chicken-fried-steak": {
+      "times": {
+        "cookMinutes": 25
+      },
+      "ingredients": [
+        {
+          "from": "Buttered green beans or corn",
+          "to": "Buttered green beans (or corn)"
+        }
+      ]
+    },
+    "chicken-gyoza": {
+      "times": {
+        "prepMinutes": 45,
+        "cookMinutes": 20
+      },
+      "addIngredients": [
+        {
+          "group": "Wrappers and cooking",
+          "line": "Extra cornflour, for dusting"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Heat 1.5 tbsp oil in a wide non-stick pan",
+          "to": "Working in two batches, heat 1.5 tbsp oil in a wide non-stick pan"
+        },
+        {
+          "from": "Pour in the water (it will sputter).",
+          "to": "Pour in half the water (it will sputter)."
+        },
+        {
+          "from": "Steam 5 minutes.",
+          "to": "Steam 5 minutes, until the filling is cooked through (75°C)."
+        }
+      ]
+    },
+    "chicken-gyro": {
+      "times": {
+        "prepMinutes": 80
+      },
+      "steps": [
+        {
+          "from": "3 minutes a side until charred at the edges.",
+          "to": "3 minutes a side until charred at the edges and cooked through."
+        }
+      ]
+    },
+    "chicken-gyudon": {
+      "addNotes": [
+        "Raw or soft-cooked egg isn't recommended if you're pregnant, cooking for young children or older people, or have a weakened immune system. Use a hard-boiled egg instead."
+      ]
+    },
+    "chicken-katsu": {
+      "steps": [
+        {
+          "from": "until deep golden and crisp. Drain on a rack",
+          "to": "until deep golden, crisp and 75°C in the thickest part. Drain on a rack"
+        }
+      ]
+    },
+    "chicken-kiev": {
+      "steps": [
+        {
+          "from": "until the chicken hits 70°C internally",
+          "to": "until the chicken reaches 75°C in the thickest part"
+        }
+      ],
+      "times": {
+        "prepMinutes": 90
+      },
+      "ingredients": [
+        {
+          "from": "Steamed greens or buttered green beans",
+          "to": "Steamed greens (or buttered green beans)"
+        }
+      ]
+    },
+    "chicken-marsala": {
+      "ingredients": [
+        {
+          "from": "300g cremini or button mushrooms, sliced",
+          "to": "300g cremini mushrooms (or button mushrooms), sliced"
+        },
+        {
+          "from": "Buttered linguine, mashed potato, or polenta",
+          "to": "Buttered linguine (or mashed potato or polenta)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Cook the chicken 3 minutes a side until golden.",
+          "to": "Cook the chicken 3 minutes a side until golden and cooked through."
+        }
+      ]
+    },
+    "chicken-meatballs": {
+      "ingredients": [
+        {
+          "from": "Buttered linguine or rice",
+          "to": "Buttered linguine (or rice)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Simmer 8 minutes until cooked through and sauce thickens.",
+          "to": "Simmer 8 minutes until cooked through (75°C in the centre) and the sauce thickens."
+        }
+      ]
+    },
+    "chicken-milanese": {
+      "steps": [
+        {
+          "from": "for that rippled golden crust. Drain",
+          "to": "for that rippled golden crust, until cooked through. Drain"
+        }
+      ]
+    },
+    "chicken-noodle-soup": {
+      "times": {
+        "cookMinutes": 95
+      },
+      "ingredients": [
+        {
+          "from": "3 carrots, in chunks (use the trimmings for broth, save 2 carrots diced for the soup)",
+          "to": "1 carrot, in chunks"
+        },
+        {
+          "from": "3 celery sticks, in chunks (reserve 2 sticks diced for soup)",
+          "to": "1 celery stick, in chunks"
+        },
+        {
+          "from": "2 carrots, diced (from above)",
+          "to": "2 carrots, diced"
+        },
+        {
+          "from": "2 celery sticks, diced (from above)",
+          "to": "2 celery sticks, diced"
+        }
+      ]
+    },
+    "chicken-pad-see-ew": {
+      "ingredients": [
+        {
+          "from": "4 baby gai lan or 200g Chinese broccoli",
+          "to": "4 baby gai lan (or 200g Chinese broccoli)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "single layer 2 minutes a side. Lift out.",
+          "to": "single layer 2 minutes a side until cooked through. Lift out."
+        },
+        {
+          "from": "Add the noodles. Press",
+          "to": "Add the last tbsp of oil, then the noodles. Press"
+        }
+      ]
+    },
+    "chicken-parmesan": {
+      "steps": [
+        {
+          "from": "Pound the chicken breasts to even thickness.",
+          "to": "Heat the oven to 200°C. Pound the chicken breasts to even thickness."
+        },
+        {
+          "from": "Heat the oven to 200°C. Spread a thin layer",
+          "to": "Spread a thin layer"
+        },
+        {
+          "from": "and the sauce is bubbling.",
+          "to": "and the sauce is bubbling, and the chicken reaches 75°C in the thickest part."
+        }
+      ]
+    },
+    "chicken-pesto-pasta": {
+      "steps": [
+        {
+          "from": "Sear in olive oil 4 minutes a side until golden.",
+          "to": "Sear in olive oil 4 minutes a side until golden and cooked through (75°C in the thickest part)."
+        }
+      ]
+    },
+    "chicken-piccata": {
+      "ingredients": [
+        {
+          "from": "Buttered linguine or mashed potato",
+          "to": "Buttered linguine (or mashed potato)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "3 minutes a side until deeply golden.",
+          "to": "3 minutes a side until deeply golden and cooked through."
+        }
+      ]
+    },
+    "chicken-pot-pie": {
+      "times": {
+        "cookMinutes": 75
+      },
+      "steps": [
+        {
+          "from": "Tip into a pie dish.",
+          "to": "Heat the oven to 200°C. Tip into a pie dish."
+        }
+      ]
+    },
+    "chicken-quesadilla": {
+      "times": {
+        "cookMinutes": 35
+      },
+      "steps": [
+        {
+          "from": "over high heat for 8 minutes.",
+          "to": "over high heat for 8 minutes, until the chicken is cooked through."
+        },
+        {
+          "from": "Place the quesadilla in.",
+          "to": "Place two quesadillas in, straight edges together."
+        }
+      ]
+    },
+    "chicken-ramen-bowl": {
+      "times": {
+        "cookMinutes": 30
+      },
+      "ingredients": [
+        {
+          "from": "Blanched bok choy or spinach",
+          "to": "Blanched bok choy (or spinach)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "then flip 4 minutes more.",
+          "to": "then flip and cook 4 minutes more, until 75°C in the thickest part."
+        }
+      ],
+      "addSteps": [
+        {
+          "after": "Score chicken skin shallowly.",
+          "text": "Meanwhile, boil the eggs for 7 minutes, cool in iced water, then peel and halve. Blanch the greens in boiling water for 1 minute."
+        }
+      ],
+      "addNotes": [
+        "Soft-boiled eggs aren't recommended if you're pregnant, cooking for young children or older people, or have a weakened immune system. Boil them for 10 minutes instead."
+      ]
+    },
+    "chicken-satay": {
+      "times": {
+        "prepMinutes": 145
+      },
+      "ingredients": [
+        {
+          "from": "Steamed rice or roti",
+          "to": "Steamed rice (or roti)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "basting once with leftover marinade. The edges should char.",
+          "to": "basting with leftover marinade only in the first 4 minutes. The edges should char and the chicken be cooked through."
+        }
+      ]
+    },
+    "chicken-satay-bowl": {
+      "times": {
+        "prepMinutes": 80
+      },
+      "steps": [
+        {
+          "from": "3 minutes a side until charred.",
+          "to": "3 minutes a side until charred and cooked through."
+        }
+      ]
+    },
+    "chicken-schnitzel": {
+      "ingredients": [
+        {
+          "from": "200g panko or fine breadcrumbs",
+          "to": "200g panko (or fine breadcrumbs)"
+        }
+      ]
+    },
+    "chicken-shawarma-bowl": {
+      "times": {
+        "prepMinutes": 140
+      },
+      "ingredients": [
+        {
+          "from": "Pickled turnips or beetroot",
+          "to": "Pickled turnips (or beetroot)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Roast 22 minutes until charred at the edges.",
+          "to": "Roast 22 minutes until charred at the edges and 75°C in the thickest part."
+        }
+      ],
+      "addNotes": [
+        "Cool any cooked rice quickly (spread it out on a tray), refrigerate it within an hour and reheat it until steaming hot."
+      ]
+    },
+    "chicken-shawarma-plate": {
+      "times": {
+        "prepMinutes": 140,
+        "cookMinutes": 35
+      },
+      "ingredients": [
+        {
+          "from": "1 tbsp ghee or butter",
+          "to": "1 tbsp ghee (or butter)"
+        },
+        {
+          "from": "Tahini sauce",
+          "to": "Tahini sauce (4 tbsp tahini + 4 tbsp water + 2 tbsp lemon juice + salt)"
+        },
+        {
+          "from": "Garlic toum or yogurt sauce",
+          "to": "Garlic toum, store-bought (or garlic yogurt sauce)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Marinate chicken 2+ hours.",
+          "to": "Mix the chicken with the oil, lemon juice, garlic, spices and salt. Marinate 2+ hours."
+        },
+        {
+          "from": "22 minutes until charred. Slice",
+          "to": "22 minutes until charred and 75°C in the thickest part. Slice"
+        },
+        {
+          "from": "Stuff with pita pieces.",
+          "to": "Serve with warm pita."
+        }
+      ]
+    },
+    "chicken-souvlaki": {
+      "times": {
+        "prepMinutes": 80
+      },
+      "steps": [
+        {
+          "from": "12 minutes total. The edges should char.",
+          "to": "12 minutes total. The edges should char and the chicken be cooked through."
+        },
+        {
+          "from": "feta crumble, lemon squeeze",
+          "to": "feta crumble, a few olives, lemon squeeze"
+        }
+      ]
+    },
+    "chicken-stir-fry": {
+      "times": {
+        "prepMinutes": 20
+      },
+      "steps": [
+        {
+          "from": "Marinate chicken 15 minutes.",
+          "to": "Toss the chicken with the soy sauce, Shaoxing wine and cornflour. Marinate 15 minutes."
+        },
+        {
+          "from": "Cook chicken in a single layer 3 minutes.",
+          "to": "Cook chicken in a single layer 3 minutes until cooked through."
+        }
+      ]
+    },
+    "chicken-teriyaki": {
+      "steps": [
+        {
+          "from": "until the sauce thickens to a syrup and clings to the chicken.",
+          "to": "until the sauce thickens to a syrup, clings to the chicken and the chicken reaches 75°C in the thickest part."
+        }
+      ]
+    },
+    "chicken-tikka": {
+      "times": {
+        "prepMinutes": 260
+      },
+      "steps": [
+        {
+          "from": "for proper tandoor-style char.",
+          "to": "for proper tandoor-style char, until the chicken reaches 75°C."
+        }
+      ],
+      "addNotes": [
+        "Best started the day before: the chicken marinates at least 4 hours, ideally overnight."
+      ]
+    },
+    "chicken-wings": {
+      "times": {
+        "prepMinutes": 70
+      },
+      "ingredients": [
+        {
+          "from": "2 tbsp Shaoxing wine or sake",
+          "to": "2 tbsp Shaoxing wine (or sake)"
+        }
+      ],
+      "addNotes": [
+        "For the crispest skin, start the day before: the wings dry in the fridge for at least 1 hour, ideally overnight."
+      ]
+    },
+    "chicken-wrap": {
+      "times": {
+        "prepMinutes": 25
+      },
+      "steps": [
+        {
+          "from": "3 minutes a side until charred at the edges.",
+          "to": "3 minutes a side until charred at the edges and cooked through."
+        }
+      ]
+    },
+    "chicken-yakitori": {
+      "steps": [
+        {
+          "from": "Discard garlic and ginger.",
+          "to": "Discard garlic and ginger. Pour a third into a small bowl and set aside for the final brush."
+        },
+        {
+          "from": "Repeat 2–3 times, building layers of sticky glaze.",
+          "to": "Repeat 2–3 times, building layers of sticky glaze, until the chicken is cooked through."
+        },
+        {
+          "from": "Final brush as they come off the grill.",
+          "to": "Final brush with the reserved tare as they come off the grill."
+        }
+      ]
+    },
+    "chili-con-carne": {
+      "times": {
+        "cookMinutes": 165
+      },
+      "ingredients": [
+        {
+          "from": "2 × 400g tins kidney or pinto beans, drained",
+          "to": "2 × 400g tins kidney beans (or pinto beans), drained"
+        },
+        {
+          "from": "Steamed rice or warm cornbread",
+          "to": "Steamed rice (or warm cornbread)"
+        }
+      ]
+    },
+    "chili-garlic-noodles": {
+      "ingredients": [
+        {
+          "from": "1/2 cup blanched bok choy or spinach",
+          "to": "1/2 cup blanched bok choy (or spinach)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Drain (don't rinse).",
+          "to": "Blanch the greens in the noodle water for the last minute, then drain (don't rinse)."
+        }
+      ]
+    },
+    "chow-mein": {
+      "steps": [
+        {
+          "from": "for 3 minutes until just done.",
+          "to": "for 3 minutes until cooked through (75°C)."
+        }
+      ]
+    },
+    "clam-chowder": {
+      "steps": [
+        {
+          "from": "until they open, 3–5 minutes.",
+          "to": "until they open, 3–5 minutes. Discard any that stay shut."
+        }
+      ],
+      "ingredients": [
+        {
+          "from": "Oyster crackers or warm crusty bread",
+          "to": "Warm crusty bread (or oyster crackers)"
+        }
+      ]
+    },
+    "club-sandwich": {
+      "ingredients": [
+        {
+          "from": "4 leaves crisp iceberg or butter lettuce",
+          "to": "4 leaves crisp iceberg lettuce (or butter lettuce)"
+        }
+      ]
+    },
+    "cobb-salad": {
+      "times": {
+        "cookMinutes": 25
+      },
+      "steps": [
+        {
+          "from": "Rest 15 minutes. Shred.",
+          "to": "Rest 15 minutes, until the chicken reaches 75°C in the thickest part. Shred."
+        }
+      ]
+    },
+    "coq-au-vin": {
+      "times": {
+        "prepMinutes": 505,
+        "cookMinutes": 130
+      },
+      "ingredients": [
+        {
+          "from": "750ml dry red burgundy or pinot noir",
+          "to": "750ml dry pinot noir (or red burgundy)"
+        },
+        {
+          "from": "20 pearl onions or 4 shallots, peeled",
+          "to": "20 pearl onions, peeled (or 4 shallots)"
+        }
+      ],
+      "addNotes": [
+        "Start the day before: the chicken marinates overnight."
       ]
     },
     "couscous": {
@@ -90,6 +1381,660 @@
         {
           "from": "350ml hot chicken or vegetable stock",
           "to": "350ml hot vegetable stock (or chicken stock)"
+        },
+        {
+          "from": "Small handful pistachios or toasted almonds, chopped",
+          "to": "Small handful pistachios (or toasted almonds), chopped"
+        }
+      ]
+    },
+    "crispy-duck-pancakes": {
+      "times": {
+        "prepMinutes": 500
+      },
+      "steps": [
+        {
+          "from": "rinse the duck briefly and pat dry.",
+          "to": "wipe off the excess rub with damp paper towel and pat dry."
+        }
+      ],
+      "addNotes": [
+        "Start the day before: the duck dry-brines in the fridge overnight."
+      ]
+    },
+    "croque-monsieur": {
+      "ingredients": [
+        {
+          "from": "4 thick slices of good white sourdough or pain de mie",
+          "to": "4 thick slices of good white sourdough (or pain de mie)"
+        }
+      ]
+    },
+    "dhal": {
+      "ingredients": [
+        {
+          "from": "Basmati rice or naan",
+          "to": "Basmati rice (or naan)"
+        }
+      ]
+    },
+    "dim-sum": {
+      "ingredients": [
+        {
+          "from": "30 round wonton or siu mai wrappers",
+          "to": "30 round wonton wrappers (or siu mai wrappers)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "for 10–12 minutes until firm to the touch.",
+          "to": "for 10–12 minutes until firm to the touch and cooked through (75°C in the centre). Steam in batches if they don't all fit."
+        }
+      ]
+    },
+    "eggplant-parmesan": {
+      "times": {
+        "prepMinutes": 50
+      }
+    },
+    "empanadas": {
+      "times": {
+        "prepMinutes": 105
+      }
+    },
+    "enchiladas": {
+      "ingredients": [
+        {
+          "from": "150g grated Monterey Jack or mozzarella",
+          "to": "150g grated Monterey Jack (or mozzarella)"
+        },
+        {
+          "from": "200g grated Monterey Jack or mozzarella",
+          "to": "200g grated Monterey Jack (or mozzarella)"
+        },
+        {
+          "from": "Crumbled feta or queso fresco",
+          "to": "Crumbled feta (or queso fresco)"
+        }
+      ]
+    },
+    "fajitas": {
+      "times": {
+        "prepMinutes": 45
+      },
+      "ingredients": [
+        {
+          "from": "700g skirt or flank steak (or chicken thigh)",
+          "to": "700g skirt steak (or flank steak or chicken thigh)"
+        },
+        {
+          "from": "Sour cream or Greek yogurt",
+          "to": "Sour cream (or Greek yoghurt)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "(it should char heavily). Rest on a board.",
+          "to": "(it should char heavily). If using chicken thigh, cook 5–6 minutes a side until it reaches 75°C. Rest on a board."
+        }
+      ]
+    },
+    "falafel-wrap": {
+      "times": {
+        "prepMinutes": 520
+      },
+      "addNotes": [
+        "Start the day before: the dried chickpeas soak overnight."
+      ]
+    },
+    "feijoada": {
+      "times": {
+        "prepMinutes": 500
+      },
+      "ingredients": [
+        {
+          "from": "300g salt pork or pancetta, in pieces",
+          "to": "300g salt pork (or pancetta), in pieces"
+        },
+        {
+          "from": "Sautéed kale or collard greens (couve à mineira)",
+          "to": "Sautéed collard greens (or kale), couve à mineira"
+        }
+      ],
+      "addNotes": [
+        "Start the day before: the black beans soak overnight."
+      ]
+    },
+    "fish-and-chips": {
+      "times": {
+        "prepMinutes": 30
+      }
+    },
+    "four-cheese-pizza": {
+      "ingredients": [
+        {
+          "from": "80g Gruyère or fontina, grated",
+          "to": "80g Gruyère (or fontina), grated"
+        }
+      ]
+    },
+    "french-onion-soup": {
+      "ingredients": [
+        {
+          "from": "60ml brandy or cognac (optional)",
+          "to": "60ml brandy (optional, or cognac)"
+        }
+      ]
+    },
+    "fried-chicken": {
+      "times": {
+        "prepMinutes": 500,
+        "cookMinutes": 35
+      },
+      "addNotes": [
+        "Start the day before: the chicken marinates in buttermilk overnight (4 hours at a minimum)."
+      ]
+    },
+    "gazpacho": {
+      "times": {
+        "prepMinutes": 145
+      }
+    },
+    "gnocchi": {
+      "times": {
+        "cookMinutes": 60
+      }
+    },
+    "gnocchi-bake": {
+      "times": {
+        "cookMinutes": 45
+      }
+    },
+    "goulash": {
+      "ingredients": [
+        {
+          "from": "1kg beef chuck or shin, in 3cm cubes",
+          "to": "1kg beef chuck (or shin), in 3cm cubes"
+        },
+        {
+          "from": "3 tbsp lard or neutral oil",
+          "to": "3 tbsp lard (or neutral oil)"
+        }
+      ]
+    },
+    "greek-chicken-bowl": {
+      "times": {
+        "prepMinutes": 50
+      },
+      "ingredients": [
+        {
+          "from": "2 cups cooked lemon rice",
+          "to": "4 cups cooked lemon rice"
+        }
+      ],
+      "steps": [
+        {
+          "from": "until deep golden and just cooked.",
+          "to": "until deep golden and cooked through (75°C)."
+        }
+      ]
+    },
+    "greek-lamb": {
+      "times": {
+        "cookMinutes": 255
+      }
+    },
+    "grilled-cheese": {
+      "ingredients": [
+        {
+          "from": "4 slices good white sourdough or country bread",
+          "to": "4 slices good white sourdough (or country bread)"
+        }
+      ]
+    },
+    "grilled-chicken-salad": {
+      "times": {
+        "prepMinutes": 35
+      }
+    },
+    "grilled-halloumi": {
+      "ingredients": [
+        {
+          "from": "Watermelon wedges or cherry tomatoes",
+          "to": "Watermelon wedges (or cherry tomatoes)"
+        }
+      ]
+    },
+    "grilled-salmon": {
+      "ingredients": [
+        {
+          "from": "Grilled asparagus or green salad",
+          "to": "Grilled asparagus (or green salad)"
+        }
+      ]
+    },
+    "grilled-steak": {
+      "times": {
+        "prepMinutes": 40,
+        "cookMinutes": 15
+      },
+      "ingredients": [
+        {
+          "from": "4 rib eye, sirloin, or scotch fillet steaks (250–300g each, 2.5cm thick)",
+          "to": "4 scotch fillet steaks, 250–300g each, 2.5cm thick (or sirloin)"
+        }
+      ]
+    },
+    "gumbo": {
+      "times": {
+        "cookMinutes": 135
+      }
+    },
+    "gyros": {
+      "times": {
+        "prepMinutes": 140
+      },
+      "steps": [
+        {
+          "from": "About 3 minutes per batch.",
+          "to": "About 3 minutes per batch, until cooked through (75°C if using chicken)."
+        }
+      ]
+    },
+    "gyudon": {
+      "addNotes": [
+        "Raw or soft-cooked egg isn't recommended if you're pregnant, cooking for young children or older people, or have a weakened immune system. Use a hard-boiled egg instead."
+      ],
+      "ingredients": [
+        {
+          "from": "300g beef rib eye or sirloin, sliced paper-thin",
+          "to": "300g beef rib eye (or sirloin), sliced paper-thin"
+        }
+      ]
+    },
+    "halloumi-wrap": {
+      "ingredients": [
+        {
+          "from": "4 large flatbreads or pita",
+          "to": "4 large flatbreads (or pita)"
+        }
+      ]
+    },
+    "hawaiian-pizza": {
+      "ingredients": [
+        {
+          "from": "200g good cooked ham or smoky bacon, in pieces",
+          "to": "200g good cooked ham (or smoky bacon), in pieces"
+        }
+      ]
+    },
+    "honey-garlic-chicken": {
+      "steps": [
+        {
+          "from": "Flip. Cook 4 more minutes.",
+          "to": "Flip. Cook 4 more minutes, until cooked through (75°C in the thickest part)."
+        }
+      ]
+    },
+    "hot-dogs": {
+      "times": {
+        "cookMinutes": 25
+      },
+      "steps": [
+        {
+          "from": "jalapeños, a scatter of fried shallots.",
+          "to": "jalapeños, relish, ketchup if using, and a scatter of fried shallots."
+        }
+      ]
+    },
+    "huevos-rancheros": {
+      "ingredients": [
+        {
+          "from": "60g feta or queso fresco, crumbled",
+          "to": "60g feta (or queso fresco), crumbled"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Heat 1 tbsp oil in a non-stick pan. Char the tortillas one at a time directly over the flame or in a dry pan for 30 seconds a side.",
+          "to": "Char the tortillas one at a time directly over a gas flame or in a dry non-stick pan for 30 seconds a side."
+        },
+        {
+          "from": "In the same pan, fry the eggs sunny-side-up in oil",
+          "to": "Heat 1 tbsp oil in the non-stick pan. Fry the eggs sunny-side-up"
+        }
+      ],
+      "addNotes": [
+        "Runny or soft-cooked egg isn't recommended if you're pregnant, cooking for young children or older people, or have a weakened immune system. Cook the eggs until the yolks are firm."
+      ]
+    },
+    "hummus-plate": {
+      "times": {
+        "prepMinutes": 490
+      },
+      "ingredients": [
+        {
+          "from": "in cold water with 1 tsp baking soda",
+          "to": "in cold water with 1 tsp bicarbonate of soda"
+        }
+      ],
+      "steps": [
+        {
+          "from": "with the second teaspoon of baking soda.",
+          "to": "with the second teaspoon of bicarbonate of soda."
+        }
+      ],
+      "addNotes": [
+        "Start the day before: the dried chickpeas soak overnight. With tinned chickpeas, skip the soak."
+      ]
+    },
+    "italian-meatballs": {
+      "times": {
+        "cookMinutes": 40
+      },
+      "ingredients": [
+        {
+          "from": "Spaghetti or other long pasta",
+          "to": "400g spaghetti (or other long pasta)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Cover and simmer 15 minutes, they finish cooking and the sauce thickens around them.",
+          "to": "Cover and simmer 15 minutes, until the meatballs are cooked through (75°C in the centre) and the sauce thickens around them."
+        }
+      ]
+    },
+    "jambalaya": {
+      "times": {
+        "cookMinutes": 65
+      },
+      "addNotes": [
+        "Leftovers: spread the rice out to cool quickly and refrigerate within an hour. Don't leave cooked rice sitting out."
+      ]
+    },
+    "jollof-rice": {
+      "times": {
+        "cookMinutes": 70
+      },
+      "addNotes": [
+        "Leftovers: spread the rice out to cool quickly and refrigerate within an hour. Don't leave cooked rice sitting out."
+      ]
+    },
+    "kare-kare": {
+      "ingredients": [
+        {
+          "from": "1 bunch baby bok choy or pechay",
+          "to": "1 bunch baby bok choy (or pechay)"
+        },
+        {
+          "from": "Bagoong (Filipino shrimp paste, sautéed)",
+          "to": "4 tbsp bagoong (Filipino shrimp paste)"
+        }
+      ],
+      "addIngredients": [
+        {
+          "group": "To serve",
+          "line": "1 garlic clove, minced"
+        },
+        {
+          "group": "To serve",
+          "line": "Pinch of sugar"
+        }
+      ],
+      "steps": [
+        {
+          "from": "eggplant 3 minutes.",
+          "to": "eggplant 3 minutes, banana heart (if using, sliced) 4 minutes."
+        },
+        {
+          "from": "Sauté 4 tbsp bagoong with a little oil, garlic, and a pinch of sugar",
+          "to": "Sauté the bagoong with a little oil, the minced garlic, and the pinch of sugar"
+        }
+      ]
+    },
+    "katsu-curry": {
+      "steps": [
+        {
+          "from": "Fry the cutlets 3 minutes a side until deep golden.",
+          "to": "Fry the cutlets 3 minutes a side until deep golden and 75°C in the centre."
+        }
+      ]
+    },
+    "kebab": {
+      "times": {
+        "prepMinutes": 140,
+        "cookMinutes": 20
+      },
+      "ingredients": [
+        {
+          "from": "800g lamb shoulder or leg, in 3cm cubes",
+          "to": "800g lamb shoulder (or leg), in 3cm cubes"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Thread lamb, alternating with onion, capsicum, and a tomato now and then. Pack the lamb tight on its own skewers if you want it more charred, the veg skewer cooks separately.",
+          "to": "Thread the lamb tightly onto its own skewers, and the onion, capsicum and tomatoes onto separate skewers, since they need different cooking times."
+        }
+      ]
+    },
+    "korean-bbq-beef": {
+      "times": {
+        "prepMinutes": 50
+      },
+      "steps": [
+        {
+          "from": "Marinate beef 30 minutes.",
+          "to": "Mix all the marinade ingredients, toss through the beef and marinate 30 minutes."
+        }
+      ]
+    },
+    "korean-fried-chicken": {
+      "times": {
+        "cookMinutes": 35
+      },
+      "steps": [
+        {
+          "from": "until deeply golden and properly crisp.",
+          "to": "until deeply golden, properly crisp and 75°C at the thickest part."
+        }
+      ]
+    },
+    "kung-pao-chicken": {
+      "times": {
+        "prepMinutes": 25
+      }
+    },
+    "lamb-chops": {
+      "times": {
+        "prepMinutes": 40
+      },
+      "ingredients": [
+        {
+          "from": "8 lamb cutlets or loin chops (about 1kg)",
+          "to": "8 lamb cutlets (or loin chops), about 1kg"
+        }
+      ]
+    },
+    "lamb-kofta": {
+      "ingredients": [
+        {
+          "from": "1 tbsp chopped dill or mint",
+          "to": "1 tbsp chopped dill (or mint)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "The outside should be deeply charred, the inside just pink.",
+          "to": "The outside should be deeply charred and the inside cooked through (75°C in the centre)."
+        },
+        {
+          "from": "Build: yogurt sauce, lettuce or salad, kofta off the skewer, sumac, parsley, lemon.",
+          "to": "Build: yogurt sauce, tomato, cucumber and onion, kofta off the skewer, pickled chillies, sumac, parsley, lemon."
+        }
+      ]
+    },
+    "lasagna": {
+      "times": {
+        "cookMinutes": 150
+      }
+    },
+    "lemon-herb-chicken": {
+      "times": {
+        "prepMinutes": 30,
+        "cookMinutes": 30
+      },
+      "ingredients": [
+        {
+          "from": "Roasted potatoes or rice",
+          "to": "Roasted potatoes (or rice)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "until cooked through.",
+          "to": "until cooked through (75°C in the thickest part)."
+        }
+      ]
+    },
+    "lemon-pepper-salmon": {
+      "ingredients": [
+        {
+          "from": "Steamed rice or new potatoes",
+          "to": "Steamed rice (or new potatoes)"
+        }
+      ]
+    },
+    "lentil-soup": {
+      "times": {
+        "cookMinutes": 45
+      },
+      "ingredients": [
+        {
+          "from": "250g brown or green lentils, rinsed",
+          "to": "250g brown lentils (or green lentils), rinsed"
+        },
+        {
+          "from": "1.5L vegetable or chicken stock",
+          "to": "1.5L vegetable stock (or chicken stock)"
+        },
+        {
+          "from": "Greek yogurt or sour cream",
+          "to": "Greek yogurt (or sour cream)"
+        }
+      ]
+    },
+    "lo-mein": {
+      "times": {
+        "cookMinutes": 12
+      },
+      "ingredients": [
+        {
+          "from": "300g chicken or pork, sliced thin (or 300g mixed vegetables for veg)",
+          "to": "300g chicken, sliced thin (or pork, or mixed vegetables)"
+        }
+      ]
+    },
+    "loaded-nachos": {
+      "times": {
+        "cookMinutes": 25
+      }
+    },
+    "lobster-roll": {
+      "steps": [
+        {
+          "from": "For live lobsters: bring a large pot",
+          "to": "For live lobsters: chill them in the freezer for 30–60 minutes until they no longer move, as animal welfare guidance recommends. Bring a large pot"
+        },
+        {
+          "from": "Crack the claws and tails.",
+          "to": "Crack the tails (and claws, if your lobsters have them)."
+        }
+      ],
+      "times": {
+        "prepMinutes": 50,
+        "cookMinutes": 20
+      },
+      "difficulty": "medium"
+    },
+    "mac-and-cheese": {
+      "times": {
+        "cookMinutes": 40
+      },
+      "ingredients": [
+        {
+          "from": "400g elbow macaroni or cavatappi",
+          "to": "400g elbow macaroni (or cavatappi)"
+        }
+      ]
+    },
+    "margarita-flatbread": {
+      "ingredients": [
+        {
+          "from": "2 store-bought naan or 2 ready flatbreads (or pizza bases)",
+          "to": "2 store-bought naan (or ready flatbreads or pizza bases)"
+        }
+      ]
+    },
+    "margherita-pizza": {
+      "times": {
+        "prepMinutes": 110,
+        "cookMinutes": 20
+      }
+    },
+    "massaman-curry": {
+      "times": {
+        "cookMinutes": 105
+      }
+    },
+    "meatloaf": {
+      "times": {
+        "cookMinutes": 75
+      },
+      "addIngredients": [
+        {
+          "group": "Loaf",
+          "line": "1 tbsp olive oil"
+        }
+      ],
+      "addSteps": [
+        {
+          "after": "",
+          "text": "Soften the onion in the olive oil over medium heat for 8 minutes. Let it cool."
+        }
+      ],
+      "steps": [
+        {
+          "from": "internal temperature 70°C",
+          "to": "until the centre reaches 75°C"
+        }
+      ]
+    },
+    "mediterranean-platter": {
+      "times": {
+        "cookMinutes": 10
+      },
+      "ingredients": [
+        {
+          "from": "200g baba ganoush or muhammara",
+          "to": "200g baba ganoush (or muhammara)"
+        },
+        {
+          "from": "150g sliced prosciutto or salami",
+          "to": "150g sliced prosciutto (or salami)"
+        }
+      ],
+      "addSteps": [
+        {
+          "after": "",
+          "text": "Fry the halloumi in a dry non-stick pan over medium-high heat for 1–2 minutes a side until golden. Heat the meatballs (or falafel) in a pan or the oven until piping hot, and warm the pitas."
+        }
+      ],
+      "steps": [
+        {
+          "from": "Dust hummus with sumac and paprika.",
+          "to": "Dust the hummus with sumac."
         }
       ]
     },
@@ -98,6 +2043,37 @@
         {
           "from": "1.5L chicken or vegetable stock",
           "to": "1.5L vegetable stock (or chicken stock)"
+        },
+        {
+          "from": "Large handful baby spinach or shredded kale",
+          "to": "Large handful baby spinach (or shredded kale)"
+        }
+      ],
+      "times": {
+        "cookMinutes": 50
+      }
+    },
+    "miso-soup": {
+      "ingredients": [
+        {
+          "from": "4 tbsp white or red miso paste (or a mix)",
+          "to": "4 tbsp white miso paste (or red, or a mix)"
+        },
+        {
+          "from": "Optional: 4 shiitake mushrooms, sliced",
+          "to": "4 shiitake mushrooms, sliced (optional)"
+        }
+      ]
+    },
+    "moussaka": {
+      "times": {
+        "prepMinutes": 45,
+        "cookMinutes": 130
+      },
+      "ingredients": [
+        {
+          "from": "100g kefalotyri or parmesan, grated",
+          "to": "100g parmesan (or kefalotyri), grated"
         }
       ]
     },
@@ -106,6 +2082,322 @@
         {
           "from": "1L chicken or vegetable stock, kept warm",
           "to": "1L vegetable stock (or chicken stock), kept warm"
+        },
+        {
+          "from": "300g carnaroli or arborio rice",
+          "to": "300g carnaroli rice (or arborio)"
+        }
+      ],
+      "times": {
+        "prepMinutes": 20
+      }
+    },
+    "nasi-goreng": {
+      "steps": [
+        {
+          "from": "Stir-fry 3 minutes until just cooked.",
+          "to": "Stir-fry 3 minutes until cooked through."
+        }
+      ],
+      "addNotes": [
+        "Cook the rice ahead and cool it quickly: spread it on a tray and refrigerate within an hour. Don't leave cooked rice sitting out.",
+        "Runny or soft-cooked egg isn't recommended for pregnant people, young children, older people or anyone with a weakened immune system. Cook their eggs until firm."
+      ]
+    },
+    "nicoise-salad": {
+      "times": {
+        "cookMinutes": 25
+      },
+      "ingredients": [
+        {
+          "from": "1 small red onion or 2 shallots, finely sliced",
+          "to": "1 small red onion (or 2 shallots), finely sliced"
+        }
+      ],
+      "addNotes": [
+        "Runny or soft-cooked egg isn't recommended for pregnant people, young children, older people or anyone with a weakened immune system. Cook their eggs until firm."
+      ]
+    },
+    "okonomiyaki": {
+      "times": {
+        "cookMinutes": 25
+      },
+      "ingredients": [
+        {
+          "from": "8 thin slices pork belly or streaky bacon",
+          "to": "8 thin slices pork belly (or streaky bacon)"
+        }
+      ]
+    },
+    "omelette": {
+      "addNotes": [
+        "Runny or soft-cooked egg isn't recommended for pregnant people, young children, older people or anyone with a weakened immune system. Cook their eggs until firm."
+      ]
+    },
+    "osso-buco": {
+      "times": {
+        "cookMinutes": 195
+      },
+      "ingredients": [
+        {
+          "from": "500ml beef or chicken stock",
+          "to": "500ml beef stock (or chicken stock)"
+        }
+      ]
+    },
+    "paella": {
+      "times": {
+        "cookMinutes": 55
+      },
+      "ingredients": [
+        {
+          "from": "300g bomba or calasparra rice",
+          "to": "300g bomba rice (or calasparra)"
+        },
+        {
+          "from": "1L hot chicken or seafood stock",
+          "to": "1L hot chicken stock (or seafood stock)"
+        },
+        {
+          "from": "200g mussels or clams, cleaned",
+          "to": "200g mussels (or clams), cleaned"
+        }
+      ],
+      "steps": [
+        {
+          "from": "the shells of the mussels open.",
+          "to": "the shells of the mussels open. Discard any that stay closed."
+        }
+      ],
+      "addNotes": [
+        "Leftovers: spread the rice out to cool quickly and refrigerate within an hour. Don't leave cooked rice sitting out."
+      ]
+    },
+    "paneer-butter-masala": {
+      "times": {
+        "prepMinutes": 20,
+        "cookMinutes": 40
+      },
+      "ingredients": [
+        {
+          "from": "Basmati rice or warm naan",
+          "to": "Basmati rice (or warm naan)"
+        }
+      ],
+      "addIngredients": [
+        {
+          "group": "Sauce",
+          "line": "20g butter, to finish"
+        }
+      ],
+      "steps": [
+        {
+          "from": "melt the butter with the oil",
+          "to": "melt the 50g butter with the oil"
+        },
+        {
+          "from": "Finish with a knob of butter off the heat.",
+          "to": "Finish with the 20g butter off the heat."
+        }
+      ]
+    },
+    "pastrami-sandwich": {
+      "ingredients": [
+        {
+          "from": "4 slices Jewish rye bread or marbled rye",
+          "to": "4 slices Jewish rye bread (or marbled rye)"
+        },
+        {
+          "from": "4 tbsp wholegrain or yellow mustard",
+          "to": "4 tbsp wholegrain mustard (or yellow mustard)"
+        },
+        {
+          "from": "20g butter (for warming the meat)",
+          "to": "20g butter, for toasting the bread"
+        }
+      ],
+      "steps": [
+        {
+          "from": "toast the rye lightly",
+          "to": "toast the rye lightly in a pan with the butter"
+        },
+        {
+          "from": "Add pickle slices on top of the meat.",
+          "to": "Add pickle slices on top of the meat (and the Swiss cheese and sauerkraut, if using)."
+        }
+      ],
+      "addNotes": [
+        "Deli meats aren't recommended cold for pregnant people, older people or anyone with a weakened immune system. Make sure the pastrami is steaming hot right through."
+      ]
+    },
+    "peking-duck": {
+      "times": {
+        "prepMinutes": 510
+      },
+      "steps": [
+        {
+          "from": "rinse the duck and pat very dry.",
+          "to": "pat the duck very dry (don't rinse it, rinsing spreads bacteria)."
+        },
+        {
+          "from": "Brush all over the skin.",
+          "to": "Brush half all over the skin. Keep the rest, covered, in the fridge for basting."
+        }
+      ],
+      "addNotes": [
+        "Start the day before: the duck dries uncovered in the fridge overnight."
+      ]
+    },
+    "penne-arrabbiata": {
+      "ingredients": [
+        {
+          "from": "700g passata or 800g tinned San Marzano tomatoes, crushed",
+          "to": "800g tinned San Marzano tomatoes, crushed (or 700g passata)"
+        },
+        {
+          "from": "400g penne or rigatoni",
+          "to": "400g penne (or rigatoni)"
+        },
+        {
+          "from": "40g grated parmesan or pecorino (optional, Romans purists skip cheese)",
+          "to": "40g grated pecorino (or parmesan), optional"
+        }
+      ]
+    },
+    "pepperoni-pizza": {
+      "times": {
+        "cookMinutes": 20
+      },
+      "ingredients": [
+        {
+          "from": "150g spicy pepperoni or salami, sliced",
+          "to": "150g spicy pepperoni (or salami), sliced"
+        }
+      ]
+    },
+    "peri-peri-chicken": {
+      "times": {
+        "prepMinutes": 75,
+        "cookMinutes": 50
+      }
+    },
+    "pesto-pasta": {
+      "times": {
+        "cookMinutes": 15
+      },
+      "ingredients": [
+        {
+          "from": "400g trofie, fusilli, or spaghetti",
+          "to": "400g trofie (or fusilli or spaghetti)"
+        }
+      ]
+    },
+    "pho": {
+      "times": {
+        "cookMinutes": 200
+      },
+      "steps": [
+        {
+          "from": "Pour over the boiling broth,",
+          "to": "Bring the broth back to a rolling boil and pour it over,"
+        }
+      ]
+    },
+    "pierogi": {
+      "times": {
+        "prepMinutes": 75,
+        "cookMinutes": 50
+      }
+    },
+    "poke-bowl": {
+      "addNotes": [
+        "Uses raw fish. Not recommended during pregnancy or for anyone with a weakened immune system."
+      ],
+      "ingredients": [
+        {
+          "from": "400g sashimi-grade tuna or salmon",
+          "to": "400g sashimi-grade tuna (or salmon)"
+        }
+      ]
+    },
+    "pork-adobo": {
+      "ingredients": [
+        {
+          "from": "1kg pork belly or pork shoulder",
+          "to": "1kg pork belly (or pork shoulder)"
+        }
+      ]
+    },
+    "pork-dumplings": {
+      "addIngredients": [
+        {
+          "group": "Wrappers",
+          "line": "Plain flour, for dusting"
+        },
+        {
+          "group": "Wrappers",
+          "line": "2 tbsp neutral oil, for pan-frying"
+        }
+      ],
+      "steps": [
+        {
+          "from": "When they float again, they're done, about 6 minutes total.",
+          "to": "When they float again, they're done, about 6 minutes total. Cut one open: the filling should be cooked through with no pink (75°C)."
+        }
+      ]
+    },
+    "pork-fried-rice": {
+      "addNotes": [
+        "If you cook the rice for this, spread it out to cool quickly and refrigerate it within an hour. Don't leave cooked rice sitting out."
+      ]
+    },
+    "pork-roast": {
+      "times": {
+        "prepMinutes": 495
+      },
+      "ingredients": [
+        {
+          "from": "2kg pork loin or shoulder",
+          "to": "2kg pork loin (or pork shoulder)"
+        }
+      ],
+      "addNotes": [
+        "Start the day before: the pork skin dries in the fridge overnight."
+      ]
+    },
+    "pork-tacos": {
+      "ingredients": [
+        {
+          "from": "200ml chicken stock or water",
+          "to": "200ml chicken stock (or water)"
+        },
+        {
+          "from": "3 tbsp lard or neutral oil (for finishing)",
+          "to": "3 tbsp lard (or neutral oil), for finishing"
+        },
+        {
+          "from": "Crumbled feta or queso fresco",
+          "to": "Crumbled feta (or queso fresco)"
+        }
+      ]
+    },
+    "prawn-curry": {
+      "ingredients": [
+        {
+          "from": "600g raw prawns, peeled (keep some shells for stock)",
+          "to": "600g raw prawns, peeled and deveined"
+        },
+        {
+          "from": "2 tbsp coconut oil or ghee",
+          "to": "2 tbsp coconut oil (or ghee)"
+        }
+      ]
+    },
+    "pulled-pork": {
+      "ingredients": [
+        {
+          "from": "250ml apple juice or apple cider vinegar in a spray bottle",
+          "to": "250ml apple juice (or apple cider vinegar), in a spray bottle"
         }
       ]
     },
@@ -114,6 +2406,74 @@
         {
           "from": "1L chicken or vegetable stock",
           "to": "1L vegetable stock (or chicken stock)"
+        },
+        {
+          "from": "4 garlic cloves",
+          "to": "1 head garlic, cloves separated, unpeeled"
+        }
+      ]
+    },
+    "quesadillas": {
+      "times": {
+        "cookMinutes": 35
+      },
+      "ingredients": [
+        {
+          "from": "Butter or oil for the pan",
+          "to": "Butter (or oil), for the pan, optional"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Cook another 2 minutes until everything is glazed.",
+          "to": "Cook another 2 minutes until everything is glazed and the chicken is cooked through (75°C)."
+        },
+        {
+          "from": "Heat a dry pan over medium heat. Place the quesadilla in and weigh down",
+          "to": "Heat a dry pan (or one very lightly brushed with butter) over medium heat. Place two quesadillas in, straight edges to the middle, and weigh down"
+        }
+      ]
+    },
+    "quiche-lorraine": {
+      "times": {
+        "prepMinutes": 65,
+        "cookMinutes": 85
+      }
+    },
+    "ramen": {
+      "ingredients": [
+        {
+          "from": "4 thin slices roast pork or shredded chicken",
+          "to": "4 thin slices roast pork (or shredded chicken)"
+        }
+      ],
+      "addNotes": [
+        "The eggs have soft yolks. If you're pregnant, cooking for young children or older people, or have a weakened immune system, cook them until the yolks are firm."
+      ]
+    },
+    "ratatouille": {
+      "ingredients": [
+        {
+          "from": "3 courgettes, in 2cm rounds",
+          "to": "3 zucchini, in 2cm rounds"
+        }
+      ],
+      "steps": [
+        {
+          "from": "courgette 4 minutes",
+          "to": "zucchini 4 minutes"
+        }
+      ]
+    },
+    "reuben-sandwich": {
+      "ingredients": [
+        {
+          "from": "4 thick slices rye bread or marbled rye",
+          "to": "4 thick slices rye bread (or marbled rye)"
+        },
+        {
+          "from": "300g good corned beef or pastrami",
+          "to": "300g good corned beef (or pastrami)"
         }
       ]
     },
@@ -122,6 +2482,898 @@
         {
           "from": "1.2L chicken or vegetable stock, kept warm",
           "to": "1.2L vegetable stock (or chicken stock), kept warm"
+        }
+      ]
+    },
+    "roast-chicken": {
+      "times": {
+        "prepMinutes": 45,
+        "cookMinutes": 95
+      }
+    },
+    "roasted-veggie-bowl": {
+      "ingredients": [
+        {
+          "from": "2 cups cooked quinoa or brown rice",
+          "to": "2 cups cooked quinoa (or brown rice)"
+        },
+        {
+          "from": "1 cup chickpeas (drained, roasted with oil and paprika 20 min at 220°C)",
+          "to": "1 cup tinned chickpeas, drained and patted dry"
+        }
+      ],
+      "addIngredients": [
+        {
+          "group": "Bowl",
+          "line": "1 tbsp olive oil, for the chickpeas"
+        },
+        {
+          "group": "Bowl",
+          "line": "1 tsp smoked paprika, for the chickpeas"
+        }
+      ],
+      "addNotes": [
+        "If you cook the rice for this, spread it out to cool quickly and refrigerate it within an hour. Don't leave cooked rice sitting out."
+      ]
+    },
+    "rogan-josh": {
+      "times": {
+        "cookMinutes": 135
+      }
+    },
+    "saag-paneer": {
+      "ingredients": [
+        {
+          "from": "2 tbsp ghee or oil",
+          "to": "2 tbsp ghee (or oil)"
+        }
+      ]
+    },
+    "salisbury-steak": {
+      "steps": [
+        {
+          "from": "Simmer 6 minutes until cooked through.",
+          "to": "Simmer 6 minutes until cooked through (75°C in the centre)."
+        }
+      ]
+    },
+    "salmon-nigiri": {
+      "addNotes": [
+        "Uses raw fish. Not recommended during pregnancy or for anyone with a weakened immune system."
+      ],
+      "times": {
+        "cookMinutes": 25
+      },
+      "ingredients": [
+        {
+          "from": "200g sushi rice, rinsed and cooked as for vegetarian sushi",
+          "to": "200g sushi rice, rinsed until the water runs clear"
+        }
+      ],
+      "addIngredients": [
+        {
+          "group": "Sushi rice",
+          "line": "240ml water"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Make seasoned sushi rice. Cool to body temperature.",
+          "to": "Bring the rice and water to the boil, cover and cook on the lowest heat for 12 minutes, then rest off the heat, covered, for 10 minutes. Warm the vinegar, sugar and salt until dissolved, fold through the rice, and cool to body temperature."
+        }
+      ]
+    },
+    "salmon-poke": {
+      "addNotes": [
+        "Uses raw fish. Not recommended during pregnancy or for anyone with a weakened immune system."
+      ]
+    },
+    "salmon-teriyaki": {
+      "ingredients": [
+        {
+          "from": "Steamed broccoli or bok choy",
+          "to": "Steamed broccoli (or bok choy)"
+        }
+      ]
+    },
+    "samosas": {
+      "times": {
+        "prepMinutes": 75,
+        "cookMinutes": 60
+      },
+      "ingredients": [
+        {
+          "from": "4 tbsp ghee or neutral oil",
+          "to": "4 tbsp ghee (or neutral oil)"
+        },
+        {
+          "from": "2 tbsp ghee or oil",
+          "to": "2 tbsp ghee (or oil)"
+        }
+      ],
+      "moveIngredients": [
+        {
+          "line": "Neutral oil for frying",
+          "toGroup": "Pastry"
+        }
+      ]
+    },
+    "satay-skewers": {
+      "times": {
+        "prepMinutes": 150
+      },
+      "steps": [
+        {
+          "from": "until deeply charred at the edges and just cooked through. Baste with leftover marinade once.",
+          "to": "until deeply charred at the edges and cooked through (75°C in the centre). Baste once with leftover marinade straight after the first turn, so it cooks on."
+        }
+      ]
+    },
+    "schnitzel": {
+      "ingredients": [
+        {
+          "from": "Lingonberry jam or cranberry sauce",
+          "to": "Lingonberry jam (or cranberry sauce)"
+        }
+      ]
+    },
+    "seafood-paella": {
+      "times": {
+        "cookMinutes": 45
+      },
+      "ingredients": [
+        {
+          "from": "300g bomba or calasparra rice",
+          "to": "300g bomba rice (or calasparra rice)"
+        },
+        {
+          "from": "1L hot seafood or fish stock",
+          "to": "1L hot seafood stock (or fish stock)"
+        }
+      ]
+    },
+    "seafood-pasta": {
+      "ingredients": [
+        {
+          "from": "400g linguine or spaghetti",
+          "to": "400g linguine (or spaghetti)"
+        }
+      ]
+    },
+    "seafood-risotto": {
+      "ingredients": [
+        {
+          "from": "1L fish or seafood stock",
+          "to": "1L fish stock (or seafood stock)"
+        },
+        {
+          "from": "2 tbsp olive oil",
+          "to": "3 tbsp olive oil"
+        },
+        {
+          "from": "300g mussels, scrubbed",
+          "to": "300g mussels, scrubbed and debearded"
+        }
+      ],
+      "steps": [
+        {
+          "from": "melt the butter with oil.",
+          "to": "melt the butter with 2 tbsp of the oil."
+        },
+        {
+          "from": "in a bit of oil",
+          "to": "in the remaining 1 tbsp oil"
+        }
+      ]
+    },
+    "shakshuka": {
+      "ingredients": [
+        {
+          "from": "Small handful coriander or parsley",
+          "to": "Small handful coriander (or parsley)"
+        }
+      ],
+      "addNotes": [
+        "The yolks are left runny. If you're pregnant, cooking for young children or older people, or have a weakened immune system, cook the eggs until the yolks are firm."
+      ]
+    },
+    "shawarma": {
+      "times": {
+        "prepMinutes": 140
+      },
+      "steps": [
+        {
+          "from": "until charred at the edges and cooked through.",
+          "to": "until charred at the edges and cooked through (75°C in the thickest part)."
+        }
+      ]
+    },
+    "shepherd-s-pie": {
+      "ingredients": [
+        {
+          "from": "300ml beef or lamb stock",
+          "to": "300ml beef stock (or lamb stock)"
+        }
+      ]
+    },
+    "shrimp-alfredo": {
+      "ingredients": [
+        {
+          "from": "400g fettuccine or linguine",
+          "to": "400g fettuccine (or linguine)"
+        }
+      ]
+    },
+    "shrimp-fried-rice": {
+      "addNotes": [
+        "If you cook the rice for this, spread it out to cool quickly and refrigerate it within an hour. Don't leave cooked rice sitting out."
+      ]
+    },
+    "shrimp-pad-thai": {
+      "times": {
+        "prepMinutes": 25
+      }
+    },
+    "shrimp-scampi": {
+      "ingredients": [
+        {
+          "from": "400g linguine or spaghetti",
+          "to": "400g linguine (or spaghetti)"
+        }
+      ]
+    },
+    "shrimp-tacos": {
+      "ingredients": [
+        {
+          "from": "4 tbsp Greek yogurt or sour cream",
+          "to": "4 tbsp Greek yogurt (or sour cream)"
+        }
+      ]
+    },
+    "shrimp-tempura": {
+      "times": {
+        "cookMinutes": 20
+      }
+    },
+    "sisig": {
+      "times": {
+        "prepMinutes": 30,
+        "cookMinutes": 70
+      },
+      "ingredients": [
+        {
+          "from": "600g pork belly or pork shoulder",
+          "to": "600g pork belly (or pork shoulder)"
+        },
+        {
+          "from": "Chopped chicken liver, optional",
+          "to": "100g chicken livers, finely chopped (optional)"
+        }
+      ],
+      "moveIngredients": [
+        {
+          "line": "100g chicken livers, finely chopped (optional)",
+          "toGroup": "Sisig"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Add the garlic, chilli, and ginger. Cook 1 minute.",
+          "to": "Add the garlic, chilli, and ginger (and the chicken liver, if using). Cook 1 minute, or 3 minutes with liver, until it's cooked through with no pink."
+        }
+      ],
+      "addNotes": [
+        "The egg stays soft. If you're pregnant, cooking for young children or older people, or have a weakened immune system, stir it through until fully set."
+      ]
+    },
+    "sloppy-joes": {
+      "ingredients": [
+        {
+          "from": "4 soft burger buns or kaiser rolls",
+          "to": "4 soft burger buns (or kaiser rolls)"
+        }
+      ]
+    },
+    "smash-burger": {
+      "ingredients": [
+        {
+          "from": "4 slices American or cheddar cheese",
+          "to": "8 slices American cheese (or cheddar)"
+        },
+        {
+          "from": "4 soft potato or brioche buns",
+          "to": "4 soft potato buns (or brioche buns)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Lay a slice of cheese on each. Cook 30 seconds more.",
+          "to": "Lay a slice of cheese on each. Cook 30 seconds more, until no pink remains. Repeat with the remaining 4 balls."
+        }
+      ]
+    },
+    "soba-noodles": {
+      "times": {
+        "prepMinutes": 40
+      }
+    },
+    "spaghetti-aglio-e-olio": {
+      "addIngredients": [
+        {
+          "group": "Pasta",
+          "line": "Black pepper"
+        }
+      ]
+    },
+    "spaghetti-bolognese": {
+      "times": {
+        "cookMinutes": 120
+      },
+      "ingredients": [
+        {
+          "from": "150g pancetta or streaky bacon",
+          "to": "150g pancetta (or streaky bacon)"
+        }
+      ]
+    },
+    "spicy-beef-bowl": {
+      "times": {
+        "cookMinutes": 20
+      },
+      "ingredients": [
+        {
+          "from": "2 cups steamed rice",
+          "to": "4 cups steamed rice"
+        },
+        {
+          "from": "Sriracha or chilli oil",
+          "to": "Chilli oil (or sriracha)"
+        }
+      ],
+      "addSteps": [
+        {
+          "after": "",
+          "text": "Lower the eggs into boiling water and cook 7 minutes, then cool in iced water, peel and halve."
+        }
+      ],
+      "addNotes": [
+        "The eggs have soft yolks. If you're pregnant, cooking for young children or older people, or have a weakened immune system, cook them until the yolks are firm."
+      ]
+    },
+    "spicy-ramen": {
+      "ingredients": [
+        {
+          "from": "4 slices roast pork or shredded chicken",
+          "to": "4 slices roast pork (or shredded chicken)"
+        }
+      ],
+      "addNotes": [
+        "Soft-boiled eggs have runny yolks. If you're pregnant, cooking for young children or older people, or have a weakened immune system, cook the eggs until the yolks are firm."
+      ]
+    },
+    "spicy-sausage-pasta": {
+      "ingredients": [
+        {
+          "from": "400g rigatoni or penne",
+          "to": "400g rigatoni (or penne)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Simmer 10 minutes until thick.",
+          "to": "Simmer 10 minutes until thick. Season with salt and pepper."
+        }
+      ]
+    },
+    "spicy-thai-noodles": {
+      "ingredients": [
+        {
+          "from": "1 tbsp sriracha or Thai chilli paste",
+          "to": "1 tbsp sriracha (or Thai chilli paste)"
+        },
+        {
+          "from": "300g chicken or prawn",
+          "to": "300g chicken thigh, thinly sliced (or peeled prawns)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Cook the protein 2 minutes.",
+          "to": "Cook the protein 2–3 minutes until just cooked through."
+        }
+      ]
+    },
+    "spring-rolls": {
+      "ingredients": [
+        {
+          "from": "1/2 cup shredded cooked pork or chicken (optional)",
+          "to": "1/2 cup shredded cooked pork (or chicken, optional)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "carrot, cucumber, and herbs.",
+          "to": "carrot, cucumber, herbs, garlic chives, and pork if using."
+        }
+      ]
+    },
+    "stuffed-cabbage": {
+      "times": {
+        "prepMinutes": 45
+      },
+      "addIngredients": [
+        {
+          "group": "Cabbage and filling",
+          "line": "15g butter"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Combine all filling ingredients in a bowl.",
+          "to": "Soften the diced filling onion in the butter for 5 minutes and cool slightly. Combine all filling ingredients in a bowl."
+        },
+        {
+          "from": "Place 2 tbsp filling at the stem end.",
+          "to": "Place about 80g of filling (a heaped 1/3 cup) at the stem end."
+        }
+      ]
+    },
+    "stuffed-peppers": {
+      "times": {
+        "cookMinutes": 65
+      },
+      "ingredients": [
+        {
+          "from": "500g beef or lamb mince",
+          "to": "500g beef mince (or lamb mince)"
+        },
+        {
+          "from": "Fresh basil or parsley to serve",
+          "to": "Fresh basil, to serve (or parsley)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Rest 5 minutes before serving.",
+          "to": "Rest 5 minutes, then scatter with basil to serve."
+        }
+      ],
+      "addNotes": [
+        "If using leftover rice, it must have been cooled quickly and kept in the fridge. Use it within a day."
+      ]
+    },
+    "sunday-roast": {
+      "times": {
+        "prepMinutes": 60,
+        "cookMinutes": 110
+      },
+      "steps": [
+        {
+          "from": "Heat the oven to 220°C. Sear the beef",
+          "to": "Heat the oven to 220°C with the duck fat in a roasting tray on the lower shelf. Sear the beef"
+        },
+        {
+          "from": "Transfer to a roasting tray. Roast 20 minutes",
+          "to": "Add the potatoes to the smoking fat (step 5). Transfer the beef to a roasting tray on the top shelf. Roast 20 minutes"
+        },
+        {
+          "from": "Rest 20 minutes, non-negotiable.",
+          "to": "Lift out, cover loosely with foil and rest 30 minutes, non-negotiable."
+        },
+        {
+          "from": "While the beef rests: heat the duck fat in a roasting tray at 220°C until smoking. Add the parboiled potatoes carefully, they'll sizzle. Toss to coat. Roast 45 minutes, turning twice, until deep golden and crackling.",
+          "to": "Potatoes: add them to the hot fat carefully, they'll sizzle. Toss to coat. They roast under the beef, turned twice. When the beef comes out, turn the oven back up to 220°C and roast them 25 minutes more, until deep golden and crackling."
+        },
+        {
+          "from": "For Yorkshires: whisk",
+          "to": "For Yorkshires (make the batter while the beef roasts): whisk"
+        },
+        {
+          "from": "Heat a 12-hole muffin tin",
+          "to": "As soon as the beef comes out, heat a 12-hole muffin tin"
+        },
+        {
+          "from": "Bake 20 minutes, don't open",
+          "to": "Bake on the top shelf for 20 minutes, don't open"
+        }
+      ]
+    },
+    "sushi-rolls": {
+      "addNotes": [
+        "Uses raw fish. Not recommended during pregnancy or for anyone with a weakened immune system."
+      ]
+    },
+    "swedish-meatballs": {
+      "steps": [
+        {
+          "from": "Simmer 8 minutes until cooked through.",
+          "to": "Simmer 8 minutes until cooked through (75°C in the centre)."
+        },
+        {
+          "from": "Spoon lingonberry on the side.",
+          "to": "Spoon lingonberry and pickled cucumber on the side."
+        }
+      ]
+    },
+    "tandoori-chicken": {
+      "times": {
+        "prepMinutes": 495,
+        "cookMinutes": 35
+      },
+      "steps": [
+        {
+          "from": "until the edges char and the juices run clear.",
+          "to": "until the edges char and the juices run clear (75°C at the bone)."
+        }
+      ],
+      "addNotes": [
+        "Start the day before: the chicken marinates overnight."
+      ]
+    },
+    "tapas-platter": {
+      "times": {
+        "cookMinutes": 35
+      },
+      "ingredients": [
+        {
+          "from": "4 tbsp aioli or good mayo",
+          "to": "4 tbsp aioli (or good mayo)"
+        },
+        {
+          "from": "Sliced jamón serrano or prosciutto",
+          "to": "Sliced jamón serrano (or prosciutto)"
+        }
+      ]
+    },
+    "teriyaki-beef-bowl": {
+      "ingredients": [
+        {
+          "from": "400g beef sirloin or rump, thinly sliced",
+          "to": "400g beef sirloin (or rump), thinly sliced"
+        },
+        {
+          "from": "1 cup steamed broccoli or sugar snap peas",
+          "to": "1 cup steamed broccoli (or sugar snap peas)"
+        }
+      ]
+    },
+    "teriyaki-chicken-bowl": {
+      "steps": [
+        {
+          "from": "Flip and cook 4 more minutes.",
+          "to": "Flip and cook 4 more minutes (75°C in the thickest part)."
+        }
+      ],
+      "addNotes": [
+        "Soft-boiled eggs have runny yolks. If you're pregnant, cooking for young children or older people, or have a weakened immune system, cook the eggs until the yolks are firm."
+      ]
+    },
+    "teriyaki-pork": {
+      "ingredients": [
+        {
+          "from": "Steamed broccoli or pak choy",
+          "to": "Steamed broccoli (or pak choy)"
+        }
+      ]
+    },
+    "teriyaki-tofu": {
+      "ingredients": [
+        {
+          "from": "Steamed broccoli or pak choy",
+          "to": "Steamed broccoli (or pak choy)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Heat 2 tbsp oil",
+          "to": "Heat the oil"
+        }
+      ]
+    },
+    "thai-basil-chicken": {
+      "times": {
+        "cookMinutes": 12
+      },
+      "ingredients": [
+        {
+          "from": "60ml chicken stock or water",
+          "to": "60ml chicken stock (or water)"
+        }
+      ],
+      "addIngredients": [
+        {
+          "group": "To serve",
+          "line": "Neutral oil, for frying the eggs"
+        }
+      ],
+      "steps": [
+        {
+          "from": "stir-fry 2 more minutes until cooked.",
+          "to": "stir-fry 2 more minutes until cooked through."
+        }
+      ],
+      "addSteps": [
+        {
+          "after": "In a mortar (or by hand with a knife)",
+          "text": "Fry the eggs first: heat 1cm of oil in a small pan until very hot and fry each egg 1–2 minutes, spooning oil over the white, until the edges are crisp and the yolk is still runny. Keep warm."
+        }
+      ],
+      "addNotes": [
+        "The egg yolk stays runny. If you're pregnant, cooking for young children or older people, or have a weakened immune system, cook the egg until the yolk is firm."
+      ]
+    },
+    "thai-green-curry": {
+      "ingredients": [
+        {
+          "from": "1 small Asian eggplant or 8 baby corn, halved",
+          "to": "1 small Asian eggplant (or 8 baby corn), halved"
+        },
+        {
+          "from": "100g snake beans or green beans",
+          "to": "100g snake beans (or green beans)"
+        }
+      ]
+    },
+    "tikka-masala": {
+      "times": {
+        "prepMinutes": 140,
+        "cookMinutes": 40
+      }
+    },
+    "tofu-buddha-bowl": {
+      "ingredients": [
+        {
+          "from": "1 cup cooked quinoa or brown rice",
+          "to": "1 cup cooked quinoa (or brown rice)"
+        }
+      ]
+    },
+    "tofu-stir-fry": {
+      "ingredients": [
+        {
+          "from": "500g firm or extra-firm tofu",
+          "to": "500g firm tofu (or extra-firm)"
+        },
+        {
+          "from": "100ml vegetable stock or water",
+          "to": "100ml vegetable stock (or water)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "sesame oil, and chilli flakes.",
+          "to": "sesame oil, chilli flakes, and stock."
+        }
+      ]
+    },
+    "tom-kha-gai": {
+      "steps": [
+        {
+          "from": "Serve with rice.",
+          "to": "Serve with rice and chilli oil."
+        }
+      ]
+    },
+    "tom-yum-soup": {
+      "ingredients": [
+        {
+          "from": "1.2L chicken or shrimp stock",
+          "to": "1.2L chicken stock (or prawn stock)"
+        }
+      ]
+    },
+    "tortilla-soup": {
+      "steps": [
+        {
+          "from": "coriander, jalapeño.",
+          "to": "coriander, jalapeño, with lime wedges on the side."
+        }
+      ]
+    },
+    "tteokbokki": {
+      "times": {
+        "prepMinutes": 15
+      },
+      "ingredients": [
+        {
+          "from": "1 tbsp corn syrup or honey",
+          "to": "1 tbsp corn syrup (or honey)"
+        }
+      ]
+    },
+    "tuna-melt": {
+      "ingredients": [
+        {
+          "from": "1 tbsp finely chopped pickles or capers",
+          "to": "1 tbsp finely chopped pickles (or capers)"
+        },
+        {
+          "from": "1 tbsp chopped chives or parsley",
+          "to": "1 tbsp chopped chives (or parsley)"
+        },
+        {
+          "from": "4 slices sourdough or rye",
+          "to": "4 slices sourdough (or rye)"
+        }
+      ]
+    },
+    "tuna-poke": {
+      "addNotes": [
+        "Uses raw fish. Not recommended during pregnancy or for anyone with a weakened immune system."
+      ],
+      "ingredients": [
+        {
+          "from": "Furikake or crushed nori",
+          "to": "Furikake (or crushed nori)"
+        }
+      ]
+    },
+    "turkey-burger": {
+      "addIngredients": [
+        {
+          "group": "To assemble",
+          "line": "20g butter, softened"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Toast buns butter-side-down.",
+          "to": "Butter the cut sides of the buns and toast them butter-side-down in a hot pan."
+        }
+      ]
+    },
+    "turkish-pide": {
+      "times": {
+        "prepMinutes": 90
+      },
+      "ingredients": [
+        {
+          "from": "120g grated mozzarella or kasar",
+          "to": "120g grated mozzarella (or kasar)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Slide onto the hot stone. Bake 10–12 minutes total until the dough is deep golden and the lamb is sizzling.",
+          "to": "After 8 minutes, crack the egg into the centre of one pide and bake for the remaining time, so the white sets and the yolk stays runny."
+        },
+        {
+          "from": "For one of them, crack an egg into the centre after baking 8 minutes (it cooks in the last few minutes, runny yolk).",
+          "to": "Slide onto the hot stone. Bake 10–12 minutes total until the dough is deep golden and the lamb is sizzling and cooked through."
+        }
+      ],
+      "addNotes": [
+        "The egg yolk stays runny. If you're pregnant, cooking for young children or older people, or have a weakened immune system, cook the egg until the yolk is firm."
+      ]
+    },
+    "udon-noodles": {
+      "ingredients": [
+        {
+          "from": "2 large pieces tempura prawn or thinly sliced beef (optional)",
+          "to": "2 large pieces tempura prawn (or thinly sliced beef, optional)"
+        }
+      ],
+      "addNotes": [
+        "Soft-boiled eggs have runny yolks. If you're pregnant, cooking for young children or older people, or have a weakened immune system, cook the eggs until the yolks are firm."
+      ]
+    },
+    "vegetable-curry": {
+      "ingredients": [
+        {
+          "from": "Basmati rice or naan",
+          "to": "Basmati rice (or naan)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Serve with rice or naan.",
+          "to": "Serve with rice or naan, mango chutney and yogurt."
+        }
+      ]
+    },
+    "vegetable-lasagna": {
+      "times": {
+        "cookMinutes": 90
+      }
+    },
+    "vegetarian-sushi": {
+      "ingredients": [
+        {
+          "from": "120g firm tofu, in batons, marinated in soy + mirin + sesame oil 15 minutes then pan-fried golden",
+          "to": "120g firm tofu, in batons"
+        }
+      ],
+      "addIngredients": [
+        {
+          "group": "Fillings",
+          "line": "1 tbsp soy sauce"
+        },
+        {
+          "group": "Fillings",
+          "line": "1 tbsp mirin"
+        },
+        {
+          "group": "Fillings",
+          "line": "1 tsp sesame oil"
+        },
+        {
+          "group": "Fillings",
+          "line": "1 tsp neutral oil"
+        }
+      ],
+      "addSteps": [
+        {
+          "after": "",
+          "text": "Toss the tofu batons with the soy sauce, mirin and sesame oil and leave 15 minutes. Pan-fry in the neutral oil until golden on all sides, then cool."
+        }
+      ]
+    },
+    "veggie-burger": {
+      "times": {
+        "prepMinutes": 30
+      },
+      "addIngredients": [
+        {
+          "group": "To assemble",
+          "line": "20g butter, softened"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Toast the buns butter-side-down.",
+          "to": "Butter the cut sides of the buns and toast them butter-side-down in a hot pan."
+        }
+      ]
+    },
+    "veggie-stir-fry": {
+      "ingredients": [
+        {
+          "from": "60ml water or stock",
+          "to": "60ml water (or vegetable stock)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "oyster, wine, sesame oil, and sugar in one bowl.",
+          "to": "oyster, wine, sesame oil, sugar, and water in one bowl."
+        }
+      ]
+    },
+    "veggie-tempura": {
+      "times": {
+        "cookMinutes": 20
+      },
+      "ingredients": [
+        {
+          "from": "8 button mushrooms or shiitake caps",
+          "to": "8 button mushrooms (or shiitake caps)"
+        },
+        {
+          "from": "1 small kabocha or pumpkin",
+          "to": "1 small kabocha (or other pumpkin)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "Make the batter exactly as for shrimp tempura, ice cold, barely mixed, lumps OK.",
+          "to": "Make the batter just before frying: whisk the egg yolk into the ice-cold soda water, then add the flour, cornflour and salt and stir a few strokes with chopsticks. Ice cold, barely mixed, lumps OK."
+        }
+      ]
+    },
+    "zucchini-noodles": {
+      "times": {
+        "prepMinutes": 15
+      },
+      "ingredients": [
+        {
+          "from": "300g raw prawns or 300g cooked chicken",
+          "to": "300g raw prawns (or 300g cooked chicken)"
+        }
+      ],
+      "steps": [
+        {
+          "from": "add lemon zest, juice, basil, parmesan.",
+          "to": "add lemon zest, juice, basil, parmesan, and the mozzarella and pine nuts if using."
         }
       ]
     }

@@ -1,12 +1,11 @@
 // The first-use tour (D-035): the real screen dims, a rounded spotlight sits on
 // one control at a time, and a small card says what it's for. Four stops,
-// "Skip tour" always in the top corner, shown once after the welcome and
+// "Skip tour" on the card at every stop but the last, shown once after the welcome and
 // replayable from Settings.
 // It points at real views (registered with useTourTarget), so it can't drift
 // from the app the way a recorded video would.
 import { useEffect, useState } from 'react';
-import { Modal, Pressable, View, useWindowDimensions } from 'react-native';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { Modal, View, useWindowDimensions } from 'react-native';
 
 import { tourTarget, useTour } from '@/store/tour';
 import { Button } from '@/ui/primitives/Button';
@@ -14,7 +13,7 @@ import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { FIXED } from '@/ui/tokens/colour';
 import { TOUR } from '@/ui/tokens/screens';
-import { PRESSED, RADIUS, SHADOW, SPACE } from '@/ui/tokens/type';
+import { RADIUS, SHADOW, SPACE } from '@/ui/tokens/type';
 import { TOUR_STEPS } from './steps';
 
 type Rect = { x: number; y: number; width: number; height: number };
@@ -38,7 +37,6 @@ export function TourOverlay() {
   useFirstUseTour();
   const styles = useStyles();
   const window = useWindowDimensions();
-  const insets = useSafeAreaInsets();
   const step = useTour((s) => s.step);
   const goTo = useTour((s) => s.goTo);
   const finish = useTour((s) => s.finish);
@@ -74,7 +72,7 @@ export function TourOverlay() {
 
   return (
     <Modal visible transparent animationType="fade" onRequestClose={finish} statusBarTranslucent>
-      <View style={{ flex: 1 }} accessibilityViewIsModal testID="tour">
+      <View style={{ flex: 1 }} accessibilityViewIsModal onAccessibilityEscape={finish} testID="tour">
         {hole ? (
           <>
             {/* One view with a very wide border: its inner edge is the hole, so the hole's corners are truly rounded. */}
@@ -100,18 +98,6 @@ export function TourOverlay() {
         ) : (
           <View style={[styles.dim, { top: 0, left: 0, right: 0, bottom: 0 }]} />
         )}
-        <Pressable
-          onPress={finish}
-          accessibilityRole="button"
-          accessibilityLabel="Skip the tour"
-          hitSlop={SPACE.xs}
-          testID="tour-skip"
-          style={({ pressed }) => [styles.skip, { top: insets.top + SPACE.sm }, pressed && { opacity: PRESSED.row }]}
-        >
-          <Text variant="label" tone={FIXED.onPhoto}>
-            Skip tour
-          </Text>
-        </Pressable>
         <View style={[styles.card, cardPosition]} accessibilityLiveRegion="polite">
           <Text variant="kickerSmall" colour="accentDeep">{`${step + 1} of ${TOUR_STEPS.length}`}</Text>
           <Text variant="cardTitleLarge" accessibilityRole="header">
@@ -126,6 +112,8 @@ export function TourOverlay() {
                 <View key={s.target} style={[styles.dot, i === step && styles.dotOn]} />
               ))}
             </View>
+            {/* Skip lives on the card: the top-corner pill sat on the header's avatar (health check #10). */}
+            {last ? null : <Button label="Skip tour" kind="quiet" onPress={finish} testID="tour-skip" />}
             <Button
               label={last ? 'Start cooking' : 'Next'}
               kind="primary"
@@ -143,17 +131,6 @@ const useStyles = makeStyles(({ colours }) => ({
   dim: { position: 'absolute', backgroundColor: FIXED.scrim },
   mask: { position: 'absolute', borderColor: FIXED.scrim },
   ring: { position: 'absolute', borderWidth: TOUR.ring, borderColor: colours.accent },
-  skip: {
-    position: 'absolute',
-    right: SPACE.gutter,
-    paddingHorizontal: SPACE.md,
-    minHeight: TOUR.skipHeight,
-    justifyContent: 'center',
-    borderRadius: RADIUS.pill,
-    backgroundColor: FIXED.scrim,
-    borderWidth: 1,
-    borderColor: FIXED.onPhotoFaint,
-  },
   card: {
     position: 'absolute',
     left: SPACE.gutter,

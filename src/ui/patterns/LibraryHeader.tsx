@@ -87,7 +87,7 @@ export function LibraryPushedHead({ kicker, title, count, action }: PushedProps)
         <IconButton icon="back" label="Back" shape="square" size={24} onPress={() => goBack(router)} testID="back" />
       </View>
       <View style={styles.pushedText}>
-        <Text variant="kicker" colour="accent">
+        <Text variant="kicker" colour="accentText">
           {kicker}
         </Text>
         <Text variant="title" accessibilityRole="header">

@@ -1,0 +1,31 @@
+# A plate's page. Every plate needs a photo, and tests can't drive the system
+# photo picker, so a real plate can't be made here (see 18-share-a-dish). This
+# checks what can be: Home shows no plates before you share one, and a plate
+# link that points at nothing says so plainly and offers a way back.
+appId: host.exp.Exponent
+---
+- launchApp:
+    clearState: true
+- openLink: ${METRO_URL}
+- runFlow: subflows/_setup_skip_welcome.yaml
+- assertVisible:
+    id: "home-heroes"
+- assertNotVisible:
+    id: "home-plates"
+
+- openLink: ${METRO_URL}/--/plate/not-a-plate
+- tapOn:
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: "plate-missing"
+    timeout: 15000
+- assertVisible: "That plate is gone"
+- assertNotVisible:
+    id: "plate-remove"
+- takeScreenshot: plate-missing
+- tapOn:
+    id: "plate-missing-action"
+- assertVisible:
+    id: "feed-screen"

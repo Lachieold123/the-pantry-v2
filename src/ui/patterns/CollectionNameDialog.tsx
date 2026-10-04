@@ -55,7 +55,7 @@ function DialogCard({ title, confirmLabel, initialName = '', problem, onSubmit, 
     if (canSave) onSubmit(trimmed);
   };
   return (
-    <View style={styles.card} accessibilityViewIsModal testID="name-dialog">
+    <View style={styles.card} accessibilityViewIsModal onAccessibilityEscape={onClose} testID="name-dialog">
       <Text variant="cardTitleLarge" accessibilityRole="header" style={styles.title}>
         {title}
       </Text>

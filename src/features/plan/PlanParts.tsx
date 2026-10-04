@@ -16,6 +16,7 @@ import { RecipeImage } from '@/ui/patterns/RecipeImage';
 import { useToast } from '@/ui/patterns/Toast';
 import { Icon } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
+import { useTheme } from '@/ui/theme/ThemeProvider';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { cuisineEyebrow } from '@/ui/tokens/cuisine';
 import { PLAN, RADIUS, SPACE } from '@/ui/tokens/type';
@@ -93,6 +94,7 @@ export function DaySuggestions({ day, slot }: SuggestProps) {
 
 function SuggestionCard({ recipe, slot, onPress }: { recipe: Recipe; slot: Slot | undefined; onPress: () => void }) {
   const styles = useStyles();
+  const theme = useTheme().name;
   const minutes = totalMinutes(recipe);
   return (
     <Pressable
@@ -104,7 +106,7 @@ function SuggestionCard({ recipe, slot, onPress }: { recipe: Recipe; slot: Slot 
     >
       <RecipeImage source={RECIPE_IMAGES[recipe.id]} shape="card" cuisine={recipe.cuisine} radius={0} iconSize={26} />
       <View style={styles.suggestionBody}>
-        <Text variant="eyebrow" tone={cuisineEyebrow(recipe.cuisine)} numberOfLines={1}>
+        <Text variant="eyebrow" tone={cuisineEyebrow(recipe.cuisine, theme)} numberOfLines={1}>
           {CUISINE_LABELS[recipe.cuisine]}
         </Text>
         <Text variant="cardTitleSmall" numberOfLines={2}>

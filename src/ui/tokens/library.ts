@@ -33,10 +33,12 @@ export type LibraryColours = {
 const LIGHT: LibraryColours = {
   card: '#F7F3EA',
   title: '#0E0E0E',
-  meta: 'rgba(20,18,16,0.55)',
+  // 0.55 was 4.0:1 at 11pt (health check 2026-10-05 #24).
+  meta: 'rgba(20,18,16,0.62)',
   dot: 'rgba(0,0,0,0.35)',
-  well: '#1A1815',
-  wellIcon: '#3A3631',
+  // A light well: the near-black one read as a hole in a light page (#15).
+  well: '#ECE6DA',
+  wellIcon: '#7A7266',
   disc: '#F7F3EA',
   discInk: '#1A1A1A',
   count: '#A0712F',

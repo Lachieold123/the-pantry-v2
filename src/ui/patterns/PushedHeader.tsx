@@ -44,7 +44,7 @@ export function PushedHeader({ kicker, title, action, onBack, inset = false, sur
       </View>
       <View style={{ flex: 1, gap: 2 }}>
         {kicker ? (
-          <Text variant="kicker" colour="accent">
+          <Text variant="kicker" colour="accentText">
             {kicker}
           </Text>
         ) : null}

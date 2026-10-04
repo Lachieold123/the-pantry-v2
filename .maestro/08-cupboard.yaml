@@ -9,9 +9,16 @@ appId: host.exp.Exponent
 - runFlow: subflows/_setup_skip_welcome.yaml
 - tapOn:
     id: "tab-cupboard"
-- assertVisible:
-    id: "cupboard-empty"
+# The empty note sits under the ways to add things, so it can be below the fold.
+- scrollUntilVisible:
+    element:
+      id: "cupboard-empty"
+    direction: DOWN
 - takeScreenshot: cupboard-empty
+- scrollUntilVisible:
+    element:
+      id: "cupboard-search"
+    direction: UP
 
 # Add two ingredients by search: tap a suggestion (the field empties for the next one),
 # then type and press return to add the top match.
@@ -20,20 +27,27 @@ appId: host.exp.Exponent
 - inputText: "basmati"
 - tapOn:
     id: "cupboard-add-basmati-rice"
-- assertVisible:
-    id: "cupboard-item-basmati-rice"
 - assertNotVisible:
     id: "cupboard-search-clear"
 - tapOn:
     id: "cupboard-search"
 - inputText: "egg"
 - pressKey: Enter
+# These pages don't hide the keyboard on a swipe, so tap plain text instead (it closes the keyboard).
+- tapOn: 'What do you have\?'
+# Both are in, under "Step 2", which starts below the ways to add things.
+- scrollUntilVisible:
+    element:
+      id: "cupboard-item-basmati-rice"
+    direction: DOWN
 - assertVisible:
     id: "cupboard-item-egg"
 - assertVisible: "Step 2 · 2 things"
-# These pages don't hide the keyboard on a swipe, so tap plain text instead (it closes the keyboard).
-- tapOn: 'What do you have\?'
 - takeScreenshot: cupboard-two-items
+- scrollUntilVisible:
+    element:
+      id: "cupboard-search"
+    direction: UP
 
 # Nonsense gets a plain "no such ingredient"
 - tapOn:
@@ -62,6 +76,10 @@ appId: host.exp.Exponent
     id: "sheet-close"
 
 # Remove, then undo
+- scrollUntilVisible:
+    element:
+      id: "cupboard-item-egg"
+    direction: DOWN
 - tapOn:
     id: "cupboard-item-egg"
 - assertVisible: "Egg used up"
@@ -116,6 +134,11 @@ appId: host.exp.Exponent
     id: "recipe-plan"
 - tapOn:
     id: "plan-day-this-0"
+# Two weeks of days, the meal and the stepper can push the button below the sheet's fold.
+- scrollUntilVisible:
+    element:
+      id: "plan-confirm"
+    direction: DOWN
 - tapOn:
     id: "plan-confirm"
 - assertVisible: "Carbonara planned for tonight"
@@ -129,7 +152,14 @@ appId: host.exp.Exponent
     id: "shopping-item-guanciale"
 - tapOn:
     id: "tab-cupboard"
-- assertVisible:
-    id: "cupboard-item-guanciale"
+# The tab keeps its scroll position, so go to the top and then down to the jars.
+- scrollUntilVisible:
+    element:
+      id: "cupboard-search"
+    direction: UP
+- scrollUntilVisible:
+    element:
+      id: "cupboard-item-guanciale"
+    direction: DOWN
 - assertVisible: "Step 2 · 3 things"
 - takeScreenshot: cupboard-moved-from-list

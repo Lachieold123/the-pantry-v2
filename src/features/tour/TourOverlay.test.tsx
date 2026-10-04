@@ -4,8 +4,6 @@ import { useTour } from '@/store/tour';
 import { TOUR_STEPS } from './steps';
 import { TourOverlay } from './TourOverlay';
 
-jest.mock('react-native-safe-area-context', () => ({ useSafeAreaInsets: () => ({ top: 0, bottom: 0, left: 0, right: 0 }) }));
-
 beforeEach(() => useTour.setState({ seen: false, step: undefined }));
 
 // Its saved state loads asynchronously; let that settle inside act before asserting.
@@ -21,11 +19,13 @@ describe('TourOverlay', () => {
     expect(screen.getByText('What I have')).toBeTruthy();
     expect(screen.getByText(`1 of ${TOUR_STEPS.length}`)).toBeTruthy();
     for (let i = 1; i < TOUR_STEPS.length; i++) {
+      // Skip is on every stop before the last.
+      expect(screen.getByTestId('tour-skip')).toBeTruthy();
       await fireEvent.press(screen.getByTestId('tour-next'));
       expect(screen.getByText(TOUR_STEPS[i]!.title)).toBeTruthy();
     }
-    // Skip stays on screen to the end.
-    expect(screen.getByTestId('tour-skip')).toBeTruthy();
+    // On the last stop, "Start cooking" ends it, so Skip would say the same thing.
+    expect(screen.queryByTestId('tour-skip')).toBeNull();
     await fireEvent.press(screen.getByTestId('tour-done'));
     expect(useTour.getState()).toMatchObject({ seen: true, step: undefined });
     expect(screen.queryByTestId('tour')).toBeNull();

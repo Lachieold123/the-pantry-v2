@@ -18,22 +18,12 @@ import { buildIngredientIndex, type IngredientDef } from '../src/domain/ingredie
 import { parseIngredientLine } from '../src/domain/ingredients/parse.ts';
 import type { ParseIssue } from '../src/domain/ingredients/types.ts';
 import { deriveDiets } from '../src/domain/recipes/diets.ts';
-import type { CuisineId, Difficulty, MealType, Recipe, Season } from '../src/domain/recipes/types.ts';
+import type { CuisineId, MealType, Recipe, Season } from '../src/domain/recipes/types.ts';
 import { validateRecipe } from '../src/domain/recipes/validate.ts';
+import { applyFix, type Fix, type RawRecipe as OldRecipe } from './recipe-fix.mts';
 
-type OldRecipe = {
-  servings: number;
-  prepMinutes: number;
-  cookMinutes: number;
-  difficulty?: Difficulty;
-  ingredients: { section?: string; items: string[] }[];
-  steps: string[];
-  notes?: string[];
-};
 type Tags = { title: string; cuisine: CuisineId; mealTypes: MealType[]; onePot: boolean; seasons?: Season[]; summary: string };
 type Credit = { photographer?: string; source?: string };
-type Replacement = { from: string; to: string };
-type Fix = { steps?: Replacement[]; ingredients?: Replacement[]; addNotes?: string[] };
 type GlobalReplacement = { from: string; to: string; why: string };
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -63,21 +53,6 @@ function applyEverywhere(text: string): string {
 }
 const applied: string[] = [];
 
-/** Replace text that must appear exactly once in the list; anything else is a conversion error. */
-function applyReplacements(id: string, where: string, texts: string[], replacements: Replacement[] | undefined): string[] {
-  let out = texts;
-  for (const r of replacements ?? []) {
-    const hits = out.filter((t) => t.includes(r.from)).length;
-    if (hits !== 1) {
-      problems.push(`${id}: fix for ${where} matched ${hits} times: "${r.from}"`);
-      continue;
-    }
-    out = out.map((t) => (t.includes(r.from) ? t.replace(r.from, r.to) : t));
-    applied.push(`${id} (${where})`);
-  }
-  return out;
-}
-
 const defs = JSON.parse(readFileSync(join(root, 'src/data/ingredients/ingredients.json'), 'utf8')) as IngredientDef[];
 const index = buildIngredientIndex(defs);
 
@@ -88,25 +63,20 @@ const noImage: string[] = [];
 
 for (const id of Object.keys(RECIPES).sort()) {
   const source = RECIPES[id] as OldRecipe;
-  const old: OldRecipe = {
+  const unfixed: OldRecipe = {
     ...source,
     ingredients: source.ingredients.map((g) => ({ ...g, items: g.items.map(applyEverywhere) })),
     steps: source.steps.map(applyEverywhere),
     ...(source.notes ? { notes: source.notes.map(applyEverywhere) } : {}),
   };
+  const old = applyFix(id, unfixed, fixes[id], { problem: (m) => problems.push(m), applied: (w) => applied.push(w) });
   const tag = tags[id];
   if (!tag) {
     problems.push(`${id}: no tags in scripts/data/recipe-tags.json`);
     continue;
   }
-  const fix = fixes[id];
   const ingredientGroups = old.ingredients.map((group) => {
-    const items = applyReplacements(
-      id,
-      'ingredients',
-      group.items,
-      fix?.ingredients?.filter((r) => group.items.some((t) => t.includes(r.from))),
-    ).map((raw) => {
+    const items = group.items.map((raw) => {
       const parsed = parseIngredientLine(raw, index.match);
       const worth = parsed.issues.filter((i) => i !== 'serving-suggestion' && i !== 'no-quantity');
       if (worth.length) lineIssues.push({ id, raw, issues: worth });
@@ -144,8 +114,8 @@ for (const id of Object.keys(RECIPES).sort()) {
         }
       : {}),
     ingredientGroups,
-    steps: applyReplacements(id, 'steps', old.steps, fix?.steps).map((text) => ({ text })),
-    ...((old.notes?.length ?? 0) + (fix?.addNotes?.length ?? 0) ? { notes: [...(old.notes ?? []), ...(fix?.addNotes ?? [])] } : {}),
+    steps: old.steps.map((text) => ({ text })),
+    ...(old.notes?.length ? { notes: old.notes } : {}),
     source: 'house',
     provenance: 'ai-draft',
   };
@@ -221,7 +191,7 @@ const report = [
   `- Lines matched to no ingredient: **${byIssue('no-ingredient-match').length}**`,
   `- Lines naming two ingredients ("A or B"): **${byIssue('multiple-ingredients').length}** (the first-named is used for the list and diets)`,
   `- Recipes with no photo: **${noImage.length}**`,
-  `- Hand fixes applied from \`scripts/data/recipe-fixes.json\`: **${applied.length + Object.values(fixes).reduce((n, f) => n + (f.addNotes?.length ?? 0), 0)}**`,
+  `- Hand fixes applied from \`scripts/data/recipe-fixes.json\`: **${applied.length}**`,
   '',
   '## Validation problems',
   '',

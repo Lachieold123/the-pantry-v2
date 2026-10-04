@@ -49,15 +49,27 @@ export function SwitchRow({
   testID: string;
 }) {
   const styles = useStyles();
+  // The whole row is the switch, as in iOS Settings: only the 31pt switch was tappable
+  // before (health check #12). The switch inside is drawn for show and hidden from
+  // VoiceOver, so the row is read once: "High contrast, switch, off".
   return (
-    <View style={[styles.iconRow, styles.rowPad]}>
+    <Pressable
+      onPress={() => onChange(!value)}
+      accessibilityRole="switch"
+      accessibilityState={{ checked: value }}
+      accessibilityLabel={detail ? `${label}. ${detail}` : label}
+      testID={testID}
+      style={({ pressed }) => [styles.iconRow, styles.rowPad, pressed && { opacity: PRESSED.row }]}
+    >
       <Icon name={icon} size={SETTINGS.icon} />
       <View style={styles.text}>
         <Text variant="rowSmall">{label}</Text>
         {detail ? <Text variant="caption">{detail}</Text> : null}
       </View>
-      <Toggle value={value} onChange={onChange} label={label} testID={testID} />
-    </View>
+      <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
+        <Toggle value={value} onChange={onChange} label={label} testID={`${testID}-switch`} />
+      </View>
+    </Pressable>
   );
 }
 

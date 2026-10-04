@@ -1,0 +1,988 @@
+{
+ "/": {
+  "small": [
+   {
+    "id": "home-pantry-line",
+    "label": "From 10 things in your cupboard · Change",
+    "w": 350,
+    "h": 16
+   },
+   {
+    "id": "home-filter-meal",
+    "label": "Meal",
+    "w": 79,
+    "h": 40
+   },
+   {
+    "id": "home-filter-time",
+    "label": "Time",
+    "w": 81,
+    "h": 40
+   },
+   {
+    "id": "home-filter-cuisine",
+    "label": "Cuisine",
+    "w": 98,
+    "h": 40
+   },
+   {
+    "id": "home-filter-difficulty",
+    "label": "Difficulty",
+    "w": 107,
+    "h": 40
+   },
+   {
+    "id": "recipe-card-chicken-pad-see-ew-save",
+    "label": "Save Chicken Pad See Ew",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-honey-garlic-chicken-save",
+    "label": "Save Honey Garlic Chicken",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-chicken-and-rice-save",
+    "label": "Save Chicken and Rice",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-chicken-and-waffles-save",
+    "label": "Save Chicken and Waffles",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-chicken-fried-steak-save",
+    "label": "Save Chicken Fried Steak",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-shawarma-save",
+    "label": "Save Shawarma",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-chicken-teriyaki-save",
+    "label": "Save Chicken Teriyaki",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-pork-schnitzel-save",
+    "label": "Save Pork Schnitzel",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-chicken-schnitzel-save",
+    "label": "Save Chicken Schnitzel",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-korean-fried-chicken-save",
+    "label": "Save Korean Fried Chicken",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-chicken-katsu-save",
+    "label": "Save Chicken Katsu",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-schnitzel-save",
+    "label": "Save Schnitzel",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-chicken-wings-save",
+    "label": "Save Chicken Wings",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-pork-adobo-save",
+    "label": "Save Pork Adobo",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-caprese-salad-save",
+    "label": "Save Caprese Salad",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-blt-sandwich-save",
+    "label": "Save BLT Sandwich",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-beef-shawarma-plate-save",
+    "label": "Save Beef Shawarma Plate",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-hummus-plate-save",
+    "label": "Save Hummus Plate",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-margherita-pizza-save",
+    "label": "Save Margherita Pizza",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-bbq-ribs-save",
+    "label": "Save BBQ Ribs",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-bbq-ribs-plate-save",
+    "label": "Save BBQ Ribs Plate",
+    "w": 28,
+    "h": 28
+   }
+  ],
+  "unlabeled": []
+ },
+ "/browse": {
+  "small": [
+   {
+    "id": "browse-add-recipe",
+    "label": "Add a recipe",
+    "w": 38,
+    "h": 38
+   },
+   {
+    "id": "chip-pasta",
+    "label": "Pasta",
+    "w": 65,
+    "h": 40
+   },
+   {
+    "id": "chip-curry",
+    "label": "Curry",
+    "w": 65,
+    "h": 40
+   },
+   {
+    "id": "chip-quick",
+    "label": "30 min",
+    "w": 72,
+    "h": 40
+   },
+   {
+    "id": "chip-vegetarian",
+    "label": "Vegetarian",
+    "w": 97,
+    "h": 40
+   },
+   {
+    "id": "chip-vegan",
+    "label": "Vegan",
+    "w": 69,
+    "h": 40
+   },
+   {
+    "id": "chip-one-pot",
+    "label": "One-pot",
+    "w": 81,
+    "h": 40
+   },
+   {
+    "id": "chip-season",
+    "label": "In season",
+    "w": 91,
+    "h": 40
+   },
+   {
+    "id": "chip-soup",
+    "label": "Soup",
+    "w": 63,
+    "h": 40
+   },
+   {
+    "id": "chip-easy",
+    "label": "Easy",
+    "w": 61,
+    "h": 40
+   },
+   {
+    "id": "chip-breakfast",
+    "label": "Breakfast",
+    "w": 90,
+    "h": 40
+   },
+   {
+    "id": "recipe-card-chicken-adobo-save",
+    "label": "Save Chicken Adobo",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-omelette-save",
+    "label": "Save Omelette",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-bbq-pulled-chicken-save",
+    "label": "Save BBQ Pulled Chicken",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-chicken-pad-see-ew-save",
+    "label": "Save Chicken Pad See Ew",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-peking-duck-save",
+    "label": "Save Peking Duck",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-reuben-sandwich-save",
+    "label": "Save Reuben Sandwich",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-seafood-risotto-save",
+    "label": "Save Seafood Risotto",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-stuffed-peppers-save",
+    "label": "Save Stuffed Peppers",
+    "w": 28,
+    "h": 28
+   }
+  ],
+  "unlabeled": []
+ },
+ "/plan": {
+  "small": [
+   {
+    "id": "plan-share",
+    "label": "Send the week’s plan",
+    "w": 38,
+    "h": 38
+   }
+  ],
+  "unlabeled": []
+ },
+ "/list": {
+  "small": [
+   {
+    "id": "shopping-share",
+    "label": "Send the shopping list",
+    "w": 38,
+    "h": 38
+   },
+   {
+    "id": "segment-this",
+    "label": "This week · 5 – 11 Oct",
+    "w": 145,
+    "h": 29
+   },
+   {
+    "id": "segment-next",
+    "label": "Next week · 12 – 18 Oct",
+    "w": 153,
+    "h": 29
+   }
+  ],
+  "unlabeled": []
+ },
+ "/cupboard": {
+  "small": [
+   {
+    "id": "quick-add-brown-onion",
+    "label": "Add Brown onion to the cupboard",
+    "w": 118,
+    "h": 35
+   },
+   {
+    "id": "quick-add-lemon",
+    "label": "Add Lemon to the cupboard",
+    "w": 86,
+    "h": 35
+   },
+   {
+    "id": "quick-add-ginger",
+    "label": "Add Ginger to the cupboard",
+    "w": 85,
+    "h": 35
+   },
+   {
+    "id": "quick-add-spring-onion",
+    "label": "Add Spring onion to the cupboard",
+    "w": 119,
+    "h": 35
+   },
+   {
+    "id": "quick-add-parsley",
+    "label": "Add Parsley to the cupboard",
+    "w": 89,
+    "h": 35
+   },
+   {
+    "id": "quick-add-coriander",
+    "label": "Add Coriander to the cupboard",
+    "w": 103,
+    "h": 35
+   },
+   {
+    "id": "quick-add-carrot",
+    "label": "Add Carrot to the cupboard",
+    "w": 82,
+    "h": 35
+   },
+   {
+    "id": "quick-add-lime",
+    "label": "Add Lime to the cupboard",
+    "w": 74,
+    "h": 35
+   },
+   {
+    "id": "quick-add-parmesan",
+    "label": "Add Parmesan to the cupboard",
+    "w": 105,
+    "h": 35
+   },
+   {
+    "id": "quick-add-cucumber",
+    "label": "Add Cucumber to the cupboard",
+    "w": 106,
+    "h": 35
+   },
+   {
+    "id": "cupboard-item-chicken-thigh",
+    "label": "chicken thigh. Remove from cupboard",
+    "w": 136,
+    "h": 33
+   },
+   {
+    "id": "cupboard-item-spinach",
+    "label": "English spinach. Remove from cupboard",
+    "w": 148,
+    "h": 33
+   },
+   {
+    "id": "cupboard-item-garlic",
+    "label": "garlic. Remove from cupboard",
+    "w": 91,
+    "h": 33
+   },
+   {
+    "id": "cupboard-item-tomato",
+    "label": "tomato. Remove from cupboard",
+    "w": 100,
+    "h": 33
+   },
+   {
+    "id": "cupboard-item-butter",
+    "label": "butter. Remove from cupboard",
+    "w": 92,
+    "h": 33
+   },
+   {
+    "id": "cupboard-item-cheddar",
+    "label": "cheddar. Remove from cupboard",
+    "w": 107,
+    "h": 33
+   },
+   {
+    "id": "cupboard-item-egg",
+    "label": "egg. Remove from cupboard",
+    "w": 80,
+    "h": 33
+   },
+   {
+    "id": "cupboard-item-milk",
+    "label": "milk. Remove from cupboard",
+    "w": 80,
+    "h": 33
+   },
+   {
+    "id": "cupboard-item-soy-sauce",
+    "label": "soy sauce. Remove from cupboard",
+    "w": 118,
+    "h": 33
+   },
+   {
+    "id": "cupboard-item-white-rice",
+    "label": "white rice. Remove from cupboard",
+    "w": 115,
+    "h": 33
+   },
+   {
+    "id": "unlock-buttermilk-have",
+    "label": "I have Buttermilk",
+    "w": 92,
+    "h": 32
+   },
+   {
+    "id": "unlock-buttermilk-list",
+    "label": "Add Buttermilk to the shopping list",
+    "w": 103,
+    "h": 32
+   },
+   {
+    "id": "unlock-ginger-have",
+    "label": "I have Ginger",
+    "w": 92,
+    "h": 32
+   },
+   {
+    "id": "unlock-ginger-list",
+    "label": "Add Ginger to the shopping list",
+    "w": 103,
+    "h": 32
+   },
+   {
+    "id": "unlock-pork-belly-have",
+    "label": "I have Pork belly",
+    "w": 92,
+    "h": 32
+   },
+   {
+    "id": "unlock-pork-belly-list",
+    "label": "Add Pork belly to the shopping list",
+    "w": 103,
+    "h": 32
+   },
+   {
+    "id": "stock-tab-proteins",
+    "label": "Proteins",
+    "w": 56,
+    "h": 37
+   },
+   {
+    "id": "stock-tab-vegetables",
+    "label": "Vegetables",
+    "w": 73,
+    "h": 37
+   },
+   {
+    "id": "stock-tab-fruit",
+    "label": "Fruit",
+    "w": 31,
+    "h": 37
+   },
+   {
+    "id": "stock-tab-dairy",
+    "label": "Dairy & eggs",
+    "w": 86,
+    "h": 37
+   },
+   {
+    "id": "stock-tab-herbs",
+    "label": "Herbs & spices",
+    "w": 101,
+    "h": 37
+   },
+   {
+    "id": "stock-tab-sauces",
+    "label": "Sauces",
+    "w": 49,
+    "h": 37
+   },
+   {
+    "id": "stock-tab-pantry",
+    "label": "Pantry",
+    "w": 44,
+    "h": 37
+   },
+   {
+    "id": null,
+    "label": "Move ticked shopping here",
+    "w": 40,
+    "h": 20
+   }
+  ],
+  "unlabeled": []
+ },
+ "/recipe/carbonara": {
+  "small": [
+   {
+    "id": "recipe-mark-cooked",
+    "label": "Mark as cooked",
+    "w": 81,
+    "h": 36
+   },
+   {
+    "id": "recipe-add-missing",
+    "label": "Add 3 to your shopping list",
+    "w": 122,
+    "h": 32
+   },
+   {
+    "id": "recipe-have-missing",
+    "label": "I have all 3",
+    "w": 122,
+    "h": 32
+   },
+   {
+    "id": "ingredient-0-0",
+    "label": "200 g spaghetti or rigatoni",
+    "w": 342,
+    "h": 36
+   },
+   {
+    "id": "ingredient-0-1",
+    "label": "120 g guanciale, in 5mm strips (or pance",
+    "w": 342,
+    "h": 36
+   },
+   {
+    "id": "ingredient-0-2",
+    "label": "3 egg yolks + 1 whole egg, in your cupbo",
+    "w": 342,
+    "h": 36
+   },
+   {
+    "id": "ingredient-0-4",
+    "label": "Lots of freshly cracked black pepper",
+    "w": 342,
+    "h": 36
+   },
+   {
+    "id": "ingredient-0-5",
+    "label": "Salt for pasta water",
+    "w": 342,
+    "h": 36
+   }
+  ],
+  "unlabeled": []
+ },
+ "/recipe/carbonara/cook": {
+  "small": [
+   {
+    "id": "cook-close",
+    "label": "Leave Cook Mode",
+    "w": 38,
+    "h": 38
+   },
+   {
+    "id": "cook-ingredients",
+    "label": "Show ingredients with quantities",
+    "w": 36,
+    "h": 36
+   }
+  ],
+  "unlabeled": []
+ },
+ "/surprise": {
+  "small": [
+   {
+    "id": "spinner-back",
+    "label": "Back",
+    "w": 38,
+    "h": 38
+   },
+   {
+    "id": "spinner-info",
+    "label": "How Surprise me works",
+    "w": 38,
+    "h": 38
+   },
+   {
+    "id": "spinner-meal",
+    "label": "Dinner",
+    "w": 92,
+    "h": 40
+   },
+   {
+    "id": "spinner-time",
+    "label": "≤ 45 min",
+    "w": 103,
+    "h": 40
+   },
+   {
+    "id": "spinner-pantry",
+    "label": "Pantry",
+    "w": 91,
+    "h": 40
+   }
+  ],
+  "unlabeled": []
+ },
+ "/settings": {
+  "small": [
+   {
+    "id": "segment-system",
+    "label": "System",
+    "w": 104,
+    "h": 36
+   },
+   {
+    "id": "segment-light",
+    "label": "Light",
+    "w": 104,
+    "h": 36
+   },
+   {
+    "id": "segment-dark",
+    "label": "Dark",
+    "w": 104,
+    "h": 36
+   },
+   {
+    "id": null,
+    "label": "High contrast",
+    "w": 40,
+    "h": 20
+   },
+   {
+    "id": "segment-metric",
+    "label": "Metric",
+    "w": 156,
+    "h": 36
+   },
+   {
+    "id": "segment-imperial",
+    "label": "Imperial",
+    "w": 156,
+    "h": 36
+   },
+   {
+    "id": null,
+    "label": "Sunday planning reminder",
+    "w": 40,
+    "h": 20
+   }
+  ],
+  "unlabeled": []
+ },
+ "/post": {
+  "small": [
+   {
+    "id": "post-difficulty-easy",
+    "label": "Easy",
+    "w": 65,
+    "h": 40
+   },
+   {
+    "id": "post-difficulty-medium",
+    "label": "Medium",
+    "w": 84,
+    "h": 40
+   },
+   {
+    "id": "post-difficulty-hard",
+    "label": "Hard",
+    "w": 64,
+    "h": 40
+   }
+  ],
+  "unlabeled": []
+ },
+ "/saved": {
+  "small": [
+   {
+    "id": "back",
+    "label": "Back",
+    "w": 38,
+    "h": 38
+   },
+   {
+    "id": "recipe-card-carbonara-save",
+    "label": "Remove Carbonara from saved",
+    "w": 28,
+    "h": 28
+   }
+  ],
+  "unlabeled": []
+ },
+ "/collections": {
+  "small": [
+   {
+    "id": "back",
+    "label": "Back",
+    "w": 38,
+    "h": 38
+   }
+  ],
+  "unlabeled": []
+ },
+ "/filters": {
+  "small": [],
+  "unlabeled": []
+ },
+ "/recipe/carbonara/plan": {
+  "small": [
+   {
+    "id": "sheet-close",
+    "label": "Close",
+    "w": 38,
+    "h": 38
+   },
+   {
+    "id": "plan-day-this-0",
+    "label": "Today",
+    "w": 72,
+    "h": 40
+   },
+   {
+    "id": "plan-day-this-1",
+    "label": "Tomorrow",
+    "w": 97,
+    "h": 40
+   },
+   {
+    "id": "plan-day-this-2",
+    "label": "Wed 7",
+    "w": 73,
+    "h": 40
+   },
+   {
+    "id": "plan-day-this-3",
+    "label": "Thu 8",
+    "w": 69,
+    "h": 40
+   },
+   {
+    "id": "plan-day-this-4",
+    "label": "Fri 9",
+    "w": 62,
+    "h": 40
+   },
+   {
+    "id": "plan-day-this-5",
+    "label": "Sat 10",
+    "w": 73,
+    "h": 40
+   },
+   {
+    "id": "plan-day-this-6",
+    "label": "Sun 11",
+    "w": 77,
+    "h": 40
+   },
+   {
+    "id": "plan-day-next-0",
+    "label": "Mon 12",
+    "w": 79,
+    "h": 40
+   },
+   {
+    "id": "plan-day-next-1",
+    "label": "Tue 13",
+    "w": 75,
+    "h": 40
+   },
+   {
+    "id": "plan-day-next-2",
+    "label": "Wed 14",
+    "w": 80,
+    "h": 40
+   },
+   {
+    "id": "plan-day-next-3",
+    "label": "Thu 15",
+    "w": 77,
+    "h": 40
+   },
+   {
+    "id": "plan-day-next-4",
+    "label": "Fri 16",
+    "w": 69,
+    "h": 40
+   },
+   {
+    "id": "plan-day-next-5",
+    "label": "Sat 17",
+    "w": 73,
+    "h": 40
+   },
+   {
+    "id": "plan-day-next-6",
+    "label": "Sun 18",
+    "w": 77,
+    "h": 40
+   }
+  ],
+  "unlabeled": []
+ },
+ "/menu": {
+  "small": [
+   {
+    "id": "home-pantry-line",
+    "label": "From 10 things in your cupboard · Change",
+    "w": 350,
+    "h": 16
+   },
+   {
+    "id": "home-filter-meal",
+    "label": "Meal",
+    "w": 79,
+    "h": 40
+   },
+   {
+    "id": "home-filter-time",
+    "label": "Time",
+    "w": 81,
+    "h": 40
+   },
+   {
+    "id": "home-filter-cuisine",
+    "label": "Cuisine",
+    "w": 98,
+    "h": 40
+   },
+   {
+    "id": "home-filter-difficulty",
+    "label": "Difficulty",
+    "w": 107,
+    "h": 40
+   },
+   {
+    "id": "recipe-card-chicken-pad-see-ew-save",
+    "label": "Save Chicken Pad See Ew",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-honey-garlic-chicken-save",
+    "label": "Save Honey Garlic Chicken",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-chicken-and-rice-save",
+    "label": "Save Chicken and Rice",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-chicken-and-waffles-save",
+    "label": "Save Chicken and Waffles",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-chicken-fried-steak-save",
+    "label": "Save Chicken Fried Steak",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-shawarma-save",
+    "label": "Save Shawarma",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-chicken-teriyaki-save",
+    "label": "Save Chicken Teriyaki",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-pork-schnitzel-save",
+    "label": "Save Pork Schnitzel",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-chicken-schnitzel-save",
+    "label": "Save Chicken Schnitzel",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-korean-fried-chicken-save",
+    "label": "Save Korean Fried Chicken",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-chicken-katsu-save",
+    "label": "Save Chicken Katsu",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-schnitzel-save",
+    "label": "Save Schnitzel",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-chicken-wings-save",
+    "label": "Save Chicken Wings",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-pork-adobo-save",
+    "label": "Save Pork Adobo",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-caprese-salad-save",
+    "label": "Save Caprese Salad",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-blt-sandwich-save",
+    "label": "Save BLT Sandwich",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-beef-shawarma-plate-save",
+    "label": "Save Beef Shawarma Plate",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-hummus-plate-save",
+    "label": "Save Hummus Plate",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-margherita-pizza-save",
+    "label": "Save Margherita Pizza",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-bbq-ribs-save",
+    "label": "Save BBQ Ribs",
+    "w": 28,
+    "h": 28
+   },
+   {
+    "id": "recipe-card-bbq-ribs-plate-save",
+    "label": "Save BBQ Ribs Plate",
+    "w": 28,
+    "h": 28
+   }
+  ],
+  "unlabeled": []
+ }
+}

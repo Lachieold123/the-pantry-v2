@@ -26,7 +26,8 @@ type CardProps = {
 
 export function LibraryCard({ recipe, image, onPress, onUnsave }: CardProps) {
   const styles = useStyles();
-  const c = libraryColours(useTheme().name);
+  const themeName = useTheme().name;
+  const c = libraryColours(themeName);
   const cuisine = CUISINE_LABELS[recipe.cuisine];
   const time = formatMinutes(totalMinutes(recipe));
   const difficulty = DIFFICULTY_LABELS[recipe.difficulty];
@@ -61,7 +62,7 @@ export function LibraryCard({ recipe, image, onPress, onUnsave }: CardProps) {
         ) : null}
       </View>
       <View style={styles.body}>
-        <Text variant="eyebrow" tone={cuisineEyebrow(recipe.cuisine)} numberOfLines={1}>
+        <Text variant="eyebrow" tone={cuisineEyebrow(recipe.cuisine, themeName)} numberOfLines={1}>
           {cuisine}
         </Text>
         <Text variant="cardTitle" tone={c.title} numberOfLines={2} style={styles.title}>

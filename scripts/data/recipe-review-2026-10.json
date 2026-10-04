@@ -1,0 +1,2282 @@
+{
+  "arancini": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Times left out the risotto cook, batch frying and the overnight chill; stock either/or; rice cooling made explicit.",
+    "lachlan": null
+  },
+  "arepas": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Listed oil was never used; two batches plus oven time exceed 20 minutes.",
+    "lachlan": null
+  },
+  "avocado-toast": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Optional soft-boiled eggs and smoked salmon need a vulnerable-groups note.",
+    "lachlan": null
+  },
+  "baked-cod": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 3,
+    "confidence": 5,
+    "summary": "Sound recipe; only the either/or serving lines reworded.",
+    "lachlan": null
+  },
+  "baked-salmon": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Sound recipe; only the either/or serving line reworded.",
+    "lachlan": null
+  },
+  "baked-ziti": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "The 10-minute rest wasn't counted in the total time.",
+    "lachlan": null
+  },
+  "baked-zucchini-boats": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 3,
+    "confidence": 4,
+    "summary": "Either/or mince line reworded; otherwise works.",
+    "lachlan": null
+  },
+  "bangers-and-mash": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Onions (25 min) plus sausages and gravy run about 45 minutes, not 35; sausages need a 75°C check; either/or lines.",
+    "lachlan": null
+  },
+  "banh-mi": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "The 30-minute pickle and 20-minute marinade weren't reflected in total time; either/or chilli line.",
+    "lachlan": null
+  },
+  "bbq-chicken-pizza": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Two pizzas on one stone bake one after the other, so 12 minutes is too short.",
+    "lachlan": null
+  },
+  "bbq-pulled-chicken": {
+    "verdict": "ready",
+    "weeknight": 2,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Works as written; times cover the 45–60 minute braise.",
+    "lachlan": null
+  },
+  "bbq-ribs": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Cook time missed the 20-minute glaze bake (150+60+20); 30-minute rub rest and 10-minute rest not counted.",
+    "lachlan": null
+  },
+  "bbq-ribs-plate": {
+    "verdict": "needs-lachlan",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Same timing gaps as BBQ Ribs; step 4 said 'sugar' where the list has brown sugar; plate sides have no recipes.",
+    "lachlan": "The plate lists mac and cheese, cornbread and coleslaw with no method. Link the app's mac-and-cheese recipe, treat the sides as bought, or drop them? This recipe also duplicates BBQ Ribs almost word for word; worth keeping both?"
+  },
+  "beef-bourguignon": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Browning, braise and reduction add up to about 195 minutes; either/or wine and onion lines.",
+    "lachlan": null
+  },
+  "beef-brisket": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Prep left out the 1-hour rub rest and the 1-hour rest after cooking; cook time didn't cover the full 6 + 2 hours.",
+    "lachlan": null
+  },
+  "beef-bulgogi-bowl": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "30-minute marinade not counted; blanched veg and fried eggs had no step; gochujang sauce had no quantities.",
+    "lachlan": null
+  },
+  "beef-burrito": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Cooking the beef plus toasting four burritos takes about 30 minutes.",
+    "lachlan": null
+  },
+  "beef-curry": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Browning and the 2-hour braise run about 160 minutes; 10-minute rest not counted; either/or lines, serving line contradicted step 9.",
+    "lachlan": null
+  },
+  "beef-enchiladas": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "The 15-minute chilli soak wasn't counted; either/or cheese lines.",
+    "lachlan": null
+  },
+  "beef-korma": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "1-hour marinade not counted and cooking (25 + 90 + 15 + more) runs about 140 minutes; either/or mace line.",
+    "lachlan": null
+  },
+  "beef-lasagna": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Ragu (about 80 min) plus 40-minute bake exceeds 90; 20-minute rest not counted; 'Repeat 4 times' was ambiguous with 12 sheets.",
+    "lachlan": null
+  },
+  "beef-noodle-soup": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Works; four either/or lines reworded.",
+    "lachlan": null
+  },
+  "beef-pho": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "1 tbsp salt on top of salted stock and 3 tbsp fish sauce will be too salty; either/or sugar line.",
+    "lachlan": null
+  },
+  "beef-rendang": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "15-minute rest not counted in total time.",
+    "lachlan": null
+  },
+  "beef-roast-dinner": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 5,
+    "confidence": 3,
+    "summary": "Roast potatoes were listed but no step made them; duck fat hidden in a note; times didn't cover room-temp rest, parboil and resting.",
+    "lachlan": null
+  },
+  "beef-shawarma-plate": {
+    "verdict": "needs-lachlan",
+    "weeknight": 2,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "The 2-hour marinade wasn't counted; toum was listed but never used; either/or lines; toum, tahini sauce and tabbouleh have no recipe.",
+    "lachlan": "Toum, tahini sauce and tabbouleh have no method (same issue as chicken-shawarma-plate). Treat them as bought, or add short recipes?"
+  },
+  "beef-stroganoff": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Works; either/or beef and serving lines reworded.",
+    "lachlan": null
+  },
+  "beef-tacos": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Works; either/or serving lines reworded.",
+    "lachlan": null
+  },
+  "beef-tikka": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Overnight marinade not in prep and no start-the-day-before note; either/or lines.",
+    "lachlan": null
+  },
+  "beef-wellington": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 5,
+    "confidence": 3,
+    "summary": "Times ignored cooling the duxelles, the 30-minute chill and the 10-minute rest; either/or sherry line.",
+    "lachlan": null
+  },
+  "bibimbap": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Garlic for the veg was never used; courgette should be zucchini; runny fried egg needs a note; either/or beef line.",
+    "lachlan": null
+  },
+  "biryani": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 5,
+    "confidence": 3,
+    "summary": "Overnight marinade not counted; no oil or step for frying the onions; bone-in chicken under the rice needs a 75°C check.",
+    "lachlan": null
+  },
+  "black-bean-chili": {
+    "verdict": "ready",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Works as written.",
+    "lachlan": null
+  },
+  "blt-sandwich": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Works; either/or bread and lettuce lines reworded.",
+    "lachlan": null
+  },
+  "bobotie": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 3,
+    "confidence": 4,
+    "summary": "Works; either/or mince and leaf lines reworded.",
+    "lachlan": null
+  },
+  "bratwurst": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 3,
+    "confidence": 4,
+    "summary": "Onions, braise, reduction and browning run about 40 minutes; sausages need a 75°C check; either/or roll line.",
+    "lachlan": null
+  },
+  "breakfast-burrito": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Potatoes, bacon, eggs and toasting four burritos take about 35 minutes; soft scrambled eggs need a note; either/or salsa line.",
+    "lachlan": null
+  },
+  "buffalo-wings": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "The 1-hour uncovered fridge dry wasn't counted in total time.",
+    "lachlan": null
+  },
+  "bulgogi": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "The 30-minute freeze and 30-minute marinade weren't counted; either/or beef line.",
+    "lachlan": null
+  },
+  "bunny-chow": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Browning, the 60 + 25 minute simmer and the base add up to about 120 minutes; either/or stock line.",
+    "lachlan": null
+  },
+  "burgers": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Doneness was 71°C; brief standard for mince is 75°C; either/or cheese line.",
+    "lachlan": null
+  },
+  "butter-chicken": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Finishing butter and searing oil weren't listed; 30-minute marinade not counted; chicken needs a 75°C check.",
+    "lachlan": null
+  },
+  "butternut-squash-risotto": {
+    "verdict": "needs-lachlan",
+    "weeknight": 3,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Crispy sage leaves were listed with no leaves, fat or method.",
+    "lachlan": "Tagged vegetarian, but parmesan is made with animal rennet. Swap to a vegetarian hard cheese in the list, or drop the vegetarian tag?"
+  },
+  "caesar-salad": {
+    "verdict": "ready",
+    "weeknight": 4,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Raw-yolk warning already present; works as written.",
+    "lachlan": null
+  },
+  "calzone": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Egg wash was under Sauce (so 'whisk the sauce ingredients' took in the egg); 90-minute rise not counted; four calzones need two bakes; either/or salami line.",
+    "lachlan": null
+  },
+  "caprese-salad": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "The 30 minutes for the mozzarella to come to room temperature wasn't counted.",
+    "lachlan": null
+  },
+  "carbonara": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Egg is only set by residual heat, so needs a vulnerable-groups note; either/or pasta line.",
+    "lachlan": null
+  },
+  "carbonnade": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Browning, 25-minute onions and the 2.5-hour bake run about 200 minutes; either/or serving line.",
+    "lachlan": null
+  },
+  "ceviche": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 3,
+    "confidence": 4,
+    "summary": "Either/or chilli and cancha lines rewritten; pregnancy note already present.",
+    "lachlan": null
+  },
+  "chana-masala": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Sound recipe; either/or ghee and serving lines rewritten.",
+    "lachlan": null
+  },
+  "chicken-adobo": {
+    "verdict": "ready",
+    "weeknight": 3,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Works as written; long braise cooks the chicken through.",
+    "lachlan": null
+  },
+  "chicken-alfredo": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Chicken said 'just cooked through'; now states 75°C.",
+    "lachlan": null
+  },
+  "chicken-alfredo-bake": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Olive oil was listed but never used; cook time didn't cover boiling pasta plus bake and rest.",
+    "lachlan": null
+  },
+  "chicken-and-rice": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Oven was never preheated, no doneness check for the chicken, and the 10-minute rest wasn't in the cook time.",
+    "lachlan": null
+  },
+  "chicken-and-waffles": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 3,
+    "summary": "Cook time ignored two frying batches and the waffles; the 4-hour marinade wasn't counted; the two salts were ambiguous.",
+    "lachlan": null
+  },
+  "chicken-biryani": {
+    "verdict": "needs-lachlan",
+    "weeknight": 1,
+    "appeal": 5,
+    "confidence": 3,
+    "summary": "Birista onions needed frying oil and a step that weren't there; marinade wasn't in prep; bone-in chicken only got 8 minutes before the dum.",
+    "lachlan": "Bone-in thighs and drumsticks under a rice layer on the lowest heat: does 15 minutes' pre-cooking plus 25 minutes' dum get them to 75°C at the bone in your pot? Worth a probe test."
+  },
+  "chicken-burrito-bowl": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Prep didn't cover the 15-minute marinade; meal-prep note needed rice handling.",
+    "lachlan": null
+  },
+  "chicken-caesar-pasta": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Chicken had no doneness cue; either/or pasta line.",
+    "lachlan": null
+  },
+  "chicken-caesar-wrap": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "'Just done' chicken now states 75°C.",
+    "lachlan": null
+  },
+  "chicken-cordon-bleu": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Already uses 75°C; either/or cheese line rewritten.",
+    "lachlan": null
+  },
+  "chicken-enchilada-casserole": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Sauce split didn't add up (half used in the first layer left none for the second); cook time missed the onion and rest.",
+    "lachlan": null
+  },
+  "chicken-fajita-bowl": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Chicken only said 'charred'; prep missed the 15-minute marinade; meal-prep rice note.",
+    "lachlan": null
+  },
+  "chicken-fried-rice": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Uses day-old rice with no handling note; 'just done' chicken.",
+    "lachlan": null
+  },
+  "chicken-fried-steak": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 3,
+    "confidence": 4,
+    "summary": "Cook time didn't cover frying four steaks in batches plus the gravy; either/or side line.",
+    "lachlan": null
+  },
+  "chicken-gyoza": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "30 gyoza won't fit one pan but the method used all the water at once; no doneness for chicken mince; dusting cornflour missing; pleating 30 takes longer than 30 minutes.",
+    "lachlan": null
+  },
+  "chicken-gyro": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "1-hour marinade not in prep; chicken had no doneness cue.",
+    "lachlan": null
+  },
+  "chicken-gyudon": {
+    "verdict": "ready",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Raw-egg note already added; works as written.",
+    "lachlan": null
+  },
+  "chicken-katsu": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "1.5cm cutlets with only a colour cue; now states 75°C.",
+    "lachlan": null
+  },
+  "chicken-kiev": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "75°C already fixed; prep missed 30 minutes' freezing plus 30 minutes' chilling.",
+    "lachlan": null
+  },
+  "chicken-marsala": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Chicken had only a colour cue; either/or mushroom and serving lines.",
+    "lachlan": null
+  },
+  "chicken-meatballs": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Chicken mince needed 75°C; either/or serving line.",
+    "lachlan": null
+  },
+  "chicken-milanese": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Added a cooked-through cue to the cutlets.",
+    "lachlan": null
+  },
+  "chicken-noodle-soup": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Carrot and celery lines double-counted ('from above'), so the shopping list would buy 5 of each; cook time missed bringing to a simmer and the soup stage.",
+    "lachlan": null
+  },
+  "chicken-pad-see-ew": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Chicken had no doneness cue; 1 tbsp of the oil was never used; either/or gai lan line.",
+    "lachlan": null
+  },
+  "chicken-parmesan": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Oven was heated only after frying; chicken had no 75°C cue.",
+    "lachlan": null
+  },
+  "chicken-pesto-pasta": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Butterflied breast had only a colour cue; now 75°C.",
+    "lachlan": null
+  },
+  "chicken-piccata": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Chicken had only a colour cue; either/or serving line.",
+    "lachlan": null
+  },
+  "chicken-pot-pie": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Cook time (50) ignored the 10-minute cool, 30-minute bake and rest (about 75); oven never preheated.",
+    "lachlan": null
+  },
+  "chicken-quesadilla": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Eight quesadillas one at a time at 6 minutes each can't fit a 20-minute cook; chicken had no doneness cue.",
+    "lachlan": null
+  },
+  "chicken-ramen-bowl": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "No step cooked the eggs or blanched the greens; chicken thighs had no 75°C cue; 7-minute eggs need the vulnerable-groups note.",
+    "lachlan": null
+  },
+  "chicken-satay": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "2-hour marinade not in prep; basting with raw marinade needed limiting to early in the cook; no doneness cue.",
+    "lachlan": null
+  },
+  "chicken-satay-bowl": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "1-hour marinade not in prep; chicken had no doneness cue.",
+    "lachlan": null
+  },
+  "chicken-schnitzel": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Works; either/or crumb line rewritten.",
+    "lachlan": null
+  },
+  "chicken-shawarma-bowl": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "2-hour marinade not in prep; no 75°C cue; meal-prep rice note; either/or pickles line.",
+    "lachlan": null
+  },
+  "chicken-shawarma-plate": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Marinate step didn't say with what; 2 hours not in prep; 'stuff with pita pieces' made no sense; tahini sauce had no recipe; cook time missed the rice rest.",
+    "lachlan": null
+  },
+  "chicken-souvlaki": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "1-hour marinade not in prep; olives listed but never used; no doneness cue.",
+    "lachlan": null
+  },
+  "chicken-stir-fry": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Marinate step didn't say what goes on the chicken; no doneness cue.",
+    "lachlan": null
+  },
+  "chicken-tagine": {
+    "verdict": "ready",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Works as written.",
+    "lachlan": "Near-duplicate of the 'tagine' recipe (same chicken, preserved lemon and olives, same method). Keep both?"
+  },
+  "chicken-teriyaki": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "'Almost cooked through' then glazed with no end point; now states 75°C.",
+    "lachlan": null
+  },
+  "chicken-tikka": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "4-hour minimum marinade not in prep (counted the minimum, noted overnight); no 75°C cue.",
+    "lachlan": null
+  },
+  "chicken-wings": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "1-hour minimum fridge drying not in prep; either/or wine line.",
+    "lachlan": null
+  },
+  "chicken-wrap": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Prep missed the 15-minute marinade; chicken had no doneness cue.",
+    "lachlan": null
+  },
+  "chicken-yakitori": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Final brush reused tare that had touched raw chicken; now a portion is set aside first; no doneness cue.",
+    "lachlan": null
+  },
+  "chili-cheese-fries": {
+    "verdict": "ready",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Works as written; mince is browned and simmered.",
+    "lachlan": null
+  },
+  "chili-con-carne": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Cook time missed browning in batches and the 15-minute rest (about 165); either/or bean and serving lines.",
+    "lachlan": null
+  },
+  "chili-garlic-noodles": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Greens listed as blanched but no step blanches them; either/or greens line.",
+    "lachlan": null
+  },
+  "chow-mein": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Chicken was cooked only 'until just done'; now cooked through to 75°C.",
+    "lachlan": null
+  },
+  "chowder": {
+    "verdict": "ready",
+    "weeknight": 3,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Works as written; timings and ingredients line up.",
+    "lachlan": null
+  },
+  "clam-chowder": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 3,
+    "confidence": 4,
+    "summary": "Added the safety step to discard clams that don't open; serve line now names crusty bread first.",
+    "lachlan": null
+  },
+  "club-sandwich": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Either/or lettuce line rewritten.",
+    "lachlan": "Diet tag says no-dairy but the recipe lists Swiss cheese (optional). Worth checking the tag."
+  },
+  "cobb-salad": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Poached chicken had no doneness check; cook time didn't cover poaching (simmer plus 15-minute rest).",
+    "lachlan": null
+  },
+  "coq-au-vin": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Overnight marinade not counted; cook time short of the browning plus 90-minute bake; two either/or lines.",
+    "lachlan": null
+  },
+  "cottage-pie": {
+    "verdict": "ready",
+    "weeknight": 2,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Works as written; timings add up.",
+    "lachlan": null
+  },
+  "couscous": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 3,
+    "confidence": 5,
+    "summary": "Either/or nut line rewritten.",
+    "lachlan": null
+  },
+  "crispy-duck-pancakes": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Overnight dry-brine not counted in prep; step rinsed raw duck in the sink.",
+    "lachlan": null
+  },
+  "croque-monsieur": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Either/or bread line rewritten.",
+    "lachlan": null
+  },
+  "dhal": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Either/or serving line rewritten; recipe otherwise sound.",
+    "lachlan": null
+  },
+  "dim-sum": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 4,
+    "confidence": 3,
+    "summary": "Pork mince dumplings had no doneness check; either/or wrapper line rewritten.",
+    "lachlan": null
+  },
+  "eggplant-parmesan": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Prep time didn't cover the 30-minute salting plus crumbing.",
+    "lachlan": null
+  },
+  "empanadas": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Prep was 45 min but the dough rests 1 hour (filling cooks and cools during the rest).",
+    "lachlan": null
+  },
+  "enchiladas": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Three either/or cheese lines rewritten.",
+    "lachlan": null
+  },
+  "fajitas": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "30-minute marinade not counted; either/or lines; chicken option had no safe cooking time.",
+    "lachlan": null
+  },
+  "falafel-salad": {
+    "verdict": "ready",
+    "weeknight": 5,
+    "appeal": 3,
+    "confidence": 5,
+    "summary": "Simple assembly with store-bought or homemade falafel; works as written.",
+    "lachlan": null
+  },
+  "falafel-wrap": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Overnight chickpea soak and 20-minute rest not counted in prep.",
+    "lachlan": null
+  },
+  "feijoada": {
+    "verdict": "needs-lachlan",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Overnight bean soak not counted; either/or lines rewritten.",
+    "lachlan": "Farofa is listed to serve but has no method. Fine as a bought item, or do you want a short sub-recipe?"
+  },
+  "fish-and-chips": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Prep didn't cover the 20-minute chip soak plus cutting and drying.",
+    "lachlan": null
+  },
+  "fish-curry": {
+    "verdict": "ready",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Works as written; times add up.",
+    "lachlan": null
+  },
+  "fish-tacos": {
+    "verdict": "ready",
+    "weeknight": 5,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Works as written.",
+    "lachlan": null
+  },
+  "four-cheese-pizza": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 3,
+    "confidence": 4,
+    "summary": "Either/or cheese line rewritten.",
+    "lachlan": null
+  },
+  "french-onion-soup": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Either/or brandy line rewritten.",
+    "lachlan": null
+  },
+  "fried-chicken": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Overnight buttermilk marinade not counted; frying 8 pieces in batches of 3–4 takes ~30 min plus rest.",
+    "lachlan": null
+  },
+  "gazpacho": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 3,
+    "confidence": 5,
+    "summary": "Total time ignored the 2-hour chill.",
+    "lachlan": null
+  },
+  "gnocchi": {
+    "verdict": "needs-lachlan",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 3,
+    "summary": "Cook time was 30 min but the potatoes bake for 50, then boiling and sauce.",
+    "lachlan": "Worth a kitchen test: 200g flour to 1kg potatoes with one yolk can be soft depending on the potatoes. Check the dough holds before committing all of it."
+  },
+  "gnocchi-bake": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Cook time short: steps add to about 45 minutes.",
+    "lachlan": null
+  },
+  "goulash": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Two either/or lines rewritten.",
+    "lachlan": null
+  },
+  "greek-chicken-bowl": {
+    "verdict": "needs-lachlan",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "30-minute marinade not counted; chicken only 'just cooked'; 2 cups cooked rice is too little for 4 bowls.",
+    "lachlan": "The lemon rice has no method beyond the ingredient line, and the bowl's cook time doesn't include cooking rice. Add a rice step, or treat it as leftover rice?"
+  },
+  "greek-lamb": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Cook time didn't include the 15-minute rest (210 + 30 + 15).",
+    "lachlan": null
+  },
+  "greek-salad": {
+    "verdict": "ready",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Works as written.",
+    "lachlan": null
+  },
+  "green-papaya-salad": {
+    "verdict": "ready",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Works as written.",
+    "lachlan": null
+  },
+  "grilled-cheese": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Either/or bread line rewritten.",
+    "lachlan": null
+  },
+  "grilled-chicken-salad": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 3,
+    "confidence": 5,
+    "summary": "20-minute marinade not counted in prep.",
+    "lachlan": null
+  },
+  "grilled-halloumi": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Either/or serving line rewritten.",
+    "lachlan": null
+  },
+  "grilled-salmon": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Either/or serving line rewritten.",
+    "lachlan": null
+  },
+  "grilled-steak": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Steak line was a three-way either/or (rib eye and scotch fillet are the same cut in Australia); 30-minute tempering and 8-minute rest not counted.",
+    "lachlan": null
+  },
+  "gumbo": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Cook time short: roux 30–45 min plus 60 + 15 min simmer and veg.",
+    "lachlan": null
+  },
+  "gyros": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "2-hour marinade not counted; no doneness cue for pork or the chicken option.",
+    "lachlan": null
+  },
+  "gyudon": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Either/or beef line rewritten; egg safety note already present.",
+    "lachlan": null
+  },
+  "halloumi-wrap": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Either/or bread line rewritten.",
+    "lachlan": null
+  },
+  "hawaiian-pizza": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 3,
+    "confidence": 5,
+    "summary": "Either/or ham line rewritten.",
+    "lachlan": null
+  },
+  "honey-garlic-chicken": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "No doneness check on the chicken.",
+    "lachlan": null
+  },
+  "hot-dogs": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 3,
+    "confidence": 5,
+    "summary": "Cook time 10 min but the onions take 20; ketchup and relish listed but never used.",
+    "lachlan": null
+  },
+  "huevos-rancheros": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Tortilla step heated oil then said 'dry pan'; runny-egg note missing; either/or cheese line.",
+    "lachlan": null
+  },
+  "hummus-plate": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Overnight soak not counted; bicarb named two ways.",
+    "lachlan": null
+  },
+  "italian-meatballs": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "No doneness check on the mince; cook time short; pasta had no quantity.",
+    "lachlan": null
+  },
+  "jambalaya": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Cook time short of the steps (about 55 min plus a 10-minute rest); added a rice cooling note.",
+    "lachlan": null
+  },
+  "jollof-rice": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Cook time short: stewing, 30-minute steam and 10-minute rest add to about 70 min; added a rice cooling note.",
+    "lachlan": null
+  },
+  "kare-kare": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 3,
+    "confidence": 4,
+    "summary": "Banana heart was listed but never used, and the bagoong step used an unlisted quantity, garlic and sugar.",
+    "lachlan": null
+  },
+  "katsu-curry": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Fried chicken had no doneness check; added 75°C.",
+    "lachlan": null
+  },
+  "kebab": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Marinade time (2 hours minimum) not counted; step 2 threaded veg with the lamb, contradicting the separate-skewer method; either/or lamb cut.",
+    "lachlan": "Title is just 'Kebab' and the method is lamb skewers (shish); Australians may expect a doner-style wrap. Worth a title check."
+  },
+  "korean-bbq-beef": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Step 1 never said to mix the marinade; the 30-minute marinade wasn't in prep time.",
+    "lachlan": null
+  },
+  "korean-fried-chicken": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Two batches double-fried takes about 35 min, not 25; added a 75°C check.",
+    "lachlan": null
+  },
+  "kung-pao-chicken": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Prep didn't cover the 15-minute marinade plus chopping.",
+    "lachlan": null
+  },
+  "laksa": {
+    "verdict": "ready",
+    "weeknight": 4,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Works as written.",
+    "lachlan": null
+  },
+  "lamb-chops": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "The 30-minute room-temperature rest wasn't in prep time; either/or cut.",
+    "lachlan": null
+  },
+  "lamb-kofta": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Lamb mince served 'just pink' inside; minced meat needs 75°C. Build step used lettuce that isn't listed.",
+    "lachlan": null
+  },
+  "lamb-tagine": {
+    "verdict": "ready",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Works as written; times add up.",
+    "lachlan": null
+  },
+  "lasagna": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Cook time 90 min but ragu (80), bake (40) and the 20-minute rest come to about 150.",
+    "lachlan": null
+  },
+  "lemon-herb-chicken": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "20-minute marinade not in prep; added 75°C check; either/or lines.",
+    "lachlan": null
+  },
+  "lemon-pepper-salmon": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Only an either/or serving line to tidy.",
+    "lachlan": null
+  },
+  "lentil-soup": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 3,
+    "confidence": 5,
+    "summary": "Either/or stock named chicken alongside veg; reordered so the recipe counts as vegetarian. Other either/or lines tidied; cook time short.",
+    "lachlan": null
+  },
+  "lo-mein": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Either/or protein line; cook time didn't include cooking the noodles.",
+    "lachlan": null
+  },
+  "loaded-nachos": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Beef (15 min) plus a 10-minute bake is 25 min, not 20.",
+    "lachlan": null
+  },
+  "lobster-roll": {
+    "verdict": "needs-lachlan",
+    "weeknight": 2,
+    "appeal": 4,
+    "confidence": 3,
+    "summary": "Welfare fix already applied, but the 30–60 minute freezer chill and boiling the water weren't timed; breaking down live lobster isn't 'easy'.",
+    "lachlan": "Written for American clawed lobster. Australian rock lobster has no claws and is expensive; consider leading with the cooked-meat option or a Moreton Bay bug/prawn version."
+  },
+  "mac-and-cheese": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Pasta, sauce, a 22-minute bake and a rest come to about 40 min, not 30; either/or pasta.",
+    "lachlan": "Tagged vegetarian but uses Gruyère and parmesan, which are usually made with animal rennet. Same issue in other 'vegetarian' recipes with parmesan (margherita flatbread, mushroom risotto, pesto pasta, minestrone). Decide on a catalogue-wide rule."
+  },
+  "mango-curry": {
+    "verdict": "ready",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Works as written.",
+    "lachlan": null
+  },
+  "mapo-tofu": {
+    "verdict": "ready",
+    "weeknight": 4,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Works as written.",
+    "lachlan": null
+  },
+  "margarita-flatbread": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 3,
+    "confidence": 5,
+    "summary": "Either/or base line tidied.",
+    "lachlan": "Id is 'margarita-flatbread' but the title is Margherita; the id spelling is off (cosmetic)."
+  },
+  "margherita-pizza": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "The 90-minute rise wasn't in prep, and two pizzas baked one after the other take about 20 min.",
+    "lachlan": null
+  },
+  "massaman-curry": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Steps add to about 105 min (60 + 30 simmer plus frying), not 90.",
+    "lachlan": null
+  },
+  "meatloaf": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 3,
+    "confidence": 4,
+    "summary": "Target was 70°C; minced meat needs 75°C. The onion is 'softened in oil' but there was no oil or step; times short.",
+    "lachlan": null
+  },
+  "mediterranean-platter": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Halloumi and meatballs were listed as pan-fried/cooked but no step does it; step 2 used unlisted paprika; either/or lines.",
+    "lachlan": null
+  },
+  "minestrone": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Cook time short (steps add to about 50 min); either/or greens.",
+    "lachlan": "Tagged vegetarian but lists optional pancetta and a parmesan rind (animal rennet). Either drop the pancetta line or the vegetarian tag."
+  },
+  "miso-soup": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 3,
+    "confidence": 5,
+    "summary": "Either/or miso and the 'Optional:' line reworded to read like the others.",
+    "lachlan": null
+  },
+  "moussaka": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "The 30-minute eggplant salting wasn't in prep; ragu, a 45-minute bake and the 30-minute rest come to about 130 min.",
+    "lachlan": null
+  },
+  "mushroom-risotto": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Porcini soak (20 min) not covered by prep; either/or rice.",
+    "lachlan": null
+  },
+  "nasi-goreng": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Uses day-old rice with no cooling guidance; runny-yolk egg with no note; chicken only 'just cooked'.",
+    "lachlan": null
+  },
+  "nicoise-salad": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Potatoes, beans and eggs cook one after another (about 25 min); jammy eggs need a note; either/or onion.",
+    "lachlan": null
+  },
+  "okonomiyaki": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Two pancakes at about 11 minutes each take 25 min, not 20; either/or pork.",
+    "lachlan": null
+  },
+  "omelette": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 3,
+    "confidence": 4,
+    "summary": "Baveuse (slightly underdone) egg needs a vulnerable-groups note.",
+    "lachlan": "Tagged vegetarian but the optional-fillings line lists ham and smoked salmon."
+  },
+  "osso-buco": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "2.5-hour braise plus browning and the soffritto come to about 195 min; either/or stock.",
+    "lachlan": "'To serve' has a stray line 'Or buttered polenta' and neither side has a recipe. Link to a risotto alla milanese/polenta recipe or simplify."
+  },
+  "pad-thai": {
+    "verdict": "ready",
+    "weeknight": 4,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Works as written.",
+    "lachlan": null
+  },
+  "paella": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Steps add to about 55 min; three either/or lines; no instruction to discard unopened mussels; added rice cooling note.",
+    "lachlan": null
+  },
+  "paneer-butter-masala": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "The finishing knob of butter wasn't listed (all 50g goes in at the start); times short; either/or serving line.",
+    "lachlan": null
+  },
+  "pastrami-sandwich": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Butter was listed but never used; optional cheese and sauerkraut never appear in a step; either/or lines; deli meat needs a pregnancy note.",
+    "lachlan": null
+  },
+  "peking-duck": {
+    "verdict": "needs-lachlan",
+    "weeknight": 1,
+    "appeal": 5,
+    "confidence": 3,
+    "summary": "Overnight dry not in prep time; step 1 rinsed raw poultry (FSANZ says don't); the basting step used honey glaze that had all been brushed on.",
+    "lachlan": "A 2kg duck at 200°C for 90 minutes with honey basting risks burning the skin; worth a real kitchen test before launch."
+  },
+  "penne-arrabbiata": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Three either/or lines tidied (and a 'Romans purists' typo).",
+    "lachlan": null
+  },
+  "pepperoni-pizza": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Two pizzas at 8–10 minutes each take about 20 min; either/or pepperoni.",
+    "lachlan": null
+  },
+  "peri-peri-chicken": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "The 1-hour marinade and 10-minute rest weren't counted.",
+    "lachlan": null
+  },
+  "pesto-pasta": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Either/or pasta line; cook time didn't cover toasting pine nuts and boiling the pasta.",
+    "lachlan": null
+  },
+  "pho": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Broth strained into a clean pot was never reheated, but it must be boiling to cook the raw beef; cook time short (blanch plus 3-hour simmer).",
+    "lachlan": null
+  },
+  "picanha": {
+    "verdict": "ready",
+    "weeknight": 3,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Works as written.",
+    "lachlan": null
+  },
+  "pierogi": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Dough rest, cooling the filling and shaping take longer than 60 min; potatoes, onions, boiling batches and frying are about 50 min.",
+    "lachlan": null
+  },
+  "poke-bowl": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Either/or fish line rewritten; raw-fish note already present.",
+    "lachlan": null
+  },
+  "pork-adobo": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Either/or pork line rewritten. Timing checks out.",
+    "lachlan": null
+  },
+  "pork-belly-bao": {
+    "verdict": "ready",
+    "weeknight": 1,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Times and method check out.",
+    "lachlan": null
+  },
+  "pork-dumplings": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Pan-fry oil and the flour for the tray weren't listed; added a cooked-through check for the pork mince.",
+    "lachlan": null
+  },
+  "pork-fried-rice": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Added the rice-cooling safety note.",
+    "lachlan": null
+  },
+  "pork-roast": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Overnight dry-brine wasn't counted in prep; added 480 min and a start-the-day-before note. Either/or cut rewritten.",
+    "lachlan": null
+  },
+  "pork-schnitzel": {
+    "verdict": "ready",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Clean and accurate.",
+    "lachlan": null
+  },
+  "pork-tacos": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Three either/or lines rewritten.",
+    "lachlan": null
+  },
+  "prawn-curry": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Removed the 'keep some shells for stock' instruction (no stock is made); either/or fat line rewritten.",
+    "lachlan": null
+  },
+  "prawn-linguine": {
+    "verdict": "ready",
+    "weeknight": 5,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Works as written.",
+    "lachlan": null
+  },
+  "pulled-pork": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Either/or spray line rewritten.",
+    "lachlan": null
+  },
+  "pumpkin-soup": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "List gave 4 garlic cloves but the note promises a whole head of roasted garlic; matched the list to the note.",
+    "lachlan": null
+  },
+  "quesadillas": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "8 quesadillas at 6 min each don't fit a 20 min cook one at a time; now two per pan and 35 min. Butter/oil line contradicted the dry-pan method; made it optional. Chicken cooked-through check added.",
+    "lachlan": null
+  },
+  "quiche-lorraine": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Prep left out 50 min of pastry chilling; cook left out blind baking and the 20 min rest.",
+    "lachlan": null
+  },
+  "ramen": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Added soft-egg note; either/or topping line rewritten.",
+    "lachlan": null
+  },
+  "ratatouille": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 3,
+    "confidence": 5,
+    "summary": "Courgette changed to zucchini (Australian English).",
+    "lachlan": null
+  },
+  "reuben-sandwich": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Two either/or lines rewritten.",
+    "lachlan": null
+  },
+  "risotto": {
+    "verdict": "ready",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Stock line already fixed; method sound.",
+    "lachlan": null
+  },
+  "roast-chicken": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Prep ignored the 30 min out of the fridge; cook ignored the 15 min rest and the gravy.",
+    "lachlan": null
+  },
+  "roasted-veggie-bowl": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 3,
+    "confidence": 4,
+    "summary": "Chickpea step uses extra oil and paprika that weren't listed; added them. Either/or grain line rewritten.",
+    "lachlan": null
+  },
+  "rogan-josh": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Cook time didn't cover 90 min braise plus browning, reducing and the 10 min rest.",
+    "lachlan": null
+  },
+  "saag-paneer": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Either/or fat line rewritten.",
+    "lachlan": null
+  },
+  "salisbury-steak": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 3,
+    "confidence": 5,
+    "summary": "Added the 75°C check for the beef mince patties.",
+    "lachlan": null
+  },
+  "salmon-nigiri": {
+    "verdict": "needs-lachlan",
+    "weeknight": 2,
+    "appeal": 4,
+    "confidence": 3,
+    "summary": "Rice line pointed to another recipe ('as for vegetarian sushi') and step 1 had no method; wrote the rice method in and lengthened cook time.",
+    "lachlan": "I wrote a rice method (200g rice : 240ml water, 12 min + 10 min rest) because the recipe only said 'as for vegetarian sushi'. Please check the ratio against your usual rice."
+  },
+  "salmon-poke": {
+    "verdict": "ready",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Raw-fish note already present; works as written.",
+    "lachlan": null
+  },
+  "salmon-teriyaki": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Either/or side line rewritten.",
+    "lachlan": null
+  },
+  "samosas": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 3,
+    "summary": "Frying oil moved out of 'To serve'. Times ignored the dough rest, cooling, shaping, boiling potatoes and batch frying. Either/or fat lines rewritten.",
+    "lachlan": null
+  },
+  "satay-skewers": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "2 hr marinade not in prep; basting with raw-chicken marinade moved to after the first turn; added 75°C check.",
+    "lachlan": null
+  },
+  "schnitzel": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Either/or condiment line rewritten.",
+    "lachlan": null
+  },
+  "seafood-paella": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Cook time added up to about 45 min, not 35. Two either/or lines rewritten.",
+    "lachlan": null
+  },
+  "seafood-pasta": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Either/or pasta line rewritten.",
+    "lachlan": null
+  },
+  "seafood-risotto": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Step 6 used unlisted 'bit of oil'; split the listed oil. Mussels now debearded; either/or stock rewritten.",
+    "lachlan": null
+  },
+  "shakshuka": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Added soft-egg note; either/or herb line rewritten.",
+    "lachlan": null
+  },
+  "shawarma": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "2 hr minimum marinade not in prep; added 75°C check.",
+    "lachlan": null
+  },
+  "shepherd-s-pie": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Either/or stock line rewritten.",
+    "lachlan": null
+  },
+  "shrimp-alfredo": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Either/or pasta line rewritten.",
+    "lachlan": "Title says 'Shrimp' but the recipe uses prawns; Australians say prawns. Rename the title?"
+  },
+  "shrimp-fried-rice": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Added the rice-cooling safety note.",
+    "lachlan": "Title says 'Shrimp' but the recipe uses prawns; Australians say prawns. Rename the title?"
+  },
+  "shrimp-pad-thai": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "20 min noodle soak exceeded the 15 min prep.",
+    "lachlan": "Title says 'Shrimp' but the recipe uses prawns; Australians say prawns. Rename the title?"
+  },
+  "shrimp-scampi": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Either/or pasta line rewritten.",
+    "lachlan": "Title says 'Shrimp' but the recipe uses prawns; Australians say prawns. Rename the title?"
+  },
+  "shrimp-tacos": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Either/or sauce line rewritten.",
+    "lachlan": "Title says 'Shrimp' but the recipe uses prawns; Australians say prawns. Rename the title?"
+  },
+  "shrimp-tempura": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Cook time of 10 min didn't cover heating the oil and frying 500g prawns in batches.",
+    "lachlan": "Title says 'Shrimp' but the recipe uses prawns; Australians say prawns. Rename the title?"
+  },
+  "sisig": {
+    "verdict": "needs-lachlan",
+    "weeknight": 1,
+    "appeal": 3,
+    "confidence": 3,
+    "summary": "Optional chicken liver was listed but never cooked; added it to the aromatics step cooked through. Added soft-egg note, cooling time and either/or pork line.",
+    "lachlan": "Chicken liver was listed with no step; I've had it cooked with the aromatics. Is that how you'd do it (traditional is grilled or boiled then chopped)?"
+  },
+  "sloppy-joes": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 3,
+    "confidence": 5,
+    "summary": "Either/or bun line rewritten.",
+    "lachlan": null
+  },
+  "smash-burger": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "8 patties each get cheese but only 4 slices were listed; added the second batch and a no-pink check for the mince. Either/or lines rewritten.",
+    "lachlan": null
+  },
+  "soba-noodles": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 3,
+    "confidence": 5,
+    "summary": "Sauce chills 30 min in the fridge; not counted in prep.",
+    "lachlan": null
+  },
+  "spaghetti-aglio-e-olio": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Step 6 cracks pepper but pepper wasn't listed.",
+    "lachlan": null
+  },
+  "spaghetti-bolognese": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Cook time didn't cover 75–90 min simmer plus 20+ min of browning. Either/or pancetta line rewritten.",
+    "lachlan": null
+  },
+  "spicy-beef-bowl": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Eggs were listed but never cooked; added a step and soft-egg note. 2 cups rice was thin for 4; now 4. Chilli line reordered to match step.",
+    "lachlan": null
+  },
+  "spicy-ramen": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Either/or pork line split; soft-boiled egg needs a safety note.",
+    "lachlan": null
+  },
+  "spicy-sausage-pasta": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Salt and pepper never used; either/or pasta line.",
+    "lachlan": null
+  },
+  "spicy-thai-noodles": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Either/or lines; chicken only cooked 2 minutes with no doneness cue.",
+    "lachlan": null
+  },
+  "spring-rolls": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Optional pork/chicken and garlic chives were listed but never went into the rolls.",
+    "lachlan": "Tagged pescatarian but lists optional pork or chicken. Fine if the app treats it as optional; otherwise drop the line or the tag."
+  },
+  "stuffed-cabbage": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 3,
+    "confidence": 4,
+    "summary": "Onion 'softened in butter' with no butter or step; 2 tbsp filling per leaf leaves half the filling over; prep too short.",
+    "lachlan": null
+  },
+  "stuffed-chicken-breast": {
+    "verdict": "ready",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Works as written, 75°C stated.",
+    "lachlan": null
+  },
+  "stuffed-eggplant": {
+    "verdict": "ready",
+    "weeknight": 3,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Works as written; filling can be made while the eggplant roasts.",
+    "lachlan": null
+  },
+  "stuffed-mushrooms": {
+    "verdict": "ready",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Works as written.",
+    "lachlan": null
+  },
+  "stuffed-peppers": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Either/or mince; basil never used; cook time short of the steps; leftover rice needs a safety note.",
+    "lachlan": null
+  },
+  "stuffed-shells": {
+    "verdict": "ready",
+    "weeknight": 3,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Works as written.",
+    "lachlan": null
+  },
+  "sunday-roast": {
+    "verdict": "needs-lachlan",
+    "weeknight": 1,
+    "appeal": 5,
+    "confidence": 3,
+    "summary": "Timing didn't work: potatoes (45 min) and Yorkshires (20 min) at 220°C were meant to fit into a 20-minute rest. Re-sequenced so potatoes roast with the beef and finish with the Yorkshires; beef tempering hour counted.",
+    "lachlan": "Sunday roast needed re-sequencing: potatoes now go in with the beef and finish at 220°C alongside the Yorkshires while the beef rests 30 minutes. Please cook-test this timeline before launch."
+  },
+  "sushi-rolls": {
+    "verdict": "ready",
+    "weeknight": 2,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Raw-fish note already present; works as written.",
+    "lachlan": null
+  },
+  "swedish-meatballs": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "No 75°C cue for minced meat; pickled cucumber never served.",
+    "lachlan": null
+  },
+  "sweet-and-sour-pork": {
+    "verdict": "ready",
+    "weeknight": 3,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Works as written.",
+    "lachlan": null
+  },
+  "tagine": {
+    "verdict": "ready",
+    "weeknight": 2,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Works as written.",
+    "lachlan": null
+  },
+  "takoyaki": {
+    "verdict": "ready",
+    "weeknight": 1,
+    "appeal": 3,
+    "confidence": 3,
+    "summary": "Works if you own a takoyaki pan; technique-heavy.",
+    "lachlan": null
+  },
+  "tandoori-chicken": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Overnight marinade not counted; no 75°C cue; cook time short of roast + grill + rest.",
+    "lachlan": null
+  },
+  "tapas-platter": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Cook time 25 but the potatoes roast 30; two either/or lines.",
+    "lachlan": null
+  },
+  "teriyaki-beef-bowl": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Either/or lines only.",
+    "lachlan": null
+  },
+  "teriyaki-chicken-bowl": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "No 75°C cue; optional soft-boiled egg needs a note.",
+    "lachlan": null
+  },
+  "teriyaki-pork": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Either/or serving veg.",
+    "lachlan": null
+  },
+  "teriyaki-shrimp-bowl": {
+    "verdict": "ready",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Works as written.",
+    "lachlan": "Title says 'Shrimp'; Australian English would be 'Teriyaki Prawn Bowl' (the recipe itself says prawns)."
+  },
+  "teriyaki-tofu": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 3,
+    "confidence": 4,
+    "summary": "Lists 3 tbsp oil but the step uses 2; either/or serving veg.",
+    "lachlan": null
+  },
+  "thai-basil-chicken": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "Fried egg is served but never cooked and there's no oil for it; runny yolk needs a note; either/or stock.",
+    "lachlan": null
+  },
+  "thai-green-curry": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 5,
+    "confidence": 5,
+    "summary": "Two either/or lines.",
+    "lachlan": null
+  },
+  "tikka-masala": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 5,
+    "confidence": 4,
+    "summary": "2-hour marinade not in prep; cook time short of the steps.",
+    "lachlan": null
+  },
+  "tofu-buddha-bowl": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 3,
+    "confidence": 4,
+    "summary": "Either/or grain line.",
+    "lachlan": null
+  },
+  "tofu-stir-fry": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 3,
+    "confidence": 5,
+    "summary": "Stock listed but never used; either/or lines.",
+    "lachlan": null
+  },
+  "tom-kha-gai": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Chilli oil listed but never served.",
+    "lachlan": null
+  },
+  "tom-yum-soup": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Either/or stock line, and 'shrimp' should be 'prawn'.",
+    "lachlan": null
+  },
+  "tortellini-alfredo": {
+    "verdict": "ready",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Works as written.",
+    "lachlan": null
+  },
+  "tortilla-soup": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Lime wedges listed but never served.",
+    "lachlan": null
+  },
+  "tteokbokki": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "10-minute soak not in prep; either/or syrup line.",
+    "lachlan": null
+  },
+  "tuna-melt": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Three either/or lines.",
+    "lachlan": null
+  },
+  "tuna-poke": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Raw-fish note already present; one either/or line.",
+    "lachlan": null
+  },
+  "turkey-burger": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Buns toasted butter-side-down but no butter listed.",
+    "lachlan": null
+  },
+  "turkish-pide": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 5,
+    "confidence": 3,
+    "summary": "1-hour rise not in prep; egg step came before the bake step; lamb has no doneness cue; runny egg needs a note.",
+    "lachlan": null
+  },
+  "udon-noodles": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 3,
+    "confidence": 5,
+    "summary": "Either/or topping line; optional soft-boiled egg needs a note.",
+    "lachlan": null
+  },
+  "vegetable-curry": {
+    "verdict": "fixed",
+    "weeknight": 4,
+    "appeal": 4,
+    "confidence": 5,
+    "summary": "Mango chutney and yogurt never served; either/or line.",
+    "lachlan": null
+  },
+  "vegetable-lasagna": {
+    "verdict": "fixed",
+    "weeknight": 1,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Cook time doesn't cover roast + bake + 20-minute rest.",
+    "lachlan": null
+  },
+  "vegetarian-sushi": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 3,
+    "confidence": 4,
+    "summary": "Tofu marinade and frying hidden in the ingredient line with no amounts or step.",
+    "lachlan": null
+  },
+  "veggie-burger": {
+    "verdict": "fixed",
+    "weeknight": 3,
+    "appeal": 4,
+    "confidence": 4,
+    "summary": "Buns toasted butter-side-down but no butter listed; bean roasting and 15-minute chill not covered by prep.",
+    "lachlan": null
+  },
+  "veggie-stir-fry": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 3,
+    "confidence": 5,
+    "summary": "Water/stock listed but never used.",
+    "lachlan": null
+  },
+  "veggie-tempura": {
+    "verdict": "fixed",
+    "weeknight": 2,
+    "appeal": 3,
+    "confidence": 4,
+    "summary": "Batter step pointed to another recipe ('as for shrimp tempura'); cook time too short for batch frying; either/or lines.",
+    "lachlan": null
+  },
+  "zucchini-noodles": {
+    "verdict": "fixed",
+    "weeknight": 5,
+    "appeal": 3,
+    "confidence": 4,
+    "summary": "Mozzarella and pine nuts never used; salting rest not covered by prep; either/or add-in line.",
+    "lachlan": null
+  }
+}

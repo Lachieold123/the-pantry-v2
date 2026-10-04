@@ -33,7 +33,10 @@ appId: host.exp.Exponent
     id: "header-menu"
 - assertVisible:
     id: "menu-feed"
-- assertVisible: "Local profile"
+# The profile row is one button to iOS, so its "Local profile" line isn't
+# separately visible to tests; check the row itself.
+- assertVisible:
+    id: "menu-profile"
 - takeScreenshot: menu-open
 - tapOn:
     id: "menu-close"
@@ -139,9 +142,11 @@ appId: host.exp.Exponent
     id: "header-menu"
 - tapOn:
     id: "menu-spinner"
-- assertVisible: 'Can.t decide\?'
+# The spinner is a page now, not a sheet: it has its own back button.
+- assertVisible:
+    id: "spinner-screen"
 - tapOn:
-    id: "sheet-close"
+    id: "spinner-back"
 - assertVisible:
     id: "feed-screen"
 

@@ -1,0 +1,79 @@
+# The List tab (D-032): plan a recipe, and its shopping appears on its own
+# tab. Ticking an item off drops the count by one, keeps the item in its aisle,
+# and (with "Move ticked shopping here" on, the default) puts it in the
+# cupboard; unticking takes it back out.
+appId: host.exp.Exponent
+---
+- launchApp:
+    clearState: true
+- openLink: ${METRO_URL}
+- runFlow: subflows/_setup_skip_welcome.yaml
+
+# Plan Carbonara for tonight from its page.
+- runFlow:
+    file: subflows/_open_recipe.yaml
+    env:
+      RECIPE_ID: carbonara
+- tapOn:
+    id: "recipe-plan"
+- tapOn:
+    id: "plan-day-this-0"
+- scrollUntilVisible:
+    element:
+      id: "plan-confirm"
+    direction: DOWN
+- tapOn:
+    id: "plan-confirm"
+- assertVisible: "Carbonara planned for tonight"
+- tapOn:
+    id: "back"
+
+# The List tab has it, and its badge says how much is left to buy.
+- tapOn:
+    id: "tab-list"
+- assertVisible:
+    id: "shopping-screen"
+- assertVisible: "List, \\d+ to buy"
+- assertVisible:
+    id: "shopping-item-guanciale"
+- takeScreenshot: list-planned
+
+# Tick one off: the count drops by one and the item stays in its aisle.
+- copyTextFrom:
+    id: "shopping-count"
+- evalScript: ${output.toBuy = parseInt(maestro.copiedText)}
+- tapOn:
+    id: "shopping-item-guanciale"
+- copyTextFrom:
+    id: "shopping-count"
+- assertTrue: ${parseInt(maestro.copiedText) === output.toBuy - 1}
+- assertVisible:
+    id: "shopping-item-guanciale"
+- takeScreenshot: list-ticked
+
+# ...and it's in the cupboard now.
+- tapOn:
+    id: "tab-cupboard"
+- scrollUntilVisible:
+    element:
+      id: "cupboard-item-guanciale"
+    direction: DOWN
+
+# Untick: the count is back, and the cupboard gives it up again.
+- tapOn:
+    id: "tab-list"
+- tapOn:
+    id: "shopping-item-guanciale"
+- copyTextFrom:
+    id: "shopping-count"
+- assertTrue: ${parseInt(maestro.copiedText) === output.toBuy}
+- tapOn:
+    id: "tab-cupboard"
+- scrollUntilVisible:
+    element:
+      id: "cupboard-search"
+    direction: UP
+- scrollUntilVisible:
+    element:
+      id: "cupboard-empty"
+    direction: DOWN

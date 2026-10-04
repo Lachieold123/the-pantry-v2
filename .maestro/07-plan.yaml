@@ -11,7 +11,8 @@ appId: host.exp.Exponent
     id: "tab-plan"
 - assertVisible:
     id: "plan-screen"
-- assertVisible: "0 of 21 meals"
+# The progress bar is one element to iOS; its label says the whole sentence.
+- assertVisible: "0 of 21 meals planned this week"
 - assertVisible: "Add dinner"
 - takeScreenshot: plan-empty
 
@@ -39,23 +40,30 @@ appId: host.exp.Exponent
 - assertVisible: "Carbonara planned for today dinner"
 - assertVisible:
     id: "plan-entry-[a-z0-9]+-[a-z0-9]+"
-- assertVisible: "1 of 21 meals"
+- assertVisible: "1 of 21 meals planned this week"
 - takeScreenshot: plan-week
 
-# Change who it's for: the "For 4" pill opens a small sheet with a stepper.
+# Change who it's for: the "For 2" pill opens a small sheet with a stepper.
+# The pill and the × sit inside the meal card, which is one button to iOS, so
+# tests can't see them by id: tap their spots on the card instead. The pill
+# follows Carbonara's "20m · Medium" line, about halfway across and three-quarters down.
 - tapOn:
-    id: "plan-entry-.*-servings"
+    id: "plan-entry-[a-z0-9]+-[a-z0-9]+"
+    point: "52%,72%"
 - assertVisible:
     id: "plan-servings-sheet"
+# The stepper is one adjustable control to iOS, so tap its "+" end.
 - tapOn:
-    id: "plan-entry-.*-stepper-plus"
+    id: "plan-entry-.*-stepper"
+    point: "88%,50%"
 - takeScreenshot: plan-servings-changed
 - tapOn:
     id: "plan-servings-done"
 
-# Remove, then undo
+# Remove, then undo: the × is the card's right-hand end.
 - tapOn:
-    id: "plan-entry-.*-remove"
+    id: "plan-entry-[a-z0-9]+-[a-z0-9]+"
+    point: "91%,50%"
 - assertVisible: "Carbonara taken off the plan"
 - tapOn:
     id: "toast-undo"

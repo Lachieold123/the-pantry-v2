@@ -67,7 +67,7 @@ export function CupboardScreen() {
         <>
           <EmptyState
             title="Your cupboard is empty"
-            body="Search above, scan a receipt, or tap what you have below. Salt, pepper, oil and water are always assumed."
+            body="Search above, paste a list, or tap what you have below. Salt, pepper, oil and water are always assumed."
             testID="cupboard-empty"
           />
           {stock}

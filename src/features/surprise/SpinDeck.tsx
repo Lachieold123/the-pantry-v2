@@ -96,6 +96,7 @@ export function SpinDeck({ recipe, before, after, spinning, tick, landed, reduce
             iconSize={80}
             transition={0}
           >
+            <PhotoScrim kind="spinnerTop" />
             <PhotoScrim kind="spinnerBottom" />
             <View style={styles.corner} pointerEvents="none">
               <View style={styles.rule} />

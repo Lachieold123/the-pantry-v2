@@ -159,6 +159,10 @@ export const MOTION = { quick: 180, standard: 240, slow: 320, toast: 2500 } as c
 
 /** Minimum tap target, in points. */
 export const TAP_TARGET = 44;
+/** v1's compact controls (small segmented, the Cook pill). They reach TAP_TARGET through hitSlop. */
+export const SMALL_CONTROL = 36;
+/** Invisible padding that brings a control `height` tall up to TAP_TARGET (health check #12). */
+export const slopFor = (height: number) => Math.max(0, Math.ceil((TAP_TARGET - height) / 2));
 
 export const ASPECT = { card: 4 / 3, hero: 16 / 9, square: 1, portrait: 4 / 5, spinner: 4 / 5.2 } as const;
 

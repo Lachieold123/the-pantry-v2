@@ -21,6 +21,7 @@ import { Icon } from '@/ui/primitives/Icon';
 import { IconButton } from '@/ui/primitives/IconButton';
 import { Stepper } from '@/ui/primitives/Stepper';
 import { Text } from '@/ui/primitives/Text';
+import { useTheme } from '@/ui/theme/ThemeProvider';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { cuisineEyebrow } from '@/ui/tokens/cuisine';
 import { PLAN, RADIUS, SPACE } from '@/ui/tokens/type';
@@ -67,6 +68,7 @@ export function DaySlots({ day, entries, past }: { day: ISODate; entries: readon
 function SlotCard({ entry, past }: { entry: PlanEntry; past: boolean }) {
   const router = useRouter();
   const styles = useStyles();
+  const theme = useTheme().name;
   const toast = useToast();
   const recipe = useRecipe(entry.recipeId);
   const removeEntry = usePlan((s) => s.removeEntry);
@@ -108,7 +110,7 @@ function SlotCard({ entry, past }: { entry: PlanEntry; past: boolean }) {
           <RecipeImage source={RECIPE_IMAGES[recipe.id]} shape="square" cuisine={recipe.cuisine} radius={RADIUS.sm} iconSize={22} />
         </View>
         <View style={{ flex: 1, gap: PLAN.hair }}>
-          <Text variant="eyebrow" tone={cuisineEyebrow(recipe.cuisine)} numberOfLines={1}>
+          <Text variant="eyebrow" tone={cuisineEyebrow(recipe.cuisine, theme)} numberOfLines={1}>
             {CUISINE_LABELS[recipe.cuisine]}
           </Text>
           <Text variant="cardTitleMedium" numberOfLines={1}>

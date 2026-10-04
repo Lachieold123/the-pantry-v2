@@ -6,20 +6,29 @@ import type { ColourTokens } from './colour';
 type Family =
   'italian' | 'mexican' | 'asian' | 'japanese' | 'korean' | 'indian' | 'middleEastern' | 'american' | 'european' | 'french' | 'other';
 
-/** The small uppercase cuisine label above a card title. Same in light and dark, as in the original. */
-const EYEBROW: Readonly<Record<Family, string>> = {
-  italian: '#B85A3D',
-  mexican: '#C87838',
-  asian: '#B05060',
-  japanese: '#C04A38',
-  korean: '#3D9C6E',
-  indian: '#C66A3C',
-  middleEastern: '#3D9E82',
-  american: '#B88E47',
-  european: '#8A6FB0',
-  french: '#7C6FB8',
-  other: '#B88E47',
+/**
+ * The small uppercase cuisine label above a card title, as [on a light ground,
+ * on a dark ground]. The original used one hex for both and most failed AA at
+ * 9.5pt (health check 2026-10-05 #4); these keep each hue and are tuned to at
+ * least 4.6:1 on white, bgSoft and the cream library card (light), and on the
+ * dark page, card and near-black match card (dark). tokens.test.ts checks it.
+ */
+const EYEBROW: Readonly<Record<Family, readonly [string, string]>> = {
+  italian: ['#AD5439', '#C56B4F'],
+  mexican: ['#9D5E2B', '#C87838'],
+  asian: ['#AF4F5F', '#BD6C7A'],
+  japanese: ['#BC4837', '#CE6656'],
+  korean: ['#307B57', '#3D9C6E'],
+  indian: ['#A65831', '#C76C3E'],
+  middleEastern: ['#2F7964', '#3D9E82'],
+  american: ['#886935', '#B88E47'],
+  european: ['#7D5FA7', '#9279B5'],
+  french: ['#7061B1', '#877BBE'],
+  other: ['#886935', '#B88E47'],
 };
+
+/** What the label sits on. Usually the theme; cards with their own fill say which. */
+export type Ground = 'light' | 'dark';
 
 /** The soft fill behind a recipe with no photo, as a colour token name. */
 const TINT: Readonly<Record<Family, keyof ColourTokens>> = {
@@ -64,8 +73,9 @@ const FAMILY: Readonly<Record<string, Family>> = {
   'modern-australian': 'other',
 };
 
-export function cuisineEyebrow(cuisine: string): string {
-  return EYEBROW[FAMILY[cuisine] ?? 'other'];
+export function cuisineEyebrow(cuisine: string, ground: Ground): string {
+  const [onLight, onDark] = EYEBROW[FAMILY[cuisine] ?? 'other'];
+  return ground === 'light' ? onLight : onDark;
 }
 
 export function cuisineTint(cuisine: string): keyof ColourTokens {

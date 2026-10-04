@@ -15,17 +15,36 @@ appId: host.exp.Exponent
 - assertVisible:
     id: "spinner-card"
 - assertVisible: "Tonight’s dinner"
-- assertVisible:
-    id: "spinner-why"
 - takeScreenshot: spinner-start
+# "Why this" sits under the card.
+- scrollUntilVisible:
+    element:
+      id: "spinner-why"
+    direction: DOWN
+- scrollUntilVisible:
+    element:
+      id: "spinner-card"
+    direction: UP
 
 # Tap the card: the deck runs for about a second, then lands
 - tapOn:
     id: "spinner-card"
+# "Tap card to spin" is hidden from VoiceOver (and so from tests). The buttons
+# under the card are disabled while it spins, so wait for Spin again to come back.
+- scrollUntilVisible:
+    element:
+      id: "spinner-spin"
+    direction: DOWN
 - extendedWaitUntil:
-    visible: "Tap card to spin"
+    visible:
+      id: "spinner-spin"
+      enabled: true
     timeout: 10000
 - takeScreenshot: spinner-landed
+- scrollUntilVisible:
+    element:
+      id: "spinner-time"
+    direction: UP
 
 # Settings: Time ≤ 15 min, then back to Any
 - tapOn:
@@ -55,8 +74,12 @@ appId: host.exp.Exponent
     direction: DOWN
 - tapOn:
     id: "spinner-spin"
+# "Tap card to spin" is hidden from VoiceOver (and so from tests); the
+# buttons are disabled while it spins, so wait for Spin again to come back.
 - extendedWaitUntil:
-    visible: "Tap card to spin"
+    visible:
+      id: "spinner-spin"
+      enabled: true
     timeout: 10000
 
 # How it works
@@ -66,7 +89,8 @@ appId: host.exp.Exponent
     direction: UP
 - tapOn:
     id: "spinner-info"
-- assertVisible: "How Surprise me works"
+- assertVisible:
+    id: "spinner-how"
 - tapOn:
     id: "spinner-how-close"
 
@@ -77,8 +101,11 @@ appId: host.exp.Exponent
     direction: DOWN
 - tapOn:
     id: "spinner-plan"
-- assertVisible:
-    id: "plan-confirm"
+# Two weeks of days, the meal and the stepper can push the button below the sheet's fold.
+- scrollUntilVisible:
+    element:
+      id: "plan-confirm"
+    direction: DOWN
 - tapOn:
     id: "plan-confirm"
 - assertVisible: ".* planned for .*"

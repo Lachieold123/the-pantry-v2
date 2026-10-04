@@ -15,7 +15,8 @@ import { RADIUS, RECIPE, SPACE } from '@/ui/tokens/type';
 
 function Heading({ children }: { children: string }) {
   return (
-    <Text variant="headingSans" accessibilityRole="header">
+    // v1's spaced colon is kept on screen; VoiceOver hears just the word.
+    <Text variant="headingSans" accessibilityRole="header" accessibilityLabel={children}>
       {children} :
     </Text>
   );
@@ -61,7 +62,7 @@ export function Ingredients({ recipe, servings, units, have }: IngredientsProps)
                   testID={`ingredient-${key}`}
                 >
                   <View style={[styles.bullet, done && styles.bulletDone]} />
-                  <Text variant="body" colour={done ? 'inkSubtle' : 'ink'} style={[styles.lineText, done && styles.struck]}>
+                  <Text variant="body" colour={done ? 'inkMuted' : 'ink'} style={[styles.lineText, done && styles.struck]}>
                     {text}
                   </Text>
                   {inCupboard ? (
@@ -75,7 +76,7 @@ export function Ingredients({ recipe, servings, units, have }: IngredientsProps)
                 </Pressable>
                 {tip ? (
                   <View style={styles.tip}>
-                    <Icon name="substitute" size={12} colour="accent" />
+                    <Icon name="substitute" size={12} colour="accentText" />
                     <Text variant="note" colour="inkMuted" style={{ flex: 1 }}>
                       {tip}
                     </Text>
@@ -128,7 +129,7 @@ export function Notes({ notes }: { notes: readonly string[] }) {
       <View style={styles.notes}>
         {notes.map((n, i) => (
           <View key={i} style={styles.note}>
-            <Text variant="body" colour="accent">
+            <Text variant="body" colour="accentText">
               ·
             </Text>
             <Text variant="bodyMedium" colour="inkSoft" style={{ flex: 1 }}>

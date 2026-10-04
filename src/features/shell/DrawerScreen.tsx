@@ -49,7 +49,7 @@ export function DrawerScreen() {
   const panel = useAnimatedStyle(() => ({ transform: [{ translateX: (open.value - 1) * panelWidth }] }));
 
   return (
-    <View style={StyleSheet.absoluteFill} accessibilityViewIsModal>
+    <View style={StyleSheet.absoluteFill} accessibilityViewIsModal onAccessibilityEscape={() => close()}>
       <Animated.View style={[StyleSheet.absoluteFill, styles.backdrop, backdrop]}>
         <Pressable
           style={StyleSheet.absoluteFill}

@@ -19,7 +19,7 @@ export function ListCard({ title, children }: { title?: string | undefined; chil
   return (
     <View style={{ gap: SPACE.xs }}>
       {title ? (
-        <Text variant="kickerSmall" colour="accent" accessibilityRole="header" style={styles.aisle}>
+        <Text variant="kickerSmall" colour="accentText" accessibilityRole="header" style={styles.aisle}>
           {title}
         </Text>
       ) : null}
@@ -90,7 +90,8 @@ export function Pill({ label, icon, on = false, onPress, testID, role = 'button'
       onPress={onPress}
       accessibilityRole={role}
       {...(role === 'switch' ? { accessibilityState: { checked: on } } : { accessibilityState: { selected: on } })}
-      hitSlop={6}
+      // v1’s pill is about 29pt; 8pt of slop all round brings it past TAP_TARGET (health check #12).
+      hitSlop={SPACE.xs}
       testID={testID}
       style={({ pressed }) => [styles.pill, on && styles.pillOn, pressed && { opacity: 0.7 }]}
     >

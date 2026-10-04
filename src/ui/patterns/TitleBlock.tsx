@@ -23,7 +23,7 @@ export function TitleBlock({ kicker, title, subtitle, tone = 'muted', action, ch
   return (
     <View style={{ paddingHorizontal: inset ? SPACE.gutter : 0, paddingTop: SPACE.xs, gap: SPACE.xxs }}>
       {kicker ? (
-        <Text variant="kicker" colour={tone === 'accent' ? 'accent' : 'inkMuted'}>
+        <Text variant="kicker" colour={tone === 'accent' ? 'accentText' : 'inkMuted'}>
           {kicker}
         </Text>
       ) : null}

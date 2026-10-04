@@ -1,0 +1,93 @@
+# Home's "What I have | Everything" switch (D-034): with an empty cupboard it
+# says so and the line under it opens the Cupboard; with things in, the line
+# counts them; Everything hides the line; search beside it opens Browse.
+appId: host.exp.Exponent
+---
+- launchApp:
+    clearState: true
+- openLink: ${METRO_URL}
+- runFlow: subflows/_setup_skip_welcome.yaml
+
+# A new cupboard can't make anything, so Home opens on Everything, with no cupboard line.
+- assertVisible:
+    id: "home-heroes"
+- assertVisible: "What I have, 0 dishes ready"
+- assertNotVisible:
+    id: "home-pantry-line"
+- takeScreenshot: home-switch-everything
+
+# "What I have" with nothing in the cupboard: say so, and point at the Cupboard.
+- tapOn:
+    id: "home-mode-pantry"
+- assertVisible:
+    id: "home-pantry-empty"
+- assertVisible: "What’s in your cupboard\\?"
+# The line has no label of its own, so iOS reads its text: "Your cupboard is empty · Add what you have".
+- assertVisible:
+    id: "home-pantry-line"
+    text: ".*cupboard is empty.*"
+- takeScreenshot: home-switch-pantry-empty
+
+# The line opens the Cupboard tab, and so does the empty state's button.
+- tapOn:
+    id: "home-pantry-line"
+- assertVisible:
+    id: "cupboard-screen"
+- tapOn:
+    id: "tab-index"
+- tapOn:
+    id: "home-pantry-empty-action"
+- assertVisible:
+    id: "cupboard-screen"
+
+# Put a few things in with a typed list.
+- tapOn:
+    id: "cupboard-add-list"
+- tapOn:
+    id: "add-list-input"
+- inputText: "eggs, butter, milk, plain flour, sugar, bread, cheddar, tomato, onion, garlic"
+- tapOn:
+    id: "add-list-read"
+- scrollUntilVisible:
+    element:
+      id: "add-list-commit"
+    direction: DOWN
+- tapOn:
+    id: "add-list-commit"
+
+# Home keeps the mode you picked, and the line now counts what it's working from.
+- tapOn:
+    id: "tab-index"
+- assertVisible:
+    id: "home-pantry-line"
+    text: "From \\d+ things in your cupboard · Change"
+- assertVisible: "What I have, \\d+ dish(es)? ready"
+- assertNotVisible:
+    id: "home-pantry-empty"
+- takeScreenshot: home-switch-pantry-stocked
+- tapOn:
+    id: "home-pantry-line"
+- assertVisible:
+    id: "cupboard-screen"
+- tapOn:
+    id: "tab-index"
+
+# Everything hides the line and shows the full feed.
+- tapOn:
+    id: "home-mode-all"
+- assertNotVisible:
+    id: "home-pantry-line"
+- assertVisible:
+    id: "home-heroes"
+
+# Search beside the switch opens Browse, ready to type; Back comes home.
+- tapOn:
+    id: "home-search"
+- hideKeyboard
+- assertVisible: "Discover"
+- assertVisible:
+    id: "browse-search"
+- tapOn:
+    id: "back"
+- assertVisible:
+    id: "feed-screen"

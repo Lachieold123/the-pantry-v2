@@ -43,8 +43,12 @@ export const EMPTY_DRAFT: RecipeDraft = {
   notesText: '',
 };
 
-/** Bullets and numbering people paste in from notes apps and websites. */
-const LIST_MARKER = /^\s*(?:[-*•·▢□◦‣]+|\d+[.)]|step\s+\d+[:.)]?)\s*/i;
+/**
+ * Bullets and numbering people paste in from notes apps and websites. A number
+ * only counts as numbering when a space or the end of the line follows its "."
+ * or ")", so "1.5 kg lamb" keeps its quantity (health check 2026-10-05 #1).
+ */
+const LIST_MARKER = /^\s*(?:[-*•·▢□◦‣]+|\d+[.)](?=\s|$)|step\s+\d+[:.)]?)\s*/i;
 
 function cleanLines(text: string): string[] {
   return text

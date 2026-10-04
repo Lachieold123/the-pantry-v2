@@ -3,7 +3,7 @@
 import { Pressable, View } from 'react-native';
 
 import { makeStyles } from '@/ui/theme/makeStyles';
-import { RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
+import { RADIUS, SMALL_CONTROL, SPACE, TAP_TARGET, slopFor } from '@/ui/tokens/type';
 import { Text } from './Text';
 
 type Props<T extends string> = {
@@ -28,6 +28,7 @@ export function Segmented<T extends string>({ options, value, onChange, label, s
             accessibilityState={{ selected }}
             accessibilityLabel={o.label}
             testID={`segment-${o.value}`}
+            {...(size === 'sm' ? { hitSlop: { top: slopFor(SMALL_CONTROL), bottom: slopFor(SMALL_CONTROL) } } : {})}
             style={[styles.segment, size === 'sm' && styles.small, selected && styles.selected]}
           >
             <Text
@@ -55,7 +56,7 @@ const useStyles = makeStyles(({ colours }) => ({
     padding: SPACE.xxs,
   },
   segment: { flex: 1, minHeight: TAP_TARGET, justifyContent: 'center', borderRadius: RADIUS.pill, paddingHorizontal: SPACE.xs },
-  small: { minHeight: 36 },
+  small: { minHeight: SMALL_CONTROL },
   selected: { backgroundColor: colours.ink },
   boldLabel: { fontWeight: '800' },
 }));

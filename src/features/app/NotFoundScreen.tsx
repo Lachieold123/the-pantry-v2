@@ -11,7 +11,7 @@ export function NotFoundScreen() {
       <EmptyState
         title="This page doesn’t exist"
         body="The link may be old or mistyped."
-        action={{ label: 'Back to Feed', onPress: () => router.replace('/') }}
+        action={{ label: 'Back to Home', onPress: () => router.replace('/') }}
         testID="not-found"
       />
     </Screen>

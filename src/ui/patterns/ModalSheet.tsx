@@ -7,10 +7,11 @@ import type { ReactNode } from 'react';
 import { KeyboardAvoidingView, Modal, Platform, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { IconButton } from '@/ui/primitives/IconButton';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { FIXED } from '@/ui/tokens/colour';
-import { RADIUS, SHADOW, SPACE } from '@/ui/tokens/type';
+import { RADIUS, SHADOW, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 
 type Props = { visible: boolean; onClose: () => void; title: string; children: ReactNode; testID?: string | undefined };
 
@@ -31,11 +32,17 @@ export function ModalSheet({ visible, onClose, title, children, testID }: Props)
           style={[styles.sheet, { paddingBottom: Math.max(insets.bottom, SPACE.md), maxHeight: `${SHEET_MAX}%` }]}
           {...(testID ? { testID } : {})}
           accessibilityViewIsModal
+          // VoiceOver's escape gesture, and a visible Close: accessibilityViewIsModal hides the backdrop (health check #11).
+          onAccessibilityEscape={onClose}
         >
           <View style={styles.handle} />
-          <Text variant="cardTitleMedium" align="center" accessibilityRole="header" style={styles.title}>
-            {title}
-          </Text>
+          <View style={styles.head}>
+            <View style={styles.balance} />
+            <Text variant="cardTitleMedium" align="center" accessibilityRole="header" style={styles.title}>
+              {title}
+            </Text>
+            <IconButton icon="close" label="Close" onPress={onClose} shape="chip" testID="modal-sheet-close" />
+          </View>
           <ScrollView
             style={styles.body}
             bounces={false}
@@ -69,5 +76,15 @@ const useStyles = makeStyles(({ colours }) => ({
   handle: { alignSelf: 'center', width: 40, height: 4, borderRadius: 2, backgroundColor: colours.inkSubtle, marginBottom: SPACE.sm },
   body: { flexGrow: 0, flexShrink: 1 },
   bodyContent: { paddingBottom: SPACE.xxs },
-  title: { paddingBottom: SPACE.sm, borderBottomWidth: 1, borderBottomColor: colours.border, marginBottom: SPACE.xs },
+  head: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: SPACE.sm,
+    paddingBottom: SPACE.sm,
+    borderBottomWidth: 1,
+    borderBottomColor: colours.border,
+    marginBottom: SPACE.xs,
+  },
+  title: { flex: 1, minWidth: 0 },
+  balance: { width: TAP_TARGET - SPACE.xxs },
 }));

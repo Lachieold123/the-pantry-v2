@@ -99,5 +99,8 @@ appId: host.exp.Exponent
     id: "header-menu"
 - tapOn:
     id: "menu-stats"
-- assertVisible: "Vegetable Lasagna, .*, Cooked once"
+- scrollUntilVisible:
+    element:
+      text: "1. Vegetable Lasagna, once"
+    direction: DOWN
 - takeScreenshot: cook-stats

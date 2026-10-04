@@ -10,8 +10,16 @@ appId: host.exp.Exponent
 # A new cupboard is empty, so Home opens on Everything.
 - assertVisible:
     id: "home-heroes"
-- assertVisible: "What's cooking\\?"
 - takeScreenshot: home
+# The grid sits under the five big cards, below the fold.
+- scrollUntilVisible:
+    element:
+      text: "What's cooking\\?"
+    direction: DOWN
+- scrollUntilVisible:
+    element:
+      id: "home-mode-pantry"
+    direction: UP
 
 # "What I have" with an empty cupboard says so and points at the Cupboard.
 - tapOn:
@@ -80,6 +88,11 @@ appId: host.exp.Exponent
     id: "recipe-plan"
 - tapOn:
     id: "plan-day-this-0"
+# Two weeks of days, the meal and the stepper can push the button below the sheet's fold.
+- scrollUntilVisible:
+    element:
+      id: "plan-confirm"
+    direction: DOWN
 - tapOn:
     id: "plan-confirm"
 - tapOn:
@@ -101,6 +114,11 @@ appId: host.exp.Exponent
 - inputText: "eggs, butter, milk, plain flour, sugar, bread, cheddar, ham, tomato, onion, garlic, rice, chicken thigh, soy sauce"
 - tapOn:
     id: "add-list-read"
+# Fourteen rows to check push the Add button below the sheet's fold.
+- scrollUntilVisible:
+    element:
+      id: "add-list-commit"
+    direction: DOWN
 - tapOn:
     id: "add-list-commit"
 - tapOn:

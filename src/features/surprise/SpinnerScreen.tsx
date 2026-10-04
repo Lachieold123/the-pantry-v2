@@ -17,7 +17,6 @@ import { Button } from '@/ui/primitives/Button';
 import { Icon } from '@/ui/primitives/Icon';
 import { Screen } from '@/ui/primitives/Screen';
 import { Text } from '@/ui/primitives/Text';
-import { FIXED } from '@/ui/tokens/colour';
 import { SPACE, SPINNER } from '@/ui/tokens/type';
 import { SpinDeck } from './SpinDeck';
 import { HowItWorks, SettingChips, SpinnerHeader, WhyThis } from './SpinnerParts';
@@ -92,7 +91,7 @@ export function SpinnerScreen() {
         <Text variant="kicker">{KICKER[settings.meal ?? 'any']}</Text>
         <Text variant="displaySpinner" accessibilityRole="header">
           Surprise
-          <Text variant="displaySpinnerAccent" tone={FIXED.amberLight}>
+          <Text variant="displaySpinnerAccent" colour="accentText">
             {' me'}
           </Text>
         </Text>

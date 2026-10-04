@@ -18,7 +18,7 @@ export function HomeEmpty({ pantry, stocked, filtered, onClear, onCupboard, onEv
     return (
       <EmptyState
         title="What’s in your cupboard?"
-        body="Add what you have, or scan a receipt, and this shows the dishes you can cook without shopping."
+        body="Add what you have and this shows the dishes you can cook without shopping."
         action={{ label: 'Add what you have', onPress: onCupboard }}
         testID="home-pantry-empty"
       />

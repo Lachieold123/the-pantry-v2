@@ -74,7 +74,9 @@ const useStyles = makeStyles(({ colours }) => ({
   row: { gap: SPACE.xs, paddingHorizontal: SPACE.gutter },
   cell: {
     width: PLAN.dayWidth,
-    height: PLAN.dayHeight,
+    // A floor, not a fixed height: at the largest text sizes the day grows instead of clipping (health check #13).
+    minHeight: PLAN.dayHeight,
+    paddingVertical: SPACE.xxs,
     borderRadius: RADIUS.lg,
     borderWidth: 1,
     borderColor: colours.border,

@@ -18,6 +18,15 @@ appId: host.exp.Exponent
 - tapOn:
     id: "cookmarks-empty-action"
 - assertVisible: "Discover"
+# Browse opened over Cookmarks: back twice to Home, where the side menu is.
+- tapOn:
+    id: "back"
+- assertVisible:
+    id: "cookmarks-screen"
+- tapOn:
+    id: "back"
+- assertVisible:
+    id: "feed-screen"
 
 # Save one from its page
 - runFlow:
@@ -50,9 +59,11 @@ appId: host.exp.Exponent
 - assertVisible:
     id: "cookmarks-screen"
 
-# Unsave from the card's disc; Undo puts it back.
+# Unsave from the card's disc; Undo puts it back. The disc is inside the card,
+# which is one button to iOS, so tap its spot: the photo's top-right corner.
 - tapOn:
-    id: "recipe-card-carbonara-save"
+    id: "recipe-card-carbonara"
+    point: "87%,8%"
 - assertVisible: "Removed from Cookmarks"
 - assertVisible:
     id: "cookmarks-empty"

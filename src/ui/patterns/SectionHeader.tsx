@@ -22,7 +22,11 @@ export function SectionHeader({ kicker, title, tone = 'muted', action, inset = f
     >
       <View style={{ flex: 1, gap: SPACE.xxs }}>
         {kicker ? (
-          <Text variant="kickerSection" colour={tone === 'accent' ? 'accent' : 'inkMuted'} accessibilityRole={title ? undefined : 'header'}>
+          <Text
+            variant="kickerSection"
+            colour={tone === 'accent' ? 'accentText' : 'inkMuted'}
+            accessibilityRole={title ? undefined : 'header'}
+          >
             {kicker}
           </Text>
         ) : null}
