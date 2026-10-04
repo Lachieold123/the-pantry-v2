@@ -136,4 +136,5 @@ export const TOUR = {
   dotOn: 18,
   dotGap: 6,
   startDelay: 700,
+  skipHeight: 36,
 } as const;

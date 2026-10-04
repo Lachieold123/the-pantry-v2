@@ -288,7 +288,9 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
     2. **the Cupboard tab**
     3. **the Plan tab**
     4. **the List tab**
-  - Every stop has "N of 4", dots, Next and Skip. The last one says "Start cooking".
+  - Every stop has "N of 4", dots and Next. The last one says "Start cooking".
+  - A "Skip tour" pill sits in the top corner on every stop, so the way out never moves.
+  - The spotlight's hole has rounded corners that match what it points at: a pill around the What I have switch, soft tile corners around a tab (Lachlan, 5 October).
   - Skipping or finishing marks it seen, and it never returns on its own. "Show me around again" in Settings replays it.
   - It points at the live views (`useTourTarget` in `store/tour`), not pictures, so it can't go stale when a screen changes. A recorded video would.
   - If a target isn't on screen, the card shows centred without a spotlight, rather than pointing at nothing.
