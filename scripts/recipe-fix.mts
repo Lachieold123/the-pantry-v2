@@ -17,6 +17,8 @@ export type Fix = {
   steps?: Replacement[];
   ingredients?: Replacement[];
   addNotes?: string[];
+  /** `false` drops a photo that shows the wrong dish, so the recipe gets its plain cuisine tile instead. */
+  image?: false;
   times?: { prepMinutes?: number; cookMinutes?: number };
   difficulty?: Difficulty;
   servings?: number;

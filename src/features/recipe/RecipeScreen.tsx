@@ -14,6 +14,7 @@ import { cupboardIds } from '@/domain/cupboard/match';
 import { allOnList, cupboardTally, recipeWords } from '@/domain/cupboard/summary';
 import { shoppingWeek, toISODate } from '@/domain/plan/week';
 import { recipeAsText } from '@/domain/recipes/labels';
+import { recipeListRows } from '@/domain/shopping/fromRecipe';
 import { useCookLog } from '@/store/cookLog';
 import { ingredientName } from '@/store/cookable';
 import { useCupboard } from '@/store/cupboard';
@@ -156,7 +157,17 @@ export function RecipeScreen({ id }: { id: string }) {
               wordOf={wordOf}
               onList={allOnList(fromCupboard.missing, listExtras ?? [])}
               onAddMissing={() => {
-                const items = fromCupboard.missing.map((id) => ({ text: capitalise(wordOf(id)), ingredientId: id }));
+                // The same lines "Add to list" offers, with amounts for these servings (D-037).
+                const missing = new Set(fromCupboard.missing);
+                const rows = recipeListRows({
+                  recipe,
+                  servings,
+                  index: INGREDIENTS,
+                  has: (i) => !missing.has(i),
+                  onList: new Set(),
+                  units,
+                });
+                const items = rows.filter((r) => missing.has(r.key)).map((r) => r.addition);
                 const undo = addToList(items);
                 toast({
                   message: undo ? `${items.length} added to your shopping list` : 'Already on your shopping list',
@@ -176,7 +187,13 @@ export function RecipeScreen({ id }: { id: string }) {
               }}
             />
           ) : null}
-          <Ingredients recipe={recipe} servings={servings} units={units} have={havePills} />
+          <Ingredients
+            recipe={recipe}
+            servings={servings}
+            units={units}
+            have={havePills}
+            onAddToList={() => router.push({ pathname: '/recipe/[id]/list', params: { id: recipe.id, servings: String(servings) } })}
+          />
           <Method recipe={recipe} />
           <Notes notes={recipe.notes ?? []} />
           {photoNote ? (

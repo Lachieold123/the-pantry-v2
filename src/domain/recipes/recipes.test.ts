@@ -140,8 +140,9 @@ describe('the converted catalogue', () => {
     );
     assert.deepEqual(unknown, []);
   });
-  it('stays drafts until Lachlan vets them (D-008)', () => {
-    assert.ok(catalogue.every((r) => r.provenance === 'ai-draft'));
+  it('ships only what passed review; nothing claims a cook test yet (D-008, D-036)', () => {
+    assert.ok(catalogue.every((r) => r.provenance === 'reviewed' || r.provenance === 'ai-draft'));
+    assert.ok(catalogue.some((r) => r.provenance === 'reviewed'));
   });
 });
 

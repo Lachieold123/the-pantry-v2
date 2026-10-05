@@ -71,7 +71,7 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
       {!query.trim() && saved.length ? (
         <View style={{ gap: SPACE.sm }}>
           <Text variant="kickerSection" accessibilityRole="header">
-            Saved
+            From your Cookmarks
           </Text>
           {saved.map((r) => (
             <RecipeCard

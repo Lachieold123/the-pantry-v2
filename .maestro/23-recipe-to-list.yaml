@@ -1,0 +1,58 @@
+# Add a recipe's ingredients to the list without planning it (D-037). With an
+# empty cupboard everything not a staple starts ticked; the list then has
+# the recipe's things, and opening the sheet again names them as already there.
+appId: host.exp.Exponent
+---
+- launchApp:
+    clearState: true
+- openLink: ${METRO_URL}
+- runFlow: subflows/_setup_skip_welcome.yaml
+
+- runFlow:
+    file: subflows/_open_recipe.yaml
+    env:
+      RECIPE_ID: carbonara
+- scrollUntilVisible:
+    element:
+      id: "recipe-add-to-list"
+    direction: DOWN
+- tapOn:
+    id: "recipe-add-to-list"
+- assertVisible: "You need"
+- takeScreenshot: recipe-to-list-sheet
+# Untick the pecorino, then add the rest.
+- tapOn:
+    id: "list-row-pecorino"
+- scrollUntilVisible:
+    element:
+      id: "list-confirm"
+    direction: DOWN
+- assertVisible: "Add 3 to list"
+- tapOn:
+    id: "list-confirm"
+- assertVisible: "3 added to your shopping list"
+
+# Opening it again names what's already there.
+- tapOn:
+    id: "recipe-add-to-list"
+- scrollUntilVisible:
+    element:
+      id: "list-already"
+    direction: DOWN
+- tapOn:
+    id: "sheet-close"
+- tapOn:
+    id: "back"
+
+# The List tab has them, and not the pecorino.
+- tapOn:
+    id: "tab-list"
+- assertVisible:
+    id: "shopping-screen"
+- assertVisible:
+    id: "shopping-item-spaghetti"
+- assertVisible:
+    id: "shopping-item-guanciale"
+- assertNotVisible:
+    id: "shopping-item-pecorino"
+- takeScreenshot: recipe-to-list-on-list

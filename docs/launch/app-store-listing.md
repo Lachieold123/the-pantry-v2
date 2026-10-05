@@ -2,7 +2,7 @@
 
 **Written:** 5 October 2026, by Claude, from the code and the media pack. Every claim below was checked against the app as it is today (no accounts, no server, scanning "Coming soon"). Character counts were measured with Python; Apple counts characters the same way for these fields.
 
-> Before you paste anything in, read the **Blockers** in `README.md`. In particular, a store build currently shows no recipes, because every recipe is still marked `ai-draft`.
+> Before you paste anything in, read the **Blockers** in `README.md`. Recipes that passed the editorial review now ship (D-036); none is cook-tested yet.
 
 ## Name and subtitle
 
@@ -74,7 +74,7 @@ A note on allergies: "Ingredients to avoid" steers suggestions, but it isn't an 
 
 **Count: 1718 / 4,000**
 
-What it deliberately leaves out, because it isn't true yet: accounts, sharing dishes with other people, scanning, Pro, nutrition, and any number of recipes. Add a line such as "[number] recipes, each cook-tested in our kitchen" once you know the vetted count and it's true.
+What it deliberately leaves out, because it isn't true yet: accounts, sharing dishes with other people, scanning, Pro, nutrition, and any number of recipes. "[number] recipes" is true now (the reviewed count); "cook-tested" is only true for recipes you've cooked.
 
 ## Keywords
 

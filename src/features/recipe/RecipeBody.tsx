@@ -11,7 +11,7 @@ import type { Recipe } from '@/domain/recipes/types';
 import { Icon } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
-import { RADIUS, RECIPE, SPACE } from '@/ui/tokens/type';
+import { PRESSED, RADIUS, RECIPE, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 
 function Heading({ children }: { children: string }) {
   return (
@@ -22,9 +22,16 @@ function Heading({ children }: { children: string }) {
   );
 }
 
-type IngredientsProps = { recipe: Recipe; servings: number; units: UnitSystem; have: ReadonlySet<string> };
+type IngredientsProps = {
+  recipe: Recipe;
+  servings: number;
+  units: UnitSystem;
+  have: ReadonlySet<string>;
+  /** Opens "Add to list" (D-037). */
+  onAddToList: () => void;
+};
 
-export function Ingredients({ recipe, servings, units, have }: IngredientsProps) {
+export function Ingredients({ recipe, servings, units, have, onAddToList }: IngredientsProps) {
   const styles = useStyles();
   const [ticked, setTicked] = useState<ReadonlySet<string>>(new Set());
   const ratio = servings / recipe.servings;
@@ -37,7 +44,21 @@ export function Ingredients({ recipe, servings, units, have }: IngredientsProps)
     });
   return (
     <View style={styles.section}>
-      <Heading>Ingredients</Heading>
+      <View style={styles.headRow}>
+        <Heading>Ingredients</Heading>
+        <Pressable
+          onPress={onAddToList}
+          accessibilityRole="button"
+          accessibilityLabel="Add ingredients to your shopping list"
+          testID="recipe-add-to-list"
+          style={({ pressed }) => [styles.addToList, pressed && { opacity: PRESSED.row }]}
+        >
+          <Icon name="basket" size={RECIPE.addIcon} colour="accentText" />
+          <Text variant="label" colour="accentText">
+            Add to list
+          </Text>
+        </Pressable>
+      </View>
       {recipe.ingredientGroups.map((group, gi) => (
         <View key={gi}>
           {group.title ? (
@@ -148,6 +169,8 @@ function capitalise(s: string): string {
 
 const useStyles = makeStyles(({ colours }) => ({
   section: { gap: SPACE.sm },
+  headRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: SPACE.sm },
+  addToList: { flexDirection: 'row', alignItems: 'center', gap: SPACE.xxs, minHeight: TAP_TARGET, paddingLeft: SPACE.sm },
   groupTitle: { marginTop: SPACE.sm, marginBottom: SPACE.xxs },
   line: { flexDirection: 'row', alignItems: 'center', gap: SPACE.sm, paddingVertical: 7, minHeight: 36 },
   bullet: { width: RECIPE.bullet, height: RECIPE.bullet, borderRadius: RECIPE.bullet, backgroundColor: colours.bullet },

@@ -1,6 +1,7 @@
 // The bundled recipe catalogue and ingredient database, loaded once.
-// Store builds show only cook-tested recipes (D-008). Development and preview
-// builds (EXPO_PUBLIC_SHOW_DRAFT_RECIPES=1, set in eas.json) show the drafts too.
+// Store builds show recipes that passed the editorial review or a cook test
+// (D-008, D-036). Development and preview builds (EXPO_PUBLIC_SHOW_DRAFT_RECIPES=1,
+// set in eas.json) show the drafts too.
 import { buildKitchen, type KitchenData } from '@/domain/cupboard/kitchen';
 import { buildIngredientIndex, type IngredientDef } from '@/domain/ingredients/database';
 import type { Recipe } from '@/domain/recipes/types';
@@ -12,7 +13,9 @@ const all = recipesJson as unknown as Recipe[];
 
 const showDrafts = __DEV__ || process.env.EXPO_PUBLIC_SHOW_DRAFT_RECIPES === '1';
 
-export const CATALOGUE: readonly Recipe[] = showDrafts ? all : all.filter((r) => r.provenance === 'vetted');
+const SHIPS: ReadonlySet<string> = new Set(['reviewed', 'vetted']);
+
+export const CATALOGUE: readonly Recipe[] = showDrafts ? all : all.filter((r) => SHIPS.has(r.provenance ?? 'ai-draft'));
 
 const byId = new Map(CATALOGUE.map((r) => [r.id, r]));
 

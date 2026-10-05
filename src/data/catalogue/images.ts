@@ -30,7 +30,6 @@ export const RECIPE_IMAGES: Readonly<Record<string, number>> = {
   'beef-tacos': require('../../../assets/recipes/beef-tacos.jpg'),
   'beef-tikka': require('../../../assets/recipes/beef-tikka.jpg'),
   'beef-wellington': require('../../../assets/recipes/beef-wellington.jpg'),
-  bibimbap: require('../../../assets/recipes/bibimbap.jpg'),
   biryani: require('../../../assets/recipes/biryani.jpg'),
   'black-bean-chili': require('../../../assets/recipes/black-bean-chili.jpg'),
   'blt-sandwich': require('../../../assets/recipes/blt-sandwich.jpg'),

@@ -47,8 +47,12 @@ export const DIFFICULTIES = ['easy', 'medium', 'hard'] as const;
 export type Difficulty = (typeof DIFFICULTIES)[number];
 
 export type RecipeSource = 'house' | 'user' | 'imported';
-/** House recipes start as drafts and are shown in release builds only once cook-tested (D-008). */
-export type Provenance = 'vetted' | 'ai-draft';
+/**
+ * Where a house recipe stands (D-008, D-036): `ai-draft` until it has passed the
+ * line-by-line editorial review, `reviewed` once it has, `vetted` once Lachlan
+ * has cooked it. Release builds show reviewed and vetted recipes.
+ */
+export type Provenance = 'vetted' | 'reviewed' | 'ai-draft';
 
 export type IngredientGroupBlock = { title?: string; items: IngredientLine[] };
 export type Step = { text: string };

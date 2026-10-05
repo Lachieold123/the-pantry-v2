@@ -30,7 +30,7 @@ export function CookmarksScreen() {
   return (
     <Screen testID="cookmarks-screen">
       <View>
-        <LibraryHead kicker="Saved" title="Saved" count={recipes.length} unit={['item', 'items']} />
+        <LibraryHead kicker="Saved recipes" title="Cookmarks" count={recipes.length} unit={['item', 'items']} />
         {recipes.length ? (
           <LibraryCardGrid recipes={recipes} imageFor={imageFor} onOpen={open} onUnsave={(r) => unsave(r.id)} />
         ) : (

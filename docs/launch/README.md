@@ -12,7 +12,7 @@ Drafted by Claude on 5 October 2026 from a read-through of the code, `app.json` 
 
 These aren't in the documents' scope, but you'll hit them, so here they are first.
 
-1. **A store build shows no recipes.** Release builds only show recipes marked `vetted` (D-008), and all 285 are still `ai-draft`. Decide what "vetted" means (`docs/reports/recipe-review-2026-10.md`, question 1), and mark them, before the production build.
+1. ~~**A store build shows no recipes.**~~ Resolved 5 October (D-036): recipes that passed the editorial review ship as `reviewed` (273 of 285). None is cook-tested yet, so nothing may claim it is.
 2. **The "Tested in The Pantry kitchen" label doesn't exist in the app yet.** The terms only mention cook-testing in a bracketed choice. Keep whichever sentence is true.
 3. **Settings has no Privacy policy or Terms rows.** Apple requires the privacy policy to be easy to find inside the app (guideline 5.1.1). Add two rows to Settings › About that open the published pages.
 4. **Screenshots are the wrong size.** The media pack is 1170 × 2532 (6.1-inch). The required 6.9-inch set is 1320 × 2868. See the listing's screenshot plan.

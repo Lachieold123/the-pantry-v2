@@ -197,6 +197,31 @@ describe('ingredients added by hand', () => {
     const first = addExtras(EMPTY_EDITS, [{ text: 'Brown onion', ingredientId: 'brown-onion' }], () => 'x1', 1);
     assert.equal(addExtras(first.edits, [{ text: 'Onions', ingredientId: 'brown-onion' }], () => 'x2', 2).added.length, 0);
   });
+  it('carry a recipe’s amount, which adds to the plan’s (D-037)', () => {
+    const edits = addExtras(
+      EMPTY_EDITS,
+      [{ text: 'Beef mince', ingredientId: 'beef-mince', quantity: 250, unit: 'g', recipeId: 'curry' }],
+      () => 'x1',
+      1,
+    ).edits;
+    const item = list([entry('bolognese')], { edits })
+      .sections.flatMap((s) => s.items)
+      .find((i) => i.key === 'beef-mince');
+    assert.equal(item?.amount, '750 g');
+    assert.deepEqual(item?.recipeIds.sort(), ['bolognese', 'curry']);
+  });
+  it('from two different recipes are both kept, so both amounts count', () => {
+    const one = addExtras(EMPTY_EDITS, [{ text: 'Brown onion', ingredientId: 'brown-onion', quantity: 1, recipeId: 'a' }], () => 'x1', 1);
+    const two = addExtras(one.edits, [{ text: 'Brown onion', ingredientId: 'brown-onion', quantity: 2, recipeId: 'b' }], () => 'x2', 2);
+    assert.equal(two.added.length, 1);
+    assert.equal(find(list([], { edits: two.edits }), 'brown onion')?.amount, '3');
+  });
+  it('stay on the list even when the cupboard has them: asking is the newer signal', () => {
+    const edits = addExtras(EMPTY_EDITS, [{ text: 'Brown onion', ingredientId: 'brown-onion' }], () => 'x1', 1).edits;
+    const l = list([], { edits, cupboard: ['brown-onion'] });
+    assert.equal(l.inCupboard.length, 0);
+    assert.equal(l.sections.flatMap((s) => s.items)[0]?.key, 'brown-onion');
+  });
 });
 
 describe('juice from whole fruit', () => {

@@ -38,7 +38,7 @@ Our recipes have been written and checked with care, and some carry food-safety 
 
 **How the recipes were made.** The recipes in The Pantry were first drafted with the help of AI writing tools, then reviewed and edited by us. [Choose and keep one, once true: "Every recipe in the app has been cook-tested in our kitchen." / "Recipes marked 'Tested in The Pantry kitchen' have been cook-tested by us."]
 
-> Note for Lachlan: only keep a "cook-tested" sentence that's literally true for the build you ship. Today every recipe is still marked `ai-draft`, and the "Tested in The Pantry kitchen" label doesn't exist in the app yet (see README).
+> Note for Lachlan: only keep a "cook-tested" sentence that's literally true for the build you ship. Today shipped recipes are editorially reviewed (D-036) but none is cook-tested, and the "Tested in The Pantry kitchen" label doesn't exist in the app yet (see README).
 
 ## 5. Recipes and dishes you add
 

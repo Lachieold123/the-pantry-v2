@@ -19,7 +19,17 @@ import { allLines, type Recipe } from '../recipes/types';
  * moves into the cupboard like any other line. Free text ("dishwashing
  * liquid") stays a plain extra.
  */
-export type ListExtra = { id: string; text: string; addedAt: number; ingredientId?: string | undefined };
+export type ListExtra = {
+  id: string;
+  text: string;
+  addedAt: number;
+  ingredientId?: string | undefined;
+  /** How much, when it came from a recipe's ingredient line (D-037). Merges with the plan's amounts. */
+  quantity?: Quantity | undefined;
+  unit?: UnitId | undefined;
+  /** The recipe it came from, so the line can say so and the same recipe isn't added twice. */
+  recipeId?: string | undefined;
+};
 
 /** The cook's edits to one week's list. Values record what the edit applied to. */
 export type WeekListEdits = {
@@ -100,7 +110,7 @@ export function mergeAmounts(lines: readonly IngredientLine[]): { quantity: Quan
  */
 const JUICE_PER_FRUIT_ML: Readonly<Record<string, number>> = { lime: 30, lemon: 45, orange: 80 };
 
-function asWholeFruit(line: IngredientLine): IngredientLine {
+export function asWholeFruit(line: IngredientLine): IngredientLine {
   const perFruit = line.ingredientId ? JUICE_PER_FRUIT_ML[line.ingredientId] : undefined;
   const base = line.unit ? UNITS[line.unit].base : undefined;
   if (!perFruit || line.quantity === undefined || !line.unit || UNITS[line.unit].kind !== 'volume' || base === undefined) return line;
@@ -139,9 +149,15 @@ export function deriveShoppingList(args: {
     if (!extra.ingredientId) continue;
     const list = groups.get(extra.ingredientId) ?? [];
     list.push({
-      line: { item: extra.text, raw: extra.text, ingredientId: extra.ingredientId },
+      line: {
+        item: extra.text,
+        raw: extra.text,
+        ingredientId: extra.ingredientId,
+        ...(extra.quantity !== undefined ? { quantity: extra.quantity } : {}),
+        ...(extra.unit ? { unit: extra.unit } : {}),
+      },
       entryId: `extra:${extra.id}`,
-      recipeId: '',
+      recipeId: extra.recipeId ?? '',
     });
     groups.set(extra.ingredientId, list);
   }
@@ -175,7 +191,10 @@ export function deriveShoppingList(args: {
       checked: edits.checked[key] === amount,
       sourceStamp,
     };
-    if (def?.staple || cupboard.has(key)) {
+    // Something you put on the list yourself stays on it, even if the cupboard says you have it:
+    // asking for it is the newer, clearer signal (D-037).
+    const askedFor = contributions.some((c) => c.entryId.startsWith('extra:'));
+    if (!askedFor && (def?.staple || cupboard.has(key))) {
       inCupboard.push(item);
       continue;
     }
@@ -248,31 +267,5 @@ export function capitalise(text: string): string {
   return text.charAt(0).toUpperCase() + text.slice(1);
 }
 
-/** Something to put on the list: free text, or a known ingredient by id. */
-export type ListAddition = { text: string; ingredientId?: string | undefined };
-
-/**
- * Adds extras (for example the things a cupboard match is missing), skipping
- * any already on the list: the same ingredient, or the same text whatever its
- * case. Returns the edits and the extras actually added, so the caller can
- * offer undo.
- */
-export function addExtras(
-  edits: WeekListEdits,
-  additions: readonly (ListAddition | string)[],
-  makeId: () => string,
-  now: number,
-): { edits: WeekListEdits; added: ListExtra[] } {
-  const onList = new Set(edits.extras.map((x) => x.text.trim().toLowerCase()));
-  const ids = new Set(edits.extras.flatMap((x) => (x.ingredientId ? [x.ingredientId] : [])));
-  const added: ListExtra[] = [];
-  for (const a of additions) {
-    const { text: raw, ingredientId } = typeof a === 'string' ? { text: a, ingredientId: undefined } : a;
-    const text = raw.trim();
-    if (!text || onList.has(text.toLowerCase()) || (ingredientId && ids.has(ingredientId))) continue;
-    onList.add(text.toLowerCase());
-    if (ingredientId) ids.add(ingredientId);
-    added.push({ id: makeId(), text, addedAt: now, ...(ingredientId ? { ingredientId } : {}) });
-  }
-  return { edits: added.length ? { ...edits, extras: [...edits.extras, ...added] } : edits, added };
-}
+// Adding to the list by hand lives in ./extras; re-exported so callers keep one import.
+export { addExtras, type ListAddition } from './extras';

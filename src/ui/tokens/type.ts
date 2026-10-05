@@ -217,6 +217,8 @@ export const CARD = {
 /** The recipe page (spec §4.18): a fixed photo with the sheet sliding up over it. */
 export const RECIPE = {
   hero: 280,
+  /** The basket beside "Add to list" in the Ingredients heading. */
+  addIcon: 16,
   overlap: 32,
   handleWidth: 44,
   handleHeight: 5,

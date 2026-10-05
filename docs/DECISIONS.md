@@ -50,7 +50,7 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
 
 ## D-008 · Recipe content strategy (map §14 #1)
 
-- **Decision:** All 285 recipes are converted and kept, each marked `provenance: 'ai-draft'` until Lachlan cook-tests it and marks it `vetted`. Release builds show only vetted recipes, labelled "Tested in The Pantry kitchen"; development builds show everything. The target is about 80 vetted recipes at launch; choosing and cooking them is Lachlan's job.
+- **Decision (partly superseded by D-036, which ships reviewed recipes):** All 285 recipes are converted and kept, each marked `provenance: 'ai-draft'` until Lachlan cook-tests it and marks it `vetted`. Release builds show only vetted recipes, labelled "Tested in The Pantry kitchen"; development builds show everything. The target is about 80 vetted recipes at launch; choosing and cooking them is Lachlan's job.
 
 ## D-009 · Plan by real dates (map §14 #3)
 
@@ -104,7 +104,7 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
 ## D-018 · Test builds show draft recipes
 
 - **Date:** 29 September 2026 · **Decided by:** Claude (delegated)
-- **Decision:** Development and preview builds set `EXPO_PUBLIC_SHOW_DRAFT_RECIPES=1` (in `eas.json`), so Lachlan and testers see all 285 recipes. Store builds show vetted recipes only (D-008).
+- **Decision:** Development and preview builds set `EXPO_PUBLIC_SHOW_DRAFT_RECIPES=1` (in `eas.json`), so Lachlan and testers see all 285 recipes. Store builds show reviewed and vetted recipes (D-008, D-036).
 
 ## D-019 · Routes live in `src/app/`
 
@@ -296,3 +296,25 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
   - It points at the live views (`useTourTarget` in `store/tour`), not pictures, so it can't go stale when a screen changes. A recorded video would.
   - If a target isn't on screen, the card shows centred without a spotlight, rather than pointing at nothing.
   - It needs no new native module.
+
+## D-036 · Reviewed recipes ship; Lachlan's content calls
+
+- **Date:** 5 October 2026 · **Decided by:** Lachlan
+- **Decision:** Recipes that passed the October editorial review (`docs/reports/recipe-review-2026-10.md`) ship in store builds without a cook test. A new provenance, `reviewed`, sits between `ai-draft` and `vetted`; the converter sets it from `scripts/data/recipe-review-2026-10.json`. The 12 recipes waiting on a question stay `ai-draft` (hidden in store builds) until their question is answered. `vetted` still means Lachlan has cooked it, and earns a small ranking boost.
+- **Also decided:**
+  - Hard cheeses made with animal rennet (parmesan, Gruyère, pecorino) count as vegetarian. This was already how diets were worked out; nothing changed.
+  - "Shrimp" titles say "Prawn" (seven recipes). Ids stay the same so saved recipes and plans keep working. "Shrimp paste" and "dried shrimp" keep their names: that's what the jar says.
+  - Bibimbap's photo showed a bulgogi bowl, so it's dropped (`image: false` in `recipe-fixes.json`) and the recipe shows its cuisine tile until a real photo is found.
+  - The saved-recipes page is called **Cookmarks** everywhere it's named; the verb on a recipe stays "Save".
+
+## D-037 · Add a recipe's ingredients to the list, without planning it
+
+- **Date:** 5 October 2026 · **Decided by:** Lachlan asked; Claude designed
+- **Why:** The list was built only from the plan (and single things added by hand). Cooking something you don't want in the plan — Saturday's dinner for friends, a cake — meant planning it or typing each item.
+- **Decision:** An "Add to list" link in a recipe's Ingredients heading opens a sheet (`/recipe/[id]/list`):
+  - One row per thing to buy, merged the way the list merges it, scaled to the servings chosen in the sheet (starting from the page's).
+  - What you need starts ticked. What your cupboard has, staples and optional lines start unticked but can be ticked. Lines this recipe already put on the list (planned, or added before) are named as "Already on your list", not offered again.
+  - Added lines are extras that carry their ingredient, amount and recipe, so they merge with the plan's amounts ("500 g + 250 g" adds up) and say which recipe they're for. The same ingredient from two recipes counts twice; from the same recipe, once.
+  - Something you put on the list yourself stays on it even if the cupboard says you have it: asking is the newer signal.
+  - The recipe page's "Add N to list" (what's missing from your cupboard) uses the same rows, so it now carries amounts too.
+- **Edge cases:** two amounts that can't be added for one ingredient ("2 onions" and "200 g onion") keep the first; a deleted recipe's extras stay on the list as plain lines until removed; the list is still worked out from the plan plus your edits, never stored as a copy.

@@ -35,6 +35,12 @@ if (!oldApp || !existsSync(join(oldApp, 'src/data/recipes.ts'))) {
 
 const { RECIPES } = (await import(pathToFileURL(join(oldApp, 'src/data/recipes.ts')).href)) as { RECIPES: Record<string, OldRecipe> };
 const tags = JSON.parse(readFileSync(join(root, 'scripts/data/recipe-tags.json'), 'utf8')) as Record<string, Tags>;
+// The editorial review (D-036): a recipe that passed ships as `reviewed`; one
+// waiting on Lachlan's answer stays an `ai-draft`, hidden from store builds.
+const review = JSON.parse(readFileSync(join(root, 'scripts/data/recipe-review-2026-10.json'), 'utf8')) as Record<
+  string,
+  { verdict: string }
+>;
 const credits = JSON.parse(readFileSync(join(oldApp, 'src/data/recipeImageCredits.json'), 'utf8')) as Record<string, Credit>;
 const { fixes, everywhere } = JSON.parse(readFileSync(join(root, 'scripts/data/recipe-fixes.json'), 'utf8')) as {
   fixes: Record<string, Fix>;
@@ -84,7 +90,7 @@ for (const id of Object.keys(RECIPES).sort()) {
     });
     return group.section ? { title: group.section, items } : { items };
   });
-  const hasImage = existsSync(join(oldApp, 'assets/recipes', `${id}.jpg`));
+  const hasImage = fixes[id]?.image !== false && existsSync(join(oldApp, 'assets/recipes', `${id}.jpg`));
   if (!hasImage) noImage.push(id);
   const credit = credits[id];
   const recipe: Recipe = {
@@ -117,7 +123,7 @@ for (const id of Object.keys(RECIPES).sort()) {
     steps: old.steps.map((text) => ({ text })),
     ...(old.notes?.length ? { notes: old.notes } : {}),
     source: 'house',
-    provenance: 'ai-draft',
+    provenance: review[id] && review[id].verdict !== 'needs-lachlan' ? 'reviewed' : 'ai-draft',
   };
   if (!old.difficulty) problems.push(`${id}: no difficulty in the old data; set to easy`);
   for (const p of validateRecipe(recipe)) problems.push(`${id}: ${p.path} ${p.message}`);
