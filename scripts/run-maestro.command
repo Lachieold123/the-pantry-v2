@@ -4,7 +4,7 @@
 #
 # What it does:
 #   1. checks Xcode's simulator tools and the Maestro CLI are installed
-#   2. boots an iPhone simulator if none is running
+#   2. restarts an iPhone simulator (iOS 26 preferred) so testing starts clean
 #   3. installs npm packages if they're missing
 #   4. starts its own Metro (port 8082, no questions asked) with Expo Go, and waits for it
 #   5. runs every flow and writes the report and screenshots to
@@ -94,20 +94,32 @@ if ! command -v npm >/dev/null 2>&1; then
   finish 1
 fi
 
-say "Checking for a running iPhone simulator"
-if xcrun simctl list devices booted | grep -q "(Booted)"; then
-  echo "A simulator is already running."
-else
-  UDID="$(xcrun simctl list devices available | grep -E '^[[:space:]]+iPhone' | head -n 1 | sed -E 's/.*\(([0-9A-Fa-f-]{36})\).*/\1/')"
-  if [ -z "$UDID" ]; then
-    echo "No iPhone simulator found. In Xcode, open Settings > Components and"
-    echo "download an iOS simulator, then double-click this file again."
-    finish 1
-  fi
-  echo "Booting simulator $UDID"
-  xcrun simctl boot "$UDID" || finish 1
-  xcrun simctl bootstatus "$UDID" -b >/dev/null 2>&1
+say "Preparing an iPhone simulator"
+echo "Maestro $(maestro --version 2>/dev/null | tail -n 1)"
+# Which simulator: PANTRY_SIM_UDID if set, otherwise an iPhone on iOS 26, otherwise
+# the first iPhone. On 6 October 2026 Maestro's helper couldn't connect to the
+# iOS 27 simulator ("failed to bless service hub"), so iOS 26 is preferred until
+# Maestro supports 27.
+UDID="${PANTRY_SIM_UDID:-}"
+if [ -z "$UDID" ]; then
+  UDID="$(xcrun simctl list devices available | awk '/^-- iOS 26/{ok=1; next} /^--/{ok=0} ok && /iPhone/{print; exit}' | sed -E 's/.*\(([0-9A-Fa-f-]{36})\).*/\1/')"
 fi
+if [ -z "$UDID" ]; then
+  UDID="$(xcrun simctl list devices available | grep -E '^[[:space:]]+iPhone' | head -n 1 | sed -E 's/.*\(([0-9A-Fa-f-]{36})\).*/\1/')"
+  echo "No iOS 26 iPhone simulator found, so using the newest one. If Maestro can't connect,"
+  echo "install the iOS 26 simulator in Xcode > Settings > Components and run this again."
+fi
+if [ -z "$UDID" ]; then
+  echo "No iPhone simulator found. In Xcode, open Settings > Components and"
+  echo "download an iOS simulator, then double-click this file again."
+  finish 1
+fi
+# Start clean every time: a simulator left running can hold a stale testing
+# service, which stops Maestro's helper connecting.
+echo "Restarting simulator $UDID"
+xcrun simctl shutdown all >/dev/null 2>&1
+xcrun simctl boot "$UDID" || finish 1
+xcrun simctl bootstatus "$UDID" -b >/dev/null 2>&1
 # Simulator.app lives inside Xcode, so open it by path.
 open -a "$(xcode-select -p)/Applications/Simulator.app" 2>/dev/null ||
   open -a /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app 2>/dev/null || true
@@ -174,7 +186,7 @@ RUN_LOG="$OUT_DIR/maestro-run.log"
 RESULT=1
 for attempt in 1 2; do
   rm -rf "$TEST_OUTPUT" "$REPORT"
-  maestro test .maestro/ -e METRO_URL="exp://127.0.0.1:$METRO_PORT" --format junit --output "$REPORT" --test-output-dir "$TEST_OUTPUT" 2>&1 | tee "$RUN_LOG"
+  maestro --device "$UDID" test .maestro/ -e METRO_URL="exp://127.0.0.1:$METRO_PORT" --format junit --output "$REPORT" --test-output-dir "$TEST_OUTPUT" 2>&1 | tee "$RUN_LOG"
   RESULT=${PIPESTATUS[0]}
   if [ "$RESULT" -ne 0 ] && grep -q "iOS driver not ready" "$RUN_LOG" && [ "$attempt" -eq 1 ]; then
     say "Maestro's helper took too long to start. Trying once more"
