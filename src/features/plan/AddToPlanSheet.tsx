@@ -21,6 +21,7 @@ import { Sheet } from '@/ui/primitives/Sheet';
 import { Text } from '@/ui/primitives/Text';
 import { SPACE } from '@/ui/tokens/type';
 import { goBack } from '@/lib/navigation';
+import { usePlanAhead } from '@/store/pro';
 
 const SLOTS = [
   { value: 'breakfast', label: 'Breakfast' },
@@ -35,6 +36,7 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
   const router = useRouter();
   const toast = useToast();
   const addEntry = usePlan((s) => s.addEntry);
+  const planAhead = usePlanAhead();
   const removeEntry = usePlan((s) => s.removeEntry);
   const bookmarks = useSaved((s) => s.bookmarks);
   const hidden = useSaved((s) => s.hidden);
@@ -59,6 +61,8 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
 
   const dayName = day === toISODate(new Date()) ? 'today' : (longDate(fromISODate(day)).split(' ')[0] ?? day);
   const pick = (recipe: Recipe) => {
+    // A link straight to a day next week still meets the plan-ahead check (D-038).
+    if (!planAhead(day)) return;
     const entry = addEntry(recipe.id, day, slot, recipe.servings);
     toast({ message: `${recipe.title} planned for ${dayName} ${slot}`, undo: () => removeEntry(entry.id) });
     goBack(router);

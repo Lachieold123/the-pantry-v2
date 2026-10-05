@@ -71,6 +71,7 @@ function RootStack() {
       <Stack.Screen name="recipe/[id]/plan" options={SHEET} />
       <Stack.Screen name="recipe/[id]/collect" options={SHEET} />
       <Stack.Screen name="recipe/[id]/list" options={SHEET} />
+      <Stack.Screen name="pro" options={SHEET} />
       <Stack.Screen name="recipe/[id]/cook" options={{ presentation: 'fullScreenModal', gestureEnabled: false }} />
       {/* v1's Filters is a page with a back button, so it pushes like one rather than rising as a sheet. */}
       <Stack.Screen name="filters" />

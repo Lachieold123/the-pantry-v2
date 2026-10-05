@@ -25,11 +25,13 @@ import { useTheme } from '@/ui/theme/ThemeProvider';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { cuisineEyebrow } from '@/ui/tokens/cuisine';
 import { PLAN, RADIUS, SPACE } from '@/ui/tokens/type';
+import { usePlanAhead } from '@/store/pro';
 
 const SLOT_NAMES: Record<Slot, string> = { breakfast: 'Breakfast', lunch: 'Lunch', dinner: 'Dinner' };
 
 export function DaySlots({ day, entries, past }: { day: ISODate; entries: readonly PlanEntry[]; past: boolean }) {
   const router = useRouter();
+  const planAhead = usePlanAhead();
   const styles = useStyles();
   return (
     <View style={styles.list}>
@@ -47,7 +49,7 @@ export function DaySlots({ day, entries, past }: { day: ISODate; entries: readon
               {inSlot.length === 0 && past ? <Text variant="meta">Nothing planned</Text> : null}
               {inSlot.length === 0 && !past ? (
                 <Pressable
-                  onPress={() => router.push({ pathname: '/plan/add', params: { day, slot } })}
+                  onPress={() => planAhead(day) && router.push({ pathname: '/plan/add', params: { day, slot } })}
                   accessibilityRole="button"
                   accessibilityLabel={`Add ${SLOT_NAMES[slot].toLowerCase()}`}
                   testID={`plan-add-${day}-${slot}`}

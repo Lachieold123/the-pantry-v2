@@ -589,6 +589,8 @@ These are built late on purpose, because they combine everything else.
 
 ### Phase 8: Pro
 
+**Status (6 October):** built to the purchase boundary (D-038, `docs/PRO.md`). RevenueCat waits for Lachlan's go-ahead on the dependency and key.
+
 - **Build:** RevenueCat with the existing products, paywall sheet (designed per trigger), restore purchases, entitlement slice.
 - **Proposed Pro gates** (to confirm, see §14 and `PRODUCT.md` §6, decision A): unlimited collections (free: 3), planning next week, nutrition detail. **Proposed rule (pending decision A):** a free user can always complete the North Star journey for this week (plan, list, share, cook with timers). The old app broke this by gating the planner and Cook Mode.
 - **Done when:**

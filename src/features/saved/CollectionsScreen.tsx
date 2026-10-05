@@ -15,11 +15,13 @@ import { Screen } from '@/ui/primitives/Screen';
 import { LIBRARY } from '@/ui/tokens/library';
 import { CollectionActions, nameProblem } from './CollectionActions';
 import { imageFor, useRecipesFor } from './libraryHooks';
+import { useAllowance } from '@/store/pro';
 
 export function CollectionsScreen() {
   const router = useRouter();
   const collections = useSaved((s) => s.collections);
   const createCollection = useSaved((s) => s.createCollection);
+  const allowed = useAllowance();
   const recipesFor = useRecipesFor();
   const [creating, setCreating] = useState(false);
   const [actionsFor, setActionsFor] = useState<string | null>(null);
@@ -34,7 +36,7 @@ export function CollectionsScreen() {
       <View>
         <LibraryHead kicker="Collections" title="Your shelves" count={collections.length} unit={['collection', 'collections']} />
         <View style={{ paddingTop: LIBRARY.actionsTop, paddingBottom: LIBRARY.actionsBottom }}>
-          <Button label="New collection" icon="add" onPress={() => setCreating(true)} testID="collections-new" />
+          <Button label="New collection" icon="add" onPress={() => allowed('collections') && setCreating(true)} testID="collections-new" />
         </View>
         {items.length ? (
           <CollectionMosaicGrid

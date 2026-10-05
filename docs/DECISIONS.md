@@ -318,3 +318,15 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
   - Something you put on the list yourself stays on it even if the cupboard says you have it: asking is the newer signal.
   - The recipe page's "Add N to list" (what's missing from your cupboard) uses the same rows, so it now carries amounts too.
 - **Edge cases:** two amounts that can't be added for one ingredient ("2 onions" and "200 g onion") keep the first; a deleted recipe's extras stay on the list as plain lines until removed; the list is still worked out from the plan plus your edits, never stored as a copy.
+
+## D-038 · Freemium: Pro is planning ahead and no ceilings
+
+- **Date:** 6 October 2026 · **Decided by:** Lachlan (each option as recommended)
+- **Decision:** The plan is `docs/PRO.md`.
+  - **What's free:** everything in the North Star for the week you're shopping for.
+  - **What's Pro:** planning next week, and no limits on collections (free: 3), your own recipes (free: 10), link imports (free: 5 a month) and, once live, scanning (free: 3 a month).
+  - **Price:** the existing RevenueCat products, with a 7-day trial on the yearly plan.
+  - **Timing:** Pro goes live at launch.
+- **Built now:** the domain rules and tests, the Pro store with a mirror of the entitlement, the paywall (worded for what triggered it, honest about not being on sale yet), the gates, Settings' Pro section, development switches to preview limits and pretend to be Pro, and Maestro flow 24.
+- **Waits for Lachlan:** RevenueCat's library (a new native dependency), the public SDK key, the App Store Connect trial offer, and the hosted legal pages. Until purchases are connected, no free limit applies.
+- **Lapsing never takes anything away.** It only stops making more past a limit.

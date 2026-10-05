@@ -12,6 +12,7 @@ import { TextField } from '@/ui/primitives/TextField';
 import { SPACE } from '@/ui/tokens/type';
 import { usePendingImport } from './pendingImport';
 import { goBack } from '@/lib/navigation';
+import { usePro } from '@/store/pro';
 
 const TIMEOUT_MS = 15_000;
 
@@ -37,6 +38,7 @@ async function fetchPage(url: string): Promise<string> {
 export function ImportLinkScreen() {
   const router = useRouter();
   const setPending = usePendingImport((s) => s.set);
+  const recordImport = usePro((s) => s.recordImport);
   const [link, setLink] = useState('');
   const [busy, setBusy] = useState(false);
   const [failure, setFailure] = useState<Failure | undefined>();
@@ -56,6 +58,8 @@ export function ImportLinkScreen() {
     setBusy(false);
     const draft = extractRecipe(html);
     if (!draft) return setFailure('no-recipe');
+    // Only an import that found a recipe counts towards the free 5 a month.
+    recordImport();
     setPending({ draft, url });
     router.replace({ pathname: '/my-recipe/edit', params: { from: 'import' } });
   };

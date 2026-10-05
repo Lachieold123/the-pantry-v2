@@ -10,12 +10,15 @@ import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { Button } from '@/ui/primitives/Button';
 import { ListRow } from '@/ui/primitives/ListRow';
 import { SPACE } from '@/ui/tokens/type';
+import { useAllowance } from '@/store/pro';
 
 export function MineList() {
   const router = useRouter();
   const mine = useMyRecipeList();
-  const write = () => router.push('/my-recipe/edit');
-  const importLink = () => router.push('/my-recipe/import');
+  const allowed = useAllowance();
+  // Free keeps 10 recipes of your own and imports 5 links a month (D-038).
+  const write = () => allowed('my-recipes') && router.push('/my-recipe/edit');
+  const importLink = () => allowed('my-recipes') && allowed('imports') && router.push('/my-recipe/import');
   const edit = (id: string) => router.push({ pathname: '/my-recipe/edit', params: { id } });
 
   if (mine.length === 0) {

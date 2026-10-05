@@ -23,6 +23,8 @@ import { CHROME, PLAN, SPACE } from '@/ui/tokens/type';
 import { DaySlots } from './DaySlots';
 import { DaySuggestions, ListSummaryCard, WeekProgress } from './PlanParts';
 import { WeekStrip } from './WeekStrip';
+import { useDayLocked, useOpenPaywall } from '@/store/pro';
+import { ProNudge } from '@/ui/patterns/ProNudge';
 
 export function PlanScreen() {
   const router = useRouter();
@@ -37,6 +39,9 @@ export function PlanScreen() {
   const progress = weekProgress(entries, week);
   const dayWeek = useWeekList(week);
   const past = isPast(selected, today);
+  // Past the week you're shopping for is Pro (D-038). What's already planned there still shows.
+  const locked = useDayLocked()(selected);
+  const openPaywall = useOpenPaywall();
 
   const share = async () => {
     const text = weekAsText(
@@ -75,8 +80,18 @@ export function PlanScreen() {
           {weekdayName(fromISODate(selected))}
           <Text variant="numberDay" colour="inkMuted">{` · ${shortDate(fromISODate(selected))}`}</Text>
         </Text>
+        {locked ? (
+          <View style={{ marginBottom: SPACE.md }}>
+            <ProNudge
+              title="Planning ahead is Pro"
+              body="Free plans up to the end of the week you’re shopping for. Pro plans next week too."
+              onPress={() => openPaywall('plan-ahead')}
+              testID="plan-pro-nudge"
+            />
+          </View>
+        ) : null}
         <DaySlots day={selected} entries={entriesFor(entries, selected)} past={past} />
-        {past ? null : <DaySuggestions day={selected} slot={firstOpenSlot(entries, selected)} />}
+        {past || locked ? null : <DaySuggestions day={selected} slot={firstOpenSlot(entries, selected)} />}
         <ListSummaryCard
           list={dayWeek.list}
           meals={dayWeek.meals}

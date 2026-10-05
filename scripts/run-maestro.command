@@ -164,9 +164,25 @@ if ! xcrun simctl listapps booted 2>/dev/null | grep -q "host.exp.Exponent"; the
 fi
 
 say "Running the Maestro suite"
-rm -rf "$TEST_OUTPUT" "$REPORT"
-maestro test .maestro/ -e METRO_URL="exp://127.0.0.1:$METRO_PORT" --format junit --output "$REPORT" --test-output-dir "$TEST_OUTPUT"
-RESULT=$?
+# The first run on a freshly booted simulator installs Maestro's helper app
+# there, which can take a few minutes; the default wait is too short and the
+# run fails before any flow starts ("iOS driver not ready in time"). Wait
+# longer, and if it still times out, try once more: the helper is installed
+# by then.
+export MAESTRO_DRIVER_STARTUP_TIMEOUT=300000
+RUN_LOG="$OUT_DIR/maestro-run.log"
+RESULT=1
+for attempt in 1 2; do
+  rm -rf "$TEST_OUTPUT" "$REPORT"
+  maestro test .maestro/ -e METRO_URL="exp://127.0.0.1:$METRO_PORT" --format junit --output "$REPORT" --test-output-dir "$TEST_OUTPUT" 2>&1 | tee "$RUN_LOG"
+  RESULT=${PIPESTATUS[0]}
+  if [ "$RESULT" -ne 0 ] && grep -q "iOS driver not ready" "$RUN_LOG" && [ "$attempt" -eq 1 ]; then
+    say "Maestro's helper took too long to start. Trying once more"
+    sleep 5
+    continue
+  fi
+  break
+done
 
 if [ "$RESULT" -eq 0 ]; then
   say "All flows passed."

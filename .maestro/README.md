@@ -64,6 +64,7 @@ writing or fixing a flow.
 | `21-list-tab.yaml` | Plan a recipe, then tick an item off on the List tab: count drops by one, it moves to the cupboard, unticking takes it back |
 | `22-first-use-tour.yaml` | The tour appears after Skip on a fresh install, Skip tour ends it, a relaunch doesn't bring it back, Settings replays all four stops |
 | `23-recipe-to-list.yaml` | Carbonara's "Add to list": untick one, add the rest, the sheet then names what's already on the list, and the List tab has them |
+| `24-pro.yaml` | Settings' Pro row opens a paywall that says Pro isn't on sale yet; with the development "Preview the free limits" switch on, planning next Sunday opens Pro instead (Monday to Saturday) |
 
 Shared steps live in `subflows/` and only run when a flow calls them:
 

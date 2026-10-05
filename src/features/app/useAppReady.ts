@@ -11,6 +11,7 @@ import { useMyRecipes } from '@/store/myRecipes';
 import { importFromOldAppOnce, useWelcomeBack } from '@/store/oldAppImport';
 import { usePlan } from '@/store/plan';
 import { usePreferences } from '@/store/preferences';
+import { refreshEntitlement, usePro } from '@/store/pro';
 import { useSaved } from '@/store/saved';
 import { allHydrated } from '@/store/storage';
 import { FONT_FILES } from '@/ui/theme/fonts';
@@ -18,8 +19,10 @@ import { FONT_FILES } from '@/ui/theme/fonts';
 async function prepare(): Promise<void> {
   // Every store, so nothing on the first screen jumps in late (audit PERF-7). The wait has
   // a limit, so a store that never loads can't hold the splash screen up forever (ARCH-6).
-  const loaded = await allHydrated([usePreferences, usePlan, useSaved, useCookLog, useCupboard, useMyRecipes, useWelcomeBack]);
+  const loaded = await allHydrated([usePreferences, usePlan, useSaved, useCookLog, useCupboard, useMyRecipes, useWelcomeBack, usePro]);
   if (loaded === 'timed-out') console.warn('[startup] saved data took too long to load; opening anyway');
+  // Ask the store who is Pro; the saved mirror covers an offline start. Never blocks opening.
+  void refreshEntitlement();
   try {
     await importFromOldAppOnce();
   } catch (e) {

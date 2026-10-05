@@ -13,6 +13,7 @@ import { Text } from '@/ui/primitives/Text';
 import { TextField } from '@/ui/primitives/TextField';
 import { SPACE } from '@/ui/tokens/type';
 import { goBack } from '@/lib/navigation';
+import { useAllowance } from '@/store/pro';
 
 export function CollectSheet({ id }: { id: string }) {
   const router = useRouter();
@@ -22,12 +23,15 @@ export function CollectSheet({ id }: { id: string }) {
   const collections = useSaved((s) => s.collections);
   const toggleInCollection = useSaved((s) => s.toggleInCollection);
   const createCollection = useSaved((s) => s.createCollection);
+  const allowed = useAllowance();
   const [name, setName] = useState('');
   const trimmed = name.trim();
   const duplicate = collections.some((c) => c.name.toLowerCase() === trimmed.toLowerCase());
 
   const create = () => {
     if (!trimmed || duplicate) return;
+    // Free keeps 3 collections (D-038); a fourth opens Pro instead.
+    if (!allowed('collections')) return;
     const newId = createCollection(trimmed);
     toggleInCollection(newId, id);
     setName('');

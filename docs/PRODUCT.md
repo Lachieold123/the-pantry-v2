@@ -196,7 +196,7 @@ For each feature: its **job** (what it does for the user), **edge cases** (where
 - **Job:** pay for the app's development without making the free version feel broken.
 - **Includes:** RevenueCat with the existing products (`thepantry_pro_monthly` $4.99, `thepantry_pro_yearly` $44.99), a paywall sheet worded for whatever feature triggered it, restore purchases.
 - **Working:** sandbox purchase, restore and expiry all work on a real phone; Pro survives restarts; no purchase button is ever dead; terms and privacy links on the paywall load.
-- **Which features are Pro is an open decision.** See §6, decision A.
+- **Decided (D-038):** see `docs/PRO.md`. Free keeps the whole North Star for the week you're shopping for; Pro plans next week and lifts the limits on collections, your own recipes, imports and scans.
 
 ### 4.15 Bringing across old TestFlight data
 

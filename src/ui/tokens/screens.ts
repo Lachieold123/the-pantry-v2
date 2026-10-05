@@ -141,3 +141,9 @@ export const TOUR = {
   dotGap: 6,
   startDelay: 700,
 } as const;
+
+/** The Pro paywall (D-038): the plan rows' radio icon and the benefit ticks. */
+export const PRO = {
+  planIcon: 22,
+  benefitIcon: 18,
+} as const;

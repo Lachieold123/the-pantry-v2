@@ -20,6 +20,7 @@ import { useTheme } from '@/ui/theme/ThemeProvider';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { cuisineEyebrow } from '@/ui/tokens/cuisine';
 import { PLAN, RADIUS, SPACE } from '@/ui/tokens/type';
+import { usePlanAhead } from '@/store/pro';
 
 const RAIL = 8;
 const PREVIEW = 5;
@@ -59,6 +60,7 @@ export function DaySuggestions({ day, slot }: SuggestProps) {
   const toast = useToast();
   const addEntry = usePlan((s) => s.addEntry);
   const removeEntry = usePlan((s) => s.removeEntry);
+  const planAhead = usePlanAhead();
   const { ready, nearly } = useCookableNow();
   const forYou = useForYou(RAIL * 3);
   const fits = (r: Recipe) => !slot || r.mealTypes.includes(slot);
@@ -72,6 +74,7 @@ export function DaySuggestions({ day, slot }: SuggestProps) {
       router.push({ pathname: '/recipe/[id]', params: { id: recipe.id } });
       return;
     }
+    if (!planAhead(day)) return;
     const entry = addEntry(recipe.id, day, slot, recipe.servings);
     toast({ message: `${recipe.title} added for ${slot}`, undo: () => removeEntry(entry.id) });
   };

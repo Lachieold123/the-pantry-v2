@@ -28,12 +28,14 @@ import { useTheme } from '@/ui/theme/ThemeProvider';
 import { RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 import { BrowseSections } from './BrowseSections';
 import { useRecipeResults } from './useRecipeResults';
+import { useAllowance } from '@/store/pro';
 
 const image = (id: string) => RECIPE_IMAGES[id];
 const RowGap = () => <View style={{ height: SPACE.sm }} />;
 
 export function RecipesScreen({ focusSearch = false }: { focusSearch?: boolean }) {
   const router = useRouter();
+  const allowed = useAllowance();
   const insets = useSafeAreaInsets();
   const { colours } = useTheme();
   const styles = useStyles();
@@ -71,7 +73,7 @@ export function RecipesScreen({ focusSearch = false }: { focusSearch?: boolean }
             shape="chip"
             size={18}
             label="Add a recipe"
-            onPress={() => router.push('/my-recipe/edit')}
+            onPress={() => allowed('my-recipes') && router.push('/my-recipe/edit')}
             testID="browse-add-recipe"
           />
         }

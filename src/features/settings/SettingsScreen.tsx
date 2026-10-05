@@ -1,7 +1,7 @@
 // Settings, opened from the side menu and the avatar, in v1's layout: a grey
 // page of white cards under small labels (spec §7 Settings). Only settings
-// that do something in v2 today appear: v1's Privacy, Pantry Pro and account
-// rows wait until those features exist (no fake rows).
+// that do something in v2 today appear: v1's Privacy and account rows wait
+// until those features exist (no fake rows). Pro has its own section (D-038).
 // The Sunday reminder only reads as on when the phone will actually deliver it.
 import Constants from 'expo-constants';
 import { useRouter } from 'expo-router';
@@ -17,6 +17,7 @@ import { Segmented } from '@/ui/primitives/Segmented';
 import { Text } from '@/ui/primitives/Text';
 import { SETTINGS, TOUR } from '@/ui/tokens/screens';
 import { CookingSection } from './CookingSection';
+import { ProSection } from './ProSection';
 import { CardButton, ChoiceRow, InfoRow, SettingsSection, SwitchRow } from './SettingsParts';
 
 const APPEARANCE = [
@@ -84,6 +85,8 @@ export function SettingsScreen() {
           testID="settings-sunday-reminder"
         />
       </SettingsSection>
+
+      <ProSection />
 
       <SettingsSection label="About">
         <InfoRow icon="info" label="Version" value={VERSION} />

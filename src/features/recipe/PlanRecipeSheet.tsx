@@ -16,6 +16,7 @@ import { Text } from '@/ui/primitives/Text';
 import { SPACE } from '@/ui/tokens/type';
 import { planningDays } from './weekChoices';
 import { goBack } from '@/lib/navigation';
+import { useDayLocked, usePlanAhead } from '@/store/pro';
 
 const SLOTS = [
   { value: 'breakfast', label: 'Breakfast' },
@@ -29,6 +30,8 @@ export function PlanRecipeSheet({ id }: { id: string }) {
   const recipe = useRecipe(id);
   const addEntry = usePlan((s) => s.addEntry);
   const removeEntry = usePlan((s) => s.removeEntry);
+  const planAhead = usePlanAhead();
+  const locked = useDayLocked();
   const days = planningDays();
   const [day, setDay] = useState(days.thisWeek[0]?.iso ?? days.nextWeek[0]?.iso ?? '');
   const defaultSlot: Slot =
@@ -55,6 +58,7 @@ export function PlanRecipeSheet({ id }: { id: string }) {
       : `${chosen.long === 'tonight' ? 'today' : chosen.long} ${slot}`
     : slot;
   const add = () => {
+    if (!planAhead(day)) return;
     const entry = addEntry(recipe.id, day, slot, servings);
     toast({ message: `${recipe.title} planned for ${where}`, undo: () => removeEntry(entry.id) });
     goBack(router);
@@ -71,6 +75,7 @@ export function PlanRecipeSheet({ id }: { id: string }) {
             <Text variant="kickerSection" accessibilityRole="header">
               {w.title}
             </Text>
+            {w.list.some((d) => locked(d.iso)) ? <Text variant="caption">Planning this far ahead is part of Pro.</Text> : null}
             <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: SPACE.xs }}>
               {/* Ids by position, so a test can always pick "today" (this-0) or next week's first day (next-0). */}
               {w.list.map((d, i) => (
@@ -104,7 +109,13 @@ export function PlanRecipeSheet({ id }: { id: string }) {
           testID="plan-servings"
         />
       </View>
-      <Button label={`Add to ${where}`} kind="primary" block onPress={add} testID="plan-confirm" />
+      <Button
+        label={locked(day) ? 'See Pro to plan this far ahead' : `Add to ${where}`}
+        kind="primary"
+        block
+        onPress={add}
+        testID="plan-confirm"
+      />
     </Sheet>
   );
 }
