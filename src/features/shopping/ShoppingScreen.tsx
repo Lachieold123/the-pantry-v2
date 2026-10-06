@@ -6,20 +6,22 @@
 // can ask for a week with ?week=next.
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useState } from 'react';
-import { View } from 'react-native';
+import { Pressable, View } from 'react-native';
 
 import { entriesInWeek, fromISODate, toISODate, visibleWeeks } from '@/domain/plan/week';
 import { AISLE_LABELS } from '@/domain/recipes/labels';
 import { formatListForSharing } from '@/domain/shopping/derive';
 import { weekRange } from '@/lib/dates';
 import { shareText } from '@/lib/share';
+import { useHousehold } from '@/store/household';
 import { usePlan } from '@/store/plan';
 import { useWeekList } from '@/store/shoppingList';
 import { TitleBlock } from '@/ui/patterns/TitleBlock';
 import { useToast } from '@/ui/patterns/Toast';
 import { IconButton } from '@/ui/primitives/IconButton';
+import { Text } from '@/ui/primitives/Text';
 import { Screen } from '@/ui/primitives/Screen';
-import { CHROME, PLAN, SPACE } from '@/ui/tokens/type';
+import { CHROME, PLAN, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 import { ShoppingListView } from './ShoppingListView';
 import { Pill } from './ShoppingRows';
 
@@ -86,8 +88,32 @@ export function ShoppingScreen() {
             />
           ))}
         </View>
+        <SharedLine />
         <ShoppingListView week={week} weekLabel={label} onPlan={() => router.navigate('/plan')} />
       </View>
     </Screen>
+  );
+}
+
+/** In a household (D-039), the list says who it's shared with and whether it's up to date. */
+function SharedLine() {
+  const router = useRouter();
+  const household = useHousehold((s) => s.household);
+  const me = useHousehold((s) => s.userId);
+  const status = useHousehold((s) => s.status);
+  if (!household) return null;
+  const others = household.members.filter((m) => m.userId !== me).map((m) => m.name);
+  if (!others.length) return null;
+  return (
+    <Pressable
+      onPress={() => router.push('/household')}
+      accessibilityRole="button"
+      testID="shopping-shared"
+      style={{ minHeight: TAP_TARGET, justifyContent: 'center' }}
+    >
+      <Text variant="meta" colour="inkMuted">
+        {`Shared with ${others.join(', ')}${status === 'offline' ? ' · offline, will catch up' : ''}`}
+      </Text>
+    </Pressable>
   );
 }

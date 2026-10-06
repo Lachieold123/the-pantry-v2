@@ -18,6 +18,7 @@ import { Text } from '@/ui/primitives/Text';
 import { SETTINGS, TOUR } from '@/ui/tokens/screens';
 import { CookingSection } from './CookingSection';
 import { ProSection } from './ProSection';
+import { SharingSection } from './SharingSection';
 import { CardButton, ChoiceRow, InfoRow, SettingsSection, SwitchRow } from './SettingsParts';
 
 const APPEARANCE = [
@@ -85,6 +86,8 @@ export function SettingsScreen() {
           testID="settings-sunday-reminder"
         />
       </SettingsSection>
+
+      <SharingSection />
 
       <ProSection />
 

@@ -330,3 +330,15 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
 - **Built now:** the domain rules and tests, the Pro store with a mirror of the entitlement, the paywall (worded for what triggered it, honest about not being on sale yet), the gates, Settings' Pro section, development switches to preview limits and pretend to be Pro, and Maestro flow 24.
 - **Waits for Lachlan:** RevenueCat's library (a new native dependency), the public SDK key, the App Store Connect trial offer, and the hosted legal pages. Until purchases are connected, no free limit applies.
 - **Lapsing never takes anything away.** It only stops making more past a limit.
+
+## D-039 · Household: one shared kitchen, free, joined by invite
+
+- **Date:** 6 October 2026 · **Decided by:** Lachlan (each option as recommended)
+- **Decision:**
+  - A household shares the plan, the list's ticks, extras and removals, the cupboard, and members' own recipes while the plan uses them.
+  - It's free.
+  - People join by invite link or code with an anonymous sign-in: no account, no password.
+  - Everything else stays personal.
+- **Why:** OurGroceries proves shared lists are the reason households pick a list app, and it gives sharing away. The Pantry's list is worked out from the plan and cupboard, so sharing only the list would leave two phones disagreeing. Sharing the kitchen keeps one source of truth.
+- **How:** see `docs/HOUSEHOLD.md`. It runs on the Supabase project `the-pantry` in Sydney, with one row table, newest-wins merging and Realtime.
+- **Added dependencies:** `@supabase/supabase-js` and `react-native-url-polyfill`. Both are JavaScript only, with no native code.

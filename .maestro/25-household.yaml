@@ -1,0 +1,50 @@
+# Household (D-039): start sharing your kitchen, see yourself listed and the
+# sync up to date, then leave and keep everything. Needs the internet and
+# anonymous sign-ins switched on in Supabase. Syncing between two phones is
+# checked by hand (docs/HOUSEHOLD.md); one simulator can't be two people.
+appId: host.exp.Exponent
+---
+- launchApp:
+    clearState: true
+- openLink: ${METRO_URL}
+- runFlow: subflows/_setup_skip_welcome.yaml
+
+- tapOn:
+    id: "header-avatar"
+- scrollUntilVisible:
+    element:
+      id: "settings-household"
+    direction: DOWN
+- assertVisible: "Household, Not sharing"
+- tapOn:
+    id: "settings-household"
+- assertVisible:
+    id: "household-screen"
+- tapOn:
+    id: "household-name"
+- inputText: "Lachlan"
+- hideKeyboard
+- tapOn:
+    id: "household-start"
+- extendedWaitUntil:
+    visible:
+      id: "household-members"
+    timeout: 20000
+- assertVisible: "Lachlan (you)"
+- extendedWaitUntil:
+    visible: "Up to date. Changes show on everyone’s phone in a few seconds."
+    timeout: 20000
+- takeScreenshot: household-sharing
+
+- scrollUntilVisible:
+    element:
+      id: "household-leave"
+    direction: DOWN
+- tapOn:
+    id: "household-leave"
+- tapOn:
+    id: "household-leave-confirm"
+- extendedWaitUntil:
+    visible:
+      id: "household-start"
+    timeout: 20000

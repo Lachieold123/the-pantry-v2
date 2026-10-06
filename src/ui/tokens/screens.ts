@@ -147,3 +147,8 @@ export const PRO = {
   planIcon: 22,
   benefitIcon: 18,
 } as const;
+
+/** Household (D-039): the members' initials. */
+export const HOUSEHOLD = {
+  avatar: 36,
+} as const;
