@@ -1,5 +1,6 @@
-// Your own recipes. Finished ones behave like any other recipe; drafts
-// (no method yet, say) open straight in the editor to be finished.
+// My recipes, the library's third tab: your own recipes. Finished ones behave
+// like any other recipe; drafts (no method yet, say) open straight in the
+// editor to be finished.
 import { useRouter } from 'expo-router';
 import { View } from 'react-native';
 
@@ -12,7 +13,7 @@ import { ListRow } from '@/ui/primitives/ListRow';
 import { SPACE } from '@/ui/tokens/type';
 import { useAllowance } from '@/store/pro';
 
-export function MineList() {
+export function MyRecipesTab() {
   const router = useRouter();
   const mine = useMyRecipeList();
   const allowed = useAllowance();
@@ -23,7 +24,7 @@ export function MineList() {
 
   if (mine.length === 0) {
     return (
-      <View>
+      <View testID="my-recipes-screen">
         <EmptyState
           title="Your own recipes live here"
           body="Write down the ones you already cook, or bring one in from a website. They scale, go on the shopping list and work in Cook Mode like any other."
@@ -38,7 +39,7 @@ export function MineList() {
   const finished = mine.filter((m) => m.recipe);
   const drafts = mine.filter((m) => !m.recipe);
   return (
-    <View style={{ gap: SPACE.lg }}>
+    <View testID="my-recipes-screen" style={{ gap: SPACE.lg }}>
       <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: SPACE.sm }}>
         <Button label="Write a recipe" icon="add" onPress={write} testID="mine-write" />
         <Button label="Import from a link" icon="link" kind="quiet" onPress={importLink} testID="mine-import" />

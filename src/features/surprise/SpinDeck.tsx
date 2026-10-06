@@ -1,4 +1,4 @@
-// The spinner's deck (spec §4.19, §6): the dish on show as a tall photo card,
+// The Surprise me deck (spec §4.19, §6): the dish on show as a tall photo card,
 // with the dishes either side of it in the deck tilted behind. The whole card
 // is the spin button. Each tick nudges it side to side; the landing
 // overshoots a touch and settles. With Reduce Motion the cards just change.
@@ -15,10 +15,10 @@ import { Icon } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { FIXED } from '@/ui/tokens/colour';
-import { SHADOW, SPACE, SPINNER } from '@/ui/tokens/type';
+import { SHADOW, SPACE, SURPRISE } from '@/ui/tokens/type';
 
-const settleEase = Easing.bezier(...SPINNER.settleCurve);
-const driftEase = Easing.bezier(...SPINNER.driftCurve);
+const settleEase = Easing.bezier(...SURPRISE.settleCurve);
+const driftEase = Easing.bezier(...SURPRISE.driftCurve);
 const tickEase = Easing.out(Easing.quad);
 
 type Props = {
@@ -44,10 +44,10 @@ export function SpinDeck({ recipe, before, after, spinning, tick, landed, reduce
   useEffect(() => {
     if (tick === 0 || reduceMotion) return;
     const sign = tick % 2 === 0 ? -1 : 1;
-    const t = { duration: SPINNER.tick.ms, easing: tickEase };
-    x.set(withTiming(sign * SPINNER.tick.x, t));
-    tilt.set(withTiming(sign * SPINNER.tick.tilt, t));
-    scale.set(withTiming(SPINNER.tick.scale, t));
+    const t = { duration: SURPRISE.tick.ms, easing: tickEase };
+    x.set(withTiming(sign * SURPRISE.tick.x, t));
+    tilt.set(withTiming(sign * SURPRISE.tick.tilt, t));
+    scale.set(withTiming(SURPRISE.tick.scale, t));
   }, [tick, reduceMotion, x, tilt, scale]);
 
   useEffect(() => {
@@ -58,15 +58,15 @@ export function SpinDeck({ recipe, before, after, spinning, tick, landed, reduce
       scale.set(1);
       return;
     }
-    const t = { duration: SPINNER.settle.ms, easing: settleEase };
+    const t = { duration: SURPRISE.settle.ms, easing: settleEase };
     x.set(withTiming(0, t));
     tilt.set(withTiming(0, t));
-    scale.set(withSequence(withTiming(SPINNER.settle.scale, t), withTiming(1, { duration: SPINNER.settle.backMs, easing: tickEase })));
+    scale.set(withSequence(withTiming(SURPRISE.settle.scale, t), withTiming(1, { duration: SURPRISE.settle.backMs, easing: tickEase })));
   }, [landed, reduceMotion, x, tilt, scale]);
 
   useEffect(() => {
     // The deck fans open while it spins.
-    drift.set(reduceMotion ? 0 : withTiming(spinning ? 1 : 0, { duration: SPINNER.driftMs, easing: driftEase }));
+    drift.set(reduceMotion ? 0 : withTiming(spinning ? 1 : 0, { duration: SURPRISE.driftMs, easing: driftEase }));
   }, [spinning, reduceMotion, drift]);
 
   const heroMotion = useAnimatedStyle(() => ({
@@ -86,26 +86,26 @@ export function SpinDeck({ recipe, before, after, spinning, tick, landed, reduce
           accessibilityRole="button"
           accessibilityLabel={`${recipe.title}. Spin for another dish`}
           accessibilityState={{ busy: spinning }}
-          testID="spinner-card"
+          testID="surprise-card"
         >
           <RecipeImage
             source={RECIPE_IMAGES[recipe.id]}
-            shape="spinner"
+            shape="surprise"
             cuisine={recipe.cuisine}
-            radius={SPINNER.radius}
+            radius={SURPRISE.radius}
             iconSize={80}
             transition={0}
           >
-            <PhotoScrim kind="spinnerTop" />
-            <PhotoScrim kind="spinnerBottom" />
+            <PhotoScrim kind="surpriseTop" />
+            <PhotoScrim kind="surpriseBottom" />
             <View style={styles.corner} pointerEvents="none">
               <View style={styles.rule} />
-              <Text variant="eyebrowSpinner" tone={FIXED.amberLight} numberOfLines={1}>
+              <Text variant="eyebrowSurprise" tone={FIXED.amberLight} numberOfLines={1}>
                 {CUISINE_LABELS[recipe.cuisine]}
               </Text>
             </View>
             <View style={styles.label} pointerEvents="none">
-              <Text variant="onPhoto" tone={FIXED.onPhotoCream} numberOfLines={2} testID="spinner-title">
+              <Text variant="onPhoto" tone={FIXED.onPhotoCream} numberOfLines={2} testID="surprise-title">
                 {recipe.title}
               </Text>
               <View style={styles.meta}>
@@ -135,7 +135,7 @@ export function SpinDeck({ recipe, before, after, spinning, tick, landed, reduce
 /** A dish behind the one on show, dimmed and tilted so the deck reads as a deck. */
 function Peek({ recipe, side, drift }: { recipe: Recipe; side: 1 | -1; drift: SharedValue<number> }) {
   const styles = useStyles();
-  const { peek } = SPINNER;
+  const { peek } = SURPRISE;
   const motion = useAnimatedStyle(() => {
     const d = drift.get();
     return {
@@ -150,9 +150,9 @@ function Peek({ recipe, side, drift }: { recipe: Recipe; side: 1 | -1; drift: Sh
     <Animated.View style={[styles.peek, { zIndex: side === -1 ? 1 : 2 }, motion]} pointerEvents="none">
       <RecipeImage
         source={RECIPE_IMAGES[recipe.id]}
-        shape="spinner"
+        shape="surprise"
         cuisine={recipe.cuisine}
-        radius={SPINNER.radius}
+        radius={SURPRISE.radius}
         iconSize={48}
         transition={0}
       >
@@ -165,14 +165,14 @@ function Peek({ recipe, side, drift }: { recipe: Recipe; side: 1 | -1; drift: Sh
 const useStyles = makeStyles(({ colours }) => ({
   stage: {
     alignItems: 'center',
-    paddingHorizontal: SPINNER.stagePadX - SPACE.gutter,
+    paddingHorizontal: SURPRISE.stagePadX - SPACE.gutter,
     paddingTop: SPACE.xxs,
     paddingBottom: SPACE.xl,
   },
   hero: {
     width: '100%',
-    maxWidth: SPINNER.heroMax,
-    borderRadius: SPINNER.radius,
+    maxWidth: SURPRISE.heroMax,
+    borderRadius: SURPRISE.radius,
     backgroundColor: colours.bgSoft,
     zIndex: 3,
     shadowColor: FIXED.shadow,
@@ -181,32 +181,32 @@ const useStyles = makeStyles(({ colours }) => ({
   peek: {
     position: 'absolute',
     top: SPACE.xxs,
-    width: `${SPINNER.peekShare * 100}%`,
-    maxWidth: SPINNER.peekMax,
-    borderRadius: SPINNER.radius,
+    width: `${SURPRISE.peekShare * 100}%`,
+    maxWidth: SURPRISE.peekMax,
+    borderRadius: SURPRISE.radius,
     backgroundColor: colours.bgSoft,
     shadowColor: FIXED.shadow,
     ...SHADOW.peek,
   },
   corner: {
     position: 'absolute',
-    top: SPINNER.cornerInset,
-    left: SPINNER.cornerInset,
-    right: SPINNER.cornerInset,
+    top: SURPRISE.cornerInset,
+    left: SURPRISE.cornerInset,
+    right: SURPRISE.cornerInset,
     flexDirection: 'row',
     alignItems: 'center',
-    gap: SPINNER.cornerGap,
+    gap: SURPRISE.cornerGap,
   },
-  rule: { width: SPINNER.cornerRule, height: 1, backgroundColor: FIXED.amberRule },
+  rule: { width: SURPRISE.cornerRule, height: 1, backgroundColor: FIXED.amberRule },
   label: {
     position: 'absolute',
     left: 0,
     right: 0,
     bottom: 0,
     paddingHorizontal: SPACE.gutter,
-    paddingBottom: SPINNER.labelBottom,
-    paddingTop: SPINNER.labelTop,
+    paddingBottom: SURPRISE.labelBottom,
+    paddingTop: SURPRISE.labelTop,
     gap: SPACE.xs,
   },
-  meta: { flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap', gap: SPINNER.metaGap },
+  meta: { flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap', gap: SURPRISE.metaGap },
 }));

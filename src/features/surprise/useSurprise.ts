@@ -1,4 +1,4 @@
-// The spinner's state: the deck for the chosen settings, the card showing,
+// Surprise me's state: the deck for the chosen settings, the card showing,
 // and the reasons it's a good pick. Hard rules (diet, avoid list, "not for
 // us") always apply; the cupboard answer comes from the shared engine, so it
 // agrees with the Cupboard tab.
@@ -10,7 +10,7 @@ import { cookable } from '@/domain/cupboard/cookable';
 import { entriesInWeek, toISODate, visibleWeeks } from '@/domain/plan/week';
 import { NO_FILTERS } from '@/domain/recipes/search';
 import type { Recipe } from '@/domain/recipes/types';
-import { DEFAULT_SPIN, spinLanding, spinPool, spinReasons, spinReel, type SpinSettings } from '@/domain/suggestions/spinner';
+import { DEFAULT_SPIN, spinLanding, spinPool, spinReasons, spinReel, type SpinSettings } from '@/domain/suggestions/surpriseDeck';
 import { eligibleForSurprise } from '@/domain/suggestions/surprise';
 import { ingredientName, useCookableNow } from '@/store/cookable';
 import { useCookLog } from '@/store/cookLog';
@@ -20,7 +20,7 @@ import { usePreferences } from '@/store/preferences';
 import { useAllRecipes } from '@/store/recipeBook';
 import { useSaved } from '@/store/saved';
 
-export function useSpinner() {
+export function useSurprise() {
   const diet = usePreferences((s) => s.diet);
   const avoid = usePreferences((s) => s.avoid);
   const hidden = useSaved((s) => s.hidden);

@@ -1,3 +1,6 @@
-import { RecentScreen } from '@/features/saved/RecentScreen';
+// Kept for links made before the library was one page.
+import { LibraryScreen } from '@/features/saved/LibraryScreen';
 
-export default RecentScreen;
+export default function RecentRoute() {
+  return <LibraryScreen initialTab="recent" />;
+}

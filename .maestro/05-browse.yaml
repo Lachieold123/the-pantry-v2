@@ -165,12 +165,14 @@ appId: host.exp.Exponent
 - tapOn:
     id: "back"
 - tapOn:
-    id: "header-menu"
+    id: "header-avatar"
 - tapOn:
-    id: "menu-saved"
+    id: "you-cookmarks"
 - assertVisible:
     id: "recipe-card-carbonara"
 - takeScreenshot: browse-saved-from-grid
+- tapOn:
+    id: "back"
 - tapOn:
     id: "back"
 

@@ -1,6 +1,6 @@
 # The Pantry Pro (D-038). Pro isn't on sale yet, so nothing is limited and the
-# paywall says so. A development build can preview the free limits from
-# Settings; with them on, planning a day past the week you're shopping for
+# paywall says so; the You page opens it. A development build can preview the
+# free limits from Settings; with them on, planning a day past the week you're shopping for
 # opens Pro instead. (On Sundays the whole week ahead is free, so that part
 # only runs Monday to Saturday.)
 appId: host.exp.Exponent
@@ -10,16 +10,12 @@ appId: host.exp.Exponent
 - openLink: ${METRO_URL}
 - runFlow: subflows/_setup_skip_welcome.yaml
 
-# Settings: the Pro row opens an honest paywall.
+# You: the Pro row opens an honest paywall.
 - tapOn:
     id: "header-avatar"
-- scrollUntilVisible:
-    element:
-      id: "settings-pro"
-    direction: DOWN
-- assertVisible: "Pro, Free, nothing limited yet"
+- assertVisible: "The Pantry Pro, Free, nothing limited yet"
 - tapOn:
-    id: "settings-pro"
+    id: "you-pro"
 - assertVisible: "The Pantry Pro"
 - scrollUntilVisible:
     element:
@@ -29,13 +25,17 @@ appId: host.exp.Exponent
 - tapOn:
     id: "pro-done"
 
-# Preview the free limits (development builds only).
+# Preview the free limits (development builds only), in Settings.
+- tapOn:
+    id: "you-settings"
 - scrollUntilVisible:
     element:
       id: "settings-preview-limits"
     direction: DOWN
 - tapOn:
     id: "settings-preview-limits"
+- tapOn:
+    id: "back"
 - tapOn:
     id: "back"
 

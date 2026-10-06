@@ -1,5 +1,5 @@
-# Recently viewed and Kitchen stats: empty, then filled by opening and cooking
-# a recipe, then each cleared and restored with Undo.
+# The library's Recent tab and Kitchen stats (still its own page): empty, then
+# filled by opening and cooking a recipe, then each cleared and restored with Undo.
 appId: host.exp.Exponent
 ---
 - launchApp:
@@ -7,22 +7,28 @@ appId: host.exp.Exponent
 - openLink: ${METRO_URL}
 - runFlow: subflows/_setup_skip_welcome.yaml
 
-# Both start empty
+# Both start empty. Both open from links, so Home is underneath and Back lands there.
+- openLink: ${METRO_URL}/--/library?tab=recent
 - tapOn:
-    id: "header-menu"
-- tapOn:
-    id: "menu-recent"
-- assertVisible:
-    id: "recent-empty"
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: "recent-empty"
+    timeout: 15000
 - assertNotVisible:
     id: "recent-clear"
 - takeScreenshot: recent-empty
 - tapOn:
     id: "back"
+- openLink: ${METRO_URL}/--/stats
 - tapOn:
-    id: "header-menu"
-- tapOn:
-    id: "menu-stats"
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: "stats-empty"
+    timeout: 15000
 - assertVisible: "No cooks logged yet"
 - assertVisible:
     id: "stats-empty"
@@ -30,7 +36,7 @@ appId: host.exp.Exponent
 - tapOn:
     id: "stats-empty-action"
 - assertVisible: "Discover"
-# Browse opened over Kitchen stats: back twice to Home, where the side menu is.
+# Browse opened over Kitchen stats: back twice to Home.
 - tapOn:
     id: "back"
 - assertVisible:
@@ -52,12 +58,15 @@ appId: host.exp.Exponent
 - tapOn:
     id: "back"
 
-# Recently viewed lists it and opens it
+# Recent lists it and opens it
+- openLink: ${METRO_URL}/--/library?tab=recent
 - tapOn:
-    id: "header-menu"
-- assertVisible: "Recently viewed, 1"
-- tapOn:
-    id: "menu-recent"
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: "recipe-card-carbonara"
+    timeout: 15000
 - assertVisible: "1 recipe"
 - assertVisible:
     id: "recipe-card-carbonara"
@@ -72,7 +81,7 @@ appId: host.exp.Exponent
 # Clear, then Undo
 - tapOn:
     id: "recent-clear"
-- assertVisible: "Recently viewed cleared"
+- assertVisible: "Recent list cleared"
 - assertVisible:
     id: "recent-empty"
 - tapOn:
@@ -83,10 +92,14 @@ appId: host.exp.Exponent
     id: "back"
 
 # Kitchen stats counts the cook
+- openLink: ${METRO_URL}/--/stats
 - tapOn:
-    id: "header-menu"
-- tapOn:
-    id: "menu-stats"
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: "stats-screen"
+    timeout: 15000
 - assertVisible: "1 day cooking streak"
 - assertVisible: "Total cooks: 1"
 - assertVisible: "Best streak: 1"

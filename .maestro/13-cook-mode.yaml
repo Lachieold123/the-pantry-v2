@@ -96,9 +96,9 @@ appId: host.exp.Exponent
 
 # ...and Kitchen stats shows it
 - tapOn:
-    id: "header-menu"
+    id: "header-avatar"
 - tapOn:
-    id: "menu-stats"
+    id: "you-stats"
 - scrollUntilVisible:
     element:
       text: "1. Vegetable Lasagna, once"

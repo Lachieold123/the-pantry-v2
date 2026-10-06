@@ -1,6 +1,6 @@
-// The four tabs and the centre "+", under the app header and over the
-// floating tab bar (spec §4.1–4.2, D-033). Plan and List are separate tabs;
-// Browse opens from Home's search bar.
+// The four tabs, under the app header and over the floating tab bar
+// (spec §4.1–4.2). Plan and List are separate tabs; Browse opens from Home's
+// search bar, and everything else from the avatar's You page.
 import { Redirect, Tabs } from 'expo-router';
 
 import { useNeedsWelcome } from '@/features/app/useNeedsWelcome';
@@ -11,7 +11,7 @@ import { useTheme } from '@/ui/theme/ThemeProvider';
 
 export default function TabsLayout() {
   const { colours } = useTheme();
-  // First launch goes through the welcome and taste quiz (skippable) before the app.
+  // First launch goes through the welcome (skippable) before the app.
   if (useNeedsWelcome()) return <Redirect href="/welcome" />;
   return (
     <>

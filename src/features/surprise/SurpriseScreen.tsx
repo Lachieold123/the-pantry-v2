@@ -1,7 +1,7 @@
-// Surprise me (spec §7): v1's card-deck spinner. Pick the meal, time and
+// Surprise me (spec §7): v1's card deck (it called it the spinner). Pick the meal, time and
 // whether it should come from the cupboard; tap the card (or Spin again) and
 // the deck runs, slows and lands on a dish; "Why this" says, truthfully, why
-// it fits. The choosing lives in domain/suggestions/spinner; this screen only
+// it fits. The choosing lives in domain/suggestions/surpriseDeck; this screen only
 // shows it and times the animation.
 import * as Haptics from 'expo-haptics';
 import { useRouter } from 'expo-router';
@@ -10,17 +10,17 @@ import { View } from 'react-native';
 import { useReducedMotion } from 'react-native-reanimated';
 
 import type { Recipe } from '@/domain/recipes/types';
-import { deckPosition, SPIN_DELAYS, type SpinSettings } from '@/domain/suggestions/spinner';
+import { deckPosition, SPIN_DELAYS, type SpinSettings } from '@/domain/suggestions/surpriseDeck';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { PhotoScrim } from '@/ui/patterns/PhotoScrim';
 import { Button } from '@/ui/primitives/Button';
 import { Icon } from '@/ui/primitives/Icon';
 import { Screen } from '@/ui/primitives/Screen';
 import { Text } from '@/ui/primitives/Text';
-import { SPACE, SPINNER } from '@/ui/tokens/type';
+import { SPACE, SURPRISE } from '@/ui/tokens/type';
 import { SpinDeck } from './SpinDeck';
-import { HowItWorks, SettingChips, SpinnerHeader, WhyThis } from './SpinnerParts';
-import { useSpinner } from './useSpinner';
+import { HowItWorks, SettingChips, SurpriseHeader, WhyThis } from './SurpriseParts';
+import { useSurprise } from './useSurprise';
 import { goBack } from '@/lib/navigation';
 
 const KICKER: Record<NonNullable<SpinSettings['meal']> | 'any', string> = {
@@ -31,10 +31,10 @@ const KICKER: Record<NonNullable<SpinSettings['meal']> | 'any', string> = {
   any: 'Something to cook',
 };
 
-export function SpinnerScreen() {
+export function SurpriseScreen() {
   const router = useRouter();
   const reduceMotion = useReducedMotion();
-  const { settings, setSettings, pool, current, reasons, plan, land } = useSpinner();
+  const { settings, setSettings, pool, current, reasons, plan, land } = useSurprise();
   const [flash, setFlash] = useState<Recipe | undefined>();
   const [spinning, setSpinning] = useState(false);
   const [tick, setTick] = useState(0);
@@ -83,15 +83,15 @@ export function SpinnerScreen() {
   };
 
   return (
-    <Screen testID="spinner-screen">
-      <PhotoScrim kind="spinnerGlow" />
-      <PhotoScrim kind="spinnerGlowFoot" />
-      <SpinnerHeader at={shown ? at : 0} of={pool.length} onBack={() => goBack(router)} onInfo={() => setHowOpen(true)} />
+    <Screen testID="surprise-screen">
+      <PhotoScrim kind="surpriseGlow" />
+      <PhotoScrim kind="surpriseGlowFoot" />
+      <SurpriseHeader at={shown ? at : 0} of={pool.length} onBack={() => goBack(router)} onInfo={() => setHowOpen(true)} />
       <View style={{ gap: SPACE.sm }}>
         <Text variant="kicker">{KICKER[settings.meal ?? 'any']}</Text>
-        <Text variant="displaySpinner" accessibilityRole="header">
+        <Text variant="displaySurprise" accessibilityRole="header">
           Surprise
-          <Text variant="displaySpinnerAccent" colour="accentText">
+          <Text variant="displaySurpriseAccent" colour="accentText">
             {' me'}
           </Text>
         </Text>
@@ -110,7 +110,7 @@ export function SpinnerScreen() {
               ? 'Nothing fits with what’s in your cupboard. Loosen a setting above, or add a few things to the cupboard.'
               : 'Loosen a setting above to find one.'
           }
-          testID="spinner-empty"
+          testID="surprise-empty"
         />
       ) : (
         <>
@@ -130,7 +130,7 @@ export function SpinnerScreen() {
               alignItems: 'center',
               justifyContent: 'center',
               gap: SPACE.xs,
-              opacity: spinning ? SPINNER.hintDim : 1,
+              opacity: spinning ? SURPRISE.hintDim : 1,
             }}
             accessibilityElementsHidden
             importantForAccessibility="no-hide-descendants"
@@ -140,7 +140,7 @@ export function SpinnerScreen() {
               {spinning ? 'Spinning…' : 'Tap card to spin'}
             </Text>
           </View>
-          <View accessibilityLiveRegion="polite" style={{ opacity: spinning ? SPINNER.hintDim : 1 }}>
+          <View accessibilityLiveRegion="polite" style={{ opacity: spinning ? SURPRISE.hintDim : 1 }}>
             <WhyThis reasons={reasons} />
           </View>
           <View style={{ gap: SPACE.sm }}>
@@ -152,7 +152,7 @@ export function SpinnerScreen() {
               block
               disabled={spinning}
               onPress={spin}
-              testID="spinner-spin"
+              testID="surprise-spin"
             />
             <View style={{ flexDirection: 'row', gap: SPACE.xs }}>
               <View style={{ flex: 1 }}>
@@ -162,7 +162,7 @@ export function SpinnerScreen() {
                   block
                   disabled={spinning}
                   onPress={() => router.push({ pathname: '/recipe/[id]/plan', params: { id: shown.id } })}
-                  testID="spinner-plan"
+                  testID="surprise-plan"
                 />
               </View>
               <View style={{ flex: 1 }}>
@@ -172,7 +172,7 @@ export function SpinnerScreen() {
                   block
                   disabled={spinning}
                   onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: shown.id } })}
-                  testID="spinner-cook"
+                  testID="surprise-cook"
                 />
               </View>
             </View>

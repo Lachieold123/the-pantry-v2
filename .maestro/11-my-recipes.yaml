@@ -1,4 +1,4 @@
-# My recipes: import rejects a bad link; write a recipe (validation first),
+# The library's My recipes tab: import rejects a bad link; write a recipe (validation first),
 # save, open, edit, delete with undo; cancelling with changes asks first.
 appId: host.exp.Exponent
 ---
@@ -6,12 +6,15 @@ appId: host.exp.Exponent
     clearState: true
 - openLink: ${METRO_URL}
 - runFlow: subflows/_setup_skip_welcome.yaml
+# The library opens from a link, so Home is underneath and Back lands there.
+- openLink: ${METRO_URL}/--/library?tab=mine
 - tapOn:
-    id: "header-menu"
-- tapOn:
-    id: "menu-my-recipes"
-- assertVisible:
-    id: "mine-empty"
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: "mine-empty"
+    timeout: 15000
 - takeScreenshot: my-recipes-empty
 
 # Import from a link: a bad link is refused in plain words.

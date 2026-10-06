@@ -60,7 +60,7 @@ export function useRecipeEditor(id: string | undefined, fromImport: boolean) {
     if (!draft.title.trim()) return;
     store();
     toast({ message: 'Saved to finish later' });
-    router.navigate('/my-recipes');
+    router.navigate('/library?tab=mine');
   };
 
   const remove = () => {
@@ -68,7 +68,7 @@ export function useRecipeEditor(id: string | undefined, fromImport: boolean) {
     const removed = removeRecipe(id);
     if (removed) toast({ message: `${removed.draft.title} deleted`, undo: () => restoreRecipe(removed) });
     // The recipe page underneath would now be empty, so go back to where your recipes live.
-    router.navigate('/my-recipes');
+    router.navigate('/library?tab=mine');
   };
 
   const problem = (field: string) => (showProblems ? built.problems.find((p) => p.field === field)?.message : undefined);

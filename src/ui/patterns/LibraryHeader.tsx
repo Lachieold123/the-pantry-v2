@@ -2,7 +2,7 @@
 // LibraryHead: Saved, Collections and one collection. A 38pt round back chip,
 //   then a 22×1 rule and small kicker, a big display title, and an italic
 //   amber count ("4 items").
-// LibraryPushedHead: Recently viewed and Kitchen stats. The square back
+// LibraryPushedHead: Recent and Kitchen stats. The square back
 //   button, an amber kicker, a serif title that may wrap ("Recently\nviewed"),
 //   an optional count line and an optional action on the right ("Clear").
 import { useRouter } from 'expo-router';

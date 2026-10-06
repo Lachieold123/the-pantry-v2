@@ -1,4 +1,4 @@
-// The library pages (Saved, Collections, Recently viewed, Kitchen stats):
+// The library (Cookmarks, Collections, My recipes, Recent) and Kitchen stats:
 // v1's cream recipe cards, collection mosaics and page head, measured from
 // CookmarksModal, CollectionsModal and StatsModal (spec §4.4, §4.6, §4.14).
 //
@@ -97,9 +97,12 @@ export const LIBRARY = {
   mosaicGutter: 1,
   mosaicBodyTop: 10,
   mosaicBodyX: 2,
-  /** The "+ New collection" row: v1's head ended 6 above it and the row added 18; the head already gives 18. */
-  actionsTop: 6,
-  actionsBottom: 12,
+  /** The library's tabs: text with an underline, on a hairline running edge to edge (as the Cupboard's are). */
+  tabGap: 18,
+  tabPadTop: 6,
+  tabPadBottom: 12,
+  tabUnderline: 1.5,
+  /** The "+ New collection" pill. */
   newPillY: 8,
   newPillX: 14,
   /** The naming dialog. */
@@ -107,7 +110,7 @@ export const LIBRARY = {
   dialogPad: 20,
   dialogInputX: 14,
   dialogInputY: 12,
-  /** Recently viewed's "Clear" soft pill. */
+  /** Recent's "Clear" soft pill. */
   clearX: 14,
   clearY: 9,
   /** Kitchen stats. */

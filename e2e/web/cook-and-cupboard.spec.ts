@@ -1,4 +1,5 @@
-// Cook Mode step by step to the end, and filling the cupboard from search.
+// Cook Mode step by step to the end, filling the cupboard from search or a
+// list (with no scan buttons until scanning works), and Surprise me.
 import { expect, ONBOARDED, open, test } from './kitchen';
 
 test('Cook Mode steps through a recipe and logs it as cooked', async ({ page }) => {
@@ -24,8 +25,16 @@ test('searching the cupboard adds an ingredient, and tapping a jar uses it up', 
 
 test('Surprise me deals a dish', async ({ page }) => {
   await open(page, '/surprise', ONBOARDED);
-  await expect(page.getByTestId('spinner-card')).toBeVisible();
-  const first = await page.getByTestId('spinner-title').innerText();
-  await page.getByTestId('spinner-spin').click();
-  await expect.poll(() => page.getByTestId('spinner-title').innerText(), { timeout: 10_000 }).not.toBe(first);
+  await expect(page.getByTestId('surprise-card')).toBeVisible();
+  const first = await page.getByTestId('surprise-title').innerText();
+  await page.getByTestId('surprise-spin').click();
+  await expect.poll(() => page.getByTestId('surprise-title').innerText(), { timeout: 10_000 }).not.toBe(first);
+});
+
+test('the Cupboard offers Add a list, and no scanning until it works', async ({ page }) => {
+  await open(page, '/cupboard', ONBOARDED);
+  await expect(page.getByTestId('cupboard-scan-receipt')).toHaveCount(0);
+  await expect(page.getByTestId('cupboard-scan-food')).toHaveCount(0);
+  await page.getByTestId('cupboard-add-list').click();
+  await expect(page.getByTestId('add-list-input')).toBeVisible();
 });

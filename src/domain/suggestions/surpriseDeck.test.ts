@@ -3,7 +3,7 @@ import { describe, it } from 'node:test';
 
 import type { Cookable } from '../cupboard/cookable';
 import { makeRecipe } from '../testing/fixtures';
-import { deckPosition, DEFAULT_SPIN, SPIN_DELAYS, spinLanding, spinPool, spinReasons, spinReel } from './spinner';
+import { deckPosition, DEFAULT_SPIN, SPIN_DELAYS, spinLanding, spinPool, spinReasons, spinReel } from './surpriseDeck';
 
 const quick = makeRecipe('quick', ['1 egg'], { prepMinutes: 5, cookMinutes: 5 });
 const dinner = makeRecipe('dinner', ['1 egg'], { prepMinutes: 10, cookMinutes: 30 });
@@ -12,7 +12,7 @@ const lunch = makeRecipe('lunch', ['1 egg'], { mealTypes: ['lunch'] });
 const all = [quick, dinner, slow, lunch];
 const none = { current: undefined, planned: new Set<string>(), recentlyCooked: [], shown: [] };
 
-describe('the spinner deck', () => {
+describe('the Surprise me deck', () => {
   it('starts on dinners of 45 minutes or less', () => {
     assert.deepEqual(
       spinPool(all, DEFAULT_SPIN, new Set()).map((r) => r.id),
@@ -76,7 +76,7 @@ describe('why this', () => {
   it('only says true things', () => {
     const reasons = spinReasons({ recipe: dinner, cupboard: result([]), saved: false, cooked: false, nameOf: name });
     assert.deepEqual(reasons, [
-      { key: 'Pantry', value: 'Uses 2 things you have. Ready to cook' },
+      { key: 'Cupboard', value: 'Uses 2 things you have. Ready to cook' },
       { key: 'Time', value: '40m · 10m prep, 30m cooking' },
       { key: 'For you', value: 'Something you haven’t cooked yet' },
     ]);

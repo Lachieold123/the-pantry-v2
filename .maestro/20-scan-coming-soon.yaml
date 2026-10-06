@@ -1,6 +1,8 @@
-# The Cupboard's scan sheets while the reader isn't connected (D-030): both say
-# "Coming soon" plainly, show no camera button that wouldn't work, close with
-# Not now, and "Type a list instead" leads to the typed list, which does work.
+# Scanning while the reader isn't connected (D-030, K-14): the Cupboard shows
+# no scan buttons at all, only "Add a list". The scan sheet stays built for
+# later; opened by its link it still says "Coming soon" plainly, shows no
+# camera button that wouldn't work, closes with Not now, and "Add a list
+# instead" leads to the typed list, which does work.
 appId: host.exp.Exponent
 ---
 - launchApp:
@@ -10,11 +12,24 @@ appId: host.exp.Exponent
 - tapOn:
     id: "tab-cupboard"
 
-# Scan a receipt
-- tapOn:
-    id: "cupboard-scan-receipt"
+# Nothing in the Cupboard promises scanning.
 - assertVisible:
-    id: "scan-not-yet"
+    id: "cupboard-add-list"
+- assertNotVisible:
+    id: "cupboard-scan-receipt"
+- assertNotVisible:
+    id: "cupboard-scan-food"
+- takeScreenshot: cupboard-no-scan
+
+# Scan a receipt, by its link
+- openLink: ${METRO_URL}/--/cupboard/scan?kind=receipt
+- tapOn:
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: "scan-not-yet"
+    timeout: 15000
 - assertVisible: "Scan a receipt"
 - assertVisible: "Coming soon"
 - assertVisible: "Scanning isn’t switched on yet.*"
@@ -27,19 +42,20 @@ appId: host.exp.Exponent
     id: "scan-not-now"
 - assertNotVisible:
     id: "scan-not-yet"
-- assertVisible:
-    id: "cupboard-screen"
 
 # Photo of your food: the same honest note.
+- openLink: ${METRO_URL}/--/cupboard/scan?kind=food
 - tapOn:
-    id: "cupboard-scan-food"
-- assertVisible:
-    id: "scan-not-yet"
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: "scan-not-yet"
+    timeout: 15000
 - assertVisible: "Photo of your food"
 - assertVisible: "Coming soon"
 - takeScreenshot: scan-food-coming-soon
-
-# Type a list instead swaps to the typed list, and that really fills the cupboard.
+# Add a list instead swaps to the typed list, and that really fills the cupboard.
 - tapOn:
     id: "scan-use-list"
 - assertVisible:

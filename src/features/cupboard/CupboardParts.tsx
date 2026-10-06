@@ -29,7 +29,7 @@ export const CATEGORY_LABEL: Record<(typeof CUPBOARD_CATEGORIES)[number], string
   dairy: 'Dairy & eggs',
   herbs: 'Herbs & spices',
   sauces: 'Sauces',
-  pantry: 'Pantry',
+  pantry: 'Dry goods',
   other: 'Other',
 };
 

@@ -1,108 +1,86 @@
-// First launch: welcome → two taste questions → "Tonight, for you" → an
-// optional Sunday reminder. Skippable at every step; a useful screen within
-// five taps (PRODUCT §4.12). The look is v1's onboarding (spec §4.21); v1's
-// 13+ / Terms consent is left out until there are real terms to agree to.
+// First launch: hello → "Anything you don't eat?" → "What's in your
+// cupboard?" → Home, on What I have. Cooking from what you have is the point
+// of the app (D-034), so the welcome ends with a stocked cupboard, not a quiz;
+// cuisines and weeknight time are learnt or set later in Settings → Cooking.
+// Skippable at every step, and Settings' "Redo welcome flow" opens it again
+// with the answers kept. The look is v1's onboarding (spec §4.21).
 import { useRouter } from 'expo-router';
 import { useState } from 'react';
 
-import { toISODate } from '@/domain/plan/week';
-import { setSundayReminder } from '@/lib/notifications';
-import { usePlan } from '@/store/plan';
+import { pickedLabel } from '@/domain/welcome/cupboardPicks';
+import { useCupboard } from '@/store/cupboard';
 import { usePreferences } from '@/store/preferences';
-import { useForYou } from '@/store/suggestions';
-import { useToast } from '@/ui/patterns/Toast';
-import { RevealBody, RevealEmpty, ReminderStep } from './RevealSteps';
-import { EatStep, LikeStep } from './TasteSteps';
+import { CupboardStep, useCupboardPicks } from './CupboardStep';
+import { EatStep, useEatsEverything } from './EatStep';
 import { TextButton, WhitePill } from './OnVideo';
 import { HelloStep, QuizFrame } from './WelcomeFrame';
 
-type Step = 'hello' | 'eat' | 'like' | 'reveal' | 'reminder';
-const NEXT: Record<Step, Step | 'done'> = { hello: 'eat', eat: 'like', like: 'reveal', reveal: 'reminder', reminder: 'done' };
-const BACK: Partial<Record<Step, Step>> = { eat: 'hello', like: 'eat', reveal: 'like' };
-/** How far through the bar is on each question page; the reminder is the fourth. */
-const PROGRESS: Partial<Record<Step, number>> = { eat: 1 / 4, like: 2 / 4, reveal: 3 / 4 };
-const PICKS = 3;
+type Step = 'hello' | 'eat' | 'cupboard';
 
 export function WelcomeScreen() {
   const router = useRouter();
-  const toast = useToast();
   const [step, setStep] = useState<Step>('hello');
-  const [offset, setOffset] = useState(0);
-  const [busy, setBusy] = useState(false);
+  const [picked, setPicked] = useState<ReadonlySet<string>>(new Set());
   const setOnboarded = usePreferences((s) => s.setOnboarded);
-  const setReminderPref = usePreferences((s) => s.setSundayReminder);
-  const addEntry = usePlan((s) => s.addEntry);
-  const picks = useForYou(PICKS * 3);
+  const addToCupboard = useCupboard((s) => s.add);
+  const eatsEverything = useEatsEverything();
+  const picks = useCupboardPicks();
+  // Going back and changing the diet can drop a ticked item from the grid; only what's still offered counts.
+  const chosen = picks.filter((id) => picked.has(id));
 
+  // Home opens on What I have whenever the cupboard can make something (D-034), and the tour starts (D-035).
   const finish = () => {
     setOnboarded(true);
     router.replace('/');
   };
-  const next = () => {
-    const to = NEXT[step];
-    if (to === 'done') finish();
-    else setStep(to);
+  // Having just said what's in the cupboard, Home opens on What I have even if nothing is fully ready.
+  const stockAndFinish = () => {
+    if (!chosen.length) return finish();
+    addToCupboard(chosen, 'manual');
+    setOnboarded(true);
+    router.replace({ pathname: '/', params: { show: 'pantry' } });
   };
-  const back = BACK[step];
+  const toggle = (id: string) =>
+    setPicked((p) => {
+      const next = new Set(p);
+      if (!next.delete(id)) next.add(id);
+      return next;
+    });
 
-  const shown = picks.slice(offset, offset + PICKS);
-  const [hero, ...more] = shown.length ? shown : picks.slice(0, PICKS);
+  if (step === 'hello') return <HelloStep onStart={() => setStep('eat')} onSkip={finish} />;
 
-  const planTonight = () => {
-    if (!hero) return next();
-    addEntry(hero.id, toISODate(new Date()), 'dinner', hero.servings);
-    toast({ message: `${hero.title} is on for tonight` });
-    next();
-  };
-  const remind = async () => {
-    setBusy(true);
-    const on = await setSundayReminder(true);
-    setReminderPref(on);
-    setBusy(false);
-    if (!on) toast({ message: 'Notifications are off for The Pantry. You can turn them on in Settings.' });
-    finish();
-  };
-
-  if (step === 'hello') return <HelloStep onStart={next} onSkip={finish} />;
-  if (step === 'reminder') return <ReminderStep busy={busy} onRemind={() => void remind()} onNotNow={finish} />;
-
-  const backButton = back ? <TextButton label="Back" onPress={() => setStep(back)} testID="welcome-back" /> : null;
-  const footer =
-    step === 'reveal' ? (
-      hero ? (
-        <>
-          {backButton}
-          <WhitePill label="Cook this tonight" onPress={planTonight} testID="welcome-cook-tonight" />
-        </>
-      ) : (
-        backButton
-      )
-    ) : (
-      <>
-        {backButton}
-        <WhitePill label={step === 'like' ? 'See my dinners' : 'Continue'} onPress={next} testID="welcome-next" />
-      </>
+  if (step === 'eat') {
+    return (
+      <QuizFrame
+        progress={1 / 2}
+        onSkip={finish}
+        footer={
+          <>
+            <TextButton label="Back" onPress={() => setStep('hello')} testID="welcome-back" />
+            <WhitePill label={eatsEverything ? 'None of these' : 'Continue'} onPress={() => setStep('cupboard')} testID="welcome-next" />
+          </>
+        }
+      >
+        <EatStep />
+      </QuizFrame>
     );
+  }
 
+  // With nothing left to offer (a redo with a full cupboard) the main button just finishes, so it's never dead.
+  const canFinish = chosen.length > 0 || picks.length === 0;
   return (
-    <QuizFrame progress={PROGRESS[step] ?? 0} scrim={step === 'reveal' ? 'reveal' : 'quiz'} onSkip={finish} footer={footer}>
-      {step === 'eat' ? <EatStep /> : null}
-      {step === 'like' ? <LikeStep /> : null}
-      {step === 'reveal' ? (
-        hero ? (
-          <RevealBody
-            hero={hero}
-            more={more}
-            canShowOthers={picks.length > PICKS}
-            onPlanTonight={planTonight}
-            onPick={(r) => setOffset(picks.indexOf(r))}
-            onShowOthers={() => setOffset((o) => (o + PICKS < picks.length ? o + PICKS : 0))}
-            onNotTonight={next}
-          />
-        ) : (
-          <RevealEmpty onChange={() => setStep('eat')} />
-        )
-      ) : null}
+    <QuizFrame
+      progress={1}
+      onSkip={finish}
+      note={picks.length ? pickedLabel(chosen.length) : undefined}
+      footer={
+        <>
+          <TextButton label="Back" onPress={() => setStep('eat')} testID="welcome-back" />
+          <WhitePill label="Show what I can cook" onPress={stockAndFinish} disabled={!canFinish} testID="welcome-finish" />
+        </>
+      }
+    >
+      <CupboardStep picks={picks} picked={picked} onToggle={toggle} onSkip={finish} />
     </QuizFrame>
   );
 }

@@ -25,7 +25,7 @@ type SavedState = {
   toggleInCollection: (collectionId: string, recipeId: string) => boolean;
   toggleHidden: (recipeId: string) => boolean;
   recordView: (recipeId: string) => void;
-  /** Empties Recently viewed and returns what was there, for undo. */
+  /** Empties Recent and returns what was there, for undo. */
   clearRecent: () => string[];
   restoreRecent: (ids: readonly string[]) => void;
 };

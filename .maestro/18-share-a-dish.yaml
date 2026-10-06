@@ -1,4 +1,5 @@
-# The centre "+": Share a dish (D-033). Everything that works without a photo:
+# Share a dish (D-033), from the You page (the avatar) since the tab bar's
+# centre "+" went (6 October). Everything that works without a photo:
 # Share says what's missing, the photo choice opens and cancels, naming the
 # dish suggests a recipe to link, the preview follows, Close keeps a draft and
 # Discard clears it.
@@ -11,7 +12,9 @@ appId: host.exp.Exponent
 - openLink: ${METRO_URL}
 - runFlow: subflows/_setup_skip_welcome.yaml
 - tapOn:
-    id: "tab-add"
+    id: "header-avatar"
+- tapOn:
+    id: "you-post"
 - assertVisible:
     id: "post-screen"
 - assertVisible: "Share a dish"
@@ -85,24 +88,24 @@ appId: host.exp.Exponent
     id: "post-close"
 - assertVisible: "Kept as a draft.*"
 - assertVisible:
-    id: "feed-screen"
+    id: "you-screen"
 - tapOn:
-    id: "tab-add"
+    id: "you-post"
 - scrollUntilVisible:
     element:
       id: "post-discard"
     direction: DOWN
 
-# Discard clears it: the next "+" starts empty.
+# Discard clears it: the next Share a dish starts empty.
 - tapOn:
     id: "post-discard"
 - assertVisible:
-    id: "feed-screen"
+    id: "you-screen"
 - tapOn:
-    id: "tab-add"
+    id: "you-post"
 - assertNotVisible:
     id: "post-discard"
 - tapOn:
     id: "post-close"
 - assertVisible:
-    id: "feed-screen"
+    id: "you-screen"

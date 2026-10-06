@@ -22,7 +22,7 @@ export function HouseholdScreen() {
   const household = useHousehold((s) => s.household);
   return (
     <Screen testID="household-screen">
-      <PushedHeader kicker="Sharing" title={household ? household.name : 'Share your kitchen'} />
+      <PushedHeader kicker="Household" title={household ? household.name : 'Share your kitchen'} />
       {household ? <Sharing /> : <NotSharing />}
     </Screen>
   );

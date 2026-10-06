@@ -1,15 +1,15 @@
 // The home tab, in v1's layout (FeedScreen.tsx, spec §7 Feed). At the top, the
-// "What I have / Everything" switch with search beside it (D-034), then Meal,
-// Time, Cuisine and Difficulty; then five big cards to swipe through and a
+// "What I have / Everything" switch with search beside it (D-034), then Time
+// and Cuisine (the two questions a weeknight asks; Browse has the rest); then five big cards to swipe through and a
 // two-column grid. In "What I have" the grid is followed by "Nearly there".
 // Each card says why it's there (domain/suggestions/home.ts).
-import { useRouter } from 'expo-router';
+import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useState } from 'react';
 import { View } from 'react-native';
 
-import { CUISINE_LABELS, DIFFICULTY_LABELS, MEAL_TYPE_LABELS, TIME_FILTER_LABELS } from '@/domain/recipes/labels';
+import { CUISINE_LABELS, TIME_FILTER_LABELS } from '@/domain/recipes/labels';
 import type { TimeFilter } from '@/domain/recipes/search';
-import { CUISINES, DIFFICULTIES } from '@/domain/recipes/types';
+import { CUISINES } from '@/domain/recipes/types';
 import { needLine } from '@/domain/cupboard/cookable';
 import { defaultHomeMode, hasHomeFilters, homeFeed, NO_HOME_FILTERS, type HomeFilters, type HomeMode } from '@/domain/suggestions/home';
 import { toISODate, tonightsDinner } from '@/domain/plan/week';
@@ -34,10 +34,8 @@ import { PantrySwitch } from './PantrySwitch';
 import { HomeEmpty } from './HomeEmpty';
 import { PlatesRail } from './PlatesRail';
 
-const MEALS = (['breakfast', 'lunch', 'dinner', 'snack'] as const).map((m) => ({ value: m, label: MEAL_TYPE_LABELS[m] }));
 const TIMES = (Object.keys(TIME_FILTER_LABELS) as TimeFilter[]).map((t) => ({ value: t, label: TIME_FILTER_LABELS[t] }));
 const CUISINE_OPTIONS = CUISINES.map((c) => ({ value: c, label: CUISINE_LABELS[c] })).sort((a, b) => a.label.localeCompare(b.label));
-const LEVELS = DIFFICULTIES.map((d) => ({ value: d, label: DIFFICULTY_LABELS[d] }));
 
 export function FeedScreen() {
   const router = useRouter();
@@ -46,15 +44,18 @@ export function FeedScreen() {
   const welcome = useWelcomeBack((s) => s.message);
   const dismissWelcome = useWelcomeBack((s) => s.dismiss);
   const all = useAllRecipes();
-  // The whole ranked list, so a filter like "Breakfast" still has plenty to show.
+  // The whole ranked list, so a filter like "≤ 15 min" still has plenty to show.
   const forYou = useForYou(all.length);
   const cook = useCookableNow();
   const getRecipe = useRecipeLookup();
   const bookmarks = useBookmarks();
   const tonight = tonightsDinner(entries, toISODate(new Date()));
   // Starts on "What I have" whenever the cupboard can make something; a tap on the switch wins after that.
+  // The welcome's "Show what I can cook" asks for it outright (?show=pantry): even a cupboard of lemon and
+  // parsley should land on what's nearly there, not on everything.
+  const { show } = useLocalSearchParams<{ show?: string }>();
   const [chosenMode, setMode] = useState<HomeMode | undefined>();
-  const mode = chosenMode ?? defaultHomeMode(cook.ready.length);
+  const mode = chosenMode ?? (show === 'pantry' ? 'pantry' : defaultHomeMode(cook.ready.length));
   const needs = new Map(cook.nearly.map((m) => [m.recipe.id, needLine(m.result, ingredientName)]));
   const { heroes, grid, nearly, readyCount } = homeFeed({
     mode,
@@ -69,18 +70,14 @@ export function FeedScreen() {
   const open = (id: string) => router.push({ pathname: '/recipe/[id]', params: { id } });
 
   const dropdowns: Dropdown[] = [
-    { key: 'meal', name: 'Meal', value: filters.meal, options: MEALS },
     { key: 'time', name: 'Time', value: filters.time, options: TIMES },
     { key: 'cuisine', name: 'Cuisine', value: filters.cuisine, options: CUISINE_OPTIONS },
-    { key: 'difficulty', name: 'Difficulty', value: filters.difficulty, options: LEVELS },
   ];
   const choose = (key: string, value: string | undefined) =>
     setFilters((f) => ({
       ...f,
-      ...(key === 'meal' ? { meal: MEALS.find((o) => o.value === value)?.value } : {}),
       ...(key === 'time' ? { time: TIMES.find((o) => o.value === value)?.value } : {}),
       ...(key === 'cuisine' ? { cuisine: CUISINE_OPTIONS.find((o) => o.value === value)?.value } : {}),
-      ...(key === 'difficulty' ? { difficulty: LEVELS.find((o) => o.value === value)?.value } : {}),
     }));
 
   return (

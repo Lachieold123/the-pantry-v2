@@ -174,7 +174,7 @@ function NotYet({ lead, onList, onClose }: { lead: string; onList: () => void; o
       <Text variant="body" colour="inkSoft">
         Scanning isn’t switched on yet. Until it is, the quickest way in is to type or paste a list: “eggs, 2 onions, feta”.
       </Text>
-      <Button label="Type a list instead" icon="list" kind="primary" block onPress={onList} testID="scan-use-list" />
+      <Button label="Add a list instead" icon="list" kind="primary" block onPress={onList} testID="scan-use-list" />
       <Button label="Not now" kind="quiet" block onPress={onClose} testID="scan-not-now" />
     </View>
   );

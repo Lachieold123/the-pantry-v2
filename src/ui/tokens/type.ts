@@ -72,7 +72,6 @@ export const TYPE = {
   cupboardTileNameOn: sans(12.5, '700', 16, 0.1),
   cupboardGroupName: upper(sans(10.5, '700', 13, 2.8)),
   cupboardQuickAdd: sans(13, '500', 17),
-  drawerProfileSub: sans(12, '500', 16),
   // Settings, Filters and Welcome (group C): v1's sizes for those screens.
   titleOnboarding: serif(34, '700', 38, -0.8),
   titleSansLarge: sans(28, '800', 32, -0.8),
@@ -94,8 +93,8 @@ export const TYPE = {
   cookStepTimer: serif(22, '700', 32, -0.2),
   /** Cook Mode's "COOK MODE" header kicker (v1 9.5/800/2.5). */
   cookKicker: upper(sans(9.5, '800', 12, 2.5)),
-  displaySpinner: serif(48, '400', 52, -1.2),
-  displaySpinnerAccent: italic(serif(48, '400', 52, -1.2)),
+  displaySurprise: serif(48, '400', 52, -1.2),
+  displaySurpriseAccent: italic(serif(48, '400', 52, -1.2)),
   counter: serif(18, '700', 22, -0.2),
   counterSlash: serif(16, '400', 22),
   counterTotal: serif(14, '400', 22),
@@ -107,7 +106,7 @@ export const TYPE = {
   eyebrow: upper(sans(9.5, '800', 12, 1.8)),
   eyebrowLarge: upper(sans(10.5, '800', 13, 2)),
   chipSmall: sans(11.5, '600', 15),
-  eyebrowSpinner: upper(sans(10, '800', 13, 2.8)),
+  eyebrowSurprise: upper(sans(10, '800', 13, 2.8)),
   reasonKey: upper(sans(10.5, '700', 13, 2.3)),
   hint: upper(sans(11, '600', 14, 0.7)),
   // Body and controls (sans)
@@ -145,16 +144,14 @@ export const RADIUS = { xs: 6, sm: 10, md: 12, lg: 14, xl: 16, card: 18, sheetSm
 
 type Shadow = { shadowOpacity: number; shadowRadius: number; shadowOffset: { width: number; height: number }; elevation: number };
 export const SHADOW = {
-  fab: { shadowOpacity: 0.45, shadowRadius: 12, shadowOffset: { width: 0, height: 8 }, elevation: 8 },
   toast: { shadowOpacity: 0.35, shadowRadius: 14, shadowOffset: { width: 0, height: 6 }, elevation: 8 },
-  drawer: { shadowOpacity: 0.18, shadowRadius: 24, shadowOffset: { width: 6, height: 0 }, elevation: 8 },
   sheet: { shadowOpacity: 0.25, shadowRadius: 24, shadowOffset: { width: 0, height: -8 }, elevation: 12 },
   photoDisc: { shadowOpacity: 0.18, shadowRadius: 4, shadowOffset: { width: 0, height: 2 }, elevation: 2 },
   hero: { shadowOpacity: 0.55, shadowRadius: 30, shadowOffset: { width: 0, height: 30 }, elevation: 10 },
   peek: { shadowOpacity: 0.35, shadowRadius: 16, shadowOffset: { width: 0, height: 12 }, elevation: 4 },
 } as const satisfies Record<string, Shadow>;
 
-/** The original's timings. Nothing bounces except the spinner, which defines its own curve. */
+/** The original's timings. Nothing bounces except Surprise me's deck, which defines its own curve. */
 export const MOTION = { quick: 180, standard: 240, slow: 320, toast: 2500 } as const;
 
 /** Minimum tap target, in points. */
@@ -164,19 +161,13 @@ export const SMALL_CONTROL = 36;
 /** Invisible padding that brings a control `height` tall up to TAP_TARGET (health check #12). */
 export const slopFor = (height: number) => Math.max(0, Math.ceil((TAP_TARGET - height) / 2));
 
-export const ASPECT = { card: 4 / 3, hero: 16 / 9, square: 1, portrait: 4 / 5, spinner: 4 / 5.2 } as const;
+export const ASPECT = { card: 4 / 3, hero: 16 / 9, square: 1, portrait: 4 / 5, surprise: 4 / 5.2 } as const;
 
 /** Fixed chrome sizes (spec §3.6). */
 export const CHROME = {
   headerRow: 40,
   avatar: 36,
-  /** The centre "+": the button, the ring of page colour round it, and its lift. */
-  fab: 56,
-  fabRing: 5,
-  fabBottom: 6,
   tabIcon: 24,
-  drawerMax: 320,
-  drawerMin: 280,
   recipeHero: 280,
   titleBottom: 18,
   headerBottom: 10,
@@ -186,10 +177,6 @@ export const CHROME = {
   tabPadY: 6,
   tabGap: 5,
   tabHide: 180,
-  drawerMark: 36,
-  drawerBrandY: 18,
-  drawerSection: 14,
-  drawerAvatar: 42,
 } as const;
 
 /** Recipe card measurements from the original (spec §3.2, §4.6), kept exact so cards match. */
@@ -270,8 +257,8 @@ export const JAR = { gap: 7, padY: 6, padX: 9, initial: 12, matchBody: 14 } as c
 /** Pressed feedback: the original dims, it never scales cards. */
 export const PRESSED = { card: 0.94, row: 0.7, subtle: 0.85 } as const;
 
-/** The spinner's deck and motion (spec §4.19, §6). v1's numbers, kept so it moves the same. */
-export const SPINNER = {
+/** The Surprise me deck and motion (spec §4.19, §6). v1's numbers, kept so it moves the same. */
+export const SURPRISE = {
   heroMax: 320,
   peekMax: 260,
   /** A peek card is this share of the stage width. */

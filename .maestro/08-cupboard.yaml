@@ -1,6 +1,7 @@
-# Cupboard: add by search (tap a suggestion, or press return for the top match), the scan sheets,
-# remove with undo, the stock grid, the "move ticked shopping here" switch (and
-# that ticking really moves it), and what-can-I-make results.
+# Cupboard: add by search (tap a suggestion, or press return for the top
+# match), Add a list (and no scan buttons until scanning works), remove with
+# undo, the stock grid, the "move ticked shopping here" switch (and that
+# ticking really moves it), and what-can-I-make results.
 appId: host.exp.Exponent
 ---
 - launchApp:
@@ -58,20 +59,17 @@ appId: host.exp.Exponent
     id: "cupboard-search-clear"
 - tapOn: 'What do you have\?'
 
-# Scanning a receipt: not switched on yet, so the sheet says so and offers the typed list.
-- tapOn:
+# Scanning isn't switched on yet, so the Cupboard doesn't offer it: only
+# "Add a list" (flow 20 checks the scan sheet itself, opened by its link).
+- assertNotVisible:
     id: "cupboard-scan-receipt"
-- assertVisible: "Scan a receipt"
-- assertVisible: "Coming soon"
-- takeScreenshot: cupboard-scan-not-yet
-- tapOn:
-    id: "scan-not-now"
-- tapOn:
+- assertNotVisible:
     id: "cupboard-scan-food"
 - tapOn:
-    id: "scan-use-list"
+    id: "cupboard-add-list"
 - assertVisible:
     id: "add-list-input"
+- takeScreenshot: cupboard-add-list
 - tapOn:
     id: "sheet-close"
 

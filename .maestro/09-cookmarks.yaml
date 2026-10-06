@@ -1,24 +1,31 @@
-# Cookmarks (v1's "Saved" page): the empty state and its way out, then a saved
-# recipe listed as a cream card, opened, unsaved from its disc and put back with Undo.
+# The library's Cookmarks tab (v1's "Saved" page): the empty state and its way
+# out, then a saved recipe listed as a cream card, opened, unsaved from its
+# disc and put back with Undo, and the tabs switching in place.
 appId: host.exp.Exponent
 ---
 - launchApp:
     clearState: true
 - openLink: ${METRO_URL}
 - runFlow: subflows/_setup_skip_welcome.yaml
+
+# The library opens from a link, so Home is underneath and Back lands there.
+- openLink: ${METRO_URL}/--/library?tab=cookmarks
 - tapOn:
-    id: "header-menu"
-- tapOn:
-    id: "menu-saved"
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: "cookmarks-empty"
+    timeout: 15000
 - assertVisible:
-    id: "cookmarks-empty"
+    id: "library-screen"
 - assertVisible: "Nothing saved yet"
-- assertVisible: "0 items"
+- assertVisible: "0 saved recipes"
 - takeScreenshot: cookmarks-empty
 - tapOn:
     id: "cookmarks-empty-action"
 - assertVisible: "Discover"
-# Browse opened over Cookmarks: back twice to Home, where the side menu is.
+# Browse opened over the library: back twice to Home.
 - tapOn:
     id: "back"
 - assertVisible:
@@ -40,14 +47,15 @@ appId: host.exp.Exponent
 - tapOn:
     id: "back"
 
+- openLink: ${METRO_URL}/--/library?tab=cookmarks
 - tapOn:
-    id: "header-menu"
-- assertVisible: "Cookmarks, 1"
-- tapOn:
-    id: "menu-saved"
-- assertVisible: "1 item"
-- assertVisible:
-    id: "recipe-card-carbonara"
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: "recipe-card-carbonara"
+    timeout: 15000
+- assertVisible: "1 saved recipe"
 - takeScreenshot: cookmarks-one
 - tapOn:
     id: "recipe-card-carbonara"
@@ -71,3 +79,23 @@ appId: host.exp.Exponent
     id: "toast-undo"
 - assertVisible:
     id: "recipe-card-carbonara"
+
+# The tabs switch in place, and the head's count follows the tab.
+- tapOn:
+    id: "library-tab-collections"
+- assertVisible:
+    id: "collections-empty"
+- assertVisible: "0 collections"
+- tapOn:
+    id: "library-tab-mine"
+- assertVisible:
+    id: "mine-empty"
+- tapOn:
+    id: "library-tab-recent"
+- assertVisible:
+    id: "recent-screen"
+- tapOn:
+    id: "library-tab-cookmarks"
+- assertVisible:
+    id: "recipe-card-carbonara"
+- takeScreenshot: library-tabs

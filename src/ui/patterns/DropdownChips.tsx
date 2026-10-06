@@ -1,5 +1,5 @@
 // A row of dropdown chips over the page (v1's FilterDropdown row on the feed
-// and the spinner's settings). Each chip shows its choice, or its name when
+// and Surprise me's settings). Each chip shows its choice, or its name when
 // it's on "Any"; tapping one opens a small sheet of options. One component
 // for both places, so they look and behave the same.
 import { useState } from 'react';

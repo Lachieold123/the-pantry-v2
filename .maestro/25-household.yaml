@@ -11,13 +11,9 @@ appId: host.exp.Exponent
 
 - tapOn:
     id: "header-avatar"
-- scrollUntilVisible:
-    element:
-      id: "settings-household"
-    direction: DOWN
 - assertVisible: "Household, Not sharing"
 - tapOn:
-    id: "settings-household"
+    id: "you-household"
 - assertVisible:
     id: "household-screen"
 - tapOn:

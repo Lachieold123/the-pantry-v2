@@ -2,7 +2,7 @@
 const { defineConfig } = require('eslint/config');
 const expoConfig = require('eslint-config-expo/flat');
 
-const FEATURES = ['feed', 'recipes', 'recipe', 'plan', 'cupboard', 'saved', 'cook', 'surprise', 'settings', 'editor', 'welcome', 'shell', 'dev', 'app', 'shopping', 'plates', 'tour', 'pro', 'household'];
+const FEATURES = ['feed', 'recipes', 'recipe', 'plan', 'cupboard', 'saved', 'cook', 'surprise', 'settings', 'editor', 'welcome', 'shell', 'dev', 'app', 'shopping', 'plates', 'tour', 'pro', 'household', 'you'];
 
 // Colour literals belong in src/ui/tokens only (map rule 8).
 const noColourLiterals = {

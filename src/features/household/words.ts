@@ -17,5 +17,5 @@ export function namesList(names: readonly string[]): string {
 }
 
 export function inviteMessage(code: string): string {
-  return `Come and share our kitchen on The Pantry: our plan, shopping list and cupboard.\n\nOpen this on your phone: thepantry://join/${code}\nOr in The Pantry, go to Settings → Household and enter ${code}.`;
+  return `Come and share our kitchen on The Pantry: our plan, shopping list and cupboard.\n\nOpen this on your phone: thepantry://join/${code}\nOr in The Pantry, tap your picture at the top, then Household, and enter ${code}.`;
 }

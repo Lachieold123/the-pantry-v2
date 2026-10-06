@@ -1,23 +1,23 @@
-// Collections: v1's "Your shelves" (CollectionsModal, `light-18`). The library
-// head, an outlined "+ New collection" pill that opens a centred naming
-// dialog, then a 2×2 photo mosaic per collection. Long press for actions.
+// Collections, the library's second tab: v1's "Your shelves"
+// (CollectionsModal, `light-18`) without its own head. An outlined
+// "+ New collection" pill that opens a centred naming dialog, then a 2×2
+// photo mosaic per collection. Long press for actions. Each collection still
+// opens on its own page (/collections/[id]).
 import { useRouter } from 'expo-router';
 import { useState } from 'react';
 import { View } from 'react-native';
 
+import { useAllowance } from '@/store/pro';
 import { useSaved } from '@/store/saved';
 import { CollectionMosaicGrid, type MosaicItem } from '@/ui/patterns/CollectionMosaic';
 import { CollectionNameDialog } from '@/ui/patterns/CollectionNameDialog';
 import { EmptyState } from '@/ui/patterns/EmptyState';
-import { LibraryHead } from '@/ui/patterns/LibraryHeader';
 import { Button } from '@/ui/primitives/Button';
-import { Screen } from '@/ui/primitives/Screen';
-import { LIBRARY } from '@/ui/tokens/library';
+import { SPACE } from '@/ui/tokens/type';
 import { CollectionActions, nameProblem } from './CollectionActions';
 import { imageFor, useRecipesFor } from './libraryHooks';
-import { useAllowance } from '@/store/pro';
 
-export function CollectionsScreen() {
+export function CollectionsTab() {
   const router = useRouter();
   const collections = useSaved((s) => s.collections);
   const createCollection = useSaved((s) => s.createCollection);
@@ -32,12 +32,10 @@ export function CollectionsScreen() {
   });
 
   return (
-    <Screen testID="collections-screen">
-      <View>
-        <LibraryHead kicker="Collections" title="Your shelves" count={collections.length} unit={['collection', 'collections']} />
-        <View style={{ paddingTop: LIBRARY.actionsTop, paddingBottom: LIBRARY.actionsBottom }}>
-          <Button label="New collection" icon="add" onPress={() => allowed('collections') && setCreating(true)} testID="collections-new" />
-        </View>
+    <View testID="collections-screen">
+      <View style={{ gap: SPACE.md }}>
+        {/* Free keeps 3 collections (D-038): past that, the paywall opens instead of the dialog. */}
+        <Button label="New collection" icon="add" onPress={() => allowed('collections') && setCreating(true)} testID="collections-new" />
         {items.length ? (
           <CollectionMosaicGrid
             items={items}
@@ -65,6 +63,6 @@ export function CollectionsScreen() {
         onClose={() => setCreating(false)}
       />
       <CollectionActions id={actionsFor} onClose={() => setActionsFor(null)} />
-    </Screen>
+    </View>
   );
 }

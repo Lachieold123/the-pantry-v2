@@ -1,4 +1,4 @@
-// The header of a screen opened on top of a tab (Settings, Recently viewed,
+// The header of a screen opened on top of a tab (Settings, Recent,
 // Kitchen stats): a square back button, an amber kicker and a serif title,
 // with an optional action on the right (spec §4.4).
 import { useRouter } from 'expo-router';

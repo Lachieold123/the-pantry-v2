@@ -1,14 +1,44 @@
-// Saving, collections (with Pro's free limit of 3, D-038), searching, and
-// writing your own recipe, including the "1.5 kg" amount the health check
-// found being read as "5 kg".
+// The library (one page, four tabs), saving, collections (with Pro's free
+// limit of 3, D-038), searching, and writing your own recipe, including the
+// "1.5 kg" amount the health check found being read as "5 kg".
 import { expect, ONBOARDED, open, test } from './kitchen';
 
 test('saving a recipe puts it in Cookmarks', async ({ page }) => {
   await open(page, '/recipe/carbonara', ONBOARDED);
   await page.getByTestId('recipe-save').click();
+  // The old address still works: it opens the library on Cookmarks.
   await page.goto('/saved');
-  await expect(page.getByTestId('cookmarks-screen')).toContainText('Cookmarks');
+  await expect(page.getByTestId('library-screen')).toContainText('Library');
+  await expect(page.getByTestId('library-tab-cookmarks')).toHaveAttribute('aria-selected', 'true');
+  await expect(page.getByTestId('cookmarks-screen')).toBeVisible();
+  await expect(page.getByLabel('1 saved recipe', { exact: true })).toBeVisible();
   await expect(page.getByTestId('recipe-card-carbonara')).toBeVisible();
+});
+
+test('the library switches tabs in place, and a link opens the tab it names', async ({ page }) => {
+  await open(page, '/library', {
+    ...ONBOARDED,
+    saved: { bookmarks: [], collections: [], hidden: [], recentlyViewed: ['carbonara'] },
+  });
+  await expect(page.getByTestId('cookmarks-empty')).toBeVisible();
+  await page.getByTestId('library-tab-collections').click();
+  await expect(page.getByTestId('collections-empty')).toBeVisible();
+  await page.getByTestId('library-tab-mine').click();
+  await expect(page.getByTestId('mine-empty')).toBeVisible();
+  await page.getByTestId('library-tab-recent').click();
+  await expect(page.getByTestId('recipe-card-carbonara')).toBeVisible();
+  await expect(page.getByLabel('1 recipe', { exact: true })).toBeVisible();
+  // Switching is local: the address doesn't change, so Back leaves the library.
+  await expect(page).toHaveURL(/\/library$/);
+
+  // Opening a recipe and coming back keeps the tab.
+  await page.getByTestId('recipe-card-carbonara').click();
+  await expect(page.getByTestId('recipe-screen')).toBeVisible();
+  await page.goBack();
+  await expect(page.getByTestId('library-tab-recent')).toHaveAttribute('aria-selected', 'true');
+
+  await page.goto('/library?tab=collections');
+  await expect(page.getByTestId('collections-new')).toBeVisible();
 });
 
 test('a fourth collection opens Pro when the free limits apply, and none is made', async ({ page }) => {

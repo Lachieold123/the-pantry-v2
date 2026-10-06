@@ -1,4 +1,4 @@
-# Surprise me (the spinner): the deck, settings and their pickers, tap the
+# Surprise me: the deck, settings and their pickers, tap the
 # card to spin, spin again, Why this, how it works, plan it, cook this.
 appId: host.exp.Exponent
 ---
@@ -7,100 +7,100 @@ appId: host.exp.Exponent
 - openLink: ${METRO_URL}
 - runFlow: subflows/_setup_skip_welcome.yaml
 
-# From the side menu's Spinner
+# From the You page (the avatar): Surprise me
 - tapOn:
-    id: "header-menu"
+    id: "header-avatar"
 - tapOn:
-    id: "menu-spinner"
+    id: "you-surprise"
 - assertVisible:
-    id: "spinner-card"
+    id: "surprise-card"
 - assertVisible: "Tonight’s dinner"
-- takeScreenshot: spinner-start
+- takeScreenshot: surprise-start
 # "Why this" sits under the card.
 - scrollUntilVisible:
     element:
-      id: "spinner-why"
+      id: "surprise-why"
     direction: DOWN
 - scrollUntilVisible:
     element:
-      id: "spinner-card"
+      id: "surprise-card"
     direction: UP
 
 # Tap the card: the deck runs for about a second, then lands
 - tapOn:
-    id: "spinner-card"
+    id: "surprise-card"
 # "Tap card to spin" is hidden from VoiceOver (and so from tests). The buttons
 # under the card are disabled while it spins, so wait for Spin again to come back.
 - scrollUntilVisible:
     element:
-      id: "spinner-spin"
+      id: "surprise-spin"
     direction: DOWN
 - extendedWaitUntil:
     visible:
-      id: "spinner-spin"
+      id: "surprise-spin"
       enabled: true
     timeout: 10000
-- takeScreenshot: spinner-landed
+- takeScreenshot: surprise-landed
 - scrollUntilVisible:
     element:
-      id: "spinner-time"
+      id: "surprise-time"
     direction: UP
 
 # Settings: Time ≤ 15 min, then back to Any
 - tapOn:
-    id: "spinner-time"
+    id: "surprise-time"
 - tapOn:
-    id: "spinner-option-under-15"
+    id: "surprise-option-under-15"
 - assertVisible: "≤ 15 min"
 - tapOn:
-    id: "spinner-time"
+    id: "surprise-time"
 - tapOn:
-    id: "spinner-option-any"
+    id: "surprise-option-any"
 # Meal: Lunch changes the kicker
 - tapOn:
-    id: "spinner-meal"
+    id: "surprise-meal"
 - tapOn:
-    id: "spinner-option-lunch"
+    id: "surprise-option-lunch"
 - assertVisible: "Today’s lunch"
 - tapOn:
-    id: "spinner-meal"
+    id: "surprise-meal"
 - tapOn:
-    id: "spinner-option-dinner"
+    id: "surprise-option-dinner"
 
 # Spin again
 - scrollUntilVisible:
     element:
-      id: "spinner-spin"
+      id: "surprise-spin"
     direction: DOWN
 - tapOn:
-    id: "spinner-spin"
+    id: "surprise-spin"
 # "Tap card to spin" is hidden from VoiceOver (and so from tests); the
 # buttons are disabled while it spins, so wait for Spin again to come back.
 - extendedWaitUntil:
     visible:
-      id: "spinner-spin"
+      id: "surprise-spin"
       enabled: true
     timeout: 10000
 
 # How it works
 - scrollUntilVisible:
     element:
-      id: "spinner-info"
+      id: "surprise-info"
     direction: UP
 - tapOn:
-    id: "spinner-info"
+    id: "surprise-info"
 - assertVisible:
-    id: "spinner-how"
+    id: "surprise-how"
 - tapOn:
-    id: "spinner-how-close"
+    id: "surprise-how-close"
 
-# Plan it opens the plan sheet for the pick, and comes back to the spinner
+# Plan it opens the plan sheet for the pick, and comes back to Surprise me
 - scrollUntilVisible:
     element:
-      id: "spinner-plan"
+      id: "surprise-plan"
     direction: DOWN
 - tapOn:
-    id: "spinner-plan"
+    id: "surprise-plan"
 # Two weeks of days, the meal and the stepper can push the button below the sheet's fold.
 - scrollUntilVisible:
     element:
@@ -110,14 +110,14 @@ appId: host.exp.Exponent
     id: "plan-confirm"
 - assertVisible: ".* planned for .*"
 - assertVisible:
-    id: "spinner-screen"
+    id: "surprise-screen"
 
 # Cook this opens the recipe
 - tapOn:
-    id: "spinner-cook"
+    id: "surprise-cook"
 - assertVisible:
     id: "recipe-screen"
 - tapOn:
     id: "back"
 - assertVisible:
-    id: "spinner-screen"
+    id: "surprise-screen"

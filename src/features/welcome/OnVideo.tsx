@@ -67,7 +67,7 @@ export function WhitePill({ label, onPress, testID, disabled = false, arrow = tr
   );
 }
 
-/** A quiet text button (Back, Not now). */
+/** A quiet text button (Back, Skip for now). */
 export function TextButton({ label, onPress, testID, accessibilityHint }: PressProps) {
   const styles = useStyles();
   return (
@@ -87,35 +87,22 @@ export function TextButton({ label, onPress, testID, accessibilityHint }: PressP
   );
 }
 
-/** A frosted choice: a pill chip (avoid, cuisines) or a tile with a line under the label (diet, time). */
-export function GlassChoice(props: {
-  label: string;
-  sub?: string;
-  selected: boolean;
-  onPress: () => void;
-  testID: string;
-  radio?: boolean;
-}) {
-  const { label, sub, selected, onPress, testID, radio = false } = props;
+/** A frosted pill chip: a single choice (diet) or one of many (avoid, cupboard). */
+export function GlassChoice(props: { label: string; selected: boolean; onPress: () => void; testID: string; radio?: boolean }) {
+  const { label, selected, onPress, testID, radio = false } = props;
   const styles = useStyles();
-  const tile = sub !== undefined;
   return (
     <Pressable
       onPress={onPress}
       accessibilityRole={radio ? 'radio' : 'checkbox'}
       accessibilityState={{ checked: selected }}
-      accessibilityLabel={sub ? `${label}, ${sub}` : label}
+      accessibilityLabel={label}
       testID={testID}
-      style={({ pressed }) => [tile ? styles.tile : styles.chip, selected && styles.on, pressed && styles.pressed]}
+      style={({ pressed }) => [styles.chip, selected && styles.on, pressed && styles.pressed]}
     >
-      <Text variant={tile ? 'tileLabel' : 'chipLarge'} tone={selected ? FIXED.videoInk : FIXED.onPhoto}>
+      <Text variant="chipLarge" tone={selected ? FIXED.videoInk : FIXED.onPhoto}>
         {label}
       </Text>
-      {sub ? (
-        <Text variant="value" tone={selected ? FIXED.videoInk : FIXED.videoSub}>
-          {sub}
-        </Text>
-      ) : null}
     </Pressable>
   );
 }
@@ -142,9 +129,9 @@ export function StepHeading({ kicker, title, sub }: { kicker: string; title?: st
   );
 }
 
-export function Wrap({ children, tiles = false }: { children: ReactNode; tiles?: boolean }) {
+export function Wrap({ children }: { children: ReactNode }) {
   const styles = useStyles();
-  return <View style={tiles ? styles.tiles : styles.wrap}>{children}</View>;
+  return <View style={styles.wrap}>{children}</View>;
 }
 
 const useStyles = makeStyles(() => ({
@@ -169,14 +156,6 @@ const useStyles = makeStyles(() => ({
   },
   disabled: { opacity: WELCOME.disabled },
   pressed: { opacity: PRESSED.subtle },
-  tile: {
-    paddingVertical: WELCOME.tilePadY,
-    paddingHorizontal: WELCOME.tilePadX,
-    borderRadius: RADIUS.big,
-    borderWidth: 1,
-    borderColor: FIXED.glassBorder,
-    backgroundColor: FIXED.glassTile,
-  },
   chip: {
     minHeight: TAP_TARGET,
     justifyContent: 'center',
@@ -192,6 +171,5 @@ const useStyles = makeStyles(() => ({
   kicker: { marginBottom: WELCOME.kickerGap },
   title: { marginBottom: WELCOME.titleGap },
   sub: { marginBottom: WELCOME.titleGap },
-  tiles: { gap: WELCOME.tileGap },
   wrap: { flexDirection: 'row', flexWrap: 'wrap', gap: WELCOME.chipGap },
 }));

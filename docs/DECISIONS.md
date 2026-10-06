@@ -284,7 +284,7 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
 
 - **Date:** 2 October 2026 · **Decided by:** Lachlan. He chose an in-app tour over a video, shown right after the welcome, covering What I have, filling the cupboard, and Plan and List, in 4–5 steps.
 - **Decision:**
-  - On first open, after the welcome and taste quiz (or Skip), Home dims and a spotlight steps through four real controls. Each has one short line:
+  - On first open, after the welcome (or Skip), Home dims and a spotlight steps through four real controls. Each has one short line:
     1. **What I have**
     2. **the Cupboard tab**
     3. **the Plan tab**
@@ -360,3 +360,14 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
 - **Maestro stays** for what only an iPhone shows: native sheets, the keyboard, notifications, the camera prompt. It runs before a build goes to testers, and moves to EAS Workflows on Expo's cloud when TestFlight is set up.
 - **Why:** Maestro on the Mac kept failing for reasons outside the app (a brand-new iOS, a missed `npm install`, a leftover Metro), and every run needed Lachlan. The web suite runs all 32 journeys in under a minute, and passed three repeat runs in a row with no failures.
 - **First catch:** a List with only added things (from a recipe or the Cupboard) said "Your list is empty" while the tab badge said 3. Fixed in `ShoppingListView`.
+
+## D-041 · A simpler app: two-step welcome, one Library, You instead of a menu
+
+- **Date:** 6 October 2026 · **Decided by:** Lachlan (all six simplifications, as recommended)
+- **Decision:**
+  - **Welcome:** two quick steps after the opening screen. "Anything you don't eat?" (diet and leave-outs), then "What's in your cupboard?" (24 tap-to-add items, only ones this cook eats). "Show what I can cook" stocks the cupboard and opens Home on What I have, even if nothing is fully ready yet. Cuisines and weeknight time are no longer asked; they stay in Settings → Cooking. The taste quiz, the "Tonight, for you" reveal and the Sunday-reminder question are gone (the reminder stays in Settings). Replaces the welcome part of D-035; the tour is unchanged.
+  - **Library:** Cookmarks, Collections, My recipes and Recent are one page with four tabs (`/library?tab=…`). The old addresses still open the right tab.
+  - **You instead of a side menu:** the avatar opens You (Library, Kitchen stats, Share a dish, Surprise me, Household, Pro, Settings). The hamburger, the drawer and the tab bar's centre "+" are gone: four tabs.
+  - **No dead ends:** the scan buttons are hidden until scanning is connected; Home keeps only Time and Cuisine (Browse has every filter); Browse's "+" is gone (writing a recipe lives in My recipes).
+  - **Names:** one thing, one name. See `docs/audits/2026-10-06-naming/FINDINGS.md`.
+- **Why:** each was a second way to the same place, or a question that delayed the first useful screen. The welcome now ends with the user's own cupboard on Home, which is the app's strongest moment.

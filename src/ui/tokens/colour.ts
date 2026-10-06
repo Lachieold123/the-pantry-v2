@@ -10,7 +10,7 @@ export type ColourTokens = {
   bgFade: string;
   /** Inputs, chips, tiles, sunken cards, pressed rows. */
   bgSoft: string;
-  /** Raised cards, the drawer panel, round buttons over photos. */
+  /** Raised cards, round buttons over photos. */
   card: string;
   /** Every 1pt border, divider and progress track. */
   border: string;
@@ -153,7 +153,6 @@ export const FIXED = {
   photoDisc: 'rgba(255,255,255,0.92)',
   photoDiscInk: '#1A1A1A',
   scrim: 'rgba(0,0,0,0.5)',
-  scrimDrawer: 'rgba(0,0,0,0.42)',
   scrimHidden: 'rgba(0,0,0,0.4)',
   toastBg: '#F7F3EA',
   toastInk: '#0A0A0A',
@@ -164,10 +163,10 @@ export const FIXED = {
   libraryWell: '#1A1815',
   amberLight: '#E8C891',
   amberRule: 'rgba(232,200,145,0.85)',
-  /** Darkens the spinner's peek cards so they read as the deck, not choices. */
+  /** Darkens Surprise me's peek cards so they read as the deck, not choices. */
   peekDim: 'rgba(0,0,0,0.55)',
   shadow: '#000000',
-  /** Welcome and the taste quiz sit on a dark photo in both modes, as v1's video did. */
+  /** The welcome and its steps sit on a dark photo in both modes, as v1's video did. */
   videoBg: '#000000',
   videoInk: '#1A1A1A',
   videoKicker: 'rgba(255,255,255,0.9)',
@@ -181,11 +180,8 @@ export const FIXED = {
   glassTrack: 'rgba(255,255,255,0.22)',
   glassOutline: 'rgba(255,255,255,0.3)',
   videoScrim50: 'rgba(0,0,0,0.5)',
-  videoScrim55: 'rgba(0,0,0,0.55)',
   videoScrim70: 'rgba(0,0,0,0.7)',
-  videoScrim72: 'rgba(0,0,0,0.72)',
   videoScrim88: 'rgba(0,0,0,0.88)',
-  videoScrim90: 'rgba(0,0,0,0.9)',
 } as const;
 
 /** Photo scrims, as gradient stops. */
@@ -193,11 +189,11 @@ export const GRADIENTS = {
   heroBottom: { colors: ['transparent', 'rgba(0,0,0,0.78)'], locations: [0.4, 1] },
   shelfBottom: { colors: ['transparent', 'rgba(0,0,0,0.75)'], locations: [0.55, 1] },
   feedBottom: { colors: ['rgba(0,0,0,0)', 'rgba(0,0,0,0.85)'], locations: [0.45, 1] },
-  spinnerBottom: { colors: ['transparent', 'rgba(0,0,0,0.2)', 'rgba(0,0,0,0.92)'], locations: [0.3, 0.45, 0.92] },
+  surpriseBottom: { colors: ['transparent', 'rgba(0,0,0,0.2)', 'rgba(0,0,0,0.92)'], locations: [0.3, 0.45, 0.92] },
   photoTop: { colors: ['rgba(0,0,0,0.25)', 'rgba(0,0,0,0)'], locations: [0, 1] },
-  /** Behind the spinner card's cuisine label, which vanished on pale photos (health check #5). */
-  spinnerTop: { colors: ['rgba(0,0,0,0.55)', 'rgba(0,0,0,0)'], locations: [0, 0.3] },
-  /** The faint warm air behind the spinner's deck. */
-  spinnerGlow: { colors: ['transparent', 'rgba(232,200,145,0.05)', 'transparent'], locations: [0.2, 0.55, 0.9] },
-  spinnerGlowFoot: { colors: ['transparent', 'rgba(232,200,145,0.04)'], locations: [0.7, 1] },
+  /** Behind the Surprise me card's cuisine label, which vanished on pale photos (health check #5). */
+  surpriseTop: { colors: ['rgba(0,0,0,0.55)', 'rgba(0,0,0,0)'], locations: [0, 0.3] },
+  /** The faint warm air behind the Surprise me deck. */
+  surpriseGlow: { colors: ['transparent', 'rgba(232,200,145,0.05)', 'transparent'], locations: [0.2, 0.55, 0.9] },
+  surpriseGlowFoot: { colors: ['transparent', 'rgba(232,200,145,0.04)'], locations: [0.7, 1] },
 } as const;

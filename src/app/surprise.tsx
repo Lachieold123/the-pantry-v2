@@ -1,3 +1,3 @@
-import { SpinnerScreen } from '@/features/surprise/SpinnerScreen';
+import { SurpriseScreen } from '@/features/surprise/SurpriseScreen';
 
-export default SpinnerScreen;
+export default SurpriseScreen;

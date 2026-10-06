@@ -1,4 +1,5 @@
 # Every empty state on a fresh install says what's missing and offers a next step.
+# The library and stats are reached the way a person would: the avatar, then You.
 appId: host.exp.Exponent
 ---
 - launchApp:
@@ -6,16 +7,48 @@ appId: host.exp.Exponent
 - openLink: ${METRO_URL}
 - runFlow: subflows/_setup_skip_welcome.yaml
 
-# Cookmarks
+# Cookmarks, from You
 - tapOn:
-    id: "header-menu"
+    id: "header-avatar"
+- assertVisible:
+    id: "you-screen"
 - tapOn:
-    id: "menu-saved"
+    id: "you-cookmarks"
 - assertVisible:
     id: "cookmarks-empty"
 - assertVisible:
     id: "cookmarks-empty-action"
 - takeScreenshot: empty-cookmarks
+
+# The other library tabs switch in place
+- tapOn:
+    id: "library-tab-collections"
+- assertVisible:
+    id: "collections-empty"
+- takeScreenshot: empty-collections
+- tapOn:
+    id: "library-tab-mine"
+- assertVisible:
+    id: "mine-empty"
+- takeScreenshot: empty-my-recipes
+- tapOn:
+    id: "library-tab-recent"
+- assertVisible:
+    id: "recent-empty"
+- takeScreenshot: empty-recent
+
+# Back to You, then Kitchen stats
+- tapOn:
+    id: "back"
+- assertVisible:
+    id: "you-screen"
+- tapOn:
+    id: "you-stats"
+- assertVisible:
+    id: "stats-empty"
+- takeScreenshot: empty-stats
+- tapOn:
+    id: "back"
 - tapOn:
     id: "back"
 
@@ -24,7 +57,9 @@ appId: host.exp.Exponent
     id: "tab-plan"
 - assertVisible:
     id: "plan-screen"
-- assertVisible: "0 of 21 meals planned this week"
+- assertVisible:
+    id: "plan-progress"
+- assertVisible: "0 of 21 meals"
 - takeScreenshot: empty-plan
 - tapOn:
     id: "tab-list"
@@ -46,44 +81,6 @@ appId: host.exp.Exponent
     direction: DOWN
 - assertVisible: "Your cupboard is empty.*"
 - takeScreenshot: empty-cupboard
-
-# The library pages
-- tapOn:
-    id: "header-menu"
-- tapOn:
-    id: "menu-collections"
-- assertVisible:
-    id: "collections-empty"
-- takeScreenshot: empty-collections
-- tapOn:
-    id: "back"
-- tapOn:
-    id: "header-menu"
-- tapOn:
-    id: "menu-my-recipes"
-- assertVisible:
-    id: "mine-empty"
-- takeScreenshot: empty-my-recipes
-- tapOn:
-    id: "back"
-- tapOn:
-    id: "header-menu"
-- tapOn:
-    id: "menu-recent"
-- assertVisible:
-    id: "recent-empty"
-- takeScreenshot: empty-recent
-- tapOn:
-    id: "back"
-- tapOn:
-    id: "header-menu"
-- tapOn:
-    id: "menu-stats"
-- assertVisible:
-    id: "stats-empty"
-- takeScreenshot: empty-stats
-- tapOn:
-    id: "back"
 
 # Browse with nothing matching
 - runFlow: subflows/_open_browse.yaml

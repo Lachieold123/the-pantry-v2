@@ -6,21 +6,20 @@
 // "Nearly there" shelf of dishes one or two things short (SuperCook's tiers,
 // from the same engine as the Cupboard tab). "Everything" is the wider feed:
 // tonight's planned dinner, one cupboard dish, then picks for this cook.
-// Meal, time, cuisine and difficulty narrow either mode.
+// Time and cuisine narrow either mode. Home keeps only those two (Lachlan,
+// 6 October): meal and difficulty live in Browse's fuller filters.
 //
 // v1 called its top cards "Editor's pick". Here every label says why the card
 // is there, and nothing claims to be trending or chosen by an editor.
 
 import { matchesFilters, NO_FILTERS, type RecipeFilters, type TimeFilter } from '../recipes/search';
-import type { CuisineId, Difficulty, MealType, Recipe } from '../recipes/types';
+import type { CuisineId, Recipe } from '../recipes/types';
 
 export type HomeMode = 'pantry' | 'all';
 
 export type HomeFilters = {
-  meal?: MealType | undefined;
   time?: TimeFilter | undefined;
   cuisine?: CuisineId | undefined;
-  difficulty?: Difficulty | undefined;
 };
 
 export const NO_HOME_FILTERS: HomeFilters = {};
@@ -60,17 +59,13 @@ export function defaultHomeMode(readyCount: number): HomeMode {
 }
 
 export function hasHomeFilters(f: HomeFilters): boolean {
-  return Boolean(f.meal || f.time || f.cuisine || f.difficulty);
+  return Boolean(f.time || f.cuisine);
 }
 
+// Reads only the two fields Home has, so a meal or difficulty left over from
+// before (Home had four filters until October) can never narrow the feed unseen.
 function asRecipeFilters(f: HomeFilters): RecipeFilters {
-  return {
-    ...NO_FILTERS,
-    mealTypes: f.meal ? [f.meal] : [],
-    time: f.time,
-    cuisines: f.cuisine ? [f.cuisine] : [],
-    difficulties: f.difficulty ? [f.difficulty] : [],
-  };
+  return { ...NO_FILTERS, time: f.time, cuisines: f.cuisine ? [f.cuisine] : [] };
 }
 
 /** The cards, the grid and the nearly shelf, with no recipe twice. Filters apply everywhere, the planned dinner included. */

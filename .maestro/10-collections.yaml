@@ -1,19 +1,23 @@
-# Collections ("Your shelves"): create in the naming dialog, refuse a duplicate,
-# open, rename and delete from the ⋯ sheet (with Undo), long-press actions, and
-# a recipe added to one from its page showing in the mosaic and inside.
+# The library's Collections tab: create in the naming dialog, refuse a
+# duplicate, open, rename and delete from the ⋯ sheet (with Undo), long-press
+# actions, and a recipe added to one from its page showing in the mosaic and inside.
 appId: host.exp.Exponent
 ---
 - launchApp:
     clearState: true
 - openLink: ${METRO_URL}
 - runFlow: subflows/_setup_skip_welcome.yaml
+# The library opens from a link, so Home is underneath and Back lands there.
+- openLink: ${METRO_URL}/--/library?tab=collections
 - tapOn:
-    id: "header-menu"
-- tapOn:
-    id: "menu-collections"
-- assertVisible: "Your shelves"
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: "collections-empty"
+    timeout: 15000
 - assertVisible:
-    id: "collections-empty"
+    id: "library-tab-collections"
 - takeScreenshot: collections-empty
 
 # Create
@@ -101,10 +105,14 @@ appId: host.exp.Exponent
     id: "sheet-close"
 - tapOn:
     id: "back"
+- openLink: ${METRO_URL}/--/library?tab=collections
 - tapOn:
-    id: "header-menu"
-- tapOn:
-    id: "menu-collections"
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: "collections-screen"
+    timeout: 15000
 - assertVisible: "Fridays, 1 recipe"
 - tapOn:
     id: "collection-card-.*"

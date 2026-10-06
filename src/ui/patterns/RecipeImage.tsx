@@ -19,7 +19,7 @@ type Props = {
   iconSize?: number;
   /** A fixed height instead of the shape's ratio (the recipe page's hero band). */
   height?: number;
-  /** Cross-fade time for a new photo; the spinner turns it off so fast-changing cards stay sharp. */
+  /** Cross-fade time for a new photo; Surprise me turns it off so fast-changing cards stay sharp. */
   transition?: number;
   /** Overlays drawn on top of the photo (scrims, discs, pills). */
   children?: ReactNode;

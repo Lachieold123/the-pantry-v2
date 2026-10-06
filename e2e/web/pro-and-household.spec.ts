@@ -4,8 +4,9 @@
 import { expect, isoDay, ONBOARDED, open, test } from './kitchen';
 
 test('the Pro page says it isn’t on sale yet, and nothing is limited', async ({ page }) => {
-  await open(page, '/settings', ONBOARDED);
-  await page.getByTestId('settings-pro').click();
+  await open(page, '/you', ONBOARDED);
+  await expect(page.getByTestId('you-pro')).toHaveAccessibleName('The Pantry Pro, Free, nothing limited yet');
+  await page.getByTestId('you-pro').click();
   await expect(page.getByTestId('pro-benefits')).toContainText('Plan further ahead');
   await expect(page.getByTestId('pro-not-on-sale')).toBeVisible();
   await expect(page.getByTestId('pro-buy')).toHaveCount(0);

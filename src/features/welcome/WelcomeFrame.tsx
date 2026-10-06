@@ -1,6 +1,7 @@
 // The two page shapes of the welcome flow (spec §4.21): the hello page, with
 // its content at the foot of the photo, and the question page, with a progress
-// bar and Skip on top, a scrolling body and Back / Continue at the foot.
+// bar and Skip on top, a scrolling body and Back / Continue at the foot, with
+// an optional live line (the cupboard count) just above them.
 import type { ReactNode } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -43,7 +44,7 @@ export function HelloStep({ onStart, onSkip }: { onStart: () => void; onSkip: ()
           {'Tonight’s dinner,\nsorted.'}
         </Text>
         <Text variant="leadLarge" tone={FIXED.onPhotoMuted} style={styles.subtitle}>
-          Plan the week on Sunday, shop once, and know what’s for dinner every night. Two quick questions and we’ll suggest tonight’s.
+          Cook from what you already have, plan the week and shop once. Two quick steps and we’ll show what you can make tonight.
         </Text>
       </View>
       <View style={styles.helloFooter}>
@@ -56,18 +57,19 @@ export function HelloStep({ onStart, onSkip }: { onStart: () => void; onSkip: ()
 type QuizProps = {
   /** How far through, 0 to 1. */
   progress: number;
-  scrim: 'quiz' | 'reveal';
   onSkip: () => void;
   footer: ReactNode;
+  /** A short line above the footer that changes as you tap, read out by screen readers. */
+  note?: string | undefined;
   children: ReactNode;
 };
 
-export function QuizFrame({ progress, scrim, onSkip, footer, children }: QuizProps) {
+export function QuizFrame({ progress, onSkip, footer, note, children }: QuizProps) {
   const styles = useStyles();
   const insets = useSafeAreaInsets();
   return (
     <View style={[styles.page, { paddingTop: insets.top, paddingBottom: insets.bottom }]}>
-      <Backdrop scrim={scrim} />
+      <Backdrop scrim="quiz" />
       <View style={styles.bar}>
         <View
           style={styles.track}
@@ -81,7 +83,19 @@ export function QuizFrame({ progress, scrim, onSkip, footer, children }: QuizPro
       <ScrollView contentContainerStyle={styles.body} showsVerticalScrollIndicator={false}>
         {children}
       </ScrollView>
-      <View style={styles.footer}>{footer}</View>
+      {note !== undefined ? (
+        <Text
+          variant="pillLabel"
+          tone={FIXED.onPhotoMuted}
+          align="center"
+          accessibilityLiveRegion="polite"
+          style={styles.note}
+          testID="welcome-note"
+        >
+          {note}
+        </Text>
+      ) : null}
+      <View style={[styles.footer, note !== undefined && styles.footerUnderNote]}>{footer}</View>
     </View>
   );
 }
@@ -116,4 +130,11 @@ const useStyles = makeStyles(() => ({
     borderTopWidth: StyleSheet.hairlineWidth,
     borderTopColor: FIXED.glassPill,
   },
+  // With the count above it, the hairline goes above the count instead.
+  note: {
+    paddingTop: WELCOME.footerBottom,
+    borderTopWidth: StyleSheet.hairlineWidth,
+    borderTopColor: FIXED.glassPill,
+  },
+  footerUnderNote: { borderTopWidth: 0 },
 }));

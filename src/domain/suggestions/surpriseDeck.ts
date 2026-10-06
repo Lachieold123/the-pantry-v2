@@ -1,4 +1,4 @@
-// The spinner ("Surprise me", spec §7): a deck of dishes that fit the
+// Surprise me's deck (spec §7; v1 called it the spinner): a deck of dishes that fit the
 // meal, time and cupboard settings, a decelerating run of cards and a
 // landing. Everything here is pure and the randomness is passed in, so the
 // screen only animates what this decides.
@@ -70,7 +70,7 @@ export function deckPosition(pool: readonly Recipe[], id: string | undefined): n
   );
 }
 
-export type Reason = { key: 'Pantry' | 'Time' | 'For you'; value: string };
+export type Reason = { key: 'Cupboard' | 'Time' | 'For you'; value: string };
 
 type ReasonInput = {
   recipe: Recipe;
@@ -88,7 +88,7 @@ export function spinReasons({ recipe, cupboard, saved, cooked, nameOf }: ReasonI
     const uses = cupboard.have.length + cupboard.swaps.length;
     const need = cupboard.missing.length;
     const list = need > 3 ? `Need ${need}: ${cupboard.missing.slice(0, 3).map(nameOf).join(', ')} and more` : needLine(cupboard, nameOf);
-    reasons.push({ key: 'Pantry', value: uses ? `Uses ${uses} ${uses === 1 ? 'thing' : 'things'} you have. ${list}` : list });
+    reasons.push({ key: 'Cupboard', value: uses ? `Uses ${uses} ${uses === 1 ? 'thing' : 'things'} you have. ${list}` : list });
   }
   const minutes = totalMinutes(recipe);
   if (minutes > 0) {

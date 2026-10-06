@@ -1,4 +1,6 @@
-# The shell: the four tabs and the centre "+", the side menu to every destination and back, adding a recipe and the avatar.
+# The shell: exactly four tabs (no centre "+", no side menu), and the avatar's
+# You page to every other place and back: the library's four tabs, Kitchen
+# stats, Share a dish, Surprise me, Household, Pro and Settings.
 appId: host.exp.Exponent
 ---
 - launchApp:
@@ -6,9 +8,16 @@ appId: host.exp.Exponent
 - openLink: ${METRO_URL}
 - runFlow: subflows/_setup_skip_welcome.yaml
 
-# Tab bar
+# Tab bar: four tabs, nothing in the middle, no menu button.
+- assertNotVisible:
+    id: "tab-add"
+- assertNotVisible:
+    id: "header-menu"
 - runFlow: subflows/_open_browse.yaml
 - assertVisible: "Discover"
+# Adding your own recipe lives in Library → My recipes, not Browse.
+- assertNotVisible:
+    id: "browse-add-recipe"
 - tapOn:
     id: "back"
 - tapOn:
@@ -28,192 +37,98 @@ appId: host.exp.Exponent
 - assertVisible:
     id: "feed-screen"
 
-# Side menu: open, look, close by tapping the backdrop beside the panel.
+# The avatar opens You, a page with a back button.
 - tapOn:
-    id: "header-menu"
+    id: "header-avatar"
 - assertVisible:
-    id: "menu-feed"
-# The profile row is one button to iOS, so its "Local profile" line isn't
-# separately visible to tests; check the row itself.
-- assertVisible:
-    id: "menu-profile"
-- takeScreenshot: menu-open
-- tapOn:
-    id: "menu-close"
-    point: "95%,50%"
-- assertNotVisible:
-    id: "menu-feed"
-
-# Side menu: the tabs
-- tapOn:
-    id: "header-menu"
-- tapOn:
-    id: "menu-browse"
-- assertVisible: "Discover"
+    id: "you-screen"
+- assertVisible: "Library"
+- assertVisible: "Kitchen"
+- takeScreenshot: you
 - tapOn:
     id: "back"
-- tapOn:
-    id: "header-menu"
-- tapOn:
-    id: "menu-cupboard"
-- assertVisible:
-    id: "cupboard-screen"
-# The menu opens over the tab you're on, dimmed behind it, not over a blank page.
-- tapOn:
-    id: "header-menu"
-- assertVisible:
-    id: "menu-feed"
-- takeScreenshot: menu-over-cupboard
-- tapOn:
-    id: "menu-close"
-    point: "95%,50%"
-- assertVisible:
-    id: "cupboard-screen"
-- tapOn:
-    id: "header-menu"
-- tapOn:
-    id: "menu-plan"
-- assertVisible:
-    id: "plan-screen"
-- tapOn:
-    id: "header-menu"
-- tapOn:
-    id: "menu-feed"
 - assertVisible:
     id: "feed-screen"
 
-# Side menu: the pages, each with a way back
+# Library: each row opens the library on its tab, with a way back to You.
 - tapOn:
-    id: "header-menu"
+    id: "header-avatar"
 - tapOn:
-    id: "menu-saved"
+    id: "you-cookmarks"
 - assertVisible:
     id: "cookmarks-screen"
 - tapOn:
     id: "back"
 - assertVisible:
-    id: "feed-screen"
-
+    id: "you-screen"
 - tapOn:
-    id: "header-menu"
-- tapOn:
-    id: "menu-collections"
+    id: "you-collections"
 - assertVisible:
     id: "collections-screen"
 - tapOn:
     id: "back"
-- assertVisible:
-    id: "feed-screen"
-
 - tapOn:
-    id: "header-menu"
-- tapOn:
-    id: "menu-my-recipes"
+    id: "you-my-recipes"
 - assertVisible:
     id: "my-recipes-screen"
 - tapOn:
     id: "back"
-- assertVisible:
-    id: "feed-screen"
-
 - tapOn:
-    id: "header-menu"
-- tapOn:
-    id: "menu-recent"
+    id: "you-recent"
 - assertVisible:
     id: "recent-screen"
 - tapOn:
     id: "back"
-- assertVisible:
-    id: "feed-screen"
 
+# Kitchen
 - tapOn:
-    id: "header-menu"
-- tapOn:
-    id: "menu-stats"
+    id: "you-stats"
 - assertVisible:
     id: "stats-screen"
 - tapOn:
     id: "back"
+- tapOn:
+    id: "you-post"
 - assertVisible:
-    id: "feed-screen"
-
-- tapOn:
-    id: "header-menu"
-- tapOn:
-    id: "menu-spinner"
-# The spinner is a page now, not a sheet: it has its own back button.
-- assertVisible:
-    id: "spinner-screen"
-- tapOn:
-    id: "spinner-back"
-- assertVisible:
-    id: "feed-screen"
-
-- tapOn:
-    id: "header-menu"
-- tapOn:
-    id: "menu-settings"
-- assertVisible:
-    id: "settings-screen"
-- tapOn:
-    id: "back"
-- assertVisible:
-    id: "feed-screen"
-
-- tapOn:
-    id: "header-menu"
-- tapOn:
-    id: "menu-profile"
-- assertVisible:
-    id: "settings-screen"
-- tapOn:
-    id: "back"
-- assertVisible:
-    id: "feed-screen"
-
-# Browse's "+" opens the recipe editor; Cancel with nothing typed just closes it.
-- runFlow: subflows/_open_browse.yaml
-- tapOn:
-    id: "browse-add-recipe"
-- assertVisible: "New recipe"
-- takeScreenshot: editor-new
-- tapOn:
-    id: "editor-cancel"
-- assertVisible: "Discover"
-- tapOn:
-    id: "back"
-
-# The centre "+" opens "Share a dish"; Close with nothing typed just closes it.
-- tapOn:
-    id: "tab-add"
-- assertVisible: "Share a dish"
-- assertVisible:
-    id: "post-add-photo"
-- takeScreenshot: post-new
-- tapOn:
-    id: "post-share"
-- assertVisible: "Almost there: add a photo and name the dish."
+    id: "post-screen"
 - tapOn:
     id: "post-close"
 - assertVisible:
-    id: "feed-screen"
-
-# The menu has the shopping list too.
+    id: "you-screen"
 - tapOn:
-    id: "header-menu"
-- tapOn:
-    id: "menu-list"
+    id: "you-surprise"
 - assertVisible:
-    id: "shopping-screen"
+    id: "surprise-screen"
 - tapOn:
-    id: "tab-index"
+    id: "surprise-back"
+- assertVisible:
+    id: "you-screen"
 
-# The avatar opens Settings.
+# Sharing and Pro
 - tapOn:
-    id: "header-avatar"
+    id: "you-household"
+- assertVisible:
+    id: "household-screen"
+- tapOn:
+    id: "back"
+- tapOn:
+    id: "you-pro"
+- assertVisible:
+    id: "pro-benefits"
+- tapOn:
+    id: "pro-done"
+- assertVisible:
+    id: "you-screen"
+
+# Settings
+- tapOn:
+    id: "you-settings"
 - assertVisible:
     id: "settings-screen"
+- tapOn:
+    id: "back"
+- assertVisible:
+    id: "you-screen"
 - tapOn:
     id: "back"
 - assertVisible:

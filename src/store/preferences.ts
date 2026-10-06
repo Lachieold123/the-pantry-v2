@@ -17,12 +17,12 @@ type PreferencesState = {
   units: UnitSystem;
   diet: DietPreference;
   avoid: AvoidList;
-  /** Cuisines picked in the taste quiz: they lift suggestions, never filter them out. */
+  /** Cuisines picked in Settings (the old welcome asked too): they lift suggestions, never filter them out. */
   cuisines: CuisineId[];
   /** How long a weeknight dinner can take. Undefined means no rush. */
   weeknight: TimeFilter | undefined;
   sundayReminder: boolean;
-  /** False until the welcome and taste quiz are finished or skipped. */
+  /** False until the welcome is finished or skipped. */
   onboarded: boolean;
   setAppearance: (appearance: Appearance) => void;
   setDiet: (diet: DietPreference) => void;

@@ -10,7 +10,7 @@ appId: host.exp.Exponent
 - assertVisible: ".*Picked for you.*"
 - takeScreenshot: welcome-skipped-feed
 
-# Skipping counts as onboarded: a relaunch (state kept) opens on the Feed, not the quiz.
+# Skipping counts as onboarded: a relaunch (state kept) opens on the Feed, not the welcome.
 - launchApp:
     clearState: false
 - openLink: ${METRO_URL}

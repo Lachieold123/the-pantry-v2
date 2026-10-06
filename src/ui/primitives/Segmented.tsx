@@ -25,7 +25,7 @@ export function Segmented<T extends string>({ options, value, onChange, label, s
             key={o.value}
             onPress={() => onChange(o.value)}
             accessibilityRole="radio"
-            accessibilityState={{ selected }}
+            aria-selected={selected}
             accessibilityLabel={o.label}
             testID={`segment-${o.value}`}
             {...(size === 'sm' ? { hitSlop: { top: slopFor(SMALL_CONTROL), bottom: slopFor(SMALL_CONTROL) } } : {})}

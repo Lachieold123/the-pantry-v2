@@ -1,4 +1,4 @@
-# Gets past the first-launch welcome and taste quiz by tapping Skip, then the
+# Gets past the first-launch welcome by tapping Skip, then the
 # first-use tour, and leaves the app on Home. Run it straight after launchApp + openLink.
 appId: host.exp.Exponent
 ---

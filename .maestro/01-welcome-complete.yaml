@@ -1,4 +1,5 @@
-# First launch: answer the taste quiz, plan tonight's pick, decline the reminder.
+# First launch: "Anything you don't eat?", then tap a few things in "What's in
+# your cupboard?", and Home opens on What I have, with the tour over it.
 appId: host.exp.Exponent
 ---
 - launchApp:
@@ -12,64 +13,39 @@ appId: host.exp.Exponent
 
 - tapOn:
     id: "welcome-start"
-- assertVisible: 'What do you eat\?'
-- tapOn:
-    id: "diet-vegetarian"
+- assertVisible: 'Anything you don.t eat\?'
+# Nothing is required: until something is ticked the way on says "None of these".
+- assertVisible: "None of these"
 - tapOn:
     id: "avoid-nuts"
+- assertVisible: "Continue"
 - takeScreenshot: welcome-eat
-- scrollUntilVisible:
-    element:
-      id: "welcome-next"
 - tapOn:
     id: "welcome-next"
 
 # Back goes back a step and keeps the answers.
-- assertVisible: 'What do you love\?'
+- assertVisible: 'What.s in your cupboard\?'
 - tapOn:
     id: "welcome-back"
-- assertVisible: 'What do you eat\?'
-- scrollUntilVisible:
-    element:
-      id: "welcome-next"
+- assertVisible: 'Anything you don.t eat\?'
 - tapOn:
     id: "welcome-next"
 
-- assertVisible: 'What do you love\?'
+- assertVisible: 'What.s in your cupboard\?'
+- assertVisible: "Tap what you have"
 - tapOn:
-    id: "cuisine-italian"
+    id: "welcome-cupboard-garlic"
+- tapOn:
+    id: "welcome-cupboard-egg"
 - scrollUntilVisible:
     element:
-      id: "weeknight-under-45"
+      id: "welcome-cupboard-chicken-thigh"
 - tapOn:
-    id: "weeknight-under-45"
-- takeScreenshot: welcome-like
-- scrollUntilVisible:
-    element:
-      id: "welcome-next"
+    id: "welcome-cupboard-chicken-thigh"
+- assertVisible: "3 things"
+- takeScreenshot: welcome-cupboard
 - tapOn:
-    id: "welcome-next"
-
-- assertVisible: "Tonight, for you"
-- assertVisible:
-    id: "welcome-pick"
-- takeScreenshot: welcome-reveal
-- runFlow:
-    when:
-      visible:
-        id: "welcome-show-others"
-    commands:
-      - tapOn:
-          id: "welcome-show-others"
-      - assertVisible:
-          id: "welcome-pick"
-- tapOn:
-    id: "welcome-cook-tonight"
-
-- assertVisible: 'A nudge on Sundays\?'
-- takeScreenshot: welcome-reminder
-- tapOn:
-    id: "welcome-not-now"
+    id: "welcome-finish"
 
 # Then the four-stop tour over Home (D-035): Next, Next, Next, Start cooking.
 - extendedWaitUntil:
@@ -95,9 +71,8 @@ appId: host.exp.Exponent
 - assertNotVisible:
     id: "tour"
 
-# Tonight's pick is on the plan, so Home leads with it.
-- assertVisible: ".*Tonight · On the plan.*"
-- assertVisible: "Plan, 1 planned"
+# Garlic, egg and chicken thigh make something tonight, so Home leads with What I have.
+- assertVisible: ".*From 3 things in your cupboard.*"
 - takeScreenshot: welcome-done-feed
 
 # It doesn't come back on its own; Settings can replay it.

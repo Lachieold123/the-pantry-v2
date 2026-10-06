@@ -54,7 +54,7 @@ export const FILTER_TINTS = {
   season: Tint;
 };
 
-/** Welcome and the taste quiz (OnboardingModal.tsx). */
+/** The welcome: the opening screen, then the two quick steps (diet, cupboard). */
 export const WELCOME = {
   padX: 24,
   /** v1's soft top fade behind the Skip pill. */
@@ -71,7 +71,7 @@ export const WELCOME = {
   pillPadY: 16,
   pillPadX: 20,
   pillGap: 10,
-  /** The quiz: progress bar, body, tiles, chips and the footer. */
+  /** The steps: progress bar, body, chips and the footer. */
   progress: 4,
   barGap: 14,
   barPadY: 10,
@@ -80,25 +80,17 @@ export const WELCOME = {
   kickerGap: 10,
   titleGap: 14,
   sectionTop: 24,
-  tileGap: 10,
-  tilePadY: 16,
-  tilePadX: 18,
   chipPadY: 10,
   chipPadX: 14,
   chipGap: 8,
   backMin: 70,
   backPad: 14,
-  /** The reveal's other picks and the reminder's bell. */
-  thumb: 60,
-  bell: 84,
-  bellIcon: 34,
   disabled: 0.45,
 } as const;
 
 /** Dark scrims over the welcome photo, as v1 laid them over its video. */
 export const WELCOME_SCRIMS = {
   quiz: { colors: [FIXED.videoScrim50, FIXED.videoScrim70, FIXED.videoScrim88], locations: [0, 0.45, 1] },
-  reveal: { colors: [FIXED.videoScrim55, FIXED.videoScrim72, FIXED.videoScrim90], locations: [0, 0.45, 1] },
 } as const;
 
 /** Home: v1's feed (FeedScreen.tsx): filter chips, a swipeable stack of big cards with dots, then a grid. */

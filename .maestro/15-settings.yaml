@@ -1,4 +1,4 @@
-# Settings: appearance, high contrast, units, the four cooking preferences,
+# Settings (avatar → You → Settings): appearance, high contrast, units, the four cooking preferences,
 # the Sunday reminder, and redoing the welcome flow.
 appId: host.exp.Exponent
 ---
@@ -8,6 +8,8 @@ appId: host.exp.Exponent
 - runFlow: subflows/_setup_skip_welcome.yaml
 - tapOn:
     id: "header-avatar"
+- tapOn:
+    id: "you-settings"
 - assertVisible:
     id: "settings-screen"
 - assertVisible: "Preferences"
