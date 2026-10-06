@@ -137,9 +137,23 @@ mkdir -p "$OUT_DIR"
 # The suite always runs against its own Metro on its own port, started
 # non-interactively. Sharing the Metro in your Expo window is what broke the
 # first runs: that one stops to ask about logging in, and nobody answers.
-if curl -fs "$METRO_STATUS_URL" 2>/dev/null | grep -q "packager-status"; then
-  echo "Something is already using port $METRO_PORT. Close the other Maestro run (or whatever uses it) and try again."
-  finish 1
+# A Metro left behind by an earlier run (a closed window, Ctrl+C) still holds
+# the port. If what's there is Expo's Metro, stop it; anything else is left
+# alone and named.
+if curl -fs "$METRO_STATUS_URL" 2>/dev/null | grep -q "packager-status" || lsof -ti "tcp:$METRO_PORT" >/dev/null 2>&1; then
+  for pid in $(lsof -ti "tcp:$METRO_PORT" 2>/dev/null); do
+    if ps -o command= -p "$pid" | grep -qiE "expo|metro|node"; then
+      echo "Stopping a Metro left over from an earlier run (process $pid)"
+      kill -TERM "$pid" 2>/dev/null
+    fi
+  done
+  sleep 2
+  if lsof -ti "tcp:$METRO_PORT" >/dev/null 2>&1; then
+    echo "Something else is using port $METRO_PORT:"
+    lsof -i "tcp:$METRO_PORT" | head -n 3
+    echo "Close it and try again."
+    finish 1
+  fi
 fi
 say "Starting a Metro for the tests on port $METRO_PORT (log: $METRO_LOG)"
 # CI=1 makes Expo non-interactive: no questions, anonymous signing.
