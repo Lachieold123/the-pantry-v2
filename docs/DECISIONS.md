@@ -376,3 +376,15 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
 - **Date:** 6 October 2026 · **Decided by:** Lachlan ("bulky and clunky")
 - **Decision:** the "Add one thing" rows (a missing ingredient that would unlock recipes) and the "Stock up" tap grid are gone from the Cupboard, with the code that only they used. Adding to the cupboard is search, quick adds, Add a list and (when connected) scanning; the welcome's cupboard step covers the first fill.
 - **Also from the same phone test:** the tour card no longer jumps (it waits until its target stops moving) and reads clearly in dark mode; toasts sit just above the tab bar or the bottom edge and show over sheets; the List's "Add something else" is at the top; the "What you can cook" cards are all the same height.
+
+## D-043 · Accounts: Sign in with Apple or an email code, only when they earn it, and they keep everything
+
+- **Date:** 6 October 2026 · **Decided by:** Lachlan (each option as recommended)
+- **Decision:** the plan is `docs/ACCOUNTS.md`.
+  - **How:** Sign in with Apple (iPhone only) or a 6-digit code sent by email. No passwords.
+  - **When:** never required. Everything works signed out. The sign-in sheet is offered from Settings → Account, and once each (never again after "Not now") after starting or joining a household, the 10th Cookmark and the first recipe of your own.
+  - **What:** an account keeps everything: the plan, list and cupboard (while not in a household), Cookmarks, collections, hidden dishes, your recipes, recently viewed, the cooking log, and the settings that are about you (taste, units, the cupboard's shelf). A new phone signed in to the same account gets the same kitchen.
+- **How it's built:** signing in turns the phone's anonymous user into a permanent one (Apple linked, or the email confirmed), so its id and household stay the same. An Apple ID or email that already has an account switches to it and merges this phone in: the account first, then anything it lacks. The household rows mechanism became `src/domain/sync` (two scopes, one rule: `scopeOf`) and `src/store/sync.ts` (one engine per scope); Household is now a thin user of it. Backend: `supabase/migrations/20261006000200_accounts.sql` (`profiles`, `account_rows`, owner-only row security, newest-wins trigger, Realtime, `delete_account()`).
+- **Added dependency:** `expo-apple-authentication` (native; `ios.usesAppleSignIn` switches on the capability at the next EAS build).
+- **Waits for Lachlan:** applying the migration, and the dashboard steps in `docs/ACCOUNTS.md` (anonymous sign-ins, manual linking, Apple provider, the email templates showing the code, custom SMTP).
+- **Why:** an account only earns its place when it gives something back (a backup, a second phone, a household that survives a new phone), and asking up front costs people at the door. Apple and email codes have no password to forget.

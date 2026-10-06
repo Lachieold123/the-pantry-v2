@@ -10,6 +10,7 @@ import { Pressable, ScrollView, StyleSheet, useWindowDimensions, View } from 're
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { useAccount } from '@/store/account';
 import { Avatar } from '@/ui/primitives/Avatar';
 import { Divider } from '@/ui/primitives/Divider';
 import { Icon } from '@/ui/primitives/Icon';
@@ -27,6 +28,10 @@ export function DrawerScreen() {
   const { width } = useWindowDimensions();
   const styles = useStyles();
   const counts = useDrawerCounts();
+  // Signed in (D-043), the profile row is yours: your name and that it's backed up.
+  const who = useAccount((s) => s.who);
+  const profileName = who ? (who.name ?? who.email ?? 'Your kitchen') : 'Your kitchen';
+  const profileSub = who ? 'Backed up' : 'Local profile';
   const panelWidth = Math.max(CHROME.drawerMin, Math.min(CHROME.drawerMax, Math.round(width * 0.86)));
   const open = useSharedValue(0);
   const [closing, setClosing] = useState(false);
@@ -104,17 +109,17 @@ export function DrawerScreen() {
         <Pressable
           onPress={() => page('/settings')}
           accessibilityRole="button"
-          accessibilityLabel="Your profile, local to this phone"
+          accessibilityLabel={who ? `${profileName}, backed up. Settings` : 'Your profile, local to this phone'}
           testID="menu-profile"
           style={({ pressed }) => [styles.profile, pressed && styles.pressed]}
         >
-          <Avatar size={CHROME.drawerAvatar} />
+          <Avatar size={CHROME.drawerAvatar} name={who?.name} />
           <View style={styles.profileText}>
-            <Text variant="name" numberOfLines={1}>
-              Your kitchen
+            <Text variant="name" numberOfLines={1} ellipsizeMode="middle">
+              {profileName}
             </Text>
-            <Text variant="drawerProfileSub" colour="inkMuted">
-              Local profile
+            <Text variant="drawerProfileSub" colour="inkMuted" testID="menu-profile-sub">
+              {profileSub}
             </Text>
           </View>
           <Icon name="forward" size={18} colour="inkMuted" />

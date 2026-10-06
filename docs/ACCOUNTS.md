@@ -142,7 +142,8 @@ Wiring this up waits for RevenueCat approval (D-038).
 - `delete_account()` is `security definer`, acts only on `auth.uid()`, and
   calls `leave_household` first.
 - Apple tokens and email codes never leave Supabase Auth. Nothing is stored
-  in the app except the Supabase session, in the existing secure storage.
+  in the app except the Supabase session, in the same on-phone storage the
+  household's sign-in already uses (AsyncStorage, not the keychain).
 
 ## Setup only Lachlan can do (dashboard)
 
@@ -177,6 +178,47 @@ Wiring this up waits for RevenueCat approval (D-038).
   The merge carries B's kitchen into the account. B must rejoin the household,
   and the household page says so. (Rare. Accept for now and record it.)
 - **Web preview:** no Apple button, email only.
+
+## What building it settled (6 October 2026)
+
+The spec above left these open, or the build had to change them:
+
+- **What syncs, exactly.** Row kinds: `bookmark` (per recipe), `collection`,
+  `hidden` (hidden dishes, which the spec didn't name), `myrecipe`, `recent`
+  (one row: an ordered list of twenty with no times to merge by), `cooklog`
+  (per cook) and `prefs` (one row per setting).
+- **Which settings.** Taste (diet, leave-outs, cuisines, weeknight time),
+  units, the cupboard's shelf and "move ticked shopping in" travel with the
+  account. The theme and high contrast stay on each phone (they suit the
+  screen and the eyes in front of it), and so does the Sunday reminder (only
+  the phone that asked permission can schedule it). Plates, Pro, the tour and
+  the development switches never sync.
+- **`updated_by` is the phone, not the person.** One account has several
+  phones, so `account_rows.updated_by` is text: a random id for each install.
+  It's what breaks a tie the same way on every phone.
+- **Moving the kitchen.** Joining a household leaves the account's kitchen
+  rows where they are, unread. Leaving makes the account's kitchen match this
+  phone exactly (changes sent, anything the account still had marked removed).
+  Nothing on the phone is lost and nothing stale comes back doubled.
+- **The bring-along rule, extended.** A collection with the same name as one
+  in the account adds its recipes to that one instead of making a second. A
+  record the account had removed but this phone still has comes back.
+- **The account's own household.** Signing in on a phone that isn't in a
+  household, to an account that is, takes that household up (its kitchen
+  first, plus this phone's). After switching users, the Household page says
+  which household to rejoin.
+- **Signing in offline half way.** If signing in works but the account can't
+  be reached to merge, the merge runs as soon as it can, and Sign out waits
+  until it has (this phone's things aren't in the account yet).
+- **Sign out clears the account's copy only.** The theme, high contrast, the
+  Sunday reminder, plates, Pro, the tour and the old-app import flag stay.
+- **Wrong or expired code.** Supabase gives one error for both, so the app
+  calls a code expired when it was sent over an hour ago, and wrong otherwise.
+- **One more problem in plain words:** "Too many codes asked for" (Supabase's
+  email rate limit, likely with the built-in sender).
+- **Before buying Pro** isn't offered yet: it waits for purchases (D-038).
+- **Known gap:** deleting the account on one phone doesn't sign out another
+  phone on the same account until its sign-in is refreshed and fails.
 
 ## Not in this step
 

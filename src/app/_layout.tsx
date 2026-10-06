@@ -5,6 +5,7 @@ import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
+import { AccountNudge } from '@/features/account/AccountNudge';
 import { RootErrorScreen } from '@/features/app/RootErrorScreen';
 import { useAppReady } from '@/features/app/useAppReady';
 import { ToastProvider } from '@/ui/patterns/Toast';
@@ -34,6 +35,7 @@ export default function RootLayout() {
         <ToastProvider>
           <AppChrome />
           <RootStack />
+          <AccountNudge />
         </ToastProvider>
       </ThemeProvider>
     </GestureHandlerRootView>
@@ -76,6 +78,9 @@ function RootStack() {
       <Stack.Screen name="pro" options={SHEET} />
       <Stack.Screen name="household" />
       <Stack.Screen name="join/[code]" options={SHEET} />
+      {/* Signing in (D-043): the offer, then the email and code step in its place. */}
+      <Stack.Screen name="account/index" options={SHEET} />
+      <Stack.Screen name="account/email" options={SHEET} />
       <Stack.Screen name="recipe/[id]/cook" options={{ presentation: 'fullScreenModal', gestureEnabled: false }} />
       {/* v1's Filters is a page with a back button, so it pushes like one rather than rising as a sheet. */}
       <Stack.Screen name="filters" />

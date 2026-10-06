@@ -68,6 +68,7 @@ writing or fixing a flow.
 | `23-recipe-to-list.yaml` | Carbonara's "Add to list": untick one, add the rest, the sheet then names what's already on the list, and the List tab has them |
 | `24-pro.yaml` | Settings' Pro row opens a paywall that says Pro isn't on sale yet; with the development "Preview the free limits" switch on, planning next Sunday opens Pro instead (Monday to Saturday) |
 | `25-household.yaml` | Start sharing from Settings → Household, see yourself and "Up to date", then leave. Needs the internet and anonymous sign-ins on in Supabase |
+| `26-account.yaml` | Signed out, Settings' first row "Back up your kitchen" opens the sign-in sheet; Not now closes it; Continue with email refuses a mistyped address. No real sign-in (Apple's sheet and an inbox are checked by hand) |
 
 Shared steps live in `subflows/` and only run when a flow calls them:
 

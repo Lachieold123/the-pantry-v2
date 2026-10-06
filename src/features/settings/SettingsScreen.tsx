@@ -1,7 +1,8 @@
 // Settings, opened from the side menu and the avatar, in v1's layout: a grey
 // page of white cards under small labels (spec §7 Settings). Only settings
-// that do something in v2 today appear: v1's Privacy and account rows wait
-// until those features exist (no fake rows). Pro has its own section (D-038).
+// that do something in v2 today appear: v1's Privacy rows wait until that
+// feature exists (no fake rows). The account comes first and Delete account
+// sits at the foot (D-043); Pro has its own section (D-038).
 // The Sunday reminder only reads as on when the phone will actually deliver it.
 import Constants from 'expo-constants';
 import { useRouter } from 'expo-router';
@@ -16,7 +17,9 @@ import { Screen } from '@/ui/primitives/Screen';
 import { Segmented } from '@/ui/primitives/Segmented';
 import { Text } from '@/ui/primitives/Text';
 import { SETTINGS, TOUR } from '@/ui/tokens/screens';
+import { AccountSection } from './AccountSection';
 import { CookingSection } from './CookingSection';
+import { DeleteAccount } from './DeleteAccount';
 import { ProSection } from './ProSection';
 import { SharingSection } from './SharingSection';
 import { CardButton, ChoiceRow, InfoRow, SettingsSection, SwitchRow } from './SettingsParts';
@@ -53,6 +56,8 @@ export function SettingsScreen() {
   return (
     <Screen surface="bgSoft" testID="settings-screen">
       <PushedHeader kicker="Settings" title="Preferences" surface="bgSoft" />
+
+      <AccountSection />
 
       <SettingsSection label="Appearance">
         <ChoiceRow icon="palette" label="Theme" helper="System follows your phone’s dark mode automatically.">
@@ -116,6 +121,8 @@ export function SettingsScreen() {
         }}
         testID="settings-replay-tour"
       />
+
+      <DeleteAccount />
 
       <Text variant="caption" align="center" style={{ marginTop: -SETTINGS.footerTop }}>
         The Pantry · v{VERSION}

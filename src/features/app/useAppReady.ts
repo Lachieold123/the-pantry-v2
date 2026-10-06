@@ -5,6 +5,8 @@
 import { useFonts } from 'expo-font';
 import { useEffect, useState } from 'react';
 
+import { useAccount } from '@/store/account';
+import { startAccount } from '@/store/accountActions';
 import { useCookLog } from '@/store/cookLog';
 import { useCupboard } from '@/store/cupboard';
 import { useMyRecipes } from '@/store/myRecipes';
@@ -30,6 +32,7 @@ async function prepare(): Promise<void> {
     useWelcomeBack,
     usePro,
     useHousehold,
+    useAccount,
   ]);
   if (loaded === 'timed-out') console.warn('[startup] saved data took too long to load; opening anyway');
   // Ask the store who is Pro; the saved mirror covers an offline start. Never blocks opening.
@@ -42,6 +45,9 @@ async function prepare(): Promise<void> {
     // A failed import must never stop the app opening.
     console.warn('[startup] old-app import failed', e);
   }
+  // The account's backup and its once-only offers (D-043), after the import, so
+  // recipes brought across from the old app don't count as a moment.
+  startAccount();
 }
 
 export function useAppReady(): boolean {

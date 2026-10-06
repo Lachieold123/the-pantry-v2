@@ -2,7 +2,7 @@
 const { defineConfig } = require('eslint/config');
 const expoConfig = require('eslint-config-expo/flat');
 
-const FEATURES = ['feed', 'recipes', 'recipe', 'plan', 'cupboard', 'saved', 'cook', 'surprise', 'settings', 'editor', 'welcome', 'shell', 'dev', 'app', 'shopping', 'plates', 'tour', 'pro', 'household'];
+const FEATURES = ['feed', 'recipes', 'recipe', 'plan', 'cupboard', 'saved', 'cook', 'surprise', 'settings', 'editor', 'welcome', 'shell', 'dev', 'app', 'shopping', 'plates', 'tour', 'pro', 'household', 'account'];
 
 // Colour literals belong in src/ui/tokens only (map rule 8).
 const noColourLiterals = {
@@ -18,7 +18,7 @@ const noColourLiterals = {
     },
     {
       // A store hook with no selector re-renders on every change to that store (audit PERF-1).
-      selector: 'CallExpression[callee.name=/^use(Preferences|Plan|Saved|Cupboard|CookLog|MyRecipes|RecipeFilters|WelcomeBack)$/][arguments.length=0]',
+      selector: 'CallExpression[callee.name=/^use(Preferences|Plan|Saved|Cupboard|CookLog|MyRecipes|RecipeFilters|WelcomeBack|Account|Household)$/][arguments.length=0]',
       message: 'Pass a selector (or useShallow) so the component only re-renders for what it reads.',
     },
   ],

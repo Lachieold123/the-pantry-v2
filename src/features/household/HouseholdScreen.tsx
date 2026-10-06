@@ -34,6 +34,8 @@ function NotSharing() {
   const [code, setCode] = useState('');
   const [busy, setBusy] = useState<'start' | 'join' | undefined>();
   const [problem, setProblem] = useState<string | undefined>();
+  // Signing in to an account that wasn't in this phone's household (D-043) leaves it behind: say so.
+  const rejoin = useHousehold((s) => s.rejoin);
   const trimmed = name.trim();
 
   const start = async () => {
@@ -55,6 +57,11 @@ function NotSharing() {
 
   return (
     <View style={{ gap: SPACE.lg }}>
+      {rejoin ? (
+        <Text variant="bodySmall" colour="inkSoft" testID="household-rejoin">
+          {`Since you signed in, this phone isn’t in ${rejoin} any more. Your plan, list and cupboard are still here. To share again, ask someone in ${rejoin} for a new invite.`}
+        </Text>
+      ) : null}
       <Text variant="body" colour="inkSoft">
         Share the week’s plan, the shopping list and the cupboard with the people you cook with. Tick milk at the shops and it’s ticked on
         their phone too. No account, no password.

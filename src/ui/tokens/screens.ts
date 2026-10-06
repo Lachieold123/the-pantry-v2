@@ -152,3 +152,16 @@ export const PRO = {
 export const HOUSEHOLD = {
   avatar: 36,
 } as const;
+
+/** Accounts (D-043): Apple's button, Settings' account card, and a beat before an offer opens. */
+export const ACCOUNT = {
+  /** Apple's own button needs a set height; the same as a large pill. */
+  appleHeight: 50,
+  appleCorner: 25,
+  /** An offer waits for the screen it follows (a toast, a page change) to settle before the sheet rises. */
+  nudgeDelay: 900,
+  /** Settings' account card: the avatar beside the name. */
+  avatar: 40,
+  /** The resend countdown ticks once a second. */
+  tick: 1000,
+} as const;
