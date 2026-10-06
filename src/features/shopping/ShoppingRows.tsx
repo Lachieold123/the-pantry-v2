@@ -1,6 +1,6 @@
 // The shopping list's pieces in v1's look (spec §4.13): soft cards with a
 // line between rows, amber aisle headings, small outline pills, and a quiet
-// "add an item" row at the foot of the list.
+// "add an item" row at the top of the list.
 import { useState, type ReactNode } from 'react';
 import { Pressable, TextInput, View } from 'react-native';
 
@@ -51,8 +51,8 @@ export function ShoppingRow({ label, detail, checked, first, onToggle, onRemove,
   );
 }
 
-/** The last row of the list: type something that isn't in any recipe ("dishwashing liquid"). */
-export function AddItemRow({ onAdd, first }: { onAdd: (text: string) => void; first: boolean }) {
+/** The first thing on the list, in a card of its own: type something that isn't in any recipe ("dishwashing liquid"). */
+export function AddItemRow({ onAdd }: { onAdd: (text: string) => void }) {
   const styles = useStyles();
   const { colours } = useTheme();
   const [text, setText] = useState('');
@@ -61,7 +61,7 @@ export function AddItemRow({ onAdd, first }: { onAdd: (text: string) => void; fi
     setText('');
   };
   return (
-    <View style={[styles.row, styles.addRow, !first && styles.divided]}>
+    <View style={[styles.row, styles.addRow]}>
       <Icon name="add" size={18} colour="inkMuted" />
       <TextInput
         value={text}

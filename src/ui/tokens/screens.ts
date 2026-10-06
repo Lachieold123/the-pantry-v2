@@ -132,6 +132,14 @@ export const TOUR = {
   dotOn: 18,
   dotGap: 6,
   startDelay: 700,
+  /** The card's edge (visible in dark mode only). */
+  edge: 1,
+  /**
+   * The spotlight waits until its target stops moving: it re-measures every
+   * `settleEvery` ms until two readings agree, giving up after `settleTries`.
+   */
+  settleEvery: 50,
+  settleTries: 20,
 } as const;
 
 /** The Pro paywall (D-038): the plan rows' radio icon and the benefit ticks. */

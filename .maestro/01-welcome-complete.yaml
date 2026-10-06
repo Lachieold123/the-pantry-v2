@@ -48,9 +48,10 @@ appId: host.exp.Exponent
     id: "welcome-finish"
 
 # Then the four-stop tour over Home (D-035): Next, Next, Next, Start cooking.
+# Wait for the card, not just the dim: it appears once its spotlight has settled.
 - extendedWaitUntil:
     visible:
-      id: "tour"
+      id: "tour-next"
     timeout: 15000
 - assertVisible: "What I have"
 - assertVisible: "1 of 4"
@@ -84,9 +85,10 @@ appId: host.exp.Exponent
     direction: DOWN
 - tapOn:
     id: "settings-replay-tour"
+# Wait for the card, not just the dim: it appears once its spotlight has settled.
 - extendedWaitUntil:
     visible:
-      id: "tour"
+      id: "tour-next"
     timeout: 10000
 - tapOn:
     id: "tour-skip"

@@ -113,23 +113,6 @@ export function whatCanICook(input: CookInput): { ready: CookableMatch[]; nearly
   return { ready: scored.filter((m) => m.tier === 'ready'), nearly: scored.filter((m) => m.tier === 'nearly') };
 }
 
-/**
- * "Add one thing": the single ingredients that would make the most Nearly
- * recipes Ready. Counts only recipes missing exactly that one thing, so the
- * promise ("makes 4 more ready") is literally true.
- */
-export function addOneThing(nearly: readonly CookableMatch[], limit = 3): { id: string; unlocks: number }[] {
-  const counts = new Map<string, number>();
-  for (const m of nearly) {
-    const [only] = m.result.missing;
-    if (m.result.missing.length === 1 && only) counts.set(only, (counts.get(only) ?? 0) + 1);
-  }
-  return [...counts]
-    .map(([id, unlocks]) => ({ id, unlocks }))
-    .sort((a, b) => b.unlocks - a.unlocks || a.id.localeCompare(b.id))
-    .slice(0, limit);
-}
-
 /** The line a card shows instead of v1's percentage: "Ready", "Need 1: lemon", "Need 2: lemon, feta". */
 export function needLine(c: Cookable, nameOf: (id: string) => string): string {
   if (c.missing.length === 0) return 'Ready to cook';
@@ -163,15 +146,4 @@ export function quickAdds(
     .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
     .slice(0, limit)
     .map(([id]) => id);
-}
-
-/** Every ingredient recipes use, most-used first (staples left out): the order for the "stock the cupboard" grid. */
-export function popularIngredients(recipes: readonly Recipe[], index: IngredientIndex): string[] {
-  const counts = new Map<string, number>();
-  for (const recipe of recipes) {
-    for (const id of new Set(allLines(recipe).flatMap((l) => (l.ingredientId && !l.optional ? [l.ingredientId] : [])))) {
-      if (!index.byId.get(id)?.staple) counts.set(id, (counts.get(id) ?? 0) + 1);
-    }
-  }
-  return [...counts].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([id]) => id);
 }

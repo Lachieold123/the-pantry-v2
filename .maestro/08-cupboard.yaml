@@ -1,5 +1,5 @@
 # Cupboard: add by search (tap a suggestion, or press return for the top match), the scan sheets,
-# remove with undo, the stock grid, the "move ticked shopping here" switch (and
+# remove with undo, the "move ticked shopping here" switch (and
 # that ticking really moves it), and what-can-I-make results.
 appId: host.exp.Exponent
 ---
@@ -88,14 +88,9 @@ appId: host.exp.Exponent
 - assertVisible:
     id: "cupboard-item-egg"
 
-# Stock the cupboard: a tile toggles in and out of the cupboard.
-- scrollUntilVisible:
-    element:
-      id: "stock-tab-proteins"
-    direction: DOWN
-- tapOn:
-    id: "stock-tab-proteins"
-- takeScreenshot: cupboard-stock-proteins
+# "Add one thing" and the "Stock up" grid are gone (6 October): nothing between the jars and the rail.
+- assertNotVisible: "Add one thing"
+- assertNotVisible: "Tap what you have"
 
 # The switch: off, then back on (it starts on).
 - scrollUntilVisible:

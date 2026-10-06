@@ -1,6 +1,9 @@
 // The ink "you can cook this" card on the Cupboard rail (spec §4.6, v1's match
 // card). The pill says Ready or Need 1 instead of v1's percentage, and the meta
 // line names what's missing, so the card answers "can I cook this tonight?".
+// Cards on one rail are all as tall as the tallest (the rail stretches them),
+// and the meta line sits at the foot of each, so a one-line title or a short
+// "Nothing to buy" doesn't leave one card shorter than its neighbours.
 import { Pressable, View } from 'react-native';
 
 import { CUISINE_LABELS, formatMinutes } from '@/domain/recipes/labels';
@@ -44,7 +47,7 @@ export function MatchCard({ recipe, image, ready, need, onPress, testID }: Props
         <Text variant="cardTitleLarge" colour="bg" numberOfLines={2}>
           {recipe.title}
         </Text>
-        <Text variant="meta" colour="bgSoft" numberOfLines={2}>
+        <Text variant="meta" colour="bgSoft" numberOfLines={2} style={styles.meta}>
           {meta}
         </Text>
       </View>
@@ -67,5 +70,6 @@ const useStyles = makeStyles(({ colours }) => ({
     borderRadius: RADIUS.pill,
     backgroundColor: colours.ink,
   },
-  body: { paddingHorizontal: JAR.matchBody, paddingTop: SPACE.sm, paddingBottom: JAR.matchBody, gap: SPACE.xxs },
+  body: { flexGrow: 1, paddingHorizontal: JAR.matchBody, paddingTop: SPACE.sm, paddingBottom: JAR.matchBody, gap: SPACE.xxs },
+  meta: { marginTop: 'auto' },
 }));

@@ -3,18 +3,6 @@
 // in the screen.
 
 export const CUPBOARD = {
-  /** Category tabs above the "stock the cupboard" grid: text tabs with an underline in the category colour. */
-  tabGap: 18,
-  tabPadTop: 6,
-  tabPadBottom: 12,
-  tabUnderline: 1.5,
-  /** The tiles: three across, an italic initial over the name. */
-  tileMinHeight: 90,
-  tilePadY: 16,
-  tilePadX: 8,
-  tileGap: 8,
-  tileWidth: '31.7%',
-  gridTop: 14,
   /** Jar groups: a spaced-out name, a faint rule in the category colour, an italic count. */
   groupGap: 18,
   groupHeadGap: 10,
@@ -31,12 +19,7 @@ export const CUPBOARD = {
   quickIconGap: 6,
   quickIcon: 12,
   quickIconOpacity: 0.55,
-  /** "Add one thing": an italic numeral column, hairlines between rows. */
-  numeralWidth: 32,
-  unlockPadY: 16,
-  unlockGap: 16,
-  unlockTextGap: 3,
-  /** The small matching pills on each row: 32 tall, with slop to make a full tap target. */
+  /** Small outline pills (the recipe page's cupboard actions): 32 tall, with slop to make a full tap target. The quick adds share the slop. */
   actionHeight: 32,
   actionPadX: 12,
   actionGap: 6,

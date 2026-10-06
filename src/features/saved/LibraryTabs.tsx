@@ -1,5 +1,5 @@
 // The library's four tabs, across the top under its head. Text with an
-// underline, like the Cupboard's stock-up tabs, rather than a pill track: four
+// underline (v1's Cupboard category tabs), rather than a pill track: four
 // labels are too long for equal pills on a small phone, and this row scrolls
 // sideways if large text makes them wider than the screen.
 import { Pressable, ScrollView, StyleSheet } from 'react-native';

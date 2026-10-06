@@ -62,14 +62,9 @@ export const TYPE = {
   numberTile: serif(28, '700', 32, -0.6),
   numberDay: serif(18, '700', 22, -0.4),
   numberItalic: italic(serif(16, '400', 18, -0.3)),
-  // Cupboard (v1 PantryModal): tile initials, jar-group counts, "Add one thing" rows.
-  cupboardTileInitial: italic(serif(22, '400', 24, -0.4)),
+  // Cupboard (v1 PantryModal): jar-group counts; the text tabs (now the library's).
   cupboardGroupCount: italic(serif(13, '400', 16, -0.1)),
-  cupboardNumeral: italic(serif(22, '400', 26, -0.4)),
-  cupboardUnlockTitle: serif(18, '700', 22, -0.3),
   cupboardTab: sans(14, '600', 18),
-  cupboardTileName: sans(12.5, '500', 16, 0.1),
-  cupboardTileNameOn: sans(12.5, '700', 16, 0.1),
   cupboardGroupName: upper(sans(10.5, '700', 13, 2.8)),
   cupboardQuickAdd: sans(13, '500', 17),
   drawerProfileSub: sans(12, '500', 16),

@@ -16,9 +16,10 @@ appId: host.exp.Exponent
     timeout: 30000
 
 # It starts by itself a moment after Home appears.
+# Wait for the card, not just the dim: it appears once its spotlight has settled.
 - extendedWaitUntil:
     visible:
-      id: "tour"
+      id: "tour-next"
     timeout: 10000
 - assertVisible: "1 of 4"
 - assertVisible: "What I have"
@@ -67,9 +68,10 @@ appId: host.exp.Exponent
     direction: DOWN
 - tapOn:
     id: "settings-replay-tour"
+# Wait for the card, not just the dim: it appears once its spotlight has settled.
 - extendedWaitUntil:
     visible:
-      id: "tour"
+      id: "tour-next"
     timeout: 10000
 - assertVisible: "1 of 4"
 - tapOn:

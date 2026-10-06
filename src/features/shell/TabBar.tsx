@@ -3,13 +3,14 @@
 // cooked, camera first. Browse opens from Home's search bar. It slides away
 // while the keyboard is up so it never covers a text field.
 import type { Tabs } from 'expo-router';
-import { useRouter } from 'expo-router';
+import { useIsFocused, useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
-import type { ComponentProps } from 'react';
+import { useState, type ComponentProps } from 'react';
 import { Pressable, View } from 'react-native';
 import Animated, { useAnimatedStyle, withTiming } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { useToastFloor } from '@/ui/patterns/Toast';
 import { Badge } from '@/ui/primitives/Badge';
 import { Icon, type IconName } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
@@ -39,6 +40,9 @@ export function TabBar({ state, navigation }: TabBarProps) {
   const styles = useStyles();
   const counts: Counts = { planned: usePlanBadge(), toBuy: useToBuyThisWeek() };
   const keyboard = useKeyboardShown();
+  // Toasts sit just above the bar while the tabs are in front (not under a pushed page or a sheet).
+  const [height, setHeight] = useState(0);
+  useToastFloor(height, useIsFocused());
   // The first-use tour points at these three (D-035).
   const tourRefs: Record<string, ReturnType<typeof useTourTarget> | undefined> = {
     cupboard: useTourTarget('tab-cupboard'),
@@ -84,7 +88,11 @@ export function TabBar({ state, navigation }: TabBarProps) {
   };
 
   return (
-    <Animated.View style={[styles.wrap, slide]} pointerEvents={keyboard ? 'none' : 'box-none'}>
+    <Animated.View
+      style={[styles.wrap, slide]}
+      pointerEvents={keyboard ? 'none' : 'box-none'}
+      onLayout={(e) => setHeight(e.nativeEvent.layout.height)}
+    >
       <LinearGradient colors={[colours.bgFade, colours.bg]} locations={[0, 0.45]} style={styles.fade} pointerEvents="none" />
       <View style={[styles.row, { paddingBottom: SPACE.xxs + Math.max(insets.bottom - SPACE.md, SPACE.xs) }]} accessibilityRole="tablist">
         {button(0)}

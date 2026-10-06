@@ -1,5 +1,5 @@
 // The shopping list itself (spec §4.13), in v1's shape: a head row with the
-// count, "By aisle" and "Clear all", then the list in soft cards. v2 keeps
+// count, "By aisle" and "Clear all", a row to add your own, then the list in soft cards. v2 keeps
 // what v1 lacked: ticking as you shop, amounts, extras you type in, and the
 // things left off because they're in the cupboard. Sending the list is the
 // share button at the top of the page, as in v1. Derived from the plan every
@@ -92,15 +92,15 @@ export function ShoppingListView({ week, weekLabel, onPlan }: { week: ISODate; w
   if (meals === 0 && list.sections.length === 0 && list.extras.length === 0 && list.removedCount === 0) {
     return (
       <View style={{ gap: PLAN.aisleGap }}>
+        <ListCard>
+          <AddItemRow onAdd={addExtra} />
+        </ListCard>
         <EmptyState
           title="Your list is empty"
-          body={`Plan a few meals for ${weekLabel.toLowerCase()} and everything you need appears here, sorted by aisle. Or add things yourself below.`}
+          body={`Plan a few meals for ${weekLabel.toLowerCase()} and everything you need appears here, sorted by aisle. Or add things yourself above.`}
           action={{ label: 'Plan a meal', onPress: onPlan }}
           testID="shopping-empty"
         />
-        <ListCard>
-          <AddItemRow onAdd={addExtra} first />
-        </ListCard>
       </View>
     );
   }
@@ -114,6 +114,10 @@ export function ShoppingListView({ week, weekLabel, onPlan }: { week: ISODate; w
         <Pill label="By aisle" icon="aisles" on={byAisle} role="switch" onPress={() => setByAisle(!byAisle)} testID="shopping-by-aisle" />
         {total ? <Pill label="Clear all" onPress={clearAll} testID="shopping-clear" /> : null}
       </View>
+      {/* Adding comes first, so it's never at the foot of a long list (Lachlan, 6 October). */}
+      <ListCard>
+        <AddItemRow onAdd={addExtra} />
+      </ListCard>
       {groups.map((g) =>
         g.items.length ? (
           <ListCard key={g.key} title={g.title}>
@@ -121,23 +125,24 @@ export function ShoppingListView({ week, weekLabel, onPlan }: { week: ISODate; w
           </ListCard>
         ) : null,
       )}
-      <ListCard title={list.extras.length ? 'Also' : undefined}>
-        {list.extras.map(({ extra: x, checked }, i) => (
-          <ShoppingRow
-            key={x.id}
-            label={x.text}
-            checked={checked}
-            first={i === 0}
-            onToggle={() =>
-              edit((e) => ({ ...e, checkedExtras: checked ? e.checkedExtras.filter((id) => id !== x.id) : [...e.checkedExtras, x.id] }))
-            }
-            onRemove={() => edit((e) => ({ ...e, extras: e.extras.filter((item) => item.id !== x.id) }))}
-            removeLabel={`Remove ${x.text}`}
-            testID={`shopping-extra-${x.id}`}
-          />
-        ))}
-        <AddItemRow onAdd={addExtra} first={list.extras.length === 0} />
-      </ListCard>
+      {list.extras.length ? (
+        <ListCard title="Also">
+          {list.extras.map(({ extra: x, checked }, i) => (
+            <ShoppingRow
+              key={x.id}
+              label={x.text}
+              checked={checked}
+              first={i === 0}
+              onToggle={() =>
+                edit((e) => ({ ...e, checkedExtras: checked ? e.checkedExtras.filter((id) => id !== x.id) : [...e.checkedExtras, x.id] }))
+              }
+              onRemove={() => edit((e) => ({ ...e, extras: e.extras.filter((item) => item.id !== x.id) }))}
+              removeLabel={`Remove ${x.text}`}
+              testID={`shopping-extra-${x.id}`}
+            />
+          ))}
+        </ListCard>
+      ) : null}
       {list.removedCount > 0 ? (
         <Pressable
           onPress={() => edit(restoreRemoved)}

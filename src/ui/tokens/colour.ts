@@ -43,6 +43,12 @@ export type ColourTokens = {
   tintLavender: string;
   tintRose: string;
   tintNeutral: string;
+  /** A card that floats over a dimmed screen (the first-use tour). Lighter than the page in dark mode, so it lifts off it. */
+  raised: string;
+  /** The edge of a raised card: invisible in light mode (the shadow does the work), a visible line in dark mode where shadows don't show. */
+  raisedEdge: string;
+  /** The dim around a spotlight. Darker in dark mode: half-black over a near-black page barely changes it. */
+  scrimSpotlight: string;
 };
 
 export const light: ColourTokens = {
@@ -73,6 +79,9 @@ export const light: ColourTokens = {
   tintLavender: '#E3DCF3',
   tintRose: '#F8D2DD',
   tintNeutral: '#F4F4F4',
+  raised: '#FFFFFF',
+  raisedEdge: 'rgba(0,0,0,0)',
+  scrimSpotlight: 'rgba(0,0,0,0.5)',
 };
 
 export const dark: ColourTokens = {
@@ -102,6 +111,9 @@ export const dark: ColourTokens = {
   tintLavender: '#28213D',
   tintRose: '#3D202A',
   tintNeutral: '#1F1F1F',
+  raised: '#1F1D1A',
+  raisedEdge: 'rgba(247,243,234,0.22)',
+  scrimSpotlight: 'rgba(0,0,0,0.78)',
 };
 
 /** High contrast: pure ink, solid borders, deeper accents. Everything else inherits. */
@@ -118,6 +130,7 @@ export const lightHighContrast: ColourTokens = {
   accentText: '#6E4A1C',
   // High contrast's deeper amber carries white text at 5.9:1.
   onAccent: '#FFFFFF',
+  raisedEdge: 'rgba(0,0,0,0.55)',
 };
 
 export const darkHighContrast: ColourTokens = {
@@ -134,6 +147,8 @@ export const darkHighContrast: ColourTokens = {
   accent: '#F0C081',
   accentDeep: '#E0AC6E',
   accentText: '#F0C081',
+  raised: '#161616',
+  raisedEdge: 'rgba(255,255,255,0.6)',
 };
 
 export type ThemeName = 'light' | 'dark';

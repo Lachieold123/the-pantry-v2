@@ -111,16 +111,19 @@ appId: host.exp.Exponent
 - assertVisible:
     id: "shopping-item-pecorino"
 
-# Add something that isn't in any recipe
+# Add something that isn't in any recipe: the field is at the top of the list,
+# and what you add joins "Also" at the foot.
 - scrollUntilVisible:
     element:
       id: "shopping-add-extra"
-    direction: DOWN
+    direction: UP
 - tapOn:
     id: "shopping-add-extra"
 - inputText: "Paper towels"
 - pressKey: Enter
-- assertVisible: "Paper towels"
+- scrollUntilVisible:
+    element: "Paper towels"
+    direction: DOWN
 
 # A–Z instead of by aisle, and back
 - scrollUntilVisible:

@@ -1,6 +1,5 @@
 // The pieces of the Cupboard tab (D-030, cupboard-brief §4.4): the add bar
-// and the "what you can cook" rail. The lists below them (Add one thing, the
-// jars, quick adds) are in CupboardLists.
+// and the "what you can cook" rail. The jars and quick adds are in CupboardLists.
 import { useRouter } from 'expo-router';
 import { useMemo, useState } from 'react';
 import { ScrollView, View } from 'react-native';
@@ -108,7 +107,7 @@ export function CookRail({ ready, nearly }: { ready: CookableMatch[]; nearly: Co
       <View style={{ gap: SPACE.xs }}>
         <SectionHeader kicker="Step 3 · What you can cook" title="Nothing close yet" />
         <Text variant="body" colour="inkSoft">
-          Most recipes need a few more things. Add what else you have, or try one of the ideas below.
+          Most recipes need a few more things. Add what else you have above.
         </Text>
       </View>
     );
@@ -124,7 +123,8 @@ export function CookRail({ ready, nearly }: { ready: CookableMatch[]; nearly: Co
         horizontal
         showsHorizontalScrollIndicator={false}
         style={{ marginHorizontal: -SPACE.gutter }}
-        contentContainerStyle={{ gap: SPACE.sm, paddingHorizontal: SPACE.gutter, alignItems: 'flex-start' }}
+        // Stretch: every card takes the tallest card's height, whatever its title or need line.
+        contentContainerStyle={{ gap: SPACE.sm, paddingHorizontal: SPACE.gutter, alignItems: 'stretch' }}
       >
         {matches.map((m) => (
           <MatchCard

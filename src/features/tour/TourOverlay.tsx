@@ -7,7 +7,7 @@
 import { useEffect, useState } from 'react';
 import { Modal, View, useWindowDimensions } from 'react-native';
 
-import { tourTarget, useTour } from '@/store/tour';
+import { useTour } from '@/store/tour';
 import { Button } from '@/ui/primitives/Button';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
@@ -15,8 +15,7 @@ import { FIXED } from '@/ui/tokens/colour';
 import { TOUR } from '@/ui/tokens/screens';
 import { RADIUS, SHADOW, SPACE } from '@/ui/tokens/type';
 import { TOUR_STEPS } from './steps';
-
-type Rect = { x: number; y: number; width: number; height: number };
+import { useSettledTarget } from './useSettledTarget';
 
 /** Starts the tour once, after the welcome, when its saved state has loaded. */
 export function useFirstUseTour() {
@@ -40,20 +39,19 @@ export function TourOverlay() {
   const step = useTour((s) => s.step);
   const goTo = useTour((s) => s.goTo);
   const finish = useTour((s) => s.finish);
-  // Kept with the step it was measured for, so a new step never borrows the last one's spotlight.
-  const [measured, setMeasured] = useState<{ step: number; rect: Rect } | undefined>();
   const current = step === undefined ? undefined : TOUR_STEPS[step];
-  const rect = measured && measured.step === step ? measured.rect : undefined;
-
-  useEffect(() => {
-    if (step === undefined || !current) return;
-    // Nothing registered (a screen not built yet): the card still shows, centred, without a spotlight.
-    tourTarget(current.target)?.measureInWindow((x, y, width, height) => {
-      if (width > 0 && height > 0) setMeasured({ step, rect: { x, y, width, height } });
-    });
-  }, [step, current]);
+  // Measured once the target has stopped moving, so the card appears in its final place and stays there.
+  const rect = useSettledTarget(step, current?.target, `${window.width}x${window.height}`);
 
   if (step === undefined || !current) return null;
+  // While measuring, only the dim shows: a card drawn now would have to move.
+  if (rect === 'measuring') {
+    return (
+      <Modal visible transparent animationType="fade" onRequestClose={finish} statusBarTranslucent>
+        <View style={[styles.dim, styles.fill]} testID="tour" />
+      </Modal>
+    );
+  }
   const last = step === TOUR_STEPS.length - 1;
   const hole = rect
     ? { x: rect.x - TOUR.pad, y: rect.y - TOUR.pad, width: rect.width + TOUR.pad * 2, height: rect.height + TOUR.pad * 2 }
@@ -96,10 +94,10 @@ export function TourOverlay() {
             />
           </>
         ) : (
-          <View style={[styles.dim, { top: 0, left: 0, right: 0, bottom: 0 }]} />
+          <View style={[styles.dim, styles.fill]} />
         )}
         <View style={[styles.card, cardPosition]} accessibilityLiveRegion="polite">
-          <Text variant="kickerSmall" colour="accentDeep">{`${step + 1} of ${TOUR_STEPS.length}`}</Text>
+          <Text variant="kickerSmall" colour="accentText">{`${step + 1} of ${TOUR_STEPS.length}`}</Text>
           <Text variant="cardTitleLarge" accessibilityRole="header">
             {current.title}
           </Text>
@@ -128,8 +126,9 @@ export function TourOverlay() {
 }
 
 const useStyles = makeStyles(({ colours }) => ({
-  dim: { position: 'absolute', backgroundColor: FIXED.scrim },
-  mask: { position: 'absolute', borderColor: FIXED.scrim },
+  dim: { position: 'absolute', backgroundColor: colours.scrimSpotlight },
+  fill: { top: 0, left: 0, right: 0, bottom: 0 },
+  mask: { position: 'absolute', borderColor: colours.scrimSpotlight },
   ring: { position: 'absolute', borderWidth: TOUR.ring, borderColor: colours.accent },
   card: {
     position: 'absolute',
@@ -138,7 +137,10 @@ const useStyles = makeStyles(({ colours }) => ({
     gap: SPACE.xs,
     padding: SPACE.md,
     borderRadius: RADIUS.card,
-    backgroundColor: colours.bg,
+    // Raised, with an edge: on the page colour it vanished into a dark-mode screen (Lachlan, 6 October).
+    backgroundColor: colours.raised,
+    borderWidth: TOUR.edge,
+    borderColor: colours.raisedEdge,
     shadowColor: FIXED.shadow,
     ...SHADOW.sheet,
   },

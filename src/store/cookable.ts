@@ -5,7 +5,7 @@
 import { useMemo } from 'react';
 
 import { INGREDIENTS, KITCHEN } from '@/data/catalogue/catalogue';
-import { addOneThing, popularIngredients, quickAdds, whatCanICook, type CookableMatch } from '@/domain/cupboard/cookable';
+import { quickAdds, whatCanICook, type CookableMatch } from '@/domain/cupboard/cookable';
 import { cupboardIds } from '@/domain/cupboard/match';
 import { toISODate } from '@/domain/plan/week';
 import { NO_FILTERS } from '@/domain/recipes/search';
@@ -18,7 +18,6 @@ import { useSaved } from './saved';
 export type CookableNow = {
   ready: CookableMatch[];
   nearly: CookableMatch[];
-  unlocks: { id: string; unlocks: number }[];
   /** Ingredients worth adding next, from what this cook's recipes use most. */
   quick: string[];
   have: ReadonlySet<string>;
@@ -45,17 +44,11 @@ export function useCookableNow(): CookableNow {
       saved: new Set(bookmarks.map((b) => b.recipeId)),
       seed: today,
     });
-    return { ready, nearly, unlocks: addOneThing(nearly), quick: quickAdds(eats, have, INGREDIENTS, KITCHEN), have };
+    return { ready, nearly, quick: quickAdds(eats, have, INGREDIENTS, KITCHEN), have };
   }, [items, shelf, diet, avoid, hidden, bookmarks, recipes, today]);
 }
 
 /** The name a cook reads for an ingredient id. */
 export function ingredientName(id: string): string {
   return INGREDIENTS.byId.get(id)?.name ?? id;
-}
-
-/** Ingredients by how often this cook's recipes use them, for the stocking grid. */
-export function usePopularIngredients(): string[] {
-  const recipes = useAllRecipes();
-  return useMemo(() => popularIngredients(recipes, INGREDIENTS), [recipes]);
 }

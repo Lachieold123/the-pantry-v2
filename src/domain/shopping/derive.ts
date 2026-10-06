@@ -13,10 +13,10 @@ import type { PlanEntry } from '../plan/week';
 import { allLines, type Recipe } from '../recipes/types';
 
 /**
- * Something added to the list by hand. When it's a known ingredient (from the
- * Cupboard's "add one thing" or a recipe's "add what's missing") it carries the
- * id, so it merges with the same ingredient from the plan and, once ticked,
- * moves into the cupboard like any other line. Free text ("dishwashing
+ * Something added to the list by hand. When it's a known ingredient (from a
+ * recipe's "add what's missing") it carries the id, so it merges with the
+ * same ingredient from the plan and, once ticked, moves into the cupboard
+ * like any other line. Free text ("dishwashing
  * liquid") stays a plain extra.
  */
 export type ListExtra = {

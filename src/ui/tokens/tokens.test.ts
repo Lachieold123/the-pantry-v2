@@ -26,6 +26,10 @@ const MUST_PASS: [keyof ColourTokens, keyof ColourTokens][] = [
   ['danger', 'bg'],
   ['danger', 'bgSoft'],
   ['onDanger', 'danger'],
+  // The tour card.
+  ['ink', 'raised'],
+  ['inkSoft', 'raised'],
+  ['accentText', 'raised'],
 ];
 
 // Pairs the original app ships below AA. They are kept so v2 looks the same (D-025) and are

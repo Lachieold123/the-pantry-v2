@@ -2,17 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
 import { catalogue, index, kitchen, makeRecipe } from '../testing/fixtures';
-import {
-  addOneThing,
-  cookable,
-  DEFAULT_SHELF,
-  needLine,
-  popularIngredients,
-  quickAdds,
-  tierOf,
-  whatCanICook,
-  type Shelf,
-} from './cookable';
+import { cookable, DEFAULT_SHELF, needLine, quickAdds, tierOf, whatCanICook, type Shelf } from './cookable';
 
 const ONLY_MINE: Shelf = { mode: 'mine', ids: [] };
 const dish = makeRecipe('dish', [
@@ -95,21 +85,6 @@ describe('what can I cook', () => {
     assert.equal(whatCanICook({ ...input, saved: new Set(['b']) }).ready[0]?.recipe.id, 'b');
     assert.equal(whatCanICook({ ...input, saved: new Set(['a']) }).ready[0]?.recipe.id, 'a');
   });
-  it('"add one thing" counts only recipes that thing alone would make ready', () => {
-    const r1 = makeRecipe('r1', ['1 garlic clove', '1 lemon']);
-    const r2 = makeRecipe('r2', ['1 garlic clove', '1 lemon']);
-    const r3 = makeRecipe('r3', ['1 garlic clove', '1 lemon', '100g feta']);
-    const r = whatCanICook({
-      recipes: [r1, r2, r3],
-      have: new Set(['garlic']),
-      shelf: DEFAULT_SHELF,
-      index,
-      kitchen,
-      saved: new Set(),
-      seed: 'd',
-    });
-    assert.deepEqual(addOneThing(r.nearly), [{ id: 'lemon', unlocks: 2 }]);
-  });
   it('names what is missing instead of a percentage', () => {
     const c = cookable(dish, new Set(['garlic']), DEFAULT_SHELF, index, kitchen);
     assert.match(
@@ -125,14 +100,6 @@ describe('quick adds', () => {
     assert.equal(picks.length, 10);
     assert.ok(!picks.includes('garlic'));
     for (const id of picks) assert.ok(!kitchen.isShelf(id) && !index.byId.get(id)?.staple, id);
-  });
-});
-
-describe('stocking grid order', () => {
-  it('puts the most-used ingredients first and leaves staples out', () => {
-    const ranked = popularIngredients(catalogue, index);
-    assert.ok(ranked.indexOf('garlic') < 5, `garlic at ${ranked.indexOf('garlic')}`);
-    assert.ok(!ranked.includes('salt'));
   });
 });
 

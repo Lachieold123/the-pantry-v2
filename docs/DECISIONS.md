@@ -370,3 +370,9 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
   - **Names:** one thing, one name. See `docs/audits/2026-10-06-naming/FINDINGS.md`.
 - **Tried and reverted the same day:** a "You" page behind the avatar in place of the side menu; dropping the centre "+", Browse's "+" and the Cupboard's scan buttons; and cutting Home's filters to Time and Cuisine. Lachlan: "You've taken this a little too far." The side menu, the centre "+", Browse's "+", the scan buttons (their sheets say "Coming soon") and all four Home filters (Meal, Time, Cuisine, Difficulty) stay as D-033 and D-034 set them.
 - **Why:** the welcome now ends with the user's own cupboard on Home, the app's strongest moment, and four library pages that were one idea became one page. The menu, the "+" and the filters are part of how the app looks and feels; removing them made it plainer, not simpler.
+
+## D-042 · The Cupboard loses "Add one thing" and "Stock up"
+
+- **Date:** 6 October 2026 · **Decided by:** Lachlan ("bulky and clunky")
+- **Decision:** the "Add one thing" rows (a missing ingredient that would unlock recipes) and the "Stock up" tap grid are gone from the Cupboard, with the code that only they used. Adding to the cupboard is search, quick adds, Add a list and (when connected) scanning; the welcome's cupboard step covers the first fill.
+- **Also from the same phone test:** the tour card no longer jumps (it waits until its target stops moving) and reads clearly in dark mode; toasts sit just above the tab bar or the bottom edge and show over sheets; the List's "Add something else" is at the top; the "What you can cook" cards are all the same height.

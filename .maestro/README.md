@@ -49,8 +49,8 @@ writing or fixing a flow.
 | `04-feed.yaml` | The "What I have" switch, the cards and filters, no-match and Clear filters, tonight's planned dinner leads, What I have with a stocked cupboard |
 | `05-browse.yaml` | Every quick chip and the pill, a mood shelf, See all, a misspelt search, the filters sheet, save from a grid card, no results |
 | `06-recipe-page.yaml` | Save/undo, plan it, share, mark cooked/undo, servings and units, tick an ingredient, the "⋯" menu |
-| `07-plan.yaml` | Add a meal, change servings, remove/undo, a suggestion; then the List tab: tick, remove/undo, add an extra, A–Z, clear/undo, send, both weeks |
-| `08-cupboard.yaml` | Add by search, remove/undo, the "move ticked shopping here" switch (and that it works), what can I make |
+| `07-plan.yaml` | Add a meal, change servings, remove/undo, a suggestion; then the List tab: tick, remove/undo, add an extra (the field at the top of the list), A–Z, clear/undo, send, both weeks |
+| `08-cupboard.yaml` | Add by search, remove/undo, no "Add one thing" or "Stock up" any more, the "move ticked shopping here" switch (and that it works), what can I make |
 | `09-cookmarks.yaml` | Empty state, then a saved recipe listed and opened |
 | `10-collections.yaml` | Create (and refuse a duplicate), open, rename, delete/undo, add a recipe to one |
 | `11-my-recipes.yaml` | Import rejects a bad link; write a recipe with validation, save, open, edit, delete/undo; cancel asks first |
@@ -64,7 +64,7 @@ writing or fixing a flow.
 | `19-plate-page.yaml` | No plates on a fresh Home, and a link to a missing plate says so (a real plate needs a photo, so it can't be made here) |
 | `20-scan-coming-soon.yaml` | Both scan sheets say "Coming soon" with no dead camera button; Not now closes; Add a list instead works |
 | `21-list-tab.yaml` | Plan a recipe, then tick an item off on the List tab: count drops by one, it moves to the cupboard, unticking takes it back |
-| `22-first-use-tour.yaml` | The tour appears after Skip on a fresh install, Skip tour ends it, a relaunch doesn't bring it back, Settings replays all four stops |
+| `22-first-use-tour.yaml` | The tour's card appears (once its spotlight has settled) after Skip on a fresh install, Skip tour ends it, a relaunch doesn't bring it back, Settings replays all four stops |
 | `23-recipe-to-list.yaml` | Carbonara's "Add to list": untick one, add the rest, the sheet then names what's already on the list, and the List tab has them |
 | `24-pro.yaml` | Settings' Pro row opens a paywall that says Pro isn't on sale yet; with the development "Preview the free limits" switch on, planning next Sunday opens Pro instead (Monday to Saturday) |
 | `25-household.yaml` | Start sharing from Settings → Household, see yourself and "Up to date", then leave. Needs the internet and anonymous sign-ins on in Supabase |
