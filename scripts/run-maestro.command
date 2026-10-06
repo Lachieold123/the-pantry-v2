@@ -124,8 +124,11 @@ xcrun simctl bootstatus "$UDID" -b >/dev/null 2>&1
 open -a "$(xcode-select -p)/Applications/Simulator.app" 2>/dev/null ||
   open -a /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app 2>/dev/null || true
 
-if [ ! -d "$REPO_ROOT/node_modules" ]; then
-  say "Installing npm packages (first run only)"
+# Install packages whenever the lock file is newer than what's installed: a pull
+# that adds a package (as on 6 October) otherwise leaves the app unable to load,
+# and every flow fails on a red error screen.
+if [ ! -d "$REPO_ROOT/node_modules" ] || [ "$REPO_ROOT/package-lock.json" -nt "$REPO_ROOT/node_modules/.package-lock.json" ]; then
+  say "Installing npm packages"
   npm install || finish 1
 fi
 
