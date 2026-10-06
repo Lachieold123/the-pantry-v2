@@ -1,13 +1,12 @@
-// The header on the four tabs: the wordmark, and the avatar that opens the
-// You page (spec §4.1). There's no side menu: the tabs and You hold every
-// place, so one way in is enough (Lachlan, 6 October). The left side stays
-// empty to keep the wordmark centred; the inbox button joins it with social
-// (P9), and until then there is nothing to open, so it isn't shown.
+// The header on the four tabs: menu, the wordmark, and the avatar (spec §4.1).
+// The inbox button joins it with social (P9); until then there is nothing to
+// open, so it isn't shown (no dead buttons).
 import { useRouter } from 'expo-router';
 import { Pressable, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Avatar } from '@/ui/primitives/Avatar';
+import { IconButton } from '@/ui/primitives/IconButton';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { CHROME, SPACE, TAP_TARGET } from '@/ui/tokens/type';
@@ -18,15 +17,17 @@ export function AppHeader() {
   const styles = useStyles();
   return (
     <View style={[styles.bar, { paddingTop: insets.top + SPACE.xs }]}>
-      <View style={styles.side} />
+      <View style={styles.side}>
+        <IconButton icon="menu" label="Open menu" size={28} onPress={() => router.push('/menu')} testID="header-menu" />
+      </View>
       <Text variant="wordmark" numberOfLines={1} accessibilityRole="header" style={styles.wordmark} maxFontSizeMultiplier={1.2}>
         The Pantry
       </Text>
       <View style={[styles.side, styles.right]}>
         <Pressable
-          onPress={() => router.push('/you')}
+          onPress={() => router.push('/settings')}
           accessibilityRole="button"
-          accessibilityLabel="You: your library, kitchen and settings"
+          accessibilityLabel="Your profile and settings"
           testID="header-avatar"
           style={styles.avatar}
         >

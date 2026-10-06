@@ -45,29 +45,29 @@ writing or fixing a flow.
 | --- | --- |
 | `01-welcome-complete.yaml` | First launch: "Anything you don't eat?" (with Back), tap three things into the cupboard, land on What I have, walk the tour, replay it from Settings |
 | `02-welcome-skip.yaml` | First launch: Skip, and a relaunch stays past the welcome |
-| `03-shell-navigation.yaml` | Four tabs (Home · Plan · List · Cupboard, no centre "+", no side menu), Browse from Home's search with no "+", the avatar's You page to every library tab, Kitchen stats, Share a dish, Surprise me, Household, Pro and Settings, and back |
-| `04-feed.yaml` | The "What I have" switch, the cards, Time and Cuisine filters (no Meal or Difficulty), no-match and Clear filters, tonight's planned dinner leads, What I have with a stocked cupboard |
+| `03-shell-navigation.yaml` | Tab bar (Home · Plan · ＋ · List · Cupboard), Browse from Home's search, side menu to every destination and back, Browse's "+" opens the editor, the centre "+" opens Share a dish, avatar opens Settings |
+| `04-feed.yaml` | The "What I have" switch, the cards and filters, no-match and Clear filters, tonight's planned dinner leads, What I have with a stocked cupboard |
 | `05-browse.yaml` | Every quick chip and the pill, a mood shelf, See all, a misspelt search, the filters sheet, save from a grid card, no results |
 | `06-recipe-page.yaml` | Save/undo, plan it, share, mark cooked/undo, servings and units, tick an ingredient, the "⋯" menu |
 | `07-plan.yaml` | Add a meal, change servings, remove/undo, a suggestion; then the List tab: tick, remove/undo, add an extra, A–Z, clear/undo, send, both weeks |
-| `08-cupboard.yaml` | Add by search, Add a list (no scan buttons while scanning isn't connected), remove/undo, the "move ticked shopping here" switch (and that it works), what can I make |
+| `08-cupboard.yaml` | Add by search, remove/undo, the "move ticked shopping here" switch (and that it works), what can I make |
 | `09-cookmarks.yaml` | Empty state, then a saved recipe listed and opened |
 | `10-collections.yaml` | Create (and refuse a duplicate), open, rename, delete/undo, add a recipe to one |
 | `11-my-recipes.yaml` | Import rejects a bad link; write a recipe with validation, save, open, edit, delete/undo; cancel asks first |
 | `12-recent-and-stats.yaml` | Recent and Kitchen stats, empty then filled |
 | `13-cook-mode.yaml` | Next/back, swipe, ingredients, a timer, Done counts as cooked |
-| `14-surprise.yaml` | Surprise me, from You: deck, meal and time settings, tap to spin, spin again, how it works, plan it, cook this |
-| `15-settings.yaml` | Settings from You: appearance, high contrast, diet and avoid, Sunday reminder, units, retake the quiz |
+| `14-surprise.yaml` | Surprise me: deck, meal and time settings, tap to spin, spin again, how it works, plan it, cook this |
+| `15-settings.yaml` | Appearance, high contrast, diet and avoid, Sunday reminder, units, redo the welcome |
 | `16-empty-states.yaml` | Every empty state on a fresh install |
 | `17-home-what-i-have.yaml` | Home's "What I have / Everything" switch: empty-cupboard state, the cupboard line opens the Cupboard, the line counts a stocked cupboard, Everything hides it, search opens Browse |
-| `18-share-a-dish.yaml` | Share a dish, from You: Share says what's missing, the photo choice, link a recipe, the preview, Close keeps a draft, Discard clears it (no photo: the system picker can't be automated) |
+| `18-share-a-dish.yaml` | The centre "+": Share says what's missing, the photo choice, link a recipe, the preview, Close keeps a draft, Discard clears it (no photo: the system picker can't be automated) |
 | `19-plate-page.yaml` | No plates on a fresh Home, and a link to a missing plate says so (a real plate needs a photo, so it can't be made here) |
-| `20-scan-coming-soon.yaml` | The Cupboard shows no scan buttons; opened by link, both scan sheets say "Coming soon" with no dead camera button; Not now closes; Add a list instead works |
+| `20-scan-coming-soon.yaml` | Both scan sheets say "Coming soon" with no dead camera button; Not now closes; Add a list instead works |
 | `21-list-tab.yaml` | Plan a recipe, then tick an item off on the List tab: count drops by one, it moves to the cupboard, unticking takes it back |
 | `22-first-use-tour.yaml` | The tour appears after Skip on a fresh install, Skip tour ends it, a relaunch doesn't bring it back, Settings replays all four stops |
 | `23-recipe-to-list.yaml` | Carbonara's "Add to list": untick one, add the rest, the sheet then names what's already on the list, and the List tab has them |
-| `24-pro.yaml` | You's Pro row opens a paywall that says Pro isn't on sale yet; with the development "Preview the free limits" switch on, planning next Sunday opens Pro instead (Monday to Saturday) |
-| `25-household.yaml` | Start sharing from You → Household, see yourself and "Up to date", then leave. Needs the internet and anonymous sign-ins on in Supabase |
+| `24-pro.yaml` | Settings' Pro row opens a paywall that says Pro isn't on sale yet; with the development "Preview the free limits" switch on, planning next Sunday opens Pro instead (Monday to Saturday) |
+| `25-household.yaml` | Start sharing from Settings → Household, see yourself and "Up to date", then leave. Needs the internet and anonymous sign-ins on in Supabase |
 
 Shared steps live in `subflows/` and only run when a flow calls them:
 

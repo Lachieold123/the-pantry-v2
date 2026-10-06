@@ -1,6 +1,6 @@
-// The four tabs, under the app header and over the floating tab bar
-// (spec §4.1–4.2). Plan and List are separate tabs; Browse opens from Home's
-// search bar, and everything else from the avatar's You page.
+// The four tabs and the centre "+", under the app header and over the
+// floating tab bar (spec §4.1–4.2, D-033). Plan and List are separate tabs;
+// Browse opens from Home's search bar.
 import { Redirect, Tabs } from 'expo-router';
 
 import { useNeedsWelcome } from '@/features/app/useNeedsWelcome';

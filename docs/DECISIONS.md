@@ -361,13 +361,12 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
 - **Why:** Maestro on the Mac kept failing for reasons outside the app (a brand-new iOS, a missed `npm install`, a leftover Metro), and every run needed Lachlan. The web suite runs all 32 journeys in under a minute, and passed three repeat runs in a row with no failures.
 - **First catch:** a List with only added things (from a recipe or the Cupboard) said "Your list is empty" while the tab badge said 3. Fixed in `ShoppingListView`.
 
-## D-041 · A simpler app: two-step welcome, one Library, You instead of a menu
+## D-041 · A shorter welcome and one Library page
 
-- **Date:** 6 October 2026 · **Decided by:** Lachlan (all six simplifications, as recommended)
+- **Date:** 6 October 2026 · **Decided by:** Lachlan
 - **Decision:**
   - **Welcome:** two quick steps after the opening screen. "Anything you don't eat?" (diet and leave-outs), then "What's in your cupboard?" (24 tap-to-add items, only ones this cook eats). "Show what I can cook" stocks the cupboard and opens Home on What I have, even if nothing is fully ready yet. Cuisines and weeknight time are no longer asked; they stay in Settings → Cooking. The taste quiz, the "Tonight, for you" reveal and the Sunday-reminder question are gone (the reminder stays in Settings). Replaces the welcome part of D-035; the tour is unchanged.
-  - **Library:** Cookmarks, Collections, My recipes and Recent are one page with four tabs (`/library?tab=…`). The old addresses still open the right tab.
-  - **You instead of a side menu:** the avatar opens You (Library, Kitchen stats, Share a dish, Surprise me, Household, Pro, Settings). The hamburger, the drawer and the tab bar's centre "+" are gone: four tabs.
-  - **No dead ends:** the scan buttons are hidden until scanning is connected; Home keeps only Time and Cuisine (Browse has every filter); Browse's "+" is gone (writing a recipe lives in My recipes).
+  - **Library:** Cookmarks, Collections, My recipes and Recent are one page with four tabs (`/library?tab=…`). The side menu's rows and the old addresses open the right tab.
   - **Names:** one thing, one name. See `docs/audits/2026-10-06-naming/FINDINGS.md`.
-- **Why:** each was a second way to the same place, or a question that delayed the first useful screen. The welcome now ends with the user's own cupboard on Home, which is the app's strongest moment.
+- **Tried and reverted the same day:** a "You" page behind the avatar in place of the side menu; dropping the centre "+", Browse's "+" and the Cupboard's scan buttons; and cutting Home's filters to Time and Cuisine. Lachlan: "You've taken this a little too far." The side menu, the centre "+", Browse's "+", the scan buttons (their sheets say "Coming soon") and all four Home filters (Meal, Time, Cuisine, Difficulty) stay as D-033 and D-034 set them.
+- **Why:** the welcome now ends with the user's own cupboard on Home, the app's strongest moment, and four library pages that were one idea became one page. The menu, the "+" and the filters are part of how the app looks and feels; removing them made it plainer, not simpler.

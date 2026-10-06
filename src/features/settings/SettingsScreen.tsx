@@ -1,8 +1,7 @@
-// Settings, opened from the You page, in v1's layout: a grey page of white
-// cards under small labels (spec §7 Settings). Only settings that do something
-// in v2 today appear: v1's Privacy and account rows wait until those features
-// exist (no fake rows). Household and Pro are places, not settings, so they
-// live on the You page; only Pro's testing switches stay here (D-038).
+// Settings, opened from the side menu and the avatar, in v1's layout: a grey
+// page of white cards under small labels (spec §7 Settings). Only settings
+// that do something in v2 today appear: v1's Privacy and account rows wait
+// until those features exist (no fake rows). Pro has its own section (D-038).
 // The Sunday reminder only reads as on when the phone will actually deliver it.
 import Constants from 'expo-constants';
 import { useRouter } from 'expo-router';
@@ -19,6 +18,7 @@ import { Text } from '@/ui/primitives/Text';
 import { SETTINGS, TOUR } from '@/ui/tokens/screens';
 import { CookingSection } from './CookingSection';
 import { ProSection } from './ProSection';
+import { SharingSection } from './SharingSection';
 import { CardButton, ChoiceRow, InfoRow, SettingsSection, SwitchRow } from './SettingsParts';
 
 const APPEARANCE = [
@@ -87,6 +87,8 @@ export function SettingsScreen() {
         />
       </SettingsSection>
 
+      <SharingSection />
+
       <ProSection />
 
       <SettingsSection label="About">
@@ -102,7 +104,7 @@ export function SettingsScreen() {
         ) : null}
       </SettingsSection>
 
-      {/* Answers are kept, so this revisits the quiz rather than wiping it (v1 reset everything). */}
+      {/* Answers are kept, so this revisits the welcome rather than wiping it (v1 reset everything). */}
       <CardButton icon="refreshOutline" label="Redo welcome flow" onPress={() => router.push('/welcome')} testID="settings-retake-quiz" />
       <CardButton
         icon="info"

@@ -1,10 +1,9 @@
 // The floating tab bar over a fade into the page (spec §4.2): Home · Plan ·
-// List · Cupboard. Four plain tabs, in the order a week goes. The centre "+"
-// (Share a dish, D-033) left the bar on 6 October: sharing is occasional, so
-// it lives on the You page, and the bar keeps only daily places. Browse opens
-// from Home's search. It slides away while the keyboard is up so it never
-// covers a text field.
+// + · List · Cupboard (D-033). The centre "+" is v1's: share a dish you
+// cooked, camera first. Browse opens from Home's search bar. It slides away
+// while the keyboard is up so it never covers a text field.
 import type { Tabs } from 'expo-router';
+import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 import type { ComponentProps } from 'react';
 import { Pressable, View } from 'react-native';
@@ -16,7 +15,8 @@ import { Icon, type IconName } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { useTheme } from '@/ui/theme/ThemeProvider';
-import { CHROME, MOTION, SPACE } from '@/ui/tokens/type';
+import { FIXED } from '@/ui/tokens/colour';
+import { CHROME, MOTION, SHADOW, SPACE } from '@/ui/tokens/type';
 import { useKeyboardShown } from './useKeyboardShown';
 import { usePlanBadge } from './useCounts';
 import { useToBuyThisWeek } from '@/store/shoppingList';
@@ -33,6 +33,7 @@ const TABS: Record<string, { label: string; icon: IconName; badge?: (counts: Cou
 type Counts = { planned: number; toBuy: number };
 
 export function TabBar({ state, navigation }: TabBarProps) {
+  const router = useRouter();
   const insets = useSafeAreaInsets();
   const { colours } = useTheme();
   const styles = useStyles();
@@ -86,17 +87,43 @@ export function TabBar({ state, navigation }: TabBarProps) {
     <Animated.View style={[styles.wrap, slide]} pointerEvents={keyboard ? 'none' : 'box-none'}>
       <LinearGradient colors={[colours.bgFade, colours.bg]} locations={[0, 0.45]} style={styles.fade} pointerEvents="none" />
       <View style={[styles.row, { paddingBottom: SPACE.xxs + Math.max(insets.bottom - SPACE.md, SPACE.xs) }]} accessibilityRole="tablist">
-        {state.routes.map((_, i) => button(i))}
+        {button(0)}
+        {button(1)}
+        <Pressable
+          onPress={() => router.push('/post')}
+          testID="tab-add"
+          accessibilityRole="button"
+          accessibilityLabel="Share a dish you cooked"
+          style={({ pressed }) => [styles.fab, pressed && styles.pressed]}
+        >
+          <Icon name="add" size={26} colour="bg" />
+        </Pressable>
+        {button(2)}
+        {button(3)}
       </View>
     </Animated.View>
   );
 }
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles(({ colours }) => ({
   wrap: { position: 'absolute', left: 0, right: 0, bottom: 0 },
   fade: { position: 'absolute', left: 0, right: 0, bottom: 0, top: -(CHROME.tabFade - CHROME.tabBar) },
   row: { flexDirection: 'row', alignItems: 'flex-end', paddingHorizontal: SPACE.sm, paddingTop: SPACE.sm - 2 },
   tab: { flex: 1, alignItems: 'center', paddingVertical: CHROME.tabPadY, paddingHorizontal: SPACE.xxs, gap: CHROME.tabGap },
   pressed: { transform: [{ scale: 0.96 }] },
   badge: { position: 'absolute', top: -SPACE.xxs, right: -SPACE.sm },
+  fab: {
+    width: CHROME.fab + CHROME.fabRing * 2,
+    height: CHROME.fab + CHROME.fabRing * 2,
+    borderRadius: CHROME.fab,
+    borderWidth: CHROME.fabRing,
+    borderColor: colours.bg,
+    backgroundColor: colours.ink,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginHorizontal: SPACE.xxs,
+    marginBottom: CHROME.fabBottom,
+    shadowColor: FIXED.shadow,
+    ...SHADOW.fab,
+  },
 }));

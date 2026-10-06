@@ -40,8 +40,8 @@ export default function RootLayout() {
   );
 }
 
-// A screen opened straight from a link (a recipe, a library tab) still has the
-// tabs underneath it, so closing it lands somewhere sensible.
+// A screen opened straight from a link (the menu, a recipe) still has the tabs
+// underneath it, so closing it lands somewhere sensible and the menu dims a real screen.
 export const unstable_settings = { initialRouteName: '(tabs)' };
 
 // Short, focused tasks open as sheets over the current screen (map §6).
@@ -54,8 +54,11 @@ function RootStack() {
     <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: colours.bg } }}>
       <Stack.Screen name="(tabs)" />
       <Stack.Screen name="welcome" options={{ gestureEnabled: false, animation: 'fade' }} />
-      {/* The avatar's page: library, kitchen, household, Pro and settings in one place. */}
-      <Stack.Screen name="you" />
+      {/* The side menu draws its own slide and backdrop over whatever is underneath. */}
+      <Stack.Screen
+        name="menu"
+        options={{ presentation: 'transparentModal', animation: 'none', contentStyle: { backgroundColor: 'transparent' } }}
+      />
       <Stack.Screen name="settings/index" />
       <Stack.Screen name="library" />
       {/* The library's old addresses, each opening it on one tab. */}

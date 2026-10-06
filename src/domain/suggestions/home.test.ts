@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
 import { makeRecipe } from '../testing/fixtures';
-import { defaultHomeMode, HERO_COUNT, hasHomeFilters, heroKicker, homeFeed, NO_HOME_FILTERS, type HomeFilters } from './home';
+import { defaultHomeMode, HERO_COUNT, hasHomeFilters, heroKicker, homeFeed, NO_HOME_FILTERS } from './home';
 
 const r = (id: string, over: Parameters<typeof makeRecipe>[2] = {}) => makeRecipe(id, ['1 egg'], over);
 const forYou = Array.from({ length: 12 }, (_, i) => r(`p${i}`));
@@ -83,17 +83,10 @@ describe('home feed: everything', () => {
     assert.equal(all.length, forYou.length);
   });
   it('filters the cards and the grid, the planned dinner included', () => {
-    const pasta = r('pasta', { cuisine: 'italian' });
-    const feed = homeFeed({ ...base, mode: 'all', tonight: r('planned'), forYou: [...forYou, pasta], filters: { cuisine: 'italian' } });
-    assert.deepEqual(ids(feed.heroes.map((h) => h.recipe)), ['pasta']);
-    assert.equal(feed.grid.length, 0);
-  });
-  it('ignores a meal or difficulty filter left over from before (Home has only Time and Cuisine)', () => {
-    const stale = { meal: 'lunch', difficulty: 'hard' } as unknown as HomeFilters;
     const lunch = r('lunch', { mealTypes: ['lunch'] });
-    const feed = homeFeed({ ...base, mode: 'all', forYou: [...forYou, lunch], filters: stale });
-    assert.deepEqual(feed, homeFeed({ ...base, mode: 'all', forYou: [...forYou, lunch] }));
-    assert.equal(hasHomeFilters(stale), false);
+    const feed = homeFeed({ ...base, mode: 'all', tonight: r('planned'), forYou: [...forYou, lunch], filters: { meal: 'lunch' } });
+    assert.deepEqual(ids(feed.heroes.map((h) => h.recipe)), ['lunch']);
+    assert.equal(feed.grid.length, 0);
   });
   it('knows when a filter is on', () => {
     assert.equal(hasHomeFilters(NO_HOME_FILTERS), false);

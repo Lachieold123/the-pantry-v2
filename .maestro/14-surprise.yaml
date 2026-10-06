@@ -1,4 +1,4 @@
-# Surprise me: the deck, settings and their pickers, tap the
+# Surprise me (v1 called it the spinner): the deck, settings and their pickers, tap the
 # card to spin, spin again, Why this, how it works, plan it, cook this.
 appId: host.exp.Exponent
 ---
@@ -7,11 +7,11 @@ appId: host.exp.Exponent
 - openLink: ${METRO_URL}
 - runFlow: subflows/_setup_skip_welcome.yaml
 
-# From the You page (the avatar): Surprise me
+# From the side menu's Surprise me
 - tapOn:
-    id: "header-avatar"
+    id: "header-menu"
 - tapOn:
-    id: "you-surprise"
+    id: "menu-surprise"
 - assertVisible:
     id: "surprise-card"
 - assertVisible: "Tonight’s dinner"
@@ -94,7 +94,7 @@ appId: host.exp.Exponent
 - tapOn:
     id: "surprise-how-close"
 
-# Plan it opens the plan sheet for the pick, and comes back to Surprise me
+# Plan it opens the plan sheet for the pick, and comes back to the spinner
 - scrollUntilVisible:
     element:
       id: "surprise-plan"

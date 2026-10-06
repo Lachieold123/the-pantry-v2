@@ -7,6 +7,7 @@ import { useTheme } from '@/ui/theme/ThemeProvider';
 import type { ColourTokens } from '@/ui/tokens/colour';
 
 const ICONS = {
+  menu: 'menu-outline',
   inbox: 'paper-plane-outline',
   feed: 'home-outline',
   browse: 'search-outline',
@@ -43,6 +44,7 @@ const ICONS = {
   hand: 'hand-left-outline',
   notifications: 'notifications-outline',
   collections: 'albums-outline',
+  surprise: 'sync-outline',
   settings: 'settings-outline',
   camera: 'camera-outline',
   receipt: 'receipt-outline',

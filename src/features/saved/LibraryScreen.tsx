@@ -62,7 +62,7 @@ export function LibraryScreen({ initialTab }: Props) {
   return (
     <Screen testID="library-screen">
       <View>
-        <LibraryHead kicker="You" title="Library" count={counts[tab]} unit={UNIT[tab]} />
+        <LibraryHead kicker="Your kitchen" title="Library" count={counts[tab]} unit={UNIT[tab]} />
         <LibraryTabs value={tab} onChange={setTab} />
       </View>
       <Body />

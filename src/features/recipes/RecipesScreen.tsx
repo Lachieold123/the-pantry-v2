@@ -28,12 +28,14 @@ import { useTheme } from '@/ui/theme/ThemeProvider';
 import { RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 import { BrowseSections } from './BrowseSections';
 import { useRecipeResults } from './useRecipeResults';
+import { useAllowance } from '@/store/pro';
 
 const image = (id: string) => RECIPE_IMAGES[id];
 const RowGap = () => <View style={{ height: SPACE.sm }} />;
 
 export function RecipesScreen({ focusSearch = false }: { focusSearch?: boolean }) {
   const router = useRouter();
+  const allowed = useAllowance();
   const insets = useSafeAreaInsets();
   const { colours } = useTheme();
   const styles = useStyles();
@@ -61,8 +63,21 @@ export function RecipesScreen({ focusSearch = false }: { focusSearch?: boolean }
 
   const header = (
     <View style={styles.header}>
-      {/* No "+" here: adding your own recipe lives in Library → My recipes, so Browse is only for finding. */}
-      <PushedHeader kicker="Browse" title="Discover" />
+      <PushedHeader
+        kicker="Browse"
+        title="Discover"
+        action={
+          // Your own recipe sits beside everyone else's.
+          <IconButton
+            icon="add"
+            shape="chip"
+            size={18}
+            label="Add a recipe"
+            onPress={() => allowed('my-recipes') && router.push('/my-recipe/edit')}
+            testID="browse-add-recipe"
+          />
+        }
+      />
       <View style={styles.searchRow}>
         <SearchField
           value={query}

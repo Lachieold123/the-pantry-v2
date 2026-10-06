@@ -39,7 +39,7 @@ export function JoinScreen({ code }: { code: string }) {
       {current ? (
         <View style={{ gap: SPACE.md }}>
           <Text variant="body" colour="inkSoft">
-            {`This phone already shares ${current.name}. To join another, leave it first: tap your picture at the top, then Household.`}
+            {`This phone already shares ${current.name}. To join another, leave it first in Settings → Household.`}
           </Text>
           <Button label="Open Household" kind="primary" block onPress={() => router.replace('/household')} testID="join-open-household" />
         </View>

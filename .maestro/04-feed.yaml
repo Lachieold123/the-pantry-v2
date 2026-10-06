@@ -1,4 +1,4 @@
-# Home: the "What I have / Everything" switch, Time and Cuisine chips, five cards to swipe,
+# Home: the "What I have / Everything" switch, filter chips, five cards to swipe,
 # the grid; a filter narrows both and "Clear filters" brings them back; tonight's
 # planned dinner leads; with something in the cupboard, "What I have" shows it.
 appId: host.exp.Exponent
@@ -37,19 +37,15 @@ appId: host.exp.Exponent
     direction: LEFT
 - takeScreenshot: home-second-card
 
-# Home has only Time and Cuisine; Meal and Difficulty live in Browse's filters.
-- assertNotVisible:
+# A filter: Meal → Breakfast narrows the cards and the grid
+- tapOn:
     id: "home-filter-meal"
-- assertNotVisible:
-    id: "home-filter-difficulty"
-# A filter: Time → ≤ 30 min narrows the cards and the grid
 - tapOn:
-    id: "home-filter-time"
+    id: "home-filter-option-breakfast"
+- assertVisible: "Breakfast"
+- takeScreenshot: home-breakfast
 - tapOn:
-    id: "home-filter-option-under-30"
-- takeScreenshot: home-under-30
-- tapOn:
-    id: "home-filter-time"
+    id: "home-filter-meal"
 - tapOn:
     id: "home-filter-option-any"
 

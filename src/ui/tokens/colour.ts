@@ -10,7 +10,7 @@ export type ColourTokens = {
   bgFade: string;
   /** Inputs, chips, tiles, sunken cards, pressed rows. */
   bgSoft: string;
-  /** Raised cards, round buttons over photos. */
+  /** Raised cards, the drawer panel, round buttons over photos. */
   card: string;
   /** Every 1pt border, divider and progress track. */
   border: string;
@@ -153,6 +153,7 @@ export const FIXED = {
   photoDisc: 'rgba(255,255,255,0.92)',
   photoDiscInk: '#1A1A1A',
   scrim: 'rgba(0,0,0,0.5)',
+  scrimDrawer: 'rgba(0,0,0,0.42)',
   scrimHidden: 'rgba(0,0,0,0.4)',
   toastBg: '#F7F3EA',
   toastInk: '#0A0A0A',

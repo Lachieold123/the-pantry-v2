@@ -1,35 +1,52 @@
-// Two switches for trying Pro before buying works (D-038): preview the free
-// limits, or pretend to be Pro. Development and preview (TestFlight) builds
-// only, so testers can try both sides; a store build shows nothing here.
-// Where you stand with Pro, and the way to it, is on the You page now.
+// Settings' Pro section (D-038): where you stand, and the way to Pro or to
+// managing it. Development builds also get two switches to try the free
+// limits and Pro before buying works (they never appear in a store build).
+// Preview builds (TestFlight) get them too, so testers can try both sides.
 import { INTERNAL_BUILD } from '@/lib/build';
-import { usePro } from '@/store/pro';
+import { PURCHASES_CONNECTED } from '@/lib/purchases';
+import { useIsPro, useOpenPaywall, usePro } from '@/store/pro';
+import { ListRow } from '@/ui/primitives/ListRow';
 import { SettingsSection, SwitchRow } from './SettingsParts';
 
 export function ProSection() {
+  const pro = useIsPro();
+  const entitlement = usePro((s) => s.entitlement);
   const previewLimits = usePro((s) => s.previewLimits);
   const pretendPro = usePro((s) => s.pretendPro);
   const setPreviewLimits = usePro((s) => s.setPreviewLimits);
   const setPretendPro = usePro((s) => s.setPretendPro);
-  if (!INTERNAL_BUILD) return null;
+  const openPaywall = useOpenPaywall();
+  const status = pro ? (entitlement.inTrial ? 'Free trial' : 'Pro') : PURCHASES_CONNECTED ? 'Free' : 'Free, nothing limited yet';
   return (
-    <SettingsSection label="Testing Pro">
-      <SwitchRow
-        icon="eye"
-        label="Preview the free limits"
-        detail="Testing builds only: limits apply as if Pro were on sale"
-        value={previewLimits}
-        onChange={setPreviewLimits}
-        testID="settings-preview-limits"
-      />
-      <SwitchRow
+    <SettingsSection label="The Pantry Pro">
+      <ListRow
         icon="sparkles"
-        label="Pretend to be Pro"
-        detail="Testing builds only"
-        value={pretendPro}
-        onChange={setPretendPro}
-        testID="settings-pretend-pro"
+        title="Pro"
+        detail="Plan further ahead and keep more"
+        value={status}
+        onPress={() => openPaywall()}
+        testID="settings-pro"
       />
+      {INTERNAL_BUILD ? (
+        <>
+          <SwitchRow
+            icon="eye"
+            label="Preview the free limits"
+            detail="Testing builds only: limits apply as if Pro were on sale"
+            value={previewLimits}
+            onChange={setPreviewLimits}
+            testID="settings-preview-limits"
+          />
+          <SwitchRow
+            icon="sparkles"
+            label="Pretend to be Pro"
+            detail="Testing builds only"
+            value={pretendPro}
+            onChange={setPretendPro}
+            testID="settings-pretend-pro"
+          />
+        </>
+      ) : null}
     </SettingsSection>
   );
 }
