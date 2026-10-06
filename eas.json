@@ -7,7 +7,6 @@
     "development": {
       "developmentClient": true,
       "distribution": "internal",
-      "channel": "development",
       "env": {
         "EXPO_PUBLIC_SHOW_DRAFT_RECIPES": "1"
       }
@@ -20,14 +19,12 @@
     },
     "preview": {
       "distribution": "internal",
-      "channel": "preview",
       "env": {
         "EXPO_PUBLIC_SHOW_DRAFT_RECIPES": "1"
       }
     },
     "production": {
-      "autoIncrement": true,
-      "channel": "production"
+      "autoIncrement": true
     }
   },
   "submit": {
