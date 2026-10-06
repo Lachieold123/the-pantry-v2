@@ -15,12 +15,14 @@
     "catalogue:convert": "tsx scripts/convert-old-recipes.mts",
     "catalogue:check-ingredients": "tsx scripts/check-ingredient-coverage.mts",
     "export:web": "expo export --platform web",
-    "format:check": "prettier --check \"src/**/*.{ts,tsx}\" \"scripts/**/*.mts\""
+    "format:check": "prettier --check \"src/**/*.{ts,tsx}\" \"scripts/**/*.mts\" \"e2e/**/*.{ts,mjs}\"",
+    "test:web": "playwright test -c e2e/web/playwright.config.ts"
   },
   "engines": {
     "node": ">=22"
   },
   "devDependencies": {
+    "@playwright/test": "1.56.0",
     "@testing-library/react-native": "^14.0.1",
     "@types/jest": "^30.0.0",
     "@types/node": ">=22",

@@ -12,3 +12,7 @@ android/
 expo-env.d.ts
 .expo/
 .claude/
+
+# Web journey test output (npm run test:web)
+test-results/
+e2e-report/

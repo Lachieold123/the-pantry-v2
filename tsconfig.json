@@ -14,5 +14,5 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "scripts/**/*.mts", ".expo/types/**/*.ts", "expo-env.d.ts"]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "scripts/**/*.mts", "e2e/**/*.ts", ".expo/types/**/*.ts", "expo-env.d.ts"]
 }

@@ -1,5 +1,7 @@
 # Maestro flows
 
+> Everyday journey checks now run on the web build (`npm run test:web`, `e2e/web`, D-040). Maestro is for release checks of what only an iPhone shows.
+
 End-to-end tests that tap through The Pantry the way a person would, on the iOS
 Simulator, in Expo Go. There's one flow per area of the app. Every flow starts
 from a fresh install (`clearState`), so each one stands alone and can run by

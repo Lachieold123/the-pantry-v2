@@ -86,8 +86,10 @@ export function ShoppingListView({ week, weekLabel, onPlan }: { week: ISODate; w
     />
   );
 
-  // Nothing planned yet: say how the list fills itself, but still let you jot down milk.
-  if (meals === 0 && list.extras.length === 0 && list.removedCount === 0) {
+  // Nothing planned or added yet: say how the list fills itself, but still let you jot down milk.
+  // Known ingredients you added (from a recipe or the Cupboard) sit in the aisles, so those count
+  // too; the web journey tests caught the list calling itself empty with 3 things on it.
+  if (meals === 0 && list.sections.length === 0 && list.extras.length === 0 && list.removedCount === 0) {
     return (
       <View style={{ gap: PLAN.aisleGap }}>
         <EmptyState

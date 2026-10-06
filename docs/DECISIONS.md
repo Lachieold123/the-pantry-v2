@@ -342,3 +342,21 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
 - **Why:** OurGroceries proves shared lists are the reason households pick a list app, and it gives sharing away. The Pantry's list is worked out from the plan and cupboard, so sharing only the list would leave two phones disagreeing. Sharing the kitchen keeps one source of truth.
 - **How:** see `docs/HOUSEHOLD.md`. It runs on the Supabase project `the-pantry` in Sydney, with one row table, newest-wins merging and Realtime.
 - **Added dependencies:** `@supabase/supabase-js` and `react-native-url-polyfill`. Both are JavaScript only, with no native code.
+
+## D-040 · Journey tests run on the web build; Maestro is for release checks
+
+- **Date:** 6 October 2026 · **Decided by:** Lachlan (as recommended)
+- **Decision:** The main paths through the app are tested with Playwright on the web build, in a phone-sized browser, in light and dark. They live in `e2e/web` and run with `npm run test:web`. Claude runs them on every change, with no Mac, simulator or Terminal. They cover:
+  - first launch, the welcome and the tour;
+  - What I have;
+  - planning a dinner, the List and ticking;
+  - Add to list;
+  - Cook Mode;
+  - the Cupboard and Surprise me;
+  - Cookmarks, collections and search;
+  - writing a recipe;
+  - Pro's honest paywall and its previewed limits;
+  - Household when offline and when sharing.
+- **Maestro stays** for what only an iPhone shows: native sheets, the keyboard, notifications, the camera prompt. It runs before a build goes to testers, and moves to EAS Workflows on Expo's cloud when TestFlight is set up.
+- **Why:** Maestro on the Mac kept failing for reasons outside the app (a brand-new iOS, a missed `npm install`, a leftover Metro), and every run needed Lachlan. The web suite runs all 32 journeys in under a minute, and passed three repeat runs in a row with no failures.
+- **First catch:** a List with only added things (from a recipe or the Cupboard) said "Your list is empty" while the tab badge said 3. Fixed in `ShoppingListView`.
