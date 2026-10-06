@@ -4,7 +4,7 @@
 #
 # What it does:
 #   1. checks Xcode's simulator tools and the Maestro CLI are installed
-#   2. restarts an iPhone simulator (iOS 26 preferred) so testing starts clean
+#   2. restarts an iPhone simulator (iOS 27 by default) so testing starts clean
 #   3. installs npm packages if they're missing
 #   4. starts its own Metro (port 8082, no questions asked) with Expo Go, and waits for it
 #   5. runs every flow and writes the report and screenshots to
@@ -96,18 +96,18 @@ fi
 
 say "Preparing an iPhone simulator"
 echo "Maestro $(maestro --version 2>/dev/null | tail -n 1)"
-# Which simulator: PANTRY_SIM_UDID if set, otherwise an iPhone on iOS 26, otherwise
-# the first iPhone. On 6 October 2026 Maestro's helper couldn't connect to the
-# iOS 27 simulator ("failed to bless service hub"), so iOS 26 is preferred until
-# Maestro supports 27.
+# Which simulator: PANTRY_SIM_UDID if set, otherwise an iPhone on iOS 27 (the
+# version on Lachlan's Mac; PANTRY_IOS=26 picks another), otherwise the first
+# iPhone. Maestro 2.x connects to iOS 27 once it's up to date: if it can't,
+# update it with  curl -fsSL "https://get.maestro.mobile.dev" | bash
+IOS_VERSION="${PANTRY_IOS:-27}"
 UDID="${PANTRY_SIM_UDID:-}"
 if [ -z "$UDID" ]; then
-  UDID="$(xcrun simctl list devices available | awk '/^-- iOS 26/{ok=1; next} /^--/{ok=0} ok && /iPhone/{print; exit}' | sed -E 's/.*\(([0-9A-Fa-f-]{36})\).*/\1/')"
+  UDID="$(xcrun simctl list devices available | awk -v want="-- iOS $IOS_VERSION" 'index($0, want) == 1 {ok=1; next} /^--/ {ok=0} ok && /iPhone/ {print; exit}' | sed -E 's/.*\(([0-9A-Fa-f-]{36})\).*/\1/')"
 fi
 if [ -z "$UDID" ]; then
-  UDID="$(xcrun simctl list devices available | grep -E '^[[:space:]]+iPhone' | head -n 1 | sed -E 's/.*\(([0-9A-Fa-f-]{36})\).*/\1/')"
-  echo "No iOS 26 iPhone simulator found, so using the newest one. If Maestro can't connect,"
-  echo "install the iOS 26 simulator in Xcode > Settings > Components and run this again."
+  UDID="$(xcrun simctl list devices available | grep -E '^[[:space:]]+iPhone' | tail -n 1 | sed -E 's/.*\(([0-9A-Fa-f-]{36})\).*/\1/')"
+  echo "No iOS $IOS_VERSION iPhone simulator found, so using the newest one listed."
 fi
 if [ -z "$UDID" ]; then
   echo "No iPhone simulator found. In Xcode, open Settings > Components and"
@@ -116,7 +116,7 @@ if [ -z "$UDID" ]; then
 fi
 # Start clean every time: a simulator left running can hold a stale testing
 # service, which stops Maestro's helper connecting.
-echo "Restarting simulator $UDID"
+echo "Restarting simulator $UDID ($(xcrun simctl list devices | grep "$UDID" | sed -E 's/^[[:space:]]+//; s/ \(.*//'), iOS $IOS_VERSION)"
 xcrun simctl shutdown all >/dev/null 2>&1
 xcrun simctl boot "$UDID" || finish 1
 xcrun simctl bootstatus "$UDID" -b >/dev/null 2>&1
