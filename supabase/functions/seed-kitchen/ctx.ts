@@ -14,6 +14,23 @@ export type Ctx = {
   log: Record<string, unknown>;
 };
 
+/**
+ * True when the error is the API account running out of credit. Stops paid
+ * work for the rest of this tick and for the next 30 minutes, so an empty
+ * account costs nothing and fails no recipes.
+ */
+export async function outOfCredit(ctx: Ctx, e: unknown): Promise<boolean> {
+  if (!(e instanceof Error) || e.name !== 'OutOfCredit') return false;
+  if (ctx.aiAllowed) {
+    ctx.aiAllowed = false;
+    ctx.log.out_of_credit = true;
+    await ctx.sql`
+      insert into seed.config (key, value) values ('ai_blocked_until', to_jsonb(now() + interval '30 minutes'))
+      on conflict (key) do update set value = excluded.value`;
+  }
+  return true;
+}
+
 export function timeLeft(ctx: Ctx): number {
   return ctx.deadline - Date.now();
 }

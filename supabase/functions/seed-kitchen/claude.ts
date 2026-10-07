@@ -18,6 +18,10 @@ type Usage = {
 };
 
 export class ClaudeError extends Error {}
+/** The account is out of credit (or its spend limit is hit). Nothing should be marked failed for this. */
+export class OutOfCredit extends Error {
+  override name = 'OutOfCredit';
+}
 
 export async function askTool<T>(
   sql: Sql,
@@ -60,6 +64,9 @@ export async function askTool<T>(
       continue;
     }
     const json = await res.json();
+    if (res.status === 400 && /credit balance|spend limit|billing/i.test(JSON.stringify(json))) {
+      throw new OutOfCredit(JSON.stringify(json).slice(0, 300));
+    }
     if (!res.ok) throw new ClaudeError(`HTTP ${res.status}: ${JSON.stringify(json).slice(0, 400)}`);
 
     await recordUsage(sql, { purpose: opts.purpose, model: opts.model, ...costOf(cfg, opts.model, json.usage as Usage) });

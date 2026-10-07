@@ -79,7 +79,7 @@ async function publishOne(ctx: Ctx, cookId: string, dish: Ready, extras: Awaited
           ${d.mealTypes}, ${built.recipe.diets as string[]}, ${d.difficulty}, ${Math.max(d.prepMinutes + d.cookMinutes, 1)},
           ${tx.json(asJson(built.recipe))}, ${d.caption.slice(0, 600)},
           ${photo?.path ?? null}, ${photo?.credit ?? null}, ${photo ? 'pexels' : null}, ${photo?.id ?? null},
-          ${photo?.width ?? null}, ${photo?.height ?? null}, 'auto-checked', ${built.dietsPending})`;
+          ${photo?.width ?? null}, ${photo?.height ?? null}, 'auto-checked', ${built.dietsPending || built.unmatched.length > 0})`;
       await tx`update seed.dishes set stage = 'published', published_id = ${dish.id}, updated_at = now() where id = ${dish.id}`;
     });
     count(ctx, 'published');
@@ -140,8 +140,8 @@ export async function follows(ctx: Ctx): Promise<void> {
 
 export async function verifyExtras(ctx: Ctx, ids?: string[]): Promise<void> {
   const { sql, cfg } = ctx;
-  const rows = await sql<{ id: string; kind: string; name: string; aliases: string[]; alias_of: string | null; groups: string[] }[]>`
-    select id, kind, name, aliases, alias_of, groups from public.ingredient_extras
+  const rows = await sql<{ id: string; kind: string; name: string; aliases: string[]; alias_of: string | null; groups: string[]; review_note: string | null }[]>`
+    select id, kind, name, aliases, alias_of, groups, review_note from public.ingredient_extras
     where status = 'proposed' ${ids ? sql`and id = any(${ids}::text[])` : sql``}
     order by created_at limit 20`;
   if (!rows.length || (!ids && timeLeft(ctx) < 30_000)) return;
@@ -158,6 +158,13 @@ export async function verifyExtras(ctx: Ctx, ids?: string[]): Promise<void> {
     for (const r of rows) {
       const a = answers.get(r.id);
       if (!a) continue;
+      if (r.review_note === 'auto') {
+        // Declared by the checker, not the writer: there is no first answer to compare, so this one stands.
+        await sql`update public.ingredient_extras set groups = ${a.groups ?? []}, status = 'verified',
+          review_note = 'auto: groups from one check' where id = ${r.id}`;
+        count(ctx, 'extras_verified');
+        continue;
+      }
       const same = r.kind === 'alias'
         ? a.aliasIsRight === true
         : [...(a.groups ?? [])].sort().join(',') === [...r.groups].sort().join(',');
@@ -166,6 +173,7 @@ export async function verifyExtras(ctx: Ctx, ids?: string[]): Promise<void> {
       count(ctx, same ? 'extras_verified' : 'extras_need_review');
     }
   } catch (e) {
+    if (e instanceof Error && e.name === 'OutOfCredit') throw e;
     note(ctx, 'verify_errors', String(e));
   }
 }
@@ -180,7 +188,7 @@ export async function refreshDiets(ctx: Ctx): Promise<void> {
   const extras = await loadExtras(ctx);
   for (const r of rows) {
     const built = assemble(r.id, r.draft, extras);
-    if (built.dietsPending || built.problems.length) continue;
+    if (built.dietsPending || built.unmatched.length || built.problems.length) continue;
     await sql`
       update public.published_recipes set diets = ${built.recipe.diets as string[]}, diets_pending = false,
         recipe = jsonb_set(recipe, '{diets}', ${sql.json(asJson(built.recipe.diets))})

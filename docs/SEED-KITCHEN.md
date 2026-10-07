@@ -55,7 +55,19 @@ Settings in `seed.config`:
 
 ## What it costs
 
-On Haiku 4.5 it's about 2 US cents a recipe, including the tester and photo checks. Retries add to that. Avatars were made once, with Higgsfield.
+Everything runs on Haiku 4.5. A finished recipe costs about 1.7 US cents: writing it, the tester pass, any ingredient check, and the photo check. Retries are included. The photo check sends Pexels' 280 × 200 thumbnails, about a tenth of the tokens the larger previews cost.
+
+- **The pilot** (5 cooks, 55 recipes) cost about US$2.30, including the early runs while it was being tuned.
+- **Budget:** at launch the account had US$15 of credit, so both caps are set to US$14. That gives roughly 650 more recipes, spread round-robin so all 100 cooks fill evenly: about 6 or 7 each.
+- **The full backlog** (2,545 recipes across all cooks) needs about US$43 more.
+- **After the backlog**, the cooks' rhythm (105 posts a week across the kitchen) costs about US$8 a month.
+- **Running out of credit** marks nothing as failed. The function notices the API's credit error, stops paid work for 30 minutes, and tries again. Top up the account and it carries on by itself. Raise `monthly_cap_usd` and `first_run_cap_usd` to match.
+
+### Cheaper by design
+
+- When the writer uses an ingredient the database doesn't know ("spam", "banana leaves"), it isn't asked to rewrite the recipe. The checker declares the ingredient, and one cheap check gives it its groups. These rows are marked `auto: groups from one check`. A rewrite costs about ten times as much.
+- An alias pointing at an id the database doesn't have is treated the same way: as a new ingredient.
+- Menus are planned a few dishes at a time, only just ahead of the writing.
 
 ## Not done yet (P9)
 

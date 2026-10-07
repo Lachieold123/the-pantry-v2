@@ -58,9 +58,10 @@ Deno.test('a native name declared as an alias matches its database item, and die
   assert(!(out.recipe.diets as string[]).includes('vegetarian'), 'pork belly is not vegetarian');
 });
 
-Deno.test('an undeclared native name is sent back', () => {
+Deno.test('an undeclared name is reported as unmatched, and no diet is claimed for it', () => {
   const out = assemble('0b0b0b0b-0000-4000-8000-000000000000', draft, []);
-  assert(out.problems.some((p) => p.includes('dahi')));
+  assertEquals(out.unmatched, ['dahi']);
+  assertEquals(out.recipe.diets, []);
 });
 
 Deno.test('a new ingredient whose groups are unconfirmed claims no diet', () => {

@@ -4,7 +4,7 @@
 // means no photo: the app shows the cuisine tile, as it does today (D-036).
 
 import { askTool } from './claude.ts';
-import { type Ctx, count, note, timeLeft } from './ctx.ts';
+import { type Ctx, count, note, outOfCredit, timeLeft } from './ctx.ts';
 import { asJson, cookFilter, recordUsage } from './db.ts';
 import { PHOTO_GUIDE, photoTool } from './prompts.ts';
 import type { Draft } from './recipe.ts';
@@ -17,7 +17,7 @@ type PexelsPhoto = {
   photographer: string;
   photographer_url: string;
   alt: string;
-  src: { original: string; medium: string };
+  src: { original: string; medium: string; tiny: string };
 };
 
 async function pexelsBudget(ctx: Ctx): Promise<number> {
@@ -78,7 +78,7 @@ async function pick(ctx: Ctx, draft: Draft, candidates: PexelsPhoto[]): Promise<
     { type: 'text' as const, text: `Dish: ${draft.title}\n${draft.summary}\nLooks like: ${draft.photoDescription}` },
     ...candidates.flatMap((p, i) => [
       { type: 'text' as const, text: `Photo ${i}: ${p.alt}` },
-      { type: 'image' as const, source: { type: 'url' as const, url: p.src.medium } },
+      { type: 'image' as const, source: { type: 'url' as const, url: p.src.tiny } },
     ]),
   ];
   const out = await askTool<{ choice: number; sameDish: boolean; mainIngredientsVisible?: string[] }>(ctx.sql, ctx.cfg, ctx.anthropicKey!, {
@@ -138,6 +138,7 @@ export async function photograph(ctx: Ctx): Promise<void> {
       count(ctx, chosen ? 'photographed' : 'no_photo');
     } catch (e) {
       await sql`update seed.dishes set locked_until = null where id = ${dish.id}`;
+      if (await outOfCredit(ctx, e)) return;
       note(ctx, 'photo_errors', String(e));
     }
   }

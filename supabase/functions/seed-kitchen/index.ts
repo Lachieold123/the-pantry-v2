@@ -5,7 +5,7 @@
 //
 // A tick can also be asked for specific stages: POST {"stages": ["write", "check"]}.
 
-import { type Ctx, timeLeft } from './ctx.ts';
+import { type Ctx, outOfCredit, timeLeft } from './ctx.ts';
 import { asJson, checkSecret, connect, inFirstRun, loadConfig, releaseLock, secret, spentThisMonth, takeLock } from './db.ts';
 import { checkRecipes, planMenus, writeRecipes } from './kitchen.ts';
 import { avatars, photograph } from './photos.ts';
@@ -41,6 +41,7 @@ Deno.serve(async (req) => {
     const anthropicKey = await secret(sql, 'ANTHROPIC_API_KEY');
     const pexelsKey = await secret(sql, 'PEXELS_API_KEY');
     const spent = await spentThisMonth(sql);
+    const blockedUntil = cfg.ai_blocked_until ? Date.parse(cfg.ai_blocked_until) : 0;
     const cap = (await inFirstRun(sql)) ? cfg.first_run_cap_usd : cfg.monthly_cap_usd;
     const ctx: Ctx = {
       sql,
@@ -48,12 +49,13 @@ Deno.serve(async (req) => {
       anthropicKey,
       pexelsKey,
       deadline: started + TICK_MS,
-      aiAllowed: !cfg.paused && spent < cap && Boolean(anthropicKey),
+      aiAllowed: !cfg.paused && spent < cap && Boolean(anthropicKey) && blockedUntil < Date.now(),
       log: { spent_usd: Math.round(spent * 100) / 100, cap_usd: cap },
     };
     if (cfg.paused) ctx.log.paused = true;
     if (!anthropicKey) ctx.log.missing = 'ANTHROPIC_API_KEY';
     if (spent >= cap) ctx.log.over_cap = true;
+    if (blockedUntil >= Date.now()) ctx.log.out_of_credit_until = cfg.ai_blocked_until;
 
     const wanted = body.stages?.length ? body.stages : Object.keys(STAGES);
     for (const name of wanted) {
@@ -64,6 +66,7 @@ Deno.serve(async (req) => {
       try {
         await stage(ctx);
       } catch (e) {
+        if (await outOfCredit(ctx, e)) continue;
         ctx.log[`${name}_crashed`] = String(e).slice(0, 300);
       }
     }

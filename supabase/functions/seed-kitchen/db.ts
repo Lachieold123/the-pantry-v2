@@ -28,6 +28,8 @@ export type Config = {
   only_cooks: string[];
   /** The first batch is released over this many days, at real times; 0 releases it at once. */
   backlog_spread_days: number;
+  /** Set when the API account ran out of credit; paid work waits until then. */
+  ai_blocked_until?: string;
 };
 
 const DEFAULTS: Config = {

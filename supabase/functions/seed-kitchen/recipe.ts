@@ -93,6 +93,8 @@ export type Assembled = {
   problems: string[];
   /** True while a line uses a new ingredient whose groups aren't confirmed: no diet is claimed. */
   dietsPending: boolean;
+  /** Ingredients no name in the database matched. The checker declares these rather than send the recipe back. */
+  unmatched: string[];
 };
 
 const FAHRENHEIT = /°\s?F\b|\bfahrenheit\b/i;
@@ -142,14 +144,13 @@ export function normaliseDraft(input: unknown): { draft?: Draft; problems: strin
 export function assemble(id: string, draft: Draft, extras: Extra[]): Assembled {
   const index = buildIndex(extras);
   const problems: string[] = [];
+  const unmatched: string[] = [];
 
   const ingredientGroups = draft.ingredientGroups.map((g) => ({
     ...(g.title ? { title: g.title } : {}),
     items: g.lines.map((raw) => {
       const { line, issues } = parseIngredientLine(raw, index.match) as { line: Line; issues: string[] };
-      if (issues.includes('no-ingredient-match') && !line.optional) {
-        problems.push(`"${raw}": the ingredient isn't in the database or newIngredients. Use a database name, or declare it.`);
-      }
+      if (issues.includes('no-ingredient-match') && !line.optional) unmatched.push(line.item);
       return line;
     }),
   }));
@@ -192,12 +193,13 @@ export function assemble(id: string, draft: Draft, extras: Extra[]): Assembled {
   // Same rule as the app: diets come from what's in the list, never from the title (D-006).
   recipe.diets = dietsPending ? [] : deriveDiets(lines, index.byId);
 
-  return { recipe, problems, dietsPending };
+  return { recipe, problems, dietsPending, unmatched };
 }
 
 /** Checks and normalises the extras a draft declares, before they're stored. */
 export function cleanNewIngredients(list: NewIngredient[], aisles: readonly string[], groups: readonly string[]) {
-  const ok: Omit<Extra, 'status'>[] = [];
+  /** `auto`: the writer's groups can't be trusted (or there are none), so the checker's answer decides them. */
+  const ok: (Omit<Extra, 'status'> & { auto?: boolean })[] = [];
   const problems: string[] = [];
   const known = buildIndex([]);
   for (const raw of list) {
@@ -212,15 +214,13 @@ export function cleanNewIngredients(list: NewIngredient[], aisles: readonly stri
     const id = slugify(n.name);
     // Nothing to add when the database already knows the name (it has gochugaru and jeera, for instance).
     if (!id || known.match(n.name) !== undefined) continue;
-    if (n.kind === 'alias') {
-      if (!n.aliasOf || !BASE_IDS.has(n.aliasOf)) {
-        problems.push(`"${n.name}" is declared an alias of "${n.aliasOf}", which isn't an id in THE INGREDIENT DATABASE. Use an id from the list, or declare it kind "new" with its groups.`);
-        continue;
-      }
-      ok.push({ id, kind: 'alias', alias_of: n.aliasOf, name: n.name, aliases: n.aliases ?? [], aisle: null, groups: [] });
+    if (n.kind === 'alias' && (!n.aliasOf || !BASE_IDS.has(n.aliasOf))) {
+      // An alias of something the database doesn't have ("freekeh" → "freekeh") is really a new
+      // ingredient. Declaring it here, with the checker deciding its groups, is far cheaper than a rewrite.
+      ok.push({ id, kind: 'new', alias_of: null, name: n.name, aliases: n.aliases ?? [], aisle: 'other', groups: [], auto: true });
+    } else if (n.kind === 'alias') {
+      ok.push({ id, kind: 'alias', alias_of: n.aliasOf!, name: n.name, aliases: n.aliases ?? [], aisle: null, groups: [] });
     } else {
-      const badGroups = (n.groups ?? []).filter((g) => !groups.includes(g));
-      if (badGroups.length) problems.push(`"${n.name}" has unknown groups ${badGroups.join(', ')}`);
       ok.push({
         id,
         kind: 'new',

@@ -7,11 +7,11 @@
 import { AISLES, INGREDIENT_GROUPS } from './_domain.js';
 import { INGREDIENTS } from './_ingredients.js';
 import { askTool } from './claude.ts';
-import { type Ctx, count, inParallel, note, timeLeft } from './ctx.ts';
+import { type Ctx, count, inParallel, note, outOfCredit, timeLeft } from './ctx.ts';
 import { asJson, cookFilter } from './db.ts';
 import { verifyExtras } from './social.ts';
 import { ingredientBlocks, MENU_GUIDE, menuTool, recipeTool, REVIEW_GUIDE, reviewTool } from './prompts.ts';
-import { assemble, cleanNewIngredients, type Draft, type Extra, normaliseDraft } from './recipe.ts';
+import { assemble, cleanNewIngredients, type Draft, type Extra, normaliseDraft, slugify } from './recipe.ts';
 
 const ONGOING_BUFFER = 3;
 const MAX_ATTEMPTS = 3;
@@ -96,7 +96,7 @@ export async function planMenus(ctx: Ctx): Promise<void> {
         count(ctx, added.length ? 'planned' : 'planned_duplicate');
       }
     } catch (e) {
-      note(ctx, 'menu_errors', String(e));
+      if (!(await outOfCredit(ctx, e))) note(ctx, 'menu_errors', String(e));
     }
   });
 }
@@ -120,6 +120,13 @@ async function claim(ctx: Ctx, stage: string, limit: number): Promise<Dish[]> {
       limit ${limit}
     )
     returning id, cook_id, title, cuisine, region, meal_type, angle, attempts, feedback, draft`;
+}
+
+/** Put a dish back where it was, untouched: the problem wasn't the recipe. */
+async function release(ctx: Ctx, dish: Dish, undoAttempt: boolean): Promise<void> {
+  await ctx.sql`
+    update seed.dishes set locked_until = null ${undoAttempt ? ctx.sql`, attempts = greatest(attempts - 1, 0)` : ctx.sql``}
+    where id = ${dish.id}`;
 }
 
 async function sendBack(ctx: Ctx, dish: Dish, feedback: string): Promise<void> {
@@ -159,6 +166,7 @@ export async function writeRecipes(ctx: Ctx): Promise<void> {
         where id = ${dish.id}`;
       count(ctx, 'written');
     } catch (e) {
+      if (await outOfCredit(ctx, e)) return await release(ctx, dish, true);
       await sendBack(ctx, dish, `Writing failed: ${String(e)}`);
     }
   });
@@ -185,6 +193,7 @@ export async function checkRecipes(ctx: Ctx): Promise<void> {
     try {
       await checkOne(ctx, dish);
     } catch (e) {
+      if (await outOfCredit(ctx, e)) return await release(ctx, dish, false);
       await sendBack(ctx, dish, `Checking failed: ${String(e)}`);
     }
   });
@@ -197,20 +206,29 @@ async function checkOne(ctx: Ctx, dish: Dish): Promise<void> {
     const declared = cleanNewIngredients(draft.newIngredients ?? [], AISLES, INGREDIENT_GROUPS);
     for (const x of declared.ok) {
       await sql`
-        insert into public.ingredient_extras (id, kind, alias_of, name, aliases, aisle, groups, swap_id, swap_tip)
+        insert into public.ingredient_extras (id, kind, alias_of, name, aliases, aisle, groups, swap_id, swap_tip, review_note)
         values (${x.id}, ${x.kind}, ${x.alias_of}, ${x.name.slice(0, 60)}, ${x.aliases}, ${x.aisle}, ${x.groups},
-                ${x.swap_id ?? null}, ${x.swap_tip ?? null})
+                ${x.swap_id ?? null}, ${x.swap_tip ?? null}, ${x.auto ? 'auto' : null})
         on conflict (id) do nothing`;
     }
     // Check new names now, so a wrong alias ("grape leaves" as dolmades) is caught before it's used.
     if (declared.ok.length) await verifyExtras(ctx, declared.ok.map((x) => x.id));
-    const extras = await loadExtras(ctx);
+    let extras = await loadExtras(ctx);
     const wrong = extras.filter((e) => e.kind === 'alias' && e.status === 'needs-review' && declared.ok.some((x) => x.id === e.id));
-    const built = assemble(dish.id, draft, extras);
+    let built = assemble(dish.id, draft, extras);
+    // Ingredients the writer used without declaring ("spam", "baked beans") are
+    // declared here and their groups checked, which costs a fraction of a rewrite.
+    if (built.unmatched.length && !wrong.length && !declared.problems.length && !built.problems.length) {
+      const ids = await declareUnmatched(ctx, built.unmatched);
+      if (ids.length) await verifyExtras(ctx, ids);
+      extras = await loadExtras(ctx);
+      built = assemble(dish.id, draft, extras);
+    }
     const problems = [
       ...declared.problems,
       ...wrong.map((e) => `"${e.name}" is not the same thing as database item "${e.alias_of}". Declare it kind "new" with its groups, or use a database name.`),
       ...built.problems,
+      ...built.unmatched.map((item) => `"${item}" isn't an ingredient the app can identify. Use a database name, or declare it in newIngredients.`),
     ];
     if (problems.length) return await sendBack(ctx, dish, problems.map((p) => `- ${p}`).join('\n'));
 
@@ -223,7 +241,8 @@ async function checkOne(ctx: Ctx, dish: Dish): Promise<void> {
       if (review.verdict === 'fix') return await sendBack(ctx, dish, review.problems.map((p) => `- ${p}`).join('\n'));
     } catch (e) {
       // The review didn't happen; try again next tick rather than publish unreviewed.
-      await sql`update seed.dishes set locked_until = null where id = ${dish.id}`;
+      await release(ctx, dish, false);
+      if (await outOfCredit(ctx, e)) return;
       return note(ctx, 'review_errors', String(e));
     }
     await sql`
@@ -232,4 +251,20 @@ async function checkOne(ctx: Ctx, dish: Dish): Promise<void> {
       where id = ${dish.id}`;
     count(ctx, 'checked');
   }
+}
+
+/** Adds ingredients nobody declared as new extras; verifyExtras then gives them their groups. */
+async function declareUnmatched(ctx: Ctx, items: string[]): Promise<string[]> {
+  const ids: string[] = [];
+  for (const item of new Set(items.map((i) => i.trim().toLowerCase()))) {
+    const id = slugify(item);
+    if (!id || item.length > 60 || item.split(/\s+/).length > 5) continue;
+    await ctx.sql`
+      insert into public.ingredient_extras (id, kind, name, aisle, groups, review_note)
+      values (${id}, 'new', ${item}, 'other', '{}', 'auto')
+      on conflict (id) do nothing`;
+    ids.push(id);
+  }
+  count(ctx, 'extras_auto', ids.length);
+  return ids;
 }
