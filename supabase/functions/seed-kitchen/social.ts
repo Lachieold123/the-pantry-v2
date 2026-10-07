@@ -138,11 +138,13 @@ export async function follows(ctx: Ctx): Promise<void> {
 
 // ─── New ingredients ─────────────────────────────────────────────────────
 
-export async function verifyExtras(ctx: Ctx): Promise<void> {
+export async function verifyExtras(ctx: Ctx, ids?: string[]): Promise<void> {
   const { sql, cfg } = ctx;
   const rows = await sql<{ id: string; kind: string; name: string; aliases: string[]; alias_of: string | null; groups: string[] }[]>`
-    select id, kind, name, aliases, alias_of, groups from public.ingredient_extras where status = 'proposed' order by created_at limit 20`;
-  if (!rows.length || timeLeft(ctx) < 30_000) return;
+    select id, kind, name, aliases, alias_of, groups from public.ingredient_extras
+    where status = 'proposed' ${ids ? sql`and id = any(${ids}::text[])` : sql``}
+    order by created_at limit 20`;
+  if (!rows.length || (!ids && timeLeft(ctx) < 30_000)) return;
   // The checker doesn't see the groups first proposed, so its answer is independent.
   const list = rows.map((r) => r.kind === 'alias'
     ? `${r.id}: is "${r.name}" another name for database item "${r.alias_of}"?`

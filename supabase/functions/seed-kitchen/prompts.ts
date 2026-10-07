@@ -35,6 +35,7 @@ METHOD
 WORDS
 - summary: one sentence, at most 110 characters, saying what the dish is. No "delicious", "mouth-watering", "perfect for", "elevate", "game-changer".
 - caption: what this cook writes when they share it. 1 to 4 sentences in their own voice, with one specific, believable detail (when they cook it, who taught them, what they change). No hashtags or emoji unless their brief says they use them. No health claims, no brand names, no real people's names (family roles like "my aunty" are fine).
+  Vary how captions open: never start with "This is", and don't lean on "go-to", "lifesaver", "hero", "game changer", "secret weapon", "trick", "sings" or "honestly". Use the cook's catchphrases at most once in three captions. Captions can be short; one good sentence beats four ordinary ones.
 - notes (optional, at most 3): storage, make-ahead or a swap a cook would genuinely want.
 
 PHOTO
@@ -202,16 +203,21 @@ export const verifyTool: Tool = {
   },
 };
 
-export const PHOTO_GUIDE = `You choose a stock photo for a recipe in a cooking app. Pick a photo only if a cook would accept it as this dish: the same kind of dish, plausibly plated, the hero ingredients visible.
-Reject: a different dish, raw ingredients only, people or hands as the main subject, text, logos, watermarks, packaging, or anything unappetising.
-If none of them is right, answer -1. A missing photo is better than a wrong one.`;
+export const PHOTO_GUIDE = `You choose a stock photo for a recipe in a cooking app. A cook who has just made this recipe must look at the photo and say "yes, that's it".
+- sameDish is true only if the photo shows this specific dish with its main ingredients visible. A different dish of the same kind is false: carrot halwa is not moong dal halwa, fried chicken is not fish fingers, noodles are not squid, a beef stew is not seaweed soup, chips are not cassava fries.
+- Reject raw ingredients only, people or hands as the main subject, text, logos, watermarks, packaging, or anything unappetising.
+- Usually none of them is right, and that's fine: answer choice -1 and sameDish false. A missing photo is better than a wrong one.`;
 
 export const photoTool: Tool = {
   name: 'pick_photo',
   description: 'The number of the photo that honestly shows this dish, or -1.',
   input_schema: {
     type: 'object',
-    required: ['choice'],
-    properties: { choice: { type: 'integer', minimum: -1 }, reason: { type: 'string' } },
+    required: ['choice', 'sameDish', 'mainIngredientsVisible'],
+    properties: {
+      choice: { type: 'integer', minimum: -1 },
+      sameDish: { type: 'boolean', description: 'True only if the chosen photo is this specific dish.' },
+      mainIngredientsVisible: { type: 'array', items: { type: 'string' }, description: 'The recipe’s main ingredients you can actually see in the chosen photo.' },
+    },
   },
 };

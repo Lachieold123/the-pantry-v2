@@ -9,6 +9,7 @@ import { INGREDIENTS } from './_ingredients.js';
 import { askTool } from './claude.ts';
 import { type Ctx, count, inParallel, note, timeLeft } from './ctx.ts';
 import { asJson, cookFilter } from './db.ts';
+import { verifyExtras } from './social.ts';
 import { ingredientBlocks, MENU_GUIDE, menuTool, recipeTool, REVIEW_GUIDE, reviewTool } from './prompts.ts';
 import { assemble, cleanNewIngredients, type Draft, type Extra, normaliseDraft } from './recipe.ts';
 
@@ -201,8 +202,16 @@ async function checkOne(ctx: Ctx, dish: Dish): Promise<void> {
                 ${x.swap_id ?? null}, ${x.swap_tip ?? null})
         on conflict (id) do nothing`;
     }
-    const built = assemble(dish.id, draft, await loadExtras(ctx));
-    const problems = [...declared.problems, ...built.problems];
+    // Check new names now, so a wrong alias ("grape leaves" as dolmades) is caught before it's used.
+    if (declared.ok.length) await verifyExtras(ctx, declared.ok.map((x) => x.id));
+    const extras = await loadExtras(ctx);
+    const wrong = extras.filter((e) => e.kind === 'alias' && e.status === 'needs-review' && declared.ok.some((x) => x.id === e.id));
+    const built = assemble(dish.id, draft, extras);
+    const problems = [
+      ...declared.problems,
+      ...wrong.map((e) => `"${e.name}" is not the same thing as database item "${e.alias_of}". Declare it kind "new" with its groups, or use a database name.`),
+      ...built.problems,
+    ];
     if (problems.length) return await sendBack(ctx, dish, problems.map((p) => `- ${p}`).join('\n'));
 
     try {

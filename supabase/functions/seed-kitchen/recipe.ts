@@ -71,12 +71,16 @@ export function slugify(text: string): string {
 export function buildIndex(extras: Extra[]) {
   const defs = (INGREDIENTS as Def[]).map((d) => ({ ...d, aliases: [...d.aliases] }));
   const byId = new Map(defs.map((d) => [d.id, d]));
+  // "leaves" singularises to "leave", not "leaf", so give leafy names both forms.
+  const withLeaves = (names: string[]) =>
+    names.flatMap((n) => [n, ...(/\bleaf\b/.test(n) ? [n.replace(/\bleaf\b/g, 'leaves')] : []), ...(/\bleaves\b/.test(n) ? [n.replace(/\bleaves\b/g, 'leaf')] : [])]);
   for (const e of extras) {
-    if (e.status === 'rejected') continue;
+    // A rejected item, or an alias the checker says is a different thing, never matches.
+    if (e.status === 'rejected' || (e.kind === 'alias' && e.status === 'needs-review')) continue;
     if (e.kind === 'alias') {
-      byId.get(e.alias_of ?? '')?.aliases.push(e.name.toLowerCase(), ...e.aliases.map((a) => a.toLowerCase()));
+      byId.get(e.alias_of ?? '')?.aliases.push(...withLeaves([e.name, ...e.aliases].map((a) => a.toLowerCase())));
     } else if (!byId.has(e.id)) {
-      const def = { id: e.id, name: e.name, aisle: e.aisle ?? 'other', aliases: e.aliases.map((a) => a.toLowerCase()), groups: e.groups };
+      const def = { id: e.id, name: e.name, aisle: e.aisle ?? 'other', aliases: withLeaves([e.name, ...e.aliases].map((a) => a.toLowerCase())), groups: e.groups };
       defs.push(def);
       byId.set(e.id, def);
     }

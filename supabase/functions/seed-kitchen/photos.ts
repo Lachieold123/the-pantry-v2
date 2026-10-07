@@ -81,11 +81,12 @@ async function pick(ctx: Ctx, draft: Draft, candidates: PexelsPhoto[]): Promise<
       { type: 'image' as const, source: { type: 'url' as const, url: p.src.medium } },
     ]),
   ];
-  const out = await askTool<{ choice: number }>(ctx.sql, ctx.cfg, ctx.anthropicKey!, {
-    purpose: 'photo', model: ctx.cfg.models.checker, maxTokens: 300, tool: photoTool,
+  const out = await askTool<{ choice: number; sameDish: boolean; mainIngredientsVisible?: string[] }>(ctx.sql, ctx.cfg, ctx.anthropicKey!, {
+    purpose: 'photo', model: ctx.cfg.models.checker, maxTokens: 400, tool: photoTool,
     system: [{ type: 'text', text: PHOTO_GUIDE }], content,
   });
-  return candidates[out.choice];
+  // Only a confident "same dish" with something of the recipe visible counts.
+  return out.sameDish === true && (out.mainIngredientsVisible?.length ?? 0) > 0 ? candidates[out.choice] : undefined;
 }
 
 export async function photograph(ctx: Ctx): Promise<void> {
