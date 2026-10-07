@@ -2,7 +2,7 @@
 // "What I have / Everything" switch with search beside it (D-034), then Meal,
 // Time, Cuisine and Difficulty; then five big cards to swipe through and a
 // two-column grid. In "What I have" the grid is followed by "Nearly there".
-// Each card says why it's there (domain/suggestions/home.ts).
+// Each card says why it's there. The order comes from the ranking (docs/HOME-RANKING.md).
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useState } from 'react';
 import { View } from 'react-native';
@@ -11,15 +11,23 @@ import { CUISINE_LABELS, DIFFICULTY_LABELS, MEAL_TYPE_LABELS, TIME_FILTER_LABELS
 import type { TimeFilter } from '@/domain/recipes/search';
 import { CUISINES, DIFFICULTIES } from '@/domain/recipes/types';
 import { needLine } from '@/domain/cupboard/cookable';
-import { defaultHomeMode, hasHomeFilters, homeFeed, NO_HOME_FILTERS, type HomeFilters, type HomeMode } from '@/domain/suggestions/home';
+import {
+  defaultHomeMode,
+  HERO_COUNT,
+  hasHomeFilters,
+  homeFeed,
+  NO_HOME_FILTERS,
+  type HomeFilters,
+  type HomeMode,
+} from '@/domain/suggestions/home';
 import { toISODate, tonightsDinner } from '@/domain/plan/week';
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { ingredientName, useCookableNow } from '@/store/cookable';
 import { useWelcomeBack } from '@/store/oldAppImport';
 import { usePlan } from '@/store/plan';
-import { useAllRecipes, useRecipeLookup } from '@/store/recipeBook';
+import { useRecipeLookup } from '@/store/recipeBook';
 import { useBookmarks } from '@/store/saved';
-import { useForYou } from '@/store/suggestions';
+import { useHomeRanking } from '@/store/suggestions';
 import { DropdownChips, type Dropdown } from '@/ui/patterns/DropdownChips';
 import { RecipeGrid } from '@/ui/patterns/RecipeGrid';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
@@ -45,10 +53,9 @@ export function FeedScreen() {
   const entries = usePlan((s) => s.entries);
   const welcome = useWelcomeBack((s) => s.message);
   const dismissWelcome = useWelcomeBack((s) => s.dismiss);
-  const all = useAllRecipes();
-  // The whole ranked list, so a filter like "Breakfast" still has plenty to show.
-  const forYou = useForYou(all.length);
   const cook = useCookableNow();
+  // Ranked with the filters already applied, so variety holds in whatever is left to show.
+  const ranking = useHomeRanking(filters, HERO_COUNT + HOME.gridCount);
   const getRecipe = useRecipeLookup();
   const bookmarks = useBookmarks();
   const tonight = tonightsDinner(entries, toISODate(new Date()));
@@ -62,11 +69,12 @@ export function FeedScreen() {
   const { heroes, grid, nearly, readyCount } = homeFeed({
     mode,
     tonight: tonight ? getRecipe(tonight.recipeId) : undefined,
-    ready: cook.ready.map((m) => m.recipe),
-    nearly: cook.nearly.map((m) => m.recipe),
-    forYou,
+    ready: ranking.ready,
+    nearly: ranking.nearly,
+    forYou: ranking.picks,
     filters,
     gridCount: HOME.gridCount,
+    why: ranking.reasons,
   });
   const pantry = mode === 'pantry';
   const open = (id: string) => router.push({ pathname: '/recipe/[id]', params: { id } });

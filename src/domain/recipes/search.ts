@@ -98,6 +98,15 @@ export function searchRecipes(index: readonly Indexed[], query: string): Recipe[
 
 export type TimeFilter = 'under-15' | 'under-30' | 'under-45' | 'under-60' | 'over-60';
 
+/** The most minutes each time setting allows, for ranking ("over an hour" sets no limit). */
+export const TIME_LIMIT_MINUTES: Readonly<Record<TimeFilter, number>> = {
+  'under-15': 15,
+  'under-30': 30,
+  'under-45': 45,
+  'under-60': 60,
+  'over-60': Infinity,
+};
+
 export type RecipeFilters = {
   cuisines: CuisineId[];
   diet: DietPreference;

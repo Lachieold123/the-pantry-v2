@@ -88,6 +88,27 @@ describe('home feed: everything', () => {
     assert.deepEqual(ids(feed.heroes.map((h) => h.recipe)), ['lunch']);
     assert.equal(feed.grid.length, 0);
   });
+  it('labels a pick the cupboard can make (or nearly) the same way “What I have” does', () => {
+    const feed = homeFeed({ ...base, mode: 'all', ready: [forYou[0]!], nearly: [forYou[1]!] });
+    assert.deepEqual(
+      feed.heroes.slice(0, 3).map((h) => [h.recipe.id, h.reason]),
+      [
+        ['p0', 'ready'],
+        ['p1', 'nearly'],
+        ['p2', 'pick'],
+      ],
+    );
+  });
+  it('carries the ranking’s reason onto picks only', () => {
+    const why = new Map([
+      ['p0', { text: 'In your Cookmarks' }],
+      ['planned', { text: 'Should not show' }],
+    ]);
+    const feed = homeFeed({ ...base, mode: 'all', tonight: r('planned'), why });
+    assert.equal(feed.heroes[0]?.why, undefined);
+    assert.equal(feed.heroes[1]?.why, 'In your Cookmarks');
+    assert.equal(feed.heroes[2]?.why, undefined);
+  });
   it('knows when a filter is on', () => {
     assert.equal(hasHomeFilters(NO_HOME_FILTERS), false);
     assert.equal(hasHomeFilters({ time: 'under-30' }), true);
@@ -100,5 +121,7 @@ describe('card labels', () => {
     assert.equal(heroKicker({ recipe: r('a'), reason: 'ready' }, 'Easy'), 'Ready now · Nothing to buy');
     assert.equal(heroKicker({ recipe: r('a'), reason: 'nearly' }, 'Easy', 'Need 1: feta'), 'Need 1: feta');
     assert.equal(heroKicker({ recipe: r('a'), reason: 'pick' }, 'Medium'), 'Picked for you · Medium');
+    assert.equal(heroKicker({ recipe: r('a'), reason: 'pick', why: 'Saved, not cooked yet' }, 'Medium'), 'Saved, not cooked yet');
+    assert.equal(heroKicker({ recipe: r('a'), reason: 'ready', why: 'ignored' }, 'Medium'), 'Ready now · Nothing to buy');
   });
 });

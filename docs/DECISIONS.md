@@ -388,3 +388,13 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
 - **Added dependency:** `expo-apple-authentication` (native; `ios.usesAppleSignIn` switches on the capability at the next EAS build).
 - **Waits for Lachlan:** applying the migration, and the dashboard steps in `docs/ACCOUNTS.md` (anonymous sign-ins, manual linking, Apple provider, the email templates showing the code, custom SMTP).
 - **Why:** an account only earns its place when it gives something back (a backup, a second phone, a household that survives a new phone), and asking up front costs people at the door. Apple and email codes have no password to forget.
+
+## D-044 · How Home ranks what it shows
+
+- **Date:** 7 October 2026 · **Decided by:** Claude (delegated; Lachlan asked to "fully develop the algorithm that decides what is shown on the homepage"). The open calls are listed for Lachlan in `docs/HOME-RANKING.md` §9, built with the recommended answers.
+- **Decision:** the plan and the weights are `docs/HOME-RANKING.md`.
+  - Diet, leave-outs, "not for us" and Home's four filters are hard rules. Everything else only changes the order.
+  - One explainable score per dish: fit to now (meal for the time of day, weeknight or weekend time, season), what you have, taste (chosen and learned cuisines, Cookmarks, regulars, recently opened), freshness (not cooked in the last 10 days, not already planned), quality, and a small nudge fixed for the day.
+  - "What I have" and "Everything" use the same scorer with different weights. The top of each list is re-ranked so the same cuisine or protein doesn't repeat back to back.
+  - Every card's line says why it's there, chosen from what actually scored, and is checked against the raw data in the tests.
+- **Why:** the old picks were dinner-only, said "Picked for you" on every card, and ignored the clock, the season, Cookmarks, the cooking log's "cooked again" and variety.

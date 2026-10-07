@@ -8,7 +8,7 @@
 
 import type { IngredientIndex } from '../ingredients/database';
 import type { AvoidList, DietPreference } from '../recipes/diets';
-import { NO_FILTERS, type TimeFilter } from '../recipes/search';
+import { NO_FILTERS, TIME_LIMIT_MINUTES, type TimeFilter } from '../recipes/search';
 import { totalMinutes, type CuisineId, type Recipe } from '../recipes/types';
 import { eligibleForSurprise } from './surprise';
 
@@ -35,14 +35,6 @@ export function stableJitter(seed: string, id: string): number {
   return h / 0xffffffff;
 }
 
-const LIMITS: Readonly<Record<TimeFilter, number>> = {
-  'under-15': 15,
-  'under-30': 30,
-  'under-45': 45,
-  'under-60': 60,
-  'over-60': Infinity,
-};
-
 export function forYou(input: ForYouInput): Recipe[] {
   const { taste } = input;
   const pool = eligibleForSurprise({
@@ -55,7 +47,7 @@ export function forYou(input: ForYouInput): Recipe[] {
   });
   const recent = new Set(input.recentlyCooked.slice(0, 14));
   const loved = new Set(taste.cuisines);
-  const limit = taste.weeknight ? LIMITS[taste.weeknight] : Infinity;
+  const limit = taste.weeknight ? TIME_LIMIT_MINUTES[taste.weeknight] : Infinity;
   return pool
     .map((recipe) => {
       let score = stableJitter(input.seed, recipe.id);
