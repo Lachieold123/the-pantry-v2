@@ -8,6 +8,7 @@
 import { type Ctx, outOfCredit, timeLeft } from './ctx.ts';
 import { asJson, checkSecret, connect, inFirstRun, loadConfig, releaseLock, secret, spentThisMonth, takeLock } from './db.ts';
 import { checkRecipes, planMenus, writeRecipes } from './kitchen.ts';
+import { attachAiPhotos, recheck } from './aiphotos.ts';
 import { avatars, photograph } from './photos.ts';
 import { follows, publish, refreshDiets, verifyExtras } from './social.ts';
 
@@ -20,11 +21,13 @@ const STAGES: Record<string, (ctx: Ctx) => Promise<void>> = {
   write: writeRecipes,
   check: checkRecipes,
   photo: photograph,
+  recheck,
+  aiphotos: attachAiPhotos,
   publish,
   follows,
   diets: refreshDiets,
 };
-const NEEDS_AI = new Set(['verify', 'menus', 'write', 'check', 'photo']);
+const NEEDS_AI = new Set(['verify', 'menus', 'write', 'check', 'photo', 'recheck']);
 
 Deno.serve(async (req) => {
   if (req.method !== 'POST') return new Response('method not allowed', { status: 405 });

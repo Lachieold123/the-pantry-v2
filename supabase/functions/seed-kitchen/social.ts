@@ -10,7 +10,7 @@ import { VERIFY_GUIDE, verifyTool } from './prompts.ts';
 import { assemble, type Draft, slugify } from './recipe.ts';
 
 type Due = { cook_id: string; backlog_target: number; posts_per_week: string; recipe_count: number };
-type Ready = { id: string; draft: Draft; photo: { id?: string; path?: string; credit?: string; width?: number; height?: number } };
+type Ready = { id: string; draft: Draft; photo: { id?: string; ai?: boolean; path?: string; credit?: string; width?: number; height?: number } };
 
 const DAY_MS = 86_400_000;
 
@@ -67,7 +67,9 @@ async function publishOne(ctx: Ctx, cookId: string, dish: Ready, extras: Awaited
   const [{ taken }] = await sql<{ taken: boolean }[]>`
     select exists (select 1 from public.published_recipes where cook_id = ${cookId} and slug = ${base}) as taken`;
   const slug = taken ? `${base}-${dish.id.slice(0, 4)}` : base;
-  const photo = dish.photo?.id ? dish.photo : undefined;
+  // A stock photo, or an AI-generated one already stored. Otherwise the recipe goes out without, and aiphotos.ts adds it later.
+  const photo = dish.photo?.path && (dish.photo.id || dish.photo.ai) ? dish.photo : undefined;
+  const source = photo ? (photo.ai ? 'ai' : 'pexels') : null;
   try {
     await sql.begin(async (tx) => {
       await tx`
@@ -78,7 +80,7 @@ async function publishOne(ctx: Ctx, cookId: string, dish: Ready, extras: Awaited
           ${dish.id}, ${cookId}, ${slug}, ${d.title.slice(0, 80)}, ${d.cuisine}, ${d.region?.slice(0, 40) ?? null},
           ${d.mealTypes}, ${built.recipe.diets as string[]}, ${d.difficulty}, ${Math.max(d.prepMinutes + d.cookMinutes, 1)},
           ${tx.json(asJson(built.recipe))}, ${d.caption.slice(0, 600)},
-          ${photo?.path ?? null}, ${photo?.credit ?? null}, ${photo ? 'pexels' : null}, ${photo?.id ?? null},
+          ${photo?.path ?? null}, ${photo?.credit ?? null}, ${source}, ${photo?.id ?? null},
           ${photo?.width ?? null}, ${photo?.height ?? null}, 'auto-checked', ${built.dietsPending || built.unmatched.length > 0})`;
       await tx`update seed.dishes set stage = 'published', published_id = ${dish.id}, updated_at = now() where id = ${dish.id}`;
     });

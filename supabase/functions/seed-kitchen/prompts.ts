@@ -211,6 +211,7 @@ export const verifyTool: Tool = {
 export const PHOTO_GUIDE = `You choose a stock photo for a recipe in a cooking app. A cook who has just made this recipe must look at the photo and say "yes, that's it".
 - sameDish is true only if the photo shows this specific dish with its main ingredients visible. A different dish of the same kind is false: carrot halwa is not moong dal halwa, fried chicken is not fish fingers, noodles are not squid, a beef stew is not seaweed soup, chips are not cassava fries.
 - Reject raw ingredients only, people or hands as the main subject, text, logos, watermarks, packaging, or anything unappetising.
+- Each photo comes with the photographer's description. If it names a different dish ("wonton soup" for tortellini in brodo, "churros" for koeksisters, "dal" for harira), or a different country's dish, descriptionFits is false, whatever the picture looks like. A vague description ("a delicious Asian dish") fits only if the picture clearly shows this dish.
 - Usually none of them is right, and that's fine: answer choice -1 and sameDish false. A missing photo is better than a wrong one.`;
 
 export const photoTool: Tool = {
@@ -218,10 +219,11 @@ export const photoTool: Tool = {
   description: 'The number of the photo that honestly shows this dish, or -1.',
   input_schema: {
     type: 'object',
-    required: ['choice', 'sameDish', 'mainIngredientsVisible'],
+    required: ['choice', 'sameDish', 'descriptionFits', 'mainIngredientsVisible'],
     properties: {
       choice: { type: 'integer', minimum: -1 },
       sameDish: { type: 'boolean', description: 'True only if the chosen photo is this specific dish.' },
+      descriptionFits: { type: 'boolean', description: 'True only if the chosen photo’s description does not name a different dish.' },
       mainIngredientsVisible: { type: 'array', items: { type: 'string' }, description: 'The recipe’s main ingredients you can actually see in the chosen photo.' },
     },
   },

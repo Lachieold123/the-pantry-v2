@@ -1,7 +1,9 @@
 // Photos from Pexels, copied into our own storage (parity rule 5), and avatars.
 // Pexels allows downloading and hosting with a credit; Unsplash would need hotlinking.
-// A vision check picks a photo only if it honestly shows the dish. No match
-// means no photo: the app shows the cuisine tile, as it does today (D-036).
+// A vision check picks a photo only if it honestly shows the dish, and the
+// photographer's own description doesn't name a different one. No match means
+// an AI-generated photo, labelled as such (D-029, D-044), made outside this
+// function and attached by aiphotos.ts. Until then the app shows the cuisine tile.
 
 import { askTool } from './claude.ts';
 import { type Ctx, count, note, outOfCredit, timeLeft } from './ctx.ts';
@@ -9,7 +11,7 @@ import { asJson, cookFilter, recordUsage } from './db.ts';
 import { PHOTO_GUIDE, photoTool } from './prompts.ts';
 import type { Draft } from './recipe.ts';
 
-type PexelsPhoto = {
+export type PexelsPhoto = {
   id: number;
   width: number;
   height: number;
@@ -40,7 +42,9 @@ async function searchPexels(ctx: Ctx, query: string, opts: { perPage: number; or
 async function usedPhotoIds(ctx: Ctx): Promise<Set<string>> {
   const rows = await ctx.sql<{ id: string }[]>`
     select photo_source_id as id from public.published_recipes where photo_source = 'pexels' and photo_source_id is not null
-    union select photo->>'id' from seed.dishes where photo ? 'id'`;
+    union select photo->>'id' from seed.dishes where photo ? 'id'
+    -- A photo judged wrong for one dish is never offered again.
+    union select photo->'rejected'->>'id' from seed.dishes where photo ? 'rejected'`;
   return new Set(rows.map((r) => r.id));
 }
 
@@ -70,23 +74,29 @@ function serviceKey(): string {
   return Deno.env.get('SUPABASE_SECRET_KEY') ?? Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') ?? '';
 }
 
-const sized = (p: PexelsPhoto, w: number, h?: number) =>
+export const sized = (p: PexelsPhoto, w: number, h?: number) =>
   `${p.src.original}?auto=compress&cs=tinysrgb&w=${w}${h ? `&h=${h}&fit=crop` : ''}`;
 
-async function pick(ctx: Ctx, draft: Draft, candidates: PexelsPhoto[]): Promise<PexelsPhoto | undefined> {
+/**
+ * The candidate that is honestly this dish, or none. Images are Pexels' 350 px
+ * previews: the 280 × 200 thumbnails saved a little money and let about a
+ * third of the wrong dishes through (7 October).
+ */
+export async function pick(ctx: Ctx, draft: Draft, candidates: PexelsPhoto[]): Promise<PexelsPhoto | undefined> {
   const content = [
     { type: 'text' as const, text: `Dish: ${draft.title}\n${draft.summary}\nLooks like: ${draft.photoDescription}` },
     ...candidates.flatMap((p, i) => [
       { type: 'text' as const, text: `Photo ${i}: ${p.alt}` },
-      { type: 'image' as const, source: { type: 'url' as const, url: sized(p, 280, 200) } },
+      { type: 'image' as const, source: { type: 'url' as const, url: p.src.medium } },
     ]),
   ];
-  const out = await askTool<{ choice: number; sameDish: boolean; mainIngredientsVisible?: string[] }>(ctx.sql, ctx.cfg, ctx.anthropicKey!, {
+  const out = await askTool<{ choice: number; sameDish: boolean; descriptionFits: boolean; mainIngredientsVisible?: string[] }>(ctx.sql, ctx.cfg, ctx.anthropicKey!, {
     purpose: 'photo', model: ctx.cfg.models.checker, maxTokens: 400, tool: photoTool,
     system: [{ type: 'text', text: PHOTO_GUIDE }], content,
   });
   // Only a confident "same dish" with something of the recipe visible counts.
-  return out.sameDish === true && (out.mainIngredientsVisible?.length ?? 0) > 0 ? candidates[out.choice] : undefined;
+  const ok = out.sameDish === true && out.descriptionFits === true && (out.mainIngredientsVisible?.length ?? 0) > 0;
+  return ok ? candidates[out.choice] : undefined;
 }
 
 export async function photograph(ctx: Ctx): Promise<void> {
@@ -118,7 +128,8 @@ export async function photograph(ctx: Ctx): Promise<void> {
         if (found.length) chosen = await pick(ctx, dish.draft, found);
         if (chosen) break;
       }
-      let photo: Record<string, unknown> = { none: true };
+      // No honest match: wait for an AI-generated photo (aiphotos.ts). The recipe can still be published meanwhile.
+      let photo: Record<string, unknown> = { none: true, want_ai: true };
       if (chosen) {
         const stored = await store('recipe-photos', `house/${dish.id}.jpg`, sized(chosen, 1200));
         used.add(String(chosen.id));
@@ -130,6 +141,7 @@ export async function photograph(ctx: Ctx): Promise<void> {
           height: Math.round((1200 * chosen.height) / chosen.width),
           page: chosen.url,
           alt: chosen.alt,
+          rechecked: true,
         };
       }
       await sql`
@@ -137,8 +149,20 @@ export async function photograph(ctx: Ctx): Promise<void> {
         where id = ${dish.id}`;
       count(ctx, chosen ? 'photographed' : 'no_photo');
     } catch (e) {
+      if (await outOfCredit(ctx, e)) {
+        await sql`update seed.dishes set locked_until = null where id = ${dish.id}`;
+        return;
+      }
+      if (/download the file/i.test(String(e))) {
+        // A candidate Pexels won't serve would fail the same way every tick: give this dish an AI photo instead.
+        await sql`
+          update seed.dishes set stage = 'photographed', photo = ${sql.json(asJson({ none: true, want_ai: true }))},
+            locked_until = null, updated_at = now()
+          where id = ${dish.id}`;
+        count(ctx, 'no_photo');
+        continue;
+      }
       await sql`update seed.dishes set locked_until = null where id = ${dish.id}`;
-      if (await outOfCredit(ctx, e)) return;
       note(ctx, 'photo_errors', String(e));
     }
   }

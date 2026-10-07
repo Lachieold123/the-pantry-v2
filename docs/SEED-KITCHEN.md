@@ -53,6 +53,23 @@ Settings in `seed.config`:
 
 `ANTHROPIC_API_KEY` and `PEXELS_API_KEY` are edge-function secrets. Supabase → Edge Functions → Secrets. The vault is a fallback.
 
+## Photos (7 October)
+
+The first stock-photo matches were checked against Pexels' own descriptions, and about 1 in 3 showed the wrong dish (harira shown as dal, koeksisters as churros). Three changes followed:
+
+- **Stricter matching.** The photo check now looks at Pexels' 350 px previews, not thumbnails. It also has to confirm that the photographer's description doesn't name a different dish. Only a photo that is plainly this dish is kept.
+- **Re-check.** Every photo matched under the old rules was looked at again. Wrong ones were taken off, including on published recipes. After this, about 30% of finished recipes kept a stock photo.
+- **AI photos where nothing fits** (Lachlan's call). These are made with Higgsfield (`gpt_image_2_5`, medium quality, 0.5 credits each). The URL is written to `photo.ai_url`, then `aiphotos.ts` copies the image into `recipe-photos/house/<id>-ai.png` and labels it "AI-generated photo" (D-029). A recipe can be published before its photo exists; the photo is added when it arrives.
+  - The edge function can't call Higgsfield, so the images come from a Claude scheduled task, `pantry-ai-recipe-photos`. It runs daily at 7:51am Sydney time, makes at most 60 images a run, and has no notifications.
+  - On 7 October, 344 AI photos were made, about 170 credits.
+
+Photo states in `seed.dishes.photo`:
+- `{id, path, credit, rechecked}`: a stock photo.
+- `{none, want_ai}`: waiting for an AI photo.
+- `{…, ai_url}`: the AI photo is made and about to be copied.
+- `{ai, path, credit}`: the AI photo is stored.
+- `rejected.id`: a stock photo judged wrong. It is never offered again.
+
 ## What it costs
 
 Everything runs on Haiku 4.5. A finished recipe costs about 1.7 US cents: writing it, the tester pass, any ingredient check, and the photo check. Retries are included. The photo check sends Pexels' 280 × 200 thumbnails, about a tenth of the tokens the larger previews cost.
