@@ -1,6 +1,6 @@
 # The Pantry Pro: the freemium plan
 
-Decided by Lachlan on 6 October 2026 (D-038). The code is in `src/domain/pro`, `src/store/pro.ts`, `src/lib/purchases.ts` and `src/features/pro`.
+Decided by Lachlan on 6 October 2026 (D-038). Purchases wired to RevenueCat on 7 October 2026 (D-045). The code is in `src/domain/pro`, `src/store/pro.ts`, `src/store/proSync.ts`, `src/lib/purchases.ts` and `src/features/pro`.
 
 ## The rule
 
@@ -22,12 +22,12 @@ When Pro lapses, nothing is taken away. Extra collections, recipes and next week
 ## Price and trial
 
 - Price: the existing RevenueCat products, `thepantry_pro_monthly` ($4.99) and `thepantry_pro_yearly` ($44.99). Each country's actual price is set in App Store Connect. The app only ever shows the store's own price string, in the buyer's currency.
-- Trial: 7 days free on the yearly plan, set up in App Store Connect as an introductory offer. The paywall states it plainly: "7 days free, then A$… a year". Settings and the paywall show the date the trial ends.
+- Trial: 7 days free on the yearly plan, set up in App Store Connect as an introductory offer. The app reads the trial's length from the store (the product's free introductory price) and never assumes it, so the paywall only says "7 days free, then A$… a year" when Apple actually offers it to this buyer. Settings and the paywall show the date the trial ends.
 - The paywall leads with the yearly plan.
 
 ## How it behaves
 
-- **Limits only apply once buying works** (`PURCHASES_CONNECTED`). Until then the paywall says "Pro isn't on sale yet. Until it is, nothing in the app is limited." No button is ever dead, and nothing is locked with no way to pay.
+- **Limits only apply when Pro can actually be bought on this phone** (`usePurchasesReady()`): RevenueCat is running (an iPhone build) *and* the store returned at least one plan. Otherwise the paywall says "Pro isn't on sale yet. Until it is, nothing in the app is limited." No button is ever dead, and nothing is locked with no way to pay.
 - **The paywall opens on what you tried.** A fourth collection opens "More collections". A day next week opens "Plan further ahead". It lists only what Pro really does: scanning joins the list only once scanning works.
 - **Where you meet it:**
   - creating a fourth collection (on the Collections page or from a recipe);
@@ -37,20 +37,42 @@ When Pro lapses, nothing is taken away. Extra collections, recipes and next week
 - **Development and preview builds** have two Settings switches, "Preview the free limits" and "Pretend to be Pro", to try both sides before buying works. They never appear in a store build.
 - **Who is Pro** is a saved mirror of RevenueCat's answer, refreshed at launch. RevenueCat is always the truth. A lapsed subscription stops counting at its expiry time even offline.
 
-## To switch Pro on (needs Lachlan)
+## How buying is wired (D-045)
 
-1. **Approve the native dependency** `react-native-purchases` (CLAUDE.md: ask first). It needs a development build, because Expo Go can't make real purchases.
-2. **In App Store Connect:**
-   - Check that both products are in one subscription group.
-   - Add the 7-day introductory offer to the yearly product.
-   - Set the prices.
-   - Add a paywall screenshot for review.
-3. **In RevenueCat:**
-   - Confirm the "pro" entitlement and the offering with both products.
-   - Copy the public iOS SDK key. You enter it yourself; Claude never handles keys.
-4. **Host the privacy policy and terms**, and put their addresses in `src/lib/legal.ts`. Apple requires both links beside a subscription, and the paywall shows them once they're set.
-5. **Claude then fills in `src/lib/purchases.ts`** (configure, load plans, buy, restore, current entitlement) and sets `PURCHASES_CONNECTED` to true.
-6. **Test on a phone with a sandbox account:** buying, the trial, restoring, expiry and a lapsed subscription. Then update the App Privacy answers: RevenueCat records purchase history against an anonymous ID (see `docs/launch/README.md`).
+- **Library:** `react-native-purchases` (RevenueCat). It's native, so it needs a development or store build; Expo Go, the web and Android never start it and say "Pro isn't on sale here yet".
+- **Key:** the public iOS SDK key is the constant `REVENUECAT_IOS_KEY` in `src/lib/purchases.ts`. Public keys are made to ship in the app. The secret key never goes in the code.
+- **RevenueCat setup it expects:** entitlement `pro`; current offering `default` with the standard packages `$rc_monthly` (`thepantry_pro_monthly`) and `$rc_annual` (`thepantry_pro_yearly`).
+- **At launch** (`startPurchases` in `src/store/proSync.ts`): configure RevenueCat once (quiet logs in a store build), ask who is Pro, and ask what's on sale. Nothing waits on the store; the saved entitlement covers an offline start.
+- **What's on sale** is the Pro store's `sale`, asked afresh each launch and never saved:
+
+  | `sale` | When | Paywall | Free limits |
+  |---|---|---|---|
+  | `unavailable` | the web, Android, Expo Go | "Pro isn't on sale here yet" | off |
+  | `checking` | asking the store | busy "Loading prices" | off |
+  | `not-on-sale` | the offering is empty, or RevenueCat says no products could be fetched from Apple | "Pro isn't on sale yet", plus Check again | off |
+  | `failed` | the store couldn't be reached | the message, plus Try again | off |
+  | `on-sale` | at least one plan came back | the plans, buying, Restore | on |
+
+- **Buying:** the paywall shows the store's own prices, the trial line only if the store reports a free trial, Apple's auto-renew terms beside the button, Restore purchases, and the Terms and Privacy links once `src/lib/legal.ts` has them. Every outcome is designed: buying (busy), success (toast, closes), cancelled (nothing happens, nothing said), pending Ask to Buy ("Waiting for approval"; Pro switches on through the listener when approved), and errors ("Nothing has been charged").
+- **Who is Pro** is a saved mirror of RevenueCat's `pro` entitlement: expiry, trial, product and whether it will renew. A listener keeps it current (renewals, refunds, an approved Ask to Buy).
+- **Accounts (D-043):** signing in permanently calls `Purchases.logIn(<Supabase user id>)`, so Pro follows the account to another phone. Signing out calls `Purchases.logOut()` (skipped when RevenueCat's id is already anonymous, which would throw). The household's quiet anonymous user is never used.
+- **Settings → The Pantry Pro:** Free, Trial ends <date>, Pro, renews <date>, or Pro, ends <date>. A real subscription also gets "Manage subscription", which opens Apple's page (`https://apps.apple.com/account/subscriptions`).
+
+## Still needs Lachlan before Pro goes on sale
+
+1. **App Store Connect:** finish both products' metadata (they show `MISSING_METADATA` today), add the 7-day free introductory offer to the yearly product, set prices, add the review screenshot, and accept the **Paid Apps agreement** (with banking and tax). Until all of that is done, Apple returns no products and the app correctly says Pro isn't on sale.
+2. **Host the privacy policy and terms** and put their addresses in `src/lib/legal.ts`. Apple rejects a subscription paywall without both links, and the paywall shows them only once they exist.
+3. **A new EAS development build**, because the library is native. Expo Go can't buy.
+4. **Update the App Privacy answers** (RevenueCat records purchase history against an app user id: see `docs/launch/README.md`).
+
+## Testing with a sandbox account
+
+1. **Make a tester:** App Store Connect → Users and Access → Sandbox → Testers (+). Use an email that isn't a real Apple ID; it doesn't need to receive mail.
+2. **Sign in on the iPhone:** Settings → App Store → scroll to the bottom → Sandbox Account. (Don't sign out of your real Apple ID.)
+3. **Install a development or TestFlight build** and open Settings → The Pantry Pro. With the products ready, the paywall shows the real prices.
+4. **Try each path:** buy yearly (the trial), cancel Apple's sheet, Restore on a second install, and Ask to Buy (turn on "Interrupted purchases"/Ask to Buy for the tester in App Store Connect).
+5. **Time runs fast in sandbox:** a year renews every hour and a month every 5 minutes, so expiry and lapsing can be watched in one sitting. Turn off renewal from the tester's settings on the phone (Settings → App Store → Sandbox Account → Manage) to see "Pro, ends <date>" and then the lapse.
+6. **Check RevenueCat:** the customer appears under the Supabase user id when signed in, or an anonymous id when not, with the `pro` entitlement.
 
 ## Pro features to come
 

@@ -398,3 +398,14 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
   - "What I have" and "Everything" use the same scorer with different weights. The top of each list is re-ranked so the same cuisine or protein doesn't repeat back to back.
   - Every card's line says why it's there, chosen from what actually scored, and is checked against the raw data in the tests.
 - **Why:** the old picks were dinner-only, said "Picked for you" on every card, and ignored the clock, the season, Cookmarks, the cooking log's "cooked again" and variety.
+
+## D-045 · Pro is bought through RevenueCat, and only limits what can be bought
+
+- **Date:** 7 October 2026 · **Decided by:** Lachlan (approved adding `react-native-purchases`); the wiring as recommended.
+- **Decision:** Pro purchases go through RevenueCat (`react-native-purchases` 10.11, native, iPhone only) with the public iOS key in `src/lib/purchases.ts`, the `pro` entitlement and the `default` offering's `$rc_monthly` and `$rc_annual` packages. How it works and how to test it with a sandbox account: `docs/PRO.md`.
+  - **"Connected" means "can sell here",** not "library installed": free limits apply only when RevenueCat is running on an iPhone build and the current offering returned at least one plan (`usePurchasesReady()`). The hard `PURCHASES_CONNECTED` switch is gone. Today Apple returns no products (metadata missing, Paid Apps agreement pending), so nothing is limited and the paywall says Pro isn't on sale yet.
+  - **The store is the only source** of prices and the trial: the trial line appears only when the product's introductory offer is free; the old hard-coded `TRIAL_DAYS` is gone.
+  - **Pro follows the account:** a permanent sign-in (D-043) is RevenueCat's app user id (`logIn`); signing out goes back to anonymous (`logOut`).
+  - **Never faked:** the web, Android and Expo Go never start RevenueCat (its "preview" modes are not used); they say Pro isn't on sale here.
+- **Added dependency:** `react-native-purchases` (native; no config plugin; needs a new development build).
+- **Waits for Lachlan:** App Store Connect metadata, the yearly trial offer, the Paid Apps agreement, the hosted legal pages, then a sandbox test on his phone.

@@ -7,7 +7,7 @@ This replaces `app-store-listing.md` (5 October). That file was written before H
 > **Before you paste:** the description only claims what works today. Three things are built but need your dashboard steps before they work for real users, so check each one first:
 > 1. **Household** needs Supabase's anonymous sign-ins switched on, then the two-phone test (`docs/HOUSEHOLD.md` › Needs Lachlan). Until then, use the description **without** the SHARE THE KITCHEN block, and skip screenshot 8.
 > 2. **Sign in with Apple** needs the migration applied and the Apple provider set up (`docs/ACCOUNTS.md`). Until then, delete the last sentence of YOUR KITCHEN STAYS YOURS.
-> 3. **Pro isn't on sale** (`PURCHASES_CONNECTED = false`), so nothing in the app is limited. The listing doesn't mention Pro or prices. When purchases go live, add the block in "When Pro goes on sale" below and list the in-app purchases.
+> 3. **Pro isn't on sale** (RevenueCat is wired, D-045, but Apple returns no products until App Store Connect is finished), so nothing in the app is limited. The listing doesn't mention Pro or prices. When purchases go live, add the block in "When Pro goes on sale" below and list the in-app purchases.
 
 ## Name and subtitle
 

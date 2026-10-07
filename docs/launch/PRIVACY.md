@@ -28,7 +28,7 @@ Nothing leaves the phone until the cook uses a backend feature. The Supabase cli
 - **Import from a link** fetches the pasted page straight from the phone (`src/features/editor/ImportLinkScreen.tsx`). The site sees a normal visit. Nothing reaches our server.
 - **Sharing** the list, plan or a recipe goes through the iOS share sheet to an app the cook picks.
 
-**Not in the app at all** (checked `package.json` and `node_modules`): no analytics, crash reporting, ads or attribution SDKs (no Sentry, Firebase, Amplitude, PostHog, Mixpanel, Bugsnag), no RevenueCat yet (`PURCHASES_CONNECTED = false`), no `expo-updates`, no IDFA, no App Tracking Transparency prompt.
+**Not in the app at all** (checked `package.json` and `node_modules`): no analytics, crash reporting, ads or attribution SDKs (no Sentry, Firebase, Amplitude, PostHog, Mixpanel, Bugsnag), no `expo-updates`, no IDFA, no App Tracking Transparency prompt.
 
 ## 2. The manifest, entry by entry
 
@@ -52,7 +52,7 @@ Every one is **linked to the user** (it sits against their Supabase user id), **
 
 - **Photos or Videos:** plates stay on the phone. *Add this the day plates sync or social posting ships (P9).*
 - **Health:** "Ingredients to avoid" and the diet (everything, vegetarian, pescatarian, vegan) are food preferences, not medical records, and the app never asks why. If an "allergies" field is ever added, revisit this.
-- **Purchase History:** no RevenueCat yet. *Add when Pro goes on sale* (PRO.md step 6).
+- **Purchase History:** RevenueCat is in the app (D-045) and starts on iPhone builds, creating a customer record (an anonymous id, or the account id when signed in) even before anything is bought. *Add before the next App Store submission* (PRO.md, "Still needs Lachlan" step 4): linked to the user when signed in, because the account id is RevenueCat's app user id.
 - **Crash Data / Performance Data:** no Sentry yet. *Add when K-8 lands*, not linked if no user id is attached.
 - **Coarse Location / IP address:** Supabase sees the connecting IP, as any server does, and keeps it briefly in its own logs. The app doesn't read, store or use it, so it isn't declared. Mention Supabase's logs in the privacy policy.
 

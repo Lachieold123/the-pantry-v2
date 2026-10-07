@@ -14,7 +14,8 @@ import { importFromOldAppOnce, useWelcomeBack } from '@/store/oldAppImport';
 import { usePlan } from '@/store/plan';
 import { usePreferences } from '@/store/preferences';
 import { startSync, useHousehold } from '@/store/household';
-import { refreshEntitlement, usePro } from '@/store/pro';
+import { usePro } from '@/store/pro';
+import { startPurchases } from '@/store/proSync';
 import { useSaved } from '@/store/saved';
 import { allHydrated } from '@/store/storage';
 import { FONT_FILES } from '@/ui/theme/fonts';
@@ -35,8 +36,9 @@ async function prepare(): Promise<void> {
     useAccount,
   ]);
   if (loaded === 'timed-out') console.warn('[startup] saved data took too long to load; opening anyway');
-  // Ask the store who is Pro; the saved mirror covers an offline start. Never blocks opening.
-  void refreshEntitlement();
+  // Start RevenueCat (iPhone only), ask who is Pro and what's on sale; the saved
+  // mirror covers an offline start. Never blocks opening (D-045).
+  startPurchases();
   // A household's sync starts once the kitchen has loaded; it never holds up opening (D-039).
   startSync();
   try {

@@ -19,9 +19,6 @@ export const FREE_LIMITS = {
   scansPerMonth: SCAN_LIMITS.freePerMonth,
 } as const;
 
-/** The yearly plan's introductory offer, set in App Store Connect. The paywall only says it when the store offers it. */
-export const TRIAL_DAYS = 7;
-
 /** A mirror of what RevenueCat says; RevenueCat is the truth (map §5). */
 export type Entitlement = {
   isPro: boolean;
@@ -30,6 +27,8 @@ export type Entitlement = {
   productId?: string | undefined;
   /** In a free trial, so the paywall and Settings can say when it ends. */
   inTrial?: boolean | undefined;
+  /** False once it's been cancelled: Pro then ends at `expiresAt` instead of renewing. */
+  willRenew?: boolean | undefined;
 };
 
 export const FREE: Entitlement = { isPro: false };

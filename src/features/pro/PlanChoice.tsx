@@ -19,7 +19,7 @@ export function planLine(plan: Plan): string {
 
 export function PlanChoice({ plans, chosen, onChoose }: Props) {
   const styles = useStyles();
-  const ordered = [...plans].sort((a) => (a.id === 'yearly' ? -1 : 1));
+  const ordered = [...plans].sort((a, b) => (a.id === b.id ? 0 : a.id === 'yearly' ? -1 : 1));
   return (
     <View style={{ gap: SPACE.xs }} accessibilityRole="radiogroup" accessibilityLabel="Choose a plan">
       {ordered.map((plan) => {

@@ -2,8 +2,11 @@
 // mirror of the store's answer, kept so Pro works offline and at launch;
 // the store is always the truth and refreshes it.
 //
-// Limits apply only once Pro can be bought (PURCHASES_CONNECTED). Development
-// and preview builds can preview them, and pretend to be Pro, from Settings.
+// Limits apply only once Pro can actually be bought on this phone: RevenueCat
+// is running (an iPhone build) and the store has a plan on sale (`sale`, set
+// by ./proSync). Until then nothing is locked with no way to pay (D-038,
+// D-045). Development and preview builds can preview the limits, and pretend
+// to be Pro, from Settings.
 import { useRouter } from 'expo-router';
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
@@ -19,14 +22,32 @@ import {
   type Entitlement,
   type ProFeature,
 } from '@/domain/pro/pro';
+import { proStatus } from '@/domain/pro/purchase';
 import { INTERNAL_BUILD } from '@/lib/build';
-import { currentEntitlement, PURCHASES_CONNECTED } from '@/lib/purchases';
+import type { Plan } from '@/lib/purchases';
 import { useMyRecipes } from './myRecipes';
 import { useSaved } from './saved';
 import { persistentStorage, STORAGE_PREFIX } from './storage';
 
+/**
+ * Whether Pro is on sale on this phone, from the last look at the store. Not
+ * saved: it's asked afresh at every launch.
+ * - unavailable: this device can't buy (the web, Android, Expo Go);
+ * - checking: asking the store;
+ * - on-sale: the plans and their prices;
+ * - not-on-sale: the store has nothing to sell yet;
+ * - failed: the store couldn't be reached (the paywall offers to try again).
+ */
+export type Sale =
+  | { state: 'unavailable' }
+  | { state: 'checking' }
+  | { state: 'on-sale'; plans: Plan[] }
+  | { state: 'not-on-sale' }
+  | { state: 'failed'; message: string };
+
 type ProState = {
   entitlement: Entitlement;
+  sale: Sale;
   /** Times of link imports, for the free monthly allowance. */
   importsAt: number[];
   /** Development and preview builds only: apply the free limits before buying works. */
@@ -43,6 +64,7 @@ export const usePro = create<ProState>()(
   persist(
     (set) => ({
       entitlement: FREE,
+      sale: { state: 'unavailable' },
       importsAt: [],
       previewLimits: false,
       pretendPro: false,
@@ -67,11 +89,34 @@ export function useIsPro(): boolean {
   return (INTERNAL_BUILD && pretend) || isActive(entitlement, new Date().getTime());
 }
 
-/** Free limits apply: buying works (or a development build is previewing them) and this phone isn't Pro. */
+/** Pro can be bought on this phone right now: RevenueCat is running and the store has at least one plan on sale. */
+export function usePurchasesReady(): boolean {
+  return usePro((s) => s.sale.state === 'on-sale');
+}
+
+/** Free limits apply: Pro can be bought here (or a development build is previewing them) and this phone isn't Pro. */
 export function useLimitsApply(): boolean {
   const preview = usePro((s) => s.previewLimits);
+  const onSale = usePurchasesReady();
   const pro = useIsPro();
-  return !pro && (PURCHASES_CONNECTED || (INTERNAL_BUILD && preview));
+  return !pro && (onSale || (INTERNAL_BUILD && preview));
+}
+
+/**
+ * Settings' answer to "am I Pro?" (Free, Trial ends 14 Oct, Pro, renews…),
+ * and whether there's a real store subscription for Apple to manage (not
+ * the testing switch).
+ */
+export function useProStanding(): { label: string; subscribed: boolean } {
+  const entitlement = usePro((s) => s.entitlement);
+  const preview = usePro((s) => s.previewLimits);
+  const onSale = usePurchasesReady();
+  const pro = useIsPro();
+  const now = new Date().getTime();
+  const subscribed = isActive(entitlement, now) && entitlement.expiresAt !== undefined;
+  if (subscribed) return { label: proStatus(entitlement, true, now), subscribed };
+  if (pro) return { label: 'Pro', subscribed };
+  return { label: onSale || (INTERNAL_BUILD && preview) ? 'Free' : 'Free, nothing limited yet', subscribed };
 }
 
 /** Opens the paywall, worded for what was tried. */
@@ -114,15 +159,4 @@ export function usePlanAhead(): (day: ISODate) => boolean {
     openPaywall('plan-ahead');
     return false;
   };
-}
-
-/** Refreshes the mirror from the store, at launch. Quietly keeps the saved one if the store can't be reached. */
-export async function refreshEntitlement(): Promise<void> {
-  if (!PURCHASES_CONNECTED) return;
-  try {
-    const fresh = await currentEntitlement();
-    if (fresh) usePro.getState().setEntitlement(fresh);
-  } catch {
-    // Offline or the store is down: the saved entitlement stands until next launch.
-  }
 }
