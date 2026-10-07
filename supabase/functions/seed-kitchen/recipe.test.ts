@@ -105,3 +105,9 @@ Deno.test('a declared name with its English name in brackets still matches the l
   assertEquals(declared.ok[0]?.name, 'dalo');
   assertEquals(declared.ok[0]?.aliases, ['taro']);
 });
+
+Deno.test('"pound the spices" is a verb, not an imperial measure', () => {
+  const pounded: Draft = { ...draft, steps: [...draft.steps.slice(0, 3), 'Pound the garlic to a paste in a mortar, then stir it through.'] };
+  const out = assemble('0b0b0b0b-0000-4000-8000-000000000000', pounded, []);
+  assert(!out.problems.some((p) => p.includes('imperial')));
+});

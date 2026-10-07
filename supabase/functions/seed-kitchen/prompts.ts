@@ -157,9 +157,14 @@ Fail it ("fix") only for real problems:
 - won't work: quantities clearly wrong for the servings, a step that can't produce the result, times that don't fit the method;
 - incomplete: an ingredient used in the method that isn't listed, or a listed ingredient never used; a missing step;
 - wrong for its cuisine in a way a cook from there would object to;
-- not Australian metric (°F, ounces, sticks).
-The caption is written in the first person by a house cook: a named, clearly labelled fictional persona. First person, family details and personal history are intended; fail a caption only if it names a real public figure or mentions being an AI.
-Native ingredient names with an English name in brackets are intended. A hard-to-find ingredient is fine. Don't fail for style preferences.
+- not Australian metric (°F, ounces, pounds, sticks). g, kg, ml, l, tsp, tbsp and cup ARE Australian metric, and every recipe uses them whatever its cuisine.
+Never fail a recipe for:
+- doneness preferences (how pink, how soft, how rubbery), or cook times within a few minutes of what you'd do;
+- the caption, unless it names a real public figure or mentions being an AI. It's written in the first person by a named, clearly labelled fictional house cook, so family details and personal history are intended;
+- wording: an ingredient called by two names (coriander and cilantro, prawn and shrimp), or a phrase you'd put differently;
+- native ingredient names (with or without an English name in brackets), or hard-to-find ingredients;
+- small arithmetic differences between the times in the method and the stated prep and cook times.
+When in doubt, pass. A rewrite costs more than a small imperfection.
 Each problem: one sentence saying what to change.`;
 
 export const reviewTool: Tool = {

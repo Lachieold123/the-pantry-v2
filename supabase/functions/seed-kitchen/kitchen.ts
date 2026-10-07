@@ -214,11 +214,21 @@ async function checkOne(ctx: Ctx, dish: Dish): Promise<void> {
     // Check new names now, so a wrong alias ("grape leaves" as dolmades) is caught before it's used.
     if (declared.ok.length) await verifyExtras(ctx, declared.ok.map((x) => x.id));
     let extras = await loadExtras(ctx);
+    // A wrong alias ("base genep" as garlic) is really a new ingredient: declare it so, and check its groups.
     const wrong = extras.filter((e) => e.kind === 'alias' && e.status === 'needs-review' && declared.ok.some((x) => x.id === e.id));
+    if (wrong.length) {
+      const ids = wrong.map((e) => e.id);
+      await sql`
+        update public.ingredient_extras set kind = 'new', alias_of = null, groups = '{}', aisle = 'other',
+          status = 'proposed', review_note = 'auto'
+        where id = any(${ids}::text[])`;
+      await verifyExtras(ctx, ids);
+      extras = await loadExtras(ctx);
+    }
     let built = assemble(dish.id, draft, extras);
     // Ingredients the writer used without declaring ("spam", "baked beans") are
     // declared here and their groups checked, which costs a fraction of a rewrite.
-    if (built.unmatched.length && !wrong.length && !declared.problems.length && !built.problems.length) {
+    if (built.unmatched.length && !declared.problems.length && !built.problems.length) {
       const ids = await declareUnmatched(ctx, built.unmatched);
       if (ids.length) await verifyExtras(ctx, ids);
       extras = await loadExtras(ctx);
@@ -226,7 +236,6 @@ async function checkOne(ctx: Ctx, dish: Dish): Promise<void> {
     }
     const problems = [
       ...declared.problems,
-      ...wrong.map((e) => `"${e.name}" is not the same thing as database item "${e.alias_of}". Declare it kind "new" with its groups, or use a database name.`),
       ...built.problems,
       ...built.unmatched.map((item) => `"${item}" isn't an ingredient the app can identify. Use a database name, or declare it in newIngredients.`),
     ];
@@ -262,7 +271,10 @@ async function declareUnmatched(ctx: Ctx, items: string[]): Promise<string[]> {
     await ctx.sql`
       insert into public.ingredient_extras (id, kind, name, aisle, groups, review_note)
       values (${id}, 'new', ${item}, 'other', '{}', 'auto')
-      on conflict (id) do nothing`;
+      -- A name rejected earlier as a wrong alias can still be a real ingredient in its own right.
+      on conflict (id) do update set kind = 'new', alias_of = null, groups = '{}', aisle = 'other',
+        status = 'proposed', review_note = 'auto'
+      where public.ingredient_extras.status = 'rejected' and public.ingredient_extras.kind = 'alias'`;
     ids.push(id);
   }
   count(ctx, 'extras_auto', ids.length);

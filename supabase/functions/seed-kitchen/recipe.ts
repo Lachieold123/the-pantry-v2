@@ -98,7 +98,8 @@ export type Assembled = {
 };
 
 const FAHRENHEIT = /°\s?F\b|\bfahrenheit\b/i;
-const IMPERIAL = /\b(oz|ounces?|lbs?|pounds?|quarts?|sticks? of butter)\b/i;
+// "pound" alone is also the verb ("pound the spices"), so only a number before it counts.
+const IMPERIAL = /\b\d+(?:\.\d+)?\s*(?:oz|ounces?|lbs?|pounds?|quarts?)\b|\bsticks? of butter\b/i;
 
 const asStrings = (v: unknown): string[] =>
   Array.isArray(v) ? v.filter((x): x is string => typeof x === 'string' && x.trim() !== '')

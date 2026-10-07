@@ -78,7 +78,7 @@ async function pick(ctx: Ctx, draft: Draft, candidates: PexelsPhoto[]): Promise<
     { type: 'text' as const, text: `Dish: ${draft.title}\n${draft.summary}\nLooks like: ${draft.photoDescription}` },
     ...candidates.flatMap((p, i) => [
       { type: 'text' as const, text: `Photo ${i}: ${p.alt}` },
-      { type: 'image' as const, source: { type: 'url' as const, url: p.src.tiny } },
+      { type: 'image' as const, source: { type: 'url' as const, url: sized(p, 280, 200) } },
     ]),
   ];
   const out = await askTool<{ choice: number; sameDish: boolean; mainIngredientsVisible?: string[] }>(ctx.sql, ctx.cfg, ctx.anthropicKey!, {
