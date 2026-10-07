@@ -9,6 +9,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { formatLine, scaleLine, type UnitSystem } from '@/domain/ingredients/format';
 import { substitutionFor } from '@/domain/recipes/substitutions';
 import type { Recipe } from '@/domain/recipes/types';
+import { useReduceMotion } from '@/ui/primitives/accessibility';
 import { Icon } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
@@ -28,10 +29,12 @@ type Props = {
 export function CookIngredientsSheet({ visible, recipe, servings, units, have, onClose }: Props) {
   const styles = useStyles();
   const insets = useSafeAreaInsets();
+  // Reduce Motion: a sliding sheet becomes a fade, as iOS's own sheets do.
+  const reduceMotion = useReduceMotion();
   if (!visible) return null;
   const ratio = servings / recipe.servings;
   return (
-    <Modal visible transparent animationType="slide" onRequestClose={onClose} statusBarTranslucent>
+    <Modal visible transparent animationType={reduceMotion ? 'fade' : 'slide'} onRequestClose={onClose} statusBarTranslucent>
       <View style={styles.wrap}>
         <Pressable
           style={[StyleSheet.absoluteFill, styles.backdrop]}

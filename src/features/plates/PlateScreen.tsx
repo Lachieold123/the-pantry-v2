@@ -47,9 +47,15 @@ export function PlateScreen({ id }: { id: string | undefined }) {
       <View onLayout={(e: LayoutChangeEvent) => setWidth(e.nativeEvent.layout.width)}>
         {width > 0 ? (
           <ScrollView horizontal pagingEnabled showsHorizontalScrollIndicator={false} style={{ marginHorizontal: -SPACE.gutter }}>
-            {plate.photoUris.map((uri) => (
+            {plate.photoUris.map((uri, i) => (
               <View key={uri} style={{ width: width + SPACE.gutter * 2, paddingHorizontal: SPACE.gutter }}>
-                <RecipeImage source={{ uri }} shape="portrait" cuisine="modern-australian" radius={RADIUS.card} />
+                <RecipeImage
+                  source={{ uri }}
+                  shape="portrait"
+                  cuisine="modern-australian"
+                  radius={RADIUS.card}
+                  label={`Your photo of ${plate.title}, ${i + 1} of ${plate.photoUris.length}`}
+                />
               </View>
             ))}
           </ScrollView>

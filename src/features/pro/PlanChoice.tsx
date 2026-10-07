@@ -37,7 +37,10 @@ export function PlanChoice({ plans, chosen, onChoose }: Props) {
             <Icon name={on ? 'checkCircle' : 'circle'} size={PRO.planIcon} colour={on ? 'accentText' : 'inkMuted'} />
             <View style={{ flex: 1, gap: SPACE.xxs }}>
               <Text variant="row">{plan.id === 'yearly' ? 'Yearly' : 'Monthly'}</Text>
-              <Text variant="caption">{planLine(plan)}</Text>
+              {/* Muted grey is 4.4:1 on the chosen plan's amber wash; the softer ink passes AA. */}
+              <Text variant="caption" colour={on ? 'inkSoft' : 'inkMuted'}>
+                {planLine(plan)}
+              </Text>
             </View>
           </Pressable>
         );

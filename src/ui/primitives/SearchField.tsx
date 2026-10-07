@@ -81,7 +81,8 @@ export function SearchButton({ placeholder, onPress, testID }: { placeholder: st
 const useStyles = makeStyles(({ colours }) => ({
   box: {
     flex: 1,
-    height: 46,
+    // A floor, not a fixed height, so large text grows the box instead of clipping.
+    minHeight: 46,
     flexDirection: 'row',
     alignItems: 'center',
     gap: SPACE.xs,
@@ -93,5 +94,5 @@ const useStyles = makeStyles(({ colours }) => ({
   },
   // On its own in a column it keeps its height; the field version grows across a row.
   alone: { flexGrow: 0, flexShrink: 0, flexBasis: 'auto' },
-  input: { flex: 1, height: 46, color: colours.ink, ...textStyle(TYPE.body), lineHeight: undefined },
+  input: { flex: 1, minHeight: 46, color: colours.ink, ...textStyle(TYPE.body), lineHeight: undefined },
 }));

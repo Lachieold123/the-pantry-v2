@@ -1,8 +1,10 @@
 # Accounts (D-043): signed out, Settings' first section offers "Back up your
-# kitchen"; the sheet has Continue with Apple (on an iPhone), Continue with
-# email and Not now; the email step checks the address before sending. No
-# real sign-in: Apple's sheet and a real inbox can't be automated, so those
-# are checked by hand (docs/ACCOUNTS.md).
+# kitchen"; on an iPhone the sheet has Continue with Apple and Not now.
+# Continue with email stays hidden until email codes can be sent
+# (EMAIL_CODES_CONNECTED, src/lib/emailCodes.ts); when it flips, put back the
+# email step (a mistyped address is refused before sending). No real sign-in:
+# Apple's sheet and a real inbox can't be automated, so those are checked by
+# hand (docs/ACCOUNTS.md).
 appId: host.exp.Exponent
 ---
 - launchApp:
@@ -18,6 +20,8 @@ appId: host.exp.Exponent
     id: "settings-account-backup"
 - assertVisible: "Back up your kitchen"
 - assertVisible:
+    id: "account-apple"
+- assertNotVisible:
     id: "account-email"
 - takeScreenshot: account-sheet
 
@@ -26,17 +30,3 @@ appId: host.exp.Exponent
     id: "account-not-now"
 - assertVisible:
     id: "settings-account-backup"
-
-- tapOn:
-    id: "settings-account-backup"
-- tapOn:
-    id: "account-email"
-- assertVisible:
-    id: "account-email-field"
-- tapOn:
-    id: "account-email-field"
-- inputText: "lachlan@"
-- tapOn:
-    id: "account-send"
-- assertVisible: "That email doesn’t look right. Check it and try again."
-- takeScreenshot: account-email-step

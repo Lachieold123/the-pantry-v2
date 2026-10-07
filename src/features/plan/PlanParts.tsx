@@ -11,7 +11,7 @@ import type { ISODate, Slot } from '@/domain/plan/week';
 import { capitalise, countToBuy, type ShoppingList } from '@/domain/shopping/derive';
 import { useCookableNow } from '@/store/cookable';
 import { usePlan } from '@/store/plan';
-import { useForYou } from '@/store/suggestions';
+import { useSlotIdeas } from '@/store/suggestions';
 import { RecipeImage } from '@/ui/patterns/RecipeImage';
 import { useToast } from '@/ui/patterns/Toast';
 import { Icon } from '@/ui/primitives/Icon';
@@ -62,11 +62,12 @@ export function DaySuggestions({ day, slot }: SuggestProps) {
   const removeEntry = usePlan((s) => s.removeEntry);
   const planAhead = usePlanAhead();
   const { ready, nearly } = useCookableNow();
-  const forYou = useForYou(RAIL * 3);
+  // Scored for this day's meal (a Saturday dinner as a Saturday dinner), already only that meal.
+  const picked = useSlotIdeas(day, slot, RAIL);
   const fits = (r: Recipe) => !slot || r.mealTypes.includes(slot);
   const fromCupboard = [...ready, ...nearly].map((m) => m.recipe).filter(fits);
   const fromPantry = fromCupboard.length > 0;
-  const ideas = (fromPantry ? fromCupboard : forYou.filter(fits)).slice(0, RAIL);
+  const ideas = (fromPantry ? fromCupboard : picked).slice(0, RAIL);
   if (ideas.length === 0) return null;
 
   const pick = (recipe: Recipe) => {

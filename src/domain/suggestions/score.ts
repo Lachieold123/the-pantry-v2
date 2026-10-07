@@ -7,7 +7,7 @@
 import type { Cookable, Tier } from '../cupboard/cookable';
 import { CUISINE_LABELS, formatMinutes } from '../recipes/labels';
 import { totalMinutes, type CuisineId, type Recipe, type Season } from '../recipes/types';
-import { stableJitter } from './forYou';
+import { stableJitter } from './jitter';
 import { mealFit, seasonFit, type DayKind, type MealWindow, type TimeBudget } from './moment';
 import type { Signals } from './signals';
 

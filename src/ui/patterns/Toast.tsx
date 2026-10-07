@@ -14,6 +14,7 @@ import Animated, { FadeInDown, FadeOutDown, LinearTransition } from 'react-nativ
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { FullWindowOverlay } from 'react-native-screens';
 
+import { useScreenReader } from '@/ui/primitives/accessibility';
 import { Icon } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
@@ -29,14 +30,20 @@ const FloorContext = createContext<(height: number) => () => void>(() => () => {
 // The original shows a toast for 2.5 s; one with Undo stays longer so there's time to reach it.
 const VISIBLE_MS = MOTION.toast;
 const VISIBLE_WITH_UNDO_MS = 4500;
+// With VoiceOver on, reaching Undo means swiping to it after the announcement ends,
+// which takes far longer than a glance and a tap (accessibility audit 2026-10-07).
+const SCREEN_READER_MS = 6000;
+const SCREEN_READER_WITH_UNDO_MS = 12000;
 
 export function ToastProvider({ children }: { children: ReactNode }) {
   const [toast, setToast] = useState<ToastState | null>(null);
   const counter = useRef(0);
+  const screenReader = useScreenReader();
   const show = useCallback((t: ToastInput) => {
     counter.current += 1;
     setToast({ ...t, id: counter.current });
-    AccessibilityInfo.announceForAccessibility(t.message);
+    // Say there's an Undo, so a VoiceOver user knows to go and find it.
+    AccessibilityInfo.announceForAccessibility(t.undo ? `${t.message}. Undo available.` : t.message);
   }, []);
   // The chrome that most recently claimed the foot of the screen is the one in front.
   const [floors, setFloors] = useState<{ id: number; height: number }[]>([]);
@@ -49,9 +56,16 @@ export function ToastProvider({ children }: { children: ReactNode }) {
   }, []);
   useEffect(() => {
     if (!toast) return;
-    const timer = setTimeout(() => setToast((cur) => (cur?.id === toast.id ? null : cur)), toast.undo ? VISIBLE_WITH_UNDO_MS : VISIBLE_MS);
+    const visible = screenReader
+      ? toast.undo
+        ? SCREEN_READER_WITH_UNDO_MS
+        : SCREEN_READER_MS
+      : toast.undo
+        ? VISIBLE_WITH_UNDO_MS
+        : VISIBLE_MS;
+    const timer = setTimeout(() => setToast((cur) => (cur?.id === toast.id ? null : cur)), visible);
     return () => clearTimeout(timer);
-  }, [toast]);
+  }, [toast, screenReader]);
   return (
     <ToastContext.Provider value={show}>
       <FloorContext.Provider value={holdFloor}>

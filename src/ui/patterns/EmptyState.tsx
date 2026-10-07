@@ -24,7 +24,12 @@ export function EmptyState({ title, body, action, look = 'standard', testID }: P
       accessibilityLabel={`${title}. ${body}`}
       {...(testID ? { testID } : {})}
     >
-      <Text variant={look === 'library' ? 'dayName' : 'headingSans'} align="center">
+      {/* Grouped (no action) it reads as one line; with an action, the title is the block's heading. */}
+      <Text
+        variant={look === 'library' ? 'dayName' : 'headingSans'}
+        align="center"
+        {...(action ? { accessibilityRole: 'header' as const } : {})}
+      >
         {title}
       </Text>
       <Text variant="bodyMedium" colour={look === 'library' ? 'inkSoft' : 'inkMuted'} align="center" style={{ maxWidth: 300 }}>

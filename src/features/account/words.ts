@@ -29,6 +29,11 @@ export const SIGNED_IN_TOAST = 'You’re signed in. Your kitchen is backed up.';
 
 export const NO_PASSWORD = 'No password. Everything keeps working without an account.';
 
+/** Where Apple is the only way in and this device hasn't got it (the web, Android), while email codes aren't connected. */
+export const APPLE_ON_IPHONE = 'Backing up with your Apple ID is available on iPhone.';
+export const EMAIL_SOON = 'Email sign-in is coming soon.';
+export const NO_WAY_IN = `${APPLE_ON_IPHONE} ${EMAIL_SOON} Everything keeps working without an account.`;
+
 export const PROBLEM_WORDS: Record<AccountProblem, string> = {
   offline: 'You’re offline. Signing in needs the internet.',
   cancelled: '',

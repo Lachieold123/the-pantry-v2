@@ -7,10 +7,9 @@ import { DEFAULT_SHELF, whatCanICook, type CookableMatch } from '../cupboard/coo
 import { CUISINE_LABELS, formatMinutes } from '../recipes/labels';
 import { TIME_LIMIT_MINUTES } from '../recipes/search';
 import { totalMinutes, type Recipe } from '../recipes/types';
-import type { Taste } from '../suggestions/forYou';
 import { NO_HOME_FILTERS } from '../suggestions/home';
 import { dayKind, momentOf, seasonFor, type Moment } from '../suggestions/moment';
-import type { RankInput } from '../suggestions/rank';
+import type { RankInput, Taste } from '../suggestions/rank';
 import type { Reason } from '../suggestions/score';
 import { NO_HISTORY } from '../suggestions/signals';
 import { catalogue, index, kitchen } from './fixtures';

@@ -3,7 +3,7 @@
 // labels with no data behind them ("Comfort", "Spicy"); here every one is a
 // real filter or search, so tapping it always means something.
 
-import { stableJitter } from '../suggestions/forYou';
+import { stableJitter } from '../suggestions/jitter';
 import { matchesFilters, NO_FILTERS, type RecipeFilters } from './search';
 import type { Recipe, Season } from './types';
 

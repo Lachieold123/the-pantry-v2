@@ -6,7 +6,9 @@ Drafted by Claude on 5 October 2026 from a read-through of the code, `app.json` 
 | --- | --- | --- |
 | `privacy-policy.md` | Privacy policy (Privacy Act 1988 / APPs, and Apple), plus an appendix with your App Privacy "nutrition label" answers | Publish at your privacy URL. Paste the URL into App Store Connect, and link it from Settings in the app |
 | `terms-of-use.md` | Terms of use, including food safety and allergy wording | Publish at your terms URL. Link it from Settings and the support page |
-| `app-store-listing.md` | Every App Store Connect field, with character counts, the screenshot plan, age rating answers and App Review notes | Copy into App Store Connect |
+| `app-store-listing.md` | Every App Store Connect field, with character counts, the screenshot plan, age rating answers and App Review notes. **Superseded on 7 October by `APP-STORE-LISTING.md`, except for the App Review notes** | Copy into App Store Connect |
+| `APP-STORE-LISTING.md` (7 Oct) | The listing as the app is now: Household, Sign in with Apple, Pro not yet on sale. Character counts, age rating, URLs, 6.9-inch shot list | Copy into App Store Connect |
+| `PRIVACY.md` + `privacy-manifest.json` (7 Oct) | What the app collects now (Supabase: user id, email, name, kitchen data), the iOS privacy manifest, and the App Privacy answers. **Replaces the "Data Not Collected" appendix in `privacy-policy.md`** | Paste the JSON under `expo.ios.privacyManifests` in `app.json` (needs your OK); answer App Privacy from §3 |
 
 ## Blockers to sort before you submit
 

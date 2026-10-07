@@ -5,6 +5,7 @@ import type { RecipeDraft } from '@/domain/recipes/draft';
 import { CUISINE_LABELS, MEAL_TYPE_LABELS } from '@/domain/recipes/labels';
 import { CUISINES, MEAL_TYPES, type Difficulty } from '@/domain/recipes/types';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
+import { useAnnounce } from '@/ui/primitives/accessibility';
 import { Chip } from '@/ui/primitives/Chip';
 import { Segmented } from '@/ui/primitives/Segmented';
 import { Stepper } from '@/ui/primitives/Stepper';
@@ -37,6 +38,8 @@ type Props = {
 export function EditorDetails({ draft, update, cuisineProblem, mealProblem }: Props) {
   const toggleMeal = (m: (typeof MEAL_TYPES)[number]) =>
     update('mealTypes', draft.mealTypes.includes(m) ? draft.mealTypes.filter((x) => x !== m) : [...draft.mealTypes, m]);
+  useAnnounce(cuisineProblem);
+  useAnnounce(mealProblem);
 
   return (
     <View style={{ gap: SPACE.lg }}>

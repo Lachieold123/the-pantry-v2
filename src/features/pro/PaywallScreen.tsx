@@ -15,6 +15,7 @@ import { buy, loadPlans, PURCHASES_CONNECTED, restore, type BuyResult, type Plan
 import { SCAN_CONNECTED } from '@/lib/scan';
 import { useIsPro, usePro } from '@/store/pro';
 import { useToast } from '@/ui/patterns/Toast';
+import { useAnnounce } from '@/ui/primitives/accessibility';
 import { Button } from '@/ui/primitives/Button';
 import { Icon } from '@/ui/primitives/Icon';
 import { Sheet } from '@/ui/primitives/Sheet';
@@ -39,6 +40,7 @@ export function PaywallScreen({ from }: { from?: string | undefined }) {
   const [plans, setPlans] = useState<Plans>({ state: 'loading' });
   const [chosen, setChosen] = useState<Plan['id']>('yearly');
   const [busy, setBusy] = useState(false);
+  useAnnounce(plans.state === 'failed' ? plans.message : undefined);
 
   useEffect(() => {
     if (!PURCHASES_CONNECTED || pro) return;

@@ -1,47 +1,19 @@
-// "Tonight, for you" and Home's ranking, wired to what the cook has told us and done.
+// Home's ranking and Plan's ideas, wired to what the cook has told us and done.
 import { useMemo } from 'react';
 
 import { INGREDIENTS } from '@/data/catalogue/catalogue';
-import { recentlyCooked } from '@/domain/cook/cook';
-import { entriesInWeek, toISODate, visibleWeeks } from '@/domain/plan/week';
+import { entriesInWeek, visibleWeeks, type ISODate, type Slot } from '@/domain/plan/week';
 import type { Recipe } from '@/domain/recipes/types';
-import { forYou } from '@/domain/suggestions/forYou';
 import type { HomeFilters } from '@/domain/suggestions/home';
 import { momentOf } from '@/domain/suggestions/moment';
 import { rankHome, type HomeRanking } from '@/domain/suggestions/rank';
+import { rankForSlot } from '@/domain/suggestions/slot';
 import { useCookableNow } from './cookable';
 import { useCookLog } from './cookLog';
 import { usePlan } from './plan';
 import { usePreferences } from './preferences';
 import { useAllRecipes } from './recipeBook';
 import { useSaved } from './saved';
-
-export function useForYou(count: number): Recipe[] {
-  const diet = usePreferences((s) => s.diet);
-  const avoid = usePreferences((s) => s.avoid);
-  const cuisines = usePreferences((s) => s.cuisines);
-  const weeknight = usePreferences((s) => s.weeknight);
-  const hidden = useSaved((s) => s.hidden);
-  const entries = usePlan((s) => s.entries);
-  const log = useCookLog((s) => s.log);
-  const recipes = useAllRecipes();
-  const today = toISODate(new Date());
-  return useMemo(
-    () =>
-      forYou({
-        recipes,
-        taste: { diet, avoid, cuisines, weeknight },
-        hidden: new Set(hidden),
-        planned: new Set(entriesInWeek(entries, visibleWeeks(today).thisWeek).map((e) => e.recipeId)),
-        recentlyCooked: recentlyCooked(log),
-        index: INGREDIENTS,
-        // Same suggestions all day; fresh ones tomorrow.
-        seed: today,
-        count,
-      }),
-    [recipes, diet, avoid, cuisines, weeknight, hidden, entries, log, today, count],
-  );
-}
 
 const QUARTER_HOUR = 15 * 60 * 1000;
 
@@ -98,4 +70,42 @@ export function useHomeRanking(filters: HomeFilters, depth: number): HomeRanking
     quarter,
     depth,
   ]);
+}
+
+/**
+ * Plan's ideas for one meal (docs/HOME-RANKING.md §3.9): Home's scorer, scored
+ * for that day and meal rather than for now. With no slot (a full day), the
+ * ideas are dinners, since a tap then just opens the recipe.
+ */
+export function useSlotIdeas(day: ISODate, slot: Slot | undefined, depth: number): Recipe[] {
+  const diet = usePreferences((s) => s.diet);
+  const avoid = usePreferences((s) => s.avoid);
+  const cuisines = usePreferences((s) => s.cuisines);
+  const weeknight = usePreferences((s) => s.weeknight);
+  const hidden = useSaved((s) => s.hidden);
+  const bookmarks = useSaved((s) => s.bookmarks);
+  const recentlyViewed = useSaved((s) => s.recentlyViewed);
+  const plan = usePlan((s) => s.entries);
+  const cookLog = useCookLog((s) => s.log);
+  const recipes = useAllRecipes();
+  const { ready, nearly } = useCookableNow();
+  // Read to the quarter hour, like Home, so the list holds still while the sheet is open.
+  const quarter = Math.floor(new Date().getTime() / QUARTER_HOUR) * QUARTER_HOUR;
+  return useMemo(
+    () =>
+      rankForSlot({
+        recipes,
+        taste: { diet, avoid, cuisines, weeknight },
+        hidden: new Set(hidden),
+        history: { cookLog, bookmarks, recentlyViewed },
+        plan,
+        cupboard: [...ready, ...nearly],
+        index: INGREDIENTS,
+        day,
+        slot: slot ?? 'dinner',
+        nowMs: quarter,
+        depth,
+      }).picks,
+    [recipes, diet, avoid, cuisines, weeknight, hidden, cookLog, bookmarks, recentlyViewed, plan, ready, nearly, day, slot, quarter, depth],
+  );
 }

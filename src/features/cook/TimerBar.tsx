@@ -2,6 +2,7 @@
 import { View } from 'react-native';
 
 import { formatCountdown, secondsLeft, type CookTimer } from '@/domain/cook/timers';
+import { useAnnounce } from '@/ui/primitives/accessibility';
 import { IconButton } from '@/ui/primitives/IconButton';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
@@ -9,6 +10,9 @@ import { RADIUS, SPACE } from '@/ui/tokens/type';
 
 export function TimerBar({ timers, now, onDismiss }: { timers: CookTimer[]; now: number; onDismiss: (id: string) => void }) {
   const styles = useStyles();
+  // The banner only shows when the phone is locked; in the app, VoiceOver has to be told.
+  const done = timers.filter((t) => secondsLeft(t, now) === 0).map((t) => `${t.label}, step ${t.stepIndex + 1}`);
+  useAnnounce(done.length ? `Time’s up: ${done.join('; ')}` : undefined);
   if (timers.length === 0) return null;
   return (
     <View style={styles.bar}>

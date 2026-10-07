@@ -8,3 +8,6 @@ export function accountProblemWords(problem: AccountProblem): string {
   if (problem === 'offline') return 'You’re offline. Try again when you’re back online.';
   return 'Something went wrong. Try again in a moment.';
 }
+
+/** Signed out where there's no way in yet (the web, Android, before email codes): where backing up does work. */
+export const BACKUP_ON_IPHONE = 'Backing up with your Apple ID is available on iPhone.';

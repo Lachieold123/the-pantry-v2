@@ -129,7 +129,8 @@ function SlotCard({ entry, past }: { entry: PlanEntry; past: boolean }) {
                 onPress={() => setServingsOpen(true)}
                 accessibilityRole="button"
                 accessibilityLabel={`For ${entry.servings}. Change how many it's for`}
-                hitSlop={8}
+                // The pill is about 20pt tall; 12pt all round brings it to TAP_TARGET.
+                hitSlop={SPACE.sm}
                 testID={`plan-entry-${entry.id}-servings`}
                 style={({ pressed }) => [styles.servings, pressed && styles.pressed]}
               >

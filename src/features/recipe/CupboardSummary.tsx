@@ -42,7 +42,9 @@ export function CupboardSummary({ result, tally, wordOf, onList, onAddMissing, o
           {missing.join(', ')}
         </Text>
       ) : null}
-      {result.shelf.length ? <Text variant="caption">{`Check you have: ${result.shelf.map(wordOf).join(', ')}`}</Text> : null}
+      {result.shelf.length ? (
+        <Text variant="caption" colour="inkSoft">{`Check you have: ${result.shelf.map(wordOf).join(', ')}`}</Text>
+      ) : null}
       {n ? (
         <View style={styles.actions}>
           <Pill

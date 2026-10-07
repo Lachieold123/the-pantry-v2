@@ -7,6 +7,7 @@ import type { ReactNode } from 'react';
 import { KeyboardAvoidingView, Modal, Platform, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { useReduceMotion } from '@/ui/primitives/accessibility';
 import { IconButton } from '@/ui/primitives/IconButton';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
@@ -18,8 +19,10 @@ type Props = { visible: boolean; onClose: () => void; title: string; children: R
 export function ModalSheet({ visible, onClose, title, children, testID }: Props) {
   const styles = useStyles();
   const insets = useSafeAreaInsets();
+  // Reduce Motion: a sliding sheet becomes a fade, as iOS's own sheets do.
+  const reduceMotion = useReduceMotion();
   return (
-    <Modal visible={visible} transparent animationType="slide" onRequestClose={onClose} statusBarTranslucent>
+    <Modal visible={visible} transparent animationType={reduceMotion ? 'fade' : 'slide'} onRequestClose={onClose} statusBarTranslucent>
       <KeyboardAvoidingView style={styles.wrap} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
         <Pressable
           style={[StyleSheet.absoluteFill, styles.backdrop]}

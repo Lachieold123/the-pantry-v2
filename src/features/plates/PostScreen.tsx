@@ -20,6 +20,7 @@ import { ActionSheet } from '@/ui/patterns/ActionSheet';
 import { PlateCard } from '@/ui/patterns/PlateCard';
 import { RecipeImage } from '@/ui/patterns/RecipeImage';
 import { useToast } from '@/ui/patterns/Toast';
+import { useAnnounce } from '@/ui/primitives/accessibility';
 import { Button } from '@/ui/primitives/Button';
 import { Chip } from '@/ui/primitives/Chip';
 import { Icon } from '@/ui/primitives/Icon';
@@ -30,7 +31,7 @@ import { TextField } from '@/ui/primitives/TextField';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { FIXED } from '@/ui/tokens/colour';
 import { PLATE } from '@/ui/tokens/screens';
-import { PRESSED, RADIUS, SPACE } from '@/ui/tokens/type';
+import { PRESSED, RADIUS, SPACE, slopFor } from '@/ui/tokens/type';
 
 const SUGGEST = 3;
 
@@ -48,6 +49,7 @@ export function PostScreen() {
   const [choosing, setChoosing] = useState(false);
   const [problem, setProblem] = useState<string | undefined>();
   const [tried, setTried] = useState(false);
+  useAnnounce(problem);
   const problems = plateProblems(draft);
   const linked = draft.recipeId ? getRecipe(draft.recipeId) : undefined;
   const suggestions = !linked && draft.title.trim().length > 2 ? searchRecipes(index, draft.title).slice(0, SUGGEST) : [];
@@ -102,12 +104,18 @@ export function PostScreen() {
           ) : null}
           {draft.photoUris.map((uri, i) => (
             <View key={uri} style={styles.photo}>
-              <RecipeImage source={{ uri }} shape="square" cuisine="modern-australian" radius={RADIUS.lg} />
+              <RecipeImage
+                source={{ uri }}
+                shape="square"
+                cuisine="modern-australian"
+                radius={RADIUS.lg}
+                label={`Photo ${i + 1} of ${draft.photoUris.length}`}
+              />
               <Pressable
                 onPress={() => setDraft((d) => ({ ...d, photoUris: d.photoUris.filter((u) => u !== uri) }))}
                 accessibilityRole="button"
                 accessibilityLabel={`Remove photo ${i + 1}`}
-                hitSlop={6}
+                hitSlop={slopFor(PLATE.removeDisc)}
                 testID={`post-remove-photo-${i}`}
                 style={styles.removeDisc}
               >

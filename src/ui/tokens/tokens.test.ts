@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
 import { CUISINES } from '../../domain/recipes/types';
-import { THEMES, type ColourTokens } from './colour';
+import { FIXED, THEMES, type ColourTokens } from './colour';
 import { contrastRatio } from './contrast';
 import { CUISINE_FAMILY_KEYS, cuisineEyebrow } from './cuisine';
 import { TYPE } from './type';
@@ -30,6 +30,23 @@ const MUST_PASS: [keyof ColourTokens, keyof ColourTokens][] = [
   ['ink', 'raised'],
   ['inkSoft', 'raised'],
   ['accentText', 'raised'],
+  // Cards: recipe and settings cards, the drawer panel (accessibility audit 2026-10-07).
+  ['inkSoft', 'card'],
+  ['inkMuted', 'card'],
+  ['danger', 'card'],
+  // The amber wash: the recipe's cupboard summary, the chosen Pro plan, Home's "What I have".
+  // Muted grey fails here in light mode (4.4:1), so text on it uses inkSoft or darker.
+  ['ink', 'accentSoft'],
+  ['inkSoft', 'accentSoft'],
+  // Filter chips fill with a pastel tint when on, with ink text.
+  ['ink', 'tintOrange'],
+  ['ink', 'tintPeach'],
+  ['ink', 'tintButter'],
+  ['ink', 'tintMint'],
+  ['ink', 'tintSky'],
+  ['ink', 'tintLavender'],
+  ['ink', 'tintRose'],
+  ['ink', 'tintNeutral'],
 ];
 
 // Pairs the original app ships below AA. They are kept so v2 looks the same (D-025) and are
@@ -67,6 +84,18 @@ describe('colour tokens', () => {
       );
     });
   }
+
+  it('text on the fixed cream and photo-disc surfaces passes AA in every mode', () => {
+    const pairs: [string, string, string][] = [
+      ['toast', FIXED.toastInk, FIXED.toastBg],
+      ['library card', FIXED.libraryCardInk, FIXED.libraryCard],
+      ['photo disc', FIXED.photoDiscInk, '#FFFFFF'],
+    ];
+    for (const [name, fg, bg] of pairs) {
+      const ratio = contrastRatio(fg, bg);
+      assert.ok(ratio >= AA_TEXT, `${name}: ${ratio.toFixed(2)}:1`);
+    }
+  });
 
   it('every cuisine eyebrow passes AA on every ground it sits on', () => {
     const grounds = { light: ['#FFFFFF', '#F7F7F7', '#F7F3EA'], dark: ['#0A0A0A', '#141414', '#1A1A1A', '#1C1915'] } as const;

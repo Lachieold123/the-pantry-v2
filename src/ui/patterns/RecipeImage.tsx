@@ -23,9 +23,24 @@ type Props = {
   transition?: number;
   /** Overlays drawn on top of the photo (scrims, discs, pills). */
   children?: ReactNode;
+  /**
+   * What VoiceOver says for a photo that is the content itself (your plates).
+   * Without it the photo is decoration: the card or page around it names the dish.
+   */
+  label?: string | undefined;
 };
 
-export function RecipeImage({ source, shape, cuisine, radius = RADIUS.md, iconSize = 32, height, transition = 200, children }: Props) {
+export function RecipeImage({
+  source,
+  shape,
+  cuisine,
+  radius = RADIUS.md,
+  iconSize = 32,
+  height,
+  transition = 200,
+  children,
+  label,
+}: Props) {
   const { colours } = useTheme();
   const frame = {
     width: '100%' as const,
@@ -35,7 +50,7 @@ export function RecipeImage({ source, shape, cuisine, radius = RADIUS.md, iconSi
     backgroundColor: source === undefined ? colours[cuisineTint(cuisine)] : colours.bgSoft,
   };
   return (
-    <View style={frame}>
+    <View style={frame} {...(label ? { accessible: true, accessibilityRole: 'image' as const, accessibilityLabel: label } : {})}>
       {source === undefined ? (
         <View
           style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}

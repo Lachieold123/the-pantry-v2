@@ -24,7 +24,14 @@ export function Backdrop({ scrim }: { scrim: 'hello' | keyof typeof WELCOME_SCRI
   return (
     <View style={StyleSheet.absoluteFill} pointerEvents="none">
       <StatusBar style="light" />
-      <Image source={PHOTO} style={StyleSheet.absoluteFill} contentFit="cover" transition={0} accessibilityIgnoresInvertColors />
+      <Image
+        source={PHOTO}
+        style={StyleSheet.absoluteFill}
+        contentFit="cover"
+        transition={0}
+        accessible={false}
+        accessibilityIgnoresInvertColors
+      />
       {g ? (
         <LinearGradient colors={g.colors} locations={g.locations} style={StyleSheet.absoluteFill} />
       ) : (

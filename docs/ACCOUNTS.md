@@ -72,6 +72,8 @@ household code becomes a thin user of it.
 
 ### Email code (anyone, including Android and the web)
 
+**Hidden for now:** `EMAIL_CODES_CONNECTED` in `src/lib/emailCodes.ts` is `false` until custom SMTP and the `{{ .Token }}` templates are live (setup steps 3–4 below), because Supabase's default emails carry no code. While it's off, the sheet offers only Continue with Apple, `/account/email` says "Email sign-in is coming soon", and on the web and Android (no Apple) Settings shows a muted, untappable row ("Backing up with your Apple ID is available on iPhone.") and the moment offers aren't shown. Flip it to `true` and the email path comes back everywhere.
+
 1. Ask for the email, then send a 6-digit code:
    - **Anonymous user:** `auth.updateUser({ email })`, which sends an
      email-change code to verify the new address. Check it with
@@ -177,7 +179,7 @@ Wiring this up waits for RevenueCat approval (D-038).
   the same account:** B's household membership belonged to B's anonymous user.
   The merge carries B's kitchen into the account. B must rejoin the household,
   and the household page says so. (Rare. Accept for now and record it.)
-- **Web preview:** no Apple button, email only.
+- **Web preview:** no Apple button, email only. Until email codes are connected, no way in at all: Settings says backing up works on iPhone.
 
 ## What building it settled (6 October 2026)
 

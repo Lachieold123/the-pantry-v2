@@ -10,14 +10,18 @@
 
 import type { CookableMatch } from '../cupboard/cookable';
 import type { IngredientIndex } from '../ingredients/database';
-import type { Recipe } from '../recipes/types';
+import type { AvoidList, DietPreference } from '../recipes/diets';
+import type { TimeFilter } from '../recipes/search';
+import type { CuisineId, Recipe } from '../recipes/types';
 import { diversify, type Facets } from './diversify';
-import type { Taste } from './forYou';
 import { asRecipeFilters, type HomeFilters } from './home';
 import { dayKind, mealWindow, quickLimit, seasonFor, timeBudget, type Moment } from './moment';
 import { scoreRecipe, WEIGHTS, type Reason, type ScoreContext, type Weights } from './score';
 import { deriveSignals, mainProtein, type History } from './signals';
 import { eligibleForSurprise } from './surprise';
+
+/** What the cook has told us in Settings: diet and leave-outs are hard rules; cuisines and weeknight time only reorder. */
+export type Taste = { diet: DietPreference; avoid: AvoidList; cuisines: readonly CuisineId[]; weeknight: TimeFilter | undefined };
 
 export type RankInput = {
   /** Every recipe this cook can see: the catalogue and their own. */

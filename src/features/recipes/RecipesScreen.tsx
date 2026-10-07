@@ -105,6 +105,8 @@ export function RecipesScreen({ focusSearch = false }: { focusSearch?: boolean }
           {shown ? (
             <Pressable
               onPress={reset}
+              // About 31pt tall: the slop brings the target past TAP_TARGET.
+              hitSlop={SPACE.xs}
               style={styles.pill}
               accessibilityRole="button"
               accessibilityLabel={`${shown.label}, clear`}

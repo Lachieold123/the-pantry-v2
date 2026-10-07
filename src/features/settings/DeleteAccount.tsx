@@ -8,6 +8,7 @@ import { View } from 'react-native';
 import { useAccount } from '@/store/account';
 import { deleteAccount } from '@/store/accountActions';
 import { useToast } from '@/ui/patterns/Toast';
+import { useAnnounce } from '@/ui/primitives/accessibility';
 import { Button } from '@/ui/primitives/Button';
 import { Text } from '@/ui/primitives/Text';
 import { TextField } from '@/ui/primitives/TextField';
@@ -28,6 +29,7 @@ export function DeleteAccount() {
   const [typed, setTyped] = useState('');
   const [busy, setBusy] = useState(false);
   const [problem, setProblem] = useState<string | undefined>();
+  useAnnounce(problem);
   if (!signedIn) return null;
   if (!open) return <CardButton icon="trash" label="Delete account" onPress={() => setOpen(true)} testID="settings-delete-account" />;
 

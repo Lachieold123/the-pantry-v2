@@ -38,6 +38,8 @@ export function RecipeHeader(p: Props) {
         {p.mine ? (
           <Pressable
             onPress={p.onEdit}
+            // The pill is about 34pt tall; the slop takes its target past TAP_TARGET without changing its look.
+            hitSlop={SPACE.xs}
             style={styles.editPill}
             accessibilityRole="button"
             accessibilityLabel="Edit this recipe"

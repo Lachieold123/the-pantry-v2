@@ -9,6 +9,7 @@ import { cleanCode, CODE_LENGTH, resendIn } from '@/domain/account/account';
 import { useAccount, type SentCode } from '@/store/account';
 import { forgetCode, sendCode, verifyCode } from '@/store/accountActions';
 import { useToast } from '@/ui/patterns/Toast';
+import { useAnnounce } from '@/ui/primitives/accessibility';
 import { Button } from '@/ui/primitives/Button';
 import { Text } from '@/ui/primitives/Text';
 import { TextField } from '@/ui/primitives/TextField';
@@ -34,6 +35,8 @@ export function CodeStep({ sent, onDone }: { sent: SentCode; onDone: () => void 
   const [code, setCode] = useState('');
   const [busy, setBusy] = useState<'verify' | 'resend' | undefined>();
   const [problem, setProblem] = useState<string | undefined>();
+  // iOS doesn't read live regions, so a problem is spoken out loud too.
+  useAnnounce(problem);
   const left = useResendIn(sent.sentAt);
   const tried = useRef('');
 

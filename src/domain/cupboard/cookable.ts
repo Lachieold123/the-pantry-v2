@@ -10,7 +10,7 @@
 // missing, and Nearly when only one or two things are (cupboard-brief §4.3).
 
 import type { IngredientIndex } from '../ingredients/database';
-import { stableJitter } from '../suggestions/forYou';
+import { stableJitter } from '../suggestions/jitter';
 import { allLines, totalMinutes, type Recipe } from '../recipes/types';
 import type { Kitchen } from './kitchen';
 

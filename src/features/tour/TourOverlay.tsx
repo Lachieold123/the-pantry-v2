@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import { Modal, View, useWindowDimensions } from 'react-native';
 
 import { useTour } from '@/store/tour';
+import { useAnnounce } from '@/ui/primitives/accessibility';
 import { Button } from '@/ui/primitives/Button';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
@@ -42,6 +43,10 @@ export function TourOverlay() {
   const current = step === undefined ? undefined : TOUR_STEPS[step];
   // Measured once the target has stopped moving, so the card appears in its final place and stays there.
   const rect = useSettledTarget(step, current?.target, `${window.width}x${window.height}`);
+  // Next keeps VoiceOver's focus where it was, so the new card is read out once it's placed.
+  useAnnounce(
+    current && rect !== 'measuring' ? `${(step ?? 0) + 1} of ${TOUR_STEPS.length}. ${current.title}. ${current.body}` : undefined,
+  );
 
   if (step === undefined || !current) return null;
   // While measuring, only the dim shows: a card drawn now would have to move.

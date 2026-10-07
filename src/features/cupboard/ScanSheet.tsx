@@ -17,6 +17,7 @@ import { readPhoto, SCAN_CONNECTED } from '@/lib/scan';
 import { useCupboard } from '@/store/cupboard';
 import { useScanAllowance, useScans } from '@/store/scans';
 import { useToast } from '@/ui/patterns/Toast';
+import { useAnnounce } from '@/ui/primitives/accessibility';
 import { Button } from '@/ui/primitives/Button';
 import { Sheet } from '@/ui/primitives/Sheet';
 import { Text } from '@/ui/primitives/Text';
@@ -53,6 +54,7 @@ export function ScanSheet({ kind: requested }: { kind: string | undefined }) {
   const [stage, setStage] = useState<Stage>({ at: 'choose' });
   const [ticked, setTicked] = useState<ReadonlySet<string>>(new Set());
   const [problem, setProblem] = useState<string | undefined>();
+  useAnnounce(problem);
   const have = new Set(items.map((i) => i.ingredientId));
   const close = () => goBack(router);
 

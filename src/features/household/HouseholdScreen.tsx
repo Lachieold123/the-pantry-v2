@@ -9,6 +9,7 @@ import { shareText } from '@/lib/share';
 import { inviteCode, joinWithCode, leave, startHousehold, useHousehold } from '@/store/household';
 import { PushedHeader } from '@/ui/patterns/PushedHeader';
 import { useToast } from '@/ui/patterns/Toast';
+import { useAnnounce } from '@/ui/primitives/accessibility';
 import { Avatar } from '@/ui/primitives/Avatar';
 import { Button } from '@/ui/primitives/Button';
 import { Screen } from '@/ui/primitives/Screen';
@@ -34,6 +35,7 @@ function NotSharing() {
   const [code, setCode] = useState('');
   const [busy, setBusy] = useState<'start' | 'join' | undefined>();
   const [problem, setProblem] = useState<string | undefined>();
+  useAnnounce(problem);
   // Signing in to an account that wasn't in this phone's household (D-043) leaves it behind: say so.
   const rejoin = useHousehold((s) => s.rejoin);
   const trimmed = name.trim();

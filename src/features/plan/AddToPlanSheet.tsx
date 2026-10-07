@@ -12,7 +12,7 @@ import { longDate } from '@/lib/dates';
 import { usePlan } from '@/store/plan';
 import { useAllRecipes, useRecipeLookup } from '@/store/recipeBook';
 import { useSaved } from '@/store/saved';
-import { useForYou } from '@/store/suggestions';
+import { useSlotIdeas } from '@/store/suggestions';
 import { RecipeCard } from '@/ui/patterns/RecipeCard';
 import { useToast } from '@/ui/patterns/Toast';
 import { SearchField } from '@/ui/primitives/SearchField';
@@ -51,13 +51,12 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
     () => bookmarks.map((b) => getRecipe(b.recipeId)).filter((r): r is Recipe => r !== undefined && r.mealTypes.includes(slot)),
     [bookmarks, getRecipe, slot],
   );
-  // Before a search, ideas that suit this cook (diet, taste, not planned or cooked lately), not the catalogue A–Z.
-  // The whole ranked catalogue, then filtered by meal: a top-75 cut left breakfast with one idea.
-  const forYou = useForYou(all.length);
+  // Before a search, ideas for this meal on this day (Home's ranking, scored for the slot), not the catalogue A–Z.
+  const ideas = useSlotIdeas(day, slot, MAX_RESULTS);
   const results = useMemo(() => {
-    const pool = query.trim() ? searchRecipes(searchIndex, query) : forYou.filter((r) => r.mealTypes.includes(slot));
+    const pool = query.trim() ? searchRecipes(searchIndex, query) : ideas;
     return pool.filter((r) => !hidden.includes(r.id)).slice(0, MAX_RESULTS);
-  }, [query, slot, hidden, searchIndex, forYou]);
+  }, [query, hidden, searchIndex, ideas]);
 
   const dayName = day === toISODate(new Date()) ? 'today' : (longDate(fromISODate(day)).split(' ')[0] ?? day);
   const pick = (recipe: Recipe) => {

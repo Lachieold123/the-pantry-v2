@@ -10,7 +10,7 @@ const mockToast = jest.fn();
 jest.mock('@/ui/patterns/Toast', () => ({ useToast: () => mockToast }));
 jest.mock('react-native-safe-area-context', () => ({ useSafeAreaInsets: () => ({ top: 0, bottom: 0, left: 0, right: 0 }) }));
 
-const mockLib = { apple: false, verify: { ok: false, problem: 'code-wrong' } as unknown };
+const mockLib = { apple: false, email: true, verify: { ok: false, problem: 'code-wrong' } as unknown };
 const mockMe = { id: 'u1', email: 'lachlan@example.com', apple: false, name: undefined };
 jest.mock('expo-apple-authentication', () => {
   const { Pressable: Press } = jest.requireActual('react-native');
@@ -31,6 +31,12 @@ jest.mock('@/lib/account', () => ({
   pushAccountRows: async () => ({ ok: true, value: null }),
   listenAccount: () => () => undefined,
 }));
+// Email codes wait for a custom email sender (lib/emailCodes); each test says whether they're connected.
+jest.mock('@/lib/emailCodes', () => ({
+  get EMAIL_CODES_CONNECTED() {
+    return mockLib.email;
+  },
+}));
 jest.mock('@/lib/household', () => ({
   myHousehold: async () => ({ ok: true, value: undefined }),
   signedInUser: async () => ({ ok: true, value: 'u1' }),
@@ -39,11 +45,45 @@ jest.mock('@/lib/household', () => ({
 beforeEach(() => {
   jest.clearAllMocks();
   mockLib.apple = false;
+  mockLib.email = true;
   mockLib.verify = { ok: false, problem: 'code-wrong' };
   useAccount.setState({ status: 'signed-out', who: undefined, code: undefined, mirror: {}, pending: {}, needsMerge: false });
 });
 
-describe('the sign-in sheet', () => {
+describe('before email codes are connected', () => {
+  beforeEach(() => {
+    mockLib.email = false;
+  });
+
+  it('on an iPhone, offers Continue with Apple only', async () => {
+    mockLib.apple = true;
+    await render(<AccountSheet />);
+    await waitFor(() => expect(screen.getByTestId('account-apple')).toBeTruthy());
+    expect(screen.queryByTestId('account-email')).toBeNull();
+    expect(screen.getByTestId('account-not-now')).toBeTruthy();
+  });
+
+  it('with no way in (the web, Android), says where backing up works and only closes', async () => {
+    await render(<AccountSheet moment="household" />);
+    await waitFor(() => expect(screen.getByTestId('account-unavailable')).toBeTruthy());
+    expect(screen.getByText(/Backing up with your Apple ID is available on iPhone\./)).toBeTruthy();
+    expect(screen.queryByTestId('account-email')).toBeNull();
+    expect(screen.queryByTestId('account-apple')).toBeNull();
+    await fireEvent.press(screen.getByTestId('account-done'));
+    expect(mockRouter.back).toHaveBeenCalled();
+  });
+
+  it('an old link to the email step says it’s coming soon, with no form', async () => {
+    await render(<EmailSheet />);
+    expect(screen.getByText('Email sign-in is coming soon')).toBeTruthy();
+    expect(screen.queryByTestId('account-email-field')).toBeNull();
+    expect(screen.queryByTestId('account-send')).toBeNull();
+    await fireEvent.press(screen.getByTestId('account-done'));
+    expect(mockRouter.back).toHaveBeenCalled();
+  });
+});
+
+describe('the sign-in sheet, with email codes connected', () => {
   it('without Sign in with Apple (the web, Android), offers email only, worded for the moment', async () => {
     await render(<AccountSheet moment="household" />);
     expect(screen.getByText('Keep your household if you change phones')).toBeTruthy();
@@ -58,6 +98,7 @@ describe('the sign-in sheet', () => {
     await render(<AccountSheet />);
     expect(screen.getByText('Back up your kitchen')).toBeTruthy();
     await waitFor(() => expect(screen.getByTestId('account-apple')).toBeTruthy());
+    expect(screen.getByTestId('account-email')).toBeTruthy();
     await fireEvent.press(screen.getByTestId('account-apple'));
     await waitFor(() => expect(screen.getByTestId('account-apple')).toBeTruthy());
     expect(screen.queryByTestId('account-problem')).toBeNull();

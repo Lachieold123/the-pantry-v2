@@ -20,6 +20,7 @@ import { useCupboard } from '@/store/cupboard';
 import { usePreferences } from '@/store/preferences';
 import { useRecipe } from '@/store/recipeBook';
 import { EmptyState } from '@/ui/patterns/EmptyState';
+import { announce } from '@/ui/primitives/accessibility';
 import { useToast } from '@/ui/patterns/Toast';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { COOK } from '@/ui/tokens/cook';
@@ -90,6 +91,8 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
     if (to < 0 || to >= total) return;
     if (Platform.OS !== 'web') Haptics.selectionAsync().catch(() => undefined);
     setStep(to);
+    // VoiceOver stays on the button that was pressed, so read the new step out (Android's counter is a live region).
+    if (Platform.OS !== 'android') announce(`Step ${to + 1} of ${total}. ${recipe.steps[to]?.text ?? ''}`);
   };
   const next = () => go(step + 1);
   const previous = () => go(step - 1);

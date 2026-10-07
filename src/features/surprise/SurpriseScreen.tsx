@@ -13,6 +13,7 @@ import type { Recipe } from '@/domain/recipes/types';
 import { deckPosition, SPIN_DELAYS, type SpinSettings } from '@/domain/suggestions/surpriseDeck';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { PhotoScrim } from '@/ui/patterns/PhotoScrim';
+import { announce } from '@/ui/primitives/accessibility';
 import { Button } from '@/ui/primitives/Button';
 import { Icon } from '@/ui/primitives/Icon';
 import { Screen } from '@/ui/primitives/Screen';
@@ -48,6 +49,8 @@ export function SurpriseScreen() {
     setFlash(undefined);
     setSpinning(false);
     setLanded((n) => n + 1);
+    // The card changes under VoiceOver's focus without a word; say where the spin landed.
+    announce(recipe.title);
     void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success).catch(() => undefined);
   };
   const spin = () => {

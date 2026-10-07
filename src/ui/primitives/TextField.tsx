@@ -7,12 +7,15 @@ import { useTheme } from '@/ui/theme/ThemeProvider';
 import { textStyle } from '@/ui/theme/fonts';
 import { RADIUS, SPACE, TAP_TARGET, TYPE } from '@/ui/tokens/type';
 import { Text } from './Text';
+import { useAnnounce } from './accessibility';
 
 type Props = Omit<TextInputProps, 'style'> & { label: string; hint?: string | undefined; error?: string | undefined };
 
 export function TextField({ label, hint, error, ...input }: Props) {
   const styles = useStyles();
   const { colours } = useTheme();
+  // VoiceOver hears the problem as it appears, not only when it finds the line.
+  useAnnounce(error);
   return (
     <View style={styles.wrap}>
       <Text variant="kicker">{label}</Text>

@@ -8,6 +8,7 @@ import { View } from 'react-native';
 import { joinWithCode, useHousehold } from '@/store/household';
 import { goBack } from '@/lib/navigation';
 import { useToast } from '@/ui/patterns/Toast';
+import { useAnnounce } from '@/ui/primitives/accessibility';
 import { Button } from '@/ui/primitives/Button';
 import { Sheet } from '@/ui/primitives/Sheet';
 import { Text } from '@/ui/primitives/Text';
@@ -22,6 +23,7 @@ export function JoinScreen({ code }: { code: string }) {
   const [name, setName] = useState('');
   const [busy, setBusy] = useState(false);
   const [problem, setProblem] = useState<string | undefined>();
+  useAnnounce(problem);
   const clean = code.trim().toUpperCase();
 
   const join = async () => {

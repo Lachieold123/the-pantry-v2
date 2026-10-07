@@ -1,7 +1,7 @@
 # How Home decides what to show
 
 **Status:** built 7 October 2026 (Claude, delegated). The numbers are a first tuning; the questions at the end are for Lachlan, and the app uses the recommended answer to each until he says otherwise.
-**Code:** `src/domain/suggestions/` — `rank.ts` (the steps), `score.ts` (the weights and reason lines), `moment.ts` (fit to now), `signals.ts` (what you've done), `diversify.ts` (variety). `home.ts` lays the result out as cards, grid and shelf. Wired up in `src/store/suggestions.ts` (`useHomeRanking`).
+**Code:** `src/domain/suggestions/` — `rank.ts` (the steps), `score.ts` (the weights and reason lines), `moment.ts` (fit to now), `signals.ts` (what you've done), `diversify.ts` (variety). `home.ts` lays the result out as cards, grid and shelf; `slot.ts` scores the same way for a meal being planned (§3.9). Wired up in `src/store/suggestions.ts` (`useHomeRanking`, `useSlotIdeas`).
 
 ---
 
@@ -96,6 +96,19 @@ Each dish gets a small fixed nudge that depends on the date. Within a day it nev
 ### 3.8 A new cook
 
 With no history, no cupboard and no settings, the score is just fit to now, time, season, quality and the daily nudge, then the variety re-rank. The first screen is five reviewed, photographed dinners that fit a weeknight, from at least four cuisines, and it's different tomorrow.
+
+### 3.9 Planning a meal (the Plan tab)
+
+Plan's "Picked for you" and the ideas in Add to plan use this same scorer (`slot.ts`, `rankForSlot`), scored for the meal being planned, not for now:
+
+- **The meal is a hard rule**, like Home's Meal filter. A breakfast slot only offers breakfasts.
+- **The day is the planned day.** Saturday's dinner gets the weekend's extra time and "Weekend cooking"; a Tuesday dinner gets the weeknight limit. The season is that day's season.
+- **The hour is the meal's**: breakfast 8am, lunch midday, dinner 6pm, so a reason line reads right for the meal ("Quick" for breakfast, "Quick for a weeknight" for a Tuesday dinner).
+- **"Already coming" means that day's week.** Planning next Thursday, a dish on next Monday's plan is pushed down; one on this week's plan isn't.
+- **History is measured from now**: cooked lately, saved, opened, and the cupboard are as they are today, so every reason is true when you read it.
+- The daily nudge uses the planned day, so each day of the week offers a different set and none reshuffles while you plan.
+
+With no meal to fill (the day is full, and a tap just opens the recipe), the ideas are dinners.
 
 ## 4. The reason on each card
 
@@ -204,10 +217,10 @@ Each is built with the recommended answer. Say if you want any changed.
 
 - **Purity.** All ranking code is in `src/domain/suggestions/`, with no React and no packages (D-015). Time comes in as a `Moment` (`{ today, hour, minute, nowMs }`); nothing inside reads the clock. The store builds it from `new Date()` rounded to the quarter hour.
 - **Entry point.** `rankHome(input): { picks, ready, nearly, reasons }`. Input: all recipes, taste (diet, avoid, cuisines, weeknight), hidden ids, Home filters, history (cook log, bookmarks, recently viewed, this week's planned ids), the cupboard engine's matches, the ingredient index, the moment, and `depth` (places to re-rank for variety).
-- **Hard rules** reuse `eligibleForSurprise` (the same rules as Surprise me and "For you").
+- **Hard rules** reuse `eligibleForSurprise` (the same rules as Surprise me and the cupboard engine).
 - **Score** (`scoreRecipe`) returns `{ score, parts, reason }`. `parts` is a record of named point totals (`meal`, `time`, `season`, `cupboard`, `taste`, `fresh`, `quality`, `jitter`); `score` is their sum.
-- **Daily nudge** is `stableJitter(today, recipeId)` (FNV-1a hash, 0–1), shared with the cupboard engine.
+- **Daily nudge** is `stableJitter(today, recipeId)` (`jitter.ts`, FNV-1a hash, 0–1), shared with the cupboard engine and Browse.
 - **Variety** (`diversify`) is a greedy re-rank with maximal-marginal-relevance-style penalties, over the top `depth` places; the rest keep score order. Main protein is the first meat or seafood line in the recipe (`mainProtein`), from ingredient groups, so it never guesses from text.
 - **Cost.** About 300 recipes are scored twice and the top 29 re-ranked on each change of input: a few milliseconds.
-- **Tests** (`node:test`): `moment.test.ts`, `signals.test.ts`, `diversify.test.ts`, `rank.test.ts` (behaviour), `rank.property.test.ts` (150 random cooks over the real catalogue: hard rules, true reasons, line length, no duplicates, stability, layout), plus `home.test.ts`. The reason check (`src/domain/testing/home.ts`, `falseReason`) re-derives every claim from the raw inputs, never from the ranking's own signals.
-- **Not changed:** `forYou.ts` (Plan's "Picked for you" and Add to plan) still ranks dinners only. Moving Plan onto `rankHome` is a sensible follow-up.
+- **Tests** (`node:test`): `moment.test.ts`, `signals.test.ts`, `diversify.test.ts`, `rank.test.ts` (behaviour), `rank.property.test.ts` (150 random cooks over the real catalogue: hard rules, true reasons, line length, no duplicates, stability, layout), `slot.test.ts` (Plan: right meal, right day, that week's plan, true reasons, hard rules), plus `home.test.ts`. The reason check (`src/domain/testing/home.ts`, `falseReason`) re-derives every claim from the raw inputs, never from the ranking's own signals.
+- **Plan** (`slot.ts`): `rankForSlot` builds a `RankInput` for one planned meal (Meal filter = the slot, a moment at the slot's day and hour with `nowMs` still now, and that week's planned ids) and calls `rankHome`. It replaced `forYou.ts`, which ranked dinners only, so breakfast and lunch slots used to get dinner-tagged dishes. Wired in `useSlotIdeas` (`src/store/suggestions.ts`).

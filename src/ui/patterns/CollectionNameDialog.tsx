@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { KeyboardAvoidingView, Modal, Platform, Pressable, StyleSheet, TextInput, View } from 'react-native';
 
 import { Text } from '@/ui/primitives/Text';
+import { useAnnounce } from '@/ui/primitives/accessibility';
 import { textStyle } from '@/ui/theme/fonts';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { useTheme } from '@/ui/theme/ThemeProvider';
@@ -51,6 +52,7 @@ function DialogCard({ title, confirmLabel, initialName = '', problem, onSubmit, 
   // A blank name just disables Create; only a real clash earns a message.
   const error = trimmed ? problem(trimmed) : undefined;
   const canSave = trimmed.length > 0 && error === undefined;
+  useAnnounce(error);
   const submit = () => {
     if (canSave) onSubmit(trimmed);
   };
