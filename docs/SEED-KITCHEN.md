@@ -68,6 +68,7 @@ Everything runs on Haiku 4.5. A finished recipe costs about 1.7 US cents: writin
 - When the writer uses an ingredient the database doesn't know ("spam", "banana leaves"), it isn't asked to rewrite the recipe. The checker declares the ingredient, and one cheap check gives it its groups. These rows are marked `auto: groups from one check`. A rewrite costs about ten times as much.
 - An alias pointing at an id the database doesn't have is treated the same way: as a new ingredient.
 - Menus are planned a few dishes at a time, only just ahead of the writing.
+- Writing is paced to the photos (`per_tick.write` 2, `photo` 6). Pexels' free tier, about 190 searches an hour, is the bottleneck, so when the cap is reached no money has gone on written recipes still waiting for a photo.
 
 ## Not done yet (P9)
 
