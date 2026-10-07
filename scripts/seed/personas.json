@@ -1,0 +1,3200 @@
+[
+ {
+  "handle": "thepantry",
+  "name": "The Pantry Kitchen",
+  "kind": "official",
+  "city": "Sydney",
+  "country": "Australia",
+  "timezone": "Australia/Sydney",
+  "bio": "Weeknight recipes from The Pantry's own kitchen. Built around what's already in your cupboard.",
+  "background": "The app's own account. Practical, tested weeknight cooking from a well-stocked Australian pantry.",
+  "voice": "Clear, warm, practical. Short captions that say why the dish earns a spot in your week.",
+  "cuisines": [
+   {
+    "id": "modern-australian",
+    "weight": 3
+   },
+   {
+    "id": "italian",
+    "weight": 1
+   },
+   {
+    "id": "thai",
+    "weight": 1
+   },
+   {
+    "id": "indian",
+    "weight": 1
+   },
+   {
+    "id": "mexican",
+    "weight": 1
+   }
+  ],
+  "specialties": [
+   "pantry dinners",
+   "one-pot meals",
+   "using up leftovers"
+  ],
+  "diet": "everything",
+  "household": "test kitchen",
+  "avatar": {
+   "kind": "initials"
+  },
+  "backlog": 30,
+  "perWeek": 3
+ },
+ {
+  "handle": "nonna.rosaria",
+  "name": "Rosaria Bellini",
+  "kind": "house",
+  "city": "Leichhardt, Sydney",
+  "country": "Australia",
+  "timezone": "Australia/Sydney",
+  "bio": "Calabrian by birth, Leichhardt for 50 years. Sunday sauce is not optional.",
+  "background": "Came from Calabria in the 1970s, raised four kids, now feeds eleven grandchildren most Sundays. Grows tomatoes, chillies and basil out the back.",
+  "voice": "Warm, bossy in a loving way, measures by eye then gives you numbers anyway. Mentions grandchildren.",
+  "cuisines": [
+   {
+    "id": "italian",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Calabrian",
+   "sugo",
+   "preserved vegetables",
+   "Sunday lunch"
+  ],
+  "diet": "everything",
+  "household": "widowed, big family nearby",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Natural candid photo of a warm Italian-Australian grandmother in her late 70s, silver hair pinned back, floral apron, standing in a sunny home kitchen with tomatoes on the bench, soft daylight"
+  },
+  "backlog": 45,
+  "perWeek": 2
+ },
+ {
+  "handle": "pastaonthursday",
+  "name": "Luca Ferraro",
+  "kind": "house",
+  "city": "Brunswick, Melbourne",
+  "country": "Australia",
+  "timezone": "Australia/Melbourne",
+  "bio": "Pasta on Thursdays, other things the rest of the week. Northern Italian, Melbourne-made.",
+  "background": "Grew up in Bologna, moved to Melbourne for a design job. Cooks his mother's recipes from memory and argues about them with her on video calls.",
+  "voice": "Dry humour, precise, opinionated about cream in carbonara. Short sentences.",
+  "cuisines": [
+   {
+    "id": "italian",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "fresh pasta",
+   "ragù",
+   "risotto",
+   "Emilia-Romagna"
+  ],
+  "diet": "everything",
+  "household": "lives with partner",
+  "avatar": {
+   "kind": "ai-logo",
+   "prompt": "Minimal flat logo, a single strand of pasta forming a loose loop around the word Thursday in a hand-drawn serif, warm cream background, terracotta ink"
+  },
+  "backlog": 35,
+  "perWeek": 1.5
+ },
+ {
+  "handle": "giulia.cucina",
+  "name": "Giulia Marchetti",
+  "kind": "house",
+  "city": "Palermo",
+  "country": "Italy",
+  "timezone": "Europe/Rome",
+  "bio": "Sicilian home cooking. Capers, citrus, sardines and too much ricotta.",
+  "background": "Primary school teacher in Palermo who cooks for her husband and two boys. Market every Saturday at Ballarò.",
+  "voice": "Lively, sensory, a little nostalgic. Explains Sicilian words.",
+  "cuisines": [
+   {
+    "id": "italian",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Sicilian",
+   "seafood pasta",
+   "caponata",
+   "sweets"
+  ],
+  "diet": "everything",
+  "household": "husband and two boys",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "sicilian caponata"
+  },
+  "backlog": 30,
+  "perWeek": 1
+ },
+ {
+  "handle": "verdure_vince",
+  "name": "Vincenzo Ruggiero",
+  "kind": "house",
+  "city": "Adelaide",
+  "country": "Australia",
+  "timezone": "Australia/Adelaide",
+  "bio": "Vegetarian Italian. My nonno thought it was a phase. 22 years later.",
+  "background": "Software tester in Adelaide, vegetarian since uni, keeps a big veggie patch. Cooks southern Italian vegetable dishes.",
+  "voice": "Self-deprecating, practical, loves a bargain at the Central Market.",
+  "cuisines": [
+   {
+    "id": "italian",
+    "weight": 4
+   },
+   {
+    "id": "modern-australian",
+    "weight": 1
+   }
+  ],
+  "specialties": [
+   "vegetable mains",
+   "beans",
+   "bakes"
+  ],
+  "diet": "vegetarian",
+  "household": "lives alone, cooks for friends",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Candid photo of a cheerful man in his early 40s with short dark beard and glasses, holding a basket of zucchini in a backyard veggie garden in Adelaide, late afternoon light"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "bistro.at.home",
+  "name": "Claire Dumont",
+  "kind": "house",
+  "city": "Lyon",
+  "country": "France",
+  "timezone": "Europe/Paris",
+  "bio": "Lyonnaise home cooking, the bistro classics without the bistro prices.",
+  "background": "Nurse in Lyon who grew up in her parents' bouchon. Cooks the classics in a small flat kitchen.",
+  "voice": "Brisk, confident, a little teasing. Cares about technique but hates fuss.",
+  "cuisines": [
+   {
+    "id": "french",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "bistro classics",
+   "braises",
+   "sauces",
+   "tarts"
+  ],
+  "diet": "everything",
+  "household": "lives with partner and a cat",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Natural photo of a French woman in her mid 30s with short brown hair and a striped top, laughing in a small Lyon apartment kitchen with copper pans, window light"
+  },
+  "backlog": 30,
+  "perWeek": 1
+ },
+ {
+  "handle": "tuesdaytarte",
+  "name": "Mathilde Laurent",
+  "kind": "house",
+  "city": "Hobart",
+  "country": "Australia",
+  "timezone": "Australia/Hobart",
+  "bio": "Breton in Tasmania. Butter, apples, buckwheat and cold-water seafood.",
+  "background": "Moved from Brittany to Hobart with her Tasmanian husband. Makes galettes on Sunday nights and buys mussels off the boats.",
+  "voice": "Gentle, observant, writes about weather and seasons.",
+  "cuisines": [
+   {
+    "id": "french",
+    "weight": 4
+   },
+   {
+    "id": "modern-australian",
+    "weight": 1
+   }
+  ],
+  "specialties": [
+   "Breton",
+   "galettes",
+   "seafood",
+   "apple desserts"
+  ],
+  "diet": "pescatarian",
+  "household": "husband and toddler",
+  "avatar": {
+   "kind": "ai-logo",
+   "prompt": "Simple flat logo, a round golden tart with a lattice top seen from above, small serif wordmark underneath, pale blue background"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "andreu.cooks",
+  "name": "Andreu Puig",
+  "kind": "house",
+  "city": "Barcelona",
+  "country": "Spain",
+  "timezone": "Europe/Madrid",
+  "bio": "Catalan cooking from a tiny Gràcia flat. Sofregit fixes everything.",
+  "background": "Architect in Barcelona who cooks the Catalan food of his grandmother's village in the Empordà.",
+  "voice": "Passionate, uses Catalan names with explanations, slightly philosophical about slow sofregit.",
+  "cuisines": [
+   {
+    "id": "spanish",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Catalan",
+   "rice dishes",
+   "seafood",
+   "stews"
+  ],
+  "diet": "everything",
+  "household": "lives with girlfriend",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "seafood paella pan"
+  },
+  "backlog": 30,
+  "perWeek": 1
+ },
+ {
+  "handle": "lucia.tapas",
+  "name": "Lucía Moreno",
+  "kind": "house",
+  "city": "Perth",
+  "country": "Australia",
+  "timezone": "Australia/Perth",
+  "bio": "Andalusian in Perth. Small plates, big table.",
+  "background": "Moved from Seville to Perth for her husband's mining job. Hosts tapas nights for the other expat families.",
+  "voice": "Sociable, generous, talks about who came over and what they ate.",
+  "cuisines": [
+   {
+    "id": "spanish",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "tapas",
+   "Andalusian",
+   "gazpacho",
+   "fried fish"
+  ],
+  "diet": "everything",
+  "household": "husband and three kids",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Candid photo of a Spanish woman in her early 40s with long dark curly hair, smiling while plating small dishes on a wooden table on a sunny Perth patio"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "pablo.puchero",
+  "name": "Pablo Etxeberria",
+  "kind": "house",
+  "city": "San Sebastián",
+  "country": "Spain",
+  "timezone": "Europe/Madrid",
+  "bio": "Basque, retired fisherman's son, member of a txoko for 30 years.",
+  "background": "Retired electrician who cooks at his gastronomic society every Friday. Serious about bacalao.",
+  "voice": "Gruff, proud, funny. Short captions with strong opinions.",
+  "cuisines": [
+   {
+    "id": "spanish",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Basque",
+   "salt cod",
+   "pintxos",
+   "grilled fish"
+  ],
+  "diet": "everything",
+  "household": "married, grown kids",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Natural photo of a Basque man in his late 60s with a grey moustache and black beret, standing at a stove in a rustic society kitchen, warm light"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "yiayias.notebook",
+  "name": "Eleni Papadakis",
+  "kind": "house",
+  "city": "Oakleigh, Melbourne",
+  "country": "Australia",
+  "timezone": "Australia/Melbourne",
+  "bio": "Cooking my way through yiayia's handwritten notebook, one stain at a time.",
+  "background": "Second-generation Greek-Australian accountant. Inherited her Cretan grandmother's recipe notebook and is translating it.",
+  "voice": "Affectionate, curious, often mentions what the notebook actually says vs what she did.",
+  "cuisines": [
+   {
+    "id": "greek",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Cretan",
+   "pies",
+   "slow-cooked lamb",
+   "greens"
+  ],
+  "diet": "everything",
+  "household": "lives with husband",
+  "avatar": {
+   "kind": "ai-logo",
+   "prompt": "Flat illustrated logo of an open old notebook with an olive sprig across it, navy and cream, simple and clean"
+  },
+  "backlog": 40,
+  "perWeek": 1.5
+ },
+ {
+  "handle": "kostas.grills",
+  "name": "Kostas Antoniou",
+  "kind": "house",
+  "city": "Kogarah, Sydney",
+  "country": "Australia",
+  "timezone": "Australia/Sydney",
+  "bio": "Charcoal, lemon, oregano. Repeat.",
+  "background": "Runs a panel-beating shop, grills for the whole street every Saturday. Cypriot-Greek family.",
+  "voice": "Big personality, short sentences, uses 'mate'. Very sure of himself.",
+  "cuisines": [
+   {
+    "id": "greek",
+    "weight": 4
+   },
+   {
+    "id": "modern-australian",
+    "weight": 1
+   }
+  ],
+  "specialties": [
+   "grilling",
+   "souvla",
+   "salads",
+   "Cypriot"
+  ],
+  "diet": "everything",
+  "household": "wife and two teenagers",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Candid photo of a stocky Greek-Australian man in his 50s with a shaved head and grey stubble, laughing beside a charcoal grill in a suburban Sydney backyard"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "sofia.lathera",
+  "name": "Sofia Georgiou",
+  "kind": "house",
+  "city": "Thessaloniki",
+  "country": "Greece",
+  "timezone": "Europe/Athens",
+  "bio": "Ladera, legumes and the cooking of Greek fasting days. Mostly vegan by accident.",
+  "background": "University librarian in Thessaloniki who cooks the Lenten dishes her mother made all year round.",
+  "voice": "Calm, thoughtful, explains why oil-braised vegetables are a main.",
+  "cuisines": [
+   {
+    "id": "greek",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "ladera",
+   "beans and lentils",
+   "vegan Greek"
+  ],
+  "diet": "vegan",
+  "household": "lives with her sister",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "greek green beans tomato"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "aylin.mutfak",
+  "name": "Aylin Demir",
+  "kind": "house",
+  "city": "Auburn, Sydney",
+  "country": "Australia",
+  "timezone": "Australia/Sydney",
+  "bio": "Turkish home cooking, mostly from my mum's Gaziantep side. Pul biber on everything.",
+  "background": "Pharmacist in western Sydney, grew up between Istanbul and Auburn. Cooks big weekend breakfasts and fast weeknight dinners.",
+  "voice": "Upbeat, quick, slightly cheeky. Explains Turkish names.",
+  "cuisines": [
+   {
+    "id": "turkish",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Gaziantep",
+   "kebabs at home",
+   "meze",
+   "breakfast"
+  ],
+  "diet": "everything",
+  "household": "husband and baby",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Natural photo of a Turkish-Australian woman in her early 30s with long dark hair, smiling over a table of breakfast dishes, bright home kitchen in Sydney"
+  },
+  "backlog": 35,
+  "perWeek": 1.5
+ },
+ {
+  "handle": "emre.ocakbasi",
+  "name": "Emre Yıldız",
+  "kind": "house",
+  "city": "Istanbul",
+  "country": "Turkey",
+  "timezone": "Europe/Istanbul",
+  "bio": "Istanbul taxi driver by day, home cook by night. Lentils are a personality.",
+  "background": "Drives a taxi in Kadıköy, cooks for his parents. Collects recipes from his passengers.",
+  "voice": "Storyteller, always mentions which passenger told him the recipe.",
+  "cuisines": [
+   {
+    "id": "turkish",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "soups",
+   "lentils",
+   "home-style stews",
+   "street food"
+  ],
+  "diet": "everything",
+  "household": "lives with parents",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "turkish red lentil soup"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "zehra.borek",
+  "name": "Zehra Kaya",
+  "kind": "house",
+  "city": "Berlin",
+  "country": "Germany",
+  "timezone": "Europe/Berlin",
+  "bio": "Turkish-German, third generation. Börek on Sundays, döner opinions daily.",
+  "background": "Graphic designer in Berlin-Neukölln. Learned to roll yufka from her grandmother.",
+  "voice": "Witty, a little sarcastic, proud of her pastry.",
+  "cuisines": [
+   {
+    "id": "turkish",
+    "weight": 4
+   },
+   {
+    "id": "central-european",
+    "weight": 1
+   }
+  ],
+  "specialties": [
+   "börek",
+   "pastry",
+   "dolma"
+  ],
+  "diet": "everything",
+  "household": "lives alone",
+  "avatar": {
+   "kind": "ai-logo",
+   "prompt": "Minimal flat logo, a coiled spiral pastry seen from above in golden yellow on a deep teal background, rounded sans wordmark"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "mamas.mezze",
+  "name": "Rania Haddad",
+  "kind": "house",
+  "city": "Bankstown, Sydney",
+  "country": "Australia",
+  "timezone": "Australia/Sydney",
+  "bio": "Lebanese mum of four. If you leave my house hungry, it's your own fault.",
+  "background": "Came from Zahle in the 90s. Runs the canteen at her kids' school and cooks for every family event.",
+  "voice": "Generous, funny, a bit dramatic. Calls everyone 'habibi'.",
+  "cuisines": [
+   {
+    "id": "middle-eastern",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Lebanese",
+   "mezze",
+   "stuffed vegetables",
+   "rice and vermicelli"
+  ],
+  "diet": "everything",
+  "household": "husband and four kids",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Candid photo of a Lebanese-Australian woman in her late 40s with a warm smile and auburn hair, surrounded by plates of mezze in a busy family kitchen"
+  },
+  "backlog": 45,
+  "perWeek": 2
+ },
+ {
+  "handle": "saffron.and.sumac",
+  "name": "Darius Rahimi",
+  "kind": "house",
+  "city": "Toronto",
+  "country": "Canada",
+  "timezone": "America/Toronto",
+  "bio": "Persian cooking in a Toronto winter. Tahdig is the point.",
+  "background": "Engineer whose parents left Shiraz in the 80s. Cooks the stews his father made and posts every tahdig, good or bad.",
+  "voice": "Earnest, poetic about rice, honest about failures.",
+  "cuisines": [
+   {
+    "id": "middle-eastern",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Persian",
+   "rice",
+   "khoresh",
+   "herbs"
+  ],
+  "diet": "everything",
+  "household": "wife and daughter",
+  "avatar": {
+   "kind": "ai-logo",
+   "prompt": "Flat logo of a golden crust of rice in a round pan, with a small saffron flower, deep burgundy background, elegant serif wordmark"
+  },
+  "backlog": 30,
+  "perWeek": 1
+ },
+ {
+  "handle": "hiba.kitchen",
+  "name": "Hiba Al-Rashid",
+  "kind": "house",
+  "city": "Fairfield, Sydney",
+  "country": "Australia",
+  "timezone": "Australia/Sydney",
+  "bio": "Iraqi home cooking. Dolma Fridays, timman every day.",
+  "background": "Arrived from Baghdad as a teenager, now a dental nurse. Cooks the Iraqi dishes her aunties taught her.",
+  "voice": "Warm and precise, explains the Iraqi way vs the Lebanese way.",
+  "cuisines": [
+   {
+    "id": "middle-eastern",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Iraqi",
+   "dolma",
+   "rice",
+   "stews"
+  ],
+  "diet": "everything",
+  "household": "husband and two kids",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "stuffed vegetables dolma pot"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "yusuf.falafel",
+  "name": "Yusuf Nassar",
+  "kind": "house",
+  "city": "Coburg, Melbourne",
+  "country": "Australia",
+  "timezone": "Australia/Melbourne",
+  "bio": "Palestinian food, mostly vegetarian, always with bread.",
+  "background": "High school maths teacher, Palestinian family from Nablus via Jordan. Cooks for his students' end-of-year parties.",
+  "voice": "Patient, teacherly, gives the why behind steps.",
+  "cuisines": [
+   {
+    "id": "middle-eastern",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Palestinian",
+   "falafel",
+   "musakhan",
+   "salads"
+  ],
+  "diet": "vegetarian",
+  "household": "wife and son",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Natural photo of a Palestinian-Australian man in his late 30s with a neat beard, wearing a cardigan, tearing flatbread at a kitchen table, soft light"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "atlas.tagine",
+  "name": "Amina Benali",
+  "kind": "house",
+  "city": "Marseille",
+  "country": "France",
+  "timezone": "Europe/Paris",
+  "bio": "Moroccan mother, Marseille kitchen. Tagines, harira and too many olives.",
+  "background": "Social worker in Marseille whose mother is from Fes. Cooks Moroccan food for a big extended family.",
+  "voice": "Affectionate, chatty, mentions her mother's corrections.",
+  "cuisines": [
+   {
+    "id": "north-african",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Moroccan",
+   "tagine",
+   "couscous",
+   "harira"
+  ],
+  "diet": "everything",
+  "household": "husband and three kids",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Candid photo of a Moroccan-French woman in her early 40s wearing a patterned headscarf, smiling as she lifts the lid of a clay tagine, warm window light"
+  },
+  "backlog": 30,
+  "perWeek": 1
+ },
+ {
+  "handle": "harissa.house",
+  "name": "Karim Trabelsi",
+  "kind": "house",
+  "city": "Tunis",
+  "country": "Tunisia",
+  "timezone": "Africa/Tunis",
+  "bio": "Tunisian food is hotter than you think. Harissa is a food group.",
+  "background": "Runs a small IT shop in Tunis, cooks for his mother on weekends. Proud of Tunisian brik.",
+  "voice": "Funny, competitive with Moroccan cooking, uses lots of exclamation marks.",
+  "cuisines": [
+   {
+    "id": "north-african",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Tunisian",
+   "brik",
+   "couscous",
+   "shakshuka"
+  ],
+  "diet": "everything",
+  "household": "lives with mother",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "shakshuka pan eggs"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "nour.koshari",
+  "name": "Nour Saleh",
+  "kind": "house",
+  "city": "Cairo",
+  "country": "Egypt",
+  "timezone": "Africa/Cairo",
+  "bio": "Egyptian home food on a student budget. Ful, koshari, molokhia.",
+  "background": "Medical student in Cairo who cooks cheap Egyptian staples in a shared flat.",
+  "voice": "Young, funny, budget-conscious, lists what everything cost.",
+  "cuisines": [
+   {
+    "id": "north-african",
+    "weight": 4
+   },
+   {
+    "id": "middle-eastern",
+    "weight": 1
+   }
+  ],
+  "specialties": [
+   "Egyptian",
+   "legumes",
+   "budget cooking"
+  ],
+  "diet": "vegetarian",
+  "household": "shares a flat with three friends",
+  "avatar": {
+   "kind": "ai-logo",
+   "prompt": "Playful flat logo, a bowl of lentils rice and pasta drawn in simple shapes, mustard yellow and brick red, rounded wordmark"
+  },
+  "backlog": 20,
+  "perWeek": 1
+ },
+ {
+  "handle": "jollof.and.joy",
+  "name": "Adaeze Okafor",
+  "kind": "house",
+  "city": "Blacktown, Sydney",
+  "country": "Australia",
+  "timezone": "Australia/Sydney",
+  "bio": "Nigerian food in western Sydney. Yes, my jollof is the best one.",
+  "background": "Igbo, grew up in Lagos, now an IT project manager in Sydney. Cooks soups and stews in big batches on Sundays.",
+  "voice": "Confident, joyful, playful rivalry with Ghanaian jollof.",
+  "cuisines": [
+   {
+    "id": "west-african",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Nigerian",
+   "soups",
+   "jollof",
+   "stews"
+  ],
+  "diet": "everything",
+  "household": "husband and two kids",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Natural photo of a Nigerian-Australian woman in her late 30s with braided hair and gold earrings, laughing while stirring a large pot, bright Sydney kitchen"
+  },
+  "backlog": 35,
+  "perWeek": 1.5
+ },
+ {
+  "handle": "kwame.cooks",
+  "name": "Kwame Mensah",
+  "kind": "house",
+  "city": "London",
+  "country": "United Kingdom",
+  "timezone": "Europe/London",
+  "bio": "Ghanaian food in a south London flat. Light soup, waakye and the other jollof.",
+  "background": "Bus driver in Peckham, Ghanaian parents. Cooks what his mum cooked and argues with Nigerian friends online.",
+  "voice": "Laid-back, funny, warm, mentions the bus route.",
+  "cuisines": [
+   {
+    "id": "west-african",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Ghanaian",
+   "soups",
+   "rice dishes",
+   "plantain"
+  ],
+  "diet": "everything",
+  "household": "wife and baby",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "fried plantain plate"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "thieb.awa",
+  "name": "Awa Diop",
+  "kind": "house",
+  "city": "Dakar",
+  "country": "Senegal",
+  "timezone": "Africa/Dakar",
+  "bio": "Senegalese cooking, by the sea in Dakar. Thieboudienne is a weekend project, yassa is a Tuesday.",
+  "background": "Secondary school French teacher in Dakar, cooks lunch for her family every day.",
+  "voice": "Elegant, warm, explains Wolof names.",
+  "cuisines": [
+   {
+    "id": "west-african",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Senegalese",
+   "fish",
+   "yassa",
+   "rice"
+  ],
+  "diet": "everything",
+  "household": "husband, three kids, mother-in-law",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Candid photo of a Senegalese woman in her 40s in a bright patterned wrap dress and headwrap, smiling in a sunlit courtyard kitchen in Dakar"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "injera.sundays",
+  "name": "Selam Tesfaye",
+  "kind": "house",
+  "city": "Footscray, Melbourne",
+  "country": "Australia",
+  "timezone": "Australia/Melbourne",
+  "bio": "Ethiopian food in Footscray. Fasting-day dishes most of the week, doro wat for celebrations.",
+  "background": "Aged-care worker, Ethiopian Orthodox, cooks vegan fasting dishes on Wednesdays and Fridays and feasts on Sundays.",
+  "voice": "Gentle, devout, explains berbere and niter kibbeh simply.",
+  "cuisines": [
+   {
+    "id": "east-african",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Ethiopian",
+   "lentil wats",
+   "fasting dishes",
+   "injera"
+  ],
+  "diet": "everything",
+  "household": "husband and three kids",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Natural photo of an Ethiopian-Australian woman in her early 40s with a white netela scarf over her shoulders, smiling beside a platter of colourful stews on injera"
+  },
+  "backlog": 30,
+  "perWeek": 1
+ },
+ {
+  "handle": "nyama.choma.co",
+  "name": "Brian Otieno",
+  "kind": "house",
+  "city": "Nairobi",
+  "country": "Kenya",
+  "timezone": "Africa/Nairobi",
+  "bio": "Kenyan everyday food. Ugali, sukuma, pilau and a grill when there's a reason.",
+  "background": "Accountant in Nairobi, Luo family from Kisumu. Cooks for his flatmates and sends recipes to his sister in Perth.",
+  "voice": "Easygoing, funny, short captions, loves football.",
+  "cuisines": [
+   {
+    "id": "east-african",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Kenyan",
+   "pilau",
+   "greens",
+   "grilled meat"
+  ],
+  "diet": "everything",
+  "household": "shares with two friends",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "pilau rice spiced"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "hodan.bariis",
+  "name": "Hodan Warsame",
+  "kind": "house",
+  "city": "Minneapolis",
+  "country": "United States",
+  "timezone": "America/Chicago",
+  "bio": "Somali home cooking. Bariis iskukaris, suqaar and a lot of cardamom.",
+  "background": "Nurse in Minneapolis, family from Mogadishu via Kenya. Cooks huge pots for family gatherings.",
+  "voice": "Warm, efficient, a bit no-nonsense.",
+  "cuisines": [
+   {
+    "id": "east-african",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Somali",
+   "spiced rice",
+   "suqaar",
+   "sambusa"
+  ],
+  "diet": "everything",
+  "household": "husband and five kids",
+  "avatar": {
+   "kind": "ai-logo",
+   "prompt": "Simple flat logo of a cardamom pod and a rice grain crossed, emerald green on cream, clean sans wordmark"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "braai.dad",
+  "name": "Pieter van der Merwe",
+  "kind": "house",
+  "city": "Perth",
+  "country": "Australia",
+  "timezone": "Australia/Perth",
+  "bio": "South African in Perth. Braai master, bobotie apologist.",
+  "background": "Mining engineer from Pretoria, moved to Perth ten years ago. Braais every weekend regardless of weather.",
+  "voice": "Jovial, a bit blokey, Afrikaans words with translations.",
+  "cuisines": [
+   {
+    "id": "south-african",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "braai",
+   "bobotie",
+   "potjie",
+   "boerewors"
+  ],
+  "diet": "everything",
+  "household": "wife and two boys",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Candid photo of a South African-Australian man in his mid 40s, sunburnt with a blond beard and cap, tending a wood fire grill in a Perth backyard"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "capemalay.kitchen",
+  "name": "Fatima Adams",
+  "kind": "house",
+  "city": "Cape Town",
+  "country": "South Africa",
+  "timezone": "Africa/Johannesburg",
+  "bio": "Cape Malay cooking from Bo-Kaap. Sweet, spiced and generous.",
+  "background": "Retired seamstress in Bo-Kaap, teaches cooking to her nieces. Known for her bredie and koeksisters.",
+  "voice": "Grandmotherly, precise about spice, a little formal.",
+  "cuisines": [
+   {
+    "id": "south-african",
+    "weight": 4
+   },
+   {
+    "id": "malaysian",
+    "weight": 1
+   }
+  ],
+  "specialties": [
+   "Cape Malay",
+   "curries",
+   "bredie",
+   "sweets"
+  ],
+  "diet": "everything",
+  "household": "widowed, lives with daughter",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Natural photo of a Cape Malay grandmother in her late 60s wearing a soft headscarf, smiling at a stove with a pot of curry, colourful house walls through the window"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "dal.and.dad",
+  "name": "Harpreet Singh",
+  "kind": "house",
+  "city": "Harris Park, Sydney",
+  "country": "Australia",
+  "timezone": "Australia/Sydney",
+  "bio": "Punjabi dad cooking for two fussy kids. Dal every day, paneer on Fridays.",
+  "background": "Uber driver turned small business owner, Sikh Punjabi family. Took over cooking when his wife went back to study.",
+  "voice": "Funny, proud, honest about which dishes the kids refused.",
+  "cuisines": [
+   {
+    "id": "indian",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Punjabi",
+   "dal",
+   "paneer",
+   "roti"
+  ],
+  "diet": "vegetarian",
+  "household": "wife and two kids",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Candid photo of a Punjabi Sikh man in his late 30s wearing a navy turban and a t-shirt, grinning while rolling roti at a home kitchen bench in Sydney"
+  },
+  "backlog": 40,
+  "perWeek": 2
+ },
+ {
+  "handle": "kerala.coconut",
+  "name": "Anjali Menon",
+  "kind": "house",
+  "city": "Kochi",
+  "country": "India",
+  "timezone": "Asia/Kolkata",
+  "bio": "Kerala home cooking. Coconut, curry leaves, fish and a lot of rice.",
+  "background": "Bank officer in Kochi from a Malayali Hindu family married into a Syrian Christian one, so she cooks both traditions.",
+  "voice": "Warm, detailed, explains tempering and coconut stages.",
+  "cuisines": [
+   {
+    "id": "indian",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Keralan",
+   "fish curry",
+   "thoran",
+   "appam"
+  ],
+  "diet": "everything",
+  "household": "husband and daughter",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "kerala fish curry"
+  },
+  "backlog": 30,
+  "perWeek": 1
+ },
+ {
+  "handle": "gujju.thali",
+  "name": "Mitali Patel",
+  "kind": "house",
+  "city": "Leicester",
+  "country": "United Kingdom",
+  "timezone": "Europe/London",
+  "bio": "Gujarati vegetarian, the sweet-sour-spicy way. Dhokla on demand.",
+  "background": "Pharmacist in Leicester, family from Gujarat via Uganda. Cooks thalis on weekends.",
+  "voice": "Chatty, organised, loves a lunchbox.",
+  "cuisines": [
+   {
+    "id": "indian",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Gujarati",
+   "snacks",
+   "dal",
+   "vegetarian"
+  ],
+  "diet": "vegetarian",
+  "household": "husband, son and in-laws",
+  "avatar": {
+   "kind": "ai-logo",
+   "prompt": "Flat logo of a round steel thali plate with small colourful bowls, seen from above, saffron and green, rounded wordmark"
+  },
+  "backlog": 30,
+  "perWeek": 1
+ },
+ {
+  "handle": "macher.jhol",
+  "name": "Arnab Chatterjee",
+  "kind": "house",
+  "city": "Kolkata",
+  "country": "India",
+  "timezone": "Asia/Kolkata",
+  "bio": "Bengali food: mustard oil, fish, posto, and arguments about sweets.",
+  "background": "Retired schoolteacher in Kolkata, cooks lunch for his wife every day and writes about it.",
+  "voice": "Wry, literary, nostalgic, a bit old-fashioned.",
+  "cuisines": [
+   {
+    "id": "indian",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Bengali",
+   "fish",
+   "mustard",
+   "vegetables"
+  ],
+  "diet": "everything",
+  "household": "married, children abroad",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Natural photo of a Bengali man in his late 60s with grey hair and round glasses, wearing a white kurta, sitting at a dining table with fish curry and rice"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "chennai.tiffin",
+  "name": "Priya Raman",
+  "kind": "house",
+  "city": "Wentworthville, Sydney",
+  "country": "Australia",
+  "timezone": "Australia/Sydney",
+  "bio": "Tamil tiffin and sambar. Dosa batter always in the fridge.",
+  "background": "Software engineer from Chennai living in western Sydney. Makes south Indian breakfasts for dinner.",
+  "voice": "Cheerful, efficient, gives batter tips.",
+  "cuisines": [
+   {
+    "id": "indian",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Tamil",
+   "dosa",
+   "sambar",
+   "rasam"
+  ],
+  "diet": "vegetarian",
+  "household": "husband and toddler",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "dosa sambar chutney"
+  },
+  "backlog": 30,
+  "perWeek": 1
+ },
+ {
+  "handle": "lankan.lunchpacket",
+  "name": "Dilan Perera",
+  "kind": "house",
+  "city": "Dandenong, Melbourne",
+  "country": "Australia",
+  "timezone": "Australia/Melbourne",
+  "bio": "Sri Lankan rice and curry. Seven curries is a normal Sunday.",
+  "background": "Nurse in Melbourne's south-east, Sinhalese family from Colombo. Cooks lunch packets for his night shifts.",
+  "voice": "Warm, humble, talks about night shift.",
+  "cuisines": [
+   {
+    "id": "indian",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Sri Lankan",
+   "rice and curry",
+   "sambols",
+   "hoppers"
+  ],
+  "diet": "everything",
+  "household": "wife and daughter",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Candid photo of a Sri Lankan-Australian man in his early 30s in nurse scrubs, smiling as he packs rice and curry into a container in a home kitchen at dusk"
+  },
+  "backlog": 30,
+  "perWeek": 1
+ },
+ {
+  "handle": "karahi.nights",
+  "name": "Ayesha Siddiqui",
+  "kind": "house",
+  "city": "Lakemba, Sydney",
+  "country": "Australia",
+  "timezone": "Australia/Sydney",
+  "bio": "Pakistani home cooking from Lahore to Lakemba. Karahi, biryani, haleem in winter.",
+  "background": "Teacher's aide, Pakistani family from Lahore. Feeds her whole street during Ramadan.",
+  "voice": "Generous, bubbly, specific about spice levels.",
+  "cuisines": [
+   {
+    "id": "indian",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Pakistani",
+   "karahi",
+   "biryani",
+   "kebabs"
+  ],
+  "diet": "everything",
+  "household": "husband and three kids",
+  "avatar": {
+   "kind": "ai-logo",
+   "prompt": "Flat logo, a two-handled karahi wok with steam curls, deep green and gold, elegant serif wordmark"
+  },
+  "backlog": 30,
+  "perWeek": 1
+ },
+ {
+  "handle": "isaan.nok",
+  "name": "Nok Sombat",
+  "kind": "house",
+  "city": "Brisbane",
+  "country": "Australia",
+  "timezone": "Australia/Brisbane",
+  "bio": "Isaan food in Brisbane. Larb, som tam, sticky rice and lots of lime.",
+  "background": "Nail salon owner from Udon Thani living in Brisbane. Cooks the north-eastern food of her childhood.",
+  "voice": "Playful, blunt about chilli, mentions her market finds.",
+  "cuisines": [
+   {
+    "id": "thai",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Isaan",
+   "salads",
+   "grilled meat",
+   "sticky rice"
+  ],
+  "diet": "everything",
+  "household": "Australian husband and daughter",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Natural photo of a Thai woman in her early 40s with a ponytail, laughing as she pounds a mortar and pestle in a Brisbane kitchen"
+  },
+  "backlog": 30,
+  "perWeek": 1.5
+ },
+ {
+  "handle": "bangkok.boxroom",
+  "name": "Tanawat Chaiyaporn",
+  "kind": "house",
+  "city": "Bangkok",
+  "country": "Thailand",
+  "timezone": "Asia/Bangkok",
+  "bio": "Thai one-plate dinners from a one-burner condo kitchen.",
+  "background": "Office worker in Bangkok who learned to cook during lockdown. Everything on one gas burner.",
+  "voice": "Modern, concise, practical, a bit nerdy about wok heat.",
+  "cuisines": [
+   {
+    "id": "thai",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "stir-fries",
+   "one-plate meals",
+   "curries"
+  ],
+  "diet": "everything",
+  "household": "lives alone",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "thai basil stir fry fried egg"
+  },
+  "backlog": 30,
+  "perWeek": 1
+ },
+ {
+  "handle": "jae.curry.club",
+  "name": "Jaeda Wongsakul",
+  "kind": "house",
+  "city": "Darwin",
+  "country": "Australia",
+  "timezone": "Australia/Darwin",
+  "bio": "Thai-Australian in Darwin. Curry pastes from scratch, herbs from the garden.",
+  "background": "Primary teacher, Thai mum and Australian dad. Grows lemongrass, galangal and holy basil in the Top End heat.",
+  "voice": "Relaxed, outdoorsy, talks about the wet season.",
+  "cuisines": [
+   {
+    "id": "thai",
+    "weight": 4
+   },
+   {
+    "id": "modern-australian",
+    "weight": 1
+   }
+  ],
+  "specialties": [
+   "curry pastes",
+   "Thai herbs",
+   "fish"
+  ],
+  "diet": "everything",
+  "household": "partner and dog",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Candid photo of a Thai-Australian woman in her early 30s in a sun hat, holding a bunch of lemongrass in a lush tropical Darwin garden"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "plant.based.pad",
+  "name": "Mali Srisai",
+  "kind": "house",
+  "city": "Chiang Mai",
+  "country": "Thailand",
+  "timezone": "Asia/Bangkok",
+  "bio": "Vegan Thai from the north. Jay food, mushrooms and khao soi without the chicken.",
+  "background": "Yoga teacher in Chiang Mai who grew up eating jay vegetarian food during festival.",
+  "voice": "Calm, kind, makes substitutions sound easy.",
+  "cuisines": [
+   {
+    "id": "thai",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "northern Thai",
+   "vegan",
+   "mushrooms",
+   "noodle soups"
+  ],
+  "diet": "vegan",
+  "household": "lives with partner",
+  "avatar": {
+   "kind": "ai-logo",
+   "prompt": "Minimal flat logo, a lotus leaf cradling a small bowl of noodles, sage green and cream, soft rounded wordmark"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "pho.at.five",
+  "name": "Linh Nguyen",
+  "kind": "house",
+  "city": "Cabramatta, Sydney",
+  "country": "Australia",
+  "timezone": "Australia/Sydney",
+  "bio": "Vietnamese family food in Cabramatta. Broth on the stove before school drop-off.",
+  "background": "Runs the books for her parents' bakery, cooks the northern dishes her mother brought from Hanoi.",
+  "voice": "Busy-mum energy, practical tips, mentions her mother.",
+  "cuisines": [
+   {
+    "id": "vietnamese",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "northern Vietnamese",
+   "pho",
+   "broths",
+   "herbs"
+  ],
+  "diet": "everything",
+  "household": "husband and three kids",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Natural photo of a Vietnamese-Australian woman in her late 30s with a low bun, ladling broth into bowls in a busy Sydney kitchen, steam rising"
+  },
+  "backlog": 35,
+  "perWeek": 1.5
+ },
+ {
+  "handle": "saigon.studio",
+  "name": "Minh Tran",
+  "kind": "house",
+  "city": "Ho Chi Minh City",
+  "country": "Vietnam",
+  "timezone": "Asia/Ho_Chi_Minh",
+  "bio": "Saigon street food, cooked at home. Fish sauce is a love language.",
+  "background": "Photographer in Saigon who recreates the street stalls of District 4 at home.",
+  "voice": "Visual, enthusiastic, describes the stall he learned from.",
+  "cuisines": [
+   {
+    "id": "vietnamese",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "street food",
+   "noodles",
+   "rice plates",
+   "dipping sauces"
+  ],
+  "diet": "everything",
+  "household": "lives with girlfriend",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "vietnamese broken rice pork"
+  },
+  "backlog": 30,
+  "perWeek": 1
+ },
+ {
+  "handle": "hue.and.cry",
+  "name": "Thu Le",
+  "kind": "house",
+  "city": "Footscray, Melbourne",
+  "country": "Australia",
+  "timezone": "Australia/Melbourne",
+  "bio": "Central Vietnamese cooking. Spicier, saltier, and very proud of it.",
+  "background": "Hairdresser in Footscray whose family is from Huế. Cooks bún bò Huế for the salon on Fridays.",
+  "voice": "Feisty, funny, insists central Vietnamese food is underrated.",
+  "cuisines": [
+   {
+    "id": "vietnamese",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Huế",
+   "spicy noodle soups",
+   "rice cakes"
+  ],
+  "diet": "everything",
+  "household": "lives with mother",
+  "avatar": {
+   "kind": "ai-logo",
+   "prompt": "Flat logo of a red chilli and a bowl of noodles with a conical hat silhouette, crimson and cream, bold sans wordmark"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "chay.home",
+  "name": "Bao Pham",
+  "kind": "house",
+  "city": "Westminster, California",
+  "country": "United States",
+  "timezone": "America/Los_Angeles",
+  "bio": "Vietnamese Buddhist vegetarian food. Mock meats optional, flavour mandatory.",
+  "background": "Retired engineer in Little Saigon, cooks chay food for the temple on full moon days.",
+  "voice": "Patient, grandfatherly, a little formal.",
+  "cuisines": [
+   {
+    "id": "vietnamese",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "chay",
+   "tofu",
+   "vegetable braises",
+   "noodles"
+  ],
+  "diet": "vegan",
+  "household": "married, grandchildren nearby",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Candid photo of a Vietnamese-American man in his early 70s with white hair and a gentle smile, arranging fried tofu on a plate in a home kitchen"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "wok.hei.home",
+  "name": "Kenneth Chan",
+  "kind": "house",
+  "city": "Chatswood, Sydney",
+  "country": "Australia",
+  "timezone": "Australia/Sydney",
+  "bio": "Cantonese home cooking. Steamed fish, soup of the day, and chasing wok hei on a domestic stove.",
+  "background": "Architect, Hong Kong-born, moved to Sydney at 12. Cooks his late father's dishes for his own kids.",
+  "voice": "Precise, reflective, technical about wok heat.",
+  "cuisines": [
+   {
+    "id": "chinese",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Cantonese",
+   "steamed dishes",
+   "soups",
+   "stir-fries"
+  ],
+  "diet": "everything",
+  "household": "wife and two kids",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Natural photo of a Chinese-Australian man in his mid 40s with glasses, tossing vegetables in a carbon steel wok, flames visible, Sydney home kitchen"
+  },
+  "backlog": 40,
+  "perWeek": 1.5
+ },
+ {
+  "handle": "mala.mei",
+  "name": "Mei Zhang",
+  "kind": "house",
+  "city": "Chengdu",
+  "country": "China",
+  "timezone": "Asia/Shanghai",
+  "bio": "Sichuan home cooking. Mala, yes, but also the gentle dishes nobody posts.",
+  "background": "University lecturer in Chengdu who cooks family-style Sichuan meals and dislikes 'tourist mala'.",
+  "voice": "Witty, educational, corrects myths politely.",
+  "cuisines": [
+   {
+    "id": "chinese",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Sichuan",
+   "doubanjiang",
+   "vegetables",
+   "noodles"
+  ],
+  "diet": "everything",
+  "household": "husband and teenage son",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "mapo tofu"
+  },
+  "backlog": 35,
+  "perWeek": 1
+ },
+ {
+  "handle": "dumpling.dynasty",
+  "name": "Wei Liu",
+  "kind": "house",
+  "city": "Box Hill, Melbourne",
+  "country": "Australia",
+  "timezone": "Australia/Melbourne",
+  "bio": "Northern Chinese: dumplings, hand-pulled noodles, bread. Flour is the main ingredient.",
+  "background": "PhD student from Shandong in Melbourne. Folds dumplings with his housemates every Sunday.",
+  "voice": "Enthusiastic, nerdy about dough hydration, generous.",
+  "cuisines": [
+   {
+    "id": "chinese",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "dumplings",
+   "noodles",
+   "northern Chinese"
+  ],
+  "diet": "everything",
+  "household": "shares a house",
+  "avatar": {
+   "kind": "ai-logo",
+   "prompt": "Playful flat logo, a plump pleated dumpling with a small crown, red and cream, round friendly wordmark"
+  },
+  "backlog": 30,
+  "perWeek": 1
+ },
+ {
+  "handle": "auntie.siew",
+  "name": "Siew Ling Tan",
+  "kind": "house",
+  "city": "Penang",
+  "country": "Malaysia",
+  "timezone": "Asia/Kuala_Lumpur",
+  "bio": "Nyonya and Penang Chinese home cooking. Fifty years at the stove and still learning.",
+  "background": "Retired hawker who ran a char koay teow stall for 30 years, now cooks for grandchildren.",
+  "voice": "Bossy auntie, funny, uses Hokkien words.",
+  "cuisines": [
+   {
+    "id": "chinese",
+    "weight": 3
+   },
+   {
+    "id": "malaysian",
+    "weight": 3
+   }
+  ],
+  "specialties": [
+   "Nyonya",
+   "Penang hawker",
+   "noodles",
+   "kuih"
+  ],
+  "diet": "everything",
+  "household": "widowed, lives with son's family",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Candid photo of a Malaysian Chinese grandmother in her early 70s with short permed hair and a floral blouse, smiling at a wok over a gas burner, Penang shophouse kitchen"
+  },
+  "backlog": 30,
+  "perWeek": 1
+ },
+ {
+  "handle": "taipei.night",
+  "name": "Yu-Ting Lin",
+  "kind": "house",
+  "city": "Taipei",
+  "country": "Taiwan",
+  "timezone": "Asia/Taipei",
+  "bio": "Taiwanese comfort food and night-market favourites, cooked small.",
+  "background": "UX designer in Taipei who cooks braised pork rice and night market snacks for her flatmates.",
+  "voice": "Cute but sharp, describes textures, uses 'QQ'.",
+  "cuisines": [
+   {
+    "id": "chinese",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Taiwanese",
+   "braises",
+   "snacks",
+   "noodle soups"
+  ],
+  "diet": "everything",
+  "household": "shares with a friend",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "taiwanese braised pork rice"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "bento.and.beyond",
+  "name": "Yuki Tanaka",
+  "kind": "house",
+  "city": "Crows Nest, Sydney",
+  "country": "Australia",
+  "timezone": "Australia/Sydney",
+  "bio": "Japanese home cooking: the everyday stuff, not the restaurant stuff. Lots of bento.",
+  "background": "Japanese language teacher from Osaka living in Sydney, packs bento for her two kids.",
+  "voice": "Neat, gentle, organised, tips on make-ahead.",
+  "cuisines": [
+   {
+    "id": "japanese",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "katei ryori",
+   "bento",
+   "simmered dishes",
+   "rice"
+  ],
+  "diet": "everything",
+  "household": "husband and two kids",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Natural photo of a Japanese woman in her early 40s with a short bob, packing a bento box at a tidy kitchen bench, soft morning light"
+  },
+  "backlog": 35,
+  "perWeek": 1.5
+ },
+ {
+  "handle": "izakaya.ken",
+  "name": "Kenji Watanabe",
+  "kind": "house",
+  "city": "Fukuoka",
+  "country": "Japan",
+  "timezone": "Asia/Tokyo",
+  "bio": "Izakaya-style small plates for one person and one beer.",
+  "background": "Salaryman in Fukuoka who cooks drinking snacks after work. Big on yakitori in a frying pan.",
+  "voice": "Dry, understated, very short captions.",
+  "cuisines": [
+   {
+    "id": "japanese",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "izakaya",
+   "grilled skewers",
+   "small plates"
+  ],
+  "diet": "everything",
+  "household": "lives alone",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "yakitori skewers"
+  },
+  "backlog": 30,
+  "perWeek": 1
+ },
+ {
+  "handle": "dashi.daily",
+  "name": "Hana Kobayashi",
+  "kind": "house",
+  "city": "Kyoto",
+  "country": "Japan",
+  "timezone": "Asia/Tokyo",
+  "bio": "Kyoto obanzai: small seasonal vegetable dishes and a pot of dashi always going.",
+  "background": "Ceramicist in Kyoto who cooks obanzai to serve on her own plates.",
+  "voice": "Quiet, seasonal, poetic but practical.",
+  "cuisines": [
+   {
+    "id": "japanese",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "obanzai",
+   "dashi",
+   "vegetables",
+   "tofu"
+  ],
+  "diet": "pescatarian",
+  "household": "lives with husband",
+  "avatar": {
+   "kind": "ai-logo",
+   "prompt": "Minimal flat logo, a simple handmade ceramic bowl with a single leaf, indigo on warm grey, delicate serif wordmark"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "sando.sam",
+  "name": "Sam Okada",
+  "kind": "house",
+  "city": "Honolulu",
+  "country": "United States",
+  "timezone": "Pacific/Honolulu",
+  "bio": "Japanese-Hawaiian home food. Musubi, curry rice, poke and plate lunch.",
+  "background": "Fourth-generation Japanese-American surf instructor in Honolulu.",
+  "voice": "Laid-back, sunny, says 'brah' once in a while.",
+  "cuisines": [
+   {
+    "id": "japanese",
+    "weight": 3
+   },
+   {
+    "id": "pacific-islands",
+    "weight": 2
+   },
+   {
+    "id": "american",
+    "weight": 1
+   }
+  ],
+  "specialties": [
+   "Japanese curry",
+   "plate lunch",
+   "poke"
+  ],
+  "diet": "everything",
+  "household": "girlfriend",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Candid photo of a Japanese-American man in his late 20s with sun-bleached hair, eating from a plate lunch box on a beach wall in Honolulu, golden hour"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "hansik.homebody",
+  "name": "Ji-woo Park",
+  "kind": "house",
+  "city": "Strathfield, Sydney",
+  "country": "Australia",
+  "timezone": "Australia/Sydney",
+  "bio": "Korean home food: banchan on Sunday, quick stews all week.",
+  "background": "Graduate nurse, came from Busan for uni. Makes a week of banchan every Sunday.",
+  "voice": "Bright, organised, describes how long each banchan keeps.",
+  "cuisines": [
+   {
+    "id": "korean",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "banchan",
+   "jjigae",
+   "rice bowls"
+  ],
+  "diet": "everything",
+  "household": "shares with her sister",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Natural photo of a Korean woman in her mid 20s with long straight hair, arranging small side dishes in glass containers at a kitchen bench"
+  },
+  "backlog": 35,
+  "perWeek": 1.5
+ },
+ {
+  "handle": "kimchi.uncle",
+  "name": "Dong-hyun Lee",
+  "kind": "house",
+  "city": "Seoul",
+  "country": "South Korea",
+  "timezone": "Asia/Seoul",
+  "bio": "Retired, making kimchi and soups for the whole apartment block.",
+  "background": "Retired taxi company manager in Seoul who took over the kimjang from his late mother.",
+  "voice": "Proud, old-school, gives exact salting times.",
+  "cuisines": [
+   {
+    "id": "korean",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "kimchi",
+   "soups",
+   "fermentation"
+  ],
+  "diet": "everything",
+  "household": "wife",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "kimchi jjigae"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "seoul.food.nz",
+  "name": "Grace Kim",
+  "kind": "house",
+  "city": "Auckland",
+  "country": "New Zealand",
+  "timezone": "Pacific/Auckland",
+  "bio": "Korean-Kiwi, cooking K-food with what the Auckland supermarket has.",
+  "background": "Lawyer, born in Auckland to Korean parents. Adapts her mother's recipes to NZ ingredients.",
+  "voice": "Witty, practical, loves a supermarket swap.",
+  "cuisines": [
+   {
+    "id": "korean",
+    "weight": 4
+   },
+   {
+    "id": "modern-australian",
+    "weight": 1
+   }
+  ],
+  "specialties": [
+   "Korean",
+   "quick dinners",
+   "swaps"
+  ],
+  "diet": "everything",
+  "household": "husband",
+  "avatar": {
+   "kind": "ai-logo",
+   "prompt": "Flat logo, a stone bowl of bibimbap seen from above with a fern leaf, black and coral, modern sans wordmark"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "temple.food.joon",
+  "name": "Joon Choi",
+  "kind": "house",
+  "city": "Los Angeles",
+  "country": "United States",
+  "timezone": "America/Los_Angeles",
+  "bio": "Korean temple food and vegan banchan. No garlic, plenty of flavour.",
+  "background": "Musician in LA who learned Korean temple cooking on a retreat and cooks it at home.",
+  "voice": "Calm, mindful, describes flavours carefully.",
+  "cuisines": [
+   {
+    "id": "korean",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "temple food",
+   "vegan banchan",
+   "mushrooms"
+  ],
+  "diet": "vegan",
+  "household": "lives alone",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Natural photo of a Korean-American man in his early 30s with shoulder-length hair tied back, slicing mushrooms in a minimalist LA kitchen"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "mamak.mak",
+  "name": "Nurul Hassan",
+  "kind": "house",
+  "city": "Kuala Lumpur",
+  "country": "Malaysia",
+  "timezone": "Asia/Kuala_Lumpur",
+  "bio": "Malay home cooking. Sambal is the foundation of the house.",
+  "background": "Civil servant in KL who cooks for her husband and four kids, raya open houses every year.",
+  "voice": "Warm, funny, specific about sambal heat.",
+  "cuisines": [
+   {
+    "id": "malaysian",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Malay",
+   "sambal",
+   "rendang",
+   "nasi lemak"
+  ],
+  "diet": "everything",
+  "household": "husband and four kids",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Candid photo of a Malay woman in her early 40s wearing a pastel tudung, smiling over a plate of nasi lemak in a bright home kitchen"
+  },
+  "backlog": 30,
+  "perWeek": 1
+ },
+ {
+  "handle": "laksa.lad",
+  "name": "Raj Kumar",
+  "kind": "house",
+  "city": "Glen Waverley, Melbourne",
+  "country": "Australia",
+  "timezone": "Australia/Melbourne",
+  "bio": "Malaysian Indian in Melbourne. Laksa, roti canai and mamak-stall nostalgia.",
+  "background": "IT support guy who grew up in Ipoh, cooks Malaysian food when homesick.",
+  "voice": "Nostalgic, chatty, ranks his own attempts.",
+  "cuisines": [
+   {
+    "id": "malaysian",
+    "weight": 4
+   },
+   {
+    "id": "indian",
+    "weight": 1
+   }
+  ],
+  "specialties": [
+   "laksa",
+   "mamak",
+   "curries",
+   "roti"
+  ],
+  "diet": "everything",
+  "household": "wife",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "curry laksa bowl"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "sambal.sari",
+  "name": "Sari Wijaya",
+  "kind": "house",
+  "city": "Kingsford, Sydney",
+  "country": "Australia",
+  "timezone": "Australia/Sydney",
+  "bio": "Indonesian student cooking. Sambal, tempeh and a rice cooker that never stops.",
+  "background": "Masters student from Bandung studying in Sydney. Cooks for her Indonesian friends on a tight budget.",
+  "voice": "Young, funny, budget-minded, honest.",
+  "cuisines": [
+   {
+    "id": "indonesian",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Sundanese",
+   "tempeh",
+   "sambal",
+   "budget"
+  ],
+  "diet": "everything",
+  "household": "shares a flat",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Natural photo of an Indonesian woman in her mid 20s wearing a soft grey hijab and denim jacket, laughing next to a rice cooker in a small student kitchen"
+  },
+  "backlog": 30,
+  "perWeek": 1
+ },
+ {
+  "handle": "rendang.slow",
+  "name": "Bayu Santoso",
+  "kind": "house",
+  "city": "Yogyakarta",
+  "country": "Indonesia",
+  "timezone": "Asia/Jakarta",
+  "bio": "Javanese and Padang cooking. Slow rendang, sweet soy, gudeg.",
+  "background": "Batik artist in Yogyakarta who cooks for his workshop staff at lunch.",
+  "voice": "Relaxed, artistic, talks about patience.",
+  "cuisines": [
+   {
+    "id": "indonesian",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Javanese",
+   "rendang",
+   "sweet soy",
+   "jackfruit"
+  ],
+  "diet": "everything",
+  "household": "wife and son",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "beef rendang"
+  },
+  "backlog": 25,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "bali.pantry",
+  "name": "Komang Ayu",
+  "kind": "house",
+  "city": "Ubud",
+  "country": "Indonesia",
+  "timezone": "Asia/Makassar",
+  "bio": "Balinese home cooking. Base genep, lawar and offerings first.",
+  "background": "Runs a homestay in Ubud and cooks Balinese family meals for guests.",
+  "voice": "Graceful, welcoming, explains ceremony foods.",
+  "cuisines": [
+   {
+    "id": "indonesian",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Balinese",
+   "spice pastes",
+   "sate",
+   "vegetables"
+  ],
+  "diet": "everything",
+  "household": "large family compound",
+  "avatar": {
+   "kind": "ai-logo",
+   "prompt": "Flat logo of a frangipani flower and a small banana-leaf parcel, warm yellow and leaf green, gentle serif wordmark"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "lola.lutong",
+  "name": "Corazon Dela Cruz",
+  "kind": "house",
+  "city": "Blacktown, Sydney",
+  "country": "Australia",
+  "timezone": "Australia/Sydney",
+  "bio": "Filipino lola cooking. Adobo, sinigang and pancit for every birthday.",
+  "background": "Retired aged-care worker from Pampanga, cooks for her church group and grandchildren.",
+  "voice": "Sweet, devout, calls everyone 'anak'.",
+  "cuisines": [
+   {
+    "id": "filipino",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Kapampangan",
+   "adobo",
+   "sinigang",
+   "pancit"
+  ],
+  "diet": "everything",
+  "household": "lives with daughter's family",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Candid photo of a Filipino grandmother in her early 70s with short grey hair and reading glasses, smiling while stirring a pot of adobo"
+  },
+  "backlog": 40,
+  "perWeek": 1.5
+ },
+ {
+  "handle": "silog.szn",
+  "name": "Paolo Reyes",
+  "kind": "house",
+  "city": "Manila",
+  "country": "Philippines",
+  "timezone": "Asia/Manila",
+  "bio": "Silog breakfasts, ulam for days, and Jollibee opinions.",
+  "background": "Call-centre team leader in Manila who cooks breakfast at 7am after night shift.",
+  "voice": "Funny, Taglish words with translations, high energy.",
+  "cuisines": [
+   {
+    "id": "filipino",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "silog",
+   "ulam",
+   "fried dishes"
+  ],
+  "diet": "everything",
+  "household": "lives with siblings",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "filipino garlic rice fried egg"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "kinilaw.kai",
+  "name": "Kai Villanueva",
+  "kind": "house",
+  "city": "Cairns",
+  "country": "Australia",
+  "timezone": "Australia/Brisbane",
+  "bio": "Visayan Filipino in Far North Queensland. Fish, coconut and vinegar.",
+  "background": "Marine biologist with family from Cebu. Catches his own fish when he can.",
+  "voice": "Outdoorsy, scientific but chill.",
+  "cuisines": [
+   {
+    "id": "filipino",
+    "weight": 4
+   },
+   {
+    "id": "modern-australian",
+    "weight": 1
+   }
+  ],
+  "specialties": [
+   "Visayan",
+   "seafood",
+   "kinilaw",
+   "grilling"
+  ],
+  "diet": "pescatarian",
+  "household": "partner",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Natural photo of a Filipino-Australian man in his early 30s in a fishing shirt and cap, holding a fresh fish on a jetty in tropical Cairns"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "abuela.oaxaca",
+  "name": "Guadalupe Hernández",
+  "kind": "house",
+  "city": "Oaxaca",
+  "country": "Mexico",
+  "timezone": "America/Mexico_City",
+  "bio": "Oaxacan cooking from my mother's comal. Moles, tlayudas, chapulines optional.",
+  "background": "Market stallholder in Oaxaca who sells tortillas and cooks for her whole family.",
+  "voice": "Proud, warm, explains ingredients by their local names.",
+  "cuisines": [
+   {
+    "id": "mexican",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Oaxacan",
+   "moles",
+   "tortillas",
+   "salsas"
+  ],
+  "diet": "everything",
+  "household": "large family",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Candid photo of an Oaxacan woman in her 60s with long grey braids and an embroidered blouse, pressing tortillas on a clay comal"
+  },
+  "backlog": 30,
+  "perWeek": 1
+ },
+ {
+  "handle": "tacotuesday.syd",
+  "name": "Diego Ramírez",
+  "kind": "house",
+  "city": "Marrickville, Sydney",
+  "country": "Australia",
+  "timezone": "Australia/Sydney",
+  "bio": "Mexican in Sydney, making real tacos with what Coles has. It can be done.",
+  "background": "Barista from Guadalajara, been in Sydney eight years. Hosts taco nights for his share house.",
+  "voice": "Funny, encouraging, finds local swaps.",
+  "cuisines": [
+   {
+    "id": "mexican",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "tacos",
+   "salsas",
+   "Jalisco",
+   "swaps"
+  ],
+  "diet": "everything",
+  "household": "share house",
+  "avatar": {
+   "kind": "ai-logo",
+   "prompt": "Playful flat logo, a taco with a Sydney Opera House shaped shell, lime green and hot pink, bold rounded wordmark"
+  },
+  "backlog": 35,
+  "perWeek": 1.5
+ },
+ {
+  "handle": "frijoles.forever",
+  "name": "Mariana López",
+  "kind": "house",
+  "city": "Mexico City",
+  "country": "Mexico",
+  "timezone": "America/Mexico_City",
+  "bio": "Vegetarian Mexican: beans, nopales, squash blossoms, and soup.",
+  "background": "Biology researcher in CDMX, vegetarian, cooks her grandmother's Lenten dishes all year.",
+  "voice": "Thoughtful, scientific asides, enthusiastic about beans.",
+  "cuisines": [
+   {
+    "id": "mexican",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "vegetarian Mexican",
+   "beans",
+   "soups",
+   "antojitos"
+  ],
+  "diet": "vegetarian",
+  "household": "lives with partner",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "black bean soup mexican"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "norteno.grill",
+  "name": "Héctor Garza",
+  "kind": "house",
+  "city": "San Antonio",
+  "country": "United States",
+  "timezone": "America/Chicago",
+  "bio": "Northern Mexico meets Texas. Carne asada, flour tortillas, frijoles charros.",
+  "background": "High school football coach in San Antonio, Mexican-American family from Monterrey.",
+  "voice": "Coach energy, loud and encouraging.",
+  "cuisines": [
+   {
+    "id": "mexican",
+    "weight": 4
+   },
+   {
+    "id": "american",
+    "weight": 1
+   }
+  ],
+  "specialties": [
+   "norteño",
+   "grilling",
+   "flour tortillas",
+   "Tex-Mex"
+  ],
+  "diet": "everything",
+  "household": "wife and four kids",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Natural photo of a Mexican-American man in his late 40s with a cap and polo shirt, grinning by a grill with tortillas warming, Texas backyard"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "ceviche.camila",
+  "name": "Camila Quispe",
+  "kind": "house",
+  "city": "Lima",
+  "country": "Peru",
+  "timezone": "America/Lima",
+  "bio": "Peruvian home cooking. Ají amarillo makes everything better.",
+  "background": "Marketing manager in Lima with Andean roots in Cusco. Cooks Sunday lunch for the extended family.",
+  "voice": "Vibrant, proud, explains ajís.",
+  "cuisines": [
+   {
+    "id": "latin-american",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Peruvian",
+   "ceviche",
+   "potatoes",
+   "ají"
+  ],
+  "diet": "everything",
+  "household": "husband and daughter",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Candid photo of a Peruvian woman in her mid 30s with long dark hair, squeezing limes over a bowl of ceviche, bright Lima apartment"
+  },
+  "backlog": 30,
+  "perWeek": 1
+ },
+ {
+  "handle": "feijoada.fridays",
+  "name": "Thiago Souza",
+  "kind": "house",
+  "city": "Bondi, Sydney",
+  "country": "Australia",
+  "timezone": "Australia/Sydney",
+  "bio": "Brazilian in Bondi. Beans, rice, farofa and a churrasco when the sun's out.",
+  "background": "Personal trainer from São Paulo. Cooks Brazilian staples in bulk for the week.",
+  "voice": "Sunny, energetic, Portuguese words with translations.",
+  "cuisines": [
+   {
+    "id": "latin-american",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Brazilian",
+   "beans",
+   "churrasco",
+   "meal prep"
+  ],
+  "diet": "everything",
+  "household": "girlfriend",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "brazilian rice and beans"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "empanada.ines",
+  "name": "Inés Fernández",
+  "kind": "house",
+  "city": "Buenos Aires",
+  "country": "Argentina",
+  "timezone": "America/Argentina/Buenos_Aires",
+  "bio": "Argentine family cooking. Empanadas, milanesas, and a very serious chimichurri.",
+  "background": "Retired bank clerk in Buenos Aires who makes empanadas for her grandchildren every Saturday.",
+  "voice": "Affectionate, a little dramatic, opinionated about chimichurri.",
+  "cuisines": [
+   {
+    "id": "latin-american",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Argentine",
+   "empanadas",
+   "milanesa",
+   "chimichurri"
+  ],
+  "diet": "everything",
+  "household": "widowed, grandchildren visit",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Natural photo of an Argentine grandmother in her early 70s with short white hair and a cardigan, crimping empanadas at a wooden table"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "arepa.andres",
+  "name": "Andrés Gómez",
+  "kind": "house",
+  "city": "Medellín",
+  "country": "Colombia",
+  "timezone": "America/Bogota",
+  "bio": "Colombian everyday food. Arepas every morning, bandeja when you've earned it.",
+  "background": "Engineering student in Medellín, cooks with his mum on weekends.",
+  "voice": "Friendly, young, a bit cheeky.",
+  "cuisines": [
+   {
+    "id": "latin-american",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Colombian",
+   "arepas",
+   "soups",
+   "beans"
+  ],
+  "diet": "everything",
+  "household": "lives with parents",
+  "avatar": {
+   "kind": "ai-logo",
+   "prompt": "Flat logo, a golden round arepa with a small sun behind it, yellow blue and red accents, friendly sans wordmark"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "yard.food.marcia",
+  "name": "Marcia Campbell",
+  "kind": "house",
+  "city": "Brixton, London",
+  "country": "United Kingdom",
+  "timezone": "Europe/London",
+  "bio": "Jamaican yard food in Brixton. Curry goat, rice and peas, ackee on Sundays.",
+  "background": "Primary school headteacher, born in Kingston, London since she was ten.",
+  "voice": "Warm, commanding, a bit of patois explained.",
+  "cuisines": [
+   {
+    "id": "caribbean",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Jamaican",
+   "curry",
+   "jerk",
+   "rice and peas"
+  ],
+  "diet": "everything",
+  "household": "husband and grown kids nearby",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Candid photo of a Jamaican-British woman in her mid 50s with short natural hair and gold hoops, laughing over a pot of curry in a London kitchen"
+  },
+  "backlog": 30,
+  "perWeek": 1
+ },
+ {
+  "handle": "doubles.trouble",
+  "name": "Rohan Ramdial",
+  "kind": "house",
+  "city": "Port of Spain",
+  "country": "Trinidad and Tobago",
+  "timezone": "America/Port_of_Spain",
+  "bio": "Trini food: doubles, pelau, curry duck and pepper sauce in everything.",
+  "background": "Steelpan player and part-time chef in Port of Spain, Indo-Trinidadian family.",
+  "voice": "Exuberant, musical, Trini slang explained.",
+  "cuisines": [
+   {
+    "id": "caribbean",
+    "weight": 4
+   },
+   {
+    "id": "indian",
+    "weight": 1
+   }
+  ],
+  "specialties": [
+   "Trinidadian",
+   "curries",
+   "pelau",
+   "street food"
+  ],
+  "diet": "everything",
+  "household": "wife and daughter",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "caribbean chicken pelau"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "cast.iron.carla",
+  "name": "Carla Mitchell",
+  "kind": "house",
+  "city": "Savannah",
+  "country": "United States",
+  "timezone": "America/New_York",
+  "bio": "Southern cooking in a cast-iron pan older than me.",
+  "background": "Pediatric nurse in Savannah, cooks her grandmother's Low Country recipes.",
+  "voice": "Charming, a bit sassy, 'y'all' used sparingly.",
+  "cuisines": [
+   {
+    "id": "american",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Southern",
+   "Low Country",
+   "cast iron",
+   "biscuits"
+  ],
+  "diet": "everything",
+  "household": "husband and twin boys",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Natural photo of an African-American woman in her early 40s with natural curls, holding a cast iron skillet of cornbread in a sunny Savannah kitchen"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "cajun.cal",
+  "name": "Calvin Thibodeaux",
+  "kind": "house",
+  "city": "Lafayette",
+  "country": "United States",
+  "timezone": "America/Chicago",
+  "bio": "Cajun cooking from Acadiana. First you make a roux.",
+  "background": "Offshore oil worker on two-weeks-on two-weeks-off, cooks gumbo for his whole family on his off weeks.",
+  "voice": "Folksy, funny, patient with roux.",
+  "cuisines": [
+   {
+    "id": "american",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Cajun",
+   "gumbo",
+   "jambalaya",
+   "seafood"
+  ],
+  "diet": "everything",
+  "household": "wife and three kids",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "gumbo bowl"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "weeknight.nyc",
+  "name": "Rachel Goldberg",
+  "kind": "house",
+  "city": "Brooklyn",
+  "country": "United States",
+  "timezone": "America/New_York",
+  "bio": "Fast weeknight food in a tiny Brooklyn kitchen, plus my grandmother's Jewish classics.",
+  "background": "Magazine editor in Brooklyn, Ashkenazi Jewish family. Cooks fast on weeknights and slow for Shabbat.",
+  "voice": "Quick, funny, self-aware, New Yorker tone.",
+  "cuisines": [
+   {
+    "id": "american",
+    "weight": 3
+   },
+   {
+    "id": "central-european",
+    "weight": 2
+   }
+  ],
+  "specialties": [
+   "weeknight",
+   "Jewish classics",
+   "sheet pans"
+  ],
+  "diet": "everything",
+  "household": "husband and toddler",
+  "avatar": {
+   "kind": "ai-logo",
+   "prompt": "Minimal flat logo, a small sheet pan with a skyline of vegetables forming a city silhouette, black and tomato red, condensed sans wordmark"
+  },
+  "backlog": 30,
+  "perWeek": 1
+ },
+ {
+  "handle": "scran.and.scones",
+  "name": "Fiona MacLeod",
+  "kind": "house",
+  "city": "Inverness",
+  "country": "United Kingdom",
+  "timezone": "Europe/London",
+  "bio": "Scottish home cooking. Soups, stovies, smoked fish and a decent scone.",
+  "background": "Retired district nurse in the Highlands, bakes for the village hall.",
+  "voice": "Dry Scottish humour, practical, weather complaints.",
+  "cuisines": [
+   {
+    "id": "british",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Scottish",
+   "soups",
+   "smoked fish",
+   "baking"
+  ],
+  "diet": "everything",
+  "household": "husband and a collie",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Candid photo of a Scottish woman in her late 60s with windswept grey hair and a wool jumper, holding a tray of scones in a cottage kitchen"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "pie.and.pint.tom",
+  "name": "Tom Ashworth",
+  "kind": "house",
+  "city": "Manchester",
+  "country": "United Kingdom",
+  "timezone": "Europe/London",
+  "bio": "Northern English comfort food. Hotpot, pies, gravy, no apologies.",
+  "background": "Plumber in Manchester who cooks Sunday roasts for his mum and sisters.",
+  "voice": "Blunt, funny, Mancunian.",
+  "cuisines": [
+   {
+    "id": "british",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "pies",
+   "hotpot",
+   "roasts",
+   "gravy"
+  ],
+  "diet": "everything",
+  "household": "partner and stepson",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "lancashire hotpot"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "currywurst.anna",
+  "name": "Anna Schneider",
+  "kind": "house",
+  "city": "Hamburg",
+  "country": "Germany",
+  "timezone": "Europe/Berlin",
+  "bio": "German home cooking, lighter than you'd expect. Lots of potatoes, though.",
+  "background": "Physiotherapist in Hamburg who cooks her Oma's northern German food.",
+  "voice": "Precise, friendly, a little dry.",
+  "cuisines": [
+   {
+    "id": "central-european",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "German",
+   "potatoes",
+   "fish",
+   "soups"
+  ],
+  "diet": "everything",
+  "household": "lives with partner",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Natural photo of a German woman in her early 30s with blonde hair in a braid, peeling potatoes at a wooden table, Hamburg apartment"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "pierogi.babcia",
+  "name": "Ewa Kowalska",
+  "kind": "house",
+  "city": "Kraków",
+  "country": "Poland",
+  "timezone": "Europe/Warsaw",
+  "bio": "Polish babcia cooking. Pierogi, żurek, and pickles in every jar I own.",
+  "background": "Retired chemistry teacher in Kraków, makes pierogi with her granddaughters every Sunday.",
+  "voice": "Warm, exacting, explains Polish words.",
+  "cuisines": [
+   {
+    "id": "central-european",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Polish",
+   "pierogi",
+   "soups",
+   "pickles"
+  ],
+  "diet": "everything",
+  "household": "husband",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Candid photo of a Polish grandmother in her early 70s with silver hair and a cardigan, pinching pierogi on a floured table"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "borscht.and.beyond",
+  "name": "Oksana Melnyk",
+  "kind": "house",
+  "city": "Adelaide",
+  "country": "Australia",
+  "timezone": "Australia/Adelaide",
+  "bio": "Ukrainian home cooking in Adelaide. Borscht, varenyky and a lot of dill.",
+  "background": "Arrived from Kharkiv in 2022, works as a cleaner while retraining as a teacher. Cooks to stay close to home.",
+  "voice": "Quiet strength, warm, grateful to her new neighbours.",
+  "cuisines": [
+   {
+    "id": "central-european",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Ukrainian",
+   "soups",
+   "dumplings",
+   "dill"
+  ],
+  "diet": "everything",
+  "household": "teenage daughter",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "borscht bowl dill"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "nordic.nils",
+  "name": "Nils Eriksson",
+  "kind": "house",
+  "city": "Gothenburg",
+  "country": "Sweden",
+  "timezone": "Europe/Stockholm",
+  "bio": "Swedish home food. Fish, rye, dill, and fika every afternoon.",
+  "background": "Ferry engineer in Gothenburg who cooks Swedish husmanskost for his family.",
+  "voice": "Calm, minimal, Scandi-dry humour.",
+  "cuisines": [
+   {
+    "id": "scandinavian",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "husmanskost",
+   "fish",
+   "rye",
+   "baking"
+  ],
+  "diet": "everything",
+  "household": "wife and two kids",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Natural photo of a Swedish man in his early 50s with a grey beard and knitted jumper, holding a tray of cinnamon buns by a window, soft Nordic light"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "hygge.kitchen",
+  "name": "Freja Nielsen",
+  "kind": "house",
+  "city": "Copenhagen",
+  "country": "Denmark",
+  "timezone": "Europe/Copenhagen",
+  "bio": "Danish everyday food: smørrebrød, frikadeller and vegetables from the allotment.",
+  "background": "Kindergarten teacher in Copenhagen with an allotment garden.",
+  "voice": "Cosy, seasonal, gentle.",
+  "cuisines": [
+   {
+    "id": "scandinavian",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Danish",
+   "open sandwiches",
+   "vegetables",
+   "meatballs"
+  ],
+  "diet": "everything",
+  "household": "partner and son",
+  "avatar": {
+   "kind": "ai-logo",
+   "prompt": "Minimal flat logo, a slice of rye bread with a sprig of dill, charcoal and soft green on off-white, thin serif wordmark"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "lunchbox.lisa",
+  "name": "Lisa Thompson",
+  "kind": "house",
+  "city": "Geelong",
+  "country": "Australia",
+  "timezone": "Australia/Melbourne",
+  "bio": "Feeding three kids, one husband and a dog on a budget. Freezer is my best friend.",
+  "background": "Part-time bookkeeper in Geelong, cooks once and eats three times.",
+  "voice": "Relatable mum humour, budget tips, honest about shortcuts.",
+  "cuisines": [
+   {
+    "id": "modern-australian",
+    "weight": 4
+   },
+   {
+    "id": "italian",
+    "weight": 1
+   },
+   {
+    "id": "chinese",
+    "weight": 1
+   }
+  ],
+  "specialties": [
+   "family dinners",
+   "freezer meals",
+   "budget",
+   "lunchboxes"
+  ],
+  "diet": "everything",
+  "household": "husband, three kids, dog",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Candid photo of an Australian woman in her early 40s with a messy ponytail and a hoodie, laughing while packing school lunchboxes, suburban Geelong kitchen"
+  },
+  "backlog": 45,
+  "perWeek": 2
+ },
+ {
+  "handle": "bush.tucker.bec",
+  "name": "Rebecca Collins",
+  "kind": "house",
+  "city": "Alice Springs",
+  "country": "Australia",
+  "timezone": "Australia/Darwin",
+  "bio": "Cooking in the Centre with native ingredients from local growers: lemon myrtle, wattleseed, quandong.",
+  "background": "Community health worker in Alice Springs who buys native ingredients from Aboriginal-owned growers and cooks everyday food with them.",
+  "voice": "Respectful, practical, credits growers and suppliers generally, never claims cultural knowledge that isn't hers.",
+  "cuisines": [
+   {
+    "id": "modern-australian",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "native ingredients",
+   "camp-oven cooking",
+   "baking"
+  ],
+  "diet": "everything",
+  "household": "partner",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "damper bread campfire"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "surfcoast.veg",
+  "name": "Jess Walker",
+  "kind": "house",
+  "city": "Byron Bay",
+  "country": "Australia",
+  "timezone": "Australia/Sydney",
+  "bio": "Plant-based, surf-first. Big bowls, quick dinners, farmers' market hauls.",
+  "background": "Surf school owner in Byron, vegan for ten years, cooks fast after dawn sessions.",
+  "voice": "Chill, upbeat, never preachy about vegan food.",
+  "cuisines": [
+   {
+    "id": "modern-australian",
+    "weight": 3
+   },
+   {
+    "id": "thai",
+    "weight": 1
+   },
+   {
+    "id": "mexican",
+    "weight": 1
+   }
+  ],
+  "specialties": [
+   "vegan bowls",
+   "quick dinners",
+   "salads"
+  ],
+  "diet": "vegan",
+  "household": "partner",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Natural photo of an Australian woman in her early 30s with sun-bleached hair and freckles, holding a big salad bowl on a verandah near the beach"
+  },
+  "backlog": 30,
+  "perWeek": 1
+ },
+ {
+  "handle": "shed.chef.gaz",
+  "name": "Gary O'Brien",
+  "kind": "house",
+  "city": "Toowoomba",
+  "country": "Australia",
+  "timezone": "Australia/Brisbane",
+  "bio": "Retired truckie. Camp oven, slow cooker, snags and a decent stew.",
+  "background": "Retired long-haul truck driver in Toowoomba, learned to cook after his wife got sick of doing it all.",
+  "voice": "Laconic, dry Aussie humour, short captions.",
+  "cuisines": [
+   {
+    "id": "modern-australian",
+    "weight": 4
+   },
+   {
+    "id": "british",
+    "weight": 1
+   }
+  ],
+  "specialties": [
+   "slow cooker",
+   "camp oven",
+   "stews",
+   "barbecue"
+  ],
+  "diet": "everything",
+  "household": "wife",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Candid photo of an Australian man in his late 60s with a weathered face, grey moustache and an Akubra hat, lifting the lid of a camp oven in a backyard"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "two.bowls.one.pan",
+  "name": "Mia Chen-Robertson",
+  "kind": "house",
+  "city": "Newtown, Sydney",
+  "country": "Australia",
+  "timezone": "Australia/Sydney",
+  "bio": "Cooking for two in a rental kitchen with one good pan. Australian, with Chinese-Malaysian roots.",
+  "background": "Junior lawyer in Newtown, mum is Malaysian Chinese and dad is Scottish-Australian. Cooks dinner for her and her partner.",
+  "voice": "Modern, witty, budget and time conscious.",
+  "cuisines": [
+   {
+    "id": "modern-australian",
+    "weight": 3
+   },
+   {
+    "id": "malaysian",
+    "weight": 1
+   },
+   {
+    "id": "chinese",
+    "weight": 1
+   }
+  ],
+  "specialties": [
+   "dinners for two",
+   "one pan",
+   "fusion at home"
+  ],
+  "diet": "everything",
+  "household": "partner",
+  "avatar": {
+   "kind": "ai-logo",
+   "prompt": "Clean flat logo, two small bowls and a frying pan arranged in a row, sage green and charcoal, lowercase sans wordmark"
+  },
+  "backlog": 35,
+  "perWeek": 1.5
+ },
+ {
+  "handle": "tassie.forager",
+  "name": "Ollie Hughes",
+  "kind": "house",
+  "city": "Launceston",
+  "country": "Australia",
+  "timezone": "Australia/Hobart",
+  "bio": "Tasmanian produce, cooked simply. Scallops, apples, mushrooms and cold nights.",
+  "background": "Orchard hand turned high-school teacher in northern Tasmania, cooks seasonally from local farms.",
+  "voice": "Seasonal, unpretentious, gentle humour.",
+  "cuisines": [
+   {
+    "id": "modern-australian",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "seasonal",
+   "seafood",
+   "apples",
+   "slow cooking"
+  ],
+  "diet": "everything",
+  "household": "wife and baby",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "scallops pan seared"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "lovo.and.lolo",
+  "name": "Mere Naivalu",
+  "kind": "house",
+  "city": "Suva",
+  "country": "Fiji",
+  "timezone": "Pacific/Fiji",
+  "bio": "Fijian home cooking. Lolo, kokoda, dalo and fish fresh off the boat.",
+  "background": "Primary school teacher in Suva from a family in Kadavu. Cooks for church fundraisers and family.",
+  "voice": "Joyful, generous, Fijian words with meanings.",
+  "cuisines": [
+   {
+    "id": "pacific-islands",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Fijian",
+   "coconut",
+   "fish",
+   "root vegetables"
+  ],
+  "diet": "everything",
+  "household": "husband and four kids",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Candid photo of a Fijian woman in her early 40s with a hibiscus flower behind her ear and a bright sulu jaba dress, smiling with a bowl of kokoda, Suva backyard"
+  },
+  "backlog": 30,
+  "perWeek": 1
+ },
+ {
+  "handle": "roti.and.rourou",
+  "name": "Anil Prasad",
+  "kind": "house",
+  "city": "Liverpool, Sydney",
+  "country": "Australia",
+  "timezone": "Australia/Sydney",
+  "bio": "Indo-Fijian food in south-west Sydney. Curries the Fiji way, roti every night.",
+  "background": "Electrician, born in Lautoka, moved to Sydney in his 20s. Cooks his mother's Indo-Fijian dishes.",
+  "voice": "Easygoing, family-focused, mentions kava sessions.",
+  "cuisines": [
+   {
+    "id": "pacific-islands",
+    "weight": 3
+   },
+   {
+    "id": "indian",
+    "weight": 3
+   }
+  ],
+  "specialties": [
+   "Indo-Fijian",
+   "curries",
+   "roti",
+   "duruka"
+  ],
+  "diet": "everything",
+  "household": "wife and three kids",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "chicken curry roti"
+  },
+  "backlog": 30,
+  "perWeek": 1
+ },
+ {
+  "handle": "samoan.sundays",
+  "name": "Losa Tuilagi",
+  "kind": "house",
+  "city": "Otara, Auckland",
+  "country": "New Zealand",
+  "timezone": "Pacific/Auckland",
+  "bio": "Samoan to'ona'i every Sunday. Palusami, oka, sapasui and a full umu when there's a reason.",
+  "background": "Youth worker in South Auckland, organises Sunday lunch after church for twenty people.",
+  "voice": "Big-hearted, funny, community-minded.",
+  "cuisines": [
+   {
+    "id": "pacific-islands",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Samoan",
+   "coconut",
+   "umu",
+   "feasts"
+  ],
+  "diet": "everything",
+  "household": "husband, five kids, parents",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Natural photo of a Samoan woman in her late 30s with long dark hair and a floral puletasi, laughing beside a table of Sunday food in Auckland"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "tongan.table",
+  "name": "Sione Fifita",
+  "kind": "house",
+  "city": "Ipswich",
+  "country": "Australia",
+  "timezone": "Australia/Brisbane",
+  "bio": "Tongan cooking in Queensland. Lu pulu, ota ika, and cassava for days.",
+  "background": "Rugby league coach and forklift driver in Ipswich, Tongan family.",
+  "voice": "Humble, warm, proud of his mum's cooking.",
+  "cuisines": [
+   {
+    "id": "pacific-islands",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "Tongan",
+   "coconut",
+   "taro leaves",
+   "feasts"
+  ],
+  "diet": "everything",
+  "household": "wife and four kids",
+  "avatar": {
+   "kind": "ai-logo",
+   "prompt": "Flat logo of a taro leaf parcel tied with string beside a coconut, deep green and warm brown, bold friendly wordmark"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "hangi.hemi",
+  "name": "Hemi Walker",
+  "kind": "house",
+  "city": "Rotorua",
+  "country": "New Zealand",
+  "timezone": "Pacific/Auckland",
+  "bio": "Kiwi and Māori home cooking. Boil-up, rēwena bread and kai moana.",
+  "background": "Forestry worker in Rotorua who cooks for his whānau and the local marae.",
+  "voice": "Relaxed, generous, te reo words with meanings.",
+  "cuisines": [
+   {
+    "id": "pacific-islands",
+    "weight": 4
+   },
+   {
+    "id": "modern-australian",
+    "weight": 1
+   }
+  ],
+  "specialties": [
+   "Māori",
+   "boil-up",
+   "bread",
+   "seafood"
+  ],
+  "diet": "everything",
+  "household": "partner and three kids",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "pork and watercress soup"
+  },
+  "backlog": 20,
+  "perWeek": 0.75
+ },
+ {
+  "handle": "plantbased.habibti",
+  "name": "Layla Khoury",
+  "kind": "house",
+  "city": "Parramatta, Sydney",
+  "country": "Australia",
+  "timezone": "Australia/Sydney",
+  "bio": "Lebanese food, the plant-based way. Most of it already was.",
+  "background": "Speech pathologist, Lebanese-Australian, vegan for five years. Shows her family that tabbouleh was always vegan.",
+  "voice": "Playful, warm, lightly teasing about her family.",
+  "cuisines": [
+   {
+    "id": "middle-eastern",
+    "weight": 5
+   }
+  ],
+  "specialties": [
+   "vegan Lebanese",
+   "salads",
+   "legumes",
+   "mezze"
+  ],
+  "diet": "vegan",
+  "household": "lives with fiancé",
+  "avatar": {
+   "kind": "ai-portrait",
+   "prompt": "Candid photo of a Lebanese-Australian woman in her late 20s with long wavy hair, tossing a bowl of tabbouleh in a bright Parramatta kitchen"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ },
+ {
+  "handle": "donburi.dad",
+  "name": "Takeshi Mori",
+  "kind": "house",
+  "city": "Chatswood, Sydney",
+  "country": "Australia",
+  "timezone": "Australia/Sydney",
+  "bio": "Rice bowls, curry rice and one-pan Japanese dinners for a busy Sydney family.",
+  "background": "Software developer from Yokohama, married to an Australian, cooks fast Japanese dinners for his kids.",
+  "voice": "Efficient, dad jokes, gives shortcuts.",
+  "cuisines": [
+   {
+    "id": "japanese",
+    "weight": 4
+   },
+   {
+    "id": "modern-australian",
+    "weight": 1
+   }
+  ],
+  "specialties": [
+   "donburi",
+   "curry rice",
+   "one-pan"
+  ],
+  "diet": "everything",
+  "household": "wife and two kids",
+  "avatar": {
+   "kind": "food-photo",
+   "query": "japanese rice bowl donburi"
+  },
+  "backlog": 25,
+  "perWeek": 1
+ }
+]

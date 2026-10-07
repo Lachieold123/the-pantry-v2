@@ -9,6 +9,7 @@ export const CUISINES = [
   'middle-eastern',
   'north-african',
   'west-african',
+  'east-african',
   'south-african',
   'indian',
   'thai',
@@ -21,11 +22,13 @@ export const CUISINES = [
   'filipino',
   'mexican',
   'latin-american',
+  'caribbean',
   'american',
   'british',
   'central-european',
   'scandinavian',
   'modern-australian',
+  'pacific-islands',
 ] as const;
 export type CuisineId = (typeof CUISINES)[number];
 

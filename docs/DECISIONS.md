@@ -388,3 +388,18 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
 - **Added dependency:** `expo-apple-authentication` (native; `ios.usesAppleSignIn` switches on the capability at the next EAS build).
 - **Waits for Lachlan:** applying the migration, and the dashboard steps in `docs/ACCOUNTS.md` (anonymous sign-ins, manual linking, Apple provider, the email templates showing the code, custom SMTP).
 - **Why:** an account only earns its place when it gives something back (a backup, a second phone, a household that survives a new phone), and asking up front costs people at the door. Apple and email codes have no password to forget.
+
+## D-044 · House cooks seed the social side, labelled as The Pantry's
+
+- **Date:** 7 October 2026 · **Decided by:** Lachlan (Claude recommended the labelling and the limits)
+- **Decision:** before real people post, the feed is seeded by 99 **house cooks** plus **The Pantry Kitchen** (`@thepantry`). The plan is `docs/SEED-KITCHEN.md`.
+  - **Who they are:** fictional home cooks from around the world, each with a background, a voice and a posting rhythm (`scripts/seed/personas.json`). They're shown with a **Pantry Kitchen** badge, and tapping it says they're The Pantry's own cooks, written with AI and checked. They are `cooks.kind = 'house'`, with no auth user, so nobody can sign in as one.
+  - **What they do:** post recipes on a believable rhythm, at real times in their own daytime, and follow each other.
+  - **What they never do:** like, comment on, or follow real people's things. No fake engagement and no follower counts made from bots following real users.
+  - **Recipes:** written by Claude, then checked by the app's own parser, validator and diet rules (bundled from `src/domain`), then by an independent "recipe tester" pass. They are `review = 'auto-checked'`; Lachlan can cook any of them to make it `vetted`.
+  - **Ingredients:** named the way a cook from that cuisine names them, with the Australian name in brackets. Names the database doesn't know become `ingredient_extras`, either an alias of a known item or a new item with its groups and a swap. A second check confirms the groups; until then, the recipe claims no diet.
+  - **Photos:** Pexels, chosen by a vision check that only accepts a photo that honestly shows the dish, then copied to our storage with the photographer's credit. No match means no photo. Avatars are AI portraits or logos (labelled by `avatar_kind`), or Pexels food photos.
+  - **Cuisines:** three are added to the app for this: East African, Caribbean and Pacific Islands.
+- **Replaces:** rule 4's "no simulated data" for this one, labelled case. House content is real content from The Pantry, not placeholder data.
+- **Costs:** a hard monthly cap in `seed.config` (US$14 to start, on Haiku 4.5). The job pauses itself at the cap.
+- **Still to come (P9):** the app's feed, profile and badge screens; merging verified `ingredient_extras` into the app's ingredient index; showing their swap tips; and the exit plan, meaning when house cooks stop posting (Lachlan to decide).

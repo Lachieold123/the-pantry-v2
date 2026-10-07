@@ -26,7 +26,8 @@ const noColourLiterals = {
 
 module.exports = defineConfig([
   expoConfig,
-  { ignores: ['dist/*', '.expo/*', 'node_modules/*', 'ios/*', 'android/*', 'coverage/*'] },
+  // Edge functions are Deno, checked with deno check and deno test (docs/SEED-KITCHEN.md).
+  { ignores: ['dist/*', '.expo/*', 'node_modules/*', 'ios/*', 'android/*', 'coverage/*', 'supabase/functions/*'] },
   {
     files: ['src/**/*.{ts,tsx}'],
     ignores: ['src/ui/tokens/**'],

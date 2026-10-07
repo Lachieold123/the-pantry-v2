@@ -13,6 +13,7 @@ export const CUISINE_LABELS: Readonly<Record<CuisineId, string>> = {
   'middle-eastern': 'Middle Eastern',
   'north-african': 'North African',
   'west-african': 'West African',
+  'east-african': 'East African',
   'south-african': 'South African',
   indian: 'Indian',
   thai: 'Thai',
@@ -25,11 +26,13 @@ export const CUISINE_LABELS: Readonly<Record<CuisineId, string>> = {
   filipino: 'Filipino',
   mexican: 'Mexican',
   'latin-american': 'Latin American',
+  caribbean: 'Caribbean',
   american: 'American',
   british: 'British',
   'central-european': 'Central European',
   scandinavian: 'Scandinavian',
   'modern-australian': 'Modern Australian',
+  'pacific-islands': 'Pacific Islands',
 };
 
 export const MEAL_TYPE_LABELS: Readonly<Record<MealType, string>> = {

@@ -54,6 +54,7 @@ const FAMILY: Readonly<Record<string, Family>> = {
   'middle-eastern': 'middleEastern',
   'north-african': 'middleEastern',
   'west-african': 'other',
+  'east-african': 'other',
   'south-african': 'other',
   indian: 'indian',
   thai: 'asian',
@@ -66,11 +67,13 @@ const FAMILY: Readonly<Record<string, Family>> = {
   filipino: 'asian',
   mexican: 'mexican',
   'latin-american': 'mexican',
+  caribbean: 'other',
   american: 'american',
   british: 'european',
   'central-european': 'european',
   scandinavian: 'european',
   'modern-australian': 'other',
+  'pacific-islands': 'other',
 };
 
 export function cuisineEyebrow(cuisine: string, ground: Ground): string {
