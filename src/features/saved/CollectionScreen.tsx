@@ -8,10 +8,12 @@ import { View } from 'react-native';
 import { goBack } from '@/lib/navigation';
 import { useSaved } from '@/store/saved';
 import { EmptyState } from '@/ui/patterns/EmptyState';
-import { LibraryCardGrid } from '@/ui/patterns/LibraryCard';
+import { LibraryCardRow, libraryRowKey, libraryRows } from '@/ui/patterns/LibraryCard';
 import { LibraryHead } from '@/ui/patterns/LibraryHeader';
 import { IconButton } from '@/ui/primitives/IconButton';
+import { ListScreen } from '@/ui/primitives/ListScreen';
 import { Screen } from '@/ui/primitives/Screen';
+import { LIBRARY } from '@/ui/tokens/library';
 import { CollectionActions } from './CollectionActions';
 import { imageFor, RECIPES_UNIT, useOpenRecipe, useRecipesFor } from './libraryHooks';
 
@@ -40,30 +42,43 @@ export function CollectionScreen({ id }: { id: string }) {
   }
 
   return (
-    <Screen testID="collection-screen">
-      <View>
-        <LibraryHead
-          kicker="Collection"
-          title={collection.name}
-          count={recipes.length}
-          unit={RECIPES_UNIT}
-          action={
-            <IconButton icon="more" label="Collection actions" shape="chip" onPress={() => setActionsOpen(true)} testID="collection-more" />
-          }
-        />
-        {recipes.length ? (
-          <LibraryCardGrid recipes={recipes} imageFor={imageFor} onOpen={open} />
-        ) : (
-          <EmptyState
-            look="library"
-            title="This collection is empty"
-            body="Add recipes from any recipe page: tap ⋯, then Add to a collection."
-            action={{ label: 'Browse recipes', onPress: () => router.navigate('/browse') }}
-            testID="collection-empty"
-          />
-        )}
-      </View>
+    <>
+      <ListScreen
+        testID="collection-screen"
+        header={
+          <View>
+            <LibraryHead
+              kicker="Collection"
+              title={collection.name}
+              count={recipes.length}
+              unit={RECIPES_UNIT}
+              action={
+                <IconButton
+                  icon="more"
+                  label="Collection actions"
+                  shape="chip"
+                  onPress={() => setActionsOpen(true)}
+                  testID="collection-more"
+                />
+              }
+            />
+            {recipes.length ? null : (
+              <EmptyState
+                look="library"
+                title="This collection is empty"
+                body="Add recipes from any recipe page: tap ⋯, then Add to a collection."
+                action={{ label: 'Browse recipes', onPress: () => router.navigate('/browse') }}
+                testID="collection-empty"
+              />
+            )}
+          </View>
+        }
+        items={libraryRows(recipes)}
+        keyOf={libraryRowKey}
+        gap={LIBRARY.gridGap}
+        renderItem={(row) => <LibraryCardRow row={row} imageFor={imageFor} onOpen={open} />}
+      />
       <CollectionActions id={actionsOpen ? id : null} onClose={() => setActionsOpen(false)} onDeleted={() => goBack(router)} />
-    </Screen>
+    </>
   );
 }
