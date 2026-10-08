@@ -34,6 +34,7 @@ export const EMPTY_HOUSEHOLD = {
   household: undefined,
   mirror: {},
   pending: {},
+  setAside: {},
   sharedRecipes: {},
   status: 'idle',
 } as const satisfies Partial<HouseholdState>;
@@ -43,11 +44,12 @@ export const useHousehold = create<HouseholdState>()(
     name: `${STORAGE_PREFIX}/household`,
     version: 1,
     storage: persistentStorage(),
-    partialize: ({ household, userId, mirror, pending, sharedRecipes, lastSyncedAt, rejoin }) => ({
+    partialize: ({ household, userId, mirror, pending, setAside, sharedRecipes, lastSyncedAt, rejoin }) => ({
       household,
       userId,
       mirror,
       pending,
+      setAside,
       sharedRecipes,
       lastSyncedAt,
       rejoin,
@@ -145,5 +147,5 @@ export async function signIn(): Promise<Result<string>> {
   return me;
 }
 
-export { adoptHousehold, inviteCode, joinWithCode, leave, startHousehold } from './householdActions';
+export { adoptHousehold, inviteCode, joinWithCode, leave, recoverHousehold, startHousehold } from './householdActions';
 export type { Household, Problem } from '@/lib/household';

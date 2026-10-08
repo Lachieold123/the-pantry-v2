@@ -9,6 +9,7 @@ import {
   myHousehold,
   pullRows,
   type Household,
+  type Problem,
   type Result,
 } from '@/lib/household';
 import {
@@ -28,7 +29,7 @@ export async function startHousehold(name: string): Promise<Result<Household>> {
   const me = await signIn();
   if (!me.ok) return me;
   const made = await createHousehold(name);
-  if (!made.ok) return made;
+  if (!made.ok) return made.problem === 'already-in-household' ? recover(me.value, made) : made;
   const house = await myHousehold();
   if (!house.ok || !house.value) return house.ok ? { ok: false, problem: 'failed' } : house;
   useHousehold.setState({ ...EMPTY_HOUSEHOLD, household: house.value, rejoin: undefined });
@@ -61,10 +62,29 @@ export async function joinWithCode(code: string, name: string): Promise<Result<H
   const me = await signIn();
   if (!me.ok) return me;
   const joined = await joinHousehold(code, name);
-  if (!joined.ok) return joined;
+  if (!joined.ok) return joined.problem === 'already-in-household' ? recover(me.value, joined) : joined;
   const house = await myHousehold();
   if (!house.ok || !house.value) return house.ok ? { ok: false, problem: 'failed' } : house;
   return adoptHousehold(house.value, me.value);
+}
+
+/**
+ * The server says this phone is already in a household, but the phone doesn't
+ * know it: an earlier start or join went through and the answer was lost
+ * (BUG-10). Take that household up rather than leave the phone stuck.
+ */
+async function recover(userId: string, problem: { ok: false; problem: Problem }): Promise<Result<Household>> {
+  const house = await myHousehold();
+  if (!house.ok || !house.value) return problem;
+  return adoptHousehold(house.value, userId);
+}
+
+/** At launch: a phone that has signed in for a household but doesn't think it's in one checks with the server. */
+export async function recoverHousehold(): Promise<void> {
+  const { household, userId } = useHousehold.getState();
+  if (household || !userId) return;
+  const house = await myHousehold();
+  if (house.ok && house.value && !useHousehold.getState().household) await adoptHousehold(house.value, userId);
 }
 
 /** A link and code to send someone. */

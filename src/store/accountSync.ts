@@ -129,7 +129,7 @@ const fail = { ok: false } as const;
 export const accountEngine = createEngine({
   read: () => {
     const s = useAccount.getState();
-    return { mirror: s.mirror, pending: s.pending, status: s.sync, lastSyncedAt: s.lastSyncedAt };
+    return { mirror: s.mirror, pending: s.pending, setAside: s.setAside, status: s.sync, lastSyncedAt: s.lastSyncedAt };
   },
   write: ({ status, ...rest }) => useAccount.setState({ ...rest, ...(status ? { sync: status } : {}) }),
   active: () => useAccount.getState().who !== undefined && !useAccount.getState().needsMerge,

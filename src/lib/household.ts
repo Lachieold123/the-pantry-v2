@@ -4,6 +4,7 @@
 import type { RealtimeChannel } from '@supabase/supabase-js';
 
 import type { Row, RowKind } from '@/domain/household/rows';
+import { pushTo, type PushResult } from './pushRows';
 import { supabase } from './supabase';
 
 export type Member = { userId: string; name: string };
@@ -15,7 +16,8 @@ export type Result<T> = { ok: true; value: T } | { ok: false; problem: Problem }
 
 const fail = (problem: Problem): { ok: false; problem: Problem } => ({ ok: false, problem });
 
-function problemFrom(message: string | undefined): Problem {
+/** @internal Exported for its tests. */
+export function problemFrom(message: string | undefined): Problem {
   const m = message ?? '';
   if (m.includes('invite-not-found')) return 'invite-not-found';
   if (m.includes('household-full')) return 'household-full';
@@ -25,12 +27,15 @@ function problemFrom(message: string | undefined): Problem {
   return 'failed';
 }
 
-/** This phone's id, signing in anonymously the first time. */
+/** This phone's id, signing in anonymously the first time (only when there's no saved sign-in at all). */
 export async function signedInUser(): Promise<Result<string>> {
   try {
     const auth = supabase().auth;
-    const { data } = await auth.getSession();
+    const { data, error } = await auth.getSession();
     if (data.session) return { ok: true, value: data.session.user.id };
+    // A saved sign-in that couldn't be refreshed (a patchy network) is still this phone's.
+    // Signing in anonymously now would replace it and quietly leave the household (BUG-16).
+    if (error) return fail('offline');
     const signed = await auth.signInAnonymously();
     if (signed.error || !signed.data.user) return fail(problemFrom(signed.error?.message));
     return { ok: true, value: signed.data.user.id };
@@ -104,7 +109,10 @@ export async function pullRows(householdId: string): Promise<Result<Row[]>> {
         .from('household_rows')
         .select('kind, key, data, deleted, updated_at, updated_by')
         .eq('household_id', householdId)
+        // A total order (no ties), so paging past 1,000 rows never skips or repeats one.
         .order('updated_at')
+        .order('kind')
+        .order('key')
         .range(from, from + page - 1);
       if (error) return fail(problemFrom(error.message));
       out.push(...(data as DbRow[]).map(fromDb));
@@ -116,27 +124,8 @@ export async function pullRows(householdId: string): Promise<Result<Row[]>> {
 }
 
 /** Sends rows. The server keeps whichever version of a row is newest. */
-export async function pushRows(householdId: string, userId: string, rows: readonly Row[]): Promise<Result<null>> {
-  if (rows.length === 0) return { ok: true, value: null };
-  try {
-    const { error } = await supabase()
-      .from('household_rows')
-      .upsert(
-        rows.map((r) => ({
-          household_id: householdId,
-          kind: r.kind,
-          key: r.key,
-          data: r.data,
-          deleted: r.deleted,
-          updated_at: r.updatedAt,
-          updated_by: userId,
-        })),
-        { onConflict: 'household_id,kind,key' },
-      );
-    return error ? fail(problemFrom(error.message)) : { ok: true, value: null };
-  } catch (e) {
-    return fail(problemFrom(String(e)));
-  }
+export function pushRows(householdId: string, userId: string, rows: readonly Row[]): Promise<PushResult> {
+  return pushTo('household_rows', { household_id: householdId }, userId, rows, 'household_id,kind,key');
 }
 
 /** Calls back with each row another phone writes, and when the member list changes. Returns a stop function. */

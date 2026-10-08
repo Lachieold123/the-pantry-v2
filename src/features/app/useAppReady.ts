@@ -13,48 +13,48 @@ import { useMyRecipes } from '@/store/myRecipes';
 import { importFromOldAppOnce, useWelcomeBack } from '@/store/oldAppImport';
 import { usePlan } from '@/store/plan';
 import { usePreferences } from '@/store/preferences';
-import { startSync, useHousehold } from '@/store/household';
+import { recoverHousehold, startSync, useHousehold } from '@/store/household';
 import { refreshEntitlement, usePro } from '@/store/pro';
 import { useSaved } from '@/store/saved';
-import { allHydrated } from '@/store/storage';
+import { allHydrated, hydrated } from '@/store/storage';
 import { FONT_FILES } from '@/ui/theme/fonts';
+
+const STORES = [usePreferences, usePlan, useSaved, useCookLog, useCupboard, useMyRecipes, useWelcomeBack, usePro, useHousehold, useAccount];
 
 async function prepare(): Promise<void> {
   // Every store, so nothing on the first screen jumps in late (audit PERF-7). The wait has
   // a limit, so a store that never loads can't hold the splash screen up forever (ARCH-6).
-  const loaded = await allHydrated([
-    usePreferences,
-    usePlan,
-    useSaved,
-    useCookLog,
-    useCupboard,
-    useMyRecipes,
-    useWelcomeBack,
-    usePro,
-    useHousehold,
-    useAccount,
-  ]);
+  const loaded = await allHydrated(STORES);
   if (loaded === 'timed-out') console.warn('[startup] saved data took too long to load; opening anyway');
   // Ask the store who is Pro; the saved mirror covers an offline start. Never blocks opening.
   void refreshEntitlement();
-  // A household's sync starts once the kitchen has loaded; it never holds up opening (D-039).
-  startSync();
   try {
     await importFromOldAppOnce();
   } catch (e) {
     // A failed import must never stop the app opening.
     console.warn('[startup] old-app import failed', e);
   }
-  // The account's backup and its once-only offers (D-043), after the import, so
-  // recipes brought across from the old app don't count as a moment.
-  startAccount();
+  // Syncing waits for every store, however long that takes: a store that loaded late would
+  // otherwise be read as fresh changes and undo deletions everywhere. It never holds up opening.
+  // The account starts after the import, so recipes brought across from the old app don't count
+  // as a moment for its once-only offers (D-043).
+  void Promise.all(STORES.map(hydrated))
+    .then(async () => {
+      startSync();
+      startAccount();
+      await recoverHousehold();
+    })
+    .catch((e: unknown) => console.warn('[startup] sync failed to start', e));
 }
 
 export function useAppReady(): boolean {
   const [fontsLoaded, fontError] = useFonts(FONT_FILES);
   const [dataReady, setDataReady] = useState(false);
   useEffect(() => {
-    void prepare().then(() => setDataReady(true));
+    // Whatever happens, the app opens: a throw in start-up must not leave the splash screen up.
+    void prepare()
+      .catch((e: unknown) => console.warn('[startup] failed', e))
+      .finally(() => setDataReady(true));
   }, []);
   // A font that fails to load falls back to the system face rather than blocking the app.
   return (fontsLoaded || fontError !== null) && dataReady;

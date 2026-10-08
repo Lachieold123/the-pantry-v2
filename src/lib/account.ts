@@ -11,6 +11,7 @@ import * as AppleAuthentication from 'expo-apple-authentication';
 import type { RealtimeChannel, Session, User } from '@supabase/supabase-js';
 
 import type { Row, RowKind } from '@/domain/sync/rows';
+import { pushTo, type PushResult } from './pushRows';
 import { supabase } from './supabase';
 
 export type Account = {
@@ -31,7 +32,8 @@ const fail = (problem: Problem): { ok: false; problem: Problem } => ({ ok: false
 
 type Failure = { message?: string; code?: string | undefined; name?: string } | null | undefined;
 
-function problemFrom(e: Failure | unknown): Problem {
+/** @internal Exported for its tests. */
+export function problemFrom(e: Failure | unknown): Problem {
   const err = (typeof e === 'object' && e !== null ? e : { message: String(e) }) as NonNullable<Failure>;
   const code = err.code ?? '';
   const m = err.message ?? '';
@@ -73,8 +75,14 @@ async function accountOf(user: User): Promise<Account> {
   return { id: user.id, email: user.email || undefined, apple: providers.includes('apple'), name };
 }
 
+/**
+ * The saved sign-in. When it can't be checked (offline with an expired token,
+ * auth-js answers no session and an error), this throws, so callers answer
+ * "offline" instead of reading it as signed out (BUG-05).
+ */
 async function session(): Promise<Session | null> {
-  const { data } = await supabase().auth.getSession();
+  const { data, error } = await supabase().auth.getSession();
+  if (error) throw error;
   return data.session;
 }
 
@@ -87,7 +95,7 @@ export function currentAccount(): Promise<Result<Account | undefined>> {
   });
 }
 
-/** Loads the saved sign-in; true if it's a permanent one. */
+/** Loads the saved sign-in; true if it's a permanent one. False when it can't be checked yet: the sync tries again later. */
 export async function sessionReady(): Promise<boolean> {
   try {
     const s = await session();
@@ -223,7 +231,10 @@ export function pullAccountRows(userId: string): Promise<Result<Row[]>> {
         .from('account_rows')
         .select('kind, key, data, deleted, updated_at, updated_by')
         .eq('user_id', userId)
+        // A total order (no ties), so paging past 1,000 rows never skips or repeats one.
         .order('updated_at')
+        .order('kind')
+        .order('key')
         .range(from, from + page - 1);
       if (error) return fail(problemFrom(error));
       out.push(...(data as DbRow[]).map(fromDb));
@@ -233,25 +244,8 @@ export function pullAccountRows(userId: string): Promise<Result<Row[]>> {
 }
 
 /** Sends rows. The server keeps whichever version of a row is newest. `by` names this phone, so two phones can break a tie. */
-export function pushAccountRows(userId: string, by: string, rows: readonly Row[]): Promise<Result<null>> {
-  if (rows.length === 0) return Promise.resolve({ ok: true, value: null });
-  return attempt(async () => {
-    const { error } = await supabase()
-      .from('account_rows')
-      .upsert(
-        rows.map((r) => ({
-          user_id: userId,
-          kind: r.kind,
-          key: r.key,
-          data: r.data,
-          deleted: r.deleted,
-          updated_at: r.updatedAt,
-          updated_by: by,
-        })),
-        { onConflict: 'user_id,kind,key' },
-      );
-    return error ? fail(problemFrom(error)) : { ok: true, value: null };
-  });
+export function pushAccountRows(userId: string, by: string, rows: readonly Row[]): Promise<PushResult> {
+  return pushTo('account_rows', { user_id: userId }, by, rows, 'user_id,kind,key');
 }
 
 /** Calls back with each row another phone on the same account writes. Returns a stop function. */

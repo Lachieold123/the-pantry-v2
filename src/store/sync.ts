@@ -9,70 +9,18 @@
 // - Offline, everything still works; it pulls and sends again on reconnect
 //   and whenever the app comes to the front.
 //
+// - A row the server refuses (too long, malformed) is set aside, so it never
+//   holds up the rest (BUG-03). Network trouble keeps everything waiting.
+//
 // Where the mirror and pending rows are kept (and persisted) is up to each
 // scope's store: the engine reads and writes them through its adapter.
 import { AppState } from 'react-native';
 
+import { rowFits, stampAfter } from '@/domain/sync/limits';
 import { changedRows, mergeRows, rowId, type Row, type Snapshot } from '@/domain/sync/rows';
+import type { Engine, ScopeAdapter } from './syncTypes';
 
-export type SyncStatus = 'idle' | 'syncing' | 'offline';
-
-export type ScopeState = {
-  mirror: Record<string, Row>;
-  /** Rows waiting to be sent, newest per record. */
-  pending: Record<string, Row>;
-  status: SyncStatus;
-  lastSyncedAt: number | undefined;
-};
-
-type Outcome<T> = { ok: true; value: T } | { ok: false };
-
-export type ScopeAdapter = {
-  read: () => ScopeState;
-  write: (patch: Partial<ScopeState>) => void;
-  /** Whether this scope should be syncing now (in a household; signed in). */
-  active: () => boolean;
-  /** What this scope holds on this phone right now. */
-  local: () => Snapshot;
-  /**
-   * Names the set of kinds the scope holds. When it changes (the account
-   * gains or loses the kitchen as you leave or join a household), the next
-   * comparison starts afresh instead of reading the move as deletions, and
-   * `reshape` says what, if anything, to send for the move.
-   */
-  shape?: () => string;
-  reshape?: (from: string, to: string) => Row[];
-  /** Rebuilds the stores from the mirror's rows. */
-  apply: (rows: Row[]) => void;
-  /** Subscribes to every store `local` reads; returns the stops. */
-  watch: (onChange: () => void) => (() => void)[];
-  author: () => string | undefined;
-  pull: () => Promise<Outcome<Row[]>>;
-  push: (rows: Row[]) => Promise<Outcome<null>>;
-  listen: (onRow: (row: Row) => void) => () => void;
-  /** Runs before the sync starts (the saved sign-in loading); false stops the start. */
-  ready?: () => Promise<boolean>;
-  /** After each start and each return to the app (the household's member list). */
-  refresh?: () => void;
-};
-
-export type Engine = {
-  /** Starts syncing if the scope is active. Safe to call more than once. */
-  start: () => void;
-  stop: () => void;
-  running: () => boolean;
-  /** Rows made on this phone outside the usual change watch (starting a household, merging). */
-  record: (rows: readonly Row[]) => void;
-  /** Rebuilds the stores from the mirror. */
-  applyMirror: () => void;
-  /** Forgets the last snapshot, so the next change is compared with the stores as they are then. */
-  rebase: () => void;
-  /** Merges rows from elsewhere and rebuilds the stores if anything changed. */
-  receive: (rows: readonly Row[]) => void;
-  pull: () => Promise<boolean>;
-  flush: () => Promise<void>;
-  waiting: () => number;
-};
+export type { Engine, ScopeAdapter, ScopeState, SyncStatus } from './syncTypes';
 
 const FLUSH_DELAY_MS = 400;
 const RETRY_DELAY_MS = 30_000;
@@ -82,8 +30,10 @@ export function createEngine(scope: ScopeAdapter): Engine {
   let last: Snapshot | undefined;
   let lastShape = '';
   let flushTimer: ReturnType<typeof setTimeout> | undefined;
-  let flushing = false;
+  let flushing: Promise<void> | undefined;
   let stops: (() => void)[] = [];
+  /** Watching the stores and the app coming to the front: from the first start, before the sync is ready. */
+  let watching: (() => void)[] = [];
   let starting = false;
   /** Bumped by each stop, so an answer that arrives after a stop (left the household, signed out) is dropped. */
   let generation = 0;
@@ -129,7 +79,7 @@ export function createEngine(scope: ScopeAdapter): Engine {
       record(scope.reshape?.(from, shape) ?? []);
       return;
     }
-    const rows = changedRows(last, next, Date.now(), scope.author());
+    const rows = stampAfter(changedRows(last, next, Date.now(), scope.author()), scope.read().mirror);
     last = next;
     record(rows);
   }
@@ -147,28 +97,80 @@ export function createEngine(scope: ScopeAdapter): Engine {
     flushTimer = setTimeout(() => void flush(), delay);
   }
 
-  async function flush(): Promise<void> {
-    const rows = Object.values(scope.read().pending);
-    if (!scope.active() || flushing || !rows.length) return;
-    flushing = true;
+  /** Sends what's waiting. While a send is running, answers with that send, so a caller can wait for it. */
+  function flush(): Promise<void> {
+    flushing ??= send().finally(() => {
+      flushing = undefined;
+    });
+    return flushing;
+  }
+
+  /** Takes rows out of the queue for good, keeping them on this phone. */
+  function setAside(rows: readonly Row[]): void {
+    if (!rows.length) return;
+    const s = scope.read();
+    const pending = { ...s.pending };
+    const aside = { ...s.setAside };
+    for (const r of rows) {
+      const id = rowId(r.kind, r.key);
+      if (pending[id] === r) delete pending[id];
+      aside[id] = r;
+    }
+    console.warn(`[sync] set aside ${rows.length} row(s) the server won't take`);
+    scope.write({ pending, setAside: aside });
+  }
+
+  /** Sends each row on its own, after the server refused a batch, so only the bad ones are set aside. */
+  async function sendOneByOne(rows: readonly Row[], asked: number): Promise<{ ok: Row[]; offline: boolean }> {
+    const ok: Row[] = [];
+    const refused: Row[] = [];
+    for (const r of rows) {
+      const one = await scope.push([r]);
+      if (asked !== generation) return { ok, offline: false };
+      if (one.ok) ok.push(r);
+      else if (one.rejected) refused.push(r);
+      else return { ok, offline: true };
+    }
+    setAside(refused);
+    return { ok, offline: false };
+  }
+
+  async function send(): Promise<void> {
+    if (!scope.active()) return;
+    const waiting = Object.values(scope.read().pending);
+    setAside(waiting.filter((r) => !rowFits(r)));
+    const rows = waiting.filter(rowFits);
+    if (!rows.length) return;
     scope.write({ status: 'syncing' });
     const asked = generation;
     const sent = await scope.push(rows);
-    flushing = false;
     if (asked !== generation) return;
+    let done: readonly Row[] = rows;
     if (!sent.ok) {
-      scope.write({ status: 'offline' });
-      scheduleFlush(RETRY_DELAY_MS);
-      return;
+      const retry = sent.rejected ? await sendOneByOne(rows, asked) : { ok: [], offline: true };
+      if (asked !== generation) return;
+      if (retry.offline) {
+        markSent(retry.ok);
+        scope.write({ status: 'offline' });
+        scheduleFlush(RETRY_DELAY_MS);
+        return;
+      }
+      done = retry.ok;
     }
-    // Keep anything that changed again while this batch was in flight.
+    markSent(done);
+    scope.write({ status: 'idle', lastSyncedAt: Date.now() });
+    if (Object.keys(scope.read().pending).length) scheduleFlush();
+  }
+
+  /** Clears sent rows from the queue, keeping anything that changed again while they were in flight. */
+  function markSent(rows: readonly Row[]): void {
+    if (!rows.length) return;
     const left = { ...scope.read().pending };
     for (const r of rows) {
       const id = rowId(r.kind, r.key);
       if (left[id] === r) delete left[id];
     }
-    scope.write({ pending: left, status: 'idle', lastSyncedAt: Date.now() });
-    if (Object.keys(left).length) scheduleFlush();
+    scope.write({ pending: left });
   }
 
   async function pull(): Promise<boolean> {
@@ -188,26 +190,36 @@ export function createEngine(scope: ScopeAdapter): Engine {
   function start(): void {
     if (!scope.active() || stops.length || starting) return;
     starting = true;
-    void (scope.ready?.() ?? Promise.resolve(true)).then((ok) => {
-      starting = false;
-      if (!ok || !scope.active() || stops.length) return;
+    // Watch first: a change made while the sign-in loads (offline, a slow refresh) is still a change.
+    if (!watching.length) {
       remember();
       const appState = AppState.addEventListener('change', (state) => {
         if (state !== 'active') return;
+        if (!stops.length) return start(); // The last start was held (no sign-in yet): try again.
         void pull().then(flush);
         scope.refresh?.();
       });
-      stops = [...scope.watch(onLocalChange), scope.listen((row) => receive([row])), () => appState.remove()];
-      // Anything left unsent from last time goes out after the pull.
-      void pull().then(flush);
-      scope.refresh?.();
-    });
+      watching = [...scope.watch(onLocalChange), () => appState.remove()];
+    }
+    const asked = generation;
+    void (scope.ready?.() ?? Promise.resolve(true))
+      .catch(() => false)
+      .then((ok) => {
+        starting = false;
+        if (asked !== generation || !ok || !scope.active() || stops.length) return;
+        stops = [scope.listen((row) => receive([row]))];
+        // Anything left unsent from last time goes out after the pull.
+        void pull().then(flush);
+        scope.refresh?.();
+      });
   }
 
   function stop(): void {
     generation += 1;
-    for (const s of stops) s();
+    for (const s of [...stops, ...watching]) s();
     stops = [];
+    watching = [];
+    starting = false;
     if (flushTimer) clearTimeout(flushTimer);
     flushTimer = undefined;
     last = undefined;
