@@ -31,8 +31,9 @@ export function JoinScreen({ code }: { code: string }) {
     let alive = true;
     void inviteFor(clean).then((r) => {
       if (!alive) return;
+      // Too many wrong codes is worth saying now; anything else (offline) just means no preview.
       if (r.ok) setPreview(r.value ?? null);
-      else setProblem(PROBLEM_WORDS[r.problem]);
+      else if (r.problem === 'too-many-attempts') setProblem(PROBLEM_WORDS[r.problem]);
     });
     return () => {
       alive = false;

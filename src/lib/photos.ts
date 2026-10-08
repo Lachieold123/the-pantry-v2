@@ -1,6 +1,7 @@
 // Taking or choosing photos (expo-image-picker), for posting a dish you
-// cooked and for scanning (D-030, D-033). Asks permission first and answers
+// cooked and for scanning (D-030, D-033). Asks for the camera first and answers
 // plainly when it's refused, so a screen can say what to do instead of failing.
+// When scanning is switched on, its purpose strings go back into app.json (K-14).
 import * as ImagePicker from 'expo-image-picker';
 
 export type PhotoSource = 'camera' | 'library';
@@ -16,9 +17,9 @@ type Options = { max?: number | undefined };
 
 export async function capturePhotos(source: PhotoSource, { max = 1 }: Options = {}): Promise<Capture> {
   try {
-    const permission =
-      source === 'camera' ? await ImagePicker.requestCameraPermissionsAsync() : await ImagePicker.requestMediaLibraryPermissionsAsync();
-    if (!permission.granted) return { status: 'denied' };
+    // Only the camera needs asking. The system photo picker shows only what the cook chooses, so the
+    // app never asks for the whole library (REL-07, guideline 5.1.1).
+    if (source === 'camera' && !(await ImagePicker.requestCameraPermissionsAsync()).granted) return { status: 'denied' };
     const options: ImagePicker.ImagePickerOptions = {
       mediaTypes: ['images'],
       quality: 0.85,
