@@ -9,7 +9,17 @@ import { entriesInWeek, isPast, listWeek, type PlanEntry } from '../plan/week';
 import type { Recipe } from '../recipes/types';
 import { index, kitchen, makeRecipe } from '../testing/fixtures';
 import { listKey } from './amounts';
-import { addExtras, countToBuy, deriveShoppingList, EMPTY_EDITS, toggleChecked, type ShoppingList, type WeekListEdits } from './derive';
+import {
+  addExtras,
+  clearList,
+  countToBuy,
+  deriveShoppingList,
+  EMPTY_EDITS,
+  toggleChecked,
+  type ShoppingList,
+  type WeekListEdits,
+} from './derive';
+import { undoClear } from './extras';
 import { recipeListRows } from './fromRecipe';
 
 const recipes = new Map<string, Recipe>();
@@ -132,5 +142,21 @@ describe('the week the List tab shows (BUG-08)', () => {
     assert.equal(listWeek('2026-10-11', true), '2026-10-12');
     assert.equal(listWeek('2026-10-11', false), '2026-10-05');
     assert.equal(listWeek('2026-10-08', true), '2026-10-05');
+  });
+});
+
+describe('undoing Clear all (BUG-18)', () => {
+  it('brings back what clearing took, and keeps a tick made since', () => {
+    const before = addExtras(EMPTY_EDITS, ['Dishwashing liquid'], () => 'x1', 1).edits;
+    const l = weekList('2026-10-05', before);
+    const cleared = clearList(before, l);
+    const meanwhile = { ...cleared, checked: { chickpeas: '=mass:400' } };
+    const undone = undoClear(before, cleared)(meanwhile);
+    assert.deepEqual(undone.removed, {});
+    assert.deepEqual(
+      undone.extras.map((x) => x.text),
+      ['Dishwashing liquid'],
+    );
+    assert.deepEqual(undone.checked, { chickpeas: '=mass:400' });
   });
 });

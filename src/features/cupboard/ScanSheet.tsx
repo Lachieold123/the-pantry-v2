@@ -47,7 +47,7 @@ export function ScanSheet({ kind: requested }: { kind: string | undefined }) {
   const { colours } = useTheme();
   const items = useCupboard((s) => s.items);
   const add = useCupboard((s) => s.add);
-  const restore = useCupboard((s) => s.restore);
+  const takeBack = useCupboard((s) => s.takeBack);
   const record = useScans((s) => s.record);
   const allowance = useScanAllowance();
   const [stage, setStage] = useState<Stage>({ at: 'choose' });
@@ -79,9 +79,11 @@ export function ScanSheet({ kind: requested }: { kind: string | undefined }) {
   };
 
   const commit = () => {
-    const before = items;
+    const before = new Set(items.map((i) => i.ingredientId));
     add([...ticked], kind === 'receipt' ? 'receipt' : 'scan');
-    toast({ message: `${ticked.size} added to your cupboard`, undo: () => restore(before) });
+    // Just what this added, so Undo never takes out something a household member put in since (BUG-18).
+    const added = useCupboard.getState().items.filter((i) => !before.has(i.ingredientId));
+    toast({ message: `${ticked.size} added to your cupboard`, undo: () => takeBack(added) });
     close();
   };
 

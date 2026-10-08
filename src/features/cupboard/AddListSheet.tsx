@@ -22,7 +22,7 @@ export function AddListSheet() {
   const toast = useToast();
   const items = useCupboard((s) => s.items);
   const add = useCupboard((s) => s.add);
-  const restore = useCupboard((s) => s.restore);
+  const takeBack = useCupboard((s) => s.takeBack);
   const [text, setText] = useState('');
   const [guesses, setGuesses] = useState<ListGuess[] | undefined>(undefined);
   const [ticked, setTicked] = useState<ReadonlySet<string>>(new Set());
@@ -34,9 +34,11 @@ export function AddListSheet() {
     setTicked(startTicked(got, have));
   };
   const commit = () => {
-    const before = items;
+    const before = new Set(items.map((i) => i.ingredientId));
     add([...ticked], 'list');
-    toast({ message: `${ticked.size} added to your cupboard`, undo: () => restore(before) });
+    // Just what this added, so Undo never takes out something a household member put in since (BUG-18).
+    const added = useCupboard.getState().items.filter((i) => !before.has(i.ingredientId));
+    toast({ message: `${ticked.size} added to your cupboard`, undo: () => takeBack(added) });
     goBack(router);
   };
 

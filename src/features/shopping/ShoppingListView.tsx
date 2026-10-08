@@ -31,6 +31,7 @@ import { Chip } from '@/ui/primitives/Chip';
 import { Icon } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
 import { PLAN, SPACE } from '@/ui/tokens/type';
+import { undoClear } from '@/domain/shopping/extras';
 import { AddItemRow, itemLabel, ListCard, Pill, ShoppingRow } from './ShoppingRows';
 
 export function ShoppingListView({ week, weekLabel, onPlan }: { week: ISODate; weekLabel: string; onPlan: () => void }) {
@@ -60,10 +61,10 @@ export function ShoppingListView({ week, weekLabel, onPlan }: { week: ISODate; w
     });
   };
   const clearAll = () => {
-    // Undo stands in for a confirm step: the old edits come straight back.
-    const before = edits;
-    edit((e) => clearList(e, list));
-    toast({ message: 'List cleared', undo: () => edit(() => before) });
+    // Undo stands in for a confirm step: what clearing took comes back, and nothing else changes (BUG-18).
+    const cleared = clearList(edits, list);
+    edit(() => cleared);
+    toast({ message: 'List cleared', undo: () => edit(undoClear(edits, cleared)) });
   };
   const addExtra = (text: string) => edit((e) => ({ ...e, extras: [...e.extras, { id: newId(), text, addedAt: Date.now() }] }));
 
