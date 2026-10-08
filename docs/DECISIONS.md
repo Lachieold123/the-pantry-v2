@@ -388,3 +388,45 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
 - **Added dependency:** `expo-apple-authentication` (native; `ios.usesAppleSignIn` switches on the capability at the next EAS build).
 - **Waits for Lachlan:** applying the migration, and the dashboard steps in `docs/ACCOUNTS.md` (anonymous sign-ins, manual linking, Apple provider, the email templates showing the code, custom SMTP).
 - **Why:** an account only earns its place when it gives something back (a backup, a second phone, a household that survives a new phone), and asking up front costs people at the door. Apple and email codes have no password to forget.
+
+> D-044 and D-045 are taken on the `house-recipes-batch-01` branch (house recipes and their photos), so the Phase 9 audit fixes below start at D-046.
+
+## D-046 · Shopping ticks hold until more is needed; the list agrees with What I have
+
+- **Date:** 8 October 2026 · **Decided by:** Claude, fixing the 8 October audit (BUG-01, BUG-06, BUG-09, BUG-19); Lachlan to confirm on the phone
+- **Decision:**
+  - A tick stores how much it covered in base units (grams, millilitres, counts), not the text on screen. It holds when a planned day passes, when the units switch, and between household phones set to different units. Only needing more of something unticks it, and the line then shows as to buy. Ticks made before this keep working while their text matches.
+  - Stand-ins (a brown onion for a white one) and shelf items you're assumed to keep (D-030) go under "Already in your cupboard" on the list, as they already did on Home and the recipe page; a stand-in names what you have, "White onion (brown onion)". Tapping one puts it on the list. This changes D-010 a little: spices you have on your shelf stop appearing as things to buy.
+  - A recipe's ingredients added to the list (D-037) and then planned in the same week count once.
+  - Zest and juice of the same fruit buy one fruit (a tablespoon of zest per lemon, two teaspoons per lime, two tablespoons per orange).
+- **Why:** the list told people to buy what the rest of the app said they had, and forgot ticks overnight.
+
+## D-047 · Small calls made while fixing the audit
+
+- **Date:** 8 October 2026 · **Decided by:** Claude (each is easy to reverse)
+- **Decision:**
+  - Swiping away "Used anything up?" goes back to Cook Mode; logging a cook takes a choice (audit, "also worth fixing").
+  - Undo puts back only what an action changed (BUG-18), never a whole earlier snapshot.
+  - Surprise me's first card follows the soft rules like any spin (BUG-27).
+  - The editor names the ingredient line with a problem (BUG-26). "1,000 g" reads as a thousand grams; "1,5 kg" stays one and a half (BUG-15).
+  - Search treats US and British names as the Australian ones (shrimp, cilantro, aubergine, courgette, chili, barbecue, bell pepper, arugula, garbanzo), and indexes each ingredient's aliases (BUG-14).
+  - A collection syncs one row per recipe in it as well as its own row, so two phones' offline adds both survive (BUG-29).
+  - A row the server refuses is set aside on the phone, not retried forever (BUG-03).
+  - The photo picker no longer asks for library access, and the permission strings mention only sharing a dish (REL-07); scanning's wording returns with scanning.
+  - Body text grows to 200% with Dynamic Type (REL-22). Spacing and icon sizes are tokens, enforced by lint (REL-21).
+
+## D-048 · Invite codes, members and the server's rules (migrations written, not applied)
+
+- **Date:** 8 October 2026 · **Decided by:** Claude, fixing SEC-01, SEC-04, SEC-05, SEC-07, SEC-08, SEC-13 to SEC-16, SEC-20, SEC-21, BUG-28; **Lachlan applies the migrations**
+- **Decision:**
+  - An invite code lets one person join and lasts 48 hours; a household keeps at most five live codes; ten wrong codes in an hour make a phone wait. Any member can cancel unused codes and remove another member. The join sheet shows the household's name and size before joining.
+  - The server keeps timestamps no more than five minutes ahead of its clock, breaks same-millisecond ties the way the phones do, checks the shape of recipe, plan and extra rows, caps rows at 50,000 per account or household, and lets only permanent sign-ins write account rows.
+  - Deleting an account removes your shared recipes from a household that carries on and takes your id off what you planned or ticked. A phone that shared without an account can delete its household data from Settings. Anonymous users not in a household are deleted after 30 days once pg_cron is switched on.
+  - Files: `supabase/migrations/20261008000000` to `…0300`, tested by `supabase/tests/rules.test.mjs` on PGlite.
+- **Why:** the audit showed a member could move into any household, one fast clock could freeze a row, one bad row could crash every phone, and codes could be guessed without limit.
+
+## D-049 · Saying how the recipes are made
+
+- **Date:** 8 October 2026 · **Decided by:** Claude (REL-23), wording for Lachlan to adjust in `src/domain/recipes/labels.ts`
+- **Decision:** each house recipe's page says "Drafted with AI help, then checked and edited by us" (reviewed) or "…checked, edited and cooked by us" (vetted), beside D-029's "AI-generated photo". Settings › About says it once for the whole app. Your own recipes say nothing.
+- **Why:** every house recipe began as an AI draft (D-008); saying so plainly is honest and costs nothing.
