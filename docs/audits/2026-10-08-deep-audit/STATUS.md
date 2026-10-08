@@ -45,7 +45,7 @@ The reports are in `~/Desktop/HQ/11-ThePantryV2/audits/2026-10-08/`. Fixed on br
 | Also: start-up has no catch | | Fixed | 70ab9db |
 | Accessibility: timer chips unreachable with VoiceOver | | Fixed (link role; device check K-39) | a89cf54 |
 | Performance: typo search heavy, not debounced | | Fixed (about 8x faster, deferred) | 0941c27 |
-| Performance: sync cost grows | | Partly (mirror drops pruned weeks; full pulls remain, K-36) | 787c333 |
+| Performance: sync cost grows | | Partly (mirror drops pruned weeks; full pulls remain, K-36) | 0a1f3b4 |
 
 ## Security (SECURITY.md)
 
@@ -53,7 +53,7 @@ The reports are in `~/Desktop/HQ/11-ThePantryV2/audits/2026-10-08/`. Fixed on br
 |---|---|---|---|
 | SEC-01 | Member can move into any household | Fixed (migration) | 5044739 |
 | SEC-02 | Privacy documents describe an app with no server | Partly: privacy manifest updated; wording and answers are Lachlan's (K-23) | 41c32a0 |
-| SEC-03 | Delete doesn't revoke Sign in with Apple | Partly: Edge Functions scaffolded, not deployed (K-19) | 9c150ba |
+| SEC-03 | Delete doesn't revoke Sign in with Apple | Partly: Edge Functions scaffolded, not deployed (K-19) | 375c70f |
 | SEC-04 | One member can freeze any row with a future stamp | Fixed (migration + client) | 5044739, 70ab9db |
 | SEC-05 | One malformed shared row crashes every phone | Fixed (client checks; server checks: migration) | e3143fc, 5044739 |
 | SEC-06 | Realtime leaks keys of deleted rows | Partly: member list unpublished (migration); row deletes still broadcast (K-32) | 5044739 |
@@ -84,7 +84,7 @@ The reports are in `~/Desktop/HQ/11-ThePantryV2/audits/2026-10-08/`. Fixed on br
 | REL-01 | No privacy, terms or support links | Partly: Settings rows appear once URLs exist; URLs are Lachlan's (K-23) | e365512 |
 | REL-02 | Privacy documents describe a different app | Not done: Lachlan (K-23) | |
 | REL-03 | Supabase dashboard setup unconfirmed | Not done: Lachlan (K-24) | |
-| REL-04 | Apple token not revoked | Partly: scaffold (K-19) | 9c150ba |
+| REL-04 | Apple token not revoked | Partly: scaffold (K-19) | 375c70f |
 | REL-05 | No crash reporting | Not done: Sentry is Lachlan's call (K-8) | |
 | REL-06 | "Coming soon" and unbuyable Pro in store builds | Not done: Lachlan's call (K-25) | |
 | REL-07 | Permission prompts over-ask and promise scanning | Fixed (needs a native build) | 41c32a0 |
@@ -101,8 +101,8 @@ The reports are in `~/Desktop/HQ/11-ThePantryV2/audits/2026-10-08/`. Fixed on br
 | REL-18 | Loose version ranges, unused expo-symbols | Not done: K-28 | |
 | REL-19 | eas.json production guard | Not done: EAS is Lachlan's (K-29) | |
 | REL-20 | Dead code and tokens | Fixed | e78265e |
-| REL-21 | Size and spacing literals | Fixed, with a lint rule | 9b074bb |
-| REL-22 | Dynamic Type stops at 180% | Fixed (device check K-39) | 8fa8acd |
+| REL-21 | Size and spacing literals | Fixed, with a lint rule | e80a955 |
+| REL-22 | Dynamic Type stops at 180% | Fixed (device check K-39) | 0bf60c7 |
 | REL-23 | AI disclosure easy to miss | Fixed (D-049) | b98f9ab |
 | REL-24 | Age-rating answer on shared content | Not done: listing answer, Lachlan (K-23) | |
 | REL-25 | Catalogue loose ends | Not done: content calls (K-31) | |
