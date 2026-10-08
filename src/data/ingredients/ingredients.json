@@ -1076,6 +1076,16 @@
     "groups": []
   },
   {
+    "id": "swede",
+    "name": "swede",
+    "plural": "swedes",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "rutabaga"
+    ],
+    "groups": []
+  },
+  {
     "id": "italian-sausage",
     "name": "Italian sausage",
     "aisle": "meat",
@@ -3105,6 +3115,19 @@
     ]
   },
   {
+    "id": "english-muffin",
+    "name": "English muffin",
+    "plural": "English muffins",
+    "aisle": "bakery",
+    "aliases": [
+      "english muffins"
+    ],
+    "groups": [
+      "gluten",
+      "soy"
+    ]
+  },
+  {
     "id": "arborio-rice",
     "name": "arborio rice",
     "plural": "arborio rice",
@@ -3969,6 +3992,30 @@
     "groups": []
   },
   {
+    "id": "black-eyed-beans",
+    "name": "black-eyed bean",
+    "plural": "black-eyed beans",
+    "aisle": "tins-jars",
+    "aliases": [
+      "black-eyed pea",
+      "black eyed bean",
+      "black eyed pea",
+      "cowpea"
+    ],
+    "groups": []
+  },
+  {
+    "id": "baked-beans",
+    "name": "baked beans",
+    "plural": "baked beans",
+    "aisle": "tins-jars",
+    "aliases": [
+      "baked bean",
+      "beans in tomato sauce"
+    ],
+    "groups": []
+  },
+  {
     "id": "yellow-mustard",
     "name": "American mustard",
     "plural": "American mustard",
@@ -4569,6 +4616,16 @@
       "whole grain german mustard",
       "german mustard",
       "grainy mustard"
+    ],
+    "groups": []
+  },
+  {
+    "id": "pomegranate-molasses",
+    "name": "pomegranate molasses",
+    "plural": "pomegranate molasses",
+    "aisle": "sauces-oils",
+    "aliases": [
+      "pomegranate syrup"
     ],
     "groups": []
   },
@@ -5594,8 +5651,7 @@
     "aisle": "baking",
     "aliases": [
       "treacle",
-      "blackstrap molasses",
-      "pomegranate molasses"
+      "blackstrap molasses"
     ],
     "groups": []
   },
@@ -5725,6 +5781,33 @@
       "sugar",
       "granulated sugar",
       "salt and sugar"
+    ],
+    "groups": []
+  },
+  {
+    "id": "filo-pastry",
+    "name": "filo pastry",
+    "aisle": "baking",
+    "aliases": [
+      "phyllo pastry",
+      "filo",
+      "phyllo",
+      "filo sheet",
+      "filo pastry sheet",
+      "phyllo sheet"
+    ],
+    "groups": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "chickpea-flour",
+    "name": "chickpea flour",
+    "aisle": "baking",
+    "aliases": [
+      "besan",
+      "besan flour",
+      "gram flour"
     ],
     "groups": []
   },
@@ -6647,6 +6730,20 @@
     ],
     "groups": [
       "egg",
+      "gluten"
+    ]
+  },
+  {
+    "id": "spring-roll-wrappers",
+    "name": "spring roll wrapper",
+    "plural": "spring roll wrappers",
+    "aisle": "asian-international",
+    "aliases": [
+      "spring roll pastry",
+      "lumpia wrapper",
+      "spring roll sheet"
+    ],
+    "groups": [
       "gluten"
     ]
   },
