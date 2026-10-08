@@ -22,6 +22,7 @@ import { Text } from '@/ui/primitives/Text';
 import { SPACE } from '@/ui/tokens/type';
 import { goBack } from '@/lib/navigation';
 import { usePlanAhead } from '@/store/pro';
+import { useOnce } from '@/lib/useOnce';
 
 const SLOTS = [
   { value: 'breakfast', label: 'Breakfast' },
@@ -34,6 +35,7 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
   // A malformed link falls back to today rather than crashing.
   const day = isISODate(requested) ? requested : toISODate(new Date());
   const router = useRouter();
+  const once = useOnce();
   const toast = useToast();
   const addEntry = usePlan((s) => s.addEntry);
   const planAhead = usePlanAhead();
@@ -60,13 +62,14 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
   }, [query, slot, hidden, searchIndex, forYou]);
 
   const dayName = day === toISODate(new Date()) ? 'today' : (longDate(fromISODate(day)).split(' ')[0] ?? day);
-  const pick = (recipe: Recipe) => {
-    // A link straight to a day next week still meets the plan-ahead check (D-038).
-    if (!planAhead(day)) return;
-    const entry = addEntry(recipe.id, day, slot, recipe.servings);
-    toast({ message: `${recipe.title} planned for ${dayName} ${slot}`, undo: () => removeEntry(entry.id) });
-    goBack(router);
-  };
+  const pick = (recipe: Recipe) =>
+    once(() => {
+      // A link straight to a day next week still meets the plan-ahead check (D-038).
+      if (!planAhead(day)) return false;
+      const entry = addEntry(recipe.id, day, slot, recipe.servings);
+      toast({ message: `${recipe.title} planned for ${dayName} ${slot}`, undo: () => removeEntry(entry.id) });
+      goBack(router);
+    });
 
   return (
     <Sheet kicker="Plan" title={`Add ${slot} for ${dayName === 'today' ? 'today' : dayName}`} onClose={() => goBack(router)}>
