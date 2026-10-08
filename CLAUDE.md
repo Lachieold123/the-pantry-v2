@@ -60,6 +60,7 @@ npm run typecheck                    # tsc --noEmit
 npm run lint                         # ESLint, including the map's structure rules
 npm test                             # domain + token tests (node:test) then component tests (Jest)
 npm run test:web                     # journey tests on the web build (Playwright; export:web first; D-040)
+node --test supabase/tests/rules.test.mjs  # database rules on PGlite (set PGLITE; see the file's header)
 npm run export:web                   # static web build, used for screenshots
 npm run catalogue:convert -- <old>   # rebuild the catalogue from the old app at <old>
 npm run catalogue:check-ingredients  # ingredient database coverage over the catalogue
