@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react';
 import { Linking, View } from 'react-native';
 
 import { isActive, isProFeature, paywallHeading, proBenefits } from '@/domain/pro/pro';
-import { LEGAL_URLS } from '@/lib/legal';
+import { legalLinks } from '@/lib/legal';
 import { goBack } from '@/lib/navigation';
 import { buy, loadPlans, PURCHASES_CONNECTED, restore, type BuyResult, type Plan } from '@/lib/purchases';
 import { SCAN_CONNECTED } from '@/lib/scan';
@@ -125,10 +125,7 @@ export function PaywallScreen({ from }: { from?: string | undefined }) {
 }
 
 function LegalLinks() {
-  const links = [
-    { label: 'Terms of use', url: LEGAL_URLS.terms },
-    { label: 'Privacy policy', url: LEGAL_URLS.privacy },
-  ].filter((l): l is { label: string; url: string } => l.url !== undefined);
+  const links = legalLinks().filter((l) => l.label !== 'Help and contact');
   if (!links.length) return null;
   return (
     <View style={{ flexDirection: 'row', justifyContent: 'center', gap: SPACE.md }}>
