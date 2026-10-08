@@ -6,7 +6,7 @@ import { Text as RNText, type TextProps as RNTextProps } from 'react-native';
 import { textStyle } from '@/ui/theme/fonts';
 import { useTheme } from '@/ui/theme/ThemeProvider';
 import type { ColourTokens } from '@/ui/tokens/colour';
-import { TYPE, type TextVariant } from '@/ui/tokens/type';
+import { TEXT_SCALE, TYPE, type TextVariant } from '@/ui/tokens/type';
 
 export type TextProps = RNTextProps & {
   variant?: TextVariant;
@@ -30,9 +30,9 @@ const MUTED_BY_DEFAULT = new Set<TextVariant>([
 
 /** Big display type may grow less than body text before it wraps awkwardly. */
 function maxScale(size: number): number {
-  if (size >= 30) return 1.3;
-  if (size >= 20) return 1.5;
-  return 1.8;
+  if (size >= 30) return TEXT_SCALE.display;
+  if (size >= 20) return TEXT_SCALE.heading;
+  return TEXT_SCALE.body;
 }
 
 export function Text({ variant = 'body', colour, tone, align, style, ...rest }: TextProps) {

@@ -154,6 +154,11 @@ export const MOTION = { quick: 180, standard: 240, slow: 320, toast: 2500 } as c
 
 /** Minimum tap target, in points. */
 export const TAP_TARGET = 44;
+/**
+ * How far Dynamic Type may grow each size of text. Body text reaches 200%
+ * (WCAG 1.4.4, REL-22); big display type grows less, so it wraps sensibly.
+ */
+export const TEXT_SCALE = { display: 1.3, heading: 1.5, body: 2 } as const;
 /** v1's compact controls (small segmented, the Cook pill). They reach TAP_TARGET through hitSlop. */
 export const SMALL_CONTROL = 36;
 /** Invisible padding that brings a control `height` tall up to TAP_TARGET (health check #12). */
