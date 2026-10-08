@@ -1,0 +1,2438 @@
+{
+  "about": "House recipes, batch 01 (8 October 2026): the first 50 new recipes written for v2. All are ai-draft until Lachlan reviews or cook-tests them (D-044).",
+  "recipes": [
+    {
+      "id": "turkish-eggs",
+      "title": "Turkish Eggs",
+      "summary": "Poached eggs on garlicky yoghurt, under a spoonful of sizzling Aleppo pepper butter.",
+      "cuisine": "turkish",
+      "mealTypes": ["breakfast", "lunch"],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": false,
+      "diets": ["vegetarian"],
+      "ingredients": [
+        {
+          "section": "Yoghurt",
+          "items": ["250g Greek yoghurt, at room temperature", "1 garlic clove, finely grated", "1/4 tsp salt"]
+        },
+        {
+          "section": "Eggs and butter",
+          "items": [
+            "4 eggs, very fresh",
+            "1 tbsp white vinegar",
+            "40g butter",
+            "1 tsp Aleppo pepper (or 1/2 tsp chilli flakes)",
+            "1/2 tsp smoked paprika",
+            "1 tbsp dill, chopped"
+          ]
+        },
+        {
+          "section": "To serve",
+          "items": ["2 slices sourdough (or Turkish bread), thickly cut and toasted"]
+        }
+      ],
+      "steps": [
+        "Stir the yoghurt, garlic and salt together and spread over two shallow bowls. It should be at room temperature, not fridge-cold, so take it out while you get everything else ready.",
+        "Bring a wide saucepan of water to a gentle simmer and add the vinegar. Crack each egg into a cup. Stir the water to make a slow whirlpool, slip in two eggs and poach for 3 minutes, until the whites are set and the yolks still soft. Lift out with a slotted spoon onto paper towel. Repeat with the other two.",
+        "Melt the butter in a small pan over medium heat until it foams and smells nutty. Take it off the heat and stir in the Aleppo pepper and smoked paprika.",
+        "Sit two eggs on each bowl of yoghurt, spoon over the red butter and scatter with dill. Serve straight away with the toast for dipping."
+      ],
+      "notes": [
+        "Soft-yolked eggs aren't recommended for pregnant people, young children, older people or anyone with a weakened immune system. Poach for 5 minutes instead, until the yolks are firm.",
+        "The freshest eggs hold together best when poached. Older eggs spread into wispy whites."
+      ]
+    },
+    {
+      "id": "chilaquiles",
+      "title": "Chilaquiles",
+      "summary": "Corn chips softened in a smoky tomato salsa, topped with fried eggs, feta and avocado.",
+      "cuisine": "mexican",
+      "mealTypes": ["breakfast", "lunch"],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": ["vegetarian", "no-gluten"],
+      "ingredients": [
+        {
+          "section": "Salsa",
+          "items": [
+            "1 tbsp neutral oil",
+            "1 brown onion, roughly chopped",
+            "2 garlic cloves, sliced",
+            "400g tin crushed tomatoes",
+            "1 chipotle in adobo, plus 1 tsp of the sauce",
+            "1/2 tsp ground cumin",
+            "250ml vegetable stock",
+            "1/2 tsp salt"
+          ]
+        },
+        {
+          "section": "Chilaquiles",
+          "items": [
+            "200g plain salted corn chips",
+            "4 eggs",
+            "1 tbsp neutral oil, for frying",
+            "80g feta, crumbled",
+            "1 avocado, sliced",
+            "1/2 small red onion, very thinly sliced",
+            "80g sour cream",
+            "Handful of coriander leaves",
+            "Lime wedges, to serve"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a large frying pan over medium heat. Cook the onion for 5 minutes until soft, then add the garlic for 1 minute.",
+        "Add the tomatoes, chipotle and its sauce, cumin, stock and salt. Simmer for 8 minutes, then blend until smooth with a stick blender (or in a blender, carefully, as it's hot). Taste for salt.",
+        "Bring the salsa back to a simmer in the pan. Tip in the corn chips and fold gently until every chip is coated. Take it off the heat; the chips should soften at the edges but keep some crunch.",
+        "In a second pan, heat the oil over medium-high heat and fry the eggs for 3 to 4 minutes, until the whites are set.",
+        "Divide the chilaquiles between plates. Top each with an egg, feta, avocado, red onion, a spoonful of sour cream and coriander. Serve with lime wedges, and eat straight away before the chips go soggy."
+      ],
+      "notes": [
+        "Runny-yolked eggs aren't recommended for pregnant people, young children, older people or anyone with a weakened immune system. Cover the pan for the last minute so the yolks set.",
+        "Thick, plain corn chips hold up best. Thin or flavoured ones turn to mush."
+      ]
+    },
+    {
+      "id": "buttermilk-pancakes",
+      "title": "Buttermilk Pancakes",
+      "summary": "Tall, fluffy weekend pancakes with maple syrup, berries and a little melting butter.",
+      "cuisine": "american",
+      "mealTypes": ["breakfast"],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": ["vegetarian"],
+      "ingredients": [
+        {
+          "section": "Batter",
+          "items": [
+            "300g plain flour",
+            "2 tsp baking powder",
+            "1/2 tsp bicarbonate soda",
+            "2 tbsp caster sugar",
+            "1/2 tsp salt",
+            "500ml buttermilk",
+            "2 eggs",
+            "50g butter, melted, plus extra for the pan",
+            "1 tsp vanilla extract"
+          ]
+        },
+        {
+          "section": "To serve",
+          "items": ["Maple syrup", "150g frozen mixed berries, thawed (or fresh berries)", "Butter"]
+        }
+      ],
+      "steps": [
+        "Whisk the flour, baking powder, bicarbonate soda, sugar and salt in a large bowl.",
+        "In a jug, whisk the buttermilk, eggs, melted butter and vanilla. Pour into the dry ingredients and fold with a spatula until just combined. Lumps are fine; over-mixing makes tough pancakes. Rest for 5 minutes while the pan heats.",
+        "Heat a large non-stick frying pan over medium-low heat and brush with a little butter. Pour in 1/3 cup of batter per pancake, leaving room to spread.",
+        "Cook for 2 to 3 minutes, until bubbles pop on the surface and the edges look set. Flip and cook for 1 to 2 minutes more, until golden and springy. Keep warm in a low oven while you cook the rest.",
+        "Serve stacked, with maple syrup, berries and a little butter."
+      ],
+      "notes": [
+        "No buttermilk? Stir 2 tbsp lemon juice into 500ml milk and leave for 5 minutes.",
+        "If the first pancake browns before it bubbles, turn the heat down. The first one is always the test."
+      ]
+    },
+    {
+      "id": "kedgeree",
+      "title": "Kedgeree",
+      "summary": "Gently curried rice with flakes of hot-smoked salmon, soft-boiled eggs and lots of parsley.",
+      "cuisine": "british",
+      "mealTypes": ["breakfast", "lunch", "dinner"],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "seasons": ["autumn", "winter"],
+      "diets": ["pescatarian", "no-gluten"],
+      "ingredients": [
+        {
+          "items": [
+            "300g basmati rice, rinsed",
+            "4 eggs",
+            "40g butter",
+            "1 brown onion, finely diced",
+            "2 tsp mild curry powder",
+            "1/2 tsp ground turmeric",
+            "600ml water",
+            "1/2 tsp salt",
+            "120g frozen peas",
+            "300g hot-smoked salmon, skin removed, flaked",
+            "1/2 bunch flat-leaf parsley, chopped",
+            "Juice of 1/2 lemon",
+            "Lemon wedges, to serve"
+          ]
+        }
+      ],
+      "steps": [
+        "Lower the eggs into a pan of boiling water and cook for 7 minutes. Move to a bowl of cold water, then peel and quarter.",
+        "Melt the butter in a wide saucepan with a lid over medium heat. Cook the onion for 6 minutes until soft and sweet. Stir in the curry powder and turmeric for 30 seconds.",
+        "Add the rice and stir to coat in the butter. Pour in the water, add the salt and bring to the boil. Cover, turn the heat to low and cook for 12 minutes.",
+        "Scatter the peas over the rice, cover again and leave off the heat for 5 minutes, so the rice finishes steaming and the peas warm through.",
+        "Fluff the rice with a fork. Gently fold in the salmon, most of the parsley and the lemon juice. Top with the eggs and the rest of the parsley, and serve with lemon wedges."
+      ],
+      "notes": [
+        "The eggs are jammy at 7 minutes. For pregnant people, young children, older people or anyone with a weakened immune system, boil them for 10 minutes.",
+        "Leftover rice should go in the fridge within an hour and be eaten within a day."
+      ]
+    },
+    {
+      "id": "bircher-muesli",
+      "title": "Bircher Muesli",
+      "summary": "Oats soaked overnight with apple and yoghurt, ready in the fridge when you wake up.",
+      "cuisine": "modern-australian",
+      "mealTypes": ["breakfast"],
+      "difficulty": "easy",
+      "prepMinutes": 490,
+      "cookMinutes": 5,
+      "servings": 4,
+      "onePot": false,
+      "seasons": ["spring", "summer"],
+      "diets": ["vegetarian"],
+      "ingredients": [
+        {
+          "section": "Bircher",
+          "items": [
+            "200g rolled oats",
+            "2 green apples, coarsely grated",
+            "250ml milk",
+            "125ml apple juice",
+            "200g Greek yoghurt",
+            "1 tbsp honey",
+            "1/2 tsp ground cinnamon"
+          ]
+        },
+        {
+          "section": "To top",
+          "items": ["40g flaked almonds", "2 tbsp pepitas", "150g frozen mixed berries, thawed (or fresh berries)", "Extra honey, to serve"]
+        }
+      ],
+      "steps": [
+        "The night before, stir the oats, grated apple (skin and all), milk, apple juice, yoghurt, honey and cinnamon together in a bowl or container. Cover and refrigerate overnight, or for at least 8 hours.",
+        "In the morning, toast the almonds and pepitas in a dry frying pan over medium heat for 4 to 5 minutes, shaking the pan, until golden. Tip onto a plate to cool.",
+        "Stir the bircher. If it's too thick, loosen with a splash of milk. Spoon into bowls and top with berries, the toasted nuts and seeds, and a drizzle of honey."
+      ],
+      "notes": [
+        "Start the night before: the oats soak overnight.",
+        "It keeps for 3 days in the fridge, so a double batch on Sunday covers most of the week."
+      ]
+    },
+    {
+      "id": "corn-fritters",
+      "title": "Corn Fritters with Avocado Salsa",
+      "summary": "Crisp, golden corn and feta fritters with a sharp, chunky avocado and tomato salsa.",
+      "cuisine": "modern-australian",
+      "mealTypes": ["breakfast", "lunch"],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "seasons": ["summer", "autumn"],
+      "diets": ["vegetarian"],
+      "ingredients": [
+        {
+          "section": "Fritters",
+          "items": [
+            "400g corn kernels (frozen and thawed, or cut from 3 cobs)",
+            "150g self-raising flour",
+            "2 eggs",
+            "125ml milk",
+            "3 spring onions, finely sliced",
+            "100g feta, crumbled",
+            "1/2 tsp smoked paprika",
+            "1/2 tsp salt",
+            "60ml neutral oil, for frying"
+          ]
+        },
+        {
+          "section": "Avocado salsa",
+          "items": [
+            "2 avocados, diced",
+            "250g cherry tomatoes, quartered",
+            "1/2 small red onion, finely diced",
+            "1 long red chilli, seeded and finely chopped",
+            "Handful of coriander leaves, chopped",
+            "Juice of 1 lime",
+            "Pinch of salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Make the salsa first so the onion mellows: gently mix everything in a bowl and set aside.",
+        "Whisk the flour, eggs and milk in a large bowl to a thick, smooth batter. Fold in the corn, spring onion, feta, paprika and salt.",
+        "Heat half the oil in a large frying pan over medium heat. Drop in 1/4 cup of batter per fritter, flatten slightly, and cook for 3 minutes each side until deep golden and cooked through. Drain on paper towel.",
+        "Repeat with the remaining batter, adding more oil as needed. Keep the cooked fritters warm in a low oven.",
+        "Serve the fritters stacked, with the salsa spooned over."
+      ],
+      "notes": [
+        "Pat thawed corn dry on paper towel. Wet corn makes the batter thin and the fritters soggy.",
+        "Add a few rashers of crisp bacon on the side if you're not cooking for vegetarians."
+      ]
+    },
+    {
+      "id": "chicken-ginger-congee",
+      "title": "Chicken and Ginger Congee",
+      "summary": "Silky rice porridge with poached chicken and ginger, finished with soy, sesame and spring onion.",
+      "cuisine": "chinese",
+      "mealTypes": ["breakfast", "lunch"],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 75,
+      "servings": 4,
+      "onePot": true,
+      "seasons": ["autumn", "winter"],
+      "diets": ["no-dairy"],
+      "ingredients": [
+        {
+          "section": "Congee",
+          "items": [
+            "200g jasmine rice, rinsed",
+            "1L chicken stock",
+            "1L water",
+            "5cm piece ginger, peeled and cut into thin matchsticks",
+            "500g chicken thigh fillets",
+            "1 tsp salt",
+            "1/4 tsp ground white pepper"
+          ]
+        },
+        {
+          "section": "To top",
+          "items": [
+            "3 spring onions, finely sliced",
+            "2 tbsp soy sauce",
+            "2 tsp sesame oil",
+            "2 tbsp fried shallots",
+            "Handful of coriander leaves"
+          ]
+        }
+      ],
+      "steps": [
+        "Put the rice, stock, water and half the ginger in a large heavy pot. Bring to the boil, stirring so the rice doesn't catch.",
+        "Add the chicken whole. Turn the heat to low, partly cover and simmer for 20 minutes, until the chicken is cooked through (75°C in the thickest part). Lift it out onto a board.",
+        "Keep the congee at a gentle simmer, partly covered, for another 45 to 50 minutes, stirring every 10 minutes and scraping the bottom, until the rice has broken down into a thick, silky porridge. Add a splash of water if it gets too thick.",
+        "Shred the chicken with two forks. Stir it back in with the salt and white pepper and warm through.",
+        "Ladle into bowls. Top with the remaining ginger, spring onion, a drizzle of soy and sesame oil, fried shallots and coriander."
+      ],
+      "notes": [
+        "Congee thickens as it sits. Loosen leftovers with hot water or stock, and keep them in the fridge for up to 2 days.",
+        "Use tamari instead of soy sauce for a gluten-free bowl (check the stock label too)."
+      ]
+    },
+    {
+      "id": "fattoush",
+      "title": "Fattoush",
+      "summary": "A crunchy Lebanese salad of crisp pita, cucumber, tomato and herbs in a sumac dressing.",
+      "cuisine": "middle-eastern",
+      "mealTypes": ["lunch", "dinner"],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "seasons": ["spring", "summer"],
+      "diets": ["vegetarian", "vegan", "no-dairy"],
+      "ingredients": [
+        {
+          "section": "Salad",
+          "items": [
+            "2 large pita breads",
+            "2 tbsp olive oil",
+            "1 baby cos lettuce, roughly chopped",
+            "3 tomatoes, cut into chunks",
+            "2 Lebanese cucumbers, halved and sliced",
+            "6 radishes, thinly sliced",
+            "4 spring onions, sliced",
+            "1 cup flat-leaf parsley leaves",
+            "1/2 cup mint leaves"
+          ]
+        },
+        {
+          "section": "Dressing",
+          "items": [
+            "80ml extra virgin olive oil",
+            "Juice of 1 lemon",
+            "1 tbsp pomegranate molasses",
+            "1 garlic clove, crushed",
+            "2 tsp sumac, plus extra to finish",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (180°C fan-forced). Split the pita breads open, tear into bite-sized pieces, toss with the olive oil and spread on a tray. Bake for 8 to 10 minutes, until golden and crisp. Cool.",
+        "Whisk the dressing ingredients together in a large salad bowl.",
+        "Add the lettuce, tomato, cucumber, radish, spring onion, parsley and mint and toss well.",
+        "Add the pita just before serving and toss again, so some pieces soak up the dressing and others stay crunchy. Finish with a pinch of sumac."
+      ],
+      "notes": [
+        "Pomegranate molasses gives the dressing its sweet-sour depth. If you don't have it, use 1 tsp honey and an extra squeeze of lemon (it won't be vegan with honey).",
+        "Serve with grilled chicken or lamb to make it dinner."
+      ]
+    },
+    {
+      "id": "lemongrass-pork-noodle-salad",
+      "title": "Lemongrass Pork Noodle Salad",
+      "summary": "Charred lemongrass pork over cool rice noodles and herbs, with a sweet-sour nuoc cham.",
+      "cuisine": "vietnamese",
+      "mealTypes": ["lunch", "dinner"],
+      "difficulty": "medium",
+      "prepMinutes": 40,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "seasons": ["spring", "summer"],
+      "diets": ["no-gluten", "no-dairy"],
+      "ingredients": [
+        {
+          "section": "Pork",
+          "items": [
+            "600g pork neck (pork scotch), thinly sliced",
+            "2 lemongrass stalks, white part only, finely chopped",
+            "3 garlic cloves, crushed",
+            "2 shallots, finely chopped",
+            "2 tbsp fish sauce",
+            "2 tbsp brown sugar",
+            "1 tbsp neutral oil",
+            "1/2 tsp black pepper"
+          ]
+        },
+        {
+          "section": "Nuoc cham",
+          "items": [
+            "60ml fish sauce",
+            "60ml lime juice",
+            "2 tbsp caster sugar",
+            "125ml warm water",
+            "1 garlic clove, finely chopped",
+            "1 bird's eye chilli, finely chopped"
+          ]
+        },
+        {
+          "section": "Salad",
+          "items": [
+            "250g rice vermicelli",
+            "1/2 iceberg lettuce, shredded",
+            "1 Lebanese cucumber, cut into matchsticks",
+            "1 carrot, cut into matchsticks",
+            "100g bean sprouts",
+            "1 cup mint leaves",
+            "1 cup coriander leaves",
+            "50g roasted peanuts, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the pork with the lemongrass, garlic, shallot, fish sauce, sugar, oil and pepper. Cover and marinate in the fridge for 20 minutes (or up to a day).",
+        "Make the nuoc cham: stir the fish sauce, lime juice, sugar and warm water until the sugar dissolves, then add the garlic and chilli.",
+        "Cook the noodles following the packet instructions, rinse under cold water until cool, and drain well.",
+        "Heat a large frying pan or barbecue grill plate over high heat. Cook the pork in batches in a single layer, 2 to 3 minutes each side, until caramelised at the edges and cooked through.",
+        "Divide the lettuce, noodles, cucumber, carrot, sprouts and herbs between bowls. Top with the pork and peanuts and pour over a few spoonfuls of nuoc cham. Serve the rest on the side."
+      ],
+      "notes": [
+        "Ask the butcher to slice the pork thinly, or freeze it for 30 minutes so it's easy to slice yourself.",
+        "Pork mince works too: shape the marinated mince into small flat patties and cook them through."
+      ]
+    },
+    {
+      "id": "gado-gado",
+      "title": "Gado-Gado",
+      "summary": "Warm potatoes, eggs, tofu and crunchy vegetables under a rich, spicy peanut sauce.",
+      "cuisine": "indonesian",
+      "mealTypes": ["lunch", "dinner"],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "seasons": ["spring", "summer"],
+      "diets": ["vegetarian", "no-dairy"],
+      "ingredients": [
+        {
+          "section": "Peanut sauce",
+          "items": [
+            "160g crunchy peanut butter",
+            "200ml coconut milk",
+            "1 garlic clove, crushed",
+            "2 tbsp kecap manis",
+            "1-2 tsp sambal oelek",
+            "1 tbsp brown sugar",
+            "Juice of 1 lime",
+            "60ml water"
+          ]
+        },
+        {
+          "section": "Salad",
+          "items": [
+            "500g baby potatoes, halved",
+            "4 eggs",
+            "200g green beans, trimmed",
+            "300g firm tofu, cut into 2cm cubes",
+            "1 tbsp neutral oil",
+            "1/4 cabbage, shredded",
+            "150g bean sprouts",
+            "1 Lebanese cucumber, sliced",
+            "2 tomatoes, cut into wedges",
+            "2 tbsp fried shallots",
+            "Prawn crackers, to serve (optional)"
+          ]
+        }
+      ],
+      "steps": [
+        "Put all the peanut sauce ingredients in a small saucepan and warm over low heat, stirring, for 5 minutes until smooth and thick enough to coat a spoon. Add a splash of water if it's too thick.",
+        "Boil the potatoes in salted water for 12 to 15 minutes until tender. Lower the eggs into the same pot for the last 8 minutes, and add the beans for the last 2. Drain, cool the eggs in cold water, then peel and halve.",
+        "Pat the tofu dry. Fry it in the oil in a non-stick pan over medium-high heat for 8 minutes, turning, until golden on all sides.",
+        "Arrange the potatoes, beans, eggs, tofu, cabbage, bean sprouts, cucumber and tomato on a platter.",
+        "Spoon over the warm peanut sauce, scatter with fried shallots and serve with prawn crackers if you like."
+      ],
+      "notes": [
+        "Prawn crackers are optional because they contain prawn. Leave them out for a vegetarian table.",
+        "The sauce keeps for 5 days in the fridge and is excellent on grilled chicken."
+      ]
+    },
+    {
+      "id": "danish-open-sandwiches",
+      "title": "Danish Open Sandwiches",
+      "summary": "Buttered rye topped two ways: smoked salmon with dill, and egg with capers and radish.",
+      "cuisine": "scandinavian",
+      "mealTypes": ["lunch"],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "seasons": ["spring", "summer"],
+      "diets": ["pescatarian"],
+      "ingredients": [
+        {
+          "section": "Base",
+          "items": ["8 slices dark rye bread", "40g butter, softened"]
+        },
+        {
+          "section": "Smoked salmon",
+          "items": [
+            "100g creme fraiche",
+            "1 tsp lemon zest",
+            "200g smoked salmon",
+            "1/2 Lebanese cucumber, very thinly sliced",
+            "1/4 red onion, very thinly sliced",
+            "2 tbsp dill sprigs"
+          ]
+        },
+        {
+          "section": "Egg",
+          "items": [
+            "4 eggs",
+            "60g whole-egg mayonnaise",
+            "1 tsp Dijon mustard",
+            "1 tbsp capers, rinsed",
+            "4 radishes, thinly sliced",
+            "1 tbsp chives, finely chopped",
+            "Black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Lower the eggs into boiling water and cook for 10 minutes. Cool in cold water, peel and slice.",
+        "Mix the creme fraiche with the lemon zest. Stir the mayonnaise and mustard together in a separate bowl.",
+        "Butter every slice of rye right to the edges.",
+        "For the salmon sandwiches, spread four slices with the creme fraiche, drape over the salmon and top with cucumber, red onion and dill.",
+        "For the egg sandwiches, spread the other four slices with the mustard mayonnaise, cover with sliced egg and finish with radish, capers, chives and black pepper. Eat with a knife and fork."
+      ],
+      "notes": [
+        "Cold-smoked salmon isn't recommended for pregnant people, young children, older people or anyone with a weakened immune system. Use hot-smoked salmon instead.",
+        "Dense, dark rye is the traditional base. Light rye works but tears more easily under the toppings."
+      ]
+    },
+    {
+      "id": "spanish-tortilla",
+      "title": "Spanish Tortilla",
+      "summary": "A thick, golden potato and onion omelette, soft in the middle, good warm or cold.",
+      "cuisine": "spanish",
+      "mealTypes": ["lunch", "dinner", "snack"],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "servings": 6,
+      "onePot": false,
+      "diets": ["vegetarian", "no-gluten", "no-dairy"],
+      "ingredients": [
+        {
+          "items": [
+            "700g waxy potatoes, peeled and thinly sliced",
+            "1 brown onion, thinly sliced",
+            "250ml olive oil",
+            "6 eggs",
+            "1 tsp salt"
+          ]
+        },
+        {
+          "section": "To serve",
+          "items": ["Green salad", "Aioli (optional)"]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a 24cm non-stick frying pan over medium-low heat. Add the potato and onion with half the salt and cook gently for 20 to 25 minutes, turning now and then, until the potato is completely tender but barely coloured.",
+        "Set a sieve over a heatproof bowl and drain the potato and onion, keeping the oil. Cool for 5 minutes.",
+        "Beat the eggs with the remaining salt in a large bowl. Fold in the potato and onion and leave for 5 minutes so the potato soaks up some egg.",
+        "Wipe the pan, add 2 tbsp of the saved oil and heat over medium heat. Pour in the mixture, flatten it, and cook for 6 to 8 minutes, running a spatula round the edge, until the base is golden and the sides are set.",
+        "Put a flat plate bigger than the pan on top. Holding both firmly, flip the tortilla onto the plate, then slide it back into the pan cooked side up. Cook for another 4 to 5 minutes, until a skewer in the centre comes out with no liquid egg.",
+        "Slide onto a board and rest for 10 minutes before cutting into wedges. Serve warm or at room temperature with a green salad and aioli."
+      ],
+      "notes": [
+        "Keep the leftover potato oil in a jar in the fridge. It's full of flavour for frying.",
+        "The flip is the only tricky part: do it in one confident move over the sink."
+      ]
+    },
+    {
+      "id": "kimchi-fried-rice",
+      "title": "Kimchi Fried Rice",
+      "summary": "Day-old rice fried hot with kimchi, bacon and gochujang, crowned with a fried egg.",
+      "cuisine": "korean",
+      "mealTypes": ["lunch", "dinner"],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": false,
+      "diets": ["no-dairy"],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp neutral oil",
+            "3 rashers streaky bacon, chopped",
+            "1/2 brown onion, diced",
+            "200g kimchi, chopped, plus 3 tbsp of its juice",
+            "1 tbsp gochujang",
+            "500g cooked white rice, cold from the fridge",
+            "1 tsp soy sauce",
+            "2 tsp sesame oil",
+            "2 eggs",
+            "2 spring onions, sliced",
+            "1 tsp sesame seeds",
+            "1 nori sheet, cut into thin strips (optional)"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a large frying pan or wok over medium-high heat. Fry the bacon for 3 minutes until it starts to crisp. Add the onion and cook for 2 minutes.",
+        "Add the kimchi and fry for 3 minutes, until it smells toasty. Stir in the gochujang.",
+        "Add the rice and break up any clumps. Pour over the kimchi juice and soy sauce and toss for 4 to 5 minutes, until the rice is piping hot and starting to catch on the bottom. Stir through half the sesame oil.",
+        "In a separate pan, fry the eggs in the rest of the sesame oil until the whites are set and the edges crisp.",
+        "Divide the rice between bowls and top each with an egg, spring onion, sesame seeds and nori."
+      ],
+      "notes": [
+        "Use rice cooked the day before and cooled in the fridge. Freshly cooked rice steams and goes mushy, and cooked rice shouldn't sit out at room temperature.",
+        "Runny yolks aren't recommended for pregnant people, young children, older people or anyone with a weakened immune system. Fry the eggs until the yolks are firm."
+      ]
+    },
+    {
+      "id": "pasta-e-fagioli",
+      "title": "Pasta e Fagioli",
+      "summary": "Thick Italian bean and pasta soup with rosemary and parmesan: cheap, cosy and quick.",
+      "cuisine": "italian",
+      "mealTypes": ["lunch", "dinner"],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "seasons": ["autumn", "winter"],
+      "diets": ["vegetarian"],
+      "ingredients": [
+        {
+          "items": [
+            "3 tbsp olive oil, plus extra to serve",
+            "1 brown onion, finely diced",
+            "1 carrot, finely diced",
+            "1 celery stalk, finely diced",
+            "3 garlic cloves, crushed",
+            "1 rosemary sprig, leaves finely chopped",
+            "1/4 tsp chilli flakes",
+            "2 tbsp tomato paste",
+            "400g tin crushed tomatoes",
+            "800g tinned borlotti beans, drained and rinsed",
+            "1.25L vegetable stock",
+            "1 parmesan rind (optional)",
+            "150g ditalini (or other small pasta)",
+            "40g parmesan, finely grated",
+            "Salt and pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a large heavy pot over medium heat. Cook the onion, carrot and celery for 8 minutes until soft. Add the garlic, rosemary and chilli flakes and cook for 1 minute.",
+        "Stir in the tomato paste for 1 minute, then add the tomatoes, beans, stock and parmesan rind. Bring to a simmer and cook for 10 minutes.",
+        "Scoop out about a cup of the beans, mash them with a fork and stir back in. This thickens the soup.",
+        "Add the pasta and simmer, stirring often so it doesn't stick, for 10 to 12 minutes until tender. Add a splash of water if it gets too thick; it should be a spoon-standing soup.",
+        "Remove the rind, season, and serve with grated parmesan, black pepper and a drizzle of olive oil."
+      ],
+      "notes": [
+        "The pasta keeps drinking the liquid, so leftovers set firm. Loosen with stock or water when you reheat.",
+        "Cannellini beans work just as well as borlotti."
+      ]
+    },
+    {
+      "id": "thai-pork-larb",
+      "title": "Thai Pork Larb",
+      "summary": "Warm pork mince tossed with lime, fish sauce, toasted rice and handfuls of fresh herbs.",
+      "cuisine": "thai",
+      "mealTypes": ["lunch", "dinner"],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "seasons": ["spring", "summer"],
+      "diets": ["no-gluten", "no-dairy"],
+      "ingredients": [
+        {
+          "section": "Larb",
+          "items": [
+            "2 tbsp jasmine rice (uncooked, for toasting)",
+            "1 tbsp neutral oil",
+            "500g pork mince",
+            "3 tbsp fish sauce",
+            "60ml lime juice",
+            "1 tsp brown sugar",
+            "1/2-1 tsp chilli flakes",
+            "3 shallots, thinly sliced",
+            "3 spring onions, sliced",
+            "1 cup mint leaves",
+            "1 cup coriander leaves"
+          ]
+        },
+        {
+          "section": "To serve",
+          "items": ["1 baby cos lettuce, leaves separated", "1 Lebanese cucumber, sliced", "Steamed jasmine rice", "Lime wedges"]
+        }
+      ],
+      "steps": [
+        "Toast the 2 tbsp rice in a dry frying pan over medium heat for 6 to 8 minutes, shaking the pan, until deep golden. Cool, then grind to a coarse powder in a mortar and pestle or spice grinder.",
+        "Heat the oil in the same pan over medium-high heat. Add the pork and cook for 6 to 7 minutes, breaking it up, until cooked through with no pink left.",
+        "Take the pan off the heat. Stir in the fish sauce, lime juice, sugar and chilli flakes. Taste: it should be sour, salty and hot in about equal measure.",
+        "Fold in the shallot, spring onion, most of the herbs and half the toasted rice powder.",
+        "Pile onto a plate and scatter with the remaining herbs and rice powder. Serve warm with lettuce cups, cucumber, rice and lime wedges."
+      ],
+      "notes": [
+        "The toasted rice powder gives larb its nutty crunch. Make extra and keep it in a jar for a month.",
+        "Chicken mince works the same way; cook it until it's white all the way through."
+      ]
+    },
+    {
+      "id": "sausage-rolls",
+      "title": "Sausage Rolls",
+      "summary": "Flaky homemade sausage rolls with a herby pork and vegetable filling and a sesame top.",
+      "cuisine": "modern-australian",
+      "mealTypes": ["snack", "lunch"],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 30,
+      "servings": 6,
+      "onePot": false,
+      "diets": ["no-dairy"],
+      "ingredients": [
+        {
+          "section": "Filling",
+          "items": [
+            "500g pork mince",
+            "1 brown onion, finely grated",
+            "1 carrot, finely grated",
+            "1 zucchini, finely grated and squeezed dry",
+            "2 garlic cloves, crushed",
+            "40g dried breadcrumbs",
+            "1 egg",
+            "1 tsp fennel seeds, lightly crushed",
+            "1 tbsp thyme leaves",
+            "1 tsp salt",
+            "1/2 tsp black pepper"
+          ]
+        },
+        {
+          "section": "Pastry",
+          "items": ["3 sheets frozen puff pastry, just thawed", "1 egg, beaten, for brushing", "2 tsp sesame seeds"]
+        },
+        {
+          "section": "To serve",
+          "items": ["Tomato sauce"]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 210°C (190°C fan-forced) and line two trays with baking paper.",
+        "Mix all the filling ingredients in a bowl with your hands until well combined.",
+        "Cut each pastry sheet in half to make six rectangles. Spoon a sixth of the filling along one long edge of each, shaping it into a log. Brush the far edge with beaten egg and roll up so the join sits underneath.",
+        "Cut each log into four rolls and place on the trays, join side down. Brush the tops with egg, sprinkle with sesame seeds and cut two small slashes in each.",
+        "Bake for 25 to 30 minutes, until the pastry is puffed and deep golden and the filling is cooked through (75°C in the centre). Cool for 5 minutes and serve with tomato sauce."
+      ],
+      "notes": [
+        "Keep the pastry cold: if it goes soft and sticky while you work, put it back in the fridge for 10 minutes.",
+        "Freeze unbaked rolls on a tray, then bag them. Bake from frozen at the same temperature, allowing 10 minutes more."
+      ]
+    },
+    {
+      "id": "thai-fish-cakes",
+      "title": "Thai Fish Cakes",
+      "summary": "Bouncy red curry fish cakes with green beans and lime leaf, and a quick cucumber relish.",
+      "cuisine": "thai",
+      "mealTypes": ["snack", "dinner"],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": ["pescatarian", "no-gluten", "no-dairy"],
+      "ingredients": [
+        {
+          "section": "Fish cakes",
+          "items": [
+            "500g firm white fish fillets, skinned, boned and chopped",
+            "2 tbsp red curry paste",
+            "1 egg",
+            "1 tbsp fish sauce",
+            "1 tsp sugar",
+            "4 makrut lime leaves, very finely shredded",
+            "100g green beans, very thinly sliced",
+            "80ml neutral oil, for frying"
+          ]
+        },
+        {
+          "section": "Cucumber relish",
+          "items": [
+            "1 Lebanese cucumber, finely diced",
+            "1 shallot, finely sliced",
+            "1 long red chilli, finely sliced",
+            "60ml rice vinegar",
+            "2 tbsp sugar",
+            "1 tbsp crushed roasted peanuts"
+          ]
+        },
+        {
+          "section": "To serve",
+          "items": ["Sweet chilli sauce", "Lime wedges"]
+        }
+      ],
+      "steps": [
+        "For the relish, warm the vinegar and sugar in a small pan until the sugar dissolves. Cool, then pour over the cucumber, shallot and chilli. Top with peanuts just before serving.",
+        "Blitz the fish, curry paste, egg, fish sauce and sugar in a food processor to a smooth, sticky paste, about 1 minute.",
+        "Tip into a bowl and mix in the lime leaves and green beans. With wet hands, shape into 16 small patties about 1.5cm thick.",
+        "Heat the oil in a large frying pan over medium heat. Fry the fish cakes in batches for 2 to 3 minutes each side, until golden, puffed and cooked through. Drain on paper towel.",
+        "Serve hot with the cucumber relish, sweet chilli sauce and lime wedges."
+      ],
+      "notes": [
+        "Most Thai red curry pastes contain shrimp paste. Check the label if you're cooking for someone who avoids shellfish.",
+        "Ling, flathead or barramundi all work well. Avoid oily fish here."
+      ]
+    },
+    {
+      "id": "potato-pancakes",
+      "title": "Potato Pancakes",
+      "summary": "Lacy, crisp-edged grated potato pancakes with apple sauce and sour cream.",
+      "cuisine": "central-european",
+      "mealTypes": ["snack", "breakfast", "lunch"],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "seasons": ["autumn", "winter"],
+      "diets": ["vegetarian"],
+      "ingredients": [
+        {
+          "section": "Pancakes",
+          "items": [
+            "1kg floury potatoes, peeled",
+            "1 brown onion",
+            "2 eggs",
+            "3 tbsp plain flour",
+            "1 tsp salt",
+            "Pinch of nutmeg",
+            "125ml neutral oil, for frying"
+          ]
+        },
+        {
+          "section": "To serve",
+          "items": ["200g apple sauce", "150g sour cream", "1 tbsp chives, chopped"]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 100°C (80°C fan-forced) to keep the pancakes warm as you cook them.",
+        "Coarsely grate the potatoes and onion into a clean tea towel. Gather it up and twist hard over the sink to squeeze out as much liquid as you can. Dry potato is the secret to crisp pancakes.",
+        "Tip into a bowl and mix in the eggs, flour, salt and nutmeg.",
+        "Heat a 5mm layer of oil in a large frying pan over medium-high heat. Drop in heaped tablespoons of the mixture and flatten to about 1cm. Fry for 3 to 4 minutes each side, until deep golden and crisp and cooked through in the middle.",
+        "Drain on paper towel and keep warm in the oven while you cook the rest, adding more oil as needed. Serve hot with apple sauce, sour cream and chives."
+      ],
+      "notes": [
+        "Grate the potatoes just before cooking; they turn grey if they sit.",
+        "Smoked salmon and a dollop of sour cream turns these into a weekend brunch."
+      ]
+    },
+    {
+      "id": "suya-beef-skewers",
+      "title": "Suya Beef Skewers",
+      "summary": "Nigerian street-food beef skewers in a smoky, spicy peanut rub, with raw onion and tomato.",
+      "cuisine": "west-african",
+      "mealTypes": ["dinner", "snack"],
+      "difficulty": "easy",
+      "prepMinutes": 50,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "seasons": ["spring", "summer"],
+      "diets": ["no-gluten", "no-dairy"],
+      "ingredients": [
+        {
+          "section": "Suya spice",
+          "items": [
+            "70g roasted peanuts",
+            "2 tsp smoked paprika",
+            "1 tsp ground ginger",
+            "1 tsp garlic powder",
+            "1 tsp onion powder",
+            "1/2-1 tsp cayenne pepper",
+            "1 tsp salt"
+          ]
+        },
+        {
+          "section": "Beef",
+          "items": ["700g beef rump steak, cut into 2cm thick strips", "2 tbsp neutral oil"]
+        },
+        {
+          "section": "To serve",
+          "items": ["1 red onion, thinly sliced", "2 tomatoes, sliced", "1 Lebanese cucumber, sliced", "Lime wedges"]
+        }
+      ],
+      "steps": [
+        "Soak 12 bamboo skewers in water for 30 minutes so they don't burn.",
+        "Grind the peanuts in a food processor or spice grinder to a fine, dry powder; stop before it turns to butter. Mix with the paprika, ginger, garlic and onion powders, cayenne and salt.",
+        "Toss the beef with the oil, then with two thirds of the spice mix until well coated. Thread onto the skewers and leave for 15 minutes.",
+        "Heat a barbecue grill or chargrill pan over high heat. Cook the skewers for 3 to 4 minutes each side, until charred at the edges and done to your liking.",
+        "Scatter the skewers with the rest of the spice mix and serve with the onion, tomato, cucumber and lime."
+      ],
+      "notes": [
+        "Contains peanuts. The spice mix keeps for a month in a jar and is excellent on chicken thighs.",
+        "Suya is meant to be hot. Start with 1/2 tsp cayenne if you're feeding children."
+      ]
+    },
+    {
+      "id": "chicken-cacciatore",
+      "title": "Chicken Cacciatore",
+      "summary": "Chicken thighs braised with capsicum, mushroom, rosemary, red wine and tomato.",
+      "cuisine": "italian",
+      "mealTypes": ["dinner"],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 60,
+      "servings": 4,
+      "onePot": true,
+      "seasons": ["autumn", "winter"],
+      "diets": ["no-gluten", "no-dairy"],
+      "ingredients": [
+        {
+          "items": [
+            "8 bone-in skin-on chicken thighs (about 1.4kg)",
+            "1 tsp salt",
+            "2 tbsp olive oil",
+            "1 brown onion, sliced",
+            "1 red capsicum, sliced",
+            "200g button mushrooms, quartered",
+            "4 garlic cloves, sliced",
+            "2 rosemary sprigs",
+            "125ml red wine",
+            "400g tin crushed tomatoes",
+            "125ml chicken stock",
+            "60g kalamata olives",
+            "Handful of flat-leaf parsley, chopped",
+            "Crusty bread, to serve (optional)"
+          ]
+        }
+      ],
+      "steps": [
+        "Pat the chicken dry and season with the salt. Heat the oil in a large heavy pan or casserole over medium-high heat. Brown the chicken skin side down for 6 to 8 minutes until deep golden, turn for 2 minutes, then lift onto a plate.",
+        "Pour off all but 2 tbsp of the fat. Add the onion, capsicum and mushrooms and cook for 8 minutes until soft and lightly browned. Add the garlic and rosemary for 1 minute.",
+        "Pour in the wine and simmer for 2 minutes, scraping up the browned bits. Add the tomatoes and stock and bring to a simmer.",
+        "Return the chicken, skin side up, so the skin sits above the sauce. Cover and simmer gently for 30 minutes, then uncover and cook for 10 minutes more, until the sauce has thickened and the chicken is cooked through (75°C next to the bone).",
+        "Stir the olives into the sauce, scatter with parsley and serve with crusty bread, mash or polenta."
+      ],
+      "notes": [
+        "Better the next day. Cool, refrigerate, and reheat gently until piping hot.",
+        "No wine? Use extra stock and a teaspoon of red wine vinegar."
+      ]
+    },
+    {
+      "id": "salmon-en-papillote",
+      "title": "Salmon en Papillote",
+      "summary": "Salmon steamed in paper parcels with zucchini, tomato, lemon, dill and a little butter.",
+      "cuisine": "french",
+      "mealTypes": ["dinner"],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "seasons": ["spring", "summer"],
+      "diets": ["pescatarian", "no-gluten"],
+      "ingredients": [
+        {
+          "section": "Potatoes",
+          "items": ["600g baby potatoes, halved", "1 tbsp olive oil", "Salt and pepper"]
+        },
+        {
+          "section": "Parcels",
+          "items": [
+            "4 skinless salmon fillets (about 160g each)",
+            "2 zucchini, cut into thin ribbons with a peeler",
+            "200g cherry tomatoes, halved",
+            "1 lemon, thinly sliced",
+            "1 tbsp capers, rinsed",
+            "40g butter, cut into 4",
+            "60ml dry white wine",
+            "4 dill sprigs",
+            "Salt and pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (180°C fan-forced). Toss the potatoes with the oil, salt and pepper on a tray and roast for 25 minutes, until golden and tender.",
+        "While they roast, cut four 40cm squares of baking paper. Pile a quarter of the zucchini in the middle of each, top with a salmon fillet and season.",
+        "Lay the lemon slices, tomatoes and capers over the salmon. Add a piece of butter, a dill sprig and a tablespoon of wine to each.",
+        "Bring the long sides of the paper together and fold over tightly several times, then twist the ends like a lolly wrapper. Put the parcels on a tray.",
+        "When the potatoes have 12 minutes left, bake the parcels on the shelf below for 12 minutes, until the salmon is just opaque in the centre. Open one to check; it should flake easily.",
+        "Put a parcel on each plate for everyone to open at the table (watch the steam), with the potatoes alongside."
+      ],
+      "notes": [
+        "Thicker fillets may need 2 to 3 minutes more. The fish keeps cooking in the parcel once it's out of the oven.",
+        "Barramundi or snapper fillets work the same way."
+      ]
+    },
+    {
+      "id": "lentils-and-sausages",
+      "title": "Lentils with Sausages",
+      "summary": "French-style braised Puy lentils with browned pork sausages, thyme and a mustardy finish.",
+      "cuisine": "french",
+      "mealTypes": ["dinner"],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 50,
+      "servings": 4,
+      "onePot": true,
+      "seasons": ["autumn", "winter"],
+      "diets": ["no-dairy"],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "8 thick pork sausages",
+            "1 brown onion, finely diced",
+            "1 carrot, finely diced",
+            "1 celery stalk, finely diced",
+            "3 garlic cloves, crushed",
+            "4 thyme sprigs",
+            "2 bay leaves",
+            "300g puy lentils, rinsed",
+            "125ml dry white wine",
+            "750ml chicken stock",
+            "1 tbsp Dijon mustard",
+            "1 tbsp red wine vinegar",
+            "Handful of flat-leaf parsley, chopped",
+            "Salt and pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a large deep frying pan or casserole over medium heat. Brown the sausages all over for 8 minutes, then lift onto a plate. They'll finish cooking in the lentils.",
+        "Add the onion, carrot and celery to the pan and cook for 8 minutes until soft. Add the garlic, thyme and bay for 1 minute.",
+        "Stir in the lentils, then the wine, and let it bubble for 1 minute. Pour in the stock and bring to a simmer.",
+        "Nestle the sausages into the lentils. Cover and simmer gently for 25 to 30 minutes, stirring now and then, until the lentils are tender but still hold their shape and the sausages are cooked through (75°C in the centre). Add a splash of water if it dries out.",
+        "Remove the thyme stalks and bay. Stir in the mustard and vinegar, season, and scatter with parsley."
+      ],
+      "notes": [
+        "Puy (French green) lentils hold their shape. Brown lentils work but go softer, so check them after 20 minutes.",
+        "Check the sausage label if you need this gluten-free; many sausages contain wheat."
+      ]
+    },
+    {
+      "id": "chorizo-chickpea-stew",
+      "title": "Chorizo and Chickpea Stew",
+      "summary": "Smoky Spanish chorizo, chickpeas and spinach in a paprika tomato broth, ready in 30 minutes.",
+      "cuisine": "spanish",
+      "mealTypes": ["dinner"],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "seasons": ["autumn", "winter"],
+      "diets": ["no-gluten", "no-dairy"],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "2 chorizo sausages (about 250g), sliced into rounds",
+            "1 brown onion, diced",
+            "1 red capsicum, diced",
+            "3 garlic cloves, sliced",
+            "2 tsp smoked paprika",
+            "400g tin crushed tomatoes",
+            "800g tinned chickpeas, drained and rinsed",
+            "375ml chicken stock",
+            "100g baby spinach",
+            "1 tbsp sherry vinegar",
+            "Handful of flat-leaf parsley, chopped",
+            "Crusty bread, to serve (optional)"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a large deep frying pan over medium heat. Fry the chorizo for 4 to 5 minutes, until crisp at the edges and the pan is full of red oil. Lift out with a slotted spoon.",
+        "Cook the onion and capsicum in the chorizo oil for 7 minutes until soft. Add the garlic and paprika and stir for 1 minute.",
+        "Add the tomatoes, chickpeas and stock. Simmer for 12 minutes, until slightly thickened. Crush some of the chickpeas against the side of the pan to thicken it further.",
+        "Return the chorizo, stir in the spinach until wilted, then add the vinegar. Taste for salt; the chorizo is salty, so you may not need any.",
+        "Scatter with parsley and serve with crusty bread for the sauce."
+      ],
+      "notes": [
+        "Use cured Spanish chorizo, the firm kind sold near the salami, not fresh chorizo.",
+        "Top with a fried egg for a weekend breakfast."
+      ]
+    },
+    {
+      "id": "greek-lemon-chicken-potatoes",
+      "title": "Greek Lemon Chicken and Potatoes",
+      "summary": "A one-tray roast of chicken thighs and potatoes soaked in lemon, garlic and oregano.",
+      "cuisine": "greek",
+      "mealTypes": ["dinner"],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 60,
+      "servings": 4,
+      "onePot": true,
+      "diets": ["no-gluten", "no-dairy"],
+      "ingredients": [
+        {
+          "items": [
+            "8 bone-in skin-on chicken thighs (about 1.4kg)",
+            "1kg potatoes, peeled and cut into thick wedges",
+            "80ml olive oil",
+            "Juice of 2 lemons",
+            "1 lemon, cut into wedges",
+            "6 garlic cloves, crushed",
+            "1 tbsp dried oregano",
+            "250ml chicken stock",
+            "1 1/2 tsp salt",
+            "1/2 tsp black pepper",
+            "Handful of flat-leaf parsley, chopped"
+          ]
+        },
+        {
+          "section": "To serve",
+          "items": ["Green salad"]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (200°C fan-forced).",
+        "In a large roasting tin, toss the potatoes with half the oil, half the lemon juice, half the garlic, half the oregano and half the salt and pepper. Spread out in a single layer.",
+        "Rub the chicken with the rest of the oil, lemon juice, garlic, oregano, salt and pepper. Sit it skin side up among the potatoes and tuck in the lemon wedges. Pour the stock around the potatoes, not over the chicken.",
+        "Roast for 50 to 60 minutes, turning the potatoes once halfway, until the chicken skin is crisp and golden, the potatoes are tender and have soaked up the juices, and the chicken is cooked through (75°C next to the bone). If the tray dries out, add a splash of water.",
+        "Scatter with parsley and serve with a green salad, spooning the pan juices over everything."
+      ],
+      "notes": [
+        "Don't crowd the tray. Use two if you need to, or the potatoes steam instead of roasting.",
+        "Check the stock label if you need this gluten-free."
+      ]
+    },
+    {
+      "id": "prawn-saganaki",
+      "title": "Prawn Saganaki",
+      "summary": "Prawns baked in a garlicky tomato and white wine sauce under crumbled, melting feta.",
+      "cuisine": "greek",
+      "mealTypes": ["dinner"],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "seasons": ["spring", "summer"],
+      "diets": ["pescatarian", "no-gluten"],
+      "ingredients": [
+        {
+          "items": [
+            "800g raw king prawns, peeled and deveined, tails on",
+            "3 tbsp olive oil",
+            "1 brown onion, finely diced",
+            "4 garlic cloves, sliced",
+            "1/2 tsp chilli flakes",
+            "125ml dry white wine",
+            "400g tin crushed tomatoes",
+            "1 tsp dried oregano",
+            "1/2 tsp sugar",
+            "150g feta, crumbled",
+            "2 tbsp dill, chopped",
+            "Salt and pepper",
+            "Crusty bread, to serve (optional)"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (180°C fan-forced).",
+        "Heat the oil in a large ovenproof frying pan over medium heat. Cook the onion for 6 minutes until soft. Add the garlic and chilli flakes for 1 minute.",
+        "Pour in the wine and let it bubble for 2 minutes. Add the tomatoes, oregano and sugar and simmer for 8 minutes, until thick. Season.",
+        "Take the pan off the heat. Nestle the prawns into the sauce in a single layer and scatter over the feta.",
+        "Bake for 8 to 10 minutes, until the prawns are pink and firm all the way through and the feta has softened and caught at the edges.",
+        "Scatter with dill and serve straight from the pan, with crusty bread for the sauce."
+      ],
+      "notes": [
+        "Don't overcook the prawns. They're done as soon as they curl into a loose C and turn opaque.",
+        "No ovenproof pan? Pour the sauce into a baking dish before adding the prawns."
+      ]
+    },
+    {
+      "id": "chicken-shish-bulgur-pilaf",
+      "title": "Chicken Shish with Bulgur Pilaf",
+      "summary": "Yoghurt and pepper-paste marinated chicken skewers over a buttery tomato bulgur pilaf.",
+      "cuisine": "turkish",
+      "mealTypes": ["dinner"],
+      "difficulty": "medium",
+      "prepMinutes": 45,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "seasons": ["spring", "summer"],
+      "diets": [],
+      "ingredients": [
+        {
+          "section": "Chicken",
+          "items": [
+            "800g chicken thigh fillets, cut into 3cm pieces",
+            "100g Greek yoghurt",
+            "1 tbsp tomato paste",
+            "2 tsp Aleppo pepper (or 1 tsp sweet paprika and a pinch of chilli flakes)",
+            "1 tsp ground cumin",
+            "2 garlic cloves, crushed",
+            "Juice of 1/2 lemon",
+            "2 tbsp olive oil",
+            "1 tsp salt"
+          ]
+        },
+        {
+          "section": "Bulgur pilaf",
+          "items": [
+            "30g butter",
+            "1 brown onion, finely diced",
+            "1 tbsp tomato paste",
+            "300g coarse bulgur, rinsed",
+            "600ml chicken stock",
+            "1/2 tsp salt"
+          ]
+        },
+        {
+          "section": "To serve",
+          "items": [
+            "2 tomatoes, diced",
+            "1 Lebanese cucumber, diced",
+            "1/2 red onion, thinly sliced",
+            "1 tsp sumac",
+            "Handful of flat-leaf parsley leaves",
+            "150g Greek yoghurt"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the chicken with the yoghurt, tomato paste, Aleppo pepper, cumin, garlic, lemon juice, oil and salt. Cover and refrigerate for at least 30 minutes, or up to a day. If using bamboo skewers, soak them in water now.",
+        "For the pilaf, melt the butter in a saucepan over medium heat and cook the onion for 6 minutes until soft. Stir in the tomato paste for 1 minute, then the bulgur. Add the stock and salt, bring to the boil, cover and cook on the lowest heat for 15 minutes. Turn off the heat, lay a tea towel under the lid and rest for 10 minutes.",
+        "Thread the chicken onto skewers. Heat a chargrill pan or barbecue over medium-high heat and cook the skewers for 10 to 12 minutes, turning every few minutes, until charred and cooked through (75°C in the thickest piece).",
+        "Toss the tomato, cucumber and red onion with the sumac and parsley.",
+        "Fluff the pilaf with a fork and serve with the skewers, the salad and a spoonful of yoghurt."
+      ],
+      "notes": [
+        "Coarse bulgur is the one for pilaf. Fine bulgur is for tabbouleh and goes mushy here.",
+        "Turkish red pepper paste (biber salçası) is excellent instead of the tomato paste if you can find it."
+      ]
+    },
+    {
+      "id": "mujadara",
+      "title": "Mujadara",
+      "summary": "Lentils and rice cooked with cumin under a tangle of deeply caramelised crispy onions.",
+      "cuisine": "middle-eastern",
+      "mealTypes": ["dinner", "lunch"],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 55,
+      "servings": 4,
+      "onePot": false,
+      "seasons": ["autumn", "winter"],
+      "diets": ["vegetarian", "vegan", "no-gluten", "no-dairy"],
+      "ingredients": [
+        {
+          "section": "Onions",
+          "items": ["3 large brown onions, halved and thinly sliced", "80ml olive oil", "1/2 tsp salt"]
+        },
+        {
+          "section": "Lentils and rice",
+          "items": [
+            "200g brown lentils, rinsed",
+            "200g basmati rice, rinsed",
+            "1 tsp ground cumin",
+            "1/2 tsp ground cinnamon",
+            "1/2 tsp ground allspice",
+            "1 tsp salt",
+            "500ml water"
+          ]
+        },
+        {
+          "section": "Salad",
+          "items": [
+            "2 tomatoes, diced",
+            "1 Lebanese cucumber, diced",
+            "Handful of flat-leaf parsley, chopped",
+            "Juice of 1/2 lemon",
+            "1 tbsp olive oil"
+          ]
+        },
+        {
+          "section": "To serve",
+          "items": ["Greek yoghurt (optional)"]
+        }
+      ],
+      "steps": [
+        "Put the lentils in a saucepan, cover with plenty of cold water and bring to the boil. Simmer for 15 minutes, until just tender but not falling apart. Drain.",
+        "Meanwhile, heat the oil in a large frying pan over medium-high heat. Add the onions and salt and cook for 25 to 30 minutes, stirring often and turning the heat down as they colour, until deep brown and some are crisp. Lift out half the onions onto paper towel for the top.",
+        "Add the cumin, cinnamon and allspice to the onions left in the pan for 30 seconds. Stir in the rice, lentils, salt and water. Bring to the boil, cover tightly and cook on the lowest heat for 15 minutes. Rest off the heat, covered, for 10 minutes.",
+        "Toss the salad ingredients together.",
+        "Fluff the mujadara with a fork, pile onto a platter and top with the crispy onions. Serve with the salad and a spoonful of yoghurt if you like."
+      ],
+      "notes": [
+        "The onions are the whole dish. Take them darker than feels right, just short of burnt.",
+        "Leave out the yoghurt, or use a plant-based one, to keep it vegan."
+      ]
+    },
+    {
+      "id": "harira",
+      "title": "Harira",
+      "summary": "Morocco's warming lamb, lentil and chickpea soup, fragrant with ginger, cinnamon and herbs.",
+      "cuisine": "north-african",
+      "mealTypes": ["dinner", "lunch"],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 90,
+      "servings": 6,
+      "onePot": true,
+      "seasons": ["autumn", "winter"],
+      "diets": ["no-dairy"],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp olive oil",
+            "400g lamb shoulder, trimmed and cut into 1.5cm pieces",
+            "1 brown onion, finely diced",
+            "2 celery stalks, finely diced",
+            "3 garlic cloves, crushed",
+            "1 tsp ground ginger",
+            "1 tsp ground turmeric",
+            "1 tsp ground cinnamon",
+            "1 tsp ground cumin",
+            "2 tbsp tomato paste",
+            "400g tin crushed tomatoes",
+            "150g red lentils, rinsed",
+            "1.75L water",
+            "400g tin chickpeas, drained and rinsed",
+            "50g spaghetti, broken into short pieces",
+            "1 bunch coriander, chopped",
+            "1/2 bunch flat-leaf parsley, chopped",
+            "2 tsp salt",
+            "1/2 tsp black pepper",
+            "Lemon wedges, to serve"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a large heavy pot over medium-high heat. Brown the lamb in two batches for 4 minutes each, then return it all to the pot.",
+        "Turn the heat to medium. Add the onion and celery and cook for 6 minutes until soft. Add the garlic and spices and stir for 1 minute until fragrant.",
+        "Stir in the tomato paste, then the tomatoes, lentils, water, salt and pepper. Bring to the boil, then cover and simmer gently for 1 hour, stirring now and then, until the lamb is tender and the lentils have melted into the soup.",
+        "Add the chickpeas, spaghetti and half the herbs. Simmer uncovered for 10 to 12 minutes, until the pasta is tender. Add a splash of water if it's too thick.",
+        "Stir in the rest of the herbs and serve with lemon wedges to squeeze over."
+      ],
+      "notes": [
+        "Harira is traditionally eaten to break the fast during Ramadan, often with dates on the side.",
+        "Use rice instead of spaghetti for a gluten-free pot (add it with the lentils for the last 20 minutes)."
+      ]
+    },
+    {
+      "id": "chermoula-fish-couscous",
+      "title": "Chermoula Fish with Herbed Couscous",
+      "summary": "White fish roasted under a punchy herb, lemon and cumin chermoula, with herby couscous.",
+      "cuisine": "north-african",
+      "mealTypes": ["dinner"],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "seasons": ["spring", "summer"],
+      "diets": ["pescatarian", "no-dairy"],
+      "ingredients": [
+        {
+          "section": "Chermoula",
+          "items": [
+            "1 bunch coriander, leaves and tender stems",
+            "1/2 bunch flat-leaf parsley leaves",
+            "2 garlic cloves",
+            "2 tsp ground cumin",
+            "1 tsp smoked paprika",
+            "1/4 tsp chilli flakes",
+            "Zest and juice of 1 lemon",
+            "80ml olive oil",
+            "1/2 tsp salt"
+          ]
+        },
+        {
+          "section": "Fish",
+          "items": ["4 skinless barramundi fillets (about 160g each)", "1 lemon, cut into wedges"]
+        },
+        {
+          "section": "Couscous",
+          "items": [
+            "300g couscous",
+            "375ml boiling water",
+            "1 tbsp olive oil",
+            "1/2 tsp salt",
+            "250g cherry tomatoes, halved",
+            "1 Lebanese cucumber, diced",
+            "1/2 preserved lemon, rind only, finely chopped (optional)"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (180°C fan-forced) and line a tray with baking paper.",
+        "Blitz all the chermoula ingredients in a small food processor to a loose, chunky paste (or chop finely by hand and stir together).",
+        "Put the fish on the tray and spread each fillet with a heaped tablespoon of chermoula. Bake for 10 to 12 minutes, until the fish is opaque and flakes easily.",
+        "Meanwhile, put the couscous, boiling water, oil and salt in a bowl. Cover and leave for 5 minutes, then fluff with a fork. Stir in the tomato, cucumber, preserved lemon and 2 tbsp of the chermoula.",
+        "Serve the fish on the couscous with lemon wedges and the rest of the chermoula on the side."
+      ],
+      "notes": [
+        "Chermoula is also a great marinade for chicken or prawns. It keeps for 3 days in the fridge with a layer of oil on top.",
+        "Snapper, ling or blue-eye work as well as barramundi."
+      ]
+    },
+    {
+      "id": "groundnut-stew",
+      "title": "Groundnut Stew",
+      "summary": "West African chicken and sweet potato stew in a rich, gently spiced peanut and tomato sauce.",
+      "cuisine": "west-african",
+      "mealTypes": ["dinner"],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": true,
+      "seasons": ["autumn", "winter"],
+      "diets": ["no-gluten", "no-dairy"],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp neutral oil",
+            "700g chicken thigh fillets, cut into large chunks",
+            "1 tsp salt",
+            "1 brown onion, diced",
+            "3 garlic cloves, crushed",
+            "1 tbsp grated ginger",
+            "1 long red chilli, finely chopped",
+            "1 tsp ground cumin",
+            "1 tsp ground coriander",
+            "2 tbsp tomato paste",
+            "400g tin crushed tomatoes",
+            "125g smooth peanut butter",
+            "500ml chicken stock",
+            "500g sweet potato, peeled and cut into 3cm chunks",
+            "100g baby spinach",
+            "2 tbsp roasted peanuts, chopped",
+            "Handful of coriander leaves"
+          ]
+        },
+        {
+          "section": "To serve",
+          "items": ["Steamed white rice"]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a large heavy pot over medium-high heat. Season the chicken with half the salt and brown in two batches, 4 minutes per batch. Lift onto a plate.",
+        "Turn the heat to medium. Cook the onion for 5 minutes until soft, then add the garlic, ginger, chilli, cumin and ground coriander for 1 minute.",
+        "Stir in the tomato paste for 1 minute, then the tomatoes. Whisk in the peanut butter and stock until smooth.",
+        "Add the chicken, sweet potato and remaining salt. Bring to a simmer, cover and cook gently for 25 to 30 minutes, stirring now and then so it doesn't catch, until the sweet potato is tender and the chicken is cooked through.",
+        "Stir in the spinach until wilted. Taste for salt. Scatter with peanuts and coriander and serve over rice."
+      ],
+      "notes": ["Contains peanuts.", "Swap the chicken for 2 tins of drained chickpeas and use vegetable stock for a vegan pot."]
+    },
+    {
+      "id": "cape-malay-chicken-curry",
+      "title": "Cape Malay Chicken Curry",
+      "summary": "A fragrant, mild and slightly sweet Cape Town curry with chicken, potato and apricot.",
+      "cuisine": "south-african",
+      "mealTypes": ["dinner"],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 50,
+      "servings": 4,
+      "onePot": true,
+      "seasons": ["autumn", "winter"],
+      "diets": ["no-gluten", "no-dairy"],
+      "ingredients": [
+        {
+          "section": "Curry",
+          "items": [
+            "2 tbsp neutral oil",
+            "1 cinnamon stick",
+            "4 cardamom pods, lightly crushed",
+            "2 bay leaves",
+            "2 brown onions, finely diced",
+            "4 garlic cloves, crushed",
+            "1 tbsp grated ginger",
+            "2 tbsp mild curry powder",
+            "1 tsp ground turmeric",
+            "1 tsp ground cumin",
+            "1 tsp ground coriander",
+            "800g chicken thigh fillets, cut into large chunks",
+            "400g tin crushed tomatoes",
+            "400g waxy potatoes, cut into 3cm chunks",
+            "375ml chicken stock",
+            "2 tbsp apricot jam",
+            "1 tsp salt",
+            "1 tbsp lemon juice"
+          ]
+        },
+        {
+          "section": "To serve",
+          "items": ["Steamed basmati rice", "Mango chutney", "Handful of coriander leaves"]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a large heavy pot over medium heat. Add the cinnamon, cardamom and bay and let them sizzle for 30 seconds.",
+        "Add the onions and cook for 10 minutes, stirring, until soft and golden. Add the garlic and ginger for 1 minute, then the curry powder, turmeric, cumin and coriander for 1 minute more. Add a splash of water if the spices start to catch.",
+        "Add the chicken and stir to coat in the spices for 2 minutes.",
+        "Add the tomatoes, potatoes, stock, jam and salt. Bring to a simmer, cover and cook gently for 30 minutes, until the potatoes are tender and the chicken is cooked through. Uncover for the last 5 minutes if the sauce needs thickening.",
+        "Stir in the lemon juice and taste: it should be warm, fragrant and just a little sweet. Remove the cinnamon stick and bay leaves. Serve with rice, chutney and coriander."
+      ],
+      "notes": [
+        "Cape Malay curries are fragrant rather than fiery. Add a chopped green chilli with the garlic if you like heat.",
+        "Sambals are the traditional sides: grated carrot with lemon, or tomato and onion with a little vinegar."
+      ]
+    },
+    {
+      "id": "aloo-gobi",
+      "title": "Aloo Gobi",
+      "summary": "Potato and cauliflower cooked with cumin, turmeric, ginger and tomato until golden and tender.",
+      "cuisine": "indian",
+      "mealTypes": ["dinner", "lunch"],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "seasons": ["autumn", "winter"],
+      "diets": ["vegetarian", "vegan", "no-gluten", "no-dairy"],
+      "ingredients": [
+        {
+          "items": [
+            "3 tbsp neutral oil",
+            "1 tsp cumin seeds",
+            "1 brown onion, finely diced",
+            "3 garlic cloves, crushed",
+            "1 tbsp grated ginger",
+            "1 green chilli, finely chopped",
+            "1 tsp ground turmeric",
+            "2 tsp ground coriander",
+            "1/2 tsp Kashmiri chilli powder",
+            "2 tomatoes, finely chopped",
+            "500g potatoes, peeled and cut into 2.5cm cubes",
+            "1 small cauliflower (about 700g), cut into florets",
+            "1 1/2 tsp salt",
+            "125ml water",
+            "1 tsp garam masala",
+            "Handful of coriander leaves, chopped",
+            "Juice of 1/2 lemon"
+          ]
+        },
+        {
+          "section": "To serve",
+          "items": ["Steamed basmati rice"]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a large deep frying pan or wide pot with a lid over medium heat. Add the cumin seeds and let them sizzle for 30 seconds.",
+        "Add the onion and cook for 6 minutes until golden. Add the garlic, ginger and green chilli for 1 minute, then the turmeric, ground coriander and chilli powder for 30 seconds.",
+        "Add the tomato and cook for 4 minutes, until it breaks down into a paste.",
+        "Add the potato, cauliflower and salt and stir until everything is coated. Pour in the water, cover and cook over medium-low heat for 15 minutes, stirring gently once or twice.",
+        "Uncover, turn the heat up to medium and cook for 5 to 8 minutes more, turning gently, until the vegetables are tender and catching golden at the edges.",
+        "Sprinkle with garam masala, coriander and lemon juice. Serve with rice."
+      ],
+      "notes": [
+        "Don't stir too much or the cauliflower breaks up. Turn it with a flat spatula.",
+        "A handful of frozen peas in the last 5 minutes makes it go further."
+      ]
+    },
+    {
+      "id": "keema-matar",
+      "title": "Keema Matar",
+      "summary": "Spiced lamb mince and peas in a quick, rich tomato masala: a weeknight curry in 40 minutes.",
+      "cuisine": "indian",
+      "mealTypes": ["dinner"],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": ["no-gluten", "no-dairy"],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp neutral oil",
+            "1 tsp cumin seeds",
+            "1 large brown onion, finely diced",
+            "4 garlic cloves, crushed",
+            "1 tbsp grated ginger",
+            "1 green chilli, finely chopped",
+            "500g lamb mince (or beef mince)",
+            "2 tsp ground coriander",
+            "1 tsp ground cumin",
+            "1/2 tsp ground turmeric",
+            "1 tsp Kashmiri chilli powder",
+            "400g tin crushed tomatoes",
+            "1 tsp salt",
+            "125ml water",
+            "200g frozen peas",
+            "1 tsp garam masala",
+            "Handful of coriander leaves, chopped"
+          ]
+        },
+        {
+          "section": "To serve",
+          "items": ["Steamed basmati rice", "Lemon wedges"]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a large deep frying pan over medium heat. Add the cumin seeds and let them sizzle for 30 seconds, then add the onion and cook for 8 minutes until golden.",
+        "Add the garlic, ginger and chilli for 1 minute.",
+        "Turn the heat up to high, add the mince and cook for 6 to 8 minutes, breaking it up, until browned all over and any liquid has cooked off.",
+        "Stir in the ground coriander, cumin, turmeric and chilli powder for 1 minute. Add the tomatoes, salt and water. Simmer for 12 minutes, stirring now and then, until thick and the oil starts to separate at the edges.",
+        "Add the peas and cook for 3 minutes. Stir in the garam masala and coriander. Serve with rice and lemon wedges."
+      ],
+      "notes": ["Mince must be cooked right through, with no pink left.", "Wrap leftovers in warm roti with a spoon of yoghurt for lunch."]
+    },
+    {
+      "id": "shaking-beef",
+      "title": "Vietnamese Shaking Beef",
+      "summary": "Seared cubes of garlicky, peppery beef tossed hot over a crisp, tangy salad.",
+      "cuisine": "vietnamese",
+      "mealTypes": ["dinner"],
+      "difficulty": "easy",
+      "prepMinutes": 40,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "seasons": ["spring", "summer"],
+      "diets": ["no-dairy"],
+      "ingredients": [
+        {
+          "section": "Beef",
+          "items": [
+            "700g beef rump steak, cut into 2.5cm cubes",
+            "3 garlic cloves, crushed",
+            "2 tbsp oyster sauce",
+            "1 tbsp soy sauce",
+            "1 tbsp fish sauce",
+            "2 tsp brown sugar",
+            "1 tsp black pepper",
+            "2 tbsp neutral oil",
+            "1 red onion, cut into wedges"
+          ]
+        },
+        {
+          "section": "Salad",
+          "items": ["120g rocket", "250g cherry tomatoes, halved", "1 Lebanese cucumber, sliced", "2 tbsp rice vinegar", "1 tsp sugar"]
+        },
+        {
+          "section": "Lime pepper dip",
+          "items": ["Juice of 2 limes", "1/2 tsp salt", "1/2 tsp black pepper"]
+        },
+        {
+          "section": "To serve",
+          "items": ["Steamed jasmine rice"]
+        }
+      ],
+      "steps": [
+        "Toss the beef with the garlic, oyster sauce, soy sauce, fish sauce, sugar and pepper. Marinate for 30 minutes at room temperature, or up to 4 hours in the fridge.",
+        "Mix the vinegar and sugar, toss with the rocket, tomato and cucumber, and spread over a platter. Stir the lime juice, salt and pepper together in a small dish.",
+        "Heat a large heavy frying pan or wok over very high heat until smoking. Add half the oil and half the beef in a single layer. Leave it for 1 minute to sear, then shake the pan to turn the cubes and cook for 1 minute more. Tip onto a plate and repeat with the rest.",
+        "Return all the beef to the pan with the onion. Shake and toss for 1 minute, until the onion just softens and the beef is glossy and medium-rare.",
+        "Pile the beef and pan juices over the salad. Serve with rice and the lime pepper dip."
+      ],
+      "notes": [
+        "A very hot pan and small batches are what make the crust. Crowd the pan and the beef stews.",
+        "Watercress is the traditional base. Use it in place of the rocket if you can find it."
+      ]
+    },
+    {
+      "id": "tomato-egg-stir-fry",
+      "title": "Tomato and Egg Stir-Fry",
+      "summary": "Soft, fluffy eggs folded through sweet, saucy tomatoes: China's favourite home dinner.",
+      "cuisine": "chinese",
+      "mealTypes": ["dinner", "lunch"],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "seasons": ["summer", "autumn"],
+      "diets": ["vegetarian", "no-dairy"],
+      "ingredients": [
+        {
+          "items": [
+            "8 eggs",
+            "1/2 tsp salt",
+            "1 tsp sesame oil",
+            "3 tbsp neutral oil",
+            "600g ripe tomatoes, cut into wedges",
+            "2 garlic cloves, finely chopped",
+            "2 tbsp tomato sauce",
+            "2 tsp sugar",
+            "60ml water",
+            "1 tsp cornflour, mixed with 1 tbsp water",
+            "3 spring onions, sliced"
+          ]
+        },
+        {
+          "section": "To serve",
+          "items": ["Steamed jasmine rice"]
+        }
+      ],
+      "steps": [
+        "Beat the eggs with half the salt and the sesame oil until smooth.",
+        "Heat 2 tbsp of the neutral oil in a wok or large frying pan over medium-high heat. Pour in the eggs, let them set for a few seconds, then push them gently around the pan into large, soft curds. Take them out after about 1 minute, while still a little wet; they'll finish cooking in the sauce.",
+        "Add the rest of the oil and the garlic and stir for 20 seconds. Add the tomatoes and cook for 3 to 4 minutes, pressing some with the spatula, until they soften and release their juice.",
+        "Stir in the tomato sauce, sugar, remaining salt and water and bubble for 1 minute. Stir in the cornflour mixture until the sauce turns glossy.",
+        "Return the eggs and fold through for 1 minute, until just set all the way through. Scatter with spring onion and serve straight away over rice."
+      ],
+      "notes": [
+        "Ripe, juicy tomatoes make the sauce. In winter, use 400g ripe tomatoes and 200g tinned crushed tomatoes.",
+        "Much Australian cornflour is made from wheat. Use one labelled maize and gluten-free for a gluten-free plate."
+      ]
+    },
+    {
+      "id": "steamed-fish-ginger-spring-onion",
+      "title": "Steamed Fish with Ginger and Spring Onion",
+      "summary": "Tender steamed fish under a crackle of hot oil, ginger, spring onion and soy.",
+      "cuisine": "chinese",
+      "mealTypes": ["dinner"],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": ["pescatarian", "no-dairy"],
+      "ingredients": [
+        {
+          "section": "Fish",
+          "items": [
+            "4 skinless snapper fillets (about 160g each)",
+            "5cm piece ginger, half sliced, half cut into fine matchsticks",
+            "1 tbsp Shaoxing wine (optional)",
+            "4 spring onions, cut into fine strips",
+            "Handful of coriander sprigs"
+          ]
+        },
+        {
+          "section": "Sauce",
+          "items": ["3 tbsp soy sauce", "1 tbsp water", "1 tsp sugar", "60ml neutral oil"]
+        },
+        {
+          "section": "To serve",
+          "items": ["Steamed jasmine rice", "1 bunch bok choy, halved and steamed"]
+        }
+      ],
+      "steps": [
+        "Set up a steamer: a wok or wide pot with a rack and a lid, with 5cm of water, brought to a rolling boil.",
+        "Lay the ginger slices on a heatproof plate that fits in the steamer, put the fish on top and drizzle with the Shaoxing wine.",
+        "Steam the fish for 8 to 10 minutes, until it's opaque and flakes easily at the thickest part. Carefully lift the plate out and pour off the liquid that has collected.",
+        "Warm the soy sauce, water and sugar in a small pan until the sugar dissolves, then pour over and around the fish. Top with the ginger matchsticks and spring onion.",
+        "Heat the oil in a small pan until it shimmers and just starts to smoke. Carefully pour it over the ginger and spring onion; it will sizzle loudly. Top with coriander and serve with rice and bok choy."
+      ],
+      "notes": [
+        "Hot oil spits: pour it slowly and keep your face back.",
+        "Use tamari in place of soy sauce, and leave out the Shaoxing, for a gluten-free plate."
+      ]
+    },
+    {
+      "id": "ginger-pork-shogayaki",
+      "title": "Ginger Pork (Shogayaki)",
+      "summary": "Thin pork slices glazed in ginger, soy and mirin, with shredded cabbage and rice.",
+      "cuisine": "japanese",
+      "mealTypes": ["dinner", "lunch"],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "diets": ["no-dairy"],
+      "ingredients": [
+        {
+          "section": "Sauce",
+          "items": ["2 tbsp grated ginger", "60ml soy sauce", "60ml mirin", "2 tbsp sake", "2 tsp sugar"]
+        },
+        {
+          "section": "Pork",
+          "items": [
+            "600g pork neck (pork scotch), very thinly sliced",
+            "1 tbsp plain flour",
+            "2 tbsp neutral oil",
+            "1 brown onion, thinly sliced"
+          ]
+        },
+        {
+          "section": "To serve",
+          "items": ["1/4 cabbage, very finely shredded", "Steamed short-grain rice", "Kewpie mayonnaise (optional)", "1 tsp sesame seeds"]
+        }
+      ],
+      "steps": [
+        "Mix the sauce ingredients in a bowl.",
+        "Lightly dust the pork with the flour. This helps the sauce cling.",
+        "Heat half the oil in a large frying pan over high heat. Lay in half the pork in a single layer and cook for 1 minute each side until browned. Tip onto a plate and repeat with the rest of the oil and pork.",
+        "Add the onion to the pan and cook for 2 minutes until it starts to soften. Return all the pork, pour in the sauce and toss for 1 to 2 minutes, until the sauce is thick and glossy and the pork is cooked through.",
+        "Pile the cabbage and rice on plates and add the pork with its sauce. Finish with sesame seeds and a little Kewpie if you like."
+      ],
+      "notes": [
+        "Freeze the pork for 30 minutes and it slices paper-thin with a sharp knife. Many Asian grocers sell it ready-sliced for shabu shabu.",
+        "The raw cabbage is the classic side: it soaks up the sauce and freshens every bite."
+      ]
+    },
+    {
+      "id": "miso-glazed-eggplant",
+      "title": "Miso-Glazed Eggplant",
+      "summary": "Silky roasted eggplant under a bubbling sweet miso glaze, with rice and greens.",
+      "cuisine": "japanese",
+      "mealTypes": ["dinner", "lunch"],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "seasons": ["summer", "autumn"],
+      "diets": ["vegetarian", "vegan", "no-dairy"],
+      "ingredients": [
+        {
+          "section": "Eggplant",
+          "items": ["3 medium eggplants, halved lengthways", "3 tbsp neutral oil", "Pinch of salt"]
+        },
+        {
+          "section": "Miso glaze",
+          "items": ["80g white miso", "2 tbsp mirin", "1 tbsp sake", "1 tbsp sugar", "1 tsp grated ginger"]
+        },
+        {
+          "section": "To serve",
+          "items": [
+            "2 spring onions, finely sliced",
+            "2 tsp sesame seeds",
+            "Steamed short-grain rice",
+            "2 bunches baby bok choy, halved",
+            "1 tsp sesame oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (200°C fan-forced) and line a tray with baking paper.",
+        "Score the cut side of each eggplant half in a deep criss-cross, without cutting through the skin. Brush the cut sides generously with oil, season with salt and lay cut side down on the tray.",
+        "Roast for 25 minutes, until the flesh is completely soft when pressed.",
+        "Meanwhile, stir the miso, mirin, sake, sugar and ginger in a small pan over low heat for 2 minutes until smooth and glossy.",
+        "Turn the eggplants cut side up and spread with the glaze. Switch the oven to grill and grill for 3 to 5 minutes, watching closely, until bubbling and caramelised in spots.",
+        "Steam or blanch the bok choy for 2 minutes and toss with the sesame oil. Scatter the eggplant with spring onion and sesame seeds and serve with rice and the greens."
+      ],
+      "notes": [
+        "Miso burns quickly under the grill. Don't walk away.",
+        "Most miso contains barley or wheat. Look for a rice-only miso if you need it gluten-free."
+      ]
+    },
+    {
+      "id": "soft-tofu-stew",
+      "title": "Soft Tofu Stew (Sundubu-jjigae)",
+      "summary": "A bubbling, spicy Korean stew of silken tofu, kimchi and pork, finished with an egg.",
+      "cuisine": "korean",
+      "mealTypes": ["dinner"],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "seasons": ["autumn", "winter"],
+      "diets": ["no-dairy"],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp sesame oil",
+            "150g pork mince",
+            "1/2 brown onion, diced",
+            "3 garlic cloves, crushed",
+            "2 tbsp gochugaru",
+            "150g kimchi, chopped",
+            "1 tbsp soy sauce",
+            "1 tsp fish sauce",
+            "750ml dashi (made from instant dashi powder)",
+            "1 zucchini, halved and sliced",
+            "600g silken tofu",
+            "4 eggs",
+            "2 spring onions, sliced"
+          ]
+        },
+        {
+          "section": "To serve",
+          "items": ["Steamed short-grain rice"]
+        }
+      ],
+      "steps": [
+        "Heat the sesame oil in a medium heavy pot over medium heat. Cook the pork mince for 4 minutes, breaking it up, until browned and cooked through. Add the onion and garlic for 2 minutes.",
+        "Stir in the gochugaru for 30 seconds, then the kimchi for 2 minutes.",
+        "Add the soy sauce, fish sauce and dashi and bring to the boil. Add the zucchini and simmer for 4 minutes.",
+        "Spoon the tofu into the pot in large pieces and simmer gently for 3 minutes; it's fragile, so don't stir hard.",
+        "Crack the eggs into the bubbling stew, cover and simmer for 3 to 4 minutes, until the whites are set. Scatter with spring onion and serve bubbling hot with rice."
+      ],
+      "notes": [
+        "The yolks are soft after 3 to 4 minutes. For pregnant people, young children, older people or anyone with a weakened immune system, simmer until firm, about 6 minutes, or stir the eggs through.",
+        "Gochugaru (Korean chilli flakes) is fruity rather than fierce. Start with 1 tbsp if you're unsure."
+      ]
+    },
+    {
+      "id": "mee-goreng",
+      "title": "Mee Goreng",
+      "summary": "Malaysian hawker-style fried noodles with chicken, egg and greens in a sweet, spicy sauce.",
+      "cuisine": "malaysian",
+      "mealTypes": ["dinner", "lunch"],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": ["no-dairy"],
+      "ingredients": [
+        {
+          "section": "Sauce",
+          "items": ["3 tbsp kecap manis", "2 tbsp tomato sauce", "1 tbsp soy sauce", "1-2 tbsp sambal oelek", "1 tsp sugar"]
+        },
+        {
+          "section": "Noodles",
+          "items": [
+            "600g fresh hokkien noodles",
+            "3 tbsp neutral oil",
+            "400g chicken thigh fillets, thinly sliced",
+            "3 garlic cloves, finely chopped",
+            "2 shallots, sliced",
+            "2 eggs, beaten",
+            "1 bunch bok choy, chopped",
+            "150g bean sprouts",
+            "2 tomatoes, cut into wedges"
+          ]
+        },
+        {
+          "section": "To serve",
+          "items": ["2 tbsp fried shallots", "Lime wedges"]
+        }
+      ],
+      "steps": [
+        "Mix the sauce ingredients. Loosen the noodles by pouring boiling water over them in a colander, then separate gently with tongs and drain well.",
+        "Heat 1 tbsp oil in a wok over high heat. Stir-fry the chicken for 4 to 5 minutes until cooked through. Lift onto a plate.",
+        "Add another 1 tbsp oil, then the garlic and shallot for 30 seconds. Push them to one side, pour the eggs into the space and scramble until just set.",
+        "Add the rest of the oil, the noodles and the sauce. Toss over high heat for 2 minutes, until the noodles are coated and starting to char.",
+        "Add the chicken, bok choy, bean sprouts and tomato and toss for 2 minutes more, until the greens wilt. Serve topped with fried shallots, with lime wedges to squeeze over."
+      ],
+      "notes": [
+        "Prawns, fried tofu or leftover roast chicken all work in place of the chicken.",
+        "Hokkien noodles are wheat noodles, so this isn't gluten-free."
+      ]
+    },
+    {
+      "id": "chicken-tinola",
+      "title": "Chicken Tinola",
+      "summary": "Filipino comfort soup of chicken simmered in a clear, gingery broth with papaya and greens.",
+      "cuisine": "filipino",
+      "mealTypes": ["dinner", "lunch"],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": true,
+      "seasons": ["autumn", "winter"],
+      "diets": ["no-gluten", "no-dairy"],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp neutral oil",
+            "1 brown onion, sliced",
+            "4 garlic cloves, crushed",
+            "6cm piece ginger, peeled and cut into thin strips",
+            "1.2kg bone-in chicken pieces (drumsticks and thighs)",
+            "2 tbsp fish sauce",
+            "1.25L water",
+            "1 small green papaya (or 2 zucchini), peeled, seeded and cut into wedges",
+            "100g baby spinach",
+            "1/2 tsp black pepper"
+          ]
+        },
+        {
+          "section": "To serve",
+          "items": ["Steamed jasmine rice", "Fish sauce", "Lime wedges"]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a large pot over medium heat. Cook the onion, garlic and ginger for 4 minutes until fragrant and soft.",
+        "Add the chicken and fish sauce and cook for 5 minutes, turning, until the chicken is lightly coloured.",
+        "Pour in the water and bring to the boil, skimming off any foam. Turn down to a gentle simmer, cover and cook for 25 minutes.",
+        "Add the papaya and simmer for 8 to 10 minutes, until tender and the chicken is cooked through (75°C next to the bone). If using zucchini, it only needs 4 minutes.",
+        "Stir in the spinach until wilted and season with pepper and more fish sauce to taste. Serve in bowls with rice, extra fish sauce and lime."
+      ],
+      "notes": [
+        "Green papaya is sold at Asian grocers. Choko (chayote) is the other classic choice.",
+        "Moringa or chilli leaves are traditional; baby spinach is the easy supermarket swap."
+      ]
+    },
+    {
+      "id": "pancit-bihon",
+      "title": "Pancit Bihon",
+      "summary": "Filipino party noodles: thin rice noodles stir-fried with chicken and crunchy vegetables.",
+      "cuisine": "filipino",
+      "mealTypes": ["dinner", "lunch"],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": ["no-dairy"],
+      "ingredients": [
+        {
+          "items": [
+            "250g rice vermicelli",
+            "2 tbsp neutral oil",
+            "400g chicken thigh fillets, thinly sliced",
+            "1 brown onion, sliced",
+            "4 garlic cloves, finely chopped",
+            "1 carrot, cut into matchsticks",
+            "150g green beans, sliced on an angle",
+            "1/4 cabbage, shredded",
+            "375ml chicken stock",
+            "3 tbsp soy sauce",
+            "1 tbsp oyster sauce",
+            "1/2 tsp black pepper",
+            "3 spring onions, sliced",
+            "Lemon wedges, to serve"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the noodles in warm water for 10 minutes until pliable, then drain.",
+        "Heat the oil in a wok or very large frying pan over high heat. Stir-fry the chicken for 4 to 5 minutes until cooked through. Lift onto a plate.",
+        "Add the onion and garlic and stir-fry for 2 minutes. Add the carrot and beans for 2 minutes, then the cabbage for 1 minute. Tip the vegetables onto the chicken.",
+        "Pour the stock, soy sauce and oyster sauce into the wok and bring to the boil. Add the noodles and toss with tongs until they've absorbed the liquid, about 3 minutes.",
+        "Return the chicken and vegetables, season with pepper and toss well. Scatter with spring onion and serve with lemon wedges to squeeze over."
+      ],
+      "notes": [
+        "Calamansi is the traditional squeeze. Lemon is the closest supermarket swap.",
+        "Pancit is served at birthdays for long life, so the noodles are never cut."
+      ]
+    },
+    {
+      "id": "chicken-tinga-tostadas",
+      "title": "Chicken Tinga Tostadas",
+      "summary": "Smoky chipotle chicken piled on crisp baked tortillas with beans, avocado and feta.",
+      "cuisine": "mexican",
+      "mealTypes": ["dinner", "lunch"],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": ["no-gluten"],
+      "ingredients": [
+        {
+          "section": "Tinga",
+          "items": [
+            "1 tbsp neutral oil",
+            "1 brown onion, thinly sliced",
+            "3 garlic cloves, crushed",
+            "2 chipotles in adobo, chopped, plus 1 tbsp of the sauce",
+            "1 tsp dried oregano",
+            "1/2 tsp ground cumin",
+            "400g tin crushed tomatoes",
+            "125ml chicken stock",
+            "600g chicken thigh fillets",
+            "1/2 tsp salt"
+          ]
+        },
+        {
+          "section": "Tostadas",
+          "items": [
+            "12 small corn tortillas",
+            "2 tbsp neutral oil",
+            "400g tin black beans, drained and rinsed",
+            "1/2 tsp ground cumin",
+            "1 tbsp lime juice"
+          ]
+        },
+        {
+          "section": "To top",
+          "items": [
+            "2 cups shredded iceberg lettuce",
+            "1 avocado, sliced",
+            "80g feta, crumbled",
+            "100g sour cream",
+            "Handful of coriander leaves",
+            "Lime wedges"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a deep frying pan over medium heat. Cook the onion for 6 minutes until soft. Add the garlic, chipotles and their sauce, oregano and cumin for 1 minute.",
+        "Add the tomatoes, stock, chicken and salt. Cover and simmer gently for 20 minutes, until the chicken is cooked through (75°C). Lift the chicken out, shred it with two forks, and return it to the sauce. Simmer uncovered for 5 minutes until thick and clinging.",
+        "Meanwhile, heat the oven to 200°C (180°C fan-forced). Brush the tortillas lightly with oil on both sides, spread over two trays and bake for 8 to 10 minutes, turning once, until crisp and golden.",
+        "Mash the beans with the cumin, lime juice and a pinch of salt, adding a splash of water to make it spreadable. Warm briefly in a small pan.",
+        "Spread each tostada with beans, then top with chicken tinga, lettuce, avocado, feta, sour cream and coriander. Serve with lime wedges and eat with your hands."
+      ],
+      "notes": [
+        "The tinga keeps for 3 days in the fridge and is just as good in tacos, burritos or on rice.",
+        "Check the tortilla label if you need these gluten-free; some brands add wheat flour."
+      ]
+    },
+    {
+      "id": "arroz-con-pollo",
+      "title": "Arroz con Pollo",
+      "summary": "One-pan Latin American chicken and rice, golden with paprika and studded with peas and olives.",
+      "cuisine": "latin-american",
+      "mealTypes": ["dinner"],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 50,
+      "servings": 4,
+      "onePot": true,
+      "diets": ["no-gluten", "no-dairy"],
+      "ingredients": [
+        {
+          "items": [
+            "8 chicken thigh fillets (about 1kg)",
+            "1 1/2 tsp salt",
+            "1 tsp smoked paprika",
+            "1 tsp ground cumin",
+            "2 tbsp olive oil",
+            "1 brown onion, diced",
+            "1 red capsicum, diced",
+            "4 garlic cloves, crushed",
+            "1 tsp dried oregano",
+            "1/2 tsp ground turmeric",
+            "2 tbsp tomato paste",
+            "300g long-grain white rice, rinsed",
+            "750ml chicken stock",
+            "150g frozen peas",
+            "60g green olives, halved",
+            "Handful of coriander leaves, chopped",
+            "Lime wedges, to serve"
+          ]
+        }
+      ],
+      "steps": [
+        "Season the chicken with 1 tsp of the salt, the paprika and the cumin. Heat the oil in a large deep frying pan or casserole with a lid over medium-high heat and brown the chicken for 3 minutes each side. Lift onto a plate.",
+        "Turn the heat to medium. Cook the onion and capsicum for 6 minutes until soft. Add the garlic, oregano and turmeric for 1 minute, then the tomato paste for 1 minute.",
+        "Add the rice and stir for 1 minute to coat in the oil. Pour in the stock, add the remaining salt and bring to the boil.",
+        "Nestle the chicken into the rice. Cover tightly, turn the heat to low and cook for 20 minutes, without lifting the lid.",
+        "Scatter over the peas and olives, cover again and cook for 5 minutes more, until the rice is tender, the liquid absorbed and the chicken cooked through (75°C). Rest off the heat, covered, for 5 minutes.",
+        "Fluff the rice with a fork, scatter with coriander and serve with lime wedges."
+      ],
+      "notes": ["A pinch of saffron in the stock is lovely if you have it.", "Check the stock label if you need this gluten-free."]
+    },
+    {
+      "id": "lomo-saltado",
+      "title": "Lomo Saltado",
+      "summary": "Peru's beef, tomato and onion stir-fry with soy and chilli, tossed with chips and served with rice.",
+      "cuisine": "latin-american",
+      "mealTypes": ["dinner"],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": ["no-dairy"],
+      "ingredients": [
+        {
+          "section": "Chips",
+          "items": ["600g frozen oven chips"]
+        },
+        {
+          "section": "Stir-fry",
+          "items": [
+            "700g beef rump steak, cut into thick strips",
+            "1 tsp salt",
+            "1/2 tsp black pepper",
+            "1/2 tsp ground cumin",
+            "3 tbsp neutral oil",
+            "1 red onion, cut into thick wedges",
+            "4 garlic cloves, finely chopped",
+            "1 tbsp aji amarillo paste (or 1 long red chilli, sliced)",
+            "3 tomatoes, cut into thick wedges",
+            "3 tbsp soy sauce",
+            "2 tbsp red wine vinegar",
+            "Handful of coriander leaves, chopped"
+          ]
+        },
+        {
+          "section": "To serve",
+          "items": ["Steamed white rice"]
+        }
+      ],
+      "steps": [
+        "Cook the chips in the oven following the packet instructions, so they're crisp when the stir-fry is ready.",
+        "Season the beef with the salt, pepper and cumin. Have everything chopped and next to the stove; this cooks fast.",
+        "Heat a wok or large heavy frying pan over very high heat until smoking. Add 1 tbsp oil and half the beef. Sear for 1 to 2 minutes, until browned outside and still pink inside. Tip onto a plate and repeat with another 1 tbsp oil and the rest of the beef.",
+        "Add the last of the oil, then the onion. Stir-fry for 1 minute, until it just starts to char at the edges. Add the garlic and aji amarillo for 30 seconds.",
+        "Return the beef and its juices, add the tomatoes, then pour the soy sauce and vinegar around the edge of the pan. Toss for 1 minute; the tomatoes should hold their shape.",
+        "Take it off the heat, fold in the chips and coriander, and serve straight away with rice to soak up the juices."
+      ],
+      "notes": [
+        "Aji amarillo is a fruity yellow Peruvian chilli paste, sold in jars at Latin grocers and online.",
+        "Tossing the chips through is traditional. Serve them on the side if you like them crunchier."
+      ]
+    },
+    {
+      "id": "toad-in-the-hole",
+      "title": "Toad in the Hole",
+      "summary": "Pork sausages baked in a tall, crisp Yorkshire pudding batter, with a rich onion gravy.",
+      "cuisine": "british",
+      "mealTypes": ["dinner"],
+      "difficulty": "medium",
+      "prepMinutes": 40,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": false,
+      "seasons": ["autumn", "winter"],
+      "diets": [],
+      "ingredients": [
+        {
+          "section": "Batter",
+          "items": ["140g plain flour", "4 eggs", "200ml milk", "1/2 tsp salt"]
+        },
+        {
+          "section": "Sausages",
+          "items": ["8 thick pork sausages", "3 tbsp neutral oil (or beef dripping)"]
+        },
+        {
+          "section": "Onion gravy",
+          "items": [
+            "20g butter",
+            "2 brown onions, thinly sliced",
+            "1 tbsp plain flour",
+            "500ml beef stock",
+            "1 tsp Worcestershire sauce",
+            "1 thyme sprig"
+          ]
+        },
+        {
+          "section": "To serve",
+          "items": ["200g green beans, trimmed and steamed"]
+        }
+      ],
+      "steps": [
+        "Whisk the flour, eggs, milk and salt to a smooth batter the thickness of pouring cream. Rest it for at least 30 minutes at room temperature.",
+        "Heat the oven to 220°C (200°C fan-forced). Put the sausages and oil in a 20 x 30cm metal roasting tin and roast for 15 minutes, turning once, until browned.",
+        "Working quickly, take the tin out and check the fat is smoking hot. Whisk the batter once more and pour it around the sausages; it should sizzle. Return to the oven straight away.",
+        "Bake for 25 to 30 minutes, without opening the door, until the batter has risen high and is deep golden and crisp, and the sausages are cooked through (75°C in the centre).",
+        "Meanwhile, make the gravy: melt the butter in a saucepan over medium-low heat and cook the onions for 15 to 20 minutes, until soft and caramelised. Stir in the flour for 1 minute, then gradually whisk in the stock. Add the Worcestershire and thyme and simmer for 8 minutes until thickened.",
+        "Cut the toad into portions and serve with plenty of onion gravy and green beans."
+      ],
+      "notes": [
+        "The two rules for a tall rise: smoking-hot fat in a metal tin, and no peeking for the first 20 minutes.",
+        "Use good butcher's sausages; they're the star."
+      ]
+    },
+    {
+      "id": "chicken-paprikash",
+      "title": "Chicken Paprikash",
+      "summary": "Hungarian chicken braised in a sweet paprika and capsicum sauce, finished with sour cream.",
+      "cuisine": "central-european",
+      "mealTypes": ["dinner"],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": false,
+      "seasons": ["autumn", "winter"],
+      "diets": [],
+      "ingredients": [
+        {
+          "section": "Paprikash",
+          "items": [
+            "800g chicken thigh fillets, cut into large pieces",
+            "1 tsp salt",
+            "2 tbsp neutral oil",
+            "2 brown onions, finely diced",
+            "1 red capsicum, diced",
+            "3 garlic cloves, crushed",
+            "2 tbsp sweet paprika",
+            "1/2 tsp smoked paprika",
+            "1 tbsp tomato paste",
+            "375ml chicken stock",
+            "150g sour cream",
+            "1 tbsp plain flour",
+            "Handful of flat-leaf parsley, chopped"
+          ]
+        },
+        {
+          "section": "To serve",
+          "items": ["300g wide egg noodles", "20g butter"]
+        }
+      ],
+      "steps": [
+        "Season the chicken with the salt. Heat the oil in a large deep frying pan or casserole over medium-high heat and brown the chicken in two batches, 3 minutes per batch. Lift onto a plate.",
+        "Turn the heat to medium-low. Cook the onions for 10 minutes, stirring, until soft and golden. Add the capsicum and garlic for 3 minutes.",
+        "Take the pan off the heat and stir in both paprikas; paprika burns and turns bitter over high heat. Stir in the tomato paste, then the stock, and return to the heat.",
+        "Add the chicken and bring to a gentle simmer. Cover and cook for 20 minutes, until the chicken is cooked through and tender.",
+        "Meanwhile, cook the noodles following the packet instructions. Drain and toss with the butter.",
+        "Whisk the sour cream and flour together in a bowl, then whisk in a ladle of the hot sauce. Stir it into the pan and simmer gently for 2 minutes until thickened; the flour stops the sour cream splitting. Scatter with parsley and serve over the buttered noodles."
+      ],
+      "notes": [
+        "Use fresh paprika. If yours has been in the cupboard for years, it'll taste of dust.",
+        "Mashed potato or rice are good in place of the noodles."
+      ]
+    },
+    {
+      "id": "nordic-fish-soup",
+      "title": "Nordic Fish Soup",
+      "summary": "A creamy Scandinavian soup of white fish and salmon with potato, leek and lots of dill.",
+      "cuisine": "scandinavian",
+      "mealTypes": ["dinner", "lunch"],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "seasons": ["autumn", "winter"],
+      "diets": ["pescatarian", "no-gluten"],
+      "ingredients": [
+        {
+          "items": [
+            "30g butter",
+            "1 leek, white and pale green part, sliced",
+            "1 carrot, diced",
+            "500g waxy potatoes, cut into 2cm cubes",
+            "1 bay leaf",
+            "1L fish stock",
+            "250ml cream",
+            "400g firm white fish fillets, skinned and cut into 3cm chunks",
+            "250g skinless salmon fillet, cut into 3cm chunks",
+            "1/2 bunch dill, chopped",
+            "Juice of 1/2 lemon",
+            "Salt",
+            "Ground white pepper"
+          ]
+        },
+        {
+          "section": "To serve",
+          "items": ["Buttered rye bread (optional)"]
+        }
+      ],
+      "steps": [
+        "Melt the butter in a large pot over medium heat. Cook the leek and carrot for 6 minutes until soft but not coloured.",
+        "Add the potatoes, bay leaf and stock. Bring to the boil, then simmer for 12 to 15 minutes, until the potatoes are just tender.",
+        "Pour in the cream and bring back to a gentle simmer. Add the white fish and salmon and poach gently, without boiling, for 4 to 5 minutes, until just opaque and flaking.",
+        "Remove the bay leaf. Stir in most of the dill and the lemon juice gently, so the fish doesn't break up, and season with salt and white pepper.",
+        "Ladle into bowls, top with the rest of the dill and serve with buttered rye bread."
+      ],
+      "notes": ["A few cooked prawns added at the end make it a feast.", "Check the stock label if you need this gluten-free."]
+    },
+    {
+      "id": "lamb-pumpkin-feta-salad",
+      "title": "Lamb, Pumpkin and Feta Salad",
+      "summary": "Cumin-spiced lamb over roast pumpkin, rocket, feta and toasted seeds with a honey dressing.",
+      "cuisine": "modern-australian",
+      "mealTypes": ["dinner", "lunch"],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "seasons": ["autumn", "winter"],
+      "diets": ["no-gluten"],
+      "ingredients": [
+        {
+          "section": "Lamb and pumpkin",
+          "items": [
+            "800g butternut pumpkin, peeled and cut into 2cm wedges",
+            "1 red onion, cut into wedges",
+            "3 tbsp olive oil",
+            "1 tsp salt",
+            "600g lamb leg steaks",
+            "2 tsp ground cumin"
+          ]
+        },
+        {
+          "section": "Dressing",
+          "items": ["3 tbsp extra virgin olive oil", "1 tbsp balsamic vinegar", "1 tsp honey", "1 tsp Dijon mustard"]
+        },
+        {
+          "section": "Salad",
+          "items": ["120g rocket", "100g feta, crumbled", "2 tbsp pepitas, toasted", "Handful of mint leaves"]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (200°C fan-forced). Toss the pumpkin and onion with 2 tbsp of the oil and half the salt on a lined tray. Roast for 30 to 35 minutes, turning once, until tender and caramelised at the edges.",
+        "Rub the lamb with the remaining oil and salt and the cumin. Leave at room temperature while the pumpkin roasts.",
+        "Whisk the dressing ingredients together with a pinch of salt.",
+        "Heat a frying pan or chargrill over high heat. Cook the lamb for 3 to 4 minutes each side for medium. Rest on a board for 5 minutes, then slice thickly.",
+        "Toss the rocket with half the dressing and spread over a platter. Top with the warm pumpkin and onion, the lamb and any resting juices, the feta, pepitas and mint. Drizzle with the rest of the dressing."
+      ],
+      "notes": [
+        "Lamb backstrap is a tender, quick-cooking swap for the leg steaks; cook it 3 minutes each side.",
+        "Leftovers make a great packed lunch with a handful of cooked grains through it."
+      ]
+    },
+    {
+      "id": "philly-cheesesteak",
+      "title": "Philly Cheesesteak",
+      "summary": "Thin-sliced steak, soft onions and capsicum under melted cheese, stuffed into a long roll.",
+      "cuisine": "american",
+      "mealTypes": ["dinner", "lunch"],
+      "difficulty": "easy",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "600g scotch fillet steak",
+            "2 tbsp neutral oil",
+            "2 brown onions, thinly sliced",
+            "1 green capsicum, thinly sliced",
+            "1 tsp salt",
+            "1/2 tsp black pepper",
+            "1 tsp Worcestershire sauce",
+            "8 slices Swiss cheese (or provolone)",
+            "4 long sub rolls, split",
+            "20g butter, softened"
+          ]
+        }
+      ],
+      "steps": [
+        "Put the steak in the freezer for 20 minutes, then slice it as thinly as you can across the grain.",
+        "Heat 1 tbsp oil in a large frying pan over medium heat. Cook the onions and capsicum with a pinch of the salt for 10 minutes, stirring, until soft and golden. Tip onto a plate.",
+        "Turn the heat to high and add the rest of the oil. Add the steak in a single layer, season with the remaining salt and the pepper, and cook for 2 to 3 minutes, turning and chopping it with the edge of a spatula, until browned. Stir in the Worcestershire and return the onions and capsicum.",
+        "Divide the mixture into four long piles in the pan, lay two slices of cheese over each and cover with a lid for 1 minute to melt.",
+        "Meanwhile, butter the cut sides of the rolls and toast them in a hot pan or under the grill. Slide a spatula under each pile of steak and cheese and tip it into a roll. Serve hot."
+      ],
+      "notes": [
+        "Thin slicing is everything here. Many butchers will slice the steak for you.",
+        "Mozzarella or tasty cheese melt well if you can't find provolone."
+      ]
+    }
+  ]
+}

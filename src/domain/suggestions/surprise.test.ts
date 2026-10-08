@@ -35,6 +35,9 @@ describe('Surprise me', () => {
     assert.equal(pickSurprise({ ...base, recipes: two, planned: new Set(['a']), recentlyCooked: ['b'], random: () => 0 })?.id, 'b');
   });
   it('returns nothing only when the hard rules leave nothing', () => {
-    assert.equal(pickSurprise({ ...base, filters: { ...NO_FILTERS, cuisines: ['scandinavian'], time: 'under-30' } }), undefined);
+    // Made-up recipes, so a new catalogue recipe can't fill the gap this filter relies on.
+    const two = [makeRecipe('a', ['1 egg']), makeRecipe('b', ['1 egg'])];
+    assert.equal(pickSurprise({ ...base, recipes: two, filters: { ...NO_FILTERS, cuisines: ['scandinavian'] } }), undefined);
+    assert.ok(pickSurprise({ ...base, recipes: two }));
   });
 });

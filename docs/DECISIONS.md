@@ -388,3 +388,14 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
 - **Added dependency:** `expo-apple-authentication` (native; `ios.usesAppleSignIn` switches on the capability at the next EAS build).
 - **Waits for Lachlan:** applying the migration, and the dashboard steps in `docs/ACCOUNTS.md` (anonymous sign-ins, manual linking, Apple provider, the email templates showing the code, custom SMTP).
 - **Why:** an account only earns its place when it gives something back (a backup, a second phone, a household that survives a new phone), and asking up front costs people at the door. Apple and email codes have no password to forget.
+
+## D-044 · New house recipes come in batches, as drafts until Lachlan approves them
+
+- **Date:** 8 October 2026 · **Decided by:** Lachlan asked; Claude designed
+- **Decision:** new recipes credited to The Pantry (`source: 'house'`), separate from the 285 converted from the old app, are written as one JSON file per batch in `scripts/data/house-recipes/` (`batch-01.json`, `batch-02.json`, ...). `npm run catalogue:convert` reads every batch in file-name order (`scripts/house-recipes.mts`) and appends them after the converted recipes, so a new batch never moves or changes an existing recipe. `npm run catalogue:check-house` checks the batches without the old app.
+  - **Shape:** each entry is the recipe as a cook writes it: ingredient lines and steps as text, parsed by the same parser as everything else (D-021). Edits to a house recipe are made in its batch file, not in `recipe-fixes.json` (that file corrects the old app's text, D-014).
+  - **Stricter than the conversion:** every ingredient line must match the ingredient database, no line may name two ingredients (alternatives go in brackets), ids and titles must be new, and there are no em dashes. The author states the expected diets and the build fails if the ingredients say otherwise.
+  - **Gating:** every new recipe is `provenance: 'ai-draft'`, so store builds hide it (D-008, D-036) while development and preview builds show it. Once Lachlan has reviewed or cooked one, adding `"provenance": "reviewed"` (or `"vetted"`) to its entry ships it.
+  - **Photos:** none yet. A recipe with no photo shows its cuisine's tint and the cooking icon (`RecipeImage`), with no photo credit or "AI-generated photo" label, as Bibimbap already does.
+- **First batch:** 50 recipes (`batch-01.json`) across all 25 cuisines: 31 dinners, 8 lunches, 7 breakfasts and 4 snacks by main meal (many fit more than one). No new ingredients were needed.
+- **Why:** one file per batch keeps each batch reviewable on its own and scales to thousands without touching the converter again; appending keeps the old recipes byte-for-byte stable; and drafts stay out of the store until a person has checked them.
