@@ -94,3 +94,11 @@ describe('why this', () => {
     assert.equal(reasons[1]?.value, 'In your Cookmarks');
   });
 });
+
+describe('the first card (BUG-27)', () => {
+  it('follows the soft rules like a spin: not something planned or just cooked', () => {
+    const pool = [quick, dinner, slow];
+    const first = spinLanding(pool, { current: undefined, planned: new Set(['quick']), recentlyCooked: ['dinner'], shown: [] }, () => 0);
+    assert.equal(first?.id, 'slow');
+  });
+});

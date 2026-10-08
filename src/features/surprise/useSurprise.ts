@@ -46,10 +46,15 @@ export function useSurprise() {
   }, [entries, log]);
 
   // The card on show: the one last landed on while it's still in the deck,
-  // otherwise a random first card, so changing a setting never shows a stale
-  // dish. The seed is fixed per visit, so planning it doesn't reshuffle it.
+  // otherwise a first card chosen like any spin's landing (not planned, not
+  // cooked lately: BUG-27), so changing a setting never shows a stale dish.
+  // The seed is fixed per visit, so planning it doesn't reshuffle it.
   const [seed] = useState(Math.random);
-  const current = useMemo(() => pool.find((r) => r.id === currentId) ?? pool[Math.floor(seed * pool.length)], [pool, currentId, seed]);
+  const [leaveAtOpen] = useState(leave);
+  const current = useMemo(
+    () => pool.find((r) => r.id === currentId) ?? spinLanding(pool, { ...leaveAtOpen, current: undefined, shown: [] }, () => seed),
+    [pool, currentId, seed, leaveAtOpen],
+  );
 
   const reasons = useMemo(() => {
     if (!current) return [];
