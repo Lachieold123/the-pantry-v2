@@ -15,6 +15,20 @@ type Book = { mine: MyRecipeView[]; get: (id: string) => Recipe | undefined; all
 let cache: { source: Record<string, MyRecipe>; shared: Record<string, MyRecipe>; book: Book } | undefined;
 
 /**
+ * Builds one recipe, or skips it if it can't be read. Rows are checked when
+ * they arrive (domain/recipes/stored), but data saved on the phone before that
+ * check existed must not take every screen down either (SEC-05).
+ */
+function safeBuild(r: MyRecipe): BuiltDraft | undefined {
+  try {
+    return buildRecipe(r.id, r.draft, r.source, INGREDIENTS);
+  } catch (e) {
+    console.warn(`[recipes] skipped a recipe that couldn't be read (${r.id})`, e);
+    return undefined;
+  }
+}
+
+/**
  * `shared` is other household members' own recipes that the shared plan uses
  * (D-039): they can be looked up (planned, shopped for, cooked) but aren't
  * listed as yours.
@@ -23,14 +37,17 @@ function bookFor(recipes: Record<string, MyRecipe>, shared: Record<string, MyRec
   if (cache?.source === recipes && cache.shared === shared) return cache.book;
   const mine = Object.values(recipes)
     .sort((a, b) => b.updatedAt - a.updatedAt)
-    .map((r) => ({ ...r, ...buildRecipe(r.id, r.draft, r.source, INGREDIENTS) }));
+    .flatMap((r) => {
+      const built = safeBuild(r);
+      return built ? [{ ...r, ...built }] : [];
+    });
   const complete = mine.flatMap((m) => (m.recipe ? [m.recipe] : []));
   const byId = new Map(complete.map((r) => [r.id, r]));
   const theirs = new Map(
     Object.values(shared)
       .filter((r) => !recipes[r.id])
       .flatMap((r) => {
-        const built = buildRecipe(r.id, r.draft, r.source, INGREDIENTS).recipe;
+        const built = safeBuild(r)?.recipe;
         return built ? [[r.id, built] as const] : [];
       }),
   );

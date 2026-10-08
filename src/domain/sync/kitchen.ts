@@ -3,7 +3,9 @@
 // The kitchen is the part that moves between scopes: it syncs with the
 // household when you're in one, and with your account when you're not (D-043).
 import type { CupboardItem } from '../cupboard/match';
-import type { ISODate, PlanEntry } from '../plan/week';
+import type { Quantity } from '../ingredients/quantity';
+import { UNITS, type UnitId } from '../ingredients/units';
+import { isISODate, type ISODate, type PlanEntry } from '../plan/week';
 import { EMPTY_EDITS, type ListExtra, type WeekListEdits } from '../shopping/derive';
 import type { Row } from './types';
 
@@ -39,7 +41,22 @@ export function kitchenRecords(k: SharedKitchen, put: Put): void {
 }
 
 const SLOTS = new Set(['breakfast', 'lunch', 'dinner']);
+const CUPBOARD_SOURCES = new Set<CupboardItem['source']>(['manual', 'shop', 'list', 'scan', 'receipt', 'import']);
 const isObj = (v: unknown): v is Record<string, unknown> => typeof v === 'object' && v !== null;
+const validServings = (v: unknown): v is number => typeof v === 'number' && Number.isInteger(v) && v >= 1 && v <= 50;
+const isAmount = (v: unknown): v is Quantity =>
+  (typeof v === 'number' && Number.isFinite(v) && v > 0) ||
+  (isObj(v) && typeof v.min === 'number' && typeof v.max === 'number' && Number.isFinite(v.min) && Number.isFinite(v.max));
+
+/** An extra from a row: only the fields an extra has, each only if it's the right type (SEC-05). */
+function extraFrom(id: string, d: Record<string, unknown>, updatedAt: number): ListExtra {
+  const extra: ListExtra = { id, text: String(d.text).slice(0, 200), addedAt: typeof d.addedAt === 'number' ? d.addedAt : updatedAt };
+  if (typeof d.ingredientId === 'string') extra.ingredientId = d.ingredientId;
+  if (isAmount(d.quantity)) extra.quantity = d.quantity;
+  if (typeof d.unit === 'string' && d.unit in UNITS) extra.unit = d.unit as UnitId;
+  if (typeof d.recipeId === 'string') extra.recipeId = d.recipeId;
+  return extra;
+}
 
 /** Rebuilds the kitchen from rows. Rows that don't make sense (another app version, a bad write) are skipped. */
 export function kitchenFromRows(rows: Iterable<Row>): SharedKitchen {
@@ -52,8 +69,7 @@ export function kitchenFromRows(rows: Iterable<Row>): SharedKitchen {
     if (r.deleted || !isObj(r.data)) continue;
     const d = r.data;
     if (r.kind === 'plan') {
-      if (typeof d.recipeId !== 'string' || typeof d.day !== 'string' || !SLOTS.has(String(d.slot)) || typeof d.servings !== 'number')
-        continue;
+      if (typeof d.recipeId !== 'string' || !isISODate(d.day) || !SLOTS.has(String(d.slot)) || !validServings(d.servings)) continue;
       entries.push({ id: r.key, recipeId: d.recipeId, day: d.day, slot: d.slot as PlanEntry['slot'], servings: d.servings });
     } else if (r.kind === 'tick' || r.kind === 'removal') {
       const [w, key] = splitWeekKey(r.key);
@@ -61,16 +77,14 @@ export function kitchenFromRows(rows: Iterable<Row>): SharedKitchen {
       if (!w || !key || typeof value !== 'string') continue;
       week(w)[r.kind === 'tick' ? 'checked' : 'removed'][key] = value;
     } else if (r.kind === 'extra') {
-      if (typeof d.week !== 'string' || typeof d.text !== 'string') continue;
-      const { week: w, checked, ...rest } = d;
-      const extra = { ...rest, id: r.key, text: d.text, addedAt: typeof d.addedAt === 'number' ? d.addedAt : r.updatedAt } as ListExtra;
-      week(w).extras.push(extra);
-      if (checked === true) week(w).checkedExtras.push(r.key);
+      if (!isISODate(d.week) || typeof d.text !== 'string') continue;
+      week(d.week).extras.push(extraFrom(r.key, d, r.updatedAt));
+      if (d.checked === true) week(d.week).checkedExtras.push(r.key);
     } else if (r.kind === 'cupboard') {
       cupboard.push({
         ingredientId: r.key,
         addedAt: typeof d.addedAt === 'number' ? d.addedAt : r.updatedAt,
-        source: (d.source as CupboardItem['source']) ?? 'manual',
+        source: CUPBOARD_SOURCES.has(d.source as CupboardItem['source']) ? (d.source as CupboardItem['source']) : 'manual',
       });
     } else if (r.kind === 'recipe') {
       recipes[r.key] = d;

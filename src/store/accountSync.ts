@@ -16,6 +16,7 @@ import type { UnitSystem } from '@/domain/ingredients/format';
 import type { TimeFilter } from '@/domain/recipes/search';
 import type { CuisineId } from '@/domain/recipes/types';
 import type { Shelf } from '@/domain/cupboard/cookable';
+import { storedRecipes } from '@/domain/recipes/stored';
 import {
   changedRows,
   KITCHEN_KINDS,
@@ -32,7 +33,7 @@ import { useAccount } from './account';
 import { useCookLog } from './cookLog';
 import { useCupboard } from './cupboard';
 import { useHousehold } from './household';
-import { useMyRecipes, type MyRecipe } from './myRecipes';
+import { useMyRecipes } from './myRecipes';
 import { usePlan } from './plan';
 import { usePreferences } from './preferences';
 import { useSaved } from './saved';
@@ -76,7 +77,6 @@ export function accountSnapshot(): Snapshot {
 }
 
 const isObj = (v: unknown): v is Record<string, unknown> => typeof v === 'object' && v !== null;
-const isMyRecipe = (v: unknown): v is MyRecipe => isObj(v) && typeof v.id === 'string' && isObj(v.draft);
 
 /** Settings from rows, each only if it looks right: a row from a newer app version mustn't break this one. */
 function applyPrefs(prefs: Personal['prefs']): void {
@@ -102,9 +102,8 @@ function applyAccount(rows: Row[]): void {
     hidden: [...p.hidden],
     recentlyViewed: [...p.recent],
   });
-  useMyRecipes.setState({
-    recipes: Object.fromEntries(Object.entries(p.myRecipes).filter(([, r]) => isMyRecipe(r))) as Record<string, MyRecipe>,
-  });
+  // Checked like a household's shared recipes: a malformed row is skipped, not a crash (SEC-05).
+  useMyRecipes.setState({ recipes: storedRecipes(p.myRecipes) });
   useCookLog.setState({ log: [...p.cookLog] });
   applyPrefs(p.prefs);
   if (kitchenInAccount()) {

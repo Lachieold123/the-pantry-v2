@@ -44,8 +44,11 @@ export const RECENT_KEY = 'list';
 
 export function personalRecords(p: Personal, put: Put): void {
   for (const b of p.bookmarks) put('bookmark', b.recipeId, { savedAt: b.savedAt });
-  for (const c of p.collections)
+  for (const c of p.collections) {
     put('collection', c.id, { name: c.name, recipeIds: [...c.recipeIds], createdAt: c.createdAt, updatedAt: c.updatedAt });
+    // One row per recipe in it too, so two phones adding to the same collection offline both keep theirs (BUG-29).
+    for (const id of c.recipeIds) put('collection', memberKey(c.id, id), {});
+  }
   for (const id of p.hidden) put('hidden', id, {});
   for (const [id, recipe] of Object.entries(p.myRecipes)) put('myrecipe', id, recipe);
   if (p.recent.length) put('recent', RECENT_KEY, { ids: [...p.recent] });
@@ -57,7 +60,22 @@ const isObj = (v: unknown): v is Record<string, unknown> => typeof v === 'object
 const strings = (v: unknown): string[] => (Array.isArray(v) ? v.filter((x): x is string => typeof x === 'string') : []);
 
 /** Rebuilds the personal side from rows, skipping any that don't make sense. Only settings with a row appear in `prefs`. */
+/** A recipe in a collection: "<collection id>|<recipe id>". Neither id ever contains "|". */
+const memberKey = (collection: string, recipe: string) => `${collection}|${recipe}`;
+
+/**
+ * A collection's recipes: its own list, in order, then any recipe another
+ * phone added (a live member row the list doesn't have yet). A recipe whose
+ * member row was removed stays out, even if an older list still names it.
+ */
+function collectionRecipes(list: readonly string[], members: ReadonlyMap<string, boolean> | undefined): string[] {
+  const kept = list.filter((id) => members?.get(id) !== false);
+  const added = [...(members ?? [])].filter(([id, live]) => live && !kept.includes(id)).map(([id]) => id);
+  return [...kept, ...added.sort()];
+}
+
 export function personalFromRows(rows: Iterable<Row>): Personal {
+  const members = new Map<string, Map<string, boolean>>();
   const out = {
     bookmarks: [] as SyncBookmark[],
     collections: [] as SyncCollection[],
@@ -68,6 +86,13 @@ export function personalFromRows(rows: Iterable<Row>): Personal {
     prefs: {} as Partial<Record<SyncedPref, unknown>>,
   };
   for (const r of rows) {
+    if (r.kind === 'collection' && r.key.includes('|')) {
+      const [collection = '', recipe = ''] = r.key.split('|');
+      const map = members.get(collection) ?? new Map<string, boolean>();
+      map.set(recipe, !r.deleted);
+      members.set(collection, map);
+      continue;
+    }
     if (r.deleted || !isObj(r.data)) continue;
     const d = r.data;
     if (r.kind === 'bookmark') {
@@ -90,6 +115,7 @@ export function personalFromRows(rows: Iterable<Row>): Personal {
       if ((SYNCED_PREFS as readonly string[]).includes(r.key) && 'value' in d) out.prefs[r.key as SyncedPref] = d.value;
     }
   }
+  out.collections = out.collections.map((c) => ({ ...c, recipeIds: collectionRecipes(c.recipeIds, members.get(c.id)) }));
   // The same order the stores keep: newest Cookmark first, collections and the log oldest first.
   out.bookmarks.sort((a, b) => b.savedAt - a.savedAt || a.recipeId.localeCompare(b.recipeId));
   out.collections.sort((a, b) => a.createdAt - b.createdAt || a.id.localeCompare(b.id));
