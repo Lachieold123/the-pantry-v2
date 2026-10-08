@@ -70,6 +70,29 @@ Photo states in `seed.dishes.photo`:
 - `{ai, path, credit}`: the AI photo is stored.
 - `rejected.id`: a stock photo judged wrong. It is never offered again.
 
+## Content review (8 October)
+
+All 668 finished recipes were read by four independent reviewers.
+
+**Fixed in place (71):**
+- notes that didn't belong or contradicted the method;
+- wrong cuisine or region labels;
+- titles naming a different dish, such as "Pasta con le Alici" for a sardine recipe.
+
+**Pulled (30)** with `stage = 'failed'` and, if published, `status = 'removed'`. The reason is in `feedback`.
+- 26 for food safety, for example:
+  - taro, cassava or dasheen leaves undercooked;
+  - raw-cured anchovies with no freezing step;
+  - kidney beans not hard-boiled;
+  - unattended overnight simmering;
+  - ackee and buah keluak with no toxicity guidance;
+  - "vegan" text on recipes that use butter.
+- 4 that were the same dish posted twice by the same cook.
+
+**Still open:** about 120 problems that won't make anyone ill. These are dishes that aren't really what they're called, quantities or times that are off, and ingredients missing from the list. Captions and steps still use some of the old titles. These need Lachlan's call: pull them, or send them back to be rewritten with the reviewer's note.
+
+**The ingredient-check queue is cleared.** The 44 `needs-review` extras were settled, erring strict (a doubtful ingredient is tagged with the allergen group, never left out). Wrong aliases became new ingredients, and pots and whole dishes were rejected. Each decision is in `review_note`.
+
 ## What it costs
 
 Everything runs on Haiku 4.5. A finished recipe costs about 1.7 US cents: writing it, the tester pass, any ingredient check, and the photo check. Retries are included. The photo check sends Pexels' 280 × 200 thumbnails, about a tenth of the tokens the larger previews cost.
