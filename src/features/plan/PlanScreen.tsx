@@ -20,7 +20,8 @@ import { useToast } from '@/ui/patterns/Toast';
 import { IconButton } from '@/ui/primitives/IconButton';
 import { Screen } from '@/ui/primitives/Screen';
 import { Text } from '@/ui/primitives/Text';
-import { CHROME, PLAN, SPACE } from '@/ui/tokens/type';
+import { PLAN } from '@/ui/tokens/plan';
+import { CHROME, ICON, SPACE } from '@/ui/tokens/type';
 import { DaySlots } from './DaySlots';
 import { DaySuggestions, ListSummaryCard, WeekProgress } from './PlanParts';
 import { WeekStrip } from './WeekStrip';
@@ -69,7 +70,14 @@ export function PlanScreen() {
           kicker="Plan"
           title="Your week"
           action={
-            <IconButton icon="share" shape="chip" size={18} label="Send the week’s plan" onPress={() => void share()} testID="plan-share" />
+            <IconButton
+              icon="share"
+              shape="chip"
+              size={ICON.standard}
+              label="Send the week’s plan"
+              onPress={() => void share()}
+              testID="plan-share"
+            />
           }
         >
           <View style={{ marginTop: PLAN.afterProgress - SPACE.xxs }}>

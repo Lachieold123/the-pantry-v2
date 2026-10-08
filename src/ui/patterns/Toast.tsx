@@ -18,7 +18,7 @@ import { Icon } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { FIXED } from '@/ui/tokens/colour';
-import { MOTION, RADIUS, SHADOW, SPACE, TAP_TARGET } from '@/ui/tokens/type';
+import { ICON, MOTION, RADIUS, SHADOW, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 
 type ToastInput = { message: string; undo?: () => void };
 type ToastState = ToastInput & { id: number };
@@ -114,7 +114,7 @@ function ToastView({ toast, floor, onDone }: { toast: ToastState; floor: number 
       pointerEvents="box-none"
     >
       <View style={styles.toast} testID="toast">
-        <Icon name="checkCircle" size={18} tone={FIXED.toastInk} />
+        <Icon name="checkCircle" size={ICON.standard} tone={FIXED.toastInk} />
         <Text variant="toast" tone={FIXED.toastInk} style={{ flexShrink: 1 }} numberOfLines={4}>
           {toast.message}
         </Text>

@@ -134,7 +134,27 @@ export const TYPE = {
 export type TextVariant = keyof typeof TYPE;
 
 /** Screen gutter is 20, the recipe sheet and Cook Mode use 24. */
-export const SPACE = { xxs: 4, xs: 8, sm: 12, md: 16, lg: 24, xl: 32, xxl: 48, xxxl: 64, gutter: 20, sheet: 24 } as const;
+/**
+ * The spacing scale. The fine steps (hair to field) are v1's exact gaps and
+ * insets, kept as tokens so screens never write a number (REL-21).
+ */
+export const SPACE = {
+  hair: 2,
+  fine: 3,
+  xxs: 4,
+  snug: 6,
+  pillY: 7,
+  xs: 8,
+  sm: 12,
+  field: 14,
+  md: 16,
+  lg: 24,
+  xl: 32,
+  xxl: 48,
+  xxxl: 64,
+  gutter: 20,
+  sheet: 24,
+} as const;
 
 export const RADIUS = { xs: 6, sm: 10, md: 12, lg: 14, xl: 16, card: 18, sheetSmall: 22, big: 24, sheet: 32, pill: 999 } as const;
 
@@ -153,6 +173,21 @@ export const SHADOW = {
 export const MOTION = { quick: 180, standard: 240, slow: 320, toast: 2500 } as const;
 
 /** Minimum tap target, in points. */
+/** Icon sizes, smallest to largest (REL-21: no raw numbers on screens). */
+export const ICON = {
+  dot: 10,
+  badge: 11,
+  hint: 12,
+  meta: 13,
+  chip: 14,
+  small: 16,
+  standard: 18,
+  row: 20,
+  drawer: 22,
+  nav: 24,
+  large: 26,
+  menu: 28,
+} as const;
 export const TAP_TARGET = 44;
 /**
  * How far Dynamic Type may grow each size of text. Body text reaches 200%
@@ -228,40 +263,10 @@ export const RECIPE = {
   iconDisc: 30,
   byline: 32,
   heroButton: 44,
-} as const;
-
-/** The Plan tab (spec §4.11–4.13): day cells, slot cards, suggestion cards, the progress track. */
-/** The Plan tab (spec §4.11–4.13): v1's sizes and the space between its sections. */
-export const PLAN = {
-  dayWidth: 52,
-  dayHeight: 70,
-  dot: 4,
-  thumb: 56,
-  suggestion: 158,
-  progress: 4,
-  slotPad: 10,
-  /** Space under each part of the page, top to bottom. */
-  afterProgress: 14,
-  afterStrip: 22,
-  afterDayName: 10,
-  afterSlots: 28,
-  afterSectionHead: 14,
-  afterRail: 24,
-  /** Suggestion card body and the shopping card. */
-  cardBodyX: 12,
-  cardBodyTop: 10,
-  cardBodyBottom: 12,
-  listCardY: 14,
-  chipX: 10,
-  chipY: 5,
-  rowY: 14,
-  rowX: 16,
-  aisleGap: 18,
-  chipGap: 6,
-  pillY: 6,
-  /** The small gap between a card's title and its meta, and the servings pill's height padding. */
-  hair: 2,
-  addRowMin: 48,
+  /** "You have" pill and action rows: v1's insets. */
+  pillLeft: 5,
+  actionGap: 5,
+  tilePadX: 10,
 } as const;
 
 /** v1's cupboard "jar" chip (spec §4.7). */
@@ -269,31 +274,3 @@ export const JAR = { gap: 7, padY: 6, padX: 9, initial: 12, matchBody: 14 } as c
 
 /** Pressed feedback: the original dims, it never scales cards. */
 export const PRESSED = { card: 0.94, row: 0.7, subtle: 0.85 } as const;
-
-/** The Surprise me deck and motion (spec §4.19, §6). v1's numbers, kept so it moves the same. */
-export const SURPRISE = {
-  heroMax: 320,
-  peekMax: 260,
-  /** A peek card is this share of the stage width. */
-  peekShare: 0.78,
-  radius: 22,
-  stagePadX: 28,
-  cornerInset: 18,
-  cornerRule: 24,
-  cornerGap: 10,
-  labelTop: 30,
-  labelBottom: 22,
-  metaGap: 6,
-  peek: { x: 22, xOpen: 30, y: 14, yOpen: 18, tilt: 7, tiltOpen: 11 },
-  tick: { x: 8, tilt: 2, scale: 0.97, ms: 140 },
-  settle: { scale: 1.04, ms: 220, backMs: 200 },
-  driftMs: 400,
-  hintMs: 250,
-  hintDim: 0.4,
-  iconMs: 600,
-  iconTurns: 720,
-  /** Bezier control points: the settle overshoots a little; the drift eases out. */
-  settleCurve: [0.34, 1.56, 0.64, 1],
-  driftCurve: [0.2, 0.7, 0.3, 1],
-  reasonKeyWidth: 78,
-} as const;

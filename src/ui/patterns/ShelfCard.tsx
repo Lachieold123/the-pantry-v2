@@ -4,7 +4,7 @@ import { Pressable, View } from 'react-native';
 
 import { Text } from '@/ui/primitives/Text';
 import { FIXED } from '@/ui/tokens/colour';
-import { CARD, PRESSED, RADIUS } from '@/ui/tokens/type';
+import { CARD, PRESSED, RADIUS, SPACE } from '@/ui/tokens/type';
 import { PhotoScrim } from './PhotoScrim';
 import { RecipeImage } from './RecipeImage';
 
@@ -22,7 +22,7 @@ export function ShelfCard({ title, count, image, cuisine, onPress, testID }: Pro
     >
       <RecipeImage source={image} shape="card" cuisine={cuisine} radius={RADIUS.card} iconSize={40}>
         <PhotoScrim kind="shelfBottom" />
-        <View style={{ position: 'absolute', left: 0, right: 0, bottom: 0, padding: CARD.shelfBody, gap: 2 }} pointerEvents="none">
+        <View style={{ position: 'absolute', left: 0, right: 0, bottom: 0, padding: CARD.shelfBody, gap: SPACE.hair }} pointerEvents="none">
           <Text variant="onPhotoSmall" tone={FIXED.onPhoto} numberOfLines={2}>
             {title}
           </Text>

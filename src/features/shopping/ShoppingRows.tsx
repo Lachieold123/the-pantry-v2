@@ -12,7 +12,8 @@ import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { textStyle } from '@/ui/theme/fonts';
 import { useTheme } from '@/ui/theme/ThemeProvider';
-import { PLAN, RADIUS, SPACE, TYPE } from '@/ui/tokens/type';
+import { PLAN } from '@/ui/tokens/plan';
+import { ICON, RADIUS, SPACE, TYPE } from '@/ui/tokens/type';
 
 export function ListCard({ title, children }: { title?: string | undefined; children: ReactNode }) {
   const styles = useStyles();
@@ -46,7 +47,7 @@ export function ShoppingRow({ label, detail, checked, first, onToggle, onRemove,
       <View style={{ flex: 1 }}>
         <Checkbox label={label} {...(detail ? { detail } : {})} checked={checked} onToggle={onToggle} testID={testID} />
       </View>
-      <IconButton icon="close" label={removeLabel} onPress={onRemove} colour="inkMuted" size={16} testID={`${testID}-remove`} />
+      <IconButton icon="close" label={removeLabel} onPress={onRemove} colour="inkMuted" size={ICON.small} testID={`${testID}-remove`} />
     </View>
   );
 }
@@ -62,7 +63,7 @@ export function AddItemRow({ onAdd }: { onAdd: (text: string) => void }) {
   };
   return (
     <View style={[styles.row, styles.addRow]}>
-      <Icon name="add" size={18} colour="inkMuted" />
+      <Icon name="add" size={ICON.standard} colour="inkMuted" />
       <TextInput
         value={text}
         onChangeText={setText}
@@ -95,7 +96,7 @@ export function Pill({ label, icon, on = false, onPress, testID, role = 'button'
       testID={testID}
       style={({ pressed }) => [styles.pill, on && styles.pillOn, pressed && { opacity: 0.7 }]}
     >
-      {icon ? <Icon name={icon} size={14} colour={on ? 'bg' : 'inkMuted'} /> : null}
+      {icon ? <Icon name={icon} size={ICON.chip} colour={on ? 'bg' : 'inkMuted'} /> : null}
       <Text variant="chipSmall" colour={on ? 'bg' : 'ink'}>
         {label}
       </Text>

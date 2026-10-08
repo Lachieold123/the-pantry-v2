@@ -8,7 +8,7 @@ import { Avatar } from '@/ui/primitives/Avatar';
 import { Icon, type IconName } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
-import { RADIUS, RECIPE, SMALL_CONTROL, SPACE, TAP_TARGET, slopFor } from '@/ui/tokens/type';
+import { ICON, RADIUS, RECIPE, slopFor, SMALL_CONTROL, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 
 type Props = {
   recipe: Recipe;
@@ -77,7 +77,7 @@ export function RecipeHeader(p: Props) {
           hitSlop={slopFor(SMALL_CONTROL)}
           style={({ pressed }) => [styles.cookPill, p.cooked && styles.cookPillOn, pressed && styles.pressed]}
         >
-          <Icon name={p.cooked ? 'checkCircle' : 'cook'} size={18} colour={p.cooked ? 'onAccent' : 'ink'} />
+          <Icon name={p.cooked ? 'checkCircle' : 'cook'} size={ICON.standard} colour={p.cooked ? 'onAccent' : 'ink'} />
           <Text variant="chip" colour={p.cooked ? 'onAccent' : 'ink'}>
             {p.cooked ? 'Cooked' : 'Cook'}
           </Text>
@@ -107,7 +107,7 @@ export function RecipeHeader(p: Props) {
           style={({ pressed }) => [styles.cta, pressed && styles.pressed]}
         >
           <View style={styles.ctaDisc}>
-            <Icon name="flame" size={18} colour="bg" />
+            <Icon name="flame" size={ICON.standard} colour="bg" />
           </View>
           <View style={{ flex: 1 }}>
             <Text variant="cardTitleMedium" colour="bg">
@@ -117,7 +117,7 @@ export function RecipeHeader(p: Props) {
               Guided, one step at a time
             </Text>
           </View>
-          <Icon name="arrowForward" size={18} colour="bg" />
+          <Icon name="arrowForward" size={ICON.standard} colour="bg" />
         </Pressable>
       ) : null}
     </View>
@@ -146,7 +146,7 @@ function Action({
       testID={testID}
       style={({ pressed }) => [styles.action, pressed && styles.pressed]}
     >
-      <Icon name={icon} size={20} colour={on ? 'accentText' : 'ink'} />
+      <Icon name={icon} size={ICON.row} colour={on ? 'accentText' : 'ink'} />
       <Text variant="meta" colour="ink">
         {label}
       </Text>
@@ -158,7 +158,7 @@ function Tile({ icon, value, unit, label, on = false }: { icon: IconName; value:
   const styles = useStyles();
   return (
     <View style={styles.tile} accessible accessibilityLabel={`${label}: ${value}${unit ? ` ${unit}` : ''}`}>
-      <Icon name={icon} size={18} colour={on ? 'accentText' : 'inkSoft'} />
+      <Icon name={icon} size={ICON.standard} colour={on ? 'accentText' : 'inkSoft'} />
       <View style={styles.tileValue}>
         <Text variant="infoValue" colour={on ? 'accentText' : 'ink'}>
           {value}
@@ -180,19 +180,19 @@ const useStyles = makeStyles(({ colours }) => ({
   wrap: { gap: SPACE.md },
   titleRow: { flexDirection: 'row', alignItems: 'flex-start', gap: SPACE.sm },
   editPill: {
-    marginTop: 6,
-    paddingHorizontal: 14,
+    marginTop: SPACE.snug,
+    paddingHorizontal: SPACE.field,
     paddingVertical: SPACE.xs,
     borderRadius: RADIUS.pill,
     backgroundColor: colours.accentSoft,
   },
   byline: { flexDirection: 'row', alignItems: 'center', gap: SPACE.sm - 2 },
-  actions: { flexDirection: 'row', alignItems: 'center', gap: 2 },
-  action: { flexDirection: 'row', alignItems: 'center', gap: 5, paddingHorizontal: 6, minHeight: TAP_TARGET },
+  actions: { flexDirection: 'row', alignItems: 'center', gap: SPACE.hair },
+  action: { flexDirection: 'row', alignItems: 'center', gap: RECIPE.actionGap, paddingHorizontal: SPACE.snug, minHeight: TAP_TARGET },
   cookPill: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 6,
+    gap: SPACE.snug,
     paddingHorizontal: SPACE.sm,
     minHeight: SMALL_CONTROL,
     borderRadius: RADIUS.pill,
@@ -204,18 +204,18 @@ const useStyles = makeStyles(({ colours }) => ({
   tiles: {
     flexDirection: 'row',
     gap: SPACE.xs,
-    paddingVertical: 14,
-    paddingHorizontal: 10,
+    paddingVertical: SPACE.field,
+    paddingHorizontal: RECIPE.tilePadX,
     borderRadius: RADIUS.big,
     backgroundColor: colours.bgSoft,
   },
-  tile: { flex: 1, alignItems: 'center', gap: 6 },
+  tile: { flex: 1, alignItems: 'center', gap: SPACE.snug },
   tileValue: { flexDirection: 'row', alignItems: 'baseline', gap: SPACE.xxs },
   cta: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: SPACE.sm,
-    paddingVertical: 14,
+    paddingVertical: SPACE.field,
     paddingHorizontal: SPACE.md,
     borderRadius: RADIUS.pill,
     backgroundColor: colours.ink,

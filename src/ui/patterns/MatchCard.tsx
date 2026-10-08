@@ -13,7 +13,7 @@ import { Text } from '@/ui/primitives/Text';
 import { useTheme } from '@/ui/theme/ThemeProvider';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { cuisineEyebrow } from '@/ui/tokens/cuisine';
-import { CARD, JAR, PRESSED, RADIUS, SPACE } from '@/ui/tokens/type';
+import { CARD, ICON, JAR, PRESSED, RADIUS, SPACE } from '@/ui/tokens/type';
 import { RecipeImage } from './RecipeImage';
 
 type Props = { recipe: Recipe; image: number | undefined; ready: boolean; need: string; onPress: () => void; testID: string };
@@ -34,7 +34,7 @@ export function MatchCard({ recipe, image, ready, need, onPress, testID }: Props
     >
       <RecipeImage source={image} shape="square" cuisine={recipe.cuisine} radius={0} iconSize={40}>
         <View style={styles.pill}>
-          <Icon name={ready ? 'check' : 'basket'} size={11} colour="bg" />
+          <Icon name={ready ? 'check' : 'basket'} size={ICON.badge} colour="bg" />
           <Text variant="badge" colour="bg">
             {pill}
           </Text>

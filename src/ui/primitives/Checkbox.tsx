@@ -2,7 +2,7 @@
 import { Pressable, StyleSheet, View } from 'react-native';
 
 import { makeStyles } from '@/ui/theme/makeStyles';
-import { RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
+import { ICON, RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 import { Icon } from './Icon';
 import { Text } from './Text';
 
@@ -27,7 +27,7 @@ export function Checkbox({ label, detail, checked, onToggle, testID, strikeWhenC
       {...(testID ? { testID } : {})}
       style={styles.row}
     >
-      <View style={[styles.box, checked && styles.boxOn]}>{checked ? <Icon name="check" size={14} colour="bg" /> : null}</View>
+      <View style={[styles.box, checked && styles.boxOn]}>{checked ? <Icon name="check" size={ICON.chip} colour="bg" /> : null}</View>
       <Text
         variant="body"
         colour={checked && strikeWhenChecked ? 'inkMuted' : 'ink'}

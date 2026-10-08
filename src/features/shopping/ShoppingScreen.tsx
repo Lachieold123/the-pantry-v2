@@ -21,7 +21,8 @@ import { useToast } from '@/ui/patterns/Toast';
 import { IconButton } from '@/ui/primitives/IconButton';
 import { Text } from '@/ui/primitives/Text';
 import { Screen } from '@/ui/primitives/Screen';
-import { CHROME, PLAN, SPACE, TAP_TARGET } from '@/ui/tokens/type';
+import { PLAN } from '@/ui/tokens/plan';
+import { CHROME, ICON, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 import { ShoppingListView } from './ShoppingListView';
 import { Pill } from './ShoppingRows';
 
@@ -66,7 +67,7 @@ export function ShoppingScreen() {
             <IconButton
               icon="share"
               shape="chip"
-              size={18}
+              size={ICON.standard}
               label="Send the shopping list"
               onPress={() => void share()}
               testID="shopping-share"

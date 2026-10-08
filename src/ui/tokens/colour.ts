@@ -159,6 +159,8 @@ export const THEMES: Readonly<Record<ThemeName, { normal: ColourTokens; highCont
 
 /** Colours that are the same in every theme because they sit on photos, video or fixed cream surfaces. */
 export const FIXED = {
+  /** A screen that draws nothing behind itself (the side menu's modal). */
+  clear: 'transparent',
   onPhoto: '#FFFFFF',
   onPhotoCream: '#F7F3EA',
   onPhotoMuted: 'rgba(255,255,255,0.85)',

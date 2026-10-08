@@ -4,7 +4,7 @@
 import { Pressable } from 'react-native';
 
 import { makeStyles } from '@/ui/theme/makeStyles';
-import { RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
+import { ICON, RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 import { Icon, type IconName } from './Icon';
 import { Text } from './Text';
 
@@ -32,11 +32,11 @@ export function Chip({ label, selected, onPress, kind = 'filter', icon, role = '
       hitSlop={{ top: 4, bottom: 4 }}
       style={({ pressed }) => [styles.chip, kind !== 'filter' && styles.soft, selected && styles.selected, pressed && styles.pressed]}
     >
-      {icon ? <Icon name={icon} size={14} colour={ink} /> : null}
+      {icon ? <Icon name={icon} size={ICON.chip} colour={ink} /> : null}
       <Text variant="chip" colour={ink}>
         {label}
       </Text>
-      {kind === 'dropdown' ? <Icon name="down" size={14} colour={ink} /> : null}
+      {kind === 'dropdown' ? <Icon name="down" size={ICON.chip} colour={ink} /> : null}
     </Pressable>
   );
 }
@@ -46,14 +46,14 @@ const useStyles = makeStyles(({ colours }) => ({
     minHeight: 40,
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 6,
+    gap: SPACE.snug,
     paddingHorizontal: SPACE.md,
     borderRadius: RADIUS.pill,
     borderWidth: 1,
     borderColor: colours.border,
     backgroundColor: colours.bg,
   },
-  soft: { backgroundColor: colours.bgSoft, paddingHorizontal: 14 },
+  soft: { backgroundColor: colours.bgSoft, paddingHorizontal: SPACE.field },
   selected: { backgroundColor: colours.ink, borderColor: colours.ink },
   pressed: { opacity: 0.8 },
   target: { minHeight: TAP_TARGET },

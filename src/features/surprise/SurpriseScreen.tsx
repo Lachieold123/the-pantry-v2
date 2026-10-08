@@ -17,7 +17,8 @@ import { Button } from '@/ui/primitives/Button';
 import { Icon } from '@/ui/primitives/Icon';
 import { Screen } from '@/ui/primitives/Screen';
 import { Text } from '@/ui/primitives/Text';
-import { SPACE, SURPRISE } from '@/ui/tokens/type';
+import { SURPRISE } from '@/ui/tokens/surprise';
+import { ICON, SPACE } from '@/ui/tokens/type';
 import { SpinDeck } from './SpinDeck';
 import { HowItWorks, SettingChips, SurpriseHeader, WhyThis } from './SurpriseParts';
 import { useSurprise } from './useSurprise';
@@ -135,7 +136,7 @@ export function SurpriseScreen() {
             accessibilityElementsHidden
             importantForAccessibility="no-hide-descendants"
           >
-            <Icon name="hand" size={13} colour="inkMuted" />
+            <Icon name="hand" size={ICON.meta} colour="inkMuted" />
             <Text variant="hint" colour="inkMuted">
               {spinning ? 'Spinning…' : 'Tap card to spin'}
             </Text>

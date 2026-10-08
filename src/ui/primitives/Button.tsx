@@ -7,7 +7,7 @@ import { ActivityIndicator, Pressable, View } from 'react-native';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { useTheme } from '@/ui/theme/ThemeProvider';
 import type { ColourTokens } from '@/ui/tokens/colour';
-import { RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
+import { ICON, RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 import { Icon, type IconName } from './Icon';
 import { Text } from './Text';
 
@@ -73,11 +73,15 @@ export function Button({
       ]}
     >
       <View style={styles.row}>
-        {busy ? <ActivityIndicator size="small" color={colours[ink]} /> : icon ? <Icon name={icon} size={18} colour={ink} /> : null}
+        {busy ? (
+          <ActivityIndicator size="small" color={colours[ink]} />
+        ) : icon ? (
+          <Icon name={icon} size={ICON.standard} colour={ink} />
+        ) : null}
         <Text variant={size === 'lg' ? 'labelLarge' : 'label'} colour={ink}>
           {label}
         </Text>
-        {trailingIcon ? <Icon name={trailingIcon} size={16} colour={ink} /> : null}
+        {trailingIcon ? <Icon name={trailingIcon} size={ICON.small} colour={ink} /> : null}
       </View>
     </Pressable>
   );

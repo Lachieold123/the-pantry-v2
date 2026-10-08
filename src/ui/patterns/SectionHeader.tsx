@@ -16,7 +16,7 @@ export function SectionHeader({ kicker, title, tone = 'muted', action, inset = f
         alignItems: 'flex-end',
         justifyContent: 'space-between',
         gap: SPACE.sm,
-        paddingBottom: 14,
+        paddingBottom: SPACE.field,
         paddingHorizontal: inset ? SPACE.gutter : 0,
       }}
     >

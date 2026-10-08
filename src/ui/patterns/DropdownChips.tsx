@@ -10,7 +10,7 @@ import { Chip } from '@/ui/primitives/Chip';
 import { Icon } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
-import { PRESSED, SPACE, TAP_TARGET } from '@/ui/tokens/type';
+import { ICON, PRESSED, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 
 export type DropdownOption = { value: string; label: string };
 export type Dropdown = { key: string; name: string; value: string | undefined; options: readonly DropdownOption[] };
@@ -78,7 +78,7 @@ function OptionRow({ label, on, onPress, testID }: { label: string; on: boolean;
       <Text variant="row" style={{ flex: 1 }}>
         {label}
       </Text>
-      {on ? <Icon name="check" size={18} /> : null}
+      {on ? <Icon name="check" size={ICON.standard} /> : null}
     </Pressable>
   );
 }

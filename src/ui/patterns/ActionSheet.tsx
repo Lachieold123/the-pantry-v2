@@ -5,7 +5,7 @@ import { Pressable, View } from 'react-native';
 import { Icon, type IconName } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
-import { MOTION, RADIUS, SPACE } from '@/ui/tokens/type';
+import { ICON, MOTION, RADIUS, SPACE } from '@/ui/tokens/type';
 import { ModalSheet } from './ModalSheet';
 
 export type SheetAction = { label: string; icon: IconName; onPress: () => void; destructive?: boolean; testID: string };
@@ -30,7 +30,7 @@ export function ActionSheet({ visible, onClose, title, actions }: Props) {
           style={({ pressed }) => [styles.row, pressed && styles.pressed]}
         >
           <View style={styles.disc}>
-            <Icon name={a.icon} size={18} colour={a.destructive ? 'danger' : 'inkSoft'} />
+            <Icon name={a.icon} size={ICON.standard} colour={a.destructive ? 'danger' : 'inkSoft'} />
           </View>
           <Text variant="row" colour={a.destructive ? 'danger' : 'ink'}>
             {a.label}

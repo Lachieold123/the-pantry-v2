@@ -5,7 +5,7 @@ import { Pressable, TextInput, View } from 'react-native';
 import { textStyle } from '@/ui/theme/fonts';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { useTheme } from '@/ui/theme/ThemeProvider';
-import { RADIUS, SPACE, TYPE } from '@/ui/tokens/type';
+import { ICON, RADIUS, SPACE, TYPE } from '@/ui/tokens/type';
 import { Icon } from './Icon';
 
 type Props = {
@@ -24,7 +24,7 @@ export function SearchField({ value, onChange, placeholder, label, onSubmit, aut
   const { colours } = useTheme();
   return (
     <View style={styles.box}>
-      <Icon name="search" size={18} colour="inkMuted" />
+      <Icon name="search" size={ICON.standard} colour="inkMuted" />
       <TextInput
         value={value}
         onChangeText={onChange}
@@ -51,7 +51,7 @@ export function SearchField({ value, onChange, placeholder, label, onSubmit, aut
           hitSlop={12}
           {...(testID ? { testID: `${testID}-clear` } : {})}
         >
-          <Icon name="clear" size={18} colour="inkMuted" />
+          <Icon name="clear" size={ICON.standard} colour="inkMuted" />
         </Pressable>
       ) : null}
     </View>
@@ -65,7 +65,7 @@ const useStyles = makeStyles(({ colours }) => ({
     flexDirection: 'row',
     alignItems: 'center',
     gap: SPACE.xs,
-    paddingHorizontal: 14,
+    paddingHorizontal: SPACE.field,
     borderRadius: RADIUS.lg,
     borderWidth: 1,
     borderColor: colours.border,

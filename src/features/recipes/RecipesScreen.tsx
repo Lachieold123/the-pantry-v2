@@ -25,7 +25,7 @@ import { SearchField } from '@/ui/primitives/SearchField';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { useTheme } from '@/ui/theme/ThemeProvider';
-import { RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
+import { ICON, RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 import { BrowseSections } from './BrowseSections';
 import { useRecipeResults } from './useRecipeResults';
 import { useAllowance } from '@/store/pro';
@@ -71,7 +71,7 @@ export function RecipesScreen({ focusSearch = false }: { focusSearch?: boolean }
           <IconButton
             icon="add"
             shape="chip"
-            size={18}
+            size={ICON.standard}
             label="Add a recipe"
             onPress={() => allowed('my-recipes') && router.push('/my-recipe/edit')}
             testID="browse-add-recipe"
@@ -113,7 +113,7 @@ export function RecipesScreen({ focusSearch = false }: { focusSearch?: boolean }
               <Text variant="chip" colour="bg" numberOfLines={1}>
                 {shown.label}
               </Text>
-              <Icon name="close" size={14} colour="bg" />
+              <Icon name="close" size={ICON.chip} colour="bg" />
             </Pressable>
           ) : null}
           <Text variant="meta" accessibilityLiveRegion="polite" style={{ flex: 1 }}>
@@ -188,8 +188,8 @@ const useStyles = makeStyles(({ colours }) => ({
     gap: SPACE.xs,
     maxWidth: '70%',
     paddingLeft: SPACE.sm,
-    paddingRight: SPACE.xs + 2,
-    paddingVertical: 7,
+    paddingRight: SPACE.xs + SPACE.hair,
+    paddingVertical: SPACE.pillY,
     borderRadius: RADIUS.pill,
     backgroundColor: colours.ink,
   },

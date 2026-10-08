@@ -31,7 +31,7 @@ import { TextField } from '@/ui/primitives/TextField';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { FIXED } from '@/ui/tokens/colour';
 import { PLATE } from '@/ui/tokens/screens';
-import { PRESSED, RADIUS, SPACE } from '@/ui/tokens/type';
+import { ICON, PRESSED, RADIUS, SPACE } from '@/ui/tokens/type';
 
 const SUGGEST = 3;
 
@@ -97,7 +97,7 @@ export function PostScreen() {
               testID="post-add-photo"
               style={({ pressed }) => [styles.addTile, pressed && { opacity: PRESSED.row }]}
             >
-              <Icon name="camera" size={26} />
+              <Icon name="camera" size={ICON.large} />
               <Text variant="chip">Add photo</Text>
             </Pressable>
           ) : null}
@@ -112,7 +112,7 @@ export function PostScreen() {
                 testID={`post-remove-photo-${i}`}
                 style={styles.removeDisc}
               >
-                <Icon name="close" size={14} tone={FIXED.photoDiscInk} />
+                <Icon name="close" size={ICON.chip} tone={FIXED.photoDiscInk} />
               </Pressable>
             </View>
           ))}

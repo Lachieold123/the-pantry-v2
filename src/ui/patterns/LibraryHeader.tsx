@@ -15,7 +15,7 @@ import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { useTheme } from '@/ui/theme/ThemeProvider';
 import { LIBRARY, libraryColours } from '@/ui/tokens/library';
-import { SPACE } from '@/ui/tokens/type';
+import { ICON, SPACE } from '@/ui/tokens/type';
 
 /** "1 recipe", "3 recipes". */
 export type CountUnit = readonly [singular: string, plural: string];
@@ -84,7 +84,7 @@ export function LibraryPushedHead({ kicker, title, count, action }: PushedProps)
   return (
     <View style={styles.pushed}>
       <View style={styles.pushedBack}>
-        <IconButton icon="back" label="Back" shape="square" size={24} onPress={() => goBack(router)} testID="back" />
+        <IconButton icon="back" label="Back" shape="square" size={ICON.nav} onPress={() => goBack(router)} testID="back" />
       </View>
       <View style={styles.pushedText}>
         <Text variant="kicker" colour="accentText">

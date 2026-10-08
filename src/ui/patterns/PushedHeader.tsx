@@ -7,7 +7,7 @@ import { View } from 'react-native';
 
 import { IconButton } from '@/ui/primitives/IconButton';
 import { Text } from '@/ui/primitives/Text';
-import { SPACE } from '@/ui/tokens/type';
+import { ICON, SPACE } from '@/ui/tokens/type';
 import { goBack } from '@/lib/navigation';
 
 type Props = {
@@ -37,12 +37,12 @@ export function PushedHeader({ kicker, title, action, onBack, inset = false, sur
           icon="back"
           label="Back"
           shape={surface === 'bgSoft' ? 'squareOnSoft' : 'square'}
-          size={24}
+          size={ICON.nav}
           onPress={onBack ?? (() => goBack(router))}
           testID="back"
         />
       </View>
-      <View style={{ flex: 1, gap: 2 }}>
+      <View style={{ flex: 1, gap: SPACE.hair }}>
         {kicker ? (
           <Text variant="kicker" colour="accentText">
             {kicker}

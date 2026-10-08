@@ -24,7 +24,8 @@ import { Text } from '@/ui/primitives/Text';
 import { useTheme } from '@/ui/theme/ThemeProvider';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { cuisineEyebrow } from '@/ui/tokens/cuisine';
-import { PLAN, RADIUS, SPACE } from '@/ui/tokens/type';
+import { PLAN } from '@/ui/tokens/plan';
+import { ICON, RADIUS, SPACE } from '@/ui/tokens/type';
 import { usePlanAhead } from '@/store/pro';
 
 const SLOT_NAMES: Record<Slot, string> = { breakfast: 'Breakfast', lunch: 'Lunch', dinner: 'Dinner' };
@@ -55,7 +56,7 @@ export function DaySlots({ day, entries, past }: { day: ISODate; entries: readon
                   testID={`plan-add-${day}-${slot}`}
                   style={({ pressed }) => [styles.empty, pressed && styles.pressed]}
                 >
-                  <Icon name="add" size={16} colour="inkSoft" />
+                  <Icon name="add" size={ICON.small} colour="inkSoft" />
                   <Text variant="chip" colour="inkSoft">{`Add ${SLOT_NAMES[slot].toLowerCase()}`}</Text>
                 </Pressable>
               ) : null}
@@ -91,7 +92,7 @@ function SlotCard({ entry, past }: { entry: PlanEntry; past: boolean }) {
           label="Remove from plan"
           onPress={remove}
           colour="inkMuted"
-          size={16}
+          size={ICON.small}
           testID={`plan-entry-${entry.id}-remove`}
         />
       </View>
@@ -144,7 +145,7 @@ function SlotCard({ entry, past }: { entry: PlanEntry; past: boolean }) {
             label={`Take ${recipe.title} off the plan`}
             onPress={remove}
             colour="inkMuted"
-            size={16}
+            size={ICON.small}
             testID={`plan-entry-${entry.id}-remove`}
           />
         )}

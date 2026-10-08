@@ -17,7 +17,7 @@ import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { useTheme } from '@/ui/theme/ThemeProvider';
 import { FIXED } from '@/ui/tokens/colour';
-import { CHROME, MOTION, SHADOW, SPACE } from '@/ui/tokens/type';
+import { CHROME, ICON, MOTION, SHADOW, SPACE } from '@/ui/tokens/type';
 import { useKeyboardShown } from './useKeyboardShown';
 import { usePlanBadge } from './useCounts';
 import { useToBuyThisWeek } from '@/store/shoppingList';
@@ -104,7 +104,7 @@ export function TabBar({ state, navigation }: TabBarProps) {
           accessibilityLabel="Share a dish you cooked"
           style={({ pressed }) => [styles.fab, pressed && styles.pressed]}
         >
-          <Icon name="add" size={26} colour="bg" />
+          <Icon name="add" size={ICON.large} colour="bg" />
         </Pressable>
         {button(2)}
         {button(3)}

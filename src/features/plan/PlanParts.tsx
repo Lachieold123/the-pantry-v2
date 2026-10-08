@@ -19,7 +19,8 @@ import { Text } from '@/ui/primitives/Text';
 import { useTheme } from '@/ui/theme/ThemeProvider';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { cuisineEyebrow } from '@/ui/tokens/cuisine';
-import { PLAN, RADIUS, SPACE } from '@/ui/tokens/type';
+import { PLAN } from '@/ui/tokens/plan';
+import { ICON, RADIUS, SPACE } from '@/ui/tokens/type';
 import { usePlanAhead } from '@/store/pro';
 
 const RAIL = 8;
@@ -168,7 +169,7 @@ export function ListSummaryCard({ list, meals, onOpen }: SummaryProps) {
           </View>
         ) : null}
       </View>
-      <Icon name="forward" size={20} colour="bg" />
+      <Icon name="forward" size={ICON.row} colour="bg" />
     </Pressable>
   );
 }

@@ -38,7 +38,7 @@ const useStyles = makeStyles(({ colours }) => ({
   wrap: { gap: SPACE.xs },
   input: {
     minHeight: TAP_TARGET,
-    paddingHorizontal: 14,
+    paddingHorizontal: SPACE.field,
     borderRadius: RADIUS.lg,
     borderWidth: 1,
     borderColor: colours.border,

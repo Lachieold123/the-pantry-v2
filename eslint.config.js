@@ -17,6 +17,18 @@ const noColourLiterals = {
       message: 'Use a colour token from src/ui/tokens instead of an rgb() value.',
     },
     {
+      // Sizes and spacing are tokens too (REL-21): no numeric font size, padding, margin or gap
+      // outside src/ui/tokens. 0 and 1 (hairlines) are fine.
+      selector:
+        'Property[key.name=/^(fontSize|lineHeight|gap|rowGap|columnGap|padding|paddingTop|paddingBottom|paddingLeft|paddingRight|paddingHorizontal|paddingVertical|margin|marginTop|marginBottom|marginLeft|marginRight|marginHorizontal|marginVertical)$/] > Literal[value>1]',
+      message: 'Use a size or spacing token from src/ui/tokens instead of a number.',
+    },
+    {
+      selector:
+        'Property[key.name=/^(fontSize|lineHeight|gap|padding|paddingTop|paddingBottom|paddingLeft|paddingRight|paddingHorizontal|paddingVertical|margin|marginTop|marginBottom|marginLeft|marginRight|marginHorizontal|marginVertical)$/] > UnaryExpression > Literal[value>1]',
+      message: 'Use a size or spacing token from src/ui/tokens instead of a number.',
+    },
+    {
       // A store hook with no selector re-renders on every change to that store (audit PERF-1).
       selector: 'CallExpression[callee.name=/^use(Preferences|Plan|Saved|Cupboard|CookLog|MyRecipes|RecipeFilters|WelcomeBack|Account|Household)$/][arguments.length=0]',
       message: 'Pass a selector (or useShallow) so the component only re-renders for what it reads.',

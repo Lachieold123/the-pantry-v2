@@ -9,7 +9,7 @@ import { textStyle } from '@/ui/theme/fonts';
 import { useTheme } from '@/ui/theme/ThemeProvider';
 import { PANTRY_CATEGORY, PANTRY_CATEGORY_DARK, PANTRY_CHIP_INK, PANTRY_CHIP_INK_DARK, type PantryCategory } from '@/ui/tokens/cuisine';
 import { CUPBOARD } from '@/ui/tokens/cupboard';
-import { JAR, PRESSED, RADIUS, SPACE, TYPE } from '@/ui/tokens/type';
+import { ICON, JAR, PRESSED, RADIUS, SPACE, TYPE } from '@/ui/tokens/type';
 
 type Props = { name: string; category: PantryCategory; onRemove: () => void; testID: string };
 
@@ -45,7 +45,7 @@ export function JarChip({ name, category, onRemove, testID }: Props) {
       </Text>
       {/* The × is quieter than the initial (v1: 55%): it's there to be found, not to shout. */}
       <View style={{ opacity: CUPBOARD.jarCloseOpacity }}>
-        <Icon name="close" size={11} tone={c.bold} />
+        <Icon name="close" size={ICON.badge} tone={c.bold} />
       </View>
     </Pressable>
   );

@@ -6,7 +6,7 @@ import { Pressable, View } from 'react-native';
 import { Icon, type IconName } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
-import { PRESSED, RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
+import { ICON, PRESSED, RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 
 const WAYS: {
   label: string;
@@ -33,7 +33,7 @@ export function WaysIn() {
           testID={w.testID}
           style={({ pressed }) => [styles.way, pressed && { opacity: PRESSED.row }]}
         >
-          <Icon name={w.icon} size={20} />
+          <Icon name={w.icon} size={ICON.row} />
           <Text variant="chip" align="center" numberOfLines={1} maxFontSizeMultiplier={1.3}>
             {w.label}
           </Text>

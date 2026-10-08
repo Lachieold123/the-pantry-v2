@@ -22,7 +22,7 @@ import { useTheme } from '@/ui/theme/ThemeProvider';
 import type { ColourTokens } from '@/ui/tokens/colour';
 import { cuisineTint } from '@/ui/tokens/cuisine';
 import { FILTERS, FILTER_TINTS } from '@/ui/tokens/screens';
-import { PRESSED, RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
+import { ICON, PRESSED, RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 import { useRecipeResults } from './useRecipeResults';
 
 const DIETS: readonly { value: DietPreference; label: string }[] = [
@@ -91,7 +91,7 @@ export function FiltersScreen() {
   return (
     <View style={styles.page} testID="filters-screen">
       <View style={styles.head}>
-        <IconButton icon="back" label="Back" shape="squareOnSoft" size={24} onPress={() => goBack(router)} testID="filters-back" />
+        <IconButton icon="back" label="Back" shape="squareOnSoft" size={ICON.nav} onPress={() => goBack(router)} testID="filters-back" />
         <Text variant="titleSansLarge" accessibilityRole="header" style={styles.title}>
           {'Refine your\nrotation'}
         </Text>

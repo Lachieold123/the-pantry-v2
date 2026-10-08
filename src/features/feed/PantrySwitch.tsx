@@ -12,7 +12,7 @@ import { IconButton } from '@/ui/primitives/IconButton';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { HOME } from '@/ui/tokens/screens';
-import { PRESSED, RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
+import { ICON, PRESSED, RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 
 type Props = {
   mode: HomeMode;
@@ -44,7 +44,7 @@ export function PantrySwitch({ mode, onMode, ready, stocked, onCupboard, onSearc
             testID="home-mode-pantry"
             style={({ pressed }) => [styles.segment, styles.pantrySegment, pantry && styles.pantryOn, pressed && styles.pressed]}
           >
-            <Icon name="basket" size={18} colour={pantry ? 'accentDeep' : 'inkMuted'} />
+            <Icon name="basket" size={ICON.standard} colour={pantry ? 'accentDeep' : 'inkMuted'} />
             <Text
               variant="label"
               colour={pantry ? 'accentDeep' : 'inkMuted'}

@@ -30,7 +30,8 @@ import { useToast } from '@/ui/patterns/Toast';
 import { Chip } from '@/ui/primitives/Chip';
 import { Icon } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
-import { PLAN, SPACE } from '@/ui/tokens/type';
+import { PLAN } from '@/ui/tokens/plan';
+import { ICON, SPACE } from '@/ui/tokens/type';
 import { undoClear } from '@/domain/shopping/extras';
 import { AddItemRow, itemLabel, ListCard, Pill, ShoppingRow } from './ShoppingRows';
 
@@ -152,7 +153,7 @@ export function ShoppingListView({ week, weekLabel, onPlan }: { week: ISODate; w
           testID="shopping-restore"
           style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: SPACE.xxs, paddingVertical: PLAN.rowY }}
         >
-          <Icon name="refresh" size={13} colour="inkSoft" />
+          <Icon name="refresh" size={ICON.meta} colour="inkSoft" />
           <Text variant="meta" colour="inkSoft">
             {`Restore ${list.removedCount} removed ${list.removedCount === 1 ? 'item' : 'items'}`}
           </Text>
