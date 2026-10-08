@@ -3,7 +3,8 @@ import { describe, it } from 'node:test';
 
 import { catalogue, index, makeRecipe } from '../testing/fixtures';
 import { containsAvoided, deriveDiets, fitsDietPreference } from './diets';
-import { countActiveFilters, editDistance, indexForSearch, matchesFilters, NO_FILTERS, searchRecipes, seasonOn } from './search';
+import { countActiveFilters, indexForSearch, matchesFilters, NO_FILTERS, searchRecipes, seasonOn } from './search';
+import { editDistance } from './searchWords';
 import { allLines } from './types';
 import { substitutionFor, SUBSTITUTION_IDS } from './substitutions';
 import { validateRecipe } from './validate';
@@ -201,5 +202,23 @@ describe('substitutions', () => {
   });
   it('makes no allergy promises', () => {
     for (const id of SUBSTITUTION_IDS) assert.doesNotMatch(substitutionFor(id) ?? '', /gluten-free|allergy|safe for/i, id);
+  });
+});
+
+describe('search finds other names and spellings (BUG-14)', () => {
+  const searchIndex = indexForSearch(catalogue, (c) => c, index);
+  const count = (q: string) => searchRecipes(searchIndex, q).length;
+  it('finds as many dishes under the US or British name as the Australian one', () => {
+    assert.ok(count('shrimp') >= count('prawn'), 'shrimp');
+    assert.ok(count('cilantro') >= count('coriander'), 'cilantro');
+    assert.ok(count('aubergine') >= count('eggplant'), 'aubergine');
+    assert.ok(count('courgette') >= count('zucchini'), 'courgette');
+    assert.ok(count('chili') >= count('chilli'), 'chili');
+    assert.ok(count('barbecue') >= count('bbq'), 'barbecue');
+    assert.ok(count('aubergine') > 0);
+  });
+  it('still keeps typo help and the pasta/paste rule', () => {
+    assert.ok(count('chiken') > 0);
+    assert.ok(searchRecipes(searchIndex, 'pasta').every((r) => !/curry/i.test(r.title) || /pasta/i.test(r.title)));
   });
 });

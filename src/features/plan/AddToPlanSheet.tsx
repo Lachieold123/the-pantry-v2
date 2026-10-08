@@ -1,9 +1,10 @@
 // Add a meal to a chosen day: saved recipes first, then search the catalogue.
 import { useRouter } from 'expo-router';
-import { useMemo, useState } from 'react';
+import { useDeferredValue, useMemo, useState } from 'react';
 import { View } from 'react-native';
 
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
+import { INGREDIENTS } from '@/data/catalogue/catalogue';
 import { CUISINE_LABELS } from '@/domain/recipes/labels';
 import { indexForSearch, searchRecipes } from '@/domain/recipes/search';
 import type { Recipe } from '@/domain/recipes/types';
@@ -45,11 +46,12 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
   const hidden = useSaved((s) => s.hidden);
   const [slot, setSlot] = useState<Slot>(() => SLOTS.find((s) => s.value === requestedSlot)?.value ?? 'dinner');
   const [query, setQuery] = useState('');
+  const searching = useDeferredValue(query);
   const all = useAllRecipes();
   const getRecipe = useRecipeLookup();
   // Search only what this cook eats: diet and avoid are hard rules here too (BUG-07).
   const eatable = useEatableRecipes();
-  const searchIndex = useMemo(() => indexForSearch(eatable, (c) => CUISINE_LABELS[c]), [eatable]);
+  const searchIndex = useMemo(() => indexForSearch(eatable, (c) => CUISINE_LABELS[c], INGREDIENTS), [eatable]);
 
   // Saved recipes for this meal only: arancini isn't a breakfast. Search still finds anything.
   const saved = useMemo(
@@ -60,9 +62,9 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
   // The whole ranked catalogue, then filtered by meal: a top-75 cut left breakfast with one idea.
   const forYou = useForYou(all.length, slot);
   const results = useMemo(() => {
-    const pool = query.trim() ? searchRecipes(searchIndex, query) : forYou.filter((r) => r.mealTypes.includes(slot));
+    const pool = searching.trim() ? searchRecipes(searchIndex, searching) : forYou.filter((r) => r.mealTypes.includes(slot));
     return pool.filter((r) => !hidden.includes(r.id)).slice(0, MAX_RESULTS);
-  }, [query, slot, hidden, searchIndex, forYou]);
+  }, [searching, slot, hidden, searchIndex, forYou]);
 
   const dayName = day === toISODate(new Date()) ? 'today' : (longDate(fromISODate(day)).split(' ')[0] ?? day);
   const pick = (recipe: Recipe) =>
