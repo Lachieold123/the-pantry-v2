@@ -10,6 +10,7 @@ import { Pressable, View } from 'react-native';
 import { INGREDIENTS } from '@/data/catalogue/catalogue';
 import { AISLE_LABELS } from '@/domain/recipes/labels';
 import {
+  capitalise,
   clearList,
   countToBuy,
   EMPTY_EDITS,
@@ -159,6 +160,16 @@ export function ShoppingListView({ week, weekLabel, onPlan }: { week: ISODate; w
       <InCupboard
         items={list.inCupboard}
         onBack={(item) => {
+          // A stand-in or a shelf item isn't in the cupboard itself: asking for it puts it on the list.
+          if (item.coveredBy) {
+            const extra = { id: newId(), text: capitalise(item.name), ingredientId: item.key, addedAt: Date.now() };
+            edit((e) => ({ ...e, extras: [...e.extras, extra] }));
+            toast({
+              message: `${capitalise(item.name)} is on the list`,
+              undo: () => edit((e) => ({ ...e, extras: e.extras.filter((x) => x.id !== extra.id) })),
+            });
+            return;
+          }
           removeFromCupboard(item.key);
           toast({ message: `${item.name} is back on the list`, undo: () => addToCupboard([item.key], 'manual') });
         }}
@@ -167,7 +178,13 @@ export function ShoppingListView({ week, weekLabel, onPlan }: { week: ISODate; w
   );
 }
 
-/** Things left off because you have them: shown quietly, never dropped (D-010). Tap one to put it back. */
+const ingredientName = (id: string) => INGREDIENTS.byId.get(id)?.name ?? id;
+
+/**
+ * Things left off because you have them: shown quietly, never dropped (D-010). A stand-in names
+ * what you have instead, "White onion (brown onion)"; shelf items are the ones you're assumed to keep.
+ * Tap one to put it back.
+ */
 function InCupboard({ items, onBack }: { items: ShoppingItem[]; onBack: (item: ShoppingItem) => void }) {
   const others = items.filter((i) => !INGREDIENTS.byId.get(i.key)?.staple);
   if (others.length === 0) return null;
@@ -183,7 +200,9 @@ function InCupboard({ items, onBack }: { items: ShoppingItem[]; onBack: (item: S
             key={item.key}
             kind="quick"
             icon="add"
-            label={itemLabel(item)}
+            label={
+              item.coveredBy && item.coveredBy !== 'shelf' ? `${itemLabel(item)} (${ingredientName(item.coveredBy)})` : itemLabel(item)
+            }
             selected={false}
             onPress={() => onBack(item)}
             testID={`shopping-back-${item.key}`}

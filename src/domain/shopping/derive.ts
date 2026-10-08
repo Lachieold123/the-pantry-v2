@@ -6,11 +6,15 @@
 import { AISLES, normaliseWords, type AisleId, type IngredientIndex } from '../ingredients/database';
 import type { UnitSystem } from '../ingredients/format';
 import { formatQuantity } from '../ingredients/format';
-import { addQuantities, mapQuantity, upper, type Quantity } from '../ingredients/quantity';
+import { mapQuantity, type Quantity } from '../ingredients/quantity';
 import type { IngredientLine } from '../ingredients/types';
-import { convert, UNITS, type UnitId } from '../ingredients/units';
+import { UNITS, type UnitId } from '../ingredients/units';
 import type { PlanEntry } from '../plan/week';
 import { allLines, type Recipe } from '../recipes/types';
+import { listKey, mergeAmounts, wholeFruitLines } from './amounts';
+import { tickHolds, tickValue } from './ticks';
+
+export { asWholeFruit, mergeAmounts } from './amounts';
 
 /**
  * Something added to the list by hand. When it's a known ingredient (from a
@@ -33,7 +37,7 @@ export type ListExtra = {
 
 /** The cook's edits to one week's list. Values record what the edit applied to. */
 export type WeekListEdits = {
-  /** key → the amount text that was ticked. Ticks lapse if the amount changes. */
+  /** key → how much the tick covered (./ticks). Ticks lapse only when more is needed. */
   checked: Record<string, string>;
   /** key → the plan entries it came from when removed. Removals lapse if those change. */
   removed: Record<string, string>;
@@ -52,6 +56,10 @@ export type ShoppingItem = {
   recipeIds: string[];
   optional: boolean;
   checked: boolean;
+  /** What a tick on this line stores: how much it covers, whatever the units (./ticks). */
+  tick: string;
+  /** In the cupboard thanks to a stand-in you have (its id), or a shelf item you're assumed to keep ('shelf'). */
+  coveredBy?: string | undefined;
   /** Identifies which plan entries this line came from, for edit bookkeeping. */
   sourceStamp: string;
 };
@@ -64,61 +72,10 @@ export type ShoppingList = {
   removedCount: number;
 };
 
+/** Whether you already have something: the stand-in you have, 'shelf', or undefined. Same rules as "What I have" (cookable). */
+export type Cover = (id: string) => string | undefined;
+
 type Contribution = { line: IngredientLine; entryId: string; recipeId: string };
-
-const SPOON_OR_CUP: ReadonlySet<UnitId> = new Set(['tsp', 'tbsp', 'cup']);
-
-/** Adds amounts that can be added (D-010): same unit family merges, others sit side by side. */
-export function mergeAmounts(lines: readonly IngredientLine[]): { quantity: Quantity; unit: UnitId | undefined }[] {
-  const families = new Map<string, { quantity: Quantity; unit: UnitId | undefined; units: UnitId[] }>();
-  for (const line of lines) {
-    if (line.quantity === undefined) continue;
-    const unit = line.unit;
-    const kind = unit === undefined ? 'count:none' : UNITS[unit].kind === 'count' ? `count:${unit}` : UNITS[unit].kind;
-    const existing = families.get(kind);
-    if (!existing) {
-      families.set(kind, { quantity: line.quantity, unit, units: unit ? [unit] : [] });
-      continue;
-    }
-    if (unit === undefined || existing.unit === undefined) {
-      existing.quantity = addQuantities(existing.quantity, line.quantity);
-      continue;
-    }
-    // Spoons and cups stay in the largest spoon/cup used; everything else goes to g or ml and is re-displayed later.
-    const allSpoons = [...existing.units, unit].every((u) => SPOON_OR_CUP.has(u));
-    const target: UnitId = allSpoons
-      ? ([...existing.units, unit].sort((a, b) => (UNITS[b].base ?? 0) - (UNITS[a].base ?? 0))[0] as UnitId)
-      : UNITS[unit].kind === 'mass'
-        ? 'g'
-        : UNITS[unit].kind === 'volume'
-          ? 'ml'
-          : unit;
-    const from = existing.unit;
-    const a = mapQuantity(existing.quantity, (n) => convert(n, from, target));
-    const b = mapQuantity(line.quantity, (n) => convert(n, unit, target));
-    existing.quantity = addQuantities(a, b);
-    existing.unit = target;
-    existing.units.push(unit);
-  }
-  return [...families.values()].map(({ quantity, unit }) => ({ quantity, unit }));
-}
-
-/**
- * Roughly how much juice one fruit gives, in millilitres. Recipes ask for
- * "1 tbsp lime juice"; you buy limes, so the list says "Lime, 1" rather than
- * "Lime, 1 tbsp + 1".
- */
-const JUICE_PER_FRUIT_ML: Readonly<Record<string, number>> = { lime: 30, lemon: 45, orange: 80 };
-
-export function asWholeFruit(line: IngredientLine): IngredientLine {
-  const perFruit = line.ingredientId ? JUICE_PER_FRUIT_ML[line.ingredientId] : undefined;
-  const base = line.unit ? UNITS[line.unit].base : undefined;
-  if (!perFruit || line.quantity === undefined || !line.unit || UNITS[line.unit].kind !== 'volume' || base === undefined) return line;
-  const fruits = Math.max(1, Math.ceil((upper(line.quantity) * base) / perFruit - 1e-9));
-  const whole: IngredientLine = { ...line, quantity: fruits };
-  delete whole.unit;
-  return whole;
-}
 
 export function deriveShoppingList(args: {
   entries: readonly PlanEntry[];
@@ -127,39 +84,36 @@ export function deriveShoppingList(args: {
   cupboard: ReadonlySet<string>;
   edits: WeekListEdits;
   units: UnitSystem;
+  /** Stand-ins and shelf items, so the list agrees with "What I have" (BUG-06). Without it only exact matches count. */
+  cover?: Cover | undefined;
 }): ShoppingList {
-  const { entries, getRecipe, index, cupboard, edits, units } = args;
+  const { entries, getRecipe, index, cupboard, edits, units, cover } = args;
   const groups = new Map<string, Contribution[]>();
+  const add = (key: string, c: Contribution) => groups.set(key, [...(groups.get(key) ?? []), c]);
 
   for (const entry of entries) {
     const recipe = getRecipe(entry.recipeId);
     if (!recipe) continue; // A deleted custom recipe simply stops contributing.
     const ratio = entry.servings / recipe.servings;
-    for (const line of allLines(recipe)) {
-      const scaled = asWholeFruit(line.quantity === undefined ? line : { ...line, quantity: mapQuantity(line.quantity, (n) => n * ratio) });
-      const key = line.ingredientId ?? `text:${normaliseWords(line.item).join(' ')}`;
-      const list = groups.get(key) ?? [];
-      list.push({ line: scaled, entryId: entry.id, recipeId: entry.recipeId });
-      groups.set(key, list);
-    }
+    const scaled = allLines(recipe).map((line) =>
+      line.quantity === undefined ? line : { ...line, quantity: mapQuantity(line.quantity, (n) => n * ratio) },
+    );
+    for (const line of wholeFruitLines(scaled)) add(listKey(line), { line, entryId: entry.id, recipeId: entry.recipeId });
   }
 
-  // Known ingredients added by hand join the plan's lines, so they merge and tick like them.
+  // Known ingredients added by hand join the plan's lines, so they merge and tick like them. A recipe's
+  // ingredients added to the list and then planned the same week count once (D-037, BUG-09).
+  const planned = new Set(entries.map((e) => e.recipeId));
   for (const extra of edits.extras) {
-    if (!extra.ingredientId) continue;
-    const list = groups.get(extra.ingredientId) ?? [];
-    list.push({
-      line: {
-        item: extra.text,
-        raw: extra.text,
-        ingredientId: extra.ingredientId,
-        ...(extra.quantity !== undefined ? { quantity: extra.quantity } : {}),
-        ...(extra.unit ? { unit: extra.unit } : {}),
-      },
-      entryId: `extra:${extra.id}`,
-      recipeId: extra.recipeId ?? '',
-    });
-    groups.set(extra.ingredientId, list);
+    if (!extra.ingredientId || (extra.recipeId && planned.has(extra.recipeId))) continue;
+    const line: IngredientLine = {
+      item: extra.text,
+      raw: extra.text,
+      ingredientId: extra.ingredientId,
+      ...(extra.quantity !== undefined ? { quantity: extra.quantity } : {}),
+      ...(extra.unit ? { unit: extra.unit } : {}),
+    };
+    add(extra.ingredientId, { line, entryId: `extra:${extra.id}`, recipeId: extra.recipeId ?? '' });
   }
 
   const bySection = new Map<AisleId, ShoppingItem[]>();
@@ -174,13 +128,15 @@ export function deriveShoppingList(args: {
       continue;
     }
     const name = def?.name ?? contributions[0]?.line.item ?? key;
-    const amount = mergeAmounts(contributions.map((c) => c.line))
+    const merged = mergeAmounts(contributions.map((c) => c.line));
+    const amount = merged
       .map((a) => {
         // "2 leaves bay leaf" reads badly: when the name already says the unit, show just the number.
         const redundant = a.unit !== undefined && UNITS[a.unit].kind === 'count' && normaliseWords(name).includes(UNITS[a.unit].singular);
         return formatQuantity(a.quantity, redundant ? undefined : a.unit, units);
       })
       .join(' + ');
+    const ticked = edits.checked[key];
     const item: ShoppingItem = {
       key,
       name,
@@ -188,15 +144,20 @@ export function deriveShoppingList(args: {
       amount,
       recipeIds: [...new Set(contributions.map((c) => c.recipeId).filter(Boolean))],
       optional: contributions.every((c) => c.line.optional === true),
-      checked: edits.checked[key] === amount,
+      checked: tickHolds(ticked, merged, amount),
+      tick: tickValue(merged),
       sourceStamp,
     };
     // Something you put on the list yourself stays on it, even if the cupboard says you have it:
-    // asking for it is the newer, clearer signal (D-037).
+    // asking for it is the newer, clearer signal (D-037). A line you've ticked stays in its aisle,
+    // so nothing jumps mid-shop; the tick put it in the cupboard, which isn't a reason to hide it.
     const askedFor = contributions.some((c) => c.entryId.startsWith('extra:'));
-    if (!askedFor && (def?.staple || cupboard.has(key))) {
-      inCupboard.push(item);
-      continue;
+    if (!askedFor && ticked === undefined) {
+      const coveredBy = def && !def.staple && !cupboard.has(key) ? cover?.(key) : undefined;
+      if (def?.staple || cupboard.has(key) || coveredBy) {
+        inCupboard.push(coveredBy ? { ...item, coveredBy } : item);
+        continue;
+      }
     }
     const list = bySection.get(item.aisle) ?? [];
     list.push(item);
@@ -212,11 +173,11 @@ export function deriveShoppingList(args: {
   };
 }
 
-/** Tick or untick a line. The tick remembers the amount, so needing more later unticks it. */
+/** Tick or untick a line. The tick remembers how much it covered, so only needing more later unticks it. */
 export function toggleChecked(edits: WeekListEdits, item: ShoppingItem): WeekListEdits {
   const checked = { ...edits.checked };
   if (item.checked) delete checked[item.key];
-  else checked[item.key] = item.amount;
+  else checked[item.key] = item.tick;
   return { ...edits, checked };
 }
 
@@ -235,12 +196,12 @@ export function clearList(edits: WeekListEdits, list: ShoppingList): WeekListEdi
   return { ...edits, removed, extras: [], checkedExtras: [] };
 }
 
-/** Every line in one A–Z list, for when the cook turns "By aisle" off. */
 /** How many things are still to buy: unticked list items and unticked extras. One count for the tab badge, the plan's card and the list's head. */
 export function countToBuy(list: ShoppingList): number {
   return list.sections.reduce((n, s) => n + s.items.filter((i) => !i.checked).length, 0) + list.extras.filter((x) => !x.checked).length;
 }
 
+/** Every line in one A–Z list, for when the cook turns "By aisle" off. */
 export function itemsAtoZ(list: ShoppingList): ShoppingItem[] {
   return list.sections.flatMap((s) => s.items).sort((a, b) => a.name.localeCompare(b.name));
 }

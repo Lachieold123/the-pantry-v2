@@ -8,14 +8,14 @@ import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useState } from 'react';
 import { Pressable, View } from 'react-native';
 
-import { entriesInWeek, fromISODate, toISODate, visibleWeeks } from '@/domain/plan/week';
+import { fromISODate, visibleWeeks } from '@/domain/plan/week';
 import { AISLE_LABELS } from '@/domain/recipes/labels';
 import { formatListForSharing } from '@/domain/shopping/derive';
 import { weekRange } from '@/lib/dates';
 import { shareText } from '@/lib/share';
 import { useHousehold } from '@/store/household';
-import { usePlan } from '@/store/plan';
-import { useWeekList } from '@/store/shoppingList';
+import { useListWeek, useWeekList } from '@/store/shoppingList';
+import { useToday } from '@/lib/today';
 import { TitleBlock } from '@/ui/patterns/TitleBlock';
 import { useToast } from '@/ui/patterns/Toast';
 import { IconButton } from '@/ui/primitives/IconButton';
@@ -31,11 +31,11 @@ export function ShoppingScreen() {
   const router = useRouter();
   const toast = useToast();
   const params = useLocalSearchParams<{ week?: string }>();
-  const entries = usePlan((s) => s.entries);
-  const weeks = visibleWeeks(toISODate(new Date()));
+  const weeks = visibleWeeks(useToday());
+  const defaultWeek = useListWeek();
   const [chosen, setChosen] = useState<Which | undefined>();
   const asked: Which | undefined = params.week === 'next' ? 'next' : params.week === 'this' ? 'this' : undefined;
-  const sundayDefault: Which = new Date().getDay() === 0 && entriesInWeek(entries, weeks.nextWeek).length > 0 ? 'next' : 'this';
+  const sundayDefault: Which = defaultWeek === weeks.nextWeek ? 'next' : 'this';
   // A tap on a pill wins over the link, until the link asks again.
   const which = chosen ?? asked ?? sundayDefault;
   const week = which === 'this' ? weeks.thisWeek : weeks.nextWeek;
