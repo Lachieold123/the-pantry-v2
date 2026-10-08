@@ -154,7 +154,13 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
         have={have}
         onClose={() => setShowIngredients(false)}
       />
-      <UsedUpSheet visible={askUsedUp} ids={used} nameOf={(i) => capitalise(ingredientName(i))} onFinish={finish} />
+      <UsedUpSheet
+        visible={askUsedUp}
+        ids={used}
+        nameOf={(i) => capitalise(ingredientName(i))}
+        onFinish={finish}
+        onCancel={() => setAskUsedUp(false)}
+      />
     </View>
   );
 }
