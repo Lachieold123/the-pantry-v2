@@ -11,12 +11,6 @@ export const PROBLEM_WORDS: Record<Problem, string> = {
   failed: 'Something went wrong. Try again in a moment.',
 };
 
-/** "Sam", "Sam and Alex", "Sam, Alex and Jo". */
-export function namesList(names: readonly string[]): string {
-  if (names.length <= 1) return names[0] ?? '';
-  return `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}`;
-}
-
 export function inviteMessage(code: string): string {
   return `Come and share our kitchen on The Pantry: our plan, shopping list and cupboard.\n\nOpen this on your phone: thepantry://join/${code}\nOr in The Pantry, go to Settings → Household and enter ${code}.`;
 }

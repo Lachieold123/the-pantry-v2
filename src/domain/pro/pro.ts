@@ -19,9 +19,6 @@ export const FREE_LIMITS = {
   scansPerMonth: SCAN_LIMITS.freePerMonth,
 } as const;
 
-/** The yearly plan's introductory offer, set in App Store Connect. The paywall only says it when the store offers it. */
-export const TRIAL_DAYS = 7;
-
 /** A mirror of what RevenueCat says; RevenueCat is the truth (map §5). */
 export type Entitlement = {
   isPro: boolean;

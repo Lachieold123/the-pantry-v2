@@ -2,7 +2,7 @@
 import type { AisleId } from '../ingredients/database';
 import type { AvoidOption, DietPreference } from './diets';
 import type { TimeFilter } from './search';
-import type { CuisineId, DietTag, Difficulty, MealType, Provenance, Recipe } from './types';
+import type { CuisineId, Difficulty, MealType, Provenance, Recipe } from './types';
 
 export const CUISINE_LABELS: Readonly<Record<CuisineId, string>> = {
   italian: 'Italian',
@@ -47,14 +47,6 @@ export const TIME_FILTER_LABELS: Readonly<Record<TimeFilter, string>> = {
   'under-45': '≤ 45 min',
   'under-60': '≤ 1 hr',
   'over-60': 'Over 1 hr',
-};
-
-export const DIET_LABELS: Readonly<Record<DietTag, string>> = {
-  vegetarian: 'Vegetarian',
-  vegan: 'Vegan',
-  pescatarian: 'Pescatarian',
-  'no-gluten': 'No gluten ingredients',
-  'no-dairy': 'No dairy ingredients',
 };
 
 export const AISLE_LABELS: Readonly<Record<AisleId, string>> = {

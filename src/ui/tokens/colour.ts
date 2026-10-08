@@ -175,7 +175,6 @@ export const FIXED = {
   /** The cream recipe cards in Saved and Collections, the same in both modes. */
   libraryCard: '#F7F3EA',
   libraryCardInk: '#0E0E0E',
-  libraryCardMeta: 'rgba(20,18,16,0.55)',
   libraryWell: '#1A1815',
   amberLight: '#E8C891',
   amberRule: 'rgba(232,200,145,0.85)',

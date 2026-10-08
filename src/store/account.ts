@@ -108,8 +108,3 @@ export function watchOffers(): void {
     }),
   ];
 }
-
-export function stopWatchingOffers(): void {
-  for (const stop of offerStops) stop();
-  offerStops = [];
-}
