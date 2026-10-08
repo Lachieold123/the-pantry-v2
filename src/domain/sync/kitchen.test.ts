@@ -5,6 +5,7 @@ import { describe, it } from 'node:test';
 
 import { EMPTY_DRAFT } from '../recipes/draft';
 import { asStoredRecipe, storedRecipes } from '../recipes/stored';
+import { isPastKeeping } from './limits';
 import { changedRows, EMPTY_PERSONAL, kitchenFromRows, mergeRows, personalFromRows, type Row } from './rows';
 
 const row = (kind: Row['kind'], key: string, data: unknown): Row => ({ kind, key, data, deleted: false, updatedAt: 1 });
@@ -77,5 +78,17 @@ describe('collections on two phones (BUG-29)', () => {
   it('still reads a collection written before member rows existed', () => {
     const old = [row('collection', 'c9', { name: 'Old', recipeIds: ['a', 'b'], createdAt: 1, updatedAt: 1 })];
     assert.deepEqual(personalFromRows(old).collections[0]?.recipeIds, ['a', 'b']);
+  });
+});
+
+describe('old weeks leave the mirror (audit, performance)', () => {
+  it('drops plan, tick, removal and extra rows from before the cutoff, and keeps everything else', () => {
+    const cutoff = '2026-08-17';
+    assert.equal(isPastKeeping(row('plan', 'p', { day: '2026-08-10' }), cutoff), true);
+    assert.equal(isPastKeeping(row('plan', 'p', { day: '2026-08-17' }), cutoff), false);
+    assert.equal(isPastKeeping(row('tick', '2026-08-10|milk', { amount: '=' }), cutoff), true);
+    assert.equal(isPastKeeping(row('extra', 'x', { week: '2026-08-10', text: 'Milk' }), cutoff), true);
+    assert.equal(isPastKeeping(row('cupboard', 'egg', {}), cutoff), false);
+    assert.equal(isPastKeeping(row('bookmark', 'pho', {}), cutoff), false);
   });
 });

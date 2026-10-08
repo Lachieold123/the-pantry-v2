@@ -16,7 +16,8 @@
 // scope's store: the engine reads and writes them through its adapter.
 import { AppState } from 'react-native';
 
-import { rowFits, stampAfter } from '@/domain/sync/limits';
+import { pruneCutoff, toISODate } from '@/domain/plan/week';
+import { isPastKeeping, rowFits, stampAfter } from '@/domain/sync/limits';
 import { changedRows, mergeRows, rowId, type Row, type Snapshot } from '@/domain/sync/rows';
 import type { Engine, ScopeAdapter } from './syncTypes';
 
@@ -86,8 +87,11 @@ export function createEngine(scope: ScopeAdapter): Engine {
 
   function receive(rows: readonly Row[]): void {
     const before = scope.read().mirror;
-    const mirror = mergeRows(before, rows);
-    if (mirror === before) return;
+    const merged = mergeRows(before, rows);
+    if (merged === before) return;
+    // Weeks the plan has let go of stay out of the mirror, so it can't grow without end.
+    const cutoff = pruneCutoff(toISODate(new Date()));
+    const mirror = Object.fromEntries(Object.entries(merged).filter(([, r]) => !isPastKeeping(r, cutoff)));
     scope.write({ mirror });
     applyMirror();
   }

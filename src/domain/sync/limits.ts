@@ -41,3 +41,21 @@ export function stampAfter(rows: readonly Row[], seen: Readonly<Record<string, R
     return before && before.updatedAt >= r.updatedAt ? { ...r, updatedAt: before.updatedAt + 1 } : r;
   });
 }
+
+/**
+ * A kitchen row from a week the plan has already pruned (D-009: eight weeks
+ * back). The plan drops those weeks at start-up, but a household's next
+ * rebuild from its rows used to bring them back, and the mirror kept growing
+ * towards Android's storage limit (audit, performance). Such rows are left
+ * out of the mirror; the server still keeps them.
+ */
+export function isPastKeeping(row: Row, cutoff: string): boolean {
+  const data = row.data as Record<string, unknown> | null;
+  if (row.kind === 'plan') return typeof data?.day === 'string' && data.day < cutoff;
+  if (row.kind === 'extra') return typeof data?.week === 'string' && data.week < cutoff;
+  if (row.kind === 'tick' || row.kind === 'removal') {
+    const week = row.key.slice(0, row.key.indexOf('|'));
+    return /^\d{4}-\d{2}-\d{2}$/.test(week) && week < cutoff;
+  }
+  return false;
+}
