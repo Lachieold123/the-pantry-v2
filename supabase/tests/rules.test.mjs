@@ -38,7 +38,9 @@ const db = new PGlite({ extensions: { pgcrypto } });
 await db.exec(SUPABASE_LIKE);
 // UPTO=<file name> loads only the migrations up to that one: run with the last old one to see the exploits work.
 const upto = process.env.UPTO ?? '~';
-for (const file of readdirSync(migrations).filter((f) => f.endsWith('.sql') && f <= upto).sort()) {
+for (const file of readdirSync(migrations)
+  .filter((f) => f.endsWith('.sql') && f <= upto)
+  .sort()) {
   await db.exec(readFileSync(join(migrations, file), 'utf8'));
 }
 
@@ -57,7 +59,10 @@ for (const [name, id] of Object.entries(users)) {
 async function as(user, sql, params = []) {
   const claims = JSON.stringify({ sub: users[user], is_anonymous: user === 'anon' || user === 'mallory' });
   return db.transaction(async (tx) => {
-    await tx.query(`select set_config('request.jwt.claim.sub', $1, true), set_config('request.jwt.claims', $2, true)`, [users[user], claims]);
+    await tx.query(`select set_config('request.jwt.claim.sub', $1, true), set_config('request.jwt.claims', $2, true)`, [
+      users[user],
+      claims,
+    ]);
     await tx.exec('set local role authenticated');
     return tx.query(sql, params);
   });
@@ -70,15 +75,24 @@ const malloryHouse = (await as('mallory', `select public.create_household('Mallo
 
 test('SEC-01: a member cannot move into another household, unfiltered or filtered', async () => {
   await fails(as('mallory', 'update public.household_members set household_id = $1', [aliceHouse]), /permission denied|read-only/);
-  await fails(as('mallory', 'update public.household_members set household_id = $1 where user_id = $2', [aliceHouse, users.mallory]), /permission denied|read-only/);
+  await fails(
+    as('mallory', 'update public.household_members set household_id = $1 where user_id = $2', [aliceHouse, users.mallory]),
+    /permission denied|read-only/,
+  );
   const members = await db.query('select user_id from public.household_members where household_id = $1', [aliceHouse]);
-  assert.deepEqual(members.rows.map((r) => r.user_id), [users.alice]);
+  assert.deepEqual(
+    members.rows.map((r) => r.user_id),
+    [users.alice],
+  );
 });
 
 test('SEC-01: a member can still rename themselves and the household, but not rewrite who made it', async () => {
   await as('alice', `update public.household_members set display_name = 'Al' where user_id = $1`, [users.alice]);
   await as('alice', `update public.households set name = 'Our place' where id = $1`, [aliceHouse]);
-  await fails(as('alice', 'update public.households set created_by = $1 where id = $2', [users.bob, aliceHouse]), /permission denied|read-only/);
+  await fails(
+    as('alice', 'update public.households set created_by = $1 where id = $2', [users.bob, aliceHouse]),
+    /permission denied|read-only/,
+  );
   assert.equal((await db.query('select name from public.households where id = $1', [aliceHouse])).rows[0].name, 'Our place');
 });
 
@@ -89,7 +103,10 @@ test('SEC-04: a stamp far in the future is brought back, and later writes still 
   const stored = (await db.query(`select updated_at from public.household_rows where key = 'egg'`)).rows[0];
   assert.ok(Number(stored.updated_at) < now() + 300_001);
   await as('alice', row, [aliceHouse, { addedAt: 1, source: 'manual' }, now() + 1000, users.alice]);
-  assert.deepEqual((await db.query(`select data from public.household_rows where key = 'egg'`)).rows[0].data, { addedAt: 1, source: 'manual' });
+  assert.deepEqual((await db.query(`select data from public.household_rows where key = 'egg'`)).rows[0].data, {
+    addedAt: 1,
+    source: 'manual',
+  });
 });
 
 test('BUG-28: a same-millisecond tie goes to the larger author, like the phones', async () => {
@@ -131,10 +148,14 @@ test('SEC-08: codes are strong, one use each, and wrong guesses are limited', as
 
 test('SEC-08: codes can be cancelled, and a household keeps at most 5', async () => {
   for (let i = 0; i < 7; i++) await as('alice', 'select public.create_invite()');
-  const live = await db.query('select count(*)::int as n from public.household_invites where household_id = $1 and used_at is null', [aliceHouse]);
+  const live = await db.query('select count(*)::int as n from public.household_invites where household_id = $1 and used_at is null', [
+    aliceHouse,
+  ]);
   assert.equal(live.rows[0].n, 5);
   await as('bob', 'select public.revoke_invites()');
-  const after = await db.query('select count(*)::int as n from public.household_invites where household_id = $1 and used_at is null', [aliceHouse]);
+  const after = await db.query('select count(*)::int as n from public.household_invites where household_id = $1 and used_at is null', [
+    aliceHouse,
+  ]);
   assert.equal(after.rows[0].n, 0);
 });
 
@@ -152,7 +173,9 @@ test('SEC-13: deleting an account takes your shared recipes and your id out of a
   await as('bob', insert, [aliceHouse, 'recipe', 'b1', good, now(), users.bob]);
   await as('bob', insert, [aliceHouse, 'tick', '2026-10-05|milk', { amount: '=' }, now(), users.bob]);
   await as('bob', 'select public.delete_account()');
-  const rows = (await db.query(`select kind, deleted, updated_by from public.household_rows where key in ('b1', '2026-10-05|milk') order by kind`)).rows;
+  const rows = (
+    await db.query(`select kind, deleted, updated_by from public.household_rows where key in ('b1', '2026-10-05|milk') order by kind`)
+  ).rows;
   assert.deepEqual(rows, [
     { kind: 'recipe', deleted: true, updated_by: '00000000-0000-0000-0000-000000000000' },
     { kind: 'tick', deleted: false, updated_by: '00000000-0000-0000-0000-000000000000' },
@@ -165,23 +188,34 @@ test('SEC-14: stale anonymous users outside a household are deleted; members and
   await db.query(`insert into auth.users (id, is_anonymous, created_at) values ($1, true, now() - interval '40 days')`, [stale]);
   await db.query(`update auth.users set created_at = now() - interval '40 days' where id in ($1, $2)`, [users.mallory, users.carol]);
   await db.query('select public.delete_stale_anonymous_users()');
-  const left = (await db.query('select id from auth.users where id in ($1, $2, $3)', [stale, users.mallory, users.carol])).rows.map((r) => r.id);
+  const left = (await db.query('select id from auth.users where id in ($1, $2, $3)', [stale, users.mallory, users.carol])).rows.map(
+    (r) => r.id,
+  );
   assert.deepEqual(left.sort(), [users.mallory, users.carol].sort());
 });
 
 test('SEC-07: a household past its row ceiling is refused as a check violation', async () => {
   // Filled with triggers off (replica mode), or the fill itself takes minutes.
   await db.exec('set session_replication_role = replica');
-  await db.query(`insert into public.household_rows (household_id, kind, key, data, updated_at, updated_by)
-    select $1, 'cupboard', 'k' || g, '{}', 1, $2 from generate_series(1, 50000) g`, [malloryHouse, users.mallory]);
+  await db.query(
+    `insert into public.household_rows (household_id, kind, key, data, updated_at, updated_by)
+    select $1, 'cupboard', 'k' || g, '{}', 1, $2 from generate_series(1, 50000) g`,
+    [malloryHouse, users.mallory],
+  );
   await db.exec('set session_replication_role = origin');
   await fails(
-    as('mallory', `insert into public.household_rows (household_id, kind, key, data, updated_at, updated_by) values ($1, 'cupboard', 'one-more', '{}', 1, $2)`, [malloryHouse, users.mallory]),
+    as(
+      'mallory',
+      `insert into public.household_rows (household_id, kind, key, data, updated_at, updated_by) values ($1, 'cupboard', 'one-more', '{}', 1, $2)`,
+      [malloryHouse, users.mallory],
+    ),
     (e) => e.code === '23514',
   );
 });
 
 test('SEC-06: the member list is no longer published to Realtime', async () => {
-  const tables = (await db.query(`select tablename from pg_publication_tables where pubname = 'supabase_realtime' order by 1`)).rows.map((r) => r.tablename);
+  const tables = (await db.query(`select tablename from pg_publication_tables where pubname = 'supabase_realtime' order by 1`)).rows.map(
+    (r) => r.tablename,
+  );
   assert.deepEqual(tables, ['account_rows', 'household_rows']);
 });

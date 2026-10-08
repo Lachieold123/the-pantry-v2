@@ -38,7 +38,8 @@ const noColourLiterals = {
 
 module.exports = defineConfig([
   expoConfig,
-  { ignores: ['dist/*', '.expo/*', 'node_modules/*', 'ios/*', 'android/*', 'coverage/*'] },
+  // Edge Functions run on Deno (npm: imports, Deno globals), not in the app.
+  { ignores: ['dist/*', '.expo/*', 'node_modules/*', 'ios/*', 'android/*', 'coverage/*', 'supabase/functions/**'] },
   {
     files: ['src/**/*.{ts,tsx}'],
     ignores: ['src/ui/tokens/**'],
