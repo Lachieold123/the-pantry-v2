@@ -45,7 +45,12 @@
       "notes": [
         "Veal escalopes are the classic version and cook in about the same time; veal can be served slightly pink.",
         "Mashed potato or crusty bread is good for the sauce."
-      ]
+      ],
+      "image": {
+        "key": "chicken-saltimbocca",
+        "credit": "Photo: Arnaud 25 / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Saltimbocca_01.jpg"
+      }
     },
     {
       "id": "spaghetti-puttanesca",
@@ -85,7 +90,12 @@
       ],
       "notes": [
         "The anchovies dissolve and give depth rather than fishiness. For a vegetarian version leave them out and add another tablespoon of capers."
-      ]
+      ],
+      "image": {
+        "key": "spaghetti-puttanesca",
+        "credit": "Photo: Popo le Chien / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Pasta_Puttanesca.jpg"
+      }
     },
     {
       "id": "zucchini-frittata",
@@ -164,7 +174,12 @@
         "Whisk the dressing ingredients together and pour over the tomatoes. Add the cucumber, onion, capers and toasted bread and toss well.",
         "Leave for 10 to 15 minutes so the bread soaks up the juices, then tear in the basil, toss again and serve."
       ],
-      "notes": ["It needs properly ripe, summer tomatoes. Out of season, use cherry tomatoes, halved."]
+      "notes": ["It needs properly ripe, summer tomatoes. Out of season, use cherry tomatoes, halved."],
+      "image": {
+        "key": "panzanella",
+        "credit": "Photo: Heather Katsoulis / Wikimedia Commons (CC BY-SA 2.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Italian_Panzanella.jpg"
+      }
     },
     {
       "id": "steak-au-poivre",
@@ -208,7 +223,12 @@
       "notes": [
         "Never add brandy to a pan over a gas flame straight from the bottle; pour it into a cup first.",
         "Check the label on your frozen chips if gluten matters: some are coated in wheat flour."
-      ]
+      ],
+      "image": {
+        "key": "steak-au-poivre",
+        "credit": "Photo: Mark Mitchell / Wikimedia Commons (CC BY 2.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Steak_Au_Poivre.jpg"
+      }
     },
     {
       "id": "moules-marinieres",
@@ -253,7 +273,12 @@
       "notes": [
         "Buy mussels on the day you cook them and keep them in the fridge in an open bag under a damp cloth, not in water.",
         "Leave out the cream for a lighter, dairy-free broth (use olive oil instead of butter)."
-      ]
+      ],
+      "image": {
+        "key": "moules-marinieres",
+        "credit": "Photo: Arnaud 25 / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Moules_marini%C3%A8res_03.jpg"
+      }
     },
     {
       "id": "leek-potato-soup",
@@ -299,7 +324,12 @@
       "notes": [
         "Leeks hide grit between their layers: slice them first, then swish in a big bowl of water and lift them out.",
         "Chill it and serve cold in summer and it becomes vichyssoise."
-      ]
+      ],
+      "image": {
+        "key": "leek-potato-soup",
+        "credit": "Photo: jeffreyw / Wikimedia Commons (CC BY 2.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Mmm..._potato_leek_soup_(5849815506).jpg"
+      }
     },
     {
       "id": "crepes-lemon-sugar",
@@ -385,7 +415,12 @@
       "notes": [
         "Shop-bought aioli is fine here. Homemade aioli is made with raw egg, which isn't recommended for pregnant people, young children, older people or anyone with a weakened immune system.",
         "Halve the cayenne for a milder sauce."
-      ]
+      ],
+      "image": {
+        "key": "patatas-bravas",
+        "credit": "Photo: Kent Wang / Wikimedia Commons (CC BY-SA 2.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Patatas_bravas_(49415380638).jpg"
+      }
     },
     {
       "id": "gambas-al-ajillo",
@@ -426,7 +461,12 @@
         "Sprinkle over the paprika and add the sherry, if using, and let it sizzle for 30 seconds. Scatter with parsley.",
         "Serve straight from the pan, still sizzling, with lemon wedges and bread for the oil."
       ],
-      "notes": ["The prawns overcook quickly: take them off the heat as soon as they curl and turn opaque."]
+      "notes": ["The prawns overcook quickly: take them off the heat as soon as they curl and turn opaque."],
+      "image": {
+        "key": "gambas-al-ajillo",
+        "credit": "Photo: Gerda Arendt / Wikimedia Commons (CC0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Gambas_con_ajillo,_La_Mata,_La_Palma.jpg"
+      }
     },
     {
       "id": "pan-con-tomate",
@@ -459,7 +499,12 @@
         "While it's hot, rub one side of each slice lightly with the cut garlic.",
         "Spoon the tomato over the toast, drizzle generously with olive oil and finish with flaky salt. Top with jamón if you like, and eat straight away."
       ],
-      "notes": ["Without the jamón it's vegan."]
+      "notes": ["Without the jamón it's vegan."],
+      "image": {
+        "key": "pan-con-tomate",
+        "credit": "Photo: Lablascovegmenu / Wikimedia Commons (CC BY 2.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:P%C3%A0_d%27espelta_amb_tom%C3%A0quet_(4671488600).jpg"
+      }
     },
     {
       "id": "albondigas",
@@ -516,7 +561,12 @@
         "Add the tomatoes, stock, bay leaf and salt and bring to a simmer. Return the meatballs, cover and simmer gently for 20 minutes, until the sauce has thickened and the meatballs are cooked through (75°C in the centre).",
         "Scatter with parsley and serve with bread for the sauce."
       ],
-      "notes": ["Serve as tapas with toothpicks, or with rice or chips as a main."]
+      "notes": ["Serve as tapas with toothpicks, or with rice or chips as a main."],
+      "image": {
+        "key": "albondigas",
+        "credit": "Photo: Juan Emilio Prades Bel / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Alb%C3%B3ndigas_de_carne_con_sofrito_de_tomate,_cebolla,_ajo_y_perejil.jpg"
+      }
     },
     {
       "id": "spanakopita",
@@ -563,7 +613,12 @@
       "notes": [
         "Squeeze the spinach really dry in a clean tea towel, or the base goes soggy.",
         "Use 1kg of fresh English spinach, wilted and squeezed, instead of the frozen."
-      ]
+      ],
+      "image": {
+        "key": "spanakopita",
+        "credit": "Photo: Tanya Bakogiannis / Wikimedia Commons (CC BY 3.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Spanikopita_Greek_dish.jpg"
+      }
     },
     {
       "id": "pastitsio",
@@ -625,7 +680,12 @@
       "notes": [
         "Traditionally made with long, hollow pastitsio pasta or bucatini. Penne is easier to find and works well.",
         "Lamb mince is also good here, or half beef, half lamb."
-      ]
+      ],
+      "image": {
+        "key": "pastitsio",
+        "credit": "Photo: Robert Kindermann / Wikimedia Commons (CC BY-SA 2.5)",
+        "source": "https://commons.wikimedia.org/wiki/File:Pastitsio.jpg"
+      }
     },
     {
       "id": "avgolemono",
@@ -663,7 +723,12 @@
         "Pour the egg mixture back into the pan, stirring, then return the chicken. Keep the soup over low heat, stirring, for 3 to 4 minutes until it thickens slightly and is steaming. Don't let it boil, or the eggs will curdle.",
         "Season with salt, pepper and more lemon to taste, and serve scattered with dill."
       ],
-      "notes": ["Reheat leftovers gently over low heat, stirring, and never let it boil."]
+      "notes": ["Reheat leftovers gently over low heat, stirring, and never let it boil."],
+      "image": {
+        "key": "avgolemono",
+        "credit": "Photo: Missvain / Wikimedia Commons (CC BY 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Athenian_Grill_-_April_2023_-_Sarah_Stierch_09.jpg"
+      }
     },
     {
       "id": "briam",
@@ -711,7 +776,12 @@
       "notes": [
         "It's even better the next day, at room temperature.",
         "The bread and feta are what make it a meal; without them it's vegan and gluten free."
-      ]
+      ],
+      "image": {
+        "key": "briam",
+        "credit": "Photo: Dianeira / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Briam.jpg"
+      }
     },
     {
       "id": "menemen",
@@ -754,7 +824,12 @@
       "notes": [
         "Whether onion goes in menemen is a running argument in Turkey. Add half a diced onion with the capsicum if you're on that side.",
         "Softly set eggs aren't recommended for pregnant people, young children, older people or anyone with a weakened immune system. Cook a minute or two longer until firm."
-      ]
+      ],
+      "image": {
+        "key": "menemen",
+        "credit": "Photo: E4024 / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Menemen_in_a_sahan.jpg"
+      }
     },
     {
       "id": "lahmacun",
@@ -802,7 +877,14 @@
         "Slide the paper onto a hot tray and bake for 7 to 9 minutes, until the edges are crisp and the lamb is browned and cooked through. Repeat with the rest.",
         "Toss the red onion with the sumac. Serve the lahmacun hot, scattered with onion and parsley and squeezed with lemon, then rolled up to eat."
       ],
-      "notes": ["The lamb layer must be thin so it cooks through in the short bake. If yours is thicker, give it a couple of minutes more."]
+      "notes": [
+        "The lamb layer must be thin so it cooks through in the short bake. If yours is thicker, give it a couple of minutes more."
+      ],
+      "image": {
+        "key": "lahmacun",
+        "credit": "Photo: Rainer Zenz / Wikimedia Commons (CC BY-SA 3.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Lahmacun.jpg"
+      }
     },
     {
       "id": "imam-bayildi",
@@ -846,7 +928,12 @@
         "Cover with foil and bake for 30 minutes, then uncover and bake for 10 to 15 minutes more until the eggplants are completely soft.",
         "Cool to warm or room temperature, which is how it's traditionally eaten. Scatter with the remaining parsley and serve with bread."
       ],
-      "notes": ["The name means 'the imam fainted', said to be at how good it was (or at how much olive oil it used)."]
+      "notes": ["The name means 'the imam fainted', said to be at how good it was (or at how much olive oil it used)."],
+      "image": {
+        "key": "imam-bayildi",
+        "credit": "Photo: E4024 / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Imam_bay%C4%B1ld%C4%B1.jpg"
+      }
     },
     {
       "id": "gozleme",
@@ -888,7 +975,12 @@
         "Heat a large dry frying pan or flat griddle over medium heat. Cook one gözleme at a time for 3 minutes a side, brushing the top with melted butter before turning, until crisp and golden in spots.",
         "Cut into pieces and serve hot with lemon wedges."
       ],
-      "notes": ["Swap half the spinach for cooked lamb mince, or add some grated mozzarella for a stretchier filling."]
+      "notes": ["Swap half the spinach for cooked lamb mince, or add some grated mozzarella for a stretchier filling."],
+      "image": {
+        "key": "gozleme",
+        "credit": "Photo: Maderibeyza / Wikimedia Commons (CC BY-SA 3.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:G%C3%B6zleme.JPG"
+      }
     },
     {
       "id": "manakish",
@@ -923,7 +1015,12 @@
         "Spread each with the za'atar oil, leaving a thin border. Slide onto the hot trays and bake for 7 to 9 minutes until the edges are golden and the base is crisp.",
         "Serve warm, folded around tomato, cucumber, mint and labneh."
       ],
-      "notes": ["With the labneh left out, they're vegan."]
+      "notes": ["With the labneh left out, they're vegan."],
+      "image": {
+        "key": "manakish",
+        "credit": "Photo: Nsaum75 / Wikimedia Commons (CC BY-SA 3.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Israeli_zaatar_manakeesh.jpg"
+      }
     },
     {
       "id": "musakhan",
@@ -968,7 +1065,12 @@
         "Lay the breads on two trays and brush with some of the onion oil. Spread with the onions, sit the chicken on top and spoon over any pan juices. Return to the oven for 5 to 8 minutes, until the bread edges are crisp.",
         "Scatter with pine nuts and parsley and serve, tearing the bread to eat with the chicken."
       ],
-      "notes": ["In Palestine it's made with taboon bread. Large Lebanese bread is the closest at the supermarket."]
+      "notes": ["In Palestine it's made with taboon bread. Large Lebanese bread is the closest at the supermarket."],
+      "image": {
+        "key": "musakhan",
+        "credit": "Photo: Kokaly / Wikimedia Commons (CC BY-SA 3.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Mushakhan_Dish.jpg"
+      }
     },
     {
       "id": "baked-kibbeh",
@@ -1022,7 +1124,12 @@
         "Score the top into diamonds, cutting right through to the base. Drizzle the olive oil over and into the cuts.",
         "Bake for 40 to 45 minutes until deep brown at the edges and cooked through (75°C in the centre). Rest for 10 minutes, then serve with the yoghurt mixed with cucumber."
       ],
-      "notes": ["Fine bulgur is essential for the shell. Coarse bulgur won't bind."]
+      "notes": ["Fine bulgur is essential for the shell. Coarse bulgur won't bind."],
+      "image": {
+        "key": "baked-kibbeh",
+        "credit": "Photo: Amaiursancho5 / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Kibbeh_Bil_Sanieh.jpg"
+      }
     },
     {
       "id": "muhammara",
@@ -1123,7 +1230,12 @@
       "notes": [
         "Runny yolks aren't recommended for pregnant people, young children, older people or anyone with a weakened immune system. Cook covered until the yolks are firm.",
         "Lamb mince, or half lamb and half beef, works just as well."
-      ]
+      ],
+      "image": {
+        "key": "kefta-tagine",
+        "credit": "Photo: Mzximvs VdB / Wikimedia Commons (CC BY-SA 2.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Tajine_kefta_(8348397161).jpg"
+      }
     },
     {
       "id": "koshari",
@@ -1182,7 +1294,12 @@
       "notes": [
         "The onions are the point, so take them properly brown. Pull them out a shade before you think they're done; they keep darkening off the heat.",
         "Cooked rice shouldn't sit out at room temperature for long. Refrigerate leftovers within an hour and reheat until steaming hot."
-      ]
+      ],
+      "image": {
+        "key": "koshari",
+        "credit": "Photo: Dina Said / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Egyptian_food_Koshary.jpg"
+      }
     },
     {
       "id": "moroccan-carrot-salad",
@@ -1264,7 +1381,12 @@
       "notes": [
         "They're best within a few hours. Leftovers warm up well in a dry pan.",
         "For a savoury version, leave out the sugar and serve with soft cheese."
-      ]
+      ],
+      "image": {
+        "key": "harcha",
+        "credit": "Photo: Lucyin / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Ary-7ercha.JPG"
+      }
     },
     {
       "id": "chicken-yassa",
@@ -1317,7 +1439,12 @@
       "notes": [
         "The raw-chicken marinade is safe here because it's boiled in the pot before the chicken goes back in.",
         "Scotch bonnets are fierce. Left whole and pierced they give fragrance and moderate heat; chop one in if you like it hot."
-      ]
+      ],
+      "image": {
+        "key": "chicken-yassa",
+        "credit": "Photo: Arnaud 25 / Wikimedia Commons (CC0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Poulet_yassa_01.jpg"
+      }
     },
     {
       "id": "red-red",
@@ -1405,7 +1532,12 @@
       "notes": [
         "Never leave hot oil unattended, keep the pan on a back burner, and let the oil cool completely before moving it.",
         "If they brown before the middle cooks, the oil is too hot. Let it drop back to 170°C."
-      ]
+      ],
+      "image": {
+        "key": "puff-puff",
+        "credit": "Photo: Dappasolomon001 / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Puff_Puff_Making_series_6.jpg"
+      }
     },
     {
       "id": "kelewele",
@@ -1442,7 +1574,12 @@
       "notes": [
         "Riper plantains caramelise more but soak up more oil and stick together. Fry in small batches so the oil stays hot.",
         "Never leave hot oil unattended, and let it cool completely before moving the pan."
-      ]
+      ],
+      "image": {
+        "key": "kelewele",
+        "credit": "Photo: Edithobayaa1 / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:%E2%80%9CKelewele%E2%80%9D_in_Ghana.jpg"
+      }
     },
     {
       "id": "sosaties",
@@ -1493,7 +1630,12 @@
       "notes": [
         "The marinade has had raw meat in it, so always boil it for a few minutes before using it as a sauce.",
         "Lamb leg cubes are fine served slightly pink in the middle. Cook longer if you prefer them well done."
-      ]
+      ],
+      "image": {
+        "key": "sosaties",
+        "credit": "Photo: Ossewa / Wikimedia Commons (CC BY 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Sosaties_braai.jpg"
+      }
     },
     {
       "id": "tomato-bredie",
@@ -1692,7 +1834,12 @@
       "notes": [
         "Use the coarser semolina if your supermarket has a choice; Indian grocers sell it as rava or sooji.",
         "Upma firms up as it cools. Loosen leftovers with a splash of hot water when reheating."
-      ]
+      ],
+      "image": {
+        "key": "upma",
+        "credit": "Photo: spurekar / Wikimedia Commons (CC BY 2.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Sanza_upma_(49712703693).jpg"
+      }
     },
     {
       "id": "pork-vindaloo",
@@ -1750,7 +1897,12 @@
       "notes": [
         "Kashmiri chillies give colour more than fire, so this is warm rather than blistering. Add 1/2 tsp cayenne pepper to the paste for a hotter vindaloo.",
         "It improves overnight. Cool quickly, refrigerate within an hour and reheat until bubbling."
-      ]
+      ],
+      "image": {
+        "key": "pork-vindaloo",
+        "credit": "Photo: Miansari66 / Wikimedia Commons (CC0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Vindaloo.JPG"
+      }
     },
     {
       "id": "rajma",
@@ -1801,7 +1953,12 @@
       "notes": [
         "To cook from dried beans, soak 250g overnight, then boil hard for 10 minutes and simmer until soft (about 1 hour). Raw or undercooked kidney beans are toxic, so never slow-cook them from raw.",
         "Rajma chawal (with rice) is the classic, but it's also good with roti."
-      ]
+      ],
+      "image": {
+        "key": "rajma",
+        "credit": "Photo: Shreya151994 / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Rajma_Chawal_by_Rama_Bhave.jpg"
+      }
     },
     {
       "id": "onion-bhaji",
@@ -1843,7 +2000,12 @@
       "notes": [
         "Keep them loose and craggy rather than pressing them into balls; the straggly edges are the crispest part.",
         "Never leave hot oil unattended, and let it cool completely before moving the pan."
-      ]
+      ],
+      "image": {
+        "key": "onion-bhaji",
+        "credit": "Photo: Adityakerkar / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Kanda_Bhaji.JPG"
+      }
     },
     {
       "id": "panang-beef-curry",
@@ -1887,7 +2049,12 @@
       "notes": [
         "If you find panang curry paste, use it instead of the red curry paste and halve the peanut butter. Red curry paste with peanut is a common stand-in.",
         "Slice the beef more easily by putting it in the freezer for 20 minutes first."
-      ]
+      ],
+      "image": {
+        "key": "panang-beef-curry",
+        "credit": "Photo: Vee Satayamas / Wikimedia Commons (CC BY 2.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Panang_curry_(42943883862).jpg"
+      }
     },
     {
       "id": "gai-yang",
@@ -1944,7 +2111,12 @@
       "notes": [
         "Coriander roots carry most of the flavour. Buy coriander with roots on; if yours has none, use 2 tbsp chopped stems.",
         "Toasted rice powder (khao khua) is sold at Asian grocers. To make it, toast raw sticky or jasmine rice in a dry pan until deep golden, then grind."
-      ]
+      ],
+      "image": {
+        "key": "gai-yang",
+        "credit": "Photo: Togsvfx / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Chicken_BBQ_tumtaad.jpg"
+      }
     },
     {
       "id": "yum-woon-sen",
@@ -1997,7 +2169,12 @@
       "notes": [
         "The warm pork and prawns help the noodles soak up the dressing. Taste and adjust: it should be sour first, then salty, hot and only a little sweet.",
         "Chinese celery, from Asian grocers, is more authentic; use the leaves too."
-      ]
+      ],
+      "image": {
+        "key": "yum-woon-sen",
+        "credit": "Photo: Takeaway / Wikimedia Commons (CC BY-SA 3.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Yam_wunsen.jpg"
+      }
     },
     {
       "id": "khai-jiao",
@@ -2038,7 +2215,12 @@
       "notes": [
         "Hot oil spits when the egg goes in. Keep your face and hands back, and let the oil cool completely before moving the wok.",
         "The omelette is cooked through, so it's fine for everyone."
-      ]
+      ],
+      "image": {
+        "key": "khai-jiao",
+        "credit": "Photo: Sakurai Midori / Wikimedia Commons (CC BY 2.5)",
+        "source": "https://commons.wikimedia.org/wiki/File:Fried_egg_Thailand.JPG"
+      }
     },
     {
       "id": "bun-cha",
@@ -2101,7 +2283,12 @@
       "notes": [
         "Grilling over charcoal gives the real Hanoi smokiness, but a very hot chargrill pan does a good job.",
         "Ask the butcher to slice the belly thinly, or freeze it for 30 minutes and slice it yourself."
-      ]
+      ],
+      "image": {
+        "key": "bun-cha",
+        "credit": "Photo: Phương Huy / Wikimedia Commons (public domain)",
+        "source": "https://commons.wikimedia.org/wiki/File:B%C3%BAn_ch%E1%BA%A3_H%C3%A0_N%E1%BB%99i_t%E1%BA%A1i_Aeonmall_T%C3%A2n_Ph%C3%BA_th%C3%A1ng_4_n%C4%83m_2018_(5).jpg"
+      }
     },
     {
       "id": "banh-xeo",
@@ -2164,7 +2351,12 @@
       "notes": [
         "A hot pan and a thin layer of batter are what make it crisp. The first one is often a tester.",
         "Use any combination of pork, prawns or mushrooms for the filling."
-      ]
+      ],
+      "image": {
+        "key": "banh-xeo",
+        "credit": "Photo: freshcrackedpepper / Wikimedia Commons (CC BY 2.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Banh_Xeo,_Eden_Center.jpg"
+      }
     },
     {
       "id": "ga-kho-gung",
@@ -2312,7 +2504,12 @@
       "notes": [
         "Chinese sesame paste is made from toasted sesame and is more traditional; tahini works well. Stir the jar well first.",
         "Pickled mustard greens (ya cai or suan cai) are sold in packets at Asian grocers. Leave them out if you can't find them."
-      ]
+      ],
+      "image": {
+        "key": "dan-dan-noodles",
+        "credit": "Photo: ZhengZhou / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Dandan_Noodles.jpg"
+      }
     },
     {
       "id": "hot-and-sour-soup",
@@ -2365,7 +2562,12 @@
       "notes": [
         "Add the vinegar and pepper off the heat; boiling dulls them.",
         "Sliced bamboo shoots and wood ear mushrooms from an Asian grocer are traditional additions. Add them with the tofu."
-      ]
+      ],
+      "image": {
+        "key": "hot-and-sour-soup",
+        "credit": "Photo: jeffreyw / Wikimedia Commons (CC BY 2.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Mmm..._hot_and_sour_soup_(7218396478).jpg"
+      }
     },
     {
       "id": "beef-and-broccoli",
@@ -2420,7 +2622,12 @@
       "notes": [
         "Slicing across the grain and cooking in two batches is what keeps the beef tender. A crowded wok stews the meat.",
         "Put the beef in the freezer for 20 minutes first and it slices thinly far more easily."
-      ]
+      ],
+      "image": {
+        "key": "beef-and-broccoli",
+        "credit": "Photo: Joy / Wikimedia Commons (CC BY 2.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Beef_and_broccoli_stir_fry_-_28265304610.jpg"
+      }
     },
     {
       "id": "smashed-cucumber-salad",
@@ -2460,7 +2667,12 @@
       "notes": [
         "Smashing rather than slicing gives rough edges that hold far more dressing.",
         "Black vinegar and soy sauce both contain wheat, so this isn't gluten-free. Use tamari and rice vinegar if you need it to be."
-      ]
+      ],
+      "image": {
+        "key": "smashed-cucumber-salad",
+        "credit": "Photo: Daniela Eftimova / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B8%D0%BD%D0%B5%D1%81%D0%BA%D0%B0_%D1%81%D0%B0%D0%BB%D0%B0%D1%82%D0%B0_%D1%81%D0%BE_%D0%BA%D1%80%D0%B0%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%86%D0%B0_%D0%B8_%D0%BB%D1%83%D0%BA.jpg"
+      }
     },
     {
       "id": "onigiri",
@@ -2503,7 +2715,12 @@
       "notes": [
         "Shape the rice while it's still warm, or it won't stick together. Once made, eat within a few hours or refrigerate and eat the same day. Cooked rice shouldn't sit at room temperature for long.",
         "Packed for lunch, keep the onigiri in an insulated bag with an ice brick, and the nori separate so it doesn't go soggy."
-      ]
+      ],
+      "image": {
+        "key": "onigiri",
+        "credit": "Photo: Ocdp / Wikimedia Commons (CC0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Onigiri_002.jpg"
+      }
     },
     {
       "id": "tamagoyaki",
@@ -2544,7 +2761,12 @@
       "notes": [
         "Keep the heat low. Browning makes it tough and the sugar catches quickly.",
         "It keeps in the fridge for a day and is a lunchbox favourite in Japan."
-      ]
+      ],
+      "image": {
+        "key": "tamagoyaki",
+        "credit": "Photo: 極地狐 / Wikimedia Commons (CC BY 2.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:%E9%B3%A5%E7%84%BC%E3%81%8D%E5%B1%85%E9%85%92%E5%B1%8B_(39394233682).jpg"
+      }
     },
     {
       "id": "nikujaga",
@@ -2589,7 +2811,12 @@
       "notes": [
         "Asian grocers and many supermarkets sell shabu-shabu or sukiyaki beef already sliced paper-thin, which saves time.",
         "It's even better the next day, once the potatoes have soaked up more flavour. Cool quickly and refrigerate within 2 hours."
-      ]
+      ],
+      "image": {
+        "key": "nikujaga",
+        "credit": "Photo: ノボホショコロトソ / Wikimedia Commons (CC BY 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Nikujaga_%E8%82%89%E3%81%98%E3%82%83%E3%81%8C.jpg"
+      }
     },
     {
       "id": "chicken-karaage",
@@ -2633,7 +2860,12 @@
       "notes": [
         "The rest between the two fries lets heat reach the centre, and the second hot fry dries the crust so it stays crisp.",
         "Let the oil cool completely in the pan before straining it for reuse or disposing of it."
-      ]
+      ],
+      "image": {
+        "key": "chicken-karaage",
+        "credit": "Photo: Ocdp / Wikimedia Commons (CC0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Chicken_karaage_006.jpg"
+      }
     },
     {
       "id": "japchae",
@@ -2679,7 +2911,12 @@
       "notes": [
         "Cooking each vegetable separately keeps the colours bright and nothing goes soggy.",
         "For a vegetarian version, leave out the beef and add 200g sliced firm tofu, pan-fried until golden."
-      ]
+      ],
+      "image": {
+        "key": "japchae",
+        "credit": "Photo: Alan Chan / Wikimedia Commons (CC BY-SA 2.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Korean_cuisine-Japchae-04.jpg"
+      }
     },
     {
       "id": "pajeon",
@@ -2722,7 +2959,12 @@
       "notes": [
         "Cold water and a hot, well-oiled pan are what make it crisp rather than doughy.",
         "For haemul pajeon, scatter 150g chopped raw prawns or squid over the spring onions before adding the batter, and cook until the seafood is opaque."
-      ]
+      ],
+      "image": {
+        "key": "pajeon",
+        "credit": "Photo: Andy Li / Wikimedia Commons (CC0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Pajeon_(spring_onion_pancake)_-_Kogi,_Brighton.jpg"
+      }
     },
     {
       "id": "gimbap",
@@ -2770,7 +3012,12 @@
       "notes": [
         "Roll while the rice is still slightly warm, then eat within a few hours or refrigerate and eat the same day. For lunchboxes, keep cold with an ice brick.",
         "Yellow pickled radish (danmuji) is sold in long strips at Asian grocers, sometimes in a gimbap pack with burdock."
-      ]
+      ],
+      "image": {
+        "key": "gimbap",
+        "credit": "Photo: changupn / Wikimedia Commons (CC0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Gimbap_(pixabay).jpg"
+      }
     },
     {
       "id": "dakgalbi",
@@ -2826,7 +3073,12 @@
       "notes": [
         "At home in Korea the leftovers are finished by frying rice in the pan with a little kimchi and sesame oil.",
         "Gochujang and soy sauce contain wheat, so this isn't gluten-free."
-      ]
+      ],
+      "image": {
+        "key": "dakgalbi",
+        "credit": "Photo: Nagyman / Wikimedia Commons (CC BY-SA 2.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Dakgalbi.jpg"
+      }
     },
     {
       "id": "nasi-lemak",
@@ -2876,7 +3128,12 @@
         "Traditionally it also comes with crisp-fried ikan bilis (dried anchovies) from Asian grocers. Fry 50g in a little oil until crisp and scatter over.",
         "Serve the rice straight after cooking. If you make it ahead, cool it quickly, refrigerate within an hour and reheat until steaming.",
         "The sambal keeps in a clean jar in the fridge for a week."
-      ]
+      ],
+      "image": {
+        "key": "nasi-lemak",
+        "credit": "Photo: Mw12310 / Wikimedia Commons (CC BY-SA 3.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Nasi_Lemak,_Mamak,_Sydney.jpg"
+      }
     },
     {
       "id": "char-kway-teow",
@@ -2919,7 +3176,12 @@
       "notes": [
         "Cook no more than two serves at a time. A crowded wok can't get hot enough for the smoky 'wok hei' flavour.",
         "Hawkers add sliced Chinese sausage (lap cheong) and cockles. Add 1 sliced lap cheong with the prawns if you find it at an Asian grocer."
-      ]
+      ],
+      "image": {
+        "key": "char-kway-teow",
+        "credit": "Photo: Alpha / Wikimedia Commons (CC BY-SA 2.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Char_kway_teow_-_Old_Town_Kopitiam.jpg"
+      }
     },
     {
       "id": "hainanese-chicken-rice",
@@ -2986,7 +3248,12 @@
       "notes": [
         "Poaching gently, never boiling hard, is what keeps the meat silky.",
         "Cool any leftover stock quickly, refrigerate and use within 3 days, or freeze."
-      ]
+      ],
+      "image": {
+        "key": "hainanese-chicken-rice",
+        "credit": "Photo: Misaochan / Wikimedia Commons (CC BY 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Hainanese_chicken_rice.jpg"
+      }
     },
     {
       "id": "sambal-udang",
@@ -3036,7 +3303,12 @@
       "notes": [
         "Frying the paste slowly until the oil separates is the step that matters. Rushed sambal tastes raw and harsh.",
         "Open a window when frying the paste; the chilli fumes are strong."
-      ]
+      ],
+      "image": {
+        "key": "sambal-udang",
+        "credit": "Photo: Midori / Wikimedia Commons (CC BY 3.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Udang_balado_masakan_Padang.jpg"
+      }
     },
     {
       "id": "soto-ayam",
@@ -3098,7 +3370,12 @@
       "notes": [
         "Macadamias stand in for candlenuts (kemiri), which thicken the broth. Use 4 candlenuts if you find them at an Asian grocer.",
         "Fried shallots are made in shared fryers, so check the packet if you need the dish gluten-free."
-      ]
+      ],
+      "image": {
+        "key": "soto-ayam",
+        "credit": "Photo: Midori / Wikimedia Commons (CC BY 3.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Soto_Ayam_(Ayam_Goreng_Prambanan).JPG"
+      }
     },
     {
       "id": "ayam-bakar",
@@ -3152,7 +3429,12 @@
       "notes": [
         "Simmering first means the chicken is cooked through before it hits the grill, so the sugary glaze can char without burning while you wait.",
         "Kecap manis contains wheat, so this isn't gluten-free."
-      ]
+      ],
+      "image": {
+        "key": "ayam-bakar",
+        "credit": "Photo: Nisa usrifatul / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Ayam_bakar.jpg"
+      }
     },
     {
       "id": "perkedel",
@@ -3195,7 +3477,12 @@
       "notes": [
         "Floury potatoes such as Sebago or Coliban make the lightest fritters. Waxy ones go gluey.",
         "For the meaty version, fry 150g beef mince until cooked through and mix it into the potato."
-      ]
+      ],
+      "image": {
+        "key": "perkedel",
+        "credit": "Photo: Midori / Wikimedia Commons (CC BY 3.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Perkedel_kentang_tanpa_daging.JPG"
+      }
     },
     {
       "id": "sayur-lodeh",
@@ -3301,7 +3588,12 @@
         "Calamansi juice is traditional if you find the fruit; lime is the closest swap.",
         "Use rice cooked the day before and cooled in the fridge. Cooked rice shouldn't sit out at room temperature.",
         "Runny yolks aren't recommended for pregnant people, young children, older people or anyone with a weakened immune system. Fry the eggs until the yolks are firm."
-      ]
+      ],
+      "image": {
+        "key": "tapsilog",
+        "credit": "Photo: Maffeth.opiana / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Beef_Tapa_with_Egg.jpg"
+      }
     },
     {
       "id": "sinigang",
@@ -3347,7 +3639,12 @@
       "notes": [
         "Kangkong (water spinach) is the traditional green; use it if you find it at an Asian grocer.",
         "Packet sinigang mix from Asian grocers can replace the tamarind paste. Most contain flavour enhancers and some contain wheat, so check the label."
-      ]
+      ],
+      "image": {
+        "key": "sinigang",
+        "credit": "Photo: MarvinBikolano / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Sinigang_na_Baboy_with_Taro.jpg"
+      }
     },
     {
       "id": "bistek-tagalog",
@@ -3390,7 +3687,12 @@
       "notes": [
         "Calamansi is the classic citrus; lime or lemon is the supermarket swap.",
         "Soy sauce contains wheat; use tamari to make it gluten-free."
-      ]
+      ],
+      "image": {
+        "key": "bistek-tagalog",
+        "credit": "Photo: Joy D. Ganaden / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Bistek_Tagalog_DSCF3899.jpg"
+      }
     },
     {
       "id": "lumpia-shanghai",
@@ -3438,7 +3740,12 @@
       "notes": [
         "Keep the filling thin, about the width of a finger, so it cooks through by the time the wrapper is crisp.",
         "Rolled, uncooked lumpia freeze well in a single layer. Fry from frozen at 160°C for 8 to 9 minutes, checking the centre reaches 75°C."
-      ]
+      ],
+      "image": {
+        "key": "lumpia-shanghai",
+        "credit": "Photo: Ralff Nestor Nacor / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Lumpiang_Shanghai,_Mar_2024.jpg"
+      }
     },
     {
       "id": "elote",
@@ -3632,7 +3939,12 @@
       "notes": [
         "The birria keeps for 3 days in the fridge or 3 months in the freezer, and tastes even better the next day.",
         "Guajillo and ancho chillies are sold at Mexican grocers and some supermarkets. Check the tortilla label if you need these gluten-free."
-      ]
+      ],
+      "image": {
+        "key": "birria-tacos",
+        "credit": "Photo: Sarah Stierch / Wikimedia Commons (CC BY 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Quesabirria_at_Taqueria_La_Hacienda,_Sonoma,_California_-_Sarah_Stierch.jpg"
+      }
     },
     {
       "id": "pao-de-queijo",
@@ -3668,7 +3980,12 @@
       "notes": [
         "Brazilians use sour cassava starch (polvilho azedo), sold at Latin grocers; it gives a lighter puff. Supermarket tapioca starch works well.",
         "Freeze the unbaked balls on a tray, then bag them. Bake from frozen, allowing 5 minutes more."
-      ]
+      ],
+      "image": {
+        "key": "pao-de-queijo",
+        "credit": "Photo: Murilo manzini / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Cheesebread.jpg"
+      }
     },
     {
       "id": "gallo-pinto",
@@ -3715,7 +4032,12 @@
         "In Costa Rica it's seasoned with Salsa Lizano, a tangy vegetable sauce. If you find a bottle, use 2 tbsp instead of the soy sauce and vinegar.",
         "Use rice cooked the day before and kept in the fridge. Cooked rice shouldn't sit out at room temperature.",
         "Runny yolks aren't recommended for pregnant people, young children, older people or anyone with a weakened immune system. Fry the eggs until the yolks are firm."
-      ]
+      ],
+      "image": {
+        "key": "gallo-pinto",
+        "credit": "Photo: Mario Roberto Durán Ortiz / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:CRI_07_2018_0120.jpg"
+      }
     },
     {
       "id": "ropa-vieja",
@@ -3765,7 +4087,12 @@
         "Lift the beef onto a board and shred it along the grain with two forks. Return it to the pot with the olives and simmer uncovered for 10 minutes, until the sauce clings. Taste for salt.",
         "Serve over rice, scattered with parsley."
       ],
-      "notes": ["Black beans and fried ripe plantain are the classic sides.", "It keeps for 3 days in the fridge and freezes well."]
+      "notes": ["Black beans and fried ripe plantain are the classic sides.", "It keeps for 3 days in the fridge and freezes well."],
+      "image": {
+        "key": "ropa-vieja",
+        "credit": "Photo: Sarang / Wikimedia Commons (public domain)",
+        "source": "https://commons.wikimedia.org/wiki/File:Ropa_viecha_2.jpg"
+      }
     },
     {
       "id": "moqueca",
@@ -3820,7 +4147,12 @@
       "notes": [
         "In Bahia it's finished with a spoonful of red palm oil (dendê), sold at African and Latin grocers.",
         "Keep the simmer gentle once the fish goes in, so the pieces stay whole."
-      ]
+      ],
+      "image": {
+        "key": "moqueca",
+        "credit": "Photo: Bhasker Thodla / Wikimedia Commons (CC BY 3.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Moqueca_Bahiana_(232340163).jpeg"
+      }
     },
     {
       "id": "eggs-benedict",
@@ -3861,7 +4193,12 @@
       "notes": [
         "Soft-yolked eggs and hollandaise made with lightly cooked yolks aren't recommended for pregnant people, young children, older people or anyone with a weakened immune system. For them, poach the eggs for 5 minutes until the yolks are firm and leave off the hollandaise.",
         "If the hollandaise splits, whisk a fresh yolk in a clean bowl over the water and slowly whisk the split sauce into it."
-      ]
+      ],
+      "image": {
+        "key": "eggs-benedict",
+        "credit": "Photo: Jon Mountjoy / Wikimedia Commons (CC BY 2.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Eggs_Benedict-01-cropped.jpg"
+      }
     },
     {
       "id": "french-toast",
@@ -3904,7 +4241,12 @@
       "notes": [
         "Day-old bread soaks up the custard without going soggy. Fresh bread works if you dry the slices in a low oven for 10 minutes first.",
         "Thick slices of brioche make a richer version."
-      ]
+      ],
+      "image": {
+        "key": "french-toast",
+        "credit": "Photo: Ocdp / Wikimedia Commons (CC0)",
+        "source": "https://commons.wikimedia.org/wiki/File:French_toast_001.jpg"
+      }
     },
     {
       "id": "blackened-fish",
@@ -3968,7 +4310,12 @@
       "notes": [
         "Use firm fillets about 2cm thick, such as ling, barramundi or snapper. Thin fillets overcook before the crust forms.",
         "Some ready-made Cajun seasonings are very salty. If you use one instead of the mix here, leave out the salt."
-      ]
+      ],
+      "image": {
+        "key": "blackened-fish",
+        "credit": "Photo: Edsel Little / Wikimedia Commons (CC BY-SA 2.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:%22Trash_Fish%22_Sustanable_Seafood_Dinner.jpg"
+      }
     },
     {
       "id": "pot-roast",
@@ -4017,7 +4364,12 @@
       "notes": [
         "Chuck has the connective tissue that melts into tenderness over a long braise. Leaner cuts like topside go dry.",
         "Leftovers make great sandwiches the next day."
-      ]
+      ],
+      "image": {
+        "key": "pot-roast",
+        "credit": "Photo: Mark Miller / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:American_pot_roast.jpg"
+      }
     },
     {
       "id": "welsh-rarebit",
@@ -4060,7 +4412,12 @@
       "notes": [
         "Worcestershire sauce contains anchovies, so this isn't vegetarian. Some brands make an anchovy-free version.",
         "The cheese mixture keeps for 3 days in the fridge, ready for quick lunches."
-      ]
+      ],
+      "image": {
+        "key": "welsh-rarebit",
+        "credit": "Photo: Jeremy Keith / Wikimedia Commons (CC BY 2.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Welsh_rarebit_(3436445626).jpg"
+      }
     },
     {
       "id": "cornish-pasties",
@@ -4105,7 +4462,12 @@
       "notes": [
         "Everything goes in raw: the beef and vegetables cook in the steam sealed inside the pastry, so cut them small and thin.",
         "Skirt is the traditional cut. Chuck steak works too, cut finely."
-      ]
+      ],
+      "image": {
+        "key": "cornish-pasties",
+        "credit": "Photo: David Johnson / Wikimedia Commons (CC BY-SA 3.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Cornish_pasty.jpeg"
+      }
     },
     {
       "id": "fish-pie",
@@ -4156,7 +4518,12 @@
       "notes": [
         "Fish pie packs from the supermarket seafood counter make this quicker; use 1kg in total.",
         "Assemble up to a day ahead and keep covered in the fridge. Bake from cold for 45 minutes."
-      ]
+      ],
+      "image": {
+        "key": "fish-pie",
+        "credit": "Photo: Daderot / Wikimedia Commons (CC0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Fish_pie_and_greens_-_Auckland,_New_Zealand.jpg"
+      }
     },
     {
       "id": "scotch-eggs",
@@ -4201,7 +4568,12 @@
         "Runny yolks aren't recommended for pregnant people, young children, older people or anyone with a weakened immune system. Boil the eggs for 9 minutes for firm yolks.",
         "Never leave hot oil unattended. Let it cool completely before you move or strain it.",
         "Sausage mince is sold at the meat counter. Or squeeze good pork sausages out of their skins."
-      ]
+      ],
+      "image": {
+        "key": "scotch-eggs",
+        "credit": "Photo: Unhindered by Talent / Wikimedia Commons (CC BY-SA 2.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:One_scotch_egg_(No_jar_of_Marmite).jpg"
+      }
     },
     {
       "id": "kasespatzle",
@@ -4247,7 +4619,12 @@
       "notes": [
         "If the batter won't drip through the holes, add a splash more milk. If it runs straight through, beat in a little more flour.",
         "The cheeses are made with animal rennet, which some vegetarians avoid."
-      ]
+      ],
+      "image": {
+        "key": "kasespatzle",
+        "credit": "Photo: Takeaway / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:2015_0718_K%C3%A4sesp%C3%A4tzle_S%C3%B6lden.jpg"
+      }
     },
     {
       "id": "kaiserschmarrn",
@@ -4292,7 +4669,12 @@
       "notes": [
         "It's meant to look rough: the torn pieces catch the caramel.",
         "Stewed plums are the traditional partner if you have them."
-      ]
+      ],
+      "image": {
+        "key": "kaiserschmarrn",
+        "credit": "Photo: Superchilum / Wikimedia Commons (CC BY 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Kaiserschmarrn_with_fruits_02.jpg"
+      }
     },
     {
       "id": "bigos",
@@ -4341,7 +4723,12 @@
       "notes": [
         "Bigos is better the next day and better still the day after. It keeps for 4 days in the fridge and freezes well.",
         "A handful of chopped prunes added with the cabbage is traditional and adds a gentle sweetness."
-      ]
+      ],
+      "image": {
+        "key": "bigos",
+        "credit": "Photo: Dr. Bernd Gross / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Bigos_(1).jpg"
+      }
     },
     {
       "id": "lecso",
@@ -4383,7 +4770,12 @@
       "notes": [
         "Long, pale Hungarian wax peppers are traditional. Look for them at greengrocers in late summer.",
         "Without the eggs, lecsó is also a great sauce for sausages or rice."
-      ]
+      ],
+      "image": {
+        "key": "lecso",
+        "credit": "Photo: zeevveez / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Warm_Colors-_my_Mom%27s_Hungarian_Lecs%C3%B3_cropped.jpg"
+      }
     },
     {
       "id": "pytt-i-panna",
@@ -4428,7 +4820,12 @@
       "notes": [
         "It's the Swedish way of using up a roast: swap the ham for leftover roast beef or pork.",
         "Runny yolks aren't recommended for pregnant people, young children, older people or anyone with a weakened immune system. Fry the eggs until the yolks are firm."
-      ]
+      ],
+      "image": {
+        "key": "pytt-i-panna",
+        "credit": "Photo: Skivsamlare / Wikimedia Commons (CC BY-SA 3.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Pyttipanna.JPG"
+      }
     },
     {
       "id": "toast-skagen",
@@ -4471,7 +4868,12 @@
       "notes": [
         "Keep the prawns cold until the last minute, and don't leave the finished toasts out for more than 2 hours.",
         "A spoonful of salmon roe on top is the traditional finish."
-      ]
+      ],
+      "image": {
+        "key": "toast-skagen",
+        "credit": "Photo: Apinanaivot / Wikimedia Commons (CC0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Toast_Skagen_on_a_plate.jpg"
+      }
     },
     {
       "id": "janssons-temptation",
@@ -4515,7 +4917,12 @@
       "notes": [
         "Swedish 'ansjovis' are sprats in a sweet spiced brine, sold at IKEA food markets. If you find them, use a 125g tin and its brine instead of the anchovies.",
         "It's a Christmas table classic in Sweden, and good alongside roast meats."
-      ]
+      ],
+      "image": {
+        "key": "janssons-temptation",
+        "credit": "Photo: Anders Jonsson / Wikimedia Commons (CC BY-SA 3.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Janssons_frestelse.jpg"
+      }
     },
     {
       "id": "aussie-meat-pies",
@@ -4566,7 +4973,12 @@
       "notes": [
         "Cold filling stops the pastry going soggy. Make it the day before if you like; cover and refrigerate once cooled.",
         "Cooked pies freeze well. Reheat from frozen at 180°C (160°C fan-forced) for 25 minutes, until piping hot."
-      ]
+      ],
+      "image": {
+        "key": "aussie-meat-pies",
+        "credit": "Photo: Philip Mallis / Wikimedia Commons (CC BY-SA 2.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Meat_pie_from_Milang_Bakery,_South_Australia.jpg"
+      }
     },
     {
       "id": "zucchini-slice",
@@ -4606,7 +5018,12 @@
       "notes": [
         "For a vegetarian slice, leave out the bacon and add a grated carrot and a handful of corn kernels.",
         "Keeps for 3 days in the fridge and freezes well in portions."
-      ]
+      ],
+      "image": {
+        "key": "zucchini-slice",
+        "credit": "Photo: Valereee / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Zucchini_Slice_(cropped).jpg"
+      }
     },
     {
       "id": "sang-choy-bow",
@@ -4699,7 +5116,12 @@
       "notes": [
         "Use fresh ricotta from the deli counter if you can. Tub ricotta is wetter; drain it in a sieve for 15 minutes first.",
         "Sliced banana and a slice of honey butter is the cafe way to serve them."
-      ]
+      ],
+      "image": {
+        "key": "ricotta-hotcakes",
+        "credit": "Photo: Sarah Stierch / Wikimedia Commons (CC BY 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Picazo_Kitchen_and_Bar_-_2021-11-07_-_Sarah_Stierch_04.jpg"
+      }
     },
     {
       "id": "crispy-skin-barramundi",
@@ -4753,7 +5175,12 @@
       "notes": [
         "Dry skin is the whole trick. If you have time, leave the fillets uncovered on a plate in the fridge for an hour first.",
         "Snapper or salmon fillets work the same way."
-      ]
+      ],
+      "image": {
+        "key": "crispy-skin-barramundi",
+        "credit": "Photo: Kgbo / Wikimedia Commons (CC BY-SA 4.0)",
+        "source": "https://commons.wikimedia.org/wiki/File:Barramundi_dish_at_Yeerongpilly_Green_Village_restaurant,_2024.jpg"
+      }
     }
   ]
 }

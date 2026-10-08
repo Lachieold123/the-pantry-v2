@@ -10,10 +10,14 @@
 // sauce in a "no-gluten" dish. New recipes are held to a stricter standard
 // than the converted ones: every line must name a known ingredient.
 //
+// A photo is optional. When a batch entry has one, the JPG lives at
+// assets/recipes/<key>.jpg and the entry carries its credit and the page it
+// came from, so every photo's licence can be traced (D-045).
+//
 // Used by convert-old-recipes.mts (which writes the catalogue) and by
 // check-house-recipes.mts (which checks a batch without the old app).
 
-import { readdirSync, readFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 import type { IngredientIndex } from '../src/domain/ingredients/database.ts';
@@ -41,6 +45,8 @@ export type HouseRecipe = {
   notes?: string[];
   /** Left out until Lachlan reviews or cook-tests the recipe, which keeps it an `ai-draft` (hidden in store builds). */
   provenance?: Provenance;
+  /** A real, freely licensed photo (D-045): the file at assets/recipes/<key>.jpg, the credit shown under it, and its source page. */
+  image?: { key: string; credit: string; source: string };
 };
 
 export type HouseBatch = { about: string; recipes: HouseRecipe[] };
@@ -49,6 +55,7 @@ export type HouseBatch = { about: string; recipes: HouseRecipe[] };
 export type Taken = { ids: Set<string>; titles: Set<string> };
 
 export const HOUSE_DIR = 'scripts/data/house-recipes';
+export const PHOTO_DIR = 'assets/recipes';
 
 export function batchFiles(root: string): string[] {
   const dir = join(root, HOUSE_DIR);
@@ -67,7 +74,19 @@ const sameSet = (a: readonly string[], b: readonly string[]) => a.length === b.l
 // Text the app shows must follow the house style; em dashes also split a line's prep in the parser.
 const allText = (h: HouseRecipe) => [h.title, h.summary, ...h.ingredients.flatMap((g) => g.items), ...h.steps, ...(h.notes ?? [])];
 
-function toRecipe(h: HouseRecipe, index: IngredientIndex, problem: (m: string) => void): Recipe {
+// "Photo: Name / Wikimedia Commons (CC BY-SA 4.0)": the same shape as the Pexels credits, with the licence where it asks for one.
+const CREDIT = /^Photo: \S.* \/ \S.*$/;
+
+function checkImage(h: HouseRecipe, root: string, problem: (m: string) => void): void {
+  if (!h.image) return;
+  const { key, credit, source } = h.image;
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(key)) problem(`${h.id}: image key "${key}" must be lower-case words joined by hyphens`);
+  if (!existsSync(join(root, PHOTO_DIR, `${key}.jpg`))) problem(`${h.id}: no photo at ${PHOTO_DIR}/${key}.jpg`);
+  if (!CREDIT.test(credit)) problem(`${h.id}: photo credit should read "Photo: Name / Source", got "${credit}"`);
+  if (!/^https:\/\//.test(source)) problem(`${h.id}: photo needs the https link to its source page`);
+}
+
+function toRecipe(h: HouseRecipe, root: string, index: IngredientIndex, problem: (m: string) => void): Recipe {
   const ingredientGroups = h.ingredients.map((group) => {
     const items = group.items.map((raw) => {
       const { line, issues } = parseIngredientLine(raw, index.match);
@@ -86,6 +105,7 @@ function toRecipe(h: HouseRecipe, index: IngredientIndex, problem: (m: string) =
   if (h.prepMinutes <= 0) problem(`${h.id}: prepMinutes must be more than 0`);
   if (h.prepMinutes + h.cookMinutes <= 0) problem(`${h.id}: no time given`);
   if (allText(h).some((t) => t.includes('—'))) problem(`${h.id}: uses an em dash`);
+  checkImage(h, root, problem);
   return {
     id: h.id,
     title: h.title,
@@ -99,6 +119,7 @@ function toRecipe(h: HouseRecipe, index: IngredientIndex, problem: (m: string) =
     servings: h.servings,
     onePot: h.onePot,
     ...(h.seasons?.length ? { seasons: h.seasons } : {}),
+    ...(h.image ? { image: { key: h.image.key, credit: h.image.credit } } : {}),
     ingredientGroups,
     steps: h.steps.map((text) => ({ text })),
     ...(h.notes?.length ? { notes: h.notes } : {}),
@@ -116,7 +137,7 @@ export function loadHouseRecipes(root: string, index: IngredientIndex, taken: Ta
       if (taken.titles.has(h.title.toLowerCase())) problem(`${h.id}: title "${h.title}" already in the catalogue`);
       taken.ids.add(h.id);
       taken.titles.add(h.title.toLowerCase());
-      const recipe = toRecipe(h, index, problem);
+      const recipe = toRecipe(h, root, index, problem);
       for (const p of validateRecipe(recipe)) problem(`${h.id}: ${p.path} ${p.message}`);
       out.push(recipe);
     }

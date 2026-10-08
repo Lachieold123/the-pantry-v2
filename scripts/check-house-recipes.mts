@@ -42,6 +42,8 @@ console.log(`Cuisines: ${tally(recipes.map((r) => r.cuisine))}`);
 console.log(`Diets: ${tally(recipes.flatMap((r) => r.diets))}`);
 console.log(`Difficulty: ${tally(recipes.map((r) => r.difficulty))}`);
 console.log(`Provenance: ${tally(recipes.map((r) => r.provenance ?? 'ai-draft'))}`);
+const credits = recipes.flatMap((r) => (r.image?.credit ? [r.image.credit.replace(/^.* \/ /, '')] : []));
+console.log(`Photos: ${credits.length} of ${recipes.length}${credits.length ? ` (${tally(credits)})` : ''}`);
 
 console.log(problems.length ? `\n${problems.length} problem(s):` : '\nNo problems.');
 for (const p of problems) console.log(`  ✗ ${p}`);
