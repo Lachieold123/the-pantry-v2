@@ -11,7 +11,8 @@ export type Member = { userId: string; name: string };
 export type Household = { id: string; name: string; members: Member[] };
 
 /** Why a household call didn't work, in words the screen can show. */
-export type Problem = 'offline' | 'sharing-off' | 'invite-not-found' | 'household-full' | 'already-in-household' | 'failed';
+export type Problem =
+  'offline' | 'sharing-off' | 'invite-not-found' | 'household-full' | 'already-in-household' | 'too-many-attempts' | 'failed';
 export type Result<T> = { ok: true; value: T } | { ok: false; problem: Problem };
 
 const fail = (problem: Problem): { ok: false; problem: Problem } => ({ ok: false, problem });
@@ -22,6 +23,7 @@ export function problemFrom(message: string | undefined): Problem {
   if (m.includes('invite-not-found')) return 'invite-not-found';
   if (m.includes('household-full')) return 'household-full';
   if (m.includes('already-in-household')) return 'already-in-household';
+  if (m.includes('too-many-attempts')) return 'too-many-attempts';
   if (/anonymous sign-ins are disabled/i.test(m)) return 'sharing-off';
   if (/network|fetch|timed out|offline/i.test(m)) return 'offline';
   return 'failed';
@@ -58,9 +60,27 @@ async function rpc<T>(name: string, args: Record<string, unknown> = {}): Promise
 
 export const createHousehold = (displayName: string) => rpc<string>('create_household', { p_display_name: displayName });
 export const createInvite = () => rpc<string>('create_invite');
-export const joinHousehold = (code: string, displayName: string) =>
-  rpc<string>('join_household', { p_code: code, p_display_name: displayName });
+/** A wrong code answers null rather than an error, so the server can count wrong tries (SEC-08). */
+export async function joinHousehold(code: string, displayName: string): Promise<Result<string>> {
+  const joined = await rpc<string | null>('join_household', { p_code: code, p_display_name: displayName });
+  if (!joined.ok) return joined;
+  return joined.value ? { ok: true, value: joined.value } : fail('invite-not-found');
+}
 export const leaveHousehold = () => rpc<null>('leave_household');
+/** Cancels every unused code for this household (SEC-08). */
+export const revokeInvites = () => rpc<null>('revoke_invites');
+/** Takes someone else out of this household (SEC-15). */
+export const removeMember = (userId: string) => rpc<null>('remove_member', { p_user: userId });
+
+export type InvitePreview = { name: string; members: number };
+
+/** Which household a code is for, before joining (SEC-16). Undefined when the code doesn't work. */
+export async function previewInvite(code: string): Promise<Result<InvitePreview | undefined>> {
+  const found = await rpc<{ household_name: string; member_count: number }[] | null>('preview_invite', { p_code: code });
+  if (!found.ok) return found;
+  const first = found.value?.[0];
+  return { ok: true, value: first ? { name: String(first.household_name), members: Number(first.member_count) } : undefined };
+}
 
 /** The household this phone belongs to, with its members; undefined if none. */
 export async function myHousehold(): Promise<Result<Household | undefined>> {
@@ -128,8 +148,12 @@ export function pushRows(householdId: string, userId: string, rows: readonly Row
   return pushTo('household_rows', { household_id: householdId }, userId, rows, 'household_id,kind,key');
 }
 
-/** Calls back with each row another phone writes, and when the member list changes. Returns a stop function. */
-export function listen(householdId: string, onRow: (row: Row) => void, onMembers: () => void): () => void {
+/**
+ * Calls back with each row another phone writes. The member list isn't
+ * published any more (SEC-06): the store re-reads it on return to the app and
+ * when a row arrives from someone it doesn't know. Returns a stop function.
+ */
+export function listen(householdId: string, onRow: (row: Row) => void): () => void {
   const channel: RealtimeChannel = supabase()
     .channel(`household:${householdId}`)
     .on(
@@ -138,9 +162,6 @@ export function listen(householdId: string, onRow: (row: Row) => void, onMembers
       (payload) => {
         if (payload.new && typeof payload.new === 'object' && 'kind' in payload.new) onRow(fromDb(payload.new as DbRow));
       },
-    )
-    .on('postgres_changes', { event: '*', schema: 'public', table: 'household_members', filter: `household_id=eq.${householdId}` }, () =>
-      onMembers(),
     )
     .subscribe();
   return () => {

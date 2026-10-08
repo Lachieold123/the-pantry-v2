@@ -2,13 +2,14 @@
 // errors read on screen, an expired sign-in offline (BUG-05, BUG-16), paging
 // past 1,000 rows, and which push failures count as refusals (BUG-03).
 import { currentAccount, problemFrom as accountProblem, pullAccountRows, sessionReady } from './account';
-import { problemFrom as householdProblem, signedInUser } from './household';
+import { joinHousehold, previewInvite, problemFrom as householdProblem, signedInUser } from './household';
 import { isRejection } from './pushRows';
 
 const mockAuth = {
   getSession: jest.fn(),
   signInAnonymously: jest.fn(),
 };
+const mockRpc = jest.fn();
 let mockRows: { kind: string; key: string; updated_at: number }[] = [];
 const mockOrders: string[] = [];
 
@@ -16,6 +17,7 @@ jest.mock('expo-apple-authentication', () => ({}));
 jest.mock('./supabase', () => ({
   supabase: () => ({
     auth: mockAuth,
+    rpc: (...args: unknown[]) => mockRpc(...args),
     from: () => {
       const q = {
         select: () => q,
@@ -96,5 +98,23 @@ describe('refusals (BUG-03)', () => {
     expect(isRejection({ code: '42501' })).toBe(false); // row security: try later
     expect(isRejection({ code: 'PGRST301' })).toBe(false); // expired token
     expect(isRejection(undefined)).toBe(false);
+  });
+});
+
+describe('invite codes (SEC-08, SEC-16)', () => {
+  beforeEach(() => mockAuth.getSession.mockResolvedValue({ data: { session: { user: { id: 'me' } } }, error: null }));
+  it('reads a wrong code (null from the server) as "invite not found"', async () => {
+    mockRpc.mockResolvedValue({ data: null, error: null });
+    expect(await joinHousehold('WRONG123', 'Sam')).toEqual({ ok: false, problem: 'invite-not-found' });
+  });
+  it('says when there have been too many wrong codes', async () => {
+    mockRpc.mockResolvedValue({ data: null, error: { message: 'too-many-attempts' } });
+    expect(await joinHousehold('WRONG123', 'Sam')).toEqual({ ok: false, problem: 'too-many-attempts' });
+  });
+  it('previews the household a code is for', async () => {
+    mockRpc.mockResolvedValue({ data: [{ household_name: 'Our place', member_count: 2 }], error: null });
+    expect(await previewInvite('ABCD2345')).toEqual({ ok: true, value: { name: 'Our place', members: 2 } });
+    mockRpc.mockResolvedValue({ data: [], error: null });
+    expect(await previewInvite('ABCD2345')).toEqual({ ok: true, value: undefined });
   });
 });

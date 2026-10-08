@@ -6,16 +6,15 @@ import { useState } from 'react';
 import { View } from 'react-native';
 
 import { shareText } from '@/lib/share';
-import { inviteCode, joinWithCode, leave, startHousehold, useHousehold } from '@/store/household';
+import { cancelInvites, inviteCode, joinWithCode, leave, startHousehold, useHousehold } from '@/store/household';
 import { PushedHeader } from '@/ui/patterns/PushedHeader';
 import { useToast } from '@/ui/patterns/Toast';
-import { Avatar } from '@/ui/primitives/Avatar';
 import { Button } from '@/ui/primitives/Button';
 import { Screen } from '@/ui/primitives/Screen';
 import { Text } from '@/ui/primitives/Text';
 import { TextField } from '@/ui/primitives/TextField';
-import { HOUSEHOLD } from '@/ui/tokens/screens';
 import { SPACE } from '@/ui/tokens/type';
+import { Members } from './Members';
 import { inviteMessage, PROBLEM_WORDS } from './words';
 
 export function HouseholdScreen() {
@@ -134,6 +133,12 @@ function Sharing() {
     const sent = await shareText(inviteMessage(code.value), 'Join our kitchen');
     if (sent === 'copied') toast({ message: 'Invite copied. Paste it into a message.' });
   };
+  const cancel = async () => {
+    setBusy(true);
+    const r = await cancelInvites();
+    setBusy(false);
+    toast({ message: r.ok ? 'Invite codes cancelled. Codes you sent won’t work now.' : PROBLEM_WORDS[r.problem] });
+  };
   const goodbye = async () => {
     setBusy(true);
     const left = await leave();
@@ -153,14 +158,7 @@ function Sharing() {
       <Text variant="body" colour="inkSoft">
         Everyone here shares one plan, one shopping list and one cupboard. Cookmarks, collections and your taste settings stay your own.
       </Text>
-      <View style={{ gap: SPACE.sm }} testID="household-members">
-        {household.members.map((m) => (
-          <View key={m.userId} style={{ flexDirection: 'row', alignItems: 'center', gap: SPACE.sm }}>
-            <Avatar name={m.name} size={HOUSEHOLD.avatar} />
-            <Text variant="row">{m.userId === me ? `${m.name} (you)` : m.name}</Text>
-          </View>
-        ))}
-      </View>
+      <Members household={household} me={me} />
       <Text variant="caption" accessibilityLiveRegion="polite" testID="household-status">
         {syncLine}
       </Text>
@@ -173,6 +171,7 @@ function Sharing() {
         onPress={() => void invite()}
         testID="household-invite"
       />
+      <Button label="Cancel unused invites" kind="quiet" disabled={busy} onPress={() => void cancel()} testID="household-cancel-invites" />
       {confirmLeave ? (
         <View style={{ gap: SPACE.sm }}>
           <Text variant="bodySmall" colour="inkSoft">

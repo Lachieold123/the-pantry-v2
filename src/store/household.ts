@@ -95,7 +95,13 @@ const engine = createEngine({
     const { userId } = useHousehold.getState();
     return householdId() && userId ? pushRows(householdId(), userId, rows) : fail;
   },
-  listen: (onRow) => listen(householdId(), onRow, () => void refreshMembers()),
+  listen: (onRow) =>
+    listen(householdId(), (row) => {
+      onRow(row);
+      // A row from someone not on the list: a new member. Re-read who's in.
+      const known = useHousehold.getState().household?.members.some((m) => m.userId === row.updatedBy);
+      if (!known) void refreshMembers();
+    }),
   // The saved sign-in loads first, so the live connection carries it and row security lets the rows through.
   ready: async () => {
     await signIn();
@@ -143,5 +149,16 @@ export async function signIn(): Promise<Result<string>> {
   return me;
 }
 
-export { adoptHousehold, inviteCode, joinWithCode, leave, recoverHousehold, startHousehold } from './householdActions';
-export type { Household, Problem } from '@/lib/household';
+export {
+  adoptHousehold,
+  cancelInvites,
+  deleteHouseholdData,
+  inviteCode,
+  inviteFor,
+  joinWithCode,
+  leave,
+  recoverHousehold,
+  removeMember,
+  startHousehold,
+} from './householdActions';
+export type { Household, InvitePreview, Problem } from '@/lib/household';

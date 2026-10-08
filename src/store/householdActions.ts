@@ -7,11 +7,16 @@ import {
   joinHousehold,
   leaveHousehold,
   myHousehold,
+  previewInvite,
   pullRows,
+  removeMember as removeOnServer,
+  revokeInvites,
   type Household,
+  type InvitePreview,
   type Problem,
   type Result,
 } from '@/lib/household';
+import { deleteAccount as deleteUser } from '@/lib/account';
 import {
   applyMirror,
   EMPTY_HOUSEHOLD,
@@ -90,6 +95,38 @@ export async function recoverHousehold(): Promise<void> {
 /** A link and code to send someone. */
 export async function inviteCode(): Promise<Result<string>> {
   return createInvite();
+}
+
+/** Which household a code is for, before joining (SEC-16). */
+export function inviteFor(code: string): Promise<Result<InvitePreview | undefined>> {
+  return previewInvite(code);
+}
+
+/** Cancels the household's unused invite codes (SEC-08). */
+export function cancelInvites(): Promise<Result<null>> {
+  return revokeInvites();
+}
+
+/** Takes someone else out of the household (SEC-15), then shows the list without them. */
+export async function removeMember(userId: string): Promise<Result<null>> {
+  const removed = await removeOnServer(userId);
+  if (!removed.ok) return removed;
+  const fresh = await myHousehold();
+  if (fresh.ok && fresh.value) useHousehold.setState({ household: fresh.value });
+  return removed;
+}
+
+/**
+ * For a phone that shared a kitchen without an account (the quiet anonymous
+ * user): deletes that user and everything the server keeps for it, leaving
+ * any household first. The plan, list and cupboard stay on this phone.
+ */
+export async function deleteHouseholdData(): Promise<Result<null>> {
+  const gone = await deleteUser();
+  if (!gone.ok) return { ok: false, problem: gone.problem === 'offline' ? 'offline' : 'failed' };
+  stopSync();
+  useHousehold.setState({ ...EMPTY_HOUSEHOLD, userId: undefined, rejoin: undefined, lastSyncedAt: undefined });
+  return { ok: true, value: null };
 }
 
 /** Leave: this phone keeps its plan, list and cupboard as they are, and stops sharing. */
