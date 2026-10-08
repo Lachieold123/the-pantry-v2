@@ -4,7 +4,7 @@
 import { View } from 'react-native';
 
 import { splitStepTimers } from '@/domain/cook/cook';
-import { formatCountdown, secondsLeft, type CookTimer } from '@/domain/cook/timers';
+import { formatCountdown, secondsLeft, timerForChip, type CookTimer } from '@/domain/cook/timers';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { COOK } from '@/ui/tokens/cook';
@@ -14,7 +14,7 @@ type Props = {
   step: number;
   timers: readonly CookTimer[];
   now: number;
-  onStartTimer: (label: string, seconds: number) => void;
+  onStartTimer: (label: string, seconds: number, segment: number) => void;
 };
 
 export function CookStep({ text, step, timers, now, onStartTimer }: Props) {
@@ -32,8 +32,9 @@ export function CookStep({ text, step, timers, now, onStartTimer }: Props) {
       <Text variant="cookStepText" testID="cook-step-text">
         {segments.map((seg, i) => {
           if (seg.type === 'text') return seg.text;
-          // The newest timer for this time on this step decides how its chip looks.
-          const timer = timers.findLast((t) => t.stepIndex === step && t.label === seg.label);
+          // The newest timer started from this chip decides how it looks. Two equal times in one
+          // step are two chips with their own timers (BUG-11).
+          const timer = timerForChip(timers, step, i);
           const left = timer ? secondsLeft(timer, now) : undefined;
           const running = left !== undefined && left > 0;
           const finished = left === 0;
@@ -48,9 +49,12 @@ export function CookStep({ text, step, timers, now, onStartTimer }: Props) {
               {...(running
                 ? { accessibilityLabel: `${seg.label} timer, ${formatCountdown(left)} left` }
                 : {
-                    accessibilityRole: 'button' as const,
+                    // iOS only exposes text nested in text as its own element for links, so VoiceOver
+                    // can reach and start each timer (audit, accessibility).
+                    accessibilityRole: 'link' as const,
                     accessibilityLabel: `Start a ${seg.label} timer`,
-                    onPress: () => onStartTimer(seg.label, seg.seconds),
+                    accessibilityHint: 'Starts a timer',
+                    onPress: () => onStartTimer(seg.label, seg.seconds, i),
                   })}
             >
               {` ${running ? formatCountdown(left) : finished ? 'Done ✓' : seg.label} `}

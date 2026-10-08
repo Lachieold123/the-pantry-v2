@@ -18,8 +18,11 @@ const UNICODE_FRACTIONS: Readonly<Record<string, number>> = {
   '⅙': 1 / 6,
 };
 
-/** Matches one number as written in recipes: 2, 2.5, 1/2, 1 1/2, ½, 1½. */
-export const NUMBER_PATTERN = String.raw`(?:\d+\s+\d+\/\d+|\d+\/\d+|\d*[¼½¾⅓⅔⅛⅜⅝⅞⅕⅙]|\d+(?:[.,]\d+)?)`;
+/**
+ * Matches one number as written in recipes: 2, 2.5, 1/2, 1 1/2, ½, 1½, and
+ * 1,000 (a thousands comma, read before the decimal comma of "1,5": BUG-15).
+ */
+export const NUMBER_PATTERN = String.raw`(?:\d+\s+\d+\/\d+|\d+\/\d+|\d*[¼½¾⅓⅔⅛⅜⅝⅞⅕⅙]|\d{1,3}(?:,\d{3})+(?![\d.,])|\d+(?:[.,]\d+)?)`;
 
 export function parseNumber(text: string): number | undefined {
   const s = text.trim();
@@ -29,6 +32,7 @@ export function parseNumber(text: string): number | undefined {
   if (mixed) return Number(mixed[1]) + Number(mixed[2]) / Number(mixed[3]);
   const fraction = /^(\d+)\/(\d+)$/.exec(s);
   if (fraction) return Number(fraction[2]) === 0 ? undefined : Number(fraction[1]) / Number(fraction[2]);
+  if (/^\d{1,3}(?:,\d{3})+$/.test(s)) return Number(s.replace(/,/g, ''));
   if (!/^\d+(?:[.,]\d+)?$/.test(s)) return undefined;
   return Number(s.replace(',', '.'));
 }

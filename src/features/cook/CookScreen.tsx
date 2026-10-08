@@ -139,7 +139,7 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
                 step={step}
                 timers={timers}
                 now={now}
-                onStartTimer={(label, seconds) => void start(label, step, seconds)}
+                onStartTimer={(label, seconds, segment) => void start(label, step, seconds, segment)}
               />
             </Animated.View>
           </ScrollView>

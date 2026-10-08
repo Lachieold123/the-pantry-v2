@@ -12,6 +12,9 @@ export function useCookTimers(recipeTitle: string) {
   const [now, setNow] = useState(() => Date.now());
   const scheduled = useRef(new Map<string, string | undefined>());
   const announced = useRef(new Set<string>());
+  /** Timers not yet dismissed, and whether Cook Mode is still open: checked after the slow permission prompt. */
+  const live = useRef(new Set<string>());
+  const alive = useRef(true);
 
   useEffect(() => {
     if (timers.length === 0) return;
@@ -31,21 +34,30 @@ export function useCookTimers(recipeTitle: string) {
   // Leaving Cook Mode cancels any alerts still waiting.
   useEffect(() => {
     const pending = scheduled.current;
+    alive.current = true;
     return () => {
+      alive.current = false;
       for (const id of pending.values()) void cancelScheduled(id);
     };
   }, []);
 
-  const start = async (label: string, stepIndex: number, seconds: number) => {
-    const timer = startTimer(newId(), label, stepIndex, seconds, Date.now());
+  const start = async (label: string, stepIndex: number, seconds: number, segment?: number) => {
+    const timer = startTimer(newId(), label, stepIndex, seconds, Date.now(), segment);
+    live.current.add(timer.id);
     setTimers((list) => [...list, timer]);
     setNow(Date.now());
-    if (await ensureNotificationPermission()) {
-      scheduled.current.set(timer.id, await scheduleAt(timer.endsAt, `${label} is up`, `${recipeTitle}, step ${stepIndex + 1}`));
+    if (!(await ensureNotificationPermission())) return;
+    const id = await scheduleAt(timer.endsAt, `${label} is up`, `${recipeTitle}, step ${stepIndex + 1}`);
+    // Dismissed, or Cook Mode closed, while the permission prompt was up: don't leave the alert behind (BUG-22).
+    if (!alive.current || !live.current.has(timer.id)) {
+      void cancelScheduled(id);
+      return;
     }
+    scheduled.current.set(timer.id, id);
   };
 
   const dismiss = (id: string) => {
+    live.current.delete(id);
     void cancelScheduled(scheduled.current.get(id));
     scheduled.current.delete(id);
     setTimers((list) => list.filter((t) => t.id !== id));

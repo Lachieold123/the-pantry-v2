@@ -105,3 +105,16 @@ describe('myRecipeId', () => {
     assert.ok(catalogue.every((r) => !r.id.startsWith('my-')));
   });
 });
+
+describe('ingredient problems name the line (BUG-26)', () => {
+  it('says which amount to check', () => {
+    for (const line of ['0 eggs', '1/0 cup milk']) {
+      const built = buildRecipe('x', draft({ ingredientsText: line }), 'user', index);
+      assert.equal(built.problems.find((p) => p.field === 'ingredients')?.message, `Check the amount in "${line}".`);
+    }
+  });
+  it('says when a line is only an amount', () => {
+    const built = buildRecipe('x', draft({ ingredientsText: '500 g' }), 'user', index);
+    assert.match(built.problems.find((p) => p.field === 'ingredients')?.message ?? '', /no ingredient/);
+  });
+});

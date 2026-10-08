@@ -1,8 +1,18 @@
 // Cook Mode helpers: finding timers in step text, and the cooked log.
+import { NUMBER_PATTERN, parseNumber } from '../ingredients/quantity';
 
 export type StepSegment = { type: 'text'; text: string } | { type: 'timer'; label: string; seconds: number };
 
-const DURATION = /(\d+(?:\.\d+)?)(?:\s*(?:-|–|to)\s*(\d+(?:\.\d+)?))?\s*(hours?|hrs?|minutes?|mins?|seconds?|secs?)\b/gi;
+/**
+ * A time in a step: "10 minutes", "8–10 mins", "1½ hours", "1 1/2 hours", and
+ * "1 hour 30 minutes" as one timer (BUG-21). A number must start where a word
+ * could, so nothing matches from the middle of "12" or "1/2".
+ */
+const DURATION = new RegExp(
+  String.raw`(?<![\w/.])(${NUMBER_PATTERN})(?:\s*(?:-|–|to)\s*(${NUMBER_PATTERN}))?\s*` +
+    String.raw`(?:(hours?|hrs?)\b(?:,?\s*(?:and\s+)?(\d+)\s*(?:minutes?|mins?)\b)?|(minutes?|mins?|seconds?|secs?)\b)`,
+  'gi',
+);
 
 /** Phrases where a duration is advice, not something to time: "keeps for 3 days", "up to 2 hours ahead". */
 const NOT_A_TIMER_BEFORE = /\b(keeps?|lasts?|store[sd]?|up to|ahead|in advance|within|every|marinate[sd]? (?:for )?(?:at least )?)\s*$/i;
@@ -28,8 +38,8 @@ export function splitStepTimers(text: string): StepSegment[] {
     const end = start + m[0].length;
     const before = text.slice(Math.max(0, start - 30), start);
     const after = text.slice(end, end + 25);
-    const upperBound = Number(m[2] ?? m[1]);
-    const seconds = toSeconds(upperBound, m[3] ?? 'min');
+    const upperBound = parseNumber(m[2] ?? m[1] ?? '') ?? 0;
+    const seconds = toSeconds(upperBound, m[3] ?? m[5] ?? 'min') + (m[4] ? Number(m[4]) * 60 : 0);
     if (NOT_A_TIMER_BEFORE.test(before) || NOT_A_TIMER_AFTER.test(after) || seconds <= 0 || seconds > 4 * 3600) continue;
     if (start > last) out.push({ type: 'text', text: text.slice(last, start) });
     out.push({ type: 'timer', label: m[0], seconds });

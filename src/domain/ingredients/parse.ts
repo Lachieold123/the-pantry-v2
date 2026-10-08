@@ -4,7 +4,7 @@
 // custom recipes. Anything it isn't sure about is reported as an issue so a
 // person can check it: guessing silently is how the old app went wrong.
 
-import { NUMBER_PATTERN, parseNumber, type Quantity } from './quantity';
+import { mapQuantity, NUMBER_PATTERN, parseNumber, type Quantity } from './quantity';
 import type { IngredientLine, IngredientMatcher, ParsedLine, ParseIssue } from './types';
 import { unitFromText, UNITS, type UnitId } from './units';
 
@@ -61,10 +61,22 @@ export function parseIngredientLine(raw: string, match?: IngredientMatcher): Par
       const a = parseNumber(q[1] ?? '');
       const b = q[2] ? parseNumber(q[2]) : undefined;
       if (a !== undefined) quantity = b !== undefined && b > a ? { min: a, max: b } : a;
+      // "3-2 eggs" is a typo, not a range: say so rather than guess (BUG-26).
+      if (a !== undefined && b !== undefined && b <= a) issues.push('no-quantity');
       text = text.slice(q[0].length);
+      // "1 x 400g tin tomatoes": the count times the size inside it (BUG-20).
+      const inner = /x\s*$/i.test(q[0]) ? LEADING_QUANTITY.exec(text) : null;
+      const size = inner ? parseNumber(inner[1] ?? '') : undefined;
+      const sizeUnit = inner && size !== undefined ? readUnit(text.slice(inner[0].length)) : undefined;
+      if (inner && size !== undefined && sizeUnit && quantity !== undefined) {
+        quantity = mapQuantity(quantity, (n) => n * size);
+        text = text.slice(inner[0].length);
+      }
       const u = readUnit(text);
-      // "4 cloves" on its own is the spice, not a unit of garlic: keep the word as the item.
-      if (u && text.slice(u.length).trim().replace(/^[,(]/, '').trim() !== '') {
+      const rest = u ? text.slice(u.length).trim().replace(/^[,(]/, '').trim() : '';
+      // "4 cloves" on its own is the spice, not a unit of garlic: keep the word as the item. But "500 g"
+      // or "2 cups" on its own is a measure of nothing, not an ingredient called "g" (BUG-26).
+      if (u && (rest !== '' || UNITS[u.unit].kind !== 'count')) {
         unit = u.unit;
         text = text.slice(u.length).trim();
       }
