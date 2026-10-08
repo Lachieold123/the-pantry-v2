@@ -12,7 +12,8 @@ import type { TimeFilter } from '@/domain/recipes/search';
 import { CUISINES, DIFFICULTIES } from '@/domain/recipes/types';
 import { needLine } from '@/domain/cupboard/cookable';
 import { defaultHomeMode, hasHomeFilters, homeFeed, NO_HOME_FILTERS, type HomeFilters, type HomeMode } from '@/domain/suggestions/home';
-import { toISODate, tonightsDinner } from '@/domain/plan/week';
+import { tonightsDinner } from '@/domain/plan/week';
+import { useToday } from '@/lib/today';
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { ingredientName, useCookableNow } from '@/store/cookable';
 import { useWelcomeBack } from '@/store/oldAppImport';
@@ -51,7 +52,7 @@ export function FeedScreen() {
   const cook = useCookableNow();
   const getRecipe = useRecipeLookup();
   const bookmarks = useBookmarks();
-  const tonight = tonightsDinner(entries, toISODate(new Date()));
+  const tonight = tonightsDinner(entries, useToday());
   // Starts on "What I have" whenever the cupboard can make something; a tap on the switch wins after that.
   // The welcome's "Show what I can cook" asks for it outright (?show=pantry): even a cupboard of lemon and
   // parsley should land on what's nearly there, not on everything.

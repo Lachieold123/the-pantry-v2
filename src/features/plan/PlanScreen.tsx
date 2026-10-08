@@ -8,9 +8,10 @@ import { useState } from 'react';
 import { View } from 'react-native';
 
 import { firstOpenSlot, weekAsText, weekProgress } from '@/domain/plan/summary';
-import { entriesFor, fromISODate, isPast, toISODate, visibleWeeks, weekDays, weekStart, type ISODate } from '@/domain/plan/week';
+import { entriesFor, fromISODate, isPast, visibleWeeks, weekDays, weekStart, type ISODate } from '@/domain/plan/week';
 import { longDate, shortDate, weekdayName } from '@/lib/dates';
 import { shareText } from '@/lib/share';
+import { useToday } from '@/lib/today';
 import { usePlan } from '@/store/plan';
 import { useRecipeLookup } from '@/store/recipeBook';
 import { useWeekList } from '@/store/shoppingList';
@@ -31,10 +32,12 @@ export function PlanScreen() {
   const toast = useToast();
   const entries = usePlan((s) => s.entries);
   const getRecipe = useRecipeLookup();
-  const today = toISODate(new Date());
+  const today = useToday();
   const weeks = visibleWeeks(today);
   const days = [...weekDays(weeks.thisWeek), ...weekDays(weeks.nextWeek)];
-  const [selected, setSelected] = useState<ISODate>(today);
+  // Today unless you picked a day; after midnight (or a week away) it moves on with the date (BUG-12).
+  const [picked, setSelected] = useState<ISODate | undefined>();
+  const selected = picked !== undefined && days.includes(picked) ? picked : today;
   const week = weekStart(selected);
   const progress = weekProgress(entries, week);
   const dayWeek = useWeekList(week);

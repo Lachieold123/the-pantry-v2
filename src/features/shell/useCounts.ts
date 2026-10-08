@@ -2,15 +2,15 @@
 // Recipe counts only count ids that still resolve to a recipe, the same way
 // the pages they open list them, so the number always matches the page
 // (health check 2026-10-05 #7).
-import { toISODate, upcomingCount } from '@/domain/plan/week';
+import { upcomingCount } from '@/domain/plan/week';
+import { useToday } from '@/lib/today';
 import { useMyRecipes } from '@/store/myRecipes';
 import { useRecipeLookup } from '@/store/recipeBook';
 import { usePlan } from '@/store/plan';
 import { useSaved } from '@/store/saved';
 
 export function usePlanBadge(): number {
-  // Today's date is read on render; the tab bar re-renders on every tab change, which is often enough.
-  const today = toISODate(new Date());
+  const today = useToday();
   return usePlan((s) => upcomingCount(s.entries, today));
 }
 

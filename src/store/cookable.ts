@@ -7,7 +7,7 @@ import { useMemo } from 'react';
 import { INGREDIENTS, KITCHEN } from '@/data/catalogue/catalogue';
 import { quickAdds, whatCanICook, type CookableMatch } from '@/domain/cupboard/cookable';
 import { cupboardIds } from '@/domain/cupboard/match';
-import { toISODate } from '@/domain/plan/week';
+import { useToday } from '@/lib/today';
 import { NO_FILTERS } from '@/domain/recipes/search';
 import { eligibleForSurprise } from '@/domain/suggestions/surprise';
 import { useCupboard } from './cupboard';
@@ -31,7 +31,7 @@ export function useCookableNow(): CookableNow {
   const hidden = useSaved((s) => s.hidden);
   const bookmarks = useSaved((s) => s.bookmarks);
   const recipes = useAllRecipes();
-  const today = toISODate(new Date());
+  const today = useToday();
   return useMemo(() => {
     const have = cupboardIds(items);
     const eats = eligibleForSurprise({ recipes, filters: NO_FILTERS, diet, avoid, hidden: new Set(hidden), index: INGREDIENTS });
