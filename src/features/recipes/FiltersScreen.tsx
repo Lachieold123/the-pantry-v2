@@ -11,9 +11,8 @@ import { CUISINE_LABELS, DIFFICULTY_LABELS, MEAL_TYPE_LABELS } from '@/domain/re
 import { seasonOn, type TimeFilter } from '@/domain/recipes/search';
 import { CUISINES, DIFFICULTIES, MEAL_TYPES } from '@/domain/recipes/types';
 import { goBack } from '@/lib/navigation';
-import { useAllRecipes } from '@/store/recipeBook';
+import { useEatableRecipes } from '@/store/eatable';
 import { toggleIn, useRecipeFilters } from '@/store/recipeFilters';
-import { useSaved } from '@/store/saved';
 import { ActionBar } from '@/ui/patterns/ActionBar';
 import { Button } from '@/ui/primitives/Button';
 import { IconButton } from '@/ui/primitives/IconButton';
@@ -79,11 +78,10 @@ export function FiltersScreen() {
     useShallow(({ filters, update, clear, setShowAll }) => ({ filters, update, clear, setShowAll })),
   );
   const { results, activeFilters, browsing } = useRecipeResults();
-  const all = useAllRecipes();
-  const hidden = useSaved((s) => s.hidden);
+  const eatable = useEatableRecipes();
   const season = seasonOn(new Date());
-  // With nothing chosen Browse shows its shelves, so the count is everything the cook hasn't hidden.
-  const count = browsing ? all.filter((r) => !hidden.includes(r.id)).length : results.length;
+  // With nothing chosen Browse shows its shelves, so the count is everything this cook eats.
+  const count = browsing ? eatable.length : results.length;
   const show = () => {
     // "Show 170 recipes" should show them, not the shelves.
     if (browsing) setShowAll(true);

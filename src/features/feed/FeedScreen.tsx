@@ -47,7 +47,7 @@ export function FeedScreen() {
   const dismissWelcome = useWelcomeBack((s) => s.dismiss);
   const all = useAllRecipes();
   // The whole ranked list, so a filter like "Breakfast" still has plenty to show.
-  const forYou = useForYou(all.length);
+  const forYou = useForYou(all.length, filters.meal);
   const cook = useCookableNow();
   const getRecipe = useRecipeLookup();
   const bookmarks = useBookmarks();

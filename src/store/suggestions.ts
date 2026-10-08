@@ -3,8 +3,9 @@ import { useMemo } from 'react';
 
 import { INGREDIENTS } from '@/data/catalogue/catalogue';
 import { recentlyCooked } from '@/domain/cook/cook';
-import { entriesInWeek, toISODate, visibleWeeks } from '@/domain/plan/week';
-import type { Recipe } from '@/domain/recipes/types';
+import { entriesInWeek, visibleWeeks } from '@/domain/plan/week';
+import { useToday } from '@/lib/today';
+import type { MealType, Recipe } from '@/domain/recipes/types';
 import { forYou } from '@/domain/suggestions/forYou';
 import { useCookLog } from './cookLog';
 import { usePlan } from './plan';
@@ -12,7 +13,8 @@ import { usePreferences } from './preferences';
 import { useAllRecipes } from './recipeBook';
 import { useSaved } from './saved';
 
-export function useForYou(count: number): Recipe[] {
+/** Ranked suggestions for a meal (dinner unless asked). */
+export function useForYou(count: number, meal?: MealType): Recipe[] {
   const diet = usePreferences((s) => s.diet);
   const avoid = usePreferences((s) => s.avoid);
   const cuisines = usePreferences((s) => s.cuisines);
@@ -21,7 +23,7 @@ export function useForYou(count: number): Recipe[] {
   const entries = usePlan((s) => s.entries);
   const log = useCookLog((s) => s.log);
   const recipes = useAllRecipes();
-  const today = toISODate(new Date());
+  const today = useToday();
   return useMemo(
     () =>
       forYou({
@@ -34,7 +36,8 @@ export function useForYou(count: number): Recipe[] {
         // Same suggestions all day; fresh ones tomorrow.
         seed: today,
         count,
+        meal,
       }),
-    [recipes, diet, avoid, cuisines, weeknight, hidden, entries, log, today, count],
+    [recipes, diet, avoid, cuisines, weeknight, hidden, entries, log, today, count, meal],
   );
 }

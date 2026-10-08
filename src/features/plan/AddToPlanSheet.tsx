@@ -11,6 +11,7 @@ import { fromISODate, isISODate, toISODate, type Slot } from '@/domain/plan/week
 import { longDate } from '@/lib/dates';
 import { usePlan } from '@/store/plan';
 import { useAllRecipes, useRecipeLookup } from '@/store/recipeBook';
+import { useEatableRecipes } from '@/store/eatable';
 import { useSaved } from '@/store/saved';
 import { useForYou } from '@/store/suggestions';
 import { RecipeCard } from '@/ui/patterns/RecipeCard';
@@ -46,7 +47,9 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
   const [query, setQuery] = useState('');
   const all = useAllRecipes();
   const getRecipe = useRecipeLookup();
-  const searchIndex = useMemo(() => indexForSearch(all, (c) => CUISINE_LABELS[c]), [all]);
+  // Search only what this cook eats: diet and avoid are hard rules here too (BUG-07).
+  const eatable = useEatableRecipes();
+  const searchIndex = useMemo(() => indexForSearch(eatable, (c) => CUISINE_LABELS[c]), [eatable]);
 
   // Saved recipes for this meal only: arancini isn't a breakfast. Search still finds anything.
   const saved = useMemo(
@@ -55,7 +58,7 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
   );
   // Before a search, ideas that suit this cook (diet, taste, not planned or cooked lately), not the catalogue A–Z.
   // The whole ranked catalogue, then filtered by meal: a top-75 cut left breakfast with one idea.
-  const forYou = useForYou(all.length);
+  const forYou = useForYou(all.length, slot);
   const results = useMemo(() => {
     const pool = query.trim() ? searchRecipes(searchIndex, query) : forYou.filter((r) => r.mealTypes.includes(slot));
     return pool.filter((r) => !hidden.includes(r.id)).slice(0, MAX_RESULTS);

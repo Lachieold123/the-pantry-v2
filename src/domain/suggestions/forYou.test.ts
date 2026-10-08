@@ -79,3 +79,15 @@ describe('stableJitter', () => {
     assert.equal(a, stableJitter('s', 'x'));
   });
 });
+
+describe('forYou for other meals (BUG-13)', () => {
+  it('ranks every breakfast when asked for breakfast, not just dishes that are also dinners', () => {
+    const breakfasts = catalogue.filter((r) => r.mealTypes.includes('breakfast'));
+    const picks = forYou({ ...base, count: catalogue.length, meal: 'breakfast' });
+    assert.equal(picks.length, breakfasts.length);
+    assert.ok(picks.every((p) => p.mealTypes.includes('breakfast')));
+  });
+  it('is dinner by default', () => {
+    assert.ok(forYou({ ...base, count: 50 }).every((p) => p.mealTypes.includes('dinner')));
+  });
+});
