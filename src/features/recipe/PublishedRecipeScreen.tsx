@@ -4,12 +4,13 @@
 // planning and Cook Mode work on this phone's recipe book, which these
 // recipes aren't part of yet, so those actions aren't offered.
 import { useRouter } from 'expo-router';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ScrollView, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { photoUrl, fetchPublishedRecipe, problemWords } from '@/lib/published';
 import { useRead } from '@/lib/usePublished';
+import { useHomeEvents } from '@/store/homeEvents';
 import { goBack } from '@/lib/navigation';
 import { usePreferences } from '@/store/preferences';
 import { EmptyState } from '@/ui/patterns/EmptyState';
@@ -33,6 +34,7 @@ export function PublishedRecipeScreen({ id }: { id: string }) {
   const insets = useSafeAreaInsets();
   const styles = useStyles();
   const load = useRead(fetchPublishedRecipe, id);
+  useDwell(id);
   const units = usePreferences((s) => s.units);
   const setUnits = usePreferences((s) => s.setUnits);
   const [chosenServings, setServings] = useState<number | undefined>();
@@ -165,3 +167,15 @@ const useStyles = makeStyles(({ colours }) => ({
   nav: { position: 'absolute', left: SPACE.gutter, right: SPACE.gutter, flexDirection: 'row' },
   credit: { paddingTop: SPACE.md, gap: SPACE.xxs, borderTopWidth: 1, borderTopColor: colours.border },
 }));
+
+/** Logs how long the recipe stayed open, for the Home engine's dwell signal. Under 3 seconds is a bounce, not a read. */
+function useDwell(id: string) {
+  const log = useHomeEvents((s) => s.log);
+  useEffect(() => {
+    const start = Date.now();
+    return () => {
+      const seconds = Math.round((Date.now() - start) / 1000);
+      if (seconds >= 3) log('dwell', { itemId: id, seconds: Math.min(seconds, 1800), surface: 'recipe' });
+    };
+  }, [id, log]);
+}

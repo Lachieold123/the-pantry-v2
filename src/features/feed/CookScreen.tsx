@@ -4,12 +4,13 @@ import { View } from 'react-native';
 
 import type { Cook } from '@/domain/published/published';
 import { countLabel } from '@/domain/published/published';
+import { followedHere, useHomeEvents } from '@/store/homeEvents';
+import { Button } from '@/ui/primitives/Button';
 import { fetchCook, photoUrl, problemWords } from '@/lib/published';
 import { useFeed, useRead } from '@/lib/usePublished';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { PushedHeader } from '@/ui/patterns/PushedHeader';
 import { Avatar } from '@/ui/primitives/Avatar';
-import { Button } from '@/ui/primitives/Button';
 import { Screen } from '@/ui/primitives/Screen';
 import { Text } from '@/ui/primitives/Text';
 import { FEED } from '@/ui/tokens/screens';
@@ -75,6 +76,28 @@ function Profile({ cook }: { cook: Cook }) {
           {cook.bio}
         </Text>
       ) : null}
+      <FollowButton cook={cook} />
+    </View>
+  );
+}
+
+/**
+ * Follow, kept on this phone for now: Home ranks this cook's recipes first
+ * straight away. It doesn't change their follower count on the server
+ * (writes wait for sync), so the button says so.
+ */
+function FollowButton({ cook }: { cook: Cook }) {
+  const following = useHomeEvents((s) => followedHere(s.events, cook.id) ?? false);
+  const log = useHomeEvents((s) => s.log);
+  return (
+    <View style={{ gap: SPACE.xxs }}>
+      <Button
+        label={following ? 'Following' : 'Follow'}
+        kind={following ? 'soft' : 'primary'}
+        onPress={() => log(following ? 'unfollow' : 'follow', { cookId: cook.id, surface: 'cook' })}
+        testID="cook-follow"
+      />
+      <Text variant="metaSmall">Saved on this phone; Home puts their recipes first.</Text>
     </View>
   );
 }

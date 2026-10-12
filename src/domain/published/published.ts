@@ -140,6 +140,11 @@ function parseGroup(raw: unknown): IngredientGroupBlock | undefined {
   return title ? { title, items } : { items };
 }
 
+/** The recipe's `ingredientGroups` alone (the Home engine reads only these). Bad groups are dropped. */
+export function parseIngredientGroups(raw: unknown): IngredientGroupBlock[] {
+  return Array.isArray(raw) ? raw.map(parseGroup).filter((g) => g !== undefined) : [];
+}
+
 /** The `recipe` jsonb column onto the recipe page model. Anything unreadable gives undefined. */
 export function parseRecipe(raw: unknown, id: string): PublishedRecipe | undefined {
   if (!isObj(raw)) return undefined;
