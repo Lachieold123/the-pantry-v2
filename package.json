@@ -15,6 +15,7 @@
     "catalogue:convert": "tsx scripts/convert-old-recipes.mts",
     "catalogue:check-ingredients": "tsx scripts/check-ingredient-coverage.mts",
     "catalogue:check-house": "tsx scripts/check-house-recipes.mts",
+    "catalogue:photo-sources": "tsx scripts/write-photo-sources.mts",
     "export:web": "expo export --platform web",
     "format:check": "prettier --check \"src/**/*.{ts,tsx}\" \"scripts/**/*.mts\" \"e2e/**/*.{ts,mjs}\"",
     "test:web": "playwright test -c e2e/web/playwright.config.ts"

@@ -23,7 +23,7 @@ import type { ParseIssue } from '../src/domain/ingredients/types.ts';
 import { deriveDiets } from '../src/domain/recipes/diets.ts';
 import type { CuisineId, MealType, Recipe, Season } from '../src/domain/recipes/types.ts';
 import { validateRecipe } from '../src/domain/recipes/validate.ts';
-import { loadHouseRecipes } from './house-recipes.mts';
+import { loadHouseRecipes, writePhotoSources } from './house-recipes.mts';
 import { applyFix, type Fix, type RawRecipe as OldRecipe } from './recipe-fix.mts';
 
 type Tags = { title: string; cuisine: CuisineId; mealTypes: MealType[]; onePot: boolean; seasons?: Season[]; summary: string };
@@ -156,6 +156,9 @@ writeFileSync(
     '',
   ].join('\n'),
 );
+
+// The credit links' file pages (K-17), from the same batches.
+writePhotoSources(root);
 
 const csvCell = (v: string) => (/[",\n]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v);
 const csv = [
