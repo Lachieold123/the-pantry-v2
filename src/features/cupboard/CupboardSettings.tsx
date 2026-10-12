@@ -49,19 +49,29 @@ export function CupboardSettings({ shelfDetail, onShelf, moveTicked, onMoveTicke
   );
 }
 
-type StaplesProps = { assume: boolean; ticked: number; onChange: (assume: boolean) => void };
+type StaplesProps = {
+  assume: boolean;
+  ticked: number;
+  onChange: (assume: boolean) => void;
+  /** Oil counts as always in (the default). */
+  oil: boolean;
+  onOil: (oil: boolean) => void;
+  /** Substitutes (dried thyme for fresh) count as having it. */
+  substitutes: boolean;
+  onSubstitutes: (on: boolean) => void;
+};
 
 /**
  * v1's "Assume I have pantry staples", saved this time. It flips the shelf
- * between "assume stocked" and "only what I tick"; salt, pepper, oil and
- * water count either way, and the caption says so.
+ * between "assume stocked" and "only what I tick"; salt, pepper and water
+ * count either way, oil while its switch is on, and the caption says so.
+ * Substitutes are off by default: a stand-in changes the dish.
  */
-export function StaplesToggle({ assume, ticked, onChange }: StaplesProps) {
+export function StaplesToggle({ assume, ticked, onChange, oil, onOil, substitutes, onSubstitutes }: StaplesProps) {
   const styles = useStyles();
   const mine = ticked === 0 ? 'No shelf items ticked yet' : `Only the ${ticked} shelf ${ticked === 1 ? 'item' : 'items'} you've ticked`;
-  const detail = assume
-    ? 'Spices, sauces and baking basics count as in. Salt, pepper, oil and water always do.'
-    : `${mine}. Salt, pepper, oil and water always count.`;
+  const always = oil ? 'Salt, pepper, oil and water always count.' : 'Salt, pepper and water always count.';
+  const detail = assume ? `Spices, sauces and baking basics count as in. ${always}` : `${mine}. ${always}`;
   return (
     <View style={styles.block} testID="cupboard-staples-row">
       <View style={styles.row}>
@@ -70,6 +80,20 @@ export function StaplesToggle({ assume, ticked, onChange }: StaplesProps) {
           <Text variant="caption">{detail}</Text>
         </View>
         <Toggle value={assume} onChange={onChange} label="Assume I have pantry staples" testID="cupboard-staples" />
+      </View>
+      <View style={[styles.row, styles.divider]}>
+        <View style={styles.text}>
+          <Text variant="rowSmall">Oil is always in</Text>
+          <Text variant="caption">Off: recipes that need oil list it like anything else</Text>
+        </View>
+        <Toggle value={oil} onChange={onOil} label="Oil is always in" testID="cupboard-oil" />
+      </View>
+      <View style={[styles.row, styles.divider]}>
+        <View style={styles.text}>
+          <Text variant="rowSmall">Count substitutes</Text>
+          <Text variant="caption">Dried thyme for fresh, lime for lemon, one stock for another</Text>
+        </View>
+        <Toggle value={substitutes} onChange={onSubstitutes} label="Count substitutes" testID="cupboard-substitutes" />
       </View>
     </View>
   );

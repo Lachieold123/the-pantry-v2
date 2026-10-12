@@ -95,6 +95,10 @@ export function CupboardScreen() {
         assume={shelf.mode === 'assume'}
         ticked={shelf.ids.length}
         onChange={(assume) => setShelf({ ...shelf, mode: assume ? 'assume' : 'mine' })}
+        oil={shelf.oil !== false}
+        onOil={(oil) => setShelf({ ...shelf, oil })}
+        substitutes={shelf.substitutes === true}
+        onSubstitutes={(substitutes) => setShelf({ ...shelf, substitutes })}
       />
       {ids.length ? <MatchShelves fromSaved={fromSaved} suggested={suggested} /> : null}
       <CupboardSettings

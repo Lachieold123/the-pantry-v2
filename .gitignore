@@ -16,3 +16,6 @@ expo-env.d.ts
 # Web journey test output (npm run test:web)
 test-results/
 e2e-report/
+
+# Read-only Supabase snapshot for the Home engine scripts
+scripts/.cache/

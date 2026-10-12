@@ -58,5 +58,6 @@ export function useCookableNow(): CookableNow {
 
 /** The name a cook reads for an ingredient id. */
 export function ingredientName(id: string): string {
-  return INGREDIENTS.byId.get(id)?.name ?? id;
+  // "unknown:salt-cod" is a real thing the database doesn't stock: show its words.
+  return INGREDIENTS.byId.get(id)?.name ?? id.replace(/^unknown:/, '').replace(/-/g, ' ');
 }

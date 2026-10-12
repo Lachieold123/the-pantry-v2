@@ -98,3 +98,13 @@ describe('the match shelves', () => {
     expect(screen.queryByTestId('cupboard-see-all')).toBeNull();
   });
 });
+
+describe('the oil and substitutes switches', () => {
+  it('saves both on the shelf setting', async () => {
+    await render(<CupboardScreen />);
+    await fireEvent(screen.getByTestId('cupboard-oil'), 'valueChange', false);
+    expect(useCupboard.getState().shelf.oil).toBe(false);
+    await fireEvent(screen.getByTestId('cupboard-substitutes'), 'valueChange', true);
+    expect(useCupboard.getState().shelf.substitutes).toBe(true);
+  });
+});
