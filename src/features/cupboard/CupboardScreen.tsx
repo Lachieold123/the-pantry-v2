@@ -1,12 +1,12 @@
 // The Cupboard tab: "what can I cook with what I have?" (D-030). It reads in
-// the order you use it: add things, see what's in, see what that cooks, and
-// the shelf settings last. Every number here comes from the one shared engine
-// (store/cookable). "Add one thing" and the "Stock up" grid were taken out:
-// Lachlan found them bulky and clunky (6 October); search, quick adds and the
-// ways in below them cover adding.
+// the order you use it (D-033): add things, see what's in, the staples switch
+// that decides what counts, then what that cooks, from your saved recipes and
+// beyond, as v1 laid it out. Every number comes from the one shared engine
+// (store/cookable).
 import { useRouter } from 'expo-router';
 import { View } from 'react-native';
 
+import { KITCHEN } from '@/data/catalogue/catalogue';
 import { ingredientName, useCookableNow } from '@/store/cookable';
 import { useCupboard } from '@/store/cupboard';
 import { EmptyState } from '@/ui/patterns/EmptyState';
@@ -17,8 +17,9 @@ import { Button } from '@/ui/primitives/Button';
 import { Screen } from '@/ui/primitives/Screen';
 import { SPACE } from '@/ui/tokens/type';
 import { Jars, QuickAdds } from './CupboardLists';
-import { AddBar, capitalise, CookRail } from './CupboardParts';
-import { CupboardSettings } from './CupboardSettings';
+import { AddBar, capitalise } from './CupboardParts';
+import { CupboardSettings, StaplesToggle } from './CupboardSettings';
+import { MatchShelves } from './MatchShelves';
 import { WaysIn } from './WaysIn';
 
 export function CupboardScreen() {
@@ -32,8 +33,10 @@ export function CupboardScreen() {
   const restore = useCupboard((s) => s.restore);
   const moveTickedToCupboard = useCupboard((s) => s.moveTickedToCupboard);
   const setMoveTicked = useCupboard((s) => s.setMoveTicked);
-  const { ready, nearly, quick, have } = useCookableNow();
+  const setShelf = useCupboard((s) => s.setShelf);
+  const { quick, have, fromSaved, suggested } = useCookableNow();
   const ids = items.map((i) => i.ingredientId);
+  const categories = new Set(ids.map((id) => KITCHEN.category(id))).size;
 
   const addIngredient = (id: string) => {
     add([id], 'manual');
@@ -63,7 +66,7 @@ export function CupboardScreen() {
         <>
           <View>
             <SectionHeader
-              kicker={`Step 2 · ${ids.length} ${ids.length === 1 ? 'thing' : 'things'}`}
+              kicker={`Step 2 · ${ids.length} ${ids.length === 1 ? 'thing' : 'things'} · ${categories} ${categories === 1 ? 'category' : 'categories'}`}
               title="What's in your cupboard"
               action={
                 <Button
@@ -86,9 +89,14 @@ export function CupboardScreen() {
               }}
             />
           </View>
-          <CookRail ready={ready} nearly={nearly} />
         </>
       )}
+      <StaplesToggle
+        assume={shelf.mode === 'assume'}
+        ticked={shelf.ids.length}
+        onChange={(assume) => setShelf({ ...shelf, mode: assume ? 'assume' : 'mine' })}
+      />
+      {ids.length ? <MatchShelves fromSaved={fromSaved} suggested={suggested} /> : null}
       <CupboardSettings
         shelfDetail={
           shelf.mode === 'assume' ? 'Assuming a stocked spice rack, sauces and baking basics' : `${shelf.ids.length} shelf items ticked`

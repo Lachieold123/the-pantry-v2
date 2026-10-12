@@ -1,5 +1,5 @@
 // Cook Mode step by step to the end, and filling the cupboard from search.
-import { expect, ONBOARDED, open, test } from './kitchen';
+import { expect, ONBOARDED, open, STOCKED, test } from './kitchen';
 
 test('Cook Mode steps through a recipe and logs it as cooked', async ({ page }) => {
   await open(page, '/recipe/carbonara', ONBOARDED);
@@ -28,4 +28,15 @@ test('Surprise me deals a dish', async ({ page }) => {
   const first = await page.getByTestId('surprise-title').innerText();
   await page.getByTestId('surprise-spin').click();
   await expect.poll(() => page.getByTestId('surprise-title').innerText(), { timeout: 10_000 }).not.toBe(first);
+});
+
+test('a saved recipe the cupboard can cook leads "From your saved", and the staples switch is kept', async ({ page }) => {
+  const saved = { bookmarks: [{ recipeId: 'carbonara', savedAt: 1 }], collections: [], hidden: [], recentlyViewed: [] };
+  await open(page, '/cupboard', { ...STOCKED, saved });
+  await expect(page.getByTestId('saved-match-carbonara')).toBeVisible();
+  await expect(page.getByTestId('match-carbonara')).toHaveCount(0);
+  await page.getByTestId('cupboard-staples').click();
+  await expect(page.getByText(/No shelf items ticked yet/)).toBeVisible();
+  await page.reload();
+  await expect(page.getByText(/No shelf items ticked yet/)).toBeVisible();
 });
