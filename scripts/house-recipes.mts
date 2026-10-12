@@ -45,6 +45,9 @@ export type HouseRecipe = {
   notes?: string[];
   /** Left out until Lachlan reviews or cook-tests the recipe, which keeps it an `ai-draft` (hidden in store builds). */
   provenance?: Provenance;
+  /** Batch 03: who the recipe is credited to (always The Pantry) and the model that wrote it. */
+  author?: string;
+  generatedBy?: string;
   /** A real, freely licensed photo (D-045): the file at assets/recipes/<key>.jpg, the credit shown under it, and its source page. */
   image?: { key: string; credit: string; source: string };
 };
@@ -106,6 +109,10 @@ function toRecipe(h: HouseRecipe, root: string, index: IngredientIndex, problem:
   if (h.prepMinutes + h.cookMinutes <= 0) problem(`${h.id}: no time given`);
   if (allText(h).some((t) => t.includes('—'))) problem(`${h.id}: uses an em dash`);
   checkImage(h, root, problem);
+  if (h.provenance === 'ai-assisted' && (!h.generatedBy || h.author !== 'The Pantry'))
+    problem(`${h.id}: an ai-assisted recipe must be credited to The Pantry and say which model wrote it`);
+  if (h.image && /\bAI\b|AI-generated/.test(h.image.credit))
+    problem(`${h.id}: photo credit says it's AI-generated; house batches use real photos only`);
   return {
     id: h.id,
     title: h.title,
@@ -125,6 +132,7 @@ function toRecipe(h: HouseRecipe, root: string, index: IngredientIndex, problem:
     ...(h.notes?.length ? { notes: h.notes } : {}),
     source: 'house',
     provenance: h.provenance ?? 'ai-draft',
+    ...(h.generatedBy ? { generatedBy: h.generatedBy } : {}),
   };
 }
 

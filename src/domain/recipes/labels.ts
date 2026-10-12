@@ -30,7 +30,16 @@ export const CUISINE_LABELS: Readonly<Record<CuisineId, string>> = {
   'central-european': 'Central European',
   scandinavian: 'Scandinavian',
   'modern-australian': 'Modern Australian',
+  caribbean: 'Caribbean',
+  'east-african': 'East African',
+  'pacific-islands': 'Pacific Islands',
 };
+
+/**
+ * Shown on every recipe written by the earlier AI pipeline (batch 03), beside the
+ * photo credit, so nobody mistakes it for a recipe a person wrote and tested.
+ */
+export const AI_ASSISTED_LABEL = 'AI-assisted recipe';
 
 export const MEAL_TYPE_LABELS: Readonly<Record<MealType, string>> = {
   breakfast: 'Breakfast',

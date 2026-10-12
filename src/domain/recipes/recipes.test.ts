@@ -141,8 +141,17 @@ describe('the converted catalogue', () => {
     assert.deepEqual(unknown, []);
   });
   it('ships only what passed review; nothing claims a cook test yet (D-008, D-036)', () => {
-    assert.ok(catalogue.every((r) => r.provenance === 'reviewed' || r.provenance === 'ai-draft'));
+    assert.ok(catalogue.every((r) => r.provenance === 'reviewed' || r.provenance === 'ai-draft' || r.provenance === 'ai-assisted'));
     assert.ok(catalogue.some((r) => r.provenance === 'reviewed'));
+  });
+  it('says which model wrote every AI-assisted recipe, and uses no AI photos for them (batch 03)', () => {
+    const assisted = catalogue.filter((r) => r.provenance === 'ai-assisted');
+    assert.ok(assisted.length > 0);
+    for (const r of assisted) {
+      assert.equal(r.source, 'house', r.id);
+      assert.ok(r.generatedBy, r.id);
+      assert.ok(!r.image || !/\bAI\b|AI-generated/.test(r.image.credit ?? ''), r.id);
+    }
   });
 });
 

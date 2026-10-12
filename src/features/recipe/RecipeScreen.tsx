@@ -13,7 +13,7 @@ import { cookable } from '@/domain/cupboard/cookable';
 import { cupboardIds } from '@/domain/cupboard/match';
 import { allOnList, cupboardTally, recipeWords } from '@/domain/cupboard/summary';
 import { shoppingWeek, toISODate } from '@/domain/plan/week';
-import { recipeAsText } from '@/domain/recipes/labels';
+import { AI_ASSISTED_LABEL, recipeAsText } from '@/domain/recipes/labels';
 import { recipeListRows } from '@/domain/shopping/fromRecipe';
 import { useCookLog } from '@/store/cookLog';
 import { ingredientName } from '@/store/cookable';
@@ -98,6 +98,8 @@ export function RecipeScreen({ id }: { id: string }) {
   const wordOf = (ingredientId: string) => words?.get(ingredientId) ?? ingredientName(ingredientId);
   // House photos without a photographer's credit are the original app's AI-generated images (D-029).
   const photoNote = recipe.image?.credit ?? (!mine && RECIPE_IMAGES[recipe.id] !== undefined ? 'AI-generated photo' : undefined);
+  // Recipes the earlier AI pipeline wrote say so, in the same place as the photo credit (batch 03).
+  const originNote = !mine && recipe.provenance === 'ai-assisted' ? AI_ASSISTED_LABEL : undefined;
   const edit = () => router.push({ pathname: '/my-recipe/edit', params: { id: recipe.id } });
   const plan = () => router.push({ pathname: '/recipe/[id]/plan', params: { id: recipe.id } });
   const share = async () => {
@@ -196,11 +198,18 @@ export function RecipeScreen({ id }: { id: string }) {
           />
           <Method recipe={recipe} />
           <Notes notes={recipe.notes ?? []} />
-          {photoNote ? (
+          {photoNote || originNote ? (
             <View style={styles.credit}>
-              <Text variant="metaSmall" align="center" testID="recipe-photo-credit">
-                {photoNote}
-              </Text>
+              {originNote ? (
+                <Text variant="metaSmall" align="center" testID="recipe-origin">
+                  {originNote}
+                </Text>
+              ) : null}
+              {photoNote ? (
+                <Text variant="metaSmall" align="center" testID="recipe-photo-credit">
+                  {photoNote}
+                </Text>
+              ) : null}
             </View>
           ) : null}
         </ScrollView>
