@@ -32,8 +32,9 @@ jobs:
           TZ: Australia/Sydney
       - run: npm run test:ui
       - run: npm run catalogue:check-ingredients
-      # Not yet: Expo's check that packages match the SDK fails until `npx expo install --fix`
-      # is run and a new development build made (REL-17, Lachlan). Then add: - run: npx expo install --check
+      # Packages must match the Expo SDK (REL-17, K-28). A native version change also needs
+      # a new development build on the Mac.
+      - run: npx expo install --check
 
   journeys:
     # The web journey tests (D-040): the main paths, tapped through in light and dark.

@@ -67,14 +67,14 @@ The reports are in `~/Desktop/HQ/11-ThePantryV2/audits/2026-10-08/`. Fixed on br
 | SEC-14 | Anonymous users and ghost members kept forever | Partly: clean-up function (needs pg_cron, K-24); ghost member on switching (K-33) | 5044739 |
 | SEC-15 | No way to remove a member or cancel invites | Fixed (migration + app) | 5044739 |
 | SEC-16 | Custom-scheme invite links; no household preview | Partly: preview done; universal links need a domain (K-26) | 5044739 |
-| SEC-17 | decode-uri-component DoS advisory | Not done: no compatible fixed release (K-28) | |
+| SEC-17 | decode-uri-component DoS advisory | Not done: no fixed release query-string 7 can load (K-28) | |
 | SEC-18 | Import downloads any size of page | Fixed | 723a3f6 |
 | SEC-19 | Secrets (info) | Clean, nothing to do | |
 | SEC-20 | Grants not explicit | Fixed (migration) | 5044739 |
 | SEC-21 | 8-person cap race | Fixed (migration) | 5044739 |
 | SEC-22 | Can `postgres` delete `auth.users` on the live project? | Not done: live check (K-24) | |
 | SEC-23 | Required-reason APIs in the privacy manifest | Not done: check after prebuild (K-35) | |
-| SEC-24 | Build-time dependency advisories | Not done: lock-file churn during the branch merge (K-28) | |
+| SEC-24 | Build-time dependency advisories | Partly fixed: shell-quote critical cleared; the rest need major upgrades (K-28) | cloud/11-deps |
 | SEC-25 | Maestro household flow writes to production | Not done: needs a branch project (K-34); left out of the 8 October run | |
 
 ## Release and health (RELEASE-AND-HEALTH.md)
@@ -92,13 +92,13 @@ The reports are in `~/Desktop/HQ/11-ThePantryV2/audits/2026-10-08/`. Fixed on br
 | REL-09 | Paywall could go live without legal links | Partly: test added; plan length beside price waits for Pro (K-38) | e365512 |
 | REL-10 | No over-the-air updates | Not done: Lachlan's call (K-27) | |
 | REL-11 | Shared links need the app | Not done: needs a domain (K-26) | |
-| REL-12 | CI misses journeys, typed routes, database | Fixed (`expo install --check` waits on K-28) | 6196a8e |
+| REL-12 | CI misses journeys, typed routes, database | Fixed; `expo install --check` added with K-28 | 6196a8e, cloud/11-deps |
 | REL-13 | Session in plain storage | Not done: native module (K-20) | |
 | REL-14 | Library grids not virtualised | Fixed | 19bbecd |
 | REL-15 | Thin tests where data can be lost | Fixed (error words, delete panel, sync engine, paging) | 70ab9db, 5044739 |
 | REL-16 | 39 MB of photos, duplicates | Not done: photos are on the other branch (K-30) | |
-| REL-17 | Expo SDK drift, @types/jest | Not done: install and dev build (K-28); K-1 closed | |
-| REL-18 | Loose version ranges, unused expo-symbols | Not done: K-28 | |
+| REL-17 | Expo SDK drift, @types/jest | Fixed; new development build still needed (K-28) | cloud/11-deps |
+| REL-18 | Loose version ranges, unused expo-symbols | Fixed (K-28) | cloud/11-deps |
 | REL-19 | eas.json production guard | Not done: EAS is Lachlan's (K-29) | |
 | REL-20 | Dead code and tokens | Fixed | e78265e |
 | REL-21 | Size and spacing literals | Fixed, with a lint rule | e80a955 |
