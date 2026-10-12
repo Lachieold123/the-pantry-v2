@@ -22,6 +22,8 @@ jest.mock('@/lib/household', () => ({
   leaveHousehold: async () => ({ ok: true, value: null }),
   myHousehold: async () => ({ ok: true, value: mockHousehold }),
   pullRows: async () => ({ ok: true, value: [...mockServer.rows.values()] }),
+  // A server without stamps (K-36): every pull reads everything.
+  pullRowsSince: async () => ({ ok: true, value: { rows: [...mockServer.rows.values()], newest: undefined } }),
   pushRows: async (_h: string, _u: string, rows: Row[]) => {
     for (const r of rows) mockServer.rows.set(`${r.kind}:${r.key}`, r);
     return { ok: true, value: null };

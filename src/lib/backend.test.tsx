@@ -78,7 +78,8 @@ describe('an expired sign-in while offline (BUG-05, BUG-16)', () => {
 });
 
 describe('paging', () => {
-  it('reads every row past 1,000, in a total order, even when many share a time', async () => {
+  it('on a server without the K-36 pull, reads every row past 1,000, in a total order, even when many share a time', async () => {
+    mockRpc.mockResolvedValue({ data: null, error: { code: 'PGRST202', message: 'Could not find the function' } });
     mockRows = Array.from({ length: 2345 }, (_, i) => ({
       kind: i % 2 ? 'tick' : 'plan',
       key: `k${i}`,

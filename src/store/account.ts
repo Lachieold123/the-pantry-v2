@@ -41,7 +41,7 @@ type AccountState = Omit<ScopeState, 'status'> & {
 /** The account as a fresh install has it. `device` and `offered` are kept by a sign-out. */
 export function signedOutState(): Pick<
   AccountState,
-  'status' | 'who' | 'needsMerge' | 'code' | 'mirror' | 'pending' | 'setAside' | 'lastSyncedAt' | 'sync'
+  'status' | 'who' | 'needsMerge' | 'code' | 'mirror' | 'pending' | 'setAside' | 'lastSyncedAt' | 'sync' | 'cursor'
 > {
   return {
     status: 'signed-out',
@@ -53,6 +53,7 @@ export function signedOutState(): Pick<
     setAside: {},
     lastSyncedAt: undefined,
     sync: 'idle',
+    cursor: undefined,
   };
 }
 
@@ -62,7 +63,7 @@ export const useAccount = create<AccountState>()(
     version: 1,
     storage: persistentStorage(),
     // "Signing in" never survives a restart: it's signed in or it isn't.
-    partialize: ({ who, device, needsMerge, code, offered, mirror, pending, setAside, lastSyncedAt }) => ({
+    partialize: ({ who, device, needsMerge, code, offered, mirror, pending, setAside, lastSyncedAt, cursor }) => ({
       status: (who ? 'signed-in' : 'signed-out') as AccountStatus,
       who,
       device,
@@ -73,6 +74,7 @@ export const useAccount = create<AccountState>()(
       pending,
       setAside,
       lastSyncedAt,
+      cursor,
     }),
   }),
 );
