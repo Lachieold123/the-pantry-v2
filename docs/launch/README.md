@@ -1,12 +1,13 @@
 # Launch documents
 
-Drafted by Claude on 5 October 2026 from a read-through of the code, `app.json` and the docs. They describe the app **as it is today**: no accounts, no server, nothing leaves the phone, and scanning shows "Coming soon". Sections for later features are marked **[Add when … launches]**.
+Drafted by Claude on 5 October 2026 and **redrafted on 12 October 2026 (K-23)** from the code on `preview-2026-10-08`, which now has optional accounts (Sign in with Apple, email codes) and households, stored on Supabase in Sydney. Scanning still shows "Coming soon" and Pro isn't on sale. These are **drafts for Lachlan and a lawyer to review**; every point needing Lachlan's decision is marked **DECIDE:** (search for it).
 
 | File | What it is | Where it goes |
 | --- | --- | --- |
-| `privacy-policy.md` | Privacy policy (Privacy Act 1988 / APPs, and Apple), plus an appendix with your App Privacy "nutrition label" answers | Publish at your privacy URL. Paste the URL into App Store Connect, and link it from Settings in the app |
+| `privacy-policy.md` | Privacy policy (Privacy Act 1988 / APPs, and Apple), covering accounts and households | Publish at your privacy URL. Paste the URL into App Store Connect, and link it from Settings in the app |
 | `terms-of-use.md` | Terms of use, including food safety and allergy wording | Publish at your terms URL. Link it from Settings and the support page |
-| `app-store-listing.md` | Every App Store Connect field, with character counts, the screenshot plan, age rating answers and App Review notes | Copy into App Store Connect |
+| `app-store-listing.md` | Every App Store Connect field, with character counts, the screenshot plan and age rating answers | Copy into App Store Connect |
+| `app-store-privacy-and-review.md` | App Privacy questionnaire answers, the shared-content age-rating answer (REL-24) and the App Review notes, for accounts and households | Copy into App Store Connect |
 
 ## Blockers to sort before you submit
 
@@ -14,9 +15,9 @@ These aren't in the documents' scope, but you'll hit them, so here they are firs
 
 1. ~~**A store build shows no recipes.**~~ Resolved 5 October (D-036): recipes that passed the editorial review ship as `reviewed` (273 of 285). None is cook-tested yet, so nothing may claim it is.
 2. **The "Tested in The Pantry kitchen" label doesn't exist in the app yet.** The terms only mention cook-testing in a bracketed choice. Keep whichever sentence is true.
-3. **Settings has no Privacy policy or Terms rows.** Apple requires the privacy policy to be easy to find inside the app (guideline 5.1.1). Add two rows to Settings › About that open the published pages.
+3. ~~**Settings has no Privacy policy or Terms rows.**~~ The rows now appear in Settings › About as soon as `src/lib/legal.ts` has the published URLs (REL-01). Hosting the pages is still yours (K-23).
 4. **Screenshots are the wrong size.** The media pack is 1170 × 2532 (6.1-inch). The required 6.9-inch set is 1320 × 2868. See the listing's screenshot plan.
-5. **Scope check.** D-026 says social launches with v2. These documents assume you ship the local-only app first, as you asked. If social ships in the first release, every bracketed section must be filled in first, and the App Privacy answers change.
+5. **Scope check.** Accounts and households ship in this build, so the documents now cover them (12 October). Social (D-026) isn't in it; if social ships in the first release, the bracketed sections and the age rating change again.
 6. **The app name.** "The Pantry" alone is very likely taken on the App Store. Reserve "The Pantry: Cook What You Have" (30 characters) in App Store Connect early.
 
 ## Placeholders you must fill
@@ -60,10 +61,10 @@ Take all three files. Ask specifically about:
 
 | Feature | Privacy policy | Terms | App Store / App Privacy |
 | --- | --- | --- | --- |
-| **Accounts** (Supabase) | Fill §5A; add the hosting provider and region to §5; rewrite "The short version"; §7 gains account deletion (Apple requires in-app account deletion); §8 gains the minimum age | §5: user content licence; §11: account suspension | App Privacy: Contact Info (email, name), Identifiers (user ID), linked to user, app functionality. Remove "No login needed" from the review notes and give Apple a demo account |
+| ~~**Accounts** (Supabase)~~ Done 12 October (K-23 drafts) | Fill §5A; add the hosting provider and region to §5; rewrite "The short version"; §7 gains account deletion (Apple requires in-app account deletion); §8 gains the minimum age | §5: user content licence; §11: account suspension | App Privacy: Contact Info (email, name), Identifiers (user ID), linked to user, app functionality. Remove "No login needed" from the review notes and give Apple a demo account |
 | **Social** (posts, comments, messages) | §5A covers who sees what; add moderation records | §6: zero-tolerance wording, report and block, 24-hour moderation, moderation contact | App Privacy: User Content (photos, other content, messages if stored). Age rating: user-generated content and messaging become Yes. Description gains sharing |
 | **Pro** (RevenueCat) | Fill §5C; add RevenueCat to §5 | Fill §9; settle §8's refund wording | App Privacy: Purchases (purchase history), Identifiers. Add the in-app purchases to the listing. The paywall must show price, length, auto-renewal and links to both documents |
-| **Household** (Supabase, Sydney; D-039) | Say that a household's plan, list, cupboard and members' names are stored on Supabase servers in Sydney to sync between members; anonymous IDs; deleting = leaving the household | Shared-content wording (members see each other's names and edits) | App Privacy: User Content (other: plan, list, cupboard), Name, Identifiers (user ID); linked to the user, not used for tracking |
+| ~~**Household** (Supabase, Sydney; D-039)~~ Done 12 October (K-23 drafts) | Say that a household's plan, list, cupboard and members' names are stored on Supabase servers in Sydney to sync between members; anonymous IDs; deleting = leaving the household | Shared-content wording (members see each other's names and edits) | App Privacy: User Content (other: plan, list, cupboard), Name, Identifiers (user ID); linked to the user, not used for tracking |
 | **Scanning** (AI service, 3 free a month) | Fill §5B; add the camera/photos line to §3; add the AI provider and its country to §5 | §4: add that scan results must be checked before adding | App Privacy: User Content (photos), linked if tied to an account. Update `app.json`'s permission text if it changes. Remove "Coming soon" from the review notes. Don't say "AI-powered" in the listing |
 | **Crash reporting** (Sentry, K-8) | Add to §4 and §5: what's sent (crash details, device model, iOS version), and that it's scrubbed of personal details | No change | App Privacy: Diagnostics (crash data, performance data), not linked to the user if no user ID is attached |
 | **Over-the-air updates** (`expo-updates`) | One line in §4: the app checks Expo's servers for updates | No change | No change |
