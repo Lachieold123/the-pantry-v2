@@ -8,10 +8,20 @@ import { INGREDIENTS } from '@/data/catalogue/catalogue';
 import { buildRecipe, EMPTY_DRAFT, myRecipeId, type RecipeDraft } from '@/domain/recipes/draft';
 import { useMyRecipes } from '@/store/myRecipes';
 import { useToast } from '@/ui/patterns/Toast';
-import { usePendingImport } from './pendingImport';
+import { usePendingImport } from '@/store/pendingImport';
 import { goBack } from '@/lib/navigation';
 
-export function useRecipeEditor(id: string | undefined, fromImport: boolean) {
+/** A new recipe's starting draft: the name typed into My recipes' "Add" row, if any. */
+export function startingDraft(startTitle: string | undefined): RecipeDraft {
+  const title = startTitle?.trim();
+  return title ? { ...EMPTY_DRAFT, title } : EMPTY_DRAFT;
+}
+
+/**
+ * `startTitle` is the name typed into My recipes' "Add" row (v1's "Add a
+ * meal…"); it only applies to a new recipe that isn't an import.
+ */
+export function useRecipeEditor(id: string | undefined, fromImport: boolean, startTitle?: string) {
   const router = useRouter();
   const toast = useToast();
   const existing = useMyRecipes((s) => (id ? s.recipes[id] : undefined));
@@ -24,8 +34,10 @@ export function useRecipeEditor(id: string | undefined, fromImport: boolean) {
   const source = existing?.source ?? (imported ? 'imported' : 'user');
   const sourceUrl = existing?.sourceUrl ?? imported?.url;
 
-  const [draft, setDraft] = useState<RecipeDraft>(existing?.draft ?? imported?.draft ?? EMPTY_DRAFT);
-  const [dirty, setDirty] = useState(imported !== undefined);
+  const [named] = useState(() => (id || imported ? undefined : startTitle?.trim() || undefined));
+  const [draft, setDraft] = useState<RecipeDraft>(existing?.draft ?? imported?.draft ?? startingDraft(named));
+  // A typed name or an import is already work, so closing asks before throwing it away.
+  const [dirty, setDirty] = useState(imported !== undefined || named !== undefined);
   // Problems show only after the first save attempt, so a blank form doesn't start out shouting.
   const [showProblems, setShowProblems] = useState(false);
 
