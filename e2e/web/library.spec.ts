@@ -80,3 +80,32 @@ test('a recipe you write keeps decimal amounts whole', async ({ page }) => {
   await expect(page.getByText('½ tsp salt')).toBeVisible();
   await expect(page.getByText(/^5 kg lamb/)).toHaveCount(0);
 });
+
+test('an imported recipe credits the site it came from, and the credit opens it (K-13)', async ({ page }) => {
+  const url = 'https://www.example.com/recipes/lentil-soup';
+  const draft = {
+    title: 'Lentil soup',
+    summary: '',
+    cuisine: 'british',
+    mealTypes: ['dinner'],
+    difficulty: 'easy',
+    prepMinutes: 10,
+    cookMinutes: 20,
+    servings: 4,
+    onePot: false,
+    ingredientsText: '1 cup red lentils\n1 litre vegetable stock',
+    methodText: 'Simmer the lentils in the stock.',
+    notesText: '',
+  };
+  await open(page, '/recipe/my-import-1', {
+    ...ONBOARDED,
+    'my-recipes': { recipes: { 'my-import-1': { id: 'my-import-1', draft, source: 'imported', sourceUrl: url, createdAt: 1, updatedAt: 1 } } },
+  });
+  const credit = page.getByRole('link', { name: 'From example.com' });
+  await expect(credit).toBeVisible();
+  // Stay off the internet: answer the site ourselves and check where the new tab went.
+  await page.context().route('https://www.example.com/**', (route) => route.fulfill({ body: 'ok' }));
+  const opened = page.context().waitForEvent('page');
+  await credit.click();
+  expect((await opened).url()).toBe(url);
+});

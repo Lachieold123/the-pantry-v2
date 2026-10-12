@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { View } from 'react-native';
 
 import type { UnsureLine } from '@/domain/recipes/draft';
+import { sourceLink } from '@/domain/recipes/importLink';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
 import { Button } from '@/ui/primitives/Button';
@@ -19,11 +20,7 @@ import { useRecipeEditor } from './useRecipeEditor';
 import { goBack } from '@/lib/navigation';
 
 function hostOf(url: string): string {
-  try {
-    return new URL(url).hostname.replace(/^www\./, '');
-  } catch {
-    return url;
-  }
+  return sourceLink(url)?.host ?? url;
 }
 
 function UnsureNote({ lines }: { lines: UnsureLine[] }) {

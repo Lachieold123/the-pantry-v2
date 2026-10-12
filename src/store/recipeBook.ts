@@ -73,6 +73,13 @@ export function useRecipe(id: string | undefined): Recipe | undefined {
   return id === undefined ? undefined : book.get(id);
 }
 
+/** Where your recipe (or a household member's) was imported from, if it was. */
+export function useRecipeSourceUrl(id: string): string | undefined {
+  const mine = useMyRecipes((s) => s.recipes[id]?.sourceUrl);
+  const theirs = useHousehold((s) => s.sharedRecipes[id]?.sourceUrl);
+  return mine ?? theirs;
+}
+
 /** A lookup that re-renders the caller when your recipes change. Stable until they do, so it's safe in hook deps. */
 export function useRecipeLookup(): (id: string) => Recipe | undefined {
   return useBook().get;

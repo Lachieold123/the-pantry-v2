@@ -169,3 +169,24 @@ export function normaliseLink(text: string): string | undefined {
     return undefined;
   }
 }
+
+export type SourceLink = { host: string; url: string };
+
+/**
+ * The credit for an imported recipe: the site's name ("bbcgoodfood.com") and a
+ * link that's safe to open. Stored links come from a paste or a synced row, so
+ * anything that isn't a plain web address (javascript:, a typo, no dot in the
+ * host) gets no credit rather than a link that goes nowhere or somewhere bad.
+ */
+export function sourceLink(url: string | undefined): SourceLink | undefined {
+  const trimmed = url?.trim();
+  if (!trimmed) return undefined;
+  try {
+    const parsed = new URL(trimmed);
+    if (parsed.protocol !== 'https:' && parsed.protocol !== 'http:') return undefined;
+    const host = parsed.hostname.replace(/^www\./, '');
+    return host.includes('.') ? { host, url: parsed.toString() } : undefined;
+  } catch {
+    return undefined;
+  }
+}

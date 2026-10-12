@@ -13,6 +13,7 @@ import { cookable } from '@/domain/cupboard/cookable';
 import { cupboardIds } from '@/domain/cupboard/match';
 import { allOnList, cupboardTally, recipeWords } from '@/domain/cupboard/summary';
 import { shoppingWeek, toISODate } from '@/domain/plan/week';
+import { sourceLink } from '@/domain/recipes/importLink';
 import { recipeAsText, RECIPE_ORIGIN } from '@/domain/recipes/labels';
 import { recipeListRows } from '@/domain/shopping/fromRecipe';
 import { useCookLog } from '@/store/cookLog';
@@ -20,7 +21,7 @@ import { ingredientName } from '@/store/cookable';
 import { useCupboard } from '@/store/cupboard';
 import { usePlan } from '@/store/plan';
 import { usePreferences } from '@/store/preferences';
-import { useRecipe } from '@/store/recipeBook';
+import { useRecipe, useRecipeSourceUrl } from '@/store/recipeBook';
 import { useSaved } from '@/store/saved';
 import { ActionSheet } from '@/ui/patterns/ActionSheet';
 import { EmptyState } from '@/ui/patterns/EmptyState';
@@ -37,6 +38,7 @@ import { Ingredients, Method, Notes } from './RecipeBody';
 import { CupboardSummary } from './CupboardSummary';
 import { RecipeHeader } from './RecipeHeader';
 import { ServingsSheet } from './ServingsSheet';
+import { SourceCredit } from './SourceCredit';
 import { goBack } from '@/lib/navigation';
 import { shareText } from '@/lib/share';
 
@@ -45,6 +47,8 @@ export function RecipeScreen({ id }: { id: string }) {
   const insets = useSafeAreaInsets();
   const styles = useStyles();
   const recipe = useRecipe(id);
+  // A link that can't be read gets no credit (and no empty credit block).
+  const source = sourceLink(useRecipeSourceUrl(id));
   const toast = useToast();
   const units = usePreferences((s) => s.units);
   const setUnits = usePreferences((s) => s.setUnits);
@@ -198,8 +202,9 @@ export function RecipeScreen({ id }: { id: string }) {
           />
           <Method recipe={recipe} />
           <Notes notes={recipe.notes ?? []} />
-          {photoNote || originNote ? (
+          {photoNote || originNote || source ? (
             <View style={styles.credit}>
+              {source ? <SourceCredit link={source} /> : null}
               {originNote ? (
                 <Text variant="metaSmall" align="center" testID="recipe-origin">
                   {originNote}
