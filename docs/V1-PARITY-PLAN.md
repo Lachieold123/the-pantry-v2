@@ -97,7 +97,7 @@ Each phase ends the same way:
 | P4 | Plan and shopping list **(done 30 Sep, except M18)** | Week strip, day view, slots, suggestions, the shopping list tab, sharing, clearing. | No |
 | P5 | Cupboard | Categories, quick adds, the staples toggle, matches from saved recipes, suggestions. | No |
 | P6 | Library and cooking | Cookmarks, collections, my recipes and the editor, import, recently viewed, kitchen stats, the spinner, Cook Mode. | No |
-| P7 | Onboarding | v1's flow: terms, what you came for, diet, avoid list, cuisines, time, skill, the reveal, the notification primer, the first-run checklist. | No |
+| P7 | Onboarding **(built 12 Oct on `cloud/04-p7-onboarding`, D-050; Lachlan to confirm against D-041)** | v1's flow: terms, what you came for, diet, avoid list, cuisines, time, skill, the reveal, the notification primer, the first-run checklist. | No |
 | P8 | Backend and accounts | A fresh, audited Supabase schema, row-level security, storage, edge functions and moderation. Sign in with Apple, Google and email. Profiles and handles. | **Yes:** restore Supabase, the schema plan, new native modules |
 | P9 | Social | Feed, create a post (photos and video), post detail, likes, comments, saves, follows, profiles, messages, notifications, push, report, block, send to. | Moderation contact and terms |
 | P10 | Pro and AI | Paywall, RevenueCat, restore purchases; AI pantry and receipt scanning. | **Yes:** RevenueCat and App Store Connect |

@@ -30,6 +30,7 @@ import { Screen } from '@/ui/primitives/Screen';
 import { Text } from '@/ui/primitives/Text';
 import { HOME } from '@/ui/tokens/screens';
 import { SPACE } from '@/ui/tokens/type';
+import { FirstRunChecklist } from './FirstRunChecklist';
 import { HeroCarousel } from './HeroCarousel';
 import { PantrySwitch } from './PantrySwitch';
 import { HomeEmpty } from './HomeEmpty';
@@ -101,6 +102,9 @@ export function FeedScreen() {
             <IconButton icon="close" label="Dismiss" onPress={dismissWelcome} colour="inkMuted" testID="welcome-back-dismiss" />
           </View>
         ) : null}
+
+        {/* After the welcome, until it's done or closed. */}
+        <FirstRunChecklist />
 
         {/* The same top space TitleBlock gives the other tabs. */}
         <View style={{ marginTop: SPACE.xs, marginBottom: SPACE.sm }}>

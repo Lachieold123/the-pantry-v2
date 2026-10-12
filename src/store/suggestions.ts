@@ -19,6 +19,7 @@ export function useForYou(count: number, meal?: MealType): Recipe[] {
   const avoid = usePreferences((s) => s.avoid);
   const cuisines = usePreferences((s) => s.cuisines);
   const weeknight = usePreferences((s) => s.weeknight);
+  const skill = usePreferences((s) => s.skill);
   const hidden = useSaved((s) => s.hidden);
   const entries = usePlan((s) => s.entries);
   const log = useCookLog((s) => s.log);
@@ -28,7 +29,7 @@ export function useForYou(count: number, meal?: MealType): Recipe[] {
     () =>
       forYou({
         recipes,
-        taste: { diet, avoid, cuisines, weeknight },
+        taste: { diet, avoid, cuisines, weeknight, skill },
         hidden: new Set(hidden),
         planned: new Set(entriesInWeek(entries, visibleWeeks(today).thisWeek).map((e) => e.recipeId)),
         recentlyCooked: recentlyCooked(log),
@@ -38,6 +39,6 @@ export function useForYou(count: number, meal?: MealType): Recipe[] {
         count,
         meal,
       }),
-    [recipes, diet, avoid, cuisines, weeknight, hidden, entries, log, today, count, meal],
+    [recipes, diet, avoid, cuisines, weeknight, skill, hidden, entries, log, today, count, meal],
   );
 }

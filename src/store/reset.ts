@@ -23,8 +23,16 @@ export function resetThisPhone(): void {
   useSaved.setState(useSaved.getInitialState());
   useMyRecipes.setState(useMyRecipes.getInitialState());
   useCookLog.setState(useCookLog.getInitialState());
-  const { appearance, highContrast, sundayReminder } = usePreferences.getState();
-  usePreferences.setState({ ...usePreferences.getInitialState(), appearance, highContrast, sundayReminder, onboarded: true });
+  // Agreeing to the terms belongs to whoever uses this phone, so it outlives a reset too.
+  const { appearance, highContrast, sundayReminder, termsAcceptedAt } = usePreferences.getState();
+  usePreferences.setState({
+    ...usePreferences.getInitialState(),
+    appearance,
+    highContrast,
+    sundayReminder,
+    termsAcceptedAt,
+    onboarded: true,
+  });
   useHousehold.setState({ ...EMPTY_HOUSEHOLD, userId: undefined, lastSyncedAt: undefined, rejoin: undefined });
 }
 

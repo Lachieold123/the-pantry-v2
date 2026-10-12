@@ -1,5 +1,5 @@
 # Gets past the first-launch welcome by tapping Skip, then the
-# first-use tour, and leaves the app on Home. Run it straight after launchApp + openLink.
+# first-use tour and the first-run checklist, and leaves the app on Home. Run it straight after launchApp + openLink.
 appId: host.exp.Exponent
 ---
 - runFlow: _wait_for_app.yaml
@@ -17,4 +17,8 @@ appId: host.exp.Exponent
     optional: true
 - tapOn:
     id: "tour-skip"
+    optional: true
+# Close the first-run checklist so other flows see Home as they expect.
+- tapOn:
+    id: "checklist-dismiss"
     optional: true

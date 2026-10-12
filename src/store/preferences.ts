@@ -7,6 +7,7 @@ import type { UnitSystem } from '@/domain/ingredients/format';
 import type { AvoidList, AvoidOption, DietPreference } from '@/domain/recipes/diets';
 import type { TimeFilter } from '@/domain/recipes/search';
 import type { CuisineId } from '@/domain/recipes/types';
+import { toggleIntent, type Intent, type Skill } from '@/domain/welcome/onboarding';
 import { persistentStorage, STORAGE_PREFIX } from './storage';
 
 export type Appearance = 'system' | 'light' | 'dark';
@@ -22,6 +23,12 @@ type PreferencesState = {
   /** How long a weeknight dinner can take. Undefined means no rush. */
   weeknight: TimeFilter | undefined;
   sundayReminder: boolean;
+  /** "What brings you here?" from the welcome: orders the first-run checklist. */
+  intents: Intent[];
+  /** How sure a cook they are: lifts recipes that suit, never hides any. */
+  skill: Skill | undefined;
+  /** When the cook agreed to the published terms on the welcome, if they have. */
+  termsAcceptedAt: number | undefined;
   /** False until the welcome is finished or skipped. */
   onboarded: boolean;
   setAppearance: (appearance: Appearance) => void;
@@ -35,6 +42,9 @@ type PreferencesState = {
   setWeeknight: (weeknight: TimeFilter | undefined) => void;
   setSundayReminder: (on: boolean) => void;
   setOnboarded: (done: boolean) => void;
+  toggleIntent: (intent: Intent) => void;
+  setSkill: (skill: Skill | undefined) => void;
+  acceptTerms: (at: number) => void;
   /** Replaces the taste answers wholesale, e.g. from the old app's onboarding. */
   applyTaste: (taste: Pick<PreferencesState, 'diet' | 'avoid' | 'cuisines' | 'weeknight' | 'units'>) => void;
 };
@@ -50,6 +60,9 @@ export const usePreferences = create<PreferencesState>()(
       cuisines: [],
       weeknight: undefined,
       sundayReminder: false,
+      intents: [],
+      skill: undefined,
+      termsAcceptedAt: undefined,
       onboarded: false,
       setAppearance: (appearance) => set({ appearance }),
       setDiet: (diet) => set({ diet }),
@@ -73,22 +86,28 @@ export const usePreferences = create<PreferencesState>()(
       setWeeknight: (weeknight) => set({ weeknight }),
       setSundayReminder: (sundayReminder) => set({ sundayReminder }),
       setOnboarded: (onboarded) => set({ onboarded }),
+      toggleIntent: (intent) => set((s) => ({ intents: toggleIntent(s.intents, intent) })),
+      setSkill: (skill) => set({ skill }),
+      acceptTerms: (termsAcceptedAt) => set({ termsAcceptedAt }),
       applyTaste: (taste) => set(taste),
     }),
     {
       name: `${STORAGE_PREFIX}/preferences`,
-      version: 3,
+      version: 4,
       storage: persistentStorage(),
-      partialize: ({ appearance, highContrast, units, diet, avoid, cuisines, weeknight, sundayReminder, onboarded }) => ({
-        appearance,
-        highContrast,
-        units,
-        diet,
-        avoid,
-        cuisines,
-        weeknight,
-        sundayReminder,
-        onboarded,
+      partialize: (s) => ({
+        appearance: s.appearance,
+        highContrast: s.highContrast,
+        units: s.units,
+        diet: s.diet,
+        avoid: s.avoid,
+        cuisines: s.cuisines,
+        weeknight: s.weeknight,
+        sundayReminder: s.sundayReminder,
+        intents: s.intents,
+        skill: s.skill,
+        termsAcceptedAt: s.termsAcceptedAt,
+        onboarded: s.onboarded,
       }),
       // Each version only added fields, so older saves just gain the defaults.
       migrate: (saved) =>
@@ -98,6 +117,9 @@ export const usePreferences = create<PreferencesState>()(
           cuisines: [],
           weeknight: undefined,
           sundayReminder: false,
+          intents: [],
+          skill: undefined,
+          termsAcceptedAt: undefined,
           onboarded: false,
           ...(saved as object),
         }) as unknown as PreferencesState,

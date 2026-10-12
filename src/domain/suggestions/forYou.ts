@@ -2,7 +2,7 @@
 // onboarding reveal and by Today when nothing is planned.
 //
 // Diet, avoid list and hidden dishes are hard rules (same as Surprise me).
-// Favourite cuisines and weeknight time only reorder, so picky answers
+// Favourite cuisines, weeknight time and cooking skill only reorder, so picky answers
 // still get a suggestion rather than an empty screen. The order is stable
 // for a given seed (today's date), so Today doesn't reshuffle on every visit.
 
@@ -10,9 +10,17 @@ import type { IngredientIndex } from '../ingredients/database';
 import type { AvoidList, DietPreference } from '../recipes/diets';
 import { NO_FILTERS, type TimeFilter } from '../recipes/search';
 import { totalMinutes, type CuisineId, type MealType, type Recipe } from '../recipes/types';
+import { skillLift, type Skill } from '../welcome/onboarding';
 import { eligibleForSurprise } from './surprise';
 
-export type Taste = { diet: DietPreference; avoid: AvoidList; cuisines: readonly CuisineId[]; weeknight: TimeFilter | undefined };
+export type Taste = {
+  diet: DietPreference;
+  avoid: AvoidList;
+  cuisines: readonly CuisineId[];
+  weeknight: TimeFilter | undefined;
+  /** From the welcome's skill question; unset means no lift either way. */
+  skill?: Skill | undefined;
+};
 
 export type ForYouInput = {
   recipes: readonly Recipe[];
@@ -63,6 +71,7 @@ export function forYou(input: ForYouInput): Recipe[] {
       let score = stableJitter(input.seed, recipe.id);
       if (loved.has(recipe.cuisine)) score += 3;
       if (totalMinutes(recipe) <= limit) score += 2;
+      score += skillLift(recipe.difficulty, taste.skill);
       if (recipe.provenance === 'vetted') score += 1;
       if (input.planned.has(recipe.id)) score -= 4;
       if (recent.has(recipe.id)) score -= 3;

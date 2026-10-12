@@ -54,7 +54,7 @@ export const FILTER_TINTS = {
   season: Tint;
 };
 
-/** The welcome: the opening screen, then the two quick steps (diet, cupboard). */
+/** The welcome: the opening screen, then v1's questions, the reveal and the notification primer (P7). */
 export const WELCOME = {
   padX: 24,
   /** v1's soft top fade behind the Skip pill. */
@@ -85,12 +85,42 @@ export const WELCOME = {
   chipGap: 8,
   backMin: 70,
   backPad: 14,
+  /** Tiles with a line under the label (what you came for, diet-style choices, time, skill). */
+  tileGap: 10,
+  tilePadY: 16,
+  tilePadX: 18,
+  tileIcon: 22,
+  /** The terms tick on the opening screen. */
+  checkbox: 22,
+  checkboxBorder: 1.5,
+  consentGap: 10,
+  consentPadY: 12,
+  consentPadX: 4,
+  /** The reveal's other picks, and the notification primer's bell and preview. */
+  thumb: 60,
+  bell: 84,
+  bellIcon: 34,
+  previewPad: 14,
   disabled: 0.45,
 } as const;
 
 /** Dark scrims over the welcome photo, as v1 laid them over its video. */
 export const WELCOME_SCRIMS = {
   quiz: { colors: [FIXED.videoScrim50, FIXED.videoScrim70, FIXED.videoScrim88], locations: [0, 0.45, 1] },
+  reveal: { colors: [FIXED.videoScrim55, FIXED.videoScrim72, FIXED.videoScrim90], locations: [0, 0.45, 1] },
+} as const;
+
+/** Home's first-run checklist (v1's FirstRunChecklist.tsx, spec §3.5, §7). */
+export const CHECKLIST = {
+  radius: 20,
+  padding: 16,
+  /** The progress ring at the card's left. */
+  ring: 50,
+  ringWidth: 3,
+  stepWidth: 132,
+  stepMinHeight: 118,
+  stepRadius: 15,
+  stepGap: 10,
 } as const;
 
 /** Home: v1's feed (FeedScreen.tsx): filter chips, a swipeable stack of big cards with dots, then a grid. */

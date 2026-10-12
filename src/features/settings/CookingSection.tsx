@@ -1,11 +1,12 @@
 // v1's COOKING group: one row per taste preference, each opening a small sheet
 // with just that choice. Surprise me and suggestions treat diet and avoid as
-// hard rules; cuisines and weeknight time only reorder.
+// hard rules; cuisines, weeknight time and skill only reorder.
 import { useState } from 'react';
 import { View } from 'react-native';
 import { useShallow } from 'zustand/react/shallow';
 
 import { DIET_PREFERENCE_LABELS } from '@/domain/recipes/labels';
+import { SKILL_LABELS } from '@/domain/welcome/onboarding';
 import { usePreferences } from '@/store/preferences';
 import { ModalSheet } from '@/ui/patterns/ModalSheet';
 import { Button } from '@/ui/primitives/Button';
@@ -18,8 +19,8 @@ const plural = (n: number, one: string, many: string) => `${n} ${n === 1 ? one :
 
 export function CookingSection() {
   const [editing, setEditing] = useState<CookingPreference | null>(null);
-  const { diet, avoid, cuisines, weeknight } = usePreferences(
-    useShallow(({ diet, avoid, cuisines, weeknight }) => ({ diet, avoid, cuisines, weeknight })),
+  const { diet, avoid, cuisines, weeknight, skill } = usePreferences(
+    useShallow(({ diet, avoid, cuisines, weeknight, skill }) => ({ diet, avoid, cuisines, weeknight, skill })),
   );
   const avoidCount = avoid.options.length + avoid.custom.length;
   const close = () => setEditing(null);
@@ -53,6 +54,13 @@ export function CookingSection() {
           value={WEEKNIGHT_LABELS[weeknight ?? 'any'] ?? 'No rush'}
           onPress={() => setEditing('weeknight')}
           testID="settings-cooking-weeknight"
+        />
+        <ListRow
+          icon="difficulty"
+          title="Skill level"
+          value={skill ? SKILL_LABELS[skill].label : 'Not set'}
+          onPress={() => setEditing('skill')}
+          testID="settings-cooking-skill"
         />
       </SettingsSection>
       <ModalSheet visible={editing !== null} onClose={close} title={editing ? EDITOR_TITLES[editing] : ''} testID="settings-editor">

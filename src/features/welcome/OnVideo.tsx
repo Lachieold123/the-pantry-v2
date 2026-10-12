@@ -9,6 +9,7 @@ import type { ReactNode } from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
 
 import { PhotoScrim } from '@/ui/patterns/PhotoScrim';
+import { Icon, type IconName } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { FIXED } from '@/ui/tokens/colour';
@@ -87,22 +88,47 @@ export function TextButton({ label, onPress, testID, accessibilityHint }: PressP
   );
 }
 
-/** A frosted pill chip: a single choice (diet) or one of many (avoid, cupboard). */
-export function GlassChoice(props: { label: string; selected: boolean; onPress: () => void; testID: string; radio?: boolean }) {
-  const { label, selected, onPress, testID, radio = false } = props;
+/**
+ * A frosted choice. A pill chip (diet, avoid, cuisines, cupboard), or, with a
+ * line under the label, a tile (what you came for, time, skill), as v1 drew
+ * them. Tiles can lead with an icon and end with a tick, like v1's intent tiles.
+ */
+export function GlassChoice(props: {
+  label: string;
+  sub?: string;
+  icon?: IconName;
+  selected: boolean;
+  onPress: () => void;
+  testID: string;
+  radio?: boolean;
+}) {
+  const { label, sub, icon, selected, onPress, testID, radio = false } = props;
   const styles = useStyles();
+  const tile = sub !== undefined;
+  const ink = selected ? FIXED.videoInk : FIXED.onPhoto;
   return (
     <Pressable
       onPress={onPress}
       accessibilityRole={radio ? 'radio' : 'checkbox'}
       accessibilityState={{ checked: selected }}
-      accessibilityLabel={label}
+      accessibilityLabel={sub ? `${label}, ${sub}` : label}
       testID={testID}
-      style={({ pressed }) => [styles.chip, selected && styles.on, pressed && styles.pressed]}
+      style={({ pressed }) => [tile ? styles.tile : styles.chip, selected && styles.on, pressed && styles.pressed]}
     >
-      <Text variant="chipLarge" tone={selected ? FIXED.videoInk : FIXED.onPhoto}>
-        {label}
-      </Text>
+      {icon ? <Icon name={icon} size={WELCOME.tileIcon} tone={ink} /> : null}
+      <View style={tile ? styles.tileText : null}>
+        <Text variant={tile ? 'tileLabel' : 'chipLarge'} tone={ink}>
+          {label}
+        </Text>
+        {sub ? (
+          <Text variant="value" tone={selected ? FIXED.videoInk : FIXED.videoSub}>
+            {sub}
+          </Text>
+        ) : null}
+      </View>
+      {icon ? (
+        <Icon name={selected ? 'checkCircle' : 'circle'} size={WELCOME.tileIcon} tone={selected ? FIXED.videoInk : FIXED.videoQuiet} />
+      ) : null}
     </Pressable>
   );
 }
@@ -129,9 +155,9 @@ export function StepHeading({ kicker, title, sub }: { kicker: string; title?: st
   );
 }
 
-export function Wrap({ children }: { children: ReactNode }) {
+export function Wrap({ children, tiles = false }: { children: ReactNode; tiles?: boolean }) {
   const styles = useStyles();
-  return <View style={styles.wrap}>{children}</View>;
+  return <View style={tiles ? styles.tiles : styles.wrap}>{children}</View>;
 }
 
 const useStyles = makeStyles(() => ({
@@ -166,10 +192,24 @@ const useStyles = makeStyles(() => ({
     borderColor: FIXED.glassPill,
     backgroundColor: FIXED.glassChip,
   },
+  tile: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: WELCOME.consentGap,
+    minHeight: TAP_TARGET,
+    paddingVertical: WELCOME.tilePadY,
+    paddingHorizontal: WELCOME.tilePadX,
+    borderRadius: RADIUS.big,
+    borderWidth: 1,
+    borderColor: FIXED.glassBorder,
+    backgroundColor: FIXED.glassTile,
+  },
+  tileText: { flex: 1 },
   on: { backgroundColor: FIXED.onPhoto, borderColor: FIXED.onPhoto },
   sectionTop: { marginTop: WELCOME.sectionTop },
   kicker: { marginBottom: WELCOME.kickerGap },
   title: { marginBottom: WELCOME.titleGap },
   sub: { marginBottom: WELCOME.titleGap },
   wrap: { flexDirection: 'row', flexWrap: 'wrap', gap: WELCOME.chipGap },
+  tiles: { gap: WELCOME.tileGap },
 }));

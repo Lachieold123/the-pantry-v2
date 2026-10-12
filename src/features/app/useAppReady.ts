@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 
 import { useAccount } from '@/store/account';
 import { startAccount } from '@/store/accountActions';
+import { useChecklist } from '@/store/checklist';
 import { useCookLog } from '@/store/cookLog';
 import { useCupboard } from '@/store/cupboard';
 import { useMyRecipes } from '@/store/myRecipes';
@@ -19,7 +20,19 @@ import { useSaved } from '@/store/saved';
 import { allHydrated, hydrated } from '@/store/storage';
 import { FONT_FILES } from '@/ui/theme/fonts';
 
-const STORES = [usePreferences, usePlan, useSaved, useCookLog, useCupboard, useMyRecipes, useWelcomeBack, usePro, useHousehold, useAccount];
+const STORES = [
+  usePreferences,
+  usePlan,
+  useSaved,
+  useCookLog,
+  useCupboard,
+  useMyRecipes,
+  useWelcomeBack,
+  usePro,
+  useHousehold,
+  useAccount,
+  useChecklist,
+];
 
 async function prepare(): Promise<void> {
   // Every store, so nothing on the first screen jumps in late (audit PERF-7). The wait has

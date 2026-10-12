@@ -454,3 +454,16 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
 - **Date:** 8 October 2026 · **Decided by:** Claude (REL-23), wording for Lachlan to adjust in `src/domain/recipes/labels.ts`
 - **Decision:** each house recipe's page says "Drafted with AI help, then checked and edited by us" (reviewed) or "…checked, edited and cooked by us" (vetted), beside D-029's "AI-generated photo". Settings › About says it once for the whole app. Your own recipes say nothing.
 - **Why:** every house recipe began as an AI draft (D-008); saying so plainly is honest and costs nothing.
+
+## D-050 · v1's onboarding comes back (P7), with D-041's cupboard step kept
+
+- **Date:** 12 October 2026 · **Decided by:** Claude, building P7 as the parity plan lists it. **Lachlan to confirm:** it brings back the questions D-041 removed (branch `cloud/04-p7-onboarding`, not merged).
+- **Decision:**
+  - **Order:** hello (with the terms tick once the terms are published) → "What brings you here?" → "Anything you don't eat?" → "What do you love eating?" → "How long do you have?" with skill level → "What's in your cupboard?" → "Tonight, for you" → "A nudge when it counts" → Home, with the first-run checklist and the tour (D-035). Skip on the top bar leaves from any step; every answer saves as it's tapped. The order lives in `src/domain/welcome/onboarding.ts`.
+  - **Kept from D-041:** the cupboard step, just before the reveal, and Home opening on What I have when something was ticked.
+  - **What each answer does:** diet and avoid stay hard rules. Cuisines, weeknight time and the new skill level only lift recipes (D-023): "Just starting" lifts easy dishes most, "Comfortable" easy and medium, "Confident" medium and hard. "What brings you here?" orders the checklist and nothing else; "Cook with my household" adds a "Share your kitchen" step. Skill is also in Settings › Cooking. Intents and skill stay on the phone (not synced to the account yet).
+  - **Terms:** v1's checkbox appears only once the terms page is published (`agreementLinks` in `src/lib/legal.ts`), and both Get started and Skip wait for it. The time it was ticked is kept, so a redo doesn't ask again. v1's "I'm 13+" is left out because the draft terms set no age.
+  - **Notification primer:** shows the real Sunday reminder word for word. "Allow notifications" turns the reminder on through `expo-notifications` (already installed), which brings up iOS's prompt; "Maybe later" asks nothing. If the reminder is already on, the primer is skipped.
+  - **First-run checklist:** a card at the top of Home for people who came through the new welcome (testers updating mid-way don't see it). Four steps (fill your cupboard, plan a dinner, save a recipe, cook something via Surprise me), plus sharing the kitchen if asked for, each opening the place it's done. Each step is worked out from the stores, never a stored flag. It goes for good when closed or when every step is done.
+- **Why:** P7 of `V1-PARITY-PLAN.md` lists v1's whole flow. The answers now change something real, which the old quiz didn't always, and the cupboard step keeps D-041's best moment.
+- **If Lachlan prefers D-041's two steps:** the new steps are separate components, so dropping them is a change to `QUESTION_STEPS` and the screen's switch; the checklist and the terms tick stand on their own.

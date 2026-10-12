@@ -91,3 +91,20 @@ describe('forYou for other meals (BUG-13)', () => {
     assert.ok(forYou({ ...base, count: 50 }).every((p) => p.mealTypes.includes('dinner')));
   });
 });
+
+describe('forYou and cooking skill', () => {
+  const easyShare = (skill: 'starting' | 'confident' | undefined) => {
+    const picks = forYou({ ...base, count: 12, taste: { ...base.taste, skill } });
+    return picks.filter((p) => p.difficulty === 'easy').length / picks.length;
+  };
+
+  it('lifts easy dinners for a beginner and harder ones for a confident cook, without ruling any out', () => {
+    assert.ok(easyShare('starting') >= easyShare(undefined));
+    assert.ok(easyShare('confident') <= easyShare(undefined));
+    const all = forYou({ ...base, count: 1000, taste: { ...base.taste, skill: 'starting' } });
+    assert.ok(
+      all.some((p) => p.difficulty !== 'easy'),
+      'harder dishes still appear further down',
+    );
+  });
+});

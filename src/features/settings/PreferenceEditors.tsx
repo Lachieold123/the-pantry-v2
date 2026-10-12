@@ -10,13 +10,14 @@ import { AVOID_OPTIONS, type AvoidOption, type DietPreference } from '@/domain/r
 import { AVOID_LABELS, CUISINE_LABELS, DIET_PREFERENCE_LABELS } from '@/domain/recipes/labels';
 import type { TimeFilter } from '@/domain/recipes/search';
 import { CUISINES } from '@/domain/recipes/types';
+import { SKILL_LABELS, SKILLS } from '@/domain/welcome/onboarding';
 import { usePreferences } from '@/store/preferences';
 import { Chip } from '@/ui/primitives/Chip';
 import { Text } from '@/ui/primitives/Text';
 import { TextField } from '@/ui/primitives/TextField';
 import { SPACE } from '@/ui/tokens/type';
 
-export type CookingPreference = 'diet' | 'avoid' | 'cuisines' | 'weeknight';
+export type CookingPreference = 'diet' | 'avoid' | 'cuisines' | 'weeknight' | 'skill';
 
 const DIETS = Object.keys(DIET_PREFERENCE_LABELS) as DietPreference[];
 const AVOIDS = Object.keys(AVOID_OPTIONS) as AvoidOption[];
@@ -136,16 +137,43 @@ function WeeknightEditor() {
   );
 }
 
+function SkillEditor() {
+  const skill = usePreferences((s) => s.skill);
+  const setSkill = usePreferences((s) => s.setSkill);
+  return (
+    <View style={{ gap: SPACE.sm }}>
+      <Wrap>
+        {SKILLS.map((k) => (
+          <Chip
+            key={k}
+            label={SKILL_LABELS[k].label}
+            role="radio"
+            selected={skill === k}
+            // A second tap clears it: no answer means no lean either way.
+            onPress={() => setSkill(skill === k ? undefined : k)}
+            testID={`settings-skill-${k}`}
+          />
+        ))}
+      </Wrap>
+      <Text variant="caption" colour="inkMuted">
+        Suggestions lean towards recipes that suit. Nothing is hidden.
+      </Text>
+    </View>
+  );
+}
+
 export const EDITOR_TITLES: Record<CookingPreference, string> = {
   diet: 'Diet',
   avoid: 'Things to avoid',
   cuisines: 'Cuisines you love',
   weeknight: 'Weeknight time',
+  skill: 'Skill level',
 };
 
 export function PreferenceEditor({ section }: { section: CookingPreference }) {
   if (section === 'diet') return <DietEditor />;
   if (section === 'avoid') return <AvoidEditor />;
   if (section === 'cuisines') return <CuisinesEditor />;
+  if (section === 'skill') return <SkillEditor />;
   return <WeeknightEditor />;
 }

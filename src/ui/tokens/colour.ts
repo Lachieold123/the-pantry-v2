@@ -199,6 +199,12 @@ export const FIXED = {
   videoScrim50: 'rgba(0,0,0,0.5)',
   videoScrim70: 'rgba(0,0,0,0.7)',
   videoScrim88: 'rgba(0,0,0,0.88)',
+  /** The reveal and the notification primer sit a shade darker, as v1's did. */
+  videoScrim55: 'rgba(0,0,0,0.55)',
+  videoScrim72: 'rgba(0,0,0,0.72)',
+  videoScrim90: 'rgba(0,0,0,0.9)',
+  /** The primer's sample notification, a near-white card like iOS's banner. */
+  videoPreview: 'rgba(255,255,255,0.92)',
 } as const;
 
 /** Photo scrims, as gradient stops. */
