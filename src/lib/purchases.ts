@@ -9,22 +9,32 @@
 // to pay (CLAUDE.md: no dead buttons).
 //
 // Connect: install react-native-purchases, configure it at launch with the
-// public iOS key and an anonymous app user id, map offerings to `Plan`, and
+// public iOS key and an anonymous app user id, map offerings to `Plan` (below), and
 // have `entitlementFrom` read the "pro" entitlement. Then set
 // PURCHASES_CONNECTED to true.
 import type { Entitlement } from '@/domain/pro/pro';
+import type { StorePlan } from '@/domain/pro/terms';
 
 export const PURCHASES_CONNECTED: boolean = false;
 
-export type Plan = {
-  id: 'monthly' | 'yearly';
-  /** The store's own price string, in the buyer's currency ("A$44.99"). Never hard-coded. */
-  price: string;
-  /** "a month" / "a year" */
-  period: string;
-  /** Days of free trial the store offers this buyer, if any. */
-  trialDays?: number | undefined;
-};
+/**
+ * One way to pay, as the paywall shows it (wording in domain/pro/terms).
+ * Map each RevenueCat package as: price = product.priceString,
+ * period = periodFromISO(product.subscriptionPeriod), and trialDays from
+ * product.introPrice when its price is 0 (a free trial).
+ */
+export type Plan = StorePlan;
+
+/**
+ * Placeholders until RevenueCat is connected (PRO.md: US$4.99 a month,
+ * US$44.99 a year with a 7-day trial). They exist to shape and test the
+ * paywall, never to sell: the app only ever shows the store's own prices, so
+ * nothing outside tests reads these, and loadPlans must return the store's.
+ */
+export const PLACEHOLDER_PLANS: readonly Plan[] = [
+  { id: 'yearly', price: 'US$44.99', period: { unit: 'year', count: 1 }, trialDays: 7 },
+  { id: 'monthly', price: 'US$4.99', period: { unit: 'month', count: 1 } },
+];
 
 export type PlansResult = { status: 'ok'; plans: Plan[] } | { status: 'not-connected' } | { status: 'failed'; message: string };
 export type BuyResult =

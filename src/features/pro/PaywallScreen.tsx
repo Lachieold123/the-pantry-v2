@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react';
 import { Linking, View } from 'react-native';
 
 import { isActive, isProFeature, paywallHeading, proBenefits } from '@/domain/pro/pro';
+import { buyLabel } from '@/domain/pro/terms';
 import { legalLinks } from '@/lib/legal';
 import { goBack } from '@/lib/navigation';
 import { buy, loadPlans, PURCHASES_CONNECTED, restore, type BuyResult, type Plan } from '@/lib/purchases';
@@ -114,7 +115,15 @@ export function PaywallScreen({ from }: { from?: string | undefined }) {
       ) : (
         <>
           <PlanChoice plans={plans.plans} chosen={chosen} onChoose={setChosen} />
-          <Button label="Continue" kind="primary" block busy={busy} disabled={busy} onPress={purchase} testID="pro-buy" />
+          <Button
+            label={buyLabel(plans.plans.find((p) => p.id === chosen))}
+            kind="primary"
+            block
+            busy={busy}
+            disabled={busy}
+            onPress={purchase}
+            testID="pro-buy"
+          />
           <Text variant="caption">Renews automatically until you cancel in your iPhone’s Settings, at least a day before it renews.</Text>
           <Button label="Restore purchases" kind="quiet" onPress={restorePurchases} disabled={busy} testID="pro-restore" />
           <LegalLinks />
