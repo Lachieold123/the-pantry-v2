@@ -26,6 +26,8 @@ describe('the first-run checklist', () => {
     const list = checklistSteps(['household'], { cupboard: 3, planned: 1, saved: 0, cooked: 2, inHousehold: true });
     assert.deepEqual(ids(list.filter((s) => s.done)), ['household', 'cupboard', 'plan', 'cook']);
     assert.deepEqual(checklistProgress(list), { done: 4, total: 5, complete: false });
+    // What's left leads the row.
+    assert.equal(list[0]?.id, 'save');
   });
 
   it('is complete when every step is done', () => {

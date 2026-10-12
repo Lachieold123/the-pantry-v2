@@ -132,8 +132,11 @@ describe('WelcomeScreen', () => {
     expect(usePlan.getState().entries).toMatchObject([{ recipeId: second, day: toISODate(new Date()), slot: 'dinner' }]);
 
     expect(screen.getByText(/A nudge when/)).toBeTruthy();
+    expect(mockToast).not.toHaveBeenCalled();
     await fireEvent.press(screen.getByTestId('welcome-allow'));
     expect(mockReminder).toHaveBeenCalledWith(true);
+    // Said on Home, once the welcome has gone, so it never covers the primer's buttons.
+    expect(mockToast).toHaveBeenCalledWith({ message: expect.stringContaining('is on for tonight') });
     expect(usePreferences.getState()).toMatchObject({ sundayReminder: true, onboarded: true });
     expect(mockRouter.replace).toHaveBeenCalledWith({ pathname: '/', params: { show: 'pantry' } });
   });

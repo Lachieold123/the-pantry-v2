@@ -43,6 +43,7 @@ export function WelcomeScreen({ legal = agreementLinks() }: { legal?: ReturnType
   const [offset, setOffset] = useState(0);
   const [chosenId, setChosenId] = useState<string | undefined>();
   const [busy, setBusy] = useState(false);
+  const [planned, setPlanned] = useState<string | undefined>();
   // Read once: switching the reminder on in the primer shouldn't reshape the steps mid-way.
   const [options] = useState(() => ({ reminderOn: usePreferences.getState().sundayReminder }));
   const termsAcceptedAt = usePreferences((s) => s.termsAcceptedAt);
@@ -59,15 +60,17 @@ export function WelcomeScreen({ legal = agreementLinks() }: { legal?: ReturnType
   const chosenItems = cupboardPicks.filter((id) => picked.has(id));
 
   const needsConsent = legal.length > 0 && termsAcceptedAt === undefined;
-  const finish = () => {
+  /** `note` is said on Home, once the welcome has gone, so it never covers a button here. */
+  const finish = (note: string | undefined = planned) => {
     setOnboarded(true);
     startChecklist();
+    if (note) toast({ message: note });
     // Having just said what's in the cupboard, Home opens on What I have even if nothing is fully ready (D-041).
     router.replace(stocked ? { pathname: '/', params: { show: 'pantry' } } : '/');
   };
-  const go = (from: WelcomeStep) => {
+  const go = (from: WelcomeStep, note?: string) => {
     const to = nextStep(from, options);
-    if (to === 'done') finish();
+    if (to === 'done') finish(note ?? planned);
     else setStep(to);
   };
   const leaveHello = (then: () => void) => {
@@ -78,11 +81,11 @@ export function WelcomeScreen({ legal = agreementLinks() }: { legal?: ReturnType
   const shown = pool.slice(offset, offset + SHOWN);
   const chosen: Recipe | undefined = shown.find((r) => r.id === chosenId) ?? shown[0];
   const cookTonight = () => {
-    if (chosen) {
-      addEntry(chosen.id, toISODate(new Date()), 'dinner', chosen.servings);
-      toast({ message: `${chosen.title} is on for tonight` });
-    }
-    go('reveal');
+    if (!chosen) return go('reveal');
+    addEntry(chosen.id, toISODate(new Date()), 'dinner', chosen.servings);
+    const note = `${chosen.title} is on for tonight`;
+    setPlanned(note);
+    go('reveal', note);
   };
   const stockCupboard = () => {
     if (chosenItems.length) {
@@ -96,8 +99,7 @@ export function WelcomeScreen({ legal = agreementLinks() }: { legal?: ReturnType
     const on = await setSundayReminder(true);
     saveReminder(on);
     setBusy(false);
-    if (!on) toast({ message: 'Notifications are off for The Pantry. You can turn them on in Settings.' });
-    finish();
+    finish(on ? planned : 'Notifications are off for The Pantry. You can turn them on in Settings.');
   };
   const toggleItem = (id: string) =>
     setPicked((p) => {
@@ -115,7 +117,7 @@ export function WelcomeScreen({ legal = agreementLinks() }: { legal?: ReturnType
       />
     );
   }
-  if (step === 'notify') return <NotifyStep busy={busy} onAllow={() => void allow()} onLater={finish} />;
+  if (step === 'notify') return <NotifyStep busy={busy} onAllow={() => void allow()} onLater={() => finish()} />;
 
   const back = previousStep(step);
   const backButton = back ? <TextButton label="Back" onPress={() => setStep(back)} testID="welcome-back" /> : null;
@@ -131,7 +133,7 @@ export function WelcomeScreen({ legal = agreementLinks() }: { legal?: ReturnType
       <QuizFrame
         progress={stepProgress(step, options)}
         scrim="reveal"
-        onSkip={finish}
+        onSkip={() => finish()}
         footer={chosen ? main('Cook this tonight', cookTonight) : backButton}
       >
         {chosen ? (
@@ -155,7 +157,7 @@ export function WelcomeScreen({ legal = agreementLinks() }: { legal?: ReturnType
   return (
     <QuizFrame
       progress={stepProgress(step, options)}
-      onSkip={finish}
+      onSkip={() => finish()}
       note={isCupboard && cupboardPicks.length ? pickedLabel(chosenItems.length) : undefined}
       footer={main(label, isCupboard ? stockCupboard : () => go(step))}
     >

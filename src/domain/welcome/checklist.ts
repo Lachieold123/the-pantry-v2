@@ -42,7 +42,9 @@ function isDone(id: ChecklistStepId, f: ChecklistFacts): boolean {
 export function checklistSteps(intents: readonly Intent[], facts: ChecklistFacts): ChecklistStep[] {
   const first = intents.map((i) => FOR_INTENT[i]);
   const order = [...new Set([...first, ...BASE])];
-  return order.map((id) => ({ id, done: isDone(id, facts) }));
+  const list = order.map((id) => ({ id, done: isDone(id, facts) }));
+  // What's left comes first, so the row opens on something to do.
+  return [...list.filter((s) => !s.done), ...list.filter((s) => s.done)];
 }
 
 export function checklistProgress(list: readonly ChecklistStep[]): { done: number; total: number; complete: boolean } {
