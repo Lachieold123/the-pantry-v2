@@ -92,6 +92,9 @@ function RootStack() {
       <Stack.Screen name="cupboard/cookable" />
       <Stack.Screen name="browse" />
       <Stack.Screen name="plate/[id]" />
+      <Stack.Screen name="feed/index" />
+      <Stack.Screen name="feed/[id]" />
+      <Stack.Screen name="cooks/[id]" />
       {/* Sharing a dish keeps a draft as you type, so a swipe down loses nothing. */}
       <Stack.Screen name="post" options={{ presentation: 'modal' }} />
       <Stack.Screen name="surprise" />

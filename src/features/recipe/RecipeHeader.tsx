@@ -11,18 +11,21 @@ import { makeStyles } from '@/ui/theme/makeStyles';
 import { ICON, RADIUS, RECIPE, slopFor, SMALL_CONTROL, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 
 type Props = {
-  recipe: Recipe;
+  recipe: Pick<Recipe, 'title' | 'prepMinutes' | 'cookMinutes' | 'difficulty' | 'servings' | 'steps'>;
   mine: boolean;
   saved: boolean;
   cooked: boolean;
   servings: number;
-  onEdit: () => void;
-  onSave: () => void;
-  onPlan: () => void;
-  onShare: () => void;
-  onMarkCooked: () => void;
+  /** Another cook's recipe: their name on the byline, which opens their profile. */
+  author?: { name: string; avatarUri: string | undefined; onPress: () => void } | undefined;
+  // The actions are left out for another cook's recipe, which isn't in this phone's book (read only for now).
+  onEdit?: () => void;
+  onSave?: () => void;
+  onPlan?: () => void;
+  onShare?: () => void;
+  onMarkCooked?: () => void;
   onServings: () => void;
-  onCook: () => void;
+  onCook?: () => void;
 };
 
 export function RecipeHeader(p: Props) {
@@ -50,39 +53,57 @@ export function RecipeHeader(p: Props) {
         ) : null}
       </View>
 
-      <View style={styles.byline}>
-        <Avatar name={p.mine ? 'You' : 'The Pantry'} size={RECIPE.byline} />
-        <View>
-          <Text variant="metaSmall">By</Text>
-          <Text variant="name">{p.mine ? 'You' : 'The Pantry'}</Text>
-        </View>
-      </View>
-
-      <View style={styles.actions}>
-        <Action
-          icon={p.saved ? 'savedFilled' : 'saved'}
-          label={p.saved ? 'Saved' : 'Save'}
-          on={p.saved}
-          onPress={p.onSave}
-          testID="recipe-save"
-        />
-        <Action icon="plan" label="Plan" onPress={p.onPlan} testID="recipe-plan" />
-        <Action icon="send" label="Share" onPress={p.onShare} testID="recipe-share" />
-        <View style={{ flex: 1 }} />
+      {p.author ? (
         <Pressable
-          onPress={p.onMarkCooked}
+          onPress={p.author.onPress}
           accessibilityRole="button"
-          accessibilityLabel={p.cooked ? 'Cooked. Mark as cooked again' : 'Mark as cooked'}
-          testID="recipe-mark-cooked"
-          hitSlop={slopFor(SMALL_CONTROL)}
-          style={({ pressed }) => [styles.cookPill, p.cooked && styles.cookPillOn, pressed && styles.pressed]}
+          accessibilityLabel={`By ${p.author.name}. Open their profile`}
+          testID="recipe-author"
+          style={({ pressed }) => [styles.byline, pressed && styles.pressed]}
         >
-          <Icon name={p.cooked ? 'checkCircle' : 'cook'} size={ICON.standard} colour={p.cooked ? 'onAccent' : 'ink'} />
-          <Text variant="chip" colour={p.cooked ? 'onAccent' : 'ink'}>
-            {p.cooked ? 'Cooked' : 'Cook'}
-          </Text>
+          <Avatar name={p.author.name} size={RECIPE.byline} uri={p.author.avatarUri} />
+          <View>
+            <Text variant="metaSmall">By</Text>
+            <Text variant="name">{p.author.name}</Text>
+          </View>
         </Pressable>
-      </View>
+      ) : (
+        <View style={styles.byline}>
+          <Avatar name={p.mine ? 'You' : 'The Pantry'} size={RECIPE.byline} />
+          <View>
+            <Text variant="metaSmall">By</Text>
+            <Text variant="name">{p.mine ? 'You' : 'The Pantry'}</Text>
+          </View>
+        </View>
+      )}
+
+      {p.onSave && p.onPlan && p.onShare && p.onMarkCooked ? (
+        <View style={styles.actions}>
+          <Action
+            icon={p.saved ? 'savedFilled' : 'saved'}
+            label={p.saved ? 'Saved' : 'Save'}
+            on={p.saved}
+            onPress={p.onSave}
+            testID="recipe-save"
+          />
+          <Action icon="plan" label="Plan" onPress={p.onPlan} testID="recipe-plan" />
+          <Action icon="send" label="Share" onPress={p.onShare} testID="recipe-share" />
+          <View style={{ flex: 1 }} />
+          <Pressable
+            onPress={p.onMarkCooked}
+            accessibilityRole="button"
+            accessibilityLabel={p.cooked ? 'Cooked. Mark as cooked again' : 'Mark as cooked'}
+            testID="recipe-mark-cooked"
+            hitSlop={slopFor(SMALL_CONTROL)}
+            style={({ pressed }) => [styles.cookPill, p.cooked && styles.cookPillOn, pressed && styles.pressed]}
+          >
+            <Icon name={p.cooked ? 'checkCircle' : 'cook'} size={ICON.standard} colour={p.cooked ? 'onAccent' : 'ink'} />
+            <Text variant="chip" colour={p.cooked ? 'onAccent' : 'ink'}>
+              {p.cooked ? 'Cooked' : 'Cook'}
+            </Text>
+          </Pressable>
+        </View>
+      ) : null}
 
       <View style={styles.tiles}>
         <Tile icon="time" {...minutesParts(totalMinutes(recipe))} label="Total time" />
@@ -98,7 +119,7 @@ export function RecipeHeader(p: Props) {
         </Pressable>
       </View>
 
-      {recipe.steps.length ? (
+      {recipe.steps.length && p.onCook ? (
         <Pressable
           onPress={p.onCook}
           accessibilityRole="button"

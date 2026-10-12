@@ -34,6 +34,7 @@ import { HeroCarousel } from './HeroCarousel';
 import { PantrySwitch } from './PantrySwitch';
 import { HomeEmpty } from './HomeEmpty';
 import { PlatesRail } from './PlatesRail';
+import { CommunityRail } from './CommunityRail';
 
 const MEALS = (['breakfast', 'lunch', 'dinner', 'snack'] as const).map((m) => ({ value: m, label: MEAL_TYPE_LABELS[m] }));
 const TIMES = (Object.keys(TIME_FILTER_LABELS) as TimeFilter[]).map((t) => ({ value: t, label: TIME_FILTER_LABELS[t] }));
@@ -177,6 +178,9 @@ export function FeedScreen() {
             />
           </View>
         ) : null}
+
+        {/* Other cooks' recipes join below Home's own picks (D-027). */}
+        <CommunityRail />
 
         {heroes.length ? (
           <Button label="Browse all recipes" kind="soft" block onPress={() => router.push('/browse')} testID="home-browse-all" />
