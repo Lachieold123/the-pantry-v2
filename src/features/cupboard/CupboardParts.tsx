@@ -1,18 +1,11 @@
-// The pieces of the Cupboard tab (D-030, cupboard-brief §4.4): the add bar
-// and the "what you can cook" rail. The jars and quick adds are in CupboardLists.
-import { useRouter } from 'expo-router';
+// The Cupboard tab's add bar (D-030, cupboard-brief §4.4). The jars and quick
+// adds are in CupboardLists, the match shelves in MatchShelves.
 import { useMemo, useState } from 'react';
-import { ScrollView, View } from 'react-native';
+import { View } from 'react-native';
 
 import { INGREDIENTS } from '@/data/catalogue/catalogue';
-import { RECIPE_IMAGES } from '@/data/catalogue/images';
-import { needLine, type CookableMatch } from '@/domain/cupboard/cookable';
 import { CUPBOARD_CATEGORIES } from '@/domain/cupboard/kitchen';
 import { normaliseWords } from '@/domain/ingredients/database';
-import { ingredientName } from '@/store/cookable';
-import { MatchCard } from '@/ui/patterns/MatchCard';
-import { SectionHeader } from '@/ui/patterns/SectionHeader';
-import { Button } from '@/ui/primitives/Button';
 import { Chip } from '@/ui/primitives/Chip';
 import { SearchField } from '@/ui/primitives/SearchField';
 import { Text } from '@/ui/primitives/Text';
@@ -20,7 +13,6 @@ import { SPACE } from '@/ui/tokens/type';
 
 const ALL = [...INGREDIENTS.byId.values()].filter((d) => !d.staple).sort((a, b) => a.name.localeCompare(b.name));
 const SUGGESTIONS = 8;
-const RAIL = 10;
 export const CATEGORY_LABEL: Record<(typeof CUPBOARD_CATEGORIES)[number], string> = {
   proteins: 'Proteins',
   vegetables: 'Vegetables',
@@ -92,52 +84,6 @@ export function AddBar({ have, onAdd }: { have: ReadonlySet<string>; onAdd: (id:
           ))}
         </View>
       ) : null}
-    </View>
-  );
-}
-
-export function CookRail({ ready, nearly }: { ready: CookableMatch[]; nearly: CookableMatch[] }) {
-  const router = useRouter();
-  const matches = [...ready, ...nearly].slice(0, RAIL);
-  const kicker = ['Step 3', ready.length ? `${ready.length} ready` : '', nearly.length ? `${nearly.length} need 1–2` : '']
-    .filter(Boolean)
-    .join(' · ');
-  if (matches.length === 0) {
-    return (
-      <View style={{ gap: SPACE.xs }}>
-        <SectionHeader kicker="Step 3 · What you can cook" title="Nothing close yet" />
-        <Text variant="body" colour="inkSoft">
-          Most recipes need a few more things. Add what else you have above.
-        </Text>
-      </View>
-    );
-  }
-  return (
-    <View>
-      <SectionHeader
-        kicker={kicker}
-        title="What you can cook"
-        action={<Button label="See all" kind="quiet" onPress={() => router.push('/cupboard/cookable')} testID="cupboard-see-all" />}
-      />
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        style={{ marginHorizontal: -SPACE.gutter }}
-        // Stretch: every card takes the tallest card's height, whatever its title or need line.
-        contentContainerStyle={{ gap: SPACE.sm, paddingHorizontal: SPACE.gutter, alignItems: 'stretch' }}
-      >
-        {matches.map((m) => (
-          <MatchCard
-            key={m.recipe.id}
-            recipe={m.recipe}
-            image={RECIPE_IMAGES[m.recipe.id]}
-            ready={m.tier === 'ready'}
-            need={needLine(m.result, ingredientName)}
-            onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: m.recipe.id } })}
-            testID={`match-${m.recipe.id}`}
-          />
-        ))}
-      </ScrollView>
     </View>
   );
 }

@@ -7,6 +7,7 @@ import { useMemo } from 'react';
 import { INGREDIENTS, KITCHEN } from '@/data/catalogue/catalogue';
 import { quickAdds, whatCanICook, type CookableMatch } from '@/domain/cupboard/cookable';
 import { cupboardIds } from '@/domain/cupboard/match';
+import { savedMatches, suggestedMatches, type SavedMatch } from '@/domain/cupboard/shelves';
 import { useToday } from '@/lib/today';
 import { NO_FILTERS } from '@/domain/recipes/search';
 import { eligibleForSurprise } from '@/domain/suggestions/surprise';
@@ -21,6 +22,10 @@ export type CookableNow = {
   /** Ingredients worth adding next, from what this cook's recipes use most. */
   quick: string[];
   have: ReadonlySet<string>;
+  /** The Cupboard's "From your saved": Cookmarks that use something you have, closest first. */
+  fromSaved: SavedMatch[];
+  /** The Cupboard's "Suggested for you": ready, then nearly, minus what fromSaved shows. */
+  suggested: CookableMatch[];
 };
 
 export function useCookableNow(): CookableNow {
@@ -35,16 +40,19 @@ export function useCookableNow(): CookableNow {
   return useMemo(() => {
     const have = cupboardIds(items);
     const eats = eligibleForSurprise({ recipes, filters: NO_FILTERS, diet, avoid, hidden: new Set(hidden), index: INGREDIENTS });
+    const savedIds = [...bookmarks].sort((a, b) => b.savedAt - a.savedAt).map((b) => b.recipeId);
     const { ready, nearly } = whatCanICook({
       recipes: eats,
       have,
       shelf,
       index: INGREDIENTS,
       kitchen: KITCHEN,
-      saved: new Set(bookmarks.map((b) => b.recipeId)),
+      saved: new Set(savedIds),
       seed: today,
     });
-    return { ready, nearly, quick: quickAdds(eats, have, INGREDIENTS, KITCHEN), have };
+    const fromSaved = savedMatches({ recipes: eats, saved: savedIds, have, shelf, index: INGREDIENTS, kitchen: KITCHEN });
+    const suggested = suggestedMatches(ready, nearly, fromSaved);
+    return { ready, nearly, quick: quickAdds(eats, have, INGREDIENTS, KITCHEN), have, fromSaved, suggested };
   }, [items, shelf, diet, avoid, hidden, bookmarks, recipes, today]);
 }
 
