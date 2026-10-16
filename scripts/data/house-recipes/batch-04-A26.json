@@ -1,0 +1,1048 @@
+{
+ "about": "House recipes, batch 04 (helper sA): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+ "recipes": [
+  {
+   "id": "country-captain-georgia-curried-chicken-with-currants",
+   "title": "Country Captain (Georgia Curried Chicken with Currants)",
+   "summary": "A mild curry-spiced chicken and tomato dish from the American South, with currants and toasted almonds over rice.",
+   "cuisine": "american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 45,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "700g chicken thigh fillets",
+      "2 tbsp vegetable oil",
+      "1 brown onion, diced",
+      "1 green capsicum, diced",
+      "2 clove garlic, crushed",
+      "2 tbsp curry powder",
+      "400g canned diced tomatoes",
+      "1/4 cup currants",
+      "1/4 cup flaked almonds",
+      "1 cup long grain rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the chicken in the oil for 6 minutes. Lift out. Cook the onion and capsicum for 6 minutes, then add the garlic and curry powder for 1 minute.",
+    "Add the tomatoes and currants, return the chicken, cover and simmer for 25 minutes, until the chicken is cooked through and the sauce is thick.",
+    "Cook the rice in salted water for 12 minutes, until tender. Toast the almonds in a dry pan for 2 minutes, until golden.",
+    "Serve the chicken over the rice, scattered with the almonds."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part with no pink juices. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 605,
+    "proteinG": 38,
+    "carbsG": 57,
+    "fatG": 25,
+    "fibreG": 5,
+    "sodiumMg": 450
+   }
+  },
+  {
+   "id": "hoppin-john-southern-black-eyed-pea-and-sausage-rice",
+   "title": "Hoppin' John (Southern Black-Eyed Pea and Sausage Rice)",
+   "summary": "A Southern one-pot of black-eyed peas, smoked sausage and rice, traditionally eaten for luck.",
+   "cuisine": "american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "200g smoked sausage, sliced",
+      "1 tbsp vegetable oil",
+      "1 brown onion, diced",
+      "1 green capsicum, diced",
+      "2 stick celery, diced",
+      "1 cup long grain rice",
+      "400g canned black-eyed peas, drained",
+      "2 cup chicken stock",
+      "1 tsp dried thyme",
+      "1/2 tsp cayenne pepper"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the sausage in the oil for 5 minutes. Add the onion, capsicum and celery and cook for 6 minutes, until soft.",
+    "Stir in the rice, thyme and cayenne, then the peas and stock. Cover and simmer on low for 18 minutes, until the rice is tender and the stock absorbed.",
+    "Rest covered for 5 minutes, then fluff with a fork."
+   ],
+   "notes": [
+    "Food safety: sausage and cured meats must be steaming hot, reaching at least 75°C. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 441,
+    "proteinG": 16,
+    "carbsG": 56,
+    "fatG": 17,
+    "fibreG": 8,
+    "sodiumMg": 1400
+   }
+  },
+  {
+   "id": "kentucky-hot-brown-style-open-chicken-sandwich-with-cheese-sauce",
+   "title": "Kentucky Hot Brown-Style Open Chicken Sandwich with Cheese Sauce",
+   "summary": "Toast topped with chicken, bacon and tomato under a bubbling cheese sauce.",
+   "cuisine": "american",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "400g chicken breast fillet, sliced",
+      "4 slice thick bread",
+      "4 rasher bacon",
+      "2 tomato, sliced",
+      "40g butter",
+      "3 tbsp plain flour",
+      "2 cup milk",
+      "100g grated vegetarian hard cheese"
+     ]
+    }
+   ],
+   "steps": [
+    "Pan fry the chicken in a little of the butter for 8 minutes, until cooked through. Cook the bacon until crisp and toast the bread.",
+    "Melt the remaining butter, stir in the flour for 1 minute, whisk in the milk and simmer for 5 minutes, until thick. Stir in 3/4 of the cheese.",
+    "Heat the grill. Put the toast in a dish, top with chicken, tomato, bacon and the sauce, then the remaining cheese. Grill for 4 minutes, until browned and bubbling."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part with no pink juices. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains milk and gluten. Classically made with turkey; chicken keeps it simple."
+   ],
+   "nutrition": {
+    "kcal": 567,
+    "proteinG": 44,
+    "carbsG": 37,
+    "fatG": 27,
+    "fibreG": 3,
+    "sodiumMg": 1100
+   }
+  },
+  {
+   "id": "monte-cristo-fried-ham-and-cheese-sandwich",
+   "title": "Monte Cristo (Fried Ham and Cheese Sandwich)",
+   "summary": "A ham and Swiss-style cheese sandwich dipped in egg and pan fried, served with apricot jam.",
+   "cuisine": "american",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "8 slice white bread",
+      "200g sliced ham",
+      "200g sliced vegetarian hard cheese",
+      "2 egg",
+      "1/2 cup milk",
+      "30g butter",
+      "2 tbsp apricot jam"
+     ]
+    }
+   ],
+   "steps": [
+    "Build 4 sandwiches with the ham and cheese.",
+    "Whisk the eggs and milk in a shallow dish. Dip each sandwich for a few seconds each side.",
+    "Fry in the butter over medium heat for 3 to 4 minutes each side, until golden and the cheese has melted. Serve with the jam."
+   ],
+   "notes": [
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains milk and gluten."
+   ],
+   "nutrition": {
+    "kcal": 610,
+    "proteinG": 34,
+    "carbsG": 51,
+    "fatG": 30,
+    "fibreG": 3,
+    "sodiumMg": 1500
+   }
+  },
+  {
+   "id": "patty-melt-beef-patty-and-caramelised-onion-on-rye",
+   "title": "Patty Melt (Beef Patty and Caramelised Onion on Rye)",
+   "summary": "A griddled beef patty with melted cheese and sweet onion between toasted rye.",
+   "cuisine": "american",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "500g beef mince",
+      "2 brown onion, sliced",
+      "1 tbsp butter",
+      "1 tbsp vegetable oil",
+      "8 slice rye bread",
+      "80g sliced vegetarian hard cheese"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the onion in the butter for 15 minutes, until soft and golden.",
+    "Shape the mince into 4 thin patties, season and fry in the oil for 3 minutes each side, until cooked through.",
+    "Layer patty, cheese and onion between slices of bread. Toast in the pan for 2 minutes each side, until golden and the cheese melts."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains milk and gluten."
+   ],
+   "nutrition": {
+    "kcal": 583,
+    "proteinG": 34,
+    "carbsG": 42,
+    "fatG": 31,
+    "fibreG": 4,
+    "sodiumMg": 1000
+   }
+  },
+  {
+   "id": "cheeseburger-pie",
+   "title": "Cheeseburger Pie",
+   "summary": "A cheese and onion beef filling baked in a puff pastry case.",
+   "cuisine": "american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 40,
+   "servings": 6,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "500g beef mince",
+      "1 brown onion, diced",
+      "2 tbsp tomato paste",
+      "1 tbsp worcestershire sauce",
+      "100g grated vegetarian hard cheese",
+      "2 sheet puff pastry",
+      "1 egg, beaten"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Cook the onion and mince for 10 minutes, until browned and cooked through. Stir in the paste and Worcestershire and cool.",
+    "Line a 22cm pie dish with 1 pastry sheet and spoon in the mince. Top with the cheese.",
+    "Cover with the second sheet, seal the edges and brush with the egg. Bake for 30 minutes, until puffed and golden."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 492,
+    "proteinG": 23,
+    "carbsG": 28,
+    "fatG": 32,
+    "fibreG": 3,
+    "sodiumMg": 600
+   }
+  },
+  {
+   "id": "crumbed-fish-burgers-with-yoghurt-tartare",
+   "title": "Crumbed Fish Burgers with Yoghurt Tartare",
+   "summary": "Crisp panko-crumbed fish in a soft bun with lettuce and a quick tartare, an Australian beach-town favourite.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 10,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 firm white fish fillets",
+      "1/4 cup plain flour",
+      "1 egg, beaten",
+      "1 cup panko breadcrumbs",
+      "1/3 cup vegetable oil",
+      "4 burger bun",
+      "1/4 cup plain yoghurt",
+      "2 dill pickle, chopped",
+      "4 lettuce leaf"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the yoghurt and pickle for the tartare. Dust the fish in flour, dip in egg and press into the crumbs.",
+    "Fry in the oil for 3 to 4 minutes each side, until golden and the fish flakes. Drain.",
+    "Toast the buns for 1 minute, until golden, and fill with lettuce, fish and tartare."
+   ],
+   "notes": [
+    "Food safety: fish is cooked when it turns opaque and flakes easily; cook shellfish until opaque. Eat the same day or refrigerate within an hour and use within 24 hours.",
+    "Contains egg, milk and gluten."
+   ],
+   "nutrition": {
+    "kcal": 470,
+    "proteinG": 33,
+    "carbsG": 53,
+    "fatG": 14,
+    "fibreG": 3,
+    "sodiumMg": 800
+   }
+  },
+  {
+   "id": "chicken-kyiv-garlic-butter-crumbed-chicken",
+   "title": "Chicken Kyiv (Garlic Butter Crumbed Chicken)",
+   "summary": "Crumbed chicken breast filled with garlic and parsley butter that runs out when cut.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 35,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "4 chicken breast fillet",
+      "80g butter, softened",
+      "3 clove garlic, crushed",
+      "2 tbsp chopped parsley",
+      "1/4 cup plain flour",
+      "1 egg, beaten",
+      "3/4 cup breadcrumbs",
+      "1 tbsp vegetable oil",
+      "600g potato"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the butter, garlic and parsley, shape into a log and freeze for 20 minutes. Cut a deep pocket in each breast.",
+    "Stuff with the butter and seal with toothpicks. Dust with flour, dip in egg and coat in crumbs.",
+    "Heat the oven to 200°C (180°C fan). Brown the chicken in the oil for 2 minutes each side, then bake for 20 minutes, until cooked through. Boil the potatoes for 20 minutes, until tender, and serve alongside."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part with no pink juices. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 566,
+    "proteinG": 38,
+    "carbsG": 45,
+    "fatG": 26,
+    "fibreG": 3,
+    "sodiumMg": 500
+   }
+  },
+  {
+   "id": "pariserbof-danish-beef-patty-with-fried-egg-and-capers",
+   "title": "Pariserbof (Danish Beef Patty with Fried Egg and Capers)",
+   "summary": "A seared beef patty on rye with a fried egg, capers, onion and beetroot, a Danish lunch classic.",
+   "cuisine": "scandinavian",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g beef mince",
+      "1 tbsp vegetable oil",
+      "4 egg",
+      "4 slice rye bread",
+      "2 tbsp capers",
+      "1 red onion, finely diced",
+      "4 tbsp pickled beetroot, diced"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the mince with 1 tsp salt and pepper and shape into 4 patties. Fry in half the oil for 4 minutes each side, until cooked through.",
+    "Fry the eggs in the remaining oil for 3 minutes, until the whites are set.",
+    "Set each patty on a slice of rye, top with an egg, capers, onion and beetroot."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 513,
+    "proteinG": 37,
+    "carbsG": 26,
+    "fatG": 29,
+    "fibreG": 4,
+    "sodiumMg": 750
+   }
+  },
+  {
+   "id": "hakkebof-danish-onion-beef-patties-with-gravy",
+   "title": "Hakkebof (Danish Onion Beef Patties with Gravy)",
+   "summary": "Soft beef patties smothered in browned onions and a simple gravy, served with potatoes.",
+   "cuisine": "scandinavian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "600g beef mince",
+      "1/2 cup milk",
+      "4 tbsp plain flour",
+      "3 brown onion, sliced",
+      "30g butter",
+      "1 1/2 cup beef stock",
+      "600g potato"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the mince, milk, 2 tbsp flour, 1 tsp salt and pepper and shape into 4 patties. Boil the potato for 20 minutes, until tender.",
+    "Brown the onion in the butter for 12 minutes. Lift out. Fry the patties in the same pan for 5 minutes each side, until cooked through.",
+    "Stir the remaining flour into the pan, whisk in the stock and simmer for 5 minutes. Return the onion.",
+    "Serve the patties with the gravy and potatoes."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains milk and gluten."
+   ],
+   "nutrition": {
+    "kcal": 547,
+    "proteinG": 33,
+    "carbsG": 43,
+    "fatG": 27,
+    "fibreG": 5,
+    "sodiumMg": 650
+   }
+  },
+  {
+   "id": "biksemad-danish-beef-and-potato-hash-with-fried-egg",
+   "title": "Biksemad (Danish Beef and Potato Hash with Fried Egg)",
+   "summary": "Crisp fried potato and beef with onion, topped with a fried egg and a splash of Worcestershire.",
+   "cuisine": "scandinavian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g potato, cubed",
+      "350g beef topside, diced",
+      "2 tbsp vegetable oil",
+      "2 brown onion, diced",
+      "1 tbsp worcestershire sauce",
+      "4 egg"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the potato for 8 minutes, until just tender, and drain well.",
+    "Fry the beef in 1 tbsp oil for 8 minutes, until browned and cooked through. Lift out. Fry the potato and onion in the remaining oil for 12 minutes, until crisp and golden.",
+    "Return the beef with the Worcestershire and heat through for 2 minutes. Fry the eggs separately for 3 minutes, until the whites are set, then top the hash."
+   ],
+   "notes": [
+    "Food safety: beef pieces are safe once they reach at least 70°C and are tender. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 393,
+    "proteinG": 30,
+    "carbsG": 30,
+    "fatG": 17,
+    "fibreG": 4,
+    "sodiumMg": 400
+   }
+  },
+  {
+   "id": "flaeskesteg-danish-crackling-pork-roast-with-potatoes",
+   "title": "Flaeskesteg (Danish Crackling Pork Roast with Potatoes)",
+   "summary": "Pork loin with a crackling rind, roasted with bay and served with browned potatoes.",
+   "cuisine": "scandinavian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 120,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.5 kg pork loin, rind scored",
+      "2 tsp salt",
+      "4 bay leaf",
+      "900g potato, halved",
+      "1 cup water"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 240°C (220°C fan). Dry the rind well and rub in the salt. Set on a rack over a tin with the bay and water.",
+    "Roast for 30 minutes, then lower to 180°C (160°C fan) and roast for 1 hour, adding the potatoes for the last 40 minutes.",
+    "Rest the pork for 15 minutes. If the rind is not crisp, grill it for 3 to 5 minutes, watching closely.",
+    "Carve and serve with the potatoes and pan juices."
+   ],
+   "notes": [
+    "Food safety: pork must reach at least 70°C in the centre, with clear juices, and rest before serving. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 482,
+    "proteinG": 43,
+    "carbsG": 28,
+    "fatG": 22,
+    "fibreG": 3,
+    "sodiumMg": 450
+   }
+  },
+  {
+   "id": "karjalanpaisti-karelian-beef-and-pork-hot-pot",
+   "title": "Karjalanpaisti (Karelian Beef and Pork Hot Pot)",
+   "summary": "A slow-baked Finnish stew of beef and pork with allspice and onion, served with potatoes.",
+   "cuisine": "scandinavian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 150,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g beef chuck, diced",
+      "500g pork shoulder, diced",
+      "2 brown onion, sliced",
+      "3 carrot, chunked",
+      "8 allspice berries",
+      "2 bay leaf",
+      "2 cup water",
+      "600g potato, boiled"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 160°C (140°C fan). Layer the beef, pork, onion and carrot in a casserole with the allspice and bay, seasoning each layer with salt.",
+    "Pour in the water, cover tightly and bake for 2 1/2 hours, until the meat is falling apart.",
+    "Serve with the boiled potatoes and the cooking juices."
+   ],
+   "notes": [
+    "Food safety: pork must reach at least 70°C in the centre, with clear juices, and rest before serving. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 402,
+    "proteinG": 32,
+    "carbsG": 28,
+    "fatG": 18,
+    "fibreG": 4,
+    "sodiumMg": 400
+   }
+  },
+  {
+   "id": "lihapullat-finnish-meatballs-with-cream-gravy",
+   "title": "Lihapullat (Finnish Meatballs with Cream Gravy)",
+   "summary": "Soft allspice meatballs in a light cream gravy, served with potatoes and lingonberry jam.",
+   "cuisine": "scandinavian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "300g beef mince",
+      "300g pork mince",
+      "1/2 cup breadcrumbs",
+      "1/2 cup milk",
+      "1 brown onion, grated",
+      "1 egg",
+      "1/2 tsp ground allspice",
+      "30g butter",
+      "2 tbsp plain flour",
+      "1 cup chicken stock",
+      "1/4 cup cream",
+      "600g potato",
+      "4 tbsp lingonberry jam"
+     ]
+    }
+   ],
+   "steps": [
+    "Soak the crumbs in the milk for 5 minutes. Mix with the mince, onion, egg, allspice, 1 tsp salt and pepper. Roll into 20 balls and boil the potato for 20 minutes, until tender.",
+    "Brown the meatballs in the butter for 8 minutes. Lift out.",
+    "Stir the flour into the pan, whisk in the stock and simmer for 4 minutes. Add the cream and meatballs and simmer for 6 minutes, until cooked through.",
+    "Serve with the potato and jam."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 649,
+    "proteinG": 34,
+    "carbsG": 54,
+    "fatG": 33,
+    "fibreG": 4,
+    "sodiumMg": 650
+   }
+  },
+  {
+   "id": "makaronilaatikko-finnish-macaroni-and-mince-bake",
+   "title": "Makaronilaatikko (Finnish Macaroni and Mince Bake)",
+   "summary": "A comforting baked macaroni and beef custard, eaten with ketchup in Finland.",
+   "cuisine": "scandinavian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 45,
+   "servings": 6,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "300g macaroni",
+      "500g beef mince",
+      "1 brown onion, diced",
+      "1 tbsp butter",
+      "3 egg",
+      "2 cup milk",
+      "50g grated vegetarian hard cheese"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 180°C (160°C fan). Boil the macaroni for 2 minutes short of the pack time and drain. Cook the onion in the butter for 5 minutes, then the mince for 8 minutes, until cooked through.",
+    "Mix the macaroni and mince in a greased dish. Whisk the eggs, milk, 1 tsp salt and pepper and pour over. Scatter with the cheese.",
+    "Bake for 35 minutes, until the custard is set and golden."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 482,
+    "proteinG": 29,
+    "carbsG": 42,
+    "fatG": 22,
+    "fibreG": 3,
+    "sodiumMg": 550
+   }
+  },
+  {
+   "id": "kroppkakor-swedish-potato-dumplings-with-bacon",
+   "title": "Kroppkakor (Swedish Potato Dumplings with Bacon)",
+   "summary": "Soft potato dumplings with a smoky bacon and onion centre, served with melted butter and lingonberry jam.",
+   "cuisine": "scandinavian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 45,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "800g potato, boiled and mashed",
+      "125g plain flour",
+      "1 egg",
+      "150g bacon, diced",
+      "1 brown onion, diced",
+      "40g butter",
+      "4 tbsp lingonberry jam"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the bacon and onion for 8 minutes, until crisp and golden. Cool.",
+    "Mix the potato, flour, egg and 1 tsp salt into a soft dough. Shape 12 balls, press a hollow into each and fill with 1 tbsp of the bacon.",
+    "Close and re-roll. Simmer in salted water for 15 minutes, until they float and are firm.",
+    "Serve with melted butter and the jam."
+   ],
+   "notes": [
+    "Food safety: sausage and cured meats must be steaming hot, reaching at least 75°C. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 472,
+    "proteinG": 14,
+    "carbsG": 68,
+    "fatG": 16,
+    "fibreG": 5,
+    "sodiumMg": 750
+   }
+  },
+  {
+   "id": "laxpudding-swedish-salmon-and-potato-gratin",
+   "title": "Laxpudding (Swedish Salmon and Potato Gratin)",
+   "summary": "Layers of potato and onion baked with salmon and dill in a creamy egg custard.",
+   "cuisine": "scandinavian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 50,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g salmon fillet, skinned and sliced",
+      "700g potato, thinly sliced",
+      "1 brown onion, sliced",
+      "3 egg",
+      "1 cup milk",
+      "1/4 cup cream",
+      "1/4 cup chopped dill",
+      "20g butter"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 190°C (170°C fan). Layer the potato, onion and salmon in a buttered dish, seasoning each layer and scattering with dill.",
+    "Whisk the eggs, milk, cream and 1 tsp salt and pour over.",
+    "Bake for 45 minutes, until the custard is set and the potato is tender."
+   ],
+   "notes": [
+    "Food safety: fish is cooked when it turns opaque and flakes easily; cook shellfish until opaque. Eat the same day or refrigerate within an hour and use within 24 hours.",
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 535,
+    "proteinG": 30,
+    "carbsG": 34,
+    "fatG": 31,
+    "fibreG": 4,
+    "sodiumMg": 550
+   }
+  },
+  {
+   "id": "pulled-pork-sandwiches-with-barbecue-sauce-and-slaw",
+   "title": "Pulled Pork Sandwiches with Barbecue Sauce and Slaw",
+   "summary": "Slow-cooked pork shredded in smoky barbecue sauce, piled in a soft bun with crunchy cabbage.",
+   "cuisine": "american",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 240,
+   "servings": 6,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "1.2 kg pork shoulder",
+      "1 tbsp smoked paprika",
+      "1 tsp ground cumin",
+      "3/4 cup barbecue sauce",
+      "6 burger bun",
+      "2 cup shredded cabbage",
+      "1/4 cup plain yoghurt",
+      "1 tbsp apple cider vinegar"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 150°C (130°C fan). Rub the pork with the paprika, cumin and 2 tsp salt. Put in a covered tin with 1/2 cup water.",
+    "Roast for 4 hours, until it shreds easily. Shred and mix with the barbecue sauce.",
+    "Mix the cabbage, yoghurt and vinegar. Pile the pork and slaw into toasted buns."
+   ],
+   "notes": [
+    "Food safety: pork must reach at least 70°C in the centre, with clear juices, and rest before serving. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains milk and gluten."
+   ],
+   "nutrition": {
+    "kcal": 542,
+    "proteinG": 44,
+    "carbsG": 51,
+    "fatG": 18,
+    "fibreG": 4,
+    "sodiumMg": 1000
+   }
+  },
+  {
+   "id": "baked-cod-with-chorizo-potatoes-and-peppers",
+   "title": "Baked Cod with Chorizo, Potatoes and Peppers",
+   "summary": "A one-tray Iberian bake of white fish over chorizo-flavoured potatoes and capsicum.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 45,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 firm white fish fillets",
+      "100g chorizo, sliced",
+      "500g potato, thinly sliced",
+      "1 red capsicum, sliced",
+      "1 brown onion, sliced",
+      "400g canned diced tomatoes",
+      "1 tbsp olive oil",
+      "1 tsp smoked paprika"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Toss the potato, capsicum, onion, chorizo, oil and paprika in a tray with the tomatoes and 1/2 cup water.",
+    "Roast for 30 minutes, until the potato is nearly tender.",
+    "Season the fish, set on top and roast for 12 minutes, until opaque and flaking."
+   ],
+   "notes": [
+    "Food safety: fish is cooked when it turns opaque and flakes easily; cook shellfish until opaque. Eat the same day or refrigerate within an hour and use within 24 hours.",
+    "Contains pork. Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 433,
+    "proteinG": 37,
+    "carbsG": 33,
+    "fatG": 17,
+    "fibreG": 5,
+    "sodiumMg": 900
+   }
+  },
+  {
+   "id": "pollo-encebollado-ecuadorian-onion-chicken",
+   "title": "Pollo Encebollado (Ecuadorian Onion Chicken)",
+   "summary": "Chicken braised under a heap of lime-soaked onions until soft and sweet, served with rice.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "700g chicken thigh fillets",
+      "2 tbsp vegetable oil",
+      "4 brown onion, sliced",
+      "3 clove garlic, crushed",
+      "1 tsp ground cumin",
+      "2 lime, juiced",
+      "1 cup long grain rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the chicken with the cumin, garlic and half the lime juice. Brown in the oil for 6 minutes.",
+    "Add the onion and 1/2 cup water, cover and cook for 25 minutes, until the onion is soft and the chicken is cooked through.",
+    "Cook the rice in salted water for 12 minutes, until tender. Stir the remaining lime into the chicken and serve over the rice."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part with no pink juices. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 541,
+    "proteinG": 37,
+    "carbsG": 51,
+    "fatG": 21,
+    "fibreG": 3,
+    "sodiumMg": 450
+   }
+  },
+  {
+   "id": "machaca-con-huevo-northern-mexican-shredded-beef-with-eggs",
+   "title": "Machaca con Huevo (Northern Mexican Shredded Beef with Eggs)",
+   "summary": "Shredded beef fried with onion, capsicum and tomato, set with eggs and served in warm tortillas.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 120,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g beef chuck",
+      "1 tbsp vegetable oil",
+      "1 brown onion, diced",
+      "1 green capsicum, diced",
+      "2 tomato, diced",
+      "6 egg",
+      "8 flour tortilla"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the beef in salted water to cover for 1 1/2 hours, until it shreds. Shred finely.",
+    "Fry the onion and capsicum in the oil for 6 minutes. Add the beef and tomato and cook for 5 minutes, until the liquid has gone.",
+    "Pour in the beaten eggs and stir for 2 minutes, until set. Warm the tortillas and fill."
+   ],
+   "notes": [
+    "Food safety: beef pieces are safe once they reach at least 70°C and are tender. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 649,
+    "proteinG": 50,
+    "carbsG": 56,
+    "fatG": 25,
+    "fibreG": 5,
+    "sodiumMg": 750
+   }
+  },
+  {
+   "id": "pambazos-mexican-chilli-dipped-potato-and-chorizo-rolls",
+   "title": "Pambazos (Mexican Chilli-Dipped Potato and Chorizo Rolls)",
+   "summary": "Soft rolls dipped in red chilli sauce and fried, filled with potato and chorizo.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 soft bread roll",
+      "200g chorizo, crumbled",
+      "300g potato, diced",
+      "1 cup tomato passata",
+      "1 tsp smoked paprika",
+      "1 tbsp vegetable oil",
+      "4 lettuce leaf"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the potato for 10 minutes, until tender. Fry the chorizo for 6 minutes, until cooked through, and mix with the potato.",
+    "Warm the passata with the paprika and 1/4 tsp salt for 4 minutes, until thick.",
+    "Split the rolls and fill with the chorizo mix and lettuce. Dip the outside in the sauce.",
+    "Fry in the oil for 2 minutes each side, until crisp."
+   ],
+   "notes": [
+    "Food safety: sausage and cured meats must be steaming hot, reaching at least 75°C. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains pork and gluten. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 499,
+    "proteinG": 20,
+    "carbsG": 53,
+    "fatG": 23,
+    "fibreG": 4,
+    "sodiumMg": 1000
+   }
+  }
+ ]
+}
