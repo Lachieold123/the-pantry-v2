@@ -1,0 +1,2145 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "roti-canai-with-dhal-dipping-curry",
+      "title": "Roti Canai with Dhal Dipping Curry",
+      "summary": "Flaky, layered Malaysian flatbreads stretched thin, folded and pan-fried, served with a spiced lentil curry.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 40,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g plain flour",
+            "1 tsp salt",
+            "1 tbsp sugar",
+            "1 egg",
+            "200ml water",
+            "4 tbsp vegetable oil",
+            "2 tbsp ghee",
+            "150g red lentils",
+            "1 brown onion, diced",
+            "2 garlic cloves",
+            "2 tsp curry powder",
+            "1 tomato, chopped",
+            "400ml water"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix flour, salt, sugar, egg and water into a soft dough and knead for 8 minutes.",
+        "Divide into 8 balls, coat each in oil and rest in a covered tray for 2 hours.",
+        "Simmer onion, garlic, curry powder, tomato and lentils in the water for 20 minutes until thick and soft.",
+        "Stretch each ball on an oiled bench until paper thin, then fold into a square.",
+        "Fry in a hot pan with ghee for 3 minutes each side until golden.",
+        "Clap the roti between your hands to fluff the layers and serve with the dhal."
+      ],
+      "notes": [
+        "Food safety: the egg in the dough is fully cooked by frying.",
+        "The long oiled rest is what lets the dough stretch without tearing."
+      ],
+      "nutrition": {
+        "kcal": 476,
+        "proteinG": 14,
+        "carbsG": 66,
+        "fatG": 16,
+        "fibreG": 6,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "coconut-rice-breakfast-with-sambal-eggs-and-anchovies",
+      "title": "Coconut Rice Breakfast with Sambal Eggs and Anchovies",
+      "summary": "Coconut rice with crisp anchovies, peanuts, cucumber and eggs braised in a sweet chilli sambal.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g jasmine rice",
+            "400ml coconut milk",
+            "200ml water",
+            "1 lemongrass stalk, bruised",
+            "4 eggs",
+            "1 tbsp tamarind paste",
+            "3 tbsp chilli paste",
+            "1 brown onion, sliced",
+            "2 garlic cloves",
+            "1 tbsp brown sugar",
+            "40g dried anchovies",
+            "50g roasted peanuts",
+            "1 cucumber, sliced",
+            "2 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Rinse the rice and cook with the coconut milk, water and lemongrass for 18 minutes, then rest covered.",
+        "Boil the eggs for 8 minutes, cool and peel.",
+        "Fry the onion and garlic in oil for 6 minutes, add the chilli paste and cook 4 minutes until the oil separates.",
+        "Stir in the tamarind and sugar with a splash of water, add the eggs and coat for 3 minutes.",
+        "Fry the anchovies in a little oil for 2 minutes until crisp.",
+        "Serve the rice with sambal eggs, anchovies, peanuts and cucumber."
+      ],
+      "notes": [
+        "Food safety: boil the eggs for at least 8 minutes so they are set through.",
+        "Anchovies make this pescatarian, not vegetarian."
+      ],
+      "nutrition": {
+        "kcal": 1016,
+        "proteinG": 33,
+        "carbsG": 114,
+        "fatG": 46,
+        "fibreG": 7,
+        "sodiumMg": 950
+      }
+    },
+    {
+      "id": "sambal-belacan",
+      "title": "Sambal Belacan",
+      "summary": "A fiery fresh chilli and toasted shrimp paste condiment pounded with lime, served with rice and grilled fish.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 5,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 red chillies",
+            "2 tsp shrimp paste",
+            "2 tsp sugar",
+            "1 tsp salt",
+            "2 limes",
+            "1 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the shrimp paste in a dry pan for 2 minutes until crumbly and fragrant.",
+        "Crush the chillies coarsely in a mortar until broken down.",
+        "Add the shrimp paste, sugar and salt and grind until a rough paste forms.",
+        "Stir in the lime juice and oil and serve at once."
+      ],
+      "notes": [
+        "Keep covered in the fridge for up to 3 days.",
+        "Toasting the paste mellows its smell and deepens the flavour."
+      ],
+      "nutrition": {
+        "kcal": 40,
+        "proteinG": 1,
+        "carbsG": 4,
+        "fatG": 2,
+        "fibreG": 1,
+        "sodiumMg": 280
+      }
+    },
+    {
+      "id": "kangkung-belacan",
+      "title": "Kangkung Belacan",
+      "summary": "Water spinach stir-fried with chilli, garlic and toasted shrimp paste, a classic Malaysian side.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 5,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g water spinach",
+            "3 garlic cloves",
+            "3 red chillies",
+            "2 tsp shrimp paste",
+            "1 tbsp oyster sauce",
+            "1 tsp sugar",
+            "2 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Cut the water spinach into 8cm lengths, keeping stems and leaves apart.",
+        "Grind the garlic, chillies and shrimp paste until a rough paste forms.",
+        "Fry the paste in hot oil for 1 minute until fragrant.",
+        "Add the stems and toss for 2 minutes, then the leaves, oyster sauce and sugar.",
+        "Toss for 1 minute until just wilted and serve hot."
+      ],
+      "notes": [
+        "Wash the greens very well as the hollow stems hold grit.",
+        "Work on a high heat so the greens stay bright."
+      ],
+      "nutrition": {
+        "kcal": 119,
+        "proteinG": 4,
+        "carbsG": 8,
+        "fatG": 7,
+        "fibreG": 4,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "acar-awak",
+      "title": "Acar Awak",
+      "summary": "A Nyonya-style pickle of crunchy vegetables in a turmeric, chilli and peanut dressing.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 25,
+      "cookMinutes": 10,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 carrot, cut in batons",
+            "1 cucumber, deseeded and cut in batons",
+            "200g cabbage, cut in strips",
+            "100g green beans",
+            "3 red chillies",
+            "3 shallots",
+            "2 garlic cloves",
+            "1 tsp turmeric",
+            "100ml rice vinegar",
+            "2 tbsp sugar",
+            "1 tsp salt",
+            "60g roasted peanuts, crushed",
+            "3 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Salt the cabbage, carrot, cucumber and beans and leave them for 20 minutes, then squeeze dry.",
+        "Blend the chillies, shallots, garlic and turmeric to a paste.",
+        "Fry the paste in oil for 5 minutes until fragrant.",
+        "Add the vinegar and sugar and simmer for 3 minutes, then cool.",
+        "Toss the vegetables with the dressing and half the peanuts.",
+        "Top with the remaining peanuts and rest for an hour before serving."
+      ],
+      "notes": [
+        "Keeps in the fridge for up to 5 days.",
+        "Squeezing the vegetables dry keeps the pickle crunchy."
+      ],
+      "nutrition": {
+        "kcal": 125,
+        "proteinG": 3,
+        "carbsG": 11,
+        "fatG": 7,
+        "fibreG": 3,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "bak-kut-teh-pork-rib-soup",
+      "title": "Bak Kut Teh Pork Rib Soup",
+      "summary": "A peppery Klang-style pork rib soup with garlic, white pepper and soy, simmered until the meat falls away.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 120,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g pork ribs",
+            "2 whole garlic bulbs",
+            "1 tbsp white peppercorns",
+            "2 star anise",
+            "1 cinnamon stick",
+            "3 tbsp soy sauce",
+            "1 tbsp dark soy sauce",
+            "2 litres water",
+            "200g shiitake mushrooms",
+            "200g firm tofu",
+            "1 tbsp rock sugar",
+            "4 bowls steamed rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Blanch the ribs in boiling water for 5 minutes and rinse.",
+        "Return to a clean pot with water, garlic, peppercorns, star anise and cinnamon.",
+        "Simmer gently for 90 minutes, skimming the surface, until the meat pulls from the bone.",
+        "Add the soy sauces, sugar and mushrooms and simmer for 20 minutes.",
+        "Add the tofu for 5 minutes and serve with rice."
+      ],
+      "notes": [
+        "Food safety: cook the pork until it reaches at least 75°C and is tender.",
+        "Serve with chopped chilli in soy sauce."
+      ],
+      "nutrition": {
+        "kcal": 500,
+        "proteinG": 34,
+        "carbsG": 40,
+        "fatG": 22,
+        "fibreG": 3,
+        "sodiumMg": 1450
+      }
+    },
+    {
+      "id": "curry-laksa-noodle-soup",
+      "title": "Curry Laksa Noodle Soup",
+      "summary": "A rich coconut curry soup with rice noodles, prawns, tofu puffs and a fragrant homemade spice paste.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 35,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 dried chillies",
+            "4 shallots",
+            "3 garlic cloves",
+            "2 lemongrass stalks",
+            "30g ginger",
+            "1 tsp turmeric",
+            "1 tbsp shrimp paste",
+            "3 tbsp vegetable oil",
+            "600ml chicken stock",
+            "400ml coconut milk",
+            "1 tbsp fish sauce",
+            "200g rice vermicelli",
+            "250g raw prawns",
+            "8 tofu puffs",
+            "100g bean sprouts",
+            "2 limes",
+            "1 handful of Vietnamese mint"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the dried chillies in hot water for 15 minutes, then blend with shallots, garlic, lemongrass, ginger, turmeric and shrimp paste.",
+        "Fry the paste in the oil for 10 minutes until the oil separates.",
+        "Add the stock and simmer for 10 minutes, then stir in the coconut milk and fish sauce.",
+        "Cook the vermicelli until tender, then drain and divide among bowls.",
+        "Poach the prawns and tofu puffs in the soup for 3 minutes.",
+        "Ladle over the noodles and top with sprouts, mint and lime."
+      ],
+      "notes": [
+        "Food safety: cook the prawns until pink and opaque all through.",
+        "Freeze leftover paste in portions."
+      ],
+      "nutrition": {
+        "kcal": 636,
+        "proteinG": 28,
+        "carbsG": 52,
+        "fatG": 34,
+        "fibreG": 5,
+        "sodiumMg": 1500
+      }
+    },
+    {
+      "id": "kaya-toast-with-soft-eggs",
+      "title": "Kaya Toast with Soft Eggs",
+      "summary": "Crisp toasted bread with sweet coconut and butter, with runny eggs seasoned with soy and white pepper.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 8,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 slices white bread",
+            "4 tbsp desiccated coconut",
+            "30g butter, sliced",
+            "4 eggs",
+            "2 tsp soy sauce",
+            "1 pinch white pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the bread until crisp and golden.",
+        "Spread two slices with the sweet coconut and top with slices of cold butter.",
+        "Close the sandwiches and cut them into fingers.",
+        "Lower the eggs into boiling water for 6 minutes.",
+        "Crack into a bowl and season with soy sauce and white pepper.",
+        "Eat the toast dipped in the eggs until the plate is clean."
+      ],
+      "notes": [
+        "Food safety: soft eggs are not recommended for pregnant women, older adults or small children.",
+        "Toast the coconut lightly until golden for extra flavour."
+      ],
+      "nutrition": {
+        "kcal": 390,
+        "proteinG": 18,
+        "carbsG": 38,
+        "fatG": 18,
+        "fibreG": 2,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "rojak-buah-fruit-salad",
+      "title": "Rojak Buah Fruit Salad",
+      "summary": "Crunchy tropical fruit and vegetables tossed in a sticky, sweet and tangy tamarind and chilli dressing with peanuts.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 green mango, cut in batons",
+            "1 pineapple wedge, diced",
+            "1 cucumber, chopped",
+            "1 radish, cut in batons",
+            "3 tbsp tamarind paste",
+            "3 tbsp palm sugar",
+            "2 tbsp chilli paste",
+            "1 tbsp lime juice",
+            "60g roasted peanuts, crushed",
+            "1 tbsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk tamarind, palm sugar, chilli paste and lime juice until the sugar dissolves.",
+        "Place the fruit and vegetables in a large bowl.",
+        "Pour over the dressing and toss well.",
+        "Scatter with peanuts and sesame seeds and serve straight away."
+      ],
+      "notes": [
+        "Serve immediately or the fruit will turn watery.",
+        "Add more chilli for a hotter dressing."
+      ],
+      "nutrition": {
+        "kcal": 288,
+        "proteinG": 6,
+        "carbsG": 40,
+        "fatG": 10,
+        "fibreG": 7,
+        "sodiumMg": 280
+      }
+    },
+    {
+      "id": "kuih-dadar-coconut-pancakes",
+      "title": "Kuih Dadar Coconut Pancakes",
+      "summary": "Thin crepes wrapped around gula melaka coconut filling.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g plain flour",
+            "1 egg",
+            "250ml coconut milk",
+            "100ml water",
+            "1 tsp vanilla",
+            "1 pinch salt",
+            "100g desiccated coconut",
+            "80g palm sugar",
+            "50ml water",
+            "1 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the flour, egg, coconut milk, water, pandan juice and salt until smooth and rest for 20 minutes.",
+        "Melt the palm sugar with the water, add the coconut and cook for 6 minutes until sticky.",
+        "Cook thin crepes in a lightly oiled non-stick pan for 1 minute per side.",
+        "Spoon filling down the centre of each crepe.",
+        "Roll up each crepe around the filling and serve warm."
+      ],
+      "notes": [
+        "Food safety: the egg is fully cooked in the crepe.",
+        "The batter should be thin like cream."
+      ],
+      "nutrition": {
+        "kcal": 703,
+        "proteinG": 11,
+        "carbsG": 82,
+        "fatG": 35,
+        "fibreG": 8,
+        "sodiumMg": 140
+      }
+    },
+    {
+      "id": "crispy-anchovy-and-peanut-sambal-crunch",
+      "title": "Crispy Anchovy and Peanut Sambal Crunch",
+      "summary": "Crunchy fried anchovies and peanuts tossed in sweet chilli sambal.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "80g dried anchovies",
+            "80g raw peanuts",
+            "3 tbsp chilli paste",
+            "1 brown onion, sliced",
+            "2 tbsp tamarind paste",
+            "1 tbsp palm sugar",
+            "3 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the peanuts in oil for 4 minutes until golden and lift out.",
+        "Fry the anchovies in the same oil for 3 minutes until crisp and lift out.",
+        "Fry the onion for 3 minutes, add the chilli paste and cook 2 minutes.",
+        "Stir in the tamarind and sugar until sticky.",
+        "Fold through the anchovies and peanuts and cool before serving."
+      ],
+      "notes": [
+        "Keeps for a week in a sealed jar.",
+        "Rinse and dry the anchovies well before frying."
+      ],
+      "nutrition": {
+        "kcal": 247,
+        "proteinG": 10,
+        "carbsG": 12,
+        "fatG": 17,
+        "fibreG": 3,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "caesar-salad-with-homemade-dressing",
+      "title": "Caesar Salad with Homemade Dressing",
+      "summary": "Crisp cos, garlic croutons and a from-scratch anchovy and lemon dressing, topped with shaved parmesan.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 30,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cos lettuce hearts",
+            "4 slices sourdough",
+            "3 tbsp olive oil",
+            "1 garlic clove",
+            "1 egg yolk",
+            "3 anchovy fillets",
+            "1 tsp dijon mustard",
+            "2 tbsp lemon juice",
+            "1 tsp worcestershire sauce",
+            "120ml olive oil",
+            "40g parmesan, shaved"
+          ]
+        }
+      ],
+      "steps": [
+        "Tear the bread, toss with 3 tbsp oil and bake at 190C for 12 minutes until crisp.",
+        "Mash the garlic and anchovies to a paste.",
+        "Whisk in the yolk, mustard, lemon juice and worcestershire.",
+        "Drizzle in the oil, whisking until thick and glossy.",
+        "Toss the cos leaves with the dressing and croutons.",
+        "Top with shaved parmesan."
+      ],
+      "notes": [
+        "Food safety: the dressing uses raw egg yolk, so avoid it for pregnant women, older adults and small children.",
+        "Use pasteurised egg yolk if you prefer."
+      ],
+      "nutrition": {
+        "kcal": 466,
+        "proteinG": 12,
+        "carbsG": 22,
+        "fatG": 36,
+        "fibreG": 3,
+        "sodiumMg": 760
+      }
+    },
+    {
+      "id": "b-chamel-mother-sauce",
+      "title": "Béchamel Mother Sauce",
+      "summary": "The silky white sauce at the base of lasagne, gratins and cheese sauces, with a smooth roux and a hint of nutmeg.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 5,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "60g butter",
+            "60g plain flour",
+            "750ml milk",
+            "1 bay leaf",
+            "1 small onion, peeled and studded with 2 cloves",
+            "1 pinch nutmeg",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the milk with the onion and bay leaf for 10 minutes and strain.",
+        "Melt the butter, stir in the flour and cook for 2 minutes without browning.",
+        "Add the hot milk a little at a time, whisking smooth after each addition.",
+        "Simmer for 8 minutes, stirring, until thick enough to coat a spoon.",
+        "Season with nutmeg and salt."
+      ],
+      "notes": [
+        "Press cling film on the surface to stop a skin forming.",
+        "Add more milk if it thickens on standing."
+      ],
+      "nutrition": {
+        "kcal": 198,
+        "proteinG": 6,
+        "carbsG": 12,
+        "fatG": 14,
+        "fibreG": 0,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "veloute-mother-sauce",
+      "title": "Veloute Mother Sauce",
+      "summary": "A light golden roux sauce built on chicken stock, the base for supremes, mushroom and tarragon sauces.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 5,
+      "cookMinutes": 25,
+      "servings": 6,
+      "onePot": true,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "50g butter",
+            "50g plain flour",
+            "800ml chicken stock",
+            "1 bay leaf",
+            "3 peppercorns",
+            "1 tbsp lemon juice",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Melt the butter and stir in the flour.",
+        "Cook for 3 minutes until pale blond.",
+        "Pour in the warm stock gradually, whisking smooth.",
+        "Add the bay leaf and peppercorns and simmer gently for 20 minutes, skimming.",
+        "Strain, season and finish with lemon juice."
+      ],
+      "notes": [
+        "Use a good stock, as the sauce will taste only of it.",
+        "Swap in fish or veal stock for other classic versions."
+      ],
+      "nutrition": {
+        "kcal": 142,
+        "proteinG": 3,
+        "carbsG": 10,
+        "fatG": 10,
+        "fibreG": 0,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "espagnole-brown-sauce",
+      "title": "Espagnole Brown Sauce",
+      "summary": "A deep brown sauce from dark roux, roasted bones and aromatics, the foundation for a demi-glace.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 20,
+      "cookMinutes": 90,
+      "servings": 8,
+      "onePot": true,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "60g butter",
+            "60g plain flour",
+            "1.5 litres beef stock",
+            "1 carrot, diced",
+            "1 brown onion, diced",
+            "1 celery stalk, diced",
+            "2 tbsp tomato paste",
+            "1 bay leaf",
+            "2 thyme sprigs",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the vegetables in half the butter for 10 minutes.",
+        "Stir in the tomato paste and cook until brick red.",
+        "Make a dark roux with the remaining butter and flour, cooking for 8 minutes until nutty brown.",
+        "Whisk in the warm stock slowly.",
+        "Add the vegetables, bay leaf and thyme and simmer for 75 minutes, skimming.",
+        "Strain through a fine sieve until smooth, then season to taste."
+      ],
+      "notes": [
+        "Keeps 4 days in the fridge or freezes well.",
+        "Reduce by half with red wine for a demi-glace style sauce."
+      ],
+      "nutrition": {
+        "kcal": 122,
+        "proteinG": 3,
+        "carbsG": 9,
+        "fatG": 8,
+        "fibreG": 1,
+        "sodiumMg": 580
+      }
+    },
+    {
+      "id": "mayonnaise-from-scratch",
+      "title": "Mayonnaise from Scratch",
+      "summary": "Rich homemade mayonnaise whisked by hand from egg yolk, mustard, lemon and oil.",
+      "cuisine": "french",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 10,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 egg yolks",
+            "1 tsp dijon mustard",
+            "1 tbsp lemon juice",
+            "250ml light olive oil",
+            "1 tsp white wine vinegar",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the yolks, mustard and lemon juice in a bowl until pale and combined.",
+        "Add the oil one drop at a time, whisking constantly.",
+        "Once it thickens, pour in the oil in a thin stream.",
+        "Whisk in the vinegar and salt.",
+        "Store covered in the fridge and use once chilled until thick."
+      ],
+      "notes": [
+        "Food safety: this contains raw egg yolk, so avoid for pregnant women, older adults and small children, and use within 3 days.",
+        "Use pasteurised yolks for safety."
+      ],
+      "nutrition": {
+        "kcal": 220,
+        "proteinG": 1,
+        "carbsG": 0,
+        "fatG": 24,
+        "fibreG": 0,
+        "sodiumMg": 80
+      }
+    },
+    {
+      "id": "chicken-stock-slow-simmered",
+      "title": "Chicken Stock, Slow-Simmered",
+      "summary": "A clear, gelatinous chicken stock from roasted bones, the base for soups and sauces.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 240,
+      "servings": 10,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1.5kg chicken carcasses",
+            "2 carrots",
+            "2 celery stalks",
+            "1 brown onion, halved",
+            "1 head garlic",
+            "3 sprigs parsley",
+            "2 bay leaves",
+            "10 peppercorns",
+            "3.5 litres cold water"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the carcasses at 220C for 30 minutes until golden.",
+        "Put them in a pot with the vegetables, herbs and peppercorns.",
+        "Cover with the cold water and bring to a gentle simmer until the first scum rises.",
+        "Simmer for 4 hours, skimming the surface.",
+        "Strain through a fine sieve and chill.",
+        "Lift off the fat once set and reheat the stock to steaming before using."
+      ],
+      "notes": [
+        "Food safety: simmer until the chicken reaches 75°C throughout, cool quickly, store in the fridge for 4 days or freeze up to 3 months, and always reheat to steaming.",
+        "Never boil hard or the stock turns cloudy."
+      ],
+      "nutrition": {
+        "kcal": 290,
+        "proteinG": 32,
+        "carbsG": 9,
+        "fatG": 14,
+        "fibreG": 0,
+        "sodiumMg": 140
+      }
+    },
+    {
+      "id": "dashi-from-kombu-and-bonito",
+      "title": "Dashi from Kombu and Bonito",
+      "summary": "The foundational Japanese broth of kelp and smoked bonito flakes, clean and savoury.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "20g kombu",
+            "1 litre water",
+            "30g bonito flakes"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the kombu in the water for 30 minutes.",
+        "Heat gently until just below a simmer, then remove the kombu.",
+        "Add the bonito flakes and turn off the heat.",
+        "Steep for 2 minutes until the flakes sink, then strain."
+      ],
+      "notes": [
+        "Do not boil the kombu or the stock turns bitter and slimy.",
+        "Use within 3 days."
+      ],
+      "nutrition": {
+        "kcal": 48,
+        "proteinG": 9,
+        "carbsG": 3,
+        "fatG": 0,
+        "fibreG": 0,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "kimchi-napa-cabbage",
+      "title": "Kimchi, Napa Cabbage",
+      "summary": "Fermented napa cabbage with chilli, garlic and ginger, pungent and tangy after a few days.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 60,
+      "cookMinutes": 0,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 napa cabbage, quartered",
+            "30g salt",
+            "4 tbsp gochugaru",
+            "1 tbsp fish sauce",
+            "6 garlic cloves",
+            "20g ginger",
+            "1 tbsp sugar",
+            "1 carrot, julienned",
+            "4 spring onions",
+            "100g daikon, julienned",
+            "1 tbsp glutinous rice flour",
+            "200ml water"
+          ]
+        }
+      ],
+      "steps": [
+        "Salt the cabbage between the leaves and stand for 2 hours, turning once.",
+        "Rinse three times and drain well.",
+        "Cook the rice flour with the water until a thick paste forms, then cool.",
+        "Blend the garlic, ginger, fish sauce and sugar with the gochugaru and flour paste.",
+        "Mix in the carrot, daikon and spring onion.",
+        "Rub the paste between the cabbage leaves and pack tightly into a jar.",
+        "Ferment at room temperature for 2 days until bubbly and sour, then refrigerate."
+      ],
+      "notes": [
+        "Wear gloves to avoid chilli burns.",
+        "Keep the cabbage submerged and open the jar to release gas daily."
+      ],
+      "nutrition": {
+        "kcal": 44,
+        "proteinG": 2,
+        "carbsG": 7,
+        "fatG": 0,
+        "fibreG": 4,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "sauerkraut",
+      "title": "Sauerkraut",
+      "summary": "Raw fermented cabbage salted to make its own brine, tart and crunchy.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 0,
+      "servings": 12,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 green cabbage, about 1.2kg",
+            "25g salt",
+            "2 tsp caraway seeds",
+            "1 tsp fennel seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Shred the cabbage finely and mix with the salt.",
+        "Massage for 10 minutes until it releases plenty of liquid.",
+        "Mix in the caraway and fennel.",
+        "Pack tightly into a jar so the liquid covers the cabbage.",
+        "Weigh it down and ferment at room temperature for 7 to 10 days.",
+        "Refrigerate once sour enough, until the cabbage tastes tangy."
+      ],
+      "notes": [
+        "Skim any scum. Discard if it smells rotten or has pink or fuzzy mould.",
+        "Use non-iodised salt."
+      ],
+      "nutrition": {
+        "kcal": 48,
+        "proteinG": 2,
+        "carbsG": 8,
+        "fatG": 0,
+        "fibreG": 4,
+        "sodiumMg": 530
+      }
+    },
+    {
+      "id": "preserved-lemons",
+      "title": "Preserved Lemons",
+      "summary": "Whole lemons cured in salt and their own juice, essential for tagines and dressings.",
+      "cuisine": "north-african",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 12,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 lemons",
+            "30g coarse salt",
+            "3 lemons for juice",
+            "2 bay leaves",
+            "1 tsp coriander seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Quarter the lemons almost through, keeping the base attached.",
+        "Pack the cut sides with salt.",
+        "Layer in a sterilised jar with bay and coriander.",
+        "Press down and cover with the juice of 3 lemons.",
+        "Seal and shake daily for 4 weeks until the rinds are soft."
+      ],
+      "notes": [
+        "Rinse the lemons before using and use the skin only.",
+        "Keeps in the fridge for a year."
+      ],
+      "nutrition": {
+        "kcal": 46,
+        "proteinG": 0,
+        "carbsG": 10,
+        "fatG": 0,
+        "fibreG": 3,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "pommes-anna",
+      "title": "Pommes Anna",
+      "summary": "Thin overlapping potato slices pressed in butter and baked until golden, crisp outside and tender within.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 20,
+      "cookMinutes": 60,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1kg waxy potatoes",
+            "100g butter, melted",
+            "1 tsp salt",
+            "2 thyme sprigs",
+            "1 pinch black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Slice the potatoes very finely and keep them dry.",
+        "Brush a frying pan with butter and arrange a circle of slices overlapping like fish scales.",
+        "Season each layer, brush with butter and add thyme.",
+        "Repeat until all are used, pressing firmly.",
+        "Cover with foil and bake at 200C for 30 minutes.",
+        "Remove the foil and bake 25 minutes until crisp and golden.",
+        "Rest, loosen the edge and turn out."
+      ],
+      "notes": [
+        "Do not rinse the starch off the slices as it helps them bind.",
+        "Use a mandoline for even slices."
+      ],
+      "nutrition": {
+        "kcal": 263,
+        "proteinG": 4,
+        "carbsG": 31,
+        "fatG": 13,
+        "fibreG": 3,
+        "sodiumMg": 420
+      }
+    },
+    {
+      "id": "duchess-potatoes",
+      "title": "Duchess Potatoes",
+      "summary": "Piped mashed potato rosettes baked until golden and crisp at the edges.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 25,
+      "cookMinutes": 30,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1kg floury potatoes",
+            "60g butter",
+            "2 egg yolks",
+            "1 egg",
+            "1 pinch nutmeg",
+            "1 tsp salt",
+            "1 pinch white pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes until tender and drain well.",
+        "Steam dry in the pot for 3 minutes and mash until smooth.",
+        "Beat in the butter, yolks, nutmeg, salt and pepper.",
+        "Pipe rosettes onto a lined tray.",
+        "Brush with the beaten egg and bake at 220C for 25 minutes until golden."
+      ],
+      "notes": [
+        "Food safety: bake until the egg is fully cooked and golden.",
+        "A dry mash is the secret to piping neatly."
+      ],
+      "nutrition": {
+        "kcal": 279,
+        "proteinG": 6,
+        "carbsG": 33,
+        "fatG": 13,
+        "fibreG": 3,
+        "sodiumMg": 430
+      }
+    },
+    {
+      "id": "yorkshire-puddings",
+      "title": "Yorkshire Puddings",
+      "summary": "Tall, crisp, airy puddings baked in smoking-hot fat, perfect with roast beef and gravy.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 6,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "140g plain flour",
+            "4 eggs",
+            "200ml milk",
+            "1 pinch salt",
+            "6 tsp beef dripping"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the flour, eggs, milk and salt until a smooth batter forms.",
+        "Rest the batter for 30 minutes until it thickens slightly.",
+        "Heat the oven to 230C and add a spoonful of dripping to each cup of a muffin tin.",
+        "Heat the tin until smoking, about 10 minutes.",
+        "Pour in the batter and bake for 22 minutes without opening the door."
+      ],
+      "notes": [
+        "Food safety: bake until the eggs are fully set.",
+        "Keep the fat very hot or the puddings will not rise."
+      ],
+      "nutrition": {
+        "kcal": 174,
+        "proteinG": 8,
+        "carbsG": 17,
+        "fatG": 8,
+        "fibreG": 1,
+        "sodiumMg": 190
+      }
+    },
+    {
+      "id": "gratin-dauphinois",
+      "title": "Gratin Dauphinois",
+      "summary": "Thinly sliced potatoes baked in garlicky cream and milk until bubbling and tender.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 70,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1kg waxy potatoes",
+            "300ml cream",
+            "200ml milk",
+            "2 garlic cloves",
+            "1 pinch nutmeg",
+            "1 tsp salt",
+            "20g butter"
+          ]
+        }
+      ],
+      "steps": [
+        "Rub a baking dish with the garlic and butter.",
+        "Slice the potatoes thinly and layer in the dish.",
+        "Heat the cream, milk, nutmeg and salt until just steaming.",
+        "Pour the hot cream mixture over the potatoes until just covered.",
+        "Bake at 170C for 70 minutes until golden and tender."
+      ],
+      "notes": [
+        "This version uses no cheese.",
+        "Cover with foil if it browns too fast."
+      ],
+      "nutrition": {
+        "kcal": 351,
+        "proteinG": 6,
+        "carbsG": 33,
+        "fatG": 21,
+        "fibreG": 3,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "romesco-sauce",
+      "title": "Romesco Sauce",
+      "summary": "A smoky red pepper and almond sauce, a Catalan classic for grilled vegetables and fish.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 red capsicums",
+            "4 tomatoes",
+            "60g blanched almonds",
+            "1 slice toast",
+            "3 garlic cloves",
+            "1 tbsp sherry vinegar",
+            "1 tsp smoked paprika",
+            "80ml olive oil",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the capsicums, tomatoes and garlic at 220C for 25 minutes.",
+        "Peel the charred skins from the capsicum until the flesh is clean.",
+        "Toast the almonds until golden.",
+        "Blend the almonds, toast and garlic until a coarse paste forms.",
+        "Add the vegetables, vinegar and paprika and blend.",
+        "Stream in the oil and season."
+      ],
+      "notes": [
+        "It thickens as it rests.",
+        "Keeps 5 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 158,
+        "proteinG": 3,
+        "carbsG": 8,
+        "fatG": 12,
+        "fibreG": 3,
+        "sodiumMg": 160
+      }
+    },
+    {
+      "id": "salsa-macha",
+      "title": "Salsa Macha",
+      "summary": "A Veracruz oil-based salsa of dried chilli, nuts and garlic, nutty, smoky and addictive.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 10,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 dried chillies",
+            "60g peanuts",
+            "2 tbsp sesame seeds",
+            "6 garlic cloves",
+            "250ml neutral oil",
+            "2 tbsp apple cider vinegar",
+            "1 tbsp brown sugar",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the oil with the garlic until golden and lift out the garlic.",
+        "Fry the chillies for 30 seconds until they darken slightly, then lift out.",
+        "Fry the peanuts and sesame in the oil until golden.",
+        "Blend half the mixture coarsely.",
+        "Stir all together with vinegar, sugar and salt."
+      ],
+      "notes": [
+        "Keep submerged in oil in the fridge for up to 3 weeks.",
+        "Do not let the chillies burn or the sauce turns bitter."
+      ],
+      "nutrition": {
+        "kcal": 256,
+        "proteinG": 3,
+        "carbsG": 6,
+        "fatG": 24,
+        "fibreG": 2,
+        "sodiumMg": 220
+      }
+    },
+    {
+      "id": "mole-poblano",
+      "title": "Mole Poblano",
+      "summary": "A deep chilli, chocolate and spice sauce with sesame and nuts, long and slow in the making.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 45,
+      "cookMinutes": 90,
+      "servings": 8,
+      "onePot": true,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "4 ancho chillies",
+            "3 pasilla chillies",
+            "3 mulato chillies",
+            "2 tomatoes",
+            "1 brown onion",
+            "4 garlic cloves",
+            "50g almonds",
+            "2 tbsp sesame seeds",
+            "30g raisins",
+            "1 tortilla",
+            "40g dark chocolate",
+            "1 cinnamon stick",
+            "2 cloves",
+            "800ml chicken stock",
+            "3 tbsp lard"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast and deseed the chillies and soak in hot water for 20 minutes.",
+        "Fry the onion, garlic, tomato, nuts, seeds, raisins, tortilla and spices in the lard until brown.",
+        "Blend with the chillies and some soaking water.",
+        "Fry the paste in a pot for 10 minutes, stirring.",
+        "Add the stock and chocolate and simmer for an hour until glossy and thick.",
+        "Season with salt and sugar to balance."
+      ],
+      "notes": [
+        "Serve over turkey or chicken.",
+        "Freezes well in portions."
+      ],
+      "nutrition": {
+        "kcal": 292,
+        "proteinG": 10,
+        "carbsG": 24,
+        "fatG": 16,
+        "fibreG": 6,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "harissa-from-scratch",
+      "title": "Harissa from Scratch",
+      "summary": "Fiery Tunisian chilli paste with roasted capsicum, caraway, cumin and garlic.",
+      "cuisine": "north-african",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 5,
+      "servings": 12,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "10 dried chillies",
+            "1 red capsicum, roasted",
+            "4 garlic cloves",
+            "1 tsp cumin",
+            "1 tsp caraway seeds",
+            "1 tsp coriander",
+            "2 tbsp lemon juice",
+            "4 tbsp olive oil",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the chillies in hot water for 20 minutes and drain.",
+        "Toast the spices in a dry pan until fragrant.",
+        "Blend the chillies, capsicum, garlic and spices to a paste.",
+        "Stir in the lemon juice and oil and season."
+      ],
+      "notes": [
+        "Cover with a film of oil and keep for 3 weeks in the fridge.",
+        "Wear gloves."
+      ],
+      "nutrition": {
+        "kcal": 65,
+        "proteinG": 1,
+        "carbsG": 3,
+        "fatG": 5,
+        "fibreG": 2,
+        "sodiumMg": 200
+      }
+    },
+    {
+      "id": "xo-sauce",
+      "title": "XO Sauce",
+      "summary": "Luxurious Cantonese seafood condiment of dried scallop, shrimp, ham and chilli slowly cooked in oil.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 25,
+      "cookMinutes": 50,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "50g dried scallops",
+            "50g dried shrimp",
+            "80g cured ham",
+            "8 shallots",
+            "6 garlic cloves",
+            "4 red chillies",
+            "250ml neutral oil",
+            "2 tbsp oyster sauce",
+            "1 tbsp sugar",
+            "2 tbsp shaoxing wine"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the scallops and shrimp in hot water until soft and shred the scallops.",
+        "Chop the ham, shallots, garlic and chillies finely.",
+        "Warm the oil and fry the shallots and garlic gently for 15 minutes until golden.",
+        "Add the ham, shrimp, scallops and chillies and cook for 20 minutes.",
+        "Add the oyster sauce, sugar and wine and simmer 5 minutes until glossy."
+      ],
+      "notes": [
+        "Food safety: the dried seafood is rehydrated and cooked in hot oil for 20 minutes until opaque and cooked through, so keep it refrigerated under oil and use within a month.",
+        "Great with noodles, eggs and steamed fish."
+      ],
+      "nutrition": {
+        "kcal": 207,
+        "proteinG": 12,
+        "carbsG": 6,
+        "fatG": 15,
+        "fibreG": 0,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "dairy-free-ranch-dressing",
+      "title": "Dairy-Free Ranch Dressing",
+      "summary": "Creamy herbed cashew ranch with chives, dill and garlic, no dairy needed.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g raw cashews",
+            "150ml water",
+            "2 tbsp lemon juice",
+            "1 garlic clove",
+            "1 tbsp apple cider vinegar",
+            "2 tbsp chives",
+            "1 tbsp dill",
+            "1 tsp onion powder",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the cashews in boiling water for 20 minutes and drain.",
+        "Blend with the water, lemon, garlic, vinegar and onion powder until very smooth.",
+        "Stir in the chives and dill.",
+        "Chill for 30 minutes until the dressing thickens slightly."
+      ],
+      "notes": [
+        "Thins out in the fridge, so add water if too thick.",
+        "Keeps 5 days."
+      ],
+      "nutrition": {
+        "kcal": 106,
+        "proteinG": 3,
+        "carbsG": 5,
+        "fatG": 8,
+        "fibreG": 1,
+        "sodiumMg": 270
+      }
+    },
+    {
+      "id": "gribiche-sauce",
+      "title": "Gribiche Sauce",
+      "summary": "A cold French sauce of hard-boiled eggs, mustard, capers and herbs for asparagus and cold fish.",
+      "cuisine": "french",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 10,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 eggs",
+            "1 tbsp dijon mustard",
+            "2 tbsp red wine vinegar",
+            "120ml olive oil",
+            "2 tbsp capers",
+            "4 cornichons",
+            "2 tbsp parsley",
+            "1 tbsp tarragon"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the eggs for 10 minutes and cool.",
+        "Mash the yolks with mustard and vinegar.",
+        "Whisk in the oil in a thin stream until glossy and thick.",
+        "Chop the whites and fold in with capers, cornichons and herbs.",
+        "Season with salt and serve until the bowl is empty."
+      ],
+      "notes": [
+        "Food safety: boil the eggs for 10 minutes until firm throughout.",
+        "Use within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 230,
+        "proteinG": 6,
+        "carbsG": 2,
+        "fatG": 22,
+        "fibreG": 0,
+        "sodiumMg": 340
+      }
+    },
+    {
+      "id": "brioche-cinnamon-rolls",
+      "title": "Brioche Cinnamon Rolls",
+      "summary": "Soft, buttery brioche dough rolled with cinnamon sugar and iced with cream cheese frosting.",
+      "cuisine": "american",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 40,
+      "cookMinutes": 30,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g bread flour",
+            "7g dried yeast",
+            "60g sugar",
+            "1 tsp salt",
+            "240ml warm milk",
+            "2 eggs",
+            "80g butter, softened",
+            "100g brown sugar",
+            "2 tbsp cinnamon",
+            "60g butter",
+            "100g cream cheese",
+            "80g icing sugar"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix flour, yeast, sugar and salt with milk and eggs.",
+        "Knead in the butter until silky, about 10 minutes.",
+        "Prove for 90 minutes until doubled.",
+        "Roll to a rectangle, spread with softened butter and cinnamon sugar.",
+        "Roll up and cut into 8 pieces.",
+        "Prove 45 minutes in a pan.",
+        "Bake at 180C for 28 minutes.",
+        "Beat cream cheese with icing sugar and spread over warm rolls."
+      ],
+      "notes": [
+        "Food safety: bake until the rolls are cooked through.",
+        "Warm milk should be no hotter than 40C."
+      ],
+      "nutrition": {
+        "kcal": 444,
+        "proteinG": 10,
+        "carbsG": 64,
+        "fatG": 16,
+        "fibreG": 2,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "homemade-bagels",
+      "title": "Homemade Bagels",
+      "summary": "Chewy, shiny bagels shaped by hand, boiled in honey water, then baked.",
+      "cuisine": "american",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 35,
+      "cookMinutes": 20,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g bread flour",
+            "10g salt",
+            "7g dried yeast",
+            "10g honey",
+            "300ml warm water",
+            "1 tbsp honey",
+            "2 litres water",
+            "2 tbsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix flour, salt, yeast, honey and water and knead for 10 minutes.",
+        "Prove for 1 hour until doubled in size.",
+        "Divide into 8 and shape into rings.",
+        "Rest the rings for 20 minutes until slightly puffy.",
+        "Boil in the honey water for 1 minute each side.",
+        "Top with sesame and bake at 220C for 20 minutes."
+      ],
+      "notes": [
+        "Boiling gives the shiny, chewy crust.",
+        "Slice and freeze for easy breakfasts."
+      ],
+      "nutrition": {
+        "kcal": 321,
+        "proteinG": 10,
+        "carbsG": 62,
+        "fatG": 3,
+        "fibreG": 3,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "sourdough-crumpets",
+      "title": "Sourdough Crumpets",
+      "summary": "Tangy, hole-riddled crumpets cooked in rings in a pan, ideal for butter to soak into.",
+      "cuisine": "british",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g sourdough discard",
+            "150g plain flour",
+            "250ml warm milk",
+            "1 tsp salt",
+            "1 tsp sugar",
+            "1 tsp bicarbonate of soda",
+            "60ml warm water",
+            "4 tbsp butter"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the discard, flour, milk, salt and sugar into a batter.",
+        "Rest the batter for 1 hour until bubbles appear on top.",
+        "Dissolve the bicarb in the water and stir through.",
+        "Heat greased rings in a pan on low heat.",
+        "Fill the rings 1cm deep and cook for 8 minutes until set and dotted with holes.",
+        "Flip and cook for 1 minute until pale gold on top."
+      ],
+      "notes": [
+        "Eat with melted butter.",
+        "Reheat in the toaster."
+      ],
+      "nutrition": {
+        "kcal": 184,
+        "proteinG": 5,
+        "carbsG": 27,
+        "fatG": 6,
+        "fibreG": 1,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "japanese-souffl-pancakes",
+      "title": "Japanese Soufflé Pancakes",
+      "summary": "Tall, wobbly meringue-lightened pancakes cooked slowly under a lid.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 eggs, separated",
+            "40ml milk",
+            "50g plain flour",
+            "1 tsp baking powder",
+            "40g caster sugar",
+            "1 tsp vanilla",
+            "1 tbsp butter",
+            "2 tbsp maple syrup"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the yolks, milk and vanilla and fold in flour and baking powder.",
+        "Whisk the whites with the sugar to stiff peaks.",
+        "Fold the meringue into the batter in thirds until no streaks remain.",
+        "Pile mounds into a low-heat buttered pan.",
+        "Cover and cook for 6 minutes, flip and cook for 5 more.",
+        "Serve the stacks straight away with maple syrup."
+      ],
+      "notes": [
+        "Food safety: cook gently until the centres are set.",
+        "Keep the heat low."
+      ],
+      "nutrition": {
+        "kcal": 413,
+        "proteinG": 14,
+        "carbsG": 55,
+        "fatG": 15,
+        "fibreG": 1,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "tofu-scramble-with-greens",
+      "title": "Tofu Scramble with Greens",
+      "summary": "A dairy-free, high-protein scramble of turmeric tofu, spinach and tomatoes on toast.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g firm tofu",
+            "1 tsp turmeric",
+            "1 tsp cumin",
+            "2 tbsp nutritional yeast",
+            "1 tbsp olive oil",
+            "100g baby spinach",
+            "1 tomato, diced",
+            "2 slices sourdough",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Crumble the tofu into a bowl.",
+        "Warm the oil and cook the tofu with turmeric and cumin for 5 minutes.",
+        "Stir in the yeast, spinach and tomato until wilted.",
+        "Toast the bread until golden and crisp.",
+        "Pile the scramble on top."
+      ],
+      "notes": [
+        "Press the tofu first for a firmer texture.",
+        "Add black salt for an eggy flavour."
+      ],
+      "nutrition": {
+        "kcal": 465,
+        "proteinG": 33,
+        "carbsG": 33,
+        "fatG": 21,
+        "fibreG": 6,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "egg-white-and-spinach-frittata",
+      "title": "Egg White and Spinach Frittata",
+      "summary": "A lean, high-protein baked frittata with egg whites, whole eggs and greens.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 18,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 egg whites",
+            "3 eggs",
+            "150g baby spinach",
+            "1 red capsicum, diced",
+            "4 spring onions",
+            "1 tbsp olive oil",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the capsicum and spring onion in the oil.",
+        "Add the spinach until wilted.",
+        "Whisk the egg whites and eggs.",
+        "Pour over the vegetables.",
+        "Cook for 3 minutes, then bake at 180C for 12 minutes."
+      ],
+      "notes": [
+        "Food safety: cook until the eggs are set through.",
+        "Great cold for the work week."
+      ],
+      "nutrition": {
+        "kcal": 164,
+        "proteinG": 17,
+        "carbsG": 5,
+        "fatG": 8,
+        "fibreG": 2,
+        "sodiumMg": 280
+      }
+    },
+    {
+      "id": "high-protein-peanut-butter-oats",
+      "title": "High-Protein Peanut Butter Oats",
+      "summary": "Creamy oats cooked with soy milk, peanut butter and sesame, finished with banana.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 5,
+      "servings": 1,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "60g rolled oats",
+            "250ml soy milk",
+            "2 tbsp peanut butter",
+            "1 tbsp sesame seeds",
+            "1 apple, grated",
+            "1 scoop soy protein powder"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the oats and milk for 4 minutes.",
+        "Whisk in the protein powder until no lumps remain.",
+        "Stir through the peanut butter and sesame until smooth.",
+        "Top with sliced apple and serve warm."
+      ],
+      "notes": [
+        "Add more milk if too thick.",
+        "Dairy-free and vegan."
+      ],
+      "nutrition": {
+        "kcal": 534,
+        "proteinG": 28,
+        "carbsG": 55,
+        "fatG": 20,
+        "fibreG": 11,
+        "sodiumMg": 220
+      }
+    },
+    {
+      "id": "tuna-and-white-bean-salad",
+      "title": "Tuna and White Bean Salad",
+      "summary": "Protein-rich tuna, creamy cannellini beans and red onion in a lemon and parsley dressing.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tins tuna",
+            "1 tin cannellini beans",
+            "1/2 red onion",
+            "2 tbsp parsley",
+            "2 tbsp lemon juice",
+            "2 tbsp olive oil",
+            "1 tomato",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Drain the tuna and beans.",
+        "Slice the onion very thinly and soak it in water for 5 minutes.",
+        "Mix with parsley and tomato.",
+        "Dress with lemon juice and oil until everything is glossy.",
+        "Season with salt and serve until the bowl is empty."
+      ],
+      "notes": [
+        "Food safety: keep refrigerated and eat within 2 days.",
+        "Rinse the beans."
+      ],
+      "nutrition": {
+        "kcal": 1033,
+        "proteinG": 96,
+        "carbsG": 64,
+        "fatG": 39,
+        "fibreG": 21,
+        "sodiumMg": 500
+      }
+    },
+    {
+      "id": "edamame-and-soba-salad",
+      "title": "Edamame and Soba Salad",
+      "summary": "Chewy soba, edamame, cucumber and carrot in a ginger sesame dressing.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 8,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g soba noodles",
+            "200g edamame",
+            "1 cucumber",
+            "1 carrot",
+            "2 tbsp soy sauce",
+            "1 tbsp sesame oil",
+            "1 tbsp rice vinegar",
+            "1 tsp ginger",
+            "1 tbsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the soba for 5 minutes and rinse under cold water.",
+        "Cook the edamame for 3 minutes.",
+        "Whisk the soy, oil, vinegar and ginger.",
+        "Toss with the noodles and vegetables until coated.",
+        "Top with sesame seeds and serve cold."
+      ],
+      "notes": [
+        "Use 100% buckwheat soba for gluten free.",
+        "Vegan."
+      ],
+      "nutrition": {
+        "kcal": 462,
+        "proteinG": 22,
+        "carbsG": 62,
+        "fatG": 12,
+        "fibreG": 9,
+        "sodiumMg": 780
+      }
+    }
+  ]
+}
