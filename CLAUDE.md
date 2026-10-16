@@ -33,6 +33,7 @@ There are three loops (Discover → Save, Plan → Shop, Cook → Remember), and
   - Features don't import other features.
   - Comments explain *why*.
 - **Recipe content changes go through `scripts/data/recipe-fixes.json`** and `npm run catalogue:convert`, never by hand-editing `src/data/catalogue/recipes.json` (D-014).
+- **New house recipes go in a batch file** in `scripts/data/house-recipes/` (one JSON file per batch, edited there directly), then `npm run catalogue:check-house` and `npm run catalogue:convert` (D-044).
 - **Small verified steps.** For each change: typecheck, lint, test, simulator, screenshots (light and dark), Maestro flow, then Lachlan tries it on his phone. Never batch unverified changes.
 - **Push to GitHub at the end of every working session.** Check the push succeeded.
 
@@ -63,6 +64,7 @@ npm run test:web                     # journey tests on the web build (Playwrigh
 npm run export:web                   # static web build, used for screenshots
 npm run catalogue:convert -- <old>   # rebuild the catalogue from the old app at <old>
 npm run catalogue:check-ingredients  # ingredient database coverage over the catalogue
+npm run catalogue:check-house        # check the new house recipe batches (no old app needed)
 ```
 
 Routes live in `src/app/` (Expo Router, SDK 57 convention). Route files stay thin: they render a screen from `src/features/`.
