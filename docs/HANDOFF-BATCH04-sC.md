@@ -27,3 +27,9 @@ Added: malaysian about 20 (roti canai, nasi lemak, laksas, hokkien mee, sambals,
 Validator lessons: steps need 25+ characters, 3 to 14 steps, and a doneness cue ("until", a temperature) on every cooking step; no "pound", "skillet", "butter lettuce" (reads as dairy), 12 servings max, salt under about 30g. Ingredients with no match in the app database (tempeh, fennel, banana, berries, peaches, brussels sprouts, bamboo shoots, pandan, black pudding, berbere, smoked fish) must be swapped. Duplicates against C01 to C06 are frequent for common titles: use specific dish names.
 
 Gaps left: more Malaysian and Singapore breakfast, hard salads, more Pacific and east-african sauces, high-protein and dairy-free breakfasts.
+
+## Update, fourth session (17 October 2026)
+
+Added `batch-04-C11.json` (29 recipes): Malaysian/Singapore breakfasts (apam balik, mee rebus, bubur lambuk, chee cheong fun, bak chor mee, lontong sayur, mee siam, egg prata, nasi dagang, ginger chicken porridge), dairy-free/high-protein breakfasts, hard salads (Lyonnaise, Nicoise, cheese-free Caesar, lentil, beef and glass noodle salads), and East African/Pacific sauces (pilipili relish, awaze, niter kibbeh, coconut tomato, lolo, oka, Tahitian lime, huli huli, macadamia pesto). Validator 25/29.
+Per coordinator, nutrition was NOT rescaled up to the estimator (it may read about 2x high on stews and rice). Four recipes fail only on that mismatch, left with honest per-serve figures: lontong-sayur-rice-cake-vegetable-curry, nasi-dagang-terengganu-coconut-rice-with-tuna-curry, kenyan-coconut-tomato-fish-sauce, fijian-lolo-coconut-cream-sauce. Do not use zz-run.sh (it rescales); build with zz-build.py + zz-fixdiets.mts then validate.
+Valid cuisines are the app's 28 only (no singaporean, kenyan, ethiopian, fijian, samoan, australian).
