@@ -1,0 +1,1038 @@
+{
+  "about": "House recipes, batch 04 (slice B): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "marinated-artichoke-hearts",
+      "title": "Marinated Artichoke Hearts",
+      "summary": "Tender artichoke quarters tossed in lemon, garlic, oregano and olive oil, ready for a snack plate.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g can artichoke hearts, drained and quartered",
+            "3 tbsp olive oil",
+            "1 tbsp lemon juice",
+            "1 garlic clove, finely sliced",
+            "1 tsp dried oregano",
+            "1/4 tsp chilli flakes",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Pat the artichokes dry on paper towel so the marinade clings.",
+        "Whisk the oil, lemon juice, garlic, oregano, chilli and salt until combined.",
+        "Toss the artichokes through the marinade until evenly coated, then spoon into a jar or bowl and serve with toothpicks."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: about 4 quarters. Plus 30 minutes marinating at room temperature, or up to 5 days in the fridge; bring to room temperature before serving."
+      ],
+      "nutrition": {
+        "kcal": 78,
+        "proteinG": 1,
+        "carbsG": 4,
+        "fatG": 6,
+        "fibreG": 2,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "garlic-and-thyme-marinated-mushrooms",
+      "title": "Garlic and Thyme Marinated Mushrooms",
+      "summary": "Tapas-style button mushrooms softened in a sherry vinegar and thyme marinade.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 6,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g button mushrooms, halved",
+            "3 tbsp olive oil",
+            "3 tbsp sherry vinegar",
+            "2 garlic cloves, sliced",
+            "1 tsp thyme leaves",
+            "1/2 tsp salt",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm 1 tbsp of the oil in a frying pan over medium-high heat and cook the mushrooms for 6 minutes, until golden and no liquid remains.",
+        "Add the garlic and thyme and cook for 30 seconds until fragrant.",
+        "Tip into a bowl and stir through the remaining oil, vinegar, salt and pepper until glossy.",
+        "Serve warm or at room temperature with toothpicks."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: about 1/2 cup. Plus 1 hour marinating. Keeps 5 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 81,
+        "proteinG": 2,
+        "carbsG": 2,
+        "fatG": 7,
+        "fibreG": 1,
+        "sodiumMg": 200
+      }
+    },
+    {
+      "id": "pickled-beetroot-eggs",
+      "title": "Pickled Beetroot Eggs",
+      "summary": "Hard-boiled eggs steeped in a sweet-sharp beetroot brine until pink, a pub-style snack.",
+      "cuisine": "british",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 12,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 eggs",
+            "250g cooked beetroot, sliced",
+            "1 cup white vinegar",
+            "1/2 cup water",
+            "2 tbsp sugar",
+            "1 tsp salt",
+            "1 tsp black peppercorns"
+          ]
+        }
+      ],
+      "steps": [
+        "Cover the eggs with cold water, bring to the boil and simmer for 10 minutes. Cool in iced water and peel.",
+        "Simmer the vinegar, water, sugar, salt and peppercorns for 3 minutes until the sugar dissolves, then cool.",
+        "Pack the eggs and beetroot into a clean jar and pour over the brine until covered.",
+        "Seal and keep in the fridge until the eggs are pink through the outer white."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 egg with a few beetroot slices. Plus 2 days pickling.",
+        "Food safety: use only clean, sterilised jars, keep the jar in the fridge at all times, and eat within 5 days."
+      ],
+      "nutrition": {
+        "kcal": 99,
+        "proteinG": 7,
+        "carbsG": 6,
+        "fatG": 5,
+        "fibreG": 1,
+        "sodiumMg": 240
+      }
+    },
+    {
+      "id": "quick-pickled-jalapenos",
+      "title": "Quick Pickled Jalapenos",
+      "summary": "Crisp pickled jalapeno rings with garlic and cumin for nachos and sliders.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 5,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g jalapenos, sliced into rings",
+            "1 cup white vinegar",
+            "1/2 cup water",
+            "1 tbsp sugar",
+            "1 tsp salt",
+            "2 garlic cloves, halved",
+            "1/2 tsp cumin seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Pack the jalapeno rings and garlic into a clean jar.",
+        "Heat the vinegar, water, sugar, salt and cumin until the sugar and salt dissolve, then pour over the jalapenos until covered.",
+        "Cool, then seal and refrigerate."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: about 25g (a small handful). Plus 1 day pickling. Keeps 3 weeks in the fridge. Wear gloves when slicing."
+      ],
+      "nutrition": {
+        "kcal": 10,
+        "proteinG": 0,
+        "carbsG": 2,
+        "fatG": 0,
+        "fibreG": 1,
+        "sodiumMg": 180
+      }
+    },
+    {
+      "id": "korean-style-spicy-cucumber-pickle",
+      "title": "Korean Style Spicy Cucumber Pickle",
+      "summary": "Salted cucumber chunks tossed in chilli flakes, garlic, sesame and a little sugar, ready in an hour.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 Lebanese cucumbers, cut into chunks",
+            "1 tsp salt",
+            "1 tbsp chilli flakes",
+            "2 garlic cloves, crushed",
+            "1 tbsp soy sauce",
+            "1 tbsp rice vinegar",
+            "1 tsp sugar",
+            "2 spring onions, sliced",
+            "1 tbsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the cucumber with the salt and leave in a colander until it releases water, then squeeze lightly and dry.",
+        "Mix the chilli flakes, garlic, soy sauce, vinegar and sugar into a paste.",
+        "Toss the cucumber, paste, spring onion and sesame seeds together until evenly coated.",
+        "Serve as a crunchy side snack."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: about 1 cup. Plus 20 minutes salting. Best within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 76,
+        "proteinG": 3,
+        "carbsG": 10,
+        "fatG": 2,
+        "fibreG": 3,
+        "sodiumMg": 620
+      }
+    },
+    {
+      "id": "giardiniera-italian-pickled-vegetables",
+      "title": "Giardiniera Italian Pickled Vegetables",
+      "summary": "Crunchy carrot, cauliflower, celery and capsicum in a tangy herbed brine.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 5,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 carrot, sliced",
+            "150g cauliflower florets",
+            "2 celery sticks, sliced",
+            "1 red capsicum, cut into strips",
+            "1 cup white wine vinegar",
+            "1 cup water",
+            "1 tbsp sugar",
+            "1 tbsp salt",
+            "1 tsp dried oregano",
+            "2 garlic cloves"
+          ]
+        }
+      ],
+      "steps": [
+        "Pack all the vegetables into a clean jar.",
+        "Simmer the vinegar, water, sugar, salt, oregano and garlic for 3 minutes until the sugar and salt dissolve, then pour over the vegetables until just covered.",
+        "Cool, then seal and refrigerate."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: about 1/2 cup. Plus 1 day pickling. Keeps 2 weeks in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 24,
+        "proteinG": 1,
+        "carbsG": 4,
+        "fatG": 0,
+        "fibreG": 2,
+        "sodiumMg": 250
+      }
+    },
+    {
+      "id": "marinated-feta-cubes",
+      "title": "Marinated Feta Cubes",
+      "summary": "Salty feta cubes in olive oil with lemon peel, thyme and chilli to spear or spread.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g feta, cut into cubes",
+            "1/4 cup olive oil",
+            "3 strips lemon zest",
+            "1 tsp thyme leaves",
+            "1/2 tsp chilli flakes",
+            "1 tsp black peppercorns"
+          ]
+        }
+      ],
+      "steps": [
+        "Pack the feta into a clean jar.",
+        "Mix the oil, lemon zest, thyme, chilli and peppercorns and pour over the feta until fully covered.",
+        "Seal and refrigerate until the flavours develop, then serve with toothpicks."
+      ],
+      "notes": [
+        "Snack. Vegetarian (check the feta label for non-animal rennet). Per serving: about 5 cubes with some oil. Plus 4 hours marinating. Keeps 1 week in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 141,
+        "proteinG": 5,
+        "carbsG": 1,
+        "fatG": 13,
+        "fibreG": 0,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "tamari-roasted-chickpeas",
+      "title": "Tamari Roasted Chickpeas",
+      "summary": "Crunchy chickpeas roasted with tamari and smoked paprika for a high-fibre desk snack.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 x 400g cans chickpeas, drained and rinsed",
+            "1 tbsp olive oil",
+            "2 tbsp tamari",
+            "1 tsp smoked paprika",
+            "1/2 tsp garlic powder"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional). Dry the chickpeas very well on a clean tea towel.",
+        "Toss with the oil, tamari, paprika and garlic powder.",
+        "Roast on a lined tray for 30 minutes, shaking twice, until crisp and deep golden.",
+        "Cool on the tray, where they crisp further."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: about 1/2 cup. Store in an open container; sealed jars soften them. Best within 3 days."
+      ],
+      "nutrition": {
+        "kcal": 160,
+        "proteinG": 7,
+        "carbsG": 21,
+        "fatG": 4,
+        "fibreG": 6,
+        "sodiumMg": 340
+      }
+    },
+    {
+      "id": "vegan-sun-dried-tomato-and-white-bean-spread",
+      "title": "Vegan Sun-Dried Tomato and White Bean Spread",
+      "summary": "A cheese-free spread of cannellini beans, sun-dried tomatoes and basil on toasted sourdough.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 3,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g can cannellini beans, drained and rinsed",
+            "80g sun-dried tomatoes in oil, drained",
+            "1 garlic clove",
+            "1 tbsp olive oil",
+            "1 tbsp lemon juice",
+            "2 tbsp basil leaves",
+            "1/4 tsp salt",
+            "4 slices sourdough bread"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the beans, sun-dried tomatoes, garlic, oil, lemon juice, basil and salt until thick and nearly smooth.",
+        "Toast the sourdough until golden and cut each slice in half.",
+        "Spread the toast generously with the bean mixture until covered, then serve."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: 1 half slice with spread. The spread alone keeps 4 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 123,
+        "proteinG": 5,
+        "carbsG": 17,
+        "fatG": 3,
+        "fibreG": 4,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "vegan-mushroom-and-walnut-pate",
+      "title": "Vegan Mushroom and Walnut Pate",
+      "summary": "A rich, cheese-free pate of mushrooms, walnuts and white beans on toasted sourdough.",
+      "cuisine": "french",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g mushrooms, chopped",
+            "1 cup walnuts (100g)",
+            "120g cannellini beans, drained and rinsed",
+            "1 small onion, finely chopped",
+            "2 garlic cloves",
+            "1 tbsp olive oil",
+            "1 tsp thyme leaves",
+            "1 tbsp soy sauce",
+            "4 slices sourdough bread"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion in the oil for 4 minutes until soft, add the mushrooms, garlic and thyme and cook for 8 minutes until all the liquid has gone.",
+        "Toast the walnuts in a dry pan for 3 minutes until fragrant.",
+        "Blend the mushroom mixture, walnuts, beans and soy sauce until thick and spreadable.",
+        "Toast the sourdough until golden, cut each slice in half and serve with the pate."
+      ],
+      "notes": [
+        "Snack. Vegan (check the bread label). Contains tree nuts and gluten. Per serving: 1 half slice with pate. Plus 2 hours chilling. Keeps 4 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 184,
+        "proteinG": 6,
+        "carbsG": 16,
+        "fatG": 10,
+        "fibreG": 3,
+        "sodiumMg": 260
+      }
+    },
+    {
+      "id": "vegan-potato-and-carrot-nacho-dip",
+      "title": "Vegan Potato and Carrot Nacho Dip",
+      "summary": "A cheese-free orange dip made from potato, carrot and tahini, with a smoky kick, served with corn chips.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g potato, peeled and diced",
+            "150g carrot, diced",
+            "1 small onion, chopped",
+            "1 garlic clove",
+            "1 1/2 tbsp tahini",
+            "1 tbsp olive oil",
+            "2 tbsp lemon juice",
+            "1 tsp smoked paprika",
+            "1/2 tsp salt",
+            "100g corn chips"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the potato, carrot, onion and garlic in water for 18 minutes, until very soft, then reserve 1/2 cup of the cooking water and drain.",
+        "Blend the vegetables with the tahini, oil, lemon juice, paprika and salt, adding the reserved water until smooth and pourable.",
+        "Serve warm with the corn chips."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: about 1/3 cup dip with 16g of chips. Keeps 4 days in the fridge; thin with water when reheating."
+      ],
+      "nutrition": {
+        "kcal": 184,
+        "proteinG": 3,
+        "carbsG": 23,
+        "fatG": 8,
+        "fibreG": 4,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "seed-cracker-dippers",
+      "title": "Seed Cracker Dippers",
+      "summary": "Crisp olive oil crackers packed with sunflower, pumpkin and sesame seeds, sturdy enough for any dip.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 22,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup plain flour (150g)",
+            "1/4 cup sunflower seeds",
+            "1/4 cup pumpkin seeds",
+            "2 tbsp sesame seeds",
+            "1/2 tsp salt",
+            "3 tbsp olive oil",
+            "1/3 cup water"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C fan (200°C conventional). Mix the flour, seeds and salt, then stir in the oil and water to a firm dough.",
+        "Roll the dough very thinly between two sheets of baking paper and cut into 32 small rectangles.",
+        "Bake on a lined tray for 22 minutes, turning the tray halfway, until golden and crisp.",
+        "Cool on a wire rack, where they crisp further."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: 4 crackers. Contains gluten and sesame. Keeps 7 days in an airtight container."
+      ],
+      "nutrition": {
+        "kcal": 161,
+        "proteinG": 4,
+        "carbsG": 15,
+        "fatG": 9,
+        "fibreG": 2,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "vegan-stuffed-mini-capsicums",
+      "title": "Vegan Stuffed Mini Capsicums",
+      "summary": "Sweet mini capsicum halves filled with a lemony basil tofu cream, baked until the edges soften.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 mini capsicums, halved lengthways and deseeded",
+            "200g firm tofu",
+            "2 tbsp olive oil",
+            "1 tbsp tahini",
+            "1 tbsp lemon juice",
+            "1 garlic clove",
+            "2 tbsp basil, chopped",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional). Roast the capsicum halves cut side up on a lined tray for 8 minutes until just soft.",
+        "Blend the tofu, oil, tahini, lemon juice, garlic and salt until creamy, then stir in the basil.",
+        "Spoon the filling into the capsicums and bake for 4 minutes more until warmed through.",
+        "Serve warm or at room temperature."
+      ],
+      "notes": [
+        "Snack. Vegan, cheese-free. Per serving: 4 halves. Keeps 2 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 139,
+        "proteinG": 5,
+        "carbsG": 4,
+        "fatG": 11,
+        "fibreG": 2,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "sunflower-seed-chocolate-oat-balls",
+      "title": "Sunflower Seed Chocolate Oat Balls",
+      "summary": "Nut-free, school-safe oat balls rolled in coconut, sweetened with honey.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup rolled oats (90g)",
+            "1/2 cup sunflower seeds, finely ground",
+            "1/3 cup honey",
+            "1/4 cup desiccated coconut",
+            "1/4 cup dark chocolate chips (40g)",
+            "2 tbsp water"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the oats, ground sunflower seeds, honey, chocolate chips and water until the mixture holds together when pressed.",
+        "Roll into 12 balls and coat each in the coconut.",
+        "Place on a tray and keep cold until firm."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Nut-free and school-safe (check the chocolate label for traces). Per serving: 2 balls. Plus 30 minutes chilling. Keeps 5 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 251,
+        "proteinG": 5,
+        "carbsG": 31,
+        "fatG": 11,
+        "fibreG": 4,
+        "sodiumMg": 30
+      }
+    },
+    {
+      "id": "nut-free-oat-and-seed-bars",
+      "title": "Nut-Free Oat and Seed Bars",
+      "summary": "Chewy baked bars with oats, sultanas and seeds, free of nuts for lunchboxes.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups rolled oats (180g)",
+            "1/2 cup sunflower seeds",
+            "1/4 cup pumpkin seeds",
+            "1/2 cup sultanas",
+            "1/3 cup honey",
+            "1/4 cup neutral oil",
+            "1 egg",
+            "1 tsp ground cinnamon"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional) and line a 20cm square tin.",
+        "Warm the honey and oil together until runny, then mix with the oats, seeds, sultanas, cinnamon and egg.",
+        "Press firmly into the tin and bake for 25 minutes, until golden at the edges.",
+        "Cool completely in the tin before cutting into 12 bars."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Nut-free and school-safe (check labels for traces). Per serving: 1 bar. Keeps 5 days in an airtight container.",
+        "Food safety: the egg is fully cooked through in the bake; keep the bars refrigerated if your kitchen is warm."
+      ],
+      "nutrition": {
+        "kcal": 208,
+        "proteinG": 4,
+        "carbsG": 24,
+        "fatG": 10,
+        "fibreG": 3,
+        "sodiumMg": 25
+      }
+    },
+    {
+      "id": "nut-free-veggie-pizza-scrolls",
+      "title": "Nut-Free Veggie Pizza Scrolls",
+      "summary": "Soft yoghurt-dough scrolls with tomato paste, mozzarella and capsicum for lunchboxes.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 1/2 cups self-raising flour (225g)",
+            "1 cup Greek yoghurt (250g)",
+            "3 tbsp tomato paste",
+            "1 cup grated mozzarella (100g)",
+            "1/2 cup finely diced red capsicum",
+            "1 tsp dried oregano"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 190°C fan (210°C conventional). Mix the flour and yoghurt to a soft dough and knead briefly until smooth.",
+        "Roll into a 25 x 35cm rectangle, spread with the tomato paste and scatter with the mozzarella, capsicum and oregano.",
+        "Roll up from the long side, cut into 12 slices and place cut side up on a lined tray.",
+        "Bake for 20 minutes, until puffed and golden."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Nut-free and school-safe. Per serving: 2 scrolls. Keeps 3 days in the fridge; freeze for up to 2 months."
+      ],
+      "nutrition": {
+        "kcal": 234,
+        "proteinG": 11,
+        "carbsG": 33,
+        "fatG": 6,
+        "fibreG": 2,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "nut-free-apple-oat-muffins",
+      "title": "Nut-Free Apple Oat Muffins",
+      "summary": "Moist wholemeal muffins with grated apple, oats and cinnamon.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 22,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup rolled oats (90g)",
+            "1 cup wholemeal plain flour (150g)",
+            "2 tsp baking powder",
+            "1/2 cup brown sugar (90g)",
+            "1 tsp ground cinnamon",
+            "2 apples, grated (300g)",
+            "1 egg",
+            "3/4 cup milk",
+            "1/4 cup neutral oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C fan (200°C conventional) and line a 12-hole muffin tin.",
+        "Mix the oats, flour, baking powder, sugar and cinnamon, then stir in the apple, egg, milk and oil until just combined.",
+        "Divide among the cases and bake for 22 minutes, until golden and a skewer comes out clean.",
+        "Cool in the tin for 5 minutes, then on a wire rack."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Nut-free and school-safe. Per serving: 1 muffin. Keeps 3 days in an airtight container; freeze for up to 2 months."
+      ],
+      "nutrition": {
+        "kcal": 185,
+        "proteinG": 4,
+        "carbsG": 25,
+        "fatG": 7,
+        "fibreG": 3,
+        "sodiumMg": 190
+      }
+    },
+    {
+      "id": "chocolate-oat-breakfast-bars",
+      "title": "Chocolate Oat Breakfast Bars",
+      "summary": "Soft baked oat bars with cocoa and chocolate chips for breakfast on the go.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups rolled oats (180g)",
+            "3 tbsp cocoa powder",
+            "1 tsp baking powder",
+            "1/3 cup honey",
+            "1/2 cup milk",
+            "2 eggs",
+            "3 tbsp neutral oil",
+            "1/2 cup dark chocolate chips (80g)"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 170°C fan (190°C conventional) and line a 20cm square tin.",
+        "Mix the oats, cocoa and baking powder, then stir in the honey, milk, eggs and oil, followed by half the chocolate chips.",
+        "Spread into the tin, scatter with the remaining chips and bake for 25 minutes, until firm in the centre.",
+        "Cool in the tin, then cut into 12 bars."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 bar. Keeps 4 days in an airtight container; freeze for up to 2 months."
+      ],
+      "nutrition": {
+        "kcal": 184,
+        "proteinG": 4,
+        "carbsG": 23,
+        "fatG": 8,
+        "fibreG": 2,
+        "sodiumMg": 70
+      }
+    },
+    {
+      "id": "mixed-berry-oat-breakfast-bars",
+      "title": "Mixed Berry Oat Breakfast Bars",
+      "summary": "Yoghurt and honey oat bars studded with frozen berries.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 28,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups rolled oats (180g)",
+            "1 cup frozen mixed berries (150g)",
+            "1/2 cup Greek yoghurt",
+            "2 eggs",
+            "1/3 cup honey",
+            "1/4 cup neutral oil",
+            "1 tsp baking powder",
+            "1 tsp ground cinnamon"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 170°C fan (190°C conventional) and line a 20cm square tin.",
+        "Mix the oats, baking powder and cinnamon, then stir in the yoghurt, eggs, honey and oil until combined, and fold in the frozen berries.",
+        "Spread into the tin and bake for 28 minutes, until golden and set in the centre.",
+        "Cool in the tin, then cut into 12 bars."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 bar. Keeps 4 days in the fridge; freeze for up to 2 months."
+      ],
+      "nutrition": {
+        "kcal": 159,
+        "proteinG": 4,
+        "carbsG": 19,
+        "fatG": 7,
+        "fibreG": 2,
+        "sodiumMg": 60
+      }
+    },
+    {
+      "id": "tropical-coconut-oat-breakfast-bars",
+      "title": "Tropical Coconut Oat Breakfast Bars",
+      "summary": "Chewy oat bars with coconut, pineapple and honey for a quick breakfast.",
+      "cuisine": "pacific-islands",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups rolled oats (180g)",
+            "3/4 cup desiccated coconut (60g)",
+            "150g canned crushed pineapple, drained",
+            "2 eggs",
+            "1/3 cup honey",
+            "3 tbsp coconut oil, melted",
+            "1/2 tsp baking powder",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 170°C fan (190°C conventional) and line a 20cm square tin.",
+        "Mix the oats, coconut, baking powder and salt, then stir in the pineapple, eggs, honey and coconut oil until combined.",
+        "Press into the tin and bake for 25 minutes, until golden and firm.",
+        "Cool in the tin, then cut into 12 bars."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 bar. Keeps 4 days in an airtight container; freeze for up to 2 months."
+      ],
+      "nutrition": {
+        "kcal": 168,
+        "proteinG": 3,
+        "carbsG": 20,
+        "fatG": 8,
+        "fibreG": 2,
+        "sodiumMg": 60
+      }
+    },
+    {
+      "id": "pumpkin-oat-breakfast-squares",
+      "title": "Pumpkin Oat Breakfast Squares",
+      "summary": "Spiced oat squares with mashed pumpkin and sultanas, soft and not too sweet.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 28,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups rolled oats (180g)",
+            "1 cup cooked mashed pumpkin (245g)",
+            "1/2 cup sultanas",
+            "2 eggs",
+            "1/3 cup honey",
+            "3 tbsp neutral oil",
+            "1 tsp baking powder",
+            "1 tsp ground cinnamon",
+            "1/2 tsp ground ginger",
+            "1/4 tsp ground nutmeg"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 170°C fan (190°C conventional) and line a 20cm square tin.",
+        "Mix the oats, baking powder and spices, then stir in the pumpkin, eggs, honey and oil, and fold in the sultanas.",
+        "Spread into the tin and bake for 28 minutes, until set and golden at the edges.",
+        "Cool in the tin, then cut into 12 squares."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 square. Keeps 4 days in the fridge; freeze for up to 2 months."
+      ],
+      "nutrition": {
+        "kcal": 157,
+        "proteinG": 3,
+        "carbsG": 24,
+        "fatG": 5,
+        "fibreG": 2,
+        "sodiumMg": 50
+      }
+    }
+  ]
+}
