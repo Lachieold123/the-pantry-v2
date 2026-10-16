@@ -32,3 +32,8 @@ B11 (15) and B12 (14): regional dinners and lunches (Chengdu, Cantonese, Hakka, 
 Nutrition left honest (not scaled). Fails only on nutrition mismatch (coconut milk lines overestimated by the validator): fijian-coconut-curry-fish-with-pumpkin, samaki-wa-kupaka-swahili-grilled-fish-in-coconut-tamarind.
 Validator lessons: summary max 120 chars; every meat/poultry/egg Food safety note needs a stated temperature in C (use 75°C, 63°C steak/fish); "tuna steak" and similar "steak" lines break the pescatarian tag; "whole clove" has no match (use "1/2 tsp ground cloves"); title near batch-03 "Twice-Cooked Pork" failed. docs/tools-sB/fs.py adds temperatures and trims summaries.
 Gaps left: breakfasts, vegan GF dinners, East/South African, Pacific lunches.
+
+## Session (B13)
+B13 (41 mains: Kerala, Chettinad, Korean jjim, Japanese kakuni/hambagu, Thai, Vietnamese kho, Filipino, Indonesian, Malaysian, Ethiopian/Ugandan/Kenyan, Tongan, Hawaiian, Chinese braises and stir-fries). Total now 508.
+Fails only on nutrition (honest, not scaled; validator overcounts oil and coconut milk): lechon-kawali-crispy-pork-belly-with-vinegar-dip, gulai-kambing-sumatran-lamb-curry, salt-and-pepper-squid-cantonese-style-with-rice.
+Lessons: no ingredient match for berbere, mitmita, mackerel (use chilli powder plus paprika, white fish fillet, salmon); "drumsticks and thighs" needs one item; "soaked in milk" hides the milk from the diet tag; "pound" the verb fails. Titles near B03/B04/B12 failed (moo ping, kua kling, pla neung manao, kuku paka), so renamed.
