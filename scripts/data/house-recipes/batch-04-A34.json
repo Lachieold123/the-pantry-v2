@@ -1,0 +1,932 @@
+{
+ "about": "Batch 04, slice A, chunk A34: lunches (wraps, filled flatbreads, boreks, burgers, quesadillas, bento, rice-paper rolls, budget bowls, egg lunches).",
+ "recipes": [
+  {
+   "id": "beef-kofta-flatbread-wrap",
+   "title": "Beef Kofta Flatbread Wrap",
+   "summary": "Spiced beef kofta in warm flatbread with tomato, onion and a garlic yoghurt sauce.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "300g beef mince",
+      "1 small onion, grated",
+      "2 cloves garlic, minced",
+      "1 tsp ground cumin",
+      "1 tsp ground coriander",
+      "2 tbsp parsley, chopped",
+      "1 tbsp olive oil",
+      "2 flatbread",
+      "1 tomato, sliced",
+      "1/2 cup plain yoghurt",
+      "1 tbsp lemon juice"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the beef, onion, half the garlic, cumin, coriander, parsley and salt and shape into 8 finger-shaped koftas.",
+    "Fry in the oil over medium-high heat for 8 minutes, turning, until browned and cooked through (75°C).",
+    "Stir the remaining garlic and the lemon juice into the yoghurt.",
+    "Warm the flatbreads, spread with the yoghurt, add koftas and tomato and roll."
+   ],
+   "notes": [
+    "Food safety: cook beef kofta to 75°C with no pink until steaming hot and no longer pink in the middle (poultry and mince to 75°C, pork to 70°C). For packed lunches chill within 1 hour, keep below 5C or with an ice pack, and eat within 3 days from the fridge (reheat until steaming hot, once only). Eat within 3 days if chilled promptly; reheat until steaming hot.",
+    "Contains gluten and milk."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 40,
+    "carbsG": 46,
+    "fatG": 24,
+    "fibreG": 4,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "roast-pumpkin-and-chickpea-wrap-vegan",
+   "title": "Roast Pumpkin and Chickpea Wrap (Vegan)",
+   "summary": "Cumin-roasted pumpkin and chickpeas with tahini sauce and rocket in a tortilla.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g pumpkin, cubed",
+      "400g canned chickpeas, drained",
+      "1 tbsp olive oil",
+      "1 tsp ground cumin",
+      "1 tsp smoked paprika",
+      "2 tbsp tahini",
+      "1 tbsp lemon juice",
+      "2 tbsp water",
+      "2 flour tortilla",
+      "40g rocket"
+     ]
+    }
+   ],
+   "steps": [
+    "Roast the pumpkin and chickpeas with the oil, cumin and paprika at 210C for 25 minutes until the pumpkin is tender and the edges are crisp.",
+    "Whisk the tahini, lemon juice and water into a pourable sauce.",
+    "Warm the tortillas and spread with the tahini sauce.",
+    "Fill with the roast mix and rocket and roll tightly until sealed."
+   ],
+   "notes": [
+    "Keeps 3 days in the fridge; pack the rocket separately.",
+    "Contains gluten and sesame."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 20,
+    "carbsG": 76,
+    "fatG": 21,
+    "fibreG": 15,
+    "sodiumMg": 470
+   }
+  },
+  {
+   "id": "egg-and-chorizo-torta-mexican-sandwich",
+   "title": "Egg and Chorizo Torta (Mexican Sandwich)",
+   "summary": "Scrambled egg with spiced chorizo, refried-style black beans and avocado in a toasted roll.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 12,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 crusty rolls",
+      "100g chorizo, diced",
+      "4 eggs",
+      "1 tbsp vegetable oil",
+      "200g canned black beans, drained and mashed",
+      "1 avocado, sliced",
+      "1 tomato, sliced",
+      "1 lime, juiced"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the chorizo in the oil for 4 minutes until crisp and cooked through, then pour in the beaten eggs.",
+    "Stir for 2 to 3 minutes until the egg is fully set.",
+    "Warm the mashed beans in a small pan for 3 minutes until hot.",
+    "Split the rolls and toast them in a dry pan until golden, then fill with the beans, egg mix, avocado, tomato and lime juice."
+   ],
+   "notes": [
+    "Food safety: cook chorizo until the fat runs and no pink remains until steaming hot and no longer pink in the middle (poultry and mince to 75°C, pork to 70°C). For packed lunches chill within 1 hour, keep below 5C or with an ice pack, and eat within 3 days from the fridge (reheat until steaming hot, once only).  Cook the egg until fully set; eat the same day or chill within 1 hour and keep below 5C for 24 hours.",
+    "Contains gluten and egg."
+   ],
+   "nutrition": {
+    "kcal": 720,
+    "proteinG": 36,
+    "carbsG": 64,
+    "fatG": 35,
+    "fibreG": 12,
+    "sodiumMg": 1250
+   }
+  },
+  {
+   "id": "tuna-salad-wrap-with-avocado",
+   "title": "Tuna Salad Wrap with Avocado",
+   "summary": "Flaked tuna, avocado, cucumber and lemon yoghurt in a wholemeal tortilla.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 0,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "pescatarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "425g canned tuna in springwater, drained",
+      "1 avocado, mashed",
+      "1/4 cup plain yoghurt",
+      "1 tbsp lemon juice",
+      "1/2 cucumber, diced",
+      "1 spring onion, sliced",
+      "2 wholemeal tortilla",
+      "40g baby spinach"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the tuna, avocado, yoghurt, lemon juice, cucumber and spring onion until just combined.",
+    "Warm the tortillas briefly so they fold without cracking.",
+    "Pile the spinach and tuna mix down the centre.",
+    "Fold in the sides and roll up tightly."
+   ],
+   "notes": [
+    "Food safety: cook canned tuna only from a freshly opened can until steaming hot and no longer pink in the middle (poultry and mince to 75°C, pork to 70°C). For packed lunches chill within 1 hour, keep below 5C or with an ice pack, and eat within 3 days from the fridge (reheat until steaming hot, once only). Keep below 5C and eat within 24 hours if packed; discard if left out for over 2 hours.",
+    "Contains fish, gluten and milk."
+   ],
+   "nutrition": {
+    "kcal": 500,
+    "proteinG": 40,
+    "carbsG": 32,
+    "fatG": 26,
+    "fibreG": 6,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "fish-finger-sandwich",
+   "title": "Fish Finger Sandwich",
+   "summary": "Crisp baked fish fingers with tartare sauce and lettuce in buttered white bread.",
+   "cuisine": "british",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 18,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "pescatarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g firm white fish fillet, cut into 6 fingers",
+      "2 tbsp plain flour",
+      "1 egg, beaten",
+      "1/2 cup panko breadcrumbs",
+      "1 tbsp olive oil",
+      "4 slices white bread",
+      "20g butter",
+      "3 tbsp mayonnaise",
+      "2 tbsp gherkin, chopped",
+      "1 tsp lemon juice",
+      "4 lettuce leaves"
+     ]
+    }
+   ],
+   "steps": [
+    "Dust the fish in flour, dip in egg and press into the panko, then place on a tray brushed with the oil.",
+    "Bake at 220C for 15 to 18 minutes, turning once, until golden and the fish flakes easily (63°C).",
+    "Mix the mayonnaise, gherkin and lemon juice.",
+    "Butter the bread, fill with lettuce, fish fingers and tartare sauce and cut in half."
+   ],
+   "notes": [
+    "Food safety: cook fish to 63°C until opaque and flaking until steaming hot and no longer pink in the middle (poultry and mince to 75°C, pork to 70°C). For packed lunches chill within 1 hour, keep below 5C or with an ice pack, and eat within 3 days from the fridge (reheat until steaming hot, once only). Eat the same day; chill within 1 hour if packing and keep below 5C.",
+    "Contains fish, gluten and egg."
+   ],
+   "nutrition": {
+    "kcal": 580,
+    "proteinG": 34,
+    "carbsG": 60,
+    "fatG": 22,
+    "fibreG": 3,
+    "sodiumMg": 880
+   }
+  },
+  {
+   "id": "chicken-larb-lettuce-cups",
+   "title": "Chicken Larb Lettuce Cups",
+   "summary": "Minced chicken tossed with lime, fish sauce, chilli and herbs in crisp lettuce cups.",
+   "cuisine": "thai",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g chicken mince",
+      "1 tbsp vegetable oil",
+      "3 tbsp lime juice",
+      "2 tbsp fish sauce",
+      "1 tsp sugar",
+      "1 red chilli, sliced",
+      "2 spring onion, sliced",
+      "1/4 cup mint leaves",
+      "2 tbsp coriander, chopped",
+      "8 lettuce leaves",
+      "1/2 cup jasmine rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the rice in 1 cup water, covered, for 12 minutes until tender.",
+    "Cook the chicken in the oil for 7 minutes, breaking it up, until cooked through (75°C).",
+    "Toss with the lime juice, fish sauce, sugar, chilli, spring onion and herbs.",
+    "Spoon into the lettuce cups and serve with the rice."
+   ],
+   "notes": [
+    "Food safety: cook chicken mince to 75°C until steaming hot and no longer pink in the middle (poultry and mince to 75°C, pork to 70°C). For packed lunches chill within 1 hour, keep below 5C or with an ice pack, and eat within 3 days from the fridge (reheat until steaming hot, once only). Cool within 1 hour and eat within 2 days; keep the herbs and lettuce separate.",
+    "Contains fish."
+   ],
+   "nutrition": {
+    "kcal": 430,
+    "proteinG": 36,
+    "carbsG": 40,
+    "fatG": 12,
+    "fibreG": 3,
+    "sodiumMg": 1680
+   }
+  },
+  {
+   "id": "veggie-pad-thai-box",
+   "title": "Veggie Pad Thai Box",
+   "summary": "Rice noodles stir-fried with egg, tofu and vegetables in a tamarind sauce, topped with peanuts.",
+   "cuisine": "thai",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 12,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "150g flat rice noodles",
+      "200g firm tofu, cubed",
+      "2 eggs",
+      "1 tbsp vegetable oil",
+      "1 carrot, cut into matchsticks",
+      "100g beansprouts",
+      "2 spring onion, sliced",
+      "2 tbsp soy sauce",
+      "1 tbsp tamarind paste",
+      "1 tbsp sugar",
+      "2 tbsp peanuts, crushed",
+      "1 lime, cut into wedges"
+     ]
+    }
+   ],
+   "steps": [
+    "Soak the noodles in hot water for 8 minutes until pliable and drain.",
+    "Fry the tofu in the oil for 5 minutes until golden, push aside and scramble in the eggs until fully set.",
+    "Add the carrot, noodles, soy sauce, tamarind and sugar and toss for 3 minutes until the noodles are tender and coated.",
+    "Fold in the beansprouts and spring onion and top with peanuts and lime."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites and yolks are fully set. For packed lunches chill within 1 hour, keep below 5C and eat within 24 hours.",
+    "Contains egg, peanuts and soy."
+   ],
+   "nutrition": {
+    "kcal": 620,
+    "proteinG": 24,
+    "carbsG": 88,
+    "fatG": 20,
+    "fibreG": 5,
+    "sodiumMg": 1230
+   }
+  },
+  {
+   "id": "hoisin-tofu-rice-paper-rolls",
+   "title": "Hoisin Tofu Rice Paper Rolls",
+   "summary": "Glazed tofu, crunchy vegetables and herbs in fresh rice paper rolls with a lime dip.",
+   "cuisine": "vietnamese",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "200g firm tofu, cut into batons",
+      "2 tbsp hoisin sauce",
+      "1 tsp vegetable oil",
+      "8 rice paper wrapper",
+      "1 carrot, cut into matchsticks",
+      "1/2 cucumber, cut into matchsticks",
+      "8 lettuce leaves",
+      "1/4 cup mint leaves",
+      "3 tbsp soy sauce",
+      "2 tbsp lime juice",
+      "1 tsp sugar"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the tofu in the oil with the hoisin for 6 minutes until sticky and golden.",
+    "Soften one wrapper at a time in warm water and layer lettuce, tofu, carrot, cucumber and mint.",
+    "Roll up tightly, tucking in the sides, until each roll is firm.",
+    "Stir the soy sauce, lime juice and sugar for dipping."
+   ],
+   "notes": [
+    "Eat within 24 hours; keep covered and chilled.",
+    "Contains soy and sulphites; check the hoisin label for gluten."
+   ],
+   "nutrition": {
+    "kcal": 320,
+    "proteinG": 15,
+    "carbsG": 46,
+    "fatG": 8,
+    "fibreG": 5,
+    "sodiumMg": 1350
+   }
+  },
+  {
+   "id": "chickpea-frittata-wedges-vegan-besan",
+   "title": "Chickpea Frittata Wedges (Vegan, Besan)",
+   "summary": "An egg-free frittata of chickpea flour, spinach and onion baked until set, great cold.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.5 cups besan (chickpea flour)",
+      "1.5 cups water",
+      "1 tbsp olive oil",
+      "1 onion, finely diced",
+      "100g baby spinach",
+      "1 tsp ground cumin",
+      "1/2 tsp ground turmeric",
+      "2 tbsp coriander, chopped",
+      "1 tomato, diced"
+     ]
+    }
+   ],
+   "steps": [
+    "Whisk the besan, water, cumin, turmeric and salt into a smooth batter.",
+    "Soften the onion in the oil in an ovenproof pan for 4 minutes, add the spinach and tomato until wilted.",
+    "Pour in the batter and scatter the coriander, then bake at 200C for 20 minutes until set and golden.",
+    "Cool slightly and cut into wedges."
+   ],
+   "notes": [
+    "Keeps 4 days in the fridge and can be eaten cold.",
+    "Contains no gluten ingredients; check the besan label."
+   ],
+   "nutrition": {
+    "kcal": 260,
+    "proteinG": 13,
+    "carbsG": 35,
+    "fatG": 7,
+    "fibreG": 8,
+    "sodiumMg": 260
+   }
+  },
+  {
+   "id": "paneer-bhurji-wrap",
+   "title": "Paneer Bhurji Wrap",
+   "summary": "Crumbled paneer scrambled with onion, tomato and spices, rolled in a warm roti.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 12,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "200g paneer, crumbled",
+      "1 tbsp vegetable oil",
+      "1 onion, finely diced",
+      "1 tomato, diced",
+      "1 green chilli, sliced",
+      "1 tsp ground cumin",
+      "1/2 tsp ground turmeric",
+      "1 tsp garam masala",
+      "2 tbsp coriander, chopped",
+      "2 roti",
+      "2 tbsp plain yoghurt"
+     ]
+    }
+   ],
+   "steps": [
+    "Soften the onion and chilli in the oil for 5 minutes, then add the cumin and turmeric.",
+    "Add the tomato and cook for 3 minutes until pulpy, then stir in the paneer and garam masala for 3 minutes until heated through.",
+    "Stir through the coriander.",
+    "Warm the roti, spread with the yoghurt, add the bhurji and roll."
+   ],
+   "notes": [
+    "Keeps 2 days in the fridge; reheat until steaming hot.",
+    "Contains gluten and milk."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 28,
+    "carbsG": 38,
+    "fatG": 34,
+    "fibreG": 4,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "aloo-tikki-burger",
+   "title": "Aloo Tikki Burger",
+   "summary": "Spiced potato patties pan-fried until crisp and served in a bun with mint yoghurt and onion.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 15,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g potato, peeled and cubed",
+      "1/2 cup peas",
+      "1 tsp ground cumin",
+      "1 tsp garam masala",
+      "1 green chilli, finely chopped",
+      "2 tbsp coriander, chopped",
+      "3 tbsp plain flour",
+      "2 tbsp vegetable oil",
+      "2 burger buns",
+      "1/4 cup plain yoghurt",
+      "1 tbsp mint, chopped",
+      "1/2 red onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the potato for 12 minutes until tender, drain and mash with the peas, cumin, garam masala, chilli, coriander, flour and salt.",
+    "Shape into 2 thick patties.",
+    "Fry in the oil over medium heat for 5 minutes each side until golden and crisp.",
+    "Mix the yoghurt and mint, then fill the buns with patties, yoghurt and onion."
+   ],
+   "notes": [
+    "Patties keep 3 days in the fridge; reheat until steaming hot.",
+    "Contains gluten and milk."
+   ],
+   "nutrition": {
+    "kcal": 650,
+    "proteinG": 17,
+    "carbsG": 100,
+    "fatG": 21,
+    "fibreG": 9,
+    "sodiumMg": 600
+   }
+  },
+  {
+   "id": "egg-curry-wrap",
+   "title": "Egg Curry Wrap",
+   "summary": "Hard-boiled eggs in a spiced tomato masala, rolled in a roti with cucumber.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 eggs",
+      "1 tbsp vegetable oil",
+      "1 onion, diced",
+      "2 cloves garlic, minced",
+      "1 tbsp ginger, grated",
+      "1 tsp garam masala",
+      "1/2 tsp ground turmeric",
+      "200g canned chopped tomatoes",
+      "2 roti",
+      "1/2 cucumber, sliced",
+      "2 tbsp coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the eggs for 10 minutes until hard-set, cool in cold water and peel.",
+    "Soften the onion, garlic and ginger in the oil for 6 minutes, add the spices, then the tomatoes and simmer 8 minutes until thick.",
+    "Halve the eggs and warm them in the sauce for 2 minutes.",
+    "Fill the roti with the egg curry, cucumber and coriander and roll."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites and yolks are fully set. For packed lunches chill within 1 hour, keep below 5C and eat within 24 hours.",
+    "Contains gluten and egg."
+   ],
+   "nutrition": {
+    "kcal": 480,
+    "proteinG": 22,
+    "carbsG": 48,
+    "fatG": 20,
+    "fibreG": 5,
+    "sodiumMg": 500
+   }
+  },
+  {
+   "id": "spinach-and-cheese-borek-rolls",
+   "title": "Spinach and Cheese Borek Rolls",
+   "summary": "Crisp filo rolls of spinach, feta and egg, baked until golden.",
+   "cuisine": "turkish",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 sheet filo pastry",
+      "250g frozen spinach, thawed and squeezed dry",
+      "200g feta, crumbled",
+      "1 egg",
+      "2 tbsp olive oil",
+      "1 spring onion, sliced",
+      "1/4 tsp ground nutmeg"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the spinach, feta, half the egg, spring onion and nutmeg.",
+    "Brush a filo sheet with oil, spoon filling along one edge and roll tightly into a cigar; repeat.",
+    "Place on a lined tray, brush with the remaining egg and bake at 190C for 25 to 30 minutes until deep golden.",
+    "Cool for 5 minutes before eating."
+   ],
+   "notes": [
+    "Keeps 2 days in the fridge; reheat until steaming hot.",
+    "Contains gluten, egg and milk."
+   ],
+   "nutrition": {
+    "kcal": 380,
+    "proteinG": 15,
+    "carbsG": 30,
+    "fatG": 22,
+    "fibreG": 3,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "kale-and-bean-quesadilla",
+   "title": "Kale and Bean Quesadilla",
+   "summary": "Crisp tortillas of white beans, kale and cheese, cooked in a pan until melted.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 flour tortilla",
+      "400g canned cannellini beans, drained",
+      "60g kale, shredded",
+      "1 clove garlic, minced",
+      "1 tsp olive oil",
+      "1 tsp ground cumin",
+      "150g mozzarella, grated",
+      "1/2 cup salsa"
+     ]
+    }
+   ],
+   "steps": [
+    "Wilt the kale and garlic in the oil for 3 minutes until soft, then mash in the beans and cumin.",
+    "Spread over 2 tortillas, scatter the mozzarella and top with the remaining tortillas.",
+    "Cook in a dry pan over medium heat for 3 minutes each side until golden and the cheese has melted.",
+    "Cut into wedges and serve with salsa."
+   ],
+   "notes": [
+    "Best eaten warm; keeps 2 days in the fridge.",
+    "Contains gluten and milk."
+   ],
+   "nutrition": {
+    "kcal": 620,
+    "proteinG": 30,
+    "carbsG": 72,
+    "fatG": 22,
+    "fibreG": 13,
+    "sodiumMg": 1150
+   }
+  },
+  {
+   "id": "chicken-banh-mi-rolls",
+   "title": "Chicken Banh Mi Rolls",
+   "summary": "Pulled chicken with pickled carrot, cucumber, coriander and chilli mayo in a crisp roll.",
+   "cuisine": "vietnamese",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 0,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "250g cooked chicken breast, shredded",
+      "2 small baguettes",
+      "1 carrot, grated",
+      "2 tbsp rice vinegar",
+      "1 tsp sugar",
+      "2 tbsp mayonnaise",
+      "1 tbsp sriracha",
+      "1/2 cucumber, sliced",
+      "1/4 cup coriander leaves",
+      "1 red chilli, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the carrot with the vinegar, sugar and a pinch of salt for the pickle.",
+    "Mix the mayonnaise and sriracha.",
+    "Split the baguettes and spread with the chilli mayo.",
+    "Fill with chicken, pickled carrot, cucumber, coriander and chilli until generously packed, then press the roll closed."
+   ],
+   "notes": [
+    "Food safety: cook use chicken cooked to 75°C and chilled promptly until steaming hot and no longer pink in the middle (poultry and mince to 75°C, pork to 70°C). For packed lunches chill within 1 hour, keep below 5C or with an ice pack, and eat within 3 days from the fridge (reheat until steaming hot, once only). Keep below 5C and eat within 4 hours if packed, or within 24 hours with an ice pack.",
+    "Contains gluten and egg."
+   ],
+   "nutrition": {
+    "kcal": 540,
+    "proteinG": 34,
+    "carbsG": 70,
+    "fatG": 12,
+    "fibreG": 5,
+    "sodiumMg": 980
+   }
+  },
+  {
+   "id": "tuna-onigiri-bento-with-cucumber-and-egg",
+   "title": "Tuna Onigiri Bento (with Cucumber and Egg)",
+   "summary": "Rice balls with tuna mayo and nori, a rolled egg and cucumber, packed in a lunch box.",
+   "cuisine": "japanese",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 15,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup sushi rice",
+      "1 tbsp rice vinegar",
+      "1 can tuna in springwater, drained",
+      "1 tbsp mayonnaise",
+      "2 nori sheet, cut into strips",
+      "2 eggs",
+      "1 tsp soy sauce",
+      "1 tsp vegetable oil",
+      "1/2 cucumber, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the rice with 1.5 cups water, covered, for 12 minutes until tender, then stir through the vinegar and cool.",
+    "Mix the tuna with the mayonnaise and shape the rice around spoonfuls of it into 4 balls, wrapping each in nori.",
+    "Beat the eggs with the soy sauce and cook in the oil in a small pan for 3 minutes until fully set, then roll and slice.",
+    "Pack the onigiri, egg and cucumber into a lunch box."
+   ],
+   "notes": [
+    "Food safety: cook canned tuna only from a freshly opened can until steaming hot and no longer pink in the middle (poultry and mince to 75°C, pork to 70°C). For packed lunches chill within 1 hour, keep below 5C or with an ice pack, and eat within 3 days from the fridge (reheat until steaming hot, once only). Cook the egg until fully set; keep the box below 5C and eat within 24 hours. Cool rice within 1 hour.",
+    "Contains fish, egg and soy."
+   ],
+   "nutrition": {
+    "kcal": 520,
+    "proteinG": 30,
+    "carbsG": 72,
+    "fatG": 12,
+    "fibreG": 3,
+    "sodiumMg": 720
+   }
+  },
+  {
+   "id": "smoky-tofu-rice-bowl-budget-lunch",
+   "title": "Smoky Tofu Rice Bowl (Budget Lunch)",
+   "summary": "Paprika-roasted tofu on rice with sweetcorn and shredded cabbage, for very little money.",
+   "cuisine": "american",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g firm tofu, cubed",
+      "1 tbsp vegetable oil",
+      "1 tsp smoked paprika",
+      "1 tbsp soy sauce",
+      "1/2 cup long-grain rice",
+      "1 cup corn kernels",
+      "100g cabbage, shredded",
+      "1 tbsp lime juice",
+      "2 spring onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the tofu with the oil, paprika and soy sauce and roast at 220C for 25 minutes, turning once, until golden and crisp at the edges.",
+    "Simmer the rice with 1 cup water, covered, for 12 minutes until tender.",
+    "Warm the corn in a pan for 3 minutes.",
+    "Serve the rice topped with tofu, corn, cabbage, lime juice and spring onion."
+   ],
+   "notes": [
+    "Keeps 3 days in the fridge; reheat until steaming hot.",
+    "Contains soy."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 26,
+    "carbsG": 72,
+    "fatG": 20,
+    "fibreG": 7,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "egg-and-potato-curry-roll-budget-lunch",
+   "title": "Egg and Potato Curry Roll (Budget Lunch)",
+   "summary": "Soft roti rolled around a mild potato and egg curry with peas.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 eggs",
+      "400g potato, cubed",
+      "1 tbsp vegetable oil",
+      "1 onion, diced",
+      "2 tsp curry powder",
+      "200g canned chopped tomatoes",
+      "1/2 cup peas",
+      "4 roti",
+      "2 tbsp coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the eggs for 10 minutes until hard-set, cool and peel.",
+    "Soften the onion in the oil for 5 minutes, add the curry powder, then the potato, tomatoes and 1/2 cup water and simmer for 15 minutes until the potato is tender.",
+    "Add the peas and halved eggs and heat for 3 minutes.",
+    "Fill the roti with the curry and coriander and roll."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites and yolks are fully set. For packed lunches chill within 1 hour, keep below 5C and eat within 24 hours.",
+    "Contains gluten and egg."
+   ],
+   "nutrition": {
+    "kcal": 430,
+    "proteinG": 17,
+    "carbsG": 57,
+    "fatG": 14,
+    "fibreG": 6,
+    "sodiumMg": 430
+   }
+  }
+ ]
+}
