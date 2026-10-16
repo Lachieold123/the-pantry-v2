@@ -26,6 +26,9 @@ export const CUISINES = [
   'central-european',
   'scandinavian',
   'modern-australian',
+  'caribbean',
+  'east-african',
+  'pacific-islands',
 ] as const;
 export type CuisineId = (typeof CUISINES)[number];
 
@@ -51,8 +54,10 @@ export type RecipeSource = 'house' | 'user' | 'imported';
  * Where a house recipe stands (D-008, D-036): `ai-draft` until it has passed the
  * line-by-line editorial review, `reviewed` once it has, `vetted` once Lachlan
  * has cooked it. Release builds show reviewed and vetted recipes.
+ * `ai-assisted` (batch 03) marks recipes written by an earlier AI pipeline and
+ * imported as they were; the app labels them "AI-assisted recipe".
  */
-export type Provenance = 'vetted' | 'reviewed' | 'ai-draft';
+export type Provenance = 'vetted' | 'reviewed' | 'ai-draft' | 'ai-assisted';
 
 export type IngredientGroupBlock = { title?: string; items: IngredientLine[] };
 export type Step = { text: string };
@@ -77,6 +82,8 @@ export type Recipe = {
   notes?: string[];
   source: RecipeSource;
   provenance?: Provenance;
+  /** The model that wrote an `ai-assisted` recipe, for the record. */
+  generatedBy?: string;
 };
 
 export function totalMinutes(recipe: Pick<Recipe, 'prepMinutes' | 'cookMinutes'>): number {

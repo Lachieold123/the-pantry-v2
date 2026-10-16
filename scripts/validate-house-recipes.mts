@@ -634,6 +634,7 @@ function checkRecipe(h: HouseRecipe, file: string, seen: Map<string, string>): v
     const est = kcal / Math.max(1, h.servings);
     const cover = known / Math.max(1, counted.length);
     const ratio = nu.kcal / Math.max(1, est);
+    if (process.env.NUTRI_DEBUG) console.log(`NUTRI ${h.id} ${Math.round(est)} ${cover.toFixed(2)}`);
     if (cover >= 0.6 && est > 50 && (ratio < 0.55 || ratio > 1.8))
       fail('nutrition', `stated ${nu.kcal} kcal a serve but the ingredients come to roughly ${Math.round(est)}`);
     else if (est > 50 && (ratio < 0.55 || ratio > 1.8))
