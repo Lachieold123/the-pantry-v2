@@ -1,0 +1,1028 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "nigerian-egusi-soup-with-spinach",
+      "title": "Nigerian Egusi Soup with Spinach",
+      "summary": "A rich West African soup of ground pumpkin seeds, spinach and chicken simmered in a tomato and chilli base.",
+      "cuisine": "west-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500 g chicken thigh fillets, diced",
+            "1 cup ground pumpkin seeds",
+            "1 onion, diced",
+            "2 tomatoes, chopped",
+            "1 red chilli, chopped",
+            "3 tbsp vegetable oil",
+            "3 cups chicken stock",
+            "300 g spinach, chopped",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the tomatoes, onion and chilli to a smooth puree.",
+        "Cook the puree in the oil in a large pot for 10 minutes until it thickens and the oil separates.",
+        "Stir the ground pumpkin seeds with 1/2 cup stock to a paste, drop spoonfuls into the pot and cook for 5 minutes until they form soft curds.",
+        "Add the chicken, remaining stock and salt and simmer for 20 minutes until the chicken is cooked through.",
+        "Fold in the spinach and cook for 3 minutes until wilted."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C and keep leftovers refrigerated within 2 hours, reheating until steaming hot.",
+        "Serve with rice, fufu or boiled yam."
+      ],
+      "nutrition": {
+        "kcal": 388,
+        "proteinG": 28,
+        "carbsG": 9,
+        "fatG": 26,
+        "fibreG": 3,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "ghanaian-groundnut-peanut-soup",
+      "title": "Ghanaian Groundnut Peanut Soup",
+      "summary": "A velvety peanut and tomato soup with chicken and a slow chilli warmth, served with rice balls.",
+      "cuisine": "west-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600 g chicken thigh fillets, diced",
+            "3/4 cup natural peanut butter",
+            "1 onion, diced",
+            "2 tomatoes, chopped",
+            "3 cm ginger, grated",
+            "1 red chilli, chopped",
+            "5 cups water",
+            "1 tbsp vegetable oil",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion in the oil in a large pot for 6 minutes until soft, then add the ginger, chilli and tomatoes and cook for 5 minutes until broken down.",
+        "Add the chicken, water and salt and simmer for 20 minutes until the chicken is cooked through.",
+        "Whisk the peanut butter with a ladle of hot broth until smooth and stir it back into the pot.",
+        "Simmer gently for 10 minutes until the soup thickens and a slick of oil rises to the top."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C and refrigerate leftovers within 2 hours.",
+        "Use natural peanut butter with no added sugar.",
+        "Contains peanuts."
+      ],
+      "nutrition": {
+        "kcal": 412,
+        "proteinG": 29,
+        "carbsG": 9,
+        "fatG": 28,
+        "fibreG": 4,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "senegalese-mafe-peanut-stew",
+      "title": "Senegalese Mafe Peanut Stew",
+      "summary": "Beef or sweet potato simmered in a thick peanut and tomato sauce, a Dakar family staple.",
+      "cuisine": "west-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 60,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600 g beef chuck, diced",
+            "1/2 cup natural peanut butter",
+            "1 onion, diced",
+            "2 carrots, sliced",
+            "1 large sweet potato, cubed",
+            "2 tbsp tomato paste",
+            "2 tbsp vegetable oil",
+            "4 cups water",
+            "2 cloves garlic, crushed",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the beef in the oil in a large pot for 8 minutes until coloured, then add the onion and garlic and cook for 5 minutes until soft.",
+        "Stir in the tomato paste, then add the water and salt and simmer for 30 minutes until the beef is nearly tender.",
+        "Whisk the peanut butter with a ladle of broth until smooth and stir it in with the carrots and sweet potato.",
+        "Simmer for 25 minutes until the vegetables are tender and the sauce is thick."
+      ],
+      "notes": [
+        "Food safety: cool leftovers within 2 hours and reheat until steaming hot at 75°C or above.",
+        "Serve over white rice. Contains peanuts."
+      ],
+      "nutrition": {
+        "kcal": 417,
+        "proteinG": 28,
+        "carbsG": 18,
+        "fatG": 25,
+        "fibreG": 4,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "senegalese-yassa-onion-and-lemon-chicken",
+      "title": "Senegalese Yassa Onion and Lemon Chicken",
+      "summary": "Chicken braised in a tangy mound of sweet onions, mustard and lemon.",
+      "cuisine": "west-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800 g chicken thigh cutlets",
+            "5 onions, sliced",
+            "1/3 cup lemon juice",
+            "2 tbsp Dijon mustard",
+            "3 tbsp vegetable oil",
+            "3 cloves garlic, crushed",
+            "1 cup chicken stock",
+            "1 tsp salt",
+            "1/2 cup green olives"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the chicken in 1 tbsp of the oil in a wide pot for 8 minutes until golden, then lift out.",
+        "Cook the onions in the remaining oil for 15 minutes until golden and very soft.",
+        "Stir in the garlic, mustard, lemon juice, stock and salt and return the chicken to the pot.",
+        "Cover and simmer for 20 minutes until the chicken is cooked through and the sauce is thick, then stir in the olives."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C at the thickest part.",
+        "Serve over rice."
+      ],
+      "nutrition": {
+        "kcal": 442,
+        "proteinG": 34,
+        "carbsG": 16,
+        "fatG": 26,
+        "fibreG": 4,
+        "sodiumMg": 950
+      }
+    },
+    {
+      "id": "nigerian-ofada-style-pepper-stew",
+      "title": "Nigerian Ofada Style Pepper Stew",
+      "summary": "A smoky, deep red stew of roasted capsicum and chilli, cooked down in oil with onion and locust-free spices.",
+      "cuisine": "west-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 50,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 red capsicums",
+            "2 red chillies",
+            "2 onions",
+            "4 tbsp vegetable oil",
+            "1 tbsp tomato paste",
+            "300 g beef, diced",
+            "1 tsp curry powder",
+            "1 tsp salt",
+            "2 cups beef stock"
+          ]
+        }
+      ],
+      "steps": [
+        "Char the capsicums under a hot grill for 15 minutes until blistered and blackened, then peel and deseed.",
+        "Blend with the chillies and 1 onion to a coarse puree.",
+        "Cook the remaining diced onion in the oil in a pot for 5 minutes until soft, then add the tomato paste and curry powder for 1 minute.",
+        "Add the puree and cook for 20 minutes, stirring, until the sauce darkens and the oil separates.",
+        "Add the beef, stock and salt and simmer for 20 minutes until the beef is tender."
+      ],
+      "notes": [
+        "Food safety: cook the beef until tender and at least 75°C and refrigerate leftovers within 2 hours.",
+        "Traditionally eaten with rice and boiled egg."
+      ],
+      "nutrition": {
+        "kcal": 255,
+        "proteinG": 14,
+        "carbsG": 10,
+        "fatG": 17,
+        "fibreG": 3,
+        "sodiumMg": 560
+      }
+    },
+    {
+      "id": "west-african-party-jollof-rice",
+      "title": "West African Party Jollof Rice",
+      "summary": "Long-grain rice cooked in a smoky tomato and capsicum sauce until every grain is red and fluffy.",
+      "cuisine": "west-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups long-grain rice",
+            "4 tomatoes, chopped",
+            "1 red capsicum, chopped",
+            "1 onion, diced",
+            "1 red chilli",
+            "3 tbsp vegetable oil",
+            "2 tbsp tomato paste",
+            "2 cups chicken stock",
+            "1 tsp curry powder",
+            "1 tsp thyme leaves",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the tomatoes, capsicum, half the onion and the chilli, then simmer the puree for 15 minutes until reduced by half.",
+        "Cook the remaining onion in the oil for 5 minutes until soft, then stir in the tomato paste, curry powder and thyme for 2 minutes.",
+        "Add the reduced puree, stock, salt and rinsed rice, stir once, cover tightly and cook on low heat for 25 minutes until the rice is tender.",
+        "Rest for 5 minutes, then fluff with a fork."
+      ],
+      "notes": [
+        "Food safety: cool and refrigerate leftover rice within 1 hour and reheat until steaming hot.",
+        "Use vegetable stock for vegetarian."
+      ],
+      "nutrition": {
+        "kcal": 355,
+        "proteinG": 7,
+        "carbsG": 60,
+        "fatG": 9,
+        "fibreG": 3,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "fried-plantain-with-pepper-sauce",
+      "title": "Fried Plantain with Pepper Sauce",
+      "summary": "Ripe plantain slices fried until caramelised, served with a quick tomato and chilli sauce.",
+      "cuisine": "west-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 ripe plantains, sliced",
+            "1/3 cup vegetable oil",
+            "3 tomatoes, chopped",
+            "1 red chilli, chopped",
+            "1 small onion, diced",
+            "1 tbsp vegetable oil",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion in 1 tbsp oil for 4 minutes until soft, then add the tomatoes, chilli and salt and simmer for 10 minutes until thick.",
+        "Heat the 1/3 cup oil in a frying pan over medium heat and fry the plantain for 3 minutes each side until deep golden.",
+        "Drain on paper towel and serve with the sauce."
+      ],
+      "notes": [
+        "Use plantains that are mostly yellow with black spots for the sweetest result."
+      ],
+      "nutrition": {
+        "kcal": 368,
+        "proteinG": 2,
+        "carbsG": 52,
+        "fatG": 16,
+        "fibreG": 4,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "jamaican-steamed-cabbage-with-carrot",
+      "title": "Jamaican Steamed Cabbage with Carrot",
+      "summary": "Quick-steamed cabbage with thyme, garlic and a touch of chilli, a staple Jamaican side.",
+      "cuisine": "caribbean",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1/2 cabbage, shredded",
+            "1 carrot, grated",
+            "1 onion, sliced",
+            "2 cloves garlic, sliced",
+            "1 tbsp vegetable oil",
+            "1 tsp thyme leaves",
+            "1/2 red chilli, sliced",
+            "1/2 tsp salt",
+            "1/4 cup water"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion, garlic and chilli in the oil in a large pan for 3 minutes until soft.",
+        "Add the cabbage, carrot, thyme, salt and water, cover and steam for 6 minutes until the cabbage is tender but still bright.",
+        "Uncover and toss for 2 minutes until the liquid evaporates."
+      ],
+      "notes": [
+        "Serve with rice and peas or jerk chicken."
+      ],
+      "nutrition": {
+        "kcal": 108,
+        "proteinG": 3,
+        "carbsG": 13,
+        "fatG": 4,
+        "fibreG": 4,
+        "sodiumMg": 310
+      }
+    },
+    {
+      "id": "trinidadian-callaloo-style-spinach-side",
+      "title": "Trinidadian Callaloo Style Spinach Side",
+      "summary": "Silky wilted spinach with coconut milk, okra and thyme, in the style of Trinidad's Sunday callaloo.",
+      "cuisine": "caribbean",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400 g spinach, chopped",
+            "8 okra, sliced",
+            "1 onion, diced",
+            "2 cloves garlic, crushed",
+            "1 cup coconut milk",
+            "1 cup water",
+            "1 tsp thyme leaves",
+            "1 tsp butter",
+            "1/2 red chilli",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Melt the butter in a pot and cook the onion and garlic for 4 minutes until soft.",
+        "Add the spinach, okra, coconut milk, water, thyme, chilli and salt and simmer for 15 minutes until the okra is tender.",
+        "Remove the chilli and blend with a stick blender until smooth."
+      ],
+      "notes": [
+        "Use oil instead of butter for vegan."
+      ],
+      "nutrition": {
+        "kcal": 213,
+        "proteinG": 5,
+        "carbsG": 12,
+        "fatG": 15,
+        "fibreG": 5,
+        "sodiumMg": 420
+      }
+    },
+    {
+      "id": "puerto-rican-tostones-with-garlic-mojo",
+      "title": "Puerto Rican Tostones with Garlic Mojo",
+      "summary": "Twice-fried green plantain discs with a hot garlic and lime dipping oil.",
+      "cuisine": "caribbean",
+      "mealTypes": [
+        "snack",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 green plantains",
+            "1/2 cup vegetable oil",
+            "4 cloves garlic, crushed",
+            "1/4 cup olive oil",
+            "3 tbsp lime juice",
+            "1/4 cup chopped coriander",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Peel the plantains and cut into 3 cm chunks.",
+        "Fry in the vegetable oil over medium heat for 3 minutes each side until pale gold, then lift out and press flat with a plate.",
+        "Return to the oil and fry for 2 minutes each side until crisp and deep golden, then drain and sprinkle with salt.",
+        "Warm the olive oil with the garlic for 2 minutes until fragrant, then stir in the lime juice and coriander and serve for dipping."
+      ],
+      "notes": [
+        "Serve while hot and crisp."
+      ],
+      "nutrition": {
+        "kcal": 380,
+        "proteinG": 2,
+        "carbsG": 46,
+        "fatG": 20,
+        "fibreG": 4,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "bajan-cou-cou-cornmeal-and-okra",
+      "title": "Bajan Cou-Cou Cornmeal and Okra",
+      "summary": "A smooth, golden cornmeal and okra pudding from Barbados, stirred until it pulls away from the pot.",
+      "cuisine": "caribbean",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup fine cornmeal",
+            "10 okra, sliced",
+            "3 cups water",
+            "1 tbsp butter",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the okra in the water with the salt for 8 minutes until tender, then lift out and set aside, keeping the water.",
+        "Mix the cornmeal with 1/2 cup cold water, whisk into the hot okra water and cook over low heat, stirring constantly, for 10 minutes until very thick.",
+        "Fold in the okra and beat in the butter until the mixture pulls away from the pot.",
+        "Shape into a smooth dome with a wet spoon and serve."
+      ],
+      "notes": [
+        "Traditionally served with flying fish or a spicy stew.",
+        "Use oil instead of butter for vegan."
+      ],
+      "nutrition": {
+        "kcal": 149,
+        "proteinG": 3,
+        "carbsG": 26,
+        "fatG": 3,
+        "fibreG": 3,
+        "sodiumMg": 220
+      }
+    },
+    {
+      "id": "dominican-habichuelas-guisadas-stewed-beans",
+      "title": "Dominican Habichuelas Guisadas Stewed Beans",
+      "summary": "Butter beans simmered with pumpkin, sofrito and oregano into a thick, savoury stew.",
+      "cuisine": "caribbean",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cans butter beans, drained",
+            "200 g pumpkin, diced",
+            "1 onion, diced",
+            "1 green capsicum, diced",
+            "3 cloves garlic, crushed",
+            "2 tbsp tomato paste",
+            "2 tbsp olive oil",
+            "1 tsp dried oregano",
+            "2 cups water",
+            "1/4 cup chopped coriander",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion, capsicum and garlic in the oil for 6 minutes until soft.",
+        "Stir in the tomato paste and oregano for 1 minute, then add the beans, pumpkin, water and salt.",
+        "Simmer for 25 minutes, mashing some of the pumpkin into the sauce, until the beans are creamy and thick.",
+        "Stir in the coriander and serve over rice."
+      ],
+      "notes": [
+        "Keeps 4 days in the fridge and tastes better the next day."
+      ],
+      "nutrition": {
+        "kcal": 199,
+        "proteinG": 9,
+        "carbsG": 25,
+        "fatG": 5,
+        "fibreG": 9,
+        "sodiumMg": 480
+      }
+    },
+    {
+      "id": "pork-dumplings-in-ginger-broth",
+      "title": "Pork Dumplings in Ginger Broth",
+      "summary": "Plump pork and chive dumplings floating in a light ginger broth with bok choy.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "24 dumpling wrappers",
+            "250 g minced pork",
+            "1/2 cup chopped garlic chives",
+            "2 tsp soy sauce",
+            "1 tsp sesame oil",
+            "2 cm ginger, grated",
+            "5 cups chicken stock",
+            "2 bunches baby bok choy, halved",
+            "1 tbsp rice vinegar",
+            "2 spring onions, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the pork, chives, soy sauce, sesame oil and half the ginger until sticky.",
+        "Place a teaspoon of filling in each wrapper, wet the edge, fold and press closed.",
+        "Simmer the stock with the remaining ginger and vinegar for 5 minutes until fragrant.",
+        "Drop in the dumplings and cook for 5 minutes until they float and the pork is cooked through, adding the bok choy for the last 2 minutes until tender.",
+        "Ladle into bowls and scatter with spring onions."
+      ],
+      "notes": [
+        "Food safety: cook the dumplings until the filling reaches 75°C and eat within 1 day if stored.",
+        "Not suitable for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 295,
+        "proteinG": 22,
+        "carbsG": 30,
+        "fatG": 9,
+        "fibreG": 3,
+        "sodiumMg": 1050
+      }
+    },
+    {
+      "id": "wonton-soup-with-bok-choy",
+      "title": "Wonton Soup with Bok Choy",
+      "summary": "Silky prawn and pork wontons in a clear chicken broth with greens.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "24 wonton wrappers",
+            "150 g minced pork",
+            "150 g raw prawns, finely chopped",
+            "2 tsp soy sauce",
+            "1 tsp sesame oil",
+            "1 tsp ginger, grated",
+            "5 cups chicken stock",
+            "2 bunches baby bok choy",
+            "2 spring onions, sliced",
+            "1/2 tsp white pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the pork, prawns, soy sauce, sesame oil, ginger and pepper until sticky.",
+        "Place a teaspoon of filling in each wrapper, wet the edges and fold into a triangle, pressing out the air.",
+        "Bring the stock to a gentle simmer and cook the wontons for 4 minutes until they float and the filling is cooked through.",
+        "Add the bok choy for 2 minutes until just tender and serve scattered with spring onions."
+      ],
+      "notes": [
+        "Food safety: cook until the pork and prawns reach 75°C and are opaque, and refrigerate leftovers within 2 hours.",
+        "Contains crustacean and gluten."
+      ],
+      "nutrition": {
+        "kcal": 288,
+        "proteinG": 25,
+        "carbsG": 28,
+        "fatG": 8,
+        "fibreG": 2,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "pelmeni-in-chicken-broth",
+      "title": "Pelmeni in Chicken Broth",
+      "summary": "Small Russian meat dumplings served in a clear dill-scented chicken broth.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 40,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "1 1/2 cups plain flour",
+            "1 egg",
+            "1/3 cup warm water",
+            "250 g minced beef",
+            "1 onion, finely grated",
+            "1/2 tsp salt",
+            "1/2 tsp black pepper",
+            "5 cups chicken stock",
+            "1/4 cup chopped dill",
+            "2 tbsp sour cream"
+          ]
+        }
+      ],
+      "steps": [
+        "Knead the flour, egg, water and a pinch of salt for 5 minutes until a smooth dough forms, then cover and rest.",
+        "Mix the beef, onion, salt and pepper, roll the dough thin and cut 5 cm rounds.",
+        "Place a small ball of filling in each round, fold and press the edges, then pinch the corners together.",
+        "Simmer the stock, drop in the pelmeni and cook for 7 minutes until they float and the beef is cooked through.",
+        "Serve with dill and sour cream."
+      ],
+      "notes": [
+        "Food safety: cook until the filling reaches 75°C. Freeze uncooked pelmeni on a tray, then bag.",
+        "Not suitable for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 368,
+        "proteinG": 24,
+        "carbsG": 40,
+        "fatG": 12,
+        "fibreG": 2,
+        "sodiumMg": 980
+      }
+    },
+    {
+      "id": "tibetan-momo-thukpa-soup",
+      "title": "Tibetan Momo Thukpa Soup",
+      "summary": "Beef momo dumplings in a warming ginger, tomato and vegetable broth.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 35,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "20 dumpling wrappers",
+            "250 g minced beef",
+            "1 spring onion, finely sliced",
+            "2 cm ginger, grated",
+            "2 cloves garlic, crushed",
+            "1 tbsp soy sauce",
+            "5 cups vegetable stock",
+            "2 tomatoes, chopped",
+            "1 carrot, sliced",
+            "1 cup shredded cabbage",
+            "1 tsp ground cumin",
+            "1/4 cup chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the beef, spring onion, half the ginger, half the garlic and soy sauce until sticky.",
+        "Place a teaspoon of filling in each wrapper, wet the edge and pleat closed.",
+        "Simmer the stock with the tomatoes, carrot, cumin and remaining ginger and garlic for 10 minutes until the carrot is tender.",
+        "Add the cabbage and momos and cook for 6 minutes until the momos float and the beef is cooked through.",
+        "Serve scattered with coriander."
+      ],
+      "notes": [
+        "Food safety: cook the momos until the filling reaches 75°C; refrigerate leftovers within 2 hours.",
+        "Not suitable for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 304,
+        "proteinG": 22,
+        "carbsG": 34,
+        "fatG": 8,
+        "fibreG": 4,
+        "sodiumMg": 1000
+      }
+    },
+    {
+      "id": "warm-lentil-salad-with-goats-cheese",
+      "title": "Warm Lentil Salad with Goats Cheese",
+      "summary": "Peppery rocket and warm green lentils with roasted red onion and crumbled goat's cheese.",
+      "cuisine": "french",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup green lentils",
+            "2 red onions, cut into wedges",
+            "2 tbsp olive oil",
+            "1 tbsp red wine vinegar",
+            "1 tsp Dijon mustard",
+            "80 g goat's cheese",
+            "2 cups rocket",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the onion wedges with 1 tbsp of the oil at 200°C for 25 minutes until soft and charred at the edges.",
+        "Simmer the lentils in plenty of water for 20 minutes until tender but still holding their shape, then drain.",
+        "Whisk the remaining oil, vinegar, mustard and salt and toss through the warm lentils.",
+        "Fold in the onions and rocket and crumble the goat's cheese over the top."
+      ],
+      "notes": [
+        "Serve warm for the best flavour."
+      ],
+      "nutrition": {
+        "kcal": 332,
+        "proteinG": 17,
+        "carbsG": 34,
+        "fatG": 12,
+        "fibreG": 10,
+        "sodiumMg": 360
+      }
+    },
+    {
+      "id": "warm-kale-and-roasted-pumpkin-salad",
+      "title": "Warm Kale and Roasted Pumpkin Salad",
+      "summary": "Tender kale, caramelised pumpkin, toasted pepitas and a maple mustard dressing.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600 g pumpkin, cubed",
+            "1 bunch kale, stems removed",
+            "3 tbsp olive oil",
+            "2 tbsp pepitas",
+            "1 tbsp maple syrup",
+            "1 tbsp apple cider vinegar",
+            "1 tsp wholegrain mustard",
+            "1/2 tsp salt",
+            "1/4 cup feta"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the pumpkin with 1 tbsp of the oil at 220°C for 25 minutes until golden and soft.",
+        "Whisk the remaining oil, maple syrup, vinegar, mustard and salt together.",
+        "Massage the kale with half the dressing for 2 minutes until it softens and darkens.",
+        "Toss with the warm pumpkin and toasted pepitas, then crumble over the feta and drizzle with the remaining dressing."
+      ],
+      "notes": [
+        "Leave out the feta for vegan."
+      ],
+      "nutrition": {
+        "kcal": 309,
+        "proteinG": 8,
+        "carbsG": 28,
+        "fatG": 17,
+        "fibreG": 6,
+        "sodiumMg": 420
+      }
+    },
+    {
+      "id": "warm-mushroom-and-spinach-salad-with-thyme",
+      "title": "Warm Mushroom and Spinach Salad with Thyme",
+      "summary": "Golden pan-fried mushrooms tossed through baby spinach with a warm garlic and balsamic dressing.",
+      "cuisine": "french",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400 g mixed mushrooms, sliced",
+            "150 g baby spinach",
+            "3 tbsp olive oil",
+            "2 cloves garlic, sliced",
+            "1 tsp thyme leaves",
+            "1 tbsp balsamic vinegar",
+            "1/2 tsp salt",
+            "2 tbsp toasted walnuts"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the mushrooms in 2 tbsp oil in a hot pan for 6 minutes until golden and their liquid has evaporated.",
+        "Add the garlic, thyme and salt and cook for 1 minute until fragrant.",
+        "Pour in the balsamic vinegar and remaining oil and stir for 30 seconds until sizzling.",
+        "Pour over the spinach, toss until just wilted and top with walnuts."
+      ],
+      "notes": [
+        "Do not crowd the pan or the mushrooms will steam instead of browning."
+      ],
+      "nutrition": {
+        "kcal": 175,
+        "proteinG": 5,
+        "carbsG": 8,
+        "fatG": 13,
+        "fibreG": 3,
+        "sodiumMg": 310
+      }
+    },
+    {
+      "id": "warm-cabbage-and-apple-salad-with-bacon",
+      "title": "Warm Cabbage and Apple Salad with Bacon",
+      "summary": "Sweet-sour sauteed cabbage and crisp apple with smoky bacon and a hot cider dressing.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1/2 red cabbage, shredded",
+            "2 apples, sliced",
+            "100 g bacon, diced",
+            "1 red onion, sliced",
+            "2 tbsp apple cider vinegar",
+            "1 tbsp honey",
+            "1 tbsp wholegrain mustard",
+            "1/4 cup chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the bacon in a large pan for 5 minutes until crisp, then add the onion and cook for 3 minutes until soft.",
+        "Add the cabbage and cook for 5 minutes until just wilted but still crunchy.",
+        "Stir in the vinegar, honey and mustard until the dressing bubbles, then toss through the apples and parsley."
+      ],
+      "notes": [
+        "Food safety: cook the bacon until crisp and refrigerate leftovers within 2 hours.",
+        "Leave out the bacon and use smoked paprika for vegetarian."
+      ],
+      "nutrition": {
+        "kcal": 220,
+        "proteinG": 8,
+        "carbsG": 22,
+        "fatG": 10,
+        "fibreG": 5,
+        "sodiumMg": 420
+      }
+    }
+  ]
+}
