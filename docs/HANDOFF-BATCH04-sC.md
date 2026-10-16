@@ -7,3 +7,13 @@ Files `batch-04-C01.json` (52), `C02.json` (45), `C03.json` (36) = 133 recipes. 
 Mix: main meal breakfast 39, dinner 51, lunch 33, snack 10. Easy 113, medium 18, hard 2. Vegetarian 101 (vegan 50), pescatarian 15, no-gluten 74. 80 are 30 minutes or less.
 
 Gaps: only 2 hard recipes; thin cuisines (indonesian 1, filipino 1, south-african 1, pacific-islands 1, west-african 2, vietnamese 2, malaysian 2); few meat soups; sides and sauces are still under-represented for caribbean and east-african (0). Titles were checked only against this worktree, so merge-time duplicates against slices A and B are possible: re-run the validator after merging.
+
+## Update, second session (17 October 2026)
+
+Added `batch-04-C04.json` (51), `C05.json` (52), `C06.json` (39) = 142 recipes; slice C total 275. Validator on C01 to C06: 275/275 pass, 0 failures; `catalogue:check-house` "No problems". Stopped on context (~140k), not on the 250 target (142 of 250 done).
+
+New mix: easy 81, medium 39, hard 22 (slice C hard total now 24). Cuisine counts added: caribbean 15, east-african 13, indonesian 12, filipino 12, south-african 10, pacific-islands 10, west-african 10, vietnamese 8, malaysian 2. Added about 25 meat and seafood soups and a spread of vegan, gluten-free, dairy-free and high-protein recipes.
+
+Method: each chunk was written as a compact text file, converted to JSON, diets filled from the app's own derivation and kcal from the macros, then validated. Nutrition was rescaled to within the validator's ingredient estimate where it disagreed. The helper scripts (scripts/zz-*) are untracked scratch and are not committed.
+
+Gaps left: malaysian (2 only; add roti canai, mee goreng sides, chicken rice soup, sambal), more hard recipes in salads, sides and sauces (hollandaise-family done; mother sauces, stocks, fermented condiments still open); more breakfast hard (croissant-style, brioche); Pacific Islands and east-african sauces; more high-protein and dairy-free breakfasts. Several titles were rejected as too close to catalogue titles, so check for duplicates against slices A and B at merge. A few titles are clumsy and could be tidied at review (for example "Overnight oats" variants, "Pho Ga"). Some originals keep a fish sauce, dried shrimp or anchovy line; those are not tagged vegetarian.
