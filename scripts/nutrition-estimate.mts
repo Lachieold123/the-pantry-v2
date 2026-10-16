@@ -252,6 +252,11 @@ export function lineKcal(l: IngredientLine, aisleOf: (id: string) => string | un
   }
   // Cooked lentils, beans and chickpeas: about 120 kcal/100 g, not the dry 340.
   if (/lentil|split-pea|chickpea|bean/.test(id) && /\bcooked\b/i.test(l.raw)) return (g * 120) / 100;
+  // "800g tinned chickpeas, drained" is the tin weight (whole 400/420/425 g tins); pulses are counted
+  // drained, 60% of that. Other gram amounts ("240g tinned chickpeas, drained") are taken as drained.
+  if (/chickpea|bean|lentil/.test(id) && !/green-bean|bean-sprout/.test(id) && /\b(tin|tins|tinned|can|cans|canned)\b/i.test(l.raw) &&
+      (l.unit === 'g' || l.unit === 'kg') && [400, 420, 425].some((t) => Math.round(g!) % t === 0))
+    g *= 0.6;
   if (isFryingOil(l, g, fried)) g *= 0.15;
   // "bone in" takes 20% off, except for ids whose figure above is already as bought with the bone.
   if (/bone[- ]in/i.test(l.raw) && !AS_BOUGHT_WITH_BONE.test(id)) g *= 0.8;

@@ -74,6 +74,9 @@ describe('nutrition estimate', () => {
   it('counts dried split pulses as dry even when linked to the tinned ingredient', () => {
     assert.equal(lineKcal(line(200, 'g', 'chickpeas', '200g split chickpeas (chana dal), soaked'), noAisle), 680);
     assert.equal(lineKcal(line(240, 'g', 'chickpeas', '240g tinned chickpeas, drained'), noAisle), 264);
+    // Whole-tin weights are counted drained: 800 g of tins is 480 g of chickpeas.
+    assert.equal(lineKcal(line(800, 'g', 'chickpeas', '800g tinned chickpeas, drained'), noAisle), 528);
+    assert.equal(lineKcal(line(400, 'g', 'black-beans', '400g can black beans, drained'), noAisle), lineKcal(line(240, 'g', 'black-beans', '240g black beans'), noAisle));
   });
 
   it('reads "2 x 400g tins" as two tins, drained for pulses', () => {
