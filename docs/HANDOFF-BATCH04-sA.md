@@ -26,3 +26,12 @@ Added 39 recipes in `batch-04-A10.json` to `A13.json` (10, 11, 10, 8), all passi
 - Ingredient DB has no brie, reblochon or shortcrust pastry (use gruyere or homemade pastry). Pissaladiere, Mushroom Risotto and Chicken Leek Ham Pie already existed.
 - Generator: scratchpad `sA/` (lib.py `R()` builder, fill.mts fills diets and kcal, go.sh validates).
 - Still thin: Caribbean, British/Irish, Central European, North African dinners were not touched this session; more French and Italian breakfasts; Greek and Spanish are now reasonable.
+
+## Session 4 addendum (17 October 2026): chunk A14
+
+Added 23 recipes in `batch-04-A14.json` (Caribbean, British/Irish, Central European, North African mains); 22 pass, 1 fails on nutrition only. Total in slice A now 493. Not pushed or merged.
+
+- Nutrition-only failure: `trinidadian-chicken-pelau` (honest estimate ~530 kcal/serve; validator reads ~970). Not scaled.
+- Dropped as duplicates or near-duplicates already in the catalogue: Cuban Sandwich, Toad in the Hole, Scotch Eggs, Kedgeree, Chicken Paprikash, Brown Stew Chicken, Beef Patties, Escovitch Fish, Ropa Vieja, Picadillo, Arroz con Pollo, Bangers and Mash, Cornish Pasty, Lancashire Hotpot, Pierogi Ruskie, Kasespatzle, Lamb Apricot Tagine, Kefta Tagine. Do not retry these.
+- Validator traps: the word "pound" in steps trips the non-metric check; mince needs 75C in notes (not 71C); no parsnip, smoked haddock, prunes or juniper in the ingredient DB.
+- Still untouched: Middle Eastern, American regional and Latin American mains; the generator is scratchpad `lib.py` (R() builder with food-safety codes) and `a14.py`.
