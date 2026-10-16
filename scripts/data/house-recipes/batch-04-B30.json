@@ -1,0 +1,934 @@
+{
+  "about": "House recipes, batch 04 (slice B): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "baked-vegetable-samosas",
+      "title": "Baked Vegetable Samosas",
+      "summary": "Crisp baked pastry triangles filled with spiced potato and peas, easy to make ahead for a snack plate.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 40,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g plain flour",
+            "3 tbsp neutral oil",
+            "1 tsp salt",
+            "1/2 cup water",
+            "300g potato, peeled and diced",
+            "1/2 cup frozen peas",
+            "1 onion, finely chopped",
+            "2 tsp curry powder",
+            "1 tsp cumin seeds",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Rub the flour, salt and 2 tbsp of the oil together, then add the water and knead for 5 minutes until smooth. Cover and rest.",
+        "Boil the potato for 10 minutes until tender, drain well and roughly mash. Fry the onion and cumin seeds in the remaining oil for 5 minutes until soft, stir in the curry powder, potato, peas and lemon juice, then cool.",
+        "Heat the oven to 200°C fan (220°C conventional). Divide the dough into 4 balls and roll each into a 22cm round, then halve each to make 8 half-moons.",
+        "Shape each half into a cone, fill with 2 tbsp of the filling and press the edges closed with a little water.",
+        "Bake on a lined tray for 25 minutes, turning once, until golden and crisp. Cool for 5 minutes before eating."
+      ],
+      "notes": [
+        "Plus 20 minutes resting the dough.",
+        "Snack. Vegan. Per serving: 2 samosas."
+      ],
+      "nutrition": {
+        "kcal": 294,
+        "proteinG": 7,
+        "carbsG": 42,
+        "fatG": 10,
+        "fibreG": 4,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "mushroom-arancini",
+      "title": "Mushroom Arancini",
+      "summary": "Golden crumbed risotto balls with a melting mozzarella centre, baked rather than deep-fried.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 35,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup arborio rice",
+            "3 cups vegetable stock",
+            "200g mushrooms, finely chopped",
+            "1 tbsp olive oil",
+            "1 clove garlic, crushed",
+            "40g vegetarian hard cheese, finely grated",
+            "80g mozzarella, cut into 12 cubes",
+            "1 egg",
+            "1/2 cup plain flour",
+            "1 cup breadcrumbs"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the mushrooms in the olive oil for 6 minutes until dry and golden, add the garlic for 30 seconds, then stir in the rice for 1 minute.",
+        "Add the stock a cup at a time, stirring, for 20 minutes until the rice is tender and creamy. Stir through the parmesan and spread on a tray to cool completely.",
+        "Heat the oven to 200°C fan (220°C conventional). Wrap about 2 tbsp of rice around each mozzarella cube to make 12 balls.",
+        "Roll each ball in the flour, then the beaten egg, then the breadcrumbs.",
+        "Bake on a lined tray for 20 minutes, turning once, until deep golden and hot through the middle."
+      ],
+      "notes": [
+        "Plus 30 minutes cooling the risotto.",
+        "Snack. Vegetarian-style cheese not specified, so it is not tagged vegetarian. Per serving: 3 balls.",
+        "Food safety: the egg coating is cooked through in the oven; wash your hands and the bench after handling raw egg."
+      ],
+      "nutrition": {
+        "kcal": 435,
+        "proteinG": 16,
+        "carbsG": 62,
+        "fatG": 13,
+        "fibreG": 3,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "onion-pakoras",
+      "title": "Onion Pakoras",
+      "summary": "Crunchy chickpea-flour fritters packed with onion and spice, shallow-fried and best eaten hot.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup besan (chickpea flour)",
+            "3 onions, thinly sliced",
+            "1 tsp ground cumin",
+            "1 tsp ground turmeric",
+            "1 tsp chilli flakes",
+            "1 tsp salt",
+            "1/2 cup water",
+            "1/2 cup neutral oil",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the onion with the salt and leave for 10 minutes so it softens and releases juice.",
+        "Mix in the besan, cumin, turmeric and chilli, adding the water a splash at a time until the batter just coats the onion.",
+        "Heat the oil in a wide frying pan over medium heat until a drop of batter sizzles straight away.",
+        "Fry heaped tablespoons for 3 to 4 minutes each side until deep golden and crisp, in 3 batches, draining on paper towel.",
+        "Squeeze over the lemon juice and serve hot."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: 4 pakoras."
+      ],
+      "nutrition": {
+        "kcal": 278,
+        "proteinG": 9,
+        "carbsG": 26,
+        "fatG": 14,
+        "fibreG": 6,
+        "sodiumMg": 590
+      }
+    },
+    {
+      "id": "salmon-onigiri",
+      "title": "Salmon Onigiri",
+      "summary": "Hand-pressed Japanese rice triangles with a flaked salmon centre wrapped in nori, ideal for the lunchbox.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups short-grain rice",
+            "3 cups water",
+            "150g salmon fillet",
+            "1 tsp salt",
+            "2 tsp soy sauce",
+            "4 sheets nori, halved",
+            "1 tbsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Rinse the rice until the water runs clear, then simmer covered with the water for 15 minutes until tender, and rest covered for 10 minutes.",
+        "Pan-cook the salmon for 4 minutes each side until opaque and flakes easily, then flake it with the soy sauce.",
+        "Wet your hands, rub with a little salt, and press a quarter of the rice into a flat cup in your palm.",
+        "Add a spoonful of salmon, cover with more rice and press into a firm triangle. Make 8 onigiri.",
+        "Roll in the sesame seeds and wrap each with a strip of nori just before eating."
+      ],
+      "notes": [
+        "Plus 10 minutes resting the rice.",
+        "Snack. Per serving: 2 onigiri.",
+        "Food safety: cook the salmon until opaque all through, and keep onigiri in the fridge and eat within 24 hours."
+      ],
+      "nutrition": {
+        "kcal": 342,
+        "proteinG": 15,
+        "carbsG": 56,
+        "fatG": 6,
+        "fibreG": 2,
+        "sodiumMg": 760
+      }
+    },
+    {
+      "id": "pork-and-cabbage-spring-rolls",
+      "title": "Pork and Cabbage Spring Rolls",
+      "summary": "Crisp baked rolls filled with juicy pork mince, cabbage and ginger, served with a sharp vinegar dip.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 35,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g pork mince",
+            "2 cups finely shredded cabbage",
+            "1 carrot, grated",
+            "2 tsp grated ginger",
+            "2 tbsp soy sauce",
+            "1 tsp sesame oil",
+            "8 spring roll wrappers",
+            "1 tbsp neutral oil",
+            "2 tbsp rice vinegar"
+          ]
+        }
+      ],
+      "steps": [
+        "Stir-fry the pork in a hot pan for 5 minutes, breaking it up, until no pink remains and it reaches at least 75°C.",
+        "Add the cabbage, carrot and ginger and cook for 3 minutes until wilted, then stir in half the soy sauce and the sesame oil. Cool for 10 minutes.",
+        "Heat the oven to 200°C fan (220°C conventional). Spoon 3 tbsp of filling onto each wrapper, fold in the sides and roll up tightly, sealing with a little water.",
+        "Brush with the neutral oil and bake for 15 minutes, turning once, until golden and crisp.",
+        "Mix the remaining soy sauce with the rice vinegar and serve alongside."
+      ],
+      "notes": [
+        "Snack. Per serving: 2 rolls.",
+        "Food safety: cook pork mince to at least 75°C; cool leftovers within 1 hour and refrigerate."
+      ],
+      "nutrition": {
+        "kcal": 312,
+        "proteinG": 15,
+        "carbsG": 30,
+        "fatG": 14,
+        "fibreG": 3,
+        "sodiumMg": 880
+      }
+    },
+    {
+      "id": "ham-and-cheese-croquetas",
+      "title": "Ham and Cheese Croquetas",
+      "summary": "Creamy bechamel croquetas with ham and cheddar and a crisp crumb, a Spanish bar classic.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 45,
+      "cookMinutes": 10,
+      "servings": 6,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "50g butter",
+            "1/2 cup plain flour",
+            "2 cups milk",
+            "100g ham, finely chopped",
+            "60g cheddar, grated",
+            "1/4 tsp nutmeg",
+            "2 eggs",
+            "1 cup breadcrumbs",
+            "1/2 cup neutral oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Melt the butter, stir in 1/4 cup of the flour for 2 minutes, then whisk in the milk and stir for 8 minutes until very thick.",
+        "Fold in the ham, cheddar and nutmeg, then chill in a shallow dish for at least 2 hours until firm.",
+        "Shape into 18 small logs using wet hands. Roll in the remaining flour, the beaten eggs, then the breadcrumbs.",
+        "Shallow-fry in the oil in batches over medium heat for 2 minutes, turning, until deep golden and hot through the middle.",
+        "Drain on paper towel and serve warm."
+      ],
+      "notes": [
+        "Plus 2 hours chilling.",
+        "Snack. Per serving: 3 croquetas.",
+        "Food safety: wash hands after handling raw egg and keep the chilled mix refrigerated; eat leftovers within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 319,
+        "proteinG": 11,
+        "carbsG": 30,
+        "fatG": 17,
+        "fibreG": 1,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "potato-aloo-tikki",
+      "title": "Potato Aloo Tikki",
+      "summary": "Spiced potato patties with a crisp golden crust, served with yoghurt and chutney.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 25,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g potato",
+            "1/2 cup frozen peas",
+            "1 tsp ground cumin",
+            "1 tsp garam masala",
+            "1/2 tsp chilli flakes",
+            "2 tbsp cornflour",
+            "1 tsp salt",
+            "3 tbsp neutral oil",
+            "1/2 cup natural yoghurt"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potato whole for 20 minutes until a knife slides in easily, then peel, mash and cool for 10 minutes.",
+        "Mix with the peas, spices, cornflour and salt.",
+        "Shape into 8 patties about 1.5cm thick.",
+        "Fry in the oil over medium heat for 4 minutes each side until a crisp golden crust forms.",
+        "Serve hot with the yoghurt and a squeeze of lemon if you like."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 tikki."
+      ],
+      "nutrition": {
+        "kcal": 283,
+        "proteinG": 8,
+        "carbsG": 40,
+        "fatG": 9,
+        "fibreG": 5,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "lamb-and-mint-sausage-rolls",
+      "title": "Lamb and Mint Sausage Rolls",
+      "summary": "Flaky sausage rolls with spiced lamb mince and fresh mint, cut into party-size pieces.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 30,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g lamb mince",
+            "1 onion, finely grated",
+            "1/2 cup breadcrumbs",
+            "2 tbsp chopped mint",
+            "1 tsp ground cumin",
+            "1 tsp salt",
+            "3 sheets puff pastry",
+            "1 egg, beaten",
+            "1 tbsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional). Mix the lamb, onion, breadcrumbs, mint, cumin and salt.",
+        "Cut the pastry sheets in half, run a log of filling down each and roll up, sealing the join underneath.",
+        "Brush with the beaten egg, scatter with sesame seeds and cut each log into 4 pieces to make 24.",
+        "Bake on lined trays for 30 minutes until the pastry is deep golden and puffed.",
+        "Check the middle of one roll reads at least 75°C before serving."
+      ],
+      "notes": [
+        "Snack. Per serving: 4 pieces.",
+        "Food safety: lamb mince must reach at least 75°C all through; refrigerate leftovers within 1 hour and eat within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 386,
+        "proteinG": 18,
+        "carbsG": 24,
+        "fatG": 24,
+        "fibreG": 1,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "prawn-toast-fingers",
+      "title": "Prawn Toast Fingers",
+      "summary": "Crisp sesame-topped toast spread with a prawn and ginger paste, pan-fried until golden.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g raw prawns, peeled",
+            "4 slices white bread",
+            "1 egg white",
+            "2 tsp grated ginger",
+            "1 tsp cornflour",
+            "1 tsp soy sauce",
+            "3 tbsp sesame seeds",
+            "1/4 cup neutral oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Blitz the prawns, egg white, ginger, cornflour and soy sauce into a rough paste.",
+        "Cut each slice of bread into 3 fingers and spread the paste thickly over one side. Press the sesame seeds on top.",
+        "Heat the oil in a frying pan over medium heat and fry paste-side down for 2 minutes until golden.",
+        "Turn and fry for 2 minutes more until the bread is crisp and the prawn reads at least 63°C.",
+        "Drain on paper towel and serve hot."
+      ],
+      "notes": [
+        "Snack. Per serving: 3 fingers.",
+        "Food safety: cook prawns until opaque and at least 63°C; keep raw seafood refrigerated and cook within a day."
+      ],
+      "nutrition": {
+        "kcal": 274,
+        "proteinG": 17,
+        "carbsG": 19,
+        "fatG": 14,
+        "fibreG": 2,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "masala-vada",
+      "title": "Masala Vada",
+      "summary": "Crunchy South Indian lentil fritters with onion, chilli and fennel.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup split chickpeas (chana dal), soaked for 4 hours",
+            "1 onion, finely chopped",
+            "2 green chillies, finely chopped",
+            "1 tsp fennel seeds",
+            "1 tbsp chopped coriander",
+            "1 tsp salt",
+            "1/2 cup neutral oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Drain the dal and blitz half of it to a coarse paste, leaving the rest whole for crunch.",
+        "Mix with the onion, chilli, fennel, coriander and salt.",
+        "Shape into 12 flat patties.",
+        "Shallow-fry in the oil over medium heat for 3 to 4 minutes each side until deep golden and crisp, draining on paper towel.",
+        "Serve warm, with chutney or yoghurt on the side, within 20 minutes of frying while the crust is crisp."
+      ],
+      "notes": [
+        "Plus 4 hours soaking.",
+        "Snack. Vegan. Per serving: 3 vadas."
+      ],
+      "nutrition": {
+        "kcal": 265,
+        "proteinG": 11,
+        "carbsG": 27,
+        "fatG": 11,
+        "fibreG": 7,
+        "sodiumMg": 550
+      }
+    },
+    {
+      "id": "baked-lamb-kibbeh-bites",
+      "title": "Baked Lamb Kibbeh Bites",
+      "summary": "Torpedo-shaped bulgur shells with a spiced lamb and pine nut filling, baked until crisp outside.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 50,
+      "cookMinutes": 25,
+      "servings": 6,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup fine bulgur",
+            "300g lamb mince",
+            "1 onion, grated",
+            "1 tsp allspice",
+            "1 tsp salt",
+            "200g lamb mince for the filling",
+            "1 onion, finely chopped",
+            "1/4 cup pine nuts",
+            "1 tsp ground cinnamon",
+            "2 tbsp olive oil",
+            "1/2 cup natural yoghurt"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the bulgur in cold water for 15 minutes, drain and squeeze dry. Knead with the first lamb, grated onion, allspice and salt, or blitz in a processor, until a smooth paste forms.",
+        "Fry the chopped onion in 1 tbsp of the oil for 4 minutes, add the filling lamb and cook for 6 minutes until no pink remains. Stir in the pine nuts and cinnamon and cool.",
+        "Heat the oven to 200°C fan (220°C conventional). With wet hands, flatten a golf-ball of shell mix, fill, and close into a torpedo. Make 18.",
+        "Brush with the remaining oil and bake on a lined tray for 25 minutes, turning once, until browned and at least 75°C in the middle.",
+        "Serve warm with the yoghurt."
+      ],
+      "notes": [
+        "Plus 15 minutes soaking.",
+        "Snack. Per serving: 3 kibbeh.",
+        "Food safety: lamb mince must reach at least 75°C; refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 345,
+        "proteinG": 21,
+        "carbsG": 25,
+        "fatG": 17,
+        "fibreG": 4,
+        "sodiumMg": 560
+      }
+    },
+    {
+      "id": "potato-knish",
+      "title": "Potato Knish",
+      "summary": "Baked pastry parcels of soft potato and caramelised onion, an Eastern European deli favourite.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 40,
+      "cookMinutes": 40,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups plain flour",
+            "1 tsp baking powder",
+            "1/2 cup neutral oil",
+            "1/2 cup water",
+            "1 tsp salt",
+            "500g potato, peeled and diced",
+            "2 onions, thinly sliced",
+            "1 tbsp butter",
+            "1/2 tsp black pepper",
+            "1 egg, beaten"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour, baking powder, 1/4 cup of the oil, water and half the salt into a dough, kneading for 3 minutes. Rest for 20 minutes.",
+        "Boil the potato for 12 minutes until tender, drain and mash. Cook the onion with the butter and remaining oil for 15 minutes until deep golden, then mix in the potato, pepper and remaining salt.",
+        "Heat the oven to 180°C fan (200°C conventional). Roll the dough into a 30 x 40cm rectangle and spoon the filling in a log along the long side.",
+        "Roll up, cut into 6 pieces and pinch the cut ends closed, standing them upright. Brush with the egg.",
+        "Bake for 40 minutes until golden and crisp at the edges."
+      ],
+      "notes": [
+        "Plus 20 minutes resting the dough.",
+        "Snack. Vegetarian. Per serving: 1 knish.",
+        "Food safety: wash hands after handling raw egg."
+      ],
+      "nutrition": {
+        "kcal": 410,
+        "proteinG": 7,
+        "carbsG": 49,
+        "fatG": 20,
+        "fibreG": 3,
+        "sodiumMg": 480
+      }
+    },
+    {
+      "id": "khaman-dhokla",
+      "title": "Khaman Dhokla",
+      "summary": "Light, spongy steamed chickpea-flour squares tempered with mustard seeds and sesame.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup besan (chickpea flour)",
+            "1 tbsp semolina",
+            "1 tsp sugar",
+            "1/2 tsp ground turmeric",
+            "1 tsp salt",
+            "3/4 cup water",
+            "1 tbsp lemon juice",
+            "1 tsp bicarbonate of soda",
+            "2 tbsp neutral oil",
+            "1 tsp mustard seeds",
+            "1 tbsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the besan, semolina, sugar, turmeric, salt, water and lemon juice into a smooth batter.",
+        "Stir in the bicarbonate of soda until it froths, and pour at once into a greased 18cm tin.",
+        "Steam over boiling water, covered, for 15 minutes until a skewer comes out clean and the top is springy.",
+        "Heat the oil, pop the mustard seeds for 30 seconds, add the sesame seeds and pour over the dhokla.",
+        "Cool for 10 minutes and cut into 12 squares."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: 2 squares."
+      ],
+      "nutrition": {
+        "kcal": 153,
+        "proteinG": 6,
+        "carbsG": 15,
+        "fatG": 7,
+        "fibreG": 3,
+        "sodiumMg": 430
+      }
+    },
+    {
+      "id": "baked-cinnamon-churros",
+      "title": "Baked Cinnamon Churros",
+      "summary": "Ridged choux sticks baked until crisp, rolled in cinnamon sugar and served with melted chocolate.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup water",
+            "50g butter",
+            "1 tbsp caster sugar",
+            "1/4 tsp salt",
+            "1 cup plain flour",
+            "2 eggs",
+            "1/4 cup caster sugar",
+            "2 tsp ground cinnamon",
+            "80g dark chocolate",
+            "1/4 cup milk"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional). Bring the water, butter, 1 tbsp sugar and salt to the boil, tip in the flour and beat for 2 minutes until a smooth ball forms.",
+        "Cool for 5 minutes, then beat in the eggs one at a time until glossy.",
+        "Pipe 12cm lengths onto a lined tray with a star nozzle and bake for 20 minutes until golden and crisp.",
+        "Toss in the cinnamon and the remaining sugar while still warm.",
+        "Melt the chocolate with the milk and serve for dipping."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 3 churros with chocolate.",
+        "Food safety: wash hands after handling raw egg."
+      ],
+      "nutrition": {
+        "kcal": 373,
+        "proteinG": 8,
+        "carbsG": 46,
+        "fatG": 17,
+        "fibreG": 2,
+        "sodiumMg": 220
+      }
+    },
+    {
+      "id": "classic-lamingtons",
+      "title": "Classic Lamingtons",
+      "summary": "Squares of light sponge dipped in chocolate icing and rolled in coconut.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 40,
+      "cookMinutes": 30,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "125g butter",
+            "3/4 cup caster sugar",
+            "3 eggs",
+            "2 cups self-raising flour",
+            "1/2 cup milk",
+            "1 tsp vanilla extract",
+            "2 cups icing sugar",
+            "1/3 cup cocoa",
+            "1/2 cup milk",
+            "1 tbsp butter",
+            "2 cups desiccated coconut"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 170°C fan (190°C conventional) and line a 20cm square tin. Beat the butter and caster sugar for 4 minutes until pale, then beat in the eggs one at a time with the vanilla.",
+        "Fold in the flour and first measure of milk until just combined and spread into the tin.",
+        "Bake for 30 minutes until a skewer comes out clean. Cool fully, ideally overnight in an airtight container, then cut into 12 squares.",
+        "Sift the icing sugar and cocoa, then stir with the second measure of milk and the 1 tbsp butter over low heat until smooth and runny.",
+        "Dip each square in the icing, let the excess drip off and roll in coconut. Set for 30 minutes."
+      ],
+      "notes": [
+        "Plus overnight cooling and 30 minutes setting.",
+        "Snack. Vegetarian. Per serving: 1 lamington.",
+        "Food safety: wash hands after handling raw egg; the cake is baked until a skewer is clean."
+      ],
+      "nutrition": {
+        "kcal": 385,
+        "proteinG": 5,
+        "carbsG": 52,
+        "fatG": 17,
+        "fibreG": 2,
+        "sodiumMg": 190
+      }
+    },
+    {
+      "id": "honey-walnut-baklava",
+      "title": "Honey Walnut Baklava",
+      "summary": "Crisp filo layers filled with spiced walnuts and soaked in lemon honey syrup.",
+      "cuisine": "turkish",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 40,
+      "cookMinutes": 40,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g walnuts, finely chopped",
+            "1 tsp ground cinnamon",
+            "12 sheets filo pastry",
+            "100g butter, melted",
+            "3/4 cup honey",
+            "1/2 cup water",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional). Mix the walnuts with the cinnamon.",
+        "Brush a 20cm square tin with butter and layer 6 filo sheets, brushing each with butter and trimming to fit.",
+        "Spread over the walnuts, then top with the remaining 6 sheets, brushing each with butter. Cut into 16 diamonds right through.",
+        "Bake for 40 minutes until deep golden and crisp.",
+        "Simmer the honey, water and lemon juice for 8 minutes until slightly thick, pour over the hot baklava and cool for 3 hours."
+      ],
+      "notes": [
+        "Plus 3 hours soaking.",
+        "Snack. Vegetarian. Per serving: 2 pieces."
+      ],
+      "nutrition": {
+        "kcal": 362,
+        "proteinG": 6,
+        "carbsG": 34,
+        "fatG": 22,
+        "fibreG": 2,
+        "sodiumMg": 160
+      }
+    },
+    {
+      "id": "caramel-slice",
+      "title": "Caramel Slice",
+      "summary": "Three layers of shortbread base, soft condensed milk caramel and dark chocolate.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup plain flour",
+            "1 cup desiccated coconut",
+            "1/2 cup brown sugar",
+            "125g butter, melted",
+            "400g condensed milk",
+            "60g butter",
+            "2 tbsp golden syrup",
+            "200g dark chocolate",
+            "1 tbsp neutral oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional). Mix the flour, coconut, sugar and melted butter, press into a lined 20cm square tin and bake for 15 minutes until lightly golden.",
+        "Stir the condensed milk, 60g butter and golden syrup over medium heat for 10 minutes until thick and golden, constantly stirring.",
+        "Pour over the base and chill for 30 minutes.",
+        "Melt the chocolate with the oil and spread over the caramel. Chill for 2 hours.",
+        "Cut into 16 small squares with a hot knife and keep refrigerated."
+      ],
+      "notes": [
+        "Plus 2 hours 30 minutes chilling.",
+        "Snack. Vegetarian. Per serving: 2 squares."
+      ],
+      "nutrition": {
+        "kcal": 530,
+        "proteinG": 6,
+        "carbsG": 58,
+        "fatG": 30,
+        "fibreG": 2,
+        "sodiumMg": 180
+      }
+    },
+    {
+      "id": "peanut-butter-sultana-balls",
+      "title": "Peanut Butter Sultana Balls",
+      "summary": "No-bake bites of sultanas, oats and peanut butter, rolled in coconut.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup sultanas",
+            "1 cup rolled oats",
+            "1/2 cup peanut butter",
+            "2 tbsp honey",
+            "1/4 cup desiccated coconut"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the sultanas in hot water for 10 minutes and drain.",
+        "Blitz the sultanas, oats, peanut butter and honey into a sticky crumb that holds when squeezed.",
+        "Roll the mixture into 18 balls, squeezing firmly until each holds its shape.",
+        "Roll in the coconut until evenly coated.",
+        "Chill for 20 minutes until firm, and keep in the fridge for up to 5 days."
+      ],
+      "notes": [
+        "Plus 20 minutes chilling.",
+        "Snack. Vegetarian. Per serving: 3 balls."
+      ],
+      "nutrition": {
+        "kcal": 251,
+        "proteinG": 6,
+        "carbsG": 30,
+        "fatG": 11,
+        "fibreG": 4,
+        "sodiumMg": 60
+      }
+    }
+  ]
+}
