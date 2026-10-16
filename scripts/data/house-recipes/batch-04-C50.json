@@ -1,0 +1,1382 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "danish-brown-butter-carrots-with-parsley",
+      "title": "Danish Brown-Butter Carrots with Parsley",
+      "summary": "Carrot batons glazed in nutty brown butter, honey and lemon.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g carrots, cut into batons",
+            "40g butter",
+            "1 tbsp honey",
+            "1 tbsp lemon juice",
+            "2 tbsp chopped parsley",
+            "1/4 tsp salt",
+            "1/2 cup water"
+          ]
+        }
+      ],
+      "steps": [
+        "Put the carrots, water and salt in a wide frying pan, cover and simmer for 8 minutes until the carrots are just tender.",
+        "Uncover and boil off the remaining water until the pan is nearly dry.",
+        "Add the butter and cook for 2 minutes, stirring, until the butter foams and smells nutty.",
+        "Stir in the honey and lemon juice and toss for 1 minute until the carrots are glossy, then scatter with parsley."
+      ],
+      "notes": [
+        "Pairs well with roast chicken, fish or pork.",
+        "Keeps in the fridge for 3 days."
+      ],
+      "nutrition": {
+        "kcal": 150,
+        "proteinG": 2,
+        "carbsG": 19,
+        "fatG": 8,
+        "fibreG": 4,
+        "sodiumMg": 320
+      }
+    },
+    {
+      "id": "swedish-honey-roasted-swede-wedges",
+      "title": "Swedish Honey-Roasted Swede Wedges",
+      "summary": "Sweet, sticky roast swede with thyme, a classic Nordic winter side.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g swede, peeled and cut into wedges",
+            "2 tbsp olive oil",
+            "1 tbsp honey",
+            "1 tsp thyme leaves",
+            "1/4 tsp salt",
+            "Black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200C and line a tray with baking paper.",
+        "Toss the swede with the oil, thyme, salt and pepper and spread in a single layer.",
+        "Roast for 30 minutes, turning once, until tender and browned at the edges.",
+        "Drizzle with the honey and roast for 8 minutes more until sticky and caramelised."
+      ],
+      "notes": [
+        "Swede can be tough to cut, so slice a flat side first for a stable base."
+      ],
+      "nutrition": {
+        "kcal": 140,
+        "proteinG": 2,
+        "carbsG": 19,
+        "fatG": 7,
+        "fibreG": 4,
+        "sodiumMg": 180
+      }
+    },
+    {
+      "id": "danish-sweet-sour-red-cabbage-with-apple",
+      "title": "Danish Sweet-Sour Red Cabbage with Apple",
+      "summary": "Slow-braised red cabbage with apple, cinnamon and vinegar, served warm or cold.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g red cabbage, finely shredded",
+            "2 apples, grated",
+            "1 brown onion, thinly sliced",
+            "2 tbsp butter",
+            "3 tbsp red wine vinegar",
+            "2 tbsp brown sugar",
+            "1/2 tsp ground cinnamon",
+            "1/2 tsp salt",
+            "1 cup water"
+          ]
+        }
+      ],
+      "steps": [
+        "Melt the butter in a large saucepan over medium heat and cook the onion for 5 minutes until soft.",
+        "Add the cabbage, apple, cinnamon, sugar, salt and water and stir well.",
+        "Cover and simmer on low heat for 35 minutes, stirring now and then, until the cabbage is very tender.",
+        "Stir in the vinegar and cook uncovered for 5 minutes until the liquid is syrupy."
+      ],
+      "notes": [
+        "Flavour improves overnight; reheat gently.",
+        "Freezes well for up to 3 months."
+      ],
+      "nutrition": {
+        "kcal": 120,
+        "proteinG": 2,
+        "carbsG": 20,
+        "fatG": 4,
+        "fibreG": 4,
+        "sodiumMg": 260
+      }
+    },
+    {
+      "id": "garlic-walnut-paste-with-coriander-for-roast-vegetables",
+      "title": "Garlic Walnut Paste with Coriander for Roast Vegetables",
+      "summary": "A garlicky walnut sauce with coriander and vinegar for roast vegetables, chicken or fish.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g walnuts",
+            "3 cloves garlic",
+            "1/2 cup coriander leaves",
+            "1 tsp ground coriander",
+            "2 tbsp white wine vinegar",
+            "1/2 cup water",
+            "1/2 tsp salt",
+            "1/4 tsp chilli flakes"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the walnuts, garlic, coriander leaves, ground coriander, chilli and salt until a coarse paste forms.",
+        "Add the vinegar and water a little at a time and blend until a thick, spoonable sauce forms.",
+        "Taste and add a pinch more salt if needed."
+      ],
+      "notes": [
+        "Keeps in a clean jar in the fridge for 4 days; thin with water if it thickens.",
+        "Serve about 2 tablespoons per person."
+      ],
+      "nutrition": {
+        "kcal": 135,
+        "proteinG": 3,
+        "carbsG": 3,
+        "fatG": 12,
+        "fibreG": 2,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "warm-green-beans-in-garlic-walnut-paste",
+      "title": "Warm Green Beans in Garlic Walnut Paste",
+      "summary": "Tender green beans in a garlicky walnut and coriander dressing, served warm or at room temperature.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 6,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g green beans, trimmed",
+            "80g walnuts",
+            "2 cloves garlic",
+            "2 tbsp red wine vinegar",
+            "1 tbsp olive oil",
+            "1 tsp ground coriander",
+            "2 tbsp coriander leaves",
+            "1/4 tsp salt",
+            "2 tbsp water"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the beans in salted water for 5 minutes until tender but still bright green, then drain.",
+        "Blend the walnuts, garlic, vinegar, oil, ground coriander, salt and water until a thick, rough paste forms.",
+        "Toss the warm beans with the walnut paste until evenly coated.",
+        "Scatter with coriander leaves and serve."
+      ],
+      "notes": [
+        "Also good as a cold lunchbox side."
+      ],
+      "nutrition": {
+        "kcal": 204,
+        "proteinG": 5,
+        "carbsG": 10,
+        "fatG": 16,
+        "fibreG": 4,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "latvian-grated-carrot-salad-with-sour-cream-and-sultanas",
+      "title": "Latvian Grated Carrot Salad with Sour Cream and Sultanas",
+      "summary": "A sweet and creamy carrot salad with dill, common on Baltic tables.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g carrots, coarsely grated",
+            "60g sultanas",
+            "1/2 cup sour cream",
+            "1 tbsp lemon juice",
+            "1 tbsp chopped dill",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the sour cream, lemon juice, dill and salt in a large bowl until smooth.",
+        "Fold through the grated carrot and sultanas until evenly coated.",
+        "Taste, adjust the lemon and serve cold."
+      ],
+      "notes": [
+        "Best eaten within 2 days; the carrot softens as it sits."
+      ],
+      "nutrition": {
+        "kcal": 155,
+        "proteinG": 2,
+        "carbsG": 25,
+        "fatG": 6,
+        "fibreG": 4,
+        "sodiumMg": 250
+      }
+    },
+    {
+      "id": "creamy-chilled-avocado-soup-with-coriander",
+      "title": "Creamy Chilled Avocado Soup with Coriander",
+      "summary": "A no-cook blended soup, creamy and bright, for warm days.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 ripe avocados, flesh scooped",
+            "1 Lebanese cucumber, chopped",
+            "500ml cold low-salt vegetable stock",
+            "1/2 cup plain yoghurt",
+            "Juice of 2 limes",
+            "1 spring onion, sliced",
+            "2 tbsp coriander leaves",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the avocado, cucumber, stock, yoghurt, lime juice, spring onion and salt until completely smooth.",
+        "Taste and add more lime or salt if needed.",
+        "Ladle into bowls and top with coriander."
+      ],
+      "notes": [
+        "The colour browns in the air, so serve the same day.",
+        "Use cold stock for a properly chilled soup."
+      ],
+      "nutrition": {
+        "kcal": 155,
+        "proteinG": 3,
+        "carbsG": 10,
+        "fatG": 12,
+        "fibreG": 5,
+        "sodiumMg": 310
+      }
+    },
+    {
+      "id": "guyanese-split-pea-soup-with-flour-spinners",
+      "title": "Guyanese Split Pea Soup with Flour Spinners",
+      "summary": "A hearty yellow split pea soup with thyme, cumin and little rolled flour dumplings.",
+      "cuisine": "caribbean",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 60,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g yellow split peas, rinsed",
+            "2 tbsp olive oil",
+            "1 brown onion, diced",
+            "3 cloves garlic, crushed",
+            "1 carrot, diced",
+            "1 tsp ground cumin",
+            "1 tsp dried thyme",
+            "2 litres water",
+            "1 tsp salt",
+            "150g plain flour",
+            "1/4 tsp salt",
+            "1/3 cup water"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a large pot and cook the onion, garlic and carrot for 5 minutes until soft.",
+        "Add the cumin and thyme for 30 seconds until fragrant, then add the split peas, the 2 litres of water and 1 tsp salt.",
+        "Simmer for 45 minutes, stirring now and then, until the peas have broken down into a thick soup.",
+        "Mix the flour, 1/4 tsp salt and 1/3 cup water into a firm dough, roll into thin finger-length spinners and drop them into the soup.",
+        "Simmer for 10 minutes until the spinners are cooked through and the soup is thick."
+      ],
+      "notes": [
+        "Add a splash of water when reheating; the soup thickens as it cools.",
+        "Freezes well without the spinners."
+      ],
+      "nutrition": {
+        "kcal": 317,
+        "proteinG": 15,
+        "carbsG": 53,
+        "fatG": 5,
+        "fibreG": 12,
+        "sodiumMg": 410
+      }
+    },
+    {
+      "id": "bajan-sweet-potato-soup-with-ginger-and-coconut",
+      "title": "Bajan Sweet Potato Soup with Ginger and Coconut",
+      "summary": "A velvety orange soup with fresh ginger, coconut milk and a squeeze of lime.",
+      "cuisine": "caribbean",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g sweet potato, peeled and cubed",
+            "1 tbsp olive oil",
+            "1 brown onion, diced",
+            "2 cloves garlic, crushed",
+            "3cm fresh ginger, grated",
+            "750ml low-salt vegetable stock",
+            "1/2 cup coconut milk",
+            "1 tbsp lime juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a large pot and cook the onion, garlic and ginger for 5 minutes until soft.",
+        "Add the sweet potato and stock, cover and simmer for 20 minutes until the sweet potato is very soft.",
+        "Blend with a stick blender until smooth, stir in the coconut milk and heat for 3 minutes until just steaming.",
+        "Finish with the lime juice and season to taste."
+      ],
+      "notes": [
+        "Freezes well for up to 3 months without the coconut milk; add it when reheating."
+      ],
+      "nutrition": {
+        "kcal": 250,
+        "proteinG": 4,
+        "carbsG": 39,
+        "fatG": 9,
+        "fibreG": 6,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "swedish-dill-and-mustard-potato-salad",
+      "title": "Swedish Dill and Mustard Potato Salad",
+      "summary": "Warm waxy potatoes in a tangy mustard and olive oil dressing with red onion and dill, no mayo.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g waxy potatoes, halved",
+            "3 tbsp olive oil",
+            "1 tbsp wholegrain mustard",
+            "1 tbsp white wine vinegar",
+            "1/2 red onion, finely diced",
+            "3 tbsp chopped dill",
+            "1/2 tsp salt",
+            "Black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes in salted water for 18 minutes until a knife slips in easily, then drain.",
+        "Whisk the oil, mustard, vinegar, salt and pepper in a large bowl.",
+        "Add the warm potatoes and onion and toss gently until coated.",
+        "Fold through the dill and serve warm or at room temperature."
+      ],
+      "notes": [
+        "Travels well in a lunchbox; it does not need keeping cold for a few hours but is best chilled for longer transport."
+      ],
+      "nutrition": {
+        "kcal": 170,
+        "proteinG": 3,
+        "carbsG": 25,
+        "fatG": 7,
+        "fibreG": 3,
+        "sodiumMg": 235
+      }
+    },
+    {
+      "id": "turmeric-silverbeet-with-ginger-ethiopian-style",
+      "title": "Turmeric Silverbeet with Ginger, Ethiopian Style",
+      "summary": "Silverbeet gently braised with garlic, ginger and turmeric in the style of gomen.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g silverbeet, stems and leaves chopped",
+            "2 tbsp olive oil",
+            "1 brown onion, diced",
+            "4 cloves garlic, crushed",
+            "15g fresh ginger, grated",
+            "1/2 tsp ground turmeric",
+            "1/4 cup water",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a wide pan and cook the onion for 6 minutes until soft and golden.",
+        "Add the garlic, ginger and turmeric and cook for 1 minute until fragrant.",
+        "Add the silverbeet stems, water and salt, cover and cook for 5 minutes until the stems soften.",
+        "Add the leaves and cook uncovered for 6 minutes, stirring, until tender and the liquid has cooked off."
+      ],
+      "notes": [
+        "Serve with flatbread, lentils or rice.",
+        "Silverbeet is naturally salty, so taste before adding more salt."
+      ],
+      "nutrition": {
+        "kcal": 110,
+        "proteinG": 3,
+        "carbsG": 10,
+        "fatG": 7,
+        "fibreG": 3,
+        "sodiumMg": 460
+      }
+    },
+    {
+      "id": "ugandan-rolex-egg-and-chapati-rolls",
+      "title": "Ugandan Rolex Egg and Chapati Rolls",
+      "summary": "Street-style breakfast rolls of folded omelette, cabbage and tomato in warm flatbread.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 eggs",
+            "2 tbsp vegetable oil",
+            "4 wholemeal flatbreads",
+            "150g cabbage, finely shredded",
+            "2 tomatoes, diced",
+            "1 small brown onion, finely diced",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the eggs with the salt and stir through the onion and tomato.",
+        "Heat half the oil in a frying pan and cook half the egg mixture for 3 minutes, flipping once, until fully set; repeat with the rest.",
+        "Warm the flatbreads in a dry pan for 30 seconds each side until soft.",
+        "Lay an omelette on each flatbread, top with cabbage and roll up tightly."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until fully set with no runny egg, especially for children, older adults or anyone pregnant.",
+        "Eat the same day."
+      ],
+      "nutrition": {
+        "kcal": 402,
+        "proteinG": 19,
+        "carbsG": 36,
+        "fatG": 21,
+        "fibreG": 6,
+        "sodiumMg": 610
+      }
+    },
+    {
+      "id": "trinidadian-curried-channa-breakfast-with-flatbread",
+      "title": "Trinidadian Curried Channa Breakfast with Flatbread",
+      "summary": "Spiced curried chickpeas with tomato, scooped up with toasted flatbread.",
+      "cuisine": "caribbean",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g canned chickpeas, drained and rinsed",
+            "1 tbsp vegetable oil",
+            "1 brown onion, diced",
+            "3 cloves garlic, crushed",
+            "1 tbsp curry powder",
+            "1 tomato, diced",
+            "200ml water",
+            "1/2 tsp salt",
+            "2 tbsp chopped coriander",
+            "4 wholemeal flatbreads"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a pot and cook the onion and garlic for 5 minutes until soft.",
+        "Stir in the curry powder for 1 minute until fragrant, then add the tomato and cook for 3 minutes until it breaks down.",
+        "Add the chickpeas, water and salt and simmer for 10 minutes, mashing a few chickpeas, until thick.",
+        "Toast the flatbreads in a dry pan until warm and lightly browned, then serve with the channa and coriander."
+      ],
+      "notes": [
+        "Keeps in the fridge for 4 days and tastes better the next day."
+      ],
+      "nutrition": {
+        "kcal": 415,
+        "proteinG": 17,
+        "carbsG": 66,
+        "fatG": 9,
+        "fibreG": 12,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "toasted-sesame-and-rice-vinegar-slaw-dressing",
+      "title": "Toasted Sesame and Rice Vinegar Slaw Dressing",
+      "summary": "A quick Asian-style dressing for crunchy cabbage and carrot slaw.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp sesame oil",
+            "3 tbsp rice vinegar",
+            "2 tbsp soy sauce",
+            "1 tbsp honey",
+            "1 tbsp toasted sesame seeds",
+            "1 tsp grated fresh ginger",
+            "1 clove garlic, finely grated"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the sesame oil, rice vinegar, soy sauce, honey, ginger and garlic in a bowl until the honey dissolves.",
+        "Stir in the sesame seeds and taste, adding a little more vinegar if you like it sharper.",
+        "Toss through shredded cabbage, carrot and spring onion just before serving."
+      ],
+      "notes": [
+        "Makes enough for about 600g of shredded vegetables.",
+        "Keeps in a jar in the fridge for 5 days; shake before using."
+      ],
+      "nutrition": {
+        "kcal": 51,
+        "proteinG": 1,
+        "carbsG": 3,
+        "fatG": 4,
+        "fibreG": 0,
+        "sodiumMg": 225
+      }
+    },
+    {
+      "id": "coconut-lime-dressing-for-red-cabbage-slaw",
+      "title": "Coconut Lime Dressing for Red Cabbage Slaw",
+      "summary": "A creamy, tangy dressing with lime, chilli and coriander for slaws and grilled fish.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1/4 cup coconut cream",
+            "Juice of 3 limes",
+            "1 tbsp honey",
+            "1 tbsp olive oil",
+            "1 small red chilli, finely chopped",
+            "2 tbsp chopped coriander",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the coconut cream, lime juice, honey, oil and salt in a bowl until smooth.",
+        "Stir in the chilli and coriander and taste, adding more lime or honey to balance.",
+        "Toss through shredded red cabbage and carrot just before serving."
+      ],
+      "notes": [
+        "Coconut cream firms in the fridge; stir or warm briefly to loosen.",
+        "Keeps for 3 days."
+      ],
+      "nutrition": {
+        "kcal": 45,
+        "proteinG": 0,
+        "carbsG": 3,
+        "fatG": 3,
+        "fibreG": 0,
+        "sodiumMg": 75
+      }
+    },
+    {
+      "id": "cocoa-oat-smoothie-with-peanut-butter",
+      "title": "Cocoa Oat Smoothie with Peanut Butter",
+      "summary": "A filling chocolatey breakfast smoothie with rolled oats and peanut butter.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast",
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 0,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "45g rolled oats",
+            "500ml milk",
+            "2 tbsp peanut butter",
+            "1 tbsp cocoa powder",
+            "1 tbsp honey",
+            "1 cup ice cubes"
+          ]
+        }
+      ],
+      "steps": [
+        "Put the oats, milk, peanut butter, cocoa, honey and ice in a blender.",
+        "Blend on high for 1 minute until completely smooth with no oat flecks.",
+        "Pour into two glasses and drink straight away."
+      ],
+      "notes": [
+        "Contains peanuts and milk; swap in oat milk and sunflower seed butter if needed.",
+        "For a thicker smoothie use less ice."
+      ],
+      "nutrition": {
+        "kcal": 374,
+        "proteinG": 16,
+        "carbsG": 40,
+        "fatG": 19,
+        "fibreG": 4,
+        "sodiumMg": 200
+      }
+    },
+    {
+      "id": "gentle-rice-and-chicken-soup-with-ginger",
+      "title": "Gentle Rice and Chicken Soup with Ginger",
+      "summary": "A mild soup of poached chicken, soft rice, carrot and ginger, plain and warm.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g chicken breast",
+            "100g white rice",
+            "2 carrots, diced",
+            "1 celery stalk, diced",
+            "4cm fresh ginger, sliced",
+            "750ml low-salt chicken stock",
+            "750ml water",
+            "2 spring onions, sliced",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Bring the stock, water, ginger, carrots and celery to a simmer in a large pot for 5 minutes until the carrots start to soften.",
+        "Add the chicken and rice and simmer gently for 20 minutes until the rice is very soft and the chicken is cooked through.",
+        "Lift out the chicken, shred it with two forks and return it to the pot.",
+        "Season with the salt and top with spring onions."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until there is no pink and the juices run clear, with an internal temperature of 75°C.",
+        "Food safety: cooked rice should be cooled and refrigerated within 1 hour, and reheated until steaming hot.",
+        "Keeps for 2 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 211,
+        "proteinG": 20,
+        "carbsG": 26,
+        "fatG": 3,
+        "fibreG": 2,
+        "sodiumMg": 490
+      }
+    },
+    {
+      "id": "pumpkin-and-chicken-soup-with-thyme",
+      "title": "Pumpkin and Chicken Soup with Thyme",
+      "summary": "A mild, comforting soup of poached chicken and soft pumpkin with thyme and white pepper.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g chicken breast",
+            "600g pumpkin, peeled and cubed",
+            "1 brown onion, diced",
+            "1 tbsp olive oil",
+            "750ml low-salt chicken stock",
+            "250ml water",
+            "1 tsp dried thyme",
+            "1 bay leaf",
+            "1/2 tsp salt",
+            "White pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a large pot and cook the onion for 5 minutes until soft.",
+        "Add the pumpkin, stock, water, thyme and bay leaf and bring to a simmer for 5 minutes until steaming.",
+        "Add the chicken and simmer for 20 minutes until the pumpkin is very soft and the chicken is cooked through.",
+        "Lift out the chicken and shred it, discard the bay leaf, then lightly mash the pumpkin into the broth until thick.",
+        "Return the chicken to the pot, season with salt and white pepper and heat for 2 minutes until hot."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until there is no pink and the juices run clear, with an internal temperature of 75°C.",
+        "Freezes well for up to 3 months."
+      ],
+      "nutrition": {
+        "kcal": 177,
+        "proteinG": 16,
+        "carbsG": 17,
+        "fatG": 5,
+        "fibreG": 3,
+        "sodiumMg": 455
+      }
+    },
+    {
+      "id": "budget-cabbage-potato-and-white-bean-soup",
+      "title": "Budget Cabbage, Potato and White Bean Soup",
+      "summary": "A cheap, filling pantry soup that feeds six for very little.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g cabbage, shredded",
+            "400g potatoes, cubed",
+            "2 carrots, diced",
+            "1 brown onion, diced",
+            "1 tbsp olive oil",
+            "400g can cannellini beans, drained and rinsed",
+            "1.5 litres water",
+            "2 tsp vegetable stock powder",
+            "1 tsp dried thyme"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a large pot and cook the onion and carrots for 5 minutes until soft.",
+        "Add the potatoes, cabbage, water, stock powder and thyme and simmer for 20 minutes until the potato is tender.",
+        "Add the beans and simmer for 5 minutes until heated through.",
+        "Mash a few potato cubes against the side of the pot to thicken the soup and season to taste."
+      ],
+      "notes": [
+        "Costs roughly a dollar a serve using supermarket basics.",
+        "Freezes well for up to 3 months."
+      ],
+      "nutrition": {
+        "kcal": 145,
+        "proteinG": 5,
+        "carbsG": 26,
+        "fatG": 3,
+        "fibreG": 6,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "freezer-batch-tomato-and-red-capsicum-soup",
+      "title": "Freezer-Batch Tomato and Red Capsicum Soup",
+      "summary": "A big batch of smoky roasted-style tomato and capsicum soup that freezes in single portions.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 red capsicums, chopped",
+            "2 x 400g cans chopped tomatoes",
+            "2 brown onions, diced",
+            "4 cloves garlic, crushed",
+            "2 tbsp olive oil",
+            "1 tbsp tomato paste",
+            "1 tsp smoked paprika",
+            "1 litre low-salt vegetable stock",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a large pot and cook the onions and capsicum for 10 minutes until soft.",
+        "Add the garlic, paprika and tomato paste and cook for 1 minute until fragrant.",
+        "Add the tomatoes and stock and simmer for 20 minutes until the capsicum is very soft.",
+        "Blend with a stick blender until smooth and season with the salt."
+      ],
+      "notes": [
+        "Cool completely before freezing in portions for up to 3 months; reheat until steaming hot.",
+        "Leave a gap at the top of each container as the soup expands."
+      ],
+      "nutrition": {
+        "kcal": 95,
+        "proteinG": 3,
+        "carbsG": 12,
+        "fatG": 3,
+        "fibreG": 3,
+        "sodiumMg": 290
+      }
+    },
+    {
+      "id": "high-fibre-oat-bran-and-apple-breakfast-bowl",
+      "title": "High-Fibre Oat Bran and Apple Breakfast Bowl",
+      "summary": "Creamy oat bran porridge topped with grated apple, sunflower seeds and walnuts.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 5,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "60g oat bran",
+            "300ml milk",
+            "1 apple, grated",
+            "1 tbsp sunflower seeds",
+            "2 tbsp chopped walnuts",
+            "1/2 tsp ground cinnamon"
+          ]
+        }
+      ],
+      "steps": [
+        "Stir the oat bran, milk and cinnamon in a small saucepan over medium heat.",
+        "Cook for 4 minutes, stirring, until thick and creamy.",
+        "Spoon into bowls and top with the apple, sunflower seeds and walnuts."
+      ],
+      "notes": [
+        "Use any milk you like; the fibre is mostly from the oat bran, apple and sunflower seeds.",
+        "Add a splash more milk for a looser porridge."
+      ],
+      "nutrition": {
+        "kcal": 340,
+        "proteinG": 14,
+        "carbsG": 40,
+        "fatG": 14,
+        "fibreG": 8,
+        "sodiumMg": 95
+      }
+    },
+    {
+      "id": "high-fibre-black-bean-and-corn-breakfast-tostadas",
+      "title": "High-Fibre Black Bean and Corn Breakfast Tostadas",
+      "summary": "Crisp corn tortillas with black beans, sweet corn, avocado and a fried egg.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 small corn tortillas",
+            "1 tbsp olive oil",
+            "400g can black beans, drained and rinsed",
+            "1 cup corn kernels",
+            "1 tsp ground cumin",
+            "1 avocado, sliced",
+            "4 eggs",
+            "1 tsp vegetable oil",
+            "Juice of 1 lime",
+            "2 tbsp coriander leaves",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200C, brush the tortillas with the olive oil and bake on trays for 8 minutes until crisp and lightly golden.",
+        "Warm the beans, corn, cumin and salt in a saucepan for 5 minutes, mashing some beans, until hot.",
+        "Fry the eggs in the vegetable oil for 3 minutes until the whites are fully set.",
+        "Pile the bean mixture on the tostadas, top with avocado and a fried egg, then finish with lime juice and coriander."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites and yolks are firm if serving children, older adults or anyone pregnant.",
+        "Make the bean mixture ahead and reheat until steaming."
+      ],
+      "nutrition": {
+        "kcal": 355,
+        "proteinG": 14,
+        "carbsG": 40,
+        "fatG": 16,
+        "fibreG": 10,
+        "sodiumMg": 350
+      }
+    },
+    {
+      "id": "lunchbox-chickpea-corn-and-herb-jar-salad",
+      "title": "Lunchbox Chickpea, Corn and Herb Jar Salad",
+      "summary": "A layered jar salad that stays crisp until lunch, with the dressing kept at the bottom.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g can chickpeas, drained and rinsed",
+            "1 cup corn kernels",
+            "1 Lebanese cucumber, diced",
+            "1 red capsicum, diced",
+            "3 spring onions, sliced",
+            "1/4 cup chopped parsley",
+            "80g feta, crumbled",
+            "3 tbsp olive oil",
+            "2 tbsp lemon juice",
+            "1 tsp dijon mustard",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the oil, lemon juice, mustard and salt and divide between four jars.",
+        "Layer in the chickpeas, corn, cucumber, capsicum and spring onions, then top with the parsley and feta.",
+        "Seal and keep refrigerated until lunchtime, then shake into a bowl."
+      ],
+      "notes": [
+        "Pack with an ice brick; keep chilled and eat within 4 hours out of the fridge.",
+        "Assembled jars last 2 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 290,
+        "proteinG": 10,
+        "carbsG": 28,
+        "fatG": 16,
+        "fibreG": 6,
+        "sodiumMg": 500
+      }
+    },
+    {
+      "id": "kids-cheesy-cauliflower-bites",
+      "title": "Kids' Cheesy Cauliflower Bites",
+      "summary": "Soft baked cauliflower and cheese nuggets, mild enough for little ones and good cold in a lunchbox.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch",
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g cauliflower florets",
+            "1 egg",
+            "60g grated cheddar",
+            "40g fine dry breadcrumbs",
+            "1 tbsp olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200C and line a tray with baking paper.",
+        "Steam the cauliflower for 8 minutes until very tender, then chop finely and squeeze out excess water.",
+        "Mix with the egg, cheddar and breadcrumbs until a thick mixture forms, then shape into 16 small bites.",
+        "Brush with the oil and bake for 18 minutes, turning once, until golden and firm."
+      ],
+      "notes": [
+        "Food safety: bake until the egg is cooked through and the bites are hot in the centre.",
+        "Freeze uncooked bites on a tray, then bag for up to 2 months; bake from frozen for a few minutes longer."
+      ],
+      "nutrition": {
+        "kcal": 178,
+        "proteinG": 9,
+        "carbsG": 14,
+        "fatG": 10,
+        "fibreG": 3,
+        "sodiumMg": 230
+      }
+    },
+    {
+      "id": "maple-carrot-and-spinach-salad-low-fodmap-friendly",
+      "title": "Maple Carrot and Spinach Salad (Low-FODMAP Friendly)",
+      "summary": "Roasted maple carrots over baby spinach with pumpkin seeds and lemon, no onion or garlic.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g carrots, cut into batons",
+            "100g baby spinach",
+            "3 tbsp olive oil",
+            "2 tbsp maple syrup",
+            "2 tbsp lemon juice",
+            "3 tbsp pumpkin seeds",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 210C and line a tray with baking paper.",
+        "Toss the carrots with 1 tbsp of the oil, 1 tbsp of the maple syrup and the salt and roast for 25 minutes until tender and caramelised.",
+        "Whisk the remaining oil, maple syrup and the lemon juice in a large bowl.",
+        "Add the spinach and warm carrots and toss until the leaves just wilt, then scatter with the pumpkin seeds."
+      ],
+      "notes": [
+        "Low-FODMAP friendly: the ingredients are generally considered low in FODMAPs at these serve sizes, but individual tolerance varies, so check against your own plan.",
+        "Serve warm or cold."
+      ],
+      "nutrition": {
+        "kcal": 215,
+        "proteinG": 4,
+        "carbsG": 20,
+        "fatG": 14,
+        "fibreG": 4,
+        "sodiumMg": 235
+      }
+    },
+    {
+      "id": "holiday-brunch-baked-egg-cups-with-spinach-and-ham",
+      "title": "Holiday Brunch Baked Egg Cups with Spinach and Ham",
+      "summary": "Make-ahead muffin-tin egg cups with ham, spinach and cheddar, ideal for a crowd.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 22,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "12 eggs",
+            "150g ham, diced",
+            "100g baby spinach, chopped",
+            "80g grated cheddar",
+            "1/4 cup milk",
+            "1 tbsp butter, melted",
+            "Black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180C and brush a 12-hole muffin tin with the butter.",
+        "Whisk the eggs, milk and pepper, then divide the ham, spinach and cheddar between the holes.",
+        "Pour in the egg mixture and bake for 20 minutes until puffed, golden and set in the centre."
+      ],
+      "notes": [
+        "Food safety: bake until the eggs are fully set with no runny egg; reheat leftovers until steaming hot.",
+        "Keeps in the fridge for 3 days or freezes for 2 months."
+      ],
+      "nutrition": {
+        "kcal": 250,
+        "proteinG": 21,
+        "carbsG": 2,
+        "fatG": 17,
+        "fibreG": 1,
+        "sodiumMg": 560
+      }
+    },
+    {
+      "id": "orange-cinnamon-french-toast-bake-for-holiday-brunch",
+      "title": "Orange Cinnamon French Toast Bake for Holiday Brunch",
+      "summary": "A custardy baked French toast with orange and cinnamon, prepared the night before.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g day-old sourdough bread, cubed",
+            "6 eggs",
+            "600ml milk",
+            "1/4 cup caster sugar",
+            "Zest and juice of 1 orange",
+            "2 tsp ground cinnamon",
+            "1 tsp vanilla extract",
+            "30g butter, for greasing"
+          ]
+        }
+      ],
+      "steps": [
+        "Grease a large baking dish with the butter and spread the bread cubes in it.",
+        "Whisk the eggs, milk, sugar, orange zest and juice, cinnamon and vanilla until smooth and pour over the bread, pressing it down to soak.",
+        "Heat the oven to 180C and bake for 40 minutes until puffed, golden and the centre is set.",
+        "Serve warm with extra orange segments or yoghurt."
+      ],
+      "notes": [
+        "Food safety: bake until the custard is fully set and reaches 71C in the centre.",
+        "Assemble the night before and keep covered in the fridge, then bake in the morning."
+      ],
+      "nutrition": {
+        "kcal": 290,
+        "proteinG": 12,
+        "carbsG": 36,
+        "fatG": 10,
+        "fibreG": 2,
+        "sodiumMg": 360
+      }
+    }
+  ]
+}
