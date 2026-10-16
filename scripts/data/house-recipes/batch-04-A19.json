@@ -600,56 +600,6 @@
    }
   },
   {
-   "id": "pasta-con-le-sarde-sicilian-sardine-pasta",
-   "title": "Pasta con le Sarde (Sicilian Sardine Pasta)",
-   "summary": "A Palermo classic of sardines, wild fennel, pine nuts and sultanas over bucatini with crisp breadcrumbs.",
-   "cuisine": "italian",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 20,
-   "cookMinutes": 25,
-   "servings": 4,
-   "onePot": true,
-   "diets": [],
-   "ingredients": [
-    {
-     "items": [
-      "400g bucatini",
-      "400g canned sardines, drained",
-      "3 tbsp olive oil",
-      "1 brown onion, finely diced",
-      "4 anchovy fillets",
-      "1 fennel, chopped",
-      "1/4 cup pine nuts",
-      "1/4 cup sultanas",
-      "1/4 tsp saffron threads",
-      "1/2 cup breadcrumbs"
-     ]
-    }
-   ],
-   "steps": [
-    "Toast the breadcrumbs in 1 tbsp oil in a dry pan for 3 minutes, until golden. Set aside.",
-    "Soften the onion and fennel in the remaining oil for 8 minutes. Add the anchovies, pine nuts, sultanas and saffron and stir until the anchovies melt.",
-    "Add the sardines and 1/2 cup of pasta water and cook for 5 minutes, breaking them up gently with a spoon.",
-    "Cook the bucatini until al dente. Drain and toss through the sauce.",
-    "Serve topped with the toasted breadcrumbs."
-   ],
-   "notes": [
-    "Food safety: fish is cooked when it turns opaque and flakes easily; cook shellfish until shells open or flesh is opaque and discard any that stay shut. Eat the same day or refrigerate within an hour and use within 24 hours.",
-    "Contains fish, pine nuts and gluten. Dairy-free."
-   ],
-   "nutrition": {
-    "kcal": 608,
-    "proteinG": 32,
-    "carbsG": 66,
-    "fatG": 24,
-    "fibreG": 5,
-    "sodiumMg": 580
-   }
-  },
-  {
    "id": "boeuf-bourguignon",
    "title": "Boeuf Bourguignon",
    "summary": "Beef braised slowly in red wine with bacon, mushrooms and pearl onions, served with mash.",
