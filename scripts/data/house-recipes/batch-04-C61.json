@@ -487,10 +487,10 @@
         "Food safety: cook until the egg whites are fully set."
       ],
       "nutrition": {
-        "kcal": 468,
-        "proteinG": 23,
-        "carbsG": 56,
-        "fatG": 14,
+        "kcal": 694,
+        "proteinG": 37,
+        "carbsG": 94,
+        "fatG": 16,
         "fibreG": 13,
         "sodiumMg": 520
       }
@@ -592,10 +592,10 @@
         "Keeps 3 days in the fridge without the parsley."
       ],
       "nutrition": {
-        "kcal": 370,
-        "proteinG": 14,
-        "carbsG": 40,
-        "fatG": 14,
+        "kcal": 605,
+        "proteinG": 31,
+        "carbsG": 75,
+        "fatG": 17,
         "fibreG": 14,
         "sodiumMg": 620
       }
@@ -1172,60 +1172,6 @@
       }
     },
     {
-      "id": "bavarian-style-warm-potato-and-gherkin-salad",
-      "title": "Bavarian-Style Warm Potato and Gherkin Salad",
-      "summary": "A South German potato salad dressed with warm broth, vinegar and mustard.",
-      "cuisine": "central-european",
-      "mealTypes": [
-        "dinner"
-      ],
-      "difficulty": "easy",
-      "prepMinutes": 15,
-      "cookMinutes": 20,
-      "servings": 6,
-      "onePot": true,
-      "diets": [
-        "vegetarian",
-        "vegan",
-        "no-gluten",
-        "no-dairy"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "1 kg waxy potatoes, scrubbed",
-            "1 small onion, finely diced",
-            "150ml vegetable stock",
-            "3 tbsp white wine vinegar",
-            "1 tbsp Dijon mustard",
-            "3 tbsp sunflower oil",
-            "3/4 tsp salt",
-            "1/4 tsp black pepper",
-            "1 tsp sugar",
-            "3 tbsp chopped chives",
-            "4 gherkins, chopped"
-          ]
-        }
-      ],
-      "steps": [
-        "Boil the potatoes for 18 to 20 minutes until tender, drain, then peel while warm and slice.",
-        "Heat the stock with the onion, vinegar, mustard, sugar, salt and pepper for 3 minutes until the onion softens, then whisk in the oil.",
-        "Pour the warm dressing over the potatoes, toss gently and leave for 10 minutes to absorb, then fold in the chives and gherkins."
-      ],
-      "notes": [
-        "Slice the potatoes while still warm so they drink in the dressing.",
-        "Keeps 3 days in the fridge."
-      ],
-      "nutrition": {
-        "kcal": 201,
-        "proteinG": 4,
-        "carbsG": 29,
-        "fatG": 7,
-        "fibreG": 3,
-        "sodiumMg": 470
-      }
-    },
-    {
       "id": "hasselback-potatoes-with-garlic-and-thyme",
       "title": "Hasselback Potatoes with Garlic and Thyme",
       "summary": "Fan-cut potatoes roasted until crisp at the edges and soft in the middle, with garlic and thyme.",
@@ -1266,10 +1212,10 @@
         "Serve straight away while crisp."
       ],
       "nutrition": {
-        "kcal": 275,
-        "proteinG": 6,
-        "carbsG": 40,
-        "fatG": 9,
+        "kcal": 433,
+        "proteinG": 7,
+        "carbsG": 74,
+        "fatG": 11,
         "fibreG": 5,
         "sodiumMg": 320
       }
