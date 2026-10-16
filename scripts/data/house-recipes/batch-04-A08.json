@@ -1,0 +1,2451 @@
+{
+ "about": "House recipes, batch 04 (helper sA): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+ "recipes": [
+  {
+   "id": "chipotle-honey-pork-ribs",
+   "title": "Chipotle Honey Pork Ribs",
+   "summary": "Slow-baked pork ribs lacquered with chipotle, honey and lime until sticky.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 20,
+   "cookMinutes": 170,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.5kg pork ribs",
+      "2 tsp ground cumin",
+      "2 tsp smoked paprika",
+      "1 tsp garlic powder",
+      "2 chipotle in adobo, chopped",
+      "1/4 cup honey",
+      "2 lime, juiced",
+      "1 tbsp apple cider vinegar",
+      "1 tsp salt",
+      "1/4 cup coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Rub the ribs with the cumin, paprika, garlic powder and salt. Wrap tightly in foil and rest in the fridge for 2 hours.",
+    "Heat the oven to 150°C (130°C fan) and bake the foil parcels on a tray for 2 hours 15 minutes, until the meat is very tender.",
+    "Mix the chipotle, honey, lime juice and vinegar. Unwrap the ribs, brush with the glaze and roast at 220°C (200°C fan) for 15 minutes, brushing twice, until sticky and 75°C inside.",
+    "Rest for 10 minutes, cut between the bones and scatter with coriander before serving."
+   ],
+   "notes": [
+    "Food safety: pork ribs must reach at least 70°C; slow-cooked ribs go well beyond that and are tender when the meat pulls from the bone.",
+    "Gluten-free. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 572,
+    "proteinG": 44,
+    "carbsG": 18,
+    "fatG": 36,
+    "fibreG": 1,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "capsicum-egg-rings-with-salsa",
+   "title": "Capsicum Egg Rings with Salsa",
+   "summary": "Rings of red capsicum with eggs cooked inside, served with salsa and avocado.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 12,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 red capsicum, cut into 1.5cm rings",
+      "1 tbsp neutral oil",
+      "4 egg",
+      "1/4 cup salsa",
+      "1/2 avocado, sliced",
+      "2 tbsp coriander, chopped",
+      "1 tsp ground cumin"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil in a non-stick frying pan over medium heat and add four capsicum rings.",
+    "Crack an egg into each ring and sprinkle with cumin and salt.",
+    "Cover and cook for 5 minutes, until the whites are set and the capsicum has softened.",
+    "Lift onto plates and serve with the salsa, avocado and coriander on the side."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are set; serve firm yolks to young children, older people or anyone pregnant.",
+    "Vegetarian. Gluten-free. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 266,
+    "proteinG": 16,
+    "carbsG": 10,
+    "fatG": 18,
+    "fibreG": 4,
+    "sodiumMg": 300
+   }
+  },
+  {
+   "id": "prawn-and-black-bean-burrito-bowls",
+   "title": "Prawn and Black Bean Burrito Bowls",
+   "summary": "Chilli-lime prawns over rice with black beans, corn, avocado and crunchy lettuce.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g prawn, peeled",
+      "1 tbsp taco seasoning",
+      "1 tbsp neutral oil",
+      "2 cup white rice",
+      "1 x 400g tinned black beans, drained",
+      "1 cup corn kernels",
+      "1 avocado, sliced",
+      "1/2 cup salsa",
+      "2 lime, juiced",
+      "1 cos lettuce, shredded",
+      "1/2 cup coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the rice in boiling water for 12 minutes, until tender, then drain and stir through half the lime juice and half the coriander.",
+    "Toss the prawns in the taco seasoning and cook in the oil for 4 minutes, until pink, curled and opaque.",
+    "Warm the beans and corn for 4 minutes, until hot.",
+    "Build bowls of rice, lettuce, beans, corn, prawns and avocado and top with salsa, the remaining lime juice and coriander."
+   ],
+   "notes": [
+    "Food safety: prawns are cooked when pink, curled and opaque all the way through.",
+    "Gluten-free: check the seasoning label. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 516,
+    "proteinG": 28,
+    "carbsG": 74,
+    "fatG": 12,
+    "fibreG": 10,
+    "sodiumMg": 540
+   }
+  },
+  {
+   "id": "baked-chicken-flautas",
+   "title": "Baked Chicken Flautas",
+   "summary": "Rolled corn tortillas filled with shredded chicken and cheese, baked until crisp.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g chicken breast",
+      "1 chipotle in adobo, chopped",
+      "1 cup tasty cheese, grated",
+      "1/2 cup salsa",
+      "12 corn tortilla",
+      "2 tbsp neutral oil",
+      "1/2 cup sour cream",
+      "1/2 avocado, sliced",
+      "1/4 cup coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Poach the chicken in simmering water for 18 minutes, until it reaches 75°C, then shred and mix with the chipotle, cheese and 1/4 cup salsa.",
+    "Heat the oven to 220°C (200°C fan). Warm the tortillas in a dry pan for 20 seconds each side, until pliable.",
+    "Fill each tortilla with chicken, roll tightly and set seam-side down on a lined tray. Brush with oil.",
+    "Bake for 20 minutes, until golden and crisp. Serve with sour cream, avocado, coriander and the remaining salsa."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C right through before shredding; the flautas should be steaming hot.",
+    "Gluten-free: check the tortilla label."
+   ],
+   "nutrition": {
+    "kcal": 548,
+    "proteinG": 38,
+    "carbsG": 36,
+    "fatG": 28,
+    "fibreG": 6,
+    "sodiumMg": 720
+   }
+  },
+  {
+   "id": "loaded-chilli-beef-corn-chip-bake",
+   "title": "Loaded Chilli Beef Corn Chip Bake",
+   "summary": "Corn chips layered with beany chilli beef, melted cheese and fresh toppings.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g beef mince",
+      "1 brown onion, diced",
+      "2 garlic, crushed",
+      "1 tbsp taco seasoning",
+      "400g tinned tomatoes",
+      "1 x 400g tinned black beans, drained",
+      "200g corn chips",
+      "1 1/2 cup tasty cheese, grated",
+      "1/2 cup sour cream",
+      "1 avocado, diced",
+      "1/4 cup coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the onion in a pan for 5 minutes, until soft, then add the garlic and mince and cook for 8 minutes, until browned and cooked through.",
+    "Stir in the seasoning, tomatoes and beans and simmer for 10 minutes, until thick.",
+    "Heat the oven to 200°C (180°C fan). Layer the chips, chilli and cheese in a large dish and bake for 10 minutes, until the cheese is melted and bubbling.",
+    "Top with sour cream, avocado and coriander and serve straight away."
+   ],
+   "notes": [
+    "Food safety: the beef mince must reach 75°C right through before baking.",
+    "Gluten-free: check the chips and seasoning labels."
+   ],
+   "nutrition": {
+    "kcal": 654,
+    "proteinG": 34,
+    "carbsG": 44,
+    "fatG": 38,
+    "fibreG": 12,
+    "sodiumMg": 1100
+   }
+  },
+  {
+   "id": "sweet-potato-chorizo-and-egg-breakfast-bowls",
+   "title": "Sweet Potato, Chorizo and Egg Breakfast Bowls",
+   "summary": "Roasted sweet potato and chorizo with soft eggs, lime and avocado.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g sweet potato, cubed",
+      "150g chorizo, diced",
+      "1 red onion, cut into wedges",
+      "2 tbsp neutral oil",
+      "1 tsp smoked paprika",
+      "4 egg",
+      "1 avocado, sliced",
+      "1/4 cup coriander, chopped",
+      "1 lime, cut into wedges"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Toss the sweet potato, chorizo, onion, oil and paprika on a large tray.",
+    "Roast for 25 minutes, turning once, until the potato is tender and the chorizo is crisp.",
+    "Fry or poach the eggs for 3 minutes, until the whites are set.",
+    "Divide the sweet potato and chorizo between bowls and top with the eggs, avocado, coriander and lime wedges."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are set; serve firm yolks to young children, older people or anyone pregnant.",
+    "Gluten-free. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 450,
+    "proteinG": 18,
+    "carbsG": 36,
+    "fatG": 26,
+    "fibreG": 6,
+    "sodiumMg": 560
+   }
+  },
+  {
+   "id": "citrus-pollo-asado-with-charred-corn",
+   "title": "Citrus Pollo Asado with Charred Corn",
+   "summary": "Spatchcock chicken marinated in orange, lime and garlic and roasted with corn on the cob.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 60,
+   "servings": 5,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.6kg whole chicken, spatchcocked",
+      "1 orange, juiced",
+      "2 lime, juiced",
+      "6 garlic, crushed",
+      "2 tsp ground cumin",
+      "2 tsp dried oregano",
+      "1 tsp smoked paprika",
+      "1/4 cup olive oil",
+      "4 corn",
+      "1/4 cup coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the juices, garlic, cumin, oregano, paprika, oil and 2 teaspoons of salt. Coat the chicken and marinate for at least 4 hours.",
+    "Heat the oven to 220°C (200°C fan). Sit the chicken skin-side up on a tray and roast for 30 minutes.",
+    "Add the corn to the tray and roast for 25 minutes, until the thigh reaches 75°C and the corn is tender and charred.",
+    "Rest for 10 minutes, carve and scatter with coriander."
+   ],
+   "notes": [
+    "Food safety: whole chicken must reach 75°C in the thickest part of the thigh; discard any raw marinade.",
+    "Gluten-free. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 524,
+    "proteinG": 44,
+    "carbsG": 24,
+    "fatG": 28,
+    "fibreG": 3,
+    "sodiumMg": 600
+   }
+  },
+  {
+   "id": "spatchcock-chicken-with-parsley-and-garlic",
+   "title": "Spatchcock Chicken with Parsley and Garlic",
+   "summary": "Butterflied chicken roasted over potatoes with a punchy parsley and garlic dressing.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 55,
+   "servings": 5,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.6kg whole chicken, spatchcocked",
+      "800g potato, cut into wedges",
+      "1/4 cup olive oil",
+      "1 tsp paprika",
+      "1 cup parsley, finely chopped",
+      "4 garlic, crushed",
+      "1/4 cup red wine vinegar",
+      "1/3 cup olive oil",
+      "1/2 tsp chilli flakes"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Rub the chicken with 2 tablespoons of oil, paprika and salt. Toss the potato in the remaining oil on a large tray.",
+    "Set the chicken over the potato and roast for 50 minutes, until the skin is golden and the thigh reaches 75°C.",
+    "Mix the parsley, garlic, vinegar, the 1/3 cup oil and chilli flakes for the dressing.",
+    "Rest the chicken for 10 minutes, carve and serve with the potato and plenty of dressing."
+   ],
+   "notes": [
+    "Food safety: whole chicken must reach 75°C in the thickest part of the thigh, with clear juices.",
+    "Gluten-free. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 622,
+    "proteinG": 44,
+    "carbsG": 26,
+    "fatG": 38,
+    "fibreG": 3,
+    "sodiumMg": 300
+   }
+  },
+  {
+   "id": "ecuadorian-style-coconut-prawn-stew",
+   "title": "Ecuadorian-Style Coconut Prawn Stew",
+   "summary": "Prawns simmered in a coconut, tomato and peanut broth with coriander and lime.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g prawn, peeled",
+      "1 tbsp neutral oil",
+      "1 brown onion, diced",
+      "1 red capsicum, diced",
+      "3 garlic, crushed",
+      "1 tsp ground cumin",
+      "400g tinned tomatoes",
+      "1 x 400ml tinned coconut milk",
+      "2 tbsp peanut butter",
+      "1/4 cup coriander, chopped",
+      "2 lime, juiced",
+      "2 cup white rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the onion and capsicum in the oil for 6 minutes, until soft, then add the garlic and cumin for 1 minute.",
+    "Add the tomatoes, coconut milk and peanut butter and simmer for 10 minutes, until thick and creamy.",
+    "Cook the rice in boiling water for 12 minutes, until tender, and drain.",
+    "Add the prawns to the stew and cook for 4 minutes, until pink and opaque. Stir through the lime and coriander and serve over the rice."
+   ],
+   "notes": [
+    "Food safety: prawns are cooked when pink, curled and opaque all the way through. Contains peanuts.",
+    "Gluten-free. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 670,
+    "proteinG": 30,
+    "carbsG": 70,
+    "fatG": 30,
+    "fibreG": 5,
+    "sodiumMg": 380
+   }
+  },
+  {
+   "id": "humita-style-corn-bake",
+   "title": "Humita-Style Corn Bake",
+   "summary": "A creamy, sweet corn and basil bake with melted mozzarella.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 cup corn kernels",
+      "1 brown onion, diced",
+      "1 tbsp butter",
+      "1/2 cup milk",
+      "2 egg",
+      "1/4 cup basil, torn",
+      "1 cup mozzarella, grated",
+      "1/2 tsp paprika",
+      "1/4 cup polenta"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 190°C (170°C fan). Cook the onion in the butter for 5 minutes, until soft.",
+    "Blend three-quarters of the corn with the milk, eggs, polenta and basil until coarse, then stir in the remaining corn and the onion.",
+    "Pour into a greased baking dish, scatter with mozzarella and paprika.",
+    "Bake for 35 minutes, until set in the centre and golden on top. Rest for 5 minutes before serving."
+   ],
+   "notes": [
+    "Food safety: the bake contains raw egg and must be set in the centre.",
+    "Vegetarian. Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 334,
+    "proteinG": 14,
+    "carbsG": 38,
+    "fatG": 14,
+    "fibreG": 5,
+    "sodiumMg": 320
+   }
+  },
+  {
+   "id": "olive-and-capsicum-chicken-pot-rice-dominican-style",
+   "title": "Olive and Capsicum Chicken Pot Rice, Dominican-Style",
+   "summary": "Seasoned chicken and rice cooked with olives, capsicum and tomato in one pot.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 45,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1kg chicken thigh",
+      "2 tbsp neutral oil",
+      "1 brown onion, diced",
+      "1 green capsicum, diced",
+      "4 garlic, crushed",
+      "1 tsp dried oregano",
+      "1 tbsp tomato paste",
+      "2 cup white rice",
+      "3 cup chicken stock",
+      "1/3 cup green olive, sliced",
+      "1 cup frozen peas",
+      "1/4 cup coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the chicken in the oil in a wide pot for 8 minutes, until golden, and lift out. Cook the onion and capsicum for 5 minutes, then add the garlic, oregano and paste.",
+    "Stir in the rice, stock and olives, bring to a simmer until bubbling and nestle the chicken on top.",
+    "Cover and cook on low for 25 minutes, until the rice is tender and the chicken reaches 75°C. Stir through the peas for 3 minutes.",
+    "Rest for 5 minutes, then scatter with coriander and serve."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part; cool and refrigerate leftover rice within 1 hour.",
+    "Gluten-free. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 476,
+    "proteinG": 32,
+    "carbsG": 60,
+    "fatG": 12,
+    "fibreG": 3,
+    "sodiumMg": 820
+   }
+  },
+  {
+   "id": "estrogonofe-de-carne-with-rice",
+   "title": "Estrogonofe de Carne with Rice",
+   "summary": "Tender beef and mushrooms in a creamy tomato sauce, served over rice.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g beef sirloin, sliced into strips",
+      "2 tbsp neutral oil",
+      "1 brown onion, diced",
+      "250g button mushroom, sliced",
+      "2 garlic, crushed",
+      "2 tbsp tomato paste",
+      "1/4 cup white wine",
+      "1 cup cream",
+      "1 tbsp dijon mustard",
+      "2 cup white rice",
+      "1/4 cup parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the rice in boiling water for 12 minutes, until tender, and drain.",
+    "Sear the beef in the oil in two batches for 2 minutes each, until browned, and lift out. Cook the onion and mushrooms for 8 minutes, until golden.",
+    "Add the garlic, paste and wine and boil for 2 minutes. Stir in the cream and mustard and simmer for 4 minutes, until slightly thick.",
+    "Return the beef for 2 minutes until hot, with the centre at least 63°C, and serve over the rice with parsley."
+   ],
+   "notes": [
+    "Food safety: beef strips are safe once browned and hot through; the centre should reach at least 63°C.",
+    "Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 678,
+    "proteinG": 38,
+    "carbsG": 64,
+    "fatG": 30,
+    "fibreG": 3,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "moroccan-chicken-bastilla-pie",
+   "title": "Moroccan Chicken Bastilla Pie",
+   "summary": "Layers of crisp filo around spiced shredded chicken, almonds and egg, dusted with cinnamon sugar.",
+   "cuisine": "north-african",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 50,
+   "cookMinutes": 45,
+   "servings": 8,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "800g chicken thigh",
+      "1 brown onion, grated",
+      "3 garlic, crushed",
+      "1 tsp ground ginger",
+      "1 tsp ground cinnamon",
+      "1 pinch saffron",
+      "1/2 cup parsley, chopped",
+      "1/2 cup coriander, chopped",
+      "3 egg",
+      "1 cup almonds, toasted and chopped",
+      "12 filo pastry",
+      "80g butter, melted",
+      "2 tbsp icing sugar"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the chicken, onion, garlic, ginger, 1/2 teaspoon of cinnamon, saffron and 1 cup water for 35 minutes, until the chicken reaches 75°C. Shred it, boil the liquid down to 1/2 cup and stir in the beaten eggs over low heat for 4 minutes, until scrambled and set.",
+    "Mix the chicken with the herbs, egg mixture and half the almonds.",
+    "Heat the oven to 190°C (170°C fan). Layer six brushed filo sheets in a round tin, overhanging the edge, pile in the filling, fold over and cover with six more brushed sheets.",
+    "Bake for 35 minutes, until deep golden. Dust with icing sugar, the remaining almonds and cinnamon."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C right through and the egg mixture be fully set before baking.",
+    "Contains nuts."
+   ],
+   "nutrition": {
+    "kcal": 450,
+    "proteinG": 32,
+    "carbsG": 22,
+    "fatG": 26,
+    "fibreG": 2,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "lamb-and-chickpea-couscous-with-harissa",
+   "title": "Lamb and Chickpea Couscous with Harissa",
+   "summary": "Tender spiced lamb and chickpeas ladled over fluffy couscous, with harissa on the side.",
+   "cuisine": "north-african",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 100,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g lamb shoulder, diced",
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "3 garlic, crushed",
+      "2 tsp ground cumin",
+      "1 tsp ground turmeric",
+      "400g tinned tomatoes",
+      "2 cup chicken stock",
+      "1 x 400g tinned chickpeas, drained",
+      "2 carrot, chunked",
+      "2 cup couscous",
+      "2 tbsp harissa",
+      "1/4 cup coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the lamb in the oil in a heavy pot for 8 minutes, until golden. Add the onion, garlic and spices for 5 minutes.",
+    "Add the tomatoes, stock and carrot, cover and simmer for 1 hour, until the lamb is tender.",
+    "Add the chickpeas and simmer for 15 minutes, until the sauce thickens.",
+    "Soak the couscous in 2 cups boiling water for 5 minutes, fluff and serve with the lamb, harissa and coriander."
+   ],
+   "notes": [
+    "Food safety: lamb is safe at 63°C; this braise cooks well beyond that and should be steaming hot.",
+    "Contains gluten (couscous)."
+   ],
+   "nutrition": {
+    "kcal": 504,
+    "proteinG": 34,
+    "carbsG": 56,
+    "fatG": 16,
+    "fibreG": 8,
+    "sodiumMg": 560
+   }
+  },
+  {
+   "id": "maakouda-style-potato-omelette",
+   "title": "Maakouda-Style Potato Omelette",
+   "summary": "A thick, spiced potato and herb omelette, cooked until golden on both sides.",
+   "cuisine": "north-african",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g potato, boiled and mashed",
+      "6 egg",
+      "3 garlic, crushed",
+      "1 tsp ground cumin",
+      "1 tsp paprika",
+      "1/4 cup parsley, chopped",
+      "1/4 cup coriander, chopped",
+      "3 tbsp olive oil",
+      "1/2 cup greek yoghurt"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the potato with the garlic, cumin, paprika and herbs and season.",
+    "Beat in the eggs until the mixture is just combined.",
+    "Heat the oil in a 24cm non-stick pan and pour in the mix. Cook over low heat for 10 minutes, until set around the edges, then flip with a plate and cook for 8 minutes, until golden and set through.",
+    "Cut into wedges and serve warm with yoghurt."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are set; serve firm yolks to young children, older people or anyone pregnant.",
+    "Vegetarian. Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 280,
+    "proteinG": 14,
+    "carbsG": 20,
+    "fatG": 16,
+    "fibreG": 2,
+    "sodiumMg": 240
+   }
+  },
+  {
+   "id": "roast-cauliflower-tagine-with-green-olives",
+   "title": "Roast Cauliflower Tagine with Green Olives",
+   "summary": "Roast cauliflower and carrots simmered in a ginger and saffron tagine sauce with olives.",
+   "cuisine": "north-african",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 45,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cauliflower, in florets",
+      "3 carrot, chunked",
+      "3 tbsp olive oil",
+      "1 brown onion, sliced",
+      "3 garlic, crushed",
+      "2 tsp ground ginger",
+      "1 tsp ground cinnamon",
+      "1 pinch saffron",
+      "400g tinned tomatoes",
+      "1 cup vegetable stock",
+      "1/2 cup green olive",
+      "1 preserved lemon, rind sliced",
+      "1/4 cup coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Toss the cauliflower and carrot with 2 tablespoons of oil and roast for 25 minutes, until golden.",
+    "Cook the onion in the remaining oil for 5 minutes, then the garlic and spices for 1 minute. Add the tomatoes and stock and simmer for 10 minutes.",
+    "Add the roast vegetables, olives and preserved lemon and simmer for 10 minutes, until tender and the sauce is thick.",
+    "Scatter with coriander and serve with couscous or bread."
+   ],
+   "notes": [
+    "Vegan. Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 253,
+    "proteinG": 8,
+    "carbsG": 26,
+    "fatG": 13,
+    "fibreG": 8,
+    "sodiumMg": 820
+   }
+  },
+  {
+   "id": "charred-fish-kebabs-with-lemon-and-cumin",
+   "title": "Charred Fish Kebabs with Lemon and Cumin",
+   "summary": "White fish chunks marinated in cumin, paprika and lemon, grilled on skewers.",
+   "cuisine": "north-african",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 10,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "700g white fish, in 3cm chunks",
+      "3 tbsp olive oil",
+      "2 lemon, juiced",
+      "3 garlic, crushed",
+      "2 tsp ground cumin",
+      "2 tsp paprika",
+      "1/4 cup coriander, chopped",
+      "1 red onion, in chunks",
+      "1 capsicum, in chunks",
+      "2 cup couscous"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the oil, lemon juice, garlic, cumin, paprika and coriander, add the fish and marinate for 30 minutes.",
+    "Thread the fish onto skewers with the onion and capsicum.",
+    "Grill for 8 minutes, turning, until the fish is opaque and flakes and the vegetables are charred.",
+    "Soak the couscous in 2 cups boiling water for 5 minutes, fluff and serve with the kebabs."
+   ],
+   "notes": [
+    "Food safety: fish is cooked when opaque and it flakes with a fork."
+   ],
+   "nutrition": {
+    "kcal": 504,
+    "proteinG": 34,
+    "carbsG": 56,
+    "fatG": 16,
+    "fibreG": 3,
+    "sodiumMg": 260
+   }
+  },
+  {
+   "id": "moroccan-orange-and-honey-chicken",
+   "title": "Moroccan Orange and Honey Chicken",
+   "summary": "Chicken roasted in an orange, honey and cinnamon glaze over fragrant rice.",
+   "cuisine": "north-african",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 50,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1kg chicken thigh, bone in",
+      "2 orange, juiced",
+      "2 tbsp honey",
+      "1 tsp ground cinnamon",
+      "1 tsp ground ginger",
+      "3 garlic, crushed",
+      "2 tbsp olive oil",
+      "1 red onion, in wedges",
+      "1/4 cup almonds",
+      "1 1/2 cup basmati rice",
+      "1/4 cup coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the orange juice, honey, cinnamon, ginger, garlic and oil, coat the chicken and marinate for 1 hour.",
+    "Heat the oven to 200°C (180°C fan). Arrange the chicken and onion in a roasting dish and pour over the marinade.",
+    "Roast for 45 minutes, basting twice, until the chicken reaches 75°C and the glaze is sticky. Scatter with almonds for the last 5 minutes.",
+    "Cook the rice in boiling water for 12 minutes, until tender, and serve with the chicken, juices and coriander."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part; the glaze should be boiled in the oven, not served raw.",
+    "Gluten-free. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 590,
+    "proteinG": 40,
+    "carbsG": 58,
+    "fatG": 22,
+    "fibreG": 3,
+    "sodiumMg": 300
+   }
+  },
+  {
+   "id": "lebanese-beef-kafta-tray-bake",
+   "title": "Lebanese Beef Kafta Tray Bake",
+   "summary": "Spiced beef kafta baked on potato and tomato until the juices run into the vegetables.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 30,
+   "cookMinutes": 50,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g beef mince",
+      "1 brown onion, grated",
+      "1/2 cup parsley, chopped",
+      "1 tsp allspice",
+      "1 tsp ground cinnamon",
+      "1 tsp ground cumin",
+      "600g potato, sliced",
+      "3 tomato, sliced",
+      "2 tbsp olive oil",
+      "1 cup beef stock",
+      "1 tbsp tomato paste",
+      "1/2 cup pine nuts"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the mince, onion, parsley, allspice, cinnamon, cumin and salt and press into a thin layer in a baking dish.",
+    "Heat the oven to 200°C (180°C fan). Cut the kafta into squares, then layer over the potato and tomato slices, tucked between the pieces.",
+    "Whisk the stock and tomato paste and pour over. Drizzle with oil, scatter with pine nuts and cover with foil.",
+    "Bake for 30 minutes, uncover and bake for 20 minutes, until golden, the potatoes are tender and the beef reaches 75°C."
+   ],
+   "notes": [
+    "Food safety: beef mince must reach 75°C right through, with no pink.",
+    "Gluten-free. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 398,
+    "proteinG": 26,
+    "carbsG": 24,
+    "fatG": 22,
+    "fibreG": 4,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "lebanese-spiced-rice-with-chicken-and-almonds",
+   "title": "Lebanese Spiced Rice with Chicken and Almonds",
+   "summary": "Cinnamon-scented rice with shredded chicken, toasted almonds and parsley.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g chicken thigh",
+      "1 brown onion, diced",
+      "1 tbsp butter",
+      "1 tsp allspice",
+      "1 tsp ground cinnamon",
+      "1 1/2 cup basmati rice",
+      "3 cup chicken stock",
+      "1/3 cup almonds, toasted",
+      "1/4 cup pine nuts, toasted",
+      "1/4 cup parsley, chopped",
+      "1/2 cup greek yoghurt"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the chicken in the stock for 25 minutes, until it reaches 75°C. Lift out, shred it and keep the stock.",
+    "Cook the onion in the butter for 5 minutes, add the spices and rice and stir for 1 minute, then pour in 3 cups of the hot stock.",
+    "Cover and cook on low for 15 minutes, until the rice is tender. Rest for 5 minutes.",
+    "Fluff the rice, top with chicken, almonds, pine nuts and parsley and serve with yoghurt."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C right through before shredding; refrigerate leftover rice within 1 hour.",
+    "Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 568,
+    "proteinG": 36,
+    "carbsG": 52,
+    "fatG": 24,
+    "fibreG": 3,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "cilbir-poached-eggs-with-chilli-butter",
+   "title": "Cilbir Poached Eggs with Chilli Butter",
+   "summary": "Poached eggs on garlicky yoghurt with sizzling paprika butter and dill.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup greek yoghurt",
+      "1 garlic, crushed",
+      "4 egg",
+      "1 tbsp white vinegar",
+      "50g butter",
+      "1 tsp paprika",
+      "1/2 tsp chilli flakes",
+      "2 tbsp dill, chopped",
+      "2 slices sourdough"
+     ]
+    }
+   ],
+   "steps": [
+    "Stir the yoghurt and garlic with a pinch of salt and spread on two plates.",
+    "Poach the eggs in barely simmering water with the vinegar for 3 minutes, until the whites are set and the yolks soft.",
+    "Melt the butter until foaming, then stir in the paprika and chilli for 30 seconds.",
+    "Set the eggs on the yoghurt, spoon over the butter and scatter with dill. Serve with toasted sourdough."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are set; serve firm yolks to young children, older people or anyone pregnant.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 496,
+    "proteinG": 28,
+    "carbsG": 24,
+    "fatG": 32,
+    "fibreG": 2,
+    "sodiumMg": 380
+   }
+  },
+  {
+   "id": "whole-roast-cauliflower-with-tahini-and-pomegranate",
+   "title": "Whole Roast Cauliflower with Tahini and Pomegranate",
+   "summary": "A whole cauliflower roasted until golden, dressed in lemon tahini with pomegranate and herbs.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 60,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cauliflower, whole",
+      "3 tbsp olive oil",
+      "2 tsp ground cumin",
+      "1 tsp paprika",
+      "1/3 cup tahini",
+      "1 lemon, juiced",
+      "1 garlic, crushed",
+      "1/4 cup pomegranate, seeds",
+      "1/4 cup parsley, chopped",
+      "1/4 cup pistachios, chopped",
+      "1 x 400g tinned chickpeas, drained"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Rub the cauliflower with 2 tablespoons of oil, the cumin, paprika and salt and roast with the chickpeas alongside for 55 minutes, until deeply golden and tender when pierced.",
+    "Whisk the tahini, lemon juice, garlic and 1/4 cup water until smooth.",
+    "Set the cauliflower on a platter and spoon over the tahini.",
+    "Scatter with chickpeas, pomegranate, parsley and pistachios, and cut into wedges to serve."
+   ],
+   "notes": [
+    "Vegan. Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 366,
+    "proteinG": 14,
+    "carbsG": 28,
+    "fatG": 22,
+    "fibreG": 10,
+    "sodiumMg": 360
+   }
+  },
+  {
+   "id": "lebanese-fish-and-rice-sayadieh",
+   "title": "Lebanese Fish and Rice Sayadieh",
+   "summary": "Spiced rice with caramelised onion and golden fish, topped with toasted pine nuts.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 25,
+   "cookMinutes": 55,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g white fish, in large pieces",
+      "1 tsp ground cumin",
+      "1 tsp ground turmeric",
+      "4 brown onion, sliced",
+      "1/3 cup olive oil",
+      "1 1/2 cup basmati rice",
+      "3 cup fish stock",
+      "1 tsp ground cinnamon",
+      "1/4 cup pine nuts, toasted",
+      "1 lemon, cut into wedges"
+     ]
+    }
+   ],
+   "steps": [
+    "Season the fish with the cumin, turmeric and salt and fry in 2 tablespoons of oil for 3 minutes per side, until golden and flaking. Lift out.",
+    "Cook the onions in the remaining oil for 25 minutes, until very dark and sweet. Lift out half and keep for the top.",
+    "Stir the rice and cinnamon into the pot, add the stock, cover and cook on low for 15 minutes, until the rice is tender.",
+    "Fold in the fish gently and top with the reserved onions, pine nuts and lemon."
+   ],
+   "notes": [
+    "Food safety: fish is cooked when opaque and flakes with a fork; refrigerate leftover rice within 1 hour.",
+    "Gluten-free. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 618,
+    "proteinG": 34,
+    "carbsG": 62,
+    "fatG": 26,
+    "fibreG": 4,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "za-atar-chicken-traybake-with-chickpeas",
+   "title": "Za'atar Chicken Traybake with Chickpeas",
+   "summary": "Za'atar-coated chicken roasted over chickpeas, red onion and lemon.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 45,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1kg chicken thigh, bone in",
+      "2 tbsp zaatar",
+      "3 tbsp olive oil",
+      "2 x 400g tinned chickpeas, drained",
+      "2 red onion, in wedges",
+      "1 lemon, sliced",
+      "4 garlic, peeled",
+      "1/2 cup greek yoghurt",
+      "1/4 cup parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Toss the chickpeas, onion, lemon and garlic with half the oil in a large tray.",
+    "Rub the chicken with the za'atar, remaining oil and salt and set on top.",
+    "Roast for 45 minutes, until the chicken is golden and reaches 75°C and the chickpeas are crisp at the edges.",
+    "Serve with yoghurt and parsley."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part, with clear juices.",
+    "Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 514,
+    "proteinG": 42,
+    "carbsG": 28,
+    "fatG": 26,
+    "fibreG": 8,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "halloumi-and-egg-breakfast-wraps",
+   "title": "Halloumi and Egg Breakfast Wraps",
+   "summary": "Flatbread wraps with golden halloumi, scrambled eggs, tomato and mint.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "200g halloumi, sliced",
+      "4 egg",
+      "1 tbsp olive oil",
+      "2 flatbread",
+      "1 tomato, sliced",
+      "1 cucumber, sliced",
+      "1/4 cup mint, picked",
+      "1 tbsp hummus"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the halloumi in a dry pan for 2 minutes each side, until golden. Lift out.",
+    "Scramble the eggs in the oil for 3 minutes, until just set.",
+    "Warm the flatbread and spread with hummus.",
+    "Fill with halloumi, eggs, tomato, cucumber and mint, then roll up and serve."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are set; serve firm yolks to young children, older people or anyone pregnant.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 588,
+    "proteinG": 34,
+    "carbsG": 32,
+    "fatG": 36,
+    "fibreG": 3,
+    "sodiumMg": 1300
+   }
+  },
+  {
+   "id": "caribbean-spiced-pork-chops-with-mango-salsa",
+   "title": "Caribbean Spiced Pork Chops with Mango Salsa",
+   "summary": "Allspice and thyme pork loin steaks served with a fresh mango and lime salsa.",
+   "cuisine": "caribbean",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 pork loin steak",
+      "2 tsp allspice",
+      "1 tsp dried thyme",
+      "1 tsp brown sugar",
+      "1 tbsp neutral oil",
+      "2 mango, diced",
+      "1/2 red onion, diced",
+      "1 lime, juiced",
+      "1/4 cup coriander, chopped",
+      "1 red chilli, chopped",
+      "2 cup white rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Rub the pork with the allspice, thyme, sugar and salt.",
+    "Cook the rice in boiling water for 12 minutes, until tender, and drain.",
+    "Sear the pork in the oil for 5 minutes each side, until browned and the centre reaches 70°C. Rest for 5 minutes.",
+    "Mix the mango, onion, lime juice, coriander and chilli and serve over the pork with the rice."
+   ],
+   "notes": [
+    "Food safety: pork steaks must reach 70°C in the centre, then rest.",
+    "Gluten-free. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 566,
+    "proteinG": 38,
+    "carbsG": 72,
+    "fatG": 14,
+    "fibreG": 4,
+    "sodiumMg": 260
+   }
+  },
+  {
+   "id": "escovitch-fish-with-pickled-vegetables",
+   "title": "Escovitch Fish with Pickled Vegetables",
+   "summary": "Crisp fried fish topped with a tangy pickled onion, carrot and chilli dressing.",
+   "cuisine": "caribbean",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g white fish",
+      "1/3 cup cornflour",
+      "1/4 cup neutral oil",
+      "1 red onion, sliced",
+      "1 carrot, julienned",
+      "1 capsicum, sliced",
+      "1 scotch bonnet, sliced",
+      "1/2 cup white vinegar",
+      "1 tsp allspice",
+      "1 tsp sugar",
+      "2 cup white rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the vinegar, allspice, sugar, 1/4 cup water and a pinch of salt for 3 minutes, then pour over the onion, carrot, capsicum and scotch bonnet and leave to pickle.",
+    "Cook the rice in boiling water for 12 minutes, until tender, and drain.",
+    "Dust the fish in cornflour and shallow-fry in the oil for 4 minutes each side, until golden, crisp and flaking.",
+    "Spoon the pickled vegetables and some of their liquid over the hot fish and serve with rice."
+   ],
+   "notes": [
+    "Food safety: fish is cooked when opaque and flakes with a fork.",
+    "Gluten-free. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 528,
+    "proteinG": 32,
+    "carbsG": 64,
+    "fatG": 16,
+    "fibreG": 3,
+    "sodiumMg": 260
+   }
+  },
+  {
+   "id": "trinidad-style-potato-and-chickpea-roti-wraps",
+   "title": "Trinidad-Style Potato and Chickpea Roti Wraps",
+   "summary": "Warm roti wrapped around curried potato and chickpeas with a squeeze of lime.",
+   "cuisine": "caribbean",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 roti",
+      "500g potato, diced",
+      "1 x 400g tinned chickpeas, drained",
+      "1 brown onion, diced",
+      "3 garlic, crushed",
+      "1 tbsp curry powder",
+      "1 tsp ground cumin",
+      "2 tbsp neutral oil",
+      "1 cup water",
+      "1/4 cup coriander, chopped",
+      "1 lime, cut into wedges"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the onion in the oil for 5 minutes, then add the garlic, curry powder and cumin for 1 minute.",
+    "Add the potato and water and simmer for 12 minutes, until the potato is tender.",
+    "Add the chickpeas and mash roughly, cooking for 5 minutes, until thick.",
+    "Warm the roti, fill with the curry and coriander, roll up and serve with lime."
+   ],
+   "notes": [
+    "Vegan."
+   ],
+   "nutrition": {
+    "kcal": 202,
+    "proteinG": 6,
+    "carbsG": 31,
+    "fatG": 6,
+    "fibreG": 5,
+    "sodiumMg": 214
+   }
+  },
+  {
+   "id": "jerk-lamb-cutlets-with-pineapple-rice",
+   "title": "Jerk Lamb Cutlets with Pineapple Rice",
+   "summary": "Jerk-spiced lamb cutlets over rice with sweet charred pineapple.",
+   "cuisine": "caribbean",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "12 lamb cutlet",
+      "2 tbsp neutral oil",
+      "2 tsp allspice",
+      "1 tsp dried thyme",
+      "1 tsp ground cinnamon",
+      "1 tsp chilli flakes",
+      "2 garlic, crushed",
+      "1 tbsp soy sauce",
+      "1 cup tinned pineapple, in chunks",
+      "2 cup white rice",
+      "2 spring onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix 1 tablespoon of oil, the allspice, thyme, cinnamon, chilli, garlic and soy sauce and coat the lamb. Marinate for 1 hour.",
+    "Cook the rice in boiling water for 12 minutes, until tender, and drain.",
+    "Sear the cutlets in a hot pan for 3 minutes each side for medium, until browned. Rest for 5 minutes.",
+    "Char the pineapple in the remaining oil for 3 minutes, until caramelised, and toss through the rice with the spring onion. Serve with the cutlets."
+   ],
+   "notes": [
+    "Food safety: lamb cutlets are safe seared; the centre reaches 63°C for medium and 71°C for well done.",
+    "Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 632,
+    "proteinG": 34,
+    "carbsG": 70,
+    "fatG": 24,
+    "fibreG": 3,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "potato-and-ricotta-pierogi-with-buttered-onions",
+   "title": "Potato and Ricotta Pierogi with Buttered Onions",
+   "summary": "Pillowy dumplings of potato and ricotta, boiled, then pan-fried with butter and onion.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 60,
+   "cookMinutes": 30,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "3 cup plain flour",
+      "1 egg",
+      "3/4 cup water",
+      "1 tbsp sour cream",
+      "500g potato, boiled and mashed",
+      "1 cup ricotta",
+      "1 brown onion, diced",
+      "4 tbsp butter",
+      "1/4 cup chives, snipped",
+      "1/2 cup sour cream"
+     ]
+    }
+   ],
+   "steps": [
+    "Knead the flour, egg, water, 1 tablespoon sour cream and a pinch of salt for 5 minutes, until smooth. Rest for 30 minutes.",
+    "Cook half the onion in 1 tablespoon of butter for 8 minutes, until golden, and mix with the potato, ricotta and seasoning.",
+    "Roll the dough thin, cut 8cm rounds, fill, fold into half-moons and pinch to seal.",
+    "Boil in batches for 4 minutes, until they float. Fry in the remaining butter and onion for 4 minutes, until golden. Serve with sour cream and chives."
+   ],
+   "notes": [
+    "Food safety: the dumpling dough contains raw egg: boil until the dumplings float and are cooked through.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 518,
+    "proteinG": 18,
+    "carbsG": 62,
+    "fatG": 22,
+    "fibreG": 3,
+    "sodiumMg": 380
+   }
+  },
+  {
+   "id": "polish-meatballs-in-dill-cream-sauce",
+   "title": "Polish Meatballs in Dill Cream Sauce",
+   "summary": "Tender pork and beef meatballs in a creamy dill sauce, served over mashed potato.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "300g beef mince",
+      "300g pork mince",
+      "1 brown onion, grated",
+      "1 egg",
+      "1/2 cup breadcrumbs",
+      "2 tbsp neutral oil",
+      "2 tbsp butter",
+      "2 tbsp plain flour",
+      "2 cup beef stock",
+      "1/2 cup sour cream",
+      "1/4 cup dill, chopped",
+      "1kg potato, boiled and mashed"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the minces, onion, egg, breadcrumbs and salt and roll into 20 balls.",
+    "Brown the meatballs in the oil for 8 minutes, until golden, and lift out.",
+    "Melt the butter, stir in the flour for 1 minute, whisk in the stock and simmer for 5 minutes. Return the meatballs and cook for 10 minutes, until cooked through and 75°C in the middle.",
+    "Stir in the sour cream and dill and serve over the mash."
+   ],
+   "notes": [
+    "Food safety: meatballs must reach 75°C right through, with no pink."
+   ],
+   "nutrition": {
+    "kcal": 548,
+    "proteinG": 34,
+    "carbsG": 40,
+    "fatG": 28,
+    "fibreG": 4,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "czech-garlic-potato-pancakes-with-bacon",
+   "title": "Czech Garlic Potato Pancakes with Bacon",
+   "summary": "Crisp grated potato pancakes with garlic and marjoram, served with crisp bacon.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g potato, grated",
+      "3 garlic, crushed",
+      "1 tsp dried marjoram",
+      "2 egg",
+      "3 tbsp potato starch",
+      "1/4 cup neutral oil",
+      "6 bacon",
+      "1/2 cup sour cream"
+     ]
+    }
+   ],
+   "steps": [
+    "Squeeze the grated potato in a tea towel to remove the liquid. Mix with the garlic, marjoram, eggs, starch and salt.",
+    "Heat the oil in a large frying pan and fry spoonfuls, flattened, for 4 minutes per side, until deeply golden and crisp.",
+    "Fry the bacon in a separate pan for 6 minutes, until crisp.",
+    "Serve the pancakes with bacon and sour cream."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are set; serve firm yolks to young children, older people or anyone pregnant.",
+    "Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 426,
+    "proteinG": 16,
+    "carbsG": 32,
+    "fatG": 26,
+    "fibreG": 3,
+    "sodiumMg": 580
+   }
+  },
+  {
+   "id": "rakott-krumpli-layered-potato-bake",
+   "title": "Rakott Krumpli Layered Potato Bake",
+   "summary": "Hungarian layers of potato, boiled egg and smoked sausage under sour cream.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 45,
+   "servings": 6,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "800g waxy potato, boiled and sliced",
+      "6 egg",
+      "250g smoked sausage, sliced",
+      "1 1/2 cup sour cream",
+      "1/2 cup milk",
+      "1 tbsp paprika",
+      "2 tbsp butter",
+      "2 tbsp parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Hard-boil the eggs for 10 minutes, until firm, then cool, peel and slice.",
+    "Heat the oven to 190°C (170°C fan). Butter a baking dish and layer potato, egg, sausage and seasoning, repeating twice.",
+    "Mix the sour cream and milk, pour over and sprinkle with paprika.",
+    "Bake for 35 minutes, until bubbling and golden. Scatter with parsley."
+   ],
+   "notes": [
+    "Food safety: hard-boil the eggs until firm; the sausage should be steaming hot (75°C) all the way through.",
+    "Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 460,
+    "proteinG": 22,
+    "carbsG": 30,
+    "fatG": 28,
+    "fibreG": 3,
+    "sodiumMg": 820
+   }
+  },
+  {
+   "id": "caraway-roast-chicken-with-braised-cabbage",
+   "title": "Caraway Roast Chicken with Braised Cabbage",
+   "summary": "Roast chicken scented with caraway and paprika over sweet braised cabbage.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 80,
+   "servings": 5,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.6kg whole chicken",
+      "2 tsp caraway seeds",
+      "1 tbsp paprika",
+      "3 tbsp butter",
+      "1 cabbage, shredded",
+      "1 brown onion, sliced",
+      "2 apple, sliced",
+      "1/2 cup chicken stock",
+      "2 tbsp apple cider vinegar"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Rub the chicken with the caraway, paprika, 1 tablespoon of butter and salt.",
+    "Cook the onion, cabbage and apple in the remaining butter in a roasting dish for 8 minutes, until starting to wilt, then add the stock and vinegar.",
+    "Sit the chicken on the cabbage and roast for 1 hour 15 minutes, until the thigh reaches 75°C and the cabbage is tender.",
+    "Rest for 15 minutes, then carve and serve with the cabbage and juices."
+   ],
+   "notes": [
+    "Food safety: whole chicken must reach 75°C in the thickest part of the thigh, with clear juices.",
+    "Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 474,
+    "proteinG": 40,
+    "carbsG": 20,
+    "fatG": 26,
+    "fibreG": 6,
+    "sodiumMg": 360
+   }
+  },
+  {
+   "id": "bacon-and-caraway-onion-tart-german-style",
+   "title": "Bacon and Caraway Onion Tart, German-Style",
+   "summary": "A crisp pastry tart with soft onions, bacon, caraway and a creamy egg custard.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 40,
+   "servings": 6,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "2 puff pastry",
+      "4 brown onion, sliced",
+      "100g bacon, diced",
+      "2 tbsp butter",
+      "3 egg",
+      "3/4 cup sour cream",
+      "1 tsp caraway seeds",
+      "1/2 tsp nutmeg"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the onion and bacon in the butter for 20 minutes, until very soft and golden. Cool.",
+    "Heat the oven to 200°C (180°C fan). Line a tart tin with the pastry and prick the base.",
+    "Whisk the eggs, sour cream, caraway, nutmeg and salt, stir in the onions and pour into the tin.",
+    "Bake for 35 minutes, until the custard is set and the pastry is deep golden."
+   ],
+   "notes": [
+    "Food safety: the custard has raw egg and must be fully set in the centre."
+   ],
+   "nutrition": {
+    "kcal": 404,
+    "proteinG": 12,
+    "carbsG": 26,
+    "fatG": 28,
+    "fibreG": 2,
+    "sodiumMg": 460
+   }
+  },
+  {
+   "id": "krautfleckerl-cabbage-and-noodle-pan",
+   "title": "Krautfleckerl Cabbage and Noodle Pan",
+   "summary": "Caramelised cabbage tossed with egg pasta and caraway.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cabbage, shredded",
+      "2 brown onion, sliced",
+      "3 tbsp butter",
+      "1 tsp caraway seeds",
+      "1 tsp sugar",
+      "300g pasta",
+      "1/2 cup sour cream",
+      "1 tbsp apple cider vinegar",
+      "2 tbsp parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the sugar in the butter for 2 minutes, until golden, add the onion and cabbage and cook for 20 minutes, stirring, until deeply golden and soft.",
+    "Add the caraway and vinegar and season.",
+    "Cook the pasta in salted boiling water for 10 minutes, until tender, and drain.",
+    "Toss the pasta through the cabbage with the sour cream and parsley."
+   ],
+   "notes": [
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 406,
+    "proteinG": 12,
+    "carbsG": 58,
+    "fatG": 14,
+    "fibreG": 6,
+    "sodiumMg": 260
+   }
+  },
+  {
+   "id": "parsley-and-lemon-salmon-fishcakes",
+   "title": "Parsley and Lemon Salmon Fishcakes",
+   "summary": "Crisp pan-fried salmon and potato cakes with parsley and lemon, served with peas.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g salmon, cooked and flaked",
+      "500g potato, boiled and mashed",
+      "1/4 cup parsley, chopped",
+      "1 lemon, zested",
+      "1 tbsp dijon mustard",
+      "1 egg",
+      "1 cup breadcrumbs",
+      "3 tbsp neutral oil",
+      "2 cup frozen peas"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the salmon, potato, parsley, lemon zest and mustard and shape into eight patties. Chill for 20 minutes.",
+    "Dip in beaten egg and coat in breadcrumbs.",
+    "Fry the cakes in the oil for 4 minutes per side, until golden and hot all the way through.",
+    "Boil the peas for 3 minutes, until tender, and serve with the fishcakes."
+   ],
+   "notes": [
+    "Food safety: salmon is cooked when opaque and flakes; the cakes should be steaming hot in the middle."
+   ],
+   "nutrition": {
+    "kcal": 442,
+    "proteinG": 30,
+    "carbsG": 40,
+    "fatG": 18,
+    "fibreG": 6,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "sausage-and-egg-english-muffin-stacks",
+   "title": "Sausage and Egg English Muffin Stacks",
+   "summary": "English muffins layered with a herby sausage patty, fried egg and melted cheese.",
+   "cuisine": "british",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "400g pork sausage, meat squeezed from skins",
+      "1 tsp dried sage",
+      "4 english muffin",
+      "4 egg",
+      "4 slices tasty cheese",
+      "1 tbsp butter"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the sausage meat with the sage and shape into four patties.",
+    "Fry the patties for 10 minutes, turning, until browned and 75°C in the centre.",
+    "Toast the muffins and fry the eggs in the butter for 3 minutes, until the whites are set.",
+    "Stack each muffin with a patty, cheese and egg."
+   ],
+   "notes": [
+    "Food safety: sausage patties must reach 75°C with no pink; cook the eggs until the whites are set."
+   ],
+   "nutrition": {
+    "kcal": 528,
+    "proteinG": 28,
+    "carbsG": 32,
+    "fatG": 32,
+    "fibreG": 2,
+    "sodiumMg": 900
+   }
+  },
+  {
+   "id": "chicken-and-waffles-with-maple-butter",
+   "title": "Chicken and Waffles with Maple Butter",
+   "summary": "Crisp oven-fried chicken thighs on fluffy waffles with maple butter.",
+   "cuisine": "american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 40,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "800g chicken thigh",
+      "1 cup buttermilk",
+      "1 cup plain flour",
+      "1 tsp smoked paprika",
+      "1 tsp garlic powder",
+      "1/4 cup neutral oil",
+      "1 1/2 cup self-raising flour",
+      "2 egg",
+      "1 1/4 cup milk",
+      "60g butter",
+      "1/4 cup maple syrup"
+     ]
+    }
+   ],
+   "steps": [
+    "Marinate the chicken in half the buttermilk and salt for 2 hours. Mix the plain flour, paprika and garlic powder and coat the chicken.",
+    "Heat the oven to 220°C (200°C fan). Toss the chicken in the oil on a tray and bake for 35 minutes, turning once, until crisp and 75°C inside.",
+    "Whisk the self-raising flour, eggs, milk and the remaining buttermilk and cook in a waffle iron until golden and crisp.",
+    "Melt the butter and maple syrup together and serve the chicken on the waffles with the maple butter."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part; discard the raw chicken marinade."
+   ],
+   "nutrition": {
+    "kcal": 748,
+    "proteinG": 40,
+    "carbsG": 66,
+    "fatG": 36,
+    "fibreG": 2,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "pan-fried-salmon-cakes-with-lemon-mayo",
+   "title": "Pan-Fried Salmon Cakes with Lemon Mayo",
+   "summary": "Pan-fried salmon cakes with a lemon mayonnaise and a crisp cabbage slaw.",
+   "cuisine": "american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g salmon, cooked and flaked",
+      "1 cup breadcrumbs",
+      "1 egg",
+      "2 tbsp mayonnaise",
+      "1 tbsp dijon mustard",
+      "2 spring onion, sliced",
+      "3 tbsp neutral oil",
+      "1/2 cup mayonnaise",
+      "1 lemon, zested and juiced",
+      "2 cup coleslaw"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the salmon, half the breadcrumbs, the egg, 2 tablespoons of mayonnaise, mustard and spring onion and shape into eight cakes.",
+    "Coat in the remaining breadcrumbs.",
+    "Fry the cakes in the oil for 4 minutes per side, until golden and hot all the way through.",
+    "Stir the lemon zest and juice into the remaining mayonnaise and serve with the cakes and slaw."
+   ],
+   "notes": [
+    "Food safety: salmon is cooked when opaque and flakes; the cakes should be steaming hot in the middle."
+   ],
+   "nutrition": {
+    "kcal": 522,
+    "proteinG": 30,
+    "carbsG": 24,
+    "fatG": 34,
+    "fibreG": 2,
+    "sodiumMg": 620
+   }
+  },
+  {
+   "id": "prawn-corn-and-potato-boil",
+   "title": "Prawn, Corn and Potato Boil",
+   "summary": "A one-pot boil of prawns, corn, potatoes and sausage with a spicy seasoning.",
+   "cuisine": "american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "600g prawn, in shell",
+      "300g smoked sausage, sliced",
+      "600g waxy potato, halved",
+      "4 corn, halved",
+      "2 tbsp cajun seasoning",
+      "1 lemon, halved",
+      "3 garlic, crushed",
+      "60g butter",
+      "1/4 cup parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Bring a large pot of water to the boil with the cajun seasoning, lemon and half the garlic. Add the potatoes and cook for 12 minutes, until almost tender.",
+    "Add the sausage and corn and cook for 6 minutes.",
+    "Add the prawns and cook for 3 minutes, until pink and opaque. Drain.",
+    "Melt the butter with the remaining garlic until foaming, toss it through the boil and scatter with parsley."
+   ],
+   "notes": [
+    "Food safety: prawns are cooked when pink, curled and opaque; the sausage must be steaming hot.",
+    "Gluten-free: check the seasoning and sausage labels."
+   ],
+   "nutrition": {
+    "kcal": 538,
+    "proteinG": 34,
+    "carbsG": 42,
+    "fatG": 26,
+    "fibreG": 5,
+    "sodiumMg": 1100
+   }
+  },
+  {
+   "id": "cannellini-and-sweet-corn-turkey-chilli",
+   "title": "Cannellini and Sweet Corn Turkey Chilli",
+   "summary": "A mild, hearty chilli of turkey mince, white beans and sweet corn.",
+   "cuisine": "american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 40,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g turkey mince",
+      "1 tbsp neutral oil",
+      "1 brown onion, diced",
+      "1 green capsicum, diced",
+      "3 garlic, crushed",
+      "1 tbsp ground cumin",
+      "1 tsp chilli powder",
+      "2 x 400g tinned cannellini beans, drained",
+      "400g tinned tomatoes",
+      "2 cup chicken stock",
+      "1 cup corn kernels",
+      "1/4 cup coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the onion and capsicum in the oil for 6 minutes, until soft. Add the garlic and spices for 1 minute.",
+    "Add the turkey mince and cook for 8 minutes, until browned and cooked through.",
+    "Add the beans, tomatoes, stock and corn and simmer for 25 minutes, until thick.",
+    "Scatter with coriander and serve with the toppings of your choice."
+   ],
+   "notes": [
+    "Food safety: turkey mince must reach 75°C right through, with no pink.",
+    "Gluten-free. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 320,
+    "proteinG": 28,
+    "carbsG": 34,
+    "fatG": 8,
+    "fibreG": 10,
+    "sodiumMg": 660
+   }
+  },
+  {
+   "id": "chicken-parmigiana-with-crisp-potato-wedges",
+   "title": "Chicken Parmigiana with Crisp Potato Wedges",
+   "summary": "A crumbed chicken schnitzel under tomato sauce and melted cheese, with golden wedges.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "4 chicken breast",
+      "1/2 cup plain flour",
+      "2 egg",
+      "1 1/2 cup panko",
+      "1/4 cup neutral oil",
+      "1 cup passata",
+      "1 garlic, crushed",
+      "1 tsp dried oregano",
+      "1 cup mozzarella, grated",
+      "1/4 cup parmesan, grated",
+      "800g potato, cut into wedges",
+      "2 tbsp olive oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Toss the potato in the olive oil and roast for 35 minutes, until golden.",
+    "Flatten the chicken to 1.5cm, coat in flour, egg and panko, then fry in the oil for 3 minutes per side, until golden.",
+    "Simmer the passata, garlic and oregano for 5 minutes. Set the chicken on a tray, top with sauce, mozzarella and parmesan.",
+    "Bake for 15 minutes, until the cheese is golden and the chicken reaches 75°C. Serve with the wedges."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part."
+   ],
+   "nutrition": {
+    "kcal": 672,
+    "proteinG": 46,
+    "carbsG": 50,
+    "fatG": 32,
+    "fibreG": 5,
+    "sodiumMg": 820
+   }
+  },
+  {
+   "id": "snag-breakfast-rolls-with-onion-and-tomato-sauce",
+   "title": "Snag Breakfast Rolls with Onion and Tomato Sauce",
+   "summary": "Soft rolls filled with grilled sausage, caramelised onion, fried egg and tomato sauce.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "8 pork sausage",
+      "2 brown onion, sliced",
+      "1 tbsp neutral oil",
+      "4 bread roll",
+      "4 egg",
+      "1/4 cup tomato sauce",
+      "1 tbsp butter"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the sausages in the oil in a pan for 15 minutes, turning, until browned and 75°C inside.",
+    "Cook the onion in the same pan for 10 minutes, until soft and golden.",
+    "Fry the eggs in the butter for 3 minutes, until the whites are set.",
+    "Split the rolls and fill with sausages, onion, egg and tomato sauce."
+   ],
+   "notes": [
+    "Food safety: sausages must reach 75°C with no pink; cook eggs until the whites are set."
+   ],
+   "nutrition": {
+    "kcal": 554,
+    "proteinG": 26,
+    "carbsG": 36,
+    "fatG": 34,
+    "fibreG": 2,
+    "sodiumMg": 1200
+   }
+  },
+  {
+   "id": "sticky-lemon-garlic-chicken-bake-greek-style",
+   "title": "Sticky Lemon-Garlic Chicken Bake, Greek-Style",
+   "summary": "Chicken thighs roasted with potatoes in lemon, garlic and oregano until sticky and golden.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 55,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1kg chicken thigh, bone in",
+      "800g potato, cut into wedges",
+      "1/3 cup olive oil",
+      "3 lemon, juiced",
+      "4 garlic, crushed",
+      "1 tbsp dried oregano",
+      "1 cup chicken stock",
+      "1/4 cup parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Mix the oil, lemon juice, garlic, oregano and salt in a roasting dish and toss the chicken and potato through.",
+    "Pour the stock around, and roast for 55 minutes, turning once, until the chicken reaches 75°C and the potatoes are golden.",
+    "Rest for 5 minutes, spooning the pan juices over the potatoes.",
+    "Scatter with parsley and serve."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part, with clear juices.",
+    "Gluten-free. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 584,
+    "proteinG": 40,
+    "carbsG": 34,
+    "fatG": 32,
+    "fibreG": 4,
+    "sodiumMg": 540
+   }
+  },
+  {
+   "id": "huevos-rotos-style-eggs-on-crisp-potatoes",
+   "title": "Huevos Rotos-Style Eggs on Crisp Potatoes",
+   "summary": "Fried eggs broken over crisp potatoes and cured ham, Spanish tavern-style.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g potato, cut into 1cm slices",
+      "1/4 cup olive oil",
+      "4 egg",
+      "60g ham, torn",
+      "1 tsp smoked paprika",
+      "2 tbsp parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the potato in the oil in a large pan for 15 minutes, turning, until golden, crisp and tender. Season with salt.",
+    "Move the potato to the side and fry the eggs for 3 minutes, until the whites are set.",
+    "Break the yolks over the potato and add the torn ham.",
+    "Dust with paprika and scatter with parsley."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are set; serve firm yolks to young children, older people or anyone pregnant.",
+    "Gluten-free. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 580,
+    "proteinG": 26,
+    "carbsG": 38,
+    "fatG": 36,
+    "fibreG": 3,
+    "sodiumMg": 740
+   }
+  },
+  {
+   "id": "provencal-lamb-shoulder-with-white-beans",
+   "title": "Provencal Lamb Shoulder with White Beans",
+   "summary": "Lamb shoulder roasted slowly with herbes de Provence, garlic and white beans.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 25,
+   "cookMinutes": 240,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.8kg lamb shoulder, bone in",
+      "2 tbsp herbes de Provence",
+      "6 garlic, sliced",
+      "2 tbsp olive oil",
+      "1 lemon, juiced",
+      "2 x 400g tinned cannellini beans, drained",
+      "400g tinned tomatoes",
+      "1 cup chicken stock",
+      "1 brown onion, sliced",
+      "1/4 cup parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Make slits in the lamb and push in the garlic. Rub with the oil, herbs, lemon juice and salt and rest for 2 hours.",
+    "Heat the oven to 160°C (140°C fan). Sit the lamb on the onion in a deep tray with the tomatoes and stock, cover with foil and roast for 3 hours 15 minutes, until very tender.",
+    "Add the beans around the lamb, uncover and roast for 30 minutes, until the lamb is browned and reaches 90°C.",
+    "Rest for 15 minutes, scatter with parsley and serve with the beans and juices."
+   ],
+   "notes": [
+    "Food safety: lamb shoulder is safe at 63°C; this slow roast reaches 90°C and pulls apart.",
+    "Gluten-free. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 420,
+    "proteinG": 42,
+    "carbsG": 18,
+    "fatG": 20,
+    "fibreG": 6,
+    "sodiumMg": 480
+   }
+  },
+  {
+   "id": "sicilian-style-eggplant-and-ricotta-bake",
+   "title": "Sicilian-Style Eggplant and Ricotta Bake",
+   "summary": "Pasta baked with fried eggplant, tomato, basil and ricotta salata-style feta.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 40,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 eggplant, diced",
+      "1/3 cup olive oil",
+      "1 brown onion, diced",
+      "3 garlic, crushed",
+      "800g tinned tomatoes",
+      "350g penne",
+      "1/2 cup basil, torn",
+      "1 cup ricotta",
+      "1 cup mozzarella, grated"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the eggplant in the oil in batches for 8 minutes, until deeply golden, and drain.",
+    "Cook the onion for 5 minutes, add the garlic and tomatoes and simmer for 15 minutes, until thick.",
+    "Cook the penne in salted boiling water for 8 minutes, until just short of tender, drain and mix with the sauce, eggplant and basil.",
+    "Spoon into a dish, dot with ricotta, top with mozzarella and bake at 200°C (180°C fan) for 20 minutes, until golden and bubbling."
+   ],
+   "notes": [
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 508,
+    "proteinG": 18,
+    "carbsG": 64,
+    "fatG": 20,
+    "fibreG": 7,
+    "sodiumMg": 440
+   }
+  }
+ ]
+}
