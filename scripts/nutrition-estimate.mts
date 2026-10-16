@@ -9,11 +9,28 @@
 // water density (250 g a cup), counted a spring onion or shallot as a 130 g
 // onion and a tin of tuna as 400 g. Curries, coconut stews and rice dishes came
 // out 1.3 to 1.8 times too high, and generators inflated stated nutrition to pass.
+//
+// 17 Oct 2026 batch-04 fix-up (docs/NUTRITION-FIXUP-BATCH04.md): cooked rice was
+// counted as dry (2.7 times too high), a dumpling wrapper as a 60 g wrap, deep-frying
+// oil as if all of it were eaten, water at 15 kcal/100 g, shell-on clams and soup
+// bones as meat, a corn tortilla at 60 g, an anchovy fillet at 170 g and a
+// sun-dried tomato as a whole tomato.
 
 import type { IngredientLine } from '../src/domain/ingredients/types.ts';
 
 export const KCAL: [RegExp, number][] = [
   // Specific ids that broader rules below would catch wrongly.
+  [/^water$|soda-water/, 0],
+  [/bones$/, 25], // what a long simmer takes out of soup bones, not the bones themselves
+  [/^clams$|mussel|pipi|cockle/, 30], // bought in the shell: about a fifth is meat
+  [/lamb-leg/, 170], // bone-in
+  [/short-ribs/, 200], // bone-in
+  [/wrapper/, 290],
+  [/puff-pastry|shortcrust/, 400],
+  [/filo/, 300],
+  [/mango$/, 60],
+  [/coleslaw/, 120],
+  [/cottage-cheese/, 100],
   [/coconut-milk/, 190],
   [/coconut-cream/, 330],
   [/coconut-water/, 20],
@@ -26,7 +43,8 @@ export const KCAL: [RegExp, number][] = [
   [/rice-wine|brandy|rum$|whisky|vodka/, 200],
   [/sugar-snap|snow-pea/, 40],
   [/butternut|pumpkin$/, 40],
-  [/ricotta|cottage-cheese/, 150],
+  [/ricotta/, 150],
+  [/cucumber|daikon|radish|bok-choy|choy-sum|celery|lettuce|zucchini|spinach|cabbage|wombok/, 20],
   [/bean-sprouts|green-beans|snake-beans/, 30],
   [/kimchi|sauerkraut/, 25],
   [/fresh-rice-noodles|hokkien|udon|fresh-.*noodle/, 160],
@@ -64,6 +82,7 @@ export const KCAL: [RegExp, number][] = [
   [/bean|chickpea|lentils-tin|edamame/, 110],
   [/potato|sweet-potato|kumara|yam|taro|cassava|corn|parsnip/, 85],
   [/avocado/, 160],
+  [/plantain/, 120],
   [/banana|date|raisin|sultana|dried|prune|fig/, 150],
   [/bread|wrap|tortilla|pita|naan|roll|bun|bagel|crumpet|brioche|panko|breadcrumb/, 270],
   [/curry-paste|paste$/, 150],
@@ -92,6 +111,16 @@ const EACH_G: [RegExp, number][] = [
   [/spring-onion/, 15],
   [/shallot/, 30],
   [/onion/, 130],
+  [/sun-dried/, 7],
+  [/plantain/, 180],
+  [/puff-pastry|shortcrust/, 170], // a sheet
+  [/frankfurt/, 40],
+  [/baguette/, 125], // a small one
+  [/mango$/, 200],
+  [/okra/, 12],
+  [/corn-tortilla/, 28],
+  [/wonton-wrapper|gyoza-wrapper/, 8],
+  [/spring-roll-wrapper/, 13],
   [/garlic/, 5],
   [/potato|sweet-potato/, 200],
   [/carrot|zucchini|capsicum|tomato|apple|pear|banana|orange/, 140],
@@ -115,6 +144,8 @@ const ML_PER = { tsp: 5, tbsp: 15, cup: 250, ml: 1, l: 1000 } as const;
 const DENSITY: [RegExp, number][] = [
   [/(^|-)oil$|olive-oil/, 0.92],
   [/coconut-milk|coconut-cream|almond-milk|peanut-butter|tahini/, 1],
+  [/corn-chips/, 0.2],
+  [/coleslaw/, 0.45],
   [/desiccated-coconut|shredded-coconut/, 0.35],
   [/oats/, 0.38],
   [/panko/, 0.25],
@@ -136,6 +167,8 @@ const DENSITY: [RegExp, number][] = [
 ];
 
 export function lineGrams(l: IngredientLine): number | undefined {
+  const tins = /^(\d+)\s*x\s*\d+\s*g\b/i.exec(l.raw);
+  if (tins) return Number(tins[1]) * (TIN_G.find(([re]) => re.test(l.ingredientId ?? ''))?.[1] ?? 400);
   if (l.quantity === undefined) return undefined;
   const q = typeof l.quantity === 'number' ? l.quantity : (l.quantity.min + l.quantity.max) / 2;
   const id = l.ingredientId ?? '';
@@ -147,9 +180,10 @@ export function lineGrams(l: IngredientLine): number | undefined {
   }
   if (l.unit === 'tin') return q * (TIN_G.find(([re]) => re.test(id))?.[1] ?? 400);
   if (l.unit === 'clove') return q * 5;
-  if (l.unit === 'fillet') return q * 170;
+  if (l.unit === 'fillet') return q * (/anchov/.test(id) ? 4 : 170);
   if (l.unit === 'rasher') return q * 25;
   if (l.unit === 'slice') return q * 35;
+  if (l.unit === 'sheet') return q * (/puff-pastry|shortcrust/.test(id) ? 170 : /filo/.test(id) ? 20 : /nori/.test(id) ? 3 : 20);
   if (!l.unit) {
     const each = EACH_G.find(([re]) => re.test(id))?.[1];
     return each === undefined ? undefined : q * each;
@@ -161,21 +195,58 @@ export function kcalPer100(id: string, aisle?: string): number {
   return KCAL.find(([re]) => re.test(id))?.[1] ?? AISLE_KCAL[aisle ?? 'other'] ?? 50;
 }
 
+const GRAIN =
+  /rice$|^rice|basmati|jasmine|arborio|quinoa|couscous|bulgur|barley|freekeh|farro|millet|pasta|spaghetti|penne|macaroni|noodle/;
+const OIL = /(^|-)oil$|olive-oil/;
+/** Cooked rice, pasta and grains: about 140 kcal/100 g and 160 g a cup, not the dry figures. */
+const isCookedGrain = (l: IngredientLine) => GRAIN.test(l.ingredientId ?? '') && /\bcooked\b/i.test(l.raw);
+/** Whether a method deep- or shallow-fries in a bath of oil (rather than eating the oil, as in a pesto or chilli oil). */
+export const friesInOil = (steps: string[]) =>
+  /deep[- ]?fr(y|ied|ies)|shallow[- ]?fr(y|ied|ies)|for frying|fry[^.]{0,30}in batches|drain(ed)? on (paper|kitchen) towel|oil[^.]{0,60}1[5-9]0\s?°C|1[5-9]0\s?°C[^.]{0,20}oil/i.test(
+    steps.join(' '),
+  );
+/** Oil "for frying", or half a cup or more when the method fries in it: count what the food soaks up (about 15%). */
+const isFryingOil = (l: IngredientLine, g: number, fried: boolean) =>
+  OIL.test(l.ingredientId ?? '') && ((fried && g >= 100) || /for (deep[- ]?|shallow[- ]?)?frying/i.test(l.raw));
+
+/** kcal for one line, or undefined when it has no usable amount. */
+export function lineKcal(l: IngredientLine, aisleOf: (id: string) => string | undefined, fried = false): number | undefined {
+  const id = l.ingredientId;
+  let g = lineGrams(l);
+  if (g === undefined || !id) return undefined;
+  if (isCookedGrain(l)) {
+    if (l.unit && l.unit in ML_PER) g = (g / (DENSITY.find(([re]) => re.test(id))?.[1] ?? 1)) * 0.65;
+    return (g * 140) / 100;
+  }
+  if (isFryingOil(l, g, fried)) g *= 0.15;
+  if (/bone[- ]in/i.test(l.raw)) g *= 0.8;
+  // Dried or split pulses (chana dal, dried chickpeas) often link to the tinned ingredient.
+  if (/chickpea|bean|lentil/.test(id) && /\bdried\b|\bdal\b|\bsplit\b/i.test(l.raw) && !/tin|can\b|cans\b|drained/i.test(l.raw))
+    return (g * 340) / 100;
+  return (g * kcalPer100(id, aisleOf(id))) / 100;
+}
+
 export type Estimate = { kcal: number; known: number; counted: number; cover: number };
 
 /**
  * Per-serve kcal from the non-optional lines. `known` is how many lines had a
  * usable amount; `cover` is known / counted. Lines with no amount add nothing.
  */
-export function estimateKcalPerServe(lines: IngredientLine[], servings: number, aisleOf: (id: string) => string | undefined): Estimate {
+export function estimateKcalPerServe(
+  lines: IngredientLine[],
+  servings: number,
+  aisleOf: (id: string) => string | undefined,
+  steps: string[] = [],
+): Estimate {
+  const fried = friesInOil(steps);
   const counted = lines.filter((l) => !l.optional);
   let known = 0;
   let kcal = 0;
   for (const l of counted) {
-    const g = lineGrams(l);
-    if (g === undefined || !l.ingredientId) continue;
+    const k = lineKcal(l, aisleOf, fried);
+    if (k === undefined) continue;
     known++;
-    kcal += (g * kcalPer100(l.ingredientId, aisleOf(l.ingredientId))) / 100;
+    kcal += k;
   }
   return { kcal: kcal / Math.max(1, servings), known, counted: counted.length, cover: known / Math.max(1, counted.length) };
 }

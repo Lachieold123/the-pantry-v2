@@ -2,14 +2,14 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
 import type { IngredientLine } from '../src/domain/ingredients/types.ts';
-import { estimateKcalPerServe, kcalPer100, lineGrams } from './nutrition-estimate.mts';
+import { estimateKcalPerServe, kcalPer100, lineGrams, lineKcal } from './nutrition-estimate.mts';
 
-const line = (quantity: number, unit: IngredientLine['unit'], ingredientId: string): IngredientLine => ({
+const line = (quantity: number, unit: IngredientLine['unit'] | undefined, ingredientId: string, raw?: string): IngredientLine => ({
   quantity,
-  unit,
+  ...(unit ? { unit } : {}),
   ingredientId,
   item: ingredientId,
-  raw: `${quantity} ${unit ?? ''} ${ingredientId}`,
+  raw: raw ?? `${quantity} ${unit ?? ''} ${ingredientId}`,
 });
 const noAisle = () => undefined;
 
@@ -51,5 +51,52 @@ describe('nutrition estimate', () => {
     const lines = [line(100, 'g', 'white-rice'), { ...line(100, 'g', 'butter'), optional: true }];
     assert.equal(estimateKcalPerServe(lines, 1, noAisle).kcal, 355);
     assert.equal(estimateKcalPerServe(lines, 5, noAisle).kcal, 71);
+  });
+
+  it('counts cooked rice at cooked weight and energy, not dry', () => {
+    // 2 cups cooked jasmine rice is about 320 g and 450 kcal; the dry figures gave 1420.
+    const k = lineKcal(line(2, 'cup', 'jasmine-rice', '2 cups cooked jasmine rice'), noAisle) ?? 0;
+    assert.ok(k > 380 && k < 520, `got ${Math.round(k)}`);
+    assert.equal(lineKcal(line(300, 'g', 'white-rice', '300g cooked rice'), noAisle), 420);
+  });
+
+  it('counts only the oil a deep-fried dish soaks up, but all of the oil in a sauce', () => {
+    const fry = lineKcal(line(2, 'cup', 'neutral-oil', '2 cups neutral oil, for frying'), noAisle) ?? 0;
+    assert.ok(fry > 500 && fry < 700, `got ${Math.round(fry)}`); // about 70 g absorbed, not 460 g
+    const bath = [line(500, 'ml', 'neutral-oil')];
+    const deepFry = estimateKcalPerServe(bath, 1, noAisle, ['Heat the oil to 180°C and fry until golden.']).kcal;
+    assert.ok(deepFry < 700, `got ${Math.round(deepFry)}`);
+    const pesto = estimateKcalPerServe([line(0.5, 'cup', 'olive-oil')], 1, noAisle, ['Blend until smooth.']).kcal;
+    assert.ok(pesto > 950, `got ${Math.round(pesto)}`);
+    assert.equal(Math.round(lineKcal(line(1, 'tbsp', 'olive-oil'), noAisle) ?? 0), 121);
+  });
+
+  it('counts dried split pulses as dry even when linked to the tinned ingredient', () => {
+    assert.equal(lineKcal(line(200, 'g', 'chickpeas', '200g split chickpeas (chana dal), soaked'), noAisle), 680);
+    assert.equal(lineKcal(line(240, 'g', 'chickpeas', '240g tinned chickpeas, drained'), noAisle), 264);
+  });
+
+  it('reads "2 x 400g tins" as two tins, drained for pulses', () => {
+    assert.equal(lineGrams({ ...line(2, undefined, 'chickpeas', '2 x 400g tinned chickpeas, drained') }), 480);
+    assert.equal(lineGrams({ ...line(2, undefined, 'tinned-tomatoes', '2 x 400 g tins tomatoes') }), 800);
+  });
+
+  it('weighs wrappers, corn tortillas, anchovy fillets and sun-dried tomatoes at their real size', () => {
+    assert.equal(lineGrams(line(24, undefined, 'gyoza-wrappers')), 192);
+    assert.equal(lineGrams(line(20, undefined, 'spring-roll-wrappers')), 260);
+    assert.equal(lineGrams(line(4, undefined, 'corn-tortilla')), 112);
+    assert.equal(lineGrams(line(6, 'fillet', 'anchovy')), 24);
+    assert.equal(lineGrams(line(6, undefined, 'sun-dried-tomato')), 42);
+    assert.equal(lineGrams(line(2, 'sheet', 'puff-pastry')), 340);
+    assert.equal(lineGrams(line(1, undefined, 'butter-puff-pastry')), 170);
+    assert.equal(lineGrams(line(4, 'sheet', 'filo-pastry')), 80);
+  });
+
+  it('gives water no energy and counts shell-on clams and soup bones lightly', () => {
+    assert.equal(kcalPer100('water'), 0);
+    assert.equal(kcalPer100('clams'), 30);
+    assert.equal(kcalPer100('beef-bones'), 25);
+    assert.equal(kcalPer100('cottage-cheese'), 100);
+    assert.equal(kcalPer100('daikon'), 20);
   });
 });

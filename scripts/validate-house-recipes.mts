@@ -25,7 +25,7 @@ import { deriveDiets } from '../src/domain/recipes/diets.ts';
 import { CUISINES, DIET_TAGS, DIFFICULTIES, MEAL_TYPES, SEASONS, type Recipe } from '../src/domain/recipes/types.ts';
 import { validateRecipe } from '../src/domain/recipes/validate.ts';
 import { batchFiles, HOUSE_DIR, readBatch, toRecipe, type HouseRecipe } from './house-recipes.mts';
-import { estimateKcalPerServe } from './nutrition-estimate.mts';
+import { estimateKcalPerServe, lineGrams } from './nutrition-estimate.mts';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
@@ -520,9 +520,12 @@ function checkRecipe(h: HouseRecipe, file: string, seen: Map<string, string>): v
     if (Math.abs(fromMacros - nu.kcal) > Math.max(40, nu.kcal * 0.15))
       fail('nutrition', `protein, carbs, fat and fibre give ${Math.round(fromMacros)} kcal but kcal says ${nu.kcal}`);
     if (nu.sodiumMg > 3500) fail('nutrition', `${nu.sodiumMg} mg sodium a serve is very high`);
-    if ([...ids].some((i) => /meat|seafood/.test(def(i)?.aisle ?? '') && !/stock|bones|fat|dripping/.test(i)) && nu.proteinG < 10)
-      fail('nutrition', `has meat or seafood but only ${nu.proteinG} g protein a serve`);
-    const { kcal: est, known, cover } = estimateKcalPerServe(counted, h.servings, (i) => def(i)?.aisle);
+    // Only where meat or seafood is a real part of the serve (50 g raw or more), not a little bacon in a salad.
+    const isMeat = (i?: string) => !!i && /meat|seafood/.test(def(i)?.aisle ?? '') && !/stock|bones|fat|dripping|lard/.test(i);
+    const meatG = counted.reduce((t, l) => t + (isMeat(l.ingredientId) ? (lineGrams(l) ?? 50 * h.servings) : 0), 0) / h.servings;
+    if (meatG >= 50 && nu.proteinG < 10)
+      fail('nutrition', `has ${Math.round(meatG)} g meat or seafood a serve but only ${nu.proteinG} g protein`);
+    const { kcal: est, known, cover } = estimateKcalPerServe(counted, h.servings, (i) => def(i)?.aisle, h.steps);
     const ratio = nu.kcal / Math.max(1, est);
     if (process.env.NUTRI_DEBUG) console.log(`NUTRI ${h.id} ${Math.round(est)} ${cover.toFixed(2)}`);
     if (cover >= 0.6 && est > 50 && (ratio < 0.55 || ratio > 1.8))

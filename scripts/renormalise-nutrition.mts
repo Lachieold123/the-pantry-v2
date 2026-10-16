@@ -32,7 +32,7 @@ const low = opt('--low', 0.7);
 const minCover = opt('--min-cover', 0.75);
 const reportPath = args.includes('--report') ? args[args.indexOf('--report') + 1] : undefined;
 const valued = new Set(['--high', '--low', '--min-cover', '--report']);
-const fileArgs = args.filter((a, i) => !a.startsWith('--') && !valued.has(args[i - 1]));
+const fileArgs = args.filter((a, i) => !a.startsWith('--') && !valued.has(args[i - 1] ?? ''));
 const targets = fileArgs.length
   ? fileArgs.map((f) => (isAbsolute(f) ? f : existsSync(f) ? join(process.cwd(), f) : join(root, HOUSE_DIR, f)))
   : batchFiles(root).filter((f) => basename(f).startsWith('batch-04'));
@@ -57,6 +57,7 @@ for (const file of targets) {
       recipe.ingredientGroups.flatMap((g) => g.items),
       h.servings,
       aisleOf,
+      h.steps,
     );
     if (est.cover < minCover || est.kcal <= 50) continue;
     const ratio = h.nutrition.kcal / est.kcal;

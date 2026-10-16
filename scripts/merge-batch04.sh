@@ -5,10 +5,13 @@
 #   scripts/merge-batch04.sh
 #
 # 1. Merges the current tips of house-recipes-batch-04-sA, -sB and -sC, one at a time.
-#    Conflicts in recipe data, the slice handoff docs or the slice scratch tools take the
-#    slice's version: steps 2 and 3 re-derive everything this branch changed in them.
+#    Conflicts in recipe data or the slice handoff docs take the slice's version: steps 2
+#    and 3 re-derive everything this branch changed in them. The slices' scratch tools
+#    (scripts/zz-*, docs/tools-s*) are kept out of this branch: removed after each merge.
 #    Any other conflict stops the script for a person to look at.
-# 2. Renormalises nutrition over every batch-04 file (--write).
+# 2. Renormalises nutrition over every batch-04 file (--write), then rebuilds from the
+#    ingredient lines any recipe still failing the nutrition checks
+#    (scripts/fix-nutrition-from-lines.mts --write).
 # 3. Drops duplicates (scripts/dedupe-batch04.mts --write) and rewrites docs/DEDUPE-BATCH04.md.
 # 4. Runs catalogue:validate (batch-04 files) and catalogue:check-house, printing summary lines only.
 # 5. Commits the result on this branch. Never pushes and never touches main.
@@ -29,17 +32,26 @@ for s in sA sB sC; do
   if ! git merge --no-edit -q "$b"; then
     while IFS= read -r f; do
       case "$f" in
-        scripts/data/house-recipes/batch-04*.json | docs/HANDOFF-BATCH04-s*.md | docs/tools-s*/* | scripts/zz-*)
+        scripts/data/house-recipes/batch-04*.json | docs/HANDOFF-BATCH04-s*.md)
           git checkout --theirs -- "$f" && git add -- "$f" ;;
+        docs/tools-s*/* | scripts/zz-*)
+          git rm -q --ignore-unmatch -- "$f" ;;
         *) echo "conflict needs a person: $f (merge left in progress)"; exit 1 ;;
       esac
     done < <(git diff --name-only --diff-filter=U)
     git commit --no-edit -q
   fi
+  scratch=$(git ls-files -- 'scripts/zz-*' 'docs/tools-s*')
+  if [ -n "$scratch" ]; then
+    # shellcheck disable=SC2086
+    git rm -rq -- $scratch
+    git commit -q -m "batch-04 merge: keep $s scratch tools (scripts/zz-*, docs/tools-s*) out of this branch"
+  fi
 done
 
 echo "-- renormalise nutrition"
 npx tsx scripts/renormalise-nutrition.mts --write --report "$out/renormalise.txt" | tail -1
+npx tsx scripts/fix-nutrition-from-lines.mts --write --report "$out/fix-nutrition.txt" | tail -1
 
 echo "-- dedupe"
 npx tsx scripts/dedupe-batch04.mts --write --report docs/DEDUPE-BATCH04.md | tail -2
