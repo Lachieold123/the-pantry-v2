@@ -16,3 +16,13 @@ Counts (main meal type): dinner 211, snack/baking/dessert 94, lunch 60, breakfas
 - Compact generator lives outside the repo (scratchpad `sA/build.mts`): it parses lines, fills `diets` with `deriveDiets` and sets kcal = 4p+4c+9f. Write a similar one.
 - Validator traps seen: ingredient lines must match the 560-item list (no banana, plums, dates, raspberry jam, condensed milk); "sheets" of pastry and whole fruit/veg units are under-counted by the nutrition estimator (use grams); deep-fry oil is best written without a quantity ("neutral oil, for deep frying"); gelatine blocks a vegetarian tag; steps must be 3 to 14 and not very short; servings 1 to 12; cooking steps need "until" or a temperature; "skillet" and "stovetop" trip the US-term check.
 - Check titles first: many classics are already taken (Welsh Rarebit, Patatas Bravas, Pan con Tomate, Kaiserschmarrn, Anzac Biscuits, Moroccan Carrot Salad, Leek and Potato Soup, Sloppy Joes, Pot Roast, Stuffed Eggplant).
+
+## Session 3 addendum (17 October 2026): chunks A10 to A13
+
+Added 39 recipes in `batch-04-A10.json` to `A13.json` (10, 11, 10, 8), all passing the validator (0 failures, only cup-measure and time warnings). Total in slice A now 470. Not pushed or merged.
+
+- Filled: Greek (breakfast and dinners), Spanish (Basque, breakfasts, rice), French (Croque Madame, galette, daube, roast chicken, hachis, quiche), Italian breakfasts and dinners, modern Australian (burger, hash, schnitzel, pie), Peruvian (lomo saltado, aji de gallina, brasa chicken), Oaxacan (tlayudas, enfrijoladas), Ligurian (trofie al pesto), Provencal chicken.
+- Nutrition: stated as best honest per-serve estimates, NOT scaled to the estimator. No recipe failed on nutrition mismatch, so no IDs to flag.
+- Ingredient DB has no brie, reblochon or shortcrust pastry (use gruyere or homemade pastry). Pissaladiere, Mushroom Risotto and Chicken Leek Ham Pie already existed.
+- Generator: scratchpad `sA/` (lib.py `R()` builder, fill.mts fills diets and kcal, go.sh validates).
+- Still thin: Caribbean, British/Irish, Central European, North African dinners were not touched this session; more French and Italian breakfasts; Greek and Spanish are now reasonable.
