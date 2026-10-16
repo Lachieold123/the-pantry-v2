@@ -77,3 +77,10 @@ The 15 tag additions in the compact file (e.g. dosa no-gluten, karahi no-dairy) 
 - Catalogue rebuilt with `scripts/rebuild-house-batches.mts` (the loader reads every `.json` in `scripts/data/house-recipes/`): **5338 recipes** (283 converted + 711 from batches 01 to 03 + 4344 from batch 04).
 - Checks: validate batch-04 4344/4344 and batches 01 to 03 711/711 (0 failures); check-house, check-text (5338 recipes), check-ingredients, typecheck, lint and format all clean; domain tests 389/389 (batch-03 test passes); Jest 110/110.
 - Slice C is still writing, so a small follow-up merge will come.
+
+## Slice C final merge
+
+- Merge branch `house-recipes-batch-04-merge` (32aad32) brought in slice C C60-C66. Renormalised with the fixed estimator (6 scaled down, none up); 4 in-batch duplicates dropped.
+- Against the catalogue on main, one more duplicate was dropped: `chinese-egg-fried-rice-with-peas-and-spring-onion` (C61), same as `egg-fried-rice-with-peas-and-spring-onion` (A29).
+- Catalogue rebuilt: 5496 recipes. Batch-04 validate: 4499/4499, 0 failures. check-house, check-text, check-ingredients, typecheck, lint, prettier (src/scripts/e2e), domain tests (389/389) and Jest (110/110) all pass. No test counted the catalogue size.
+- `catalogue:validate` with no arguments still reports 711 "no nutrition estimate" failures in batch-01 to 03; that predates this merge and is out of scope. Nothing pushed, no Supabase.
