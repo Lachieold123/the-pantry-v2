@@ -140,4 +140,9 @@ describe('nutrition estimate', () => {
     assert.equal(oil.proteinG, 0);
     assert.ok(oil.fatG > 13 && oil.fatG < 14);
   });
+
+  it('takes a bracketed weight on a count line as the weight of the line', () => {
+    const l = { ...line(1, undefined, 'whole-fish', '1 whole perch (about 500 g), cleaned') };
+    assert.equal(lineGrams(l), 500);
+  });
 });

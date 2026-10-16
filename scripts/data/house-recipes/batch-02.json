@@ -6,7 +6,9 @@
       "title": "Chicken Saltimbocca",
       "summary": "Thin chicken escalopes wrapped in prosciutto and sage, pan-fried and finished with a buttery white wine sauce.",
       "cuisine": "italian",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 15,
       "cookMinutes": 15,
@@ -28,11 +30,19 @@
         },
         {
           "section": "Sauce",
-          "items": ["125ml dry white wine", "125ml chicken stock", "30g cold butter, diced", "Juice of 1/2 lemon"]
+          "items": [
+            "125ml dry white wine",
+            "125ml chicken stock",
+            "30g cold butter, diced",
+            "Juice of 1/2 lemon"
+          ]
         },
         {
           "section": "To serve",
-          "items": ["120g rocket", "1 lemon, cut into wedges"]
+          "items": [
+            "120g rocket",
+            "1 lemon, cut into wedges"
+          ]
         }
       ],
       "steps": [
@@ -51,6 +61,14 @@
         "key": "chicken-saltimbocca",
         "credit": "Photo: Arnaud 25 / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Saltimbocca_01.jpg"
+      },
+      "nutrition": {
+        "kcal": 337,
+        "proteinG": 25,
+        "carbsG": 7,
+        "fatG": 23,
+        "fibreG": 1,
+        "sodiumMg": 1030
       }
     },
     {
@@ -58,13 +76,18 @@
       "title": "Spaghetti Puttanesca",
       "summary": "A punchy pantry pasta of tomatoes, olives, capers, anchovies and chilli, on the table in 25 minutes.",
       "cuisine": "italian",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 10,
       "cookMinutes": 15,
       "servings": 4,
       "onePot": false,
-      "diets": ["pescatarian", "no-dairy"],
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "items": [
@@ -96,6 +119,14 @@
         "key": "spaghetti-puttanesca",
         "credit": "Photo: Popo le Chien / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Pasta_Puttanesca.jpg"
+      },
+      "nutrition": {
+        "kcal": 536,
+        "proteinG": 14,
+        "carbsG": 82,
+        "fatG": 16,
+        "fibreG": 4,
+        "sodiumMg": 1290
       }
     },
     {
@@ -103,14 +134,21 @@
       "title": "Zucchini and Herb Frittata",
       "summary": "A thick, soft-set frittata of golden zucchini, parmesan, mint and basil, good warm or cold.",
       "cuisine": "italian",
-      "mealTypes": ["breakfast", "lunch"],
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
       "difficulty": "easy",
       "prepMinutes": 15,
       "cookMinutes": 25,
       "servings": 4,
       "onePot": true,
-      "seasons": ["summer"],
-      "diets": ["no-gluten"],
+      "seasons": [
+        "summer"
+      ],
+      "diets": [
+        "no-gluten"
+      ],
       "ingredients": [
         {
           "items": [
@@ -138,21 +176,38 @@
       "notes": [
         "Keeps covered in the fridge for 2 days and makes a good lunchbox slice.",
         "For a vegetarian version, use a vegetarian hard cheese (made without animal rennet)."
-      ]
+      ],
+      "nutrition": {
+        "kcal": 308,
+        "proteinG": 17,
+        "carbsG": 5,
+        "fatG": 24,
+        "fibreG": 2,
+        "sodiumMg": 995
+      }
     },
     {
       "id": "panzanella",
       "title": "Panzanella",
       "summary": "Tuscan bread salad of ripe tomatoes, cucumber and toasted sourdough soaking up a sharp red wine vinegar dressing.",
       "cuisine": "italian",
-      "mealTypes": ["lunch", "dinner"],
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 25,
       "cookMinutes": 10,
       "servings": 4,
       "onePot": false,
-      "seasons": ["summer"],
-      "diets": ["vegetarian", "vegan", "no-dairy"],
+      "seasons": [
+        "summer"
+      ],
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Salad",
@@ -169,7 +224,12 @@
         },
         {
           "section": "Dressing",
-          "items": ["4 tbsp extra virgin olive oil", "2 tbsp red wine vinegar", "1 garlic clove, crushed", "1/4 tsp black pepper"]
+          "items": [
+            "4 tbsp extra virgin olive oil",
+            "2 tbsp red wine vinegar",
+            "1 garlic clove, crushed",
+            "1/4 tsp black pepper"
+          ]
         }
       ],
       "steps": [
@@ -178,11 +238,21 @@
         "Whisk the dressing ingredients together and pour over the tomatoes. Add the cucumber, onion, capers and toasted bread and toss well.",
         "Leave for 10 to 15 minutes so the bread soaks up the juices, then tear in the basil, toss again and serve."
       ],
-      "notes": ["It needs properly ripe, summer tomatoes. Out of season, use cherry tomatoes, halved."],
+      "notes": [
+        "It needs properly ripe, summer tomatoes. Out of season, use cherry tomatoes, halved."
+      ],
       "image": {
         "key": "panzanella",
         "credit": "Photo: Heather Katsoulis / Wikimedia Commons (CC BY-SA 2.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Italian_Panzanella.jpg"
+      },
+      "nutrition": {
+        "kcal": 441,
+        "proteinG": 10,
+        "carbsG": 46,
+        "fatG": 23,
+        "fibreG": 5,
+        "sodiumMg": 1075
       }
     },
     {
@@ -190,13 +260,17 @@
       "title": "Steak au Poivre",
       "summary": "Pepper-crusted sirloin seared hard and served with a brandy and cream pan sauce and crisp oven chips.",
       "cuisine": "french",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "medium",
       "prepMinutes": 15,
       "cookMinutes": 30,
       "servings": 2,
       "onePot": false,
-      "diets": ["no-gluten"],
+      "diets": [
+        "no-gluten"
+      ],
       "ingredients": [
         {
           "section": "Steak",
@@ -210,11 +284,19 @@
         },
         {
           "section": "Sauce",
-          "items": ["1 French shallot, finely chopped", "60ml brandy", "125ml beef stock", "125ml thickened cream"]
+          "items": [
+            "1 French shallot, finely chopped",
+            "60ml brandy",
+            "125ml beef stock",
+            "125ml thickened cream"
+          ]
         },
         {
           "section": "To serve",
-          "items": ["500g frozen chips", "60g salad leaves"]
+          "items": [
+            "500g frozen chips",
+            "60g salad leaves"
+          ]
         }
       ],
       "steps": [
@@ -233,6 +315,14 @@
         "key": "steak-au-poivre",
         "credit": "Photo: Mark Mitchell / Wikimedia Commons (CC BY 2.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Steak_Au_Poivre.jpg"
+      },
+      "nutrition": {
+        "kcal": 1056,
+        "proteinG": 60,
+        "carbsG": 67,
+        "fatG": 60,
+        "fibreG": 4,
+        "sodiumMg": 1080
       }
     },
     {
@@ -240,14 +330,22 @@
       "title": "Moules Marinières",
       "summary": "Mussels steamed open in white wine, garlic and shallots, with a splash of cream and bread for the broth.",
       "cuisine": "french",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 20,
       "cookMinutes": 10,
       "servings": 4,
       "onePot": true,
-      "seasons": ["autumn", "winter", "spring"],
-      "diets": ["pescatarian"],
+      "seasons": [
+        "autumn",
+        "winter",
+        "spring"
+      ],
+      "diets": [
+        "pescatarian"
+      ],
       "ingredients": [
         {
           "items": [
@@ -265,7 +363,9 @@
         },
         {
           "section": "To serve",
-          "items": ["1 crusty baguette, sliced"]
+          "items": [
+            "1 crusty baguette, sliced"
+          ]
         }
       ],
       "steps": [
@@ -284,6 +384,14 @@
         "key": "moules-marinieres",
         "credit": "Photo: Arnaud 25 / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Moules_marini%C3%A8res_03.jpg"
+      },
+      "nutrition": {
+        "kcal": 428,
+        "proteinG": 35,
+        "carbsG": 26,
+        "fatG": 20,
+        "fibreG": 2,
+        "sodiumMg": 1725
       }
     },
     {
@@ -291,14 +399,23 @@
       "title": "Leek and Potato Soup",
       "summary": "A silky, gently buttery French soup of slow-softened leeks and potatoes, finished with cream and chives.",
       "cuisine": "french",
-      "mealTypes": ["lunch", "dinner"],
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 15,
       "cookMinutes": 40,
       "servings": 4,
       "onePot": true,
-      "seasons": ["autumn", "winter"],
-      "diets": ["vegetarian", "no-gluten"],
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
       "ingredients": [
         {
           "items": [
@@ -318,7 +435,9 @@
         },
         {
           "section": "To serve",
-          "items": ["Crusty bread, to serve (optional)"]
+          "items": [
+            "Crusty bread, to serve (optional)"
+          ]
         }
       ],
       "steps": [
@@ -335,6 +454,14 @@
         "key": "leek-potato-soup",
         "credit": "Photo: jeffreyw / Wikimedia Commons (CC BY 2.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Mmm..._potato_leek_soup_(5849815506).jpg"
+      },
+      "nutrition": {
+        "kcal": 344,
+        "proteinG": 8,
+        "carbsG": 35,
+        "fatG": 18,
+        "fibreG": 5,
+        "sodiumMg": 1120
       }
     },
     {
@@ -342,13 +469,18 @@
       "title": "Crêpes with Lemon and Sugar",
       "summary": "Thin, lacy French pancakes rolled with a squeeze of lemon and a sprinkle of caster sugar.",
       "cuisine": "french",
-      "mealTypes": ["breakfast", "snack"],
+      "mealTypes": [
+        "breakfast",
+        "snack"
+      ],
       "difficulty": "easy",
       "prepMinutes": 35,
       "cookMinutes": 20,
       "servings": 4,
       "onePot": false,
-      "diets": ["vegetarian"],
+      "diets": [
+        "vegetarian"
+      ],
       "ingredients": [
         {
           "section": "Batter",
@@ -363,7 +495,10 @@
         },
         {
           "section": "To serve",
-          "items": ["2 lemons, cut into wedges", "4 tbsp caster sugar"]
+          "items": [
+            "2 lemons, cut into wedges",
+            "4 tbsp caster sugar"
+          ]
         }
       ],
       "steps": [
@@ -373,24 +508,45 @@
         "Cook for about 1 minute, until the edges lift and the underside is golden, then flip and cook for 30 seconds more. Stack the crêpes on a plate under a tea towel while you cook the rest. The first one is usually a tester.",
         "To serve, squeeze lemon over each crêpe, sprinkle with sugar, and fold into quarters or roll up."
       ],
-      "notes": ["Makes about 12. Leftover crêpes keep in the fridge, layered with baking paper, for 2 days."]
+      "notes": [
+        "Makes about 12. Leftover crêpes keep in the fridge, layered with baking paper, for 2 days."
+      ],
+      "nutrition": {
+        "kcal": 355,
+        "proteinG": 12,
+        "carbsG": 47,
+        "fatG": 13,
+        "fibreG": 1,
+        "sodiumMg": 255
+      }
     },
     {
       "id": "patatas-bravas",
       "title": "Patatas Bravas",
       "summary": "Crisp oven-roasted potatoes with a smoky, spicy tomato sauce and a drizzle of garlicky aioli.",
       "cuisine": "spanish",
-      "mealTypes": ["snack", "dinner"],
+      "mealTypes": [
+        "snack",
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 15,
       "cookMinutes": 45,
       "servings": 4,
       "onePot": false,
-      "diets": ["vegetarian", "no-gluten", "no-dairy"],
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Potatoes",
-          "items": ["1kg potatoes, cut into 3cm chunks", "4 tbsp olive oil", "1 tsp salt"]
+          "items": [
+            "1kg potatoes, cut into 3cm chunks",
+            "4 tbsp olive oil",
+            "1 tsp salt"
+          ]
         },
         {
           "section": "Bravas sauce",
@@ -408,7 +564,10 @@
         },
         {
           "section": "To serve",
-          "items": ["100g aioli", "1 tbsp flat-leaf parsley, chopped"]
+          "items": [
+            "100g aioli",
+            "1 tbsp flat-leaf parsley, chopped"
+          ]
         }
       ],
       "steps": [
@@ -426,6 +585,14 @@
         "key": "patatas-bravas",
         "credit": "Photo: Kent Wang / Wikimedia Commons (CC BY-SA 2.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Patatas_bravas_(49415380638).jpg"
+      },
+      "nutrition": {
+        "kcal": 578,
+        "proteinG": 6,
+        "carbsG": 53,
+        "fatG": 36,
+        "fibreG": 9,
+        "sodiumMg": 675
       }
     },
     {
@@ -433,14 +600,22 @@
       "title": "Gambas al Ajillo",
       "summary": "Prawns sizzled in plenty of garlicky, chilli-spiked olive oil, with bread to mop up every drop.",
       "cuisine": "spanish",
-      "mealTypes": ["snack", "dinner"],
+      "mealTypes": [
+        "snack",
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 15,
       "cookMinutes": 8,
       "servings": 4,
       "onePot": true,
-      "seasons": ["summer"],
-      "diets": ["pescatarian", "no-dairy"],
+      "seasons": [
+        "summer"
+      ],
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "items": [
@@ -457,7 +632,9 @@
         },
         {
           "section": "To serve",
-          "items": ["1 crusty baguette, sliced"]
+          "items": [
+            "1 crusty baguette, sliced"
+          ]
         }
       ],
       "steps": [
@@ -467,11 +644,22 @@
         "Sprinkle over the paprika and add the sherry, if using, and let it sizzle for 30 seconds. Scatter with parsley.",
         "Serve straight from the pan, still sizzling, with lemon wedges and bread for the oil."
       ],
-      "notes": ["The prawns overcook quickly: take them off the heat as soon as they curl and turn opaque.", "Food safety: "],
+      "notes": [
+        "The prawns overcook quickly: take them off the heat as soon as they curl and turn opaque.",
+        "Food safety: "
+      ],
       "image": {
         "key": "gambas-al-ajillo",
         "credit": "Photo: Gerda Arendt / Wikimedia Commons (CC0)",
         "source": "https://commons.wikimedia.org/wiki/File:Gambas_con_ajillo,_La_Mata,_La_Palma.jpg"
+      },
+      "nutrition": {
+        "kcal": 489,
+        "proteinG": 33,
+        "carbsG": 19,
+        "fatG": 31,
+        "fibreG": 1,
+        "sodiumMg": 1425
       }
     },
     {
@@ -479,14 +667,23 @@
       "title": "Pan con Tomate",
       "summary": "Catalan toast rubbed with garlic, topped with grated ripe tomato, good olive oil and flaky salt.",
       "cuisine": "spanish",
-      "mealTypes": ["breakfast", "snack"],
+      "mealTypes": [
+        "breakfast",
+        "snack"
+      ],
       "difficulty": "easy",
       "prepMinutes": 10,
       "cookMinutes": 5,
       "servings": 4,
       "onePot": false,
-      "seasons": ["summer"],
-      "diets": ["vegetarian", "vegan", "no-dairy"],
+      "seasons": [
+        "summer"
+      ],
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "items": [
@@ -505,11 +702,21 @@
         "While it's hot, rub one side of each slice lightly with the cut garlic.",
         "Spoon the tomato over the toast, which should be golden and crisp, drizzle generously with olive oil and finish with flaky salt. Top with jamón if you like, and eat straight away."
       ],
-      "notes": ["Without the jamón it's vegan."],
+      "notes": [
+        "Without the jamón it's vegan."
+      ],
       "image": {
         "key": "pan-con-tomate",
         "credit": "Photo: Lablascovegmenu / Wikimedia Commons (CC BY 2.0)",
         "source": "https://commons.wikimedia.org/wiki/File:P%C3%A0_d%27espelta_amb_tom%C3%A0quet_(4671488600).jpg"
+      },
+      "nutrition": {
+        "kcal": 154,
+        "proteinG": 1,
+        "carbsG": 5,
+        "fatG": 14,
+        "fibreG": 2,
+        "sodiumMg": 555
       }
     },
     {
@@ -517,13 +724,18 @@
       "title": "Albóndigas in Tomato Sauce",
       "summary": "Tender Spanish pork and beef meatballs simmered in a smoky paprika and white wine tomato sauce.",
       "cuisine": "spanish",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "medium",
       "prepMinutes": 25,
       "cookMinutes": 40,
       "servings": 4,
       "onePot": false,
-      "seasons": ["autumn", "winter"],
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
       "diets": [],
       "ingredients": [
         {
@@ -557,7 +769,10 @@
         },
         {
           "section": "To serve",
-          "items": ["1 crusty baguette, sliced", "1 tbsp flat-leaf parsley, chopped"]
+          "items": [
+            "1 crusty baguette, sliced",
+            "1 tbsp flat-leaf parsley, chopped"
+          ]
         }
       ],
       "steps": [
@@ -575,6 +790,14 @@
         "key": "albondigas",
         "credit": "Photo: Juan Emilio Prades Bel / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Alb%C3%B3ndigas_de_carne_con_sofrito_de_tomate,_cebolla,_ajo_y_perejil.jpg"
+      },
+      "nutrition": {
+        "kcal": 586,
+        "proteinG": 46,
+        "carbsG": 32,
+        "fatG": 30,
+        "fibreG": 2,
+        "sodiumMg": 1470
       }
     },
     {
@@ -582,14 +805,22 @@
       "title": "Spanakopita",
       "summary": "Crisp layers of buttery filo around a creamy spinach, feta, dill and spring onion filling.",
       "cuisine": "greek",
-      "mealTypes": ["lunch", "snack", "dinner"],
+      "mealTypes": [
+        "lunch",
+        "snack",
+        "dinner"
+      ],
       "difficulty": "medium",
       "prepMinutes": 30,
       "cookMinutes": 45,
       "servings": 6,
       "onePot": false,
-      "seasons": ["spring"],
-      "diets": ["vegetarian"],
+      "seasons": [
+        "spring"
+      ],
+      "diets": [
+        "vegetarian"
+      ],
       "ingredients": [
         {
           "section": "Filling",
@@ -608,7 +839,11 @@
         },
         {
           "section": "Pastry",
-          "items": ["12 sheets filo pastry", "80g butter, melted", "1 tsp sesame seeds (optional)"]
+          "items": [
+            "12 sheets filo pastry",
+            "80g butter, melted",
+            "1 tsp sesame seeds (optional)"
+          ]
         }
       ],
       "steps": [
@@ -628,6 +863,14 @@
         "key": "spanakopita",
         "credit": "Photo: Tanya Bakogiannis / Wikimedia Commons (CC BY 3.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Spanikopita_Greek_dish.jpg"
+      },
+      "nutrition": {
+        "kcal": 468,
+        "proteinG": 18,
+        "carbsG": 17,
+        "fatG": 36,
+        "fibreG": 2,
+        "sodiumMg": 820
       }
     },
     {
@@ -635,13 +878,18 @@
       "title": "Pastitsio",
       "summary": "Greek baked pasta with a cinnamon-spiced beef sauce under a thick, golden layer of béchamel.",
       "cuisine": "greek",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "medium",
       "prepMinutes": 30,
       "cookMinutes": 90,
       "servings": 6,
       "onePot": false,
-      "seasons": ["autumn", "winter"],
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
       "diets": [],
       "ingredients": [
         {
@@ -664,7 +912,11 @@
         },
         {
           "section": "Pasta",
-          "items": ["400g penne", "1 egg white", "40g parmesan, finely grated"]
+          "items": [
+            "400g penne",
+            "1 egg white",
+            "40g parmesan, finely grated"
+          ]
         },
         {
           "section": "Béchamel",
@@ -696,6 +948,14 @@
         "key": "pastitsio",
         "credit": "Photo: Robert Kindermann / Wikimedia Commons (CC BY-SA 2.5)",
         "source": "https://commons.wikimedia.org/wiki/File:Pastitsio.jpg"
+      },
+      "nutrition": {
+        "kcal": 928,
+        "proteinG": 56,
+        "carbsG": 66,
+        "fatG": 48,
+        "fibreG": 4,
+        "sodiumMg": 835
       }
     },
     {
@@ -703,14 +963,23 @@
       "title": "Avgolemono",
       "summary": "Greek chicken and rice soup turned silky and bright with a whisked egg and lemon finish.",
       "cuisine": "greek",
-      "mealTypes": ["lunch", "dinner"],
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
       "difficulty": "medium",
       "prepMinutes": 10,
       "cookMinutes": 40,
       "servings": 4,
       "onePot": true,
-      "seasons": ["autumn", "winter"],
-      "diets": ["no-gluten", "no-dairy"],
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "items": [
@@ -734,11 +1003,22 @@
         "Pour the egg mixture back into the pan, stirring, then return the chicken. Keep the soup over low heat, stirring, for 3 to 4 minutes until it thickens slightly and is steaming. Don't let it boil, or the eggs will curdle.",
         "Season with salt, pepper and more lemon to taste, and serve scattered with dill."
       ],
-      "notes": ["Reheat leftovers gently over low heat, stirring, and never let it boil.", "Food safety: "],
+      "notes": [
+        "Reheat leftovers gently over low heat, stirring, and never let it boil.",
+        "Food safety: "
+      ],
       "image": {
         "key": "avgolemono",
         "credit": "Photo: Missvain / Wikimedia Commons (CC BY 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Athenian_Grill_-_April_2023_-_Sarah_Stierch_09.jpg"
+      },
+      "nutrition": {
+        "kcal": 449,
+        "proteinG": 44,
+        "carbsG": 29,
+        "fatG": 17,
+        "fibreG": 2,
+        "sodiumMg": 1715
       }
     },
     {
@@ -746,14 +1026,25 @@
       "title": "Briam",
       "summary": "Greek tray-baked summer vegetables in tomato and plenty of olive oil, slow-roasted until sweet and jammy.",
       "cuisine": "greek",
-      "mealTypes": ["dinner", "lunch"],
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
       "difficulty": "easy",
       "prepMinutes": 25,
       "cookMinutes": 75,
       "servings": 4,
       "onePot": true,
-      "seasons": ["summer", "autumn"],
-      "diets": ["vegetarian", "vegan", "no-gluten", "no-dairy"],
+      "seasons": [
+        "summer",
+        "autumn"
+      ],
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "items": [
@@ -774,7 +1065,10 @@
         },
         {
           "section": "To serve",
-          "items": ["100g feta, crumbled (optional)", "Crusty bread, to serve (optional)"]
+          "items": [
+            "100g feta, crumbled (optional)",
+            "Crusty bread, to serve (optional)"
+          ]
         }
       ],
       "steps": [
@@ -792,6 +1086,14 @@
         "key": "briam",
         "credit": "Photo: Dianeira / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Briam.jpg"
+      },
+      "nutrition": {
+        "kcal": 484,
+        "proteinG": 6,
+        "carbsG": 44,
+        "fatG": 30,
+        "fibreG": 7,
+        "sodiumMg": 1030
       }
     },
     {
@@ -799,14 +1101,21 @@
       "title": "Menemen",
       "summary": "Turkish breakfast eggs softly scrambled into sweet tomatoes and green peppers, with bread for scooping.",
       "cuisine": "turkish",
-      "mealTypes": ["breakfast", "lunch"],
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
       "difficulty": "easy",
       "prepMinutes": 10,
       "cookMinutes": 15,
       "servings": 2,
       "onePot": true,
-      "seasons": ["summer"],
-      "diets": ["vegetarian"],
+      "seasons": [
+        "summer"
+      ],
+      "diets": [
+        "vegetarian"
+      ],
       "ingredients": [
         {
           "items": [
@@ -823,7 +1132,9 @@
         },
         {
           "section": "To serve",
-          "items": ["Crusty bread, to serve"]
+          "items": [
+            "Crusty bread, to serve"
+          ]
         }
       ],
       "steps": [
@@ -841,6 +1152,14 @@
         "key": "menemen",
         "credit": "Photo: E4024 / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Menemen_in_a_sahan.jpg"
+      },
+      "nutrition": {
+        "kcal": 338,
+        "proteinG": 16,
+        "carbsG": 12,
+        "fatG": 24,
+        "fibreG": 5,
+        "sodiumMg": 865
       }
     },
     {
@@ -848,17 +1167,29 @@
       "title": "Lahmacun",
       "summary": "Thin, crisp Turkish flatbreads spread with spiced lamb, then rolled up with parsley, onion and lemon.",
       "cuisine": "turkish",
-      "mealTypes": ["lunch", "dinner"],
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
       "difficulty": "medium",
       "prepMinutes": 90,
       "cookMinutes": 30,
       "servings": 4,
       "onePot": false,
-      "diets": ["no-dairy"],
+      "diets": [
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Dough",
-          "items": ["400g plain flour", "7g instant dried yeast", "1 tsp white sugar", "1 tsp salt", "250ml warm water", "2 tbsp olive oil"]
+          "items": [
+            "400g plain flour",
+            "7g instant dried yeast",
+            "1 tsp white sugar",
+            "1 tsp salt",
+            "250ml warm water",
+            "2 tbsp olive oil"
+          ]
         },
         {
           "section": "Topping",
@@ -878,7 +1209,12 @@
         },
         {
           "section": "To serve",
-          "items": ["1 red onion, thinly sliced", "1 tsp sumac", "1 bunch flat-leaf parsley, leaves picked", "2 lemons, cut into wedges"]
+          "items": [
+            "1 red onion, thinly sliced",
+            "1 tsp sumac",
+            "1 bunch flat-leaf parsley, leaves picked",
+            "2 lemons, cut into wedges"
+          ]
         }
       ],
       "steps": [
@@ -897,6 +1233,14 @@
         "key": "lahmacun",
         "credit": "Photo: Rainer Zenz / Wikimedia Commons (CC BY-SA 3.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Lahmacun.jpg"
+      },
+      "nutrition": {
+        "kcal": 642,
+        "proteinG": 31,
+        "carbsG": 82,
+        "fatG": 20,
+        "fibreG": 5,
+        "sodiumMg": 1215
       }
     },
     {
@@ -904,14 +1248,25 @@
       "title": "Imam Bayildi",
       "summary": "Whole eggplants braised in olive oil and stuffed with sweet, slow-cooked onion, garlic and tomato.",
       "cuisine": "turkish",
-      "mealTypes": ["dinner", "lunch"],
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
       "difficulty": "medium",
       "prepMinutes": 25,
       "cookMinutes": 70,
       "servings": 4,
       "onePot": false,
-      "seasons": ["summer", "autumn"],
-      "diets": ["vegetarian", "vegan", "no-gluten", "no-dairy"],
+      "seasons": [
+        "summer",
+        "autumn"
+      ],
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "items": [
@@ -930,7 +1285,9 @@
         },
         {
           "section": "To serve",
-          "items": ["Crusty bread, to serve (optional)"]
+          "items": [
+            "Crusty bread, to serve (optional)"
+          ]
         }
       ],
       "steps": [
@@ -941,11 +1298,21 @@
         "Cover with foil and bake for 30 minutes, then uncover and bake for 10 to 15 minutes more until the eggplants are completely soft.",
         "Cool to warm or room temperature, which is how it's traditionally eaten. Scatter with the remaining parsley and serve with bread."
       ],
-      "notes": ["The name means 'the imam fainted', said to be at how good it was (or at how much olive oil it used)."],
+      "notes": [
+        "The name means 'the imam fainted', said to be at how good it was (or at how much olive oil it used)."
+      ],
       "image": {
         "key": "imam-bayildi",
         "credit": "Photo: E4024 / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Imam_bay%C4%B1ld%C4%B1.jpg"
+      },
+      "nutrition": {
+        "kcal": 473,
+        "proteinG": 8,
+        "carbsG": 38,
+        "fatG": 31,
+        "fibreG": 5,
+        "sodiumMg": 2170
       }
     },
     {
@@ -953,17 +1320,27 @@
       "title": "Spinach and Feta Gözleme",
       "summary": "Thin Turkish griddle breads folded around spinach, feta and onion, cooked crisp in a dry pan with butter.",
       "cuisine": "turkish",
-      "mealTypes": ["lunch", "snack"],
+      "mealTypes": [
+        "lunch",
+        "snack"
+      ],
       "difficulty": "medium",
       "prepMinutes": 50,
       "cookMinutes": 25,
       "servings": 4,
       "onePot": false,
-      "diets": ["vegetarian"],
+      "diets": [
+        "vegetarian"
+      ],
       "ingredients": [
         {
           "section": "Dough",
-          "items": ["400g plain flour", "1 tsp salt", "250ml warm water", "2 tbsp olive oil"]
+          "items": [
+            "400g plain flour",
+            "1 tsp salt",
+            "250ml warm water",
+            "2 tbsp olive oil"
+          ]
         },
         {
           "section": "Filling",
@@ -978,7 +1355,10 @@
         },
         {
           "section": "To cook and serve",
-          "items": ["40g butter, melted", "1 lemon, cut into wedges"]
+          "items": [
+            "40g butter, melted",
+            "1 lemon, cut into wedges"
+          ]
         }
       ],
       "steps": [
@@ -988,11 +1368,21 @@
         "Heat a large dry frying pan or flat griddle over medium heat. Cook one gözleme at a time for 3 minutes a side, brushing the top with melted butter before turning, until crisp and golden in spots.",
         "Cut into pieces and serve hot with lemon wedges."
       ],
-      "notes": ["Swap half the spinach for cooked lamb mince, or add some grated mozzarella for a stretchier filling."],
+      "notes": [
+        "Swap half the spinach for cooked lamb mince, or add some grated mozzarella for a stretchier filling."
+      ],
       "image": {
         "key": "gozleme",
         "credit": "Photo: Maderibeyza / Wikimedia Commons (CC BY-SA 3.0)",
         "source": "https://commons.wikimedia.org/wiki/File:G%C3%B6zleme.JPG"
+      },
+      "nutrition": {
+        "kcal": 711,
+        "proteinG": 23,
+        "carbsG": 78,
+        "fatG": 33,
+        "fibreG": 5,
+        "sodiumMg": 955
       }
     },
     {
@@ -1000,25 +1390,47 @@
       "title": "Za'atar Manakish",
       "summary": "Lebanese breakfast flatbreads spread with za'atar and olive oil, baked hot and eaten with tomato, cucumber and mint.",
       "cuisine": "middle-eastern",
-      "mealTypes": ["breakfast", "snack"],
+      "mealTypes": [
+        "breakfast",
+        "snack"
+      ],
       "difficulty": "easy",
       "prepMinutes": 90,
       "cookMinutes": 20,
       "servings": 4,
       "onePot": false,
-      "diets": ["vegetarian", "vegan", "no-dairy"],
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Dough",
-          "items": ["400g plain flour", "7g instant dried yeast", "1 tsp white sugar", "1 tsp salt", "250ml warm water", "2 tbsp olive oil"]
+          "items": [
+            "400g plain flour",
+            "7g instant dried yeast",
+            "1 tsp white sugar",
+            "1 tsp salt",
+            "250ml warm water",
+            "2 tbsp olive oil"
+          ]
         },
         {
           "section": "Topping",
-          "items": ["5 tbsp za'atar", "100ml extra virgin olive oil"]
+          "items": [
+            "5 tbsp za'atar",
+            "100ml extra virgin olive oil"
+          ]
         },
         {
           "section": "To serve",
-          "items": ["2 tomatoes, sliced", "2 Lebanese cucumbers, sliced", "Handful of mint leaves", "200g labneh (optional)"]
+          "items": [
+            "2 tomatoes, sliced",
+            "2 Lebanese cucumbers, sliced",
+            "Handful of mint leaves",
+            "200g labneh (optional)"
+          ]
         }
       ],
       "steps": [
@@ -1028,11 +1440,21 @@
         "Spread each with the za'atar oil, leaving a thin border. Slide onto the hot trays and bake for 7 to 9 minutes until the edges are golden and the base is crisp.",
         "Serve warm, folded around tomato, cucumber, mint and labneh."
       ],
-      "notes": ["With the labneh left out, they're vegan."],
+      "notes": [
+        "With the labneh left out, they're vegan."
+      ],
       "image": {
         "key": "manakish",
         "credit": "Photo: Nsaum75 / Wikimedia Commons (CC BY-SA 3.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Israeli_zaatar_manakeesh.jpg"
+      },
+      "nutrition": {
+        "kcal": 645,
+        "proteinG": 12,
+        "carbsG": 78,
+        "fatG": 31,
+        "fibreG": 3,
+        "sodiumMg": 750
       }
     },
     {
@@ -1040,13 +1462,17 @@
       "title": "Musakhan",
       "summary": "Palestinian roast chicken on flatbread, under a deep layer of sumac-stained onions and toasted pine nuts.",
       "cuisine": "middle-eastern",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "medium",
       "prepMinutes": 40,
       "cookMinutes": 70,
       "servings": 4,
       "onePot": false,
-      "diets": ["no-dairy"],
+      "diets": [
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Chicken",
@@ -1063,11 +1489,20 @@
         },
         {
           "section": "Onions",
-          "items": ["125ml olive oil", "1kg brown onions, thinly sliced", "2 tbsp sumac", "1/2 tsp salt"]
+          "items": [
+            "125ml olive oil",
+            "1kg brown onions, thinly sliced",
+            "2 tbsp sumac",
+            "1/2 tsp salt"
+          ]
         },
         {
           "section": "To finish",
-          "items": ["4 large Lebanese bread rounds", "40g pine nuts", "2 tbsp flat-leaf parsley, chopped"]
+          "items": [
+            "4 large Lebanese bread rounds",
+            "40g pine nuts",
+            "2 tbsp flat-leaf parsley, chopped"
+          ]
         }
       ],
       "steps": [
@@ -1078,11 +1513,22 @@
         "Lay the breads on two trays and brush with some of the onion oil. Spread with the onions, sit the chicken on top and spoon over any pan juices. Return to the oven for 5 to 8 minutes, until the bread edges are crisp.",
         "Scatter with pine nuts and parsley and serve, tearing the bread to eat with the chicken."
       ],
-      "notes": ["In Palestine it's made with taboon bread. Large Lebanese bread is the closest at the supermarket.", "Food safety: "],
+      "notes": [
+        "In Palestine it's made with taboon bread. Large Lebanese bread is the closest at the supermarket.",
+        "Food safety: "
+      ],
       "image": {
         "key": "musakhan",
         "credit": "Photo: Kokaly / Wikimedia Commons (CC BY-SA 3.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Mushakhan_Dish.jpg"
+      },
+      "nutrition": {
+        "kcal": 653,
+        "proteinG": 10,
+        "carbsG": 48,
+        "fatG": 45,
+        "fibreG": 8,
+        "sodiumMg": 2115
       }
     },
     {
@@ -1090,13 +1536,18 @@
       "title": "Baked Kibbeh",
       "summary": "A tray of spiced lamb and bulgur, layered around a pine nut and onion filling and baked until crisp-edged.",
       "cuisine": "middle-eastern",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "medium",
       "prepMinutes": 40,
       "cookMinutes": 50,
       "servings": 6,
       "onePot": false,
-      "seasons": ["autumn", "winter"],
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
       "diets": [],
       "ingredients": [
         {
@@ -1126,7 +1577,11 @@
         },
         {
           "section": "To finish and serve",
-          "items": ["4 tbsp olive oil", "300g Greek yoghurt", "2 Lebanese cucumbers, diced"]
+          "items": [
+            "4 tbsp olive oil",
+            "300g Greek yoghurt",
+            "2 Lebanese cucumbers, diced"
+          ]
         }
       ],
       "steps": [
@@ -1137,11 +1592,22 @@
         "Score the top into diamonds, cutting right through to the base. Drizzle the olive oil over and into the cuts.",
         "Bake for 40 to 45 minutes until deep brown at the edges and cooked through (75°C in the centre). Rest for 10 minutes, then serve with the yoghurt mixed with cucumber."
       ],
-      "notes": ["Fine bulgur is essential for the shell. Coarse bulgur won't bind.", "Food safety: "],
+      "notes": [
+        "Fine bulgur is essential for the shell. Coarse bulgur won't bind.",
+        "Food safety: "
+      ],
       "image": {
         "key": "baked-kibbeh",
         "credit": "Photo: Amaiursancho5 / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Kibbeh_Bil_Sanieh.jpg"
+      },
+      "nutrition": {
+        "kcal": 686,
+        "proteinG": 42,
+        "carbsG": 37,
+        "fatG": 40,
+        "fibreG": 5,
+        "sodiumMg": 605
       }
     },
     {
@@ -1149,13 +1615,19 @@
       "title": "Muhammara",
       "summary": "A smoky, sweet-sour Syrian dip of roasted capsicum, walnuts and pomegranate molasses.",
       "cuisine": "middle-eastern",
-      "mealTypes": ["snack"],
+      "mealTypes": [
+        "snack"
+      ],
       "difficulty": "easy",
       "prepMinutes": 15,
       "cookMinutes": 5,
       "servings": 6,
       "onePot": false,
-      "diets": ["vegetarian", "vegan", "no-dairy"],
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "items": [
@@ -1173,7 +1645,9 @@
         },
         {
           "section": "To serve",
-          "items": ["4 pita breads, warmed and cut into wedges"]
+          "items": [
+            "4 pita breads, warmed and cut into wedges"
+          ]
         }
       ],
       "steps": [
@@ -1182,20 +1656,34 @@
         "Pulse to a thick, slightly coarse paste. With the motor running, drizzle in 3 tbsp of the oil.",
         "Taste and adjust: it should be sweet, sour, smoky and gently hot. Spread on a plate, drizzle with the remaining oil and top with the reserved walnuts, roughly chopped. Serve with warm pita."
       ],
-      "notes": ["Keeps in the fridge for 4 days and is good with grilled meat as well as on bread."]
+      "notes": [
+        "Keeps in the fridge for 4 days and is good with grilled meat as well as on bread."
+      ],
+      "nutrition": {
+        "kcal": 330,
+        "proteinG": 8,
+        "carbsG": 33,
+        "fatG": 18,
+        "fibreG": 2,
+        "sodiumMg": 610
+      }
     },
     {
       "id": "kefta-tagine",
       "title": "Kefta Tagine with Eggs",
       "summary": "Moroccan spiced beef meatballs simmered in a cumin and tomato sauce, finished with eggs baked in the pan.",
       "cuisine": "north-african",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "medium",
       "prepMinutes": 25,
       "cookMinutes": 40,
       "servings": 4,
       "onePot": true,
-      "diets": ["no-dairy"],
+      "diets": [
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Kefta",
@@ -1229,7 +1717,9 @@
         },
         {
           "section": "To serve",
-          "items": ["Crusty bread, to serve"]
+          "items": [
+            "Crusty bread, to serve"
+          ]
         }
       ],
       "steps": [
@@ -1249,6 +1739,14 @@
         "key": "kefta-tagine",
         "credit": "Photo: Mzximvs VdB / Wikimedia Commons (CC BY-SA 2.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Tajine_kefta_(8348397161).jpg"
+      },
+      "nutrition": {
+        "kcal": 535,
+        "proteinG": 46,
+        "carbsG": 12,
+        "fatG": 33,
+        "fibreG": 3,
+        "sodiumMg": 1185
       }
     },
     {
@@ -1256,17 +1754,28 @@
       "title": "Koshari",
       "summary": "Egypt's street-food staple: lentils, rice and macaroni under a sharp tomato sauce and a heap of crisp onions.",
       "cuisine": "north-african",
-      "mealTypes": ["dinner", "lunch"],
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
       "difficulty": "medium",
       "prepMinutes": 15,
       "cookMinutes": 55,
       "servings": 5,
       "onePot": false,
-      "diets": ["vegetarian", "vegan", "no-dairy"],
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Crisp onions",
-          "items": ["3 brown onions, halved and thinly sliced", "125ml neutral oil", "1/4 tsp salt"]
+          "items": [
+            "3 brown onions, halved and thinly sliced",
+            "125ml neutral oil",
+            "1/4 tsp salt"
+          ]
         },
         {
           "section": "Lentils, rice and pasta",
@@ -1293,7 +1802,12 @@
         },
         {
           "section": "Garlic vinegar",
-          "items": ["60ml white vinegar", "2 garlic cloves, crushed", "1/2 tsp ground cumin", "2 tbsp water"]
+          "items": [
+            "60ml white vinegar",
+            "2 garlic cloves, crushed",
+            "1/2 tsp ground cumin",
+            "2 tbsp water"
+          ]
         }
       ],
       "steps": [
@@ -1313,6 +1827,14 @@
         "key": "koshari",
         "credit": "Photo: Dina Said / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Egyptian_food_Koshary.jpg"
+      },
+      "nutrition": {
+        "kcal": 796,
+        "proteinG": 26,
+        "carbsG": 102,
+        "fatG": 28,
+        "fibreG": 16,
+        "sodiumMg": 450
       }
     },
     {
@@ -1320,13 +1842,20 @@
       "title": "Moroccan Carrot Salad",
       "summary": "Just-tender carrots dressed while warm with cumin, paprika, garlic and lemon, then heaped with fresh herbs.",
       "cuisine": "north-african",
-      "mealTypes": ["lunch", "dinner"],
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 15,
       "cookMinutes": 10,
       "servings": 4,
       "onePot": false,
-      "diets": ["vegetarian", "no-gluten", "no-dairy"],
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "items": [
@@ -1353,20 +1882,33 @@
       "notes": [
         "It keeps for 2 days in the fridge and tastes better on the second. Add the herbs on the day you eat it.",
         "Good alongside grilled lamb, chicken or a pile of flatbreads and hummus."
-      ]
+      ],
+      "nutrition": {
+        "kcal": 155,
+        "proteinG": 2,
+        "carbsG": 11,
+        "fatG": 11,
+        "fibreG": 2,
+        "sodiumMg": 305
+      }
     },
     {
       "id": "harcha",
       "title": "Harcha",
       "summary": "Moroccan semolina griddle breads, crumbly and buttery, split warm and spread with butter and honey.",
       "cuisine": "north-african",
-      "mealTypes": ["breakfast", "snack"],
+      "mealTypes": [
+        "breakfast",
+        "snack"
+      ],
       "difficulty": "easy",
       "prepMinutes": 25,
       "cookMinutes": 25,
       "servings": 4,
       "onePot": false,
-      "diets": ["vegetarian"],
+      "diets": [
+        "vegetarian"
+      ],
       "ingredients": [
         {
           "section": "Harcha",
@@ -1382,7 +1924,10 @@
         },
         {
           "section": "To serve",
-          "items": ["40g butter, softened", "3 tbsp honey"]
+          "items": [
+            "40g butter, softened",
+            "3 tbsp honey"
+          ]
         }
       ],
       "steps": [
@@ -1400,6 +1945,14 @@
         "key": "harcha",
         "credit": "Photo: Lucyin / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Ary-7ercha.JPG"
+      },
+      "nutrition": {
+        "kcal": 647,
+        "proteinG": 10,
+        "carbsG": 81,
+        "fatG": 31,
+        "fibreG": 2,
+        "sodiumMg": 455
       }
     },
     {
@@ -1407,13 +1960,18 @@
       "title": "Chicken Yassa",
       "summary": "Senegalese chicken marinated in lemon and mustard, braised in a pot of sweet, slow-cooked onions.",
       "cuisine": "west-african",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "medium",
       "prepMinutes": 140,
       "cookMinutes": 60,
       "servings": 4,
       "onePot": false,
-      "diets": ["no-gluten", "no-dairy"],
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Chicken and marinade",
@@ -1439,7 +1997,9 @@
         },
         {
           "section": "To serve",
-          "items": ["300g white rice"]
+          "items": [
+            "300g white rice"
+          ]
         }
       ],
       "steps": [
@@ -1459,6 +2019,14 @@
         "key": "chicken-yassa",
         "credit": "Photo: Arnaud 25 / Wikimedia Commons (CC0)",
         "source": "https://commons.wikimedia.org/wiki/File:Poulet_yassa_01.jpg"
+      },
+      "nutrition": {
+        "kcal": 903,
+        "proteinG": 59,
+        "carbsG": 63,
+        "fatG": 45,
+        "fibreG": 5,
+        "sodiumMg": 1055
       }
     },
     {
@@ -1466,13 +2034,21 @@
       "title": "Red Red",
       "summary": "Ghanaian black-eyed bean stew in a gingery tomato sauce, served with sweet fried plantain.",
       "cuisine": "west-african",
-      "mealTypes": ["dinner", "lunch"],
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
       "difficulty": "easy",
       "prepMinutes": 15,
       "cookMinutes": 35,
       "servings": 4,
       "onePot": false,
-      "diets": ["vegetarian", "vegan", "no-gluten", "no-dairy"],
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Beans",
@@ -1492,11 +2068,17 @@
         },
         {
           "section": "Plantain",
-          "items": ["3 ripe plantains, black-spotted", "Neutral oil, for shallow-frying", "1/2 tsp salt"]
+          "items": [
+            "3 ripe plantains, black-spotted",
+            "Neutral oil, for shallow-frying",
+            "1/2 tsp salt"
+          ]
         },
         {
           "section": "To serve",
-          "items": ["2 spring onions, sliced"]
+          "items": [
+            "2 spring onions, sliced"
+          ]
         }
       ],
       "steps": [
@@ -1509,20 +2091,34 @@
       "notes": [
         "The name comes from the red palm oil the stew is made with, and the red of the plantain. If you find red palm oil at an African grocer, use it instead of the neutral oil.",
         "Plantains need to be yellow with lots of black spots to fry sweet and soft. Green ones are starchy and suit boiling instead."
-      ]
+      ],
+      "nutrition": {
+        "kcal": 504,
+        "proteinG": 13,
+        "carbsG": 58,
+        "fatG": 20,
+        "fibreG": 20,
+        "sodiumMg": 1050
+      }
     },
     {
       "id": "puff-puff",
       "title": "Puff-Puff",
       "summary": "Soft, golden West African doughnut balls, lightly sweet with a hint of nutmeg.",
       "cuisine": "west-african",
-      "mealTypes": ["snack"],
+      "mealTypes": [
+        "snack"
+      ],
       "difficulty": "medium",
       "prepMinutes": 75,
       "cookMinutes": 25,
       "servings": 6,
       "onePot": false,
-      "diets": ["vegetarian", "vegan", "no-dairy"],
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "items": [
@@ -1552,6 +2148,14 @@
         "key": "puff-puff",
         "credit": "Photo: Dappasolomon001 / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Puff_Puff_Making_series_6.jpg"
+      },
+      "nutrition": {
+        "kcal": 370,
+        "proteinG": 9,
+        "carbsG": 78,
+        "fatG": 2,
+        "fibreG": 2,
+        "sodiumMg": 335
       }
     },
     {
@@ -1559,13 +2163,20 @@
       "title": "Kelewele",
       "summary": "Ghana's spiced fried plantain: ripe cubes tossed in ginger and chilli, fried until caramelised.",
       "cuisine": "west-african",
-      "mealTypes": ["snack"],
+      "mealTypes": [
+        "snack"
+      ],
       "difficulty": "easy",
       "prepMinutes": 25,
       "cookMinutes": 15,
       "servings": 4,
       "onePot": false,
-      "diets": ["vegetarian", "vegan", "no-gluten", "no-dairy"],
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "items": [
@@ -1594,6 +2205,14 @@
         "key": "kelewele",
         "credit": "Photo: Edithobayaa1 / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:%E2%80%9CKelewele%E2%80%9D_in_Ghana.jpg"
+      },
+      "nutrition": {
+        "kcal": 282,
+        "proteinG": 4,
+        "carbsG": 45,
+        "fatG": 6,
+        "fibreG": 16,
+        "sodiumMg": 290
       }
     },
     {
@@ -1601,14 +2220,22 @@
       "title": "Sosaties",
       "summary": "Cape Malay lamb skewers with dried apricots, marinated overnight in a sweet-sour curry sauce.",
       "cuisine": "south-african",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "medium",
       "prepMinutes": 270,
       "cookMinutes": 25,
       "servings": 5,
       "onePot": false,
-      "seasons": ["spring", "summer"],
-      "diets": ["no-gluten", "no-dairy"],
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Marinade",
@@ -1628,11 +2255,17 @@
         },
         {
           "section": "Skewers",
-          "items": ["1kg boneless lamb leg, cut into 3cm cubes", "150g dried apricots", "1 red onion, cut into 3cm pieces"]
+          "items": [
+            "1kg boneless lamb leg, cut into 3cm cubes",
+            "150g dried apricots",
+            "1 red onion, cut into 3cm pieces"
+          ]
         },
         {
           "section": "To serve",
-          "items": ["300g white rice"]
+          "items": [
+            "300g white rice"
+          ]
         }
       ],
       "steps": [
@@ -1651,6 +2284,14 @@
         "key": "sosaties",
         "credit": "Photo: Ossewa / Wikimedia Commons (CC BY 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Sosaties_braai.jpg"
+      },
+      "nutrition": {
+        "kcal": 675,
+        "proteinG": 46,
+        "carbsG": 64,
+        "fatG": 25,
+        "fibreG": 5,
+        "sodiumMg": 290
       }
     },
     {
@@ -1658,14 +2299,22 @@
       "title": "Tomato Bredie",
       "summary": "A slow South African lamb and tomato stew, warmly spiced with cinnamon and ginger, with potatoes cooked in.",
       "cuisine": "south-african",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 25,
       "cookMinutes": 150,
       "servings": 5,
       "onePot": true,
-      "seasons": ["autumn", "winter"],
-      "diets": ["no-gluten", "no-dairy"],
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Stew",
@@ -1689,7 +2338,9 @@
         },
         {
           "section": "To serve",
-          "items": ["300g white rice"]
+          "items": [
+            "300g white rice"
+          ]
         }
       ],
       "steps": [
@@ -1703,20 +2354,35 @@
         "Like most stews it's better the next day. Cool it quickly, refrigerate within an hour and reheat until bubbling.",
         "Use ripe summer tomatoes if you can. In winter, swap half for a 400g tin of chopped tomatoes.",
         "Food safety: Braised beef and lamb cook well past 75°C on the way to tender, so they are safe once soft."
-      ]
+      ],
+      "nutrition": {
+        "kcal": 858,
+        "proteinG": 58,
+        "carbsG": 76,
+        "fatG": 34,
+        "fibreG": 8,
+        "sodiumMg": 665
+      }
     },
     {
       "id": "chakalaka-pap",
       "title": "Chakalaka and Pap",
       "summary": "South Africa's spicy vegetable and bean relish, served on soft, steaming maize porridge.",
       "cuisine": "south-african",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 15,
       "cookMinutes": 35,
       "servings": 4,
       "onePot": false,
-      "diets": ["vegetarian", "vegan", "no-gluten", "no-dairy"],
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Chakalaka",
@@ -1737,7 +2403,12 @@
         },
         {
           "section": "Pap",
-          "items": ["1.25L water", "250g polenta (or white maize meal)", "1 tsp salt", "20g butter (optional)"]
+          "items": [
+            "1.25L water",
+            "250g polenta (or white maize meal)",
+            "1 tsp salt",
+            "20g butter (optional)"
+          ]
         }
       ],
       "steps": [
@@ -1750,20 +2421,33 @@
       "notes": [
         "Instant polenta cooks in about 5 minutes; follow the packet. White maize meal from an African grocer gives the most authentic pap.",
         "Chakalaka is also the classic side at a braai, next to sausages and chops."
-      ]
+      ],
+      "nutrition": {
+        "kcal": 450,
+        "proteinG": 15,
+        "carbsG": 70,
+        "fatG": 10,
+        "fibreG": 10,
+        "sodiumMg": 850
+      }
     },
     {
       "id": "vetkoek",
       "title": "Vetkoek with Curried Mince",
       "summary": "Golden fried bread puffs, split while hot and stuffed with gently curried beef mince.",
       "cuisine": "south-african",
-      "mealTypes": ["lunch", "snack"],
+      "mealTypes": [
+        "lunch",
+        "snack"
+      ],
       "difficulty": "medium",
       "prepMinutes": 100,
       "cookMinutes": 40,
       "servings": 6,
       "onePot": false,
-      "diets": ["no-dairy"],
+      "diets": [
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Dough",
@@ -1807,20 +2491,32 @@
         "Never leave hot oil unattended, and let it cool completely before moving the pan.",
         "Vetkoek are also good with butter and golden syrup, or cheese and apricot jam.",
         "Food safety: "
-      ]
+      ],
+      "nutrition": {
+        "kcal": 564,
+        "proteinG": 32,
+        "carbsG": 71,
+        "fatG": 16,
+        "fibreG": 4,
+        "sodiumMg": 595
+      }
     },
     {
       "id": "upma",
       "title": "Upma",
       "summary": "A South Indian breakfast of toasted semolina cooked soft with mustard seeds, curry leaves, cashews and vegetables.",
       "cuisine": "indian",
-      "mealTypes": ["breakfast"],
+      "mealTypes": [
+        "breakfast"
+      ],
       "difficulty": "easy",
       "prepMinutes": 10,
       "cookMinutes": 20,
       "servings": 3,
       "onePot": true,
-      "diets": ["vegetarian"],
+      "diets": [
+        "vegetarian"
+      ],
       "ingredients": [
         {
           "items": [
@@ -1857,6 +2553,14 @@
         "key": "upma",
         "credit": "Photo: spurekar / Wikimedia Commons (CC BY 2.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Sanza_upma_(49712703693).jpg"
+      },
+      "nutrition": {
+        "kcal": 417,
+        "proteinG": 11,
+        "carbsG": 53,
+        "fatG": 17,
+        "fibreG": 4,
+        "sodiumMg": 745
       }
     },
     {
@@ -1864,14 +2568,22 @@
       "title": "Pork Vindaloo",
       "summary": "Goan pork shoulder marinated in a chilli, garlic and vinegar paste, then braised until tender and tangy.",
       "cuisine": "indian",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "medium",
       "prepMinutes": 265,
       "cookMinutes": 120,
       "servings": 5,
       "onePot": false,
-      "seasons": ["autumn", "winter"],
-      "diets": ["no-gluten", "no-dairy"],
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Paste",
@@ -1901,7 +2613,9 @@
         },
         {
           "section": "To serve",
-          "items": ["300g basmati rice"]
+          "items": [
+            "300g basmati rice"
+          ]
         }
       ],
       "steps": [
@@ -1921,6 +2635,14 @@
         "key": "pork-vindaloo",
         "credit": "Photo: Miansari66 / Wikimedia Commons (CC0)",
         "source": "https://commons.wikimedia.org/wiki/File:Vindaloo.JPG"
+      },
+      "nutrition": {
+        "kcal": 862,
+        "proteinG": 67,
+        "carbsG": 52,
+        "fatG": 42,
+        "fibreG": 4,
+        "sodiumMg": 610
       }
     },
     {
@@ -1928,13 +2650,19 @@
       "title": "Rajma",
       "summary": "Punjabi red kidney beans simmered in a thick, gently spiced onion and tomato gravy, made for rice.",
       "cuisine": "indian",
-      "mealTypes": ["dinner", "lunch"],
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
       "difficulty": "easy",
       "prepMinutes": 10,
       "cookMinutes": 40,
       "servings": 4,
       "onePot": false,
-      "diets": ["vegetarian", "no-gluten"],
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
       "ingredients": [
         {
           "section": "Rajma",
@@ -1959,7 +2687,9 @@
         },
         {
           "section": "To serve",
-          "items": ["300g basmati rice"]
+          "items": [
+            "300g basmati rice"
+          ]
         }
       ],
       "steps": [
@@ -1977,6 +2707,14 @@
         "key": "rajma",
         "credit": "Photo: Shreya151994 / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Rajma_Chawal_by_Rama_Bhave.jpg"
+      },
+      "nutrition": {
+        "kcal": 521,
+        "proteinG": 19,
+        "carbsG": 81,
+        "fatG": 11,
+        "fibreG": 11,
+        "sodiumMg": 600
       }
     },
     {
@@ -1984,13 +2722,20 @@
       "title": "Onion Bhaji",
       "summary": "Crisp, lacy tangles of spiced onion in chickpea batter, fried golden and served with mint chutney.",
       "cuisine": "indian",
-      "mealTypes": ["snack"],
+      "mealTypes": [
+        "snack"
+      ],
       "difficulty": "easy",
       "prepMinutes": 20,
       "cookMinutes": 20,
       "servings": 4,
       "onePot": false,
-      "diets": ["vegetarian", "vegan", "no-gluten", "no-dairy"],
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "items": [
@@ -2024,6 +2769,14 @@
         "key": "onion-bhaji",
         "credit": "Photo: Adityakerkar / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Kanda_Bhaji.JPG"
+      },
+      "nutrition": {
+        "kcal": 174,
+        "proteinG": 10,
+        "carbsG": 25,
+        "fatG": 2,
+        "fibreG": 8,
+        "sodiumMg": 515
       }
     },
     {
@@ -2031,13 +2784,18 @@
       "title": "Panang Beef Curry",
       "summary": "A thick, rich Thai curry of tender beef in coconut cream, sweet with peanut and fragrant with lime leaves.",
       "cuisine": "thai",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 15,
       "cookMinutes": 25,
       "servings": 4,
       "onePot": false,
-      "diets": ["no-gluten", "no-dairy"],
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Curry",
@@ -2055,7 +2813,9 @@
         },
         {
           "section": "To serve",
-          "items": ["300g jasmine rice"]
+          "items": [
+            "300g jasmine rice"
+          ]
         }
       ],
       "steps": [
@@ -2073,6 +2833,14 @@
         "key": "panang-beef-curry",
         "credit": "Photo: Vee Satayamas / Wikimedia Commons (CC BY 2.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Panang_curry_(42943883862).jpg"
+      },
+      "nutrition": {
+        "kcal": 863,
+        "proteinG": 47,
+        "carbsG": 64,
+        "fatG": 45,
+        "fibreG": 7,
+        "sodiumMg": 635
       }
     },
     {
@@ -2080,14 +2848,21 @@
       "title": "Gai Yang",
       "summary": "Isaan-style grilled chicken marinated in garlic, coriander root and lemongrass, with a smoky chilli dipping sauce.",
       "cuisine": "thai",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "medium",
       "prepMinutes": 140,
       "cookMinutes": 40,
       "servings": 4,
       "onePot": false,
-      "seasons": ["spring", "summer"],
-      "diets": ["no-dairy"],
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "diets": [
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Chicken",
@@ -2117,7 +2892,9 @@
         },
         {
           "section": "To serve",
-          "items": ["300g jasmine rice (or sticky rice)"]
+          "items": [
+            "300g jasmine rice (or sticky rice)"
+          ]
         }
       ],
       "steps": [
@@ -2136,6 +2913,14 @@
         "key": "gai-yang",
         "credit": "Photo: Togsvfx / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Chicken_BBQ_tumtaad.jpg"
+      },
+      "nutrition": {
+        "kcal": 844,
+        "proteinG": 57,
+        "carbsG": 63,
+        "fatG": 40,
+        "fibreG": 2,
+        "sodiumMg": 1760
       }
     },
     {
@@ -2143,14 +2928,22 @@
       "title": "Yum Woon Sen",
       "summary": "A Thai glass noodle salad with pork and prawns, tossed in a hot, sour and salty lime dressing.",
       "cuisine": "thai",
-      "mealTypes": ["lunch", "dinner"],
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 20,
       "cookMinutes": 10,
       "servings": 4,
       "onePot": false,
-      "seasons": ["summer"],
-      "diets": ["no-gluten", "no-dairy"],
+      "seasons": [
+        "summer"
+      ],
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Salad",
@@ -2195,6 +2988,14 @@
         "key": "yum-woon-sen",
         "credit": "Photo: Takeaway / Wikimedia Commons (CC BY-SA 3.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Yam_wunsen.jpg"
+      },
+      "nutrition": {
+        "kcal": 393,
+        "proteinG": 34,
+        "carbsG": 34,
+        "fatG": 13,
+        "fibreG": 2,
+        "sodiumMg": 1045
       }
     },
     {
@@ -2202,13 +3003,20 @@
       "title": "Khai Jiao",
       "summary": "The Thai omelette: eggs whisked frothy and fried in hot oil until puffed and crisp, served on rice with sriracha.",
       "cuisine": "thai",
-      "mealTypes": ["breakfast", "lunch"],
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
       "difficulty": "easy",
       "prepMinutes": 5,
       "cookMinutes": 10,
       "servings": 2,
       "onePot": false,
-      "diets": ["pescatarian", "no-gluten", "no-dairy"],
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Omelette",
@@ -2223,7 +3031,11 @@
         },
         {
           "section": "To serve",
-          "items": ["300g cooked jasmine rice, hot", "Sriracha, to serve", "Coriander leaves, to serve"]
+          "items": [
+            "300g cooked jasmine rice, hot",
+            "Sriracha, to serve",
+            "Coriander leaves, to serve"
+          ]
         }
       ],
       "steps": [
@@ -2241,6 +3053,14 @@
         "key": "khai-jiao",
         "credit": "Photo: Sakurai Midori / Wikimedia Commons (CC BY 2.5)",
         "source": "https://commons.wikimedia.org/wiki/File:Fried_egg_Thailand.JPG"
+      },
+      "nutrition": {
+        "kcal": 452,
+        "proteinG": 20,
+        "carbsG": 47,
+        "fatG": 20,
+        "fibreG": 2,
+        "sodiumMg": 520
       }
     },
     {
@@ -2248,14 +3068,23 @@
       "title": "Bun Cha",
       "summary": "Hanoi's chargrilled pork patties and pork belly in a warm, sweet-sour dipping broth, with noodles and herbs.",
       "cuisine": "vietnamese",
-      "mealTypes": ["dinner", "lunch"],
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
       "difficulty": "medium",
       "prepMinutes": 50,
       "cookMinutes": 25,
       "servings": 4,
       "onePot": false,
-      "seasons": ["spring", "summer"],
-      "diets": ["no-gluten", "no-dairy"],
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Pork",
@@ -2310,6 +3139,14 @@
         "key": "bun-cha",
         "credit": "Photo: Phương Huy / Wikimedia Commons (public domain)",
         "source": "https://commons.wikimedia.org/wiki/File:B%C3%BAn_ch%E1%BA%A3_H%C3%A0_N%E1%BB%99i_t%E1%BA%A1i_Aeonmall_T%C3%A2n_Ph%C3%BA_th%C3%A1ng_4_n%C4%83m_2018_(5).jpg"
+      },
+      "nutrition": {
+        "kcal": 1066,
+        "proteinG": 65,
+        "carbsG": 78,
+        "fatG": 54,
+        "fibreG": 4,
+        "sodiumMg": 1800
       }
     },
     {
@@ -2317,13 +3154,18 @@
       "title": "Banh Xeo",
       "summary": "Crisp Vietnamese turmeric and coconut pancakes filled with pork, prawns and bean sprouts, wrapped in lettuce and herbs.",
       "cuisine": "vietnamese",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "medium",
       "prepMinutes": 45,
       "cookMinutes": 45,
       "servings": 4,
       "onePot": false,
-      "diets": ["no-gluten", "no-dairy"],
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Batter",
@@ -2359,7 +3201,11 @@
         },
         {
           "section": "To serve",
-          "items": ["1 butter lettuce, leaves separated", "Handful of mint leaves", "Handful of Thai basil leaves"]
+          "items": [
+            "1 butter lettuce, leaves separated",
+            "Handful of mint leaves",
+            "Handful of Thai basil leaves"
+          ]
         }
       ],
       "steps": [
@@ -2379,6 +3225,14 @@
         "key": "banh-xeo",
         "credit": "Photo: freshcrackedpepper / Wikimedia Commons (CC BY 2.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Banh_Xeo,_Eden_Center.jpg"
+      },
+      "nutrition": {
+        "kcal": 865,
+        "proteinG": 42,
+        "carbsG": 52,
+        "fatG": 53,
+        "fibreG": 6,
+        "sodiumMg": 1215
       }
     },
     {
@@ -2386,13 +3240,18 @@
       "title": "Caramelised Ginger Chicken",
       "summary": "Vietnamese ga kho gung: chicken thigh cooked down in a dark caramel with plenty of ginger and fish sauce.",
       "cuisine": "vietnamese",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 25,
       "cookMinutes": 30,
       "servings": 4,
       "onePot": false,
-      "diets": ["no-gluten", "no-dairy"],
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Chicken",
@@ -2410,7 +3269,11 @@
         },
         {
           "section": "To serve",
-          "items": ["2 spring onions, sliced", "1 long red chilli, sliced", "300g jasmine rice"]
+          "items": [
+            "2 spring onions, sliced",
+            "1 long red chilli, sliced",
+            "300g jasmine rice"
+          ]
         }
       ],
       "steps": [
@@ -2424,21 +3287,38 @@
         "Hot caramel burns badly. Keep children away from the stove and add the oil and aromatics at arm's length.",
         "Take the caramel as dark as you dare without it smelling burnt; that bitterness is what balances the sweetness.",
         "Food safety: "
-      ]
+      ],
+      "nutrition": {
+        "kcal": 673,
+        "proteinG": 50,
+        "carbsG": 65,
+        "fatG": 23,
+        "fibreG": 3,
+        "sodiumMg": 695
+      }
     },
     {
       "id": "goi-ga",
       "title": "Vietnamese Chicken Salad",
       "summary": "Poached chicken, crunchy cabbage and lots of herbs in a sharp lime dressing, with peanuts and fried shallots.",
       "cuisine": "vietnamese",
-      "mealTypes": ["lunch", "dinner"],
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 20,
       "cookMinutes": 25,
       "servings": 4,
       "onePot": false,
-      "seasons": ["spring", "summer"],
-      "diets": ["no-gluten", "no-dairy"],
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Salad",
@@ -2479,20 +3359,33 @@
         "Dress it just before serving so the cabbage stays crunchy.",
         "A shredded barbecue chicken makes this a 15-minute lunch.",
         "Food safety: "
-      ]
+      ],
+      "nutrition": {
+        "kcal": 280,
+        "proteinG": 35,
+        "carbsG": 12,
+        "fatG": 10,
+        "fibreG": 1,
+        "sodiumMg": 1405
+      }
     },
     {
       "id": "dan-dan-noodles",
       "title": "Dan Dan Noodles",
       "summary": "Sichuan noodles in a numbing, nutty chilli and sesame sauce, topped with crisp seasoned pork.",
       "cuisine": "chinese",
-      "mealTypes": ["dinner", "lunch"],
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
       "difficulty": "easy",
       "prepMinutes": 15,
       "cookMinutes": 20,
       "servings": 4,
       "onePot": false,
-      "diets": ["no-dairy"],
+      "diets": [
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Pork",
@@ -2520,7 +3413,12 @@
         },
         {
           "section": "Noodles",
-          "items": ["400g fresh wheat noodles", "200g baby bok choy, halved", "2 spring onions, sliced", "2 tbsp roasted peanuts, crushed"]
+          "items": [
+            "400g fresh wheat noodles",
+            "200g baby bok choy, halved",
+            "2 spring onions, sliced",
+            "2 tbsp roasted peanuts, crushed"
+          ]
         }
       ],
       "steps": [
@@ -2538,6 +3436,14 @@
         "key": "dan-dan-noodles",
         "credit": "Photo: ZhengZhou / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Dandan_Noodles.jpg"
+      },
+      "nutrition": {
+        "kcal": 809,
+        "proteinG": 34,
+        "carbsG": 83,
+        "fatG": 37,
+        "fibreG": 4,
+        "sodiumMg": 1180
       }
     },
     {
@@ -2545,18 +3451,30 @@
       "title": "Hot and Sour Soup",
       "summary": "A silky Chinese soup with pork, shiitake, tofu and egg ribbons, sharp with black vinegar and hot with white pepper.",
       "cuisine": "chinese",
-      "mealTypes": ["lunch", "dinner"],
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 25,
       "cookMinutes": 15,
       "servings": 4,
       "onePot": true,
-      "seasons": ["autumn", "winter"],
-      "diets": ["no-dairy"],
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "diets": [
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Pork",
-          "items": ["150g pork fillet, cut into thin matchsticks", "1 tsp soy sauce", "1 tsp cornflour"]
+          "items": [
+            "150g pork fillet, cut into thin matchsticks",
+            "1 tsp soy sauce",
+            "1 tsp cornflour"
+          ]
         },
         {
           "section": "Soup",
@@ -2597,6 +3515,14 @@
         "key": "hot-and-sour-soup",
         "credit": "Photo: jeffreyw / Wikimedia Commons (CC BY 2.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Mmm..._hot_and_sour_soup_(7218396478).jpg"
+      },
+      "nutrition": {
+        "kcal": 242,
+        "proteinG": 25,
+        "carbsG": 8,
+        "fatG": 12,
+        "fibreG": 1,
+        "sodiumMg": 1960
       }
     },
     {
@@ -2604,13 +3530,17 @@
       "title": "Beef and Broccoli",
       "summary": "Tender, velveted beef and crisp broccoli in a glossy oyster and garlic sauce, faster than takeaway.",
       "cuisine": "chinese",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 25,
       "cookMinutes": 12,
       "servings": 4,
       "onePot": false,
-      "diets": ["no-dairy"],
+      "diets": [
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Beef",
@@ -2624,7 +3554,14 @@
         },
         {
           "section": "Sauce",
-          "items": ["3 tbsp oyster sauce", "1 tbsp soy sauce", "1 tsp dark soy sauce", "2 tsp sugar", "2 tsp cornflour", "125ml water"]
+          "items": [
+            "3 tbsp oyster sauce",
+            "1 tbsp soy sauce",
+            "1 tsp dark soy sauce",
+            "2 tsp sugar",
+            "2 tsp cornflour",
+            "125ml water"
+          ]
         },
         {
           "section": "Stir-fry",
@@ -2638,7 +3575,9 @@
         },
         {
           "section": "To serve",
-          "items": ["Steamed jasmine rice"]
+          "items": [
+            "Steamed jasmine rice"
+          ]
         }
       ],
       "steps": [
@@ -2658,6 +3597,14 @@
         "key": "beef-and-broccoli",
         "credit": "Photo: Joy / Wikimedia Commons (CC BY 2.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Beef_and_broccoli_stir_fry_-_28265304610.jpg"
+      },
+      "nutrition": {
+        "kcal": 337,
+        "proteinG": 29,
+        "carbsG": 11,
+        "fatG": 19,
+        "fibreG": 3,
+        "sodiumMg": 920
       }
     },
     {
@@ -2665,14 +3612,24 @@
       "title": "Smashed Cucumber Salad",
       "summary": "Cold, crunchy smashed cucumbers in a garlicky black vinegar and chilli oil dressing.",
       "cuisine": "chinese",
-      "mealTypes": ["snack", "lunch"],
+      "mealTypes": [
+        "snack",
+        "lunch"
+      ],
       "difficulty": "easy",
       "prepMinutes": 25,
       "cookMinutes": 0,
       "servings": 4,
       "onePot": false,
-      "seasons": ["spring", "summer"],
-      "diets": ["vegetarian", "vegan", "no-dairy"],
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "items": [
@@ -2703,6 +3660,14 @@
         "key": "smashed-cucumber-salad",
         "credit": "Photo: Daniela Eftimova / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B8%D0%BD%D0%B5%D1%81%D0%BA%D0%B0_%D1%81%D0%B0%D0%BB%D0%B0%D1%82%D0%B0_%D1%81%D0%BE_%D0%BA%D1%80%D0%B0%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%86%D0%B0_%D0%B8_%D0%BB%D1%83%D0%BA.jpg"
+      },
+      "nutrition": {
+        "kcal": 62,
+        "proteinG": 0,
+        "carbsG": 2,
+        "fatG": 6,
+        "fibreG": 0,
+        "sodiumMg": 335
       }
     },
     {
@@ -2710,17 +3675,27 @@
       "title": "Onigiri",
       "summary": "Japanese rice balls with a tuna-mayo centre, wrapped in crisp nori. Lunchbox gold.",
       "cuisine": "japanese",
-      "mealTypes": ["lunch", "snack"],
+      "mealTypes": [
+        "lunch",
+        "snack"
+      ],
       "difficulty": "easy",
       "prepMinutes": 30,
       "cookMinutes": 20,
       "servings": 4,
       "onePot": false,
-      "diets": ["pescatarian", "no-dairy"],
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Rice",
-          "items": ["400g sushi rice", "480ml water", "1 tsp salt"]
+          "items": [
+            "400g sushi rice",
+            "480ml water",
+            "1 tsp salt"
+          ]
         },
         {
           "section": "Tuna-mayo filling",
@@ -2733,7 +3708,10 @@
         },
         {
           "section": "To finish",
-          "items": ["4 nori sheets, cut in half", "1 tbsp sesame seeds, toasted"]
+          "items": [
+            "4 nori sheets, cut in half",
+            "1 tbsp sesame seeds, toasted"
+          ]
         }
       ],
       "steps": [
@@ -2751,6 +3729,14 @@
         "key": "onigiri",
         "credit": "Photo: Ocdp / Wikimedia Commons (CC0)",
         "source": "https://commons.wikimedia.org/wiki/File:Onigiri_002.jpg"
+      },
+      "nutrition": {
+        "kcal": 490,
+        "proteinG": 24,
+        "carbsG": 74,
+        "fatG": 10,
+        "fibreG": 4,
+        "sodiumMg": 735
       }
     },
     {
@@ -2758,13 +3744,19 @@
       "title": "Tamagoyaki",
       "summary": "A sweet-savoury rolled Japanese omelette, cooked in thin layers for soft, neat slices.",
       "cuisine": "japanese",
-      "mealTypes": ["breakfast", "lunch"],
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
       "difficulty": "medium",
       "prepMinutes": 5,
       "cookMinutes": 10,
       "servings": 2,
       "onePot": true,
-      "diets": ["pescatarian", "no-dairy"],
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "items": [
@@ -2779,7 +3771,10 @@
         },
         {
           "section": "To serve",
-          "items": ["Steamed short-grain rice", "1 tbsp pickled ginger"]
+          "items": [
+            "Steamed short-grain rice",
+            "1 tbsp pickled ginger"
+          ]
         }
       ],
       "steps": [
@@ -2798,6 +3793,14 @@
         "key": "tamagoyaki",
         "credit": "Photo: 極地狐 / Wikimedia Commons (CC BY 2.0)",
         "source": "https://commons.wikimedia.org/wiki/File:%E9%B3%A5%E7%84%BC%E3%81%8D%E5%B1%85%E9%85%92%E5%B1%8B_(39394233682).jpg"
+      },
+      "nutrition": {
+        "kcal": 237,
+        "proteinG": 14,
+        "carbsG": 7,
+        "fatG": 17,
+        "fibreG": 0,
+        "sodiumMg": 650
       }
     },
     {
@@ -2805,14 +3808,21 @@
       "title": "Nikujaga",
       "summary": "Japanese home-style beef and potato stew, simmered in a sweet soy and dashi broth.",
       "cuisine": "japanese",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 15,
       "cookMinutes": 30,
       "servings": 4,
       "onePot": true,
-      "seasons": ["autumn", "winter"],
-      "diets": ["no-dairy"],
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "diets": [
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "items": [
@@ -2831,7 +3841,9 @@
         },
         {
           "section": "To serve",
-          "items": ["Steamed short-grain rice"]
+          "items": [
+            "Steamed short-grain rice"
+          ]
         }
       ],
       "steps": [
@@ -2849,6 +3861,14 @@
         "key": "nikujaga",
         "credit": "Photo: ノボホショコロトソ / Wikimedia Commons (CC BY 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Nikujaga_%E8%82%89%E3%81%98%E3%82%83%E3%81%8C.jpg"
+      },
+      "nutrition": {
+        "kcal": 423,
+        "proteinG": 24,
+        "carbsG": 45,
+        "fatG": 15,
+        "fibreG": 6,
+        "sodiumMg": 835
       }
     },
     {
@@ -2856,13 +3876,18 @@
       "title": "Chicken Karaage",
       "summary": "Ginger and soy marinated chicken thigh, double-fried in a potato starch coat until shatteringly crisp.",
       "cuisine": "japanese",
-      "mealTypes": ["dinner", "snack"],
+      "mealTypes": [
+        "dinner",
+        "snack"
+      ],
       "difficulty": "medium",
       "prepMinutes": 45,
       "cookMinutes": 25,
       "servings": 4,
       "onePot": false,
-      "diets": ["no-dairy"],
+      "diets": [
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Chicken",
@@ -2879,7 +3904,11 @@
         },
         {
           "section": "To serve",
-          "items": ["4 tbsp Kewpie mayonnaise", "1 lemon, cut into wedges", "1/4 iceberg lettuce, finely shredded"]
+          "items": [
+            "4 tbsp Kewpie mayonnaise",
+            "1 lemon, cut into wedges",
+            "1/4 iceberg lettuce, finely shredded"
+          ]
         }
       ],
       "steps": [
@@ -2899,6 +3928,14 @@
         "key": "chicken-karaage",
         "credit": "Photo: Ocdp / Wikimedia Commons (CC0)",
         "source": "https://commons.wikimedia.org/wiki/File:Chicken_karaage_006.jpg"
+      },
+      "nutrition": {
+        "kcal": 967,
+        "proteinG": 42,
+        "carbsG": 25,
+        "fatG": 77,
+        "fibreG": 3,
+        "sodiumMg": 860
       }
     },
     {
@@ -2906,17 +3943,27 @@
       "title": "Japchae",
       "summary": "Chewy sweet potato noodles tossed with beef, vegetables and sesame in a sweet soy dressing.",
       "cuisine": "korean",
-      "mealTypes": ["dinner", "lunch"],
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
       "difficulty": "medium",
       "prepMinutes": 30,
       "cookMinutes": 20,
       "servings": 4,
       "onePot": false,
-      "diets": ["no-dairy"],
+      "diets": [
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Sauce",
-          "items": ["5 tbsp soy sauce", "2 tbsp sugar", "2 tbsp sesame oil", "2 garlic cloves, finely grated"]
+          "items": [
+            "5 tbsp soy sauce",
+            "2 tbsp sugar",
+            "2 tbsp sesame oil",
+            "2 garlic cloves, finely grated"
+          ]
         },
         {
           "section": "Noodles",
@@ -2951,6 +3998,14 @@
         "key": "japchae",
         "credit": "Photo: Alan Chan / Wikimedia Commons (CC BY-SA 2.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Korean_cuisine-Japchae-04.jpg"
+      },
+      "nutrition": {
+        "kcal": 509,
+        "proteinG": 23,
+        "carbsG": 59,
+        "fatG": 19,
+        "fibreG": 5,
+        "sodiumMg": 1145
       }
     },
     {
@@ -2958,13 +4013,19 @@
       "title": "Pajeon",
       "summary": "A crisp Korean spring onion pancake, served in wedges with a tangy soy dipping sauce.",
       "cuisine": "korean",
-      "mealTypes": ["snack", "lunch"],
+      "mealTypes": [
+        "snack",
+        "lunch"
+      ],
       "difficulty": "easy",
       "prepMinutes": 15,
       "cookMinutes": 15,
       "servings": 4,
       "onePot": false,
-      "diets": ["vegetarian", "no-dairy"],
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Pancakes",
@@ -2981,7 +4042,13 @@
         },
         {
           "section": "Dipping sauce",
-          "items": ["3 tbsp soy sauce", "1 tbsp rice vinegar", "1 tsp sugar", "1/2 tsp gochugaru", "1/2 tsp sesame seeds"]
+          "items": [
+            "3 tbsp soy sauce",
+            "1 tbsp rice vinegar",
+            "1 tsp sugar",
+            "1/2 tsp gochugaru",
+            "1/2 tsp sesame seeds"
+          ]
         }
       ],
       "steps": [
@@ -3000,6 +4067,14 @@
         "key": "pajeon",
         "credit": "Photo: Andy Li / Wikimedia Commons (CC0)",
         "source": "https://commons.wikimedia.org/wiki/File:Pajeon_(spring_onion_pancake)_-_Kogi,_Brighton.jpg"
+      },
+      "nutrition": {
+        "kcal": 302,
+        "proteinG": 6,
+        "carbsG": 33,
+        "fatG": 16,
+        "fibreG": 1,
+        "sodiumMg": 715
       }
     },
     {
@@ -3007,17 +4082,29 @@
       "title": "Gimbap",
       "summary": "Korean seaweed rice rolls with egg, ham, spinach, carrot and pickled radish, sliced into rounds.",
       "cuisine": "korean",
-      "mealTypes": ["lunch", "snack"],
+      "mealTypes": [
+        "lunch",
+        "snack"
+      ],
       "difficulty": "medium",
       "prepMinutes": 45,
       "cookMinutes": 30,
       "servings": 4,
       "onePot": false,
-      "diets": ["no-gluten", "no-dairy"],
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Rice",
-          "items": ["400g sushi rice", "480ml water", "1 tbsp sesame oil", "1 tsp salt", "1 tbsp sesame seeds, toasted"]
+          "items": [
+            "400g sushi rice",
+            "480ml water",
+            "1 tbsp sesame oil",
+            "1 tsp salt",
+            "1 tbsp sesame seeds, toasted"
+          ]
         },
         {
           "section": "Fillings",
@@ -3034,7 +4121,10 @@
         },
         {
           "section": "To roll",
-          "items": ["4 nori sheets", "1 tsp sesame oil"]
+          "items": [
+            "4 nori sheets",
+            "1 tsp sesame oil"
+          ]
         }
       ],
       "steps": [
@@ -3053,6 +4143,14 @@
         "key": "gimbap",
         "credit": "Photo: changupn / Wikimedia Commons (CC0)",
         "source": "https://commons.wikimedia.org/wiki/File:Gimbap_(pixabay).jpg"
+      },
+      "nutrition": {
+        "kcal": 568,
+        "proteinG": 24,
+        "carbsG": 76,
+        "fatG": 18,
+        "fibreG": 3,
+        "sodiumMg": 1125
       }
     },
     {
@@ -3060,14 +4158,21 @@
       "title": "Dakgalbi",
       "summary": "Spicy gochujang chicken stir-fried with cabbage, sweet potato and chewy rice cakes.",
       "cuisine": "korean",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 45,
       "cookMinutes": 20,
       "servings": 4,
       "onePot": true,
-      "seasons": ["autumn", "winter"],
-      "diets": ["no-dairy"],
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "diets": [
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Marinade",
@@ -3096,7 +4201,9 @@
         },
         {
           "section": "To serve",
-          "items": ["Steamed short-grain rice"]
+          "items": [
+            "Steamed short-grain rice"
+          ]
         }
       ],
       "steps": [
@@ -3115,6 +4222,14 @@
         "key": "dakgalbi",
         "credit": "Photo: Nagyman / Wikimedia Commons (CC BY-SA 2.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Dakgalbi.jpg"
+      },
+      "nutrition": {
+        "kcal": 541,
+        "proteinG": 42,
+        "carbsG": 44,
+        "fatG": 21,
+        "fibreG": 4,
+        "sodiumMg": 760
       }
     },
     {
@@ -3122,17 +4237,30 @@
       "title": "Nasi Lemak",
       "summary": "Coconut rice with sweet-hot onion sambal, egg, peanuts and cucumber: Malaysia's breakfast.",
       "cuisine": "malaysian",
-      "mealTypes": ["breakfast", "lunch"],
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
       "difficulty": "medium",
       "prepMinutes": 30,
       "cookMinutes": 40,
       "servings": 4,
       "onePot": false,
-      "diets": ["pescatarian", "no-gluten", "no-dairy"],
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Coconut rice",
-          "items": ["400g jasmine rice", "400ml coconut milk", "200ml water", "3 thin slices ginger", "1 tsp salt"]
+          "items": [
+            "400g jasmine rice",
+            "400ml coconut milk",
+            "200ml water",
+            "3 thin slices ginger",
+            "1 tsp salt"
+          ]
         },
         {
           "section": "Sambal",
@@ -3150,7 +4278,11 @@
         },
         {
           "section": "To serve",
-          "items": ["4 eggs", "80g roasted peanuts", "1 Lebanese cucumber, sliced"]
+          "items": [
+            "4 eggs",
+            "80g roasted peanuts",
+            "1 Lebanese cucumber, sliced"
+          ]
         }
       ],
       "steps": [
@@ -3170,6 +4302,14 @@
         "key": "nasi-lemak",
         "credit": "Photo: Mw12310 / Wikimedia Commons (CC BY-SA 3.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Nasi_Lemak,_Mamak,_Sydney.jpg"
+      },
+      "nutrition": {
+        "kcal": 922,
+        "proteinG": 25,
+        "carbsG": 89,
+        "fatG": 50,
+        "fibreG": 8,
+        "sodiumMg": 755
       }
     },
     {
@@ -3177,17 +4317,29 @@
       "title": "Char Kway Teow",
       "summary": "Smoky stir-fried flat rice noodles with prawns, egg, bean sprouts and garlic chives.",
       "cuisine": "malaysian",
-      "mealTypes": ["dinner", "lunch"],
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
       "difficulty": "medium",
       "prepMinutes": 20,
       "cookMinutes": 15,
       "servings": 2,
       "onePot": false,
-      "diets": ["pescatarian", "no-dairy"],
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Sauce",
-          "items": ["2 tbsp dark soy sauce", "1 tbsp soy sauce", "1 tbsp oyster sauce", "1 tsp sugar", "2 tsp sambal oelek"]
+          "items": [
+            "2 tbsp dark soy sauce",
+            "1 tbsp soy sauce",
+            "1 tbsp oyster sauce",
+            "1 tsp sugar",
+            "2 tsp sambal oelek"
+          ]
         },
         {
           "section": "Noodles",
@@ -3219,6 +4371,14 @@
         "key": "char-kway-teow",
         "credit": "Photo: Alpha / Wikimedia Commons (CC BY-SA 2.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Char_kway_teow_-_Old_Town_Kopitiam.jpg"
+      },
+      "nutrition": {
+        "kcal": 875,
+        "proteinG": 56,
+        "carbsG": 91,
+        "fatG": 31,
+        "fibreG": 4,
+        "sodiumMg": 1990
       }
     },
     {
@@ -3226,13 +4386,18 @@
       "title": "Hainanese Chicken Rice",
       "summary": "Silky poached chicken with rice cooked in its broth, and chilli and ginger sauces.",
       "cuisine": "malaysian",
-      "mealTypes": ["dinner", "lunch"],
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
       "difficulty": "medium",
       "prepMinutes": 25,
       "cookMinutes": 75,
       "servings": 4,
       "onePot": false,
-      "diets": ["no-dairy"],
+      "diets": [
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Chicken",
@@ -3268,11 +4433,20 @@
         },
         {
           "section": "Ginger sauce",
-          "items": ["3 tbsp ginger, finely grated", "2 spring onions, finely chopped", "1/2 tsp salt", "3 tbsp neutral oil"]
+          "items": [
+            "3 tbsp ginger, finely grated",
+            "2 spring onions, finely chopped",
+            "1/2 tsp salt",
+            "3 tbsp neutral oil"
+          ]
         },
         {
           "section": "To serve",
-          "items": ["1 Lebanese cucumber, sliced", "Handful of coriander sprigs", "2 tbsp dark soy sauce"]
+          "items": [
+            "1 Lebanese cucumber, sliced",
+            "Handful of coriander sprigs",
+            "2 tbsp dark soy sauce"
+          ]
         }
       ],
       "steps": [
@@ -3292,6 +4466,14 @@
         "key": "hainanese-chicken-rice",
         "credit": "Photo: Misaochan / Wikimedia Commons (CC BY 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Hainanese_chicken_rice.jpg"
+      },
+      "nutrition": {
+        "kcal": 1131,
+        "proteinG": 71,
+        "carbsG": 77,
+        "fatG": 59,
+        "fibreG": 4,
+        "sodiumMg": 2895
       }
     },
     {
@@ -3299,13 +4481,19 @@
       "title": "Sambal Udang",
       "summary": "Prawns cooked in a deep red, sweet, sour and fiery Malaysian chilli sambal.",
       "cuisine": "malaysian",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 30,
       "cookMinutes": 25,
       "servings": 4,
       "onePot": true,
-      "diets": ["pescatarian", "no-gluten", "no-dairy"],
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Sambal paste",
@@ -3330,7 +4518,10 @@
         },
         {
           "section": "To serve",
-          "items": ["Steamed jasmine rice", "1 Lebanese cucumber, sliced"]
+          "items": [
+            "Steamed jasmine rice",
+            "1 Lebanese cucumber, sliced"
+          ]
         }
       ],
       "steps": [
@@ -3348,6 +4539,14 @@
         "key": "sambal-udang",
         "credit": "Photo: Midori / Wikimedia Commons (CC BY 3.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Udang_balado_masakan_Padang.jpg"
+      },
+      "nutrition": {
+        "kcal": 382,
+        "proteinG": 41,
+        "carbsG": 13,
+        "fatG": 18,
+        "fibreG": 2,
+        "sodiumMg": 1105
       }
     },
     {
@@ -3355,14 +4554,23 @@
       "title": "Soto Ayam",
       "summary": "Indonesian turmeric chicken soup with glass noodles, egg, bean sprouts and crisp shallots.",
       "cuisine": "indonesian",
-      "mealTypes": ["lunch", "dinner"],
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
       "difficulty": "medium",
       "prepMinutes": 25,
       "cookMinutes": 50,
       "servings": 4,
       "onePot": false,
-      "seasons": ["autumn", "winter"],
-      "diets": ["no-gluten", "no-dairy"],
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Spice paste",
@@ -3416,6 +4624,14 @@
         "key": "soto-ayam",
         "credit": "Photo: Midori / Wikimedia Commons (CC BY 3.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Soto_Ayam_(Ayam_Goreng_Prambanan).JPG"
+      },
+      "nutrition": {
+        "kcal": 686,
+        "proteinG": 52,
+        "carbsG": 28,
+        "fatG": 40,
+        "fibreG": 3,
+        "sodiumMg": 1265
       }
     },
     {
@@ -3423,14 +4639,20 @@
       "title": "Ayam Bakar",
       "summary": "Javanese grilled chicken, simmered first in spiced coconut, then charred with kecap manis.",
       "cuisine": "indonesian",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "medium",
       "prepMinutes": 20,
       "cookMinutes": 55,
       "servings": 4,
       "onePot": false,
-      "seasons": ["summer"],
-      "diets": ["no-dairy"],
+      "seasons": [
+        "summer"
+      ],
+      "diets": [
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Spice paste",
@@ -3457,7 +4679,12 @@
         },
         {
           "section": "To serve",
-          "items": ["Steamed jasmine rice", "1 Lebanese cucumber, sliced", "2 tomatoes, sliced", "2 tbsp sambal oelek"]
+          "items": [
+            "Steamed jasmine rice",
+            "1 Lebanese cucumber, sliced",
+            "2 tomatoes, sliced",
+            "2 tbsp sambal oelek"
+          ]
         }
       ],
       "steps": [
@@ -3476,6 +4703,14 @@
         "key": "ayam-bakar",
         "credit": "Photo: Nisa usrifatul / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Ayam_bakar.jpg"
+      },
+      "nutrition": {
+        "kcal": 217,
+        "proteinG": 3,
+        "carbsG": 11,
+        "fatG": 17,
+        "fibreG": 4,
+        "sodiumMg": 190
       }
     },
     {
@@ -3483,13 +4718,20 @@
       "title": "Perkedel",
       "summary": "Indonesian potato fritters, fragrant with fried shallots and nutmeg, dipped in egg and fried golden.",
       "cuisine": "indonesian",
-      "mealTypes": ["snack", "lunch"],
+      "mealTypes": [
+        "snack",
+        "lunch"
+      ],
       "difficulty": "easy",
       "prepMinutes": 25,
       "cookMinutes": 35,
       "servings": 4,
       "onePot": false,
-      "diets": ["vegetarian", "no-gluten", "no-dairy"],
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "items": [
@@ -3506,7 +4748,9 @@
         },
         {
           "section": "To serve",
-          "items": ["2 tbsp sweet chilli sauce"]
+          "items": [
+            "2 tbsp sweet chilli sauce"
+          ]
         }
       ],
       "steps": [
@@ -3524,6 +4768,14 @@
         "key": "perkedel",
         "credit": "Photo: Midori / Wikimedia Commons (CC BY 3.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Perkedel_kentang_tanpa_daging.JPG"
+      },
+      "nutrition": {
+        "kcal": 276,
+        "proteinG": 7,
+        "carbsG": 41,
+        "fatG": 8,
+        "fibreG": 6,
+        "sodiumMg": 335
       }
     },
     {
@@ -3531,13 +4783,21 @@
       "title": "Sayur Lodeh",
       "summary": "A gentle Indonesian vegetable curry in turmeric coconut broth, with tofu puffs.",
       "cuisine": "indonesian",
-      "mealTypes": ["dinner", "lunch"],
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
       "difficulty": "easy",
       "prepMinutes": 25,
       "cookMinutes": 25,
       "servings": 4,
       "onePot": true,
-      "diets": ["vegetarian", "vegan", "no-gluten", "no-dairy"],
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Spice paste",
@@ -3570,7 +4830,10 @@
         },
         {
           "section": "To serve",
-          "items": ["Steamed jasmine rice", "2 tbsp fried shallots"]
+          "items": [
+            "Steamed jasmine rice",
+            "2 tbsp fried shallots"
+          ]
         }
       ],
       "steps": [
@@ -3583,20 +4846,33 @@
       "notes": [
         "In Java it's usually seasoned with shrimp paste. Add 1/2 tsp with the spice paste if you're not keeping it vegetarian.",
         "Indonesian salam leaves are traditional; bay leaves are the closest supermarket swap."
-      ]
+      ],
+      "nutrition": {
+        "kcal": 389,
+        "proteinG": 12,
+        "carbsG": 18,
+        "fatG": 29,
+        "fibreG": 4,
+        "sodiumMg": 1015
+      }
     },
     {
       "id": "tapsilog",
       "title": "Tapsilog",
       "summary": "Filipino breakfast of garlicky cured beef, garlic fried rice and a fried egg.",
       "cuisine": "filipino",
-      "mealTypes": ["breakfast", "lunch"],
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
       "difficulty": "easy",
       "prepMinutes": 75,
       "cookMinutes": 20,
       "servings": 4,
       "onePot": false,
-      "diets": ["no-dairy"],
+      "diets": [
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Beef tapa",
@@ -3612,11 +4888,21 @@
         },
         {
           "section": "Garlic rice",
-          "items": ["2 tbsp neutral oil", "6 garlic cloves, finely chopped", "600g cooked white rice, cold from the fridge", "1/2 tsp salt"]
+          "items": [
+            "2 tbsp neutral oil",
+            "6 garlic cloves, finely chopped",
+            "600g cooked white rice, cold from the fridge",
+            "1/2 tsp salt"
+          ]
         },
         {
           "section": "To serve",
-          "items": ["4 eggs", "2 tomatoes, sliced", "4 tbsp cane vinegar", "1 bird's eye chilli, sliced"]
+          "items": [
+            "4 eggs",
+            "2 tomatoes, sliced",
+            "4 tbsp cane vinegar",
+            "1 bird's eye chilli, sliced"
+          ]
         }
       ],
       "steps": [
@@ -3636,6 +4922,14 @@
         "key": "tapsilog",
         "credit": "Photo: Maffeth.opiana / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Beef_Tapa_with_Egg.jpg"
+      },
+      "nutrition": {
+        "kcal": 580,
+        "proteinG": 41,
+        "carbsG": 53,
+        "fatG": 22,
+        "fibreG": 3,
+        "sodiumMg": 1290
       }
     },
     {
@@ -3643,14 +4937,22 @@
       "title": "Pork Sinigang",
       "summary": "A sour Filipino tamarind soup of tender pork ribs, radish, beans and greens.",
       "cuisine": "filipino",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 15,
       "cookMinutes": 95,
       "servings": 4,
       "onePot": true,
-      "seasons": ["autumn", "winter"],
-      "diets": ["no-gluten", "no-dairy"],
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "items": [
@@ -3669,7 +4971,9 @@
         },
         {
           "section": "To serve",
-          "items": ["Steamed jasmine rice"]
+          "items": [
+            "Steamed jasmine rice"
+          ]
         }
       ],
       "steps": [
@@ -3688,6 +4992,14 @@
         "key": "sinigang",
         "credit": "Photo: MarvinBikolano / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Sinigang_na_Baboy_with_Taro.jpg"
+      },
+      "nutrition": {
+        "kcal": 550,
+        "proteinG": 54,
+        "carbsG": 14,
+        "fatG": 30,
+        "fibreG": 4,
+        "sodiumMg": 1925
       }
     },
     {
@@ -3695,13 +5007,17 @@
       "title": "Bistek Tagalog",
       "summary": "Filipino beef steak braised briefly in soy and lime, under a tangle of soft onion rings.",
       "cuisine": "filipino",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 45,
       "cookMinutes": 25,
       "servings": 4,
       "onePot": false,
-      "diets": ["no-dairy"],
+      "diets": [
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "items": [
@@ -3718,7 +5034,9 @@
         },
         {
           "section": "To serve",
-          "items": ["Steamed jasmine rice"]
+          "items": [
+            "Steamed jasmine rice"
+          ]
         }
       ],
       "steps": [
@@ -3737,6 +5055,14 @@
         "key": "bistek-tagalog",
         "credit": "Photo: Joy D. Ganaden / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Bistek_Tagalog_DSCF3899.jpg"
+      },
+      "nutrition": {
+        "kcal": 313,
+        "proteinG": 34,
+        "carbsG": 5,
+        "fatG": 17,
+        "fibreG": 2,
+        "sodiumMg": 1180
       }
     },
     {
@@ -3744,13 +5070,17 @@
       "title": "Lumpia Shanghai",
       "summary": "Thin, crisp Filipino pork spring rolls, the party favourite, served with sweet chilli sauce.",
       "cuisine": "filipino",
-      "mealTypes": ["snack"],
+      "mealTypes": [
+        "snack"
+      ],
       "difficulty": "medium",
       "prepMinutes": 45,
       "cookMinutes": 25,
       "servings": 6,
       "onePot": false,
-      "diets": ["no-dairy"],
+      "diets": [
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Filling",
@@ -3768,11 +5098,16 @@
         },
         {
           "section": "To wrap and fry",
-          "items": ["25 spring roll wrappers (21cm), thawed", "1.5L neutral oil, for deep-frying"]
+          "items": [
+            "25 spring roll wrappers (21cm), thawed",
+            "1.5L neutral oil, for deep-frying"
+          ]
         },
         {
           "section": "To serve",
-          "items": ["125ml sweet chilli sauce"]
+          "items": [
+            "125ml sweet chilli sauce"
+          ]
         }
       ],
       "steps": [
@@ -3791,6 +5126,14 @@
         "key": "lumpia-shanghai",
         "credit": "Photo: Ralff Nestor Nacor / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Lumpiang_Shanghai,_Mar_2024.jpg"
+      },
+      "nutrition": {
+        "kcal": 707,
+        "proteinG": 27,
+        "carbsG": 43,
+        "fatG": 47,
+        "fibreG": 2,
+        "sodiumMg": 1000
       }
     },
     {
@@ -3798,14 +5141,21 @@
       "title": "Elote",
       "summary": "Mexican street corn: chargrilled cobs slathered in lime mayo, rolled in salty cheese and chilli.",
       "cuisine": "mexican",
-      "mealTypes": ["snack"],
+      "mealTypes": [
+        "snack"
+      ],
       "difficulty": "easy",
       "prepMinutes": 10,
       "cookMinutes": 15,
       "servings": 4,
       "onePot": false,
-      "seasons": ["summer"],
-      "diets": ["vegetarian", "no-gluten"],
+      "seasons": [
+        "summer"
+      ],
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
       "ingredients": [
         {
           "items": [
@@ -3829,20 +5179,33 @@
       "notes": [
         "Cotija is the cheese used in Mexico. Dry, salty feta crumbled very finely is the closest supermarket match.",
         "For esquites, cut the charred kernels off the cobs and toss everything together in cups."
-      ]
+      ],
+      "nutrition": {
+        "kcal": 182,
+        "proteinG": 4,
+        "carbsG": 1,
+        "fatG": 18,
+        "fibreG": 0,
+        "sodiumMg": 320
+      }
     },
     {
       "id": "molletes",
       "title": "Molletes",
       "summary": "Open rolls toasted with refried beans and melted cheese, topped with fresh pico de gallo.",
       "cuisine": "mexican",
-      "mealTypes": ["breakfast", "lunch"],
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
       "difficulty": "easy",
       "prepMinutes": 15,
       "cookMinutes": 20,
       "servings": 4,
       "onePot": false,
-      "diets": ["vegetarian"],
+      "diets": [
+        "vegetarian"
+      ],
       "ingredients": [
         {
           "section": "Refried beans",
@@ -3868,7 +5231,11 @@
         },
         {
           "section": "Molletes",
-          "items": ["4 bread rolls (bolillo or crusty white), split in half", "20g butter, softened", "150g tasty cheese, grated"]
+          "items": [
+            "4 bread rolls (bolillo or crusty white), split in half",
+            "20g butter, softened",
+            "150g tasty cheese, grated"
+          ]
         }
       ],
       "steps": [
@@ -3881,21 +5248,37 @@
       "notes": [
         "Bolillo rolls are traditional; any crusty white roll works.",
         "Good with a fried egg on top, or a spoonful of salsa verde."
-      ]
+      ],
+      "nutrition": {
+        "kcal": 551,
+        "proteinG": 23,
+        "carbsG": 58,
+        "fatG": 23,
+        "fibreG": 10,
+        "sodiumMg": 985
+      }
     },
     {
       "id": "sopa-de-fideo",
       "title": "Sopa de Fideo",
       "summary": "Toasted thin noodles simmered in a tomato and chicken broth, finished with avocado and lime.",
       "cuisine": "mexican",
-      "mealTypes": ["lunch", "dinner"],
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 10,
       "cookMinutes": 25,
       "servings": 4,
       "onePot": true,
-      "seasons": ["autumn", "winter"],
-      "diets": ["no-dairy"],
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "diets": [
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Soup",
@@ -3912,7 +5295,12 @@
         },
         {
           "section": "To serve",
-          "items": ["1 avocado, diced", "Small handful of coriander leaves", "1 lime, cut into wedges", "1 jalapeño, sliced (optional)"]
+          "items": [
+            "1 avocado, diced",
+            "Small handful of coriander leaves",
+            "1 lime, cut into wedges",
+            "1 jalapeño, sliced (optional)"
+          ]
         }
       ],
       "steps": [
@@ -3925,21 +5313,36 @@
       "notes": [
         "Mexican fideo noodles are sold in some supermarkets' international aisles; broken spaghettini is the same idea.",
         "Use vegetable stock to make it vegetarian."
-      ]
+      ],
+      "nutrition": {
+        "kcal": 410,
+        "proteinG": 14,
+        "carbsG": 40,
+        "fatG": 20,
+        "fibreG": 7,
+        "sodiumMg": 1230
+      }
     },
     {
       "id": "birria-tacos",
       "title": "Birria Tacos",
       "summary": "Chilli-braised beef in crisp, cheesy tortillas fried in the stew's red fat, with the broth for dipping.",
       "cuisine": "mexican",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "medium",
       "prepMinutes": 30,
       "cookMinutes": 210,
       "servings": 6,
       "onePot": false,
-      "seasons": ["autumn", "winter"],
-      "diets": ["no-gluten"],
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "diets": [
+        "no-gluten"
+      ],
       "ingredients": [
         {
           "section": "Birria",
@@ -3991,6 +5394,14 @@
         "key": "birria-tacos",
         "credit": "Photo: Sarah Stierch / Wikimedia Commons (CC BY 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Quesabirria_at_Taqueria_La_Hacienda,_Sonoma,_California_-_Sarah_Stierch.jpg"
+      },
+      "nutrition": {
+        "kcal": 779,
+        "proteinG": 62,
+        "carbsG": 41,
+        "fatG": 39,
+        "fibreG": 8,
+        "sodiumMg": 1960
       }
     },
     {
@@ -3998,13 +5409,18 @@
       "title": "Pão de Queijo",
       "summary": "Brazil's chewy little cheese breads, crisp outside and stretchy inside, made with tapioca starch.",
       "cuisine": "latin-american",
-      "mealTypes": ["snack", "breakfast"],
+      "mealTypes": [
+        "snack",
+        "breakfast"
+      ],
       "difficulty": "easy",
       "prepMinutes": 25,
       "cookMinutes": 25,
       "servings": 6,
       "onePot": false,
-      "diets": ["no-gluten"],
+      "diets": [
+        "no-gluten"
+      ],
       "ingredients": [
         {
           "items": [
@@ -4034,6 +5450,14 @@
         "key": "pao-de-queijo",
         "credit": "Photo: Murilo manzini / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Cheesebread.jpg"
+      },
+      "nutrition": {
+        "kcal": 305,
+        "proteinG": 5,
+        "carbsG": 37,
+        "fatG": 15,
+        "fibreG": 1,
+        "sodiumMg": 620
       }
     },
     {
@@ -4041,13 +5465,19 @@
       "title": "Gallo Pinto",
       "summary": "Costa Rica's breakfast of rice and black beans fried with onion and capsicum, with eggs and avocado.",
       "cuisine": "latin-american",
-      "mealTypes": ["breakfast", "lunch"],
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
       "difficulty": "easy",
       "prepMinutes": 10,
       "cookMinutes": 20,
       "servings": 4,
       "onePot": false,
-      "diets": ["vegetarian", "no-dairy"],
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Rice and beans",
@@ -4067,7 +5497,13 @@
         },
         {
           "section": "To serve",
-          "items": ["4 eggs", "1 tbsp neutral oil", "1 avocado, sliced", "100g sour cream (optional)", "Hot sauce, to serve"]
+          "items": [
+            "4 eggs",
+            "1 tbsp neutral oil",
+            "1 avocado, sliced",
+            "100g sour cream (optional)",
+            "Hot sauce, to serve"
+          ]
         }
       ],
       "steps": [
@@ -4087,6 +5523,14 @@
         "key": "gallo-pinto",
         "credit": "Photo: Mario Roberto Durán Ortiz / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:CRI_07_2018_0120.jpg"
+      },
+      "nutrition": {
+        "kcal": 527,
+        "proteinG": 19,
+        "carbsG": 56,
+        "fatG": 23,
+        "fibreG": 10,
+        "sodiumMg": 580
       }
     },
     {
@@ -4094,14 +5538,22 @@
       "title": "Ropa Vieja",
       "summary": "Cuba's shredded beef, braised slowly with capsicum, tomato and cumin, finished with green olives.",
       "cuisine": "latin-american",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 20,
       "cookMinutes": 150,
       "servings": 6,
       "onePot": true,
-      "seasons": ["autumn", "winter"],
-      "diets": ["no-gluten", "no-dairy"],
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Beef",
@@ -4126,7 +5578,10 @@
         },
         {
           "section": "To serve",
-          "items": ["Steamed white rice, to serve", "Handful of parsley, chopped"]
+          "items": [
+            "Steamed white rice, to serve",
+            "Handful of parsley, chopped"
+          ]
         }
       ],
       "steps": [
@@ -4146,6 +5601,14 @@
         "key": "ropa-vieja",
         "credit": "Photo: Sarang / Wikimedia Commons (public domain)",
         "source": "https://commons.wikimedia.org/wiki/File:Ropa_viecha_2.jpg"
+      },
+      "nutrition": {
+        "kcal": 569,
+        "proteinG": 53,
+        "carbsG": 8,
+        "fatG": 35,
+        "fibreG": 5,
+        "sodiumMg": 1150
       }
     },
     {
@@ -4153,14 +5616,23 @@
       "title": "Moqueca",
       "summary": "A Brazilian fish and prawn stew, simmered gently in coconut milk with capsicum, tomato and lime.",
       "cuisine": "latin-american",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 30,
       "cookMinutes": 30,
       "servings": 4,
       "onePot": true,
-      "seasons": ["spring", "summer"],
-      "diets": ["pescatarian", "no-gluten", "no-dairy"],
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Seafood",
@@ -4188,7 +5660,10 @@
         },
         {
           "section": "To serve",
-          "items": ["Steamed white rice, to serve", "1 lime, cut into wedges"]
+          "items": [
+            "Steamed white rice, to serve",
+            "1 lime, cut into wedges"
+          ]
         }
       ],
       "steps": [
@@ -4207,6 +5682,14 @@
         "key": "moqueca",
         "credit": "Photo: Bhasker Thodla / Wikimedia Commons (CC BY 3.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Moqueca_Bahiana_(232340163).jpeg"
+      },
+      "nutrition": {
+        "kcal": 536,
+        "proteinG": 50,
+        "carbsG": 13,
+        "fatG": 30,
+        "fibreG": 7,
+        "sodiumMg": 1065
       }
     },
     {
@@ -4214,7 +5697,9 @@
       "title": "Eggs Benedict",
       "summary": "Poached eggs and ham on toasted English muffins, under a lemony, buttery hollandaise.",
       "cuisine": "american",
-      "mealTypes": ["breakfast"],
+      "mealTypes": [
+        "breakfast"
+      ],
       "difficulty": "medium",
       "prepMinutes": 10,
       "cookMinutes": 20,
@@ -4224,7 +5709,13 @@
       "ingredients": [
         {
           "section": "Hollandaise",
-          "items": ["2 egg yolks", "1 tbsp lemon juice", "125g butter, melted and kept warm", "1/4 tsp salt", "Pinch of cayenne pepper"]
+          "items": [
+            "2 egg yolks",
+            "1 tbsp lemon juice",
+            "125g butter, melted and kept warm",
+            "1/4 tsp salt",
+            "Pinch of cayenne pepper"
+          ]
         },
         {
           "section": "Eggs",
@@ -4254,6 +5745,14 @@
         "key": "eggs-benedict",
         "credit": "Photo: Jon Mountjoy / Wikimedia Commons (CC BY 2.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Eggs_Benedict-01-cropped.jpg"
+      },
+      "nutrition": {
+        "kcal": 801,
+        "proteinG": 33,
+        "carbsG": 3,
+        "fatG": 73,
+        "fibreG": 0,
+        "sodiumMg": 1775
       }
     },
     {
@@ -4261,13 +5760,17 @@
       "title": "French Toast",
       "summary": "Thick slices of day-old bread soaked in cinnamon custard and fried in butter until golden.",
       "cuisine": "american",
-      "mealTypes": ["breakfast"],
+      "mealTypes": [
+        "breakfast"
+      ],
       "difficulty": "easy",
       "prepMinutes": 10,
       "cookMinutes": 20,
       "servings": 4,
       "onePot": false,
-      "diets": ["vegetarian"],
+      "diets": [
+        "vegetarian"
+      ],
       "ingredients": [
         {
           "section": "French toast",
@@ -4284,7 +5787,11 @@
         },
         {
           "section": "To serve",
-          "items": ["Maple syrup", "150g frozen mixed berries, thawed", "Icing sugar, for dusting"]
+          "items": [
+            "Maple syrup",
+            "150g frozen mixed berries, thawed",
+            "Icing sugar, for dusting"
+          ]
         }
       ],
       "steps": [
@@ -4302,6 +5809,14 @@
         "key": "french-toast",
         "credit": "Photo: Ocdp / Wikimedia Commons (CC0)",
         "source": "https://commons.wikimedia.org/wiki/File:French_toast_001.jpg"
+      },
+      "nutrition": {
+        "kcal": 416,
+        "proteinG": 14,
+        "carbsG": 53,
+        "fatG": 16,
+        "fibreG": 2,
+        "sodiumMg": 660
       }
     },
     {
@@ -4309,13 +5824,18 @@
       "title": "Blackened Fish",
       "summary": "White fish crusted in a smoky Cajun spice mix and seared hard in butter, with a crunchy slaw.",
       "cuisine": "american",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 15,
       "cookMinutes": 15,
       "servings": 4,
       "onePot": false,
-      "diets": ["pescatarian", "no-gluten"],
+      "diets": [
+        "pescatarian",
+        "no-gluten"
+      ],
       "ingredients": [
         {
           "section": "Spice mix",
@@ -4353,7 +5873,9 @@
         },
         {
           "section": "To serve",
-          "items": ["Steamed white rice, to serve"]
+          "items": [
+            "Steamed white rice, to serve"
+          ]
         }
       ],
       "steps": [
@@ -4372,6 +5894,14 @@
         "key": "blackened-fish",
         "credit": "Photo: Edsel Little / Wikimedia Commons (CC BY-SA 2.0)",
         "source": "https://commons.wikimedia.org/wiki/File:%22Trash_Fish%22_Sustanable_Seafood_Dinner.jpg"
+      },
+      "nutrition": {
+        "kcal": 377,
+        "proteinG": 35,
+        "carbsG": 7,
+        "fatG": 23,
+        "fibreG": 1,
+        "sodiumMg": 830
       }
     },
     {
@@ -4379,14 +5909,21 @@
       "title": "Pot Roast",
       "summary": "Beef chuck braised slowly in red wine and stock with carrots and potatoes until it falls apart.",
       "cuisine": "american",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 20,
       "cookMinutes": 200,
       "servings": 6,
       "onePot": true,
-      "seasons": ["autumn", "winter"],
-      "diets": ["no-dairy"],
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "diets": [
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "items": [
@@ -4427,6 +5964,14 @@
         "key": "pot-roast",
         "credit": "Photo: Mark Miller / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:American_pot_roast.jpg"
+      },
+      "nutrition": {
+        "kcal": 660,
+        "proteinG": 53,
+        "carbsG": 37,
+        "fatG": 32,
+        "fibreG": 6,
+        "sodiumMg": 1200
       }
     },
     {
@@ -4434,13 +5979,18 @@
       "title": "Welsh Rarebit",
       "summary": "A savoury cheddar, ale and mustard sauce spread thickly on toast and grilled until bubbling.",
       "cuisine": "british",
-      "mealTypes": ["lunch", "snack"],
+      "mealTypes": [
+        "lunch",
+        "snack"
+      ],
       "difficulty": "easy",
       "prepMinutes": 10,
       "cookMinutes": 15,
       "servings": 4,
       "onePot": false,
-      "diets": ["pescatarian"],
+      "diets": [
+        "pescatarian"
+      ],
       "ingredients": [
         {
           "section": "Rarebit",
@@ -4457,7 +6007,10 @@
         },
         {
           "section": "To serve",
-          "items": ["4 slices sourdough, thickly cut", "Salad leaves, to serve"]
+          "items": [
+            "4 slices sourdough, thickly cut",
+            "Salad leaves, to serve"
+          ]
         }
       ],
       "steps": [
@@ -4475,6 +6028,14 @@
         "key": "welsh-rarebit",
         "credit": "Photo: Jeremy Keith / Wikimedia Commons (CC BY 2.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Welsh_rarebit_(3436445626).jpg"
+      },
+      "nutrition": {
+        "kcal": 367,
+        "proteinG": 18,
+        "carbsG": 26,
+        "fatG": 21,
+        "fibreG": 1,
+        "sodiumMg": 460
       }
     },
     {
@@ -4482,18 +6043,28 @@
       "title": "Cornish Pasties",
       "summary": "Short pastry crimped around raw beef, potato, swede and onion, baked so the filling steams in its own juices.",
       "cuisine": "british",
-      "mealTypes": ["lunch"],
+      "mealTypes": [
+        "lunch"
+      ],
       "difficulty": "medium",
       "prepMinutes": 60,
       "cookMinutes": 50,
       "servings": 4,
       "onePot": false,
-      "seasons": ["autumn", "winter"],
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
       "diets": [],
       "ingredients": [
         {
           "section": "Pastry",
-          "items": ["500g plain flour", "1 tsp salt", "250g cold butter, diced", "160ml iced water"]
+          "items": [
+            "500g plain flour",
+            "1 tsp salt",
+            "250g cold butter, diced",
+            "160ml iced water"
+          ]
         },
         {
           "section": "Filling",
@@ -4526,6 +6097,14 @@
         "key": "cornish-pasties",
         "credit": "Photo: David Johnson / Wikimedia Commons (CC BY-SA 3.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Cornish_pasty.jpeg"
+      },
+      "nutrition": {
+        "kcal": 1310,
+        "proteinG": 46,
+        "carbsG": 111,
+        "fatG": 74,
+        "fibreG": 8,
+        "sodiumMg": 1400
       }
     },
     {
@@ -4533,18 +6112,31 @@
       "title": "Fish Pie",
       "summary": "White fish, salmon, smoked salmon and prawns in a creamy parsley sauce under a buttery mash crust.",
       "cuisine": "british",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "medium",
       "prepMinutes": 30,
       "cookMinutes": 70,
       "servings": 6,
       "onePot": false,
-      "seasons": ["autumn", "winter"],
-      "diets": ["pescatarian"],
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "diets": [
+        "pescatarian"
+      ],
       "ingredients": [
         {
           "section": "Mash",
-          "items": ["1.2kg floury potatoes, peeled and quartered", "50g butter", "100ml milk", "1/2 tsp salt", "30g cheddar, grated"]
+          "items": [
+            "1.2kg floury potatoes, peeled and quartered",
+            "50g butter",
+            "100ml milk",
+            "1/2 tsp salt",
+            "30g cheddar, grated"
+          ]
         },
         {
           "section": "Filling",
@@ -4583,6 +6175,14 @@
         "key": "fish-pie",
         "credit": "Photo: Daderot / Wikimedia Commons (CC0)",
         "source": "https://commons.wikimedia.org/wiki/File:Fish_pie_and_greens_-_Auckland,_New_Zealand.jpg"
+      },
+      "nutrition": {
+        "kcal": 649,
+        "proteinG": 44,
+        "carbsG": 50,
+        "fatG": 29,
+        "fibreG": 6,
+        "sodiumMg": 505
       }
     },
     {
@@ -4590,13 +6190,18 @@
       "title": "Scotch Eggs",
       "summary": "Jammy-yolked eggs wrapped in herby sausage meat, crumbed and fried until crisp.",
       "cuisine": "british",
-      "mealTypes": ["snack", "lunch"],
+      "mealTypes": [
+        "snack",
+        "lunch"
+      ],
       "difficulty": "medium",
       "prepMinutes": 40,
       "cookMinutes": 30,
       "servings": 6,
       "onePot": false,
-      "diets": ["no-dairy"],
+      "diets": [
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Eggs",
@@ -4610,11 +6215,18 @@
         },
         {
           "section": "Crumb",
-          "items": ["50g plain flour", "1 egg, beaten", "100g panko breadcrumbs", "1.5L neutral oil, for deep-frying"]
+          "items": [
+            "50g plain flour",
+            "1 egg, beaten",
+            "100g panko breadcrumbs",
+            "1.5L neutral oil, for deep-frying"
+          ]
         },
         {
           "section": "To serve",
-          "items": ["English mustard, to serve"]
+          "items": [
+            "English mustard, to serve"
+          ]
         }
       ],
       "steps": [
@@ -4634,6 +6246,14 @@
         "key": "scotch-eggs",
         "credit": "Photo: Unhindered by Talent / Wikimedia Commons (CC BY-SA 2.0)",
         "source": "https://commons.wikimedia.org/wiki/File:One_scotch_egg_(No_jar_of_Marmite).jpg"
+      },
+      "nutrition": {
+        "kcal": 706,
+        "proteinG": 22,
+        "carbsG": 19,
+        "fatG": 60,
+        "fibreG": 1,
+        "sodiumMg": 870
       }
     },
     {
@@ -4641,18 +6261,29 @@
       "title": "Käsespätzle",
       "summary": "Soft homemade egg noodles layered with melting Gruyère and emmental under sweet fried onions.",
       "cuisine": "central-european",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "medium",
       "prepMinutes": 15,
       "cookMinutes": 35,
       "servings": 4,
       "onePot": false,
-      "seasons": ["autumn", "winter"],
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
       "diets": [],
       "ingredients": [
         {
           "section": "Spätzle",
-          "items": ["400g plain flour", "4 eggs", "150ml milk", "1 tsp salt", "1/4 tsp ground nutmeg"]
+          "items": [
+            "400g plain flour",
+            "4 eggs",
+            "150ml milk",
+            "1 tsp salt",
+            "1/4 tsp ground nutmeg"
+          ]
         },
         {
           "section": "Onions and cheese",
@@ -4667,7 +6298,9 @@
         },
         {
           "section": "To serve",
-          "items": ["Green salad, to serve"]
+          "items": [
+            "Green salad, to serve"
+          ]
         }
       ],
       "steps": [
@@ -4686,6 +6319,14 @@
         "key": "kasespatzle",
         "credit": "Photo: Takeaway / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:2015_0718_K%C3%A4sesp%C3%A4tzle_S%C3%B6lden.jpg"
+      },
+      "nutrition": {
+        "kcal": 810,
+        "proteinG": 37,
+        "carbsG": 82,
+        "fatG": 36,
+        "fibreG": 5,
+        "sodiumMg": 735
       }
     },
     {
@@ -4693,13 +6334,17 @@
       "title": "Kaiserschmarrn",
       "summary": "Austria's fluffy torn pancake with rum-soaked raisins, caramelised in the pan and dusted with icing sugar.",
       "cuisine": "central-european",
-      "mealTypes": ["breakfast"],
+      "mealTypes": [
+        "breakfast"
+      ],
       "difficulty": "easy",
       "prepMinutes": 15,
       "cookMinutes": 15,
       "servings": 3,
       "onePot": true,
-      "diets": ["vegetarian"],
+      "diets": [
+        "vegetarian"
+      ],
       "ingredients": [
         {
           "section": "Pancake",
@@ -4718,7 +6363,10 @@
         },
         {
           "section": "To serve",
-          "items": ["Icing sugar, for dusting", "Apple sauce, to serve"]
+          "items": [
+            "Icing sugar, for dusting",
+            "Apple sauce, to serve"
+          ]
         }
       ],
       "steps": [
@@ -4736,6 +6384,14 @@
         "key": "kaiserschmarrn",
         "credit": "Photo: Superchilum / Wikimedia Commons (CC BY 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Kaiserschmarrn_with_fruits_02.jpg"
+      },
+      "nutrition": {
+        "kcal": 483,
+        "proteinG": 17,
+        "carbsG": 60,
+        "fatG": 19,
+        "fibreG": 2,
+        "sodiumMg": 385
       }
     },
     {
@@ -4743,14 +6399,21 @@
       "title": "Bigos",
       "summary": "Poland's hunter's stew of sauerkraut, cabbage, pork, kransky and porcini, slow-cooked until mellow.",
       "cuisine": "central-european",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 25,
       "cookMinutes": 150,
       "servings": 6,
       "onePot": true,
-      "seasons": ["autumn", "winter"],
-      "diets": ["no-dairy"],
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "diets": [
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "items": [
@@ -4791,6 +6454,14 @@
         "key": "bigos",
         "credit": "Photo: Dr. Bernd Gross / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Bigos_(1).jpg"
+      },
+      "nutrition": {
+        "kcal": 541,
+        "proteinG": 39,
+        "carbsG": 16,
+        "fatG": 35,
+        "fibreG": 3,
+        "sodiumMg": 2185
       }
     },
     {
@@ -4798,14 +6469,23 @@
       "title": "Lecsó",
       "summary": "Hungary's summer stew of yellow capsicum, tomato and onion with sweet paprika, with eggs stirred through.",
       "cuisine": "central-european",
-      "mealTypes": ["dinner", "lunch"],
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
       "difficulty": "easy",
       "prepMinutes": 15,
       "cookMinutes": 35,
       "servings": 4,
       "onePot": true,
-      "seasons": ["summer", "autumn"],
-      "diets": ["vegetarian", "no-dairy"],
+      "seasons": [
+        "summer",
+        "autumn"
+      ],
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "items": [
@@ -4839,6 +6519,14 @@
         "key": "lecso",
         "credit": "Photo: zeevveez / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Warm_Colors-_my_Mom%27s_Hungarian_Lecs%C3%B3_cropped.jpg"
+      },
+      "nutrition": {
+        "kcal": 239,
+        "proteinG": 10,
+        "carbsG": 17,
+        "fatG": 13,
+        "fibreG": 7,
+        "sodiumMg": 640
       }
     },
     {
@@ -4846,13 +6534,19 @@
       "title": "Pytt i Panna",
       "summary": "A Swedish hash of crisp diced potato, ham, kransky and onion, topped with fried eggs and pickled beetroot.",
       "cuisine": "scandinavian",
-      "mealTypes": ["dinner", "breakfast"],
+      "mealTypes": [
+        "dinner",
+        "breakfast"
+      ],
       "difficulty": "easy",
       "prepMinutes": 15,
       "cookMinutes": 35,
       "servings": 4,
       "onePot": false,
-      "seasons": ["autumn", "winter"],
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
       "diets": [],
       "ingredients": [
         {
@@ -4871,7 +6565,10 @@
         },
         {
           "section": "To serve",
-          "items": ["4 eggs", "200g pickled beetroot slices"]
+          "items": [
+            "4 eggs",
+            "200g pickled beetroot slices"
+          ]
         }
       ],
       "steps": [
@@ -4890,6 +6587,14 @@
         "key": "pytt-i-panna",
         "credit": "Photo: Skivsamlare / Wikimedia Commons (CC BY-SA 3.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Pyttipanna.JPG"
+      },
+      "nutrition": {
+        "kcal": 637,
+        "proteinG": 30,
+        "carbsG": 43,
+        "fatG": 37,
+        "fibreG": 6,
+        "sodiumMg": 2095
       }
     },
     {
@@ -4897,14 +6602,22 @@
       "title": "Toast Skagen",
       "summary": "Sweden's classic prawn toast: cold prawns in a dill and lemon dressing, piled on butter-fried bread.",
       "cuisine": "scandinavian",
-      "mealTypes": ["lunch", "snack"],
+      "mealTypes": [
+        "lunch",
+        "snack"
+      ],
       "difficulty": "easy",
       "prepMinutes": 20,
       "cookMinutes": 5,
       "servings": 4,
       "onePot": false,
-      "seasons": ["spring", "summer"],
-      "diets": ["pescatarian"],
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "diets": [
+        "pescatarian"
+      ],
       "ingredients": [
         {
           "section": "Prawns",
@@ -4922,7 +6635,12 @@
         },
         {
           "section": "Toast",
-          "items": ["4 slices white sandwich bread", "30g butter", "1 lemon, cut into wedges", "4 dill sprigs"]
+          "items": [
+            "4 slices white sandwich bread",
+            "30g butter",
+            "1 lemon, cut into wedges",
+            "4 dill sprigs"
+          ]
         }
       ],
       "steps": [
@@ -4938,6 +6656,14 @@
         "key": "toast-skagen",
         "credit": "Photo: Apinanaivot / Wikimedia Commons (CC0)",
         "source": "https://commons.wikimedia.org/wiki/File:Toast_Skagen_on_a_plate.jpg"
+      },
+      "nutrition": {
+        "kcal": 366,
+        "proteinG": 24,
+        "carbsG": 22,
+        "fatG": 20,
+        "fibreG": 1,
+        "sodiumMg": 685
       }
     },
     {
@@ -4945,14 +6671,21 @@
       "title": "Jansson's Temptation",
       "summary": "A Swedish gratin of potato matchsticks, sweet onion and anchovies baked in cream until golden.",
       "cuisine": "scandinavian",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 20,
       "cookMinutes": 60,
       "servings": 4,
       "onePot": false,
-      "seasons": ["autumn", "winter"],
-      "diets": ["pescatarian"],
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "diets": [
+        "pescatarian"
+      ],
       "ingredients": [
         {
           "section": "Gratin",
@@ -4969,7 +6702,9 @@
         },
         {
           "section": "To serve",
-          "items": ["Green salad, to serve"]
+          "items": [
+            "Green salad, to serve"
+          ]
         }
       ],
       "steps": [
@@ -4987,6 +6722,14 @@
         "key": "janssons-temptation",
         "credit": "Photo: Anders Jonsson / Wikimedia Commons (CC BY-SA 3.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Janssons_frestelse.jpg"
+      },
+      "nutrition": {
+        "kcal": 595,
+        "proteinG": 11,
+        "carbsG": 55,
+        "fatG": 35,
+        "fibreG": 8,
+        "sodiumMg": 635
       }
     },
     {
@@ -4994,14 +6737,22 @@
       "title": "Aussie Meat Pies",
       "summary": "Individual pies of rich beef mince gravy in flaky puff pastry, with tomato sauce on top.",
       "cuisine": "modern-australian",
-      "mealTypes": ["lunch", "dinner"],
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
       "difficulty": "medium",
       "prepMinutes": 50,
       "cookMinutes": 70,
       "servings": 6,
       "onePot": false,
-      "seasons": ["autumn", "winter"],
-      "diets": ["no-dairy"],
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "diets": [
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Filling",
@@ -5020,11 +6771,16 @@
         },
         {
           "section": "Pastry",
-          "items": ["4 sheets frozen puff pastry, just thawed", "1 egg, beaten, for brushing"]
+          "items": [
+            "4 sheets frozen puff pastry, just thawed",
+            "1 egg, beaten, for brushing"
+          ]
         },
         {
           "section": "To serve",
-          "items": ["Tomato sauce, to serve"]
+          "items": [
+            "Tomato sauce, to serve"
+          ]
         }
       ],
       "steps": [
@@ -5044,6 +6800,14 @@
         "key": "aussie-meat-pies",
         "credit": "Photo: Philip Mallis / Wikimedia Commons (CC BY-SA 2.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Meat_pie_from_Milang_Bakery,_South_Australia.jpg"
+      },
+      "nutrition": {
+        "kcal": 800,
+        "proteinG": 41,
+        "carbsG": 49,
+        "fatG": 48,
+        "fibreG": 4,
+        "sodiumMg": 1145
       }
     },
     {
@@ -5051,7 +6815,10 @@
       "title": "Zucchini Slice",
       "summary": "The lunchbox classic: grated zucchini, bacon and cheese baked into an easy, sliceable bake.",
       "cuisine": "modern-australian",
-      "mealTypes": ["lunch", "snack"],
+      "mealTypes": [
+        "lunch",
+        "snack"
+      ],
       "difficulty": "easy",
       "prepMinutes": 20,
       "cookMinutes": 35,
@@ -5089,6 +6856,14 @@
         "key": "zucchini-slice",
         "credit": "Photo: Valereee / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Zucchini_Slice_(cropped).jpg"
+      },
+      "nutrition": {
+        "kcal": 467,
+        "proteinG": 21,
+        "carbsG": 25,
+        "fatG": 31,
+        "fibreG": 2,
+        "sodiumMg": 795
       }
     },
     {
@@ -5096,14 +6871,21 @@
       "title": "Sang Choy Bow",
       "summary": "Quick stir-fried pork mince with water chestnuts and oyster sauce, eaten in cool iceberg lettuce cups.",
       "cuisine": "modern-australian",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 15,
       "cookMinutes": 10,
       "servings": 4,
       "onePot": true,
-      "seasons": ["spring", "summer"],
-      "diets": ["no-dairy"],
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "diets": [
+        "no-dairy"
+      ],
       "ingredients": [
         {
           "section": "Filling",
@@ -5143,20 +6925,32 @@
         "Chicken mince works just as well.",
         "Water chestnuts are what give it the crunch, so don't skip them.",
         "Food safety: Cook mince and sausages until no pink remains and the centre reaches 75°C."
-      ]
+      ],
+      "nutrition": {
+        "kcal": 389,
+        "proteinG": 34,
+        "carbsG": 10,
+        "fatG": 23,
+        "fibreG": 3,
+        "sodiumMg": 560
+      }
     },
     {
       "id": "ricotta-hotcakes",
       "title": "Ricotta Hotcakes",
       "summary": "Tall, soft hotcakes made light with ricotta and whipped egg whites, served with maple syrup and berries.",
       "cuisine": "modern-australian",
-      "mealTypes": ["breakfast"],
+      "mealTypes": [
+        "breakfast"
+      ],
       "difficulty": "easy",
       "prepMinutes": 15,
       "cookMinutes": 20,
       "servings": 4,
       "onePot": false,
-      "diets": ["vegetarian"],
+      "diets": [
+        "vegetarian"
+      ],
       "ingredients": [
         {
           "section": "Batter",
@@ -5173,7 +6967,11 @@
         },
         {
           "section": "To serve",
-          "items": ["Maple syrup", "150g frozen mixed berries, thawed", "Icing sugar, for dusting"]
+          "items": [
+            "Maple syrup",
+            "150g frozen mixed berries, thawed",
+            "Icing sugar, for dusting"
+          ]
         }
       ],
       "steps": [
@@ -5191,6 +6989,14 @@
         "key": "ricotta-hotcakes",
         "credit": "Photo: Sarah Stierch / Wikimedia Commons (CC BY 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Picazo_Kitchen_and_Bar_-_2021-11-07_-_Sarah_Stierch_04.jpg"
+      },
+      "nutrition": {
+        "kcal": 439,
+        "proteinG": 24,
+        "carbsG": 42,
+        "fatG": 19,
+        "fibreG": 2,
+        "sodiumMg": 340
       }
     },
     {
@@ -5198,14 +7004,22 @@
       "title": "Crispy-Skin Barramundi with Greens",
       "summary": "Pan-fried barramundi with shatteringly crisp skin, spring greens, baby potatoes and a caper herb dressing.",
       "cuisine": "modern-australian",
-      "mealTypes": ["dinner"],
+      "mealTypes": [
+        "dinner"
+      ],
       "difficulty": "easy",
       "prepMinutes": 15,
       "cookMinutes": 25,
       "servings": 4,
       "onePot": false,
-      "seasons": ["spring", "summer"],
-      "diets": ["pescatarian", "no-gluten"],
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "diets": [
+        "pescatarian",
+        "no-gluten"
+      ],
       "ingredients": [
         {
           "section": "Herb dressing",
@@ -5231,7 +7045,12 @@
         },
         {
           "section": "Fish",
-          "items": ["4 skin-on barramundi fillets, about 180g each", "1 tsp salt", "2 tbsp neutral oil", "20g butter"]
+          "items": [
+            "4 skin-on barramundi fillets, about 180g each",
+            "1 tsp salt",
+            "2 tbsp neutral oil",
+            "20g butter"
+          ]
         }
       ],
       "steps": [
@@ -5251,6 +7070,14 @@
         "key": "crispy-skin-barramundi",
         "credit": "Photo: Kgbo / Wikimedia Commons (CC BY-SA 4.0)",
         "source": "https://commons.wikimedia.org/wiki/File:Barramundi_dish_at_Yeerongpilly_Green_Village_restaurant,_2024.jpg"
+      },
+      "nutrition": {
+        "kcal": 563,
+        "proteinG": 38,
+        "carbsG": 31,
+        "fatG": 31,
+        "fibreG": 4,
+        "sodiumMg": 895
       }
     }
   ]

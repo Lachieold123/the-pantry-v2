@@ -84,3 +84,10 @@ The 15 tag additions in the compact file (e.g. dosa no-gluten, karahi no-dairy) 
 - Against the catalogue on main, one more duplicate was dropped: `chinese-egg-fried-rice-with-peas-and-spring-onion` (C61), same as `egg-fried-rice-with-peas-and-spring-onion` (A29).
 - Catalogue rebuilt: 5496 recipes. Batch-04 validate: 4499/4499, 0 failures. check-house, check-text, check-ingredients, typecheck, lint, prettier (src/scripts/e2e), domain tests (389/389) and Jest (110/110) all pass. No test counted the catalogue size.
 - `catalogue:validate` with no arguments still reports 711 "no nutrition estimate" failures in batch-01 to 03; that predates this merge and is out of scope. Nothing pushed, no Supabase.
+
+## Nutrition for batch-01 to 03 (local only)
+
+- `scripts/estimate-nutrition-from-lines.mts` gives 698 of 711 recipes a per-serve nutrition block from their ingredient lines (kcal, protein, carbs, fat via `nutrition-estimate.mts`; fibre and sodium from rough per-food tables in the script; no figure typed by hand or scaled to pass). Per-recipe output: `docs/nutrition-estimate-batch-01-03-2026-10-17.txt`.
+- Estimator now reads a bracketed weight on count lines ("1 whole perch (about 500 g)", "(400 g each)"); test added. Two sodium judgements (Lanzhou noodles, banh mi thit nuong, 80% eaten) are named in the script.
+- Bare `catalogue:validate`: 5197/5210, 13 still "no nutrition": 10 are condiments or drinks under the validator's 40 kcal floor (base-genep, nozawana-zuke, pico-de-gallo, pol-sambol, salsa-de-pasilla-oaxaquena, teh-tarik, torshi, nabak-kimchi, horenso-no-ohitashi, jaew-makhuea-thet), gat-kimchi ("mustard greens" links to the mustard condiment), kina-with-rewena and grilled-fish-wrapped-in-vine-leaves (lines can't be weighed). They need a rule decision or a relink; not forced.
+- Feed: the Supabase `published_recipes` rows for these recipes would need the new nutrition too. Not touched. Push is pending.

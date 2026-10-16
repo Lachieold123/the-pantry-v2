@@ -214,10 +214,13 @@ export function lineGrams(l: IngredientLine): number | undefined {
   if (l.unit === 'slice') return q * (/bacon/.test(id) ? 25 : /prosciutto|salami|pepperoni/.test(id) ? 15 : 35);
   if (l.unit === 'sheet')
     return q * (/puff-pastry|shortcrust/.test(id) ? 170 : /filo/.test(id) ? 20 : /nori/.test(id) ? 3 : /rice-paper/.test(id) ? 9 : 20);
-  if (!l.unit) {
-    const each = EACH_G.find(([re]) => re.test(id))?.[1];
-    return each === undefined ? undefined : q * each;
-  }
+  const each = !l.unit ? EACH_G.find(([re]) => re.test(id))?.[1] : undefined;
+  if (each !== undefined) return q * each;
+  // "1 whole perch (about 500 g)" or "2 whole fish (400 g each)": the bracketed weight on a count or head/bunch line.
+  const about = /\(\s*(?:about|approx\.?|roughly)?\s*(\d+(?:\.\d+)?)\s*g\s*\)/i.exec(l.raw);
+  if (about) return Number(about[1]);
+  const perEach = /\(\s*(\d+(?:\.\d+)?)\s*g each\s*\)/i.exec(l.raw);
+  if (perEach) return q * Number(perEach[1]);
   return undefined; // pinch, bunch, sprig and the like: too small or too vague to count
 }
 
