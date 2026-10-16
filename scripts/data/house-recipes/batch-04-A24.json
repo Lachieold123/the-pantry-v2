@@ -1,0 +1,1226 @@
+{
+ "about": "House recipes, batch 04 (helper sA): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+ "recipes": [
+  {
+   "id": "gnocchi-alla-romana-baked-semolina-gnocchi",
+   "title": "Gnocchi alla Romana (Baked Semolina Gnocchi)",
+   "summary": "Discs of set semolina and milk baked with butter and parmesan until golden and crisp at the edges.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 L milk",
+      "200g semolina",
+      "2 egg yolk",
+      "80g grated vegetarian hard cheese",
+      "40g butter",
+      "1/4 tsp ground nutmeg"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the milk with 1 tsp salt and the nutmeg until steaming. Rain in the semolina, whisking, and stir over low heat for 8 minutes, until very thick.",
+    "Off the heat, beat in the yolks and half the cheese. Spread 1.5cm thick on a tray and chill for 30 minutes, until firm.",
+    "Heat the oven to 220°C (200°C fan). Cut into 5cm rounds and overlap in a buttered dish.",
+    "Dot with the butter, scatter with the remaining cheese and bake for 25 minutes, until golden and crisp."
+   ],
+   "notes": [
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains milk, egg and gluten."
+   ],
+   "nutrition": {
+    "kcal": 518,
+    "proteinG": 23,
+    "carbsG": 48,
+    "fatG": 26,
+    "fibreG": 2,
+    "sodiumMg": 650
+   }
+  },
+  {
+   "id": "strangolapreti-trentino-spinach-and-bread-dumplings",
+   "title": "Strangolapreti (Trentino Spinach and Bread Dumplings)",
+   "summary": "Soft spinach and bread dumplings from Trentino, served with sage butter and parmesan.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g stale bread, cubed",
+      "300g frozen spinach, thawed",
+      "2 egg",
+      "1/2 cup milk",
+      "1/2 cup plain flour",
+      "100g grated vegetarian hard cheese",
+      "50g butter",
+      "8 sage leaves"
+     ]
+    }
+   ],
+   "steps": [
+    "Squeeze the spinach very dry and chop finely. Soak the bread in the milk for 10 minutes, then squeeze lightly.",
+    "Mix the bread, spinach, eggs, flour, half the cheese, 1 tsp salt and pepper. Rest for 10 minutes, then shape into 16 oval dumplings.",
+    "Simmer in salted water for 8 minutes, until they float and are firm.",
+    "Melt the butter with the sage for 2 minutes. Spoon over the dumplings and top with the remaining cheese."
+   ],
+   "notes": [
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains milk, egg and gluten."
+   ],
+   "nutrition": {
+    "kcal": 486,
+    "proteinG": 22,
+    "carbsG": 50,
+    "fatG": 22,
+    "fibreG": 5,
+    "sodiumMg": 800
+   }
+  },
+  {
+   "id": "canederli-tyrolean-speck-and-bread-dumplings",
+   "title": "Canederli (Tyrolean Speck and Bread Dumplings)",
+   "summary": "Big bread dumplings with ham and parsley from the South Tyrol, tossed in sage butter.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "250g stale bread, cubed",
+      "1 cup milk",
+      "2 egg",
+      "120g ham, diced",
+      "1 brown onion, diced",
+      "2 tbsp chopped parsley",
+      "2 tbsp plain flour",
+      "40g butter",
+      "6 sage leaves"
+     ]
+    }
+   ],
+   "steps": [
+    "Soften the onion in half the butter for 5 minutes. Soak the bread in the warm milk for 10 minutes.",
+    "Mix with the eggs, ham, parsley, flour, salt and pepper. Rest for 10 minutes, then roll into 8 balls with wet hands.",
+    "Simmer in salted water for 15 minutes, until firm and cooked through.",
+    "Melt the remaining butter with the sage and spoon over the dumplings."
+   ],
+   "notes": [
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains milk, egg and gluten."
+   ],
+   "nutrition": {
+    "kcal": 369,
+    "proteinG": 16,
+    "carbsG": 38,
+    "fatG": 17,
+    "fibreG": 3,
+    "sodiumMg": 900
+   }
+  },
+  {
+   "id": "pesce-all-acqua-pazza-neapolitan-fish-in-crazy-water",
+   "title": "Pesce all'Acqua Pazza (Neapolitan Fish in Crazy Water)",
+   "summary": "White fish poached in a light broth of cherry tomatoes, garlic and parsley, served with crusty bread.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 firm white fish fillets",
+      "3 tbsp olive oil",
+      "3 clove garlic, sliced",
+      "400g cherry tomatoes, halved",
+      "1/2 cup white wine",
+      "1/2 tsp chilli flakes",
+      "1 cup water",
+      "1/4 cup chopped parsley",
+      "4 slice crusty bread"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the garlic and chilli in the oil for 1 minute. Add the tomatoes and wine and simmer for 6 minutes, until the tomatoes collapse.",
+    "Add the water and salt, then lay in the fish.",
+    "Cover and poach gently for 8 minutes, until the fish is opaque and flakes.",
+    "Scatter with parsley and serve with the broth and toasted bread."
+   ],
+   "notes": [
+    "Food safety: fish is cooked when it turns opaque and flakes easily; cook shellfish until opaque. Eat the same day or refrigerate within an hour and use within 24 hours.",
+    "Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 304,
+    "proteinG": 30,
+    "carbsG": 19,
+    "fatG": 12,
+    "fibreG": 3,
+    "sodiumMg": 800
+   }
+  },
+  {
+   "id": "branzino-al-forno-roast-fish-traybake-with-potato-and-olives",
+   "title": "Branzino al Forno (Roast Fish Traybake with Potato and Olives)",
+   "summary": "Fish fillets roasted over lemony potatoes, cherry tomatoes and olives on one tray.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 firm white fish fillets",
+      "600g potato, thinly sliced",
+      "3 tbsp olive oil",
+      "200g cherry tomatoes",
+      "1/2 cup black olives",
+      "1 lemon, sliced",
+      "2 sprig rosemary"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Toss the potato with 2 tbsp oil, salt and rosemary on a tray and roast for 25 minutes, until golden.",
+    "Add the tomatoes, olives and lemon slices.",
+    "Rub the fish with the last of the oil, season and set on top. Roast for 10 minutes, until the fish is opaque and flakes."
+   ],
+   "notes": [
+    "Food safety: fish is cooked when it turns opaque and flakes easily; cook shellfish until opaque. Eat the same day or refrigerate within an hour and use within 24 hours.",
+    "Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 361,
+    "proteinG": 31,
+    "carbsG": 30,
+    "fatG": 13,
+    "fibreG": 4,
+    "sodiumMg": 700
+   }
+  },
+  {
+   "id": "mozzarella-in-carrozza-fried-mozzarella-sandwich",
+   "title": "Mozzarella in Carrozza (Fried Mozzarella Sandwich)",
+   "summary": "Crisp egg-dipped sandwiches with a molten mozzarella centre, a Neapolitan lunch.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 10,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 slice white bread",
+      "250g mozzarella, sliced",
+      "2 egg",
+      "1/2 cup milk",
+      "1/2 cup plain flour",
+      "1/4 cup olive oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Make 4 sandwiches with the bread and mozzarella. Trim the crusts and press the edges firmly.",
+    "Whisk the eggs, milk and a pinch of salt. Dust the sandwiches in flour, then soak briefly in the egg.",
+    "Fry in the oil over medium heat for 3 minutes each side, until golden and the cheese has melted."
+   ],
+   "notes": [
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains milk, egg and gluten."
+   ],
+   "nutrition": {
+    "kcal": 485,
+    "proteinG": 24,
+    "carbsG": 50,
+    "fatG": 21,
+    "fibreG": 3,
+    "sodiumMg": 1000
+   }
+  },
+  {
+   "id": "cordero-asado-castilian-roast-lamb-with-potatoes",
+   "title": "Cordero Asado (Castilian Roast Lamb with Potatoes)",
+   "summary": "Lamb shoulder roasted slowly with garlic and white wine over potatoes until it pulls apart.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 180,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.8 kg lamb shoulder, bone in",
+      "900g potato, chunked",
+      "6 clove garlic, whole",
+      "1/2 cup white wine",
+      "3 tbsp olive oil",
+      "2 sprig rosemary",
+      "1 tsp smoked paprika"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 170°C (150°C fan). Rub the lamb with 1 tbsp oil, paprika, salt and pepper.",
+    "Spread the potato, garlic and rosemary in a deep tin with the wine, and rest the lamb on top. Cover with foil.",
+    "Roast for 2 1/2 hours, then uncover, drizzle the potato with the remaining oil and roast for 30 minutes, until golden.",
+    "Rest the lamb for 15 minutes, then pull apart and serve with the potato and pan juices."
+   ],
+   "notes": [
+    "Food safety: lamb pieces should reach at least 70°C and be tender. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 538,
+    "proteinG": 40,
+    "carbsG": 27,
+    "fatG": 30,
+    "fibreG": 3,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "arroz-de-marisco-portuguese-seafood-rice",
+   "title": "Arroz de Marisco (Portuguese Seafood Rice)",
+   "summary": "A wet, tomato-rich rice with prawns and white fish, sloppy rather than dry.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g raw prawns, peeled",
+      "300g firm white fish fillets, cubed",
+      "3 tbsp olive oil",
+      "1 brown onion, diced",
+      "3 clove garlic, crushed",
+      "400g canned diced tomatoes",
+      "1/2 cup white wine",
+      "1 1/2 cup short grain rice",
+      "4 cup fish stock",
+      "1/4 cup chopped coriander"
+     ]
+    }
+   ],
+   "steps": [
+    "Soften the onion in the oil for 6 minutes. Add the garlic, tomatoes and wine and simmer for 8 minutes.",
+    "Stir in the rice and stock, cover and simmer for 14 minutes.",
+    "Fold in the fish and prawns, cover and cook for 6 minutes, until opaque and the rice is soft but still soupy.",
+    "Stir in the coriander and rest for 3 minutes."
+   ],
+   "notes": [
+    "Food safety: fish is cooked when it turns opaque and flakes easily; cook shellfish until opaque. Eat the same day or refrigerate within an hour and use within 24 hours.",
+    "Contains shellfish. Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 505,
+    "proteinG": 35,
+    "carbsG": 62,
+    "fatG": 13,
+    "fibreG": 3,
+    "sodiumMg": 800
+   }
+  },
+  {
+   "id": "espetada-madeiran-beef-skewers-with-garlic-and-bay",
+   "title": "Espetada (Madeiran Beef Skewers with Garlic and Bay)",
+   "summary": "Garlicky beef cubes threaded on bay branches or skewers, grilled and served with bread.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 12,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "700g beef rump, cubed",
+      "5 clove garlic, crushed",
+      "2 tbsp olive oil",
+      "2 tbsp white wine vinegar",
+      "4 bay leaf",
+      "1 tsp coarse salt",
+      "4 bread roll"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the beef with the garlic, oil, vinegar and salt. Thread onto 4 skewers with the bay leaves.",
+    "Grill or barbecue on high for 10 to 12 minutes, turning, until browned and cooked to your liking.",
+    "Slide the beef off the skewers into the rolls, or serve alongside, with the juices spooned over."
+   ],
+   "notes": [
+    "Food safety: beef pieces are safe once they reach at least 70°C and are tender. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Whole beef cubes are safe once browned outside; cook to at least 70°C if serving well done."
+   ],
+   "nutrition": {
+    "kcal": 473,
+    "proteinG": 41,
+    "carbsG": 30,
+    "fatG": 21,
+    "fibreG": 3,
+    "sodiumMg": 650
+   }
+  },
+  {
+   "id": "scouse-liverpool-lamb-and-potato-stew",
+   "title": "Scouse (Liverpool Lamb and Potato Stew)",
+   "summary": "A thick, peppery lamb and root vegetable stew from Liverpool, traditionally served with beetroot or pickles.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 120,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g lamb shoulder, diced",
+      "700g potato, chunked",
+      "2 carrot, diced",
+      "2 brown onion, sliced",
+      "1 tbsp worcestershire sauce",
+      "2 bay leaf",
+      "1 1/2 L beef stock",
+      "1 tbsp vegetable oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the lamb in the oil for 8 minutes. Add the onion and carrot and cook for 5 minutes.",
+    "Add the stock, Worcestershire and bay. Cover and simmer for 1 hour.",
+    "Add the potato and simmer for 40 minutes, until the lamb is tender and the potatoes are breaking down.",
+    "Season with plenty of pepper."
+   ],
+   "notes": [
+    "Food safety: lamb pieces should reach at least 70°C and be tender. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 450,
+    "proteinG": 29,
+    "carbsG": 34,
+    "fatG": 22,
+    "fibreG": 5,
+    "sodiumMg": 650
+   }
+  },
+  {
+   "id": "schweinebraten-bavarian-roast-pork-with-beer-gravy",
+   "title": "Schweinebraten (Bavarian Roast Pork with Beer Gravy)",
+   "summary": "Crackling-topped pork shoulder roasted over beer and vegetables, with potatoes and a dark gravy.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 150,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.6 kg pork shoulder, skin scored",
+      "1 cup beer",
+      "2 brown onion, quartered",
+      "2 carrot, chunked",
+      "4 clove garlic, smashed",
+      "1 tsp caraway seeds",
+      "900g potato, halved",
+      "1 tbsp plain flour"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Rub the pork with 2 tsp salt and the caraway. Set on the onion, carrot and garlic in a tin with the beer.",
+    "Roast for 30 minutes, then drop to 160°C (140°C fan) and roast for 1 1/2 hours, adding the potatoes in the last hour.",
+    "Rest the pork for 15 minutes. Strain the pan juices, whisk in the flour over heat and simmer for 5 minutes into a gravy.",
+    "Slice and serve with the potatoes and gravy."
+   ],
+   "notes": [
+    "Food safety: pork must reach at least 70°C in the centre, with clear juices, and rest before serving. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains gluten from the beer."
+   ],
+   "nutrition": {
+    "kcal": 504,
+    "proteinG": 40,
+    "carbsG": 32,
+    "fatG": 24,
+    "fibreG": 4,
+    "sodiumMg": 450
+   }
+  },
+  {
+   "id": "paprikas-krumpli-hungarian-paprika-potatoes-with-sausage",
+   "title": "Paprikas Krumpli (Hungarian Paprika Potatoes with Sausage)",
+   "summary": "A one-pot stew of potatoes, smoked sausage and sweet paprika, a classic comfort dinner.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g potato, diced",
+      "250g smoked sausage, sliced",
+      "2 tbsp vegetable oil",
+      "2 brown onion, diced",
+      "2 tbsp sweet paprika",
+      "1 tomato, chopped",
+      "1 green capsicum, diced",
+      "3 cup water"
+     ]
+    }
+   ],
+   "steps": [
+    "Soften the onion in the oil for 8 minutes. Off the heat, stir in the paprika so it does not burn.",
+    "Add the sausage, tomato and capsicum and cook for 3 minutes.",
+    "Add the potato and water, cover and simmer for 25 minutes, until the potato is tender and the liquid is thick and red."
+   ],
+   "notes": [
+    "Food safety: smoked sausage should be steaming hot throughout, reaching at least 75°C. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 444,
+    "proteinG": 15,
+    "carbsG": 42,
+    "fatG": 24,
+    "fibreG": 6,
+    "sodiumMg": 1100
+   }
+  },
+  {
+   "id": "segedinsky-gulas-slovak-pork-and-sauerkraut-goulash",
+   "title": "Segedinsky Gulas (Slovak Pork and Sauerkraut Goulash)",
+   "summary": "Pork braised with sauerkraut, paprika and caraway, finished with a swirl of sour cream.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 100,
+   "servings": 6,
+   "onePot": true,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "900g pork shoulder, diced",
+      "2 tbsp vegetable oil",
+      "2 brown onion, diced",
+      "2 tbsp sweet paprika",
+      "600g sauerkraut, drained",
+      "1 tsp caraway seeds",
+      "2 cup water",
+      "1/2 cup sour cream",
+      "2 tbsp plain flour",
+      "600g potato, boiled"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the pork in the oil for 8 minutes. Add the onion and cook for 6 minutes, then stir in the paprika.",
+    "Add the sauerkraut, caraway and water. Cover and simmer for 1 hour 15 minutes, until the pork is tender.",
+    "Whisk the flour into the sour cream and stir into the pot. Simmer for 5 minutes, until thickened.",
+    "Serve with the boiled potatoes."
+   ],
+   "notes": [
+    "Food safety: pork must reach at least 70°C in the centre, with clear juices, and rest before serving. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains milk."
+   ],
+   "nutrition": {
+    "kcal": 479,
+    "proteinG": 31,
+    "carbsG": 28,
+    "fatG": 27,
+    "fibreG": 6,
+    "sodiumMg": 1300
+   }
+  },
+  {
+   "id": "svickova-na-smetane-czech-beef-in-creamy-vegetable-sauce",
+   "title": "Svickova na Smetane (Czech Beef in Creamy Vegetable Sauce)",
+   "summary": "Pot-roasted beef sliced and served in a smooth root vegetable and cream sauce.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 120,
+   "servings": 6,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "1.2 kg beef topside",
+      "2 tbsp vegetable oil",
+      "2 carrot, diced",
+      "2 brown onion, diced",
+      "2 bay leaf",
+      "3 cup beef stock",
+      "3/4 cup cream",
+      "2 tbsp plain flour",
+      "2 tbsp lemon juice",
+      "6 slice rye bread"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the beef in the oil for 10 minutes. Add the carrot, onion, bay and stock, cover and simmer for 1 1/2 hours, turning once, until tender.",
+    "Lift out the beef and keep warm. Remove the bay and blend the vegetables and liquid until smooth.",
+    "Whisk the flour into the cream and stir into the sauce. Simmer for 5 minutes, then add the lemon juice and season.",
+    "Slice the beef and serve with the sauce and bread."
+   ],
+   "notes": [
+    "Food safety: beef pieces are safe once they reach at least 70°C and are tender. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains milk and gluten."
+   ],
+   "nutrition": {
+    "kcal": 511,
+    "proteinG": 44,
+    "carbsG": 32,
+    "fatG": 23,
+    "fibreG": 3,
+    "sodiumMg": 700
+   }
+  },
+  {
+   "id": "smazeny-syr-czech-fried-cheese-sandwich",
+   "title": "Smazeny Syr (Czech Fried Cheese Sandwich)",
+   "summary": "A crumbed slab of cheese fried until molten, tucked into a bun with pickles.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 10,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "320g edam cheese, cut in 4 slabs",
+      "1/4 cup plain flour",
+      "2 egg",
+      "1 cup breadcrumbs",
+      "1/3 cup vegetable oil",
+      "4 bread roll",
+      "2 dill pickle, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Dust the cheese in flour, dip in the beaten egg, then press in breadcrumbs. Repeat the egg and crumbs for a thicker crust and chill for 10 minutes.",
+    "Fry in the hot oil for 2 minutes each side, until deep golden. Drain.",
+    "Split the rolls and fill with the cheese and pickles."
+   ],
+   "notes": [
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains milk, egg and gluten."
+   ],
+   "nutrition": {
+    "kcal": 689,
+    "proteinG": 31,
+    "carbsG": 58,
+    "fatG": 37,
+    "fibreG": 3,
+    "sodiumMg": 1300
+   }
+  },
+  {
+   "id": "cevapi-bosnian-grilled-beef-and-lamb-fingers",
+   "title": "Cevapi (Bosnian Grilled Beef and Lamb Fingers)",
+   "summary": "Small skinless sausages of beef and lamb, grilled and tucked into warm flatbread with raw onion.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 10,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g beef mince",
+      "200g lamb mince",
+      "3 clove garlic, crushed",
+      "1/2 tsp bicarbonate of soda",
+      "1 tsp sweet paprika",
+      "1 red onion, diced",
+      "4 pita bread"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the mince, garlic, soda, paprika and 1 1/2 tsp salt well for 3 minutes. Shape into 20 short fingers.",
+    "Grill or pan fry for 8 to 10 minutes, turning, until browned and cooked through.",
+    "Warm the pita, fill with the cevapi and top with the onion."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains gluten."
+   ],
+   "nutrition": {
+    "kcal": 532,
+    "proteinG": 34,
+    "carbsG": 45,
+    "fatG": 24,
+    "fibreG": 4,
+    "sodiumMg": 650
+   }
+  },
+  {
+   "id": "pljeskavica-serbian-spiced-beef-and-pork-patty",
+   "title": "Pljeskavica (Serbian Spiced Beef and Pork Patty)",
+   "summary": "A large, juicy grilled patty served in a bun with onion and tomato.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 12,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g beef mince",
+      "250g pork mince",
+      "1 brown onion, grated",
+      "2 clove garlic, crushed",
+      "1/2 tsp bicarbonate of soda",
+      "4 bread bun",
+      "1 tomato, sliced",
+      "1 red onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the mince, grated onion, garlic, soda, 1 1/2 tsp salt and pepper. Shape into 4 flat patties 1.5cm thick.",
+    "Grill or pan fry for 6 minutes each side, until browned and cooked through.",
+    "Fill the buns with the patties, tomato and red onion."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains gluten."
+   ],
+   "nutrition": {
+    "kcal": 601,
+    "proteinG": 41,
+    "carbsG": 44,
+    "fatG": 29,
+    "fibreG": 3,
+    "sodiumMg": 750
+   }
+  },
+  {
+   "id": "sarma-balkan-cabbage-rolls-with-mince-and-rice",
+   "title": "Sarma (Balkan Cabbage Rolls with Mince and Rice)",
+   "summary": "Cabbage leaves wrapped around paprika-spiced beef, pork and rice, simmered in tomato.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 35,
+   "cookMinutes": 75,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 large cabbage",
+      "500g beef mince",
+      "250g pork mince",
+      "1/2 cup short grain rice",
+      "1 brown onion, diced",
+      "1 tbsp sweet paprika",
+      "1 tbsp vegetable oil",
+      "1 cup tomato passata",
+      "1 cup water"
+     ]
+    }
+   ],
+   "steps": [
+    "Core the cabbage and simmer for 8 minutes. Peel off 12 soft leaves and trim the ribs.",
+    "Cook the onion in the oil for 6 minutes. Mix with the mince, rice, paprika, salt and pepper.",
+    "Put 3 tbsp on each leaf, fold in the sides and roll up. Pack seam-down in a pot.",
+    "Pour over the passata and water, cover and simmer gently for 1 hour, until the rice and meat are cooked through."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains pork. Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 409,
+    "proteinG": 25,
+    "carbsG": 30,
+    "fatG": 21,
+    "fibreG": 6,
+    "sodiumMg": 700
+   }
+  },
+  {
+   "id": "burek-bosnian-meat-pie-with-filo",
+   "title": "Burek (Bosnian Meat Pie with Filo)",
+   "summary": "Coiled filo pie filled with spiced beef and onion, baked until crisp and golden.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 35,
+   "cookMinutes": 40,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "375g filo pastry",
+      "500g beef mince",
+      "1 brown onion, finely diced",
+      "1/3 cup vegetable oil",
+      "1 egg",
+      "1/2 tsp ground black pepper",
+      "1/2 cup sparkling water"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Cook the onion and mince in 1 tbsp oil for 10 minutes, with salt and pepper, until cooked through. Cool.",
+    "Lay 2 filo sheets, brush with oil, spoon the mince along one long edge and roll up. Coil into a greased 26cm tin. Repeat to fill.",
+    "Whisk the egg, water and remaining oil and pour over. Bake for 35 minutes, until golden and crisp.",
+    "Rest for 10 minutes before cutting."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 495,
+    "proteinG": 22,
+    "carbsG": 41,
+    "fatG": 27,
+    "fibreG": 3,
+    "sodiumMg": 600
+   }
+  },
+  {
+   "id": "mici-romanian-garlic-beef-and-pork-rolls",
+   "title": "Mici (Romanian Garlic Beef and Pork Rolls)",
+   "summary": "Garlic and thyme scented skinless sausages, grilled until charred and served with mustard and bread.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 12,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g beef mince",
+      "250g pork mince",
+      "4 clove garlic, crushed",
+      "1/2 tsp bicarbonate of soda",
+      "1 tsp sweet paprika",
+      "1 tsp dried thyme",
+      "1/3 cup beef stock",
+      "4 bread roll",
+      "1 tbsp mustard"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the mince, garlic, soda, paprika, thyme, 1 1/2 tsp salt and pepper, adding the stock slowly. Knead for 3 minutes.",
+    "Shape into 12 short rolls and chill for 10 minutes.",
+    "Grill or pan fry for 10 minutes, turning, until charred and cooked through.",
+    "Serve with the rolls and mustard."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains pork and gluten."
+   ],
+   "nutrition": {
+    "kcal": 510,
+    "proteinG": 38,
+    "carbsG": 31,
+    "fatG": 26,
+    "fibreG": 2,
+    "sodiumMg": 800
+   }
+  },
+  {
+   "id": "chiftele-romanian-herb-meatballs-with-mash",
+   "title": "Chiftele (Romanian Herb Meatballs with Mash)",
+   "summary": "Fried pork and beef meatballs flavoured with dill and parsley, served over creamy mash.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "400g pork mince",
+      "200g beef mince",
+      "1 brown onion, grated",
+      "1 egg",
+      "1/2 cup breadcrumbs",
+      "1/4 cup chopped dill",
+      "2 tbsp chopped parsley",
+      "1/4 cup plain flour",
+      "1/4 cup vegetable oil",
+      "600g potato",
+      "1/4 cup milk"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the mince, onion, egg, crumbs, herbs, 1 tsp salt and pepper. Roll into 16 balls and roll in the flour.",
+    "Boil the potato for 20 minutes, until tender. Drain and mash with the milk.",
+    "Shallow fry the meatballs in the oil for 10 minutes, turning, until browned and cooked through.",
+    "Serve over the mash with the pan juices spooned on top and extra dill."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 631,
+    "proteinG": 36,
+    "carbsG": 52,
+    "fatG": 31,
+    "fibreG": 4,
+    "sodiumMg": 650
+   }
+  },
+  {
+   "id": "kotlet-mielony-polish-pork-patties",
+   "title": "Kotlet Mielony (Polish Pork Patties)",
+   "summary": "Soft pork patties bound with soaked bread and marjoram, fried until golden and served with potatoes.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "600g pork mince",
+      "1 brown onion, grated",
+      "1 bread roll, soaked in milk",
+      "1 egg",
+      "1 tsp dried marjoram",
+      "1/3 cup breadcrumbs",
+      "1/4 cup vegetable oil",
+      "600g potato",
+      "1 tbsp butter"
+     ]
+    }
+   ],
+   "steps": [
+    "Squeeze the roll and mash into the pork with the onion, egg, marjoram, 1 tsp salt and pepper. Shape into 8 patties and coat in crumbs.",
+    "Boil the potato for 20 minutes, until tender. Drain and toss with the butter.",
+    "Fry the patties in the oil for 5 minutes each side, until golden and cooked through.",
+    "Serve the patties with the potatoes and spoon any pan juices over."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot. Pork mince is safe at 75°C.",
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 649,
+    "proteinG": 36,
+    "carbsG": 52,
+    "fatG": 33,
+    "fibreG": 4,
+    "sodiumMg": 600
+   }
+  },
+  {
+   "id": "kaldomar-swedish-cabbage-rolls-with-lingonberry",
+   "title": "Kaldomar (Swedish Cabbage Rolls with Lingonberry)",
+   "summary": "Cabbage rolls of pork and beef mince glazed with syrup and butter, served with lingonberry jam.",
+   "cuisine": "scandinavian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 35,
+   "cookMinutes": 60,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 cabbage leaf",
+      "350g pork mince",
+      "150g beef mince",
+      "1 cup cooked short grain rice",
+      "1/2 cup milk",
+      "2 tbsp golden syrup",
+      "30g butter",
+      "1/2 cup beef stock",
+      "4 tbsp lingonberry jam"
+     ]
+    }
+   ],
+   "steps": [
+    "Blanch the cabbage leaves in boiling water for 3 minutes and trim the ribs. Mix the mince, rice, milk, 1 tsp salt and pepper.",
+    "Put 1/8 of the filling on each leaf and roll up. Set seam-down in a buttered dish.",
+    "Heat the oven to 180°C (160°C fan). Brush the rolls with syrup, dot with butter and pour in the stock.",
+    "Bake for 50 minutes, basting twice, until glazed and cooked through. Serve with the jam."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains pork and milk."
+   ],
+   "nutrition": {
+    "kcal": 548,
+    "proteinG": 26,
+    "carbsG": 48,
+    "fatG": 28,
+    "fibreG": 5,
+    "sodiumMg": 600
+   }
+  },
+  {
+   "id": "kjottkaker-norwegian-meat-cakes-with-brown-gravy",
+   "title": "Kjottkaker (Norwegian Meat Cakes with Brown Gravy)",
+   "summary": "Tender beef patties in a brown gravy with boiled potatoes, a Norwegian Sunday staple.",
+   "cuisine": "scandinavian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "600g beef mince",
+      "1 brown onion, grated",
+      "1 egg",
+      "1/4 cup plain flour",
+      "3/4 cup milk",
+      "1/4 tsp ground nutmeg",
+      "30g butter",
+      "2 tbsp plain flour",
+      "1 1/2 cup beef stock",
+      "600g potato"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the mince, onion, egg, 1/4 cup flour, milk, nutmeg, 1 tsp salt and pepper. Shape into 8 oval cakes.",
+    "Boil the potato for 20 minutes, until tender.",
+    "Brown the cakes in the butter for 4 minutes each side. Lift out.",
+    "Whisk the 2 tbsp flour into the pan, then the stock, and simmer for 5 minutes. Return the cakes and simmer for 8 minutes, until cooked through. Serve with the potato."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 589,
+    "proteinG": 36,
+    "carbsG": 46,
+    "fatG": 29,
+    "fibreG": 4,
+    "sodiumMg": 750
+   }
+  },
+  {
+   "id": "fiskeboller-norwegian-fish-balls-in-white-sauce",
+   "title": "Fiskeboller (Norwegian Fish Balls in White Sauce)",
+   "summary": "Light, springy white fish balls poached and served in a creamy white sauce with potatoes.",
+   "cuisine": "scandinavian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g white fish fillets",
+      "1 egg",
+      "2 tbsp cornflour",
+      "1 cup milk",
+      "1/4 tsp ground nutmeg",
+      "30g butter",
+      "2 tbsp plain flour",
+      "1 cup milk",
+      "600g potato"
+     ]
+    }
+   ],
+   "steps": [
+    "Blend the fish with the egg, cornflour, nutmeg and 1 tsp salt. Add 1 cup milk slowly until smooth. Chill for 15 minutes.",
+    "Boil the potato for 20 minutes. Shape the fish mix into 16 balls with wet spoons and poach in simmering salted water for 8 minutes, until firm and white.",
+    "Melt the butter, stir in the flour for 1 minute and whisk in 1 cup milk. Simmer for 4 minutes until thick.",
+    "Serve the balls with the sauce and potatoes."
+   ],
+   "notes": [
+    "Food safety: fish is cooked when it turns opaque and flakes easily; cook shellfish until opaque. Eat the same day or refrigerate within an hour and use within 24 hours.",
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 485,
+    "proteinG": 38,
+    "carbsG": 45,
+    "fatG": 17,
+    "fibreG": 4,
+    "sodiumMg": 700
+   }
+  }
+ ]
+}
