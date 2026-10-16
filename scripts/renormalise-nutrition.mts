@@ -76,7 +76,7 @@ for (const file of targets) {
     }
   }
   // Keep each file's own indent (the slices differ) so the diff shows only changed numbers.
-  const indent = /\n( +)"/.exec(readFileSync(file, 'utf8'))?.[1].length ?? 1;
+  const indent = /\n( +)"/.exec(readFileSync(file, 'utf8'))?.[1]?.length ?? 1;
   if (dirty) writeFileSync(file, `${JSON.stringify(batch, null, indent)}\n`);
 }
 
