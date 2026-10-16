@@ -1,0 +1,854 @@
+{
+  "about": "House recipes, batch 04 (slice B): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "chocolate-cream-mousse-cups",
+      "title": "Chocolate Cream Mousse Cups",
+      "summary": "Silky dark chocolate mousse made with whipped cream and no raw egg.",
+      "cuisine": "french",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g dark chocolate",
+            "300ml cream",
+            "1 tbsp caster sugar",
+            "1 tsp vanilla extract",
+            "1 pinch salt",
+            "20g dark chocolate, grated"
+          ]
+        }
+      ],
+      "steps": [
+        "Melt the chocolate gently over a pan of barely simmering water, stir until smooth and cool for 10 minutes.",
+        "Whip 250ml of the cream with the sugar, vanilla and salt to soft peaks.",
+        "Stir a spoonful of the whipped cream into the chocolate to loosen it, then fold in the rest gently until no streaks remain.",
+        "Spoon into 6 small cups or glasses and chill until set.",
+        "Whip the remaining 50ml cream and top each cup with a spoonful and the grated chocolate."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Plus 2 hours chilling.",
+        "Storage: keeps 2 days covered in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 330,
+        "proteinG": 3,
+        "carbsG": 15,
+        "fatG": 28,
+        "fibreG": 3,
+        "sodiumMg": 25
+      }
+    },
+    {
+      "id": "vegan-chocolate-avocado-mousse-cups",
+      "title": "Vegan Chocolate Avocado Mousse Cups",
+      "summary": "A rich, smooth mousse made from ripe avocado and coconut cream, with no dairy or eggs.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 avocados, ripe",
+            "4 tbsp cocoa",
+            "80g maple syrup",
+            "100ml coconut cream",
+            "1 tsp vanilla extract",
+            "1 pinch salt",
+            "20g dark chocolate, grated"
+          ]
+        }
+      ],
+      "steps": [
+        "Scoop the avocado into a blender with the cocoa, maple syrup, coconut cream, vanilla and salt.",
+        "Blend for 2 minutes, scraping down the sides, until completely smooth and glossy.",
+        "Taste and add a little more maple syrup if wanted.",
+        "Spoon into 6 small cups and chill until firm. Top with the grated chocolate."
+      ],
+      "notes": [
+        "Snack. Vegan. Plus 1 hour chilling. Check that the chocolate is dairy free.",
+        "Storage: keeps 2 days covered in the fridge; the surface may darken slightly."
+      ],
+      "nutrition": {
+        "kcal": 239,
+        "proteinG": 3,
+        "carbsG": 20,
+        "fatG": 15,
+        "fibreG": 6,
+        "sodiumMg": 30
+      }
+    },
+    {
+      "id": "lemon-posset-cups",
+      "title": "Lemon Posset Cups",
+      "summary": "Three-ingredient set cream cups with a tart lemon flavour.",
+      "cuisine": "british",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 5,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500ml cream",
+            "120g caster sugar",
+            "3 lemons, zest and 90ml juice",
+            "100g frozen mixed berries"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the cream, sugar and lemon zest in a saucepan, stirring until the sugar dissolves, then boil gently for 3 minutes.",
+        "Remove from the heat and stir in the lemon juice. Strain into a jug.",
+        "Pour into 6 small glasses and cool for 15 minutes, then chill until set.",
+        "Serve topped with the berries."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Plus 4 hours chilling.",
+        "Storage: keeps 3 days covered in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 365,
+        "proteinG": 2,
+        "carbsG": 19,
+        "fatG": 31,
+        "fibreG": 1,
+        "sodiumMg": 25
+      }
+    },
+    {
+      "id": "cornflour-vanilla-panna-cotta-cups",
+      "title": "Cornflour Vanilla Panna Cotta Cups",
+      "summary": "A soft-set vanilla cream dessert thickened with cornflour instead of gelatine, so it is vegetarian.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 8,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400ml cream",
+            "250ml milk",
+            "70g caster sugar",
+            "2 tbsp cornflour",
+            "2 tsp vanilla extract",
+            "100g frozen mixed berries",
+            "1 tbsp honey"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the cornflour with 3 tbsp of the milk until smooth.",
+        "Heat the cream, remaining milk and sugar until steaming, whisk in the cornflour mixture and stir for 4 minutes until thick enough to coat a spoon.",
+        "Stir in the vanilla, pour into 6 glasses and cool for 15 minutes, then chill until set.",
+        "Warm the berries with the honey for 2 minutes and spoon over to serve."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Plus 4 hours chilling.",
+        "Storage: keeps 3 days covered in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 349,
+        "proteinG": 4,
+        "carbsG": 22,
+        "fatG": 27,
+        "fibreG": 1,
+        "sodiumMg": 40
+      }
+    },
+    {
+      "id": "coconut-panna-cotta-cups",
+      "title": "Coconut Panna Cotta Cups",
+      "summary": "Vegan coconut milk puddings set with cornflour and served with pineapple.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 8,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400ml coconut milk",
+            "200ml oat milk",
+            "60g caster sugar",
+            "3 tbsp cornflour",
+            "1 tsp vanilla extract",
+            "150g tinned pineapple, diced",
+            "2 tbsp desiccated coconut"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the cornflour with 4 tbsp of the oat milk until smooth.",
+        "Heat the coconut milk, remaining oat milk and sugar until steaming, whisk in the cornflour mixture and stir for 4 minutes until thick.",
+        "Stir in the vanilla, pour into 6 glasses, cool for 15 minutes and chill until set.",
+        "Toast the coconut in a dry pan for 2 minutes until pale gold. Top each cup with pineapple and coconut."
+      ],
+      "notes": [
+        "Snack. Vegan. Plus 4 hours chilling.",
+        "Storage: keeps 3 days covered in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 224,
+        "proteinG": 2,
+        "carbsG": 22,
+        "fatG": 14,
+        "fibreG": 1,
+        "sodiumMg": 25
+      }
+    },
+    {
+      "id": "berry-trifle-cups",
+      "title": "Berry Trifle Cups",
+      "summary": "Layers of sponge, fruit, custard and cream in small glasses.",
+      "cuisine": "british",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 25,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g vanilla sponge cake, cubed",
+            "3 tbsp apple juice",
+            "300g frozen mixed berries, thawed",
+            "3 tbsp apricot jam",
+            "300ml milk",
+            "4 egg yolks",
+            "60g caster sugar",
+            "2 tbsp cornflour",
+            "200ml cream"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the sponge with the apple juice and divide between 8 glasses. Warm the berries with the jam for 2 minutes and spoon over the sponge.",
+        "Whisk the yolks, sugar and cornflour. Heat the milk until steaming and whisk into the yolk mixture, then return to the pan and stir over low heat for 5 minutes until thick enough to coat a spoon and reaches 75°C.",
+        "Cool the custard for 15 minutes, spoon over the berries and chill until set.",
+        "Whip the cream to soft peaks and spoon on top."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Plus 3 hours chilling.",
+        "Storage: assemble up to a day ahead; keep in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 297,
+        "proteinG": 5,
+        "carbsG": 30,
+        "fatG": 17,
+        "fibreG": 2,
+        "sodiumMg": 100
+      }
+    },
+    {
+      "id": "marsala-trifle-cups",
+      "title": "Marsala Trifle Cups",
+      "summary": "Sponge soaked in a Marsala syrup with mascarpone cream and cocoa, a tiramisu-style cup.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 5,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g vanilla sponge cake, cubed",
+            "80ml Marsala",
+            "3 tbsp caster sugar",
+            "250g mascarpone",
+            "200ml cream",
+            "3 tbsp icing sugar",
+            "1 tsp vanilla extract",
+            "2 tbsp cocoa"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the Marsala with the caster sugar and 2 tbsp water for 1 minute until dissolved, then cool.",
+        "Beat the mascarpone, cream, icing sugar and vanilla to soft peaks.",
+        "Divide half the sponge between 8 small glasses, sprinkle with half the Marsala syrup, and spoon over half the cream.",
+        "Repeat the layers, then chill until set.",
+        "Dust with the cocoa just before serving."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Contains alcohol (Marsala is cooked off only slightly). Plus 3 hours chilling.",
+        "Storage: keeps 2 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 334,
+        "proteinG": 4,
+        "carbsG": 25,
+        "fatG": 24,
+        "fibreG": 1,
+        "sodiumMg": 80
+      }
+    },
+    {
+      "id": "baked-vanilla-cheesecake-squares",
+      "title": "Baked Vanilla Cheesecake Squares",
+      "summary": "A creamy baked cheesecake on a crumbly oat and butter base.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 35,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g rolled oats",
+            "80g butter, melted",
+            "40g brown sugar",
+            "500g cream cheese, softened",
+            "100g caster sugar",
+            "2 eggs",
+            "150g sour cream",
+            "2 tsp vanilla extract",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 150°C fan (170°C conventional). Line a 20cm square tin with baking paper.",
+        "Mix the oats, melted butter and brown sugar and press firmly into the tin. Bake for 10 minutes.",
+        "Beat the cream cheese and caster sugar until smooth, then beat in the eggs, sour cream, vanilla and lemon juice.",
+        "Pour over the base and bake for 30 to 35 minutes until set at the edges with a slight wobble in the middle.",
+        "Cool in the tin, chill, then cut into 12 squares."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Food safety: bake until the filling is fully set with no liquid centre, reaching 75°C in the middle.",
+        "Plus 4 hours chilling before cutting.",
+        "Storage: keep in the fridge for up to 4 days."
+      ],
+      "nutrition": {
+        "kcal": 296,
+        "proteinG": 6,
+        "carbsG": 18,
+        "fatG": 22,
+        "fibreG": 1,
+        "sodiumMg": 190
+      }
+    },
+    {
+      "id": "mini-chocolate-cheesecakes",
+      "title": "Mini Chocolate Cheesecakes",
+      "summary": "Single-serve chocolate cheesecakes baked in a muffin tin.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 18,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100g rolled oats",
+            "50g butter, melted",
+            "20g brown sugar",
+            "300g cream cheese, softened",
+            "80g caster sugar",
+            "2 eggs",
+            "80g dark chocolate, melted",
+            "2 tbsp cocoa",
+            "100g sour cream"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 150°C fan (170°C conventional). Line a 12-hole muffin tin with paper cases.",
+        "Mix the oats, butter and brown sugar and press a spoonful into each case until firmly packed.",
+        "Beat the cream cheese and caster sugar until smooth, beat in the eggs, melted chocolate, cocoa and sour cream.",
+        "Divide between the cases and bake for 16 to 18 minutes until set at the edges with a slight wobble in the middle.",
+        "Cool in the tin, then chill."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Food safety: bake until the filling is fully set with no liquid centre, reaching 75°C in the middle.",
+        "Plus 3 hours chilling.",
+        "Storage: keep in the fridge for up to 4 days."
+      ],
+      "nutrition": {
+        "kcal": 245,
+        "proteinG": 5,
+        "carbsG": 17,
+        "fatG": 17,
+        "fibreG": 2,
+        "sodiumMg": 120
+      }
+    },
+    {
+      "id": "pumpkin-cheesecake-bars",
+      "title": "Pumpkin Cheesecake Bars",
+      "summary": "Spiced pumpkin cheesecake on an oat and pecan base.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 40,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100g rolled oats",
+            "50g pecans, chopped",
+            "60g butter, melted",
+            "30g brown sugar",
+            "400g cream cheese, softened",
+            "100g caster sugar",
+            "2 eggs",
+            "200g pumpkin, roasted and mashed",
+            "1 tsp ground cinnamon",
+            "1/2 tsp ground ginger"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 150°C fan (170°C conventional). Line a 20cm square tin with baking paper.",
+        "Mix the oats, pecans, butter and brown sugar, press into the tin and bake for 10 minutes.",
+        "Beat the cream cheese and caster sugar until smooth, then beat in the eggs, pumpkin, cinnamon and ginger.",
+        "Pour over the base and bake for 35 to 40 minutes until set at the edges with a slight wobble in the middle.",
+        "Cool in the tin, chill, then cut into 12 bars."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Contains nuts. Food safety: bake until the filling is fully set with no liquid centre, reaching 75°C in the middle.",
+        "Plus 4 hours chilling.",
+        "Storage: keep in the fridge for up to 4 days."
+      ],
+      "nutrition": {
+        "kcal": 245,
+        "proteinG": 5,
+        "carbsG": 17,
+        "fatG": 17,
+        "fibreG": 2,
+        "sodiumMg": 140
+      }
+    },
+    {
+      "id": "mango-coconut-cheesecake-cups",
+      "title": "Mango Coconut Cheesecake Cups",
+      "summary": "A no-bake cheesecake in glasses with mango and coconut, firmed with chilling rather than gelatine.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 25,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100g rolled oats",
+            "40g butter, melted",
+            "1 tbsp honey",
+            "300g cream cheese, softened",
+            "100ml coconut cream",
+            "3 tbsp icing sugar",
+            "1 tsp vanilla extract",
+            "1 mango, diced",
+            "2 tbsp desiccated coconut"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the oats, butter and honey and press into the base of 6 glasses.",
+        "Beat the cream cheese, coconut cream, icing sugar and vanilla until thick and smooth.",
+        "Spoon over the bases, smooth the tops and chill until firm.",
+        "Top with the mango, and scatter with the coconut just before serving."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Plus 4 hours chilling.",
+        "Storage: keeps 2 days covered in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 347,
+        "proteinG": 5,
+        "carbsG": 24,
+        "fatG": 25,
+        "fibreG": 3,
+        "sodiumMg": 140
+      }
+    },
+    {
+      "id": "mini-pavlova-nests",
+      "title": "Mini Pavlova Nests",
+      "summary": "Crisp-shelled, marshmallow-centred meringue nests with cream and berries.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 30,
+      "cookMinutes": 75,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 egg whites",
+            "220g caster sugar",
+            "1 tsp cornflour",
+            "1 tsp white vinegar",
+            "1 tsp vanilla extract",
+            "250ml cream",
+            "200g frozen mixed berries, thawed",
+            "1 tbsp icing sugar"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 120°C fan (140°C conventional). Line two trays with baking paper.",
+        "Whisk the egg whites to stiff peaks, then add the sugar a spoonful at a time and whisk for 8 minutes until thick, glossy and no longer gritty when rubbed between fingers.",
+        "Fold in the cornflour, vinegar and vanilla. Spoon 12 mounds onto the trays and make a well in the centre of each.",
+        "Bake for 70 to 75 minutes until dry and crisp on the outside. Turn off the oven and cool inside with the door ajar.",
+        "Whip the cream with the icing sugar, fill the nests and top with the berries just before serving."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Gluten free.",
+        "Storage: store unfilled nests in an airtight tin for 3 days; fill just before serving."
+      ],
+      "nutrition": {
+        "kcal": 188,
+        "proteinG": 2,
+        "carbsG": 22,
+        "fatG": 10,
+        "fibreG": 1,
+        "sodiumMg": 25
+      }
+    },
+    {
+      "id": "chocolate-pots-de-creme",
+      "title": "Chocolate Pots de Creme",
+      "summary": "Baked chocolate custards in small pots, smooth and fudgy.",
+      "cuisine": "french",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g dark chocolate",
+            "250ml cream",
+            "150ml milk",
+            "4 egg yolks",
+            "40g caster sugar",
+            "1 tsp vanilla extract",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 150°C fan (170°C conventional). Place six 100ml ramekins in a deep baking dish.",
+        "Heat the cream and milk until steaming and pour over the broken chocolate. Stand for 2 minutes, then stir until smooth.",
+        "Whisk the yolks, sugar, vanilla and salt, then slowly whisk in the chocolate mixture.",
+        "Strain into a jug, pour into the ramekins and pour hot water into the dish to halfway up the sides.",
+        "Bake for 28 to 30 minutes until set at the edges with a slight wobble in the middle, then cool and chill."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Food safety: bake until the custard is set with no liquid centre, reaching 75°C in the middle.",
+        "Plus 3 hours chilling.",
+        "Storage: keeps 3 days covered in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 357,
+        "proteinG": 5,
+        "carbsG": 22,
+        "fatG": 27,
+        "fibreG": 3,
+        "sodiumMg": 40
+      }
+    },
+    {
+      "id": "poached-pear-cups",
+      "title": "Poached Pear Cups",
+      "summary": "Pears gently poached in spiced apple juice and served with yoghurt.",
+      "cuisine": "french",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 pears, peeled, halved and cored",
+            "500ml apple juice",
+            "1 cinnamon stick",
+            "2 tbsp honey",
+            "1 strip lemon zest",
+            "300g Greek yoghurt",
+            "2 tbsp walnuts, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Combine the apple juice, cinnamon, honey and lemon zest in a pan and bring to a gentle simmer until the honey dissolves.",
+        "Add the pears and poach for 20 to 25 minutes, turning once, until a knife slides in easily.",
+        "Lift out the pears and boil the liquid for 8 minutes until reduced to a syrup.",
+        "Slice each pear half and divide between 6 cups with the yoghurt, drizzle with syrup and scatter with the walnuts."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Contains nuts.",
+        "Storage: pears keep 3 days in their syrup in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 205,
+        "proteinG": 6,
+        "carbsG": 32,
+        "fatG": 5,
+        "fibreG": 4,
+        "sodiumMg": 30
+      }
+    },
+    {
+      "id": "self-saucing-chocolate-pudding-cups",
+      "title": "Self-Saucing Chocolate Pudding Cups",
+      "summary": "Soft chocolate puddings that make their own sauce as they bake.",
+      "cuisine": "british",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100g self-raising flour",
+            "30g cocoa",
+            "80g caster sugar",
+            "100ml milk",
+            "40g butter, melted",
+            "1 egg",
+            "100g brown sugar",
+            "2 tbsp cocoa",
+            "250ml boiling water"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 170°C fan (190°C conventional). Grease eight 150ml ramekins.",
+        "Whisk the flour, 30g cocoa and caster sugar, then whisk in the milk, butter and egg until smooth.",
+        "Divide between the ramekins. Mix the brown sugar and remaining cocoa, sprinkle over the batter, then pour 2 tbsp of the boiling water over each until the sugar is covered.",
+        "Bake for 22 to 25 minutes until the tops are set and springy.",
+        "Stand for 3 minutes and serve with the sauce at the base."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 pudding.",
+        "Storage: best eaten straight from the oven."
+      ],
+      "nutrition": {
+        "kcal": 214,
+        "proteinG": 3,
+        "carbsG": 36,
+        "fatG": 6,
+        "fibreG": 2,
+        "sodiumMg": 100
+      }
+    },
+    {
+      "id": "steamed-golden-syrup-puddings",
+      "title": "Steamed Golden Syrup Puddings",
+      "summary": "Small steamed sponge puddings with golden syrup running down the sides.",
+      "cuisine": "british",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 tbsp golden syrup",
+            "100g butter, softened",
+            "100g caster sugar",
+            "2 eggs",
+            "100g self-raising flour",
+            "2 tbsp milk",
+            "1 lemon, zest"
+          ]
+        }
+      ],
+      "steps": [
+        "Grease six 150ml pudding moulds and spoon 2 tsp golden syrup into the base of each.",
+        "Beat the butter and sugar for 3 minutes until pale. Beat in the eggs one at a time, then fold in the flour, milk and zest.",
+        "Divide between the moulds, cover each tightly with foil and place in a deep pan with boiling water to halfway up the sides.",
+        "Cover the pan and steam gently for 40 to 45 minutes until risen and a skewer comes out clean, topping up the water if needed.",
+        "Turn out and serve with the remaining syrup warmed."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 pudding.",
+        "Storage: best eaten warm; reheat for 30 seconds in the microwave."
+      ],
+      "nutrition": {
+        "kcal": 354,
+        "proteinG": 4,
+        "carbsG": 48,
+        "fatG": 16,
+        "fibreG": 1,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "orange-cardamom-rice-pudding-cups",
+      "title": "Orange Cardamom Rice Pudding Cups",
+      "summary": "Creamy rice pudding cooked on the hob scented with cardamom and orange, served warm or cold.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100g basmati rice",
+            "600ml milk",
+            "150ml coconut milk",
+            "60g caster sugar",
+            "5 cardamom pods, crushed",
+            "1 orange, zest",
+            "2 tbsp pistachios, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Rinse the rice, then combine with the milk, coconut milk, sugar, cardamom and zest in a saucepan.",
+        "Bring to a gentle simmer and cook for 30 to 35 minutes, stirring often, until the rice is very soft and the pudding is thick and creamy.",
+        "Remove the cardamom pods, spoon into 6 cups and scatter with the pistachios.",
+        "Serve warm or chill until cold."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Contains nuts.",
+        "Storage: keeps 3 days covered in the fridge; stir in a splash of milk when reheating."
+      ],
+      "nutrition": {
+        "kcal": 231,
+        "proteinG": 6,
+        "carbsG": 31,
+        "fatG": 9,
+        "fibreG": 1,
+        "sodiumMg": 50
+      }
+    }
+  ]
+}
