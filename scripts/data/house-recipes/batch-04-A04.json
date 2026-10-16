@@ -1,0 +1,2157 @@
+{
+ "about": "House recipes, batch 04 (helper sA): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+ "recipes": [
+  {
+   "id": "baked-lemon-ricotta-pasta",
+   "title": "Baked Lemon Ricotta Pasta",
+   "summary": "Creamy lemon-ricotta pasta baked with mozzarella until bubbling.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g penne",
+      "400g ricotta",
+      "1 lemon, zested and juiced",
+      "2 garlic, crushed",
+      "1 egg",
+      "1/2 cup basil, torn",
+      "1 cup mozzarella, grated",
+      "1 tbsp olive oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the penne in salted boiling water for 8 minutes, until just short of tender, and drain.",
+    "Heat the oven to 200°C (180°C fan). Mix the ricotta, lemon zest and juice, garlic, egg and basil, then toss with the pasta.",
+    "Tip into a baking dish, top with the mozzarella and drizzle with oil.",
+    "Bake for 25 minutes, until golden and bubbling."
+   ],
+   "notes": [
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 594,
+    "proteinG": 28,
+    "carbsG": 62,
+    "fatG": 26,
+    "fibreG": 4,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "slow-braised-beef-shin-ragu",
+   "title": "Slow-Braised Beef Shin Ragu",
+   "summary": "Fall-apart beef shin in a rich red wine and tomato sauce, served over pappardelle.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 25,
+   "cookMinutes": 180,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1kg beef shin, cut into large chunks",
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "2 carrot, diced",
+      "2 celery, diced",
+      "3 garlic, crushed",
+      "2 tbsp tomato paste",
+      "1 cup red wine",
+      "800g tinned tomatoes",
+      "2 rosemary",
+      "400g pappardelle"
+     ]
+    }
+   ],
+   "steps": [
+    "Season the beef and brown in the oil in a large heavy pot over high heat for 10 minutes, until deeply coloured on all sides. Set aside.",
+    "Cook the onion, carrot and celery in the same pot for 8 minutes, until soft, then add the garlic and tomato paste for 2 minutes.",
+    "Add the wine and boil for 3 minutes, then add the tomatoes, rosemary and beef. Cover and simmer gently, or bake at 150°C, for 3 hours, until the beef falls apart.",
+    "Shred the beef into the sauce and toss through the cooked pappardelle."
+   ],
+   "notes": [
+    "Food safety: beef shin needs long cooking; it is safe and tender when it shreds easily and the sauce is steaming hot (above 75°C)."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 42,
+    "carbsG": 62,
+    "fatG": 16,
+    "fibreG": 5,
+    "sodiumMg": 480
+   }
+  },
+  {
+   "id": "gnocchi-with-sage-burnt-butter",
+   "title": "Gnocchi with Sage Burnt Butter",
+   "summary": "Pillowy potato gnocchi in nutty browned butter with crisp sage and walnuts.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 12,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g potato gnocchi",
+      "80g butter",
+      "12 sage leaf",
+      "1/3 cup walnut, chopped",
+      "1 lemon, zested",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the gnocchi in salted boiling water for 3 minutes, until they float, and drain.",
+    "Melt the butter in a large frying pan over medium heat and cook the sage for 3 minutes, until the butter smells nutty and turns golden-brown.",
+    "Add the gnocchi and walnuts and toss for 3 minutes, until the gnocchi are golden at the edges. Finish with lemon zest."
+   ],
+   "notes": [
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 528,
+    "proteinG": 11,
+    "carbsG": 58,
+    "fatG": 28,
+    "fibreG": 4,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "cod-livornese",
+   "title": "Cod Livornese",
+   "summary": "Flaky white fish baked in a tomato, olive and caper sauce.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g white fish fillet",
+      "2 tbsp olive oil",
+      "1 brown onion, sliced",
+      "3 garlic, sliced",
+      "400g tinned tomatoes",
+      "1/2 cup kalamata olive",
+      "2 tbsp caper",
+      "1/2 tsp chilli flakes",
+      "1/4 cup parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the onion in the oil in a large ovenproof frying pan for 6 minutes, until soft, then add the garlic and chilli for 1 minute.",
+    "Add the tomatoes, olives and capers and simmer for 8 minutes, until thickened.",
+    "Nestle in the fish, spoon over the sauce and bake at 200°C (180°C fan) for 10 minutes, until the fish is opaque and flakes easily. Scatter with the parsley."
+   ],
+   "notes": [
+    "Food safety: fish is done when it is opaque and flakes easily, about 63°C in the centre.",
+    "Gluten-free and dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 292,
+    "proteinG": 34,
+    "carbsG": 12,
+    "fatG": 12,
+    "fibreG": 3,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "italian-sausage-and-white-bean-pan",
+   "title": "Italian Sausage and White Bean Pan",
+   "summary": "Browned sausage and creamy cannellini beans in a garlicky tomato sauce, high in protein.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g Italian sausage",
+      "1 tbsp olive oil",
+      "1 brown onion, sliced",
+      "3 garlic, crushed",
+      "400g tinned tomatoes",
+      "800g tinned cannellini bean, drained",
+      "1 tsp dried oregano",
+      "200g kale, shredded"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the sausages in the oil in a large deep frying pan over medium heat for 10 minutes, until the centre reaches 75°C. Slice.",
+    "Cook the onion in the same pan for 5 minutes, until soft, then add the garlic and oregano for 1 minute.",
+    "Add the tomatoes and beans and simmer for 8 minutes, until thick, then stir in the kale until wilted and return the sausage."
+   ],
+   "notes": [
+    "Food safety: pork sausages must reach 75°C in the centre with no pink inside.",
+    "Gluten-free and dairy-free if the sausages contain no fillers."
+   ],
+   "nutrition": {
+    "kcal": 546,
+    "proteinG": 40,
+    "carbsG": 38,
+    "fatG": 26,
+    "fibreG": 14,
+    "sodiumMg": 1450
+   }
+  },
+  {
+   "id": "tarragon-chicken-in-white-wine-cream",
+   "title": "Tarragon Chicken in White Wine Cream",
+   "summary": "Seared chicken thighs in a silky tarragon and white wine sauce.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g chicken thigh",
+      "1 tbsp butter",
+      "1 tbsp olive oil",
+      "2 shallot, finely diced",
+      "1/2 cup white wine",
+      "1 cup chicken stock",
+      "1/2 cup thickened cream",
+      "2 tbsp tarragon, chopped",
+      "1 tsp Dijon mustard"
+     ]
+    }
+   ],
+   "steps": [
+    "Season the chicken and sear in the butter and oil in a deep pan over medium-high heat for 5 minutes each side, until golden. Set aside.",
+    "Cook the shallots in the pan for 3 minutes, then add the wine and boil for 2 minutes, scraping up the browned bits.",
+    "Add the stock, mustard and chicken, cover and simmer for 15 minutes, until the chicken reaches 75°C in the centre.",
+    "Stir in the cream and tarragon and simmer for 3 minutes, until slightly thickened."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C with the juices running clear.",
+    "Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 508,
+    "proteinG": 40,
+    "carbsG": 6,
+    "fatG": 36,
+    "fibreG": 1,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "salmon-with-dijon-lentils",
+   "title": "Salmon with Dijon Lentils",
+   "summary": "Pan-seared salmon over mustardy French lentils, high in protein and fibre.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 salmon fillet",
+      "1 cup brown lentil",
+      "1 carrot, diced",
+      "1 bay leaf",
+      "2 tbsp olive oil",
+      "1 tbsp Dijon mustard",
+      "1 tbsp red wine vinegar",
+      "1/4 cup parsley, chopped",
+      "1 lemon, cut into wedges"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the lentils with the carrot and bay leaf in plenty of water for 25 minutes, until tender, then drain.",
+    "Whisk 1 tbsp oil with the mustard and vinegar and stir through the lentils with the parsley.",
+    "Season the salmon and cook skin-side down in the remaining oil over medium-high heat for 4 minutes, then flip and cook for 2 minutes, until opaque and flaking.",
+    "Serve the salmon on the lentils with lemon."
+   ],
+   "notes": [
+    "Food safety: cook salmon until it flakes easily and is opaque, about 63°C in the centre.",
+    "Gluten-free and dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 528,
+    "proteinG": 44,
+    "carbsG": 34,
+    "fatG": 24,
+    "fibreG": 13,
+    "sodiumMg": 330
+   }
+  },
+  {
+   "id": "sausage-and-white-bean-cassoulet",
+   "title": "Sausage and White Bean Cassoulet",
+   "summary": "A slow-baked French bean casserole with sausage, bacon and a crisp breadcrumb crust.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 30,
+   "cookMinutes": 120,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g pork sausage",
+      "150g bacon, diced",
+      "1 tbsp olive oil",
+      "1 brown onion, diced",
+      "3 garlic, crushed",
+      "2 carrot, diced",
+      "800g tinned cannellini bean, drained",
+      "400g tinned tomatoes",
+      "2 cup chicken stock",
+      "2 thyme",
+      "1 bay leaf",
+      "1/2 cup breadcrumbs"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the sausages in the oil in a large ovenproof pot for 10 minutes, until the centre reaches 75°C. Slice and set aside.",
+    "Cook the bacon, onion, garlic and carrot in the same pot for 10 minutes, until soft.",
+    "Add the beans, tomatoes, stock, thyme, bay leaf and sausage. Cover and bake at 160°C (140°C fan) for 90 minutes.",
+    "Scatter with breadcrumbs and bake uncovered for 30 minutes, until the top is crisp and golden."
+   ],
+   "notes": [
+    "Food safety: pork sausages must reach 75°C in the centre with no pink inside."
+   ],
+   "nutrition": {
+    "kcal": 548,
+    "proteinG": 34,
+    "carbsG": 40,
+    "fatG": 28,
+    "fibreG": 12,
+    "sodiumMg": 1350
+   }
+  },
+  {
+   "id": "gratin-dauphinois",
+   "title": "Gratin Dauphinois",
+   "summary": "Thinly sliced potatoes baked in garlic cream until meltingly soft with a golden top.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 75,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1kg waxy potato, very thinly sliced",
+      "2 garlic, crushed",
+      "1 1/2 cups thickened cream",
+      "1/2 cup milk",
+      "1/2 tsp nutmeg",
+      "1 tsp salt",
+      "20g butter"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 160°C (140°C fan) and butter a baking dish.",
+    "Bring the cream, milk, garlic, nutmeg and salt to a simmer in a saucepan, then add the potato slices and stir for 5 minutes, until the sauce starts to thicken.",
+    "Tip into the dish, level the top and bake for 75 minutes, until the potatoes are tender and the top is deep golden."
+   ],
+   "notes": [
+    "Vegetarian and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 412,
+    "proteinG": 6,
+    "carbsG": 34,
+    "fatG": 28,
+    "fibreG": 4,
+    "sodiumMg": 410
+   }
+  },
+  {
+   "id": "chorizo-chicken-paella-pan",
+   "title": "Chorizo Chicken Paella Pan",
+   "summary": "A one-pot Spanish rice with smoky chorizo, chicken and peas.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g chicken thigh, diced",
+      "150g chorizo, sliced",
+      "1 tbsp olive oil",
+      "1 brown onion, diced",
+      "1 capsicum, diced",
+      "3 garlic, crushed",
+      "2 tsp smoked paprika",
+      "1 1/2 cups paella rice",
+      "3 cup chicken stock",
+      "1 cup pea"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the chicken and chorizo in the oil in a wide, deep pan over medium-high heat for 8 minutes, until golden. Set aside.",
+    "Cook the onion and capsicum in the pan for 5 minutes, then add the garlic and paprika for 1 minute.",
+    "Stir in the rice, return the meat, add the stock and simmer, uncovered, for 18 minutes, until the rice is tender and the liquid is absorbed. Fold in the peas for the last 3 minutes.",
+    "Rest for 5 minutes before serving."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C right through with no pink; serve the rice hot and refrigerate leftovers within an hour.",
+    "Gluten-free and dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 640,
+    "proteinG": 38,
+    "carbsG": 68,
+    "fatG": 24,
+    "fibreG": 5,
+    "sodiumMg": 1180
+   }
+  },
+  {
+   "id": "lentil-and-chorizo-stew",
+   "title": "Lentil and Chorizo Stew",
+   "summary": "A hearty Spanish stew of lentils, smoky chorizo and potato.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "200g chorizo, sliced",
+      "1 tbsp olive oil",
+      "1 brown onion, diced",
+      "1 carrot, diced",
+      "3 garlic, crushed",
+      "2 tsp smoked paprika",
+      "1 cup brown lentil",
+      "300g potato, diced",
+      "1 litre chicken stock",
+      "1 bay leaf"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the chorizo in the oil in a large pot over medium heat for 5 minutes, until crisp and the fat runs.",
+    "Add the onion and carrot and cook for 6 minutes, until soft, then the garlic and paprika for 1 minute.",
+    "Add the lentils, potato, stock and bay leaf and simmer for 30 minutes, until the lentils and potato are tender and the stew is thick."
+   ],
+   "notes": [
+    "Gluten-free and dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 502,
+    "proteinG": 28,
+    "carbsG": 48,
+    "fatG": 22,
+    "fibreG": 13,
+    "sodiumMg": 1250
+   }
+  },
+  {
+   "id": "white-fish-with-romesco-sauce",
+   "title": "White Fish with Romesco Sauce",
+   "summary": "Roasted fish fillets under a smoky red capsicum and almond romesco.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g white fish fillet",
+      "1 tbsp olive oil",
+      "1 cup roasted capsicum",
+      "1/3 cup almond",
+      "1 garlic",
+      "1 tbsp sherry vinegar",
+      "1 tsp smoked paprika",
+      "1/4 cup olive oil",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Blitz the capsicum, almonds, garlic, vinegar, paprika and salt, streaming in the 1/4 cup oil until a thick, rough sauce forms.",
+    "Heat the oven to 200°C (180°C fan). Rub the fish with the 1 tbsp oil, season and bake on a lined tray for 12 minutes, until opaque and flaking.",
+    "Spoon the romesco over the fish."
+   ],
+   "notes": [
+    "Food safety: fish is cooked when opaque and flaking, about 63°C in the centre.",
+    "Gluten-free and dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 394,
+    "proteinG": 34,
+    "carbsG": 6,
+    "fatG": 26,
+    "fibreG": 3,
+    "sodiumMg": 610
+   }
+  },
+  {
+   "id": "greek-lamb-keftedes-with-lemon-potatoes",
+   "title": "Greek Lamb Keftedes with Lemon Potatoes",
+   "summary": "Herby lamb meatballs baked with lemon potatoes and oregano.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 45,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "500g lamb mince",
+      "1/2 brown onion, grated",
+      "1 egg",
+      "1/2 cup breadcrumbs",
+      "2 tbsp mint, chopped",
+      "2 tsp dried oregano",
+      "800g potato, cut into wedges",
+      "3 tbsp olive oil",
+      "2 lemon, juiced",
+      "1/2 cup tzatziki"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Toss the potato with 2 tbsp oil, the lemon juice, half the oregano and 1/2 cup water in a roasting dish.",
+    "Roast for 20 minutes. Meanwhile mix the lamb, onion, egg, breadcrumbs, mint and remaining oregano and roll into 16 balls.",
+    "Nestle the meatballs among the potatoes, drizzle with the last of the oil and roast for 25 minutes, until the potatoes are golden and the meatballs reach 75°C in the centre. Serve with the tzatziki."
+   ],
+   "notes": [
+    "Food safety: lamb mince must reach 75°C right through with no pink inside."
+   ],
+   "nutrition": {
+    "kcal": 596,
+    "proteinG": 34,
+    "carbsG": 52,
+    "fatG": 28,
+    "fibreG": 5,
+    "sodiumMg": 720
+   }
+  },
+  {
+   "id": "giouvetsi-chicken-and-orzo",
+   "title": "Giouvetsi Chicken and Orzo",
+   "summary": "Chicken baked with orzo in a rich tomato and cinnamon sauce, all in one dish.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 50,
+   "servings": 4,
+   "onePot": true,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "800g bone-in chicken thigh",
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "3 garlic, crushed",
+      "400g tinned tomatoes",
+      "1 cinnamon stick",
+      "2 cup chicken stock",
+      "1 1/2 cups orzo",
+      "100g feta, crumbled"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the chicken in the oil in a large ovenproof pan over medium-high heat for 8 minutes, until golden. Set aside.",
+    "Cook the onion for 5 minutes, then add the garlic, tomatoes, cinnamon and stock and bring to a simmer.",
+    "Return the chicken, add the orzo, cover and bake at 180°C (160°C fan) for 40 minutes, until the orzo is tender and the chicken reaches 75°C.",
+    "Top with the feta and serve."
+   ],
+   "notes": [
+    "Food safety: bone-in chicken must reach 75°C at the thickest part, away from the bone."
+   ],
+   "nutrition": {
+    "kcal": 590,
+    "proteinG": 42,
+    "carbsG": 56,
+    "fatG": 22,
+    "fibreG": 4,
+    "sodiumMg": 820
+   }
+  },
+  {
+   "id": "papoutsakia-little-shoes",
+   "title": "Papoutsakia (Little Shoes)",
+   "summary": "Eggplant halves baked with a spiced beef and tomato filling, topped with a golden béchamel.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 30,
+   "cookMinutes": 60,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "2 eggplant, halved",
+      "3 tbsp olive oil",
+      "300g beef mince",
+      "1 brown onion, diced",
+      "2 garlic, crushed",
+      "400g tinned tomatoes",
+      "1 tsp ground cinnamon",
+      "1 tsp dried oregano",
+      "30g butter",
+      "2 tbsp plain flour",
+      "1 cup milk",
+      "1/2 cup cheddar, grated"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Brush the eggplant with 2 tbsp oil and roast cut-side down for 25 minutes, until soft. Scoop out some flesh to make boats.",
+    "Cook the onion and mince in the remaining oil for 10 minutes, until browned and cooked through, then add the garlic, tomatoes, cinnamon, oregano and scooped flesh and simmer for 10 minutes.",
+    "Melt the butter, stir in the flour for 1 minute, then whisk in the milk until the sauce thickens. Stir in half the cheese.",
+    "Fill the eggplant with the beef, top with the sauce and remaining cheese and bake for 25 minutes, until golden."
+   ],
+   "notes": [
+    "Food safety: beef mince must reach 75°C right through with no pink inside."
+   ],
+   "nutrition": {
+    "kcal": 514,
+    "proteinG": 28,
+    "carbsG": 24,
+    "fatG": 34,
+    "fibreG": 8,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "sumac-chicken-traybake-with-flatbread",
+   "title": "Sumac Chicken Traybake with Flatbread",
+   "summary": "Sumac and lemon-rubbed chicken roasted with onions, then piled on flatbread with yoghurt.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": true,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "800g chicken thigh",
+      "3 red onion, cut into wedges",
+      "3 tbsp olive oil",
+      "2 tbsp sumac",
+      "1 tsp ground cumin",
+      "1 lemon, juiced",
+      "4 flatbread",
+      "1/2 cup Greek yoghurt",
+      "1/4 cup parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Toss the chicken and onions with the oil, sumac, cumin and lemon juice on a large tray.",
+    "Roast for 40 minutes, until the chicken is deep golden and reaches 75°C in the centre.",
+    "Warm the flatbreads and serve the chicken and onions on top with yoghurt and parsley."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C with the juices running clear."
+   ],
+   "nutrition": {
+    "kcal": 588,
+    "proteinG": 44,
+    "carbsG": 40,
+    "fatG": 28,
+    "fibreG": 4,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "lentil-and-rice-stuffed-eggplant",
+   "title": "Lentil and Rice Stuffed Eggplant",
+   "summary": "Roasted eggplant boats filled with spiced lentils, rice and pine nuts.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 50,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 eggplant, halved lengthways",
+      "3 tbsp olive oil",
+      "1/2 cup brown lentil",
+      "1/2 cup white rice",
+      "1 brown onion, diced",
+      "2 tsp ground cumin",
+      "1 tsp ground cinnamon",
+      "1/4 cup pine nut",
+      "1/4 cup parsley, chopped",
+      "1/2 cup tahini sauce"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Score the eggplant flesh, brush with 2 tbsp oil and roast cut-side up for 30 minutes, until soft.",
+    "Simmer the lentils in water for 15 minutes, until tender, then drain. Cook the rice in boiling water for 12 minutes and drain.",
+    "Cook the onion in the remaining oil for 8 minutes, add the spices and pine nuts and cook until the nuts are golden, then stir in the lentils, rice and parsley.",
+    "Mash down the middle of each eggplant, pile in the filling and bake for 15 minutes more. Serve with tahini sauce."
+   ],
+   "notes": [
+    "Vegan. Food safety: cool and refrigerate leftover rice within an hour."
+   ],
+   "nutrition": {
+    "kcal": 474,
+    "proteinG": 14,
+    "carbsG": 64,
+    "fatG": 18,
+    "fibreG": 16,
+    "sodiumMg": 260
+   }
+  },
+  {
+   "id": "harissa-chicken-with-herbed-couscous",
+   "title": "Harissa Chicken with Herbed Couscous",
+   "summary": "Spicy harissa-glazed chicken thighs with lemony couscous.",
+   "cuisine": "north-african",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "800g chicken thigh",
+      "3 tbsp harissa",
+      "2 tbsp olive oil",
+      "1 lemon, juiced",
+      "1 cup couscous",
+      "1 cup boiling water",
+      "1/2 cup parsley, chopped",
+      "1/2 cup coriander, chopped",
+      "1/4 cup Greek yoghurt"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the harissa, 1 tbsp oil and half the lemon juice and rub over the chicken.",
+    "Roast at 220°C (200°C fan) for 30 minutes, until charred and the chicken reaches 75°C in the centre.",
+    "Pour the boiling water over the couscous, cover for 5 minutes until absorbed, then fluff and stir through the herbs, remaining oil and lemon juice.",
+    "Serve the chicken over the couscous with yoghurt."
+   ],
+   "notes": [
+    "Plus 30 minutes marinating, if you have time.",
+    "Food safety: chicken must reach 75°C with no pink meat."
+   ],
+   "nutrition": {
+    "kcal": 570,
+    "proteinG": 46,
+    "carbsG": 38,
+    "fatG": 26,
+    "fibreG": 3,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "apricot-and-chickpea-vegetable-tagine",
+   "title": "Apricot and Chickpea Vegetable Tagine",
+   "summary": "A fragrant vegan tagine of sweet potato, chickpeas and apricots with warm spices.",
+   "cuisine": "north-african",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "3 garlic, crushed",
+      "2 tsp ground cumin",
+      "1 tsp ground cinnamon",
+      "1 tsp ground ginger",
+      "1 tsp sweet paprika",
+      "500g sweet potato, cubed",
+      "800g tinned tomatoes",
+      "400g tinned chickpeas, drained",
+      "1/2 cup dried apricot, halved",
+      "1/4 cup almond",
+      "1/4 cup coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the onion in the oil for 6 minutes, until soft. Add the garlic and spices for 1 minute.",
+    "Add the sweet potato, tomatoes, chickpeas, apricots and 1 cup water, cover and simmer for 30 minutes, until the sweet potato is tender and the sauce thick.",
+    "Toast the almonds in a dry pan until golden, about 3 minutes.",
+    "Serve topped with almonds and coriander."
+   ],
+   "notes": [
+    "Vegan and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 425,
+    "proteinG": 13,
+    "carbsG": 64,
+    "fatG": 13,
+    "fibreG": 14,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "cauliflower-cheese",
+   "title": "Cauliflower Cheese",
+   "summary": "Tender cauliflower in a creamy mustard cheddar sauce, baked until bubbling.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cauliflower, cut into florets",
+      "50g butter",
+      "1/3 cup plain flour",
+      "2 cup milk",
+      "1 tsp English mustard",
+      "1 1/2 cups cheddar, grated",
+      "1/4 tsp nutmeg",
+      "1/4 cup breadcrumbs"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the cauliflower in salted water for 6 minutes, until just tender, and drain well.",
+    "Melt the butter, stir in the flour for 1 minute, then whisk in the milk until the sauce thickens. Stir in the mustard, nutmeg and 1 cup of the cheddar.",
+    "Heat the oven to 200°C (180°C fan). Arrange the cauliflower in a baking dish, pour over the sauce, and top with the breadcrumbs and remaining cheese.",
+    "Bake for 25 minutes, until golden and bubbling."
+   ],
+   "notes": [
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 512,
+    "proteinG": 24,
+    "carbsG": 32,
+    "fatG": 32,
+    "fibreG": 6,
+    "sodiumMg": 740
+   }
+  },
+  {
+   "id": "white-fish-and-potato-fishcakes",
+   "title": "White Fish and Potato Fishcakes",
+   "summary": "Crisp golden fishcakes of flaked fish, mash and parsley with a lemon mayo.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner",
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g white fish fillet",
+      "500g potato, peeled and diced",
+      "2 tbsp parsley, chopped",
+      "1 egg",
+      "1 cup breadcrumbs",
+      "2 tbsp neutral oil",
+      "1/3 cup mayonnaise",
+      "1 lemon, juiced"
+     ]
+    }
+   ],
+   "steps": [
+    "Poach the fish in simmering water for 8 minutes, until opaque and flaking, then drain and flake. Boil the potato for 15 minutes, until tender, then mash.",
+    "Mix the fish, mash, parsley and half the egg-beaten mixture into 8 patties, then dip in the rest of the egg and the breadcrumbs.",
+    "Fry in the oil over medium heat for 4 minutes each side, until golden and heated through.",
+    "Stir the lemon juice into the mayonnaise and serve with the cakes."
+   ],
+   "notes": [
+    "Food safety: fish should be opaque and flake easily, about 63°C; chill the patties before frying if time allows."
+   ],
+   "nutrition": {
+    "kcal": 526,
+    "proteinG": 36,
+    "carbsG": 46,
+    "fatG": 22,
+    "fibreG": 3,
+    "sodiumMg": 540
+   }
+  },
+  {
+   "id": "mushroom-and-ale-pie",
+   "title": "Mushroom and Ale Pie",
+   "summary": "A rich vegan mushroom filling in a stout gravy, topped with puff pastry.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 60,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1kg mixed mushrooms, roughly chopped",
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "3 garlic, crushed",
+      "2 tbsp plain flour",
+      "1 cup beer",
+      "1 cup vegetable stock",
+      "1 tbsp soy sauce",
+      "2 thyme",
+      "300g puff pastry"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the mushrooms in the oil in a large pot over high heat for 12 minutes, until browned and the liquid has gone. Add the onion for 5 minutes, then the garlic and flour for 1 minute.",
+    "Add the beer, stock, soy sauce and thyme and simmer for 20 minutes, until thick. Cool slightly and tip into a pie dish.",
+    "Heat the oven to 200°C (180°C fan). Top with the pastry, trim, cut a vent in the centre and bake for 30 minutes, until puffed and deep golden."
+   ],
+   "notes": [
+    "Vegan."
+   ],
+   "nutrition": {
+    "kcal": 362,
+    "proteinG": 12,
+    "carbsG": 38,
+    "fatG": 18,
+    "fibreG": 6,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "spatzle-with-creamy-mushrooms",
+   "title": "Spätzle with Creamy Mushrooms",
+   "summary": "Soft homemade egg noodles tossed in a garlicky mushroom cream sauce.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 cups plain flour",
+      "3 egg",
+      "1/2 cup milk",
+      "1 tsp salt",
+      "1/4 tsp nutmeg",
+      "30g butter",
+      "400g button mushroom, sliced",
+      "2 garlic, crushed",
+      "1/2 cup thickened cream",
+      "2 tbsp parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Beat the flour, eggs, milk, salt and nutmeg to a thick, elastic batter and rest for 15 minutes.",
+    "Press the batter through a colander or spätzle press into a pan of simmering salted water and cook for 2 minutes, until the noodles float. Lift out and drain.",
+    "Melt the butter in a large frying pan and cook the mushrooms for 8 minutes, until golden. Add the garlic for 1 minute and the cream until simmering.",
+    "Toss in the spätzle and heat for 2 minutes, then scatter with parsley."
+   ],
+   "notes": [
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 524,
+    "proteinG": 19,
+    "carbsG": 58,
+    "fatG": 24,
+    "fibreG": 4,
+    "sodiumMg": 540
+   }
+  },
+  {
+   "id": "sauerbraten-with-sweet-sour-gravy",
+   "title": "Sauerbraten with Sweet-Sour Gravy",
+   "summary": "Beef marinated for days in vinegar and spices, then braised until tender in a sweet-sour gravy.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 30,
+   "cookMinutes": 180,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.2kg beef chuck",
+      "1 cup red wine vinegar",
+      "1 cup water",
+      "1 brown onion, sliced",
+      "1 carrot, sliced",
+      "3 bay leaf",
+      "1 tsp whole clove",
+      "1 tsp black pepper",
+      "2 tbsp neutral oil",
+      "2 tbsp plain flour",
+      "2 tbsp brown sugar"
+     ]
+    }
+   ],
+   "steps": [
+    "Combine the vinegar, water, onion, carrot, bay leaves, cloves and pepper in a bowl, add the beef, cover and marinate in the fridge.",
+    "Lift the beef out, dry well and brown in the oil in a heavy pot over high heat for 10 minutes, until deeply coloured. Strain the marinade.",
+    "Return the beef to the pot with the strained marinade and sugar, cover and braise at 160°C (140°C fan) for 3 hours, until fork-tender.",
+    "Whisk the flour with a little cold water, stir into the juices and simmer for 5 minutes, until a glossy gravy forms. Slice the beef and serve."
+   ],
+   "notes": [
+    "Plus 2 days marinating.",
+    "Food safety: braised beef is safe when fork-tender; the gravy should be steaming hot, above 75°C."
+   ],
+   "nutrition": {
+    "kcal": 402,
+    "proteinG": 46,
+    "carbsG": 14,
+    "fatG": 18,
+    "fibreG": 2,
+    "sodiumMg": 260
+   }
+  },
+  {
+   "id": "roast-lamb-leg-with-rosemary-and-garlic",
+   "title": "Roast Lamb Leg with Rosemary and Garlic",
+   "summary": "A classic Sunday roast leg of lamb with garlic and rosemary, and crisp roast potatoes.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 90,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.5kg boneless lamb leg",
+      "4 garlic, sliced",
+      "3 rosemary",
+      "3 tbsp olive oil",
+      "1 lemon, zested",
+      "1kg potato, cut into chunks",
+      "1 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Make small cuts in the lamb and push in the garlic and rosemary. Rub with 1 tbsp oil, the lemon zest and salt.",
+    "Roast the lamb for 20 minutes, then reduce to 180°C (160°C fan). Add the potato tossed in the remaining oil around the lamb.",
+    "Roast for 70 minutes more, until the lamb reaches 63°C in the thickest part for medium, or 70°C for well done, and the potatoes are crisp.",
+    "Rest the lamb under foil for 15 minutes before carving."
+   ],
+   "notes": [
+    "Food safety: lamb leg is safe at 63°C in the thickest part, after a 3-minute rest; use a thermometer.",
+    "Gluten-free and dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 528,
+    "proteinG": 48,
+    "carbsG": 30,
+    "fatG": 24,
+    "fibreG": 3,
+    "sodiumMg": 380
+   }
+  },
+  {
+   "id": "honey-soy-chicken-drumsticks",
+   "title": "Honey Soy Chicken Drumsticks",
+   "summary": "Sticky, glossy baked drumsticks with a honey, soy and ginger glaze.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 45,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.2kg chicken drumstick",
+      "1/4 cup soy sauce",
+      "1/4 cup honey",
+      "2 garlic, crushed",
+      "1 tbsp ginger, grated",
+      "1 tbsp sesame oil",
+      "2 spring onion, sliced",
+      "1 tbsp sesame seed"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the soy sauce, honey, garlic, ginger and sesame oil and coat the drumsticks. Marinate.",
+    "Heat the oven to 200°C (180°C fan). Roast the drumsticks on a lined tray for 45 minutes, turning and basting twice, until sticky and the thickest part reaches 75°C.",
+    "Scatter with spring onion and sesame seeds."
+   ],
+   "notes": [
+    "Plus 1 hour marinating.",
+    "Food safety: chicken must reach 75°C at the thickest part, with the juices running clear."
+   ],
+   "nutrition": {
+    "kcal": 386,
+    "proteinG": 34,
+    "carbsG": 22,
+    "fatG": 18,
+    "fibreG": 1,
+    "sodiumMg": 1020
+   }
+  },
+  {
+   "id": "chilli-garlic-prawn-spaghetti",
+   "title": "Chilli Garlic Prawn Spaghetti",
+   "summary": "Spaghetti tossed with juicy prawns, garlic, chilli and lemon.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g spaghetti",
+      "400g prawn, peeled",
+      "3 tbsp olive oil",
+      "4 garlic, sliced",
+      "1 red chilli, sliced",
+      "1 lemon, zested and juiced",
+      "1/4 cup parsley, chopped",
+      "1/2 cup white wine"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the spaghetti in salted boiling water for 10 minutes, until al dente, saving 1/2 cup of the water, then drain.",
+    "Warm the oil, garlic and chilli in a large frying pan for 2 minutes, until fragrant. Add the prawns and cook for 3 minutes, until pink and opaque.",
+    "Add the wine and lemon juice and simmer for 2 minutes, then toss in the pasta, a splash of pasta water, the zest and parsley until glossy."
+   ],
+   "notes": [
+    "Food safety: prawns are cooked when pink and opaque all the way through, about 63°C."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 34,
+    "carbsG": 70,
+    "fatG": 16,
+    "fibreG": 4,
+    "sodiumMg": 450
+   }
+  },
+  {
+   "id": "sweet-chilli-salmon-tray-bake",
+   "title": "Sweet Chilli Salmon Tray Bake",
+   "summary": "Salmon and green vegetables roasted on one tray with a sweet chilli glaze.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 18,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 salmon fillet",
+      "2 tbsp sweet chilli sauce",
+      "1 tbsp soy sauce",
+      "300g broccolini",
+      "200g green bean, trimmed",
+      "2 tbsp olive oil",
+      "1 lime, juiced",
+      "1 tbsp sesame seed"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Toss the broccolini and beans with the oil on a large tray and roast for 8 minutes.",
+    "Add the salmon, brush with the sweet chilli sauce and soy sauce and roast for 10 minutes, until the salmon is opaque and flakes easily.",
+    "Squeeze over the lime juice and scatter with sesame seeds."
+   ],
+   "notes": [
+    "Food safety: salmon is done when opaque and flaking, about 63°C in the centre.",
+    "Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 458,
+    "proteinG": 40,
+    "carbsG": 16,
+    "fatG": 26,
+    "fibreG": 5,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "turkey-and-bean-chilli",
+   "title": "Turkey and Bean Chilli",
+   "summary": "A lean, high-protein chilli with turkey mince, beans and smoky spices.",
+   "cuisine": "american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 40,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g turkey mince",
+      "1 tbsp olive oil",
+      "1 brown onion, diced",
+      "1 capsicum, diced",
+      "3 garlic, crushed",
+      "2 tsp ground cumin",
+      "2 tsp smoked paprika",
+      "800g tinned tomatoes",
+      "400g tinned kidney bean, drained",
+      "400g tinned black bean, drained",
+      "1 cup chicken stock"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the turkey in the oil in a large pot over high heat for 8 minutes, breaking it up, until cooked through. Add the onion and capsicum and cook for 6 minutes.",
+    "Add the garlic, cumin and paprika for 1 minute, then the tomatoes, beans and stock.",
+    "Simmer for 30 minutes, until thick and rich."
+   ],
+   "notes": [
+    "Food safety: turkey mince must reach 75°C right through with no pink inside.",
+    "Gluten-free and dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 369,
+    "proteinG": 32,
+    "carbsG": 40,
+    "fatG": 9,
+    "fibreG": 15,
+    "sodiumMg": 740
+   }
+  },
+  {
+   "id": "maple-mustard-salmon-with-green-beans",
+   "title": "Maple Mustard Salmon with Green Beans",
+   "summary": "Salmon glazed with maple syrup and wholegrain mustard, served on garlicky beans.",
+   "cuisine": "american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 salmon fillet",
+      "2 tbsp maple syrup",
+      "2 tbsp wholegrain mustard",
+      "1 tbsp soy sauce",
+      "400g green bean, trimmed",
+      "1 tbsp olive oil",
+      "2 garlic, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Mix the maple syrup, mustard and soy sauce and brush over the salmon on a lined tray.",
+    "Roast for 12 minutes, until the salmon is opaque and flakes easily.",
+    "Meanwhile fry the beans in the oil for 6 minutes, until tender-crisp, adding the garlic for the last minute. Serve with the salmon."
+   ],
+   "notes": [
+    "Food safety: salmon is cooked when opaque and flaking, about 63°C in the centre.",
+    "Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 414,
+    "proteinG": 38,
+    "carbsG": 16,
+    "fatG": 22,
+    "fibreG": 4,
+    "sodiumMg": 620
+   }
+  },
+  {
+   "id": "smoky-lentil-joes",
+   "title": "Smoky Lentil Joes",
+   "summary": "Saucy, smoky brown lentils in soft buns, a vegan take on the classic.",
+   "cuisine": "american",
+   "mealTypes": [
+    "dinner",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup brown lentil",
+      "1 tbsp olive oil",
+      "1 brown onion, diced",
+      "1 capsicum, diced",
+      "2 garlic, crushed",
+      "1 tbsp tomato paste",
+      "1 cup passata",
+      "2 tbsp barbecue sauce",
+      "1 tsp smoked paprika",
+      "4 burger bun"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the lentils in plenty of water for 25 minutes, until tender, and drain.",
+    "Cook the onion and capsicum in the oil for 6 minutes, until soft, then add the garlic and tomato paste for 1 minute.",
+    "Stir in the passata, barbecue sauce, paprika and lentils and simmer for 10 minutes, until thick and glossy.",
+    "Toast the buns until golden and fill with the lentil mix."
+   ],
+   "notes": [
+    "Vegan."
+   ],
+   "nutrition": {
+    "kcal": 428,
+    "proteinG": 19,
+    "carbsG": 70,
+    "fatG": 8,
+    "fibreG": 14,
+    "sodiumMg": 760
+   }
+  },
+  {
+   "id": "creamy-tomato-tortellini-soup",
+   "title": "Creamy Tomato Tortellini Soup",
+   "summary": "A velvety tomato soup with plump cheese tortellini and basil.",
+   "cuisine": "american",
+   "mealTypes": [
+    "dinner",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 tbsp olive oil",
+      "1 brown onion, diced",
+      "3 garlic, crushed",
+      "800g tinned tomatoes",
+      "3 cup vegetable stock",
+      "1/2 cup thickened cream",
+      "400g tortellini",
+      "1/4 cup basil, torn"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the onion in the oil for 6 minutes, until soft, then add the garlic for 1 minute.",
+    "Add the tomatoes and stock, simmer for 10 minutes, then blend until smooth.",
+    "Return to the pot, stir in the cream and tortellini and simmer for 4 minutes, until the pasta floats and is tender. Top with the basil."
+   ],
+   "notes": [
+    "Vegetarian: check the pasta filling for a vegetarian hard cheese."
+   ],
+   "nutrition": {
+    "kcal": 456,
+    "proteinG": 17,
+    "carbsG": 52,
+    "fatG": 20,
+    "fibreG": 5,
+    "sodiumMg": 1150
+   }
+  },
+  {
+   "id": "chipotle-mushroom-tacos",
+   "title": "Chipotle Mushroom Tacos",
+   "summary": "Smoky pulled-style mushrooms in warm tortillas with lime slaw.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g mixed mushrooms, torn",
+      "2 tbsp neutral oil",
+      "2 tbsp chipotle in adobo, chopped",
+      "1 tsp ground cumin",
+      "1 garlic, crushed",
+      "8 corn tortilla",
+      "2 cup red cabbage, shredded",
+      "1 lime, juiced",
+      "1/4 cup coriander, chopped",
+      "1 avocado, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the mushrooms in the oil in a large frying pan over high heat for 10 minutes, until deeply browned and the liquid has gone.",
+    "Stir in the chipotle, cumin and garlic and cook for 2 minutes more, until sticky.",
+    "Toss the cabbage with the lime juice. Warm the tortillas and fill with the mushrooms, slaw, avocado and coriander."
+   ],
+   "notes": [
+    "Vegan and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 356,
+    "proteinG": 9,
+    "carbsG": 44,
+    "fatG": 16,
+    "fibreG": 12,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "chile-verde-pork-stew",
+   "title": "Chile Verde Pork Stew",
+   "summary": "Tender pork shoulder simmered in a tangy green chilli and tomatillo-style sauce.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 120,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1kg pork shoulder, cubed",
+      "2 tbsp neutral oil",
+      "1 brown onion, diced",
+      "4 garlic, crushed",
+      "4 green chilli, chopped",
+      "1 jalapeño, chopped",
+      "1 tsp ground cumin",
+      "1 tsp dried oregano",
+      "2 cup chicken stock",
+      "1 lime, juiced",
+      "1/2 cup coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the pork in the oil in a large pot in two batches, 8 minutes each, until golden. Set aside.",
+    "Cook the onion for 5 minutes, then add the garlic, chillies, cumin and oregano for 2 minutes.",
+    "Return the pork, add the stock, cover and simmer gently for 90 minutes, until the pork is tender enough to shred.",
+    "Stir in the lime juice and coriander and serve with rice or tortillas."
+   ],
+   "notes": [
+    "Food safety: pork must reach at least 70°C and, for this braise, cook until tender and shreddable.",
+    "Gluten-free and dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 398,
+    "proteinG": 42,
+    "carbsG": 8,
+    "fatG": 22,
+    "fibreG": 2,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "pollo-a-la-brasa-peruvian-chicken",
+   "title": "Pollo a la Brasa Peruvian Chicken",
+   "summary": "Garlicky, cumin-rubbed roast chicken with crisp skin and a green sauce.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 70,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.6kg whole chicken",
+      "3 garlic, crushed",
+      "2 tbsp soy sauce",
+      "2 tbsp neutral oil",
+      "1 tbsp white vinegar",
+      "2 tsp ground cumin",
+      "2 tsp sweet paprika",
+      "1/2 cup coriander",
+      "1 jalapeño",
+      "1/3 cup mayonnaise",
+      "1 lime, juiced"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the garlic, soy sauce, oil, vinegar, cumin and paprika and rub all over the chicken, including under the skin. Marinate.",
+    "Heat the oven to 220°C (200°C fan). Roast the chicken for 70 minutes, basting once, until the skin is crisp and the thickest part of the thigh reaches 75°C.",
+    "Blend the coriander, jalapeño, mayonnaise and lime juice into a green sauce.",
+    "Rest the chicken for 10 minutes, carve and serve with the sauce."
+   ],
+   "notes": [
+    "Plus 4 hours marinating.",
+    "Food safety: chicken must reach 75°C in the thickest part of the thigh, with clear juices."
+   ],
+   "nutrition": {
+    "kcal": 532,
+    "proteinG": 48,
+    "carbsG": 4,
+    "fatG": 36,
+    "fibreG": 1,
+    "sodiumMg": 820
+   }
+  },
+  {
+   "id": "cuban-style-black-beans",
+   "title": "Cuban-Style Black Beans",
+   "summary": "Slow-simmered black beans with sofrito, cumin and a splash of vinegar.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "dinner",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "1 green capsicum, diced",
+      "4 garlic, crushed",
+      "2 tsp ground cumin",
+      "1 tsp dried oregano",
+      "800g tinned black bean, drained",
+      "1 cup vegetable stock",
+      "2 bay leaf",
+      "1 tbsp red wine vinegar",
+      "1 cup white rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the onion and capsicum in the oil for 8 minutes, until soft. Add the garlic, cumin and oregano for 1 minute.",
+    "Add the beans, stock and bay leaves and simmer for 25 minutes, mashing a few beans against the pot, until thick and creamy.",
+    "Cook the rice in boiling water for 12 minutes, until tender, and drain.",
+    "Stir the vinegar into the beans and serve over the rice."
+   ],
+   "notes": [
+    "Vegan and gluten-free. Food safety: cool and refrigerate leftover rice within an hour."
+   ],
+   "nutrition": {
+    "kcal": 445,
+    "proteinG": 15,
+    "carbsG": 76,
+    "fatG": 9,
+    "fibreG": 15,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "jerk-pork-fillet-with-pineapple-salsa",
+   "title": "Jerk Pork Fillet with Pineapple Salsa",
+   "summary": "Spicy jerk-rubbed pork fillet with a sweet, fresh pineapple and lime salsa.",
+   "cuisine": "caribbean",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "700g pork fillet",
+      "2 tbsp neutral oil",
+      "2 tbsp allspice",
+      "1 tsp dried thyme",
+      "1 tsp ground cinnamon",
+      "1 scotch bonnet chilli, finely chopped",
+      "3 garlic, crushed",
+      "2 spring onion, chopped",
+      "2 cup pineapple, diced",
+      "1 lime, juiced",
+      "1/4 cup coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the oil, allspice, thyme, cinnamon, chilli, garlic and spring onion and rub over the pork. Marinate.",
+    "Sear the pork in a hot ovenproof pan for 8 minutes, turning, until browned, then roast at 200°C (180°C fan) for 15 minutes, until the centre reaches 70°C.",
+    "Rest for 5 minutes. Toss the pineapple with the lime juice and coriander and serve with the sliced pork."
+   ],
+   "notes": [
+    "Plus 2 hours marinating.",
+    "Food safety: pork fillet should reach 70°C in the centre, then rest for 3 minutes.",
+    "Gluten-free and dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 376,
+    "proteinG": 40,
+    "carbsG": 18,
+    "fatG": 16,
+    "fibreG": 2,
+    "sodiumMg": 260
+   }
+  },
+  {
+   "id": "jerk-cauliflower-steaks",
+   "title": "Jerk Cauliflower Steaks",
+   "summary": "Thick cauliflower steaks roasted with fiery jerk spices until charred and sweet.",
+   "cuisine": "caribbean",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 cauliflower, cut into thick steaks",
+      "3 tbsp neutral oil",
+      "2 tbsp allspice",
+      "1 tsp dried thyme",
+      "1 tsp cayenne pepper",
+      "1 tsp garlic powder",
+      "1 tsp salt",
+      "1 lime, juiced",
+      "1/4 cup coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Mix the oil, allspice, thyme, cayenne, garlic powder and salt and brush over the cauliflower on two trays.",
+    "Roast for 35 minutes, turning once, until deeply charred and tender.",
+    "Squeeze over the lime juice and scatter with coriander."
+   ],
+   "notes": [
+    "Vegan and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 206,
+    "proteinG": 6,
+    "carbsG": 14,
+    "fatG": 14,
+    "fibreG": 6,
+    "sodiumMg": 620
+   }
+  },
+  {
+   "id": "trinidad-coconut-chickpea-curry",
+   "title": "Trinidad Coconut Chickpea Curry",
+   "summary": "A creamy coconut chickpea curry with curry powder and thyme, served with rice.",
+   "cuisine": "caribbean",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp coconut oil",
+      "1 brown onion, diced",
+      "3 garlic, crushed",
+      "1 tbsp ginger, grated",
+      "2 tbsp curry powder",
+      "1 tsp dried thyme",
+      "800g tinned chickpeas, drained",
+      "400ml coconut milk",
+      "300g potato, diced",
+      "1 cup white rice",
+      "1/4 cup coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the onion in the oil for 6 minutes, until soft. Add the garlic, ginger, curry powder and thyme for 1 minute.",
+    "Add the chickpeas, coconut milk, potato and 1 cup water and simmer for 20 minutes, until the potato is tender and the sauce is thick.",
+    "Cook the rice in boiling water for 12 minutes and drain. Serve the curry over the rice with coriander."
+   ],
+   "notes": [
+    "Vegan and gluten-free. Food safety: cool and refrigerate leftover rice within an hour."
+   ],
+   "nutrition": {
+    "kcal": 692,
+    "proteinG": 17,
+    "carbsG": 84,
+    "fatG": 32,
+    "fibreG": 14,
+    "sodiumMg": 450
+   }
+  },
+  {
+   "id": "savoury-oat-porridge-with-egg",
+   "title": "Savoury Oat Porridge with Egg",
+   "summary": "Creamy oats cooked in stock, topped with a fried egg, spring onion and chilli oil.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 12,
+   "servings": 2,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup rolled oats",
+      "2 cup chicken stock",
+      "1 tbsp butter",
+      "2 egg",
+      "2 spring onion, sliced",
+      "1 tsp chilli oil",
+      "1 tsp soy sauce"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the oats and stock in a saucepan for 8 minutes, stirring, until creamy.",
+    "Fry the eggs in the butter over medium heat for 3 minutes, until the whites are set.",
+    "Spoon the porridge into bowls, top with the eggs, spring onion, chilli oil and soy sauce."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are fully set; skip runny yolks for anyone pregnant, elderly or immunocompromised."
+   ],
+   "nutrition": {
+    "kcal": 326,
+    "proteinG": 16,
+    "carbsG": 34,
+    "fatG": 14,
+    "fibreG": 4,
+    "sodiumMg": 860
+   }
+  },
+  {
+   "id": "chickpea-flour-socca-with-herbs",
+   "title": "Chickpea Flour Socca with Herbs",
+   "summary": "Crisp-edged chickpea pancakes from Nice, gluten-free and vegan.",
+   "cuisine": "french",
+   "mealTypes": [
+    "breakfast",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup chickpea flour",
+      "1 cup water",
+      "2 tbsp olive oil",
+      "1/2 tsp salt",
+      "1/2 tsp black pepper",
+      "1 tbsp rosemary, chopped",
+      "1 tomato, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Whisk the chickpea flour, water, 1 tbsp oil, salt and pepper until smooth and rest for 30 minutes.",
+    "Heat the remaining oil in a 24cm frying pan over high heat and pour in half the batter.",
+    "Cook for 3 minutes, until the edges crisp and the top is set, then flip and cook for 2 minutes more. Repeat with the remaining batter.",
+    "Top with rosemary and tomato."
+   ],
+   "notes": [
+    "Plus 30 minutes resting.",
+    "Vegan and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 283,
+    "proteinG": 11,
+    "carbsG": 26,
+    "fatG": 15,
+    "fibreG": 5,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "baked-eggs-with-chorizo-and-tomato",
+   "title": "Baked Eggs with Chorizo and Tomato",
+   "summary": "Eggs baked in a smoky chorizo and tomato sauce, perfect with crusty bread.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 2,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "100g chorizo, diced",
+      "1 tbsp olive oil",
+      "1 capsicum, diced",
+      "2 garlic, crushed",
+      "400g tinned tomatoes",
+      "1 tsp smoked paprika",
+      "4 egg",
+      "2 slice crusty bread",
+      "2 tbsp parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the chorizo in the oil in an ovenproof pan for 4 minutes, until the fat runs. Add the capsicum and garlic for 5 minutes, until soft.",
+    "Add the tomatoes and paprika and simmer for 8 minutes, until thick.",
+    "Make four wells, crack in the eggs and bake at 190°C (170°C fan) for 10 minutes, until the whites are set.",
+    "Scatter with parsley and serve with the bread."
+   ],
+   "notes": [
+    "Food safety: bake until the egg whites are fully set; cook the yolks firm for anyone pregnant, elderly or immunocompromised."
+   ],
+   "nutrition": {
+    "kcal": 482,
+    "proteinG": 28,
+    "carbsG": 34,
+    "fatG": 26,
+    "fibreG": 6,
+    "sodiumMg": 1250
+   }
+  },
+  {
+   "id": "spiced-apple-porridge-with-walnuts",
+   "title": "Spiced Apple Porridge with Walnuts",
+   "summary": "Warm oat porridge cooked with grated apple, cinnamon and a spoonful of maple syrup.",
+   "cuisine": "british",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup rolled oats",
+      "2 cup milk",
+      "1 apple, grated",
+      "1 tsp ground cinnamon",
+      "2 tbsp maple syrup",
+      "1/4 cup walnut, chopped",
+      "pinch of salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the oats, milk, apple, cinnamon and salt in a saucepan for 8 minutes, stirring, until thick and creamy.",
+    "Spoon the hot porridge into two warm bowls, dividing it evenly.",
+    "Top with the maple syrup and walnuts."
+   ],
+   "notes": [
+    "Vegetarian. Use plant milk for a vegan version."
+   ],
+   "nutrition": {
+    "kcal": 380,
+    "proteinG": 12,
+    "carbsG": 56,
+    "fatG": 12,
+    "fibreG": 7,
+    "sodiumMg": 200
+   }
+  }
+ ]
+}
