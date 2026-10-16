@@ -65,3 +65,6 @@ The 15 tag additions in the compact file (e.g. dosa no-gluten, karahi no-dairy) 
 
 ### Progress, session 3 (17 Oct, helper via MCP)
 - Done: s02, s03, s04, s05 (15/15 each). Next: s06 onward (s06..s28), then i01..i11 (split to ~5 rows). Inserts not started; no errors.
+
+### Progress, session 4 (17 Oct, helper via MCP)
+- Done: s06, s07, s08 (15/15 each, no errors). Next: s09 onward (s09..s28), then i01..i11 (split to ~5 rows). Inserts not started.
