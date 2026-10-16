@@ -1,32 +1,1559 @@
-{"about":"House recipes, batch 04 (helper sA): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.","recipes":[
-{"id":"uova-in-purgatorio-eggs-in-tomato-purgatory","title":"Uova in Purgatorio (Eggs in Tomato Purgatory)","summary":"Eggs poached in a fiery tomato sauce with chilli and garlic, mopped up with crusty bread.","cuisine":"italian","mealTypes":["dinner","breakfast"],"difficulty":"easy","prepMinutes":10,"cookMinutes":20,"servings":2,"onePot":true,"diets":["vegetarian","no-dairy"],"ingredients":[{"items":["2 tbsp olive oil","1 brown onion, finely diced","3 clove garlic, sliced","1 tsp chilli flakes","800g canned crushed tomatoes","1 tsp dried oregano","4 egg","1/4 cup chopped basil","4 slice sourdough bread"]}],"steps":["Heat the oil in a deep frying pan over medium heat. Cook the onion for 5 minutes until soft, then add the garlic and chilli for 1 minute.","Stir in the tomatoes and oregano with salt and pepper. Simmer for 10 minutes until thickened.","Make four wells in the sauce and crack in the eggs. Cover and cook for 4 to 5 minutes, until the whites are set and the yolks are still soft.","Scatter with basil and serve with toasted sourdough."],"notes":["Food safety: cook the eggs until the whites are fully set. Serve hot and refrigerate leftovers within an hour."],"nutrition":{"kcal":470,"proteinG":19,"carbsG":50,"fatG":22,"fibreG":8,"sodiumMg":780}},
-{"id":"flammekueche-alsatian-onion-and-mushroom-tarte-flambee","title":"Flammekueche (Alsatian Onion and Mushroom Tarte Flambée)","summary":"A paper-thin Alsatian flatbread spread with tangy cream and topped with sweet onion and mushrooms.","cuisine":"french","mealTypes":["dinner"],"difficulty":"easy","prepMinutes":25,"cookMinutes":15,"servings":4,"onePot":false,"diets":["vegetarian"],"ingredients":[{"items":["2 cup plain flour","1 tsp baking powder","1/2 tsp salt","1/4 cup olive oil","1/2 cup water","200g sour cream","100g ricotta","1/4 tsp ground nutmeg","2 brown onion, thinly sliced","250g mushrooms, thinly sliced","1 tbsp thyme leaves"]}],"steps":["Heat the oven to 250°C (230°C fan) with two trays inside. Mix the flour, baking powder, salt, oil and water into a firm dough and knead for 2 minutes.","Stir the sour cream, ricotta, nutmeg, salt and pepper together.","Divide the dough in two and roll each piece very thin on baking paper, about 3mm.","Spread with the cream mixture, then top with the onion, mushrooms and thyme.","Slide onto the hot trays and bake for 12 to 15 minutes, until the edges are charred and crisp. Cut into squares."],"notes":["The dough needs no rising, so it is quick enough for a weeknight.","Swap the mushrooms for extra onion if you prefer the classic look."],"nutrition":{"kcal":520,"proteinG":15,"carbsG":59,"fatG":25,"fibreG":5,"sodiumMg":480}},
-{"id":"huevos-a-la-flamenca-baked-eggs-with-chorizo-and-peas","title":"Huevos a la Flamenca (Baked Eggs with Chorizo and Peas)","summary":"Eggs baked in a smoky tomato and pepper base with chorizo, peas and asparagus.","cuisine":"spanish","mealTypes":["dinner","lunch"],"difficulty":"easy","prepMinutes":15,"cookMinutes":25,"servings":4,"onePot":true,"diets":["no-gluten","no-dairy"],"ingredients":[{"items":["2 tbsp olive oil","150g chorizo, sliced","1 brown onion, diced","1 red capsicum, diced","2 clove garlic, crushed","2 tsp smoked paprika","400g canned diced tomatoes","1 cup frozen peas","8 egg","2 tbsp chopped parsley"]}],"steps":["Heat the oven to 200°C (180°C fan). Heat the oil in an ovenproof frying pan and fry the chorizo for 3 minutes until it releases its oil.","Add the onion and capsicum and cook for 6 minutes, then stir in the garlic and paprika for 30 seconds.","Add the tomatoes and 1/2 cup water, simmer for 8 minutes, then stir through the peas.","Make eight wells and crack in the eggs. Bake for 8 to 10 minutes, until the whites are set.","Scatter with parsley and serve from the pan."],"notes":["Food safety: cook the eggs until the whites are fully set and the sauce is steaming hot. Refrigerate leftovers within an hour.","Serve with crusty bread."],"nutrition":{"kcal":430,"proteinG":26,"carbsG":16,"fatG":29,"fibreG":5,"sodiumMg":780}},
-{"id":"poulet-basquaise-basque-chicken-with-peppers","title":"Poulet Basquaise (Basque Chicken with Peppers)","summary":"Chicken thighs braised with sweet peppers, tomatoes and smoked paprika in the style of the Basque country.","cuisine":"french","mealTypes":["dinner"],"difficulty":"easy","prepMinutes":15,"cookMinutes":40,"servings":4,"onePot":true,"diets":["no-gluten","no-dairy"],"ingredients":[{"items":["800g chicken thigh, bone in","2 tbsp olive oil","1 brown onion, sliced","2 red capsicum, sliced","1 green capsicum, sliced","3 clove garlic, sliced","2 tsp smoked paprika","400g canned diced tomatoes","1/2 cup chicken stock","1/2 cup white wine","2 sprigs thyme"]}],"steps":["Season the chicken and brown it skin side down in the oil in a large pan for 6 minutes. Turn, brown for 3 minutes more, then lift out.","Cook the onion and capsicums in the same pan for 8 minutes, then add the garlic and paprika for 1 minute.","Pour in the wine and let it bubble for 2 minutes. Add the tomatoes, stock and thyme.","Return the chicken, cover and simmer for 25 minutes, until cooked through and tender. Uncover for the last 5 minutes to thicken the sauce."],"notes":["Food safety: chicken must reach 75°C in the thickest part with no pink juices. Refrigerate leftovers within an hour and reheat until steaming hot.","Good with rice or boiled potatoes."],"nutrition":{"kcal":430,"proteinG":35,"carbsG":15,"fatG":25,"fibreG":4,"sodiumMg":520}},
-{"id":"frango-piri-piri-portuguese-piri-piri-chicken-traybake","title":"Frango Piri-Piri (Portuguese Piri-Piri Chicken Traybake)","summary":"Chicken marinated in a chilli, lemon and garlic paste and roasted with potatoes until sticky and charred.","cuisine":"spanish","mealTypes":["dinner"],"difficulty":"easy","prepMinutes":15,"cookMinutes":45,"servings":4,"onePot":false,"diets":["no-gluten","no-dairy"],"ingredients":[{"items":["1kg chicken drumstick","2 lemon, juiced","3 clove garlic, crushed","2 tbsp olive oil","2 tbsp red wine vinegar","2 tsp smoked paprika","2 long red chilli, finely chopped","1 tsp dried oregano","600g baby potatoes, halved","1 red onion, cut into wedges"]}],"steps":["Mix the lemon juice, garlic, oil, vinegar, paprika, chilli, oregano and salt. Coat the chicken and marinate in the fridge for at least 1 hour.","Heat the oven to 220°C (200°C fan). Toss the potatoes and onion in a little oil on a large tray and push to the sides.","Add the chicken to the middle with the marinade. Roast for 40 to 45 minutes, turning once, until cooked through and charred at the edges."],"notes":["Food safety: chicken must reach 75°C in the thickest part with no pink juices. Do not reuse raw marinade as a sauce. Refrigerate leftovers within an hour.","Prep time excludes marinating."],"nutrition":{"kcal":480,"proteinG":38,"carbsG":28,"fatG":24,"fibreG":4,"sodiumMg":420}},
-{"id":"kolokithokeftedes-greek-zucchini-fritters-with-yoghurt","title":"Kolokithokeftedes (Greek Zucchini Fritters with Yoghurt)","summary":"Crisp fritters of grated zucchini, feta and mint, served with garlicky yoghurt.","cuisine":"greek","mealTypes":["dinner","lunch"],"difficulty":"easy","prepMinutes":20,"cookMinutes":15,"servings":4,"onePot":false,"diets":["vegetarian"],"ingredients":[{"items":["700g zucchini, grated","1 tsp salt","200g feta","3 egg","3/4 cup plain flour","4 spring onion, sliced","2 tbsp chopped mint","1 tbsp chopped dill","1/4 cup olive oil","1 cup plain yoghurt","1 clove garlic, crushed","1 lemon, cut into wedges"]}],"steps":["Toss the zucchini with the salt and leave for 10 minutes, then squeeze out as much water as you can in a clean tea towel.","Mix the zucchini with the crumbled feta, eggs, flour, spring onion, mint and dill. Season with pepper.","Heat half the oil in a large frying pan over medium heat. Drop in heaped spoonfuls, flatten slightly and fry for 3 to 4 minutes each side until golden, working in batches.","Stir the garlic into the yoghurt. Serve the fritters hot with the yoghurt and lemon."],"notes":["Food safety: cook the fritters until the centre is set and hot. Refrigerate leftovers within an hour.","Serve with a handful of leaves and some bread to make it a meal."],"nutrition":{"kcal":430,"proteinG":19,"carbsG":28,"fatG":27,"fibreG":3,"sodiumMg":900}},
-{"id":"soutzoukakia-greek-cumin-meatballs-in-tomato-sauce","title":"Soutzoukakia (Greek Cumin Meatballs in Tomato Sauce)","summary":"Oval cumin-scented beef meatballs simmered in a cinnamon tomato sauce.","cuisine":"greek","mealTypes":["dinner"],"difficulty":"medium","prepMinutes":25,"cookMinutes":30,"servings":4,"onePot":false,"diets":["no-dairy"],"ingredients":[{"items":["600g beef mince","1 cup breadcrumbs","1 egg","3 clove garlic, crushed","2 tsp ground cumin","1/4 cup chopped parsley","2 tbsp red wine vinegar","2 tbsp olive oil","1 brown onion, diced","800g canned crushed tomatoes","1 cinnamon stick","1 tsp sugar"]}],"steps":["Mix the mince, breadcrumbs, egg, half the garlic, the cumin, parsley, vinegar, salt and pepper. Shape into 16 short ovals.","Brown the meatballs in half the oil in a wide pan for 5 minutes, turning, then lift out.","Cook the onion in the remaining oil for 5 minutes, add the rest of the garlic, then the tomatoes, cinnamon and sugar.","Return the meatballs, cover and simmer for 20 minutes, until cooked through and the sauce is thick."],"notes":["Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.","Serve with rice or mashed potato."],"nutrition":{"kcal":470,"proteinG":35,"carbsG":28,"fatG":24,"fibreG":4,"sodiumMg":640}},
-{"id":"kotopoulo-lemonato-greek-lemon-chicken-and-potato-traybake","title":"Kotopoulo Lemonato (Greek Lemon Chicken and Potato Traybake)","summary":"Chicken thighs roasted over lemony oregano potatoes until the juices turn the potatoes golden.","cuisine":"greek","mealTypes":["dinner"],"difficulty":"easy","prepMinutes":15,"cookMinutes":50,"servings":4,"onePot":false,"diets":["no-gluten","no-dairy"],"ingredients":[{"items":["800g chicken thigh, bone in","800g potatoes, cut into wedges","3 lemon, juiced","1/4 cup olive oil","4 clove garlic, crushed","2 tsp dried oregano","1 cup chicken stock","1 tbsp chopped parsley"]}],"steps":["Heat the oven to 210°C (190°C fan). Put the potatoes and chicken in a large roasting tin.","Whisk the lemon juice, oil, garlic, oregano, salt and pepper, pour over, then add the stock to the tin.","Roast for 50 minutes, turning the potatoes once, until the chicken is cooked through and the potatoes are golden and tender.","Scatter with parsley and serve with the pan juices."],"notes":["Food safety: chicken must reach 75°C in the thickest part with no pink juices. Refrigerate leftovers within an hour and reheat until steaming hot."],"nutrition":{"kcal":520,"proteinG":34,"carbsG":38,"fatG":26,"fibreG":4,"sodiumMg":420}},
-{"id":"mucver-turkish-zucchini-and-herb-fritters","title":"Mücver (Turkish Zucchini and Herb Fritters)","summary":"Golden zucchini fritters with dill, spring onion and white cheese, served with a garlic yoghurt.","cuisine":"turkish","mealTypes":["dinner","lunch"],"difficulty":"easy","prepMinutes":20,"cookMinutes":15,"servings":4,"onePot":false,"diets":["vegetarian"],"ingredients":[{"items":["600g zucchini, grated","1 tsp salt","150g feta","3 egg","1/2 cup plain flour","4 spring onion, sliced","1/4 cup chopped dill","1/4 cup chopped parsley","1/4 cup olive oil","1 cup plain yoghurt","1 clove garlic, crushed"]}],"steps":["Salt the zucchini and leave for 10 minutes, then squeeze very dry in a tea towel.","Mix with the crumbled feta, eggs, flour, spring onion, dill, parsley and pepper.","Heat the oil in a frying pan over medium heat. Fry spoonfuls for 3 minutes each side until golden and set.","Stir the garlic into the yoghurt and serve alongside."],"notes":["Food safety: cook the fritters until the centre is set and hot. Refrigerate leftovers within an hour.","Add a spoon of flour if the mix seems wet."],"nutrition":{"kcal":380,"proteinG":18,"carbsG":19,"fatG":26,"fibreG":2,"sodiumMg":820}},
-{"id":"kuru-fasulye-turkish-white-bean-and-tomato-stew","title":"Kuru Fasulye (Turkish White Bean and Tomato Stew)","summary":"Creamy white beans simmered with tomato paste, capsicum and Aleppo pepper, finished with butter.","cuisine":"turkish","mealTypes":["dinner"],"difficulty":"easy","prepMinutes":10,"cookMinutes":30,"servings":4,"onePot":true,"diets":["vegetarian","no-gluten"],"ingredients":[{"items":["2 tbsp olive oil","1 brown onion, diced","1 green capsicum, diced","2 clove garlic, crushed","2 tbsp tomato paste","1 tbsp capsicum paste","2 x 400g canned cannellini beans, drained","2 cup vegetable stock","1 tsp chilli flakes","1 tbsp butter","2 tbsp chopped parsley"]}],"steps":["Heat the oil in a pot and cook the onion and capsicum for 8 minutes until soft.","Add the garlic and both pastes and cook for 2 minutes, stirring.","Add the beans, stock and chilli. Simmer uncovered for 20 minutes, until the sauce is thick and some beans have broken down.","Stir through the butter and parsley and serve with rice or bread."],"notes":["Use canned beans for a quick weeknight version of the long-simmered original.","Swap the butter for olive oil to make it vegan."],"nutrition":{"kcal":290,"proteinG":14,"carbsG":37,"fatG":10,"fibreG":12,"sodiumMg":780}},
-{"id":"mujaddara-lebanese-lentils-and-rice-with-crispy-onions","title":"Mujaddara (Lebanese Lentils and Rice with Crispy Onions)","summary":"Brown lentils and rice spiced with cumin and topped with deeply browned onions.","cuisine":"middle-eastern","mealTypes":["dinner"],"difficulty":"easy","prepMinutes":10,"cookMinutes":40,"servings":4,"onePot":false,"diets":["vegetarian","no-gluten"],"ingredients":[{"items":["1 cup brown lentils","1 cup basmati rice","1/4 cup olive oil","3 brown onion, thinly sliced","2 tsp ground cumin","1/2 tsp ground cinnamon","3 cup water","1 cup plain yoghurt","1 tbsp lemon juice"]}],"steps":["Simmer the lentils in plenty of water for 15 minutes, until nearly tender, then drain.","Heat the oil in a wide pan over medium-high heat and cook the onion for 20 minutes, stirring often, until deep brown and crisp at the edges. Lift out half for topping.","Add the cumin and cinnamon to the pan, then the lentils, rice, water and 1 tsp salt. Bring to the boil, cover and cook on low for 15 minutes.","Rest for 5 minutes, fluff with a fork and top with the reserved onion. Serve with yoghurt and lemon."],"notes":["Vegan if you swap the yoghurt for a dairy-free one.","Stir often once the onions start to colour so they do not burn."],"nutrition":{"kcal":490,"proteinG":19,"carbsG":71,"fatG":15,"fibreG":9,"sodiumMg":420}},
-{"id":"kuku-sabzi-persian-herb-frittata","title":"Kuku Sabzi (Persian Herb Frittata)","summary":"A dense green frittata packed with parsley, coriander, dill and walnuts, with a hint of turmeric.","cuisine":"middle-eastern","mealTypes":["dinner","lunch"],"difficulty":"easy","prepMinutes":20,"cookMinutes":20,"servings":4,"onePot":false,"diets":["vegetarian"],"ingredients":[{"items":["2 cup chopped parsley","1 cup chopped coriander","1/2 cup chopped dill","4 spring onion, sliced","6 egg","1/4 cup plain flour","1/2 tsp baking powder","1/2 tsp ground turmeric","1/4 cup chopped walnuts","1/4 cup olive oil","1 cup plain yoghurt"]}],"steps":["Whisk the eggs with the flour, baking powder, turmeric, salt and pepper. Fold in the herbs, spring onion and walnuts.","Heat the oil in a 24cm non-stick frying pan over medium heat and pour in the mixture.","Cover and cook on low for 12 minutes, until the base is golden and the top is nearly set.","Slide onto a plate, flip back into the pan and cook 4 minutes more. Cut into wedges and serve with yoghurt."],"notes":["Food safety: cook until the egg is fully set in the centre. Refrigerate leftovers within an hour.","Eaten warm or cold, with flatbread."],"nutrition":{"kcal":350,"proteinG":17,"carbsG":13,"fatG":27,"fibreG":3,"sodiumMg":260}},
-{"id":"mirza-ghasemi-persian-smoky-aubergine-and-eggs","title":"Mirza Ghasemi (Persian Smoky Aubergine and Eggs)","summary":"Charred aubergine mashed with garlic and tomato, then set with scrambled eggs, from Gilan in northern Iran.","cuisine":"middle-eastern","mealTypes":["dinner","lunch"],"difficulty":"medium","prepMinutes":15,"cookMinutes":35,"servings":4,"onePot":false,"diets":["vegetarian","no-dairy"],"ingredients":[{"items":["3 aubergine","3 tbsp olive oil","5 clove garlic, crushed","4 tomato, grated","1 tsp ground turmeric","4 egg","1 tsp salt","4 flatbread"]}],"steps":["Prick the aubergines and roast whole at 230°C (210°C fan) for 30 minutes, until collapsed and charred. Cool, peel and chop the flesh.","Heat the oil in a frying pan and fry the garlic for 1 minute, then add the turmeric and tomato and cook for 8 minutes until thick.","Add the aubergine and salt and cook for 5 minutes, mashing roughly.","Make four wells, crack in the eggs and stir them gently through for 3 minutes until just set. Serve with warm flatbread."],"notes":["Food safety: cook the eggs until fully set. Refrigerate leftovers within an hour.","Char the aubergines over a gas flame if you have one for a smokier flavour."],"nutrition":{"kcal":360,"proteinG":15,"carbsG":38,"fatG":17,"fibreG":9,"sodiumMg":640}},
-{"id":"adas-polo-persian-lentil-rice-with-sultanas-and-saffron","title":"Adas Polo (Persian Lentil Rice with Sultanas and Saffron)","summary":"Fragrant basmati rice layered with lentils, caramelised onion, cinnamon and sweet sultanas.","cuisine":"middle-eastern","mealTypes":["dinner"],"difficulty":"medium","prepMinutes":15,"cookMinutes":45,"servings":4,"onePot":false,"diets":["vegetarian","no-gluten"],"ingredients":[{"items":["1 1/2 cup basmati rice","1 cup brown lentils","3 tbsp olive oil","2 brown onion, thinly sliced","1 tsp ground cinnamon","1/2 tsp ground turmeric","1/2 cup sultanas","1 pinch saffron threads","2 tbsp butter","1/4 cup slivered almonds"]}],"steps":["Boil the lentils for 12 minutes until just tender, drain. Boil the rice in salted water for 6 minutes, then drain.","Cook the onion in the oil for 15 minutes until golden, stir in the cinnamon, turmeric and sultanas for 2 minutes.","Melt the butter in a pot, stir in saffron soaked in 2 tbsp hot water, then layer in the rice, lentils and onion mixture.","Wrap the lid in a tea towel, cover and steam on low for 25 minutes. Top with toasted almonds."],"notes":["Use half a teaspoon of ground saffron if you do not have threads.","Swap the butter for olive oil to make it vegan."],"nutrition":{"kcal":640,"proteinG":19,"carbsG":104,"fatG":17,"fibreG":10,"sodiumMg":210}},
-{"id":"boxty-irish-potato-pancakes-with-mushrooms","title":"Boxty (Irish Potato Pancakes with Creamy Mushrooms)","summary":"Pan-fried potato pancakes from the Irish midlands, topped with garlic mushrooms in a thyme cream.","cuisine":"british","mealTypes":["dinner"],"difficulty":"easy","prepMinutes":20,"cookMinutes":25,"servings":4,"onePot":false,"diets":["vegetarian"],"ingredients":[{"items":["500g potatoes, peeled and grated","400g potatoes, peeled and boiled","1 cup plain flour","1/2 cup milk","1 tsp baking powder","4 tbsp butter","400g mushrooms, sliced","2 clove garlic, crushed","1 tbsp thyme leaves","1/2 cup thickened cream","2 tbsp chopped chives"]}],"steps":["Squeeze the grated potato dry in a tea towel. Mash the boiled potato and mix both with the flour, milk, baking powder and 1 tsp salt to a thick batter.","Melt half the butter in a large frying pan and fry spoonfuls, flattened to 1cm, for 4 minutes each side until golden. Keep warm in a low oven.","Melt the remaining butter in a second pan, cook the mushrooms for 6 minutes, then add the garlic and thyme for 1 minute.","Pour in the cream and simmer for 2 minutes. Spoon over the boxty and top with chives."],"notes":["Squeeze the potato well, or the pancakes will be gluey."],"nutrition":{"kcal":480,"proteinG":11,"carbsG":60,"fatG":22,"fibreG":6,"sodiumMg":560}},
-{"id":"irish-stew-lamb-and-potato","title":"Irish Stew (Lamb and Potato)","summary":"Tender lamb with potatoes, carrots and onions simmered in a light broth until the potatoes start to thicken it.","cuisine":"british","mealTypes":["dinner"],"difficulty":"easy","prepMinutes":20,"cookMinutes":75,"servings":4,"onePot":true,"diets":["no-gluten","no-dairy"],"ingredients":[{"items":["800g lamb shoulder, diced","1 tbsp olive oil","2 brown onion, sliced","3 carrot, thickly sliced","800g potatoes, peeled and quartered","3 cup chicken stock","3 sprigs thyme","2 bay leaf","2 tbsp chopped parsley"]}],"steps":["Brown the lamb in the oil in a heavy pot in two batches, 5 minutes each, then lift out.","Add the onion and cook for 5 minutes. Layer the lamb, carrot and potato in the pot, seasoning each layer with salt and pepper.","Pour over the stock, add the thyme and bay leaf, bring to the boil, then cover and simmer gently for 1 hour 15 minutes, until the lamb is tender and the potatoes are soft.","Skim off any fat, scatter with parsley and serve in bowls."],"notes":["Food safety: lamb pieces must reach 71°C in the centre and be steaming hot throughout. Refrigerate leftovers within an hour and reheat until steaming hot.","A splash of Worcestershire sauce is common but not traditional."],"nutrition":{"kcal":500,"proteinG":37,"carbsG":36,"fatG":22,"fibreG":6,"sodiumMg":640}},
-{"id":"placki-ziemniaczane-polish-potato-pancakes-with-sour-cream","title":"Placki Ziemniaczane (Polish Potato Pancakes with Sour Cream)","summary":"Crisp grated potato and onion pancakes, served with sour cream and a fried egg.","cuisine":"central-european","mealTypes":["dinner","breakfast"],"difficulty":"easy","prepMinutes":20,"cookMinutes":20,"servings":4,"onePot":false,"diets":["vegetarian"],"ingredients":[{"items":["900g potatoes, peeled","1 brown onion","2 egg","1/4 cup plain flour","1 tsp salt","1/2 cup vegetable oil","4 egg","1 cup sour cream","2 tbsp chopped chives"]}],"steps":["Grate the potatoes and onion, then squeeze out as much liquid as you can in a clean tea towel.","Stir in the two eggs, flour, salt and pepper straight away, until the mix is thick and evenly coated.","Heat half the oil in a large frying pan and fry spoonfuls, pressed flat, for 3 to 4 minutes per side until deep golden and crisp. Drain on paper towel.","Fry the remaining four eggs in the same pan until the whites are set. Serve the pancakes with an egg, sour cream and chives."],"notes":["Food safety: cook the eggs until the whites are set. Refrigerate leftovers within an hour.","Fry in batches and keep warm in a low oven."],"nutrition":{"kcal":540,"proteinG":15,"carbsG":42,"fatG":34,"fibreG":4,"sodiumMg":520}},
-{"id":"vareniki-ukrainian-potato-and-onion-dumplings","title":"Vareniki (Ukrainian Potato and Onion Dumplings)","summary":"Soft little dumplings filled with mashed potato and golden onion, tossed in browned butter.","cuisine":"central-european","mealTypes":["dinner"],"difficulty":"medium","prepMinutes":40,"cookMinutes":25,"servings":4,"onePot":false,"diets":["vegetarian"],"ingredients":[{"items":["2 1/2 cup plain flour","1 egg","3/4 cup warm water","600g potatoes, peeled and diced","2 brown onion, finely diced","4 tbsp butter","1/2 cup sour cream","2 tbsp chopped dill"]}],"steps":["Mix the flour, egg, water and 1/2 tsp salt into a soft dough, knead for 3 minutes, then cover.","Boil the potatoes until tender, 12 minutes, drain and mash. Cook the onion in half the butter for 10 minutes until golden and mix into the potato with salt and pepper.","Roll the dough thin, cut 8cm rounds, fill each with a spoonful of potato and pinch tightly shut.","Boil in batches for 4 to 5 minutes, until they float. Toss in the remaining butter, browned, and serve with sour cream and dill."],"notes":["Prep time excludes resting the dough for 20 minutes.","Cooked dumplings freeze well."],"nutrition":{"kcal":590,"proteinG":15,"carbsG":88,"fatG":20,"fibreG":6,"sodiumMg":420}},
-{"id":"raggmunk-swedish-potato-pancakes-with-lingonberry","title":"Raggmunk (Swedish Potato Pancakes with Lingonberry and Fried Egg)","summary":"Thin, crisp Swedish potato pancakes served with tart berry jam and a fried egg.","cuisine":"scandinavian","mealTypes":["dinner","breakfast"],"difficulty":"easy","prepMinutes":15,"cookMinutes":20,"servings":4,"onePot":false,"diets":["vegetarian"],"ingredients":[{"items":["800g potatoes, peeled and grated","1 cup milk","3/4 cup plain flour","2 egg","1 tsp salt","4 tbsp butter","4 egg","1/2 cup lingonberry jam"]}],"steps":["Whisk the milk, flour, two eggs and salt into a thin batter, then stir in the grated potato.","Melt a little butter in a large non-stick pan. Spoon in the batter to make thin pancakes about 10cm wide and fry for 3 minutes each side until golden and crisp at the edges.","Fry the remaining eggs in butter until the whites are set.","Serve the pancakes with the eggs and a spoonful of lingonberry jam."],"notes":["Food safety: cook the eggs until the whites are set. Refrigerate leftovers within an hour.","Cranberry sauce works if you cannot find lingonberry."],"nutrition":{"kcal":500,"proteinG":17,"carbsG":63,"fatG":21,"fibreG":4,"sodiumMg":460}},
-{"id":"biff-a-la-lindstrom-swedish-beef-and-beetroot-patties","title":"Biff à la Lindström (Swedish Beef and Beetroot Patties)","summary":"Beef patties studded with beetroot, capers and onion, fried until crusty and served with potatoes.","cuisine":"scandinavian","mealTypes":["dinner"],"difficulty":"easy","prepMinutes":20,"cookMinutes":20,"servings":4,"onePot":false,"diets":[],"ingredients":[{"items":["600g beef mince","1 egg","1/2 cup breadcrumbs","1/4 cup milk","200g canned beetroot, drained and finely diced","1 brown onion, finely diced","2 tbsp capers, chopped","2 tbsp butter","600g baby potatoes, halved","1 tbsp chopped parsley"]}],"steps":["Boil the potatoes in salted water for 15 minutes until tender, then drain.","Mix the mince, egg, breadcrumbs, milk, beetroot, onion, capers, 1 tsp salt and pepper. Shape into 8 patties.","Melt the butter in a large frying pan over medium heat and fry the patties for 5 minutes each side, until browned and cooked through.","Serve with the potatoes and parsley."],"notes":["Food safety: patties must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.","Pickled cucumber is a good side."],"nutrition":{"kcal":560,"proteinG":38,"carbsG":42,"fatG":26,"fibreG":5,"sodiumMg":780}},
-{"id":"chile-con-carne-texan-beef-and-bean-chilli","title":"Chile con Carne (Texan Beef and Bean Chilli)","summary":"A thick, smoky beef and kidney bean chilli with cumin, paprika and a little dark chocolate.","cuisine":"american","mealTypes":["dinner"],"difficulty":"easy","prepMinutes":15,"cookMinutes":45,"servings":6,"onePot":true,"diets":["no-gluten"],"ingredients":[{"items":["1 tbsp olive oil","1 brown onion, diced","3 clove garlic, crushed","600g beef mince","2 tsp ground cumin","2 tsp smoked paprika","1 tsp chilli powder","1 tsp oregano","2 tbsp tomato paste","800g canned diced tomatoes","2 x 400g canned kidney beans, drained","10g dark chocolate","1 cup beef stock"]}],"steps":["Heat the oil in a large pot and cook the onion for 5 minutes. Add the garlic and cook for 1 minute.","Add the mince and cook for 8 minutes, breaking it up, until browned.","Stir in the cumin, paprika, chilli, oregano and tomato paste for 1 minute.","Add the tomatoes, stock and beans. Simmer for 30 minutes, uncovered, until thick. Stir in the chocolate and season."],"notes":["Food safety: mince must reach 75°C throughout with no pink. Refrigerate leftovers within an hour and reheat until steaming hot.","Serve with rice, sour cream and coriander. It freezes well."],"nutrition":{"kcal":380,"proteinG":30,"carbsG":28,"fatG":16,"fibreG":10,"sodiumMg":780}},
-{"id":"bean-and-cheese-chimichangas-baked","title":"Bean and Cheese Chimichangas (Baked)","summary":"Crisp baked tortilla parcels filled with spiced black beans, rice and melting cheese.","cuisine":"american","mealTypes":["dinner"],"difficulty":"easy","prepMinutes":25,"cookMinutes":25,"servings":4,"onePot":false,"diets":["vegetarian"],"ingredients":[{"items":["1 tbsp olive oil","1 brown onion, diced","1 clove garlic, crushed","1 tsp ground cumin","1 tsp smoked paprika","400g canned black beans, drained","1 cup cooked rice","1/2 cup tomato salsa","1 cup grated mozzarella","4 large flour tortilla","2 tbsp olive oil","1/2 cup sour cream","1 avocado, sliced"]}],"steps":["Heat the oven to 220°C (200°C fan). Cook the onion in the oil for 5 minutes, then add the garlic, cumin and paprika for 1 minute.","Add the beans, rice and salsa, mash lightly and cook for 3 minutes. Stir in the cheese.","Spoon a quarter of the filling into each tortilla, fold in the sides and roll up into tight parcels.","Brush with oil, place seam side down on a lined tray and bake for 15 to 18 minutes, turning once, until golden and crisp. Serve with sour cream and avocado."],"notes":["Freezes well before baking."],"nutrition":{"kcal":610,"proteinG":22,"carbsG":72,"fatG":26,"fibreG":13,"sodiumMg":860}},
-{"id":"calabacitas-con-elote-mexican-zucchini-and-corn-saute","title":"Calabacitas con Elote (Mexican Zucchini and Corn Sauté)","summary":"Zucchini, sweet corn and green chilli cooked in a pan with tomato and finished with crumbled cheese and black beans.","cuisine":"mexican","mealTypes":["dinner","lunch"],"difficulty":"easy","prepMinutes":15,"cookMinutes":20,"servings":4,"onePot":true,"diets":["vegetarian","no-gluten"],"ingredients":[{"items":["2 tbsp olive oil","1 brown onion, diced","2 clove garlic, crushed","500g zucchini, diced","2 cup corn kernels","1 green chilli, finely chopped","3 tomato, diced","400g canned black beans, drained","1 tsp ground cumin","100g feta","1/4 cup chopped coriander","8 corn tortilla"]}],"steps":["Heat the oil in a large frying pan and cook the onion for 4 minutes. Add the garlic and chilli for 1 minute.","Add the zucchini, corn and cumin and cook for 6 minutes, until just tender.","Stir in the tomato and beans and cook for 5 minutes. Season well.","Top with crumbled feta and coriander and serve with warm tortillas."],"notes":["Easily made vegan by leaving out the feta."],"nutrition":{"kcal":450,"proteinG":18,"carbsG":64,"fatG":15,"fibreG":13,"sodiumMg":620}},
-{"id":"enchiladas-suizas-swiss-style-green-chicken-enchiladas","title":"Enchiladas Suizas (Swiss-Style Green Chicken Enchiladas)","summary":"Chicken-filled tortillas baked under a creamy tomatillo sauce and melted cheese.","cuisine":"mexican","mealTypes":["dinner"],"difficulty":"medium","prepMinutes":25,"cookMinutes":30,"servings":4,"onePot":false,"diets":["no-gluten"],"ingredients":[{"items":["500g chicken breast","2 cup green salsa","1 green chilli","2 clove garlic","1/4 cup coriander leaves","1/2 cup thickened cream","1 tbsp olive oil","8 corn tortilla","1 1/2 cup grated mozzarella","1/4 cup sour cream"]}],"steps":["Poach the chicken in simmering salted water for 15 minutes until cooked through. Shred it.","Blend the salsa, chilli, garlic, coriander and cream until smooth. Heat the oil in a pan, pour in the sauce and simmer for 8 minutes. Season with salt.","Heat the oven to 200°C (180°C fan). Warm the tortillas, dip each in the sauce, fill with chicken and a pinch of cheese and roll into a baking dish.","Pour the remaining sauce on top, scatter with the cheese and bake for 15 minutes, until bubbling. Serve with sour cream."],"notes":["Food safety: chicken must reach 75°C in the thickest part with no pink juices. Refrigerate leftovers within an hour and reheat until steaming hot.","Use a good-quality jar of green salsa verde."],"nutrition":{"kcal":500,"proteinG":41,"carbsG":28,"fatG":25,"fibreG":5,"sodiumMg":640}},
-{"id":"sopes-de-frijol-mexican-bean-sopes","title":"Sopes de Frijol (Mexican Bean Sopes)","summary":"Thick little masa cakes pinched into cups and piled with refried beans, crumbled cheese and crunchy lettuce.","cuisine":"mexican","mealTypes":["dinner"],"difficulty":"medium","prepMinutes":30,"cookMinutes":20,"servings":4,"onePot":false,"diets":["vegetarian","no-gluten"],"ingredients":[{"items":["2 cup fine cornmeal","1 1/2 cup warm water","1 tsp salt","1/4 cup vegetable oil","400g canned black beans, drained and mashed","1 cup shredded lettuce","1/2 cup tomato salsa","100g feta","1/2 cup sour cream","1 avocado, sliced"]}],"steps":["Mix the masa, water and salt into a soft dough and leave to rest for 10 minutes. Divide into 8 balls and press each into a 9cm disc, 1cm thick.","Cook the discs in a dry pan over medium heat for 2 minutes each side. While still warm, pinch up a rim around each edge.","Fry the sopes in the oil for 2 minutes each side until golden, then drain.","Warm the beans and spread over each sope. Top with lettuce, salsa, feta, sour cream and avocado."],"notes":["Prep time excludes resting the dough.","Use vegan toppings and skip the feta and cream to make this vegan."],"nutrition":{"kcal":580,"proteinG":18,"carbsG":68,"fatG":28,"fibreG":15,"sodiumMg":900}},
-{"id":"tacu-tacu-peruvian-rice-and-bean-cake-with-fried-egg","title":"Tacu Tacu (Peruvian Rice and Bean Cake with Fried Egg)","summary":"Leftover rice and beans mashed with aji amarillo and fried into a crisp golden cake, topped with a runny egg.","cuisine":"latin-american","mealTypes":["dinner"],"difficulty":"easy","prepMinutes":15,"cookMinutes":20,"servings":4,"onePot":false,"diets":["vegetarian","no-gluten","no-dairy"],"ingredients":[{"items":["3 cup cooked rice","400g canned cannellini beans, drained","1 tbsp aji amarillo paste","1 brown onion, finely diced","2 clove garlic, crushed","1/4 cup vegetable oil","4 egg","1 red onion, thinly sliced","2 lime, juiced","2 tbsp chopped coriander"]}],"steps":["Cook the onion in 1 tbsp of the oil for 5 minutes, add the garlic and aji paste for 1 minute.","Add the beans and mash roughly, then stir through the rice and season. Shape into 4 thick oval cakes.","Heat 2 tbsp of the oil in a large frying pan and fry the cakes for 4 minutes each side, until crisp and golden.","Fry the eggs in the remaining oil until the whites are set. Toss the red onion with lime juice, coriander and salt and serve on top."],"notes":["Food safety: cook the eggs until the whites are set. Cool and refrigerate leftover rice within an hour.","Use day-old rice for the best crust."],"nutrition":{"kcal":510,"proteinG":18,"carbsG":68,"fatG":19,"fibreG":9,"sodiumMg":400}},
-{"id":"baiao-de-dois-brazilian-rice-and-beans-with-grilled-cheese","title":"Baião de Dois (Brazilian Rice and Beans with Grilled Cheese)","summary":"North-eastern Brazilian rice and beans cooked together with spring onion and topped with golden halloumi.","cuisine":"latin-american","mealTypes":["dinner"],"difficulty":"easy","prepMinutes":10,"cookMinutes":30,"servings":4,"onePot":true,"diets":["vegetarian","no-gluten"],"ingredients":[{"items":["2 tbsp olive oil","1 brown onion, diced","3 clove garlic, crushed","1 1/2 cup long grain rice","400g canned black-eyed beans, drained","3 cup vegetable stock","1 tomato, diced","4 spring onion, sliced","2 tbsp chopped coriander","250g halloumi, sliced","1 lime, cut into wedges"]}],"steps":["Heat the oil in a wide pot and cook the onion for 5 minutes, then add the garlic for 1 minute.","Stir in the rice, beans and stock, bring to the boil, cover and simmer on low for 15 minutes.","Fold in the tomato, spring onion and coriander, cover and rest for 5 minutes.","Fry the halloumi in a dry pan for 2 minutes each side until golden. Serve over the rice with lime."],"notes":["Halloumi is a good vegetarian choice as it is made without animal rennet in most brands. Check the label."],"nutrition":{"kcal":590,"proteinG":26,"carbsG":73,"fatG":21,"fibreG":6,"sodiumMg":1100}},
-{"id":"feijao-tropeiro-brazilian-bean-bacon-and-egg-stir-fry","title":"Feijão Tropeiro (Brazilian Bean, Bacon and Egg Stir-Fry)","summary":"Cowboy-style beans stir-fried with bacon, kale, scrambled egg and spring onion, a classic from Minas Gerais.","cuisine":"latin-american","mealTypes":["dinner"],"difficulty":"easy","prepMinutes":15,"cookMinutes":20,"servings":4,"onePot":true,"diets":["no-gluten","no-dairy"],"ingredients":[{"items":["200g bacon, diced","1 tbsp olive oil","1 brown onion, diced","3 clove garlic, crushed","2 x 400g canned black-eyed beans, drained","200g kale, shredded","4 egg, beaten","4 spring onion, sliced","1/4 cup chopped parsley","1 lime, cut into wedges"]}],"steps":["Fry the bacon in a large pan for 6 minutes until crisp, then lift out, leaving the fat.","Add the oil and onion and cook for 5 minutes until soft, then the garlic for 1 minute.","Add the beans and kale and stir-fry for 4 minutes, until the kale has wilted and the beans are hot.","Push everything aside, pour the eggs into the gap and scramble for 2 minutes until fully set, then fold through. Return the bacon, add the spring onion and parsley and serve with lime."],"notes":["Food safety: cook the eggs until fully set and the bacon until crisp. Refrigerate leftovers within an hour and reheat until steaming hot.","Serve with rice."],"nutrition":{"kcal":470,"proteinG":28,"carbsG":42,"fatG":21,"fibreG":13,"sodiumMg":900}},
-{"id":"chorrillana-chilean-beef-and-egg-chips-platter","title":"Chorrillana (Chilean Beef and Egg Chips Platter)","summary":"A mountain of crisp chips topped with sizzling steak strips, caramelised onion and fried eggs.","cuisine":"latin-american","mealTypes":["dinner"],"difficulty":"easy","prepMinutes":15,"cookMinutes":35,"servings":4,"onePot":false,"diets":["no-gluten","no-dairy"],"ingredients":[{"items":["900g potatoes, cut into chips","3 tbsp olive oil","500g beef rump steak, sliced into thin strips","2 brown onion, sliced","2 clove garlic, crushed","1 tsp smoked paprika","4 egg","1 tbsp red wine vinegar","2 tbsp chopped parsley"]}],"steps":["Heat the oven to 230°C (210°C fan). Toss the chips with 2 tbsp of the oil and spread over two trays. Roast for 30 minutes, turning once, until crisp.","Cook the onion in the remaining oil for 12 minutes until golden, then add the garlic and paprika.","Turn up the heat, add the beef and fry for 3 minutes until browned. Add the vinegar and season.","Fry the eggs for 3 minutes, until the whites are set. Pile the chips on a platter with the beef and onion, top with eggs and parsley."],"notes":["Food safety: cook the beef strips through and fry the eggs until the whites are set. Refrigerate leftovers within an hour and reheat until steaming hot."],"nutrition":{"kcal":590,"proteinG":38,"carbsG":48,"fatG":27,"fibreG":5,"sodiumMg":300}},
-{"id":"bifanas-portuguese-garlic-pork-rolls","title":"Bifanas (Portuguese Garlic Pork Rolls)","summary":"Thin pork slices simmered in garlic, white wine and paprika, piled into soft rolls.","cuisine":"spanish","mealTypes":["dinner","lunch"],"difficulty":"easy","prepMinutes":15,"cookMinutes":20,"servings":4,"onePot":false,"diets":["no-dairy"],"ingredients":[{"items":["600g pork loin, thinly sliced","4 clove garlic, crushed","1 tsp sweet paprika","1/2 cup white wine","2 bay leaf","2 tbsp olive oil","1/2 cup water","4 bread roll","2 tbsp dijon mustard"]}],"steps":["Toss the pork with the garlic, paprika, wine, bay and salt and marinate for at least 1 hour in the fridge.","Heat the oil in a wide pan over high heat and fry the pork in batches for 2 minutes each side, until browned.","Return all the pork and its marinade to the pan with the water and simmer for 10 minutes, until the pork is cooked through and the sauce is syrupy.","Split the rolls, spread with mustard and fill with pork and sauce."],"notes":["Food safety: pork must reach 70°C with no pink inside. Do not reuse raw marinade unless boiled. Refrigerate leftovers within an hour.","Prep time excludes marinating."],"nutrition":{"kcal":470,"proteinG":40,"carbsG":34,"fatG":17,"fibreG":2,"sodiumMg":700}}
-]}
+{
+ "about": "House recipes, batch 04 (helper sA): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+ "recipes": [
+  {
+   "id": "uova-in-purgatorio-eggs-in-tomato-purgatory",
+   "title": "Uova in Purgatorio (Eggs in Tomato Purgatory)",
+   "summary": "Eggs poached in a fiery tomato sauce with chilli and garlic, mopped up with crusty bread.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner",
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 2,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp olive oil",
+      "1 brown onion, finely diced",
+      "3 clove garlic, sliced",
+      "1 tsp chilli flakes",
+      "800g canned crushed tomatoes",
+      "1 tsp dried oregano",
+      "4 egg",
+      "1/4 cup chopped basil",
+      "4 slice sourdough bread"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil in a deep frying pan over medium heat. Cook the onion for 5 minutes until soft, then add the garlic and chilli for 1 minute.",
+    "Stir in the tomatoes and oregano with salt and pepper. Simmer for 10 minutes until thickened.",
+    "Make four wells in the sauce and crack in the eggs. Cover and cook for 4 to 5 minutes, until the whites are set and the yolks are still soft.",
+    "Scatter with basil and serve with toasted sourdough."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are fully set. Serve hot and refrigerate leftovers within an hour."
+   ],
+   "nutrition": {
+    "kcal": 470,
+    "proteinG": 19,
+    "carbsG": 50,
+    "fatG": 22,
+    "fibreG": 8,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "flammekueche-alsatian-onion-and-mushroom-tarte-flambee",
+   "title": "Flammekueche (Alsatian Onion and Mushroom Tarte Flambée)",
+   "summary": "A paper-thin Alsatian flatbread spread with tangy cream and topped with sweet onion and mushrooms.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 25,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 cup plain flour",
+      "1 tsp baking powder",
+      "1/2 tsp salt",
+      "1/4 cup olive oil",
+      "1/2 cup water",
+      "200g sour cream",
+      "100g ricotta",
+      "1/4 tsp ground nutmeg",
+      "2 brown onion, thinly sliced",
+      "250g mushrooms, thinly sliced",
+      "1 tbsp thyme leaves"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 250°C (230°C fan) with two trays inside. Mix the flour, baking powder, salt, oil and water into a firm dough and knead for 2 minutes.",
+    "Stir the sour cream, ricotta, nutmeg, salt and pepper together.",
+    "Divide the dough in two and roll each piece very thin on baking paper, about 3mm.",
+    "Spread with the cream mixture, then top with the onion, mushrooms and thyme.",
+    "Slide onto the hot trays and bake for 12 to 15 minutes, until the edges are charred and crisp. Cut into squares."
+   ],
+   "notes": [
+    "The dough needs no rising, so it is quick enough for a weeknight.",
+    "Swap the mushrooms for extra onion if you prefer the classic look."
+   ],
+   "nutrition": {
+    "kcal": 520,
+    "proteinG": 15,
+    "carbsG": 59,
+    "fatG": 25,
+    "fibreG": 5,
+    "sodiumMg": 480
+   }
+  },
+  {
+   "id": "huevos-a-la-flamenca-baked-eggs-with-chorizo-and-peas",
+   "title": "Huevos a la Flamenca (Baked Eggs with Chorizo and Peas)",
+   "summary": "Eggs baked in a smoky tomato and pepper base with chorizo, peas and asparagus.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp olive oil",
+      "150g chorizo, sliced",
+      "1 brown onion, diced",
+      "1 red capsicum, diced",
+      "2 clove garlic, crushed",
+      "2 tsp smoked paprika",
+      "400g canned diced tomatoes",
+      "1 cup frozen peas",
+      "8 egg",
+      "2 tbsp chopped parsley"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Heat the oil in an ovenproof frying pan and fry the chorizo for 3 minutes until it releases its oil.",
+    "Add the onion and capsicum and cook for 6 minutes, then stir in the garlic and paprika for 30 seconds.",
+    "Add the tomatoes and 1/2 cup water, simmer for 8 minutes, then stir through the peas.",
+    "Make eight wells and crack in the eggs. Bake for 8 to 10 minutes, until the whites are set.",
+    "Scatter with parsley and serve from the pan."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are fully set and the sauce is steaming hot. Refrigerate leftovers within an hour.",
+    "Serve with crusty bread."
+   ],
+   "nutrition": {
+    "kcal": 430,
+    "proteinG": 26,
+    "carbsG": 16,
+    "fatG": 29,
+    "fibreG": 5,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "poulet-basquaise-basque-chicken-with-peppers",
+   "title": "Poulet Basquaise (Basque Chicken with Peppers)",
+   "summary": "Chicken thighs braised with sweet peppers, tomatoes and smoked paprika in the style of the Basque country.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g chicken thigh, bone in",
+      "2 tbsp olive oil",
+      "1 brown onion, sliced",
+      "2 red capsicum, sliced",
+      "1 green capsicum, sliced",
+      "3 clove garlic, sliced",
+      "2 tsp smoked paprika",
+      "400g canned diced tomatoes",
+      "1/2 cup chicken stock",
+      "1/2 cup white wine",
+      "2 sprigs thyme"
+     ]
+    }
+   ],
+   "steps": [
+    "Season the chicken and brown it skin side down in the oil in a large pan for 6 minutes. Turn, brown for 3 minutes more, then lift out.",
+    "Cook the onion and capsicums in the same pan for 8 minutes, then add the garlic and paprika for 1 minute.",
+    "Pour in the wine and let it bubble for 2 minutes. Add the tomatoes, stock and thyme.",
+    "Return the chicken, cover and simmer for 25 minutes, until cooked through and tender. Uncover for the last 5 minutes to thicken the sauce."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part with no pink juices. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Good with rice or boiled potatoes."
+   ],
+   "nutrition": {
+    "kcal": 430,
+    "proteinG": 35,
+    "carbsG": 15,
+    "fatG": 25,
+    "fibreG": 4,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "frango-piri-piri-portuguese-piri-piri-chicken-traybake",
+   "title": "Frango Piri-Piri (Portuguese Piri-Piri Chicken Traybake)",
+   "summary": "Chicken marinated in a chilli, lemon and garlic paste and roasted with potatoes until sticky and charred.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 45,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1kg chicken drumstick",
+      "2 lemon, juiced",
+      "3 clove garlic, crushed",
+      "2 tbsp olive oil",
+      "2 tbsp red wine vinegar",
+      "2 tsp smoked paprika",
+      "2 long red chilli, finely chopped",
+      "1 tsp dried oregano",
+      "600g baby potatoes, halved",
+      "1 red onion, cut into wedges"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the lemon juice, garlic, oil, vinegar, paprika, chilli, oregano and salt. Coat the chicken and marinate in the fridge for at least 1 hour.",
+    "Heat the oven to 220°C (200°C fan). Toss the potatoes and onion in a little oil on a large tray and push to the sides.",
+    "Add the chicken to the middle with the marinade. Roast for 40 to 45 minutes, turning once, until cooked through and charred at the edges."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part with no pink juices. Do not reuse raw marinade as a sauce. Refrigerate leftovers within an hour.",
+    "Prep time excludes marinating."
+   ],
+   "nutrition": {
+    "kcal": 480,
+    "proteinG": 38,
+    "carbsG": 28,
+    "fatG": 24,
+    "fibreG": 4,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "kolokithokeftedes-greek-zucchini-fritters-with-yoghurt",
+   "title": "Kolokithokeftedes (Greek Zucchini Fritters with Yoghurt)",
+   "summary": "Crisp fritters of grated zucchini, feta and mint, served with garlicky yoghurt.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "700g zucchini, grated",
+      "1 tsp salt",
+      "200g feta",
+      "3 egg",
+      "3/4 cup plain flour",
+      "4 spring onion, sliced",
+      "2 tbsp chopped mint",
+      "1 tbsp chopped dill",
+      "1/4 cup olive oil",
+      "1 cup plain yoghurt",
+      "1 clove garlic, crushed",
+      "1 lemon, cut into wedges"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the zucchini with the salt and leave for 10 minutes, then squeeze out as much water as you can in a clean tea towel.",
+    "Mix the zucchini with the crumbled feta, eggs, flour, spring onion, mint and dill. Season with pepper.",
+    "Heat half the oil in a large frying pan over medium heat. Drop in heaped spoonfuls, flatten slightly and fry for 3 to 4 minutes each side until golden, working in batches.",
+    "Stir the garlic into the yoghurt. Serve the fritters hot with the yoghurt and lemon."
+   ],
+   "notes": [
+    "Food safety: cook the fritters until the centre is set and hot. Refrigerate leftovers within an hour.",
+    "Serve with a handful of leaves and some bread to make it a meal."
+   ],
+   "nutrition": {
+    "kcal": 430,
+    "proteinG": 19,
+    "carbsG": 28,
+    "fatG": 27,
+    "fibreG": 3,
+    "sodiumMg": 900
+   }
+  },
+  {
+   "id": "soutzoukakia-greek-cumin-meatballs-in-tomato-sauce",
+   "title": "Soutzoukakia (Greek Cumin Meatballs in Tomato Sauce)",
+   "summary": "Oval cumin-scented beef meatballs simmered in a cinnamon tomato sauce.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g beef mince",
+      "1 cup breadcrumbs",
+      "1 egg",
+      "3 clove garlic, crushed",
+      "2 tsp ground cumin",
+      "1/4 cup chopped parsley",
+      "2 tbsp red wine vinegar",
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "800g canned crushed tomatoes",
+      "1 cinnamon stick",
+      "1 tsp sugar"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the mince, breadcrumbs, egg, half the garlic, the cumin, parsley, vinegar, salt and pepper. Shape into 16 short ovals.",
+    "Brown the meatballs in half the oil in a wide pan for 5 minutes, turning, then lift out.",
+    "Cook the onion in the remaining oil for 5 minutes, add the rest of the garlic, then the tomatoes, cinnamon and sugar.",
+    "Return the meatballs, cover and simmer for 20 minutes, until cooked through and the sauce is thick."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Serve with rice or mashed potato."
+   ],
+   "nutrition": {
+    "kcal": 470,
+    "proteinG": 35,
+    "carbsG": 28,
+    "fatG": 24,
+    "fibreG": 4,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "kotopoulo-lemonato-greek-lemon-chicken-and-potato-traybake",
+   "title": "Kotopoulo Lemonato (Greek Lemon Chicken and Potato Traybake)",
+   "summary": "Chicken thighs roasted over lemony oregano potatoes until the juices turn the potatoes golden.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 50,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g chicken thigh, bone in",
+      "800g potatoes, cut into wedges",
+      "3 lemon, juiced",
+      "1/4 cup olive oil",
+      "4 clove garlic, crushed",
+      "2 tsp dried oregano",
+      "1 cup chicken stock",
+      "1 tbsp chopped parsley"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 210°C (190°C fan). Put the potatoes and chicken in a large roasting tin.",
+    "Whisk the lemon juice, oil, garlic, oregano, salt and pepper, pour over, then add the stock to the tin.",
+    "Roast for 50 minutes, turning the potatoes once, until the chicken is cooked through and the potatoes are golden and tender.",
+    "Scatter with parsley and serve with the pan juices."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part with no pink juices. Refrigerate leftovers within an hour and reheat until steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 520,
+    "proteinG": 34,
+    "carbsG": 38,
+    "fatG": 26,
+    "fibreG": 4,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "mucver-turkish-zucchini-and-herb-fritters",
+   "title": "Mücver (Turkish Zucchini and Herb Fritters)",
+   "summary": "Golden zucchini fritters with dill, spring onion and white cheese, served with a garlic yoghurt.",
+   "cuisine": "turkish",
+   "mealTypes": [
+    "dinner",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g zucchini, grated",
+      "1 tsp salt",
+      "150g feta",
+      "3 egg",
+      "1/2 cup plain flour",
+      "4 spring onion, sliced",
+      "1/4 cup chopped dill",
+      "1/4 cup chopped parsley",
+      "1/4 cup olive oil",
+      "1 cup plain yoghurt",
+      "1 clove garlic, crushed"
+     ]
+    }
+   ],
+   "steps": [
+    "Salt the zucchini and leave for 10 minutes, then squeeze very dry in a tea towel.",
+    "Mix with the crumbled feta, eggs, flour, spring onion, dill, parsley and pepper.",
+    "Heat the oil in a frying pan over medium heat. Fry spoonfuls for 3 minutes each side until golden and set.",
+    "Stir the garlic into the yoghurt and serve alongside."
+   ],
+   "notes": [
+    "Food safety: cook the fritters until the centre is set and hot. Refrigerate leftovers within an hour.",
+    "Add a spoon of flour if the mix seems wet."
+   ],
+   "nutrition": {
+    "kcal": 380,
+    "proteinG": 18,
+    "carbsG": 19,
+    "fatG": 26,
+    "fibreG": 2,
+    "sodiumMg": 820
+   }
+  },
+  {
+   "id": "kuru-fasulye-turkish-white-bean-and-tomato-stew",
+   "title": "Kuru Fasulye (Turkish White Bean and Tomato Stew)",
+   "summary": "Creamy white beans simmered with tomato paste, capsicum and Aleppo pepper, finished with butter.",
+   "cuisine": "turkish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "1 green capsicum, diced",
+      "2 clove garlic, crushed",
+      "2 tbsp tomato paste",
+      "1 tbsp capsicum paste",
+      "2 x 400g canned cannellini beans, drained",
+      "2 cup vegetable stock",
+      "1 tsp chilli flakes",
+      "1 tbsp butter",
+      "2 tbsp chopped parsley"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil in a pot and cook the onion and capsicum for 8 minutes until soft.",
+    "Add the garlic and both pastes and cook for 2 minutes, stirring.",
+    "Add the beans, stock and chilli. Simmer uncovered for 20 minutes, until the sauce is thick and some beans have broken down.",
+    "Stir through the butter and parsley and serve with rice or bread."
+   ],
+   "notes": [
+    "Use canned beans for a quick weeknight version of the long-simmered original.",
+    "Swap the butter for olive oil to make it vegan."
+   ],
+   "nutrition": {
+    "kcal": 144,
+    "proteinG": 7,
+    "carbsG": 18,
+    "fatG": 5,
+    "fibreG": 6,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "mujaddara-lebanese-lentils-and-rice-with-crispy-onions",
+   "title": "Mujaddara (Lebanese Lentils and Rice with Crispy Onions)",
+   "summary": "Brown lentils and rice spiced with cumin and topped with deeply browned onions.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup brown lentils",
+      "1 cup basmati rice",
+      "1/4 cup olive oil",
+      "3 brown onion, thinly sliced",
+      "2 tsp ground cumin",
+      "1/2 tsp ground cinnamon",
+      "3 cup water",
+      "1 cup plain yoghurt",
+      "1 tbsp lemon juice"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the lentils in plenty of water for 15 minutes, until nearly tender, then drain.",
+    "Heat the oil in a wide pan over medium-high heat and cook the onion for 20 minutes, stirring often, until deep brown and crisp at the edges. Lift out half for topping.",
+    "Add the cumin and cinnamon to the pan, then the lentils, rice, water and 1 tsp salt. Bring to the boil, cover and cook on low for 15 minutes.",
+    "Rest for 5 minutes, fluff with a fork and top with the reserved onion. Serve with yoghurt and lemon."
+   ],
+   "notes": [
+    "Vegan if you swap the yoghurt for a dairy-free one.",
+    "Stir often once the onions start to colour so they do not burn."
+   ],
+   "nutrition": {
+    "kcal": 490,
+    "proteinG": 19,
+    "carbsG": 71,
+    "fatG": 15,
+    "fibreG": 9,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "kuku-sabzi-persian-herb-frittata",
+   "title": "Kuku Sabzi (Persian Herb Frittata)",
+   "summary": "A dense green frittata packed with parsley, coriander, dill and walnuts, with a hint of turmeric.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 cup chopped parsley",
+      "1 cup chopped coriander",
+      "1/2 cup chopped dill",
+      "4 spring onion, sliced",
+      "6 egg",
+      "1/4 cup plain flour",
+      "1/2 tsp baking powder",
+      "1/2 tsp ground turmeric",
+      "1/4 cup chopped walnuts",
+      "1/4 cup olive oil",
+      "1 cup plain yoghurt"
+     ]
+    }
+   ],
+   "steps": [
+    "Whisk the eggs with the flour, baking powder, turmeric, salt and pepper. Fold in the herbs, spring onion and walnuts.",
+    "Heat the oil in a 24cm non-stick frying pan over medium heat and pour in the mixture.",
+    "Cover and cook on low for 12 minutes, until the base is golden and the top is nearly set.",
+    "Slide onto a plate, flip back into the pan and cook 4 minutes more. Cut into wedges and serve with yoghurt."
+   ],
+   "notes": [
+    "Food safety: cook until the egg is fully set in the centre. Refrigerate leftovers within an hour.",
+    "Eaten warm or cold, with flatbread."
+   ],
+   "nutrition": {
+    "kcal": 350,
+    "proteinG": 17,
+    "carbsG": 13,
+    "fatG": 27,
+    "fibreG": 3,
+    "sodiumMg": 260
+   }
+  },
+  {
+   "id": "mirza-ghasemi-persian-smoky-aubergine-and-eggs",
+   "title": "Mirza Ghasemi (Persian Smoky Aubergine and Eggs)",
+   "summary": "Charred aubergine mashed with garlic and tomato, then set with scrambled eggs, from Gilan in northern Iran.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner",
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "3 aubergine",
+      "3 tbsp olive oil",
+      "5 clove garlic, crushed",
+      "4 tomato, grated",
+      "1 tsp ground turmeric",
+      "4 egg",
+      "1 tsp salt",
+      "4 flatbread"
+     ]
+    }
+   ],
+   "steps": [
+    "Prick the aubergines and roast whole at 230°C (210°C fan) for 30 minutes, until collapsed and charred. Cool, peel and chop the flesh.",
+    "Heat the oil in a frying pan and fry the garlic for 1 minute, then add the turmeric and tomato and cook for 8 minutes until thick.",
+    "Add the aubergine and salt and cook for 5 minutes, mashing roughly.",
+    "Make four wells, crack in the eggs and stir them gently through for 3 minutes until just set. Serve with warm flatbread."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until fully set. Refrigerate leftovers within an hour.",
+    "Char the aubergines over a gas flame if you have one for a smokier flavour."
+   ],
+   "nutrition": {
+    "kcal": 360,
+    "proteinG": 15,
+    "carbsG": 38,
+    "fatG": 17,
+    "fibreG": 9,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "adas-polo-persian-lentil-rice-with-sultanas-and-saffron",
+   "title": "Adas Polo (Persian Lentil Rice with Sultanas and Saffron)",
+   "summary": "Fragrant basmati rice layered with lentils, caramelised onion, cinnamon and sweet sultanas.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 45,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 1/2 cup basmati rice",
+      "1 cup brown lentils",
+      "3 tbsp olive oil",
+      "2 brown onion, thinly sliced",
+      "1 tsp ground cinnamon",
+      "1/2 tsp ground turmeric",
+      "1/2 cup sultanas",
+      "1 pinch saffron threads",
+      "2 tbsp butter",
+      "1/4 cup slivered almonds"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the lentils for 12 minutes until just tender, drain. Boil the rice in salted water for 6 minutes, then drain.",
+    "Cook the onion in the oil for 15 minutes until golden, stir in the cinnamon, turmeric and sultanas for 2 minutes.",
+    "Melt the butter in a pot, stir in saffron soaked in 2 tbsp hot water, then layer in the rice, lentils and onion mixture.",
+    "Wrap the lid in a tea towel, cover and steam on low for 25 minutes. Top with toasted almonds."
+   ],
+   "notes": [
+    "Use half a teaspoon of ground saffron if you do not have threads.",
+    "Swap the butter for olive oil to make it vegan."
+   ],
+   "nutrition": {
+    "kcal": 640,
+    "proteinG": 19,
+    "carbsG": 104,
+    "fatG": 17,
+    "fibreG": 10,
+    "sodiumMg": 210
+   }
+  },
+  {
+   "id": "boxty-irish-potato-pancakes-with-mushrooms",
+   "title": "Boxty (Irish Potato Pancakes with Creamy Mushrooms)",
+   "summary": "Pan-fried potato pancakes from the Irish midlands, topped with garlic mushrooms in a thyme cream.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g potatoes, peeled and grated",
+      "400g potatoes, peeled and boiled",
+      "1 cup plain flour",
+      "1/2 cup milk",
+      "1 tsp baking powder",
+      "4 tbsp butter",
+      "400g mushrooms, sliced",
+      "2 clove garlic, crushed",
+      "1 tbsp thyme leaves",
+      "1/2 cup thickened cream",
+      "2 tbsp chopped chives"
+     ]
+    }
+   ],
+   "steps": [
+    "Squeeze the grated potato dry in a tea towel. Mash the boiled potato and mix both with the flour, milk, baking powder and 1 tsp salt to a thick batter.",
+    "Melt half the butter in a large frying pan and fry spoonfuls, flattened to 1cm, for 4 minutes each side until golden. Keep warm in a low oven.",
+    "Melt the remaining butter in a second pan, cook the mushrooms for 6 minutes, then add the garlic and thyme for 1 minute.",
+    "Pour in the cream and simmer for 2 minutes. Spoon over the boxty and top with chives."
+   ],
+   "notes": [
+    "Squeeze the potato well, or the pancakes will be gluey."
+   ],
+   "nutrition": {
+    "kcal": 480,
+    "proteinG": 11,
+    "carbsG": 60,
+    "fatG": 22,
+    "fibreG": 6,
+    "sodiumMg": 560
+   }
+  },
+  {
+   "id": "irish-stew-lamb-and-potato",
+   "title": "Irish Stew (Lamb and Potato)",
+   "summary": "Tender lamb with potatoes, carrots and onions simmered in a light broth until the potatoes start to thicken it.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 75,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g lamb shoulder, diced",
+      "1 tbsp olive oil",
+      "2 brown onion, sliced",
+      "3 carrot, thickly sliced",
+      "800g potatoes, peeled and quartered",
+      "3 cup chicken stock",
+      "3 sprigs thyme",
+      "2 bay leaf",
+      "2 tbsp chopped parsley"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the lamb in the oil in a heavy pot in two batches, 5 minutes each, then lift out.",
+    "Add the onion and cook for 5 minutes. Layer the lamb, carrot and potato in the pot, seasoning each layer with salt and pepper.",
+    "Pour over the stock, add the thyme and bay leaf, bring to the boil, then cover and simmer gently for 1 hour 15 minutes, until the lamb is tender and the potatoes are soft.",
+    "Skim off any fat, scatter with parsley and serve in bowls."
+   ],
+   "notes": [
+    "Food safety: lamb pieces must reach 71°C in the centre and be steaming hot throughout. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "A splash of Worcestershire sauce is common but not traditional."
+   ],
+   "nutrition": {
+    "kcal": 500,
+    "proteinG": 37,
+    "carbsG": 36,
+    "fatG": 22,
+    "fibreG": 6,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "placki-ziemniaczane-polish-potato-pancakes-with-sour-cream",
+   "title": "Placki Ziemniaczane (Polish Potato Pancakes with Sour Cream)",
+   "summary": "Crisp grated potato and onion pancakes, served with sour cream and a fried egg.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner",
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "900g potatoes, peeled",
+      "1 brown onion",
+      "2 egg",
+      "1/4 cup plain flour",
+      "1 tsp salt",
+      "1/2 cup vegetable oil",
+      "4 egg",
+      "1 cup sour cream",
+      "2 tbsp chopped chives"
+     ]
+    }
+   ],
+   "steps": [
+    "Grate the potatoes and onion, then squeeze out as much liquid as you can in a clean tea towel.",
+    "Stir in the two eggs, flour, salt and pepper straight away, until the mix is thick and evenly coated.",
+    "Heat half the oil in a large frying pan and fry spoonfuls, pressed flat, for 3 to 4 minutes per side until deep golden and crisp. Drain on paper towel.",
+    "Fry the remaining four eggs in the same pan until the whites are set. Serve the pancakes with an egg, sour cream and chives."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are set. Refrigerate leftovers within an hour.",
+    "Fry in batches and keep warm in a low oven."
+   ],
+   "nutrition": {
+    "kcal": 540,
+    "proteinG": 15,
+    "carbsG": 42,
+    "fatG": 34,
+    "fibreG": 4,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "vareniki-ukrainian-potato-and-onion-dumplings",
+   "title": "Vareniki (Ukrainian Potato and Onion Dumplings)",
+   "summary": "Soft little dumplings filled with mashed potato and golden onion, tossed in browned butter.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 40,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 1/2 cup plain flour",
+      "1 egg",
+      "3/4 cup warm water",
+      "600g potatoes, peeled and diced",
+      "2 brown onion, finely diced",
+      "4 tbsp butter",
+      "1/2 cup sour cream",
+      "2 tbsp chopped dill"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the flour, egg, water and 1/2 tsp salt into a soft dough, knead for 3 minutes, then cover.",
+    "Boil the potatoes until tender, 12 minutes, drain and mash. Cook the onion in half the butter for 10 minutes until golden and mix into the potato with salt and pepper.",
+    "Roll the dough thin, cut 8cm rounds, fill each with a spoonful of potato and pinch tightly shut.",
+    "Boil in batches for 4 to 5 minutes, until they float. Toss in the remaining butter, browned, and serve with sour cream and dill."
+   ],
+   "notes": [
+    "Prep time excludes resting the dough for 20 minutes.",
+    "Cooked dumplings freeze well."
+   ],
+   "nutrition": {
+    "kcal": 590,
+    "proteinG": 15,
+    "carbsG": 88,
+    "fatG": 20,
+    "fibreG": 6,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "raggmunk-swedish-potato-pancakes-with-lingonberry",
+   "title": "Raggmunk (Swedish Potato Pancakes with Lingonberry and Fried Egg)",
+   "summary": "Thin, crisp Swedish potato pancakes served with tart berry jam and a fried egg.",
+   "cuisine": "scandinavian",
+   "mealTypes": [
+    "dinner",
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g potatoes, peeled and grated",
+      "1 cup milk",
+      "3/4 cup plain flour",
+      "2 egg",
+      "1 tsp salt",
+      "4 tbsp butter",
+      "4 egg",
+      "1/2 cup lingonberry jam"
+     ]
+    }
+   ],
+   "steps": [
+    "Whisk the milk, flour, two eggs and salt into a thin batter, then stir in the grated potato.",
+    "Melt a little butter in a large non-stick pan. Spoon in the batter to make thin pancakes about 10cm wide and fry for 3 minutes each side until golden and crisp at the edges.",
+    "Fry the remaining eggs in butter until the whites are set.",
+    "Serve the pancakes with the eggs and a spoonful of lingonberry jam."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are set. Refrigerate leftovers within an hour.",
+    "Cranberry sauce works if you cannot find lingonberry."
+   ],
+   "nutrition": {
+    "kcal": 500,
+    "proteinG": 17,
+    "carbsG": 63,
+    "fatG": 21,
+    "fibreG": 4,
+    "sodiumMg": 460
+   }
+  },
+  {
+   "id": "biff-a-la-lindstrom-swedish-beef-and-beetroot-patties",
+   "title": "Biff à la Lindström (Swedish Beef and Beetroot Patties)",
+   "summary": "Beef patties studded with beetroot, capers and onion, fried until crusty and served with potatoes.",
+   "cuisine": "scandinavian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "600g beef mince",
+      "1 egg",
+      "1/2 cup breadcrumbs",
+      "1/4 cup milk",
+      "200g canned beetroot, drained and finely diced",
+      "1 brown onion, finely diced",
+      "2 tbsp capers, chopped",
+      "2 tbsp butter",
+      "600g baby potatoes, halved",
+      "1 tbsp chopped parsley"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the potatoes in salted water for 15 minutes until tender, then drain.",
+    "Mix the mince, egg, breadcrumbs, milk, beetroot, onion, capers, 1 tsp salt and pepper. Shape into 8 patties.",
+    "Melt the butter in a large frying pan over medium heat and fry the patties for 5 minutes each side, until browned and cooked through.",
+    "Serve with the potatoes and parsley."
+   ],
+   "notes": [
+    "Food safety: patties must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Pickled cucumber is a good side."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 38,
+    "carbsG": 42,
+    "fatG": 26,
+    "fibreG": 5,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "chile-con-carne-texan-beef-and-bean-chilli",
+   "title": "Chile con Carne (Texan Beef and Bean Chilli)",
+   "summary": "A thick, smoky beef and kidney bean chilli with cumin, paprika and a little dark chocolate.",
+   "cuisine": "american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 45,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 tbsp olive oil",
+      "1 brown onion, diced",
+      "3 clove garlic, crushed",
+      "600g beef mince",
+      "2 tsp ground cumin",
+      "2 tsp smoked paprika",
+      "1 tsp chilli powder",
+      "1 tsp oregano",
+      "2 tbsp tomato paste",
+      "800g canned diced tomatoes",
+      "2 x 400g canned kidney beans, drained",
+      "10g dark chocolate",
+      "1 cup beef stock"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil in a large pot and cook the onion for 5 minutes. Add the garlic and cook for 1 minute.",
+    "Add the mince and cook for 8 minutes, breaking it up, until browned.",
+    "Stir in the cumin, paprika, chilli, oregano and tomato paste for 1 minute.",
+    "Add the tomatoes, stock and beans. Simmer for 30 minutes, uncovered, until thick. Stir in the chocolate and season."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C throughout with no pink. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Serve with rice, sour cream and coriander. It freezes well."
+   ],
+   "nutrition": {
+    "kcal": 380,
+    "proteinG": 30,
+    "carbsG": 28,
+    "fatG": 16,
+    "fibreG": 10,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "bean-and-cheese-chimichangas-baked",
+   "title": "Bean and Cheese Chimichangas (Baked)",
+   "summary": "Crisp baked tortilla parcels filled with spiced black beans, rice and melting cheese.",
+   "cuisine": "american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 25,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 tbsp olive oil",
+      "1 brown onion, diced",
+      "1 clove garlic, crushed",
+      "1 tsp ground cumin",
+      "1 tsp smoked paprika",
+      "400g canned black beans, drained",
+      "1 cup cooked rice",
+      "1/2 cup tomato salsa",
+      "1 cup grated mozzarella",
+      "4 large flour tortilla",
+      "2 tbsp olive oil",
+      "1/2 cup sour cream",
+      "1 avocado, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Cook the onion in the oil for 5 minutes, then add the garlic, cumin and paprika for 1 minute.",
+    "Add the beans, rice and salsa, mash lightly and cook for 3 minutes. Stir in the cheese.",
+    "Spoon a quarter of the filling into each tortilla, fold in the sides and roll up into tight parcels.",
+    "Brush with oil, place seam side down on a lined tray and bake for 15 to 18 minutes, turning once, until golden and crisp. Serve with sour cream and avocado."
+   ],
+   "notes": [
+    "Freezes well before baking."
+   ],
+   "nutrition": {
+    "kcal": 610,
+    "proteinG": 22,
+    "carbsG": 72,
+    "fatG": 26,
+    "fibreG": 13,
+    "sodiumMg": 860
+   }
+  },
+  {
+   "id": "calabacitas-con-elote-mexican-zucchini-and-corn-saute",
+   "title": "Calabacitas con Elote (Mexican Zucchini and Corn Sauté)",
+   "summary": "Zucchini, sweet corn and green chilli cooked in a pan with tomato and finished with crumbled cheese and black beans.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "2 clove garlic, crushed",
+      "500g zucchini, diced",
+      "2 cup corn kernels",
+      "1 green chilli, finely chopped",
+      "3 tomato, diced",
+      "400g canned black beans, drained",
+      "1 tsp ground cumin",
+      "100g feta",
+      "1/4 cup chopped coriander",
+      "8 corn tortilla"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil in a large frying pan and cook the onion for 4 minutes. Add the garlic and chilli for 1 minute.",
+    "Add the zucchini, corn and cumin and cook for 6 minutes, until just tender.",
+    "Stir in the tomato and beans and cook for 5 minutes. Season well.",
+    "Top with crumbled feta and coriander and serve with warm tortillas."
+   ],
+   "notes": [
+    "Easily made vegan by leaving out the feta."
+   ],
+   "nutrition": {
+    "kcal": 450,
+    "proteinG": 18,
+    "carbsG": 64,
+    "fatG": 15,
+    "fibreG": 13,
+    "sodiumMg": 620
+   }
+  },
+  {
+   "id": "enchiladas-suizas-swiss-style-green-chicken-enchiladas",
+   "title": "Enchiladas Suizas (Swiss-Style Green Chicken Enchiladas)",
+   "summary": "Chicken-filled tortillas baked under a creamy tomatillo sauce and melted cheese.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g chicken breast",
+      "2 cup green salsa",
+      "1 green chilli",
+      "2 clove garlic",
+      "1/4 cup coriander leaves",
+      "1/2 cup thickened cream",
+      "1 tbsp olive oil",
+      "8 corn tortilla",
+      "1 1/2 cup grated mozzarella",
+      "1/4 cup sour cream"
+     ]
+    }
+   ],
+   "steps": [
+    "Poach the chicken in simmering salted water for 15 minutes until cooked through. Shred it.",
+    "Blend the salsa, chilli, garlic, coriander and cream until smooth. Heat the oil in a pan, pour in the sauce and simmer for 8 minutes. Season with salt.",
+    "Heat the oven to 200°C (180°C fan). Warm the tortillas, dip each in the sauce, fill with chicken and a pinch of cheese and roll into a baking dish.",
+    "Pour the remaining sauce on top, scatter with the cheese and bake for 15 minutes, until bubbling. Serve with sour cream."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part with no pink juices. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Use a good-quality jar of green salsa verde."
+   ],
+   "nutrition": {
+    "kcal": 500,
+    "proteinG": 41,
+    "carbsG": 28,
+    "fatG": 25,
+    "fibreG": 5,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "sopes-de-frijol-mexican-bean-sopes",
+   "title": "Sopes de Frijol (Mexican Bean Sopes)",
+   "summary": "Thick little masa cakes pinched into cups and piled with refried beans, crumbled cheese and crunchy lettuce.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 cup fine cornmeal",
+      "1 1/2 cup warm water",
+      "1 tsp salt",
+      "1/4 cup vegetable oil",
+      "400g canned black beans, drained and mashed",
+      "1 cup shredded lettuce",
+      "1/2 cup tomato salsa",
+      "100g feta",
+      "1/2 cup sour cream",
+      "1 avocado, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the masa, water and salt into a soft dough and leave to rest for 10 minutes. Divide into 8 balls and press each into a 9cm disc, 1cm thick.",
+    "Cook the discs in a dry pan over medium heat for 2 minutes each side. While still warm, pinch up a rim around each edge.",
+    "Fry the sopes in the oil for 2 minutes each side until golden, then drain.",
+    "Warm the beans and spread over each sope. Top with lettuce, salsa, feta, sour cream and avocado."
+   ],
+   "notes": [
+    "Prep time excludes resting the dough.",
+    "Use vegan toppings and skip the feta and cream to make this vegan."
+   ],
+   "nutrition": {
+    "kcal": 580,
+    "proteinG": 18,
+    "carbsG": 68,
+    "fatG": 28,
+    "fibreG": 15,
+    "sodiumMg": 900
+   }
+  },
+  {
+   "id": "tacu-tacu-peruvian-rice-and-bean-cake-with-fried-egg",
+   "title": "Tacu Tacu (Peruvian Rice and Bean Cake with Fried Egg)",
+   "summary": "Leftover rice and beans mashed with aji amarillo and fried into a crisp golden cake, topped with a runny egg.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "3 cup cooked rice",
+      "400g canned cannellini beans, drained",
+      "1 tbsp aji amarillo paste",
+      "1 brown onion, finely diced",
+      "2 clove garlic, crushed",
+      "1/4 cup vegetable oil",
+      "4 egg",
+      "1 red onion, thinly sliced",
+      "2 lime, juiced",
+      "2 tbsp chopped coriander"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the onion in 1 tbsp of the oil for 5 minutes, add the garlic and aji paste for 1 minute.",
+    "Add the beans and mash roughly, then stir through the rice and season. Shape into 4 thick oval cakes.",
+    "Heat 2 tbsp of the oil in a large frying pan and fry the cakes for 4 minutes each side, until crisp and golden.",
+    "Fry the eggs in the remaining oil until the whites are set. Toss the red onion with lime juice, coriander and salt and serve on top."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are set. Cool and refrigerate leftover rice within an hour.",
+    "Use day-old rice for the best crust."
+   ],
+   "nutrition": {
+    "kcal": 510,
+    "proteinG": 18,
+    "carbsG": 68,
+    "fatG": 19,
+    "fibreG": 9,
+    "sodiumMg": 400
+   }
+  },
+  {
+   "id": "baiao-de-dois-brazilian-rice-and-beans-with-grilled-cheese",
+   "title": "Baião de Dois (Brazilian Rice and Beans with Grilled Cheese)",
+   "summary": "North-eastern Brazilian rice and beans cooked together with spring onion and topped with golden halloumi.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "3 clove garlic, crushed",
+      "1 1/2 cup long grain rice",
+      "400g canned black-eyed beans, drained",
+      "3 cup vegetable stock",
+      "1 tomato, diced",
+      "4 spring onion, sliced",
+      "2 tbsp chopped coriander",
+      "250g halloumi, sliced",
+      "1 lime, cut into wedges"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil in a wide pot and cook the onion for 5 minutes, then add the garlic for 1 minute.",
+    "Stir in the rice, beans and stock, bring to the boil, cover and simmer on low for 15 minutes.",
+    "Fold in the tomato, spring onion and coriander, cover and rest for 5 minutes.",
+    "Fry the halloumi in a dry pan for 2 minutes each side until golden. Serve over the rice with lime."
+   ],
+   "notes": [
+    "Halloumi is a good vegetarian choice as it is made without animal rennet in most brands. Check the label."
+   ],
+   "nutrition": {
+    "kcal": 590,
+    "proteinG": 26,
+    "carbsG": 73,
+    "fatG": 21,
+    "fibreG": 6,
+    "sodiumMg": 1100
+   }
+  },
+  {
+   "id": "feijao-tropeiro-brazilian-bean-bacon-and-egg-stir-fry",
+   "title": "Feijão Tropeiro (Brazilian Bean, Bacon and Egg Stir-Fry)",
+   "summary": "Cowboy-style beans stir-fried with bacon, kale, scrambled egg and spring onion, a classic from Minas Gerais.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "200g bacon, diced",
+      "1 tbsp olive oil",
+      "1 brown onion, diced",
+      "3 clove garlic, crushed",
+      "2 x 400g canned black-eyed beans, drained",
+      "200g kale, shredded",
+      "4 egg, beaten",
+      "4 spring onion, sliced",
+      "1/4 cup chopped parsley",
+      "1 lime, cut into wedges"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the bacon in a large pan for 6 minutes until crisp, then lift out, leaving the fat.",
+    "Add the oil and onion and cook for 5 minutes until soft, then the garlic for 1 minute.",
+    "Add the beans and kale and stir-fry for 4 minutes, until the kale has wilted and the beans are hot.",
+    "Push everything aside, pour the eggs into the gap and scramble for 2 minutes until fully set, then fold through. Return the bacon, add the spring onion and parsley and serve with lime."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until fully set and the bacon until crisp. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Serve with rice."
+   ],
+   "nutrition": {
+    "kcal": 332,
+    "proteinG": 20,
+    "carbsG": 30,
+    "fatG": 15,
+    "fibreG": 9,
+    "sodiumMg": 900
+   }
+  },
+  {
+   "id": "chorrillana-chilean-beef-and-egg-chips-platter",
+   "title": "Chorrillana (Chilean Beef and Egg Chips Platter)",
+   "summary": "A mountain of crisp chips topped with sizzling steak strips, caramelised onion and fried eggs.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "900g potatoes, cut into chips",
+      "3 tbsp olive oil",
+      "500g beef rump steak, sliced into thin strips",
+      "2 brown onion, sliced",
+      "2 clove garlic, crushed",
+      "1 tsp smoked paprika",
+      "4 egg",
+      "1 tbsp red wine vinegar",
+      "2 tbsp chopped parsley"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 230°C (210°C fan). Toss the chips with 2 tbsp of the oil and spread over two trays. Roast for 30 minutes, turning once, until crisp.",
+    "Cook the onion in the remaining oil for 12 minutes until golden, then add the garlic and paprika.",
+    "Turn up the heat, add the beef and fry for 3 minutes until browned. Add the vinegar and season.",
+    "Fry the eggs for 3 minutes, until the whites are set. Pile the chips on a platter with the beef and onion, top with eggs and parsley."
+   ],
+   "notes": [
+    "Food safety: cook the beef strips through and fry the eggs until the whites are set. Refrigerate leftovers within an hour and reheat until steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 590,
+    "proteinG": 38,
+    "carbsG": 48,
+    "fatG": 27,
+    "fibreG": 5,
+    "sodiumMg": 300
+   }
+  },
+  {
+   "id": "bifanas-portuguese-garlic-pork-rolls",
+   "title": "Bifanas (Portuguese Garlic Pork Rolls)",
+   "summary": "Thin pork slices simmered in garlic, white wine and paprika, piled into soft rolls.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g pork loin, thinly sliced",
+      "4 clove garlic, crushed",
+      "1 tsp sweet paprika",
+      "1/2 cup white wine",
+      "2 bay leaf",
+      "2 tbsp olive oil",
+      "1/2 cup water",
+      "4 bread roll",
+      "2 tbsp dijon mustard"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the pork with the garlic, paprika, wine, bay and salt and marinate for at least 1 hour in the fridge.",
+    "Heat the oil in a wide pan over high heat and fry the pork in batches for 2 minutes each side, until browned.",
+    "Return all the pork and its marinade to the pan with the water and simmer for 10 minutes, until the pork is cooked through and the sauce is syrupy.",
+    "Split the rolls, spread with mustard and fill with pork and sauce."
+   ],
+   "notes": [
+    "Food safety: pork must reach 70°C with no pink inside. Do not reuse raw marinade unless boiled. Refrigerate leftovers within an hour.",
+    "Prep time excludes marinating."
+   ],
+   "nutrition": {
+    "kcal": 470,
+    "proteinG": 40,
+    "carbsG": 34,
+    "fatG": 17,
+    "fibreG": 2,
+    "sodiumMg": 700
+   }
+  }
+ ]
+}
