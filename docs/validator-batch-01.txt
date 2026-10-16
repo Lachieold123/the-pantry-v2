@@ -1,0 +1,155 @@
+Checked 50 recipe(s) in batch-01.json against 1001 existing titles.
+FAIL  turkish-eggs  [nutrition] no nutrition estimate
+FAIL  turkish-eggs  [doneness] step 4 cooks with no doneness cue: "Sit two eggs on each bowl of yoghurt, spoon over the red butter and sc..."
+warn  turkish-eggs  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+FAIL  chilaquiles  [nutrition] no nutrition estimate
+FAIL  chilaquiles  [food-safety] raw or soft egg: needs a note starting "Food safety"
+FAIL  buttermilk-pancakes  [nutrition] no nutrition estimate
+warn  buttermilk-pancakes  [alternative] "150g frozen mixed berries, thawed (or fresh berries)": alternative "fresh berries" is not in the ingredient database
+warn  buttermilk-pancakes  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+FAIL  kedgeree  [nutrition] no nutrition estimate
+FAIL  kedgeree  [food-safety] raw or soft egg: needs a note starting "Food safety"
+warn  kedgeree  [doneness] step 1 gives a time but nothing to look for: "Lower the eggs into a pan of boiling water and cook for 7 minutes. Mov..."
+warn  kedgeree  [doneness] step 3 gives a time but nothing to look for: "Add the rice and stir to coat in the butter. Pour in the water, add th..."
+FAIL  bircher-muesli  [nutrition] no nutrition estimate
+warn  bircher-muesli  [alternative] "150g frozen mixed berries, thawed (or fresh berries)": alternative "fresh berries" is not in the ingredient database
+FAIL  corn-fritters  [nutrition] no nutrition estimate
+warn  corn-fritters  [time] 35 min in all but the steps only account for about 3 min
+warn  corn-fritters  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+FAIL  chicken-ginger-congee  [nutrition] no nutrition estimate
+FAIL  chicken-ginger-congee  [food-safety] raw poultry: needs a note starting "Food safety"
+warn  chicken-ginger-congee  [time] cookMinutes 75 but the steps name only about 20 min
+FAIL  chicken-ginger-congee  [doneness] step 1 cooks with no doneness cue: "Put the rice, stock, water and half the ginger in a large heavy pot. B..."
+FAIL  fattoush  [nutrition] no nutrition estimate
+warn  fattoush  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+FAIL  lemongrass-pork-noodle-salad  [nutrition] no nutrition estimate
+FAIL  lemongrass-pork-noodle-salad  [food-safety] fresh pork: needs a note starting "Food safety"
+FAIL  lemongrass-pork-noodle-salad  [food-safety] fresh pork: no 70°C (or 75°C) in the steps or notes
+warn  lemongrass-pork-noodle-salad  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+FAIL  gado-gado  [nutrition] no nutrition estimate
+FAIL  danish-open-sandwiches  [nutrition] no nutrition estimate
+warn  danish-open-sandwiches  [doneness] step 1 gives a time but nothing to look for: "Lower the eggs into boiling water and cook for 10 minutes. Cool in col..."
+FAIL  danish-open-sandwiches  [doneness] no "until" or temperature cue anywhere in the method
+FAIL  spanish-tortilla  [nutrition] no nutrition estimate
+FAIL  kimchi-fried-rice  [nutrition] no nutrition estimate
+FAIL  kimchi-fried-rice  [food-safety] raw or soft egg: needs a note starting "Food safety"
+FAIL  kimchi-fried-rice  [food-safety] cooked rice: say to cool and refrigerate it within an hour
+FAIL  pasta-e-fagioli  [nutrition] no nutrition estimate
+FAIL  pasta-e-fagioli  [hard-cheese] "parmesan" is usually made with animal rennet: the app tags this vegetarian (D-036) but the batch-04 rule says not (Lachlan to decide). Use "vegetarian hard cheese" or drop it
+warn  pasta-e-fagioli  [doneness] step 2 gives a time but nothing to look for: "Stir in the tomato paste for 1 minute, then add the tomatoes, beans, s..."
+warn  pasta-e-fagioli  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+FAIL  thai-pork-larb  [nutrition] no nutrition estimate
+FAIL  thai-pork-larb  [food-safety] mince or sausage: needs a note starting "Food safety"
+FAIL  thai-pork-larb  [food-safety] mince or sausage: no 75°C in the steps or notes
+warn  thai-pork-larb  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+FAIL  sausage-rolls  [nutrition] no nutrition estimate
+FAIL  sausage-rolls  [food-safety] mince or sausage: needs a note starting "Food safety"
+FAIL  thai-fish-cakes  [nutrition] no nutrition estimate
+FAIL  thai-fish-cakes  [food-safety] raw seafood: needs a note starting "Food safety"
+FAIL  thai-fish-cakes  [food-safety] raw seafood: no opaque / flakes / 63°C cue in the steps or notes
+warn  thai-fish-cakes  [time] 35 min in all but the steps only account for about 4 min
+FAIL  potato-pancakes  [nutrition] no nutrition estimate
+warn  potato-pancakes  [time] 50 min in all but the steps only account for about 4 min
+warn  potato-pancakes  [time] cookMinutes 30 but the steps name only about 4 min
+FAIL  suya-beef-skewers  [nutrition] no nutrition estimate
+FAIL  suya-beef-skewers  [food-safety] beef, lamb or veal cut: needs a note starting "Food safety"
+FAIL  suya-beef-skewers  [food-safety] beef, lamb or veal cut: no internal temperature in °C in the steps or notes
+FAIL  chicken-cacciatore  [nutrition] no nutrition estimate
+FAIL  chicken-cacciatore  [food-safety] raw poultry: needs a note starting "Food safety"
+warn  chicken-cacciatore  [doneness] step 3 gives a time but nothing to look for: "Pour in the wine and simmer for 2 minutes, scraping up the browned bit..."
+FAIL  salmon-en-papillote  [nutrition] no nutrition estimate
+FAIL  salmon-en-papillote  [food-safety] raw seafood: needs a note starting "Food safety"
+FAIL  salmon-en-papillote  [doneness] step 6 cooks with no doneness cue: "Put a parcel on each plate for everyone to open at the table (watch th..."
+FAIL  lentils-and-sausages  [nutrition] no nutrition estimate
+FAIL  lentils-and-sausages  [food-safety] mince or sausage: needs a note starting "Food safety"
+warn  lentils-and-sausages  [doneness] step 1 gives a time but nothing to look for: "Heat the oil in a large deep frying pan or casserole over medium heat...."
+FAIL  chorizo-chickpea-stew  [nutrition] no nutrition estimate
+FAIL  greek-lemon-chicken-potatoes  [nutrition] no nutrition estimate
+FAIL  greek-lemon-chicken-potatoes  [food-safety] raw poultry: needs a note starting "Food safety"
+FAIL  prawn-saganaki  [nutrition] no nutrition estimate
+FAIL  prawn-saganaki  [food-safety] raw seafood: needs a note starting "Food safety"
+FAIL  chicken-shish-bulgur-pilaf  [nutrition] no nutrition estimate
+FAIL  chicken-shish-bulgur-pilaf  [food-safety] raw poultry: needs a note starting "Food safety"
+FAIL  mujadara  [nutrition] no nutrition estimate
+warn  mujadara  [doneness] step 3 gives a time but nothing to look for: "Add the cumin, cinnamon and allspice to the onions left in the pan for..."
+FAIL  harira  [nutrition] no nutrition estimate
+FAIL  harira  [food-safety] beef, lamb or veal cut: needs a note starting "Food safety"
+FAIL  harira  [food-safety] beef, lamb or veal cut: no internal temperature in °C in the steps or notes
+warn  harira  [doneness] step 1 gives a time but nothing to look for: "Heat the oil in a large heavy pot over medium-high heat. Brown the lam..."
+FAIL  chermoula-fish-couscous  [nutrition] no nutrition estimate
+FAIL  chermoula-fish-couscous  [food-safety] raw seafood: needs a note starting "Food safety"
+FAIL  groundnut-stew  [nutrition] no nutrition estimate
+FAIL  groundnut-stew  [food-safety] raw poultry: needs a note starting "Food safety"
+FAIL  groundnut-stew  [food-safety] raw poultry: no 75°C in the steps or notes
+warn  groundnut-stew  [doneness] step 1 gives a time but nothing to look for: "Heat the oil in a large heavy pot over medium-high heat. Season the ch..."
+FAIL  cape-malay-chicken-curry  [nutrition] no nutrition estimate
+FAIL  cape-malay-chicken-curry  [food-safety] raw poultry: needs a note starting "Food safety"
+FAIL  cape-malay-chicken-curry  [food-safety] raw poultry: no 75°C in the steps or notes
+FAIL  aloo-gobi  [nutrition] no nutrition estimate
+FAIL  keema-matar  [nutrition] no nutrition estimate
+FAIL  keema-matar  [food-safety] mince or sausage: needs a note starting "Food safety"
+FAIL  keema-matar  [food-safety] mince or sausage: no 75°C in the steps or notes
+warn  keema-matar  [doneness] step 5 gives a time but nothing to look for: "Add the peas and cook for 3 minutes. Stir in the garam masala and cori..."
+FAIL  shaking-beef  [nutrition] no nutrition estimate
+FAIL  shaking-beef  [food-safety] beef, lamb or veal cut: needs a note starting "Food safety"
+FAIL  shaking-beef  [food-safety] beef, lamb or veal cut: no internal temperature in °C in the steps or notes
+warn  shaking-beef  [time] about 270 min of resting, marinating or chilling isn't in the time (house policy pending)
+FAIL  tomato-egg-stir-fry  [nutrition] no nutrition estimate
+FAIL  tomato-egg-stir-fry  [food-safety] raw or soft egg: needs a note starting "Food safety"
+FAIL  steamed-fish-ginger-spring-onion  [nutrition] no nutrition estimate
+FAIL  steamed-fish-ginger-spring-onion  [food-safety] raw seafood: needs a note starting "Food safety"
+FAIL  ginger-pork-shogayaki  [nutrition] no nutrition estimate
+FAIL  ginger-pork-shogayaki  [food-safety] fresh pork: needs a note starting "Food safety"
+FAIL  ginger-pork-shogayaki  [food-safety] fresh pork: no 70°C (or 75°C) in the steps or notes
+FAIL  miso-glazed-eggplant  [nutrition] no nutrition estimate
+warn  miso-glazed-eggplant  [doneness] step 6 gives a time but nothing to look for: "Steam or blanch the bok choy for 2 minutes and toss with the sesame oi..."
+FAIL  soft-tofu-stew  [nutrition] no nutrition estimate
+FAIL  soft-tofu-stew  [food-safety] mince or sausage: needs a note starting "Food safety"
+FAIL  soft-tofu-stew  [food-safety] mince or sausage: no 75°C in the steps or notes
+warn  soft-tofu-stew  [doneness] step 3 gives a time but nothing to look for: "Add the soy sauce, fish sauce and dashi and bring to the boil. Add the..."
+warn  soft-tofu-stew  [doneness] step 4 gives a time but nothing to look for: "Spoon the tofu into the pot in large pieces and simmer gently for 3 mi..."
+FAIL  mee-goreng  [nutrition] no nutrition estimate
+FAIL  mee-goreng  [near-duplicate] title close to "Mee Goreng Mamak" (batch-03 (parked))
+FAIL  mee-goreng  [food-safety] raw poultry: needs a note starting "Food safety"
+FAIL  mee-goreng  [food-safety] raw poultry: no 75°C in the steps or notes
+FAIL  mee-goreng  [food-safety] raw or soft egg: needs a note starting "Food safety"
+FAIL  chicken-tinola  [nutrition] no nutrition estimate
+FAIL  chicken-tinola  [food-safety] raw poultry: needs a note starting "Food safety"
+warn  chicken-tinola  [doneness] step 3 gives a time but nothing to look for: "Pour in the water and bring to the boil, skimming off any foam. Turn d..."
+FAIL  pancit-bihon  [nutrition] no nutrition estimate
+FAIL  pancit-bihon  [food-safety] raw poultry: needs a note starting "Food safety"
+FAIL  pancit-bihon  [food-safety] raw poultry: no 75°C in the steps or notes
+warn  pancit-bihon  [doneness] step 3 gives a time but nothing to look for: "Add the onion and garlic and stir-fry for 2 minutes. Add the carrot an..."
+FAIL  chicken-tinga-tostadas  [nutrition] no nutrition estimate
+FAIL  chicken-tinga-tostadas  [food-safety] raw poultry: needs a note starting "Food safety"
+warn  chicken-tinga-tostadas  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+FAIL  arroz-con-pollo  [nutrition] no nutrition estimate
+FAIL  arroz-con-pollo  [food-safety] raw poultry: needs a note starting "Food safety"
+warn  arroz-con-pollo  [doneness] step 1 gives a time but nothing to look for: "Season the chicken with 1 tsp of the salt, the paprika and the cumin. ..."
+warn  arroz-con-pollo  [doneness] step 3 gives a time but nothing to look for: "Add the rice and stir for 1 minute to coat in the oil. Pour in the sto..."
+warn  arroz-con-pollo  [doneness] step 4 gives a time but nothing to look for: "Nestle the chicken into the rice. Cover tightly, turn the heat to low ..."
+FAIL  lomo-saltado  [nutrition] no nutrition estimate
+FAIL  lomo-saltado  [food-safety] beef, lamb or veal cut: needs a note starting "Food safety"
+FAIL  lomo-saltado  [food-safety] beef, lamb or veal cut: no internal temperature in °C in the steps or notes
+warn  lomo-saltado  [time] 45 min in all but the steps only account for about 4 min
+warn  lomo-saltado  [time] cookMinutes 30 but the steps name only about 4 min
+FAIL  toad-in-the-hole  [nutrition] no nutrition estimate
+FAIL  toad-in-the-hole  [food-safety] mince or sausage: needs a note starting "Food safety"
+FAIL  chicken-paprikash  [nutrition] no nutrition estimate
+FAIL  chicken-paprikash  [food-safety] raw poultry: needs a note starting "Food safety"
+FAIL  chicken-paprikash  [food-safety] raw poultry: no 75°C in the steps or notes
+warn  chicken-paprikash  [doneness] step 1 gives a time but nothing to look for: "Season the chicken with the salt. Heat the oil in a large deep frying ..."
+FAIL  chicken-paprikash  [doneness] step 5 cooks with no doneness cue: "Meanwhile, cook the noodles following the packet instructions. Drain a..."
+FAIL  nordic-fish-soup  [nutrition] no nutrition estimate
+FAIL  nordic-fish-soup  [food-safety] raw seafood: needs a note starting "Food safety"
+FAIL  lamb-pumpkin-feta-salad  [nutrition] no nutrition estimate
+FAIL  lamb-pumpkin-feta-salad  [food-safety] beef, lamb or veal cut: needs a note starting "Food safety"
+FAIL  philly-cheesesteak  [nutrition] no nutrition estimate
+warn  philly-cheesesteak  [alternative] "8 slices Swiss cheese (or provolone)": alternative "provolone" is not in the ingredient database
+FAIL  philly-cheesesteak  [food-safety] beef, lamb or veal cut: needs a note starting "Food safety"
+FAIL  philly-cheesesteak  [food-safety] beef, lamb or veal cut: no internal temperature in °C in the steps or notes
+FAIL  philly-cheesesteak  [doneness] step 5 cooks with no doneness cue: "Meanwhile, butter the cut sides of the rolls and toast them in a hot p..."
+
+Recipes failing, by check: nutrition 50, food-safety 36, doneness 6, hard-cheese 1, near-duplicate 1
+Recipes warned, by check: doneness 15, style 8, time 6, alternative 3
+PASS 0/50; 112 failures, 38 warnings

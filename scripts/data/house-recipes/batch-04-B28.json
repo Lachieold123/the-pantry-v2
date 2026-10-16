@@ -1,0 +1,1274 @@
+{
+  "about": "House recipes, batch 04 (slice B): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "chicken-65-chennai-fried-chicken",
+      "title": "Chicken 65 Chennai Fried Chicken",
+      "summary": "Crisp, fiery curry-leaf-free fried chicken bites from Chennai, tossed with green chilli and lemon.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "600g boneless chicken thigh, cut into 3cm pieces",
+            "1/4 cup plain yoghurt",
+            "2 tbsp cornflour",
+            "1 tbsp rice flour",
+            "1 tbsp grated ginger",
+            "4 cloves garlic, crushed",
+            "1 tbsp Kashmiri chilli powder",
+            "1 tsp garam masala",
+            "1/2 tsp salt",
+            "4 tbsp neutral oil",
+            "3 green chillies, slit",
+            "1 lemon, cut into wedges"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the chicken with the yoghurt, cornflour, rice flour, ginger, garlic, chilli powder, garam masala and salt until coated.",
+        "Heat the oil in a wide frying pan over medium-high heat and fry the chicken in 2 batches for 6 minutes each, turning, until deep red-gold and crisp.",
+        "Drop the green chillies into the pan for 30 seconds until blistered.",
+        "Toss the chicken with the chillies and serve hot with lemon wedges."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches at least 75°C at the thickest part. Refrigerate leftovers within 1 hour.",
+        "Plus 30 minutes marinating."
+      ],
+      "nutrition": {
+        "kcal": 368,
+        "proteinG": 30,
+        "carbsG": 12,
+        "fatG": 22,
+        "fibreG": 1,
+        "sodiumMg": 850
+      }
+    },
+    {
+      "id": "malai-tikka-creamy-chicken-skewers",
+      "title": "Malai Tikka Creamy Chicken Skewers",
+      "summary": "Mild, creamy chicken tikka scented with cardamom and white pepper, roasted until lightly charred.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "700g chicken thigh fillets, cut into 4cm pieces",
+            "1/4 cup thick cream",
+            "1/4 cup plain yoghurt",
+            "1 tbsp grated ginger",
+            "4 cloves garlic, crushed",
+            "1/2 tsp ground cardamom",
+            "1 tsp white pepper",
+            "1 tsp salt",
+            "1 tbsp lemon juice",
+            "1 tbsp ghee",
+            "4 naan breads",
+            "1 red onion, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the chicken with the cream, yoghurt, ginger, garlic, cardamom, pepper, salt and lemon juice.",
+        "Thread onto skewers and brush with the ghee.",
+        "Roast at 230C on a rack over a tray for 18 minutes, turning once, until lightly charred at the edges.",
+        "Warm the naan and serve with the tikka and sliced onion."
+      ],
+      "notes": [
+        "Food safety: chicken must reach at least 75°C at the thickest part. Refrigerate leftovers within 1 hour.",
+        "Plus 1 hour marinating."
+      ],
+      "nutrition": {
+        "kcal": 566,
+        "proteinG": 38,
+        "carbsG": 44,
+        "fatG": 26,
+        "fibreG": 2,
+        "sodiumMg": 1050
+      }
+    },
+    {
+      "id": "hariyali-chicken-tikka-green-herb-skewers",
+      "title": "Hariyali Chicken Tikka Green Herb Skewers",
+      "summary": "Chicken tikka in a bright mint, coriander and spinach marinade, grilled until fragrant and juicy.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g chicken thigh fillets, cut into 4cm pieces",
+            "1 cup coriander leaves",
+            "1 cup mint leaves",
+            "1 cup baby spinach",
+            "3 green chillies",
+            "1/2 cup plain yoghurt",
+            "1 tbsp grated ginger",
+            "4 cloves garlic",
+            "1 tbsp lemon juice",
+            "1 tsp garam masala",
+            "1 tsp salt",
+            "1 tbsp neutral oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the coriander, mint, spinach, chillies, yoghurt, ginger, garlic, lemon juice, garam masala and salt to a smooth paste.",
+        "Coat the chicken in the paste and thread onto skewers.",
+        "Brush with the oil and grill or roast at 230C for 18 minutes, turning once, until charred in spots.",
+        "Serve hot with extra lemon."
+      ],
+      "notes": [
+        "Food safety: chicken must reach at least 75°C at the thickest part. Refrigerate leftovers within 1 hour.",
+        "Plus 1 hour marinating."
+      ],
+      "nutrition": {
+        "kcal": 333,
+        "proteinG": 36,
+        "carbsG": 8,
+        "fatG": 17,
+        "fibreG": 2,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "reshmi-kebab-silky-cashew-chicken",
+      "title": "Reshmi Kebab Silky Cashew Chicken",
+      "summary": "Silky, golden chicken kebabs in a cashew and cream marinade, grilled and served with warm naan.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "700g chicken thigh fillets, cut into 4cm pieces",
+            "1/4 cup raw cashews, soaked",
+            "1/4 cup thick cream",
+            "1/4 cup plain yoghurt",
+            "1 tbsp grated ginger",
+            "3 cloves garlic",
+            "1 tsp ground cumin",
+            "1/2 tsp ground cardamom",
+            "1 tsp salt",
+            "1 tbsp butter, melted",
+            "4 naan breads",
+            "1 lemon, cut into wedges"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the soaked cashews with the cream, yoghurt, ginger, garlic, cumin, cardamom and salt until smooth.",
+        "Coat the chicken in the paste and thread onto skewers.",
+        "Roast at 230C for 18 minutes, turning once and brushing with the butter, until golden and cooked through.",
+        "Warm the naan and serve with the kebabs and lemon."
+      ],
+      "notes": [
+        "Food safety: chicken must reach at least 75°C at the thickest part. Contains tree nuts. Refrigerate leftovers within 1 hour.",
+        "Plus 1 hour marinating."
+      ],
+      "nutrition": {
+        "kcal": 592,
+        "proteinG": 38,
+        "carbsG": 46,
+        "fatG": 28,
+        "fibreG": 2,
+        "sodiumMg": 1050
+      }
+    },
+    {
+      "id": "galouti-kebab-lucknow-melting-lamb-patties",
+      "title": "Galouti Kebab Lucknow Melting Lamb Patties",
+      "summary": "Lucknowi lamb patties so tender they melt, spiced with fried onion and cardamom and pan-fried in ghee.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 30,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "600g lamb mince",
+            "2 onions, thinly sliced",
+            "3 tbsp ghee, divided",
+            "1 tbsp grated ginger",
+            "4 cloves garlic, crushed",
+            "1 tsp ground cardamom",
+            "1 tsp ground cumin",
+            "1 tsp garam masala",
+            "2 tbsp chickpea flour, toasted",
+            "1 tsp salt",
+            "4 flatbreads",
+            "1/4 cup mint chutney"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onions in 1 tbsp ghee for 12 minutes until deep brown and crisp, then crush them.",
+        "Mix the lamb with the onions, ginger, garlic, spices, toasted chickpea flour and salt, kneading for 3 minutes until very smooth.",
+        "Shape into 12 small flat patties about 1.5cm thick.",
+        "Pan-fry in the remaining ghee over medium heat for 4 minutes each side until browned and cooked through.",
+        "Serve on the warm flatbreads with the mint chutney."
+      ],
+      "notes": [
+        "Food safety: cook the patties right through to at least 75°C; mince carries bacteria throughout. Refrigerate leftovers within 1 hour.",
+        "Plus 30 minutes chilling."
+      ],
+      "nutrition": {
+        "kcal": 600,
+        "proteinG": 34,
+        "carbsG": 38,
+        "fatG": 34,
+        "fibreG": 3,
+        "sodiumMg": 850
+      }
+    },
+    {
+      "id": "amritsari-machhi-punjabi-fried-fish",
+      "title": "Amritsari Machhi Punjabi Fried Fish",
+      "summary": "Chickpea-flour-coated fish pieces spiced with ajwain and chilli, shallow-fried until crisp, a Punjabi street classic.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g firm white fish fillets, cut into 4cm pieces",
+            "1/2 cup chickpea flour",
+            "1 tsp ajwain seeds",
+            "1 tbsp ginger, grated",
+            "3 cloves garlic, crushed",
+            "1 tsp chilli powder",
+            "1 tsp salt",
+            "1 tbsp lemon juice",
+            "4 tbsp neutral oil",
+            "1 red onion, sliced",
+            "1/4 cup mint chutney"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the fish with the ginger, garlic, chilli powder, salt and lemon juice.",
+        "Mix the chickpea flour with the ajwain and enough water for a thick batter, then coat the fish.",
+        "Heat the oil in a wide pan over medium-high heat and fry the fish in batches for 3 minutes each side until crisp and golden.",
+        "Drain on paper and serve with the onion and mint chutney."
+      ],
+      "notes": [
+        "Food safety: cook the fish until opaque and flaking, at least 63°C. Contains fish. Refrigerate leftovers within 1 hour.",
+        "Plus 20 minutes marinating."
+      ],
+      "nutrition": {
+        "kcal": 368,
+        "proteinG": 31,
+        "carbsG": 14,
+        "fatG": 20,
+        "fibreG": 4,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "meen-varuthathu-kerala-fried-fish-with-rice",
+      "title": "Meen Varuthathu Kerala Fried Fish with Rice",
+      "summary": "Kingfish steaks rubbed with chilli, turmeric and pepper and shallow-fried in coconut oil, served with rice.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 kingfish steaks, about 160g each",
+            "1 tbsp Kashmiri chilli powder",
+            "1/2 tsp ground turmeric",
+            "1 tsp black pepper",
+            "1 tbsp ginger, grated",
+            "4 cloves garlic, crushed",
+            "1 tbsp lemon juice",
+            "1 tsp salt",
+            "4 tbsp coconut oil",
+            "1 cup basmati rice",
+            "1 lime, cut into wedges"
+          ]
+        }
+      ],
+      "steps": [
+        "Rub the fish with the chilli powder, turmeric, pepper, ginger, garlic, lemon juice and salt.",
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Heat the coconut oil in a pan over medium heat and fry the steaks for 4 minutes each side until crisp and opaque.",
+        "Serve with the rice and lime."
+      ],
+      "notes": [
+        "Food safety: cook the fish until opaque and flaking, at least 63°C. Contains fish. Refrigerate leftovers within 1 hour.",
+        "Plus 20 minutes marinating."
+      ],
+      "nutrition": {
+        "kcal": 490,
+        "proteinG": 33,
+        "carbsG": 48,
+        "fatG": 18,
+        "fibreG": 2,
+        "sodiumMg": 850
+      }
+    },
+    {
+      "id": "kolkata-mutton-biryani-with-potato-and-egg",
+      "title": "Kolkata Mutton Biryani with Potato and Egg",
+      "summary": "Mild, fragrant biryani with tender lamb, golden potato and boiled egg, a Calcutta speciality.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 30,
+      "cookMinutes": 75,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g lamb shoulder, cut into 4cm pieces",
+            "400g potatoes, halved",
+            "4 hard-boiled eggs, peeled",
+            "1 1/2 cups basmati rice",
+            "3 tbsp ghee",
+            "1/2 cup plain yoghurt",
+            "2 onions, sliced",
+            "1 tbsp grated ginger",
+            "4 cloves garlic, crushed",
+            "1 tsp garam masala",
+            "1/2 tsp saffron threads",
+            "1/4 cup milk, warmed",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the potatoes in 1 tbsp ghee for 8 minutes until golden, then lift out. Fry the onions in the same pot for 10 minutes until golden.",
+        "Add the lamb, yoghurt, ginger, garlic, garam masala and salt and cook covered for 40 minutes on low heat until the lamb is tender.",
+        "Boil the rice in salted water for 6 minutes until three-quarters cooked, then drain.",
+        "Layer the rice over the lamb, tucking the potatoes and eggs in, and drizzle with the saffron milk and remaining ghee.",
+        "Cover tightly and cook on the lowest heat for 20 minutes until the rice is tender and fluffy."
+      ],
+      "notes": [
+        "Food safety: lamb must reach at least 71°C; simmered until tender it will. Boil the eggs until the yolk is firm. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 692,
+        "proteinG": 38,
+        "carbsG": 70,
+        "fatG": 28,
+        "fibreG": 4,
+        "sodiumMg": 1000
+      }
+    },
+    {
+      "id": "thalassery-chicken-biryani-malabar",
+      "title": "Thalassery Chicken Biryani Malabar",
+      "summary": "Malabar biryani of masala chicken under short-grain khaima rice, with fried onion, cashews and raisins.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 30,
+      "cookMinutes": 60,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g chicken thigh, bone in",
+            "1 1/2 cups short-grain rice",
+            "3 tbsp ghee",
+            "3 onions, thinly sliced",
+            "1 tbsp grated ginger",
+            "5 cloves garlic, crushed",
+            "2 tomatoes, chopped",
+            "2 green chillies, slit",
+            "1 tsp garam masala",
+            "1/4 tsp ground turmeric",
+            "1/4 cup cashews",
+            "2 tbsp sultanas",
+            "1 tsp salt",
+            "3 cups chicken stock"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the cashews and sultanas in 1 tbsp ghee for 1 minute until golden, then lift out. Fry two-thirds of the onion in the same pot for 12 minutes until deep gold.",
+        "Add the ginger, garlic, tomatoes, chillies, spices and salt and cook for 8 minutes into a thick masala.",
+        "Add the chicken, cover and cook for 20 minutes on low heat until tender; lift out.",
+        "Stir the rice into the masala with the stock, bring to the boil, cover and cook on low for 15 minutes until the rice is tender and fluffy.",
+        "Layer the chicken over the rice, scatter with the cashews, sultanas and remaining onion, and rest covered for 10 minutes."
+      ],
+      "notes": [
+        "Food safety: chicken must reach at least 75°C at the thickest part. Contains tree nuts. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 682,
+        "proteinG": 38,
+        "carbsG": 72,
+        "fatG": 26,
+        "fibreG": 4,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "kacchi-gosht-biryani-bangladeshi-raw-marinated-lamb",
+      "title": "Kacchi Gosht Biryani Bangladeshi Raw-Marinated Lamb",
+      "summary": "Lamb marinated in yoghurt and spices, layered raw with part-cooked rice and sealed to steam in its own juices.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 30,
+      "cookMinutes": 100,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g lamb shoulder, bone in",
+            "1 cup plain yoghurt",
+            "1 tbsp grated ginger",
+            "5 cloves garlic, crushed",
+            "1 tbsp chilli powder",
+            "1 tsp garam masala",
+            "2 onions, sliced and fried until golden",
+            "400g potatoes, halved",
+            "1 1/2 cups basmati rice",
+            "3 tbsp ghee",
+            "1 tsp salt",
+            "1/4 cup milk"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the lamb with the yoghurt, ginger, garlic, chilli powder, garam masala, half the onions and the salt.",
+        "Boil the rice in salted water for 6 minutes until three-quarters cooked, then drain.",
+        "In a heavy pot, layer the potatoes, then the lamb and its marinade, then the rice, ghee, remaining onion and milk.",
+        "Seal the lid with foil or a tight cloth and cook on high for 5 minutes, then on the lowest heat for 70 minutes, until the lamb is tender.",
+        "Rest for 10 minutes before opening and serve."
+      ],
+      "notes": [
+        "Food safety: lamb must reach at least 71°C and be fully tender before serving. Refrigerate leftovers within 1 hour.",
+        "Plus 4 hours marinating."
+      ],
+      "nutrition": {
+        "kcal": 744,
+        "proteinG": 40,
+        "carbsG": 68,
+        "fatG": 34,
+        "fibreG": 3,
+        "sodiumMg": 950
+      }
+    },
+    {
+      "id": "ambur-star-chicken-biryani",
+      "title": "Ambur Star Chicken Biryani",
+      "summary": "Tamil Nadu biryani with a green chilli, mint and tomato masala and plenty of fragrant basmati.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 30,
+      "cookMinutes": 55,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g chicken thigh, bone in",
+            "1 1/2 cups basmati rice",
+            "3 tbsp neutral oil",
+            "2 onions, sliced",
+            "3 tomatoes, chopped",
+            "1 tbsp grated ginger",
+            "5 cloves garlic, crushed",
+            "4 green chillies, slit",
+            "1 cup mint leaves",
+            "1/2 cup plain yoghurt",
+            "1 tbsp Kashmiri chilli powder",
+            "1 tsp garam masala",
+            "1 tsp salt",
+            "3 cups water"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onions in the oil for 10 minutes until golden.",
+        "Add the ginger, garlic, chillies, mint and tomatoes and cook for 8 minutes until the oil separates.",
+        "Add the chicken, yoghurt, chilli powder, garam masala and salt and cook for 10 minutes.",
+        "Stir in the water and rice, bring to the boil, then cover and cook on the lowest heat for 20 minutes until the rice is tender and fluffy.",
+        "Rest covered for 10 minutes, then fluff and serve."
+      ],
+      "notes": [
+        "Food safety: chicken must reach at least 75°C at the thickest part. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 638,
+        "proteinG": 38,
+        "carbsG": 70,
+        "fatG": 22,
+        "fibreG": 4,
+        "sodiumMg": 950
+      }
+    },
+    {
+      "id": "bihari-kebab-smoky-beef-strips",
+      "title": "Bihari Kebab Smoky Beef Strips",
+      "summary": "Thin beef strips tenderised in yoghurt and lemon and grilled hot with a smoky, spicy crust.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "700g beef sirloin, cut into thin strips",
+            "1/2 cup plain yoghurt",
+            "2 tbsp lemon juice",
+            "1 tbsp grated ginger",
+            "4 cloves garlic, crushed",
+            "1 tbsp chilli powder",
+            "1 tsp ground cumin",
+            "1 tsp garam masala",
+            "1 tsp salt",
+            "1 tbsp neutral oil",
+            "4 naan breads",
+            "1 red onion, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the beef with the yoghurt, lemon juice, ginger, garlic, spices and salt.",
+        "Thread the strips onto skewers in loose folds and brush with the oil.",
+        "Grill over high heat for 3 to 4 minutes each side, until charred at the edges and cooked through.",
+        "Warm the naan and serve with the kebabs and onion."
+      ],
+      "notes": [
+        "Food safety: beef strips must reach at least 71°C. Refrigerate leftovers within 1 hour.",
+        "Plus 2 hours marinating."
+      ],
+      "nutrition": {
+        "kcal": 512,
+        "proteinG": 42,
+        "carbsG": 40,
+        "fatG": 20,
+        "fibreG": 2,
+        "sodiumMg": 950
+      }
+    },
+    {
+      "id": "lahori-fried-fish",
+      "title": "Lahori Fried Fish",
+      "summary": "Spiced fish pieces in a thin chickpea batter, shallow-fried and served with lemon and a crunchy salad.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g firm white fish fillets, cut into 4cm pieces",
+            "1/2 cup chickpea flour",
+            "1 tsp ground coriander",
+            "1 tsp ground cumin",
+            "1 tsp chilli powder",
+            "1 tsp salt",
+            "1 tbsp lemon juice",
+            "4 tbsp neutral oil",
+            "2 cups shredded cabbage",
+            "1 tomato, sliced",
+            "1 lemon, cut into wedges"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the chickpea flour, spices, salt and lemon juice with enough water for a thick batter.",
+        "Coat the fish pieces in the batter.",
+        "Heat the oil in a wide pan over medium-high heat and fry the fish for 3 minutes each side until golden and crisp.",
+        "Drain on paper and serve with the cabbage, tomato and lemon."
+      ],
+      "notes": [
+        "Food safety: cook the fish until opaque and flaking, at least 63°C. Contains fish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 364,
+        "proteinG": 30,
+        "carbsG": 14,
+        "fatG": 20,
+        "fibreG": 4,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "tabaka-uzbek-flattened-chicken-with-garlic",
+      "title": "Tabaka Uzbek Flattened Chicken with Garlic",
+      "summary": "Whole spatchcocked chicken pressed flat, seared and roasted until crisp, with garlic and potatoes.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 whole chicken, about 1.4kg, spatchcocked",
+            "600g potatoes, quartered",
+            "2 tbsp butter, melted",
+            "6 cloves garlic, crushed",
+            "1 tsp ground coriander",
+            "1 tsp paprika",
+            "1 tsp salt",
+            "1 tsp black pepper",
+            "1 tbsp neutral oil",
+            "1/2 cup plain yoghurt",
+            "1/2 cup dill, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Rub the chicken with the butter, garlic, coriander, paprika, salt and pepper.",
+        "Sear skin-side down in the oil in a large oven-safe pan for 8 minutes until golden, with a heavy pan pressed on top.",
+        "Turn the chicken, add the potatoes around it and roast at 220C for 35 minutes until the skin is crisp and the potatoes are tender.",
+        "Rest for 10 minutes, then carve.",
+        "Stir the dill into the yoghurt and serve alongside."
+      ],
+      "notes": [
+        "Food safety: chicken must reach at least 75°C at the thickest part of the thigh. Wash hands and board after raw chicken. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 768,
+        "proteinG": 57,
+        "carbsG": 31,
+        "fatG": 46,
+        "fibreG": 1,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "samarkand-lamb-shashlik-with-onion-salad",
+      "title": "Samarkand Lamb Shashlik with Onion Salad",
+      "summary": "Cubes of lamb leg marinated in onion and vinegar, grilled hot and served with flatbread and a tomato onion salad.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g lamb leg, cut into 3cm cubes",
+            "2 onions, grated",
+            "2 tbsp white vinegar",
+            "1 tsp ground cumin",
+            "1 tsp salt",
+            "1 tsp black pepper",
+            "2 tbsp neutral oil",
+            "4 flatbreads",
+            "3 tomatoes, sliced",
+            "1 red onion, thinly sliced",
+            "1/2 cup coriander leaves"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the lamb with the grated onions, vinegar, cumin, salt, pepper and oil.",
+        "Thread onto skewers and grill over high heat for 12 minutes, turning, until browned and cooked through.",
+        "Toss the tomatoes, red onion and coriander together.",
+        "Serve the lamb on the flatbread with the salad."
+      ],
+      "notes": [
+        "Food safety: lamb must reach at least 71°C; cut one cube to check. Refrigerate leftovers within 1 hour.",
+        "Plus 2 hours marinating."
+      ],
+      "nutrition": {
+        "kcal": 516,
+        "proteinG": 40,
+        "carbsG": 38,
+        "fatG": 22,
+        "fibreG": 3,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "mutton-sukka-dry-pepper-lamb",
+      "title": "Mutton Sukka Dry Pepper Lamb",
+      "summary": "Tender lamb slow-cooked until dry and coated in a toasted black pepper, fennel and coriander masala.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 75,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g lamb shoulder, cut into 3cm pieces",
+            "2 tbsp neutral oil",
+            "2 onions, finely chopped",
+            "3 tomatoes, chopped",
+            "1 tbsp grated ginger",
+            "5 cloves garlic, crushed",
+            "1 tbsp coriander seeds",
+            "1 tbsp black peppercorns",
+            "1 tsp fennel seeds",
+            "1/4 cup desiccated coconut",
+            "1/2 tsp ground turmeric",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the coriander, peppercorns and fennel in a dry pan for 2 minutes, then grind with the coconut.",
+        "Fry the onions in the oil for 10 minutes until golden, then add the ginger, garlic and tomatoes and cook for 8 minutes into a paste.",
+        "Add the lamb, turmeric, salt and ground masala with 1 cup of water, cover and cook on low for 50 minutes until the lamb is tender.",
+        "Uncover and stir over high heat for 8 minutes until the liquid has gone and the meat is coated and dark."
+      ],
+      "notes": [
+        "Food safety: lamb must reach at least 71°C and be tender before serving. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 452,
+        "proteinG": 36,
+        "carbsG": 12,
+        "fatG": 28,
+        "fibreG": 4,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "kozhi-varuval-kerala-pepper-fried-chicken",
+      "title": "Kozhi Varuval Kerala Pepper Fried Chicken",
+      "summary": "Chicken fried with plenty of shallot, ginger and black pepper until dry and glossy, served with rice.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g chicken thigh, bone in",
+            "4 tbsp coconut oil",
+            "3 onions, thinly sliced",
+            "1 tbsp grated ginger",
+            "5 cloves garlic, crushed",
+            "1 tbsp black pepper, crushed",
+            "1 tbsp coriander seeds, crushed",
+            "1/2 tsp ground turmeric",
+            "1 tsp salt",
+            "1 tsp garam masala",
+            "1 cup basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Rub the chicken with the turmeric, salt and half the pepper.",
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Heat the oil in a wide pan over medium heat, fry the onions for 10 minutes until golden, then add the ginger, garlic and coriander.",
+        "Add the chicken, cover and cook for 15 minutes, then uncover and fry for 8 minutes until dry and browned.",
+        "Stir through the remaining pepper and garam masala and serve with the rice."
+      ],
+      "notes": [
+        "Food safety: chicken must reach at least 75°C at the thickest part. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 526,
+        "proteinG": 36,
+        "carbsG": 40,
+        "fatG": 24,
+        "fibreG": 3,
+        "sodiumMg": 850
+      }
+    },
+    {
+      "id": "prawn-balchao-goan-pickled-prawns",
+      "title": "Prawn Balchao Goan Pickled Prawns",
+      "summary": "Fried prawns folded through a tangy, fiery Goan vinegar masala and served with rice.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g raw king prawns, peeled",
+            "4 tbsp neutral oil",
+            "2 onions, finely chopped",
+            "6 dried red chillies, soaked",
+            "1 tbsp ginger, grated",
+            "6 cloves garlic",
+            "1/4 cup white vinegar",
+            "1 tsp cumin seeds",
+            "1 tbsp sugar",
+            "1 tsp salt",
+            "1 cup basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the soaked chillies, garlic, ginger, cumin and vinegar to a paste.",
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Fry the onions in 2 tbsp oil for 8 minutes until golden, add the paste, sugar and salt and cook for 5 minutes until the oil rises.",
+        "In a separate pan, fry the prawns in the remaining oil for 3 minutes until pink and opaque.",
+        "Fold the prawns into the masala for 2 minutes and serve with the rice."
+      ],
+      "notes": [
+        "Food safety: cook the prawns until pink and opaque, at least 63°C. Contains shellfish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 444,
+        "proteinG": 30,
+        "carbsG": 48,
+        "fatG": 14,
+        "fibreG": 3,
+        "sodiumMg": 1000
+      }
+    },
+    {
+      "id": "tawa-machhi-mumbai-pan-fried-spiced-fish",
+      "title": "Tawa Machhi Mumbai Pan-Fried Spiced Fish",
+      "summary": "Fish fillets in a green chilli, coriander and lemon rub, seared on a flat pan and served with warm rotis.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g firm white fish fillets",
+            "1 cup coriander leaves",
+            "3 green chillies",
+            "1 tbsp grated ginger",
+            "3 cloves garlic",
+            "1 tbsp lemon juice",
+            "1/2 tsp ground turmeric",
+            "1 tsp salt",
+            "3 tbsp neutral oil",
+            "4 rotis",
+            "1 red onion, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the coriander, chillies, ginger, garlic, lemon juice, turmeric and salt into a thick paste.",
+        "Coat the fish in the paste.",
+        "Heat the oil in a wide pan over medium-high heat and sear the fish for 4 minutes each side until opaque and golden.",
+        "Warm the rotis and serve with the fish and onion."
+      ],
+      "notes": [
+        "Food safety: cook the fish until opaque and flaking, at least 63°C. Contains fish. Refrigerate leftovers within 1 hour.",
+        "Plus 15 minutes marinating."
+      ],
+      "nutrition": {
+        "kcal": 385,
+        "proteinG": 35,
+        "carbsG": 26,
+        "fatG": 15,
+        "fibreG": 3,
+        "sodiumMg": 850
+      }
+    },
+    {
+      "id": "kala-bhuna-chittagong-black-beef",
+      "title": "Kala Bhuna Chittagong Black Beef",
+      "summary": "Chittagong beef slow-cooked until dark, dry and intense with mustard oil, onion and roasted spices.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 120,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g beef chuck, cut into 4cm cubes",
+            "3 tbsp mustard oil",
+            "3 onions, thinly sliced",
+            "1 tbsp grated ginger",
+            "5 cloves garlic, crushed",
+            "1 tbsp chilli powder",
+            "1 tsp ground cumin",
+            "1 tsp ground coriander",
+            "2 bay leaves",
+            "1 tsp garam masala",
+            "1 tsp salt",
+            "1 cup basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the mustard oil in a heavy pot until it just smokes, then lower the heat and fry the onions for 12 minutes until dark brown.",
+        "Add the ginger, garlic, chilli, cumin, coriander, bay and salt and cook for 3 minutes.",
+        "Add the beef and 1/2 cup water, cover and cook on low for 90 minutes until very tender, stirring now and then.",
+        "Uncover and stir over medium heat for 10 minutes until the sauce clings and is very dark.",
+        "Cook the rice until tender and fluffy, about 15 minutes, and serve with the beef finished with the garam masala."
+      ],
+      "notes": [
+        "Food safety: beef must reach at least 71°C and be tender before serving. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 618,
+        "proteinG": 40,
+        "carbsG": 50,
+        "fatG": 28,
+        "fibreG": 3,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "murgh-kali-mirch-black-pepper-chicken",
+      "title": "Murgh Kali Mirch Black Pepper Chicken",
+      "summary": "Creamy yoghurt-marinated chicken with a heavy hand of freshly cracked black pepper, served with rice.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g boneless chicken thigh, cut into pieces",
+            "1/2 cup plain yoghurt",
+            "1 tbsp black peppercorns, crushed",
+            "1 tbsp grated ginger",
+            "4 cloves garlic, crushed",
+            "2 tbsp ghee",
+            "1 onion, finely chopped",
+            "1/4 cup thick cream",
+            "1 tsp salt",
+            "1 cup basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the chicken with the yoghurt, half the pepper, ginger, garlic and salt.",
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Fry the onion in the ghee for 8 minutes until golden, add the chicken and cook covered for 15 minutes on medium heat.",
+        "Stir in the cream and remaining pepper and cook for 3 minutes until glossy, then serve over the rice."
+      ],
+      "notes": [
+        "Food safety: chicken must reach at least 75°C at the thickest part. Refrigerate leftovers within 1 hour.",
+        "Plus 30 minutes marinating."
+      ],
+      "nutrition": {
+        "kcal": 540,
+        "proteinG": 38,
+        "carbsG": 42,
+        "fatG": 24,
+        "fibreG": 2,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "tandoori-gobi-roasted-spiced-cauliflower",
+      "title": "Tandoori Gobi Roasted Spiced Cauliflower",
+      "summary": "Whole florets coated in a chickpea flour and yoghurt marinade, roasted until charred, with chapatis and mint yoghurt.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 large cauliflower, cut into florets",
+            "1/2 cup plain yoghurt",
+            "2 tbsp chickpea flour",
+            "1 tbsp grated ginger",
+            "3 cloves garlic, crushed",
+            "1 tbsp Kashmiri chilli powder",
+            "1 tsp garam masala",
+            "1 tsp salt",
+            "2 tbsp neutral oil",
+            "4 chapatis",
+            "1/2 cup mint leaves",
+            "1 lemon, cut into wedges"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the yoghurt, chickpea flour, ginger, garlic, chilli powder, garam masala, salt and oil.",
+        "Coat the cauliflower in the mix, turning well.",
+        "Roast on a tray at 230C for 25 minutes, turning once, until charred at the tips and tender.",
+        "Stir the mint through a little extra yoghurt.",
+        "Serve the cauliflower with the chapatis, mint yoghurt and lemon."
+      ],
+      "notes": [
+        "Plus 30 minutes marinating."
+      ],
+      "nutrition": {
+        "kcal": 260,
+        "proteinG": 8,
+        "carbsG": 33,
+        "fatG": 10,
+        "fibreG": 3,
+        "sodiumMg": 750
+      }
+    },
+    {
+      "id": "kathi-roll-kolkata-chicken-and-egg-roll",
+      "title": "Kathi Roll Kolkata Chicken and Egg Roll",
+      "summary": "Spiced chicken and egg wrapped in a flaky paratha with onion, lime and chutney, a Kolkata street classic.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g chicken thigh fillets, thinly sliced",
+            "1 tbsp grated ginger",
+            "3 cloves garlic, crushed",
+            "1 tsp garam masala",
+            "1/2 tsp chilli powder",
+            "1 tsp salt",
+            "3 tbsp neutral oil",
+            "4 eggs, beaten",
+            "4 parathas",
+            "1 red onion, thinly sliced",
+            "1 lime, cut into wedges",
+            "1/4 cup mint chutney"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the chicken with the ginger, garlic, garam masala, chilli powder and salt.",
+        "Fry in 2 tbsp oil over high heat for 6 minutes until browned and cooked through.",
+        "Fry the parathas in the remaining oil, spreading one side with beaten egg and cooking for 1 minute until the egg sets firm.",
+        "Fill with the chicken, onion, chutney and a squeeze of lime, and roll up tightly."
+      ],
+      "notes": [
+        "Food safety: chicken must reach at least 75°C at the thickest part and the egg be fully set. Refrigerate leftovers within 1 hour.",
+        "Plus 15 minutes marinating."
+      ],
+      "nutrition": {
+        "kcal": 370,
+        "proteinG": 23,
+        "carbsG": 29,
+        "fatG": 18,
+        "fibreG": 2,
+        "sodiumMg": 1000
+      }
+    },
+    {
+      "id": "ping-gai-lao-grilled-lemongrass-chicken",
+      "title": "Ping Gai Lao Grilled Lemongrass Chicken",
+      "summary": "Lao-style grilled chicken thighs marinated in lemongrass, garlic and coriander root, served with sticky rice.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g chicken thigh, bone in",
+            "2 stalks lemongrass, finely chopped",
+            "6 cloves garlic",
+            "3 coriander roots",
+            "2 tbsp fish sauce",
+            "1 tbsp oyster sauce",
+            "1 tbsp sugar",
+            "1 tsp black pepper",
+            "1 tbsp neutral oil",
+            "1 cup glutinous rice",
+            "1/4 cup sweet chilli sauce"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the lemongrass, garlic, coriander roots, fish sauce, oyster sauce, sugar and pepper into a paste, and coat the chicken.",
+        "Steam the rice, soaked beforehand, for 25 minutes until sticky and tender.",
+        "Brush the chicken with the oil and grill or roast at 220C for 25 minutes, turning once, until deeply golden.",
+        "Serve with the sticky rice and sweet chilli sauce."
+      ],
+      "notes": [
+        "Food safety: chicken must reach at least 75°C at the thickest part. Refrigerate leftovers within 1 hour.",
+        "Plus 1 hour marinating and 4 hours soaking the rice."
+      ],
+      "nutrition": {
+        "kcal": 564,
+        "proteinG": 38,
+        "carbsG": 48,
+        "fatG": 24,
+        "fibreG": 2,
+        "sodiumMg": 1000
+      }
+    }
+  ]
+}

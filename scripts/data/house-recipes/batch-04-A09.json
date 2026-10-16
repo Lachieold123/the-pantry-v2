@@ -1,0 +1,1910 @@
+{
+ "about": "House recipes, batch 04 (helper sA): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+ "recipes": [
+  {
+   "id": "pork-belly-gyro-plates-with-lemon-potatoes",
+   "title": "Pork Belly Gyro Plates with Lemon Potatoes",
+   "summary": "Crisp roast pork belly slices with lemon potatoes, tomato, red onion and garlic yoghurt.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 25,
+   "cookMinutes": 140,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.2kg pork belly, skin on",
+      "2 tbsp dried oregano",
+      "4 garlic, crushed",
+      "1/4 cup olive oil",
+      "2 lemon, juiced",
+      "800g potato, cut into wedges",
+      "1 cup greek yoghurt",
+      "2 tomato, sliced",
+      "1 red onion, sliced thinly"
+     ]
+    }
+   ],
+   "steps": [
+    "Rub the pork with half the oregano, half the garlic, 2 tablespoons of oil and salt. Dry the skin well and leave uncovered in the fridge for 4 hours.",
+    "Heat the oven to 220°C (200°C fan) and roast the pork for 30 minutes, until the skin blisters, then reduce to 160°C (140°C fan) for 1 hour 30 minutes, until tender and 85°C inside.",
+    "Toss the potato with the lemon juice, remaining oil and oregano and roast alongside for the last 50 minutes, until golden.",
+    "Stir the remaining garlic into the yoghurt, slice the pork and serve with the potatoes, tomato and onion."
+   ],
+   "notes": [
+    "Food safety: pork must reach at least 70°C; belly is tender at 85°C. Rest for 15 minutes before slicing.",
+    "Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 1019,
+    "proteinG": 53,
+    "carbsG": 31,
+    "fatG": 75,
+    "fibreG": 4,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "baked-prawns-with-tomato-chilli-and-feta",
+   "title": "Baked Prawns with Tomato, Chilli and Feta",
+   "summary": "Prawns baked in a tomato and ouzo-free herb sauce under melted feta.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g prawn, peeled",
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "3 garlic, crushed",
+      "400g tinned tomatoes",
+      "1/2 tsp chilli flakes",
+      "1 tsp dried oregano",
+      "150g feta, crumbled",
+      "2 tbsp parsley, chopped",
+      "4 slices crusty bread"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the onion in the oil for 5 minutes, until soft, then add the garlic and chilli for 1 minute.",
+    "Add the tomatoes and oregano and simmer for 10 minutes, until thick.",
+    "Stir in the prawns, top with feta and bake at 200°C (180°C fan) for 8 minutes, until the prawns are pink and opaque and the feta softens.",
+    "Scatter with parsley and serve with the bread."
+   ],
+   "notes": [
+    "Food safety: prawns are cooked when pink, curled and opaque all the way through."
+   ],
+   "nutrition": {
+    "kcal": 420,
+    "proteinG": 34,
+    "carbsG": 26,
+    "fatG": 20,
+    "fibreG": 3,
+    "sodiumMg": 880
+   }
+  },
+  {
+   "id": "greek-baked-giant-beans-with-spinach-and-eggs",
+   "title": "Greek Baked Giant Beans with Spinach and Eggs",
+   "summary": "Giant beans baked in tomato with spinach and eggs, with feta on top.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "breakfast",
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 x 400g tinned cannellini beans, drained",
+      "400g tinned tomatoes",
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "3 garlic, crushed",
+      "200g baby spinach",
+      "1 tsp dried oregano",
+      "4 egg",
+      "1/2 cup feta, crumbled"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the onion in the oil for 5 minutes, then add the garlic and oregano.",
+    "Add the tomatoes and beans and simmer for 10 minutes, until thick, then stir through the spinach until wilted.",
+    "Make four wells, crack in the eggs, cover and cook for 5 minutes, until the whites are set.",
+    "Scatter with feta and serve from the pan."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are set; serve firm yolks to young children, older people or anyone pregnant.",
+    "Vegetarian. Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 336,
+    "proteinG": 20,
+    "carbsG": 28,
+    "fatG": 16,
+    "fibreG": 10,
+    "sodiumMg": 560
+   }
+  },
+  {
+   "id": "chicken-souvlaki-pita-wraps-with-tzatziki",
+   "title": "Chicken Souvlaki Pita Wraps with Tzatziki",
+   "summary": "Lemon-oregano chicken skewers in warm pita with tzatziki, tomato and onion.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "700g chicken thigh, cubed",
+      "3 tbsp olive oil",
+      "2 lemon, juiced",
+      "3 garlic, crushed",
+      "1 tbsp dried oregano",
+      "4 pita",
+      "1/2 cup tzatziki",
+      "2 tomato, sliced",
+      "1 red onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the oil, lemon juice, garlic and oregano, add the chicken and marinate for 1 hour.",
+    "Thread onto skewers and grill for 12 minutes, turning, until charred and the centre reaches 75°C.",
+    "Warm the pita for 1 minute each side, until soft.",
+    "Fill with chicken, tzatziki, tomato and onion."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the centre; discard the raw marinade."
+   ],
+   "nutrition": {
+    "kcal": 502,
+    "proteinG": 38,
+    "carbsG": 38,
+    "fatG": 22,
+    "fibreG": 3,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "spiced-beef-keftedes-with-rice-and-tomato",
+   "title": "Spiced Beef Keftedes with Rice and Tomato",
+   "summary": "Herby Greek beef meatballs baked and served on rice with a fresh tomato salad.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g beef mince",
+      "1 brown onion, grated",
+      "1/4 cup mint, chopped",
+      "1/4 cup parsley, chopped",
+      "2 garlic, crushed",
+      "1 tsp dried oregano",
+      "1/2 cup breadcrumbs",
+      "1 egg",
+      "2 tbsp olive oil",
+      "2 cup white rice",
+      "2 tomato, diced"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Mix the mince, onion, herbs, garlic, oregano, breadcrumbs, egg and salt and roll into 20 balls.",
+    "Bake on an oiled tray for 20 minutes, until browned and 75°C in the centre.",
+    "Cook the rice in boiling water for 12 minutes, until tender, and drain.",
+    "Serve the keftedes over the rice with the diced tomato and pan juices."
+   ],
+   "notes": [
+    "Food safety: meatballs must reach 75°C right through."
+   ],
+   "nutrition": {
+    "kcal": 580,
+    "proteinG": 34,
+    "carbsG": 66,
+    "fatG": 20,
+    "fibreG": 4,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "greek-yoghurt-omelette-wraps-with-herbs",
+   "title": "Greek Yoghurt Omelette Wraps with Herbs",
+   "summary": "Thin herby omelettes rolled around yoghurt, cucumber and olives.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 egg",
+      "1 tbsp olive oil",
+      "2 tbsp dill, chopped",
+      "2 tbsp mint, chopped",
+      "1/2 cup greek yoghurt",
+      "1 cucumber, sliced",
+      "1/4 cup kalamata olive, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Whisk the eggs with the dill, mint and a pinch of salt.",
+    "Cook half the egg in half the oil in a non-stick pan for 2 minutes, until just set, and repeat.",
+    "Spread each omelette with yoghurt and top with cucumber and olives.",
+    "Roll up the omelettes, cut each in half and serve warm straight away."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are set; serve firm yolks to young children, older people or anyone pregnant.",
+    "Vegetarian. Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 266,
+    "proteinG": 20,
+    "carbsG": 6,
+    "fatG": 18,
+    "fibreG": 1,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "vegetable-moussaka-style-stacks",
+   "title": "Vegetable Moussaka-Style Stacks",
+   "summary": "Layered eggplant, potato and zucchini stacks baked in tomato sauce with a cheesy topping.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 40,
+   "cookMinutes": 55,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 eggplant, sliced",
+      "2 potato, sliced",
+      "2 zucchini, sliced",
+      "1/4 cup olive oil",
+      "1 brown onion, diced",
+      "2 garlic, crushed",
+      "800g tinned tomatoes",
+      "1 tsp ground cinnamon",
+      "40g butter",
+      "1/4 cup plain flour",
+      "2 cup milk",
+      "1 cup vegetarian hard cheese, grated"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Toss the eggplant, potato and zucchini with the oil and roast for 25 minutes, until golden.",
+    "Cook the onion and garlic for 5 minutes, add the tomatoes and cinnamon and simmer for 15 minutes, until thick.",
+    "Melt the butter, stir in the flour for 1 minute, whisk in the milk and simmer for 6 minutes, until thick. Stir in half the cheese.",
+    "Layer the vegetables and sauce in a dish, top with the white sauce and remaining cheese and bake for 30 minutes, until golden and bubbling."
+   ],
+   "notes": [
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 370,
+    "proteinG": 14,
+    "carbsG": 38,
+    "fatG": 18,
+    "fibreG": 8,
+    "sodiumMg": 340
+   }
+  },
+  {
+   "id": "spanish-chicken-and-chorizo-rice-bake",
+   "title": "Spanish Chicken and Chorizo Rice Bake",
+   "summary": "Rice baked with chicken, chorizo, smoked paprika and peas.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 45,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g chicken thigh",
+      "150g chorizo, sliced",
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "1 red capsicum, diced",
+      "3 garlic, crushed",
+      "2 tsp smoked paprika",
+      "1 1/2 cup paella rice",
+      "3 cup chicken stock",
+      "1 cup frozen peas",
+      "1 lemon, cut into wedges"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the chicken and chorizo in the oil in an ovenproof pan for 8 minutes, until golden, and lift out. Cook the onion, capsicum and garlic for 5 minutes.",
+    "Add the paprika and rice, stir for 1 minute, then pour in the hot stock and return the meat.",
+    "Bake at 190°C (170°C fan) for 25 minutes, until the rice is tender and the chicken reaches 75°C.",
+    "Scatter the peas over, rest for 5 minutes until hot and serve with lemon."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part; refrigerate leftover rice within 1 hour.",
+    "Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 566,
+    "proteinG": 34,
+    "carbsG": 58,
+    "fatG": 22,
+    "fibreG": 4,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "pork-and-beef-meatballs-in-smoky-almond-sauce",
+   "title": "Pork and Beef Meatballs in Smoky Almond Sauce",
+   "summary": "Soft meatballs simmered in a smoky tomato and almond sauce.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g beef mince",
+      "300g pork mince",
+      "1 egg",
+      "1/2 cup breadcrumbs",
+      "2 garlic, crushed",
+      "1/4 cup parsley, chopped",
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "400g tinned tomatoes",
+      "1 tsp smoked paprika",
+      "1/3 cup almond meal",
+      "1/2 cup chicken stock"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the minces, egg, breadcrumbs, 1 garlic clove, parsley and salt and roll into 20 balls.",
+    "Brown the meatballs in half the oil for 8 minutes, until golden, and lift out.",
+    "Cook the onion in the remaining oil for 5 minutes, add the garlic, paprika, tomatoes, almond meal and stock and simmer for 10 minutes.",
+    "Return the meatballs and simmer for 10 minutes, until cooked through at 75°C and the sauce is thick."
+   ],
+   "notes": [
+    "Food safety: meatballs must reach 75°C right through."
+   ],
+   "nutrition": {
+    "kcal": 442,
+    "proteinG": 34,
+    "carbsG": 18,
+    "fatG": 26,
+    "fibreG": 3,
+    "sodiumMg": 540
+   }
+  },
+  {
+   "id": "garlic-prawn-and-chorizo-eggs",
+   "title": "Garlic Prawn and Chorizo Eggs",
+   "summary": "Eggs baked in a sizzling pan of garlic prawns and chorizo.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "200g prawn, peeled",
+      "80g chorizo, diced",
+      "2 tbsp olive oil",
+      "3 garlic, crushed",
+      "1/2 tsp chilli flakes",
+      "4 egg",
+      "2 tbsp parsley, chopped",
+      "2 slices crusty bread"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the chorizo in the oil for 3 minutes, until crisp. Add the garlic and chilli for 30 seconds.",
+    "Add the prawns and cook for 3 minutes, until pink and opaque.",
+    "Make four gaps, crack in the eggs, cover and cook for 4 minutes, until the whites are set.",
+    "Scatter with parsley and serve with the bread."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are set; serve firm yolks to young children, older people or anyone pregnant.",
+    "Prawns are cooked when pink and opaque."
+   ],
+   "nutrition": {
+    "kcal": 504,
+    "proteinG": 40,
+    "carbsG": 14,
+    "fatG": 32,
+    "fibreG": 1,
+    "sodiumMg": 900
+   }
+  },
+  {
+   "id": "roast-pork-loin-with-sherry-and-smoked-paprika",
+   "title": "Roast Pork Loin with Sherry and Smoked Paprika",
+   "summary": "Pork loin rubbed with paprika, roasted over potatoes and sherry.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 75,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.2kg pork loin",
+      "2 tsp smoked paprika",
+      "4 garlic, crushed",
+      "1/4 cup olive oil",
+      "1/2 cup dry sherry",
+      "800g potato, cut into wedges",
+      "1 brown onion, in wedges",
+      "1/2 cup chicken stock",
+      "2 tbsp parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Rub the pork with the paprika, garlic, half the oil and salt.",
+    "Toss the potato and onion with the remaining oil in a roasting dish, set the pork on top and pour in the sherry and stock.",
+    "Roast for 20 minutes, reduce to 180°C (160°C fan) and roast for 45 minutes, until the pork reaches 70°C and the potato is golden.",
+    "Rest the pork for 10 minutes, slice and scatter with parsley."
+   ],
+   "notes": [
+    "Food safety: pork must reach 70°C in the centre, then rest.",
+    "Gluten-free.",
+    "Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 408,
+    "proteinG": 38,
+    "carbsG": 28,
+    "fatG": 16,
+    "fibreG": 3,
+    "sodiumMg": 300
+   }
+  },
+  {
+   "id": "baked-hake-with-pimenton-potatoes-and-peppers",
+   "title": "Baked Hake with Pimenton Potatoes and Peppers",
+   "summary": "Fish baked over smoky potatoes and roasted peppers with garlic and parsley.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g white fish",
+      "600g waxy potato, sliced",
+      "2 red capsicum, sliced",
+      "1/4 cup olive oil",
+      "2 tsp smoked paprika",
+      "4 garlic, sliced",
+      "1/4 cup parsley, chopped",
+      "1 lemon, juiced"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Toss the potato, capsicum, oil, paprika and garlic in a roasting dish and roast for 22 minutes, until nearly tender.",
+    "Nestle the fish into the vegetables and spoon over the lemon juice.",
+    "Roast for 12 minutes, until the fish turns opaque and flakes easily.",
+    "Scatter the parsley over the fish and potatoes and serve straight from the dish."
+   ],
+   "notes": [
+    "Food safety: fish is cooked when opaque and flakes with a fork.",
+    "Gluten-free.",
+    "Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 392,
+    "proteinG": 32,
+    "carbsG": 30,
+    "fatG": 16,
+    "fibreG": 5,
+    "sodiumMg": 200
+   }
+  },
+  {
+   "id": "spanish-mushroom-and-egg-breakfast-toast",
+   "title": "Spanish Mushroom and Egg Breakfast Toast",
+   "summary": "Garlicky mushrooms and fried eggs on toasted bread with smoked paprika.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 12,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "250g mixed mushrooms, sliced",
+      "2 tbsp olive oil",
+      "3 garlic, crushed",
+      "1 tsp smoked paprika",
+      "4 egg",
+      "2 slices crusty bread",
+      "2 tbsp parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the mushrooms in half the oil for 8 minutes, until golden and dry. Add the garlic and paprika for 1 minute.",
+    "Fry the eggs in the remaining oil for 3 minutes, until the whites are set.",
+    "Toast the bread until golden.",
+    "Spoon the mushrooms onto the bread and top with the eggs and parsley."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are set; serve firm yolks to young children, older people or anyone pregnant.",
+    "Vegetarian. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 374,
+    "proteinG": 20,
+    "carbsG": 24,
+    "fatG": 22,
+    "fibreG": 3,
+    "sodiumMg": 320
+   }
+  },
+  {
+   "id": "seafood-fideua",
+   "title": "Seafood Fideua",
+   "summary": "Short noodles cooked in saffron stock with prawns, mussels and squid, Valencian-style.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 25,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g pasta",
+      "300g prawn, peeled",
+      "300g mussels, scrubbed",
+      "200g calamari, sliced",
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "3 garlic, crushed",
+      "2 tomato, grated",
+      "1 pinch saffron",
+      "4 cup fish stock",
+      "1/4 cup aioli"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the onion in the oil in a wide pan for 5 minutes, then add the garlic and tomato and cook for 8 minutes, until thick and jammy.",
+    "Stir in the pasta and saffron for 2 minutes, then add the hot stock and simmer for 8 minutes, until nearly tender.",
+    "Nestle in the calamari, prawns and mussels, cover and cook for 6 minutes, until the prawns are pink, the calamari opaque and the mussel shells open. Discard any that stay closed.",
+    "Rest for 3 minutes and serve with aioli."
+   ],
+   "notes": [
+    "Food safety: seafood is cooked when prawns are pink and opaque and mussel shells have opened; discard any that stay shut."
+   ],
+   "nutrition": {
+    "kcal": 498,
+    "proteinG": 34,
+    "carbsG": 50,
+    "fatG": 18,
+    "fibreG": 4,
+    "sodiumMg": 900
+   }
+  },
+  {
+   "id": "lamb-and-rosemary-pies",
+   "title": "Lamb and Rosemary Pies",
+   "summary": "Individual golden pies of tender lamb, rosemary and red wine.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 40,
+   "cookMinutes": 150,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g lamb shoulder, diced",
+      "2 tbsp neutral oil",
+      "1 brown onion, diced",
+      "2 carrot, diced",
+      "2 garlic, crushed",
+      "1/2 cup red wine",
+      "1 cup beef stock",
+      "2 rosemary",
+      "2 tbsp plain flour",
+      "4 puff pastry",
+      "1 egg"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the lamb in the oil for 8 minutes, until golden. Add the onion, carrot and garlic for 6 minutes, stir through the flour, then add the wine, stock and rosemary.",
+    "Cover and simmer for 1 hour 30 minutes, until the lamb is tender and the sauce is thick. Cool.",
+    "Heat the oven to 200°C (180°C fan). Line six pie tins with pastry, fill, top with pastry and seal. Brush with beaten egg.",
+    "Bake for 30 minutes, until golden and the filling reaches 75°C."
+   ],
+   "notes": [
+    "Food safety: the filling must be steaming hot (75°C) in the centre."
+   ],
+   "nutrition": {
+    "kcal": 845,
+    "proteinG": 43,
+    "carbsG": 52,
+    "fatG": 51,
+    "fibreG": 3,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "pepper-steak-with-mushroom-sauce-and-chips",
+   "title": "Pepper Steak with Mushroom Sauce and Chips",
+   "summary": "A pan-seared sirloin with creamy mushroom pepper sauce and oven chips.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 beef sirloin",
+      "1 tbsp black pepper, cracked",
+      "1 tbsp neutral oil",
+      "1 tbsp butter",
+      "200g button mushroom, sliced",
+      "2 garlic, crushed",
+      "1/4 cup brandy",
+      "1/2 cup cream",
+      "1/2 cup beef stock",
+      "800g frozen chips"
+     ]
+    }
+   ],
+   "steps": [
+    "Bake the chips on a tray at 220°C (200°C fan) for 30 minutes, until golden and crisp.",
+    "Press the pepper into the steaks and sear in the oil for 3 minutes each side for medium-rare, until the centre reaches 55°C. Rest for 5 minutes.",
+    "Cook the mushrooms and garlic in the butter in the same pan for 6 minutes, until golden. Add the brandy, cream and stock and simmer for 5 minutes, until thickened.",
+    "Serve the steaks with the sauce and chips."
+   ],
+   "notes": [
+    "Food safety: whole steaks are safe seared; 55°C is medium-rare, 63°C medium, 71°C well done."
+   ],
+   "nutrition": {
+    "kcal": 792,
+    "proteinG": 56,
+    "carbsG": 51,
+    "fatG": 40,
+    "fibreG": 2,
+    "sodiumMg": 285
+   }
+  },
+  {
+   "id": "chilli-prawn-and-zucchini-pasta",
+   "title": "Chilli Prawn and Zucchini Pasta",
+   "summary": "Garlicky chilli prawns tossed through linguine with zucchini, lemon and parsley.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "350g linguine",
+      "500g prawn, peeled",
+      "2 zucchini, sliced",
+      "3 garlic, crushed",
+      "1/2 tsp chilli flakes",
+      "2 tbsp olive oil",
+      "1 lemon, zested and juiced",
+      "1/4 cup parsley, chopped",
+      "1 tbsp butter"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the linguine in salted boiling water for 10 minutes, until al dente, and drain, keeping 1/2 cup of the water.",
+    "Cook the zucchini in the oil for 4 minutes, until golden, then add the garlic and chilli for 1 minute.",
+    "Add the prawns and cook for 3 minutes, until pink and opaque.",
+    "Toss the pasta through with the lemon, butter, parsley and a splash of pasta water."
+   ],
+   "notes": [
+    "Food safety: prawns are cooked when pink, curled and opaque all the way through."
+   ],
+   "nutrition": {
+    "kcal": 486,
+    "proteinG": 34,
+    "carbsG": 56,
+    "fatG": 14,
+    "fibreG": 4,
+    "sodiumMg": 260
+   }
+  },
+  {
+   "id": "smashed-pea-and-haloumi-breakfast-stack",
+   "title": "Smashed Pea and Haloumi Breakfast Stack",
+   "summary": "Golden halloumi on smashed minty peas with a poached egg and lemon.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "200g halloumi, sliced",
+      "2 cup frozen peas",
+      "2 tbsp mint, chopped",
+      "1 tbsp olive oil",
+      "1 lemon, zested and juiced",
+      "4 egg",
+      "1 tbsp white vinegar",
+      "2 slices sourdough"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the peas for 3 minutes, until bright and tender, drain and smash with the mint, oil, lemon zest and juice.",
+    "Fry the halloumi in a dry pan for 2 minutes each side, until golden.",
+    "Poach the eggs in barely simmering water with the vinegar for 3 minutes, until the whites are set.",
+    "Toast the sourdough until golden, then stack with the peas, halloumi and eggs."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are set; serve firm yolks to young children, older people or anyone pregnant.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 576,
+    "proteinG": 40,
+    "carbsG": 32,
+    "fatG": 32,
+    "fibreG": 8,
+    "sodiumMg": 1280
+   }
+  },
+  {
+   "id": "honey-soy-barramundi-with-ginger-rice",
+   "title": "Honey Soy Barramundi with Ginger Rice",
+   "summary": "Barramundi fillets glazed with honey and soy over ginger-scented rice with greens.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 white fish",
+      "2 tbsp honey",
+      "2 tbsp soy sauce",
+      "1 tbsp ginger, grated",
+      "2 garlic, crushed",
+      "1 tbsp neutral oil",
+      "1 1/2 cup jasmine rice",
+      "1 bok choy, halved",
+      "2 spring onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the honey, soy sauce, ginger and garlic.",
+    "Cook the rice in boiling water for 12 minutes, until tender, and drain.",
+    "Sear the fish in the oil for 3 minutes per side, add the glaze and cook for 2 minutes, until sticky and the fish is opaque and flakes.",
+    "Steam the bok choy for 3 minutes, until tender, and serve with the rice, fish and spring onion."
+   ],
+   "notes": [
+    "Food safety: fish is cooked when opaque and flakes with a fork.",
+    "Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 342,
+    "proteinG": 24,
+    "carbsG": 45,
+    "fatG": 7,
+    "fibreG": 2,
+    "sodiumMg": 860
+   }
+  },
+  {
+   "id": "sweetcorn-fritter-stacks-with-crisp-bacon",
+   "title": "Sweetcorn Fritter Stacks with Crisp Bacon",
+   "summary": "Sweet corn fritters with crisp bacon, smashed avocado and lime.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "2 cup corn kernels",
+      "1 cup self-raising flour",
+      "2 egg",
+      "1/2 cup milk",
+      "2 spring onion, sliced",
+      "2 tbsp coriander, chopped",
+      "3 tbsp neutral oil",
+      "6 bacon",
+      "1 avocado",
+      "1 lime, juiced"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the corn, flour, eggs, milk, spring onion and coriander with a pinch of salt into a thick batter.",
+    "Fry spoonfuls in the oil over medium heat for 3 minutes per side, until golden and cooked through.",
+    "Cook the bacon in a pan for 6 minutes, until crisp.",
+    "Mash the avocado with the lime juice and serve over the fritters with the bacon."
+   ],
+   "notes": [
+    "Food safety: fritters are done when golden and set through; bacon should be cooked and crisp."
+   ],
+   "nutrition": {
+    "kcal": 490,
+    "proteinG": 18,
+    "carbsG": 46,
+    "fatG": 26,
+    "fibreG": 6,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "pan-fried-chicken-in-marsala-mushroom-sauce",
+   "title": "Pan-Fried Chicken in Marsala Mushroom Sauce",
+   "summary": "Pan-fried chicken in a rich Marsala and mushroom sauce.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "4 chicken breast",
+      "1/4 cup plain flour",
+      "2 tbsp olive oil",
+      "250g button mushroom, sliced",
+      "2 garlic, crushed",
+      "1/2 cup marsala",
+      "1/2 cup chicken stock",
+      "2 tbsp butter",
+      "2 tbsp parsley, chopped",
+      "500g potato, boiled"
+     ]
+    }
+   ],
+   "steps": [
+    "Slice the chicken breasts in half horizontally and coat in flour. Fry in the oil for 4 minutes per side, until golden, and lift out.",
+    "Cook the mushrooms in the same pan for 6 minutes, until golden, then add the garlic.",
+    "Add the marsala and stock and simmer for 5 minutes, until reduced by half. Stir in the butter.",
+    "Return the chicken for 3 minutes until it reaches 75°C and serve with the sauce, parsley and potato."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part."
+   ],
+   "nutrition": {
+    "kcal": 408,
+    "proteinG": 42,
+    "carbsG": 24,
+    "fatG": 16,
+    "fibreG": 3,
+    "sodiumMg": 360
+   }
+  },
+  {
+   "id": "slow-roasted-tomato-and-basil-risotto",
+   "title": "Slow-Roasted Tomato and Basil Risotto",
+   "summary": "Creamy risotto with slow-roasted tomatoes, basil and mascarpone.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 50,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g cherry tomato",
+      "3 tbsp olive oil",
+      "1 brown onion, diced",
+      "2 garlic, crushed",
+      "1 1/2 cup arborio rice",
+      "1/2 cup white wine",
+      "4 cup vegetable stock",
+      "1/2 cup basil, torn",
+      "1/4 cup mascarpone",
+      "1/2 cup vegetarian hard cheese, grated"
+     ]
+    }
+   ],
+   "steps": [
+    "Roast the tomatoes with 2 tablespoons of oil at 180°C (160°C fan) for 30 minutes, until collapsed and sticky.",
+    "Cook the onion in the remaining oil for 5 minutes, add the garlic and rice and stir for 2 minutes, then the wine until absorbed.",
+    "Add the hot stock a ladle at a time, stirring for 20 minutes, until the rice is creamy and tender.",
+    "Stir in the mascarpone, cheese and basil until creamy and top with the roast tomatoes."
+   ],
+   "notes": [
+    "Vegetarian. Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 464,
+    "proteinG": 14,
+    "carbsG": 66,
+    "fatG": 16,
+    "fibreG": 3,
+    "sodiumMg": 360
+   }
+  },
+  {
+   "id": "baked-gnocchi-alla-sorrentina",
+   "title": "Baked Gnocchi alla Sorrentina",
+   "summary": "Potato gnocchi baked in tomato sauce under melting mozzarella and basil.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g fresh pasta gnocchi",
+      "2 tbsp olive oil",
+      "3 garlic, crushed",
+      "800g passata",
+      "1/2 cup basil, torn",
+      "2 cup mozzarella, grated",
+      "1/4 cup vegetarian hard cheese, grated"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Cook the garlic in the oil for 1 minute, add the passata and simmer for 8 minutes, until thick.",
+    "Stir in the gnocchi and half the basil and tip into a baking dish.",
+    "Top with mozzarella and cheese and bake for 20 minutes, until bubbling and golden.",
+    "Scatter with the remaining basil."
+   ],
+   "notes": [
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 589,
+    "proteinG": 25,
+    "carbsG": 61,
+    "fatG": 25,
+    "fibreG": 10,
+    "sodiumMg": 1584
+   }
+  },
+  {
+   "id": "pork-fillet-saltimbocca-with-sage-potatoes",
+   "title": "Pork Fillet Saltimbocca with Sage Potatoes",
+   "summary": "Pork fillet wrapped in prosciutto and sage, pan-fried and served with crisp potatoes.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "700g pork fillet",
+      "8 slices prosciutto",
+      "12 sage",
+      "2 tbsp olive oil",
+      "1/2 cup white wine",
+      "1 tbsp butter",
+      "600g potato, cubed"
+     ]
+    }
+   ],
+   "steps": [
+    "Roast the potato in 1 tablespoon of oil at 220°C (200°C fan) for 30 minutes, until crisp.",
+    "Cut the pork into eight pieces, flatten, top each with sage and wrap in prosciutto.",
+    "Fry in the remaining oil for 4 minutes per side, until golden and the centre reaches 70°C. Lift out and rest.",
+    "Add the wine to the pan and simmer for 3 minutes, whisk in the butter and spoon over the pork."
+   ],
+   "notes": [
+    "Food safety: pork must reach 70°C in the centre with no pink.",
+    "Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 524,
+    "proteinG": 46,
+    "carbsG": 30,
+    "fatG": 24,
+    "fibreG": 2,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "italian-breakfast-frittata-with-spinach-and-ricotta",
+   "title": "Italian Breakfast Frittata with Spinach and Ricotta",
+   "summary": "A thick baked frittata with spinach, ricotta and sundried tomatoes.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "6 egg",
+      "200g baby spinach",
+      "1/2 cup ricotta",
+      "1/4 cup sun-dried tomato, chopped",
+      "1/4 cup vegetarian hard cheese, grated",
+      "2 tbsp olive oil",
+      "2 spring onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 190°C (170°C fan). Wilt the spinach and spring onion in the oil in an ovenproof pan for 3 minutes, until soft.",
+    "Whisk the eggs with the cheese and seasoning and pour over, dotting with ricotta and tomato.",
+    "Cook on the stove for 3 minutes, until the edges set.",
+    "Bake for 15 minutes, until puffed and set in the centre."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are set; serve firm yolks to young children, older people or anyone pregnant.",
+    "Vegetarian. Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 250,
+    "proteinG": 18,
+    "carbsG": 4,
+    "fatG": 18,
+    "fibreG": 2,
+    "sodiumMg": 320
+   }
+  },
+  {
+   "id": "tuscan-beef-stew-with-rosemary-and-red-wine",
+   "title": "Tuscan Beef Stew with Rosemary and Red Wine",
+   "summary": "Beef braised in red wine, tomato and rosemary until tender, served over polenta.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 20,
+   "cookMinutes": 180,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.2kg beef chuck, diced",
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "2 carrot, diced",
+      "3 garlic, crushed",
+      "1 cup red wine",
+      "400g tinned tomatoes",
+      "2 rosemary",
+      "1 cup beef stock",
+      "1 cup polenta",
+      "4 cup water",
+      "30g butter"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the beef in the oil in batches for 10 minutes, until deep golden, and lift out. Cook the onion and carrot for 6 minutes, add the garlic and wine and boil for 3 minutes.",
+    "Return the beef with the tomatoes, rosemary and stock, cover and simmer for 2 hours 30 minutes, until very tender.",
+    "Bring the water to the boil, whisk in the polenta and cook for 25 minutes, until thick, then stir in the butter.",
+    "Serve the beef over the polenta."
+   ],
+   "notes": [
+    "Food safety: beef chuck is safe at 75°C and tender once it falls apart; the stew should be steaming hot.",
+    "Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 434,
+    "proteinG": 36,
+    "carbsG": 32,
+    "fatG": 18,
+    "fibreG": 4,
+    "sodiumMg": 560
+   }
+  },
+  {
+   "id": "coq-au-riesling-style-chicken-with-bacon-and-onions",
+   "title": "Coq au Riesling-Style Chicken with Bacon and Onions",
+   "summary": "Chicken braised in white wine with bacon, mushrooms and baby onions.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 25,
+   "cookMinutes": 70,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.2kg chicken thigh",
+      "150g bacon, diced",
+      "2 tbsp butter",
+      "12 pearl onion",
+      "250g button mushroom, halved",
+      "2 garlic, crushed",
+      "1 cup white wine",
+      "1 cup chicken stock",
+      "2 thyme",
+      "1/2 cup cream",
+      "1kg potato, boiled"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the bacon in a heavy pot until crisp for 5 minutes and lift out. Brown the chicken in the fat for 8 minutes, until golden, and lift out.",
+    "Cook the onions and mushrooms in the butter for 8 minutes, until golden, then add the garlic and wine and boil for 3 minutes.",
+    "Return the chicken and bacon with the stock and thyme, cover and simmer for 35 minutes, until the chicken reaches 75°C.",
+    "Stir in the cream, simmer for 5 minutes until slightly thick and serve with the potato."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part.",
+    "Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 771,
+    "proteinG": 54,
+    "carbsG": 58,
+    "fatG": 35,
+    "fibreG": 4,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "mussels-in-white-wine-and-garlic-with-frites",
+   "title": "Mussels in White Wine and Garlic with Frites",
+   "summary": "Mussels steamed in white wine, garlic and herbs, with crisp frites.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.5kg mussels, scrubbed",
+      "2 tbsp butter",
+      "3 shallot, diced",
+      "3 garlic, crushed",
+      "1 cup white wine",
+      "1/2 cup cream",
+      "1/4 cup parsley, chopped",
+      "800g frozen chips"
+     ]
+    }
+   ],
+   "steps": [
+    "Bake the chips at 220°C (200°C fan) for 30 minutes, until golden and crisp.",
+    "Cook the shallot in the butter in a large pot for 4 minutes, then add the garlic and wine and bring to the boil.",
+    "Add the mussels, cover and cook for 5 minutes, shaking the pot, until the shells have opened. Discard any that stay closed.",
+    "Stir in the cream and parsley and serve with the frites."
+   ],
+   "notes": [
+    "Food safety: mussel shells must open when cooked; discard any that stay closed."
+   ],
+   "nutrition": {
+    "kcal": 538,
+    "proteinG": 28,
+    "carbsG": 48,
+    "fatG": 26,
+    "fibreG": 4,
+    "sodiumMg": 820
+   }
+  },
+  {
+   "id": "pork-normande-with-apples-and-mustard",
+   "title": "Pork Normande with Apples and Mustard",
+   "summary": "Pork steaks with caramelised apple and a cream mustard sauce.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 pork loin steak",
+      "2 apple, sliced",
+      "2 tbsp butter",
+      "1 tbsp neutral oil",
+      "2 shallot, diced",
+      "1/2 cup apple juice",
+      "1/2 cup cream",
+      "1 tbsp wholegrain mustard",
+      "1 thyme",
+      "600g potato, boiled"
+     ]
+    }
+   ],
+   "steps": [
+    "Season the pork and sear in the oil for 5 minutes each side, until golden and the centre reaches 70°C. Lift out and rest.",
+    "Cook the apple in the butter for 4 minutes, until golden. Add the shallot and thyme for 2 minutes.",
+    "Add the apple juice and boil for 3 minutes, then the cream and mustard and simmer for 3 minutes, until slightly thick.",
+    "Return the pork for 1 minute and serve with the potato."
+   ],
+   "notes": [
+    "Food safety: pork must reach 70°C in the centre, then rest.",
+    "Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 357,
+    "proteinG": 27,
+    "carbsG": 20,
+    "fatG": 19,
+    "fibreG": 2,
+    "sodiumMg": 260
+   }
+  },
+  {
+   "id": "french-omelette-with-herbs-and-goat-cheese",
+   "title": "French Omelette with Herbs and Goat Cheese",
+   "summary": "A soft rolled omelette with chives, tarragon and creamy goat cheese.",
+   "cuisine": "french",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 5,
+   "cookMinutes": 8,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "6 egg",
+      "2 tbsp butter",
+      "2 tbsp chives, snipped",
+      "1 tbsp tarragon, chopped",
+      "60g goat cheese",
+      "1 tbsp parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Whisk the eggs with the herbs and a pinch of salt.",
+    "Melt the butter in a non-stick pan until foaming and pour in the eggs.",
+    "Stir gently for 1 minute, then leave to set for 1 minute, until the base is just cooked and the top is still soft.",
+    "Add the goat cheese, roll onto a plate and serve."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are set; serve firm yolks to young children, older people or anyone pregnant.",
+    "Vegetarian. Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 356,
+    "proteinG": 24,
+    "carbsG": 2,
+    "fatG": 28,
+    "fibreG": 0,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "lamb-navarin-with-spring-vegetables",
+   "title": "Lamb Navarin with Spring Vegetables",
+   "summary": "A light French lamb stew with young carrots, peas and baby potatoes.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 25,
+   "cookMinutes": 120,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1kg lamb shoulder, diced",
+      "2 tbsp neutral oil",
+      "1 brown onion, diced",
+      "3 garlic, crushed",
+      "1 tbsp tomato paste",
+      "1 tbsp plain flour",
+      "1/2 cup white wine",
+      "2 cup chicken stock",
+      "2 thyme",
+      "500g baby potato",
+      "3 carrot, chunked",
+      "1 cup frozen peas"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the lamb in the oil in a heavy pot for 8 minutes, until golden. Add the onion and garlic for 5 minutes, stir through the paste and flour, then the wine and stock.",
+    "Add the thyme, cover and simmer for 1 hour, until the lamb is nearly tender.",
+    "Add the potatoes and carrots and cook for 30 minutes, until tender.",
+    "Stir through the peas for 3 minutes until hot."
+   ],
+   "notes": [
+    "Food safety: lamb is safe at 63°C; this braise cooks well beyond that and should be steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 426,
+    "proteinG": 34,
+    "carbsG": 32,
+    "fatG": 18,
+    "fibreG": 6,
+    "sodiumMg": 480
+   }
+  },
+  {
+   "id": "smoked-salmon-egg-cocotte-with-chives",
+   "title": "Smoked Salmon Egg Cocotte with Chives",
+   "summary": "Eggs baked in cream with smoked salmon and chives in small ramekins.",
+   "cuisine": "french",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 15,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "pescatarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 egg",
+      "60g smoked salmon",
+      "1/4 cup cream",
+      "2 tbsp chives, snipped",
+      "1 tbsp butter",
+      "2 slices baguette"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 180°C (160°C fan). Butter two ramekins and divide the salmon and cream between them.",
+    "Crack in the eggs and season.",
+    "Bake in a tray of hot water for 12 minutes, until the whites are set and the yolks soft.",
+    "Scatter with chives and serve with toasted baguette."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are set; serve firm yolks to young children, older people or anyone pregnant.",
+    "Smoked salmon is not recommended during pregnancy."
+   ],
+   "nutrition": {
+    "kcal": 386,
+    "proteinG": 22,
+    "carbsG": 16,
+    "fatG": 26,
+    "fibreG": 1,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "chicken-and-leek-mash-topped-pie",
+   "title": "Chicken and Leek Mash-Topped Pie",
+   "summary": "A crusty mashed-potato topped pie of chicken and leek in a creamy sauce.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 45,
+   "servings": 6,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "600g chicken thigh, diced",
+      "2 leek, sliced",
+      "1 tbsp butter",
+      "1 tbsp plain flour",
+      "1 cup chicken stock",
+      "1/2 cup cream",
+      "1kg potato, boiled and mashed",
+      "1 egg yolk",
+      "1 tbsp wholegrain mustard"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the leek in the butter for 6 minutes, add the chicken and cook for 8 minutes, until cooked through.",
+    "Stir in the flour for 1 minute, add the stock, cream and mustard and simmer for 6 minutes, until thick.",
+    "Tip into a dish and cover with mash mixed with the egg yolk, ruffling the top.",
+    "Bake at 200°C (180°C fan) for 25 minutes, until golden and the filling is steaming and reaches 75°C."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C throughout and the pie be steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 438,
+    "proteinG": 28,
+    "carbsG": 32,
+    "fatG": 22,
+    "fibreG": 4,
+    "sodiumMg": 480
+   }
+  },
+  {
+   "id": "smoky-black-bean-tostada-stack",
+   "title": "Smoky Black Bean Tostada Stack",
+   "summary": "Crisp corn tortillas layered with smoky beans, cheese, slaw and avocado.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 corn tortilla",
+      "1 tbsp neutral oil",
+      "2 x 400g tinned black beans, drained",
+      "2 chipotle in adobo, chopped",
+      "1 garlic, crushed",
+      "1 cup mozzarella, grated",
+      "2 cup coleslaw",
+      "1 avocado, sliced",
+      "1/4 cup coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Brush the tortillas with oil and bake at 200°C (180°C fan) for 8 minutes, until crisp.",
+    "Warm the beans with the chipotle and garlic and mash roughly for 5 minutes, until thick.",
+    "Spread the beans on the tostadas, top with cheese and grill for 2 minutes, until melted.",
+    "Top with slaw, avocado and coriander."
+   ],
+   "notes": [
+    "Vegetarian. Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 500,
+    "proteinG": 20,
+    "carbsG": 60,
+    "fatG": 20,
+    "fibreG": 16,
+    "sodiumMg": 720
+   }
+  },
+  {
+   "id": "moroccan-chicken-meatballs-in-tomato-with-eggs",
+   "title": "Moroccan Chicken Meatballs in Tomato with Eggs",
+   "summary": "Spiced chicken meatballs poached in tomato sauce with eggs.",
+   "cuisine": "north-african",
+   "mealTypes": [
+    "dinner",
+    "breakfast"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g chicken mince",
+      "1 tsp ground cumin",
+      "1 tsp paprika",
+      "2 garlic, crushed",
+      "2 tbsp parsley, chopped",
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "400g tinned tomatoes",
+      "1 tsp harissa",
+      "4 egg"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the mince, cumin, paprika, 1 garlic clove, parsley and salt and roll into 16 balls.",
+    "Brown the meatballs in half the oil for 6 minutes, until golden, and lift out. Cook the onion in the remaining oil for 5 minutes, add the garlic, tomatoes and harissa and simmer for 8 minutes.",
+    "Return the meatballs and simmer for 8 minutes, until cooked through at 75°C.",
+    "Crack in the eggs, cover and cook for 4 minutes, until the whites are set."
+   ],
+   "notes": [
+    "Food safety: chicken mince must reach 75°C right through; cook the eggs until the whites are set.",
+    "Gluten-free.",
+    "Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 364,
+    "proteinG": 34,
+    "carbsG": 12,
+    "fatG": 20,
+    "fibreG": 3,
+    "sodiumMg": 500
+   }
+  },
+  {
+   "id": "jerk-chicken-rice-bowls-with-pineapple-slaw",
+   "title": "Jerk Chicken Rice Bowls with Pineapple Slaw",
+   "summary": "Jerk-spiced chicken over rice and beans with a crunchy pineapple slaw.",
+   "cuisine": "caribbean",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "700g chicken thigh",
+      "2 tbsp neutral oil",
+      "2 tsp allspice",
+      "1 tsp dried thyme",
+      "1 tsp chilli flakes",
+      "2 garlic, crushed",
+      "1 tbsp soy sauce",
+      "2 cup white rice",
+      "1 x 400g tinned black beans, drained",
+      "1 cup tinned pineapple, in chunks",
+      "2 cup coleslaw",
+      "1 lime, juiced"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the oil, allspice, thyme, chilli, garlic and soy sauce and coat the chicken. Marinate for 1 hour.",
+    "Cook the rice in boiling water for 12 minutes, until tender, adding the beans for the last 2 minutes. Drain.",
+    "Cook the chicken in a hot pan for 12 minutes, turning, until charred and 75°C inside. Rest and slice.",
+    "Toss the pineapple, slaw and lime juice and serve over the rice with the chicken."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part.",
+    "Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 853,
+    "proteinG": 52,
+    "carbsG": 105,
+    "fatG": 25,
+    "fibreG": 12,
+    "sodiumMg": 1550
+   }
+  },
+  {
+   "id": "hungarian-paprika-potatoes-with-fried-eggs",
+   "title": "Hungarian Paprika Potatoes with Fried Eggs",
+   "summary": "Paprika potatoes with onion and sausage under fried eggs.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "breakfast",
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g potato, diced",
+      "200g smoked sausage, sliced",
+      "1 brown onion, diced",
+      "2 tbsp neutral oil",
+      "1 tbsp paprika",
+      "1 capsicum, diced",
+      "4 egg",
+      "2 tbsp parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the sausage and onion in the oil for 8 minutes, until golden. Add the paprika, capsicum and potato with 1/2 cup water.",
+    "Cover and cook for 20 minutes, until the potato is tender and the water has gone.",
+    "Fry the eggs for 3 minutes in a separate pan, until the whites are set.",
+    "Serve the potatoes topped with the eggs and parsley."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are set; serve firm yolks to young children, older people or anyone pregnant.",
+    "Gluten-free. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 458,
+    "proteinG": 20,
+    "carbsG": 36,
+    "fatG": 26,
+    "fibreG": 5,
+    "sodiumMg": 760
+   }
+  },
+  {
+   "id": "pulled-beef-brisket-sliders",
+   "title": "Pulled Beef Brisket Sliders",
+   "summary": "Slow-cooked shredded brisket with tangy slaw in soft rolls.",
+   "cuisine": "american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 20,
+   "cookMinutes": 270,
+   "servings": 8,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.5kg beef brisket",
+      "2 tbsp smoked paprika",
+      "1 tbsp brown sugar",
+      "1 tbsp garlic powder",
+      "1 cup beef stock",
+      "1/2 cup bbq sauce",
+      "8 burger bun",
+      "2 cup coleslaw"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the paprika, sugar, garlic powder and salt and rub over the brisket. Rest for 1 hour.",
+    "Place in a deep tray with the stock, cover tightly and cook at 150°C (130°C fan) for 4 hours 30 minutes, until the centre reaches 93°C and shreds easily.",
+    "Shred the beef in the juices and stir through the bbq sauce.",
+    "Pile into the buns with the slaw."
+   ],
+   "notes": [
+    "Food safety: brisket needs to reach 93°C to shred (it is safe at 63°C); the filling should be steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 466,
+    "proteinG": 36,
+    "carbsG": 40,
+    "fatG": 18,
+    "fibreG": 3,
+    "sodiumMg": 820
+   }
+  }
+ ]
+}

@@ -1,0 +1,1206 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "marie-rose-prawn-cocktail-sauce",
+      "title": "Marie Rose Prawn Cocktail Sauce",
+      "summary": "The pink, tangy sauce for a Christmas prawn cocktail, thick enough to coat cold prawns.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 8,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "pescatarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "120g mayonnaise",
+            "3 tbsp tomato sauce",
+            "1 tbsp lemon juice",
+            "1 tsp Worcestershire sauce",
+            "1/2 tsp hot sauce",
+            "1 tbsp cream",
+            "1/4 tsp salt",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the mayonnaise with the tomato sauce, lemon juice, Worcestershire sauce and hot sauce until smooth.",
+        "Stir in the cream until the sauce is light and pink, then season with salt and pepper.",
+        "Taste and add more lemon if it needs sharpness."
+      ],
+      "notes": [
+        "Serve over cold cooked prawns on shredded lettuce.",
+        "Keeps in the fridge for 3 days."
+      ],
+      "nutrition": {
+        "kcal": 150,
+        "proteinG": 1,
+        "carbsG": 5,
+        "fatG": 14,
+        "fibreG": 0,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "summer-christmas-potato-salad-with-dill-and-egg",
+      "title": "Summer Christmas Potato Salad with Dill and Egg",
+      "summary": "A creamy herby potato salad with soft chopped eggs for the Boxing Day cold table.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1kg waxy potatoes, cut into chunks",
+            "4 eggs",
+            "4 tbsp mayonnaise",
+            "150g sour cream",
+            "2 tbsp white wine vinegar",
+            "3 tbsp chopped dill",
+            "4 spring onions, sliced",
+            "2 tbsp capers, drained",
+            "1/2 tsp salt",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes in salted water for 15 minutes until tender when pierced, then drain and cool.",
+        "Boil the eggs for 10 minutes until hard-set, cool in cold water, peel and chop.",
+        "Mix the mayonnaise, sour cream, vinegar, dill, spring onions, capers, salt and pepper, then fold through the potato and eggs gently."
+      ],
+      "notes": [
+        "Food safety: keep the salad chilled and do not leave it out for more than 2 hours, or 1 hour in hot weather.",
+        "Make it a day ahead for the best flavour."
+      ],
+      "nutrition": {
+        "kcal": 221,
+        "proteinG": 7,
+        "carbsG": 22,
+        "fatG": 11,
+        "fibreG": 3,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "maple-mustard-roasted-broccoli-trees-with-crunchy-pecan-crumble",
+      "title": "Maple Mustard Roasted Broccoli Trees with Crunchy Pecan Crumble",
+      "summary": "Roasted broccoli glazed with maple and mustard, finished with a crunchy pecan topping.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g broccoli, cut into large florets",
+            "3 tbsp olive oil",
+            "2 tbsp maple syrup",
+            "1 tbsp wholegrain mustard",
+            "60g pecans, roughly chopped",
+            "1/2 tsp salt",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the broccoli with the oil, salt and pepper and spread on a baking tray.",
+        "Roast at 220°C for 18 minutes until browned at the edges and tender.",
+        "Stir through the maple, mustard and pecans and roast for 5 minutes more until glossy, then serve hot."
+      ],
+      "notes": [
+        "Do not crowd the tray or the broccoli will steam.",
+        "Best served straight from the oven."
+      ],
+      "nutrition": {
+        "kcal": 216,
+        "proteinG": 6,
+        "carbsG": 14,
+        "fatG": 14,
+        "fibreG": 5,
+        "sodiumMg": 280
+      }
+    },
+    {
+      "id": "honey-thyme-glazed-carrots-and-sweet-potato-wedges-for-the-festive-table",
+      "title": "Honey Thyme Glazed Carrots and Sweet Potato Wedges for the Festive Table",
+      "summary": "Roasted root vegetables with a sticky honey and thyme glaze for the Christmas roast.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 40,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g carrots, halved lengthways",
+            "500g sweet potato, cut into wedges",
+            "3 tbsp olive oil",
+            "2 tbsp honey",
+            "1 tbsp thyme leaves",
+            "1/2 tsp salt",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the carrots and sweet potato with the oil and salt on a large tray.",
+        "Roast at 200°C for 30 minutes, turning once, until golden at the edges.",
+        "Drizzle with the honey and thyme and roast for 8 minutes more until sticky, then finish with the lemon juice."
+      ],
+      "notes": [
+        "Cut the vegetables to similar thickness so they cook evenly.",
+        "Serve straight away."
+      ],
+      "nutrition": {
+        "kcal": 203,
+        "proteinG": 3,
+        "carbsG": 28,
+        "fatG": 7,
+        "fibreG": 8,
+        "sodiumMg": 230
+      }
+    },
+    {
+      "id": "traditional-english-bread-sauce",
+      "title": "Traditional English Bread Sauce",
+      "summary": "Creamy, nutmeg-scented bread sauce that goes with roast poultry at Christmas.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500ml milk",
+            "1 onion, halved",
+            "2 bay leaves",
+            "1/4 tsp ground nutmeg",
+            "100g fresh white breadcrumbs",
+            "30g butter",
+            "3 tbsp cream",
+            "1/2 tsp salt",
+            "1/4 tsp white pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the milk with the onion, bay leaves and nutmeg in a saucepan until barely simmering, then turn off the heat and infuse for 15 minutes.",
+        "Remove the onion and bay leaves and stir in the breadcrumbs.",
+        "Cook over low heat for 5 minutes, stirring, until thick, then add the butter, cream, salt and pepper."
+      ],
+      "notes": [
+        "Loosen with a splash of milk if it thickens as it stands.",
+        "Keeps for 3 days; reheat gently with extra milk."
+      ],
+      "nutrition": {
+        "kcal": 150,
+        "proteinG": 5,
+        "carbsG": 14,
+        "fatG": 8,
+        "fibreG": 1,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "apple-and-orange-christmas-relish",
+      "title": "Apple and Orange Christmas Relish",
+      "summary": "A chunky spiced apple and orange relish, a fruity alternative to cranberry sauce.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 10,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 apples, peeled and diced",
+            "2 oranges, zest and juice",
+            "100g brown sugar",
+            "3 tbsp apple cider vinegar",
+            "1 tsp ground cinnamon",
+            "1/2 tsp ground ginger",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Put the apples, orange zest and juice, sugar, vinegar and spices in a saucepan.",
+        "Simmer gently over medium-low heat for 20 minutes, stirring, until the apple is soft and the liquid is thick and syrupy.",
+        "Cool and spoon into a jar."
+      ],
+      "notes": [
+        "Serve warm or cold with ham and turkey.",
+        "Keeps in the fridge for 2 weeks."
+      ],
+      "nutrition": {
+        "kcal": 64,
+        "proteinG": 0,
+        "carbsG": 15,
+        "fatG": 0,
+        "fibreG": 2,
+        "sodiumMg": 50
+      }
+    },
+    {
+      "id": "slow-caramelised-red-onion-pan-gravy-for-sunday-roasts",
+      "title": "Slow Caramelised Red Onion Pan Gravy for Sunday Roasts",
+      "summary": "A deep onion gravy built from slowly browned red onions, flour and stock.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 40,
+      "servings": 6,
+      "onePot": true,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "3 red onions, thinly sliced",
+            "2 tbsp butter",
+            "1 tbsp brown sugar",
+            "2 tbsp plain flour",
+            "500ml beef stock",
+            "1 tbsp balsamic vinegar",
+            "1 tsp thyme leaves",
+            "1 tbsp soy sauce"
+          ]
+        }
+      ],
+      "steps": [
+        "Melt the butter in a heavy saucepan over medium-low heat and cook the onions with the sugar for 25 minutes, stirring often, until deeply golden.",
+        "Stir in the flour and cook for 1 minute, then pour in the stock gradually, stirring.",
+        "Add the vinegar, thyme and soy sauce and simmer for 10 minutes until thick enough to coat the back of a spoon."
+      ],
+      "notes": [
+        "Add pan juices from the roast for extra flavour.",
+        "Reheats well; add water if too thick."
+      ],
+      "nutrition": {
+        "kcal": 115,
+        "proteinG": 3,
+        "carbsG": 14,
+        "fatG": 5,
+        "fibreG": 1,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "chinese-stir-fried-lettuce-with-garlic",
+      "title": "Chinese Stir-Fried Lettuce with Garlic",
+      "summary": "A quick, crunchy lettuce stir-fry with garlic and oyster sauce, popular at Lunar New Year.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 3,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 large cos lettuce, leaves torn",
+            "1 tbsp vegetable oil",
+            "4 garlic cloves, sliced",
+            "1 tbsp oyster sauce",
+            "1 tsp soy sauce",
+            "1/2 tsp sugar",
+            "1 tsp sesame oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a wok over very high heat and add the garlic for 15 seconds until fragrant.",
+        "Add the lettuce and toss for 1 minute until just wilted but still crisp.",
+        "Stir in the oyster sauce, soy sauce and sugar, toss for a few seconds and finish with the sesame oil."
+      ],
+      "notes": [
+        "Work fast because lettuce wilts quickly.",
+        "Serve straight away."
+      ],
+      "nutrition": {
+        "kcal": 65,
+        "proteinG": 1,
+        "carbsG": 4,
+        "fatG": 4,
+        "fibreG": 1,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "lunar-new-year-buddhist-vegetable-jai",
+      "title": "Lunar New Year Buddhist Vegetable Jai",
+      "summary": "A braised vegetarian feast of mushrooms, tofu, cabbage and carrot in a savoury soy sauce.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 dried shiitake mushrooms",
+            "200g firm tofu, cubed",
+            "1 tbsp vegetable oil",
+            "3 garlic cloves, minced",
+            "1 tbsp grated ginger",
+            "1/4 wombok (Chinese cabbage), chopped",
+            "2 carrots, sliced",
+            "100g snow peas",
+            "2 tbsp soy sauce",
+            "1 tbsp vegetarian oyster sauce",
+            "1 tsp sugar",
+            "1 tbsp cornflour",
+            "1 tsp sesame oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the mushrooms in hot water for 20 minutes until soft, then slice, keeping 200ml of the soaking water.",
+        "Fry the tofu in the oil over medium-high heat for 5 minutes until golden, then add the garlic, ginger, cabbage and carrots and stir-fry for 4 minutes.",
+        "Add the mushrooms, soaking water, soy sauce, oyster sauce and sugar, simmer for 8 minutes until the vegetables are tender, then stir in the cornflour mixed with 2 tbsp water and the snow peas and cook until thickened.",
+        "Finish with the sesame oil."
+      ],
+      "notes": [
+        "Soaking is not part of the prep time.",
+        "Serve with steamed rice."
+      ],
+      "nutrition": {
+        "kcal": 107,
+        "proteinG": 6,
+        "carbsG": 10,
+        "fatG": 4,
+        "fibreG": 3,
+        "sodiumMg": 720
+      }
+    },
+    {
+      "id": "sweet-and-sour-cucumber-pickle-for-banquets",
+      "title": "Sweet and Sour Cucumber Pickle for Banquets",
+      "summary": "A crisp, bright pickle that cuts through rich banquet dishes.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 Lebanese cucumbers, chopped into bite-sized pieces",
+            "1 tsp salt",
+            "4 tbsp rice vinegar",
+            "2 tbsp sugar",
+            "2 garlic cloves, thinly sliced",
+            "1 red chilli, sliced",
+            "1 tsp sesame oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the cucumbers with the salt and leave for 10 minutes, then drain.",
+        "Stir the vinegar and sugar until dissolved and pour over the cucumbers.",
+        "Add the garlic, chilli and sesame oil and toss until evenly coated."
+      ],
+      "notes": [
+        "Best the same day while still crisp.",
+        "Serve cold."
+      ],
+      "nutrition": {
+        "kcal": 51,
+        "proteinG": 1,
+        "carbsG": 9,
+        "fatG": 1,
+        "fibreG": 1,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "hot-sizzled-ginger-spring-onion-oil-for-steamed-chicken-and-fish",
+      "title": "Hot Sizzled Ginger Spring Onion Oil for Steamed Chicken and Fish",
+      "summary": "A fragrant, salty ginger and spring onion oil poured hot over steamed chicken or fish.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 3,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 spring onions, finely sliced",
+            "3 tbsp finely grated ginger",
+            "1/2 tsp salt",
+            "4 tbsp vegetable oil",
+            "1 tbsp soy sauce"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the spring onions, ginger and salt in a heatproof bowl.",
+        "Heat the oil in a small saucepan for 2 minutes until shimmering and just starting to smoke.",
+        "Pour the hot oil over the spring onion mixture so it sizzles, then stir in the soy sauce."
+      ],
+      "notes": [
+        "Pour carefully, the oil is very hot.",
+        "Use within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 95,
+        "proteinG": 1,
+        "carbsG": 2,
+        "fatG": 9,
+        "fibreG": 1,
+        "sodiumMg": 280
+      }
+    },
+    {
+      "id": "diwali-feast-jeera-aloo-dry-cumin-potato-cubes-with-amchur-style-lemon",
+      "title": "Diwali Feast Jeera Aloo Dry Cumin Potato Cubes with Amchur-Style Lemon",
+      "summary": "Golden potato cubes tossed with toasted cumin seeds and lemon, a festive side for any Diwali table.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g potatoes, cut into 2cm cubes",
+            "3 tbsp vegetable oil",
+            "2 tsp cumin seeds",
+            "1 tsp ground turmeric",
+            "1 tsp ground coriander",
+            "1/2 tsp chilli powder",
+            "3/4 tsp salt",
+            "2 tbsp lemon juice",
+            "2 tbsp chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes in salted water for 8 minutes until just tender, then drain.",
+        "Heat the oil in a wide pan over medium heat and add the cumin seeds for 30 seconds until they sizzle.",
+        "Add the potatoes, turmeric, coriander, chilli and salt and cook for 12 minutes, turning, until crisp at the edges, then finish with the lemon juice and coriander."
+      ],
+      "notes": [
+        "Do not stir too often or the crust will not form.",
+        "Serve hot."
+      ],
+      "nutrition": {
+        "kcal": 185,
+        "proteinG": 3,
+        "carbsG": 26,
+        "fatG": 7,
+        "fibreG": 3,
+        "sodiumMg": 340
+      }
+    },
+    {
+      "id": "kachumber-fine-chopped-cucumber-tomato-red-onion-salad-with-roasted-cumin",
+      "title": "Kachumber Fine-Chopped Cucumber Tomato Red Onion Salad with Roasted Cumin",
+      "summary": "A crisp, juicy Indian salad with lemon and roasted cumin, served alongside curries.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 12,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cucumbers, diced",
+            "3 tomatoes, diced",
+            "1 red onion, finely diced",
+            "1 green chilli, finely chopped",
+            "2 tbsp lemon juice",
+            "1 tsp ground roasted cumin",
+            "2 tbsp chopped coriander",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Combine the cucumber, tomato, onion and chilli in a bowl.",
+        "Season with the lemon juice, cumin and salt.",
+        "Toss in the coriander and leave for 3 minutes until the juices mingle, then serve."
+      ],
+      "notes": [
+        "Add the salt last so the salad does not turn watery.",
+        "Serve within 30 minutes."
+      ],
+      "nutrition": {
+        "kcal": 50,
+        "proteinG": 2,
+        "carbsG": 9,
+        "fatG": 0,
+        "fibreG": 3,
+        "sodiumMg": 310
+      }
+    },
+    {
+      "id": "street-style-sweet-potato-chaat-with-mint-yoghurt-and-lime",
+      "title": "Street Style Sweet Potato Chaat with Mint Yoghurt and Lime",
+      "summary": "Roasted sweet potato cubes with spiced yoghurt, lime and crisp onions, a Diwali party snack.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g sweet potatoes, cut into 2cm cubes",
+            "2 tbsp vegetable oil",
+            "1 tsp garam masala",
+            "150g plain yoghurt",
+            "2 tbsp chopped mint",
+            "1 tbsp lime juice",
+            "1 tsp brown sugar",
+            "1/2 red onion, finely diced",
+            "1 tbsp chopped coriander",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the sweet potatoes with the oil, garam masala and half the salt and roast at 210°C for 25 minutes until crisp at the edges.",
+        "Whisk the yoghurt with the mint, lime juice, sugar and remaining salt.",
+        "Pile the hot potatoes onto a plate and top with the yoghurt, onion and coriander."
+      ],
+      "notes": [
+        "Serve straight away so the potato stays crisp.",
+        "Add a pinch of chilli powder for extra heat."
+      ],
+      "nutrition": {
+        "kcal": 237,
+        "proteinG": 5,
+        "carbsG": 36,
+        "fatG": 7,
+        "fibreG": 5,
+        "sodiumMg": 460
+      }
+    },
+    {
+      "id": "dry-gobi-masala-cauliflower",
+      "title": "Dry Gobi Masala Cauliflower",
+      "summary": "Spiced dry-fried cauliflower with ginger, tomato and cumin, ideal for Diwali spreads.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 small cauliflower, cut into small florets",
+            "3 tbsp vegetable oil",
+            "1 tsp cumin seeds",
+            "1 onion, finely chopped",
+            "1 tbsp grated ginger",
+            "2 garlic cloves, minced",
+            "1 tomato, chopped",
+            "1 tsp ground turmeric",
+            "1 tsp garam masala",
+            "1 tsp ground coriander",
+            "3/4 tsp salt",
+            "2 tbsp chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a wide pan over medium heat, add the cumin seeds for 30 seconds until sizzling, then cook the onion for 6 minutes until golden.",
+        "Stir in the ginger, garlic and spices, then add the tomato and cook for 3 minutes until pulpy.",
+        "Add the cauliflower and salt, cover and cook for 8 minutes, stirring now and then, until tender with golden spots, then top with the coriander."
+      ],
+      "notes": [
+        "Add a splash of water if it starts to catch.",
+        "Serve hot."
+      ],
+      "nutrition": {
+        "kcal": 167,
+        "proteinG": 5,
+        "carbsG": 14,
+        "fatG": 9,
+        "fibreG": 5,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "thanksgiving-sage-apple-and-celery-bread-dressing-baked-crisp-on-top",
+      "title": "Thanksgiving Sage Apple and Celery Bread Dressing Baked Crisp on Top",
+      "summary": "A buttery oven-baked bread dressing with sage, apple and celery, crisp on top and soft inside.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 8,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "400g day-old bread, cubed",
+            "60g butter",
+            "1 onion, diced",
+            "3 celery stalks, diced",
+            "1 apple, diced",
+            "2 tbsp chopped sage",
+            "400ml chicken stock",
+            "1 egg, beaten",
+            "1/2 tsp salt",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Dry the bread cubes in a 160°C oven for 10 minutes until firm.",
+        "Melt the butter in a frying pan and cook the onion, celery and apple for 8 minutes until soft, then stir in the sage.",
+        "Mix everything with the stock, egg, salt and pepper, tip into a baking dish and bake at 190°C for 30 minutes until golden and the egg is set."
+      ],
+      "notes": [
+        "Food safety: cook the dressing until it reaches at least 74°C in the centre, especially if it was stuffed in poultry.",
+        "Use stale bread for best texture."
+      ],
+      "nutrition": {
+        "kcal": 238,
+        "proteinG": 7,
+        "carbsG": 33,
+        "fatG": 8,
+        "fibreG": 3,
+        "sodiumMg": 560
+      }
+    },
+    {
+      "id": "roasted-garlic-mashed-potatoes",
+      "title": "Roasted Garlic Mashed Potatoes",
+      "summary": "Silky mashed potatoes with sweet roasted garlic and plenty of butter.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 45,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 whole head of garlic",
+            "1kg floury potatoes, peeled and quartered",
+            "80g butter",
+            "150ml warm milk",
+            "1 tbsp olive oil",
+            "1 tsp salt",
+            "1/4 tsp white pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Cut the top off the garlic head, drizzle with the oil, wrap in foil and roast at 200°C for 40 minutes until soft and golden.",
+        "Boil the potatoes in salted water for 18 minutes until completely tender, then drain and steam dry.",
+        "Squeeze the garlic into the potatoes, add the butter and milk and mash until smooth."
+      ],
+      "notes": [
+        "Warm the milk so the potatoes stay hot.",
+        "Reheat with a splash of milk."
+      ],
+      "nutrition": {
+        "kcal": 246,
+        "proteinG": 4,
+        "carbsG": 29,
+        "fatG": 12,
+        "fibreG": 3,
+        "sodiumMg": 460
+      }
+    },
+    {
+      "id": "homemade-mushroom-cream-green-bean-bake-with-crispy-fried-onion-crown",
+      "title": "Homemade Mushroom Cream Green Bean Bake with Crispy Fried Onion Crown",
+      "summary": "Green beans in a creamy mushroom sauce topped with crisp golden onions, made without tinned soup.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g green beans, trimmed",
+            "300g mushrooms, sliced",
+            "2 tbsp butter",
+            "2 tbsp plain flour",
+            "300ml milk",
+            "100ml cream",
+            "2 garlic cloves, minced",
+            "1/2 tsp salt",
+            "1/4 tsp black pepper",
+            "1 onion, very thinly sliced",
+            "2 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the beans for 3 minutes until bright green, then drain.",
+        "Cook the mushrooms in the butter over medium-high heat for 6 minutes until browned, stir in the garlic and flour for 1 minute, then add the milk, cream, salt and pepper and simmer for 3 minutes until thick.",
+        "Fold in the beans, tip into a dish, top with the onion tossed in the oil and bake at 200°C for 20 minutes until bubbling and the onions are crisp."
+      ],
+      "notes": [
+        "Cover the dish loosely if the onions brown too fast.",
+        "Reheats well."
+      ],
+      "nutrition": {
+        "kcal": 173,
+        "proteinG": 5,
+        "carbsG": 12,
+        "fatG": 11,
+        "fibreG": 3,
+        "sodiumMg": 230
+      }
+    },
+    {
+      "id": "orange-maple-sweet-potato-wedges-roasted-with-cinnamon-for-thanksgiving",
+      "title": "Orange Maple Sweet Potato Wedges Roasted with Cinnamon for Thanksgiving",
+      "summary": "Sweet potato wedges roasted with orange, cinnamon and maple until caramelised.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 40,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1kg sweet potatoes, cut into wedges",
+            "3 tbsp olive oil",
+            "3 tbsp maple syrup",
+            "1 orange, zest and juice",
+            "1 tsp ground cinnamon",
+            "1/2 tsp salt",
+            "2 tbsp chopped pecans"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the sweet potatoes with the oil, cinnamon and salt on a large tray.",
+        "Roast at 210°C for 30 minutes until tender and browned at the edges.",
+        "Pour over the maple and orange juice and roast for 8 minutes more until sticky, then scatter with pecans and orange zest."
+      ],
+      "notes": [
+        "Turn the wedges once for even browning.",
+        "Serve hot."
+      ],
+      "nutrition": {
+        "kcal": 238,
+        "proteinG": 3,
+        "carbsG": 36,
+        "fatG": 8,
+        "fibreG": 5,
+        "sodiumMg": 270
+      }
+    },
+    {
+      "id": "passover-apple-and-walnut-charoset",
+      "title": "Passover Apple and Walnut Charoset",
+      "summary": "A sweet apple and walnut paste with cinnamon, symbolic on the Passover table.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "snack",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 apples, finely diced",
+            "100g walnuts, finely chopped",
+            "2 tbsp honey",
+            "1 tsp ground cinnamon",
+            "3 tbsp orange juice",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the apples with the lemon juice to stop them browning.",
+        "Stir in the walnuts, honey and cinnamon.",
+        "Add the orange juice gradually until the mixture holds together like a chunky paste."
+      ],
+      "notes": [
+        "Serve with matzo crackers.",
+        "Best eaten the day it is made."
+      ],
+      "nutrition": {
+        "kcal": 114,
+        "proteinG": 2,
+        "carbsG": 12,
+        "fatG": 6,
+        "fibreG": 2,
+        "sodiumMg": 5
+      }
+    },
+    {
+      "id": "beetroot-salad-with-horseradish-dressing",
+      "title": "Beetroot Salad with Horseradish Dressing",
+      "summary": "Roasted beetroot with a creamy horseradish and lemon dressing.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g beetroot, scrubbed",
+            "1 tbsp olive oil",
+            "100g sour cream",
+            "1 tbsp prepared horseradish",
+            "1 tbsp lemon juice",
+            "1 tbsp chopped dill",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Wrap the beetroot in foil with the oil and roast at 200°C for 45 minutes until a knife slides in easily.",
+        "Cool, peel and cut into wedges.",
+        "Mix the sour cream, horseradish, lemon juice, dill and salt, then spoon over the beetroot."
+      ],
+      "notes": [
+        "Wear gloves when peeling to avoid pink fingers.",
+        "Keeps for 3 days."
+      ],
+      "nutrition": {
+        "kcal": 147,
+        "proteinG": 3,
+        "carbsG": 16,
+        "fatG": 7,
+        "fibreG": 4,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "passover-potato-kugel",
+      "title": "Passover Potato Kugel",
+      "summary": "A crisp-edged baked potato pudding with onion and egg, a Passover and Shabbat favourite.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 60,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1kg potatoes, peeled",
+            "1 large onion",
+            "3 eggs",
+            "4 tbsp vegetable oil",
+            "2 tbsp potato starch",
+            "1 tsp salt",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Grate the potatoes and onion and squeeze out as much liquid as possible.",
+        "Mix with the eggs, 2 tbsp oil, potato starch, salt and pepper.",
+        "Heat the remaining oil in a baking dish in a 200°C oven for 5 minutes, add the potato mixture and bake for 50 minutes until deep golden and crisp at the edges."
+      ],
+      "notes": [
+        "Food safety: bake until the egg is fully set in the centre and refrigerate leftovers within 2 hours.",
+        "Serve straight from the oven."
+      ],
+      "nutrition": {
+        "kcal": 207,
+        "proteinG": 6,
+        "carbsG": 24,
+        "fatG": 9,
+        "fibreG": 3,
+        "sodiumMg": 320
+      }
+    },
+    {
+      "id": "carrot-tzimmes",
+      "title": "Carrot Tzimmes",
+      "summary": "A sweet, slow-baked carrot dish with orange and cinnamon.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 40,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g carrots, sliced into rounds",
+            "1 orange, juice and zest",
+            "2 tbsp honey",
+            "2 tbsp vegetable oil",
+            "1/2 tsp ground cinnamon",
+            "1/4 tsp ground ginger",
+            "1/2 tsp salt",
+            "100ml water"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the carrots with the oil, honey, cinnamon, ginger and salt in a baking dish.",
+        "Add the orange juice, zest and water and cover tightly with foil.",
+        "Bake at 180°C for 35 minutes, then uncover and bake for 10 minutes more until tender and glazed."
+      ],
+      "notes": [
+        "Serve with roast chicken or brisket.",
+        "Keeps for 3 days."
+      ],
+      "nutrition": {
+        "kcal": 153,
+        "proteinG": 2,
+        "carbsG": 22,
+        "fatG": 5,
+        "fibreG": 6,
+        "sodiumMg": 230
+      }
+    },
+    {
+      "id": "pea-and-potato-salad-with-mint-for-easter",
+      "title": "Pea and Potato Salad with Mint for Easter",
+      "summary": "A fresh, minty potato salad with sweet green peas, perfect with Easter lamb.",
+      "cuisine": "british",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 18,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g baby potatoes, halved",
+            "200g frozen peas",
+            "3 tbsp olive oil",
+            "1 tbsp white wine vinegar",
+            "1 tsp Dijon mustard",
+            "3 tbsp chopped mint",
+            "4 spring onions, sliced",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes in salted water for 12 minutes until tender, adding the peas for the last 2 minutes, then drain and cool slightly.",
+        "Whisk the oil, vinegar, mustard and salt together.",
+        "Toss the warm potatoes and peas with the dressing, mint and spring onions."
+      ],
+      "notes": [
+        "Dress while warm to soak in the flavour.",
+        "Serve warm or cold."
+      ],
+      "nutrition": {
+        "kcal": 207,
+        "proteinG": 5,
+        "carbsG": 28,
+        "fatG": 7,
+        "fibreG": 6,
+        "sodiumMg": 330
+      }
+    }
+  ]
+}

@@ -1,0 +1,2439 @@
+{
+  "about": "House recipes, batch 04 (slice B): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "spiced-onion-omelette-on-buttered-toast",
+      "title": "Spiced Onion Omelette on Buttered Toast",
+      "summary": "Spiced egg omelette with onion, tomato and green chilli, folded onto buttered toast.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 8,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 egg",
+            "1/2 brown onion, finely diced",
+            "1 tomato, diced",
+            "1 green chilli, finely chopped",
+            "1/2 tsp ground turmeric",
+            "1/2 tsp garam masala",
+            "1 handful coriander, chopped",
+            "1 tbsp butter",
+            "4 slice white bread",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the eggs with the onion, tomato, chilli, turmeric, garam masala, coriander and salt.",
+        "Melt half the butter in a non-stick pan over medium heat and pour in half the mixture. Cook 2 minutes each side until set through and golden.",
+        "Repeat with the remaining mixture until set, then toast the bread until golden, spread with the remaining butter and serve the omelettes on the toast."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until firm with no runny egg."
+      ],
+      "nutrition": {
+        "kcal": 428,
+        "proteinG": 20,
+        "carbsG": 36,
+        "fatG": 22,
+        "fibreG": 3,
+        "sodiumMg": 760
+      }
+    },
+    {
+      "id": "vegan-semolina-upma-breakfast-pots",
+      "title": "Vegan Semolina Upma Breakfast Pots",
+      "summary": "Toasted semolina cooked with mustard seed, curry leaf and peas into a soft, savoury breakfast.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 3,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup semolina",
+            "2 tbsp neutral oil",
+            "1 tsp mustard seed",
+            "10g curry leaf",
+            "1 brown onion, diced",
+            "1 green chilli, sliced",
+            "1 tsp grated ginger",
+            "1/2 cup pea",
+            "2 1/2 cups water",
+            "1 tsp salt",
+            "1 lemon, juiced"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the semolina in a dry pan over medium heat for 3 minutes until fragrant, then tip out.",
+        "Heat the oil in the same pan and fry the mustard seed and curry leaf until they pop. Add the onion, chilli and ginger and cook 4 minutes.",
+        "Pour in the water, add the peas and salt, and bring to the boil until bubbling.",
+        "Stir in the semolina in a steady stream, stirring constantly, then cover on low heat for 3 minutes until thick and fluffy.",
+        "Finish with lemon juice and serve hot."
+      ],
+      "nutrition": {
+        "kcal": 289,
+        "proteinG": 8,
+        "carbsG": 42,
+        "fatG": 9,
+        "fibreG": 4,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "besan-chilla-vegan-pancakes",
+      "title": "Besan Chilla Vegan Pancakes",
+      "summary": "Savoury chickpea flour pancakes with onion, tomato and coriander, naturally gluten free.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 3,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 1/2 cups chickpea flour",
+            "1 1/4 cups water",
+            "1/2 tsp ground turmeric",
+            "1/2 tsp cumin seed",
+            "1/2 tsp chilli powder",
+            "1/2 red onion, finely diced",
+            "1 tomato, finely diced",
+            "1 handful coriander, chopped",
+            "3 tbsp neutral oil",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the flour, water, turmeric, cumin, chilli powder and salt into a smooth batter, then fold through the onion, tomato and coriander.",
+        "Heat a little oil in a non-stick pan over medium heat and pour in a ladle of batter, spreading thin.",
+        "Cook 3 minutes until the underside is golden, flip and cook 2 minutes more until cooked through.",
+        "Repeat with the remaining batter and serve warm."
+      ],
+      "nutrition": {
+        "kcal": 286,
+        "proteinG": 12,
+        "carbsG": 29,
+        "fatG": 12,
+        "fibreG": 7,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "rava-uttapam-with-tomato-and-peas",
+      "title": "Rava Uttapam with Tomato and Peas",
+      "summary": "Thick South Indian semolina pancakes topped with tomato, peas and coriander.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup semolina",
+            "1/2 cup Greek yoghurt",
+            "3/4 cup water",
+            "1/2 tsp bicarbonate of soda",
+            "1 tomato, finely diced",
+            "1/2 cup pea",
+            "1 green chilli, chopped",
+            "1 handful coriander, chopped",
+            "3 tbsp neutral oil",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the semolina, yoghurt, water and salt into a thick batter and rest 15 minutes, then stir in the bicarbonate of soda.",
+        "Heat a little oil in a non-stick pan over medium heat and pour in a thick ladle of batter.",
+        "Scatter over the tomato, peas, chilli and coriander and press in lightly.",
+        "Cook 4 minutes, flip and cook 3 minutes more until golden and cooked through. Repeat with remaining batter."
+      ],
+      "notes": [
+        "Plus 15 minutes resting the batter."
+      ],
+      "nutrition": {
+        "kcal": 231,
+        "proteinG": 8,
+        "carbsG": 28,
+        "fatG": 9,
+        "fibreG": 3,
+        "sodiumMg": 560
+      }
+    },
+    {
+      "id": "spiced-flatbread-scramble-with-yoghurt",
+      "title": "Spiced Flatbread Scramble with Yoghurt",
+      "summary": "Torn flatbread fried in spiced butter with onion and tomato, served with cool yoghurt.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 flatbread",
+            "2 tbsp butter",
+            "1/2 red onion, sliced",
+            "1 tomato, diced",
+            "1 tsp sweet paprika",
+            "1/2 tsp ground cumin",
+            "1/4 tsp ground cardamom",
+            "1/2 tsp chilli flakes",
+            "1/2 cup Greek yoghurt",
+            "1 handful parsley, chopped",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Tear the flatbread into bite-sized pieces.",
+        "Melt the butter in a pan over medium heat and fry the onion 3 minutes. Add the paprika, cumin, cardamom and chilli flakes and stir for 30 seconds.",
+        "Add the tomato and cook 2 minutes, then toss through the flatbread and salt for 3 minutes until crisp at the edges.",
+        "Serve topped with yoghurt and parsley."
+      ],
+      "nutrition": {
+        "kcal": 247,
+        "proteinG": 10,
+        "carbsG": 30,
+        "fatG": 9,
+        "fibreG": 3,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "eggs-on-spiced-tomato-flatbread",
+      "title": "Eggs on Spiced Tomato Flatbread",
+      "summary": "Eggs baked in a cumin and paprika tomato base, scooped up with flatbread.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "1/2 brown onion, diced",
+            "2 garlic clove, crushed",
+            "400g tinned tomatoes",
+            "1 tsp sweet paprika",
+            "1/2 tsp ground cumin",
+            "4 egg",
+            "2 flatbread",
+            "1 handful coriander, chopped",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a deep frying pan over medium heat and soften the onion and garlic for 4 minutes.",
+        "Add the tomatoes, paprika, cumin and salt and simmer 6 minutes until thick.",
+        "Make four wells, crack in the eggs, cover and cook 4 to 5 minutes until the whites are set.",
+        "Scatter with coriander and serve with the flatbread."
+      ],
+      "notes": [
+        "Food safety: cook until the whites are fully set; do not serve runny eggs to young children, pregnant women or older people."
+      ],
+      "nutrition": {
+        "kcal": 348,
+        "proteinG": 17,
+        "carbsG": 36,
+        "fatG": 14,
+        "fibreG": 5,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "mealie-pap-porridge-with-cinnamon-apple",
+      "title": "Mealie Pap Porridge with Cinnamon Apple",
+      "summary": "Creamy maize porridge topped with butter-braised apple and cinnamon.",
+      "cuisine": "south-african",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 20,
+      "servings": 3,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3/4 cup polenta",
+            "2 cups milk",
+            "1 cup water",
+            "1 tbsp butter",
+            "2 apple, diced",
+            "2 tbsp brown sugar",
+            "1/2 tsp ground cinnamon",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Bring the milk, water and salt to a simmer in a saucepan until steaming.",
+        "Whisk in the polenta and cook over low heat, stirring often, for 15 minutes until thick and creamy.",
+        "Meanwhile melt the butter in a small pan and cook the apple with the sugar and cinnamon for 8 minutes until soft.",
+        "Spoon the porridge into bowls and top with the apple."
+      ],
+      "nutrition": {
+        "kcal": 334,
+        "proteinG": 9,
+        "carbsG": 55,
+        "fatG": 8,
+        "fibreG": 3,
+        "sodiumMg": 280
+      }
+    },
+    {
+      "id": "roosterkoek-grilled-bread-rolls-with-cheddar",
+      "title": "Roosterkoek Grilled Bread Rolls with Cheddar",
+      "summary": "Soft yeasted rolls browned on the grill and filled with melted cheddar and tomato.",
+      "cuisine": "south-african",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 cups plain flour",
+            "7g instant dried yeast",
+            "1 tsp white sugar",
+            "1 tsp salt",
+            "1 cup warm water",
+            "2 tbsp neutral oil",
+            "100g cheddar",
+            "1 tomato, sliced",
+            "1 tbsp butter"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour, yeast, sugar and salt, then add the water and oil and knead 8 minutes until smooth.",
+        "Cover and prove 45 minutes until doubled, then shape into 8 flat rolls and rest 10 minutes.",
+        "Cook in a lightly oiled pan over medium heat for 6 to 7 minutes each side until golden and hollow when tapped.",
+        "Split, butter, then fill with cheddar and tomato and grill until melted."
+      ],
+      "notes": [
+        "Plus about 55 minutes proving and resting."
+      ],
+      "nutrition": {
+        "kcal": 453,
+        "proteinG": 16,
+        "carbsG": 62,
+        "fatG": 15,
+        "fibreG": 3,
+        "sodiumMg": 760
+      }
+    },
+    {
+      "id": "tapsilog-beef-and-egg-rice-plates",
+      "title": "Tapsilog Beef and Egg Rice Plates",
+      "summary": "Soy-calamansi style marinated beef strips with garlic rice and a fried egg.",
+      "cuisine": "filipino",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g beef sirloin, thinly sliced",
+            "2 tbsp soy sauce",
+            "1 lime, juiced",
+            "3 garlic clove, minced",
+            "1/2 tsp black pepper",
+            "1 cup jasmine rice",
+            "2 tbsp neutral oil",
+            "2 egg",
+            "1 tomato, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Marinate the beef with the soy sauce, lime juice, 1 garlic clove and pepper.",
+        "Cook the rice by your usual method until tender and fluffy. Fry the remaining garlic in half the oil until golden and fold through the rice.",
+        "Sear the beef in a hot pan 2 minutes each side until browned and cooked through to at least 63°C inside, then rest briefly.",
+        "Fry the eggs in the remaining oil until the whites are set and serve with the beef, garlic rice and tomato."
+      ],
+      "notes": [
+        "Food safety: cook steak strips to at least 63°C (75°C for mince) and keep raw meat away from ready foods. Cook eggs until the whites are set.",
+        "Plus 30 minutes marinating."
+      ],
+      "nutrition": {
+        "kcal": 618,
+        "proteinG": 42,
+        "carbsG": 62,
+        "fatG": 22,
+        "fibreG": 2,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "curry-egg-roti-pockets",
+      "title": "Curry Egg Roti Pockets",
+      "summary": "Roti folded around a spiced egg and onion filling.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 roti",
+            "4 egg",
+            "1/2 brown onion, finely diced",
+            "2 tsp curry powder",
+            "1 green chilli, chopped",
+            "1 handful coriander, chopped",
+            "2 tbsp neutral oil",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion in the oil over medium heat for 4 minutes, then stir in the curry powder and chilli for 1 minute.",
+        "Beat the eggs with the salt and pour in. Stir gently for 3 minutes until just firm, then add the coriander.",
+        "Warm the roti in a dry pan 30 seconds each side.",
+        "Spoon the egg onto the roti, fold in the sides and serve."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until firm with no liquid egg left."
+      ],
+      "nutrition": {
+        "kcal": 527,
+        "proteinG": 23,
+        "carbsG": 47,
+        "fatG": 27,
+        "fibreG": 2,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "martabak-telur-egg-and-onion-parcels",
+      "title": "Martabak Telur Egg and Onion Parcels",
+      "summary": "Crisp parcels of wrapper filled with spiced egg, spring onion and onion.",
+      "cuisine": "indonesian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 spring roll wrapper",
+            "4 egg",
+            "1 spring onion, sliced",
+            "1/2 brown onion, diced",
+            "1 tsp curry powder",
+            "1/2 tsp salt",
+            "1/2 tsp black pepper",
+            "4 tbsp neutral oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Beat the eggs with the spring onion, onion, curry powder, salt and pepper.",
+        "Lay a wrapper flat, pour a quarter of the mixture into the centre and fold the corners in to make a square parcel.",
+        "Heat the oil in a frying pan over medium heat and fry the parcels seam-side down for 3 minutes each side until golden and the egg is set.",
+        "Cut into squares and serve hot."
+      ],
+      "notes": [
+        "Food safety: cook until the egg is fully set."
+      ],
+      "nutrition": {
+        "kcal": 247,
+        "proteinG": 11,
+        "carbsG": 12,
+        "fatG": 17,
+        "fibreG": 1,
+        "sodiumMg": 420
+      }
+    },
+    {
+      "id": "thai-omelette-with-jasmine-rice",
+      "title": "Thai Omelette with Jasmine Rice",
+      "summary": "Puffy deep-fried style omelette with fish sauce and lime over steamed rice.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 egg",
+            "1 tbsp fish sauce",
+            "1/2 lime, juiced",
+            "1 spring onion, sliced",
+            "1/4 cup neutral oil",
+            "1 cup jasmine rice",
+            "1 tsp sriracha"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice by your usual method until tender and fluffy.",
+        "Beat the eggs with the fish sauce, lime juice and spring onion.",
+        "Heat the oil in a small wok until very hot and pour in the egg, letting it puff and crisp.",
+        "Cook 1 minute, flip and cook 1 minute more until golden and set.",
+        "Serve over rice with sriracha."
+      ],
+      "notes": [
+        "Food safety: cook the egg until fully set."
+      ],
+      "nutrition": {
+        "kcal": 574,
+        "proteinG": 20,
+        "carbsG": 60,
+        "fatG": 28,
+        "fibreG": 1,
+        "sodiumMg": 850
+      }
+    },
+    {
+      "id": "p-t-baguette-with-pan-fried-eggs-and-soy",
+      "title": "Pâté Baguette with Pan-Fried Eggs and Soy",
+      "summary": "Eggs fried in a pan with pâté, soy and spring onion, served with a crusty baguette.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": true,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "1 baguette",
+            "40g pâté",
+            "4 egg",
+            "1 tbsp butter",
+            "1 tbsp soy sauce",
+            "1 spring onion, sliced",
+            "1 handful coriander",
+            "1/2 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the baguette and split it, spreading the pâté inside.",
+        "Melt the butter in a small frying pan over medium heat. Crack in the eggs and cook 3 minutes until the whites are set.",
+        "Splash over the soy sauce and scatter with spring onion and pepper.",
+        "Serve straight from the pan with the baguette and coriander."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set."
+      ],
+      "nutrition": {
+        "kcal": 426,
+        "proteinG": 20,
+        "carbsG": 45,
+        "fatG": 18,
+        "fibreG": 2,
+        "sodiumMg": 1200
+      }
+    },
+    {
+      "id": "korean-potato-hash-rounds",
+      "title": "Korean Potato Hash Rounds",
+      "summary": "Crisp grated potato rounds with spring onion and a gochujang-sesame dip.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 3,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 potato",
+            "2 spring onion, sliced",
+            "1 egg",
+            "2 tbsp potato starch",
+            "1 tsp salt",
+            "4 tbsp neutral oil",
+            "1 tbsp gochujang",
+            "1 tbsp rice vinegar",
+            "1 tsp sesame oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Grate the potatoes, squeeze out as much liquid as you can and mix with the spring onion, egg, starch and salt.",
+        "Heat the oil in a frying pan over medium heat and fry heaped spoonfuls, pressed flat, for 4 minutes each side until deep golden and cooked through.",
+        "Mix the gochujang, vinegar and sesame oil for dipping."
+      ],
+      "notes": [
+        "Food safety: cook until the egg is set."
+      ],
+      "nutrition": {
+        "kcal": 341,
+        "proteinG": 7,
+        "carbsG": 38,
+        "fatG": 17,
+        "fibreG": 4,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "sweet-potato-rice-porridge-with-sesame",
+      "title": "Sweet Potato Rice Porridge with Sesame",
+      "summary": "Soft rice and sweet potato congee finished with toasted sesame and a little soy.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 35,
+      "servings": 3,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1/2 cup jasmine rice",
+            "5 cups water",
+            "1 sweet potato, cubed",
+            "20g ginger, sliced",
+            "1 tbsp sesame seed",
+            "2 spring onion, sliced",
+            "1 tbsp soy sauce",
+            "1 tsp sesame oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the rice, water and ginger in a pot over medium-low heat for 20 minutes, stirring now and then.",
+        "Add the sweet potato and cook 15 minutes more until the porridge is thick and the potato soft.",
+        "Toast the sesame seed in a dry pan for 2 minutes.",
+        "Ladle into bowls and top with the sesame, spring onion, soy sauce and sesame oil."
+      ],
+      "nutrition": {
+        "kcal": 276,
+        "proteinG": 6,
+        "carbsG": 52,
+        "fatG": 4,
+        "fibreG": 4,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "okayu-rice-porridge-with-furikake-egg",
+      "title": "Okayu Rice Porridge with Furikake Egg",
+      "summary": "Plain Japanese rice porridge topped with a soft-set egg and furikake.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 30,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1/2 cup sushi rice",
+            "3 cups water",
+            "2 egg",
+            "1 tbsp furikake",
+            "1 tsp soy sauce",
+            "1 spring onion, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Rinse the rice and simmer in the water over low heat, partly covered, for 25 minutes until thick and creamy.",
+        "Meanwhile boil the eggs for 7 minutes, cool in cold water and peel.",
+        "Ladle the porridge into bowls, halve the eggs on top and finish with furikake, soy sauce and spring onion."
+      ],
+      "notes": [
+        "Food safety: use fresh eggs; the yolk will be soft but the white should be set."
+      ],
+      "nutrition": {
+        "kcal": 243,
+        "proteinG": 11,
+        "carbsG": 38,
+        "fatG": 5,
+        "fibreG": 1,
+        "sodiumMg": 420
+      }
+    },
+    {
+      "id": "miso-butter-mushroom-toast",
+      "title": "Miso Butter Mushroom Toast",
+      "summary": "Seared mushrooms in miso butter piled on thick toast with spring onion.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g mixed mushrooms, sliced",
+            "1 tbsp butter",
+            "1 tbsp miso paste",
+            "1 tsp soy sauce",
+            "1 garlic clove, minced",
+            "4 slice sourdough",
+            "2 spring onion, sliced",
+            "1/2 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Sear the mushrooms in a dry pan over high heat for 5 minutes until golden.",
+        "Add the butter, miso, soy sauce and garlic and cook 2 minutes more until glossy.",
+        "Toast the sourdough until golden and spoon the mushrooms on top.",
+        "Finish with spring onion and pepper."
+      ],
+      "nutrition": {
+        "kcal": 278,
+        "proteinG": 11,
+        "carbsG": 38,
+        "fatG": 8,
+        "fibreG": 5,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "steamed-egg-and-pork-rice-plates",
+      "title": "Steamed Egg and Pork Rice Plates",
+      "summary": "Silky steamed eggs with savoury minced pork over rice.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g pork mince",
+            "1 tbsp soy sauce",
+            "1 tsp sesame oil",
+            "3 egg",
+            "3/4 cup water",
+            "1/2 tsp salt",
+            "1 cup jasmine rice",
+            "2 spring onion, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the pork with the soy sauce and sesame oil and spread in a shallow heatproof dish.",
+        "Beat the eggs with the water and salt, strain, and pour over the pork.",
+        "Cover the dish tightly and steam over simmering water for 15 minutes until the egg is just set and the pork reaches 75°C.",
+        "Cook the rice by your usual method until tender and fluffy and serve topped with the steamed egg and spring onion."
+      ],
+      "notes": [
+        "Food safety: cook the pork mince to 75°C with no pink, and make sure the egg is fully set."
+      ],
+      "nutrition": {
+        "kcal": 517,
+        "proteinG": 28,
+        "carbsG": 62,
+        "fatG": 17,
+        "fibreG": 2,
+        "sodiumMg": 870
+      }
+    },
+    {
+      "id": "kenyan-spiced-potato-mashed-bread-wraps",
+      "title": "Kenyan Spiced Potato Mashed Bread Wraps",
+      "summary": "Chapati wraps filled with turmeric potato, peas and fresh tomato.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 roti",
+            "3 potato, cubed",
+            "1/2 cup pea",
+            "1 brown onion, diced",
+            "2 tbsp neutral oil",
+            "1 tsp ground turmeric",
+            "1 tsp ground cumin",
+            "1 tomato, diced",
+            "1 handful coriander, chopped",
+            "1 lemon, juiced",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes for 12 minutes until tender, adding the peas for the last 2 minutes. Drain.",
+        "Fry the onion in the oil for 4 minutes, add the turmeric and cumin and stir 30 seconds.",
+        "Add the potatoes, peas, tomato and salt, mash roughly, and cook 3 minutes. Stir in the coriander and lemon juice.",
+        "Warm the roti, fill with the potato mix and roll up."
+      ],
+      "nutrition": {
+        "kcal": 345,
+        "proteinG": 9,
+        "carbsG": 55,
+        "fatG": 9,
+        "fibreG": 4,
+        "sodiumMg": 760
+      }
+    },
+    {
+      "id": "kachumbari-beef-samosa-pockets",
+      "title": "Kachumbari Beef Samosa Pockets",
+      "summary": "Crisp baked pastry pockets with spiced beef mince and a tomato-onion relish.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g beef mince",
+            "1 brown onion, diced",
+            "2 garlic clove, minced",
+            "1 tsp ground cumin",
+            "1 tsp ground coriander",
+            "1/2 tsp ground turmeric",
+            "8 spring roll wrapper",
+            "1 tbsp neutral oil",
+            "1 tomato, diced",
+            "1/2 red onion, finely diced",
+            "1 lime, juiced",
+            "1 handful coriander, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onion and garlic in the oil for 4 minutes, add the mince and spices and cook 8 minutes, breaking up, until browned and cooked through at 75°C. Cool.",
+        "Fold the wrappers into triangles around the filling and brush the edges with a little water to seal.",
+        "Bake at 200°C for 15 minutes until golden and crisp.",
+        "Mix the tomato, red onion, lime juice and coriander and serve alongside."
+      ],
+      "notes": [
+        "Food safety: cook the beef mince to 75°C with no pink before wrapping, and cool it quickly."
+      ],
+      "nutrition": {
+        "kcal": 346,
+        "proteinG": 22,
+        "carbsG": 27,
+        "fatG": 16,
+        "fibreG": 3,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "pilau-beef-rice-lunch-pot",
+      "title": "Pilau Beef Rice Lunch Pot",
+      "summary": "Fragrant Swahili-style spiced rice with tender beef and caramelised onion.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g beef chuck, cubed",
+            "2 brown onion, sliced",
+            "3 garlic clove, minced",
+            "1 tbsp ginger, grated",
+            "1 tsp cumin seed",
+            "1/2 tsp ground cloves",
+            "1 cinnamon stick",
+            "3 cardamom pod",
+            "1 1/2 cups basmati rice",
+            "3 cups beef stock",
+            "3 tbsp neutral oil",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the onion in the oil over medium heat for 10 minutes until deep golden.",
+        "Add the beef, garlic, ginger and spices and sear 5 minutes.",
+        "Add the stock and salt, cover and simmer 25 minutes until the beef is tender.",
+        "Stir in the rice, cover and cook on low for 12 minutes until the rice is tender and the beef reaches at least 75°C inside, then rest 5 minutes."
+      ],
+      "notes": [
+        "Food safety: cook diced beef to at least 75°C inside; refrigerate leftovers within an hour."
+      ],
+      "nutrition": {
+        "kcal": 534,
+        "proteinG": 32,
+        "carbsG": 64,
+        "fatG": 16,
+        "fibreG": 3,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "chickpea-coconut-curry-wraps",
+      "title": "Chickpea Coconut Curry Wraps",
+      "summary": "Creamy coconut chickpeas with tomato and coriander wrapped in warm flatbread.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g chickpea",
+            "1 brown onion, diced",
+            "2 garlic clove, minced",
+            "1 tbsp ginger, grated",
+            "2 tsp curry powder",
+            "1 tomato, diced",
+            "200ml coconut milk",
+            "2 tbsp neutral oil",
+            "4 flatbread",
+            "1 handful coriander, chopped",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onion, garlic and ginger in the oil for 5 minutes.",
+        "Add the curry powder and tomato and cook 3 minutes, then add the chickpeas, coconut milk and salt.",
+        "Simmer 8 minutes until thick, then stir in the coriander.",
+        "Spoon into warmed flatbread and roll up."
+      ],
+      "nutrition": {
+        "kcal": 446,
+        "proteinG": 14,
+        "carbsG": 54,
+        "fatG": 18,
+        "fibreG": 6,
+        "sodiumMg": 760
+      }
+    },
+    {
+      "id": "samp-and-beans-lunch-bowls",
+      "title": "Samp and Beans Lunch Bowls",
+      "summary": "Hearty maize and bean bowls with tomato, onion and a little chilli.",
+      "cuisine": "south-african",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup polenta",
+            "400g kidney bean, tinned",
+            "2 brown onion, diced",
+            "400g tinned tomatoes",
+            "2 garlic clove, minced",
+            "1 tsp sweet paprika",
+            "1 tsp curry powder",
+            "1 tbsp neutral oil",
+            "3 cups water",
+            "1/2 tsp salt",
+            "1 handful parsley, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Bring the water and salt to the boil, whisk in the polenta and cook on low 15 minutes, stirring, until thick.",
+        "Meanwhile fry the onion and garlic in the oil for 5 minutes, add the paprika and curry powder, then the tomatoes.",
+        "Simmer 8 minutes, add the beans and heat through.",
+        "Spoon the polenta into bowls, ladle over the beans and scatter with parsley."
+      ],
+      "nutrition": {
+        "kcal": 405,
+        "proteinG": 14,
+        "carbsG": 70,
+        "fatG": 5,
+        "fibreG": 12,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "fried-bread-balls-with-curried-beef-mince",
+      "title": "Fried Bread Balls with Curried Beef Mince",
+      "summary": "Golden fried bread balls split and filled with a mild curried beef mince.",
+      "cuisine": "south-african",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 cups plain flour",
+            "7g instant dried yeast",
+            "1 tsp white sugar",
+            "1 tsp salt",
+            "1 cup warm water",
+            "1/2 cup neutral oil",
+            "400g beef mince",
+            "1 brown onion, diced",
+            "2 tsp curry powder",
+            "2 tbsp tomato paste",
+            "1/2 cup water"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour, yeast, sugar and salt with the warm water into a soft dough, knead 5 minutes, cover and prove 45 minutes.",
+        "Cook the onion in a little oil for 4 minutes, add the mince and curry powder and brown 8 minutes. Stir in the tomato paste and water and simmer 10 minutes until cooked through at 75°C.",
+        "Shape the dough into 8 balls and fry in shallow oil over medium heat for 8 minutes, turning, until deep golden and cooked inside.",
+        "Split each vetkoek and fill with the mince."
+      ],
+      "notes": [
+        "Food safety: cook the mince to 75°C with no pink.",
+        "Plus about 45 minutes proving."
+      ],
+      "nutrition": {
+        "kcal": 629,
+        "proteinG": 28,
+        "carbsG": 62,
+        "fatG": 29,
+        "fibreG": 4,
+        "sodiumMg": 950
+      }
+    },
+    {
+      "id": "biltong-free-chicken-mayo-lunch-rolls",
+      "title": "Biltong-Free Chicken Mayo Lunch Rolls",
+      "summary": "Poached chicken with spring onion and mayonnaise in soft rolls with lettuce.",
+      "cuisine": "south-african",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g chicken breast",
+            "3 tbsp mayonnaise",
+            "1 spring onion, sliced",
+            "1/2 tsp mustard powder",
+            "1 tbsp lemon juice",
+            "4 bread roll",
+            "1 cup lettuce, shredded",
+            "1 tomato, sliced",
+            "1/2 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the chicken in water for 15 minutes until the juices run clear and the thickest part reaches 75°C. Cool and shred.",
+        "Mix the chicken with the mayonnaise, spring onion, mustard powder, lemon juice and pepper.",
+        "Fill the rolls with lettuce, tomato and the chicken mix."
+      ],
+      "notes": [
+        "Food safety: cook chicken to 75°C before shredding; keep filled rolls refrigerated until serving."
+      ],
+      "nutrition": {
+        "kcal": 394,
+        "proteinG": 36,
+        "carbsG": 34,
+        "fatG": 12,
+        "fibreG": 3,
+        "sodiumMg": 540
+      }
+    },
+    {
+      "id": "crisp-chopped-chicken-sisig-plates",
+      "title": "Crisp Chopped Chicken Sisig Plates",
+      "summary": "Chopped crisp-edged chicken thigh with onion, chilli and lime over rice, topped with an egg.",
+      "cuisine": "filipino",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 3,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g chicken thigh",
+            "1/2 red onion, diced",
+            "1 red chilli, chopped",
+            "2 tbsp soy sauce",
+            "2 lime, juiced",
+            "1 tbsp neutral oil",
+            "1 cup jasmine rice",
+            "3 egg",
+            "1 tbsp mayonnaise"
+          ]
+        }
+      ],
+      "steps": [
+        "Grill or pan-fry the chicken 8 minutes each side over medium-high until browned and 75°C at the thickest point. Rest, then chop finely.",
+        "Fry the chopped chicken in the oil in a hot pan for 4 minutes until crisp at the edges.",
+        "Toss with the onion, chilli, soy, lime juice and mayonnaise.",
+        "Cook the rice by your usual method until tender and fluffy, fry the eggs and serve on top."
+      ],
+      "notes": [
+        "Food safety: cook chicken to 75°C throughout and fry the eggs until whites are set."
+      ],
+      "nutrition": {
+        "kcal": 578,
+        "proteinG": 38,
+        "carbsG": 56,
+        "fatG": 22,
+        "fibreG": 2,
+        "sodiumMg": 960
+      }
+    },
+    {
+      "id": "filipino-egg-rolls-with-pork",
+      "title": "Filipino Egg Rolls with Pork",
+      "summary": "Crisp lumpia rolls of pork mince, carrot and onion.",
+      "cuisine": "filipino",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g pork mince",
+            "1 carrot, grated",
+            "1/2 brown onion, finely diced",
+            "2 garlic clove, minced",
+            "1 spring onion, sliced",
+            "1 tbsp soy sauce",
+            "12 spring roll wrapper",
+            "3 tbsp neutral oil",
+            "1/4 cup sweet chilli sauce"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the pork with the carrot, onion, garlic, spring onion and soy sauce.",
+        "Place a spoonful on each wrapper, roll tightly and seal the edge with a dab of water.",
+        "Fry in the oil over medium heat for 5 to 6 minutes, turning, until golden and the pork reaches 75°C inside.",
+        "Drain and serve with the sweet chilli sauce."
+      ],
+      "notes": [
+        "Food safety: cook the pork to 75°C throughout; cut one roll open to check no pink remains."
+      ],
+      "nutrition": {
+        "kcal": 508,
+        "proteinG": 20,
+        "carbsG": 34,
+        "fatG": 32,
+        "fibreG": 2,
+        "sodiumMg": 680
+      }
+    },
+    {
+      "id": "filipino-chicken-pastel-hand-pies",
+      "title": "Filipino Chicken Pastel Hand Pies",
+      "summary": "Flaky pies of creamy chicken, potato, carrot and peas.",
+      "cuisine": "filipino",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 30,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "400g chicken thigh, diced",
+            "1 potato, diced",
+            "1 carrot, diced",
+            "1/2 cup pea",
+            "1 brown onion, diced",
+            "2 tbsp plain flour",
+            "1 cup milk",
+            "1 tbsp butter",
+            "2 sheet puff pastry",
+            "1 egg",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Melt the butter, cook the onion 4 minutes, add the chicken and brown 6 minutes.",
+        "Add the flour, then the milk gradually, with the potato, carrot and salt. Simmer 10 minutes until thick and the chicken is cooked through at 75°C. Add the peas and cool.",
+        "Cut the pastry into 8 squares, fill 4, top with the rest and seal. Brush with beaten egg.",
+        "Bake at 200°C for 20 to 25 minutes until puffed and golden."
+      ],
+      "notes": [
+        "Food safety: cook the chicken to 75°C before filling, and cool the filling quickly."
+      ],
+      "nutrition": {
+        "kcal": 668,
+        "proteinG": 34,
+        "carbsG": 55,
+        "fatG": 34,
+        "fibreG": 3,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "calamansi-style-chicken-adobo-rice-plates",
+      "title": "Calamansi-Style Chicken Adobo Rice Plates",
+      "summary": "Gluten-free adobo of chicken in tamari, coconut vinegar, garlic and bay leaf.",
+      "cuisine": "filipino",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g chicken thigh",
+            "1/3 cup tamari",
+            "1/3 cup coconut vinegar",
+            "6 garlic clove, crushed",
+            "3 bay leaf",
+            "1 tsp black pepper",
+            "1 tbsp neutral oil",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the chicken in the oil in a pot over medium-high heat for 6 minutes.",
+        "Add the tamari, vinegar, garlic, bay and pepper with 1/2 cup water, cover and simmer 25 minutes until the chicken reaches 75°C.",
+        "Uncover and reduce the liquid for 5 minutes until glossy.",
+        "Cook the rice by your usual method until tender and fluffy and serve with the chicken."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until 75°C throughout."
+      ],
+      "nutrition": {
+        "kcal": 524,
+        "proteinG": 38,
+        "carbsG": 52,
+        "fatG": 18,
+        "fibreG": 1,
+        "sodiumMg": 1050
+      }
+    },
+    {
+      "id": "pork-bistek-style-tamari-pork-and-onions",
+      "title": "Pork Bistek Style Tamari Pork and Onions",
+      "summary": "Tender pork slices with lime and tamari over onion rings, gluten free.",
+      "cuisine": "filipino",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g pork loin, thinly sliced",
+            "1/3 cup tamari",
+            "3 lime, juiced",
+            "3 brown onion, sliced in rings",
+            "3 garlic clove, minced",
+            "2 tbsp neutral oil",
+            "1 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Marinate the pork in the tamari, lime juice and garlic.",
+        "Cook the rice by your usual method until tender and fluffy.",
+        "Sear the onions in half the oil for 5 minutes and set aside.",
+        "Cook the pork in the remaining oil for 6 minutes with the marinade until no pink remains and it reaches 70°C, then return the onions."
+      ],
+      "notes": [
+        "Food safety: cook fresh pork to 70°C with no pink remaining.",
+        "Plus 30 minutes marinating."
+      ],
+      "nutrition": {
+        "kcal": 512,
+        "proteinG": 40,
+        "carbsG": 55,
+        "fatG": 14,
+        "fibreG": 3,
+        "sodiumMg": 1000
+      }
+    },
+    {
+      "id": "rendang-daging-slow-beef",
+      "title": "Rendang Daging Slow Beef",
+      "summary": "Beef simmered in coconut milk, lemongrass and chilli until dark, dry and intensely rich.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 30,
+      "cookMinutes": 150,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1kg beef chuck, cubed",
+            "400ml coconut milk",
+            "3 stalk lemongrass, bruised",
+            "4 makrut lime leaf",
+            "40g galangal, sliced",
+            "40g ginger, sliced",
+            "5 garlic clove",
+            "4 shallot",
+            "4 dried chilli",
+            "2 tsp ground coriander",
+            "1 tsp ground turmeric",
+            "3 tbsp desiccated coconut",
+            "2 tbsp palm sugar",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the garlic, shallots, galangal, ginger and soaked chillies to a paste.",
+        "Toast the desiccated coconut in a dry pan until deep golden.",
+        "Add the paste, coconut milk, lemongrass, lime leaves, spices and beef to a heavy pot and simmer, stirring, for 2 hours.",
+        "Stir in the coconut, sugar and salt and cook until the sauce is dry and clinging, about 20 minutes.",
+        "Check the beef is tender and has passed 75°C inside, then serve."
+      ],
+      "notes": [
+        "Food safety: braise diced beef until tender and well past 75°C inside."
+      ],
+      "nutrition": {
+        "kcal": 474,
+        "proteinG": 42,
+        "carbsG": 12,
+        "fatG": 28,
+        "fibreG": 3,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "ayam-percik-grilled-coconut-chicken",
+      "title": "Ayam Percik Grilled Coconut Chicken",
+      "summary": "Chicken thighs grilled with a lemongrass and turmeric coconut baste, gluten free.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g chicken thigh",
+            "200ml coconut milk",
+            "3 stalk lemongrass",
+            "20g ginger",
+            "3 garlic clove",
+            "4 shallot",
+            "1 tsp ground turmeric",
+            "1 tsp ground coriander",
+            "1 tbsp tamari",
+            "1 tbsp palm sugar",
+            "2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the lemongrass, ginger, garlic, shallots and spices with half the coconut milk and marinate the chicken.",
+        "Cook the rice by your usual method until tender and fluffy.",
+        "Grill the chicken 12 minutes each side, basting with the remaining coconut milk, until browned and 75°C.",
+        "Stir the tamari and sugar into the leftover marinade and simmer 5 minutes, then spoon over the chicken."
+      ],
+      "notes": [
+        "Food safety: boil the leftover marinade 5 minutes before using as a glaze, and cook chicken to 75°C.",
+        "Plus 1 hour marinating."
+      ],
+      "nutrition": {
+        "kcal": 680,
+        "proteinG": 44,
+        "carbsG": 62,
+        "fatG": 28,
+        "fibreG": 2,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "malaysian-kapitan-chicken-curry",
+      "title": "Malaysian Kapitan Chicken Curry",
+      "summary": "Mild coconut chicken curry with lemongrass, turmeric and lime leaves.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g chicken thigh",
+            "250ml coconut milk",
+            "2 brown onion, diced",
+            "4 garlic clove",
+            "30g ginger",
+            "1 tbsp curry powder",
+            "2 stalk lemongrass",
+            "3 makrut lime leaf",
+            "2 tbsp neutral oil",
+            "1 lime, juiced",
+            "1 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the onion, garlic and ginger to a paste and fry in the oil for 5 minutes.",
+        "Add the curry powder and chicken and brown 5 minutes.",
+        "Add the coconut milk, lemongrass and lime leaves and simmer 25 minutes until the chicken reaches 75°C.",
+        "Finish with lime juice and serve with cooked jasmine rice."
+      ],
+      "notes": [
+        "Food safety: cook chicken thigh to 75°C throughout."
+      ],
+      "nutrition": {
+        "kcal": 710,
+        "proteinG": 42,
+        "carbsG": 44,
+        "fatG": 40,
+        "fibreG": 3,
+        "sodiumMg": 820
+      }
+    },
+    {
+      "id": "apricot-cinnamon-chicken-curry-pot",
+      "title": "Apricot Cinnamon Chicken Curry Pot",
+      "summary": "Gently spiced chicken curry with apricot, tomato and cinnamon.",
+      "cuisine": "south-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g chicken thigh",
+            "2 brown onion, diced",
+            "3 garlic clove, minced",
+            "1 tbsp ginger",
+            "2 tbsp curry powder",
+            "1 cinnamon stick",
+            "400g tinned tomatoes",
+            "3 dried apricot, chopped",
+            "2 tbsp neutral oil",
+            "1 tsp salt",
+            "1 cup basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the chicken in the oil for 6 minutes and set aside.",
+        "Fry the onion, garlic and ginger 5 minutes, add the curry powder and cinnamon.",
+        "Return the chicken, add the tomatoes, apricot and salt, cover and simmer 30 minutes until 75°C at the thickest part.",
+        "Cook the rice by your usual method until tender and fluffy and serve alongside."
+      ],
+      "notes": [
+        "Food safety: cook chicken to 75°C throughout."
+      ],
+      "nutrition": {
+        "kcal": 582,
+        "proteinG": 38,
+        "carbsG": 56,
+        "fatG": 22,
+        "fibreG": 4,
+        "sodiumMg": 850
+      }
+    },
+    {
+      "id": "mozambican-peri-peri-prawns-with-rice",
+      "title": "Mozambican Peri-Peri Prawns with Rice",
+      "summary": "Garlicky chilli-lemon prawns over steamed rice, gluten free.",
+      "cuisine": "south-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 3,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g prawn",
+            "4 garlic clove, minced",
+            "2 bird's eye chilli, chopped",
+            "1 lemon, juiced",
+            "2 tbsp olive oil",
+            "1 tsp sweet paprika",
+            "1 cup jasmine rice",
+            "1 handful parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the prawns with the garlic, chilli, lemon juice, paprika and oil.",
+        "Cook the rice by your usual method until tender and fluffy.",
+        "Sear the prawns in a hot pan 2 to 3 minutes each side until opaque and curled.",
+        "Serve over rice with parsley."
+      ],
+      "notes": [
+        "Food safety: cook prawns until opaque and pink all the way through."
+      ],
+      "nutrition": {
+        "kcal": 482,
+        "proteinG": 32,
+        "carbsG": 56,
+        "fatG": 14,
+        "fibreG": 2,
+        "sodiumMg": 560
+      }
+    },
+    {
+      "id": "durban-chickpea-curry-with-rice",
+      "title": "Durban Chickpea Curry with Rice",
+      "summary": "Spicy tomato chickpea curry, vegan and gluten free.",
+      "cuisine": "south-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g chickpea",
+            "2 brown onion, diced",
+            "3 garlic clove",
+            "1 tbsp ginger",
+            "2 tbsp curry powder",
+            "400g tinned tomatoes",
+            "1 potato, cubed",
+            "2 tbsp neutral oil",
+            "1 cup basmati rice",
+            "1 handful coriander",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onion, garlic and ginger in the oil 5 minutes, add the curry powder.",
+        "Add tomatoes, potato, chickpeas, salt and 1 cup water and simmer 25 minutes until potato is tender.",
+        "Cook the rice by your usual method until tender and fluffy.",
+        "Scatter with the coriander and serve over the rice."
+      ],
+      "nutrition": {
+        "kcal": 465,
+        "proteinG": 14,
+        "carbsG": 72,
+        "fatG": 11,
+        "fibreG": 11,
+        "sodiumMg": 760
+      }
+    },
+    {
+      "id": "kenyan-plantain-and-beef-stew",
+      "title": "Kenyan Plantain and Beef Stew",
+      "summary": "Slow-cooked beef with green plantain, tomato and coriander, gluten free.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g beef chuck, cubed",
+            "2 plantain",
+            "2 brown onion, diced",
+            "3 tomato, diced",
+            "3 garlic clove",
+            "1 tbsp ginger",
+            "1 tsp ground coriander",
+            "1 tbsp neutral oil",
+            "1 handful coriander",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the beef in the oil 8 minutes.",
+        "Add onion, garlic and ginger and cook 4 minutes, then tomato, spices and salt.",
+        "Cover with water, simmer 30 minutes, add plantain and cook 15 minutes more until beef is tender and above 75°C.",
+        "Scatter with the coriander and serve hot with plenty of the juices."
+      ],
+      "notes": [
+        "Food safety: cook beef cubes to at least 75°C inside."
+      ],
+      "nutrition": {
+        "kcal": 422,
+        "proteinG": 34,
+        "carbsG": 38,
+        "fatG": 14,
+        "fibreG": 4,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "tomato-coconut-fish-pot-with-chilli-and-lemon",
+      "title": "Tomato Coconut Fish Pot with Chilli and Lemon",
+      "summary": "White fish in a coconut-tomato base with lemon and chilli, gluten free.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g white fish fillet, cut in chunks",
+            "200ml coconut milk",
+            "2 tomato, diced",
+            "1 brown onion, diced",
+            "2 garlic clove",
+            "1 red chilli, sliced",
+            "1 lemon, juiced",
+            "1 tbsp neutral oil",
+            "1 cup jasmine rice",
+            "1 handful coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onion, garlic and chilli in the oil 5 minutes, then add tomato and coconut milk and simmer 5 minutes.",
+        "Cook the rice by your usual method until tender and fluffy.",
+        "Add the fish and simmer 5 minutes until opaque and flaking.",
+        "Finish with lemon juice and coriander."
+      ],
+      "notes": [
+        "Food safety: fish is done when opaque and flakes easily."
+      ],
+      "nutrition": {
+        "kcal": 504,
+        "proteinG": 32,
+        "carbsG": 52,
+        "fatG": 18,
+        "fibreG": 3,
+        "sodiumMg": 420
+      }
+    },
+    {
+      "id": "tandoori-fish-tikka-with-basmati",
+      "title": "Tandoori Fish Tikka with Basmati",
+      "summary": "Yoghurt and spice marinated fish pieces, grilled and served with basmati rice, gluten free.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g white fish fillet, cut in chunks",
+            "1/2 cup Greek yoghurt",
+            "2 tsp garam masala",
+            "1 tsp ground turmeric",
+            "1 tbsp ginger garlic paste",
+            "1 lemon, juiced",
+            "1 tsp Kashmiri chilli powder",
+            "1 tbsp neutral oil",
+            "1 cup basmati rice",
+            "1 handful coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the yoghurt, spices, ginger garlic paste, lemon juice and oil and coat the fish.",
+        "Cook the rice by your usual method until tender and fluffy.",
+        "Grill or pan-sear 3 to 4 minutes each side until opaque and flaking.",
+        "Serve over rice with coriander."
+      ],
+      "notes": [
+        "Food safety: cook until opaque and flaking.",
+        "Plus 30 minutes marinating."
+      ],
+      "nutrition": {
+        "kcal": 446,
+        "proteinG": 32,
+        "carbsG": 52,
+        "fatG": 12,
+        "fibreG": 1,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "cardamom-butter-chicken-pots",
+      "title": "Cardamom Butter Chicken Pots",
+      "summary": "Creamy tomato chicken with cardamom, gluten free.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g chicken thigh, diced",
+            "400g tinned tomatoes",
+            "1/2 cup thickened cream",
+            "2 tbsp butter",
+            "1 brown onion, diced",
+            "3 garlic clove",
+            "1 tbsp ginger",
+            "2 tsp garam masala",
+            "1/2 tsp ground cardamom",
+            "1 tsp Kashmiri chilli powder",
+            "1 cup basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Melt the butter, cook the onion 5 minutes, add garlic and ginger, then the spices.",
+        "Add tomatoes and simmer 10 minutes, then blend smooth.",
+        "Add the chicken and simmer 15 minutes until 75°C, then stir in the cream.",
+        "Cook the rice by your usual method until tender and fluffy and serve."
+      ],
+      "notes": [
+        "Food safety: cook chicken to 75°C throughout."
+      ],
+      "nutrition": {
+        "kcal": 638,
+        "proteinG": 40,
+        "carbsG": 55,
+        "fatG": 28,
+        "fibreG": 3,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "lamb-keema-and-peas",
+      "title": "Lamb Keema and Peas",
+      "summary": "Dry-spiced lamb mince with peas and ginger, served with basmati rice, gluten free.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g lamb mince",
+            "1 brown onion, diced",
+            "3 garlic clove",
+            "1 tbsp ginger",
+            "2 tsp garam masala",
+            "1 tsp ground cumin",
+            "1 tomato, diced",
+            "1 cup pea",
+            "1 tbsp neutral oil",
+            "1 cup basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onion, garlic and ginger in the oil 5 minutes, add the spices.",
+        "Add the lamb and brown 8 minutes, breaking up.",
+        "Add tomato and 1/2 cup water and simmer 10 minutes, add peas.",
+        "Cook until lamb reaches 75°C. Cook rice by your usual method until tender and fluffy and serve."
+      ],
+      "notes": [
+        "Food safety: cook lamb mince to 75°C with no pink."
+      ],
+      "nutrition": {
+        "kcal": 558,
+        "proteinG": 36,
+        "carbsG": 52,
+        "fatG": 22,
+        "fibreG": 4,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "egg-curry-with-coconut-rice",
+      "title": "Egg Curry with Coconut Rice",
+      "summary": "Boiled eggs in a coconut-tomato curry, gluten free.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 egg",
+            "1 brown onion, diced",
+            "2 tomato, diced",
+            "200ml coconut milk",
+            "2 tsp curry powder",
+            "3 garlic clove",
+            "1 tbsp ginger",
+            "1 tbsp neutral oil",
+            "1 cup jasmine rice",
+            "1 handful coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the eggs for 9 minutes until hard, cool and peel.",
+        "Fry onion, garlic, ginger 5 minutes, add curry powder, tomato and coconut milk, simmer 10 minutes.",
+        "Add the eggs and heat through.",
+        "Cook the rice by your usual method until tender and fluffy, serve with coriander."
+      ],
+      "notes": [
+        "Food safety: boil eggs until the yolk is firm."
+      ],
+      "nutrition": {
+        "kcal": 538,
+        "proteinG": 22,
+        "carbsG": 52,
+        "fatG": 26,
+        "fibreG": 4,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "coconut-beef-rice-noodle-stir-fry",
+      "title": "Coconut Beef Rice Noodle Stir-Fry",
+      "summary": "Beef strips stir-fried with basil, chilli and tamari over rice noodles, gluten free.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 12,
+      "servings": 3,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g beef sirloin, thinly sliced",
+            "200g dried rice noodle",
+            "2 garlic clove",
+            "2 bird's eye chilli",
+            "1 cup Thai basil",
+            "2 tbsp tamari",
+            "1 tbsp fish sauce",
+            "1 tbsp palm sugar",
+            "2 tbsp neutral oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak or cook the noodles per the packet until tender, drain.",
+        "Stir-fry beef in hot oil 2 minutes until browned and 63°C inside, remove.",
+        "Fry garlic and chilli 30 seconds until fragrant, add noodles, tamari, fish sauce, sugar.",
+        "Return beef, toss with basil."
+      ],
+      "notes": [
+        "Food safety: cook beef strips to at least 63°C inside."
+      ],
+      "nutrition": {
+        "kcal": 492,
+        "proteinG": 34,
+        "carbsG": 56,
+        "fatG": 14,
+        "fibreG": 3,
+        "sodiumMg": 1200
+      }
+    },
+    {
+      "id": "lemongrass-chicken-rice-plates",
+      "title": "Lemongrass Chicken Rice Plates",
+      "summary": "Charred lemongrass chicken with cucumber and rice, gluten free.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g chicken thigh",
+            "2 stalk lemongrass, minced",
+            "3 garlic clove",
+            "1 tbsp fish sauce",
+            "1 tbsp palm sugar",
+            "1 tbsp tamari",
+            "1 cucumber, sliced",
+            "1 cup jasmine rice",
+            "1 handful mint"
+          ]
+        }
+      ],
+      "steps": [
+        "Marinate chicken with lemongrass, garlic, fish sauce, sugar, tamari.",
+        "Cook rice by your usual method until tender and fluffy.",
+        "Grill 8 minutes each side until charred and 75°C.",
+        "Slice and serve with rice, cucumber and mint."
+      ],
+      "notes": [
+        "Food safety: cook chicken to 75°C throughout.",
+        "Plus 1 hour marinating."
+      ],
+      "nutrition": {
+        "kcal": 510,
+        "proteinG": 40,
+        "carbsG": 55,
+        "fatG": 14,
+        "fibreG": 2,
+        "sodiumMg": 950
+      }
+    },
+    {
+      "id": "vegan-rice-paper-rolls-with-peanut-dipping",
+      "title": "Vegan Rice Paper Rolls with Peanut Dipping",
+      "summary": "Tofu and herb rolls with peanut dip, vegan and gluten free.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 25,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "12 rice paper wrapper",
+            "200g firm tofu, sliced",
+            "1 carrot, julienned",
+            "1 cucumber, julienned",
+            "1 handful mint",
+            "1 handful Thai basil",
+            "100g rice vermicelli",
+            "3 tbsp peanut butter",
+            "1 tbsp tamari",
+            "1 tbsp lime juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the vermicelli per the packet until tender and drain.",
+        "Soften a wrapper in warm water until pliable, fill with tofu, vegetables, herbs, noodles and roll tightly.",
+        "Whisk peanut butter, tamari, lime juice and a splash of water until smooth for dipping."
+      ],
+      "nutrition": {
+        "kcal": 333,
+        "proteinG": 14,
+        "carbsG": 38,
+        "fatG": 13,
+        "fibreG": 4,
+        "sodiumMg": 480
+      }
+    },
+    {
+      "id": "glazed-shiitake-and-edamame-over-sushi-rice",
+      "title": "Glazed Shiitake and Edamame over Sushi Rice",
+      "summary": "Glazed mushrooms and edamame over rice, vegan.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g shiitake mushroom, sliced",
+            "1 cup edamame",
+            "1 cup sushi rice",
+            "3 tbsp teriyaki sauce",
+            "1 tbsp neutral oil",
+            "1 tbsp sesame seed",
+            "1 spring onion"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook rice by your usual method until tender and fluffy.",
+        "Sear mushrooms in oil 6 minutes until golden.",
+        "Add teriyaki sauce and edamame, cook 2 minutes.",
+        "Serve over rice with sesame seed and spring onion."
+      ],
+      "nutrition": {
+        "kcal": 433,
+        "proteinG": 14,
+        "carbsG": 70,
+        "fatG": 9,
+        "fibreG": 8,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "peanut-noodle-lunch-bowls",
+      "title": "Peanut Noodle Lunch Bowls",
+      "summary": "Wheat noodles with peanut sesame coating, cabbage and carrot, vegan.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 8,
+      "servings": 3,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g wheat noodle",
+            "3 tbsp peanut butter",
+            "2 tbsp soy sauce",
+            "1 tbsp rice vinegar",
+            "1 tsp sesame oil",
+            "1 carrot, julienned",
+            "1 cup red cabbage, shredded",
+            "2 spring onion",
+            "2 tbsp peanut, crushed"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook noodles per packet until tender, drain and rinse.",
+        "Whisk peanut butter, soy, vinegar, sesame oil and a little warm water until smooth.",
+        "Toss with noodles, carrot, cabbage.",
+        "Top with spring onion and peanuts."
+      ],
+      "nutrition": {
+        "kcal": 442,
+        "proteinG": 16,
+        "carbsG": 56,
+        "fatG": 16,
+        "fibreG": 5,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "sweet-chilli-tofu-lettuce-cups",
+      "title": "Sweet Chilli Tofu Lettuce Cups",
+      "summary": "Crisp tofu cubes tossed in sweet chilli and wrapped in lettuce, vegan.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 3,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g firm tofu, cubed",
+            "3 tbsp sweet chilli sauce",
+            "1 tbsp soy sauce",
+            "1 tbsp neutral oil",
+            "8 lettuce leaf",
+            "1 carrot, grated",
+            "1 handful mint",
+            "2 tbsp peanut, crushed"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry tofu in the oil for 8 minutes until crisp.",
+        "Add sweet chilli and soy sauce, toss.",
+        "Spoon into lettuce leaves, top with carrot, mint and peanuts."
+      ],
+      "nutrition": {
+        "kcal": 294,
+        "proteinG": 18,
+        "carbsG": 22,
+        "fatG": 14,
+        "fibreG": 4,
+        "sodiumMg": 760
+      }
+    },
+    {
+      "id": "lentil-dhal-samosa-rolls",
+      "title": "Lentil Dhal Samosa Rolls",
+      "summary": "Baked spring roll wrapper rolls of spiced red lentil, vegan.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup red lentil",
+            "2 cups water",
+            "1 brown onion, diced",
+            "2 tsp curry powder",
+            "1 tbsp ginger",
+            "8 spring roll wrapper",
+            "1 tbsp neutral oil",
+            "1 handful coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer lentils in water 12 minutes until thick, drain extra.",
+        "Fry onion and ginger in oil 4 minutes, add curry powder, mix with lentils and coriander.",
+        "Roll in wrappers and brush with oil.",
+        "Bake at 200°C for 15 minutes until crisp."
+      ],
+      "nutrition": {
+        "kcal": 334,
+        "proteinG": 14,
+        "carbsG": 52,
+        "fatG": 6,
+        "fibreG": 8,
+        "sodiumMg": 380
+      }
+    }
+  ]
+}

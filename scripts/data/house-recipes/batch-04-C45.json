@@ -1,0 +1,801 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "korean-chojang-chilli-vinegar-dip",
+      "title": "Korean Chojang Chilli Vinegar Dip",
+      "summary": "A bright, sweet-sour chilli and vinegar dip for dumplings, pancakes and grilled meat.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp gochujang",
+            "3 tbsp rice vinegar",
+            "1 tbsp honey",
+            "1 tbsp water",
+            "1 tsp sesame oil",
+            "1 tsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the gochujang, vinegar, honey and water together until smooth.",
+        "Stir in the sesame oil and seeds.",
+        "Spoon into a small dish and serve with dumplings or pancakes."
+      ],
+      "notes": [
+        "Keeps 2 weeks in the fridge.",
+        "Check the gochujang label for gluten."
+      ],
+      "nutrition": {
+        "kcal": 58,
+        "proteinG": 1,
+        "carbsG": 9,
+        "fatG": 2,
+        "fibreG": 0,
+        "sodiumMg": 340
+      }
+    },
+    {
+      "id": "korean-yangnyeom-soy-garlic-sauce",
+      "title": "Korean Yangnyeom Soy Garlic Sauce",
+      "summary": "A sticky soy, garlic and honey glaze for fried chicken, tofu and roasted vegetables.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 5,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1/4 cup soy sauce",
+            "3 tbsp honey",
+            "4 cloves garlic, crushed",
+            "2 tbsp rice vinegar",
+            "1 tbsp sesame oil",
+            "1 tsp ginger, grated"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the soy sauce, honey, garlic, vinegar and ginger in a small pan for 4 minutes until syrupy.",
+        "Remove from the heat and stir in the sesame oil.",
+        "Use to coat hot chicken, tofu or vegetables until glossy."
+      ],
+      "notes": [
+        "Keeps 1 week in the fridge.",
+        "Use tamari for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 79,
+        "proteinG": 1,
+        "carbsG": 12,
+        "fatG": 3,
+        "fibreG": 0,
+        "sodiumMg": 740
+      }
+    },
+    {
+      "id": "cold-cucumber-and-buttermilk-soup-with-chives",
+      "title": "Cold Cucumber and Buttermilk Soup with Chives",
+      "summary": "A cooling no-cook soup of cucumber and buttermilk with lemon and chives, ready in ten minutes.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 cucumbers, peeled and chopped",
+            "2 cups buttermilk",
+            "1 tbsp lemon juice",
+            "1 clove garlic",
+            "2 tbsp olive oil",
+            "1/2 tsp salt",
+            "2 tbsp chopped chives"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the cucumbers, buttermilk, lemon juice, garlic and salt until completely smooth.",
+        "Chill for at least 1 hour, then taste and adjust the seasoning.",
+        "Pour into bowls, drizzle with the oil and scatter with chives."
+      ],
+      "notes": [
+        "Use thick plant yoghurt thinned with water for dairy-free.",
+        "Keeps 2 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 144,
+        "proteinG": 6,
+        "carbsG": 11,
+        "fatG": 8,
+        "fibreG": 2,
+        "sodiumMg": 390
+      }
+    },
+    {
+      "id": "chilled-zucchini-and-basil-soup",
+      "title": "Chilled Zucchini and Basil Soup",
+      "summary": "A pale green soup of gently cooked zucchini and fresh basil, served cold with a swirl of olive oil.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800 g zucchini, sliced",
+            "1 onion, diced",
+            "1 clove garlic",
+            "2 tbsp olive oil",
+            "3 cups vegetable stock",
+            "1 cup basil leaves",
+            "1 tbsp lemon juice",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion and garlic in 1 tbsp of the oil for 4 minutes until soft.",
+        "Add the zucchini and stock and simmer for 8 minutes until completely tender.",
+        "Blend with the basil, lemon juice and salt until smooth, then chill until very cold.",
+        "Pour into bowls and drizzle with the remaining oil."
+      ],
+      "notes": [
+        "Cool the soup quickly and keep in the fridge for up to 3 days.",
+        "Vegan and gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 125,
+        "proteinG": 3,
+        "carbsG": 11,
+        "fatG": 7,
+        "fibreG": 3,
+        "sodiumMg": 540
+      }
+    },
+    {
+      "id": "cold-carrot-and-orange-soup",
+      "title": "Cold Carrot and Orange Soup",
+      "summary": "A sunny chilled soup of carrot, orange juice and ginger with a spoon of yoghurt.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600 g carrots, sliced",
+            "1 onion, diced",
+            "3 cm ginger, grated",
+            "1 tbsp olive oil",
+            "2 cups vegetable stock",
+            "1 cup orange juice",
+            "1/2 tsp salt",
+            "1/4 cup plain yoghurt",
+            "1 tbsp chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion and ginger in the oil for 4 minutes until soft.",
+        "Add the carrots and stock and simmer for 18 minutes until completely tender.",
+        "Blend with the orange juice and salt until smooth and chill until very cold.",
+        "Serve topped with yoghurt and coriander."
+      ],
+      "notes": [
+        "Leave out the yoghurt for vegan.",
+        "Keeps 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 146,
+        "proteinG": 3,
+        "carbsG": 22,
+        "fatG": 4,
+        "fibreG": 5,
+        "sodiumMg": 510
+      }
+    },
+    {
+      "id": "chilled-roasted-capsicum-soup",
+      "title": "Chilled Roasted Capsicum Soup",
+      "summary": "Sweet roasted red capsicum blended with tomato and a little cream, served cold with basil.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 red capsicums",
+            "2 tomatoes",
+            "1 clove garlic",
+            "2 tbsp olive oil",
+            "1 cup vegetable stock",
+            "1/4 cup cream",
+            "1 tbsp red wine vinegar",
+            "1/2 tsp salt",
+            "6 basil leaves"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the capsicums, tomatoes and garlic at 220°C for 30 minutes until the skins blister and blacken.",
+        "Peel the capsicums and tomatoes and remove the seeds.",
+        "Blend with the oil, stock, vinegar and salt until completely smooth.",
+        "Stir in the cream, chill until very cold and top with basil."
+      ],
+      "notes": [
+        "Use coconut cream for dairy-free.",
+        "Keeps 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 145,
+        "proteinG": 2,
+        "carbsG": 12,
+        "fatG": 9,
+        "fibreG": 4,
+        "sodiumMg": 440
+      }
+    },
+    {
+      "id": "corn-cob-stock",
+      "title": "Corn Cob Stock",
+      "summary": "A sweet, light stock made from the cobs left after cutting off the kernels.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 corn cobs, kernels removed",
+            "1 onion, halved",
+            "1 carrot, chopped",
+            "1 celery stalk, chopped",
+            "8 cups water",
+            "4 parsley stalks",
+            "1 bay leaf",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Break the cobs in half and place in a large pot with the onion, carrot, celery, parsley, bay leaf and water.",
+        "Bring to a boil, then simmer gently for 40 minutes until the stock tastes sweet and golden.",
+        "Strain, season with the salt and cool."
+      ],
+      "notes": [
+        "Use for chowders, risotto and soups.",
+        "Freezes well for 3 months."
+      ],
+      "nutrition": {
+        "kcal": 48,
+        "proteinG": 2,
+        "carbsG": 10,
+        "fatG": 0,
+        "fibreG": 0,
+        "sodiumMg": 340
+      }
+    },
+    {
+      "id": "mushroom-and-thyme-stock",
+      "title": "Mushroom and Thyme Stock",
+      "summary": "A dark, savoury vegetarian stock built on mushrooms, onion and thyme.",
+      "cuisine": "french",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 50,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400 g mushrooms, sliced",
+            "1 onion, quartered",
+            "1 carrot, chopped",
+            "2 cloves garlic",
+            "1 tbsp olive oil",
+            "8 cups water",
+            "6 sprigs thyme",
+            "2 bay leaves",
+            "1 tbsp soy sauce"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the mushrooms and onion in the oil in a large pot for 10 minutes until deeply golden.",
+        "Add the carrot, garlic, water, thyme, bay leaves and soy sauce.",
+        "Simmer gently for 40 minutes until the stock turns dark and fragrant.",
+        "Strain through a fine sieve."
+      ],
+      "notes": [
+        "Freezes well for 3 months.",
+        "Use tamari for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 70,
+        "proteinG": 3,
+        "carbsG": 5,
+        "fatG": 4,
+        "fibreG": 1,
+        "sodiumMg": 180
+      }
+    },
+    {
+      "id": "roasted-garlic-and-herb-vegetable-broth",
+      "title": "Roasted Garlic and Herb Vegetable Broth",
+      "summary": "A golden, aromatic broth of roasted garlic, leek and herbs, good for sipping or soups.",
+      "cuisine": "french",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 60,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 heads garlic",
+            "2 leeks, sliced",
+            "2 carrots, chopped",
+            "1 celery stalk, chopped",
+            "1 tbsp olive oil",
+            "7 cups water",
+            "1 bay leaf",
+            "4 sprigs thyme",
+            "4 parsley stalks",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Cut the tops off the garlic heads, drizzle with the oil and roast at 200°C for 30 minutes until soft and golden.",
+        "Place the roasted garlic, leeks, carrots, celery, water, bay leaf, thyme and parsley in a large pot.",
+        "Simmer gently for 30 minutes until the broth is fragrant, then strain and season with the salt."
+      ],
+      "notes": [
+        "Squeeze the leftover roasted garlic into mash or bread."
+      ],
+      "nutrition": {
+        "kcal": 48,
+        "proteinG": 1,
+        "carbsG": 6,
+        "fatG": 2,
+        "fibreG": 1,
+        "sodiumMg": 230
+      }
+    },
+    {
+      "id": "garlic-roasted-cabbage-wedges",
+      "title": "Garlic Roasted Cabbage Wedges",
+      "summary": "Cabbage wedges roasted until crisp at the edges and sweet inside, finished with lemon.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1/2 green cabbage, cut into 4 wedges",
+            "3 tbsp olive oil",
+            "4 cloves garlic, sliced",
+            "1/2 tsp salt",
+            "1/2 tsp chilli flakes",
+            "2 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Brush the wedges with the oil and place on a tray with the garlic.",
+        "Roast at 220°C for 25 minutes, turning once, until the edges are crisp and charred and the centres are tender.",
+        "Season with the salt, chilli and lemon juice and serve."
+      ],
+      "notes": [
+        "Keep the core in so the wedges hold together."
+      ],
+      "nutrition": {
+        "kcal": 104,
+        "proteinG": 2,
+        "carbsG": 7,
+        "fatG": 7,
+        "fibreG": 3,
+        "sodiumMg": 310
+      }
+    },
+    {
+      "id": "honey-mustard-roasted-onions",
+      "title": "Honey Mustard Roasted Onions",
+      "summary": "Whole small onions roasted until jammy with a honey and wholegrain mustard glaze.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 small onions, halved",
+            "2 tbsp olive oil",
+            "1 tbsp honey",
+            "1 tbsp wholegrain mustard",
+            "1 tbsp balsamic vinegar",
+            "1/2 tsp salt",
+            "4 sprigs thyme"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the onion halves with the oil, salt and thyme in a roasting tray, cut side down.",
+        "Roast at 200°C for 30 minutes until soft and golden.",
+        "Stir the honey, mustard and vinegar together, spoon over the onions and roast for 10 minutes until glossy and sticky."
+      ],
+      "notes": [
+        "Good with roast meat or a cheese board."
+      ],
+      "nutrition": {
+        "kcal": 165,
+        "proteinG": 2,
+        "carbsG": 22,
+        "fatG": 7,
+        "fibreG": 3,
+        "sodiumMg": 310
+      }
+    },
+    {
+      "id": "herb-roasted-baby-potatoes-with-lemon",
+      "title": "Herb Roasted Baby Potatoes with Lemon",
+      "summary": "Crisp-skinned baby potatoes roasted with rosemary, garlic and a squeeze of lemon.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800 g baby potatoes, halved",
+            "3 tbsp olive oil",
+            "4 cloves garlic, unpeeled",
+            "3 sprigs rosemary",
+            "1 lemon, zested and juiced",
+            "1/2 tsp salt",
+            "2 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the potatoes with the oil, garlic, rosemary and salt on a large tray.",
+        "Roast at 220°C for 35 minutes, turning once, until crisp and golden and a knife slides in easily.",
+        "Toss with the lemon zest, juice and parsley and serve hot."
+      ],
+      "notes": [
+        "Vegan and gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 281,
+        "proteinG": 5,
+        "carbsG": 38,
+        "fatG": 11,
+        "fibreG": 5,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "buttered-corn-with-chives",
+      "title": "Buttered Corn with Chives",
+      "summary": "Sweet corn kernels tossed in butter with chives, pepper and a squeeze of lime.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 corn cobs, kernels cut off",
+            "2 tbsp butter",
+            "2 tbsp chopped chives",
+            "1 tbsp lime juice",
+            "1/4 tsp salt",
+            "1/4 tsp pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Melt the butter in a frying pan over medium-high heat.",
+        "Cook the corn kernels for 6 minutes, stirring, until tender and lightly golden.",
+        "Stir in the chives, lime juice, salt and pepper and serve hot."
+      ],
+      "notes": [
+        "Use olive oil instead of butter for vegan."
+      ],
+      "nutrition": {
+        "kcal": 55,
+        "proteinG": 1,
+        "carbsG": 8,
+        "fatG": 2,
+        "fibreG": 1,
+        "sodiumMg": 180
+      }
+    },
+    {
+      "id": "orzo-salad-with-lemon-and-peas",
+      "title": "Orzo Salad with Lemon and Peas",
+      "summary": "Tender orzo tossed with peas, mint, feta and a lemon dressing, good warm or cold.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 1/2 cups orzo",
+            "1 cup frozen peas",
+            "1/2 cup feta, crumbled",
+            "1/4 cup mint leaves",
+            "3 tbsp olive oil",
+            "1 lemon, zested and juiced",
+            "4 spring onions, sliced",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the orzo in salted water for 9 minutes until al dente, adding the peas for the last 2 minutes until bright green.",
+        "Drain and toss with the oil, lemon zest, juice and salt while still warm.",
+        "Fold in the feta, mint and spring onions."
+      ],
+      "notes": [
+        "Keeps 3 days in the fridge.",
+        "Not suitable for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 407,
+        "proteinG": 13,
+        "carbsG": 52,
+        "fatG": 15,
+        "fibreG": 6,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "barley-and-roasted-capsicum-salad",
+      "title": "Barley and Roasted Capsicum Salad",
+      "summary": "Chewy barley with smoky roasted capsicum, rocket and a sherry vinegar dressing.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup pearl barley",
+            "3 red capsicums",
+            "2 cups rocket",
+            "1/4 cup flaked almonds, toasted",
+            "3 tbsp olive oil",
+            "1 tbsp sherry vinegar",
+            "1 clove garlic, crushed",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the capsicums at 220°C for 30 minutes until blistered and soft, then peel, deseed and slice.",
+        "Simmer the barley in plenty of water for 30 minutes until tender, then drain and cool.",
+        "Whisk the oil, vinegar, garlic and salt and toss through the barley with the capsicums, rocket and almonds until coated."
+      ],
+      "notes": [
+        "Keeps 3 days in the fridge.",
+        "Not suitable for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 388,
+        "proteinG": 8,
+        "carbsG": 48,
+        "fatG": 16,
+        "fibreG": 10,
+        "sodiumMg": 310
+      }
+    },
+    {
+      "id": "chickpea-and-cucumber-grain-salad",
+      "title": "Chickpea and Cucumber Grain Salad",
+      "summary": "Brown rice, chickpeas and crisp cucumber with parsley and a lemon tahini dressing.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup brown rice",
+            "1 can chickpeas, drained",
+            "2 cucumbers, diced",
+            "1/2 cup chopped parsley",
+            "3 tbsp tahini",
+            "3 tbsp lemon juice",
+            "2 tbsp water",
+            "1 clove garlic, crushed",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the rice in plenty of water for 28 minutes until tender, then drain and cool.",
+        "Whisk the tahini, lemon juice, water, garlic and salt until smooth.",
+        "Toss the rice with the chickpeas, cucumbers, parsley and dressing until coated."
+      ],
+      "notes": [
+        "Food safety: cool and refrigerate the cooked rice within 1 hour and eat within 1 day.",
+        "Contains sesame."
+      ],
+      "nutrition": {
+        "kcal": 413,
+        "proteinG": 13,
+        "carbsG": 56,
+        "fatG": 13,
+        "fibreG": 10,
+        "sodiumMg": 360
+      }
+    }
+  ]
+}

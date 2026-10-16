@@ -1,0 +1,1006 @@
+{
+  "about": "House recipes, batch 04 (slice B): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "gobi-pakora",
+      "title": "Gobi Pakora",
+      "summary": "Cauliflower florets in a spiced chickpea-flour batter, shallow-fried until crisp.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g cauliflower, cut into small florets",
+            "1 cup besan (chickpea flour)",
+            "1 tsp ground cumin",
+            "1 tsp ground turmeric",
+            "1 tsp chilli powder",
+            "1 tsp salt",
+            "1/2 cup water",
+            "1/2 cup neutral oil",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the besan, cumin, turmeric, chilli, salt and water into a thick batter that coats a spoon.",
+        "Steam the cauliflower for 3 minutes, drain well and toss through the batter.",
+        "Heat the oil in a frying pan over medium heat until a drop of batter sizzles straight away.",
+        "Fry the florets in 3 batches for 3 to 4 minutes, turning, until deep golden and crisp, then drain on paper towel.",
+        "Squeeze over the lemon juice and serve hot while the crust is crisp."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: about 8 pieces."
+      ],
+      "nutrition": {
+        "kcal": 254,
+        "proteinG": 9,
+        "carbsG": 20,
+        "fatG": 14,
+        "fibreG": 6,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "chilli-lime-corn-ribs",
+      "title": "Chilli Lime Corn Ribs",
+      "summary": "Roasted corn cobs cut into curled strips, glazed with smoky butter and finished with lime.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 corn cobs",
+            "40g butter, melted",
+            "1 tsp smoked paprika",
+            "1/2 tsp chilli flakes",
+            "1 tsp salt",
+            "1 lime",
+            "2 tbsp chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C fan (240°C conventional). Cut each cob in half crosswise, then stand upright and slice each half into 4 long wedges.",
+        "Toss the wedges with the butter, paprika, chilli and salt.",
+        "Spread on a lined tray cut side up and roast for 30 minutes, turning once, until the kernels are golden and the edges curl.",
+        "Squeeze over the lime juice and scatter with the coriander.",
+        "Eat warm, holding the ribs by the cob."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 cob."
+      ],
+      "nutrition": {
+        "kcal": 72,
+        "proteinG": 2,
+        "carbsG": 9,
+        "fatG": 3,
+        "fibreG": 2,
+        "sodiumMg": 620
+      }
+    },
+    {
+      "id": "potato-bhajia",
+      "title": "Potato Bhajia",
+      "summary": "Thin potato slices in a turmeric and chilli batter, shallow-fried and served with a tomato chilli dip.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g potato, thinly sliced",
+            "1 cup besan (chickpea flour)",
+            "1/2 cup water",
+            "1 tsp ground turmeric",
+            "1 tsp ground cumin",
+            "1 tsp chilli powder",
+            "1 tsp salt",
+            "1/2 cup neutral oil",
+            "1/4 cup tomato sauce",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the besan, water, turmeric, cumin, chilli and salt into a batter the thickness of pouring cream.",
+        "Dip the potato slices into the batter so they are fully coated.",
+        "Heat the oil in a wide pan over medium heat and fry the slices in batches for 3 minutes each side until golden and the potato is tender.",
+        "Drain the bhajia on paper towel and keep them in a single layer so they stay crisp.",
+        "Mix the tomato sauce with the lemon juice and serve alongside while the bhajia are hot."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: 6 to 8 slices."
+      ],
+      "nutrition": {
+        "kcal": 309,
+        "proteinG": 9,
+        "carbsG": 36,
+        "fatG": 13,
+        "fibreG": 6,
+        "sodiumMg": 620
+      }
+    },
+    {
+      "id": "baked-tequenos",
+      "title": "Baked Tequenos",
+      "summary": "Cheese-filled pastry sticks, a Venezuelan party snack, baked until crisp and gooey inside.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 sheets puff pastry",
+            "200g mozzarella, cut into 12 sticks",
+            "1 egg, beaten",
+            "1 tbsp sesame seeds",
+            "1/4 cup tomato sauce",
+            "1/2 tsp chilli flakes"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional). Cut each pastry sheet into 6 strips.",
+        "Wrap one strip around each cheese stick in a spiral, pinching the ends so the cheese cannot leak.",
+        "Brush with the egg, scatter with sesame seeds and place on a lined tray.",
+        "Bake for 20 minutes until deep golden and puffed.",
+        "Warm the tomato sauce with the chilli and serve for dipping."
+      ],
+      "notes": [
+        "Snack. Per serving: 2 tequenos.",
+        "Food safety: wash hands after handling raw egg."
+      ],
+      "nutrition": {
+        "kcal": 372,
+        "proteinG": 13,
+        "carbsG": 26,
+        "fatG": 24,
+        "fibreG": 0,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "hong-kong-egg-tarts",
+      "title": "Hong Kong Egg Tarts",
+      "summary": "Flaky shortcrust tartlets filled with a smooth, lightly sweet egg custard.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 40,
+      "cookMinutes": 25,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups plain flour",
+            "100g butter, cold and cubed",
+            "2 tbsp icing sugar",
+            "1 egg yolk",
+            "2 tbsp cold water",
+            "3 eggs",
+            "1/2 cup caster sugar",
+            "1 cup hot water",
+            "1/2 cup milk"
+          ]
+        }
+      ],
+      "steps": [
+        "Rub the butter into the flour and icing sugar, add the yolk and cold water, and bring together into a dough. Chill for 30 minutes.",
+        "Heat the oven to 180°C fan (200°C conventional). Roll the dough thinly, cut 8 rounds and press into a greased 8-hole muffin tin.",
+        "Stir the caster sugar into the hot water until dissolved and cool for 10 minutes, then whisk in the eggs and milk and strain.",
+        "Pour into the pastry cases and bake for 25 minutes until the custard is set with a slight wobble and the pastry golden.",
+        "Cool for 15 minutes before lifting out of the tin."
+      ],
+      "notes": [
+        "Plus 30 minutes chilling.",
+        "Snack. Vegetarian. Per serving: 1 tart.",
+        "Food safety: bake the custard until set, wash hands after handling raw egg, and refrigerate leftovers within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 333,
+        "proteinG": 7,
+        "carbsG": 42,
+        "fatG": 15,
+        "fibreG": 1,
+        "sodiumMg": 170
+      }
+    },
+    {
+      "id": "lokma-honey-doughnut-bites",
+      "title": "Lokma Honey Doughnut Bites",
+      "summary": "Crisp-outside, soft-inside Turkish dough balls soaked in a honey and lemon syrup.",
+      "cuisine": "turkish",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 1/2 cups plain flour",
+            "2 tsp dried yeast",
+            "1 tbsp caster sugar",
+            "1 cup warm water",
+            "1/4 tsp salt",
+            "1/2 cup neutral oil",
+            "1/2 cup honey",
+            "1/4 cup water",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the flour, yeast, sugar and salt with the warm water into a loose, sticky batter. Cover and prove for 1 hour until bubbly.",
+        "Simmer the honey, the 1/4 cup water and lemon juice for 5 minutes until syrupy and keep warm.",
+        "Heat the oil in a deep frying pan over medium heat. Drop in teaspoons of batter and fry for 3 to 4 minutes, turning, until golden and puffed.",
+        "Drain briefly, then roll in the warm syrup until glossy.",
+        "Serve at once so they stay crisp."
+      ],
+      "notes": [
+        "Plus 1 hour proving.",
+        "Snack. Vegan. Per serving: 5 bites."
+      ],
+      "nutrition": {
+        "kcal": 286,
+        "proteinG": 3,
+        "carbsG": 50,
+        "fatG": 8,
+        "fibreG": 1,
+        "sodiumMg": 90
+      }
+    },
+    {
+      "id": "alfajores-with-caramel-filling",
+      "title": "Alfajores with Caramel Filling",
+      "summary": "Tender cornflour shortbread sandwiches filled with thick caramel and rolled in coconut.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 12,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g butter, softened",
+            "1/2 cup icing sugar",
+            "2 egg yolks",
+            "1 cup cornflour",
+            "1 cup plain flour",
+            "1 tsp baking powder",
+            "395g condensed milk",
+            "1/2 cup desiccated coconut"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the condensed milk in a saucepan over medium heat for 10 minutes, stirring constantly, until thick and caramel coloured. Cool.",
+        "Heat the oven to 160°C fan (180°C conventional). Beat the butter and icing sugar until pale, then beat in the yolks.",
+        "Fold in the cornflour, flours and baking powder, roll to 5mm and cut 16 rounds with a 5cm cutter.",
+        "Bake for 12 minutes until set but still pale. Cool completely.",
+        "Sandwich pairs with caramel and roll the edges in the coconut."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 alfajores.",
+        "Food safety: wash hands after handling raw egg yolks."
+      ],
+      "nutrition": {
+        "kcal": 459,
+        "proteinG": 6,
+        "carbsG": 56,
+        "fatG": 23,
+        "fibreG": 2,
+        "sodiumMg": 210
+      }
+    },
+    {
+      "id": "welsh-cakes",
+      "title": "Welsh Cakes",
+      "summary": "Small spiced griddle cakes studded with sultanas, cooked in a dry pan.",
+      "cuisine": "british",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 10,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups self-raising flour",
+            "100g butter, cold and cubed",
+            "1/3 cup caster sugar",
+            "1/2 cup sultanas",
+            "1/2 tsp ground cinnamon",
+            "1 egg",
+            "2 tbsp milk"
+          ]
+        }
+      ],
+      "steps": [
+        "Rub the butter into the flour until it looks like breadcrumbs, then stir in the sugar, sultanas and spice.",
+        "Mix in the egg and milk to make a soft dough, and roll to 1cm thick.",
+        "Cut 12 rounds with a 6cm cutter.",
+        "Cook in a dry non-stick pan over medium-low heat for 3 minutes each side until golden brown and cooked through.",
+        "Dust with a little sugar and serve warm."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 cakes.",
+        "Food safety: wash hands after handling raw egg."
+      ],
+      "nutrition": {
+        "kcal": 354,
+        "proteinG": 6,
+        "carbsG": 50,
+        "fatG": 14,
+        "fibreG": 2,
+        "sodiumMg": 350
+      }
+    },
+    {
+      "id": "cheddar-and-mustard-cheese-twists",
+      "title": "Cheddar and Mustard Cheese Twists",
+      "summary": "Crisp puff pastry twists with sharp cheddar, mustard and poppy-free sesame.",
+      "cuisine": "british",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 sheets puff pastry",
+            "100g cheddar, grated",
+            "2 tsp Dijon mustard",
+            "1 egg, beaten",
+            "1 tbsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional). Spread one side of each pastry sheet with the mustard.",
+        "Scatter over the cheddar, fold in half and press down, then cut into 12 strips.",
+        "Twist each strip and lay on lined trays, pressing the ends down.",
+        "Brush with the egg, scatter with sesame seeds and bake for 15 minutes until puffed and golden.",
+        "Cool for 5 minutes so the cheese sets before eating."
+      ],
+      "notes": [
+        "Snack. Per serving: 4 twists.",
+        "Food safety: wash hands after handling raw egg."
+      ],
+      "nutrition": {
+        "kcal": 312,
+        "proteinG": 9,
+        "carbsG": 24,
+        "fatG": 20,
+        "fibreG": 0,
+        "sodiumMg": 420
+      }
+    },
+    {
+      "id": "golden-oat-flapjacks",
+      "title": "Golden Oat Flapjacks",
+      "summary": "Chewy British oat bars with butter and golden syrup, cut into squares.",
+      "cuisine": "british",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g butter",
+            "1/2 cup brown sugar",
+            "1/3 cup golden syrup",
+            "3 cups rolled oats",
+            "1/2 cup sultanas",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional) and line a 20cm square tin.",
+        "Melt the butter, sugar and golden syrup together over low heat, stirring until smooth.",
+        "Stir in the oats, sultanas and salt until fully coated.",
+        "Press firmly into the tin and bake for 25 minutes until golden at the edges but still soft in the middle.",
+        "Cool completely in the tin, about 1 hour, then cut into 12 bars."
+      ],
+      "notes": [
+        "Plus 1 hour cooling.",
+        "Snack. Vegetarian. Per serving: 1 bar."
+      ],
+      "nutrition": {
+        "kcal": 247,
+        "proteinG": 3,
+        "carbsG": 33,
+        "fatG": 11,
+        "fibreG": 2,
+        "sodiumMg": 100
+      }
+    },
+    {
+      "id": "apple-cinnamon-muffins",
+      "title": "Apple Cinnamon Muffins",
+      "summary": "Tender muffins studded with apple and a cinnamon sugar crust.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 22,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 apples, peeled and diced",
+            "2 cups self-raising flour",
+            "1/2 cup brown sugar",
+            "1/3 cup neutral oil",
+            "1 egg",
+            "3/4 cup milk",
+            "2 tsp ground cinnamon"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C fan (200°C conventional) and line a 6-hole muffin tin.",
+        "Whisk the oil, egg and milk, then fold in the flour, sugar and 1 tsp cinnamon until just combined.",
+        "Fold in the apple and divide between the holes.",
+        "Sprinkle with the remaining cinnamon and bake for 22 minutes until golden and a skewer comes out clean.",
+        "Cool in the tin for 5 minutes."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 muffin.",
+        "Food safety: wash hands after handling raw egg."
+      ],
+      "nutrition": {
+        "kcal": 407,
+        "proteinG": 6,
+        "carbsG": 56,
+        "fatG": 17,
+        "fibreG": 3,
+        "sodiumMg": 240
+      }
+    },
+    {
+      "id": "honey-sesame-pasteli",
+      "title": "Honey Sesame Pasteli",
+      "summary": "Crunchy Greek sesame and honey bars that set hard as they cool.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 10,
+      "servings": 10,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup sesame seeds",
+            "1/2 cup honey",
+            "1 tbsp lemon juice",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the sesame seeds in a dry pan for 4 minutes until golden, then tip out.",
+        "Simmer the honey and lemon juice in the pan over medium heat for 5 minutes until it reaches a bubbling, thick caramel.",
+        "Stir in the sesame seeds and salt for 30 seconds until fully coated.",
+        "Press onto baking paper in a rectangle about 1cm thick.",
+        "Cool for 20 minutes until set, then break or cut into 10 pieces."
+      ],
+      "notes": [
+        "Plus 20 minutes setting.",
+        "Snack. Vegetarian. Per serving: 1 piece."
+      ],
+      "nutrition": {
+        "kcal": 131,
+        "proteinG": 3,
+        "carbsG": 13,
+        "fatG": 7,
+        "fibreG": 2,
+        "sodiumMg": 20
+      }
+    },
+    {
+      "id": "whipped-feta-dip-with-pita-crisps",
+      "title": "Whipped Feta Dip with Pita Crisps",
+      "summary": "Cloud-light feta and yoghurt dip with lemon and olive oil, served with crisp pita.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g feta",
+            "1/2 cup natural yoghurt",
+            "1 tbsp lemon juice",
+            "2 tbsp olive oil",
+            "1 clove garlic, crushed",
+            "2 pita breads",
+            "1 tbsp olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional). Cut the pita into 16 triangles and toss with 1 tbsp oil.",
+        "Bake the pita for 8 minutes until golden and crisp.",
+        "Blend the feta, yoghurt, lemon juice, garlic and remaining oil for 2 minutes until completely smooth.",
+        "Spoon into a bowl and make a swirl on top.",
+        "Serve with the pita crisps while they are still warm."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: a quarter of the dip with 4 crisps."
+      ],
+      "nutrition": {
+        "kcal": 305,
+        "proteinG": 11,
+        "carbsG": 22,
+        "fatG": 19,
+        "fibreG": 1,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "beetroot-hummus-with-veggie-sticks",
+      "title": "Beetroot Hummus with Veggie Sticks",
+      "summary": "Vivid pink hummus with tahini and lemon, served with crunchy carrot and cucumber sticks.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g cooked beetroot",
+            "400g can chickpeas, drained",
+            "1/4 cup tahini",
+            "2 tbsp lemon juice",
+            "1 clove garlic",
+            "2 tbsp olive oil",
+            "1 tsp ground cumin",
+            "1/2 tsp salt",
+            "2 carrots, cut into sticks",
+            "2 cucumbers, cut into sticks"
+          ]
+        }
+      ],
+      "steps": [
+        "Drain the beetroot and chickpeas.",
+        "Blend the beetroot, chickpeas, tahini, lemon juice, garlic, oil, cumin and salt for 3 minutes until completely smooth, scraping down the sides.",
+        "Taste and add more lemon or salt if needed.",
+        "Spoon into a bowl and drizzle with a little extra oil.",
+        "Serve with the carrot and cucumber sticks."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: a sixth of the dip with sticks."
+      ],
+      "nutrition": {
+        "kcal": 210,
+        "proteinG": 7,
+        "carbsG": 20,
+        "fatG": 10,
+        "fibreG": 6,
+        "sodiumMg": 410
+      }
+    },
+    {
+      "id": "white-bean-and-rosemary-dip",
+      "title": "White Bean and Rosemary Dip",
+      "summary": "A creamy cannellini dip with lemon and rosemary, served with raw vegetable dippers.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g can cannellini beans, drained",
+            "2 tbsp olive oil",
+            "1 tbsp lemon juice",
+            "1 clove garlic",
+            "1 tsp chopped rosemary",
+            "1/2 tsp salt",
+            "2 carrots, cut into sticks",
+            "1 capsicum, cut into strips"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the beans, oil, lemon juice, garlic, rosemary and salt for 2 minutes until completely smooth.",
+        "Add a splash of water if too thick.",
+        "Spoon into a bowl and drizzle with a little oil.",
+        "Taste and add more lemon or salt if needed.",
+        "Serve with the carrot sticks and capsicum strips."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: a quarter of the dip with veg."
+      ],
+      "nutrition": {
+        "kcal": 180,
+        "proteinG": 7,
+        "carbsG": 17,
+        "fatG": 8,
+        "fibreG": 6,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "smoked-salmon-and-dill-dip",
+      "title": "Smoked Salmon and Dill Dip",
+      "summary": "Creamy smoked salmon and cream cheese dip with dill and lemon, served with cucumber rounds.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g smoked salmon",
+            "150g cream cheese",
+            "1/2 cup natural yoghurt",
+            "1 tbsp lemon juice",
+            "2 tbsp chopped dill",
+            "1 tsp black pepper",
+            "2 cucumbers, sliced into rounds"
+          ]
+        }
+      ],
+      "steps": [
+        "Chop the smoked salmon finely.",
+        "Beat the cream cheese, yoghurt and lemon juice until smooth.",
+        "Fold in the salmon, dill and pepper until evenly combined.",
+        "Chill for 30 minutes until firm.",
+        "Serve with the cucumber rounds."
+      ],
+      "notes": [
+        "Plus 30 minutes chilling.",
+        "Snack. Per serving: a quarter of the dip with cucumber.",
+        "Food safety: keep smoked salmon below 5°C, eat within 2 days of opening, and avoid it if pregnant or immunocompromised."
+      ],
+      "nutrition": {
+        "kcal": 237,
+        "proteinG": 12,
+        "carbsG": 8,
+        "fatG": 17,
+        "fibreG": 2,
+        "sodiumMg": 660
+      }
+    },
+    {
+      "id": "smoky-paprika-almonds",
+      "title": "Smoky Paprika Almonds",
+      "summary": "Roasted almonds tossed with smoked paprika, garlic and sea salt.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 12,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups almonds",
+            "1 tbsp olive oil",
+            "2 tsp smoked paprika",
+            "1/2 tsp garlic powder",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional).",
+        "Toss the almonds with the oil, paprika, garlic powder and salt.",
+        "Spread on a tray and roast for 12 minutes until fragrant and a shade darker.",
+        "Cool for 10 minutes so they crisp.",
+        "Store in an airtight jar for up to 2 weeks."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: a small handful, about 30g."
+      ],
+      "nutrition": {
+        "kcal": 209,
+        "proteinG": 7,
+        "carbsG": 5,
+        "fatG": 17,
+        "fibreG": 4,
+        "sodiumMg": 290
+      }
+    },
+    {
+      "id": "egg-and-veggie-protein-mini-frittatas",
+      "title": "Egg and Veggie Protein Mini Frittatas",
+      "summary": "High-protein egg bites with spinach, capsicum and a little cheddar, baked in a muffin tin.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 18,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 eggs",
+            "1/4 cup milk",
+            "1 cup baby spinach, chopped",
+            "1 capsicum, finely diced",
+            "50g cheddar, grated",
+            "1/2 tsp salt",
+            "1/2 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C fan (200°C conventional) and grease a 6-hole muffin tin.",
+        "Whisk the eggs, milk, salt and pepper.",
+        "Divide the spinach, capsicum and cheddar between the holes and pour over the egg.",
+        "Bake for 18 minutes until puffed, set in the middle and golden.",
+        "Cool for 5 minutes in the tin before lifting out."
+      ],
+      "notes": [
+        "Snack. Per serving: 1 frittata (about 9g protein).",
+        "Food safety: cook eggs until fully set, refrigerate leftovers within 2 hours and eat within 3 days."
+      ],
+      "nutrition": {
+        "kcal": 139,
+        "proteinG": 11,
+        "carbsG": 3,
+        "fatG": 9,
+        "fibreG": 1,
+        "sodiumMg": 270
+      }
+    },
+    {
+      "id": "chaat-masala-roasted-chickpeas",
+      "title": "Chaat Masala Roasted Chickpeas",
+      "summary": "Crunchy oven-roasted chickpeas with a tangy spiced finish.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 x 400g cans chickpeas, drained",
+            "1 tbsp neutral oil",
+            "1 tsp ground cumin",
+            "1 tsp amchur (dried mango powder)",
+            "1/2 tsp chilli powder",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional).",
+        "Drain the chickpeas and dry them thoroughly in a tea towel.",
+        "Toss with the oil and roast on a tray for 30 minutes, shaking twice, until crisp and golden.",
+        "Toss with the cumin, amchur, chilli and salt while hot.",
+        "Cool for 10 minutes to crisp up further and eat the same day."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: about 3/4 cup."
+      ],
+      "nutrition": {
+        "kcal": 162,
+        "proteinG": 8,
+        "carbsG": 20,
+        "fatG": 4,
+        "fibreG": 6,
+        "sodiumMg": 590
+      }
+    },
+    {
+      "id": "chilli-salt-edamame",
+      "title": "Chilli Salt Edamame",
+      "summary": "Steamed edamame pods tossed with flaky salt, chilli and lime.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 5,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g frozen edamame in pods",
+            "1 tsp salt",
+            "1/2 tsp chilli flakes",
+            "1 lime"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the edamame in salted water for 5 minutes until the pods are bright green and the beans tender.",
+        "Drain well in a colander and shake off the excess water.",
+        "Toss with the salt and chilli while still steaming so the seasoning sticks.",
+        "Squeeze over the juice of the lime and toss again.",
+        "Serve warm, squeezing the beans from the pods straight into your mouth."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: a quarter of the pods."
+      ],
+      "nutrition": {
+        "kcal": 135,
+        "proteinG": 12,
+        "carbsG": 8,
+        "fatG": 5,
+        "fibreG": 5,
+        "sodiumMg": 620
+      }
+    }
+  ]
+}

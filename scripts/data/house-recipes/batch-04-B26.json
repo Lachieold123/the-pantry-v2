@@ -1,0 +1,904 @@
+{
+  "about": "House recipes, batch 04 (slice B): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "suan-cai-bai-rou-northeastern-pickled-cabbage-and-pork-pot",
+      "title": "Suan Cai Bai Rou Northeastern Pickled Cabbage and Pork Pot",
+      "summary": "A tangy Dongbei pot of pickled cabbage, pork belly slices and glass noodles that melt into a sour-savoury broth.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g pork belly, thinly sliced",
+            "400g pickled cabbage, shredded",
+            "6 cups water",
+            "150g sweet potato noodles",
+            "200g firm tofu, cubed",
+            "4 slices ginger",
+            "2 tbsp soy sauce",
+            "1 tsp sugar",
+            "2 spring onions, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the pork in the water with the ginger for 15 minutes until it turns opaque and firm.",
+        "Add the pickled cabbage, soy sauce and sugar and simmer 15 minutes until the cabbage is soft and the pork reaches 70°C.",
+        "Add the tofu and noodles and simmer 6 minutes until the noodles are tender and glassy.",
+        "Scatter with spring onions and serve from the pot."
+      ],
+      "notes": [
+        "Food safety: cook the pork to at least 70°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 606,
+        "proteinG": 24,
+        "carbsG": 40,
+        "fatG": 38,
+        "fibreG": 4,
+        "sodiumMg": 1500
+      }
+    },
+    {
+      "id": "hui-guo-rou-sichuan-twice-cooked-pork-with-leek",
+      "title": "Hui Guo Rou Sichuan Twice-Cooked Pork with Leek",
+      "summary": "Pork belly simmered, sliced and fried with leek and chilli bean paste until the edges curl.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g pork belly, in one piece",
+            "3 leeks, sliced diagonally",
+            "3 tbsp doubanjiang",
+            "1 tbsp soy sauce",
+            "1 tsp sugar",
+            "2 cloves garlic, sliced",
+            "1 tbsp vegetable oil",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the pork in water for 30 minutes until a skewer slides in easily and the centre reaches 71°C, then cool and slice thinly.",
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Fry the pork slices in a dry wok for 5 minutes until the edges curl and the fat renders.",
+        "Push aside, add the oil, doubanjiang and garlic for 1 minute, then add the soy sauce, sugar and leeks and toss 3 minutes until the leeks are just soft.",
+        "Spoon the pork and leeks over the rice and serve while the edges are still crisp."
+      ],
+      "notes": [
+        "Food safety: cook the pork to at least 70°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 702,
+        "proteinG": 22,
+        "carbsG": 62,
+        "fatG": 40,
+        "fibreG": 3,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "yangzhou-chao-fan-egg-and-prawn-fried-rice",
+      "title": "Yangzhou Chao Fan Egg and Prawn Fried Rice",
+      "summary": "Golden egg-coated rice with prawns, ham and peas, the banquet classic.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g cooked jasmine rice, chilled",
+            "4 eggs",
+            "200g cooked prawns",
+            "100g ham, diced",
+            "100g peas",
+            "3 spring onions, sliced",
+            "3 tbsp vegetable oil",
+            "1 tbsp soy sauce"
+          ]
+        }
+      ],
+      "steps": [
+        "Beat the eggs and scramble in 1 tbsp oil for 1 minute until just set, then set aside.",
+        "Heat the remaining oil in a wok and fry the rice for 4 minutes on high until it jumps and is piping hot.",
+        "Add the ham, prawns and peas and toss 3 minutes until heated through at 75°C.",
+        "Return the egg, add the soy sauce and spring onions and toss 1 minute."
+      ],
+      "notes": [
+        "Food safety: use rice that was chilled within 1 hour of cooking, reheat until steaming hot, and cook the eggs until set. Contains egg and shellfish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 544,
+        "proteinG": 26,
+        "carbsG": 68,
+        "fatG": 18,
+        "fibreG": 3,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "jiu-cai-he-zi-chive-and-egg-pockets",
+      "title": "Jiu Cai He Zi Chive and Egg Pockets",
+      "summary": "Pan-fried pastry pockets of garlic chives, egg and glass noodles.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g plain flour",
+            "150ml boiling water",
+            "4 eggs",
+            "150g garlic chives, chopped",
+            "100g sweet potato noodles",
+            "2 tbsp vegetable oil",
+            "1 tbsp sesame oil",
+            "1 tbsp soy sauce"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour with the boiling water and 1/4 tsp salt, knead smooth and rest the dough 20 minutes covered.",
+        "Scramble the eggs until just set, soak the noodles in hot water until tender and chop, then mix both with the chives, sesame oil and soy sauce.",
+        "Roll the dough thin, cut 12cm rounds, fill, fold and crimp the edges closed.",
+        "Pan-fry in the oil for 3 minutes per side until deep golden and the filling is hot at 75°C."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until set and heat the filling to 75°C. Contains egg and gluten. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 422,
+        "proteinG": 17,
+        "carbsG": 60,
+        "fatG": 12,
+        "fibreG": 3,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "tie-ban-dou-fu-sizzling-hotplate-tofu",
+      "title": "Tie Ban Dou Fu Sizzling Hotplate Tofu",
+      "summary": "Golden tofu sizzled with mushrooms and capsicum in a soy-ginger sauce; fully vegan.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g firm tofu, sliced",
+            "150g shiitake mushrooms",
+            "1 red capsicum, sliced",
+            "3 tbsp vegetable oil",
+            "3 tbsp soy sauce",
+            "1 tbsp sugar",
+            "1 tbsp ginger, grated",
+            "1 tsp cornflour",
+            "1 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Fry the tofu in 2 tbsp oil for 6 minutes until golden on both sides.",
+        "Add the mushrooms, capsicum and ginger and fry 4 minutes until soft.",
+        "Stir the soy sauce, sugar, cornflour and 3 tbsp water and add, simmering 2 minutes until glossy.",
+        "Serve sizzling over the rice."
+      ],
+      "nutrition": {
+        "kcal": 644,
+        "proteinG": 26,
+        "carbsG": 78,
+        "fatG": 24,
+        "fibreG": 6,
+        "sodiumMg": 1500
+      }
+    },
+    {
+      "id": "jia-chang-dou-fu-home-style-braised-tofu",
+      "title": "Jia Chang Dou Fu Home-Style Braised Tofu",
+      "summary": "Golden pan-fried tofu simmered with pork, carrot and peas in a savoury sauce.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g firm tofu, cubed",
+            "200g minced pork",
+            "1 carrot, diced",
+            "100g peas",
+            "3 tbsp vegetable oil",
+            "3 cloves garlic",
+            "2 tbsp soy sauce",
+            "1 tbsp oyster sauce",
+            "1 cup water",
+            "1 tsp cornflour",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Fry the tofu in 2 tbsp oil for 6 minutes until golden and set aside.",
+        "Fry the pork and garlic in the remaining oil for 5 minutes until no pink remains and it reaches 75°C.",
+        "Add the carrot, soy sauce, oyster sauce and water and simmer 6 minutes, return the tofu and add the peas.",
+        "Thicken with the cornflour stirred in 1 tbsp water for 1 minute and serve over the rice."
+      ],
+      "notes": [
+        "Food safety: cook the pork mince to 75°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 642,
+        "proteinG": 32,
+        "carbsG": 72,
+        "fatG": 24,
+        "fibreG": 5,
+        "sodiumMg": 1050
+      }
+    },
+    {
+      "id": "shao-qie-zi-claypot-braised-eggplant-with-mince",
+      "title": "Shao Qie Zi Claypot Braised Eggplant with Mince",
+      "summary": "Soft eggplant simmered in a garlicky mince sauce in a clay pot.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 eggplants, cut into batons",
+            "300g minced pork",
+            "4 tbsp vegetable oil",
+            "6 cloves garlic, sliced",
+            "2 tbsp doubanjiang",
+            "2 tbsp soy sauce",
+            "1 tbsp sugar",
+            "1 cup water",
+            "1 tsp cornflour",
+            "2 spring onions, sliced",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Fry the eggplant in 3 tbsp oil for 8 minutes until golden and set aside.",
+        "Fry the pork, garlic and doubanjiang in the remaining oil for 5 minutes until no pink remains and it reaches 75°C.",
+        "Add the soy sauce, sugar, water and eggplant and simmer, covered, for 10 minutes until soft.",
+        "Thicken with the cornflour stirred in 1 tbsp water, scatter with spring onions and serve with the rice."
+      ],
+      "notes": [
+        "Food safety: cook the pork mince to 75°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 660,
+        "proteinG": 24,
+        "carbsG": 74,
+        "fatG": 28,
+        "fibreG": 8,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "sha-guo-dou-fu-claypot-tofu-with-prawns-and-mushrooms",
+      "title": "Sha Guo Dou Fu Claypot Tofu with Prawns and Mushrooms",
+      "summary": "Silky tofu and prawns simmered in a ginger broth in a clay pot.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g silken tofu, cubed",
+            "300g raw prawns, peeled",
+            "200g shiitake mushrooms",
+            "150g bok choy",
+            "2 cups chicken stock",
+            "4 slices ginger",
+            "2 tbsp soy sauce",
+            "1 tbsp oyster sauce",
+            "1 tsp sesame oil",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Bring the stock, ginger, soy sauce and oyster sauce to a simmer in a clay pot until fragrant.",
+        "Add the mushrooms and tofu and simmer 6 minutes.",
+        "Add the prawns and bok choy and cook 3 minutes until the prawns are pink and opaque.",
+        "Finish with the sesame oil and serve with the rice."
+      ],
+      "notes": [
+        "Food safety: cook the prawns until pink and opaque, at least 63°C inside. Contains shellfish and soy. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 464,
+        "proteinG": 30,
+        "carbsG": 66,
+        "fatG": 8,
+        "fibreG": 4,
+        "sodiumMg": 1250
+      }
+    },
+    {
+      "id": "ma-yi-shang-shu-ants-climbing-a-tree-pork-noodles",
+      "title": "Ma Yi Shang Shu Ants Climbing a Tree Pork Noodles",
+      "summary": "Glass noodles with spicy minced pork that clings like ants on a tree.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g sweet potato noodles",
+            "300g minced pork",
+            "2 tbsp doubanjiang",
+            "3 cloves garlic",
+            "1 tbsp ginger, grated",
+            "2 tbsp soy sauce",
+            "1 cup chicken stock",
+            "2 spring onions, sliced",
+            "1 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the noodles in hot water for 8 minutes until pliable, then drain.",
+        "Fry the garlic, ginger and doubanjiang in the oil for 1 minute, then add the pork and cook 5 minutes until no pink remains and it reaches 75°C.",
+        "Add the stock and soy sauce, then the noodles, and simmer 5 minutes until the liquid is absorbed.",
+        "Scatter with spring onions and serve hot."
+      ],
+      "notes": [
+        "Food safety: cook the pork mince to 75°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 458,
+        "proteinG": 20,
+        "carbsG": 62,
+        "fatG": 14,
+        "fibreG": 2,
+        "sodiumMg": 1050
+      }
+    },
+    {
+      "id": "pidan-shou-rou-zhou-century-egg-and-pork-congee",
+      "title": "Pidan Shou Rou Zhou Century Egg and Pork Congee",
+      "summary": "Silky rice porridge with century egg and pork, topped with ginger and spring onion.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 60,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup jasmine rice",
+            "8 cups water",
+            "200g pork loin, thinly sliced",
+            "2 century eggs, chopped",
+            "3 slices ginger",
+            "1 tbsp soy sauce",
+            "1 tsp sesame oil",
+            "2 spring onions, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Rinse the rice and simmer it with the water and ginger for 50 minutes, stirring now and then, until the grains collapse into a thick porridge.",
+        "Stir in the pork and cook 5 minutes until no pink remains and it reaches 71°C.",
+        "Add the century eggs, soy sauce and sesame oil and warm for 2 minutes.",
+        "Serve in bowls topped with spring onions."
+      ],
+      "notes": [
+        "Food safety: cook the pork to at least 70°C. Use century eggs from a trusted source and keep them chilled. Contains egg. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 330,
+        "proteinG": 18,
+        "carbsG": 46,
+        "fatG": 8,
+        "fibreG": 1,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "dan-hua-zhou-egg-drop-congee-with-mushrooms",
+      "title": "Dan Hua Zhou Egg Drop Congee with Mushrooms",
+      "summary": "Comforting egg ribbon porridge with shiitake and ginger.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup jasmine rice",
+            "8 cups water",
+            "4 eggs",
+            "150g shiitake mushrooms, sliced",
+            "3 slices ginger",
+            "1 tbsp soy sauce",
+            "1 tsp sesame oil",
+            "2 spring onions, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Rinse the rice and simmer it with the water and ginger for 40 minutes until the grains collapse into porridge.",
+        "Add the mushrooms and cook 5 minutes until soft.",
+        "Beat the eggs and stream them in while stirring so they form ribbons, cooking 1 minute until set.",
+        "Season with soy sauce and sesame oil and top with spring onions."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until fully set. Contains egg. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 308,
+        "proteinG": 14,
+        "carbsG": 44,
+        "fatG": 8,
+        "fibreG": 2,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "hong-kong-prawn-and-egg-scramble-rice-plate",
+      "title": "Hong Kong Prawn and Egg Scramble Rice Plate",
+      "summary": "Silky eggs with prawns, spring onion and a splash of soy over rice.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 8,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 eggs",
+            "200g raw prawns, peeled",
+            "2 spring onions, sliced",
+            "2 tbsp vegetable oil",
+            "1 tbsp soy sauce",
+            "1 tsp Shaoxing wine",
+            "1 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Fry the prawns in 1 tbsp oil for 2 minutes until pink and curled, then set aside.",
+        "Beat the eggs with the wine and a pinch of salt and scramble in the remaining oil for 1 minute until barely set.",
+        "Fold in the prawns and spring onion and cook 30 seconds until the egg is set with no liquid remaining.",
+        "Spoon over the rice and drizzle with soy sauce."
+      ],
+      "notes": [
+        "Food safety: cook the prawns until pink and opaque, at least 63°C inside, and the eggs until set. Contains egg and shellfish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 594,
+        "proteinG": 32,
+        "carbsG": 62,
+        "fatG": 24,
+        "fibreG": 1,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "sizzling-black-pepper-beef-hotplate-cantonese-style",
+      "title": "Sizzling Black Pepper Beef Hotplate Cantonese Style",
+      "summary": "Beef strips and onion in a glossy black pepper sauce, served sizzling with rice.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g beef rump, thinly sliced",
+            "2 onions, sliced",
+            "1 green capsicum, sliced",
+            "3 tbsp vegetable oil",
+            "2 tbsp oyster sauce",
+            "2 tbsp soy sauce",
+            "2 tsp ground black pepper",
+            "1 tsp cornflour",
+            "1/2 cup water",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Sear the beef in 1 tbsp very hot oil for 2 minutes per batch until browned and at least 71°C.",
+        "Fry the onions and capsicum in the remaining oil for 4 minutes.",
+        "Stir the oyster sauce, soy sauce, pepper, cornflour and water together, add and simmer 2 minutes until glossy.",
+        "Return the beef, toss and serve over the rice."
+      ],
+      "notes": [
+        "Food safety: cook the beef to at least 71°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 594,
+        "proteinG": 36,
+        "carbsG": 66,
+        "fatG": 20,
+        "fibreG": 3,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "hong-kong-soy-sauce-chicken-with-ginger-oil-rice",
+      "title": "Hong Kong Soy Sauce Chicken with Ginger Oil Rice",
+      "summary": "Whole chicken poached in a soy and spice liquid until glossy, served with ginger-scented rice.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 chicken, about 1.4kg",
+            "1/2 cup soy sauce",
+            "1/4 cup dark soy sauce",
+            "1/4 cup Shaoxing wine",
+            "3 tbsp sugar",
+            "2 star anise",
+            "4 slices ginger",
+            "4 cups water",
+            "1 1/2 cups jasmine rice",
+            "1 tbsp ginger, finely grated",
+            "2 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Bring the soy sauces, wine, sugar, star anise, ginger slices and water to a boil in a pot just large enough for the chicken until the sugar dissolves.",
+        "Lower the chicken in, cover and simmer very gently for 35 minutes, turning once, until the thickest part reaches 75°C.",
+        "Rest 15 minutes, then chop. Cook the rice until tender and fluffy in some strained braising liquid and water.",
+        "Heat the oil, pour over the grated ginger and a pinch of salt and spoon over the rice.",
+        "Serve the chicken with the rice and a little braising liquid."
+      ],
+      "notes": [
+        "Food safety: cook the chicken to 75°C at the thickest part of the thigh. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 440,
+        "proteinG": 32,
+        "carbsG": 44,
+        "fatG": 15,
+        "fibreG": 1,
+        "sodiumMg": 1500
+      }
+    },
+    {
+      "id": "gu-lao-ji-pineapple-sweet-and-sour-chicken",
+      "title": "Gu Lao Ji Pineapple Sweet and Sour Chicken",
+      "summary": "Crisp chicken pieces in a bright sweet and sour sauce with pineapple and capsicum.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g chicken breast, cut into chunks",
+            "1 egg",
+            "1/2 cup cornflour",
+            "1/2 cup vegetable oil, for frying",
+            "1 cup pineapple pieces",
+            "1 red capsicum, chopped",
+            "1/4 cup tomato sauce",
+            "3 tbsp white vinegar",
+            "3 tbsp sugar",
+            "1 tbsp soy sauce",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Toss the chicken in the egg, then the cornflour, and fry in the oil for 6 minutes in batches until golden and 75°C in the centre.",
+        "Simmer the tomato sauce, vinegar, sugar and soy sauce for 3 minutes until syrupy.",
+        "Toss in the pineapple and capsicum for 1 minute, add the chicken to coat and serve with the rice."
+      ],
+      "notes": [
+        "Food safety: cook the chicken to 75°C in the centre. Contains egg. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 704,
+        "proteinG": 40,
+        "carbsG": 94,
+        "fatG": 18,
+        "fibreG": 3,
+        "sodiumMg": 750
+      }
+    },
+    {
+      "id": "jiang-cong-yu-cantonese-ginger-and-spring-onion-fish",
+      "title": "Jiang Cong Yu Cantonese Ginger and Spring Onion Fish",
+      "summary": "Steamed white fish dressed with sizzling oil, ginger, spring onion and soy.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 white fish fillets, about 700g total",
+            "4 spring onions, cut into fine strips",
+            "3 tbsp ginger, cut into matchsticks",
+            "3 tbsp soy sauce",
+            "1 tbsp Shaoxing wine",
+            "3 tbsp vegetable oil",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Steam the fish with the wine on a heatproof plate for 8 minutes until opaque and flaking at 63°C.",
+        "Pour off the liquid and top the fish with half the ginger and spring onion.",
+        "Heat the oil until smoking, pour it over the topping to sizzle, then add the soy sauce.",
+        "Serve with the rice and the remaining spring onion."
+      ],
+      "notes": [
+        "Food safety: cook the fish until opaque and flaking, at least 63°C. Contains fish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 538,
+        "proteinG": 36,
+        "carbsG": 66,
+        "fatG": 14,
+        "fibreG": 2,
+        "sodiumMg": 950
+      }
+    },
+    {
+      "id": "luo-bo-niu-nam-daikon-and-beef-brisket-claypot",
+      "title": "Luo Bo Niu Nam Daikon and Beef Brisket Claypot",
+      "summary": "Brisket and radish slow-braised in an aromatic soy broth.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 150,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g beef brisket, cubed",
+            "1 daikon, cut into chunks",
+            "5 slices ginger",
+            "2 star anise",
+            "3 tbsp soy sauce",
+            "1 tbsp oyster sauce",
+            "1 tbsp sugar",
+            "4 cups water",
+            "2 spring onions, cut into lengths",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Blanch the brisket in boiling water for 5 minutes, drain and rinse.",
+        "Simmer the brisket in a clay pot with the water, ginger, star anise, soy sauce, oyster sauce and sugar for 90 minutes until tender and at least 71°C.",
+        "Add the daikon and simmer 25 minutes until translucent and soft.",
+        "Cook the rice until tender and fluffy, scatter the stew with spring onions and serve."
+      ],
+      "notes": [
+        "Food safety: cook the beef to at least 71°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 652,
+        "proteinG": 46,
+        "carbsG": 66,
+        "fatG": 22,
+        "fibreG": 3,
+        "sodiumMg": 1300
+      }
+    },
+    {
+      "id": "ge-zai-yu-fish-and-tofu-claypot-with-ginger",
+      "title": "Ge Zai Yu Fish and Tofu Claypot with Ginger",
+      "summary": "White fish and silken tofu in a ginger broth with mushrooms and greens.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g white fish fillet, cut into chunks",
+            "300g silken tofu, cubed",
+            "150g shiitake mushrooms",
+            "150g bok choy",
+            "3 cups water",
+            "4 slices ginger",
+            "2 tbsp soy sauce",
+            "1 tsp sesame oil",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Bring the water, ginger and mushrooms to a simmer in the pot until fragrant, about 8 minutes.",
+        "Add the tofu, fish and soy sauce and simmer gently for 6 minutes until the fish is opaque and flakes at 63°C.",
+        "Add the bok choy for 1 minute, finish with sesame oil and serve with the rice."
+      ],
+      "notes": [
+        "Food safety: cook the fish until opaque and flaking, at least 63°C. Contains fish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 472,
+        "proteinG": 32,
+        "carbsG": 66,
+        "fatG": 8,
+        "fibreG": 4,
+        "sodiumMg": 900
+      }
+    }
+  ]
+}

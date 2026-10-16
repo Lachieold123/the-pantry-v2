@@ -1,0 +1,951 @@
+{
+  "about": "House recipes, batch 04 (slice B): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "suji-halwa-semolina-pudding-cups",
+      "title": "Suji Halwa Semolina Pudding Cups",
+      "summary": "Warm, glossy semolina pudding toasted in ghee with sultanas and almonds, served at Diwali and pujas.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100g fine semolina",
+            "60g ghee",
+            "80g caster sugar",
+            "1 cup milk",
+            "1 cup water",
+            "2 tbsp sultanas",
+            "2 tbsp flaked almonds",
+            "1/2 tsp ground cinnamon"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the milk and water together in a small pan until steaming.",
+        "Toast the semolina in the ghee in a wide pan over medium heat for 6 minutes, stirring, until golden and fragrant.",
+        "Pour in the hot liquid carefully (it will spit), then add the sugar, sultanas and cinnamon and stir for 4 minutes until thick and the mix leaves the sides of the pan.",
+        "Spoon into six small cups and press down lightly.",
+        "Top with the almonds and serve warm."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 cup.",
+        "Keep covered in the fridge for up to 3 days and reheat with a splash of milk."
+      ],
+      "nutrition": {
+        "kcal": 252,
+        "proteinG": 4,
+        "carbsG": 36,
+        "fatG": 10,
+        "fibreG": 1,
+        "sodiumMg": 20
+      }
+    },
+    {
+      "id": "crunchy-peanut-brittle",
+      "title": "Crunchy Peanut Brittle",
+      "summary": "Glassy golden sugar brittle packed with roasted peanuts, a sweet gift for the holidays.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g caster sugar",
+            "60ml water",
+            "200g roasted unsalted peanuts",
+            "20g butter",
+            "1/2 tsp bicarbonate of soda",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Line a tray with baking paper and have all the ingredients measured and ready.",
+        "Heat the sugar and water in a heavy saucepan over medium heat without stirring for 10 minutes until it turns a light amber colour.",
+        "Take off the heat and quickly stir in the peanuts, butter, salt and bicarbonate of soda; it will foam.",
+        "Pour onto the tray and spread thin with an oiled spoon, then cool completely.",
+        "Snap into about 16 pieces."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 pieces.",
+        "Safety: molten sugar reaches over 150°C and causes severe burns. Keep children and pets away, use a heavy pan, never touch or taste it hot, and soak the pan in hot water to clean.",
+        "Store in an airtight container for up to 2 weeks."
+      ],
+      "nutrition": {
+        "kcal": 272,
+        "proteinG": 9,
+        "carbsG": 26,
+        "fatG": 14,
+        "fibreG": 3,
+        "sodiumMg": 90
+      }
+    },
+    {
+      "id": "ghorayeba-eid-shortbread",
+      "title": "Ghorayeba Eid Shortbread",
+      "summary": "Pale, crumbly Middle Eastern shortbread that melts in the mouth, topped with a pistachio.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g plain flour",
+            "150g soft butter",
+            "80g icing sugar",
+            "16 pistachios"
+          ]
+        }
+      ],
+      "steps": [
+        "Beat the butter and icing sugar for 5 minutes until very pale and fluffy.",
+        "Stir in the flour to a soft dough, wrap and chill.",
+        "Heat the oven to 150°C fan (170°C conventional) and line two trays.",
+        "Roll into 16 balls, place on the trays and press a pistachio into each.",
+        "Bake for 15 minutes until set but still pale, with no colour. Cool on the trays."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 cookies. Plus 30 minutes chilling the dough.",
+        "Store in an airtight container for up to 1 week; they are fragile."
+      ],
+      "nutrition": {
+        "kcal": 273,
+        "proteinG": 3,
+        "carbsG": 31,
+        "fatG": 15,
+        "fibreG": 1,
+        "sodiumMg": 130
+      }
+    },
+    {
+      "id": "firni-rice-milk-pudding-cups",
+      "title": "Firni Rice Milk Pudding Cups",
+      "summary": "Silky ground rice and milk pudding set in cups with pistachios, served chilled at Eid.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "750ml milk",
+            "40g rice flour",
+            "60g caster sugar",
+            "1/2 tsp ground cinnamon",
+            "2 tbsp chopped pistachios"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the rice flour with 1/2 cup of the cold milk until smooth.",
+        "Heat the remaining milk with the sugar in a saucepan until steaming, then whisk in the rice flour mix.",
+        "Stir constantly over medium heat for 10 minutes until the pudding thickens and coats the back of a spoon.",
+        "Pour into four cups, sprinkle with the cinnamon and pistachios and chill until set."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 cup. Plus 3 hours chilling.",
+        "Keep in the fridge and eat within 3 days."
+      ],
+      "nutrition": {
+        "kcal": 240,
+        "proteinG": 8,
+        "carbsG": 38,
+        "fatG": 6,
+        "fibreG": 1,
+        "sodiumMg": 90
+      }
+    },
+    {
+      "id": "jam-thumbprint-christmas-cookies",
+      "title": "Jam Thumbprint Christmas Cookies",
+      "summary": "Buttery vanilla cookies with a pool of apricot jam, a simple holiday biscuit-tin favourite.",
+      "cuisine": "british",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 25,
+      "cookMinutes": 15,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g soft butter",
+            "80g caster sugar",
+            "1 egg yolk",
+            "1 tsp vanilla extract",
+            "250g plain flour",
+            "60g apricot jam"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional) and line two trays.",
+        "Beat the butter and sugar until pale, then beat in the yolk and vanilla.",
+        "Stir in the flour to a soft dough and roll into 24 balls.",
+        "Place on the trays, press a deep thumbprint into each and fill with 1/2 tsp jam.",
+        "Bake for 15 minutes until the edges are pale gold. Cool on the trays for 10 minutes."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 cookies.",
+        "Food safety: wash hands and the bench after handling raw egg yolk.",
+        "Store in an airtight container for up to 1 week."
+      ],
+      "nutrition": {
+        "kcal": 207,
+        "proteinG": 3,
+        "carbsG": 28,
+        "fatG": 9,
+        "fibreG": 1,
+        "sodiumMg": 80
+      }
+    },
+    {
+      "id": "chocolate-oat-crunch-easter-nests",
+      "title": "Chocolate Oat Crunch Easter Nests",
+      "summary": "Crunchy toasted oat and chocolate nests, easy for kids to make at Easter.",
+      "cuisine": "british",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 5,
+      "servings": 12,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g dark chocolate",
+            "30g butter",
+            "2 tbsp golden syrup",
+            "100g rolled oats"
+          ]
+        }
+      ],
+      "steps": [
+        "Line a 12-hole muffin tin with paper cases.",
+        "Toast the oats in a dry pan for 4 minutes until golden. Melt the chocolate, butter and golden syrup in a bowl over a pan of barely simmering water, stirring until smooth, about 5 minutes.",
+        "Fold in the toasted oats until coated.",
+        "Spoon into the cases, press a hollow in the middle of each with the back of a spoon and chill until set."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 nest. Plus 1 hour chilling.",
+        "Keep in an airtight container in the fridge for up to 5 days."
+      ],
+      "nutrition": {
+        "kcal": 149,
+        "proteinG": 2,
+        "carbsG": 19,
+        "fatG": 7,
+        "fibreG": 1,
+        "sodiumMg": 70
+      }
+    },
+    {
+      "id": "orange-cinnamon-day-of-the-dead-muffins",
+      "title": "Orange Cinnamon Day of the Dead Muffins",
+      "summary": "Soft orange and cinnamon muffins with a sugar crust, inspired by the flavours of pan de muerto.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 22,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g plain flour",
+            "2 tsp baking powder",
+            "100g caster sugar",
+            "1 tsp ground cinnamon",
+            "zest of 2 oranges",
+            "2 eggs",
+            "150ml milk",
+            "60ml orange juice",
+            "100g butter, melted",
+            "2 tbsp caster sugar, extra"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C fan (200°C conventional) and line a 12-hole muffin tin.",
+        "Mix the flour, baking powder, sugar, cinnamon and orange zest.",
+        "Whisk the eggs, milk, orange juice and butter and stir into the dry mix until just combined.",
+        "Divide among the cases and sprinkle with the extra sugar.",
+        "Bake for 22 minutes until golden and a skewer comes out clean."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 muffin.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Keep in an airtight container for 2 days or freeze for 1 month."
+      ],
+      "nutrition": {
+        "kcal": 223,
+        "proteinG": 4,
+        "carbsG": 31,
+        "fatG": 9,
+        "fibreG": 1,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "french-yoghurt-loaf-cake",
+      "title": "French Yoghurt Loaf Cake",
+      "summary": "A simple, moist everyday cake measured from one pot of yoghurt, with lemon zest.",
+      "cuisine": "french",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 10,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "125g plain yoghurt",
+            "200g caster sugar",
+            "190g plain flour",
+            "2 tsp baking powder",
+            "3 eggs",
+            "80ml neutral oil",
+            "zest of 1 lemon"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional). Grease and line a 900g loaf tin.",
+        "Whisk the yoghurt, sugar, eggs, oil and lemon zest until smooth.",
+        "Fold in the flour and baking powder until just combined.",
+        "Pour into the tin and bake for 40 minutes until golden and a skewer comes out clean.",
+        "Cool in the tin for 10 minutes, then on a rack. Cut into 10 slices."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 slice.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Keeps wrapped for up to 4 days."
+      ],
+      "nutrition": {
+        "kcal": 246,
+        "proteinG": 5,
+        "carbsG": 38,
+        "fatG": 8,
+        "fibreG": 1,
+        "sodiumMg": 140
+      }
+    },
+    {
+      "id": "glazed-fairy-cakes",
+      "title": "Glazed Fairy Cakes",
+      "summary": "Light little butter cakes with a thin glacé icing, a party-table classic.",
+      "cuisine": "british",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "125g soft butter",
+            "125g caster sugar",
+            "2 eggs",
+            "125g self-raising flour",
+            "1 tbsp milk",
+            "1 tsp vanilla extract",
+            "100g icing sugar",
+            "2 tbsp water"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional) and line a 12-hole bun tin with paper cases.",
+        "Beat the butter and sugar for 4 minutes until pale, then beat in the eggs one at a time with a spoon of flour.",
+        "Fold in the remaining flour, milk and vanilla and divide among the cases.",
+        "Bake for 15 minutes until golden and springy. Cool on a rack.",
+        "Mix the icing sugar and water into a thin glaze and spoon over each cake. Leave to set for 20 minutes."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 cake.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Best within 2 days in an airtight container."
+      ],
+      "nutrition": {
+        "kcal": 207,
+        "proteinG": 3,
+        "carbsG": 28,
+        "fatG": 9,
+        "fibreG": 1,
+        "sodiumMg": 110
+      }
+    },
+    {
+      "id": "coconut-jam-shortbread-squares",
+      "title": "Coconut Jam Shortbread Squares",
+      "summary": "A shortbread base with apricot jam and a chewy coconut topping.",
+      "cuisine": "british",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 40,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "125g soft butter",
+            "40g icing sugar",
+            "200g plain flour",
+            "100g apricot jam",
+            "2 eggs",
+            "80g caster sugar",
+            "120g desiccated coconut"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional). Grease and line a 20cm square tin.",
+        "Beat the butter and icing sugar, stir in the flour to a dough and press into the tin. Bake for 15 minutes until pale gold.",
+        "Spread the jam over the warm base.",
+        "Whisk the eggs and caster sugar, stir in the coconut and spread over the jam.",
+        "Bake for 25 minutes until the top is golden and set. Cool completely and cut into 16 squares."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 squares.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Store in an airtight container for up to 4 days."
+      ],
+      "nutrition": {
+        "kcal": 413,
+        "proteinG": 6,
+        "carbsG": 48,
+        "fatG": 21,
+        "fibreG": 4,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "greek-yoghurt-oat-muffins",
+      "title": "Greek Yoghurt Oat Muffins",
+      "summary": "Moist apple and walnut muffins made with Greek yoghurt and oats for extra protein.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 22,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g rolled oats",
+            "150g plain flour",
+            "2 tsp baking powder",
+            "1 tsp ground cinnamon",
+            "250g Greek yoghurt",
+            "2 eggs",
+            "80g honey",
+            "60ml neutral oil",
+            "1 apple, grated",
+            "40g walnuts, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C fan (200°C conventional) and line a 12-hole muffin tin.",
+        "Mix the oats, flour, baking powder and cinnamon.",
+        "Whisk the yoghurt, eggs, honey and oil, stir in the apple and combine with the dry mix until just mixed.",
+        "Fold through the walnuts, divide among the cases and bake for 22 minutes until golden and a skewer comes out clean.",
+        "Cool for 5 minutes in the tin."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 muffin.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Keeps in the fridge for 3 days or freezes for 1 month."
+      ],
+      "nutrition": {
+        "kcal": 212,
+        "proteinG": 6,
+        "carbsG": 28,
+        "fatG": 8,
+        "fibreG": 2,
+        "sodiumMg": 130
+      }
+    },
+    {
+      "id": "zucchini-and-cheddar-savoury-loaf",
+      "title": "Zucchini and Cheddar Savoury Loaf",
+      "summary": "A moist loaf packed with grated zucchini, cheese and chives, lovely sliced and buttered.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "servings": 10,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g plain flour",
+            "2 tsp baking powder",
+            "300g zucchini, grated and squeezed dry",
+            "100g vegetarian hard cheese, grated",
+            "3 tbsp chopped chives",
+            "2 eggs",
+            "60ml neutral oil",
+            "100ml milk",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C fan (200°C conventional). Grease and line a 900g loaf tin.",
+        "Mix the flour, baking powder, salt, zucchini, cheese and chives.",
+        "Whisk the eggs, oil and milk and fold through until just combined.",
+        "Pour into the tin and bake for 45 minutes until golden and a skewer comes out clean.",
+        "Cool in the tin for 10 minutes, then on a rack. Cut into 10 slices."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 slice.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Keeps in the fridge for 3 days or freezes sliced for 1 month."
+      ],
+      "nutrition": {
+        "kcal": 205,
+        "proteinG": 8,
+        "carbsG": 22,
+        "fatG": 9,
+        "fibreG": 2,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "olive-and-rosemary-quick-loaf",
+      "title": "Olive and Rosemary Quick Loaf",
+      "summary": "An easy yeast-free loaf with green olives, rosemary and a little cheese.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 10,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g plain flour",
+            "2 tsp baking powder",
+            "100g green olives, pitted and chopped",
+            "1 tbsp chopped rosemary",
+            "50g vegetarian hard cheese, grated",
+            "2 eggs",
+            "200ml milk",
+            "60ml olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C fan (200°C conventional). Grease and line a 900g loaf tin.",
+        "Mix the flour, baking powder, olives, rosemary and cheese.",
+        "Whisk the eggs, milk and olive oil and fold through until just combined.",
+        "Pour into the tin and bake for 40 minutes until golden and a skewer comes out clean.",
+        "Cool in the tin for 10 minutes, then on a rack. Cut into 10 slices."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 slice.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Keeps wrapped for 3 days or freezes sliced for 1 month."
+      ],
+      "nutrition": {
+        "kcal": 213,
+        "proteinG": 6,
+        "carbsG": 26,
+        "fatG": 9,
+        "fibreG": 2,
+        "sodiumMg": 420
+      }
+    },
+    {
+      "id": "chilli-cornbread-muffins",
+      "title": "Chilli Cornbread Muffins",
+      "summary": "Golden cornmeal muffins with sweetcorn, cheese and fresh chilli.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g polenta",
+            "150g plain flour",
+            "1 tbsp baking powder",
+            "1 cup corn kernels",
+            "60g vegetarian hard cheese, grated",
+            "1 red chilli, deseeded and finely chopped",
+            "2 eggs",
+            "250ml milk",
+            "60ml neutral oil",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional) and line a 12-hole muffin tin.",
+        "Mix the polenta, flour, baking powder, salt, corn, cheese and chilli.",
+        "Whisk the eggs, milk and oil and stir through until just combined.",
+        "Divide among the cases and bake for 20 minutes until golden and firm.",
+        "Cool for 5 minutes in the tin."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 muffin.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Best the same day; keeps 2 days and freezes for 1 month."
+      ],
+      "nutrition": {
+        "kcal": 191,
+        "proteinG": 6,
+        "carbsG": 25,
+        "fatG": 7,
+        "fibreG": 2,
+        "sodiumMg": 280
+      }
+    },
+    {
+      "id": "sundried-tomato-and-basil-muffins",
+      "title": "Sundried Tomato and Basil Muffins",
+      "summary": "Savoury muffins studded with sundried tomato, basil and cheese.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 22,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g plain flour",
+            "2 tsp baking powder",
+            "60g sundried tomatoes, chopped",
+            "1/4 cup torn basil",
+            "60g vegetarian hard cheese, grated",
+            "2 eggs",
+            "200ml milk",
+            "60ml olive oil",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C fan (200°C conventional) and line a 12-hole muffin tin.",
+        "Mix the flour, baking powder, salt, tomatoes, basil and cheese.",
+        "Whisk the eggs, milk and oil and fold through until just combined.",
+        "Divide among the cases and bake for 22 minutes until golden and a skewer comes out clean.",
+        "Cool for 5 minutes in the tin."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 muffin.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Keeps in an airtight container for 2 days or freezes for 1 month."
+      ],
+      "nutrition": {
+        "kcal": 188,
+        "proteinG": 6,
+        "carbsG": 22,
+        "fatG": 8,
+        "fibreG": 2,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "rough-puff-jam-pinwheels",
+      "title": "Rough Puff Jam Pinwheels",
+      "summary": "Flaky homemade rough puff swirled with apricot jam.",
+      "cuisine": "french",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 40,
+      "cookMinutes": 25,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g plain flour",
+            "100g cold butter, cubed",
+            "1/4 tsp salt",
+            "80ml iced water",
+            "4 tbsp apricot jam",
+            "1 tbsp milk"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour and salt, stir in the cold butter cubes, then add the iced water to a rough dough. Roll to a rectangle, fold in thirds and repeat 3 times, chilling between folds.",
+        "Heat the oven to 200°C fan (220°C conventional) and line a tray.",
+        "Roll the pastry to a 30 x 24cm rectangle, spread with the jam and roll up from the long side.",
+        "Cut into 12 slices, lay flat on the tray and brush with the milk.",
+        "Bake for 25 minutes until puffed and deep golden. Cool for 10 minutes."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 pinwheels. Plus about 45 minutes chilling between folds.",
+        "Best the day they are baked; keeps 2 days."
+      ],
+      "nutrition": {
+        "kcal": 243,
+        "proteinG": 3,
+        "carbsG": 28,
+        "fatG": 13,
+        "fibreG": 1,
+        "sodiumMg": 140
+      }
+    },
+    {
+      "id": "mini-apple-strudel-rolls",
+      "title": "Mini Apple Strudel Rolls",
+      "summary": "Flaky puff pastry rolls with a cinnamon, apple and sultana filling, sliced into bites.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 25,
+      "cookMinutes": 25,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 sheets puff pastry",
+            "2 apples, peeled and finely diced",
+            "40g sultanas",
+            "2 tbsp caster sugar",
+            "1 tsp ground cinnamon",
+            "2 tbsp breadcrumbs",
+            "20g butter, melted"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional) and line a tray.",
+        "Mix the apple, sultanas, sugar and cinnamon.",
+        "Sprinkle each pastry sheet with the breadcrumbs, spread the apple mix along one edge and roll up tightly, sealing the edge with a little water.",
+        "Brush with the melted butter and cut each roll into 4 pieces.",
+        "Bake, cut-side up, for 25 minutes until puffed and deep golden. Cool for 10 minutes."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 piece.",
+        "Best the day they are baked; keeps 2 days."
+      ],
+      "nutrition": {
+        "kcal": 224,
+        "proteinG": 3,
+        "carbsG": 24,
+        "fatG": 13,
+        "fibreG": 1,
+        "sodiumMg": 280
+      }
+    },
+    {
+      "id": "chocolate-orange-truffles",
+      "title": "Chocolate Orange Truffles",
+      "summary": "Rich dark chocolate ganache truffles with orange zest, rolled in cocoa.",
+      "cuisine": "french",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 5,
+      "servings": 10,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g dark chocolate, chopped",
+            "100ml thickened cream",
+            "zest of 1 orange",
+            "3 tbsp cocoa powder"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the cream in a small pan until just steaming, about 2 minutes.",
+        "Pour over the chocolate and orange zest, wait 1 minute, then stir until smooth.",
+        "Chill until firm enough to scoop.",
+        "Roll into 20 balls with cool hands, coat in the cocoa and chill until firm."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 truffles. Plus 2 hours chilling.",
+        "Keep in the fridge for up to 10 days."
+      ],
+      "nutrition": {
+        "kcal": 146,
+        "proteinG": 2,
+        "carbsG": 11,
+        "fatG": 10,
+        "fibreG": 2,
+        "sodiumMg": 15
+      }
+    },
+    {
+      "id": "baked-ricotta-frittelle-bites",
+      "title": "Baked Ricotta Frittelle Bites",
+      "summary": "Soft, lemony ricotta bites baked in a mini muffin tin instead of fried.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 18,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g ricotta",
+            "2 eggs",
+            "100g plain flour",
+            "50g caster sugar",
+            "1 tsp baking powder",
+            "zest of 1 lemon",
+            "20g butter, for the tin",
+            "1 tbsp icing sugar"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C fan (200°C conventional) and grease a 24-hole mini muffin tin with the butter.",
+        "Beat the ricotta, eggs, sugar and lemon zest until smooth.",
+        "Stir in the flour and baking powder until just combined.",
+        "Spoon into the holes and bake for 18 minutes until puffed and golden.",
+        "Cool for 5 minutes and dust with the icing sugar."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 4 bites.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Best warm; keep covered in the fridge for 2 days."
+      ],
+      "nutrition": {
+        "kcal": 231,
+        "proteinG": 9,
+        "carbsG": 28,
+        "fatG": 9,
+        "fibreG": 1,
+        "sodiumMg": 120
+      }
+    }
+  ]
+}

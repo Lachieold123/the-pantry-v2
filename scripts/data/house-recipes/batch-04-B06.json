@@ -1,0 +1,1170 @@
+{
+ "about": "House recipes, batch 04 (slice B): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+ "recipes": [
+  {
+   "id": "prawn-egg-foo-yung-omelettes-with-gravy",
+   "title": "Prawn Egg Foo Yung Omelettes with Gravy",
+   "summary": "Fluffy prawn and bean sprout omelettes with a glossy soy gravy.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "6 egg",
+      "200g prawn, peeled and chopped",
+      "1 cup bean sprout",
+      "3 spring onion, sliced",
+      "3 tbsp neutral oil",
+      "1 cup chicken stock",
+      "1 tbsp soy sauce",
+      "1 tbsp cornflour",
+      "1 tsp sesame oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Beat the eggs with the prawns, sprouts, spring onion and sesame oil.",
+    "Heat the oil in a pan and cook ladles of the mixture for 2 minutes each side until golden and fully set.",
+    "Simmer the stock, soy sauce and cornflour mixed with 2 tbsp water for 2 minutes until thick and glossy.",
+    "Serve the omelettes with the gravy poured over."
+   ],
+   "notes": [
+    "Food safety: prawns must be pink and opaque and the egg fully set.",
+    "Lunch. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 318,
+    "proteinG": 26,
+    "carbsG": 8,
+    "fatG": 20,
+    "fibreG": 1,
+    "sodiumMg": 900
+   }
+  },
+  {
+   "id": "crisp-pork-in-pineapple-sweet-sour-glaze",
+   "title": "Crisp Pork in Pineapple Sweet Sour Glaze",
+   "summary": "Crunchy battered pork pieces tossed in a tangy pineapple and capsicum sauce.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 25,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g pork fillet, cut into cubes",
+      "1/2 cup cornflour",
+      "1/2 cup plain flour",
+      "3/4 cup water",
+      "1/2 cup neutral oil",
+      "1 capsicum, chopped",
+      "1 tinned pineapple, drained",
+      "1/4 cup tomato sauce",
+      "3 tbsp rice vinegar",
+      "2 tbsp white sugar",
+      "1 tbsp soy sauce",
+      "2 cups jasmine rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Whisk the cornflour, plain flour and water into a thick batter and coat the pork.",
+    "Shallow-fry the pork in the oil over medium-high heat for 8 minutes, turning, until golden, crisp and cooked through.",
+    "Simmer the tomato sauce, vinegar, sugar and soy sauce for 3 minutes until syrupy, then add the capsicum and pineapple.",
+    "Cook the rice by your usual method until tender, toss the pork through the sauce and serve over rice."
+   ],
+   "notes": [
+    "Food safety: pork must reach 70°C throughout with no pink.",
+    "Dinner. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 718,
+    "proteinG": 34,
+    "carbsG": 90,
+    "fatG": 24,
+    "fibreG": 3,
+    "sodiumMg": 900
+   }
+  },
+  {
+   "id": "black-pepper-beef-with-capsicum",
+   "title": "Black Pepper Beef with Capsicum",
+   "summary": "Tender beef strips stir-fried with cracked pepper and capsicum in a rich soy sauce.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 12,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g beef rump, thinly sliced",
+      "1 tbsp cornflour",
+      "2 tbsp neutral oil",
+      "2 capsicum, sliced",
+      "1 brown onion, sliced",
+      "4 garlic, minced",
+      "1 tbsp black pepper",
+      "2 tbsp oyster sauce",
+      "1 tbsp soy sauce",
+      "2 cups jasmine rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the beef with the cornflour and the soy sauce.",
+    "Stir-fry the beef in the oil in a very hot wok for 2 minutes until browned, then lift out.",
+    "Stir-fry the onion, capsicum and garlic for 3 minutes until tender-crisp.",
+    "Return the beef with the pepper and oyster sauce and toss for 1 minute until glossy.",
+    "Cook the rice by your usual method until tender, and serve alongside."
+   ],
+   "notes": [
+    "Food safety: thin beef strips are cooked when no pink remains and they reach 71°C.",
+    "Dinner. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 566,
+    "proteinG": 34,
+    "carbsG": 70,
+    "fatG": 16,
+    "fibreG": 3,
+    "sodiumMg": 1300
+   }
+  },
+  {
+   "id": "pan-fried-chive-and-tofu-dumplings",
+   "title": "Pan-Fried Chive and Tofu Dumplings",
+   "summary": "Crisp-based dumplings filled with garlic chives, tofu and mushroom.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 45,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "16 gyoza wrapper",
+      "200g firm tofu, crumbled",
+      "1 bunch garlic chives, chopped",
+      "100g shiitake mushroom, finely chopped",
+      "2 tbsp soy sauce",
+      "1 tsp sesame oil",
+      "2 tbsp neutral oil",
+      "1/2 cup water",
+      "2 tbsp Chinkiang black vinegar"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the tofu, chives, mushroom, 1 tbsp soy sauce and sesame oil.",
+    "Fill and seal each wrapper with a spoonful of the mixture.",
+    "Fry the dumplings flat-side down in the oil for 3 minutes until golden, add the water, cover and steam for 6 minutes until the wrappers are translucent.",
+    "Mix the vinegar with the remaining soy sauce and serve for dipping."
+   ],
+   "notes": [
+    "Lunch. Vegan."
+   ],
+   "nutrition": {
+    "kcal": 245,
+    "proteinG": 8,
+    "carbsG": 35,
+    "fatG": 7,
+    "fibreG": 2,
+    "sodiumMg": 1000
+   }
+  },
+  {
+   "id": "savoury-rice-porridge-with-pickled-mustard-greens",
+   "title": "Savoury Rice Porridge with Pickled Mustard Greens",
+   "summary": "Silky rice porridge topped with pickled greens, spring onion and a soft egg.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup jasmine rice",
+      "6 cups water",
+      "4 egg",
+      "1/2 cup pickled mustard greens",
+      "2 spring onion, sliced",
+      "1 tbsp soy sauce",
+      "1 tsp sesame oil",
+      "1 tbsp fried shallots"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the rice with the water for 40 minutes, stirring now and then, until the grains break down and the porridge is thick.",
+    "Soft-boil the eggs for 6 minutes, cool and peel.",
+    "Ladle the porridge into bowls and top with the egg, greens, spring onion and fried shallots.",
+    "Drizzle with soy sauce and sesame oil."
+   ],
+   "notes": [
+    "Food safety: soft-boiled eggs are not recommended for pregnant or vulnerable people; boil for 10 minutes instead. Breakfast. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 315,
+    "proteinG": 14,
+    "carbsG": 44,
+    "fatG": 9,
+    "fibreG": 1,
+    "sodiumMg": 900
+   }
+  },
+  {
+   "id": "hong-kong-style-peanut-french-toast",
+   "title": "Hong Kong-Style Peanut French Toast",
+   "summary": "Thick toast sandwiches with peanut butter, dipped in egg and pan-fried golden.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 slice white bread",
+      "3 tbsp peanut butter",
+      "2 egg",
+      "1/3 cup milk",
+      "1 tbsp butter",
+      "2 tbsp golden syrup"
+     ]
+    }
+   ],
+   "steps": [
+    "Spread two slices with peanut butter and top with the other two.",
+    "Beat the eggs and milk, and dip the sandwiches until soaked through.",
+    "Melt the butter and fry the sandwiches for 3 minutes each side until deep golden and the egg is set.",
+    "Serve drizzled with golden syrup."
+   ],
+   "notes": [
+    "Food safety: cook the egg coating until fully set. Breakfast. Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 578,
+    "proteinG": 22,
+    "carbsG": 62,
+    "fatG": 26,
+    "fibreG": 4,
+    "sodiumMg": 650
+   }
+  },
+  {
+   "id": "crumbed-chicken-katsu-sandwiches",
+   "title": "Crumbed Chicken Katsu Sandwiches",
+   "summary": "Crisp chicken cutlets with shredded cabbage and tangy sauce in soft white bread.",
+   "cuisine": "japanese",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 12,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 chicken breast",
+      "1/4 cup plain flour",
+      "1 egg",
+      "1 cup panko breadcrumbs",
+      "1/3 cup neutral oil",
+      "4 slice white bread",
+      "1 cup cabbage, finely shredded",
+      "2 tbsp Kewpie mayonnaise",
+      "2 tbsp tomato sauce",
+      "1 tbsp Worcestershire sauce"
+     ]
+    }
+   ],
+   "steps": [
+    "Slice each chicken breast in half horizontally and flatten to an even thickness.",
+    "Coat in flour, then egg, then panko.",
+    "Shallow-fry for 4 minutes each side until golden and the chicken is cooked through.",
+    "Mix the tomato sauce and Worcestershire, spread on the bread with the mayonnaise, and fill with the chicken and cabbage."
+   ],
+   "notes": [
+    "Food safety: the chicken must reach 75°C in the centre with no pink.",
+    "Lunch."
+   ],
+   "nutrition": {
+    "kcal": 786,
+    "proteinG": 48,
+    "carbsG": 66,
+    "fatG": 36,
+    "fibreG": 3,
+    "sodiumMg": 1100
+   }
+  },
+  {
+   "id": "ginger-soy-pork-slices-on-rice",
+   "title": "Ginger Soy Pork Slices on Rice",
+   "summary": "Thin pork slices pan-fried in a ginger soy glaze, served with rice and cabbage.",
+   "cuisine": "japanese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g pork loin, thinly sliced",
+      "30g ginger, grated",
+      "3 tbsp soy sauce",
+      "3 tbsp mirin",
+      "1 tbsp sake",
+      "2 tbsp neutral oil",
+      "2 cups sushi rice",
+      "2 cups cabbage, finely shredded"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the ginger, soy sauce, mirin and sake and marinate the pork.",
+    "Cook the rice by your usual method until tender and sticky.",
+    "Fry the pork in the oil in a hot pan for 5 minutes until cooked through and glazed, adding the leftover marinade for the last minute.",
+    "Serve over the rice with cabbage."
+   ],
+   "notes": [
+    "Food safety: pork must reach 70°C with no pink. Plus 15 minutes marinating. Dairy-free.",
+    "Dinner."
+   ],
+   "nutrition": {
+    "kcal": 606,
+    "proteinG": 36,
+    "carbsG": 78,
+    "fatG": 16,
+    "fibreG": 3,
+    "sodiumMg": 1200
+   }
+  },
+  {
+   "id": "cabbage-yakisoba-with-egg",
+   "title": "Cabbage Yakisoba with Egg",
+   "summary": "Pan-fried noodles with cabbage and carrot in a sweet-savoury sauce, topped with a fried egg.",
+   "cuisine": "japanese",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 12,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g ramen noodle",
+      "1/4 cabbage, sliced",
+      "1 carrot, cut into matchsticks",
+      "1 brown onion, sliced",
+      "3 tbsp neutral oil",
+      "3 tbsp okonomiyaki sauce",
+      "1 tbsp soy sauce",
+      "4 egg",
+      "1 tbsp furikake"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the noodles for 2 minutes until just tender, then drain.",
+    "Stir-fry the onion, carrot and cabbage in 2 tbsp oil for 5 minutes until tender-crisp.",
+    "Add the noodles, okonomiyaki sauce and soy sauce and toss for 3 minutes until glossy.",
+    "Fry the eggs in the remaining oil until the whites are set.",
+    "Serve the noodles topped with an egg and furikake."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are set and yolks as firm as you prefer. Lunch."
+   ],
+   "nutrition": {
+    "kcal": 608,
+    "proteinG": 20,
+    "carbsG": 84,
+    "fatG": 20,
+    "fibreG": 6,
+    "sodiumMg": 1400
+   }
+  },
+  {
+   "id": "inari-rice-pockets",
+   "title": "Inari Rice Pockets",
+   "summary": "Sweet tofu pockets stuffed with seasoned sushi rice and sesame.",
+   "cuisine": "japanese",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 tofu puff",
+      "1 cup sushi rice",
+      "2 tbsp rice vinegar",
+      "1 tbsp white sugar",
+      "1/2 tsp salt",
+      "1 tbsp sesame seed",
+      "2 tbsp pickled ginger"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the rice by your usual method until tender and sticky.",
+    "Warm the vinegar, sugar and salt until dissolved and fold through the rice with the sesame seed and ginger.",
+    "Open each tofu puff and pack it with rice until plump.",
+    "Serve at room temperature."
+   ],
+   "notes": [
+    "Snack. Vegan."
+   ],
+   "nutrition": {
+    "kcal": 213,
+    "proteinG": 6,
+    "carbsG": 34,
+    "fatG": 5,
+    "fibreG": 2,
+    "sodiumMg": 650
+   }
+  },
+  {
+   "id": "miso-mushroom-egg-rice-porridge",
+   "title": "Miso Mushroom Egg Rice Porridge",
+   "summary": "Gentle miso rice porridge with mushrooms, ginger and a stirred-in egg.",
+   "cuisine": "japanese",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 2,
+   "onePot": true,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1/3 cup sushi rice",
+      "2 1/2 cups dashi",
+      "100g button mushroom, sliced",
+      "1 tbsp miso paste",
+      "1 egg",
+      "10g ginger, grated",
+      "1 spring onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the dashi with the mushrooms and ginger for 8 minutes until the mushrooms are tender.",
+    "Add the rinsed rice and simmer for 20 minutes until the grains have swollen and the porridge is thick.",
+    "Whisk the miso into a ladle of the broth and stir it back in off the heat.",
+    "Pour in the beaten egg and stir for 1 minute until set, then top with spring onion."
+   ],
+   "notes": [
+    "Food safety: cook the egg until fully set. Cool and refrigerate leftover rice within 1 hour. Breakfast."
+   ],
+   "nutrition": {
+    "kcal": 202,
+    "proteinG": 9,
+    "carbsG": 31,
+    "fatG": 4,
+    "fibreG": 2,
+    "sodiumMg": 800
+   }
+  },
+  {
+   "id": "seaweed-kimchi-rice-pan-with-fried-eggs",
+   "title": "Seaweed Kimchi Rice Pan with Fried Eggs",
+   "summary": "Sizzling kimchi rice topped with a crisp-edged fried egg and sesame.",
+   "cuisine": "korean",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 12,
+   "servings": 2,
+   "onePot": true,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup jasmine rice",
+      "1 cup kimchi, chopped",
+      "1 tbsp gochujang",
+      "2 tbsp neutral oil",
+      "2 egg",
+      "1 tsp sesame oil",
+      "1 spring onion, sliced",
+      "1 nori, cut into strips"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the rice by your usual method, cool and refrigerate within 1 hour, ready for this dish.",
+    "Fry the kimchi in 1 tbsp oil for 3 minutes until softened, then add the rice and gochujang and toss for 4 minutes until hot and crisp in places.",
+    "Fry the eggs in the remaining oil until the whites are set and the edges crisp.",
+    "Divide the rice between bowls and top with the eggs, sesame oil, spring onion and nori."
+   ],
+   "notes": [
+    "Food safety: cool leftover rice and refrigerate it within 1 hour; reheat until steaming hot. Lunch."
+   ],
+   "nutrition": {
+    "kcal": 578,
+    "proteinG": 18,
+    "carbsG": 84,
+    "fatG": 18,
+    "fibreG": 4,
+    "sodiumMg": 1300
+   }
+  },
+  {
+   "id": "gochujang-pork-lettuce-wraps",
+   "title": "Gochujang Pork Lettuce Wraps",
+   "summary": "Sticky, spicy pork mince spooned into crisp lettuce leaves with pickled carrot.",
+   "cuisine": "korean",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 12,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g pork mince",
+      "2 tbsp neutral oil",
+      "3 garlic, minced",
+      "20g ginger, grated",
+      "3 tbsp gochujang",
+      "1 tbsp soy sauce",
+      "1 tbsp honey",
+      "1 cos lettuce, leaves separated",
+      "1 carrot, cut into matchsticks",
+      "2 tbsp rice vinegar",
+      "2 cups jasmine rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the carrot with the vinegar and a pinch of salt.",
+    "Fry the pork in the oil over high heat for 8 minutes until browned and cooked through.",
+    "Add the garlic and ginger for 1 minute, then the gochujang, soy sauce and honey for 2 minutes until sticky.",
+    "Cook the rice by your usual method until tender. Serve the pork in lettuce leaves with pickled carrot and rice."
+   ],
+   "notes": [
+    "Food safety: pork mince must reach 75°C throughout with no pink.",
+    "Dinner. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 656,
+    "proteinG": 32,
+    "carbsG": 72,
+    "fatG": 26,
+    "fibreG": 3,
+    "sodiumMg": 1000
+   }
+  },
+  {
+   "id": "gamja-jeon-crisp-potato-pancakes",
+   "title": "Gamja Jeon Crisp Potato Pancakes",
+   "summary": "Shredded potato pancakes fried until lacy and crisp, with a soy dipping sauce.",
+   "cuisine": "korean",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g potato, grated",
+      "1/2 brown onion, grated",
+      "1 green chilli, minced",
+      "3 tbsp potato starch",
+      "1/2 tsp salt",
+      "3 tbsp neutral oil",
+      "2 tbsp soy sauce",
+      "1 tbsp rice vinegar"
+     ]
+    }
+   ],
+   "steps": [
+    "Squeeze the liquid from the potato and onion and mix with the chilli, potato starch and salt.",
+    "Heat the oil in a pan and press in half the mixture into a thin round.",
+    "Fry for 5 minutes each side until deep golden and crisp, and repeat.",
+    "Mix the soy sauce and vinegar for dipping."
+   ],
+   "notes": [
+    "Snack. Vegan."
+   ],
+   "nutrition": {
+    "kcal": 261,
+    "proteinG": 5,
+    "carbsG": 34,
+    "fatG": 11,
+    "fibreG": 3,
+    "sodiumMg": 700
+   }
+  },
+  {
+   "id": "gochujang-tofu-and-zucchini-rice-bowls",
+   "title": "Gochujang Tofu and Zucchini Rice Bowls",
+   "summary": "Silky pan-seared tofu and zucchini glazed in a sweet gochujang sauce, served on rice.",
+   "cuisine": "korean",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g firm tofu, sliced",
+      "2 zucchini, sliced",
+      "2 tbsp neutral oil",
+      "3 tbsp gochujang",
+      "1 tbsp soy sauce",
+      "1 tbsp maple syrup",
+      "2 garlic, minced",
+      "2 cups jasmine rice",
+      "1 tbsp sesame seed"
+     ]
+    }
+   ],
+   "steps": [
+    "Pan-fry the tofu in the oil for 8 minutes until golden on each side, then lift out.",
+    "Cook the zucchini and garlic in the same pan for 4 minutes until just tender.",
+    "Stir the gochujang, soy sauce, maple syrup and 2 tbsp water together, pour in and simmer for 2 minutes until glossy.",
+    "Cook the rice by your usual method until tender, and serve with the tofu, zucchini and sesame seed."
+   ],
+   "notes": [
+    "Dinner. Vegan."
+   ],
+   "nutrition": {
+    "kcal": 586,
+    "proteinG": 24,
+    "carbsG": 84,
+    "fatG": 16,
+    "fibreG": 5,
+    "sodiumMg": 1100
+   }
+  },
+  {
+   "id": "garlic-pepper-chicken-rice-plates",
+   "title": "Garlic Pepper Chicken Rice Plates",
+   "summary": "Garlicky peppered chicken strips with fried egg over fragrant rice.",
+   "cuisine": "thai",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g chicken thigh, sliced",
+      "6 garlic, minced",
+      "1 tbsp black pepper",
+      "2 tbsp oyster sauce",
+      "1 tbsp soy sauce",
+      "2 tbsp neutral oil",
+      "4 egg",
+      "2 cups jasmine rice",
+      "1 cucumber, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the rice by your usual method until tender and fluffy.",
+    "Stir-fry the chicken with the garlic and pepper in 1 tbsp oil for 8 minutes until golden and cooked through.",
+    "Add the oyster sauce and soy sauce and toss for 1 minute.",
+    "Fry the eggs in the remaining oil until the whites are set, and serve everything over the rice with cucumber."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C with no pink; the egg whites must be set.",
+    "Lunch. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 668,
+    "proteinG": 42,
+    "carbsG": 70,
+    "fatG": 24,
+    "fibreG": 2,
+    "sodiumMg": 1100
+   }
+  },
+  {
+   "id": "red-curry-prawns-with-pineapple",
+   "title": "Red Curry Prawns with Pineapple",
+   "summary": "Plump prawns in a sweet-sour coconut red curry with pineapple and basil.",
+   "cuisine": "thai",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g prawn, peeled",
+      "2 tbsp red curry paste",
+      "1 tbsp neutral oil",
+      "1 tin coconut milk",
+      "1 tinned pineapple, drained",
+      "1 tbsp fish sauce",
+      "1 tbsp palm sugar",
+      "1/2 cup Thai basil leaves",
+      "2 cups jasmine rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the curry paste in the oil for 2 minutes until fragrant.",
+    "Add the coconut milk, fish sauce and sugar and simmer for 5 minutes until slightly thickened.",
+    "Add the pineapple and prawns and cook for 3 minutes until the prawns are pink and opaque.",
+    "Cook the rice by your usual method until tender. Stir the basil through the curry and serve with the rice."
+   ],
+   "notes": [
+    "Food safety: prawns are cooked when pink and opaque.",
+    "Dinner. Dairy-free. Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 714,
+    "proteinG": 30,
+    "carbsG": 84,
+    "fatG": 28,
+    "fibreG": 3,
+    "sodiumMg": 1300
+   }
+  },
+  {
+   "id": "thai-sweet-corn-fritters-with-cucumber-dip",
+   "title": "Thai Sweet Corn Fritters with Cucumber Dip",
+   "summary": "Crisp golden corn fritters with chilli and coriander, served with a sweet-sour dip.",
+   "cuisine": "thai",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 12,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 cups corn kernel",
+      "1/2 cup rice flour",
+      "1 egg",
+      "1 tbsp red curry paste",
+      "1/4 cup coriander, chopped",
+      "1/2 cup neutral oil",
+      "1/4 cup sweet chilli sauce",
+      "1 cucumber, diced",
+      "1 tbsp rice vinegar"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the corn, rice flour, egg, curry paste and coriander into a thick batter.",
+    "Heat the oil in a wide pan over medium heat.",
+    "Fry spoonfuls for 3 minutes each side until golden and crisp and cooked through, then drain.",
+    "Stir the sweet chilli sauce with the cucumber and vinegar and serve alongside."
+   ],
+   "notes": [
+    "Food safety: fry until the centres are set. Snack. Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 394,
+    "proteinG": 8,
+    "carbsG": 48,
+    "fatG": 18,
+    "fibreG": 4,
+    "sodiumMg": 700
+   }
+  },
+  {
+   "id": "steamed-fish-curry-custard-cups",
+   "title": "Steamed Fish Curry Custard Cups",
+   "summary": "Silky steamed coconut curry custard with fish, set in little cups.",
+   "cuisine": "thai",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 25,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g white fish fillet, cubed",
+      "3 egg",
+      "1 cup coconut milk",
+      "2 tbsp red curry paste",
+      "1 tbsp fish sauce",
+      "1 tsp palm sugar",
+      "1 makrut lime leaf, shredded",
+      "1 cup baby spinach",
+      "2 cups jasmine rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Whisk the eggs with the coconut milk, curry paste, fish sauce and sugar until smooth.",
+    "Fold in the fish, lime leaf and spinach and spoon into 4 heatproof cups.",
+    "Steam over simmering water for 22 minutes until the custard is set and the fish flakes easily.",
+    "Cook the rice by your usual method until tender, and serve with the custards."
+   ],
+   "notes": [
+    "Food safety: the fish must be opaque and flake and the custard fully set.",
+    "Dinner. Dairy-free. Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 604,
+    "proteinG": 32,
+    "carbsG": 64,
+    "fatG": 24,
+    "fibreG": 2,
+    "sodiumMg": 1000
+   }
+  },
+  {
+   "id": "grilled-pork-banh-mi-rolls",
+   "title": "Grilled Pork Banh Mi Rolls",
+   "summary": "Lemongrass pork patties in crusty rolls with pickled carrot, cucumber and chilli.",
+   "cuisine": "vietnamese",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 12,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g pork mince",
+      "2 lemongrass, finely chopped",
+      "3 garlic, minced",
+      "1 tbsp fish sauce",
+      "1 tbsp white sugar",
+      "4 bread roll",
+      "2 tbsp Kewpie mayonnaise",
+      "1 carrot, grated",
+      "2 tbsp rice vinegar",
+      "1 cucumber, sliced",
+      "1 red chilli, sliced",
+      "1/2 cup coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the carrot with the vinegar and a pinch of sugar and rest.",
+    "Mix the pork, lemongrass, garlic, fish sauce and sugar and shape into 8 small patties.",
+    "Grill or pan-fry for 6 minutes each side until browned and cooked through.",
+    "Spread the rolls with mayonnaise and fill with patties, pickled carrot, cucumber, chilli and coriander."
+   ],
+   "notes": [
+    "Food safety: pork patties must reach 75°C throughout with no pink.",
+    "Lunch."
+   ],
+   "nutrition": {
+    "kcal": 594,
+    "proteinG": 32,
+    "carbsG": 56,
+    "fatG": 26,
+    "fibreG": 4,
+    "sodiumMg": 1200
+   }
+  },
+  {
+   "id": "caramel-clay-pot-style-fish",
+   "title": "Caramel Clay-Pot Style Fish",
+   "summary": "Fish fillets simmered in a dark caramel, fish sauce and pepper glaze, served with rice.",
+   "cuisine": "vietnamese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 white fish fillet",
+      "3 tbsp white sugar",
+      "2 tbsp water",
+      "3 tbsp fish sauce",
+      "3 garlic, minced",
+      "2 shallot, sliced",
+      "1 tsp black pepper",
+      "1 red chilli, sliced",
+      "1/4 cup water",
+      "2 cups jasmine rice",
+      "2 spring onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the sugar and 2 tbsp water in a wide pan over medium heat for 5 minutes until deep amber.",
+    "Add the shallot, garlic, fish sauce and 1/4 cup water and simmer for 2 minutes.",
+    "Lay in the fish and spoon over the sauce, cooking for 8 minutes until the flesh is opaque and flakes easily.",
+    "Cook the rice by your usual method until tender, and serve topped with pepper, chilli and spring onion."
+   ],
+   "notes": [
+    "Food safety: the fish is cooked when the flesh turns opaque and flakes with a fork.",
+    "Dinner. Dairy-free. Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 458,
+    "proteinG": 34,
+    "carbsG": 66,
+    "fatG": 6,
+    "fibreG": 2,
+    "sodiumMg": 1300
+   }
+  },
+  {
+   "id": "sticky-rice-with-peanuts-and-coconut",
+   "title": "Sticky Rice with Peanuts and Coconut",
+   "summary": "Sweet-salty sticky rice with toasted peanuts, sesame and coconut for a hearty breakfast.",
+   "cuisine": "vietnamese",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 cups glutinous rice",
+      "1 1/2 cups water",
+      "1/2 cup coconut milk",
+      "1/2 cup peanut",
+      "2 tbsp sesame seed",
+      "2 tbsp desiccated coconut",
+      "1 tbsp white sugar",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Soak the rice for 2 hours, drain, and cook with the water, coconut milk and salt, covered, for 20 minutes until tender and sticky.",
+    "Toast the peanuts, sesame and coconut in a dry pan for 4 minutes until golden, then crush with the sugar.",
+    "Spoon the rice into bowls and top with the peanut mix."
+   ],
+   "notes": [
+    "Plus 2 hours soaking. Breakfast. Vegan and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 554,
+    "proteinG": 12,
+    "carbsG": 84,
+    "fatG": 18,
+    "fibreG": 4,
+    "sodiumMg": 330
+   }
+  },
+  {
+   "id": "ginger-tofu-and-mushroom-clay-pot-rice",
+   "title": "Ginger Tofu and Mushroom Clay Pot Rice",
+   "summary": "Sticky ginger soy tofu and mushrooms steamed over crisp-bottomed rice in one pot.",
+   "cuisine": "vietnamese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 cups jasmine rice",
+      "3 cups water",
+      "300g firm tofu, cubed",
+      "200g shiitake mushroom, sliced",
+      "30g ginger, sliced",
+      "3 tbsp soy sauce",
+      "1 tbsp white sugar",
+      "2 tbsp neutral oil",
+      "2 spring onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Rinse the rice and cook with the water in a heavy pot, covered, for 12 minutes until most of the water is absorbed.",
+    "Fry the tofu, mushrooms and ginger in the oil for 8 minutes until golden, then add the soy sauce and sugar for 1 minute.",
+    "Spread the tofu mixture over the rice, cover and cook on low for 15 minutes until the rice is tender and a crust forms underneath.",
+    "Top with spring onion and serve from the pot."
+   ],
+   "notes": [
+    "Dinner. Vegan."
+   ],
+   "nutrition": {
+    "kcal": 516,
+    "proteinG": 20,
+    "carbsG": 80,
+    "fatG": 12,
+    "fibreG": 4,
+    "sodiumMg": 1000
+   }
+  }
+ ]
+}

@@ -1,0 +1,2692 @@
+{
+ "about": "House recipes, batch 04 (slice B): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+ "recipes": [
+  {
+   "id": "garlic-chive-layered-pancakes",
+   "title": "Garlic Chive Layered Pancakes",
+   "summary": "Crisp, flaky layered pancakes with garlic chives, pan-fried and cut into wedges for snacking.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g plain flour",
+      "3/4 cup boiling water",
+      "1 bunch garlic chives, chopped",
+      "3 tbsp neutral oil",
+      "1 tsp sesame oil",
+      "1 tsp salt",
+      "2 tbsp soy sauce",
+      "1 tbsp rice vinegar"
+     ]
+    }
+   ],
+   "steps": [
+    "Stir the flour with the boiling water until a shaggy dough forms, then knead for 5 minutes until smooth. Cover and rest.",
+    "Divide into 4 pieces and roll each into a thin round. Brush with sesame oil and scatter with chives and salt.",
+    "Roll each round into a log, coil into a snail and press flat into a 14cm disc.",
+    "Fry in the neutral oil over medium heat for 3 minutes each side, until golden and crisp at the edges.",
+    "Cut into wedges and serve with the soy sauce and rice vinegar mixed together for dipping."
+   ],
+   "notes": [
+    "Plus 30 minutes resting the dough.",
+    "Snack. Vegan."
+   ],
+   "nutrition": {
+    "kcal": 326,
+    "proteinG": 9,
+    "carbsG": 50,
+    "fatG": 10,
+    "fibreG": 3,
+    "sodiumMg": 1100
+   }
+  },
+  {
+   "id": "black-sesame-tang-yuan",
+   "title": "Black Sesame Tang Yuan",
+   "summary": "Chewy glutinous rice balls filled with sweet black sesame paste, served in warm ginger syrup.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 10,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "200g glutinous rice flour",
+      "3/4 cup water",
+      "1/2 cup sesame seed",
+      "3 tbsp white sugar",
+      "2 tbsp butter",
+      "3 cups water",
+      "40g ginger, sliced",
+      "3 tbsp brown sugar"
+     ]
+    }
+   ],
+   "steps": [
+    "Toast the sesame in a dry pan over medium heat for 3 minutes until fragrant, then grind to a rough paste with the white sugar and butter. Chill until firm and roll into 16 small balls.",
+    "Knead the flour with 3/4 cup water into a soft dough. Flatten pieces, wrap each around a filling ball and roll smooth.",
+    "Simmer the 3 cups water with the ginger and brown sugar for 8 minutes until syrupy.",
+    "Boil the dumplings in a separate pot of water for 5 minutes, until they float and are tender.",
+    "Lift into bowls and ladle over the ginger syrup."
+   ],
+   "notes": [
+    "Dessert. Vegetarian. Filling chilled before wrapping."
+   ],
+   "nutrition": {
+    "kcal": 527,
+    "proteinG": 8,
+    "carbsG": 90,
+    "fatG": 15,
+    "fibreG": 3,
+    "sodiumMg": 20
+   }
+  },
+  {
+   "id": "soy-egg-rice-bowls-with-pickled-cucumber",
+   "title": "Soy Egg Rice Bowls with Pickled Cucumber",
+   "summary": "Marinated soft-set eggs over steamed rice with quick-pickled cucumber and sesame.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 egg",
+      "1 cup jasmine rice",
+      "1/4 cup soy sauce",
+      "1 tbsp white sugar",
+      "1/2 cup water",
+      "1 cucumber, sliced",
+      "2 tbsp rice vinegar",
+      "1 tsp sesame oil",
+      "1 tbsp sesame seed",
+      "2 spring onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the rice by your usual method until tender and fluffy.",
+    "Boil the eggs for 7 minutes, then cool in iced water and peel.",
+    "Simmer the soy sauce, sugar and water for 2 minutes until the sugar dissolves, cool, then steep the eggs in it for at least 1 hour.",
+    "Toss the cucumber with the vinegar and a pinch of salt for 10 minutes.",
+    "Top the rice with halved eggs, cucumber, sesame oil, sesame seed and spring onion."
+   ],
+   "notes": [
+    "Food safety: use fresh eggs and keep marinated eggs refrigerated; eat within 2 days. Plus 1 hour marinating."
+   ],
+   "nutrition": {
+    "kcal": 744,
+    "proteinG": 27,
+    "carbsG": 105,
+    "fatG": 24,
+    "fibreG": 3,
+    "sodiumMg": 1500
+   }
+  },
+  {
+   "id": "wok-tossed-cabbage-dumpling-filling-bowls",
+   "title": "Wok-Tossed Cabbage Dumpling Filling Bowls",
+   "summary": "Dumpling flavours without the wrapping: pork and cabbage stir-fried over rice with ginger and chilli oil.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 12,
+   "servings": 3,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g pork mince",
+      "1/2 wombok, shredded",
+      "1 tbsp ginger, grated",
+      "2 garlic cloves, minced",
+      "2 tbsp soy sauce",
+      "1 tbsp Shaoxing wine",
+      "1 tsp chilli oil",
+      "1 tbsp neutral oil",
+      "1 1/2 cups jasmine rice",
+      "2 spring onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the rice by your usual method until fluffy.",
+    "Heat the oil in a wok over high heat and stir-fry the pork for 4 minutes until browned and cooked through.",
+    "Add the ginger and garlic for 30 seconds, then the wombok, soy sauce and wine and toss for 4 minutes until the cabbage wilts.",
+    "Stir through the chilli oil and spring onion.",
+    "Spoon the pork and cabbage over the rice and serve hot."
+   ],
+   "notes": [
+    "Food safety: cook the pork mince to 75°C with no pink remaining."
+   ],
+   "nutrition": {
+    "kcal": 759,
+    "proteinG": 43,
+    "carbsG": 95,
+    "fatG": 23,
+    "fibreG": 3,
+    "sodiumMg": 980
+   }
+  },
+  {
+   "id": "silken-tofu-and-mushrooms-in-chilli-bean-sauce",
+   "title": "Silken Tofu and Mushrooms in Chilli Bean Sauce",
+   "summary": "Silky tofu and mushrooms in a numbing, spicy bean sauce, served with rice.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g silken tofu",
+      "200g mixed mushrooms, diced",
+      "2 tbsp doubanjiang",
+      "1 tsp Sichuan peppercorn",
+      "3 garlic cloves, minced",
+      "1 tbsp ginger, grated",
+      "1 cup vegetable stock",
+      "1 tbsp soy sauce",
+      "1 tbsp cornflour",
+      "2 tbsp neutral oil",
+      "3 spring onion, sliced",
+      "1 1/2 cups jasmine rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the rice by your usual method until fluffy.",
+    "Toast the peppercorns in a dry wok for 1 minute until fragrant, crush, and set aside.",
+    "Heat the oil and fry the mushrooms for 4 minutes until browned. Add the doubanjiang, garlic and ginger for 1 minute.",
+    "Pour in the stock and soy sauce, add the tofu in cubes and simmer gently for 5 minutes.",
+    "Stir the cornflour with 2 tbsp water, add and cook for 1 minute until glossy. Top with peppercorns and spring onion over rice."
+   ],
+   "notes": [
+    "Vegan. Doubanjiang contains wheat; check labels for gluten."
+   ],
+   "nutrition": {
+    "kcal": 460,
+    "proteinG": 18,
+    "carbsG": 63,
+    "fatG": 15,
+    "fibreG": 3,
+    "sodiumMg": 1300
+   }
+  },
+  {
+   "id": "steamed-egg-custard-with-prawns",
+   "title": "Steamed Egg Custard with Prawns",
+   "summary": "Silky savoury egg custard steamed gently and topped with prawns, soy and spring onion.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 egg",
+      "1 1/2 cups water",
+      "150g prawn, peeled",
+      "1 tbsp soy sauce",
+      "1 tsp sesame oil",
+      "2 spring onion, sliced",
+      "1 pinch white pepper"
+     ]
+    }
+   ],
+   "steps": [
+    "Whisk the eggs with the water and a pinch of salt, then strain through a sieve into a shallow heatproof dish.",
+    "Cover with foil and steam over gently simmering water for 8 minutes.",
+    "Lay the prawns on top, cover and steam for 4 minutes more, until the custard is just set and the prawns are opaque and pink.",
+    "Drizzle with soy sauce and sesame oil and scatter with spring onion and pepper."
+   ],
+   "notes": [
+    "Food safety: prawns should be opaque and pink and the custard set through to 75°C."
+   ],
+   "nutrition": {
+    "kcal": 323,
+    "proteinG": 35,
+    "carbsG": 3,
+    "fatG": 19,
+    "fibreG": 0,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "peanut-candy-sesame-brittle-bars",
+   "title": "Peanut Candy Sesame Brittle Bars",
+   "summary": "Crunchy peanut and sesame brittle set in a tray, snapped into shards.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 12,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "250g peanut",
+      "1/4 cup sesame seed",
+      "1 cup white sugar",
+      "1/4 cup water",
+      "2 tbsp golden syrup",
+      "1 tbsp butter",
+      "1/2 tsp bicarbonate of soda"
+     ]
+    }
+   ],
+   "steps": [
+    "Line a tray with baking paper and toast the peanuts and sesame in a dry pan for 4 minutes until golden.",
+    "Boil the sugar, water and golden syrup for 10 minutes until it reaches 150°C and turns light amber.",
+    "Stir in the butter and bicarbonate of soda, which will foam, then fold through the peanuts and sesame quickly.",
+    "Pour onto the tray, press thin with an oiled spatula and cool for 30 minutes until hard.",
+    "Snap the cooled brittle into pieces and store airtight."
+   ],
+   "notes": [
+    "Snack. Vegetarian and gluten-free. Hot sugar can cause severe burns; handle with care."
+   ],
+   "nutrition": {
+    "kcal": 182,
+    "proteinG": 5,
+    "carbsG": 18,
+    "fatG": 10,
+    "fibreG": 1,
+    "sodiumMg": 20
+   }
+  },
+  {
+   "id": "japanese-sweet-potato-pancakes",
+   "title": "Japanese Sweet Potato Pancakes",
+   "summary": "Fluffy savoury-sweet pancakes with mashed sweet potato and a soy glaze.",
+   "cuisine": "japanese",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g sweet potato, peeled and cubed",
+      "1 egg",
+      "3 tbsp plain flour",
+      "2 tbsp milk",
+      "1 tbsp butter",
+      "1 tbsp soy sauce",
+      "1 tbsp mirin",
+      "1 tbsp sesame seed",
+      "1 tbsp neutral oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the sweet potato for 12 minutes until very soft, drain and mash.",
+    "Mix in the egg, flour and milk until a thick batter forms.",
+    "Heat the oil in a pan and cook spoonfuls for 3 minutes each side over medium heat, until golden.",
+    "Simmer the butter, soy sauce and mirin for 1 minute until syrupy.",
+    "Brush the glaze over the pancakes and scatter with sesame."
+   ],
+   "notes": [
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 276,
+    "proteinG": 6,
+    "carbsG": 45,
+    "fatG": 8,
+    "fibreG": 4,
+    "sodiumMg": 500
+   }
+  },
+  {
+   "id": "black-sesame-cream-pudding",
+   "title": "Black Sesame Cream Pudding",
+   "summary": "Creamy toasted black sesame pudding, set with cornflour and finished with maple.",
+   "cuisine": "japanese",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 10,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 cups milk",
+      "1 cup thickened cream",
+      "3 tbsp white sugar",
+      "1/3 cup sesame seed",
+      "3 tbsp cornflour",
+      "2 tbsp maple syrup"
+     ]
+    }
+   ],
+   "steps": [
+    "Toast the sesame in a dry pan for 3 minutes until fragrant. Warm the milk, cream and sugar until steaming, blend with the sesame and cornflour until smooth, strain and return to the pot.",
+    "Cook over medium heat for 5 minutes, whisking until thick and glossy.",
+    "Pour into 4 glasses and chill until set.",
+    "Spoon over the maple syrup and serve cold."
+   ],
+   "notes": [
+    "Dessert. Plus 4 hours chilling. Vegetarian and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 318,
+    "proteinG": 5,
+    "carbsG": 25,
+    "fatG": 22,
+    "fibreG": 0,
+    "sodiumMg": 60
+   }
+  },
+  {
+   "id": "cold-soba-with-sesame-dipping-sauce",
+   "title": "Cold Soba with Sesame Dipping Sauce",
+   "summary": "Chilled buckwheat noodles with cucumber, nori and a nutty dipping sauce for hot days.",
+   "cuisine": "japanese",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 6,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "200g soba noodle",
+      "1 cucumber, cut into matchsticks",
+      "1 sheet nori, shredded",
+      "3 tbsp soy sauce",
+      "2 tbsp mirin",
+      "1 tbsp rice vinegar",
+      "1 tbsp tahini",
+      "1 tsp sesame oil",
+      "2 spring onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the soba for 5 minutes until tender, then rinse well under cold water and drain.",
+    "Whisk the soy sauce, mirin, vinegar, tahini and sesame oil into a smooth sauce.",
+    "Pile the noodles into bowls and top with cucumber, nori and spring onion.",
+    "Serve with the sauce for dipping or pouring over."
+   ],
+   "notes": [
+    "Vegan. Check soba is 100% buckwheat if avoiding gluten."
+   ],
+   "nutrition": {
+    "kcal": 426,
+    "proteinG": 14,
+    "carbsG": 70,
+    "fatG": 10,
+    "fibreG": 4,
+    "sodiumMg": 1300
+   }
+  },
+  {
+   "id": "tamago-sando-with-pickled-slaw",
+   "title": "Tamago Sando with Pickled Slaw",
+   "summary": "Soft, creamy Japanese egg sandwich on white bread with crunchy pickled slaw.",
+   "cuisine": "japanese",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 egg",
+      "3 tbsp Kewpie mayonnaise",
+      "1 tsp Dijon mustard",
+      "4 slice white bread",
+      "1 tbsp butter",
+      "1 cup cabbage, shredded",
+      "1 tbsp rice vinegar",
+      "1 pinch white sugar"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the eggs for 10 minutes until firm, then cool in iced water and peel.",
+    "Mash with the mayonnaise, mustard and a pinch of salt until creamy.",
+    "Toss the cabbage with the vinegar and sugar for 5 minutes.",
+    "Butter the bread, pile on the egg and slaw, close and trim the crusts."
+   ],
+   "notes": [
+    "Food safety: eggs boiled until the yolk is fully firm; keep refrigerated and eat within a day."
+   ],
+   "nutrition": {
+    "kcal": 416,
+    "proteinG": 16,
+    "carbsG": 34,
+    "fatG": 24,
+    "fibreG": 3,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "karaage-chicken-bento-skewers",
+   "title": "Karaage Chicken Bento Skewers",
+   "summary": "Crisp soy-ginger marinated chicken nuggets threaded on skewers, served with lemon.",
+   "cuisine": "japanese",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 12,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g chicken thigh, cut into chunks",
+      "2 tbsp soy sauce",
+      "1 tbsp mirin",
+      "1 tbsp ginger, grated",
+      "2 garlic cloves, minced",
+      "1/2 cup potato starch",
+      "neutral oil for frying",
+      "1 lemon, cut into wedges"
+     ]
+    }
+   ],
+   "steps": [
+    "Marinate the chicken in the soy sauce, mirin, ginger and garlic for 20 minutes.",
+    "Toss in the potato starch to coat.",
+    "Heat 3cm of oil to 175°C and fry in batches for 5 minutes until deep golden.",
+    "Drain on paper, thread onto skewers and serve with lemon."
+   ],
+   "notes": [
+    "Food safety: fry until golden and the chicken reaches 75°C. Plus 20 minutes marinating."
+   ],
+   "nutrition": {
+    "kcal": 390,
+    "proteinG": 32,
+    "carbsG": 16,
+    "fatG": 22,
+    "fibreG": 0,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "oyakodon-quick-rice-bowl",
+   "title": "Oyakodon Quick Rice Bowl",
+   "summary": "Soft-set egg and chicken simmered in dashi, soy and mirin over steamed rice.",
+   "cuisine": "japanese",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 12,
+   "servings": 2,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "250g chicken thigh, sliced",
+      "4 egg",
+      "1 brown onion, sliced",
+      "3/4 cup dashi",
+      "2 tbsp soy sauce",
+      "2 tbsp mirin",
+      "1 tsp white sugar",
+      "1 1/2 cups sushi rice",
+      "2 spring onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the rice by your usual method until tender.",
+    "Simmer the dashi, soy sauce, mirin and sugar in a pan, add the onion and chicken and cook for 6 minutes until the chicken is cooked through.",
+    "Pour the lightly beaten eggs over and cook for 1 minute until just set.",
+    "Slide over the rice and top with spring onion."
+   ],
+   "notes": [
+    "Food safety: cook the chicken until it reaches 75°C and the eggs are just set."
+   ],
+   "nutrition": {
+    "kcal": 1233,
+    "proteinG": 74,
+    "carbsG": 169,
+    "fatG": 29,
+    "fibreG": 2,
+    "sodiumMg": 1250
+   }
+  },
+  {
+   "id": "sweet-potato-mochi-pillows",
+   "title": "Sweet Potato Mochi Pillows",
+   "summary": "Soft stretchy rice-flour mochi wrapped around sweet mashed sweet potato, dusted with starch.",
+   "cuisine": "japanese",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 30,
+   "cookMinutes": 10,
+   "servings": 8,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup glutinous rice flour",
+      "3/4 cup water",
+      "3 tbsp caster sugar",
+      "1/2 cup potato starch",
+      "200g sweet potato, peeled and cubed"
+     ]
+    }
+   ],
+   "steps": [
+    "Whisk the flour, water and sugar in a heatproof bowl until smooth.",
+    "Microwave covered for 1 minute, stir, then microwave for another 1 minute until thick and translucent.",
+    "Tip onto a surface dusted with the potato starch and cool slightly.",
+    "Cut into 8 pieces, flatten, wrap each around a ball of sweet potato (boiled for 12 minutes until soft, mashed with 1 tbsp sugar) and pinch closed."
+   ],
+   "notes": [
+    "Dessert. Vegan and gluten-free. Eat the same day for best texture."
+   ],
+   "nutrition": {
+    "kcal": 172,
+    "proteinG": 3,
+    "carbsG": 40,
+    "fatG": 0,
+    "fibreG": 2,
+    "sodiumMg": 20
+   }
+  },
+  {
+   "id": "kimchi-cheese-toastie-rolls",
+   "title": "Kimchi Cheese Toastie Rolls",
+   "summary": "Crisp pan-fried bread rolls stuffed with kimchi and melty cheddar.",
+   "cuisine": "korean",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 8,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 slice white bread",
+      "1 cup kimchi, chopped and drained",
+      "1 cup cheddar, grated",
+      "2 tbsp butter",
+      "1 tsp gochujang"
+     ]
+    }
+   ],
+   "steps": [
+    "Flatten the bread with a rolling pin and trim the crusts.",
+    "Mix the kimchi, cheddar and gochujang and spoon along one edge of each slice.",
+    "Roll up tightly and press the seam closed.",
+    "Fry in the butter over medium heat for 5 minutes, turning until golden all over."
+   ],
+   "notes": [
+    "Vegetarian. Kimchi may contain fish sauce; check the label."
+   ],
+   "nutrition": {
+    "kcal": 353,
+    "proteinG": 14,
+    "carbsG": 38,
+    "fatG": 16,
+    "fibreG": 1,
+    "sodiumMg": 720
+   }
+  },
+  {
+   "id": "hotteok-cinnamon-pockets",
+   "title": "Hotteok Cinnamon Pockets",
+   "summary": "Chewy griddled Korean sweet pancakes with a brown sugar, cinnamon and walnut filling.",
+   "cuisine": "korean",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 12,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 cups plain flour",
+      "1 tsp instant dried yeast",
+      "3/4 cup warm milk",
+      "1 tbsp white sugar",
+      "1/2 cup brown sugar",
+      "1 tsp ground cinnamon",
+      "1/4 cup walnut, chopped",
+      "2 tbsp neutral oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the flour, yeast, white sugar, milk and a pinch of salt into a sticky dough. Cover and rise.",
+    "Mix the brown sugar, cinnamon and walnuts until combined.",
+    "Divide the dough into 6, flatten, add filling to each and pinch closed.",
+    "Cook in the oil over medium heat for 3 minutes each side, pressing flat, until golden and the sugar has melted."
+   ],
+   "notes": [
+    "Dessert. Plus 1 hour rising. Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 293,
+    "proteinG": 5,
+    "carbsG": 48,
+    "fatG": 9,
+    "fibreG": 2,
+    "sodiumMg": 150
+   }
+  },
+  {
+   "id": "gochujang-egg-drop-toast",
+   "title": "Gochujang Egg Drop Toast",
+   "summary": "Buttery pan-fried bread topped with a runny egg, gochujang glaze and sesame.",
+   "cuisine": "korean",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 8,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 slice white bread",
+      "2 egg",
+      "2 tbsp butter",
+      "1 tbsp gochujang",
+      "1 tsp honey",
+      "1 tsp sesame seed",
+      "1 spring onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the bread in half the butter for 2 minutes each side until golden and crisp.",
+    "In the remaining butter, fry the eggs for 3 minutes until the whites are set and yolks are soft.",
+    "Mix the gochujang and honey until smooth and spread over the toast.",
+    "Top with the eggs, sesame and spring onion."
+   ],
+   "notes": [
+    "Food safety: soft yolks use raw egg; cook the white through. Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 322,
+    "proteinG": 12,
+    "carbsG": 28,
+    "fatG": 18,
+    "fibreG": 1,
+    "sodiumMg": 650
+   }
+  },
+  {
+   "id": "bulgogi-beef-lunch-wraps",
+   "title": "Bulgogi Beef Lunch Wraps",
+   "summary": "Sweet soy-marinated beef with crisp lettuce, rice and ssamjang in cool leaves.",
+   "cuisine": "korean",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 6,
+   "servings": 3,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g beef sirloin, thinly sliced",
+      "3 tbsp soy sauce",
+      "1 tbsp brown sugar",
+      "1 tbsp sesame oil",
+      "3 garlic cloves, minced",
+      "1 pear, grated",
+      "1 cos lettuce",
+      "2 cups white rice, cooked",
+      "3 tbsp ssamjang"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the soy sauce, sugar, sesame oil, garlic and pear and marinate the beef for 30 minutes.",
+    "Sear the beef in a hot pan in batches for 2 minutes per batch until browned.",
+    "Fill lettuce leaves with rice, beef and a dab of ssamjang."
+   ],
+   "notes": [
+    "Food safety: sear the thin beef until browned through, at least 71°C. Plus 30 minutes marinating."
+   ],
+   "nutrition": {
+    "kcal": 440,
+    "proteinG": 29,
+    "carbsG": 48,
+    "fatG": 15,
+    "fibreG": 1,
+    "sodiumMg": 1300
+   }
+  },
+  {
+   "id": "tteokbokki-style-rice-cakes-in-gochujang",
+   "title": "Tteokbokki-Style Rice Cakes in Gochujang",
+   "summary": "Chewy rice cakes simmered in a sweet-spicy gochujang sauce with fish cakes.",
+   "cuisine": "korean",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 3,
+   "onePot": true,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g Korean rice cake",
+      "3 fish cake, sliced",
+      "2 tbsp gochujang",
+      "1 tbsp soy sauce",
+      "1 tbsp white sugar",
+      "1 1/2 cups water",
+      "2 spring onion, sliced",
+      "1 egg"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the egg for 8 minutes, cool and peel.",
+    "Simmer the water, gochujang, soy sauce and sugar in a wide pan for 3 minutes.",
+    "Add the rice cakes and fish cakes and cook for 10 minutes, stirring until the sauce thickens and the rice cakes are soft.",
+    "Top with the egg and spring onion."
+   ],
+   "notes": [
+    "Food safety: reheat fish cakes until hot through to 75°C."
+   ],
+   "nutrition": {
+    "kcal": 383,
+    "proteinG": 16,
+    "carbsG": 68,
+    "fatG": 5,
+    "fibreG": 1,
+    "sodiumMg": 1600
+   }
+  },
+  {
+   "id": "coconut-glutinous-rice-cups-with-mango",
+   "title": "Coconut Glutinous Rice Cups with Mango",
+   "summary": "Glutinous rice soaked in coconut cream, topped with fresh mango and toasted sesame.",
+   "cuisine": "thai",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup glutinous rice",
+      "1 cup coconut cream",
+      "3 tbsp palm sugar",
+      "1 pinch salt",
+      "2 mango, sliced",
+      "1 tbsp sesame seed"
+     ]
+    }
+   ],
+   "steps": [
+    "Rinse the rice and steam it over simmering water for 25 minutes until tender.",
+    "Warm half the coconut cream with 2 tbsp palm sugar and salt, stir through the hot rice and rest for 10 minutes.",
+    "Warm the remaining coconut cream and sugar for a sauce.",
+    "Serve the rice with mango, a spoon of sauce and sesame."
+   ],
+   "notes": [
+    "Dessert. Plus 30 minutes soaking the rice. Vegan and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 476,
+    "proteinG": 5,
+    "carbsG": 78,
+    "fatG": 16,
+    "fibreG": 3,
+    "sodiumMg": 80
+   }
+  },
+  {
+   "id": "red-curry-fish-patties-with-cucumber",
+   "title": "Red Curry Fish Patties with Cucumber",
+   "summary": "Bouncy red curry fish cakes fried until golden, with cucumber and sweet chilli dip.",
+   "cuisine": "thai",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 10,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g white fish fillet",
+      "2 tbsp red curry paste",
+      "1 egg",
+      "100g green bean, thinly sliced",
+      "2 makrut lime leaf, shredded",
+      "1 tbsp fish sauce",
+      "neutral oil for frying",
+      "1/2 cup sweet chilli sauce",
+      "1 cucumber, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Blend the fish, curry paste, egg and fish sauce into a coarse paste, then fold in the beans and lime leaf.",
+    "Shape the mixture into 12 small flat patties with wet hands.",
+    "Fry in 1cm of oil over medium heat for 3 minutes each side until golden and cooked through.",
+    "Serve with the sweet chilli sauce and cucumber."
+   ],
+   "notes": [
+    "Food safety: cook the fish cakes until the centre is opaque and flakes, at 63°C or above."
+   ],
+   "nutrition": {
+    "kcal": 164,
+    "proteinG": 13,
+    "carbsG": 10,
+    "fatG": 8,
+    "fibreG": 2,
+    "sodiumMg": 1100
+   }
+  },
+  {
+   "id": "thai-basil-egg-fried-rice-cups",
+   "title": "Thai Basil Egg Fried Rice Cups",
+   "summary": "Wok-fried rice with Thai basil, chilli and fried egg, packed into little cups for lunchboxes.",
+   "cuisine": "thai",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 3,
+   "onePot": true,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "3 cups white rice, cooked and cooled",
+      "3 egg",
+      "2 garlic cloves, minced",
+      "2 bird's eye chilli, sliced",
+      "1 handful Thai basil",
+      "2 tbsp oyster sauce",
+      "1 tbsp fish sauce",
+      "1 tbsp neutral oil",
+      "1 cucumber, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil in a wok and stir-fry the garlic and chilli for 30 seconds until fragrant.",
+    "Add the rice, oyster sauce and fish sauce and toss for 4 minutes until hot and lightly browned.",
+    "Fry the eggs separately for 3 minutes until the whites are set.",
+    "Fold in the basil, spoon the rice into bowls and top with the eggs and cucumber."
+   ],
+   "notes": [
+    "Food safety: cool leftover rice and refrigerate it within 1 hour, then reheat until piping hot."
+   ],
+   "nutrition": {
+    "kcal": 346,
+    "proteinG": 11,
+    "carbsG": 51,
+    "fatG": 11,
+    "fibreG": 1,
+    "sodiumMg": 1200
+   }
+  },
+  {
+   "id": "pandan-free-coconut-custard-pots",
+   "title": "Pandan-Free Coconut Custard Pots",
+   "summary": "Baked coconut custard with palm sugar, set until just wobbly.",
+   "cuisine": "thai",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 egg",
+      "1 cup coconut cream",
+      "1/2 cup coconut milk",
+      "1/3 cup palm sugar",
+      "1 tsp vanilla extract",
+      "1 pinch salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 150°C and set 4 ramekins in a deep tray.",
+    "Warm the cream, milk and sugar until the sugar dissolves, then whisk into the eggs with the vanilla and salt.",
+    "Strain into the ramekins and pour hot water into the tray to halfway up.",
+    "Bake for 30 minutes until set around the edges with a slight wobble in the centre.",
+    "Chill the custards in the fridge until cold before serving."
+   ],
+   "notes": [
+    "Dessert. Plus 2 hours chilling. Vegetarian and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 408,
+    "proteinG": 9,
+    "carbsG": 34,
+    "fatG": 26,
+    "fibreG": 0,
+    "sodiumMg": 120
+   }
+  },
+  {
+   "id": "lemongrass-and-galangal-noodle-broth",
+   "title": "Lemongrass and Galangal Noodle Broth",
+   "summary": "Hot, sour lemongrass broth with mushrooms, tomato and noodles for a quick lunch.",
+   "cuisine": "thai",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 12,
+   "servings": 2,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 cups chicken stock",
+      "2 stalk lemongrass, bruised",
+      "3 slice galangal",
+      "3 makrut lime leaf",
+      "200g button mushroom, halved",
+      "2 tomato, quartered",
+      "200g rice vermicelli",
+      "2 tbsp fish sauce",
+      "2 tbsp lime juice",
+      "1 bird's eye chilli, sliced",
+      "1 handful coriander"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the stock with the lemongrass, galangal and lime leaf for 8 minutes.",
+    "Add the mushrooms and tomato and cook for 3 minutes until soft.",
+    "Soak the vermicelli in boiling water for 4 minutes until tender and drain into bowls.",
+    "Season the broth with fish sauce, lime juice and chilli and ladle over. Top with coriander."
+   ],
+   "notes": [
+    "Gluten-free if the stock is."
+   ],
+   "nutrition": {
+    "kcal": 541,
+    "proteinG": 19,
+    "carbsG": 105,
+    "fatG": 5,
+    "fibreG": 3,
+    "sodiumMg": 1500
+   }
+  },
+  {
+   "id": "banana-blossom-salad-with-peanuts",
+   "title": "Banana Blossom Salad with Peanuts",
+   "summary": "Shredded banana blossom tossed with lime, chilli and roasted peanuts.",
+   "cuisine": "thai",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 5,
+   "servings": 3,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 banana blossom, shredded",
+      "1/4 cup peanut, chopped",
+      "2 tbsp lime juice",
+      "1 tbsp fish sauce",
+      "1 tsp palm sugar",
+      "1 bird's eye chilli, sliced",
+      "1 handful mint",
+      "1 handful coriander",
+      "1 shallot, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the shredded blossom in lime juice and water for 5 minutes until it stays pale and crisp, then drain.",
+    "Dissolve the sugar in the lime juice and fish sauce for the dressing.",
+    "Toss the blossom with the shallot, chilli and herbs.",
+    "Dress and scatter with peanuts."
+   ],
+   "notes": [
+    "Gluten-free. Use soy sauce for a vegan dressing."
+   ],
+   "nutrition": {
+    "kcal": 160,
+    "proteinG": 6,
+    "carbsG": 16,
+    "fatG": 8,
+    "fibreG": 4,
+    "sodiumMg": 720
+   }
+  },
+  {
+   "id": "egg-yolk-cream-hot-chocolate",
+   "title": "Egg Yolk Cream Hot Chocolate",
+   "summary": "Rich whipped egg-yolk cream spooned over hot cocoa for a dessert drink.",
+   "cuisine": "vietnamese",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 0,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 egg yolk",
+      "2 tbsp caster sugar",
+      "2 tbsp condensed milk",
+      "2 tbsp cocoa powder",
+      "1 tsp vanilla extract"
+     ]
+    }
+   ],
+   "steps": [
+    "Whisk the yolks, sugar, condensed milk and vanilla over a pot of simmering water for 5 minutes until thick, pale and 71°C.",
+    "Whisk the cocoa into 1 cup hot water with a little sugar until smooth and pour into two cups.",
+    "Spoon the custard on top."
+   ],
+   "notes": [
+    "Food safety: egg yolks are heated to 71°C to cook through.",
+    "Dessert. Vegetarian and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 200,
+    "proteinG": 4,
+    "carbsG": 28,
+    "fatG": 8,
+    "fibreG": 0,
+    "sodiumMg": 60
+   }
+  },
+  {
+   "id": "banh-mi-pate-toasts",
+   "title": "Bánh Mì Pâté Toasts",
+   "summary": "Crunchy toasted baguette with pâté, pickled carrot and radish, cucumber and chilli.",
+   "cuisine": "vietnamese",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 5,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "1 baguette",
+      "100g pâté",
+      "2 carrot, julienned",
+      "1 daikon, julienned",
+      "3 tbsp rice vinegar",
+      "1 tbsp white sugar",
+      "1 cucumber, sliced",
+      "1 handful coriander",
+      "1 red chilli, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Pickle the carrot and daikon in the vinegar, sugar and a pinch of salt for 15 minutes.",
+    "Split and toast the baguette until crisp.",
+    "Spread with pâté and layer with cucumber, pickles, coriander and chilli."
+   ],
+   "notes": [
+    "Pâté contains liver; pregnant people should avoid it."
+   ],
+   "nutrition": {
+    "kcal": 290,
+    "proteinG": 8,
+    "carbsG": 42,
+    "fatG": 10,
+    "fibreG": 3,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "lemongrass-pork-rice-paper-rolls",
+   "title": "Lemongrass Pork Rice Paper Rolls",
+   "summary": "Fresh rolls with lemongrass pork, vermicelli and herbs, served with peanut dip.",
+   "cuisine": "vietnamese",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 8,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g pork mince",
+      "1 stalk lemongrass, minced",
+      "2 garlic cloves, minced",
+      "1 tbsp fish sauce",
+      "1 tsp palm sugar",
+      "12 rice paper wrapper",
+      "100g rice vermicelli",
+      "1 handful mint",
+      "1 handful Thai basil",
+      "1 cucumber, sliced",
+      "3 tbsp peanut butter",
+      "1 tbsp hoisin sauce"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the pork with the lemongrass, garlic, fish sauce and sugar and fry for 7 minutes until browned and cooked through.",
+    "Soak the vermicelli in boiling water for 4 minutes until tender.",
+    "Dip a wrapper in water, fill with pork, noodles, herbs and cucumber and roll tightly.",
+    "Whisk the peanut butter, hoisin and a splash of warm water for the dip."
+   ],
+   "notes": [
+    "Food safety: cook the pork mince to 75°C, with no pink."
+   ],
+   "nutrition": {
+    "kcal": 390,
+    "proteinG": 22,
+    "carbsG": 44,
+    "fatG": 14,
+    "fibreG": 3,
+    "sodiumMg": 980
+   }
+  },
+  {
+   "id": "vietnamese-sweet-corn-pudding",
+   "title": "Vietnamese Sweet Corn Pudding",
+   "summary": "Warm corn and coconut milk pudding thickened with tapioca and finished with toasted peanuts.",
+   "cuisine": "vietnamese",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 cups corn kernel",
+      "2 cups coconut milk",
+      "1/3 cup white sugar",
+      "2 tbsp tapioca starch",
+      "1 pinch salt",
+      "2 tbsp peanut, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the corn, coconut milk, sugar and salt for 8 minutes.",
+    "Stir the starch with 3 tbsp water and whisk in, cooking for 3 minutes until thick.",
+    "Serve warm topped with peanuts."
+   ],
+   "notes": [
+    "Dessert. Vegan and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 421,
+    "proteinG": 5,
+    "carbsG": 49,
+    "fatG": 23,
+    "fibreG": 1,
+    "sodiumMg": 120
+   }
+  },
+  {
+   "id": "sambal-egg-skewer-bites",
+   "title": "Sambal Egg Skewer Bites",
+   "summary": "Soft eggs rolled in spicy sambal and grilled on skewers.",
+   "cuisine": "indonesian",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 egg",
+      "3 tbsp sambal oelek",
+      "2 garlic cloves, minced",
+      "1 tbsp kecap manis",
+      "1 tbsp neutral oil",
+      "1 lime, cut into wedges"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the eggs for 8 minutes, cool in iced water and peel.",
+    "Fry the garlic and sambal in the oil for 2 minutes, add the kecap manis and bubble until sticky.",
+    "Roll the eggs in the sauce over low heat for 2 minutes until coated.",
+    "Thread onto skewers and serve with lime."
+   ],
+   "notes": [
+    "Food safety: boil eggs until the yolk is mostly firm. Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 224,
+    "proteinG": 14,
+    "carbsG": 6,
+    "fatG": 16,
+    "fibreG": 0,
+    "sodiumMg": 700
+   }
+  },
+  {
+   "id": "pisang-free-cassava-cake",
+   "title": "Pisang-Free Cassava Cake",
+   "summary": "Chewy baked coconut cassava cake with a golden top.",
+   "cuisine": "indonesian",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 45,
+   "servings": 12,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g cassava flour",
+      "3 egg",
+      "1 cup coconut milk",
+      "1/2 cup caster sugar",
+      "1/4 cup coconut oil",
+      "1/4 cup desiccated coconut",
+      "1 tsp baking powder"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 180°C and line a 20cm tin.",
+    "Whisk the eggs, milk, sugar and oil, then beat in the cassava flour and baking powder.",
+    "Pour in, sprinkle with coconut and bake for 45 minutes until golden and a skewer comes out clean."
+   ],
+   "notes": [
+    "Dessert. Vegetarian and gluten-free. Cassava is eaten cooked only."
+   ],
+   "nutrition": {
+    "kcal": 296,
+    "proteinG": 4,
+    "carbsG": 38,
+    "fatG": 14,
+    "fibreG": 1,
+    "sodiumMg": 100
+   }
+  },
+  {
+   "id": "gado-gado-lunch-bowl",
+   "title": "Gado-Gado Lunch Bowl",
+   "summary": "Blanched vegetables, tofu and egg with a rich peanut sauce.",
+   "cuisine": "indonesian",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 15,
+   "servings": 3,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "200g green bean",
+      "200g potato, cubed",
+      "200g firm tofu, cubed",
+      "3 egg",
+      "1 cabbage, shredded",
+      "1 cucumber, sliced",
+      "1/3 cup peanut butter",
+      "2 tbsp kecap manis",
+      "1 tbsp lime juice",
+      "1 garlic clove, minced",
+      "1 tbsp sambal oelek"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the potatoes for 10 minutes until tender, adding the beans for the last 3 minutes. Drain.",
+    "Boil the eggs for 8 minutes, cool and peel.",
+    "Pan-fry the tofu until golden on all sides.",
+    "Whisk the peanut butter, kecap manis, lime juice, garlic, sambal and warm water into a sauce.",
+    "Arrange the vegetables, tofu and halved eggs on plates and drizzle with sauce."
+   ],
+   "notes": [
+    "Vegetarian. Food safety: boil eggs until the yolk is firm."
+   ],
+   "nutrition": {
+    "kcal": 484,
+    "proteinG": 24,
+    "carbsG": 34,
+    "fatG": 28,
+    "fibreG": 8,
+    "sodiumMg": 720
+   }
+  },
+  {
+   "id": "sambal-tempeh-style-tofu-rice-boxes",
+   "title": "Sambal Tempeh-Style Tofu Rice Boxes",
+   "summary": "Crisp tofu tossed in sweet sambal glaze over rice with greens.",
+   "cuisine": "indonesian",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 12,
+   "servings": 2,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g firm tofu, cubed",
+      "2 tbsp sambal oelek",
+      "2 tbsp kecap manis",
+      "1 tbsp neutral oil",
+      "1 cup jasmine rice",
+      "200g green bean",
+      "1 lime, cut into wedges"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the rice by your usual method until fluffy.",
+    "Fry the tofu in the oil for 8 minutes until golden.",
+    "Add the beans, sambal and kecap manis and toss for 3 minutes until sticky.",
+    "Serve over rice with lime."
+   ],
+   "notes": [
+    "Vegan."
+   ],
+   "nutrition": {
+    "kcal": 933,
+    "proteinG": 46,
+    "carbsG": 113,
+    "fatG": 33,
+    "fibreG": 4,
+    "sodiumMg": 680
+   }
+  },
+  {
+   "id": "kuih-lapis-steamed-layer-cake",
+   "title": "Kuih Lapis Steamed Layer Cake",
+   "summary": "Rainbow-layered coconut rice flour cake, steamed in thin layers.",
+   "cuisine": "malaysian",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 30,
+   "cookMinutes": 45,
+   "servings": 12,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup rice flour",
+      "1/2 cup tapioca starch",
+      "2 cups coconut milk",
+      "3/4 cup caster sugar",
+      "1 cup water",
+      "1/2 tsp vanilla extract"
+     ]
+    }
+   ],
+   "steps": [
+    "Whisk everything until smooth and divide in two, tinting one half if you like.",
+    "Steam a greased tin for 3 minutes, pour in a thin layer and steam for 5 minutes until set.",
+    "Repeat layer by layer until the batter is used.",
+    "Steam the final layer for 10 minutes, cool completely and slice."
+   ],
+   "notes": [
+    "Dessert. Vegan and gluten-free. Plus 2 hours cooling."
+   ],
+   "nutrition": {
+    "kcal": 210,
+    "proteinG": 2,
+    "carbsG": 32,
+    "fatG": 8,
+    "fibreG": 1,
+    "sodiumMg": 30
+   }
+  },
+  {
+   "id": "roti-canai-with-dhal-dip",
+   "title": "Roti Canai with Dhal Dip",
+   "summary": "Flaky layered Malaysian flatbread torn and dipped in quick lentil dhal.",
+   "cuisine": "malaysian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 40,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "3 cups plain flour",
+      "1 egg",
+      "1/2 cup warm water",
+      "1/2 cup milk",
+      "4 tbsp ghee",
+      "1 cup red lentil",
+      "2 cups water",
+      "1 tsp ground turmeric",
+      "1 tsp curry powder",
+      "1 brown onion, diced"
+     ]
+    }
+   ],
+   "steps": [
+    "Knead the flour, egg, water, milk and 1 tsp salt into a soft dough. Rub with ghee and rest.",
+    "Simmer the lentils with the water, turmeric, curry powder and onion for 20 minutes until soft.",
+    "Stretch each dough ball thin, fold into a square and fry in ghee for 3 minutes each side until golden.",
+    "Crush the roti to fluff its layers and serve with the dhal."
+   ],
+   "notes": [
+    "Plus 2 hours resting the dough. Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 780,
+    "proteinG": 26,
+    "carbsG": 124,
+    "fatG": 20,
+    "fibreG": 6,
+    "sodiumMg": 720
+   }
+  },
+  {
+   "id": "curry-puff-pastry-triangles",
+   "title": "Curry Puff Pastry Triangles",
+   "summary": "Baked flaky pastry with a spiced potato and pea filling.",
+   "cuisine": "malaysian",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 25,
+   "servings": 12,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 sheet puff pastry",
+      "300g potato, diced",
+      "1/2 cup pea",
+      "1 brown onion, diced",
+      "2 tsp curry powder",
+      "1 tbsp neutral oil",
+      "1 egg"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the potato for 8 minutes until tender and drain.",
+    "Fry the onion in the oil for 5 minutes, add curry powder for 1 minute, then the potato and pea. Mash lightly and cool.",
+    "Cut pastry into squares, fill, fold into triangles and seal.",
+    "Brush with beaten egg and bake at 200°C for 20 minutes until puffed and golden."
+   ],
+   "notes": [
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 271,
+    "proteinG": 5,
+    "carbsG": 28,
+    "fatG": 15,
+    "fibreG": 2,
+    "sodiumMg": 240
+   }
+  },
+  {
+   "id": "pulut-hitam-black-rice-pudding",
+   "title": "Pulut Hitam Black Rice Pudding",
+   "summary": "Warm black glutinous rice pudding with coconut cream and palm sugar.",
+   "cuisine": "malaysian",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 50,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup black glutinous rice",
+      "4 cups water",
+      "1/3 cup palm sugar",
+      "1/2 cup coconut cream",
+      "1 pinch salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Rinse and soak the rice overnight.",
+    "Simmer the rice in the water for 45 minutes until tender and the porridge thickens.",
+    "Stir in the palm sugar and salt and cook for 5 minutes.",
+    "Serve warm with the coconut cream."
+   ],
+   "notes": [
+    "Dessert. Plus overnight soaking. Vegan and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 348,
+    "proteinG": 5,
+    "carbsG": 59,
+    "fatG": 10,
+    "fibreG": 2,
+    "sodiumMg": 100
+   }
+  },
+  {
+   "id": "turon-banana-free-mango-spring-rolls",
+   "title": "Turon Banana-Free Mango Spring Rolls",
+   "summary": "Crisp fried spring roll wrappers with mango and brown sugar, dusted with sugar.",
+   "cuisine": "filipino",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 10,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "12 spring roll wrapper",
+      "2 mango, sliced into strips",
+      "1/3 cup brown sugar",
+      "1 tsp ground cinnamon",
+      "neutral oil for frying",
+      "1 tbsp caster sugar"
+     ]
+    }
+   ],
+   "steps": [
+    "Roll each mango strip in brown sugar and cinnamon until coated.",
+    "Wrap in a wrapper, sealing the edges with water.",
+    "Fry in 2cm of oil over medium heat for 4 minutes until golden, then drain.",
+    "Dust with the caster sugar and serve warm."
+   ],
+   "notes": [
+    "Dessert. Vegan."
+   ],
+   "nutrition": {
+    "kcal": 169,
+    "proteinG": 4,
+    "carbsG": 35,
+    "fatG": 1,
+    "fibreG": 2,
+    "sodiumMg": 120
+   }
+  },
+  {
+   "id": "pandesal-style-soft-rolls",
+   "title": "Pandesal-Style Soft Rolls",
+   "summary": "Soft, slightly sweet bread rolls rolled in breadcrumbs, baked until golden.",
+   "cuisine": "filipino",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 35,
+   "cookMinutes": 20,
+   "servings": 12,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "3 cups bread flour",
+      "1/3 cup caster sugar",
+      "2 tsp instant dried yeast",
+      "1 cup warm milk",
+      "3 tbsp butter",
+      "1 egg",
+      "1/2 cup breadcrumbs"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the flour, sugar, yeast and a pinch of salt. Add milk, egg and butter and knead for 8 minutes until smooth.",
+    "Rise until doubled, then shape into 12 rolls and coat with breadcrumbs.",
+    "Rest the shaped rolls for 30 minutes until puffy.",
+    "Bake at 190°C for 18 minutes until golden."
+   ],
+   "notes": [
+    "Plus 90 minutes rising and resting. Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 209,
+    "proteinG": 6,
+    "carbsG": 35,
+    "fatG": 5,
+    "fibreG": 1,
+    "sodiumMg": 260
+   }
+  },
+  {
+   "id": "chicken-tinola-lunch-soup",
+   "title": "Chicken Tinola Lunch Soup",
+   "summary": "Gentle ginger chicken soup with green papaya and spinach.",
+   "cuisine": "filipino",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g chicken thigh, cut into pieces",
+      "1 tbsp ginger, sliced",
+      "3 garlic cloves, sliced",
+      "1 brown onion, sliced",
+      "1 green papaya, cubed",
+      "2 tbsp fish sauce",
+      "5 cups water",
+      "1 handful baby spinach",
+      "1 tbsp neutral oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the ginger, garlic and onion in the oil for 4 minutes until soft.",
+    "Add the chicken and brown for 4 minutes, then add the water and fish sauce.",
+    "Simmer for 15 minutes, add the papaya and cook for 6 minutes until tender.",
+    "Stir through the spinach until wilted."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C and no pink should remain."
+   ],
+   "nutrition": {
+    "kcal": 260,
+    "proteinG": 28,
+    "carbsG": 10,
+    "fatG": 12,
+    "fibreG": 2,
+    "sodiumMg": 1050
+   }
+  },
+  {
+   "id": "leche-flan-cups",
+   "title": "Leche Flan Cups",
+   "summary": "Silky caramel custard baked in cups, rich and smooth.",
+   "cuisine": "filipino",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 40,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "6 egg yolk",
+      "1 cup condensed milk",
+      "1 cup milk",
+      "1 tsp vanilla extract",
+      "1/2 cup white sugar"
+     ]
+    }
+   ],
+   "steps": [
+    "Melt the sugar in a pot over medium heat until deep amber and divide among 6 ramekins.",
+    "Whisk the yolks, condensed milk, milk and vanilla and strain.",
+    "Pour into the ramekins and bake in a water bath at 150°C for 40 minutes until set with a gentle wobble.",
+    "Chill until cold, then run a knife around each and unmould onto plates."
+   ],
+   "notes": [
+    "Dessert. Plus 4 hours chilling. Vegetarian and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 191,
+    "proteinG": 5,
+    "carbsG": 27,
+    "fatG": 7,
+    "fibreG": 0,
+    "sodiumMg": 80
+   }
+  },
+  {
+   "id": "ginisang-sweet-potato-fritters",
+   "title": "Ginisang Sweet Potato Fritters",
+   "summary": "Crispy sweet potato fritters with garlic and spring onion, served with vinegar dip.",
+   "cuisine": "filipino",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 12,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g sweet potato, grated",
+      "3 tbsp plain flour",
+      "1 egg",
+      "2 spring onion, sliced",
+      "2 garlic cloves, minced",
+      "neutral oil for frying",
+      "3 tbsp coconut vinegar",
+      "1 garlic clove, minced",
+      "1 bird's eye chilli, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the potato, flour, egg, onion and first garlic with a pinch of salt.",
+    "Fry spoonfuls in oil for 3 minutes each side until golden and crisp.",
+    "Mix the vinegar, extra garlic and chilli for dipping."
+   ],
+   "notes": [
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 154,
+    "proteinG": 4,
+    "carbsG": 21,
+    "fatG": 6,
+    "fibreG": 4,
+    "sodiumMg": 360
+   }
+  },
+  {
+   "id": "masala-chai-shortbread",
+   "title": "Masala Chai Shortbread",
+   "summary": "Buttery spiced tea shortbread, crisp and tender.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 20,
+   "servings": 12,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "250g butter",
+      "1/2 cup icing sugar",
+      "2 cups plain flour",
+      "1/2 cup cornflour",
+      "1 tsp ground cardamom",
+      "1 tsp ground cinnamon",
+      "1/2 tsp ground ginger"
+     ]
+    }
+   ],
+   "steps": [
+    "Beat the butter and icing sugar until pale.",
+    "Mix in the flour, cornflour and spices to a soft dough, chill and roll out.",
+    "Cut into rounds and bake at 160°C for 18 minutes until pale golden."
+   ],
+   "notes": [
+    "Plus 30 minutes chilling. Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 204,
+    "proteinG": 2,
+    "carbsG": 22,
+    "fatG": 12,
+    "fibreG": 1,
+    "sodiumMg": 90
+   }
+  },
+  {
+   "id": "besan-ladoo-sweet-balls",
+   "title": "Besan Ladoo Sweet Balls",
+   "summary": "Roasted chickpea flour and ghee balls with cardamom, soft and melting.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 20,
+   "servings": 12,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 cups chickpea flour",
+      "1/2 cup ghee",
+      "3/4 cup icing sugar",
+      "1 tsp ground cardamom",
+      "2 tbsp pistachio, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Roast the flour in the ghee over low heat for 15 minutes, stirring until fragrant and golden.",
+    "Cool until just warm, stir in the sugar and cardamom.",
+    "Roll into 12 balls and press a pistachio into each."
+   ],
+   "notes": [
+    "Dessert. Vegetarian and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 186,
+    "proteinG": 4,
+    "carbsG": 20,
+    "fatG": 10,
+    "fibreG": 2,
+    "sodiumMg": 10
+   }
+  },
+  {
+   "id": "paneer-kathi-rolls",
+   "title": "Paneer Kathi Rolls",
+   "summary": "Spiced paneer wrapped in flaky rotis with onions and mint chutney.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 12,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g paneer, cubed",
+      "1 tbsp ginger garlic paste",
+      "1 tsp garam masala",
+      "1 tsp chilli powder",
+      "2 tbsp Greek yoghurt",
+      "4 roti",
+      "1 red onion, sliced",
+      "2 tbsp mint chutney",
+      "1 tbsp neutral oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Coat the paneer in the paste, spices and yoghurt for 15 minutes.",
+    "Fry in the oil for 8 minutes until browned on all sides.",
+    "Warm the rotis and fill with paneer, onion and chutney. Roll tight."
+   ],
+   "notes": [
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 366,
+    "proteinG": 16,
+    "carbsG": 26,
+    "fatG": 22,
+    "fibreG": 2,
+    "sodiumMg": 580
+   }
+  },
+  {
+   "id": "masala-dosa-lunch-crepes",
+   "title": "Masala Dosa Lunch Crepes",
+   "summary": "Crisp rice-flour crepes filled with spiced potato.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 30,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 cups rice flour",
+      "1/2 cup chickpea flour",
+      "1 3/4 cups water",
+      "400g potato, boiled and cubed",
+      "1 brown onion, sliced",
+      "1 tsp mustard seed",
+      "1 tsp ground turmeric",
+      "1 green chilli, chopped",
+      "20g curry leaf",
+      "3 tbsp ghee"
+     ]
+    }
+   ],
+   "steps": [
+    "Whisk the flours, water and salt into a thin batter.",
+    "Fry the mustard seed and curry leaf in 1 tbsp ghee, add the onion, chilli and turmeric and cook for 5 minutes until soft.",
+    "Add the potato and mash lightly.",
+    "Pour batter into a hot pan, spread thin and cook with ghee for 3 minutes until crisp, fill and fold."
+   ],
+   "notes": [
+    "Vegetarian. Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 428,
+    "proteinG": 10,
+    "carbsG": 70,
+    "fatG": 12,
+    "fibreG": 5,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "tandoori-chicken-thigh-skewers",
+   "title": "Tandoori Chicken Thigh Skewers",
+   "summary": "Marinated chicken thigh grilled until charred, with mint raita.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "700g chicken thigh, cut into chunks",
+      "1/2 cup Greek yoghurt",
+      "2 tbsp ginger garlic paste",
+      "2 tsp garam masala",
+      "1 tsp ground turmeric",
+      "2 tsp Kashmiri chilli powder",
+      "2 tbsp lemon juice",
+      "1 cup raita",
+      "1 red onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the yoghurt, paste, spices and lemon juice and coat the chicken. Marinate for at least 2 hours.",
+    "Thread the chicken onto metal or soaked skewers.",
+    "Grill over high heat for 12 minutes, turning until charred and cooked through.",
+    "Serve with raita and onion."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C. Plus 2 hours marinating."
+   ],
+   "nutrition": {
+    "kcal": 320,
+    "proteinG": 38,
+    "carbsG": 6,
+    "fatG": 16,
+    "fibreG": 1,
+    "sodiumMg": 720
+   }
+  },
+  {
+   "id": "rasmalai-style-cardamom-milk-cakes",
+   "title": "Rasmalai-Style Cardamom Milk Cakes",
+   "summary": "Soft ricotta dumplings steeped in saffron cardamom milk.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 30,
+   "cookMinutes": 25,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g ricotta",
+      "1 tbsp plain flour",
+      "1 tbsp semolina",
+      "3 cups milk",
+      "1/3 cup caster sugar",
+      "4 cardamom pod",
+      "1 pinch saffron",
+      "2 tbsp pistachio, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the ricotta, flour and semolina into a dough, knead and shape 12 small discs.",
+    "Simmer the milk, sugar, cardamom and saffron for 12 minutes until reduced by a third.",
+    "Drop in the discs and poach gently for 10 minutes until they swell.",
+    "Chill and serve with pistachio."
+   ],
+   "notes": [
+    "Dessert. Plus 3 hours chilling. Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 268,
+    "proteinG": 11,
+    "carbsG": 26,
+    "fatG": 13,
+    "fibreG": 0,
+    "sodiumMg": 160
+   }
+  },
+  {
+   "id": "kerala-fish-curry-lunch-pots",
+   "title": "Kerala Fish Curry Lunch Pots",
+   "summary": "Tamarind and coconut fish curry with curry leaves and chilli.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g white fish fillet, cubed",
+      "1 cup coconut milk",
+      "1 tbsp tamarind paste",
+      "1 brown onion, sliced",
+      "3 garlic cloves, minced",
+      "1 tbsp ginger, grated",
+      "2 tsp ground turmeric",
+      "1 tsp chilli powder",
+      "20g curry leaf",
+      "1 tbsp coconut oil",
+      "1 tsp mustard seed"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the mustard seed and curry leaf in the oil for 30 seconds until they pop.",
+    "Add the onion, garlic and ginger for 5 minutes until soft.",
+    "Stir in the spices, coconut milk and tamarind and simmer for 5 minutes.",
+    "Add the fish and cook for 6 minutes until opaque and flaking."
+   ],
+   "notes": [
+    "Food safety: fish is cooked when opaque and flaking at 63°C."
+   ],
+   "nutrition": {
+    "kcal": 325,
+    "proteinG": 25,
+    "carbsG": 10,
+    "fatG": 21,
+    "fibreG": 1,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "sri-lankan-coconut-sambol-toasts",
+   "title": "Sri Lankan Coconut Sambol Toasts",
+   "summary": "Zesty fresh coconut sambol piled on crisp toast.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 5,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup desiccated coconut",
+      "1 red onion, finely diced",
+      "1 tsp chilli flakes",
+      "2 tbsp lime juice",
+      "1/2 tsp salt",
+      "4 slice sourdough",
+      "1 tbsp coconut oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Rub the coconut with the onion, chilli, lime juice and salt until combined.",
+    "Toast the sourdough in the oil for 3 minutes each side until crisp.",
+    "Pile the sambol on the toast until generously covered."
+   ],
+   "notes": [
+    "Vegan."
+   ],
+   "nutrition": {
+    "kcal": 266,
+    "proteinG": 5,
+    "carbsG": 31,
+    "fatG": 14,
+    "fibreG": 2,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "ethiopian-style-lentil-wraps-with-greens",
+   "title": "Ethiopian-Style Lentil Wraps with Greens",
+   "summary": "Red lentil stew in a flatbread wrap with spiced greens.",
+   "cuisine": "east-african",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 3,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup red lentil",
+      "2 cups water",
+      "1 brown onion, diced",
+      "2 garlic cloves, minced",
+      "1 tsp ground turmeric",
+      "1 tsp paprika",
+      "3 cups kale, chopped",
+      "3 flatbread",
+      "1 tbsp olive oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the onion in the oil for 5 minutes until soft, add the garlic and spices for 1 minute.",
+    "Add the lentils and water and simmer for 18 minutes until thick.",
+    "Wilt the kale in the stew for 3 minutes until tender.",
+    "Spoon into flatbreads and roll."
+   ],
+   "notes": [
+    "Vegan."
+   ],
+   "nutrition": {
+    "kcal": 392,
+    "proteinG": 16,
+    "carbsG": 64,
+    "fatG": 8,
+    "fibreG": 9,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "south-african-milk-tart-squares",
+   "title": "South African Milk Tart Squares",
+   "summary": "Cinnamon-dusted creamy milk custard in a crisp pastry.",
+   "cuisine": "south-african",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 35,
+   "servings": 12,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 sheet puff pastry",
+      "3 cups milk",
+      "1/3 cup caster sugar",
+      "3 tbsp cornflour",
+      "2 egg",
+      "1 tsp vanilla extract",
+      "1 tsp ground cinnamon",
+      "1 tbsp butter"
+     ]
+    }
+   ],
+   "steps": [
+    "Press the pastry into a tin and bake at 190°C for 12 minutes until golden.",
+    "Heat 2 1/2 cups milk with the sugar. Whisk the cornflour and eggs into the remaining milk and add, stirring over medium heat for 6 minutes until thick.",
+    "Stir in the vanilla and butter and pour into the shell.",
+    "Chill, dust with cinnamon and cut into squares."
+   ],
+   "notes": [
+    "Dessert. Plus 2 hours chilling. Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 139,
+    "proteinG": 4,
+    "carbsG": 15,
+    "fatG": 7,
+    "fibreG": 0,
+    "sodiumMg": 100
+   }
+  },
+  {
+   "id": "boerewors-roll-lunch-sandwich",
+   "title": "Boerewors Roll Lunch Sandwich",
+   "summary": "Grilled spiced sausage in a roll with tomato relish and onion.",
+   "cuisine": "south-african",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "500g pork sausage",
+      "4 bread roll",
+      "1 brown onion, sliced",
+      "2 tbsp tomato sauce",
+      "2 tbsp relish",
+      "1 tbsp butter",
+      "1 tbsp neutral oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Grill the sausage for 15 minutes, turning until browned and cooked through.",
+    "Fry the onion in oil for 8 minutes until golden.",
+    "Butter and toast the rolls for 2 minutes until golden, then fill with sausage, onion, tomato sauce and relish."
+   ],
+   "notes": [
+    "Food safety: pork sausage must reach 75°C throughout."
+   ],
+   "nutrition": {
+    "kcal": 526,
+    "proteinG": 22,
+    "carbsG": 42,
+    "fatG": 30,
+    "fibreG": 3,
+    "sodiumMg": 1100
+   }
+  },
+  {
+   "id": "pacific-coconut-fish-ceviche-cups",
+   "title": "Pacific Coconut Fish Ceviche Cups",
+   "summary": "Lime-cured fish with coconut milk, cucumber and chilli served in cups.",
+   "cuisine": "pacific-islands",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 0,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g white fish fillet, diced",
+      "1/2 cup lime juice",
+      "3/4 cup coconut milk",
+      "1 cucumber, diced",
+      "1 tomato, diced",
+      "1 red onion, finely diced",
+      "1 red chilli, sliced",
+      "1 handful coriander"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the fish with lime juice and refrigerate for 20 minutes until opaque.",
+    "Drain most of the juice and stir in the coconut milk, cucumber, tomato, onion and chilli.",
+    "Serve in cups topped with coriander."
+   ],
+   "notes": [
+    "Food safety: use very fresh fish; the flesh should turn opaque, or poach to 63°C if unsure. Plus 20 minutes curing. Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 217,
+    "proteinG": 18,
+    "carbsG": 8,
+    "fatG": 12,
+    "fibreG": 1,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "samoan-palusami-style-spinach-parcels",
+   "title": "Samoan Palusami-Style Spinach Parcels",
+   "summary": "Spinach leaves in creamy coconut baked in foil.",
+   "cuisine": "pacific-islands",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g English spinach",
+      "1 cup coconut cream",
+      "1 brown onion, diced",
+      "1 tomato, diced",
+      "1 tsp salt",
+      "1 tbsp lime juice"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the onion, tomato, coconut cream, salt and lime.",
+    "Pile the spinach on foil squares, spoon over the mixture and seal.",
+    "Bake at 180°C for 30 minutes until tender."
+   ],
+   "notes": [
+    "Vegan and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 265,
+    "proteinG": 5,
+    "carbsG": 12,
+    "fatG": 22,
+    "fibreG": 2,
+    "sodiumMg": 520
+   }
+  }
+ ]
+}

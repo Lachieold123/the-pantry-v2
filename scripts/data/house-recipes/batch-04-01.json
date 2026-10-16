@@ -1,0 +1,2586 @@
+{
+ "about": "House recipes, batch 04: written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+ "recipes": [
+  {
+   "id": "shakshuka-with-feta-and-harissa",
+   "title": "Shakshuka with Feta and Harissa",
+   "summary": "Eggs baked in a spiced tomato and capsicum sauce, scattered with feta and herbs.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "breakfast",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "1 red capsicum, diced",
+      "3 garlic cloves, sliced",
+      "2 tsp ground cumin",
+      "1 tsp smoked paprika",
+      "1 tbsp harissa paste",
+      "2 x 400g tins diced tomatoes",
+      "6 eggs",
+      "100g feta, crumbled",
+      "1 handful flat-leaf parsley, chopped",
+      "Crusty bread, to serve"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil in a large deep frying pan over medium heat. Cook the onion and capsicum for 8 minutes, until soft and starting to colour.",
+    "Add the garlic, cumin, paprika and harissa and stir for 1 minute, until fragrant.",
+    "Pour in the tomatoes with a good pinch of salt and simmer for 10 minutes, until thick enough that a spoon leaves a trail.",
+    "Make six wells in the sauce and crack an egg into each. Cover and cook for 5 to 7 minutes, until the whites are set and the yolks are still soft.",
+    "Scatter over the feta and parsley and serve straight from the pan with bread."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are fully set. If serving anyone vulnerable, cook the yolks through as well.",
+    "Use 1 tsp harissa for a mild version."
+   ],
+   "nutrition": {
+    "kcal": 336,
+    "proteinG": 17,
+    "carbsG": 22,
+    "fatG": 20,
+    "fibreG": 6,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "masala-omelette-with-green-chilli",
+   "title": "Masala Omelette with Green Chilli and Coriander",
+   "summary": "A fluffy Indian-style omelette packed with onion, tomato, green chilli and fresh coriander.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 6,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 eggs",
+      "1/2 small red onion, finely diced",
+      "1 small tomato, deseeded and diced",
+      "1 green chilli, finely chopped",
+      "2 tbsp chopped coriander",
+      "1/4 tsp ground turmeric",
+      "1/4 tsp salt",
+      "1 tbsp ghee",
+      "Roti, to serve"
+     ]
+    }
+   ],
+   "steps": [
+    "Whisk the eggs in a bowl with the onion, tomato, chilli, coriander, turmeric and salt until well combined.",
+    "Heat half the ghee in a non-stick frying pan over medium heat. Pour in half the mixture and tilt the pan so it spreads in an even layer.",
+    "Cook for 2 minutes, until the edges are set, then flip and cook 1 minute more, until golden and no longer wet in the middle.",
+    "Repeat with the remaining ghee and mixture until it is all used, then serve with roti."
+   ],
+   "notes": [
+    "Food safety: cook until the eggs are fully set with no runny egg in the middle."
+   ],
+   "nutrition": {
+    "kcal": 247,
+    "proteinG": 15,
+    "carbsG": 4,
+    "fatG": 19,
+    "fibreG": 1,
+    "sodiumMg": 560
+   }
+  },
+  {
+   "id": "vegan-tofu-scramble-with-spinach",
+   "title": "Vegan Tofu Scramble with Spinach and Turmeric",
+   "summary": "A savoury, golden tofu scramble with spinach, cherry tomatoes and nutritional yeast.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 tbsp olive oil",
+      "300g firm tofu",
+      "1/2 tsp ground turmeric",
+      "1 tsp ground cumin",
+      "2 tbsp nutritional yeast",
+      "1/2 tsp salt",
+      "100g baby spinach",
+      "150g cherry tomatoes, halved",
+      "2 spring onions, sliced",
+      "4 slices sourdough, toasted"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil in a large non-stick frying pan over medium heat. Crumble in the tofu with your hands and cook for 3 minutes, stirring now and then.",
+    "Add the turmeric, cumin, nutritional yeast and salt and stir for 2 minutes, until the tofu is evenly golden.",
+    "Add the tomatoes and cook for 2 minutes, then fold through the spinach until just wilted.",
+    "Stir in the spring onions until the spinach is soft, then spoon onto toast."
+   ],
+   "notes": [
+    "Black salt (kala namak) adds an eggy flavour if you have it. Add a pinch at the end."
+   ],
+   "nutrition": {
+    "kcal": 538,
+    "proteinG": 33,
+    "carbsG": 50,
+    "fatG": 22,
+    "fibreG": 4,
+    "sodiumMg": 540
+   }
+  },
+  {
+   "id": "overnight-oats-with-roasted-pears",
+   "title": "Overnight Oats with Roasted Pears",
+   "summary": "Creamy oats soaked overnight in milk and yoghurt, topped with spiced roasted pears.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup rolled oats",
+      "3/4 cup milk",
+      "1/2 cup natural yoghurt",
+      "1 tbsp maple syrup",
+      "4 pears, cored and cut into wedges",
+      "1 tsp honey",
+      "1/2 tsp ground cinnamon",
+      "2 tbsp chopped walnuts"
+     ]
+    }
+   ],
+   "steps": [
+    "Stir the oats, milk, yoghurt and maple syrup together in a bowl. Cover and chill overnight.",
+    "Heat the oven to 200°C (180°C fan). Put the pear wedges on a lined tray, drizzle with the honey, dust with cinnamon and roast for 15 minutes, until soft and syrupy.",
+    "Spoon the oats into two bowls, top with the warm pears and their juices and finish with the walnuts."
+   ],
+   "notes": [
+    "Plus 8 hours soaking overnight."
+   ],
+   "nutrition": {
+    "kcal": 425,
+    "proteinG": 15,
+    "carbsG": 62,
+    "fatG": 13,
+    "fibreG": 9,
+    "sodiumMg": 80
+   }
+  },
+  {
+   "id": "tamagoyaki-japanese-rolled-omelette",
+   "title": "Tamagoyaki Japanese Rolled Omelette",
+   "summary": "A layered, lightly sweet rolled omelette, cut into neat slices and served with rice.",
+   "cuisine": "japanese",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 5,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 eggs",
+      "2 tbsp dashi stock",
+      "1 tbsp mirin",
+      "1 tsp sugar",
+      "1 tsp soy sauce (tamari for no-gluten)",
+      "1 tbsp neutral oil",
+      "Steamed rice, to serve",
+      "Grated daikon, to serve"
+     ]
+    }
+   ],
+   "steps": [
+    "Whisk the eggs gently with the dashi, mirin, sugar and soy sauce, trying not to add air.",
+    "Heat a small non-stick frying pan over medium-low heat and wipe it with oiled paper towel. Pour in a quarter of the mixture and tilt to coat.",
+    "When the egg is mostly set but still glossy on top, roll it up towards you with chopsticks. Push the roll to the far side and oil the pan again.",
+    "Pour in another quarter and lift the roll so egg runs underneath. Cook until set, then roll again. Repeat until all the mixture is used.",
+    "Rest the omelette for 2 minutes, slice into 2cm pieces and serve with rice and grated daikon."
+   ],
+   "notes": [
+    "Food safety: the egg should be fully set through the middle."
+   ],
+   "nutrition": {
+    "kcal": 211,
+    "proteinG": 13,
+    "carbsG": 6,
+    "fatG": 15,
+    "fibreG": 0,
+    "sodiumMg": 470
+   }
+  },
+  {
+   "id": "masala-dosa-with-potato-filling",
+   "title": "Masala Dosa with Spiced Potato",
+   "summary": "Crisp rice-and-lentil crepes folded around a turmeric and mustard seed potato filling.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "breakfast",
+    "lunch"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 30,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "section": "Batter",
+     "items": [
+      "1 cup basmati rice",
+      "1/4 cup red lentil",
+      "1/4 tsp fenugreek seeds",
+      "1/2 tsp salt",
+      "Oil, for cooking"
+     ]
+    },
+    {
+     "section": "Filling",
+     "items": [
+      "4 potatoes, peeled and cut into 2cm chunks",
+      "1 tbsp neutral oil",
+      "1 tsp black mustard seeds",
+      "1 handful curry leaves",
+      "1 brown onion, sliced",
+      "2 green chillies, chopped",
+      "1/2 tsp ground turmeric",
+      "1 tbsp lemon juice",
+      "Coconut chutney, to serve"
+     ]
+    }
+   ],
+   "steps": [
+    "Soak the rice, dal and fenugreek in water for 6 hours. Drain, blend with 3/4 cup water and the salt to a pourable batter, then leave covered in a warm spot for 8 hours to ferment.",
+    "For the filling, boil the potatoes in salted water for 12 minutes, until tender, then drain.",
+    "Heat the oil in a frying pan over medium heat. Add the mustard seeds until they pop, then the curry leaves, onion and chilli. Cook for 6 minutes, until soft.",
+    "Stir in the turmeric and potatoes, mashing roughly. Add the lemon juice and a splash of water and cook for 3 minutes. Keep warm.",
+    "Heat a flat non-stick pan over medium-high heat and brush lightly with oil. Pour in a ladle of batter and spread it quickly in a thin circle.",
+    "Drizzle a little oil around the edge and cook for 2 to 3 minutes, until deep golden and crisp. Spoon filling down the middle, fold over and serve with chutney. Repeat with the rest."
+   ],
+   "notes": [
+    "Plus 14 hours soaking and fermenting. The batter keeps 3 days in the fridge."
+   ],
+   "nutrition": {
+    "kcal": 388,
+    "proteinG": 9,
+    "carbsG": 70,
+    "fatG": 8,
+    "fibreG": 5,
+    "sodiumMg": 340
+   }
+  },
+  {
+   "id": "warm-chickpea-ful-with-tahini-and-lemon",
+   "title": "Chickpea Ful with Tahini and Lemon",
+   "summary": "Warm, garlicky Egyptian-style beans with lemon, cumin and a tahini drizzle.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "breakfast",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 x 400g tins chickpeas, drained",
+      "2 garlic cloves, crushed",
+      "1 tsp ground cumin",
+      "3 tbsp lemon juice",
+      "3 tbsp olive oil",
+      "2 tbsp tahini",
+      "2 tomatoes, diced",
+      "1/2 red onion, finely diced",
+      "1 handful flat-leaf parsley, chopped",
+      "1 tsp chilli flakes",
+      "Pita bread, to serve"
+     ]
+    }
+   ],
+   "steps": [
+    "Warm the chickpeas in a saucepan with 1/2 cup water, the garlic and cumin over medium heat for 6 minutes, until hot through. Mash about a third with a fork for a creamy texture.",
+    "Stir in 2 tbsp lemon juice, 2 tbsp oil and a pinch of salt.",
+    "Whisk the tahini with the remaining lemon juice and 2 tbsp water until pourable.",
+    "Spoon the beans into bowls and top with tomato, onion, parsley, tahini, chilli flakes and the remaining oil. Serve with pita."
+   ],
+   "notes": [
+    "Use gluten-free flatbread to keep it no-gluten."
+   ],
+   "nutrition": {
+    "kcal": 271,
+    "proteinG": 12,
+    "carbsG": 31,
+    "fatG": 11,
+    "fibreG": 12,
+    "sodiumMg": 480
+   }
+  },
+  {
+   "id": "coconut-rice-pudding-with-mango",
+   "title": "Coconut Rice Pudding with Mango",
+   "summary": "Creamy coconut rice pudding layered with fresh mango and toasted coconut.",
+   "cuisine": "pacific-islands",
+   "mealTypes": [
+    "breakfast",
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1/2 cup jasmine rice",
+      "400ml coconut milk",
+      "1 cup water",
+      "1 tbsp maple syrup",
+      "1/2 tsp vanilla extract",
+      "1 ripe mango, diced",
+      "2 tbsp toasted shredded coconut",
+      "1 lime, juiced"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the rice, coconut milk, water, maple syrup and vanilla in a saucepan over low heat for 25 minutes, stirring often, until the rice is very soft and creamy. Cool, then chill for at least 2 hours.",
+    "Toss the mango with the lime juice.",
+    "Layer the pudding and mango into glasses and finish with the coconut."
+   ],
+   "notes": [
+    "Dessert or breakfast. Plus 2 hours chilling. Keeps 3 days in the fridge."
+   ],
+   "nutrition": {
+    "kcal": 324,
+    "proteinG": 3,
+    "carbsG": 36,
+    "fatG": 18,
+    "fibreG": 2,
+    "sodiumMg": 15
+   }
+  },
+  {
+   "id": "ethiopian-style-scrambled-eggs-with-berbere",
+   "title": "Scrambled Eggs with Berbere-Style Spice and Tomato",
+   "summary": "Soft eggs with onion, tomato and berbere spice, inspired by Ethiopian egg dishes.",
+   "cuisine": "east-african",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 tbsp butter",
+      "1/2 red onion, finely diced",
+      "1 green chilli, sliced",
+      "1 tsp chilli powder",
+      "1/2 tsp ground ginger",
+      "1/2 tsp ground coriander",
+      "1/2 tsp ground cumin",
+      "1 tomato, diced",
+      "4 eggs, beaten",
+      "Pinch of salt",
+      "1 tbsp chopped coriander",
+      "Flatbread, to serve"
+     ]
+    }
+   ],
+   "steps": [
+    "Melt the butter in a frying pan over medium heat. Cook the onion and chilli for 4 minutes, until soft.",
+    "Stir in the spices (a quick berbere-style blend) and tomato and cook 2 minutes, until the tomato breaks down.",
+    "Pour in the eggs with the salt. Stir gently for 2 to 3 minutes, until just set but still soft and creamy.",
+    "Top with coriander and serve with flatbread."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until set with no raw liquid left."
+   ],
+   "nutrition": {
+    "kcal": 251,
+    "proteinG": 14,
+    "carbsG": 6,
+    "fatG": 19,
+    "fibreG": 1,
+    "sodiumMg": 440
+   }
+  },
+  {
+   "id": "caribbean-saltfish-fritters",
+   "title": "Caribbean Saltfish Fritters",
+   "summary": "Crisp, spicy fritters of flaked salted white fish with thyme, spring onion and scotch bonnet.",
+   "cuisine": "caribbean",
+   "mealTypes": [
+    "breakfast",
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "200g white fish fillet, salted and soaked overnight",
+      "1 cup plain flour",
+      "1 tsp baking powder",
+      "1/2 cup water",
+      "2 spring onions, finely sliced",
+      "2 sprigs thyme, leaves picked",
+      "1/2 scotch bonnet chilli, finely chopped",
+      "1 garlic clove, crushed",
+      "Neutral oil, for shallow frying",
+      "Lime wedges, to serve"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the soaked fish in fresh water for 10 minutes, until it flakes easily, then drain, cool and flake it, removing any bones.",
+    "Mix the flour and baking powder, then stir in the water to a thick batter. Fold in the cod, spring onion, thyme, chilli and garlic.",
+    "Heat 1cm of oil in a frying pan over medium heat. Drop in tablespoons of batter and fry for 2 to 3 minutes each side, until golden and cooked through.",
+    "Drain on paper towel and serve hot with lime."
+   ],
+   "notes": [
+    "Food safety: fry until the fritters are golden and the fish is opaque and the centre is steaming hot.",
+    "Plus 12 hours salting and soaking the fish."
+   ],
+   "nutrition": {
+    "kcal": 251,
+    "proteinG": 14,
+    "carbsG": 24,
+    "fatG": 11,
+    "fibreG": 1,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "swedish-pancakes-with-lingonberry-jam",
+   "title": "Swedish Pancakes with Lingonberry Jam",
+   "summary": "Thin, buttery pancakes rolled around tart lingonberry jam, with a spoon of cream on top.",
+   "cuisine": "scandinavian",
+   "mealTypes": [
+    "breakfast",
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "150g plain flour",
+      "1/2 tsp salt",
+      "1 tbsp caster sugar",
+      "3 eggs",
+      "500ml milk",
+      "40g butter, melted, plus extra for the pan",
+      "1/2 cup lingonberry jam",
+      "1/2 cup thickened cream, softly whipped"
+     ]
+    }
+   ],
+   "steps": [
+    "Whisk the flour, salt and sugar in a bowl. Whisk in the eggs and half the milk until smooth, then the rest of the milk and the melted butter. Rest 10 minutes.",
+    "Heat a non-stick pan over medium heat and brush with butter. Pour in a thin layer of batter and swirl to coat.",
+    "Cook for 1 to 2 minutes, until the edges lift and the underside is pale gold, then flip and cook 30 seconds until just set. Stack on a warm plate and repeat.",
+    "Spread each pancake with jam, roll up and serve with the cream."
+   ],
+   "notes": [
+    "Food safety: cook the pancakes until the batter is fully set with no wet patches."
+   ],
+   "nutrition": {
+    "kcal": 413,
+    "proteinG": 10,
+    "carbsG": 55,
+    "fatG": 17,
+    "fibreG": 1,
+    "sodiumMg": 330
+   }
+  },
+  {
+   "id": "open-rye-sandwich-smoked-salmon-egg-dill",
+   "title": "Open Rye Sandwich with Smoked Salmon, Egg and Dill",
+   "summary": "Buttered dark rye topped with smoked salmon, soft egg, cucumber and dill, in the Scandinavian style.",
+   "cuisine": "scandinavian",
+   "mealTypes": [
+    "breakfast",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 8,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "pescatarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 eggs",
+      "4 slices rye bread",
+      "2 tbsp cream cheese",
+      "100g smoked salmon",
+      "1/2 cucumber, thinly sliced",
+      "2 tbsp chopped dill",
+      "1 tsp capers",
+      "1 lemon, cut into wedges"
+     ]
+    }
+   ],
+   "steps": [
+    "Lower the eggs into boiling water and cook for 7 minutes, until the whites are set and the yolks are jammy. Cool in cold water, then peel and halve.",
+    "Spread the rye with cream cheese and layer on the cucumber and salmon.",
+    "Top with the egg halves, dill and capers and serve with lemon."
+   ],
+   "notes": [
+    "Food safety: smoked salmon is ready to eat but keep it chilled until serving. Cook the eggs a further 2 minutes if serving anyone vulnerable."
+   ],
+   "nutrition": {
+    "kcal": 365,
+    "proteinG": 25,
+    "carbsG": 28,
+    "fatG": 17,
+    "fibreG": 4,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "creamy-nordic-porridge-with-grated-apple",
+   "title": "Creamy Nordic Porridge with Grated Apple",
+   "summary": "Creamy oats with grated apple, cinnamon and a knob of butter, in the Nordic style.",
+   "cuisine": "scandinavian",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": true,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup rolled oats",
+      "2 cups milk",
+      "1 cup water",
+      "1 apple, grated",
+      "1 tsp ground cinnamon",
+      "Pinch of salt",
+      "1 tbsp butter",
+      "1 tbsp maple syrup"
+     ]
+    }
+   ],
+   "steps": [
+    "Combine the oats, milk, water, apple, cinnamon and salt in a saucepan over medium heat.",
+    "Bring to a gentle simmer and cook for 8 to 10 minutes, stirring often, until thick and creamy.",
+    "Spoon into bowls and top with the butter and maple syrup."
+   ],
+   "notes": [
+    "Make it no-dairy with oat milk and coconut oil in place of butter."
+   ],
+   "nutrition": {
+    "kcal": 404,
+    "proteinG": 12,
+    "carbsG": 62,
+    "fatG": 12,
+    "fibreG": 7,
+    "sodiumMg": 190
+   }
+  },
+  {
+   "id": "mealie-pap-with-tomato-and-onion-relish",
+   "title": "Pap with Tomato and Onion Relish",
+   "summary": "Soft maize porridge served with a spiced tomato and onion relish, a South African staple.",
+   "cuisine": "south-african",
+   "mealTypes": [
+    "breakfast",
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup polenta",
+      "3 cups water",
+      "1 tsp salt",
+      "1 tbsp neutral oil",
+      "1 brown onion, sliced",
+      "2 garlic cloves, chopped",
+      "1 tsp curry powder",
+      "4 tomatoes, chopped",
+      "1 green chilli, chopped",
+      "1 tsp sugar"
+     ]
+    }
+   ],
+   "steps": [
+    "Bring the water and salt to the boil. Whisk in the polenta in a thin stream, then reduce to low and cook for 20 minutes, stirring often, until thick and pulling away from the pan.",
+    "Meanwhile heat the oil in a frying pan and cook the onion for 6 minutes, until soft.",
+    "Add the garlic, curry powder and chilli for 1 minute, then the tomatoes and sugar. Simmer 10 minutes, until jammy.",
+    "Spoon the pap into bowls and top with the relish."
+   ],
+   "notes": [
+    "Pap is vegan and gluten-free. Serve it with grilled meat for a braai-style meal."
+   ],
+   "nutrition": {
+    "kcal": 257,
+    "proteinG": 5,
+    "carbsG": 48,
+    "fatG": 5,
+    "fibreG": 4,
+    "sodiumMg": 620
+   }
+  },
+  {
+   "id": "baked-curried-mince-with-egg-custard",
+   "title": "Baked Curried Mince with Egg Custard",
+   "summary": "A baked, mildly curried beef mince dish with apricot jam, raisins and a savoury egg custard topping.",
+   "cuisine": "south-african",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 45,
+   "servings": 6,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "1 slice white bread",
+      "1 cup milk",
+      "1 tbsp neutral oil",
+      "1 brown onion, diced",
+      "2 garlic cloves, crushed",
+      "750g beef mince",
+      "1 tbsp curry powder",
+      "1 tsp ground turmeric",
+      "2 tbsp apricot jam",
+      "1/3 cup raisins",
+      "1 tbsp lemon juice",
+      "2 eggs",
+      "3 bay leaf",
+      "Steamed white rice, to serve"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 180°C (160°C fan). Soak the bread in half the milk.",
+    "Heat the oil in a large frying pan and cook the onion for 6 minutes, until soft. Add the garlic, curry powder and turmeric for 1 minute.",
+    "Add the mince and cook for 8 minutes, breaking it up, until browned. Squeeze the bread and stir it in with the jam, raisins, lemon juice and 1 tsp salt.",
+    "Press into a baking dish. Whisk the eggs with the remaining milk and pour over, then lay the bay leaves on top.",
+    "Bake for 30 minutes, until the custard is set and golden. Serve with rice."
+   ],
+   "notes": [
+    "Food safety: the mince must reach 75°C throughout. The custard should be firm, not wobbly."
+   ],
+   "nutrition": {
+    "kcal": 388,
+    "proteinG": 28,
+    "carbsG": 24,
+    "fatG": 20,
+    "fibreG": 2,
+    "sodiumMg": 560
+   }
+  },
+  {
+   "id": "black-eyed-bean-akara-fritters",
+   "title": "Black-Eyed Bean Akara Fritters",
+   "summary": "Crisp West African bean fritters spiced with chilli and onion, with a fresh tomato dip.",
+   "cuisine": "west-african",
+   "mealTypes": [
+    "snack",
+    "breakfast"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g tinned black-eyed beans, drained",
+      "1 small brown onion, roughly chopped",
+      "1 scotch bonnet chilli, deseeded",
+      "2 tbsp plain flour",
+      "1/2 tsp salt",
+      "Neutral oil, for shallow frying"
+     ]
+    },
+    {
+     "section": "Dip",
+     "items": [
+      "2 tomatoes, diced",
+      "1/2 red onion, finely diced",
+      "1 tbsp lime juice"
+     ]
+    }
+   ],
+   "steps": [
+    "Blitz the beans, onion, chilli, flour and salt in a food processor until a thick, slightly coarse batter forms.",
+    "Heat 1cm of oil in a frying pan over medium-high heat until a drop of batter sizzles at once.",
+    "Spoon in tablespoons of batter and fry for 2 to 3 minutes each side, until deep golden and crisp. Drain on paper towel.",
+    "Mix the dip ingredients with a pinch of salt and serve alongside."
+   ],
+   "notes": [
+    "Vegan and dairy-free. The chilli is hot, so use less if you prefer."
+   ],
+   "nutrition": {
+    "kcal": 180,
+    "proteinG": 7,
+    "carbsG": 23,
+    "fatG": 7,
+    "fibreG": 5,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "vegan-jollof-rice-with-fried-plantain",
+   "title": "Vegan Jollof Rice with Fried Plantain",
+   "summary": "Smoky, spicy tomato rice in the West African style, served with golden fried plantain.",
+   "cuisine": "west-african",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp neutral oil",
+      "1 brown onion, diced",
+      "1 red capsicum, diced",
+      "1 scotch bonnet chilli, pricked once",
+      "3 tbsp tomato paste",
+      "400g tin diced tomatoes",
+      "2 tsp curry powder",
+      "1 tsp dried thyme",
+      "1 tsp smoked paprika",
+      "2 cups basmati rice, rinsed",
+      "3 cups vegetable stock",
+      "2 ripe plantains, sliced on an angle",
+      "Neutral oil, for frying"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil in a large pot and cook the onion and capsicum for 6 minutes, until soft. Add the tomato paste and fry 3 minutes, until it darkens.",
+    "Add the tinned tomatoes, curry powder, thyme and paprika and simmer 8 minutes, until thick and the oil separates at the edges.",
+    "Stir in the rice, stock, chilli and 1 tsp salt. Bring to a simmer, cover tightly and cook on the lowest heat for 20 minutes, until the rice is tender and the liquid is gone.",
+    "Shallow-fry the plantain in oil over medium heat for 2 minutes each side, until deep golden. Remove the chilli and fluff the rice.",
+    "Serve the jollof topped with plantain."
+   ],
+   "notes": [
+    "Leave the chilli whole for flavour without much heat."
+   ],
+   "nutrition": {
+    "kcal": 510,
+    "proteinG": 9,
+    "carbsG": 96,
+    "fatG": 10,
+    "fibreG": 6,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "groundnut-stew-with-sweet-potato-and-greens",
+   "title": "Groundnut Stew with Sweet Potato and Greens",
+   "summary": "A rich, gently spiced peanut stew with sweet potato, chickpeas and spinach.",
+   "cuisine": "west-african",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 tbsp neutral oil",
+      "1 brown onion, diced",
+      "3 garlic cloves, crushed",
+      "2 tbsp grated ginger",
+      "1 tsp ground cumin",
+      "1 tsp ground coriander",
+      "1/2 tsp cayenne pepper",
+      "400g tin diced tomatoes",
+      "1/3 cup peanut butter",
+      "500ml vegetable stock",
+      "2 sweet potatoes, cut into 2cm cubes",
+      "400g tin chickpeas, drained",
+      "150g baby spinach",
+      "Steamed rice, to serve"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil in a large pot and cook the onion for 6 minutes, until soft. Add the garlic, ginger and spices for 1 minute, until fragrant.",
+    "Stir in the tomatoes, peanut butter and stock until the peanut butter dissolves.",
+    "Add the sweet potato and chickpeas, cover and simmer for 20 minutes, until the sweet potato is tender.",
+    "Stir in the spinach until wilted. Season to taste and serve with rice."
+   ],
+   "notes": [
+    "Check the peanut butter label for added ingredients if you need it vegan or gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 417,
+    "proteinG": 14,
+    "carbsG": 52,
+    "fatG": 17,
+    "fibreG": 10,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "allspice-scotch-bonnet-grilled-chicken-thighs",
+   "title": "Allspice and Scotch Bonnet Grilled Chicken Thighs",
+   "summary": "Fiery, allspice-heavy chicken thighs grilled until charred and sticky, Jamaican style.",
+   "cuisine": "caribbean",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.2kg bone-in chicken thigh",
+      "4 spring onions, roughly chopped",
+      "1 scotch bonnet chilli, deseeded",
+      "4 garlic cloves",
+      "1 tbsp thyme leaves",
+      "2 tsp allspice",
+      "1 tsp black pepper",
+      "3 tbsp soy sauce",
+      "2 tbsp lime juice",
+      "1 tbsp brown sugar",
+      "1 tbsp neutral oil",
+      "Steamed jasmine rice, to serve"
+     ]
+    }
+   ],
+   "steps": [
+    "Blitz everything except the chicken and rice into a rough paste. Rub it over the chicken, working it under the skin, then cover and refrigerate for at least 4 hours.",
+    "Heat the oven to 220°C (200°C fan). Place the chicken skin side up on a rack over a tray.",
+    "Roast for 30 to 35 minutes, until the skin is deeply browned and charred in places and the juices run clear.",
+    "Rest 5 minutes and serve with rice and peas."
+   ],
+   "notes": [
+    "Food safety: cook the chicken to 75°C at the thickest part, with no pink near the bone.",
+    "Plus 4 hours marinating. Use gloves when handling scotch bonnet."
+   ],
+   "nutrition": {
+    "kcal": 542,
+    "proteinG": 49,
+    "carbsG": 5,
+    "fatG": 36,
+    "fibreG": 1,
+    "sodiumMg": 1180
+   }
+  },
+  {
+   "id": "callaloo-style-greens-with-coconut",
+   "title": "Callaloo-Style Greens with Coconut",
+   "summary": "Silky greens simmered with coconut milk, okra, thyme and a little scotch bonnet.",
+   "cuisine": "caribbean",
+   "mealTypes": [
+    "dinner",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 tbsp coconut oil",
+      "1 brown onion, diced",
+      "3 garlic cloves, sliced",
+      "1 sprig thyme",
+      "400ml coconut milk",
+      "200ml water",
+      "300g okra, sliced",
+      "500g English spinach, chopped",
+      "1/2 scotch bonnet chilli, pricked",
+      "1 tsp salt",
+      "Steamed rice, to serve"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil in a wide pot over medium heat. Cook the onion and garlic for 5 minutes, until soft.",
+    "Add the thyme, coconut milk, water, okra and chilli and simmer for 8 minutes, until the okra is tender.",
+    "Stir in the spinach and salt and cook for 5 minutes, until the greens collapse and the sauce is thick. Remove the chilli."
+   ],
+   "notes": [
+    "Vegan and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 444,
+    "proteinG": 9,
+    "carbsG": 21,
+    "fatG": 36,
+    "fibreG": 6,
+    "sodiumMg": 590
+   }
+  },
+  {
+   "id": "coconut-rice-with-kidney-beans-and-thyme",
+   "title": "Coconut Rice with Kidney Beans and Thyme",
+   "summary": "Coconut rice cooked with kidney beans, thyme, allspice and spring onion.",
+   "cuisine": "caribbean",
+   "mealTypes": [
+    "dinner",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 tbsp coconut oil",
+      "4 spring onions, sliced",
+      "2 garlic cloves, crushed",
+      "2 sprigs thyme",
+      "1 tsp allspice",
+      "2 cups jasmine rice, rinsed",
+      "400ml coconut milk",
+      "400g tin kidney beans with liquid",
+      "1 1/2 cups water",
+      "1 tsp salt",
+      "1 scotch bonnet chilli, whole"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil in a pot and cook the spring onion and garlic for 2 minutes, until fragrant. Add the thyme and allspice.",
+    "Stir in the rice, coconut milk, beans and their liquid, water, salt and the whole chilli.",
+    "Bring to the boil, cover and cook on the lowest heat for 20 minutes, until the rice is tender and all the liquid is absorbed.",
+    "Rest 5 minutes, remove the chilli and thyme stalks and fluff with a fork."
+   ],
+   "notes": [
+    "Vegan and gluten-free. A classic side for jerk chicken."
+   ],
+   "nutrition": {
+    "kcal": 513,
+    "proteinG": 11,
+    "carbsG": 79,
+    "fatG": 17,
+    "fibreG": 6,
+    "sodiumMg": 560
+   }
+  },
+  {
+   "id": "fijian-kokoda-fish-in-coconut-and-lime",
+   "title": "Fijian Kokoda (Fish Cured in Lime and Coconut)",
+   "summary": "Raw fish cured in lime juice, tossed with coconut cream, tomato, cucumber and chilli.",
+   "cuisine": "pacific-islands",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 0,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g white fish fillet, very fresh, cut into 2cm cubes",
+      "1/2 cup lime juice",
+      "1/2 tsp salt",
+      "1 small red onion, finely diced",
+      "2 tomatoes, deseeded and diced",
+      "1 cucumber, diced",
+      "1 red chilli, finely chopped",
+      "3/4 cup coconut cream",
+      "2 tbsp chopped coriander"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the fish with the lime juice and salt in a glass bowl. Cover and refrigerate for 30 minutes, until the fish turns opaque and white throughout.",
+    "Drain off most of the lime juice. Stir in the onion, tomato, cucumber and chilli.",
+    "Fold through the coconut cream and coriander, check the seasoning and serve cold in bowls."
+   ],
+   "notes": [
+    "Food safety: use very fresh fish from a trusted fishmonger, keep it cold, and eat it the same day. Lime cures the surface but does not make raw fish safe for pregnant women, older people or anyone immunocompromised.",
+    "Plus 30 minutes curing."
+   ],
+   "nutrition": {
+    "kcal": 281,
+    "proteinG": 24,
+    "carbsG": 8,
+    "fatG": 17,
+    "fibreG": 2,
+    "sodiumMg": 380
+   }
+  },
+  {
+   "id": "baked-sweet-potato-with-coconut-and-spinach",
+   "title": "Coconut-Baked Sweet Potato with Spinach",
+   "summary": "Tender sweet potato wedges baked in coconut cream with wilted spinach, a Pacific-style side or main.",
+   "cuisine": "pacific-islands",
+   "mealTypes": [
+    "dinner",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "3 sweet potatoes, peeled and cut into 3cm chunks",
+      "1 brown onion, thinly sliced",
+      "200g baby spinach",
+      "1 cup coconut cream",
+      "1 tsp salt",
+      "1 tbsp lime juice",
+      "1 red chilli, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Spread the sweet potato and onion in a baking dish.",
+    "Pour over the coconut cream, add the salt and cover with foil. Bake for 30 minutes, until the sweet potato is just tender.",
+    "Fold in the spinach, return uncovered for 10 minutes, until the spinach has wilted and the top is lightly golden.",
+    "Finish with lime juice and chilli."
+   ],
+   "notes": [
+    "Vegan and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 327,
+    "proteinG": 4,
+    "carbsG": 44,
+    "fatG": 15,
+    "fibreG": 7,
+    "sodiumMg": 560
+   }
+  },
+  {
+   "id": "hawaiian-style-tuna-poke-bowl",
+   "title": "Hawaiian-Style Tuna Poke Bowl",
+   "summary": "Cubes of raw tuna dressed in soy and sesame over rice with avocado and cucumber.",
+   "cuisine": "pacific-islands",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 0,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g sashimi-grade tuna, cut into 2cm cubes",
+      "2 tbsp soy sauce (use tamari for no-gluten)",
+      "1 tbsp sesame oil",
+      "1 tsp rice vinegar",
+      "2 spring onions, sliced",
+      "2 cups cooked sushi rice",
+      "1 avocado, sliced",
+      "1 cucumber, sliced",
+      "1 sheet nori, shredded",
+      "1 tsp sesame seed"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the tuna with the soy, sesame oil, vinegar and spring onion. Cover and chill until cold, about 10 minutes.",
+    "Divide the warm rice between two bowls.",
+    "Top with the tuna, avocado, cucumber and nori and scatter with sesame seeds."
+   ],
+   "notes": [
+    "Food safety: only use sashimi-grade fish, keep it below 4°C and look for flesh that is firm and glossy, not opaque or dull; and eat it the same day. If you prefer, sear the tuna until opaque on the outside. Not suitable for pregnant women or anyone immunocompromised."
+   ],
+   "nutrition": {
+    "kcal": 607,
+    "proteinG": 34,
+    "carbsG": 65,
+    "fatG": 23,
+    "fibreG": 4,
+    "sodiumMg": 1100
+   }
+  },
+  {
+   "id": "sukuma-wiki-kenyan-braised-kale",
+   "title": "Sukuma Wiki (Kenyan Braised Kale)",
+   "summary": "Kale braised with onion and tomato, a humble everyday Kenyan side.",
+   "cuisine": "east-african",
+   "mealTypes": [
+    "dinner",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp neutral oil",
+      "1 brown onion, sliced",
+      "3 garlic cloves, crushed",
+      "2 tomatoes, chopped",
+      "1 tsp ground cumin",
+      "1 bunch kale, stems removed, leaves shredded",
+      "1/2 cup water",
+      "1/2 tsp salt",
+      "1 lemon, cut into wedges"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil in a wide pot and cook the onion for 6 minutes, until golden.",
+    "Add the garlic and cumin for 1 minute, then the tomatoes. Cook 4 minutes, until they break down into a sauce.",
+    "Add the kale, water and salt. Cover and cook 8 minutes, stirring now and then, until the kale is silky and tender.",
+    "Serve hot, with the lemon wedges squeezed over, until the kale is nicely glossy."
+   ],
+   "notes": [
+    "Traditionally eaten with ugali or rice. Vegan and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 103,
+    "proteinG": 3,
+    "carbsG": 9,
+    "fatG": 6,
+    "fibreG": 3,
+    "sodiumMg": 330
+   }
+  },
+  {
+   "id": "swahili-coconut-fish-curry",
+   "title": "Swahili Coconut Fish Curry",
+   "summary": "Chunks of white fish simmered in a tangy, spiced tomato and coconut sauce.",
+   "cuisine": "east-african",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp neutral oil",
+      "1 brown onion, diced",
+      "3 garlic cloves, crushed",
+      "1 tbsp grated ginger",
+      "1 tbsp curry powder",
+      "1 tsp ground turmeric",
+      "2 tomatoes, chopped",
+      "1 tsp tamarind paste",
+      "400ml coconut milk",
+      "600g white fish fillet, cut into 4cm pieces",
+      "2 tbsp chopped coriander",
+      "Steamed rice, to serve"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil in a wide pan and cook the onion for 6 minutes, until golden. Add the garlic, ginger, curry powder and turmeric for 1 minute.",
+    "Add the tomatoes, tamarind and coconut milk. Simmer for 8 minutes, until slightly thickened.",
+    "Slide in the fish and simmer gently for 5 minutes, until opaque and flaking easily.",
+    "Scatter with coriander and serve over rice."
+   ],
+   "notes": [
+    "Food safety: the fish is cooked when opaque all the way through and it flakes easily (63°C)."
+   ],
+   "nutrition": {
+    "kcal": 522,
+    "proteinG": 43,
+    "carbsG": 11,
+    "fatG": 34,
+    "fibreG": 2,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "east-african-chicken-pilau",
+   "title": "East African Chicken Pilau",
+   "summary": "Fragrant rice cooked with chicken thighs, cumin, cardamom, cinnamon and caramelised onion.",
+   "cuisine": "east-african",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 50,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "3 tbsp neutral oil",
+      "3 brown onion, thinly sliced",
+      "6 chicken thigh, cut into chunks",
+      "4 garlic cloves, crushed",
+      "1 tbsp grated ginger",
+      "1 tbsp cumin seed",
+      "6 cardamom pod",
+      "1 cinnamon stick",
+      "1/4 tsp ground cloves",
+      "2 tomatoes, chopped",
+      "2 cups basmati rice, rinsed",
+      "3 cups chicken stock",
+      "1 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil in a large heavy pot and cook the onion over medium heat for 15 minutes, stirring often, until deep golden brown.",
+    "Add the chicken and brown for 5 minutes. Stir in the garlic, ginger and whole spices for 1 minute.",
+    "Add the tomatoes and cook 3 minutes, then stir in the rice, stock and salt.",
+    "Bring to a simmer, cover tightly and cook on the lowest heat for 20 minutes, until the rice is tender and the chicken is cooked through.",
+    "Rest 5 minutes, then fluff and serve."
+   ],
+   "notes": [
+    "Food safety: the chicken must reach 75°C and have no pink inside."
+   ],
+   "nutrition": {
+    "kcal": 486,
+    "proteinG": 28,
+    "carbsG": 62,
+    "fatG": 14,
+    "fibreG": 3,
+    "sodiumMg": 820
+   }
+  },
+  {
+   "id": "mandazi-east-african-doughnuts",
+   "title": "Mandazi (East African Doughnuts)",
+   "summary": "Lightly sweet, cardamom-scented fried dough triangles made with coconut milk.",
+   "cuisine": "east-african",
+   "mealTypes": [
+    "snack",
+    "breakfast"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 15,
+   "servings": 8,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "3 cups plain flour",
+      "1/3 cup caster sugar",
+      "2 tsp baking powder",
+      "1 tsp ground cardamom",
+      "1/4 tsp salt",
+      "1 egg",
+      "3/4 cup coconut milk",
+      "Neutral oil, for deep frying"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the flour, sugar, baking powder, cardamom and salt. Beat the egg with the coconut milk and stir into the flour to a soft dough.",
+    "Knead briefly on a floured surface until smooth. Rest 15 minutes, then roll to 1cm thick and cut into triangles.",
+    "Heat 5cm of oil to 170°C in a deep pot. Fry a few at a time for 2 to 3 minutes, turning once, until puffed and deep golden.",
+    "Drain on paper towel and serve warm."
+   ],
+   "notes": [
+    "Plus 15 minutes resting. Best eaten the day they are made."
+   ],
+   "nutrition": {
+    "kcal": 331,
+    "proteinG": 6,
+    "carbsG": 52,
+    "fatG": 11,
+    "fibreG": 2,
+    "sodiumMg": 220
+   }
+  },
+  {
+   "id": "corn-and-zucchini-fritters-with-avocado",
+   "title": "Corn and Zucchini Fritters with Smashed Avocado",
+   "summary": "Crisp golden fritters of corn, zucchini and herbs, served with lime smashed avocado.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "breakfast",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 zucchini, grated",
+      "1 tsp salt",
+      "2 corn cob, kernels removed",
+      "3 spring onions, sliced",
+      "1/2 cup plain flour",
+      "1 tsp baking powder",
+      "2 eggs",
+      "2 tbsp chopped coriander",
+      "2 tbsp neutral oil",
+      "2 avocado",
+      "1 lime, juiced",
+      "Chilli flakes, to serve"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the zucchini with the salt, rest 10 minutes, then squeeze out as much liquid as you can.",
+    "Mix the zucchini, corn, spring onion, flour, baking powder, eggs and coriander with pepper.",
+    "Heat the oil in a frying pan over medium heat. Spoon in quarter-cup mounds and flatten slightly. Cook 3 minutes each side, until golden and cooked through in the middle.",
+    "Mash the avocado with the lime juice and a pinch of salt, spoon over the fritters and finish with chilli."
+   ],
+   "notes": [
+    "Food safety: cook the fritters until the centre is set, not wet."
+   ],
+   "nutrition": {
+    "kcal": 382,
+    "proteinG": 12,
+    "carbsG": 34,
+    "fatG": 22,
+    "fibreG": 8,
+    "sodiumMg": 650
+   }
+  },
+  {
+   "id": "smashed-avocado-feta-sourdough",
+   "title": "Smashed Avocado with Feta, Lemon and Sesame",
+   "summary": "Chunky smashed avocado on toasted sourdough with feta, lemon, chilli and sesame.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 3,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 avocado",
+      "1 lemon, juiced and zested",
+      "4 slices sourdough",
+      "60g feta, crumbled",
+      "1 tsp sesame seed",
+      "1 pinch chilli flakes",
+      "1 tbsp olive oil",
+      "2 tbsp chopped mint"
+     ]
+    }
+   ],
+   "steps": [
+    "Toast the sourdough until golden and crisp.",
+    "Smash the avocado with the lemon juice and a pinch of salt, leaving it chunky.",
+    "Pile onto the toast until it is generously covered, then top with feta, lemon zest, sesame, chilli and mint.",
+    "Finish with a drizzle of olive oil."
+   ],
+   "notes": [
+    "Vegetarian, and use gluten-free bread to make it no-gluten."
+   ],
+   "nutrition": {
+    "kcal": 472,
+    "proteinG": 12,
+    "carbsG": 34,
+    "fatG": 32,
+    "fibreG": 12,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "silky-rice-porridge-chicken-ginger-spring-onion",
+   "title": "Silky Rice Porridge with Chicken, Ginger and Spring Onion",
+   "summary": "Silky rice porridge simmered with chicken and ginger, topped with spring onion and sesame oil.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "breakfast",
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 60,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup jasmine rice, rinsed",
+      "8 cups chicken stock",
+      "4 slices ginger",
+      "2 chicken thigh",
+      "1 tbsp soy sauce (tamari for no-gluten)",
+      "4 spring onions, sliced",
+      "1 tsp sesame oil",
+      "1 tsp white pepper",
+      "Fried shallots, to serve"
+     ]
+    }
+   ],
+   "steps": [
+    "Put the rice, stock and ginger in a large pot and bring to the boil. Add the chicken, reduce the heat to low and cook partly covered for 50 minutes, stirring now and then, until the rice breaks down into a thick porridge.",
+    "Lift out the chicken, shred it with two forks and return it to the pot, discarding the ginger.",
+    "Stir in the soy sauce and pepper until the congee is hot again, adding water if it is too thick.",
+    "Ladle into bowls and top with spring onion, sesame oil and fried shallots."
+   ],
+   "notes": [
+    "Food safety: the chicken must reach 75°C. Thighs simmered for 50 minutes are well past this."
+   ],
+   "nutrition": {
+    "kcal": 286,
+    "proteinG": 20,
+    "carbsG": 38,
+    "fatG": 6,
+    "fibreG": 1,
+    "sodiumMg": 1050
+   }
+  },
+  {
+   "id": "chinese-steamed-egg-with-soy-and-spring-onion",
+   "title": "Chinese Steamed Egg Custard with Soy and Spring Onion",
+   "summary": "A silky, savoury egg custard steamed until just set, dressed with soy and sesame oil.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "breakfast",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 12,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 eggs",
+      "1 cup warm chicken stock",
+      "1/4 tsp salt",
+      "1 tbsp soy sauce (tamari for no-gluten)",
+      "1 tsp sesame oil",
+      "2 spring onions, finely sliced",
+      "Steamed rice, to serve"
+     ]
+    }
+   ],
+   "steps": [
+    "Whisk the eggs, warm stock and salt gently, then strain through a sieve into a shallow heatproof dish. Skim off any bubbles.",
+    "Cover the dish with foil and steam over simmering water on medium-low heat for 12 minutes, until the custard is just set and wobbles as one piece.",
+    "Drizzle with the soy and sesame oil and scatter with spring onion. Serve with rice."
+   ],
+   "notes": [
+    "Food safety: the custard should be set through with no liquid egg in the middle."
+   ],
+   "nutrition": {
+    "kcal": 167,
+    "proteinG": 14,
+    "carbsG": 3,
+    "fatG": 11,
+    "fibreG": 0,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "pho-ga-with-charred-onion-and-rice-noodles",
+   "title": "Pho Ga with Charred Onion and Rice Noodles",
+   "summary": "A light, fragrant Vietnamese chicken noodle soup with ginger, star anise and fresh herbs.",
+   "cuisine": "vietnamese",
+   "mealTypes": [
+    "breakfast",
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 50,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 whole chicken",
+      "1 brown onion, halved",
+      "5cm piece ginger, sliced",
+      "2 star anise",
+      "1 cinnamon stick",
+      "2 tbsp fish sauce",
+      "1 tsp sugar",
+      "200g dried rice noodle",
+      "2 cups bean sprout",
+      "1 handful Thai basil",
+      "1 handful coriander",
+      "2 spring onions, sliced",
+      "2 limes, cut into wedges",
+      "1 red chilli, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Put the chicken, onion, ginger, star anise and cinnamon in a large pot, cover with 3 litres of water and bring to a gentle simmer. Cook for 40 minutes, skimming the surface, until the chicken is cooked through.",
+    "Lift out the chicken, then strain the broth. Season with the fish sauce, sugar and 1 tsp salt. Shred the meat off the bones.",
+    "Soak the noodles in boiling water until tender, about 5 minutes, then drain and divide between bowls.",
+    "Top with chicken and ladle over the piping hot broth. Serve with bean sprouts, herbs, spring onion, lime and chilli."
+   ],
+   "notes": [
+    "Food safety: the thickest part of the thigh must reach 75°C and the juices must run clear."
+   ],
+   "nutrition": {
+    "kcal": 601,
+    "proteinG": 61,
+    "carbsG": 45,
+    "fatG": 19,
+    "fibreG": 3,
+    "sodiumMg": 1200
+   }
+  },
+  {
+   "id": "banh-mi-op-la-vietnamese-eggs-in-a-pan",
+   "title": "Banh Mi Op La (Vietnamese Eggs in a Pan)",
+   "summary": "Fried eggs with pate, tomato and pickled carrot, served with crusty bread for dipping.",
+   "cuisine": "vietnamese",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 8,
+   "servings": 2,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "1 tbsp neutral oil",
+      "4 eggs",
+      "1 tomato, sliced",
+      "1 tbsp soy sauce (tamari for no-gluten)",
+      "2 tbsp pâté",
+      "1 spring onion, sliced",
+      "1 carrot, grated",
+      "1 tsp rice vinegar",
+      "1 pinch sugar",
+      "1 baguette, warmed",
+      "1 tsp sriracha"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the carrot with the vinegar, sugar and a pinch of salt and set aside for 10 minutes.",
+    "Heat the oil in a non-stick frying pan over medium heat. Crack in the eggs and add the tomato slices around them.",
+    "Cook for 3 to 4 minutes, until the whites are set and the yolks are still soft. Splash the soy sauce over.",
+    "Serve in the pan with the pâté, carrot, spring onion, sriracha and the warm baguette."
+   ],
+   "notes": [
+    "Food safety: cook the whites until fully set."
+   ],
+   "nutrition": {
+    "kcal": 463,
+    "proteinG": 21,
+    "carbsG": 51,
+    "fatG": 19,
+    "fibreG": 2,
+    "sodiumMg": 1180
+   }
+  },
+  {
+   "id": "gochujang-kimchi-rice-bowl-with-runny-egg",
+   "title": "Gochujang Kimchi Rice Bowl with Runny Egg",
+   "summary": "Punchy fried rice with kimchi, gochujang and sesame oil, topped with a runny egg.",
+   "cuisine": "korean",
+   "mealTypes": [
+    "breakfast",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": true,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 tbsp neutral oil",
+      "1 cup kimchi, chopped",
+      "1 tbsp gochujang",
+      "3 cups cooked jasmine rice, cold",
+      "2 spring onions, sliced",
+      "1 tsp sesame oil",
+      "2 eggs",
+      "1 sheet nori, shredded",
+      "1 tsp sesame seed"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil in a large frying pan or wok over high heat. Fry the kimchi for 2 minutes, until it softens and smells sharp and savoury.",
+    "Stir in the gochujang, then the rice, breaking up any lumps. Stir-fry for 4 minutes, until steaming and slightly crisp in places.",
+    "Remove from the heat and stir through the spring onion and sesame oil.",
+    "Fry the eggs in a little oil until the whites are set and the yolks are runny. Serve the rice topped with the egg, nori and sesame seeds."
+   ],
+   "notes": [
+    "Food safety: cook the egg whites until set. Check the gochujang label if you need it gluten-free. Cool any leftover rice quickly and refrigerate it within 1 hour."
+   ],
+   "nutrition": {
+    "kcal": 552,
+    "proteinG": 18,
+    "carbsG": 80,
+    "fatG": 18,
+    "fibreG": 2,
+    "sodiumMg": 1180
+   }
+  },
+  {
+   "id": "korean-gyeran-jjim-steamed-egg",
+   "title": "Gyeran Jjim (Korean Steamed Egg)",
+   "summary": "A fluffy, bubbling steamed egg pot with a savoury, mild flavour, ready in under 15 minutes.",
+   "cuisine": "korean",
+   "mealTypes": [
+    "breakfast",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": true,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 eggs",
+      "3/4 cup dashi",
+      "1/2 tsp salt",
+      "1 tsp sesame oil",
+      "2 spring onions, finely sliced",
+      "1 tsp sesame seed"
+     ]
+    }
+   ],
+   "steps": [
+    "Whisk the eggs with the dashi and salt, then strain into a small heavy pot or earthenware bowl.",
+    "Cook over medium-low heat, stirring gently, for 3 minutes until the egg starts to set at the edges.",
+    "Cover with a lid, reduce the heat to the lowest setting and cook for 5 minutes, until the top is puffed and no longer wet.",
+    "Finish with sesame oil, spring onion and sesame seeds and serve at once."
+   ],
+   "notes": [
+    "Food safety: the egg should be completely set when you press the middle."
+   ],
+   "nutrition": {
+    "kcal": 214,
+    "proteinG": 18,
+    "carbsG": 4,
+    "fatG": 14,
+    "fibreG": 0,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "mexican-chilaquiles-verdes-with-eggs",
+   "title": "Chilaquiles with Salsa and Fried Eggs",
+   "summary": "Crisp corn chips simmered briefly in salsa, topped with eggs, sour cream and coriander.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 tbsp neutral oil",
+      "1 brown onion, diced",
+      "1 jalapeño, chopped",
+      "1 1/2 cups salsa",
+      "1 cup chicken stock",
+      "200g corn chip",
+      "4 eggs",
+      "1/2 cup sour cream",
+      "1/2 cup crumbled feta",
+      "1 handful coriander",
+      "1 lime, cut into wedges"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil in a large frying pan and cook the onion and jalapeño for 4 minutes, until soft.",
+    "Add the salsa and stock and simmer for 5 minutes, until slightly thickened.",
+    "Fold in the corn chips and cook for 1 to 2 minutes, until they soften slightly but still have some bite.",
+    "Make four wells, crack in the eggs, cover and cook for 3 minutes, until the whites are set and the yolks are runny.",
+    "Top with sour cream, feta and coriander and serve with lime."
+   ],
+   "notes": [
+    "Food safety: cook the egg whites until completely set."
+   ],
+   "nutrition": {
+    "kcal": 436,
+    "proteinG": 17,
+    "carbsG": 38,
+    "fatG": 24,
+    "fibreG": 4,
+    "sodiumMg": 1150
+   }
+  },
+  {
+   "id": "mexican-breakfast-tacos-with-black-beans",
+   "title": "Breakfast Tacos with Black Beans and Avocado",
+   "summary": "Soft corn tortillas filled with scrambled eggs, spiced black beans, avocado and salsa.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g tin black beans, drained",
+      "1 tsp ground cumin",
+      "1 tsp smoked paprika",
+      "1 tbsp neutral oil",
+      "6 eggs, beaten",
+      "8 corn tortilla",
+      "1 avocado, sliced",
+      "1/2 cup salsa",
+      "1 lime, cut into wedges",
+      "2 tbsp coriander leaves"
+     ]
+    }
+   ],
+   "steps": [
+    "Warm the beans in a small pan with the cumin, paprika and 1/4 cup water for 5 minutes, until hot and slightly thick. Mash a few for texture.",
+    "Heat the oil in a non-stick pan over medium-low heat. Add the eggs and stir gently for 2 to 3 minutes, until just set.",
+    "Char the tortillas directly over a gas flame or in a dry pan for 30 seconds each side, until lightly blistered.",
+    "Fill with beans and eggs, then top with avocado, salsa, coriander and a squeeze of lime."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until set with no liquid egg."
+   ],
+   "nutrition": {
+    "kcal": 382,
+    "proteinG": 17,
+    "carbsG": 38,
+    "fatG": 18,
+    "fibreG": 11,
+    "sodiumMg": 690
+   }
+  },
+  {
+   "id": "greek-yoghurt-bowl-with-honey-and-walnuts",
+   "title": "Greek Yoghurt with Honey, Walnuts and Orange",
+   "summary": "Thick yoghurt topped with honey, toasted walnuts, orange segments and cinnamon.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "breakfast",
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 3,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 cups Greek yoghurt",
+      "2 tbsp honey",
+      "1/3 cup walnuts, roughly chopped",
+      "1 orange, segmented",
+      "1/2 tsp ground cinnamon"
+     ]
+    }
+   ],
+   "steps": [
+    "Toast the walnuts in a dry frying pan for 3 minutes, until golden and fragrant.",
+    "Divide the yoghurt between two bowls and top with orange segments and walnuts.",
+    "Drizzle with honey and dust with cinnamon."
+   ],
+   "notes": [
+    "Vegetarian and no-gluten."
+   ],
+   "nutrition": {
+    "kcal": 428,
+    "proteinG": 24,
+    "carbsG": 38,
+    "fatG": 20,
+    "fibreG": 3,
+    "sodiumMg": 120
+   }
+  },
+  {
+   "id": "spanakopita-style-spinach-and-feta-breakfast-pie",
+   "title": "Spinach and Feta Breakfast Pie",
+   "summary": "A crisp filo pie packed with spinach, feta, herbs and egg, good hot or cold.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "breakfast",
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 40,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g English spinach, washed",
+      "1 tbsp olive oil",
+      "1 brown onion, diced",
+      "4 spring onions, sliced",
+      "200g feta, crumbled",
+      "1/2 cup ricotta",
+      "3 eggs, beaten",
+      "2 tbsp chopped dill",
+      "Pinch of nutmeg",
+      "8 sheets filo pastry",
+      "60g butter, melted"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 180°C (160°C fan). Wilt the spinach in a large pan for 3 minutes, cool, then squeeze out all the liquid and chop.",
+    "Cook the onion in the oil for 6 minutes, until soft. Combine with the spinach, spring onion, feta, ricotta, eggs, dill, nutmeg and pepper.",
+    "Brush a baking dish with butter and layer in half the filo, brushing every sheet with butter. Spread in the filling, then layer on the rest of the filo, buttering each sheet.",
+    "Score the top into squares and bake for 35 minutes, until deep golden and puffed. Rest 10 minutes before cutting."
+   ],
+   "notes": [
+    "Food safety: the filling should be set and hot in the middle (steaming, no liquid egg)."
+   ],
+   "nutrition": {
+    "kcal": 326,
+    "proteinG": 14,
+    "carbsG": 18,
+    "fatG": 22,
+    "fibreG": 3,
+    "sodiumMg": 620
+   }
+  },
+  {
+   "id": "pain-perdu-french-toast-with-berries",
+   "title": "Pain Perdu with Berries and Maple",
+   "summary": "Thick slices of brioche soaked in vanilla custard and pan-fried until golden, served with berries.",
+   "cuisine": "french",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "3 eggs",
+      "3/4 cup milk",
+      "1 tsp vanilla extract",
+      "1/2 tsp ground cinnamon",
+      "8 slices brioche",
+      "30g butter",
+      "1 1/2 cups frozen berries",
+      "2 tbsp maple syrup",
+      "2 tbsp icing sugar"
+     ]
+    }
+   ],
+   "steps": [
+    "Whisk the eggs, milk, vanilla and cinnamon in a shallow dish. Soak each brioche slice for 20 seconds per side.",
+    "Warm the berries and maple syrup in a small pan for 4 minutes, until juicy and softened.",
+    "Melt the butter in a large frying pan over medium heat. Fry the toast in batches for 2 to 3 minutes per side, until golden and cooked through in the middle.",
+    "Dust with icing sugar and serve with the berries."
+   ],
+   "notes": [
+    "Food safety: cook until the custard is set and no wet egg remains."
+   ],
+   "nutrition": {
+    "kcal": 442,
+    "proteinG": 14,
+    "carbsG": 56,
+    "fatG": 18,
+    "fibreG": 3,
+    "sodiumMg": 380
+   }
+  },
+  {
+   "id": "english-style-mushroom-and-tomato-breakfast",
+   "title": "Full Veggie Breakfast with Mushrooms and Beans",
+   "summary": "Roasted tomatoes and mushrooms with baked beans, fried eggs and toast, a meat-free English fry-up.",
+   "cuisine": "british",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 tomatoes, halved",
+      "200g button mushroom",
+      "1 tbsp olive oil",
+      "1 sprig thyme",
+      "200g baked beans",
+      "2 eggs",
+      "2 slices white bread",
+      "20g butter"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Put the tomatoes and mushrooms on a tray with the oil, thyme and salt and roast for 20 minutes, until the tomatoes collapse and the mushrooms are golden.",
+    "Warm the beans in a small pan until bubbling, about 5 minutes.",
+    "Fry the eggs in the butter until the whites are set and the yolks are soft. Toast the bread.",
+    "Plate everything together and eat while hot."
+   ],
+   "notes": [
+    "Food safety: the egg whites should be set."
+   ],
+   "nutrition": {
+    "kcal": 502,
+    "proteinG": 20,
+    "carbsG": 56,
+    "fatG": 22,
+    "fibreG": 12,
+    "sodiumMg": 1150
+   }
+  },
+  {
+   "id": "kedgeree-style-rice-with-smoked-fish-and-eggs",
+   "title": "Kedgeree with Smoked Salmon and Eggs",
+   "summary": "Gently curried rice folded with flaked fish, boiled egg, peas and parsley.",
+   "cuisine": "british",
+   "mealTypes": [
+    "breakfast",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "pescatarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 tbsp butter",
+      "1 brown onion, diced",
+      "1 tbsp curry powder",
+      "1 1/2 cups basmati rice",
+      "3 cups fish stock",
+      "200g smoked salmon",
+      "1/2 cup peas",
+      "4 eggs",
+      "1 lemon, juiced",
+      "1 handful parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Melt the butter in a pot and cook the onion for 5 minutes, until soft. Stir in the curry powder and rice for 1 minute.",
+    "Add the stock, cover and cook on low for 15 minutes, until the rice is tender and the stock is absorbed. Stir in the peas for the last 3 minutes.",
+    "Meanwhile boil the eggs for 8 minutes, until just firm, then cool, peel and quarter.",
+    "Fold the salmon, lemon juice and parsley through the rice, top with the eggs and serve."
+   ],
+   "notes": [
+    "Food safety: smoked salmon is ready to eat but should stay chilled until it goes in."
+   ],
+   "nutrition": {
+    "kcal": 444,
+    "proteinG": 24,
+    "carbsG": 60,
+    "fatG": 12,
+    "fibreG": 3,
+    "sodiumMg": 850
+   }
+  },
+  {
+   "id": "spanish-tortilla-de-patatas",
+   "title": "Spanish Potato Omelette (Tortilla de Patatas)",
+   "summary": "A thick, golden omelette of slowly cooked potato and onion, eaten warm or cold.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "breakfast",
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 35,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g waxy potato, peeled and thinly sliced",
+      "1 brown onion, thinly sliced",
+      "1/2 cup olive oil",
+      "6 eggs",
+      "1 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil in a 24cm non-stick frying pan over medium-low heat. Cook the potato and onion for 20 minutes, turning often, until completely tender but not coloured.",
+    "Drain the oil into a bowl (keep it). Beat the eggs with the salt, fold in the warm potatoes and rest 5 minutes.",
+    "Heat 1 tbsp of the reserved oil in the pan over medium heat, pour in the mixture and cook for 5 minutes, until the edges are set and the base is golden.",
+    "Slide the tortilla onto a plate, invert it back into the pan and cook another 4 minutes, until firm. Rest before slicing."
+   ],
+   "notes": [
+    "Food safety: the middle should be just set, with no raw egg. Cook another 2 minutes if in doubt."
+   ],
+   "nutrition": {
+    "kcal": 340,
+    "proteinG": 9,
+    "carbsG": 22,
+    "fatG": 24,
+    "fibreG": 2,
+    "sodiumMg": 440
+   }
+  },
+  {
+   "id": "turkish-menemen-eggs-with-peppers",
+   "title": "Menemen (Turkish Scrambled Eggs with Peppers)",
+   "summary": "Soft eggs cooked with sweet peppers, tomato and chilli flakes, eaten with bread.",
+   "cuisine": "turkish",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 15,
+   "servings": 2,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp olive oil",
+      "1 green capsicum, diced",
+      "2 green chilli, sliced",
+      "3 tomatoes, diced",
+      "1 tsp chilli flakes",
+      "4 eggs",
+      "1/2 tsp salt",
+      "Crusty bread, to serve"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil in a frying pan and cook the capsicum and chilli for 5 minutes, until soft.",
+    "Add the tomatoes and chilli flakes and simmer for 6 minutes, until reduced and jammy.",
+    "Crack in the eggs, season and stir gently for 2 to 3 minutes, until softly set but not dry.",
+    "Serve straight from the pan with bread."
+   ],
+   "notes": [
+    "Food safety: cook until the eggs are fully set."
+   ],
+   "nutrition": {
+    "kcal": 314,
+    "proteinG": 15,
+    "carbsG": 14,
+    "fatG": 22,
+    "fibreG": 3,
+    "sodiumMg": 650
+   }
+  },
+  {
+   "id": "turkish-cilbir-poached-eggs-with-yoghurt",
+   "title": "Cilbir (Turkish Eggs with Garlic Yoghurt)",
+   "summary": "Poached eggs on garlicky yoghurt, drizzled with chilli butter and dill.",
+   "cuisine": "turkish",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup Greek yoghurt",
+      "1 garlic clove, crushed",
+      "4 eggs",
+      "1 tbsp white vinegar",
+      "30g butter",
+      "1 tsp Aleppo pepper",
+      "1 tbsp dill, chopped",
+      "Crusty bread, to serve"
+     ]
+    }
+   ],
+   "steps": [
+    "Stir the yoghurt, garlic and a pinch of salt and let it come to room temperature.",
+    "Bring a deep pan of water to a gentle simmer with the vinegar. Swirl, slip in the eggs and poach for 3 minutes, until the whites are set and the yolks are runny. Lift out with a slotted spoon.",
+    "Melt the butter in a small pan until foaming, then stir in the Aleppo pepper.",
+    "Spread the yoghurt onto plates, top with eggs, drizzle with the chilli butter and scatter with dill. Serve with bread."
+   ],
+   "notes": [
+    "Food safety: the whites must be set. Cook longer if serving anyone vulnerable."
+   ],
+   "nutrition": {
+    "kcal": 300,
+    "proteinG": 22,
+    "carbsG": 8,
+    "fatG": 20,
+    "fibreG": 1,
+    "sodiumMg": 440
+   }
+  },
+  {
+   "id": "moroccan-baghrir-semolina-pancakes",
+   "title": "Baghrir (Moroccan Thousand-Hole Pancakes)",
+   "summary": "Spongy, one-sided semolina pancakes covered in tiny holes, drenched in honey butter.",
+   "cuisine": "north-african",
+   "mealTypes": [
+    "breakfast",
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup semolina",
+      "1/2 cup plain flour",
+      "2 tsp instant dried yeast",
+      "1 tsp baking powder",
+      "1 tsp sugar",
+      "1/2 tsp salt",
+      "2 cups warm water",
+      "50g butter, melted",
+      "2 tbsp honey"
+     ]
+    }
+   ],
+   "steps": [
+    "Blend the semolina, flour, yeast, baking powder, sugar, salt and water for 2 minutes, until smooth. Rest 20 minutes, until bubbly.",
+    "Heat a non-stick pan over medium heat, with no oil. Pour in a small ladle of batter and cook for 2 minutes, until the top is covered in holes and completely dry. Do not flip.",
+    "Stack the cooked pancakes on a plate as you go.",
+    "Mix the butter and honey and spoon it over the warm pancakes."
+   ],
+   "notes": [
+    "Plus 20 minutes resting."
+   ],
+   "nutrition": {
+    "kcal": 379,
+    "proteinG": 8,
+    "carbsG": 62,
+    "fatG": 11,
+    "fibreG": 2,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "hummus-toast-with-roasted-tomatoes-and-za-atar",
+   "title": "Hummus Toast with Roasted Tomatoes and Za'atar",
+   "summary": "Warm sourdough piled with hummus, blistered tomatoes, cucumber and za'atar.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "breakfast",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 15,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "250g cherry tomato",
+      "1 tbsp olive oil",
+      "4 slices sourdough",
+      "1/2 cup hummus",
+      "1/2 cucumber, sliced",
+      "2 tsp za'atar",
+      "1 tbsp lemon juice",
+      "1 handful mint leaves"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Toss the tomatoes in the oil with salt and roast for 12 minutes, until blistered and bursting.",
+    "Toast the sourdough until golden.",
+    "Spread with hummus and top with cucumber and the roasted tomatoes.",
+    "Dress with lemon juice and finish with za'atar and mint."
+   ],
+   "notes": [
+    "Vegan. Use gluten-free bread for no-gluten."
+   ],
+   "nutrition": {
+    "kcal": 386,
+    "proteinG": 12,
+    "carbsG": 44,
+    "fatG": 18,
+    "fibreG": 8,
+    "sodiumMg": 680
+   }
+  },
+  {
+   "id": "sweet-potato-and-black-bean-breakfast-hash",
+   "title": "Sweet Potato and Black Bean Breakfast Hash",
+   "summary": "Crisp sweet potato cubes with black beans, capsicum and eggs baked in the pan.",
+   "cuisine": "american",
+   "mealTypes": [
+    "breakfast",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp neutral oil",
+      "2 sweet potatoes, cut into 1cm cubes",
+      "1 red onion, diced",
+      "1 red capsicum, diced",
+      "1 tsp smoked paprika",
+      "1 tsp ground cumin",
+      "400g tin black beans, drained",
+      "4 eggs",
+      "2 spring onions, sliced",
+      "1 avocado, diced"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil in a large ovenproof frying pan over medium-high heat. Cook the sweet potato for 12 minutes, stirring now and then, until tender and browned.",
+    "Add the onion, capsicum, paprika and cumin and cook for 5 minutes, until soft.",
+    "Stir in the beans, make four wells and crack in the eggs. Cover and cook for 5 minutes, until the whites are set and the yolks are soft.",
+    "Top with spring onion and avocado."
+   ],
+   "notes": [
+    "Food safety: the egg whites should be set."
+   ],
+   "nutrition": {
+    "kcal": 388,
+    "proteinG": 15,
+    "carbsG": 46,
+    "fatG": 16,
+    "fibreG": 12,
+    "sodiumMg": 560
+   }
+  },
+  {
+   "id": "apple-peanut-butter-oat-pancakes",
+   "title": "Apple and Peanut Butter Oat Pancakes",
+   "summary": "Wholesome blender pancakes made with oats, grated apple and peanut butter.",
+   "cuisine": "american",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 12,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 apple, grated",
+      "1 1/2 cups rolled oats",
+      "2 eggs",
+      "1 cup milk",
+      "2 tbsp peanut butter",
+      "2 tsp baking powder",
+      "1 tsp ground cinnamon",
+      "1 tbsp neutral oil",
+      "1 tbsp maple syrup"
+     ]
+    }
+   ],
+   "steps": [
+    "Blend the apple, oats, eggs, milk, peanut butter, baking powder and cinnamon until smooth. Rest 5 minutes.",
+    "Heat a little oil in a non-stick pan over medium heat. Pour in 1/4 cup batter per pancake.",
+    "Cook for 2 minutes, until bubbles form and the edges look set, then flip and cook 1 to 2 minutes, until golden and cooked through.",
+    "Stack the pancakes on warm plates and serve with maple syrup."
+   ],
+   "notes": [
+    "Food safety: make sure the batter in the middle is cooked, not gluey."
+   ],
+   "nutrition": {
+    "kcal": 353,
+    "proteinG": 13,
+    "carbsG": 46,
+    "fatG": 13,
+    "fibreG": 5,
+    "sodiumMg": 330
+   }
+  }
+ ]
+}

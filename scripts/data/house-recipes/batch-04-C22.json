@@ -1,0 +1,1136 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "shakshuka-with-preserved-lemon-and-olives",
+      "title": "Shakshuka with Preserved Lemon and Olives",
+      "summary": "Eggs poached in a spiced tomato and capsicum sauce brightened with preserved lemon and green olives.",
+      "cuisine": "north-african",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp olive oil",
+            "1 brown onion, sliced",
+            "1 red capsicum, sliced",
+            "3 garlic cloves, sliced",
+            "1 tsp ground cumin",
+            "1 tsp sweet paprika",
+            "1 can crushed tomatoes (400g)",
+            "1/2 preserved lemon, rind finely chopped",
+            "60g green olives, pitted",
+            "4 eggs",
+            "1 small bunch coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion and capsicum in the oil for 8 minutes, until soft.",
+        "Add the garlic, cumin and paprika for 1 minute until fragrant.",
+        "Pour in the tomatoes, preserved lemon and olives and simmer for 10 minutes, until thick.",
+        "Make 4 wells and crack in the eggs, then cover and cook for 6 minutes, until the whites are set.",
+        "Scatter with coriander and serve from the pan."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set and the yolks are as firm as you are comfortable with; cook the yolks through for anyone vulnerable."
+      ],
+      "nutrition": {
+        "kcal": 220,
+        "proteinG": 11,
+        "carbsG": 15,
+        "fatG": 12,
+        "fibreG": 4,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "huevos-divorciados-divorced-eggs",
+      "title": "Huevos Divorciados Divorced Eggs",
+      "summary": "Two fried eggs on corn tortillas, one under red salsa and one under green, with beans between.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 corn tortillas",
+            "2 tbsp vegetable oil",
+            "4 eggs",
+            "150g black beans, cooked and mashed",
+            "120g red tomato salsa",
+            "120g salsa verde",
+            "30g feta",
+            "1 small bunch coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the beans in a small pan for 4 minutes, until hot.",
+        "Fry the tortillas in the oil for 30 seconds each side, until lightly crisp.",
+        "Fry the eggs in a little oil for 3 minutes, until the whites are set and the edges crisp.",
+        "Warm both salsas separately for 2 minutes, until steaming.",
+        "Top each tortilla with an egg, spoon red salsa on one side and green on the other, then add beans, feta and coriander."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set; cook the yolks through for anyone vulnerable."
+      ],
+      "nutrition": {
+        "kcal": 472,
+        "proteinG": 19,
+        "carbsG": 40,
+        "fatG": 24,
+        "fibreG": 10,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "oeufs-cocotte-with-spinach-and-cream",
+      "title": "Oeufs Cocotte with Spinach and Cream",
+      "summary": "Eggs baked in ramekins over creamed spinach until the whites are just set.",
+      "cuisine": "french",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g baby spinach",
+            "1 tbsp butter",
+            "1 garlic clove, crushed",
+            "120ml cream",
+            "4 eggs",
+            "pinch of nutmeg",
+            "1/2 tsp salt",
+            "4 slices sourdough toast"
+          ]
+        }
+      ],
+      "steps": [
+        "Wilt the spinach with the butter and garlic in a pan for 2 minutes, until soft, then squeeze out any liquid and chop.",
+        "Stir in half the cream, nutmeg and salt.",
+        "Divide among four buttered ramekins and crack an egg into each.",
+        "Spoon over the remaining cream and bake at 180C for 12 minutes, until the whites are set and the yolks wobble slightly.",
+        "Serve with toast soldiers while the eggs are still warm and just set."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set; bake a few minutes longer for firm yolks if serving anyone vulnerable."
+      ],
+      "nutrition": {
+        "kcal": 296,
+        "proteinG": 12,
+        "carbsG": 20,
+        "fatG": 18,
+        "fibreG": 3,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "persian-nargesi-spinach-and-egg-pan",
+      "title": "Persian Nargesi Spinach and Egg Pan",
+      "summary": "Spinach cooked with garlic and turmeric, topped with eggs that set into the greens.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp olive oil",
+            "1 brown onion, diced",
+            "3 garlic cloves, sliced",
+            "1 tsp ground turmeric",
+            "400g baby spinach",
+            "1/2 tsp salt",
+            "4 eggs",
+            "1 tbsp lemon juice",
+            "4 flatbreads"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion in the oil for 6 minutes, until soft and golden.",
+        "Add the garlic and turmeric for 1 minute until fragrant.",
+        "Add the spinach in batches and cook for 5 minutes, until wilted, then stir in the salt and lemon juice.",
+        "Make 4 wells, crack in the eggs, cover and cook for 5 minutes, until the whites are set.",
+        "Serve with warm flatbread."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set; cook the yolks through for anyone vulnerable."
+      ],
+      "nutrition": {
+        "kcal": 331,
+        "proteinG": 13,
+        "carbsG": 39,
+        "fatG": 13,
+        "fibreG": 3,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "indian-egg-bhurji-masala-scramble",
+      "title": "Indian Egg Bhurji Masala Scramble",
+      "summary": "Spiced scrambled eggs with onion, tomato and green chilli, the Mumbai street breakfast.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 eggs",
+            "1 tbsp vegetable oil",
+            "1 small brown onion, finely diced",
+            "1 tomato, diced",
+            "1 green chilli, chopped",
+            "1/2 tsp ground turmeric",
+            "1/2 tsp ground cumin",
+            "1/4 tsp salt",
+            "1 small bunch coriander",
+            "2 slices bread, toasted"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil and cook the onion and chilli for 4 minutes, until soft.",
+        "Add the tomato, turmeric and cumin and cook for 3 minutes, until pulpy.",
+        "Beat the eggs with the salt, pour in and stir gently for 2 minutes, until just set.",
+        "Scatter with coriander and check the eggs are fully set with no liquid left.",
+        "Serve with buttered toast until the plates are clean, while hot."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until fully set with no liquid egg remaining; serve straight away."
+      ],
+      "nutrition": {
+        "kcal": 289,
+        "proteinG": 15,
+        "carbsG": 22,
+        "fatG": 15,
+        "fibreG": 3,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "korean-gyeran-mari-rolled-omelette",
+      "title": "Korean Gyeran Mari Rolled Omelette",
+      "summary": "A neat rolled omelette with carrot and spring onion, cut in rounds as a banchan or lunchbox side.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "5 eggs",
+            "1/4 tsp salt",
+            "1 spring onion, finely chopped",
+            "2 tbsp grated carrot",
+            "1 tbsp vegetable oil",
+            "1 tsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Beat the eggs with the salt, spring onion and carrot.",
+        "Heat a thin film of oil in a small non-stick pan over low heat.",
+        "Pour in a thin layer and cook for 1 minute, until just set but still glossy, then roll to one end.",
+        "Oil the pan again, pour in more egg, lift the roll to let it flow under and cook until set, then roll again.",
+        "Repeat until the egg is used, rest for 2 minutes and slice."
+      ],
+      "notes": [
+        "Food safety: cook the egg until fully set with no liquid egg remaining. Keeps 2 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 204,
+        "proteinG": 16,
+        "carbsG": 3,
+        "fatG": 14,
+        "fibreG": 1,
+        "sodiumMg": 550
+      }
+    },
+    {
+      "id": "khai-palo-thai-five-spice-egg-stew",
+      "title": "Khai Palo Thai Five Spice Egg Stew",
+      "summary": "Boiled eggs braised in a sweet, five-spice soy broth until deeply brown, served with rice.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 eggs",
+            "500ml water",
+            "3 tbsp soy sauce",
+            "2 tbsp palm sugar",
+            "1 cinnamon stick",
+            "2 star anise",
+            "3 garlic cloves",
+            "1 tsp ground white pepper",
+            "1 small bunch coriander",
+            "steamed rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the eggs for 10 minutes until the yolks are firm, then cool in cold water and peel.",
+        "Simmer the water, soy sauce, sugar, cinnamon, star anise, garlic and pepper for 10 minutes, until slightly syrupy.",
+        "Add the eggs and simmer for 10 minutes, turning, until deeply brown and glossy.",
+        "Serve with coriander and steamed rice."
+      ],
+      "notes": [
+        "Food safety: boil the eggs for 10 minutes until the yolks are firm. Keeps 3 days in the fridge in the braising liquid."
+      ],
+      "nutrition": {
+        "kcal": 142,
+        "proteinG": 10,
+        "carbsG": 7,
+        "fatG": 8,
+        "fibreG": 1,
+        "sodiumMg": 1000
+      }
+    },
+    {
+      "id": "greek-strapatsada-tomato-and-feta-scramble",
+      "title": "Greek Strapatsada Tomato and Feta Scramble",
+      "summary": "Soft eggs folded into stewed tomato and feta, a classic island breakfast.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "4 ripe tomatoes, grated",
+            "1 garlic clove",
+            "4 eggs",
+            "60g feta",
+            "1 tsp dried oregano",
+            "2 slices bread, toasted"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the garlic in the oil for 30 seconds, until fragrant, then add the tomato.",
+        "Simmer for 8 minutes, until thick and jammy.",
+        "Beat the eggs and pour in, stirring gently for 2 minutes, until just set.",
+        "Crumble in the feta and oregano.",
+        "Serve straight away with thick toast, while the eggs are still hot."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until fully set with no liquid egg remaining."
+      ],
+      "nutrition": {
+        "kcal": 468,
+        "proteinG": 25,
+        "carbsG": 32,
+        "fatG": 26,
+        "fibreG": 3,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "uova-in-purgatorio-eggs-in-spicy-tomato",
+      "title": "Uova in Purgatorio Eggs in Spicy Tomato",
+      "summary": "Eggs poached in fiery tomato and garlic sauce, mopped up with crusty bread.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "breakfast",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp olive oil",
+            "4 garlic cloves, sliced",
+            "1 tsp chilli flakes",
+            "1 can crushed tomatoes (800g)",
+            "1 tsp dried oregano",
+            "1/2 tsp salt",
+            "4 eggs",
+            "1 small bunch basil",
+            "4 slices crusty bread"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the garlic and chilli in the oil for 1 minute, until fragrant.",
+        "Add the tomatoes, oregano and salt and simmer for 12 minutes, until thick.",
+        "Make 4 wells and crack in the eggs.",
+        "Cover and cook for 5 minutes, until the whites are set.",
+        "Scatter with basil and serve with bread."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set; cook the yolks through for anyone vulnerable."
+      ],
+      "nutrition": {
+        "kcal": 312,
+        "proteinG": 14,
+        "carbsG": 30,
+        "fatG": 14,
+        "fibreG": 5,
+        "sodiumMg": 750
+      }
+    },
+    {
+      "id": "hungarian-lecso-with-eggs",
+      "title": "Hungarian Lecso with Eggs",
+      "summary": "Sweet capsicum, tomato and onion stewed with paprika, with eggs stirred in for a rustic one-pan meal.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp olive oil",
+            "2 brown onions, sliced",
+            "3 capsicums, sliced",
+            "3 tomatoes, chopped",
+            "2 tsp sweet paprika",
+            "1/2 tsp salt",
+            "4 eggs",
+            "4 slices rye bread"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion in the oil for 8 minutes, until soft.",
+        "Add the capsicum and paprika and cook for 8 minutes more, until soft.",
+        "Add the tomatoes and salt and simmer for 6 minutes, until saucy.",
+        "Crack the eggs in, cover and cook for 4 minutes, until the whites are set.",
+        "Serve straight from the pan with warm rye bread."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set; cook the yolks through for anyone vulnerable."
+      ],
+      "nutrition": {
+        "kcal": 306,
+        "proteinG": 13,
+        "carbsG": 33,
+        "fatG": 12,
+        "fibreG": 7,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "chimichurri-rojo-red-chimichurri",
+      "title": "Chimichurri Rojo Red Chimichurri",
+      "summary": "A red capsicum and paprika chimichurri, smoky and herby for grilled vegetables and steak.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 roasted red capsicum from a jar, chopped",
+            "1 small bunch flat-leaf parsley",
+            "3 garlic cloves",
+            "80ml olive oil",
+            "3 tbsp red wine vinegar",
+            "1 tsp smoked paprika",
+            "1 tsp dried oregano",
+            "1/2 tsp chilli flakes",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Chop the parsley and garlic finely.",
+        "Mix with the capsicum, oil, vinegar, paprika, oregano, chilli and salt.",
+        "Stand for 20 minutes so the flavours develop.",
+        "Taste and add more vinegar or salt if needed.",
+        "Spoon over grilled meat or vegetables until generously coated."
+      ],
+      "notes": [
+        "Keeps 5 days in the fridge in a clean jar."
+      ],
+      "nutrition": {
+        "kcal": 95,
+        "proteinG": 0,
+        "carbsG": 3,
+        "fatG": 9,
+        "fibreG": 1,
+        "sodiumMg": 220
+      }
+    },
+    {
+      "id": "imli-tamarind-and-date-chutney",
+      "title": "Imli Tamarind and Date Chutney",
+      "summary": "Sweet-sour tamarind and date chutney with ginger and cumin, the chaat table's essential drizzle.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 12,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100g tamarind pulp",
+            "150g sultanas",
+            "600ml water",
+            "2 tbsp brown sugar",
+            "1 tsp ground cumin",
+            "1 tsp ground ginger",
+            "1/2 tsp chilli powder",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the tamarind, dates and water for 15 minutes, until very soft.",
+        "Blend until smooth and sieve to remove fibres.",
+        "Return to the pan with the sugar, spices and salt and simmer for 5 minutes, until thick and glossy.",
+        "Cool completely before serving or storing in a jar."
+      ],
+      "notes": [
+        "Keeps 2 weeks in the fridge in a clean jar and freezes well."
+      ],
+      "nutrition": {
+        "kcal": 96,
+        "proteinG": 1,
+        "carbsG": 22,
+        "fatG": 0,
+        "fibreG": 2,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "sweet-mango-chutney",
+      "title": "Sweet Mango Chutney",
+      "summary": "Slow-cooked green mango chutney with ginger, chilli and vinegar to serve with curries and cheese.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 12,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 firm green mangoes, peeled and diced",
+            "1 brown onion, diced",
+            "200g sugar",
+            "250ml white vinegar",
+            "2 tbsp grated ginger",
+            "1 tsp chilli flakes",
+            "1 tsp salt",
+            "1 cinnamon stick",
+            "60g sultanas"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the vinegar and sugar for 5 minutes until the sugar dissolves.",
+        "Add the mango, onion, ginger, chilli, cinnamon, sultanas and salt.",
+        "Cook for 35 minutes, stirring often, until thick and jammy.",
+        "Cool for 10 minutes, remove the cinnamon and pack into sterilised jars.",
+        "Seal the jars and refrigerate once cooled."
+      ],
+      "notes": [
+        "Keeps 1 month in the fridge in sterilised jars; discard if mouldy."
+      ],
+      "nutrition": {
+        "kcal": 96,
+        "proteinG": 1,
+        "carbsG": 22,
+        "fatG": 0,
+        "fibreG": 2,
+        "sodiumMg": 220
+      }
+    },
+    {
+      "id": "raita-crunch-yoghurt-with-crunchy-chickpeas",
+      "title": "Raita Crunch Yoghurt with Crunchy Chickpeas",
+      "summary": "Cool spiced yoghurt with crunchy roasted chickpeas, served with biryani and kebabs.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g plain yoghurt",
+            "60g roasted chickpeas, crushed",
+            "1/2 tsp ground cumin",
+            "1/4 tsp chilli powder",
+            "1/2 tsp black salt",
+            "1 small bunch mint, chopped",
+            "2 tbsp water"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the yoghurt, water, cumin, chilli and salt until smooth.",
+        "Stir in the chopped mint and taste for salt.",
+        "Fold in the chickpeas just before serving so they stay crisp.",
+        "Taste and adjust the salt.",
+        "Serve chilled in a bowl alongside rice."
+      ],
+      "notes": [
+        "Contains dairy. Make just before serving, as the chickpeas soften quickly."
+      ],
+      "nutrition": {
+        "kcal": 98,
+        "proteinG": 7,
+        "carbsG": 7,
+        "fatG": 4,
+        "fibreG": 1,
+        "sodiumMg": 320
+      }
+    },
+    {
+      "id": "syrian-muhammara-walnut-and-capsicum-dip",
+      "title": "Syrian Muhammara Walnut and Capsicum Dip",
+      "summary": "A smoky dip of roasted capsicum and walnuts with pomegranate molasses and chilli.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 roasted red capsicums from a jar",
+            "100g walnuts",
+            "40g breadcrumbs",
+            "2 tbsp pomegranate molasses",
+            "1 garlic clove",
+            "1 tsp ground cumin",
+            "1/2 tsp chilli flakes",
+            "4 tbsp olive oil",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the capsicum, walnuts, breadcrumbs, molasses, garlic, cumin and chilli until almost smooth.",
+        "With the blender running, add the oil in a slow stream.",
+        "Season with the salt and blend briefly.",
+        "Taste and add more molasses or chilli if needed.",
+        "Serve with warm flatbread or vegetable sticks."
+      ],
+      "notes": [
+        "Contains tree nuts and gluten. Keeps 5 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 174,
+        "proteinG": 3,
+        "carbsG": 8,
+        "fatG": 14,
+        "fibreG": 2,
+        "sodiumMg": 220
+      }
+    },
+    {
+      "id": "green-zhug-herb-and-chilli-sauce",
+      "title": "Green Zhug Herb and Chilli Sauce",
+      "summary": "A blistering green sauce of coriander, parsley, chilli and cardamom, spooned over falafel and eggs.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 large bunch coriander",
+            "1 small bunch flat-leaf parsley",
+            "3 green chillies",
+            "3 garlic cloves",
+            "1 tsp ground cumin",
+            "1/2 tsp ground cardamom",
+            "100ml olive oil",
+            "2 tbsp lemon juice",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the herbs, chillies, garlic and spices to a rough paste.",
+        "Blend in the oil and lemon juice until combined.",
+        "Season with the salt and blend briefly.",
+        "Taste and add more lemon if needed.",
+        "Spoon into a clean jar and press down."
+      ],
+      "notes": [
+        "Keeps 1 week in the fridge with a film of oil on top."
+      ],
+      "nutrition": {
+        "kcal": 128,
+        "proteinG": 1,
+        "carbsG": 3,
+        "fatG": 12,
+        "fibreG": 2,
+        "sodiumMg": 220
+      }
+    },
+    {
+      "id": "harissa-paste",
+      "title": "Harissa Paste",
+      "summary": "A deep red Tunisian chilli paste with roasted capsicum, caraway and garlic to stir into stews and marinades.",
+      "cuisine": "north-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 10,
+      "servings": 12,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "10 dried red chillies, soaked and drained",
+            "2 roasted red capsicums from a jar",
+            "5 garlic cloves",
+            "1 tsp caraway seeds",
+            "1 tsp ground cumin",
+            "1 tsp ground coriander",
+            "4 tbsp olive oil",
+            "2 tbsp lemon juice",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the caraway, cumin and coriander in a dry pan for 1 minute, until fragrant.",
+        "Blend the chillies, capsicum, garlic and spices to a thick paste.",
+        "Blend in the lemon juice, salt and 2 tablespoons of oil.",
+        "Spoon into a jar and cover with the remaining oil.",
+        "Refrigerate the jar with the oil on top."
+      ],
+      "notes": [
+        "Wear gloves for the chillies. Keeps 1 month in the fridge under a film of oil."
+      ],
+      "nutrition": {
+        "kcal": 65,
+        "proteinG": 1,
+        "carbsG": 3,
+        "fatG": 5,
+        "fibreG": 2,
+        "sodiumMg": 200
+      }
+    },
+    {
+      "id": "moroccan-chermoula-herb-marinade",
+      "title": "Moroccan Chermoula Herb Marinade",
+      "summary": "A garlicky coriander, parsley and cumin sauce, spooned over roast vegetables and grilled fish.",
+      "cuisine": "north-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 large bunch coriander",
+            "1 large bunch flat-leaf parsley",
+            "3 garlic cloves",
+            "1 tsp ground cumin",
+            "1 tsp sweet paprika",
+            "1/2 tsp chilli flakes",
+            "100ml olive oil",
+            "3 tbsp lemon juice",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the coriander, parsley and garlic to a coarse paste.",
+        "Blend in the spices, oil and lemon juice until combined.",
+        "Season with the salt and blend briefly.",
+        "Taste and adjust the lemon.",
+        "Store in a clean jar with a film of oil."
+      ],
+      "notes": [
+        "Keeps 5 days in the fridge. Use for marinating only before cooking; do not reuse marinade that touched raw meat or fish."
+      ],
+      "nutrition": {
+        "kcal": 128,
+        "proteinG": 1,
+        "carbsG": 3,
+        "fatG": 12,
+        "fibreG": 2,
+        "sodiumMg": 220
+      }
+    },
+    {
+      "id": "sambal-matah-balinese-raw-shallot-sambal",
+      "title": "Sambal Matah Balinese Raw Shallot Sambal",
+      "summary": "A fresh raw sambal of sliced shallot, chilli and lemongrass, dressed with hot oil and lime.",
+      "cuisine": "indonesian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 shallots, thinly sliced",
+            "3 red chillies, finely chopped",
+            "2 lemongrass stalks, white part finely sliced",
+            "3 kaffir lime leaves, finely shredded",
+            "3 tbsp coconut oil",
+            "3 tbsp lime juice",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the shallot, chilli, lemongrass and lime leaves in a bowl.",
+        "Heat the coconut oil until shimmering and pour over the mixture so it sizzles.",
+        "Stir in the lime juice and salt.",
+        "Taste and adjust the lime and salt.",
+        "Serve within an hour with grilled fish or rice."
+      ],
+      "notes": [
+        "Serve the same day. Handle hot oil carefully."
+      ],
+      "nutrition": {
+        "kcal": 95,
+        "proteinG": 1,
+        "carbsG": 6,
+        "fatG": 7,
+        "fibreG": 2,
+        "sodiumMg": 200
+      }
+    },
+    {
+      "id": "thai-nam-jim-jaew-roasted-chilli-dipping-sauce",
+      "title": "Thai Nam Jim Jaew Roasted Chilli Dipping Sauce",
+      "summary": "Smoky, tangy dipping sauce with toasted rice powder, lime and fish sauce for grilled meats and vegetables.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 5,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp uncooked jasmine rice",
+            "3 tbsp fish sauce",
+            "3 tbsp lime juice",
+            "1 tbsp palm sugar",
+            "1 tbsp chilli flakes",
+            "2 shallots, thinly sliced",
+            "1 small bunch coriander, chopped",
+            "1 small bunch mint, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the rice in a dry pan for 4 minutes, until deep golden, then crush to a coarse powder.",
+        "Stir the fish sauce, lime juice, sugar and chilli flakes until the sugar dissolves.",
+        "Add the rice powder, shallots and herbs.",
+        "Taste and balance with more lime or sugar.",
+        "Serve in small bowls beside grilled food."
+      ],
+      "notes": [
+        "Best on the day it is made. Contains fish sauce."
+      ],
+      "nutrition": {
+        "kcal": 42,
+        "proteinG": 2,
+        "carbsG": 8,
+        "fatG": 0,
+        "fibreG": 1,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "japanese-ponzu-citrus-soy-sauce",
+      "title": "Japanese Ponzu Citrus Soy Sauce",
+      "summary": "A tangy citrus soy sauce for dumplings, grilled fish and cold noodles.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100ml soy sauce",
+            "80ml lemon juice",
+            "60ml lime juice",
+            "3 tbsp mirin",
+            "2 tbsp rice vinegar",
+            "1 piece kombu, 5cm",
+            "1 tsp sugar"
+          ]
+        }
+      ],
+      "steps": [
+        "Combine the soy sauce, lemon juice, lime juice, mirin, vinegar, sugar and kombu in a jar.",
+        "Shake until the sugar dissolves.",
+        "Rest in the fridge overnight.",
+        "Remove the kombu and discard it.",
+        "Serve in small dishes for dipping."
+      ],
+      "notes": [
+        "Resting time is not included in prep. Keeps 1 month in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 48,
+        "proteinG": 3,
+        "carbsG": 9,
+        "fatG": 0,
+        "fibreG": 0,
+        "sodiumMg": 1300
+      }
+    },
+    {
+      "id": "mushroom-xo-style-umami-sauce",
+      "title": "Mushroom XO Style Umami Sauce",
+      "summary": "A savoury, chilli-spiked mushroom and garlic condiment with a deep umami taste, great on noodles and rice.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 12,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g shiitake mushrooms, finely diced",
+            "4 shallots, finely diced",
+            "6 garlic cloves, finely chopped",
+            "2 red chillies, chopped",
+            "120ml vegetable oil",
+            "2 tbsp soy sauce",
+            "1 tbsp oyster sauce",
+            "1 tbsp sugar",
+            "1 tbsp ginger, finely grated"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the mushrooms in the oil over medium heat for 10 minutes, until deep golden and dry.",
+        "Add the shallot, garlic, chilli and ginger and cook for 5 minutes, until fragrant and golden.",
+        "Stir in the soy sauce, oyster sauce and sugar and cook for 4 minutes, until glossy.",
+        "Cool and pack into a clean jar.",
+        "Refrigerate with the oil on top."
+      ],
+      "notes": [
+        "Contains oyster sauce. Keeps 3 weeks in the fridge under the oil."
+      ],
+      "nutrition": {
+        "kcal": 103,
+        "proteinG": 1,
+        "carbsG": 4,
+        "fatG": 9,
+        "fibreG": 1,
+        "sodiumMg": 450
+      }
+    }
+  ]
+}

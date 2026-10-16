@@ -1,0 +1,516 @@
+{
+ "about": "House recipes, batch 04 (helper sA): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+ "recipes": [
+  {
+   "id": "strapatsada-greek-scrambled-eggs-with-tomato-and-feta",
+   "title": "Strapatsada (Greek Scrambled Eggs with Tomato and Feta)",
+   "summary": "Soft eggs folded through jammy fresh tomato and salty feta, served on toasted bread.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp olive oil",
+      "600g ripe tomato, grated",
+      "1 tsp dried oregano",
+      "6 egg",
+      "100g feta, crumbled",
+      "4 slice sourdough bread, toasted",
+      "1 tbsp chopped parsley"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the olive oil in a large frying pan over medium heat, add the grated tomato and oregano and simmer for 8 minutes, until thick and jammy.",
+    "Beat the eggs lightly with a pinch of salt and pour into the pan. Stir gently with a spatula for 3 minutes, until the eggs are just set but still soft.",
+    "Fold through half the feta, then serve over the bread and finish with the remaining feta and parsley."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until firm enough to hold their shape, and keep leftovers in the fridge for no more than a day.",
+    "Grate the tomato on the large holes of a box grater and discard the skin."
+   ],
+   "nutrition": {
+    "kcal": 293,
+    "proteinG": 16,
+    "carbsG": 19,
+    "fatG": 17,
+    "fibreG": 3,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "tiganites-greek-pancakes-with-honey-and-walnuts",
+   "title": "Tiganites (Greek Pancakes with Honey and Walnuts)",
+   "summary": "Thin, fluffy pan-fried pancakes drizzled with honey and scattered with cinnamon walnuts.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup plain flour",
+      "1 tsp baking powder",
+      "1 egg",
+      "3/4 cup milk",
+      "1 tbsp honey",
+      "20g butter",
+      "1/4 cup honey",
+      "1/2 cup walnuts, chopped",
+      "1 tsp ground cinnamon"
+     ]
+    }
+   ],
+   "steps": [
+    "Whisk the flour and baking powder in a bowl, then whisk in the egg, milk and 1 tablespoon of honey until a smooth, pourable batter forms.",
+    "Melt a little of the butter in a non-stick frying pan over medium heat and pour in 1/4 cup of batter. Cook for 2 minutes, until bubbles appear, then flip and cook for 1 minute, until golden. Repeat with the remaining batter and butter.",
+    "Stack the pancakes on plates, drizzle with the 1/4 cup of honey and top with the walnuts and cinnamon."
+   ],
+   "notes": [
+    "Makes about 8 pancakes.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 358,
+    "proteinG": 10,
+    "carbsG": 48,
+    "fatG": 14,
+    "fibreG": 2,
+    "sodiumMg": 150
+   }
+  },
+  {
+   "id": "beef-stifado-with-whole-onions-and-cinnamon",
+   "title": "Beef Stifado with Whole Onions and Cinnamon",
+   "summary": "A slow Greek beef stew with sweet whole onions, red wine, vinegar and warm cinnamon.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 150,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.2kg beef chuck, cut into 4cm chunks",
+      "2 tbsp olive oil",
+      "600g small brown onion, peeled and left whole",
+      "4 garlic, sliced",
+      "2 tbsp tomato paste",
+      "1 cup red wine",
+      "2 tbsp red wine vinegar",
+      "2 cup beef stock",
+      "1 cinnamon stick",
+      "3 bay leaf",
+      "1/2 tsp ground allspice",
+      "2 tbsp chopped parsley"
+     ]
+    }
+   ],
+   "steps": [
+    "Pat the beef dry and season. Heat half the oil in a large heavy pot over high heat and brown the beef in two batches for 5 minutes each, until deep brown. Set aside.",
+    "Add the remaining oil, onions and garlic and cook for 6 minutes, until the onions colour. Stir in the tomato paste for 1 minute, then pour in the wine and vinegar and bubble for 3 minutes, until reduced by half.",
+    "Return the beef, add the stock, cinnamon, bay leaves and allspice, cover and simmer gently over low heat for 2 hours, until the beef is tender and the sauce has thickened.",
+    "Take out the cinnamon and bay leaves, season to taste and scatter with parsley. Serve with crusty bread or boiled potatoes."
+   ],
+   "notes": [
+    "Food safety: braised beef is safe once piping hot; it is tender when it reaches around 90°C inside. Cool leftovers within an hour and refrigerate for up to 3 days.",
+    "Gluten-free if you serve it with potatoes instead of bread."
+   ],
+   "nutrition": {
+    "kcal": 417,
+    "proteinG": 40,
+    "carbsG": 17,
+    "fatG": 21,
+    "fibreG": 3,
+    "sodiumMg": 750
+   }
+  },
+  {
+   "id": "lamb-kleftiko-style-with-lemon-oregano-and-potatoes",
+   "title": "Lamb Kleftiko-Style with Lemon, Oregano and Potatoes",
+   "summary": "Lamb shoulder sealed in foil with garlic, lemon and feta, baked until it falls off the bone.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 210,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.5kg lamb shoulder, bone in",
+      "1kg potato, cut into thick wedges",
+      "6 garlic, halved",
+      "2 lemon, juiced",
+      "1/4 cup olive oil",
+      "2 tbsp dried oregano",
+      "2 bay leaf",
+      "2 tomato, cut into wedges",
+      "150g feta, cut into slabs",
+      "1/2 cup water"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 160°C (140°C fan). Cut a large sheet of foil and a matching sheet of baking paper and lay them in a deep roasting tin, with plenty overhanging.",
+    "Toss the potato, tomato, garlic, bay, half the lemon juice, half the oil and half the oregano in the tin. Rub the lamb with the remaining oil, lemon juice, oregano and plenty of salt and lay it on top.",
+    "Scatter the feta around the lamb, pour in the water and fold the foil over to seal the parcel tightly.",
+    "Bake for 3 hours 30 minutes, until the meat pulls away from the bone. Open the foil, raise the oven to 220°C (200°C fan) and roast for 15 minutes, until the potatoes and lamb are browned."
+   ],
+   "notes": [
+    "Food safety: lamb shoulder is safe at 70°C but becomes tender only around 90°C, so cook it until it shreds. Rest for 15 minutes before serving.",
+    "Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 662,
+    "proteinG": 47,
+    "carbsG": 33,
+    "fatG": 38,
+    "fibreG": 4,
+    "sodiumMg": 600
+   }
+  },
+  {
+   "id": "gemista-rice-stuffed-tomatoes-and-capsicums",
+   "title": "Gemista (Rice-Stuffed Tomatoes and Capsicums)",
+   "summary": "Summer tomatoes and capsicums baked with a herby rice and pine nut filling beside crisp potatoes.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 35,
+   "cookMinutes": 80,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 large tomato",
+      "2 red capsicum",
+      "3/4 cup medium grain rice",
+      "1 brown onion, finely diced",
+      "2 garlic, crushed",
+      "1/4 cup olive oil",
+      "1/2 cup chopped parsley",
+      "1/4 cup chopped mint",
+      "1/4 cup pine nuts",
+      "2 tbsp tomato paste",
+      "500g potato, cut into wedges",
+      "1 cup water"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Slice the tops off the tomatoes and capsicums and keep them as lids. Scoop the tomato flesh into a bowl, break it up and discard the capsicum seeds.",
+    "Heat half the oil in a pan over medium heat and cook the onion and garlic for 5 minutes, until soft. Stir in the rice, tomato flesh, tomato paste, parsley, mint and pine nuts with a good pinch of salt and cook for 3 minutes.",
+    "Stand the vegetables in a deep tin, fill each two-thirds full (the rice swells), pop the lids on and tuck the potatoes around them.",
+    "Pour the water around the vegetables, drizzle with the remaining oil and bake for 1 hour 15 minutes, until the rice is tender and the potatoes are golden."
+   ],
+   "notes": [
+    "Vegan and gluten-free.",
+    "Fill the vegetables only two-thirds so the rice has room to swell."
+   ],
+   "nutrition": {
+    "kcal": 458,
+    "proteinG": 8,
+    "carbsG": 66,
+    "fatG": 18,
+    "fibreG": 8,
+    "sodiumMg": 120
+   }
+  },
+  {
+   "id": "spetsofai-greek-sausage-and-capsicum-stew",
+   "title": "Spetsofai (Greek Sausage and Capsicum Stew)",
+   "summary": "Browned sausages simmered with capsicum and tomato until rich and sticky, mopped up with bread.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g pork sausage",
+      "2 tbsp olive oil",
+      "1 brown onion, sliced",
+      "2 green capsicum, cut into strips",
+      "2 red capsicum, cut into strips",
+      "2 garlic, sliced",
+      "400g canned tomatoes",
+      "1 tsp dried oregano",
+      "1/2 tsp chilli flakes",
+      "4 slice sourdough bread"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil in a large deep frying pan over medium heat and brown the sausages for 8 minutes, until golden. Lift out and slice thickly.",
+    "Cook the onion, capsicum and garlic in the same pan for 8 minutes, until softened and lightly coloured.",
+    "Add the tomatoes, oregano, chilli and sausage slices with a splash of water, cover and simmer for 20 minutes, until the sausage is cooked through and the sauce is thick.",
+    "Serve in bowls with the sourdough for mopping."
+   ],
+   "notes": [
+    "Food safety: sausages must reach 75°C in the centre and have no pink inside before serving.",
+    "Check the sausage label if you need it gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 480,
+    "proteinG": 19,
+    "carbsG": 38,
+    "fatG": 28,
+    "fibreG": 6,
+    "sodiumMg": 1000
+   }
+  },
+  {
+   "id": "pollo-a-la-vasca-basque-chicken-with-capsicum-and-ham",
+   "title": "Pollo a la Vasca (Basque Chicken with Capsicum and Ham)",
+   "summary": "Bone-in chicken braised with sweet capsicum, tomato, prosciutto and smoked paprika.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 55,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1kg chicken thigh, bone in",
+      "2 tbsp olive oil",
+      "1 brown onion, sliced",
+      "2 red capsicum, cut into strips",
+      "1 green capsicum, cut into strips",
+      "4 garlic, sliced",
+      "80g prosciutto, torn",
+      "1 tbsp smoked paprika",
+      "1/2 tsp chilli flakes",
+      "400g canned crushed tomatoes",
+      "1/2 cup white wine"
+     ]
+    }
+   ],
+   "steps": [
+    "Season the chicken. Heat the oil in a wide heavy pan over medium-high heat and brown the chicken, skin side down first, for 10 minutes, until deep golden. Set aside.",
+    "Cook the onion, capsicum, garlic and prosciutto in the same pan for 8 minutes, until soft. Stir in the paprika and chilli for 30 seconds.",
+    "Pour in the wine and bubble for 2 minutes, then add the tomatoes and return the chicken.",
+    "Cover and simmer for 30 minutes, until the chicken is cooked through and the sauce is thick. Serve with rice or crusty bread."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C at the thickest part, with clear juices.",
+    "Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 464,
+    "proteinG": 33,
+    "carbsG": 20,
+    "fatG": 28,
+    "fibreG": 5,
+    "sodiumMg": 750
+   }
+  },
+  {
+   "id": "revuelto-de-setas-spanish-mushroom-scramble-on-toast",
+   "title": "Revuelto de Setas (Spanish Mushroom Scramble on Toast)",
+   "summary": "Garlicky sherried mushrooms folded into silky scrambled eggs.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp olive oil",
+      "400g swiss brown mushroom, sliced",
+      "3 garlic, sliced",
+      "2 tbsp dry sherry",
+      "1/2 tsp smoked paprika",
+      "8 egg",
+      "2 tbsp chopped parsley",
+      "4 slice sourdough bread, toasted"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil in a large frying pan over high heat and cook the mushrooms for 6 minutes, until golden and the liquid has gone. Add the garlic for 1 minute.",
+    "Pour in the sherry and cook for 1 minute, until it has evaporated, then stir in the paprika.",
+    "Beat the eggs with a pinch of salt, pour over the mushrooms and stir gently over low heat for 3 minutes, until just set and creamy.",
+    "Serve over the bread, scattered with parsley."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until set, and refrigerate any leftovers promptly.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 305,
+    "proteinG": 19,
+    "carbsG": 19,
+    "fatG": 17,
+    "fibreG": 3,
+    "sodiumMg": 450
+   }
+  },
+  {
+   "id": "pollo-al-ajillo-spanish-garlic-chicken",
+   "title": "Pollo al Ajillo (Spanish Garlic Chicken)",
+   "summary": "Golden chicken thighs simmered in olive oil, plenty of garlic, sherry and smoked paprika.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g chicken thigh fillet, halved",
+      "1/3 cup olive oil",
+      "10 garlic, thickly sliced",
+      "2 bay leaf",
+      "1 tsp smoked paprika",
+      "1/2 cup dry sherry",
+      "1/4 cup chicken stock",
+      "1 lemon, juiced",
+      "2 tbsp chopped parsley"
+     ]
+    }
+   ],
+   "steps": [
+    "Season the chicken. Warm the oil in a wide pan over medium heat, add the chicken and brown for 6 minutes each side, until golden. Lift out.",
+    "Add the garlic and bay leaves to the oil and cook for 1 minute, until pale gold. Stir in the paprika, then pour in the sherry and stock.",
+    "Return the chicken, cover and simmer over low heat for 12 minutes, until cooked through and the sauce is syrupy.",
+    "Finish with the lemon juice and parsley and serve with bread or potatoes."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part, with no pink inside.",
+    "Keep the garlic pale gold, as dark garlic turns bitter."
+   ],
+   "nutrition": {
+    "kcal": 397,
+    "proteinG": 37,
+    "carbsG": 6,
+    "fatG": 25,
+    "fibreG": 1,
+    "sodiumMg": 400
+   }
+  },
+  {
+   "id": "migas-with-chorizo-and-fried-eggs",
+   "title": "Migas with Chorizo and Fried Eggs",
+   "summary": "Crisp fried breadcrumbs with chorizo and garlic, topped with a runny egg for a hearty Spanish breakfast.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 thick slice stale sourdough bread, torn into small pieces",
+      "150g chorizo, diced",
+      "1/4 cup olive oil",
+      "4 garlic, sliced",
+      "1 tsp smoked paprika",
+      "1 red capsicum, diced",
+      "4 egg",
+      "2 tbsp water"
+     ]
+    }
+   ],
+   "steps": [
+    "Sprinkle the bread with the water and toss, then leave for a few minutes to soften slightly.",
+    "Cook the chorizo in a large frying pan over medium heat for 4 minutes, until the fat runs. Add 2 tablespoons of the oil, the garlic, capsicum and paprika and cook for 3 minutes.",
+    "Add the bread and fry, tossing often, for 8 minutes, until crisp and golden. Spoon onto plates.",
+    "Fry the eggs in the remaining oil for 3 minutes, until the whites are set, and slide one onto each plate."
+   ],
+   "notes": [
+    "Food safety: fry the eggs until the whites are fully set; skip runny yolks for children, older adults and anyone pregnant.",
+    "Stale bread crisps best; fresh bread can be dried in a low oven."
+   ],
+   "nutrition": {
+    "kcal": 359,
+    "proteinG": 15,
+    "carbsG": 22,
+    "fatG": 24,
+    "fibreG": 2,
+    "sodiumMg": 800
+   }
+  }
+ ]
+}

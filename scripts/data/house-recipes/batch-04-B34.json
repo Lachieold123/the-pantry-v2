@@ -1,0 +1,1056 @@
+{
+  "about": "House recipes, batch 04 (slice B): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "paneer-gulab-jamun",
+      "title": "Paneer Gulab Jamun",
+      "summary": "Soft, golden paneer and semolina dumplings soaked in a rose and cardamom syrup, made without milk powder.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 25,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g paneer, finely grated",
+            "40g fine semolina",
+            "20g plain flour",
+            "1 tbsp milk",
+            "4 tbsp ghee, for shallow-frying",
+            "220g caster sugar",
+            "375ml water",
+            "1/2 tsp ground cardamom",
+            "1 tsp rose water"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the sugar and water for 5 minutes until slightly syrupy, then stir in the cardamom and rose water and keep warm.",
+        "Knead the paneer, semolina, flour and milk together for 4 minutes until the dough is smooth and holds together without cracks. Roll into 12 smooth balls, each about 28g.",
+        "Heat the ghee in a wide frying pan over low heat. Fry the balls in batches, turning often, for 8 minutes until deep golden brown on all sides.",
+        "Drop the hot balls into the warm syrup and soak for 30 minutes, until they swell and feel soft."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 gulab jamun. Keep the heat low so the centres cook through. Keeps 3 days in the fridge in the syrup."
+      ],
+      "nutrition": {
+        "kcal": 374,
+        "proteinG": 12,
+        "carbsG": 45,
+        "fatG": 16,
+        "fibreG": 1,
+        "sodiumMg": 40
+      }
+    },
+    {
+      "id": "nariyal-ladoo-coconut-balls",
+      "title": "Nariyal Ladoo Coconut Balls",
+      "summary": "Chewy coconut sweets with cardamom, made from just three ingredients in a single pan.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "160g desiccated coconut, plus 2 tbsp extra for rolling",
+            "200g sweetened condensed milk",
+            "1/2 tsp ground cardamom"
+          ]
+        }
+      ],
+      "steps": [
+        "Stir the coconut, condensed milk and cardamom in a non-stick frying pan over low heat for 8 minutes, until the mixture thickens and pulls away from the pan.",
+        "Cool the mixture for 10 minutes until you can handle it.",
+        "Roll level tablespoons into 12 balls, about 25g each, then roll in the extra coconut."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 ladoo. Keeps 5 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 176,
+        "proteinG": 2,
+        "carbsG": 12,
+        "fatG": 12,
+        "fibreG": 2,
+        "sodiumMg": 50
+      }
+    },
+    {
+      "id": "kaju-katli-cashew-diamonds",
+      "title": "Kaju Katli Cashew Diamonds",
+      "summary": "Smooth, delicate cashew fudge rolled thin and cut into diamonds.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 10,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g raw cashews",
+            "100g caster sugar",
+            "80ml water",
+            "1 tsp ghee"
+          ]
+        }
+      ],
+      "steps": [
+        "Blitz the cashews in short pulses for 30 seconds until a fine powder, stopping before it turns oily. Sift to remove any large pieces.",
+        "Boil the sugar and water in a small non-stick pan for 4 minutes until it becomes a sticky syrup that forms a thread between your finger and thumb.",
+        "Stir in the cashew powder over low heat for 4 minutes until it forms a soft dough that leaves the sides of the pan. Stir in the ghee.",
+        "Knead briefly while warm, roll to 5mm between two sheets of baking paper and cool for 15 minutes. Cut into 20 diamonds."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Contains tree nuts. Per serving: 2 pieces. Keeps 1 week in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 137,
+        "proteinG": 3,
+        "carbsG": 15,
+        "fatG": 7,
+        "fibreG": 1,
+        "sodiumMg": 10
+      }
+    },
+    {
+      "id": "rasgulla-syrupy-cheese-balls",
+      "title": "Rasgulla Syrupy Cheese Balls",
+      "summary": "Spongy fresh cheese balls simmered in light syrup, a Bengali mithai that is lighter than it looks.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 30,
+      "cookMinutes": 40,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1.5 litres full-cream milk",
+            "3 tbsp lemon juice",
+            "220g caster sugar",
+            "1.2 litres water",
+            "1 tsp rose water"
+          ]
+        }
+      ],
+      "steps": [
+        "Bring the milk to the boil, then turn off the heat and stir in the lemon juice a spoon at a time until the curds separate and the whey turns clear.",
+        "Pour through a muslin-lined sieve, rinse the curds under cold water for 1 minute to remove the lemon taste, then squeeze out the water and hang for 20 minutes.",
+        "Knead the warm chhena on the bench for 8 minutes until it is smooth and no longer grainy. Roll into 12 smooth balls.",
+        "Boil the sugar and water in a wide pan, then drop in the balls and simmer with the lid on for 25 minutes until they double in size and sink when pressed.",
+        "Stir in the rose water and cool completely in the syrup, then chill."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 rasgulla. Plus 20 minutes draining. Keeps 4 days in the fridge in the syrup."
+      ],
+      "nutrition": {
+        "kcal": 275,
+        "proteinG": 8,
+        "carbsG": 45,
+        "fatG": 7,
+        "fibreG": 0,
+        "sodiumMg": 50
+      }
+    },
+    {
+      "id": "sooji-halwa-squares",
+      "title": "Sooji Halwa Squares",
+      "summary": "Toasted semolina cooked with ghee, cashews and sultanas, set in a tray and cut into squares.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "160g fine semolina",
+            "80g ghee",
+            "150g caster sugar",
+            "500ml water",
+            "30g cashews",
+            "40g sultanas",
+            "1/2 tsp ground cardamom"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the ghee in a large pan over medium heat, fry the cashews for 1 minute until pale gold, then add the semolina and stir for 6 minutes until it smells nutty and turns light golden.",
+        "Boil the water with the sugar and cardamom until the sugar dissolves, then carefully pour into the semolina, stirring fast, as it will spit.",
+        "Add the sultanas and cook for 4 minutes, stirring, until thick and the mixture leaves the sides of the pan.",
+        "Press into a greased 18cm square tin, level the top and cool for 30 minutes before cutting into 12 squares."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 square. Keeps 4 days at room temperature, covered."
+      ],
+      "nutrition": {
+        "kcal": 182,
+        "proteinG": 2,
+        "carbsG": 25,
+        "fatG": 8,
+        "fibreG": 1,
+        "sodiumMg": 20
+      }
+    },
+    {
+      "id": "mysore-pak-ghee-fudge",
+      "title": "Mysore Pak Ghee Fudge",
+      "summary": "A rich, melt-in-the-mouth gram flour and ghee sweet with a honeycombed texture.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100g chickpea flour (besan)",
+            "150g ghee, melted",
+            "220g caster sugar",
+            "125ml water"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the chickpea flour with 3 tbsp of the melted ghee into a smooth paste. Grease a 15cm square tin.",
+        "Boil the sugar and water in a deep pan for 5 minutes until it forms a one-thread syrup between finger and thumb.",
+        "Add the chickpea paste and stir for 2 minutes over medium heat, then add the remaining ghee a few spoons at a time, stirring all the while, for 12 minutes until the mixture bubbles, thickens and turns glossy.",
+        "Pour into the tin immediately, level and cool for 10 minutes, then cut into 12 pieces while still warm. Leave to set for 15 minutes."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 piece. Be careful: the sugar syrup is very hot. Keeps 1 week airtight."
+      ],
+      "nutrition": {
+        "kcal": 219,
+        "proteinG": 2,
+        "carbsG": 23,
+        "fatG": 13,
+        "fibreG": 1,
+        "sodiumMg": 10
+      }
+    },
+    {
+      "id": "ricotta-kalakand-squares",
+      "title": "Ricotta Kalakand Squares",
+      "summary": "A soft, grainy milk-cake sweet made from ricotta, set in a tray and topped with pistachios.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g whole-milk ricotta",
+            "100g caster sugar",
+            "1/2 tsp ground cardamom",
+            "20g pistachios, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Stir the ricotta and sugar in a non-stick pan over medium-low heat for 20 minutes, until it thickens, loses most of its moisture and starts to pull away from the sides.",
+        "Stir in the cardamom, then press into a greased 15cm square tin and level the top.",
+        "Scatter with the pistachios, press them in lightly and cool for 30 minutes.",
+        "Chill for 1 hour until firm, then cut into 12 squares."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Contains tree nuts. Per serving: 1 square. Plus 1 hour chilling. Keeps 4 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 114,
+        "proteinG": 5,
+        "carbsG": 10,
+        "fatG": 6,
+        "fibreG": 0,
+        "sodiumMg": 50
+      }
+    },
+    {
+      "id": "walnut-and-pistachio-baklava-fingers",
+      "title": "Walnut and Pistachio Baklava Fingers",
+      "summary": "Crisp layers of filo with a spiced nut filling, cut into fingers and soaked in lemon honey syrup.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 40,
+      "cookMinutes": 35,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g filo pastry (about 8 sheets)",
+            "150g walnuts, finely chopped",
+            "50g pistachios, finely chopped",
+            "1 tsp ground cinnamon",
+            "100g butter, melted",
+            "165g caster sugar",
+            "185ml water",
+            "1 tbsp honey",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional). Mix the walnuts, pistachios and cinnamon. Grease a 20 x 30cm tin.",
+        "Lay 4 filo sheets in the tin, brushing each with butter. Spread over the nut mix, then top with the remaining sheets, brushing each with butter. Brush the top and cut into 24 fingers with a sharp knife.",
+        "Bake for 35 minutes, until deep golden and crisp.",
+        "While it bakes, simmer the sugar, water, honey and lemon juice for 8 minutes until slightly syrupy. Cool.",
+        "Pour the cool syrup over the hot baklava and leave for 2 hours before serving."
+      ],
+      "notes": [
+        "Snack. Vegetarian, not vegan (honey and butter). Contains tree nuts and gluten. Per serving: 2 fingers. Plus 2 hours soaking. Keeps 1 week airtight."
+      ],
+      "nutrition": {
+        "kcal": 273,
+        "proteinG": 4,
+        "carbsG": 25,
+        "fatG": 17,
+        "fibreG": 2,
+        "sodiumMg": 100
+      }
+    },
+    {
+      "id": "basbousa-semolina-and-coconut-cake",
+      "title": "Basbousa Semolina and Coconut Cake",
+      "summary": "A tender semolina and coconut cake cut into diamonds and drenched in lemon and rose syrup.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "160g fine semolina",
+            "40g desiccated coconut",
+            "110g caster sugar",
+            "125g Greek yoghurt",
+            "100g butter, melted",
+            "1 tsp baking powder",
+            "12 whole almonds",
+            "165g caster sugar, for the syrup",
+            "185ml water",
+            "1 tbsp lemon juice",
+            "1 tsp rose water"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 170°C fan (190°C conventional) and grease a 20cm square tin. Mix the semolina, coconut, 110g sugar and baking powder, then stir in the yoghurt and butter to a thick batter.",
+        "Spread into the tin, score into 12 diamonds and press an almond into each.",
+        "Bake for 30 minutes, until golden and a skewer comes out clean.",
+        "Meanwhile simmer the syrup sugar, water and lemon juice for 6 minutes until slightly syrupy, stir in the rose water and cool.",
+        "Pour the cool syrup over the hot cake and leave to soak for 20 minutes, then cut through the lines."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Contains tree nuts and gluten. Per serving: 1 diamond. Keeps 4 days covered."
+      ],
+      "nutrition": {
+        "kcal": 217,
+        "proteinG": 3,
+        "carbsG": 30,
+        "fatG": 9,
+        "fibreG": 2,
+        "sodiumMg": 90
+      }
+    },
+    {
+      "id": "ma-amoul-walnut-cookies",
+      "title": "Ma'amoul Walnut Cookies",
+      "summary": "Buttery semolina shortbread stuffed with spiced walnuts and dusted with icing sugar.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 40,
+      "cookMinutes": 20,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "160g fine semolina",
+            "125g plain flour",
+            "125g butter, melted",
+            "60ml milk",
+            "1 tsp rose water",
+            "100g walnuts, finely chopped",
+            "25g caster sugar",
+            "1 tsp ground cinnamon",
+            "2 tbsp icing sugar"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the semolina, flour and butter, rub together for 3 minutes, then stir in the milk and rose water to a soft dough. Cover and rest for 30 minutes.",
+        "Heat the oven to 150°C fan (170°C conventional) and line a tray. Mix the walnuts, sugar and cinnamon for the filling.",
+        "Divide the dough into 16 balls, flatten each in your palm, put 1 tsp filling in the centre and close the dough around it. Press gently into a ma'amoul mould or flatten slightly.",
+        "Bake for 20 minutes, until set and pale with only a hint of colour. Cool completely and dust with icing sugar."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Contains tree nuts and gluten. Per serving: 2 cookies. Plus 30 minutes resting. Keeps 2 weeks airtight."
+      ],
+      "nutrition": {
+        "kcal": 339,
+        "proteinG": 6,
+        "carbsG": 30,
+        "fatG": 21,
+        "fibreG": 3,
+        "sodiumMg": 90
+      }
+    },
+    {
+      "id": "atayef-ricotta-pancakes",
+      "title": "Atayef Ricotta Pancakes",
+      "summary": "Small folded pancakes stuffed with sweet rose ricotta, drizzled with syrup and pistachios.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "125g plain flour",
+            "80g fine semolina",
+            "1 tsp instant dried yeast",
+            "1 tsp caster sugar",
+            "1/2 tsp baking powder",
+            "300ml warm water",
+            "250g whole-milk ricotta",
+            "1 tbsp caster sugar",
+            "1 tsp rose water",
+            "110g caster sugar, for the syrup",
+            "125ml water, for the syrup",
+            "25g pistachios, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the flour, semolina, yeast, 1 tsp sugar and baking powder with the warm water until smooth. Rest for 20 minutes until bubbly.",
+        "Simmer the syrup sugar and water for 6 minutes until slightly thick, then cool.",
+        "Mix the ricotta, 1 tbsp sugar and rose water. Heat a non-stick pan over medium heat and pour in 3 tbsp batter per pancake, cooking one side only for 2 minutes until the top is full of bubbles and dry. Make 12.",
+        "Fold each pancake in half around 1 tbsp of the ricotta mix and pinch the edge closed.",
+        "Serve drizzled with the syrup and scattered with pistachios."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Contains tree nuts and gluten. Per serving: 2 pancakes. Plus 20 minutes resting. Best the day they are made."
+      ],
+      "nutrition": {
+        "kcal": 271,
+        "proteinG": 9,
+        "carbsG": 42,
+        "fatG": 7,
+        "fibreG": 2,
+        "sodiumMg": 80
+      }
+    },
+    {
+      "id": "alfajores-with-dulce-de-leche",
+      "title": "Alfajores with Dulce de Leche",
+      "summary": "Melt-in-the-mouth cornflour biscuits sandwiched with a golden milk caramel.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 30,
+      "cookMinutes": 45,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g cornflour",
+            "150g plain flour",
+            "1 tsp baking powder",
+            "125g butter, softened",
+            "100g icing sugar",
+            "3 egg yolks",
+            "1 tsp vanilla extract",
+            "395g tin sweetened condensed milk",
+            "20g butter"
+          ]
+        }
+      ],
+      "steps": [
+        "Beat the 125g butter and icing sugar for 3 minutes until pale, then beat in the yolks and vanilla. Stir in the cornflour, plain flour and baking powder to a soft dough, wrap and chill for 30 minutes.",
+        "Stir the condensed milk and 20g butter in a saucepan over low heat for 25 minutes until it turns thick and golden like fudge. Cool.",
+        "Heat the oven to 160°C fan (180°C conventional). Roll the dough 5mm thick, cut 24 rounds with a 5cm cutter and bake on lined trays for 12 minutes, until set and pale; they should not brown.",
+        "Cool completely, then sandwich pairs with 1 tbsp of the caramel."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 alfajor. Plus 30 minutes chilling. Keeps 5 days airtight.",
+        "Food safety: wash your hands and the bench after handling raw egg yolks."
+      ],
+      "nutrition": {
+        "kcal": 247,
+        "proteinG": 4,
+        "carbsG": 35,
+        "fatG": 10,
+        "fibreG": 1,
+        "sodiumMg": 120
+      }
+    },
+    {
+      "id": "brigadeiros-chocolate-truffles",
+      "title": "Brigadeiros Chocolate Truffles",
+      "summary": "Fudgy Brazilian chocolate balls rolled in coconut, made from condensed milk and cocoa.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "395g tin sweetened condensed milk",
+            "20g cocoa powder",
+            "20g butter",
+            "30g desiccated coconut"
+          ]
+        }
+      ],
+      "steps": [
+        "Stir the condensed milk, cocoa and butter in a non-stick pan over medium-low heat for 8 minutes, until the mixture is thick enough to drag a clear line across the base for 2 seconds.",
+        "Pour onto a greased plate and cool for 20 minutes, then chill for 1 hour until firm enough to roll.",
+        "With buttered hands, roll level teaspoons (about 15g) into 24 balls, then roll in the coconut."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 brigadeiros. Plus 1 hour chilling. Keeps 5 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 54,
+        "proteinG": 1,
+        "carbsG": 7,
+        "fatG": 2,
+        "fibreG": 1,
+        "sodiumMg": 35
+      }
+    },
+    {
+      "id": "cocadas-baked-coconut-mounds",
+      "title": "Cocadas Baked Coconut Mounds",
+      "summary": "Chewy coconut macaroon-style mounds with a golden edge, sweetened with condensed milk.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "160g desiccated coconut",
+            "200g sweetened condensed milk",
+            "2 egg yolks",
+            "1 tsp vanilla extract"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional) and line a tray with baking paper. Mix the coconut, condensed milk, egg yolks and vanilla.",
+        "Scoop 12 mounds, about 2 tbsp each, onto the tray, pressing them together.",
+        "Bake for 20 minutes, until the tips and edges are golden brown.",
+        "Cool on the tray for 10 minutes before lifting."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 mound. Keeps 5 days airtight.",
+        "Food safety: bake until golden and set; wash your hands after handling raw egg yolks."
+      ],
+      "nutrition": {
+        "kcal": 100,
+        "proteinG": 1,
+        "carbsG": 7,
+        "fatG": 7,
+        "fibreG": 1,
+        "sodiumMg": 30
+      }
+    },
+    {
+      "id": "tres-leches-squares",
+      "title": "Tres Leches Squares",
+      "summary": "A light sponge soaked in three milks and topped with cinnamon cream.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 25,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 eggs, separated",
+            "165g caster sugar",
+            "125g plain flour",
+            "1 1/2 tsp baking powder",
+            "3 tbsp milk",
+            "395g tin sweetened condensed milk",
+            "250ml milk",
+            "125ml thickened cream",
+            "200ml thickened cream, whipped to soft peaks",
+            "1 tsp ground cinnamon"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 170°C fan (190°C conventional) and grease a 20 x 30cm tin. Whisk the egg whites to stiff peaks, then whisk in the sugar a spoon at a time for 3 minutes until glossy.",
+        "Fold in the yolks, then the flour, baking powder and 3 tbsp milk until just combined. Pour into the tin and bake for 25 minutes, until golden and springy.",
+        "Whisk the condensed milk, 250ml milk and 125ml cream. Prick the warm cake all over with a fork and pour the mix slowly over it.",
+        "Chill for 4 hours, then spread with the whipped cream, dust with cinnamon and cut into 12 squares."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 square. Plus 4 hours chilling. Keeps 3 days in the fridge.",
+        "Food safety: bake the sponge until set, wash your hands after handling raw egg, and refrigerate within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 240,
+        "proteinG": 4,
+        "carbsG": 30,
+        "fatG": 11,
+        "fibreG": 1,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "polvorones-pecan-snowball-cookies",
+      "title": "Polvorones Pecan Snowball Cookies",
+      "summary": "Crumbly buttery cookies full of ground pecans, rolled in icing sugar.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 18,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g butter, softened",
+            "65g icing sugar, plus 65g for rolling",
+            "250g plain flour",
+            "100g pecans, finely ground",
+            "1 tsp vanilla extract"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 150°C fan (170°C conventional) and line two trays. Beat the butter and 65g icing sugar for 3 minutes until pale, then beat in the vanilla.",
+        "Stir in the flour and pecans to a soft dough. Roll level tablespoons into 24 balls and place 3cm apart.",
+        "Bake for 18 minutes, until set and pale golden underneath. Cool on the tray for 5 minutes.",
+        "Roll the warm cookies in the remaining icing sugar, then roll again once cool."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Contains tree nuts and gluten. Per serving: 2 cookies. Keeps 2 weeks airtight."
+      ],
+      "nutrition": {
+        "kcal": 297,
+        "proteinG": 3,
+        "carbsG": 27,
+        "fatG": 19,
+        "fibreG": 3,
+        "sodiumMg": 100
+      }
+    },
+    {
+      "id": "mitarashi-dango-with-sweet-soy-glaze",
+      "title": "Mitarashi Dango with Sweet Soy Glaze",
+      "summary": "Chewy rice-flour dumplings on skewers, brushed with a glossy sweet soy glaze.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g rice flour",
+            "130ml hot water",
+            "1 tbsp caster sugar",
+            "3 tbsp light soy sauce",
+            "40g caster sugar",
+            "100ml water",
+            "2 tsp cornflour mixed with 1 tbsp water"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the rice flour, 1 tbsp sugar and hot water, then knead for 3 minutes until smooth and like earlobe-soft dough. Roll into 12 balls.",
+        "Boil the dango in a pot of water for 4 minutes until they float, then lift into iced water for 1 minute and drain.",
+        "Simmer the soy sauce, 40g sugar and 100ml water for 2 minutes, stir in the cornflour mix and cook for 1 minute until glossy and thick.",
+        "Thread 3 dango onto each of 4 skewers, grill or pan-sear for 3 minutes until lightly charred, then brush with the glaze."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: 1 skewer of 3 dango. Best eaten the day they are made."
+      ],
+      "nutrition": {
+        "kcal": 187,
+        "proteinG": 3,
+        "carbsG": 41,
+        "fatG": 1,
+        "fibreG": 1,
+        "sodiumMg": 750
+      }
+    },
+    {
+      "id": "dorayaki-pancake-sandwiches-with-apricot-jam",
+      "title": "Dorayaki Pancake Sandwiches with Apricot Jam",
+      "summary": "Honey-scented pancakes sandwiched with apricot jam and whipped cream.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 eggs",
+            "75g caster sugar",
+            "1 tbsp honey",
+            "125g plain flour",
+            "1/2 tsp baking powder",
+            "80ml water",
+            "100g apricot jam",
+            "100ml thickened cream, whipped"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the eggs, sugar and honey for 4 minutes until pale and doubled in volume, then whisk in the water.",
+        "Sift in the flour and baking powder and fold until smooth. Rest the batter for 10 minutes.",
+        "Heat a non-stick pan over low heat and pour in 3 tbsp batter to make a 9cm pancake. Cook for 2 minutes until bubbles appear on the surface, flip and cook for 1 minute until golden. Make 12 pancakes.",
+        "Sandwich pairs of cooled pancakes with jam and whipped cream."
+      ],
+      "notes": [
+        "Snack. Vegetarian, not vegan (egg and honey). Per serving: 1 sandwich. Best the same day.",
+        "Food safety: cook the pancakes through until golden and set; wash your hands and the bench after handling raw egg."
+      ],
+      "nutrition": {
+        "kcal": 258,
+        "proteinG": 5,
+        "carbsG": 41,
+        "fatG": 8,
+        "fibreG": 1,
+        "sodiumMg": 120
+      }
+    },
+    {
+      "id": "daigaku-imo-candied-sweet-potato",
+      "title": "Daigaku Imo Candied Sweet Potato",
+      "summary": "Crisp-edged roasted sweet potato wedges tossed in a sticky sweet soy glaze and sesame seeds.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g sweet potato, cut into 3cm wedges",
+            "2 tbsp neutral oil",
+            "40g caster sugar",
+            "1 tbsp light soy sauce",
+            "1 tbsp water",
+            "1 tsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional). Toss the sweet potato with the oil and roast on a lined tray for 25 minutes, turning once, until golden outside and tender when pierced.",
+        "Simmer the sugar, soy sauce and water in a small pan for 3 minutes until syrupy and bubbling.",
+        "Toss the hot potato wedges in the glaze for 1 minute until glossy and sticky.",
+        "Sprinkle with the sesame seeds and cool for 5 minutes, as the glaze is very hot."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: a quarter of the wedges. Best eaten warm."
+      ],
+      "nutrition": {
+        "kcal": 226,
+        "proteinG": 2,
+        "carbsG": 35,
+        "fatG": 8,
+        "fibreG": 3,
+        "sodiumMg": 250
+      }
+    },
+    {
+      "id": "bibingka-cheese-and-coconut-cups",
+      "title": "Bibingka Cheese and Coconut Cups",
+      "summary": "Soft rice-flour cakes baked with coconut milk, topped with melted cheese and a sprinkle of coconut.",
+      "cuisine": "filipino",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g rice flour",
+            "110g caster sugar",
+            "1 tbsp baking powder",
+            "2 eggs",
+            "250ml tinned coconut milk",
+            "125ml milk",
+            "30g butter, melted",
+            "40g vegetarian hard cheese, grated",
+            "2 tbsp desiccated coconut"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C fan (200°C conventional) and grease a 12-hole muffin tin. Mix the rice flour, sugar and baking powder.",
+        "Whisk the eggs, coconut milk, milk and butter, then stir into the dry mix until smooth.",
+        "Divide among the holes, scatter with the cheese and coconut, and bake for 20 minutes, until puffed and golden.",
+        "Rest in the tin for 5 minutes before lifting out."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 cake. Best eaten warm on the day.",
+        "Food safety: bake until set; wash your hands and the bench after handling raw egg."
+      ],
+      "nutrition": {
+        "kcal": 166,
+        "proteinG": 3,
+        "carbsG": 20,
+        "fatG": 8,
+        "fibreG": 1,
+        "sodiumMg": 190
+      }
+    },
+    {
+      "id": "puto-steamed-rice-cakes-with-cheese",
+      "title": "Puto Steamed Rice Cakes with Cheese",
+      "summary": "Fluffy, lightly sweet steamed rice-flour cakes with a salty cheese topping.",
+      "cuisine": "filipino",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g rice flour",
+            "75g caster sugar",
+            "2 tsp baking powder",
+            "190ml milk",
+            "1 egg",
+            "1 tbsp neutral oil",
+            "30g vegetarian hard cheese, cut into small cubes"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the rice flour, sugar and baking powder, then whisk in the milk, egg and oil until smooth.",
+        "Grease 12 small moulds or a 12-hole silicone muffin tray and fill each two-thirds full. Put a cube of cheese on top of each.",
+        "Steam over simmering water, covered with a tea towel under the lid, for 15 minutes until risen and a skewer comes out clean.",
+        "Cool for 5 minutes before turning out."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 cakes. Best eaten the same day.",
+        "Food safety: steam until set; wash your hands and the bench after handling raw egg."
+      ],
+      "nutrition": {
+        "kcal": 212,
+        "proteinG": 5,
+        "carbsG": 34,
+        "fatG": 6,
+        "fibreG": 1,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "maja-blanca-coconut-corn-pudding",
+      "title": "Maja Blanca Coconut Corn Pudding",
+      "summary": "A set coconut milk pudding studded with sweet corn, cut into squares and topped with toasted coconut.",
+      "cuisine": "filipino",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400ml tinned coconut milk",
+            "500ml milk",
+            "165g caster sugar",
+            "60g cornflour",
+            "150g corn kernels",
+            "2 tbsp desiccated coconut, toasted"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the coconut milk, milk, sugar and cornflour in a saucepan until smooth.",
+        "Cook over medium heat, stirring constantly, for 12 minutes until very thick and glossy, then stir in the corn.",
+        "Pour into a lightly oiled 18cm square tin, smooth the top and cool for 20 minutes.",
+        "Chill for 3 hours until firm, scatter with the toasted coconut and cut into 8 squares."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 square. Plus 3 hours chilling. Keeps 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 251,
+        "proteinG": 3,
+        "carbsG": 34,
+        "fatG": 11,
+        "fibreG": 2,
+        "sodiumMg": 60
+      }
+    }
+  ]
+}

@@ -1,0 +1,801 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "rich-brown-beef-stock-from-roasted-bones",
+      "title": "Rich Brown Beef Stock from Roasted Bones",
+      "summary": "A deep, glossy brown stock from well-roasted beef bones and vegetables, the base for gravies and French onion soup.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 360,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 kg beef bones",
+            "2 onions, halved",
+            "2 carrots, chopped",
+            "2 celery stalks, chopped",
+            "2 tbsp tomato paste",
+            "4 bay leaves",
+            "10 black peppercorns",
+            "4 litres cold water"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the bones at 230°C for 45 minutes, turning once, until deep brown.",
+        "Smear the vegetables with the tomato paste and roast them alongside for the last 25 minutes until caramelised.",
+        "Tip everything into a large pot with the bay and peppercorns and cover with the cold water.",
+        "Bring to a bare simmer, skim well, then cook gently uncovered for 5 hours until the stock is rich and brown.",
+        "Strain through a fine sieve, cool quickly and lift off the fat once chilled."
+      ],
+      "notes": [
+        "Food safety: cool within 2 hours, keep in the fridge up to 4 days or freeze for 3 months, and reheat until boiling hot.",
+        "Do not boil hard or the stock turns cloudy."
+      ],
+      "nutrition": {
+        "kcal": 70,
+        "proteinG": 10,
+        "carbsG": 3,
+        "fatG": 2,
+        "fibreG": 0,
+        "sodiumMg": 130
+      }
+    },
+    {
+      "id": "clear-fish-stock-from-snapper-frames",
+      "title": "Clear Fish Stock from Snapper Frames",
+      "summary": "A light, sweet fish stock simmered only 25 minutes so it stays clean and clear.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 kg white fish frames, gills removed",
+            "1 onion, sliced",
+            "1 leek, sliced",
+            "1 celery stalk, sliced",
+            "1/2 cup dry white wine",
+            "6 parsley stalks",
+            "2 bay leaves",
+            "8 peppercorns",
+            "2 litres cold water"
+          ]
+        }
+      ],
+      "steps": [
+        "Rinse the fish frames well under cold water until the water runs clear.",
+        "Place everything in a pot, bring to a bare simmer and skim until the surface is clear.",
+        "Simmer gently for 25 minutes, no longer, until the fish flesh turns opaque and flakes and the stock is fragrant.",
+        "Strain through a fine sieve and cool quickly."
+      ],
+      "notes": [
+        "Food safety: cool within 1 hour, keep in the fridge up to 2 days or freeze for 3 months.",
+        "Boiling or simmering past 30 minutes makes it bitter."
+      ],
+      "nutrition": {
+        "kcal": 70,
+        "proteinG": 10,
+        "carbsG": 3,
+        "fatG": 2,
+        "fibreG": 0,
+        "sodiumMg": 120
+      }
+    },
+    {
+      "id": "ham-hock-and-bay-bone-broth",
+      "title": "Ham Hock and Bay Bone Broth",
+      "summary": "A smoky, collagen-rich broth from ham hock with bay, onion and peppercorns.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 180,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 smoked ham hock",
+            "1 onion, halved",
+            "2 carrots, chopped",
+            "2 celery stalks, chopped",
+            "3 bay leaves",
+            "8 peppercorns",
+            "2.5 litres cold water",
+            "2 tbsp apple cider vinegar"
+          ]
+        }
+      ],
+      "steps": [
+        "Place the ham hock and vegetables in a large pot with the bay, peppercorns and vinegar and cover with cold water.",
+        "Bring to a bare simmer and skim, then cook gently for 3 hours until the meat falls from the bone.",
+        "Lift out the hock, pull off the meat and keep it for soup.",
+        "Strain the broth through a fine sieve and cool."
+      ],
+      "notes": [
+        "Food safety: cool within 2 hours, keep in the fridge up to 4 days, and reheat until boiling hot.",
+        "Taste before salting; ham hock stock is salty."
+      ],
+      "nutrition": {
+        "kcal": 85,
+        "proteinG": 10,
+        "carbsG": 4,
+        "fatG": 3,
+        "fibreG": 1,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "roasted-carrot-and-ginger-bisque",
+      "title": "Roasted Carrot and Ginger Bisque",
+      "summary": "Smooth, sweet carrot soup roasted until caramelised, with fresh ginger and a swirl of cream.",
+      "cuisine": "french",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800 g carrots, chopped",
+            "1 onion, chopped",
+            "3 cm ginger, grated",
+            "2 tbsp olive oil",
+            "3 cups vegetable stock",
+            "1/3 cup cream",
+            "1/2 tsp salt",
+            "1 tbsp chopped chives"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the carrots and onion with the oil at 200°C for 25 minutes until golden and soft.",
+        "Simmer with the ginger and stock for 10 minutes until completely tender.",
+        "Blend until silky smooth, stir in the cream and salt, and reheat gently until steaming.",
+        "Ladle into bowls and sprinkle with chives."
+      ],
+      "notes": [
+        "Use coconut cream for dairy-free.",
+        "Freezes well without the cream for 3 months."
+      ],
+      "nutrition": {
+        "kcal": 242,
+        "proteinG": 4,
+        "carbsG": 22,
+        "fatG": 14,
+        "fibreG": 6,
+        "sodiumMg": 820
+      }
+    },
+    {
+      "id": "roasted-pumpkin-and-coconut-bisque",
+      "title": "Roasted Pumpkin and Coconut Bisque",
+      "summary": "Velvety pumpkin soup roasted with garlic and finished with coconut cream and lime.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 kg pumpkin, peeled and cubed",
+            "1 onion, chopped",
+            "3 cloves garlic, peeled",
+            "2 tbsp olive oil",
+            "3 cups vegetable stock",
+            "1/2 cup coconut cream",
+            "1 lime, juiced",
+            "1/2 tsp salt",
+            "1 pinch chilli flakes"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the pumpkin, onion and garlic with the oil at 200°C for 30 minutes until soft and browned.",
+        "Simmer with the stock for 5 minutes until hot.",
+        "Blend until smooth, stir in the coconut cream, lime juice and salt, and reheat until steaming.",
+        "Serve with a pinch of chilli."
+      ],
+      "notes": [
+        "Naturally vegan and gluten-free if the stock is.",
+        "Freezes well for 3 months."
+      ],
+      "nutrition": {
+        "kcal": 275,
+        "proteinG": 4,
+        "carbsG": 28,
+        "fatG": 15,
+        "fibreG": 6,
+        "sodiumMg": 830
+      }
+    },
+    {
+      "id": "thick-cream-of-mushroom-soup",
+      "title": "Thick Cream of Mushroom Soup",
+      "summary": "Earthy, creamy mushroom soup with browned mushrooms, thyme and a splash of cream.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "500 g mixed mushrooms, sliced",
+            "1 onion, diced",
+            "2 cloves garlic, crushed",
+            "30 g butter",
+            "2 tbsp plain flour",
+            "3 cups chicken stock",
+            "1/3 cup cream",
+            "1 tsp thyme leaves",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the mushrooms in the butter over high heat for 8 minutes until golden and the liquid has gone.",
+        "Add the onion, garlic and thyme and cook for 4 minutes until soft.",
+        "Stir in the flour, then add the stock gradually and simmer for 10 minutes until thickened.",
+        "Blend half the soup until smooth, return to the pot and stir in the cream and salt until hot."
+      ],
+      "notes": [
+        "Use vegetable stock for vegetarian.",
+        "Do not boil after adding the cream."
+      ],
+      "nutrition": {
+        "kcal": 241,
+        "proteinG": 7,
+        "carbsG": 18,
+        "fatG": 15,
+        "fibreG": 3,
+        "sodiumMg": 820
+      }
+    },
+    {
+      "id": "sweet-corn-bisque-with-chilli-oil",
+      "title": "Sweet Corn Bisque with Chilli Oil",
+      "summary": "Silky corn soup blended with potato and finished with a drizzle of chilli oil.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 cups corn kernels",
+            "1 onion, diced",
+            "1 potato, diced",
+            "1 tbsp olive oil",
+            "3 cups vegetable stock",
+            "1/3 cup milk",
+            "1/2 tsp salt",
+            "2 tsp chilli oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion in the oil for 5 minutes until translucent.",
+        "Add the corn, potato and stock and simmer for 15 minutes until the potato is very tender.",
+        "Blend until completely smooth and press through a sieve for extra silkiness.",
+        "Stir in the milk and salt, reheat until steaming and drizzle with chilli oil."
+      ],
+      "notes": [
+        "Fresh sweetcorn off 4 cobs works well in summer.",
+        "Freezes for 2 months."
+      ],
+      "nutrition": {
+        "kcal": 242,
+        "proteinG": 6,
+        "carbsG": 34,
+        "fatG": 8,
+        "fibreG": 5,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "cauliflower-and-cheddar-bisque",
+      "title": "Cauliflower and Cheddar Bisque",
+      "summary": "Creamy roasted cauliflower soup enriched with mature cheddar and a hint of mustard.",
+      "cuisine": "british",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 head cauliflower, cut into florets",
+            "1 onion, chopped",
+            "2 tbsp olive oil",
+            "3 cups vegetable stock",
+            "1 cup milk",
+            "3/4 cup grated mature cheddar",
+            "1 tsp wholegrain mustard",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the cauliflower and onion with the oil at 200°C for 25 minutes until golden and tender.",
+        "Simmer with the stock and milk for 8 minutes until hot.",
+        "Blend until smooth, then stir in the cheddar and mustard until melted.",
+        "Season with the salt and reheat gently until steaming."
+      ],
+      "notes": [
+        "Cheddar made with animal rennet is not suitable for vegetarians; choose a vegetarian cheddar.",
+        "Freezes for 2 months."
+      ],
+      "nutrition": {
+        "kcal": 206,
+        "proteinG": 10,
+        "carbsG": 11,
+        "fatG": 13,
+        "fibreG": 4,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "kids-chicken-noodle-soup-for-the-thermos",
+      "title": "Kids' Chicken Noodle Soup for the Thermos",
+      "summary": "A mild chicken soup with tiny noodles and soft vegetables, ideal for a school lunchbox thermos.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300 g chicken breast fillets",
+            "1 carrot, diced small",
+            "1 celery stalk, diced small",
+            "4 cups low-salt chicken stock",
+            "1/2 cup small pasta shapes",
+            "1/2 cup frozen peas",
+            "1 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the chicken in the stock for 12 minutes until cooked through with no pink, then lift out and shred.",
+        "Add the carrot, celery and pasta to the stock and simmer for 8 minutes until the pasta is tender.",
+        "Return the chicken with the peas and cook for 2 minutes until hot, then stir in the parsley."
+      ],
+      "notes": [
+        "Food safety: cook chicken to 75°C throughout; keep the soup above 60°C in the thermos by pre-heating it with boiling water, and eat within 4 hours.",
+        "Use low-salt stock for little ones."
+      ],
+      "nutrition": {
+        "kcal": 209,
+        "proteinG": 22,
+        "carbsG": 22,
+        "fatG": 3,
+        "fibreG": 3,
+        "sodiumMg": 540
+      }
+    },
+    {
+      "id": "kids-creamy-tomato-soup-with-cheese-toast-dippers",
+      "title": "Kids' Creamy Tomato Soup with Cheese Toast Dippers",
+      "summary": "Smooth mild tomato soup with strips of cheesy toast for dunking.",
+      "cuisine": "british",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800 g can crushed tomatoes",
+            "1 onion, chopped",
+            "1 carrot, grated",
+            "1 tbsp olive oil",
+            "2 cups vegetable stock",
+            "1/4 cup milk",
+            "4 slices bread",
+            "3/4 cup grated cheddar"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion and carrot in the oil for 6 minutes until tender.",
+        "Add the tomatoes and stock and simmer for 15 minutes until thick.",
+        "Blend until smooth and stir in the milk.",
+        "Top the bread with cheddar, grill for 3 minutes until bubbling, then cut into strips for dipping."
+      ],
+      "notes": [
+        "Add a pinch of sugar if the tomatoes are sharp.",
+        "Freezes for 3 months."
+      ],
+      "nutrition": {
+        "kcal": 315,
+        "proteinG": 12,
+        "carbsG": 35,
+        "fatG": 13,
+        "fibreG": 5,
+        "sodiumMg": 840
+      }
+    },
+    {
+      "id": "kids-mild-veggie-minestrone-for-the-lunchbox",
+      "title": "Kids' Mild Veggie Minestrone for the Lunchbox",
+      "summary": "A gentle vegetable and small pasta soup with no spice, perfect for a thermos.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "1 carrot, diced",
+            "1 zucchini, diced",
+            "1 celery stalk, diced",
+            "400 g can diced tomatoes",
+            "3 cups low-salt vegetable stock",
+            "1/2 cup small pasta shapes",
+            "1/2 cup canned white beans, drained",
+            "1 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the carrot, zucchini and celery in the oil for 5 minutes until tender.",
+        "Add the tomatoes and stock and simmer for 10 minutes until the vegetables are soft.",
+        "Stir in the pasta and beans and simmer for 8 minutes until the pasta is tender, then add the parsley."
+      ],
+      "notes": [
+        "Pre-heat the thermos with boiling water before filling.",
+        "Sprinkle a little vegetarian hard cheese over the top if you like."
+      ],
+      "nutrition": {
+        "kcal": 201,
+        "proteinG": 7,
+        "carbsG": 29,
+        "fatG": 5,
+        "fibreG": 6,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "quick-pickled-red-onions-with-orange-and-chilli",
+      "title": "Quick Pickled Red Onions with Orange and Chilli",
+      "summary": "Bright pink onions in an orange and cider vinegar brine, ready in 15 minutes for brunch plates.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 3,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 red onions, thinly sliced",
+            "1/2 cup apple cider vinegar",
+            "1/4 cup orange juice",
+            "1 tbsp sugar",
+            "1/2 tsp salt",
+            "1/2 tsp chilli flakes"
+          ]
+        }
+      ],
+      "steps": [
+        "Pack the onions into a clean jar.",
+        "Warm the vinegar, orange juice, sugar, salt and chilli in a small pan for 2 minutes until the sugar dissolves.",
+        "Pour over the onions, press down until covered, and cool before using."
+      ],
+      "notes": [
+        "Keeps 2 weeks in the fridge.",
+        "Ready to eat after 20 minutes."
+      ],
+      "nutrition": {
+        "kcal": 52,
+        "proteinG": 1,
+        "carbsG": 11,
+        "fatG": 0,
+        "fibreG": 2,
+        "sodiumMg": 200
+      }
+    },
+    {
+      "id": "quick-pickled-carrot-and-radish-ribbons",
+      "title": "Quick Pickled Carrot and Radish Ribbons",
+      "summary": "Crisp, tangy carrot and radish ribbons that perk up avocado toast and eggs.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 3,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 carrots, peeled into ribbons",
+            "6 radishes, thinly sliced",
+            "1/2 cup rice vinegar",
+            "1/2 cup water",
+            "2 tbsp sugar",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Pack the carrot and radish into a clean jar.",
+        "Heat the vinegar, water, sugar and salt for 2 minutes until the sugar dissolves.",
+        "Pour over the vegetables and cool until room temperature before covering."
+      ],
+      "notes": [
+        "Keeps 2 weeks in the fridge.",
+        "Great on rice bowls."
+      ],
+      "nutrition": {
+        "kcal": 56,
+        "proteinG": 1,
+        "carbsG": 12,
+        "fatG": 0,
+        "fibreG": 2,
+        "sodiumMg": 420
+      }
+    },
+    {
+      "id": "gluten-free-cornbread-stuffing-muffins",
+      "title": "Gluten-Free Cornbread Stuffing Muffins",
+      "summary": "Cornmeal and sage stuffing baked into muffins with crisp tops, a gluten-free side for Thanksgiving.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 6,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups gluten-free cornbread, cubed",
+            "1 onion, finely diced",
+            "2 celery stalks, finely diced",
+            "40 g butter",
+            "1 tbsp chopped sage",
+            "1 cup chicken stock",
+            "1 egg, beaten",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Dry the bread cubes at 150°C for 15 minutes until crisp.",
+        "Soften the onion and celery in the butter for 6 minutes until tender, then stir in the sage.",
+        "Toss the bread with the vegetables, stock, egg and salt until just moist.",
+        "Spoon into a greased muffin tin and bake at 190°C for 25 minutes until golden and set."
+      ],
+      "notes": [
+        "Food safety: cook until the centre reaches 75°C because the mixture contains raw egg.",
+        "Use vegetable stock for vegetarian."
+      ],
+      "nutrition": {
+        "kcal": 350,
+        "proteinG": 11,
+        "carbsG": 57,
+        "fatG": 8,
+        "fibreG": 3,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "maple-sweet-potatoes-with-toasted-pecans",
+      "title": "Maple Sweet Potatoes with Toasted Pecans",
+      "summary": "Roasted sweet potato chunks glazed with maple syrup and sprinkled with pecans.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 40,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 kg sweet potatoes, cut into chunks",
+            "2 tbsp olive oil",
+            "3 tbsp maple syrup",
+            "1/2 tsp cinnamon",
+            "1/2 cup pecans, toasted",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the sweet potatoes with the oil, cinnamon and salt and roast at 200°C for 30 minutes until tender and browned.",
+        "Drizzle with the maple syrup and roast for 8 minutes more until glossy and caramelised.",
+        "Scatter with the pecans and serve hot."
+      ],
+      "notes": [
+        "Vegan and gluten-free.",
+        "Use walnuts if you prefer."
+      ],
+      "nutrition": {
+        "kcal": 283,
+        "proteinG": 3,
+        "carbsG": 36,
+        "fatG": 13,
+        "fibreG": 5,
+        "sodiumMg": 200
+      }
+    },
+    {
+      "id": "sage-cornbread-dressing",
+      "title": "Sage Cornbread Dressing",
+      "summary": "Savoury baked cornbread dressing with onion, celery and plenty of fresh sage.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 8,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "400 g stale cornbread, cubed",
+            "1 onion, diced",
+            "2 celery stalks, diced",
+            "50 g butter",
+            "2 tbsp chopped sage",
+            "2 cups chicken stock",
+            "2 eggs, beaten",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion and celery in the butter for 8 minutes until tender, then stir in the sage.",
+        "Toss with the cornbread, stock, eggs and salt until well moistened.",
+        "Spoon into a greased dish and bake at 190°C for 35 minutes until golden on top and set."
+      ],
+      "notes": [
+        "Food safety: bake until the centre reaches 75°C because of the raw egg.",
+        "Use vegetable stock for vegetarian."
+      ],
+      "nutrition": {
+        "kcal": 278,
+        "proteinG": 9,
+        "carbsG": 32,
+        "fatG": 12,
+        "fibreG": 3,
+        "sodiumMg": 640
+      }
+    }
+  ]
+}

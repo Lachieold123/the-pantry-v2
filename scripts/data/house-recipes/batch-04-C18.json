@@ -1,0 +1,1285 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "japanese-chawanmushi-savoury-egg-custard",
+      "title": "Japanese Chawanmushi Savoury Egg Custard",
+      "summary": "Silky steamed egg custard in dashi with prawn and shiitake, set gently so it wobbles like soft tofu.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 large eggs",
+            "500ml dashi stock, cooled",
+            "1 tbsp soy sauce",
+            "1 tbsp mirin",
+            "4 raw prawns, peeled",
+            "2 shiitake mushrooms, sliced",
+            "2 spring onions, finely sliced",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the eggs gently with the dashi, soy sauce, mirin and a pinch of salt, then strain through a sieve into a jug so the custard is smooth.",
+        "Divide the prawns and shiitake between four heatproof cups and pour the egg mixture over, skimming off any bubbles.",
+        "Cover each cup with foil and set in a steamer over barely simmering water.",
+        "Steam on low for 15 to 18 minutes, until the custard just sets with a gentle wobble and a skewer comes out clear.",
+        "Scatter with spring onion and serve hot with a spoon."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until fully set with no liquid egg, and the prawns until pink and opaque. Keep the steamer at a gentle simmer so the custard stays smooth. Eat the same day and do not reheat."
+      ],
+      "nutrition": {
+        "kcal": 132,
+        "proteinG": 14,
+        "carbsG": 5,
+        "fatG": 6,
+        "fibreG": 1,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "japanese-okayu-egg-and-spring-onion-rice-porridge",
+      "title": "Japanese Okayu Egg and Spring Onion Rice Porridge",
+      "summary": "Soft, gentle rice porridge simmered in dashi with a softly set egg, a comforting Japanese morning bowl.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 35,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g short-grain white rice, rinsed",
+            "900ml water",
+            "1 tsp dashi powder",
+            "2 eggs",
+            "2 spring onions, finely sliced",
+            "1 tsp soy sauce",
+            "1 tsp toasted sesame oil",
+            "1 tbsp pickled ginger",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Put the rice, water and dashi powder in a saucepan and bring to the boil until bubbling, then reduce to a low simmer.",
+        "Cover with the lid slightly ajar and cook for 30 minutes, stirring now and then, until the rice is very soft and creamy.",
+        "Season with a pinch of salt and the soy sauce.",
+        "Beat the eggs and swirl them in, then cook for 2 minutes, until the egg is fully set in soft ribbons.",
+        "Ladle into bowls and top with spring onion, sesame oil and pickled ginger."
+      ],
+      "notes": [
+        "Food safety: cook the egg until fully set, with no runny egg left. Eat the same day."
+      ],
+      "nutrition": {
+        "kcal": 351,
+        "proteinG": 12,
+        "carbsG": 55,
+        "fatG": 9,
+        "fibreG": 1,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "japanese-salmon-ochazuke-dashi-rice",
+      "title": "Japanese Salmon Ochazuke Dashi Rice",
+      "summary": "Hot dashi poured over rice and flaked grilled salmon, a light and soothing Japanese supper.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 salmon fillets, skin on, about 120g each",
+            "300g cooked short-grain rice, warm",
+            "500ml hot dashi stock",
+            "1 tbsp soy sauce",
+            "2 tsp toasted sesame seeds",
+            "1 sheet nori, cut in thin strips",
+            "1 spring onion, finely sliced",
+            "1 tsp wasabi paste",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Season the salmon with a pinch of salt and grill for 8 to 10 minutes, turning once, until the flesh flakes easily and is opaque all the way through.",
+        "Flake the salmon into large pieces and discard the skin.",
+        "Divide the warm rice between two bowls and top with the salmon, nori, sesame seeds and spring onion.",
+        "Stir the soy sauce into the hot dashi and pour it over the rice until it is just covered.",
+        "Serve straight away with a little wasabi on the side."
+      ],
+      "notes": [
+        "Food safety: cook the salmon until opaque all the way through, then eat it promptly. Cool any leftover rice and refrigerate it within 1 hour, then use within 24 hours."
+      ],
+      "nutrition": {
+        "kcal": 431,
+        "proteinG": 30,
+        "carbsG": 52,
+        "fatG": 11,
+        "fibreG": 2,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "japanese-kenchinjiru-root-vegetable-and-tofu-soup",
+      "title": "Japanese Kenchinjiru Root Vegetable and Tofu Soup",
+      "summary": "A temple-style vegan soup of daikon, carrot, sweet potato and crumbled tofu simmered in dashi and sesame oil.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp toasted sesame oil",
+            "200g firm tofu, crumbled",
+            "150g daikon, cut in half moons",
+            "1 carrot, cut in half moons",
+            "150g sweet potato, cubed",
+            "4 shiitake mushrooms, sliced",
+            "1 litre kombu dashi stock",
+            "2 tbsp soy sauce",
+            "1 tbsp mirin",
+            "2 spring onions, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the sesame oil in a large saucepan over medium heat and fry the tofu for 3 minutes, until lightly golden.",
+        "Add the daikon, carrot, sweet potato and shiitake and stir for 2 minutes, until glossy.",
+        "Pour in the dashi and bring to the boil, then simmer for 15 minutes, until all the vegetables are tender.",
+        "Stir in the soy sauce and mirin and taste for seasoning.",
+        "Ladle into bowls and top with spring onion."
+      ],
+      "notes": [
+        "Keeps in the fridge for 3 days; reheat until steaming hot."
+      ],
+      "nutrition": {
+        "kcal": 195,
+        "proteinG": 9,
+        "carbsG": 22,
+        "fatG": 7,
+        "fibreG": 4,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "japanese-goma-ae-sesame-spinach",
+      "title": "Japanese Goma-ae Sesame Spinach",
+      "summary": "Blanched spinach in a sweet, nutty ground sesame dressing, a classic cold Japanese side.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 3,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g baby spinach",
+            "3 tbsp toasted sesame seeds",
+            "1 tbsp soy sauce",
+            "2 tsp sugar",
+            "1 tsp mirin",
+            "1 tsp rice vinegar"
+          ]
+        }
+      ],
+      "steps": [
+        "Bring a large pot of water to the boil and blanch the spinach for 40 seconds, until bright green and just wilted.",
+        "Drain and cool under cold water, then squeeze out the water firmly with your hands.",
+        "Grind the sesame seeds in a mortar until mostly crushed and oily.",
+        "Mix in the soy sauce, sugar, mirin and vinegar until the dressing is smooth.",
+        "Toss the spinach through the dressing and serve in small mounds."
+      ],
+      "notes": [
+        "Best eaten the day it is made. Chill for 20 minutes for a cooler side."
+      ],
+      "nutrition": {
+        "kcal": 76,
+        "proteinG": 4,
+        "carbsG": 4,
+        "fatG": 4,
+        "fibreG": 2,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "japanese-hiyayakko-chilled-tofu-with-ginger-and-bonito",
+      "title": "Japanese Hiyayakko Chilled Tofu with Ginger and Bonito",
+      "summary": "Cold silken tofu with grated ginger, spring onion, bonito flakes and soy, a no-cook summer starter.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "lunch",
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 8,
+      "cookMinutes": 0,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g silken tofu",
+            "1 tsp grated fresh ginger",
+            "1 spring onion, finely sliced",
+            "1 tbsp dried bonito flakes",
+            "1 tbsp soy sauce",
+            "1 tsp toasted sesame seeds",
+            "1 mint leaf, shredded"
+          ]
+        }
+      ],
+      "steps": [
+        "Drain the tofu gently on paper towel for 5 minutes, then cut it into two large blocks.",
+        "Place each block on a plate and top with the ginger, spring onion and bonito flakes.",
+        "Drizzle with the soy sauce and scatter with sesame seeds and herb.",
+        "Chill until very cold, then serve straight away."
+      ],
+      "notes": [
+        "Keep the tofu in the fridge until the moment of serving."
+      ],
+      "nutrition": {
+        "kcal": 105,
+        "proteinG": 10,
+        "carbsG": 3,
+        "fatG": 6,
+        "fibreG": 1,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "japanese-ohitashi-greens-in-dashi",
+      "title": "Japanese Ohitashi Greens in Dashi",
+      "summary": "Blanched greens soaked in cool soy dashi, a refreshing make-ahead side with bonito flakes.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 3,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 bunches bok choy, halved",
+            "250ml dashi stock, cooled",
+            "2 tbsp soy sauce",
+            "1 tbsp mirin",
+            "1 tbsp dried bonito flakes",
+            "1 tsp toasted sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Blanch the bok choy in boiling water for 1 minute, until bright green and just tender at the stems.",
+        "Plunge into iced water, then drain well and squeeze lightly.",
+        "Mix the dashi, soy sauce and mirin in a shallow dish.",
+        "Add the greens and soak in the fridge for 30 minutes, turning once.",
+        "Lift out, cut into short lengths and serve topped with bonito flakes and sesame seeds."
+      ],
+      "notes": [
+        "Keeps in its liquid in the fridge for 2 days."
+      ],
+      "nutrition": {
+        "kcal": 49,
+        "proteinG": 4,
+        "carbsG": 5,
+        "fatG": 1,
+        "fibreG": 2,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "chinese-cong-you-bing-spring-onion-egg-pancake",
+      "title": "Chinese Cong You Bing Spring Onion Egg Pancake",
+      "summary": "Flaky, crisp-edged spring onion pancakes folded around a soft fried egg, a Taiwanese street breakfast.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g plain flour",
+            "180ml boiling water",
+            "2 tbsp sesame oil",
+            "6 spring onions, finely sliced",
+            "3 tbsp vegetable oil",
+            "4 eggs",
+            "1 tbsp soy sauce",
+            "1 tsp sugar",
+            "1 tsp chilli sauce",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour, boiling water and a pinch of salt into a shaggy dough, then knead for 3 minutes, until smooth, and rest under a bowl for 20 minutes.",
+        "Divide into 4 balls and roll each very thin, brush with sesame oil and scatter with spring onion and salt.",
+        "Roll up like a cigar, coil into a snail and flatten with your palm, then roll out to about 3mm thick.",
+        "Fry each pancake in a little vegetable oil for 2 to 3 minutes per side, until golden and blistered with crisp edges.",
+        "Fry the eggs in the same pan until the whites are set and the yolks are cooked to your liking.",
+        "Place an egg on each pancake, drizzle with soy, sugar and chilli sauce, fold and serve warm."
+      ],
+      "notes": [
+        "Food safety: cook eggs until the whites are completely set. Pregnant, elderly and young people should have the yolk cooked firm."
+      ],
+      "nutrition": {
+        "kcal": 371,
+        "proteinG": 13,
+        "carbsG": 45,
+        "fatG": 15,
+        "fibreG": 2,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "chinese-marbled-soy-eggs",
+      "title": "Chinese Marbled Soy Eggs",
+      "summary": "Hard-boiled eggs cracked and simmered in star anise, wine and soy until the shells show a marbled pattern.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "snack",
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 60,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 eggs",
+            "2 tbsp Shaoxing wine",
+            "100ml soy sauce",
+            "2 star anise",
+            "1 cinnamon stick",
+            "1 tbsp sugar",
+            "750ml water",
+            "2 strips orange peel"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the eggs in water for 9 minutes, until the yolks are fully set, then cool in cold water.",
+        "Tap the shells all over with a spoon so they crackle but stay on.",
+        "Simmer the wine, soy sauce, star anise, cinnamon, sugar, orange peel and water for 10 minutes, until fragrant and dark.",
+        "Add the eggs and simmer on very low heat for 40 minutes, until the colour has soaked in.",
+        "Turn off the heat and steep for at least 2 hours, or overnight in the fridge, then peel to reveal the marbling."
+      ],
+      "notes": [
+        "Food safety: boil the eggs until the yolks are fully set. Keep refrigerated in the liquid and eat within 4 days."
+      ],
+      "nutrition": {
+        "kcal": 81,
+        "proteinG": 7,
+        "carbsG": 2,
+        "fatG": 5,
+        "fibreG": 0,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "chinese-dry-fried-green-beans-with-pork",
+      "title": "Chinese Dry-Fried Green Beans with Pork",
+      "summary": "Blistered green beans wok-tossed with pork mince, garlic and preserved vegetable, a Sichuan favourite.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g green beans, trimmed",
+            "2 tbsp vegetable oil",
+            "150g pork mince",
+            "3 garlic cloves, finely chopped",
+            "1 tbsp finely chopped fresh ginger",
+            "2 dried chillies",
+            "1 tbsp soy sauce",
+            "1 tbsp Shaoxing wine",
+            "1 tsp sugar",
+            "1 tsp sesame oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat 1 tbsp oil in a wok over high heat and fry the beans for 5 to 6 minutes, tossing, until blistered and wrinkled but still crisp.",
+        "Remove the beans and add the remaining oil to the wok.",
+        "Stir-fry the pork mince for 4 minutes, breaking it up, until browned and cooked through to 75°C.",
+        "Add the garlic, ginger and chillies and stir for 30 seconds, until fragrant.",
+        "Return the beans with the soy sauce, wine and sugar and toss for 1 minute, until glossy.",
+        "Finish with the sesame oil and serve hot."
+      ],
+      "notes": [
+        "Food safety: cook the pork mince until it reaches 75°C in the centre and no pink remains. Refrigerate leftovers within 2 hours and use in 2 days."
+      ],
+      "nutrition": {
+        "kcal": 200,
+        "proteinG": 12,
+        "carbsG": 9,
+        "fatG": 12,
+        "fibreG": 4,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "chinese-doufu-nao-savoury-silken-tofu-pudding",
+      "title": "Chinese Doufu Nao Savoury Silken Tofu Pudding",
+      "summary": "Warm, spoonable silken tofu in a soy, chilli oil and pickle broth, a northern Chinese breakfast.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 8,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g silken tofu",
+            "250ml chicken stock",
+            "1 tbsp soy sauce",
+            "1 tsp rice vinegar",
+            "1 tsp cornflour mixed with 1 tbsp water",
+            "1 tbsp roasted peanuts, crushed",
+            "1 spring onion, finely sliced",
+            "1 tsp chilli oil",
+            "1 tsp sesame oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the stock, soy sauce and vinegar in a small saucepan until simmering.",
+        "Stir in the cornflour mixture and cook for 1 minute, until the broth is lightly thickened.",
+        "Slide the tofu in large spoonfuls into the broth and warm gently for 3 minutes, until just steaming.",
+        "Ladle into two bowls and top with peanuts, spring onion, chilli oil and sesame oil."
+      ],
+      "notes": [
+        "Serve at once; the tofu breaks up if boiled hard."
+      ],
+      "nutrition": {
+        "kcal": 210,
+        "proteinG": 17,
+        "carbsG": 8,
+        "fatG": 12,
+        "fibreG": 1,
+        "sodiumMg": 850
+      }
+    },
+    {
+      "id": "korean-kongnamul-guk-bean-sprout-soup",
+      "title": "Korean Kongnamul Guk Bean Sprout Soup",
+      "summary": "A clear, clean soup of soybean sprouts and garlic, the classic Korean morning-after bowl.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "breakfast",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g soybean sprouts, rinsed",
+            "1.2 litres water",
+            "1 dried kombu sheet",
+            "4 garlic cloves, crushed",
+            "2 tbsp soy sauce",
+            "1 tsp fish sauce",
+            "2 spring onions, sliced",
+            "1 tsp gochugaru chilli flakes",
+            "1 tsp sesame oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Bring the water and kombu to the boil until bubbling in a lidded pot, then remove the kombu.",
+        "Add the sprouts and garlic, cover and cook for 10 minutes, until the sprouts are tender and no longer raw-tasting.",
+        "Stir in the soy sauce and fish sauce and simmer for 3 minutes.",
+        "Add the spring onions and chilli flakes and drizzle with sesame oil before serving hot."
+      ],
+      "notes": [
+        "Keep the lid on while cooking to avoid a grassy taste. Keeps 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 104,
+        "proteinG": 9,
+        "carbsG": 2,
+        "fatG": 6,
+        "fibreG": 3,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "korean-miyeok-guk-seaweed-and-beef-soup",
+      "title": "Korean Miyeok Guk Seaweed and Beef Soup",
+      "summary": "Birthday soup of silky wakame simmered with beef, sesame oil and garlic.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "breakfast",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "15g dried wakame seaweed",
+            "200g beef brisket, thinly sliced",
+            "1 tbsp sesame oil",
+            "4 garlic cloves, minced",
+            "1.5 litres water",
+            "3 tbsp soy sauce",
+            "1 tsp fish sauce",
+            "1 spring onion, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the wakame in cold water for 15 minutes, until soft, then drain and cut into short lengths.",
+        "Heat the sesame oil in a pot and fry the beef for 4 minutes, until browned all over.",
+        "Add the seaweed and garlic and stir for 2 minutes, until fragrant.",
+        "Pour in the water and soy sauce, bring to the boil and simmer for 25 minutes, until the beef is tender.",
+        "Stir in the fish sauce and serve with the spring onion."
+      ],
+      "notes": [
+        "Food safety: cook the beef to at least 71°C in the thickest piece and until tender, with no pink. Cool leftovers quickly and use within 3 days."
+      ],
+      "nutrition": {
+        "kcal": 169,
+        "proteinG": 18,
+        "carbsG": 3,
+        "fatG": 9,
+        "fibreG": 2,
+        "sodiumMg": 1300
+      }
+    },
+    {
+      "id": "korean-ssamjang-dipping-sauce",
+      "title": "Korean Ssamjang Dipping Sauce",
+      "summary": "Thick savoury dip of fermented soybean paste, gochujang, garlic and sesame for lettuce wraps.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 tbsp doenjang fermented soybean paste",
+            "2 tbsp gochujang",
+            "1 tbsp sesame oil",
+            "3 garlic cloves, minced",
+            "2 spring onions, finely chopped",
+            "1 tbsp honey",
+            "1 tbsp toasted sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the doenjang, gochujang, sesame oil and honey in a bowl until smooth.",
+        "Stir through the garlic, spring onion and sesame seeds.",
+        "Rest 10 minutes in the fridge so the flavours meld, then serve with lettuce leaves, rice and grilled meats."
+      ],
+      "notes": [
+        "Keeps in a jar in the fridge for 2 weeks."
+      ],
+      "nutrition": {
+        "kcal": 61,
+        "proteinG": 2,
+        "carbsG": 6,
+        "fatG": 3,
+        "fibreG": 1,
+        "sodiumMg": 550
+      }
+    },
+    {
+      "id": "korean-gamja-jorim-braised-soy-potatoes",
+      "title": "Korean Gamja Jorim Braised Soy Potatoes",
+      "summary": "Baby potatoes simmered in a glossy sweet-salty soy glaze until sticky, a staple banchan.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g baby potatoes, halved",
+            "1 tbsp vegetable oil",
+            "4 tbsp soy sauce",
+            "2 tbsp sugar",
+            "1 tbsp honey",
+            "250ml water",
+            "2 garlic cloves, sliced",
+            "1 tsp sesame oil",
+            "1 tsp toasted sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a wide pan and fry the potatoes for 4 minutes, until lightly golden on the cut sides.",
+        "Add the soy sauce, sugar, water and garlic and bring to the boil until bubbling.",
+        "Simmer uncovered for 15 to 18 minutes, until the potatoes are tender when pierced and the sauce is sticky.",
+        "Stir in the honey and sesame oil and cook 1 minute more until glossy.",
+        "Scatter with sesame seeds and serve warm or at room temperature."
+      ],
+      "notes": [
+        "Keeps 4 days in the fridge. Good in lunchboxes."
+      ],
+      "nutrition": {
+        "kcal": 194,
+        "proteinG": 5,
+        "carbsG": 33,
+        "fatG": 4,
+        "fibreG": 3,
+        "sodiumMg": 1250
+      }
+    },
+    {
+      "id": "korean-dubu-jorim-soy-chilli-tofu-slabs",
+      "title": "Korean Dubu Jorim Soy-Chilli Tofu Slabs",
+      "summary": "Pan-fried tofu slabs simmered in a garlicky soy and chilli flake sauce, a savoury banchan.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g firm tofu, cut in 1.5cm slabs",
+            "2 tbsp vegetable oil",
+            "3 tbsp soy sauce",
+            "1 tbsp gochugaru chilli flakes",
+            "1 tbsp sesame oil",
+            "2 garlic cloves, minced",
+            "1 tsp sugar",
+            "100ml water",
+            "2 spring onions, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Pat the tofu dry and fry in the oil for 3 to 4 minutes per side, until deep golden.",
+        "Mix the soy sauce, chilli flakes, sesame oil, garlic, sugar and water.",
+        "Pour over the tofu and simmer gently for 6 minutes, spooning the sauce over, until it thickens and clings.",
+        "Scatter with spring onion and serve with rice."
+      ],
+      "notes": [
+        "Keeps 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 202,
+        "proteinG": 12,
+        "carbsG": 6,
+        "fatG": 14,
+        "fibreG": 2,
+        "sodiumMg": 1000
+      }
+    },
+    {
+      "id": "korean-oi-muchim-spicy-cucumber-salad",
+      "title": "Korean Oi Muchim Spicy Cucumber Salad",
+      "summary": "Crunchy salted cucumber tossed with chilli flakes, garlic, vinegar and sesame, a fast no-cook side.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 25,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 Lebanese cucumbers, thinly sliced",
+            "1 tsp salt",
+            "1 tbsp gochugaru chilli flakes",
+            "2 garlic cloves, minced",
+            "1 tbsp rice vinegar",
+            "1 tbsp sesame oil",
+            "1 tsp sugar",
+            "1 tbsp toasted sesame seeds",
+            "1 spring onion, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the cucumber with the salt and leave in a colander for 10 minutes, then squeeze out the water.",
+        "Mix the chilli flakes, garlic, vinegar, sesame oil and sugar into a paste.",
+        "Toss the cucumber with the paste, spring onion and sesame seeds.",
+        "Toss and chill until cold, then serve within 30 minutes while the cucumber is still crisp."
+      ],
+      "notes": [
+        "Best eaten the day it is made."
+      ],
+      "nutrition": {
+        "kcal": 50,
+        "proteinG": 1,
+        "carbsG": 4,
+        "fatG": 3,
+        "fibreG": 1,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "vietnamese-xoi-lac-peanut-sticky-rice",
+      "title": "Vietnamese Xoi Lac Peanut Sticky Rice",
+      "summary": "Steamed glutinous rice with roasted peanuts, coconut and fried shallots, a Hanoi street breakfast.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g glutinous rice, soaked overnight",
+            "80g roasted peanuts, crushed",
+            "100ml coconut milk",
+            "3 tbsp fried shallots",
+            "1 tbsp sesame seeds, toasted",
+            "1 tsp sugar",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Drain the soaked rice well and toss with a pinch of salt and the sugar.",
+        "Spread on a steamer lined with baking paper and steam for 25 to 30 minutes, until the grains are translucent and tender.",
+        "Warm the coconut milk gently and fold half through the hot rice.",
+        "Pile into bowls and top with peanuts, shallots, sesame and a drizzle of the remaining coconut milk."
+      ],
+      "notes": [
+        "Soak the rice at least 6 hours or overnight; this soaking time is not included in prep. Contains peanuts."
+      ],
+      "nutrition": {
+        "kcal": 396,
+        "proteinG": 11,
+        "carbsG": 55,
+        "fatG": 14,
+        "fibreG": 3,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "vietnamese-chao-ga-chicken-congee",
+      "title": "Vietnamese Chao Ga Chicken Congee",
+      "summary": "Silky rice porridge with poached chicken, ginger and spring onion, the Vietnamese cure-all.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "breakfast",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g jasmine rice, rinsed",
+            "1.5 litres chicken stock",
+            "300g chicken thigh fillets",
+            "3 slices fresh ginger",
+            "1 tbsp fish sauce",
+            "3 spring onions, sliced",
+            "1 small bunch fresh coriander",
+            "1 tbsp fried shallots",
+            "1 tsp freshly ground black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Bring the stock, rice and ginger to a gentle boil and simmer, stirring often, for 30 minutes, until the rice breaks down and thickens.",
+        "Add the chicken and cook for 12 minutes, until it reaches 75°C in the centre.",
+        "Lift the chicken out and shred, then return it to the pot with the fish sauce.",
+        "Simmer 3 minutes more and loosen with hot water if too thick.",
+        "Serve topped with spring onion, coriander, fried shallots and pepper."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C with no pink. Cool leftovers within 2 hours and eat within 2 days, reheating until steaming hot."
+      ],
+      "nutrition": {
+        "kcal": 284,
+        "proteinG": 24,
+        "carbsG": 33,
+        "fatG": 6,
+        "fibreG": 1,
+        "sodiumMg": 950
+      }
+    },
+    {
+      "id": "vietnamese-canh-bi-do-pumpkin-and-prawn-soup",
+      "title": "Vietnamese Canh Bi Do Pumpkin and Prawn Soup",
+      "summary": "Sweet pumpkin and prawn soup scented with spring onion and a touch of fish sauce.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g pumpkin, peeled and cubed",
+            "1 litre chicken stock",
+            "200g raw prawns, peeled",
+            "2 garlic cloves, minced",
+            "1 tbsp vegetable oil",
+            "1 tbsp fish sauce",
+            "2 spring onions, sliced",
+            "1 small bunch fresh coriander, chopped",
+            "1 tsp freshly ground black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil and fry the garlic for 30 seconds, until fragrant.",
+        "Add the pumpkin and stock and simmer for 12 minutes, until the pumpkin is soft.",
+        "Lightly mash a third of the pumpkin against the pot to thicken the soup.",
+        "Add the prawns and cook for 2 to 3 minutes, until pink and curled.",
+        "Season with fish sauce and pepper and top with spring onion and coriander."
+      ],
+      "notes": [
+        "Food safety: cook the prawns until pink and opaque. Eat the same day, or cool quickly and keep for 1 day."
+      ],
+      "nutrition": {
+        "kcal": 162,
+        "proteinG": 15,
+        "carbsG": 15,
+        "fatG": 4,
+        "fibreG": 3,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "vietnamese-nuoc-mam-pha-sweet-fish-sauce-dressing",
+      "title": "Vietnamese Nuoc Mam Pha Sweet Fish Sauce Dressing",
+      "summary": "The bright sweet, sour, salty and spicy table sauce for rice paper rolls, grilled meat and noodles.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 0,
+      "servings": 3,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 tbsp fish sauce",
+            "4 tbsp lime juice",
+            "3 tbsp sugar",
+            "120ml warm water",
+            "2 garlic cloves, minced",
+            "1 red chilli, finely chopped",
+            "1 small carrot, finely grated"
+          ]
+        }
+      ],
+      "steps": [
+        "Stir the sugar into the warm water until fully dissolved.",
+        "Add the fish sauce and lime juice and taste, adjusting for sweet and sour.",
+        "Stir in the garlic, chilli and carrot and rest for 10 minutes before serving."
+      ],
+      "notes": [
+        "Keeps 5 days in the fridge. High in salt, so use sparingly."
+      ],
+      "nutrition": {
+        "kcal": 74,
+        "proteinG": 2,
+        "carbsG": 16,
+        "fatG": 0,
+        "fibreG": 1,
+        "sodiumMg": 2800
+      }
+    },
+    {
+      "id": "thai-nam-prik-num-roasted-green-chilli-dip",
+      "title": "Thai Nam Prik Num Roasted Green Chilli Dip",
+      "summary": "Smoky roasted green chilli, shallot and garlic dip from northern Thailand, served with raw and steamed vegetables.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 long green chillies",
+            "5 shallots, unpeeled",
+            "6 garlic cloves, unpeeled",
+            "1 tbsp fish sauce",
+            "1 tbsp lime juice",
+            "2 tsp palm sugar",
+            "1 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Grill the chillies, shallots and garlic under a hot grill for 10 to 12 minutes, turning, until blistered, blackened in spots and soft.",
+        "Peel everything, discarding the burnt skins from the chillies and the stems.",
+        "Crush the garlic and shallot in a mortar until smooth, then add the chillies and crush to a rough paste.",
+        "Stir in the fish sauce, lime juice, sugar and oil until well mixed.",
+        "Serve with cucumber, cabbage wedges, green beans and sticky rice."
+      ],
+      "notes": [
+        "Keeps 4 days in the fridge. Chillies are hot, so wear gloves when peeling."
+      ],
+      "nutrition": {
+        "kcal": 48,
+        "proteinG": 1,
+        "carbsG": 6,
+        "fatG": 2,
+        "fibreG": 1,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "thai-kai-jeow-fluffy-thai-omelette-with-rice",
+      "title": "Thai Kai Jeow Fluffy Thai Omelette with Rice",
+      "summary": "Deep-fried-style puffy omelette seasoned with fish sauce and lime, served over jasmine rice with chilli sauce.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 5,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 eggs",
+            "1 tbsp fish sauce",
+            "1 tsp lime juice",
+            "1 tsp cornflour",
+            "4 tbsp vegetable oil",
+            "300g cooked jasmine rice",
+            "1 spring onion, sliced",
+            "2 tbsp sweet chilli sauce"
+          ]
+        }
+      ],
+      "steps": [
+        "Beat the eggs with the fish sauce, lime juice and cornflour until frothy.",
+        "Heat the oil in a wok until shimmering, then pour in the egg from a height.",
+        "Cook for 1 to 2 minutes, until puffed and golden underneath, then fold in half and cook 30 seconds more until set through.",
+        "Drain on paper towel and serve over the warm rice.",
+        "Top with spring onion and chilli sauce."
+      ],
+      "notes": [
+        "Food safety: cook the omelette until fully set with no liquid egg. Eat the same day."
+      ],
+      "nutrition": {
+        "kcal": 494,
+        "proteinG": 17,
+        "carbsG": 52,
+        "fatG": 24,
+        "fibreG": 1,
+        "sodiumMg": 1000
+      }
+    },
+    {
+      "id": "indian-upma-semolina-vegetable-breakfast",
+      "title": "Indian Upma Semolina Vegetable Breakfast",
+      "summary": "South Indian savoury semolina porridge with mustard seed, cashews and vegetables, ready in 25 minutes.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 3,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g coarse semolina",
+            "2 tbsp vegetable oil",
+            "1 tsp black mustard seeds",
+            "1 tbsp cashews",
+            "1 brown onion, finely chopped",
+            "1 green chilli, slit",
+            "1 tsp grated fresh ginger",
+            "1 carrot, finely diced",
+            "40g frozen peas",
+            "450ml hot water",
+            "1 tbsp lemon juice",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Dry-roast the semolina in a dry pan over medium heat for 4 minutes, until fragrant and lightly golden, then set aside.",
+        "Heat the oil, add the mustard seeds and cashews and fry for 1 minute, until the seeds pop and the nuts turn golden.",
+        "Add the onion, chilli, ginger and carrot and cook for 5 minutes, until softened.",
+        "Pour in the hot water and salt and bring to the boil until bubbling.",
+        "Stir in the semolina gradually and cook, stirring, for 2 to 3 minutes, until thick and fluffy.",
+        "Finish with peas, lemon juice and serve hot."
+      ],
+      "notes": [
+        "Contains gluten and cashews."
+      ],
+      "nutrition": {
+        "kcal": 299,
+        "proteinG": 8,
+        "carbsG": 40,
+        "fatG": 11,
+        "fibreG": 4,
+        "sodiumMg": 500
+      }
+    },
+    {
+      "id": "indian-mint-and-coriander-chutney",
+      "title": "Indian Mint and Coriander Chutney",
+      "summary": "Fresh green chutney of mint, coriander, chilli and lime for samosas, kebabs and sandwiches.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 3,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 large bunch fresh coriander",
+            "1 cup fresh mint leaves",
+            "2 green chillies",
+            "1 tsp grated fresh ginger",
+            "3 tbsp lime juice",
+            "1 tsp sugar",
+            "1 tsp ground cumin",
+            "3 tbsp olive oil",
+            "3 tbsp water",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Roughly chop the coriander including the soft stems, and wash the mint.",
+        "Blend everything with the water until a smooth green sauce forms.",
+        "Taste and adjust the salt and lime juice until bright and sharp.",
+        "Spoon into a jar and chill; use within 4 days."
+      ],
+      "notes": [
+        "Keeps 4 days in the fridge; freeze in ice cube trays for up to 2 months."
+      ],
+      "nutrition": {
+        "kcal": 138,
+        "proteinG": 0,
+        "carbsG": 2,
+        "fatG": 14,
+        "fibreG": 2,
+        "sodiumMg": 400
+      }
+    }
+  ]
+}

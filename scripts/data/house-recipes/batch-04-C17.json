@@ -1,0 +1,1132 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "tahitian-poisson-cru-coconut-fish-salad",
+      "title": "Tahitian Poisson Cru Coconut Fish Salad",
+      "summary": "Fresh tuna cured briefly in lime juice, then dressed with coconut milk, cucumber and tomato.",
+      "cuisine": "pacific-islands",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g sashimi-grade tuna, cut in 1.5cm cubes",
+            "120ml lime juice",
+            "1 Lebanese cucumber, diced",
+            "2 tomatoes, diced",
+            "1 small red onion, finely diced",
+            "1 carrot, grated",
+            "200ml coconut milk",
+            "1 small bunch fresh coriander, chopped",
+            "1 red chilli, finely sliced",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the tuna with the lime juice and a pinch of salt and leave in the fridge for 10 minutes, until the outside turns opaque and firm.",
+        "Drain off most of the lime juice.",
+        "Fold through the cucumber, tomato, onion, carrot and chilli.",
+        "Stir in the coconut milk and coriander and serve immediately, very cold."
+      ],
+      "notes": [
+        "Food safety: use only very fresh sashimi-grade fish kept below 4°C. The lime only firms the outside, so the fish stays raw inside. Avoid for pregnant, elderly, young or immunocompromised people. Eat the same day."
+      ],
+      "nutrition": {
+        "kcal": 374,
+        "proteinG": 50,
+        "carbsG": 11,
+        "fatG": 14,
+        "fibreG": 2,
+        "sodiumMg": 350
+      }
+    },
+    {
+      "id": "salvadoran-curtido-cabbage-slaw",
+      "title": "Salvadoran Curtido Cabbage Slaw",
+      "summary": "Lightly fermented-style cabbage, carrot and oregano slaw served with pupusas and grilled meat.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 5,
+      "servings": 3,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1/2 white cabbage, finely shredded",
+            "2 carrots, grated",
+            "1 small brown onion, thinly sliced",
+            "1 red chilli, sliced",
+            "250ml white vinegar",
+            "250ml hot water",
+            "2 tsp dried oregano",
+            "2 tsp sugar",
+            "2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Pour boiling water over the cabbage in a bowl, stand 1 minute, until just wilted, then drain and cool.",
+        "Mix with the carrot, onion and chilli in a large jar.",
+        "Dissolve the sugar and salt in the vinegar and hot water, then add the oregano and pour over the vegetables.",
+        "Cover and refrigerate for 24 hours before serving, until the cabbage is tangy and crunchy."
+      ],
+      "notes": [
+        "Keeps in the fridge for up to 2 weeks."
+      ],
+      "nutrition": {
+        "kcal": 89,
+        "proteinG": 3,
+        "carbsG": 16,
+        "fatG": 1,
+        "fibreG": 2,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "mexican-sopa-azteca-tortilla-soup",
+      "title": "Mexican Sopa Azteca Tortilla Soup",
+      "summary": "Smoky tomato and chilli broth with crisp tortilla strips, avocado, lime and shredded chicken.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 corn tortillas, cut in strips",
+            "3 tbsp vegetable oil",
+            "4 tomatoes, roughly chopped",
+            "1 brown onion, chopped",
+            "3 garlic cloves",
+            "2 dried chillies, seeded",
+            "1 litre chicken stock",
+            "300g chicken breast",
+            "1 avocado, diced",
+            "100g fresh ricotta",
+            "1 lime, cut in wedges",
+            "Fresh coriander to serve",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the tortilla strips in 2 tbsp oil for 2 minutes, until crisp and golden, and drain on paper.",
+        "Blend the tomato, half the onion, garlic and chillies, then fry in the remaining oil for 8 minutes, until darker and thick.",
+        "Add the stock and the chicken and simmer gently for 15 minutes, until the chicken reaches 75°C in the centre.",
+        "Shred the chicken, return it to the soup and season with salt.",
+        "Serve topped with tortilla strips, avocado, ricotta, coriander and a wedge of lime."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C in the centre and the juices run clear."
+      ],
+      "nutrition": {
+        "kcal": 402,
+        "proteinG": 28,
+        "carbsG": 20,
+        "fatG": 22,
+        "fibreG": 6,
+        "sodiumMg": 980
+      }
+    },
+    {
+      "id": "mexican-salsa-macha-peanut-and-chilli-oil",
+      "title": "Mexican Salsa Macha Peanut and Chilli Oil",
+      "summary": "Dark, nutty chilli oil with peanuts, garlic and sesame, spooned onto eggs, tacos and noodles.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "snack",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150ml vegetable oil",
+            "80g roasted peanuts",
+            "2 tbsp sesame seeds",
+            "6 garlic cloves, thinly sliced",
+            "3 tbsp dried chilli flakes",
+            "2 tbsp white vinegar",
+            "1 tbsp brown sugar",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the oil in a small pot over low heat, then add the garlic and cook 3 minutes, until pale gold.",
+        "Add the peanuts and sesame and cook 2 minutes, until fragrant and lightly golden.",
+        "Take off the heat, stir in the chilli flakes, vinegar, sugar and salt and let it settle until the sizzling stops.",
+        "Pulse briefly for a chunky texture, then cool and jar."
+      ],
+      "notes": [
+        "Keeps in a clean jar in the fridge for up to 3 weeks."
+      ],
+      "nutrition": {
+        "kcal": 112,
+        "proteinG": 2,
+        "carbsG": 3,
+        "fatG": 10,
+        "fibreG": 1,
+        "sodiumMg": 140
+      }
+    },
+    {
+      "id": "swedish-gubbr-ra-egg-and-anchovy-spread",
+      "title": "Swedish Gubbröra Egg and Anchovy Spread",
+      "summary": "Chopped egg, onion and anchovy with dill and sour cream, piled on rye crispbread at Midsummer.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "snack",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 10,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "pescatarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 eggs",
+            "8 anchovy fillets, finely chopped",
+            "1 small red onion, finely diced",
+            "3 tbsp sour cream",
+            "3 tbsp mayonnaise",
+            "1 bunch fresh dill, chopped",
+            "1 tbsp fresh chives",
+            "Black pepper",
+            "6 slices rye bread"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the eggs for 9 minutes until the yolks are firm, then cool in cold water, peel and chop.",
+        "Fold the eggs with the anchovies, onion, sour cream, mayonnaise and herbs.",
+        "Season with pepper and chill for 15 minutes, then pile onto the rye bread."
+      ],
+      "notes": [
+        "Food safety: boil the eggs until the yolks are firm, keep chilled and eat within 24 hours."
+      ],
+      "nutrition": {
+        "kcal": 244,
+        "proteinG": 14,
+        "carbsG": 14,
+        "fatG": 14,
+        "fibreG": 3,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "icelandic-kj-ts-pa-lamb-and-root-vegetable-soup",
+      "title": "Icelandic Kjötsúpa Lamb and Root Vegetable Soup",
+      "summary": "Plain, hearty lamb soup with swede, potato, carrot and rice, the Icelandic Sunday soup.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 90,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g lamb shoulder on the bone",
+            "2 litres water",
+            "60g short-grain rice",
+            "1 brown onion, diced",
+            "300g swede, cubed",
+            "300g potato, cubed",
+            "2 carrots, sliced",
+            "1/4 white cabbage, shredded",
+            "1 tbsp dried thyme",
+            "2 bay leaves",
+            "Salt and black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Cover the lamb with the water, bring to a boil and skim until no foam rises.",
+        "Simmer for 60 minutes with the onion and bay leaves, until the meat is very tender and falling from the bone.",
+        "Add the rice, swede, potato, carrot and thyme and simmer 20 minutes, until the vegetables are soft.",
+        "Remove the bones, shred the meat and add the cabbage, then simmer 5 minutes, until wilted, and season."
+      ],
+      "notes": [
+        "Food safety: cook the lamb until very tender and at least 75°C in the centre."
+      ],
+      "nutrition": {
+        "kcal": 360,
+        "proteinG": 24,
+        "carbsG": 32,
+        "fatG": 14,
+        "fibreG": 5,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "danish-h-nsesalat-chicken-and-asparagus-salad",
+      "title": "Danish Hønsesalat Chicken and Asparagus Salad",
+      "summary": "Creamy chicken salad with asparagus and pineapple for open sandwiches.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g cooked chicken breast, shredded",
+            "1 bunch asparagus, trimmed",
+            "100g canned pineapple pieces, drained",
+            "150g mayonnaise",
+            "2 tbsp sour cream",
+            "1 tsp curry powder",
+            "1 celery stalk, finely diced",
+            "1 tbsp fresh chives",
+            "Salt and black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the asparagus for 3 minutes, until bright green and just tender, then cool and cut in short lengths.",
+        "Stir the mayonnaise, sour cream and curry powder until smooth.",
+        "Fold in the chicken, asparagus, pineapple, celery and chives, then season.",
+        "Chill for 20 minutes and serve on rye bread or with lettuce."
+      ],
+      "notes": [
+        "Food safety: use chicken cooked to 75°C and cooled quickly, keep the salad chilled and eat within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 384,
+        "proteinG": 26,
+        "carbsG": 6,
+        "fatG": 28,
+        "fibreG": 2,
+        "sodiumMg": 500
+      }
+    },
+    {
+      "id": "bulgarian-shopska-salad",
+      "title": "Bulgarian Shopska Salad",
+      "summary": "Tomato, cucumber and pepper salad under a thick drift of grated white cheese.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 ripe tomatoes, chopped",
+            "2 Lebanese cucumbers, chopped",
+            "1 green capsicum, chopped",
+            "1 small red onion, sliced",
+            "2 tbsp sunflower oil",
+            "1 tbsp white wine vinegar",
+            "120g feta, grated",
+            "1 tbsp fresh parsley, chopped",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the tomato, cucumber, capsicum and onion with the oil, vinegar and salt.",
+        "Rest 5 minutes, until the vegetables begin to release their juice.",
+        "Pile on a platter and cover thickly with the grated feta and parsley."
+      ],
+      "notes": [
+        "Serve immediately so the cheese stays fluffy."
+      ],
+      "nutrition": {
+        "kcal": 204,
+        "proteinG": 8,
+        "carbsG": 10,
+        "fatG": 14,
+        "fibreG": 3,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "bulgarian-kyopolou-smoked-aubergine-dip",
+      "title": "Bulgarian Kyopolou Smoked Aubergine Dip",
+      "summary": "Charred aubergine and pepper dip with garlic, parsley and oil.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "snack",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 large aubergines",
+            "2 red capsicums",
+            "3 garlic cloves, crushed",
+            "3 tbsp olive oil",
+            "2 tbsp white wine vinegar",
+            "1 small bunch fresh parsley, chopped",
+            "1 tomato, finely diced",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Char the aubergines and capsicums over a flame or under a hot grill for 25 minutes, turning, until blackened and collapsed.",
+        "Rest covered 10 minutes, then peel and drain away the juices.",
+        "Chop the flesh finely and mix with the garlic, oil, vinegar and salt.",
+        "Fold in the parsley and tomato, then chill for 30 minutes."
+      ],
+      "notes": [
+        "Keeps in the fridge for up to 3 days."
+      ],
+      "nutrition": {
+        "kcal": 130,
+        "proteinG": 3,
+        "carbsG": 9,
+        "fatG": 8,
+        "fibreG": 5,
+        "sodiumMg": 160
+      }
+    },
+    {
+      "id": "romanian-zacusca-vegetable-spread",
+      "title": "Romanian Zacusca Vegetable Spread",
+      "summary": "Slow-cooked aubergine, pepper and tomato spread, jarred in autumn for bread.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "snack",
+        "breakfast"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 30,
+      "cookMinutes": 120,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 aubergines",
+            "1 kg red capsicum",
+            "800g tomatoes, chopped",
+            "2 brown onions, finely diced",
+            "5 garlic cloves",
+            "150ml sunflower oil",
+            "3 bay leaves",
+            "1 tbsp sugar",
+            "2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Char the aubergines and capsicums under a hot grill for 25 minutes, turning, until blackened and soft, then peel and chop fine.",
+        "Fry the onion in the oil for 10 minutes, until golden, then add the tomatoes and bay leaves.",
+        "Add the aubergine and capsicum and simmer on low heat for 80 minutes, stirring often, until very thick and the oil separates.",
+        "Stir in the garlic, sugar and salt for the last 10 minutes of cooking.",
+        "Pack into clean jars and cool before chilling."
+      ],
+      "notes": [
+        "Keeps in the fridge in sealed clean jars for up to 3 weeks."
+      ],
+      "nutrition": {
+        "kcal": 168,
+        "proteinG": 2,
+        "carbsG": 11,
+        "fatG": 12,
+        "fibreG": 4,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "ukrainian-deruny-potato-pancakes",
+      "title": "Ukrainian Deruny Potato Pancakes",
+      "summary": "Lacy grated potato and onion pancakes served with sour cream.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g potato, peeled",
+            "1 brown onion",
+            "1 egg",
+            "3 tbsp plain flour",
+            "1 tsp salt",
+            "80ml vegetable oil",
+            "150g sour cream",
+            "Black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Grate the potato and onion and squeeze very dry in a clean towel, then stir in the egg, flour, salt and pepper.",
+        "Heat the oil in a wide pan and spoon in the batter in flat rounds.",
+        "Fry for 4 minutes each side, until deep golden and crisp, then drain on paper.",
+        "Serve hot with sour cream."
+      ],
+      "notes": [
+        "Food safety: cook the pancakes until golden and set throughout."
+      ],
+      "nutrition": {
+        "kcal": 380,
+        "proteinG": 8,
+        "carbsG": 36,
+        "fatG": 22,
+        "fibreG": 3,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "czech-bramboracka-potato-and-mushroom-soup",
+      "title": "Czech Bramboracka Potato and Mushroom Soup",
+      "summary": "Rustic soup of potato, root vegetables and dried mushroom with marjoram and caraway.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g potato, diced",
+            "1 carrot, diced",
+            "1 celery stalk, diced",
+            "1 brown onion, diced",
+            "200g mushrooms, sliced",
+            "1 tbsp butter",
+            "1 tbsp plain flour",
+            "1.2 litres vegetable stock",
+            "1 tsp dried marjoram",
+            "1 tsp caraway seeds",
+            "2 garlic cloves",
+            "Salt and black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Melt the butter and soften the onion and mushrooms for 8 minutes, until golden and the liquid cooks off.",
+        "Stir in the flour for 1 minute, then add the stock, potato, carrot, celery, caraway and marjoram.",
+        "Simmer for 20 minutes, until the potato is very tender, then crush a few pieces with a spoon to thicken.",
+        "Stir in the garlic, season and serve hot."
+      ],
+      "notes": [
+        "Add a little water if the soup becomes too thick."
+      ],
+      "nutrition": {
+        "kcal": 207,
+        "proteinG": 6,
+        "carbsG": 32,
+        "fatG": 5,
+        "fibreG": 5,
+        "sodiumMg": 740
+      }
+    },
+    {
+      "id": "slovak-kapustnica-sauerkraut-soup",
+      "title": "Slovak Kapustnica Sauerkraut Soup",
+      "summary": "Smoked sausage and sauerkraut soup with paprika and a little cream, the Christmas Eve soup.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 70,
+      "servings": 6,
+      "onePot": true,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "400g sauerkraut, rinsed",
+            "250g smoked sausage, sliced",
+            "150g bacon, diced",
+            "1 brown onion, diced",
+            "2 garlic cloves",
+            "2 tbsp sweet paprika",
+            "1 tbsp vegetable oil",
+            "300g potato, diced",
+            "1.5 litres water",
+            "100g mushrooms, sliced",
+            "2 bay leaves",
+            "100ml cream",
+            "Black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the bacon and sausage in the oil for 6 minutes, until browned, then add the onion for 4 minutes, until soft.",
+        "Stir in the garlic and paprika, then add the sauerkraut, mushrooms, water and bay leaves.",
+        "Simmer for 40 minutes, then add the potato and cook 15 minutes, until the potato is tender.",
+        "Stir in the cream, season with pepper and serve hot."
+      ],
+      "notes": [
+        "Food safety: heat the sausage until steaming hot and above 75°C throughout."
+      ],
+      "nutrition": {
+        "kcal": 410,
+        "proteinG": 17,
+        "carbsG": 20,
+        "fatG": 28,
+        "fibreG": 5,
+        "sodiumMg": 1200
+      }
+    },
+    {
+      "id": "jamaican-festival-sweet-fried-dumplings",
+      "title": "Jamaican Festival Sweet Fried Dumplings",
+      "summary": "Sweet cornmeal dumplings fried until crisp outside and tender within.",
+      "cuisine": "caribbean",
+      "mealTypes": [
+        "breakfast",
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g plain flour",
+            "100g fine cornmeal",
+            "2 tbsp sugar",
+            "1 tsp baking powder",
+            "1/2 tsp salt",
+            "1 tsp vanilla extract",
+            "180ml milk",
+            "250ml vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour, cornmeal, sugar, baking powder and salt, then stir in the vanilla and milk to a soft dough.",
+        "Knead for 2 minutes, until smooth, then roll into 8 finger-length shapes.",
+        "Heat the oil to 170°C and fry the dumplings in batches for 5 minutes, turning, until deep golden.",
+        "Drain on paper and serve warm."
+      ],
+      "notes": [
+        "Keep the oil at a steady 170°C so the centres cook through."
+      ],
+      "nutrition": {
+        "kcal": 289,
+        "proteinG": 6,
+        "carbsG": 36,
+        "fatG": 13,
+        "fibreG": 2,
+        "sodiumMg": 220
+      }
+    },
+    {
+      "id": "guyanese-cook-up-rice",
+      "title": "Guyanese Cook-up Rice",
+      "summary": "One-pot coconut rice with black-eyed beans, chicken and thyme.",
+      "cuisine": "caribbean",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g long-grain rice",
+            "1 x 400g can black-eyed beans, drained",
+            "400g chicken thigh fillet, diced",
+            "400ml coconut milk",
+            "400ml water",
+            "1 brown onion, diced",
+            "3 garlic cloves, crushed",
+            "3 spring onions",
+            "3 sprigs fresh thyme",
+            "1 whole red chilli",
+            "1 tbsp vegetable oil",
+            "Salt and black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the chicken in the oil for 6 minutes, until golden on all sides, then add the onion and garlic for 3 minutes.",
+        "Add the coconut milk, water, beans, thyme, chilli and salt and bring to a simmer until the chicken is just cooked.",
+        "Stir in the rice, cover and cook on low heat for 20 minutes, until the rice is tender and the liquid absorbed.",
+        "Rest 10 minutes, stir through the spring onions and remove the chilli and thyme."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C in the centre and no pink remains."
+      ],
+      "nutrition": {
+        "kcal": 464,
+        "proteinG": 25,
+        "carbsG": 52,
+        "fatG": 16,
+        "fibreG": 6,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "nigerian-ofada-ata-rodo-pepper-sauce",
+      "title": "Nigerian Ofada Ata Rodo Pepper Sauce",
+      "summary": "Deep, fiery pepper sauce of roasted capsicum and chilli fried in oil with onion and locust-free seasoning.",
+      "cuisine": "west-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 50,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 red capsicums",
+            "4 red chillies",
+            "2 brown onions",
+            "150ml vegetable oil",
+            "4 garlic cloves",
+            "1 tbsp ground cumin",
+            "1 vegetable stock cube",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the capsicums and chillies at 220°C for 25 minutes, until blackened and collapsed, then blend with half the onion and the garlic to a coarse puree.",
+        "Heat the oil until shimmering, then fry the remaining sliced onion for 8 minutes, until golden.",
+        "Add the puree and cook on medium heat for 20 minutes, stirring, until the sauce is thick and the oil rises to the surface.",
+        "Season with the cumin, stock cube and salt and serve with rice."
+      ],
+      "notes": [
+        "Keeps in a jar in the fridge for up to 1 week."
+      ],
+      "nutrition": {
+        "kcal": 185,
+        "proteinG": 2,
+        "carbsG": 9,
+        "fatG": 15,
+        "fibreG": 3,
+        "sodiumMg": 360
+      }
+    },
+    {
+      "id": "nigerian-dodo-fried-plantain",
+      "title": "Nigerian Dodo Fried Plantain",
+      "summary": "Ripe plantain fried until caramelised at the edges, a favourite side with eggs or stew.",
+      "cuisine": "west-african",
+      "mealTypes": [
+        "breakfast",
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 ripe plantains, peeled and sliced",
+            "150ml vegetable oil",
+            "1/2 tsp salt",
+            "1/2 tsp chilli flakes"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the plantain slices with the salt and chilli flakes.",
+        "Heat the oil in a wide pan over medium heat to about 170°C.",
+        "Fry in batches for 3 minutes each side, until deep golden and caramelised at the edges.",
+        "Drain on paper and serve hot."
+      ],
+      "notes": [
+        "Choose plantains with black-spotted skins for the sweetest dodo."
+      ],
+      "nutrition": {
+        "kcal": 262,
+        "proteinG": 1,
+        "carbsG": 38,
+        "fatG": 11,
+        "fibreG": 3,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "ghanaian-kontomire-spinach-stew",
+      "title": "Ghanaian Kontomire Spinach Stew",
+      "summary": "Spinach stewed with onion, tomato and chilli in oil, served with boiled yam or rice and eggs.",
+      "cuisine": "west-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g spinach, chopped",
+            "3 tomatoes",
+            "1 brown onion",
+            "2 red chillies",
+            "2 tbsp vegetable oil",
+            "4 garlic cloves",
+            "20g ginger, grated",
+            "4 eggs, boiled",
+            "1 vegetable stock cube",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the tomato, half the onion, the chillies, garlic and ginger to a smooth sauce.",
+        "Fry the remaining onion in the oil for 5 minutes, until golden, then add the sauce and cook 15 minutes, until thick and the oil separates.",
+        "Add the spinach and stock cube and simmer for 8 minutes, until the leaves are soft but still green.",
+        "Boil the eggs for 9 minutes until firm, peel and halve them.",
+        "Season and serve the stew with the eggs."
+      ],
+      "notes": [
+        "Food safety: boil the eggs until the yolks are firm."
+      ],
+      "nutrition": {
+        "kcal": 237,
+        "proteinG": 15,
+        "carbsG": 12,
+        "fatG": 13,
+        "fibreG": 6,
+        "sodiumMg": 560
+      }
+    },
+    {
+      "id": "georgian-ajapsandali-vegetable-stew",
+      "title": "Georgian Ajapsandali Vegetable Stew",
+      "summary": "Summer stew of aubergine, tomato, pepper and potato with plenty of coriander and basil.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 50,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 aubergines, cubed",
+            "3 tomatoes, chopped",
+            "2 red capsicums, chopped",
+            "2 potatoes, cubed",
+            "1 brown onion, diced",
+            "4 garlic cloves",
+            "80ml olive oil",
+            "1 bunch fresh coriander",
+            "1 bunch fresh basil",
+            "1 red chilli",
+            "Salt and black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Salt the aubergine and rest 10 minutes, then pat dry and brown in oil for 8 minutes, until golden.",
+        "Soften the onion in the same pan for 5 minutes, then add the potato and capsicum and cook 10 minutes.",
+        "Add the tomatoes, aubergine, garlic and chilli and simmer 20 minutes, until the vegetables are tender and the sauce thick.",
+        "Stir in the herbs and season, serving warm or at room temperature."
+      ],
+      "notes": [
+        "Resting the salted aubergine is not included in the prep time."
+      ],
+      "nutrition": {
+        "kcal": 262,
+        "proteinG": 4,
+        "carbsG": 26,
+        "fatG": 14,
+        "fibreG": 8,
+        "sodiumMg": 340
+      }
+    },
+    {
+      "id": "polish-nale-niki-ricotta-crepes",
+      "title": "Polish Naleśniki Ricotta Crepes",
+      "summary": "Thin crepes rolled around a sweet ricotta filling and browned in butter.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g plain flour",
+            "2 eggs",
+            "300ml milk",
+            "1 tbsp sugar",
+            "2 tbsp butter",
+            "350g ricotta",
+            "1 tsp vanilla extract",
+            "2 tbsp icing sugar",
+            "1 lemon, zest only"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the flour, eggs, milk and sugar into a smooth thin batter.",
+        "Cook thin crepes in a buttered pan for 1 to 2 minutes each side, until golden.",
+        "Mix the ricotta with the vanilla and lemon zest.",
+        "Fill and roll up the crepes, then brown them in the remaining butter for 2 minutes, until golden.",
+        "Dust with icing sugar and serve warm."
+      ],
+      "notes": [
+        "Food safety: cook the crepes until fully set and golden since the batter contains raw egg."
+      ],
+      "nutrition": {
+        "kcal": 360,
+        "proteinG": 20,
+        "carbsG": 38,
+        "fatG": 14,
+        "fibreG": 1,
+        "sodiumMg": 160
+      }
+    },
+    {
+      "id": "estonian-mulgikapsad-sauerkraut-and-barley-stew",
+      "title": "Estonian Mulgikapsad Sauerkraut and Barley Stew",
+      "summary": "Slow-braised sauerkraut with pork and pearl barley, a winter dish from Mulgi.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 90,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g sauerkraut, rinsed",
+            "400g pork shoulder, diced",
+            "80g pearl barley",
+            "1 brown onion, diced",
+            "1 carrot, grated",
+            "2 tbsp vegetable oil",
+            "1 tsp caraway seeds",
+            "500ml water",
+            "1 tbsp tomato paste",
+            "Salt and black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the pork in the oil for 8 minutes, until golden, then add the onion and carrot for 4 minutes.",
+        "Add the sauerkraut, barley, caraway, tomato paste and water.",
+        "Cover and simmer for 70 minutes, until the pork is tender and the barley is soft.",
+        "Season and serve with boiled potatoes."
+      ],
+      "notes": [
+        "Food safety: cook the pork until tender and at least 75°C in the centre of the pieces."
+      ],
+      "nutrition": {
+        "kcal": 308,
+        "proteinG": 20,
+        "carbsG": 22,
+        "fatG": 14,
+        "fibreG": 7,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "brazilian-vinagrete-tomato-and-onion-salsa",
+      "title": "Brazilian Vinagrete Tomato and Onion Salsa",
+      "summary": "Chopped tomato, onion and capsicum in a vinegar dressing for churrasco and feijoada.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 tomatoes, finely diced",
+            "1 red onion, finely diced",
+            "1 green capsicum, finely diced",
+            "1 small bunch fresh parsley, chopped",
+            "3 tbsp white wine vinegar",
+            "3 tbsp olive oil",
+            "Salt and black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Combine the tomato, onion, capsicum and parsley in a bowl.",
+        "Add the vinegar, oil, salt and pepper and stir until the vegetables are glossy.",
+        "Rest 15 minutes until the juices have mingled, then serve."
+      ],
+      "notes": [
+        "Best eaten within a few hours."
+      ],
+      "nutrition": {
+        "kcal": 95,
+        "proteinG": 1,
+        "carbsG": 6,
+        "fatG": 7,
+        "fibreG": 2,
+        "sodiumMg": 180
+      }
+    }
+  ]
+}

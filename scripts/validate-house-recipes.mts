@@ -25,6 +25,7 @@ import { deriveDiets } from '../src/domain/recipes/diets.ts';
 import { CUISINES, DIET_TAGS, DIFFICULTIES, MEAL_TYPES, SEASONS, type Recipe } from '../src/domain/recipes/types.ts';
 import { validateRecipe } from '../src/domain/recipes/validate.ts';
 import { batchFiles, HOUSE_DIR, readBatch, toRecipe, type HouseRecipe } from './house-recipes.mts';
+import { estimateKcalPerServe, estimateMacrosPerServe } from './nutrition-estimate.mts';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
@@ -57,6 +58,8 @@ const REVIEWED: Record<string, Record<string, string>> = {
   'miso-soup-with-hamaguri': { 'near-duplicate': 'clam miso soup' },
   'lentil-and-rice-soup': { 'near-duplicate': 'a different soup from Lentil Soup' },
   'honey-soy-chicken-stir-fry': { 'near-duplicate': 'a named stir-fry' },
+  'spring-onion-egg-pancake-rolls': { 'near-duplicate': 'an egg and spring onion pancake roll, not the flatbread Spring onion Pancakes' },
+  'scallion-pancakes': { 'near-duplicate': 'the flatbread; the batch-04 egg pancake rolls are a different dish' },
   tabbouleh: { duplicate: 'the 12 Oct pilot is not in the app or the feed; this is the only copy' },
   'chicken-inasal': { duplicate: 'the 12 Oct pilot is not in the app or the feed; this is the only copy' },
   kleicha: { servings: 'counts biscuits' },
@@ -263,108 +266,6 @@ const STYLE: [RegExp, string, 'fail' | 'warn'][] = [
   ],
   [/\b(I|I'm|I've|I'd|we|we're|our)\b/, 'first person', 'fail'],
 ];
-
-// ---------- nutrition: rough energy per 100 g (or ml) ----------
-
-const KCAL: [RegExp, number][] = [
-  [/stock|^water$|broth|water|vinegar|sauce|juice|^lemon$|^lime$/, 15],
-  [/(^|-)oil$|olive-oil|oil-spray|^ghee$|lard|dripping|duck-fat/, 880],
-  [/^butter$|vegan-butter/, 720],
-  [/sugar|honey|syrup|golden-syrup|treacle|jam$/, 380],
-  [/flour|cornflour|polenta|semolina|^oats|rolled-oats|bran/, 360],
-  [/rice$|^rice|basmati|jasmine|arborio|quinoa|couscous|bulgur|barley|freekeh|farro|millet/, 355],
-  [/pasta|spaghetti|penne|linguine|fettuccine|macaroni|orzo|lasagne|noodle|udon|soba|vermicelli|rigatoni/, 355],
-  [/nut|almond|cashew|walnut|pecan|pistachio|hazelnut|macadamia|peanut|seed|tahini|sesame/, 590],
-  [/chocolate|cocoa/, 520],
-  [/coconut-cream/, 330],
-  [/coconut-milk/, 190],
-  [/^cream$|thickened-cream|double-cream|sour-cream|creme-fraiche|mascarpone|cream-cheese/, 340],
-  [/cheese|parmesan|pecorino|cheddar|gruyere|manchego|halloumi|feta|mozzarella|ricotta|paneer/, 330],
-  [/^milk$|full-cream-milk|oat-milk|soy-milk|almond-milk|buttermilk/, 55],
-  [/yoghurt|yogurt|labneh|kefir/, 80],
-  [/bacon|pancetta|chorizo|salami|guanciale|pork-belly|sausage|bratwurst|andouille|frankfurt|pepperoni/, 380],
-  [/fillet|breast|loin|topside|rump|escalope/, 125],
-  [/beef|lamb|pork|veal|oxtail|picanha|steak|mince|duck/, 220],
-  [/chicken|turkey/, 170],
-  [/salmon|tuna|trout|mackerel|sardine/, 190],
-  [/fish|prawn|calamari|clam|mussel|octopus|scallop|crab|lobster|squid/, 100],
-  [/tofu|tempeh/, 140],
-  [/lentil|split-pea|dried-bean|dried-chickpea/, 340],
-  [/bean|chickpea|lentils-tin|edamame/, 110],
-  [/potato|sweet-potato|kumara|yam|taro|cassava|corn|parsnip/, 85],
-  [/avocado/, 160],
-  [/banana|date|raisin|sultana|dried|prune|fig/, 150],
-  [/bread|wrap|tortilla|pita|naan|roll|bun|bagel|crumpet|brioche|panko|breadcrumb/, 270],
-  [/curry-paste|paste$/, 150],
-];
-const AISLE_KCAL: Record<string, number> = {
-  'fruit-veg': 35,
-  meat: 210,
-  seafood: 110,
-  deli: 260,
-  'dairy-eggs': 150,
-  bakery: 270,
-  'pasta-rice-grains': 355,
-  'tins-jars': 60,
-  'sauces-oils': 120,
-  'herbs-spices': 0,
-  baking: 300,
-  'asian-international': 120,
-  'nuts-dried': 450,
-  frozen: 70,
-  drinks: 40,
-  other: 50,
-};
-/** Grams in one of a counted thing, for the common ones. */
-const EACH_G: [RegExp, number][] = [
-  [/^egg$/, 50],
-  [/onion|shallot/, 130],
-  [/garlic/, 5],
-  [/potato|sweet-potato/, 200],
-  [/carrot|zucchini|capsicum|tomato|apple|pear|banana|orange/, 140],
-  [/asian-eggplant/, 150],
-  [/eggplant|cauliflower|broccoli|cabbage|lettuce/, 400],
-  [/lemon|lime/, 0],
-  [/chilli|spring-onion|ginger|herb|coriander|basil|mint|parsley|thyme|rosemary|bay|lemongrass|kaffir|lime-leaves/, 0],
-  [/avocado/, 150],
-  [/chicken-thigh$/, 110],
-  [/chicken-breast/, 220],
-  [/fillet|steak/, 180],
-  [/tortilla|wrap|pita|naan|roll|bun/, 60],
-];
-const ML_PER = { tsp: 5, tbsp: 15, cup: 250, ml: 1, l: 1000 } as const;
-const DENSITY: [RegExp, number][] = [
-  [/flour|cocoa|cornflour|oats|breadcrumb|panko/, 0.55],
-  [/sugar/, 0.85],
-  [/(^|-)oil$|olive-oil/, 0.92],
-  [/honey|syrup/, 1.4],
-];
-
-function lineGrams(l: IngredientLine): number | undefined {
-  if (l.quantity === undefined) return undefined;
-  const q = typeof l.quantity === 'number' ? l.quantity : (l.quantity.min + l.quantity.max) / 2;
-  const id = l.ingredientId ?? '';
-  if (l.unit === 'g') return q;
-  if (l.unit === 'kg') return q * 1000;
-  if (l.unit && l.unit in ML_PER) {
-    const dens = DENSITY.find(([re]) => re.test(id))?.[1] ?? 1;
-    return q * ML_PER[l.unit as keyof typeof ML_PER] * dens;
-  }
-  if (l.unit === 'tin') return q * 400;
-  if (l.unit === 'clove') return q * 5;
-  if (l.unit === 'fillet') return q * 170;
-  if (l.unit === 'rasher') return q * 25;
-  if (l.unit === 'slice') return q * 35;
-  if (!l.unit) {
-    const each = EACH_G.find(([re]) => re.test(id))?.[1];
-    return each === undefined ? undefined : q * each;
-  }
-  return undefined; // pinch, bunch, sprig and the like: too small or too vague to count
-}
-
-function kcalPer100(id: string): number {
-  return KCAL.find(([re]) => re.test(id))?.[1] ?? AISLE_KCAL[def(id)?.aisle ?? 'other'] ?? 50;
-}
 
 // ---------- schema ----------
 
@@ -653,19 +554,20 @@ function checkRecipe(h: HouseRecipe, file: string, seen: Map<string, string>): v
     if (Math.abs(fromMacros - nu.kcal) > Math.max(40, nu.kcal * 0.15))
       fail('nutrition', `protein, carbs, fat and fibre give ${Math.round(fromMacros)} kcal but kcal says ${nu.kcal}`);
     if (nu.sodiumMg > 3500) fail('nutrition', `${nu.sodiumMg} mg sodium a serve is very high`);
-    if ([...ids].some((i) => /meat|seafood/.test(def(i)?.aisle ?? '') && !/stock|bones|fat|dripping/.test(i)) && nu.proteinG < 10)
-      fail('nutrition', `has meat or seafood but only ${nu.proteinG} g protein a serve`);
-    let known = 0;
-    let kcal = 0;
-    for (const l of counted) {
-      const g = lineGrams(l);
-      if (g === undefined || !l.ingredientId) continue;
-      known++;
-      kcal += (g * kcalPer100(l.ingredientId)) / 100;
+    // Any meat or seafood (lard, dripping, stock and bones are not meat) means at least 10 g
+    // protein a serve. The one exception is a dish whose lines can't supply 10 g (a little
+    // bacon through a cabbage salad or a pot of beans for eight): then the stated figure must
+    // still be at least 75% of the protein the lines give.
+    const isMeat = (i?: string) => !!i && /meat|seafood/.test(def(i)?.aisle ?? '') && !/stock|bones|fat|dripping|lard/.test(i);
+    if (counted.some((l) => isMeat(l.ingredientId))) {
+      const lineP = estimateMacrosPerServe(counted, h.servings, (i) => def(i)?.aisle, h.steps).proteinG;
+      const floor = Math.min(10, Math.floor(lineP * 0.75));
+      if (nu.proteinG < floor)
+        fail('nutrition', `has meat or seafood but only ${nu.proteinG} g protein a serve (lines give about ${Math.round(lineP)} g)`);
     }
-    const est = kcal / Math.max(1, h.servings);
-    const cover = known / Math.max(1, counted.length);
+    const { kcal: est, known, cover } = estimateKcalPerServe(counted, h.servings, (i) => def(i)?.aisle, h.steps);
     const ratio = nu.kcal / Math.max(1, est);
+    if (process.env.NUTRI_DEBUG) console.log(`NUTRI ${h.id} ${Math.round(est)} ${cover.toFixed(2)}`);
     if (cover >= 0.6 && est > 50 && (ratio < 0.55 || ratio > 1.8))
       fail('nutrition', `stated ${nu.kcal} kcal a serve but the ingredients come to roughly ${Math.round(est)}`);
     else if (est > 50 && (ratio < 0.55 || ratio > 1.8))

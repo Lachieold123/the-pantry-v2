@@ -1,0 +1,1229 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "fermented-red-jalapeno-hot-sauce",
+      "title": "Fermented Red Jalapeno Hot Sauce",
+      "summary": "A tangy, lightly funky hot sauce made from salt-brined red jalapenos fermented for a week and blended with vinegar.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g red jalapenos, stemmed and chopped",
+            "4 garlic cloves",
+            "1 small carrot, chopped",
+            "2 tbsp salt",
+            "500ml water",
+            "100ml white vinegar",
+            "1 tbsp honey"
+          ]
+        }
+      ],
+      "steps": [
+        "Dissolve the salt in the water to make a brine.",
+        "Pack the jalapenos, garlic and carrot into a clean jar and pour over the brine, keeping everything submerged under a weight.",
+        "Cover loosely and ferment at room temperature for 7 days, until bubbly and pleasantly sour, releasing the gas daily.",
+        "Drain, keeping the brine, and blend the solids with the vinegar, honey and 100ml of the brine for 2 minutes, until smooth.",
+        "Simmer the sauce for 5 minutes, then cool and bottle."
+      ],
+      "notes": [
+        "Keeps 3 months in the fridge.",
+        "Wear gloves when chopping chillies."
+      ],
+      "nutrition": {
+        "kcal": 107,
+        "proteinG": 2,
+        "carbsG": 20,
+        "fatG": 1,
+        "fibreG": 5,
+        "sodiumMg": 950
+      }
+    },
+    {
+      "id": "fermented-habanero-and-carrot-hot-sauce",
+      "title": "Fermented Habanero and Carrot Hot Sauce",
+      "summary": "A fruity, fiery Caribbean-style hot sauce built on fermented habaneros, carrot and lime.",
+      "cuisine": "caribbean",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g habanero chillies, stemmed",
+            "300g carrots, chopped",
+            "1 brown onion, chopped",
+            "4 garlic cloves",
+            "2 tbsp salt",
+            "500ml water",
+            "3 limes, juiced",
+            "100ml white vinegar",
+            "1 tbsp brown sugar"
+          ]
+        }
+      ],
+      "steps": [
+        "Dissolve the salt in the water.",
+        "Pack the chillies, carrots, onion and garlic into a jar, cover with the brine and weigh down.",
+        "Ferment at room temperature for 7 days, until bubbly and sour, opening the lid daily to release the gas.",
+        "Drain and blend the solids with the lime juice, vinegar, sugar and 100ml of the brine for 2 minutes, until silky.",
+        "Simmer for 5 minutes, then cool and bottle."
+      ],
+      "notes": [
+        "Very hot: use 100g habanero for a medium sauce.",
+        "Keeps 3 months in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 91,
+        "proteinG": 2,
+        "carbsG": 17,
+        "fatG": 1,
+        "fibreG": 5,
+        "sodiumMg": 870
+      }
+    },
+    {
+      "id": "louisiana-style-vinegar-hot-sauce",
+      "title": "Louisiana-Style Vinegar Hot Sauce",
+      "summary": "A thin, sharp, pourable hot sauce of red chilli, garlic and vinegar for eggs, wings, beans and fried food.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g red cayenne chillies, stemmed",
+            "4 garlic cloves",
+            "250ml white vinegar",
+            "1 tsp salt",
+            "1 tsp sugar",
+            "100ml water"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the chillies, garlic, water and half the vinegar for 15 minutes, until the chillies are very soft.",
+        "Blend with the salt, sugar and remaining vinegar for 2 minutes, until completely smooth.",
+        "Strain through a sieve, pressing well, then bottle.",
+        "Rest for 3 days in the fridge before using, until the flavours mellow."
+      ],
+      "notes": [
+        "Keeps 3 months in the fridge.",
+        "Wear gloves and open a window while simmering the chillies."
+      ],
+      "nutrition": {
+        "kcal": 121,
+        "proteinG": 3,
+        "carbsG": 22,
+        "fatG": 1,
+        "fibreG": 6,
+        "sodiumMg": 590
+      }
+    },
+    {
+      "id": "kuwaiti-daqoos-tomato-and-chilli-sauce",
+      "title": "Kuwaiti Daqoos Tomato and Chilli Sauce",
+      "summary": "A tangy Gulf tomato sauce with garlic, cumin, coriander and chilli, served with grilled meat, rice and flatbread.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 tomatoes, chopped",
+            "4 garlic cloves",
+            "2 green chillies, chopped",
+            "2 tbsp olive oil",
+            "1 tsp ground cumin",
+            "1 tsp ground coriander",
+            "1 tbsp white vinegar",
+            "1 handful coriander leaves",
+            "1 tsp salt",
+            "1 lemon, juiced"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a pan and cook the garlic and chillies for 1 minute, until fragrant.",
+        "Add the tomatoes, cumin, coriander and salt and simmer for 15 minutes, until the sauce is thick and the oil separates.",
+        "Stir in the vinegar and lemon juice and cook for 2 minutes.",
+        "Cool slightly, then stir through the chopped coriander."
+      ],
+      "notes": [
+        "Serve warm or cold; it keeps 5 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 139,
+        "proteinG": 3,
+        "carbsG": 14,
+        "fatG": 7,
+        "fibreG": 4,
+        "sodiumMg": 480
+      }
+    },
+    {
+      "id": "brown-butter-and-sage-pan-sauce",
+      "title": "Brown Butter and Sage Pan Sauce",
+      "summary": "Nutty brown butter with crisp sage and lemon, spooned over pasta, gnocchi, roast pumpkin or fish.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 8,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "120g butter",
+            "1 handful sage leaves",
+            "2 garlic cloves, sliced",
+            "1 lemon, juiced",
+            "1/4 tsp salt",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Melt the butter in a light-coloured pan over medium heat.",
+        "Cook for 4 minutes, until the milk solids turn golden brown and smell nutty.",
+        "Add the sage and garlic and cook for 1 minute, until the sage is crisp and the garlic pale gold.",
+        "Remove from the heat and add the lemon juice, which will spit, then season with the salt and pepper."
+      ],
+      "notes": [
+        "Use immediately while it is hot and frothy."
+      ],
+      "nutrition": {
+        "kcal": 210,
+        "proteinG": 1,
+        "carbsG": 2,
+        "fatG": 22,
+        "fibreG": 0,
+        "sodiumMg": 200
+      }
+    },
+    {
+      "id": "red-wine-and-shallot-pan-sauce",
+      "title": "Red Wine and Shallot Pan Sauce",
+      "summary": "A glossy steak sauce of shallots reduced with red wine, stock and thyme, enriched with cold butter.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 shallots, finely sliced",
+            "30g butter",
+            "250ml red wine",
+            "250ml beef stock",
+            "2 thyme sprigs",
+            "1 tsp red wine vinegar",
+            "30g cold butter, cubed",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the shallots in the first measure of butter for 5 minutes, until soft and golden.",
+        "Add the wine and thyme and boil for 8 minutes, until reduced by two thirds.",
+        "Add the stock and boil for 8 minutes, until syrupy enough to coat a spoon.",
+        "Remove the thyme, whisk in the vinegar and the cold butter a cube at a time, until glossy.",
+        "Season with the pepper and serve straight away."
+      ],
+      "notes": [
+        "Do not boil once the butter is in, or the sauce splits."
+      ],
+      "nutrition": {
+        "kcal": 137,
+        "proteinG": 2,
+        "carbsG": 7,
+        "fatG": 11,
+        "fibreG": 1,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "onion-gravy-with-thyme",
+      "title": "Onion Gravy with Thyme",
+      "summary": "Slowly browned onions simmered in rich stock with thyme and a splash of balsamic, ideal for sausages and mash.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 40,
+      "servings": 6,
+      "onePot": true,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "4 brown onions, thinly sliced",
+            "40g butter",
+            "1 tbsp olive oil",
+            "2 tbsp plain flour",
+            "600ml beef stock",
+            "1 tbsp balsamic vinegar",
+            "2 tsp worcestershire sauce",
+            "3 thyme sprigs",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onions in the butter and oil over medium-low heat for 25 minutes, stirring often, until deeply golden and sweet.",
+        "Stir in the flour for 1 minute.",
+        "Gradually add the stock, stirring, then add the vinegar, worcestershire sauce and thyme.",
+        "Simmer for 10 minutes, until glossy and thickened enough to coat a spoon.",
+        "Remove the thyme, season with the pepper and serve hot."
+      ],
+      "notes": [
+        "Use vegetable stock and omit the worcestershire sauce for a vegetarian gravy."
+      ],
+      "nutrition": {
+        "kcal": 139,
+        "proteinG": 3,
+        "carbsG": 15,
+        "fatG": 7,
+        "fibreG": 2,
+        "sodiumMg": 480
+      }
+    },
+    {
+      "id": "peppercorn-cream-pan-sauce",
+      "title": "Peppercorn Cream Pan Sauce",
+      "summary": "A classic steak-house sauce of cracked peppercorns, brandy, stock and cream.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp black peppercorns, crushed",
+            "20g butter",
+            "2 shallots, finely chopped",
+            "3 tbsp brandy",
+            "200ml beef stock",
+            "200ml cream",
+            "1 tsp Dijon mustard",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the shallots and peppercorns in the butter for 3 minutes, until soft.",
+        "Carefully add the brandy and let it bubble for 1 minute, until almost evaporated.",
+        "Add the stock and boil for 5 minutes, until reduced by half.",
+        "Stir in the cream and mustard and simmer for 3 minutes, until it coats the back of a spoon.",
+        "Season with the salt and taste, adding more pepper if you like."
+      ],
+      "notes": [
+        "Keep the heat low once the cream is in, or it will split."
+      ],
+      "nutrition": {
+        "kcal": 204,
+        "proteinG": 2,
+        "carbsG": 4,
+        "fatG": 20,
+        "fibreG": 0,
+        "sodiumMg": 270
+      }
+    },
+    {
+      "id": "mustard-and-tarragon-cream-sauce",
+      "title": "Mustard and Tarragon Cream Sauce",
+      "summary": "A tangy, herby cream sauce with Dijon, white wine and tarragon for chicken, fish and vegetables.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "20g butter",
+            "2 shallots, finely chopped",
+            "120ml dry white wine",
+            "150ml chicken stock",
+            "200ml cream",
+            "2 tbsp Dijon mustard",
+            "1 tbsp chopped tarragon",
+            "1 tsp lemon juice",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the shallots in the butter for 3 minutes, until soft.",
+        "Add the wine and boil for 4 minutes, until reduced by two thirds.",
+        "Add the stock and cream and simmer for 5 minutes, until thick enough to coat a spoon.",
+        "Whisk in the mustard, tarragon, lemon juice and salt and warm through without boiling."
+      ],
+      "notes": [
+        "Swap the tarragon for dill for fish."
+      ],
+      "nutrition": {
+        "kcal": 204,
+        "proteinG": 2,
+        "carbsG": 4,
+        "fatG": 20,
+        "fibreG": 0,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "carolina-mustard-bbq-sauce",
+      "title": "Carolina Mustard BBQ Sauce",
+      "summary": "A thin, tangy South Carolina sauce of yellow mustard, cider vinegar and brown sugar for pulled pork and sausages.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 20,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g American-style yellow mustard",
+            "120ml apple cider vinegar",
+            "100g brown sugar",
+            "2 tbsp honey",
+            "1 tbsp worcestershire sauce",
+            "1 tsp smoked paprika",
+            "1/2 tsp garlic powder",
+            "1/2 tsp cayenne pepper",
+            "1/2 tsp salt",
+            "100ml water"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk everything together in a saucepan.",
+        "Bring to a gentle simmer and cook for 15 minutes, stirring often, until slightly thickened and glossy.",
+        "Cool completely, then pour into a clean jar and store in the fridge."
+      ],
+      "notes": [
+        "Keeps 3 weeks in the fridge.",
+        "Add a dash of hot sauce for more heat."
+      ],
+      "nutrition": {
+        "kcal": 76,
+        "proteinG": 1,
+        "carbsG": 18,
+        "fatG": 0,
+        "fibreG": 0,
+        "sodiumMg": 480
+      }
+    },
+    {
+      "id": "honey-roasted-carrots-with-hazelnut-spice-crunch",
+      "title": "Honey Roasted Carrots with Hazelnut Spice Crunch",
+      "summary": "Sweet roasted carrots glazed with honey and dusted with a crunchy nut and spice dukkah, served over yoghurt.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g carrots, halved lengthways",
+            "2 tbsp olive oil",
+            "2 tbsp honey",
+            "1/2 tsp salt",
+            "150g plain yoghurt",
+            "3 tbsp hazelnuts, chopped",
+            "1 tbsp sesame seeds",
+            "1 tsp ground cumin",
+            "1 tsp ground coriander",
+            "1 handful mint leaves",
+            "1 lemon, juiced"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C and line a large tray with baking paper.",
+        "Toss the carrots with the oil, honey and salt on a lined tray.",
+        "Roast for 30 minutes, turning once, until tender and caramelised at the edges.",
+        "Toast the hazelnuts and sesame in a dry pan for 3 minutes, until golden, then stir through the cumin and coriander.",
+        "Stir the lemon juice into the yoghurt and spread on a platter.",
+        "Pile the carrots on top and scatter with the toasted nut mix and mint."
+      ],
+      "notes": [
+        "Use maple syrup instead of honey for a vegan side with dairy-free yoghurt."
+      ],
+      "nutrition": {
+        "kcal": 262,
+        "proteinG": 6,
+        "carbsG": 29,
+        "fatG": 12,
+        "fibreG": 7,
+        "sodiumMg": 480
+      }
+    },
+    {
+      "id": "roast-broccoli-with-garlic-and-chilli",
+      "title": "Roast Broccoli with Garlic and Chilli",
+      "summary": "Charred broccoli florets roasted hot with garlic and chilli flakes, finished with lemon and toasted almonds.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 heads broccoli, cut into florets",
+            "3 tbsp olive oil",
+            "4 garlic cloves, sliced",
+            "1 tsp chilli flakes",
+            "1/2 tsp salt",
+            "1 lemon, zested and juiced",
+            "40g flaked almonds"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 230°C and line a large tray with baking paper.",
+        "Toss the broccoli with the oil, garlic, chilli flakes and salt on a large tray.",
+        "Roast for 18 minutes, turning once, until the tips are charred and the stems tender.",
+        "Toast the almonds in a dry pan for 3 minutes, until golden.",
+        "Finish with the lemon zest, juice and almonds."
+      ],
+      "notes": [
+        "Swap the almonds for toasted breadcrumbs."
+      ],
+      "nutrition": {
+        "kcal": 152,
+        "proteinG": 6,
+        "carbsG": 7,
+        "fatG": 10,
+        "fibreG": 4,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "maple-roast-pumpkin-wedges-with-sage",
+      "title": "Maple Roast Pumpkin Wedges with Sage",
+      "summary": "Sweet roasted pumpkin wedges glazed with maple, brown butter and crisp sage.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 kg pumpkin, cut into wedges with skin on",
+            "2 tbsp olive oil",
+            "3 tbsp maple syrup",
+            "1/2 tsp salt",
+            "40g butter",
+            "1 handful sage leaves",
+            "2 tbsp pecans, chopped",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 210°C and line a large tray with baking paper.",
+        "Toss the pumpkin with the oil, 2 tbsp maple syrup and the salt on a lined tray.",
+        "Roast for 35 minutes, turning once, until caramelised and tender.",
+        "Melt the butter in a pan until foaming, add the sage and cook for 1 minute, until crisp.",
+        "Pour over the pumpkin with the remaining maple syrup, pecans and pepper."
+      ],
+      "notes": [
+        "Leave the skin on, it is edible and holds the wedges together."
+      ],
+      "nutrition": {
+        "kcal": 311,
+        "proteinG": 4,
+        "carbsG": 33,
+        "fatG": 17,
+        "fibreG": 5,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "crispy-smashed-potatoes-with-rosemary",
+      "title": "Crispy Smashed Potatoes with Rosemary",
+      "summary": "Boiled baby potatoes smashed flat and roasted until the edges are shatteringly crisp, with rosemary and garlic.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 55,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g baby potatoes",
+            "4 tbsp olive oil",
+            "2 tsp rosemary, chopped",
+            "3 garlic cloves, sliced",
+            "1 tsp salt",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes in well-salted water for 20 minutes, until a knife slides in easily, then drain well.",
+        "Heat the oven to 230°C and heat the oil on a large tray.",
+        "Space the potatoes on the tray and smash each flat with a glass.",
+        "Scatter over the rosemary, garlic and salt.",
+        "Roast for 30 minutes, turning once, until deep golden and crisp."
+      ],
+      "notes": [
+        "Dry the boiled potatoes well so they crisp."
+      ],
+      "nutrition": {
+        "kcal": 308,
+        "proteinG": 5,
+        "carbsG": 38,
+        "fatG": 14,
+        "fibreG": 5,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "roasted-beetroot-with-yoghurt-and-dill",
+      "title": "Roasted Beetroot with Yoghurt and Dill",
+      "summary": "Earthy roast beetroot wedges on garlicky yoghurt with dill, walnuts and a little lemon.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 50,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g beetroot, scrubbed and cut into wedges",
+            "2 tbsp olive oil",
+            "1/2 tsp salt",
+            "200g plain yoghurt",
+            "1 garlic clove, crushed",
+            "1 lemon, juiced",
+            "2 tbsp dill, chopped",
+            "30g walnuts, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C and line a large tray with baking paper.",
+        "Toss the beetroot with the oil and salt on a lined tray and cover loosely with foil.",
+        "Roast for 40 minutes, then uncover and roast for 10 minutes, until tender and slightly caramelised.",
+        "Mix the yoghurt, garlic and half the lemon juice and spread on a plate.",
+        "Pile the beetroot on top and finish with the dill, walnuts and remaining lemon."
+      ],
+      "notes": [
+        "Wear gloves to avoid staining your hands."
+      ],
+      "nutrition": {
+        "kcal": 227,
+        "proteinG": 7,
+        "carbsG": 22,
+        "fatG": 11,
+        "fibreG": 6,
+        "sodiumMg": 420
+      }
+    },
+    {
+      "id": "oven-roasted-cherry-tomatoes-with-thyme",
+      "title": "Oven-Roasted Cherry Tomatoes with Thyme",
+      "summary": "Slowly roasted cherry tomatoes concentrated with thyme and garlic, to spoon over toast, pasta or grilled meat.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g cherry tomatoes",
+            "3 tbsp olive oil",
+            "4 garlic cloves",
+            "6 thyme sprigs",
+            "1 tsp sugar",
+            "1/2 tsp salt",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C and line a large tray with baking paper.",
+        "Toss the tomatoes with the oil, garlic, thyme, sugar, salt and pepper in a baking dish.",
+        "Roast for 35 minutes, until the skins burst and the tomatoes are jammy and slightly caramelised.",
+        "Squash the garlic into the juices and serve warm."
+      ],
+      "notes": [
+        "Keeps 5 days covered in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 157,
+        "proteinG": 2,
+        "carbsG": 11,
+        "fatG": 11,
+        "fibreG": 3,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "chinese-style-sesame-cabbage-slaw",
+      "title": "Chinese-Style Sesame Cabbage Slaw",
+      "summary": "Crunchy shredded cabbage and carrot in a nutty sesame, soy and rice vinegar dressing.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1/2 small cabbage, finely shredded",
+            "2 carrots, grated",
+            "4 spring onions, sliced",
+            "2 tbsp sesame seeds",
+            "2 tbsp soy sauce",
+            "2 tbsp rice vinegar",
+            "1 tbsp sesame oil",
+            "1 tbsp honey",
+            "1 tsp ginger, grated",
+            "1 handful coriander leaves"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the sesame seeds in a dry pan for 2 minutes, until golden.",
+        "Whisk the soy sauce, vinegar, sesame oil, honey and ginger together.",
+        "Toss the cabbage, carrots, spring onions and coriander with the dressing.",
+        "Scatter over the sesame seeds and serve straight away."
+      ],
+      "notes": [
+        "Add roasted peanuts or crispy noodles for extra crunch."
+      ],
+      "nutrition": {
+        "kcal": 119,
+        "proteinG": 3,
+        "carbsG": 13,
+        "fatG": 6,
+        "fibreG": 4,
+        "sodiumMg": 680
+      }
+    },
+    {
+      "id": "apple-and-celery-slaw-with-mustard-dressing",
+      "title": "Apple and Celery Slaw with Mustard Dressing",
+      "summary": "A crisp, tangy slaw of matchstick apple, celery and red cabbage in a mustard and yoghurt dressing.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 red apples, cut into matchsticks",
+            "4 celery stalks, thinly sliced",
+            "1/4 red cabbage, shredded",
+            "3 tbsp plain yoghurt",
+            "2 tbsp mayonnaise",
+            "1 tbsp wholegrain mustard",
+            "1 tbsp apple cider vinegar",
+            "1 tbsp honey",
+            "2 tbsp walnuts, chopped",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the yoghurt, mayonnaise, mustard, vinegar, honey and salt together.",
+        "Toss the apples, celery and cabbage in the dressing until evenly coated.",
+        "Scatter with the walnuts and eat within 30 minutes, while crisp."
+      ],
+      "notes": [
+        "Squeeze lemon over the apple to stop browning."
+      ],
+      "nutrition": {
+        "kcal": 189,
+        "proteinG": 3,
+        "carbsG": 22,
+        "fatG": 9,
+        "fibreG": 4,
+        "sodiumMg": 270
+      }
+    },
+    {
+      "id": "pearl-couscous-salad-with-roasted-vegetables",
+      "title": "Pearl Couscous Salad with Roasted Vegetables",
+      "summary": "Chewy pearl couscous tossed with roasted capsicum, zucchini and red onion, with a lemon and herb dressing.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g pearl couscous",
+            "1 red capsicum, chopped",
+            "1 zucchini, chopped",
+            "1 red onion, cut into wedges",
+            "3 tbsp olive oil",
+            "1 tsp ground cumin",
+            "1/2 tsp salt",
+            "1 lemon, juiced",
+            "1 handful parsley leaves, chopped",
+            "1 handful mint leaves, chopped",
+            "50g feta, crumbled"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C and line a large tray with baking paper.",
+        "Toss the vegetables with 1 tbsp oil, the cumin and salt on a tray and roast for 25 minutes, until tender and charred at the edges.",
+        "Boil the couscous in salted water for 8 minutes, until tender but chewy, then drain.",
+        "Toss the warm couscous with the remaining oil, lemon juice, herbs and vegetables.",
+        "Crumble the feta over the top and serve warm or at room temperature."
+      ],
+      "notes": [
+        "Leave out the feta for a vegan salad."
+      ],
+      "nutrition": {
+        "kcal": 398,
+        "proteinG": 11,
+        "carbsG": 59,
+        "fatG": 12,
+        "fibreG": 5,
+        "sodiumMg": 480
+      }
+    },
+    {
+      "id": "barley-and-roast-pumpkin-salad",
+      "title": "Barley and Roast Pumpkin Salad",
+      "summary": "Nutty pearl barley with roast pumpkin, spinach and pepitas in a maple and mustard dressing.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g pearl barley",
+            "600g pumpkin, cubed",
+            "3 tbsp olive oil",
+            "1/2 tsp salt",
+            "80g baby spinach",
+            "2 tbsp pepitas",
+            "1 red onion, thinly sliced",
+            "1 tbsp wholegrain mustard",
+            "1 tbsp maple syrup",
+            "2 tbsp red wine vinegar"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C and line a large tray with baking paper.",
+        "Toss the pumpkin with 1 tbsp oil and the salt on a tray and roast for 30 minutes, until golden and tender.",
+        "Simmer the barley in plenty of water for 30 minutes, until tender, then drain.",
+        "Whisk the remaining oil, mustard, maple syrup and vinegar.",
+        "Toss the warm barley, pumpkin, onion and dressing, then fold through the spinach and pepitas."
+      ],
+      "notes": [
+        "Good warm or cold the next day."
+      ],
+      "nutrition": {
+        "kcal": 436,
+        "proteinG": 10,
+        "carbsG": 62,
+        "fatG": 14,
+        "fibreG": 11,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "wild-rice-orange-and-pecan-salad",
+      "title": "Wild Rice, Orange and Pecan Salad",
+      "summary": "Chewy wild rice mix with orange segments, pecans and herbs in a citrus vinaigrette.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g wild rice blend",
+            "2 oranges, segmented, juice reserved",
+            "40g pecans, chopped",
+            "1 handful parsley leaves, chopped",
+            "4 spring onions, sliced",
+            "3 tbsp olive oil",
+            "1 tbsp red wine vinegar",
+            "1 tsp Dijon mustard",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the rice in plenty of salted water for 35 minutes, until the grains split, then drain well.",
+        "Toast the pecans in a dry pan for 3 minutes, until fragrant.",
+        "Whisk the reserved orange juice, oil, vinegar, mustard and salt.",
+        "Toss the warm rice with the dressing, then fold in the orange segments, pecans, parsley and spring onion."
+      ],
+      "notes": [
+        "Serve at room temperature."
+      ],
+      "nutrition": {
+        "kcal": 442,
+        "proteinG": 9,
+        "carbsG": 62,
+        "fatG": 16,
+        "fibreG": 7,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "pacific-sweet-potato-wedges-with-coconut-lime-dip",
+      "title": "Pacific Sweet Potato Wedges with Coconut Lime Dip",
+      "summary": "Oven-roasted sweet potato wedges served with a cool coconut yoghurt, lime and chilli dip.",
+      "cuisine": "pacific-islands",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 kg sweet potatoes, cut into wedges",
+            "3 tbsp coconut oil",
+            "1/2 tsp salt",
+            "1 tsp paprika",
+            "150g coconut yoghurt",
+            "1 lime, zested and juiced",
+            "1 red chilli, finely chopped",
+            "1 handful coriander leaves"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C and line a large tray with baking paper.",
+        "Toss the sweet potato with the oil, salt and paprika on a large tray.",
+        "Roast for 30 minutes, turning once, until golden and tender inside.",
+        "Mix the coconut yoghurt with the lime zest, juice, chilli and half the coriander.",
+        "Serve the wedges with the dip and the remaining coriander."
+      ],
+      "notes": [
+        "Use ordinary oil if you dislike the coconut flavour."
+      ],
+      "nutrition": {
+        "kcal": 336,
+        "proteinG": 4,
+        "carbsG": 49,
+        "fatG": 12,
+        "fibreG": 8,
+        "sodiumMg": 320
+      }
+    },
+    {
+      "id": "pacific-coconut-pumpkin-and-cabbage-soup",
+      "title": "Pacific Coconut Pumpkin and Cabbage Soup",
+      "summary": "A gentle coconut milk soup of pumpkin, cabbage and ginger with lime, inspired by island home cooking.",
+      "cuisine": "pacific-islands",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g pumpkin, cubed",
+            "1/2 small cabbage, shredded",
+            "1 brown onion, chopped",
+            "3 garlic cloves",
+            "1 piece ginger, grated",
+            "1 tbsp coconut oil",
+            "400ml coconut milk",
+            "500ml vegetable stock",
+            "1 lime, juiced",
+            "1/2 tsp salt",
+            "1 handful coriander leaves"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion, garlic and ginger in the oil for 5 minutes, until soft.",
+        "Add the pumpkin, stock and coconut milk and simmer for 15 minutes, until the pumpkin is tender.",
+        "Add the cabbage and simmer for 5 minutes, until just wilted.",
+        "Season with the lime juice and salt.",
+        "Scatter with the coriander."
+      ],
+      "notes": [
+        "Mash some of the pumpkin for a thicker soup."
+      ],
+      "nutrition": {
+        "kcal": 285,
+        "proteinG": 4,
+        "carbsG": 22,
+        "fatG": 19,
+        "fibreG": 5,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "iraqi-shorbat-rizz-rice-and-lemon-soup",
+      "title": "Iraqi Shorbat Rizz Rice and Lemon Soup",
+      "summary": "A comforting rice, lentil and lemon soup with turmeric, cumin and a drizzle of olive oil.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g long grain rice",
+            "100g red lentils",
+            "1 brown onion, chopped",
+            "3 garlic cloves",
+            "2 tbsp olive oil",
+            "1 tsp ground turmeric",
+            "1 tsp ground cumin",
+            "1.2 litres vegetable stock",
+            "1 lemon, juiced",
+            "1/2 tsp salt",
+            "1 handful parsley leaves, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion and garlic in half the oil for 5 minutes, until soft.",
+        "Stir in the turmeric and cumin for 1 minute.",
+        "Add the rice, lentils and stock and simmer for 22 minutes, until both are very soft and the soup thick.",
+        "Stir in the lemon juice and salt.",
+        "Serve with the parsley and a drizzle of oil."
+      ],
+      "notes": [
+        "Thin with a splash of water when reheating."
+      ],
+      "nutrition": {
+        "kcal": 356,
+        "proteinG": 12,
+        "carbsG": 56,
+        "fatG": 8,
+        "fibreG": 6,
+        "sodiumMg": 490
+      }
+    }
+  ]
+}

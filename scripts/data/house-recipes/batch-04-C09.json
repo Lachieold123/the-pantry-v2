@@ -1,0 +1,1403 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "sambal-goreng-tofu-and-long-beans",
+      "title": "Sambal Goreng Tofu and Long Beans",
+      "summary": "Crisp fried tofu and green beans tossed in a sticky sweet chilli and tamarind sambal, a vegan Malaysian side or main.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g firm tofu, cubed",
+            "200g green beans",
+            "3 tbsp chilli paste",
+            "2 shallots, sliced",
+            "3 garlic cloves",
+            "1 tbsp tamarind paste",
+            "1 tbsp palm sugar",
+            "3 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the tofu in the oil for 6 minutes until golden and crisp, then lift out.",
+        "Fry the shallots and garlic in the same oil for 3 minutes until soft.",
+        "Add the chilli paste and cook for 4 minutes until the oil rises to the surface.",
+        "Stir in the tamarind, sugar and a splash of water and simmer until sticky.",
+        "Add the beans and tofu and toss for 4 minutes until the beans are just tender."
+      ],
+      "notes": [
+        "Vegan and dairy-free.",
+        "Serve with steamed rice."
+      ],
+      "nutrition": {
+        "kcal": 249,
+        "proteinG": 14,
+        "carbsG": 16,
+        "fatG": 13,
+        "fibreG": 5,
+        "sodiumMg": 480
+      }
+    },
+    {
+      "id": "hokkien-mee-prawn-noodle-soup",
+      "title": "Hokkien Mee Prawn Noodle Soup",
+      "summary": "A deep prawn-head broth with pork, egg noodles, bean sprouts and fried shallots, rich and sweet with a chilli kick.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 30,
+      "cookMinutes": 60,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g raw prawns, whole",
+            "300g pork ribs",
+            "1.5 litres water",
+            "4 garlic cloves",
+            "2 tbsp chilli paste",
+            "1 tbsp vegetable oil",
+            "2 tbsp soy sauce",
+            "1 tsp white pepper",
+            "300g egg noodles",
+            "100g bean sprouts",
+            "100g water spinach",
+            "2 eggs",
+            "3 tbsp fried shallots"
+          ]
+        }
+      ],
+      "steps": [
+        "Peel the prawns, keeping the heads and shells, and set the meat aside.",
+        "Fry the shells and heads in the oil for 5 minutes until bright orange.",
+        "Add the garlic, chilli paste, ribs and water and simmer for 45 minutes until the ribs are tender and the broth is red-gold.",
+        "Strain and season with soy sauce and white pepper.",
+        "Boil the eggs for 8 minutes, cool, peel and halve.",
+        "Poach the prawns in the broth for 3 minutes until pink and opaque.",
+        "Blanch the noodles, sprouts and greens, then top with prawns, ribs, eggs and shallots and ladle over the broth."
+      ],
+      "notes": [
+        "Food safety: cook the prawns until pink and opaque, cook the pork until tender and at least 75°C, and boil the eggs until set.",
+        "The broth freezes well."
+      ],
+      "nutrition": {
+        "kcal": 530,
+        "proteinG": 40,
+        "carbsG": 50,
+        "fatG": 18,
+        "fibreG": 4,
+        "sodiumMg": 1300
+      }
+    },
+    {
+      "id": "lemang-style-coconut-sticky-rice-breakfast",
+      "title": "Lemang-Style Coconut Sticky Rice Breakfast",
+      "summary": "Glutinous rice steamed in coconut milk until sticky and fragrant, served with serundeng and fried egg.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g glutinous rice",
+            "400ml coconut milk",
+            "200ml water",
+            "1 tsp salt",
+            "30g desiccated coconut",
+            "2 tbsp peanuts",
+            "1 tbsp palm sugar",
+            "3 eggs",
+            "1 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the rice for 2 hours and drain.",
+        "Steam the rice over boiling water for 20 minutes until half cooked.",
+        "Stir in the coconut milk, water and salt and steam 20 minutes until tender and sticky.",
+        "Toast the coconut, peanuts and sugar in a dry pan for 5 minutes until golden.",
+        "Fry the eggs in the oil until the whites are fully set.",
+        "Serve the rice with serundeng and egg."
+      ],
+      "notes": [
+        "Food safety: fry the eggs until the whites and yolks are firm.",
+        "Vegetarian."
+      ],
+      "nutrition": {
+        "kcal": 523,
+        "proteinG": 12,
+        "carbsG": 70,
+        "fatG": 21,
+        "fibreG": 3,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "ikan-bakar-style-grilled-fish-with-sambal",
+      "title": "Ikan Bakar Style Grilled Fish with Sambal",
+      "summary": "Whole-style fish fillets brushed with a turmeric and chilli marinade and grilled until smoky, with a lime sambal.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g white fish fillets",
+            "2 tbsp chilli paste",
+            "1 tsp turmeric",
+            "3 garlic cloves",
+            "1 tbsp tamarind paste",
+            "1 tbsp vegetable oil",
+            "1 tomato",
+            "1 red chilli",
+            "2 limes",
+            "1 shallot"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the chilli paste, turmeric, crushed garlic, tamarind and oil into a marinade.",
+        "Rub it over the fish and rest for 20 minutes.",
+        "Grill the fish for 4 minutes per side until opaque and flaking.",
+        "Dice the tomato, chilli and shallot and toss with lime juice for the sambal.",
+        "Serve the fish with the sambal."
+      ],
+      "notes": [
+        "Food safety: cook the fish until opaque and it flakes easily with a fork.",
+        "Prep time excludes marinating."
+      ],
+      "nutrition": {
+        "kcal": 246,
+        "proteinG": 32,
+        "carbsG": 6,
+        "fatG": 10,
+        "fibreG": 2,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "warm-lamb-and-bulgur-salad",
+      "title": "Warm Lamb and Bulgur Salad",
+      "summary": "Spiced lamb strips over nutty bulgur with pomegranate, mint and a lemon tahini drizzle.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g lamb leg steaks",
+            "200g bulgur",
+            "1 tsp cumin",
+            "1 tsp paprika",
+            "2 tbsp olive oil",
+            "1 cucumber",
+            "1 handful mint",
+            "2 tbsp tahini",
+            "2 tbsp lemon juice",
+            "80g rocket"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the bulgur in boiling water for 15 minutes until tender, then drain.",
+        "Rub the lamb with cumin, paprika and oil.",
+        "Sear the lamb for 4 minutes per side until browned.",
+        "Rest the lamb for 5 minutes, then slice.",
+        "Whisk tahini, lemon juice and water until pourable.",
+        "Toss bulgur with cucumber, rocket and mint, then top with lamb and drizzle."
+      ],
+      "notes": [
+        "Food safety: cook lamb to at least 63°C, with the rest time counting, or until no raw meat remains inside if cut.",
+        "Dairy-free."
+      ],
+      "nutrition": {
+        "kcal": 544,
+        "proteinG": 36,
+        "carbsG": 46,
+        "fatG": 22,
+        "fibreG": 9,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "chermoula-roasted-carrot-salad",
+      "title": "Chermoula Roasted Carrot Salad",
+      "summary": "Sweet roasted carrots in a herb chermoula with chickpeas and almonds.",
+      "cuisine": "north-african",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g carrots",
+            "1 tin chickpeas",
+            "3 tbsp olive oil",
+            "1 bunch coriander",
+            "1 bunch parsley",
+            "3 garlic cloves",
+            "1 tsp cumin",
+            "1 tsp paprika",
+            "2 tbsp lemon juice",
+            "40g almonds"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the carrots with half the oil at 200C for 30 minutes until caramelised.",
+        "Blend the herbs, garlic, spices, lemon juice and remaining oil into chermoula.",
+        "Toast the almonds until golden and chop.",
+        "Toss the warm carrots and chickpeas with the chermoula until coated.",
+        "Scatter with the chopped almonds and serve at room temperature."
+      ],
+      "notes": [
+        "Vegan and gluten-free.",
+        "Good served cold."
+      ],
+      "nutrition": {
+        "kcal": 289,
+        "proteinG": 8,
+        "carbsG": 29,
+        "fatG": 14,
+        "fibreG": 9,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "warm-potato-salad-with-bacon-and-mustard",
+      "title": "Warm Potato Salad with Bacon and Mustard",
+      "summary": "Waxy potatoes with crisp bacon, red onion and a warm mustard vinaigrette.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g waxy potatoes",
+            "150g bacon, diced",
+            "1 red onion",
+            "3 tbsp white wine vinegar",
+            "1 tbsp wholegrain mustard",
+            "3 tbsp olive oil",
+            "2 tbsp parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes for 18 minutes until tender, then drain and slice.",
+        "Fry the bacon until crisp.",
+        "Add the onion and cook for 3 minutes until soft.",
+        "Stir in the vinegar, mustard and oil.",
+        "Toss with the warm potatoes and parsley."
+      ],
+      "notes": [
+        "Food safety: cook the bacon until crisp and fully cooked.",
+        "Dress while warm."
+      ],
+      "nutrition": {
+        "kcal": 380,
+        "proteinG": 12,
+        "carbsG": 36,
+        "fatG": 20,
+        "fibreG": 4,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "spiced-pumpkin-seed-granola-clusters",
+      "title": "Spiced Pumpkin Seed Granola Clusters",
+      "summary": "Crunchy oat clusters with pumpkin seeds, coconut and cinnamon baked until golden.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 10,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g rolled oats",
+            "100g pumpkin seeds",
+            "50g desiccated coconut",
+            "80ml maple syrup",
+            "60ml olive oil",
+            "2 tsp cinnamon",
+            "1 egg white",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the syrup, oil, cinnamon and salt.",
+        "Mix with the oats, seeds and coconut.",
+        "Fold through the lightly whisked egg white.",
+        "Press into a lined tray and pack down firmly with the back of a spoon.",
+        "Bake at 150C for 30 minutes until golden.",
+        "Cool completely before breaking into clusters."
+      ],
+      "notes": [
+        "Food safety: bake until golden and fully dry.",
+        "Store airtight for 2 weeks."
+      ],
+      "nutrition": {
+        "kcal": 271,
+        "proteinG": 8,
+        "carbsG": 24,
+        "fatG": 15,
+        "fibreG": 4,
+        "sodiumMg": 40
+      }
+    },
+    {
+      "id": "tortilla-espa-ola",
+      "title": "Tortilla Española",
+      "summary": "A thick Spanish omelette of slow-cooked potato and onion, set and golden.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g potatoes, sliced thin",
+            "1 brown onion",
+            "6 eggs",
+            "150ml olive oil",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the potato and onion in the oil over low heat for 20 minutes until completely soft.",
+        "Drain the oil and mix the vegetables into the beaten eggs.",
+        "Rest the mixture for 5 minutes until the egg soaks into the potato.",
+        "Cook the mixture in a pan for 5 minutes until the base is set and golden.",
+        "Flip using a plate and cook for 4 minutes until firm."
+      ],
+      "notes": [
+        "Food safety: cook until the egg is fully set in the centre.",
+        "Eat warm or cold."
+      ],
+      "nutrition": {
+        "kcal": 344,
+        "proteinG": 11,
+        "carbsG": 24,
+        "fatG": 22,
+        "fibreG": 3,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "egg-and-chorizo-breakfast-burritos",
+      "title": "Egg and Chorizo Breakfast Burritos",
+      "summary": "Warm tortillas filled with scrambled egg, chorizo, beans and salsa.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 eggs",
+            "150g chorizo, sliced",
+            "4 flour tortillas",
+            "1 tin black beans",
+            "1 tomato, diced",
+            "1 tbsp olive oil",
+            "3 tbsp tomato salsa",
+            "1 avocado"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the chorizo in the oil for 4 minutes until crisp and the fat runs.",
+        "Warm the beans in a pot until hot.",
+        "Pour in the whisked eggs and scramble until just set.",
+        "Warm the tortillas in a dry pan until soft.",
+        "Fill with egg, beans, tomato, salsa and avocado and fold."
+      ],
+      "notes": [
+        "Food safety: cook the egg until firm and chorizo until hot throughout.",
+        "Wrap in foil to take away."
+      ],
+      "nutrition": {
+        "kcal": 544,
+        "proteinG": 24,
+        "carbsG": 40,
+        "fatG": 30,
+        "fibreG": 9,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "congee-with-century-egg-and-pork",
+      "title": "Congee with Century Egg and Pork",
+      "summary": "Silky rice porridge with minced pork, century egg and ginger, a classic Chinese breakfast.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 60,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g jasmine rice",
+            "1.5 litres water",
+            "200g pork mince",
+            "30g ginger",
+            "2 century eggs",
+            "2 spring onions",
+            "2 tbsp soy sauce",
+            "1 tsp sesame oil",
+            "1 pinch white pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the rice in the water for 50 minutes, stirring now and then, until the grains burst and the congee turns creamy.",
+        "Mix the pork with soy sauce and ginger.",
+        "Add the pork and cook for 8 minutes until it reaches 75°C.",
+        "Chop the century eggs into small pieces and set aside.",
+        "Ladle into bowls and top with egg, spring onion, sesame oil and pepper."
+      ],
+      "notes": [
+        "Food safety: cook the pork until it reaches 75°C with no pink.",
+        "Century eggs are cured, not cooked, so avoid in pregnancy."
+      ],
+      "nutrition": {
+        "kcal": 386,
+        "proteinG": 24,
+        "carbsG": 40,
+        "fatG": 14,
+        "fibreG": 2,
+        "sodiumMg": 1050
+      }
+    },
+    {
+      "id": "savoury-oats-with-soft-egg-and-spinach",
+      "title": "Savoury Oats with Soft Egg and Spinach",
+      "summary": "Creamy porridge oats cooked in stock with spinach, topped with a jammy egg and sesame.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 10,
+      "servings": 1,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "50g rolled oats",
+            "300ml vegetable stock",
+            "1 handful baby spinach",
+            "1 egg",
+            "1 tsp soy sauce",
+            "1 tsp sesame seeds",
+            "1 tsp sesame oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the oats in the stock for 5 minutes until thick and creamy.",
+        "Stir in the spinach until wilted.",
+        "Boil the egg for 7 minutes until jammy.",
+        "Spoon the oats into a bowl and top with the halved egg.",
+        "Drizzle with soy sauce and sesame oil and scatter with sesame seeds."
+      ],
+      "notes": [
+        "Food safety: a jammy egg is not recommended for pregnant women, older adults or small children, so boil for 10 minutes until firm.",
+        "Dairy-free."
+      ],
+      "nutrition": {
+        "kcal": 298,
+        "proteinG": 15,
+        "carbsG": 30,
+        "fatG": 12,
+        "fibreG": 5,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "apple-cinnamon-dutch-porridge-pots",
+      "title": "Apple Cinnamon Dutch Porridge Pots",
+      "summary": "Creamy porridge baked with apple, cinnamon and a touch of maple, served warm.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "160g rolled oats",
+            "600ml milk",
+            "2 apples, diced",
+            "1 tsp cinnamon",
+            "2 tbsp maple syrup",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the oats and milk for 5 minutes until thick.",
+        "Fold in the apples, cinnamon, syrup and salt.",
+        "Spoon into ramekins and bake at 180C for 10 minutes until golden on top."
+      ],
+      "notes": [
+        "Vegetarian.",
+        "Add nuts for crunch."
+      ],
+      "nutrition": {
+        "kcal": 344,
+        "proteinG": 11,
+        "carbsG": 54,
+        "fatG": 8,
+        "fibreG": 6,
+        "sodiumMg": 240
+      }
+    },
+    {
+      "id": "sri-lankan-egg-hopper-pancakes",
+      "title": "Sri Lankan Egg Hopper Pancakes",
+      "summary": "Bowl-shaped fermented rice pancakes with a lacy edge and a soft egg in the centre.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g rice flour",
+            "100ml coconut milk",
+            "250ml warm water",
+            "1 tsp sugar",
+            "1 tsp dried yeast",
+            "1 pinch salt",
+            "4 eggs",
+            "1 tbsp coconut oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour, coconut milk, water, sugar, yeast and salt until smooth.",
+        "Rest in a warm place for 2 hours until bubbly.",
+        "Heat a small wok with a little oil until hot.",
+        "Pour in a ladle of batter and swirl to coat the sides.",
+        "Crack an egg in the centre and cover.",
+        "Cook for 3 minutes until the edges are crisp and the egg is set."
+      ],
+      "notes": [
+        "Food safety: cook until the egg white is fully set.",
+        "Serve with sambol."
+      ],
+      "nutrition": {
+        "kcal": 318,
+        "proteinG": 12,
+        "carbsG": 44,
+        "fatG": 10,
+        "fibreG": 2,
+        "sodiumMg": 220
+      }
+    },
+    {
+      "id": "moroccan-spiced-lentil-harira-soup",
+      "title": "Moroccan Spiced Lentil Harira Soup",
+      "summary": "A tomato and chickpea soup with lentils, cinnamon and fresh herbs, traditionally eaten to break the Ramadan fast.",
+      "cuisine": "north-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 brown onion",
+            "2 celery stalks",
+            "2 tbsp olive oil",
+            "1 tsp turmeric",
+            "1 tsp cinnamon",
+            "1 tsp ginger",
+            "400g tinned tomatoes",
+            "100g brown lentils",
+            "1 tin chickpeas",
+            "1.2 litres vegetable stock",
+            "60g vermicelli",
+            "1 handful coriander",
+            "2 lemons"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion and celery in the oil for 6 minutes until translucent.",
+        "Add the spices for 1 minute until fragrant.",
+        "Add the tomatoes, lentils and stock and simmer for 25 minutes until the lentils are tender.",
+        "Stir in the chickpeas and vermicelli and cook for 5 minutes until soft.",
+        "Finish with coriander and lemon juice."
+      ],
+      "notes": [
+        "Vegan.",
+        "Add a pinch of saffron for tradition."
+      ],
+      "nutrition": {
+        "kcal": 229,
+        "proteinG": 10,
+        "carbsG": 32,
+        "fatG": 5,
+        "fibreG": 8,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "kale-and-quinoa-caesar-style-bowl",
+      "title": "Kale and Quinoa Caesar-Style Bowl",
+      "summary": "Massaged kale and quinoa with chicken, a creamy tahini dressing and seeds.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g quinoa",
+            "200g chicken breast",
+            "100g kale",
+            "2 tbsp tahini",
+            "2 tbsp lemon juice",
+            "1 garlic clove",
+            "1 tbsp olive oil",
+            "2 tbsp pumpkin seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the quinoa for 15 minutes until tender and fluffy.",
+        "Season the chicken and pan-fry for 6 minutes per side until it reaches 75°C.",
+        "Massage the kale with the oil and lemon juice until softened.",
+        "Whisk the tahini, garlic and water into a dressing.",
+        "Slice the chicken and arrange over the quinoa and kale.",
+        "Drizzle with dressing and seeds."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C and the juices run clear.",
+        "High-protein and dairy-free."
+      ],
+      "nutrition": {
+        "kcal": 598,
+        "proteinG": 44,
+        "carbsG": 52,
+        "fatG": 22,
+        "fibreG": 8,
+        "sodiumMg": 280
+      }
+    },
+    {
+      "id": "warm-tofu-and-peanut-noodle-salad",
+      "title": "Warm Tofu and Peanut Noodle Salad",
+      "summary": "Rice vermicelli with crisp tofu, herbs, cucumber and a peanut dressing.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g rice vermicelli",
+            "250g firm tofu",
+            "1 cucumber",
+            "1 carrot",
+            "1 handful mint",
+            "1 handful coriander",
+            "2 tbsp peanut butter",
+            "2 tbsp lime juice",
+            "1 tbsp soy sauce",
+            "1 tbsp sugar",
+            "2 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the tofu in the oil for 8 minutes until golden on all sides.",
+        "Soak the noodles in boiling water for 5 minutes until tender, then rinse.",
+        "Whisk the peanut butter, lime juice, soy sauce, sugar and water until pourable.",
+        "Toss the noodles with the vegetables and herbs.",
+        "Top with tofu and spoon over the dressing."
+      ],
+      "notes": [
+        "Vegan and dairy-free.",
+        "Check the noodles are rice for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 602,
+        "proteinG": 22,
+        "carbsG": 62,
+        "fatG": 28,
+        "fibreG": 7,
+        "sodiumMg": 760
+      }
+    },
+    {
+      "id": "caponata-siciliana",
+      "title": "Caponata Siciliana",
+      "summary": "Sweet and sour Sicilian eggplant, celery, olives and capers in a rich tomato sauce.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 eggplants, cubed",
+            "3 celery stalks",
+            "1 red onion",
+            "400g tinned tomatoes",
+            "80g green olives",
+            "2 tbsp capers",
+            "3 tbsp red wine vinegar",
+            "1 tbsp sugar",
+            "4 tbsp olive oil",
+            "1 handful basil"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the eggplant in the oil for 10 minutes until golden, then set aside.",
+        "Soften the celery and onion in the same pan for 8 minutes.",
+        "Add the tomatoes, olives, capers, vinegar and sugar and simmer for 15 minutes until thick.",
+        "Fold in the eggplant and cook for 5 minutes.",
+        "Serve at room temperature with basil."
+      ],
+      "notes": [
+        "Vegan.",
+        "Better after a day."
+      ],
+      "nutrition": {
+        "kcal": 200,
+        "proteinG": 3,
+        "carbsG": 17,
+        "fatG": 12,
+        "fibreG": 6,
+        "sodiumMg": 480
+      }
+    },
+    {
+      "id": "honey-garlic-roasted-carrots-with-thyme",
+      "title": "Honey Garlic Roasted Carrots with Thyme",
+      "summary": "Glazed carrots roasted until caramelised and sweet.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g carrots",
+            "2 tbsp honey",
+            "3 tbsp olive oil",
+            "4 garlic cloves",
+            "4 thyme sprigs",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Halve the carrots lengthways and toss with oil, garlic, thyme and salt.",
+        "Roast at 200C for 25 minutes until tender.",
+        "Drizzle with honey and roast for 10 minutes until sticky and caramelised."
+      ],
+      "notes": [
+        "Vegetarian.",
+        "Use maple syrup for vegan."
+      ],
+      "nutrition": {
+        "kcal": 204,
+        "proteinG": 2,
+        "carbsG": 24,
+        "fatG": 10,
+        "fibreG": 5,
+        "sodiumMg": 480
+      }
+    },
+    {
+      "id": "colcannon-with-cabbage-and-spring-onion",
+      "title": "Colcannon with Cabbage and Spring Onion",
+      "summary": "Buttery Irish mash with cabbage and spring onions.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1kg potatoes",
+            "300g cabbage, shredded",
+            "4 spring onions",
+            "100ml milk",
+            "60g butter",
+            "1 pinch nutmeg"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes for 20 minutes until tender, then drain and mash.",
+        "Soften the cabbage in half the butter for 6 minutes until tender.",
+        "Warm the milk with the spring onions for 3 minutes.",
+        "Beat everything into the mash until smooth and creamy.",
+        "Top with the remaining butter."
+      ],
+      "notes": [
+        "Vegetarian.",
+        "Serve with sausages."
+      ],
+      "nutrition": {
+        "kcal": 269,
+        "proteinG": 6,
+        "carbsG": 34,
+        "fatG": 11,
+        "fibreG": 5,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "spiced-cauliflower-rice-pilaf",
+      "title": "Spiced Cauliflower Rice Pilaf",
+      "summary": "Fluffy grated cauliflower with cumin, raisins, almonds and herbs.",
+      "cuisine": "north-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cauliflower",
+            "2 tbsp olive oil",
+            "1 tsp cumin",
+            "1 tsp turmeric",
+            "40g raisins",
+            "40g almonds",
+            "1 handful parsley",
+            "2 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Grate the cauliflower coarsely.",
+        "Toast the almonds until golden.",
+        "Fry the cauliflower and spices in the oil for 6 minutes until tender and fragrant.",
+        "Stir in the raisins and lemon juice.",
+        "Top with almonds and parsley."
+      ],
+      "notes": [
+        "Vegan and gluten-free.",
+        "Don't over-stir."
+      ],
+      "nutrition": {
+        "kcal": 171,
+        "proteinG": 5,
+        "carbsG": 15,
+        "fatG": 9,
+        "fibreG": 5,
+        "sodiumMg": 120
+      }
+    },
+    {
+      "id": "sweet-potato-wedges-with-chipotle-mayo",
+      "title": "Sweet Potato Wedges with Chipotle Mayo",
+      "summary": "Crisp spiced sweet potato wedges with a smoky chipotle mayo.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g sweet potato",
+            "3 tbsp olive oil",
+            "1 tsp smoked paprika",
+            "1 tsp garlic powder",
+            "100g mayonnaise",
+            "1 tbsp chipotle paste",
+            "1 tbsp lime juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cut the sweet potato into wedges and toss with oil and spices.",
+        "Roast at 220C for 35 minutes until crisp and browned.",
+        "Mix the mayonnaise, chipotle and lime.",
+        "Serve the wedges with the dip."
+      ],
+      "notes": [
+        "Contains egg.",
+        "Vegetarian."
+      ],
+      "nutrition": {
+        "kcal": 392,
+        "proteinG": 4,
+        "carbsG": 46,
+        "fatG": 20,
+        "fibreG": 6,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "cheesy-polenta-with-roasted-mushrooms",
+      "title": "Cheesy Polenta with Roasted Mushrooms",
+      "summary": "Creamy polenta with vegetarian hard cheese and garlicky roasted mushrooms.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g polenta",
+            "1 litre water",
+            "40g butter",
+            "60g vegetarian hard cheese, grated",
+            "500g mushrooms",
+            "3 garlic cloves",
+            "3 tbsp olive oil",
+            "2 thyme sprigs"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the mushrooms with oil, garlic and thyme at 200C for 25 minutes until golden.",
+        "Whisk the polenta into the simmering water.",
+        "Cook for 20 minutes, stirring often, until thick and creamy.",
+        "Stir in the butter and cheese.",
+        "Spoon the mushrooms over the polenta."
+      ],
+      "notes": [
+        "Vegetarian when made with vegetarian hard cheese.",
+        "Add milk to loosen if it sets."
+      ],
+      "nutrition": {
+        "kcal": 398,
+        "proteinG": 12,
+        "carbsG": 40,
+        "fatG": 20,
+        "fibreG": 5,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "fermented-chilli-hot-sauce",
+      "title": "Fermented Chilli Hot Sauce",
+      "summary": "A tangy, funky hot sauce from chillies fermented in brine for a week.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 20,
+      "cookMinutes": 0,
+      "servings": 12,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g red chillies",
+            "4 garlic cloves",
+            "15g salt",
+            "500ml water",
+            "100ml apple cider vinegar",
+            "1 tbsp sugar"
+          ]
+        }
+      ],
+      "steps": [
+        "Dissolve the salt in the water.",
+        "Pack the chopped chillies and garlic into a jar and cover with the brine.",
+        "Weigh down and ferment at room temperature for 7 days until bubbly and sour.",
+        "Drain, reserving the brine.",
+        "Blend with the vinegar, sugar and enough brine until smooth."
+      ],
+      "notes": [
+        "Discard if it smells off or grows fuzzy mould.",
+        "Keeps 6 months in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 44,
+        "proteinG": 2,
+        "carbsG": 8,
+        "fatG": 0,
+        "fibreG": 2,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "chilli-crisp-oil",
+      "title": "Chilli Crisp Oil",
+      "summary": "A crunchy chilli oil with garlic, shallots and sesame, for noodles and dumplings.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 12,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100g dried chilli flakes",
+            "6 garlic cloves",
+            "4 shallots",
+            "250ml vegetable oil",
+            "2 tbsp sesame seeds",
+            "2 tbsp soy sauce",
+            "1 tsp sugar",
+            "1 star anise"
+          ]
+        }
+      ],
+      "steps": [
+        "Slice the garlic and shallots thinly.",
+        "Heat the oil with the star anise to 120C.",
+        "Fry the garlic and shallots in the oil for 6 minutes until golden and crisp.",
+        "Pour the hot oil over the chilli flakes and sesame in a heatproof bowl.",
+        "Stir in the soy sauce and sugar once cooled."
+      ],
+      "notes": [
+        "Vegan.",
+        "Keep it in the fridge for 1 month."
+      ],
+      "nutrition": {
+        "kcal": 204,
+        "proteinG": 3,
+        "carbsG": 6,
+        "fatG": 18,
+        "fibreG": 3,
+        "sodiumMg": 140
+      }
+    },
+    {
+      "id": "garlic-toum-whipped-sauce",
+      "title": "Garlic Toum Whipped Sauce",
+      "summary": "A fluffy Lebanese garlic emulsion of garlic, oil and lemon, no egg.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 head garlic",
+            "1 tsp salt",
+            "250ml neutral oil",
+            "3 tbsp lemon juice",
+            "2 tbsp ice water"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the garlic and salt to a paste.",
+        "Add oil a few drops at a time while blending.",
+        "Alternate with lemon juice and ice water until thick and white.",
+        "Rest in the fridge for 1 hour."
+      ],
+      "notes": [
+        "Vegan.",
+        "Add the oil slowly or it splits."
+      ],
+      "nutrition": {
+        "kcal": 200,
+        "proteinG": 1,
+        "carbsG": 4,
+        "fatG": 20,
+        "fibreG": 0,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "teriyaki-glaze",
+      "title": "Teriyaki Glaze",
+      "summary": "A glossy homemade teriyaki sauce of soy, mirin and sugar.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 10,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "120ml soy sauce",
+            "120ml mirin",
+            "3 tbsp sugar",
+            "20g ginger",
+            "2 garlic cloves",
+            "1 tbsp cornflour"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the soy sauce, mirin, sugar, ginger and garlic for 5 minutes.",
+        "Whisk the cornflour with water and stir in until glossy and thick.",
+        "Strain the glaze and cool it until it thickens further."
+      ],
+      "notes": [
+        "Vegan.",
+        "Keeps 2 weeks."
+      ],
+      "nutrition": {
+        "kcal": 44,
+        "proteinG": 1,
+        "carbsG": 10,
+        "fatG": 0,
+        "fibreG": 0,
+        "sodiumMg": 900
+      }
+    }
+  ]
+}

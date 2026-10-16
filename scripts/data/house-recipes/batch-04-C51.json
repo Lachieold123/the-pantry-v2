@@ -1,0 +1,1215 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "asparagus-and-pea-frittata-squares",
+      "title": "Asparagus and Pea Frittata Squares",
+      "summary": "Fluffy baked frittata studded with spring asparagus and sweet peas, cut into squares for brunch.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 eggs",
+            "150g asparagus, trimmed and sliced",
+            "150g frozen peas",
+            "100g ricotta",
+            "40g vegetarian hard cheese, grated",
+            "2 tbsp olive oil",
+            "1 tbsp chopped mint",
+            "Salt and black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180C and line a 20cm square tin with baking paper.",
+        "Warm the oil in a frying pan and cook the asparagus for 3 minutes, until just tender, then stir through the peas.",
+        "Whisk the eggs with the mint, seasoning and grated cheese, then pour into the tin and scatter over the vegetables and spoonfuls of ricotta.",
+        "Bake for 22 minutes, until puffed, golden and set in the centre.",
+        "Rest for 5 minutes, then cut into 6 squares."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until fully set in the centre; refrigerate leftovers within 2 hours and eat within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 207,
+        "proteinG": 13,
+        "carbsG": 4,
+        "fatG": 15,
+        "fibreG": 2,
+        "sodiumMg": 160
+      }
+    },
+    {
+      "id": "lemon-roasted-asparagus-with-toasted-almonds",
+      "title": "Lemon Roasted Asparagus with Toasted Almonds",
+      "summary": "Blistered asparagus finished with lemon zest and crunchy almonds, a fast spring side.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g asparagus, trimmed",
+            "2 tbsp olive oil",
+            "40g flaked almonds",
+            "1 lemon, zested and juiced",
+            "1 clove garlic, finely chopped",
+            "Salt and black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220C and line a large tray with baking paper.",
+        "Toss the asparagus with half the oil and seasoning on a tray and roast for 10 minutes, until tender with charred tips.",
+        "Toast the almonds in a dry frying pan over medium heat for 3 minutes, until golden.",
+        "Stir the garlic into the remaining oil, then toss through the hot asparagus with the lemon zest and juice.",
+        "Scatter with almonds and serve warm."
+      ],
+      "notes": [
+        "Serve with grilled fish or chicken."
+      ],
+      "nutrition": {
+        "kcal": 154,
+        "proteinG": 5,
+        "carbsG": 5,
+        "fatG": 12,
+        "fibreG": 3,
+        "sodiumMg": 120
+      }
+    },
+    {
+      "id": "fresh-pea-and-mint-soup-with-lemon",
+      "title": "Fresh Pea and Mint Soup with Lemon",
+      "summary": "A bright green spring soup of sweet peas, mint and a squeeze of lemon.",
+      "cuisine": "british",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "1 brown onion, diced",
+            "1 potato, peeled and diced",
+            "600g frozen peas",
+            "750ml vegetable stock",
+            "1 small handful mint leaves",
+            "1 lemon, juiced",
+            "Salt and black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the oil in a saucepan and cook the onion for 5 minutes, until soft.",
+        "Add the potato and stock, bring to a simmer and cook for 10 minutes, until the potato is tender.",
+        "Add the peas and cook for 3 minutes, until bright green.",
+        "Blend with the mint until smooth, then stir through the lemon juice and season.",
+        "Reheat gently until steaming and serve."
+      ],
+      "notes": [
+        "Swirl through a spoonful of yoghurt for extra creaminess."
+      ],
+      "nutrition": {
+        "kcal": 209,
+        "proteinG": 9,
+        "carbsG": 28,
+        "fatG": 5,
+        "fibreG": 8,
+        "sodiumMg": 480
+      }
+    },
+    {
+      "id": "split-pea-and-ham-soup-for-the-freezer",
+      "title": "Split Pea and Ham Soup for the Freezer",
+      "summary": "A thick, comforting soup that freezes well in single portions.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 75,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g green split peas, rinsed",
+            "300g smoked ham hock",
+            "1 brown onion, diced",
+            "2 carrots, diced",
+            "2 celery sticks, diced",
+            "2 cloves garlic, crushed",
+            "2 litres water",
+            "2 bay leaves",
+            "1 tbsp olive oil",
+            "Black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the oil in a large pot and cook the onion, carrot and celery for 6 minutes, until soft.",
+        "Add the garlic, split peas, ham hock, bay leaves and water, stirring until it comes to the boil.",
+        "Simmer gently for 70 minutes, stirring now and then, until the peas collapse and the ham falls from the bone.",
+        "Lift out the hock, shred the meat and return it to the pot, discarding skin and bone.",
+        "Season with pepper and add a splash of water if too thick."
+      ],
+      "notes": [
+        "Food safety: cool quickly, refrigerate within 2 hours and freeze in portions; reheat until steaming hot all the way through.",
+        "Freezes for up to 3 months. Taste before salting as the ham is salty."
+      ],
+      "nutrition": {
+        "kcal": 304,
+        "proteinG": 22,
+        "carbsG": 38,
+        "fatG": 4,
+        "fibreG": 14,
+        "sodiumMg": 760
+      }
+    },
+    {
+      "id": "radish-and-cucumber-spring-salad-with-dill-yoghurt",
+      "title": "Radish and Cucumber Spring Salad with Dill Yoghurt",
+      "summary": "Crisp radish and cucumber ribbons tossed in a cooling dill yoghurt dressing.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 12,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 Lebanese cucumbers, thinly sliced",
+            "8 radishes, thinly sliced",
+            "150g plain yoghurt",
+            "2 tbsp chopped dill",
+            "1 tbsp lemon juice",
+            "1 tsp honey",
+            "1 spring onion, thinly sliced",
+            "Salt and black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the yoghurt, dill, lemon juice, honey, salt and pepper in a large bowl.",
+        "Add the cucumber, radish and spring onion and toss until evenly coated.",
+        "Chill for 10 minutes, until cold and crisp."
+      ],
+      "notes": [
+        "Serve with rye bread or smoked fish."
+      ],
+      "nutrition": {
+        "kcal": 74,
+        "proteinG": 4,
+        "carbsG": 9,
+        "fatG": 2,
+        "fibreG": 2,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "asparagus-and-new-potato-salad-with-chive-vinaigrette",
+      "title": "Asparagus and New Potato Salad with Chive Vinaigrette",
+      "summary": "Warm baby potatoes and asparagus in a sharp wholegrain mustard dressing.",
+      "cuisine": "french",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 18,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g baby potatoes, halved",
+            "250g asparagus, trimmed and halved",
+            "2 tbsp olive oil",
+            "1 tbsp wholegrain mustard",
+            "1 tbsp white wine vinegar",
+            "1 tsp honey",
+            "2 tbsp chopped chives",
+            "Salt and black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes in salted water for 12 minutes, until just tender.",
+        "Add the asparagus for the final 3 minutes, until bright green and tender, then drain well.",
+        "Whisk the oil, mustard, vinegar, honey and seasoning, and toss through the warm vegetables.",
+        "Scatter with chives and serve warm or at room temperature."
+      ],
+      "notes": [
+        "Keeps in the fridge for 2 days."
+      ],
+      "nutrition": {
+        "kcal": 191,
+        "proteinG": 5,
+        "carbsG": 25,
+        "fatG": 7,
+        "fibreG": 4,
+        "sodiumMg": 180
+      }
+    },
+    {
+      "id": "pea-and-feta-smash-on-sourdough",
+      "title": "Pea and Feta Smash on Sourdough",
+      "summary": "Smashed minty peas and salty feta piled onto crisp sourdough.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 3,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g frozen peas",
+            "60g feta, crumbled",
+            "4 slices sourdough",
+            "1 tbsp olive oil",
+            "1 tbsp chopped mint",
+            "1 lemon, zested",
+            "Black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the peas in boiling water for 3 minutes, until tender, then drain.",
+        "Mash roughly with the oil, mint, lemon zest and pepper.",
+        "Toast the sourdough until golden and crisp.",
+        "Pile the pea smash onto the hot toast until generously covered, then top with feta."
+      ],
+      "notes": [
+        "Add a poached egg for extra protein."
+      ],
+      "nutrition": {
+        "kcal": 385,
+        "proteinG": 15,
+        "carbsG": 52,
+        "fatG": 11,
+        "fibreG": 9,
+        "sodiumMg": 760
+      }
+    },
+    {
+      "id": "spring-vegetable-broth-with-orzo",
+      "title": "Spring Vegetable Broth with Orzo",
+      "summary": "A light broth of asparagus, peas and baby zucchini with tiny orzo pasta.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "1 leek, white part sliced",
+            "2 cloves garlic, sliced",
+            "1 litre vegetable stock",
+            "500ml water",
+            "100g orzo",
+            "100g asparagus, sliced",
+            "100g frozen peas",
+            "1 zucchini, diced",
+            "1 lemon, zested",
+            "2 tbsp chopped parsley",
+            "Salt and black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the oil in a large saucepan and cook the leek for 5 minutes, until soft, adding the garlic for the last minute.",
+        "Add the stock and water and heat until it boils steadily.",
+        "Stir in the orzo and simmer for 8 minutes, until nearly tender.",
+        "Add the asparagus, peas and zucchini and simmer for 3 minutes, until just cooked.",
+        "Stir through the lemon zest and parsley and season."
+      ],
+      "notes": [
+        "Add a squeeze of lemon at the table."
+      ],
+      "nutrition": {
+        "kcal": 195,
+        "proteinG": 7,
+        "carbsG": 28,
+        "fatG": 5,
+        "fibreG": 5,
+        "sodiumMg": 560
+      }
+    },
+    {
+      "id": "low-fodmap-friendly-chicken-and-rice-soup",
+      "title": "Low-FODMAP Friendly Chicken and Rice Soup",
+      "summary": "A gentle, ginger-scented chicken soup made without onion or garlic, using garlic-infused oil.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp garlic-infused olive oil",
+            "2 carrots, diced",
+            "2 celery sticks, diced",
+            "1 tbsp grated ginger",
+            "400g chicken breast",
+            "1.2 litres low-FODMAP chicken stock",
+            "100g long grain white rice",
+            "100g baby spinach",
+            "2 tbsp chopped chives",
+            "Salt and black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the garlic-infused oil in a pot and cook the carrot, celery and ginger for 5 minutes, until softening.",
+        "Add the stock and chicken and simmer for 15 minutes, until the chicken is cooked through with no pink.",
+        "Lift out the chicken, shred it and return it to the pot with the rice.",
+        "Simmer for 12 minutes, until the rice is tender, then stir through the spinach until wilted.",
+        "Season and scatter with chives."
+      ],
+      "notes": [
+        "Food safety: cook chicken until it reaches 75°C in the thickest part; refrigerate leftovers within 1 hour of cooking rice and eat within 1 day.",
+        "Check stock labels, as many contain onion and garlic."
+      ],
+      "nutrition": {
+        "kcal": 281,
+        "proteinG": 30,
+        "carbsG": 28,
+        "fatG": 5,
+        "fibreG": 2,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "low-fodmap-friendly-quinoa-salad-with-cucumber-and-olives",
+      "title": "Low-FODMAP Friendly Quinoa Salad with Cucumber and Olives",
+      "summary": "Fluffy quinoa with cucumber, tomato, olives and feta in a lemon dressing, free of onion and garlic.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g quinoa, rinsed",
+            "1 Lebanese cucumber, diced",
+            "2 tomatoes, diced",
+            "60g kalamata olives, halved",
+            "60g feta, crumbled",
+            "3 tbsp olive oil",
+            "2 tbsp lemon juice",
+            "2 tbsp chopped parsley",
+            "Salt and black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the quinoa in 400ml water for 15 minutes, until the water is absorbed and the grains are tender.",
+        "Spread on a tray to cool for 10 minutes.",
+        "Whisk the oil, lemon juice and seasoning, then toss through the quinoa with the cucumber, tomato, olives and parsley, then top with the feta."
+      ],
+      "notes": [
+        "Keeps in the fridge for 2 days."
+      ],
+      "nutrition": {
+        "kcal": 329,
+        "proteinG": 10,
+        "carbsG": 32,
+        "fatG": 17,
+        "fibreG": 4,
+        "sodiumMg": 430
+      }
+    },
+    {
+      "id": "low-fodmap-friendly-carrot-and-ginger-soup",
+      "title": "Low-FODMAP Friendly Carrot and Ginger Soup",
+      "summary": "Sweet carrot and zingy ginger blended into a velvety soup with no onion or garlic.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp garlic-infused olive oil",
+            "700g carrots, chopped",
+            "1 tbsp grated ginger",
+            "1 potato, peeled and diced",
+            "900ml low-FODMAP vegetable stock",
+            "1 tsp ground cumin",
+            "2 tbsp chopped chives",
+            "Salt and black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the oil in a saucepan and cook the ginger and cumin for 1 minute, until fragrant.",
+        "Add the carrot, potato and stock and simmer for 22 minutes, until the vegetables are very soft.",
+        "Blend until smooth and season to taste.",
+        "Reheat until steaming and scatter with chives."
+      ],
+      "notes": [
+        "Freezes well for up to 3 months."
+      ],
+      "nutrition": {
+        "kcal": 155,
+        "proteinG": 3,
+        "carbsG": 22,
+        "fatG": 5,
+        "fibreG": 5,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "low-fodmap-friendly-tomato-and-basil-soup",
+      "title": "Low-FODMAP Friendly Tomato and Basil Soup",
+      "summary": "A smooth tomato soup built on garlic-infused oil and fresh basil.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp garlic-infused olive oil",
+            "1 carrot, diced",
+            "2 x 400g tins whole peeled tomatoes",
+            "500ml low-FODMAP vegetable stock",
+            "1 tsp sugar",
+            "1 handful basil leaves",
+            "Salt and black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the oil in a saucepan and cook the carrot for 5 minutes, until softening.",
+        "Add the tomatoes, stock and sugar and simmer for 20 minutes, until the carrot is tender.",
+        "Blend with the basil until smooth.",
+        "Season and reheat until steaming."
+      ],
+      "notes": [
+        "Serve with gluten-free toast if needed."
+      ],
+      "nutrition": {
+        "kcal": 139,
+        "proteinG": 3,
+        "carbsG": 14,
+        "fatG": 7,
+        "fibreG": 4,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "low-fodmap-friendly-spinach-and-egg-breakfast-muffins",
+      "title": "Low-FODMAP Friendly Spinach and Egg Breakfast Muffins",
+      "summary": "Savoury egg muffins with spinach, tomato and chives that travel well.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 eggs",
+            "100g baby spinach, chopped",
+            "1 tomato, diced",
+            "40g vegetarian hard cheese, grated",
+            "2 tbsp chopped chives",
+            "1 tbsp olive oil",
+            "Salt and black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180C and oil a 6-hole muffin tin.",
+        "Whisk the eggs with the seasoning, then stir through the spinach, tomato, cheese and chives.",
+        "Divide among the holes and bake for 18 minutes, until risen and set in the centre.",
+        "Cool for 3 minutes before turning out."
+      ],
+      "notes": [
+        "Food safety: cook until the eggs are fully set; refrigerate within 2 hours and eat within 2 days, reheating until steaming."
+      ],
+      "nutrition": {
+        "kcal": 148,
+        "proteinG": 12,
+        "carbsG": 2,
+        "fatG": 10,
+        "fibreG": 1,
+        "sodiumMg": 210
+      }
+    },
+    {
+      "id": "low-fodmap-friendly-greek-salad",
+      "title": "Low-FODMAP Friendly Greek Salad",
+      "summary": "Cucumber, tomato, olives and feta with a simple lemon and oregano dressing.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 Lebanese cucumbers, chopped",
+            "4 tomatoes, chopped",
+            "1 green capsicum, sliced",
+            "80g kalamata olives",
+            "120g feta, in slabs",
+            "3 tbsp olive oil",
+            "1 tbsp lemon juice",
+            "1 tsp dried oregano",
+            "Salt and black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Combine the cucumber, tomato, capsicum and olives in a bowl.",
+        "Whisk the oil, lemon juice, oregano and seasoning and toss through the salad until coated.",
+        "Top with the feta and a pinch of oregano."
+      ],
+      "notes": [
+        "Leave out the capsicum if it does not agree with you."
+      ],
+      "nutrition": {
+        "kcal": 231,
+        "proteinG": 7,
+        "carbsG": 11,
+        "fatG": 17,
+        "fibreG": 3,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "cauliflower-and-potato-smash-for-fussy-eaters",
+      "title": "Cauliflower and Potato Smash for Fussy Eaters",
+      "summary": "Creamy cauliflower mashed with a little cheese, a gentle side for fussy eaters.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 head cauliflower, cut into florets",
+            "1 potato, peeled and chopped",
+            "30g butter",
+            "60g vegetarian hard cheese, grated",
+            "60ml milk",
+            "Salt and black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the cauliflower and potato in salted water for 15 minutes, until very tender.",
+        "Drain well and return to the pot.",
+        "Add the butter, milk and cheese and mash until smooth and creamy.",
+        "Season to taste and serve hot."
+      ],
+      "notes": [
+        "Serve with sausages or crumbed fish."
+      ],
+      "nutrition": {
+        "kcal": 203,
+        "proteinG": 9,
+        "carbsG": 15,
+        "fatG": 11,
+        "fibreG": 4,
+        "sodiumMg": 260
+      }
+    },
+    {
+      "id": "kids-hidden-veg-tomato-sauce",
+      "title": "Kids' Hidden Veg Tomato Sauce",
+      "summary": "A smooth tomato sauce with carrot, zucchini and pumpkin blended in unnoticed.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "1 brown onion, diced",
+            "2 carrots, grated",
+            "1 zucchini, grated",
+            "200g pumpkin, finely diced",
+            "2 x 400g tins crushed tomatoes",
+            "250ml water",
+            "1 tsp dried oregano",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the oil in a large pot and cook the onion for 5 minutes, until soft.",
+        "Add the carrot, zucchini and pumpkin and cook for 5 minutes, stirring until softening.",
+        "Add the tomatoes, water and oregano and simmer for 20 minutes, until the pumpkin is completely soft.",
+        "Blend until smooth and season lightly."
+      ],
+      "notes": [
+        "Freeze in portions for up to 3 months. Toss through pasta or spread on pizza bases."
+      ],
+      "nutrition": {
+        "kcal": 70,
+        "proteinG": 2,
+        "carbsG": 9,
+        "fatG": 2,
+        "fibreG": 3,
+        "sodiumMg": 190
+      }
+    },
+    {
+      "id": "kids-honey-glazed-carrot-sticks",
+      "title": "Kids' Honey Glazed Carrot Sticks",
+      "summary": "Sweet roasted carrot sticks that are easy for little hands.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g carrots, cut into sticks",
+            "1 tbsp olive oil",
+            "1 tbsp honey",
+            "1 tsp ground cinnamon",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200C and line a large tray with baking paper.",
+        "Toss the carrots with the oil, cinnamon and a pinch of salt on a tray.",
+        "Roast for 18 minutes, until tender with golden edges.",
+        "Drizzle with the honey and roast for 2 minutes, until glossy."
+      ],
+      "notes": [
+        "Not suitable for babies under 12 months because of the honey."
+      ],
+      "nutrition": {
+        "kcal": 124,
+        "proteinG": 2,
+        "carbsG": 18,
+        "fatG": 4,
+        "fibreG": 4,
+        "sodiumMg": 120
+      }
+    },
+    {
+      "id": "kids-broccoli-trees-with-cheesy-dip",
+      "title": "Kids' Broccoli Trees with Cheesy Dip",
+      "summary": "Steamed broccoli florets with a warm cheddar dip.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner",
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 8,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g broccoli, cut into florets",
+            "20g butter",
+            "1 tbsp plain flour",
+            "200ml milk",
+            "80g vegetarian hard cheese, grated",
+            "Black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Steam the broccoli for 6 minutes, until bright green and just tender.",
+        "Melt the butter in a small saucepan, stir in the flour and cook for 1 minute.",
+        "Whisk in the milk gradually and stir for 4 minutes, until thickened.",
+        "Remove from the heat, stir in the cheese until melted and season with pepper.",
+        "Serve the broccoli with the dip for dunking."
+      ],
+      "notes": [
+        "Let it cool a little before serving to small children."
+      ],
+      "nutrition": {
+        "kcal": 231,
+        "proteinG": 14,
+        "carbsG": 12,
+        "fatG": 13,
+        "fibreG": 5,
+        "sodiumMg": 210
+      }
+    },
+    {
+      "id": "kids-corn-and-zucchini-fritters",
+      "title": "Kids' Corn and Zucchini Fritters",
+      "summary": "Golden little fritters packed with sweetcorn and grated zucchini.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 zucchini, grated and squeezed dry",
+            "200g corn kernels",
+            "100g self-raising flour",
+            "2 eggs",
+            "80ml milk",
+            "2 tbsp chopped chives",
+            "2 tbsp olive oil",
+            "Salt and black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the eggs, milk and flour into a smooth batter, then fold in the zucchini, corn, chives and seasoning.",
+        "Heat half the oil in a frying pan over medium heat.",
+        "Cook spoonfuls of batter for 2 minutes each side, until golden and cooked through, working in batches with the remaining oil.",
+        "Drain on paper and serve warm."
+      ],
+      "notes": [
+        "Food safety: cook until the batter is set and no longer wet in the centre.",
+        "Cooked fritters freeze well for 2 months."
+      ],
+      "nutrition": {
+        "kcal": 260,
+        "proteinG": 11,
+        "carbsG": 30,
+        "fatG": 10,
+        "fibreG": 3,
+        "sodiumMg": 260
+      }
+    },
+    {
+      "id": "kids-rainbow-veggie-rice",
+      "title": "Kids' Rainbow Veggie Rice",
+      "summary": "Fluffy rice with colourful diced vegetables and a little soy sauce.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g jasmine rice",
+            "1 carrot, finely diced",
+            "1 red capsicum, finely diced",
+            "100g frozen peas",
+            "100g corn kernels",
+            "1 tbsp sesame oil",
+            "1 tbsp soy sauce",
+            "600ml water"
+          ]
+        }
+      ],
+      "steps": [
+        "Rinse the rice and place in a pot with the water and carrot.",
+        "Bring to the boil, cover and cook on low for 12 minutes, until the water is absorbed.",
+        "Stir the capsicum, peas, corn, sesame oil and soy sauce through the hot rice, cover and rest off the heat for 5 minutes, until the vegetables are tender.",
+        "Fluff with a fork and serve."
+      ],
+      "notes": [
+        "Food safety: cool leftover rice quickly and refrigerate within 1 hour; reheat until steaming hot."
+      ],
+      "nutrition": {
+        "kcal": 365,
+        "proteinG": 8,
+        "carbsG": 70,
+        "fatG": 5,
+        "fibreG": 4,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "kids-mini-pea-and-ham-pancakes",
+      "title": "Kids' Mini Pea and Ham Pancakes",
+      "summary": "Savoury drop pancakes with peas and diced ham for lunchboxes.",
+      "cuisine": "british",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "150g plain flour",
+            "1 tsp baking powder",
+            "1 egg",
+            "200ml milk",
+            "100g frozen peas, thawed",
+            "80g ham, finely diced",
+            "1 tbsp olive oil",
+            "Black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the flour, baking powder, egg and milk into a smooth batter, then fold in the peas, ham and pepper.",
+        "Heat a little oil in a non-stick frying pan over medium heat.",
+        "Cook spoonfuls of batter for 2 minutes each side, until golden and cooked through.",
+        "Keep warm while cooking the rest."
+      ],
+      "notes": [
+        "Food safety: cook until the batter is set; refrigerate leftovers within 2 hours and eat within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 257,
+        "proteinG": 14,
+        "carbsG": 33,
+        "fatG": 7,
+        "fibreG": 3,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "kids-cucumber-boats-with-hummus",
+      "title": "Kids' Cucumber Boats with Hummus",
+      "summary": "Cucumber halves filled with hummus and cherry tomatoes.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "snack",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 Lebanese cucumbers, halved lengthways and scooped",
+            "120g hummus",
+            "8 cherry tomatoes, quartered",
+            "1 tbsp olive oil",
+            "1 tsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Scoop out the cucumber seeds with a teaspoon to make boats.",
+        "Spoon in the hummus until each boat is generously filled.",
+        "Top with tomato, a drizzle of oil and sesame seeds."
+      ],
+      "notes": [
+        "Cut into short pieces for younger children."
+      ],
+      "nutrition": {
+        "kcal": 126,
+        "proteinG": 4,
+        "carbsG": 8,
+        "fatG": 8,
+        "fibreG": 3,
+        "sodiumMg": 190
+      }
+    },
+    {
+      "id": "alphabet-pasta-chicken-soup-for-kids",
+      "title": "Alphabet Pasta Chicken Soup for Kids",
+      "summary": "A mild chicken soup with soft vegetables and tiny pasta letters.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "1 brown onion, diced",
+            "2 carrots, diced",
+            "2 celery sticks, diced",
+            "400g chicken thigh fillets",
+            "1.5 litres chicken stock",
+            "80g alphabet pasta",
+            "100g frozen peas",
+            "Black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the oil in a large pot and cook the onion, carrot and celery for 6 minutes, until soft.",
+        "Add the chicken and stock and simmer for 15 minutes, until the chicken is cooked through with no pink.",
+        "Lift out the chicken and shred it.",
+        "Add the pasta and peas and cook for 6 minutes, until the pasta is tender, then return the chicken.",
+        "Season with pepper and serve."
+      ],
+      "notes": [
+        "Food safety: cook chicken until it reaches 75°C in the thickest part; refrigerate leftovers within 2 hours and reheat until steaming."
+      ],
+      "nutrition": {
+        "kcal": 204,
+        "proteinG": 16,
+        "carbsG": 20,
+        "fatG": 6,
+        "fibreG": 3,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "homemade-baked-beans-on-toast-fingers",
+      "title": "Homemade Baked Beans on Toast Fingers",
+      "summary": "Smoky tomato butter beans spooned over toast fingers.",
+      "cuisine": "british",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "1 small brown onion, finely diced",
+            "2 cloves garlic, crushed",
+            "2 x 400g tins butter beans, drained and rinsed",
+            "400g tin crushed tomatoes",
+            "1 tbsp tomato paste",
+            "1 tsp smoked paprika",
+            "1 tbsp maple syrup",
+            "1 tbsp worcestershire sauce",
+            "8 slices wholemeal toast"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the oil in a saucepan and cook the onion for 5 minutes, until soft, adding the garlic for the final minute.",
+        "Stir in the paprika, tomato paste, crushed tomatoes, maple syrup and worcestershire sauce.",
+        "Add the beans and simmer for 12 minutes, until the sauce is thick.",
+        "Toast the bread until golden and cut into fingers.",
+        "Spoon the beans over the toast until generously covered."
+      ],
+      "notes": [
+        "Canned beans are already cooked, so no soaking is needed."
+      ],
+      "nutrition": {
+        "kcal": 364,
+        "proteinG": 15,
+        "carbsG": 55,
+        "fatG": 6,
+        "fibreG": 15,
+        "sodiumMg": 780
+      }
+    }
+  ]
+}

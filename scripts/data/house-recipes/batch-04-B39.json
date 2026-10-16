@@ -1,0 +1,1235 @@
+{
+  "about": "House recipes, batch 04 (slice B): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "rava-ladoo-semolina-sweets",
+      "title": "Rava Ladoo Semolina Sweets",
+      "summary": "Soft toasted semolina and coconut balls with sultanas, a classic Diwali sweet.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g fine semolina",
+            "3 tbsp ghee",
+            "1/2 cup desiccated coconut",
+            "100g caster sugar",
+            "2 tbsp sultanas",
+            "1/4 tsp ground cinnamon",
+            "1/4 cup warm milk"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the semolina in 1 tbsp ghee in a wide pan over medium heat for 8 minutes, stirring, until it smells nutty and turns pale gold.",
+        "Stir in the coconut, sugar, sultanas and cinnamon and cook for 2 minutes until the sugar starts to melt.",
+        "Take off the heat, add the remaining ghee, then sprinkle in the warm milk a spoonful at a time until the mix just holds when pressed.",
+        "While still warm, roll the mix into 12 balls, pressing firmly with your palms.",
+        "Cool the ladoo on a plate until firm to the touch."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 ladoo.",
+        "Store in an airtight container at room temperature for up to 5 days."
+      ],
+      "nutrition": {
+        "kcal": 271,
+        "proteinG": 4,
+        "carbsG": 38,
+        "fatG": 11,
+        "fibreG": 2,
+        "sodiumMg": 15
+      }
+    },
+    {
+      "id": "coconut-barfi-squares",
+      "title": "Coconut Barfi Squares",
+      "summary": "Fudgy coconut squares set from condensed milk, a quick Diwali and Holi sweet.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 12,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g desiccated coconut",
+            "395g tin sweetened condensed milk",
+            "1 tbsp butter",
+            "1/2 tsp ground cinnamon",
+            "2 tbsp chopped pistachios"
+          ]
+        }
+      ],
+      "steps": [
+        "Line a 18cm square tin with baking paper.",
+        "Melt the butter in a non-stick pan over low heat, add the condensed milk and coconut and stir for 10 minutes until the mix thickens and pulls away from the sides.",
+        "Stir in the cinnamon, then press firmly into the tin with the back of a spoon.",
+        "Scatter over the pistachios and press them in lightly.",
+        "Cool completely, then cut into 16 squares."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 squares. Plus 1 hour setting.",
+        "Keeps in the fridge in an airtight container for up to 7 days."
+      ],
+      "nutrition": {
+        "kcal": 201,
+        "proteinG": 3,
+        "carbsG": 23,
+        "fatG": 10,
+        "fibreG": 3,
+        "sodiumMg": 80
+      }
+    },
+    {
+      "id": "baked-gujiya-coconut-pastries",
+      "title": "Baked Gujiya Coconut Pastries",
+      "summary": "Crisp baked half-moon pastries filled with sweet coconut, semolina and nuts for Holi and Diwali.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 40,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g plain flour",
+            "3 tbsp ghee, melted",
+            "1/2 tsp salt",
+            "100ml cool water",
+            "1 cup desiccated coconut",
+            "1/2 cup fine semolina",
+            "70g caster sugar",
+            "2 tbsp sultanas",
+            "2 tbsp chopped almonds"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour, salt and 2 tbsp ghee, add the water and knead for 5 minutes until smooth. Cover and rest.",
+        "Toast the semolina in the remaining ghee for 4 minutes until fragrant, then stir in the coconut, sugar, sultanas and almonds and cool.",
+        "Heat the oven to 180°C fan (200°C conventional). Roll the dough thinly and cut 12 rounds about 10cm wide.",
+        "Put 1 heaped tbsp of filling on each round, brush the edge with water, fold over and press with a fork to seal.",
+        "Bake on a lined tray for 20 minutes, turning once, until pale gold and crisp. Cool on a rack."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 pastries. Plus 20 minutes resting the dough.",
+        "Store in an airtight container for up to 5 days."
+      ],
+      "nutrition": {
+        "kcal": 444,
+        "proteinG": 8,
+        "carbsG": 60,
+        "fatG": 18,
+        "fibreG": 5,
+        "sodiumMg": 20
+      }
+    },
+    {
+      "id": "baked-chakli-rice-flour-spirals",
+      "title": "Baked Chakli Rice Flour Spirals",
+      "summary": "Crunchy spiced rice and chickpea flour spirals, baked instead of deep-fried for Diwali snack boxes.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "160g rice flour",
+            "50g besan (chickpea flour)",
+            "30g soft butter",
+            "1 tsp cumin seeds",
+            "1 tbsp sesame seeds",
+            "1/2 tsp salt",
+            "1/2 cup warm water"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional) and line two trays.",
+        "Mix the flours, butter, cumin, sesame and salt, then add the warm water a little at a time to make a soft smooth dough.",
+        "Fill a piping bag fitted with a star nozzle and pipe 12 spirals about 6cm wide onto the trays.",
+        "Bake for 25 minutes, swapping the trays halfway, until pale gold and crisp.",
+        "Cool on the trays for 10 minutes so they crisp up."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 3 chakli. Baked rather than deep-fried, which also avoids hot oil.",
+        "Store in an airtight container for up to 2 weeks."
+      ],
+      "nutrition": {
+        "kcal": 270,
+        "proteinG": 6,
+        "carbsG": 42,
+        "fatG": 8,
+        "fibreG": 3,
+        "sodiumMg": 420
+      }
+    },
+    {
+      "id": "shankarpali-diamond-biscuits",
+      "title": "Shankarpali Diamond Biscuits",
+      "summary": "Lightly sweet, crisp baked diamonds of semolina dough, a Maharashtrian Diwali snack.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g plain flour",
+            "50g fine semolina",
+            "60g ghee, melted",
+            "70g caster sugar",
+            "120ml warm milk",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional) and line two trays.",
+        "Stir the sugar into the warm milk until dissolved, then mix with the flour, semolina, ghee and salt into a stiff dough. Cover and rest.",
+        "Roll the dough 5mm thick on a floured bench and cut into 40 small diamonds with a knife.",
+        "Spread on the trays and bake for 20 minutes, turning once, until golden and crisp.",
+        "Cool completely before storing."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 5 pieces. Plus 15 minutes resting the dough.",
+        "Store in an airtight container for up to 2 weeks."
+      ],
+      "nutrition": {
+        "kcal": 246,
+        "proteinG": 5,
+        "carbsG": 38,
+        "fatG": 8,
+        "fibreG": 1,
+        "sodiumMg": 40
+      }
+    },
+    {
+      "id": "walnut-maamoul-eid-cookies",
+      "title": "Walnut Maamoul Eid Cookies",
+      "summary": "Buttery semolina cookies with a cinnamon walnut filling, baked for Eid.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 35,
+      "cookMinutes": 20,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "170g fine semolina",
+            "150g plain flour",
+            "150g soft butter",
+            "1/4 cup milk",
+            "2 tbsp caster sugar",
+            "100g walnuts, finely chopped",
+            "3 tbsp caster sugar, extra",
+            "1 tsp ground cinnamon"
+          ]
+        }
+      ],
+      "steps": [
+        "Rub the butter into the semolina, flour and 2 tbsp sugar, add the milk and knead lightly. Cover and rest.",
+        "Heat the oven to 170°C fan (190°C conventional). Mix the walnuts, extra sugar and cinnamon.",
+        "Roll the dough into 16 balls. Press a hole into each, add 1 tsp filling and pinch closed, then flatten slightly.",
+        "Press each cookie with a fork or a mould to pattern it and place on a lined tray.",
+        "Bake for 20 minutes until set and just pale gold on the base. Cool on the tray."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 cookies. Plus 30 minutes resting the dough.",
+        "Store in an airtight container for up to 1 week."
+      ],
+      "nutrition": {
+        "kcal": 410,
+        "proteinG": 6,
+        "carbsG": 50,
+        "fatG": 20,
+        "fibreG": 3,
+        "sodiumMg": 130
+      }
+    },
+    {
+      "id": "pineapple-tarts-lunar-new-year",
+      "title": "Pineapple Tarts Lunar New Year",
+      "summary": "Melt-in-the-mouth buttery pastry cases with a sticky spiced pineapple jam, a Lunar New Year favourite.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 35,
+      "cookMinutes": 45,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "440g tin crushed pineapple, drained",
+            "100g caster sugar",
+            "1 cinnamon stick",
+            "1/4 tsp ground cloves",
+            "250g plain flour",
+            "150g cold butter, cubed",
+            "40g icing sugar",
+            "2 egg yolks",
+            "1 tsp cold water"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the pineapple, sugar, cinnamon stick and ground cloves in a small pan for 30 minutes, stirring often, until thick and jammy. Remove the spices and cool.",
+        "Heat the oven to 160°C fan (180°C conventional). Rub the butter into the flour and icing sugar, then mix in 1 egg yolk and the water to make a soft dough.",
+        "Roll into 24 balls of dough, press each into a mini muffin tin hole to make a case, then fill with 1 tsp jam.",
+        "Make little dough strips from any trimmings, lay two across each tart, and brush with the second egg yolk.",
+        "Bake for 15 minutes until golden at the edges. Cool for 10 minutes in the tin."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 3 tarts. Plus 20 minutes chilling the dough.",
+        "Food safety: wash hands and the bench after handling raw egg yolk; the tarts are baked until cooked through.",
+        "Store in an airtight container for up to 1 week."
+      ],
+      "nutrition": {
+        "kcal": 345,
+        "proteinG": 4,
+        "carbsG": 48,
+        "fatG": 15,
+        "fibreG": 1,
+        "sodiumMg": 100
+      }
+    },
+    {
+      "id": "lunar-new-year-almond-crisps",
+      "title": "Lunar New Year Almond Crisps",
+      "summary": "Crisp-edged, crumbly almond cookies with a whole almond on top, traditional at Lunar New Year.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 18,
+      "servings": 10,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g plain flour",
+            "100g ground almonds",
+            "100g caster sugar",
+            "120g soft butter",
+            "1 egg",
+            "1/2 tsp almond extract",
+            "1/2 tsp baking powder",
+            "20 whole almonds"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 170°C fan (190°C conventional) and line two trays.",
+        "Beat the butter and sugar for 3 minutes until pale, then beat in 1 egg and the almond extract.",
+        "Stir in the flour, ground almonds and baking powder to a soft dough.",
+        "Roll into 20 balls, flatten slightly on the trays and press a whole almond into each.",
+        "Bake for 18 minutes until golden at the edges but still pale on top. Cool on the trays for 10 minutes."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 cookies.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Store in an airtight container for up to 1 week."
+      ],
+      "nutrition": {
+        "kcal": 291,
+        "proteinG": 5,
+        "carbsG": 33,
+        "fatG": 15,
+        "fibreG": 2,
+        "sodiumMg": 90
+      }
+    },
+    {
+      "id": "iced-lebkuchen-spiced-honey-cookies",
+      "title": "Iced Lebkuchen Spiced Honey Cookies",
+      "summary": "Soft German honey and spice cookies with a thin lemon glaze for Christmas.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 12,
+      "servings": 10,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "170g honey",
+            "80g brown sugar",
+            "60g butter",
+            "300g plain flour",
+            "80g ground almonds",
+            "2 tsp ground cinnamon",
+            "1 tsp ground ginger",
+            "1/4 tsp ground cloves",
+            "1 tsp bicarbonate of soda",
+            "1 egg",
+            "100g icing sugar",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the honey, brown sugar and butter in a small pan over low heat until the butter melts, then cool for 10 minutes.",
+        "Mix the flour, almonds, spices and bicarbonate of soda, then stir in the honey mix and egg to a firm dough. Chill.",
+        "Heat the oven to 160°C fan (180°C conventional). Roll the dough 6mm thick and cut 20 rounds with a 6cm cutter.",
+        "Bake on lined trays for 12 minutes until puffed and set. Cool on a rack.",
+        "Stir the icing sugar and lemon juice into a thin glaze and brush over the cooled cookies. Let it set for 20 minutes."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 cookies. Plus 1 hour chilling the dough.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Store in an airtight container for up to 2 weeks; they soften and deepen in flavour."
+      ],
+      "nutrition": {
+        "kcal": 335,
+        "proteinG": 6,
+        "carbsG": 52,
+        "fatG": 11,
+        "fibreG": 2,
+        "sodiumMg": 110
+      }
+    },
+    {
+      "id": "rough-puff-christmas-mince-pies",
+      "title": "Rough Puff Christmas Mince Pies",
+      "summary": "Flaky homemade rough puff pastry cases around a spiced apple and dried fruit filling, with star lids.",
+      "cuisine": "british",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 50,
+      "cookMinutes": 25,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g plain flour",
+            "175g cold butter, cubed",
+            "1/2 tsp salt",
+            "125ml iced water",
+            "1 apple, peeled and grated",
+            "100g sultanas",
+            "80g raisins",
+            "50g brown sugar",
+            "30g butter, extra",
+            "juice and zest of 1 orange",
+            "1 tsp ground cinnamon",
+            "1/4 tsp ground nutmeg",
+            "1 tbsp milk"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the apple, sultanas, raisins, sugar, extra butter, orange juice, zest and spices for 10 minutes until thick and sticky, then cool.",
+        "Mix the flour and salt, stir in the cold butter cubes, then add the iced water to a rough dough. Roll to a rectangle, fold in thirds and repeat 3 times, chilling between folds.",
+        "Heat the oven to 200°C fan (220°C conventional). Roll the pastry 3mm thick, cut 12 rounds to line a 12-hole tin and 12 stars for the lids.",
+        "Fill each case with 1 heaped tbsp filling, top with a star and brush with the milk.",
+        "Bake for 22 minutes until deep golden and puffed. Cool in the tin for 10 minutes, then move to a rack."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 pie. Plus about 45 minutes chilling between folds.",
+        "Store in an airtight container for up to 4 days, or freeze for 1 month and warm at 160°C fan before serving."
+      ],
+      "nutrition": {
+        "kcal": 265,
+        "proteinG": 3,
+        "carbsG": 33,
+        "fatG": 13,
+        "fibreG": 2,
+        "sodiumMg": 120
+      }
+    },
+    {
+      "id": "calaveras-sugar-skull-cookies",
+      "title": "Calaveras Sugar Skull Cookies",
+      "summary": "Vanilla cut-out cookies iced with bright decorations for Day of the Dead.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 12,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g soft butter",
+            "100g caster sugar",
+            "1 egg",
+            "1 tsp vanilla extract",
+            "300g plain flour",
+            "120g icing sugar",
+            "2 tbsp milk"
+          ]
+        }
+      ],
+      "steps": [
+        "Beat the butter and caster sugar for 3 minutes until pale, then beat in the egg and vanilla.",
+        "Stir in the flour to a soft dough, wrap and chill.",
+        "Heat the oven to 170°C fan (190°C conventional). Roll the dough 5mm thick and cut 24 skull or round shapes.",
+        "Bake on lined trays for 12 minutes until the edges are just golden. Cool on a rack.",
+        "Mix the icing sugar and milk into a thick icing, and decorate the cooled cookies. Leave to set for 30 minutes."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 cookies. Plus 45 minutes chilling the dough.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Store in an airtight container for up to 5 days."
+      ],
+      "nutrition": {
+        "kcal": 260,
+        "proteinG": 4,
+        "carbsG": 38,
+        "fatG": 10,
+        "fibreG": 1,
+        "sodiumMg": 80
+      }
+    },
+    {
+      "id": "baked-jam-doughnuts-hanukkah",
+      "title": "Baked Jam Doughnuts Hanukkah",
+      "summary": "Soft cake-style doughnuts baked in a muffin tin, filled with apricot jam and rolled in cinnamon sugar.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 18,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g plain flour",
+            "80g caster sugar",
+            "2 tsp baking powder",
+            "1/4 tsp ground nutmeg",
+            "150ml milk",
+            "1 egg",
+            "50g butter, melted",
+            "100g apricot jam",
+            "40g caster sugar, extra",
+            "1 tsp ground cinnamon",
+            "20g butter, extra, melted"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C fan (200°C conventional) and grease a 12-hole muffin tin.",
+        "Mix the flour, sugar, baking powder and nutmeg, then whisk the milk, egg and 50g butter and fold into the dry mix until just combined.",
+        "Divide among the holes and bake for 18 minutes until golden and a skewer comes out clean. Cool for 5 minutes.",
+        "Use a skewer to make a hole in the side of each, then pipe or spoon in about 2 tsp jam.",
+        "Brush each with the extra melted butter and roll in the extra sugar mixed with the cinnamon."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 doughnut.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Best the day they are made; keep up to 2 days in an airtight container."
+      ],
+      "nutrition": {
+        "kcal": 192,
+        "proteinG": 3,
+        "carbsG": 31,
+        "fatG": 6,
+        "fibreG": 1,
+        "sodiumMg": 160
+      }
+    },
+    {
+      "id": "cinnamon-walnut-rugelach",
+      "title": "Cinnamon Walnut Rugelach",
+      "summary": "Flaky cream cheese pastry crescents rolled around cinnamon sugar, walnuts and apricot jam.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 35,
+      "cookMinutes": 22,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g plain flour",
+            "115g cold butter, cubed",
+            "115g cream cheese",
+            "2 tbsp caster sugar",
+            "1/4 tsp salt",
+            "50g caster sugar, extra",
+            "2 tsp ground cinnamon",
+            "50g walnuts, finely chopped",
+            "50g apricot jam"
+          ]
+        }
+      ],
+      "steps": [
+        "Rub the butter into the flour, 2 tbsp sugar and salt, add the cream cheese and bring together into a dough. Divide in two, wrap and chill.",
+        "Heat the oven to 170°C fan (190°C conventional). Roll each half into a 28cm circle and spread with jam.",
+        "Mix the extra sugar, cinnamon and walnuts and scatter over the jam. Cut each circle into 8 wedges.",
+        "Roll each wedge from the wide end to the point and place point-down on lined trays.",
+        "Bake for 22 minutes until golden. Cool on the tray for 10 minutes."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 rugelach. Plus 1 hour chilling the dough.",
+        "Store in an airtight container for up to 4 days."
+      ],
+      "nutrition": {
+        "kcal": 329,
+        "proteinG": 5,
+        "carbsG": 38,
+        "fatG": 17,
+        "fibreG": 2,
+        "sodiumMg": 120
+      }
+    },
+    {
+      "id": "almond-mandelbrot-twice-baked-slices",
+      "title": "Almond Mandelbrot Twice-Baked Slices",
+      "summary": "Crunchy twice-baked almond and cinnamon slices, ideal for dunking in a hot drink.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 10,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 eggs",
+            "100g caster sugar",
+            "60ml neutral oil",
+            "1 tsp vanilla extract",
+            "250g plain flour",
+            "1 tsp baking powder",
+            "1 tsp ground cinnamon",
+            "100g almonds, roughly chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 170°C fan (190°C conventional) and line a tray.",
+        "Whisk the eggs, sugar, oil and vanilla, then fold in the flour, baking powder, cinnamon and almonds to a sticky dough.",
+        "Shape into two logs about 25cm long and bake for 25 minutes until firm and golden.",
+        "Cool for 10 minutes, then cut each log on the diagonal into 10 slices.",
+        "Lay the slices cut-side up and bake for 15 minutes at 150°C fan (170°C conventional), turning once, until dry and crisp."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 slices.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Store in an airtight container for up to 3 weeks."
+      ],
+      "nutrition": {
+        "kcal": 260,
+        "proteinG": 6,
+        "carbsG": 31,
+        "fatG": 12,
+        "fibreG": 2,
+        "sodiumMg": 40
+      }
+    },
+    {
+      "id": "baked-chin-chin-nigerian-crunchies",
+      "title": "Baked Chin Chin Nigerian Crunchies",
+      "summary": "Nutmeg-scented crunchy little dough cubes, baked for a lighter version of the party snack.",
+      "cuisine": "west-african",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 25,
+      "cookMinutes": 25,
+      "servings": 10,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g plain flour",
+            "60g caster sugar",
+            "1 tsp baking powder",
+            "1/2 tsp ground nutmeg",
+            "60g cold butter, cubed",
+            "1 egg",
+            "60ml milk"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional) and line two trays.",
+        "Rub the butter into the flour, sugar, baking powder and nutmeg, then mix in the egg and milk to a firm dough.",
+        "Roll 5mm thick and cut into small 1.5cm cubes with a knife.",
+        "Spread over the trays in one layer and bake for 25 minutes, stirring halfway, until golden and crunchy.",
+        "Cool completely on the trays so they crisp up."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: about 1/2 cup.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Store in an airtight container for up to 2 weeks."
+      ],
+      "nutrition": {
+        "kcal": 184,
+        "proteinG": 4,
+        "carbsG": 28,
+        "fatG": 6,
+        "fibreG": 1,
+        "sodiumMg": 80
+      }
+    },
+    {
+      "id": "coconut-mandazi-baked-triangles",
+      "title": "Coconut Mandazi Baked Triangles",
+      "summary": "Soft, lightly sweet East African doughnut triangles made with coconut milk and baked rather than fried.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 18,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g plain flour",
+            "50g caster sugar",
+            "2 tsp baking powder",
+            "1/2 tsp ground cinnamon",
+            "1/4 tsp salt",
+            "3/4 cup coconut milk",
+            "1 egg",
+            "2 tbsp neutral oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional) and line a tray.",
+        "Mix the flour, sugar, baking powder, cinnamon and salt, then stir in the coconut milk and egg to a soft dough.",
+        "Knead for 1 minute on a floured bench, roll 1cm thick and cut into 12 triangles.",
+        "Brush the tops with oil and place on the tray.",
+        "Bake for 18 minutes until puffed and golden. Serve warm."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 triangles.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Best the same day; reheat in a 160°C fan oven for 5 minutes."
+      ],
+      "nutrition": {
+        "kcal": 318,
+        "proteinG": 7,
+        "carbsG": 49,
+        "fatG": 10,
+        "fibreG": 2,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "classic-victoria-sponge-squares",
+      "title": "Classic Victoria Sponge Squares",
+      "summary": "Light butter sponge sandwiched with apricot jam and whipped cream, cut into tea-time squares.",
+      "cuisine": "british",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 35,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g soft butter",
+            "200g caster sugar",
+            "4 eggs",
+            "200g self-raising flour",
+            "2 tbsp milk",
+            "1 tsp vanilla extract",
+            "60g apricot jam",
+            "150ml thickened cream"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional). Grease and line two 20cm square tins.",
+        "Beat the butter and sugar for 4 minutes until pale and fluffy, then beat in the eggs one at a time with a spoon of the flour.",
+        "Fold in the remaining flour, milk and vanilla and divide between the tins.",
+        "Bake for 25 minutes until golden and springy to the touch, then cool completely.",
+        "Whip the cream to soft peaks, spread jam on one sponge, top with the cream and the second sponge, and cut into 12 squares."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 square.",
+        "Food safety: wash hands and the bench after handling raw egg; keep filled cake chilled and eat within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 331,
+        "proteinG": 4,
+        "carbsG": 40,
+        "fatG": 17,
+        "fibreG": 1,
+        "sodiumMg": 190
+      }
+    },
+    {
+      "id": "lemon-madeira-cake",
+      "title": "Lemon Madeira Cake",
+      "summary": "A close-crumbed, buttery lemon loaf cake, the classic with a cup of tea.",
+      "cuisine": "british",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 55,
+      "servings": 10,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "175g soft butter",
+            "175g caster sugar",
+            "3 eggs",
+            "225g self-raising flour",
+            "2 tbsp milk",
+            "zest of 1 lemon",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 150°C fan (170°C conventional). Grease and line a 900g loaf tin.",
+        "Beat the butter, sugar and lemon zest for 4 minutes until pale and creamy.",
+        "Beat in the eggs one at a time with a spoon of flour each, then fold in the remaining flour, milk and lemon juice.",
+        "Spoon into the tin and bake for 55 minutes until golden and a skewer comes out clean.",
+        "Cool in the tin for 15 minutes, then on a rack. Cut into 10 slices."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 slice.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Store wrapped for up to 4 days."
+      ],
+      "nutrition": {
+        "kcal": 304,
+        "proteinG": 4,
+        "carbsG": 40,
+        "fatG": 14,
+        "fibreG": 1,
+        "sodiumMg": 180
+      }
+    },
+    {
+      "id": "whole-orange-gluten-free-tea-cake",
+      "title": "Whole Orange Gluten-Free Tea Cake",
+      "summary": "A moist gluten-free cake made from whole simmered oranges and ground almonds.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 110,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 oranges",
+            "250g ground almonds",
+            "180g caster sugar",
+            "4 eggs",
+            "1 tsp baking powder"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the whole oranges in water for 60 minutes until very soft, then cool, halve and remove any pips.",
+        "Heat the oven to 160°C fan (180°C conventional). Grease and line a 20cm round tin.",
+        "Blend the oranges to a smooth purée, then beat in the eggs, sugar, almonds and baking powder.",
+        "Pour into the tin and bake for 45 minutes until golden and a skewer comes out clean.",
+        "Cool in the tin, then cut into 12 slices."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Gluten-free if the baking powder is gluten-free. Per serving: 1 slice.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Keeps in the fridge for up to 4 days; it is better the next day."
+      ],
+      "nutrition": {
+        "kcal": 230,
+        "proteinG": 7,
+        "carbsG": 22,
+        "fatG": 12,
+        "fibreG": 3,
+        "sodiumMg": 50
+      }
+    },
+    {
+      "id": "rosh-hashanah-honey-cake",
+      "title": "Rosh Hashanah Honey Cake",
+      "summary": "A tall spiced honey and orange loaf cake that stays moist for days.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 50,
+      "servings": 10,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g honey",
+            "100g caster sugar",
+            "3 eggs",
+            "80ml neutral oil",
+            "300g plain flour",
+            "2 tsp baking powder",
+            "1 tsp ground cinnamon",
+            "1/2 tsp ground ginger",
+            "120ml orange juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional). Grease and line a 900g loaf tin.",
+        "Whisk the eggs, sugar, honey and oil until smooth.",
+        "Stir in the flour, baking powder and spices alternately with the orange juice until just combined.",
+        "Pour into the tin and bake for 50 minutes until deep golden and a skewer comes out clean, covering with foil if it browns too quickly.",
+        "Cool in the tin for 20 minutes, then on a rack. Cut into 10 slices."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 slice.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Wrap well and keep for up to 5 days; the flavour improves after a day."
+      ],
+      "nutrition": {
+        "kcal": 315,
+        "proteinG": 5,
+        "carbsG": 53,
+        "fatG": 9,
+        "fibreG": 1,
+        "sodiumMg": 90
+      }
+    },
+    {
+      "id": "cheese-and-chive-muffins",
+      "title": "Cheese and Chive Muffins",
+      "summary": "Fluffy savoury muffins with melted cheese and fresh chives, great for lunchboxes.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 22,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g plain flour",
+            "2 tsp baking powder",
+            "100g vegetarian hard cheese, grated",
+            "3 tbsp chopped chives",
+            "1 tsp mustard powder",
+            "1/2 tsp salt",
+            "1 egg",
+            "250ml milk",
+            "60ml neutral oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C fan (200°C conventional) and line a 12-hole muffin tin.",
+        "Mix the flour, baking powder, mustard powder, salt, 80g of the cheese and the chives.",
+        "Whisk the egg, milk and oil and stir into the dry mix until just combined.",
+        "Divide among the cases and top with the remaining cheese.",
+        "Bake for 22 minutes until golden and a skewer comes out clean. Cool for 5 minutes in the tin."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 muffin.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Keeps in an airtight container for 2 days or freezes for 1 month."
+      ],
+      "nutrition": {
+        "kcal": 189,
+        "proteinG": 7,
+        "carbsG": 24,
+        "fatG": 7,
+        "fibreG": 1,
+        "sodiumMg": 290
+      }
+    },
+    {
+      "id": "corn-and-zucchini-polenta-muffins",
+      "title": "Corn and Zucchini Polenta Muffins",
+      "summary": "Savoury muffins with sweetcorn, grated zucchini and a crumbly polenta texture.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g plain flour",
+            "100g polenta",
+            "2 tsp baking powder",
+            "250g zucchini, grated and squeezed dry",
+            "1 cup corn kernels",
+            "60g vegetarian hard cheese, grated",
+            "2 eggs",
+            "200ml milk",
+            "60ml neutral oil",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C fan (200°C conventional) and line a 12-hole muffin tin.",
+        "Mix the flour, polenta, baking powder, salt, zucchini, corn and cheese.",
+        "Whisk the eggs, milk and oil and fold through the dry mix until just combined.",
+        "Divide among the cases and bake for 25 minutes until golden and a skewer comes out clean.",
+        "Cool for 5 minutes in the tin, then on a rack."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 muffin.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Keeps in an airtight container for 2 days or freezes for 1 month."
+      ],
+      "nutrition": {
+        "kcal": 191,
+        "proteinG": 6,
+        "carbsG": 25,
+        "fatG": 7,
+        "fibreG": 2,
+        "sodiumMg": 270
+      }
+    },
+    {
+      "id": "spinach-and-feta-muffins",
+      "title": "Spinach and Feta Muffins",
+      "summary": "Moist savoury muffins with spinach, salty feta and a hint of nutmeg.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 22,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g plain flour",
+            "2 tsp baking powder",
+            "100g frozen spinach, thawed and squeezed dry",
+            "120g feta, crumbled",
+            "1/4 tsp ground nutmeg",
+            "1/2 tsp salt",
+            "2 eggs",
+            "200ml milk",
+            "60ml neutral oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C fan (200°C conventional) and line a 12-hole muffin tin.",
+        "Mix the flour, baking powder, nutmeg, salt, spinach and feta.",
+        "Whisk the eggs, milk and oil and stir into the dry mix until just combined.",
+        "Divide among the cases and bake for 22 minutes until golden and a skewer comes out clean.",
+        "Cool for 5 minutes in the tin."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 muffin.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Keeps in an airtight container for 2 days or freezes for 1 month."
+      ],
+      "nutrition": {
+        "kcal": 184,
+        "proteinG": 6,
+        "carbsG": 21,
+        "fatG": 8,
+        "fibreG": 2,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "pumpkin-and-sage-savoury-loaf",
+      "title": "Pumpkin and Sage Savoury Loaf",
+      "summary": "A moist savoury loaf of pumpkin, sage and cheese, lovely sliced and buttered.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "servings": 10,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g cooked pumpkin, mashed",
+            "250g plain flour",
+            "2 tsp baking powder",
+            "2 eggs",
+            "60ml neutral oil",
+            "100ml milk",
+            "1 tbsp chopped sage",
+            "60g vegetarian hard cheese, grated",
+            "2 tbsp pumpkin seeds",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C fan (200°C conventional). Grease and line a 900g loaf tin.",
+        "Whisk the pumpkin, eggs, oil and milk until smooth.",
+        "Fold in the flour, baking powder, salt, sage and cheese until just combined.",
+        "Pour into the tin, scatter with the pumpkin seeds and bake for 45 minutes until golden and a skewer comes out clean.",
+        "Cool in the tin for 10 minutes, then on a rack. Cut into 10 slices."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 slice.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Keeps in the fridge for 3 days or freezes sliced for 1 month."
+      ],
+      "nutrition": {
+        "kcal": 200,
+        "proteinG": 7,
+        "carbsG": 24,
+        "fatG": 8,
+        "fibreG": 2,
+        "sodiumMg": 280
+      }
+    }
+  ]
+}

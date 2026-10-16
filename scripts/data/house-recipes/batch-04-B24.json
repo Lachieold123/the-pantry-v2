@@ -1,0 +1,1143 @@
+{
+  "about": "House recipes, batch 04 (slice B): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "rajma-chawal-punjabi-kidney-beans-with-rice",
+      "title": "Rajma Chawal Punjabi Kidney Beans with Rice",
+      "summary": "Soft kidney beans in a thick onion and tomato gravy, pressure-cooked and served over rice.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g dried kidney beans, soaked overnight and drained",
+            "2 onions, chopped",
+            "4 tomatoes, chopped",
+            "4 cloves garlic, minced",
+            "1 tbsp ginger, grated",
+            "2 tsp garam masala",
+            "1 tsp turmeric",
+            "1 tsp ground cumin",
+            "2 tbsp vegetable oil",
+            "4 cups water",
+            "300g basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the soaked beans hard in fresh water for 10 minutes to destroy the natural toxins, drain, then pressure-cook in the 4 cups water with 1 tsp salt for 25 minutes at high pressure until completely soft, then release the pressure.",
+        "Fry the onions in the oil for 8 minutes until golden, then add the garlic and ginger for 1 minute.",
+        "Stir in the turmeric, cumin and tomatoes and cook 8 minutes until the oil separates.",
+        "Tip in the beans with their liquid, add the garam masala and simmer 10 minutes until the gravy is thick.",
+        "Cook the rice until tender and fluffy, about 15 minutes, and serve with the beans."
+      ],
+      "nutrition": {
+        "kcal": 588,
+        "proteinG": 22,
+        "carbsG": 100,
+        "fatG": 8,
+        "fibreG": 14,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "sambar-rice-plate-tamil-lentil-and-vegetable-stew",
+      "title": "Sambar Rice Plate Tamil Lentil and Vegetable Stew",
+      "summary": "A tamarind-sour lentil stew with drumstick-style vegetables, pressure-cooked and eaten over rice.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g split yellow lentils",
+            "4 cups water",
+            "2 tbsp tamarind paste",
+            "1 onion, chopped",
+            "2 carrots, sliced",
+            "1 eggplant, cubed",
+            "2 tomatoes, chopped",
+            "1 tbsp curry powder",
+            "1 tsp turmeric",
+            "1 tsp mustard seeds",
+            "2 tbsp vegetable oil",
+            "300g basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Pressure-cook the lentils with the water and turmeric for 12 minutes at high pressure until they are completely soft, then release the pressure and mash lightly.",
+        "Add the onion, carrots, eggplant, tomatoes, tamarind and curry powder and simmer for 15 minutes until the vegetables are tender.",
+        "Heat the oil, pop the mustard seeds until they crackle and stir into the pot.",
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Serve the sambar over the rice."
+      ],
+      "nutrition": {
+        "kcal": 561,
+        "proteinG": 17,
+        "carbsG": 98,
+        "fatG": 9,
+        "fibreG": 10,
+        "sodiumMg": 750
+      }
+    },
+    {
+      "id": "bisi-bele-bath-karnataka-spiced-lentil-rice",
+      "title": "Bisi Bele Bath Karnataka Spiced Lentil Rice",
+      "summary": "A one-pot hot lentil rice with vegetables, tamarind and a roasted spice blend, finished with ghee.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g split pigeon peas",
+            "150g basmati rice",
+            "6 cups water",
+            "150g green beans, chopped",
+            "1 carrot, diced",
+            "1 potato, diced",
+            "2 tbsp tamarind paste",
+            "2 tbsp curry powder",
+            "1 tsp turmeric",
+            "2 tbsp ghee",
+            "1 tsp mustard seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Pressure-cook the lentils, rice and water with the turmeric for 15 minutes at high pressure until completely soft and mushy.",
+        "Release the pressure and stir in the vegetables, tamarind, spice mix and 1 tsp salt.",
+        "Simmer for 15 minutes until the vegetables are soft and the mixture is thick like porridge, adding hot water if too stiff.",
+        "Heat the ghee, pop the mustard seeds until they crackle and pour over the top."
+      ],
+      "nutrition": {
+        "kcal": 394,
+        "proteinG": 14,
+        "carbsG": 62,
+        "fatG": 8,
+        "fibreG": 9,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "thukpa-gyathuk-tibetan-chicken-noodle-soup",
+      "title": "Thukpa Gyathuk Tibetan Chicken Noodle Soup",
+      "summary": "A comforting Tibetan noodle soup with chicken, vegetables and ginger.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g chicken thigh fillets, sliced",
+            "6 cups water",
+            "1 tbsp ginger, grated",
+            "4 cloves garlic, minced",
+            "1 onion, sliced",
+            "2 carrots, sliced",
+            "200g bok choy",
+            "300g wheat noodles",
+            "2 tbsp soy sauce",
+            "1 tsp ground black pepper",
+            "1 tbsp vegetable oil",
+            "2 spring onions, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onion, ginger and garlic in the oil for 5 minutes until soft.",
+        "Add the chicken and cook 4 minutes, then pour in the water, soy sauce and pepper.",
+        "Simmer for 15 minutes until the chicken reaches 75°C, adding the carrots for the last 8 minutes.",
+        "Add the noodles and bok choy and cook 4 minutes until tender.",
+        "Ladle into bowls and top with spring onions."
+      ],
+      "notes": [
+        "Food safety: cook the chicken to 75°C in the centre. Contains gluten. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 462,
+        "proteinG": 34,
+        "carbsG": 52,
+        "fatG": 12,
+        "fibreG": 5,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "shapta-tibetan-stir-fried-beef-with-capsicum",
+      "title": "Shapta Tibetan Stir-Fried Beef with Capsicum",
+      "summary": "Quick stir-fried beef with onion, capsicum and chilli, served with rice.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g beef rump, thinly sliced",
+            "1 onion, sliced",
+            "2 capsicums, sliced",
+            "4 cloves garlic, minced",
+            "1 tbsp ginger, grated",
+            "2 tbsp soy sauce",
+            "1 tsp Sichuan peppercorns, crushed",
+            "2 red chillies, sliced",
+            "2 tbsp vegetable oil",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Sear the beef in 1 tbsp hot oil for 3 minutes in two batches until browned, then set aside.",
+        "Fry the onion, capsicums, garlic, ginger and chillies in the remaining oil for 5 minutes.",
+        "Return the beef, add the soy sauce and peppercorns and toss for 2 minutes until the beef reaches 71°C.",
+        "Spoon the beef and vegetables over the rice and serve straight away while the capsicum is still crisp."
+      ],
+      "notes": [
+        "Food safety: cook the beef to at least 71°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 533,
+        "proteinG": 32,
+        "carbsG": 66,
+        "fatG": 15,
+        "fibreG": 3,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "chicken-haleem-pakistani-slow-cooked-wheat-and-lentil-stew",
+      "title": "Chicken Haleem Pakistani Slow-Cooked Wheat and Lentil Stew",
+      "summary": "A thick, spiced porridge-like stew of chicken, wheat and lentils, topped with ginger and fried onion.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 70,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g chicken thigh fillets",
+            "150g cracked wheat",
+            "100g split yellow lentils",
+            "100g red lentils",
+            "7 cups water",
+            "2 onions, thinly sliced",
+            "1 tbsp ginger, grated",
+            "4 cloves garlic, minced",
+            "2 tsp garam masala",
+            "1 tsp turmeric",
+            "1 tsp chilli powder",
+            "4 tbsp vegetable oil",
+            "1 lemon, in wedges",
+            "2 tbsp ginger, cut into matchsticks"
+          ]
+        }
+      ],
+      "steps": [
+        "Rinse the wheat and lentils, then pressure-cook with the water, turmeric and 1 tsp salt for 30 minutes at high pressure until completely soft.",
+        "Fry one onion in 2 tbsp oil until golden, add the ginger, garlic and chicken and cook 8 minutes until the chicken reaches 75°C.",
+        "Stir the chicken mix and spices into the cooked wheat, simmer 20 minutes and beat with a wooden spoon until thick and smooth.",
+        "Fry the second onion in the remaining oil for 10 minutes until crisp.",
+        "Serve topped with fried onion, ginger and lemon."
+      ],
+      "notes": [
+        "Food safety: cook the chicken to 75°C in the centre. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 430,
+        "proteinG": 32,
+        "carbsG": 40,
+        "fatG": 14,
+        "fibreG": 8,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "karahi-gosht-peshawari-lamb",
+      "title": "Karahi Gosht Peshawari Lamb",
+      "summary": "A simple Peshawari lamb karahi with tomato, ginger and black pepper, no onion, eaten with flatbread.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": true,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "800g lamb shoulder, cubed",
+            "5 tomatoes, chopped",
+            "3 tbsp ginger, cut into matchsticks",
+            "6 cloves garlic, sliced",
+            "4 green chillies, slit",
+            "1 tsp ground black pepper",
+            "1 tsp ground cumin",
+            "4 tbsp ghee",
+            "1/2 cup coriander leaves",
+            "4 flatbreads"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the ghee in a karahi or heavy pan and sear the lamb in batches for 8 minutes until browned.",
+        "Add the garlic and half the ginger and fry 2 minutes, then the tomatoes, chillies, pepper, cumin and 1 tsp salt.",
+        "Cover and cook on low for 35 minutes until the lamb is tender and reaches 71°C and the oil separates.",
+        "Stir in the coriander and the remaining ginger and serve with the flatbreads."
+      ],
+      "notes": [
+        "Food safety: cook the lamb to at least 71°C. Contains milk and gluten. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 576,
+        "proteinG": 36,
+        "carbsG": 34,
+        "fatG": 32,
+        "fibreG": 4,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "plov-uzbek-carrot-and-beef-rice",
+      "title": "Plov Uzbek Carrot and Beef Rice",
+      "summary": "The festive Uzbek rice pilaf of beef, carrot and chickpeas cooked under a lid.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 60,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g beef chuck, cubed",
+            "500g long-grain rice",
+            "600g carrots, cut into thin sticks",
+            "2 onions, sliced",
+            "1/2 cup vegetable oil",
+            "1 can chickpeas, drained",
+            "1 whole garlic bulb, top sliced off",
+            "2 tsp ground cumin",
+            "4 cups water"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a large heavy pot and brown the beef for 8 minutes, then add the onions and cook 8 minutes until golden.",
+        "Add the carrots and cumin and fry 6 minutes, then pour in half the water and 1 tsp salt and simmer, covered, for 30 minutes until the beef is tender and reaches 71°C.",
+        "Rinse the rice, spread over the meat, add the chickpeas, remaining water and garlic bulb pressed into the centre.",
+        "Cover and cook on low for 20 minutes until the rice is tender and the water is absorbed.",
+        "Rest 10 minutes, then mix gently and serve."
+      ],
+      "notes": [
+        "Food safety: cook the beef to at least 71°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 620,
+        "proteinG": 28,
+        "carbsG": 70,
+        "fatG": 24,
+        "fibreG": 6,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "lagman-uzbek-beef-and-vegetable-noodle-stew",
+      "title": "Lagman Uzbek Beef and Vegetable Noodle Stew",
+      "summary": "Hand-pulled style noodles under a thick beef, capsicum and tomato stew.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 50,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g beef chuck, cubed",
+            "2 onions, sliced",
+            "2 capsicums, sliced",
+            "2 carrots, sliced",
+            "4 tomatoes, chopped",
+            "4 cloves garlic, minced",
+            "1 tbsp tomato paste",
+            "3 cups water",
+            "2 tbsp vegetable oil",
+            "1 tsp ground cumin",
+            "300g wheat noodles"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the beef in the oil for 8 minutes, then add the onions and cook 5 minutes.",
+        "Add the carrots, capsicums, garlic, tomato paste and cumin and cook 4 minutes.",
+        "Add the tomatoes and water and simmer for 30 minutes until the beef is tender and reaches 71°C.",
+        "Boil the noodles until tender, about 4 minutes, and drain.",
+        "Serve the stew over the noodles."
+      ],
+      "notes": [
+        "Food safety: cook the beef to at least 71°C. Contains gluten. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 472,
+        "proteinG": 32,
+        "carbsG": 56,
+        "fatG": 12,
+        "fibreG": 6,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "dal-tadka-pressure-cooker-yellow-lentils-with-tempering",
+      "title": "Dal Tadka Pressure-Cooker Yellow Lentils with Tempering",
+      "summary": "Creamy yellow lentils finished with a sizzling garlic, cumin and chilli tempering.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g split yellow lentils",
+            "4 cups water",
+            "1 tsp turmeric",
+            "2 tomatoes, chopped",
+            "1 onion, chopped",
+            "2 tbsp ghee",
+            "1 tsp cumin seeds",
+            "4 cloves garlic, sliced",
+            "2 dried chillies",
+            "1/2 cup coriander leaves",
+            "300g basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Pressure-cook the lentils with the water, turmeric, tomato and 1 tsp salt for 12 minutes at high pressure until completely soft, then release the pressure and whisk smooth.",
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Heat the ghee, fry the cumin seeds until they crackle, then add the onion and cook 5 minutes until golden.",
+        "Add the garlic and chillies for 1 minute and pour the sizzling mix over the dal.",
+        "Scatter with coriander and serve with the rice."
+      ],
+      "notes": [
+        "Contains milk."
+      ],
+      "nutrition": {
+        "kcal": 532,
+        "proteinG": 20,
+        "carbsG": 90,
+        "fatG": 8,
+        "fibreG": 10,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "anda-curry-spiced-egg-curry",
+      "title": "Anda Curry Spiced Egg Curry",
+      "summary": "Boiled eggs in a thick onion and tomato gravy with garam masala.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 eggs",
+            "2 onions, chopped",
+            "4 tomatoes, chopped",
+            "4 cloves garlic, minced",
+            "1 tbsp ginger, grated",
+            "2 tsp garam masala",
+            "1 tsp turmeric",
+            "1 tsp chilli powder",
+            "3 tbsp vegetable oil",
+            "1 cup water",
+            "300g basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Hard-boil the eggs for 9 minutes, cool and peel, then score lightly.",
+        "Fry the onions in the oil for 8 minutes until golden, then add the garlic and ginger for 1 minute.",
+        "Stir in the spices and tomatoes and cook 8 minutes until the oil separates.",
+        "Add the water and simmer 5 minutes, slide in the eggs and warm 3 minutes.",
+        "Cook the rice until tender and fluffy, about 15 minutes, and serve with the curry."
+      ],
+      "notes": [
+        "Food safety: hard-boil the eggs until the yolk is firm. Contains egg. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 570,
+        "proteinG": 21,
+        "carbsG": 70,
+        "fatG": 22,
+        "fibreG": 4,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "bhuna-khichuri-bengali-roasted-lentil-rice",
+      "title": "Bhuna Khichuri Bengali Roasted Lentil Rice",
+      "summary": "A rainy-day Bengali rice and lentil dish with vegetables and ghee, pressure-cooked.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g basmati rice",
+            "150g split yellow lentils",
+            "5 cups water",
+            "1 potato, diced",
+            "1 cauliflower floret, about 200g",
+            "100g peas",
+            "1 tbsp ginger, grated",
+            "1 tsp turmeric",
+            "1 tsp cumin seeds",
+            "2 bay leaves",
+            "2 tbsp ghee"
+          ]
+        }
+      ],
+      "steps": [
+        "Dry-roast the lentils in a pot for 4 minutes until fragrant and light golden.",
+        "Melt the ghee, fry the cumin and bay leaves until the seeds crackle, then add the ginger and turmeric.",
+        "Add the rice, lentils, vegetables, water and 1 tsp salt and pressure-cook for 10 minutes at high pressure until soft.",
+        "Release the pressure, stir well and serve thick and porridge-like."
+      ],
+      "notes": [
+        "Contains milk."
+      ],
+      "nutrition": {
+        "kcal": 474,
+        "proteinG": 18,
+        "carbsG": 78,
+        "fatG": 8,
+        "fibreG": 9,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "nihari-pakistani-slow-braised-beef-shank",
+      "title": "Nihari Pakistani Slow-Braised Beef Shank",
+      "summary": "A rich, silky beef braise in a gingery spiced gravy, traditional for festive breakfasts and Eid.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 20,
+      "cookMinutes": 150,
+      "servings": 6,
+      "onePot": true,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "1kg beef shin, cut into pieces",
+            "3 onions, thinly sliced",
+            "4 tbsp ghee",
+            "3 tbsp plain flour",
+            "2 tbsp ginger, grated",
+            "6 cloves garlic, minced",
+            "2 tsp garam masala",
+            "1 tsp turmeric",
+            "1 tsp chilli powder",
+            "1 tsp ground fennel",
+            "6 cups water",
+            "2 tbsp ginger, cut into matchsticks",
+            "1 lemon, in wedges"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onions in the ghee for 15 minutes until deep brown.",
+        "Add the beef, grated ginger, garlic and spices and brown for 8 minutes.",
+        "Pour in the water, bring to a simmer and cook, covered, for 2 hours until the meat is falling apart and reaches 71°C.",
+        "Stir the flour with 1/2 cup water until smooth, add to the pot and simmer 10 minutes until the gravy is glossy.",
+        "Serve topped with ginger matchsticks and lemon."
+      ],
+      "notes": [
+        "Food safety: cook the beef to at least 71°C. Contains milk and gluten. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 472,
+        "proteinG": 40,
+        "carbsG": 18,
+        "fatG": 26,
+        "fibreG": 3,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "aloo-gosht-pakistani-lamb-and-potato-curry",
+      "title": "Aloo Gosht Pakistani Lamb and Potato Curry",
+      "summary": "Everyday lamb and potato curry, pressure-cooked until tender.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g lamb shoulder, cubed",
+            "4 potatoes, quartered",
+            "2 onions, chopped",
+            "4 tomatoes, chopped",
+            "4 cloves garlic, minced",
+            "1 tbsp ginger, grated",
+            "2 tsp ground coriander",
+            "1 tsp turmeric",
+            "1 tsp chilli powder",
+            "3 tbsp vegetable oil",
+            "2 cups water",
+            "4 flatbreads"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onions in the oil for 8 minutes until golden, then add the garlic and ginger.",
+        "Add the lamb and spices and brown for 6 minutes, then stir in the tomatoes.",
+        "Add the water and pressure-cook for 20 minutes at high pressure until the lamb is tender and reaches 71°C.",
+        "Release the pressure, add the potatoes and simmer 12 minutes until tender.",
+        "Serve with the flatbreads."
+      ],
+      "notes": [
+        "Food safety: cook the lamb to at least 71°C. Contains gluten. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 580,
+        "proteinG": 32,
+        "carbsG": 56,
+        "fatG": 24,
+        "fibreG": 6,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "kofta-challow-afghan-meatballs-with-rice",
+      "title": "Kofta Challow Afghan Meatballs with Rice",
+      "summary": "Spiced beef meatballs in a tomato sauce over fragrant rice.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g minced beef",
+            "1 onion, grated",
+            "1 tsp ground coriander",
+            "1 tsp ground cumin",
+            "1/2 cup coriander leaves",
+            "1 egg",
+            "2 tbsp vegetable oil",
+            "1 onion, chopped",
+            "3 tomatoes, chopped",
+            "1 tbsp tomato paste",
+            "1 1/2 cups water",
+            "300g basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the beef, grated onion, spices, coriander and egg with 1 tsp salt and roll into 16 balls.",
+        "Fry the chopped onion in the oil for 5 minutes, add the tomatoes and paste and cook 6 minutes.",
+        "Add the water, bring to a simmer and add the meatballs, cooking gently for 20 minutes until the meatballs reach 75°C inside.",
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Serve the meatballs and sauce over the rice."
+      ],
+      "notes": [
+        "Food safety: cook the meatballs to 75°C in the centre. Contains egg. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 588,
+        "proteinG": 34,
+        "carbsG": 66,
+        "fatG": 20,
+        "fibreG": 4,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "borani-banjan-afghan-eggplant-with-garlic-yoghurt",
+      "title": "Borani Banjan Afghan Eggplant with Garlic Yoghurt",
+      "summary": "Fried eggplant in a tomato sauce, topped with garlic yoghurt and dried mint, served with flatbread.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 eggplants, sliced",
+            "4 tbsp vegetable oil",
+            "1 onion, sliced",
+            "4 tomatoes, chopped",
+            "1 tsp turmeric",
+            "1 cup plain yoghurt",
+            "2 cloves garlic, minced",
+            "1 tsp dried mint",
+            "4 flatbreads"
+          ]
+        }
+      ],
+      "steps": [
+        "Brush the eggplant slices with 3 tbsp oil and roast at 220°C for 25 minutes until soft and golden.",
+        "Fry the onion in the remaining oil for 5 minutes, add the turmeric and tomatoes and cook 12 minutes until jammy.",
+        "Layer the eggplant in a dish, spoon the tomato sauce over and simmer 5 minutes.",
+        "Mix the yoghurt with the garlic and a pinch of salt, spoon over the top and dust with mint.",
+        "Serve warm with the flatbreads."
+      ],
+      "notes": [
+        "Contains milk and gluten."
+      ],
+      "nutrition": {
+        "kcal": 418,
+        "proteinG": 12,
+        "carbsG": 52,
+        "fatG": 16,
+        "fibreG": 9,
+        "sodiumMg": 500
+      }
+    },
+    {
+      "id": "sabzi-challow-afghan-spinach-and-lamb",
+      "title": "Sabzi Challow Afghan Spinach and Lamb",
+      "summary": "A slow-cooked spinach and lamb stew, deeply green, served with rice.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 55,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g lamb shoulder, cubed",
+            "600g spinach, chopped",
+            "1 onion, chopped",
+            "4 cloves garlic, minced",
+            "1 tsp ground coriander",
+            "1 tsp turmeric",
+            "3 tbsp vegetable oil",
+            "2 cups water",
+            "1 lemon, juiced",
+            "300g basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the lamb in the oil for 8 minutes, add the onion and cook 5 minutes until soft.",
+        "Add the garlic, coriander, turmeric and water, cover and simmer for 30 minutes until the lamb is tender.",
+        "Stir in the spinach in handfuls and cook 10 minutes until the stew is thick and the lamb reaches 71°C.",
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Finish the stew with lemon juice and serve over the rice."
+      ],
+      "notes": [
+        "Food safety: cook the lamb to at least 71°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 582,
+        "proteinG": 32,
+        "carbsG": 66,
+        "fatG": 20,
+        "fibreG": 5,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "shurpa-uzbek-lamb-and-vegetable-soup",
+      "title": "Shurpa Uzbek Lamb and Vegetable Soup",
+      "summary": "A clear, hearty lamb soup with big chunks of potato, carrot and tomato.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 75,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g lamb shoulder, cut into large pieces",
+            "7 cups water",
+            "2 onions, quartered",
+            "3 carrots, cut into chunks",
+            "3 potatoes, quartered",
+            "3 tomatoes, quartered",
+            "2 capsicums, quartered",
+            "1 tsp ground cumin",
+            "1/2 cup dill, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the lamb in the water with the onions and 1 tsp salt for 45 minutes, skimming, until nearly tender.",
+        "Add the carrots and potatoes and simmer 15 minutes.",
+        "Add the tomatoes, capsicums and cumin and simmer 8 minutes until all the vegetables are tender and the lamb reaches 71°C.",
+        "Stir through the dill and serve in large bowls."
+      ],
+      "notes": [
+        "Food safety: cook the lamb to at least 71°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 456,
+        "proteinG": 32,
+        "carbsG": 34,
+        "fatG": 20,
+        "fibreG": 6,
+        "sodiumMg": 500
+      }
+    },
+    {
+      "id": "dimlama-uzbek-layered-lamb-and-vegetable-pot",
+      "title": "Dimlama Uzbek Layered Lamb and Vegetable Pot",
+      "summary": "A layered pot of lamb, potato, carrot and cabbage steamed in its own juices with no stirring.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 25,
+      "cookMinutes": 105,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g lamb shoulder, cubed",
+            "4 potatoes, thickly sliced",
+            "3 carrots, sliced",
+            "1/4 cabbage, cut into wedges",
+            "3 onions, sliced",
+            "3 tomatoes, sliced",
+            "6 cloves garlic",
+            "1 tsp ground cumin",
+            "3 tbsp vegetable oil",
+            "1/2 cup water"
+          ]
+        }
+      ],
+      "steps": [
+        "Layer the onions, then the lamb, cumin and 2 tsp salt, in a heavy lidded pot brushed with oil.",
+        "Layer in the potatoes, carrots, cabbage, tomatoes and garlic, drizzle with oil and add the water.",
+        "Cover tightly and cook on very low heat for 90 minutes without stirring until the lamb is tender and reaches 71°C.",
+        "Rest 10 minutes and serve straight from the pot."
+      ],
+      "notes": [
+        "Food safety: cook the lamb to at least 71°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 388,
+        "proteinG": 28,
+        "carbsG": 30,
+        "fatG": 16,
+        "fibreG": 6,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "sekuwa-nepali-grilled-chicken-thigh-skewers",
+      "title": "Sekuwa Nepali Grilled Chicken Thigh Skewers",
+      "summary": "Spice-rubbed chicken grilled until charred, served with rice and sliced onion.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g chicken thigh fillets, cut into chunks",
+            "3 tbsp plain yoghurt",
+            "1 tbsp ginger, grated",
+            "4 cloves garlic, minced",
+            "1 tsp ground cumin",
+            "1 tsp ground coriander",
+            "1 tsp turmeric",
+            "1 tsp chilli powder",
+            "2 tbsp vegetable oil",
+            "1 onion, sliced",
+            "1 lemon, in wedges",
+            "300g basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the chicken with the yoghurt, ginger, garlic, spices, oil and 1 tsp salt.",
+        "Thread onto metal skewers and grill or barbecue over a high heat for 14 minutes, turning, until charred and the chicken reaches 75°C.",
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Serve the sekuwa with rice, onion and lemon."
+      ],
+      "notes": [
+        "Food safety: cook the chicken to 75°C in the centre. Contains milk. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 580,
+        "proteinG": 42,
+        "carbsG": 66,
+        "fatG": 16,
+        "fibreG": 2,
+        "sodiumMg": 550
+      }
+    },
+    {
+      "id": "thenthuk-tibetan-hand-torn-noodle-soup-with-beef",
+      "title": "Thenthuk Tibetan Hand-Torn Noodle Soup with Beef",
+      "summary": "Torn dough noodles in a spiced beef and vegetable broth.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g plain flour",
+            "150ml water",
+            "400g beef rump, thinly sliced",
+            "5 cups water",
+            "1 onion, sliced",
+            "2 tomatoes, chopped",
+            "150g spinach",
+            "4 cloves garlic, minced",
+            "1 tbsp ginger, grated",
+            "2 tbsp soy sauce",
+            "1 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Knead the flour with the 150ml water and 1/2 tsp salt into a firm dough and rest 20 minutes under a damp cloth.",
+        "Fry the onion, garlic and ginger in the oil for 5 minutes, add the beef and cook 3 minutes.",
+        "Add the tomatoes, soy sauce and 5 cups water and simmer 12 minutes until the beef reaches 71°C.",
+        "Flatten and tear the dough into thin pieces, drop them in and cook 5 minutes until tender, adding the spinach for the last minute."
+      ],
+      "notes": [
+        "Food safety: cook the beef to at least 71°C. Contains gluten. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 401,
+        "proteinG": 30,
+        "carbsG": 48,
+        "fatG": 9,
+        "fibreG": 4,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "shapaley-tibetan-beef-pasties",
+      "title": "Shapaley Tibetan Beef Pasties",
+      "summary": "Crisp half-moon pastries filled with spiced minced beef and onion.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 40,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g plain flour",
+            "150ml water",
+            "400g minced beef",
+            "1 onion, finely chopped",
+            "3 cloves garlic, minced",
+            "1 tbsp ginger, grated",
+            "1 tsp ground black pepper",
+            "2 tbsp soy sauce",
+            "1 cup vegetable oil, for frying"
+          ]
+        }
+      ],
+      "steps": [
+        "Knead the flour, water and 1/2 tsp salt into a smooth dough and rest 20 minutes under a damp cloth.",
+        "Mix the beef, onion, garlic, ginger, pepper and soy sauce into a filling.",
+        "Roll the dough thin, cut into 10cm rounds, fill each, fold over and crimp the edges.",
+        "Fry in oil heated to 170°C for 3 minutes per side until deep golden and the filling reaches 75°C.",
+        "Drain on paper and serve hot."
+      ],
+      "notes": [
+        "Food safety: cook the beef filling to 75°C in the centre. Contains gluten. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 552,
+        "proteinG": 26,
+        "carbsG": 52,
+        "fatG": 26,
+        "fibreG": 3,
+        "sodiumMg": 700
+      }
+    }
+  ]
+}

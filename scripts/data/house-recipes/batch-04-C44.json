@@ -1,0 +1,1346 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "egg-and-tomato-congee-with-ginger",
+      "title": "Egg and Tomato Congee with Ginger",
+      "summary": "Silky rice porridge with soft-set egg, sweet tomato and ginger, a comforting savoury breakfast.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup jasmine rice",
+            "7 cups water",
+            "3 cm ginger, sliced",
+            "2 tomatoes, chopped",
+            "3 eggs, beaten",
+            "1 tbsp soy sauce",
+            "1 tsp sesame oil",
+            "3 spring onions, sliced",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the rice with the water and ginger for 35 minutes, stirring now and then, until the grains break down into a thick porridge.",
+        "Stir in the tomatoes and cook for 3 minutes until soft.",
+        "Slowly pour in the beaten eggs in a thin stream, stirring gently, and cook for 1 minute until set in ribbons.",
+        "Season with the soy sauce and salt, and serve topped with sesame oil and spring onions."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until fully set and eat the congee hot, with leftover rice porridge refrigerated within 1 hour of cooking.",
+        "Use tamari for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 254,
+        "proteinG": 9,
+        "carbsG": 40,
+        "fatG": 6,
+        "fibreG": 2,
+        "sodiumMg": 720
+      }
+    },
+    {
+      "id": "savoury-oat-porridge-with-mushrooms-and-parmesan",
+      "title": "Savoury Oat Porridge with Mushrooms and Parmesan",
+      "summary": "Creamy stove-top oats cooked in stock and topped with golden mushrooms, spinach and a soft egg.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup rolled oats",
+            "2 cups vegetable stock",
+            "1 cup water",
+            "200 g mushrooms, sliced",
+            "1 tbsp olive oil",
+            "2 handfuls baby spinach",
+            "2 eggs",
+            "2 tbsp grated vegetarian hard cheese",
+            "1/4 tsp pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the oats with the stock and water for 7 minutes, stirring, until thick and creamy.",
+        "Cook the mushrooms in the oil in a hot pan for 6 minutes until golden, adding the spinach for the last minute until wilted.",
+        "Poach the eggs in barely simmering water for 3 minutes until the whites are set.",
+        "Spoon the oats into bowls and top with the mushrooms, eggs, cheese and pepper."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set; avoid runny yolks for pregnant, elderly or immune-compromised eaters.",
+        "Not suitable for gluten-free unless certified oats."
+      ],
+      "nutrition": {
+        "kcal": 369,
+        "proteinG": 17,
+        "carbsG": 38,
+        "fatG": 15,
+        "fibreG": 7,
+        "sodiumMg": 860
+      }
+    },
+    {
+      "id": "chinese-soy-braised-eggs-breakfast-plate",
+      "title": "Chinese Soy Braised Eggs Breakfast Plate",
+      "summary": "Marbled eggs simmered in soy and star anise, served with cucumber and warm rice.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "breakfast",
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 eggs",
+            "1 tbsp rice vinegar",
+            "1/4 cup soy sauce",
+            "2 star anise",
+            "1 cinnamon stick",
+            "1 tbsp sugar",
+            "2 cups water",
+            "1 cucumber, sliced",
+            "2 cups cooked rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the eggs for 8 minutes until firm, then cool in cold water and tap all over with a spoon to crack the shells.",
+        "Simmer the vinegar, soy sauce, star anise, cinnamon, sugar and water for 5 minutes until fragrant, then add the eggs.",
+        "Simmer the eggs gently for 15 minutes until the whites are deeply coloured, then leave in the liquid to cool.",
+        "Peel and halve the eggs and serve with cucumber and warm rice."
+      ],
+      "notes": [
+        "Food safety: boil the eggs until the yolks are firm; keep refrigerated in their liquid and eat within 3 days.",
+        "Food safety: cool and refrigerate the cooked rice within 1 hour.",
+        "Use tamari for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 292,
+        "proteinG": 16,
+        "carbsG": 34,
+        "fatG": 10,
+        "fibreG": 1,
+        "sodiumMg": 720
+      }
+    },
+    {
+      "id": "thai-khai-jiao-fluffy-omelette-over-rice",
+      "title": "Thai Khai Jiao Fluffy Omelette over Rice",
+      "summary": "A crisp-edged, puffy omelette flavoured with fish sauce, served over steamed rice with chilli sauce.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 8,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 eggs",
+            "1 tbsp fish sauce",
+            "1 tsp lime juice",
+            "1/3 cup vegetable oil",
+            "2 cups cooked jasmine rice",
+            "2 spring onions, sliced",
+            "1 tbsp sweet chilli sauce"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the eggs with the fish sauce and lime juice until frothy.",
+        "Heat the oil in a wok over high heat until it shimmers.",
+        "Pour in the eggs and cook for 1 minute until puffed and golden underneath, then flip and cook for 30 seconds until just set.",
+        "Lift onto the rice and top with spring onions and sweet chilli sauce."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until fully set and refrigerate cooked rice within 1 hour.",
+        "Drain the omelette well on paper towel to remove excess oil."
+      ],
+      "nutrition": {
+        "kcal": 514,
+        "proteinG": 17,
+        "carbsG": 48,
+        "fatG": 28,
+        "fibreG": 1,
+        "sodiumMg": 990
+      }
+    },
+    {
+      "id": "japanese-tamagoyaki-breakfast-plate",
+      "title": "Japanese Tamagoyaki Breakfast Plate",
+      "summary": "A layered sweet-savoury rolled omelette with rice, pickled cucumber and miso soup.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 eggs",
+            "1 tbsp mirin",
+            "1 tbsp soy sauce",
+            "1 tsp sugar",
+            "1 tbsp vegetable oil",
+            "1 cup cooked rice",
+            "1 cucumber, sliced",
+            "1 tbsp rice vinegar",
+            "1 sheet nori, shredded"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the eggs with the mirin, soy sauce and sugar until just combined.",
+        "Oil a small non-stick pan over medium heat and pour in a thin layer of egg, cooking for 1 minute until almost set.",
+        "Roll the egg to one side, oil the pan again, add another layer and roll, repeating until all the egg is used and the omelette is firm.",
+        "Slice into thick rounds and serve with rice, cucumber dressed with the vinegar and shredded nori."
+      ],
+      "notes": [
+        "Food safety: cook the omelette until firm and refrigerate leftover rice within 1 hour.",
+        "Use tamari for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 349,
+        "proteinG": 19,
+        "carbsG": 38,
+        "fatG": 13,
+        "fibreG": 2,
+        "sodiumMg": 820
+      }
+    },
+    {
+      "id": "lebanese-eggs-with-sumac-and-labneh",
+      "title": "Lebanese Eggs with Sumac and Labneh",
+      "summary": "Fried eggs sprinkled with sumac and served on labneh with warm flatbread, tomatoes and mint.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 6,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 eggs",
+            "1/2 cup labneh",
+            "1 tbsp olive oil",
+            "1 tsp sumac",
+            "2 tomatoes, sliced",
+            "2 tbsp mint leaves",
+            "2 flatbreads",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Spread the labneh over two plates.",
+        "Fry the eggs in the oil for 3 minutes until the whites are set and the edges are crisp.",
+        "Slide onto the labneh, sprinkle with sumac and salt and serve with the tomatoes, mint and warm flatbread."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set.",
+        "Use thick plain yoghurt if you cannot find labneh."
+      ],
+      "nutrition": {
+        "kcal": 414,
+        "proteinG": 22,
+        "carbsG": 35,
+        "fatG": 20,
+        "fibreG": 3,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "spanish-huevos-rotos-with-potatoes",
+      "title": "Spanish Huevos Rotos with Potatoes",
+      "summary": "Crisp fried potatoes topped with runny eggs, broken at the table into a pile of golden yolk.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500 g potatoes, thinly sliced",
+            "1/3 cup olive oil",
+            "4 eggs",
+            "2 slices jamon, torn",
+            "1 tsp smoked paprika",
+            "1/2 tsp salt",
+            "2 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the potato slices in the oil in a wide pan for 15 minutes, turning, until golden and tender, then lift out and season with the salt.",
+        "Fry the eggs in the same oil for 3 minutes until the whites are set and the edges are lacy.",
+        "Pile the potatoes on plates, top with the eggs and jamon, dust with paprika and parsley, and break the yolks at the table."
+      ],
+      "notes": [
+        "Food safety: eggs are best cooked until the whites are set, and avoid runny yolks for vulnerable eaters.",
+        "Leave out the jamon for vegetarian."
+      ],
+      "nutrition": {
+        "kcal": 740,
+        "proteinG": 20,
+        "carbsG": 46,
+        "fatG": 52,
+        "fibreG": 4,
+        "sodiumMg": 820
+      }
+    },
+    {
+      "id": "swiss-rosti-with-fried-egg",
+      "title": "Swiss Rosti with Fried Egg",
+      "summary": "Crisp golden grated potato cake topped with a fried egg and chives.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500 g waxy potatoes, boiled and cooled",
+            "2 tbsp butter",
+            "1 tbsp olive oil",
+            "2 eggs",
+            "1/2 tsp salt",
+            "1 tbsp chopped chives"
+          ]
+        }
+      ],
+      "steps": [
+        "Coarsely grate the cooled potatoes and toss with the salt.",
+        "Heat the butter and half the oil in a non-stick pan, pack in the potato and press into a cake.",
+        "Cook over medium heat for 10 minutes until golden underneath, then slide onto a plate, add the remaining oil and flip back to cook for 8 minutes until crisp.",
+        "Fry the eggs in a separate pan for 3 minutes until the whites are set and place on top with the chives."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set.",
+        "Cooking the potatoes the day before gives the best crisp."
+      ],
+      "nutrition": {
+        "kcal": 371,
+        "proteinG": 12,
+        "carbsG": 36,
+        "fatG": 19,
+        "fibreG": 4,
+        "sodiumMg": 540
+      }
+    },
+    {
+      "id": "irish-boxty-with-poached-egg",
+      "title": "Irish Boxty with Poached Egg",
+      "summary": "Griddled potato pancakes with a poached egg and a spoonful of sour cream.",
+      "cuisine": "british",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 large potatoes, peeled",
+            "1 cup cooked mashed potato",
+            "1 cup plain flour",
+            "1/2 cup milk",
+            "1 tsp baking powder",
+            "1/2 tsp salt",
+            "2 tbsp butter",
+            "4 eggs",
+            "1/4 cup sour cream",
+            "1 tbsp chopped chives"
+          ]
+        }
+      ],
+      "steps": [
+        "Grate the raw potatoes and squeeze out the liquid in a clean tea towel until dry.",
+        "Mix with the mashed potato, flour, baking powder, salt and milk until a thick batter forms.",
+        "Cook spoonfuls in the butter in a pan over medium heat for 4 minutes each side until golden and cooked through.",
+        "Poach the eggs for 3 minutes until the whites are set and serve on the boxty with sour cream and chives."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set; avoid runny yolks for vulnerable eaters.",
+        "Not suitable for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 356,
+        "proteinG": 14,
+        "carbsG": 42,
+        "fatG": 14,
+        "fibreG": 3,
+        "sodiumMg": 560
+      }
+    },
+    {
+      "id": "scottish-porridge-with-berries-and-honey",
+      "title": "Scottish Porridge with Berries and Honey",
+      "summary": "Creamy oats simmered in milk and water, with a warm berry compote and a drizzle of honey.",
+      "cuisine": "british",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 12,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup rolled oats",
+            "1 cup milk",
+            "1 cup water",
+            "1 pinch salt",
+            "1 cup mixed berries",
+            "1 tbsp honey",
+            "1 tbsp slivered almonds"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the oats with the milk, water and salt for 8 minutes, stirring, until thick and creamy.",
+        "Warm the berries in a small pan for 3 minutes until they release their juices.",
+        "Spoon the porridge into bowls and top with the berries, honey and almonds."
+      ],
+      "notes": [
+        "Use plant milk for dairy-free.",
+        "Not suitable for gluten-free unless certified oats."
+      ],
+      "nutrition": {
+        "kcal": 334,
+        "proteinG": 12,
+        "carbsG": 50,
+        "fatG": 8,
+        "fibreG": 7,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "orange-and-ricotta-breakfast-toast",
+      "title": "Orange and Ricotta Breakfast Toast",
+      "summary": "Crisp toast with creamy ricotta, orange segments, honey and basil.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "breakfast",
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 8,
+      "cookMinutes": 3,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 slices sourdough",
+            "1/2 cup ricotta",
+            "2 oranges, segmented",
+            "1 tbsp honey",
+            "4 basil leaves, torn",
+            "1 pinch black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the sourdough until golden and crisp.",
+        "Spread each slice thickly with ricotta.",
+        "Arrange the orange segments on top, drizzle with honey and finish with basil and pepper."
+      ],
+      "notes": [
+        "Add a squeeze of lemon if the berries are not very sweet."
+      ],
+      "nutrition": {
+        "kcal": 285,
+        "proteinG": 12,
+        "carbsG": 42,
+        "fatG": 7,
+        "fibreG": 3,
+        "sodiumMg": 430
+      }
+    },
+    {
+      "id": "grilled-mango-yoghurt-breakfast-bowl",
+      "title": "Grilled Mango Yoghurt Breakfast Bowl",
+      "summary": "Caramelised mango cheeks over thick yoghurt with toasted coconut and lime.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 6,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 mangoes, cheeks sliced off",
+            "1 1/2 cups thick plain yoghurt",
+            "2 tbsp shredded coconut",
+            "1 tbsp honey",
+            "1 lime",
+            "1 tbsp pistachios, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Grill the mango cheeks cut side down in a hot dry pan for 3 minutes until charred and caramelised.",
+        "Toast the coconut in a dry pan for 2 minutes until golden.",
+        "Spoon the yoghurt into bowls, top with the mango, coconut, honey and pistachios, and squeeze over the lime."
+      ],
+      "notes": [
+        "Use coconut yoghurt for dairy-free."
+      ],
+      "nutrition": {
+        "kcal": 363,
+        "proteinG": 11,
+        "carbsG": 49,
+        "fatG": 13,
+        "fibreG": 3,
+        "sodiumMg": 110
+      }
+    },
+    {
+      "id": "pineapple-and-coconut-yoghurt-parfait",
+      "title": "Pineapple and Coconut Yoghurt Parfait",
+      "summary": "Layers of coconut yoghurt, roasted pineapple and crunchy oats, ready in minutes.",
+      "cuisine": "pacific-islands",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups coconut yoghurt",
+            "1 cup pineapple chunks",
+            "1/2 cup rolled oats",
+            "1 tbsp maple syrup",
+            "1 tbsp shredded coconut",
+            "1/2 tsp cinnamon"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the oats and coconut with the maple syrup and cinnamon in a dry pan for 5 minutes, stirring, until golden and crunchy.",
+        "Sear the pineapple in a hot pan for 4 minutes until lightly caramelised.",
+        "Layer the yoghurt, pineapple and crunchy oats into two glasses."
+      ],
+      "notes": [
+        "Make the crunchy oats ahead and keep in a jar for 1 week."
+      ],
+      "nutrition": {
+        "kcal": 348,
+        "proteinG": 5,
+        "carbsG": 48,
+        "fatG": 14,
+        "fibreG": 5,
+        "sodiumMg": 40
+      }
+    },
+    {
+      "id": "spiced-pear-and-walnut-porridge",
+      "title": "Spiced Pear and Walnut Porridge",
+      "summary": "Cinnamon oats cooked with grated pear and finished with toasted walnuts and a drizzle of maple.",
+      "cuisine": "american",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup rolled oats",
+            "2 cups milk",
+            "2 pears, one grated and one sliced",
+            "1/2 tsp cinnamon",
+            "1/4 tsp ground ginger",
+            "2 tbsp walnuts, toasted",
+            "1 tbsp maple syrup"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the oats with the milk, grated pear, cinnamon and ginger for 8 minutes, stirring, until thick.",
+        "Toast the walnuts in a dry pan for 2 minutes until fragrant.",
+        "Spoon into bowls and top with the sliced pear, walnuts and maple syrup."
+      ],
+      "notes": [
+        "Use plant milk for dairy-free.",
+        "Not suitable for gluten-free unless certified oats."
+      ],
+      "nutrition": {
+        "kcal": 434,
+        "proteinG": 13,
+        "carbsG": 68,
+        "fatG": 10,
+        "fibreG": 10,
+        "sodiumMg": 100
+      }
+    },
+    {
+      "id": "costa-rican-gallo-pinto-with-fried-egg",
+      "title": "Costa Rican Gallo Pinto with Fried Egg",
+      "summary": "Rice and black beans stir-fried with onion, capsicum and a splash of Worcestershire-style sauce, topped with an egg.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups cooked rice",
+            "1 can black beans, drained",
+            "1 onion, diced",
+            "1 red capsicum, diced",
+            "1 tbsp vegetable oil",
+            "2 tbsp Worcestershire sauce",
+            "1/4 cup chopped coriander",
+            "4 eggs"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion and capsicum in the oil for 5 minutes until soft.",
+        "Add the beans and Worcestershire sauce and cook for 3 minutes until hot.",
+        "Stir in the rice and coriander and cook for 4 minutes until heated through and lightly crisp.",
+        "Fry the eggs for 3 minutes until the whites are set and serve on top."
+      ],
+      "notes": [
+        "Food safety: use rice cooled and refrigerated within 1 hour, and reheat until steaming hot; cook the eggs until the whites are fully set.",
+        "Worcestershire sauce contains anchovies."
+      ],
+      "nutrition": {
+        "kcal": 354,
+        "proteinG": 16,
+        "carbsG": 46,
+        "fatG": 10,
+        "fibreG": 8,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "nigerian-akara-bean-fritters",
+      "title": "Nigerian Akara Bean Fritters",
+      "summary": "Light, crisp black-eyed pea fritters fried until golden, a Lagos breakfast served with pap or bread.",
+      "cuisine": "west-african",
+      "mealTypes": [
+        "breakfast",
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cans black-eyed peas, drained",
+            "1 onion, chopped",
+            "1 red chilli",
+            "1/2 tsp salt",
+            "1/4 cup water",
+            "1 cup vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the peas, onion, chilli, salt and water to a thick, fluffy paste.",
+        "Beat the batter by hand for 2 minutes until it turns light and airy.",
+        "Heat the oil in a deep pan to 180°C and drop in tablespoons of batter, frying for 4 minutes until deep golden and cooked through.",
+        "Drain on paper towel and serve hot."
+      ],
+      "notes": [
+        "Keep the batter thick so the fritters hold together.",
+        "Serve with a tomato and chilli sauce."
+      ],
+      "nutrition": {
+        "kcal": 258,
+        "proteinG": 8,
+        "carbsG": 22,
+        "fatG": 14,
+        "fibreG": 6,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "russian-syrniki-cottage-cheese-pancakes",
+      "title": "Russian Syrniki Cottage Cheese Pancakes",
+      "summary": "Golden pan-fried cottage cheese pancakes served with sour cream and berry jam.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400 g firm cottage cheese",
+            "1 egg",
+            "1/3 cup plain flour",
+            "2 tbsp sugar",
+            "1 tsp vanilla extract",
+            "1/4 tsp salt",
+            "2 tbsp butter",
+            "1/4 cup sour cream",
+            "1/4 cup honey"
+          ]
+        }
+      ],
+      "steps": [
+        "Mash the cottage cheese with the egg, sugar, vanilla and salt, then stir in the flour until a soft dough forms.",
+        "Shape into 8 small discs, dusting your hands with flour.",
+        "Cook in the butter over medium heat for 3 minutes each side until golden and cooked through.",
+        "Serve with sour cream and honey."
+      ],
+      "notes": [
+        "Food safety: cook until the centre is hot and set, as the mix contains raw egg.",
+        "Not suitable for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 323,
+        "proteinG": 19,
+        "carbsG": 32,
+        "fatG": 13,
+        "fibreG": 1,
+        "sodiumMg": 420
+      }
+    },
+    {
+      "id": "swedish-pytt-i-panna-breakfast-hash",
+      "title": "Swedish Pytt i Panna Breakfast Hash",
+      "summary": "Crisp diced potato, sausage and onion fried together and topped with a fried egg and pickled beetroot.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "600 g potatoes, diced",
+            "200 g cooked sausage, diced",
+            "1 onion, diced",
+            "2 tbsp butter",
+            "4 eggs",
+            "1/2 cup pickled beetroot, diced",
+            "2 tbsp chopped parsley",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes for 6 minutes until just tender, then drain and dry.",
+        "Fry the potatoes in the butter in a large pan for 10 minutes until golden and crisp, then add the onion and sausage and cook for 6 minutes until browned.",
+        "Season with the salt and divide among plates.",
+        "Fry the eggs for 3 minutes until the whites are set and serve on top with the beetroot and parsley."
+      ],
+      "notes": [
+        "Food safety: reheat the sausage until steaming hot at 75°C or above and cook the eggs until the whites are fully set.",
+        "Use pre-cooked sausage."
+      ],
+      "nutrition": {
+        "kcal": 440,
+        "proteinG": 20,
+        "carbsG": 34,
+        "fatG": 24,
+        "fibreG": 4,
+        "sodiumMg": 860
+      }
+    },
+    {
+      "id": "ukrainian-kapusniak-cabbage-and-pork-soup",
+      "title": "Ukrainian Kapusniak Cabbage and Pork Soup",
+      "summary": "A hearty soup of cabbage, potatoes, smoked pork and dill.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 55,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300 g smoked pork ribs",
+            "1/2 cabbage, shredded",
+            "3 potatoes, diced",
+            "1 carrot, diced",
+            "1 onion, diced",
+            "1 tbsp tomato paste",
+            "2 tbsp vegetable oil",
+            "6 cups water",
+            "2 bay leaves",
+            "1/4 cup chopped dill",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the pork ribs in the water with the bay leaves for 30 minutes until the meat is tender, then lift out and shred.",
+        "Cook the onion and carrot in the oil with the tomato paste for 6 minutes until soft and stir into the broth.",
+        "Add the potatoes and cabbage and simmer for 15 minutes until tender.",
+        "Return the shredded pork, add the salt and serve with dill."
+      ],
+      "notes": [
+        "Food safety: reheat the pork until steaming hot at 75°C or above and refrigerate leftovers within 2 hours.",
+        "Leave out the pork and use smoked paprika for vegetarian."
+      ],
+      "nutrition": {
+        "kcal": 244,
+        "proteinG": 14,
+        "carbsG": 22,
+        "fatG": 10,
+        "fibreG": 5,
+        "sodiumMg": 580
+      }
+    },
+    {
+      "id": "romanian-ciorba-radauteana-chicken-sour-soup",
+      "title": "Romanian Ciorba Radauteana Chicken Sour Soup",
+      "summary": "A creamy chicken and vegetable soup soured with vinegar and finished with sour cream and garlic.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 50,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600 g chicken thigh fillets",
+            "2 carrots, diced",
+            "1 parsnip-free onion, diced",
+            "1 celery stalk, diced",
+            "1 red capsicum, diced",
+            "6 cups water",
+            "2 egg yolks",
+            "1/2 cup sour cream",
+            "2 tbsp white vinegar",
+            "2 cloves garlic, crushed",
+            "1/4 cup chopped parsley",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the chicken, carrots, onion, celery and capsicum in the water for 30 minutes until the chicken is cooked through, then lift out the chicken and shred it.",
+        "Whisk the egg yolks, sour cream and vinegar in a bowl and whisk in a ladle of hot soup until smooth.",
+        "Stir the mixture into the pot off the heat with the shredded chicken and salt until the soup turns creamy.",
+        "Serve with garlic and parsley."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C and do not boil after adding the yolks; refrigerate leftovers within 2 hours.",
+        "Garlic is traditionally stirred in at the table."
+      ],
+      "nutrition": {
+        "kcal": 250,
+        "proteinG": 24,
+        "carbsG": 10,
+        "fatG": 12,
+        "fibreG": 3,
+        "sodiumMg": 680
+      }
+    },
+    {
+      "id": "bulgarian-bob-chorba-white-bean-soup",
+      "title": "Bulgarian Bob Chorba White Bean Soup",
+      "summary": "A smoky white bean and vegetable soup finished with paprika and dried mint.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 cans cannellini beans, drained",
+            "1 onion, diced",
+            "2 carrots, diced",
+            "1 red capsicum, diced",
+            "2 tomatoes, chopped",
+            "2 tbsp olive oil",
+            "1 tbsp sweet paprika",
+            "1 tsp dried mint",
+            "5 cups vegetable stock",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion, carrots and capsicum in the oil for 8 minutes until soft.",
+        "Stir in the paprika for 30 seconds, then add the tomatoes, beans, stock and salt.",
+        "Simmer for 20 minutes until the vegetables are tender and the soup thickens.",
+        "Stir in the dried mint and serve."
+      ],
+      "notes": [
+        "Mash some of the beans for a creamier soup.",
+        "Keeps 4 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 246,
+        "proteinG": 11,
+        "carbsG": 32,
+        "fatG": 6,
+        "fibreG": 10,
+        "sodiumMg": 680
+      }
+    },
+    {
+      "id": "serbian-pasulj-smoky-bean-soup",
+      "title": "Serbian Pasulj Smoky Bean Soup",
+      "summary": "A thick, smoky soup of white beans, paprika and smoked sausage, a Serbian family staple.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 cans cannellini beans, drained",
+            "200 g smoked sausage, sliced",
+            "1 onion, diced",
+            "2 cloves garlic, crushed",
+            "1 carrot, diced",
+            "2 tbsp olive oil",
+            "1 tbsp sweet paprika",
+            "2 bay leaves",
+            "5 cups water",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the sausage and onion in the oil for 8 minutes until browned and soft.",
+        "Stir in the garlic and paprika, then add the carrot, beans, bay leaves, water and salt.",
+        "Simmer for 25 minutes until the soup is thick and the carrot is tender."
+      ],
+      "notes": [
+        "Food safety: reheat leftover sausage dishes until steaming hot at 75°C or above.",
+        "Leave out the sausage for vegetarian."
+      ],
+      "nutrition": {
+        "kcal": 333,
+        "proteinG": 17,
+        "carbsG": 32,
+        "fatG": 13,
+        "fibreG": 10,
+        "sodiumMg": 880
+      }
+    },
+    {
+      "id": "armenian-spas-yoghurt-and-barley-soup",
+      "title": "Armenian Spas Yoghurt and Barley Soup",
+      "summary": "A warm, tangy yoghurt soup with chewy barley and dried mint.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1/2 cup pearl barley",
+            "4 cups water",
+            "2 cups plain yoghurt",
+            "1 egg",
+            "1 tbsp plain flour",
+            "1 onion, diced",
+            "1 tbsp butter",
+            "1 tbsp dried mint",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the barley in the water for 25 minutes until tender.",
+        "Whisk the yoghurt, egg and flour in a bowl until smooth, then whisk in a ladle of the hot barley liquid.",
+        "Stir the mixture into the pot and simmer gently, stirring constantly, for 5 minutes until slightly thickened.",
+        "Cook the onion in the butter with the mint for 4 minutes until golden and spoon over the soup."
+      ],
+      "notes": [
+        "Food safety: cook the soup until steaming hot and the egg is fully set; do not boil hard or the yoghurt will split.",
+        "Not suitable for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 255,
+        "proteinG": 12,
+        "carbsG": 34,
+        "fatG": 7,
+        "fibreG": 4,
+        "sodiumMg": 430
+      }
+    },
+    {
+      "id": "polish-barszcz-clear-beetroot-soup",
+      "title": "Polish Barszcz Clear Beetroot Soup",
+      "summary": "A ruby-red clear beetroot broth with garlic and marjoram, traditionally served in a cup.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 beetroot, peeled and chopped",
+            "1 carrot, chopped",
+            "1 onion, halved",
+            "6 cups vegetable stock",
+            "2 cloves garlic, crushed",
+            "1 tsp dried marjoram",
+            "2 tbsp lemon juice",
+            "1 tsp sugar",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the beetroot, carrot, onion and stock for 40 minutes until the vegetables are very tender.",
+        "Strain through a fine sieve into a clean pot, pressing lightly.",
+        "Stir in the garlic, marjoram, lemon juice, sugar and salt and warm gently, without boiling, so the colour stays bright."
+      ],
+      "notes": [
+        "Serve with small mushroom dumplings or bread.",
+        "Keeps 4 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 59,
+        "proteinG": 2,
+        "carbsG": 11,
+        "fatG": 0,
+        "fibreG": 2,
+        "sodiumMg": 580
+      }
+    },
+    {
+      "id": "romanian-eggplant-salad-salata-de-vinete",
+      "title": "Romanian Eggplant Salad Salata de Vinete",
+      "summary": "Smoky charred eggplant beaten with oil and onion into a creamy white-pink spread.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 large eggplants",
+            "1 small onion, finely grated",
+            "1/3 cup sunflower oil",
+            "1 tbsp lemon juice",
+            "1/2 tsp salt",
+            "2 tomatoes, sliced",
+            "2 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the eggplants at 230°C for 45 minutes, turning, until the skins blacken and the flesh collapses.",
+        "Peel and drain the flesh in a colander for 15 minutes, then chop finely with a wooden knife.",
+        "Beat the flesh with the oil in a bowl, a little at a time, until pale and creamy.",
+        "Stir in the onion, lemon juice and salt and serve with tomatoes and parsley."
+      ],
+      "notes": [
+        "Use a wooden or plastic knife to keep the colour pale.",
+        "Keeps 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 195,
+        "proteinG": 2,
+        "carbsG": 10,
+        "fatG": 15,
+        "fibreG": 6,
+        "sodiumMg": 200
+      }
+    },
+    {
+      "id": "polish-surowka-carrot-and-apple-salad",
+      "title": "Polish Surowka Carrot and Apple Salad",
+      "summary": "Crunchy grated carrot and apple dressed with lemon, a touch of sugar and sour cream.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 carrots, grated",
+            "2 apples, grated",
+            "2 tbsp lemon juice",
+            "1 tsp sugar",
+            "1/4 cup sour cream",
+            "1 tbsp chopped parsley",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the carrots and apples with the lemon juice straight away to stop browning.",
+        "Stir in the sugar, sour cream and salt until evenly coated.",
+        "Chill briefly and scatter with parsley."
+      ],
+      "notes": [
+        "Serve within a few hours for the best crunch."
+      ],
+      "nutrition": {
+        "kcal": 142,
+        "proteinG": 2,
+        "carbsG": 22,
+        "fatG": 4,
+        "fibreG": 5,
+        "sodiumMg": 170
+      }
+    },
+    {
+      "id": "hungarian-tomato-and-pepper-salad",
+      "title": "Hungarian Tomato and Pepper Salad",
+      "summary": "Ripe tomato and sweet pepper in a simple vinegar and oil dressing with onion, a summer staple.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 ripe tomatoes, sliced",
+            "2 yellow capsicums, sliced",
+            "1 small onion, thinly sliced",
+            "3 tbsp sunflower oil",
+            "1 tbsp white wine vinegar",
+            "1 tsp sugar",
+            "1/2 tsp salt",
+            "2 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Arrange the tomatoes and capsicums on a platter with the onion.",
+        "Whisk the oil, vinegar, sugar and salt together until the sugar dissolves.",
+        "Pour over the salad and scatter with parsley."
+      ],
+      "notes": [
+        "Best made with summer tomatoes."
+      ],
+      "nutrition": {
+        "kcal": 152,
+        "proteinG": 2,
+        "carbsG": 12,
+        "fatG": 10,
+        "fibreG": 3,
+        "sodiumMg": 310
+      }
+    }
+  ]
+}

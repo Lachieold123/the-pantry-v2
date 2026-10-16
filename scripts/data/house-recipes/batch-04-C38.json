@@ -1,0 +1,486 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "garlic-bread-foil-parcels",
+      "title": "Garlic Bread Foil Parcels",
+      "summary": "Crusty bread slathered with garlic parsley butter, wrapped in foil and heated on the barbecue.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 long crusty baguette",
+            "100 g butter, softened",
+            "4 cloves garlic, crushed",
+            "3 tbsp chopped parsley",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Mash the butter with the garlic, parsley and salt.",
+        "Slice the baguette on the diagonal without cutting right through and spread the butter between the slices.",
+        "Wrap tightly in foil and heat on the barbecue for 10 to 12 minutes, turning once, until hot and the butter has melted through.",
+        "Open the foil for the last 2 minutes to crisp the crust."
+      ],
+      "notes": [
+        "Add grated cheddar between the slices for cheesy garlic bread.",
+        "Garlic butter freezes well for 2 months."
+      ],
+      "nutrition": {
+        "kcal": 180,
+        "proteinG": 2,
+        "carbsG": 11,
+        "fatG": 14,
+        "fibreG": 1,
+        "sodiumMg": 430
+      }
+    },
+    {
+      "id": "sticky-barbecue-sweet-potato-wedges",
+      "title": "Sticky Barbecue Sweet Potato Wedges",
+      "summary": "Crisp-edged sweet potato wedges glazed with a smoky, sweet barbecue sauce at the end.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800 g sweet potato, cut into wedges",
+            "2 tbsp olive oil",
+            "1 tsp smoked paprika",
+            "3 tbsp barbecue sauce",
+            "1 tbsp honey",
+            "1 tbsp chopped chives",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C and toss the wedges with the oil, paprika and salt on a tray.",
+        "Roast for 25 minutes, turning once, until the edges are crisp.",
+        "Mix the barbecue sauce and honey, brush over the wedges and roast for 8 to 10 minutes until sticky and caramelised, then scatter with chives."
+      ],
+      "notes": [
+        "Do not crowd the tray, or the wedges steam.",
+        "Serve with sour cream and chives."
+      ],
+      "nutrition": {
+        "kcal": 247,
+        "proteinG": 3,
+        "carbsG": 40,
+        "fatG": 7,
+        "fibreG": 6,
+        "sodiumMg": 320
+      }
+    },
+    {
+      "id": "honey-soy-grilled-mushrooms",
+      "title": "Honey Soy Grilled Mushrooms",
+      "summary": "Meaty field mushrooms basted with honey, soy and garlic and grilled until deeply browned.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 field mushrooms",
+            "2 tbsp soy sauce",
+            "1 tbsp honey",
+            "1 tbsp olive oil",
+            "2 cloves garlic, crushed",
+            "1 tsp grated ginger",
+            "1 tbsp sesame seeds",
+            "2 spring onions, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the soy sauce, honey, oil, garlic and ginger together.",
+        "Brush the mushrooms with the glaze and grill, gill-side up, for 5 minutes.",
+        "Flip, brush again and grill for 5 to 6 minutes until deeply browned and tender.",
+        "Scatter with sesame seeds and spring onions."
+      ],
+      "notes": [
+        "Wipe the mushrooms rather than washing them.",
+        "Serve with steak or in a burger bun."
+      ],
+      "nutrition": {
+        "kcal": 69,
+        "proteinG": 3,
+        "carbsG": 7,
+        "fatG": 3,
+        "fibreG": 2,
+        "sodiumMg": 560
+      }
+    },
+    {
+      "id": "zucchini-and-corn-fritters-for-the-barbecue",
+      "title": "Zucchini and Corn Fritters for the Barbecue",
+      "summary": "Golden pan fritters of grated zucchini and corn, cooked on the barbecue flat plate.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 zucchini, grated",
+            "1 cup corn kernels",
+            "3/4 cup self-raising flour",
+            "2 eggs",
+            "1/4 cup milk",
+            "1/4 cup grated cheddar",
+            "2 tbsp chopped chives",
+            "2 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Squeeze the zucchini in a clean cloth to remove the water.",
+        "Mix the zucchini, corn, flour, eggs, milk, cheddar and chives into a thick batter.",
+        "Heat the oil on a barbecue flat plate or pan and cook spoonfuls for 3 minutes each side until golden and cooked through."
+      ],
+      "notes": [
+        "Food safety: cook the fritters until the centres are firm and no longer wet, especially for pregnant women, older people and young children.",
+        "Serve with sweet chilli sauce and yoghurt."
+      ],
+      "nutrition": {
+        "kcal": 296,
+        "proteinG": 12,
+        "carbsG": 29,
+        "fatG": 14,
+        "fibreG": 3,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "chimichurri-corn-salad",
+      "title": "Chimichurri Corn Salad",
+      "summary": "Sweet grilled corn kernels tossed with a punchy parsley chimichurri, tomato and red onion.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 12,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 corn cobs",
+            "1 cup cherry tomatoes, halved",
+            "1/4 red onion, diced",
+            "1 cup parsley leaves",
+            "2 cloves garlic",
+            "3 tbsp olive oil",
+            "2 tbsp red wine vinegar",
+            "1/2 tsp chilli flakes",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Grill the corn for 10 to 12 minutes, turning, until charred in spots, then cut the kernels from the cobs.",
+        "Blend the parsley, garlic, oil, vinegar, chilli flakes and salt into a loose chimichurri.",
+        "Toss the corn, tomatoes and onion with the chimichurri."
+      ],
+      "notes": [
+        "Serve warm or at room temperature.",
+        "Keeps for 2 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 81,
+        "proteinG": 2,
+        "carbsG": 9,
+        "fatG": 4,
+        "fibreG": 2,
+        "sodiumMg": 100
+      }
+    },
+    {
+      "id": "lemon-garlic-aioli",
+      "title": "Lemon Garlic Aioli",
+      "summary": "A quick garlic mayonnaise with plenty of lemon, perfect with chips, seafood and grilled vegetables.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3/4 cup mayonnaise",
+            "2 cloves garlic, crushed",
+            "1 lemon, zested and juiced",
+            "1 tsp dijon mustard",
+            "1 tbsp olive oil",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Stir the garlic into the mayonnaise with the lemon zest, juice and mustard.",
+        "Whisk in the olive oil until smooth and glossy.",
+        "Rest for 15 minutes so the garlic mellows, then taste for salt."
+      ],
+      "notes": [
+        "Keeps for 5 days in the fridge.",
+        "Use a microplane to crush the garlic so it blends smoothly."
+      ],
+      "nutrition": {
+        "kcal": 179,
+        "proteinG": 0,
+        "carbsG": 2,
+        "fatG": 19,
+        "fibreG": 0,
+        "sodiumMg": 170
+      }
+    },
+    {
+      "id": "sriracha-mayo",
+      "title": "Sriracha Mayo",
+      "summary": "A creamy, medium-hot dipping sauce with lime and a hint of honey, made in two minutes.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1/2 cup mayonnaise",
+            "2 tbsp sriracha",
+            "1 tbsp lime juice",
+            "1 tsp honey",
+            "1 clove garlic, crushed"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the mayonnaise, sriracha, lime juice, honey and garlic until smooth.",
+        "Taste and add more sriracha for extra heat.",
+        "Chill until cold before serving."
+      ],
+      "notes": [
+        "Spread it on burgers or sushi bowls.",
+        "Keeps for 1 week in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 93,
+        "proteinG": 0,
+        "carbsG": 3,
+        "fatG": 9,
+        "fibreG": 0,
+        "sodiumMg": 170
+      }
+    },
+    {
+      "id": "gochujang-mayo-dip",
+      "title": "Gochujang Mayo Dip",
+      "summary": "A sweet, spicy and savoury Korean-inspired dip for fries, dumplings and fried chicken.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1/2 cup mayonnaise",
+            "2 tbsp gochujang",
+            "1 tbsp rice vinegar",
+            "1 tsp sesame oil",
+            "1 tsp honey",
+            "1 tsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Measure the mayonnaise, gochujang, vinegar, sesame oil and honey into a bowl.",
+        "Whisk until completely smooth, then stir in the sesame seeds.",
+        "Chill the dip until cold and thick before serving."
+      ],
+      "notes": [
+        "Thin with a splash of water for a drizzle.",
+        "Keeps for 5 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 97,
+        "proteinG": 0,
+        "carbsG": 4,
+        "fatG": 9,
+        "fibreG": 0,
+        "sodiumMg": 190
+      }
+    },
+    {
+      "id": "minted-yoghurt-sauce",
+      "title": "Minted Yoghurt Sauce",
+      "summary": "A cooling mint and cucumber yoghurt sauce for grilled lamb, kebabs and spicy curries.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup plain yoghurt",
+            "1/2 cucumber, grated",
+            "1/4 cup chopped mint",
+            "1 clove garlic, crushed",
+            "1 tbsp lemon juice",
+            "1/2 tsp ground cumin",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Squeeze the grated cucumber to remove the extra water.",
+        "Stir the yoghurt, cucumber, mint, garlic, lemon juice, cumin and salt together.",
+        "Chill for 15 minutes until cold and the flavours have blended."
+      ],
+      "notes": [
+        "Keeps for 3 days in the fridge.",
+        "Use as a dip with warm flatbread."
+      ],
+      "nutrition": {
+        "kcal": 48,
+        "proteinG": 3,
+        "carbsG": 4,
+        "fatG": 2,
+        "fibreG": 1,
+        "sodiumMg": 100
+      }
+    },
+    {
+      "id": "horseradish-cream",
+      "title": "Horseradish Cream",
+      "summary": "A sharp, creamy sauce for roast beef, smoked salmon and ham, made with just five ingredients.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1/2 cup sour cream",
+            "3 tbsp horseradish",
+            "1 tsp dijon mustard",
+            "1 tsp lemon juice",
+            "1 tbsp chopped chives"
+          ]
+        }
+      ],
+      "steps": [
+        "Stir the sour cream, horseradish, mustard and lemon juice together in a bowl.",
+        "Fold in the chives and chill until cold.",
+        "Taste and add more horseradish for a stronger bite."
+      ],
+      "notes": [
+        "Keeps for 4 days in the fridge.",
+        "Add a pinch of sugar if the horseradish is very sharp."
+      ],
+      "nutrition": {
+        "kcal": 57,
+        "proteinG": 1,
+        "carbsG": 2,
+        "fatG": 5,
+        "fibreG": 0,
+        "sodiumMg": 100
+      }
+    }
+  ]
+}

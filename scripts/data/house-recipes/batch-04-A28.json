@@ -1,0 +1,1262 @@
+{
+ "about": "House recipes, batch 04 (helper sA): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+ "recipes": [
+  {
+   "id": "pollo-in-potacchio-marche-chicken-with-rosemary-wine-and-tomato",
+   "title": "Pollo in Potacchio (Marche Chicken with Rosemary, Wine and Tomato)",
+   "summary": "A Marche braise of chicken pieces with rosemary, garlic, white wine and tomato, simple and fragrant.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 45,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 chicken drumstick",
+      "2 tbsp olive oil",
+      "4 clove garlic, sliced",
+      "2 sprig rosemary",
+      "1 cup white wine",
+      "400g canned diced tomatoes",
+      "500g potato, cut into chunks"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the drumsticks in the oil in a wide pan for 10 minutes. Add the garlic and rosemary for 1 minute.",
+    "Pour in the wine and let it bubble for 3 minutes, then add the tomatoes, potato and 1 tsp salt.",
+    "Cover and simmer for 30 minutes, until the chicken reaches 75°C and the sauce is thick."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part with no pink juices. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 438,
+    "proteinG": 34,
+    "carbsG": 26,
+    "fatG": 22,
+    "fibreG": 4,
+    "sodiumMg": 650
+   }
+  },
+  {
+   "id": "pasta-alla-norma-sicilian-eggplant-and-ricotta-pasta",
+   "title": "Pasta alla Norma (Sicilian Eggplant and Ricotta Pasta)",
+   "summary": "Fried eggplant in tomato and basil sauce over pasta, finished with baked ricotta salata-style cheese.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 eggplant, cubed",
+      "1/4 cup olive oil",
+      "2 clove garlic, crushed",
+      "400g canned diced tomatoes",
+      "1/2 cup basil leaves",
+      "350g pasta",
+      "1/2 cup ricotta"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the eggplant in the oil in two batches for 8 minutes each, until golden and soft. Add the garlic for 1 minute.",
+    "Add the tomatoes and 1/2 tsp salt and simmer for 12 minutes, until thick.",
+    "Cook the pasta in salted water for 10 minutes, until al dente, drain and toss with the sauce and basil. Dollop with ricotta."
+   ],
+   "notes": [
+    "Vegetarian. Contains gluten and milk."
+   ],
+   "nutrition": {
+    "kcal": 566,
+    "proteinG": 16,
+    "carbsG": 76,
+    "fatG": 22,
+    "fibreG": 9,
+    "sodiumMg": 600
+   }
+  },
+  {
+   "id": "parmigiana-di-zucchine-baked-zucchini-with-tomato-and-cheese",
+   "title": "Parmigiana di Zucchine (Baked Zucchini with Tomato and Cheese)",
+   "summary": "Layers of roasted zucchini, tomato sauce and cheese baked until bubbling, a lighter take on parmigiana.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 25,
+   "cookMinutes": 45,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1kg zucchini, sliced lengthwise",
+      "2 tbsp olive oil",
+      "400g tomato passata",
+      "2 clove garlic, crushed",
+      "1/2 cup basil leaves",
+      "1 cup grated vegetarian hard cheese",
+      "200g fresh mozzarella, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Toss the zucchini with the oil and 1/2 tsp salt and roast on trays for 20 minutes, until soft and golden.",
+    "Warm the passata with the garlic and 1/4 tsp salt for 5 minutes.",
+    "Layer sauce, zucchini, basil and hard cheese in a baking dish, finishing with mozzarella. Bake for 25 minutes, until golden and bubbling."
+   ],
+   "notes": [
+    "Vegetarian. Contains milk. Fresh mozzarella is made with microbial rennet in many brands; check the label."
+   ],
+   "nutrition": {
+    "kcal": 377,
+    "proteinG": 22,
+    "carbsG": 16,
+    "fatG": 25,
+    "fibreG": 5,
+    "sodiumMg": 750
+   }
+  },
+  {
+   "id": "torta-pasqualina-ligurian-spinach-and-ricotta-pie-with-baked-eggs",
+   "title": "Torta Pasqualina (Ligurian Spinach and Ricotta Pie with Baked Eggs)",
+   "summary": "A Ligurian pie of spinach and ricotta in crisp filo with whole eggs baked inside.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 35,
+   "cookMinutes": 50,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g spinach leaves",
+      "1 cup ricotta",
+      "1/2 cup grated vegetarian hard cheese",
+      "1/4 cup chopped marjoram",
+      "6 egg",
+      "12 sheet filo pastry",
+      "60g butter, melted"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 190°C (170°C fan). Wilt the spinach in a pan for 4 minutes, squeeze dry and chop. Mix with the ricotta, hard cheese, marjoram and 1/2 tsp salt.",
+    "Layer half the filo, brushing each sheet with butter, in a 24cm tin. Spread in the filling, make 5 wells and crack an egg into each.",
+    "Top with the remaining filo, brushing with butter. Bake for 40 minutes, until golden and the eggs are set."
+   ],
+   "notes": [
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Vegetarian. Contains egg, milk and gluten."
+   ],
+   "nutrition": {
+    "kcal": 366,
+    "proteinG": 18,
+    "carbsG": 24,
+    "fatG": 22,
+    "fibreG": 3,
+    "sodiumMg": 550
+   }
+  },
+  {
+   "id": "polenta-e-funghi-soft-polenta-with-garlic-mushrooms",
+   "title": "Polenta e Funghi (Soft Polenta with Garlic Mushrooms)",
+   "summary": "Creamy polenta with garlic and thyme mushrooms and shaved cheese, a vegetarian northern Italian dinner.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.5 cup polenta",
+      "600g mixed mushrooms, sliced",
+      "2 tbsp olive oil",
+      "3 clove garlic, sliced",
+      "1 tbsp thyme",
+      "30g butter",
+      "1/2 cup grated vegetarian hard cheese",
+      "1/4 cup chopped parsley"
+     ]
+    }
+   ],
+   "steps": [
+    "Whisk the polenta into 6 cups of simmering salted water. Cook on low for 25 minutes, stirring often, until thick and creamy.",
+    "Cook the mushrooms in the oil in a hot pan for 8 minutes, until browned. Add the garlic and thyme for 1 minute.",
+    "Stir the butter and cheese into the polenta, top with mushrooms and parsley."
+   ],
+   "notes": [
+    "Vegetarian. Contains milk. Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 426,
+    "proteinG": 14,
+    "carbsG": 52,
+    "fatG": 18,
+    "fibreG": 6,
+    "sodiumMg": 500
+   }
+  },
+  {
+   "id": "lentil-bolognese-with-spaghetti-vegan",
+   "title": "Lentil Bolognese with Spaghetti (Vegan)",
+   "summary": "A rich lentil and tomato ragu with carrot, celery and red wine, spooned over spaghetti.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup brown lentil",
+      "1 tbsp olive oil",
+      "1 brown onion, diced",
+      "2 carrot, diced",
+      "2 stick celery, diced",
+      "3 clove garlic, crushed",
+      "2 tbsp tomato paste",
+      "1/2 cup red wine",
+      "400g canned diced tomatoes",
+      "350g spaghetti"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the onion, carrot, celery and garlic in the oil for 8 minutes. Stir in the tomato paste for 1 minute, then the wine.",
+    "Add the lentils, tomatoes and 2 cups water. Simmer for 30 minutes, until the lentils are tender and the sauce thick.",
+    "Cook the spaghetti in salted water for 10 minutes, drain and serve with the ragu."
+   ],
+   "notes": [
+    "Vegan."
+   ],
+   "nutrition": {
+    "kcal": 534,
+    "proteinG": 20,
+    "carbsG": 100,
+    "fatG": 6,
+    "fibreG": 16,
+    "sodiumMg": 500
+   }
+  },
+  {
+   "id": "chicken-marengo-napoleonic-chicken-with-tomato-mushrooms-and-wine",
+   "title": "Chicken Marengo (Napoleonic Chicken with Tomato, Mushrooms and Wine)",
+   "summary": "A French and Italian classic of chicken braised with tomato, mushrooms and white wine.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 45,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 chicken thigh cutlet",
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "200g button mushroom, halved",
+      "2 clove garlic, crushed",
+      "1 cup white wine",
+      "400g canned diced tomatoes",
+      "1/4 cup chopped parsley"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the chicken in the oil for 8 minutes a side, skin down first. Lift out.",
+    "Cook the onion and mushrooms in the same pan for 6 minutes. Add the garlic, wine and tomatoes and simmer for 5 minutes.",
+    "Return the chicken, cover and simmer for 25 minutes, until it reaches 75°C. Scatter with parsley."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part with no pink juices. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 682,
+    "proteinG": 57,
+    "carbsG": 14,
+    "fatG": 44,
+    "fibreG": 1,
+    "sodiumMg": 550
+   }
+  },
+  {
+   "id": "flamiche-picardy-leek-and-cream-tart",
+   "title": "Flamiche (Picardy Leek and Cream Tart)",
+   "summary": "A savoury Picardy tart of soft leek, cream and egg in a buttery crust, served with a green salad.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 35,
+   "cookMinutes": 45,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 cup plain flour",
+      "120g butter, cold and diced",
+      "4 leek, sliced",
+      "2 egg",
+      "1 cup thickened cream",
+      "1/2 cup grated vegetarian hard cheese",
+      "1 tsp nutmeg"
+     ]
+    }
+   ],
+   "steps": [
+    "Rub 100g butter into the flour with 1/2 tsp salt and add about 1/3 cup cold water to form a dough. Roll to fit a 24cm tart tin and press in.",
+    "Heat the oven to 190°C (170°C fan). Cook the leek in the remaining butter for 12 minutes, until soft. Blind bake the case 15 minutes.",
+    "Whisk the eggs, cream, cheese, nutmeg and 1/2 tsp salt. Fill the case with leek, pour over the custard and bake 30 minutes, until just set and golden."
+   ],
+   "notes": [
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Vegetarian. Contains egg, milk and gluten."
+   ],
+   "nutrition": {
+    "kcal": 458,
+    "proteinG": 12,
+    "carbsG": 26,
+    "fatG": 34,
+    "fibreG": 3,
+    "sodiumMg": 450
+   }
+  },
+  {
+   "id": "pimientos-rellenos-spanish-stuffed-capsicums-in-tomato-sauce",
+   "title": "Pimientos Rellenos (Spanish Stuffed Capsicums in Tomato Sauce)",
+   "summary": "Capsicums stuffed with beef, rice and onion and baked in a smoky tomato sauce.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 25,
+   "cookMinutes": 55,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 red capsicum",
+      "300g beef mince",
+      "1/2 cup cooked rice",
+      "1 brown onion, diced",
+      "2 clove garlic, crushed",
+      "1 tsp smoked paprika",
+      "400g tomato passata",
+      "1 tbsp olive oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 190°C (170°C fan). Cut the tops off the capsicums and remove the seeds.",
+    "Cook the onion and garlic in the oil for 5 minutes, then mix with the mince, rice, paprika and 1/2 tsp salt. Fill the capsicums.",
+    "Stand in a dish with the passata and 1/2 cup water. Cover and bake for 45 minutes, until the filling reaches 75°C and the capsicums are soft."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 378,
+    "proteinG": 26,
+    "carbsG": 28,
+    "fatG": 18,
+    "fibreG": 5,
+    "sodiumMg": 450
+   }
+  },
+  {
+   "id": "patatas-a-la-riojana-spanish-potato-and-chorizo-stew",
+   "title": "Patatas a la Riojana (Spanish Potato and Chorizo Stew)",
+   "summary": "A Riojan peasant stew of potato and chorizo in a smoky paprika broth.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "200g chorizo, sliced",
+      "1 brown onion, diced",
+      "1 green capsicum, diced",
+      "3 clove garlic, crushed",
+      "1kg potato, peeled and torn into chunks",
+      "2 tsp smoked paprika",
+      "2 bay leaf",
+      "1L chicken stock"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the chorizo in a pot for 5 minutes. Add the onion, capsicum and garlic and cook for 6 minutes.",
+    "Stir in the paprika and potato, then the stock and bay leaves. Simmer for 25 minutes, until the potato is tender and the broth thickened by its starch.",
+    "Season with salt and serve."
+   ],
+   "notes": [
+    "Food safety: sausage and cured meats must be steaming hot, reaching at least 75°C. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 478,
+    "proteinG": 20,
+    "carbsG": 50,
+    "fatG": 22,
+    "fibreG": 6,
+    "sodiumMg": 1100
+   }
+  },
+  {
+   "id": "garbanzos-con-espinacas-andalusian-chickpeas-with-spinach-and-cumin",
+   "title": "Garbanzos con Espinacas (Andalusian Chickpeas with Spinach and Cumin)",
+   "summary": "A Seville tapas classic made a full dinner: chickpeas and spinach in a garlicky cumin and paprika sauce.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 x 400g canned chickpea, drained",
+      "1/4 cup olive oil",
+      "4 clove garlic, sliced",
+      "2 slice bread, cubed",
+      "2 tsp ground cumin",
+      "1 tsp smoked paprika",
+      "1 tbsp sherry vinegar",
+      "400g spinach leaves"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the bread and garlic in the oil for 3 minutes, until golden. Blitz with the cumin, paprika, vinegar and 1/2 cup water to a paste.",
+    "Heat the paste in a pan, add the chickpeas and 1/2 cup water and simmer for 8 minutes, until thick.",
+    "Stir in the spinach for 3 minutes, until wilted. Season with salt."
+   ],
+   "notes": [
+    "Vegan. Contains gluten."
+   ],
+   "nutrition": {
+    "kcal": 330,
+    "proteinG": 11,
+    "carbsG": 32,
+    "fatG": 16,
+    "fibreG": 7,
+    "sodiumMg": 600
+   }
+  },
+  {
+   "id": "arroz-con-costillas-spanish-rice-with-pork-ribs-and-paprika",
+   "title": "Arroz con Costillas (Spanish Rice with Pork Ribs and Paprika)",
+   "summary": "Pork rib pieces simmered with rice, tomato and smoked paprika, a hearty Spanish one-pan dinner.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 60,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g pork ribs, cut into pieces",
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "1 red capsicum, diced",
+      "3 clove garlic, crushed",
+      "2 tsp smoked paprika",
+      "1 tomato, grated",
+      "1.5 cup paella rice",
+      "3 cup chicken stock"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the ribs in the oil for 10 minutes. Lift out. Cook the onion and capsicum for 6 minutes with the garlic, paprika and tomato.",
+    "Return the ribs, add the stock and simmer, covered, for 30 minutes, until nearly tender.",
+    "Stir in the rice, season with salt and simmer uncovered for 18 minutes, until the rice is tender and the pork cooked through. Rest for 5 minutes."
+   ],
+   "notes": [
+    "Food safety: pork must reach at least 70°C in the centre, with clear juices, and rest before serving. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 674,
+    "proteinG": 36,
+    "carbsG": 56,
+    "fatG": 34,
+    "fibreG": 3,
+    "sodiumMg": 600
+   }
+  },
+  {
+   "id": "soupa-avgolemono-greek-chicken-rice-and-lemon-soup",
+   "title": "Soupa Avgolemono (Greek Chicken, Rice and Lemon Soup)",
+   "summary": "A silky Greek soup of chicken and rice thickened with egg and lemon.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g chicken breast fillet",
+      "1.5L chicken stock",
+      "1 carrot, diced",
+      "1/2 cup white rice",
+      "3 egg",
+      "2 lemon, juiced",
+      "1/4 cup chopped dill"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the chicken, stock and carrot for 15 minutes, until the chicken reaches 75°C. Lift out and shred.",
+    "Add the rice and cook for 12 minutes, until tender.",
+    "Whisk the eggs with the lemon juice and a ladle of hot broth, then stir back into the pot off the heat with the chicken and dill. Warm gently without boiling."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part with no pink juices. Refrigerate leftovers within an hour and reheat until steaming hot. Cook the egg and lemon mixture gently until thickened; do not eat raw egg.",
+    "Contains egg. Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 330,
+    "proteinG": 34,
+    "carbsG": 26,
+    "fatG": 10,
+    "fibreG": 2,
+    "sodiumMg": 850
+   }
+  },
+  {
+   "id": "hortopita-greek-wild-greens-and-feta-pie",
+   "title": "Hortopita (Greek Wild Greens and Feta Pie)",
+   "summary": "A Greek filo pie packed with greens, herbs and feta, crisp outside and lush inside.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 35,
+   "cookMinutes": 50,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g spinach leaves",
+      "2 leek, sliced",
+      "1 bunch spring onion, sliced",
+      "1/2 cup chopped dill",
+      "200g feta",
+      "2 egg",
+      "1/4 cup olive oil",
+      "10 sheet filo pastry"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 180°C (160°C fan). Cook the leek and spring onion in 1 tbsp oil for 6 minutes. Wilt the spinach for 4 minutes, squeeze dry and chop.",
+    "Mix the greens with the dill, crumbled feta, eggs and pepper.",
+    "Layer half the filo in a 24cm tin, brushing each sheet with oil. Add the filling, then top with the remaining filo, brushing again. Bake for 40 minutes, until deep golden."
+   ],
+   "notes": [
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Vegetarian. Contains egg, milk and gluten."
+   ],
+   "nutrition": {
+    "kcal": 332,
+    "proteinG": 14,
+    "carbsG": 24,
+    "fatG": 20,
+    "fibreG": 4,
+    "sodiumMg": 700
+   }
+  },
+  {
+   "id": "khoresh-bademjan-persian-lamb-and-eggplant-stew",
+   "title": "Khoresh Bademjan (Persian Lamb and Eggplant Stew)",
+   "summary": "A tangy Persian lamb stew with fried eggplant, tomato and dried lime flavours.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 100,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g lamb shoulder, diced",
+      "2 eggplant, sliced",
+      "3 tbsp vegetable oil",
+      "2 brown onion, sliced",
+      "1 tsp turmeric",
+      "400g canned diced tomatoes",
+      "2 tbsp tomato paste",
+      "1 lemon, juiced",
+      "1 cup basmati rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the eggplant in 2 tbsp oil in batches for 10 minutes, until golden. Set aside.",
+    "Brown the lamb and onion in the remaining oil for 10 minutes. Stir in the turmeric, tomato paste, tomatoes, lemon juice and 1.5 cups water. Simmer, covered, for 1 hour 15 minutes, until tender.",
+    "Lay the eggplant on top and simmer 15 minutes. Cook the rice in salted water for 12 minutes and serve."
+   ],
+   "notes": [
+    "Food safety: lamb pieces are safe once they reach at least 70°C and are tender. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 594,
+    "proteinG": 34,
+    "carbsG": 56,
+    "fatG": 26,
+    "fibreG": 6,
+    "sodiumMg": 550
+   }
+  },
+  {
+   "id": "abgoosht-persian-lamb-and-chickpea-stew",
+   "title": "Abgoosht (Persian Lamb and Chickpea Stew)",
+   "summary": "A Persian lamb, chickpea and potato stew eaten as a broth with bread then a mash of the solids.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 150,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g lamb shoulder, in large pieces",
+      "1 brown onion, diced",
+      "1 cup dried chickpea, soaked overnight",
+      "2 tbsp tomato paste",
+      "1 tsp turmeric",
+      "500g potato, halved",
+      "1 lemon, juiced"
+     ]
+    }
+   ],
+   "steps": [
+    "Put the lamb, onion, chickpeas, tomato paste, turmeric and 1 tsp salt in a pot with 1.2L water. Bring to a boil, until scum rises, and skim.",
+    "Simmer, covered, for 1 hour 30 minutes, until the chickpeas and lamb are tender. Add the potato and cook for 30 minutes more.",
+    "Stir in the lemon juice. Serve the broth with bread, and mash the solids to eat alongside."
+   ],
+   "notes": [
+    "Food safety: lamb pieces are safe once they reach at least 70°C and are tender. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free. Soaking is not counted in prep."
+   ],
+   "nutrition": {
+    "kcal": 558,
+    "proteinG": 40,
+    "carbsG": 50,
+    "fatG": 22,
+    "fibreG": 12,
+    "sodiumMg": 650
+   }
+  },
+  {
+   "id": "koobideh-persian-minced-lamb-and-beef-kebabs-with-saffron-rice",
+   "title": "Koobideh (Persian Minced Lamb and Beef Kebabs with Saffron Rice)",
+   "summary": "Flat skewers of spiced minced lamb and beef, grilled and served over saffron rice with grilled tomato.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g lamb mince",
+      "300g beef mince",
+      "1 brown onion, grated and squeezed dry",
+      "1 tsp ground sumac",
+      "1 tsp salt",
+      "1.5 cup basmati rice",
+      "1/4 tsp saffron",
+      "2 tomato, halved",
+      "30g butter"
+     ]
+    }
+   ],
+   "steps": [
+    "Knead the minces, onion, sumac and salt for 5 minutes until sticky. Mould around flat skewers.",
+    "Cook the rice in salted water for 12 minutes, drain and stir through the saffron steeped in 2 tbsp hot water and the butter.",
+    "Grill the kebabs and tomato halves on high for 10 minutes, turning, until the kebabs reach 75°C and are browned."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains milk."
+   ],
+   "nutrition": {
+    "kcal": 676,
+    "proteinG": 36,
+    "carbsG": 70,
+    "fatG": 28,
+    "fibreG": 3,
+    "sodiumMg": 550
+   }
+  },
+  {
+   "id": "hunter-s-chicken-bacon-and-cheese-barbecue-chicken-bake",
+   "title": "Hunter's Chicken (Bacon and Cheese Barbecue Chicken Bake)",
+   "summary": "Chicken breast wrapped in bacon, brushed with a smoky barbecue glaze and baked under melted cheese.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 chicken breast fillet",
+      "4 rasher bacon",
+      "1/2 cup barbecue sauce",
+      "1 cup grated vegetarian hard cheese",
+      "600g potato, cut into wedges",
+      "2 tbsp olive oil",
+      "2 cup green beans"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Toss the potato with the oil and 1/2 tsp salt and roast for 35 minutes.",
+    "Wrap each breast in a rasher of bacon and place in a dish. Brush with half the sauce and bake for 20 minutes.",
+    "Add the remaining sauce and cheese and bake for 8 minutes, until the chicken reaches 75°C and the cheese is bubbling. Steam the beans for 5 minutes and serve."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part with no pink juices. Refrigerate leftovers within an hour and reheat until steaming hot. Bacon must be fully cooked.",
+    "Contains milk."
+   ],
+   "nutrition": {
+    "kcal": 586,
+    "proteinG": 52,
+    "carbsG": 36,
+    "fatG": 26,
+    "fibreG": 5,
+    "sodiumMg": 1000
+   }
+  },
+  {
+   "id": "mushroom-and-spinach-wellington",
+   "title": "Mushroom and Spinach Wellington",
+   "summary": "A golden puff pastry Wellington packed with roasted mushrooms, spinach and herbs, a vegetarian roast for entertaining.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 35,
+   "cookMinutes": 45,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g mixed mushrooms, chopped fine",
+      "2 tbsp olive oil",
+      "2 clove garlic, crushed",
+      "1 tbsp thyme",
+      "200g spinach leaves",
+      "1/2 cup breadcrumbs",
+      "2 sheet puff pastry",
+      "1 egg, beaten"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Cook the mushrooms in the oil for 12 minutes, until all the liquid has evaporated. Add the garlic, thyme and spinach for 3 minutes. Stir in the breadcrumbs and 1/2 tsp salt. Cool.",
+    "Overlap the pastry sheets, pile the filling in a log, fold the pastry over and seal. Place seam-down on a tray and brush with the egg.",
+    "Bake for 35 minutes, until deep golden and puffed."
+   ],
+   "notes": [
+    "Vegetarian if puff pastry is. Contains egg and gluten."
+   ],
+   "nutrition": {
+    "kcal": 360,
+    "proteinG": 7,
+    "carbsG": 37,
+    "fatG": 20,
+    "fibreG": 2,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "semmelknodel-with-creamy-mushroom-sauce",
+   "title": "Semmelknodel with Creamy Mushroom Sauce",
+   "summary": "Bavarian bread dumplings with a creamy mushroom and parsley sauce, a vegetarian dinner.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g stale bread, cubed",
+      "1 cup warm milk",
+      "2 egg",
+      "1 brown onion, diced",
+      "30g butter",
+      "1/4 cup chopped parsley",
+      "400g mixed mushrooms, sliced",
+      "1 cup thickened cream"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the onion in half the butter for 5 minutes. Mix with the bread, milk, eggs, parsley and 1 tsp salt and rest for 15 minutes. Shape into 8 balls.",
+    "Simmer the dumplings in salted water for 20 minutes, until firm and cooked through.",
+    "Cook the mushrooms in the remaining butter for 8 minutes, add the cream and simmer for 5 minutes. Serve over the dumplings."
+   ],
+   "notes": [
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Vegetarian. Contains egg, milk and gluten."
+   ],
+   "nutrition": {
+    "kcal": 578,
+    "proteinG": 18,
+    "carbsG": 50,
+    "fatG": 34,
+    "fibreG": 4,
+    "sodiumMg": 800
+   }
+  },
+  {
+   "id": "toltott-paprika-hungarian-stuffed-peppers-in-tomato-sauce",
+   "title": "Toltott Paprika (Hungarian Stuffed Peppers in Tomato Sauce)",
+   "summary": "Peppers stuffed with pork and rice and simmered in a sweet tomato sauce with paprika, served with sour cream.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 60,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 green capsicum",
+      "400g pork mince",
+      "1/2 cup rice",
+      "1 brown onion, diced",
+      "2 tsp sweet paprika",
+      "1 egg",
+      "500g tomato passata",
+      "1/2 cup sour cream"
+     ]
+    }
+   ],
+   "steps": [
+    "Cut the tops from the capsicums and remove the seeds. Mix the pork, rice, onion, half the paprika, egg and 1 tsp salt and fill the capsicums.",
+    "Stand them in a pot, pour in the passata, 1 cup water and the remaining paprika. Cover and simmer for 55 minutes, until the filling reaches 75°C and the rice is tender.",
+    "Serve with the sauce and a spoon of sour cream."
+   ],
+   "notes": [
+    "Food safety: pork must reach at least 70°C in the centre, with clear juices, and rest before serving. Refrigerate leftovers within an hour and reheat until steaming hot. Mince must be cooked through.",
+    "Contains egg and milk."
+   ],
+   "nutrition": {
+    "kcal": 448,
+    "proteinG": 26,
+    "carbsG": 32,
+    "fatG": 24,
+    "fibreG": 5,
+    "sodiumMg": 650
+   }
+  },
+  {
+   "id": "biff-rydberg-swedish-beef-potato-and-onion-hash-with-egg-yolk",
+   "title": "Biff Rydberg (Swedish Beef, Potato and Onion Hash with Egg Yolk)",
+   "summary": "Swedish diced beef and potato fried crisp with onion, topped with a fried egg and pickles.",
+   "cuisine": "scandinavian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g beef sirloin steak, diced",
+      "600g potato, diced",
+      "1 brown onion, diced",
+      "30g butter",
+      "1 tbsp vegetable oil",
+      "4 egg",
+      "1 tbsp wholegrain mustard",
+      "4 pickled onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the potato for 5 minutes, drain and dry. Fry in the oil in a wide pan for 10 minutes, until crisp.",
+    "Add the butter, onion and beef and cook for 6 minutes, until the beef is browned and reaches 70°C. Add the mustard and 1/2 tsp salt.",
+    "Fry the eggs for 3 minutes, until the whites are set. Top each plate with an egg and pickles."
+   ],
+   "notes": [
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot. Beef pieces must be cooked through.",
+    "Contains egg and milk."
+   ],
+   "nutrition": {
+    "kcal": 506,
+    "proteinG": 34,
+    "carbsG": 34,
+    "fatG": 26,
+    "fibreG": 3,
+    "sodiumMg": 550
+   }
+  },
+  {
+   "id": "boller-i-karry-norwegian-meatballs-in-mild-curry-sauce",
+   "title": "Boller i Karry (Norwegian Meatballs in Mild Curry Sauce)",
+   "summary": "Pork and beef meatballs in a mild creamy curry sauce, a Norwegian family classic served with rice.",
+   "cuisine": "scandinavian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "300g beef mince",
+      "300g pork mince",
+      "1/2 cup breadcrumbs",
+      "1/2 cup milk",
+      "1 egg",
+      "1 brown onion, diced",
+      "30g butter",
+      "2 tbsp plain flour",
+      "1 tbsp curry powder",
+      "2 cup chicken stock",
+      "1.5 cup white rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the minces, breadcrumbs, milk, egg, 1/2 the onion and 1 tsp salt and roll into 24 balls. Brown in half the butter for 8 minutes.",
+    "Melt the remaining butter, cook the remaining onion for 4 minutes, stir in the flour and curry powder, then whisk in the stock. Add the meatballs and simmer for 12 minutes, until the sauce is thick and the meatballs reach 75°C.",
+    "Cook the rice in salted water for 12 minutes and serve."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains milk, egg and gluten."
+   ],
+   "nutrition": {
+    "kcal": 592,
+    "proteinG": 32,
+    "carbsG": 62,
+    "fatG": 24,
+    "fibreG": 3,
+    "sodiumMg": 700
+   }
+  },
+  {
+   "id": "kalamojakka-finnish-salmon-and-potato-soup-with-dill-and-cream",
+   "title": "Kalamojakka (Finnish Salmon and Potato Soup with Dill and Cream)",
+   "summary": "A gentle Finnish salmon and potato soup with leek, allspice and dill.",
+   "cuisine": "scandinavian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "pescatarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g salmon fillet, cubed",
+      "600g potato, diced",
+      "1 leek, sliced",
+      "1 brown onion, diced",
+      "1L fish stock",
+      "6 allspice berry",
+      "1 cup thickened cream",
+      "1/4 cup chopped dill"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the potato, leek, onion, allspice and stock for 15 minutes, until the potato is tender.",
+    "Add the salmon and simmer for 5 minutes, until opaque and flaking.",
+    "Stir in the cream and dill, season with salt and pepper and warm through without boiling."
+   ],
+   "notes": [
+    "Food safety: fish is cooked when it turns opaque and flakes easily. Eat the same day or refrigerate within an hour and use within 24 hours. Contains fish and milk.",
+    "Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 502,
+    "proteinG": 30,
+    "carbsG": 28,
+    "fatG": 30,
+    "fibreG": 3,
+    "sodiumMg": 750
+   }
+  },
+  {
+   "id": "boston-baked-beans-with-smoked-sausage",
+   "title": "Boston Baked Beans with Smoked Sausage",
+   "summary": "Slow-baked white beans in molasses and tomato with smoked sausage, an American pulses dinner served with bread.",
+   "cuisine": "american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 150,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 x 400g canned cannellini bean, drained",
+      "200g smoked sausage, sliced",
+      "1 brown onion, diced",
+      "1/4 cup molasses",
+      "2 tbsp tomato paste",
+      "1 tbsp dijon mustard",
+      "1 tbsp apple cider vinegar",
+      "1 cup chicken stock"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 150°C (130°C fan). Mix the beans, onion, molasses, tomato paste, mustard, vinegar, stock and 1/2 tsp salt in a casserole.",
+    "Tuck in the sausage. Cover and bake for 1 hour 30 minutes, uncovering for the last 30 minutes, until thick and glossy.",
+    "Rest for 10 minutes and serve with bread."
+   ],
+   "notes": [
+    "Food safety: sausage and cured meats must be steaming hot, reaching at least 75°C. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 235,
+    "proteinG": 12,
+    "carbsG": 23,
+    "fatG": 9,
+    "fibreG": 7,
+    "sodiumMg": 800
+   }
+  },
+  {
+   "id": "baked-stuffed-pumpkin-with-rice-mushrooms-and-cheese",
+   "title": "Baked Stuffed Pumpkin with Rice, Mushrooms and Cheese",
+   "summary": "A whole small pumpkin baked with a savoury filling of rice, mushrooms, spinach and cheese, a vegetarian showpiece.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 75,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 pumpkin",
+      "1 cup cooked rice",
+      "200g mixed mushrooms, sliced",
+      "150g spinach leaves",
+      "1 brown onion, diced",
+      "2 clove garlic, crushed",
+      "1 tbsp olive oil",
+      "1 cup grated vegetarian hard cheese",
+      "1 tbsp thyme"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 190°C (170°C fan). Cut the top from the pumpkin, scoop out the seeds and rub the inside with a little oil and salt. Bake for 30 minutes.",
+    "Cook the onion, mushrooms and garlic in the oil for 8 minutes, add the spinach to wilt. Mix with the rice, thyme, half the cheese and 1/2 tsp salt.",
+    "Fill the pumpkin, top with the remaining cheese and bake for 40 minutes, until the flesh is tender and the top golden. Cut into wedges."
+   ],
+   "notes": [
+    "Vegetarian. Contains milk. Gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 219,
+    "proteinG": 9,
+    "carbsG": 25,
+    "fatG": 9,
+    "fibreG": 4,
+    "sodiumMg": 500
+   }
+  }
+ ]
+}

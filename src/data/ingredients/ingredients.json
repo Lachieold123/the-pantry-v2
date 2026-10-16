@@ -1328,6 +1328,19 @@
     ]
   },
   {
+    "id": "beef-short-ribs",
+    "name": "beef short rib",
+    "aisle": "meat",
+    "aliases": [
+      "short rib",
+      "galbi"
+    ],
+    "groups": [
+      "meat",
+      "beef"
+    ]
+  },
+  {
     "id": "beef-topside",
     "name": "beef topside",
     "plural": "beef topside",
@@ -2849,6 +2862,20 @@
     ]
   },
   {
+    "id": "cottage-cheese",
+    "name": "cottage cheese",
+    "plural": "cottage cheese",
+    "aisle": "dairy-eggs",
+    "aliases": [
+      "firm cottage cheese",
+      "farmer's cheese",
+      "tvorog"
+    ],
+    "groups": [
+      "dairy"
+    ]
+  },
+  {
     "id": "sour-cream",
     "name": "sour cream",
     "plural": "sour cream",
@@ -3360,6 +3387,19 @@
     "aisle": "pasta-rice-grains",
     "aliases": [
       "barley"
+    ],
+    "groups": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "barley-rusks",
+    "name": "barley rusk",
+    "aisle": "bakery",
+    "aliases": [
+      "paximadi",
+      "dakos rusk",
+      "rusk"
     ],
     "groups": [
       "gluten"
@@ -3896,6 +3936,17 @@
     "aliases": [
       "split red lentil",
       "masoor dal"
+    ],
+    "groups": []
+  },
+  {
+    "id": "split-peas",
+    "name": "split pea",
+    "aisle": "tins-jars",
+    "aliases": [
+      "green split pea",
+      "yellow split pea",
+      "dried split pea"
     ],
     "groups": []
   },

@@ -1,0 +1,1024 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "poha-flattened-rice-with-peanuts-and-lime",
+      "title": "Poha Flattened Rice with Peanuts and Lime",
+      "summary": "Light, turmeric-yellow flattened rice with peanuts, curry leaves and lime.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g flattened rice (poha)",
+            "2 tbsp vegetable oil",
+            "1 tsp mustard seeds",
+            "40g peanuts",
+            "1 onion",
+            "2 green chillies",
+            "1/2 tsp ground turmeric",
+            "1 potato",
+            "1 lime",
+            "1/2 tsp salt",
+            "2 tbsp coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Rinse the flattened rice in a sieve until just softened and set aside to drain.",
+        "Fry the mustard seeds, peanuts in the oil for 2 minutes, until the seeds pop and the peanuts brown.",
+        "Add the diced onion, chillies and diced potato and cook for 8 minutes until the potato is tender.",
+        "Stir in turmeric, salt and the rice and cook for 3 minutes until hot through.",
+        "Finish with lime juice and coriander."
+      ],
+      "notes": [
+        "Vegan.",
+        "Contains peanuts."
+      ],
+      "nutrition": {
+        "kcal": 372,
+        "proteinG": 8,
+        "carbsG": 56,
+        "fatG": 12,
+        "fibreG": 4,
+        "sodiumMg": 340
+      }
+    },
+    {
+      "id": "aloo-paratha-potato-stuffed-flatbread",
+      "title": "Aloo Paratha Potato Stuffed Flatbread",
+      "summary": "Whole wheat flatbreads stuffed with spiced mashed potato, griddled until blistered.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g wholemeal flour",
+            "1/2 tsp salt",
+            "180ml water",
+            "3 potatoes",
+            "1 tsp cumin seeds",
+            "1/2 tsp garam masala",
+            "1 green chilli",
+            "2 tbsp coriander",
+            "4 tbsp ghee",
+            "150g plain yoghurt"
+          ]
+        }
+      ],
+      "steps": [
+        "Knead the flour, salt and water for 5 minutes into a soft dough.",
+        "Boil the potatoes for 15 minutes until soft, then mash with cumin, garam masala, chilli and coriander.",
+        "Roll each dough ball, fill with potato, pinch closed and roll out thin again.",
+        "Cook on a hot dry pan for 2 minutes a side, then brush with ghee and cook until golden and blistered.",
+        "Serve hot, straight from the pan, with yoghurt alongside."
+      ],
+      "notes": [
+        "Contains gluten and dairy.",
+        "Use oil in place of ghee for dairy-free."
+      ],
+      "nutrition": {
+        "kcal": 450,
+        "proteinG": 11,
+        "carbsG": 66,
+        "fatG": 14,
+        "fibreG": 8,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "arepas-with-black-beans-and-avocado",
+      "title": "Arepas with Black Beans and Avocado",
+      "summary": "Crisp-outside, soft-inside cornmeal cakes split and stuffed with beans and avocado.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g pre-cooked white cornmeal (masarepa)",
+            "1/2 tsp salt",
+            "350ml warm water",
+            "1 tbsp vegetable oil",
+            "1 can (400g) black beans",
+            "2 avocados",
+            "1 lime",
+            "100g feta"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the cornmeal, salt and water into a soft dough and rest for 5 minutes.",
+        "Shape into 8 thick discs.",
+        "Cook in the oil in a pan for 5 minutes a side, until a crisp golden crust forms.",
+        "Bake at 180C for 10 minutes until the arepas sound hollow when tapped.",
+        "Warm the beans for 5 minutes until hot and mash the avocado with lime.",
+        "Split the arepas and fill with beans, avocado and feta."
+      ],
+      "notes": [
+        "Dairy-free: leave out the feta.",
+        "Gluten-free as long as the cornmeal is."
+      ],
+      "nutrition": {
+        "kcal": 608,
+        "proteinG": 20,
+        "carbsG": 70,
+        "fatG": 24,
+        "fibreG": 16,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "okonomiyaki-cabbage-pancake",
+      "title": "Okonomiyaki Cabbage Pancake",
+      "summary": "Savoury Osaka-style cabbage pancake with sweet sauce, mayonnaise and bonito flakes.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g shredded cabbage",
+            "100g plain flour",
+            "100ml dashi",
+            "2 eggs",
+            "2 spring onions",
+            "1 tbsp vegetable oil",
+            "4 slices bacon",
+            "2 tbsp okonomiyaki sauce",
+            "2 tbsp mayonnaise",
+            "1 tbsp bonito flakes"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour, dashi, eggs, cabbage and spring onion into a thick batter.",
+        "Heat the oil in a non-stick pan and spoon in the batter, topping with the bacon.",
+        "Cook for 6 minutes until golden underneath, flip and cook 5 minutes until the bacon is cooked and the middle is firm.",
+        "Brush with sauce, drizzle with mayonnaise and scatter with bonito."
+      ],
+      "notes": [
+        "Food safety: cook the pancake until the centre is fully set and the bacon is crisp.",
+        "Contains pork, egg, fish and gluten."
+      ],
+      "nutrition": {
+        "kcal": 664,
+        "proteinG": 26,
+        "carbsG": 48,
+        "fatG": 40,
+        "fibreG": 4,
+        "sodiumMg": 1240
+      }
+    },
+    {
+      "id": "full-australian-breakfast-plate",
+      "title": "Full Australian Breakfast Plate",
+      "summary": "Eggs, bacon, grilled tomato, smashed avocado, mushrooms and toast.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 2,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "4 slices bacon",
+            "4 eggs",
+            "2 tomatoes",
+            "150g mushrooms",
+            "1 avocado",
+            "4 slices sourdough",
+            "1 tbsp butter",
+            "1 tbsp olive oil",
+            "1 lemon",
+            "black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Grill the bacon for 6 minutes until crisp and cooked through.",
+        "Fry the halved tomatoes and mushrooms in the oil for 8 minutes until browned and soft.",
+        "Fry the eggs in the butter for 3 minutes until the whites are set.",
+        "Mash the avocado with lemon and pepper.",
+        "Toast the bread until golden and plate everything together."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are firm and yolks thickened.",
+        "Bacon must be cooked through."
+      ],
+      "nutrition": {
+        "kcal": 688,
+        "proteinG": 28,
+        "carbsG": 40,
+        "fatG": 44,
+        "fibreG": 10,
+        "sodiumMg": 1020
+      }
+    },
+    {
+      "id": "spiced-lamb-and-hummus-breakfast-bowl",
+      "title": "Spiced Lamb and Hummus Breakfast Bowl",
+      "summary": "Spiced minced lamb over hummus with tomato, cucumber and parsley.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g minced lamb",
+            "1 tsp ground cumin",
+            "1 tsp ground coriander",
+            "1 tsp paprika",
+            "1 tbsp olive oil",
+            "200g hummus",
+            "1 tomato",
+            "1 cucumber",
+            "1/2 cup parsley",
+            "1 lemon"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the lamb in the oil for 8 minutes, breaking it up, until browned and no pink remains.",
+        "Stir in the spices for 1 minute until fragrant.",
+        "Spread the hummus into bowls.",
+        "Top with lamb, diced tomato, cucumber and parsley, and squeeze over lemon."
+      ],
+      "notes": [
+        "Food safety: minced lamb must reach 75°C inside, with no pink.",
+        "Contains sesame from hummus."
+      ],
+      "nutrition": {
+        "kcal": 530,
+        "proteinG": 37,
+        "carbsG": 12,
+        "fatG": 36,
+        "fibreG": 5,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "cottage-cheese-and-smoked-salmon-rye-toast",
+      "title": "Cottage Cheese and Smoked Salmon Rye Toast",
+      "summary": "Rye toast with cottage cheese, smoked trout, cucumber and dill, high in protein.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "pescatarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 slices rye bread",
+            "200g cottage cheese",
+            "120g smoked salmon",
+            "1 cucumber",
+            "2 tbsp dill",
+            "1 lemon",
+            "black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the rye until crisp at the edges.",
+        "Spread with cottage cheese.",
+        "Top with sliced cucumber and flaked salmon.",
+        "Finish with dill, lemon juice and pepper until each slice is generously covered."
+      ],
+      "notes": [
+        "Smoked fish is not recommended for pregnant people unless heated to 75°C.",
+        "Contains fish, dairy and gluten."
+      ],
+      "nutrition": {
+        "kcal": 372,
+        "proteinG": 38,
+        "carbsG": 34,
+        "fatG": 8,
+        "fibreG": 6,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "tortilla-espanola-breakfast-wedges",
+      "title": "Tortilla Espanola Breakfast Wedges",
+      "summary": "Thick potato and onion omelette, cut into wedges, good hot or cold.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g potatoes",
+            "1 onion",
+            "6 eggs",
+            "100ml olive oil",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Slice the potatoes thinly and fry gently in the oil with the onion for 15 minutes until completely tender.",
+        "Beat the eggs with salt and fold in the drained potato mix.",
+        "Cook in a 24cm pan over medium-low heat for 6 minutes until the base sets.",
+        "Flip with a plate and cook 5 minutes until the middle is set and no longer wet.",
+        "Rest for 5 minutes before cutting."
+      ],
+      "notes": [
+        "Food safety: cook until the egg is fully set in the centre; refrigerate leftovers within 2 hours and eat within 2 days.",
+        "Most of the oil is drained away."
+      ],
+      "nutrition": {
+        "kcal": 285,
+        "proteinG": 11,
+        "carbsG": 21,
+        "fatG": 17,
+        "fibreG": 2,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "lebanese-manakish-zaatar-flatbread",
+      "title": "Lebanese Manakish Zaatar Flatbread",
+      "summary": "Soft flatbread topped with thyme, sesame and olive oil, a Lebanese bakery breakfast.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g plain flour",
+            "1 tsp dried yeast",
+            "1 tsp sugar",
+            "1 tsp salt",
+            "250ml warm water",
+            "4 tbsp olive oil",
+            "4 tbsp zaatar",
+            "1 cucumber",
+            "2 tomatoes"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour, yeast, sugar, salt, water and 1 tbsp oil and knead for 8 minutes until smooth.",
+        "Rest the dough covered until doubled, then divide into 4 balls and roll to 20cm rounds.",
+        "Stir the zaatar with the remaining oil and spread over the dough.",
+        "Bake at 240C for 10 minutes, until the edges are golden and the base is crisp.",
+        "Serve with cucumber and tomato."
+      ],
+      "notes": [
+        "Vegan.",
+        "Contains gluten and sesame."
+      ],
+      "nutrition": {
+        "kcal": 491,
+        "proteinG": 11,
+        "carbsG": 71,
+        "fatG": 17,
+        "fibreG": 5,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "miso-soup-with-tofu-and-wakame",
+      "title": "Miso Soup with Tofu and Wakame",
+      "summary": "Quick Japanese morning soup of dashi, miso, silken tofu and seaweed.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800ml dashi",
+            "3 tbsp miso paste",
+            "200g silken tofu",
+            "2 tbsp dried wakame",
+            "2 spring onions"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the wakame in cold water for 5 minutes until soft, then drain.",
+        "Heat the dashi to a gentle simmer for 3 minutes until steaming, without boiling.",
+        "Dissolve the miso in a ladleful of the hot dashi and stir back in.",
+        "Add the tofu and wakame and heat for 2 minutes until hot through.",
+        "Ladle into bowls and serve with sliced spring onion on top."
+      ],
+      "notes": [
+        "Contains soy and fish if the dashi is made with bonito."
+      ],
+      "nutrition": {
+        "kcal": 63,
+        "proteinG": 5,
+        "carbsG": 4,
+        "fatG": 3,
+        "fibreG": 1,
+        "sodiumMg": 880
+      }
+    },
+    {
+      "id": "khao-tom-thai-rice-soup-with-pork",
+      "title": "Khao Tom Thai Rice Soup with Pork",
+      "summary": "Gentle ginger rice soup with pork meatballs, a comforting Thai breakfast.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g minced pork",
+            "200g cooked jasmine rice",
+            "1.2L chicken stock",
+            "3cm ginger",
+            "3 garlic cloves",
+            "1 tbsp fish sauce",
+            "1 tsp white pepper",
+            "2 spring onions",
+            "2 tbsp fried garlic",
+            "1 tbsp coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the stock with sliced ginger for 5 minutes until fragrant.",
+        "Mix the pork with garlic, fish sauce and pepper and roll into small balls.",
+        "Drop the balls into the stock and simmer for 10 minutes until cooked through.",
+        "Add the rice and cook for 5 minutes until soft.",
+        "Serve topped with spring onion, fried garlic and coriander."
+      ],
+      "notes": [
+        "Food safety: pork balls must reach 75°C with no pink centre.",
+        "Contains fish sauce."
+      ],
+      "nutrition": {
+        "kcal": 274,
+        "proteinG": 22,
+        "carbsG": 28,
+        "fatG": 8,
+        "fibreG": 1,
+        "sodiumMg": 960
+      }
+    },
+    {
+      "id": "minestrone-genovese-with-pesto",
+      "title": "Minestrone Genovese with Pesto",
+      "summary": "Chunky vegetable and bean soup finished with a spoon of basil pesto.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 6,
+      "onePot": true,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp olive oil",
+            "1 onion",
+            "2 carrots",
+            "2 celery stalks",
+            "2 zucchini",
+            "2 potatoes",
+            "1 can (400g) cannellini beans",
+            "400g tinned tomatoes",
+            "1.5L vegetable stock",
+            "100g small pasta",
+            "4 tbsp pesto",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion, carrot and celery in the oil for 8 minutes until soft.",
+        "Add the potato, tomatoes, stock and salt and simmer for 15 minutes until the potato is almost tender.",
+        "Add the zucchini, beans and pasta and simmer for 10 minutes until the pasta is tender.",
+        "Serve with the pesto stirred through."
+      ],
+      "notes": [
+        "Pesto contains cheese and nuts; use vegetarian-hard-cheese pesto for vegetarian."
+      ],
+      "nutrition": {
+        "kcal": 350,
+        "proteinG": 12,
+        "carbsG": 44,
+        "fatG": 12,
+        "fibreG": 9,
+        "sodiumMg": 880
+      }
+    },
+    {
+      "id": "fattoush-pomegranate-and-sumac-salad",
+      "title": "Fattoush Pomegranate and Sumac Salad",
+      "summary": "Crunchy salad with toasted pita, sumac dressing and pomegranate.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 5,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 pita breads",
+            "2 tbsp olive oil",
+            "1 cos lettuce",
+            "4 radishes",
+            "1 cucumber",
+            "3 tomatoes",
+            "2 tbsp mint",
+            "3 tbsp pomegranate seeds",
+            "2 tsp sumac",
+            "3 tbsp lemon juice",
+            "3 tbsp olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Brush the pita with oil and bake at 200C for 5 minutes until crisp and golden.",
+        "Whisk lemon juice, sumac and 3 tbsp oil.",
+        "Chop the vegetables and toss with mint and dressing.",
+        "Break the pita over the top."
+      ],
+      "notes": [
+        "Vegan."
+      ],
+      "nutrition": {
+        "kcal": 360,
+        "proteinG": 6,
+        "carbsG": 36,
+        "fatG": 20,
+        "fibreG": 6,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "spiced-chickpea-caesar-salad-with-vegan-dressing",
+      "title": "Spiced Chickpea Caesar Salad with Vegan Dressing",
+      "summary": "Crisp cos with roasted chickpeas, garlic croutons and a creamy cashew dressing.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 can (400g) chickpeas",
+            "2 tbsp olive oil",
+            "1 tsp smoked paprika",
+            "2 cos lettuce hearts",
+            "2 slices bread",
+            "80g cashews",
+            "2 tbsp lemon juice",
+            "1 garlic clove",
+            "1 tsp Dijon mustard",
+            "100ml water",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the chickpeas with oil and paprika and roast at 200C for 20 minutes, until crisp.",
+        "Cube the bread, toss with oil and bake alongside for 8 minutes until golden.",
+        "Blend the cashews, lemon, garlic, mustard, water and salt until silky.",
+        "Toss the lettuce with the dressing and top with chickpeas and croutons."
+      ],
+      "notes": [
+        "Vegan.",
+        "Contains tree nuts and gluten."
+      ],
+      "nutrition": {
+        "kcal": 406,
+        "proteinG": 14,
+        "carbsG": 34,
+        "fatG": 22,
+        "fibreG": 8,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "thai-green-papaya-style-cucumber-som-tam",
+      "title": "Thai Green Papaya Style Cucumber Som Tam",
+      "summary": "Crunchy cucumber and carrot crushed with lime, chilli and peanuts.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cucumbers",
+            "2 carrots",
+            "150g green beans",
+            "2 tomatoes",
+            "3 garlic cloves",
+            "2 red chillies",
+            "3 tbsp lime juice",
+            "2 tbsp fish sauce",
+            "1 tbsp palm sugar",
+            "40g peanuts"
+          ]
+        }
+      ],
+      "steps": [
+        "Crush the garlic and chilli in a mortar to a rough paste.",
+        "Add the lime juice, fish sauce and sugar and stir until the sugar dissolves.",
+        "Add the sliced vegetables and bruise gently until they release their juices.",
+        "Top with crushed peanuts."
+      ],
+      "notes": [
+        "Contains fish sauce and peanuts."
+      ],
+      "nutrition": {
+        "kcal": 150,
+        "proteinG": 6,
+        "carbsG": 16,
+        "fatG": 6,
+        "fibreG": 4,
+        "sodiumMg": 720
+      }
+    },
+    {
+      "id": "roasted-cauliflower-salad-with-currants-and-lemon",
+      "title": "Roasted Cauliflower Salad with Currants and Lemon",
+      "summary": "Roasted cauliflower with currants, almonds and parsley under a tangy dressing.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cauliflower",
+            "3 tbsp olive oil",
+            "1 tsp ground cumin",
+            "3 tbsp currants",
+            "40g almonds",
+            "1/2 cup parsley",
+            "2 tbsp lemon juice",
+            "1 tbsp honey",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss florets with 2 tbsp oil, cumin and salt and roast at 220C for 25 minutes, until browned at the edges.",
+        "Toast the almonds for 3 minutes until golden.",
+        "Whisk the lemon, honey and remaining oil.",
+        "Toss everything together while the cauliflower is warm."
+      ],
+      "notes": [
+        "Contains tree nuts.",
+        "Use maple syrup for vegan."
+      ],
+      "nutrition": {
+        "kcal": 298,
+        "proteinG": 7,
+        "carbsG": 24,
+        "fatG": 18,
+        "fibreG": 6,
+        "sodiumMg": 260
+      }
+    },
+    {
+      "id": "colcannon-irish-mashed-potato-and-cabbage",
+      "title": "Colcannon Irish Mashed Potato and Cabbage",
+      "summary": "Creamy mash folded with buttery kale and spring onions.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1kg potatoes",
+            "300g cabbage",
+            "4 spring onions",
+            "100ml milk",
+            "50g butter",
+            "1/2 tsp salt",
+            "black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes for 20 minutes until tender, then drain and mash.",
+        "Simmer the shredded cabbage in water for 5 minutes until tender, then drain.",
+        "Warm the milk with the spring onion for 3 minutes.",
+        "Fold the milk, butter and cabbage into the mash until smooth and creamy."
+      ],
+      "notes": [
+        "Contains dairy.",
+        "Dairy-free: use olive oil and oat milk."
+      ],
+      "nutrition": {
+        "kcal": 250,
+        "proteinG": 6,
+        "carbsG": 36,
+        "fatG": 8,
+        "fibreG": 5,
+        "sodiumMg": 240
+      }
+    },
+    {
+      "id": "honey-roast-carrots-with-cumin-and-yoghurt",
+      "title": "Honey Roast Carrots with Cumin and Yoghurt",
+      "summary": "Sweet roasted carrots with cumin and tangy yoghurt.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g carrots",
+            "2 tbsp olive oil",
+            "1 tbsp honey",
+            "1 tsp cumin seeds",
+            "150g Greek yoghurt",
+            "1 lemon",
+            "2 tbsp dill"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the carrots with oil, honey, cumin and salt and roast at 200C for 30 minutes, until caramelised and tender.",
+        "Mix the yoghurt with lemon zest.",
+        "Spoon the yoghurt onto a plate, top with carrots and dill."
+      ],
+      "notes": [
+        "Contains dairy.",
+        "Dairy-free: use coconut yoghurt."
+      ],
+      "nutrition": {
+        "kcal": 213,
+        "proteinG": 6,
+        "carbsG": 24,
+        "fatG": 9,
+        "fibreG": 6,
+        "sodiumMg": 280
+      }
+    },
+    {
+      "id": "elote-mexican-street-corn-off-the-cob",
+      "title": "Elote Mexican Street Corn Off the Cob",
+      "summary": "Charred corn tossed with mayonnaise, lime, chilli and crumbled cheese.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 corn cobs",
+            "3 tbsp mayonnaise",
+            "1 lime",
+            "1 tsp chilli powder",
+            "60g queso fresco",
+            "1/4 cup coriander",
+            "1 tbsp olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Char the corn in the oil for 10 minutes, turning, until blackened in spots.",
+        "Cut the kernels from the cobs with a sharp knife.",
+        "Mix with mayonnaise, lime juice and chilli.",
+        "Top with cheese and coriander."
+      ],
+      "notes": [
+        "Contains egg and dairy."
+      ],
+      "nutrition": {
+        "kcal": 157,
+        "proteinG": 5,
+        "carbsG": 16,
+        "fatG": 8,
+        "fibreG": 2,
+        "sodiumMg": 280
+      }
+    },
+    {
+      "id": "romesco-roasted-red-capsicum-and-almond-sauce",
+      "title": "Romesco Roasted Red Capsicum and Almond Sauce",
+      "summary": "Smoky capsicum, almond and sherry vinegar sauce for grilled vegetables and fish.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 red capsicums",
+            "60g almonds",
+            "2 garlic cloves",
+            "2 tbsp sherry vinegar",
+            "100ml olive oil",
+            "1 tsp smoked paprika",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the capsicums at 220C for 20 minutes, until blackened, then cool in a bag and peel.",
+        "Toast the almonds for 3 minutes until golden.",
+        "Blend with the garlic, vinegar, paprika, salt and capsicum, then drizzle in the oil until smooth."
+      ],
+      "notes": [
+        "Contains tree nuts.",
+        "Vegan."
+      ],
+      "nutrition": {
+        "kcal": 177,
+        "proteinG": 3,
+        "carbsG": 6,
+        "fatG": 15,
+        "fibreG": 3,
+        "sodiumMg": 150
+      }
+    }
+  ]
+}

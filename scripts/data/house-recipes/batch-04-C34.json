@@ -1,0 +1,1197 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "creamy-caesar-dressing",
+      "title": "Creamy Caesar Dressing",
+      "summary": "A thick, garlicky Caesar dressing with anchovy, lemon and parmesan, ready in five minutes.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "pescatarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1/2 cup mayonnaise",
+            "2 anchovy fillets, finely chopped",
+            "1 clove garlic, crushed",
+            "2 tbsp lemon juice",
+            "1 tsp dijon mustard",
+            "1 tsp worcestershire sauce",
+            "1/4 cup grated parmesan",
+            "2 tbsp water",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Mash the anchovies and garlic together into a paste in a bowl.",
+        "Whisk in the mayonnaise, lemon juice, mustard and worcestershire sauce until smooth.",
+        "Stir in the parmesan, then loosen with the water and season with pepper.",
+        "Chill for at least 15 minutes before tossing through cos lettuce."
+      ],
+      "notes": [
+        "Keeps for 4 days in the fridge.",
+        "Also good as a dip for crisp raw vegetables."
+      ],
+      "nutrition": {
+        "kcal": 111,
+        "proteinG": 2,
+        "carbsG": 1,
+        "fatG": 11,
+        "fibreG": 0,
+        "sodiumMg": 170
+      }
+    },
+    {
+      "id": "blue-cheese-dip-for-wings",
+      "title": "Blue Cheese Dip for Wings",
+      "summary": "A cool, tangy blue cheese dip to cut through spicy chicken wings and celery sticks.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100 g blue cheese, crumbled",
+            "1/2 cup sour cream",
+            "1/4 cup mayonnaise",
+            "2 tbsp buttermilk",
+            "1 tbsp lemon juice",
+            "1 clove garlic, crushed",
+            "1 tbsp chopped chives",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Mash half the blue cheese with the sour cream and mayonnaise until mostly smooth.",
+        "Stir in the buttermilk, lemon juice, garlic and chives.",
+        "Fold through the remaining blue cheese so there are chunks, then season with pepper.",
+        "Chill for 20 minutes to let the flavours settle."
+      ],
+      "notes": [
+        "Thin with a little extra buttermilk for a dressing.",
+        "Keeps for 4 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 106,
+        "proteinG": 3,
+        "carbsG": 1,
+        "fatG": 10,
+        "fibreG": 0,
+        "sodiumMg": 230
+      }
+    },
+    {
+      "id": "thousand-island-dressing",
+      "title": "Thousand Island Dressing",
+      "summary": "A pink, creamy dressing with pickles and tomato sauce for burgers, slaw and salad.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1/2 cup mayonnaise",
+            "3 tbsp tomato sauce",
+            "2 tbsp finely chopped dill pickles",
+            "1 tbsp finely chopped onion",
+            "1 tsp worcestershire sauce",
+            "1 tsp lemon juice",
+            "1/4 tsp paprika",
+            "1 tbsp water"
+          ]
+        }
+      ],
+      "steps": [
+        "Combine the mayonnaise and tomato sauce in a bowl until evenly pink.",
+        "Stir in the pickles, onion, worcestershire sauce, lemon juice and paprika.",
+        "Loosen with the water to a spoonable consistency and chill before serving."
+      ],
+      "notes": [
+        "Keeps for 5 days in the fridge.",
+        "Spoon over a wedge of iceberg lettuce."
+      ],
+      "nutrition": {
+        "kcal": 93,
+        "proteinG": 0,
+        "carbsG": 3,
+        "fatG": 9,
+        "fibreG": 0,
+        "sodiumMg": 200
+      }
+    },
+    {
+      "id": "honey-mustard-dipping-sauce",
+      "title": "Honey Mustard Dipping Sauce",
+      "summary": "Sweet, sharp and four ingredients, a favourite with chicken tenders and sausage rolls.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1/4 cup wholegrain mustard",
+            "3 tbsp honey",
+            "1/4 cup mayonnaise",
+            "2 tsp lemon juice",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the mustard, honey and mayonnaise together until smooth.",
+        "Add the lemon juice and salt, then taste and adjust the sweetness.",
+        "Serve in a small bowl for dipping."
+      ],
+      "notes": [
+        "Keeps for a week in the fridge.",
+        "Brush it over chicken thighs in the last 10 minutes of roasting for a sticky glaze."
+      ],
+      "nutrition": {
+        "kcal": 107,
+        "proteinG": 1,
+        "carbsG": 10,
+        "fatG": 7,
+        "fibreG": 0,
+        "sodiumMg": 190
+      }
+    },
+    {
+      "id": "chipotle-lime-crema",
+      "title": "Chipotle Lime Crema",
+      "summary": "Smoky, cooling sour cream sauce for tacos, grilled corn and burrito bowls.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3/4 cup sour cream",
+            "2 tbsp mayonnaise",
+            "1 chipotle chilli in adobo, finely chopped",
+            "1 tbsp adobo sauce",
+            "2 tbsp lime juice",
+            "1 clove garlic, crushed",
+            "1 tbsp chopped coriander",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the sour cream and mayonnaise together until smooth.",
+        "Stir in the chipotle, adobo sauce, lime juice, garlic and coriander.",
+        "Season with salt and chill for 15 minutes before drizzling."
+      ],
+      "notes": [
+        "Thin with a splash of water to drizzle from a squeeze bottle.",
+        "Keeps for 5 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 84,
+        "proteinG": 1,
+        "carbsG": 2,
+        "fatG": 8,
+        "fibreG": 0,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "tartare-sauce",
+      "title": "Tartare Sauce",
+      "summary": "Classic fish and chip shop sauce with capers, gherkins and fresh parsley.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1/2 cup mayonnaise",
+            "2 tbsp chopped gherkins",
+            "1 tbsp chopped capers",
+            "1 tbsp chopped parsley",
+            "1 tbsp finely chopped shallot",
+            "2 tsp lemon juice",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the mayonnaise with the gherkins, capers, parsley and shallot.",
+        "Stir in the lemon juice and pepper, then taste for balance.",
+        "Chill for 20 minutes, until the flavours have melded, before serving with crumbed fish."
+      ],
+      "notes": [
+        "Keeps for 5 days in the fridge.",
+        "Use a little of the gherkin brine for extra tang."
+      ],
+      "nutrition": {
+        "kcal": 94,
+        "proteinG": 0,
+        "carbsG": 1,
+        "fatG": 10,
+        "fibreG": 0,
+        "sodiumMg": 210
+      }
+    },
+    {
+      "id": "louisiana-style-remoulade",
+      "title": "Louisiana Style Remoulade",
+      "summary": "A Louisiana style remoulade with mustard, horseradish and paprika for crab cakes and prawns.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1/2 cup mayonnaise",
+            "1 tbsp creole mustard",
+            "1 tsp horseradish",
+            "1 tsp paprika",
+            "1 tbsp finely chopped celery",
+            "1 tbsp chopped parsley",
+            "1 tbsp lemon juice",
+            "1 tsp hot sauce",
+            "1 clove garlic, crushed"
+          ]
+        }
+      ],
+      "steps": [
+        "Stir the mayonnaise, mustard, horseradish and paprika together in a bowl.",
+        "Add the celery, parsley, lemon juice, hot sauce and garlic.",
+        "Mix well and chill until cold and the flavours have developed, about 30 minutes."
+      ],
+      "notes": [
+        "Serve with crab cakes, boiled prawns or fried green tomatoes.",
+        "Keeps for 5 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 94,
+        "proteinG": 0,
+        "carbsG": 1,
+        "fatG": 10,
+        "fibreG": 0,
+        "sodiumMg": 230
+      }
+    },
+    {
+      "id": "comeback-sauce",
+      "title": "Comeback Sauce",
+      "summary": "A Mississippi style dipping sauce, tangy and a little spicy, for chips, burgers and salads.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1/2 cup mayonnaise",
+            "1/4 cup chilli sauce",
+            "1 tbsp ketchup",
+            "1 tbsp worcestershire sauce",
+            "1 clove garlic, crushed",
+            "1 tsp paprika",
+            "1 tsp hot sauce",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the mayonnaise, chilli sauce and ketchup together.",
+        "Add the worcestershire sauce, garlic, paprika, hot sauce and lemon juice.",
+        "Chill until cold and the garlic has mellowed, about an hour."
+      ],
+      "notes": [
+        "Keeps for a week in the fridge.",
+        "Excellent on fried chicken sandwiches."
+      ],
+      "nutrition": {
+        "kcal": 101,
+        "proteinG": 0,
+        "carbsG": 5,
+        "fatG": 9,
+        "fibreG": 0,
+        "sodiumMg": 260
+      }
+    },
+    {
+      "id": "smoky-barbecue-sauce",
+      "title": "Smoky Barbecue Sauce",
+      "summary": "A thick, smoky-sweet sauce simmered from pantry staples for ribs, chicken and burgers.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 12,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup tomato sauce",
+            "1/4 cup apple cider vinegar",
+            "1/4 cup brown sugar",
+            "2 tbsp worcestershire sauce",
+            "1 tbsp molasses",
+            "1 tsp smoked paprika",
+            "1 tsp garlic powder",
+            "1 tsp onion powder",
+            "1/2 tsp black pepper",
+            "1/2 cup water"
+          ]
+        }
+      ],
+      "steps": [
+        "Combine everything in a saucepan and bring to a gentle simmer, stirring until the sugar dissolves.",
+        "Cook for 15 to 20 minutes, stirring often, until thick enough to coat a spoon.",
+        "Taste and add a splash of vinegar or a pinch more sugar if needed.",
+        "Cool and store in a clean jar."
+      ],
+      "notes": [
+        "Keeps for 2 weeks in the fridge.",
+        "Brush on in the last few minutes of grilling so the sugar doesn't burn."
+      ],
+      "nutrition": {
+        "kcal": 48,
+        "proteinG": 0,
+        "carbsG": 12,
+        "fatG": 0,
+        "fibreG": 0,
+        "sodiumMg": 230
+      }
+    },
+    {
+      "id": "smoked-salmon-and-dill-brunch-tart",
+      "title": "Smoked Salmon and Dill Brunch Tart",
+      "summary": "A crisp pastry case filled with a soft egg custard, smoked salmon and fresh dill.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "pescatarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 sheet puff pastry",
+            "150 g smoked salmon, torn",
+            "4 eggs",
+            "3/4 cup cream",
+            "1/4 cup milk",
+            "2 tbsp chopped dill",
+            "2 spring onions, sliced",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C and line a 23 cm tart tin with the pastry, trimming the edge.",
+        "Prick the base, line with baking paper and rice, and bake for 10 minutes. Remove the paper and rice.",
+        "Whisk the eggs, cream, milk, dill, spring onions and pepper together.",
+        "Scatter the salmon in the case, pour in the custard and bake for 25 minutes until just set with a slight wobble.",
+        "Rest for 10 minutes before slicing."
+      ],
+      "notes": [
+        "Food safety: bake until the centre is set and reaches 75°C, and keep leftovers in the fridge for up to 2 days.",
+        "Serve with a rocket salad."
+      ],
+      "nutrition": {
+        "kcal": 326,
+        "proteinG": 13,
+        "carbsG": 14,
+        "fatG": 24,
+        "fibreG": 1,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "baked-eggs-in-tomato-and-chorizo-pan",
+      "title": "Baked Eggs in Tomato and Chorizo Pan",
+      "summary": "Eggs baked in a spiced tomato and chorizo base, served straight from the pan with bread.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150 g chorizo, sliced",
+            "1 tbsp olive oil",
+            "1 brown onion, diced",
+            "2 cloves garlic, sliced",
+            "1 tsp smoked paprika",
+            "400 g canned diced tomatoes",
+            "1 red capsicum, sliced",
+            "4 eggs",
+            "2 tbsp chopped parsley",
+            "4 slices crusty bread"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the chorizo in the oil in a large ovenproof pan for 3 minutes until the oil runs red.",
+        "Add the onion, garlic and capsicum and cook for 5 minutes until soft.",
+        "Stir in the paprika and tomatoes, then simmer for 10 minutes until thick.",
+        "Make four wells, crack in the eggs, cover and cook over low heat for 6 to 8 minutes until the whites are set.",
+        "Scatter with parsley and serve with the bread."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set, especially for pregnant women, older people and young children, and make sure the chorizo is cooked through to 75°C.",
+        "Use a lid or foil if your pan has none."
+      ],
+      "nutrition": {
+        "kcal": 379,
+        "proteinG": 19,
+        "carbsG": 26,
+        "fatG": 21,
+        "fibreG": 5,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "ricotta-hotcakes-with-berry-compote",
+      "title": "Ricotta Hotcakes with Berry Compote",
+      "summary": "Light, tender hotcakes made with ricotta, served with warm berries and a spoonful of yoghurt.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup ricotta",
+            "3 eggs, separated",
+            "1/2 cup milk",
+            "3/4 cup plain flour",
+            "1 tsp baking powder",
+            "1 tbsp caster sugar",
+            "1 tbsp butter",
+            "2 cups frozen mixed berries",
+            "1 tbsp honey",
+            "1/2 cup plain yoghurt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the berries and honey in a small saucepan for 5 minutes until syrupy, then keep warm.",
+        "Mix the ricotta, egg yolks and milk, then stir in the flour, baking powder and sugar.",
+        "Whisk the egg whites to soft peaks and fold gently into the batter.",
+        "Melt a little butter in a non-stick pan and cook spoonfuls for 2 minutes each side until golden.",
+        "Stack the hotcakes, spoon over the berries and add the yoghurt."
+      ],
+      "notes": [
+        "Food safety: cook the hotcakes until set through the middle, especially for pregnant women, older people and young children.",
+        "Keep cooked hotcakes warm in a low oven."
+      ],
+      "nutrition": {
+        "kcal": 374,
+        "proteinG": 17,
+        "carbsG": 43,
+        "fatG": 14,
+        "fibreG": 4,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "lemon-dutch-baby-with-fresh-fruit",
+      "title": "Lemon Dutch Baby with Fresh Fruit",
+      "summary": "A puffed oven pancake with crisp edges and a custardy middle, finished with lemon and berries.",
+      "cuisine": "american",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 22,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 eggs",
+            "3/4 cup milk",
+            "3/4 cup plain flour",
+            "1 tbsp caster sugar",
+            "1/4 tsp vanilla extract",
+            "2 tbsp butter",
+            "1 lemon, juiced",
+            "1 cup frozen berries, thawed",
+            "1 tbsp icing sugar"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C and place a 25 cm ovenproof frypan inside to heat for 5 minutes.",
+        "Blend the eggs, milk, flour, sugar and vanilla until smooth.",
+        "Add the butter to the hot pan, swirl to melt, then pour in the batter.",
+        "Bake for 18 to 20 minutes until deeply puffed and golden.",
+        "Squeeze over the lemon juice, top with the fruit and dust with icing sugar."
+      ],
+      "notes": [
+        "Food safety: bake until the centre is fully set and no longer liquid, especially for pregnant women, older people and young children.",
+        "It sinks as it cools, so serve immediately."
+      ],
+      "nutrition": {
+        "kcal": 315,
+        "proteinG": 10,
+        "carbsG": 38,
+        "fatG": 13,
+        "fibreG": 3,
+        "sodiumMg": 170
+      }
+    },
+    {
+      "id": "sheet-pan-breakfast-hash",
+      "title": "Sheet Pan Breakfast Hash",
+      "summary": "Crisp potatoes, capsicum and bacon roasted on one tray with eggs baked in at the end.",
+      "cuisine": "american",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600 g potatoes, diced",
+            "1 red capsicum, diced",
+            "1 red onion, diced",
+            "4 rashers bacon, chopped",
+            "2 tbsp olive oil",
+            "1 tsp smoked paprika",
+            "4 eggs",
+            "2 tbsp chopped chives",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C and toss the potatoes, capsicum, onion, bacon, oil, paprika and pepper on a large tray.",
+        "Roast for 30 minutes, turning once, until the potatoes are crisp.",
+        "Make four hollows, crack an egg into each and bake for 6 to 8 minutes until the whites are set.",
+        "Scatter with chives and serve from the tray."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set and the bacon is cooked through to 75°C.",
+        "Use sweet potato for a change."
+      ],
+      "nutrition": {
+        "kcal": 357,
+        "proteinG": 17,
+        "carbsG": 32,
+        "fatG": 17,
+        "fibreG": 4,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "brunch-frittata-with-zucchini-and-feta",
+      "title": "Brunch Frittata with Zucchini and Feta",
+      "summary": "A thick, golden frittata studded with zucchini, fetta and mint, finished under the grill.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 eggs",
+            "2 zucchini, grated",
+            "100 g feta, crumbled",
+            "1 brown onion, diced",
+            "1 tbsp olive oil",
+            "2 tbsp chopped mint",
+            "1/4 cup milk",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Squeeze the grated zucchini in a clean cloth to remove the water.",
+        "Cook the onion in the oil in a 24 cm ovenproof frypan for 4 minutes, then add the zucchini and cook 3 minutes more.",
+        "Whisk the eggs, milk, mint and pepper, then pour into the pan and scatter the fetta on top.",
+        "Cook gently for 6 minutes until the edges set, then grill for 4 minutes until the top is golden and the centre is set."
+      ],
+      "notes": [
+        "Food safety: cook the frittata until the centre is fully set, especially for pregnant women, older people and young children.",
+        "Delicious cold in a lunchbox."
+      ],
+      "nutrition": {
+        "kcal": 204,
+        "proteinG": 14,
+        "carbsG": 5,
+        "fatG": 14,
+        "fibreG": 1,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "egg-and-bacon-breakfast-pie",
+      "title": "Egg and Bacon Breakfast Pie",
+      "summary": "A classic Aussie bacon and egg pie with a flaky pastry lid, cut into wedges for brunch.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 6,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "2 sheets puff pastry",
+            "1 sheet puff pastry",
+            "8 rashers bacon, chopped",
+            "6 eggs",
+            "1/2 cup grated cheddar",
+            "2 tbsp chopped parsley",
+            "1 egg, beaten",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C and line a 23 cm pie dish with the shortcrust pastry.",
+        "Scatter the bacon, cheddar and parsley over the base, then crack the six eggs on top and prick the yolks lightly.",
+        "Season with pepper and cover with the puff pastry, sealing the edges.",
+        "Brush with the beaten egg and bake for 30 to 35 minutes until deep golden.",
+        "Rest for 10 minutes before cutting."
+      ],
+      "notes": [
+        "Food safety: bake until the eggs are fully set and the bacon is cooked through to 75°C.",
+        "Serve with tomato relish."
+      ],
+      "nutrition": {
+        "kcal": 581,
+        "proteinG": 22,
+        "carbsG": 35,
+        "fatG": 39,
+        "fibreG": 1,
+        "sodiumMg": 830
+      }
+    },
+    {
+      "id": "avocado-and-poached-egg-on-seeded-toast",
+      "title": "Avocado and Poached Egg on Seeded Toast",
+      "summary": "The cafe favourite at home, with lemony smashed avocado, a soft egg and a sprinkle of seeds.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 8,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 avocado",
+            "2 tsp lemon juice",
+            "2 eggs",
+            "2 slices sourdough",
+            "2 tsp olive oil",
+            "2 tbsp mixed seeds",
+            "1 tbsp chopped coriander",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the sourdough until golden and brush with the olive oil.",
+        "Mash the avocado with the lemon juice and salt, keeping it chunky.",
+        "Poach the eggs in barely simmering water for 3 to 4 minutes until the whites are set and the yolks still soft.",
+        "Pile the avocado onto the sourdough, then add the eggs, seeds and coriander."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set, especially for pregnant women, older people and young children.",
+        "A splash of white vinegar in the water helps the whites hold together."
+      ],
+      "nutrition": {
+        "kcal": 476,
+        "proteinG": 15,
+        "carbsG": 28,
+        "fatG": 32,
+        "fibreG": 8,
+        "sodiumMg": 500
+      }
+    },
+    {
+      "id": "corn-fritter-stack-with-bacon-and-avocado",
+      "title": "Corn Fritter Stack with Bacon and Avocado",
+      "summary": "Golden sweetcorn fritters stacked with crisp bacon, avocado and a drizzle of sweet chilli.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups corn kernels",
+            "3/4 cup self-raising flour",
+            "2 eggs",
+            "1/3 cup milk",
+            "2 spring onions, sliced",
+            "1 tbsp chopped coriander",
+            "8 rashers bacon",
+            "1 avocado, sliced",
+            "2 tbsp sweet chilli sauce",
+            "2 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the corn, flour, eggs, milk, spring onions and coriander into a thick batter.",
+        "Fry the bacon until crisp and set aside.",
+        "Heat the oil in a pan and cook spoonfuls of batter for 2 to 3 minutes each side until golden and cooked through.",
+        "Stack the fritters with bacon and avocado and drizzle with the sweet chilli."
+      ],
+      "notes": [
+        "Food safety: cook the fritters until the centres are firm and hot, and the bacon through to 75°C.",
+        "Freeze leftover fritters between baking paper."
+      ],
+      "nutrition": {
+        "kcal": 466,
+        "proteinG": 17,
+        "carbsG": 38,
+        "fatG": 26,
+        "fibreG": 6,
+        "sodiumMg": 740
+      }
+    },
+    {
+      "id": "chilli-and-spring-onion-soft-scramble",
+      "title": "Chilli and Spring Onion Soft Scramble",
+      "summary": "Soft, creamy eggs cooked with fresh chilli and spring onion, piled on buttery toast.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 6,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 eggs",
+            "2 tbsp milk",
+            "1 tbsp butter",
+            "1 red chilli, finely sliced",
+            "2 spring onions, sliced",
+            "2 slices sourdough",
+            "1 tbsp chopped coriander",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the eggs, milk and salt together.",
+        "Melt half the butter in a non-stick pan and soften the chilli and spring onion for 1 minute.",
+        "Pour in the eggs and stir gently over low heat for 2 to 3 minutes until just set but still creamy.",
+        "Toast the sourdough until golden, butter it, then top with the eggs and coriander."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until fully set and no longer runny, especially for pregnant women, older people and young children.",
+        "Leave the chilli seeds out for a milder dish."
+      ],
+      "nutrition": {
+        "kcal": 322,
+        "proteinG": 18,
+        "carbsG": 21,
+        "fatG": 18,
+        "fibreG": 2,
+        "sodiumMg": 440
+      }
+    },
+    {
+      "id": "whipped-ricotta-bruschetta",
+      "title": "Whipped Ricotta Bruschetta",
+      "summary": "Grilled sourdough with whipped ricotta, ripe tomatoes, basil and a drizzle of olive oil.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 5,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 slices sourdough",
+            "1 cup ricotta",
+            "3 ripe tomatoes, diced",
+            "1 clove garlic, halved",
+            "2 tbsp olive oil",
+            "1/4 cup basil leaves",
+            "1 tsp balsamic vinegar",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Grill the sourdough until charred at the edges, then rub with the cut garlic.",
+        "Mix the tomatoes with half the oil, the vinegar and salt.",
+        "Grill until the edges are charred, then spread the ricotta on the toast and spoon over the tomatoes.",
+        "Finish with basil and the remaining oil."
+      ],
+      "notes": [
+        "Add a poached egg on top for extra protein.",
+        "Best made just before eating so the toast stays crisp."
+      ],
+      "nutrition": {
+        "kcal": 287,
+        "proteinG": 12,
+        "carbsG": 29,
+        "fatG": 13,
+        "fibreG": 3,
+        "sodiumMg": 370
+      }
+    },
+    {
+      "id": "nostalgic-beef-mince-gravy-on-toast",
+      "title": "Nostalgic Beef Mince Gravy on Toast",
+      "summary": "A retro favourite, tender beef mince in a rich gravy spooned over thick buttered toast.",
+      "cuisine": "british",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500 g beef mince",
+            "1 brown onion, diced",
+            "1 carrot, grated",
+            "1 tbsp tomato paste",
+            "1 tbsp worcestershire sauce",
+            "1 cup beef stock",
+            "1 tbsp plain flour",
+            "1/2 cup frozen peas",
+            "1 tbsp olive oil",
+            "4 slices thick toast"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the mince in the oil in a large pan for 6 minutes, breaking up any lumps.",
+        "Add the onion and carrot and cook for 4 minutes.",
+        "Stir in the flour, tomato paste and worcestershire sauce, then pour in the stock.",
+        "Simmer for 12 minutes until thick, adding the peas for the last 3 minutes.",
+        "Toast the bread until golden, butter it and spoon the mince over."
+      ],
+      "notes": [
+        "Food safety: cook the mince until no pink remains and it reaches 75°C throughout.",
+        "Leftovers reheat well and freeze for 3 months."
+      ],
+      "nutrition": {
+        "kcal": 380,
+        "proteinG": 30,
+        "carbsG": 27,
+        "fatG": 16,
+        "fibreG": 4,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "mushroom-and-thyme-brunch-toast",
+      "title": "Mushroom and Thyme Brunch Toast",
+      "summary": "Garlicky mixed mushrooms with thyme and a swipe of cream cheese on crisp toast.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300 g mixed mushrooms, sliced",
+            "1 tbsp butter",
+            "1 tbsp olive oil",
+            "2 cloves garlic, sliced",
+            "2 tsp thyme leaves",
+            "2 tbsp cream cheese",
+            "2 slices sourdough",
+            "1 tsp lemon juice",
+            "1 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the butter and oil in a large pan and cook the mushrooms in a single layer over high heat for 6 minutes until golden.",
+        "Add the garlic and thyme and cook for 1 minute.",
+        "Finish with the lemon juice and parsley.",
+        "Toast the sourdough until golden, spread with cream cheese and pile on the mushrooms."
+      ],
+      "notes": [
+        "Do not crowd the pan, or the mushrooms will steam instead of browning.",
+        "Top with a soft egg for a heartier brunch."
+      ],
+      "nutrition": {
+        "kcal": 336,
+        "proteinG": 9,
+        "carbsG": 28,
+        "fatG": 20,
+        "fibreG": 4,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "strata-with-ham-and-cheddar",
+      "title": "Strata with Ham and Cheddar",
+      "summary": "A savoury bread and egg bake with ham and cheddar that you can build ahead and bake at brunch.",
+      "cuisine": "american",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 8,
+      "onePot": true,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "8 slices day-old bread, cubed",
+            "200 g sliced ham, chopped",
+            "1 1/2 cups grated cheddar",
+            "6 eggs",
+            "2 cups milk",
+            "1 tsp dijon mustard",
+            "2 spring onions, sliced",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Grease a 20 x 30 cm baking dish and layer in the bread, ham, cheddar and spring onions.",
+        "Whisk the eggs, milk, mustard and pepper, then pour over the bread and press down.",
+        "Stand for 20 minutes so the bread soaks up the custard.",
+        "Bake at 180°C for 40 to 45 minutes until puffed, golden and set in the middle."
+      ],
+      "notes": [
+        "Food safety: bake until the centre is fully set and reaches 75°C, especially for pregnant women, older people and young children.",
+        "Assemble the night before and keep covered in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 284,
+        "proteinG": 19,
+        "carbsG": 20,
+        "fatG": 14,
+        "fibreG": 1,
+        "sodiumMg": 720
+      }
+    },
+    {
+      "id": "egg-in-a-hole-toast",
+      "title": "Egg in a Hole Toast",
+      "summary": "A fried egg cooked in the middle of a slice of buttered toast, simple and fun for kids.",
+      "cuisine": "american",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 3,
+      "cookMinutes": 6,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 slices thick bread",
+            "2 eggs",
+            "1 tbsp butter",
+            "1 pinch salt",
+            "1 tbsp chopped chives"
+          ]
+        }
+      ],
+      "steps": [
+        "Cut a round hole from the centre of each slice of bread with a cutter or glass.",
+        "Melt the butter in a frypan and toast the bread and the cut-out rounds for 1 minute on one side.",
+        "Flip the bread, crack an egg into each hole and season with salt.",
+        "Cook for 2 to 3 minutes until the whites are set, then top with chives."
+      ],
+      "notes": [
+        "Food safety: cook until the whites are fully set and the yolk thickened, especially for young children, pregnant women and older people.",
+        "Dip the toasted rounds in the yolk."
+      ],
+      "nutrition": {
+        "kcal": 192,
+        "proteinG": 11,
+        "carbsG": 14,
+        "fatG": 10,
+        "fibreG": 1,
+        "sodiumMg": 330
+      }
+    }
+  ]
+}

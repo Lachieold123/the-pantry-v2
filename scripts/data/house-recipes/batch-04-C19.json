@@ -1,0 +1,1254 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "turkish-mercimek-corbasi-red-lentil-soup",
+      "title": "Turkish Mercimek Corbasi Red Lentil Soup",
+      "summary": "Silky red lentil soup with carrot, onion and paprika butter, the everyday Turkish restaurant starter.",
+      "cuisine": "turkish",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g red lentils, rinsed",
+            "1 brown onion, chopped",
+            "1 carrot, chopped",
+            "1 potato, peeled and cubed",
+            "2 tbsp olive oil",
+            "1 tbsp tomato paste",
+            "1 litre vegetable stock",
+            "1 tsp ground cumin",
+            "1 tsp sweet paprika",
+            "1 lemon, cut in wedges",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a large pot and cook the onion and carrot for 6 minutes, until softened.",
+        "Stir in the tomato paste, cumin and paprika for 1 minute, until fragrant.",
+        "Add the lentils, potato and stock, bring to the boil and simmer for 20 minutes, until the lentils and potato are very soft.",
+        "Blend with a stick blender until smooth, adding hot water if too thick, and season with salt.",
+        "Serve hot with lemon wedges."
+      ],
+      "notes": [
+        "Keeps 4 days in the fridge and freezes well."
+      ],
+      "nutrition": {
+        "kcal": 307,
+        "proteinG": 16,
+        "carbsG": 40,
+        "fatG": 7,
+        "fibreG": 10,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "turkish-coban-salatasi-shepherd-s-salad",
+      "title": "Turkish Coban Salatasi Shepherd's Salad",
+      "summary": "Finely diced tomato, cucumber, pepper and onion with parsley, lemon and olive oil, served with grilled meats.",
+      "cuisine": "turkish",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 ripe tomatoes, finely diced",
+            "2 Lebanese cucumbers, finely diced",
+            "1 green capsicum, finely diced",
+            "1 small red onion, finely diced",
+            "1 large bunch flat-leaf parsley, chopped",
+            "3 tbsp olive oil",
+            "2 tbsp lemon juice",
+            "1 tsp sumac",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Combine the tomato, cucumber, capsicum, onion and parsley in a bowl.",
+        "Whisk the oil, lemon juice and sumac with a pinch of salt.",
+        "Toss through the salad just before serving, until everything is lightly coated and glossy."
+      ],
+      "notes": [
+        "Dress at the last minute so the vegetables stay crisp."
+      ],
+      "nutrition": {
+        "kcal": 171,
+        "proteinG": 3,
+        "carbsG": 13,
+        "fatG": 11,
+        "fibreG": 4,
+        "sodiumMg": 200
+      }
+    },
+    {
+      "id": "turkish-cacik-cucumber-and-mint-yoghurt",
+      "title": "Turkish Cacik Cucumber and Mint Yoghurt",
+      "summary": "Thick yoghurt with grated cucumber, garlic and dried mint, served as a dip or a cooling soup.",
+      "cuisine": "turkish",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g Greek yoghurt",
+            "2 Lebanese cucumbers, grated",
+            "1 garlic clove, crushed",
+            "1 tbsp dried mint",
+            "1 tbsp olive oil",
+            "1 tbsp lemon juice",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Squeeze the grated cucumber in a clean cloth until quite dry.",
+        "Mix with the yoghurt, garlic, mint, lemon juice and a pinch of salt.",
+        "Chill for 20 minutes until cold and drizzle with olive oil to serve."
+      ],
+      "notes": [
+        "Keeps 2 days in the fridge; stir before serving."
+      ],
+      "nutrition": {
+        "kcal": 181,
+        "proteinG": 11,
+        "carbsG": 9,
+        "fatG": 11,
+        "fibreG": 1,
+        "sodiumMg": 250
+      }
+    },
+    {
+      "id": "turkish-muhammara-red-pepper-and-walnut-dip",
+      "title": "Turkish Muhammara Red Pepper and Walnut Dip",
+      "summary": "Roasted red capsicum, walnut and pomegranate molasses dip with a gentle chilli and cumin kick.",
+      "cuisine": "turkish",
+      "mealTypes": [
+        "snack",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 10,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 red capsicums",
+            "100g walnuts",
+            "3 tbsp breadcrumbs",
+            "2 tbsp pomegranate molasses",
+            "3 tbsp olive oil",
+            "1 garlic clove",
+            "1 tsp ground cumin",
+            "1 tsp chilli flakes",
+            "1 tbsp lemon juice",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the capsicums under a hot grill for 10 minutes, turning, until the skins are blackened and blistered.",
+        "Cover in a bowl for 10 minutes, then peel and deseed.",
+        "Toast the walnuts in a dry pan for 3 minutes, until fragrant.",
+        "Blend the capsicum, walnuts, breadcrumbs, molasses, oil, garlic, cumin, chilli, lemon and salt to a coarse paste.",
+        "Taste and serve with warm flatbread."
+      ],
+      "notes": [
+        "Keeps 5 days in the fridge. Contains walnuts and gluten."
+      ],
+      "nutrition": {
+        "kcal": 156,
+        "proteinG": 3,
+        "carbsG": 8,
+        "fatG": 12,
+        "fibreG": 2,
+        "sodiumMg": 160
+      }
+    },
+    {
+      "id": "turkish-kuru-fasulye-white-bean-stew",
+      "title": "Turkish Kuru Fasulye White Bean Stew",
+      "summary": "Creamy white beans in a tomato and capsicum paste sauce, Turkey's national comfort dish, served with rice.",
+      "cuisine": "turkish",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 x 400g tins cannellini beans, drained",
+            "2 tbsp olive oil",
+            "1 brown onion, finely chopped",
+            "2 garlic cloves",
+            "1 tbsp tomato paste",
+            "1 tbsp capsicum paste",
+            "1 tsp sweet paprika",
+            "1 tsp dried mint",
+            "500ml vegetable stock",
+            "1 tsp sugar",
+            "Salt",
+            "1 small bunch flat-leaf parsley, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil and cook the onion for 7 minutes, until golden and soft.",
+        "Add the garlic, tomato paste, capsicum paste and paprika and stir for 2 minutes, until the oil separates.",
+        "Add the beans, stock and sugar and simmer gently for 30 minutes, until the sauce is thick and the beans are creamy.",
+        "Season with salt, scatter with mint and parsley and serve with rice."
+      ],
+      "notes": [
+        "Better the next day. Keeps 4 days."
+      ],
+      "nutrition": {
+        "kcal": 232,
+        "proteinG": 11,
+        "carbsG": 27,
+        "fatG": 8,
+        "fibreG": 4,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "turkish-yayla-corbasi-warm-yoghurt-soup-with-sizzled-paprika-butter",
+      "title": "Turkish Yayla Corbasi Warm Yoghurt Soup with Sizzled Paprika Butter",
+      "summary": "Silky yoghurt and rice soup finished with sizzled mint butter, mellow, tangy and warming.",
+      "cuisine": "turkish",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "80g short-grain rice",
+            "1.2 litres chicken stock",
+            "400g Greek yoghurt",
+            "1 egg yolk",
+            "1 tbsp plain flour",
+            "2 tbsp butter",
+            "1 tbsp dried mint",
+            "1 tsp paprika",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the rice in the stock for 18 minutes, until completely tender.",
+        "Whisk the yoghurt, egg yolk and flour until smooth, then whisk in a ladle of hot stock.",
+        "Pour the yoghurt mixture back into the pot, whisking constantly, and heat gently for 5 minutes until it thickens and is just steaming, without boiling.",
+        "Melt the butter, then add the mint and paprika for 30 seconds until sizzling and fragrant.",
+        "Season the soup with salt and swirl the mint butter over to serve."
+      ],
+      "notes": [
+        "Food safety: heat the soup until steaming hot throughout so the egg yolk is cooked. Do not boil hard or the yoghurt will split."
+      ],
+      "nutrition": {
+        "kcal": 263,
+        "proteinG": 14,
+        "carbsG": 22,
+        "fatG": 13,
+        "fibreG": 1,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "middle-eastern-mutabal-smoked-eggplant-and-tahini-dip",
+      "title": "Middle Eastern Mutabal Smoked Eggplant and Tahini Dip",
+      "summary": "Charred eggplant blended with tahini, garlic and lemon, smoky and creamy, a mezze staple.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "snack",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 large eggplants",
+            "3 tbsp tahini",
+            "2 tbsp lemon juice",
+            "1 garlic clove, crushed",
+            "3 tbsp Greek yoghurt",
+            "2 tbsp olive oil",
+            "1 tsp ground cumin",
+            "1 tbsp pomegranate seeds",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Pierce the eggplants and roast at 220°C for 30 to 35 minutes, turning once, until the skins are charred and the flesh collapses.",
+        "Scoop the flesh into a colander and drain for 10 minutes.",
+        "Mash with the tahini, lemon, garlic, yoghurt, cumin and salt until creamy but with some texture.",
+        "Spoon into a bowl, drizzle with olive oil and scatter with pomegranate."
+      ],
+      "notes": [
+        "Keeps 4 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 155,
+        "proteinG": 4,
+        "carbsG": 8,
+        "fatG": 11,
+        "fibreG": 4,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "middle-eastern-shorbat-adas-spiced-lentil-soup",
+      "title": "Middle Eastern Shorbat Adas Spiced Lentil Soup",
+      "summary": "Golden lentil and cumin soup brightened with lemon, the Levantine winter staple.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g brown lentils, rinsed",
+            "1 brown onion, diced",
+            "2 garlic cloves",
+            "2 tbsp olive oil",
+            "2 tsp ground cumin",
+            "1 tsp turmeric",
+            "1.2 litres vegetable stock",
+            "1 carrot, diced",
+            "2 tbsp lemon juice",
+            "1 small bunch fresh coriander",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion in the oil for 6 minutes, until soft and golden.",
+        "Add the garlic, cumin and turmeric for 1 minute, until fragrant.",
+        "Add the lentils, carrot and stock, bring to the boil and simmer for 25 minutes, until the lentils are soft.",
+        "Blend roughly, leaving some texture, and stir in lemon juice and salt.",
+        "Serve with coriander on top."
+      ],
+      "notes": [
+        "Keeps 4 days; freezes well."
+      ],
+      "nutrition": {
+        "kcal": 311,
+        "proteinG": 17,
+        "carbsG": 38,
+        "fatG": 7,
+        "fibreG": 14,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "middle-eastern-hummus-masabacha-warm-chickpeas",
+      "title": "Middle Eastern Hummus Masabacha Warm Chickpeas",
+      "summary": "Warm whole chickpeas folded through lemony tahini with olive oil and chilli, a Levantine breakfast.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 x 400g tins chickpeas, drained",
+            "4 tbsp tahini",
+            "3 tbsp lemon juice",
+            "2 garlic cloves, crushed",
+            "3 tbsp olive oil",
+            "1 tsp ground cumin",
+            "1 tsp chilli flakes",
+            "1 small bunch flat-leaf parsley, chopped",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the chickpeas gently in a pan with a splash of water for 5 minutes, until steaming hot.",
+        "Whisk the tahini, lemon, garlic, salt and 3 tbsp water into a loose sauce.",
+        "Fold half the sauce through the chickpeas.",
+        "Spoon into bowls and top with the remaining sauce, olive oil, cumin, chilli and parsley."
+      ],
+      "notes": [
+        "Serve with warm pita. Contains sesame."
+      ],
+      "nutrition": {
+        "kcal": 317,
+        "proteinG": 12,
+        "carbsG": 22,
+        "fatG": 19,
+        "fibreG": 5,
+        "sodiumMg": 500
+      }
+    },
+    {
+      "id": "greek-skordalia-garlic-potato-dip",
+      "title": "Greek Skordalia Garlic Potato Dip",
+      "summary": "Pungent garlic and olive oil potato dip served with fried fish, roasted beetroot or crisp vegetables.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "snack",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g floury potatoes, peeled and cut up",
+            "4 garlic cloves, crushed",
+            "100ml olive oil",
+            "3 tbsp red wine vinegar",
+            "3 tbsp ground almonds",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes for 15 to 18 minutes, until completely soft, then drain well.",
+        "Mash or rice them while hot until smooth.",
+        "Beat in the garlic, almonds and vinegar, then slowly beat in the oil until thick and glossy.",
+        "Season with salt and serve at room temperature."
+      ],
+      "notes": [
+        "Keeps 3 days in the fridge. Contains almonds."
+      ],
+      "nutrition": {
+        "kcal": 223,
+        "proteinG": 3,
+        "carbsG": 18,
+        "fatG": 15,
+        "fibreG": 2,
+        "sodiumMg": 200
+      }
+    },
+    {
+      "id": "greek-melitzanosalata-smoky-eggplant-dip",
+      "title": "Greek Melitzanosalata Smoky Eggplant Dip",
+      "summary": "Charred eggplant dip with garlic, parsley and red wine vinegar.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "snack",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 40,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 large eggplants",
+            "2 garlic cloves, crushed",
+            "3 tbsp olive oil",
+            "2 tbsp red wine vinegar",
+            "1 small bunch flat-leaf parsley, chopped",
+            "1 tbsp lemon juice",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the eggplants at 220°C for 35 to 40 minutes, turning once, until the skins are black and the flesh is very soft.",
+        "Scoop the flesh into a sieve and drain for 10 minutes.",
+        "Chop finely and mix with the garlic, oil, vinegar, lemon juice and parsley.",
+        "Season with salt and chill until cold."
+      ],
+      "notes": [
+        "Keeps 4 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 126,
+        "proteinG": 2,
+        "carbsG": 9,
+        "fatG": 8,
+        "fibreG": 5,
+        "sodiumMg": 120
+      }
+    },
+    {
+      "id": "greek-tirokafteri-whipped-feta-and-chilli-dip",
+      "title": "Greek Tirokafteri Whipped Feta and Chilli Dip",
+      "summary": "Tangy whipped feta with roasted red pepper and chilli, a fiery Greek meze.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "snack",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g feta",
+            "100g Greek yoghurt",
+            "1 roasted red capsicum from a jar, drained",
+            "1 long red chilli",
+            "2 tbsp olive oil",
+            "1 tbsp lemon juice",
+            "1 tsp dried oregano"
+          ]
+        }
+      ],
+      "steps": [
+        "Roughly crumble the feta into a food processor.",
+        "Add the yoghurt, capsicum, chilli, olive oil and lemon juice and blend until smooth and creamy.",
+        "Taste and add more chilli if you like, then spoon into a bowl and sprinkle with oregano."
+      ],
+      "notes": [
+        "Keeps 5 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 135,
+        "proteinG": 6,
+        "carbsG": 3,
+        "fatG": 11,
+        "fibreG": 0,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "greek-revithia-chickpea-soup",
+      "title": "Greek Revithia Chickpea Soup",
+      "summary": "Slow-simmered chickpeas with onion, rosemary and lemon, a Sifnos Sunday tradition.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 x 400g tins chickpeas, drained",
+            "3 tbsp olive oil",
+            "1 brown onion, finely chopped",
+            "2 garlic cloves",
+            "1 bay leaf",
+            "1 sprig rosemary",
+            "1 litre vegetable stock",
+            "3 tbsp lemon juice",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion in the oil for 7 minutes, until golden.",
+        "Add the garlic, bay leaf, rosemary, chickpeas and stock.",
+        "Simmer gently for 30 minutes, until the chickpeas are very soft and the broth is slightly creamy.",
+        "Remove the herbs, stir in the lemon juice and season with salt.",
+        "Serve hot with crusty bread."
+      ],
+      "notes": [
+        "Keeps 4 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 292,
+        "proteinG": 12,
+        "carbsG": 30,
+        "fatG": 12,
+        "fibreG": 8,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "italian-panzanella-tuscan-bread-and-tomato-salad",
+      "title": "Italian Panzanella Tuscan Bread and Tomato Salad",
+      "summary": "Juicy tomatoes and crisp sourdough cubes tossed with basil, red onion and a punchy vinaigrette.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g day-old sourdough, torn in chunks",
+            "5 ripe tomatoes, chopped",
+            "1 small red onion, thinly sliced",
+            "1 Lebanese cucumber, chopped",
+            "1 small bunch basil",
+            "4 tbsp olive oil",
+            "2 tbsp red wine vinegar",
+            "1 tbsp capers",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the bread with 2 tbsp olive oil and bake at 200°C for 8 to 10 minutes, until golden and crisp at the edges.",
+        "Combine the tomato, onion, cucumber and capers in a large bowl.",
+        "Whisk the remaining oil, vinegar and salt, pour over and toss.",
+        "Add the bread and basil and rest for 10 minutes until the bread is just soaked but still chewy."
+      ],
+      "notes": [
+        "Best eaten within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 340,
+        "proteinG": 8,
+        "carbsG": 39,
+        "fatG": 16,
+        "fibreG": 4,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "italian-stracciatella-roman-egg-drop-soup",
+      "title": "Italian Stracciatella Roman Egg Drop Soup",
+      "summary": "Rags of egg, parmesan and semolina set in a hot chicken broth, a quick Roman classic.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": true,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "1 litre chicken stock",
+            "3 eggs",
+            "40g parmesan, grated",
+            "1 tbsp semolina",
+            "1 tbsp chopped flat-leaf parsley",
+            "1 pinch nutmeg",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Bring the stock to a gentle boil until bubbling.",
+        "Beat the eggs with the parmesan, semolina, parsley, nutmeg and 2 tbsp cold stock.",
+        "Pour into the pot in a thin stream while stirring slowly, and cook for 2 minutes, until the egg sets in thin ragged ribbons.",
+        "Season with salt and serve straight away."
+      ],
+      "notes": [
+        "Food safety: cook the egg until fully set, with no liquid egg. Parmesan is not vegetarian."
+      ],
+      "nutrition": {
+        "kcal": 136,
+        "proteinG": 13,
+        "carbsG": 3,
+        "fatG": 8,
+        "fibreG": 0,
+        "sodiumMg": 1000
+      }
+    },
+    {
+      "id": "italian-pappa-al-pomodoro-tuscan-tomato-bread-soup",
+      "title": "Italian Pappa al Pomodoro Tuscan Tomato Bread Soup",
+      "summary": "Thick Tuscan soup of ripe tomatoes, stale bread, garlic and basil, finished with green olive oil.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 tbsp olive oil",
+            "3 garlic cloves, sliced",
+            "800g tinned whole tomatoes",
+            "600ml vegetable stock",
+            "250g stale bread, torn",
+            "1 small bunch basil",
+            "1 pinch chilli flakes",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm 2 tbsp oil with the garlic and chilli for 2 minutes, until fragrant but not browned.",
+        "Add the tomatoes, crushing them, and the stock and simmer for 15 minutes, until thickened.",
+        "Stir in the bread and cook for 8 minutes, until it breaks down into a thick porridge-like soup.",
+        "Tear in the basil, season with salt and finish with the remaining oil."
+      ],
+      "notes": [
+        "Thickens as it stands; loosen with hot water."
+      ],
+      "nutrition": {
+        "kcal": 340,
+        "proteinG": 9,
+        "carbsG": 42,
+        "fatG": 14,
+        "fibreG": 5,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "italian-frittata-di-zucchine",
+      "title": "Italian Frittata di Zucchine",
+      "summary": "Thick zucchini and cheese frittata, set under the grill and served warm or cold.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 eggs",
+            "3 zucchini, grated",
+            "40g vegetarian hard cheese, grated",
+            "2 tbsp olive oil",
+            "1 small bunch basil, chopped",
+            "1 garlic clove",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Squeeze the zucchini dry and sauté in the oil with the garlic in an ovenproof pan for 5 minutes, until softened.",
+        "Beat the eggs with the cheese, basil and salt and pour over.",
+        "Cook on low heat for 5 minutes until the edges set, then grill for 3 to 4 minutes until the top is golden and the centre is set with no liquid egg.",
+        "Rest 5 minutes and cut into wedges."
+      ],
+      "notes": [
+        "Food safety: cook until the egg is fully set with no liquid. Refrigerate within 2 hours and eat within 3 days."
+      ],
+      "nutrition": {
+        "kcal": 221,
+        "proteinG": 17,
+        "carbsG": 4,
+        "fatG": 15,
+        "fibreG": 1,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "moroccan-zaalouk-smoky-eggplant-and-tomato-salad",
+      "title": "Moroccan Zaalouk Smoky Eggplant and Tomato Salad",
+      "summary": "Slow-cooked eggplant and tomato with garlic, cumin and paprika, served warm or cold with bread.",
+      "cuisine": "north-african",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 40,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 large eggplants, diced",
+            "5 ripe tomatoes, chopped",
+            "4 tbsp olive oil",
+            "4 garlic cloves",
+            "2 tsp ground cumin",
+            "2 tsp sweet paprika",
+            "1 tbsp lemon juice",
+            "1 small bunch fresh coriander",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Salt the eggplant for 10 minutes, rinse and pat dry.",
+        "Cook the tomatoes, garlic and spices in the oil for 10 minutes, until jammy.",
+        "Add the eggplant and 100ml water, cover and simmer for 20 minutes, until completely soft.",
+        "Mash roughly with a fork and cook uncovered for 5 minutes until thick, then add lemon juice and coriander."
+      ],
+      "notes": [
+        "Keeps 5 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 157,
+        "proteinG": 3,
+        "carbsG": 13,
+        "fatG": 9,
+        "fibreG": 6,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "ethiopian-misir-wot-red-lentil-stew",
+      "title": "Ethiopian Misir Wot Red Lentil Stew",
+      "summary": "Spiced red lentils simmered with onion, garlic, ginger and a berbere-style paprika blend.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g red lentils, rinsed",
+            "2 brown onions, finely chopped",
+            "3 tbsp vegetable oil",
+            "4 garlic cloves",
+            "1 tbsp grated fresh ginger",
+            "2 tbsp sweet paprika",
+            "1 tsp cayenne pepper",
+            "1 tsp ground cumin",
+            "1 tsp ground coriander",
+            "1 tbsp tomato paste",
+            "750ml water",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onions dry in a heavy pot for 8 minutes, until soft and starting to colour.",
+        "Add the oil, garlic and ginger, then the spices and tomato paste, and stir for 3 minutes until a thick paste forms.",
+        "Add the lentils and water, bring to the boil and simmer for 20 minutes, until the lentils are tender and the stew is thick.",
+        "Season with salt and serve with injera or rice."
+      ],
+      "notes": [
+        "Keeps 4 days and freezes well."
+      ],
+      "nutrition": {
+        "kcal": 336,
+        "proteinG": 16,
+        "carbsG": 40,
+        "fatG": 10,
+        "fibreG": 11,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "ethiopian-shiro-wot-chickpea-flour-stew",
+      "title": "Ethiopian Shiro Wot Chickpea Flour Stew",
+      "summary": "Smooth, spiced chickpea flour stew with onion and garlic, an everyday fasting dish.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "120g chickpea flour",
+            "2 brown onions, finely chopped",
+            "3 tbsp vegetable oil",
+            "4 garlic cloves",
+            "1 tbsp grated fresh ginger",
+            "2 tbsp sweet paprika",
+            "1 tsp cayenne pepper",
+            "1 tsp ground cumin",
+            "750ml water",
+            "1 tbsp lemon juice",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onions in a dry pot for 8 minutes, until soft.",
+        "Add the oil, garlic, ginger and spices and stir for 2 minutes, until fragrant.",
+        "Whisk the chickpea flour into the water until no lumps remain and pour into the pot.",
+        "Simmer, stirring often, for 15 minutes, until thick, smooth and glossy.",
+        "Stir in the lemon juice and salt and serve with injera."
+      ],
+      "notes": [
+        "Thickens as it cools; loosen with water. Keeps 4 days."
+      ],
+      "nutrition": {
+        "kcal": 227,
+        "proteinG": 9,
+        "carbsG": 20,
+        "fatG": 11,
+        "fibreG": 6,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "ethiopian-gomen-braised-silverbeet-and-garlic",
+      "title": "Ethiopian Gomen Braised Silverbeet and Garlic",
+      "summary": "Garlicky, ginger-scented braised greens, a staple beside stews and injera.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 bunches silverbeet, stems removed, sliced",
+            "3 tbsp vegetable oil",
+            "1 brown onion, chopped",
+            "4 garlic cloves",
+            "1 tbsp grated fresh ginger",
+            "1 green chilli, sliced",
+            "1 tsp ground turmeric",
+            "150ml water",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Blanch the silverbeet in boiling water for 2 minutes, until wilted, then drain and squeeze.",
+        "Cook the onion in the oil for 6 minutes, until soft.",
+        "Add the garlic, ginger, chilli and turmeric for 1 minute until fragrant.",
+        "Add the greens and the water and simmer for 10 minutes, until tender and the liquid has reduced.",
+        "Season with salt and taste, adding a squeeze of lemon if you like."
+      ],
+      "notes": [
+        "Keeps 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 106,
+        "proteinG": 3,
+        "carbsG": 6,
+        "fatG": 7,
+        "fibreG": 3,
+        "sodiumMg": 350
+      }
+    },
+    {
+      "id": "mexican-chilaquiles-rojos",
+      "title": "Mexican Chilaquiles Rojos",
+      "summary": "Crisp tortilla wedges in roasted tomato and chilli salsa, topped with fried eggs and fresh ricotta.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 corn tortillas, cut in wedges",
+            "5 tbsp vegetable oil",
+            "4 ripe tomatoes",
+            "2 dried chillies",
+            "2 garlic cloves",
+            "1/2 brown onion",
+            "200ml chicken stock",
+            "4 eggs",
+            "60g crumbled fresh ricotta",
+            "1 small bunch fresh coriander",
+            "1 red onion, thinly sliced",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the tortillas in 4 tbsp oil in batches for 2 to 3 minutes, until crisp, and drain on paper towel.",
+        "Grill the tomatoes, chillies and garlic for 8 minutes, until charred, then blend with the onion and stock to a smooth salsa.",
+        "Simmer the salsa in a wide pan for 5 minutes, until slightly thickened, and season with salt.",
+        "Fold in the chips for 1 minute, until just coated but still with some bite.",
+        "Fry the eggs in the remaining oil until the whites are set and place on top, then scatter with ricotta, red onion and coriander."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set; pregnant, elderly and young people should have the yolks cooked firm."
+      ],
+      "nutrition": {
+        "kcal": 398,
+        "proteinG": 14,
+        "carbsG": 38,
+        "fatG": 20,
+        "fibreG": 5,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "mexican-pico-de-gallo-fresh-tomato-salsa",
+      "title": "Mexican Pico de Gallo Fresh Tomato Salsa",
+      "summary": "Chunky tomato, onion, coriander and lime salsa, best eaten fresh with chips, tacos and grilled meat.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "snack",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "5 ripe tomatoes, finely diced",
+            "1 small white onion, finely diced",
+            "1 jalapeno, finely chopped",
+            "1 small bunch fresh coriander, chopped",
+            "3 tbsp lime juice",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the tomato, onion, jalapeno and coriander in a bowl.",
+        "Stir through the lime juice and salt.",
+        "Rest for 10 minutes until the juices run, then taste and adjust."
+      ],
+      "notes": [
+        "Best the same day; keeps 2 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 46,
+        "proteinG": 1,
+        "carbsG": 9,
+        "fatG": 0,
+        "fibreG": 3,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "colombian-hogao-tomato-and-onion-sofrito",
+      "title": "Colombian Hogao Tomato and Onion Sofrito",
+      "summary": "Slow-cooked tomato, spring onion and garlic base that flavours Colombian rice, beans and arepas.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 tbsp vegetable oil",
+            "4 spring onions, sliced",
+            "1 brown onion, finely chopped",
+            "5 tomatoes, finely chopped",
+            "3 garlic cloves",
+            "1 tsp ground cumin",
+            "1 tsp sugar",
+            "1 small bunch fresh coriander",
+            "Salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the oil in a pan and cook the brown onion and spring onions for 6 minutes, until soft.",
+        "Add the garlic, tomatoes, cumin and sugar and simmer for 12 minutes, until jammy and thick.",
+        "Stir in the coriander and salt and serve warm over rice, eggs or arepas."
+      ],
+      "notes": [
+        "Keeps 5 days in the fridge or freeze in portions."
+      ],
+      "nutrition": {
+        "kcal": 99,
+        "proteinG": 1,
+        "carbsG": 7,
+        "fatG": 7,
+        "fibreG": 2,
+        "sodiumMg": 180
+      }
+    }
+  ]
+}

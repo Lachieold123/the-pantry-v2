@@ -1,0 +1,1160 @@
+{
+  "about": "House recipes, batch 04 (slice B): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "shami-kebab-lahori-lamb-and-lentil-patties",
+      "title": "Shami Kebab Lahori Lamb and Lentil Patties",
+      "summary": "Soft pan-fried patties of minced lamb and chana dal with warm spices, served with mint yoghurt and flatbread.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "500g minced lamb",
+            "1/2 cup red lentils",
+            "1 onion, chopped",
+            "2 cloves garlic, minced",
+            "1 tsp ground cumin",
+            "1 tsp garam masala",
+            "1 egg",
+            "2 tbsp vegetable oil",
+            "1 cup plain yoghurt",
+            "1 tbsp fresh mint, chopped",
+            "4 flatbreads"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the lamb, lentils, onion, garlic, cumin, garam masala, 1 tsp salt and 1 cup water for 20 minutes until the water has gone and the lentils are soft.",
+        "Cool slightly, mince in a food processor until paste-like, then mix in the egg.",
+        "Shape into 12 patties and chill for 10 minutes so they hold together.",
+        "Fry in the oil for 3 minutes each side until browned and crisp.",
+        "Stir the mint into the yoghurt and serve with the patties and warm flatbreads."
+      ],
+      "notes": [
+        "Food safety: cook the lamb until it reaches 75°C throughout, and the egg until set. Contains egg. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 538,
+        "proteinG": 38,
+        "carbsG": 40,
+        "fatG": 24,
+        "fibreG": 5,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "malai-boti-lahori-creamy-chicken-skewers",
+      "title": "Malai Boti Lahori Creamy Chicken Skewers",
+      "summary": "Mild chicken marinated in cream, yoghurt and white pepper then grilled, with rice and a squeeze of lemon.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g boneless chicken breast, cut in chunks",
+            "1/2 cup cream",
+            "1/2 cup plain yoghurt",
+            "1 tbsp fresh ginger, grated",
+            "3 cloves garlic, minced",
+            "1 tsp ground pepper",
+            "1 tsp garam masala",
+            "1 lemon",
+            "1 cup basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the chicken with the cream, yoghurt, ginger, garlic, pepper, garam masala and 1 tsp salt, and thread onto skewers.",
+        "Cook the rice until tender and fluffy.",
+        "Grill over medium-high heat for 12 minutes, turning, until golden at the edges and cooked through.",
+        "Serve with the rice and lemon wedges for squeezing over."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C in the thickest piece. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 524,
+        "proteinG": 40,
+        "carbsG": 50,
+        "fatG": 18,
+        "fibreG": 1,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "lahori-fried-fish-with-chickpea-flour-crust",
+      "title": "Lahori Fried Fish with Chickpea Flour Crust",
+      "summary": "Firm white fish in a spiced chickpea flour coating, fried until crisp, with lemon and mint yoghurt.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g white fish fillet, cut in strips",
+            "1/2 cup chickpea flour",
+            "1 tbsp cornflour",
+            "1 tsp ground cumin",
+            "1 tsp ground coriander",
+            "1 tsp chilli powder",
+            "1 tsp ground turmeric",
+            "1 lemon",
+            "1/2 cup vegetable oil",
+            "1 cup plain yoghurt",
+            "1 tbsp fresh mint, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the fish with the lemon juice and 1/2 tsp salt.",
+        "Mix the chickpea flour, cornflour and spices with 1/3 cup water into a thick batter and coat the fish.",
+        "Shallow-fry the fish in batches for 3 minutes each side until golden and crisp.",
+        "Drain on paper and stir the mint into the yoghurt to serve alongside."
+      ],
+      "notes": [
+        "Food safety: cook the fish until opaque and it reaches 63°C at the centre. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 422,
+        "proteinG": 36,
+        "carbsG": 14,
+        "fatG": 24,
+        "fibreG": 3,
+        "sodiumMg": 550
+      }
+    },
+    {
+      "id": "chopan-kebab-afghan-lamb-chops-with-flatbread",
+      "title": "Chopan Kebab Afghan Lamb Chops with Flatbread",
+      "summary": "Simple salt, pepper and onion lamb cutlets grilled until crusty, served with flatbread and grilled tomato.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g lamb cutlets",
+            "1 onion, grated",
+            "3 cloves garlic, minced",
+            "1 tsp ground coriander",
+            "1 tsp ground pepper",
+            "2 tbsp vegetable oil",
+            "4 tomatoes, halved",
+            "4 flatbreads"
+          ]
+        }
+      ],
+      "steps": [
+        "Rub the cutlets with the onion, garlic, coriander, pepper, oil and 1 tsp salt.",
+        "Grill the tomatoes cut-side down for 6 minutes until blistered.",
+        "Grill the cutlets over high heat for 4 minutes each side until browned and cooked to your liking.",
+        "Rest the lamb for 3 minutes and serve with the tomatoes and warmed flatbreads."
+      ],
+      "notes": [
+        "Food safety: cook the lamb until it reaches 63°C at the thickest point, with 3 minutes rest. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 574,
+        "proteinG": 36,
+        "carbsG": 34,
+        "fatG": 32,
+        "fibreG": 3,
+        "sodiumMg": 750
+      }
+    },
+    {
+      "id": "bolani-afghan-potato-and-chive-stuffed-flatbread",
+      "title": "Bolani Afghan Potato and Chive Stuffed Flatbread",
+      "summary": "Thin fried flatbreads filled with mashed potato, chives and cumin, served with yoghurt and a tomato salsa.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 40,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups plain flour",
+            "3 potatoes, peeled and diced",
+            "1/2 cup garlic chives, chopped",
+            "1 tsp ground cumin",
+            "1 tsp chilli flakes",
+            "1/4 cup vegetable oil",
+            "1 cup plain yoghurt",
+            "2 tomatoes, diced"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour, 1/2 tsp salt, 1 tbsp oil and 3/4 cup warm water into a soft dough, then rest 20 minutes.",
+        "Boil the potatoes for 12 minutes until soft, drain and mash with the chives, cumin, chilli and a pinch of salt.",
+        "Divide the dough into 4, roll thin, spread half of each round with filling, fold over and seal.",
+        "Fry in the remaining oil for 3 minutes each side until golden and crisp.",
+        "Serve with the yoghurt and diced tomato."
+      ],
+      "nutrition": {
+        "kcal": 542,
+        "proteinG": 14,
+        "carbsG": 78,
+        "fatG": 18,
+        "fibreG": 6,
+        "sodiumMg": 500
+      }
+    },
+    {
+      "id": "sekuwa-nepali-charcoal-style-grilled-pork",
+      "title": "Sekuwa Nepali Charcoal-Style Grilled Pork",
+      "summary": "Smoky pork pieces rubbed with ginger, garlic, timur-style pepper and mustard oil, grilled and served with rice.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g pork shoulder, cut in chunks",
+            "2 tbsp mustard oil",
+            "1 tbsp fresh ginger, grated",
+            "4 cloves garlic, minced",
+            "1 tsp ground cumin",
+            "1 tsp ground coriander",
+            "1 tsp ground pepper",
+            "1 tsp chilli powder",
+            "1 lemon",
+            "1 cup basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Rub the pork with the oil, ginger, garlic, spices and 1 tsp salt.",
+        "Cook the rice until tender and fluffy.",
+        "Grill or roast the pork at 220°C for 20 minutes, turning, until browned and tender.",
+        "Squeeze over the lemon and serve with the rice."
+      ],
+      "notes": [
+        "Food safety: cook the pork until it reaches 75°C in the thickest piece. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 556,
+        "proteinG": 38,
+        "carbsG": 46,
+        "fatG": 24,
+        "fibreG": 2,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "dal-bhat-nepali-lentil-plate-with-spinach-and-potato-tarkari",
+      "title": "Dal Bhat Nepali Lentil Plate with Spinach and Potato Tarkari",
+      "summary": "Lentil soup poured over rice, with a mild spiced potato and spinach side, and a squeeze of lime.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup red lentils",
+            "1 cup basmati rice",
+            "2 potatoes, diced",
+            "2 cups baby spinach",
+            "1 onion, sliced",
+            "2 cloves garlic, minced",
+            "1 tsp ground turmeric",
+            "1 tsp ground cumin",
+            "2 tbsp vegetable oil",
+            "1 lime"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the lentils with the turmeric and 3 cups water for 20 minutes until soft, then season with salt.",
+        "Cook the rice until tender and fluffy.",
+        "Fry the onion, garlic and cumin in the oil for 5 minutes, add the potatoes and 1/2 cup water and cook for 12 minutes until tender.",
+        "Stir in the spinach for 2 minutes until wilted.",
+        "Serve the rice with the dal and tarkari, with lime wedges."
+      ],
+      "nutrition": {
+        "kcal": 544,
+        "proteinG": 20,
+        "carbsG": 92,
+        "fatG": 8,
+        "fibreG": 12,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "thukpa-nepali-chicken-noodle-curry",
+      "title": "Thukpa Nepali Chicken Noodle Curry",
+      "summary": "A warming bowl of chicken, noodles and vegetables in a mild ginger and tomato broth.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g boneless chicken thighs, sliced",
+            "200g egg noodles",
+            "1 onion, sliced",
+            "2 carrots, sliced",
+            "2 cups cabbage, shredded",
+            "1 tbsp fresh ginger, grated",
+            "3 cloves garlic, minced",
+            "2 tomatoes, chopped",
+            "1 tsp ground cumin",
+            "1 tbsp soy sauce",
+            "1 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onion, ginger and garlic in the oil for 5 minutes, then add the cumin and tomatoes for 3 minutes.",
+        "Add the chicken and 5 cups water and simmer for 12 minutes until the chicken is cooked through.",
+        "Add the carrots and cabbage and simmer for 5 minutes until tender.",
+        "Boil the noodles separately for 4 minutes, drain and divide among bowls.",
+        "Ladle over the broth and finish with the soy sauce."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C. Contains egg. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 454,
+        "proteinG": 32,
+        "carbsG": 52,
+        "fatG": 12,
+        "fibreG": 5,
+        "sodiumMg": 850
+      }
+    },
+    {
+      "id": "mappas-kerala-chicken-in-gentle-coconut-gravy",
+      "title": "Mappas Kerala Chicken in Gentle Coconut Gravy",
+      "summary": "A mild coconut milk chicken stew with potatoes, peppercorns and cardamom, served with rice.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g boneless chicken thighs, cut in chunks",
+            "2 potatoes, diced",
+            "400ml coconut milk",
+            "1 onion, sliced",
+            "1 tbsp fresh ginger, grated",
+            "2 cloves garlic, minced",
+            "1 tsp ground pepper",
+            "1/2 tsp ground cardamom",
+            "1 tbsp coconut oil",
+            "1 cup basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion, ginger and garlic in the oil for 6 minutes.",
+        "Add the chicken, potatoes, pepper, cardamom and 1 tsp salt and cook for 4 minutes.",
+        "Pour in the coconut milk and 1/2 cup water and simmer for 20 minutes until the chicken and potato are tender.",
+        "Cook the rice until tender and fluffy, and serve the stew over it."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 652,
+        "proteinG": 38,
+        "carbsG": 56,
+        "fatG": 30,
+        "fibreG": 3,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "kerala-vegetable-stew-with-appam-style-pancakes",
+      "title": "Kerala Vegetable Stew with Appam-Style Pancakes",
+      "summary": "Vegetables in a mild coconut milk stew served with soft rice-flour pancakes.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 potatoes, diced",
+            "2 carrots, sliced",
+            "1 cup green beans, trimmed",
+            "1 onion, sliced",
+            "1 tbsp fresh ginger, grated",
+            "400ml coconut milk",
+            "1 tsp ground pepper",
+            "1 tbsp coconut oil",
+            "1 cup rice flour",
+            "1 tsp instant yeast",
+            "1 tsp sugar"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the rice flour, yeast, sugar, a pinch of salt and 1 1/4 cups warm water into a batter, then rest for 1 hour.",
+        "Soften the onion and ginger in the oil for 5 minutes, add the potatoes, carrots, pepper and 1 cup water, and cook 12 minutes until tender.",
+        "Add the beans and coconut milk and simmer for 6 minutes until the beans are tender.",
+        "Pour small ladles of batter into a hot non-stick pan, swirl and cook covered for 2 minutes until set and lacy at the edges.",
+        "Serve the pancakes with the stew."
+      ],
+      "nutrition": {
+        "kcal": 544,
+        "proteinG": 8,
+        "carbsG": 70,
+        "fatG": 24,
+        "fibreG": 8,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "bhapa-maach-bengali-steamed-mustard-fish-parcels",
+      "title": "Bhapa Maach Bengali Steamed Mustard Fish Parcels",
+      "summary": "Fish pieces steamed with mustard paste and green chilli in foil parcels, served with rice.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g white fish fillet, cut in pieces",
+            "2 tbsp mustard seeds",
+            "2 green chillies",
+            "1/2 cup desiccated coconut",
+            "1 tsp ground turmeric",
+            "2 tbsp mustard oil",
+            "1 cup basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the mustard seeds, chillies, coconut and 1/3 cup water into a coarse paste, then stir in the turmeric, oil and 1 tsp salt.",
+        "Coat the fish and wrap in foil or banana leaf parcels.",
+        "Steam for 15 minutes until the fish is opaque and flakes easily.",
+        "Cook the rice until tender and fluffy, and serve with the parcels."
+      ],
+      "notes": [
+        "Food safety: cook the fish until opaque and it reaches 63°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 514,
+        "proteinG": 32,
+        "carbsG": 50,
+        "fatG": 20,
+        "fibreG": 3,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "kosha-mangsho-bengali-slow-cooked-lamb-curry",
+      "title": "Kosha Mangsho Bengali Slow-Cooked Lamb Curry",
+      "summary": "Lamb slowly browned with onions and spices until the sauce clings, served with rice.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 20,
+      "cookMinutes": 90,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g lamb shoulder, cut in chunks",
+            "3 onions, sliced",
+            "2 potatoes, quartered",
+            "1 tbsp fresh ginger, grated",
+            "4 cloves garlic, minced",
+            "1 tsp ground cumin",
+            "1 tsp ground coriander",
+            "1 tsp ground turmeric",
+            "1 tsp chilli powder",
+            "1/3 cup plain yoghurt",
+            "3 tbsp mustard oil",
+            "1 cup basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the onions in the oil for 15 minutes until deep golden.",
+        "Add the ginger, garlic, spices and yoghurt and cook for 5 minutes until the oil separates.",
+        "Add the lamb and cook 10 minutes, then add 1 cup water and the potatoes, cover and simmer for 1 hour until tender.",
+        "Cook the rice until tender and fluffy, then serve with the curry."
+      ],
+      "notes": [
+        "Food safety: cook the lamb until it reaches 75°C and is tender. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 714,
+        "proteinG": 42,
+        "carbsG": 58,
+        "fatG": 34,
+        "fibreG": 4,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "hyderabadi-chicken-dum-biryani",
+      "title": "Hyderabadi Chicken Dum Biryani",
+      "summary": "Spiced chicken and fragrant rice layered and steamed together under a tight lid.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 30,
+      "cookMinutes": 50,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g boneless chicken thighs, cut in chunks",
+            "1 1/2 cups basmati rice",
+            "1/2 cup plain yoghurt",
+            "2 onions, sliced",
+            "1 tbsp fresh ginger, grated",
+            "4 cloves garlic, minced",
+            "2 tsp garam masala",
+            "1 tsp ground turmeric",
+            "1 tsp chilli powder",
+            "1/4 cup fresh mint, chopped",
+            "3 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the onions in the oil for 15 minutes until deep golden, then set half aside.",
+        "Add the ginger, garlic, spices, yoghurt, chicken and 1 tsp salt to the remaining onions and cook 12 minutes.",
+        "Boil the rice in salted water for 5 minutes until just par-cooked, then drain.",
+        "Layer the rice over the chicken with the mint and reserved onions, cover tightly and cook on low heat for 25 minutes until the rice is tender.",
+        "Fluff gently with a fork and serve straight from the pot."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 618,
+        "proteinG": 40,
+        "carbsG": 68,
+        "fatG": 20,
+        "fibreG": 3,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "lucknowi-chicken-korma-mild-almond-curry",
+      "title": "Lucknowi Chicken Korma Mild Almond Curry",
+      "summary": "A creamy, mild chicken curry with yoghurt and ground almonds, good for children, served with rice.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g boneless chicken thighs, cut in chunks",
+            "1/2 cup plain yoghurt",
+            "1/2 cup ground almonds",
+            "2 onions, sliced",
+            "1 tbsp fresh ginger, grated",
+            "3 cloves garlic, minced",
+            "1 tsp ground cardamom",
+            "1 tsp ground coriander",
+            "2 tbsp butter",
+            "1 cup basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onions in the butter for 10 minutes without browning, then add the ginger, garlic and spices for 1 minute.",
+        "Add the chicken and brown lightly for 5 minutes.",
+        "Stir in the yoghurt, almonds and 1 cup water and simmer for 20 minutes until the chicken is tender.",
+        "Cook the rice until tender and fluffy, and serve with the curry."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 654,
+        "proteinG": 42,
+        "carbsG": 52,
+        "fatG": 30,
+        "fibreG": 4,
+        "sodiumMg": 550
+      }
+    },
+    {
+      "id": "kadhi-pakora-punjabi-yoghurt-curry-with-chickpea-fritters",
+      "title": "Kadhi Pakora Punjabi Yoghurt Curry with Chickpea Fritters",
+      "summary": "A tangy turmeric yoghurt curry holding soft onion fritters, served with rice.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups plain yoghurt",
+            "1/2 cup chickpea flour",
+            "1 onion, sliced",
+            "1 tsp ground turmeric",
+            "1 tsp ground cumin",
+            "1 tsp chilli powder",
+            "1 tsp mustard seeds",
+            "3 tbsp vegetable oil",
+            "1 cup basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the yoghurt, 1/4 cup chickpea flour, turmeric and 3 cups water until smooth, then simmer for 25 minutes, stirring, until thickened.",
+        "Mix the remaining chickpea flour with the onion, half the cumin, 1/2 tsp salt and 3 tbsp water into a thick batter.",
+        "Fry spoonfuls in 2 tbsp oil for 3 minutes each side until golden, then add to the kadhi.",
+        "Heat the last tbsp oil, sizzle the mustard seeds, cumin and chilli for 30 seconds and pour over.",
+        "Cook the rice until tender and fluffy, and serve with the kadhi."
+      ],
+      "nutrition": {
+        "kcal": 524,
+        "proteinG": 14,
+        "carbsG": 70,
+        "fatG": 20,
+        "fibreG": 4,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "gujarati-vegetarian-thali-with-dal-potato-curry-and-rotis",
+      "title": "Gujarati Vegetarian Thali with Dal, Potato Curry and Rotis",
+      "summary": "A balanced plate of sweet-sour dal, spiced potato and cauliflower and soft rotis.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup red lentils",
+            "3 potatoes, diced",
+            "2 cups cauliflower florets",
+            "1 tsp ground turmeric",
+            "1 tsp ground cumin",
+            "1 tsp mustard seeds",
+            "1 tbsp sugar",
+            "1 lemon",
+            "3 tbsp vegetable oil",
+            "1 1/2 cups plain flour"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the lentils with the turmeric and 3 cups water for 20 minutes until soft, then stir in the sugar, lemon juice and salt.",
+        "Knead the flour with 1/2 cup water and 1 tbsp oil, rest 10 minutes, then roll into 8 thin rounds.",
+        "Sizzle the mustard seeds and cumin in the remaining oil, add the potatoes, cauliflower and 1/2 cup water, and cook covered 15 minutes until tender.",
+        "Cook the rotis in a dry pan for 1 minute each side until blistered.",
+        "Serve everything on a plate."
+      ],
+      "nutrition": {
+        "kcal": 560,
+        "proteinG": 18,
+        "carbsG": 90,
+        "fatG": 12,
+        "fibreG": 10,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "pav-bhaji-mumbai-spiced-vegetable-mash-with-buttered-rolls",
+      "title": "Pav Bhaji Mumbai Spiced Vegetable Mash with Buttered Rolls",
+      "summary": "A buttery spiced tomato and vegetable mash scooped up with toasted rolls.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 potatoes, diced",
+            "1 cup cauliflower florets",
+            "1/2 cup frozen peas",
+            "1 capsicum, diced",
+            "2 tomatoes, chopped",
+            "1 onion, finely chopped",
+            "2 tsp garam masala",
+            "1 tsp chilli powder",
+            "3 tbsp butter",
+            "8 bread rolls",
+            "1 lemon"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes and cauliflower for 12 minutes until soft, then drain.",
+        "Fry the onion and capsicum in 2 tbsp butter for 6 minutes, add the tomatoes and spices and cook 8 minutes until pulpy.",
+        "Add the boiled vegetables and peas, mash roughly while cooking 8 minutes until thick.",
+        "Toast the split rolls in the remaining butter until golden.",
+        "Serve the bhaji with the rolls and lemon wedges."
+      ],
+      "nutrition": {
+        "kcal": 512,
+        "proteinG": 14,
+        "carbsG": 78,
+        "fatG": 14,
+        "fibreG": 9,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "galle-style-ambul-thiyal-peppery-sour-fish",
+      "title": "Galle-Style Ambul Thiyal Peppery Sour Fish",
+      "summary": "Dry-style fish curry cooked with black pepper and tamarind, served with rice.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g white fish fillet, cut in chunks",
+            "2 tbsp tamarind paste",
+            "1 tbsp ground pepper",
+            "1 tsp ground turmeric",
+            "3 cloves garlic, minced",
+            "1 tbsp fresh ginger, grated",
+            "1 tbsp coconut oil",
+            "1 cup basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the tamarind, pepper, turmeric, garlic, ginger, 1 tsp salt and 1/2 cup water.",
+        "Add the fish and simmer gently for 20 minutes until the liquid has reduced and clings.",
+        "Cook the rice until tender and fluffy.",
+        "Stir in the oil and serve with the rice."
+      ],
+      "notes": [
+        "Food safety: cook the fish until opaque and it reaches 63°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 396,
+        "proteinG": 30,
+        "carbsG": 50,
+        "fatG": 8,
+        "fibreG": 2,
+        "sodiumMg": 500
+      }
+    },
+    {
+      "id": "tehari-dhaka-beef-and-potato-rice",
+      "title": "Tehari Dhaka Beef and Potato Rice",
+      "summary": "Aromatic rice cooked with tender beef, potato and mustard oil, Dhaka style.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 60,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g beef chuck, cut in chunks",
+            "1 1/2 cups basmati rice",
+            "2 potatoes, quartered",
+            "2 onions, sliced",
+            "1 tbsp fresh ginger, grated",
+            "3 cloves garlic, minced",
+            "1 tsp garam masala",
+            "1 tsp ground turmeric",
+            "3 tbsp mustard oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the onions in the oil for 12 minutes, then add the ginger, garlic and spices for 2 minutes.",
+        "Add the beef and 1 tsp salt and cook 8 minutes, then add 2 cups water, cover and simmer for 40 minutes until tender.",
+        "Add the potatoes, rice and 2 more cups water and simmer covered 15 minutes until the rice is tender.",
+        "Rest covered for 5 minutes before fluffing."
+      ],
+      "notes": [
+        "Food safety: cook the beef until it reaches 75°C and is tender. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 660,
+        "proteinG": 38,
+        "carbsG": 76,
+        "fatG": 22,
+        "fibreG": 3,
+        "sodiumMg": 550
+      }
+    },
+    {
+      "id": "murgir-jhol-bangladeshi-home-style-chicken-curry",
+      "title": "Murgir Jhol Bangladeshi Home-Style Chicken Curry",
+      "summary": "A light, thin-gravy chicken and potato curry for everyday rice.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g chicken drumsticks",
+            "2 potatoes, quartered",
+            "2 onions, sliced",
+            "1 tbsp fresh ginger, grated",
+            "3 cloves garlic, minced",
+            "1 tsp ground cumin",
+            "1 tsp ground turmeric",
+            "1 tsp chilli powder",
+            "2 tbsp vegetable oil",
+            "1 cup basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the onions in the oil for 10 minutes, then add the ginger, garlic and spices for 1 minute.",
+        "Add the chicken and cook 6 minutes, then add the potatoes, 2 cups water and 1 tsp salt.",
+        "Cover and simmer for 25 minutes until the chicken is cooked through and the potato tender.",
+        "Cook the rice until tender and fluffy, and serve with the curry."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C near the bone. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 564,
+        "proteinG": 36,
+        "carbsG": 58,
+        "fatG": 20,
+        "fibreG": 4,
+        "sodiumMg": 550
+      }
+    },
+    {
+      "id": "tandoori-prawns-with-mint-chutney-yoghurt",
+      "title": "Tandoori Prawns with Mint Chutney Yoghurt",
+      "summary": "Prawns in a spiced yoghurt coating grilled until charred at the edges.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 8,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g raw prawns, peeled",
+            "1/2 cup plain yoghurt",
+            "1 tbsp fresh ginger, grated",
+            "2 cloves garlic, minced",
+            "2 tsp garam masala",
+            "1 tsp chilli powder",
+            "1 lemon",
+            "1 tbsp vegetable oil",
+            "1 cup basmati rice",
+            "1 tbsp fresh mint, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the prawns with half the yoghurt, ginger, garlic, spices, oil, lemon juice and 1/2 tsp salt.",
+        "Cook the rice until tender and fluffy.",
+        "Grill the prawns on skewers for 5 minutes, turning, until pink and lightly charred.",
+        "Stir the mint into the remaining yoghurt and serve with the prawns and rice."
+      ],
+      "notes": [
+        "Food safety: cook the prawns until pink and firm, about 63°C inside. Contains shellfish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 428,
+        "proteinG": 36,
+        "carbsG": 52,
+        "fatG": 8,
+        "fibreG": 2,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "kashmiri-rogan-josh-lamb-curry",
+      "title": "Kashmiri Rogan Josh Lamb Curry",
+      "summary": "Lamb slowly cooked in a ginger, fennel and chilli yoghurt gravy with a deep red colour.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 80,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g lamb shoulder, cut in chunks",
+            "1/2 cup plain yoghurt",
+            "2 onions, finely chopped",
+            "1 tbsp fresh ginger, grated",
+            "4 cloves garlic, minced",
+            "2 tsp ground fennel",
+            "2 tsp chilli powder",
+            "1 tsp ground cardamom",
+            "1 tsp ground cinnamon",
+            "3 tbsp vegetable oil",
+            "1 cup basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the lamb in the oil for 8 minutes in batches, then remove.",
+        "Soften the onions in the same pot for 8 minutes, add the ginger, garlic and spices for 1 minute.",
+        "Return the lamb with the yoghurt and 1 cup water, cover, and simmer for 1 hour until tender.",
+        "Cook the rice until tender and fluffy, and serve with the curry."
+      ],
+      "notes": [
+        "Food safety: cook the lamb until it reaches 75°C and is tender. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 642,
+        "proteinG": 42,
+        "carbsG": 54,
+        "fatG": 28,
+        "fibreG": 3,
+        "sodiumMg": 550
+      }
+    },
+    {
+      "id": "mangalorean-chicken-ghee-roast",
+      "title": "Mangalorean Chicken Ghee Roast",
+      "summary": "Chicken in a dry-roasted red chilli and spice paste cooked in ghee until sticky.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g boneless chicken thighs, cut in chunks",
+            "6 dried chillies",
+            "1 tsp ground cumin",
+            "1 tsp ground coriander",
+            "1 tsp ground pepper",
+            "2 tbsp tamarind paste",
+            "4 cloves garlic",
+            "3 tbsp ghee",
+            "1 tbsp sugar",
+            "1 cup basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the chillies in hot water 10 minutes, then blend with the spices, tamarind and garlic into a paste.",
+        "Rub the chicken with the paste and 1 tsp salt.",
+        "Cook the chicken in the ghee over medium heat for 25 minutes, stirring, until dark and the oil clings.",
+        "Stir in the sugar and cook for 2 minutes.",
+        "Cook the rice until tender and fluffy, and serve."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 618,
+        "proteinG": 42,
+        "carbsG": 48,
+        "fatG": 28,
+        "fibreG": 3,
+        "sodiumMg": 450
+      }
+    }
+  ]
+}

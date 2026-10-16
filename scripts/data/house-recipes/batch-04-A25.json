@@ -1,0 +1,1171 @@
+{
+ "about": "House recipes, batch 04 (helper sA): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+ "recipes": [
+  {
+   "id": "bragioli-maltese-beef-olives",
+   "title": "Bragioli (Maltese Beef Olives)",
+   "summary": "Thin beef slices rolled around bacon, egg and herbs, then braised in a wine and tomato sauce.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 75,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 thin slice beef topside",
+      "2 rasher bacon, diced",
+      "2 egg, hard boiled",
+      "1/2 cup breadcrumbs",
+      "1/4 cup chopped parsley",
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "1/2 cup red wine",
+      "2 tbsp tomato paste",
+      "1 cup beef stock",
+      "600g potato"
+     ]
+    }
+   ],
+   "steps": [
+    "Chop 1 egg and quarter the other. Mix the bacon, crumbs, parsley and chopped egg, and spread on the beef slices with a quarter of egg on each pair.",
+    "Roll up and tie with string or secure with toothpicks. Brown in the oil for 8 minutes, then lift out.",
+    "Cook the onion in the pan for 5 minutes, add the wine, paste and stock and bring to a simmer.",
+    "Return the rolls, cover and simmer for 1 hour, until the beef is tender. Boil the potatoes for 20 minutes, until tender, and serve alongside."
+   ],
+   "notes": [
+    "Food safety: beef pieces are safe once they reach at least 70°C and are tender. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 357,
+    "proteinG": 31,
+    "carbsG": 24,
+    "fatG": 15,
+    "fibreG": 2,
+    "sodiumMg": 700
+   }
+  },
+  {
+   "id": "timpana-maltese-baked-macaroni-pie",
+   "title": "Timpana (Maltese Baked Macaroni Pie)",
+   "summary": "Pastry-wrapped pasta baked with beef ragu, egg and cheese, a Maltese celebration dish.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 40,
+   "cookMinutes": 60,
+   "servings": 6,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "400g penne",
+      "400g beef mince",
+      "1 brown onion, diced",
+      "400g canned diced tomatoes",
+      "3 egg, hard boiled",
+      "80g grated vegetarian hard cheese",
+      "2 sheet puff pastry",
+      "1 egg, beaten",
+      "1 tbsp olive oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the onion in the oil for 6 minutes, then brown the mince for 8 minutes. Add the tomatoes and simmer for 15 minutes, until thick.",
+    "Boil the pasta for 2 minutes short of the pack time. Drain and mix with the sauce, cheese and sliced eggs.",
+    "Heat the oven to 190°C (170°C fan). Line a 24cm tin with 1 pastry sheet and pile in the pasta.",
+    "Cover with the second sheet, seal the edges and brush with the beaten egg. Bake for 40 minutes, until golden and the centre is steaming hot. Rest for 10 minutes before cutting."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 682,
+    "proteinG": 30,
+    "carbsG": 73,
+    "fatG": 30,
+    "fibreG": 5,
+    "sodiumMg": 800
+   }
+  },
+  {
+   "id": "sheftalia-cypriot-pork-patties-in-pita",
+   "title": "Sheftalia (Cypriot Pork Patties in Pita)",
+   "summary": "Herby pork patties grilled until charred, stuffed into warm pita with tomato and onion.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 12,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g pork mince",
+      "1 brown onion, grated",
+      "1/2 cup chopped parsley",
+      "1 tsp ground cumin",
+      "4 pita bread",
+      "2 tomato, sliced",
+      "1 red onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the pork, grated onion, parsley, cumin, 1 tsp salt and pepper. Shape into 8 short sausages.",
+    "Grill or pan fry for 10 to 12 minutes, turning, until browned and cooked through.",
+    "Warm the pita, fill with sheftalia, tomato and red onion."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains gluten."
+   ],
+   "nutrition": {
+    "kcal": 500,
+    "proteinG": 34,
+    "carbsG": 46,
+    "fatG": 20,
+    "fibreG": 4,
+    "sodiumMg": 750
+   }
+  },
+  {
+   "id": "afelia-cypriot-pork-in-red-wine-and-coriander",
+   "title": "Afelia (Cypriot Pork in Red Wine and Coriander)",
+   "summary": "Pork cubes braised in red wine with crushed coriander seed, served with rice.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 90,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g pork shoulder, diced",
+      "2 tbsp olive oil",
+      "1 tbsp coriander seeds, crushed",
+      "1 cup red wine",
+      "1/2 cup water",
+      "1 cup basmati rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the pork in the oil for 8 minutes. Add the coriander and cook for 1 minute.",
+    "Pour in the wine and water, cover and simmer gently for 1 hour 15 minutes, until the pork is tender and the sauce reduced.",
+    "Meanwhile cook the rice in salted water for 12 minutes, until tender. Serve the pork over the rice."
+   ],
+   "notes": [
+    "Food safety: pork must reach at least 70°C in the centre, with clear juices, and rest before serving. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 553,
+    "proteinG": 40,
+    "carbsG": 42,
+    "fatG": 25,
+    "fibreG": 2,
+    "sodiumMg": 350
+   }
+  },
+  {
+   "id": "psari-plaki-greek-baked-fish-with-tomato-and-potato",
+   "title": "Psari Plaki (Greek Baked Fish with Tomato and Potato)",
+   "summary": "Fish baked over sliced potato in a garlicky tomato and wine sauce.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 45,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 firm white fish fillets",
+      "500g potato, thinly sliced",
+      "1 brown onion, sliced",
+      "3 clove garlic, sliced",
+      "400g canned diced tomatoes",
+      "1/4 cup olive oil",
+      "1/2 cup white wine",
+      "2 tbsp chopped parsley"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Layer the potato and onion in a dish with the garlic, tomatoes, wine, 3 tbsp oil, salt and pepper.",
+    "Bake for 25 minutes, until the potato is nearly tender.",
+    "Set the fish on top, drizzle with the remaining oil and bake for 12 minutes, until opaque and flaking.",
+    "Scatter with parsley and serve straight from the dish with the pan juices."
+   ],
+   "notes": [
+    "Food safety: fish is cooked when it turns opaque and flakes easily; cook shellfish until opaque. Eat the same day or refrigerate within an hour and use within 24 hours.",
+    "Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 409,
+    "proteinG": 31,
+    "carbsG": 33,
+    "fatG": 17,
+    "fibreG": 5,
+    "sodiumMg": 600
+   }
+  },
+  {
+   "id": "garides-saganaki-greek-prawns-with-tomato-and-feta",
+   "title": "Garides Saganaki (Greek Prawns with Tomato and Feta)",
+   "summary": "Prawns simmered in a tomato sauce, topped with feta and baked until bubbling.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g raw prawns, peeled",
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "3 clove garlic, crushed",
+      "400g canned diced tomatoes",
+      "1/4 cup white wine",
+      "150g feta, crumbled",
+      "4 slice crusty bread"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Soften the onion in the oil for 6 minutes, add the garlic, tomatoes and wine and simmer for 8 minutes.",
+    "Stir in the prawns, scatter with the feta and bake in a dish for 8 minutes, until the prawns are pink and the feta is soft.",
+    "Serve hot from the dish with the bread to mop up the sauce."
+   ],
+   "notes": [
+    "Food safety: fish is cooked when it turns opaque and flakes easily; cook shellfish until opaque. Eat the same day or refrigerate within an hour and use within 24 hours.",
+    "Contains shellfish and milk."
+   ],
+   "nutrition": {
+    "kcal": 426,
+    "proteinG": 38,
+    "carbsG": 28,
+    "fatG": 18,
+    "fibreG": 3,
+    "sodiumMg": 1100
+   }
+  },
+  {
+   "id": "khinkali-georgian-spiced-meat-dumplings",
+   "title": "Khinkali (Georgian Spiced Meat Dumplings)",
+   "summary": "Pleated dumplings filled with a peppery meat broth, eaten by hand and held by the topknot.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 60,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g plain flour",
+      "1 tsp salt",
+      "1/2 cup water",
+      "200g beef mince",
+      "200g pork mince",
+      "1 brown onion, finely diced",
+      "1 tsp ground cumin",
+      "3/4 cup water",
+      "2 tbsp chopped coriander"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the flour, salt and 1/2 cup water into a firm dough. Knead for 8 minutes and rest for 20 minutes.",
+    "Mix the mince, onion, cumin, coriander, 1 tsp salt, pepper and 3/4 cup water well.",
+    "Roll the dough thin, cut into 10cm rounds and put 1 tbsp filling in each. Pleat the edges and pinch into a knot at the top.",
+    "Boil in salted water for 12 minutes, until they float and the meat is cooked through. Serve with black pepper."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains gluten and pork."
+   ],
+   "nutrition": {
+    "kcal": 568,
+    "proteinG": 28,
+    "carbsG": 78,
+    "fatG": 16,
+    "fibreG": 4,
+    "sodiumMg": 650
+   }
+  },
+  {
+   "id": "ojakhuri-georgian-pan-fried-pork-and-potatoes",
+   "title": "Ojakhuri (Georgian Pan-Fried Pork and Potatoes)",
+   "summary": "Browned pork with crisp potatoes and onion, a hearty Georgian family supper.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 45,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "700g pork shoulder, cubed",
+      "800g potato, cubed",
+      "2 tbsp vegetable oil",
+      "2 brown onion, sliced",
+      "1 tsp dried coriander",
+      "1/4 cup chopped coriander"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the pork in half the oil for 10 minutes. Lift out.",
+    "Fry the potato in the remaining oil for 15 minutes, until golden. Add the onion and cook for 6 minutes.",
+    "Return the pork with the dried coriander, salt and pepper, cover and cook for 12 minutes, until the pork is cooked through.",
+    "Scatter with fresh coriander."
+   ],
+   "notes": [
+    "Food safety: pork must reach at least 70°C in the centre, with clear juices, and rest before serving. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 533,
+    "proteinG": 36,
+    "carbsG": 41,
+    "fatG": 25,
+    "fibreG": 5,
+    "sodiumMg": 400
+   }
+  },
+  {
+   "id": "chkmeruli-georgian-garlic-chicken-in-milk",
+   "title": "Chkmeruli (Georgian Garlic Chicken in Milk)",
+   "summary": "Pan-seared chicken simmered in a garlicky cream and milk sauce.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": true,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "800g chicken thigh fillets",
+      "1 tbsp butter",
+      "8 clove garlic, crushed",
+      "1/2 cup milk",
+      "1/2 cup cream",
+      "1/4 cup chopped coriander",
+      "4 slice crusty bread"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the chicken in the butter for 5 minutes each side. Add the garlic for 1 minute.",
+    "Pour in the milk and cream, season, cover and simmer for 15 minutes, until the chicken is cooked through and the sauce is thick.",
+    "Scatter with coriander and serve with the bread."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part with no pink juices. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains milk and gluten."
+   ],
+   "nutrition": {
+    "kcal": 519,
+    "proteinG": 41,
+    "carbsG": 19,
+    "fatG": 31,
+    "fibreG": 2,
+    "sodiumMg": 650
+   }
+  },
+  {
+   "id": "khorovats-armenian-pork-skewers",
+   "title": "Khorovats (Armenian Pork Skewers)",
+   "summary": "Chunky pork skewers with capsicum, grilled over high heat and served with lavash.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g pork shoulder, cubed",
+      "2 tbsp olive oil",
+      "1 brown onion, cut in chunks",
+      "1 green capsicum, cut in chunks",
+      "2 tomato, quartered",
+      "4 lavash bread"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the pork with the oil, 1 tsp salt and pepper. Thread onto skewers, alternating with the onion and capsicum.",
+    "Grill or barbecue on high for 12 to 15 minutes, turning, until browned and cooked through.",
+    "Serve with the tomato and lavash."
+   ],
+   "notes": [
+    "Food safety: pork must reach at least 70°C in the centre, with clear juices, and rest before serving. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains gluten."
+   ],
+   "nutrition": {
+    "kcal": 559,
+    "proteinG": 43,
+    "carbsG": 36,
+    "fatG": 27,
+    "fibreG": 4,
+    "sodiumMg": 600
+   }
+  },
+  {
+   "id": "shish-taouk-lebanese-garlic-chicken-skewers-in-pita",
+   "title": "Shish Taouk (Lebanese Garlic Chicken Skewers in Pita)",
+   "summary": "Lemony yoghurt-marinated chicken skewers, grilled and tucked into warm pita.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "800g chicken thigh fillets, cubed",
+      "1/2 cup plain yoghurt",
+      "1 lemon, juiced",
+      "4 clove garlic, crushed",
+      "1 tsp sweet paprika",
+      "1 tbsp olive oil",
+      "4 pita bread",
+      "1 tomato, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the chicken with the yoghurt, lemon, garlic, paprika, oil and 1 tsp salt. Thread onto skewers.",
+    "Grill or pan fry on high for 12 to 15 minutes, turning, until charred and cooked through.",
+    "Warm the pita and fill with the chicken and tomato."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part with no pink juices. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains milk and gluten."
+   ],
+   "nutrition": {
+    "kcal": 544,
+    "proteinG": 46,
+    "carbsG": 45,
+    "fatG": 20,
+    "fibreG": 3,
+    "sodiumMg": 650
+   }
+  },
+  {
+   "id": "lamb-kofta-flatbreads-with-yoghurt-and-cucumber",
+   "title": "Lamb Kofta Flatbreads with Yoghurt and Cucumber",
+   "summary": "Spiced lamb patties in warm flatbread with a cool yoghurt, cucumber and mint filling.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 10,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "500g lamb mince",
+      "1 brown onion, grated",
+      "1/4 cup chopped parsley",
+      "1 tsp ground cumin",
+      "4 flatbread",
+      "1/2 cup plain yoghurt",
+      "1 cucumber, sliced",
+      "1 tbsp chopped mint"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the lamb, onion, parsley, cumin, 1 tsp salt and pepper. Shape into 8 oval patties.",
+    "Pan fry or grill for 8 minutes, turning, until browned and cooked through.",
+    "Warm the flatbreads, spread with the yoghurt and fill with the kofta, cucumber and mint."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains milk and gluten."
+   ],
+   "nutrition": {
+    "kcal": 475,
+    "proteinG": 38,
+    "carbsG": 37,
+    "fatG": 19,
+    "fibreG": 2,
+    "sodiumMg": 700
+   }
+  },
+  {
+   "id": "jerk-chicken-wraps-with-mango-and-slaw",
+   "title": "Jerk Chicken Wraps with Mango and Slaw",
+   "summary": "Spicy jerk chicken in a warm tortilla with sweet mango and crunchy cabbage.",
+   "cuisine": "caribbean",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "600g chicken thigh fillets, sliced",
+      "2 tsp ground allspice",
+      "1 tsp dried thyme",
+      "1/2 tsp chilli flakes",
+      "2 clove garlic, crushed",
+      "1 tbsp vegetable oil",
+      "4 flour tortilla",
+      "1 mango, sliced",
+      "1 cup shredded cabbage",
+      "1/4 cup plain yoghurt",
+      "1 lime, juiced"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the chicken with the allspice, thyme, chilli, garlic and a pinch of salt.",
+    "Cook in the oil over high heat for 8 to 10 minutes, until charred and cooked through.",
+    "Mix the cabbage, yoghurt and lime juice. Warm the tortillas and fill with the chicken, mango and slaw."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part with no pink juices. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains milk and gluten."
+   ],
+   "nutrition": {
+    "kcal": 511,
+    "proteinG": 35,
+    "carbsG": 50,
+    "fatG": 19,
+    "fibreG": 4,
+    "sodiumMg": 750
+   }
+  },
+  {
+   "id": "fricase-de-pollo-cuban-chicken-stew-with-potatoes-and-olives",
+   "title": "Fricase de Pollo (Cuban Chicken Stew with Potatoes and Olives)",
+   "summary": "Chicken simmered with potatoes, olives and capers in a tomato sauce, served with rice.",
+   "cuisine": "caribbean",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 50,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "700g chicken thigh fillets",
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "3 clove garlic, crushed",
+      "500g potato, cubed",
+      "1 cup tomato passata",
+      "1/2 cup green olives",
+      "1 tbsp capers",
+      "1/2 cup white wine",
+      "1 cup long grain rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the chicken in the oil for 6 minutes. Add the onion and garlic and cook for 5 minutes.",
+    "Add the potato, passata, olives, capers, wine and 1/2 cup water. Cover and simmer for 30 minutes, until the potato is tender and the chicken is cooked through.",
+    "Cook the rice in salted water for 12 minutes and serve with the stew."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part with no pink juices. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 617,
+    "proteinG": 39,
+    "carbsG": 68,
+    "fatG": 21,
+    "fibreG": 5,
+    "sodiumMg": 850
+   }
+  },
+  {
+   "id": "lechon-asado-cuban-mojo-roast-pork",
+   "title": "Lechon Asado (Cuban Mojo Roast Pork)",
+   "summary": "Pork shoulder slow-roasted in a garlic, orange and lime mojo until it pulls apart, with rice.",
+   "cuisine": "caribbean",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 180,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.5 kg pork shoulder, bone in",
+      "8 clove garlic, crushed",
+      "1/2 cup orange juice",
+      "1/4 cup lime juice",
+      "2 tbsp olive oil",
+      "1 tsp dried oregano",
+      "1 tsp ground cumin",
+      "1 1/2 cup long grain rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the garlic, juices, oil, oregano, cumin and 2 tsp salt. Pour over the pork in a tin and turn to coat.",
+    "Heat the oven to 160°C (140°C fan). Cover the tin tightly with foil and roast for 2 1/2 hours.",
+    "Uncover and roast for 30 minutes, until browned and pulling apart.",
+    "Cook the rice in salted water for 12 minutes. Shred the pork and serve with the rice and pan juices."
+   ],
+   "notes": [
+    "Food safety: pork must reach at least 70°C in the centre, with clear juices, and rest before serving. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 574,
+    "proteinG": 40,
+    "carbsG": 45,
+    "fatG": 26,
+    "fibreG": 2,
+    "sodiumMg": 450
+   }
+  },
+  {
+   "id": "arroz-chaufa-peruvian-chicken-fried-rice",
+   "title": "Arroz Chaufa (Peruvian Chicken Fried Rice)",
+   "summary": "A Chinese-Peruvian fried rice with chicken, egg and spring onion, tossed over high heat.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g chicken thigh fillets, diced",
+      "2 tbsp vegetable oil",
+      "3 egg, beaten",
+      "1 red capsicum, diced",
+      "1 cup frozen peas",
+      "1 cup long grain rice",
+      "3 tbsp soy sauce",
+      "1 tbsp grated ginger",
+      "4 spring onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the rice in salted water for 12 minutes, until tender, then spread on a tray to cool. Stir fry the chicken in half the oil for 6 minutes, until cooked through. Push aside.",
+    "Scramble the eggs in the same pan for 1 minute, until set, then break up.",
+    "Add the remaining oil, capsicum, peas and ginger, then the rice and soy. Fry for 4 minutes, until piping hot.",
+    "Toss through the spring onion."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part with no pink juices. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 443,
+    "proteinG": 28,
+    "carbsG": 40,
+    "fatG": 19,
+    "fibreG": 4,
+    "sodiumMg": 800
+   }
+  },
+  {
+   "id": "papa-rellena-peruvian-stuffed-potato-balls",
+   "title": "Papa Rellena (Peruvian Stuffed Potato Balls)",
+   "summary": "Mashed potato wrapped around spiced beef, egg and olive, then fried until crisp.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 35,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g potato",
+      "300g beef mince",
+      "1 brown onion, diced",
+      "1 egg, hard boiled, chopped",
+      "1/4 cup black olives, chopped",
+      "1 tsp ground cumin",
+      "1 egg",
+      "1/4 cup plain flour",
+      "1/2 cup vegetable oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the potato for 20 minutes, until tender. Mash smooth with the raw egg, 1 tsp salt and pepper.",
+    "Cook the onion, mince and cumin for 10 minutes, until cooked through. Cool and stir in the boiled egg and olives.",
+    "Wrap 3 tbsp potato around 1 tbsp filling to make 8 balls. Dust with the flour.",
+    "Shallow fry in the oil for 8 minutes, turning, until golden."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 467,
+    "proteinG": 21,
+    "carbsG": 44,
+    "fatG": 23,
+    "fibreG": 4,
+    "sodiumMg": 600
+   }
+  },
+  {
+   "id": "bife-a-cavalo-brazilian-steak-with-fried-egg-and-rice",
+   "title": "Bife a Cavalo (Brazilian Steak with Fried Egg and Rice)",
+   "summary": "Seared steak topped with a runny fried egg, served over rice with tomato.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 beef rump steaks",
+      "2 tbsp vegetable oil",
+      "4 egg",
+      "1 cup long grain rice",
+      "2 tomato, sliced",
+      "1/4 cup chopped parsley"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the rice in salted water for 12 minutes, until tender.",
+    "Season the steaks and sear in half the oil over high heat for 3 minutes each side for medium. Rest for 5 minutes.",
+    "Fry the eggs in the remaining oil for 3 minutes, until the whites are set.",
+    "Serve each steak on rice, topped with an egg, tomato and parsley."
+   ],
+   "notes": [
+    "Food safety: steaks are safe at 63°C in the centre for medium (60°C for medium rare), once the outside is well seared. Keep raw and cooked meat apart. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 339,
+    "proteinG": 26,
+    "carbsG": 26,
+    "fatG": 15,
+    "fibreG": 1,
+    "sodiumMg": 450
+   }
+  },
+  {
+   "id": "coxinha-brazilian-chicken-croquettes",
+   "title": "Coxinha (Brazilian Chicken Croquettes)",
+   "summary": "Teardrop croquettes of soft shredded chicken in a golden crumb, fried until crisp.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 50,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "400g chicken breast",
+      "2 cup chicken stock",
+      "250g plain flour",
+      "30g butter",
+      "1 brown onion, finely diced",
+      "1 egg, beaten",
+      "1 cup breadcrumbs",
+      "1 cup vegetable oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the chicken in the stock for 15 minutes, until cooked through. Shred and keep the stock. Cook the onion with the chicken for 4 minutes.",
+    "Bring 2 cups of the stock to a boil with the butter. Stir in the flour for 3 minutes, until it forms a smooth dough. Cool.",
+    "Wrap 2 tbsp dough around 1 tbsp chicken and shape into 12 teardrops. Dip in egg, then crumbs.",
+    "Fry in batches in the oil for 4 minutes each, until deep golden."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part with no pink juices. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 642,
+    "proteinG": 33,
+    "carbsG": 69,
+    "fatG": 26,
+    "fibreG": 3,
+    "sodiumMg": 700
+   }
+  },
+  {
+   "id": "tacos-al-pastor-mexican-spiced-pork-and-pineapple-tacos",
+   "title": "Tacos al Pastor (Mexican Spiced Pork and Pineapple Tacos)",
+   "summary": "Chilli and pineapple pork seared on a griddle and piled in corn tortillas with onion and coriander.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "700g pork shoulder, thinly sliced",
+      "2 tsp smoked paprika",
+      "1 tsp ground cumin",
+      "1 tbsp vegetable oil",
+      "12 corn tortilla",
+      "200g pineapple, diced",
+      "1 white onion, diced",
+      "1/4 cup chopped coriander",
+      "1 lime, cut in wedges"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the pork with the paprika, cumin and 1 tsp salt.",
+    "Sear in the oil over high heat in batches for 6 minutes, until browned and cooked through. Add the pineapple for the last minute.",
+    "Warm the tortillas and fill with the pork, onion and coriander. Serve with lime."
+   ],
+   "notes": [
+    "Food safety: pork must reach at least 70°C in the centre, with clear juices, and rest before serving. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 548,
+    "proteinG": 37,
+    "carbsG": 46,
+    "fatG": 24,
+    "fibreG": 6,
+    "sodiumMg": 450
+   }
+  },
+  {
+   "id": "chile-relleno-cheese-stuffed-capsicum-in-tomato-sauce",
+   "title": "Chile Relleno (Cheese-Stuffed Capsicum in Tomato Sauce)",
+   "summary": "Roasted capsicum filled with melting cheese, coated in a light egg batter and simmered in tomato sauce.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 30,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 large green capsicum",
+      "200g mozzarella, sliced",
+      "3 egg, separated",
+      "1/4 cup plain flour",
+      "1/4 cup vegetable oil",
+      "400g canned crushed tomatoes",
+      "1/2 brown onion, diced",
+      "1 garlic clove, crushed"
+     ]
+    }
+   ],
+   "steps": [
+    "Roast the capsicums under a hot grill for 15 minutes, turning, until blistered. Rest covered, then peel and slit and remove the seeds.",
+    "Fill with the mozzarella and close with toothpicks. Dust with flour.",
+    "Whisk the whites to stiff peaks, fold in the yolks and a pinch of salt. Simmer the onion, garlic and tomatoes for 12 minutes, until thickened.",
+    "Dip each capsicum in the batter and fry in the oil for 3 minutes each side, until golden. Serve in the sauce."
+   ],
+   "notes": [
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains milk and gluten. Fully cook the eggs; the batter should be set and golden."
+   ],
+   "nutrition": {
+    "kcal": 426,
+    "proteinG": 17,
+    "carbsG": 22,
+    "fatG": 30,
+    "fibreG": 5,
+    "sodiumMg": 750
+   }
+  },
+  {
+   "id": "camarones-al-mojo-de-ajo-mexican-garlic-prawns",
+   "title": "Camarones al Mojo de Ajo (Mexican Garlic Prawns)",
+   "summary": "Prawns sizzled in garlic butter and lime, served over rice.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "pescatarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "700g raw prawns, peeled",
+      "40g butter",
+      "2 tbsp olive oil",
+      "8 clove garlic, sliced",
+      "1/2 tsp chilli flakes",
+      "2 lime, juiced",
+      "1 cup long grain rice",
+      "1/4 cup chopped parsley"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the rice in salted water for 12 minutes, until tender.",
+    "Heat the butter and oil, cook the garlic and chilli for 1 minute, until golden.",
+    "Add the prawns and cook for 4 minutes, until pink and opaque. Add the lime juice and parsley.",
+    "Serve over the rice with the pan juices."
+   ],
+   "notes": [
+    "Food safety: fish is cooked when it turns opaque and flakes easily; cook shellfish until opaque. Eat the same day or refrigerate within an hour and use within 24 hours.",
+    "Contains shellfish and milk."
+   ],
+   "nutrition": {
+    "kcal": 465,
+    "proteinG": 37,
+    "carbsG": 41,
+    "fatG": 17,
+    "fibreG": 1,
+    "sodiumMg": 700
+   }
+  },
+  {
+   "id": "torta-ahogada-guadalajara-drowned-pork-sandwich",
+   "title": "Torta Ahogada (Guadalajara Drowned Pork Sandwich)",
+   "summary": "Pulled pork in a crusty roll, drowned in a spicy tomato sauce, a Jalisco street classic.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 120,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g pork shoulder",
+      "4 crusty bread roll",
+      "400g canned crushed tomatoes",
+      "1 brown onion, diced",
+      "3 clove garlic, crushed",
+      "1 tsp chilli flakes",
+      "1 tbsp vegetable oil",
+      "1 tsp dried oregano"
+     ]
+    }
+   ],
+   "steps": [
+    "Season the pork with salt, put in a pot with water to cover and simmer for 1 1/2 hours, until it shreds.",
+    "Soften the onion and garlic in the oil for 5 minutes. Add the tomatoes, chilli, oregano and 1/2 cup water and simmer for 12 minutes, until saucy.",
+    "Shred the pork, fill the rolls and spoon the sauce over them."
+   ],
+   "notes": [
+    "Food safety: pork must reach at least 70°C in the centre, with clear juices, and rest before serving. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains gluten. Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 342,
+    "proteinG": 21,
+    "carbsG": 34,
+    "fatG": 14,
+    "fibreG": 3,
+    "sodiumMg": 950
+   }
+  },
+  {
+   "id": "carne-guisada-tex-mex-beef-stew-with-potatoes",
+   "title": "Carne Guisada (Tex-Mex Beef Stew with Potatoes)",
+   "summary": "Slow-simmered beef in a cumin tomato gravy, scooped up with warm flour tortillas.",
+   "cuisine": "american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 100,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "700g beef chuck, diced",
+      "1 tbsp vegetable oil",
+      "1 brown onion, diced",
+      "1 green capsicum, diced",
+      "3 clove garlic, crushed",
+      "2 tsp ground cumin",
+      "400g canned diced tomatoes",
+      "400g potato, cubed",
+      "4 flour tortilla"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the beef in the oil for 8 minutes. Add the onion, capsicum and garlic and cook for 5 minutes.",
+    "Add the cumin, tomatoes, 1 cup water and salt. Cover and simmer for 1 hour.",
+    "Add the potato and simmer for 25 minutes, until the beef and potato are tender and the gravy is thick.",
+    "Warm the tortillas and serve with the stew."
+   ],
+   "notes": [
+    "Food safety: beef pieces are safe once they reach at least 70°C and are tender. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 569,
+    "proteinG": 44,
+    "carbsG": 51,
+    "fatG": 21,
+    "fibreG": 6,
+    "sodiumMg": 700
+   }
+  }
+ ]
+}

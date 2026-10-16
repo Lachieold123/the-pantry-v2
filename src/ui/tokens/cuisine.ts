@@ -71,6 +71,7 @@ const FAMILY: Readonly<Record<string, Family>> = {
   'central-european': 'european',
   scandinavian: 'european',
   'modern-australian': 'other',
+  // Added with batch 04. Caribbean sits with Latin American; the rest with their neighbours.
   caribbean: 'mexican',
   'east-african': 'other',
   'pacific-islands': 'other',

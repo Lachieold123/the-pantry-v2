@@ -1,0 +1,1220 @@
+{
+  "about": "House recipes, batch 04 (slice B): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "menchi-katsu-japanese-crumbed-beef-and-pork-patties",
+      "title": "Menchi Katsu Japanese Crumbed Beef and Pork Patties",
+      "summary": "Juicy crumbed mince patties fried until crisp, served with rice, shredded cabbage and tonkatsu-style sauce.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g minced beef",
+            "300g minced pork",
+            "1 onion, finely chopped",
+            "1 egg",
+            "1/2 cup breadcrumbs",
+            "1 cup plain flour",
+            "1/2 cup panko breadcrumbs",
+            "1/2 cup vegetable oil",
+            "1 tbsp soy sauce",
+            "2 tbsp tomato sauce",
+            "1 tbsp Worcestershire sauce",
+            "2 cups cabbage, shredded",
+            "1 1/2 cups short-grain rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the beef, pork, onion, egg, breadcrumbs, soy sauce and 1/2 tsp salt, then shape into 8 oval patties.",
+        "Cook the rice until tender and sticky.",
+        "Dust the patties in flour, dip in a thin paste of 1/2 cup flour and 1/2 cup water, then coat in panko.",
+        "Shallow-fry in the oil for 4 minutes each side until golden and cooked through.",
+        "Mix the tomato sauce and Worcestershire sauce for the dipping sauce and serve with the cabbage and rice."
+      ],
+      "notes": [
+        "Food safety: cook the mince patties until they reach 75°C in the centre. Contains egg. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 734,
+        "proteinG": 38,
+        "carbsG": 76,
+        "fatG": 30,
+        "fibreG": 4,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "tatsuta-age-japanese-soy-ginger-fried-chicken",
+      "title": "Tatsuta-Age Japanese Soy Ginger Fried Chicken",
+      "summary": "Chicken thigh marinated in soy, ginger and sake, coated in potato starch and fried until crisp, with rice.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g boneless chicken thighs, cut in chunks",
+            "3 tbsp soy sauce",
+            "2 tbsp sake",
+            "1 tbsp fresh ginger, grated",
+            "2 cloves garlic, minced",
+            "1/2 cup cornflour",
+            "1/2 cup vegetable oil",
+            "1 lemon",
+            "1 1/2 cups short-grain rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the chicken with the soy sauce, sake, ginger and garlic.",
+        "Cook the rice until tender and sticky.",
+        "Coat the chicken in cornflour and shallow-fry in batches for 6 minutes, turning, until deep golden and cooked through.",
+        "Serve with the rice and lemon wedges."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C in the thickest piece. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 632,
+        "proteinG": 38,
+        "carbsG": 70,
+        "fatG": 22,
+        "fibreG": 1,
+        "sodiumMg": 950
+      }
+    },
+    {
+      "id": "chashu-pork-rice-bowls-with-soft-egg",
+      "title": "Chashu Pork Rice Bowls with Soft Egg",
+      "summary": "Pork belly rolled-style braised in soy, mirin and ginger, sliced over rice with a soft-boiled egg.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 75,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g pork belly, in one piece",
+            "1/3 cup soy sauce",
+            "1/3 cup mirin",
+            "2 tbsp sugar",
+            "1 tbsp fresh ginger, sliced",
+            "2 spring onions, sliced",
+            "4 eggs",
+            "1 1/2 cups short-grain rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the pork belly in a dry pot for 8 minutes on all sides.",
+        "Add the soy sauce, mirin, sugar, ginger and 1 cup water, cover, and simmer for 1 hour 15 minutes until tender, turning twice.",
+        "Boil the eggs for 6 minutes, cool in cold water, peel and marinate in a little braising liquid.",
+        "Cook the rice until tender and sticky.",
+        "Slice the pork, serve over the rice with an egg each, spoon over the liquid and scatter the spring onion."
+      ],
+      "notes": [
+        "Food safety: cook the pork until it reaches 75°C and is tender; boil the eggs for at least 6 minutes. Contains egg. Not suitable for anyone avoiding runny yolks. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 822,
+        "proteinG": 36,
+        "carbsG": 70,
+        "fatG": 44,
+        "fibreG": 1,
+        "sodiumMg": 1300
+      }
+    },
+    {
+      "id": "tempura-prawn-and-vegetable-plate-with-rice",
+      "title": "Tempura Prawn and Vegetable Plate with Rice",
+      "summary": "Light, crisp prawns and vegetables in ice-cold batter, served with rice and a soy dipping sauce.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g raw prawns, peeled",
+            "1 sweet potato, sliced thin",
+            "1 zucchini, sliced",
+            "1 cup plain flour",
+            "1/2 cup cornflour",
+            "1 cup iced sparkling water",
+            "1 cup vegetable oil",
+            "3 tbsp soy sauce",
+            "1 tbsp mirin",
+            "1 1/2 cups short-grain rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice until tender and sticky.",
+        "Mix the soy sauce, mirin and 2 tbsp water for dipping.",
+        "Stir the flour, cornflour and iced water together lightly, leaving lumps.",
+        "Heat the oil to 180°C, dip the prawns and vegetables and fry in batches for 3 minutes until pale golden and crisp.",
+        "Drain on paper and serve straight away with the rice and dipping sauce."
+      ],
+      "notes": [
+        "Food safety: cook the prawns until pink and firm, about 63°C inside. Contains shellfish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 652,
+        "proteinG": 30,
+        "carbsG": 82,
+        "fatG": 22,
+        "fibreG": 3,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "samgyeopsal-korean-grilled-pork-belly-lettuce-wraps",
+      "title": "Samgyeopsal Korean Grilled Pork Belly Lettuce Wraps",
+      "summary": "Crisp-edged pork belly slices wrapped in lettuce with rice, garlic and a sesame ssamjang-style dip.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g pork belly, sliced",
+            "1 cos lettuce",
+            "1 cup short-grain rice",
+            "4 cloves garlic, sliced",
+            "2 tbsp miso paste",
+            "1 tbsp gochujang",
+            "1 tsp sesame oil",
+            "2 spring onions, sliced",
+            "1 tbsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the miso, gochujang, sesame oil, spring onion and sesame seeds for the dip.",
+        "Cook the rice until tender and sticky.",
+        "Grill or pan-fry the pork belly for 4 minutes each side until golden and cooked through.",
+        "Fry the garlic in the pork fat for 2 minutes until golden.",
+        "Wrap pork, rice, garlic and dip in lettuce leaves and eat in one bite."
+      ],
+      "notes": [
+        "Food safety: cook the pork until it reaches 75°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 708,
+        "proteinG": 32,
+        "carbsG": 40,
+        "fatG": 46,
+        "fibreG": 3,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "dakgangjeong-korean-sticky-crispy-chicken-bites",
+      "title": "Dakgangjeong Korean Sticky Crispy Chicken Bites",
+      "summary": "Crisp fried chicken pieces tossed in a sweet, garlicky soy and gochujang glaze, served with rice.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g boneless chicken thighs, cut in chunks",
+            "1/2 cup cornflour",
+            "1/2 cup vegetable oil",
+            "3 tbsp soy sauce",
+            "2 tbsp honey",
+            "1 tbsp gochujang",
+            "3 cloves garlic, minced",
+            "1 tbsp sesame seeds",
+            "1 1/2 cups short-grain rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Coat the chicken in cornflour and a pinch of salt.",
+        "Cook the rice until tender and sticky.",
+        "Shallow-fry in batches for 7 minutes until deep golden and cooked through.",
+        "Simmer the soy sauce, honey, gochujang and garlic for 4 minutes until syrupy, then toss the chicken through.",
+        "Scatter with sesame seeds and serve over the rice."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C in the thickest piece. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 706,
+        "proteinG": 38,
+        "carbsG": 84,
+        "fatG": 24,
+        "fibreG": 1,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "gua-bao-taiwanese-braised-pork-belly-buns-with-peanut",
+      "title": "Gua Bao Taiwanese Braised Pork Belly Buns with Peanut",
+      "summary": "Folded steamed buns with soy-braised pork belly, pickled cucumber, coriander and crushed peanuts.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 30,
+      "cookMinutes": 90,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "500g pork belly, in one piece",
+            "8 steamed bao buns",
+            "1/4 cup soy sauce",
+            "2 tbsp sugar",
+            "2 star anise",
+            "1 tbsp fresh ginger, sliced",
+            "1 cucumber, sliced thin",
+            "2 tbsp rice vinegar",
+            "1/4 cup fresh coriander",
+            "1/4 cup peanuts, crushed"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the pork belly in the soy sauce, sugar, star anise, ginger and 2 cups water, covered, for 1 hour 15 minutes until tender.",
+        "Toss the cucumber with the vinegar and a pinch of sugar and salt.",
+        "Slice the pork thickly and reduce the braising liquid for 5 minutes until glossy.",
+        "Steam the buns for 5 minutes until soft and hot.",
+        "Fill each bun with pork, cucumber, coriander and peanuts, and spoon over a little liquid."
+      ],
+      "notes": [
+        "Food safety: cook the pork until it reaches 75°C and is tender. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 884,
+        "proteinG": 42,
+        "carbsG": 74,
+        "fatG": 46,
+        "fibreG": 3,
+        "sodiumMg": 850
+      }
+    },
+    {
+      "id": "taiwanese-popcorn-chicken-rice-plate-with-basil",
+      "title": "Taiwanese Popcorn Chicken Rice Plate with Basil",
+      "summary": "Crunchy five-spice chicken bites fried with basil, served over rice with pickled cucumber.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g boneless chicken thighs, cut in small chunks",
+            "2 tbsp soy sauce",
+            "1 tsp Chinese five spice",
+            "1 tsp ground white pepper",
+            "3 cloves garlic, minced",
+            "1/2 cup sweet potato flour",
+            "1/2 cup vegetable oil",
+            "1 cup fresh basil",
+            "1 cucumber, sliced",
+            "1 tbsp rice vinegar",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the chicken with the soy sauce, five spice, pepper and garlic.",
+        "Cook the rice until tender and fluffy.",
+        "Coat the chicken in the starch, shake off the excess and fry in batches for 5 minutes until crisp and cooked through.",
+        "Fry the basil in the hot oil for 15 seconds until crisp.",
+        "Toss the cucumber with the vinegar and serve with the chicken, basil and rice."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C in the thickest piece. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 636,
+        "proteinG": 36,
+        "carbsG": 68,
+        "fatG": 24,
+        "fibreG": 2,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "lo-mai-gai-cantonese-sticky-rice-with-chicken-and-mushroom",
+      "title": "Lo Mai Gai Cantonese Sticky Rice with Chicken and Mushroom",
+      "summary": "Glutinous rice steamed with chicken, shiitake, oyster sauce and a hint of sesame, in foil parcels.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 50,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups glutinous rice",
+            "400g boneless chicken thighs, diced",
+            "6 dried shiitake mushrooms, soaked and sliced",
+            "2 tbsp oyster sauce",
+            "1 tbsp soy sauce",
+            "1 tsp sesame oil",
+            "2 spring onions, sliced",
+            "1 tbsp fresh ginger, grated"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the rice in water for 2 hours if possible, then drain.",
+        "Marinate the chicken with the oyster sauce, soy sauce, ginger and sesame oil.",
+        "Mix the chicken, mushrooms and rice, season with salt, and divide among 4 foil parcels.",
+        "Steam for 40 minutes until the rice is tender and the chicken is cooked through.",
+        "Open the parcels and scatter with spring onion."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 524,
+        "proteinG": 28,
+        "carbsG": 84,
+        "fatG": 8,
+        "fibreG": 2,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "da-pan-ji-xinjiang-big-plate-chicken-with-hand-pulled-style-noodles",
+      "title": "Da Pan Ji Xinjiang Big Plate Chicken with Hand-Pulled-Style Noodles",
+      "summary": "Chicken and potato braised in a star anise and chilli sauce, poured over wide noodles.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g chicken drumsticks",
+            "3 potatoes, cut in chunks",
+            "1 capsicum, sliced",
+            "1 onion, sliced",
+            "3 cloves garlic, minced",
+            "1 tbsp fresh ginger, grated",
+            "2 star anise",
+            "1 tbsp chilli flakes",
+            "2 tbsp soy sauce",
+            "2 tbsp vegetable oil",
+            "250g wide egg noodles"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the chicken in the oil for 8 minutes, then add the onion, garlic, ginger, star anise and chilli flakes.",
+        "Add the soy sauce, potatoes and 2 cups water and simmer covered for 25 minutes until the potato is tender.",
+        "Add the capsicum for 5 minutes.",
+        "Boil the noodles for 5 minutes until tender, drain and top with the chicken."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C near the bone. Contains egg. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 664,
+        "proteinG": 38,
+        "carbsG": 76,
+        "fatG": 22,
+        "fibreG": 5,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "gong-bao-ji-ding-sichuan-kung-pao-chicken-with-peanuts",
+      "title": "Gong Bao Ji Ding Sichuan Kung Pao Chicken with Peanuts",
+      "summary": "Quick-fried chicken with dried chilli, Sichuan pepper and roasted peanuts in a sweet-sour glaze, with rice.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g boneless chicken thighs, diced",
+            "4 dried chillies",
+            "1 tsp ground Sichuan pepper",
+            "1/2 cup peanuts",
+            "3 spring onions, cut in lengths",
+            "3 cloves garlic, sliced",
+            "2 tbsp soy sauce",
+            "1 tbsp rice vinegar",
+            "1 tbsp sugar",
+            "1 tbsp cornflour",
+            "2 tbsp vegetable oil",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the chicken with 1 tbsp soy sauce and the cornflour.",
+        "Cook the rice until tender and fluffy.",
+        "Mix the remaining soy sauce, vinegar, sugar and 2 tbsp water for the sauce.",
+        "Stir-fry the chillies and Sichuan pepper in the oil for 30 seconds, add the chicken and fry for 6 minutes until cooked through.",
+        "Add the garlic, spring onions, peanuts and sauce, and toss for 2 minutes until glossy. Serve over rice."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C. Contains peanuts. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 644,
+        "proteinG": 38,
+        "carbsG": 72,
+        "fatG": 22,
+        "fibreG": 3,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "hakka-salt-baked-style-chicken-with-ginger-spring-onion-oil",
+      "title": "Hakka Salt-Baked Style Chicken with Ginger Spring Onion Oil",
+      "summary": "Roasted whole chicken pieces rubbed with salt and five spice, served with rice and ginger oil.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 60,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1.2kg chicken pieces, bone-in",
+            "2 tsp Chinese five spice",
+            "1 tbsp fresh ginger, grated",
+            "4 spring onions, finely sliced",
+            "1/4 cup vegetable oil",
+            "1 tbsp soy sauce",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Rub the chicken with the five spice and 2 tsp salt, and roast at 200°C for 45 minutes until the skin is golden and crisp.",
+        "Cook the rice until tender and fluffy.",
+        "Heat the oil until shimmering and pour over the ginger, spring onion and soy sauce for the oil.",
+        "Rest the chicken 5 minutes, then serve with the oil and rice."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C near the bone. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 668,
+        "proteinG": 44,
+        "carbsG": 68,
+        "fatG": 24,
+        "fibreG": 2,
+        "sodiumMg": 1000
+      }
+    },
+    {
+      "id": "pla-rad-prik-thai-crispy-fish-with-sweet-chilli-sauce",
+      "title": "Pla Rad Prik Thai Crispy Fish with Sweet Chilli Sauce",
+      "summary": "Crisp-fried fish fillets topped with a sweet, sour and garlicky chilli sauce, served with rice.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g white fish fillet",
+            "1/2 cup cornflour",
+            "1/2 cup vegetable oil",
+            "4 cloves garlic, minced",
+            "2 red chillies, sliced",
+            "3 tbsp sweet chilli sauce",
+            "2 tbsp fish sauce",
+            "1 tbsp rice vinegar",
+            "1 tbsp sugar",
+            "1 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Dust the fish in cornflour and a pinch of salt.",
+        "Cook the rice until tender and fluffy.",
+        "Fry the fish for 4 minutes each side until golden and crisp, then drain.",
+        "Fry the garlic and chillies in a little oil for 1 minute, add the sweet chilli sauce, fish sauce, vinegar, sugar and 1/4 cup water and simmer for 3 minutes until syrupy.",
+        "Pour over the fish and serve with the rice."
+      ],
+      "notes": [
+        "Food safety: cook the fish until opaque and it reaches 63°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 600,
+        "proteinG": 36,
+        "carbsG": 68,
+        "fatG": 20,
+        "fibreG": 2,
+        "sodiumMg": 1000
+      }
+    },
+    {
+      "id": "tod-mun-pla-thai-fish-cakes-with-cucumber-dip",
+      "title": "Tod Mun Pla Thai Fish Cakes with Cucumber Dip",
+      "summary": "Springy fish cakes with red curry paste and green beans, fried until golden, served with rice and a sweet cucumber dip.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g white fish fillet",
+            "2 tbsp red curry paste",
+            "1 egg",
+            "1 cup green beans, finely sliced",
+            "1 tbsp fish sauce",
+            "1/2 cup vegetable oil",
+            "1 cucumber, diced",
+            "3 tbsp rice vinegar",
+            "1 tbsp sugar",
+            "1 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the fish with the curry paste, egg and fish sauce into a sticky paste, then fold through the beans.",
+        "Cook the rice until tender and fluffy.",
+        "Stir the cucumber, vinegar, sugar and a pinch of salt for the dip.",
+        "Shape into 12 patties and fry for 3 minutes each side until golden and cooked through.",
+        "Serve the fish cakes with rice and dip."
+      ],
+      "notes": [
+        "Food safety: cook the fish cakes until they reach 63°C in the centre and the egg is set. Contains egg. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 502,
+        "proteinG": 32,
+        "carbsG": 56,
+        "fatG": 16,
+        "fibreG": 3,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "hor-mok-thai-steamed-fish-curry-custard",
+      "title": "Hor Mok Thai Steamed Fish Curry Custard",
+      "summary": "A soft, mousse-like steamed fish and coconut curry custard served with jasmine rice.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g white fish fillet",
+            "1 cup coconut milk",
+            "2 eggs",
+            "2 tbsp red curry paste",
+            "1 tbsp fish sauce",
+            "2 cups baby spinach",
+            "1 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the fish with the curry paste, eggs, half the coconut milk and fish sauce until smooth.",
+        "Cook the rice until tender and fluffy.",
+        "Divide the spinach among four heatproof bowls, then pour in the fish mixture.",
+        "Steam for 20 minutes until just set, then spoon over the remaining warm coconut milk.",
+        "Serve with the rice while hot, spooning the sauce over the top."
+      ],
+      "notes": [
+        "Food safety: cook the custard until set and the fish reaches 63°C. Contains egg. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 480,
+        "proteinG": 30,
+        "carbsG": 44,
+        "fatG": 20,
+        "fibreG": 2,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "sai-ua-northern-thai-herb-pork-sausage-patties",
+      "title": "Sai Ua Northern Thai Herb Pork Sausage Patties",
+      "summary": "Spiced pork patties with lemongrass, galangal-style ginger and curry paste, grilled and served with sticky rice.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g minced pork",
+            "2 tbsp red curry paste",
+            "1 stalk lemongrass, finely sliced",
+            "1 tbsp fresh ginger, grated",
+            "2 kaffir lime leaves, finely sliced",
+            "1 tbsp fish sauce",
+            "1 tbsp vegetable oil",
+            "1 cup glutinous rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the pork, curry paste, lemongrass, ginger, lime leaves and fish sauce until sticky.",
+        "Steam the rice until tender, about 25 minutes.",
+        "Shape into 8 patties and fry in the oil for 5 minutes each side until browned and cooked through.",
+        "Serve with the sticky rice."
+      ],
+      "notes": [
+        "Food safety: cook the pork patties until they reach 75°C in the centre. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 508,
+        "proteinG": 32,
+        "carbsG": 40,
+        "fatG": 24,
+        "fibreG": 2,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "bun-thit-nuong-vietnamese-grilled-pork-with-vermicelli",
+      "title": "Bun Thit Nuong Vietnamese Grilled Pork with Vermicelli",
+      "summary": "Lemongrass pork slices over rice noodles with herbs, cucumber and nuoc cham dressing.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g pork scotch fillet, sliced thin",
+            "200g rice noodles",
+            "1 stalk lemongrass, finely sliced",
+            "3 cloves garlic, minced",
+            "2 tbsp fish sauce",
+            "1 tbsp sugar",
+            "2 tbsp lime juice",
+            "1 cucumber, sliced",
+            "1/4 cup fresh mint",
+            "1/4 cup fresh coriander",
+            "1 carrot, grated"
+          ]
+        }
+      ],
+      "steps": [
+        "Marinate the pork with the lemongrass, garlic, 1 tbsp fish sauce and 2 teaspoons sugar.",
+        "Soak or boil the noodles until tender, rinse and drain.",
+        "Grill the pork over high heat for 4 minutes, turning, until charred and cooked through.",
+        "Stir the lime juice, remaining fish sauce, sugar and 2 tbsp water for the dressing.",
+        "Serve the pork over noodles with the vegetables, herbs and dressing."
+      ],
+      "notes": [
+        "Food safety: cook the pork until it reaches 75°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 526,
+        "proteinG": 36,
+        "carbsG": 62,
+        "fatG": 14,
+        "fibreG": 4,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "cha-gio-vietnamese-pork-and-prawn-spring-rolls",
+      "title": "Cha Gio Vietnamese Pork and Prawn Spring Rolls",
+      "summary": "Crisp rolls of pork, prawn, mushroom and glass noodle fried until golden, served with lettuce and herbs.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 40,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "24 spring roll wrappers",
+            "300g minced pork",
+            "200g raw prawns, peeled and chopped",
+            "50g rice noodles",
+            "4 dried shiitake mushrooms, soaked and chopped",
+            "1 carrot, grated",
+            "1 tbsp fish sauce",
+            "1 tsp ground pepper",
+            "1 cup vegetable oil",
+            "1 cos lettuce",
+            "1/4 cup fresh mint"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the noodles until soft and chop.",
+        "Mix the pork, prawns, noodles, mushrooms, carrot, fish sauce and pepper.",
+        "Roll a tablespoon of filling in each wrapper, folding in the sides and sealing with water.",
+        "Fry in the oil in batches for 6 minutes, turning, until deep golden and cooked through.",
+        "Wrap in lettuce with mint to eat."
+      ],
+      "notes": [
+        "Food safety: cook the rolls until the filling reaches 75°C and the prawns are opaque and pink (63°C). Contains shellfish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 532,
+        "proteinG": 28,
+        "carbsG": 54,
+        "fatG": 22,
+        "fibreG": 3,
+        "sodiumMg": 850
+      }
+    },
+    {
+      "id": "rawon-east-javanese-black-beef-stew-with-rice",
+      "title": "Rawon East Javanese Black Beef Stew with Rice",
+      "summary": "Beef slow-cooked in a dark, earthy spice paste with lemongrass and lime leaves, served with rice.",
+      "cuisine": "indonesian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 90,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g beef chuck, cut in chunks",
+            "1 onion, chopped",
+            "4 cloves garlic",
+            "1 tbsp fresh ginger",
+            "1 tsp ground turmeric",
+            "1 tsp ground coriander",
+            "1 stalk lemongrass, bruised",
+            "2 kaffir lime leaves",
+            "2 tbsp tamarind paste",
+            "2 tbsp vegetable oil",
+            "1 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the onion, garlic, ginger and spices with 1/2 cup water into a paste and fry in the oil for 6 minutes.",
+        "Add the beef, lemongrass, lime leaves and 3 cups water and simmer covered for 1 hour 15 minutes until tender.",
+        "Stir in the tamarind and 1 tsp salt and simmer for 5 minutes.",
+        "Cook the rice until tender and fluffy, and serve with the stew."
+      ],
+      "notes": [
+        "Food safety: cook the beef until it reaches 75°C and is tender. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 586,
+        "proteinG": 40,
+        "carbsG": 56,
+        "fatG": 22,
+        "fibreG": 2,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "sambal-goreng-udang-indonesian-prawns-in-chilli-tomato-sauce",
+      "title": "Sambal Goreng Udang Indonesian Prawns in Chilli Tomato Sauce",
+      "summary": "Prawns in a spicy chilli and tomato sauce with coconut milk, served with rice.",
+      "cuisine": "indonesian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g raw prawns, peeled",
+            "2 tomatoes, chopped",
+            "1 onion, sliced",
+            "3 cloves garlic, minced",
+            "2 red chillies, sliced",
+            "1/2 cup coconut milk",
+            "1 tbsp tamarind paste",
+            "1 tbsp vegetable oil",
+            "1 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onion, garlic and chilli in the oil for 5 minutes, then add the tomatoes and tamarind and cook for 5 minutes until pulpy.",
+        "Cook the rice until tender and fluffy.",
+        "Pour in the coconut milk and 1/2 tsp salt, add the prawns and simmer for 4 minutes until pink and firm.",
+        "Serve over the rice while hot, spooning the sauce over the top."
+      ],
+      "notes": [
+        "Food safety: cook the prawns until pink and firm, about 63°C inside. Contains shellfish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 476,
+        "proteinG": 32,
+        "carbsG": 54,
+        "fatG": 14,
+        "fibreG": 3,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "murtabak-malaysian-stuffed-pan-fried-flatbread-with-spiced-lamb",
+      "title": "Murtabak Malaysian Stuffed Pan-Fried Flatbread with Spiced Lamb",
+      "summary": "Thin flatbread folded around spiced lamb, onion and egg, fried until crisp.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 30,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 flatbreads",
+            "400g minced lamb",
+            "2 onions, finely chopped",
+            "4 eggs",
+            "2 tsp curry powder",
+            "1 tbsp fresh ginger, grated",
+            "2 tbsp vegetable oil",
+            "1 cucumber, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the lamb, one onion, curry powder and ginger in 1 tbsp oil for 10 minutes until the lamb is cooked through and dry.",
+        "Beat the eggs, stir in the lamb, second onion and 1/2 tsp salt.",
+        "Place a quarter of the mixture in the centre of each flatbread and fold in the sides to make a square parcel.",
+        "Fry in the remaining oil for 4 minutes each side until golden and the egg is set.",
+        "Cut in squares and serve with sliced cucumber."
+      ],
+      "notes": [
+        "Food safety: cook the lamb until it reaches 75°C and the egg until fully set. Contains egg. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 380,
+        "proteinG": 24,
+        "carbsG": 32,
+        "fatG": 17,
+        "fibreG": 2,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "roti-john-malaysian-egg-and-minced-beef-sandwich",
+      "title": "Roti John Malaysian Egg and Minced Beef Sandwich",
+      "summary": "Bread fried with a savoury beef and egg topping, a Malaysian street favourite, served with chilli sauce.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 bread rolls, halved",
+            "300g minced beef",
+            "1 onion, finely chopped",
+            "4 eggs",
+            "2 tbsp chilli sauce",
+            "1 tbsp tomato sauce",
+            "1 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the beef and onion in the oil for 8 minutes until cooked through and browned.",
+        "Whisk the eggs with the beef mixture and a pinch of salt.",
+        "Cook the roll halves cut-side down in a pan, pouring a quarter of the egg mixture on each, for 4 minutes until the egg is set and the bread crisp.",
+        "Drizzle with the chilli and tomato sauces and serve in squares."
+      ],
+      "notes": [
+        "Food safety: cook the beef until it reaches 75°C and the egg until set. Contains egg. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 466,
+        "proteinG": 30,
+        "carbsG": 40,
+        "fatG": 20,
+        "fibreG": 3,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "sambal-stingray-style-grilled-fish-in-banana-leaf",
+      "title": "Sambal Stingray-Style Grilled Fish in Banana Leaf",
+      "summary": "White fish fillets topped with a fiery sambal and grilled in foil parcels, served with rice.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g white fish fillet",
+            "3 red chillies",
+            "2 shallots",
+            "3 cloves garlic",
+            "1 tbsp shrimp paste",
+            "1 tbsp tamarind paste",
+            "1 tbsp sugar",
+            "1 lime",
+            "1 tbsp vegetable oil",
+            "1 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the chillies, shallots, garlic, shrimp paste, tamarind, sugar and oil into a sambal.",
+        "Cook the rice until tender and fluffy.",
+        "Spread the sambal over the fish, wrap in foil and grill or bake at 200°C for 15 minutes until the fish flakes.",
+        "Serve with the rice and lime wedges."
+      ],
+      "notes": [
+        "Food safety: cook the fish until opaque and it reaches 63°C. Contains shellfish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 456,
+        "proteinG": 34,
+        "carbsG": 56,
+        "fatG": 10,
+        "fibreG": 3,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "menudo-filipino-pork-and-vegetable-tomato-stew",
+      "title": "Menudo Filipino Pork and Vegetable Tomato Stew",
+      "summary": "Pork cubes simmered with potatoes, carrots and capsicum in a tomato sauce, served with rice.",
+      "cuisine": "filipino",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g pork shoulder, cubed",
+            "2 potatoes, diced",
+            "2 carrots, diced",
+            "1 capsicum, diced",
+            "1 onion, chopped",
+            "3 cloves garlic, minced",
+            "400g canned crushed tomatoes",
+            "2 tbsp soy sauce",
+            "1 tbsp vegetable oil",
+            "1 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onion and garlic in the oil for 4 minutes, then add the pork and brown for 6 minutes.",
+        "Add the tomatoes, soy sauce and 1 cup water and simmer covered for 20 minutes.",
+        "Add the potatoes and carrots and simmer for 15 minutes until the pork and vegetables are tender, adding the capsicum for the last 5.",
+        "Cook the rice until tender and fluffy, and serve with the stew."
+      ],
+      "notes": [
+        "Food safety: cook the pork until it reaches 75°C and is tender. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 600,
+        "proteinG": 34,
+        "carbsG": 68,
+        "fatG": 20,
+        "fibreG": 6,
+        "sodiumMg": 800
+      }
+    }
+  ]
+}

@@ -205,7 +205,7 @@ describe('edges', () => {
   });
 
   it('returns nothing when the filters leave nothing', () => {
-    const r = rankHome(rankInput({ filters: { cuisine: 'scandinavian', difficulty: 'hard' } }));
+    const r = rankHome(rankInput({ filters: { cuisine: 'italian', difficulty: 'hard', meal: 'breakfast' } }));
     assert.equal(r.picks.length, 0);
   });
 
@@ -216,7 +216,7 @@ describe('edges', () => {
       avoid: { options: ['nuts' as const, 'soy' as const], custom: ['chickpeas'] },
     };
     // One cuisine keeps the pool tiny however big the catalogue grows.
-    const r = rankHome(rankInput({ taste, filters: { cuisine: 'turkish' } }));
+    const r = rankHome(rankInput({ taste, filters: { cuisine: 'filipino' } }));
     assert.ok(r.picks.length > 0 && r.picks.length < 10, String(r.picks.length));
   });
 

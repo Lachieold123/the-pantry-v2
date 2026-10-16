@@ -1,0 +1,409 @@
+{
+ "about": "House recipes, batch 04 (helper sA): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+ "recipes": [
+  {
+   "id": "kotopita-greek-chicken-and-feta-filo-pie",
+   "title": "Kotopita (Greek Chicken and Feta Filo Pie)",
+   "summary": "Crisp, buttery filo layers around a creamy filling of chicken, feta, ricotta and dill.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 60,
+   "servings": 6,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "500g chicken breast",
+      "4 cup water",
+      "1 brown onion, finely diced",
+      "2 tbsp olive oil",
+      "200g feta, crumbled",
+      "200g ricotta",
+      "3 egg",
+      "2 tbsp chopped dill",
+      "200g filo pastry",
+      "60g butter, melted"
+     ]
+    }
+   ],
+   "steps": [
+    "Poach the chicken in the water at a gentle simmer for 15 minutes, until cooked through. Lift out and shred finely.",
+    "Cook the onion in the oil over medium heat for 6 minutes, until soft. Mix in a bowl with the chicken, feta, ricotta, eggs, dill and pepper.",
+    "Heat the oven to 180°C (160°C fan). Brush a 20cm x 30cm dish with butter and layer in half the filo, brushing each sheet with butter. Spread over the filling and cover with the rest of the filo, brushing between sheets.",
+    "Score the top into squares and bake for 40 minutes, until deep golden and puffed. Rest for 10 minutes before cutting."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the centre and the pie must be hot all the way through. Refrigerate leftovers within an hour.",
+    "Keep unused filo covered with a damp cloth so it does not dry out."
+   ],
+   "nutrition": {
+    "kcal": 456,
+    "proteinG": 34,
+    "carbsG": 26,
+    "fatG": 24,
+    "fibreG": 2,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "yiouvarlakia-greek-meatballs-in-egg-and-lemon-sauce",
+   "title": "Yiouvarlakia (Greek Meatballs in Egg and Lemon Sauce)",
+   "summary": "Soft rice-and-herb meatballs poached in broth, finished with a silky egg and lemon sauce.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 50,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g beef mince",
+      "1/3 cup short grain rice",
+      "1 brown onion, grated",
+      "1/4 cup chopped parsley",
+      "1 egg",
+      "2 tbsp olive oil",
+      "4 cup chicken stock",
+      "2 egg",
+      "1 lemon, juiced"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the mince, rice, onion, parsley, 1 egg, oil, salt and pepper and roll into 16 walnut-sized balls.",
+    "Bring the stock to a gentle simmer in a wide pot, add the meatballs and cook covered over low heat for 40 minutes, until the rice is tender and the meatballs are cooked through.",
+    "Whisk the 2 eggs and lemon juice in a bowl, then slowly whisk in 1 cup of hot stock. Take the pot off the heat and stir the egg mixture in gently.",
+    "Return to very low heat for 2 minutes, until the sauce thickens slightly. Do not let it boil or it will curdle."
+   ],
+   "notes": [
+    "Food safety: meatballs must reach 75°C in the centre with no pink inside. The sauce is thickened by the heat of the stock, so keep it just below a boil until the eggs are set.",
+    "Gluten-free and dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 428,
+    "proteinG": 33,
+    "carbsG": 20,
+    "fatG": 24,
+    "fibreG": 2,
+    "sodiumMg": 820
+   }
+  },
+  {
+   "id": "arroz-al-horno-spanish-baked-rice-with-pork-ribs-and-chorizo",
+   "title": "Arroz al Horno (Spanish Baked Rice with Pork Ribs and Chorizo)",
+   "summary": "A Valencian tray of rice baked in stock with pork ribs, chorizo, chickpeas and tomato.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 75,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g pork ribs, cut into pieces",
+      "150g chorizo, sliced",
+      "2 tbsp olive oil",
+      "1 head garlic, halved crossways",
+      "2 tomato, grated",
+      "1 tsp smoked paprika",
+      "1 cup short grain rice",
+      "400g canned chickpeas, drained",
+      "2 1/2 cup chicken stock",
+      "1 tsp saffron threads"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Brown the ribs and chorizo in the oil in a large ovenproof pan over medium-high heat for 8 minutes, until golden.",
+    "Add the tomato and paprika and cook for 3 minutes, until thick. Stir in the rice and chickpeas for 1 minute.",
+    "Pour in the stock mixed with the saffron, nestle the garlic on top and bring to a simmer, until bubbling across the pan. Do not stir again.",
+    "Bake uncovered for 40 minutes, until the stock is absorbed and the surface is crusty. Rest for 5 minutes before serving."
+   ],
+   "notes": [
+    "Food safety: pork must reach at least 70°C; the ribs should be tender at the end. Cool leftover rice within an hour and refrigerate.",
+    "Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 516,
+    "proteinG": 28,
+    "carbsG": 40,
+    "fatG": 27,
+    "fibreG": 4,
+    "sodiumMg": 900
+   }
+  },
+  {
+   "id": "hachis-parmentier-french-beef-and-potato-pie",
+   "title": "Hachis Parmentier (French Beef and Potato Pie)",
+   "summary": "Savoury beef mince under buttery mashed potato with a golden gruyere crust.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 25,
+   "cookMinutes": 50,
+   "servings": 6,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "1kg potato, peeled and chopped",
+      "40g butter",
+      "1/2 cup milk",
+      "600g beef mince",
+      "1 tbsp olive oil",
+      "1 brown onion, finely diced",
+      "1 carrot, finely diced",
+      "2 tbsp tomato paste",
+      "1 cup beef stock",
+      "1 tbsp plain flour",
+      "60g gruyere, grated"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the potato in salted water for 18 minutes, until tender, then drain, mash with the butter and milk and season.",
+    "Heat the oil in a large pan and cook the onion and carrot for 6 minutes, until soft. Add the mince and cook for 8 minutes, until browned and broken up. Stir in the tomato paste and flour for 1 minute.",
+    "Pour in the stock and simmer for 8 minutes, until thick. Tip into a baking dish and heat the oven to 200°C (180°C fan).",
+    "Cover with the mash, rake the top with a fork and scatter with the gruyere. Bake for 20 minutes, until golden and bubbling."
+   ],
+   "notes": [
+    "Food safety: the mince filling must reach 75°C and be piping hot before it is topped. Cool leftovers within an hour.",
+    "Good for the freezer for up to 3 months."
+   ],
+   "nutrition": {
+    "kcal": 480,
+    "proteinG": 28,
+    "carbsG": 38,
+    "fatG": 24,
+    "fibreG": 4,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "orecchiette-with-sausage-and-broccolini",
+   "title": "Orecchiette with Sausage and Broccolini",
+   "summary": "Pugliese-style ear-shaped pasta with browned Italian sausage, garlic, chilli and tender broccolini.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "360g orecchiette",
+      "300g italian sausage, casings removed",
+      "2 bunch broccolini, cut into short lengths",
+      "3 garlic, sliced",
+      "1/2 tsp chilli flakes",
+      "2 tbsp olive oil",
+      "1 lemon, zested"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the pasta in plenty of salted boiling water for 10 minutes, adding the broccolini for the last 3 minutes, until the pasta is al dente. Reserve a mug of cooking water, then drain.",
+    "Heat the oil in a large frying pan over medium-high heat and cook the sausage, breaking it into chunks, for 8 minutes, until browned and cooked through.",
+    "Add the garlic and chilli for 1 minute, then toss through the pasta, broccolini, lemon zest and enough cooking water to make a glossy sauce."
+   ],
+   "notes": [
+    "Food safety: sausage must reach 75°C in the centre with no pink inside.",
+    "Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 656,
+    "proteinG": 25,
+    "carbsG": 76,
+    "fatG": 28,
+    "fibreG": 6,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "swiss-brown-mushroom-risotto-with-thyme",
+   "title": "Swiss Brown Mushroom Risotto with Thyme",
+   "summary": "Creamy arborio rice stirred with browned mushrooms, white wine, thyme and a little butter.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp olive oil",
+      "400g swiss brown mushroom, sliced",
+      "1 brown onion, finely diced",
+      "2 garlic, crushed",
+      "1 1/2 cup arborio rice",
+      "1/2 cup white wine",
+      "5 cup vegetable stock, hot",
+      "4 thyme sprigs",
+      "40g butter",
+      "40g vegetarian hard cheese, grated"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat half the oil in a large pan over high heat and cook the mushrooms for 6 minutes, until golden. Set aside.",
+    "Add the remaining oil, onion and garlic and cook over medium heat for 5 minutes, until soft. Stir in the rice for 1 minute, then add the wine and stir until absorbed.",
+    "Add the hot stock a ladleful at a time, stirring often, for 20 minutes, until the rice is creamy and tender with a slight bite. Add the thyme and mushrooms halfway.",
+    "Take off the heat and beat in the butter and cheese. Rest, covered, for 2 minutes."
+   ],
+   "notes": [
+    "Vegetarian.",
+    "Keep the stock at a simmer in a second pot so the rice cooks evenly."
+   ],
+   "nutrition": {
+    "kcal": 477,
+    "proteinG": 13,
+    "carbsG": 68,
+    "fatG": 17,
+    "fibreG": 4,
+    "sodiumMg": 720
+   }
+  },
+  {
+   "id": "enfrijoladas-oaxacan-bean-sauced-tortillas-with-eggs",
+   "title": "Enfrijoladas (Oaxacan Bean-Sauced Tortillas with Eggs)",
+   "summary": "Corn tortillas dipped in smooth black bean sauce and topped with eggs, crumbled cheese and avocado.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g canned black beans",
+      "1 cup water",
+      "1 garlic",
+      "1 tsp ground cumin",
+      "1 tbsp olive oil",
+      "8 corn tortilla",
+      "4 egg",
+      "100g feta, crumbled",
+      "1 avocado, sliced",
+      "1/4 cup coriander leaves"
+     ]
+    }
+   ],
+   "steps": [
+    "Blend the beans with the water, garlic, cumin and a pinch of salt until smooth. Pour into a wide pan and simmer for 8 minutes, until thickened to a thin gravy.",
+    "Warm the tortillas in a dry pan for 30 seconds each side, until soft and pliable. Dip each in the bean sauce, fold into quarters and arrange on plates.",
+    "Fry the eggs in the oil over medium heat for 3 minutes, until the whites are set.",
+    "Top each plate with an egg, extra sauce, feta, avocado and coriander."
+   ],
+   "notes": [
+    "Food safety: fry the eggs until the whites are fully set; skip runny yolks for children, older adults and anyone pregnant.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 450,
+    "proteinG": 21,
+    "carbsG": 42,
+    "fatG": 22,
+    "fibreG": 11,
+    "sodiumMg": 740
+   }
+  },
+  {
+   "id": "pollo-a-la-brasa-style-roast-chicken-with-potatoes",
+   "title": "Pollo a la Brasa-Style Roast Chicken with Potatoes",
+   "summary": "Peruvian-spiced chicken with cumin, paprika, garlic and soy, roasted with crisp potatoes.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 60,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.2kg chicken maryland",
+      "2 tbsp soy sauce",
+      "2 tbsp olive oil",
+      "1 tbsp white wine vinegar",
+      "4 garlic, crushed",
+      "2 tsp ground cumin",
+      "2 tsp smoked paprika",
+      "1 tsp dried oregano",
+      "600g potato, cut into wedges",
+      "2 lime, cut into wedges"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Mix the soy, oil, vinegar, garlic, cumin, paprika and oregano into a paste and rub it over the chicken, working it under the skin.",
+    "Toss the potato with a spoonful of the paste and a pinch of salt in a large roasting tin and sit the chicken on top, skin side up.",
+    "Roast for 50 minutes, until the skin is crisp and the potatoes golden.",
+    "Rest the chicken for 5 minutes and serve with the lime wedges."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part, with clear juices.",
+    "Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 519,
+    "proteinG": 41,
+    "carbsG": 28,
+    "fatG": 27,
+    "fibreG": 4,
+    "sodiumMg": 900
+   }
+  }
+ ]
+}

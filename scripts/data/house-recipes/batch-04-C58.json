@@ -1,0 +1,1320 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "lemony-roast-chicken-leftovers-soup-with-egg-noodles-and-parsley",
+      "title": "Lemony Roast Chicken Leftovers Soup with Egg Noodles and Parsley",
+      "summary": "A comforting soup that turns the last of the roast chicken into a quick weeknight meal.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "1 onion, diced",
+            "2 carrots, sliced",
+            "2 celery stalks, sliced",
+            "2 garlic cloves, minced",
+            "1.5L chicken stock",
+            "300g leftover roast chicken, shredded",
+            "120g dried egg noodles",
+            "2 tbsp lemon juice",
+            "2 tbsp chopped parsley",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a large pot and cook the onion, carrots and celery over medium heat for 6 minutes until softened, adding the garlic for the last minute.",
+        "Pour in the stock, bring to a simmer and cook for 8 minutes until the carrots are tender.",
+        "Add the noodles and chicken and simmer for 5 minutes until the noodles are cooked and the chicken is steaming hot at 75°C, then stir in the lemon juice, parsley and salt."
+      ],
+      "notes": [
+        "Food safety: use roast chicken within 3 days of cooking, keep it chilled, and reheat until steaming hot at 75°C all the way through.",
+        "Keeps for 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 306,
+        "proteinG": 24,
+        "carbsG": 33,
+        "fatG": 8,
+        "fibreG": 3,
+        "sodiumMg": 980
+      }
+    },
+    {
+      "id": "leftover-roast-chicken-congee",
+      "title": "Leftover Roast Chicken Congee",
+      "summary": "A silky rice porridge made with leftover roast chicken, ginger and spring onion.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "breakfast",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 50,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g jasmine rice, rinsed",
+            "1.8L chicken stock",
+            "1 tbsp grated ginger",
+            "250g leftover roast chicken, shredded",
+            "1 tbsp soy sauce",
+            "1 tsp sesame oil",
+            "3 spring onions, sliced",
+            "1/2 tsp white pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Put the rice, stock and ginger in a large pot and bring to a gentle boil, stirring until the rice begins to bubble.",
+        "Reduce to a low simmer and cook for 40 minutes, stirring now and then, until the rice breaks down into a thick, creamy porridge.",
+        "Stir in the chicken and cook for 5 minutes until steaming hot at 75°C, then season with the soy sauce, sesame oil and pepper and top with the spring onions."
+      ],
+      "notes": [
+        "Food safety: cool leftover congee and refrigerate within 1 hour, because cooked rice can grow harmful bacteria, and reheat until steaming hot at 75°C.",
+        "Add water if it thickens too much on standing."
+      ],
+      "nutrition": {
+        "kcal": 283,
+        "proteinG": 22,
+        "carbsG": 37,
+        "fatG": 5,
+        "fibreG": 1,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "leftover-roast-lamb-scotch-broth",
+      "title": "Leftover Roast Lamb Scotch Broth",
+      "summary": "A hearty barley broth that makes the most of Sunday's roast lamb and any bone.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 55,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "1 onion, diced",
+            "2 carrots, diced",
+            "1 small swede, diced",
+            "2 leeks, sliced",
+            "100g pearl barley",
+            "1.6L beef stock",
+            "300g roast lamb leg, diced",
+            "2 bay leaves",
+            "1/2 tsp salt",
+            "1/4 tsp black pepper",
+            "2 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion, carrots, swede and leeks in the oil in a large pot over medium heat for 8 minutes.",
+        "Add the barley, stock and bay leaves and simmer for 40 minutes until the barley and vegetables are tender.",
+        "Stir in the lamb and cook for 5 minutes until steaming hot at 75°C, then season and finish with the parsley."
+      ],
+      "notes": [
+        "Food safety: use roast lamb within 3 days and reheat until steaming hot at 75°C.",
+        "The soup thickens overnight; thin with a little water."
+      ],
+      "nutrition": {
+        "kcal": 245,
+        "proteinG": 17,
+        "carbsG": 26,
+        "fatG": 7,
+        "fibreG": 5,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "next-day-roast-beef-pearl-barley-soup-with-carrot-and-turnip",
+      "title": "Next Day Roast Beef Pearl Barley Soup with Carrot and Turnip",
+      "summary": "A rich, beefy soup with barley, built on leftover roast beef and its pan juices.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 60,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "1 onion, diced",
+            "2 carrots, diced",
+            "1 swede, diced",
+            "2 celery stalks, diced",
+            "2 garlic cloves, minced",
+            "100g pearl barley",
+            "1.5L beef stock",
+            "1 tbsp tomato paste",
+            "1 tsp thyme leaves",
+            "300g leftover roast beef, diced",
+            "1 tbsp Worcestershire sauce",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion, carrots, turnip and celery in the oil in a large pot for 8 minutes until softened, then add the garlic and tomato paste for 1 minute.",
+        "Add the barley, stock and thyme and simmer for 40 minutes until the barley is tender.",
+        "Stir in the beef and Worcestershire sauce and simmer for 5 minutes until steaming hot at 75°C, then season with salt."
+      ],
+      "notes": [
+        "Food safety: eat roast beef within 3 days of cooking and reheat until steaming hot at 75°C.",
+        "Freezes for 2 months."
+      ],
+      "nutrition": {
+        "kcal": 251,
+        "proteinG": 18,
+        "carbsG": 26,
+        "fatG": 7,
+        "fibreG": 6,
+        "sodiumMg": 860
+      }
+    },
+    {
+      "id": "next-day-roast-pork-shreds-in-caraway-cabbage-broth",
+      "title": "Next Day Roast Pork Shreds in Caraway Cabbage Broth",
+      "summary": "A warming Eastern European soup with shredded pork, cabbage and caraway.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "1 onion, sliced",
+            "2 carrots, sliced",
+            "1/2 small green cabbage, shredded",
+            "1 tsp caraway seeds",
+            "1.4L chicken stock",
+            "2 potatoes, diced",
+            "300g leftover roast pork, shredded",
+            "1 tbsp apple cider vinegar",
+            "1/2 tsp salt",
+            "2 tbsp chopped dill"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion and carrots in the oil over medium heat for 6 minutes until soft, then add the caraway for 1 minute.",
+        "Add the cabbage, stock and potatoes and simmer for 15 minutes until the potatoes are tender.",
+        "Stir in the pork and simmer for 5 minutes until steaming hot at 75°C, then add the vinegar, salt and dill."
+      ],
+      "notes": [
+        "Food safety: use roast pork within 3 days and reheat until steaming hot at 75°C.",
+        "Serve with rye bread."
+      ],
+      "nutrition": {
+        "kcal": 281,
+        "proteinG": 22,
+        "carbsG": 25,
+        "fatG": 9,
+        "fibreG": 6,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "leftover-chicken-and-rice-soup-with-carrot-and-celery",
+      "title": "Leftover Chicken and Rice Soup with Carrot and Celery",
+      "summary": "Shredded leftover roast chicken simmered with rice, carrot and celery in a savoury broth.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "1 onion, diced",
+            "2 bay leaves",
+            "120g long-grain rice",
+            "2 carrots, diced",
+            "2 celery stalks, sliced",
+            "1.6L chicken stock",
+            "300g cooked chicken breast, shredded",
+            "1 tsp salt",
+            "2 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion in the oil over medium heat for 5 minutes until soft.",
+        "Add the stock, bay leaves, rice, carrots and celery and simmer for 18 minutes until the rice and vegetables are tender.",
+        "Add the chicken and simmer for 5 minutes until steaming hot at 75°C, then season with salt and parsley."
+      ],
+      "notes": [
+        "Food safety: use roast chicken within 3 days of cooking, and refrigerate the soup within 1 hour of cooking because it contains cooked rice.",
+        "Use the carcass to make stock separately if you like."
+      ],
+      "nutrition": {
+        "kcal": 246,
+        "proteinG": 21,
+        "carbsG": 26,
+        "fatG": 6,
+        "fibreG": 2,
+        "sodiumMg": 880
+      }
+    },
+    {
+      "id": "leftover-roast-vegetable-soup",
+      "title": "Leftover Roast Vegetable Soup",
+      "summary": "Blitz the tray of roasted vegetables from yesterday into a velvety soup.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g leftover roasted vegetables (pumpkin, carrot, potato, onion)",
+            "1 tbsp olive oil",
+            "2 garlic cloves, minced",
+            "1L vegetable stock",
+            "1 tsp ground cumin",
+            "1/2 tsp smoked paprika",
+            "1/2 tsp salt",
+            "2 tbsp cream",
+            "2 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a pot over medium heat and cook the garlic and spices for 1 minute until fragrant.",
+        "Add the vegetables and stock and simmer for 12 minutes until completely heated through and soft.",
+        "Blend until smooth, stir in the cream and salt, and top with parsley."
+      ],
+      "notes": [
+        "Add a squeeze of lemon for brightness.",
+        "Use leftovers within 3 days; freezes for 2 months."
+      ],
+      "nutrition": {
+        "kcal": 194,
+        "proteinG": 4,
+        "carbsG": 24,
+        "fatG": 8,
+        "fibreG": 5,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "roast-chicken-tortilla-soup",
+      "title": "Roast Chicken Tortilla Soup",
+      "summary": "A smoky tomato and lime soup with shredded roast chicken and crisp tortilla strips.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "1 onion, diced",
+            "3 garlic cloves, minced",
+            "1 tsp ground cumin",
+            "1 tsp smoked paprika",
+            "400g tinned chopped tomatoes",
+            "1L chicken stock",
+            "300g leftover roast chicken, shredded",
+            "2 corn tortillas, cut into strips",
+            "1 tbsp lime juice",
+            "1 avocado, diced",
+            "2 tbsp chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion in the oil over medium heat for 6 minutes until soft, then add the garlic, cumin and paprika for 1 minute.",
+        "Add the tomatoes and stock and simmer for 15 minutes until slightly thickened.",
+        "Add the chicken and simmer for 5 minutes until steaming hot at 75°C, while baking the tortilla strips at 200°C for 8 minutes until crisp, then serve topped with strips, avocado, lime juice and coriander."
+      ],
+      "notes": [
+        "Food safety: use roast chicken within 3 days and reheat until steaming hot at 75°C.",
+        "Add chilli if you like heat."
+      ],
+      "nutrition": {
+        "kcal": 371,
+        "proteinG": 27,
+        "carbsG": 28,
+        "fatG": 15,
+        "fibreG": 8,
+        "sodiumMg": 820
+      }
+    },
+    {
+      "id": "christmas-ham-bone-soup-with-split-peas-and-smoked-paprika",
+      "title": "Christmas Ham Bone Soup with Split Peas and Smoked Paprika",
+      "summary": "A thick, smoky split pea soup made with the leftover Christmas ham bone.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 110,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 leftover ham bone with some meat",
+            "2L water",
+            "1 onion, diced",
+            "2 carrots, diced",
+            "2 celery stalks, diced",
+            "300g green split peas, rinsed",
+            "2 bay leaves",
+            "1 tsp smoked paprika",
+            "1 tbsp olive oil",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion, carrots and celery in the oil in a large pot for 6 minutes, stirring in the paprika for the last minute.",
+        "Add the ham bone, water, split peas and bay leaves and simmer gently for 90 minutes until the peas have collapsed into a thick soup.",
+        "Lift out the bone, shred the meat back into the soup, season with pepper and simmer for 5 minutes until steaming hot at 75°C."
+      ],
+      "notes": [
+        "Food safety: use the ham bone within 3 days and reheat the soup until steaming hot at 75°C.",
+        "The ham is already salty, so taste before adding any salt."
+      ],
+      "nutrition": {
+        "kcal": 167,
+        "proteinG": 9,
+        "carbsG": 22,
+        "fatG": 3,
+        "fibreG": 8,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "silky-roast-pumpkin-soup-finished-with-coconut-cream-and-lime-zest",
+      "title": "Silky Roast Pumpkin Soup Finished with Coconut Cream and Lime Zest",
+      "summary": "Leftover roasted pumpkin blitzed with coconut cream, ginger and lime for a velvety soup.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g leftover roasted pumpkin",
+            "1 tbsp olive oil",
+            "1 onion, diced",
+            "1 tbsp grated ginger",
+            "2 garlic cloves, minced",
+            "800ml vegetable stock",
+            "100ml coconut cream",
+            "1 tbsp lime juice",
+            "1 tsp lime zest",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion in the oil over medium heat for 5 minutes until soft, then add the ginger and garlic for 1 minute.",
+        "Add the pumpkin and stock and simmer for 10 minutes until completely hot.",
+        "Blend until smooth, stir in the coconut cream, lime juice and salt and top with lime zest."
+      ],
+      "notes": [
+        "Cool leftovers quickly and refrigerate within 2 hours.",
+        "Freezes for 2 months."
+      ],
+      "nutrition": {
+        "kcal": 199,
+        "proteinG": 3,
+        "carbsG": 20,
+        "fatG": 11,
+        "fibreG": 4,
+        "sodiumMg": 590
+      }
+    },
+    {
+      "id": "shredded-roast-lamb-moroccan-harira-with-lentils-chickpeas-and-tomato",
+      "title": "Shredded Roast Lamb Moroccan Harira with Lentils Chickpeas and Tomato",
+      "summary": "A warming spiced soup of lentils, chickpeas and tomato with the last of the roast lamb.",
+      "cuisine": "north-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "1 onion, diced",
+            "2 celery stalks, diced",
+            "2 garlic cloves, minced",
+            "1 tsp ground cumin",
+            "1 tsp ground cinnamon",
+            "1 tsp ground turmeric",
+            "1/2 tsp ground ginger",
+            "400g tinned chopped tomatoes",
+            "100g red lentils",
+            "400g tinned chickpeas, drained",
+            "1.2L beef stock",
+            "250g roast lamb leg, shredded",
+            "2 tbsp lemon juice",
+            "2 tbsp chopped coriander",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion and celery in the oil for 6 minutes until soft, then add the garlic and spices for 1 minute.",
+        "Add the tomatoes, lentils, chickpeas and stock and simmer for 25 minutes until the lentils are soft.",
+        "Stir in the lamb and simmer for 5 minutes until steaming hot at 75°C, then add the lemon juice, coriander and salt."
+      ],
+      "notes": [
+        "Food safety: use roast lamb within 3 days and reheat until steaming hot at 75°C.",
+        "Serve with lemon wedges."
+      ],
+      "nutrition": {
+        "kcal": 303,
+        "proteinG": 21,
+        "carbsG": 34,
+        "fatG": 7,
+        "fibreG": 10,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "roast-chicken-laksa-style-soup",
+      "title": "Roast Chicken Laksa-Style Soup",
+      "summary": "A coconut curry noodle soup that revives leftover roast chicken in 20 minutes.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp vegetable oil",
+            "3 tbsp laksa paste",
+            "400ml coconut milk",
+            "700ml chicken stock",
+            "250g leftover roast chicken, shredded",
+            "150g rice vermicelli",
+            "100g bean sprouts",
+            "1 tbsp lime juice",
+            "1 tbsp fish sauce",
+            "2 tbsp chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the laksa paste in the oil for 2 minutes until fragrant.",
+        "Add the coconut milk and stock and simmer for 8 minutes, then add the chicken and cook for 5 minutes until steaming hot at 75°C.",
+        "Soak the noodles in boiling water for 4 minutes until tender, drain into bowls and ladle over the soup, then top with sprouts, lime juice, fish sauce and coriander."
+      ],
+      "notes": [
+        "Food safety: use roast chicken within 3 days and reheat until steaming hot at 75°C.",
+        "Add chilli oil for extra heat."
+      ],
+      "nutrition": {
+        "kcal": 538,
+        "proteinG": 22,
+        "carbsG": 48,
+        "fatG": 28,
+        "fibreG": 3,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "greek-avgolemono-soup-with-leftover-roast-chicken",
+      "title": "Greek Avgolemono Soup with Leftover Roast Chicken",
+      "summary": "A silky Greek-style lemon soup with rice, chicken and egg-thickened broth.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1.2L chicken stock",
+            "80g short-grain rice",
+            "250g cooked chicken breast, shredded",
+            "2 eggs",
+            "4 tbsp lemon juice",
+            "2 tbsp chopped dill",
+            "1/2 tsp salt",
+            "1/4 tsp white pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the stock and rice in a pot for 15 minutes until the rice is tender.",
+        "Whisk the eggs with the lemon juice, then slowly whisk in 1 cup of hot stock to temper them.",
+        "Return the mixture to the pot off the heat with the chicken, stirring gently for 3 minutes until hot at 75°C and slightly thickened, then season and add the dill."
+      ],
+      "notes": [
+        "Food safety: keep the soup below a boil once the egg is added, and make sure the soup reaches 75°C so the egg is cooked through.",
+        "Use roast chicken within 3 days of cooking."
+      ],
+      "nutrition": {
+        "kcal": 216,
+        "proteinG": 22,
+        "carbsG": 18,
+        "fatG": 6,
+        "fibreG": 1,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "oven-tray-baked-eggs-and-sausages-for-a-crowd",
+      "title": "Oven Tray Baked Eggs and Sausages for a Crowd",
+      "summary": "A hands-off breakfast tray of sausages, tomatoes and baked eggs for a full table.",
+      "cuisine": "british",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 pork sausages",
+            "4 tomatoes, halved",
+            "300g mushrooms, halved",
+            "2 tbsp olive oil",
+            "8 eggs",
+            "1/2 tsp salt",
+            "1/4 tsp black pepper",
+            "2 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the sausages, tomatoes and mushrooms with the oil on a large tray and roast at 200°C for 15 minutes until the sausages are browned.",
+        "Make 8 small wells in the vegetables and crack an egg into each.",
+        "Bake for 8 to 10 minutes until the whites are set and the sausages reach 75°C in the centre, then season and add parsley."
+      ],
+      "notes": [
+        "Food safety: cook the sausages until they reach 75°C in the centre and the eggs until the whites are fully set.",
+        "Serve with toast."
+      ],
+      "nutrition": {
+        "kcal": 134,
+        "proteinG": 7,
+        "carbsG": 2,
+        "fatG": 10,
+        "fibreG": 1,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "baked-french-toast-casserole-for-eight",
+      "title": "Baked French Toast Casserole for Eight",
+      "summary": "A custardy cinnamon French toast bake that feeds a crowd from one dish.",
+      "cuisine": "american",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g day-old brioche, cubed",
+            "6 eggs",
+            "500ml milk",
+            "100ml cream",
+            "4 tbsp brown sugar",
+            "2 tsp vanilla extract",
+            "1 tsp ground cinnamon",
+            "1/4 tsp salt",
+            "30g butter, melted"
+          ]
+        }
+      ],
+      "steps": [
+        "Spread the bread cubes in a buttered baking dish and drizzle with the melted butter.",
+        "Whisk the eggs, milk, cream, sugar, vanilla, cinnamon and salt, then pour evenly over the bread and press down.",
+        "Bake at 180°C for 40 minutes until puffed, golden and the custard is set in the centre."
+      ],
+      "notes": [
+        "Food safety: bake until the egg custard is fully set and refrigerate leftovers within 2 hours.",
+        "Serve with fruit and maple syrup."
+      ],
+      "nutrition": {
+        "kcal": 361,
+        "proteinG": 13,
+        "carbsG": 38,
+        "fatG": 17,
+        "fibreG": 2,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "big-pot-oat-porridge-for-eight",
+      "title": "Big Pot Oat Porridge for Eight",
+      "summary": "A creamy porridge cooked on the stove for a crowd, ready for any toppings.",
+      "cuisine": "british",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 20,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "360g rolled oats",
+            "1.6L milk",
+            "800ml water",
+            "1/2 tsp salt",
+            "2 tbsp honey",
+            "1 tsp ground cinnamon"
+          ]
+        }
+      ],
+      "steps": [
+        "Put the oats, milk, water and salt in a large saucepan.",
+        "Bring to a gentle simmer and cook for 12 to 15 minutes, stirring often, until thick and creamy.",
+        "Stir in the honey and cinnamon and add a splash of milk if too thick."
+      ],
+      "notes": [
+        "Set out bowls of fruit, nuts and seeds for toppings.",
+        "Stir regularly to prevent catching."
+      ],
+      "nutrition": {
+        "kcal": 273,
+        "proteinG": 12,
+        "carbsG": 38,
+        "fatG": 7,
+        "fibreG": 5,
+        "sodiumMg": 210
+      }
+    },
+    {
+      "id": "breakfast-burrito-tray-bake",
+      "title": "Breakfast Burrito Tray Bake",
+      "summary": "Oven-baked burritos filled with eggs, beans and cheese, made in bulk for a brunch table.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 large flour tortillas",
+            "10 eggs",
+            "400g tinned black beans, drained",
+            "1 red capsicum, diced",
+            "1/2 red onion, diced",
+            "100g grated cheddar",
+            "1 tbsp olive oil",
+            "1/2 tsp ground cumin",
+            "1/2 tsp salt",
+            "2 tbsp chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion and capsicum in the oil for 5 minutes until soft, then add the beaten eggs, cumin and salt and stir for 3 minutes until just set.",
+        "Stir in the beans, spoon the filling onto the tortillas with the cheese and roll tightly.",
+        "Bake seam-side down at 200°C for 12 minutes until golden and hot throughout."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until firm and bake until steaming hot, and refrigerate leftovers within 2 hours.",
+        "Freeze wrapped burritos for up to 1 month."
+      ],
+      "nutrition": {
+        "kcal": 341,
+        "proteinG": 17,
+        "carbsG": 36,
+        "fatG": 13,
+        "fibreG": 6,
+        "sodiumMg": 750
+      }
+    },
+    {
+      "id": "brunch-frittata-squares",
+      "title": "Brunch Frittata Squares",
+      "summary": "A tray-baked frittata of spinach, capsicum and feta, cut into squares for sharing.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "10 eggs",
+            "150ml cream",
+            "150g baby spinach",
+            "1 red capsicum, diced",
+            "1 onion, diced",
+            "150g feta, crumbled",
+            "1 tbsp olive oil",
+            "1/2 tsp salt",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion and capsicum in the oil for 5 minutes until soft, then wilt in the spinach for 1 minute.",
+        "Whisk the eggs, cream, salt and pepper and stir in the vegetables and feta.",
+        "Pour into a lined 20x30cm tray and bake at 180°C for 22 minutes until set and lightly golden."
+      ],
+      "notes": [
+        "Food safety: bake until the egg is completely set and refrigerate leftovers within 2 hours.",
+        "Serve warm or at room temperature."
+      ],
+      "nutrition": {
+        "kcal": 236,
+        "proteinG": 14,
+        "carbsG": 4,
+        "fatG": 18,
+        "fibreG": 1,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "make-ahead-egg-and-bacon-muffins",
+      "title": "Make-Ahead Egg and Bacon Muffins",
+      "summary": "Savoury egg muffins with bacon and cheese that reheat in a minute.",
+      "cuisine": "american",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 12,
+      "onePot": true,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "10 eggs",
+            "6 bacon rashers, diced",
+            "100g grated cheddar",
+            "4 spring onions, sliced",
+            "1/2 tsp salt",
+            "1/4 tsp black pepper",
+            "1 tbsp olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the bacon in the oil for 6 minutes until crisp, then drain.",
+        "Whisk the eggs with the salt and pepper and stir in the bacon, cheese and spring onions.",
+        "Pour into a greased 12-hole muffin tray and bake at 180°C for 18 minutes until puffed and set in the centre."
+      ],
+      "notes": [
+        "Food safety: bake until the eggs are fully set and refrigerate within 2 hours; reheat until steaming hot.",
+        "Freezes for 1 month."
+      ],
+      "nutrition": {
+        "kcal": 156,
+        "proteinG": 11,
+        "carbsG": 1,
+        "fatG": 12,
+        "fibreG": 0,
+        "sodiumMg": 340
+      }
+    },
+    {
+      "id": "oven-baked-pancake-tray-for-a-crowd",
+      "title": "Oven Baked Pancake Tray for a Crowd",
+      "summary": "A single-tray pancake that puffs and browns in the oven, so nobody is flipping at the stove.",
+      "cuisine": "american",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g plain flour",
+            "2 tbsp sugar",
+            "2 tsp baking powder",
+            "1/4 tsp salt",
+            "3 eggs",
+            "500ml milk",
+            "60g butter, melted",
+            "1 tsp vanilla extract"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the flour, sugar, baking powder and salt in a bowl.",
+        "Whisk the eggs, milk, butter and vanilla, pour into the dry ingredients and stir until just combined.",
+        "Pour into a lined 25x35cm tray and bake at 200°C for 20 minutes until puffed and golden, then cut into squares."
+      ],
+      "notes": [
+        "Food safety: bake until set in the centre.",
+        "Serve with berries and maple syrup."
+      ],
+      "nutrition": {
+        "kcal": 280,
+        "proteinG": 9,
+        "carbsG": 38,
+        "fatG": 10,
+        "fibreG": 1,
+        "sodiumMg": 320
+      }
+    },
+    {
+      "id": "baked-shakshuka-for-six",
+      "title": "Baked Shakshuka for Six",
+      "summary": "A big dish of spiced tomato and capsicum sauce with baked eggs.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp olive oil",
+            "1 onion, diced",
+            "1 red capsicum, diced",
+            "3 garlic cloves, minced",
+            "2 tsp ground cumin",
+            "2 tsp smoked paprika",
+            "800g tinned chopped tomatoes",
+            "1/2 tsp salt",
+            "6 eggs",
+            "100g feta, crumbled",
+            "2 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion and capsicum in the oil in an ovenproof pan for 6 minutes, then add the garlic and spices for 1 minute.",
+        "Add the tomatoes and salt and simmer for 12 minutes until thick.",
+        "Make 6 wells, crack in the eggs, scatter with feta and bake at 190°C for 10 minutes until the whites are set, then add parsley."
+      ],
+      "notes": [
+        "Food safety: cook until the egg whites are fully set.",
+        "Serve with warm flatbread."
+      ],
+      "nutrition": {
+        "kcal": 206,
+        "proteinG": 11,
+        "carbsG": 12,
+        "fatG": 12,
+        "fibreG": 3,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "oven-hash-browns-tray-with-capsicum-onion-and-sausage-crumble-for-twelve",
+      "title": "Oven Hash Browns Tray with Capsicum Onion and Sausage Crumble for Twelve",
+      "summary": "A big oven-baked hash with crisp potato, capsicum, onion and browned sausage.",
+      "cuisine": "american",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 12,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1.2kg potatoes, cut into 1.5cm cubes",
+            "4 pork sausages, meat squeezed from casings",
+            "2 red capsicums, diced",
+            "2 onions, diced",
+            "4 tbsp olive oil",
+            "2 tsp smoked paprika",
+            "1 tsp salt",
+            "1/2 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the potatoes, capsicums, onions, oil, paprika, salt and pepper on two large trays and roast at 220°C for 20 minutes.",
+        "Add the sausage meat in small pieces and roast for 20 minutes more, stirring once, until the potatoes are crisp and the sausage is cooked through at 75°C.",
+        "Season and serve straight from the tray."
+      ],
+      "notes": [
+        "Food safety: make sure the sausage is cooked until no pink remains and it reaches 75°C.",
+        "Use two trays so the potatoes crisp up."
+      ],
+      "nutrition": {
+        "kcal": 141,
+        "proteinG": 5,
+        "carbsG": 13,
+        "fatG": 7,
+        "fibreG": 2,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "sweet-potato-black-bean-oven-tray-topped-with-baked-eggs-and-avocado",
+      "title": "Sweet Potato Black Bean Oven Tray Topped with Baked Eggs and Avocado",
+      "summary": "Roasted sweet potato and black beans with baked eggs, avocado and lime.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g sweet potatoes, cubed",
+            "400g tinned black beans, drained",
+            "2 tbsp olive oil",
+            "1 tsp ground cumin",
+            "1 tsp smoked paprika",
+            "1/2 tsp salt",
+            "6 eggs",
+            "1 avocado, sliced",
+            "2 tbsp lime juice",
+            "2 tbsp chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the sweet potatoes with the oil, spices and salt on a tray and roast at 210°C for 20 minutes until tender.",
+        "Add the beans, make 6 wells, crack an egg into each and bake for 10 to 12 minutes until the whites are set.",
+        "Top with avocado, lime juice and coriander."
+      ],
+      "notes": [
+        "Food safety: cook until the egg whites are fully set.",
+        "Add chilli sauce if you like."
+      ],
+      "nutrition": {
+        "kcal": 361,
+        "proteinG": 15,
+        "carbsG": 36,
+        "fatG": 15,
+        "fibreG": 11,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "cheddar-and-mushroom-breakfast-strata",
+      "title": "Cheddar and Mushroom Breakfast Strata",
+      "summary": "A savoury bread and egg bake with mushrooms and cheddar, ideal for brunch.",
+      "cuisine": "american",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g day-old bread, cubed",
+            "300g mushrooms, sliced",
+            "1 onion, diced",
+            "1 tbsp olive oil",
+            "8 eggs",
+            "500ml milk",
+            "150g grated cheddar",
+            "1 tsp Dijon mustard",
+            "1/2 tsp salt",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the mushrooms and onion in the oil over medium-high heat for 8 minutes until browned.",
+        "Layer the bread, mushrooms and half the cheese in a baking dish.",
+        "Whisk the eggs, milk, mustard, salt and pepper, pour over, top with the remaining cheese and bake at 180°C for 40 minutes until puffed, golden and set in the centre."
+      ],
+      "notes": [
+        "Food safety: bake until the egg is fully set and refrigerate leftovers within 2 hours.",
+        "Assemble the night before and keep chilled."
+      ],
+      "nutrition": {
+        "kcal": 307,
+        "proteinG": 17,
+        "carbsG": 25,
+        "fatG": 15,
+        "fibreG": 2,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "apple-cinnamon-oat-breakfast-bake-for-a-crowd",
+      "title": "Apple Cinnamon Oat Breakfast Bake for a Crowd",
+      "summary": "A soft, gently sweet oat bake with apple, cinnamon and walnuts.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g rolled oats",
+            "3 apples, grated",
+            "3 eggs",
+            "600ml milk",
+            "3 tbsp maple syrup",
+            "2 tsp baking powder",
+            "1 tsp ground cinnamon",
+            "1/4 tsp salt",
+            "60g walnuts, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the oats, baking powder, cinnamon and salt in a bowl.",
+        "Whisk the apples with the eggs, milk and maple syrup and stir into the oats with half the walnuts.",
+        "Pour into a baking dish, scatter with the remaining walnuts and bake at 180°C for 30 minutes until golden and set."
+      ],
+      "notes": [
+        "Food safety: bake until the egg is set in the centre.",
+        "Serve with yoghurt and fruit; reheats well."
+      ],
+      "nutrition": {
+        "kcal": 295,
+        "proteinG": 11,
+        "carbsG": 40,
+        "fatG": 9,
+        "fibreG": 5,
+        "sodiumMg": 280
+      }
+    },
+    {
+      "id": "apple-bircher-muesli-big-bowl-with-toasted-seeds-for-brunch-guests",
+      "title": "Apple Bircher Muesli Big Bowl with Toasted Seeds for Brunch Guests",
+      "summary": "A fresh, chilled apple muesli with yoghurt and toasted seeds.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g rolled oats",
+            "600ml apple juice",
+            "4 apples, grated",
+            "400g plain yoghurt",
+            "3 tbsp honey",
+            "60g pumpkin seeds",
+            "40g sunflower seeds",
+            "1 tsp ground cinnamon"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the pumpkin and sunflower seeds in a dry pan for 3 minutes until golden, then cool.",
+        "Mix the oats, apple juice, apples, yoghurt, honey and cinnamon.",
+        "Cover, chill until the oats have softened, then serve topped with seeds."
+      ],
+      "notes": [
+        "Soaking time is not included in the prep time.",
+        "Keeps for 3 days."
+      ],
+      "nutrition": {
+        "kcal": 295,
+        "proteinG": 11,
+        "carbsG": 44,
+        "fatG": 7,
+        "fibreG": 6,
+        "sodiumMg": 60
+      }
+    }
+  ]
+}

@@ -1,0 +1,2566 @@
+{
+ "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+ "recipes": [
+  {
+   "id": "ricotta-and-honey-toast-with-roasted-figs-and-pistachios",
+   "title": "Ricotta and Honey Toast with Roasted Figs and Pistachios",
+   "summary": "Thick sourdough toast spread with whipped ricotta, drizzled with honey and topped with pistachios.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "breakfast",
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 5,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 slices sourdough",
+      "250g ricotta",
+      "2 tbsp honey",
+      "2 tbsp pistachios, chopped",
+      "1 tsp lemon zest",
+      "1 pinch salt",
+      "1 tbsp olive oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Toast the sourdough until golden and crisp at the edges.",
+    "Whisk the ricotta with the lemon zest and salt until smooth and fluffy.",
+    "Brush the toast with the oil, then spread thickly with the ricotta.",
+    "Drizzle with the honey and scatter over the pistachios."
+   ],
+   "notes": [
+    "Swap the honey for maple syrup if you prefer."
+   ],
+   "nutrition": {
+    "kcal": 570,
+    "proteinG": 24,
+    "carbsG": 53,
+    "fatG": 29,
+    "fibreG": 4,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "congee-style-oat-porridge-with-soy-egg-and-spring-onion",
+   "title": "Congee-Style Oat Porridge with Soy Egg and Spring Onion",
+   "summary": "Savoury oats cooked in stock, topped with a jammy egg, soy and crisp shallots.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 20,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "100g rolled oats",
+      "600ml chicken stock",
+      "2 eggs",
+      "2 tbsp soy sauce",
+      "1 tsp sesame oil",
+      "2 spring onions, sliced",
+      "2 tbsp fried shallots",
+      "1 tsp ginger, grated"
+     ]
+    }
+   ],
+   "steps": [
+    "Bring the stock and ginger to a simmer in a saucepan until steaming.",
+    "Stir in the oats and cook for 8 minutes, until thick and creamy.",
+    "Meanwhile boil the eggs for 6.5 minutes, until the whites are set and the yolks jammy, then cool in cold water and peel.",
+    "Spoon the porridge into bowls and halve the eggs on top.",
+    "Finish with the soy, sesame oil, spring onion and fried shallots."
+   ],
+   "notes": [
+    "Food safety: boil the eggs until the whites are fully set. Cook the yolks through if serving anyone vulnerable.",
+    "Use vegetable stock for a vegetarian version."
+   ],
+   "nutrition": {
+    "kcal": 337,
+    "proteinG": 17,
+    "carbsG": 38,
+    "fatG": 13,
+    "fibreG": 5,
+    "sodiumMg": 1250
+   }
+  },
+  {
+   "id": "dosa-style-chickpea-flour-pancakes-with-coconut-chutney",
+   "title": "Dosa-Style Chickpea Flour Pancakes with Coconut Chutney",
+   "summary": "Crisp savoury pancakes from chickpea flour and spices, served with a fresh coconut chutney.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "breakfast",
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "200g chickpea flour",
+      "350ml water",
+      "1 tsp ground cumin",
+      "1 tsp ground turmeric",
+      "1 green chilli, finely chopped",
+      "1 brown onion, finely diced",
+      "2 tbsp coriander, chopped",
+      "3 tbsp neutral oil",
+      "100g desiccated coconut",
+      "120g greek-style yoghurt",
+      "1 tsp mustard seeds"
+     ]
+    }
+   ],
+   "steps": [
+    "Whisk the chickpea flour, water, cumin, turmeric and a pinch of salt into a smooth batter, then stir in the chilli, onion and coriander.",
+    "Blitz the coconut, yoghurt and 3 tbsp water until smooth for the chutney, then season with salt.",
+    "Heat a non-stick pan over medium heat with a little oil. Pour in a ladle of batter and spread thin.",
+    "Cook for 2 minutes, until the underside is golden, then flip and cook for 1 minute more until set.",
+    "Fry the mustard seeds in a teaspoon of oil until they pop and spoon over the chutney. Serve the pancakes hot."
+   ],
+   "notes": [
+    "Vegan if you use a plant-based yoghurt."
+   ],
+   "nutrition": {
+    "kcal": 348,
+    "proteinG": 14,
+    "carbsG": 28,
+    "fatG": 20,
+    "fibreG": 6,
+    "sodiumMg": 310
+   }
+  },
+  {
+   "id": "bubble-and-squeak-cakes-with-poached-egg-and-brown-sauce",
+   "title": "Bubble and Squeak Cakes with Poached Egg and Brown Sauce",
+   "summary": "Crisp patties of leftover potato and cabbage topped with a runny egg.",
+   "cuisine": "british",
+   "mealTypes": [
+    "breakfast",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g potato, boiled and mashed",
+      "200g cabbage, finely shredded",
+      "1 brown onion, diced",
+      "2 tbsp butter",
+      "4 eggs",
+      "2 tbsp plain flour",
+      "1 tbsp worcestershire sauce",
+      "Salt and black pepper"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the onion and cabbage in half the butter until soft and lightly coloured.",
+    "Mix with the mashed potato, flour, worcestershire sauce and seasoning, then shape into 4 patties.",
+    "Melt the remaining butter in a frying pan and cook the patties for 4 minutes each side, until deep golden and crisp.",
+    "Poach the eggs in barely simmering water for 3 minutes, until the whites are set.",
+    "Serve each cake with a poached egg on top and a spoonful of tangy sauce."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
+   ],
+   "nutrition": {
+    "kcal": 334,
+    "proteinG": 14,
+    "carbsG": 38,
+    "fatG": 14,
+    "fibreG": 5,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "spinach-and-feta-breakfast-burek-rolls",
+   "title": "Spinach and Feta Breakfast Burek Rolls",
+   "summary": "Flaky filo rolls filled with spinach, feta and egg, baked until golden.",
+   "cuisine": "turkish",
+   "mealTypes": [
+    "breakfast",
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 30,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 sheets filo pastry",
+      "300g frozen spinach, thawed and squeezed dry",
+      "200g feta, crumbled",
+      "2 eggs",
+      "1 brown onion, finely diced",
+      "1 tbsp olive oil",
+      "60g butter, melted",
+      "1 tbsp sesame seeds"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 190°C. Soften the onion in the oil until translucent, then cool.",
+    "Mix the onion with the spinach, feta and one egg, plus pepper.",
+    "Layer two filo sheets, brush with butter, and spoon a line of filling along the long edge. Roll up tightly and coil into a spiral on a lined tray. Repeat with the rest.",
+    "Beat the second egg and brush over the rolls, then scatter over the seeds.",
+    "Bake for 25 minutes, until deep golden and crisp."
+   ],
+   "notes": [
+    "Food safety: bake until the egg in the filling is fully set.",
+    "Plus 10 minutes cooling before serving."
+   ],
+   "nutrition": {
+    "kcal": 300,
+    "proteinG": 11,
+    "carbsG": 28,
+    "fatG": 16,
+    "fibreG": 3,
+    "sodiumMg": 540
+   }
+  },
+  {
+   "id": "dill-creme-fraiche-rosti-towers",
+   "title": "Dill Creme Fraiche Rosti Towers",
+   "summary": "Crisp grated potato rosti layered with smoked salmon, creme fraiche and dill.",
+   "cuisine": "scandinavian",
+   "mealTypes": [
+    "breakfast",
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g waxy potato, grated",
+      "1 tbsp plain flour",
+      "2 tbsp butter",
+      "1 tbsp neutral oil",
+      "150g smoked salmon",
+      "100g creme fraiche",
+      "2 tbsp dill, chopped",
+      "1 tbsp capers",
+      "1 lemon, zested"
+     ]
+    }
+   ],
+   "steps": [
+    "Squeeze the grated potato in a clean tea towel until dry, then toss with the flour and a good pinch of salt.",
+    "Heat the butter and oil in a large frying pan over medium heat. Press the potato into four rounds.",
+    "Cook for 8 minutes each side, until deep golden and crisp.",
+    "Mix the creme fraiche with the dill and lemon zest.",
+    "Top each rosti with creme fraiche, salmon and capers."
+   ],
+   "notes": [
+    "Food safety: smoked salmon is ready to eat but keep it chilled until serving; avoid in pregnancy."
+   ],
+   "nutrition": {
+    "kcal": 325,
+    "proteinG": 13,
+    "carbsG": 30,
+    "fatG": 17,
+    "fibreG": 3,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "banana-free-oat-and-apple-breakfast-cookies",
+   "title": "Banana-Free Oat and Apple Breakfast Cookies",
+   "summary": "Soft oat cookies sweetened with apple and a little maple syrup, easy to eat on the go.",
+   "cuisine": "american",
+   "mealTypes": [
+    "breakfast",
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 12,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "200g rolled oats",
+      "2 apples, grated",
+      "60g peanut butter",
+      "60ml maple syrup",
+      "1 egg",
+      "1 tsp ground cinnamon",
+      "50g sultanas",
+      "1 tsp baking powder"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 180°C and line a tray.",
+    "Mix the apple, peanut butter, maple syrup and egg until combined, then stir in the oats, cinnamon, sultanas and baking powder.",
+    "Scoop 12 mounds onto the tray and flatten slightly.",
+    "Bake for 15 minutes, until golden at the edges and firm to touch."
+   ],
+   "notes": [
+    "Dessert-style snack. Keeps 4 days in a sealed container."
+   ],
+   "nutrition": {
+    "kcal": 149,
+    "proteinG": 4,
+    "carbsG": 22,
+    "fatG": 5,
+    "fibreG": 3,
+    "sodiumMg": 60
+   }
+  },
+  {
+   "id": "tomato-and-basil-gazpacho-with-sherry-vinegar",
+   "title": "Tomato and Basil Gazpacho with Sherry Vinegar",
+   "summary": "A chilled soup of ripe tomatoes, cucumber and capsicum, blitzed until silky.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 0,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1kg tomato, chopped",
+      "1 cucumber, chopped",
+      "1 red capsicum, chopped",
+      "2 garlic cloves",
+      "60ml olive oil",
+      "2 tbsp sherry vinegar",
+      "1 slice white bread, torn",
+      "1 handful basil leaves",
+      "Salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Blitz the tomato, cucumber, capsicum, garlic, bread and basil until completely smooth.",
+    "With the blender running, add the oil and vinegar in a slow stream until the soup is glossy.",
+    "Season with salt, then pass through a sieve for a silkier texture if you like.",
+    "Chill for at least 2 hours until very cold, and drizzle with olive oil to serve."
+   ],
+   "notes": [
+    "Plus 2 hours chilling.",
+    "Vegan."
+   ],
+   "nutrition": {
+    "kcal": 207,
+    "proteinG": 4,
+    "carbsG": 14,
+    "fatG": 15,
+    "fibreG": 4,
+    "sodiumMg": 320
+   }
+  },
+  {
+   "id": "white-bean-and-rosemary-soup-with-garlic-oil",
+   "title": "White Bean and Rosemary Soup with Garlic Oil",
+   "summary": "A creamy blended cannellini soup finished with a sizzling garlic and rosemary oil.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g tinned cannellini beans, drained",
+      "1 brown onion, diced",
+      "3 garlic cloves, sliced",
+      "500ml vegetable stock",
+      "2 tbsp olive oil",
+      "2 sprigs rosemary",
+      "1 tbsp lemon juice",
+      "1 celery stick, diced"
+     ]
+    }
+   ],
+   "steps": [
+    "Soften the onion and celery in half the oil until translucent.",
+    "Add the beans and stock, then simmer for 15 minutes, until the beans are very soft.",
+    "Blend until smooth, loosening with water if too thick, and add the lemon juice.",
+    "Warm the remaining oil with the garlic and rosemary until the garlic is just golden.",
+    "Ladle the soup into bowls and spoon over the garlic oil."
+   ],
+   "notes": [
+    "Vegan and gluten free."
+   ],
+   "nutrition": {
+    "kcal": 270,
+    "proteinG": 14,
+    "carbsG": 31,
+    "fatG": 10,
+    "fibreG": 12,
+    "sodiumMg": 720
+   }
+  },
+  {
+   "id": "sweet-corn-chowder-with-chilli-and-lime",
+   "title": "Sweet Corn Chowder with Chilli and Lime",
+   "summary": "A creamy but dairy-free corn soup lifted with fresh lime and a chilli oil finish.",
+   "cuisine": "american",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g corn kernels",
+      "1 brown onion, diced",
+      "1 potato, diced",
+      "600ml vegetable stock",
+      "200ml coconut milk",
+      "1 tsp smoked paprika",
+      "1 lime, juiced",
+      "2 tbsp coriander, chopped",
+      "1 tbsp chilli oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Soften the onion with the paprika in a saucepan until fragrant.",
+    "Add the potato, two-thirds of the corn and the stock. Simmer for 15 minutes, until the potato is tender.",
+    "Blend until smooth, then stir in the coconut milk and the rest of the corn.",
+    "Warm through for 3 minutes, then add the lime juice and salt.",
+    "Serve topped with the coriander and a drizzle of chilli oil."
+   ],
+   "notes": [
+    "Vegan and gluten free."
+   ],
+   "nutrition": {
+    "kcal": 372,
+    "proteinG": 10,
+    "carbsG": 48,
+    "fatG": 16,
+    "fibreG": 7,
+    "sodiumMg": 690
+   }
+  },
+  {
+   "id": "greek-egg-lemon-soup-with-shredded-chicken",
+   "title": "Greek Egg-Lemon Soup with Shredded Chicken",
+   "summary": "A silky Greek soup thickened with egg and lemon over soft rice.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 10,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 chicken breasts",
+      "1.2 litres chicken stock",
+      "80g white rice",
+      "3 eggs",
+      "2 lemons, juiced",
+      "1 brown onion, halved",
+      "2 tbsp dill, chopped",
+      "1 bay leaf"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the chicken, onion, bay leaf and stock gently for 15 minutes, until the chicken is cooked through and white in the centre.",
+    "Lift out the chicken, shred it, and discard the onion and bay leaf.",
+    "Add the rice to the stock and simmer for 12 minutes, until tender.",
+    "Whisk the eggs and lemon juice, then slowly whisk in a ladle of hot stock. Stir the mixture back into the pot off the heat, until the soup turns pale and slightly thickened.",
+    "Return the chicken and stir in the dill."
+   ],
+   "notes": [
+    "Food safety: cook the chicken to 75°C in the centre and avoid boiling the soup after adding the egg."
+   ],
+   "nutrition": {
+    "kcal": 313,
+    "proteinG": 32,
+    "carbsG": 26,
+    "fatG": 9,
+    "fibreG": 2,
+    "sodiumMg": 980
+   }
+  },
+  {
+   "id": "pumpkin-and-ginger-soup-with-toasted-pepitas",
+   "title": "Pumpkin and Ginger Soup with Toasted Pepitas",
+   "summary": "A smooth roasted pumpkin soup with warm ginger and crunchy pumpkin seeds.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1kg pumpkin, cubed",
+      "1 brown onion, quartered",
+      "2 tbsp olive oil",
+      "1 tbsp ginger, grated",
+      "750ml vegetable stock",
+      "200ml coconut cream",
+      "3 tbsp pumpkin seeds"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C. Toss the pumpkin and onion in the oil and roast for 30 minutes, until soft and caramelised.",
+    "Cook the ginger in a saucepan for 1 minute, add the roast vegetables and stock, and simmer for 5 minutes.",
+    "Blend until smooth and stir through most of the coconut cream.",
+    "Toast the pumpkin seeds in a dry pan until they pop.",
+    "Serve with a swirl of cream and the seeds."
+   ],
+   "notes": [
+    "Vegan and gluten free."
+   ],
+   "nutrition": {
+    "kcal": 527,
+    "proteinG": 11,
+    "carbsG": 51,
+    "fatG": 31,
+    "fibreG": 9,
+    "sodiumMg": 620
+   }
+  },
+  {
+   "id": "miso-mushroom-soup-with-soba-and-spinach",
+   "title": "Miso Mushroom Soup with Soba and Spinach",
+   "summary": "A savoury miso broth with mushrooms, buckwheat noodles and wilted spinach.",
+   "cuisine": "japanese",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "200g soba noodles",
+      "200g shiitake mushroom, sliced",
+      "3 tbsp miso",
+      "800ml vegetable stock",
+      "100g baby spinach",
+      "2 spring onions, sliced",
+      "1 tbsp soy sauce",
+      "1 tsp sesame oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the stock and mushrooms for 6 minutes, until the mushrooms are tender.",
+    "Cook the soba in boiling water for 4 minutes, until tender, then drain and rinse.",
+    "Whisk the miso with a ladle of hot stock until smooth and stir back into the pot with the soy sauce. Do not boil.",
+    "Divide the noodles and spinach between bowls and ladle over the soup.",
+    "Finish with the spring onion and sesame oil."
+   ],
+   "notes": [
+    "Check the soba label if you need it gluten free; many contain wheat.",
+    "Vegan."
+   ],
+   "nutrition": {
+    "kcal": 510,
+    "proteinG": 20,
+    "carbsG": 90,
+    "fatG": 6,
+    "fibreG": 8,
+    "sodiumMg": 1650
+   }
+  },
+  {
+   "id": "spicy-peanut-and-sweet-potato-soup",
+   "title": "Spicy Peanut and Sweet Potato Soup",
+   "summary": "A West African inspired soup of sweet potato, tomato and peanut butter with ginger and chilli.",
+   "cuisine": "west-african",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g sweet potato, cubed",
+      "1 brown onion, diced",
+      "3 garlic cloves, chopped",
+      "1 tbsp ginger, grated",
+      "400g tinned tomatoes",
+      "3 tbsp peanut butter",
+      "700ml vegetable stock",
+      "1 red chilli, sliced",
+      "2 tbsp neutral oil",
+      "1 handful coriander"
+     ]
+    }
+   ],
+   "steps": [
+    "Soften the onion in the oil until translucent, then stir in the garlic, ginger and chilli for 1 minute.",
+    "Add the sweet potato, tomatoes and stock. Simmer for 20 minutes, until the sweet potato is very soft.",
+    "Stir in the peanut butter and blend until smooth.",
+    "Season with salt and serve topped with coriander."
+   ],
+   "notes": [
+    "Vegan and gluten free. Contains peanuts."
+   ],
+   "nutrition": {
+    "kcal": 336,
+    "proteinG": 10,
+    "carbsG": 38,
+    "fatG": 16,
+    "fibreG": 7,
+    "sodiumMg": 540
+   }
+  },
+  {
+   "id": "hearty-lamb-and-barley-broth",
+   "title": "Hearty Lamb and Barley Broth",
+   "summary": "A slow-simmered Scottish style soup with lamb, barley and root vegetables.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 75,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g lamb shoulder, diced",
+      "100g pearl barley",
+      "2 carrots, diced",
+      "1 swede, diced",
+      "1 leek, sliced",
+      "1 brown onion, diced",
+      "1.5 litres beef stock",
+      "2 sprigs thyme",
+      "1 bay leaf"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the lamb in a large pot until deeply coloured on all sides.",
+    "Add the onion, leek and thyme and cook for 5 minutes until soft.",
+    "Add the stock, barley, bay leaf and vegetables. Simmer for 1 hour, until the lamb and barley are tender.",
+    "Skim off any fat, season, and serve in deep bowls."
+   ],
+   "notes": [
+    "Food safety: lamb pieces should reach 70°C and be tender throughout."
+   ],
+   "nutrition": {
+    "kcal": 282,
+    "proteinG": 22,
+    "carbsG": 26,
+    "fatG": 10,
+    "fibreG": 5,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "lemongrass-prawn-soup-with-rice-noodles",
+   "title": "Lemongrass Prawn Soup with Rice Noodles",
+   "summary": "A light Vietnamese style broth with lemongrass, lime and prawns.",
+   "cuisine": "vietnamese",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 15,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g prawns, peeled",
+      "1 litre fish stock",
+      "2 lemongrass stalks, bruised",
+      "100g rice vermicelli",
+      "1 tomato, wedged",
+      "1 tbsp fish sauce",
+      "1 lime, juiced",
+      "1 handful vietnamese mint",
+      "1 red chilli, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the stock with the lemongrass and chilli for 10 minutes to infuse.",
+    "Soak the vermicelli in hot water until soft, then drain.",
+    "Add the tomato and prawns to the broth and cook for 3 minutes, until the prawns are pink and opaque.",
+    "Stir in the fish sauce and lime juice.",
+    "Place noodles in bowls, ladle over the soup and scatter with the mint."
+   ],
+   "notes": [
+    "Food safety: cook prawns until pink and opaque all the way through."
+   ],
+   "nutrition": {
+    "kcal": 413,
+    "proteinG": 51,
+    "carbsG": 40,
+    "fatG": 5,
+    "fibreG": 2,
+    "sodiumMg": 1450
+   }
+  },
+  {
+   "id": "roasted-cauliflower-and-cumin-soup",
+   "title": "Roasted Cauliflower and Cumin Soup",
+   "summary": "A velvety cauliflower soup deepened by roasting and warm cumin.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cauliflower, in florets",
+      "1 brown onion, diced",
+      "2 tbsp olive oil",
+      "2 tsp ground cumin",
+      "3 garlic cloves",
+      "800ml vegetable stock",
+      "2 tbsp tahini",
+      "1 lemon, juiced"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 210°C. Toss the cauliflower with half the oil and half the cumin and roast for 25 minutes, until deep golden at the edges.",
+    "Soften the onion and garlic with the remaining cumin in a pot for 5 minutes.",
+    "Add the cauliflower and stock and simmer for 10 minutes.",
+    "Blend with the tahini until silky and add the lemon juice and salt."
+   ],
+   "notes": [
+    "Vegan and gluten free."
+   ],
+   "nutrition": {
+    "kcal": 222,
+    "proteinG": 8,
+    "carbsG": 16,
+    "fatG": 14,
+    "fibreG": 6,
+    "sodiumMg": 610
+   }
+  },
+  {
+   "id": "chilled-cucumber-and-yoghurt-soup-with-mint",
+   "title": "Chilled Cucumber and Yoghurt Soup with Mint",
+   "summary": "A cool, refreshing summer soup of cucumber, yoghurt and mint with a walnut crunch.",
+   "cuisine": "turkish",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 0,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "3 cucumbers, chopped",
+      "400g greek yoghurt",
+      "2 garlic cloves",
+      "1 handful mint",
+      "2 tbsp olive oil",
+      "1 tbsp white wine vinegar",
+      "50g walnuts, chopped",
+      "200ml cold water"
+     ]
+    }
+   ],
+   "steps": [
+    "Blitz the cucumber, yoghurt, garlic, mint, vinegar and water until smooth.",
+    "Season with salt and chill for 1 hour, until very cold.",
+    "Ladle into bowls and top with the walnuts and a drizzle of oil."
+   ],
+   "notes": [
+    "Plus 1 hour chilling.",
+    "Vegetarian and gluten free."
+   ],
+   "nutrition": {
+    "kcal": 271,
+    "proteinG": 13,
+    "carbsG": 12,
+    "fatG": 19,
+    "fibreG": 2,
+    "sodiumMg": 290
+   }
+  },
+  {
+   "id": "tomato-and-fennel-seafood-soup",
+   "title": "Tomato and Fennel Seafood Soup",
+   "summary": "A light tomato broth with white fish and mussels.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g white fish, cut into chunks",
+      "300g mussels, scrubbed",
+      "800g tinned tomatoes",
+      "1 brown onion, diced",
+      "3 garlic cloves, sliced",
+      "2 tsp fennel seeds",
+      "500ml fish stock",
+      "2 tbsp olive oil",
+      "1 handful parsley"
+     ]
+    }
+   ],
+   "steps": [
+    "Soften the onion with the fennel seeds in the oil until translucent, then add the garlic.",
+    "Add the tomatoes and stock and simmer for 15 minutes until the soup tastes rich.",
+    "Add the mussels and cover for 3 minutes, until the shells open. Discard any that stay closed.",
+    "Slip in the fish and simmer gently for 3 minutes, until it flakes and turns opaque.",
+    "Scatter with parsley and serve."
+   ],
+   "notes": [
+    "Food safety: cook fish until opaque and flaking; discard mussels that do not open."
+   ],
+   "nutrition": {
+    "kcal": 283,
+    "proteinG": 28,
+    "carbsG": 18,
+    "fatG": 11,
+    "fibreG": 3,
+    "sodiumMg": 1020
+   }
+  },
+  {
+   "id": "spiced-red-lentil-and-carrot-soup",
+   "title": "Spiced Red Lentil and Carrot Soup",
+   "summary": "A vibrant Indian style soup of red lentils, carrot and warm spices.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "250g red lentils",
+      "3 carrots, diced",
+      "1 brown onion, diced",
+      "2 garlic cloves",
+      "1 tbsp ginger, grated",
+      "2 tsp curry powder",
+      "1 litre vegetable stock",
+      "2 tbsp neutral oil",
+      "1 lemon, juiced",
+      "2 tbsp coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Soften the onion in the oil until translucent, then cook the garlic, ginger and curry powder for 1 minute until fragrant.",
+    "Add the lentils, carrot and stock. Simmer for 20 minutes, until the lentils collapse.",
+    "Blend half the soup and stir it back in for a thick texture.",
+    "Add the lemon juice and serve with coriander."
+   ],
+   "notes": [
+    "Vegan and gluten free."
+   ],
+   "nutrition": {
+    "kcal": 320,
+    "proteinG": 17,
+    "carbsG": 45,
+    "fatG": 8,
+    "fibreG": 15,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "warm-roast-pumpkin-and-quinoa-salad-with-lemon-tahini",
+   "title": "Warm Roast Pumpkin and Quinoa Salad with Lemon Tahini",
+   "summary": "Roast pumpkin on herby quinoa with a creamy lemon tahini dressing.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g pumpkin, cubed",
+      "1 red onion, wedged",
+      "2 tbsp olive oil",
+      "200g quinoa",
+      "2 tbsp tahini",
+      "1 lemon, juiced",
+      "50g pumpkin seeds",
+      "1 handful parsley",
+      "100g baby spinach"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C. Roast the pumpkin and onion in the oil for 30 minutes, until caramelised.",
+    "Cook the quinoa in boiling water for 12 minutes, until the germ spirals out, then drain.",
+    "Whisk the tahini, lemon juice and 3 tbsp water until pourable.",
+    "Toss quinoa, vegetables, spinach and parsley together and drizzle with the dressing and scatter over the seeds."
+   ],
+   "notes": [
+    "Vegan and gluten free."
+   ],
+   "nutrition": {
+    "kcal": 417,
+    "proteinG": 14,
+    "carbsG": 52,
+    "fatG": 17,
+    "fibreG": 8,
+    "sodiumMg": 260
+   }
+  },
+  {
+   "id": "mexican-street-corn-and-bean-salad",
+   "title": "Mexican Street Corn and Bean Salad",
+   "summary": "A bright Mexican salad of charred corn, beans, tomato and avocado.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 10,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 corn cobs",
+      "400g tinned black beans, drained",
+      "200g cherry tomato, halved",
+      "1 avocado, diced",
+      "1 red onion, finely sliced",
+      "1 handful coriander",
+      "2 limes, juiced",
+      "2 tbsp olive oil",
+      "1 tsp ground cumin"
+     ]
+    }
+   ],
+   "steps": [
+    "Char the corn in a hot dry pan for 8 to 10 minutes, turning, until blackened in spots.",
+    "Cut the kernels off the cobs.",
+    "Whisk the lime juice, oil, cumin and salt.",
+    "Toss the corn with the beans, tomato, onion and coriander, then fold in the avocado and dressing."
+   ],
+   "notes": [
+    "Vegan and gluten free."
+   ],
+   "nutrition": {
+    "kcal": 209,
+    "proteinG": 6,
+    "carbsG": 24,
+    "fatG": 10,
+    "fibreG": 7,
+    "sodiumMg": 330
+   }
+  },
+  {
+   "id": "greek-horiatiki-with-whipped-feta",
+   "title": "Greek Horiatiki with Whipped Feta",
+   "summary": "Classic chunky tomato, cucumber and olive salad on a base of whipped feta.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 0,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 tomato, wedged",
+      "1 cucumber, chunked",
+      "1 red onion, sliced",
+      "100g kalamata olive",
+      "200g feta",
+      "100g greek yoghurt",
+      "3 tbsp olive oil",
+      "1 tbsp red wine vinegar",
+      "1 tsp dried oregano"
+     ]
+    }
+   ],
+   "steps": [
+    "Blend the feta and yoghurt with 1 tbsp of oil until smooth and whipped.",
+    "Toss the tomato, cucumber, onion and olives with the vinegar, remaining oil and oregano.",
+    "Spread the feta on a platter and pile the salad on top."
+   ],
+   "notes": [
+    "Vegetarian and gluten free."
+   ],
+   "nutrition": {
+    "kcal": 291,
+    "proteinG": 11,
+    "carbsG": 10,
+    "fatG": 23,
+    "fibreG": 3,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "sicilian-orange-radish-and-olive-salad",
+   "title": "Sicilian Orange, Radish and Olive Salad",
+   "summary": "A crisp Sicilian style salad of shaved radish, orange segments and olives.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 0,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "12 radish, shaved",
+      "3 oranges, segmented",
+      "80g green olive",
+      "1 red onion, thinly sliced",
+      "2 tbsp olive oil",
+      "1 tbsp red wine vinegar",
+      "1 handful mint",
+      "1 pinch chilli flakes"
+     ]
+    }
+   ],
+   "steps": [
+    "Shave the radish very thinly and soak in iced water for 10 minutes until curled and crisp, then drain.",
+    "Whisk the oil, vinegar, chilli flakes and a pinch of salt.",
+    "Toss the radish with the oranges, onion, olives and mint, and dress just before serving."
+   ],
+   "notes": [
+    "Vegan and gluten free.",
+    "Plus 10 minutes soaking."
+   ],
+   "nutrition": {
+    "kcal": 181,
+    "proteinG": 3,
+    "carbsG": 22,
+    "fatG": 9,
+    "fibreG": 6,
+    "sodiumMg": 410
+   }
+  },
+  {
+   "id": "som-tam-style-green-mango-salad",
+   "title": "Som Tam Style Green Mango Salad",
+   "summary": "A crunchy sweet, sour and salty salad of green mango, beans and peanuts.",
+   "cuisine": "thai",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 0,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 mango, green and shredded",
+      "100g green beans, sliced",
+      "200g cherry tomato, halved",
+      "50g peanuts, roasted",
+      "2 garlic cloves",
+      "2 birds-eye chilli",
+      "2 tbsp fish sauce",
+      "2 limes, juiced",
+      "1 tbsp palm sugar"
+     ]
+    }
+   ],
+   "steps": [
+    "Crush the garlic and chilli in a mortar and pestle until a coarse paste forms.",
+    "Add the sugar, fish sauce and lime juice and stir until the sugar dissolves.",
+    "Bruise the beans lightly in the dressing, then add the tomato and mango and toss.",
+    "Scatter with peanuts and serve at once."
+   ],
+   "notes": [
+    "Use 1 chilli for a milder salad.",
+    "Contains peanuts."
+   ],
+   "nutrition": {
+    "kcal": 169,
+    "proteinG": 4,
+    "carbsG": 21,
+    "fatG": 7,
+    "fibreG": 3,
+    "sodiumMg": 1080
+   }
+  },
+  {
+   "id": "bulgur-and-pomegranate-salad-with-herbs",
+   "title": "Bulgur and Pomegranate Salad with Herbs",
+   "summary": "A fresh Levantine style grain salad packed with parsley, mint and pomegranate seeds.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 0,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "200g bulgur",
+      "3 bunches parsley, chopped",
+      "1 handful mint, chopped",
+      "3 tomato, diced",
+      "4 spring onions, sliced",
+      "1 pomegranate, seeded",
+      "80ml olive oil",
+      "2 lemons, juiced"
+     ]
+    }
+   ],
+   "steps": [
+    "Soak the bulgur in 300ml boiling water for 15 minutes, until tender, then fluff and cool.",
+    "Fold in the herbs, tomato, spring onion and pomegranate.",
+    "Dress with the oil, lemon juice and salt and let sit 10 minutes before serving."
+   ],
+   "notes": [
+    "Vegan.",
+    "Plus 25 minutes soaking and resting."
+   ],
+   "nutrition": {
+    "kcal": 286,
+    "proteinG": 6,
+    "carbsG": 34,
+    "fatG": 14,
+    "fibreG": 7,
+    "sodiumMg": 200
+   }
+  },
+  {
+   "id": "smashed-potato-salad-with-mustard-dressing",
+   "title": "Smashed Potato Salad with Mustard Dressing",
+   "summary": "Boiled and smashed baby potatoes crisped in a hot pan with a punchy wholegrain mustard dressing.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g waxy potato",
+      "3 tbsp olive oil",
+      "2 tbsp wholegrain mustard",
+      "1 tbsp apple cider vinegar",
+      "2 spring onions, sliced",
+      "1 handful parsley",
+      "1 tbsp capers"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the potatoes for 18 minutes, until a knife slides in easily, then drain.",
+    "Press each potato flat with a spoon and fry in 2 tbsp of the oil for 4 minutes each side, until crisp and golden.",
+    "Whisk the mustard, vinegar and remaining oil.",
+    "Toss with the hot potatoes, spring onion, capers and parsley."
+   ],
+   "notes": [
+    "Vegan and gluten free."
+   ],
+   "nutrition": {
+    "kcal": 238,
+    "proteinG": 5,
+    "carbsG": 32,
+    "fatG": 10,
+    "fibreG": 4,
+    "sodiumMg": 260
+   }
+  },
+  {
+   "id": "cheesy-cauliflower-mash-with-chives",
+   "title": "Cheesy Cauliflower Mash with Chives",
+   "summary": "A lighter creamy mash of cauliflower and potato.",
+   "cuisine": "american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cauliflower, in florets",
+      "2 potato, cubed",
+      "50g butter",
+      "100ml milk",
+      "50g cheddar, grated",
+      "2 tbsp chives, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the cauliflower and potato for 15 minutes, until very tender, then drain well.",
+    "Mash with the butter, milk and cheddar until smooth.",
+    "Season and stir through the chives."
+   ],
+   "notes": [
+    "Vegetarian and gluten free."
+   ],
+   "nutrition": {
+    "kcal": 236,
+    "proteinG": 10,
+    "carbsG": 22,
+    "fatG": 12,
+    "fibreG": 6,
+    "sodiumMg": 310
+   }
+  },
+  {
+   "id": "garlic-butter-green-beans-with-almonds",
+   "title": "Garlic Butter Green Beans with Almonds",
+   "summary": "Blistered green beans tossed with garlic butter and crunchy almonds.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 10,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g green beans",
+      "30g butter",
+      "3 garlic cloves, sliced",
+      "40g almonds, chopped",
+      "1 lemon, zested"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the beans for 3 minutes, until bright green and tender-crisp, then drain.",
+    "Melt the butter and cook the almonds and garlic until the garlic is golden.",
+    "Toss the beans in the butter with the lemon zest and salt."
+   ],
+   "notes": [
+    "Vegetarian and gluten free."
+   ],
+   "nutrition": {
+    "kcal": 168,
+    "proteinG": 5,
+    "carbsG": 10,
+    "fatG": 12,
+    "fibreG": 5,
+    "sodiumMg": 150
+   }
+  },
+  {
+   "id": "coconut-rice-with-pandan-and-toasted-coconut",
+   "title": "Coconut Rice with Pandan and Toasted Coconut",
+   "summary": "Fragrant coconut rice, light and creamy, topped with toasted coconut.",
+   "cuisine": "malaysian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g jasmine rice",
+      "400ml coconut milk",
+      "200ml water",
+      "1 tsp salt",
+      "2 tbsp desiccated coconut",
+      "1 tsp sugar"
+     ]
+    }
+   ],
+   "steps": [
+    "Rinse the rice until the water runs clear.",
+    "Simmer with the coconut milk, water, sugar and salt, covered, for 15 minutes until all liquid is absorbed.",
+    "Rest for 5 minutes, then fluff.",
+    "Toast the desiccated coconut in a dry pan until golden and sprinkle on top."
+   ],
+   "notes": [
+    "Vegan and gluten free.",
+    "Plus 5 minutes resting."
+   ],
+   "nutrition": {
+    "kcal": 483,
+    "proteinG": 8,
+    "carbsG": 70,
+    "fatG": 19,
+    "fibreG": 2,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "honey-roasted-carrots-with-za-atar-and-labneh",
+   "title": "Honey Roasted Carrots with Za'atar and Labneh",
+   "summary": "Sweet roasted carrots with fragrant za'atar on tangy labneh.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g carrot",
+      "2 tbsp olive oil",
+      "1 tbsp honey",
+      "2 tbsp zaatar",
+      "150g labneh",
+      "1 tbsp lemon juice",
+      "1 handful mint"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 210°C. Toss the carrots with the oil, honey, za'atar and salt.",
+    "Roast for 30 minutes, until tender and caramelised at the edges.",
+    "Mix the labneh with the lemon juice and spread on a plate.",
+    "Pile the carrots on top and scatter with mint."
+   ],
+   "notes": [
+    "Vegetarian and gluten free."
+   ],
+   "nutrition": {
+    "kcal": 226,
+    "proteinG": 6,
+    "carbsG": 28,
+    "fatG": 10,
+    "fibreG": 6,
+    "sodiumMg": 260
+   }
+  },
+  {
+   "id": "crispy-roast-potatoes-with-rosemary-and-sea-salt",
+   "title": "Crispy Roast Potatoes with Rosemary and Sea Salt",
+   "summary": "Fluffy inside, crisp outside roast potatoes scented with rosemary.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 50,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.2kg potato, halved",
+      "80ml olive oil",
+      "3 sprigs rosemary",
+      "4 garlic cloves, unpeeled",
+      "1 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C and heat the oil in a roasting tin.",
+    "Boil the potatoes for 8 minutes, then drain and shake to roughen the edges.",
+    "Tip into the hot oil and turn to coat. Roast for 40 minutes, turning once, until deep golden and crisp.",
+    "Add the rosemary and garlic for the last 10 minutes and finish with salt."
+   ],
+   "notes": [
+    "Vegan and gluten free."
+   ],
+   "nutrition": {
+    "kcal": 254,
+    "proteinG": 5,
+    "carbsG": 36,
+    "fatG": 10,
+    "fibreG": 4,
+    "sodiumMg": 310
+   }
+  },
+  {
+   "id": "sesame-bok-choy-with-garlic-and-oyster-sauce",
+   "title": "Sesame Bok Choy with Garlic and Oyster Sauce",
+   "summary": "Quick wok-fried bok choy glazed with garlic and oyster sauce.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 5,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g bok choy, halved",
+      "2 tbsp neutral oil",
+      "3 garlic cloves, sliced",
+      "2 tbsp oyster sauce",
+      "1 tsp sesame oil",
+      "1 tbsp sesame seeds"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil in a wok over high heat. Fry the garlic for 15 seconds, until fragrant.",
+    "Add the bok choy and 2 tbsp water and toss for 2 minutes, until the stems are just tender.",
+    "Stir in the oyster sauce and sesame oil, and finish with sesame seeds."
+   ],
+   "notes": [
+    "Use a vegetarian mushroom oyster sauce if preferred."
+   ],
+   "nutrition": {
+    "kcal": 112,
+    "proteinG": 4,
+    "carbsG": 6,
+    "fatG": 8,
+    "fibreG": 3,
+    "sodiumMg": 560
+   }
+  },
+  {
+   "id": "braised-red-cabbage-with-apple-and-caraway",
+   "title": "Braised Red Cabbage with Apple and Caraway",
+   "summary": "Sweet and sour slow-braised red cabbage with apple and warm caraway.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 45,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 red cabbage, shredded",
+      "2 apples, grated",
+      "1 red onion, sliced",
+      "2 tbsp butter",
+      "60ml apple cider vinegar",
+      "2 tbsp brown sugar",
+      "1 tsp caraway seeds",
+      "1 bay leaf"
+     ]
+    }
+   ],
+   "steps": [
+    "Melt the butter and soften the onion with the caraway until translucent.",
+    "Add the cabbage, apple, vinegar, sugar, bay leaf and 100ml water.",
+    "Cover and braise over low heat for 40 minutes, until very tender and glossy.",
+    "Season with salt and a splash more vinegar to balance."
+   ],
+   "notes": [
+    "Vegetarian and gluten free."
+   ],
+   "nutrition": {
+    "kcal": 104,
+    "proteinG": 1,
+    "carbsG": 18,
+    "fatG": 3,
+    "fibreG": 4,
+    "sodiumMg": 95
+   }
+  },
+  {
+   "id": "garlicky-sauteed-spinach-with-pine-nuts-and-raisins",
+   "title": "Garlicky Sauteed Spinach with Pine Nuts and Raisins",
+   "summary": "A quick Spanish style side of spinach with golden raisins and toasted pine nuts.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 8,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g baby spinach",
+      "2 tbsp olive oil",
+      "3 garlic cloves, sliced",
+      "30g pine nuts",
+      "30g raisins",
+      "1 pinch chilli flakes"
+     ]
+    }
+   ],
+   "steps": [
+    "Toast the pine nuts in a dry pan until golden, then set aside.",
+    "Warm the oil and garlic with the chilli flakes until the garlic is pale gold.",
+    "Add the spinach in batches and toss until wilted, then stir in the raisins.",
+    "Season and top with the pine nuts."
+   ],
+   "notes": [
+    "Vegan and gluten free."
+   ],
+   "nutrition": {
+    "kcal": 168,
+    "proteinG": 5,
+    "carbsG": 10,
+    "fatG": 12,
+    "fibreG": 4,
+    "sodiumMg": 130
+   }
+  },
+  {
+   "id": "blistered-broccolini-with-garlic-and-sesame",
+   "title": "Blistered Broccolini with Garlic and Sesame",
+   "summary": "Blistered broccolini with chilli and a squeeze of lemon.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 10,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 bunches broccolini",
+      "2 tbsp olive oil",
+      "1 red chilli, sliced",
+      "2 garlic cloves, sliced",
+      "1 lemon",
+      "2 tbsp sesame seeds"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat a heavy pan until very hot and add the oil.",
+    "Cook the broccolini for 5 minutes, turning, until charred in spots and tender.",
+    "Add the chilli and garlic for 1 minute until fragrant.",
+    "Finish with a squeeze of lemon, salt and the sesame seeds."
+   ],
+   "notes": [
+    "Vegan and gluten free."
+   ],
+   "nutrition": {
+    "kcal": 89,
+    "proteinG": 1,
+    "carbsG": 0,
+    "fatG": 9,
+    "fibreG": 2,
+    "sodiumMg": 70
+   }
+  },
+  {
+   "id": "peruvian-style-green-aji-sauce",
+   "title": "Peruvian Style Green Aji Sauce",
+   "summary": "A creamy green sauce with jalapeno, coriander and lime for chicken, potatoes or eggs.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 0,
+   "servings": 8,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 jalapeno, deseeded",
+      "1 bunch coriander",
+      "3 tbsp mayonnaise",
+      "100g greek yoghurt",
+      "2 garlic cloves",
+      "2 tbsp lime juice",
+      "2 tbsp olive oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Blitz everything in a blender until completely smooth.",
+    "Taste and add more lime juice or salt until the sauce is bright and balanced.",
+    "Season with salt and chill for 30 minutes before serving."
+   ],
+   "notes": [
+    "Makes about 300 ml; keeps 5 days refrigerated.",
+    "Plus 30 minutes chilling.",
+    "Vegetarian and gluten free."
+   ],
+   "nutrition": {
+    "kcal": 97,
+    "proteinG": 2,
+    "carbsG": 2,
+    "fatG": 9,
+    "fibreG": 0,
+    "sodiumMg": 180
+   }
+  },
+  {
+   "id": "smoky-roasted-capsicum-and-walnut-dip",
+   "title": "Smoky Roasted Capsicum and Walnut Dip",
+   "summary": "A Turkish style dip of roasted capsicum, walnuts and pomegranate molasses.",
+   "cuisine": "turkish",
+   "mealTypes": [
+    "snack",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 0,
+   "servings": 8,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "3 roasted capsicum",
+      "100g walnuts",
+      "2 tbsp breadcrumbs",
+      "2 garlic cloves",
+      "1 tbsp pomegranate molasses",
+      "3 tbsp olive oil",
+      "1 tsp ground cumin",
+      "1 tsp chilli flakes"
+     ]
+    }
+   ],
+   "steps": [
+    "Blitz the walnuts, breadcrumbs and garlic until crumbly.",
+    "Add the capsicum, molasses, cumin and chilli and process until a thick, spoonable paste.",
+    "With the motor running, stream in the oil until creamy.",
+    "Season with salt and serve with warm bread."
+   ],
+   "notes": [
+    "Vegan."
+   ],
+   "nutrition": {
+    "kcal": 157,
+    "proteinG": 3,
+    "carbsG": 7,
+    "fatG": 13,
+    "fibreG": 2,
+    "sodiumMg": 210
+   }
+  },
+  {
+   "id": "quick-pickled-red-onions-with-lime-and-oregano",
+   "title": "Quick Pickled Red Onions with Lime and Oregano",
+   "summary": "Bright pink pickled onions that lift tacos, salads and grain bowls.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "snack",
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 5,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 red onion, thinly sliced",
+      "200ml apple cider vinegar",
+      "100ml water",
+      "1 tbsp sugar",
+      "1 tsp salt",
+      "2 limes, juiced",
+      "1 tsp dried oregano"
+     ]
+    }
+   ],
+   "steps": [
+    "Warm the vinegar, water, sugar, salt and oregano until the sugar dissolves.",
+    "Pack the onions in a jar, pour over the warm liquid and add the lime juice.",
+    "Cool, then refrigerate for at least 1 hour."
+   ],
+   "notes": [
+    "Plus 1 hour pickling; keeps 2 weeks refrigerated.",
+    "Vegan and gluten free."
+   ],
+   "nutrition": {
+    "kcal": 52,
+    "proteinG": 1,
+    "carbsG": 12,
+    "fatG": 0,
+    "fibreG": 1,
+    "sodiumMg": 260
+   }
+  },
+  {
+   "id": "tzatziki-with-dill-and-lemon",
+   "title": "Tzatziki with Dill and Lemon",
+   "summary": "A thick garlicky Greek yoghurt dip with cucumber and lemon.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "snack",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 0,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g greek yoghurt",
+      "1 cucumber, grated and squeezed dry",
+      "2 garlic cloves, crushed",
+      "2 tbsp dill, chopped",
+      "1 tbsp lemon juice",
+      "2 tbsp olive oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Stir the yoghurt, cucumber, garlic, dill and lemon juice together until combined.",
+    "Season with salt and chill for 30 minutes.",
+    "Drizzle with the oil to serve."
+   ],
+   "notes": [
+    "Plus 30 minutes chilling.",
+    "Vegetarian and gluten free."
+   ],
+   "nutrition": {
+    "kcal": 146,
+    "proteinG": 8,
+    "carbsG": 6,
+    "fatG": 10,
+    "fibreG": 1,
+    "sodiumMg": 240
+   }
+  },
+  {
+   "id": "fresh-pineapple-and-chilli-salsa",
+   "title": "Fresh Pineapple and Chilli Salsa",
+   "summary": "A tropical sweet and hot salsa for fish, pork and tacos.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "snack",
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 0,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g pineapple, diced",
+      "1 red onion, finely diced",
+      "1 jalapeno, minced",
+      "1 handful coriander",
+      "2 limes, juiced",
+      "1 tbsp olive oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix everything in a bowl until combined.",
+    "Season with salt and rest for 10 minutes until the juices run.",
+    "Serve soon after mixing for the freshest crunch."
+   ],
+   "notes": [
+    "Vegan and gluten free.",
+    "Plus 10 minutes resting."
+   ],
+   "nutrition": {
+    "kcal": 79,
+    "proteinG": 1,
+    "carbsG": 12,
+    "fatG": 3,
+    "fibreG": 2,
+    "sodiumMg": 10
+   }
+  },
+  {
+   "id": "peanut-satay-sauce",
+   "title": "Peanut Satay Sauce",
+   "summary": "A rich, glossy satay sauce for skewers, noodles and vegetables.",
+   "cuisine": "indonesian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 10,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "150g peanut butter",
+      "200ml coconut milk",
+      "2 tbsp soy sauce",
+      "1 tbsp lime juice",
+      "1 tbsp brown sugar",
+      "2 garlic cloves, minced",
+      "1 tsp sambal oelek"
+     ]
+    }
+   ],
+   "steps": [
+    "Warm the coconut milk with the garlic and sambal oelek in a saucepan for 2 minutes.",
+    "Whisk in the peanut butter, soy, sugar and lime juice.",
+    "Simmer for 5 minutes, until thick and glossy, adding water to loosen."
+   ],
+   "notes": [
+    "Vegan. Use tamari to keep it gluten free.",
+    "Contains peanuts."
+   ],
+   "nutrition": {
+    "kcal": 274,
+    "proteinG": 9,
+    "carbsG": 10,
+    "fatG": 22,
+    "fibreG": 2,
+    "sodiumMg": 590
+   }
+  },
+  {
+   "id": "salsa-verde-with-capers-and-anchovy",
+   "title": "Salsa Verde with Capers and Anchovy",
+   "summary": "A punchy Italian herb sauce for grilled meat, fish and vegetables.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 0,
+   "servings": 8,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 bunch parsley",
+      "1 handful mint",
+      "2 tbsp capers",
+      "4 anchovy",
+      "2 garlic cloves",
+      "1 tbsp dijon mustard",
+      "2 tbsp red wine vinegar",
+      "100ml olive oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Finely chop the herbs, capers, anchovy and garlic together until almost a paste.",
+    "Stir in the mustard, vinegar and oil until loose and glossy.",
+    "Season with pepper and rest for 15 minutes."
+   ],
+   "notes": [
+    "Plus 15 minutes resting; keeps 4 days refrigerated.",
+    "Gluten free."
+   ],
+   "nutrition": {
+    "kcal": 116,
+    "proteinG": 1,
+    "carbsG": 1,
+    "fatG": 12,
+    "fibreG": 1,
+    "sodiumMg": 190
+   }
+  },
+  {
+   "id": "chimichurri-with-oregano-and-chilli",
+   "title": "Chimichurri with Oregano and Chilli",
+   "summary": "An Argentinian herb sauce, tangy with vinegar and fiery with chilli.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 0,
+   "servings": 8,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 bunch parsley",
+      "2 tbsp fresh oregano",
+      "4 garlic cloves",
+      "1 red chilli",
+      "60ml red wine vinegar",
+      "120ml olive oil",
+      "1 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Finely chop the parsley, oregano, garlic and chilli.",
+    "Mix with the vinegar, oil and salt.",
+    "Rest for 20 minutes until the flavours blend."
+   ],
+   "notes": [
+    "Plus 20 minutes resting.",
+    "Vegan and gluten free."
+   ],
+   "nutrition": {
+    "kcal": 129,
+    "proteinG": 1,
+    "carbsG": 2,
+    "fatG": 13,
+    "fibreG": 1,
+    "sodiumMg": 290
+   }
+  },
+  {
+   "id": "homemade-tomato-chilli-jam",
+   "title": "Homemade Tomato Chilli Jam",
+   "summary": "A sticky, sweet and spicy jam for cheese, burgers and eggs.",
+   "cuisine": "thai",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 60,
+   "servings": 12,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1kg tomato, chopped",
+      "6 red chilli, chopped",
+      "5 garlic cloves",
+      "1 tbsp ginger, grated",
+      "250g sugar",
+      "120ml white vinegar",
+      "2 tbsp fish sauce"
+     ]
+    }
+   ],
+   "steps": [
+    "Blitz the tomato, chilli, garlic and ginger to a rough purée.",
+    "Simmer with the sugar, vinegar and fish sauce for 1 hour, stirring, until thick and glossy and it leaves a trail when a spoon is dragged across the base.",
+    "Pour into hot sterilised jars and seal."
+   ],
+   "notes": [
+    "Makes about 6 small jars; plus cooling. Keeps 3 months unopened.",
+    "Gluten free."
+   ],
+   "nutrition": {
+    "kcal": 80,
+    "proteinG": 0,
+    "carbsG": 20,
+    "fatG": 0,
+    "fibreG": 1,
+    "sodiumMg": 90
+   }
+  },
+  {
+   "id": "creamy-garlic-mushroom-sauce",
+   "title": "Creamy Garlic Mushroom Sauce",
+   "summary": "A rich sauce for steak, chicken or pasta.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g button mushroom, sliced",
+      "2 tbsp butter",
+      "3 garlic cloves, minced",
+      "1 tbsp thyme",
+      "100ml white wine",
+      "200ml cream",
+      "1 tbsp dijon mustard"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the mushrooms in the butter until golden and the liquid evaporates.",
+    "Add the garlic and thyme for 1 minute, then pour in the wine and bubble until reduced by half.",
+    "Stir in the cream and mustard and simmer for 5 minutes, until thickened and season and serve hot."
+   ],
+   "notes": [
+    "Vegetarian and gluten free."
+   ],
+   "nutrition": {
+    "kcal": 220,
+    "proteinG": 4,
+    "carbsG": 6,
+    "fatG": 20,
+    "fibreG": 1,
+    "sodiumMg": 200
+   }
+  },
+  {
+   "id": "miso-ginger-dressing",
+   "title": "Miso Ginger Dressing",
+   "summary": "A creamy, tangy dressing for noodle bowls and salads.",
+   "cuisine": "japanese",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 0,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp miso",
+      "1 tbsp rice vinegar",
+      "1 tbsp ginger, grated",
+      "1 tbsp sesame oil",
+      "2 tbsp neutral oil",
+      "1 tbsp honey",
+      "2 tbsp water"
+     ]
+    }
+   ],
+   "steps": [
+    "Whisk all the ingredients until smooth and emulsified.",
+    "Taste and adjust with more vinegar if needed.",
+    "Shake in a jar before using, as it will separate on standing."
+   ],
+   "notes": [
+    "Keeps 1 week refrigerated.",
+    "Use maple syrup for a vegan version."
+   ],
+   "nutrition": {
+    "kcal": 105,
+    "proteinG": 1,
+    "carbsG": 5,
+    "fatG": 9,
+    "fibreG": 0,
+    "sodiumMg": 380
+   }
+  },
+  {
+   "id": "roasted-tomato-harissa-sauce",
+   "title": "Roasted Tomato Harissa Sauce",
+   "summary": "A deep, smoky red sauce for eggs, roast vegetables and grilled meats.",
+   "cuisine": "north-african",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 35,
+   "servings": 8,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1kg tomato, halved",
+      "1 red capsicum",
+      "1 brown onion, quartered",
+      "4 garlic cloves",
+      "3 tbsp harissa",
+      "3 tbsp olive oil",
+      "1 tsp ground cumin"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C. Roast the tomato, capsicum, onion and garlic with the oil for 35 minutes, until blistered and soft.",
+    "Peel the capsicum, then blend everything with the harissa and cumin until smooth.",
+    "Season and simmer for 5 minutes until thick enough to coat a spoon."
+   ],
+   "notes": [
+    "Keeps 5 days refrigerated.",
+    "Vegan and gluten free."
+   ],
+   "nutrition": {
+    "kcal": 102,
+    "proteinG": 2,
+    "carbsG": 10,
+    "fatG": 6,
+    "fibreG": 3,
+    "sodiumMg": 380
+   }
+  },
+  {
+   "id": "ginger-and-spring-onion-oil",
+   "title": "Ginger and Spring Onion Oil",
+   "summary": "Silky, fragrant oil for noodles, rice and steamed fish.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "dinner",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 5,
+   "servings": 8,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 spring onions, finely sliced",
+      "3 tbsp ginger, grated",
+      "120ml neutral oil",
+      "1 tbsp soy sauce",
+      "1 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the spring onion, ginger and salt in a heatproof bowl.",
+    "Heat the oil until shimmering and almost smoking, then pour over the mixture until it sizzles.",
+    "Stir in the soy sauce once the sizzling stops."
+   ],
+   "notes": [
+    "Keeps 2 weeks refrigerated.",
+    "Vegan."
+   ],
+   "nutrition": {
+    "kcal": 134,
+    "proteinG": 0,
+    "carbsG": 2,
+    "fatG": 14,
+    "fibreG": 0,
+    "sodiumMg": 330
+   }
+  },
+  {
+   "id": "yoghurt-raita-with-roasted-cumin-and-mint",
+   "title": "Yoghurt Raita with Roasted Cumin and Mint",
+   "summary": "A cooling Indian yoghurt side for curries and spicy rice.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "dinner",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 0,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g greek yoghurt",
+      "1 cucumber, grated",
+      "1 tsp ground cumin",
+      "2 tbsp mint, chopped",
+      "1 pinch salt",
+      "1 pinch cayenne"
+     ]
+    }
+   ],
+   "steps": [
+    "Toast the cumin in a dry pan until fragrant.",
+    "Stir the yoghurt, cucumber, mint, cumin and salt together.",
+    "Dust with cayenne to serve."
+   ],
+   "notes": [
+    "Vegetarian and gluten free."
+   ],
+   "nutrition": {
+    "kcal": 76,
+    "proteinG": 6,
+    "carbsG": 4,
+    "fatG": 4,
+    "fibreG": 1,
+    "sodiumMg": 200
+   }
+  },
+  {
+   "id": "fried-eggs-over-spiced-sweet-potato-and-beans",
+   "title": "Fried Eggs over Spiced Sweet Potato and Beans",
+   "summary": "A hearty one-pan breakfast of crisp sweet potato, beans and runny eggs.",
+   "cuisine": "american",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 2,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 large sweet potato, diced",
+      "1 red onion, diced",
+      "1 tbsp olive oil",
+      "1 tsp smoked paprika",
+      "200g tinned black beans, drained",
+      "2 eggs",
+      "1 avocado",
+      "1 handful coriander"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil in a frying pan and cook the sweet potato for 12 minutes until tender and golden.",
+    "Add the onion and paprika and cook for 4 minutes until soft.",
+    "Stir in the beans to heat through.",
+    "Make two wells, crack in the eggs and cover for 4 minutes, until the whites are set.",
+    "Top with avocado and coriander."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
+   ],
+   "nutrition": {
+    "kcal": 478,
+    "proteinG": 18,
+    "carbsG": 52,
+    "fatG": 22,
+    "fibreG": 15,
+    "sodiumMg": 420
+   }
+  }
+ ]
+}

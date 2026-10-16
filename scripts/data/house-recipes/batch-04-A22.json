@@ -1,0 +1,1335 @@
+{
+ "about": "House recipes, batch 04 (helper sA): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+ "recipes": [
+  {
+   "id": "lapskaus-norwegian-beef-and-root-vegetable-stew",
+   "title": "Lapskaus (Norwegian Beef and Root Vegetable Stew)",
+   "summary": "A thick, comforting Norwegian stew of beef, potato, swede and carrot.",
+   "cuisine": "scandinavian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 25,
+   "cookMinutes": 150,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "900 g beef chuck, diced",
+      "2 tbsp butter",
+      "1 brown onion, diced",
+      "3 cup beef stock",
+      "2 bay leaf",
+      "1/2 tsp allspice",
+      "600 g potato, cubed",
+      "1 swede, cubed",
+      "3 carrot, sliced",
+      "1 leek, sliced",
+      "2 tbsp chopped parsley",
+      "1 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the beef in the butter in a heavy pot for 8 minutes, until golden, then add the onion and cook until soft.",
+    "Add the stock, bay, allspice and salt, cover and simmer for 1 1/2 hours, until the beef is nearly tender.",
+    "Add the potato, swede, carrot and leek and simmer for 30 minutes, until the vegetables are soft and the stew is thick.",
+    "Mash a few of the vegetables against the pot to thicken it, then stir through the parsley and serve."
+   ],
+   "notes": [
+    "Food safety: cook beef until tender and at least 70°C throughout for slow-cooked cuts. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Serve with crispbread.",
+    "Freezes well."
+   ],
+   "nutrition": {
+    "kcal": 352,
+    "proteinG": 33,
+    "carbsG": 28,
+    "fatG": 12,
+    "fibreG": 5,
+    "sodiumMg": 720
+   }
+  },
+  {
+   "id": "pyttipanna-swedish-beef-and-potato-hash-with-fried-egg",
+   "title": "Pyttipanna (Swedish Beef and Potato Hash)",
+   "summary": "Crisp diced potato and beef fried with onion, topped with an egg and pickled beetroot-style pickles.",
+   "cuisine": "scandinavian",
+   "mealTypes": [
+    "dinner",
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "600 g potato, diced small",
+      "300 g cooked roast beef, diced",
+      "1 brown onion, diced",
+      "3 tbsp butter",
+      "1 tbsp Worcestershire sauce",
+      "4 egg",
+      "4 pickle, sliced",
+      "1 tbsp chopped parsley"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the potato for 5 minutes, until just tender, and drain well.",
+    "Fry the potato in half the butter in a large pan for 10 minutes, until crisp and golden, turning rarely.",
+    "Add the onion and cook for 5 minutes, until soft, then add the beef and Worcestershire and cook until hot.",
+    "Fry the eggs in the remaining butter until the whites are set.",
+    "Top the hash with the eggs, pickle and parsley."
+   ],
+   "notes": [
+    "Food safety: cook beef until tender and at least 70°C throughout for slow-cooked cuts. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Food safety: cook eggs until the whites and yolks are set. Use fresh, uncracked eggs. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Use leftover roast beef for best results."
+   ],
+   "nutrition": {
+    "kcal": 454,
+    "proteinG": 32,
+    "carbsG": 32,
+    "fatG": 22,
+    "fibreG": 3,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "pot-au-feu-french-boiled-beef-and-vegetables",
+   "title": "Pot-au-Feu (French Boiled Beef and Vegetables)",
+   "summary": "Beef shin simmered with leeks, carrots and potatoes, served with strong mustard.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 25,
+   "cookMinutes": 210,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.2 kg beef shin",
+      "1 beef bone",
+      "1 brown onion, studded with 3 clove",
+      "2 bay leaf",
+      "1 tsp thyme",
+      "1 tsp black pepper",
+      "4 carrot, halved",
+      "3 leek, trimmed",
+      "500 g waxy potato, halved",
+      "1 celery, chunked",
+      "1 tsp salt",
+      "3 tbsp Dijon mustard",
+      "1 jar pickle"
+     ]
+    }
+   ],
+   "steps": [
+    "Put the beef, bone, onion, bay, thyme and pepper in a large pot, cover with cold water and bring slowly to the boil. Skim the froth until the surface is clear.",
+    "Simmer very gently for 2 1/2 hours, until the beef is tender.",
+    "Add the carrot, leek, potato, celery and salt and simmer for 30 minutes, until the vegetables are tender.",
+    "Slice the beef, arrange with the vegetables in bowls with some broth and serve with mustard and pickles."
+   ],
+   "notes": [
+    "Food safety: cook beef until tender and at least 70°C throughout for slow-cooked cuts. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Keep the broth for soup."
+   ],
+   "nutrition": {
+    "kcal": 346,
+    "proteinG": 42,
+    "carbsG": 22,
+    "fatG": 10,
+    "fibreG": 5,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "carbonada-criolla-argentine-beef-stew-served-in-pumpkin",
+   "title": "Carbonada Criolla (Argentine Beef and Pumpkin Stew)",
+   "summary": "Sweet and savoury beef stew with corn, pumpkin and sweet potato, baked in a hollowed pumpkin.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 150,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800 g beef chuck, diced",
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "1 red capsicum, diced",
+      "3 garlic clove, crushed",
+      "400 g tinned tomatoes",
+      "2 cup beef stock",
+      "500 g pumpkin, cubed",
+      "1 sweet potato, cubed",
+      "2 potato, cubed",
+      "1 cup corn kernel",
+      "1/4 cup dried apricot, chopped",
+      "1 tsp sweet paprika",
+      "1 tsp dried oregano"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the beef in the oil in a heavy pot for 8 minutes, until golden. Add the onion, capsicum and garlic and cook until soft.",
+    "Add the tomatoes, stock, paprika and oregano, cover and simmer for 1 hour, until the beef is nearly tender.",
+    "Add the pumpkin, sweet potato, potato, corn and apricots and simmer for 40 minutes, until the vegetables are soft and the stew is thick.",
+    "Serve in bowls with crusty bread."
+   ],
+   "notes": [
+    "Food safety: cook beef until tender and at least 70°C throughout for slow-cooked cuts. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Traditionally served inside a roasted pumpkin."
+   ],
+   "nutrition": {
+    "kcal": 388,
+    "proteinG": 30,
+    "carbsG": 40,
+    "fatG": 12,
+    "fibreG": 7,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "kapama-greek-cinnamon-chicken-braised-in-tomato",
+   "title": "Kapama (Greek Cinnamon Chicken in Tomato)",
+   "summary": "Chicken braised in a sweet-spiced tomato sauce, served over rice or orzo.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 70,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.2 kg bone-in chicken thigh",
+      "2 tbsp olive oil",
+      "1 brown onion, sliced",
+      "3 garlic clove, crushed",
+      "1 cinnamon stick",
+      "1/4 tsp ground cloves",
+      "400 g tinned tomatoes",
+      "1/2 cup red wine",
+      "1 cup chicken stock",
+      "1 tsp dried oregano",
+      "1 cup orzo",
+      "1 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the chicken in the oil in a wide pan for 8 minutes, until golden, then set aside.",
+    "Cook the onion and garlic for 5 minutes, until soft, add the cinnamon, cloves, wine, tomatoes, stock, oregano and salt and return the chicken.",
+    "Cover and simmer for 40 minutes, until the chicken is tender.",
+    "Stir in the orzo and cook uncovered for 10 minutes, until the orzo is tender and the sauce is thick."
+   ],
+   "notes": [
+    "Food safety: cook chicken until the thickest part reaches 75°C and the juices run clear. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Remove the cinnamon stick and cloves before serving."
+   ],
+   "nutrition": {
+    "kcal": 680,
+    "proteinG": 47,
+    "carbsG": 45,
+    "fatG": 34,
+    "fibreG": 3,
+    "sodiumMg": 880
+   }
+  },
+  {
+   "id": "bistecca-alla-pizzaiola-steak-in-tomato-and-oregano-sauce",
+   "title": "Bistecca alla Pizzaiola (Steak in Tomato and Oregano Sauce)",
+   "summary": "Seared steak finished in a garlicky tomato, caper and oregano sauce.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600 g beef rump",
+      "2 tbsp olive oil",
+      "3 garlic clove, crushed",
+      "400 g tinned tomatoes",
+      "1 tbsp caper",
+      "1 tsp dried oregano",
+      "2 tbsp chopped parsley",
+      "1/2 tsp salt",
+      "1/2 tsp black pepper"
+     ]
+    }
+   ],
+   "steps": [
+    "Season the steak and sear in the oil in a hot pan for 3 minutes each side, until browned. Set aside.",
+    "Fry the garlic for 30 seconds, then add the tomatoes, capers, oregano, salt and pepper and simmer for 10 minutes, until thick.",
+    "Return the steak to the sauce and cook 3 minutes more, until the internal temperature reaches at least 60C for medium.",
+    "Slice and serve with the sauce, parsley and potatoes or bread."
+   ],
+   "notes": [
+    "Food safety: cook beef until tender and at least 70°C throughout for slow-cooked cuts. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Rest the meat for 5 minutes before slicing."
+   ],
+   "nutrition": {
+    "kcal": 329,
+    "proteinG": 38,
+    "carbsG": 6,
+    "fatG": 17,
+    "fibreG": 2,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "choripan-argentine-grilled-sausage-in-bread-with-chimichurri",
+   "title": "Choripan (Argentine Grilled Sausage with Chimichurri)",
+   "summary": "Smoky grilled sausages in crusty bread with a bright parsley and garlic chimichurri.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "dinner",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 pork sausage",
+      "4 bread roll",
+      "1 cup parsley, finely chopped",
+      "3 garlic clove, minced",
+      "1 tsp dried oregano",
+      "1/3 cup olive oil",
+      "3 tbsp red wine vinegar",
+      "1/2 tsp chilli flakes",
+      "1 tomato, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Stir the parsley, garlic, oregano, oil, vinegar and chilli flakes together for the chimichurri and stand for 10 minutes.",
+    "Grill the sausages over medium heat for 15 minutes, turning, until browned and cooked through at 75C.",
+    "Split the rolls, toast them on the grill for 1 minute, until warm.",
+    "Fill each roll with 2 sausages, sliced tomato and a spoonful of chimichurri."
+   ],
+   "notes": [
+    "Food safety: cook mince and sausages until they reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Butterfly the sausages if you prefer."
+   ],
+   "nutrition": {
+    "kcal": 351,
+    "proteinG": 12,
+    "carbsG": 20,
+    "fatG": 24,
+    "fibreG": 2,
+    "sodiumMg": 1300
+   }
+  },
+  {
+   "id": "faggots-in-onion-gravy-british-pork-meatballs",
+   "title": "Faggots in Onion Gravy (British Pork Meatballs)",
+   "summary": "Old-fashioned British pork and liver meatballs baked in a rich onion gravy.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 45,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "400 g pork mince",
+      "150 g chicken liver, finely chopped",
+      "1 brown onion, grated",
+      "1 cup breadcrumbs",
+      "1 tsp dried sage",
+      "1/2 tsp nutmeg",
+      "1 egg",
+      "2 brown onion, sliced",
+      "2 tbsp butter",
+      "2 tbsp plain flour",
+      "2 cup beef stock",
+      "1 tbsp Worcestershire sauce",
+      "600 g potato, mashed"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the mince, liver, grated onion, breadcrumbs, sage, nutmeg and egg and shape into 8 balls. Heat the oven to 190C.",
+    "Brown the faggots in a pan for 6 minutes, until golden, and set in a baking dish.",
+    "Cook the sliced onion in the butter for 10 minutes, until deeply golden, stir in the flour and add the stock and Worcestershire, simmering until thickened.",
+    "Pour the gravy over, cover and bake for 30 minutes, until the faggots reach 75C, then serve with mash."
+   ],
+   "notes": [
+    "Food safety: cook pork mince until it reaches 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Food safety: cook eggs until the whites and yolks are set. Use fresh, uncracked eggs. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Liver can be swapped for more mince."
+   ],
+   "nutrition": {
+    "kcal": 506,
+    "proteinG": 30,
+    "carbsG": 38,
+    "fatG": 26,
+    "fibreG": 4,
+    "sodiumMg": 820
+   }
+  },
+  {
+   "id": "pisto-manchego-style-capsicum-and-zucchini-stew-with-poached-eggs",
+   "title": "Pisto Manchego Style Capsicum Stew with Poached Eggs",
+   "summary": "Slow-cooked Spanish capsicum, zucchini and tomato stew with eggs baked on top.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner",
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "3 tbsp olive oil",
+      "1 brown onion, diced",
+      "1 green capsicum, diced",
+      "1 red capsicum, diced",
+      "2 zucchini, diced",
+      "400 g tinned tomatoes",
+      "2 garlic clove, crushed",
+      "1 tsp sweet paprika",
+      "1 tsp salt",
+      "4 egg",
+      "crusty bread, to serve"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the onion and capsicums in the oil for 10 minutes, until soft.",
+    "Add the zucchini and garlic and cook for 5 minutes, then stir in the paprika, tomatoes and salt and simmer for 20 minutes, until thick and jammy.",
+    "Make 4 wells, crack in the eggs, cover and cook for 5 minutes, until the whites are set and the yolks are still soft, then serve with bread."
+   ],
+   "notes": [
+    "Food safety: cook eggs until the whites and yolks are set. Use fresh, uncracked eggs. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 274,
+    "proteinG": 12,
+    "carbsG": 16,
+    "fatG": 18,
+    "fibreG": 5,
+    "sodiumMg": 800
+   }
+  },
+  {
+   "id": "fabada-asturiana-white-bean-pork-and-chorizo-stew",
+   "title": "Fabada Asturiana (White Bean, Pork and Chorizo Stew)",
+   "summary": "A rich Spanish stew of white beans, smoked chorizo and pork belly.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 120,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400 g pork belly, cubed",
+      "200 g chorizo, sliced",
+      "1 brown onion, diced",
+      "4 garlic clove, crushed",
+      "800 g cannellini bean, drained",
+      "3 cup water",
+      "1 tsp smoked paprika",
+      "1 pinch saffron",
+      "2 bay leaf",
+      "1 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Put the pork belly, chorizo, onion, garlic, paprika, saffron, bay and water in a pot and simmer gently for 1 hour, until the pork is tender.",
+    "Add the beans and salt and cook for 30 minutes, until the liquid is thick and creamy.",
+    "Skim off excess fat, taste and rest 10 minutes.",
+    "Ladle into bowls with crusty bread."
+   ],
+   "notes": [
+    "Food safety: cook pork mince until it reaches 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Better the next day."
+   ],
+   "nutrition": {
+    "kcal": 530,
+    "proteinG": 30,
+    "carbsG": 26,
+    "fatG": 34,
+    "fibreG": 8,
+    "sodiumMg": 1100
+   }
+  },
+  {
+   "id": "albondigas-en-salsa-spanish-meatballs-in-almond-tomato-sauce",
+   "title": "Albondigas en Salsa (Spanish Meatballs in Tomato Sauce)",
+   "summary": "Tender pork and beef meatballs simmered in a sherry tomato sauce thickened with almond.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 40,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300 g pork mince",
+      "300 g beef mince",
+      "1 egg",
+      "1/2 cup breadcrumbs",
+      "2 garlic clove, minced",
+      "2 tbsp chopped parsley",
+      "1 tsp salt",
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "1/4 cup dry sherry",
+      "400 g tinned tomatoes",
+      "1 cup chicken stock",
+      "1/4 cup almond meal",
+      "1 tsp smoked paprika"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the mince, egg, breadcrumbs, 1 garlic, parsley and salt, shape into 24 balls and brown in the oil for 6 minutes, until golden. Set aside.",
+    "Cook the onion and remaining garlic until soft, add the sherry and boil for 1 minute.",
+    "Add the tomatoes, stock, almond meal and paprika, simmer for 10 minutes, then return the meatballs.",
+    "Cook for 15 minutes, until the meatballs reach 75C and the sauce is thick."
+   ],
+   "notes": [
+    "Food safety: cook mince and sausages until they reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Food safety: cook eggs until the whites and yolks are set. Use fresh, uncracked eggs. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Serve with rice or crusty bread."
+   ],
+   "nutrition": {
+    "kcal": 400,
+    "proteinG": 30,
+    "carbsG": 16,
+    "fatG": 24,
+    "fibreG": 3,
+    "sodiumMg": 720
+   }
+  },
+  {
+   "id": "pinchos-morunos-spanish-spiced-pork-skewers",
+   "title": "Pinchos Morunos (Spanish Spiced Pork Skewers)",
+   "summary": "Pork fillet skewers coated in smoky cumin and paprika, grilled until charred.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "700 g pork fillet, cubed",
+      "3 tbsp olive oil",
+      "2 tsp smoked paprika",
+      "2 tsp ground cumin",
+      "1 tsp ground coriander",
+      "3 garlic clove, minced",
+      "1 tsp dried oregano",
+      "1 tbsp sherry vinegar",
+      "1 tsp salt",
+      "1 lemon"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the oil, spices, garlic, oregano, vinegar and salt, toss the pork through and thread onto skewers.",
+    "Heat the grill or barbecue to high, then grill for 10 minutes, turning, until charred and the pork reaches 70C inside.",
+    "Rest for 3 minutes and serve with lemon wedges and flatbread."
+   ],
+   "notes": [
+    "Food safety: cook pork until it reaches at least 70°C in the thickest part. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Marinate for 1 hour if time allows."
+   ],
+   "nutrition": {
+    "kcal": 288,
+    "proteinG": 34,
+    "carbsG": 2,
+    "fatG": 16,
+    "fibreG": 1,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "empanada-gallega-spanish-tuna-and-capsicum-pie",
+   "title": "Empanada Gallega (Galician Tuna and Capsicum Pie)",
+   "summary": "A golden Galician pie of tuna, sweet capsicum and onion in a flaky pastry crust.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner",
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 40,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "3 tbsp olive oil",
+      "2 brown onion, sliced",
+      "2 red capsicum, sliced",
+      "3 garlic clove, crushed",
+      "1 tsp smoked paprika",
+      "200 g tinned tomatoes",
+      "300 g tinned tuna, drained",
+      "1 egg",
+      "2 sheet puff pastry"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the onion and capsicum in the oil for 15 minutes, until very soft, then add the garlic, paprika and tomatoes and simmer for 10 minutes, until thick. Cool, then stir in the tuna.",
+    "Heat the oven to 200C. Line a baking tray with one pastry sheet, spread the filling over leaving a border, cover with the second sheet and seal the edges.",
+    "Brush with beaten egg, cut a vent and bake for 30 minutes, until deep golden."
+   ],
+   "notes": [
+    "Food safety: cook eggs until the whites and yolks are set. Use fresh, uncracked eggs. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Good cold."
+   ],
+   "nutrition": {
+    "kcal": 419,
+    "proteinG": 20,
+    "carbsG": 32,
+    "fatG": 23,
+    "fibreG": 2,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "lahana-dolmades-greek-cabbage-rolls-with-egg-lemon-sauce",
+   "title": "Lahana Dolmades (Greek Cabbage Rolls with Avgolemono)",
+   "summary": "Cabbage leaves stuffed with beef, rice and herbs, finished in silky egg-lemon sauce.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 45,
+   "cookMinutes": 70,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cabbage",
+      "500 g beef mince",
+      "1/2 cup white rice",
+      "1 brown onion, grated",
+      "1/4 cup dill, chopped",
+      "2 tbsp olive oil",
+      "2 cup chicken stock",
+      "2 egg",
+      "2 lemon",
+      "1 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the cabbage for 8 minutes, until the leaves soften, and separate 14 leaves.",
+    "Mix the mince, rice, onion, dill, oil and salt. Roll a spoonful in each leaf.",
+    "Pack the rolls into a pot, pour in the stock, weigh them down with a plate and simmer for 45 minutes, until the rice and beef are cooked at 75C.",
+    "Whisk the eggs and lemon juice, slowly whisk in a ladle of hot broth, then pour back and swirl gently over low heat for 3 minutes, until slightly thick, then serve at once."
+   ],
+   "notes": [
+    "Food safety: cook mince and sausages until they reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Food safety: cook eggs until the whites and yolks are set. Use fresh, uncracked eggs. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Do not boil after adding the egg or it will curdle."
+   ],
+   "nutrition": {
+    "kcal": 336,
+    "proteinG": 24,
+    "carbsG": 24,
+    "fatG": 16,
+    "fibreG": 5,
+    "sodiumMg": 760
+   }
+  },
+  {
+   "id": "arni-fricassee-greek-lamb-with-cos-lettuce-and-dill",
+   "title": "Arni Fricassee (Greek Lamb with Cos Lettuce and Dill)",
+   "summary": "Spring lamb braised with cos lettuce and dill, brightened with lemon.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 100,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 kg lamb shoulder, diced",
+      "3 tbsp olive oil",
+      "1 brown onion, diced",
+      "4 spring onion, sliced",
+      "1 cup water",
+      "2 cos lettuce, chopped",
+      "1/2 cup dill, chopped",
+      "2 egg",
+      "2 lemon",
+      "1 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the lamb in the oil for 8 minutes, until golden, then add the onion and spring onion and cook until soft.",
+    "Add the water and salt, cover and simmer for 1 hour, until the lamb is tender.",
+    "Add the lettuce and dill and cook 15 minutes, until wilted and soft.",
+    "Whisk the eggs with lemon juice and a ladle of broth, stir into the pot off the heat until the sauce thickens slightly."
+   ],
+   "notes": [
+    "Food safety: cook lamb until tender and at least 70°C throughout. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Food safety: cook eggs until the whites and yolks are set. Use fresh, uncracked eggs. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Serve with crusty bread."
+   ],
+   "nutrition": {
+    "kcal": 364,
+    "proteinG": 32,
+    "carbsG": 5,
+    "fatG": 24,
+    "fibreG": 3,
+    "sodiumMg": 560
+   }
+  },
+  {
+   "id": "tavuk-sote-turkish-chicken-saute-with-capsicum-and-tomato",
+   "title": "Tavuk Sote (Turkish Chicken Saute)",
+   "summary": "Quick pan-cooked chicken with capsicum, tomato and gentle chilli.",
+   "cuisine": "turkish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600 g chicken thigh, diced",
+      "2 tbsp olive oil",
+      "1 brown onion, sliced",
+      "2 green capsicum, sliced",
+      "3 garlic clove, crushed",
+      "2 tomato, diced",
+      "1 tbsp tomato paste",
+      "1 tsp dried oregano",
+      "1/2 tsp chilli flakes",
+      "1/2 cup chicken stock",
+      "1 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Sear the chicken in the oil in a wide pan over high heat for 6 minutes, until browned.",
+    "Add the onion, capsicum and garlic and cook for 5 minutes, until soft.",
+    "Stir in the paste, tomato, oregano, chilli, stock and salt and simmer for 10 minutes, until the chicken reaches 75C and the sauce is thick.",
+    "Serve with rice or bread."
+   ],
+   "notes": [
+    "Food safety: cook chicken until the thickest part reaches 75°C and the juices run clear. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Serve with rice."
+   ],
+   "nutrition": {
+    "kcal": 338,
+    "proteinG": 32,
+    "carbsG": 12,
+    "fatG": 18,
+    "fibreG": 3,
+    "sodiumMg": 740
+   }
+  },
+  {
+   "id": "biber-dolmasi-turkish-lamb-and-rice-stuffed-capsicums",
+   "title": "Biber Dolmasi (Turkish Lamb and Rice Stuffed Capsicums)",
+   "summary": "Capsicums filled with spiced lamb and rice, baked in a tomato bath.",
+   "cuisine": "turkish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 60,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "6 green capsicum",
+      "300 g lamb mince",
+      "1/2 cup white rice",
+      "1 brown onion, diced",
+      "2 tbsp tomato paste",
+      "1 tsp ground cumin",
+      "1 tsp dried mint",
+      "2 tbsp parsley, chopped",
+      "2 tbsp olive oil",
+      "1 cup chicken stock",
+      "1 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Cut the tops off the capsicums and remove the seeds.",
+    "Mix the mince, rice, onion, 1 tbsp paste, cumin, mint, parsley, oil and salt, then fill the capsicums two-thirds full.",
+    "Stand them in a pot, whisk the stock with the remaining paste and pour around, then cover.",
+    "Simmer for 45 minutes, until the capsicums are tender and the filling reaches 75C. Rest for 10 minutes."
+   ],
+   "notes": [
+    "Food safety: cook mince and sausages until they reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Serve with yoghurt."
+   ],
+   "nutrition": {
+    "kcal": 412,
+    "proteinG": 20,
+    "carbsG": 38,
+    "fatG": 20,
+    "fibreG": 5,
+    "sodiumMg": 840
+   }
+  },
+  {
+   "id": "kafta-bil-tahini-lebanese-lamb-and-potato-bake",
+   "title": "Kafta bil Tahini (Lebanese Lamb and Potato Bake)",
+   "summary": "Spiced lamb kofta baked with potatoes and a creamy tahini sauce.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 45,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500 g lamb mince",
+      "1 brown onion, grated",
+      "1/2 cup parsley, chopped",
+      "1 tsp allspice",
+      "1 tsp salt",
+      "600 g potato, sliced",
+      "2 tbsp olive oil",
+      "1/3 cup tahini",
+      "1/2 cup water",
+      "1 lemon",
+      "2 garlic clove, crushed"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200C. Mix the mince, onion, parsley, allspice and salt, shape into 16 finger-shaped patties.",
+    "Toss the potato with the oil and roast for 15 minutes in a baking dish, then arrange the kofta on top.",
+    "Whisk the tahini, water, lemon juice and garlic into a smooth sauce, pour over and bake for 25 minutes, until golden and the lamb reaches 75C.",
+    "Scatter with parsley and serve."
+   ],
+   "notes": [
+    "Food safety: cook mince and sausages until they reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Serve with rice or flatbread."
+   ],
+   "nutrition": {
+    "kcal": 538,
+    "proteinG": 30,
+    "carbsG": 28,
+    "fatG": 34,
+    "fibreG": 4,
+    "sodiumMg": 720
+   }
+  },
+  {
+   "id": "sfeeha-lebanese-open-meat-pies",
+   "title": "Sfeeha (Lebanese Open Lamb Pies)",
+   "summary": "Soft little pies topped with spiced lamb, tomato and pine nuts.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner",
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 40,
+   "cookMinutes": 20,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "3 cup bread flour",
+      "1 tsp instant dried yeast",
+      "1 tsp salt",
+      "1 cup warm water",
+      "2 tbsp olive oil",
+      "400 g lamb mince",
+      "1 brown onion, finely diced",
+      "1 tomato, finely diced",
+      "2 tbsp pomegranate molasses",
+      "1 tsp allspice",
+      "1/4 cup pine nut"
+     ]
+    }
+   ],
+   "steps": [
+    "Knead the flour, yeast, salt, water and oil for 8 minutes, until smooth, and rise for 1 hour, until doubled.",
+    "Mix the mince, onion, tomato, molasses and allspice.",
+    "Heat the oven to 230C. Divide the dough into 12 balls, roll thin and top with the mince and pine nuts.",
+    "Bake for 12 minutes, until the edges are golden and the lamb reaches 75C, then serve warm."
+   ],
+   "notes": [
+    "Food safety: cook mince and sausages until they reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Freeze baked pies."
+   ],
+   "nutrition": {
+    "kcal": 366,
+    "proteinG": 20,
+    "carbsG": 40,
+    "fatG": 14,
+    "fibreG": 3,
+    "sodiumMg": 380
+   }
+  },
+  {
+   "id": "lubia-polo-persian-green-bean-beef-and-rice",
+   "title": "Lubia Polo (Persian Green Bean and Beef Rice)",
+   "summary": "Fragrant saffron rice layered with cinnamon beef and green beans in tomato.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 60,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 cup basmati rice",
+      "500 g beef chuck, diced",
+      "1 brown onion, diced",
+      "3 tbsp olive oil",
+      "500 g green bean, cut into pieces",
+      "2 tbsp tomato paste",
+      "1 tsp ground cinnamon",
+      "1 tsp ground turmeric",
+      "1/2 tsp saffron",
+      "2 cup water",
+      "1 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the beef and onion in 2 tbsp oil for 10 minutes, until golden. Add the turmeric, cinnamon, paste and water, cover and simmer for 40 minutes, until tender.",
+    "Add the beans and simmer 10 minutes, until tender.",
+    "Boil the rice for 6 minutes, until half-cooked, and drain.",
+    "Layer rice over the stew in the pot, sprinkle with saffron, wrap the lid in a towel and steam on low for 25 minutes, until the rice is fluffy."
+   ],
+   "notes": [
+    "Food safety: cook beef until tender and at least 70°C throughout for slow-cooked cuts. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Serve with yoghurt."
+   ],
+   "nutrition": {
+    "kcal": 430,
+    "proteinG": 26,
+    "carbsG": 50,
+    "fatG": 14,
+    "fibreG": 4,
+    "sodiumMg": 540
+   }
+  },
+  {
+   "id": "chicken-pastilla-moroccan-spiced-chicken-and-almond-pie",
+   "title": "Chicken Pastilla (Moroccan Spiced Chicken and Almond Pie)",
+   "summary": "Crisp layered filo pie of cinnamon-spiced chicken and almond, dusted with icing sugar.",
+   "cuisine": "north-african",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 40,
+   "cookMinutes": 60,
+   "servings": 8,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "700 g chicken thigh",
+      "1 brown onion, diced",
+      "2 tbsp olive oil",
+      "1 tsp ground ginger",
+      "1 tsp ground cinnamon",
+      "1/2 tsp saffron",
+      "1 cup chicken stock",
+      "3 egg",
+      "1/2 cup almond, toasted and chopped",
+      "2 tbsp parsley, chopped",
+      "10 sheet filo pastry",
+      "3 tbsp butter, melted",
+      "1 tbsp icing sugar"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the chicken, onion, oil, spices and stock for 25 minutes, until the chicken reaches 75C. Shred the chicken and boil the liquid until reduced to 1/2 cup.",
+    "Stir in the beaten eggs and cook over low heat for 3 minutes, until scrambled and set. Fold in the chicken, almonds and parsley.",
+    "Heat the oven to 190C. Layer half the filo in a round tin, brushing with butter, spoon in the filling and cover with the rest.",
+    "Bake for 30 minutes, until golden and crisp, then dust with icing sugar."
+   ],
+   "notes": [
+    "Food safety: cook chicken until the thickest part reaches 75°C and the juices run clear. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Food safety: cook eggs until the whites and yolks are set. Use fresh, uncracked eggs. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Cool slightly before slicing."
+   ],
+   "nutrition": {
+    "kcal": 394,
+    "proteinG": 25,
+    "carbsG": 24,
+    "fatG": 22,
+    "fibreG": 3,
+    "sodiumMg": 380
+   }
+  },
+  {
+   "id": "mrouzia-moroccan-lamb-with-honey-raisins-and-almonds",
+   "title": "Mrouzia (Moroccan Honey Lamb with Raisins)",
+   "summary": "Sweet-savoury lamb braised with ras el hanout, honey, raisins and almonds.",
+   "cuisine": "north-african",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 120,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.2 kg lamb shoulder, diced",
+      "2 tbsp olive oil",
+      "2 brown onion, sliced",
+      "2 tsp ras el hanout",
+      "1 tsp ground ginger",
+      "1/2 tsp saffron",
+      "2 cup water",
+      "1/2 cup raisin",
+      "1/4 cup honey",
+      "1/3 cup almond, toasted",
+      "1 cinnamon stick",
+      "1 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the lamb in the oil for 8 minutes, until golden, then add the onion, spices and salt and cook for 3 minutes, until fragrant.",
+    "Add the water and cinnamon, cover and simmer for 1 1/2 hours, until the lamb is very tender.",
+    "Stir in the raisins and honey, uncover, and simmer for 15 minutes, until the sauce is glossy and thick.",
+    "Serve with couscous and almonds scattered over."
+   ],
+   "notes": [
+    "Food safety: cook lamb until tender and at least 70°C throughout. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Remove the cinnamon stick before serving."
+   ],
+   "nutrition": {
+    "kcal": 464,
+    "proteinG": 34,
+    "carbsG": 28,
+    "fatG": 24,
+    "fibreG": 3,
+    "sodiumMg": 560
+   }
+  },
+  {
+   "id": "kefta-mkaouara-moroccan-meatballs-with-tomato-and-eggs",
+   "title": "Kefta Mkaouara (Moroccan Meatballs with Tomato and Eggs)",
+   "summary": "Cumin-spiced meatballs simmered in tomato sauce with eggs baked on top.",
+   "cuisine": "north-african",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 25,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500 g beef mince",
+      "1 brown onion, grated",
+      "1/4 cup parsley, chopped",
+      "2 tsp ground cumin",
+      "1 tsp sweet paprika",
+      "1 tsp salt",
+      "2 tbsp olive oil",
+      "3 garlic clove, crushed",
+      "800 g tinned tomatoes",
+      "1/2 tsp chilli flakes",
+      "4 egg",
+      "1/4 cup coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the mince, onion, parsley, half the cumin and paprika and salt, then shape into 20 small balls.",
+    "Heat the oil, cook the garlic for 30 seconds, add the tomatoes, remaining spices and chilli and simmer for 10 minutes, until thick.",
+    "Add the meatballs, cover and cook for 12 minutes, until they reach 75C.",
+    "Make 4 gaps, crack in the eggs, cover and cook for 5 minutes, until the whites are set, then top with coriander."
+   ],
+   "notes": [
+    "Food safety: cook mince and sausages until they reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Food safety: cook eggs until the whites and yolks are set. Use fresh, uncracked eggs. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Serve with bread."
+   ],
+   "nutrition": {
+    "kcal": 418,
+    "proteinG": 36,
+    "carbsG": 10,
+    "fatG": 26,
+    "fibreG": 3,
+    "sodiumMg": 760
+   }
+  },
+  {
+   "id": "ojja-tunisian-spicy-sausage-and-egg-skillet",
+   "title": "Ojja (Tunisian Spicy Sausage and Egg Pan)",
+   "summary": "Fiery tomato and harissa sauce with chorizo and eggs baked in the pan.",
+   "cuisine": "north-african",
+   "mealTypes": [
+    "dinner",
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "3 garlic clove, crushed",
+      "200 g chorizo, sliced",
+      "1 red capsicum, diced",
+      "1 tbsp harissa",
+      "1 tsp ground cumin",
+      "1 tsp ground coriander",
+      "400 g tinned tomatoes",
+      "6 egg",
+      "2 tbsp parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the onion, garlic, chorizo and capsicum in the oil for 8 minutes, until the chorizo is crisp and the onion soft.",
+    "Stir in the harissa and spices, add the tomatoes and simmer for 10 minutes, until thick.",
+    "Make 6 wells, crack in the eggs, cover and cook for 5 minutes, until the whites are set and the yolks still soft.",
+    "Scatter with parsley and serve with bread."
+   ],
+   "notes": [
+    "Food safety: cook eggs until the whites and yolks are set. Use fresh, uncracked eggs. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Food safety: cook mince and sausages until they reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Use less harissa for milder heat."
+   ],
+   "nutrition": {
+    "kcal": 450,
+    "proteinG": 24,
+    "carbsG": 12,
+    "fatG": 34,
+    "fibreG": 3,
+    "sodiumMg": 980
+   }
+  },
+  {
+   "id": "mole-poblano-style-chicken-in-chilli-chocolate-sauce",
+   "title": "Mole Poblano-Style Chicken",
+   "summary": "Chicken in a deep, smoky chilli, almond, sesame and dark chocolate sauce.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 30,
+   "cookMinutes": 70,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.2 kg bone-in chicken thigh",
+      "2 tbsp neutral oil",
+      "1 brown onion, diced",
+      "3 garlic clove, crushed",
+      "2 tbsp chilli powder",
+      "1/4 cup almond",
+      "2 tbsp sesame seed",
+      "1/4 cup raisin",
+      "2 tbsp tomato paste",
+      "2 cup chicken stock",
+      "30 g dark chocolate",
+      "1 tsp ground cinnamon",
+      "1/2 tsp ground cumin",
+      "1 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the chicken in water for 25 minutes, until the thickest part reaches 75C. Set aside and keep 2 cups of the broth.",
+    "Fry the onion, garlic, almonds, sesame and raisins in the oil for 6 minutes, until golden, then add the chilli, spices and paste.",
+    "Blend with the stock until smooth, then return to the pot with the chocolate and salt and simmer for 20 minutes, until thick and glossy.",
+    "Add the chicken and simmer for 10 minutes, until heated through.",
+    "Serve with rice and sesame seeds."
+   ],
+   "notes": [
+    "Food safety: cook chicken until the thickest part reaches 75°C and the juices run clear. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Leftover sauce freezes well."
+   ],
+   "nutrition": {
+    "kcal": 450,
+    "proteinG": 36,
+    "carbsG": 18,
+    "fatG": 26,
+    "fibreG": 4,
+    "sodiumMg": 820
+   }
+  }
+ ]
+}

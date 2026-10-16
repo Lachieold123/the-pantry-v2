@@ -1,0 +1,1302 @@
+{
+ "about": "Batch 04, slice A, chunk A41: sheet-pan, air-fryer, slow-cooker, date night and cooking-for-one dinners.",
+ "recipes": [
+  {
+   "id": "sheet-pan-lemon-herb-chicken-thighs-with-potatoes-and-broccoli",
+   "title": "Sheet-Pan Lemon Herb Chicken Thighs with Potatoes and Broccoli",
+   "summary": "Crisp-skinned chicken thighs roast over lemony potatoes, with broccoli added near the end, all on one tray.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 45,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 chicken thigh, bone-in",
+      "600g potato, cut into wedges",
+      "1 head broccoli, cut into florets",
+      "3 tbsp olive oil",
+      "1 lemon, zested and juiced",
+      "3 clove garlic, crushed",
+      "2 tsp dried oregano",
+      "1 tsp salt",
+      "1/2 tsp black pepper"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Toss the potato with half the oil, half the lemon juice, the oregano and half the salt on a large tray.",
+    "Rub the chicken with the remaining oil, lemon zest, garlic, remaining salt and pepper and nestle it skin-side up among the potatoes.",
+    "Roast for 30 minutes, then add the broccoli and remaining lemon juice and roast for 15 minutes more, until the chicken skin is crisp and the juices run clear."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part with no pink and clear juices; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 36,
+    "carbsG": 38,
+    "fatG": 30,
+    "fibreG": 6,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "sheet-pan-sausages-with-capsicum-onion-and-gnocchi",
+   "title": "Sheet-Pan Sausages with Capsicum, Onion and Gnocchi",
+   "summary": "Pork sausages, sweet capsicum and shop-bought gnocchi crisp up together on one tray with a little Italian seasoning.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 pork sausage",
+      "500g potato gnocchi",
+      "2 red capsicum, sliced",
+      "2 red onion, cut into wedges",
+      "2 tbsp olive oil",
+      "2 tsp Italian seasoning",
+      "1 tsp salt",
+      "2 tbsp parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Toss the gnocchi, capsicum, onion, oil, seasoning and salt together on a large tray.",
+    "Nestle the sausages among the vegetables and roast for 30 minutes, turning once, until the sausages are browned and cooked through and the gnocchi is golden.",
+    "Scatter with parsley and serve from the tray."
+   ],
+   "notes": [
+    "Food safety: pork sausages must reach 75°C in the centre with no pink inside; refrigerate leftovers within 2 hours and eat within 2 days.",
+    "Contains gluten."
+   ],
+   "nutrition": {
+    "kcal": 308,
+    "proteinG": 12,
+    "carbsG": 27,
+    "fatG": 17,
+    "fibreG": 3,
+    "sodiumMg": 1350
+   }
+  },
+  {
+   "id": "sheet-pan-salmon-with-asparagus-and-baby-potatoes",
+   "title": "Sheet-Pan Salmon with Asparagus and Baby Potatoes",
+   "summary": "Salmon fillets and asparagus finish on a tray of roasted baby potatoes with lemon and dill.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 salmon fillet",
+      "500g baby potato, halved",
+      "2 bunch asparagus, trimmed",
+      "3 tbsp olive oil",
+      "1 lemon, sliced",
+      "1 tbsp dill, chopped",
+      "1 tsp salt",
+      "1/2 tsp black pepper"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 210°C (190°C fan). Toss the potatoes with half the oil and half the salt on a tray and roast for 20 minutes.",
+    "Add the asparagus and salmon, drizzle with the remaining oil, season and top with lemon slices.",
+    "Roast for 10 minutes, until the salmon flakes easily and the asparagus is tender, then scatter with dill."
+   ],
+   "notes": [
+    "Food safety: cook the salmon until opaque and flaking, at least 63°C; eat leftovers cold within 1 day."
+   ],
+   "nutrition": {
+    "kcal": 520,
+    "proteinG": 35,
+    "carbsG": 32,
+    "fatG": 27,
+    "fibreG": 5,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "sheet-pan-harissa-chicken-with-chickpeas-and-carrots",
+   "title": "Sheet-Pan Harissa Chicken with Chickpeas and Carrots",
+   "summary": "Harissa-rubbed chicken thighs roast on a bed of chickpeas and carrots that soak up the juices.",
+   "cuisine": "north-african",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 chicken thigh, skinless",
+      "2 can chickpeas, drained and rinsed",
+      "3 carrot, cut into batons",
+      "1 red onion, cut into wedges",
+      "3 tbsp harissa paste",
+      "3 tbsp olive oil",
+      "1 tsp ground cumin",
+      "1 tsp salt",
+      "1/2 cup Greek yoghurt",
+      "1 tbsp coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Mix the harissa, half the oil, cumin and half the salt and rub it over the chicken.",
+    "Toss the chickpeas, carrots and onion with the remaining oil and salt on a large tray and nestle the chicken on top.",
+    "Roast for 40 minutes, until the chicken is cooked through and the carrots are tender. Serve with yoghurt and coriander."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 510,
+    "proteinG": 41,
+    "carbsG": 36,
+    "fatG": 22,
+    "fibreG": 10,
+    "sodiumMg": 1050
+   }
+  },
+  {
+   "id": "sheet-pan-miso-tofu-with-broccoli-and-sweet-potato",
+   "title": "Sheet-Pan Miso Tofu with Broccoli and Sweet Potato",
+   "summary": "Firm tofu, sweet potato and broccoli roast with a savoury miso glaze for an easy plant-based tray.",
+   "cuisine": "japanese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g firm tofu, cut into cubes",
+      "2 sweet potato, cubed",
+      "1 head broccoli, cut into florets",
+      "3 tbsp white miso paste",
+      "2 tbsp soy sauce",
+      "1 tbsp maple syrup",
+      "2 tbsp sesame oil",
+      "1 tbsp sesame seeds",
+      "2 spring onion, sliced",
+      "2 cup cooked rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Whisk the miso, soy sauce, maple syrup and half the sesame oil until smooth.",
+    "Toss the sweet potato with the remaining oil on a tray and roast for 15 minutes, then add the tofu and broccoli and brush with the glaze.",
+    "Roast for 20 minutes more, until the tofu is golden and the sweet potato is tender. Serve over rice with sesame seeds and spring onion."
+   ],
+   "notes": [
+    "Contains soy, sesame and gluten."
+   ],
+   "nutrition": {
+    "kcal": 520,
+    "proteinG": 22,
+    "carbsG": 72,
+    "fatG": 16,
+    "fibreG": 9,
+    "sodiumMg": 1180
+   }
+  },
+  {
+   "id": "air-fryer-crumbed-chicken-schnitzel-with-slaw",
+   "title": "Air-Fryer Crumbed Chicken Schnitzel with Crunchy Slaw",
+   "summary": "Golden schnitzels cooked in the air fryer with barely any oil, served with a lemony cabbage slaw.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 chicken breast, halved horizontally",
+      "1 cup plain flour",
+      "2 egg, beaten",
+      "1.5 cup panko breadcrumbs",
+      "2 tbsp olive oil",
+      "1 tsp salt",
+      "1/2 tsp black pepper",
+      "2 cup cabbage, shredded",
+      "1 carrot, grated",
+      "2 tbsp mayonnaise",
+      "1 lemon, juiced"
+     ]
+    }
+   ],
+   "steps": [
+    "Flatten the chicken to 1 cm. Dip each piece in flour, then egg, then panko mixed with the oil, salt and pepper.",
+    "Air-fry at 190°C for 12 to 15 minutes, turning once, until golden and cooked through.",
+    "Toss the cabbage, carrot, mayonnaise and lemon juice together and serve alongside the schnitzel."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C with no pink; wash hands and board after handling raw chicken and egg, and eat leftovers within 2 days.",
+    "Contains gluten and egg."
+   ],
+   "nutrition": {
+    "kcal": 590,
+    "proteinG": 50,
+    "carbsG": 45,
+    "fatG": 24,
+    "fibreG": 3,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "air-fryer-salmon-with-honey-soy-glaze-and-greens",
+   "title": "Air-Fryer Salmon with Honey Soy Glaze and Greens",
+   "summary": "Salmon fillets cook in about 10 minutes in the air fryer, then get a sticky honey soy glaze.",
+   "cuisine": "japanese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 salmon fillet",
+      "1 tbsp honey",
+      "1 tbsp soy sauce",
+      "1 tsp ginger, grated",
+      "1 clove garlic, crushed",
+      "1 bunch bok choy, halved",
+      "1 tsp sesame oil",
+      "1 cup cooked rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the honey, soy sauce, ginger and garlic. Brush half over the salmon.",
+    "Air-fry the salmon at 200°C for 8 to 10 minutes, until the fish flakes, adding the bok choy tossed in the sesame oil for the last 4 minutes.",
+    "Brush with the remaining glaze and serve over rice."
+   ],
+   "notes": [
+    "Food safety: cook the salmon until opaque and flaking, at least 63°C; eat leftovers cold within 1 day.",
+    "Contains soy, fish and sesame."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 36,
+    "carbsG": 52,
+    "fatG": 22,
+    "fibreG": 2,
+    "sodiumMg": 830
+   }
+  },
+  {
+   "id": "air-fryer-chicken-drumsticks-with-smoky-corn",
+   "title": "Air-Fryer Chicken Drumsticks with Smoky Corn",
+   "summary": "Smoked paprika drumsticks cook up crisp in the air fryer, with corn cobs and a squeeze of lime.",
+   "cuisine": "american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 28,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 chicken drumstick",
+      "2 tbsp olive oil",
+      "2 tsp smoked paprika",
+      "1 tsp garlic powder",
+      "1 tsp salt",
+      "4 corn cob",
+      "1 tbsp butter",
+      "2 lime, cut into wedges"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the drumsticks with half the oil, paprika, garlic powder and salt.",
+    "Air-fry at 190°C for 25 minutes, turning halfway, until the skin is crisp and the juices run clear. Rest for 3 minutes.",
+    "Rub the corn with the remaining oil and air-fry at 200°C for 8 to 10 minutes until charred, then toss with butter and serve with lime."
+   ],
+   "notes": [
+    "Food safety: drumsticks must reach 75°C at the bone with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 520,
+    "proteinG": 38,
+    "carbsG": 30,
+    "fatG": 28,
+    "fibreG": 4,
+    "sodiumMg": 700
+   }
+  },
+  {
+   "id": "air-fryer-crispy-tofu-with-peanut-sauce-and-rice",
+   "title": "Air-Fryer Crispy Tofu with Peanut Sauce and Rice",
+   "summary": "Cornflour-dusted tofu crisps in the air fryer and is tossed in a quick peanut sauce.",
+   "cuisine": "thai",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g firm tofu, cubed",
+      "2 tbsp cornflour",
+      "1 tbsp olive oil",
+      "3 tbsp peanut butter",
+      "2 tbsp soy sauce",
+      "1 tbsp lime juice",
+      "1 tbsp maple syrup",
+      "1 tsp chilli flakes",
+      "3 cup cooked rice",
+      "1 cucumber, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the tofu with the cornflour and oil, then air-fry at 200°C for 15 minutes, shaking twice, until crisp and golden.",
+    "Whisk the peanut butter, soy sauce, lime juice, maple syrup, chilli and 3 tbsp warm water until smooth.",
+    "Toss the tofu in half the sauce and serve over rice with cucumber and the rest of the sauce."
+   ],
+   "notes": [
+    "Contains peanuts, soy and gluten."
+   ],
+   "nutrition": {
+    "kcal": 500,
+    "proteinG": 21,
+    "carbsG": 62,
+    "fatG": 18,
+    "fibreG": 4,
+    "sodiumMg": 820
+   }
+  },
+  {
+   "id": "air-fryer-stuffed-capsicums-with-beef-and-rice",
+   "title": "Air-Fryer Stuffed Capsicums with Beef and Rice",
+   "summary": "Capsicums filled with beef mince, rice and tomato bake in the air fryer under melted cheese.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 red capsicum, tops cut off and deseeded",
+      "300g beef mince",
+      "1 brown onion, diced",
+      "2 cup cooked rice",
+      "1/2 cup tomato passata",
+      "1 tsp ground cumin",
+      "1 tsp smoked paprika",
+      "1 tsp salt",
+      "1 cup tasty cheese, grated",
+      "1 tbsp olive oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the onion in the oil for 4 minutes, add the mince, cumin, paprika and salt and cook for 6 minutes until browned. Stir in the rice and passata.",
+    "Fill the capsicums, stand them upright in the basket and top with cheese.",
+    "Air-fry at 180°C for 15 minutes, until the capsicums are tender and the cheese is bubbling."
+   ],
+   "notes": [
+    "Food safety: beef mince must reach 75°C in the centre with no pink; eat leftovers within 2 days.",
+    "Contains milk."
+   ],
+   "nutrition": {
+    "kcal": 470,
+    "proteinG": 28,
+    "carbsG": 38,
+    "fatG": 23,
+    "fibreG": 5,
+    "sodiumMg": 820
+   }
+  },
+  {
+   "id": "slow-cooker-beef-and-guinness-style-stew-with-mash",
+   "title": "Slow-Cooker Beef Stew with Dark Ale and Creamy Mash",
+   "summary": "Chuck steak simmers all day in dark ale with carrots and onion until fork-tender, served over mash.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 480,
+   "servings": 6,
+   "onePot": true,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "1kg beef chuck steak, cubed",
+      "2 tbsp plain flour",
+      "2 tbsp olive oil",
+      "2 brown onion, sliced",
+      "3 carrot, sliced",
+      "2 clove garlic, crushed",
+      "1 cup dark ale",
+      "2 cup beef stock",
+      "2 tbsp tomato paste",
+      "2 sprig thyme",
+      "1 tsp salt",
+      "900g potato, peeled and cubed",
+      "40g butter",
+      "1/2 cup milk"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the beef in the flour and brown it in the oil in batches for 6 minutes, until deeply coloured, then tip into the slow cooker.",
+    "Add the onion, carrot, garlic, ale, stock, tomato paste, thyme and salt. Cook on low for 8 hours, until the beef is fork-tender.",
+    "Boil the potatoes for 15 minutes until soft, drain and mash with the butter and milk. Serve the stew over the mash."
+   ],
+   "notes": [
+    "Food safety: braise beef to well above 75°C, until fork-tender; cool leftovers quickly and eat within 3 days.",
+    "Contains gluten and milk."
+   ],
+   "nutrition": {
+    "kcal": 580,
+    "proteinG": 40,
+    "carbsG": 45,
+    "fatG": 25,
+    "fibreG": 5,
+    "sodiumMg": 900
+   }
+  },
+  {
+   "id": "slow-cooker-butter-chicken-with-basmati",
+   "title": "Slow-Cooker Butter Chicken with Basmati",
+   "summary": "Chicken thigh simmers gently in a creamy tomato and spice sauce while you get on with your day.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 300,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "900g chicken thigh, skinless and cubed",
+      "1 brown onion, grated",
+      "3 clove garlic, crushed",
+      "1 tbsp ginger, grated",
+      "3 tbsp garam masala",
+      "1 tsp ground turmeric",
+      "1 can crushed tomatoes",
+      "60g butter",
+      "1 cup cream",
+      "1 tsp salt",
+      "2 cup basmati rice, rinsed",
+      "2 tbsp coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Put the chicken, onion, garlic, ginger, spices, tomatoes, butter and salt into the slow cooker and stir. Cook on low for 5 hours, until the chicken is very tender.",
+    "Stir in the cream and cook for 10 minutes more.",
+    "Cook the rice in 3 cups of boiling water, covered, for 12 minutes until tender, and serve the curry over the top with coriander."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C throughout; cool leftovers within 2 hours and eat within 2 days.",
+    "Contains milk."
+   ],
+   "nutrition": {
+    "kcal": 690,
+    "proteinG": 36,
+    "carbsG": 62,
+    "fatG": 31,
+    "fibreG": 4,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "slow-cooker-pulled-pork-tacos-with-lime-slaw",
+   "title": "Slow-Cooker Pulled Pork Tacos with Lime Slaw",
+   "summary": "Pork shoulder slow-cooks with smoky spices until it shreds, then fills warm tortillas with crunchy lime slaw.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 480,
+   "servings": 8,
+   "onePot": true,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "1.2kg pork shoulder, boneless",
+      "2 tsp smoked paprika",
+      "2 tsp ground cumin",
+      "1 tsp dried oregano",
+      "2 tsp salt",
+      "1 brown onion, sliced",
+      "4 clove garlic, crushed",
+      "1/2 cup orange juice",
+      "2 tbsp lime juice",
+      "16 small tortilla",
+      "2 cup cabbage, shredded",
+      "1/2 cup coriander, chopped",
+      "1 cup sour cream"
+     ]
+    }
+   ],
+   "steps": [
+    "Rub the pork with the paprika, cumin, oregano and salt, then place in the slow cooker with the onion, garlic and orange juice. Cook on low for 8 hours, until it shreds easily.",
+    "Shred the pork with two forks and moisten with some of the cooking juices.",
+    "Toss the cabbage with the lime juice and coriander. Serve the pork in warm tortillas with slaw and sour cream."
+   ],
+   "notes": [
+    "Food safety: pork must reach at least 75°C and be very tender; cool leftovers within 2 hours and eat within 3 days.",
+    "Contains gluten and milk."
+   ],
+   "nutrition": {
+    "kcal": 885,
+    "proteinG": 52,
+    "carbsG": 93,
+    "fatG": 33,
+    "fibreG": 4,
+    "sodiumMg": 840
+   }
+  },
+  {
+   "id": "slow-cooker-chickpea-and-sweet-potato-curry",
+   "title": "Slow-Cooker Chickpea and Sweet Potato Curry",
+   "summary": "A mild, creamy vegan curry that cooks itself, with sweet potato, chickpeas and spinach.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 360,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 sweet potato, cubed",
+      "2 can chickpeas, drained and rinsed",
+      "1 brown onion, diced",
+      "3 clove garlic, crushed",
+      "2 tbsp curry powder",
+      "1 can coconut milk",
+      "1 can diced tomatoes",
+      "1 tsp salt",
+      "150g baby spinach",
+      "2 cup basmati rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Put the sweet potato, chickpeas, onion, garlic, curry powder, coconut milk, tomatoes and salt in the slow cooker. Cook on low for 6 hours, until the sweet potato is soft.",
+    "Stir through the spinach until wilted.",
+    "Cook the rice in boiling water for 12 minutes until tender, drain and serve with the curry."
+   ],
+   "notes": [
+    "Naturally vegan."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 16,
+    "carbsG": 88,
+    "fatG": 16,
+    "fibreG": 13,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "slow-cooker-lamb-shoulder-with-red-wine-and-rosemary",
+   "title": "Slow-Cooker Lamb Shoulder with Red Wine and Rosemary",
+   "summary": "Lamb shoulder braises until the meat falls apart in a rich red wine and rosemary sauce.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 420,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.2kg lamb shoulder, cut into 4 pieces",
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "2 carrot, diced",
+      "4 clove garlic, crushed",
+      "1 cup red wine",
+      "1 can crushed tomatoes",
+      "1 cup beef stock",
+      "3 sprig rosemary",
+      "1 tsp salt",
+      "800g potato, cubed",
+      "30g butter"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the lamb in the oil for 8 minutes, until deeply coloured, and place in the slow cooker.",
+    "Soften the onion, carrot and garlic in the same pan for 5 minutes, add the wine and bubble for 3 minutes, then add to the cooker with the tomatoes, stock, rosemary and salt. Cook on low for 7 hours, until the meat falls apart.",
+    "Boil the potatoes for 15 minutes until tender, mash with the butter and serve under the lamb."
+   ],
+   "notes": [
+    "Food safety: cook lamb until very tender and above 75°C; cool leftovers quickly and eat within 3 days.",
+    "Contains milk."
+   ],
+   "nutrition": {
+    "kcal": 1037,
+    "proteinG": 82,
+    "carbsG": 51,
+    "fatG": 55,
+    "fibreG": 5,
+    "sodiumMg": 1020
+   }
+  },
+  {
+   "id": "slow-cooker-pork-sausage-and-cannellini-cassoulet-style-pot",
+   "title": "Slow-Cooker Cannellini Cassoulet-Style Pork Sausage Pot",
+   "summary": "Pork sausages, cannellini beans and tomato simmer into a thick, hearty casserole.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 360,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 pork sausage, browned",
+      "2 can cannellini beans, drained and rinsed",
+      "1 can crushed tomatoes",
+      "1 brown onion, diced",
+      "2 carrot, diced",
+      "3 clove garlic, crushed",
+      "1 cup chicken stock",
+      "1 tsp smoked paprika",
+      "2 sprig thyme",
+      "1 tsp salt",
+      "2 tbsp parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the sausages in a pan for 6 minutes, then slice them into thick pieces.",
+    "Put them in the slow cooker with the beans, tomatoes, onion, carrot, garlic, stock, paprika, thyme and salt. Cook on low for 6 hours, until the vegetables are soft.",
+    "Scatter with parsley and serve with crusty bread."
+   ],
+   "notes": [
+    "Food safety: pork sausages must reach 75°C in the centre with no pink; cool leftovers within 2 hours and eat within 3 days.",
+    "Contains gluten."
+   ],
+   "nutrition": {
+    "kcal": 134,
+    "proteinG": 7,
+    "carbsG": 10,
+    "fatG": 7,
+    "fibreG": 3,
+    "sodiumMg": 1380
+   }
+  },
+  {
+   "id": "date-night-pan-seared-steak-with-garlic-butter-and-asparagus",
+   "title": "Date Night Pan-Seared Steak with Garlic Butter and Asparagus",
+   "summary": "Two sirloin steaks seared hard and finished with garlic butter, with crisp asparagus on the side.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 sirloin steak",
+      "1 tbsp olive oil",
+      "40g butter",
+      "3 clove garlic, crushed",
+      "2 sprig thyme",
+      "1 bunch asparagus, trimmed",
+      "1/2 tsp salt",
+      "1/2 tsp black pepper",
+      "1 lemon, cut into wedges"
+     ]
+    }
+   ],
+   "steps": [
+    "Season the steaks and sear in the oil in a very hot pan for 3 to 4 minutes a side for medium, then add half the butter, garlic and thyme and baste for 1 minute. Rest for 5 minutes.",
+    "Cook the asparagus in the remaining butter for 4 minutes, until bright green and just tender.",
+    "Slice the steak, spoon over the pan butter and serve with asparagus and lemon."
+   ],
+   "notes": [
+    "Food safety: whole cuts of steak can be served medium (63°C) but rest the meat; use a clean plate for cooked steak.",
+    "Contains milk."
+   ],
+   "nutrition": {
+    "kcal": 610,
+    "proteinG": 52,
+    "carbsG": 6,
+    "fatG": 42,
+    "fibreG": 3,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "date-night-creamy-garlic-prawn-linguine",
+   "title": "Date Night Creamy Garlic Prawn Linguine",
+   "summary": "Plump prawns in a lemony garlic cream sauce over linguine, ready in 25 minutes for two.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "pescatarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "200g linguine",
+      "250g prawn, peeled and deveined",
+      "2 tbsp olive oil",
+      "3 clove garlic, crushed",
+      "1/2 cup white wine",
+      "1/2 cup cream",
+      "1 lemon, zested and juiced",
+      "1/4 tsp chilli flakes",
+      "1/2 tsp salt",
+      "2 tbsp parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the linguine in salted water for 10 minutes, until al dente, and reserve a cup of the water.",
+    "Cook the garlic and chilli in the oil for 1 minute, add the prawns and cook for 2 minutes until pink, then add the wine and simmer for 2 minutes.",
+    "Stir in the cream, lemon zest and juice, toss through the pasta with a splash of pasta water and finish with parsley."
+   ],
+   "notes": [
+    "Food safety: cook prawns until pink and opaque all the way through; eat leftovers within 1 day.",
+    "Contains gluten, crustacean shellfish and milk."
+   ],
+   "nutrition": {
+    "kcal": 760,
+    "proteinG": 38,
+    "carbsG": 82,
+    "fatG": 30,
+    "fibreG": 4,
+    "sodiumMg": 820
+   }
+  },
+  {
+   "id": "date-night-mushroom-and-thyme-risotto-for-two",
+   "title": "Date Night Mushroom and Thyme Risotto for Two",
+   "summary": "A creamy mushroom risotto finished with parmesan and a little butter, made in one pan.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 2,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 tbsp olive oil",
+      "20g butter",
+      "1 small brown onion, finely diced",
+      "250g mushroom, sliced",
+      "1 clove garlic, crushed",
+      "3/4 cup arborio rice",
+      "1/4 cup white wine",
+      "3 cup vegetable stock, hot",
+      "1 tsp thyme leaves",
+      "30g vegetarian hard cheese, grated",
+      "1/4 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the mushrooms in the oil in a wide pan for 6 minutes until golden, then set aside.",
+    "Soften the onion and garlic in the butter for 4 minutes, add the rice and stir for 1 minute, then add the wine until absorbed.",
+    "Add the stock a ladle at a time, stirring, for 20 minutes until the rice is creamy and tender. Fold in the mushrooms, thyme, parmesan and salt."
+   ],
+   "notes": [
+    "Contains milk."
+   ],
+   "nutrition": {
+    "kcal": 590,
+    "proteinG": 17,
+    "carbsG": 84,
+    "fatG": 20,
+    "fibreG": 4,
+    "sodiumMg": 950
+   }
+  },
+  {
+   "id": "date-night-pan-roasted-chicken-breast-with-white-wine-sauce",
+   "title": "Date Night Pan-Roasted Chicken Breast with White Wine Sauce",
+   "summary": "Golden chicken breasts finished in a quick white wine and mustard sauce with green beans.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 chicken breast",
+      "1 tbsp olive oil",
+      "20g butter",
+      "1 small brown onion, finely diced",
+      "1/3 cup white wine",
+      "1/2 cup chicken stock",
+      "1 tbsp Dijon mustard",
+      "1/3 cup cream",
+      "200g green beans, trimmed",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Season the chicken and sear in the oil for 5 minutes a side until golden, then roast in a 200°C oven for 8 minutes until cooked through. Rest for 3 minutes.",
+    "Soften the onion in the butter for 3 minutes, add the wine and stock and reduce for 5 minutes, then stir in the mustard and cream.",
+    "Steam the beans for 5 minutes until tender, slice the chicken and serve with the sauce."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part with no pink; eat leftovers within 2 days.",
+    "Contains milk and mustard."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 52,
+    "carbsG": 12,
+    "fatG": 31,
+    "fibreG": 3,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "cooking-for-one-single-serve-chicken-fried-rice",
+   "title": "Cooking for One: Single-Serve Chicken Fried Rice",
+   "summary": "A quick fried rice for one, using leftover cooked rice, a small chicken thigh and frozen veg.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 1,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 chicken thigh, skinless and diced",
+      "1 tbsp vegetable oil",
+      "1 egg, beaten",
+      "1 cup cooked rice, cold",
+      "1/3 cup frozen peas",
+      "1 spring onion, sliced",
+      "1 clove garlic, crushed",
+      "1 tbsp soy sauce",
+      "1 tsp sesame oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Stir-fry the chicken in half the oil for 4 minutes until cooked through, then push aside.",
+    "Scramble the egg in the remaining oil for 1 minute until set, add the garlic, rice and vegetables and fry for 3 minutes until piping hot.",
+    "Season with soy sauce and sesame oil and top with spring onion."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C with no pink and the egg must be set; use rice that was cooled and refrigerated within 1 hour of cooking, and eat leftovers within 1 day.",
+    "Contains egg, soy and sesame."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 35,
+    "carbsG": 58,
+    "fatG": 21,
+    "fibreG": 4,
+    "sodiumMg": 1040
+   }
+  },
+  {
+   "id": "cooking-for-one-garlic-butter-gnocchi-with-spinach",
+   "title": "Cooking for One: Garlic Butter Gnocchi with Spinach",
+   "summary": "Pan-fried gnocchi tossed with garlic, spinach and parmesan in a single frying pan.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 10,
+   "servings": 1,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "200g potato gnocchi",
+      "1 tbsp olive oil",
+      "20g butter",
+      "2 clove garlic, crushed",
+      "60g baby spinach",
+      "20g vegetarian hard cheese, grated",
+      "1/4 tsp black pepper"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the gnocchi in the oil for 5 to 6 minutes, until golden and crisp on the outside.",
+    "Add the butter and garlic and cook for 1 minute, then toss through the spinach until wilted.",
+    "Season with pepper and finish with parmesan."
+   ],
+   "notes": [
+    "Contains gluten and milk."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 16,
+    "carbsG": 66,
+    "fatG": 26,
+    "fibreG": 4,
+    "sodiumMg": 860
+   }
+  },
+  {
+   "id": "cooking-for-one-teriyaki-salmon-rice-bowl",
+   "title": "Cooking for One: Teriyaki Salmon Rice Bowl",
+   "summary": "One salmon fillet glazed in teriyaki, served over rice with cucumber and edamame.",
+   "cuisine": "japanese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 1,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 salmon fillet",
+      "1 tsp vegetable oil",
+      "1 tbsp soy sauce",
+      "1 tbsp mirin",
+      "1 tsp honey",
+      "1 cup cooked rice",
+      "1/3 cup edamame, shelled",
+      "1/2 cucumber, sliced",
+      "1 tsp sesame seeds"
+     ]
+    }
+   ],
+   "steps": [
+    "Pan-fry the salmon in the oil for 3 minutes a side, until golden and just cooked through.",
+    "Pour in the soy sauce, mirin and honey and simmer for 1 minute until sticky.",
+    "Serve over the rice with edamame and cucumber, topped with sesame seeds."
+   ],
+   "notes": [
+    "Food safety: cook salmon until opaque and flaking, at least 63°C; eat leftovers cold within 1 day.",
+    "Contains fish, soy and sesame."
+   ],
+   "nutrition": {
+    "kcal": 610,
+    "proteinG": 38,
+    "carbsG": 70,
+    "fatG": 19,
+    "fibreG": 5,
+    "sodiumMg": 1020
+   }
+  },
+  {
+   "id": "cooking-for-one-one-pan-egg-and-tomato-shakshuka",
+   "title": "Cooking for One: One-Pan Egg and Tomato Shakshuka",
+   "summary": "Two eggs poached in a spiced tomato and capsicum sauce, scooped up with toasted bread.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 15,
+   "servings": 1,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 tbsp olive oil",
+      "1/2 small brown onion, diced",
+      "1/2 red capsicum, diced",
+      "1 clove garlic, crushed",
+      "1/2 tsp ground cumin",
+      "1/2 tsp smoked paprika",
+      "200g canned diced tomatoes",
+      "2 egg",
+      "2 slice sourdough, toasted",
+      "1 tbsp parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Soften the onion and capsicum in the oil for 5 minutes, add the garlic and spices for 1 minute, then add the tomatoes and simmer for 6 minutes until thick.",
+    "Make two wells, crack in the eggs, cover and cook for 5 minutes, until the whites are set and the yolks are as firm as you like.",
+    "Scatter with parsley and serve with the toast once the eggs are set."
+   ],
+   "notes": [
+    "Food safety: cook eggs until the whites are completely set, and eat the dish the same day.",
+    "Contains egg and gluten."
+   ],
+   "nutrition": {
+    "kcal": 500,
+    "proteinG": 22,
+    "carbsG": 52,
+    "fatG": 22,
+    "fibreG": 8,
+    "sodiumMg": 880
+   }
+  },
+  {
+   "id": "cooking-for-one-beef-and-broccoli-stir-fry",
+   "title": "Cooking for One: Beef and Broccoli Stir-Fry",
+   "summary": "Thin beef strips and broccoli in a glossy garlic soy sauce, ready in 15 minutes.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 8,
+   "servings": 1,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "150g beef rump, thinly sliced",
+      "1 tsp cornflour",
+      "1 tbsp vegetable oil",
+      "1 cup broccoli florets",
+      "1 clove garlic, crushed",
+      "1 tsp ginger, grated",
+      "1 tbsp soy sauce",
+      "1 tbsp oyster sauce",
+      "1/4 cup water",
+      "1 cup cooked rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the beef with the cornflour. Stir-fry in half the oil over high heat for 2 minutes until browned, then remove.",
+    "Stir-fry the broccoli, garlic and ginger in the remaining oil for 3 minutes, add the soy sauce, oyster sauce and water and simmer for 2 minutes until glossy.",
+    "Return the beef to heat through and serve over rice."
+   ],
+   "notes": [
+    "Food safety: beef strips must be cooked through to 71°C with no pink; eat leftovers within 2 days.",
+    "Contains soy and gluten."
+   ],
+   "nutrition": {
+    "kcal": 590,
+    "proteinG": 38,
+    "carbsG": 62,
+    "fatG": 21,
+    "fibreG": 4,
+    "sodiumMg": 1180
+   }
+  },
+  {
+   "id": "cooking-for-one-creamy-tomato-and-white-bean-pasta",
+   "title": "Cooking for One: Creamy Tomato and White Bean Pasta",
+   "summary": "A quick vegetarian pasta with white beans, tomato and a spoonful of cream cheese for richness.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 15,
+   "servings": 1,
+   "onePot": true,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "80g penne",
+      "1 tbsp olive oil",
+      "1 clove garlic, crushed",
+      "200g canned diced tomatoes",
+      "1/2 can cannellini beans, drained and rinsed",
+      "1 tbsp cream cheese",
+      "1/4 tsp salt",
+      "a few basil leaves"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the penne in salted water for 10 minutes until al dente and drain.",
+    "Cook the garlic in the oil for 1 minute, add the tomatoes and beans and simmer for 6 minutes until thickened.",
+    "Stir in the cream cheese and salt until melted, toss through the pasta and top with basil."
+   ],
+   "notes": [
+    "Contains gluten and milk."
+   ],
+   "nutrition": {
+    "kcal": 620,
+    "proteinG": 22,
+    "carbsG": 92,
+    "fatG": 19,
+    "fibreG": 12,
+    "sodiumMg": 820
+   }
+  }
+ ]
+}

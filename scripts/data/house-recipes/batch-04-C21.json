@@ -1,0 +1,1231 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "roomali-roti-handkerchief-flatbread",
+      "title": "Roomali Roti Handkerchief Flatbread",
+      "summary": "Paper-thin, soft flatbreads stretched wide and cooked on an upturned pan, folded like a handkerchief.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 25,
+      "cookMinutes": 12,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g plain flour",
+            "100g wholemeal flour",
+            "1 tsp salt",
+            "1 tbsp vegetable oil",
+            "200ml warm water",
+            "2 tbsp plain flour, extra for dusting"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flours, salt, oil and water to a soft dough and knead for 8 minutes, until smooth and stretchy.",
+        "Cover and rest for 30 minutes, then divide into 8 balls.",
+        "Roll each ball as thin as you can and stretch gently over your knuckles until it is almost see-through.",
+        "Heat a wok or heavy pan upturned over high heat until very hot.",
+        "Cook each roti for 30 seconds each side, until pale with light brown freckles, then fold in quarters."
+      ],
+      "notes": [
+        "Resting time is not included in prep. Keep the cooked rotis wrapped in a clean cloth so they stay soft. Best eaten the same day."
+      ],
+      "nutrition": {
+        "kcal": 156,
+        "proteinG": 5,
+        "carbsG": 28,
+        "fatG": 2,
+        "fibreG": 3,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "palak-thepla-spinach-flatbread",
+      "title": "Palak Thepla Spinach Flatbread",
+      "summary": "Soft Gujarati flatbreads flecked with spinach and spice, a travel-friendly breakfast with yoghurt or pickle.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g wholemeal flour",
+            "100g baby spinach, finely chopped",
+            "2 tbsp plain yoghurt",
+            "2 tbsp vegetable oil",
+            "1 tsp ground cumin",
+            "1/2 tsp ground turmeric",
+            "1 tsp chilli powder",
+            "1 tsp salt",
+            "2 tbsp warm water"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour, spinach, yoghurt, 1 tablespoon of oil, spices and salt in a bowl.",
+        "Add the water and knead for 5 minutes into a soft, slightly sticky dough.",
+        "Rest for 15 minutes, then divide into 8 balls and roll each into a thin 14cm round.",
+        "Cook on a hot dry frying pan for 1 minute, until blistered, then flip and brush with oil.",
+        "Cook until golden brown spots appear on both sides, about 1 minute more."
+      ],
+      "notes": [
+        "Resting time is not included in prep. Keeps 2 days wrapped; reheat in a dry pan."
+      ],
+      "nutrition": {
+        "kcal": 169,
+        "proteinG": 5,
+        "carbsG": 24,
+        "fatG": 5,
+        "fibreG": 4,
+        "sodiumMg": 350
+      }
+    },
+    {
+      "id": "bhatura-puffed-fried-bread",
+      "title": "Bhatura Puffed Fried Bread",
+      "summary": "Puffed, tender fried breads, served with chana masala for a classic north Indian brunch.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 15,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g plain flour",
+            "100g plain yoghurt",
+            "1 tsp baking powder",
+            "1 tsp sugar",
+            "1 tsp salt",
+            "2 tbsp vegetable oil",
+            "100ml warm water",
+            "600ml vegetable oil for frying"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour, baking powder, sugar and salt, then rub in 2 tablespoons of oil.",
+        "Add the yoghurt and enough water to make a soft dough, then knead for 5 minutes until smooth.",
+        "Cover and rest for 1 hour, then divide into 6 balls and roll each into a 15cm oval.",
+        "Heat the frying oil to 180C and slide in one bread at a time.",
+        "Press gently so it puffs, then fry about 40 seconds each side, until golden, and drain on paper towel."
+      ],
+      "notes": [
+        "Resting time is not included in prep. Fry in a deep, stable pot, keep children away and never leave hot oil unattended. Serve straight away while puffed."
+      ],
+      "nutrition": {
+        "kcal": 377,
+        "proteinG": 7,
+        "carbsG": 48,
+        "fatG": 17,
+        "fibreG": 2,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "afghan-bolani-leek-and-potato-flatbread",
+      "title": "Afghan Bolani Leek and Potato Flatbread",
+      "summary": "Thin pan-fried flatbread stuffed with spiced potato and leek, served with yoghurt and mint.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g plain flour",
+            "1/2 tsp salt",
+            "150ml warm water",
+            "3 tbsp vegetable oil",
+            "2 potatoes, boiled and mashed",
+            "2 leeks, finely sliced",
+            "1/2 tsp ground coriander",
+            "1/2 tsp chilli flakes",
+            "1/2 tsp salt",
+            "150g plain yoghurt"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour, salt and water to a firm dough, knead for 5 minutes and rest for 30 minutes.",
+        "Cook the leek in 1 tablespoon of oil for 5 minutes, until soft, then mix with the potato, coriander, chilli and salt.",
+        "Divide the dough into 6 balls, roll thin and spread the filling over half of each round.",
+        "Fold over to a half moon and press the edges closed.",
+        "Cook in a frying pan with a little oil for 3 minutes each side, until golden and crisp, then serve with yoghurt."
+      ],
+      "notes": [
+        "Resting time is not included in prep. Best eaten fresh."
+      ],
+      "nutrition": {
+        "kcal": 347,
+        "proteinG": 8,
+        "carbsG": 52,
+        "fatG": 11,
+        "fibreG": 4,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "piadina-romagnola-flatbread",
+      "title": "Piadina Romagnola Flatbread",
+      "summary": "A soft, thin Italian flatbread cooked on a hot pan and folded around cheese and greens.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 10,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g plain flour",
+            "1 tsp salt",
+            "1 tsp baking powder",
+            "80ml olive oil",
+            "180ml warm milk",
+            "100g rocket",
+            "150g mozzarella, sliced",
+            "6 slices vine-ripened tomato"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour, salt and baking powder, then stir in the oil and enough milk to form a soft dough.",
+        "Knead for 3 minutes, rest for 30 minutes and divide into 6 balls.",
+        "Roll each into a thin 20cm round and prick all over with a fork.",
+        "Cook in a hot dry pan for 2 minutes each side, until golden with brown spots.",
+        "Fill with rocket, mozzarella and tomato and fold in half to serve."
+      ],
+      "notes": [
+        "Resting time is not included in prep. Contains dairy and gluten."
+      ],
+      "nutrition": {
+        "kcal": 456,
+        "proteinG": 12,
+        "carbsG": 60,
+        "fatG": 18,
+        "fibreG": 3,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "focaccia-barese-with-potato-and-tomato",
+      "title": "Focaccia Barese with Potato and Tomato",
+      "summary": "A soft, olive-oily Pugliese focaccia topped with cherry tomatoes and olives, made with mashed potato for tenderness.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 30,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g plain flour",
+            "150g potato, boiled and mashed",
+            "7g dried yeast",
+            "1 tsp sugar",
+            "1 tsp salt",
+            "250ml warm water",
+            "4 tbsp olive oil",
+            "200g cherry tomatoes, halved",
+            "60g black olives, pitted",
+            "1 tsp dried oregano"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the yeast, sugar and water and stand for 5 minutes until foamy.",
+        "Combine with the flour, potato, salt and 1 tablespoon of oil and knead for 8 minutes, until smooth.",
+        "Cover and rise for 1 hour, then press into an oiled 25 by 35cm tin.",
+        "Dimple the dough with your fingers, scatter with the tomato, olives and oregano, drizzle with the remaining oil and rise for 30 minutes.",
+        "Bake at 220C for 30 minutes, until deep golden."
+      ],
+      "notes": [
+        "Rising time is not included in prep. Keeps 2 days; refresh in a hot oven."
+      ],
+      "nutrition": {
+        "kcal": 262,
+        "proteinG": 6,
+        "carbsG": 40,
+        "fatG": 8,
+        "fibreG": 3,
+        "sodiumMg": 420
+      }
+    },
+    {
+      "id": "norwegian-lefse-potato-flatbread",
+      "title": "Norwegian Lefse Potato Flatbread",
+      "summary": "Tender potato flatbreads rolled thin and griddled, spread with butter and sugar or served with smoked salmon.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 30,
+      "cookMinutes": 15,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g potato, peeled and boiled",
+            "60g butter",
+            "2 tbsp cream",
+            "1 tsp salt",
+            "150g plain flour",
+            "2 tbsp sugar"
+          ]
+        }
+      ],
+      "steps": [
+        "Mash the potato until completely smooth with the butter, cream and salt, then cool completely.",
+        "Work in the flour to form a soft dough and divide into 8 pieces.",
+        "Roll each very thin on a floured surface into a 20cm round.",
+        "Cook on a dry hot pan for 1 minute each side, until pale with light brown spots.",
+        "Cool under a damp cloth, spread with butter and sugar and fold."
+      ],
+      "notes": [
+        "Keeps 3 days in the fridge wrapped in a damp cloth, and freezes well."
+      ],
+      "nutrition": {
+        "kcal": 255,
+        "proteinG": 4,
+        "carbsG": 38,
+        "fatG": 9,
+        "fibreG": 3,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "chinese-shaobing-sesame-flatbread",
+      "title": "Chinese Shaobing Sesame Flatbread",
+      "summary": "Flaky, layered sesame breads baked until crisp, a northern Chinese breakfast beside soy milk.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 30,
+      "cookMinutes": 20,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g plain flour",
+            "1 tsp salt",
+            "1 tsp sugar",
+            "3g dried yeast",
+            "180ml warm water",
+            "3 tbsp vegetable oil",
+            "2 tbsp plain flour",
+            "2 tbsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour, salt, sugar, yeast and water and knead for 8 minutes until smooth, then rise for 1 hour.",
+        "Mix 2 tablespoons of oil with the extra flour to make a paste.",
+        "Roll the dough thin, spread with the paste, roll up like a log and cut into 8 pieces.",
+        "Flatten each into a 8cm disc, brush with water and press into the sesame seeds.",
+        "Bake at 220C for 18 minutes, until puffed and golden."
+      ],
+      "notes": [
+        "Rising time is not included in prep. Best eaten warm."
+      ],
+      "nutrition": {
+        "kcal": 193,
+        "proteinG": 5,
+        "carbsG": 31,
+        "fatG": 5,
+        "fibreG": 2,
+        "sodiumMg": 280
+      }
+    },
+    {
+      "id": "indonesian-roti-cane-griddled-bread",
+      "title": "Indonesian Roti Cane Griddled Bread",
+      "summary": "Stretchy, flaky griddled breads served with curry sauce or sweetened condensed milk.",
+      "cuisine": "indonesian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 15,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g plain flour",
+            "1 tsp salt",
+            "1 egg",
+            "150ml warm water",
+            "4 tbsp vegetable oil",
+            "2 tbsp condensed milk"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour, salt, egg, water and 1 tablespoon of oil to a soft dough, knead for 5 minutes and rest for 1 hour.",
+        "Divide into 6 balls and soak in the remaining oil for 20 minutes.",
+        "Stretch each ball by hand over an oiled surface until paper thin.",
+        "Fold into a square and fry on a hot oiled pan for 3 minutes each side, until golden and crisp.",
+        "Drizzle with condensed milk or serve with curry."
+      ],
+      "notes": [
+        "Resting time is not included in prep. Food safety: cook until the egg in the dough is fully set; the bread should be golden throughout."
+      ],
+      "nutrition": {
+        "kcal": 317,
+        "proteinG": 8,
+        "carbsG": 41,
+        "fatG": 13,
+        "fibreG": 2,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "gazpacho-verde-green-cucumber-and-herb-gazpacho",
+      "title": "Gazpacho Verde Green Cucumber and Herb Gazpacho",
+      "summary": "A cold green soup of cucumber, capsicum, herbs and a little bread, brighter and fresher than the red version.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 Lebanese cucumbers, chopped",
+            "1 green capsicum, chopped",
+            "1 slice day-old bread",
+            "1 garlic clove",
+            "1 small bunch coriander",
+            "1 small bunch flat-leaf parsley",
+            "3 tbsp olive oil",
+            "2 tbsp white wine vinegar",
+            "1 avocado",
+            "250ml cold water",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend all the ingredients until completely smooth.",
+        "Strain if you prefer a finer soup.",
+        "Taste and adjust the salt and vinegar.",
+        "Chill for 2 hours until very cold.",
+        "Serve in glasses or bowls with a drizzle of oil."
+      ],
+      "notes": [
+        "Chilling time is not included in prep. Keeps 2 days in the fridge; stir before serving."
+      ],
+      "nutrition": {
+        "kcal": 216,
+        "proteinG": 3,
+        "carbsG": 17,
+        "fatG": 14,
+        "fibreG": 5,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "salmorejo-cordobes-thick-chilled-tomato-soup",
+      "title": "Salmorejo Cordobes Thick Chilled Tomato Soup",
+      "summary": "A thick, creamy tomato and bread soup from Cordoba, finished with chopped egg and olive oil.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1kg ripe tomatoes, chopped",
+            "200g day-old white bread",
+            "1 garlic clove",
+            "100ml olive oil",
+            "2 tbsp sherry vinegar",
+            "1 tsp salt",
+            "2 boiled eggs, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the tomatoes, bread and garlic until a thick puree forms.",
+        "Add the oil in a slow stream with the blender running until pale and creamy.",
+        "Blend in the vinegar and salt.",
+        "Chill for 2 hours until cold.",
+        "Serve topped with the chopped egg and a drizzle of oil."
+      ],
+      "notes": [
+        "Chilling time is not included in prep. Food safety: boil the eggs for 10 minutes until the yolks are firm and keep the soup cold; eat within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 388,
+        "proteinG": 9,
+        "carbsG": 36,
+        "fatG": 22,
+        "fibreG": 5,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "chlodnik-polish-cold-beetroot-and-buttermilk-soup",
+      "title": "Chlodnik Polish Cold Beetroot and Buttermilk Soup",
+      "summary": "A hot pink chilled soup of beetroot, buttermilk, cucumber and dill, served with a halved boiled egg.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g beetroot, peeled and grated",
+            "500ml buttermilk",
+            "250ml water",
+            "1 Lebanese cucumber, diced",
+            "4 radishes, sliced",
+            "1 small bunch dill, chopped",
+            "3 spring onions, sliced",
+            "1 tbsp lemon juice",
+            "1 tsp salt",
+            "2 boiled eggs"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the beetroot in the water for 15 minutes, until tender, then cool completely.",
+        "Stir in the buttermilk, lemon juice and salt.",
+        "Fold through the cucumber, radish, dill and spring onion.",
+        "Chill for 2 hours until very cold.",
+        "Serve topped with halves of boiled egg."
+      ],
+      "notes": [
+        "Chilling time is not included in prep. Food safety: boil the eggs for 10 minutes until the yolks are firm and keep the soup cold; eat within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 156,
+        "proteinG": 10,
+        "carbsG": 18,
+        "fatG": 4,
+        "fibreG": 4,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "korean-oi-naengguk-chilled-cucumber-soup",
+      "title": "Korean Oi Naengguk Chilled Cucumber Soup",
+      "summary": "A sour, savoury cold soup of cucumber in vinegar broth, refreshing beside spicy food and hot rice.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 Lebanese cucumbers, cut in thin strips",
+            "4 spring onions, sliced",
+            "1 litre cold water",
+            "3 tbsp rice vinegar",
+            "1 tbsp soy sauce",
+            "1 tbsp sugar",
+            "1 tsp salt",
+            "1 tsp sesame oil",
+            "1 tsp sesame seeds",
+            "1 garlic clove, crushed"
+          ]
+        }
+      ],
+      "steps": [
+        "Stir the water, vinegar, soy sauce, sugar, salt and garlic until the sugar dissolves.",
+        "Add the cucumber and spring onion.",
+        "Chill for 30 minutes until very cold.",
+        "Taste and adjust with extra vinegar or sugar.",
+        "Serve in bowls with the sesame oil and seeds."
+      ],
+      "notes": [
+        "Chilling time is not included in prep. Add a few ice cubes to serve. Keep cold and eat within a day."
+      ],
+      "nutrition": {
+        "kcal": 78,
+        "proteinG": 2,
+        "carbsG": 12,
+        "fatG": 2,
+        "fibreG": 2,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "hiyashi-chuka-cold-ramen-salad",
+      "title": "Hiyashi Chuka Cold Ramen Salad",
+      "summary": "Cold noodles under rows of egg, cucumber, tomato and ham with a sweet-sour soy dressing, a Japanese summer lunch.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 5,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g fresh ramen noodles",
+            "3 eggs",
+            "1 tsp vegetable oil",
+            "2 Lebanese cucumbers, cut in thin strips",
+            "2 tomatoes, cut in wedges",
+            "100g sliced cooked ham, cut in strips",
+            "4 tbsp soy sauce",
+            "4 tbsp rice vinegar",
+            "2 tbsp sugar",
+            "1 tbsp sesame oil",
+            "100ml cold water"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the eggs and cook in a thin layer in the oiled pan for 1 minute each side, until fully set, then cut in strips.",
+        "Boil the noodles for 3 minutes, drain, rinse under cold water until cold and drain well.",
+        "Stir the soy sauce, vinegar, sugar, sesame oil and water until the sugar dissolves.",
+        "Divide the noodles between 4 plates.",
+        "Arrange the egg, cucumber, tomato and ham on top and pour over the dressing."
+      ],
+      "notes": [
+        "Food safety: cook the egg until completely set and keep the ham refrigerated until serving. Eat within a few hours of making."
+      ],
+      "nutrition": {
+        "kcal": 428,
+        "proteinG": 18,
+        "carbsG": 60,
+        "fatG": 12,
+        "fibreG": 4,
+        "sodiumMg": 1450
+      }
+    },
+    {
+      "id": "chilled-avocado-and-lime-soup",
+      "title": "Chilled Avocado and Lime Soup",
+      "summary": "A silky no-cook soup of avocado, cucumber and lime, finished with coriander and chilli.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 ripe avocados",
+            "2 Lebanese cucumbers, chopped",
+            "300ml cold vegetable stock",
+            "150g plain yoghurt",
+            "3 tbsp lime juice",
+            "1 small bunch coriander",
+            "1 green chilli",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the avocado, cucumber, stock, yoghurt, lime juice, coriander and chilli until completely smooth.",
+        "Season with the salt and blend again briefly.",
+        "Chill for 1 hour until very cold.",
+        "Taste and add more lime if needed.",
+        "Serve in chilled bowls with extra coriander."
+      ],
+      "notes": [
+        "Chilling time is not included in prep. Avocado browns quickly, so serve within a day."
+      ],
+      "nutrition": {
+        "kcal": 163,
+        "proteinG": 3,
+        "carbsG": 8,
+        "fatG": 12,
+        "fibreG": 5,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "chilled-watermelon-lime-and-mint-soup",
+      "title": "Chilled Watermelon, Lime and Mint Soup",
+      "summary": "A lightly sweet chilled watermelon soup with lime, mint and a little chilli.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1kg seedless watermelon, chopped",
+            "3 tbsp lime juice",
+            "1 small bunch mint",
+            "100g plain yoghurt",
+            "1/2 tsp chilli flakes",
+            "1 tbsp honey",
+            "pinch of salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the rockmelon, lime juice, half the mint, yoghurt and honey until completely smooth.",
+        "Season with the salt and blend again briefly.",
+        "Chill for 1 hour until very cold.",
+        "Taste and adjust the lime.",
+        "Serve garnished with the remaining mint and the chilli."
+      ],
+      "notes": [
+        "Chilling time is not included in prep. Serve within a day."
+      ],
+      "nutrition": {
+        "kcal": 78,
+        "proteinG": 1,
+        "carbsG": 18,
+        "fatG": 0,
+        "fibreG": 1,
+        "sodiumMg": 100
+      }
+    },
+    {
+      "id": "chilled-sweet-corn-soup-with-lime",
+      "title": "Chilled Sweet Corn Soup with Lime",
+      "summary": "A sweet, creamy cold corn soup with a little heat, served with lime and coriander.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 corn cobs, kernels cut off",
+            "1 brown onion, chopped",
+            "1 tbsp olive oil",
+            "600ml vegetable stock",
+            "1 green chilli",
+            "3 tbsp lime juice",
+            "1 small bunch coriander",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion in the oil for 5 minutes, until soft.",
+        "Add the corn, chilli and stock and simmer for 10 minutes, until the corn is tender.",
+        "Blend until completely smooth and strain for a silky texture.",
+        "Stir in the lime juice and salt, then chill for 2 hours until cold.",
+        "Serve topped with chopped coriander."
+      ],
+      "notes": [
+        "Chilling time is not included in prep. Keeps 2 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 66,
+        "proteinG": 2,
+        "carbsG": 10,
+        "fatG": 2,
+        "fibreG": 2,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "vichyssoise-classic-chilled-leek-and-potato-soup",
+      "title": "Vichyssoise Classic Chilled Leek and Potato Soup",
+      "summary": "Velvety cold leek and potato soup with cream, the French summer classic with chives.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 leeks, white part only, sliced",
+            "500g potato, peeled and cubed",
+            "30g butter",
+            "1 litre vegetable stock",
+            "150ml cream",
+            "1 tsp salt",
+            "1 small bunch chives, snipped"
+          ]
+        }
+      ],
+      "steps": [
+        "Melt the butter and cook the leek for 8 minutes, until soft but not coloured.",
+        "Add the potato and stock and simmer for 15 minutes, until the potato is very soft.",
+        "Blend until completely smooth and stir in the cream and salt.",
+        "Chill for 3 hours until cold.",
+        "Serve cold, scattered with chives."
+      ],
+      "notes": [
+        "Chilling time is not included in prep. Contains dairy. Keeps 2 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 242,
+        "proteinG": 4,
+        "carbsG": 28,
+        "fatG": 12,
+        "fibreG": 3,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "chilled-tomato-and-watermelon-soup",
+      "title": "Chilled Tomato and Watermelon Soup",
+      "summary": "Ripe tomato and sweet watermelon blended with basil and a splash of vinegar, perfect for hot days.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g ripe tomatoes, chopped",
+            "500g seedless watermelon, chopped",
+            "1 small bunch basil",
+            "2 tbsp olive oil",
+            "1 tbsp red wine vinegar",
+            "1 small garlic clove",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the tomato, watermelon, half the basil, garlic and vinegar until smooth.",
+        "Blend in the oil and salt.",
+        "Strain for a smooth texture if you prefer.",
+        "Chill for 2 hours until icy cold.",
+        "Serve with torn basil and a drizzle of oil."
+      ],
+      "notes": [
+        "Chilling time is not included in prep. Serve within a day."
+      ],
+      "nutrition": {
+        "kcal": 145,
+        "proteinG": 2,
+        "carbsG": 17,
+        "fatG": 7,
+        "fibreG": 3,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "warm-bulgur-salad-with-roasted-vegetables",
+      "title": "Warm Bulgur Salad with Roasted Vegetables",
+      "summary": "Chewy farro with roasted zucchini, capsicum and red onion, finished with balsamic and parsley while still warm.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g bulgur",
+            "2 zucchini, cut in chunks",
+            "1 red capsicum, chopped",
+            "1 red onion, cut in wedges",
+            "3 tbsp olive oil",
+            "2 tbsp balsamic vinegar",
+            "1 small bunch flat-leaf parsley",
+            "1/2 tsp salt",
+            "50g vegetarian hard cheese, shaved"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the bulgur in boiling water for 12 minutes, until tender but chewy, then drain.",
+        "Roast the zucchini, capsicum and onion with 1 tablespoon of oil at 220C for 25 minutes, until golden at the edges.",
+        "Whisk the remaining oil, balsamic and salt.",
+        "Toss the warm bulgur with the roast vegetables and dressing until evenly coated.",
+        "Top with parsley and the vegetarian hard cheese."
+      ],
+      "notes": [
+        "Vegetarian hard cheese is used so it suits vegetarians. Keeps 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 362,
+        "proteinG": 11,
+        "carbsG": 48,
+        "fatG": 12,
+        "fibreG": 9,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "warm-chickpea-and-spinach-salad-with-cumin",
+      "title": "Warm Chickpea and Spinach Salad with Cumin",
+      "summary": "Chickpeas sizzled with cumin and garlic, tossed through spinach with lemon and yoghurt.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cans chickpeas, drained and rinsed",
+            "2 tbsp olive oil",
+            "1 tsp ground cumin",
+            "2 garlic cloves, sliced",
+            "150g baby spinach",
+            "2 tbsp lemon juice",
+            "150g plain yoghurt",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a frying pan and cook the garlic for 30 seconds until fragrant.",
+        "Add the chickpeas and cumin and cook for 6 minutes, until golden and lightly crisp.",
+        "Remove from the heat and stir through the spinach until just wilted.",
+        "Add the lemon juice and salt.",
+        "Serve warm with the yoghurt spooned over."
+      ],
+      "notes": [
+        "Keeps 2 days in the fridge, but is best eaten warm."
+      ],
+      "nutrition": {
+        "kcal": 300,
+        "proteinG": 15,
+        "carbsG": 33,
+        "fatG": 10,
+        "fibreG": 9,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "warm-barley-and-mushroom-salad",
+      "title": "Warm Barley and Mushroom Salad",
+      "summary": "Nutty pearl barley with golden mushrooms, thyme and mustard dressing, a warm salad for cool days.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g pearl barley",
+            "400g mushrooms, sliced",
+            "2 tbsp olive oil",
+            "2 garlic cloves",
+            "4 sprigs thyme",
+            "1 tbsp wholegrain mustard",
+            "2 tbsp red wine vinegar",
+            "1 small bunch parsley",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the barley for 30 minutes, until tender with a little chew, then drain.",
+        "Fry the mushrooms in 1 tablespoon of oil over high heat for 6 minutes, until golden.",
+        "Add the garlic and thyme leaves for 1 minute.",
+        "Whisk the remaining oil, mustard, vinegar and salt.",
+        "Toss the warm barley, mushrooms, dressing and parsley together."
+      ],
+      "notes": [
+        "Keeps 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 338,
+        "proteinG": 9,
+        "carbsG": 52,
+        "fatG": 8,
+        "fibreG": 11,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "warm-cannellini-and-kale-salad",
+      "title": "Warm Cannellini and Kale Salad",
+      "summary": "White beans and cavolo nero wilted in garlicky oil with lemon, a Tuscan-style warm salad.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cans cannellini beans, drained and rinsed",
+            "1 bunch cavolo nero, stems removed and leaves shredded",
+            "3 tbsp olive oil",
+            "3 garlic cloves, sliced",
+            "1/2 tsp chilli flakes",
+            "2 tbsp lemon juice",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil and cook the garlic and chilli for 1 minute until fragrant.",
+        "Add the cavolo nero and cook for 5 minutes, until wilted and tender.",
+        "Add the beans and warm through for 3 minutes.",
+        "Stir in the lemon juice and salt.",
+        "Serve warm with crusty bread."
+      ],
+      "notes": [
+        "Keeps 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 303,
+        "proteinG": 14,
+        "carbsG": 31,
+        "fatG": 11,
+        "fibreG": 12,
+        "sodiumMg": 550
+      }
+    },
+    {
+      "id": "warm-israeli-couscous-salad-with-herbs-and-almonds",
+      "title": "Warm Israeli Couscous Salad with Herbs and Almonds",
+      "summary": "Pearl couscous toasted and tossed with herbs, lemon, currants and almonds.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g pearl couscous",
+            "1 tbsp olive oil",
+            "400ml boiling water",
+            "2 tbsp olive oil",
+            "3 tbsp lemon juice",
+            "1 small bunch parsley",
+            "1 small bunch mint",
+            "40g currants",
+            "40g toasted almonds",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the couscous in 1 tablespoon of oil for 3 minutes, until golden.",
+        "Add the boiling water, cover and cook for 8 minutes, until the water is absorbed.",
+        "Fluff with a fork and cool for 5 minutes.",
+        "Stir in the oil, lemon juice, herbs, currants, almonds and salt.",
+        "Serve warm or at room temperature."
+      ],
+      "notes": [
+        "Contains gluten and tree nuts. Keeps 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 430,
+        "proteinG": 11,
+        "carbsG": 58,
+        "fatG": 16,
+        "fibreG": 5,
+        "sodiumMg": 350
+      }
+    }
+  ]
+}

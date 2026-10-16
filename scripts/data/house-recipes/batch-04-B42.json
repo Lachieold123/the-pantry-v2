@@ -1,0 +1,1256 @@
+{
+  "about": "House recipes, batch 04 (slice B): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "roasted-beetroot-hummus",
+      "title": "Roasted Beetroot Hummus",
+      "summary": "Earthy pink hummus with roasted beetroot and tahini, served with warm pita wedges.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g beetroot, scrubbed",
+            "400g can chickpeas, drained and rinsed",
+            "3 tbsp tahini",
+            "3 tbsp lemon juice",
+            "1 garlic clove",
+            "2 tbsp olive oil",
+            "1/2 tsp ground cumin",
+            "1/2 tsp salt",
+            "3 tbsp cold water",
+            "2 pita breads (120g)"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional). Wrap the beetroot in foil and roast for 40 minutes, until a knife slides in easily. Cool, then rub off the skins and chop.",
+        "Blend the beetroot, chickpeas, tahini, lemon juice, garlic, olive oil, cumin and salt until smooth, adding the water a spoonful at a time until creamy.",
+        "Cut the pita into wedges and warm them in the oven for 5 minutes until crisp at the edges.",
+        "Spoon the hummus into a bowl, swirl with a little extra oil and serve with the pita."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: about 1/4 cup hummus and 1/3 of a pita. Keeps 4 days in the fridge. Wear gloves to avoid pink hands."
+      ],
+      "nutrition": {
+        "kcal": 238,
+        "proteinG": 8,
+        "carbsG": 26,
+        "fatG": 10,
+        "fibreG": 6,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "spicy-harissa-hummus",
+      "title": "Spicy Harissa Hummus",
+      "summary": "Creamy hummus lifted with harissa, served with crisp raw vegetable dippers.",
+      "cuisine": "north-african",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g can chickpeas, drained and rinsed",
+            "3 tbsp tahini",
+            "2 tbsp harissa paste",
+            "3 tbsp lemon juice",
+            "1 garlic clove",
+            "2 tbsp olive oil",
+            "1/2 tsp salt",
+            "4 tbsp cold water",
+            "2 carrots, cut into sticks",
+            "1 cucumber, cut into sticks"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the chickpeas, tahini, harissa, lemon juice, garlic, oil and salt until thick and smooth.",
+        "With the motor running, add the water a spoonful at a time until the hummus is silky.",
+        "Taste and add more lemon or salt if needed, then spoon into a bowl.",
+        "Serve with the carrot and cucumber sticks and a drizzle of oil."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: about 1/4 cup hummus with vegetable sticks. Keeps 4 days in the fridge. Harissa brands vary in heat, so start with 1 tbsp if unsure."
+      ],
+      "nutrition": {
+        "kcal": 202,
+        "proteinG": 7,
+        "carbsG": 14,
+        "fatG": 12,
+        "fibreG": 5,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "edamame-hummus",
+      "title": "Edamame Hummus",
+      "summary": "A bright green, high-protein dip made with edamame, tahini and lime.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 5,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g frozen shelled edamame",
+            "2 tbsp tahini",
+            "3 tbsp lime juice",
+            "1 garlic clove",
+            "2 tbsp olive oil",
+            "1 tsp ground cumin",
+            "1/2 tsp salt",
+            "3 tbsp cold water",
+            "1 red capsicum, cut into strips",
+            "1 cucumber, cut into sticks"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the edamame for 4 minutes until tender, then drain and cool under cold running water.",
+        "Blend the edamame with the tahini, lime juice, garlic, oil, cumin and salt until chunky-smooth.",
+        "Add the water a spoonful at a time until creamy, then spoon into a bowl.",
+        "Serve with the capsicum strips and cucumber sticks."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: about 1/4 cup dip with vegetables. Keeps 3 days in the fridge; the colour dulls but the flavour holds."
+      ],
+      "nutrition": {
+        "kcal": 167,
+        "proteinG": 8,
+        "carbsG": 7,
+        "fatG": 11,
+        "fibreG": 4,
+        "sodiumMg": 230
+      }
+    },
+    {
+      "id": "sweet-potato-hummus",
+      "title": "Sweet Potato Hummus",
+      "summary": "Mellow roasted sweet potato blended into hummus with smoked paprika, served with pita chips.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "350g sweet potato, peeled and cubed",
+            "400g can chickpeas, drained and rinsed",
+            "3 tbsp tahini",
+            "3 tbsp lemon juice",
+            "1 garlic clove",
+            "2 tbsp olive oil",
+            "1 tsp smoked paprika",
+            "1/2 tsp salt",
+            "2 pita breads (120g)"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional). Toss the sweet potato with 1 tbsp of the oil and roast for 30 minutes, until soft and lightly browned.",
+        "Cut the pita into triangles and bake alongside for the last 6 minutes until crisp.",
+        "Blend the sweet potato with the chickpeas, tahini, lemon juice, garlic, remaining oil, paprika and salt until smooth, adding 2 to 3 tbsp water if thick.",
+        "Serve the hummus topped with a pinch of paprika and the pita chips."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: about 1/4 cup hummus with 1/3 of a pita. Keeps 4 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 258,
+        "proteinG": 8,
+        "carbsG": 31,
+        "fatG": 10,
+        "fibreG": 6,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "roasted-red-pepper-hummus",
+      "title": "Roasted Red Pepper Hummus",
+      "summary": "Sweet roasted capsicum hummus with garlic and lemon, served with toasted pita wedges.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 red capsicums",
+            "400g can chickpeas, drained and rinsed",
+            "3 tbsp tahini",
+            "2 tbsp lemon juice",
+            "1 garlic clove",
+            "2 tbsp olive oil",
+            "1/2 tsp salt",
+            "1/2 tsp smoked paprika",
+            "2 pita breads (120g)"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C fan (240°C conventional). Roast the whole capsicums for 25 minutes, turning once, until the skins blister and blacken.",
+        "Cover the capsicums in a bowl for 10 minutes, then peel, deseed and roughly chop.",
+        "Blend the capsicum with the chickpeas, tahini, lemon juice, garlic, oil, salt and paprika until smooth.",
+        "Cut the pita into wedges and toast under the grill until crisp, then serve with the hummus, drizzled with oil."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: about 1/4 cup hummus and 1/3 of a pita. Keeps 4 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 232,
+        "proteinG": 7,
+        "carbsG": 26,
+        "fatG": 11,
+        "fibreG": 5,
+        "sodiumMg": 340
+      }
+    },
+    {
+      "id": "mutabal-tahini-eggplant-dip",
+      "title": "Mutabal Tahini Eggplant Dip",
+      "summary": "Smoky roasted eggplant blended with tahini and Greek yoghurt, creamier than baba ganoush.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 40,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 large eggplants (about 700g)",
+            "3 tbsp tahini",
+            "1/2 cup Greek yoghurt",
+            "2 tbsp lemon juice",
+            "1 garlic clove",
+            "1 tbsp olive oil",
+            "1/2 tsp salt",
+            "2 tbsp parsley, chopped",
+            "2 pita breads (120g)"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C fan (240°C conventional). Prick the eggplants, set on a tray and roast for 40 minutes, turning once, until collapsed and charred.",
+        "Split the eggplants and scoop the soft flesh into a sieve to drain for 5 minutes, discarding the skins.",
+        "Mash the flesh with the tahini, yoghurt, lemon juice, crushed garlic and salt until creamy but still textured.",
+        "Spoon into a bowl, drizzle with the oil, scatter with parsley and serve with warm pita wedges."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: about 1/3 cup dip with 1/3 of a pita. Keeps 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 199,
+        "proteinG": 7,
+        "carbsG": 20,
+        "fatG": 9,
+        "fibreG": 5,
+        "sodiumMg": 320
+      }
+    },
+    {
+      "id": "muhammara-walnut-dip",
+      "title": "Muhammara Walnut Dip",
+      "summary": "Syrian roasted red capsicum and walnut dip with a sweet-tart finish, thick enough to scoop.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 red capsicums",
+            "1 cup walnuts (100g)",
+            "1/2 cup fresh breadcrumbs (30g)",
+            "2 tbsp lemon juice",
+            "1 tbsp honey",
+            "1 garlic clove",
+            "1 tsp ground cumin",
+            "1/2 tsp chilli flakes",
+            "3 tbsp olive oil",
+            "1/2 tsp salt",
+            "2 pita breads (120g)"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C fan (240°C conventional). Roast the capsicums for 25 minutes, turning once, until blackened in patches. Cover for 10 minutes, then peel and deseed.",
+        "Toast the walnuts in a dry pan for 4 minutes until fragrant, then cool.",
+        "Blitz the capsicum, walnuts, breadcrumbs, lemon juice, honey, garlic, cumin, chilli and salt to a thick, slightly coarse paste, then stream in the oil.",
+        "Spoon into a bowl and serve with toasted pita wedges."
+      ],
+      "notes": [
+        "Snack. Vegetarian (honey). Contains tree nuts and gluten. Per serving: about 3 tbsp dip and 1/4 of a pita. Keeps 5 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 203,
+        "proteinG": 5,
+        "carbsG": 15,
+        "fatG": 13,
+        "fibreG": 3,
+        "sodiumMg": 210
+      }
+    },
+    {
+      "id": "avocado-salsa-verde-dip",
+      "title": "Avocado Salsa Verde Dip",
+      "summary": "Creamy avocado blended with a cooked green tomato salsa, served with baked tortilla chips.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 5,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 ripe avocados",
+            "200g green tomatoes, quartered",
+            "1 jalapeno, deseeded",
+            "1/2 cup coriander leaves",
+            "2 tbsp lime juice",
+            "1/2 small onion, chopped",
+            "1/2 tsp salt",
+            "4 corn tortillas",
+            "1 tbsp neutral oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional). Cut the tortillas into wedges, toss with the oil and a pinch of salt, and bake for 8 minutes until crisp.",
+        "Simmer the green tomatoes and jalapeno in a small pan with 1/4 cup water for 5 minutes until soft, then cool slightly.",
+        "Blend the cooked tomato mixture with the coriander, lime juice, onion and salt, then add the avocado and pulse until creamy.",
+        "Serve straight away with the warm chips."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: about 1/3 cup dip with 4 chips. Best eaten within 2 hours; press cling film onto the surface to stop browning."
+      ],
+      "nutrition": {
+        "kcal": 200,
+        "proteinG": 3,
+        "carbsG": 17,
+        "fatG": 12,
+        "fibreG": 6,
+        "sodiumMg": 230
+      }
+    },
+    {
+      "id": "pea-guacamole",
+      "title": "Pea Guacamole",
+      "summary": "A thrifty, vivid guacamole stretched with peas, with lime, coriander and chilli.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 3,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 ripe avocado",
+            "1 1/2 cups frozen peas (200g)",
+            "3 tbsp lime juice",
+            "1/4 red onion, finely chopped",
+            "1/4 cup coriander, chopped",
+            "1 small green chilli, finely chopped",
+            "1/2 tsp ground cumin",
+            "1/2 tsp salt",
+            "4 corn tortillas"
+          ]
+        }
+      ],
+      "steps": [
+        "Cover the peas with boiling water for 3 minutes, then drain and cool under cold water.",
+        "Blitz the peas to a rough paste, then mash in the avocado, lime juice, onion, coriander, chilli, cumin and salt until creamy but still chunky.",
+        "Toast the tortillas in a dry pan for 1 minute each side, cut into wedges and crisp for a further 2 minutes.",
+        "Serve the guacamole with the tortilla wedges."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: about 1/3 cup guacamole with 2/3 of a tortilla. Eat within a day; press cling film onto the surface."
+      ],
+      "nutrition": {
+        "kcal": 111,
+        "proteinG": 3,
+        "carbsG": 13,
+        "fatG": 4,
+        "fibreG": 4,
+        "sodiumMg": 220
+      }
+    },
+    {
+      "id": "mango-guacamole",
+      "title": "Mango Guacamole",
+      "summary": "Chunky guacamole with ripe mango, lime and a little heat, great with corn chips.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 ripe avocados",
+            "1 ripe mango, diced",
+            "1/4 red onion, finely chopped",
+            "1 small red chilli, finely chopped",
+            "3 tbsp lime juice",
+            "1/4 cup coriander, chopped",
+            "1/2 tsp salt",
+            "80g corn chips"
+          ]
+        }
+      ],
+      "steps": [
+        "Mash the avocados with a fork until creamy but still chunky.",
+        "Fold in the mango, onion, chilli, lime juice, coriander and salt.",
+        "Taste and add more lime or salt, then spoon into a bowl.",
+        "Serve straight away with the corn chips."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: about 1/3 cup guacamole with 13g of chips. Best eaten the same day."
+      ],
+      "nutrition": {
+        "kcal": 170,
+        "proteinG": 2,
+        "carbsG": 16,
+        "fatG": 10,
+        "fibreG": 4,
+        "sodiumMg": 260
+      }
+    },
+    {
+      "id": "cucumber-raita",
+      "title": "Cucumber Raita",
+      "summary": "Cooling yoghurt with cucumber, mint and roasted cumin, a classic partner for spiced snacks.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups plain yoghurt (500g)",
+            "1 Lebanese cucumber, grated",
+            "1/2 tsp cumin seeds",
+            "2 tbsp mint leaves, chopped",
+            "1/2 tsp salt",
+            "1/4 tsp chilli powder",
+            "4 chapatis (or roti)"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the cumin seeds in a dry pan for 1 minute until fragrant, then crush lightly.",
+        "Squeeze the grated cucumber in your hands to remove excess water.",
+        "Stir the cucumber, mint, salt and cumin through the yoghurt.",
+        "Spoon into a bowl, dust with the chilli powder and serve with chapati wedges."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: about 1/3 cup raita with 2/3 of a chapati. Keeps 2 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 141,
+        "proteinG": 6,
+        "carbsG": 17,
+        "fatG": 5,
+        "fibreG": 2,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "beetroot-raita",
+      "title": "Beetroot Raita",
+      "summary": "Magenta yoghurt dip with grated cooked beetroot, curry leaves and mustard seeds.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups plain yoghurt (500g)",
+            "250g beetroot, peeled and grated",
+            "1 tsp neutral oil",
+            "1 tsp black mustard seeds",
+            "1 tsp curry powder",
+            "1/2 tsp salt",
+            "4 chapatis (or roti)"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the beetroot in a small pan with 1/4 cup water for 15 minutes, until tender and the water has gone. Cool.",
+        "Heat the oil, add the mustard seeds and cook for 30 seconds until they pop, then stir in the curry powder.",
+        "Stir the beetroot, salt and the tempered spices through the yoghurt.",
+        "Serve with warm chapati wedges."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: about 1/3 cup raita with 2/3 of a chapati. Keeps 2 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 159,
+        "proteinG": 6,
+        "carbsG": 21,
+        "fatG": 5,
+        "fibreG": 3,
+        "sodiumMg": 340
+      }
+    },
+    {
+      "id": "mint-and-coriander-yoghurt-dip",
+      "title": "Mint and Coriander Yoghurt Dip",
+      "summary": "Fresh green chutney folded through yoghurt for kebabs, pakoras and crisps.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup plain yoghurt (250g)",
+            "1 cup mint leaves",
+            "1 cup coriander leaves",
+            "1 green chilli",
+            "2 tbsp lemon juice",
+            "1 tsp sugar",
+            "1/2 tsp ground cumin",
+            "1/2 tsp salt",
+            "2 carrots, cut into sticks"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the mint, coriander, chilli, lemon juice, sugar, cumin and salt with 2 tbsp water to a smooth green paste.",
+        "Fold the paste through the yoghurt until evenly green.",
+        "Taste and adjust the salt and lemon, then spoon into a bowl.",
+        "Serve with the carrot sticks."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: about 3 tbsp dip with vegetables. Keeps 2 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 66,
+        "proteinG": 3,
+        "carbsG": 8,
+        "fatG": 2,
+        "fibreG": 2,
+        "sodiumMg": 230
+      }
+    },
+    {
+      "id": "beetroot-tzatziki",
+      "title": "Beetroot Tzatziki",
+      "summary": "Pink-purple tzatziki with grated raw beetroot, garlic and dill, served with warm pita.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups Greek yoghurt (500g)",
+            "1 small raw beetroot (100g), peeled and grated",
+            "1 Lebanese cucumber, grated",
+            "1 garlic clove, crushed",
+            "1 tbsp olive oil",
+            "1 tbsp lemon juice",
+            "2 tbsp dill, chopped",
+            "1/2 tsp salt",
+            "2 pita breads (120g)"
+          ]
+        }
+      ],
+      "steps": [
+        "Squeeze the grated cucumber in your hands to remove excess water.",
+        "Stir the cucumber, beetroot, garlic, oil, lemon juice, dill and salt through the yoghurt until evenly pink.",
+        "Warm the pita in a dry pan for 1 minute each side and cut into wedges.",
+        "Serve the tzatziki with the warm pita."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: about 1/3 cup tzatziki with 1/3 of a pita. Keeps 2 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 142,
+        "proteinG": 9,
+        "carbsG": 13,
+        "fatG": 6,
+        "fibreG": 1,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "rosemary-cannellini-dip-with-sourdough-fingers",
+      "title": "Rosemary Cannellini Dip with Sourdough Fingers",
+      "summary": "A smooth cannellini dip with roasted garlic flavour, rosemary and lemon, served with toasted sourdough.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 3,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g can cannellini beans, drained and rinsed",
+            "2 garlic cloves",
+            "2 tbsp olive oil",
+            "1 tbsp rosemary, finely chopped",
+            "2 tbsp lemon juice",
+            "1/2 tsp salt",
+            "4 slices sourdough bread"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the garlic and rosemary in 1 tbsp of the oil in a small pan for 3 minutes, without letting the garlic brown.",
+        "Blend the beans, the warm garlic oil, lemon juice, salt and 3 tbsp water until completely smooth.",
+        "Toast the sourdough until golden, cut each slice into 4 fingers and arrange around a bowl.",
+        "Spoon in the dip and finish with the remaining oil."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: about 1/4 cup dip with 2/3 of a slice of toast. Keeps 4 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 188,
+        "proteinG": 7,
+        "carbsG": 24,
+        "fatG": 6,
+        "fibreG": 5,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "caprese-skewers",
+      "title": "Caprese Skewers",
+      "summary": "Cherry tomato, basil and bocconcini on skewers with a balsamic drizzle for easy entertaining.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "24 cherry tomatoes",
+            "24 bocconcini balls (about 250g)",
+            "24 small basil leaves",
+            "2 tbsp olive oil",
+            "1 tbsp balsamic vinegar",
+            "1/4 tsp salt",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Thread a tomato, a basil leaf and a bocconcini onto each of 24 short skewers or toothpicks.",
+        "Arrange the skewers on a platter.",
+        "Whisk the oil, balsamic, salt and pepper until combined and drizzle over the skewers just before serving."
+      ],
+      "notes": [
+        "Snack. Vegetarian (fresh mozzarella uses non-animal rennet in most brands; check the label). Per serving: 4 skewers. Best eaten within 2 hours; keep chilled until serving."
+      ],
+      "nutrition": {
+        "kcal": 201,
+        "proteinG": 11,
+        "carbsG": 5,
+        "fatG": 15,
+        "fibreG": 1,
+        "sodiumMg": 220
+      }
+    },
+    {
+      "id": "prawn-and-chorizo-skewers",
+      "title": "Prawn and Chorizo Skewers",
+      "summary": "Garlicky prawns and chorizo threaded and grilled, a quick tapas-style party bite.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 8,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "18 large raw prawns (about 400g), peeled and deveined",
+            "150g cooked chorizo, cut into 18 pieces",
+            "2 tbsp olive oil",
+            "2 garlic cloves, crushed",
+            "1 tsp smoked paprika",
+            "1 tbsp lemon juice",
+            "1 tbsp parsley, chopped",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the prawns with the oil, garlic, paprika, lemon juice and salt. Thread each skewer with 3 prawns, alternating with 3 pieces of chorizo.",
+        "Heat a grill or griddle pan to high and cook the skewers for 3 to 4 minutes per side, until the prawns are pink and opaque and the chorizo is sizzling.",
+        "Scatter with the parsley and serve hot with lemon wedges."
+      ],
+      "notes": [
+        "Snack. Per serving: 1 skewer of 3 prawns and 3 pieces of chorizo.",
+        "Food safety: keep raw prawns refrigerated until cooking, cook until opaque and pink throughout, wash hands and boards after handling raw seafood, and eat within 2 hours or refrigerate leftovers."
+      ],
+      "nutrition": {
+        "kcal": 149,
+        "proteinG": 11,
+        "carbsG": 1,
+        "fatG": 11,
+        "fibreG": 0,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "soy-mirin-chicken-thigh-skewers",
+      "title": "Soy-Mirin Chicken Thigh Skewers",
+      "summary": "Glazed chicken thigh skewers with a sweet soy tare, cooked in the oven.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 12,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g chicken thigh fillets, cut into 3cm pieces",
+            "3 spring onions, cut into 3cm lengths",
+            "3 tbsp soy sauce",
+            "2 tbsp mirin",
+            "1 tbsp honey",
+            "1 tsp grated ginger",
+            "1 tbsp neutral oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the soy sauce, mirin, honey and ginger in a small pan for 4 minutes until slightly syrupy, then cool a little.",
+        "Thread the chicken and spring onion onto 12 skewers and brush with oil.",
+        "Heat the oven grill to high and grill the skewers on a lined tray for 12 minutes, turning and brushing with the glaze every 4 minutes, until the chicken reaches 75°C in the centre.",
+        "Brush with a final layer of glaze and serve hot."
+      ],
+      "notes": [
+        "Snack. Per serving: 2 skewers.",
+        "Food safety: cook chicken to 75°C throughout, wash hands, boards and utensils after handling raw chicken, do not reuse the raw-chicken brush on cooked skewers, and refrigerate leftovers within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 221,
+        "proteinG": 21,
+        "carbsG": 9,
+        "fatG": 11,
+        "fibreG": 1,
+        "sodiumMg": 760
+      }
+    },
+    {
+      "id": "mini-beef-sliders",
+      "title": "Mini Beef Sliders",
+      "summary": "Juicy beef patties on mini buns with cheese, pickles and a quick sauce.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 10,
+      "servings": 8,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "500g beef mince",
+            "8 mini burger buns",
+            "4 slices cheddar cheese, halved",
+            "8 pickle slices",
+            "4 tbsp tomato sauce",
+            "2 tbsp mayonnaise",
+            "1 tbsp neutral oil",
+            "1/2 tsp salt",
+            "1/2 tsp black pepper",
+            "8 small lettuce leaves"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the mince with the salt and pepper and shape into 8 small patties slightly wider than the buns.",
+        "Heat the oil in a large frying pan over medium-high heat and cook the patties for 3 to 4 minutes per side, until browned and cooked through with no pink inside. Lay half a cheese slice on each in the last minute.",
+        "Toast the buns cut side down in the pan for 1 minute.",
+        "Mix the tomato sauce and mayonnaise, spread on the buns, then add lettuce, patty and pickle."
+      ],
+      "notes": [
+        "Snack. Per serving: 1 slider.",
+        "Food safety: cook beef mince to 75°C throughout until no pink remains, wash hands and surfaces after handling raw mince, and refrigerate leftovers within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 327,
+        "proteinG": 19,
+        "carbsG": 24,
+        "fatG": 17,
+        "fibreG": 1,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "crispy-baked-chicken-sliders",
+      "title": "Crispy Baked Chicken Sliders",
+      "summary": "Oven-crisped crumbed chicken pieces on mini buns with slaw.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g chicken breast, sliced into 8 thin pieces",
+            "1/2 cup plain flour",
+            "1 egg, beaten",
+            "1 cup panko breadcrumbs",
+            "1 tsp smoked paprika",
+            "1/2 tsp salt",
+            "8 mini burger buns",
+            "1 cup shredded cabbage",
+            "3 tbsp mayonnaise",
+            "1 tbsp lemon juice",
+            "1 tbsp neutral oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 210°C fan (230°C conventional). Mix the panko with the paprika, salt and oil.",
+        "Dip each chicken piece in the flour, the egg, then the panko mixture, pressing on firmly.",
+        "Bake on a lined tray for 20 minutes, turning once, until golden and the chicken reaches 75°C in the centre.",
+        "Toss the cabbage with 1 tbsp of the mayonnaise and the lemon juice. Spread the rest on the buns and fill with chicken and slaw."
+      ],
+      "notes": [
+        "Snack. Per serving: 1 slider.",
+        "Food safety: cook chicken to 75°C throughout, wash hands and boards after handling raw chicken and egg, and refrigerate leftovers within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 327,
+        "proteinG": 22,
+        "carbsG": 34,
+        "fatG": 11,
+        "fibreG": 2,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "mushroom-walnut-sliders",
+      "title": "Mushroom Walnut Sliders",
+      "summary": "A savoury mushroom and walnut patty on mini buns with mustard and rocket.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g mushrooms, finely chopped",
+            "1/2 cup walnuts (50g), finely chopped",
+            "1/2 cup rolled oats (50g)",
+            "1 onion, finely chopped",
+            "2 garlic cloves, crushed",
+            "1 tbsp soy sauce",
+            "1 tbsp Dijon mustard",
+            "2 tbsp olive oil",
+            "8 mini burger buns",
+            "1 cup rocket"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the mushrooms in a dry frying pan over medium-high heat for 8 minutes until the liquid has gone, then add 1 tbsp of the oil, the onion and the garlic and cook for 5 minutes more.",
+        "Stir in the soy sauce, mustard, walnuts and oats, then cool slightly and shape into 8 small patties.",
+        "Fry the patties in the remaining oil for 3 minutes per side until crisp and golden.",
+        "Fill the toasted buns with the patties and rocket."
+      ],
+      "notes": [
+        "Snack. Vegan (check the bun label). Contains tree nuts and gluten. Per serving: 1 slider. Keeps 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 264,
+        "proteinG": 8,
+        "carbsG": 29,
+        "fatG": 12,
+        "fibreG": 4,
+        "sodiumMg": 430
+      }
+    },
+    {
+      "id": "spinach-and-ricotta-stuffed-mushrooms",
+      "title": "Spinach and Ricotta Stuffed Mushrooms",
+      "summary": "Button mushrooms filled with spinach, ricotta and lemon, baked until golden.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "18 button mushrooms (about 350g)",
+            "150g baby spinach",
+            "1/2 cup ricotta (125g)",
+            "1 garlic clove, crushed",
+            "2 tbsp fresh breadcrumbs",
+            "1 tbsp olive oil",
+            "1 tsp lemon zest",
+            "1/4 tsp salt",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional). Twist the stalks out of the mushrooms and finely chop 4 of them.",
+        "Cook the chopped stalks and garlic in the oil for 2 minutes, add the spinach and cook for 2 minutes more until wilted, then squeeze dry and chop.",
+        "Mix with the ricotta, lemon zest, salt and pepper and fill the mushroom caps, then top with the breadcrumbs.",
+        "Bake for 20 minutes until the filling is golden and the mushrooms are tender."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 3 stuffed mushrooms. Best served warm. Keeps 2 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 63,
+        "proteinG": 4,
+        "carbsG": 3,
+        "fatG": 3,
+        "fibreG": 1,
+        "sodiumMg": 190
+      }
+    },
+    {
+      "id": "pork-and-thyme-mushroom-caps",
+      "title": "Pork and Thyme Mushroom Caps",
+      "summary": "Large mushrooms stuffed with seasoned pork sausage meat and herbs, baked until sizzling.",
+      "cuisine": "british",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 22,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "12 medium flat mushrooms (about 400g)",
+            "250g pork sausage meat",
+            "1 small onion, finely chopped",
+            "1 garlic clove, crushed",
+            "1/2 cup fresh breadcrumbs (30g)",
+            "1 tsp thyme leaves",
+            "1 tbsp olive oil",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional). Remove the mushroom stalks and finely chop 3 of them.",
+        "Fry the onion, garlic and chopped stalks in the oil for 5 minutes until soft, then cool and mix with the sausage meat, breadcrumbs, thyme and pepper.",
+        "Fill the caps with the mixture, pressing firmly, and place on a lined tray.",
+        "Bake for 22 minutes, until the filling is browned and cooked through at 75°C."
+      ],
+      "notes": [
+        "Snack. Per serving: 2 stuffed mushrooms.",
+        "Food safety: pork sausage meat must reach 75°C throughout with no pink remaining, wash hands and surfaces after handling raw pork, and refrigerate leftovers within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 233,
+        "proteinG": 11,
+        "carbsG": 8,
+        "fatG": 17,
+        "fibreG": 2,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "smoked-salmon-cucumber-rounds",
+      "title": "Smoked Salmon Cucumber Rounds",
+      "summary": "Thick cucumber rounds topped with dill cream cheese and smoked salmon, ready in minutes.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 Lebanese cucumbers, cut into 12 thick rounds",
+            "200g smoked salmon",
+            "100g cream cheese",
+            "1 tbsp lemon juice",
+            "2 tbsp dill, chopped",
+            "1 tsp capers, drained",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the cream cheese with the lemon juice, half the dill and the pepper until smooth.",
+        "Pipe or spoon a small mound onto each cucumber round.",
+        "Fold a piece of smoked salmon on top of each, then finish with the remaining dill and a caper."
+      ],
+      "notes": [
+        "Snack. Per serving: 3 rounds.",
+        "Food safety: smoked salmon is a ready-to-eat chilled food. Keep refrigerated, eat within 2 hours of serving, and pregnant women and people with weakened immunity should avoid it."
+      ],
+      "nutrition": {
+        "kcal": 148,
+        "proteinG": 11,
+        "carbsG": 3,
+        "fatG": 10,
+        "fibreG": 1,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "classic-devilled-eggs",
+      "title": "Classic Devilled Eggs",
+      "summary": "Creamy mustard-and-paprika egg yolk filling piped into halved boiled eggs.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 12,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 eggs",
+            "2 tbsp mayonnaise",
+            "1 tsp Dijon mustard",
+            "1 tsp white vinegar",
+            "1/4 tsp salt",
+            "1/2 tsp smoked paprika",
+            "1 tbsp chives, finely chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Cover the eggs with cold water, bring to the boil, then simmer for 10 minutes. Cool in iced water, then peel.",
+        "Halve the eggs lengthways and pop the yolks into a bowl.",
+        "Mash the yolks with the mayonnaise, mustard, vinegar and salt until smooth, then spoon or pipe into the whites.",
+        "Dust with paprika and scatter with chives."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 egg halves.",
+        "Food safety: cook the eggs until the yolks are firm, keep chilled until serving, eat within 2 hours at room temperature and refrigerate leftovers for up to 2 days."
+      ],
+      "nutrition": {
+        "kcal": 117,
+        "proteinG": 8,
+        "carbsG": 1,
+        "fatG": 9,
+        "fibreG": 0,
+        "sodiumMg": 250
+      }
+    }
+  ]
+}

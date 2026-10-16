@@ -1,0 +1,900 @@
+{
+  "about": "Batch 04, slice A, chunk A31: lunches (noodle and rice bowls, hot sandwiches, quesadillas, tacos, fritters, pancakes and rolls) from Japan, China, Vietnam, India, Italy, Mexico and the US.",
+  "recipes": [
+    {
+      "id": "omurice-japanese-chicken-fried-rice-in-a-soft-omelette",
+      "title": "Omurice (Japanese Chicken Fried Rice in a Soft Omelette)",
+      "summary": "Ketchup-flavoured chicken fried rice wrapped in a soft, silky omelette, a Japanese comfort lunch.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3/4 cup white rice",
+            "150g chicken thigh, diced",
+            "1/2 brown onion, finely diced",
+            "1/4 cup frozen peas",
+            "3 tbsp tomato sauce",
+            "4 egg",
+            "20g butter",
+            "1 tbsp neutral oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice per the packet until tender, about 12 minutes.",
+        "Fry the chicken and onion in the oil for 6 minutes, until the chicken is cooked through to 75°C. Add the peas, rice and tomato sauce and stir-fry for 3 minutes, until the rice is evenly coloured and hot.",
+        "Beat the eggs with salt. Cook half in half the butter in a non-stick pan over medium-low heat for 2 minutes, until just set with a soft top.",
+        "Spoon half the rice onto the omelette, fold over and slide onto a plate. Repeat for the second serve."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C and the egg must be set, not raw. Eat straight away; refrigerate leftover rice within an hour.",
+        "Contains egg and milk."
+      ],
+      "nutrition": {
+        "kcal": 640,
+        "proteinG": 33,
+        "carbsG": 75,
+        "fatG": 24,
+        "fibreG": 3,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "chicken-yaki-udon-with-cabbage-and-mushroom",
+      "title": "Chicken Yaki Udon (with Cabbage and Mushroom)",
+      "summary": "Thick, chewy udon stir-fried with chicken, cabbage and mushrooms in a savoury soy and mirin glaze.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 3,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g dried udon noodles",
+            "300g chicken thigh, sliced",
+            "2 tbsp neutral oil",
+            "2 cup cabbage, shredded",
+            "1 cup button mushroom, sliced",
+            "1 carrot, cut into matchsticks",
+            "3 tbsp soy sauce",
+            "2 tbsp mirin",
+            "1 tsp sesame oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the udon per the packet until tender and drain.",
+        "Stir-fry the chicken in half the oil for 5 minutes, until cooked through to 75°C. Remove.",
+        "Stir-fry the cabbage, mushroom and carrot in the remaining oil for 3 minutes, until just tender.",
+        "Add the noodles, chicken, soy sauce and mirin and toss for 2 minutes, until glossy and hot. Finish with the sesame oil."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C. Refrigerate leftovers within an hour; for a packed lunch use an ice pack, eat within 4 hours and reheat until steaming hot.",
+        "Contains gluten, soy and sesame."
+      ],
+      "nutrition": {
+        "kcal": 570,
+        "proteinG": 28,
+        "carbsG": 75,
+        "fatG": 14,
+        "fibreG": 4,
+        "sodiumMg": 1300
+      }
+    },
+    {
+      "id": "cold-sesame-chicken-noodles-with-cucumber",
+      "title": "Cold Sesame Chicken Noodles (with Cucumber)",
+      "summary": "Chilled wheat noodles with poached chicken, cucumber and a creamy tahini and soy dressing, a no-reheat packed lunch.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 12,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g chicken breast",
+            "150g wheat noodles",
+            "1 cucumber, cut into matchsticks",
+            "2 spring onion, sliced",
+            "2 tbsp tahini",
+            "2 tbsp soy sauce",
+            "1 tbsp rice vinegar",
+            "1 tbsp sesame oil",
+            "1 tsp sugar",
+            "2 tbsp warm water"
+          ]
+        }
+      ],
+      "steps": [
+        "Poach the chicken in simmering water for 12 minutes, until it reaches 75°C and no pink remains. Cool, then shred.",
+        "Cook the noodles per the packet until tender, rinse under cold water and drain well.",
+        "Whisk the tahini, soy sauce, vinegar, sesame oil, sugar and warm water until smooth.",
+        "Toss the noodles with the dressing, cucumber and chicken and top with spring onion."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C, then be chilled within an hour and kept below 5°C. For a packed lunch use an ice pack and eat within 4 hours.",
+        "Contains gluten, soy and sesame."
+      ],
+      "nutrition": {
+        "kcal": 560,
+        "proteinG": 40,
+        "carbsG": 55,
+        "fatG": 19,
+        "fibreG": 4,
+        "sodiumMg": 1250
+      }
+    },
+    {
+      "id": "peanut-noodle-bowl-with-crispy-tofu",
+      "title": "Peanut Noodle Bowl (with Crispy Tofu)",
+      "summary": "Rice noodles in a lime and chilli peanut sauce with golden tofu, carrot and cucumber, good warm or cold.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 3,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g rice noodles",
+            "300g tofu, pressed and cubed",
+            "1 tbsp neutral oil",
+            "1/3 cup peanut butter",
+            "2 tbsp soy sauce",
+            "1 lime, juiced",
+            "1 tsp sriracha",
+            "1 carrot, cut into matchsticks",
+            "1 cucumber, sliced",
+            "2 tbsp coriander, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak or cook the noodles per the packet until tender, then drain and rinse.",
+        "Fry the tofu in the oil for 8 minutes, turning, until golden and crisp on all sides.",
+        "Whisk the peanut butter, soy sauce, lime juice, sriracha and 1/4 cup warm water until smooth and pourable.",
+        "Toss the noodles with the sauce, carrot and cucumber, top with the tofu and coriander."
+      ],
+      "notes": [
+        "Keeps 2 days in the fridge; add the tofu on the day. Check the soy sauce label if avoiding gluten.",
+        "Contains peanuts and soy."
+      ],
+      "nutrition": {
+        "kcal": 570,
+        "proteinG": 23,
+        "carbsG": 63,
+        "fatG": 25,
+        "fibreG": 6,
+        "sodiumMg": 1000
+      }
+    },
+    {
+      "id": "zha-jiang-mian-beijing-pork-and-bean-sauce-noodles",
+      "title": "Zha Jiang Mian (Beijing Pork and Bean Sauce Noodles)",
+      "summary": "Chewy noodles under a thick, savoury pork and bean sauce with cool cucumber, a Beijing home lunch.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g pork mince",
+            "2 tbsp neutral oil",
+            "3 garlic clove, minced",
+            "1 tbsp ginger, grated",
+            "2 tbsp doubanjiang",
+            "2 tbsp hoisin sauce",
+            "1 tbsp soy sauce",
+            "1 tsp sugar",
+            "3/4 cup water",
+            "300g wheat noodles",
+            "1 cucumber, cut into matchsticks",
+            "3 spring onion, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the pork in the oil for 8 minutes, until no pink remains, with the garlic and ginger.",
+        "Stir in the doubanjiang, hoisin, soy sauce, sugar and water and simmer for 8 minutes, until thick and glossy and the pork reaches 75°C.",
+        "Cook the noodles per the packet until tender and drain.",
+        "Serve the noodles topped with the sauce, cucumber and spring onion."
+      ],
+      "notes": [
+        "Food safety: pork mince must reach 75°C with no pink. The sauce keeps 3 days in the fridge; reheat until steaming hot. For a packed lunch use an ice pack and eat within 4 hours.",
+        "Contains gluten and soy."
+      ],
+      "nutrition": {
+        "kcal": 560,
+        "proteinG": 29,
+        "carbsG": 59,
+        "fatG": 22,
+        "fibreG": 4,
+        "sodiumMg": 1300
+      }
+    },
+    {
+      "id": "chicken-chow-mein-with-cabbage-and-carrot",
+      "title": "Chicken Chow Mein (with Cabbage and Carrot)",
+      "summary": "Egg noodles stir-fried with chicken, cabbage, carrot and capsicum in a savoury soy and oyster sauce.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 3,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g egg noodles",
+            "300g chicken thigh, sliced",
+            "2 tbsp neutral oil",
+            "2 cup cabbage, shredded",
+            "1 carrot, cut into matchsticks",
+            "1 capsicum, sliced",
+            "3 tbsp soy sauce",
+            "1 tbsp oyster sauce",
+            "1 tsp sesame oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the noodles per the packet until just tender, drain and toss with a little oil.",
+        "Stir-fry the chicken in half the oil over high heat for 5 minutes, until cooked through to 75°C. Remove.",
+        "Stir-fry the cabbage, carrot and capsicum in the rest of the oil for 3 minutes.",
+        "Return the chicken, add the noodles, soy sauce, oyster sauce and sesame oil and toss for 2 minutes, until hot."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C. Refrigerate leftovers within an hour; for a packed lunch use an ice pack, eat within 4 hours and reheat until steaming hot.",
+        "Contains egg, gluten, soy and shellfish (oyster sauce)."
+      ],
+      "nutrition": {
+        "kcal": 550,
+        "proteinG": 30,
+        "carbsG": 67,
+        "fatG": 19,
+        "fibreG": 5,
+        "sodiumMg": 1400
+      }
+    },
+    {
+      "id": "chicken-katsu-don-crumbed-chicken-and-egg-rice-bowl",
+      "title": "Chicken Katsu Don (Crumbed Chicken and Egg Rice Bowl)",
+      "summary": "Crisp panko chicken simmered briefly in sweet soy broth and egg, served over steaming rice.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g chicken breast, halved horizontally",
+            "2 tbsp plain flour",
+            "1 egg",
+            "1/2 cup panko",
+            "3 tbsp neutral oil",
+            "1 brown onion, sliced",
+            "1/2 cup chicken stock",
+            "2 tbsp soy sauce",
+            "2 tbsp mirin",
+            "1 tsp sugar",
+            "2 egg, lightly beaten",
+            "3/4 cup white rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice per the packet until tender, about 12 minutes.",
+        "Coat the chicken in flour, the single beaten egg, then panko. Shallow fry in the oil for 4 minutes each side, until golden and cooked through to 75°C. Slice.",
+        "Simmer the onion with the stock, soy sauce, mirin and sugar for 4 minutes, until soft.",
+        "Lay the chicken in the pan, pour over the two beaten eggs, cover and cook for 2 minutes, until just set. Slide over the rice."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C and the egg must be set. Best eaten straight away; refrigerate leftovers within an hour.",
+        "Contains egg, gluten and soy."
+      ],
+      "nutrition": {
+        "kcal": 760,
+        "proteinG": 50,
+        "carbsG": 90,
+        "fatG": 22,
+        "fibreG": 3,
+        "sodiumMg": 1300
+      }
+    },
+    {
+      "id": "italian-sub-with-salami-ham-and-provolone-style-mozzarella",
+      "title": "Italian Sub (with Salami, Ham and Mozzarella)",
+      "summary": "Salami, ham and mozzarella with crisp lettuce and an oregano and vinegar dressing in a crusty roll.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 2,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "1 crusty bread, halved and split",
+            "60g salami",
+            "60g ham",
+            "80g mozzarella, sliced",
+            "1 tomato, sliced",
+            "1/4 red onion, thinly sliced",
+            "1 cup lettuce, shredded",
+            "1 tbsp olive oil",
+            "1 tbsp red wine vinegar",
+            "1/2 tsp dried oregano"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the oil, vinegar and oregano and brush over the cut sides of the bread.",
+        "Layer the ham, salami and cheese on the base, then the tomato, onion and lettuce, piling until generously full.",
+        "Close, press firmly and cut in half."
+      ],
+      "notes": [
+        "Food safety: cured meats and cheese should stay below 5°C. For a packed lunch use an ice pack and eat within 4 hours.",
+        "Contains gluten and milk."
+      ],
+      "nutrition": {
+        "kcal": 433,
+        "proteinG": 22,
+        "carbsG": 38,
+        "fatG": 22,
+        "fibreG": 2,
+        "sodiumMg": 1700
+      }
+    },
+    {
+      "id": "chicken-parmigiana-rolls-with-marinara",
+      "title": "Chicken Parmigiana Rolls (with Marinara)",
+      "summary": "Crumbed chicken breast under tomato sauce and melted mozzarella in a toasted roll.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "500g chicken breast, sliced into 4 cutlets",
+            "2 tbsp plain flour",
+            "1 egg, beaten",
+            "1 cup panko",
+            "3 tbsp neutral oil",
+            "1 cup marinara",
+            "150g mozzarella, sliced",
+            "4 bread roll"
+          ]
+        }
+      ],
+      "steps": [
+        "Coat the cutlets in flour, egg, then panko.",
+        "Shallow fry in the oil for 4 minutes each side, until golden and cooked through to 75°C.",
+        "Top with the marinara and cheese and grill for 3 minutes, until the cheese bubbles.",
+        "Toast the rolls until crisp and fill with the cutlets."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C. Refrigerate leftovers within an hour and reheat until steaming hot.",
+        "Contains egg, milk and gluten."
+      ],
+      "nutrition": {
+        "kcal": 590,
+        "proteinG": 43,
+        "carbsG": 60,
+        "fatG": 20,
+        "fibreG": 4,
+        "sodiumMg": 1050
+      }
+    },
+    {
+      "id": "chilli-dogs-with-beef-and-bean-sauce",
+      "title": "Chilli Dogs (with Beef and Bean Sauce)",
+      "summary": "Frankfurts in soft buns under a quick smoky beef and bean chilli, an American lunch counter favourite.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 8,
+      "cookMinutes": 22,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g beef mince",
+            "1/2 brown onion, diced",
+            "1 tbsp chilli powder",
+            "1 tsp smoked paprika",
+            "1 tsp ground cumin",
+            "1 can tinned tomatoes",
+            "1/2 can kidney beans, drained",
+            "4 frankfurt",
+            "4 hot dog bun",
+            "2 tbsp yellow mustard"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the beef and onion for 8 minutes until no pink remains, then add the spices and cook for 1 minute.",
+        "Add the tomatoes and beans and simmer for 12 minutes, until thick and the beef reaches 75°C.",
+        "Heat the frankfurts in simmering water for 5 minutes, until steaming hot in the middle.",
+        "Fill the buns with the frankfurts, chilli and mustard."
+      ],
+      "notes": [
+        "Food safety: beef mince must reach 75°C and the frankfurts must be steaming hot. Refrigerate leftover chilli within an hour; it keeps 3 days and freezes well.",
+        "Contains gluten."
+      ],
+      "nutrition": {
+        "kcal": 470,
+        "proteinG": 25,
+        "carbsG": 35,
+        "fatG": 25,
+        "fibreG": 5,
+        "sodiumMg": 1300
+      }
+    },
+    {
+      "id": "smoked-salmon-and-cream-cheese-rye-sandwiches",
+      "title": "Smoked Salmon and Cream Cheese Rye Sandwiches",
+      "summary": "Dark rye with whipped cream cheese, smoked salmon, cucumber and capers, a quick no-cook lunch.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 8,
+      "cookMinutes": 0,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "pescatarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 rye bread",
+            "80g cream cheese",
+            "100g smoked salmon",
+            "1/2 cucumber, thinly sliced",
+            "1 tbsp capers",
+            "1 tbsp dill, chopped",
+            "1 lemon, juiced"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the cream cheese with the dill and a squeeze of lemon.",
+        "Spread over the rye until the bread is fully covered.",
+        "Lay the salmon, cucumber and capers over two slices, season with pepper and top with the other slices."
+      ],
+      "notes": [
+        "Food safety: smoked salmon is ready to eat but should be avoided by anyone pregnant or immunocompromised. Keep below 5°C; for a packed lunch use an ice pack and eat within 4 hours.",
+        "Contains fish, milk and gluten."
+      ],
+      "nutrition": {
+        "kcal": 400,
+        "proteinG": 20,
+        "carbsG": 35,
+        "fatG": 18,
+        "fibreG": 6,
+        "sodiumMg": 1400
+      }
+    },
+    {
+      "id": "prawn-and-corn-quesadillas-with-lime",
+      "title": "Prawn and Corn Quesadillas (with Lime)",
+      "summary": "Juicy prawns, sweet corn and capsicum under melted cheese in a crisp tortilla, finished with lime and coriander.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "pescatarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g prawn, peeled and chopped",
+            "1/2 cup corn kernels",
+            "1/2 capsicum, diced",
+            "1 tbsp neutral oil",
+            "1 tsp ground cumin",
+            "2 flour tortilla",
+            "100g mozzarella, grated",
+            "1 lime",
+            "2 tbsp coriander, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the prawns, corn, capsicum and cumin in half the oil for 4 minutes, until the prawns are pink and opaque.",
+        "Spread over half of each tortilla, add the cheese and coriander and fold over.",
+        "Cook in the remaining oil for 3 minutes each side, until golden and the cheese has melted. Serve with lime."
+      ],
+      "notes": [
+        "Food safety: prawns must be pink and opaque right through. Eat hot; for a packed lunch use an ice pack, eat within 4 hours and reheat until steaming.",
+        "Contains crustacean, gluten and milk."
+      ],
+      "nutrition": {
+        "kcal": 490,
+        "proteinG": 36,
+        "carbsG": 35,
+        "fatG": 23,
+        "fibreG": 3,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "tacos-de-chorizo-y-papa-chorizo-and-potato-tacos",
+      "title": "Tacos de Chorizo y Papa (Chorizo and Potato Tacos)",
+      "summary": "Crumbled chorizo fried with golden potato and spooned into warm corn tortillas with salsa and coriander.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g potato, diced into 1cm cubes",
+            "150g chorizo, diced",
+            "1/2 brown onion, diced",
+            "8 corn tortilla",
+            "1/2 cup salsa",
+            "2 tbsp coriander, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potato for 8 minutes until almost tender and drain.",
+        "Fry the chorizo in a dry pan for 5 minutes until the fat runs and it is crisp, then add the onion and potato and cook for 8 minutes, until golden.",
+        "Warm the tortillas and fill with the mixture, salsa and coriander."
+      ],
+      "notes": [
+        "Food safety: chorizo should be cooked until sizzling and hot all the way through. Refrigerate leftovers within an hour and reheat until steaming hot.",
+        "Check the chorizo label for gluten."
+      ],
+      "nutrition": {
+        "kcal": 360,
+        "proteinG": 14,
+        "carbsG": 41,
+        "fatG": 16,
+        "fibreG": 5,
+        "sodiumMg": 850
+      }
+    },
+    {
+      "id": "roasted-cauliflower-tacos-with-lime-yoghurt",
+      "title": "Roasted Cauliflower Tacos (with Lime Yoghurt)",
+      "summary": "Spiced roasted cauliflower in corn tortillas with avocado, red cabbage and a cooling lime yoghurt.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cauliflower, cut into small florets",
+            "2 tbsp olive oil",
+            "2 tsp smoked paprika",
+            "1 tsp ground cumin",
+            "8 corn tortilla",
+            "1 avocado, sliced",
+            "1 cup red cabbage, shredded",
+            "1/2 cup greek yoghurt",
+            "1 lime, juiced"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the cauliflower with the oil, paprika, cumin and salt and roast at 220°C (200°C fan) for 25 minutes, turning once, until charred and tender.",
+        "Stir the lime juice into the yoghurt with a pinch of salt.",
+        "Warm the tortillas and fill with cauliflower, avocado and cabbage, then drizzle with the yoghurt."
+      ],
+      "notes": [
+        "Keeps 2 days in the fridge; assemble just before eating.",
+        "Contains milk."
+      ],
+      "nutrition": {
+        "kcal": 320,
+        "proteinG": 9,
+        "carbsG": 37,
+        "fatG": 15,
+        "fibreG": 10,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "carne-asada-tacos-with-onion-and-coriander",
+      "title": "Carne Asada Tacos (with Onion and Coriander)",
+      "summary": "Lime and garlic skirt steak seared fast and chopped into warm corn tortillas with onion, coriander and salsa.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 8,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g skirt steak",
+            "2 limes, juiced",
+            "3 garlic clove, minced",
+            "1 tsp ground cumin",
+            "2 tbsp neutral oil",
+            "8 corn tortilla",
+            "1/2 white onion, finely diced",
+            "1/2 cup coriander, chopped",
+            "1/2 cup salsa"
+          ]
+        }
+      ],
+      "steps": [
+        "Rub the steak with the lime juice, garlic, cumin, oil and 1 tsp salt.",
+        "Sear in a very hot pan for 3 minutes each side for medium, until charred with a centre of 60°C. Rest for 5 minutes, then chop finely.",
+        "Warm the tortillas and fill with the steak, onion, coriander and salsa."
+      ],
+      "notes": [
+        "Food safety: whole steak is safe medium once seared on the outside; cook through for anyone vulnerable. For a packed lunch keep with an ice pack and eat within 4 hours.",
+        "No dairy or gluten in the ingredients."
+      ],
+      "nutrition": {
+        "kcal": 360,
+        "proteinG": 28,
+        "carbsG": 26,
+        "fatG": 16,
+        "fibreG": 4,
+        "sodiumMg": 620
+      }
+    },
+    {
+      "id": "sweetcorn-fritters-with-avocado-and-lime",
+      "title": "Sweetcorn Fritters (with Avocado and Lime)",
+      "summary": "Golden corn and spring onion fritters topped with smashed avocado, a brunch-cafe lunch ready in 20 minutes.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 3,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 can corn kernels, drained",
+            "3/4 cup plain flour",
+            "1 tsp baking powder",
+            "2 egg",
+            "1/2 cup milk",
+            "3 spring onion, sliced",
+            "3 tbsp neutral oil",
+            "1 avocado",
+            "1 lime, juiced"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the flour, baking powder, eggs, milk and a pinch of salt into a thick batter. Stir through the corn and spring onion.",
+        "Fry spoonfuls in the oil in batches for 2 minutes each side, until golden and cooked through in the middle.",
+        "Smash the avocado with the lime juice and salt and spoon over the fritters."
+      ],
+      "notes": [
+        "Food safety: fritters must be cooked through with no raw batter. Keep 2 days in the fridge and reheat until steaming hot.",
+        "Contains egg, gluten and milk."
+      ],
+      "nutrition": {
+        "kcal": 445,
+        "proteinG": 13,
+        "carbsG": 53,
+        "fatG": 20,
+        "fibreG": 7,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "hoisin-chicken-bao-buns-with-cucumber",
+      "title": "Hoisin Chicken Bao Buns (with Cucumber)",
+      "summary": "Steamed bao filled with sticky hoisin chicken, cucumber, spring onion and a little coriander.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "8 bao buns",
+            "400g chicken thigh, sliced",
+            "1 tbsp neutral oil",
+            "3 tbsp hoisin sauce",
+            "1 tbsp soy sauce",
+            "1 cucumber, cut into matchsticks",
+            "3 spring onion, sliced",
+            "1/4 cup coriander leaves"
+          ]
+        }
+      ],
+      "steps": [
+        "Stir-fry the chicken in the oil over high heat for 6 minutes, until cooked through to 75°C. Add the hoisin and soy sauce and toss for 1 minute, until sticky.",
+        "Steam the buns for 8 minutes, until soft and puffed.",
+        "Open the buns and fill with the chicken, cucumber, spring onion and coriander."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C. Refrigerate leftover chicken within an hour and reheat until steaming hot; steam leftover buns until hot all the way through.",
+        "Contains gluten and soy."
+      ],
+      "nutrition": {
+        "kcal": 420,
+        "proteinG": 25,
+        "carbsG": 52,
+        "fatG": 13,
+        "fibreG": 3,
+        "sodiumMg": 1050
+      }
+    },
+    {
+      "id": "chicken-rice-paper-rolls-with-peanut-dipping-sauce",
+      "title": "Chicken Rice Paper Rolls (with Peanut Dipping Sauce)",
+      "summary": "Fresh rolls of shredded chicken, vermicelli and herbs in rice paper with a creamy peanut hoisin dip.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 5,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "12 rice paper",
+            "100g rice vermicelli",
+            "250g cooked chicken, shredded",
+            "1 carrot, cut into matchsticks",
+            "1 cucumber, cut into matchsticks",
+            "1 cup lettuce",
+            "1/2 cup mint",
+            "1/2 cup coriander",
+            "3 tbsp peanut butter",
+            "1 tbsp hoisin sauce",
+            "1 lime, juiced"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the vermicelli in boiling water for 4 minutes until soft, then drain and rinse.",
+        "Dip a rice paper in warm water for 10 seconds, lay it flat and layer lettuce, noodles, chicken, carrot, cucumber and herbs on the lower third.",
+        "Fold in the sides and roll up firmly until the roll is tight. Repeat for 12 rolls.",
+        "Whisk the peanut butter, hoisin, lime juice and 3 tbsp warm water until smooth, for dipping."
+      ],
+      "notes": [
+        "Food safety: use chicken that was cooked through to 75°C and chilled within an hour. Fresh rolls are best eaten within 4 hours; for a packed lunch keep with an ice pack and cover with a damp cloth.",
+        "Contains peanuts and soy; check the hoisin label for gluten."
+      ],
+      "nutrition": {
+        "kcal": 350,
+        "proteinG": 21,
+        "carbsG": 45,
+        "fatG": 9,
+        "fibreG": 4,
+        "sodiumMg": 550
+      }
+    }
+  ]
+}

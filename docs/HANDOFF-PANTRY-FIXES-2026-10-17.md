@@ -68,3 +68,12 @@ The 15 tag additions in the compact file (e.g. dosa no-gluten, karahi no-dairy) 
 
 ### Progress, session 4 (17 Oct, helper via MCP)
 - Done: s06, s07, s08 (15/15 each, no errors). Next: s09 onward (s09..s28), then i01..i11 (split to ~5 rows). Inserts not started.
+
+## Batch-04 merged (17 Oct 2026)
+
+- `house-recipes-batch-04-merge` merged into main (local only, not pushed, no Supabase). Rollback point: tag `pre-batch04-2026-10-17`.
+- Conflicts: `package.json` (kept `catalogue:check-text`), `src/ui/tokens/cuisine.ts` (comment only), `scripts/validate-house-recipes.mts` (kept main's REVIEWED list, batch-03 guard, allergen exceptions, D-053 wording and the `ai-assisted` provenance; took batch-04's shared nutrition estimator). No D-number clashes.
+- Fix-ups: 13 batch-04 recipes had diets that disagreed with D-053 (pesto carries parmesan, so no longer vegetarian) or with the ingredient links (buckwheat and millet are gluten free): diets set to what the ingredients give, nothing loosened. `chinese-spring-onion-pancakes` dropped as the same dish as batch-03 `scallion-pancakes` (see `docs/DEDUPE-BATCH04.md`). Two reviewed near-duplicate exceptions added for the egg pancake rolls. Two `rank.test.ts` edge cases used filters that only stayed empty or tiny while the catalogue was small; they now use italian/hard/breakfast and filipino. Two `noUncheckedIndexedAccess` errors in `owner-upload-feed.mts` fixed.
+- Catalogue rebuilt with `scripts/rebuild-house-batches.mts` (the loader reads every `.json` in `scripts/data/house-recipes/`): **5338 recipes** (283 converted + 711 from batches 01 to 03 + 4344 from batch 04).
+- Checks: validate batch-04 4344/4344 and batches 01 to 03 711/711 (0 failures); check-house, check-text (5338 recipes), check-ingredients, typecheck, lint and format all clean; domain tests 389/389 (batch-03 test passes); Jest 110/110.
+- Slice C is still writing, so a small follow-up merge will come.

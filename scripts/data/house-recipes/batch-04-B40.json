@@ -1,0 +1,1212 @@
+{
+  "about": "House recipes, batch 04 (slice B): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "peanut-butter-oat-protein-bites",
+      "title": "Peanut Butter Oat Protein Bites",
+      "summary": "No-bake peanut butter, oat and coconut bites with chocolate chips, an easy after-school or gym-bag snack.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "90g rolled oats",
+            "130g peanut butter",
+            "60g honey",
+            "30g desiccated coconut",
+            "40g dark chocolate chips",
+            "2 tbsp milk"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the oats, peanut butter, honey, coconut and milk in a bowl until a thick sticky dough forms.",
+        "Fold through the chocolate chips.",
+        "Roll into 16 balls with damp hands.",
+        "Place on a tray lined with baking paper and chill until firm."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 bites. Plus 30 minutes chilling.",
+        "Keep in the fridge in an airtight container for up to 7 days."
+      ],
+      "nutrition": {
+        "kcal": 222,
+        "proteinG": 7,
+        "carbsG": 20,
+        "fatG": 12,
+        "fibreG": 3,
+        "sodiumMg": 70
+      }
+    },
+    {
+      "id": "dark-chocolate-topped-oat-squares",
+      "title": "Dark Chocolate Topped Oat Squares",
+      "summary": "Chewy no-bake oat bars bound with peanut butter and honey, topped with dark chocolate.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 5,
+      "servings": 12,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g rolled oats",
+            "150g peanut butter",
+            "100g honey",
+            "50g butter",
+            "3 tbsp cocoa powder",
+            "100g dark chocolate"
+          ]
+        }
+      ],
+      "steps": [
+        "Line a 20cm square tin with baking paper.",
+        "Melt the butter, peanut butter and honey in a pan over low heat for 3 minutes, stirring until smooth.",
+        "Stir in the oats and cocoa until evenly coated, then press firmly into the tin.",
+        "Melt the chocolate in short bursts in the microwave, stirring, and spread over the top.",
+        "Chill until set, then cut into 12 bars."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 bar. Plus 1 hour setting.",
+        "Keep in the fridge for up to 7 days."
+      ],
+      "nutrition": {
+        "kcal": 249,
+        "proteinG": 7,
+        "carbsG": 20,
+        "fatG": 15,
+        "fibreG": 3,
+        "sodiumMg": 90
+      }
+    },
+    {
+      "id": "apple-and-walnut-crumble-cups",
+      "title": "Apple and Walnut Crumble Cups",
+      "summary": "Cinnamon apples under a buttery oat and walnut crumble, baked in individual cups.",
+      "cuisine": "british",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 apples (about 600g), peeled and diced",
+            "2 tbsp caster sugar",
+            "1 tsp ground cinnamon",
+            "1 tbsp lemon juice",
+            "80g plain flour",
+            "40g rolled oats",
+            "60g cold butter, cubed",
+            "50g brown sugar",
+            "30g walnuts, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C fan (200°C conventional).",
+        "Toss the apple with the caster sugar, cinnamon and lemon juice and divide among six 200ml ovenproof cups.",
+        "Rub the butter into the flour, oats and brown sugar until it looks like coarse crumbs, then mix in the walnuts.",
+        "Scatter the crumble over the apples and place the cups on a tray.",
+        "Bake for 30 minutes until the top is golden and the apple is tender when pierced."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 cup.",
+        "Store covered in the fridge for up to 3 days and reheat at 160°C fan for 10 minutes."
+      ],
+      "nutrition": {
+        "kcal": 280,
+        "proteinG": 3,
+        "carbsG": 38,
+        "fatG": 12,
+        "fibreG": 4,
+        "sodiumMg": 80
+      }
+    },
+    {
+      "id": "rustic-apple-cinnamon-galette",
+      "title": "Rustic Apple Cinnamon Galette",
+      "summary": "A free-form buttery pastry tart folded around sliced cinnamon apple.",
+      "cuisine": "french",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 40,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g plain flour",
+            "100g cold butter, cubed",
+            "1 tbsp caster sugar",
+            "1/4 tsp salt",
+            "4 tbsp iced water",
+            "3 apples (about 450g), cored and thinly sliced",
+            "2 tbsp caster sugar, extra",
+            "1 tbsp cornflour",
+            "1 tsp ground cinnamon",
+            "1 tbsp milk",
+            "1 tbsp flaked almonds"
+          ]
+        }
+      ],
+      "steps": [
+        "Rub the butter into the flour, sugar and salt, add the iced water to bring it to a dough, then flatten, wrap and chill.",
+        "Heat the oven to 180°C fan (200°C conventional). Toss the apple with the extra sugar, cinnamon and cornflour.",
+        "Roll the pastry to a 30cm round on baking paper and pile the apple in the middle, leaving a 5cm border.",
+        "Fold the border over the fruit, brush with the milk and scatter over the almonds.",
+        "Bake for 40 minutes until the pastry is deep golden and the juices bubble. Cool for 15 minutes before cutting into 8 wedges."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 wedge. Plus 30 minutes chilling the dough.",
+        "Best eaten the day it is made; keep leftovers covered for 2 days."
+      ],
+      "nutrition": {
+        "kcal": 247,
+        "proteinG": 3,
+        "carbsG": 33,
+        "fatG": 11,
+        "fibreG": 2,
+        "sodiumMg": 100
+      }
+    },
+    {
+      "id": "pear-and-almond-galette",
+      "title": "Pear and Almond Galette",
+      "summary": "Free-form shortcrust tart with thin pear slices over a sweet almond layer.",
+      "cuisine": "french",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 40,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g plain flour",
+            "100g cold butter, cubed",
+            "1 tbsp caster sugar",
+            "1/4 tsp salt",
+            "4 tbsp iced water",
+            "60g ground almonds",
+            "30g caster sugar, extra",
+            "1 tbsp soft butter",
+            "3 pears, cored and thinly sliced",
+            "1 tbsp milk"
+          ]
+        }
+      ],
+      "steps": [
+        "Rub the cold butter into the flour, sugar and salt, add the iced water to make a dough, then flatten, wrap and chill.",
+        "Heat the oven to 180°C fan (200°C conventional). Mix the ground almonds, extra sugar and soft butter into a paste.",
+        "Roll the pastry to a 30cm round on baking paper, spread the paste over the middle leaving a 5cm border, then fan the pears on top.",
+        "Fold the border over the fruit and brush with the milk.",
+        "Bake for 40 minutes until deep golden. Cool for 15 minutes and cut into 8 wedges."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 wedge. Plus 30 minutes chilling the dough.",
+        "Store covered for up to 2 days."
+      ],
+      "nutrition": {
+        "kcal": 293,
+        "proteinG": 5,
+        "carbsG": 33,
+        "fatG": 15,
+        "fibreG": 3,
+        "sodiumMg": 100
+      }
+    },
+    {
+      "id": "spiced-poached-pears",
+      "title": "Spiced Poached Pears",
+      "summary": "Tender pears poached in a light cinnamon, ginger and lemon syrup, served warm or chilled.",
+      "cuisine": "french",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 firm pears (about 700g), peeled",
+            "3 cups water",
+            "70g caster sugar",
+            "1 cinnamon stick",
+            "3 slices fresh ginger",
+            "1/4 tsp ground cloves",
+            "3 strips lemon peel"
+          ]
+        }
+      ],
+      "steps": [
+        "Combine the water, sugar, cinnamon, ginger, cloves and lemon peel in a saucepan and stir over medium heat until the sugar dissolves.",
+        "Add the pears, cover with a piece of baking paper and simmer gently for 20 minutes until a knife slides in easily.",
+        "Lift the pears out and boil the syrup for 5 minutes until reduced by about a third.",
+        "Serve each pear with a spoonful of syrup."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: 1 pear with syrup.",
+        "Keeps in its syrup in the fridge for up to 4 days."
+      ],
+      "nutrition": {
+        "kcal": 158,
+        "proteinG": 1,
+        "carbsG": 36,
+        "fatG": 0,
+        "fibreG": 5,
+        "sodiumMg": 5
+      }
+    },
+    {
+      "id": "pear-and-ginger-crumble-pots",
+      "title": "Pear and Ginger Crumble Pots",
+      "summary": "Soft pears with ginger and orange under a golden oat crumble.",
+      "cuisine": "british",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 pears (about 600g), peeled and diced",
+            "1 tsp ground ginger",
+            "60g caster sugar",
+            "1/4 cup orange juice",
+            "80g plain flour",
+            "40g rolled oats",
+            "60g cold butter, cubed",
+            "50g brown sugar"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C fan (200°C conventional).",
+        "Toss the pear and ginger with the caster sugar and orange juice and divide among six 200ml ovenproof pots.",
+        "Rub the butter into the flour, oats and brown sugar until crumbly and scatter over the fruit.",
+        "Bake on a tray for 30 minutes until the topping is golden and the fruit bubbles.",
+        "Cool for 5 minutes before eating."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 pot.",
+        "Store covered in the fridge for up to 3 days."
+      ],
+      "nutrition": {
+        "kcal": 235,
+        "proteinG": 3,
+        "carbsG": 34,
+        "fatG": 9,
+        "fibreG": 3,
+        "sodiumMg": 70
+      }
+    },
+    {
+      "id": "apricot-jam-frangipane-tartlets",
+      "title": "Apricot Jam Frangipane Tartlets",
+      "summary": "Shortcrust cases with a spoonful of apricot jam under golden almond cream.",
+      "cuisine": "french",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 40,
+      "cookMinutes": 30,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g plain flour",
+            "100g cold butter, cubed",
+            "1 tbsp caster sugar",
+            "4 tbsp iced water",
+            "80g soft butter",
+            "80g caster sugar",
+            "1 egg",
+            "100g ground almonds",
+            "1 tbsp plain flour",
+            "3 tbsp apricot jam",
+            "2 tbsp flaked almonds"
+          ]
+        }
+      ],
+      "steps": [
+        "Rub the cold butter into the flour and sugar, add the iced water to make a dough, then wrap and chill.",
+        "Heat the oven to 170°C fan (190°C conventional). Roll the pastry 3mm thick, cut 12 rounds and press into a 12-hole tin.",
+        "Beat the soft butter and sugar until creamy, beat in the egg, then fold in the almonds and flour.",
+        "Put 1/2 tsp apricot jam in each case, divide the almond cream over the top and scatter with the flaked almonds.",
+        "Bake for 30 minutes until the filling is golden and set. Cool in the tin for 10 minutes."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 tartlet. Plus 30 minutes chilling the dough.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Keeps in an airtight container for up to 3 days."
+      ],
+      "nutrition": {
+        "kcal": 271,
+        "proteinG": 5,
+        "carbsG": 28,
+        "fatG": 15,
+        "fibreG": 2,
+        "sodiumMg": 90
+      }
+    },
+    {
+      "id": "choux-puffs-with-vanilla-cream",
+      "title": "Choux Puffs with Vanilla Cream",
+      "summary": "Crisp, hollow choux buns filled with softly whipped vanilla cream.",
+      "cuisine": "french",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 30,
+      "cookMinutes": 35,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "60g butter",
+            "150ml water",
+            "75g plain flour",
+            "3 eggs",
+            "200ml thickened cream",
+            "1 tbsp icing sugar",
+            "1 tsp vanilla extract"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional) and line two trays.",
+        "Bring the butter and water to a boil, tip in the flour all at once and beat for 2 minutes until it forms a smooth ball. Cool for 5 minutes.",
+        "Beat in the eggs one at a time until the paste is glossy and drops off the spoon, then pipe or spoon 12 mounds onto the trays.",
+        "Bake for 15 minutes, then reduce to 180°C fan (200°C conventional) and bake for 15 minutes until deep golden and hollow-sounding. Pierce each with a skewer and cool on a rack.",
+        "Whip the cream with the icing sugar and vanilla, split the puffs and fill just before serving."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 puffs.",
+        "Food safety: wash hands and the bench after handling raw egg; keep filled puffs in the fridge and eat within 1 day."
+      ],
+      "nutrition": {
+        "kcal": 278,
+        "proteinG": 6,
+        "carbsG": 18,
+        "fatG": 20,
+        "fibreG": 1,
+        "sodiumMg": 140
+      }
+    },
+    {
+      "id": "cheese-goug-res",
+      "title": "Cheese Gougères",
+      "summary": "Light savoury choux puffs flavoured with mustard and nutty cheese, best warm.",
+      "cuisine": "french",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 30,
+      "servings": 5,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "60g butter",
+            "150ml water",
+            "75g plain flour",
+            "3 eggs",
+            "80g vegetarian hard cheese, finely grated",
+            "1/2 tsp mustard powder",
+            "1/4 tsp ground black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional) and line two trays.",
+        "Bring the butter and water to a boil, tip in the flour all at once and beat for 2 minutes until it forms a smooth ball. Cool for 5 minutes.",
+        "Beat in the eggs one at a time, then stir in 60g of the cheese, the mustard and pepper.",
+        "Spoon 20 walnut-sized mounds onto the trays and sprinkle with the remaining cheese.",
+        "Bake for 15 minutes, then at 180°C fan (200°C conventional) for 15 minutes until puffed, deep golden and crisp."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 4 puffs.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Best warm the same day; re-crisp at 160°C fan for 5 minutes."
+      ],
+      "nutrition": {
+        "kcal": 251,
+        "proteinG": 10,
+        "carbsG": 14,
+        "fatG": 17,
+        "fibreG": 1,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "mini-chocolate-eclairs",
+      "title": "Mini Chocolate Eclairs",
+      "summary": "Choux fingers filled with whipped cream and dipped in dark chocolate glaze.",
+      "cuisine": "french",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 35,
+      "cookMinutes": 35,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "60g butter",
+            "150ml water",
+            "75g plain flour",
+            "3 eggs",
+            "200ml thickened cream",
+            "1 tbsp icing sugar",
+            "80g dark chocolate",
+            "2 tbsp thickened cream, extra"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional) and line two trays.",
+        "Bring the butter and water to a boil, tip in the flour and beat for 2 minutes until smooth. Cool for 5 minutes, then beat in the eggs one at a time until glossy.",
+        "Pipe 12 fingers about 8cm long onto the trays and bake for 15 minutes, then at 180°C fan (200°C conventional) for 15 minutes until golden and hollow-sounding. Cool on a rack.",
+        "Whip the 200ml cream with the icing sugar to soft peaks and fill the split éclairs.",
+        "Melt the chocolate with the extra cream, stir until smooth and dip the tops in the glaze. Let it set for 15 minutes."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 eclairs.",
+        "Food safety: wash hands and the bench after handling raw egg; keep filled éclairs in the fridge and eat within 1 day."
+      ],
+      "nutrition": {
+        "kcal": 352,
+        "proteinG": 7,
+        "carbsG": 26,
+        "fatG": 24,
+        "fibreG": 2,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "smoked-paprika-cheese-straws",
+      "title": "Smoked Paprika Cheese Straws",
+      "summary": "Crisp, buttery cheese pastry straws with a little mustard and paprika.",
+      "cuisine": "british",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g plain flour",
+            "100g cold butter, cubed",
+            "100g vegetarian hard cheese, finely grated",
+            "1/2 tsp mustard powder",
+            "1/2 tsp smoked paprika",
+            "1 egg yolk",
+            "1 tbsp cold water"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C fan (200°C conventional) and line two trays.",
+        "Rub the butter into the flour, mustard and paprika, then mix in the cheese, egg yolk and water to a dough.",
+        "Roll out 5mm thick and cut into 30 straws about 10cm long.",
+        "Place on the trays and bake for 15 minutes until golden, turning the trays halfway.",
+        "Cool on the trays for 5 minutes, then move to a rack."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 5 straws.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Store in an airtight container for up to 5 days."
+      ],
+      "nutrition": {
+        "kcal": 280,
+        "proteinG": 9,
+        "carbsG": 20,
+        "fatG": 18,
+        "fibreG": 1,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "cinnamon-apple-turnovers",
+      "title": "Cinnamon Apple Turnovers",
+      "summary": "Flaky puff pastry parcels around cinnamon-spiced apple.",
+      "cuisine": "french",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 sheets puff pastry",
+            "3 apples, peeled and diced",
+            "2 tbsp caster sugar",
+            "1 tsp ground cinnamon",
+            "1 tbsp lemon juice",
+            "1 tbsp butter",
+            "1 tbsp milk"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional) and line a tray.",
+        "Cook the apple, sugar, cinnamon, lemon juice and butter in a pan over medium heat for 8 minutes until soft but still holding shape, then cool.",
+        "Cut each pastry sheet into 4 squares, put a spoonful of apple on each and fold into triangles, pressing the edges with a fork.",
+        "Brush with the milk and cut a small slit in the top of each.",
+        "Bake for 25 minutes until puffed and deep golden. Cool for 10 minutes."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 turnover.",
+        "Best the day they are baked; reheat at 160°C fan for 5 minutes."
+      ],
+      "nutrition": {
+        "kcal": 215,
+        "proteinG": 3,
+        "carbsG": 22,
+        "fatG": 13,
+        "fibreG": 1,
+        "sodiumMg": 280
+      }
+    },
+    {
+      "id": "no-bake-lemon-cheesecake-jars",
+      "title": "No-Bake Lemon Cheesecake Jars",
+      "summary": "Layers of buttery oat base and whipped lemon cream cheese filling, set in jars without gelatine.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 5,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "80g rolled oats",
+            "50g butter",
+            "2 tbsp honey",
+            "250g cream cheese",
+            "150ml thickened cream",
+            "50g icing sugar",
+            "zest and juice of 2 lemons"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the oats in a dry pan for 4 minutes until golden, then stir in the butter and honey until combined. Cool.",
+        "Beat the cream cheese, icing sugar and lemon zest until smooth.",
+        "In another bowl whip the cream to soft peaks, then fold it into the cream cheese with the lemon juice until thick.",
+        "Press the oat mix into the base of six jars, then spoon the filling over the top.",
+        "Chill until the filling is firm and set."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 jar. Plus 4 hours chilling.",
+        "Keep in the fridge and eat within 3 days."
+      ],
+      "nutrition": {
+        "kcal": 394,
+        "proteinG": 6,
+        "carbsG": 33,
+        "fatG": 26,
+        "fibreG": 2,
+        "sodiumMg": 220
+      }
+    },
+    {
+      "id": "chocolate-peanut-crunch-slice",
+      "title": "Chocolate Peanut Crunch Slice",
+      "summary": "Toasted oat and peanut slice set in glossy dark chocolate, no oven needed for the base.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 10,
+      "servings": 12,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g rolled oats",
+            "100g roasted peanuts, roughly chopped",
+            "200g dark chocolate",
+            "40g butter",
+            "3 tbsp golden syrup"
+          ]
+        }
+      ],
+      "steps": [
+        "Line a 20cm square tin with baking paper.",
+        "Toast the oats in a dry pan for 5 minutes until golden, then mix with the peanuts.",
+        "Melt the chocolate, butter and golden syrup gently in a pan for 4 minutes, stirring until smooth.",
+        "Stir in the oats and peanuts, then press into the tin.",
+        "Chill until firm, then cut into 12 pieces."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 piece. Plus 1 hour chilling.",
+        "Keep in the fridge for up to 10 days."
+      ],
+      "nutrition": {
+        "kcal": 227,
+        "proteinG": 6,
+        "carbsG": 20,
+        "fatG": 13,
+        "fibreG": 3,
+        "sodiumMg": 40
+      }
+    },
+    {
+      "id": "baked-zeppole-with-ricotta-cream",
+      "title": "Baked Zeppole with Ricotta Cream",
+      "summary": "Oven-baked choux rings for San Giuseppe, filled with sweet lemony ricotta.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 30,
+      "cookMinutes": 30,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "60g butter",
+            "150ml water",
+            "75g plain flour",
+            "3 eggs",
+            "150g ricotta",
+            "30g caster sugar",
+            "zest of 1 lemon",
+            "2 tbsp icing sugar"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional) and line two trays.",
+        "Bring the butter and water to a boil, tip in the flour and beat for 2 minutes until smooth. Cool for 5 minutes, then beat in the eggs one at a time until glossy.",
+        "Pipe 12 rings about 6cm wide onto the trays and bake for 15 minutes, then at 180°C fan (200°C conventional) for 15 minutes until deep golden and hollow-sounding. Cool on a rack.",
+        "Beat the ricotta with the caster sugar and lemon zest until smooth.",
+        "Split the rings, fill with the ricotta cream and dust with the icing sugar."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 zeppole.",
+        "Food safety: wash hands and the bench after handling raw egg; keep filled zeppole in the fridge and eat within 1 day."
+      ],
+      "nutrition": {
+        "kcal": 230,
+        "proteinG": 6,
+        "carbsG": 24,
+        "fatG": 12,
+        "fibreG": 1,
+        "sodiumMg": 130
+      }
+    },
+    {
+      "id": "spinach-pakoras-shallow-fried",
+      "title": "Spinach Pakoras Shallow-Fried",
+      "summary": "Crisp chickpea-flour and spinach fritters, shallow-fried in a little oil.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "120g besan (chickpea flour)",
+            "2 tbsp rice flour",
+            "150g spinach, finely chopped",
+            "1 onion, finely sliced",
+            "1 tsp cumin seeds",
+            "1/2 tsp ground turmeric",
+            "1/2 tsp chilli flakes",
+            "1/2 tsp salt",
+            "about 100ml water",
+            "3 tbsp neutral oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the besan, rice flour, cumin, turmeric, chilli and salt, then stir in enough water for a thick batter.",
+        "Fold in the spinach and onion.",
+        "Heat the oil in a wide frying pan over medium heat. Drop in tablespoons of batter and fry for 3 minutes per side until deep golden and cooked through, in batches.",
+        "Drain on paper towel to make 16 pakoras, then serve hot with chutney."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: 4 pakoras.",
+        "Frying safety: shallow oil only, never leave the pan unattended, add batter away from you so it does not splash, and keep a lid nearby to smother a flare-up (never use water on oil)."
+      ],
+      "nutrition": {
+        "kcal": 188,
+        "proteinG": 8,
+        "carbsG": 23,
+        "fatG": 6,
+        "fibreG": 5,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "oven-crisp-calamari-rings",
+      "title": "Oven-Crisp Calamari Rings",
+      "summary": "Golden crumbed squid rings baked on a hot tray with paprika and lemon, no deep-frying.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g squid tubes, cut into 1cm rings",
+            "3 tbsp plain flour",
+            "1 egg, beaten",
+            "60g panko breadcrumbs",
+            "1 tsp smoked paprika",
+            "1/2 tsp salt",
+            "1 tbsp neutral oil",
+            "lemon wedges, to serve"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 210°C fan (230°C conventional) with a lined tray inside.",
+        "Pat the squid dry. Toss with the flour, dip in the egg, then press into the breadcrumbs mixed with the paprika and salt.",
+        "Brush the hot tray with the oil, spread the rings in a single layer and bake for 12 minutes, turning once, until golden and cooked through.",
+        "Serve straight away with lemon wedges."
+      ],
+      "notes": [
+        "Snack. Per serving: about 10 rings.",
+        "Food safety: keep raw squid refrigerated until needed, cook until opaque and piping hot, wash hands, boards and tray after handling raw seafood and egg, and refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 199,
+        "proteinG": 18,
+        "carbsG": 20,
+        "fatG": 5,
+        "fibreG": 1,
+        "sodiumMg": 480
+      }
+    },
+    {
+      "id": "baked-peas-kachori",
+      "title": "Baked Peas Kachori",
+      "summary": "Flaky spiced green pea parcels baked instead of fried.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 40,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g plain flour",
+            "3 tbsp neutral oil",
+            "1/2 tsp salt",
+            "100ml water",
+            "150g frozen peas, thawed",
+            "1 tsp cumin seeds",
+            "1 tsp ground coriander",
+            "1/2 tsp garam masala",
+            "1 tsp grated ginger",
+            "1 tbsp besan (chickpea flour)",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour, 2 tbsp oil and salt, add the water and knead for 5 minutes until smooth. Cover and rest.",
+        "Heat the remaining oil, fry the cumin and ginger for 1 minute, add the peas roughly mashed, spices and besan and cook for 4 minutes until dry. Add the lemon juice and cool.",
+        "Heat the oven to 180°C fan (200°C conventional). Divide the dough into 8 balls and roll each into a 9cm round.",
+        "Put a spoonful of filling in each, gather the edges, pinch closed and flatten gently.",
+        "Bake on a lined tray for 25 minutes, turning once, until golden and crisp."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: 2 kachori. Plus 20 minutes resting the dough.",
+        "Store in an airtight container for up to 3 days."
+      ],
+      "nutrition": {
+        "kcal": 317,
+        "proteinG": 9,
+        "carbsG": 47,
+        "fatG": 9,
+        "fibreG": 6,
+        "sodiumMg": 480
+      }
+    },
+    {
+      "id": "coconut-lime-no-bake-bites",
+      "title": "Coconut Lime No-Bake Bites",
+      "summary": "Zesty coconut and cashew bites rolled in coconut, no cooking required.",
+      "cuisine": "pacific-islands",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g desiccated coconut",
+            "100g cashews",
+            "60g honey",
+            "zest and juice of 2 limes",
+            "1 tbsp coconut oil, melted"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the cashews and 100g of the coconut in a food processor to fine crumbs.",
+        "Add the honey, lime zest, lime juice and coconut oil and blend until the mix clumps when pressed.",
+        "Roll into 16 balls, then roll in the remaining coconut and chill until firm."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 bites. Plus 30 minutes chilling.",
+        "Keep in the fridge for up to 7 days."
+      ],
+      "nutrition": {
+        "kcal": 237,
+        "proteinG": 4,
+        "carbsG": 15,
+        "fatG": 17,
+        "fibreG": 4,
+        "sodiumMg": 20
+      }
+    },
+    {
+      "id": "chickpea-chocolate-brownie-bites",
+      "title": "Chickpea Chocolate Brownie Bites",
+      "summary": "Fudgy mini brownie bites made with chickpeas and peanut butter, baked in a muffin tin.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g tin chickpeas, drained and rinsed",
+            "80g peanut butter",
+            "80g honey",
+            "3 tbsp cocoa powder",
+            "2 eggs",
+            "1/2 tsp baking powder",
+            "50g dark chocolate chips"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 170°C fan (190°C conventional) and grease a 12-hole mini muffin tin.",
+        "Blend the chickpeas, peanut butter, honey, cocoa, eggs and baking powder until completely smooth.",
+        "Stir in half the chocolate chips and spoon into the holes.",
+        "Top with the remaining chips and bake for 20 minutes until set and a skewer comes out nearly clean.",
+        "Cool in the tin for 10 minutes."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 bites.",
+        "Food safety: wash hands and the bench after handling raw egg.",
+        "Keep in the fridge for up to 4 days."
+      ],
+      "nutrition": {
+        "kcal": 259,
+        "proteinG": 9,
+        "carbsG": 24,
+        "fatG": 13,
+        "fibreG": 5,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "apple-cinnamon-hand-pies",
+      "title": "Apple Cinnamon Hand Pies",
+      "summary": "Little shortcrust pies filled with cinnamon apple, easy to carry.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 35,
+      "cookMinutes": 25,
+      "servings": 10,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g plain flour",
+            "125g cold butter, cubed",
+            "1/4 tsp salt",
+            "5 tbsp iced water",
+            "2 apples, peeled and finely diced",
+            "2 tbsp caster sugar",
+            "1 tsp ground cinnamon",
+            "1 tsp cornflour",
+            "1 tbsp milk"
+          ]
+        }
+      ],
+      "steps": [
+        "Rub the butter into the flour and salt, add the iced water to make a dough, then wrap and chill.",
+        "Cook the apple, sugar, cinnamon and cornflour in a pan for 6 minutes until soft and thick, then cool.",
+        "Heat the oven to 180°C fan (200°C conventional). Roll the pastry 3mm thick and cut 10 rounds with a 11cm cutter.",
+        "Put a spoonful of filling on each, fold over, press the edges with a fork and brush with the milk.",
+        "Bake on a lined tray for 25 minutes until golden. Cool for 10 minutes."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 pie. Plus 30 minutes chilling the dough.",
+        "Store in an airtight container for up to 3 days."
+      ],
+      "nutrition": {
+        "kcal": 210,
+        "proteinG": 3,
+        "carbsG": 26,
+        "fatG": 10,
+        "fibreG": 2,
+        "sodiumMg": 100
+      }
+    },
+    {
+      "id": "spinach-and-cheese-quiche-cups",
+      "title": "Spinach and Cheese Quiche Cups",
+      "summary": "Mini shortcrust cases filled with a soft egg, cheese and spinach custard.",
+      "cuisine": "french",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 35,
+      "cookMinutes": 25,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g plain flour",
+            "100g cold butter, cubed",
+            "4 tbsp iced water",
+            "3 eggs",
+            "150ml milk",
+            "80g vegetarian hard cheese, grated",
+            "50g baby spinach, chopped",
+            "2 spring onions, sliced",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Rub the butter into the flour, add the iced water to make a dough, then wrap and chill.",
+        "Heat the oven to 180°C fan (200°C conventional). Roll the pastry 3mm thick, cut 12 rounds and press into a 12-hole tin.",
+        "Whisk the eggs, milk and salt, then stir in the cheese, spinach and spring onion.",
+        "Pour into the cases and bake for 25 minutes until the filling is puffed, set and golden.",
+        "Cool for 5 minutes in the tin."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 cups. Plus 30 minutes chilling the dough.",
+        "Food safety: wash hands and the bench after handling raw egg; the filling must be fully set. Refrigerate leftovers within 2 hours and eat within 3 days."
+      ],
+      "nutrition": {
+        "kcal": 348,
+        "proteinG": 11,
+        "carbsG": 26,
+        "fatG": 22,
+        "fibreG": 1,
+        "sodiumMg": 320
+      }
+    },
+    {
+      "id": "roasted-cinnamon-apples-with-yoghurt",
+      "title": "Roasted Cinnamon Apples with Yoghurt",
+      "summary": "Soft cinnamon-honey apples roasted until jammy, spooned over thick yoghurt with pistachios.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 apples (about 600g), cored and cut into wedges",
+            "2 tbsp honey",
+            "1 cinnamon stick",
+            "1/4 cup orange juice",
+            "250g Greek yoghurt",
+            "2 tbsp chopped pistachios"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C fan (200°C conventional).",
+        "Place the apple wedges in a baking dish with the honey, cinnamon stick and orange juice.",
+        "Roast for 25 minutes until tender and the juices turn syrupy.",
+        "Divide the yoghurt among four bowls and spoon over the apple and juices.",
+        "Scatter with the pistachios."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 cup of apple with yoghurt.",
+        "Apples keep in the fridge for 3 days; add yoghurt when serving."
+      ],
+      "nutrition": {
+        "kcal": 173,
+        "proteinG": 7,
+        "carbsG": 24,
+        "fatG": 5,
+        "fibreG": 2,
+        "sodiumMg": 40
+      }
+    }
+  ]
+}

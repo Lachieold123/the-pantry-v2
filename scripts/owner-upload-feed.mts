@@ -301,7 +301,7 @@ async function main() {
     );
     const { data: off, error: offErr } = await db.from('cooks').select('id').eq('kind', 'official').limit(1);
     if (offErr || !off?.length) throw new Error(`official cook lookup failed: ${offErr ? errMsg(offErr) : 'none found'}`);
-    const officialId = off[0].id as string;
+    const officialId = off[0]?.id as string;
     const pubs = await selectAll<{ cook_id: string; cuisine: string }>((f, t) =>
       db.from('published_recipes').select('cook_id, cuisine').eq('status', 'published').range(f, t),
     );
@@ -322,7 +322,7 @@ async function main() {
       const n = seen.get(r.cuisine) ?? 0;
       seen.set(r.cuisine, n + 1);
       const list = cands.get(r.cuisine);
-      const cookId = list?.length ? list[n % list.length].id : officialId;
+      const cookId = list?.length ? (list[n % list.length]?.id ?? officialId) : officialId;
       const notes = r.recipe.notes as Json[] | undefined;
       const recipe = notes ? { ...r.recipe, notes: cleanNotes(notes) } : r.recipe;
       const { data, error } = await db

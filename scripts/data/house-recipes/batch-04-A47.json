@@ -1,0 +1,1199 @@
+{
+ "about": "Batch 04, slice A, chunk A47: hidden-veg kid dinners, leftover-roast makeovers, BBQ and grill nights, under-30-minute and freezer-to-table dinners.",
+ "recipes": [
+  {
+   "id": "hidden-veg-beef-and-carrot-pasta-sauce-with-spirals",
+   "title": "Hidden-Veg Beef and Carrot Pasta Sauce with Spirals",
+   "summary": "A smooth tomato beef sauce with carrot, zucchini and capsicum blended in, loved by fussy eaters.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g beef mince",
+      "1 tbsp olive oil",
+      "1 onion, diced",
+      "2 carrot, grated",
+      "1 zucchini, grated",
+      "1 capsicum, diced",
+      "2 clove garlic, crushed",
+      "400g tinned tomatoes",
+      "1 tsp dried oregano",
+      "300g fusilli"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the mince in the oil for 6 minutes until no pink remains, then add the onion, carrot, zucchini, capsicum and garlic and cook for 8 minutes until very soft.",
+    "Add the tomatoes and oregano and simmer for 15 minutes until thick, then blend with a stick blender until smooth.",
+    "Boil the fusilli for 10 minutes until al dente, drain and toss with the sauce."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C right through with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
+    "Contains gluten."
+   ],
+   "nutrition": {
+    "kcal": 500,
+    "proteinG": 30,
+    "carbsG": 64,
+    "fatG": 13,
+    "fibreG": 7,
+    "sodiumMg": 360
+   }
+  },
+  {
+   "id": "hidden-veg-chicken-nuggets-with-sweet-potato-wedges",
+   "title": "Hidden-Veg Chicken Nuggets with Sweet Potato Wedges",
+   "summary": "Baked nuggets with grated cauliflower and zucchini mixed in, served with sweet potato wedges.",
+   "cuisine": "american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g chicken mince",
+      "1 cup cauliflower, finely grated",
+      "1/2 zucchini, grated",
+      "1/2 cup breadcrumbs",
+      "1 egg",
+      "1/2 tsp garlic powder",
+      "1/2 tsp salt",
+      "1 cup breadcrumbs",
+      "2 tbsp olive oil",
+      "600g sweet potato, cut in wedges"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Squeeze the zucchini dry and mix with the chicken, cauliflower, first breadcrumbs, egg, garlic powder and salt.",
+    "Shape into 20 nuggets, roll in the second breadcrumbs and bake on a tray with half the oil for 20 minutes, turning once, until golden and 75°C inside.",
+    "Toss the wedges with the remaining oil and roast alongside for 30 minutes until crisp."
+   ],
+   "notes": [
+    "Food safety: chicken nuggets must reach 75°C right through with no pink; wash hands after handling raw chicken and egg, and eat leftovers within 2 days.",
+    "Contains egg and gluten."
+   ],
+   "nutrition": {
+    "kcal": 520,
+    "proteinG": 36,
+    "carbsG": 58,
+    "fatG": 16,
+    "fibreG": 7,
+    "sodiumMg": 680
+   }
+  },
+  {
+   "id": "hidden-veg-mac-and-cheese-with-butternut-pumpkin",
+   "title": "Hidden-Veg Mac and Cheese with Pumpkin",
+   "summary": "Creamy macaroni cheese where pumpkin puree makes the sauce golden, sweet and extra nutritious.",
+   "cuisine": "american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g macaroni",
+      "300g pumpkin, cubed",
+      "1 1/2 cup milk",
+      "1 cup cheddar, grated",
+      "1 tsp mustard",
+      "1/2 tsp garlic powder",
+      "1/2 tsp salt",
+      "1 cup frozen peas"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the pumpkin in the milk for 12 minutes until soft, then blend until smooth.",
+    "Boil the macaroni for 8 minutes until tender, adding the peas for the last 2 minutes, then drain.",
+    "Heat the pumpkin sauce with the mustard, garlic powder and salt, stir in the cheese until melted, then fold through the pasta."
+   ],
+   "notes": [
+    "Contains gluten and milk. Refrigerate leftovers within 2 hours and eat within 3 days."
+   ],
+   "nutrition": {
+    "kcal": 530,
+    "proteinG": 24,
+    "carbsG": 74,
+    "fatG": 16,
+    "fibreG": 6,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "hidden-veg-meatballs-in-tomato-sauce",
+   "title": "Hidden-Veg Meatballs in Tomato Sauce",
+   "summary": "Soft beef meatballs hiding grated carrot and zucchini, simmered in mild tomato sauce.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g beef mince",
+      "1 carrot, grated",
+      "1 zucchini, grated",
+      "1/3 cup breadcrumbs",
+      "1 egg",
+      "1 tsp dried oregano",
+      "1/2 tsp salt",
+      "1 tbsp olive oil",
+      "400g tinned tomatoes",
+      "1 clove garlic, crushed",
+      "300g spaghetti"
+     ]
+    }
+   ],
+   "steps": [
+    "Squeeze the zucchini dry and mix with the mince, carrot, breadcrumbs, egg, oregano and salt and roll into 20 meatballs.",
+    "Brown in the oil for 5 minutes, add the tomatoes and garlic and simmer for 15 minutes until the meatballs reach 75°C and the sauce is thick.",
+    "Boil the spaghetti for 10 minutes until al dente and serve with the meatballs."
+   ],
+   "notes": [
+    "Food safety: beef mince meatballs must reach 75°C right through with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
+    "Contains egg and gluten."
+   ],
+   "nutrition": {
+    "kcal": 570,
+    "proteinG": 36,
+    "carbsG": 64,
+    "fatG": 18,
+    "fibreG": 5,
+    "sodiumMg": 560
+   }
+  },
+  {
+   "id": "hidden-veg-fish-fingers-with-broccoli-mash",
+   "title": "Hidden-Veg Fish Fingers with Broccoli Mash",
+   "summary": "Crumbed fish fingers with a green-tinged potato and broccoli mash kids happily eat.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g white fish fillet, cut into fingers",
+      "1/4 cup flour",
+      "1 egg",
+      "1 cup breadcrumbs",
+      "2 tbsp olive oil",
+      "600g potato, peeled and cubed",
+      "1 head broccoli, cut into florets",
+      "20g butter",
+      "1/4 cup milk",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Coat the fish in flour, egg then breadcrumbs, place on an oiled tray and bake for 15 minutes until golden and the fish flakes.",
+    "Boil the potato for 12 minutes, add the broccoli for 5 minutes more until both are very soft, then drain.",
+    "Mash with the butter, milk and salt until smooth and green-flecked and serve with the fish fingers."
+   ],
+   "notes": [
+    "Food safety: fish should be opaque and flake easily, reaching 63°C; refrigerate leftovers within 2 hours and eat within 1 day.",
+    "Contains fish, egg, gluten and milk."
+   ],
+   "nutrition": {
+    "kcal": 480,
+    "proteinG": 35,
+    "carbsG": 56,
+    "fatG": 13,
+    "fibreG": 6,
+    "sodiumMg": 560
+   }
+  },
+  {
+   "id": "hidden-veg-cheesy-chicken-quesadillas",
+   "title": "Hidden-Veg Cheesy Chicken Quesadillas",
+   "summary": "Crisp tortillas filled with melty cheese, shredded chicken and finely grated carrot and spinach.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "400g chicken breast, diced",
+      "1 tbsp olive oil",
+      "1 carrot, grated",
+      "100g spinach, chopped",
+      "1/2 tsp ground cumin",
+      "1/2 tsp salt",
+      "8 flour tortilla",
+      "1 1/2 cup cheddar, grated"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the chicken in the oil for 6 minutes until cooked to 75°C, then add the carrot, spinach, cumin and salt for 2 minutes until wilted.",
+    "Fill half of each tortilla with the chicken mix and cheese, fold over and press.",
+    "Cook in a dry pan for 2 minutes a side until crisp and the cheese has melted. Slice into wedges."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
+    "Contains gluten and milk."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 38,
+    "carbsG": 44,
+    "fatG": 26,
+    "fibreG": 4,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "roast-chicken-leftover-fried-rice-with-peas",
+   "title": "Roast Chicken Leftover Fried Rice with Peas",
+   "summary": "Use up cold roast chicken in a quick egg fried rice with peas, spring onion and soy sauce.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "3 cup cooked rice, cold",
+      "300g roast chicken, shredded",
+      "2 tbsp vegetable oil",
+      "2 egg",
+      "1 cup frozen peas",
+      "3 spring onion, sliced",
+      "2 clove garlic, crushed",
+      "2 tbsp soy sauce",
+      "1 tsp sesame oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat half the oil in a wok, scramble the eggs for 1 minute until set and tip out.",
+    "Stir-fry the garlic, chicken and peas in the remaining oil for 2 minutes, add the cold rice and fry for 4 minutes until hot and lightly crisp.",
+    "Return the egg with the soy sauce, sesame oil and spring onion and toss until steaming hot."
+   ],
+   "notes": [
+    "Food safety: use roast chicken within 2 days of cooking, keep cooked rice chilled and refrigerate it within 1 hour, and reheat everything until steaming hot (75°C).",
+    "Contains egg, soy, gluten and sesame."
+   ],
+   "nutrition": {
+    "kcal": 450,
+    "proteinG": 32,
+    "carbsG": 50,
+    "fatG": 13,
+    "fibreG": 4,
+    "sodiumMg": 880
+   }
+  },
+  {
+   "id": "roast-beef-leftover-shepherds-style-hash-with-fried-egg",
+   "title": "Roast Beef Leftover Hash with Fried Egg",
+   "summary": "Crisp potato and onion hash with chopped cold roast beef, topped with a runny fried egg.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g potato, cubed",
+      "2 tbsp olive oil",
+      "1 onion, diced",
+      "300g roast beef, diced",
+      "1 tsp smoked paprika",
+      "1 tbsp Worcestershire sauce",
+      "4 egg",
+      "2 tbsp parsley, chopped",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the potato for 6 minutes until just tender and drain well.",
+    "Fry the potato and onion in the oil for 10 minutes until crisp and golden, then add the beef, paprika, Worcestershire sauce and salt for 3 minutes until hot.",
+    "Fry the eggs in a little oil for 3 minutes until the whites are set and serve on the hash with parsley."
+   ],
+   "notes": [
+    "Food safety: use roast beef within 2 days of cooking and reheat to 75°C; eggs should be cooked until the whites are set. Not for pregnant women or the elderly if the yolk is runny.",
+    "Contains egg. Worcestershire sauce contains fish and gluten."
+   ],
+   "nutrition": {
+    "kcal": 480,
+    "proteinG": 34,
+    "carbsG": 36,
+    "fatG": 22,
+    "fibreG": 4,
+    "sodiumMg": 760
+   }
+  },
+  {
+   "id": "roast-lamb-leftover-pita-pockets-with-tzatziki",
+   "title": "Roast Lamb Leftover Pita Pockets with Tzatziki",
+   "summary": "Shredded cold roast lamb warmed with cumin and stuffed into pita with crisp salad and tzatziki.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 8,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "400g lamb shoulder, cooked and shredded",
+      "1 tbsp olive oil",
+      "1 tsp ground cumin",
+      "1 tsp dried oregano",
+      "4 pita bread",
+      "1 cup yoghurt",
+      "1/2 cucumber, grated",
+      "1 clove garlic, crushed",
+      "2 tomato, sliced",
+      "1/2 red onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Warm the lamb in the oil with the cumin and oregano for 5 minutes until steaming hot and edges crisp.",
+    "Squeeze the cucumber dry and stir into the yoghurt with the garlic.",
+    "Warm the pita, fill with the lamb, tomato and onion and spoon over the tzatziki."
+   ],
+   "notes": [
+    "Food safety: use roast lamb within 2 days of cooking and reheat until steaming hot (75°C).",
+    "Contains gluten and milk."
+   ],
+   "nutrition": {
+    "kcal": 500,
+    "proteinG": 38,
+    "carbsG": 42,
+    "fatG": 19,
+    "fibreG": 4,
+    "sodiumMg": 560
+   }
+  },
+  {
+   "id": "roast-pork-leftover-ramen-style-noodle-soup",
+   "title": "Roast Pork Leftover Noodle Soup",
+   "summary": "Slices of cold roast pork warmed in a ginger-soy broth with noodles, greens and a boiled egg.",
+   "cuisine": "japanese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "250g egg noodles",
+      "300g roast pork, sliced",
+      "6 cup chicken stock",
+      "2 tbsp soy sauce",
+      "1 tbsp ginger, grated",
+      "2 clove garlic, crushed",
+      "4 egg",
+      "200g bok choy, halved",
+      "3 spring onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the eggs for 7 minutes, cool in cold water, peel and halve.",
+    "Simmer the stock, soy sauce, ginger and garlic for 8 minutes until fragrant, add the noodles for 4 minutes until tender and the bok choy for the last 2 minutes.",
+    "Add the pork for 1 minute until steaming hot and serve topped with the eggs and spring onion."
+   ],
+   "notes": [
+    "Food safety: use roast pork within 2 days of cooking and reheat until steaming hot (75°C); boil eggs until the whites are firm.",
+    "Contains egg, soy and gluten."
+   ],
+   "nutrition": {
+    "kcal": 460,
+    "proteinG": 36,
+    "carbsG": 40,
+    "fatG": 16,
+    "fibreG": 3,
+    "sodiumMg": 1420
+   }
+  },
+  {
+   "id": "bbq-lemon-herb-chicken-skewers-with-greek-salad",
+   "title": "BBQ Lemon Herb Chicken Skewers with Greek Salad",
+   "summary": "Juicy chicken skewers marinated in lemon and oregano, grilled and served with a crisp Greek salad.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 12,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g chicken thigh, cubed",
+      "3 tbsp olive oil",
+      "2 lemon, juiced",
+      "3 clove garlic, crushed",
+      "2 tsp dried oregano",
+      "1/2 tsp salt",
+      "2 tomato, diced",
+      "1 cucumber, diced",
+      "1/2 red onion, sliced",
+      "1/2 cup olives",
+      "150g feta"
+     ]
+    }
+   ],
+   "steps": [
+    "Marinate the chicken in half the oil, half the lemon juice, the garlic, oregano and salt for at least 30 minutes, then thread onto skewers.",
+    "Grill over medium-high heat for 10 minutes, turning, until charred and the chicken reaches 75°C.",
+    "Toss the tomato, cucumber, onion and olives with the remaining oil and lemon juice, crumble over the feta and serve with the skewers."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C with no pink; keep marinade away from cooked food, wash hands and boards, and eat leftovers within 2 days.",
+    "Contains milk."
+   ],
+   "nutrition": {
+    "kcal": 500,
+    "proteinG": 38,
+    "carbsG": 10,
+    "fatG": 34,
+    "fibreG": 3,
+    "sodiumMg": 1020
+   }
+  },
+  {
+   "id": "bbq-honey-mustard-pork-chops-with-corn-on-the-cob",
+   "title": "BBQ Honey Mustard Pork Chops with Corn on the Cob",
+   "summary": "Sticky honey mustard pork chops grilled alongside buttery sweet corn.",
+   "cuisine": "american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 pork chop",
+      "2 tbsp honey",
+      "2 tbsp mustard",
+      "1 tbsp olive oil",
+      "1 clove garlic, crushed",
+      "1/2 tsp salt",
+      "4 corn cob",
+      "30g butter",
+      "200g green beans"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the honey, mustard, oil, garlic and salt and brush over the chops.",
+    "Grill the corn over medium heat for 12 minutes, turning, and the chops for 5 minutes a side, basting until the pork reaches 70°C and is glazed.",
+    "Steam the beans for 5 minutes until tender, brush the corn with the butter and serve."
+   ],
+   "notes": [
+    "Food safety: pork chops must reach 70°C, then rest 3 minutes; wash hands after handling raw pork and eat leftovers within 2 days.",
+    "Contains milk."
+   ],
+   "nutrition": {
+    "kcal": 149,
+    "proteinG": 11,
+    "carbsG": 11,
+    "fatG": 6,
+    "fibreG": 1,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "bbq-smoky-prawn-skewers-with-mango-salsa",
+   "title": "BBQ Smoky Prawn Skewers with Mango Salsa",
+   "summary": "Paprika prawns flash-grilled and served with a fresh mango, lime and coriander salsa.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 5,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g prawns, peeled",
+      "2 tbsp olive oil",
+      "1 tsp smoked paprika",
+      "2 clove garlic, crushed",
+      "1 mango, diced",
+      "1/2 red onion, diced",
+      "1 capsicum, diced",
+      "2 tbsp lime juice",
+      "1/4 cup coriander, chopped",
+      "1 cup basmati rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the prawns with the oil, paprika and garlic and thread onto skewers.",
+    "Mix the mango, onion, capsicum, lime juice and coriander for the salsa. Cook the rice for 12 minutes until tender.",
+    "Grill the skewers over high heat for 2 minutes a side until pink and opaque and serve with the salsa and rice."
+   ],
+   "notes": [
+    "Food safety: cook prawns until pink and opaque; refrigerate leftovers within 2 hours and eat within 1 day, and refrigerate rice within 1 hour.",
+    "Contains crustacean shellfish."
+   ],
+   "nutrition": {
+    "kcal": 400,
+    "proteinG": 30,
+    "carbsG": 56,
+    "fatG": 8,
+    "fibreG": 3,
+    "sodiumMg": 480
+   }
+  },
+  {
+   "id": "bbq-beef-burgers-with-grilled-pineapple-and-slaw",
+   "title": "BBQ Beef Burgers with Grilled Pineapple and Slaw",
+   "summary": "Thick beef burgers topped with charred pineapple and a creamy cabbage slaw.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "500g beef mince",
+      "1 tsp smoked paprika",
+      "1/2 tsp salt",
+      "4 pineapple, sliced",
+      "4 burger bun",
+      "2 cup cabbage, shredded",
+      "1 carrot, grated",
+      "3 tbsp yoghurt",
+      "1 tbsp lemon juice",
+      "4 lettuce leaf"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the mince with the paprika and salt and shape into 4 patties.",
+    "Grill the patties over medium-high heat for 6 minutes a side until 75°C inside and the pineapple for 2 minutes a side until charred.",
+    "Toss the cabbage, carrot, yoghurt and lemon juice into a slaw and build the burgers in toasted buns."
+   ],
+   "notes": [
+    "Food safety: burger patties must reach 75°C right through with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
+    "Contains gluten and milk."
+   ],
+   "nutrition": {
+    "kcal": 500,
+    "proteinG": 32,
+    "carbsG": 50,
+    "fatG": 18,
+    "fibreG": 4,
+    "sodiumMg": 600
+   }
+  },
+  {
+   "id": "bbq-lamb-cutlets-with-minted-yoghurt-and-zucchini",
+   "title": "BBQ Lamb Cutlets with Minted Yoghurt and Zucchini",
+   "summary": "Quick-grilled lamb cutlets with charred zucchini ribbons and a cooling mint yoghurt.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 12,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "12 lamb cutlet",
+      "2 tbsp olive oil",
+      "2 clove garlic, crushed",
+      "1 tsp ground cumin",
+      "1/2 tsp salt",
+      "3 zucchini, sliced lengthways",
+      "1 cup yoghurt",
+      "2 tbsp mint, chopped",
+      "1 lemon, juiced",
+      "4 flatbread"
+     ]
+    }
+   ],
+   "steps": [
+    "Rub the cutlets with half the oil, garlic, cumin and salt. Toss the zucchini with the remaining oil.",
+    "Grill the cutlets for 3 minutes a side until browned, rest 3 minutes, and grill the zucchini for 3 minutes a side until charred.",
+    "Stir the mint and lemon juice into the yoghurt and serve with the lamb, zucchini and warmed flatbread."
+   ],
+   "notes": [
+    "Food safety: lamb cutlets are whole cuts: sear all sides and rest, aiming for 63°C for medium or 71°C for well done; eat leftovers within 2 days.",
+    "Contains gluten and milk."
+   ],
+   "nutrition": {
+    "kcal": 295,
+    "proteinG": 19,
+    "carbsG": 20,
+    "fatG": 16,
+    "fibreG": 2,
+    "sodiumMg": 620
+   }
+  },
+  {
+   "id": "quick-lemon-garlic-prawn-and-courgette-pasta-in-20-minutes",
+   "title": "Quick Lemon Garlic Prawn and Zucchini Pasta in 20 Minutes",
+   "summary": "Spaghetti with garlicky prawns and zucchini ribbons, on the table in 20 minutes.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 8,
+   "cookMinutes": 12,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g spaghetti",
+      "500g prawns, peeled",
+      "2 tbsp olive oil",
+      "3 clove garlic, crushed",
+      "2 zucchini, sliced thinly",
+      "1 lemon, zested and juiced",
+      "1/2 tsp chilli flakes",
+      "1/4 cup parsley, chopped",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the spaghetti for 10 minutes until al dente and keep half a cup of the water.",
+    "Sear the prawns in the oil for 2 minutes until pink, add the garlic, zucchini and chilli for 3 minutes until just tender.",
+    "Toss with the pasta, lemon zest and juice, parsley, salt and a splash of water until glossy."
+   ],
+   "notes": [
+    "Food safety: cook prawns until pink and opaque; refrigerate leftovers within 2 hours and eat within 1 day.",
+    "Contains gluten and crustacean shellfish."
+   ],
+   "nutrition": {
+    "kcal": 470,
+    "proteinG": 32,
+    "carbsG": 66,
+    "fatG": 9,
+    "fibreG": 4,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "quick-chicken-and-vegetable-teriyaki-noodles-in-25-minutes",
+   "title": "Quick Chicken and Vegetable Teriyaki Noodles in 25 Minutes",
+   "summary": "A fast stir-fry of chicken, carrot and cabbage in a sticky homemade teriyaki sauce.",
+   "cuisine": "japanese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g chicken thigh, sliced",
+      "2 tbsp vegetable oil",
+      "250g egg noodles",
+      "2 carrot, julienned",
+      "2 cup cabbage, shredded",
+      "3 tbsp soy sauce",
+      "2 tbsp honey",
+      "1 tbsp rice vinegar",
+      "2 clove garlic, crushed",
+      "1 tsp ginger, grated"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the noodles for 4 minutes until tender and drain. Whisk the soy sauce, honey, vinegar, garlic and ginger together.",
+    "Stir-fry the chicken in the oil for 6 minutes until golden and cooked to 75°C, add the carrot and cabbage for 3 minutes.",
+    "Pour in the sauce and noodles and toss for 2 minutes until glossy and hot."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
+    "Contains soy, gluten and egg."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 34,
+    "carbsG": 68,
+    "fatG": 17,
+    "fibreG": 4,
+    "sodiumMg": 1020
+   }
+  },
+  {
+   "id": "quick-black-bean-and-corn-tostadas-in-20-minutes",
+   "title": "Quick Black Bean and Corn Tostadas in 20 Minutes",
+   "summary": "Crisp tortillas piled with spiced black beans, corn, avocado and lime, with no long cooking.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 corn tortilla",
+      "2 tbsp olive oil",
+      "400g tinned black beans, drained",
+      "1 tsp ground cumin",
+      "1 clove garlic, crushed",
+      "1 cup corn kernels",
+      "1 avocado, diced",
+      "2 tomato, diced",
+      "2 tbsp lime juice",
+      "1/4 cup coriander, chopped",
+      "1/2 cup yoghurt"
+     ]
+    }
+   ],
+   "steps": [
+    "Brush the tortillas with half the oil and bake at 200°C (180°C fan) for 6 minutes until crisp.",
+    "Warm the beans with the cumin, garlic and remaining oil for 5 minutes, mashing about half roughly.",
+    "Spread the beans over the tostadas and top with corn, avocado, tomato, lime juice, coriander and a spoonful of yoghurt."
+   ],
+   "notes": [
+    "Contains milk. Refrigerate leftovers within 2 hours."
+   ],
+   "nutrition": {
+    "kcal": 470,
+    "proteinG": 15,
+    "carbsG": 62,
+    "fatG": 18,
+    "fibreG": 14,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "quick-crisp-fish-with-garlic-parsley-butter-and-greens",
+   "title": "Quick Crisp Fish with Garlic Parsley Butter and Greens",
+   "summary": "Crisp-skinned fish fillets in a bright caper butter with garlicky green beans and broccolini.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 8,
+   "cookMinutes": 12,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 white fish fillet",
+      "2 tbsp olive oil",
+      "40g butter",
+      "1/4 cup parsley, chopped",
+      "1 lemon, juiced",
+      "2 clove garlic, crushed",
+      "200g green beans",
+      "200g broccolini",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Pat the fish dry, season with the salt and pan-fry in the oil for 4 minutes a side until golden and it flakes easily.",
+    "Steam the beans and broccolini for 5 minutes until tender-crisp.",
+    "Melt the butter with the parsley, lemon juice and garlic for 1 minute until foaming and spoon over the fish and greens."
+   ],
+   "notes": [
+    "Food safety: fish should be opaque and flake easily, reaching 63°C; refrigerate leftovers within 2 hours and eat within 1 day.",
+    "Contains fish and milk."
+   ],
+   "nutrition": {
+    "kcal": 330,
+    "proteinG": 37,
+    "carbsG": 10,
+    "fatG": 16,
+    "fibreG": 4,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "quick-egg-and-vegetable-shakshuka-for-the-family",
+   "title": "Quick Egg and Vegetable Shakshuka for the Family",
+   "summary": "Eggs baked in spiced tomato and capsicum sauce, ready in 25 minutes with flatbread.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 8,
+   "cookMinutes": 17,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp olive oil",
+      "1 onion, diced",
+      "1 capsicum, diced",
+      "3 clove garlic, crushed",
+      "1 tsp ground cumin",
+      "1 tsp smoked paprika",
+      "800g tinned tomatoes",
+      "6 egg",
+      "1/4 cup parsley, chopped",
+      "4 flatbread",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Soften the onion and capsicum in the oil for 5 minutes, add the garlic and spices for 1 minute until fragrant.",
+    "Add the tomatoes and salt and simmer for 8 minutes until thick. Make 6 wells and crack in the eggs.",
+    "Cover and cook for 5 minutes until the whites are set, scatter with parsley and serve with warm flatbread."
+   ],
+   "notes": [
+    "Food safety: cook eggs until the whites are set and yolks thickened; keep out of reach if serving to pregnant women, infants or the elderly with runny yolks; eat leftovers within 2 days.",
+    "Contains egg and gluten."
+   ],
+   "nutrition": {
+    "kcal": 400,
+    "proteinG": 19,
+    "carbsG": 48,
+    "fatG": 15,
+    "fibreG": 7,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "freezer-to-table-chicken-and-vegetable-curry-pots",
+   "title": "Freezer-to-Table Chicken and Vegetable Curry",
+   "summary": "Make a big batch, freeze in portions, and reheat from frozen for an easy weeknight curry.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 35,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g chicken thigh, diced",
+      "2 tbsp vegetable oil",
+      "2 onion, diced",
+      "4 clove garlic, crushed",
+      "1 tbsp ginger, grated",
+      "3 tbsp curry powder",
+      "800g tinned tomatoes",
+      "400ml coconut milk",
+      "2 carrot, diced",
+      "1 cup frozen peas",
+      "1 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the chicken in the oil for 6 minutes, add the onion, garlic and ginger for 5 minutes, then stir in the curry powder for 1 minute.",
+    "Add the tomatoes, coconut milk, carrot and salt and simmer for 25 minutes until thick and the chicken reaches 75°C. Stir in the peas.",
+    "Cool within 1 hour, portion into containers and freeze for up to 3 months. Reheat from frozen in a covered pan over low heat for 20 minutes, stirring, until steaming hot."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C with no pink; cool and freeze within 2 hours, thaw in the fridge if you prefer, reheat only once until steaming hot (75°C) and serve with freshly cooked rice."
+   ],
+   "nutrition": {
+    "kcal": 430,
+    "proteinG": 29,
+    "carbsG": 17,
+    "fatG": 28,
+    "fibreG": 5,
+    "sodiumMg": 690
+   }
+  },
+  {
+   "id": "freezer-to-table-beef-and-bean-burritos",
+   "title": "Freezer-to-Table Beef and Bean Burritos",
+   "summary": "Wrap, freeze and bake straight from frozen for a hot burrito dinner with no thawing.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 45,
+   "servings": 6,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "400g beef mince",
+      "1 tbsp olive oil",
+      "1 onion, diced",
+      "2 clove garlic, crushed",
+      "2 tsp ground cumin",
+      "1 tsp smoked paprika",
+      "400g tinned kidney beans, drained",
+      "1 cup tomato passata",
+      "1 cup cheddar, grated",
+      "6 flour tortilla",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the mince in the oil for 6 minutes until no pink remains, add the onion, garlic and spices for 4 minutes, then the beans, passata and salt and simmer for 8 minutes until thick. Cool.",
+    "Spoon onto the tortillas with the cheese, fold in the sides and roll tightly. Wrap individually and freeze.",
+    "Bake from frozen at 200°C (180°C fan) for 35 minutes, turning once, until golden and hot in the centre."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C with no pink, and the burritos 75°C in the centre after reheating; cool within 1 hour, freeze for up to 3 months and do not refreeze once baked.",
+    "Contains gluten and milk."
+   ],
+   "nutrition": {
+    "kcal": 480,
+    "proteinG": 26,
+    "carbsG": 52,
+    "fatG": 18,
+    "fibreG": 8,
+    "sodiumMg": 680
+   }
+  },
+  {
+   "id": "freezer-to-table-spinach-and-ricotta-cannelloni",
+   "title": "Freezer-to-Table Spinach and Ricotta Cannelloni",
+   "summary": "Rolled pasta sheets filled with spinach and ricotta under tomato sauce, assembled and frozen ready to bake.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 45,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "250g ricotta",
+      "200g spinach, chopped",
+      "1 egg",
+      "1/4 tsp nutmeg",
+      "1/2 tsp salt",
+      "9 sheet lasagne",
+      "800g tinned tomatoes",
+      "2 clove garlic, crushed",
+      "1 tsp dried oregano",
+      "150g mozzarella, grated"
+     ]
+    }
+   ],
+   "steps": [
+    "Wilt the spinach in a pan for 2 minutes until soft, squeeze dry and mix with the ricotta, egg, nutmeg and salt. Simmer the tomatoes, garlic and oregano for 10 minutes until thick.",
+    "Spread the ricotta mix over the lasagne sheets, roll them up, lay seam-down in a dish, cover with sauce and mozzarella and wrap well. Freeze for up to 3 months.",
+    "Bake from frozen, covered, at 190°C (170°C fan) for 50 minutes, then uncovered for 10 minutes until golden and bubbling hot in the centre."
+   ],
+   "notes": [
+    "Food safety: bake until hot through to 75°C in the centre; cool before freezing, do not refreeze after baking and eat leftovers within 2 days.",
+    "Contains gluten, egg and milk."
+   ],
+   "nutrition": {
+    "kcal": 390,
+    "proteinG": 19,
+    "carbsG": 44,
+    "fatG": 15,
+    "fibreG": 5,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "freezer-to-table-lentil-and-vegetable-soup",
+   "title": "Freezer-to-Table Lentil and Vegetable Soup",
+   "summary": "A thick, hearty vegan lentil soup that freezes brilliantly and reheats in minutes.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 35,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp olive oil",
+      "2 onion, diced",
+      "2 carrot, diced",
+      "2 celery, diced",
+      "4 clove garlic, crushed",
+      "2 tsp ground cumin",
+      "1 tsp ground turmeric",
+      "1 1/2 cup red lentils",
+      "800g tinned tomatoes",
+      "6 cup vegetable stock",
+      "2 lemon, juiced",
+      "1 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Soften the onion, carrot, celery and garlic in the oil for 8 minutes until tender, then stir in the cumin and turmeric for 1 minute.",
+    "Add the lentils, tomatoes, stock and salt and simmer for 25 minutes until the lentils are soft. Blend half for a thicker texture and stir in the lemon juice.",
+    "Cool within 1 hour, freeze in portions for up to 3 months and reheat from frozen over low heat for 15 minutes, stirring, until steaming hot."
+   ],
+   "notes": [
+    "Cool and freeze within 2 hours; reheat only once until steaming hot and eat within 2 days of thawing."
+   ],
+   "nutrition": {
+    "kcal": 310,
+    "proteinG": 16,
+    "carbsG": 50,
+    "fatG": 6,
+    "fibreG": 12,
+    "sodiumMg": 820
+   }
+  }
+ ]
+}
