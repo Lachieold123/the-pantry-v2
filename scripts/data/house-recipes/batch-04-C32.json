@@ -929,58 +929,6 @@
       }
     },
     {
-      "id": "argentinian-chimichurri-rojo-red-pepper-sauce",
-      "title": "Argentinian Chimichurri Rojo Red Pepper Sauce",
-      "summary": "A red version of the grill sauce with roasted red pepper, smoked paprika, garlic and parsley.",
-      "cuisine": "latin-american",
-      "mealTypes": [
-        "dinner"
-      ],
-      "difficulty": "easy",
-      "prepMinutes": 10,
-      "cookMinutes": 0,
-      "servings": 8,
-      "onePot": false,
-      "diets": [
-        "vegetarian",
-        "vegan",
-        "no-gluten",
-        "no-dairy"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "1 roasted red capsicum, drained",
-            "1 large handful flat-leaf parsley",
-            "3 cloves garlic",
-            "1 tsp smoked paprika",
-            "1 tsp dried oregano",
-            "1/2 tsp chilli flakes",
-            "4 tbsp red wine vinegar",
-            "120ml extra virgin olive oil",
-            "1/2 tsp salt"
-          ]
-        }
-      ],
-      "steps": [
-        "Chop the capsicum, parsley and garlic finely, or pulse briefly in a food processor.",
-        "Mix with the paprika, oregano, chilli flakes and salt.",
-        "Stir in the vinegar and oil and rest for 15 minutes, until the garlic mellows."
-      ],
-      "notes": [
-        "Spoon over grilled steak, sausages or roast vegetables.",
-        "Keeps for 5 days in a jar in the fridge."
-      ],
-      "nutrition": {
-        "kcal": 134,
-        "proteinG": 0,
-        "carbsG": 2,
-        "fatG": 14,
-        "fibreG": 0,
-        "sodiumMg": 150
-      }
-    },
-    {
       "id": "argentinian-salsa-criolla-onion-tomato-and-pepper-relish",
       "title": "Argentinian Salsa Criolla Onion, Tomato and Pepper Relish",
       "summary": "A fresh relish of red onion, tomato and capsicum in vinegar and oil, served with grilled meats and choripan.",
@@ -1185,60 +1133,6 @@
         "fatG": 17,
         "fibreG": 7,
         "sodiumMg": 480
-      }
-    },
-    {
-      "id": "italian-panzanella-with-cucumber-and-basil",
-      "title": "Italian Panzanella with Cucumber and Basil",
-      "summary": "Torn stale bread soaked in ripe tomato juices with cucumber, red onion, basil and a red wine dressing.",
-      "cuisine": "italian",
-      "mealTypes": [
-        "lunch"
-      ],
-      "difficulty": "easy",
-      "prepMinutes": 15,
-      "cookMinutes": 0,
-      "servings": 4,
-      "onePot": true,
-      "diets": [
-        "vegetarian",
-        "vegan",
-        "no-dairy"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "300g stale sourdough, torn in chunks",
-            "600g ripe tomatoes, chopped",
-            "1 cucumber, chopped",
-            "1/2 red onion, thinly sliced",
-            "1 handful basil leaves",
-            "5 tbsp extra virgin olive oil",
-            "2 tbsp red wine vinegar",
-            "1 clove garlic, crushed",
-            "1/2 tsp salt",
-            "1 tbsp capers"
-          ]
-        }
-      ],
-      "steps": [
-        "Toss the tomatoes with half the salt in a large bowl and rest for 10 minutes to release their juices.",
-        "Whisk the oil, vinegar, garlic and remaining salt.",
-        "Add the bread, cucumber, onion and capers to the tomatoes.",
-        "Pour over the dressing and toss.",
-        "Leave for 10 minutes until the bread soaks up the juices, then fold in the basil, until just combined."
-      ],
-      "notes": [
-        "Use properly stale bread, or dry fresh bread in a 180C oven for 10 minutes.",
-        "Eat within the hour for the best texture."
-      ],
-      "nutrition": {
-        "kcal": 358,
-        "proteinG": 9,
-        "carbsG": 42,
-        "fatG": 16,
-        "fibreG": 5,
-        "sodiumMg": 780
       }
     },
     {

@@ -1025,59 +1025,6 @@
       }
     },
     {
-      "id": "tex-mex-sweet-corn-and-black-bean-bowl",
-      "title": "Tex-Mex Sweet Corn and Black Bean Bowl",
-      "summary": "Sweet charred corn, black beans, avocado and coriander with a lime dressing.",
-      "cuisine": "mexican",
-      "mealTypes": [
-        "lunch"
-      ],
-      "difficulty": "easy",
-      "prepMinutes": 15,
-      "cookMinutes": 10,
-      "servings": 4,
-      "onePot": false,
-      "diets": [
-        "vegetarian",
-        "vegan",
-        "no-gluten",
-        "no-dairy"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "4 corn cobs",
-            "1 can (400g) black beans, drained",
-            "1 avocado",
-            "1 red onion",
-            "1/2 cup coriander",
-            "3 tbsp lime juice",
-            "2 tbsp olive oil",
-            "1 tsp ground cumin",
-            "1/2 tsp salt"
-          ]
-        }
-      ],
-      "steps": [
-        "Char the corn in a hot pan for 10 minutes, turning, until blackened in places.",
-        "Cut the kernels from the cobs.",
-        "Whisk lime juice, oil, cumin and salt.",
-        "Toss kernels with beans, onion, avocado and coriander and dress just before serving."
-      ],
-      "notes": [
-        "Vegan.",
-        "Dress close to serving so the avocado stays green."
-      ],
-      "nutrition": {
-        "kcal": 201,
-        "proteinG": 6,
-        "carbsG": 22,
-        "fatG": 8,
-        "fibreG": 6,
-        "sodiumMg": 360
-      }
-    },
-    {
       "id": "beetroot-rocket-and-walnut-salad-with-honey-balsamic",
       "title": "Beetroot, Rocket and Walnut Salad with Honey Balsamic",
       "summary": "Earthy beetroot with peppery rocket, tangy goat cheese and crunchy walnuts.",

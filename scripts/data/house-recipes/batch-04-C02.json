@@ -2,54 +2,6 @@
  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
  "recipes": [
   {
-   "id": "eggs-benedict-with-blender-hollandaise",
-   "title": "Eggs Benedict with Blender Hollandaise",
-   "summary": "Poached eggs and ham on toasted muffins under a silky lemon butter sauce.",
-   "cuisine": "american",
-   "mealTypes": [
-    "breakfast"
-   ],
-   "difficulty": "hard",
-   "prepMinutes": 20,
-   "cookMinutes": 15,
-   "servings": 4,
-   "onePot": false,
-   "diets": [],
-   "ingredients": [
-    {
-     "items": [
-      "4 english muffins, split",
-      "8 slices ham",
-      "8 eggs",
-      "3 egg yolks",
-      "150g butter, melted",
-      "1 tbsp lemon juice",
-      "1 tbsp white vinegar",
-      "1 pinch cayenne",
-      "1 tbsp chives, chopped"
-     ]
-    }
-   ],
-   "steps": [
-    "Blend the yolks, lemon juice and cayenne for 20 seconds, then pour in the hot melted butter in a thin stream until the sauce is thick and pale.",
-    "Bring a wide pan of water with the vinegar to barely a simmer. Slip in the eggs in batches and poach for 3 minutes, until the whites are set and the yolks wobble.",
-    "Toast the muffins until golden and top each with ham and an egg.",
-    "Spoon over the hollandaise and scatter with chives."
-   ],
-   "notes": [
-    "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable.",
-    "Hollandaise contains raw yolk: serve straight away and avoid it for vulnerable guests."
-   ],
-   "nutrition": {
-    "kcal": 628,
-    "proteinG": 30,
-    "carbsG": 28,
-    "fatG": 44,
-    "fibreG": 2,
-    "sodiumMg": 1150
-   }
-  },
-  {
    "id": "spiced-ful-medames-with-tahini-and-soft-egg",
    "title": "Spiced Ful Medames with Tahini and Soft Egg",
    "summary": "Warm mashed broad beans with lemon, cumin and a soft-boiled egg.",
@@ -689,54 +641,6 @@
     "fatG": 26,
     "fibreG": 2,
     "sodiumMg": 420
-   }
-  },
-  {
-   "id": "spanish-migas-with-chorizo-and-fried-egg",
-   "title": "Spanish Migas with Chorizo and Fried Egg",
-   "summary": "Crisp fried breadcrumb migas with chorizo, garlic and egg.",
-   "cuisine": "spanish",
-   "mealTypes": [
-    "breakfast",
-    "lunch"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 10,
-   "cookMinutes": 20,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "no-dairy"
-   ],
-   "ingredients": [
-    {
-     "items": [
-      "250g crusty bread, torn",
-      "150g chorizo, sliced",
-      "4 garlic cloves, sliced",
-      "3 tbsp olive oil",
-      "1 tsp smoked paprika",
-      "4 eggs",
-      "1 red capsicum, diced"
-     ]
-    }
-   ],
-   "steps": [
-    "Sprinkle the bread with 2 tbsp water and rest for 5 minutes, until slightly softened.",
-    "Fry the chorizo until crisp and its oil runs, then add the capsicum and garlic for 3 minutes.",
-    "Add the bread, paprika and oil and fry for 8 minutes, tossing, until golden and crisp.",
-    "Fry the eggs in a separate pan until the whites are set and top each portion."
-   ],
-   "notes": [
-    "Food safety: cook the chorizo until 75°C and steaming hot; cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
-   ],
-   "nutrition": {
-    "kcal": 508,
-    "proteinG": 21,
-    "carbsG": 34,
-    "fatG": 32,
-    "fibreG": 3,
-    "sodiumMg": 1050
    }
   },
   {

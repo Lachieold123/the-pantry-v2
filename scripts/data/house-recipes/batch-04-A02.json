@@ -153,55 +153,6 @@
    }
   },
   {
-   "id": "almond-cantucci",
-   "title": "Almond Cantucci",
-   "summary": "Twice-baked Tuscan almond biscuits made for dunking.",
-   "cuisine": "italian",
-   "mealTypes": [
-    "snack"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 20,
-   "cookMinutes": 40,
-   "servings": 12,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "no-dairy"
-   ],
-   "ingredients": [
-    {
-     "items": [
-      "2 cups plain flour",
-      "3/4 cup caster sugar",
-      "1 tsp baking powder",
-      "2 egg",
-      "1 orange, zested",
-      "1 cup almond, roughly chopped",
-      "1 tsp vanilla extract"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oven to 180°C (160°C fan) and line a tray.",
-    "Mix the flour, sugar and baking powder, then stir in the eggs, zest, vanilla and almonds to a stiff dough.",
-    "Shape into two logs 5cm wide on the tray and bake for 25 minutes, until golden.",
-    "Cool for 10 minutes, slice diagonally into 1.5cm biscuits, lay cut-side up and bake for 15 minutes more, until dry and crisp."
-   ],
-   "notes": [
-    "Dessert.",
-    "Vegetarian and dairy-free."
-   ],
-   "nutrition": {
-    "kcal": 249,
-    "proteinG": 6,
-    "carbsG": 36,
-    "fatG": 9,
-    "fibreG": 2,
-    "sodiumMg": 60
-   }
-  },
-  {
    "id": "pear-and-almond-clafoutis",
    "title": "Pear and Almond Clafoutis",
    "summary": "A custardy baked batter around soft pears, finished with a dusting of sugar.",
@@ -948,53 +899,6 @@
     "fatG": 24,
     "fibreG": 2,
     "sodiumMg": 640
-   }
-  },
-  {
-   "id": "cheddar-and-chive-scones",
-   "title": "Cheddar and Chive Scones",
-   "summary": "Savoury scones with sharp cheddar, great warm with butter.",
-   "cuisine": "british",
-   "mealTypes": [
-    "snack",
-    "breakfast"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 15,
-   "cookMinutes": 18,
-   "servings": 8,
-   "onePot": false,
-   "diets": [
-    "vegetarian"
-   ],
-   "ingredients": [
-    {
-     "items": [
-      "3 cups self-raising flour",
-      "50g butter, cold and cubed",
-      "1 cup cheddar, grated",
-      "2 tbsp chives, chopped",
-      "1 cup milk",
-      "1/2 tsp salt"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oven to 220°C (200°C fan) and flour a tray.",
-    "Rub the butter into the flour and salt, then stir in most of the cheddar and the chives.",
-    "Add the milk and cut it in with a knife to a soft dough. Pat out 3cm thick and cut into rounds.",
-    "Top with the last of the cheese and bake for 18 minutes, until risen and golden."
-   ],
-   "notes": [
-    "Vegetarian."
-   ],
-   "nutrition": {
-    "kcal": 320,
-    "proteinG": 11,
-    "carbsG": 42,
-    "fatG": 12,
-    "fibreG": 2,
-    "sodiumMg": 560
    }
   },
   {
@@ -2036,53 +1940,6 @@
     "fatG": 11,
     "fibreG": 14,
     "sodiumMg": 780
-   }
-  },
-  {
-   "id": "chicken-gyro-pita-wraps",
-   "title": "Chicken Gyro Pita Wraps",
-   "summary": "Lemon oregano chicken in warm pita with tzatziki, tomato and onion.",
-   "cuisine": "greek",
-   "mealTypes": [
-    "lunch"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 15,
-   "cookMinutes": 12,
-   "servings": 4,
-   "onePot": false,
-   "diets": [],
-   "ingredients": [
-    {
-     "items": [
-      "600g chicken thigh, sliced",
-      "2 tbsp olive oil",
-      "1 lemon, juiced",
-      "2 garlic, crushed",
-      "2 tsp dried oregano",
-      "4 pita bread",
-      "1/2 cup tzatziki",
-      "2 tomato, sliced",
-      "1/2 red onion, thinly sliced"
-     ]
-    }
-   ],
-   "steps": [
-    "Toss the chicken with the oil, lemon juice, garlic and oregano and rest while the pan heats.",
-    "Cook in a hot frying pan for 10 minutes, turning, until browned and the chicken reaches 75°C in the centre.",
-    "Warm the pita, spread with tzatziki and fill with the chicken, tomato and onion."
-   ],
-   "notes": [
-    "Plus 30 minutes marinating, if you have time.",
-    "Food safety: chicken must reach 75°C with no pink meat."
-   ],
-   "nutrition": {
-    "kcal": 500,
-    "proteinG": 40,
-    "carbsG": 40,
-    "fatG": 20,
-    "fibreG": 3,
-    "sodiumMg": 840
    }
   },
   {

@@ -1123,54 +1123,6 @@
         "fibreG": 2,
         "sodiumMg": 5
       }
-    },
-    {
-      "id": "farinata-chickpea-squares",
-      "title": "Farinata Chickpea Squares",
-      "summary": "Crisp-edged Ligurian chickpea flatbread, naturally gluten free and vegan.",
-      "cuisine": "italian",
-      "mealTypes": [
-        "snack"
-      ],
-      "difficulty": "easy",
-      "prepMinutes": 10,
-      "cookMinutes": 20,
-      "servings": 8,
-      "onePot": false,
-      "diets": [
-        "vegetarian",
-        "vegan",
-        "no-gluten",
-        "no-dairy"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "200g chickpea flour",
-            "400ml water",
-            "60ml olive oil, divided",
-            "1 tsp salt",
-            "1 tbsp chopped rosemary",
-            "1/2 tsp ground black pepper"
-          ]
-        }
-      ],
-      "steps": [
-        "Whisk the chickpea flour, water, salt and 2 tbsp of the oil until smooth, then stir in the rosemary and pepper. Rest while the oven heats.",
-        "Heat the oven to 230°C fan (250°C conventional) with a 26cm ovenproof frying pan or pizza tray inside. Add the remaining oil to the hot pan, swirl, then pour in the batter.",
-        "Bake for 20 minutes, until the edges are crisp and deep golden and the centre is set. Cut into 8 squares."
-      ],
-      "notes": [
-        "Snack. Per serving: 1 square. Best hot; keeps 2 days in the fridge and re-crisps in a hot pan. The pan and oil will be very hot, so use oven gloves."
-      ],
-      "nutrition": {
-        "kcal": 158,
-        "proteinG": 6,
-        "carbsG": 14,
-        "fatG": 8,
-        "fibreG": 3,
-        "sodiumMg": 300
-      }
     }
   ]
 }

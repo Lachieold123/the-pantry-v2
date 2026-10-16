@@ -1080,55 +1080,6 @@
       }
     },
     {
-      "id": "argentinian-chimichurri-green-herb-sauce",
-      "title": "Argentinian Chimichurri Green Herb Sauce",
-      "summary": "Parsley, garlic, oregano and vinegar sauce for steak and grilled vegetables.",
-      "cuisine": "latin-american",
-      "mealTypes": [
-        "dinner"
-      ],
-      "difficulty": "easy",
-      "prepMinutes": 10,
-      "cookMinutes": 0,
-      "servings": 8,
-      "onePot": false,
-      "diets": [
-        "vegetarian",
-        "vegan",
-        "no-gluten",
-        "no-dairy"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "2 bunches fresh parsley, finely chopped",
-            "4 garlic cloves, minced",
-            "1 tbsp dried oregano",
-            "1 tsp chilli flakes",
-            "80ml red wine vinegar",
-            "150ml olive oil",
-            "1 tsp salt"
-          ]
-        }
-      ],
-      "steps": [
-        "Mix the parsley, garlic, oregano and chilli flakes in a bowl.",
-        "Stir in the vinegar and salt until the salt dissolves, then whisk in the oil.",
-        "Rest 30 minutes before serving so the flavours develop."
-      ],
-      "notes": [
-        "Keeps in the fridge for up to 5 days."
-      ],
-      "nutrition": {
-        "kcal": 178,
-        "proteinG": 1,
-        "carbsG": 2,
-        "fatG": 18,
-        "fibreG": 2,
-        "sodiumMg": 340
-      }
-    },
-    {
       "id": "brazilian-vinagrete-tomato-and-onion-salsa",
       "title": "Brazilian Vinagrete Tomato and Onion Salsa",
       "summary": "Chopped tomato, onion and capsicum in a vinegar dressing for churrasco and feijoada.",

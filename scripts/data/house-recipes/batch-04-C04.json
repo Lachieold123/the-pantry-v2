@@ -448,57 +448,6 @@
       }
     },
     {
-      "id": "mandazi-coconut-doughnuts",
-      "title": "Mandazi Coconut Doughnuts",
-      "summary": "Lightly sweet, cardamom-scented fried dough triangles from the Swahili coast, best eaten warm with tea.",
-      "cuisine": "east-african",
-      "mealTypes": [
-        "breakfast",
-        "snack"
-      ],
-      "difficulty": "medium",
-      "prepMinutes": 20,
-      "cookMinutes": 15,
-      "servings": 8,
-      "onePot": false,
-      "diets": [
-        "vegetarian",
-        "no-dairy"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "300g plain flour",
-            "60g sugar",
-            "1 tsp baking powder",
-            "1 tsp ground cardamom",
-            "150ml coconut milk",
-            "1 egg",
-            "500ml neutral oil"
-          ]
-        }
-      ],
-      "steps": [
-        "Whisk the flour, sugar, baking powder and cardamom in a bowl.",
-        "Mix in the coconut milk and egg until a soft dough forms, then knead for 3 minutes until smooth and rest it for 20 minutes.",
-        "Roll the dough to 1cm thick and cut into triangles.",
-        "Heat the oil to 170°C in a deep pot and fry a few at a time for 3 minutes, turning once, until puffed and golden.",
-        "Drain on paper towel and serve warm."
-      ],
-      "notes": [
-        "Food safety: the egg is cooked through in the hot oil; fry until golden and cooked in the middle.",
-        "Take care with hot oil and never leave it unattended."
-      ],
-      "nutrition": {
-        "kcal": 709,
-        "proteinG": 11,
-        "carbsG": 82,
-        "fatG": 37,
-        "fibreG": 2,
-        "sodiumMg": 100
-      }
-    },
-    {
       "id": "mukimo-mashed-potato-with-peas-and-corn",
       "title": "Mukimo Mashed Potato with Peas and Corn",
       "summary": "Kikuyu-style mash of potatoes, green peas and sweetcorn, a comforting side for stews.",
@@ -2466,62 +2415,6 @@
         "fatG": 33,
         "fibreG": 6,
         "sodiumMg": 200
-      }
-    },
-    {
-      "id": "island-pumpkin-soup-with-lime-and-ginger",
-      "title": "Island Pumpkin Soup with Lime and Ginger",
-      "summary": "A creamy island pumpkin soup enriched with coconut milk and a touch of ginger and lime.",
-      "cuisine": "pacific-islands",
-      "mealTypes": [
-        "lunch",
-        "dinner"
-      ],
-      "difficulty": "easy",
-      "prepMinutes": 15,
-      "cookMinutes": 30,
-      "servings": 4,
-      "onePot": true,
-      "diets": [
-        "vegetarian",
-        "vegan",
-        "no-gluten",
-        "no-dairy"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "800g pumpkin, cubed",
-            "1 brown onion, diced",
-            "3 garlic cloves",
-            "1 tbsp ginger, grated",
-            "400ml coconut milk",
-            "500ml vegetable stock",
-            "1 tbsp coconut oil",
-            "2 tbsp lime juice",
-            "1 pinch salt",
-            "1 handful coriander"
-          ]
-        }
-      ],
-      "steps": [
-        "Soften the onion in the coconut oil for 6 minutes until translucent.",
-        "Stir in the garlic and ginger for 1 minute.",
-        "Add the pumpkin and stock and simmer for 20 minutes until completely soft.",
-        "Blend until smooth with the coconut milk and heat through.",
-        "Finish with lime juice, salt and coriander."
-      ],
-      "notes": [
-        "Naturally vegan and gluten-free.",
-        "Chill leftovers promptly."
-      ],
-      "nutrition": {
-        "kcal": 334,
-        "proteinG": 6,
-        "carbsG": 27,
-        "fatG": 21,
-        "fibreG": 6,
-        "sodiumMg": 650
       }
     },
     {

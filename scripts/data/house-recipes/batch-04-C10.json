@@ -164,58 +164,6 @@
       }
     },
     {
-      "id": "ayam-masak-merah-tomato-chilli-chicken",
-      "title": "Ayam Masak Merah Tomato Chilli Chicken",
-      "summary": "Chicken simmered in a sweet and spicy red tomato chilli sauce.",
-      "cuisine": "malaysian",
-      "mealTypes": [
-        "dinner"
-      ],
-      "difficulty": "medium",
-      "prepMinutes": 15,
-      "cookMinutes": 35,
-      "servings": 4,
-      "onePot": true,
-      "diets": [
-        "no-gluten",
-        "no-dairy"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "600g chicken thigh, cubed",
-            "3 tbsp chilli paste",
-            "2 brown onions",
-            "4 garlic cloves",
-            "20g ginger",
-            "4 tomatoes",
-            "3 tbsp tomato paste",
-            "2 tbsp vegetable oil",
-            "1 tbsp sugar",
-            "200ml water"
-          ]
-        }
-      ],
-      "steps": [
-        "Fry the onions, garlic and ginger in the oil for 6 minutes until soft.",
-        "Add the chilli paste and tomato paste and cook for 5 minutes until deep red.",
-        "Add the chicken and brown for 4 minutes.",
-        "Add the tomatoes, sugar and water and simmer for 20 minutes until the chicken reaches 75°C and the sauce is thick."
-      ],
-      "notes": [
-        "Food safety: cook the chicken until it reaches 75°C and no pink remains.",
-        "Serve with rice."
-      ],
-      "nutrition": {
-        "kcal": 388,
-        "proteinG": 32,
-        "carbsG": 18,
-        "fatG": 20,
-        "fibreG": 4,
-        "sodiumMg": 480
-      }
-    },
-    {
       "id": "gado-gado-style-peanut-vegetable-plate",
       "title": "Gado Gado Style Peanut Vegetable Plate",
       "summary": "Blanched vegetables, potato, tofu and egg with a rich peanut sauce.",
@@ -473,58 +421,6 @@
         "fatG": 14,
         "fibreG": 5,
         "sodiumMg": 170
-      }
-    },
-    {
-      "id": "persian-kuku-sabzi-herb-frittata",
-      "title": "Persian Kuku Sabzi Herb Frittata",
-      "summary": "A green herb frittata packed with parsley, dill and coriander, with walnuts and barberries.",
-      "cuisine": "middle-eastern",
-      "mealTypes": [
-        "breakfast"
-      ],
-      "difficulty": "medium",
-      "prepMinutes": 20,
-      "cookMinutes": 30,
-      "servings": 6,
-      "onePot": false,
-      "diets": [
-        "vegetarian",
-        "no-dairy"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "2 bunches parsley",
-            "1 bunch coriander",
-            "1 bunch dill",
-            "6 spring onions",
-            "6 eggs",
-            "40g walnuts",
-            "1 tsp turmeric",
-            "1 tbsp plain flour",
-            "3 tbsp olive oil"
-          ]
-        }
-      ],
-      "steps": [
-        "Chop the herbs and spring onions finely.",
-        "Whisk the eggs with turmeric, flour and a pinch of salt.",
-        "Fold in the herbs and walnuts.",
-        "Heat the oil in a pan and pour in the mixture.",
-        "Cook on low heat for 12 minutes until the base is set, then flip and cook for 8 minutes until firm."
-      ],
-      "notes": [
-        "Food safety: cook until the egg is fully set.",
-        "Serve with yoghurt."
-      ],
-      "nutrition": {
-        "kcal": 231,
-        "proteinG": 11,
-        "carbsG": 7,
-        "fatG": 17,
-        "fibreG": 3,
-        "sodiumMg": 160
       }
     },
     {

@@ -371,55 +371,6 @@
    }
   },
   {
-   "id": "kotopoulo-lemonato-greek-lemon-chicken-and-potato-traybake",
-   "title": "Kotopoulo Lemonato (Greek Lemon Chicken and Potato Traybake)",
-   "summary": "Chicken thighs roasted over lemony oregano potatoes until the juices turn the potatoes golden.",
-   "cuisine": "greek",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 15,
-   "cookMinutes": 50,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
-    {
-     "items": [
-      "800g chicken thigh, bone in",
-      "800g potatoes, cut into wedges",
-      "3 lemon, juiced",
-      "1/4 cup olive oil",
-      "4 clove garlic, crushed",
-      "2 tsp dried oregano",
-      "1 cup chicken stock",
-      "1 tbsp chopped parsley"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oven to 210°C (190°C fan). Put the potatoes and chicken in a large roasting tin.",
-    "Whisk the lemon juice, oil, garlic, oregano, salt and pepper, pour over, then add the stock to the tin.",
-    "Roast for 50 minutes, turning the potatoes once, until the chicken is cooked through and the potatoes are golden and tender.",
-    "Scatter with parsley and serve with the pan juices."
-   ],
-   "notes": [
-    "Food safety: chicken must reach 75°C in the thickest part with no pink juices. Refrigerate leftovers within an hour and reheat until steaming hot."
-   ],
-   "nutrition": {
-    "kcal": 520,
-    "proteinG": 34,
-    "carbsG": 38,
-    "fatG": 26,
-    "fibreG": 4,
-    "sodiumMg": 420
-   }
-  },
-  {
    "id": "mucver-turkish-zucchini-and-herb-fritters",
    "title": "Mücver (Turkish Zucchini and Herb Fritters)",
    "summary": "Golden zucchini fritters with dill, spring onion and white cheese, served with a garlic yoghurt.",
@@ -470,59 +421,6 @@
     "fatG": 26,
     "fibreG": 2,
     "sodiumMg": 820
-   }
-  },
-  {
-   "id": "kuru-fasulye-turkish-white-bean-and-tomato-stew",
-   "title": "Kuru Fasulye (Turkish White Bean and Tomato Stew)",
-   "summary": "Creamy white beans simmered with tomato paste, capsicum and Aleppo pepper, finished with butter.",
-   "cuisine": "turkish",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 30,
-   "servings": 4,
-   "onePot": true,
-   "diets": [
-    "vegetarian",
-    "no-gluten"
-   ],
-   "ingredients": [
-    {
-     "items": [
-      "2 tbsp olive oil",
-      "1 brown onion, diced",
-      "1 green capsicum, diced",
-      "2 clove garlic, crushed",
-      "2 tbsp tomato paste",
-      "1 tbsp capsicum paste",
-      "2 x 400g canned cannellini beans, drained",
-      "2 cup vegetable stock",
-      "1 tsp chilli flakes",
-      "1 tbsp butter",
-      "2 tbsp chopped parsley"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oil in a pot and cook the onion and capsicum for 8 minutes until soft.",
-    "Add the garlic and both pastes and cook for 2 minutes, stirring.",
-    "Add the beans, stock and chilli. Simmer uncovered for 20 minutes, until the sauce is thick and some beans have broken down.",
-    "Stir through the butter and parsley and serve with rice or bread."
-   ],
-   "notes": [
-    "Use canned beans for a quick weeknight version of the long-simmered original.",
-    "Swap the butter for olive oil to make it vegan."
-   ],
-   "nutrition": {
-    "kcal": 144,
-    "proteinG": 7,
-    "carbsG": 18,
-    "fatG": 5,
-    "fibreG": 6,
-    "sodiumMg": 780
    }
   },
   {
@@ -627,57 +525,6 @@
     "fatG": 27,
     "fibreG": 3,
     "sodiumMg": 260
-   }
-  },
-  {
-   "id": "mirza-ghasemi-persian-smoky-aubergine-and-eggs",
-   "title": "Mirza Ghasemi (Persian Smoky Aubergine and Eggs)",
-   "summary": "Charred aubergine mashed with garlic and tomato, then set with scrambled eggs, from Gilan in northern Iran.",
-   "cuisine": "middle-eastern",
-   "mealTypes": [
-    "dinner",
-    "lunch"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 15,
-   "cookMinutes": 35,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "no-dairy"
-   ],
-   "ingredients": [
-    {
-     "items": [
-      "3 aubergine",
-      "3 tbsp olive oil",
-      "5 clove garlic, crushed",
-      "4 tomato, grated",
-      "1 tsp ground turmeric",
-      "4 egg",
-      "1 tsp salt",
-      "4 flatbread"
-     ]
-    }
-   ],
-   "steps": [
-    "Prick the aubergines and roast whole at 230°C (210°C fan) for 30 minutes, until collapsed and charred. Cool, peel and chop the flesh.",
-    "Heat the oil in a frying pan and fry the garlic for 1 minute, then add the turmeric and tomato and cook for 8 minutes until thick.",
-    "Add the aubergine and salt and cook for 5 minutes, mashing roughly.",
-    "Make four wells, crack in the eggs and stir them gently through for 3 minutes until just set. Serve with warm flatbread."
-   ],
-   "notes": [
-    "Food safety: cook the eggs until fully set. Refrigerate leftovers within an hour.",
-    "Char the aubergines over a gas flame if you have one for a smokier flavour."
-   ],
-   "nutrition": {
-    "kcal": 360,
-    "proteinG": 15,
-    "carbsG": 38,
-    "fatG": 17,
-    "fibreG": 9,
-    "sodiumMg": 640
    }
   },
   {

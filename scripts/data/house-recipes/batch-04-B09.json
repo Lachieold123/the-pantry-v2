@@ -1071,54 +1071,6 @@
       }
     },
     {
-      "id": "thai-jok-style-pork-rice-porridge",
-      "title": "Thai Jok Style Pork Rice Porridge",
-      "summary": "Smooth rice porridge with ginger and pork meatballs, finished with soy and spring onion.",
-      "cuisine": "thai",
-      "mealTypes": [
-        "breakfast"
-      ],
-      "difficulty": "medium",
-      "prepMinutes": 15,
-      "cookMinutes": 45,
-      "servings": 4,
-      "onePot": true,
-      "diets": [
-        "no-dairy"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "1 cup jasmine rice",
-            "7 cup water",
-            "300g pork mince",
-            "30g ginger, sliced",
-            "2 egg",
-            "2 tbsp soy sauce",
-            "2 spring onion, sliced"
-          ]
-        }
-      ],
-      "steps": [
-        "Simmer the rice and water with ginger and 1 tsp salt on low for 35 minutes, stirring often, until it breaks down into a thick porridge.",
-        "Mix the mince with 1 tbsp soy sauce and form into small balls.",
-        "Add the meatballs to the porridge and simmer for 8 minutes until cooked through (at least 75°C) and floating.",
-        "Crack in the eggs and stir for 2 minutes until just set in ribbons.",
-        "Ladle into bowls and top with spring onion and remaining soy sauce."
-      ],
-      "notes": [
-        "Food safety: cook pork mince to 75°C and eggs until set; refrigerate leftovers within 2 hours."
-      ],
-      "nutrition": {
-        "kcal": 376,
-        "proteinG": 22,
-        "carbsG": 44,
-        "fatG": 12,
-        "fibreG": 2,
-        "sodiumMg": 1000
-      }
-    },
-    {
       "id": "vietnamese-egg-coffee-free-sticky-rice-breakfast-pots",
       "title": "Vietnamese Egg Coffee-Free Sticky Rice Breakfast Pots",
       "summary": "Sticky rice with peanuts and coconut for a filling start to the day.",

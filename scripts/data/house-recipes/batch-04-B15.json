@@ -1366,61 +1366,6 @@
       }
     },
     {
-      "id": "misir-wot-ethiopian-red-lentil-stew",
-      "title": "Misir Wot Ethiopian Red Lentil Stew",
-      "summary": "Red lentils simmered in a spiced onion and tomato base, served with rice or flatbread.",
-      "cuisine": "east-african",
-      "mealTypes": [
-        "dinner"
-      ],
-      "difficulty": "easy",
-      "prepMinutes": 10,
-      "cookMinutes": 30,
-      "servings": 4,
-      "onePot": true,
-      "diets": [
-        "vegetarian",
-        "vegan",
-        "no-gluten",
-        "no-dairy"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "2 cups red lentils",
-            "2 onions, minced",
-            "3 tomatoes, chopped",
-            "3 tbsp vegetable oil",
-            "4 garlic cloves",
-            "1 tbsp ginger",
-            "2 tbsp paprika",
-            "1 tsp chilli powder",
-            "1 tsp ground cumin",
-            "1 tsp ground cardamom",
-            "1 tsp salt",
-            "1 1/2 cups basmati rice"
-          ]
-        }
-      ],
-      "steps": [
-        "Cook the rice by your usual method until tender and fluffy, then keep it covered.",
-        "Cook the onions in a dry pot for 8 minutes, then add the oil, garlic and ginger and cook for 3 minutes until soft.",
-        "Add the spices and tomatoes and cook for 5 minutes until jammy.",
-        "Stir in the lentils, salt and 3 cups water and simmer for 20 minutes until the lentils are soft and thick."
-      ],
-      "notes": [
-        "Naturally vegan and gluten-free."
-      ],
-      "nutrition": {
-        "kcal": 559,
-        "proteinG": 24,
-        "carbsG": 84,
-        "fatG": 11,
-        "fibreG": 14,
-        "sodiumMg": 700
-      }
-    },
-    {
       "id": "shiro-wat-ethiopian-chickpea-flour-stew",
       "title": "Shiro Wat Ethiopian Chickpea Flour Stew",
       "summary": "Silky chickpea flour stew with onion, garlic and paprika, served over rice.",

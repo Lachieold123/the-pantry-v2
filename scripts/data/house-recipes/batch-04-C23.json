@@ -821,59 +821,6 @@
       }
     },
     {
-      "id": "indian-besan-chilla-chickpea-flour-pancakes",
-      "title": "Indian Besan Chilla Chickpea Flour Pancakes",
-      "summary": "Savoury batter pancakes of chickpea flour with onion, tomato and spices.",
-      "cuisine": "indian",
-      "mealTypes": [
-        "breakfast"
-      ],
-      "difficulty": "easy",
-      "prepMinutes": 10,
-      "cookMinutes": 15,
-      "servings": 4,
-      "onePot": true,
-      "diets": [
-        "vegetarian",
-        "vegan",
-        "no-gluten",
-        "no-dairy"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "200g chickpea flour",
-            "350ml water",
-            "1 small red onion, finely diced",
-            "1 tomato, finely diced",
-            "1 green chilli, finely chopped",
-            "1/2 tsp ground turmeric",
-            "1/2 tsp ground cumin",
-            "1/2 tsp salt",
-            "2 tbsp vegetable oil",
-            "1 small bunch coriander, chopped"
-          ]
-        }
-      ],
-      "steps": [
-        "Whisk the flour, water, turmeric, cumin and salt into a smooth batter, then rest for 10 minutes.",
-        "Stir in the onion, tomato, chilli and coriander.",
-        "Heat a little oil in a non-stick pan and pour in a ladle of batter, spreading thin.",
-        "Cook for 3 minutes each side until golden and set, and repeat with the rest."
-      ],
-      "notes": [
-        "Serve with mint chutney or yoghurt."
-      ],
-      "nutrition": {
-        "kcal": 215,
-        "proteinG": 11,
-        "carbsG": 24,
-        "fatG": 7,
-        "fibreG": 6,
-        "sodiumMg": 330
-      }
-    },
-    {
       "id": "italian-insalata-di-riso-summer-rice-salad",
       "title": "Italian Insalata di Riso Summer Rice Salad",
       "summary": "Chilled rice with tuna, olives, tomatoes and capers, a picnic favourite across Italy.",
@@ -1274,54 +1221,6 @@
         "fatG": 17,
         "fibreG": 4,
         "sodiumMg": 230
-      }
-    },
-    {
-      "id": "irish-colcannon-mash-with-cabbage-and-butter",
-      "title": "Irish Colcannon Mash with Cabbage and Butter",
-      "summary": "Creamy potato mash folded with buttery cabbage and spring onion.",
-      "cuisine": "british",
-      "mealTypes": [
-        "dinner"
-      ],
-      "difficulty": "easy",
-      "prepMinutes": 10,
-      "cookMinutes": 25,
-      "servings": 6,
-      "onePot": true,
-      "diets": [
-        "vegetarian",
-        "no-gluten"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "1 kg potatoes, peeled and chopped",
-            "300g green cabbage, shredded",
-            "4 spring onions, sliced",
-            "120ml milk",
-            "60g butter",
-            "1/2 tsp salt",
-            "1/4 tsp black pepper"
-          ]
-        }
-      ],
-      "steps": [
-        "Boil the potatoes in salted water for 18 minutes until very tender, then drain.",
-        "Boil the cabbage in a separate pot for 4 minutes until tender, then drain well.",
-        "Warm the milk with the spring onions for 3 minutes.",
-        "Mash the potatoes with the milk, butter, salt and pepper, then fold in the cabbage."
-      ],
-      "notes": [
-        "Make a well in the centre and add a knob of butter to serve."
-      ],
-      "nutrition": {
-        "kcal": 246,
-        "proteinG": 6,
-        "carbsG": 31,
-        "fatG": 10,
-        "fibreG": 4,
-        "sodiumMg": 340
       }
     },
     {

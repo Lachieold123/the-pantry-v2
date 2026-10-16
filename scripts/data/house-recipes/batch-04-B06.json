@@ -703,54 +703,6 @@
    }
   },
   {
-   "id": "gilgeori-cabbage-egg-toast-sandwiches",
-   "title": "Gilgeori Cabbage Egg Toast Sandwiches",
-   "summary": "Egg and cabbage omelette sandwiched in buttery toast with a sugar and ketchup finish.",
-   "cuisine": "korean",
-   "mealTypes": [
-    "breakfast"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 10,
-   "servings": 2,
-   "onePot": true,
-   "diets": [
-    "vegetarian"
-   ],
-   "ingredients": [
-    {
-     "items": [
-      "4 egg",
-      "1 cup cabbage, finely shredded",
-      "1 carrot, grated",
-      "1 spring onion, sliced",
-      "1 tbsp butter",
-      "4 slice white bread",
-      "1 tbsp tomato sauce",
-      "2 tsp white sugar"
-     ]
-    }
-   ],
-   "steps": [
-    "Beat the eggs with the cabbage, carrot and spring onion.",
-    "Cook half the mixture in a pan for 3 minutes each side until fully set. Repeat, then fold each omelette to fit the bread.",
-    "Toast the bread in the butter until golden.",
-    "Sprinkle the omelettes with sugar, spread with tomato sauce and sandwich in the toast, pressing until warm."
-   ],
-   "notes": [
-    "Food safety: cook the omelettes until fully set. Breakfast. Vegetarian."
-   ],
-   "nutrition": {
-    "kcal": 382,
-    "proteinG": 20,
-    "carbsG": 38,
-    "fatG": 16,
-    "fibreG": 3,
-    "sodiumMg": 650
-   }
-  },
-  {
    "id": "gochujang-tofu-and-zucchini-rice-bowls",
    "title": "Gochujang Tofu and Zucchini Rice Bowls",
    "summary": "Silky pan-seared tofu and zucchini glazed in a sweet gochujang sauce, served on rice.",

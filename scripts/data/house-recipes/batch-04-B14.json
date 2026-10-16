@@ -1384,62 +1384,6 @@
       }
     },
     {
-      "id": "kerala-mutta-roast-egg-roast",
-      "title": "Kerala Mutta Roast Egg Roast",
-      "summary": "Hard-boiled eggs simmered in a dark Kerala onion and tomato masala with curry leaves.",
-      "cuisine": "indian",
-      "mealTypes": [
-        "dinner"
-      ],
-      "difficulty": "easy",
-      "prepMinutes": 10,
-      "cookMinutes": 25,
-      "servings": 4,
-      "onePot": false,
-      "diets": [
-        "vegetarian",
-        "no-gluten",
-        "no-dairy"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "8 eggs",
-            "3 onions, sliced",
-            "2 tomatoes, chopped",
-            "3 tbsp coconut oil",
-            "1 tsp ground turmeric",
-            "2 tsp chilli powder",
-            "1 tbsp ground coriander",
-            "1 tsp garam masala",
-            "1 tbsp ginger, grated",
-            "3 garlic cloves, minced",
-            "10g curry leaf",
-            "1 tsp salt",
-            "1 1/2 cups basmati rice"
-          ]
-        }
-      ],
-      "steps": [
-        "Cook the rice by your usual method until tender and fluffy, then keep it covered.",
-        "Boil the eggs for 9 minutes until firm, cool, peel and score lightly.",
-        "Heat the oil, fry the curry leaves and onions for 12 minutes until deep brown.",
-        "Add the ginger, garlic, spices and tomatoes and cook for 6 minutes until jammy.",
-        "Add 1/2 cup water and the salt, stir in the eggs and simmer for 4 minutes until coated and hot."
-      ],
-      "notes": [
-        "Food safety: cook eggs until fully set and hold the dish above 75°C. Naturally gluten-free."
-      ],
-      "nutrition": {
-        "kcal": 560,
-        "proteinG": 26,
-        "carbsG": 62,
-        "fatG": 22,
-        "fibreG": 5,
-        "sodiumMg": 780
-      }
-    },
-    {
       "id": "matoke-plantain-and-peanut-stew",
       "title": "Matoke Plantain and Peanut Stew",
       "summary": "Green plantain simmered with tomato, onion and ground peanut, a Ugandan comfort one-pot.",

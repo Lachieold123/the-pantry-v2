@@ -361,54 +361,6 @@
       }
     },
     {
-      "id": "teriyaki-salmon-rice-bowl-with-edamame",
-      "title": "Teriyaki Salmon Rice Bowl (with Edamame)",
-      "summary": "Glazed pan-seared salmon over rice with edamame, cucumber and sesame, ready in 25 minutes.",
-      "cuisine": "japanese",
-      "mealTypes": [
-        "lunch"
-      ],
-      "difficulty": "easy",
-      "prepMinutes": 8,
-      "cookMinutes": 17,
-      "servings": 2,
-      "onePot": false,
-      "diets": [
-        "pescatarian",
-        "no-dairy"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "3/4 cup white rice",
-            "2 salmon fillet",
-            "1 tsp neutral oil",
-            "3 tbsp teriyaki sauce",
-            "1 cup edamame",
-            "1/2 cucumber, sliced",
-            "1 tbsp sesame seeds"
-          ]
-        }
-      ],
-      "steps": [
-        "Cook the rice per the packet until tender, about 12 minutes. Boil the edamame in the last 3 minutes.",
-        "Sear the salmon skin-side down in the oil for 4 minutes, turn, add the teriyaki sauce and cook for 3 minutes, until the glaze is sticky and the fish flakes easily.",
-        "Divide the rice into bowls and top with the salmon, edamame and cucumber. Sprinkle with sesame seeds."
-      ],
-      "notes": [
-        "Food safety: salmon should be cooked until it flakes and is opaque, reaching 63°C. Cool within an hour; for a packed lunch use an ice pack, eat within 4 hours and do not reheat the rice more than once.",
-        "Contains fish, soy and sesame."
-      ],
-      "nutrition": {
-        "kcal": 660,
-        "proteinG": 40,
-        "carbsG": 71,
-        "fatG": 24,
-        "fibreG": 5,
-        "sodiumMg": 1000
-      }
-    },
-    {
       "id": "italian-sub-with-salami-ham-and-provolone-style-mozzarella",
       "title": "Italian Sub (with Salami, Ham and Mozzarella)",
       "summary": "Salami, ham and mozzarella with crisp lettuce and an oregano and vinegar dressing in a crusty roll.",
@@ -847,56 +799,6 @@
       }
     },
     {
-      "id": "cong-you-bing-chinese-spring-onion-pancakes",
-      "title": "Cong You Bing (Chinese Spring Onion Pancakes)",
-      "summary": "Flaky, layered pan-fried pancakes with spring onion and sesame oil, with a soy and vinegar dipping sauce.",
-      "cuisine": "chinese",
-      "mealTypes": [
-        "lunch"
-      ],
-      "difficulty": "medium",
-      "prepMinutes": 25,
-      "cookMinutes": 15,
-      "servings": 4,
-      "onePot": false,
-      "diets": [
-        "vegetarian",
-        "vegan",
-        "no-dairy"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "2 cup plain flour",
-            "3/4 cup boiling water",
-            "4 spring onion, finely sliced",
-            "2 tbsp sesame oil",
-            "3 tbsp neutral oil",
-            "2 tbsp soy sauce",
-            "1 tbsp rice vinegar"
-          ]
-        }
-      ],
-      "steps": [
-        "Stir the boiling water into the flour with a pinch of salt until a shaggy dough forms, then knead for 5 minutes, until smooth. Cover and rest for 20 minutes.",
-        "Divide into 4 balls and roll each thin. Brush with sesame oil, scatter with spring onion, roll up like a scroll, coil into a spiral and flatten to 5mm.",
-        "Fry in the neutral oil over medium heat for 3 minutes each side, until golden and flaky.",
-        "Mix the soy sauce and vinegar for dipping."
-      ],
-      "notes": [
-        "Uncooked pancakes freeze between baking paper for 2 months. Cooked ones keep 2 days in the fridge and reheat in a dry pan.",
-        "Contains gluten, soy and sesame."
-      ],
-      "nutrition": {
-        "kcal": 350,
-        "proteinG": 8,
-        "carbsG": 56,
-        "fatG": 10,
-        "fibreG": 2,
-        "sodiumMg": 700
-      }
-    },
-    {
       "id": "hoisin-chicken-bao-buns-with-cucumber",
       "title": "Hoisin Chicken Bao Buns (with Cucumber)",
       "summary": "Steamed bao filled with sticky hoisin chicken, cucumber, spring onion and a little coriander.",
@@ -992,56 +894,6 @@
         "fatG": 9,
         "fibreG": 4,
         "sodiumMg": 550
-      }
-    },
-    {
-      "id": "aloo-paratha-spiced-potato-stuffed-flatbread",
-      "title": "Aloo Paratha (Spiced Potato-Stuffed Flatbread)",
-      "summary": "Soft wholemeal-style flatbread stuffed with spiced mashed potato and fried in ghee, served with yoghurt.",
-      "cuisine": "indian",
-      "mealTypes": [
-        "lunch"
-      ],
-      "difficulty": "medium",
-      "prepMinutes": 30,
-      "cookMinutes": 20,
-      "servings": 4,
-      "onePot": false,
-      "diets": [
-        "vegetarian"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "2 cup plain flour",
-            "1/2 cup water",
-            "400g potato, boiled and mashed",
-            "1 tsp ground cumin",
-            "1 tsp garam masala",
-            "1 green chilli, minced",
-            "2 tbsp coriander, chopped",
-            "3 tbsp ghee",
-            "1/2 cup greek yoghurt"
-          ]
-        }
-      ],
-      "steps": [
-        "Knead the flour, water and a pinch of salt for 5 minutes until smooth and soft, then cover and rest for 20 minutes.",
-        "Mix the mashed potato with the cumin, garam masala, chilli, coriander and 1/2 tsp salt.",
-        "Divide the dough into 4, flatten each, enclose a quarter of the filling, pinch to seal and roll out to 18cm.",
-        "Cook each in a hot dry pan for 1 minute, flip, brush with ghee and cook 2 minutes each side, until golden brown in spots. Serve with the yoghurt."
-      ],
-      "notes": [
-        "Keeps 1 day in the fridge; reheat in a pan. Cooked parathas freeze for 1 month.",
-        "Contains gluten and milk."
-      ],
-      "nutrition": {
-        "kcal": 455,
-        "proteinG": 11,
-        "carbsG": 75,
-        "fatG": 12,
-        "fibreG": 4,
-        "sodiumMg": 420
       }
     }
   ]

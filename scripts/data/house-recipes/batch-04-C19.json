@@ -1199,57 +1199,6 @@
       }
     },
     {
-      "id": "mexican-frijoles-charros-cowboy-bean-soup",
-      "title": "Mexican Frijoles Charros Cowboy Bean Soup",
-      "summary": "Pinto beans simmered with smoky bacon, chorizo, tomato and jalapeno, a northern Mexican barbecue staple.",
-      "cuisine": "mexican",
-      "mealTypes": [
-        "dinner"
-      ],
-      "difficulty": "easy",
-      "prepMinutes": 15,
-      "cookMinutes": 50,
-      "servings": 6,
-      "onePot": true,
-      "diets": [
-        "no-gluten",
-        "no-dairy"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "2 x 400g tins pinto beans, drained",
-            "100g bacon, diced",
-            "120g chorizo, sliced",
-            "1 brown onion, chopped",
-            "2 garlic cloves",
-            "3 tomatoes, chopped",
-            "2 jalapenos, sliced",
-            "1 litre chicken stock",
-            "1 small bunch fresh coriander",
-            "Salt"
-          ]
-        }
-      ],
-      "steps": [
-        "Fry the bacon and chorizo in a pot for 6 minutes, until the fat renders and the meats brown.",
-        "Add the onion, garlic, tomatoes and jalapenos and cook for 6 minutes, until soft.",
-        "Add the beans and stock, bring to the boil and simmer for 30 minutes, until the broth is rich and thickened.",
-        "Season with salt, add the coriander and serve in bowls."
-      ],
-      "notes": [
-        "Food safety: cook the chorizo until it reaches 75°C throughout and no pink remains. Cool leftovers within 2 hours and use within 3 days."
-      ],
-      "nutrition": {
-        "kcal": 344,
-        "proteinG": 20,
-        "carbsG": 26,
-        "fatG": 16,
-        "fibreG": 8,
-        "sodiumMg": 1100
-      }
-    },
-    {
       "id": "colombian-hogao-tomato-and-onion-sofrito",
       "title": "Colombian Hogao Tomato and Onion Sofrito",
       "summary": "Slow-cooked tomato, spring onion and garlic base that flavours Colombian rice, beans and arepas.",

@@ -106,109 +106,6 @@
       }
     },
     {
-      "id": "senegalese-mafe-peanut-stew",
-      "title": "Senegalese Mafe Peanut Stew",
-      "summary": "Beef or sweet potato simmered in a thick peanut and tomato sauce, a Dakar family staple.",
-      "cuisine": "west-african",
-      "mealTypes": [
-        "dinner"
-      ],
-      "difficulty": "easy",
-      "prepMinutes": 20,
-      "cookMinutes": 60,
-      "servings": 6,
-      "onePot": true,
-      "diets": [
-        "no-gluten",
-        "no-dairy"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "600 g beef chuck, diced",
-            "1/2 cup natural peanut butter",
-            "1 onion, diced",
-            "2 carrots, sliced",
-            "1 large sweet potato, cubed",
-            "2 tbsp tomato paste",
-            "2 tbsp vegetable oil",
-            "4 cups water",
-            "2 cloves garlic, crushed",
-            "1 tsp salt"
-          ]
-        }
-      ],
-      "steps": [
-        "Brown the beef in the oil in a large pot for 8 minutes until coloured, then add the onion and garlic and cook for 5 minutes until soft.",
-        "Stir in the tomato paste, then add the water and salt and simmer for 30 minutes until the beef is nearly tender.",
-        "Whisk the peanut butter with a ladle of broth until smooth and stir it in with the carrots and sweet potato.",
-        "Simmer for 25 minutes until the vegetables are tender and the sauce is thick."
-      ],
-      "notes": [
-        "Food safety: cool leftovers within 2 hours and reheat until steaming hot at 75°C or above.",
-        "Serve over white rice. Contains peanuts."
-      ],
-      "nutrition": {
-        "kcal": 417,
-        "proteinG": 28,
-        "carbsG": 18,
-        "fatG": 25,
-        "fibreG": 4,
-        "sodiumMg": 640
-      }
-    },
-    {
-      "id": "senegalese-yassa-onion-and-lemon-chicken",
-      "title": "Senegalese Yassa Onion and Lemon Chicken",
-      "summary": "Chicken braised in a tangy mound of sweet onions, mustard and lemon.",
-      "cuisine": "west-african",
-      "mealTypes": [
-        "dinner"
-      ],
-      "difficulty": "medium",
-      "prepMinutes": 20,
-      "cookMinutes": 45,
-      "servings": 4,
-      "onePot": true,
-      "diets": [
-        "no-gluten",
-        "no-dairy"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "800 g chicken thigh cutlets",
-            "5 onions, sliced",
-            "1/3 cup lemon juice",
-            "2 tbsp Dijon mustard",
-            "3 tbsp vegetable oil",
-            "3 cloves garlic, crushed",
-            "1 cup chicken stock",
-            "1 tsp salt",
-            "1/2 cup green olives"
-          ]
-        }
-      ],
-      "steps": [
-        "Brown the chicken in 1 tbsp of the oil in a wide pot for 8 minutes until golden, then lift out.",
-        "Cook the onions in the remaining oil for 15 minutes until golden and very soft.",
-        "Stir in the garlic, mustard, lemon juice, stock and salt and return the chicken to the pot.",
-        "Cover and simmer for 20 minutes until the chicken is cooked through and the sauce is thick, then stir in the olives."
-      ],
-      "notes": [
-        "Food safety: cook the chicken until it reaches 75°C at the thickest part.",
-        "Serve over rice."
-      ],
-      "nutrition": {
-        "kcal": 442,
-        "proteinG": 34,
-        "carbsG": 16,
-        "fatG": 26,
-        "fibreG": 4,
-        "sodiumMg": 950
-      }
-    },
-    {
       "id": "nigerian-ofada-style-pepper-stew",
       "title": "Nigerian Ofada Style Pepper Stew",
       "summary": "A smoky, deep red stew of roasted capsicum and chilli, cooked down in oil with onion and locust-free spices.",
@@ -354,11 +251,11 @@
         "Use plantains that are mostly yellow with black spots for the sweetest result."
       ],
       "nutrition": {
-        "kcal": 368,
-        "proteinG": 2,
-        "carbsG": 52,
-        "fatG": 16,
-        "fibreG": 4,
+        "kcal": 247,
+        "proteinG": 1,
+        "carbsG": 35,
+        "fatG": 11,
+        "fibreG": 3,
         "sodiumMg": 330
       }
     },
@@ -405,11 +302,11 @@
         "Serve with rice and peas or jerk chicken."
       ],
       "nutrition": {
-        "kcal": 108,
-        "proteinG": 3,
-        "carbsG": 13,
-        "fatG": 4,
-        "fibreG": 4,
+        "kcal": 75,
+        "proteinG": 2,
+        "carbsG": 9,
+        "fatG": 3,
+        "fibreG": 3,
         "sodiumMg": 310
       }
     },
@@ -669,58 +566,6 @@
       }
     },
     {
-      "id": "wonton-soup-with-bok-choy",
-      "title": "Wonton Soup with Bok Choy",
-      "summary": "Silky prawn and pork wontons in a clear chicken broth with greens.",
-      "cuisine": "chinese",
-      "mealTypes": [
-        "lunch",
-        "dinner"
-      ],
-      "difficulty": "medium",
-      "prepMinutes": 30,
-      "cookMinutes": 10,
-      "servings": 4,
-      "onePot": false,
-      "diets": [
-        "no-dairy"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "24 wonton wrappers",
-            "150 g minced pork",
-            "150 g raw prawns, finely chopped",
-            "2 tsp soy sauce",
-            "1 tsp sesame oil",
-            "1 tsp ginger, grated",
-            "5 cups chicken stock",
-            "2 bunches baby bok choy",
-            "2 spring onions, sliced",
-            "1/2 tsp white pepper"
-          ]
-        }
-      ],
-      "steps": [
-        "Mix the pork, prawns, soy sauce, sesame oil, ginger and pepper until sticky.",
-        "Place a teaspoon of filling in each wrapper, wet the edges and fold into a triangle, pressing out the air.",
-        "Bring the stock to a gentle simmer and cook the wontons for 4 minutes until they float and the filling is cooked through.",
-        "Add the bok choy for 2 minutes until just tender and serve scattered with spring onions."
-      ],
-      "notes": [
-        "Food safety: cook until the pork and prawns reach 75°C and are opaque, and refrigerate leftovers within 2 hours.",
-        "Contains crustacean and gluten."
-      ],
-      "nutrition": {
-        "kcal": 288,
-        "proteinG": 25,
-        "carbsG": 28,
-        "fatG": 8,
-        "fibreG": 2,
-        "sodiumMg": 1100
-      }
-    },
-    {
       "id": "pelmeni-in-chicken-broth",
       "title": "Pelmeni in Chicken Broth",
       "summary": "Small Russian meat dumplings served in a clear dill-scented chicken broth.",
@@ -915,11 +760,11 @@
         "Leave out the feta for vegan."
       ],
       "nutrition": {
-        "kcal": 309,
-        "proteinG": 8,
-        "carbsG": 28,
-        "fatG": 17,
-        "fibreG": 6,
+        "kcal": 223,
+        "proteinG": 6,
+        "carbsG": 20,
+        "fatG": 12,
+        "fibreG": 4,
         "sodiumMg": 420
       }
     },

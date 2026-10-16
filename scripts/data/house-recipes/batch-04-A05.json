@@ -2519,54 +2519,6 @@
    }
   },
   {
-   "id": "bauernfruhstuck-farmer-s-breakfast",
-   "title": "Bauernfruhstuck Farmer's Breakfast",
-   "summary": "Crisp potato, bacon and onion with eggs set over the top and chives.",
-   "cuisine": "central-european",
-   "mealTypes": [
-    "breakfast"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 25,
-   "servings": 4,
-   "onePot": true,
-   "diets": [
-    "no-gluten"
-   ],
-   "ingredients": [
-    {
-     "items": [
-      "600g waxy potato, sliced",
-      "150g bacon, diced",
-      "1 brown onion, diced",
-      "2 tbsp butter",
-      "6 egg",
-      "1/4 cup chives, snipped",
-      "1 pickles, sliced"
-     ]
-    }
-   ],
-   "steps": [
-    "Boil the potato for 8 minutes, until just tender, then drain and dry.",
-    "Fry the bacon in a large frying pan for 5 minutes, until crisp. Add the butter, onion and potato and cook for 10 minutes, turning now and then, until golden.",
-    "Whisk the eggs with a pinch of salt and pour them over the potatoes.",
-    "Cook gently for 4 minutes, until the egg is just set, then scatter with chives and serve with pickles."
-   ],
-   "notes": [
-    "Food safety: cook the eggs until firm, with no raw egg left, for young children, older people or anyone pregnant; the bacon should be cooked through.",
-    "Gluten-free."
-   ],
-   "nutrition": {
-    "kcal": 382,
-    "proteinG": 20,
-    "carbsG": 26,
-    "fatG": 22,
-    "fibreG": 3,
-    "sodiumMg": 740
-   }
-  },
-  {
    "id": "swiss-rosti-with-fried-eggs-and-smoked-salmon",
    "title": "Swiss Rosti with Fried Eggs and Smoked Salmon",
    "summary": "Crisp grated-potato cake topped with fried egg and silky smoked salmon.",

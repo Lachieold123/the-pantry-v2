@@ -2,55 +2,6 @@
   "about": "House recipes, batch 04 (slice B): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
   "recipes": [
     {
-      "id": "rosemary-focaccia-squares",
-      "title": "Rosemary Focaccia Squares",
-      "summary": "Dimpled olive oil focaccia with rosemary and flaky salt, cut into snack squares.",
-      "cuisine": "italian",
-      "mealTypes": [
-        "snack"
-      ],
-      "difficulty": "medium",
-      "prepMinutes": 20,
-      "cookMinutes": 25,
-      "servings": 12,
-      "onePot": false,
-      "diets": [
-        "vegetarian",
-        "vegan",
-        "no-dairy"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "500g bread flour",
-            "7g dried yeast",
-            "10g salt",
-            "400ml lukewarm water",
-            "80ml olive oil, divided",
-            "2 tbsp rosemary leaves",
-            "1 tbsp flaky sea salt"
-          ]
-        }
-      ],
-      "steps": [
-        "Mix the flour, yeast and salt in a large bowl, add the water and 2 tbsp of the olive oil, and stir to a sticky dough. Cover and leave until doubled.",
-        "Pour 3 tbsp of the oil into a 20 x 30cm tin. Tip in the dough, stretch it gently to the corners, cover and rest until puffy.",
-        "Heat the oven to 210°C fan (230°C conventional). Drizzle with the remaining oil, press your fingertips into the dough to dimple it, then scatter with the rosemary and flaky salt.",
-        "Bake for 25 minutes, until deep golden and the base sounds hollow when tapped. Cool in the tin for 10 minutes, then cut into 12 squares."
-      ],
-      "notes": [
-        "Snack. Allow about 1 hour 30 minutes of proving, not included in the times. Per serving: 1 square. Best the day it is baked; keeps 2 days in an airtight container or freezes for 2 months. Reheat at 180°C fan for 5 minutes."
-      ],
-      "nutrition": {
-        "kcal": 214,
-        "proteinG": 6,
-        "carbsG": 33,
-        "fatG": 6,
-        "fibreG": 2,
-        "sodiumMg": 420
-      }
-    },
-    {
       "id": "pandesal-filipino-rolls",
       "title": "Pandesal Filipino Rolls",
       "summary": "Soft, lightly sweet Filipino bread rolls rolled in breadcrumbs, best eaten warm.",
@@ -669,11 +620,11 @@
         "Snack. Per serving: 1 glass. Make just before serving; the ice melts fast. Use ice from clean water."
       ],
       "nutrition": {
-        "kcal": 181,
-        "proteinG": 4,
-        "carbsG": 34,
-        "fatG": 3,
-        "fibreG": 1,
+        "kcal": 60,
+        "proteinG": 1,
+        "carbsG": 11,
+        "fatG": 1,
+        "fibreG": 0,
         "sodiumMg": 120
       }
     },

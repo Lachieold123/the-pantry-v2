@@ -162,58 +162,6 @@
       }
     },
     {
-      "id": "roasted-tomato-gazpacho",
-      "title": "Roasted Tomato Gazpacho",
-      "summary": "A chilled summer soup of roasted tomatoes, cucumber, capsicum and sherry vinegar.",
-      "cuisine": "spanish",
-      "mealTypes": [
-        "lunch"
-      ],
-      "difficulty": "easy",
-      "prepMinutes": 15,
-      "cookMinutes": 30,
-      "servings": 4,
-      "onePot": true,
-      "diets": [
-        "vegetarian",
-        "vegan",
-        "no-dairy"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "1kg ripe tomatoes",
-            "1 cucumber",
-            "1 red capsicum",
-            "2 garlic cloves",
-            "3 tbsp olive oil",
-            "2 tbsp sherry vinegar",
-            "1 slice day-old bread",
-            "1 tsp salt"
-          ]
-        }
-      ],
-      "steps": [
-        "Roast the tomatoes and garlic at 200C for 30 minutes until the skins blister.",
-        "Cool, then peel the tomatoes.",
-        "Blend with the cucumber, capsicum, bread and vinegar until smooth.",
-        "Stream in the oil while blending until the soup emulsifies.",
-        "Chill for at least 2 hours until very cold."
-      ],
-      "notes": [
-        "Serve in chilled bowls.",
-        "Taste for salt once cold, as chilling dulls flavour."
-      ],
-      "nutrition": {
-        "kcal": 191,
-        "proteinG": 4,
-        "carbsG": 17,
-        "fatG": 11,
-        "fibreG": 4,
-        "sodiumMg": 520
-      }
-    },
-    {
       "id": "corn-chowder-with-smoked-paprika",
       "title": "Corn Chowder with Smoked Paprika",
       "summary": "A creamy summer corn chowder with potato, smoked paprika and bacon.",
