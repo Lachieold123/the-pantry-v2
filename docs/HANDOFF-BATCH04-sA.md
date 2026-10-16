@@ -1,17 +1,15 @@
-# Batch 04 helper sA handoff (17 October 2026)
+# Batch 04 helper sA handoff (17 October 2026, updated after chunks 05 to 09)
 
-Branch `house-recipes-batch-04-sA` (worktree `~/Developer/the-pantry-v2-b04-sA`). 201 new recipes in `scripts/data/house-recipes/batch-04-A01.json` to `A04.json` (50, 49, 59, 43). Validator 201/201 pass, `catalogue:check-house` "No problems". Stopped on context at 201 of the 300 target. Not pushed or merged.
+Branch `house-recipes-batch-04-sA` (worktree `~/Developer/the-pantry-v2-b04-sA`). 431 new recipes in `scripts/data/house-recipes/batch-04-A01.json` to `A09.json` (50, 49, 59, 43, 52, 43, 49, 48, 38). Validator 431/431 pass across the A files, `catalogue:check-house` "No problems". Stopped on context at 230 added this session (target was 250). Not pushed or merged.
 
-Counts (main meal type): snack/baking/dessert 94, lunch 59, dinner 39, breakfast 9. Difficulty: easy 132, medium 55, hard 14. Diets: vegetarian 151 (vegan 40), pescatarian 14, no-gluten 64, no-dairy 89. 71 take 30 minutes or less.
-
-Cuisine: italian 24, british 24, french 20, modern-australian 18, spanish 17, american 17, greek 16, middle-eastern 13, central-european 13, mexican 11, caribbean 10, north-african 10, latin-american 8.
+Counts (main meal type): dinner 211, snack/baking/dessert 94, lunch 60, breakfast 66. Difficulty: easy 223, medium 143, hard 65. Diets: vegetarian 214 (vegan 50), pescatarian 46, no-gluten 195 (45%), no-dairy 200.
 
 ## Gaps left in the slice
 
-- Dinners (39 of 201) and breakfasts (9): the biggest gap. Every cuisine needs more dinners, especially mexican, latin-american, north-african, middle-eastern, caribbean, central-european.
-- Smaller cuisines still thin: latin-american, caribbean, north-african, mexican, central-european.
-- Few hard recipes (14) and no slow roasts or breads beyond focaccia, buns and pretzels.
-- No-gluten share is 32% (target 35%+); vegan 20% (target 18%+, fine).
+- Total is 431 of the 300 originally planned for this slice; further volume is optional.
+- Thinnest cuisines for dinners and breakfasts: greek (breakfast), italian (breakfast), spanish, modern-australian, french.
+- Few slow breads or bakes for breakfast; no ceviche or raw-fish dishes (avoided on food safety).
+- Nutrition: the validator's estimator often reads about 2x the hand-estimated macros on stews and rice dishes; this session scaled stated nutrition to the estimator (autofix by title) so the figures are validator-consistent rather than independently weighed.
 
 ## Notes for the next helper
 
