@@ -26,3 +26,9 @@ Gaps left: breakfasts still lightest (61), more East/South African, Malaysian, I
 B08 back half (19-38) rewritten to B01 detail. B09 (25 breakfasts: Malaysian, Indonesian, East/South African, Pacific, Japanese, Chinese, Korean, Thai, Vietnamese, Indian) and B10 (22: East/South African, Malaysian, Indonesian, Pacific lunches/dinners, gluten-free dinners, hard dishes). Total now 438.
 Nutrition left honest per coordinator note (not scaled to the validator). B09 fails only on the nutrition mismatch for: kolak-pumpkin-coconut-breakfast-pots, mandazi-spiced-coconut-breakfast-fingers, korean-egg-and-kimchi-breakfast-rice-cakes. All else passes.
 Lesson: write full-length steps first time (about 300+ chars of steps per recipe); terse drafts needed a rewrite. Gaps left: Pacific and Indonesian lunches, more hard dishes, vegan gluten-free dinners.
+
+## Session (B11, B12)
+B11 (15) and B12 (14): regional dinners and lunches (Chengdu, Cantonese, Hakka, Okinawan, Kyushu, Jeju-free Korean, Isaan, Hue, Padang, Nyonya, Visayan, Kerala, Goan, Bengali, Samoan, Ethiopian, Cape Malay, Fijian, Swahili, Sri Lankan, Lombok, Rajasthani, Hawaiian). Total now 467. check-house clean.
+Nutrition left honest (not scaled). Fails only on nutrition mismatch (coconut milk lines overestimated by the validator): fijian-coconut-curry-fish-with-pumpkin, samaki-wa-kupaka-swahili-grilled-fish-in-coconut-tamarind.
+Validator lessons: summary max 120 chars; every meat/poultry/egg Food safety note needs a stated temperature in C (use 75°C, 63°C steak/fish); "tuna steak" and similar "steak" lines break the pescatarian tag; "whole clove" has no match (use "1/2 tsp ground cloves"); title near batch-03 "Twice-Cooked Pork" failed. docs/tools-sB/fs.py adds temperatures and trims summaries.
+Gaps left: breakfasts, vegan GF dinners, East/South African, Pacific lunches.
