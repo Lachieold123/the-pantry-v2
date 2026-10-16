@@ -1,0 +1,1151 @@
+{
+ "about": "House recipes, batch 04 (helper sA): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+ "recipes": [
+  {
+   "id": "mediterranean-barley-bowl-with-roast-vegetables-and-feta",
+   "title": "Roast Vegetable Barley Bowl with Feta and Lemon Tahini",
+   "summary": "A warm Mediterranean grain bowl of pearl barley, roasted zucchini, capsicum and chickpeas with feta.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.5 cup pearl barley",
+      "2 zucchini, cut into chunks",
+      "2 capsicum, cut into chunks",
+      "400g tinned chickpeas, drained",
+      "2 tbsp olive oil",
+      "150g feta, crumbled",
+      "3 tbsp tahini",
+      "1 lemon, juiced",
+      "1 clove garlic, crushed",
+      "1/4 cup parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Roast the zucchini, capsicum and chickpeas with the oil for 25 minutes until charred at the edges.",
+    "Simmer the barley in plenty of water for 25 minutes until tender, then drain.",
+    "Whisk the tahini, lemon, garlic and 3 tablespoons of water until smooth. Pile the barley, vegetables and feta into bowls and drizzle with the dressing and parsley."
+   ],
+   "notes": [
+    "Contains gluten, dairy and sesame. Use brown rice instead of barley for gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 22,
+    "carbsG": 74,
+    "fatG": 20,
+    "fibreG": 13,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "korean-bibimbap-style-rice-bowl-with-beef-and-vegetables",
+   "title": "Beef Bibimbap-Style Bowls with Gochujang Sauce",
+   "summary": "Rice topped with seasoned beef, sauteed vegetables, a fried egg and gochujang sauce.",
+   "cuisine": "korean",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.5 cup short grain rice",
+      "400g beef mince",
+      "3 tbsp soy sauce",
+      "1 tbsp sesame oil",
+      "2 carrot, cut into matchsticks",
+      "2 zucchini, cut into matchsticks",
+      "200g spinach",
+      "4 egg",
+      "2 tbsp gochujang",
+      "1 tbsp sugar",
+      "1 tbsp vegetable oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the rice. Brown the beef with half the soy sauce and the sugar for 6 minutes until cooked through with no pink left.",
+    "Stir-fry the carrot and zucchini in the vegetable oil for 3 minutes until just tender, and wilt the spinach with the remaining soy sauce for 1 minute.",
+    "Fry the eggs until the whites are set. Mix the gochujang with the sesame oil and 1 tablespoon of water. Build the bowls with rice, beef, vegetables and egg and add the sauce."
+   ],
+   "notes": [
+    "Contains soy, sesame and egg.",
+    "Food safety: cook the mince to 75°C with no pink, and cook eggs until the whites are set; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 620,
+    "proteinG": 35,
+    "carbsG": 76,
+    "fatG": 19,
+    "fibreG": 5,
+    "sodiumMg": 980
+   }
+  },
+  {
+   "id": "mexican-brown-rice-bowl-with-black-beans-and-corn-salsa",
+   "title": "Mexican Brown Rice Bowl with Black Beans and Corn Salsa",
+   "summary": "A vegetarian bowl of brown rice, spiced beans, charred corn salsa and avocado.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.5 cup brown rice",
+      "800g tinned black beans, drained",
+      "1 tsp ground cumin",
+      "1 tsp smoked paprika",
+      "2 corn cobs",
+      "1 red onion, finely diced",
+      "2 tomato, diced",
+      "1 lime, juiced",
+      "1/4 cup coriander leaves",
+      "2 avocado, sliced",
+      "1/2 cup Greek yoghurt"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the rice in plenty of water for 30 minutes until tender, then drain.",
+    "Warm the beans with the cumin, paprika and 1/4 cup of water for 8 minutes. Char the corn in a hot pan for 8 minutes until blackened in spots, cut off the kernels and mix with the onion, tomato, lime and coriander.",
+    "Build bowls with the rice, beans, salsa, avocado and a spoon of yoghurt."
+   ],
+   "notes": [
+    "Contains dairy. Swap the yoghurt for a dairy-free yoghurt if needed."
+   ],
+   "nutrition": {
+    "kcal": 600,
+    "proteinG": 22,
+    "carbsG": 92,
+    "fatG": 18,
+    "fibreG": 20,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "spiced-tomato-rice-bowl-with-grilled-chicken-and-plantain",
+   "title": "Spiced Tomato Rice Bowl with Grilled Chicken and Sweet Plantain",
+   "summary": "West African-style tomato and pepper rice with spiced grilled chicken thigh and sweet plantain.",
+   "cuisine": "west-african",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g chicken thigh fillet",
+      "2 tsp smoked paprika",
+      "1 tsp dried thyme",
+      "3 tbsp vegetable oil",
+      "1 onion, diced",
+      "3 clove garlic, crushed",
+      "2 capsicum, diced",
+      "400g tinned tomatoes",
+      "2 tbsp tomato paste",
+      "1.5 cup basmati rice",
+      "2 cup chicken stock",
+      "2 plantain, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Rub the chicken with half the paprika, thyme and a little oil, then grill for 12 minutes, turning, until cooked through at 75°C.",
+    "Cook the onion, garlic and capsicum in 1 tablespoon of oil for 6 minutes, add the tomatoes, paste and remaining paprika for 5 minutes, then stir in the rice and stock. Cover and cook gently for 20 minutes until the rice is tender.",
+    "Fry the plantain in the remaining oil for 3 minutes each side until golden and serve with the rice and chicken."
+   ],
+   "notes": [
+    "Add a chilli for heat.",
+    "Food safety: chicken must reach 75°C at the thickest part with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 680,
+    "proteinG": 36,
+    "carbsG": 92,
+    "fatG": 18,
+    "fibreG": 6,
+    "sodiumMg": 720
+   }
+  },
+  {
+   "id": "persian-herb-and-barley-bowl-with-saffron-chicken",
+   "title": "Persian-Style Barley Bowl with Saffron Chicken and Herbs",
+   "summary": "Pearl barley tossed with herbs and pomegranate, topped with saffron yoghurt chicken.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "600g chicken breast, sliced",
+      "1 cup Greek yoghurt",
+      "1 pinch saffron threads",
+      "1 lemon, juiced",
+      "1.5 cup pearl barley",
+      "1 cup parsley, chopped",
+      "1/2 cup mint, chopped",
+      "1/2 cup pomegranate seeds",
+      "1/4 cup flaked almonds",
+      "2 tbsp olive oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Soak the saffron in 2 tablespoons of hot water for 5 minutes, then stir into the yoghurt with the lemon juice and toss the chicken in it.",
+    "Simmer the barley for 25 minutes until tender, then drain. Fry the chicken in the oil for 8 minutes until cooked through.",
+    "Toss the barley with the herbs, pomegranate and almonds and serve topped with the chicken."
+   ],
+   "notes": [
+    "Contains gluten, dairy and nuts.",
+    "Food safety: chicken must reach 75°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 42,
+    "carbsG": 58,
+    "fatG": 17,
+    "fibreG": 10,
+    "sodiumMg": 170
+   }
+  },
+  {
+   "id": "japanese-salmon-donburi-with-pickled-cucumber",
+   "title": "Teriyaki Salmon Donburi with Pickled Cucumber",
+   "summary": "Glazed salmon over rice with quick pickled cucumber, edamame and sesame.",
+   "cuisine": "japanese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 salmon fillet",
+      "3 tbsp soy sauce",
+      "2 tbsp mirin",
+      "1 tbsp sugar",
+      "1.5 cup short grain rice",
+      "2 cucumber, thinly sliced",
+      "2 tbsp rice vinegar",
+      "1 cup edamame, shelled",
+      "1 tbsp sesame seeds",
+      "1 tbsp vegetable oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the rice until tender. Toss the cucumber with the vinegar and a pinch of sugar and leave while you cook the fish.",
+    "Sear the salmon in the oil for 4 minutes, skin side down, turn, add the soy sauce, mirin and sugar and cook for 3 minutes until glossy and the fish flakes.",
+    "Serve the rice topped with the salmon, glaze, cucumber, edamame and sesame."
+   ],
+   "notes": [
+    "Contains fish, soy and sesame.",
+    "Food safety: cook salmon until opaque and flaking; keep raw fish below 5°C and eat leftovers within 1 day."
+   ],
+   "nutrition": {
+    "kcal": 600,
+    "proteinG": 38,
+    "carbsG": 66,
+    "fatG": 18,
+    "fibreG": 4,
+    "sodiumMg": 980
+   }
+  },
+  {
+   "id": "moroccan-couscous-bowl-with-spiced-lamb-and-roast-carrots",
+   "title": "Moroccan Couscous Bowl with Spiced Lamb and Roast Carrots",
+   "summary": "Couscous with cumin lamb, roasted carrots, yoghurt and mint.",
+   "cuisine": "north-african",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "500g lamb mince",
+      "1 tsp ground cumin",
+      "1 tsp ground coriander",
+      "1 tsp paprika",
+      "600g carrot, cut into batons",
+      "2 tbsp olive oil",
+      "1.5 cup couscous",
+      "1/3 cup raisins",
+      "1 cup Greek yoghurt",
+      "1/4 cup mint, chopped",
+      "1 lemon, juiced"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan) and roast the carrot with half the oil for 25 minutes until caramelised.",
+    "Fry the lamb with the spices in the remaining oil for 8 minutes until browned with no pink left. Cover the couscous and raisins with 1.5 cups of boiling water for 5 minutes, then fluff.",
+    "Serve the couscous topped with lamb, carrot, yoghurt, mint and lemon."
+   ],
+   "notes": [
+    "Contains gluten and dairy.",
+    "Food safety: cook the mince to 75°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 640,
+    "proteinG": 36,
+    "carbsG": 70,
+    "fatG": 24,
+    "fibreG": 6,
+    "sodiumMg": 170
+   }
+  },
+  {
+   "id": "vietnamese-vermicelli-bowl-with-lemongrass-pork",
+   "title": "Vietnamese Vermicelli Bowl with Lemongrass Pork",
+   "summary": "Rice noodles with grilled lemongrass pork, herbs, pickled carrot and nuoc cham dressing.",
+   "cuisine": "vietnamese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g pork mince",
+      "2 stalk lemongrass, finely chopped",
+      "2 clove garlic, crushed",
+      "1 tbsp fish sauce",
+      "1 tbsp sugar",
+      "200g rice vermicelli",
+      "2 carrot, grated",
+      "1 cucumber, sliced",
+      "1 cup mint leaves",
+      "2 tbsp peanuts, crushed",
+      "2 lime, juiced",
+      "1/4 cup fish sauce"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the pork with the lemongrass, garlic, 1 tablespoon fish sauce and half the sugar, shape into small patties and grill or pan-fry for 8 minutes until cooked through with no pink.",
+    "Soak the noodles in boiling water for 5 minutes, then drain and rinse. Stir the lime, 1/4 cup fish sauce, remaining sugar and 1/4 cup of water for the dressing.",
+    "Pile the noodles, carrot, cucumber and mint into bowls, top with the pork and peanuts and pour over the dressing."
+   ],
+   "notes": [
+    "Contains fish and peanuts.",
+    "Food safety: cook pork mince to 75°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 540,
+    "proteinG": 33,
+    "carbsG": 64,
+    "fatG": 15,
+    "fibreG": 4,
+    "sodiumMg": 1280
+   }
+  },
+  {
+   "id": "spinach-and-feta-stromboli-style-bread-roll",
+   "title": "Spinach and Feta Stuffed Bread Roll",
+   "summary": "A rolled and baked pizza dough filled with spinach, feta and mozzarella.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g pizza dough",
+      "200g spinach",
+      "1 tbsp olive oil",
+      "2 clove garlic, crushed",
+      "150g feta, crumbled",
+      "100g mozzarella, grated",
+      "1 egg, beaten",
+      "1 tsp dried oregano"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Wilt the spinach with the garlic in the oil for 2 minutes, squeeze out the water and cool.",
+    "Roll the dough into a 30cm by 40cm rectangle, top with the spinach, feta, mozzarella and oregano leaving a border, then roll up from the long side and seal the ends.",
+    "Brush with egg and bake for 28 minutes until deep golden and cooked through. Rest for 5 minutes before slicing."
+   ],
+   "notes": [
+    "Contains gluten, dairy and egg. Serve with a green salad.",
+    "Food safety: bake until the dough is cooked through and no longer doughy; refrigerate leftovers within 2 hours."
+   ],
+   "nutrition": {
+    "kcal": 470,
+    "proteinG": 20,
+    "carbsG": 56,
+    "fatG": 17,
+    "fibreG": 4,
+    "sodiumMg": 860
+   }
+  },
+  {
+   "id": "ham-cheese-and-mushroom-calzone",
+   "title": "Ham, Cheese and Mushroom Calzone",
+   "summary": "Folded pizza pockets stuffed with leg ham, mushroom, mozzarella and ricotta.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "500g pizza dough",
+      "1 tbsp olive oil",
+      "200g mushroom, sliced",
+      "150g leg ham, chopped",
+      "150g mozzarella, grated",
+      "100g ricotta",
+      "1/2 cup tomato passata",
+      "1 tsp dried oregano"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 230°C (210°C fan). Fry the mushroom in the oil for 6 minutes until golden and dry.",
+    "Divide the dough into 4, roll into rounds and fill half of each with passata, ham, mushroom, ricotta and mozzarella. Fold over and crimp the edges.",
+    "Bake for 18 minutes until puffed and golden, with the cheese melted inside."
+   ],
+   "notes": [
+    "Contains gluten and dairy. Use cooked ham, not raw.",
+    "Food safety: bake until piping hot in the centre; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 28,
+    "carbsG": 68,
+    "fatG": 19,
+    "fibreG": 4,
+    "sodiumMg": 1020
+   }
+  },
+  {
+   "id": "potato-and-cheddar-stuffed-flatbreads-aloo-paratha-style",
+   "title": "Potato and Cheddar Stuffed Flatbreads",
+   "summary": "Pan-fried wholemeal flatbreads stuffed with spiced potato and cheddar, served with yoghurt.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 cup wholemeal flour",
+      "1/2 tsp salt",
+      "500g potato, boiled and mashed",
+      "1 tsp ground cumin",
+      "1 tsp garam masala",
+      "1/2 tsp chilli flakes",
+      "80g cheddar, grated",
+      "2 tbsp ghee",
+      "1 cup Greek yoghurt"
+     ]
+    }
+   ],
+   "steps": [
+    "Knead the flour, salt and 3/4 cup of water into a soft dough and rest while you mix the mash, spices and cheddar.",
+    "Divide the dough into 8, flatten each, fill with the potato mix, seal and roll out gently to 15cm rounds.",
+    "Cook each flatbread on a hot pan with a little ghee for 3 minutes each side until golden and cooked through. Serve with yoghurt."
+   ],
+   "notes": [
+    "Contains gluten and dairy."
+   ],
+   "nutrition": {
+    "kcal": 470,
+    "proteinG": 16,
+    "carbsG": 62,
+    "fatG": 17,
+    "fibreG": 7,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "lamb-and-mint-sfiha-open-pies",
+   "title": "Lamb and Mint Sfiha-Style Open Pies",
+   "summary": "Little Lebanese-style open pies with spiced lamb, tomato and pine nuts.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g plain flour",
+      "2 tsp dried yeast",
+      "1 tsp sugar",
+      "1 tsp salt",
+      "2 tbsp olive oil",
+      "400g lamb mince",
+      "1 onion, finely diced",
+      "2 tomato, diced",
+      "1 tsp ground cinnamon",
+      "1 tsp allspice",
+      "1/4 cup pine nuts",
+      "1 lemon, juiced"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the flour, yeast, sugar, salt, oil and 1 cup of warm water, knead for 8 minutes until smooth and rest for 1 hour until doubled.",
+    "Mix the lamb, onion, tomato, spices, pine nuts and lemon juice. Heat the oven to 230°C (210°C fan).",
+    "Divide the dough into 12 discs, top with the mixture and bake for 15 minutes until the lamb is cooked through with no pink and the base is golden."
+   ],
+   "notes": [
+    "Contains gluten and nuts.",
+    "Food safety: lamb mince must reach 75°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 660,
+    "proteinG": 32,
+    "carbsG": 86,
+    "fatG": 20,
+    "fibreG": 5,
+    "sodiumMg": 720
+   }
+  },
+  {
+   "id": "leek-and-chicken-pot-pie-with-mustard-cream",
+   "title": "Leek and Chicken Pot Pie with Mustard Cream",
+   "summary": "A creamy chicken and leek filling topped with golden puff pastry.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 35,
+   "servings": 6,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "700g chicken thigh fillet, diced",
+      "2 tbsp butter",
+      "2 leek, sliced",
+      "3 tbsp plain flour",
+      "2 cup chicken stock",
+      "1/2 cup cream",
+      "1 tbsp Dijon mustard",
+      "1 cup frozen peas",
+      "2 sheet puff pastry",
+      "1 egg, beaten"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Brown the chicken in the butter for 5 minutes, add the leek for 5 minutes until soft, then stir in the flour for 1 minute.",
+    "Add the stock, cream and mustard and simmer for 8 minutes until thick, stir in the peas and tip into a pie dish to cool slightly.",
+    "Cover with the pastry, trim, cut a slit, brush with egg and bake for 30 minutes until puffed, golden and bubbling."
+   ],
+   "notes": [
+    "Contains gluten, dairy and egg.",
+    "Food safety: chicken must be cooked to 75°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 620,
+    "proteinG": 34,
+    "carbsG": 38,
+    "fatG": 37,
+    "fibreG": 4,
+    "sodiumMg": 620
+   }
+  },
+  {
+   "id": "mushroom-and-lentil-pie-with-sweet-potato-top",
+   "title": "Mushroom and Lentil Pie with Sweet Potato Top",
+   "summary": "A vegan pie of mushroom and lentil gravy under a golden sweet potato mash.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 40,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp olive oil",
+      "1 onion, diced",
+      "2 carrot, diced",
+      "300g mushroom, chopped",
+      "3 clove garlic, crushed",
+      "1 cup brown lentils, rinsed",
+      "2 tbsp tomato paste",
+      "2 cup vegetable stock",
+      "1 tbsp soy sauce",
+      "1 tsp dried thyme",
+      "1 kg sweet potato, cubed",
+      "2 tbsp olive oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the sweet potato for 15 minutes until soft, drain and mash with the second 2 tbsp of oil.",
+    "Soften the onion, carrot and mushroom in the oil for 8 minutes, add the garlic, lentils, paste, stock, soy and thyme and simmer for 30 minutes until the lentils are tender and thick.",
+    "Heat the oven to 200°C (180°C fan). Spoon the filling into a dish, top with the mash and bake for 25 minutes until golden at the edges."
+   ],
+   "notes": [
+    "Contains soy. Vegan and gluten free."
+   ],
+   "nutrition": {
+    "kcal": 420,
+    "proteinG": 16,
+    "carbsG": 66,
+    "fatG": 11,
+    "fibreG": 14,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "spiced-pumpkin-and-chickpea-hand-pies",
+   "title": "Spiced Pumpkin and Chickpea Hand Pies",
+   "summary": "Flaky folded pies filled with spiced pumpkin, chickpeas and spinach.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 30,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "3 sheet puff pastry",
+      "500g pumpkin, diced",
+      "2 tbsp olive oil",
+      "1 onion, diced",
+      "2 tsp curry powder",
+      "400g tinned chickpeas, drained",
+      "100g spinach",
+      "1/4 cup mango chutney",
+      "1 egg, beaten"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Roast the pumpkin with half the oil for 20 minutes until soft.",
+    "Soften the onion in the remaining oil for 5 minutes, stir in the curry powder, then the pumpkin, chickpeas, spinach and chutney until the spinach wilts. Cool slightly.",
+    "Cut the pastry into 6 large squares, fill, fold, crimp and brush with egg. Bake for 25 minutes until golden."
+   ],
+   "notes": [
+    "Contains gluten and egg."
+   ],
+   "nutrition": {
+    "kcal": 500,
+    "proteinG": 11,
+    "carbsG": 60,
+    "fatG": 24,
+    "fibreG": 6,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "rosemary-lamb-and-vegetable-pie-with-sweet-potato-mash",
+   "title": "Rosemary Lamb and Vegetable Pie with Sweet Potato Mash",
+   "summary": "A lighter shepherd's pie with lamb mince, vegetables and a sweet potato and potato mash.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 50,
+   "servings": 6,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp olive oil",
+      "1 onion, diced",
+      "2 carrot, diced",
+      "600g lamb mince",
+      "3 clove garlic, crushed",
+      "2 tbsp tomato paste",
+      "1 tbsp plain flour",
+      "2 cup beef stock",
+      "1 tbsp rosemary, chopped",
+      "1 cup frozen peas",
+      "600g potato, cubed",
+      "400g sweet potato, cubed",
+      "40g butter"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Boil the potato and sweet potato for 18 minutes until tender, drain and mash with the butter.",
+    "Cook the onion, carrot and lamb in the oil for 10 minutes until browned, add the garlic, paste and flour for 1 minute, then the stock and rosemary and simmer for 12 minutes until thick. Stir in the peas.",
+    "Spoon into a dish, top with the mash and bake for 25 minutes until golden and bubbling."
+   ],
+   "notes": [
+    "Contains gluten and dairy.",
+    "Food safety: lamb mince must reach 75°C with no pink; refrigerate leftovers within 2 hours and eat within 3 days."
+   ],
+   "nutrition": {
+    "kcal": 470,
+    "proteinG": 28,
+    "carbsG": 40,
+    "fatG": 22,
+    "fibreG": 7,
+    "sodiumMg": 470
+   }
+  },
+  {
+   "id": "prawn-cocktail-stuffed-avocado-with-marie-rose-sauce-and-brown-bread",
+   "title": "Modern Prawn Cocktail Avocados with Marie Rose Sauce",
+   "summary": "A 70s dinner-party classic updated with lime, avocado and a lighter yoghurt dressing.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 5,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g cooked prawn, peeled",
+      "3 tbsp mayonnaise",
+      "3 tbsp Greek yoghurt",
+      "2 tbsp tomato sauce",
+      "1 tsp worcestershire sauce",
+      "1 lemon, juiced",
+      "2 avocado, halved",
+      "1 cos lettuce, shredded",
+      "1 tbsp chives, chopped",
+      "4 slice wholemeal bread"
+     ]
+    }
+   ],
+   "steps": [
+    "Whisk the mayonnaise, yoghurt, tomato sauce, worcestershire and lemon together.",
+    "Fold through the prawns and keep chilled until serving.",
+    "Toast the bread until crisp. Fill each avocado half with lettuce and prawn mixture, scatter over the chives and serve with the toast."
+   ],
+   "notes": [
+    "Contains shellfish, egg, dairy and gluten. Use only cooked prawns from a reliable source.",
+    "Food safety: keep cooked prawns below 5°C and serve within 30 minutes of leaving the fridge; eat leftovers within 1 day."
+   ],
+   "nutrition": {
+    "kcal": 420,
+    "proteinG": 32,
+    "carbsG": 22,
+    "fatG": 24,
+    "fibreG": 8,
+    "sodiumMg": 880
+   }
+  },
+  {
+   "id": "chicken-kiev-style-baked-chicken-with-garlic-herb-butter",
+   "title": "Oven-Baked Chicken Kievs with Garlic Herb Butter",
+   "summary": "A 70s classic baked rather than fried, stuffed with garlic and parsley butter and served with green beans.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 25,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "4 chicken breast",
+      "80g butter, softened",
+      "3 clove garlic, crushed",
+      "1/4 cup parsley, chopped",
+      "1 lemon, zested",
+      "1/4 cup plain flour",
+      "2 egg, beaten",
+      "1.5 cup breadcrumbs",
+      "2 tbsp olive oil",
+      "300g green beans"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the butter, garlic, parsley and zest and chill until firm. Heat the oven to 200°C (180°C fan).",
+    "Cut a deep pocket into each chicken breast, add a quarter of the butter, then coat in flour, egg and the breadcrumbs mixed with the oil.",
+    "Bake for 28 minutes until golden and the chicken reaches 75°C in the thickest part. Steam the beans for 4 minutes until tender and serve."
+   ],
+   "notes": [
+    "Contains gluten, dairy and egg.",
+    "Food safety: chicken must reach 75°C at the thickest part with no pink and the butter hot; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 650,
+    "proteinG": 50,
+    "carbsG": 32,
+    "fatG": 35,
+    "fibreG": 3,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "salmon-en-croute-with-spinach-and-lemon-cream-cheese",
+   "title": "Salmon en Croute with Spinach and Lemon Cream Cheese",
+   "summary": "A show-stopping 80s dinner-party dish: salmon wrapped in puff pastry with spinach and cream cheese.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 30,
+   "cookMinutes": 35,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "pescatarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 sheet puff pastry",
+      "800g salmon fillet",
+      "150g spinach",
+      "100g cream cheese",
+      "1 lemon, zested",
+      "2 tbsp dill, chopped",
+      "1 egg, beaten",
+      "1 tbsp sesame seeds",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Wilt the spinach in a dry pan for 2 minutes, squeeze very dry and mix with the cream cheese, zest, dill and salt.",
+    "Place the salmon on one sheet of pastry, spread with the filling, cover with the second sheet, seal the edges, trim and brush with egg and sesame seeds.",
+    "Bake for 35 minutes until the pastry is deep golden and the fish flakes in the centre."
+   ],
+   "notes": [
+    "Contains fish, gluten, dairy, egg and sesame. Cut the fillet into 2 smaller fillets for easier wrapping.",
+    "Food safety: cook fish until opaque and flaking, and shellfish until opaque and firm; keep raw seafood below 5°C, refrigerate leftovers within 2 hours and eat within 1 day."
+   ],
+   "nutrition": {
+    "kcal": 620,
+    "proteinG": 36,
+    "carbsG": 34,
+    "fatG": 38,
+    "fibreG": 2,
+    "sodiumMg": 560
+   }
+  },
+  {
+   "id": "beef-wellington-with-mushroom-duxelles-for-six",
+   "title": "Beef Wellington with Mushroom Duxelles",
+   "summary": "The classic dinner-party centrepiece with a simplified duxelles and puff pastry.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 40,
+   "cookMinutes": 40,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g beef eye fillet",
+      "1 tbsp olive oil",
+      "500g mushroom, finely chopped",
+      "2 clove garlic, crushed",
+      "1 tbsp thyme leaves",
+      "4 slice leg ham",
+      "2 sheet puff pastry",
+      "2 egg, beaten",
+      "1 tbsp Dijon mustard"
+     ]
+    }
+   ],
+   "steps": [
+    "Sear the seasoned beef in the oil for 6 minutes all over, brush with mustard and chill. Cook the mushroom, garlic and thyme in a dry pan for 12 minutes until all the moisture has gone.",
+    "Lay the ham on cling film, spread the mushroom over, roll the beef in it, chill for 20 minutes, then wrap in the pastry and brush with egg.",
+    "Bake at 200°C (180°C fan) for 35 minutes until the pastry is golden and the beef reaches 55 to 60°C for medium. Rest for 10 minutes before slicing."
+   ],
+   "notes": [
+    "Contains gluten and egg. Use a probe thermometer; the centre stays pink for medium.",
+    "Food safety: whole cuts of beef can be served medium (55 to 60°C) once the outside is fully seared; for children, pregnant women and the elderly, cook to 70°C. Refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 620,
+    "proteinG": 42,
+    "carbsG": 32,
+    "fatG": 35,
+    "fibreG": 2,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "chicken-cordon-bleu-with-lemon-and-greens",
+   "title": "Baked Chicken Cordon Bleu with Lemon and Greens",
+   "summary": "Chicken breast stuffed with ham and Swiss cheese, crumbed and baked with a lemon and green bean side.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "4 chicken breast",
+      "4 slice leg ham",
+      "4 slice Swiss cheese",
+      "1/4 cup plain flour",
+      "2 egg, beaten",
+      "1.5 cup breadcrumbs",
+      "2 tbsp olive oil",
+      "300g green beans, trimmed",
+      "1 lemon, cut into wedges"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Slit each chicken breast open, fill with ham and cheese and close with toothpicks.",
+    "Coat in flour, egg and the breadcrumbs mixed with the oil, and bake for 30 minutes until golden and the chicken reaches 75°C.",
+    "Steam the beans for 4 minutes until tender and serve with the lemon wedges."
+   ],
+   "notes": [
+    "Contains gluten, dairy and egg. Remove toothpicks before serving.",
+    "Food safety: chicken must reach 75°C at the thickest part; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 56,
+    "carbsG": 30,
+    "fatG": 22,
+    "fibreG": 3,
+    "sodiumMg": 860
+   }
+  },
+  {
+   "id": "coq-au-vin-blanc-with-mushrooms-and-pearl-onions",
+   "title": "Lighter Coq au Vin with Mushrooms and Baby Onions",
+   "summary": "A modernised French braise with chicken thigh, mushrooms and less fat, served with mash.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 50,
+   "servings": 4,
+   "onePot": true,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "800g chicken thigh cutlet",
+      "2 tbsp olive oil",
+      "150g bacon, diced",
+      "1 onion, diced",
+      "200g baby onion, peeled",
+      "250g mushroom, halved",
+      "3 clove garlic, crushed",
+      "1 tbsp plain flour",
+      "1.5 cup red wine",
+      "1 cup chicken stock",
+      "2 sprig thyme",
+      "1 kg potato, cubed",
+      "30g butter"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the chicken in the oil for 6 minutes each side and set aside. Cook the bacon, onions and mushroom in the pot for 8 minutes until golden, then stir in the garlic and flour for 1 minute.",
+    "Add the wine, stock and thyme, return the chicken, cover and simmer for 35 minutes until the chicken is falling off the bone and reaches 75°C.",
+    "Boil the potato for 15 minutes until tender, mash with the butter and serve with the coq au vin."
+   ],
+   "notes": [
+    "Contains gluten and dairy.",
+    "Food safety: chicken must reach 75°C; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 620,
+    "proteinG": 38,
+    "carbsG": 44,
+    "fatG": 27,
+    "fibreG": 5,
+    "sodiumMg": 760
+   }
+  },
+  {
+   "id": "prawn-and-pea-risotto-with-lemon-and-mint",
+   "title": "Prawn and Pea Risotto with Lemon and Mint",
+   "summary": "Creamy risotto with prawns, peas and a squeeze of lemon, a modern take on a 90s favourite.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp olive oil",
+      "1 onion, finely diced",
+      "2 clove garlic, crushed",
+      "1.5 cup arborio rice",
+      "1/2 cup white wine",
+      "5 cup chicken stock",
+      "500g peeled prawn",
+      "1 cup frozen peas",
+      "30g butter",
+      "1/2 cup parmesan, grated",
+      "1 lemon, zested and juiced",
+      "1/4 cup mint, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Soften the onion in the oil for 5 minutes, add the garlic and rice for 1 minute, then the wine until absorbed.",
+    "Add the hot stock a ladle at a time, stirring, for 20 minutes until the rice is creamy and tender.",
+    "Stir in the prawns and peas for 3 minutes until the prawns are pink and cooked, then the butter, parmesan, lemon and mint."
+   ],
+   "notes": [
+    "Contains shellfish and dairy.",
+    "Food safety: cook fish until opaque and flaking, and shellfish until opaque and firm; keep raw seafood below 5°C, refrigerate leftovers within 2 hours and eat within 1 day."
+   ],
+   "nutrition": {
+    "kcal": 600,
+    "proteinG": 36,
+    "carbsG": 76,
+    "fatG": 15,
+    "fibreG": 5,
+    "sodiumMg": 780
+   }
+  }
+ ]
+}
