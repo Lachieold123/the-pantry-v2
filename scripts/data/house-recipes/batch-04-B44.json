@@ -1,0 +1,903 @@
+{
+  "about": "House recipes, batch 04 (slice B): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "chocolate-hazelnut-biscotti",
+      "title": "Chocolate Hazelnut Biscotti",
+      "summary": "Twice-baked cocoa biscotti with whole hazelnuts and chocolate chips, made for dunking.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 42,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g plain flour",
+            "30g cocoa powder",
+            "150g caster sugar",
+            "1 tsp baking powder",
+            "2 eggs",
+            "1 tsp vanilla extract",
+            "150g whole hazelnuts",
+            "60g dark chocolate chips"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional) and line a tray. Mix the flour, cocoa, sugar and baking powder, then stir in the eggs and vanilla to a stiff dough and fold in the hazelnuts and chocolate chips.",
+        "Shape into two logs 25cm long and 6cm wide and bake for 30 minutes, until firm to the touch.",
+        "Cool for 10 minutes, then slice each log into 12 pieces on an angle with a serrated knife.",
+        "Lay the slices cut side down, lower the oven to 150°C fan (170°C conventional) and bake for 12 minutes more, until dry and crisp. Cool on a wire rack."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Contains tree nuts and gluten. Per serving: 2 biscotti. Keeps 3 weeks in an airtight container.",
+        "Food safety: the eggs are cooked through in the bake; do not taste the raw dough."
+      ],
+      "nutrition": {
+        "kcal": 248,
+        "proteinG": 6,
+        "carbsG": 32,
+        "fatG": 10,
+        "fibreG": 3,
+        "sodiumMg": 50
+      }
+    },
+    {
+      "id": "pistachio-and-sultana-biscotti",
+      "title": "Pistachio and Sultana Biscotti",
+      "summary": "Orange-scented biscotti with green pistachios and plump sultanas, baked twice until crisp.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 40,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g plain flour",
+            "130g caster sugar",
+            "1 tsp baking powder",
+            "2 eggs",
+            "2 tbsp olive oil",
+            "1 tsp orange zest",
+            "100g shelled pistachios",
+            "80g sultanas"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional) and line a tray. Mix the flour, sugar and baking powder, then stir in the eggs, oil and zest to a stiff dough and fold in the pistachios and sultanas.",
+        "Shape into two logs 25cm long and 6cm wide and bake for 28 minutes, until golden and firm.",
+        "Cool for 10 minutes, then slice each log into 12 pieces on an angle.",
+        "Lay the slices cut side down and bake at 150°C fan (170°C conventional) for 12 minutes, until dry and lightly golden. Cool on a wire rack."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Contains tree nuts and gluten. Per serving: 2 biscotti. Keeps 3 weeks in an airtight container.",
+        "Food safety: the eggs are cooked through in the bake; do not taste the raw dough."
+      ],
+      "nutrition": {
+        "kcal": 225,
+        "proteinG": 5,
+        "carbsG": 34,
+        "fatG": 7,
+        "fibreG": 3,
+        "sodiumMg": 50
+      }
+    },
+    {
+      "id": "orange-and-fennel-seed-biscotti",
+      "title": "Orange and Fennel Seed Biscotti",
+      "summary": "A nut-free biscotti with orange zest and toasted fennel seeds, lovely with tea or coffee.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 38,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g plain flour",
+            "140g caster sugar",
+            "1 tsp baking powder",
+            "2 eggs",
+            "3 tbsp olive oil",
+            "1 tbsp orange zest",
+            "1 tbsp fennel seeds, lightly toasted"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional) and line a tray. Mix the flour, sugar, baking powder, orange zest and fennel seeds, then stir in the eggs and oil to a stiff dough.",
+        "Shape into two logs 25cm long and 5cm wide and bake for 26 minutes, until golden and firm.",
+        "Cool for 10 minutes, then slice each log into 12 pieces on an angle.",
+        "Lay the slices cut side down and bake at 150°C fan (170°C conventional) for 12 minutes, until dry and crisp. Cool on a wire rack."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Nut-free. Per serving: 2 biscotti. Keeps 3 weeks in an airtight container.",
+        "Food safety: the eggs are cooked through in the bake; do not taste the raw dough."
+      ],
+      "nutrition": {
+        "kcal": 162,
+        "proteinG": 3,
+        "carbsG": 28,
+        "fatG": 4,
+        "fibreG": 1,
+        "sodiumMg": 40
+      }
+    },
+    {
+      "id": "scottish-shortbread-wedges",
+      "title": "Scottish Shortbread Wedges",
+      "summary": "Buttery, crumbly shortbread pressed into a round, pricked and baked slowly until pale gold.",
+      "cuisine": "british",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "225g unsalted butter, softened",
+            "110g caster sugar",
+            "330g plain flour",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 150°C fan (170°C conventional) and line a 23cm round tin. Beat the butter and sugar together until creamy.",
+        "Work in the flour and salt with your hands until a smooth dough forms, then press into the tin and prick all over with a fork.",
+        "Mark into 12 wedges and bake for 40 minutes, until pale golden at the edges.",
+        "Re-cut along the lines while hot and cool in the tin before removing."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 wedge. Keeps 2 weeks in an airtight container."
+      ],
+      "nutrition": {
+        "kcal": 278,
+        "proteinG": 3,
+        "carbsG": 30,
+        "fatG": 16,
+        "fibreG": 1,
+        "sodiumMg": 50
+      }
+    },
+    {
+      "id": "lemon-shortbread-rounds",
+      "title": "Lemon Shortbread Rounds",
+      "summary": "Tender icing sugar shortbread rounds with lemon zest, crisp at the edges.",
+      "cuisine": "british",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 10,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g unsalted butter, softened",
+            "75g icing sugar",
+            "200g plain flour",
+            "1 tbsp lemon zest",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional) and line two trays. Beat the butter, icing sugar and lemon zest together until pale and creamy.",
+        "Mix in the flour and lemon juice until a soft dough forms, then roll into 20 balls and flatten slightly.",
+        "Bake for 15 minutes, until barely coloured on top and golden underneath.",
+        "Cool on the trays for 5 minutes, then on a wire rack."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 rounds. Keeps 10 days in an airtight container."
+      ],
+      "nutrition": {
+        "kcal": 206,
+        "proteinG": 2,
+        "carbsG": 22,
+        "fatG": 12,
+        "fibreG": 1,
+        "sodiumMg": 40
+      }
+    },
+    {
+      "id": "nankhatai-cardamom-biscuits",
+      "title": "Nankhatai Cardamom Biscuits",
+      "summary": "Crumbly North Indian ghee biscuits with chickpea flour, semolina and cardamom, topped with pistachio.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100g ghee, softened",
+            "80g icing sugar",
+            "100g plain flour",
+            "60g besan (chickpea flour)",
+            "40g semolina",
+            "1/2 tsp ground cardamom",
+            "1/4 tsp baking powder",
+            "15g pistachios, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional) and line a tray. Whisk the ghee and icing sugar for 3 minutes until pale and fluffy.",
+        "Mix in the flour, besan, semolina, cardamom and baking powder until a soft dough forms.",
+        "Roll into 16 balls, flatten slightly, press a little pistachio on top and bake for 18 minutes, until set and pale golden.",
+        "Cool on the tray, as they firm up when cold."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Contains tree nuts and gluten. Per serving: 2 biscuits. Keeps 2 weeks in an airtight container."
+      ],
+      "nutrition": {
+        "kcal": 254,
+        "proteinG": 4,
+        "carbsG": 27,
+        "fatG": 14,
+        "fibreG": 2,
+        "sodiumMg": 10
+      }
+    },
+    {
+      "id": "italian-almond-amaretti",
+      "title": "Italian Almond Amaretti",
+      "summary": "Chewy gluten-free almond macaroons with crisp cracked tops.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 18,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g almond meal",
+            "150g caster sugar",
+            "2 egg whites",
+            "1/2 tsp almond extract",
+            "2 tbsp icing sugar"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional) and line two trays. Whisk the egg whites until foamy, then stir in the almond meal, caster sugar and almond extract to a sticky dough.",
+        "Roll into 16 balls, roll each in the icing sugar and place on the trays.",
+        "Bake for 18 minutes, until lightly golden and cracked on top.",
+        "Cool on the trays, as they firm up when cold."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Gluten-free (check labels). Contains tree nuts and egg. Per serving: 2 amaretti. Keeps 1 week in an airtight container.",
+        "Food safety: the eggs are cooked through in the bake; do not taste the raw dough."
+      ],
+      "nutrition": {
+        "kcal": 242,
+        "proteinG": 6,
+        "carbsG": 26,
+        "fatG": 12,
+        "fibreG": 3,
+        "sodiumMg": 15
+      }
+    },
+    {
+      "id": "sables-bretons-butter-biscuits",
+      "title": "Sables Bretons Butter Biscuits",
+      "summary": "Rich Breton butter biscuits made with egg yolks and salted butter, baked in rings for a tall, crumbly texture.",
+      "cuisine": "french",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "125g salted butter, softened",
+            "100g caster sugar",
+            "3 egg yolks",
+            "180g plain flour",
+            "2 tsp baking powder"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 170°C fan (190°C conventional) and grease 16 holes of a muffin or tartlet tin. Beat the butter and sugar until pale, then beat in the egg yolks one at a time.",
+        "Fold in the flour and baking powder until a soft dough forms, then press the dough 1.5cm thick into the greased holes.",
+        "Bake for 15 minutes, until deep golden at the edges.",
+        "Cool in the tin for 5 minutes, then ease out and cool on a wire rack."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 biscuits. Keeps 1 week in an airtight container.",
+        "Food safety: the eggs are cooked through in the bake; do not taste the raw dough."
+      ],
+      "nutrition": {
+        "kcal": 265,
+        "proteinG": 3,
+        "carbsG": 29,
+        "fatG": 15,
+        "fibreG": 1,
+        "sodiumMg": 170
+      }
+    },
+    {
+      "id": "speculoos-spiced-biscuits",
+      "title": "Speculoos Spiced Biscuits",
+      "summary": "Thin caramel-spiced biscuits with cinnamon, ginger, nutmeg and cloves, crisp enough for coffee.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 12,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g plain flour",
+            "100g brown sugar",
+            "125g butter, softened",
+            "1 tbsp honey",
+            "1 tbsp milk",
+            "2 tsp ground cinnamon",
+            "1/2 tsp ground ginger",
+            "1/4 tsp ground nutmeg",
+            "1/4 tsp ground cloves",
+            "1/2 tsp baking powder"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 170°C fan (190°C conventional) and line two trays. Beat the butter, sugar and honey together until creamy, then mix in the milk.",
+        "Stir in the flour, spices and baking powder to a firm dough, then roll to 4mm thick between two sheets of baking paper.",
+        "Cut into 24 rectangles, place on the trays and bake for 12 minutes, until golden brown at the edges.",
+        "Cool on the trays, as they crisp up when cold."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 biscuits. Keeps 2 weeks in an airtight container."
+      ],
+      "nutrition": {
+        "kcal": 179,
+        "proteinG": 2,
+        "carbsG": 22,
+        "fatG": 9,
+        "fibreG": 1,
+        "sodiumMg": 90
+      }
+    },
+    {
+      "id": "pepparkakor-swedish-ginger-thins",
+      "title": "Pepparkakor Swedish Ginger Thins",
+      "summary": "Very thin, snappy Swedish ginger biscuits with cinnamon and cloves.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 7,
+      "servings": 10,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g plain flour",
+            "125g butter, softened",
+            "120g brown sugar",
+            "60g golden syrup",
+            "2 tbsp milk",
+            "1 tbsp ground ginger",
+            "2 tsp ground cinnamon",
+            "1 tsp ground cloves",
+            "1 tsp bicarbonate of soda"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C fan (200°C conventional) and line two trays. Beat the butter, sugar and syrup together until creamy, then mix in the milk.",
+        "Stir in the flour, spices and bicarbonate of soda to a firm dough, then roll very thinly, about 2mm, between sheets of baking paper.",
+        "Cut out 40 shapes, place on the trays and bake for 7 minutes, until crisp and a shade darker at the edges.",
+        "Cool on the trays, as they crisp up when cold."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 4 thins. Keeps 3 weeks in an airtight container."
+      ],
+      "nutrition": {
+        "kcal": 262,
+        "proteinG": 3,
+        "carbsG": 39,
+        "fatG": 10,
+        "fibreG": 2,
+        "sodiumMg": 130
+      }
+    },
+    {
+      "id": "spritz-butter-cookies",
+      "title": "Spritz Butter Cookies",
+      "summary": "Piped vanilla butter cookies in ridged ribbons, tender and crisp-edged.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 12,
+      "servings": 10,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g unsalted butter, softened",
+            "100g caster sugar",
+            "1 egg",
+            "2 tsp vanilla extract",
+            "300g plain flour",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 170°C fan (190°C conventional) and line two trays. Beat the butter and sugar until pale and fluffy, then beat in the egg and vanilla.",
+        "Mix in the flour and salt to a soft dough and pipe 30 small ribbons or rosettes onto the trays with a star nozzle.",
+        "Bake for 12 minutes, until pale gold at the edges.",
+        "Cool on the trays for 5 minutes, then on a wire rack."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 3 cookies. Keeps 10 days in an airtight container.",
+        "Food safety: the eggs are cooked through in the bake; do not taste the raw dough."
+      ],
+      "nutrition": {
+        "kcal": 303,
+        "proteinG": 4,
+        "carbsG": 33,
+        "fatG": 17,
+        "fibreG": 1,
+        "sodiumMg": 60
+      }
+    },
+    {
+      "id": "moroccan-ghriba-coconut-biscuits",
+      "title": "Moroccan Ghriba Coconut Biscuits",
+      "summary": "Soft, chewy coconut biscuits with a crackled top, lightly scented with lemon.",
+      "cuisine": "north-african",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g desiccated coconut",
+            "120g caster sugar",
+            "2 egg whites",
+            "30g semolina",
+            "1 tsp vanilla extract",
+            "1 tsp lemon zest"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional) and line a tray. Mix the coconut, sugar, semolina, vanilla and lemon zest, then stir in the egg whites until the mixture clumps together.",
+        "Roll into 16 small balls and place on the tray.",
+        "Bake for 15 minutes, until lightly golden at the edges and cracked on top.",
+        "Cool on the tray, as they firm up when cold."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Contains gluten (semolina) and egg. Per serving: 2 biscuits. Keeps 1 week in an airtight container.",
+        "Food safety: the eggs are cooked through in the bake; do not taste the raw dough."
+      ],
+      "nutrition": {
+        "kcal": 251,
+        "proteinG": 3,
+        "carbsG": 24,
+        "fatG": 15,
+        "fibreG": 4,
+        "sodiumMg": 30
+      }
+    },
+    {
+      "id": "un-kurabiyesi-turkish-flour-biscuits",
+      "title": "Un Kurabiyesi Turkish Flour Biscuits",
+      "summary": "Melt-in-the-mouth Turkish butter biscuits with a dusting of icing sugar.",
+      "cuisine": "turkish",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 10,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "125g butter, softened",
+            "80g icing sugar",
+            "1 egg yolk",
+            "250g plain flour",
+            "1 tsp vanilla extract"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional) and line a tray. Beat the butter and icing sugar until pale and creamy, then beat in the egg yolk and vanilla.",
+        "Mix in the flour to a soft dough, then roll into 20 balls and press an indent in each with your thumb.",
+        "Bake for 20 minutes, until set and barely coloured.",
+        "Cool on the tray, as they are fragile while warm."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 biscuits. Keeps 10 days in an airtight container.",
+        "Food safety: the eggs are cooked through in the bake; do not taste the raw dough."
+      ],
+      "nutrition": {
+        "kcal": 221,
+        "proteinG": 3,
+        "carbsG": 27,
+        "fatG": 11,
+        "fibreG": 1,
+        "sodiumMg": 20
+      }
+    },
+    {
+      "id": "nan-e-nokhodchi-persian-chickpea-flour-biscuits",
+      "title": "Nan-e Nokhodchi Persian Chickpea Flour Biscuits",
+      "summary": "Delicate gluten-free Persian chickpea flour biscuits scented with cardamom and topped with pistachio.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 18,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g besan (chickpea flour)",
+            "120g icing sugar",
+            "120g butter, melted",
+            "1/2 tsp ground cardamom",
+            "20g pistachios, finely chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 150°C fan (170°C conventional) and line two trays. Toast the besan in a dry pan over low heat for 5 minutes, until it smells nutty, then cool.",
+        "Mix the besan, icing sugar and cardamom, then stir in the melted butter to a soft dough.",
+        "Roll into 24 balls, flatten gently and top with pistachio.",
+        "Bake for 18 minutes, until set and barely coloured. Cool on the trays, as they are fragile while warm."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Contains tree nuts. Per serving: 2 biscuits. Keeps 10 days in an airtight container."
+      ],
+      "nutrition": {
+        "kcal": 186,
+        "proteinG": 4,
+        "carbsG": 19,
+        "fatG": 10,
+        "fibreG": 2,
+        "sodiumMg": 20
+      }
+    },
+    {
+      "id": "swedish-dream-biscuits",
+      "title": "Swedish Dream Biscuits",
+      "summary": "Drommar: pale, tender butter biscuits with vanilla that dissolve on the tongue.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 18,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g butter, softened",
+            "150g caster sugar",
+            "225g plain flour",
+            "1 tsp baking powder",
+            "2 tsp vanilla extract",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 150°C fan (170°C conventional) and line two trays. Beat the butter and sugar until pale and fluffy, then beat in the vanilla.",
+        "Mix in the flour, baking powder and salt to a soft dough, then roll into 24 balls and place on the trays.",
+        "Bake for 18 minutes, until set and barely coloured.",
+        "Cool on the trays, as they are fragile while warm."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 biscuits. Keeps 10 days in an airtight container."
+      ],
+      "nutrition": {
+        "kcal": 208,
+        "proteinG": 2,
+        "carbsG": 27,
+        "fatG": 10,
+        "fibreG": 1,
+        "sodiumMg": 70
+      }
+    },
+    {
+      "id": "koulourakia-orange-butter-twists",
+      "title": "Koulourakia Orange Butter Twists",
+      "summary": "Greek orange-scented butter biscuits twisted into ropes and finished with sesame seeds.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 18,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g butter, softened",
+            "120g caster sugar",
+            "2 eggs",
+            "1 tsp orange zest",
+            "2 tbsp orange juice",
+            "350g plain flour",
+            "2 tsp baking powder",
+            "2 tbsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 170°C fan (190°C conventional) and line two trays. Beat the butter and sugar until pale, then beat in the eggs, zest and juice.",
+        "Mix in the flour and baking powder to a soft dough, then roll pieces into 15cm ropes and fold each in half and twist into 24 twists.",
+        "Scatter with the sesame seeds and bake for 18 minutes, until golden. Cool on a wire rack."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Contains gluten, egg and sesame. Per serving: 2 twists. Keeps 2 weeks in an airtight container.",
+        "Food safety: the eggs are cooked through in the bake; do not taste the raw dough."
+      ],
+      "nutrition": {
+        "kcal": 256,
+        "proteinG": 4,
+        "carbsG": 32,
+        "fatG": 12,
+        "fibreG": 2,
+        "sodiumMg": 70
+      }
+    },
+    {
+      "id": "vanillekipferl-almond-crescents",
+      "title": "Vanillekipferl Almond Crescents",
+      "summary": "Austrian crescent biscuits with almond meal and vanilla icing sugar.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 12,
+      "servings": 10,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g plain flour",
+            "150g butter, cold and cubed",
+            "80g almond meal",
+            "100g icing sugar",
+            "1 egg yolk",
+            "2 tsp vanilla extract"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional) and line two trays. Rub the butter into the flour, almond meal and 70g of the icing sugar, then mix in the yolk and vanilla to a smooth dough.",
+        "Roll pieces into 30 small logs and curve each into a crescent.",
+        "Bake for 12 minutes, until pale gold at the edges.",
+        "Dust with the remaining icing sugar while still warm, then cool on a wire rack."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Contains tree nuts, gluten and egg. Per serving: 3 crescents. Keeps 2 weeks in an airtight container.",
+        "Food safety: the eggs are cooked through in the bake; do not taste the raw dough."
+      ],
+      "nutrition": {
+        "kcal": 281,
+        "proteinG": 4,
+        "carbsG": 27,
+        "fatG": 17,
+        "fibreG": 2,
+        "sodiumMg": 50
+      }
+    },
+    {
+      "id": "baci-di-dama-hazelnut-sandwich-biscuits",
+      "title": "Baci di Dama Hazelnut Sandwich Biscuits",
+      "summary": "Little hazelnut shortbread domes sandwiched with dark chocolate, the Italian lady's kisses.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 18,
+      "servings": 10,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100g whole hazelnuts, finely ground",
+            "100g plain flour",
+            "100g butter, softened",
+            "100g caster sugar",
+            "100g dark chocolate, melted"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 150°C fan (170°C conventional) and line two trays. Beat the butter and sugar until creamy, then mix in the ground hazelnuts and flour to a dough.",
+        "Roll into 40 small balls and bake for 18 minutes, until pale golden. Cool on the trays.",
+        "Spread a little melted chocolate on the flat side of 20 biscuits and sandwich with the rest.",
+        "Leave to set until the chocolate is firm."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Contains tree nuts and gluten. Per serving: 2 sandwiched biscuits. Keeps 2 weeks in an airtight container."
+      ],
+      "nutrition": {
+        "kcal": 271,
+        "proteinG": 3,
+        "carbsG": 25,
+        "fatG": 17,
+        "fibreG": 3,
+        "sodiumMg": 5
+      }
+    },
+    {
+      "id": "mexican-wedding-cookies",
+      "title": "Mexican Wedding Cookies",
+      "summary": "Walnut shortbread balls rolled in icing sugar, tender and crumbly.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "170g butter, softened",
+            "80g icing sugar",
+            "60g icing sugar, for rolling",
+            "250g plain flour",
+            "100g walnuts, finely chopped",
+            "1 tsp vanilla extract",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 170°C fan (190°C conventional) and line two trays. Beat the butter and 80g icing sugar until pale and fluffy, then beat in the vanilla.",
+        "Mix in the flour, salt and walnuts to a soft dough, then roll into 24 balls and place on the trays.",
+        "Bake for 15 minutes, until pale golden underneath.",
+        "Roll the warm biscuits in the remaining icing sugar and cool on a wire rack."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Contains tree nuts and gluten. Per serving: 2 cookies. Keeps 2 weeks in an airtight container."
+      ],
+      "nutrition": {
+        "kcal": 276,
+        "proteinG": 3,
+        "carbsG": 29,
+        "fatG": 16,
+        "fibreG": 2,
+        "sodiumMg": 70
+      }
+    }
+  ]
+}
