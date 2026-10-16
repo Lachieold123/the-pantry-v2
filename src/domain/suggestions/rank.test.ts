@@ -210,8 +210,13 @@ describe('edges', () => {
   });
 
   it('shows the whole of a tiny pool, rather than nothing', () => {
-    const taste = { ...NO_TASTE, diet: 'vegan' as const, avoid: { options: ['nuts' as const, 'soy' as const, 'gluten' as const, 'sesame' as const], custom: ['chickpeas'] } };
-    const r = rankHome(rankInput({ taste }));
+    const taste = {
+      ...NO_TASTE,
+      diet: 'vegan' as const,
+      avoid: { options: ['nuts' as const, 'soy' as const], custom: ['chickpeas'] },
+    };
+    // One cuisine keeps the pool tiny however big the catalogue grows.
+    const r = rankHome(rankInput({ taste, filters: { cuisine: 'turkish' } }));
     assert.ok(r.picks.length > 0 && r.picks.length < 10, String(r.picks.length));
   });
 

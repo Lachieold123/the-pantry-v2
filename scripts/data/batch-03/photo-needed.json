@@ -1,0 +1,2795 @@
+[
+ {
+  "id": "lolo-ika",
+  "title": "Lolo Ika",
+  "cuisine": "pacific-islands",
+  "region": "Fiji",
+  "summary": "Fish simmered in creamy coconut milk with taro leaves and vegetables."
+ },
+ {
+  "id": "canh-chua-rau",
+  "title": "Canh Chua Rau",
+  "cuisine": "vietnamese",
+  "region": "Southern Vietnam",
+  "summary": "Sour tamarind broth with water spinach, tomato and vegetables, a light and tangy vegetarian take on the classic."
+ },
+ {
+  "id": "laksa-ipoh",
+  "title": "Laksa Ipoh",
+  "cuisine": "malaysian",
+  "region": "Ipoh, Perak",
+  "summary": "Creamy tamarind and coconut laksa with fish cakes and tofu."
+ },
+ {
+  "id": "sopa-de-lentejas",
+  "title": "Sopa de Lentejas",
+  "cuisine": "mexican",
+  "region": "Mexico City",
+  "summary": "Red lentil soup with dried chiles, cumin, and lime—grandmother's Lenten recipe now a year-round comfort."
+ },
+ {
+  "id": "stifado",
+  "title": "Stifado",
+  "cuisine": "greek",
+  "region": "Crete",
+  "summary": "Beef braised with pearl onions and vinegar until sticky and dark."
+ },
+ {
+  "id": "pad-grapow-moo",
+  "title": "Pad Grapow Moo",
+  "cuisine": "thai",
+  "region": "Bangkok",
+  "summary": "Stir-fried minced pork with holy basil and chillies served over rice."
+ },
+ {
+  "id": "ahi-poke-bowl",
+  "title": "Ahi Poke Bowl",
+  "cuisine": "pacific-islands",
+  "region": "Hawaiian",
+  "summary": "Soy-ginger ahi tuna over rice with crisp vegetables and sesame seeds."
+ },
+ {
+  "id": "espinacas-con-garbanzos",
+  "title": "Espinacas con Garbanzos",
+  "cuisine": "spanish",
+  "region": "Andalusia",
+  "summary": "Wilted spinach with chickpeas, garlic and olive oil—a simple, generous tapa."
+ },
+ {
+  "id": "kebab-icli-kofte",
+  "title": "Kebab İçli Köfte",
+  "cuisine": "turkish",
+  "region": "Gaziantep",
+  "summary": "Hand-rolled spiced meatballs stuffed with lamb and pine nuts, pan-fried until golden."
+ },
+ {
+  "id": "tumpeng",
+  "title": "Tumpeng",
+  "cuisine": "indonesian",
+  "region": "Bali",
+  "summary": "Turmeric rice cone with vegetables, egg and chicken—a ceremonial Balinese centrepiece."
+ },
+ {
+  "id": "banh-canh-cua",
+  "title": "Bánh Canh Cua",
+  "cuisine": "vietnamese",
+  "region": "Saigon",
+  "summary": "Thick tapioca noodle soup with crab, slippery and chewy."
+ },
+ {
+  "id": "bun-bo-hue",
+  "title": "Bún Bò Huế",
+  "cuisine": "vietnamese",
+  "region": "Huế, Central Vietnam",
+  "summary": "Spicy beef noodle soup with lemongrass and blood sausage, a Central Vietnamese classic."
+ },
+ {
+  "id": "carnitas-tostadas",
+  "title": "Carnitas Tostadas",
+  "cuisine": "mexican",
+  "region": "Jalisco",
+  "summary": "Crispy tostadas piled high with slow-cooked pork carnitas, pickled onions and fresh coriander."
+ },
+ {
+  "id": "egusi-soup",
+  "title": "Egusi Soup",
+  "cuisine": "west-african",
+  "region": "Igbo, Nigeria",
+  "summary": "Melon seed soup with beef and leafy greens, thickened and rich."
+ },
+ {
+  "id": "beef-stew-with-dumplings",
+  "title": "Beef Stew with Dumplings",
+  "cuisine": "british",
+  "region": "Northern England",
+  "summary": "Slow-cooked beef stew with herb dumplings, the meat tender enough to eat with a spoon."
+ },
+ {
+  "id": "gigantes-plaki",
+  "title": "Gigantes Plaki",
+  "cuisine": "greek",
+  "region": "Thessaloniki",
+  "summary": "Giant butter beans baked in tomato sauce with herbs and olive oil."
+ },
+ {
+  "id": "pilau-ya-nyama",
+  "title": "Pilau ya Nyama",
+  "cuisine": "east-african",
+  "region": "Kenya",
+  "summary": "Fragrant rice with beef and whole spices, a celebration in one pot."
+ },
+ {
+  "id": "gaeng-som-pla",
+  "title": "Gaeng Som Pla",
+  "cuisine": "thai",
+  "region": "Central Thailand",
+  "summary": "Central Thai sour curry with barramundi, tomato and herbs from a homemade paste."
+ },
+ {
+  "id": "boil-up",
+  "title": "Boil-up",
+  "cuisine": "pacific-islands",
+  "region": "Aotearoa New Zealand / Rotorua",
+  "summary": "One-pot corned beef, pork bones, potatoes and watercress – kai comfort food."
+ },
+ {
+  "id": "sugo-di-calabria",
+  "title": "Sugo di Calabria",
+  "cuisine": "italian",
+  "region": "Calabria",
+  "summary": "Deep red Sunday sauce with pork, garden tomatoes, and Calabrian heat."
+ },
+ {
+  "id": "hand-pulled-lanzhou-noodles",
+  "title": "Hand-Pulled Lanzhou Noodles",
+  "cuisine": "chinese",
+  "region": "Gansu",
+  "summary": "Silky stretched wheat noodles in warm beef and spice broth, topped with cilantro and chilli oil."
+ },
+ {
+  "id": "mercimek-corbas",
+  "title": "Mercimek Çorbası",
+  "cuisine": "turkish",
+  "region": "Istanbul",
+  "summary": "Silky red lentil soup, finished with crispy onion, hot oil and lemon"
+ },
+ {
+  "id": "ilish-macher-jhol",
+  "title": "Ilish Macher Jhol",
+  "cuisine": "indian",
+  "region": "Bengal",
+  "summary": "Hilsa fish in mustard oil and turmeric gravy, Bengal's monsoon dish."
+ },
+ {
+  "id": "kinilaw-na-tuna",
+  "title": "Kinilaw na Tuna",
+  "cuisine": "filipino",
+  "region": "Visayan",
+  "summary": "Raw tuna cured in vinegar and lime, with coconut milk, chilli and ginger."
+ },
+ {
+  "id": "adobong-manok",
+  "title": "Adobong Manok",
+  "cuisine": "filipino",
+  "region": "Kapampangan",
+  "summary": "Chicken braised in vinegar and soy with garlic and bay leaf, Kapampangan-style."
+ },
+ {
+  "id": "char-koay-teow",
+  "title": "Char Koay Teow",
+  "cuisine": "malaysian",
+  "region": "Penang",
+  "summary": "Stir-fried flat rice noodles with prawns, cockles, bean sprouts and egg."
+ },
+ {
+  "id": "yakitori-momo",
+  "title": "Yakitori Momo",
+  "cuisine": "japanese",
+  "region": "Fukuoka",
+  "summary": "Grilled chicken thigh skewers with salt and lemon, cooked in a frying pan."
+ },
+ {
+  "id": "quenelles-de-brochet",
+  "title": "Quenelles de brochet",
+  "cuisine": "french",
+  "region": "Lyon",
+  "summary": "Pike dumplings in creamy shellfish sauce, a lighter Lyonnaise bistro classic."
+ },
+ {
+  "id": "bacalao-a-la-vizcaina",
+  "title": "Bacalao a la Vizcaína",
+  "cuisine": "spanish",
+  "region": "Basque Country",
+  "summary": "Salt cod in dark pepper and tomato sauce, the Vizcaya way."
+ },
+ {
+  "id": "lamb-and-apricot-bredie",
+  "title": "Lamb and Apricot Bredie",
+  "cuisine": "south-african",
+  "region": "Bo-Kaap, Cape Town",
+  "summary": "Spiced lamb and apricot stew, slow-cooked with turmeric and cinnamon."
+ },
+ {
+  "id": "frikadeller-med-r-dbeder-og-kartofler",
+  "title": "Frikadeller med rødbeder og kartofler",
+  "cuisine": "scandinavian",
+  "region": "Denmark",
+  "summary": "Tender Danish meatballs with caramelised onions, pickled beetroot and buttered potatoes"
+ },
+ {
+  "id": "nasu-dengaku",
+  "title": "Nasu Dengaku",
+  "cuisine": "japanese",
+  "region": "Kyoto",
+  "summary": "Grilled eggplant with warm miso glaze, charred outside and silky within."
+ },
+ {
+  "id": "kol-borek",
+  "title": "Kol Börek",
+  "cuisine": "turkish",
+  "region": "Turkey",
+  "summary": "Crispy fried yufka rolls filled with spiced meat and cheese."
+ },
+ {
+  "id": "kimchi-jjim",
+  "title": "Kimchi-jjim",
+  "cuisine": "korean",
+  "region": "Seoul",
+  "summary": "Braised pork belly with aged kimchi and ginger, stewed until tender."
+ },
+ {
+  "id": "roti-with-curried-chickpeas",
+  "title": "Roti with Curried Chickpeas",
+  "cuisine": "indian",
+  "region": "Indo-Fijian",
+  "summary": "Soft roti wrapped around spiced chickpea curry, comfort food the Fiji way."
+ },
+ {
+  "id": "meen-curry",
+  "title": "Meen Curry",
+  "cuisine": "indian",
+  "region": "Kerala",
+  "summary": "Kerala fish curry with roasted spices, coconut milk and curry leaves."
+ },
+ {
+  "id": "tagine-d-agneau-aux-pruneaux",
+  "title": "Tagine d'Agneau aux Pruneaux",
+  "cuisine": "north-african",
+  "region": "Morocco",
+  "summary": "Slow-cooked lamb with prunes and warm spices, a classic Moroccan tagine."
+ },
+ {
+  "id": "brik-aux-oeufs",
+  "title": "Brik aux Oeufs",
+  "cuisine": "north-african",
+  "region": "Tunisia",
+  "summary": "Crispy fried pastry envelope with egg, tuna and harissa."
+ },
+ {
+  "id": "light-soup",
+  "title": "Nkatenkwan (Groundnut Soup)",
+  "cuisine": "west-african",
+  "region": "Ghana",
+  "summary": "Ghanaian chicken and groundnut soup with tomatoes and peppers"
+ },
+ {
+  "id": "curry-goat",
+  "title": "Curry Goat",
+  "cuisine": "caribbean",
+  "region": "Jamaica",
+  "summary": "Fall-apart goat meat in a rich, aromatic curry with potatoes and spring onions."
+ },
+ {
+  "id": "scotch-broth",
+  "title": "Scotch Broth",
+  "cuisine": "british",
+  "region": "Scottish Highlands",
+  "summary": "A warming barley broth with ham bone, root vegetables and lentils—proper Scottish comfort in a bowl."
+ },
+ {
+  "id": "tagliatelle-al-ragu",
+  "title": "Tagliatelle al Ragù",
+  "cuisine": "italian",
+  "region": "Emilia-Romagna",
+  "summary": "Tagliatelle with Bolognese ragù: slow-cooked ground meat, tomato and milk."
+ },
+ {
+  "id": "galette-de-ble-noir-aux-moules",
+  "title": "Galette de blé noir aux moules",
+  "cuisine": "french",
+  "region": "Brittany",
+  "summary": "Buckwheat crêpes topped with mussels, shallots, white wine and cream."
+ },
+ {
+  "id": "sapasui",
+  "title": "Sapasui",
+  "cuisine": "pacific-islands",
+  "region": "Samoa",
+  "summary": "Samoan chop suey with corned beef, cabbage and onion, the weeknight family favourite."
+ },
+ {
+  "id": "pasta-ca-le-sardine",
+  "title": "Pasta ca' le Sardine",
+  "cuisine": "italian",
+  "region": "Sicily",
+  "summary": "Fresh pasta with sardines, wild fennel, saffron and pine nuts—a Sicilian classic."
+ },
+ {
+  "id": "soy-and-ginger-chicken-thighs-with-bok-choy",
+  "title": "Soy and Ginger Chicken Thighs with Bok Choy",
+  "cuisine": "chinese",
+  "region": "Cantonese",
+  "summary": "Chicken thighs braised in soy, ginger and star anise with quick bok choy on the side."
+ },
+ {
+  "id": "yassa-au-poulet",
+  "title": "Yassa au Poulet",
+  "cuisine": "west-african",
+  "region": "Senegal",
+  "summary": "Chicken braised in mustard, lemon and onions—a Senegalese weeknight staple."
+ },
+ {
+  "id": "tempe-goreng-sambal-matah",
+  "title": "Tempe Goreng Sambal Matah",
+  "cuisine": "indonesian",
+  "region": "Balinese",
+  "summary": "Crispy fried tempeh with raw sambal of shallots, chilli and lime."
+ },
+ {
+  "id": "esqueixada",
+  "title": "Esqueixada",
+  "cuisine": "spanish",
+  "region": "Empordà, Catalonia",
+  "summary": "Shredded salt cod salad with tomatoes, onions and olives, the Empordà way."
+ },
+ {
+  "id": "lemon-myrtle-chicken",
+  "title": "Lemon Myrtle Chicken",
+  "cuisine": "modern-australian",
+  "region": "Alice Springs",
+  "summary": "Roasted chicken with lemon myrtle leaves, a native Australian citrus with peppery notes."
+ },
+ {
+  "id": "gravad-lax-med-senapssas",
+  "title": "Gravad lax med senapssås",
+  "cuisine": "scandinavian",
+  "region": "Sweden",
+  "summary": "Cured salmon with mustard sauce, a Swedish classic to make when you have time."
+ },
+ {
+  "id": "ful-medames",
+  "title": "Ful Medames",
+  "cuisine": "middle-eastern",
+  "region": "Lebanon",
+  "summary": "Slow-cooked broad beans with garlic, lemon and olive oil—a Lebanese vegan breakfast staple."
+ },
+ {
+  "id": "burrata-freekeh-and-charred-greens",
+  "title": "Burrata, Freekeh and Charred Greens",
+  "cuisine": "modern-australian",
+  "region": "Byron Bay",
+  "summary": "Creamy burrata, chewy roasted freekeh and bitter charred silverbeet with lemon dressing."
+ },
+ {
+  "id": "kunefe",
+  "title": "Künefe",
+  "cuisine": "turkish",
+  "region": "Gaziantep",
+  "summary": "Crispy shredded pastry with melted white cheese, hot honey syrup and walnuts."
+ },
+ {
+  "id": "doubles",
+  "title": "Doubles",
+  "cuisine": "caribbean",
+  "region": "Trinidad and Tobago",
+  "summary": "Spiced chickpea curry tucked into fried bread, Trinidad's essential street snack."
+ },
+ {
+  "id": "tahdig",
+  "title": "Tahdig",
+  "cuisine": "middle-eastern",
+  "region": "Persian",
+  "summary": "Crispy golden rice crust with butter and yogurt—the whole point of the pot."
+ },
+ {
+  "id": "shrimp-and-grits",
+  "title": "Shrimp and Grits",
+  "cuisine": "american",
+  "region": "South Carolina",
+  "summary": "Creamy stone-ground grits with sautéed shrimp, crispy bacon, and scallions."
+ },
+ {
+  "id": "sheet-pan-chicken-thighs-with-root-vegetables",
+  "title": "Sheet Pan Chicken Thighs with Root Vegetables",
+  "cuisine": "american",
+  "region": "Brooklyn",
+  "summary": "One-pan roasted chicken thighs with potatoes, carrots and onions."
+ },
+ {
+  "id": "gudeg-nangka-muda",
+  "title": "Gudeg Nangka Muda",
+  "cuisine": "indonesian",
+  "region": "Yogyakarta",
+  "summary": "Young jackfruit stewed in coconut milk and spices until tender, a Yogyakarta specialty."
+ },
+ {
+  "id": "penang-assam-laksa",
+  "title": "Penang Assam Laksa",
+  "cuisine": "malaysian",
+  "region": "Penang",
+  "summary": "Sour and spicy rice noodle soup with mackerel, tamarind and shrimp paste."
+ },
+ {
+  "id": "com-chien-hai-san",
+  "title": "Cơm Chiên Hải Sản",
+  "cuisine": "vietnamese",
+  "region": "Saigon",
+  "summary": "Saigon seafood fried rice with squid and prawns, crispy edges and fish sauce"
+ },
+ {
+  "id": "koeksister",
+  "title": "Koeksister",
+  "cuisine": "south-african",
+  "region": "Bo-Kaap, Cape Town",
+  "summary": "Crispy plaited pastry strips fried and drenched in hot ginger-cinnamon syrup."
+ },
+ {
+  "id": "crawfish-etouffee",
+  "title": "Crawfish Étouffée",
+  "cuisine": "american",
+  "region": "Acadiana",
+  "summary": "Crawfish in a thick, spiced brown roux sauce served over rice."
+ },
+ {
+  "id": "bariis-iskukaris",
+  "title": "Bariis iskukaris",
+  "cuisine": "east-african",
+  "region": "Somali",
+  "summary": "Fragrant Somali spiced rice with cardamom, cinnamon and cloves."
+ },
+ {
+  "id": "carne-asada",
+  "title": "Carne Asada",
+  "cuisine": "mexican",
+  "region": "Northern Mexico / Texas",
+  "summary": "Grilled marinated beef with citrus and chile, charred and juicy."
+ },
+ {
+  "id": "ceviche-de-corvina",
+  "title": "Ceviche de Corvina",
+  "cuisine": "latin-american",
+  "region": "Peru",
+  "summary": "Raw white fish cured in lime juice, ají amarillo, and red onion—bright, clean, and classically Peruvian."
+ },
+ {
+  "id": "arepa-con-queso",
+  "title": "Arepa con queso",
+  "cuisine": "latin-american",
+  "region": "Colombia",
+  "summary": "Warm, crusty corn arepa filled with melted white cheese—how Andrés starts every morning"
+ },
+ {
+  "id": "mole-negro-oaxaqueno",
+  "title": "Mole Negro Oaxaqueño",
+  "cuisine": "mexican",
+  "region": "Oaxaca",
+  "summary": "My mother's black mole from the comal—chocolate, chilhuacles, and thirty years of making it right"
+ },
+ {
+  "id": "ugali-na-sukuma",
+  "title": "Ugali na Sukuma",
+  "cuisine": "east-african",
+  "region": "Kenya",
+  "summary": "Cornmeal mush with sautéed collard greens, Kenya's everyday plate"
+ },
+ {
+  "id": "k-rm-z-mercimekli-kofte",
+  "title": "Kırmızı Mercimekli Köfte",
+  "cuisine": "turkish",
+  "region": "Istanbul",
+  "summary": "Spiced lentil and bulgur meatballs, pan-fried until crispy."
+ },
+ {
+  "id": "rugbr-d-med-leverpostej-og-agurkesalat",
+  "title": "Rugbrød med leverpostej og agurkesalat",
+  "cuisine": "scandinavian",
+  "region": "Denmark",
+  "summary": "Open rye sandwich with liver pâté, cucumber salad and crispy bacon."
+ },
+ {
+  "id": "erbsensuppe",
+  "title": "Erbsensuppe",
+  "cuisine": "central-european",
+  "region": "Northern Germany",
+  "summary": "Thick split pea soup with ham hock and leeks, the way Oma made it in winter."
+ },
+ {
+  "id": "khoresh-fenugreek",
+  "title": "Khoresh Fenugreek",
+  "cuisine": "middle-eastern",
+  "region": "Persian",
+  "summary": "Kidney beans and beef in a dark, aromatic stew with dried fenugreek leaves and lime."
+ },
+ {
+  "id": "saucisson-braise-aux-lentilles",
+  "title": "Saucisson braisé aux lentilles",
+  "cuisine": "french",
+  "region": "Lyon",
+  "summary": "Braised sausage with lentils, a Lyonnaise bistro classic."
+ },
+ {
+  "id": "spam-musubi",
+  "title": "Spam Musubi",
+  "cuisine": "japanese",
+  "region": "Hawaii",
+  "summary": "Grilled spam between seasoned rice and nori, a Hawaiian plate lunch classic in one hand"
+ },
+ {
+  "id": "arros-a-banda",
+  "title": "Arrós a Banda",
+  "cuisine": "spanish",
+  "region": "Catalonia",
+  "summary": "Rice cooked in seafood stock with grilled fish—a weeknight Catalan take on the Valencia classic."
+ },
+ {
+  "id": "undhiyu",
+  "title": "Undhiyu",
+  "cuisine": "indian",
+  "region": "Gujarat",
+  "summary": "Mixed vegetable and chickpea medley baked in banana leaves, sweet-spicy-tangy and deeply flavoured."
+ },
+ {
+  "id": "frijoles-charros",
+  "title": "Frijoles Charros",
+  "cuisine": "mexican",
+  "region": "Norteño",
+  "summary": "Pinto beans with bacon, chorizo and jalapeños, a norteño staple."
+ },
+ {
+  "id": "oka",
+  "title": "Oka",
+  "cuisine": "pacific-islands",
+  "region": "Samoa",
+  "summary": "Raw fish marinated in coconut cream and lime, a Samoan to'ona'i essential."
+ },
+ {
+  "id": "skillet-cornbread",
+  "title": "Skillet Cornbread",
+  "cuisine": "american",
+  "region": "Savannah, Georgia",
+  "summary": "Golden, buttery cornbread baked in a cast-iron skillet with a crispy edge and subtle sweetness."
+ },
+ {
+  "id": "sinigang-na-baboy",
+  "title": "Sinigang na Baboy",
+  "cuisine": "filipino",
+  "region": "Kapampangan",
+  "summary": "Tamarind pork rib soup with leafy greens, radish and okra—comfort in a pot."
+ },
+ {
+  "id": "risotto-ai-funghi-porcini",
+  "title": "Risotto ai Funghi Porcini",
+  "cuisine": "italian",
+  "region": "Piedmont",
+  "summary": "Creamy risotto with porcini mushrooms, Alba-style. Takes patience. Worth it."
+ },
+ {
+  "id": "horta-gemisti",
+  "title": "Slow-Roasted Gemista",
+  "cuisine": "greek",
+  "region": "Crete",
+  "summary": "Tomatoes and peppers stuffed with rice and herbs, slow-roasted until they collapse into themselves."
+ },
+ {
+  "id": "winter-melon-and-pork-rib-soup",
+  "title": "Winter Melon and Pork Rib Soup",
+  "cuisine": "chinese",
+  "region": "Cantonese, Hong Kong",
+  "summary": "Slow-simmered Cantonese soup with tender pork ribs, pale winter melon, and earthy dried mushrooms."
+ },
+ {
+  "id": "arroz-e-feijao",
+  "title": "Arroz e Feijão",
+  "cuisine": "latin-american",
+  "region": "Brazil",
+  "summary": "Perfectly cooked rice and beans, the foundation of every Brazilian meal."
+ },
+ {
+  "id": "pate-de-foies-de-morue",
+  "title": "Pâté de foies de morue",
+  "cuisine": "french",
+  "region": "Brittany",
+  "summary": "Creamy cod liver pâté, a traditional Breton spread for toast and crackers."
+ },
+ {
+  "id": "pepper-soup",
+  "title": "Pepper Soup",
+  "cuisine": "west-african",
+  "region": "Nigeria",
+  "summary": "Fiery Nigerian beef or goat soup, spiced and medicinal, served steaming hot."
+ },
+ {
+  "id": "fiji-style-fish-curry",
+  "title": "Fiji-Style Fish Curry",
+  "cuisine": "pacific-islands",
+  "region": "Fiji",
+  "summary": "White fish in a rich coconut curry with turmeric and fenugreek, the island way."
+ },
+ {
+  "id": "crispy-fish-with-burnt-butter-and-capers",
+  "title": "Crispy Fish with Burnt Butter and Capers",
+  "cuisine": "modern-australian",
+  "region": "Sydney",
+  "summary": "Pan-fried white fish finished with browned butter and capers."
+ },
+ {
+  "id": "injera",
+  "title": "Injera",
+  "cuisine": "east-african",
+  "region": "Ethiopia",
+  "summary": "Spongy fermented flatbread that serves as both plate and utensil in Ethiopian meals."
+ },
+ {
+  "id": "roti-canai",
+  "title": "Roti Canai",
+  "cuisine": "malaysian",
+  "region": "Ipoh, Malaysia",
+  "summary": "Flaky stretched flatbread with spiced dal curry for dipping—mamak stall breakfast at home."
+ },
+ {
+  "id": "chiles-rellenos",
+  "title": "Chiles Rellenos",
+  "cuisine": "mexican",
+  "region": "Jalisco",
+  "summary": "Poblano peppers stuffed with Oaxaca cheese, fried and topped with tomato sauce."
+ },
+ {
+  "id": "peperoni-cruschi-ripieni",
+  "title": "Peperoni Cruschi Ripieni",
+  "cuisine": "italian",
+  "region": "Calabria",
+  "summary": "Dried Calabrian peppers stuffed with breadcrumbs, raisins, pine nuts and anchovies."
+ },
+ {
+  "id": "kimbap-with-nz-veg",
+  "title": "Kimbap with NZ Veg",
+  "cuisine": "korean",
+  "region": "Auckland",
+  "summary": "Korean seaweed rice rolls packed with local vegetables and dressed with sesame oil."
+ },
+ {
+  "id": "mango-and-black-rice-buddha-bowl",
+  "title": "Mango and Black Rice Buddha Bowl",
+  "cuisine": "thai",
+  "region": "Southeast Asia",
+  "summary": "Nutty black rice, crispy tofu, fresh mango and cucumber with peanut-lime dressing."
+ },
+ {
+  "id": "som-tam",
+  "title": "Som Tam",
+  "cuisine": "thai",
+  "region": "Isaan",
+  "summary": "Green papaya salad with lime, chilli and fish sauce, crushed fresh at the table."
+ },
+ {
+  "id": "camp-oven-brisket",
+  "title": "Camp Oven Brisket",
+  "cuisine": "modern-australian",
+  "region": "Outback Queensland",
+  "summary": "Slow-roasted brisket with bush tomato and native pepper rub, cooked low and long in a camp oven."
+ },
+ {
+  "id": "ginataang-isda",
+  "title": "Ginataang Isda",
+  "cuisine": "filipino",
+  "region": "Visayan",
+  "summary": "White fish simmered in coconut milk with turmeric, ginger and spring onion – a quick Visayan comfort dish."
+ },
+ {
+  "id": "pad-cha-gung",
+  "title": "Pad Cha Gung",
+  "cuisine": "thai",
+  "region": "Thailand",
+  "summary": "Stir-fried prawns with dry curry paste, lemongrass and galangal."
+ },
+ {
+  "id": "tlayudas-de-chapulines",
+  "title": "Tlayudas de Chapulines",
+  "cuisine": "mexican",
+  "region": "Oaxaca",
+  "summary": "Crispy Oaxacan tortilla topped with beans, quesillo cheese, and garlicky fried grasshoppers."
+ },
+ {
+  "id": "suqaar",
+  "title": "Suqaar",
+  "cuisine": "east-african",
+  "region": "Somali",
+  "summary": "Somali minced meat stew with tomatoes and spices, served over rice"
+ },
+ {
+  "id": "miyeok-guk",
+  "title": "Miyeok Guk",
+  "cuisine": "korean",
+  "region": "Seoul",
+  "summary": "Korean seaweed soup with beef stock, sesame oil and soy, eaten after blood donation or childbirth."
+ },
+ {
+  "id": "timman-z-affaran",
+  "title": "Timman Z'affaran",
+  "cuisine": "middle-eastern",
+  "region": "Iraq",
+  "summary": "Saffron-scented rice with fried onions and black lentils, everyday comfort food."
+ },
+ {
+  "id": "quesadillas-de-flor-de-calabaza",
+  "title": "Quesadillas de Flor de Calabaza",
+  "cuisine": "mexican",
+  "region": "Mexico City",
+  "summary": "Soft corn tortillas filled with sautéed squash blossoms, onion and cheese."
+ },
+ {
+  "id": "stinky-tofu",
+  "title": "Stinky Tofu",
+  "cuisine": "chinese",
+  "region": "Taiwan",
+  "summary": "Crispy fried stinky tofu with pickled cabbage and chilli sauce—pungent, QQ inside."
+ },
+ {
+  "id": "snoek-with-lemon-and-garlic",
+  "title": "Snoek with Lemon and Garlic",
+  "cuisine": "south-african",
+  "region": "Perth",
+  "summary": "Whole snoek grilled on coals in foil, buttery and flaking."
+ },
+ {
+  "id": "gazpacho-andaluz",
+  "title": "Gazpacho Andaluz",
+  "cuisine": "spanish",
+  "region": "Andalusia",
+  "summary": "Silky chilled tomato soup with sherry vinegar and olive oil, a Seville classic."
+ },
+ {
+  "id": "base-genep",
+  "title": "Base Genep",
+  "cuisine": "indonesian",
+  "region": "Bali",
+  "summary": "The foundational Balinese spice paste of chillies, garlic, ginger, turmeric and shallots."
+ },
+ {
+  "id": "nozawana-zuke",
+  "title": "Nozawana Zuke",
+  "cuisine": "japanese",
+  "region": "Nagano",
+  "summary": "Quick-pickled turnip greens with chilli and vinegar, bright and tangy."
+ },
+ {
+  "id": "khao-pad-gai",
+  "title": "Khao Pad Gai",
+  "cuisine": "thai",
+  "region": "Central Thailand",
+  "summary": "Chicken fried rice with shallots and fermented shrimp paste, ready in 20 minutes."
+ },
+ {
+  "id": "wattleseed-damper",
+  "title": "Wattleseed Damper",
+  "cuisine": "modern-australian",
+  "region": "Central Australia",
+  "summary": "Camp-oven baked bread with wattleseed, earthy and nutty, from local growers."
+ },
+ {
+  "id": "paua-fritters",
+  "title": "Pāua Fritters",
+  "cuisine": "pacific-islands",
+  "region": "New Zealand",
+  "summary": "Golden-fried abalone fritters, crispy outside and tender within."
+ },
+ {
+  "id": "ghormeh-sabzi",
+  "title": "Ghormeh Sabzi",
+  "cuisine": "middle-eastern",
+  "region": "Persian",
+  "summary": "Persian herb stew with kidney beans, black-eyed peas and beef kidney in aromatic broth."
+ },
+ {
+  "id": "shorshe-ilish",
+  "title": "Shorshe Ilish",
+  "cuisine": "indian",
+  "region": "Bengal",
+  "summary": "Hilsa fish in pungent mustard paste—the most Bengali of celebrations"
+ },
+ {
+  "id": "cabbage-thoran",
+  "title": "Cabbage Thoran",
+  "cuisine": "indian",
+  "region": "Kerala",
+  "summary": "Shredded cabbage stir-fried with grated coconut, mustard seeds and curry leaves."
+ },
+ {
+  "id": "hijiki-no-nimono",
+  "title": "Hijiki No Nimono",
+  "cuisine": "japanese",
+  "region": "Osaka, Japan",
+  "summary": "Hijiki seaweed simmered with carrots, burdock and abura-age—a traditional bento side."
+ },
+ {
+  "id": "fatteh-hummus",
+  "title": "Fatteh Hummus",
+  "cuisine": "middle-eastern",
+  "region": "Lebanon",
+  "summary": "Crispy pita chips over creamy chickpea purée with yoghurt alternative, olive oil and pine nuts."
+ },
+ {
+  "id": "okra-soup",
+  "title": "Okra Soup",
+  "cuisine": "west-african",
+  "region": "Nigeria (Igbo)",
+  "summary": "Slippery okra stew with stockfish and shrimp, served with fufu."
+ },
+ {
+  "id": "tonga-pumpkin-coconut",
+  "title": "Tonga Pumpkin & Coconut",
+  "cuisine": "pacific-islands",
+  "region": "Tongan",
+  "summary": "Roasted pumpkin simmered in coconut milk with onions and garlic."
+ },
+ {
+  "id": "fava",
+  "title": "Fava",
+  "cuisine": "greek",
+  "region": "Greek Islands",
+  "summary": "Silken yellow split pea purée from the Greek islands, dressed with olive oil and lemon."
+ },
+ {
+  "id": "tarhana-corbas",
+  "title": "Tarhana Çorbası",
+  "cuisine": "turkish",
+  "region": "Anatolia",
+  "summary": "Tangy fermented grain and yoghurt soup, warming and sour—Anatolian comfort food."
+ },
+ {
+  "id": "nihari",
+  "title": "Nihari",
+  "cuisine": "indian",
+  "region": "Punjabi",
+  "summary": "Slow-cooked beef or lamb in a rich, dark spiced gravy, traditionally a breakfast dish."
+ },
+ {
+  "id": "pad-cha-het",
+  "title": "Pad Cha Het",
+  "cuisine": "thai",
+  "region": "Northern Thailand",
+  "summary": "Stir-fried wild mushrooms with fresh chilies and garlic, a simple northern Thai favorite."
+ },
+ {
+  "id": "chikni-dal",
+  "title": "Chikni Dal",
+  "cuisine": "indian",
+  "region": "Fiji",
+  "summary": "Smooth, silky split pea dal with fried garlic and green chilli, served with roti."
+ },
+ {
+  "id": "pol-sambol",
+  "title": "Pol Sambol",
+  "cuisine": "indian",
+  "region": "Sri Lanka",
+  "summary": "Fresh coconut, lime, chilli and dried fish—a Sri Lankan sambol to eat with rice and curry."
+ },
+ {
+  "id": "curry-rice-with-sambals",
+  "title": "Curry Rice with Sambals",
+  "cuisine": "south-african",
+  "region": "Bo-Kaap, Cape Town",
+  "summary": "Fragrant turmeric rice with Cape Malay curry and fresh homemade sambals."
+ },
+ {
+  "id": "tarte-a-la-praline",
+  "title": "Tarte à la praline",
+  "cuisine": "french",
+  "region": "Lyon",
+  "summary": "Pink praline tart, a Lyon specialty that's simpler than it looks."
+ },
+ {
+  "id": "marmitako",
+  "title": "Marmitako",
+  "cuisine": "spanish",
+  "region": "Basque Country",
+  "summary": "Basque fisherman's stew with tuna, potatoes and peppers."
+ },
+ {
+  "id": "scallion-pancakes",
+  "title": "Scallion Pancakes",
+  "cuisine": "chinese",
+  "region": "Northern China",
+  "summary": "Laminated flatbread layered with oil and scallions, flaky and crispy outside."
+ },
+ {
+  "id": "frittata-di-cipolla-e-peperoncino",
+  "title": "Frittata di Cipolla e Peperoncino",
+  "cuisine": "italian",
+  "region": "Calabria",
+  "summary": "Caramelised onions and fresh chilli eggs, best at room temperature with bread and a story."
+ },
+ {
+  "id": "beef-and-guinness-pie",
+  "title": "Beef and Guinness Pie",
+  "cuisine": "british",
+  "region": "Ireland",
+  "summary": "Rich beef and Guinness stew with a golden pastry crust."
+ },
+ {
+  "id": "rice-and-peas",
+  "title": "Rice and Peas",
+  "cuisine": "caribbean",
+  "region": "Jamaica",
+  "summary": "Creamy coconut rice studded with red kidney beans and thyme, the everyday side that turns a plate into a meal."
+ },
+ {
+  "id": "waakye",
+  "title": "Waakye",
+  "cuisine": "west-african",
+  "region": "Ghana",
+  "summary": "Millet and beans with rice, Ghana's beloved street breakfast made at home."
+ },
+ {
+  "id": "smoked-mackerel-with-horseradish-cream",
+  "title": "Smoked Mackerel with Horseradish Cream",
+  "cuisine": "british",
+  "region": "Scottish Highlands",
+  "summary": "Smoked mackerel with sharp horseradish cream and buttered new potatoes."
+ },
+ {
+  "id": "lancashire-hotpot",
+  "title": "Lancashire Hotpot",
+  "cuisine": "british",
+  "region": "Lancashire",
+  "summary": "Layered lamb, potatoes and onions, baked low and slow until the potatoes crisp on top."
+ },
+ {
+  "id": "japanese-curry-rice",
+  "title": "Japanese Curry Rice",
+  "cuisine": "japanese",
+  "region": "Japanese home cooking",
+  "summary": "Tender chicken, potatoes and carrots in sweet-savory roux over steamed rice"
+ },
+ {
+  "id": "tortellini-in-brodo",
+  "title": "Tortellini in Brodo",
+  "cuisine": "italian",
+  "region": "Emilia-Romagna",
+  "summary": "Hand-folded tortellini in clear broth, a Sunday project with grandmother's pork and cheese filling."
+ },
+ {
+  "id": "thieboudienne",
+  "title": "Thieboudienne",
+  "cuisine": "west-african",
+  "region": "Dakar, Senegal",
+  "summary": "Senegal's national dish: fish and rice slow-cooked with caramelized vegetables and tomato."
+ },
+ {
+  "id": "pastitsada",
+  "title": "Pastitsada",
+  "cuisine": "greek",
+  "region": "Corfiot",
+  "summary": "Rabbit or chicken stewed in tomato and red wine until very tender, served over pasta—a Cretan Sunday dish."
+ },
+ {
+  "id": "pancit-lomi",
+  "title": "Pancit Lomi",
+  "cuisine": "filipino",
+  "region": "Kapampangan",
+  "summary": "Creamy egg noodle soup with chicken liver and greens, a Kapampangan birthday staple."
+ },
+ {
+  "id": "gyutan",
+  "title": "Gyutan",
+  "cuisine": "japanese",
+  "region": "Sendai",
+  "summary": "Grilled sliced beef tongue with salt and lemon, izakaya-style."
+ },
+ {
+  "id": "canh-chua-ca",
+  "title": "Canh Chua Cá",
+  "cuisine": "vietnamese",
+  "region": "Southern Vietnam",
+  "summary": "Sour soup with white fish, pineapple and okra, bright and tangy with herbs."
+ },
+ {
+  "id": "fafda-jalebi",
+  "title": "Fafda-Jalebi",
+  "cuisine": "indian",
+  "region": "Gujarat",
+  "summary": "Fried gram flour noodles and crispy vegetables with sweet jalebi and garlic chutney."
+ },
+ {
+  "id": "boerewors-with-pap",
+  "title": "Boerewors with Pap",
+  "cuisine": "south-african",
+  "region": "South Africa",
+  "summary": "Homemade spiced sausage grilled over open flame, served with creamy maize porridge."
+ },
+ {
+  "id": "eggplant-with-garlic-and-doubanjiang",
+  "title": "Eggplant with Garlic and Doubanjiang",
+  "cuisine": "chinese",
+  "region": "Sichuan",
+  "summary": "Soft eggplant in a savory-spicy doubanjiang sauce—a quiet Sichuan classic that needs no meat."
+ },
+ {
+  "id": "chicken-kyiv",
+  "title": "Chicken Kyiv",
+  "cuisine": "central-european",
+  "region": "Ukraine",
+  "summary": "Tender chicken breast filled with dill butter, fried until golden and crisp."
+ },
+ {
+  "id": "beef-and-black-bean-stir-fry",
+  "title": "Beef and Black Bean Stir-Fry",
+  "cuisine": "chinese",
+  "region": "Cantonese",
+  "summary": "Thin-sliced beef tossed fast with fermented black beans and garlic in the wok."
+ },
+ {
+  "id": "rendang-ayam",
+  "title": "Rendang Ayam",
+  "cuisine": "malaysian",
+  "region": "Peranakan, Malaysia",
+  "summary": "Chicken braised in fragrant coconut and spice paste until tender and deeply flavoured."
+ },
+ {
+  "id": "nyama-choma",
+  "title": "Nyama Choma",
+  "cuisine": "east-african",
+  "region": "Kenya",
+  "summary": "Grilled meat with lime and salt, charred and tender, the Kenyan way."
+ },
+ {
+  "id": "doro-wat",
+  "title": "Doro Wat",
+  "cuisine": "east-african",
+  "region": "Ethiopia",
+  "summary": "Spiced chicken stew with hard-boiled eggs and niter kibbeh for Ethiopian Sunday feasts."
+ },
+ {
+  "id": "tom-yum-pla",
+  "title": "Tom Yum Pla",
+  "cuisine": "thai",
+  "region": "Thailand",
+  "summary": "Hot and sour fish soup with lemongrass, galangal and Thai herbs."
+ },
+ {
+  "id": "zeytinyagl-patl-can-dolmas",
+  "title": "Zeytinyağlı Patlıcan Dolması",
+  "cuisine": "turkish",
+  "region": "Gaziantep",
+  "summary": "Eggplant halves stuffed with rice, pine nuts and herbs, served cold with olive oil."
+ },
+ {
+  "id": "paksiw-na-bangus",
+  "title": "Paksiw na Bangus",
+  "cuisine": "filipino",
+  "region": "Visayan",
+  "summary": "Milkfish braised in vinegar and ginger with banana leaves until silky and tender."
+ },
+ {
+  "id": "spaghetti-with-fresh-sardines-and-breadcrumbs",
+  "title": "Spaghetti with Fresh Sardines and Breadcrumbs",
+  "cuisine": "italian",
+  "region": "Sicily",
+  "summary": "Spaghetti with fresh sardines, garlic, breadcrumbs and parsley—simple, salty, deeply satisfying."
+ },
+ {
+  "id": "ika-ni-lolo",
+  "title": "Ika ni Lolo",
+  "cuisine": "pacific-islands",
+  "region": "Fiji",
+  "summary": "Fijian fish baked in coconut cream with onions and lime."
+ },
+ {
+  "id": "tori-soboro-don",
+  "title": "Tori Soboro Don",
+  "cuisine": "japanese",
+  "region": "Tokyo",
+  "summary": "Ground chicken with scrambled egg over warm rice, cooked in one pan."
+ },
+ {
+  "id": "lawar",
+  "title": "Lawar",
+  "cuisine": "indonesian",
+  "region": "Bali",
+  "summary": "Balinese ceremonial salad of finely minced cooked chicken with grated coconut, spice paste and rice flour."
+ },
+ {
+  "id": "okra-stew",
+  "title": "Okra Stew",
+  "cuisine": "american",
+  "region": "Low Country, South Carolina",
+  "summary": "Slow-simmered okra, tomatoes, and corn with andouille sausage—a weeknight Low Country staple."
+ },
+ {
+  "id": "pelau",
+  "title": "Pelau",
+  "cuisine": "caribbean",
+  "region": "Trinidad and Tobago",
+  "summary": "One-pot rice, meat and pigeon peas with caramelised onions and fresh herbs—classic Trini comfort food."
+ },
+ {
+  "id": "minestra-di-cicoria",
+  "title": "Minestra di Cicoria",
+  "cuisine": "italian",
+  "region": "Calabria",
+  "summary": "Bitter greens and beans in a simple garlic broth, a Calabrian nonna's kitchen staple."
+ },
+ {
+  "id": "aloo-posto",
+  "title": "Aloo Posto",
+  "cuisine": "indian",
+  "region": "Bengal",
+  "summary": "Potatoes with poppy seed paste and nigella in mustard oil—a humble Bengali classic."
+ },
+ {
+  "id": "etli-lentil-stew",
+  "title": "Etli Lentil Stew",
+  "cuisine": "turkish",
+  "region": "Istanbul",
+  "summary": "Brown lentils simmered slowly with lamb and tomato, the kind of home stew that fills the taxi with nostalgia."
+ },
+ {
+  "id": "chicken-and-sausage-gumbo",
+  "title": "Chicken and Sausage Gumbo",
+  "cuisine": "american",
+  "region": "Acadiana, Louisiana",
+  "summary": "Dark roux-based gumbo with andouille sausage, chicken and the holy trinity simmered until rich."
+ },
+ {
+  "id": "bandeja-paisa",
+  "title": "Bandeja Paisa",
+  "cuisine": "latin-american",
+  "region": "Antioquia",
+  "summary": "The legendary Medellín feast: beans, rice, meat, egg, arepa and chicharrón all on one plate."
+ },
+ {
+  "id": "gr-ntsager-fra-haven-i-sm-r-og-dild",
+  "title": "Grøntsager fra haven i smør og dild",
+  "cuisine": "scandinavian",
+  "region": "Denmark",
+  "summary": "Summer vegetables braised in butter with fresh dill."
+ },
+ {
+  "id": "gulai-ubi-kayu",
+  "title": "Gulai Ubi Kayu",
+  "cuisine": "malaysian",
+  "region": "Kuala Lumpur",
+  "summary": "Soft cassava in a rich, spiced coconut curry—comfort food made to stretch."
+ },
+ {
+  "id": "pastilla-aux-amandes",
+  "title": "Pastilla aux Amandes",
+  "cuisine": "north-african",
+  "region": "Fes, Morocco",
+  "summary": "Crispy phyllo pastry filled with spiced chicken, almonds and eggs—a festive Moroccan showstopper."
+ },
+ {
+  "id": "salsa-de-pasilla-oaxaquena",
+  "title": "Salsa de Pasilla Oaxaqueña",
+  "cuisine": "mexican",
+  "region": "Oaxaca",
+  "summary": "Charred pasilla chilhuacle salsa ground on the molcajete, the way we make it at the market stall."
+ },
+ {
+  "id": "frijoles-negros-refritos",
+  "title": "Frijoles Negros Refritos",
+  "cuisine": "mexican",
+  "region": "Mexico City",
+  "summary": "Slow-cooked black beans mashed smooth with garlic and oil for a creamy, intense side dish."
+ },
+ {
+  "id": "popiah",
+  "title": "Popiah",
+  "cuisine": "malaysian",
+  "region": "Penang",
+  "summary": "Fresh spring rolls filled with turnip, shrimp and pork, Nyonya-style with sweet-savory dipping sauce."
+ },
+ {
+  "id": "fischfrikadellen",
+  "title": "Fischfrikadellen",
+  "cuisine": "central-european",
+  "region": "Northern Germany",
+  "summary": "Pan-fried fish patties with potato and onion, Hamburg style, served with mustard."
+ },
+ {
+  "id": "flour-tortillas",
+  "title": "Flour Tortillas",
+  "cuisine": "mexican",
+  "region": "Northern Mexico",
+  "summary": "Soft, buttery handmade flour tortillas, warm off the griddle."
+ },
+ {
+  "id": "fish-fragrant-pork-shreds",
+  "title": "Fish Fragrant Pork Shreds",
+  "cuisine": "chinese",
+  "region": "Sichuan",
+  "summary": "Thinly sliced pork stir-fried with pickled chilies and bamboo shoots in fish-fragrant sauce."
+ },
+ {
+  "id": "nasi-kuning",
+  "title": "Nasi Kuning",
+  "cuisine": "indonesian",
+  "region": "Javanese",
+  "summary": "Turmeric and coconut rice cooked slowly to absorb all the flavors."
+ },
+ {
+  "id": "banh-mi-chay",
+  "title": "Bánh Mì Chay",
+  "cuisine": "vietnamese",
+  "region": "Southern Vietnam",
+  "summary": "Vietnamese vegetarian sandwich with crispy baguette, seasoned tofu, pickled vegetables and mayo."
+ },
+ {
+  "id": "banh-hoi-nuong",
+  "title": "Bánh Hỏi Nướng",
+  "cuisine": "vietnamese",
+  "region": "Saigon",
+  "summary": "Charred grilled thin noodle cakes topped with prawns and crispy pork belly, dipped in tangy fish sauce vinegar."
+ },
+ {
+  "id": "tahchin",
+  "title": "Tahchin",
+  "cuisine": "middle-eastern",
+  "region": "Persian",
+  "summary": "Jewelled rice cake with chicken and yogurt, flipped to show the golden crust."
+ },
+ {
+  "id": "appam-with-stew",
+  "title": "Appam with Stew",
+  "cuisine": "indian",
+  "region": "Kerala",
+  "summary": "Soft, fermented rice pancakes with mild coconut chicken stew—a weekend breakfast."
+ },
+ {
+  "id": "ojja",
+  "title": "Ojja",
+  "cuisine": "north-african",
+  "region": "Tunisia",
+  "summary": "Spicy merguez sausage with peppers, tomatoes and runny eggs."
+ },
+ {
+  "id": "fa-alifu-talo",
+  "title": "Fa'alifu Talo",
+  "cuisine": "pacific-islands",
+  "region": "Samoa",
+  "summary": "Taro and coconut cream baked in banana leaves, creamy and comforting."
+ },
+ {
+  "id": "dakjim",
+  "title": "Dakjim",
+  "cuisine": "korean",
+  "region": "Auckland, New Zealand",
+  "summary": "Braised chicken in soy and ginger, sticky and tender, what Grace's mum made."
+ },
+ {
+  "id": "taro-dalo-ni-lolo",
+  "title": "Taro Dalo ni Lolo",
+  "cuisine": "pacific-islands",
+  "region": "Fiji",
+  "summary": "Taro root baked soft and creamy in coconut milk with onions"
+ },
+ {
+  "id": "tagine-de-poisson-aux-olives-et-citron",
+  "title": "Tagine de Poisson aux Olives et Citron",
+  "cuisine": "north-african",
+  "region": "Moroccan",
+  "summary": "Sea bream or white fish braised with green olives, preserved lemon and gentle spices in a Moroccan tagine."
+ },
+ {
+  "id": "andouillette-a-la-moutarde",
+  "title": "Andouillette à la moutarde",
+  "cuisine": "french",
+  "region": "Lyon",
+  "summary": "Chitterling sausage with a silky Dijon mustard and cream sauce."
+ },
+ {
+  "id": "egg-noodles-and-caramelized-cabbage",
+  "title": "Egg Noodles and Caramelized Cabbage",
+  "cuisine": "central-european",
+  "region": "Ashkenazi Jewish",
+  "summary": "Tender egg noodles with soft, golden caramelized cabbage and crispy onions, ready in 30 minutes."
+ },
+ {
+  "id": "dashimaki-tamago",
+  "title": "Dashimaki Tamago",
+  "cuisine": "japanese",
+  "region": "Osaka",
+  "summary": "Savoury dashi-seasoned rolled egg omelette, a bento essential."
+ },
+ {
+  "id": "thai-green-curry-with-prawns-and-beans",
+  "title": "Thai Green Curry with Prawns and Beans",
+  "cuisine": "thai",
+  "region": "Thailand",
+  "summary": "Creamy green curry with prawns and beans, ready in 20 minutes from frozen."
+ },
+ {
+  "id": "com-hen",
+  "title": "Cơm Hến",
+  "cuisine": "vietnamese",
+  "region": "Huế, Central Vietnam",
+  "summary": "Rice with tiny clams and crispy fried shallots, a humble Huế comfort dish with serious flavor."
+ },
+ {
+  "id": "sayur-asem",
+  "title": "Sayur Asem",
+  "cuisine": "indonesian",
+  "region": "Bandung, West Java",
+  "summary": "Sour vegetable soup with tamarind, peanuts and galangal—cheap, filling, and tastes even better the next day."
+ },
+ {
+  "id": "pappardelle-al-ragu-di-maiale",
+  "title": "Pappardelle al Ragù di Maiale",
+  "cuisine": "italian",
+  "region": "Tuscany",
+  "summary": "Wide ribbon pasta with slow-cooked wild boar ragù—rustic Tuscan comfort."
+ },
+ {
+  "id": "dolma-garaz",
+  "title": "Dolma Garaz",
+  "cuisine": "middle-eastern",
+  "region": "Iraq",
+  "summary": "Grape leaves stuffed with spiced meat and rice, served with tomato and yogurt."
+ },
+ {
+  "id": "seekh-kebab",
+  "title": "Seekh Kebab",
+  "cuisine": "indian",
+  "region": "Lahore",
+  "summary": "Charred minced meat kebabs with onions and spices, griddled until juicy."
+ },
+ {
+  "id": "adobong-gata",
+  "title": "Adobong Gata",
+  "cuisine": "filipino",
+  "region": "Kapampangan",
+  "summary": "Creamy coconut chicken adobo, slow-cooked with vinegar and spices."
+ },
+ {
+  "id": "tarte-tatin-aux-pommes-de-tasmanie",
+  "title": "Tarte Tatin aux pommes de Tasmanie",
+  "cuisine": "french",
+  "region": "Brittany / Tasmania",
+  "summary": "Caramelised Tasmanian apple tart with butter, vanilla and puff pastry."
+ },
+ {
+  "id": "mi-vang-xao-mem",
+  "title": "Mì Vàng Xào Mềm",
+  "cuisine": "vietnamese",
+  "region": "Hanoi",
+  "summary": "Soft egg noodles stir-fried with chicken and aromatics, ready in 30 minutes."
+ },
+ {
+  "id": "rasam",
+  "title": "Rasam",
+  "cuisine": "indian",
+  "region": "Tamil Nadu",
+  "summary": "Peppery tamarind and tomato soup, quick and warming, a Tamil dinner staple."
+ },
+ {
+  "id": "ojingeo-bokkeum",
+  "title": "Ojingeo Bokkeum",
+  "cuisine": "korean",
+  "region": "Busan",
+  "summary": "Spicy stir-fried squid with gochugaru, garlic and sesame—a banchan that keeps all week."
+ },
+ {
+  "id": "apple-and-cider-pork-braise",
+  "title": "Apple and Cider Pork Braise",
+  "cuisine": "modern-australian",
+  "region": "Tasmania",
+  "summary": "Pork shoulder slow-cooked with cider, Tasmanian apples and thyme until it falls apart."
+ },
+ {
+  "id": "moi-moi",
+  "title": "Moi Moi",
+  "cuisine": "west-african",
+  "region": "Nigeria",
+  "summary": "Steamed bean pudding with hard-boiled eggs tucked inside, served warm with bread or rice"
+ },
+ {
+  "id": "spiced-potato-roti-filling",
+  "title": "Spiced Potato Roti Filling",
+  "cuisine": "indian",
+  "region": "Fiji",
+  "summary": "Mashed potatoes with cumin and green chilli for stuffing roti—a weeknight Indo-Fijian favourite."
+ },
+ {
+  "id": "egg-white-soup-with-crab",
+  "title": "Egg White Soup with Crab",
+  "cuisine": "chinese",
+  "region": "Cantonese",
+  "summary": "Silken egg white ribbons in delicate crab and chicken broth."
+ },
+ {
+  "id": "sweet-potato-and-kale-sheet-pan-with-tahini-drizzle",
+  "title": "Sweet Potato and Kale Sheet Pan with Tahini Drizzle",
+  "cuisine": "modern-australian",
+  "region": "Byron Bay",
+  "summary": "Roasted sweet potato wedges and massaged kale with tahini, garlic and lemon dressing."
+ },
+ {
+  "id": "gotamba",
+  "title": "Gotamba",
+  "cuisine": "indian",
+  "region": "Sri Lanka",
+  "summary": "Sweet crispy fried dough with banana and jaggery, a Sri Lankan street breakfast."
+ },
+ {
+  "id": "teh-tarik",
+  "title": "Teh Tarik",
+  "cuisine": "malaysian",
+  "region": "Malaysia",
+  "summary": "Pulled tea with condensed and evaporated milk, a nostalgic Malaysian mamak-stall favourite."
+ },
+ {
+  "id": "tacos-al-pastor",
+  "title": "Tacos al Pastor",
+  "cuisine": "mexican",
+  "region": "Jalisco",
+  "summary": "Spit-marinated pork tacos with pineapple and a pantry-made achiote marinade."
+ },
+ {
+  "id": "sopa-de-nopales",
+  "title": "Sopa de Nopales",
+  "cuisine": "mexican",
+  "region": "Mexico City",
+  "summary": "Tender cactus paddle soup with tomato, garlic, and cilantro in a light, vegetable-forward broth."
+ },
+ {
+  "id": "makki-di-roti",
+  "title": "Makki di roti",
+  "cuisine": "indian",
+  "region": "Punjabi",
+  "summary": "Warm cornmeal flatbread, crumbly and buttery, that even fussy kids will eat when wheat roti gets a no."
+ },
+ {
+  "id": "ika-samoa",
+  "title": "Ika Samoa",
+  "cuisine": "pacific-islands",
+  "region": "Tonga",
+  "summary": "White fish in coconut cream with tomatoes and silverbeet."
+ },
+ {
+  "id": "khao-sticky-rice",
+  "title": "Khao Sticky Rice",
+  "cuisine": "thai",
+  "region": "Isaan",
+  "summary": "Properly steamed glutinous rice, the foundation of every Isaan meal."
+ },
+ {
+  "id": "kina-with-rewena",
+  "title": "Kina with Rēwena",
+  "cuisine": "pacific-islands",
+  "region": "Aotearoa / New Zealand",
+  "summary": "Sea urchin roe on toasted rēwena bread with lemon, simple kai moana."
+ },
+ {
+  "id": "quandong-pavlova",
+  "title": "Quandong Pavlova",
+  "cuisine": "modern-australian",
+  "region": "Alice Springs",
+  "summary": "Crispy meringue nest topped with whipped cream and tart native quandongs."
+ },
+ {
+  "id": "agedashi-dofu",
+  "title": "Agedashi Dofu",
+  "cuisine": "japanese",
+  "region": "Kyoto",
+  "summary": "Silken tofu dusted and fried golden, swimming in hot dashi with spring onion."
+ },
+ {
+  "id": "pla-neung-manao-steamed-fish-with-lime-and-chilli",
+  "title": "Pla Neung Manao (Steamed Fish with Lime and Chilli)",
+  "cuisine": "thai",
+  "region": "Thailand",
+  "summary": "Whole fish topped with crispy fried shallots, fresh chilli and a fragrant dressing."
+ },
+ {
+  "id": "okra-curry-rice",
+  "title": "Okra Curry Rice",
+  "cuisine": "japanese",
+  "region": "Sydney",
+  "summary": "Creamy Japanese curry with fresh okra and a fried egg on top."
+ },
+ {
+  "id": "oyster-omelette",
+  "title": "Oyster Omelette",
+  "cuisine": "chinese",
+  "region": "Taiwan",
+  "summary": "Crispy-edged, custard-centered night market omelette studded with fresh oysters and spring onions."
+ },
+ {
+  "id": "shiro",
+  "title": "Shiro",
+  "cuisine": "east-african",
+  "region": "Footscray, Melbourne",
+  "summary": "Creamy chickpea flour paste with onions and berbere, vegan and deeply satisfying."
+ },
+ {
+  "id": "gaeng-panang-gai",
+  "title": "Gaeng Panang Gai",
+  "cuisine": "thai",
+  "region": "Central Thailand",
+  "summary": "Rich, mild red curry with chicken and peanuts, creamy and comforting in one pan."
+ },
+ {
+  "id": "mi-ga-cot-dua",
+  "title": "Mì Gà Cốt Dừa",
+  "cuisine": "vietnamese",
+  "region": "Saigon",
+  "summary": "Silky turmeric chicken noodles in coconut broth, Saigon street food at home."
+ },
+ {
+  "id": "gaeng-hang-lay",
+  "title": "Gaeng Hang Lay",
+  "cuisine": "thai",
+  "region": "Northern Thailand",
+  "summary": "Rich mushroom curry in the style of the classic pork belly dish, with layers of spice and tender mushrooms."
+ },
+ {
+  "id": "slow-cooker-oxtail-stew",
+  "title": "Slow Cooker Oxtail Stew",
+  "cuisine": "modern-australian",
+  "region": "Toowoomba",
+  "summary": "Tender oxtail braised with carrots and onions until falling off the bone."
+ },
+ {
+  "id": "buttermilk-biscuits",
+  "title": "Buttermilk Biscuits",
+  "cuisine": "american",
+  "region": "Savannah, Georgia",
+  "summary": "Tall, flaky biscuits made with cold butter and buttermilk, baked in cast iron until golden."
+ },
+ {
+  "id": "tinolang-isda",
+  "title": "Tinolang Isda",
+  "cuisine": "filipino",
+  "region": "Visayan",
+  "summary": "Light fish broth with ginger, green papaya and leafy greens."
+ },
+ {
+  "id": "maklouba",
+  "title": "Maklouba",
+  "cuisine": "middle-eastern",
+  "region": "Palestinian",
+  "summary": "Upside-down rice with spiced vegetables and yoghurt, served with a crispy golden layer on top."
+ },
+ {
+  "id": "fesenjan",
+  "title": "Fesenjan",
+  "cuisine": "middle-eastern",
+  "region": "Persian",
+  "summary": "Pomegranate and walnut stew with chicken, sweet and deep and meant for rice."
+ },
+ {
+  "id": "seafood-jambalaya",
+  "title": "Seafood Jambalaya",
+  "cuisine": "american",
+  "region": "Acadiana",
+  "summary": "Shrimp, crab, and oysters stirred into rice with sausage, peppers, and Cajun spices all in one pot."
+ },
+ {
+  "id": "uttapam",
+  "title": "Uttapam",
+  "cuisine": "indian",
+  "region": "Tamil Nadu",
+  "summary": "Thick savoury pancake topped with onion and tomato, made from dosa batter in minutes."
+ },
+ {
+  "id": "suya",
+  "title": "Suya",
+  "cuisine": "west-african",
+  "region": "Nigeria",
+  "summary": "Grilled seasoned beef skewers coated in spiced peanut powder."
+ },
+ {
+  "id": "potjiekos",
+  "title": "Potjiekos",
+  "cuisine": "south-african",
+  "region": "South Africa",
+  "summary": "One-pot stew of meat, potatoes and veg cooked low and slow in cast iron on the braai."
+ },
+ {
+  "id": "teriyaki-chicken-plate",
+  "title": "Teriyaki Chicken Plate",
+  "cuisine": "japanese",
+  "region": "Hawaii",
+  "summary": "Sticky-glazed chicken thighs with two scoops of rice and macaroni salad, Hawaiian plate lunch style."
+ },
+ {
+  "id": "perkedel-kentang",
+  "title": "Perkedel Kentang",
+  "cuisine": "indonesian",
+  "region": "Yogyakarta",
+  "summary": "Soft potato fritters with garlic, nutmeg and a golden crust, best eaten warm."
+ },
+ {
+  "id": "buri-gochu-jjim",
+  "title": "Buri Gochu Jjim",
+  "cuisine": "korean",
+  "region": "Temple Food (Korea)",
+  "summary": "Glazed dried peppers and mushrooms braised until caramelized and tender."
+ },
+ {
+  "id": "lugaw",
+  "title": "Lugaw",
+  "cuisine": "filipino",
+  "region": "Kapampangan",
+  "summary": "Creamy rice porridge topped with boiled egg and crispy fried garlic, a comfort breakfast for grandchildren."
+ },
+ {
+  "id": "kleftiko",
+  "title": "Kleftiko",
+  "cuisine": "greek",
+  "region": "Crete",
+  "summary": "Lamb shoulder wrapped in parchment and slow-roasted until it melts, the way yiayia cooked it on special occasions."
+ },
+ {
+  "id": "to-ona-i-sunday-spread",
+  "title": "To'ona'i Sunday Spread",
+  "cuisine": "pacific-islands",
+  "region": "Samoa / Aotearoa",
+  "summary": "A Samoan feast spread for twenty with pisupo, taro, coconut bread and fresh fruit."
+ },
+ {
+  "id": "sai-oua",
+  "title": "Sai Oua",
+  "cuisine": "thai",
+  "region": "Northern Thai",
+  "summary": "Isaan grilled sausage packed with pork, herbs and spices, coiled on the barbecue."
+ },
+ {
+  "id": "karaage",
+  "title": "Karaage",
+  "cuisine": "japanese",
+  "region": "Osaka",
+  "summary": "Japanese fried chicken thighs marinated in soy, ginger and garlic, crispy outside and juicy inside."
+ },
+ {
+  "id": "charred-broccoli-and-crispy-chickpea-salad",
+  "title": "Charred Broccoli and Crispy Chickpea Salad",
+  "cuisine": "modern-australian",
+  "region": "Byron Bay",
+  "summary": "Big salad with roasted chickpeas, charred broccoli, and tahini-lemon dressing."
+ },
+ {
+  "id": "horta-vrasti",
+  "title": "Horta Vrasti",
+  "cuisine": "greek",
+  "region": "Thessaloniki",
+  "summary": "Boiled greens with olive oil and lemon—the plainest and most essential Greek dish."
+ },
+ {
+  "id": "sambal-goreng-tahu",
+  "title": "Sambal Goreng Tahu",
+  "cuisine": "malaysian",
+  "region": "Kuala Lumpur",
+  "summary": "Tofu and shrimp paste in a sambal that builds heat slowly."
+ },
+ {
+  "id": "haleem",
+  "title": "Haleem",
+  "cuisine": "indian",
+  "region": "Lahore, Punjabi",
+  "summary": "Slow-cooked meat and lentils that meld into a thick, spiced porridge—Punjabi winter comfort."
+ },
+ {
+  "id": "aish-baladi-with-cheese-and-olives",
+  "title": "Aish Baladi with Cheese and Olives",
+  "cuisine": "north-african",
+  "region": "Egypt",
+  "summary": "Thick Egyptian flatbread stuffed with creamy cheese and brined olives."
+ },
+ {
+  "id": "canh-ca-chua-thit-bo",
+  "title": "Canh Cà Chua Thịt Bò",
+  "cuisine": "vietnamese",
+  "region": "Northern Vietnam",
+  "summary": "Light tomato and beef soup, bright and warming with a savoury broth."
+ },
+ {
+  "id": "zurek-z-zytem",
+  "title": "Żurek z Żytem",
+  "cuisine": "central-european",
+  "region": "Kraków, Poland",
+  "summary": "White borscht made with rye starter, ham hock and new potatoes—a traditional Polish Easter soup."
+ },
+ {
+  "id": "caponata",
+  "title": "Caponata",
+  "cuisine": "italian",
+  "region": "Sicily",
+  "summary": "Eggplant, olives, capers and tomato in a sweet-sour glaze—the soul of Sicilian home cooking."
+ },
+ {
+  "id": "kartoffelsalat",
+  "title": "Kartoffelsalat",
+  "cuisine": "central-european",
+  "region": "Northern Germany",
+  "summary": "Warm potato salad with vinegar, broth and bacon—a Northern German classic."
+ },
+ {
+  "id": "erisseri",
+  "title": "Erisseri",
+  "cuisine": "indian",
+  "region": "Kerala",
+  "summary": "Pumpkin and beans in coconut and roasted spices—a traditional Keralan vegetable curry"
+ },
+ {
+  "id": "steamed-chicken-with-chinese-mushrooms",
+  "title": "Steamed Chicken with Chinese Mushrooms",
+  "cuisine": "chinese",
+  "region": "Cantonese",
+  "summary": "Tender chicken breast steamed over dried shiitake and oyster mushrooms with soy and sesame oil."
+ },
+ {
+  "id": "churrasco-misto",
+  "title": "Churrasco Misto",
+  "cuisine": "latin-american",
+  "region": "Brazil",
+  "summary": "Mixed grilled meats—beef, chicken and pork—with rock salt, the Brazilian churrasco way."
+ },
+ {
+  "id": "githeri",
+  "title": "Githeri",
+  "cuisine": "east-african",
+  "region": "Kenya",
+  "summary": "Maize and beans cooked with tomatoes and onions, simple and filling weekday lunch."
+ },
+ {
+  "id": "stovies",
+  "title": "Stovies",
+  "cuisine": "british",
+  "region": "Scotland",
+  "summary": "Potatoes, onions and leftover meat in one slow pot, the ultimate forgiving supper."
+ },
+ {
+  "id": "mango-ras",
+  "title": "Mango Ras",
+  "cuisine": "indian",
+  "region": "Gujarat",
+  "summary": "Sweet-tangy mango mousse whisked light and airy, served chilled with hot puri."
+ },
+ {
+  "id": "sorrel-soup",
+  "title": "Sorrel Soup",
+  "cuisine": "central-european",
+  "region": "Ukraine",
+  "summary": "Tart and bright sorrel soup with potato, egg and dill—spring comfort in a bowl."
+ },
+ {
+  "id": "ndole",
+  "title": "Ndolé",
+  "cuisine": "west-african",
+  "region": "Cameroonian",
+  "summary": "Tender leafy greens and fish in a creamy, mild peanut sauce."
+ },
+ {
+  "id": "chingri-macher-malai-curry",
+  "title": "Chingri Macher Malai Curry",
+  "cuisine": "indian",
+  "region": "Bengal",
+  "summary": "Bengali prawns in coconut cream with ginger and green chillies."
+ },
+ {
+  "id": "hangi-style-lamb-shoulder",
+  "title": "Hangi-Style Lamb Shoulder",
+  "cuisine": "pacific-islands",
+  "region": "Aotearoa New Zealand",
+  "summary": "Slow-roasted lamb shoulder with root vegetables, wrapped and cooked low and slow like a hangi in your home oven."
+ },
+ {
+  "id": "samgyetang",
+  "title": "Samgyetang",
+  "cuisine": "korean",
+  "region": "Seoul",
+  "summary": "Whole young chicken stuffed with ginseng and glutinous rice, a restorative summer tonic."
+ },
+ {
+  "id": "gratin-de-queue-de-boeuf",
+  "title": "Gratin de queue de boeuf",
+  "cuisine": "french",
+  "region": "Lyon",
+  "summary": "Braised oxtail gratin, a weekend project that tastes like the bistro but costs half the price."
+ },
+ {
+  "id": "adobong-bitso-bitso",
+  "title": "Adobong Bitso-Bitso",
+  "cuisine": "filipino",
+  "region": "Pampanga",
+  "summary": "Pork liver and heart braised in vinegar and soy until tender, the Kapampangan way."
+ },
+ {
+  "id": "pepes-tempe",
+  "title": "Pepes Tempe",
+  "cuisine": "indonesian",
+  "region": "Sundanese",
+  "summary": "Tempeh steamed in banana leaf parcels with sambal and aromatics, no oil needed."
+ },
+ {
+  "id": "minestra-di-fave-e-cicoria",
+  "title": "Minestra di Fave e Cicoria",
+  "cuisine": "italian",
+  "region": "Calabria",
+  "summary": "Calabrian broad bean and wild greens soup, finished with golden olive oil."
+ },
+ {
+  "id": "twice-cooked-pork",
+  "title": "Twice-Cooked Pork",
+  "cuisine": "chinese",
+  "region": "Sichuan",
+  "summary": "Sichuan's gentler side: tender pork belly with fermented bean paste, peppers and gentle spice."
+ },
+ {
+  "id": "sakura-ebi-and-pea-rice",
+  "title": "Sakura Ebi and Pea Rice",
+  "cuisine": "japanese",
+  "region": "Yokohama",
+  "summary": "Fluffy rice with sweet dried shrimp and peas—a Yokohama one-pot that tastes fancy with just four ingredients."
+ },
+ {
+  "id": "bagte-g-med-l-g-og-persillesalat",
+  "title": "Bagte æg med løg og persillesalat",
+  "cuisine": "scandinavian",
+  "region": "Denmark",
+  "summary": "Creamy baked eggs with caramelised onions and fresh parsley salad."
+ },
+ {
+  "id": "kibbeh",
+  "title": "Kibbeh",
+  "cuisine": "middle-eastern",
+  "region": "Lebanon",
+  "summary": "Crispy bulgur and meat fritters shaped by hand, served with yoghurt."
+ },
+ {
+  "id": "sate-babi",
+  "title": "Sate Babi",
+  "cuisine": "indonesian",
+  "region": "Bali",
+  "summary": "Balinese pork satay with turmeric and lemongrass, grilled and served with peanut sauce."
+ },
+ {
+  "id": "banh-mi-thit-nuong",
+  "title": "Bánh Mì Thịt Nướng",
+  "cuisine": "vietnamese",
+  "region": "Saigon",
+  "summary": "Charred pork shoulder bánh mì with pickled daikon, cilantro and fish sauce mayo on crusty bread."
+ },
+ {
+  "id": "bamia",
+  "title": "Bamia",
+  "cuisine": "middle-eastern",
+  "region": "Iraq",
+  "summary": "Slow-cooked Iraqi okra and beef stew with tomato, garlic and warming spices."
+ },
+ {
+  "id": "tebasaki",
+  "title": "Tebasaki",
+  "cuisine": "japanese",
+  "region": "Fukuoka",
+  "summary": "Crispy grilled chicken wing tips with salt and pepper, a Fukuoka izakaya staple."
+ },
+ {
+  "id": "zaalouk",
+  "title": "Zaalouk",
+  "cuisine": "north-african",
+  "region": "Morocco",
+  "summary": "Warm Moroccan salad of roasted eggplant and tomatoes with garlic and coriander."
+ },
+ {
+  "id": "dal-with-crispy-onions",
+  "title": "Dal with Crispy Onions",
+  "cuisine": "indian",
+  "region": "India",
+  "summary": "Split red lentils cooked soft with spice, topped with crispy fried onions."
+ },
+ {
+  "id": "salsa-roja",
+  "title": "Salsa Roja",
+  "cuisine": "mexican",
+  "region": "Jalisco",
+  "summary": "Simple cooked red sauce of tomatoes, chillies and garlic for tacos."
+ },
+ {
+  "id": "rendang-daging",
+  "title": "Rendang Daging",
+  "cuisine": "malaysian",
+  "region": "Kuala Lumpur",
+  "summary": "Slow-cooked beef rendang, rich with coconut and spices."
+ },
+ {
+  "id": "pad-krapow-gung",
+  "title": "Pad Krapow Gung",
+  "cuisine": "thai",
+  "region": "Bangkok",
+  "summary": "Stir-fried prawns with holy basil and garlic over rice."
+ },
+ {
+  "id": "wambatu-curry",
+  "title": "Wambatu Curry",
+  "cuisine": "indian",
+  "region": "Sri Lanka",
+  "summary": "Creamy eggplant curry with coconut milk and warming spices, a Sunday staple."
+ },
+ {
+  "id": "bush-tomato-lamb-stew",
+  "title": "Bush Tomato Lamb Stew",
+  "cuisine": "modern-australian",
+  "region": "Central Australia",
+  "summary": "Slow-cooked lamb with native bush tomato, a tangy Central Australian native ingredient."
+ },
+ {
+  "id": "pepper-sauce",
+  "title": "Pepper Sauce",
+  "cuisine": "caribbean",
+  "region": "Trinidad and Tobago",
+  "summary": "Rohan's fiery Trinidadian hot sauce of Scotch bonnets, cilantro and mustard."
+ },
+ {
+  "id": "low-country-red-rice",
+  "title": "Low Country Red Rice",
+  "cuisine": "american",
+  "region": "South Carolina",
+  "summary": "Tomato-stained rice with bacon and onions, cooked in cast iron the Low Country way."
+ },
+ {
+  "id": "matzo-ball-soup",
+  "title": "Matzo Ball Soup",
+  "cuisine": "central-european",
+  "region": "Ashkenazi Jewish",
+  "summary": "Grandmother's golden broth with fluffy matzo balls, the ultimate Jewish comfort food."
+ },
+ {
+  "id": "bariis-iyo-caano",
+  "title": "Bariis iyo Caano",
+  "cuisine": "east-african",
+  "region": "Somali",
+  "summary": "Broken rice cooked soft with milk and cardamom, a comforting Somali breakfast."
+ },
+ {
+  "id": "ajiaco-colombiano",
+  "title": "Ajiaco Colombiano",
+  "cuisine": "latin-american",
+  "region": "Colombia",
+  "summary": "Hearty potato and chicken soup with corn and cream—comfort in a bowl."
+ },
+ {
+  "id": "blackened-catfish",
+  "title": "Blackened Catfish",
+  "cuisine": "american",
+  "region": "Acadiana",
+  "summary": "Catfish fillets crusted with Cajun spices and seared hard in a cast-iron skillet until smoky and crispy."
+ },
+ {
+  "id": "atole-de-chocolate",
+  "title": "Atole de Chocolate",
+  "cuisine": "mexican",
+  "region": "Oaxaca",
+  "summary": "Thick, creamy corn masa drink with Oaxacan chocolate and cinnamon, warm for breakfast."
+ },
+ {
+  "id": "rajas-poblanas",
+  "title": "Rajas Poblanas",
+  "cuisine": "mexican",
+  "region": "Puebla",
+  "summary": "Roasted poblano strips in a creamy sauce with jalapeños, onion and cheese."
+ },
+ {
+  "id": "khoresh-rivas",
+  "title": "Khoresh Rivas",
+  "cuisine": "middle-eastern",
+  "region": "Persian",
+  "summary": "Rhubarb and lamb stew, spring's tart grace over rice with tahdig"
+ },
+ {
+  "id": "mi-xao-rau-muong",
+  "title": "Mì Xào Rau Muống",
+  "cuisine": "vietnamese",
+  "region": "Northern Vietnam",
+  "summary": "Stir-fried wheat noodles with water spinach, garlic and ginger—simple temple food, weeknight done well."
+ },
+ {
+  "id": "granita-di-mandorla",
+  "title": "Granita di Mandorla",
+  "cuisine": "italian",
+  "region": "Sicily",
+  "summary": "Icy almond milk drink with a brioche—how Sicilians really start the day."
+ },
+ {
+  "id": "ezogelin-corbas",
+  "title": "Ezogelin Çorbası",
+  "cuisine": "turkish",
+  "region": "Anatolia",
+  "summary": "Light Turkish lentil soup with bulgur, tomato and warming spices."
+ },
+ {
+  "id": "soupe-a-l-oignon",
+  "title": "Soupe à l'Oignon",
+  "cuisine": "french",
+  "region": "French",
+  "summary": "Silky onion soup with fish stock and dark caramelized onions, Dakar comfort food."
+ },
+ {
+  "id": "sm-rrebr-d-med-roastbeef-og-remoulade",
+  "title": "Smørrebrød med roastbeef og remoulade",
+  "cuisine": "scandinavian",
+  "region": "Copenhagen, Denmark",
+  "summary": "Classic Danish open sandwich with roast beef, sharp remoulade, crispy onions and pickled cucumber on dark rye."
+ },
+ {
+  "id": "bap-with-gochujang-butter",
+  "title": "Bap with Gochujang Butter",
+  "cuisine": "korean",
+  "region": "Seoul",
+  "summary": "Rice with a Korean chilli-butter scramble and a fried egg."
+ },
+ {
+  "id": "arros-negre",
+  "title": "Arròs Negre",
+  "cuisine": "spanish",
+  "region": "Catalonia",
+  "summary": "Catalan black rice with squid ink, fresh squid and seafood on a slow sofregit base."
+ },
+ {
+  "id": "banga-soup",
+  "title": "Banga Soup",
+  "cuisine": "west-african",
+  "region": "Lagos, Nigeria",
+  "summary": "Palm nut soup with stockfish and crayfish, rich and deeply savoury."
+ },
+ {
+  "id": "chikuwa-don",
+  "title": "Chikuwa Don",
+  "cuisine": "japanese",
+  "region": "Osaka",
+  "summary": "Bowl of rice topped with simmered fish cake and egg—quick bento favorite."
+ },
+ {
+  "id": "kik-alicha",
+  "title": "Kik Alicha",
+  "cuisine": "east-african",
+  "region": "Ethiopia",
+  "summary": "Mild yellow split pea wat with ginger and turmeric, Ethiopian fasting-day comfort food."
+ },
+ {
+  "id": "buniga-ni-lolo",
+  "title": "Buniga ni Lolo",
+  "cuisine": "pacific-islands",
+  "region": "Fiji",
+  "summary": "Fijian eggplant braised in coconut milk with spices, tender and rich."
+ },
+ {
+  "id": "banh-nam",
+  "title": "Bánh Nậm",
+  "cuisine": "vietnamese",
+  "region": "Huế, Central Vietnam",
+  "summary": "Folded rice cakes with pork and shrimp filling, a Central Vietnamese specialty."
+ },
+ {
+  "id": "slow-roasted-tomatoes-and-onions-with-oregano",
+  "title": "Slow-Roasted Tomatoes and Onions with Oregano",
+  "cuisine": "greek",
+  "region": "Crete",
+  "summary": "Slow-roasted tomatoes and onions collapse into soft, silky jam with olive oil and oregano."
+ },
+ {
+  "id": "lentil-kibbeh",
+  "title": "Lentil Kibbeh",
+  "cuisine": "middle-eastern",
+  "region": "Lebanon",
+  "summary": "Bulgur and red lentil shells stuffed with spiced lentil filling, baked instead of fried."
+ },
+ {
+  "id": "saganaki",
+  "title": "Saganaki",
+  "cuisine": "greek",
+  "region": "Cyprus",
+  "summary": "Fried halloumi cheese that squeaks between your teeth, golden and crispy with lemon."
+ },
+ {
+  "id": "huitres-gratinees-au-beurre-et-persil",
+  "title": "Huîtres gratinées au beurre et persil",
+  "cuisine": "french",
+  "region": "Brittany",
+  "summary": "Oysters baked with herb butter and crispy breadcrumb topping"
+ },
+ {
+  "id": "crispy-tofu-rice-paper-rolls-with-chilli-dipping-sauce",
+  "title": "Crispy Tofu Rice Paper Rolls with Chilli Dipping Sauce",
+  "cuisine": "vietnamese",
+  "region": "Vietnamese-inspired",
+  "summary": "Fresh rice paper rolls with fried tofu, herbs and quick sweet chilli sauce."
+ },
+ {
+  "id": "squid-and-chilli",
+  "title": "Squid and Chilli",
+  "cuisine": "modern-australian",
+  "region": "Tasmania",
+  "summary": "Quick-fried squid with local chilli, garlic and lemon."
+ },
+ {
+  "id": "tortelloni-di-ricotta-e-spinaci",
+  "title": "Tortelloni di Ricotta e Spinaci",
+  "cuisine": "italian",
+  "region": "Emilia-Romagna",
+  "summary": "Hand-folded ricotta and spinach pasta with brown butter and sage."
+ },
+ {
+  "id": "mee-goreng-mamak",
+  "title": "Mee Goreng Mamak",
+  "cuisine": "malaysian",
+  "region": "Malaysia",
+  "summary": "Spicy stir-fried noodles with egg and prawns, Malaysian street food done at home."
+ },
+ {
+  "id": "curry-duck",
+  "title": "Curry Duck",
+  "cuisine": "caribbean",
+  "region": "Trinidad and Tobago",
+  "summary": "Tender duck slow-cooked in fragrant spiced curry, a Trinidadian special occasion dish."
+ },
+ {
+  "id": "cavolfiore-affogato",
+  "title": "Cavolfiore Affogato",
+  "cuisine": "italian",
+  "region": "Southern Italy",
+  "summary": "Cauliflower braised in tomato and garlic until it falls apart, a southern Italian vegetable dish."
+ },
+ {
+  "id": "perlou",
+  "title": "Perlou",
+  "cuisine": "american",
+  "region": "Low Country, South Carolina",
+  "summary": "One-pot Low Country rice with chicken and sausage, simmered in savory broth."
+ },
+ {
+  "id": "naam-tok-gai",
+  "title": "Naam Tok Gai",
+  "cuisine": "thai",
+  "region": "Isaan",
+  "summary": "Grilled chicken with lime dressing, fish sauce, fresh herbs and crispy rice powder."
+ },
+ {
+  "id": "snags-and-onion-gravy",
+  "title": "Snags and Onion Gravy",
+  "cuisine": "modern-australian",
+  "region": "Toowoomba",
+  "summary": "Quality sausages with caramelised onion gravy."
+ },
+ {
+  "id": "cassava-cake",
+  "title": "Cassava Cake",
+  "cuisine": "pacific-islands",
+  "region": "Tongan",
+  "summary": "Grated cassava baked with coconut milk and sugar, dense and chewy."
+ },
+ {
+  "id": "barramundi-with-thai-basil-and-chilli",
+  "title": "Barramundi with Thai Basil and Chilli",
+  "cuisine": "modern-australian",
+  "region": "Darwin",
+  "summary": "Pan-fried local barramundi finished with fragrant holy basil and fresh bird's eye chilli."
+ },
+ {
+  "id": "masgouf",
+  "title": "Masgouf",
+  "cuisine": "middle-eastern",
+  "region": "Iraq",
+  "summary": "Grilled whole fish with spiced tamarind marinade, the Baghdad way."
+ },
+ {
+  "id": "beef-and-burdock-don",
+  "title": "Beef and Burdock Don",
+  "cuisine": "japanese",
+  "region": "Yokohama, Japan",
+  "summary": "Thinly sliced beef cooked down with earthy burdock root, quick weeknight donburi"
+ },
+ {
+  "id": "mashed-potatoes-with-crispy-onions-and-dill",
+  "title": "Mashed Potatoes with Crispy Onions and Dill",
+  "cuisine": "american",
+  "region": "Brooklyn",
+  "summary": "Buttery mashed potatoes loaded with fried onions and fresh dill—a side dish that becomes dinner when you're lazy."
+ },
+ {
+  "id": "pipi-soup",
+  "title": "Pipi Soup",
+  "cuisine": "pacific-islands",
+  "region": "Rotorua, New Zealand",
+  "summary": "Creamy broth with pipis, kumara and fresh herbs from the kai moana."
+ },
+ {
+  "id": "taro-and-pisupo-bake",
+  "title": "Taro and Pisupo Bake",
+  "cuisine": "pacific-islands",
+  "region": "Samoa",
+  "summary": "Taro root layered with corned beef and coconut cream, baked until tender and rich."
+ },
+ {
+  "id": "rabo-de-toro",
+  "title": "Rabo de Toro",
+  "cuisine": "spanish",
+  "region": "Andalusia",
+  "summary": "Rich Andalusian oxtail stew, slow-cooked with tomatoes, wine and warm spices."
+ },
+ {
+  "id": "corned-beef-silog",
+  "title": "Corned Beef Silog",
+  "cuisine": "filipino",
+  "region": "Manila",
+  "summary": "Canned corned beef with onions, garlic rice and fried eggs—the lazy silog when you're running late."
+ },
+ {
+  "id": "chili-oil-chicken",
+  "title": "Chili Oil Chicken",
+  "cuisine": "chinese",
+  "region": "Sichuan",
+  "summary": "Poached chicken in aromatic chili oil with Sichuan peppercorns and fresh herbs."
+ },
+ {
+  "id": "pig-s-blood-cake",
+  "title": "Pig's Blood Cake",
+  "cuisine": "chinese",
+  "region": "Taiwan",
+  "summary": "Grilled QQ rice cakes with blood cake inside, coated in peanut powder and cilantro."
+ },
+ {
+  "id": "cendol",
+  "title": "Cendol",
+  "cuisine": "malaysian",
+  "region": "Penang",
+  "summary": "Sweet green rice flour noodles in coconut milk and palm sugar syrup."
+ },
+ {
+  "id": "gado-gado-bali",
+  "title": "Gado-Gado Bali",
+  "cuisine": "indonesian",
+  "region": "Bali",
+  "summary": "Mixed vegetables with rich peanut sauce tempered by base genep and palm sugar."
+ },
+ {
+  "id": "ikan-sambal-matah",
+  "title": "Ikan Sambal Matah",
+  "cuisine": "malaysian",
+  "region": "Malaysia",
+  "summary": "Pan-fried white fish topped with a sharp raw sambal of shallots, garlic and bird's eye chillies."
+ },
+ {
+  "id": "com-tam-suon-nuong",
+  "title": "Cơm Tấm Sườn Nướng",
+  "cuisine": "vietnamese",
+  "region": "Saigon, District 4",
+  "summary": "Saigon broken rice with grilled pork chop, fried egg and caramelised fish sauce."
+ },
+ {
+  "id": "larb-het",
+  "title": "Larb Het",
+  "cuisine": "thai",
+  "region": "Northern Thailand",
+  "summary": "Northern Thai mushroom larb with lime, herbs and toasted rice powder."
+ },
+ {
+  "id": "atsuage",
+  "title": "Atsuage",
+  "cuisine": "japanese",
+  "region": "Fukuoka",
+  "summary": "Thick-fried tofu cutlet with dashi and grated daikon."
+ },
+ {
+  "id": "kanji-vada",
+  "title": "Kanji Vada",
+  "cuisine": "indian",
+  "region": "Rajasthani",
+  "summary": "Crispy lentil fritters soaked in spiced carrot pickle and mustard oil."
+ },
+ {
+  "id": "abgoosht",
+  "title": "Abgoosht",
+  "cuisine": "middle-eastern",
+  "region": "Persia",
+  "summary": "Persian meat and chickpea broth served two ways: the broth first, then pounded solids on bread."
+ },
+ {
+  "id": "rad-na-gai",
+  "title": "Rad Na Gai",
+  "cuisine": "thai",
+  "region": "Central Thai",
+  "summary": "Silky tapioca gravy over soft noodles and chicken—a one-burner Bangkok dinner."
+ },
+ {
+  "id": "chupe-de-camarones",
+  "title": "Chupe de Camarones",
+  "cuisine": "latin-american",
+  "region": "Peru",
+  "summary": "Creamy Peruvian shrimp and potato chowder with ají amarillo and fresh cheese."
+ },
+ {
+  "id": "dhal-and-jaggery",
+  "title": "Dhal and Jaggery",
+  "cuisine": "indian",
+  "region": "Sri Lanka",
+  "summary": "Creamy red lentil curry with coconut and a touch of jaggery sweetness."
+ },
+ {
+  "id": "jaew-makhuea-thet-charred-tomato-jaew",
+  "title": "Jaew Makhuea Thet (Charred Tomato Jaew)",
+  "cuisine": "thai",
+  "region": "Isaan",
+  "summary": "Smoky charred tomato and chilli dip with lime and fish sauce."
+ },
+ {
+  "id": "lentil-ladera",
+  "title": "Lentil Ladera",
+  "cuisine": "greek",
+  "region": "Northern Greece",
+  "summary": "Brown lentils braised in tomato and onion until they become their own sauce."
+ },
+ {
+  "id": "mboga-ya-managu",
+  "title": "Mboga ya Managu",
+  "cuisine": "east-african",
+  "region": "Kenya",
+  "summary": "Sautéed amaranth greens with tomatoes and onions"
+ },
+ {
+  "id": "grilled-fish-wrapped-in-vine-leaves",
+  "title": "Grilled Fish Wrapped in Vine Leaves",
+  "cuisine": "greek",
+  "region": "Cyprus",
+  "summary": "Whole fish sealed in grape leaves on the charcoal, herbs and lemon steam inside."
+ },
+ {
+  "id": "kokotxas-en-salsa-verde",
+  "title": "Kokotxas en Salsa Verde",
+  "cuisine": "spanish",
+  "region": "Basque Country",
+  "summary": "Hake jowls in a silky parsley sauce—expensive, delicate, worth every euro."
+ },
+ {
+  "id": "fideua",
+  "title": "Fideuà",
+  "cuisine": "spanish",
+  "region": "Empordà, Catalonia",
+  "summary": "Crispy short noodles with seafood, toasted and socarrat-crunchy at the bottom."
+ },
+ {
+  "id": "mizeria",
+  "title": "Mizeria",
+  "cuisine": "central-european",
+  "region": "Poland",
+  "summary": "Crisp cucumber salad in cool sour cream and fresh dill, the Polish summer side dish for everything."
+ },
+ {
+  "id": "trout-with-brown-butter-and-hazelnuts",
+  "title": "Trout with Brown Butter and Hazelnuts",
+  "cuisine": "modern-australian",
+  "region": "Tasmania",
+  "summary": "Wild Tasmanian trout with hazelnut brown butter and lemon, a simple weeknight celebration of cold-water fish."
+ },
+ {
+  "id": "dhal-puri",
+  "title": "Dhal Puri",
+  "cuisine": "indian",
+  "region": "Fiji",
+  "summary": "Fluffy roti stuffed with spiced yellow split pea filling, crispy and golden."
+ },
+ {
+  "id": "tteokguk-with-supermarket-veg",
+  "title": "Tteokguk with Supermarket Veg",
+  "cuisine": "korean",
+  "region": "Auckland",
+  "summary": "Korean rice cake soup with everyday vegetables and a simple broth."
+ },
+ {
+  "id": "mafe",
+  "title": "Mafé",
+  "cuisine": "west-african",
+  "region": "Senegal",
+  "summary": "Slow-cooked beef in rich peanut sauce with vegetables, a beloved Senegalese family dinner."
+ },
+ {
+  "id": "hokey-pokey-pavlova",
+  "title": "Hokey Pokey Pavlova",
+  "cuisine": "modern-australian",
+  "region": "New Zealand",
+  "summary": "Crispy meringue base topped with hokey pokey ice cream and warm berry compote."
+ },
+ {
+  "id": "kubbat-timman",
+  "title": "Kubbat Timman",
+  "cuisine": "middle-eastern",
+  "region": "Iraq",
+  "summary": "Rice and lamb meatballs in a fragrant tomato broth, Iraqi comfort food for weeknights."
+ },
+ {
+  "id": "yukgaejang",
+  "title": "Yukgaejang",
+  "cuisine": "korean",
+  "region": "Seoul",
+  "summary": "Spicy beef and vegetable soup, properly timed for a weeknight."
+ },
+ {
+  "id": "salatit-shamandar",
+  "title": "Salatit Shamandar",
+  "cuisine": "middle-eastern",
+  "region": "Palestinian",
+  "summary": "Palestinian beet and sesame salad with pomegranate molasses and walnuts"
+ },
+ {
+  "id": "camp-oven-rabbit-stew",
+  "title": "Camp Oven Rabbit Stew",
+  "cuisine": "modern-australian",
+  "region": "Toowoomba",
+  "summary": "Slow-cooked rabbit with root veg and thyme in a rich, warming stew."
+ },
+ {
+  "id": "otak-otak",
+  "title": "Otak-Otak",
+  "cuisine": "malaysian",
+  "region": "Penang",
+  "summary": "Fish paste steamed in banana leaf, aromatic and delicate."
+ },
+ {
+  "id": "lau-chingri",
+  "title": "Lau Chingri",
+  "cuisine": "indian",
+  "region": "Bengal",
+  "summary": "Bottle gourd and prawns in a light, gingery broth—gentle, everyday Bengali curry."
+ },
+ {
+  "id": "kanpyo-no-nimono",
+  "title": "Kanpyo no Nimono",
+  "cuisine": "japanese",
+  "region": "Kyoto",
+  "summary": "Dried gourd strips simmered until tender, tied and glazed in dashi and mirin."
+ },
+ {
+  "id": "sate-lilit",
+  "title": "Sate Lilit",
+  "cuisine": "indonesian",
+  "region": "Bali",
+  "summary": "Balinese minced satay wrapped around lemongrass stalks and grilled until charred."
+ },
+ {
+  "id": "dirty-rice",
+  "title": "Dirty Rice",
+  "cuisine": "american",
+  "region": "Acadiana",
+  "summary": "Rice cooked with chicken liver, andouille sausage, and Cajun holy trinity."
+ },
+ {
+  "id": "frijoles-refritos",
+  "title": "Frijoles Refritos",
+  "cuisine": "latin-american",
+  "region": "Colombia",
+  "summary": "Slow-cooked beans mashed smooth with onion, garlic, and a touch of cumin."
+ },
+ {
+  "id": "laabda",
+  "title": "Laabda",
+  "cuisine": "east-african",
+  "region": "Somalia",
+  "summary": "Slow-braised beef with caramelized onions and warm spices, a Somali celebration dish."
+ },
+ {
+  "id": "olluco-con-queso",
+  "title": "Olluco con Queso",
+  "cuisine": "latin-american",
+  "region": "Andean Peru",
+  "summary": "Tender Andean tubers simmered with cheese and ají amarillo in a creamy, deeply Peruvian sauce."
+ },
+ {
+  "id": "pad-kee-mao-gai",
+  "title": "Pad Kee Mao Gai",
+  "cuisine": "thai",
+  "region": "Bangkok",
+  "summary": "Drunken noodles with chicken: spicy stir-fried wide rice noodles with fresh basil and chillies"
+ },
+ {
+  "id": "roti-and-dal",
+  "title": "Roti and Dal",
+  "cuisine": "caribbean",
+  "region": "Trinidad and Tobago",
+  "summary": "Soft paratha-style flatbread with silky yellow split-pea curry, the Indo-Trinidadian weeknight staple."
+ },
+ {
+  "id": "tripe-and-onions",
+  "title": "Tripe and Onions",
+  "cuisine": "british",
+  "region": "Northern England",
+  "summary": "Soft tripe in creamy milk sauce with sweet onions, a classic Manchester supper."
+ },
+ {
+  "id": "chile-poblano-relleno-de-queso",
+  "title": "Chile Poblano Relleno de Queso",
+  "cuisine": "mexican",
+  "region": "Puebla",
+  "summary": "Roasted poblano peppers stuffed with melted cheese and served in a light tomato sauce."
+ },
+ {
+  "id": "labskaus",
+  "title": "Labskaus",
+  "cuisine": "central-european",
+  "region": "Hamburg",
+  "summary": "Hearty sailor's stew with corned beef, potatoes and pickled herring."
+ },
+ {
+  "id": "tunisian-chicken-with-olives-and-preserved-lemon",
+  "title": "Tunisian Chicken with Olives and Preserved Lemon",
+  "cuisine": "north-african",
+  "region": "Tunisia",
+  "summary": "Slow-braised chicken with preserved lemon and olives, Tunisian style."
+ },
+ {
+  "id": "fisk-i-persiljesas",
+  "title": "Fisk i persiljesås",
+  "cuisine": "scandinavian",
+  "region": "Sweden",
+  "summary": "White fish baked in a creamy parsley sauce, Swedish comfort food for weeknight dinner."
+ },
+ {
+  "id": "garlic-shrimp-plate-lunch",
+  "title": "Garlic Shrimp Plate Lunch",
+  "cuisine": "pacific-islands",
+  "region": "Hawaii",
+  "summary": "Buttered garlic shrimp with rice and creamy mac salad, the classic Hawaiian plate lunch."
+ },
+ {
+  "id": "gochujang-chicken-thighs",
+  "title": "Gochujang Chicken Thighs",
+  "cuisine": "korean",
+  "region": "Auckland",
+  "summary": "Sticky gochujang-braised chicken with root vegetables, ready in under 45 minutes."
+ },
+ {
+  "id": "viande-a-la-tomate",
+  "title": "Viande à la Tomate",
+  "cuisine": "west-african",
+  "region": "Senegal",
+  "summary": "Tender beef stewed with tomatoes, onions and garlic, simple weeknight comfort"
+ },
+ {
+  "id": "faikakai-taro",
+  "title": "Faikakai Taro",
+  "cuisine": "pacific-islands",
+  "region": "Samoa",
+  "summary": "Sweet taro and coconut milk pudding wrapped in banana leaf, slow-baked in the umu."
+ },
+ {
+  "id": "quenelles-de-foie",
+  "title": "Quenelles de foie",
+  "cuisine": "french",
+  "region": "Lyon",
+  "summary": "Lyonnaise liver quenelles poached in stock and served in a rich butter sauce."
+ },
+ {
+  "id": "teff-injera",
+  "title": "Teff Injera",
+  "cuisine": "east-african",
+  "region": "Ethiopia",
+  "summary": "Spongy teff flatbread, the foundation of every Ethiopian meal, made at home."
+ },
+ {
+  "id": "haydari",
+  "title": "Haydari",
+  "cuisine": "turkish",
+  "region": "Turkish",
+  "summary": "Thick cashew cream dip with fresh herbs, walnuts and olive oil."
+ },
+ {
+  "id": "galbijjim",
+  "title": "Galbijjim",
+  "cuisine": "korean",
+  "region": "Busan",
+  "summary": "Korean braised short ribs with soy, sesame and ginger—a tender, glossy showstopper."
+ },
+ {
+  "id": "pasteli",
+  "title": "Pasteli",
+  "cuisine": "greek",
+  "region": "Cyprus",
+  "summary": "Sesame and honey brittle, crisp and golden, just like yiayia used to make."
+ },
+ {
+  "id": "orecchiette-con-cime-di-rapa",
+  "title": "Orecchiette con Cime di Rapa",
+  "cuisine": "italian",
+  "region": "Southern Italy",
+  "summary": "Ear-shaped pasta with bitter greens, garlic and chilli."
+ },
+ {
+  "id": "bistek-na-isda",
+  "title": "Bistek na Isda",
+  "cuisine": "filipino",
+  "region": "Visayan",
+  "summary": "Fish steaks braised in soy and vinegar with onions, cooked the Visayan way."
+ },
+ {
+  "id": "wattleseed-and-macadamia-biscuits",
+  "title": "Wattleseed and Macadamia Biscuits",
+  "cuisine": "modern-australian",
+  "region": "Central Australia",
+  "summary": "Buttery biscuits with wattleseed and native Australian macadamias."
+ },
+ {
+  "id": "siraegi-bokkeum",
+  "title": "Siraegi Bokkeum",
+  "cuisine": "korean",
+  "region": "Korea",
+  "summary": "Stir-fried dried radish greens, tender and fragrant with sesame and ginger."
+ },
+ {
+  "id": "holubtsi",
+  "title": "Holubtsi",
+  "cuisine": "central-european",
+  "region": "Ukraine",
+  "summary": "Tender cabbage leaves rolled with ground beef and buckwheat, braised until tender and glossy."
+ },
+ {
+  "id": "kaeng-ho",
+  "title": "Kaeng Ho",
+  "cuisine": "thai",
+  "region": "Northern Thailand",
+  "summary": "Layered clay pot curry with mushrooms, noodles and vegetables in creamy coconut sauce."
+ },
+ {
+  "id": "crepes-aux-pommes-et-cidre",
+  "title": "Crêpes aux pommes et cidre",
+  "cuisine": "french",
+  "region": "Brittany",
+  "summary": "Buckwheat crêpes with spiced apple compote and cider cream."
+ },
+ {
+  "id": "tepsi-galay",
+  "title": "Tepsi Galay",
+  "cuisine": "middle-eastern",
+  "region": "Iraq",
+  "summary": "Baghdad baked vegetables and lamb casserole with potatoes and okra"
+ },
+ {
+  "id": "sambal-matah",
+  "title": "Sambal Matah",
+  "cuisine": "indonesian",
+  "region": "Bali",
+  "summary": "Raw Balinese shallot and chilli relish—essential with rice and grilled fish."
+ },
+ {
+  "id": "labaneh-with-za-atar",
+  "title": "Labaneh with Za'atar",
+  "cuisine": "middle-eastern",
+  "region": "Palestinian",
+  "summary": "Strained yogurt cheese rolled in za'atar and olive oil, served with warm bread."
+ },
+ {
+  "id": "mukimo",
+  "title": "Mukimo",
+  "cuisine": "east-african",
+  "region": "Central Kenya",
+  "summary": "Creamy mashed potatoes, peas and maize with buttery onions."
+ },
+ {
+  "id": "kyoto-style-tofu-pockets",
+  "title": "Kyoto-Style Tofu Pockets",
+  "cuisine": "japanese",
+  "region": "Kyoto",
+  "summary": "Inari sushi: sweetened tofu pouches filled with seasoned rice and market vegetables."
+ },
+ {
+  "id": "cassava-fries-with-sea-salt",
+  "title": "Cassava Fries with Sea Salt",
+  "cuisine": "pacific-islands",
+  "region": "Fiji",
+  "summary": "Crispy fried cassava sticks, golden and salty—a beloved Fijian after-school snack."
+ },
+ {
+  "id": "slow-cooker-lamb-neck-with-tomato",
+  "title": "Slow Cooker Lamb Neck with Tomato",
+  "cuisine": "modern-australian",
+  "region": "Toowoomba",
+  "summary": "Tender lamb neck braised low and slow with tomato and aromatics until it falls apart."
+ },
+ {
+  "id": "flaki",
+  "title": "Flaki",
+  "cuisine": "central-european",
+  "region": "Kraków, Poland",
+  "summary": "Beef tripe stew with paprika, marjoram and a tangy broth, cooked low and slow."
+ },
+ {
+  "id": "cullen-skink",
+  "title": "Cullen Skink",
+  "cuisine": "british",
+  "region": "Aberdeenshire",
+  "summary": "Smoked haddock, potato and onion soup with cream—a North-East classic."
+ },
+ {
+  "id": "pasta-e-lenticchie",
+  "title": "Pasta e Lenticchie",
+  "cuisine": "italian",
+  "region": "Campania",
+  "summary": "Rustic southern Italian pasta and lentil stew, thick and warming comfort food."
+ },
+ {
+  "id": "artsoppa-med-flask",
+  "title": "Ärtsoppa med fläsk",
+  "cuisine": "scandinavian",
+  "region": "Sweden",
+  "summary": "Traditional Swedish split pea soup with pork, Thursday's best-loved family dinner."
+ },
+ {
+  "id": "rotkohl-mit-apfeln",
+  "title": "Rotkohl mit Äpfeln",
+  "cuisine": "central-european",
+  "region": "Northern Germany",
+  "summary": "Red cabbage braised with apples and vinegar, bright and substantial enough to anchor a meal"
+ },
+ {
+  "id": "halwa",
+  "title": "Halwa",
+  "cuisine": "east-african",
+  "region": "Somali",
+  "summary": "Sweet semolina halwa with butter, cardamom, and nuts—a Somali dessert for sharing."
+ },
+ {
+  "id": "file-gumbo",
+  "title": "Filé Gumbo",
+  "cuisine": "american",
+  "region": "Acadiana, Louisiana",
+  "summary": "Dark roux gumbo with chicken, sausage and the holy trinity, thickened with filé powder."
+ },
+ {
+  "id": "fasolada",
+  "title": "Fasolada",
+  "cuisine": "greek",
+  "region": "Thessaloniki",
+  "summary": "White bean stew with tomatoes, onion and olive oil—soul of Greek Lenten cooking."
+ },
+ {
+  "id": "sancocho-de-pollo",
+  "title": "Sancocho de Pollo",
+  "cuisine": "latin-american",
+  "region": "Medellín, Colombia",
+  "summary": "Rustic one-pot Colombian chicken stew with yuca, plantain and potatoes."
+ },
+ {
+  "id": "ful-with-egg-and-tomato",
+  "title": "Ful with Egg and Tomato",
+  "cuisine": "north-african",
+  "region": "Egypt",
+  "summary": "Creamy fava bean puree topped with fried egg, tomato and onion."
+ },
+ {
+  "id": "songseun-jjim",
+  "title": "Songseun Jjim",
+  "cuisine": "korean",
+  "region": "Korea",
+  "summary": "Steamed pine nuts with vegetables, earthy and delicate temple food."
+ },
+ {
+  "id": "tofu-katsu",
+  "title": "Tofu Katsu",
+  "cuisine": "japanese",
+  "region": "Japanese-Hawaiian",
+  "summary": "Crispy panko-crusted tofu cutlet with tonkatsu sauce, a lighter take on the classic."
+ },
+ {
+  "id": "fattet-tammam",
+  "title": "Fattet Tammam",
+  "cuisine": "middle-eastern",
+  "region": "Lebanon",
+  "summary": "Chickpea and herb salad layered with crispy pita chips and tahini dressing."
+ },
+ {
+  "id": "escabeche",
+  "title": "Escabeche",
+  "cuisine": "filipino",
+  "region": "Visayan",
+  "summary": "Sweet and sour fried fish with pickled vegetables, vinegar-forward and meant for sharing."
+ }
+]

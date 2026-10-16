@@ -1,0 +1,1040 @@
+{
+  "kept": 592,
+  "dropped": [],
+  "issues": [
+    {
+      "id": "paneer-tikka",
+      "title": "Paneer tikka",
+      "kind": "time",
+      "detail": "needs about 130 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "beef-mince-tacos-with-frozen-veg",
+      "title": "Beef Mince Tacos with Frozen Veg",
+      "kind": "hand-fix",
+      "detail": "first-person voice",
+      "fixed": "yes"
+    },
+    {
+      "id": "laksa-ipoh",
+      "title": "Laksa Ipoh",
+      "kind": "hand-fix",
+      "detail": "first-person voice",
+      "fixed": "yes"
+    },
+    {
+      "id": "sopa-de-lentejas",
+      "title": "Sopa de Lentejas",
+      "kind": "hand-fix",
+      "detail": "persona story",
+      "fixed": "yes"
+    },
+    {
+      "id": "pho-ga",
+      "title": "Phở Gà",
+      "kind": "food-safety",
+      "detail": "chicken with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "kleicha",
+      "title": "Kleicha",
+      "kind": "fields",
+      "detail": "servings 24"
+    },
+    {
+      "id": "feijoada",
+      "title": "Feijoada",
+      "kind": "food-safety",
+      "detail": "mince or sausage with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "steamed-perch-with-ginger-and-soy",
+      "title": "Steamed Perch with Ginger and Soy",
+      "kind": "diet-tags",
+      "detail": "generator tagged it [vegetarian, vegan] but the ingredients don't support that",
+      "fixed": "tags now worked out from the ingredients"
+    },
+    {
+      "id": "ahi-poke-bowl",
+      "title": "Ahi Poke Bowl",
+      "kind": "food-safety",
+      "detail": "raw or citrus-cured fish",
+      "fixed": "added a raw-fish note"
+    },
+    {
+      "id": "beef-stew-with-dumplings",
+      "title": "Beef Stew with Dumplings",
+      "kind": "time",
+      "detail": "steps add up to about 854 min of cooking but the recipe says 500 min in all (may count alternatives)"
+    },
+    {
+      "id": "masala-dosa",
+      "title": "Masala Dosa",
+      "kind": "time",
+      "detail": "says 35 min in all but the steps only account for about 6 min"
+    },
+    {
+      "id": "sugo-di-calabria",
+      "title": "Sugo di Calabria",
+      "kind": "food-safety",
+      "detail": "fresh pork with no doneness cue",
+      "fixed": "added a 70°C note"
+    },
+    {
+      "id": "mercimek-corbas",
+      "title": "Mercimek Çorbası",
+      "kind": "food-safety",
+      "detail": "chicken with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "ilish-macher-jhol",
+      "title": "Ilish Macher Jhol",
+      "kind": "diet-tags",
+      "detail": "generator tagged it [vegetarian, vegan] but the ingredients don't support that",
+      "fixed": "tags now worked out from the ingredients"
+    },
+    {
+      "id": "kinilaw-na-tuna",
+      "title": "Kinilaw na Tuna",
+      "kind": "food-safety",
+      "detail": "raw or citrus-cured fish",
+      "fixed": "added a raw-fish note"
+    },
+    {
+      "id": "quenelles-de-brochet",
+      "title": "Quenelles de brochet",
+      "kind": "hand-fix",
+      "detail": "\"fish stock or chicken stock\" was read as chicken stock",
+      "fixed": "yes"
+    },
+    {
+      "id": "bacalao-a-la-vizcaina",
+      "title": "Bacalao a la Vizcaína",
+      "kind": "time",
+      "detail": "needs about 1930 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "bacalao-a-la-vizcaina",
+      "title": "Bacalao a la Vizcaína",
+      "kind": "diet-tags",
+      "detail": "generator tagged it [vegetarian, vegan] but the ingredients don't support that",
+      "fixed": "tags now worked out from the ingredients"
+    },
+    {
+      "id": "kol-borek",
+      "title": "Kol Börek",
+      "kind": "food-safety",
+      "detail": "mince or sausage with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "pantry-chicken-and-lentil-soup",
+      "title": "Pantry Chicken and Lentil Soup",
+      "kind": "food-safety",
+      "detail": "chicken with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "musakhan",
+      "title": "Musakhan",
+      "kind": "food-safety",
+      "detail": "short time for chicken: \"Return the cooked chicken to the pan with the caramelised onions, stir to combine, and warm through for 2 minutes. Taste and adjust the seas\""
+    },
+    {
+      "id": "braised-pork-rice",
+      "title": "Braised Pork Rice",
+      "kind": "food-safety",
+      "detail": "short time for pork: \"Blanch the pork belly cubes in boiling water for 5 minutes, then drain and rinse under cold water until the water runs clear. This removes i\""
+    },
+    {
+      "id": "chicken-and-mushroom-pie",
+      "title": "Chicken and Mushroom Pie",
+      "kind": "food-safety",
+      "detail": "chicken with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "light-soup",
+      "title": "Nkatenkwan (Groundnut Soup)",
+      "kind": "hand-fix",
+      "detail": "persona story",
+      "fixed": "yes"
+    },
+    {
+      "id": "dhokla",
+      "title": "Dhokla",
+      "kind": "time",
+      "detail": "needs about 720 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "galette-de-ble-noir-aux-moules",
+      "title": "Galette de blé noir aux moules",
+      "kind": "allergen",
+      "detail": "\"100 g buckwheat flour\" mentions gluten (flour) but matched buckwheat, which isn't tagged gluten"
+    },
+    {
+      "id": "esqueixada",
+      "title": "Esqueixada",
+      "kind": "diet-tags",
+      "detail": "generator tagged it [vegetarian, vegan] but the ingredients don't support that",
+      "fixed": "tags now worked out from the ingredients"
+    },
+    {
+      "id": "zurek",
+      "title": "Żurek",
+      "kind": "food-safety",
+      "detail": "mince or sausage with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "lamb-souvla",
+      "title": "Lamb Souvla",
+      "kind": "time",
+      "detail": "needs about 122 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "gravad-lax-med-senapssas",
+      "title": "Gravad lax med senapssås",
+      "kind": "amounts",
+      "detail": "a lot of salt: \"50 g sea salt\""
+    },
+    {
+      "id": "gravad-lax-med-senapssas",
+      "title": "Gravad lax med senapssås",
+      "kind": "food-safety",
+      "detail": "raw or citrus-cured fish",
+      "fixed": "added a raw-fish note"
+    },
+    {
+      "id": "kunefe",
+      "title": "Künefe",
+      "kind": "diet-tags",
+      "detail": "generator tagged it [no-gluten] but the ingredients don't support that",
+      "fixed": "tags now worked out from the ingredients"
+    },
+    {
+      "id": "penang-assam-laksa",
+      "title": "Penang Assam Laksa",
+      "kind": "hand-fix",
+      "detail": "\"fish stock or chicken stock\" was read as chicken stock",
+      "fixed": "yes"
+    },
+    {
+      "id": "crawfish-etouffee",
+      "title": "Crawfish Étouffée",
+      "kind": "food-safety",
+      "detail": "chicken with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "carne-asada",
+      "title": "Carne Asada",
+      "kind": "time",
+      "detail": "needs about 275 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "ceviche-de-corvina",
+      "title": "Ceviche de Corvina",
+      "kind": "food-safety",
+      "detail": "raw or citrus-cured fish",
+      "fixed": "added a raw-fish note"
+    },
+    {
+      "id": "mole-negro-oaxaqueno",
+      "title": "Mole Negro Oaxaqueño",
+      "kind": "food-safety",
+      "detail": "chicken with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "rugbr-d-med-leverpostej-og-agurkesalat",
+      "title": "Rugbrød med leverpostej og agurkesalat",
+      "kind": "food-safety",
+      "detail": "chicken with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "rugbr-d-med-leverpostej-og-agurkesalat",
+      "title": "Rugbrød med leverpostej og agurkesalat",
+      "kind": "food-safety",
+      "detail": "fresh pork with no doneness cue",
+      "fixed": "added a 70°C note"
+    },
+    {
+      "id": "sigara-borek",
+      "title": "Sigara Börek",
+      "kind": "time",
+      "detail": "says 40 min in all but the steps only account for about 4 min"
+    },
+    {
+      "id": "oka",
+      "title": "Oka",
+      "kind": "food-safety",
+      "detail": "raw or citrus-cured fish",
+      "fixed": "added a raw-fish note"
+    },
+    {
+      "id": "mi-quang",
+      "title": "Mì Quang",
+      "kind": "hand-fix",
+      "detail": "\"fresh turmeric noodles\" matched ground turmeric; they're rice noodles",
+      "fixed": "yes"
+    },
+    {
+      "id": "mi-quang",
+      "title": "Mì Quang",
+      "kind": "food-safety",
+      "detail": "short time for pork: \"Heat 1 tbsp oil in a large pot over high heat. Add the pork in a single layer and cook without stirring for 2 minutes until light golden, th\""
+    },
+    {
+      "id": "risotto-ai-funghi-porcini",
+      "title": "Risotto ai Funghi Porcini",
+      "kind": "food-safety",
+      "detail": "chicken with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "bun-cha-ha-noi",
+      "title": "Bún Chả Hà Nội",
+      "kind": "time",
+      "detail": "says 35 min in all but the steps only account for about 4 min"
+    },
+    {
+      "id": "lahori-biryani",
+      "title": "Lahori Biryani",
+      "kind": "time",
+      "detail": "needs about 283 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "couscous-aux-sept-legumes",
+      "title": "Couscous aux Sept Légumes",
+      "kind": "hand-fix",
+      "detail": "\"400 ml boiling broth (from the pot)\" is ladled from the stew, not bought: removed from the ingredient list (the step still says it)",
+      "fixed": "yes"
+    },
+    {
+      "id": "falafel",
+      "title": "Falafel",
+      "kind": "time",
+      "detail": "needs about 120 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "tlayudas-de-chapulines",
+      "title": "Tlayudas de Chapulines",
+      "kind": "time",
+      "detail": "says 35 min in all but the steps only account for about 8 min"
+    },
+    {
+      "id": "miyeok-guk",
+      "title": "Miyeok Guk",
+      "kind": "hand-fix",
+      "detail": "first-person voice",
+      "fixed": "yes"
+    },
+    {
+      "id": "milanesa-de-ternera",
+      "title": "Milanesa de Ternera",
+      "kind": "hand-fix",
+      "detail": "first-person voice",
+      "fixed": "yes"
+    },
+    {
+      "id": "pork-and-chive-dumplings",
+      "title": "Pork and Chive Dumplings",
+      "kind": "food-safety",
+      "detail": "mince or sausage with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "dan-dan-noodles",
+      "title": "Dan Dan Noodles",
+      "kind": "food-safety",
+      "detail": "mince or sausage with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "gazpacho-andaluz",
+      "title": "Gazpacho Andaluz",
+      "kind": "time",
+      "detail": "needs about 120 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "paua-fritters",
+      "title": "Pāua Fritters",
+      "kind": "time",
+      "detail": "says 35 min in all but the steps only account for about 2 min"
+    },
+    {
+      "id": "causa-limena",
+      "title": "Causa Limeña",
+      "kind": "time",
+      "detail": "needs about 120 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "bun-rieu",
+      "title": "Bún Riêu",
+      "kind": "food-safety",
+      "detail": "chicken with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "ayam-goreng-yogyakarta",
+      "title": "Ayam Goreng Yogyakarta",
+      "kind": "time",
+      "detail": "needs about 260 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "fatteh-hummus",
+      "title": "Fatteh Hummus",
+      "kind": "allergen",
+      "detail": "\"200 g unsweetened soy yoghurt (or other plant-based yoghurt)\" mentions dairy (yoghurt) but matched soy-yoghurt, which isn't tagged dairy"
+    },
+    {
+      "id": "tonga-pumpkin-coconut",
+      "title": "Tonga Pumpkin & Coconut",
+      "kind": "food-safety",
+      "detail": "chicken with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "tarhana-corbas",
+      "title": "Tarhana Çorbası",
+      "kind": "food-safety",
+      "detail": "chicken with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "pierogi-ruskie",
+      "title": "Pierogi Ruskie",
+      "kind": "hand-fix",
+      "detail": "persona story",
+      "fixed": "yes"
+    },
+    {
+      "id": "arancini-di-ragu",
+      "title": "Arancini di Ragù",
+      "kind": "time",
+      "detail": "needs about 770 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "arancini-di-ragu",
+      "title": "Arancini di Ragù",
+      "kind": "food-safety",
+      "detail": "mince or sausage with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "curry-rice-with-sambals",
+      "title": "Curry Rice with Sambals",
+      "kind": "food-safety",
+      "detail": "mince or sausage with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "tarte-a-la-praline",
+      "title": "Tarte à la praline",
+      "kind": "time",
+      "detail": "needs about 275 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "marmitako",
+      "title": "Marmitako",
+      "kind": "hand-fix",
+      "detail": "\"fish stock or chicken stock\" was read as chicken stock",
+      "fixed": "yes"
+    },
+    {
+      "id": "waakye",
+      "title": "Waakye",
+      "kind": "time",
+      "detail": "needs about 120 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "japanese-curry-rice",
+      "title": "Japanese Curry Rice",
+      "kind": "diet-tags",
+      "detail": "generator tagged it [no-dairy] but the ingredients don't support that",
+      "fixed": "tags now worked out from the ingredients"
+    },
+    {
+      "id": "tortellini-in-brodo",
+      "title": "Tortellini in Brodo",
+      "kind": "hand-fix",
+      "detail": "persona story",
+      "fixed": "yes"
+    },
+    {
+      "id": "tortellini-in-brodo",
+      "title": "Tortellini in Brodo",
+      "kind": "time",
+      "detail": "needs about 315 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "tortellini-in-brodo",
+      "title": "Tortellini in Brodo",
+      "kind": "food-safety",
+      "detail": "chicken with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "canh-chua-ca",
+      "title": "Canh Chua Cá",
+      "kind": "hand-fix",
+      "detail": "persona story",
+      "fixed": "yes"
+    },
+    {
+      "id": "croquetas-de-jamon",
+      "title": "Croquetas de Jamón",
+      "kind": "time",
+      "detail": "needs about 120 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "enchiladas-verdes",
+      "title": "Enchiladas Verdes",
+      "kind": "food-safety",
+      "detail": "chicken with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "tom-yum-pla",
+      "title": "Tom Yum Pla",
+      "kind": "diet-tags",
+      "detail": "generator tagged it [pescatarian] but the ingredients don't support that",
+      "fixed": "tags now worked out from the ingredients"
+    },
+    {
+      "id": "lawar",
+      "title": "Lawar",
+      "kind": "food-safety",
+      "detail": "chicken with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "gai-yang",
+      "title": "Gai Yang",
+      "kind": "time",
+      "detail": "needs about 125 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "bandeja-paisa",
+      "title": "Bandeja Paisa",
+      "kind": "food-safety",
+      "detail": "mince or sausage with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "salsa-de-pasilla-oaxaquena",
+      "title": "Salsa de Pasilla Oaxaqueña",
+      "kind": "hand-fix",
+      "detail": "persona story",
+      "fixed": "yes"
+    },
+    {
+      "id": "frijoles-negros-refritos",
+      "title": "Frijoles Negros Refritos",
+      "kind": "time",
+      "detail": "says 130 min in all but the steps only account for about 16 min"
+    },
+    {
+      "id": "popiah",
+      "title": "Popiah",
+      "kind": "food-safety",
+      "detail": "short time for pork: \"Add the pork mince and fry, breaking it up as it cooks, for 2 minutes until cooked through.\""
+    },
+    {
+      "id": "flour-tortillas",
+      "title": "Flour Tortillas",
+      "kind": "food-safety",
+      "detail": "fresh pork with no doneness cue",
+      "fixed": "added a 70°C note"
+    },
+    {
+      "id": "banh-hoi-nuong",
+      "title": "Bánh Hỏi Nướng",
+      "kind": "food-safety",
+      "detail": "short time for pork: \"On the same grill or a separate pan at medium-high heat, grill the pork belly slices for 2–3 minutes per side until the fat has rendered and\""
+    },
+    {
+      "id": "appam-with-stew",
+      "title": "Appam with Stew",
+      "kind": "time",
+      "detail": "needs about 525 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "jerk-chicken",
+      "title": "Jerk Chicken",
+      "kind": "time",
+      "detail": "needs about 395 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "bobotie",
+      "title": "Bobotie",
+      "kind": "food-safety",
+      "detail": "mince or sausage with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "ojja",
+      "title": "Ojja",
+      "kind": "food-safety",
+      "detail": "mince or sausage with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "dakjim",
+      "title": "Dakjim",
+      "kind": "hand-fix",
+      "detail": "names a fictional cook",
+      "fixed": "yes"
+    },
+    {
+      "id": "andouillette-a-la-moutarde",
+      "title": "Andouillette à la moutarde",
+      "kind": "diet-tags",
+      "detail": "generator tagged it [no-gluten] but the ingredients don't support that",
+      "fixed": "tags now worked out from the ingredients"
+    },
+    {
+      "id": "andouillette-a-la-moutarde",
+      "title": "Andouillette à la moutarde",
+      "kind": "food-safety",
+      "detail": "chicken with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "pappardelle-al-ragu-di-maiale",
+      "title": "Pappardelle al Ragù di Maiale",
+      "kind": "food-safety",
+      "detail": "fresh pork with no doneness cue",
+      "fixed": "added a 70°C note"
+    },
+    {
+      "id": "dolma-garaz",
+      "title": "Dolma Garaz",
+      "kind": "food-safety",
+      "detail": "mince or sausage with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "moi-moi",
+      "title": "Moi Moi",
+      "kind": "food-safety",
+      "detail": "raw or lightly cooked egg",
+      "fixed": "added a raw-egg note"
+    },
+    {
+      "id": "egg-white-soup-with-crab",
+      "title": "Egg White Soup with Crab",
+      "kind": "time",
+      "detail": "says 35 min in all but the steps only account for about 5 min"
+    },
+    {
+      "id": "egg-white-soup-with-crab",
+      "title": "Egg White Soup with Crab",
+      "kind": "food-safety",
+      "detail": "chicken with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "tacos-al-pastor",
+      "title": "Tacos al Pastor",
+      "kind": "time",
+      "detail": "needs about 124 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "torshi",
+      "title": "Torshi",
+      "kind": "time",
+      "detail": "needs about 62 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "kina-with-rewena",
+      "title": "Kina with Rēwena",
+      "kind": "diet-tags",
+      "detail": "generator tagged it [no-gluten] but the ingredients don't support that",
+      "fixed": "tags now worked out from the ingredients"
+    },
+    {
+      "id": "nabak-kimchi",
+      "title": "Nabak Kimchi",
+      "kind": "time",
+      "detail": "needs about 120 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "sambusa",
+      "title": "Sambusa",
+      "kind": "diet-tags",
+      "detail": "generator tagged it [no-dairy] but the ingredients don't support that",
+      "fixed": "tags now worked out from the ingredients"
+    },
+    {
+      "id": "okra-curry-rice",
+      "title": "Okra Curry Rice",
+      "kind": "diet-tags",
+      "detail": "generator tagged it [no-dairy] but the ingredients don't support that",
+      "fixed": "tags now worked out from the ingredients"
+    },
+    {
+      "id": "oyster-omelette",
+      "title": "Oyster Omelette",
+      "kind": "hand-fix",
+      "detail": "\"oyster omelette sauce\" isn't something you buy: listed as its two ingredients",
+      "fixed": "yes"
+    },
+    {
+      "id": "oyster-omelette",
+      "title": "Oyster Omelette",
+      "kind": "food-safety",
+      "detail": "raw or lightly cooked egg",
+      "fixed": "added a raw-egg note"
+    },
+    {
+      "id": "shiro",
+      "title": "Shiro",
+      "kind": "hand-fix",
+      "detail": "persona story",
+      "fixed": "yes"
+    },
+    {
+      "id": "tinolang-isda",
+      "title": "Tinolang Isda",
+      "kind": "hand-fix",
+      "detail": "\"fish stock or chicken stock\" was read as chicken stock",
+      "fixed": "yes"
+    },
+    {
+      "id": "maklouba",
+      "title": "Maklouba",
+      "kind": "hand-fix",
+      "detail": "first-person voice",
+      "fixed": "yes"
+    },
+    {
+      "id": "lugaw",
+      "title": "Lugaw",
+      "kind": "food-safety",
+      "detail": "chicken with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "karaage",
+      "title": "Karaage",
+      "kind": "time",
+      "detail": "needs about 120 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "aish-baladi-with-cheese-and-olives",
+      "title": "Aish Baladi with Cheese and Olives",
+      "kind": "time",
+      "detail": "needs about 75 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "mulligatawny",
+      "title": "Mulligatawny",
+      "kind": "food-safety",
+      "detail": "chicken with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "steamed-chicken-with-chinese-mushrooms",
+      "title": "Steamed Chicken with Chinese Mushrooms",
+      "kind": "allergen",
+      "detail": "\"50 g dried oyster mushroom\" mentions shellfish (oyster) but matched mixed-mushrooms, which isn't tagged shellfish"
+    },
+    {
+      "id": "churrasco-misto",
+      "title": "Churrasco Misto",
+      "kind": "hand-fix",
+      "detail": "persona story",
+      "fixed": "yes"
+    },
+    {
+      "id": "piquillo-peppers-stuffed-with-bacalao",
+      "title": "Piquillo Peppers Stuffed with Bacalao",
+      "kind": "time",
+      "detail": "needs about 2895 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "piquillo-peppers-stuffed-with-bacalao",
+      "title": "Piquillo Peppers Stuffed with Bacalao",
+      "kind": "diet-tags",
+      "detail": "generator tagged it [vegetarian, vegan] but the ingredients don't support that",
+      "fixed": "tags now worked out from the ingredients"
+    },
+    {
+      "id": "sate-babi",
+      "title": "Sate Babi",
+      "kind": "time",
+      "detail": "needs about 1485 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "banh-mi-thit-nuong",
+      "title": "Bánh Mì Thịt Nướng",
+      "kind": "time",
+      "detail": "needs about 135 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "banh-mi-thit-nuong",
+      "title": "Bánh Mì Thịt Nướng",
+      "kind": "food-safety",
+      "detail": "fresh pork with no doneness cue",
+      "fixed": "added a 70°C note"
+    },
+    {
+      "id": "cheat-s-bolognese",
+      "title": "Cheat's Bolognese",
+      "kind": "food-safety",
+      "detail": "mince or sausage with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "makroudh",
+      "title": "Makroudh",
+      "kind": "time",
+      "detail": "says 50 min in all but the steps only account for about 9 min"
+    },
+    {
+      "id": "bush-tomato-lamb-stew",
+      "title": "Bush Tomato Lamb Stew",
+      "kind": "time",
+      "detail": "says 165 min in all but the steps only account for about 10 min"
+    },
+    {
+      "id": "matzo-ball-soup",
+      "title": "Matzo Ball Soup",
+      "kind": "food-safety",
+      "detail": "chicken with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "granita-di-mandorla",
+      "title": "Granita di Mandorla",
+      "kind": "time",
+      "detail": "needs about 210 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "dolma",
+      "title": "Dolma",
+      "kind": "food-safety",
+      "detail": "mince or sausage with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "banga-soup",
+      "title": "Banga Soup",
+      "kind": "allergen",
+      "detail": "\"1 kg fresh palm nuts, husked and cleaned\" mentions nuts (nuts) but matched palm-nuts, which isn't tagged nuts"
+    },
+    {
+      "id": "perlou",
+      "title": "Perlou",
+      "kind": "food-safety",
+      "detail": "mince or sausage with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "huevos-rancheros",
+      "title": "Huevos Rancheros",
+      "kind": "voice",
+      "detail": "first-person or family story: \"Fried eggs on crispy tortilla with black beans and salsa roja, the way my mother makes it.\""
+    },
+    {
+      "id": "gat-kimchi",
+      "title": "Gat Kimchi",
+      "kind": "amounts",
+      "detail": "a lot of salt: \"3 tbsp salt, divided\""
+    },
+    {
+      "id": "gatsby",
+      "title": "Gatsby",
+      "kind": "food-safety",
+      "detail": "mince or sausage with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "cendol",
+      "title": "Cendol",
+      "kind": "time",
+      "detail": "says 35 min in all but the steps only account for about 6 min"
+    },
+    {
+      "id": "com-tam-suon-nuong",
+      "title": "Cơm Tấm Sườn Nướng",
+      "kind": "time",
+      "detail": "needs about 140 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "pastitsio",
+      "title": "Pastitsio",
+      "kind": "food-safety",
+      "detail": "mince or sausage with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "kanji-vada",
+      "title": "Kanji Vada",
+      "kind": "time",
+      "detail": "needs about 240 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "abgoosht",
+      "title": "Abgoosht",
+      "kind": "hand-fix",
+      "detail": "persona story",
+      "fixed": "yes"
+    },
+    {
+      "id": "rad-na-gai",
+      "title": "Rad Na Gai",
+      "kind": "food-safety",
+      "detail": "chicken with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "wattleseed-shortbread",
+      "title": "Wattleseed Shortbread",
+      "kind": "allergen",
+      "detail": "\"50 g wattleseed flour\" mentions gluten (flour) but matched wattleseed, which isn't tagged gluten"
+    },
+    {
+      "id": "lentil-and-rice-soup",
+      "title": "Lentil and Rice Soup",
+      "kind": "diet-tags",
+      "detail": "generator tagged it [vegetarian, vegan] but the ingredients don't support that",
+      "fixed": "tags now worked out from the ingredients"
+    },
+    {
+      "id": "lentil-and-rice-soup",
+      "title": "Lentil and Rice Soup",
+      "kind": "food-safety",
+      "detail": "chicken with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "mee-rebus",
+      "title": "Mee Rebus",
+      "kind": "food-safety",
+      "detail": "chicken with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "camp-oven-rabbit-stew",
+      "title": "Camp Oven Rabbit Stew",
+      "kind": "time",
+      "detail": "steps add up to about 305 min of cooking but the recipe says 170 min in all (may count alternatives)"
+    },
+    {
+      "id": "chicken-inasal",
+      "title": "Chicken Inasal",
+      "kind": "time",
+      "detail": "needs about 124 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "frijoles-refritos",
+      "title": "Frijoles Refritos",
+      "kind": "food-safety",
+      "detail": "fresh pork with no doneness cue",
+      "fixed": "added a 70°C note"
+    },
+    {
+      "id": "baklava",
+      "title": "Baklava",
+      "kind": "time",
+      "detail": "needs about 130 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "quenelles-de-foie",
+      "title": "Quenelles de foie",
+      "kind": "food-safety",
+      "detail": "chicken with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "teff-injera",
+      "title": "Teff Injera",
+      "kind": "time",
+      "detail": "says 40 min in all but the steps only account for about 2 min"
+    },
+    {
+      "id": "pasteli",
+      "title": "Pasteli",
+      "kind": "time",
+      "detail": "needs about 120 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "honey-soy-chicken-stir-fry",
+      "title": "Honey Soy Chicken Stir-Fry",
+      "kind": "food-safety",
+      "detail": "short time for chicken: \"Pour in the stir-fry sauce and honey, stirring to combine. Return the chicken to the pan and toss everything together until well coated and \""
+    },
+    {
+      "id": "holubtsi",
+      "title": "Holubtsi",
+      "kind": "food-safety",
+      "detail": "mince or sausage with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "crepes-aux-pommes-et-cidre",
+      "title": "Crêpes aux pommes et cidre",
+      "kind": "allergen",
+      "detail": "\"100 g buckwheat flour\" mentions gluten (flour) but matched buckwheat, which isn't tagged gluten"
+    },
+    {
+      "id": "labaneh-with-za-atar",
+      "title": "Labaneh with Za'atar",
+      "kind": "time",
+      "detail": "needs about 780 min of marinating, soaking or chilling not counted in the time"
+    },
+    {
+      "id": "slow-cooker-lamb-neck-with-tomato",
+      "title": "Slow Cooker Lamb Neck with Tomato",
+      "kind": "time",
+      "detail": "steps add up to about 782 min of cooking but the recipe says 495 min in all (may count alternatives)"
+    },
+    {
+      "id": "flaki",
+      "title": "Flaki",
+      "kind": "hand-fix",
+      "detail": "first-person voice",
+      "fixed": "yes"
+    },
+    {
+      "id": "cullen-skink",
+      "title": "Cullen Skink",
+      "kind": "hand-fix",
+      "detail": "first-person voice",
+      "fixed": "yes"
+    },
+    {
+      "id": "bacalao-al-pil-pil",
+      "title": "Bacalao al Pil-Pil",
+      "kind": "diet-tags",
+      "detail": "generator tagged it [vegetarian, vegan] but the ingredients don't support that",
+      "fixed": "tags now worked out from the ingredients"
+    },
+    {
+      "id": "kaldolmere",
+      "title": "Kåldolmere",
+      "kind": "food-safety",
+      "detail": "mince or sausage with no doneness cue",
+      "fixed": "added a 75°C note"
+    },
+    {
+      "id": "sancocho-de-pollo",
+      "title": "Sancocho de Pollo",
+      "kind": "amounts",
+      "detail": "\"10 cups chicken stock\" looks large for 6 serving(s)"
+    },
+    {
+      "id": "escabeche",
+      "title": "Escabeche",
+      "kind": "time",
+      "detail": "needs about 120 min of marinating, soaking or chilling not counted in the time"
+    }
+  ]
+}

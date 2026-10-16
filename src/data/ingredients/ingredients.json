@@ -528,7 +528,8 @@
       "steamed greens",
       "asian greens",
       "mixed greens",
-      "greens or"
+      "greens or",
+      "leafy greens"
     ],
     "groups": []
   },
@@ -562,7 +563,9 @@
     "aisle": "fruit-veg",
     "aliases": [
       "cavolo nero",
-      "collard green"
+      "collard green",
+      "sukuma wiki",
+      "collard greens"
     ],
     "groups": []
   },
@@ -688,7 +691,8 @@
     "aliases": [
       "roasted vegetables",
       "roast vegetables",
-      "mixed veg"
+      "mixed veg",
+      "mixed root vegetables"
     ],
     "groups": []
   },
@@ -756,7 +760,10 @@
     "id": "plantain",
     "name": "plantain",
     "aisle": "fruit-veg",
-    "aliases": [],
+    "aliases": [
+      "green banana",
+      "green fig"
+    ],
     "groups": []
   },
   {
@@ -1881,7 +1888,9 @@
     "aisle": "seafood",
     "aliases": [
       "vongole",
-      "pipi"
+      "pipi",
+      "cockles",
+      "cockle"
     ],
     "groups": [
       "shellfish"
@@ -2013,7 +2022,9 @@
       "fresh tuna",
       "yellowfin tuna",
       "ahi tuna",
-      "sashimi-grade tuna or salmon"
+      "sashimi-grade tuna or salmon",
+      "sashimi-grade ahi",
+      "ahi"
     ],
     "groups": [
       "fish"
@@ -2034,7 +2045,10 @@
       "flathead",
       "hake",
       "basa",
-      "blue-eye"
+      "blue-eye",
+      "catfish",
+      "sashimi-grade fish",
+      "fish fillets"
     ],
     "groups": [
       "fish"
@@ -2257,7 +2271,8 @@
     ],
     "groups": [
       "dairy",
-      "tree-nuts"
+      "tree-nuts",
+      "non-vegetarian"
     ]
   },
   {
@@ -2652,7 +2667,8 @@
     ],
     "groups": [
       "dairy",
-      "animal-product"
+      "animal-product",
+      "non-vegetarian"
     ]
   },
   {
@@ -2689,7 +2705,8 @@
     ],
     "groups": [
       "dairy",
-      "animal-product"
+      "animal-product",
+      "non-vegetarian"
     ]
   },
   {
@@ -2768,7 +2785,27 @@
     ],
     "groups": [
       "dairy",
-      "animal-product"
+      "animal-product",
+      "non-vegetarian"
+    ]
+  },
+  {
+    "id": "vegetarian-hard-cheese",
+    "name": "vegetarian hard cheese",
+    "plural": "vegetarian hard cheese",
+    "aisle": "dairy-eggs",
+    "aliases": [
+      "vegetarian parmesan",
+      "vegetarian parmesan-style cheese",
+      "parmesan-style cheese",
+      "vegetarian pecorino",
+      "vegetarian italian hard cheese",
+      "vegetarian grana",
+      "vegetarian-rennet parmesan",
+      "vegetarian rennet parmesan"
+    ],
+    "groups": [
+      "dairy"
     ]
   },
   {
@@ -2781,7 +2818,8 @@
     ],
     "groups": [
       "dairy",
-      "animal-product"
+      "animal-product",
+      "non-vegetarian"
     ]
   },
   {
@@ -3306,7 +3344,10 @@
       "pasta shell",
       "jumbo pasta shell",
       "conchiglioni",
-      "ditalini"
+      "ditalini",
+      "short thin noodles",
+      "fideua",
+      "fideuà"
     ],
     "groups": [
       "gluten"
@@ -3348,7 +3389,8 @@
       "masarepa",
       "pre-cooked white cornmeal",
       "grits",
-      "buttered polenta"
+      "buttered polenta",
+      "maize meal"
     ],
     "groups": []
   },
@@ -3764,7 +3806,8 @@
       "cornichon",
       "pickle slice",
       "pickle brine",
-      "bread and butter pickle"
+      "bread and butter pickle",
+      "pickled vegetables"
     ],
     "groups": []
   },
@@ -5258,7 +5301,8 @@
       "salt and black pepper",
       "sea salt and black pepper",
       "salt for",
-      "salt to taste"
+      "salt to taste",
+      "fleur de sel"
     ],
     "groups": [],
     "staple": true
@@ -5565,7 +5609,8 @@
       "powdered gelatine"
     ],
     "groups": [
-      "animal-product"
+      "animal-product",
+      "non-vegetarian"
     ]
   },
   {
@@ -6092,7 +6137,8 @@
       "odeng",
       "fish ball",
       "narutomaki",
-      "kamaboko"
+      "kamaboko",
+      "chikuwa"
     ],
     "groups": [
       "fish",
@@ -6660,7 +6706,10 @@
     "aliases": [
       "fried tofu puff",
       "fried tofu",
-      "tau pok"
+      "tau pok",
+      "abura-age",
+      "abura age",
+      "aburaage"
     ],
     "groups": [
       "soy"
@@ -7273,5 +7322,1357 @@
       "cocktail stick"
     ],
     "groups": []
+  },
+  {
+    "id": "whole-fish",
+    "name": "whole fish",
+    "plural": "whole fish",
+    "aisle": "seafood",
+    "aliases": [
+      "whole perch",
+      "whole grouper",
+      "whole snoek",
+      "whole sole",
+      "whole milkfish",
+      "whole trout",
+      "whole snapper",
+      "whole barramundi",
+      "trout"
+    ],
+    "groups": [
+      "fish"
+    ]
+  },
+  {
+    "id": "mackerel",
+    "name": "mackerel",
+    "aisle": "seafood",
+    "aliases": [
+      "fresh mackerel",
+      "whole mackerel",
+      "mackerel fillet"
+    ],
+    "groups": [
+      "fish"
+    ]
+  },
+  {
+    "id": "smoked-mackerel",
+    "name": "smoked mackerel",
+    "aisle": "deli",
+    "aliases": [
+      "smoked mackerel fillet"
+    ],
+    "groups": [
+      "fish"
+    ]
+  },
+  {
+    "id": "sardines",
+    "name": "sardine",
+    "plural": "sardines",
+    "aisle": "seafood",
+    "aliases": [
+      "fresh sardine",
+      "fresh sardines"
+    ],
+    "groups": [
+      "fish"
+    ]
+  },
+  {
+    "id": "hilsa",
+    "name": "hilsa",
+    "aisle": "seafood",
+    "aliases": [
+      "hilsa fillet",
+      "hilsa fillets",
+      "whole hilsa fish",
+      "ilish"
+    ],
+    "groups": [
+      "fish"
+    ]
+  },
+  {
+    "id": "salt-fish",
+    "name": "salt fish",
+    "aisle": "seafood",
+    "aliases": [
+      "saltfish",
+      "salt cod",
+      "stockfish",
+      "whole stockfish",
+      "bacalao",
+      "bacalhau"
+    ],
+    "groups": [
+      "fish"
+    ]
+  },
+  {
+    "id": "ikan-bilis",
+    "name": "ikan bilis",
+    "plural": "ikan bilis",
+    "aisle": "asian-international",
+    "aliases": [
+      "dried ikan bilis",
+      "dried fish",
+      "dried anchovies",
+      "dried anchovy"
+    ],
+    "groups": [
+      "fish"
+    ]
+  },
+  {
+    "id": "pickled-herring",
+    "name": "pickled herring",
+    "plural": "pickled herring",
+    "aisle": "deli",
+    "aliases": [
+      "pickled herring in brine",
+      "pickled herring brine",
+      "herring"
+    ],
+    "groups": [
+      "fish"
+    ]
+  },
+  {
+    "id": "smoked-haddock",
+    "name": "smoked haddock",
+    "plural": "smoked haddock",
+    "aisle": "seafood",
+    "aliases": [
+      "smoked haddock fillet"
+    ],
+    "groups": [
+      "fish"
+    ]
+  },
+  {
+    "id": "mentaiko",
+    "name": "mentaiko",
+    "plural": "mentaiko",
+    "aisle": "asian-international",
+    "aliases": [
+      "spicy cod roe",
+      "cod roe",
+      "tarako"
+    ],
+    "groups": [
+      "fish",
+      "chilli"
+    ]
+  },
+  {
+    "id": "oyster",
+    "name": "oyster",
+    "aisle": "seafood",
+    "aliases": [
+      "fresh oyster",
+      "fresh oysters",
+      "oysters"
+    ],
+    "groups": [
+      "shellfish"
+    ]
+  },
+  {
+    "id": "paua",
+    "name": "pāua",
+    "plural": "pāua",
+    "aisle": "seafood",
+    "aliases": [
+      "paua",
+      "abalone"
+    ],
+    "groups": [
+      "shellfish"
+    ]
+  },
+  {
+    "id": "kina",
+    "name": "kina",
+    "plural": "kina",
+    "aisle": "seafood",
+    "aliases": [
+      "fresh kina",
+      "sea urchin",
+      "sea urchin roe"
+    ],
+    "groups": [
+      "shellfish"
+    ]
+  },
+  {
+    "id": "crayfish-tails",
+    "name": "crawfish tail meat",
+    "plural": "crawfish tail meat",
+    "aisle": "seafood",
+    "aliases": [
+      "crawfish",
+      "crawfish tail",
+      "crayfish tail"
+    ],
+    "groups": [
+      "shellfish"
+    ]
+  },
+  {
+    "id": "goat",
+    "name": "goat meat",
+    "plural": "goat meat",
+    "aisle": "meat",
+    "aliases": [
+      "goat shoulder",
+      "goat leg",
+      "goat curry meat",
+      "diced goat"
+    ],
+    "groups": [
+      "meat"
+    ]
+  },
+  {
+    "id": "lamb-neck",
+    "name": "lamb neck",
+    "plural": "lamb neck",
+    "aisle": "meat",
+    "aliases": [
+      "lamb neck chops"
+    ],
+    "groups": [
+      "meat",
+      "lamb"
+    ]
+  },
+  {
+    "id": "rabbit",
+    "name": "rabbit",
+    "aisle": "meat",
+    "aliases": [
+      "rabbit pieces",
+      "whole rabbit"
+    ],
+    "groups": [
+      "meat"
+    ]
+  },
+  {
+    "id": "pork-bones",
+    "name": "pork bones",
+    "plural": "pork bones",
+    "aisle": "meat",
+    "aliases": [
+      "pork bone",
+      "pork knuckle",
+      "pork knuckle or pork bone",
+      "pork hock"
+    ],
+    "groups": [
+      "meat",
+      "pork"
+    ]
+  },
+  {
+    "id": "pork-head",
+    "name": "pork head",
+    "plural": "pork head",
+    "aisle": "meat",
+    "aliases": [
+      "pork jowl",
+      "pig head"
+    ],
+    "groups": [
+      "meat",
+      "pork"
+    ]
+  },
+  {
+    "id": "pork-heart",
+    "name": "pork heart",
+    "aisle": "meat",
+    "aliases": [],
+    "groups": [
+      "meat",
+      "pork"
+    ]
+  },
+  {
+    "id": "pork-liver",
+    "name": "pork liver",
+    "plural": "pork liver",
+    "aisle": "meat",
+    "aliases": [],
+    "groups": [
+      "meat",
+      "pork"
+    ]
+  },
+  {
+    "id": "pigs-blood-cake",
+    "name": "pig's blood cake",
+    "aisle": "asian-international",
+    "aliases": [
+      "tinned pig's blood cake",
+      "pig blood cake",
+      "pork blood"
+    ],
+    "groups": [
+      "meat",
+      "pork"
+    ]
+  },
+  {
+    "id": "luncheon-meat",
+    "name": "luncheon meat",
+    "plural": "luncheon meat",
+    "aisle": "tins-jars",
+    "aliases": [
+      "canned luncheon meat",
+      "spam",
+      "pisupo",
+      "corned mutton"
+    ],
+    "groups": [
+      "meat",
+      "pork"
+    ]
+  },
+  {
+    "id": "tripe",
+    "name": "beef tripe",
+    "plural": "beef tripe",
+    "aisle": "meat",
+    "aliases": [
+      "tripe",
+      "ox tripe",
+      "honeycomb tripe"
+    ],
+    "groups": [
+      "meat",
+      "beef"
+    ]
+  },
+  {
+    "id": "leftover-roast-meat",
+    "name": "cooked leftover meat",
+    "plural": "cooked leftover meat",
+    "aisle": "meat",
+    "aliases": [
+      "leftover meat",
+      "leftover roast meat"
+    ],
+    "groups": [
+      "meat",
+      "beef",
+      "pork",
+      "lamb"
+    ]
+  },
+  {
+    "id": "nduja",
+    "name": "'nduja",
+    "plural": "'nduja",
+    "aisle": "deli",
+    "aliases": [
+      "nduja"
+    ],
+    "groups": [
+      "meat",
+      "pork",
+      "chilli"
+    ]
+  },
+  {
+    "id": "suet",
+    "name": "shredded suet",
+    "plural": "shredded suet",
+    "aisle": "baking",
+    "aliases": [
+      "suet",
+      "beef suet"
+    ],
+    "groups": [
+      "meat",
+      "beef",
+      "gluten"
+    ]
+  },
+  {
+    "id": "dried-grasshoppers",
+    "name": "dried grasshoppers",
+    "plural": "dried grasshoppers",
+    "aisle": "asian-international",
+    "aliases": [
+      "chapulines",
+      "grasshoppers"
+    ],
+    "groups": [
+      "meat"
+    ]
+  },
+  {
+    "id": "banana",
+    "name": "banana",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "ripe banana",
+      "ripe bananas"
+    ],
+    "groups": []
+  },
+  {
+    "id": "banana-leaf",
+    "name": "banana leaf",
+    "plural": "banana leaves",
+    "aisle": "asian-international",
+    "aliases": [
+      "banana leaves",
+      "agave leaves",
+      "agave leaf",
+      "agave leaves or banana leaves"
+    ],
+    "groups": []
+  },
+  {
+    "id": "pandan-leaf",
+    "name": "pandan leaf",
+    "plural": "pandan leaves",
+    "aisle": "asian-international",
+    "aliases": [
+      "pandan leaves",
+      "pandan"
+    ],
+    "groups": []
+  },
+  {
+    "id": "perilla-leaf",
+    "name": "perilla leaf",
+    "plural": "perilla leaves",
+    "aisle": "asian-international",
+    "aliases": [
+      "perilla",
+      "kkaenip",
+      "perilla leaves",
+      "shiso"
+    ],
+    "groups": []
+  },
+  {
+    "id": "grape-leaves",
+    "name": "grape vine leaf",
+    "plural": "grape vine leaves",
+    "aisle": "tins-jars",
+    "aliases": [
+      "grape vine",
+      "vine leaves",
+      "grape leaves",
+      "jarred grape leaves",
+      "jarred grape leaf"
+    ],
+    "groups": []
+  },
+  {
+    "id": "taro-leaves",
+    "name": "taro leaf",
+    "plural": "taro leaves",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "taro leaves",
+      "palusami leaves",
+      "rourou"
+    ],
+    "groups": []
+  },
+  {
+    "id": "amaranth-greens",
+    "name": "amaranth greens",
+    "plural": "amaranth greens",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "managu",
+      "african nightshade"
+    ],
+    "groups": []
+  },
+  {
+    "id": "bitter-leaf",
+    "name": "bitter leaf",
+    "plural": "bitter leaves",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "ndole",
+      "ndolé"
+    ],
+    "groups": []
+  },
+  {
+    "id": "chicory",
+    "name": "chicory",
+    "plural": "chicory",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "cicoria",
+      "dandelion greens",
+      "chicory or dandelion greens",
+      "wild chicory"
+    ],
+    "groups": []
+  },
+  {
+    "id": "cime-di-rapa",
+    "name": "cime di rapa",
+    "plural": "cime di rapa",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "turnip tops",
+      "broccoli rabe",
+      "rapini"
+    ],
+    "groups": []
+  },
+  {
+    "id": "turnip-greens",
+    "name": "turnip greens",
+    "plural": "turnip greens",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "nozawana"
+    ],
+    "groups": []
+  },
+  {
+    "id": "sorrel",
+    "name": "sorrel",
+    "plural": "sorrel",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "fresh sorrel"
+    ],
+    "groups": []
+  },
+  {
+    "id": "molokhia",
+    "name": "molokhia",
+    "plural": "molokhia",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "fresh molokhia leaves",
+      "molokhia leaves",
+      "jute leaves",
+      "mulukhiyah"
+    ],
+    "groups": []
+  },
+  {
+    "id": "fernbrake",
+    "name": "fernbrake",
+    "plural": "fernbrake",
+    "aisle": "asian-international",
+    "aliases": [
+      "gosari",
+      "bracken fern"
+    ],
+    "groups": []
+  },
+  {
+    "id": "watercress",
+    "name": "watercress",
+    "plural": "watercress",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "large bunch watercress",
+      "bunch watercress"
+    ],
+    "groups": []
+  },
+  {
+    "id": "choy-sum",
+    "name": "choy sum",
+    "plural": "choy sum",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "choi sum",
+      "cai xin"
+    ],
+    "groups": []
+  },
+  {
+    "id": "fresh-herbs",
+    "name": "mixed fresh herbs",
+    "plural": "mixed fresh herbs",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "fresh herbs",
+      "mixed herbs"
+    ],
+    "groups": []
+  },
+  {
+    "id": "cassava",
+    "name": "cassava",
+    "plural": "cassava",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "yuca",
+      "tapioca root",
+      "manioc"
+    ],
+    "groups": []
+  },
+  {
+    "id": "taro",
+    "name": "taro",
+    "plural": "taro",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "dalo",
+      "large dalo",
+      "dasheen"
+    ],
+    "groups": []
+  },
+  {
+    "id": "yam",
+    "name": "yam",
+    "aisle": "fruit-veg",
+    "aliases": [],
+    "groups": []
+  },
+  {
+    "id": "parsnip",
+    "name": "parsnip",
+    "aisle": "fruit-veg",
+    "aliases": [],
+    "groups": []
+  },
+  {
+    "id": "turnip",
+    "name": "turnip",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "small turnip"
+    ],
+    "groups": []
+  },
+  {
+    "id": "kohlrabi",
+    "name": "kohlrabi",
+    "plural": "kohlrabi",
+    "aisle": "fruit-veg",
+    "aliases": [],
+    "groups": []
+  },
+  {
+    "id": "jicama",
+    "name": "jicama",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "chinese turnip",
+      "yam bean"
+    ],
+    "groups": []
+  },
+  {
+    "id": "burdock",
+    "name": "burdock",
+    "plural": "burdock",
+    "aisle": "asian-international",
+    "aliases": [
+      "gobo",
+      "burdock root"
+    ],
+    "groups": []
+  },
+  {
+    "id": "olluco",
+    "name": "olluco",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "ulluco"
+    ],
+    "groups": []
+  },
+  {
+    "id": "bottle-gourd",
+    "name": "bottle gourd",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "lau",
+      "lauki",
+      "opo squash"
+    ],
+    "groups": []
+  },
+  {
+    "id": "winter-melon",
+    "name": "winter melon",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "wax gourd"
+    ],
+    "groups": []
+  },
+  {
+    "id": "jackfruit",
+    "name": "young green jackfruit",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "green jackfruit",
+      "young jackfruit",
+      "jackfruit"
+    ],
+    "groups": []
+  },
+  {
+    "id": "nopales",
+    "name": "nopales",
+    "plural": "nopales",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "nopal",
+      "cactus paddle"
+    ],
+    "groups": []
+  },
+  {
+    "id": "kanpyo",
+    "name": "kanpyo",
+    "plural": "kanpyo",
+    "aisle": "asian-international",
+    "aliases": [
+      "dried gourd strips"
+    ],
+    "groups": []
+  },
+  {
+    "id": "bamboo-shoots",
+    "name": "bamboo shoots",
+    "plural": "bamboo shoots",
+    "aisle": "tins-jars",
+    "aliases": [
+      "tinned bamboo shoot",
+      "tinned bamboo shoots",
+      "bamboo shoot"
+    ],
+    "groups": []
+  },
+  {
+    "id": "rhubarb",
+    "name": "rhubarb",
+    "plural": "rhubarb",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "fresh rhubarb"
+    ],
+    "groups": []
+  },
+  {
+    "id": "wild-fennel",
+    "name": "wild fennel",
+    "plural": "wild fennel",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "finocchietto"
+    ],
+    "groups": []
+  },
+  {
+    "id": "quandong",
+    "name": "quandong",
+    "aisle": "fruit-veg",
+    "aliases": [],
+    "groups": []
+  },
+  {
+    "id": "palm-nuts",
+    "name": "palm nuts",
+    "plural": "palm nuts",
+    "aisle": "asian-international",
+    "aliases": [
+      "fresh palm nuts",
+      "palm fruit"
+    ],
+    "groups": []
+  },
+  {
+    "id": "fresh-coconut",
+    "name": "fresh coconut",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "fresh grated coconut",
+      "grated fresh coconut",
+      "freshly grated coconut",
+      "grated coconut"
+    ],
+    "groups": []
+  },
+  {
+    "id": "candlenuts",
+    "name": "candlenut",
+    "plural": "candlenuts",
+    "aisle": "asian-international",
+    "aliases": [
+      "kemiri",
+      "buah keras"
+    ],
+    "groups": [
+      "tree-nuts"
+    ]
+  },
+  {
+    "id": "egusi",
+    "name": "ground egusi",
+    "plural": "ground egusi",
+    "aisle": "asian-international",
+    "aliases": [
+      "egusi",
+      "melon seeds"
+    ],
+    "groups": []
+  },
+  {
+    "id": "nigella-seeds",
+    "name": "nigella seeds",
+    "plural": "nigella seeds",
+    "aisle": "herbs-spices",
+    "aliases": [
+      "kalonji",
+      "black onion seeds"
+    ],
+    "groups": []
+  },
+  {
+    "id": "panch-phoron",
+    "name": "panch phoron",
+    "plural": "panch phoron",
+    "aisle": "herbs-spices",
+    "aliases": [
+      "bengali five-spice",
+      "panch phoran"
+    ],
+    "groups": []
+  },
+  {
+    "id": "berbere",
+    "name": "berbere",
+    "plural": "berbere",
+    "aisle": "herbs-spices",
+    "aliases": [
+      "berbere spice"
+    ],
+    "groups": [
+      "chilli"
+    ]
+  },
+  {
+    "id": "ground-caraway",
+    "name": "ground caraway",
+    "plural": "ground caraway",
+    "aisle": "herbs-spices",
+    "aliases": [],
+    "groups": []
+  },
+  {
+    "id": "file-powder",
+    "name": "filé powder",
+    "plural": "filé powder",
+    "aisle": "herbs-spices",
+    "aliases": [
+      "file powder",
+      "gumbo file"
+    ],
+    "groups": []
+  },
+  {
+    "id": "wattleseed",
+    "name": "wattleseed",
+    "plural": "wattleseed",
+    "aisle": "herbs-spices",
+    "aliases": [
+      "ground wattleseed"
+    ],
+    "groups": []
+  },
+  {
+    "id": "base-genep",
+    "name": "base genep",
+    "plural": "base genep",
+    "aisle": "asian-international",
+    "aliases": [
+      "balinese spice paste"
+    ],
+    "groups": [
+      "shellfish",
+      "chilli"
+    ]
+  },
+  {
+    "id": "dry-curry-paste",
+    "name": "dry curry paste",
+    "plural": "dry curry paste",
+    "aisle": "asian-international",
+    "aliases": [],
+    "groups": [
+      "shellfish",
+      "chilli"
+    ]
+  },
+  {
+    "id": "japanese-curry-roux",
+    "name": "Japanese curry roux",
+    "plural": "Japanese curry roux",
+    "aisle": "asian-international",
+    "aliases": [
+      "japanese curry paste",
+      "japanese curry roux block",
+      "japanese curry block",
+      "curry roux"
+    ],
+    "groups": [
+      "gluten",
+      "soy",
+      "dairy"
+    ]
+  },
+  {
+    "id": "dosa-batter",
+    "name": "dosa batter",
+    "plural": "dosa batter",
+    "aisle": "asian-international",
+    "aliases": [
+      "idli batter"
+    ],
+    "groups": []
+  },
+  {
+    "id": "urad-dal",
+    "name": "urad dal",
+    "plural": "urad dal",
+    "aisle": "pasta-rice-grains",
+    "aliases": [
+      "white lentils",
+      "split urad dal"
+    ],
+    "groups": []
+  },
+  {
+    "id": "moong-dal",
+    "name": "split yellow moong dal",
+    "plural": "split yellow moong dal",
+    "aisle": "pasta-rice-grains",
+    "aliases": [
+      "moong dal",
+      "mung dal",
+      "yellow moong dal"
+    ],
+    "groups": []
+  },
+  {
+    "id": "buckwheat",
+    "name": "buckwheat groats",
+    "plural": "buckwheat groats",
+    "aisle": "pasta-rice-grains",
+    "aliases": [
+      "buckwheat",
+      "kasha"
+    ],
+    "groups": []
+  },
+  {
+    "id": "freekeh",
+    "name": "freekeh",
+    "plural": "freekeh",
+    "aisle": "pasta-rice-grains",
+    "aliases": [],
+    "groups": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "millet",
+    "name": "millet",
+    "plural": "millet",
+    "aisle": "pasta-rice-grains",
+    "aliases": [],
+    "groups": []
+  },
+  {
+    "id": "matzo-meal",
+    "name": "matzo meal",
+    "plural": "matzo meal",
+    "aisle": "baking",
+    "aliases": [
+      "matzah meal"
+    ],
+    "groups": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "sago",
+    "name": "sago",
+    "plural": "sago",
+    "aisle": "pasta-rice-grains",
+    "aliases": [
+      "sago pearls"
+    ],
+    "groups": []
+  },
+  {
+    "id": "fresh-masa",
+    "name": "fresh masa",
+    "plural": "fresh masa",
+    "aisle": "asian-international",
+    "aliases": [
+      "masa",
+      "masa dough",
+      "masa harina"
+    ],
+    "groups": []
+  },
+  {
+    "id": "arepas",
+    "name": "arepa",
+    "plural": "arepas",
+    "aisle": "bakery",
+    "aliases": [],
+    "groups": []
+  },
+  {
+    "id": "injera",
+    "name": "injera",
+    "plural": "injera",
+    "aisle": "bakery",
+    "aliases": [],
+    "groups": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "popiah-skin",
+    "name": "popiah skin",
+    "plural": "popiah skins",
+    "aisle": "asian-international",
+    "aliases": [
+      "popiah wrappers"
+    ],
+    "groups": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "kataifi-pastry",
+    "name": "kataifi pastry",
+    "plural": "kataifi pastry",
+    "aisle": "frozen",
+    "aliases": [
+      "kataifi",
+      "kadaif"
+    ],
+    "groups": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "yufka",
+    "name": "yufka",
+    "plural": "yufka",
+    "aisle": "bakery",
+    "aliases": [
+      "yufka sheets"
+    ],
+    "groups": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "tarhana",
+    "name": "tarhana paste",
+    "plural": "tarhana paste",
+    "aisle": "asian-international",
+    "aliases": [
+      "tarhana"
+    ],
+    "groups": [
+      "gluten",
+      "dairy"
+    ]
+  },
+  {
+    "id": "zur",
+    "name": "żur",
+    "plural": "żur",
+    "aisle": "asian-international",
+    "aliases": [
+      "zur",
+      "zurek starter",
+      "sour rye starter"
+    ],
+    "groups": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "khoya",
+    "name": "khoya",
+    "plural": "khoya",
+    "aisle": "dairy-eggs",
+    "aliases": [
+      "khoa",
+      "mawa"
+    ],
+    "groups": [
+      "dairy"
+    ]
+  },
+  {
+    "id": "niter-kibbeh",
+    "name": "niter kibbeh",
+    "plural": "niter kibbeh",
+    "aisle": "dairy-eggs",
+    "aliases": [
+      "spiced clarified butter"
+    ],
+    "groups": [
+      "dairy"
+    ]
+  },
+  {
+    "id": "oaxaca-cheese",
+    "name": "Oaxaca cheese",
+    "plural": "Oaxaca cheese",
+    "aisle": "dairy-eggs",
+    "aliases": [
+      "quesillo",
+      "queso oaxaca"
+    ],
+    "groups": [
+      "dairy"
+    ]
+  },
+  {
+    "id": "pink-pralines",
+    "name": "pink pralines",
+    "plural": "pink pralines",
+    "aisle": "baking",
+    "aliases": [
+      "pralines roses",
+      "praline rose"
+    ],
+    "groups": [
+      "tree-nuts"
+    ]
+  },
+  {
+    "id": "poppy-seed-paste",
+    "name": "poppy seed paste",
+    "plural": "poppy seed paste",
+    "aisle": "baking",
+    "aliases": [
+      "poppy seed filling"
+    ],
+    "groups": []
+  },
+  {
+    "id": "tempeh",
+    "name": "tempeh",
+    "plural": "tempeh",
+    "aisle": "asian-international",
+    "aliases": [
+      "tempeh slices",
+      "tempe"
+    ],
+    "groups": [
+      "soy"
+    ]
+  },
+  {
+    "id": "broad-beans",
+    "name": "broad beans",
+    "plural": "broad beans",
+    "aisle": "frozen",
+    "aliases": [
+      "fava beans",
+      "frozen broad beans"
+    ],
+    "groups": []
+  },
+  {
+    "id": "dried-brown-beans",
+    "name": "dried brown beans",
+    "plural": "dried brown beans",
+    "aisle": "pasta-rice-grains",
+    "aliases": [
+      "brown beans"
+    ],
+    "groups": []
+  },
+  {
+    "id": "dates",
+    "name": "date",
+    "plural": "dates",
+    "aisle": "nuts-dried",
+    "aliases": [
+      "dried dates",
+      "pitted dates",
+      "medjool dates"
+    ],
+    "groups": []
+  },
+  {
+    "id": "prunes",
+    "name": "prune",
+    "plural": "prunes",
+    "aisle": "nuts-dried",
+    "aliases": [
+      "dried prunes",
+      "pitted prunes"
+    ],
+    "groups": []
+  },
+  {
+    "id": "dried-red-dates",
+    "name": "dried red date",
+    "plural": "dried red dates",
+    "aisle": "asian-international",
+    "aliases": [
+      "jujube",
+      "jujubes",
+      "daechu"
+    ],
+    "groups": []
+  },
+  {
+    "id": "dried-cranberries",
+    "name": "dried cranberries",
+    "plural": "dried cranberries",
+    "aisle": "nuts-dried",
+    "aliases": [
+      "craisins"
+    ],
+    "groups": []
+  },
+  {
+    "id": "jaggery",
+    "name": "jaggery",
+    "plural": "jaggery",
+    "aisle": "asian-international",
+    "aliases": [
+      "gur"
+    ],
+    "groups": []
+  },
+  {
+    "id": "ginseng",
+    "name": "fresh ginseng",
+    "plural": "fresh ginseng",
+    "aisle": "asian-international",
+    "aliases": [
+      "ginseng",
+      "dried ginseng"
+    ],
+    "groups": []
+  },
+  {
+    "id": "black-tea",
+    "name": "black tea leaves",
+    "plural": "black tea leaves",
+    "aisle": "drinks",
+    "aliases": [
+      "black tea",
+      "black tea bags",
+      "tea bags",
+      "loose-leaf tea"
+    ],
+    "groups": []
+  },
+  {
+    "id": "dry-cider",
+    "name": "dry cider",
+    "plural": "dry cider",
+    "aisle": "drinks",
+    "aliases": [
+      "cider",
+      "apple cider",
+      "hard cider"
+    ],
+    "groups": [
+      "alcohol"
+    ]
+  },
+  {
+    "id": "citric-acid",
+    "name": "citric acid",
+    "plural": "citric acid",
+    "aisle": "baking",
+    "aliases": [],
+    "groups": []
+  },
+  {
+    "id": "food-colouring",
+    "name": "food colouring",
+    "plural": "food colouring",
+    "aisle": "baking",
+    "aliases": [
+      "food coloring",
+      "food dye"
+    ],
+    "groups": []
+  },
+  {
+    "id": "sambar",
+    "name": "sambar",
+    "plural": "sambar",
+    "aisle": "other",
+    "aliases": [],
+    "groups": []
+  },
+  {
+    "id": "skewers",
+    "name": "skewer",
+    "plural": "skewers",
+    "aisle": "other",
+    "aliases": [
+      "wooden skewers",
+      "bamboo skewers",
+      "metal skewers",
+      "metal skewers or wooden skewers"
+    ],
+    "groups": []
+  },
+  {
+    "id": "fresh-egg-pasta",
+    "name": "fresh egg pasta",
+    "plural": "fresh egg pasta",
+    "aisle": "dairy-eggs",
+    "aliases": [
+      "fresh egg tagliatelle",
+      "egg tagliatelle",
+      "egg pasta",
+      "fresh egg fettuccine",
+      "fresh egg pappardelle"
+    ],
+    "groups": [
+      "gluten",
+      "egg"
+    ]
+  },
+  {
+    "id": "soy-yoghurt",
+    "name": "soy yoghurt",
+    "plural": "soy yoghurt",
+    "aisle": "dairy-eggs",
+    "aliases": [
+      "unsweetened soy yoghurt",
+      "plant-based yoghurt",
+      "soy yogurt"
+    ],
+    "groups": [
+      "soy"
+    ]
   }
 ]

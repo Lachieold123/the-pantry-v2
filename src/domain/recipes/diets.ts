@@ -8,7 +8,10 @@ import { allLines, type DietTag, type Recipe } from './types';
 
 const MEAT: readonly IngredientGroup[] = ['meat', 'beef', 'pork', 'lamb', 'poultry'];
 const SEAFOOD: readonly IngredientGroup[] = ['fish', 'shellfish'];
-const ANIMAL_NOT_MEAT: readonly IngredientGroup[] = ['dairy', 'egg', 'animal-product'];
+const ANIMAL_NOT_MEAT: readonly IngredientGroup[] = ['dairy', 'egg', 'animal-product', 'non-vegetarian'];
+// Gelatine and animal-rennet cheeses (parmesan, pecorino, Gruyère, manchego) keep a dish
+// off the vegetarian list unless the line asks for a vegetarian version (D-053).
+const NOT_VEGETARIAN: readonly IngredientGroup[] = ['non-vegetarian'];
 
 function groupsOf(lines: readonly IngredientLine[], byId: ReadonlyMap<string, IngredientDef>): Set<IngredientGroup> {
   const groups = new Set<IngredientGroup>();
@@ -30,7 +33,7 @@ export function deriveDiets(lines: readonly IngredientLine[], byId: ReadonlyMap<
   const has = (list: readonly IngredientGroup[]) => list.some((x) => g.has(x));
   const diets: DietTag[] = [];
   const meatFree = !has(MEAT);
-  if (meatFree && !has(SEAFOOD)) diets.push('vegetarian');
+  if (meatFree && !has(SEAFOOD) && !has(NOT_VEGETARIAN)) diets.push('vegetarian');
   if (meatFree && !has(SEAFOOD) && !has(ANIMAL_NOT_MEAT)) diets.push('vegan');
   if (meatFree && has(SEAFOOD)) diets.push('pescatarian');
   if (!g.has('gluten')) diets.push('no-gluten');

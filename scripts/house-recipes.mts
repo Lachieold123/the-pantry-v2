@@ -25,6 +25,7 @@ import { parseIngredientLine } from '../src/domain/ingredients/parse.ts';
 import { deriveDiets } from '../src/domain/recipes/diets.ts';
 import type { CuisineId, DietTag, Difficulty, MealType, Provenance, Recipe, Season } from '../src/domain/recipes/types.ts';
 import { validateRecipe } from '../src/domain/recipes/validate.ts';
+import { dietTextProblems, orLines } from './recipe-text-checks.mts';
 
 export type HouseRecipe = {
   id: string;
@@ -45,9 +46,19 @@ export type HouseRecipe = {
   notes?: string[];
   /** Left out until Lachlan reviews or cook-tests the recipe, which keeps it an `ai-draft` (hidden in store builds). */
   provenance?: Provenance;
+  /** Batch 03: who the recipe is credited to (always The Pantry) and the model that wrote it. */
+  author?: string;
+  generatedBy?: string;
   /** A real, freely licensed photo (D-045): the file at assets/recipes/<key>.jpg, the credit shown under it, and its source page. */
   image?: { key: string; credit: string; source: string };
+  /**
+   * The author's estimate per serve (batch-04 on). Not shown in the app yet and not copied into the
+   * catalogue; validate-house-recipes.mts checks it against the macros and a rough sum of the ingredients.
+   */
+  nutrition?: Nutrition;
 };
+
+export type Nutrition = { kcal: number; proteinG: number; carbsG: number; fatG: number; fibreG: number; sodiumMg: number };
 
 export type HouseBatch = { about: string; recipes: HouseRecipe[] };
 
@@ -86,7 +97,8 @@ function checkImage(h: HouseRecipe, root: string, problem: (m: string) => void):
   if (!/^https:\/\//.test(source)) problem(`${h.id}: photo needs the https link to its source page`);
 }
 
-function toRecipe(h: HouseRecipe, root: string, index: IngredientIndex, problem: (m: string) => void): Recipe {
+/** One batch entry as a catalogue recipe, with the repo's checks reported through `problem`. Also used by validate-house-recipes.mts. */
+export function toRecipe(h: HouseRecipe, root: string, index: IngredientIndex, problem: (m: string) => void): Recipe {
   const ingredientGroups = h.ingredients.map((group) => {
     const items = group.items.map((raw) => {
       const { line, issues } = parseIngredientLine(raw, index.match);
@@ -101,11 +113,27 @@ function toRecipe(h: HouseRecipe, root: string, index: IngredientIndex, problem:
     index.byId,
   );
   if (!sameSet(diets, h.diets)) problem(`${h.id}: diets stated [${h.diets.join(', ')}] but the ingredients give [${diets.join(', ')}]`);
+  // The words must agree with the tags too, so a bad link can't hand out a wrong diet (D-053).
+  const items = ingredientGroups.flatMap((g) => g.items);
+  for (const p of dietTextProblems(
+    diets,
+    items.map((l) => `${l.item}${l.optional ? ' (optional)' : ''}`),
+  ))
+    problem(`${h.id}: ${p}`);
+  for (const l of orLines(
+    items.map((l) => l.item),
+    index.match,
+  ))
+    problem(`${h.id}: one ingredient per line, put the alternative in brackets: "${l}"`);
   if (!h.summary?.trim()) problem(`${h.id}: no summary`);
   if (h.prepMinutes <= 0) problem(`${h.id}: prepMinutes must be more than 0`);
   if (h.prepMinutes + h.cookMinutes <= 0) problem(`${h.id}: no time given`);
   if (allText(h).some((t) => t.includes('—'))) problem(`${h.id}: uses an em dash`);
   checkImage(h, root, problem);
+  if (h.provenance === 'ai-assisted' && (!h.generatedBy || h.author !== 'The Pantry'))
+    problem(`${h.id}: an ai-assisted recipe must be credited to The Pantry and say which model wrote it`);
+  if (h.image && /\bAI\b|AI-generated/.test(h.image.credit))
+    problem(`${h.id}: photo credit says it's AI-generated; house batches use real photos only`);
   return {
     id: h.id,
     title: h.title,
@@ -125,6 +153,7 @@ function toRecipe(h: HouseRecipe, root: string, index: IngredientIndex, problem:
     ...(h.notes?.length ? { notes: h.notes } : {}),
     source: 'house',
     provenance: h.provenance ?? 'ai-draft',
+    ...(h.generatedBy ? { generatedBy: h.generatedBy } : {}),
   };
 }
 

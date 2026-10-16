@@ -437,3 +437,15 @@ _Renumbered from D-045 on 17 Oct 2026 (see D-051)._
   - **Never faked:** the web, Android and Expo Go never start RevenueCat (its "preview" modes are not used); they say Pro isn't on sale here.
 - **Added dependency:** `react-native-purchases` (native; no config plugin; needs a new development build).
 - **Waits for Lachlan:** App Store Connect metadata, the yearly trial offer, the Paid Apps agreement, the hosted legal pages, then a sandbox test on his phone.
+
+## D-053 · Hard cheeses aren't vegetarian; one gate for house recipes; the seed kitchen is retired
+
+- **Date:** 17 October 2026 · **Decided by:** Lachlan ("go with your recommendations", Telegram msg 1498), on Claude's recommendation
+- **Decision:** replaces D-036's hard-cheese call.
+  - **Hard cheeses made with animal rennet are not vegetarian.** Parmesan (and grana padano), pecorino, Gruyère (and comté, fontina), manchego, plus gelatine and pesto, carry a new ingredient group, `non-vegetarian`. `deriveDiets` keeps any dish with one off the vegetarian and vegan lists. A line that asks for "vegetarian parmesan" or "vegetarian hard cheese" links to a new ingredient, `vegetarian-hard-cheese`, and the dish stays vegetarian. The eight house recipes this affected lost their vegetarian tag and gained a note saying how to make them vegetarian; 17 converted recipes lost it too.
+  - **Words must agree with tags.** `scripts/recipe-text-checks.mts` reads each ingredient line and fails a recipe tagged vegan, vegetarian, pescatarian, no-gluten or no-dairy whose words say otherwise, so a wrong ingredient link can't hand out a wrong diet. It also fails "A or B" lines that name two different ingredients: the alternative goes in brackets. It runs inside `catalogue:check-house` and, over the whole built catalogue, as `catalogue:check-text`. 22 converted lines were rewritten through `recipe-fixes.json`.
+  - **One gate:** `npm run catalogue:validate` (from the batch-04 work) runs the repo's checks plus food safety, doneness cues, near-duplicates and style. Findings a person reviewed and accepted are listed in the script with the reason and stay visible as warnings. Every meat, poultry and seafood recipe carries a "Food safety" note with a temperature or doneness cue.
+  - **Batch 03 is merged** (561 ai-assisted recipes). Its JSON is now edited directly like any batch; don't rerun `scripts/batch-03.mts`, which would overwrite the fixes.
+  - **Ingredient flags:** Japanese curry roux is gluten, soy and dairy; andouillette is pork and gluten (feed `ingredient_extras` too).
+  - **The seed kitchen is retired.** The Supabase pipeline that called the Anthropic API is paused with a zero cap, `seed.start()` and `seed.tick()` refuse to run, and the edge function is a stub (`supabase/migrations/20261017000000_seed_kitchen_retired.sql`). Its source and schema are now in git. Nothing it made was deleted.
+- **Why:** a wrong "vegetarian" or "no-gluten" tag is a real harm, and API spend was never wanted.

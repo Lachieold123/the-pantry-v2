@@ -65,6 +65,8 @@ npm run export:web                   # static web build, used for screenshots
 npm run catalogue:convert -- <old>   # rebuild the catalogue from the old app at <old>
 npm run catalogue:check-ingredients  # ingredient database coverage over the catalogue
 npm run catalogue:check-house        # check the new house recipe batches (no old app needed)
+npm run catalogue:check-text         # recipe words vs diet tags, and "A or B" lines, over the built catalogue (D-053)
+npm run catalogue:validate -- --no-nutrition  # the single gate for house batches: food safety, doneness, duplicates, style (D-053)
 ```
 
 Routes live in `src/app/` (Expo Router, SDK 57 convention). Route files stay thin: they render a screen from `src/features/`.

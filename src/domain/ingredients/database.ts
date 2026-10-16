@@ -40,6 +40,7 @@ export const INGREDIENT_GROUPS = [
   'sesame',
   'soy',
   'animal-product', // not meat but not vegan: honey, gelatine
+  'non-vegetarian', // not meat, but not vegetarian either: gelatine, hard cheeses made with animal rennet (D-053)
   'alcohol',
   'chilli',
 ] as const;

@@ -26,7 +26,8 @@ const noColourLiterals = {
 
 module.exports = defineConfig([
   expoConfig,
-  { ignores: ['dist/*', '.expo/*', 'node_modules/*', 'ios/*', 'android/*', 'coverage/*'] },
+  // supabase/functions run on Deno; the retired seed kitchen is a bundled copy kept for the record.
+  { ignores: ['dist/*', '.expo/*', 'node_modules/*', 'ios/*', 'android/*', 'coverage/*', 'supabase/functions/**'] },
   {
     files: ['src/**/*.{ts,tsx}'],
     ignores: ['src/ui/tokens/**'],

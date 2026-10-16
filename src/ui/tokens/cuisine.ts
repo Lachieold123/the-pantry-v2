@@ -1,5 +1,5 @@
 // Category colours, from the original app (spec §1.2–1.4). The original had
-// eight coarse cuisines; v2 has 25, so each maps to its original family's colour.
+// eight coarse cuisines; v2 has 28, so each maps to its original family's colour.
 
 import type { ColourTokens } from './colour';
 
@@ -71,6 +71,9 @@ const FAMILY: Readonly<Record<string, Family>> = {
   'central-european': 'european',
   scandinavian: 'european',
   'modern-australian': 'other',
+  caribbean: 'mexican',
+  'east-african': 'other',
+  'pacific-islands': 'other',
 };
 
 export function cuisineEyebrow(cuisine: string, ground: Ground): string {

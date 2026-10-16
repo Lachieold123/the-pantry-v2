@@ -1,0 +1,32 @@
+{
+  "maklouba": { "why": "first-person voice", "replace": [["so we fry it now to keep it with structure and flavour", "so frying it first keeps its shape and flavour"]] },
+  "shiro": { "why": "persona story", "replace": [["This is one of our fasting dishes, vegan, filling, and humble. It's the kind of food that brings the family together quietly on a Wednesday evening.", "Shiro is a classic Ethiopian fasting dish: vegan, filling and humble."]] },
+  "canh-chua-ca": { "why": "persona story", "replace": [["but what my mum always says is use what you have in the garden.", "but use whatever fresh herbs you have."]] },
+  "abgoosht": { "why": "persona story", "replace": [["I keep it simple, the way my father did.", "This version keeps it simple."]] },
+  "churrasco-misto": { "why": "persona story", "replace": [[", the way we do it back home.", ", as it's served in Brazil."]] },
+  "dakjim": { "why": "names a fictional cook", "replace": [["Braised chicken in soy and ginger, sticky and tender, what Grace's mum made.", "Braised chicken in soy and ginger, sticky and tender."]] },
+  "salsa-de-pasilla-oaxaquena": { "why": "persona story", "replace": [[", the way we make it at the market stall.", ", as it's made at Oaxacan market stalls."]] },
+  "cullen-skink": { "why": "first-person voice", "replace": [["Traditionally you'd use the poaching liquid, which is what I've done here.", "Traditionally you'd use the poaching liquid, as this recipe does."]] },
+  "flaki": { "why": "first-person voice", "replace": [[" I don't, but you might.", " It's optional."]] },
+  "miyeok-guk": { "why": "first-person voice", "replace": [["; I prefer to cook it in the pot for simplicity, but either way works.", "; cooking it in the pot is simpler, and either way works."]] },
+  "milanesa-de-ternera": { "why": "first-person voice", "replace": [["Use veal or beef, I prefer veal for its tenderness, but", "Use veal or beef. Veal is more tender, but"]] },
+  "pierogi-ruskie": { "why": "persona story", "replace": [[", but my babcia preferred the rustic texture.", ", though a rustic texture is traditional too."]] },
+  "tortellini-in-brodo": { "why": "persona story", "replace": [["a Sunday project with grandmother's pork and cheese filling.", "a Sunday project with a pork and cheese filling."]] },
+  "sopa-de-lentejas": { "why": "persona story", "replace": [[", grandmother's Lenten recipe now a year-round comfort.", ", a Lenten dish that's good all year."]] },
+  "light-soup": { "why": "persona story", "replace": [[", my mum has used both depending on what's in the cupboard.", "."]] },
+  "laksa-ipoh": { "why": "first-person voice", "replace": [["Some people add prawns to this laksa. I grew up with it this way, but feel free to toss in", "Some people add prawns to this laksa. If you'd like them, toss in"]] },
+  "beef-mince-tacos-with-frozen-veg": { "why": "first-person voice", "replace": [[", and it's what I usually have on hand.", "."]] },
+  "couscous-aux-sept-legumes": { "why": "\"400 ml boiling broth (from the pot)\" is ladled from the stew, not bought: removed from the ingredient list (the step still says it)", "removeLines": ["400 ml boiling broth (from the pot)"] },
+  "oyster-omelette": {
+    "why": "\"oyster omelette sauce\" isn't something you buy: listed as its two ingredients",
+    "replace": [
+      ["150 ml oyster omelette sauce (or tapioca starch 1 tbsp mixed with 150 ml water, salt and white pepper to taste)", "1 tbsp tapioca starch\n150 ml water"],
+      ["In another bowl, mix the oyster omelette sauce ingredients together.", "In another bowl, mix the tapioca starch with the water."]
+    ]
+  },
+  "mi-quang": { "why": "\"fresh turmeric noodles\" matched ground turmeric; they're rice noodles", "replace": [["300 g fresh turmeric noodles", "300 g fresh rice noodles (turmeric mì Quảng noodles if you can find them)"]] },
+  "quenelles-de-brochet": { "why": "\"fish stock or chicken stock\" was read as chicken stock", "replace": [[" fish stock or chicken stock", " fish stock (or chicken stock)"]] },
+  "penang-assam-laksa": { "why": "\"fish stock or chicken stock\" was read as chicken stock", "replace": [[" fish stock or chicken stock", " fish stock (or chicken stock)"]] },
+  "marmitako": { "why": "\"fish stock or chicken stock\" was read as chicken stock", "replace": [[" fish stock or chicken stock", " fish stock (or chicken stock)"]] },
+  "tinolang-isda": { "why": "\"fish stock or chicken stock\" was read as chicken stock", "replace": [[" fish stock or chicken stock", " fish stock (or chicken stock)"]] }
+}

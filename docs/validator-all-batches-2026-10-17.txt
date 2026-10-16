@@ -1,0 +1,750 @@
+Checked 711 recipe(s) in batch-01.json, batch-02.json, batch-03.json against 335 existing titles.
+warn  turkish-eggs  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  buttermilk-pancakes  [alternative] "150g frozen mixed berries, thawed (or fresh berries)": alternative "fresh berries" is not in the ingredient database
+warn  buttermilk-pancakes  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  kedgeree  [doneness] step 1 gives a time but nothing to look for: "Lower the eggs into a pan of boiling water and cook for 7 minutes. Mov..."
+warn  kedgeree  [doneness] step 3 gives a time but nothing to look for: "Add the rice and stir to coat in the butter. Pour in the water, add th..."
+warn  bircher-muesli  [alternative] "150g frozen mixed berries, thawed (or fresh berries)": alternative "fresh berries" is not in the ingredient database
+warn  corn-fritters  [time] 35 min in all but the steps only account for about 3 min
+warn  corn-fritters  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  chicken-ginger-congee  [time] cookMinutes 75 but the steps name only about 20 min
+warn  fattoush  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  lemongrass-pork-noodle-salad  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  pasta-e-fagioli  [doneness] step 2 gives a time but nothing to look for: "Stir in the tomato paste for 1 minute, then add the tomatoes, beans, s..."
+warn  pasta-e-fagioli  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  thai-pork-larb  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  thai-fish-cakes  [time] 35 min in all but the steps only account for about 4 min
+warn  potato-pancakes  [time] 50 min in all but the steps only account for about 4 min
+warn  potato-pancakes  [time] cookMinutes 30 but the steps name only about 4 min
+warn  chicken-cacciatore  [doneness] step 3 gives a time but nothing to look for: "Pour in the wine and simmer for 2 minutes, scraping up the browned bit..."
+warn  lentils-and-sausages  [doneness] step 1 gives a time but nothing to look for: "Heat the oil in a large deep frying pan or casserole over medium heat...."
+warn  mujadara  [doneness] step 3 gives a time but nothing to look for: "Add the cumin, cinnamon and allspice to the onions left in the pan for..."
+warn  harira  [doneness] step 1 gives a time but nothing to look for: "Heat the oil in a large heavy pot over medium-high heat. Brown the lam..."
+warn  groundnut-stew  [doneness] step 1 gives a time but nothing to look for: "Heat the oil in a large heavy pot over medium-high heat. Season the ch..."
+warn  keema-matar  [doneness] step 5 gives a time but nothing to look for: "Add the peas and cook for 3 minutes. Stir in the garam masala and cori..."
+warn  shaking-beef  [time] about 270 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  miso-glazed-eggplant  [doneness] step 6 gives a time but nothing to look for: "Steam or blanch the bok choy for 2 minutes and toss with the sesame oi..."
+warn  soft-tofu-stew  [doneness] step 3 gives a time but nothing to look for: "Add the soy sauce, fish sauce and dashi and bring to the boil. Add the..."
+warn  soft-tofu-stew  [doneness] step 4 gives a time but nothing to look for: "Spoon the tofu into the pot in large pieces and simmer gently for 3 mi..."
+warn  chicken-tinola  [doneness] step 3 gives a time but nothing to look for: "Pour in the water and bring to the boil, skimming off any foam. Turn d..."
+warn  pancit-bihon  [doneness] step 3 gives a time but nothing to look for: "Add the onion and garlic and stir-fry for 2 minutes. Add the carrot an..."
+warn  chicken-tinga-tostadas  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  arroz-con-pollo  [doneness] step 1 gives a time but nothing to look for: "Season the chicken with 1 tsp of the salt, the paprika and the cumin. ..."
+warn  arroz-con-pollo  [doneness] step 3 gives a time but nothing to look for: "Add the rice and stir for 1 minute to coat in the oil. Pour in the sto..."
+warn  arroz-con-pollo  [doneness] step 4 gives a time but nothing to look for: "Nestle the chicken into the rice. Cover tightly, turn the heat to low ..."
+warn  lomo-saltado  [time] 45 min in all but the steps only account for about 4 min
+warn  lomo-saltado  [time] cookMinutes 30 but the steps name only about 4 min
+warn  chicken-paprikash  [doneness] step 1 gives a time but nothing to look for: "Season the chicken with the salt. Heat the oil in a large deep frying ..."
+warn  philly-cheesesteak  [alternative] "8 slices Swiss cheese (or provolone)": alternative "provolone" is not in the ingredient database
+warn  spaghetti-puttanesca  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  panzanella  [link] "day-old sourdough" linked to sourdough on the single word "sourdough"
+warn  steak-au-poivre  [time] cookMinutes 30 but the steps name only about 3 min
+warn  steak-au-poivre  [doneness] step 1 gives a time but nothing to look for: "Take the steaks out of the fridge 20 minutes before cooking. Heat the ..."
+warn  steak-au-poivre  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  pan-con-tomate  [link] "thick slices sourdough" linked to sourdough on the single word "sourdough"
+warn  spanakopita  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  pastitsio  [doneness] step 3 gives a time but nothing to look for: "Meanwhile, cook the penne in salted water for 2 minutes less than the ..."
+warn  briam  [doneness] step 3 gives a time but nothing to look for: "Cover tightly with foil and bake for 40 minutes...."
+warn  lahmacun  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  imam-bayildi  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  gozleme  [time] cookMinutes 25 but the steps name only about 8 min
+warn  koshari  [doneness] step 3 gives a time but nothing to look for: "Heat 2 tablespoons of the onion oil in the same saucepan over medium h..."
+warn  harcha  [time] cookMinutes 25 but the steps name only about 6 min
+warn  tomato-bredie  [doneness] step 3 gives a time but nothing to look for: "Add the tomatoes, tomato paste, sugar and water, scraping up the brown..."
+warn  chakalaka-pap  [doneness] step 1 gives a time but nothing to look for: "For the chakalaka, heat the oil in a large frying pan over medium heat..."
+warn  rajma  [doneness] step 5 gives a time but nothing to look for: "Meanwhile, cook the rice. Crush the fenugreek leaves between your palm..."
+warn  panang-beef-curry  [near-duplicate] title close to "Beef Curry" (catalogue) (reviewed: a Thai curry, not the catalogue's Beef Curry)
+warn  gai-yang  [time] about 205 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  bun-cha  [time] cookMinutes 25 but the steps name only about 8 min
+warn  banh-xeo  [time] cookMinutes 45 but the steps name only about 8 min
+warn  hot-and-sour-soup  [doneness] step 2 gives a time but nothing to look for: "Bring the stock, mushroom liquid (leave any grit behind) and sliced sh..."
+warn  beef-and-broccoli  [link] "large head broccoli" linked to broccoli on the single word "broccoli"
+warn  beef-and-broccoli  [doneness] step 4 gives a time but nothing to look for: "Add 1 tbsp oil to the hot wok and spread half the beef out in one laye..."
+warn  nikujaga  [doneness] step 4 gives a time but nothing to look for: "Remove the paper, add the snow peas and simmer for 2 minutes more. Tur..."
+warn  chicken-karaage  [time] about 270 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  chicken-karaage  [time] cookMinutes 25 but the steps name only about 5 min
+warn  japchae  [doneness] step 3 gives a time but nothing to look for: "Heat 1 tbsp oil in a wok or large frying pan over medium-high heat. St..."
+warn  gimbap  [time] cookMinutes 30 but the steps name only about 3 min
+warn  gimbap  [doneness] step 3 gives a time but nothing to look for: "Blanch the spinach in boiling water for 30 seconds, rinse under cold w..."
+warn  dakgalbi  [doneness] step 3 gives a time but nothing to look for: "Heat the oil in a large, deep frying pan or wok over medium-high heat...."
+warn  nasi-lemak  [link] "thin slices ginger" linked to ginger on the single word "ginger"
+warn  nasi-lemak  [doneness] step 5 gives a time but nothing to look for: "Boil the eggs for 8 minutes, then cool in cold water and peel. Halve t..."
+warn  char-kway-teow  [time] 35 min in all but the steps only account for about 5 min
+warn  char-kway-teow  [doneness] step 3 gives a time but nothing to look for: "Add the noodles and the sauce and toss for 2 minutes, letting the nood..."
+warn  hainanese-chicken-rice  [near-duplicate] title close to "Chicken and Rice" (catalogue) (reviewed: a named dish, not the generic Chicken and Rice)
+warn  hainanese-chicken-rice  [link] "thick slices ginger" linked to ginger on the single word "ginger"
+warn  hainanese-chicken-rice  [doneness] step 3 gives a time but nothing to look for: "For the rice, heat the oil in a saucepan over medium heat and fry the ..."
+warn  sambal-udang  [doneness] step 3 gives a time but nothing to look for: "Add the onion and cook for 2 minutes. Stir in the tamarind, palm sugar..."
+warn  soto-ayam  [doneness] step 3 gives a time but nothing to look for: "Meanwhile, soak the glass noodles in hot water for 10 minutes and drai..."
+warn  ayam-bakar  [doneness] step 2 gives a time but nothing to look for: "Cut each maryland in two at the joint. Add the chicken, lemongrass, co..."
+warn  perkedel  [link] "chopped celery leaves" linked to celery on the single word "celery"
+warn  sayur-lodeh  [doneness] step 3 gives a time but nothing to look for: "Add the coconut milk and stock and bring to a gentle simmer. Add the c..."
+warn  sinigang  [doneness] step 1 gives a time but nothing to look for: "Put the pork in a large pot, cover with the water and bring to the boi..."
+warn  sinigang  [doneness] step 3 gives a time but nothing to look for: "Stir in the tamarind, then add the daikon and whole chillies and simme..."
+warn  bistek-tagalog  [time] about 271 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  bistek-tagalog  [doneness] step 4 gives a time but nothing to look for: "Pour the marinade, sugar and water into the pan and bring to the boil,..."
+warn  lumpia-shanghai  [time] 70 min in all but the steps only account for about 6 min
+warn  lumpia-shanghai  [time] cookMinutes 25 but the steps name only about 6 min
+warn  elote  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  birria-tacos  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  gallo-pinto  [doneness] step 2 gives a time but nothing to look for: "Add the beans and their liquid and simmer for 2 minutes, lightly crush..."
+warn  moqueca  [doneness] step 3 gives a time but nothing to look for: "Lay the tomato slices over the vegetables, pour in the coconut milk an..."
+warn  eggs-benedict  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  pot-roast  [doneness] step 3 gives a time but nothing to look for: "Turn the heat to medium. Cook the onions for 5 minutes, then stir in t..."
+warn  welsh-rarebit  [doneness] step 1 gives a time but nothing to look for: "Melt the butter in a small saucepan over medium heat. Stir in the flou..."
+warn  scotch-eggs  [doneness] step 1 gives a time but nothing to look for: "Lower the 6 eggs into a saucepan of boiling water and boil for 6 1/2 m..."
+warn  kasespatzle  [doneness] step 3 gives a time but nothing to look for: "Bring a large saucepan of salted water to the boil. Press a third of t..."
+warn  kaiserschmarrn  [doneness] step 4 gives a time but nothing to look for: "Cut the pancake into quarters and flip each one. Cook for 3 minutes mo..."
+warn  bigos  [doneness] step 4 gives a time but nothing to look for: "Cover and cook on low heat for 1 1/2 hours, stirring now and then and ..."
+warn  pytt-i-panna  [link] "pickled beetroot slices" linked to beetroot on the single word "beetroot"
+warn  sang-choy-bow  [doneness] step 3 gives a time but nothing to look for: "Add the carrot and water chestnuts and stir-fry for 1 minute. Add the ..."
+warn  sang-choy-bow  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  ricotta-hotcakes  [time] 35 min in all but the steps only account for about 5 min
+warn  ricotta-hotcakes  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  crispy-skin-barramundi  [link] "skin-on barramundi" linked to white-fish on the single word "barramundi"
+warn  paneer-tikka  [time] about 130 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  paneer-tikka  [style] en dash (use "to")
+warn  gyeran-mari  [style] en dash (use "to")
+warn  roasted-mushroom-and-walnut-pie  [style] en dash (use "to")
+warn  tabbouleh  [duplicate] title already used by "Tabbouleh" (pilot 12 Oct) (reviewed: the 12 Oct pilot is not in the app or the feed; this is the only copy)
+warn  laksa-ipoh  [doneness] step 3 gives a time but nothing to look for: "Add the tamarind paste and palm sugar, stirring to combine, then pour ..."
+warn  sopa-de-lentejas  [style] en dash (use "to")
+warn  pho-ga  [doneness] step 2 gives a time but nothing to look for: "Blanch the chicken bones and pieces: bring a large pot of water to the..."
+warn  pho-ga  [style] en dash (use "to")
+warn  kleicha  [servings] servings 24 (1 to 12 for house recipes) (reviewed: counts biscuits)
+warn  kleicha  [style] en dash (use "to")
+warn  rendang-daging-sapi-padang  [style] en dash (use "to")
+warn  steamed-perch-with-ginger-and-soy  [style] en dash (use "to")
+warn  pad-grapow-moo  [alternative] "1–2 red chillies, sliced (or to taste)": alternative "to taste" is not in the ingredient database
+warn  pad-grapow-moo  [style] en dash (use "to")
+warn  pad-grapow-moo  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  ahi-poke-bowl  [near-duplicate] title close to "Poke Bowl" (catalogue) (reviewed: tuna poke, a different recipe from the catalogue Poke Bowl)
+warn  ahi-poke-bowl  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  bulgogi-with-supermarket-steak  [style] en dash (use "to")
+warn  espinacas-con-garbanzos  [style] en dash (use "to")
+warn  kebab-icli-kofte  [style] en dash (use "to")
+warn  banh-canh-cua  [time] cookMinutes 45 but the steps name only about 12 min
+warn  banh-canh-cua  [doneness] step 4 gives a time but nothing to look for: "Stir in the fish sauce, sugar and crab meat. Simmer for 5 minutes to w..."
+warn  bun-bo-hue  [doneness] step 3 gives a time but nothing to look for: "Add the whole red chillies and fish sauce, and simmer for another 10 m..."
+warn  bun-bo-hue  [doneness] step 5 gives a time but nothing to look for: "Cook the rice noodles according to packet directions. If using fresh n..."
+warn  larb-moo  [alternative] "2–3 birds eye chillies, finely chopped (or less if you prefer)": alternative "less if you prefer" is not in the ingredient database
+warn  larb-moo  [style] en dash (use "to")
+warn  egusi-soup  [link] "beef stewing meat" linked to beef-steak on the single word "beef"
+warn  egusi-soup  [doneness] step 3 gives a time but nothing to look for: "Stir in the tomato paste and cook for 2 minutes, then add the crushed ..."
+warn  beef-stew-with-dumplings  [time] steps add up to about 857 min but prep + cook is 500 min (reviewed: the step sum counts the slow-cooker and stove options twice)
+warn  gigantes-plaki  [style] en dash (use "to")
+warn  pilau-ya-nyama  [doneness] step 4 gives a time but nothing to look for: "Return the beef to the pot. Add the toasted spices and bay leaves, sti..."
+warn  pilau-ya-nyama  [doneness] step 5 gives a time but nothing to look for: "Add the rice, stirring to coat in the oil, and cook for 2 minutes. Pou..."
+warn  gaeng-som-pla  [doneness] step 5 gives a time but nothing to look for: "Add the tomato and simmer for 2 minutes to warm through...."
+warn  gaeng-som-pla  [style] en dash (use "to")
+warn  gaeng-som-pla  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  karahi-chicken  [style] en dash (use "to")
+warn  masala-dosa  [time] 35 min in all but the steps only account for about 6 min
+warn  masala-dosa  [time] cookMinutes 25 but the steps name only about 6 min
+warn  masala-dosa  [style] en dash (use "to")
+warn  boil-up  [doneness] step 1 gives a time but nothing to look for: "Place the corned beef, pork bones, onions and salt in a large pot. Cov..."
+warn  boil-up  [style] en dash (use "to")
+warn  sugo-di-calabria  [doneness] step 3 gives a time but nothing to look for: "Stir in the tomato paste and cook for 2 minutes, then add the tinned t..."
+warn  sugo-di-calabria  [style] en dash (use "to")
+warn  hand-pulled-lanzhou-noodles  [style] en dash (use "to")
+warn  hand-pulled-lanzhou-noodles  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  mercimek-corbas  [style] en dash (use "to")
+warn  mercimek-corbas  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  kinilaw-na-tuna  [style] en dash (use "to")
+warn  borscht  [style] en dash (use "to")
+warn  adobong-manok  [style] en dash (use "to")
+warn  char-koay-teow  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  yakitori-momo  [style] en dash (use "to")
+warn  quenelles-de-brochet  [time] cookMinutes 25 but the steps name only about 9 min
+warn  bacalao-a-la-vizcaina  [link] "dried choricero peppers" linked to black-pepper on the single word "pepper"
+warn  bacalao-a-la-vizcaina  [time] about 1930 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  bacalao-a-la-vizcaina  [doneness] step 5 gives a time but nothing to look for: "Carefully place the warm salt cod fillets into the sauce. Pour about 1..."
+warn  bacalao-a-la-vizcaina  [style] en dash (use "to")
+warn  lamb-and-apricot-bredie  [style] en dash (use "to")
+warn  pantry-chicken-and-lentil-soup  [doneness] step 4 gives a time but nothing to look for: "Stir in the shredded chicken and cook for 5 minutes to warm through. S..."
+warn  roti-with-curried-chickpeas  [style] en dash (use "to")
+warn  roti-with-curried-chickpeas  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  meen-curry  [style] en dash (use "to")
+warn  tagine-d-agneau-aux-pruneaux  [doneness] step 4 gives a time but nothing to look for: "Return the lamb to the pot and stir well to coat. Pour in the chicken ..."
+warn  tagine-d-agneau-aux-pruneaux  [style] en dash (use "to")
+warn  katsudon  [doneness] step 4 gives a time but nothing to look for: "Slice each pork cutlet into strips. Return the pork to the pan, nestle..."
+warn  katsudon  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  braised-pork-rice  [style] en dash (use "to")
+warn  braised-pork-rice  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  brik-aux-oeufs  [alternative] "4 sheets filo pastry (or malsouka if you can get it)": alternative "malsouka if you can get it" is not in the ingredient database
+warn  brik-aux-oeufs  [style] en dash (use "to")
+warn  chicken-and-mushroom-pie  [doneness] step 4 gives a time but nothing to look for: "Sprinkle the flour over the veg, stir well, and cook for 1 minute. Pou..."
+warn  chicken-and-mushroom-pie  [style] en dash (use "to")
+warn  light-soup  [doneness] step 4 gives a time but nothing to look for: "Pour in the stock and return the chicken to the pot. Bring to a boil, ..."
+warn  light-soup  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  dhokla  [time] about 720 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  dhokla  [style] en dash (use "to")
+warn  curry-goat  [style] en dash (use "to")
+warn  scotch-broth  [doneness] step 1 gives a time but nothing to look for: "Bring the water to a boil in a large pot. Add the ham bone or hock and..."
+warn  scotch-broth  [doneness] step 2 gives a time but nothing to look for: "Add the pearl barley and brown lentils. Simmer for another 15 minutes...."
+warn  scotch-broth  [doneness] step 3 gives a time but nothing to look for: "Add the carrots, parsnips, swede and leek. Stir well and simmer for 20..."
+warn  tagliatelle-al-ragu  [doneness] step 5 gives a time but nothing to look for: "Stir in the tomato paste and cook for 1 minute. Add the crushed tomato..."
+warn  tagliatelle-al-ragu  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  galette-de-ble-noir-aux-moules  [style] en dash (use "to")
+warn  pasta-ca-le-sardine  [style] en dash (use "to")
+warn  soy-and-ginger-chicken-thighs-with-bok-choy  [style] en dash (use "to")
+warn  soy-and-ginger-chicken-thighs-with-bok-choy  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  tempe-goreng-sambal-matah  [style] en dash (use "to")
+warn  esqueixada  [alternative] "400 g salt cod fillet, soaked overnight (or 24 hours)": alternative "24 hours" is not in the ingredient database
+warn  esqueixada  [style] en dash (use "to")
+warn  zurek  [link] "good-quality kielbasa sausages" linked to smoked-sausage on the single word "kielbasa"
+warn  zurek  [doneness] step 4 gives a time but nothing to look for: "Pour the żur into a small bowl and stir it with a little warm stock to..."
+warn  zurek  [doneness] step 5 gives a time but nothing to look for: "Return the kielbasa to the pot and simmer for another 5 minutes to war..."
+warn  lemon-myrtle-chicken  [link] "lemon myrtle leaves" linked to lemon on the single word "lemon"
+warn  lamb-souvla  [time] about 122 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  lamb-souvla  [style] en dash (use "to")
+warn  gravad-lax-med-senapssas  [amounts] a lot of salt: "50 g sea salt" (reviewed: curing salt, wiped off before serving)
+warn  ful-medames  [doneness] step 2 gives a time but nothing to look for: "Add the drained broad beans and stir to coat with the oil and garlic. ..."
+warn  ful-medames  [style] en dash (use "to")
+warn  sambal-ikan-bilis  [style] en dash (use "to")
+warn  burrata-freekeh-and-charred-greens  [link] "ball fresh burrata" linked to fresh-mozzarella on the single word "burrata"
+warn  burrata-freekeh-and-charred-greens  [style] en dash (use "to")
+warn  empanadas-de-carne  [style] en dash (use "to")
+warn  negima  [doneness] step 4 gives a time but nothing to look for: "Add spring onion pieces and toss to combine. Cook for 1 minute...."
+warn  negima  [style] en dash (use "to")
+warn  shanghainese-soup-dumplings  [style] en dash (use "to")
+warn  pasta-alla-nduja  [style] en dash (use "to")
+warn  doubles  [time] cookMinutes 45 but the steps name only about 17 min
+warn  doubles  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  tahdig  [doneness] step 5 gives a time but nothing to look for: "Wrap the lid tightly in a clean kitchen towel so the steam stays trapp..."
+warn  shrimp-and-grits  [link] "stone-ground grits" linked to polenta on the single word "grit"
+warn  sheet-pan-chicken-thighs-with-root-vegetables  [style] en dash (use "to")
+warn  gudeg-nangka-muda  [style] en dash (use "to")
+warn  penang-assam-laksa  [doneness] step 5 gives a time but nothing to look for: "Stir in the coconut milk and the extra 2 tbsp tamarind paste. Taste an..."
+warn  com-chien-hai-san  [doneness] step 3 gives a time but nothing to look for: "Add the cold rice, breaking up any clumps with the back of a spatula. ..."
+warn  com-chien-hai-san  [style] en dash (use "to")
+warn  com-chien-hai-san  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  crawfish-etouffee  [doneness] step 4 gives a time but nothing to look for: "Pour in the chicken stock, stirring to combine. Bring to a simmer and ..."
+warn  bariis-iskukaris  [style] en dash (use "to")
+warn  bariis-iskukaris  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  carne-asada  [time] about 275 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  carne-asada  [doneness] step 3 gives a time but nothing to look for: "Remove the steak from the fridge 30 minutes before cooking. Preheat yo..."
+warn  carne-asada  [style] en dash (use "to")
+warn  ceviche-de-corvina  [style] en dash (use "to")
+warn  arepa-con-queso  [style] en dash (use "to")
+warn  arepa-con-queso  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  mole-negro-oaxaqueno  [doneness] step 4 gives a time but nothing to look for: "Add the soaked chillies, raisins, almonds, sesame seeds and torn torti..."
+warn  shiitake-jjim  [doneness] step 3 gives a time but nothing to look for: "Turn the mushrooms and cook for another 2 minutes, then pour in the so..."
+warn  shiitake-jjim  [doneness] step 6 gives a time but nothing to look for: "Scatter the spring onions over the top and cook for 1 minute, then tra..."
+warn  shiitake-jjim  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  com-tam-chay  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  rugbr-d-med-leverpostej-og-agurkesalat  [link] "good-quality bacon" linked to bacon on the single word "bacon"
+warn  rugbr-d-med-leverpostej-og-agurkesalat  [style] en dash (use "to")
+warn  erbsensuppe  [link] "dried split peas" linked to frozen-peas on the single word "pea"
+warn  erbsensuppe  [doneness] step 1 gives a time but nothing to look for: "Put the split peas, ham hock, bay leaves and water into a large pot. B..."
+warn  saucisson-braise-aux-lentilles  [style] en dash (use "to")
+warn  spam-musubi  [style] en dash (use "to")
+warn  spam-musubi  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  sigara-borek  [time] 40 min in all but the steps only account for about 4 min
+warn  sigara-borek  [style] en dash (use "to")
+warn  frijoles-charros  [doneness] step 4 gives a time but nothing to look for: "Add the jalapeños and garlic and cook, stirring, for 1 minute...."
+warn  frijoles-charros  [doneness] step 6 gives a time but nothing to look for: "Bring to a gentle simmer and cook, uncovered, for 10 minutes to let th..."
+warn  skillet-cornbread  [style] en dash (use "to")
+warn  sinigang-na-baboy  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  oyakodon  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  horta-gemisti  [doneness] step 3 gives a time but nothing to look for: "Add the rice and stir for 2 minutes to toast it lightly. Add the chopp..."
+warn  sambar  [doneness] step 5 gives a time but nothing to look for: "Stir in the torn curry leaves and cook for another 2 minutes. Taste an..."
+warn  sambar  [style] en dash (use "to")
+warn  bun-cha-ha-noi  [time] 35 min in all but the steps only account for about 4 min
+warn  pate-de-foies-de-morue  [link] "fresh cod livers" linked to white-fish on the single word "cod"
+warn  pate-de-foies-de-morue  [doneness] step 5 gives a time but nothing to look for: "Cover and chill for at least 30 minutes before serving. Serve on warm ..."
+warn  pate-de-foies-de-morue  [style] en dash (use "to")
+warn  fiji-style-fish-curry  [near-duplicate] title close to "Fish Curry" (catalogue) (reviewed: a regional curry, different from the catalogue Fish Curry)
+warn  fiji-style-fish-curry  [style] en dash (use "to")
+warn  crispy-fish-with-burnt-butter-and-capers  [style] en dash (use "to")
+warn  roti-canai  [style] en dash (use "to")
+warn  cilbir  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  peperoni-cruschi-ripieni  [link] "dried cruschi peppers" linked to black-pepper on the single word "pepper"
+warn  lahori-biryani  [time] about 283 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  kimbap-with-nz-veg  [style] en dash (use "to")
+warn  mango-and-black-rice-buddha-bowl  [style] en dash (use "to")
+warn  ginataang-isda  [style] en dash (use "to")
+warn  falafel  [time] about 120 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  falafel  [doneness] step 3 gives a time but nothing to look for: "Transfer to a bowl, stir through the flour, and season with salt and p..."
+warn  falafel  [style] en dash (use "to")
+warn  pad-cha-gung  [alternative] "3 tbsp dry curry paste (or more to taste)": alternative "more to taste" is not in the ingredient database
+warn  pad-cha-gung  [style] en dash (use "to")
+warn  tlayudas-de-chapulines  [time] 35 min in all but the steps only account for about 8 min
+warn  suqaar  [style] en dash (use "to")
+warn  suqaar  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  miyeok-guk  [doneness] step 4 gives a time but nothing to look for: "Pour in the beef stock and bring to a boil. Reduce the heat to medium ..."
+warn  miyeok-guk  [doneness] step 5 gives a time but nothing to look for: "Add the drained wakame and soy sauce, then simmer for a further 8 minu..."
+warn  miyeok-guk  [style] en dash (use "to")
+warn  timman-z-affaran  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  nasi-kucing  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  milanesa-de-ternera  [style] en dash (use "to")
+warn  melanzane-alla-parmigiana  [style] en dash (use "to")
+warn  pork-and-chive-dumplings  [near-duplicate] title close to "Pork Dumplings" (catalogue) (reviewed: a different filling from Pork Dumplings)
+warn  pork-and-chive-dumplings  [time] cookMinutes 30 but the steps name only about 9 min
+warn  pork-and-chive-dumplings  [doneness] step 5 gives a time but nothing to look for: "Bring a large pot of salted water to a boil. Working in batches, gentl..."
+warn  pork-and-chive-dumplings  [style] en dash (use "to")
+warn  quesadillas-de-flor-de-calabaza  [alternative] "8 corn tortillas (or 12 small ones)": alternative "12 small ones" is not in the ingredient database
+warn  quesadillas-de-flor-de-calabaza  [style] en dash (use "to")
+warn  stinky-tofu  [style] en dash (use "to")
+warn  ayam-goreng-berempah  [style] en dash (use "to")
+warn  gazpacho-andaluz  [time] about 120 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  base-genep  [link] "piece fresh turmeric" linked to ground-turmeric on the single word "turmeric"
+warn  scallops-with-apple-and-corn  [doneness] step 6 gives a time but nothing to look for: "Return the scallops to the pan, gently turn them to coat, and cook for..."
+warn  wattleseed-damper  [style] en dash (use "to")
+warn  paua-fritters  [time] 35 min in all but the steps only account for about 2 min
+warn  paua-fritters  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  ghormeh-sabzi  [doneness] step 5 gives a time but nothing to look for: "Stir in most of the parsley, fenugreek and coriander, reserving a smal..."
+warn  ghormeh-sabzi  [style] en dash (use "to")
+warn  shorshe-ilish  [style] en dash (use "to")
+warn  cabbage-thoran  [style] en dash (use "to")
+warn  hijiki-no-nimono  [link] "dried hijiki seaweed" linked to wakame on the single word "seaweed"
+warn  hobak-bokkeum  [style] en dash (use "to")
+warn  causa-limena  [time] about 120 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  causa-limena  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  pico-de-gallo  [link] "small handful fresh coriander" linked to coriander on the single word "coriander"
+warn  bun-rieu  [doneness] step 3 gives a time but nothing to look for: "Pour in the chicken stock and bring to a simmer. Add the crab meat (if..."
+warn  bun-rieu  [doneness] step 5 gives a time but nothing to look for: "Bring a separate pot of water to a boil. Add the soaked rice vermicell..."
+warn  bun-rieu  [style] en dash (use "to")
+warn  bun-rieu  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  ayam-goreng-yogyakarta  [time] about 260 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  ayam-goreng-yogyakarta  [style] en dash (use "to")
+warn  fatteh-hummus  [style] en dash (use "to")
+warn  snapper-and-sambal-oelek-pasta  [style] en dash (use "to")
+warn  okra-soup  [doneness] step 3 gives a time but nothing to look for: "Stir in the tomato paste and cook for 2 minutes, breaking it down into..."
+warn  okra-soup  [doneness] step 4 gives a time but nothing to look for: "Add the shredded stockfish and stir to coat. Cook for 3 minutes...."
+warn  okra-soup  [doneness] step 5 gives a time but nothing to look for: "Pour in the chicken stock and bring to a gentle simmer. Cook for 15 mi..."
+warn  okra-soup  [doneness] step 6 gives a time but nothing to look for: "Add the sliced okra and stir well, don't worry if it looks very slimy ..."
+warn  okra-soup  [style] en dash (use "to")
+warn  fava  [link] "yellow split peas" linked to frozen-peas on the single word "pea"
+warn  fava  [style] en dash (use "to")
+warn  tarhana-corbas  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  nihari  [doneness] step 4 gives a time but nothing to look for: "Add the flour: Sprinkle the plain flour over the onion mixture and sti..."
+warn  nihari  [style] en dash (use "to")
+warn  pad-cha-het  [style] en dash (use "to")
+warn  chikni-dal  [style] en dash (use "to")
+warn  pol-sambol  [time] cookMinutes is 0 but a step cooks
+warn  pierogi-ruskie  [doneness] step 5 gives a time but nothing to look for: "Bring a large pot of salted water to a boil. Working in batches, drop ..."
+warn  arancini-di-ragu  [time] about 770 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  arancini-di-ragu  [style] en dash (use "to")
+warn  curry-rice-with-sambals  [style] en dash (use "to")
+warn  tarte-a-la-praline  [time] about 270 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  marmitako  [doneness] step 2 gives a time but nothing to look for: "Add the garlic and paprika, stir well, and cook for 1 minute...."
+warn  marmitako  [doneness] step 4 gives a time but nothing to look for: "Add the red and green capsicum and simmer for 5 minutes...."
+warn  marmitako  [style] en dash (use "to")
+warn  scallion-pancakes  [style] en dash (use "to")
+warn  frittata-di-cipolla-e-peperoncino  [doneness] step 2 gives a time but nothing to look for: "Scatter the chilli through the onions and cook for another 2 minutes, ..."
+warn  beef-and-guinness-pie  [doneness] step 1 gives a time but nothing to look for: "Heat oil in a large heavy-based pot over medium-high heat. Season beef..."
+warn  beef-and-guinness-pie  [style] en dash (use "to")
+warn  rice-and-peas  [doneness] step 3 gives a time but nothing to look for: "Add the garlic and cook, stirring, for 1 minute more...."
+warn  waakye  [alternative] "1 litre water (or more, for tinned beans)": alternative "more, for tinned beans" is not in the ingredient database
+warn  waakye  [time] about 120 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  waakye  [doneness] step 3 gives a time but nothing to look for: "Add the millet to the pot. Stir well and cook for 15 minutes, stirring..."
+warn  smoked-mackerel-with-horseradish-cream  [steps] step 4 has a 49-word sentence
+warn  shakshuka-tunisienne  [style] en dash (use "to")
+warn  salatit-al-khudar  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  tortellini-in-brodo  [time] about 300 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  tortellini-in-brodo  [doneness] step 6 gives a time but nothing to look for: "Bring stock to a steady simmer in a large pot. Carefully drop in torte..."
+warn  tortellini-in-brodo  [style] en dash (use "to")
+warn  thieboudienne  [style] en dash (use "to")
+warn  pancit-lomi  [style] en dash (use "to")
+warn  canh-chua-ca  [style] en dash (use "to")
+warn  fafda-jalebi  [alternative] "2 tbsp water (or more to reach piping consistency)": alternative "more to reach piping consistency" is not in the ingredient database
+warn  fafda-jalebi  [style] en dash (use "to")
+warn  boerewors-with-pap  [style] en dash (use "to")
+warn  idli  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  croquetas-de-jamon  [time] about 120 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  croquetas-de-jamon  [style] en dash (use "to")
+warn  black-bean-and-charred-corn-salad-with-cilantro-lime  [style] en dash (use "to")
+warn  black-bean-and-charred-corn-salad-with-cilantro-lime  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  nyama-choma  [doneness] step 4 gives a time but nothing to look for: "Lay the meat on the grill in a single layer. Don't move it for the fir..."
+warn  nyama-choma  [style] en dash (use "to")
+warn  suquet-de-peix  [doneness] step 2 gives a time but nothing to look for: "Stir in the crushed tomatoes and paprika. Cook gently for 5 minutes, l..."
+warn  enchiladas-verdes  [alternative] "300 g salsa verde (or 1 jar)": alternative "1 jar" is not in the ingredient database
+warn  enchiladas-verdes  [style] en dash (use "to")
+warn  zeytinyagl-patl-can-dolmas  [link] "Fresh mint sprigs" linked to mint on the single word "mint"
+warn  paksiw-na-bangus  [style] en dash (use "to")
+warn  ika-ni-lolo  [style] en dash (use "to")
+warn  tori-soboro-don  [alternative] "1 carrot, finely diced (or other leftover veg)": alternative "other leftover veg" is not in the ingredient database
+warn  tori-soboro-don  [doneness] step 3 gives a time but nothing to look for: "Stir in the soy sauce, sugar, and mirin. Simmer for 1 minute to combin..."
+warn  tori-soboro-don  [style] en dash (use "to")
+warn  tori-soboro-don  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  lawar  [style] en dash (use "to")
+warn  okra-stew  [doneness] step 3 gives a time but nothing to look for: "Add the okra and cook, stirring occasionally, for about 8 minutes. Don..."
+warn  okra-stew  [style] en dash (use "to")
+warn  pelau  [alternative] "2 green chillies, chopped (or 1 if you want less heat)": alternative "1 if you want less heat" is not in the ingredient database
+warn  pelau  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  minestra-di-cicoria  [style] en dash (use "to")
+warn  aloo-posto  [style] en dash (use "to")
+warn  chicken-and-sausage-gumbo  [doneness] step 5 gives a time but nothing to look for: "Add the chicken thighs and turn to coat in the roux. Cook for 2–3 minu..."
+warn  chicken-and-sausage-gumbo  [style] en dash (use "to")
+warn  bandeja-paisa  [doneness] step 4 gives a time but nothing to look for: "Fry the eggs: in a separate pan, heat 2 tbsp oil over medium heat. Fry..."
+warn  bandeja-paisa  [style] en dash (use "to")
+warn  gr-ntsager-fra-haven-i-sm-r-og-dild  [doneness] step 2 gives a time but nothing to look for: "Add the carrots and kohlrabi. Stir to coat in the butter, then pour in..."
+warn  pastilla-aux-amandes  [link] "Oil for brushing" linked to neutral-oil on the single word "oil"
+warn  salsa-de-pasilla-oaxaquena  [link] "dried pasilla chilhuacle chillies" linked to red-chilli on the single word "chilly"
+warn  frijoles-negros-refritos  [time] 130 min in all but the steps only account for about 16 min
+warn  frijoles-negros-refritos  [time] cookMinutes 120 but the steps name only about 16 min
+warn  frijoles-negros-refritos  [style] en dash (use "to")
+warn  popiah  [time] cookMinutes 25 but the steps name only about 4 min
+warn  fischfrikadellen  [style] en dash (use "to")
+warn  fish-fragrant-pork-shreds  [style] en dash (use "to")
+warn  nasi-kuning  [style] en dash (use "to")
+warn  banh-mi-chay  [near-duplicate] title close to "Banh Mi" (catalogue) (reviewed: the vegetarian banh mi)
+warn  banh-hoi-nuong  [style] en dash (use "to")
+warn  tahchin  [style] en dash (use "to")
+warn  appam-with-stew  [time] about 510 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  appam-with-stew  [style] en dash (use "to")
+warn  txuleta-de-buey  [doneness] step 4 gives a time but nothing to look for: "Grill for 5–6 minutes on the first side without moving it. You want a ..."
+warn  txuleta-de-buey  [style] en dash (use "to")
+warn  jerk-chicken  [time] about 395 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  jerk-chicken  [style] en dash (use "to")
+warn  khichdi  [style] en dash (use "to")
+warn  ispanakli-borek  [style] en dash (use "to")
+warn  ojja  [style] en dash (use "to")
+warn  fa-alifu-talo  [doneness] step 5 gives a time but nothing to look for: "Remove from oven and let rest for 5 minutes. Unwrap carefully, the ste..."
+warn  dakjim  [style] en dash (use "to")
+warn  simit  [style] en dash (use "to")
+warn  tagine-de-poisson-aux-olives-et-citron  [style] en dash (use "to")
+warn  andouillette-a-la-moutarde  [doneness] step 4 gives a time but nothing to look for: "Add the chicken stock and bring to a simmer. Let it reduce gently for ..."
+warn  andouillette-a-la-moutarde  [doneness] step 6 gives a time but nothing to look for: "Slide the andouillettes back into the sauce, turn to coat them, and wa..."
+warn  andouillette-a-la-moutarde  [style] en dash (use "to")
+warn  thai-green-curry-with-prawns-and-beans  [near-duplicate] title close to "Thai Green Curry" (catalogue) (reviewed: the prawn version)
+warn  thai-green-curry-with-prawns-and-beans  [style] en dash (use "to")
+warn  com-hen  [alternative] "400 g littleneck clams (or hến if you can find them)": alternative "hến if you can find them" is not in the ingredient database
+warn  com-hen  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  sayur-asem  [doneness] step 2 gives a time but nothing to look for: "Stir in tamarind paste and cook for 1 minute, then pour in stock and b..."
+warn  pappardelle-al-ragu-di-maiale  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  dolma-garaz  [doneness] step 2 gives a time but nothing to look for: "Stir the rice, cumin, coriander, cinnamon, cayenne, salt and pepper in..."
+warn  dolma-garaz  [style] en dash (use "to")
+warn  seekh-kebab  [style] en dash (use "to")
+warn  adobong-gata  [doneness] step 3 gives a time but nothing to look for: "Pour in the vinegar and scrape up any browned bits from the bottom of ..."
+warn  tarte-tatin-aux-pommes-de-tasmanie  [link] "medium Tasmanian apples" linked to apple on the single word "apple"
+warn  pasta-con-broccoli-aglio-e-peperoncino  [style] en dash (use "to")
+warn  pasta-con-broccoli-aglio-e-peperoncino  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  rasam  [style] en dash (use "to")
+warn  ojingeo-bokkeum  [style] en dash (use "to")
+warn  apple-and-cider-pork-braise  [link] "medium Tasmanian apples" linked to apple on the single word "apple"
+warn  apple-and-cider-pork-braise  [doneness] step 4 gives a time but nothing to look for: "Return the pork to the pot, add the stock, thyme and bay leaves. Bring..."
+warn  apple-and-cider-pork-braise  [style] en dash (use "to")
+warn  moi-moi  [style] en dash (use "to")
+warn  moi-moi  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  grilled-octopus-with-charred-lemon  [style] en dash (use "to")
+warn  egg-white-soup-with-crab  [time] 35 min in all but the steps only account for about 5 min
+warn  egg-white-soup-with-crab  [style] en dash (use "to")
+warn  gotamba  [style] en dash (use "to")
+warn  teh-tarik  [style] en dash (use "to")
+warn  teh-tarik  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  shrimp-and-bamboo-shoot-dumplings  [doneness] step 5 gives a time but nothing to look for: "Bring a large pot of water to a boil. Working in batches, add dumpling..."
+warn  tacos-al-pastor  [time] about 124 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  tacos-al-pastor  [time] cookMinutes 40 but the steps name only about 3 min
+warn  tacos-al-pastor  [style] en dash (use "to")
+warn  sopa-de-nopales  [style] en dash (use "to")
+warn  torshi  [time] about 62 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  torshi  [doneness] step 2 gives a time but nothing to look for: "In a saucepan, combine the water, vinegar, salt and peppercorns. Bring..."
+warn  torshi  [style] en dash (use "to")
+warn  torshi  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  ika-samoa  [doneness] step 4 gives a time but nothing to look for: "Add the silverbeet stems and cook for 3 minutes. Then add the silverbe..."
+warn  kina-with-rewena  [link] "thick slices rēwena bread" linked to crusty-bread on the single word "bread"
+warn  kina-with-rewena  [style] en dash (use "to")
+warn  quandong-pavlova  [alternative] "250 g quandong, pitted and halved (or whole if small)": alternative "whole if small" is not in the ingredient database
+warn  papa-a-la-huancaina  [style] en dash (use "to")
+warn  nabak-kimchi  [time] about 120 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  nabak-kimchi  [style] en dash (use "to")
+warn  pla-neung-manao-steamed-fish-with-lime-and-chilli  [style] en dash (use "to")
+warn  sambusa  [style] en dash (use "to")
+warn  lumpiang-shanghai  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  mi-ga-cot-dua  [style] en dash (use "to")
+warn  gaeng-hang-lay  [alternative] "3 tbsp red curry paste (or gaeng hang lay paste)": alternative "gaeng hang lay paste" is not in the ingredient database
+warn  gaeng-hang-lay  [style] en dash (use "to")
+warn  involtini-di-melanzane  [style] en dash (use "to")
+warn  slow-cooker-oxtail-stew  [doneness] step 1 gives a time but nothing to look for: "Heat the oil in a large frying pan over medium-high heat. Working in b..."
+warn  buttermilk-biscuits  [style] en dash (use "to")
+warn  buttermilk-biscuits  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  beef-and-spring-onion-stir-fry-rice  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  tinolang-isda  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  fesenjan  [style] en dash (use "to")
+warn  uttapam  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  teriyaki-chicken-plate  [near-duplicate] title close to "Chicken Teriyaki" (catalogue) (reviewed: a Hawaiian plate lunch, not the Japanese dish)
+warn  teriyaki-chicken-plate  [style] en dash (use "to")
+warn  teriyaki-chicken-plate  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  buri-gochu-jjim  [style] en dash (use "to")
+warn  lugaw  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  kleftiko  [doneness] step 5 gives a time but nothing to look for: "Carefully open the paper (steam will billow out). Transfer the lamb to..."
+warn  to-ona-i-sunday-spread  [servings] servings 20 (1 to 12 for house recipes) (reviewed: a feast for a crowd)
+warn  to-ona-i-sunday-spread  [style] en dash (use "to")
+warn  sai-oua  [style] en dash (use "to")
+warn  karaage  [time] about 120 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  charred-broccoli-and-crispy-chickpea-salad  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  horta-vrasti  [style] en dash (use "to")
+warn  pappa-al-pomodoro  [style] en dash (use "to")
+warn  adana-kebab  [style] en dash (use "to")
+warn  haleem  [link] "split yellow chickpeas" linked to chickpeas on the single word "chickpea"
+warn  haleem  [alternative] "¼ tsp cayenne (or to taste)": alternative "to taste" is not in the ingredient database
+warn  haleem  [doneness] step 4 gives a time but nothing to look for: "Return the beef to the pot. Add the crushed tomatoes and stir well. Co..."
+warn  haleem  [style] en dash (use "to")
+warn  aish-baladi-with-cheese-and-olives  [time] about 75 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  aish-baladi-with-cheese-and-olives  [style] en dash (use "to")
+warn  zurek-z-zytem  [time] cookMinutes 90 but the steps name only about 24 min
+warn  zurek-z-zytem  [doneness] step 1 gives a time but nothing to look for: "Put the ham hock into a large pot with the water, onion and bay leaves..."
+warn  zurek-z-zytem  [doneness] step 4 gives a time but nothing to look for: "Stir the żur into the broth, add the shredded ham back to the pot, and..."
+warn  zurek-z-zytem  [style] en dash (use "to")
+warn  calcots-amb-romesco  [style] en dash (use "to")
+warn  caponata  [doneness] step 3 gives a time but nothing to look for: "Stir in the tomato paste and cook for 1 minute. Pour in the crushed to..."
+warn  caponata  [style] en dash (use "to")
+warn  kartoffelsalat  [style] en dash (use "to")
+warn  mulligatawny  [style] en dash (use "to")
+warn  erisseri  [doneness] step 3 gives a time but nothing to look for: "Sprinkle over the ground spice mixture and turmeric, stir well, and co..."
+warn  erisseri  [style] en dash (use "to")
+warn  churrasco-misto  [doneness] step 1 gives a time but nothing to look for: "Build your fire in a churrasco grill or barbecue, using charcoal or wo..."
+warn  githeri  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  sorrel-soup  [style] en dash (use "to")
+warn  hangi-style-lamb-shoulder  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  samgyetang  [link] "whole young chicken" linked to chicken-pieces on the single word "chicken"
+warn  samgyetang  [alternative] "8 g fresh ginseng (인삼), lightly scored (or 5 g dried)": alternative "5 g dried" is not in the ingredient database
+warn  samgyetang  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  pajeon-with-whatever-s-in-the-fridge  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  gratin-de-queue-de-boeuf  [link] "Freshly grated nutmeg" linked to nutmeg on the single word "nutmeg"
+warn  gratin-de-queue-de-boeuf  [style] en dash (use "to")
+warn  adobong-bitso-bitso  [doneness] step 3 gives a time but nothing to look for: "Add the pork liver and heart. Stir and cook for 3 to 4 minutes to brow..."
+warn  adobong-bitso-bitso  [doneness] step 4 gives a time but nothing to look for: "Pour in the soy sauce and vinegar, and stir to coat the meat. Let it s..."
+warn  etli-nohut  [doneness] step 3 gives a time but nothing to look for: "Stir in the tomato paste and cook for 2 minutes, then add the cumin, c..."
+warn  etli-nohut  [doneness] step 4 gives a time but nothing to look for: "Return the lamb to the pot. Pour in the beef stock and add the bay lea..."
+warn  piquillo-peppers-stuffed-with-bacalao  [time] about 2880 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  pepes-tempe  [style] en dash (use "to")
+warn  minestra-di-fave-e-cicoria  [style] en dash (use "to")
+warn  twice-cooked-pork  [time] cookMinutes 50 but the steps name only about 16 min
+warn  sakura-ebi-and-pea-rice  [style] en dash (use "to")
+warn  bagte-g-med-l-g-og-persillesalat  [link] "large bunch fresh parsley" linked to parsley on the single word "parsley"
+warn  kibbeh  [style] en dash (use "to")
+warn  sate-babi  [time] about 1485 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  sate-babi  [style] en dash (use "to")
+warn  banh-mi-thit-nuong  [time] about 135 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  banh-mi-thit-nuong  [time] cookMinutes 25 but the steps name only about 4 min
+warn  banh-mi-thit-nuong  [style] en dash (use "to")
+warn  bamia  [doneness] step 3 gives a time but nothing to look for: "Stir in the tomato paste, cinnamon and cloves, and cook for 1 minute t..."
+warn  tebasaki  [style] en dash (use "to")
+warn  cacio-e-pepe  [style] en dash (use "to")
+warn  zaalouk  [doneness] step 5 gives a time but nothing to look for: "Add the eggplant to the tomato pan and stir gently to combine. Cook fo..."
+warn  zaalouk  [style] en dash (use "to")
+warn  makroudh  [link] "orange blossom water" linked to orange on the single word "orange"
+warn  makroudh  [link] "orange blossom water" linked to orange on the single word "orange"
+warn  makroudh  [time] 50 min in all but the steps only account for about 9 min
+warn  makroudh  [style] en dash (use "to")
+warn  asado-de-tira  [link] "beef short ribs" linked to beef-steak on the single word "beef"
+warn  asado-de-tira  [style] en dash (use "to")
+warn  pad-krapow-gung  [style] en dash (use "to")
+warn  wambatu-curry  [doneness] step 4 gives a time but nothing to look for: "Add eggplant cubes and stir to coat in the spice mixture. Cook for 2 m..."
+warn  wambatu-curry  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  bush-tomato-lamb-stew  [link] "dried bush tomato" linked to tomato on the single word "tomato"
+warn  bush-tomato-lamb-stew  [time] 165 min in all but the steps only account for about 10 min
+warn  bush-tomato-lamb-stew  [time] cookMinutes 150 but the steps name only about 10 min
+warn  bush-tomato-lamb-stew  [doneness] step 1 gives a time but nothing to look for: "Heat the oil in a large heavy-bottomed pot or camp oven over medium-hi..."
+warn  bush-tomato-lamb-stew  [style] en dash (use "to")
+warn  bush-tomato-lamb-stew  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  pepper-sauce  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  low-country-red-rice  [doneness] step 3 gives a time but nothing to look for: "Stir in the rice and cook for 1 minute, coating it in the fat...."
+warn  matzo-ball-soup  [alternative] "120 ml neutral oil (or schmaltz) (chicken fat)": alternative "schmaltz" is not in the ingredient database
+warn  matzo-ball-soup  [doneness] step 1 gives a time but nothing to look for: "Make the broth: place chicken bones in a large pot, cover with 3 litre..."
+warn  matzo-ball-soup  [doneness] step 5 gives a time but nothing to look for: "Carefully drop the matzo balls into the boiling water one at a time. T..."
+warn  barbacoa  [doneness] step 5 gives a time but nothing to look for: "Remove from the oven and let rest for 15 minutes. Unwrap carefully, wa..."
+warn  ajiaco-colombiano  [doneness] step 1 gives a time but nothing to look for: "Put the chicken thighs, onion quarters and crushed garlic into a large..."
+warn  ajiaco-colombiano  [style] en dash (use "to")
+warn  kopytka  [doneness] step 3 gives a time but nothing to look for: "Bring a large pot of salted water to a boil. Dust the work surface lig..."
+warn  kopytka  [style] en dash (use "to")
+warn  atole-de-chocolate  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  rajas-poblanas  [style] en dash (use "to")
+warn  khoresh-rivas  [doneness] step 3 gives a time but nothing to look for: "Return the lamb to the pot. Add the tomato paste and stir to coat. Pou..."
+warn  mi-xao-rau-muong  [alternative] "400 g fresh wheat noodles (or dried, cooked and cooled)": alternative "dried, cooked and cooled" is not in the ingredient database
+warn  mi-xao-rau-muong  [style] en dash (use "to")
+warn  granita-di-mandorla  [time] about 210 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  mackerel-rundown  [doneness] step 5 gives a time but nothing to look for: "Taste and season with salt and pepper. If you used the whole chilli an..."
+warn  ezogelin-corbas  [style] en dash (use "to")
+warn  steak-and-ale-pudding  [doneness] step 3 gives a time but nothing to look for: "Return the beef to the pan. Pour in the ale and stock, scraping the bo..."
+warn  steak-and-ale-pudding  [doneness] step 10 gives a time but nothing to look for: "Place the pudding basin in a large pot and add enough boiling water to..."
+warn  semlor  [style] en dash (use "to")
+warn  seezunge-mullerin-art  [style] en dash (use "to")
+warn  soupe-a-l-oignon  [doneness] step 4 gives a time but nothing to look for: "Pour in the fish stock and add the bay leaf. Bring to a simmer, then l..."
+warn  soupe-a-l-oignon  [style] en dash (use "to")
+warn  kalua-pork  [style] en dash (use "to")
+warn  sm-rrebr-d-med-roastbeef-og-remoulade  [link] "good-quality roast beef" linked to beef-steak on the single word "beef"
+warn  sm-rrebr-d-med-roastbeef-og-remoulade  [time] cookMinutes is 0 but a step cooks
+warn  bap-with-gochujang-butter  [style] en dash (use "to")
+warn  arros-negre  [link] "sachets squid ink" linked to calamari on the single word "squid"
+warn  banga-soup  [doneness] step 5 gives a time but nothing to look for: "Add the reserved stockfish cooking liquid, the stockfish meat, dried c..."
+warn  banga-soup  [doneness] step 6 gives a time but nothing to look for: "Stir in the ground crayfish, salt, and black pepper. Taste and adjust ..."
+warn  banga-soup  [style] en dash (use "to")
+warn  chikuwa-don  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  kik-alicha  [link] "yellow split peas" linked to frozen-peas on the single word "pea"
+warn  kik-alicha  [doneness] step 3 gives a time but nothing to look for: "Stir in the turmeric and cardamom, and cook for 1 minute to bloom the ..."
+warn  buniga-ni-lolo  [doneness] step 3 gives a time but nothing to look for: "Stir in the cumin, coriander and turmeric, and cook for 1 minute to re..."
+warn  buniga-ni-lolo  [doneness] step 4 gives a time but nothing to look for: "Add the eggplant chunks and stir to coat in the spice mixture. Cook fo..."
+warn  banh-nam  [time] cookMinutes 50 but the steps name only about 11 min
+warn  shami-kebab  [link] "Sliced raw onion" linked to brown-onion on the single word "onion"
+warn  crispy-tofu-rice-paper-rolls-with-chilli-dipping-sauce  [style] en dash (use "to")
+warn  crispy-tofu-rice-paper-rolls-with-chilli-dipping-sauce  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  squid-and-chilli  [style] en dash (use "to")
+warn  tortelloni-di-ricotta-e-spinaci  [doneness] step 6 gives a time but nothing to look for: "Drop the agnolotti into the boiling water. They'll sink, then bob to t..."
+warn  tortelloni-di-ricotta-e-spinaci  [style] en dash (use "to")
+warn  mee-goreng-mamak  [alternative] "250 g fresh egg noodles (or cooked noodles)": alternative "cooked noodles" is not in the ingredient database
+warn  mee-goreng-mamak  [doneness] step 5 gives a time but nothing to look for: "Add the noodles and break them up as you stir-fry, coating them with t..."
+warn  curry-duck  [time] 145 min in all but the steps only account for about 23 min
+warn  curry-duck  [time] cookMinutes 120 but the steps name only about 23 min
+warn  curry-duck  [doneness] step 5 gives a time but nothing to look for: "Taste and adjust seasoning with salt and pepper. If the sauce is too t..."
+warn  tomato-rice-with-eggs  [style] en dash (use "to")
+warn  tomato-rice-with-eggs  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  cavolfiore-affogato  [doneness] step 2 gives a time but nothing to look for: "Add the cauliflower florets and stir to coat in the oil and garlic. Co..."
+warn  cavolfiore-affogato  [style] en dash (use "to")
+warn  perlou  [doneness] step 4 gives a time but nothing to look for: "Add the rice to the pan and stir constantly for 2 minutes, letting the..."
+warn  naam-tok-gai  [style] en dash (use "to")
+warn  grilled-lapu-lapu-with-vinegar-dip  [style] en dash (use "to")
+warn  snags-and-onion-gravy  [doneness] step 3 gives a time but nothing to look for: "Stir in the tomato paste and cook for 1 minute, then add the beef stoc..."
+warn  cassava-cake  [style] en dash (use "to")
+warn  barramundi-with-thai-basil-and-chilli  [style] en dash (use "to")
+warn  barramundi-with-thai-basil-and-chilli  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  gat-kimchi  [time] cookMinutes is 0 but a step cooks
+warn  gat-kimchi  [amounts] a lot of salt: "3 tbsp salt, divided" (reviewed: brining salt, rinsed off)
+warn  gat-kimchi  [style] en dash (use "to")
+warn  masgouf  [alternative] "2 whole barramundi (or carp), about 600 g each, cleaned and gutted": alternative "carp" is not in the ingredient database
+warn  masgouf  [style] en dash (use "to")
+warn  pipi-soup  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  corned-beef-silog  [style] en dash (use "to")
+warn  corned-beef-silog  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  chili-oil-chicken  [doneness] step 1 gives a time but nothing to look for: "Bring the 6 cups water to a boil in a large pot. Add the spring onion ..."
+warn  chili-oil-chicken  [style] en dash (use "to")
+warn  chili-oil-chicken  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  gatsby  [style] en dash (use "to")
+warn  gatsby  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  cendol  [time] 35 min in all but the steps only account for about 6 min
+warn  cendol  [doneness] step 3 gives a time but nothing to look for: "Bring a large pot of water to the boil (about 2 litres). Place the cen..."
+warn  gado-gado-bali  [link] "piece fresh galangal" linked to galangal on the single word "galangal"
+warn  gado-gado-bali  [doneness] step 3 gives a time but nothing to look for: "Grind the roasted peanuts finely. Add to the pan along with the palm s..."
+warn  ikan-sambal-matah  [style] en dash (use "to")
+warn  com-tam-suon-nuong  [time] about 142 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  com-tam-suon-nuong  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  kanji-vada  [time] about 240 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  kanji-vada  [time] cookMinutes 35 but the steps name only about 5 min
+warn  kanji-vada  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  abgoosht  [doneness] step 1 gives a time but nothing to look for: "Heat the oil in a large heavy pot over medium-high heat. Brown the bee..."
+warn  abgoosht  [doneness] step 4 gives a time but nothing to look for: "Reduce to a low simmer, cover, and cook for 45 minutes...."
+warn  rad-na-gai  [style] en dash (use "to")
+warn  miso-soup-with-hamaguri  [near-duplicate] title close to "Miso Soup" (catalogue) (reviewed: clam miso soup)
+warn  chupe-de-camarones  [style] en dash (use "to")
+warn  jaew-makhuea-thet-charred-tomato-jaew  [style] en dash (use "to")
+warn  wattleseed-shortbread  [style] en dash (use "to")
+warn  lentil-ladera  [doneness] step 3 gives a time but nothing to look for: "Stir in the lentils and cook for 2 minutes, then add the crushed tomat..."
+warn  lentil-and-rice-soup  [near-duplicate] title close to "Lentil Soup" (catalogue) (reviewed: a different soup from Lentil Soup)
+warn  lentil-and-rice-soup  [doneness] step 3 gives a time but nothing to look for: "Tip in the lentils and rice, stir to coat with oil, and cook for 1 min..."
+warn  mboga-ya-managu  [doneness] step 4 gives a time but nothing to look for: "Pour in the tinned tomatoes, breaking them up with a spoon. Simmer for..."
+warn  grilled-fish-wrapped-in-vine-leaves  [style] en dash (use "to")
+warn  lamb-and-cumin-hand-pulled-noodles  [style] en dash (use "to")
+warn  kokotxas-en-salsa-verde  [doneness] step 3 gives a time but nothing to look for: "Pour the cooking liquid (about 300 ml) into the pan with the garlic an..."
+warn  fideua  [doneness] step 4 gives a time but nothing to look for: "Add the tomato and cook for 2 minutes, stirring...."
+warn  janssons-frestelse  [style] en dash (use "to")
+warn  pampushky  [style] en dash (use "to")
+warn  trout-with-brown-butter-and-hazelnuts  [style] en dash (use "to")
+warn  dhal-puri  [link] "yellow split peas" linked to frozen-peas on the single word "pea"
+warn  dhal-puri  [style] en dash (use "to")
+warn  dhal-puri  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  mee-rebus  [doneness] step 1 gives a time but nothing to look for: "Bring a small pot of water to the boil and gently lower in the eggs. B..."
+warn  mee-rebus  [doneness] step 3 gives a time but nothing to look for: "Add the laksa paste and fry, stirring, for 1 minute. Add the tamarind ..."
+warn  mee-rebus  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  shortbread  [style] en dash (use "to")
+warn  brown-stew-chicken  [doneness] step 3 gives a time but nothing to look for: "Stir in the tomato paste, allspice, black pepper and salt. Cook for 1 ..."
+warn  brown-stew-chicken  [style] en dash (use "to")
+warn  pates-aux-anchois-et-harissa  [doneness] step 5 gives a time but nothing to look for: "Add the crushed tomatoes and simmer for 5 minutes, stirring occasional..."
+warn  tteokguk-with-supermarket-veg  [doneness] step 4 gives a time but nothing to look for: "Add the spring onion, stir once, and simmer for 1 minute. Serve hot...."
+warn  chole-bhature  [time] cookMinutes 90 but the steps name only about 32 min
+warn  hokey-pokey-pavlova  [link] "hokey pokey ice cream" linked to cream on the single word "cream"
+warn  hokey-pokey-pavlova  [style] en dash (use "to")
+warn  kubbat-timman  [doneness] step 2 gives a time but nothing to look for: "Heat the oil in a large pot over medium heat. Working in batches, brow..."
+warn  kubbat-timman  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  yukgaejang  [doneness] step 4 gives a time but nothing to look for: "Pour in the stock and bring to a boil, about 5 minutes. Skim any foam ..."
+warn  salatit-shamandar  [style] en dash (use "to")
+warn  gaeng-phed-pla  [style] en dash (use "to")
+warn  camp-oven-rabbit-stew  [time] steps add up to about 305 min but prep + cook is 170 min (reviewed: the step sum counts overlapping simmering times)
+warn  chicken-inasal  [duplicate] title already used by "Chicken Inasal" (pilot 12 Oct) (reviewed: the 12 Oct pilot is not in the app or the feed; this is the only copy)
+warn  chicken-inasal  [time] about 124 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  chicken-inasal  [style] en dash (use "to")
+warn  lau-chingri  [doneness] step 3 gives a time but nothing to look for: "Add the bottle gourd cubes and stir gently to coat with the oil. Cook ..."
+warn  lau-chingri  [style] en dash (use "to")
+warn  fufu  [style] en dash (use "to")
+warn  flathead-with-lemon-and-thyme  [style] en dash (use "to")
+warn  kartoffelsuppe-med-persille-og-l-g  [style] en dash (use "to")
+warn  kanpyo-no-nimono  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  sate-lilit  [style] en dash (use "to")
+warn  frijoles-refritos  [style] en dash (use "to")
+warn  laabda  [doneness] step 1 gives a time but nothing to look for: "Heat the ghee in a large heavy-bottomed pot over medium-high heat. Wor..."
+warn  laabda  [doneness] step 4 gives a time but nothing to look for: "Stir in the cardamom, cinnamon, cloves, turmeric, salt and pepper. Coo..."
+warn  laabda  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  baklava  [time] about 120 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  baklava  [servings] servings 20 (1 to 12 for house recipes) (reviewed: counts pieces)
+warn  roti-and-dal  [link] "yellow split peas" linked to frozen-peas on the single word "pea"
+warn  tripe-and-onions  [doneness] step 2 gives a time but nothing to look for: "Sprinkle the flour over the onions and stir well to coat. Cook for 1 m..."
+warn  chile-poblano-relleno-de-queso  [style] en dash (use "to")
+warn  labskaus  [doneness] step 2 gives a time but nothing to look for: "Add the diced potato and corned beef. Stir to combine and cook for 2 m..."
+warn  labskaus  [doneness] step 4 gives a time but nothing to look for: "Stir in the chopped herring and the herring brine. Cook for another 2 ..."
+warn  che-ba-mau  [time] cookMinutes 45 but the steps name only about 11 min
+warn  che-ba-mau  [doneness] step 4 gives a time but nothing to look for: "Bring a large pot of water to the boil. Carefully drop the rice flour ..."
+warn  tunisian-chicken-with-olives-and-preserved-lemon  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  fisk-i-persiljesas  [style] en dash (use "to")
+warn  garlic-shrimp-plate-lunch  [style] en dash (use "to")
+warn  garlic-shrimp-plate-lunch  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  gochujang-chicken-thighs  [style] en dash (use "to")
+warn  viande-a-la-tomate  [doneness] step 3 gives a time but nothing to look for: "Stir in the tomato paste and cook for 1 minute, then add the tinned to..."
+warn  faikakai-taro  [doneness] step 6 gives a time but nothing to look for: "Let rest for 5 minutes, then carefully open the banana leaf (watch the..."
+warn  faikakai-taro  [style] en dash (use "to")
+warn  quenelles-de-foie  [time] cookMinutes 40 but the steps name only about 6 min
+warn  quenelles-de-foie  [doneness] step 3 gives a time but nothing to look for: "Using two warm, wet soup spoons (dip them in hot water and dry well), ..."
+warn  teff-injera  [time] 40 min in all but the steps only account for about 2 min
+warn  haydari  [time] cookMinutes is 0 but a step cooks
+warn  galbijjim  [link] "beef short ribs" linked to beef-steak on the single word "beef"
+warn  galbijjim  [doneness] step 1 gives a time but nothing to look for: "Blanch the short ribs: bring a large pot of water to the boil, add the..."
+warn  galbijjim  [doneness] step 2 gives a time but nothing to look for: "Heat a heavy-based braising pot or large Dutch oven over medium-high h..."
+warn  kuah-lkor  [style] en dash (use "to")
+warn  pasteli  [time] about 120 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  bun-cha-ca-hue  [alternative] "300 g fresh fish cakes, sliced 1 cm thick (or canned, drained)": alternative "canned, drained" is not in the ingredient database
+warn  bun-cha-ca-hue  [alternative] "400 g fresh rice vermicelli (or dried, cooked and drained)": alternative "dried, cooked and drained" is not in the ingredient database
+warn  bun-cha-ca-hue  [time] cookMinutes 25 but the steps name only about 8 min
+warn  moqueca-baiana  [doneness] step 3 gives a time but nothing to look for: "Stir in the tomato paste and cook for 1 minute to deepen the flavour...."
+warn  honey-soy-chicken-stir-fry  [near-duplicate] title close to "Chicken Stir Fry" (catalogue) (reviewed: a named stir-fry)
+warn  honey-soy-chicken-stir-fry  [link] "stir-fry sauce" linked to frozen-chips on the single word "fry"
+warn  honey-soy-chicken-stir-fry  [alternative] "Cooked rice (or noodles)": alternative "noodles" is not in the ingredient database
+warn  orecchiette-con-cime-di-rapa  [style] en dash (use "to")
+warn  bistek-na-isda  [alternative] "800 g firm white fish steak (or fillet), cut into 4 pieces (barramundi, snapper or ling)": alternative "fillet" is not in the ingredient database
+warn  bistek-na-isda  [style] en dash (use "to")
+warn  wattleseed-and-macadamia-biscuits  [servings] servings 20 (1 to 12 for house recipes) (reviewed: counts biscuits)
+warn  wattleseed-and-macadamia-biscuits  [style] en dash (use "to")
+warn  siraegi-bokkeum  [link] "dried radish greens" linked to radish on the single word "radish"
+warn  holubtsi  [doneness] step 5 gives a time but nothing to look for: "In the same pan, stir together the tomato paste and cook for 1 minute...."
+warn  holubtsi  [style] en dash (use "to")
+warn  pad-phed-gai  [style] en dash (use "to")
+warn  kaeng-ho  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  stewed-saltfish  [style] en dash (use "to")
+warn  tepsi-galay  [doneness] step 3 gives a time but nothing to look for: "Stir in the tomato paste and cook for 2 minutes, then add the crushed ..."
+warn  labaneh-with-za-atar  [time] about 780 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  cassava-fries-with-sea-salt  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  slow-cooker-lamb-neck-with-tomato  [time] steps add up to about 782 min but prep + cook is 495 min (reviewed: the step sum counts the low and high options twice)
+warn  slow-cooker-lamb-neck-with-tomato  [doneness] step 1 gives a time but nothing to look for: "Heat a frying pan over high heat. Working in batches, brown the lamb n..."
+warn  flaki  [doneness] step 3 gives a time but nothing to look for: "Stir in the paprika and tomato paste, cooking gently for 2 minutes. Po..."
+warn  cullen-skink  [style] en dash (use "to")
+warn  bacalao-al-pil-pil  [style] en dash (use "to")
+warn  kaldolmere  [doneness] step 4 gives a time but nothing to look for: "Heat the oil in a saucepan over medium heat. Stir in the tomato paste ..."
+warn  kaldolmere  [style] en dash (use "to")
+warn  artsoppa-med-flask  [link] "dried yellow split peas" linked to frozen-peas on the single word "pea"
+warn  rotkohl-mit-apfeln  [doneness] step 2 gives a time but nothing to look for: "Add the sliced red cabbage and stir through to coat in the oil. Cook, ..."
+warn  rotkohl-mit-apfeln  [doneness] step 3 gives a time but nothing to look for: "Pour in the vinegar and water, add the bay leaves and caraway seeds, a..."
+warn  rotkohl-mit-apfeln  [style] en dash (use "to")
+warn  halwa  [style] en dash (use "to")
+warn  file-gumbo  [doneness] step 3 gives a time but nothing to look for: "Add the chicken and sausage. Stir to coat with roux, and cook for 5 mi..."
+warn  sancocho-de-pollo  [doneness] step 3 gives a time but nothing to look for: "Pour in the chicken stock and bring to a boil, then add the browned ch..."
+warn  sancocho-de-pollo  [doneness] step 4 gives a time but nothing to look for: "Add the yuca and potatoes, return to a boil, then reduce heat and simm..."
+warn  ful-with-egg-and-tomato  [style] en dash (use "to")
+warn  tofu-katsu  [style] en dash (use "to")
+warn  tofu-katsu  [style] cup measure (fine if a 250ml metric cup, prefer g/ml)
+warn  fattet-tammam  [style] en dash (use "to")
+warn  escabeche  [time] about 120 min of resting, marinating or chilling isn't in the time (house policy pending)
+warn  escabeche  [doneness] step 5 gives a time but nothing to look for: "Pour in the cane vinegar, water, brown sugar, salt and bay leaves. Sti..."
+
+Recipes failing, by check: none
+Recipes warned, by check: style 319, doneness 174, time 82, link 47, alternative 26, near-duplicate 11, servings 4, duplicate 2, amounts 2, steps 1
+PASS 711/711; 0 failures, 745 warnings
