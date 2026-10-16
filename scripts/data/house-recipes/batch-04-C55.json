@@ -1,0 +1,609 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "nam-jim-seafood-chilli-lime-sauce",
+      "title": "Nam Jim Seafood Chilli Lime Sauce",
+      "summary": "A sharp, garlicky green chilli and lime sauce that wakes up steamed fish and prawns.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 3,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 green chillies, roughly chopped",
+            "4 garlic cloves",
+            "1 bunch coriander",
+            "4 tbsp lime juice",
+            "2 tbsp fish sauce",
+            "1 tbsp caster sugar",
+            "2 tbsp water"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the chillies, garlic and coriander with the lime juice, fish sauce, sugar and water until a loose, slightly chunky sauce forms.",
+        "Taste and add sugar if too sharp or lime if too flat.",
+        "Spoon over hot steamed fish or prawns just before serving."
+      ],
+      "notes": [
+        "Wear gloves when cutting the chillies, or wash your hands well afterwards.",
+        "Use within 3 days; the colour fades as it sits."
+      ],
+      "nutrition": {
+        "kcal": 44,
+        "proteinG": 2,
+        "carbsG": 8,
+        "fatG": 0,
+        "fibreG": 2,
+        "sodiumMg": 1200
+      }
+    },
+    {
+      "id": "balkan-ajvar-roasted-capsicum-spread",
+      "title": "Balkan Ajvar Roasted Capsicum Spread",
+      "summary": "A smoky roasted capsicum and eggplant relish eaten on bread or with grilled meat.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "dinner",
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 10,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "5 red capsicums",
+            "1 large eggplant",
+            "3 garlic cloves",
+            "4 tbsp olive oil",
+            "2 tbsp white wine vinegar",
+            "1 tsp salt",
+            "1/2 tsp sugar"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the whole capsicums and eggplant at 220°C for 45 minutes, turning once, until blackened and collapsing.",
+        "Cover the vegetables in a bowl for 10 minutes, then peel off the skins and remove the seeds and stalks.",
+        "Blend the flesh with the garlic, vinegar, salt and sugar, then cook in a saucepan with the oil over low heat for 10 minutes until thick."
+      ],
+      "notes": [
+        "Stir often so it does not catch on the base.",
+        "Keeps for 1 week in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 87,
+        "proteinG": 1,
+        "carbsG": 8,
+        "fatG": 5,
+        "fibreG": 3,
+        "sodiumMg": 240
+      }
+    },
+    {
+      "id": "canarian-mojo-rojo-red-sauce",
+      "title": "Canarian Mojo Rojo Red Sauce",
+      "summary": "A garlicky red pepper sauce from the Canary Islands, served with potatoes and grilled meat.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 dried red chillies",
+            "1 tsp smoked paprika",
+            "4 garlic cloves",
+            "1 tsp ground cumin",
+            "100ml olive oil",
+            "3 tbsp red wine vinegar",
+            "1/2 tsp salt",
+            "2 tbsp water"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the chillies in hot water for 10 minutes until soft, then drain and discard the stalks.",
+        "Blend the chillies, paprika, garlic, cumin and salt to a paste.",
+        "Add the vinegar and water, then blend while slowly pouring in the oil until thick and glossy."
+      ],
+      "notes": [
+        "Classic with salt-crusted baby potatoes.",
+        "Keeps for 1 week in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 112,
+        "proteinG": 0,
+        "carbsG": 1,
+        "fatG": 12,
+        "fibreG": 0,
+        "sodiumMg": 140
+      }
+    },
+    {
+      "id": "portuguese-piri-piri-sauce",
+      "title": "Portuguese Piri Piri Sauce",
+      "summary": "A hot lemon and garlic chilli sauce for basting chicken or dipping chips.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 10,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 red chillies, roughly chopped",
+            "4 garlic cloves",
+            "80ml olive oil",
+            "4 tbsp lemon juice",
+            "2 tbsp red wine vinegar",
+            "2 tsp smoked paprika",
+            "1 tsp dried oregano",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the chillies, garlic, paprika, oregano and salt with the lemon juice and vinegar until fairly smooth.",
+        "Pour into a saucepan with the oil and simmer over low heat for 8 minutes, stirring, until slightly thickened and the raw edge is gone.",
+        "Cool, taste and adjust the salt and acid."
+      ],
+      "notes": [
+        "Brush on at the end of cooking so the sugars do not burn.",
+        "Keeps in the fridge for 2 weeks."
+      ],
+      "nutrition": {
+        "kcal": 76,
+        "proteinG": 0,
+        "carbsG": 1,
+        "fatG": 8,
+        "fibreG": 0,
+        "sodiumMg": 220
+      }
+    },
+    {
+      "id": "argentine-red-chimichurri",
+      "title": "Argentine Red Chimichurri",
+      "summary": "A red version of chimichurri with capsicum and chilli, built for grilled steak.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 bunch flat-leaf parsley",
+            "4 garlic cloves",
+            "1 roasted red capsicum, from a jar, drained",
+            "1 tsp dried oregano",
+            "1 tsp chilli flakes",
+            "100ml olive oil",
+            "3 tbsp red wine vinegar",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Finely chop the parsley and garlic by hand or in short pulses.",
+        "Blend or chop the capsicum into small pieces and stir it in with the oregano, chilli flakes and salt.",
+        "Stir in the oil and vinegar until combined, then leave for 15 minutes so the flavours soften."
+      ],
+      "notes": [
+        "Keep it chunky, not puréed.",
+        "Use within 5 days."
+      ],
+      "nutrition": {
+        "kcal": 118,
+        "proteinG": 0,
+        "carbsG": 2,
+        "fatG": 12,
+        "fibreG": 1,
+        "sodiumMg": 120
+      }
+    },
+    {
+      "id": "peruvian-style-yellow-chilli-cream-sauce",
+      "title": "Peruvian-Style Yellow Chilli Cream Sauce",
+      "summary": "A creamy, mild yellow chilli sauce in the style of Peruvian huancaina, for potatoes and eggs.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 yellow capsicum, roasted and peeled",
+            "1 green chilli",
+            "100g feta",
+            "100ml evaporated milk",
+            "4 saltine crackers",
+            "2 tbsp olive oil",
+            "1 tbsp lime juice",
+            "1/4 tsp ground turmeric"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the capsicum, chilli, feta, milk, crackers, turmeric and lime juice until smooth.",
+        "Pour in the oil slowly while blending until the sauce is thick and creamy.",
+        "Taste and adjust with lime or a pinch of salt, then chill before serving."
+      ],
+      "notes": [
+        "Feta is salty, so check before adding any extra salt.",
+        "Use within 3 days."
+      ],
+      "nutrition": {
+        "kcal": 91,
+        "proteinG": 3,
+        "carbsG": 4,
+        "fatG": 7,
+        "fibreG": 0,
+        "sodiumMg": 230
+      }
+    },
+    {
+      "id": "sweet-tomato-chutney-for-snacks",
+      "title": "Sweet Tomato Chutney for Snacks",
+      "summary": "A sticky tomato chutney with cumin and ginger for dosa, fritters and cheese toasties.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 10,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g tinned chopped tomatoes",
+            "1 onion, finely chopped",
+            "1 tbsp grated ginger",
+            "3 garlic cloves, minced",
+            "2 tbsp vegetable oil",
+            "1 tsp cumin seeds",
+            "1 tsp chilli powder",
+            "1/2 tsp ground turmeric",
+            "3 tbsp brown sugar",
+            "3 tbsp white vinegar",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a saucepan over medium heat, add the cumin seeds and cook for 30 seconds until they sizzle.",
+        "Add the onion and cook for 6 minutes until soft, then stir in the ginger, garlic, chilli and turmeric for 1 minute.",
+        "Add the tomatoes, sugar, vinegar and salt, then simmer for 20 minutes, stirring now and then, until thick and jammy."
+      ],
+      "notes": [
+        "Cool before spooning into a clean jar.",
+        "Keeps in the fridge for 2 weeks."
+      ],
+      "nutrition": {
+        "kcal": 79,
+        "proteinG": 1,
+        "carbsG": 11,
+        "fatG": 3,
+        "fibreG": 2,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "homemade-japanese-ponzu-sauce",
+      "title": "Homemade Japanese Ponzu Sauce",
+      "summary": "A citrus-soy sauce for dumplings, grilled fish and cold noodles.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "dinner",
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 tbsp lemon juice",
+            "2 tbsp lime juice",
+            "4 tbsp soy sauce",
+            "2 tbsp mirin",
+            "1 tbsp rice vinegar",
+            "1 tsp sugar",
+            "1 tbsp water"
+          ]
+        }
+      ],
+      "steps": [
+        "Combine the lemon juice, lime juice, soy sauce, mirin, vinegar and sugar in a jar.",
+        "Add the water and shake until the sugar dissolves.",
+        "Taste and add a little more citrus or soy as you prefer."
+      ],
+      "notes": [
+        "Leave overnight in the fridge for a rounder flavour if you have time.",
+        "Keeps for 2 weeks."
+      ],
+      "nutrition": {
+        "kcal": 40,
+        "proteinG": 1,
+        "carbsG": 9,
+        "fatG": 0,
+        "fibreG": 0,
+        "sodiumMg": 580
+      }
+    },
+    {
+      "id": "sichuan-chilli-oil-dipping-sauce",
+      "title": "Sichuan Chilli Oil Dipping Sauce",
+      "summary": "A numbing, fragrant chilli oil for dumplings, noodles and cold dishes.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner",
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 8,
+      "servings": 10,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100ml vegetable oil",
+            "3 tbsp chilli flakes",
+            "1 tbsp Sichuan peppercorns, lightly crushed",
+            "3 garlic cloves, thinly sliced",
+            "1 star anise",
+            "1 tbsp sesame seeds",
+            "2 tbsp soy sauce",
+            "1 tsp sugar",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Put the chilli flakes, sesame seeds, sugar and salt in a heatproof bowl.",
+        "Heat the oil with the peppercorns, garlic and star anise over low heat for 6 minutes until the garlic is just golden, then strain the hot oil over the chilli flakes, discarding the solids.",
+        "Let it sizzle, cool for 10 minutes, then stir in the soy sauce."
+      ],
+      "notes": [
+        "Do not let the oil smoke or the chilli will taste bitter.",
+        "Keeps for 3 weeks in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 95,
+        "proteinG": 1,
+        "carbsG": 2,
+        "fatG": 9,
+        "fibreG": 1,
+        "sodiumMg": 360
+      }
+    },
+    {
+      "id": "lebanese-garlic-yoghurt-sauce",
+      "title": "Lebanese Garlic Yoghurt Sauce",
+      "summary": "A creamy garlic and lemon yoghurt sauce for shawarma, kebabs and roast vegetables.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "dinner",
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 8,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g thick Greek yoghurt",
+            "3 garlic cloves, crushed",
+            "2 tbsp lemon juice",
+            "1 tbsp olive oil",
+            "1 tbsp chopped mint",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Crush the garlic with the salt into a paste.",
+        "Mix with the yoghurt and lemon juice until smooth.",
+        "Stir through the oil and mint and leave for 10 minutes before serving."
+      ],
+      "notes": [
+        "Use less garlic for a gentler sauce.",
+        "Keeps for 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 77,
+        "proteinG": 4,
+        "carbsG": 4,
+        "fatG": 5,
+        "fibreG": 0,
+        "sodiumMg": 220
+      }
+    },
+    {
+      "id": "quick-tomato-sambal",
+      "title": "Quick Tomato Sambal",
+      "summary": "A cooked tomato and chilli sambal that comes together in minutes for rice and fried eggs.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 ripe tomatoes, roughly chopped",
+            "4 red chillies",
+            "3 shallots",
+            "2 garlic cloves",
+            "2 tbsp vegetable oil",
+            "1 tbsp lime juice",
+            "1 tsp sugar",
+            "3/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the chillies, shallots and garlic into a coarse paste.",
+        "Fry the paste in the oil over medium heat for 5 minutes until fragrant and the oil separates.",
+        "Add the tomatoes, sugar and salt and cook for 6 minutes until pulpy and thick, then stir in the lime juice."
+      ],
+      "notes": [
+        "Add more chilli for heat, or deseed some for a milder sauce.",
+        "Keeps for 5 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 77,
+        "proteinG": 1,
+        "carbsG": 6,
+        "fatG": 5,
+        "fibreG": 2,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "hot-honey-chilli-drizzle",
+      "title": "Hot Honey Chilli Drizzle",
+      "summary": "A sweet, hot chilli honey for pizza, fried chicken, cheese boards and roast vegetables.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 8,
+      "servings": 12,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g honey",
+            "2 tbsp chilli flakes",
+            "2 tbsp apple cider vinegar",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the honey with the chilli flakes in a small saucepan over low heat for 5 minutes until runny and gently simmering.",
+        "Remove from the heat and stir in the vinegar and salt.",
+        "Cool for 20 minutes, then pour into a clean jar."
+      ],
+      "notes": [
+        "Strain out the flakes for a smoother drizzle.",
+        "Keep at room temperature for a month."
+      ],
+      "nutrition": {
+        "kcal": 68,
+        "proteinG": 0,
+        "carbsG": 17,
+        "fatG": 0,
+        "fibreG": 0,
+        "sodiumMg": 110
+      }
+    }
+  ]
+}
