@@ -1,0 +1,1251 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "swedish-cardamom-oat-porridge",
+      "title": "Swedish Cardamom Oat Porridge",
+      "summary": "Creamy milk oats scented with cardamom, finished with butter and honey.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 3,
+      "cookMinutes": 8,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup rolled oats",
+            "2 cups milk",
+            "1 pinch salt",
+            "1/2 tsp ground cardamom",
+            "2 tbsp honey",
+            "2 tsp butter"
+          ]
+        }
+      ],
+      "steps": [
+        "Bring the oats, milk, salt and cardamom to a gentle simmer in a saucepan, stirring often until bubbling.",
+        "Cook for 6 to 8 minutes, stirring, until thick and creamy.",
+        "Stir through the butter, spoon into bowls and drizzle with honey."
+      ],
+      "notes": [
+        "Use oat milk for a dairy-free version.",
+        "Oats can contain traces of gluten."
+      ],
+      "nutrition": {
+        "kcal": 434,
+        "proteinG": 14,
+        "carbsG": 56,
+        "fatG": 16,
+        "fibreG": 5,
+        "sodiumMg": 130
+      }
+    },
+    {
+      "id": "finnish-oven-pancake-pannukakku",
+      "title": "Finnish Oven Pancake Pannukakku",
+      "summary": "A puffed, custardy oven pancake baked in butter, cut into wedges.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 eggs",
+            "2 cups milk",
+            "1 cup plain flour",
+            "2 tbsp caster sugar",
+            "1 pinch salt",
+            "40 g butter"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C and put the butter in a 25 cm baking dish until melted.",
+        "Whisk the eggs, milk, flour, sugar and salt until smooth.",
+        "Pour the batter into the hot dish and bake for 20 to 25 minutes until puffed and golden.",
+        "Cut into wedges and serve straight away."
+      ],
+      "notes": [
+        "Food safety: bake until the centre is fully set with no wet egg.",
+        "Not suitable for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 356,
+        "proteinG": 13,
+        "carbsG": 35,
+        "fatG": 18,
+        "fibreG": 1,
+        "sodiumMg": 250
+      }
+    },
+    {
+      "id": "estonian-rye-bread-with-egg-and-chive-butter",
+      "title": "Estonian Rye Bread with Egg and Chive Butter",
+      "summary": "Dense rye bread spread with soft chive butter and topped with sliced boiled egg.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "breakfast",
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 slices rye bread",
+            "60 g butter, softened",
+            "4 eggs",
+            "2 tbsp chopped chives",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the eggs for 10 minutes until the yolks are firm, then cool, peel and slice.",
+        "Mash the butter with the chives and salt until combined.",
+        "Spread the chive butter over the rye bread and top with the egg."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the yolks are firm and keep leftovers chilled for up to 2 days.",
+        "Not suitable for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 266,
+        "proteinG": 9,
+        "carbsG": 16,
+        "fatG": 18,
+        "fibreG": 2,
+        "sodiumMg": 260
+      }
+    },
+    {
+      "id": "norwegian-creamed-cabbage",
+      "title": "Norwegian Creamed Cabbage",
+      "summary": "Soft cabbage in a light white sauce with nutmeg, a traditional side for sausages and meatballs.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600 g cabbage, shredded",
+            "30 g butter",
+            "2 tbsp plain flour",
+            "1 cup milk",
+            "1/2 tsp ground nutmeg",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the cabbage in salted water for 8 minutes until tender, then drain well.",
+        "Melt the butter, stir in the flour and cook for 1 minute.",
+        "Whisk in the milk and simmer for 4 minutes until thickened, then season with nutmeg and salt.",
+        "Fold the cabbage through the sauce and heat for 2 minutes until hot."
+      ],
+      "notes": [
+        "Use a dairy-free spread and oat milk to make it dairy-free.",
+        "Not suitable for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 167,
+        "proteinG": 5,
+        "carbsG": 15,
+        "fatG": 9,
+        "fibreG": 3,
+        "sodiumMg": 260
+      }
+    },
+    {
+      "id": "estonian-rosolje-beetroot-and-potato-salad",
+      "title": "Estonian Rosolje Beetroot and Potato Salad",
+      "summary": "A ruby salad of beetroot, potato, apple, pickles and egg in a sour cream dressing.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "450 g potatoes",
+            "250 g cooked beetroot, diced",
+            "1 apple, diced",
+            "2 dill pickles, diced",
+            "2 eggs",
+            "1/2 cup sour cream",
+            "1 tsp mustard",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes for 20 minutes until tender, then cool and dice.",
+        "Boil the eggs for 10 minutes until the yolks are firm, then cool, peel and chop.",
+        "Mix the sour cream, mustard and salt together.",
+        "Fold the potato, beetroot, apple, pickles and egg through the dressing."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the yolks are firm and keep the salad chilled, eating within 2 days.",
+        "Beetroot will tint everything pink."
+      ],
+      "nutrition": {
+        "kcal": 279,
+        "proteinG": 7,
+        "carbsG": 40,
+        "fatG": 9,
+        "fibreG": 5,
+        "sodiumMg": 550
+      }
+    },
+    {
+      "id": "portuguese-chickpea-and-spinach-soup",
+      "title": "Portuguese Chickpea and Spinach Soup",
+      "summary": "A hearty cumin and paprika chickpea soup finished with wilted spinach.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp olive oil",
+            "1 onion, diced",
+            "3 cloves garlic, crushed",
+            "1 tsp ground cumin",
+            "1 tsp smoked paprika",
+            "2 cans chickpeas, drained",
+            "1 litre vegetable stock",
+            "200 g baby spinach",
+            "1 tbsp red wine vinegar"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion in the oil for 5 minutes until soft, then add the garlic, cumin and paprika for 1 minute.",
+        "Add the chickpeas and stock and simmer for 15 minutes until the flavours meld.",
+        "Stir in the spinach for 2 minutes until wilted, then add the vinegar."
+      ],
+      "notes": [
+        "Mash a few chickpeas against the pot to thicken the soup.",
+        "Check the stock label for gluten."
+      ],
+      "nutrition": {
+        "kcal": 239,
+        "proteinG": 12,
+        "carbsG": 24,
+        "fatG": 9,
+        "fibreG": 7,
+        "sodiumMg": 850
+      }
+    },
+    {
+      "id": "spanish-garlic-soup-with-poached-egg",
+      "title": "Spanish Garlic Soup with Poached Egg",
+      "summary": "Castilian sopa de ajo: golden garlic, paprika and bread in broth with a poached egg.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 tbsp olive oil",
+            "8 cloves garlic, sliced",
+            "4 slices day-old bread, torn",
+            "2 tsp smoked paprika",
+            "1 litre vegetable stock",
+            "4 eggs",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the garlic in the oil for 1 minute until golden, then add the bread and cook for 3 minutes until crisp.",
+        "Stir in the paprika, then the stock, and simmer for 10 minutes until the bread softens.",
+        "Crack the eggs into the soup and poach for 3 minutes until the whites are fully set.",
+        "Ladle into bowls with one egg each."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set.",
+        "Not suitable for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 256,
+        "proteinG": 9,
+        "carbsG": 18,
+        "fatG": 16,
+        "fibreG": 2,
+        "sodiumMg": 850
+      }
+    },
+    {
+      "id": "galician-bean-and-greens-broth",
+      "title": "Galician Bean and Greens Broth",
+      "summary": "A rustic broth of white beans, potato, cabbage and smoky bacon.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "120 g bacon, diced",
+            "1 tbsp olive oil",
+            "1 onion, diced",
+            "2 potatoes, cubed",
+            "1 can cannellini beans, drained",
+            "300 g cabbage, shredded",
+            "1.2 litres chicken stock",
+            "1 tsp smoked paprika"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the bacon in the oil for 5 minutes until browned, then add the onion for 4 minutes until soft.",
+        "Add the potato, paprika and stock and simmer for 15 minutes until the potato is tender.",
+        "Add the beans and cabbage and cook for 8 minutes until the cabbage is soft."
+      ],
+      "notes": [
+        "Food safety: cook the bacon until browned and the soup until steaming, at least 75°C, and eat within 3 days.",
+        "Check the stock label for gluten."
+      ],
+      "nutrition": {
+        "kcal": 298,
+        "proteinG": 10,
+        "carbsG": 30,
+        "fatG": 14,
+        "fibreG": 6,
+        "sodiumMg": 1000
+      }
+    },
+    {
+      "id": "salmorejo-cordoban-tomato-soup",
+      "title": "Salmorejo Cordoban Tomato Soup",
+      "summary": "A thick, chilled Andalusian tomato and bread soup topped with egg.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 kg ripe tomatoes, chopped",
+            "100 g day-old bread, torn",
+            "1 clove garlic",
+            "1/3 cup olive oil",
+            "2 tbsp sherry vinegar",
+            "1/2 tsp salt",
+            "2 eggs"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the eggs for 10 minutes until the yolks are firm, then cool, peel and chop.",
+        "Blend the tomatoes, bread, garlic, vinegar and salt until smooth.",
+        "With the blender running, pour in the oil until the soup is thick and creamy.",
+        "Chill, then serve topped with the chopped egg."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the yolks are firm and keep the soup chilled, eating within 2 days.",
+        "Not suitable for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 321,
+        "proteinG": 8,
+        "carbsG": 23,
+        "fatG": 21,
+        "fibreG": 4,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "spanish-russian-potato-salad-ensaladilla-rusa",
+      "title": "Spanish Russian Potato Salad Ensaladilla Rusa",
+      "summary": "Potato, carrot, peas, tuna and egg bound with mayonnaise, a staple tapas plate.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500 g potatoes, cubed",
+            "1 carrot, diced",
+            "75 g frozen peas",
+            "1 can tuna in oil, drained",
+            "2 eggs",
+            "1/3 cup mayonnaise",
+            "1 tbsp white wine vinegar",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potato and carrot for 12 minutes until just tender, adding the peas for the last 2 minutes, then drain and cool.",
+        "Boil the eggs for 10 minutes until the yolks are firm, then cool, peel and chop.",
+        "Fold the vegetables, tuna, egg, mayonnaise, vinegar and salt together until coated."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the yolks are firm and keep the salad chilled, eating within 2 days.",
+        "Contains fish and egg."
+      ],
+      "nutrition": {
+        "kcal": 345,
+        "proteinG": 12,
+        "carbsG": 30,
+        "fatG": 19,
+        "fibreG": 3,
+        "sodiumMg": 550
+      }
+    },
+    {
+      "id": "catalan-tomato-bread-pa-amb-tomaquet",
+      "title": "Catalan Tomato Bread Pa amb Tomaquet",
+      "summary": "Toasted bread rubbed with garlic and ripe tomato, finished with olive oil.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "breakfast",
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 5,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 slices crusty bread",
+            "2 ripe tomatoes, halved",
+            "1 clove garlic, halved",
+            "3 tbsp olive oil",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the bread under a hot grill for 2 minutes each side until golden.",
+        "Rub each slice with the garlic, then with the cut tomato until the flesh soaks in.",
+        "Drizzle with the oil and sprinkle with the salt."
+      ],
+      "notes": [
+        "Use very ripe tomatoes for the best flavour.",
+        "Not suitable for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 261,
+        "proteinG": 7,
+        "carbsG": 32,
+        "fatG": 11,
+        "fibreG": 3,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "uzbek-achichuk-tomato-and-onion-salad",
+      "title": "Uzbek Achichuk Tomato and Onion Salad",
+      "summary": "Paper-thin tomato and red onion with chilli and coriander, served with plov and kebabs.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 tomatoes, thinly sliced",
+            "2 red onions, thinly sliced",
+            "1 red chilli, finely chopped",
+            "1/4 cup chopped coriander",
+            "1 tbsp white wine vinegar",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Arrange the tomato and onion in overlapping layers on a plate.",
+        "Scatter over the chilli and coriander.",
+        "Sprinkle with the vinegar and salt and toss gently until coated, just before serving."
+      ],
+      "notes": [
+        "Soak the sliced onion in cold water for a milder bite.",
+        "Naturally vegan and gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 54,
+        "proteinG": 2,
+        "carbsG": 10,
+        "fatG": 0,
+        "fibreG": 3,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "georgian-cucumber-and-walnut-salad",
+      "title": "Georgian Cucumber and Walnut Salad",
+      "summary": "Crisp cucumber with ground walnuts, garlic and coriander in a light vinegar dressing.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 cucumbers, chopped",
+            "60 g walnuts, finely chopped",
+            "1 clove garlic, crushed",
+            "1/4 cup chopped coriander",
+            "1 tbsp red wine vinegar",
+            "1 tbsp olive oil",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the walnuts, garlic, vinegar, oil and salt into a rough paste.",
+        "Toss the cucumber and coriander with the paste until coated.",
+        "Serve straight away so the cucumber stays crisp."
+      ],
+      "notes": [
+        "Contains tree nuts.",
+        "Naturally vegan and gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 161,
+        "proteinG": 3,
+        "carbsG": 7,
+        "fatG": 13,
+        "fibreG": 2,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "armenian-herb-and-radish-salad",
+      "title": "Armenian Herb and Radish Salad",
+      "summary": "A bright pile of parsley, mint, radish and tomato with lemon and olive oil.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 bunch parsley, chopped",
+            "1/2 cup mint leaves",
+            "8 radishes, sliced",
+            "2 tomatoes, diced",
+            "2 spring onions, sliced",
+            "3 tbsp olive oil",
+            "2 tbsp lemon juice",
+            "1 tsp sumac",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Combine the parsley, mint, radish, tomato and spring onions in a bowl.",
+        "Whisk the oil, lemon juice, sumac and salt together.",
+        "Toss the dressing through the salad until every leaf is glossy, just before serving."
+      ],
+      "notes": [
+        "Naturally vegan and gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 126,
+        "proteinG": 2,
+        "carbsG": 6,
+        "fatG": 10,
+        "fibreG": 2,
+        "sodiumMg": 250
+      }
+    },
+    {
+      "id": "azerbaijani-grilled-eggplant-and-tomato-salad",
+      "title": "Azerbaijani Grilled Eggplant and Tomato Salad",
+      "summary": "Smoky roasted eggplant with tomato, capsicum, garlic and coriander.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 eggplants",
+            "3 tomatoes, diced",
+            "1 red capsicum, diced",
+            "1 onion, finely diced",
+            "2 cloves garlic, crushed",
+            "1/4 cup chopped coriander",
+            "3 tbsp olive oil",
+            "1 tbsp white wine vinegar",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the whole eggplants at 220°C for 40 minutes until collapsed and charred, then peel and chop the flesh.",
+        "Mix the eggplant with the tomato, capsicum, onion, garlic and coriander.",
+        "Dress with the oil, vinegar and salt."
+      ],
+      "notes": [
+        "Drain the eggplant flesh well so the salad is not watery.",
+        "Naturally vegan and gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 209,
+        "proteinG": 4,
+        "carbsG": 20,
+        "fatG": 11,
+        "fibreG": 7,
+        "sodiumMg": 250
+      }
+    },
+    {
+      "id": "uzbek-spiced-carrot-salad",
+      "title": "Uzbek Spiced Carrot Salad",
+      "summary": "Shredded carrot with garlic, coriander seed and chilli under hot oil.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 3,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500 g carrots, grated",
+            "4 cloves garlic, crushed",
+            "1 tsp ground coriander",
+            "1/2 tsp chilli flakes",
+            "1 tsp caster sugar",
+            "1 tbsp white wine vinegar",
+            "3 tbsp vegetable oil",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the carrot, garlic, coriander, chilli flakes, sugar, vinegar and salt in a heatproof bowl.",
+        "Heat the oil for 2 minutes until shimmering, then pour it over the carrot.",
+        "Stir well and serve warm or chilled."
+      ],
+      "notes": [
+        "Keeps 4 days in the fridge.",
+        "Naturally vegan and gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 154,
+        "proteinG": 2,
+        "carbsG": 12,
+        "fatG": 10,
+        "fibreG": 4,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "uzbek-lagman-noodle-soup",
+      "title": "Uzbek Lagman Noodle Soup",
+      "summary": "Beef, capsicum and noodles in a tomato-rich broth, a Central Asian one-pot.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300 g beef rump, cut in thin strips",
+            "2 tbsp vegetable oil",
+            "1 onion, sliced",
+            "1 carrot, sliced",
+            "1 red capsicum, sliced",
+            "3 cloves garlic, crushed",
+            "2 tbsp tomato paste",
+            "1 tsp ground cumin",
+            "1 litre beef stock",
+            "250 g dried wheat noodles",
+            "1/4 cup chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the beef in the oil for 4 minutes until coloured, then add the onion, carrot and capsicum for 5 minutes until softened.",
+        "Stir in the garlic, tomato paste and cumin for 1 minute, then add the stock.",
+        "Simmer for 15 minutes until the beef is tender.",
+        "Add the noodles and cook for 5 minutes until tender, then scatter with coriander."
+      ],
+      "notes": [
+        "Food safety: cook the beef until no pink remains and the soup reaches 75°C; eat leftovers within 2 days.",
+        "Not suitable for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 436,
+        "proteinG": 26,
+        "carbsG": 54,
+        "fatG": 12,
+        "fibreG": 4,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "peruvian-choclo-con-queso",
+      "title": "Peruvian Choclo con Queso",
+      "summary": "Sweet corn on the cob served with salty feta, as sold on Andean street corners.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "lunch",
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 corn cobs",
+            "150 g feta",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the corn in water for 12 minutes until the kernels are tender.",
+        "Drain and let the cobs steam dry for 1 minute.",
+        "Serve each cob with a slab of feta."
+      ],
+      "notes": [
+        "Traditional queso fresco can replace the feta.",
+        "Naturally gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 235,
+        "proteinG": 8,
+        "carbsG": 29,
+        "fatG": 9,
+        "fibreG": 3,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "ecuadorian-llapingachos-cheesy-potato-patties",
+      "title": "Ecuadorian Llapingachos Cheesy Potato Patties",
+      "summary": "Mashed potato patties stuffed with melting cheese and pan-fried until golden.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "breakfast",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800 g potatoes, peeled and cubed",
+            "1 onion, finely diced",
+            "25 g butter",
+            "100 g mozzarella, grated",
+            "2 tbsp vegetable oil",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes for 15 minutes until soft, drain and mash with the salt.",
+        "Cook the onion in the butter for 5 minutes until soft and mix into the potato.",
+        "Shape into 8 balls, press a pinch of mozzarella into each and flatten into patties.",
+        "Fry in the oil for 4 minutes each side until golden and crisp."
+      ],
+      "notes": [
+        "Serve with a fried egg or peanut sauce.",
+        "Naturally gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 364,
+        "proteinG": 10,
+        "carbsG": 43,
+        "fatG": 16,
+        "fibreG": 4,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "bolivian-quinoa-vegetable-soup",
+      "title": "Bolivian Quinoa Vegetable Soup",
+      "summary": "A warming Andean soup of quinoa, potato, carrot and cumin.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "1 onion, diced",
+            "1 carrot, diced",
+            "2 potatoes, diced",
+            "1/2 cup quinoa, rinsed",
+            "1 tsp ground cumin",
+            "1 litre vegetable stock",
+            "1/4 cup chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion and carrot in the oil for 5 minutes until soft.",
+        "Add the potato, quinoa, cumin and stock and simmer for 20 minutes until the quinoa is tender and the potato soft.",
+        "Stir through the coriander and serve."
+      ],
+      "notes": [
+        "Rinse the quinoa well to remove any bitterness.",
+        "Naturally vegan; check the stock for gluten."
+      ],
+      "nutrition": {
+        "kcal": 221,
+        "proteinG": 6,
+        "carbsG": 36,
+        "fatG": 5,
+        "fibreG": 4,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "hawaiian-lomi-lomi-tomato-salad",
+      "title": "Hawaiian Lomi Lomi Tomato Salad",
+      "summary": "Juicy tomato massaged with sweet onion, spring onion and lemon, a luau side.",
+      "cuisine": "pacific-islands",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 tomatoes, diced",
+            "1 red onion, finely diced",
+            "3 spring onions, sliced",
+            "1 tbsp lemon juice",
+            "1 tsp sesame oil",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Combine the tomato, onion and spring onions in a bowl.",
+        "Add the lemon juice, sesame oil and salt.",
+        "Massage gently with your fingers until the tomato releases its juices."
+      ],
+      "notes": [
+        "Traditionally served with salmon or pork.",
+        "Naturally vegan and gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 53,
+        "proteinG": 2,
+        "carbsG": 8,
+        "fatG": 1,
+        "fibreG": 2,
+        "sodiumMg": 260
+      }
+    },
+    {
+      "id": "chermoula-herb-sauce-for-grilled-fish",
+      "title": "Chermoula Herb Sauce for Grilled Fish",
+      "summary": "North African coriander, parsley, cumin and lemon sauce for fish and chicken.",
+      "cuisine": "north-african",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup coriander leaves",
+            "1 cup parsley leaves",
+            "4 cloves garlic",
+            "1 tsp ground cumin",
+            "1 tsp paprika",
+            "1/2 tsp chilli flakes",
+            "1/4 cup lemon juice",
+            "1/3 cup olive oil",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Blitz the coriander, parsley, garlic, cumin, paprika, chilli flakes, lemon juice and salt until finely chopped.",
+        "Stream in the oil until the sauce is loose and green.",
+        "Spoon over grilled fish or chicken."
+      ],
+      "notes": [
+        "Keeps 4 days in the fridge.",
+        "Naturally vegan and gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 126,
+        "proteinG": 1,
+        "carbsG": 3,
+        "fatG": 12,
+        "fibreG": 1,
+        "sodiumMg": 200
+      }
+    },
+    {
+      "id": "finnish-creamy-mushroom-salad",
+      "title": "Finnish Creamy Mushroom Salad",
+      "summary": "Blanched button mushrooms in a cream and vinegar dressing with onion and chives.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 5,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300 g button mushrooms, sliced",
+            "1 onion, finely diced",
+            "1/2 cup cream",
+            "1 tbsp white wine vinegar",
+            "2 tbsp chopped chives",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Blanch the mushrooms in boiling water for 3 minutes until just tender, then drain and cool.",
+        "Whisk the cream, vinegar and salt together until slightly thickened.",
+        "Fold through the mushrooms, onion and chives until coated."
+      ],
+      "notes": [
+        "Serve on rye bread or beside roast meats.",
+        "Keeps 2 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 124,
+        "proteinG": 3,
+        "carbsG": 5,
+        "fatG": 10,
+        "fibreG": 1,
+        "sodiumMg": 250
+      }
+    },
+    {
+      "id": "hawaiian-pineapple-coleslaw",
+      "title": "Hawaiian Pineapple Coleslaw",
+      "summary": "Crunchy cabbage and carrot with sweet pineapple in a tangy creamy dressing.",
+      "cuisine": "pacific-islands",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300 g cabbage, finely shredded",
+            "1 carrot, grated",
+            "1 cup pineapple pieces",
+            "1/4 cup mayonnaise",
+            "1 tbsp rice vinegar",
+            "2 spring onions, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Combine the cabbage, carrot, pineapple and spring onions in a bowl.",
+        "Whisk the mayonnaise and vinegar together.",
+        "Toss through the slaw until evenly coated."
+      ],
+      "notes": [
+        "Contains egg.",
+        "Naturally gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 168,
+        "proteinG": 2,
+        "carbsG": 12,
+        "fatG": 12,
+        "fibreG": 2,
+        "sodiumMg": 250
+      }
+    },
+    {
+      "id": "latvian-cabbage-and-potato-soup",
+      "title": "Latvian Cabbage and Potato Soup",
+      "summary": "A simple, homely soup of cabbage, potato and carrot finished with sour cream and dill.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp vegetable oil",
+            "1 onion, diced",
+            "1 carrot, diced",
+            "300 g cabbage, shredded",
+            "2 potatoes, cubed",
+            "1 litre vegetable stock",
+            "1 bay leaf",
+            "3 tbsp sour cream",
+            "2 tbsp chopped dill"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion and carrot in the oil for 5 minutes until soft.",
+        "Add the cabbage, potato, stock and bay leaf and simmer for 20 minutes until the potato is tender.",
+        "Ladle into bowls and top with the sour cream and dill."
+      ],
+      "notes": [
+        "Remove the bay leaf before serving.",
+        "Check the stock label for gluten."
+      ],
+      "nutrition": {
+        "kcal": 172,
+        "proteinG": 3,
+        "carbsG": 25,
+        "fatG": 6,
+        "fibreG": 3,
+        "sodiumMg": 700
+      }
+    }
+  ]
+}
