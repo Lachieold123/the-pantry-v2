@@ -1,0 +1,840 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "ricotta-pancakes-with-orange-zest-and-honey",
+      "title": "Ricotta Pancakes with Orange Zest and Honey",
+      "summary": "Light, soft pancakes made with ricotta and orange zest, served with honey and yoghurt.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g ricotta",
+            "3 eggs, separated",
+            "100ml milk",
+            "100g plain flour",
+            "1 tsp baking powder",
+            "1 tbsp caster sugar",
+            "1 tbsp orange zest",
+            "1/4 tsp salt",
+            "20g butter",
+            "4 tbsp honey",
+            "100g plain yoghurt"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the ricotta, egg yolks, milk, flour, baking powder, sugar, zest and salt into a thick batter.",
+        "Whisk the egg whites to soft peaks and fold gently through the batter until just combined.",
+        "Melt a little butter in a non-stick pan, spoon in the batter and cook for 2 to 3 minutes each side over medium heat until golden and cooked through.",
+        "Serve warm with honey and yoghurt."
+      ],
+      "notes": [
+        "Keep the heat moderate so the middle cooks before the outside browns.",
+        "Food safety: cook until no wet batter remains in the centre."
+      ],
+      "nutrition": {
+        "kcal": 335,
+        "proteinG": 16,
+        "carbsG": 38,
+        "fatG": 13,
+        "fibreG": 1,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "savoury-oat-pancakes-with-cottage-cheese-and-chives",
+      "title": "Savoury Oat Pancakes with Cottage Cheese and Chives",
+      "summary": "High-protein oat pancakes with cottage cheese, chives and a hint of black pepper.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "80g rolled oats",
+            "150g cottage cheese",
+            "2 eggs",
+            "3 tbsp chopped chives",
+            "1/4 tsp baking powder",
+            "1/4 tsp salt",
+            "1/4 tsp black pepper",
+            "1 tsp olive oil",
+            "1 tomato, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the oats, cottage cheese, eggs, baking powder, salt and pepper until fairly smooth, then stir in the chives.",
+        "Heat the oil in a non-stick pan and spoon in the batter, cooking for 3 minutes until set at the edges and golden underneath.",
+        "Flip and cook for 2 minutes until golden and cooked through, then serve with sliced tomato."
+      ],
+      "notes": [
+        "Let the batter stand for 5 minutes so the oats soften.",
+        "Food safety: cook until the pancakes are firm in the centre."
+      ],
+      "nutrition": {
+        "kcal": 324,
+        "proteinG": 24,
+        "carbsG": 28,
+        "fatG": 12,
+        "fibreG": 4,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "greek-yoghurt-pancakes-with-maple-pears",
+      "title": "Greek Yoghurt Pancakes with Maple Pears",
+      "summary": "Tender Greek yoghurt pancakes served with warm maple-spiced pears.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g plain flour",
+            "1 tsp baking powder",
+            "1/4 tsp salt",
+            "200g Greek yoghurt",
+            "2 eggs",
+            "100ml milk",
+            "1 tbsp sugar",
+            "2 pears, sliced",
+            "20g butter",
+            "3 tbsp maple syrup",
+            "1/2 tsp ground cinnamon",
+            "1 tsp olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the flour, baking powder, salt and sugar, then add the yoghurt, eggs and milk and stir into a thick batter.",
+        "Warm the butter, pears, maple and cinnamon in a small pan for 6 minutes until the pears are tender and glazed.",
+        "Cook spoonfuls of batter in a lightly oiled pan for 2 minutes each side until golden and cooked through.",
+        "Serve the pancakes with the pears and syrup."
+      ],
+      "notes": [
+        "Do not overmix, or the pancakes turn chewy.",
+        "Food safety: cook until the batter is set through."
+      ],
+      "nutrition": {
+        "kcal": 342,
+        "proteinG": 12,
+        "carbsG": 49,
+        "fatG": 10,
+        "fibreG": 4,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "armenian-eggs-with-tomato-and-basil",
+      "title": "Armenian Eggs with Tomato and Basil",
+      "summary": "Soft scrambled eggs in a juicy tomato and basil base, eaten with warm bread.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "1 small onion, sliced",
+            "3 ripe tomatoes, chopped",
+            "1/2 tsp paprika",
+            "1/4 tsp salt",
+            "4 eggs",
+            "2 tbsp torn basil",
+            "2 slices bread, toasted"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion in the oil for 5 minutes until golden, then add the tomatoes, paprika and salt and cook for 7 minutes until jammy.",
+        "Break the eggs into the pan and stir gently for 2 to 3 minutes until just set.",
+        "Fold through the basil, toast the bread until golden and serve together."
+      ],
+      "notes": [
+        "Cook the tomatoes until the liquid has mostly evaporated.",
+        "Food safety: cook until the eggs are fully set with no liquid egg."
+      ],
+      "nutrition": {
+        "kcal": 325,
+        "proteinG": 17,
+        "carbsG": 24,
+        "fatG": 17,
+        "fibreG": 4,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "iranian-nargesi-spinach-eggs",
+      "title": "Iranian Nargesi Spinach Eggs",
+      "summary": "Garlicky wilted spinach with eggs baked on top, a favourite Persian breakfast.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "1 onion, sliced",
+            "3 garlic cloves, sliced",
+            "300g baby spinach",
+            "1/2 tsp turmeric",
+            "1/4 tsp salt",
+            "1/4 tsp black pepper",
+            "4 eggs",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion in the oil for 6 minutes until golden, then add the garlic and turmeric for 1 minute until fragrant.",
+        "Add the spinach in handfuls and cook for 3 minutes until wilted and most liquid has evaporated, then season.",
+        "Make four wells, crack in the eggs, cover and cook for 4 to 5 minutes until the whites are set, then finish with lemon juice."
+      ],
+      "notes": [
+        "Press the spinach well so it does not flood the eggs.",
+        "Food safety: cook until the whites are fully set."
+      ],
+      "nutrition": {
+        "kcal": 251,
+        "proteinG": 16,
+        "carbsG": 11,
+        "fatG": 15,
+        "fibreG": 4,
+        "sodiumMg": 460
+      }
+    },
+    {
+      "id": "syrian-style-foul-with-chickpeas-cumin-and-lemon",
+      "title": "Syrian-Style Foul with Chickpeas Cumin and Lemon",
+      "summary": "Warm mashed chickpeas with garlic, lemon, cumin and olive oil, scooped up with bread.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 3,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "480g canned chickpeas, drained",
+            "100ml water",
+            "2 garlic cloves, crushed",
+            "1 tsp ground cumin",
+            "3 tbsp lemon juice",
+            "3 tbsp olive oil",
+            "1/2 tsp salt",
+            "1 tomato, diced",
+            "2 tbsp chopped parsley",
+            "3 pita breads"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the chickpeas with the water, garlic, cumin and salt for 8 minutes until hot and very soft.",
+        "Mash roughly with a fork until creamy but still chunky, then stir in the lemon juice and half the oil.",
+        "Top with tomato, parsley and the remaining oil and serve with warmed pita."
+      ],
+      "notes": [
+        "Add a splash more water if the mash is too thick.",
+        "Keeps 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 574,
+        "proteinG": 21,
+        "carbsG": 70,
+        "fatG": 20,
+        "fibreG": 15,
+        "sodiumMg": 1000
+      }
+    },
+    {
+      "id": "zucchini-and-cheddar-breakfast-fritters-with-poached-egg",
+      "title": "Zucchini and Cheddar Breakfast Fritters with Poached Egg",
+      "summary": "Crisp zucchini and cheddar fritters topped with a soft poached egg and chives.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 zucchini, grated",
+            "60g cheddar, grated",
+            "2 spring onions, sliced",
+            "50g plain flour",
+            "1 egg",
+            "1/4 tsp salt",
+            "1/4 tsp black pepper",
+            "2 tsp olive oil",
+            "2 eggs",
+            "1 tsp white vinegar"
+          ]
+        }
+      ],
+      "steps": [
+        "Squeeze the grated zucchini in a clean cloth until quite dry, then mix with the cheddar, spring onions, flour, egg, salt and pepper.",
+        "Cook spoonfuls in the oil in a non-stick pan for 3 minutes each side until deep golden and cooked through.",
+        "Poach the two eggs in barely simmering water with the vinegar for 3 minutes until the whites are set, then top the fritters."
+      ],
+      "notes": [
+        "Squeezing the zucchini is the secret to crisp fritters.",
+        "Food safety: cook the fritters through and poach the eggs until the whites are fully set."
+      ],
+      "nutrition": {
+        "kcal": 391,
+        "proteinG": 24,
+        "carbsG": 25,
+        "fatG": 21,
+        "fibreG": 3,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "bengali-khichuri-rice-and-lentil-comfort-bowl",
+      "title": "Bengali Khichuri Rice and Lentil Comfort Bowl",
+      "summary": "A soft, golden rice and lentil dish with vegetables and gentle spices, ideal on a cold night.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g basmati rice",
+            "100g red lentils",
+            "1 tbsp ghee",
+            "1 tsp cumin seeds",
+            "1 tbsp grated ginger",
+            "1/2 tsp turmeric",
+            "1 potato, diced",
+            "100g cauliflower florets",
+            "100g peas",
+            "1 litre water",
+            "3/4 tsp salt",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Rinse the rice and lentils together until the water runs clear.",
+        "Heat the ghee, fry the cumin and ginger for 1 minute until fragrant, then add the turmeric, rice, lentils and vegetables and stir for 1 minute.",
+        "Add the water and salt, bring to the boil, cover and simmer for 25 minutes, stirring now and then, until the rice and lentils are soft and porridge-like.",
+        "Stir in the lemon juice before serving."
+      ],
+      "notes": [
+        "Add more water for a looser, soupier khichuri.",
+        "Food safety: cool leftover rice within 1 hour and refrigerate; eat within 1 day."
+      ],
+      "nutrition": {
+        "kcal": 354,
+        "proteinG": 13,
+        "carbsG": 58,
+        "fatG": 6,
+        "fibreG": 8,
+        "sodiumMg": 540
+      }
+    },
+    {
+      "id": "pakistani-daal-chawal-with-tadka",
+      "title": "Pakistani Daal Chawal with Tadka",
+      "summary": "Yellow lentils simmered soft and finished with a sizzling garlic and cumin tadka, served with rice.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g red lentils",
+            "800ml water",
+            "1/2 tsp turmeric",
+            "1 tomato, chopped",
+            "1 tsp salt",
+            "200g basmati rice",
+            "2 tbsp ghee",
+            "1 tsp cumin seeds",
+            "4 garlic cloves, sliced",
+            "1/2 tsp chilli powder",
+            "2 tbsp chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the lentils, water, turmeric, tomato and salt for 25 minutes, stirring now and then, until completely soft.",
+        "Cook the rice in boiling water for 11 minutes until tender, then drain.",
+        "Heat the ghee, fry the cumin and garlic for 2 minutes until golden, add the chilli and pour over the lentils.",
+        "Serve the lentils over the rice with coriander."
+      ],
+      "notes": [
+        "Do not let the garlic go dark or it turns bitter.",
+        "Food safety: cool leftover rice within 1 hour and refrigerate."
+      ],
+      "nutrition": {
+        "kcal": 466,
+        "proteinG": 17,
+        "carbsG": 77,
+        "fatG": 8,
+        "fibreG": 9,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "afghan-shorwa-lamb-and-chickpea-soup",
+      "title": "Afghan Shorwa Lamb and Chickpea Soup",
+      "summary": "A tomato-based lamb and chickpea soup with potato and dried coriander, served with bread.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 60,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g lamb leg, cubed",
+            "1 tbsp olive oil",
+            "1 onion, diced",
+            "3 garlic cloves, crushed",
+            "1 tsp ground coriander",
+            "1/2 tsp turmeric",
+            "2 tbsp tomato paste",
+            "1.5 litres water",
+            "240g canned chickpeas, drained",
+            "2 potatoes, cubed",
+            "1 tsp salt",
+            "2 tbsp lemon juice",
+            "3 tbsp chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the lamb in the oil for 6 minutes until coloured, then add the onion for 4 minutes until soft, followed by the garlic, spices and tomato paste for 1 minute.",
+        "Add the water and salt, cover and simmer for 40 minutes until the lamb is tender.",
+        "Add the potatoes and chickpeas and simmer for 15 minutes until the potatoes are soft.",
+        "Stir in the lemon juice and fresh coriander."
+      ],
+      "notes": [
+        "Skim the surface for a clear broth.",
+        "Food safety: lamb pieces must be cooked until tender and reach at least 63°C inside; cool within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 370,
+        "proteinG": 29,
+        "carbsG": 33,
+        "fatG": 12,
+        "fibreG": 7,
+        "sodiumMg": 880
+      }
+    },
+    {
+      "id": "uzbek-mastava-rice-and-beef-soup",
+      "title": "Uzbek Mastava Rice and Beef Soup",
+      "summary": "A hearty soup of rice, beef mince and vegetables in a tomato broth, finished with dill.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g beef mince",
+            "1 tbsp vegetable oil",
+            "1 onion, diced",
+            "2 carrots, diced",
+            "1 capsicum, diced",
+            "2 tbsp tomato paste",
+            "1.5 litres water",
+            "80g short-grain rice",
+            "2 potatoes, diced",
+            "1 tsp salt",
+            "1/2 tsp black pepper",
+            "1/4 cup chopped dill"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the beef in the oil for 5 minutes until no pink remains, add the onion, carrots and capsicum for 5 minutes until soft, then stir in the tomato paste.",
+        "Add the water, rice, potatoes, salt and pepper, bring to the boil and simmer for 25 minutes until the rice and potatoes are tender.",
+        "Stir in the dill and serve hot."
+      ],
+      "notes": [
+        "The rice thickens the soup as it stands.",
+        "Food safety: beef mince must reach 75°C and no pink remains; cool within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 339,
+        "proteinG": 21,
+        "carbsG": 32,
+        "fatG": 13,
+        "fibreG": 5,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "mongolian-style-tsuivan-noodle-stir-fry-with-beef",
+      "title": "Mongolian-Style Tsuivan Noodle Stir Fry with Beef",
+      "summary": "Chewy noodles stir-fried with beef, cabbage and carrot in a savoury soy sauce.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g wheat noodles",
+            "300g beef rump, thinly sliced",
+            "2 tbsp vegetable oil",
+            "1 onion, sliced",
+            "2 carrots, cut in matchsticks",
+            "300g cabbage, shredded",
+            "3 garlic cloves, minced",
+            "3 tbsp soy sauce",
+            "1 tsp sugar",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the noodles in boiling water for 5 minutes until tender, then drain.",
+        "Stir-fry the beef in half the oil over high heat for 3 minutes until browned and no pink remains, then remove.",
+        "Stir-fry the onion, carrots and cabbage in the remaining oil for 6 minutes until tender-crisp, add the garlic for 30 seconds, then return the beef.",
+        "Toss in the noodles, soy sauce, sugar and pepper for 3 minutes until heated through and coated."
+      ],
+      "notes": [
+        "Thin slices cook quickly, so do not overcook the beef.",
+        "Food safety: beef must be cooked until no pink remains and reach at least 63°C inside."
+      ],
+      "nutrition": {
+        "kcal": 484,
+        "proteinG": 32,
+        "carbsG": 55,
+        "fatG": 14,
+        "fibreG": 5,
+        "sodiumMg": 1200
+      }
+    },
+    {
+      "id": "libyan-shorba-lamb-orzo-soup",
+      "title": "Libyan Shorba Lamb Orzo Soup",
+      "summary": "A spiced tomato lamb soup with chickpeas and orzo, finished with lemon and mint.",
+      "cuisine": "north-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 55,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g lamb leg, cubed",
+            "1 tbsp olive oil",
+            "1 onion, diced",
+            "3 garlic cloves, crushed",
+            "1 tsp ground cumin",
+            "1 tsp paprika",
+            "1/2 tsp cinnamon",
+            "2 tbsp tomato paste",
+            "1.5 litres water",
+            "240g canned chickpeas, drained",
+            "80g orzo",
+            "1 tsp salt",
+            "2 tbsp lemon juice",
+            "2 tbsp chopped mint"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the lamb in the oil for 5 minutes until coloured, add the onion for 4 minutes until soft, then stir in the garlic, spices and tomato paste for 1 minute.",
+        "Add the water, salt and chickpeas, cover and simmer for 35 minutes until the lamb is tender.",
+        "Stir in the orzo and simmer for 9 minutes until tender, then add the lemon juice and mint."
+      ],
+      "notes": [
+        "Add extra water as the orzo absorbs liquid.",
+        "Food safety: lamb must be cooked until tender and reach at least 63°C inside; cool within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 327,
+        "proteinG": 26,
+        "carbsG": 28,
+        "fatG": 11,
+        "fibreG": 6,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "chilean-style-cazuela-chicken-pumpkin-and-corn-soup",
+      "title": "Chilean-Style Cazuela Chicken Pumpkin and Corn Soup",
+      "summary": "A clear chicken soup with a big piece of pumpkin, potato, corn and rice, finished with coriander.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 50,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 chicken thigh fillets (about 500g)",
+            "1.8 litres water",
+            "1 onion, diced",
+            "2 garlic cloves, crushed",
+            "2 potatoes, halved",
+            "400g pumpkin, cut in big pieces",
+            "2 corn cobs, halved",
+            "60g rice",
+            "100g green beans",
+            "1 tsp salt",
+            "1/4 cup chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the chicken, onion, garlic, salt and water for 15 minutes until the chicken is about half cooked.",
+        "Add the potatoes, pumpkin and corn and simmer for 15 minutes, then stir in the rice and beans.",
+        "Simmer for 15 to 18 minutes more until the rice is tender, the vegetables are soft and the chicken reaches 75°C.",
+        "Serve each bowl with a piece of chicken and sprinkle with coriander."
+      ],
+      "notes": [
+        "Keep the vegetables in large pieces so they hold their shape.",
+        "Food safety: chicken must reach 75°C; cool leftovers within 2 hours and use within 3 days."
+      ],
+      "nutrition": {
+        "kcal": 379,
+        "proteinG": 27,
+        "carbsG": 40,
+        "fatG": 11,
+        "fibreG": 6,
+        "sodiumMg": 660
+      }
+    },
+    {
+      "id": "nepali-jhol-dal-thin-lentil-soup-with-cumin",
+      "title": "Nepali Jhol Dal Thin Lentil Soup with Cumin",
+      "summary": "A thin, tangy yellow lentil soup finished with a sizzling garlic and cumin tarka.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g red lentils",
+            "1.2 litres water",
+            "1/2 tsp turmeric",
+            "1 tomato, chopped",
+            "1 tsp salt",
+            "1 tbsp vegetable oil",
+            "1 tsp cumin seeds",
+            "4 garlic cloves, sliced",
+            "1 dried chilli",
+            "2 tbsp chopped coriander",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the lentils, water, turmeric, tomato and salt for 25 minutes, stirring now and then, until completely soft and smooth.",
+        "Heat the oil, fry the cumin, garlic and chilli for 1 to 2 minutes until golden and fragrant.",
+        "Pour the tarka into the lentils with the coriander and lemon juice and stir well."
+      ],
+      "notes": [
+        "Whisk the lentils for a smoother soup.",
+        "Serve with rice."
+      ],
+      "nutrition": {
+        "kcal": 245,
+        "proteinG": 14,
+        "carbsG": 32,
+        "fatG": 5,
+        "fibreG": 8,
+        "sodiumMg": 590
+      }
+    },
+    {
+      "id": "zimbabwean-style-sadza-with-silverbeet-and-tomato",
+      "title": "Zimbabwean-Style Sadza with Silverbeet and Tomato",
+      "summary": "Soft white cornmeal porridge served with silverbeet cooked with tomato and onion.",
+      "cuisine": "south-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g fine cornmeal",
+            "1 litre water",
+            "1 tsp salt",
+            "1 tbsp vegetable oil",
+            "1 onion, diced",
+            "3 tomatoes, chopped",
+            "400g silverbeet, shredded",
+            "2 garlic cloves, crushed",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the cornmeal into 700ml of the water, then bring the remaining water to the boil, whisk it in with half the salt and cook for 15 minutes, stirring, until thick and pulling from the sides.",
+        "Cook the onion in the oil for 5 minutes until soft, add the garlic and tomatoes for 5 minutes until thick, then add the silverbeet and remaining salt.",
+        "Cook the greens for 6 minutes until tender and shape the sadza into balls to serve with the greens."
+      ],
+      "notes": [
+        "Stir hard with a wooden spoon to keep the sadza smooth.",
+        "Eat hot as it firms up when cold."
+      ],
+      "nutrition": {
+        "kcal": 315,
+        "proteinG": 8,
+        "carbsG": 56,
+        "fatG": 5,
+        "fibreG": 7,
+        "sodiumMg": 580
+      }
+    }
+  ]
+}

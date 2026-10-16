@@ -1,0 +1,1254 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "pumpkin-and-sweet-potato-congee",
+      "title": "Pumpkin and Sweet Potato Congee",
+      "summary": "Silky rice porridge simmered with pumpkin and sweet potato, topped with spring onion and sesame.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "breakfast",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g jasmine rice",
+            "1.5 litres water",
+            "300g pumpkin, cubed",
+            "200g sweet potato, cubed",
+            "1 tbsp grated ginger",
+            "1 tsp salt",
+            "1 tbsp soy sauce",
+            "1 tsp sesame oil",
+            "2 spring onions, sliced",
+            "1 tbsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Rinse the rice, then simmer it in the water with the ginger and salt for 30 minutes, stirring now and then, until the grains burst and the porridge is thick.",
+        "Add the pumpkin and sweet potato and simmer for 12 to 15 minutes until completely tender and starting to fall apart.",
+        "Stir well, loosen with hot water if needed and top with soy, sesame oil, spring onion and sesame seeds."
+      ],
+      "notes": [
+        "Stir often near the end so the base does not catch.",
+        "Congee thickens as it cools; add water when reheating until steaming hot."
+      ],
+      "nutrition": {
+        "kcal": 270,
+        "proteinG": 5,
+        "carbsG": 52,
+        "fatG": 4,
+        "fibreG": 3,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "mushroom-and-spring-onion-congee",
+      "title": "Mushroom and Spring Onion Congee",
+      "summary": "Savoury rice porridge with browned mushrooms, ginger and a drizzle of sesame oil.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "breakfast",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g jasmine rice",
+            "1.5 litres water",
+            "250g mushrooms, sliced",
+            "1 tbsp vegetable oil",
+            "2 tbsp grated ginger",
+            "2 garlic cloves, minced",
+            "1 tsp salt",
+            "1 tbsp soy sauce",
+            "1 tsp sesame oil",
+            "3 spring onions, sliced",
+            "1/4 tsp white pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Rinse the rice, then simmer it in the water with the ginger and salt for 35 minutes, stirring now and then, until creamy and thick.",
+        "Fry the mushrooms in the oil in a hot pan for 6 minutes until golden, add the garlic for 30 seconds until fragrant and splash in the soy.",
+        "Stir the mushrooms into the congee, then serve topped with spring onion, sesame oil and white pepper."
+      ],
+      "notes": [
+        "Cook the mushrooms in batches so they brown rather than steam.",
+        "Keeps 3 days in the fridge; reheat until steaming hot."
+      ],
+      "nutrition": {
+        "kcal": 274,
+        "proteinG": 6,
+        "carbsG": 48,
+        "fatG": 6,
+        "fibreG": 2,
+        "sodiumMg": 790
+      }
+    },
+    {
+      "id": "chilled-carrot-and-ginger-soup",
+      "title": "Chilled Carrot and Ginger Soup",
+      "summary": "A smooth, bright carrot soup with fresh ginger and orange, served cold with yoghurt.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "1 onion, diced",
+            "600g carrots, sliced",
+            "1 tbsp grated ginger",
+            "700ml vegetable stock",
+            "1 orange, juiced",
+            "1/2 tsp ground cumin",
+            "3/4 tsp salt",
+            "100g plain yoghurt",
+            "2 tbsp chopped chives"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion in the oil for 5 minutes until soft, add the ginger and cumin for 1 minute until fragrant.",
+        "Add the carrots and stock, cover and simmer for 20 minutes until the carrots are very tender.",
+        "Blend until completely smooth, stir in the orange juice and salt, then chill for at least 3 hours.",
+        "Serve topped with yoghurt and chives."
+      ],
+      "notes": [
+        "Thin with cold water if the soup thickens as it chills.",
+        "Keeps 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 151,
+        "proteinG": 4,
+        "carbsG": 20,
+        "fatG": 5,
+        "fibreG": 5,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "chilled-buttermilk-and-herb-soup",
+      "title": "Chilled Buttermilk and Herb Soup",
+      "summary": "A cooling no-cook soup of buttermilk, cucumber and fresh herbs.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600ml buttermilk",
+            "200g plain yoghurt",
+            "2 cucumbers, grated",
+            "1 garlic clove, crushed",
+            "3 tbsp chopped dill",
+            "3 tbsp chopped chives",
+            "1 tbsp lemon juice",
+            "1/2 tsp salt",
+            "1/4 tsp white pepper",
+            "4 radishes, thinly sliced",
+            "2 hard-boiled eggs, quartered"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the eggs for 9 minutes until firm, then cool in cold water and peel.",
+        "Whisk the buttermilk, yoghurt, cucumber, garlic, herbs, lemon juice, salt and pepper together.",
+        "Chill for 1 hour until cold, then ladle into bowls and top with radish and egg."
+      ],
+      "notes": [
+        "Taste before serving and add salt if needed as chilling dulls flavour.",
+        "Food safety: boil eggs until firm and keep the soup refrigerated, eating within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 154,
+        "proteinG": 12,
+        "carbsG": 12,
+        "fatG": 6,
+        "fibreG": 2,
+        "sodiumMg": 540
+      }
+    },
+    {
+      "id": "beef-pho-broth-with-rice-noodles",
+      "title": "Beef Pho Broth with Rice Noodles",
+      "summary": "Aromatic star anise and ginger beef broth poured over rice noodles and thin sliced beef.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 litres beef stock",
+            "1 onion, halved",
+            "5cm ginger, sliced",
+            "2 star anise",
+            "1 cinnamon stick",
+            "3 cloves",
+            "2 tbsp fish sauce",
+            "1 tsp sugar",
+            "200g dried rice noodles",
+            "250g rump steak, very thinly sliced",
+            "100g bean sprouts",
+            "1/2 cup coriander leaves",
+            "1/2 cup Thai basil",
+            "2 limes, cut in wedges",
+            "1 red chilli, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Char the onion and ginger in a dry pan for 5 minutes until blackened in spots.",
+        "Simmer the stock with the onion, ginger, star anise, cinnamon, cloves, fish sauce and sugar for 30 minutes until deeply fragrant, then strain.",
+        "Cook the noodles in boiling water for 4 minutes until tender, drain and divide among bowls.",
+        "Top with the raw beef, ladle over the boiling broth until the beef changes colour and is cooked through, then add sprouts, herbs, lime and chilli."
+      ],
+      "notes": [
+        "The broth must be bubbling hot when it hits the beef.",
+        "Food safety: thin beef must be cooked in the boiling broth to at least 63°C (no pink remains); keep leftover broth refrigerated and use within 3 days."
+      ],
+      "nutrition": {
+        "kcal": 336,
+        "proteinG": 27,
+        "carbsG": 42,
+        "fatG": 6,
+        "fibreG": 3,
+        "sodiumMg": 1400
+      }
+    },
+    {
+      "id": "clear-chicken-broth-with-vegetables",
+      "title": "Clear Chicken Broth with Vegetables",
+      "summary": "A simple, clear chicken soup with shredded chicken, carrot, celery and thyme.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 50,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g chicken thigh fillets",
+            "1.8 litres water",
+            "1 onion, halved",
+            "2 carrots, sliced",
+            "2 celery sticks, sliced",
+            "1 bay leaf",
+            "3 thyme sprigs",
+            "1 1/4 tsp salt",
+            "1/4 tsp black pepper",
+            "2 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Place the chicken, water, onion, bay leaf, thyme and salt in a pot and bring to a gentle simmer, skimming off any foam until the surface is clear.",
+        "Simmer gently for 25 minutes until the chicken reaches 75°C and is cooked through, then lift out, shred and discard the onion, bay leaf and thyme.",
+        "Add the carrots and celery to the broth and simmer for 15 minutes until tender.",
+        "Return the chicken, add the pepper and parsley and serve hot."
+      ],
+      "notes": [
+        "Keep the broth at a gentle bubble so it stays clear.",
+        "Food safety: chicken must reach 75°C; cool leftovers within 2 hours and use within 3 days."
+      ],
+      "nutrition": {
+        "kcal": 213,
+        "proteinG": 26,
+        "carbsG": 6,
+        "fatG": 9,
+        "fibreG": 2,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "mushroom-ginger-broth-with-rice-noodles-and-greens",
+      "title": "Mushroom Ginger Broth with Rice Noodles and Greens",
+      "summary": "A light, savoury mushroom and ginger broth with soft tofu, noodles and bok choy.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800ml vegetable stock",
+            "150g mushrooms, sliced",
+            "2 tbsp grated ginger",
+            "2 tbsp soy sauce",
+            "1 tsp rice vinegar",
+            "100g rice noodles",
+            "200g silken tofu, cubed",
+            "2 bok choy, quartered",
+            "2 spring onions, sliced",
+            "1 tsp sesame oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the stock with the mushrooms, ginger, soy and vinegar for 10 minutes until the mushrooms are tender.",
+        "Cook the noodles in boiling water for 4 minutes until soft, then drain and divide between bowls.",
+        "Add the bok choy and tofu to the broth and cook for 2 minutes until the bok choy is tender and the tofu is hot.",
+        "Ladle over the noodles and finish with spring onion and sesame oil."
+      ],
+      "notes": [
+        "Add the tofu gently so it stays in cubes.",
+        "Keeps 2 days in the fridge without the noodles."
+      ],
+      "nutrition": {
+        "kcal": 279,
+        "proteinG": 12,
+        "carbsG": 40,
+        "fatG": 7,
+        "fibreG": 4,
+        "sodiumMg": 1400
+      }
+    },
+    {
+      "id": "salmorejo-cordobes-with-egg",
+      "title": "Salmorejo Cordobes with Egg",
+      "summary": "Thick, creamy chilled tomato and bread soup from Cordoba, topped with chopped egg.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 kg ripe tomatoes, chopped",
+            "150g day-old bread, crusts removed",
+            "1 garlic clove",
+            "80ml olive oil",
+            "2 tbsp sherry vinegar",
+            "1 tsp salt",
+            "2 hard-boiled eggs, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the eggs for 9 minutes until firm, cool and chop.",
+        "Blend the tomatoes, bread, garlic and vinegar for 2 minutes until very smooth, then add the oil slowly while blending until creamy and pale orange.",
+        "Season with salt, chill for 2 hours and serve topped with egg."
+      ],
+      "notes": [
+        "Use very ripe tomatoes for sweetness.",
+        "Food safety: boil eggs until firm and eat within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 314,
+        "proteinG": 9,
+        "carbsG": 27,
+        "fatG": 18,
+        "fibreG": 4,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "silverbeet-and-chickpea-soup-with-lemon",
+      "title": "Silverbeet and Chickpea Soup with Lemon",
+      "summary": "A wholesome chickpea soup with silverbeet and lemon, with a little garlic and cumin.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp olive oil",
+            "1 onion, diced",
+            "3 garlic cloves, crushed",
+            "1 tsp ground cumin",
+            "480g canned chickpeas, drained",
+            "1 litre vegetable stock",
+            "300g silverbeet, shredded",
+            "3 tbsp lemon juice",
+            "1/2 tsp salt",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion in the oil for 6 minutes until golden, then add the garlic and cumin for 1 minute until fragrant.",
+        "Add the chickpeas and stock and simmer for 12 minutes until the chickpeas are soft, mashing a few against the pot.",
+        "Stir in the silverbeet and cook for 4 minutes until wilted and tender, then add the lemon juice, salt and pepper."
+      ],
+      "notes": [
+        "Mash some chickpeas to thicken the soup naturally.",
+        "Keeps 4 days in the fridge and freezes well."
+      ],
+      "nutrition": {
+        "kcal": 284,
+        "proteinG": 11,
+        "carbsG": 33,
+        "fatG": 10,
+        "fibreG": 9,
+        "sodiumMg": 760
+      }
+    },
+    {
+      "id": "cream-of-celery-soup-with-thyme",
+      "title": "Cream of Celery Soup with Thyme",
+      "summary": "A smooth, gently flavoured celery soup with potato, thyme and a swirl of cream.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "30g butter",
+            "1 onion, diced",
+            "1 bunch celery, sliced (about 500g)",
+            "1 potato, peeled and diced",
+            "800ml vegetable stock",
+            "3 thyme sprigs",
+            "100ml cream",
+            "3/4 tsp salt",
+            "1/4 tsp white pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion and celery in the butter for 10 minutes until soft without colour.",
+        "Add the potato, stock and thyme and simmer for 20 minutes until the potato is falling apart.",
+        "Remove the thyme, blend until smooth, then stir in the cream, salt and pepper and heat gently until hot."
+      ],
+      "notes": [
+        "Strain the soup for a very smooth finish.",
+        "Keeps 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 222,
+        "proteinG": 4,
+        "carbsG": 18,
+        "fatG": 14,
+        "fibreG": 4,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "leek-and-pearl-barley-broth",
+      "title": "Leek and Pearl Barley Broth",
+      "summary": "A rustic broth of leek, carrot and pearl barley with parsley.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "2 leeks, sliced",
+            "2 carrots, diced",
+            "2 celery sticks, diced",
+            "100g pearl barley",
+            "1.5 litres vegetable stock",
+            "2 bay leaves",
+            "1 tsp salt",
+            "1/4 tsp black pepper",
+            "3 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the leeks, carrots and celery in the oil for 8 minutes until the leek is soft.",
+        "Add the barley, stock and bay leaves and simmer for 35 to 40 minutes until the barley is plump and tender.",
+        "Remove the bay leaves, season and stir in the parsley."
+      ],
+      "notes": [
+        "The barley absorbs liquid, so add water when reheating.",
+        "Keeps 4 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 213,
+        "proteinG": 5,
+        "carbsG": 34,
+        "fatG": 5,
+        "fibreG": 6,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "hearty-minestrone-with-cannellini-beans",
+      "title": "Hearty Minestrone with Cannellini Beans",
+      "summary": "A thick vegetable minestrone with beans, small pasta and basil.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp olive oil",
+            "1 onion, diced",
+            "2 carrots, diced",
+            "2 celery sticks, diced",
+            "3 garlic cloves, crushed",
+            "1 x 400g can chopped tomatoes",
+            "1.5 litres vegetable stock",
+            "1 zucchini, diced",
+            "1 x 400g can cannellini beans, drained",
+            "100g small pasta shapes",
+            "100g green beans, chopped",
+            "1 tsp salt",
+            "1/4 cup torn basil"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion, carrot, celery and garlic in the oil for 8 minutes until soft.",
+        "Add the tomatoes and stock and simmer for 10 minutes, then stir in the zucchini, cannellini beans, green beans and pasta.",
+        "Simmer for 10 to 12 minutes until the pasta is tender, then season and finish with basil."
+      ],
+      "notes": [
+        "Add extra stock if the pasta soaks up too much liquid.",
+        "Keeps 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 246,
+        "proteinG": 10,
+        "carbsG": 34,
+        "fatG": 6,
+        "fibreG": 8,
+        "sodiumMg": 760
+      }
+    },
+    {
+      "id": "chilled-beetroot-soup-with-yoghurt-and-dill",
+      "title": "Chilled Beetroot Soup with Yoghurt and Dill",
+      "summary": "A vivid pink chilled beetroot soup with yoghurt, cucumber and dill.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g beetroot, peeled and diced",
+            "1 onion, diced",
+            "1 tbsp olive oil",
+            "800ml vegetable stock",
+            "2 tbsp red wine vinegar",
+            "1 tsp sugar",
+            "3/4 tsp salt",
+            "200g plain yoghurt",
+            "1 cucumber, diced",
+            "3 tbsp chopped dill"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion in the oil for 5 minutes, add the beetroot and stock and simmer for 25 minutes until the beetroot is very tender.",
+        "Blend until smooth, stir in the vinegar, sugar and salt and chill for 3 hours.",
+        "Whisk in half the yoghurt, ladle into bowls and top with cucumber, dill and the remaining yoghurt."
+      ],
+      "notes": [
+        "Wear gloves or an apron as beetroot stains.",
+        "Keeps 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 148,
+        "proteinG": 6,
+        "carbsG": 20,
+        "fatG": 4,
+        "fibreG": 4,
+        "sodiumMg": 620
+      }
+    },
+    {
+      "id": "pumpkin-laksa-with-rice-noodles-and-tofu",
+      "title": "Pumpkin Laksa with Rice Noodles and Tofu",
+      "summary": "A creamy coconut laksa with sweet pumpkin, tofu puffs and rice noodles.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp vegetable oil",
+            "3 tbsp laksa paste",
+            "400g pumpkin, cubed",
+            "600ml vegetable stock",
+            "400ml coconut milk",
+            "200g rice vermicelli",
+            "200g firm tofu, cubed",
+            "100g bean sprouts",
+            "1 tbsp lime juice",
+            "1 tbsp soy sauce",
+            "1/4 cup coriander leaves"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the laksa paste in the oil for 2 minutes until fragrant, then add the pumpkin, stock and coconut milk.",
+        "Simmer for 15 minutes until the pumpkin is tender, then add the tofu and heat for 3 minutes until hot.",
+        "Soak the vermicelli in boiling water for 5 minutes until soft, drain and divide into bowls.",
+        "Season the soup with lime juice and soy, ladle over the noodles and top with sprouts and coriander."
+      ],
+      "notes": [
+        "Use less paste for a milder soup.",
+        "Keeps 2 days in the fridge without the noodles."
+      ],
+      "nutrition": {
+        "kcal": 460,
+        "proteinG": 12,
+        "carbsG": 42,
+        "fatG": 26,
+        "fibreG": 5,
+        "sodiumMg": 1150
+      }
+    },
+    {
+      "id": "zucchini-lemon-orzo-soup",
+      "title": "Zucchini Lemon Orzo Soup",
+      "summary": "A light, lemony orzo soup with zucchini and dill.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "1 onion, diced",
+            "2 garlic cloves, crushed",
+            "3 zucchini, diced",
+            "1.2 litres vegetable stock",
+            "120g orzo",
+            "2 tbsp lemon juice",
+            "1 tsp lemon zest",
+            "3 tbsp chopped dill",
+            "3/4 tsp salt",
+            "40g feta, crumbled"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion in the oil for 5 minutes until soft, add the garlic and zucchini for 3 minutes until lightly coloured.",
+        "Add the stock and bring to the boil, stir in the orzo and simmer for 9 minutes until the pasta is tender.",
+        "Stir in the lemon juice, zest, dill and salt and serve topped with feta."
+      ],
+      "notes": [
+        "Orzo keeps absorbing liquid, so thin leftovers with stock.",
+        "Keeps 2 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 247,
+        "proteinG": 9,
+        "carbsG": 35,
+        "fatG": 7,
+        "fibreG": 4,
+        "sodiumMg": 850
+      }
+    },
+    {
+      "id": "japanese-takikomi-gohan-mixed-vegetable-rice",
+      "title": "Japanese Takikomi Gohan Mixed Vegetable Rice",
+      "summary": "Rice cooked with mushrooms, carrot and edamame in a light soy broth.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g short-grain rice",
+            "450ml water",
+            "2 tbsp soy sauce",
+            "1 tbsp rice vinegar",
+            "150g mushrooms, sliced",
+            "1 carrot, cut in matchsticks",
+            "100g shelled edamame",
+            "1 tbsp grated ginger",
+            "1 tsp sesame oil",
+            "1 tbsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Rinse the rice until the water runs clear, then place in a pot with the water, soy, vinegar and ginger.",
+        "Scatter the mushrooms and carrot over the top without stirring, cover, bring to the boil and cook on low for 15 minutes until the water is absorbed.",
+        "Add the edamame, cover and rest off the heat for 10 minutes until the rice is tender, then fold through the sesame oil and seeds."
+      ],
+      "notes": [
+        "Do not stir while cooking so the rice steams evenly.",
+        "Food safety: cool leftover rice within 1 hour and refrigerate; use within 1 day."
+      ],
+      "nutrition": {
+        "kcal": 378,
+        "proteinG": 11,
+        "carbsG": 68,
+        "fatG": 6,
+        "fibreG": 4,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "israeli-couscous-with-roast-vegetables-and-lemon",
+      "title": "Israeli Couscous with Roast Vegetables and Lemon",
+      "summary": "Pearl couscous tossed with roast zucchini, capsicum and red onion in a lemon herb dressing.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 zucchini, chopped",
+            "1 red capsicum, chopped",
+            "1 red onion, wedged",
+            "3 tbsp olive oil",
+            "200g pearl couscous",
+            "350ml boiling water",
+            "2 tbsp lemon juice",
+            "1/2 tsp salt",
+            "1/2 cup chopped parsley",
+            "30g pine nuts"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C, toss the vegetables with 1 tbsp oil and roast for 25 minutes until tender and charred at the edges.",
+        "Cook the couscous in the boiling water for 8 minutes until tender, drain any excess and cool slightly.",
+        "Toss with the roast vegetables, remaining oil, lemon juice, salt, parsley and toasted pine nuts until evenly coated."
+      ],
+      "notes": [
+        "Toast the pine nuts in a dry pan for 2 minutes until golden.",
+        "Eat warm or at room temperature."
+      ],
+      "nutrition": {
+        "kcal": 335,
+        "proteinG": 8,
+        "carbsG": 40,
+        "fatG": 15,
+        "fibreG": 4,
+        "sodiumMg": 340
+      }
+    },
+    {
+      "id": "lebanese-batata-harra-spiced-potatoes",
+      "title": "Lebanese Batata Harra Spiced Potatoes",
+      "summary": "Crispy cubed potatoes tossed with garlic, chilli and coriander.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g potatoes, cut in 2cm cubes",
+            "3 tbsp olive oil",
+            "4 garlic cloves, crushed",
+            "1 tsp chilli flakes",
+            "1 tsp ground coriander",
+            "3/4 tsp salt",
+            "3 tbsp chopped coriander",
+            "2 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes for 8 minutes until just tender, drain well and let the steam rise.",
+        "Heat the oil in a wide pan and fry the potatoes for 12 to 15 minutes, turning, until golden and crisp.",
+        "Add the garlic, chilli, ground coriander and salt for 1 minute until fragrant, then toss with fresh coriander and lemon juice."
+      ],
+      "notes": [
+        "Let the potatoes steam-dry before frying for extra crispness.",
+        "Eat the same day."
+      ],
+      "nutrition": {
+        "kcal": 267,
+        "proteinG": 5,
+        "carbsG": 35,
+        "fatG": 11,
+        "fibreG": 4,
+        "sodiumMg": 430
+      }
+    },
+    {
+      "id": "quinoa-breakfast-bowl-with-poached-egg-and-spinach",
+      "title": "Quinoa Breakfast Bowl with Poached Egg and Spinach",
+      "summary": "Warm quinoa with wilted spinach, a poached egg and a squeeze of lemon.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "120g quinoa",
+            "300ml water",
+            "100g baby spinach",
+            "1 tbsp olive oil",
+            "2 eggs",
+            "1 tbsp white vinegar",
+            "1/2 avocado, sliced",
+            "1 tbsp lemon juice",
+            "1/4 tsp salt",
+            "1/4 tsp chilli flakes"
+          ]
+        }
+      ],
+      "steps": [
+        "Rinse the quinoa, then simmer in the water for 15 minutes until tender and the germ has spiralled out, then drain well.",
+        "Wilt the spinach in the oil for 1 minute until soft and stir through the quinoa with the salt and lemon.",
+        "Poach the eggs in barely simmering water with the vinegar for 3 minutes until the whites are set, then drain.",
+        "Top the bowls with avocado, eggs and chilli flakes."
+      ],
+      "notes": [
+        "Rinse quinoa well to remove any bitterness.",
+        "Food safety: poach eggs until the whites are fully set."
+      ],
+      "nutrition": {
+        "kcal": 427,
+        "proteinG": 20,
+        "carbsG": 40,
+        "fatG": 19,
+        "fibreG": 8,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "egg-white-omelette-with-mushrooms-and-herbs",
+      "title": "Egg White Omelette with Mushrooms and Herbs",
+      "summary": "A light, high-protein omelette with mushrooms, spinach and herbs.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 10,
+      "servings": 1,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "5 egg whites",
+            "100g mushrooms, sliced",
+            "30g baby spinach",
+            "1 tsp olive oil",
+            "1 tbsp chopped chives",
+            "1 tbsp chopped parsley",
+            "1/4 tsp salt",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the mushrooms in the oil for 5 minutes until golden, add the spinach for 30 seconds until wilted, then tip out.",
+        "Whisk the egg whites with the salt, pepper and herbs, pour into the same pan and cook gently for 2 to 3 minutes until nearly set.",
+        "Spoon the mushrooms over half, fold and cook for 1 minute until the egg is fully set."
+      ],
+      "notes": [
+        "Use a non-stick pan so the whites slide out easily.",
+        "Food safety: cook until the egg is firm throughout."
+      ],
+      "nutrition": {
+        "kcal": 145,
+        "proteinG": 20,
+        "carbsG": 4,
+        "fatG": 5,
+        "fibreG": 2,
+        "sodiumMg": 420
+      }
+    },
+    {
+      "id": "autumn-apple-and-celery-salad-with-walnuts",
+      "title": "Autumn Apple and Celery Salad with Walnuts",
+      "summary": "A crisp, juicy salad of apple, celery and walnuts in a light mustard dressing.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 apples, cored and sliced",
+            "4 celery sticks, thinly sliced",
+            "50g walnuts, chopped",
+            "2 tbsp olive oil",
+            "2 tbsp lemon juice",
+            "1 tsp Dijon mustard",
+            "1 tsp honey",
+            "1/4 tsp salt",
+            "2 tbsp chopped parsley",
+            "50g rocket"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the oil, lemon juice, mustard, honey and salt together.",
+        "Toss the apple and celery with the dressing right away until every slice is coated, so the apple stays pale.",
+        "Fold in the walnuts, parsley and rocket and serve immediately."
+      ],
+      "notes": [
+        "Slice the apple just before assembling.",
+        "Best eaten the same day."
+      ],
+      "nutrition": {
+        "kcal": 248,
+        "proteinG": 4,
+        "carbsG": 24,
+        "fatG": 14,
+        "fibreG": 5,
+        "sodiumMg": 190
+      }
+    },
+    {
+      "id": "charred-cabbage-wedges-with-miso-butter",
+      "title": "Charred Cabbage Wedges with Miso Butter",
+      "summary": "Cabbage wedges roasted until charred and tender, glazed with garlicky miso butter.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 small cabbage, cut in 8 wedges",
+            "2 tbsp olive oil",
+            "40g butter",
+            "2 tbsp white miso",
+            "1 garlic clove, crushed",
+            "1 tsp honey",
+            "1 tbsp sesame seeds",
+            "1 spring onion, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 230°C, brush the cabbage with the oil and roast cut side down for 20 to 25 minutes until charred at the edges and tender in the centre.",
+        "Mash the butter with the miso, garlic and honey.",
+        "Dot the hot wedges with the miso butter until it melts, then scatter with sesame and spring onion."
+      ],
+      "notes": [
+        "Do not move the wedges while roasting so they char.",
+        "Miso butter keeps 1 week in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 199,
+        "proteinG": 4,
+        "carbsG": 14,
+        "fatG": 13,
+        "fibreG": 5,
+        "sodiumMg": 580
+      }
+    },
+    {
+      "id": "braised-leeks-with-mustard-vinaigrette",
+      "title": "Braised Leeks with Mustard Vinaigrette",
+      "summary": "Tender braised leeks dressed warm in a sharp mustard vinaigrette with parsley.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 leeks, trimmed and halved lengthways",
+            "300ml vegetable stock",
+            "3 tbsp olive oil",
+            "1 tbsp Dijon mustard",
+            "2 tbsp red wine vinegar",
+            "1 tsp honey",
+            "1/4 tsp salt",
+            "2 tbsp chopped parsley",
+            "2 hard-boiled eggs, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the eggs for 9 minutes until firm, cool, peel and chop.",
+        "Simmer the leeks in the stock, covered, for 15 to 20 minutes until completely tender, then drain well.",
+        "Whisk the oil, mustard, vinegar, honey and salt, pour over the warm leeks and top with parsley and egg."
+      ],
+      "notes": [
+        "Wash the leeks thoroughly between the layers.",
+        "Food safety: boil eggs until firm and eat within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 211,
+        "proteinG": 7,
+        "carbsG": 15,
+        "fatG": 13,
+        "fibreG": 3,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "vietnamese-cucumber-pickle-salad",
+      "title": "Vietnamese Cucumber Pickle Salad",
+      "summary": "Crunchy cucumber with sweet and sour rice vinegar, chilli and herbs.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 cucumbers, thinly sliced",
+            "1 carrot, grated",
+            "3 tbsp rice vinegar",
+            "1 tbsp sugar",
+            "1/2 tsp salt",
+            "1 red chilli, sliced",
+            "1/4 cup mint leaves",
+            "2 tbsp roasted peanuts, crushed"
+          ]
+        }
+      ],
+      "steps": [
+        "Stir the vinegar, sugar and salt together until the sugar dissolves.",
+        "Toss the cucumber and carrot with the dressing and chilli and leave for 10 minutes to lightly pickle.",
+        "Top with mint and peanuts and serve cold."
+      ],
+      "notes": [
+        "Salting the cucumber first makes it crunchier.",
+        "Keeps 2 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 110,
+        "proteinG": 3,
+        "carbsG": 14,
+        "fatG": 4,
+        "fibreG": 3,
+        "sodiumMg": 330
+      }
+    }
+  ]
+}
