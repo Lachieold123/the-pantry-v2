@@ -16,5 +16,8 @@ for k in range(0, len(comp), 30):
     w(f'u{k // 30 + 1:02d}', 'with d as (select value r from jsonb_array_elements($q$' + dump(comp[k:k + 30]) + '$q$' + u_tail)
 for k in range(0, len(ins), 12):
     w(f'i{k // 12 + 1:02d}', 'with d as (select value r from jsonb_array_elements($q$' + dump(ins[k:k + 12]) + '$q$' + i_tail)
-notes = [{'id': r['id'], 'notes': r['notes']} for r in comp[:90] if 'notes' in r]
-w('x01', 'with d as (select value r from jsonb_array_elements($q$' + dump(notes) + '$q$::jsonb)), up as (update public.published_recipes p set recipe = jsonb_set(p.recipe, \'{notes}\', d.r->\'notes\') from d where p.id=(d.r->>\'id\')::uuid returning p.id) select (select count(*) from d) expected, (select count(*) from up) updated;')
+fs = [{'id': r['id'], 'fs': n} for r in comp[:90] for n in r.get('notes', []) if n.startswith('Food safety: ') and len(n) > 14]
+w('x01', 'with d as (select value r from jsonb_array_elements($q$' + dump(fs) + '$q$::jsonb)), up as (update public.published_recipes p set recipe = jsonb_set(p.recipe, \'{notes}\', coalesce(p.recipe->\'notes\', \'[]\'::jsonb) || to_jsonb(d.r->>\'fs\')) from d where p.id=(d.r->>\'id\')::uuid and not exists (select 1 from jsonb_array_elements_text(coalesce(p.recipe->\'notes\', \'[]\'::jsonb)) e where e like \'Food safety:%\') returning p.id) select (select count(*) from d) expected, (select count(*) from up) updated;')
+# Smaller chunks (15 rows, fit one tool output): s01.. = comp[90:] (remaining updates), t01.. = inserts
+for n, k in enumerate(range(90, len(comp), 15), 1):
+    w(f's{n:02d}', 'with d as (select value r from jsonb_array_elements($q$' + dump(comp[k:k + 15]) + '$q$' + u_tail)

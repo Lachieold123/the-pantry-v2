@@ -45,3 +45,20 @@ The 15 tag additions in the compact file (e.g. dosa no-gluten, karahi no-dairy) 
 - Fictional cooks, AI faces and seeded follows: fine for test builds only (App Store 5.1/2.3, ACL). Not changed.
 - Higgsfield plan terms for the 418 AI images: unchecked.
 - App-store builds, RevenueCat, paid services: untouched.
+
+## Feed publish via Supabase MCP (option 3) - progress log
+- Backups confirmed in DB (604/241/100) and docs/backups. Table public.published_recipes matches payload keys (recipe jsonb holds notes/steps/diets; column diets updated with it).
+- Chunk SQL files (30 updates / 12 inserts each): scratchpad `.../scratchpad/ch/u01..u17.sql`, `i01..i11.sql` (rebuild with the generator in this note if lost). Update = `recipe || (row - id - notes) || filtered notes`, diets column set when row has diets. Insert picks a cook who already has published recipes in that cuisine (rotating, fewest recipes first), else official `thepantry`; review auto-checked; guarded by `not exists slug`.
+- DEVIATION: 126 payload rows (90 updates, 36 inserts) carry an empty note "Food safety: " (source batches have the empty stub). Chunks strip notes that are exactly "Food safety:" so no blank note is published; source JSON unchanged. Lachlan may want the real food-safety text written later.
+- Published before: 592 (604 rows, 12 removed).
+- Done: u01, u02 (30/30 each).
+- Done: u01, u02, u03 (30/30 each, 90 of 506 rows). Remaining: u04..u17 (updates), i01..i11 (inserts). Ready-to-paste SQL is in `docs/backups/feed-payloads-2026-10-17/chunks/` (Read one, paste it whole into Supabase `execute_sql`, project eozyhllkvajvrecojdxu; result must show expected = updated/inserted). Each chunk costs about 20k tokens of context (read + paste), so a fresh helper should do roughly 6 chunks, note progress here, and stop.
+- Final checks still to run: published count (before 592), 5 random updated rows vs payload, 0 vegetarian/vegan rows with parmesan/pecorino/honey(vegan)/gelatin, and an md5 compare of recipe->steps per updated id against the payload to catch any paste typos.
+
+### Progress, session 2 (17 Oct)
+- Real food-safety notes written for all 126 empty-note rows (`docs/backups/feed-payloads-2026-10-17/fs_notes.py`, rule-based on ingredients; payload JSONs updated). Chunks rebuilt by `gen_chunks.py` (committed on main, not pushed).
+- BUG FIXED: old i01..i11 used an invalid `$[` dollar-quote; regenerated with `$q$`. Use the regenerated files.
+- Done: x01 (notes fix for u01-u03 rows; 54 rows checked, 13 lacked a note and got one), s01 (15/15, = compact rows 91-105).
+- New smaller chunks s01..s28 (15 rows each, compact rows 91-506, fit one tool output). Next: s02. Do NOT use u04..u17 (they overlap s-series; s01 covers part of u04).
+- Remaining: s02..s28 (updates), i01..i11 (inserts; 12 rows is ~41KB, too big for one output: split to ~4-6 rows before applying).
+- Published count now: see Telegram report (before 592, inserts not yet applied).
