@@ -146,10 +146,23 @@ async function selectAll<T>(q: (from: number, to: number) => PromiseLike<{ data:
   }
 }
 
+// New-style keys say what they are; legacy keys are JWTs with a role claim.
+function isServiceKey(key: string): boolean {
+  if (key.startsWith('sb_secret_')) return true;
+  if (key.startsWith('sb_publishable_')) return false;
+  try {
+    const payload = JSON.parse(Buffer.from(key.split('.')[1] ?? '', 'base64url').toString('utf8'));
+    return payload.role === 'service_role';
+  } catch {
+    return false;
+  }
+}
+
 async function checkBackups(db: SupabaseClient): Promise<void> {
   let schemaHidden = false;
   for (const t of BACKUP_TABLES) {
-    const { count, error } = await db.schema('backup').from(t).select('*', { count: 'exact', head: true });
+    // Not a HEAD request: HEAD replies have no body, so the "schema not exposed" error arrives blank.
+    const { count, error } = await db.schema('backup').from(t).select('*', { count: 'exact' }).limit(1);
     if (!error) {
       log(`  backup.${t}: ${count} rows`);
       if (!count) throw new Error(`backup.${t} is empty. Stopping.`);
@@ -212,6 +225,10 @@ async function main() {
     process.env.SUPABASE_SERVICE_ROLE_KEY?.trim() ||
     (await readHidden('Paste the service_role key, then press Enter (it will not show): '));
   if (secret.length < 20) throw new Error('That key looks too short. Nothing was changed.');
+  // The public key can read but RLS blocks its writes, so a wrong paste fails row by row. Catch it up front.
+  if (!isServiceKey(secret)) {
+    throw new Error('That is the public (anon/publishable) key, not the secret one. Nothing was changed.');
+  }
   const db = createClient(url, secret, { auth: { persistSession: false, autoRefreshToken: false } });
 
   log(`\nConnecting to ${url}`);
