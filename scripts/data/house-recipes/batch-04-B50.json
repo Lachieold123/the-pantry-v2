@@ -1,0 +1,881 @@
+{
+  "about": "House recipes, batch 04 (slice B): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "tres-leches-cups",
+      "title": "Tres Leches Cups",
+      "summary": "Light vanilla sponge cubes soaked in three milks and topped with whipped cream and cinnamon.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 25,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 eggs",
+            "120g caster sugar",
+            "120g plain flour",
+            "1 tsp baking powder",
+            "60ml milk",
+            "1 tsp vanilla extract",
+            "150ml sweetened condensed milk",
+            "150ml evaporated milk",
+            "150ml milk",
+            "200ml thickened cream",
+            "1/2 tsp ground cinnamon"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 170°C fan (190°C conventional). Grease and line a 20cm square tin.",
+        "Beat the eggs and sugar with an electric whisk for 8 minutes until pale and thick. Fold in the flour and baking powder, then the 60ml milk and vanilla.",
+        "Pour into the tin and bake for 22 to 25 minutes until golden and a skewer comes out clean. Cool for 10 minutes.",
+        "Prick the sponge all over with a fork. Mix the condensed milk, evaporated milk and 150ml milk and pour slowly over the sponge until absorbed.",
+        "Cut the sponge into 2cm cubes and divide among 8 cups. Whip the cream to soft peaks, spoon on top and dust with cinnamon."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 cup. Plus about 2 hours chilling.",
+        "Food safety: use fresh, clean, uncracked eggs, bake the sponge until fully set and keep the cups refrigerated; check the thickest part reaches 75°C.",
+        "Storage: keep refrigerated and eat within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 353,
+        "proteinG": 10,
+        "carbsG": 44,
+        "fatG": 15,
+        "fibreG": 1,
+        "sodiumMg": 130
+      }
+    },
+    {
+      "id": "conchas",
+      "title": "Conchas",
+      "summary": "Soft sweet bread rolls topped with a crisp shell-patterned sugar crust.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 40,
+      "cookMinutes": 20,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g bread flour",
+            "50g caster sugar",
+            "7g dried yeast",
+            "1/2 tsp salt",
+            "130ml milk, warmed",
+            "1 egg",
+            "50g butter, softened",
+            "60g butter, softened (for the topping)",
+            "80g icing sugar",
+            "90g plain flour",
+            "1 tsp vanilla extract"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the bread flour, sugar, yeast and salt, add the warm milk, egg and 50g butter and knead for 10 minutes until smooth and elastic. Cover and let it double.",
+        "Beat the 60g butter and icing sugar until pale, mix in the vanilla and plain flour to a soft dough and divide into 8 balls.",
+        "Divide the risen dough into 8 balls and set on a lined tray 5cm apart. Flatten each topping ball to an 8cm disc between baking paper and press one onto each bun.",
+        "Score a shell pattern into each top with a knife. Cover and prove until puffy.",
+        "Heat the oven to 170°C fan (190°C conventional). Bake for 18 to 20 minutes until the buns sound hollow underneath and the topping is pale gold. Cool on a rack."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 concha. Plus about 2 hours proving.",
+        "Food safety: use fresh, clean, uncracked eggs and bake until fully cooked through; check the thickest part reaches 75°C.",
+        "Storage: best the day they are baked; keep covered for 2 days."
+      ],
+      "nutrition": {
+        "kcal": 352,
+        "proteinG": 7,
+        "carbsG": 53,
+        "fatG": 12,
+        "fibreG": 2,
+        "sodiumMg": 230
+      }
+    },
+    {
+      "id": "cocadas",
+      "title": "Cocadas",
+      "summary": "Chewy baked coconut macaroon mounds with a golden crust.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g desiccated coconut",
+            "100g caster sugar",
+            "3 egg whites",
+            "1 tsp vanilla extract",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional) and line a tray.",
+        "Stir the coconut, sugar, egg whites, vanilla and salt in a pan over low heat for 3 minutes until the mixture is warm and sticks together.",
+        "Scoop 12 mounds with a damp spoon onto the tray, pressing them firmly.",
+        "Bake for 15 to 18 minutes until the tips and edges are golden brown. Cool on the tray, as they firm up as they cool."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Gluten-free. Per serving: 1 cocada.",
+        "Food safety: use fresh, clean, uncracked eggs and bake until the mounds are set and golden; check the thickest part reaches 75°C.",
+        "Storage: keep airtight for 5 days."
+      ],
+      "nutrition": {
+        "kcal": 153,
+        "proteinG": 2,
+        "carbsG": 10,
+        "fatG": 11,
+        "fibreG": 3,
+        "sodiumMg": 90
+      }
+    },
+    {
+      "id": "colombian-cheese-fritters",
+      "title": "Colombian Cheese Fritters",
+      "summary": "Crisp golden balls with a salty cheese centre, inspired by Colombian bunuelos.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g feta, crumbled",
+            "100g cornflour",
+            "100g plain flour",
+            "1 egg",
+            "1 tsp caster sugar",
+            "1 tsp baking powder",
+            "100ml milk",
+            "700ml neutral oil, for deep-frying"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the feta, cornflour, flour, sugar and baking powder, add the egg and milk and work to a soft dough. Roll into 24 balls the size of a walnut.",
+        "Heat the oil in a deep heavy pot to 160°C. Fry in batches of 6 for 5 to 6 minutes, turning, until deep golden and puffed. They should float and a ball should be cooked through when broken open.",
+        "Drain on paper towel and serve warm."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 3 fritters.",
+        "Food safety: use fresh, clean, uncracked eggs and fry until the dough is cooked through; check the thickest part reaches 75°C.",
+        "Deep-frying safety: use a deep heavy pot no more than one-third full, never leave hot oil unattended, keep a lid nearby and never put water on an oil fire.",
+        "Storage: best fresh; keep refrigerated for 1 day."
+      ],
+      "nutrition": {
+        "kcal": 182,
+        "proteinG": 5,
+        "carbsG": 22,
+        "fatG": 8,
+        "fibreG": 1,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "marranitos",
+      "title": "Marranitos",
+      "summary": "Soft ginger and brown sugar cookies, a Mexican pan dulce favourite.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 10,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g plain flour",
+            "100g butter, softened",
+            "90g brown sugar",
+            "3 tbsp golden syrup",
+            "1 egg",
+            "2 tsp ground ginger",
+            "1 tsp ground cinnamon",
+            "1 tsp baking powder",
+            "1/2 tsp bicarbonate of soda"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 170°C fan (190°C conventional) and line two trays.",
+        "Beat the butter, sugar and golden syrup for 3 minutes until fluffy, then beat in the egg. Stir in the flour, spices, baking powder and bicarbonate of soda to a soft dough.",
+        "Roll to 1cm thick, cut into 20 shapes with a 6cm cutter and set 3cm apart on the trays.",
+        "Bake for 12 to 14 minutes until firm and lightly browned at the edges. Cool on the trays for 5 minutes."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 cookies. Plus 20 minutes chilling the dough.",
+        "Food safety: use fresh, clean, uncracked eggs and bake until set; check the thickest part reaches 75°C.",
+        "Storage: keep airtight for 1 week."
+      ],
+      "nutrition": {
+        "kcal": 251,
+        "proteinG": 4,
+        "carbsG": 38,
+        "fatG": 9,
+        "fibreG": 1,
+        "sodiumMg": 120
+      }
+    },
+    {
+      "id": "chilean-sopaipillas",
+      "title": "Chilean Sopaipillas",
+      "summary": "Golden pumpkin fritters served with a warm cinnamon brown sugar syrup.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g cooked mashed butternut pumpkin",
+            "250g plain flour",
+            "1 tsp baking powder",
+            "25g butter, melted",
+            "1/2 tsp salt",
+            "600ml neutral oil, for deep-frying",
+            "100g brown sugar",
+            "100ml water",
+            "1 cinnamon stick"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the pumpkin, flour, baking powder, butter and salt into a soft dough, kneading for 2 minutes. Roll to 5mm thick and cut into 16 rounds with a 7cm cutter, pricking each with a fork.",
+        "Simmer the brown sugar, water and cinnamon stick for 8 minutes until slightly thick.",
+        "Heat the oil in a deep heavy pot to 175°C. Fry 3 at a time for 2 minutes per side until puffed and golden brown. Drain on paper towel and serve with the warm syrup."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 sopaipillas with syrup. Plus 15 minutes resting the dough.",
+        "Deep-frying safety: use a deep heavy pot no more than one-third full, never leave hot oil unattended, keep a lid nearby and never put water on an oil fire.",
+        "Storage: best fresh on the day."
+      ],
+      "nutrition": {
+        "kcal": 197,
+        "proteinG": 4,
+        "carbsG": 33,
+        "fatG": 5,
+        "fibreG": 2,
+        "sodiumMg": 200
+      }
+    },
+    {
+      "id": "mexican-hot-chocolate-biscuits",
+      "title": "Mexican Hot Chocolate Biscuits",
+      "summary": "Tender cocoa shortbread biscuits warmed with cinnamon and a pinch of chilli.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 12,
+      "servings": 10,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g plain flour",
+            "25g cocoa powder",
+            "120g butter, softened",
+            "80g caster sugar",
+            "1 egg yolk",
+            "1 tsp ground cinnamon",
+            "1/4 tsp chilli powder",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional) and line two trays.",
+        "Beat the butter and sugar for 3 minutes until pale, beat in the yolk, then mix in the flour, cocoa, cinnamon, chilli and salt to a firm dough.",
+        "Roll to 8mm thick, cut 20 biscuits with a 5cm cutter and set on the trays.",
+        "Bake for 11 to 12 minutes until firm at the edges. Cool on the trays for 10 minutes."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 biscuits. Plus 20 minutes chilling.",
+        "Food safety: use fresh, clean, uncracked eggs and bake until set; check the thickest part reaches 75°C.",
+        "Storage: keep airtight for 1 week."
+      ],
+      "nutrition": {
+        "kcal": 198,
+        "proteinG": 3,
+        "carbsG": 23,
+        "fatG": 10,
+        "fibreG": 2,
+        "sodiumMg": 90
+      }
+    },
+    {
+      "id": "quesadilla-salvadorena",
+      "title": "Quesadilla Salvadorena",
+      "summary": "A rich, dense Salvadoran cheese cake with sesame seeds, cut into slices.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g rice flour",
+            "100g butter, softened",
+            "100g caster sugar",
+            "3 eggs",
+            "100g ricotta",
+            "1 tsp baking powder",
+            "60ml milk",
+            "2 tbsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 170°C fan (190°C conventional). Grease and line a 20cm round tin.",
+        "Beat the butter and sugar for 3 minutes until pale, then beat in the eggs one at a time. Mix in the ricotta, then fold in the rice flour, baking powder and milk until just combined.",
+        "Pour into the tin, level the top and scatter with sesame seeds.",
+        "Bake for 30 to 35 minutes until golden and a skewer comes out clean. Cool in the tin for 15 minutes, then cut into 12 slices."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Gluten-free. Per serving: 1 slice. Contains sesame.",
+        "Food safety: use fresh, clean, uncracked eggs and bake until the centre is fully set; check the thickest part reaches 75°C.",
+        "Storage: keep covered in the fridge for 3 days; bring to room temperature before serving."
+      ],
+      "nutrition": {
+        "kcal": 184,
+        "proteinG": 4,
+        "carbsG": 19,
+        "fatG": 10,
+        "fibreG": 1,
+        "sodiumMg": 100
+      }
+    },
+    {
+      "id": "calzones-rotos",
+      "title": "Calzones Rotos",
+      "summary": "Chilean fried dough twists with a lemony crunch, dusted in icing sugar.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 15,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g plain flour",
+            "2 tbsp caster sugar",
+            "1/2 tsp baking powder",
+            "1 egg",
+            "1 egg yolk",
+            "30g butter, melted",
+            "2 tbsp lemon juice",
+            "600ml neutral oil, for deep-frying",
+            "40g icing sugar"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour, sugar and baking powder, add the egg, yolk, butter and lemon juice and knead for 3 minutes into a firm dough. Rest, then roll to 3mm thick and cut into 24 diamonds. Make a slit in the middle of each and pull one end through to twist.",
+        "Heat the oil in a deep heavy pot to 175°C. Fry in batches for 1 to 2 minutes per side until puffed and golden. Drain on paper towel.",
+        "Dust with icing sugar while warm."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 3 twists. Plus 20 minutes resting.",
+        "Food safety: use fresh, clean, uncracked eggs and fry until the dough is cooked through; check the thickest part reaches 75°C.",
+        "Deep-frying safety: use a deep heavy pot no more than one-third full, never leave hot oil unattended, keep a lid nearby and never put water on an oil fire.",
+        "Storage: best fresh; keep airtight for 2 days."
+      ],
+      "nutrition": {
+        "kcal": 205,
+        "proteinG": 4,
+        "carbsG": 31,
+        "fatG": 7,
+        "fibreG": 1,
+        "sodiumMg": 100
+      }
+    },
+    {
+      "id": "pao-de-mel-honey-spice-bites",
+      "title": "Pao de Mel Honey Spice Bites",
+      "summary": "Mini Brazilian honey spice cakes dipped in dark chocolate.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 15,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g plain flour",
+            "25g cocoa powder",
+            "80g honey",
+            "50g brown sugar",
+            "80ml milk",
+            "1 egg",
+            "40g butter, melted",
+            "1 tsp baking powder",
+            "1 tsp ground cinnamon",
+            "1/2 tsp ground cloves",
+            "100g dark chocolate"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 170°C fan (190°C conventional). Grease two 12-hole mini muffin tins.",
+        "Whisk the honey, sugar, milk, egg and butter, then fold in the flour, cocoa, baking powder and spices until just combined.",
+        "Fill the holes two-thirds full and bake for 12 to 14 minutes until risen and springy to the touch. Cool on a rack.",
+        "Melt the chocolate in short bursts in the microwave, stirring, then dip the tops of each cake and set on baking paper."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 bites (makes 24). Plus 15 minutes setting the chocolate.",
+        "Food safety: use fresh, clean, uncracked eggs and bake until set; check the thickest part reaches 75°C.",
+        "Storage: keep airtight for 4 days."
+      ],
+      "nutrition": {
+        "kcal": 162,
+        "proteinG": 3,
+        "carbsG": 23,
+        "fatG": 6,
+        "fibreG": 2,
+        "sodiumMg": 90
+      }
+    },
+    {
+      "id": "baked-gyoza-pockets",
+      "title": "Baked Gyoza Pockets",
+      "summary": "Crisp-based tofu, mushroom and cabbage dumplings pan-fried then steamed until tender.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 40,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g plain flour",
+            "100ml hot water",
+            "1/2 tsp salt",
+            "200g cabbage, finely shredded",
+            "100g mushrooms, finely chopped",
+            "100g firm tofu, crumbled",
+            "1 spring onion, finely sliced",
+            "1 tsp grated ginger",
+            "1 clove garlic, crushed",
+            "1 tbsp soy sauce",
+            "1 tsp sesame oil",
+            "1 tbsp neutral oil",
+            "80ml water, for steaming"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour, hot water and salt into a dough, knead for 5 minutes until smooth, then cover and rest.",
+        "Fry the cabbage, mushrooms, ginger and garlic with sesame oil in a dry pan for 5 minutes until the moisture has gone, then mix with the tofu, spring onion and soy. Cool.",
+        "Roll the dough thin, cut 24 rounds of 8cm and fill each with 1 tsp filling. Fold and pleat the edges to seal.",
+        "Heat the neutral oil in a lidded frying pan over medium heat and arrange the gyoza flat side down. Fry for 2 minutes until the bases are golden, add the water, cover and steam for 5 minutes until the wrappers are translucent and the water has gone."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: 4 gyoza. Contains soy. Plus 30 minutes resting the dough.",
+        "Storage: keeps 2 days in the fridge; freeze uncooked for 1 month."
+      ],
+      "nutrition": {
+        "kcal": 182,
+        "proteinG": 7,
+        "carbsG": 28,
+        "fatG": 4,
+        "fibreG": 3,
+        "sodiumMg": 360
+      }
+    },
+    {
+      "id": "chive-and-egg-pockets",
+      "title": "Chive and Egg Pockets",
+      "summary": "Golden pan-fried dough pockets stuffed with egg, tofu and spring onion.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 15,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g plain flour",
+            "130ml hot water",
+            "4 eggs",
+            "100g firm tofu, crumbled",
+            "4 spring onions, finely sliced",
+            "1 tbsp soy sauce",
+            "1/2 tsp salt",
+            "2 tbsp neutral oil, for cooking"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour and hot water into a dough, knead for 5 minutes until smooth, cover and rest.",
+        "Beat the eggs with the salt and scramble in a pan for 2 minutes until just set but still moist. Mix with the tofu, spring onions and soy and cool.",
+        "Roll the dough thin, cut 12 rounds of 10cm, fill each with 1 tbsp filling, fold in half and pleat the edge closed.",
+        "Heat the oil in a lidded frying pan over medium heat and fry the pockets for 3 minutes per side until golden brown and the egg is hot all the way through."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 pockets. Contains soy. Plus 30 minutes resting the dough.",
+        "Food safety: use fresh, clean, uncracked eggs, cook the filling until set and heat the pockets through before eating; check the thickest part reaches 75°C.",
+        "Storage: keeps 1 day refrigerated; reheat until hot all the way through."
+      ],
+      "nutrition": {
+        "kcal": 256,
+        "proteinG": 11,
+        "carbsG": 34,
+        "fatG": 8,
+        "fibreG": 2,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "tuna-karipap-puffs",
+      "title": "Tuna Karipap Puffs",
+      "summary": "Flaky baked puffs with a curried tuna and potato filling.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 25,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 sheets puff pastry",
+            "125g tinned tuna, drained",
+            "150g potato, finely diced",
+            "1 onion, finely chopped",
+            "1 tsp curry powder",
+            "1 tbsp tomato paste",
+            "1 tbsp neutral oil",
+            "1 egg yolk, beaten (for glazing)"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potato for 8 minutes until tender, drain. Fry the onion in the oil for 5 minutes until soft, stir in the curry powder and tomato paste for 1 minute, then mix in the potato and tuna, flaking the fish. Cool.",
+        "Heat the oven to 200°C fan (220°C conventional) and line two trays.",
+        "Cut each pastry sheet into 4 squares, put 1 tbsp filling in the centre of each, fold into a triangle and press the edges with a fork.",
+        "Brush with yolk and bake for 20 to 25 minutes until puffed and deep golden. Cool for 5 minutes."
+      ],
+      "notes": [
+        "Snack. Per serving: 2 puffs. Contains fish.",
+        "Food safety: use tinned fish within its date and keep the puffs refrigerated within 2 hours of baking; reheat until piping hot all the way through; check the thickest part reaches 75°C.",
+        "Storage: keep refrigerated for 2 days; reheat in a 180°C fan oven for 8 minutes."
+      ],
+      "nutrition": {
+        "kcal": 312,
+        "proteinG": 10,
+        "carbsG": 31,
+        "fatG": 16,
+        "fibreG": 2,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "okonomiyaki-muffin-bites",
+      "title": "Okonomiyaki Muffin Bites",
+      "summary": "Savoury cabbage and spring onion mini pancakes baked in a muffin tin.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 18,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100g plain flour",
+            "150ml water",
+            "3 eggs",
+            "300g cabbage, finely shredded",
+            "2 spring onions, finely sliced",
+            "1 tbsp soy sauce",
+            "1 tbsp neutral oil",
+            "2 tbsp mayonnaise",
+            "1 tbsp tomato sauce"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional) and grease a 24-hole mini muffin tin with the oil.",
+        "Whisk the flour, water, eggs and soy into a smooth batter and stir in the cabbage and spring onion.",
+        "Spoon into the holes until full and bake for 15 to 18 minutes until risen and golden brown at the edges and set in the middle.",
+        "Mix the mayonnaise and tomato sauce, drizzle over the bites and serve warm."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 4 bites. Contains soy.",
+        "Food safety: use fresh, clean, uncracked eggs and bake until the centre is fully set with no runny egg; check the thickest part reaches 75°C.",
+        "Storage: keeps 2 days refrigerated; reheat until hot all the way through."
+      ],
+      "nutrition": {
+        "kcal": 168,
+        "proteinG": 6,
+        "carbsG": 17,
+        "fatG": 8,
+        "fibreG": 2,
+        "sodiumMg": 320
+      }
+    },
+    {
+      "id": "spring-onion-layered-flatbread-wedges",
+      "title": "Spring Onion Layered Flatbread Wedges",
+      "summary": "Flaky layered pan-fried flatbread with spring onion, cut into crisp wedges.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 15,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g plain flour",
+            "150ml hot water",
+            "1 tsp salt",
+            "3 tbsp neutral oil",
+            "4 spring onions, finely sliced",
+            "2 tbsp neutral oil, for cooking"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour, hot water and half the salt into a dough, knead for 5 minutes until smooth, cover and rest.",
+        "Divide into 3 balls and roll each into a thin round. Brush with the 3 tbsp oil, sprinkle with the spring onion and remaining salt, roll up into a log, coil into a snail and flatten gently.",
+        "Roll each coil out to 18cm, then heat the cooking oil in a frying pan over medium heat. Fry each pancake for 3 to 4 minutes per side until golden brown and crisp at the edges with visible layers.",
+        "Cut into 6 wedges each and serve warm."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: 3 wedges. Plus 30 minutes resting the dough.",
+        "Storage: best fresh; reheat in a dry pan."
+      ],
+      "nutrition": {
+        "kcal": 215,
+        "proteinG": 5,
+        "carbsG": 32,
+        "fatG": 7,
+        "fibreG": 2,
+        "sodiumMg": 390
+      }
+    },
+    {
+      "id": "mini-pork-baozi",
+      "title": "Mini Pork Baozi",
+      "summary": "Fluffy steamed buns with a ginger and spring onion pork filling.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 40,
+      "cookMinutes": 15,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g plain flour",
+            "7g dried yeast",
+            "1 tbsp caster sugar",
+            "1 tsp baking powder",
+            "160ml warm water",
+            "1 tbsp neutral oil",
+            "200g pork mince",
+            "2 spring onions, finely sliced",
+            "1 tsp grated ginger",
+            "1 tbsp soy sauce",
+            "1 tsp sesame oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour, yeast, sugar and baking powder, add the water and oil and knead for 8 minutes until smooth. Cover and let it double.",
+        "Mix the pork, spring onions, ginger, soy and sesame oil until sticky.",
+        "Divide the dough into 12 balls, flatten each to 9cm, put 1 tbsp filling in the centre and pleat the edges closed.",
+        "Rest the buns on baking paper squares in a steamer, then steam over boiling water for 12 minutes until the buns are puffed and the pork reaches 75°C in the thickest part."
+      ],
+      "notes": [
+        "Snack. Per serving: 2 buns. Contains soy. Plus about 1 hour 30 minutes proving.",
+        "Food safety: cook the pork mince until 75°C in the centre of the filling, keep the buns refrigerated within 2 hours of cooking and reheat until piping hot all the way through.",
+        "Storage: keep refrigerated for 2 days or freeze for 1 month; steam from frozen for 15 minutes."
+      ],
+      "nutrition": {
+        "kcal": 271,
+        "proteinG": 12,
+        "carbsG": 39,
+        "fatG": 7,
+        "fibreG": 2,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "pan-de-coco-buns",
+      "title": "Pan de Coco Buns",
+      "summary": "Soft sweet buns filled with a buttery brown sugar and coconut mixture.",
+      "cuisine": "filipino",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 35,
+      "cookMinutes": 20,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g bread flour",
+            "50g caster sugar",
+            "7g dried yeast",
+            "1/2 tsp salt",
+            "150ml milk, warmed",
+            "1 egg",
+            "40g butter, softened",
+            "100g desiccated coconut",
+            "80g brown sugar",
+            "40g butter, softened (for the filling)"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the bread flour, caster sugar, yeast and salt, add the warm milk, egg and 40g butter and knead for 10 minutes until smooth and elastic. Cover and let it double.",
+        "Mix the coconut, brown sugar and 40g butter until evenly combined and crumbly.",
+        "Divide the dough into 8 balls, flatten each to 10cm, put 2 tbsp filling in the centre and pinch the edges closed. Set seam side down on a lined tray 5cm apart and prove until puffy.",
+        "Heat the oven to 170°C fan (190°C conventional). Bake for 18 to 20 minutes until the buns are golden brown and sound hollow when tapped underneath. Cool on a rack."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 1 bun. Plus about 2 hours proving.",
+        "Food safety: use fresh, clean, uncracked eggs and bake until fully cooked through; check the thickest part reaches 75°C.",
+        "Storage: best the day they are baked; keep covered for 2 days."
+      ],
+      "nutrition": {
+        "kcal": 371,
+        "proteinG": 7,
+        "carbsG": 46,
+        "fatG": 17,
+        "fibreG": 3,
+        "sodiumMg": 230
+      }
+    }
+  ]
+}
