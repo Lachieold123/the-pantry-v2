@@ -1,0 +1,779 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "zuppa-toscana-sausage-kale-and-potato-soup",
+      "title": "Zuppa Toscana Sausage Kale and Potato Soup",
+      "summary": "Spicy Italian sausage soup with potato, kale and a splash of cream.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 6,
+      "onePot": true,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "500g Italian pork sausages",
+            "1 onion",
+            "3 garlic cloves",
+            "600g potatoes",
+            "1.5L chicken stock",
+            "200g kale",
+            "100ml cream",
+            "1 tsp chilli flakes",
+            "1 tbsp olive oil",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the sausage meat in the oil for 8 minutes, breaking it up, until cooked through, then lift out.",
+        "Cook the onion and garlic in the fat for 5 minutes until soft.",
+        "Add the sliced potato, stock and chilli and simmer for 15 minutes until the potato is tender.",
+        "Return the sausage, add kale and cream and simmer for 5 minutes until the kale wilts."
+      ],
+      "notes": [
+        "Food safety: sausage must reach 75°C with no pink.",
+        "Contains dairy and pork."
+      ],
+      "nutrition": {
+        "kcal": 459,
+        "proteinG": 17,
+        "carbsG": 22,
+        "fatG": 33,
+        "fibreG": 3,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "colombian-ajiaco-chicken-and-potato-soup",
+      "title": "Colombian Ajiaco Chicken and Potato Soup",
+      "summary": "Three-potato Bogota soup with corn and chicken, served with capers and cream.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 60,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g chicken thigh fillets",
+            "800g potatoes",
+            "300g waxy potatoes",
+            "2 corn cobs",
+            "1 onion",
+            "3 spring onions",
+            "2L water",
+            "2 tbsp dried oregano",
+            "3 tbsp capers",
+            "100ml cream",
+            "1 avocado",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the chicken, onion and spring onions in the water for 20 minutes until the chicken reaches 75°C, then shred it.",
+        "Add the diced potatoes, corn and herb and simmer for 30 minutes, until the potatoes break down and thicken the soup.",
+        "Return the chicken and season with salt.",
+        "Serve with cream, capers and avocado."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C and show no pink.",
+        "Contains dairy."
+      ],
+      "nutrition": {
+        "kcal": 500,
+        "proteinG": 33,
+        "carbsG": 48,
+        "fatG": 18,
+        "fibreG": 7,
+        "sodiumMg": 760
+      }
+    },
+    {
+      "id": "turkish-ezogelin-red-lentil-and-bulgur-soup",
+      "title": "Turkish Ezogelin Red Lentil and Bulgur Soup",
+      "summary": "Warming red lentil, bulgur and rice soup with mint and chilli butter.",
+      "cuisine": "turkish",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g red lentils",
+            "50g rice",
+            "50g bulgur",
+            "1 onion",
+            "2 tbsp tomato paste",
+            "1 tbsp capsicum paste",
+            "1.8L water",
+            "2 tbsp olive oil",
+            "1 tsp dried mint",
+            "1 tsp chilli flakes",
+            "1 tsp salt",
+            "1 lemon"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onion in half the oil for 6 minutes until soft.",
+        "Stir in both pastes for 2 minutes until darker.",
+        "Add the lentils, rice, bulgur, water and salt and simmer for 25 minutes until everything is soft.",
+        "Heat the remaining oil with mint and chilli for 1 minute until it sizzles, and pour over each bowl with lemon."
+      ],
+      "notes": [
+        "Vegan.",
+        "Contains gluten from the bulgur."
+      ],
+      "nutrition": {
+        "kcal": 279,
+        "proteinG": 12,
+        "carbsG": 38,
+        "fatG": 7,
+        "fibreG": 8,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "ukrainian-borshch-with-beef-and-dill",
+      "title": "Ukrainian Borshch with Beef and Dill",
+      "summary": "Beetroot and cabbage soup with beef, finished with sour cream and dill.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 120,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g beef brisket",
+            "2L water",
+            "3 beetroots",
+            "2 carrots",
+            "3 potatoes",
+            "1/4 cabbage",
+            "1 onion",
+            "2 tbsp tomato paste",
+            "2 tbsp white vinegar",
+            "2 tbsp vegetable oil",
+            "150g sour cream",
+            "1/2 cup dill",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the brisket in the water for 1 hour 30 minutes, until tender, then shred and keep the stock.",
+        "Grate the beetroot and carrot and fry with the onion in the oil for 10 minutes.",
+        "Stir in the tomato paste and vinegar, then add to the stock with the potato and simmer for 15 minutes.",
+        "Add the cabbage and beef and simmer for 8 minutes until the cabbage is tender.",
+        "Serve with sour cream and dill."
+      ],
+      "notes": [
+        "Food safety: beef must reach 75°C throughout; chill leftovers within 2 hours.",
+        "Contains dairy."
+      ],
+      "nutrition": {
+        "kcal": 377,
+        "proteinG": 28,
+        "carbsG": 25,
+        "fatG": 17,
+        "fibreG": 6,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "kerala-fish-moilee-coconut-soup",
+      "title": "Kerala Fish Moilee Coconut Soup",
+      "summary": "Mild coconut curry soup with firm white fish, ginger and curry spices.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g firm white fish",
+            "400ml coconut milk",
+            "1 onion",
+            "3cm ginger",
+            "3 green chillies",
+            "1 tsp ground turmeric",
+            "1 tomato",
+            "1 tbsp coconut oil",
+            "1 tsp mustard seeds",
+            "1 lime",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the mustard seeds, onion, ginger and chilli in the oil for 6 minutes until soft.",
+        "Add turmeric, tomato and coconut milk and simmer for 8 minutes until slightly thickened.",
+        "Slip in the fish and cook for 5 minutes until opaque and flaking.",
+        "Finish with the lime juice and serve hot, until just warmed through."
+      ],
+      "notes": [
+        "Food safety: cook fish until opaque and flaking; refrigerate within 2 hours.",
+        "Contains fish."
+      ],
+      "nutrition": {
+        "kcal": 358,
+        "proteinG": 26,
+        "carbsG": 8,
+        "fatG": 24,
+        "fibreG": 3,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "greek-fasolada-white-bean-soup",
+      "title": "Greek Fasolada White Bean Soup",
+      "summary": "Greece's humble national soup of white beans, tomato, carrot and olive oil.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 60,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g dried white beans",
+            "1 onion",
+            "2 carrots",
+            "2 celery stalks",
+            "400g tinned tomatoes",
+            "4 tbsp olive oil",
+            "2 bay leaves",
+            "2L water",
+            "1 tsp salt",
+            "1/2 cup parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Cover the beans with water, boil for 10 minutes, then drain.",
+        "Cook the onion, carrot and celery in half the oil for 6 minutes until soft.",
+        "Add the beans, tomatoes, bay and water and simmer for 50 minutes, until the beans are completely tender.",
+        "Season with salt and stir in parsley and the remaining oil."
+      ],
+      "notes": [
+        "Vegan.",
+        "Soak the beans overnight if you have time, which is not counted in prep time."
+      ],
+      "nutrition": {
+        "kcal": 315,
+        "proteinG": 14,
+        "carbsG": 38,
+        "fatG": 9,
+        "fibreG": 13,
+        "sodiumMg": 560
+      }
+    },
+    {
+      "id": "shakshuka-verde-with-spinach-and-feta",
+      "title": "Shakshuka Verde with Spinach and Feta",
+      "summary": "Green version of shakshuka with spinach, leek and herbs, eggs baked on top.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 leeks",
+            "300g baby spinach",
+            "2 tbsp olive oil",
+            "3 garlic cloves",
+            "1 tsp ground cumin",
+            "1/2 cup parsley",
+            "6 eggs",
+            "100g feta",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the sliced leeks in the oil for 6 minutes until tender.",
+        "Add garlic, cumin and spinach and cook for 4 minutes until wilted.",
+        "Stir in the parsley, make 6 wells and crack in the eggs.",
+        "Cover and cook for 6 minutes until the whites are set.",
+        "Crumble over the feta and serve straight from the pan."
+      ],
+      "notes": [
+        "Food safety: cook until the whites are fully set; firmer yolks for vulnerable eaters.",
+        "Contains egg and dairy."
+      ],
+      "nutrition": {
+        "kcal": 290,
+        "proteinG": 20,
+        "carbsG": 10,
+        "fatG": 18,
+        "fibreG": 4,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "bircher-muesli-with-apple-and-hazelnuts-dairy-free",
+      "title": "Bircher Muesli with Apple and Hazelnuts Dairy Free",
+      "summary": "Soaked oats with grated apple, oat milk and toasted hazelnuts.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "120g rolled oats",
+            "300ml oat milk",
+            "2 apples",
+            "1 tbsp lemon juice",
+            "1 tbsp maple syrup",
+            "30g hazelnuts",
+            "1/2 tsp ground cinnamon"
+          ]
+        }
+      ],
+      "steps": [
+        "Stir the oats and oat milk together in a bowl.",
+        "Grate in the apples and mix with the lemon juice, maple and cinnamon.",
+        "Cover and chill overnight until creamy.",
+        "Toast the hazelnuts for 3 minutes until golden and scatter over the bowls."
+      ],
+      "notes": [
+        "Vegan.",
+        "Contains tree nuts and gluten.",
+        "Soak at least 6 hours, which is not counted in prep time."
+      ],
+      "nutrition": {
+        "kcal": 409,
+        "proteinG": 11,
+        "carbsG": 62,
+        "fatG": 11,
+        "fibreG": 9,
+        "sodiumMg": 120
+      }
+    },
+    {
+      "id": "high-protein-cottage-cheese-pancakes",
+      "title": "High Protein Cottage Cheese Pancakes",
+      "summary": "Soft cottage cheese and oat pancakes, about 25 g protein per serve.",
+      "cuisine": "american",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g cottage cheese",
+            "3 eggs",
+            "80g rolled oats",
+            "1 tsp baking powder",
+            "1 tsp vanilla extract",
+            "1 tsp olive oil",
+            "1 apple, sliced",
+            "1 tbsp honey"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the cottage cheese, eggs, oats, baking powder and vanilla until smooth.",
+        "Cook scoops in a lightly oiled pan for 3 minutes until set and golden underneath.",
+        "Flip and cook for 2 minutes until the centre is firm and cooked through.",
+        "Serve with sliced apple and honey."
+      ],
+      "notes": [
+        "Food safety: cook until the middle is no longer wet.",
+        "Contains egg, dairy and gluten."
+      ],
+      "nutrition": {
+        "kcal": 491,
+        "proteinG": 33,
+        "carbsG": 49,
+        "fatG": 17,
+        "fibreG": 5,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "quinoa-tabbouleh-style-super-green-salad",
+      "title": "Quinoa Tabbouleh Style Super Green Salad",
+      "summary": "Herby quinoa with cucumber, edamame and a lemon dressing, high in plant protein.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g quinoa",
+            "150g edamame",
+            "1 cucumber",
+            "1 bunch parsley",
+            "1/2 cup mint",
+            "3 spring onions",
+            "3 tbsp lemon juice",
+            "3 tbsp olive oil",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Rinse the quinoa and simmer in 400ml water for 15 minutes, until tender and the tails pop.",
+        "Boil the edamame for 4 minutes until bright green.",
+        "Chop the herbs and cucumber finely.",
+        "Toss everything with the lemon, oil and salt."
+      ],
+      "notes": [
+        "Vegan and gluten-free.",
+        "Contains soy."
+      ],
+      "nutrition": {
+        "kcal": 376,
+        "proteinG": 14,
+        "carbsG": 40,
+        "fatG": 16,
+        "fibreG": 8,
+        "sodiumMg": 340
+      }
+    },
+    {
+      "id": "spiced-lentil-and-roasted-carrot-salad-with-tahini",
+      "title": "Spiced Lentil and Roasted Carrot Salad with Tahini",
+      "summary": "Earthy lentils with cumin carrots, rocket and a lemon tahini dressing.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g green lentils",
+            "600g carrots",
+            "2 tbsp olive oil",
+            "1 tsp ground cumin",
+            "100g rocket",
+            "3 tbsp tahini",
+            "1 lemon",
+            "1 red onion",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the lentils in water for 22 minutes until tender but holding shape, then drain.",
+        "Roast the carrots with the oil, cumin and salt at 220C for 30 minutes, until charred and tender.",
+        "Whisk the tahini with lemon and 3 tbsp water until pourable.",
+        "Toss the lentils with the carrots, rocket and sliced onion and drizzle over the tahini."
+      ],
+      "notes": [
+        "Vegan.",
+        "Contains sesame."
+      ],
+      "nutrition": {
+        "kcal": 456,
+        "proteinG": 20,
+        "carbsG": 50,
+        "fatG": 16,
+        "fibreG": 16,
+        "sodiumMg": 280
+      }
+    },
+    {
+      "id": "patatas-bravas-with-smoky-tomato-sauce",
+      "title": "Patatas Bravas with Smoky Tomato Sauce",
+      "summary": "Crisp roast potatoes with spicy smoked paprika tomato sauce and garlic mayo.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g potatoes",
+            "4 tbsp olive oil",
+            "400g tinned tomatoes",
+            "1 tbsp smoked paprika",
+            "2 garlic cloves",
+            "1 tsp chilli flakes",
+            "1 tbsp sherry vinegar",
+            "3 tbsp mayonnaise",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the potato cubes with 3 tbsp oil and salt at 220C for 40 minutes, turning once, until crisp and golden.",
+        "Fry the garlic, paprika and chilli in the remaining oil for 1 minute.",
+        "Add the tomatoes and vinegar and simmer for 12 minutes until thick.",
+        "Spoon over the potatoes and dollop with mayonnaise."
+      ],
+      "notes": [
+        "Contains egg from the mayonnaise."
+      ],
+      "nutrition": {
+        "kcal": 374,
+        "proteinG": 6,
+        "carbsG": 40,
+        "fatG": 20,
+        "fibreG": 5,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "greek-style-silverbeet-with-garlic-and-lemon",
+      "title": "Greek Style Silverbeet with Garlic and Lemon",
+      "summary": "Garlicky wilted greens finished with olive oil and lemon.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 bunches silverbeet",
+            "3 tbsp olive oil",
+            "4 garlic cloves",
+            "1 lemon",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Separate the stalks and leaves and slice the stalks thinly.",
+        "Cook the stalks in the oil for 4 minutes until soft.",
+        "Add garlic and cook 1 minute until fragrant, then add the leaves for 4 minutes until wilted.",
+        "Season with salt and lemon juice."
+      ],
+      "notes": [
+        "Vegan."
+      ],
+      "nutrition": {
+        "kcal": 155,
+        "proteinG": 4,
+        "carbsG": 8,
+        "fatG": 11,
+        "fibreG": 4,
+        "sodiumMg": 350
+      }
+    },
+    {
+      "id": "chimichurri-verde-argentine-herb-sauce",
+      "title": "Chimichurri Verde Argentine Herb Sauce",
+      "summary": "Garlic, parsley and vinegar sauce for grilled steak.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 bunches parsley",
+            "4 garlic cloves",
+            "1 tsp dried oregano",
+            "120ml olive oil",
+            "3 tbsp red wine vinegar",
+            "1/2 tsp chilli flakes",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Chop the parsley and garlic finely.",
+        "Stir through the oregano, chilli, vinegar and salt.",
+        "Whisk in the oil and rest 15 minutes until the flavours blend."
+      ],
+      "notes": [
+        "Vegan.",
+        "Rich in oil, so a spoonful goes a long way."
+      ],
+      "nutrition": {
+        "kcal": 182,
+        "proteinG": 1,
+        "carbsG": 3,
+        "fatG": 18,
+        "fibreG": 2,
+        "sodiumMg": 170
+      }
+    },
+    {
+      "id": "hollandaise-style-yoghurt-lemon-sauce-for-eggs",
+      "title": "Hollandaise Style Yoghurt Lemon Sauce for Eggs",
+      "summary": "Lighter creamy lemon sauce for poached eggs and asparagus.",
+      "cuisine": "french",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 5,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g Greek yoghurt",
+            "2 egg yolks",
+            "2 tbsp lemon juice",
+            "30g butter, melted",
+            "1/4 tsp salt",
+            "pinch cayenne"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the yolks and lemon in a bowl over simmering water for 4 minutes until thick and pale.",
+        "Whisk in the melted butter slowly until glossy.",
+        "Fold in the yoghurt and warm for 1 minute without boiling."
+      ],
+      "notes": [
+        "Food safety: heat the yolks until they thicken; serve at once and do not reheat.",
+        "Contains egg and dairy."
+      ],
+      "nutrition": {
+        "kcal": 162,
+        "proteinG": 6,
+        "carbsG": 3,
+        "fatG": 14,
+        "fibreG": 0,
+        "sodiumMg": 200
+      }
+    }
+  ]
+}
