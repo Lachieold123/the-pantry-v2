@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
 import type { IngredientLine } from '../src/domain/ingredients/types.ts';
-import { estimateKcalPerServe, kcalPer100, lineGrams, lineKcal } from './nutrition-estimate.mts';
+import { estimateKcalPerServe, estimateMacrosPerServe, kcalPer100, lineGrams, lineKcal } from './nutrition-estimate.mts';
 
 const line = (quantity: number, unit: IngredientLine['unit'] | undefined, ingredientId: string, raw?: string): IngredientLine => ({
   quantity,
@@ -98,5 +98,40 @@ describe('nutrition estimate', () => {
     assert.equal(kcalPer100('beef-bones'), 25);
     assert.equal(kcalPer100('cottage-cheese'), 100);
     assert.equal(kcalPer100('daikon'), 20);
+  });
+
+  it('counts bone-in chicken as bought, without taking the bone off twice', () => {
+    assert.equal(lineGrams(line(8, undefined, 'chicken-drumstick')), 1080);
+    assert.equal(lineGrams(line(1, undefined, 'whole-chicken')), 1500);
+    assert.equal(kcalPer100('chicken-drumstick'), 115);
+    const pieces = line(800, 'g', 'chicken-pieces', '800g chicken pieces, bone-in');
+    assert.equal(lineKcal(pieces, noAisle), 920);
+  });
+
+  it('reads sausages, ham, olives, tinned tomatoes, silken tofu and gnocchi at their own figures', () => {
+    assert.equal(kcalPer100('bratwurst'), 290);
+    assert.equal(kcalPer100('chorizo'), 430);
+    assert.equal(kcalPer100('ham'), 125);
+    assert.equal(kcalPer100('kalamata-olive'), 145);
+    assert.equal(kcalPer100('tinned-tomatoes'), 22);
+    assert.equal(kcalPer100('tomato-paste'), 80);
+    assert.equal(kcalPer100('silken-tofu'), 55);
+    assert.equal(kcalPer100('fresh-pasta-gnocchi'), 160);
+  });
+
+  it('weighs roti, a bacon slice, a rice paper sheet and cooked lentils at their real size', () => {
+    assert.equal(lineGrams(line(4, undefined, 'roti')), 180);
+    assert.equal(lineGrams(line(4, 'slice', 'bacon')), 100);
+    assert.equal(lineGrams(line(8, 'sheet', 'rice-paper')), 72);
+    assert.equal(lineKcal(line(1, 'cup', 'brown-lentils', '1 cup cooked brown lentils'), noAisle), 240);
+  });
+
+  it('splits energy into macros by food type', () => {
+    // 100 g bacon and 480 g drained cannellini beans, serves 1.
+    const m = estimateMacrosPerServe([line(100, 'g', 'bacon'), line(480, 'g', 'cannellini-beans')], 1, noAisle);
+    assert.ok(m.proteinG > 50 && m.proteinG < 60, `${m.proteinG}`);
+    const oil = estimateMacrosPerServe([line(1, 'tbsp', 'olive-oil')], 1, noAisle);
+    assert.equal(oil.proteinG, 0);
+    assert.ok(oil.fatG > 13 && oil.fatG < 14);
   });
 });

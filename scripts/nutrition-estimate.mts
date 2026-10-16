@@ -25,6 +25,26 @@ export const KCAL: [RegExp, number][] = [
   [/^clams$|mussel|pipi|cockle/, 30], // bought in the shell: about a fifth is meat
   [/lamb-leg/, 170], // bone-in
   [/short-ribs/, 200], // bone-in
+  // Bone-in chicken as bought, less the fat that renders into the pan: about 70% is
+  // eaten (drumsticks, pieces), 55% of a wing. Second pass, 17 Oct 2026.
+  [/whole-chicken/, 140],
+  [/chicken-drumstick|chicken-pieces/, 115],
+  [/chicken-thigh-bone-in/, 160],
+  [/chicken-wings/, 120],
+  [/oxtail/, 140], // about half bone
+  [/silken-tofu/, 55],
+  [/fresh-tuna/, 120],
+  [/frozen-chips/, 150], // oven chips, as bought frozen
+  [/pork-ribs/, 180], // bone-in
+  [/salami|pepperoni|chorizo/, 430], // cured and dry
+  [/sausage|bratwurst|andouille|frankfurt|kransky|merguez/, 290], // fresh or smoked, not cured
+  [/^ham$/, 125],
+  [/olive$/, 145],
+  [/roasted-capsicum/, 35],
+  [/gnocchi/, 160],
+  [/tomato-paste/, 80],
+  [/sun-dried-tomato/, 250],
+  [/^tomato$|cherry-tomato|tinned-tomatoes/, 22],
   [/wrapper/, 290],
   [/puff-pastry|shortcrust/, 400],
   [/filo/, 300],
@@ -130,9 +150,17 @@ const EACH_G: [RegExp, number][] = [
   [/chilli|ginger|herb|coriander|basil|mint|parsley|thyme|rosemary|bay|lemongrass|kaffir|lime-leaves/, 0],
   [/avocado/, 150],
   [/chicken-thigh$/, 110],
+  [/fresh-tuna/, 150], // a steak
+  [/beef-sirloin|beef-rib-eye/, 220],
+  [/chicken-drumstick/, 135],
+  [/chicken-thigh-bone-in/, 170],
+  [/chicken-wings/, 90],
+  [/whole-chicken/, 1500],
   [/chicken-breast/, 220],
   [/fillet|steak/, 180],
-  [/tortilla|wrap|pita|naan|roll|bun/, 60],
+  [/roti|chapati/, 45],
+  [/paratha/, 80],
+  [/tortilla|wrap|pita|naan|roll|bun|flatbread/, 60],
 ];
 /** Grams in one tin, where it isn't the usual 400 g. Tinned pulses are counted drained. */
 const TIN_G: [RegExp, number][] = [
@@ -152,7 +180,7 @@ const DENSITY: [RegExp, number][] = [
   [/breadcrumb/, 0.45],
   [/cocoa/, 0.4],
   [/icing-sugar/, 0.5],
-  [/flour|cornflour|almond-meal/, 0.55],
+  [/flour|cornflour|almond-meal|starch/, 0.55],
   [/sugar/, 0.85],
   [/honey|syrup/, 1.4],
   [/rice$|^rice|basmati|jasmine|arborio|quinoa|couscous|bulgur|barley|freekeh|farro|millet|lentil|split-pea|orzo|polenta|semolina/, 0.8],
@@ -164,6 +192,7 @@ const DENSITY: [RegExp, number][] = [
   [/frozen-peas|corn-kernels|edamame|frozen-berries/, 0.6],
   [/parsley|coriander|basil|mint|dill|chives|spinach|rocket|watercress|herb/, 0.15],
   [/cabbage|lettuce|kale/, 0.35],
+  [/salad-leaves/, 0.1],
 ];
 
 export function lineGrams(l: IngredientLine): number | undefined {
@@ -182,8 +211,9 @@ export function lineGrams(l: IngredientLine): number | undefined {
   if (l.unit === 'clove') return q * 5;
   if (l.unit === 'fillet') return q * (/anchov/.test(id) ? 4 : 170);
   if (l.unit === 'rasher') return q * 25;
-  if (l.unit === 'slice') return q * 35;
-  if (l.unit === 'sheet') return q * (/puff-pastry|shortcrust/.test(id) ? 170 : /filo/.test(id) ? 20 : /nori/.test(id) ? 3 : 20);
+  if (l.unit === 'slice') return q * (/bacon/.test(id) ? 25 : /prosciutto|salami|pepperoni/.test(id) ? 15 : 35);
+  if (l.unit === 'sheet')
+    return q * (/puff-pastry|shortcrust/.test(id) ? 170 : /filo/.test(id) ? 20 : /nori/.test(id) ? 3 : /rice-paper/.test(id) ? 9 : 20);
   if (!l.unit) {
     const each = EACH_G.find(([re]) => re.test(id))?.[1];
     return each === undefined ? undefined : q * each;
@@ -209,6 +239,8 @@ export const friesInOil = (steps: string[]) =>
 const isFryingOil = (l: IngredientLine, g: number, fried: boolean) =>
   OIL.test(l.ingredientId ?? '') && ((fried && g >= 100) || /for (deep[- ]?|shallow[- ]?)?frying/i.test(l.raw));
 
+const AS_BOUGHT_WITH_BONE = /whole-chicken|chicken-drumstick|chicken-pieces|chicken-thigh-bone-in|chicken-wings|pork-ribs|oxtail/;
+
 /** kcal for one line, or undefined when it has no usable amount. */
 export function lineKcal(l: IngredientLine, aisleOf: (id: string) => string | undefined, fried = false): number | undefined {
   const id = l.ingredientId;
@@ -218,8 +250,11 @@ export function lineKcal(l: IngredientLine, aisleOf: (id: string) => string | un
     if (l.unit && l.unit in ML_PER) g = (g / (DENSITY.find(([re]) => re.test(id))?.[1] ?? 1)) * 0.65;
     return (g * 140) / 100;
   }
+  // Cooked lentils, beans and chickpeas: about 120 kcal/100 g, not the dry 340.
+  if (/lentil|split-pea|chickpea|bean/.test(id) && /\bcooked\b/i.test(l.raw)) return (g * 120) / 100;
   if (isFryingOil(l, g, fried)) g *= 0.15;
-  if (/bone[- ]in/i.test(l.raw)) g *= 0.8;
+  // "bone in" takes 20% off, except for ids whose figure above is already as bought with the bone.
+  if (/bone[- ]in/i.test(l.raw) && !AS_BOUGHT_WITH_BONE.test(id)) g *= 0.8;
   // Dried or split pulses (chana dal, dried chickpeas) often link to the tinned ingredient.
   if (/chickpea|bean|lentil/.test(id) && /\bdried\b|\bdal\b|\bsplit\b/i.test(l.raw) && !/tin|can\b|cans\b|drained/i.test(l.raw))
     return (g * 340) / 100;
@@ -249,4 +284,75 @@ export function estimateKcalPerServe(
     kcal += k;
   }
   return { kcal: kcal / Math.max(1, servings), known, counted: counted.length, cover: known / Math.max(1, counted.length) };
+}
+
+/**
+ * Share of a food's energy from protein, carbs and fat, for splitting a line's kcal
+ * into macros. First match wins. Used by fix-nutrition-from-lines.mts to rebuild stated
+ * macros and by the validator's protein floor. Rough, but by food type rather than one
+ * flat split: oil is all fat, rice mostly carbs, lean fish mostly protein.
+ */
+export const MACRO_SHARE: [RegExp, [number, number, number]][] = [
+  [/^water$|soda-water/, [0, 0, 0]],
+  [/(^|-)oil$|olive-oil|lard|ghee|dripping|duck-fat|^butter$|vegan-butter/, [0, 0, 1]],
+  [/mayo|aioli|pesto|tartare/, [0.01, 0.04, 0.95]],
+  [/olive$|avocado/, [0.04, 0.08, 0.88]],
+  [/pastry|shortcrust/, [0.06, 0.4, 0.54]],
+  [/frozen-chips|corn-chips/, [0.06, 0.55, 0.39]],
+  [/wrapper/, [0.12, 0.85, 0.03]],
+  [/coconut-milk|coconut-cream|^cream$|thickened-cream|double-cream|sour-cream|creme-fraiche|mascarpone|cream-cheese/, [0.05, 0.07, 0.88]],
+  [/cottage-cheese|ricotta|paneer/, [0.4, 0.12, 0.48]],
+  [/cheese|parmesan|pecorino|cheddar|gruyere|manchego|halloumi|feta|mozzarella/, [0.27, 0.03, 0.7]],
+  [/egg$|^eggs?$|egg-yolk|egg-white/, [0.35, 0.02, 0.63]],
+  [/^ham$/, [0.6, 0.05, 0.35]],
+  [/bacon|pancetta|guanciale|pork-belly|prosciutto/, [0.25, 0, 0.75]],
+  [/chorizo|salami|sausage|bratwurst|frankfurt|pepperoni|kransky|merguez|andouille/, [0.2, 0.05, 0.75]],
+  [/whole-chicken|chicken-drumstick|chicken-pieces|chicken-wings|chicken-thigh-bone-in|duck/, [0.4, 0, 0.6]],
+  [/chicken-breast|fillet|loin|topside|rump|escalope|turkey/, [0.7, 0, 0.3]],
+  [/chicken/, [0.55, 0, 0.45]],
+  [/beef|lamb|pork|veal|oxtail|steak|mince|goat|short-ribs|liver/, [0.45, 0, 0.55]],
+  [/salmon|trout|mackerel|sardine/, [0.45, 0, 0.55]],
+  [/fish|prawn|calamari|clam|mussel|octopus|scallop|crab|lobster|squid|tuna|anchov|cod|snapper|barramundi/, [0.8, 0.03, 0.17]],
+  [/tofu|tempeh|edamame/, [0.43, 0.05, 0.52]],
+  [/lentil|split-pea|bean|chickpea|pea$|peas$|dal$/, [0.26, 0.66, 0.08]],
+  [/nut|almond|cashew|walnut|pecan|pistachio|hazelnut|macadamia|seed|tahini|sesame/, [0.13, 0.12, 0.75]],
+  [/chocolate|cocoa/, [0.06, 0.4, 0.54]],
+  [/sugar|honey|syrup|treacle|jam$|molasses|starch/, [0, 1, 0]],
+  [/hoisin|bbq-sauce|sweet-chilli|tomato-sauce|ketchup|teriyaki|cranberry|plum-sauce|chutney|relish/, [0.03, 0.95, 0.02]],
+  [/^milk$|full-cream-milk|soy-milk|oat-milk|buttermilk|yoghurt|yogurt|labneh|kefir/, [0.22, 0.3, 0.48]],
+  [/apple|pear|banana|mango|orange|berr|raisin|sultana|date|prune|fig|apricot|pineapple|grape|peach|plantain/, [0.04, 0.93, 0.03]],
+  [
+    /flour|rice|pasta|spaghetti|noodle|bread|wrap|tortilla|pita|naan|roll|bun|oats|barley|couscous|quinoa|bulgur|semolina|polenta|panko|rusk|baguette|gnocchi|orzo/,
+    [0.12, 0.83, 0.05],
+  ],
+  [/potato|kumara|cassava|taro|yam|corn/, [0.08, 0.89, 0.03]],
+  [/stock|broth|soy-sauce|fish-sauce|miso/, [0.35, 0.5, 0.15]],
+  [/curry-paste|paste$/, [0.08, 0.45, 0.47]],
+];
+const OTHER_SHARE: [number, number, number] = [0.15, 0.75, 0.1]; // vegetables and the rest
+
+export const macroShare = (id: string): [number, number, number] => MACRO_SHARE.find(([re]) => re.test(id))?.[1] ?? OTHER_SHARE;
+
+/** Protein, carbs and fat (g) a serve from the lines, splitting each line's kcal by its food type. */
+export function estimateMacrosPerServe(
+  lines: IngredientLine[],
+  servings: number,
+  aisleOf: (id: string) => string | undefined,
+  steps: string[] = [],
+): { proteinG: number; carbsG: number; fatG: number } {
+  const fried = friesInOil(steps);
+  let p = 0;
+  let c = 0;
+  let f = 0;
+  for (const l of lines) {
+    if (l.optional || !l.ingredientId) continue;
+    const k = lineKcal(l, aisleOf, fried);
+    if (!k) continue;
+    const [pp, cc, ff] = macroShare(l.ingredientId);
+    p += (k * pp) / 4;
+    c += (k * cc) / 4;
+    f += (k * ff) / 9;
+  }
+  const n = Math.max(1, servings);
+  return { proteinG: p / n, carbsG: c / n, fatG: f / n };
 }

@@ -11,7 +11,7 @@
 #    Any other conflict stops the script for a person to look at.
 # 2. Renormalises nutrition over every batch-04 file (--write), then rebuilds from the
 #    ingredient lines any recipe still failing the nutrition checks
-#    (scripts/fix-nutrition-from-lines.mts --write).
+#    (scripts/fix-nutrition-from-lines.mts --write), plus the second pass for ones that read low.
 # 3. Drops duplicates (scripts/dedupe-batch04.mts --write) and rewrites docs/DEDUPE-BATCH04.md.
 # 4. Runs catalogue:validate (batch-04 files) and catalogue:check-house, printing summary lines only.
 # 5. Commits the result on this branch. Never pushes and never touches main.
@@ -52,6 +52,9 @@ done
 echo "-- renormalise nutrition"
 npx tsx scripts/renormalise-nutrition.mts --write --report "$out/renormalise.txt" | tail -1
 npx tsx scripts/fix-nutrition-from-lines.mts --write --report "$out/fix-nutrition.txt" | tail -1
+# Second pass (docs/NUTRITION-FIXUP-BATCH04.md): the 152 recipes that read low, then anything under 0.7.
+npx tsx scripts/fix-nutrition-from-lines.mts --write --band 0.85 --ids docs/nutrition-second-pass-ids.txt --report "$out/fix-nutrition-2.txt" | tail -1
+npx tsx scripts/fix-nutrition-from-lines.mts --write --band 0.7 --report "$out/fix-nutrition-3.txt" | tail -1
 
 echo "-- dedupe"
 npx tsx scripts/dedupe-batch04.mts --write --report docs/DEDUPE-BATCH04.md | tail -2

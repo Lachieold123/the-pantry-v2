@@ -25,7 +25,7 @@ import { deriveDiets } from '../src/domain/recipes/diets.ts';
 import { CUISINES, DIET_TAGS, DIFFICULTIES, MEAL_TYPES, SEASONS, type Recipe } from '../src/domain/recipes/types.ts';
 import { validateRecipe } from '../src/domain/recipes/validate.ts';
 import { batchFiles, HOUSE_DIR, readBatch, toRecipe, type HouseRecipe } from './house-recipes.mts';
-import { estimateKcalPerServe, lineGrams } from './nutrition-estimate.mts';
+import { estimateKcalPerServe, estimateMacrosPerServe } from './nutrition-estimate.mts';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
@@ -520,11 +520,17 @@ function checkRecipe(h: HouseRecipe, file: string, seen: Map<string, string>): v
     if (Math.abs(fromMacros - nu.kcal) > Math.max(40, nu.kcal * 0.15))
       fail('nutrition', `protein, carbs, fat and fibre give ${Math.round(fromMacros)} kcal but kcal says ${nu.kcal}`);
     if (nu.sodiumMg > 3500) fail('nutrition', `${nu.sodiumMg} mg sodium a serve is very high`);
-    // Only where meat or seafood is a real part of the serve (50 g raw or more), not a little bacon in a salad.
+    // Any meat or seafood (lard, dripping, stock and bones are not meat) means at least 10 g
+    // protein a serve. The one exception is a dish whose lines can't supply 10 g (a little
+    // bacon through a cabbage salad or a pot of beans for eight): then the stated figure must
+    // still be at least 75% of the protein the lines give.
     const isMeat = (i?: string) => !!i && /meat|seafood/.test(def(i)?.aisle ?? '') && !/stock|bones|fat|dripping|lard/.test(i);
-    const meatG = counted.reduce((t, l) => t + (isMeat(l.ingredientId) ? (lineGrams(l) ?? 50 * h.servings) : 0), 0) / h.servings;
-    if (meatG >= 50 && nu.proteinG < 10)
-      fail('nutrition', `has ${Math.round(meatG)} g meat or seafood a serve but only ${nu.proteinG} g protein`);
+    if (counted.some((l) => isMeat(l.ingredientId))) {
+      const lineP = estimateMacrosPerServe(counted, h.servings, (i) => def(i)?.aisle, h.steps).proteinG;
+      const floor = Math.min(10, Math.floor(lineP * 0.75));
+      if (nu.proteinG < floor)
+        fail('nutrition', `has meat or seafood but only ${nu.proteinG} g protein a serve (lines give about ${Math.round(lineP)} g)`);
+    }
     const { kcal: est, known, cover } = estimateKcalPerServe(counted, h.servings, (i) => def(i)?.aisle, h.steps);
     const ratio = nu.kcal / Math.max(1, est);
     if (process.env.NUTRI_DEBUG) console.log(`NUTRI ${h.id} ${Math.round(est)} ${cover.toFixed(2)}`);
