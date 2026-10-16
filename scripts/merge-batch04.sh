@@ -7,7 +7,8 @@
 # 1. Merges the current tips of house-recipes-batch-04-sA, -sB and -sC, one at a time.
 #    Conflicts in recipe data or the slice handoff docs take the slice's version: steps 2
 #    and 3 re-derive everything this branch changed in them. The slices' scratch tools
-#    (scripts/zz-*, docs/tools-s*) are kept out of this branch: removed after each merge.
+#    (scripts/zz-*, scripts/_*, docs/tools-s*, and a node_modules symlink slice A committed)
+#    are kept out of this branch: removed after each merge.
 #    Any other conflict stops the script for a person to look at.
 # 2. Renormalises nutrition over every batch-04 file (--write), then rebuilds from the
 #    ingredient lines any recipe still failing the nutrition checks
@@ -29,23 +30,36 @@ for s in sA sB sC; do
   b="house-recipes-batch-04-$s"
   if git merge-base --is-ancestor "$b" HEAD; then echo "$b: nothing new"; continue; fi
   echo "$b: merging $(git rev-list --count HEAD.."$b") new commit(s)"
+  # A slice committed its node_modules symlink; move ours aside so the merge can write it.
+  nm_moved=0
+  if [ -L node_modules ] && ! git ls-files --error-unmatch node_modules >/dev/null 2>&1 \
+     && git ls-tree --name-only "$b" node_modules | grep -q .; then
+    mv node_modules .node_modules.merge-aside; nm_moved=1
+  fi
   if ! git merge --no-edit -q "$b"; then
     while IFS= read -r f; do
       case "$f" in
         scripts/data/house-recipes/batch-04*.json | docs/HANDOFF-BATCH04-s*.md)
           git checkout --theirs -- "$f" && git add -- "$f" ;;
-        docs/tools-s*/* | scripts/zz-*)
+        docs/tools-s*/* | scripts/zz-* | scripts/_* | node_modules)
           git rm -q --ignore-unmatch -- "$f" ;;
         *) echo "conflict needs a person: $f (merge left in progress)"; exit 1 ;;
       esac
     done < <(git diff --name-only --diff-filter=U)
     git commit --no-edit -q
   fi
-  scratch=$(git ls-files -- 'scripts/zz-*' 'docs/tools-s*')
+  scratch=$(git ls-files -- 'scripts/zz-*' 'scripts/_*' 'docs/tools-s*')
   if [ -n "$scratch" ]; then
     # shellcheck disable=SC2086
     git rm -rq -- $scratch
-    git commit -q -m "batch-04 merge: keep $s scratch tools (scripts/zz-*, docs/tools-s*) out of this branch"
+  fi
+  if git ls-files --error-unmatch node_modules >/dev/null 2>&1; then
+    git rm -q --cached -- node_modules
+    [ "$nm_moved" = 1 ] && rm -f node_modules
+  fi
+  [ "$nm_moved" = 1 ] && [ ! -e node_modules ] && mv .node_modules.merge-aside node_modules
+  if ! git diff --cached --quiet; then
+    git commit -q -m "batch-04 merge: keep $s scratch tools (scripts/zz-*, scripts/_*, docs/tools-s*, node_modules) out of this branch"
   fi
 done
 
