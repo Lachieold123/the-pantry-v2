@@ -83,10 +83,10 @@
         "Snack. Per serving: 2 honey joys. Keeps 5 days in an airtight container. Not suitable for children under 1 because of the honey."
       ],
       "nutrition": {
-        "kcal": 108,
+        "kcal": 77,
         "proteinG": 1,
-        "carbsG": 17,
-        "fatG": 4,
+        "carbsG": 12,
+        "fatG": 3,
         "fibreG": 0,
         "sodiumMg": 130
       }
@@ -982,52 +982,6 @@
         "fatG": 13,
         "fibreG": 3,
         "sodiumMg": 5
-      }
-    },
-    {
-      "id": "apple-oat-crumble-fingers",
-      "title": "Apple Oat Crumble Fingers",
-      "summary": "Buttery oat crumble layers around a soft cinnamon apple filling.",
-      "cuisine": "british",
-      "mealTypes": [
-        "snack"
-      ],
-      "difficulty": "easy",
-      "prepMinutes": 20,
-      "cookMinutes": 35,
-      "servings": 12,
-      "onePot": false,
-      "diets": [
-        "vegetarian"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "200g rolled oats",
-            "150g plain flour",
-            "120g brown sugar",
-            "150g butter, melted",
-            "3 apples, peeled and diced (about 450g)",
-            "1 tsp ground cinnamon",
-            "1 tbsp lemon juice"
-          ]
-        }
-      ],
-      "steps": [
-        "Heat the oven to 170°C fan (190°C conventional) and line a 20cm square tin. Simmer the apple, cinnamon and lemon juice with 2 tbsp water for 8 minutes until soft.",
-        "Mix the oats, flour, sugar and butter to a crumbly dough. Press two-thirds into the tin and bake for 10 minutes.",
-        "Spread the apple over the base, scatter over the remaining crumble and bake for 25 minutes, until golden. Cool in the tin and cut into 12 fingers."
-      ],
-      "notes": [
-        "Snack. Per serving: 1 finger. Keeps 4 days in an airtight container; freeze for 2 months."
-      ],
-      "nutrition": {
-        "kcal": 265,
-        "proteinG": 3,
-        "carbsG": 37,
-        "fatG": 11,
-        "fibreG": 3,
-        "sodiumMg": 90
       }
     },
     {

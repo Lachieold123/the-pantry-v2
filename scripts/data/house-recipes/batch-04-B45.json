@@ -1127,57 +1127,6 @@
         "fibreG": 1,
         "sodiumMg": 90
       }
-    },
-    {
-      "id": "sugar-reduced-apple-oat-muffins",
-      "title": "Sugar-Reduced Apple Oat Muffins",
-      "summary": "Soft muffins sweetened mostly with apple and a little honey, with oats for fibre.",
-      "cuisine": "modern-australian",
-      "mealTypes": [
-        "snack"
-      ],
-      "difficulty": "easy",
-      "prepMinutes": 15,
-      "cookMinutes": 22,
-      "servings": 12,
-      "onePot": false,
-      "diets": [
-        "vegetarian"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "2 apples, grated",
-            "2 eggs",
-            "60g honey",
-            "80ml neutral oil",
-            "150g Greek yoghurt",
-            "150g plain flour",
-            "100g rolled oats",
-            "2 tsp baking powder",
-            "1 tsp ground cinnamon"
-          ]
-        }
-      ],
-      "steps": [
-        "Heat the oven to 160°C fan (180°C conventional). Line a 12-hole muffin tin with paper cases.",
-        "Whisk the eggs, honey, oil and yoghurt until smooth. Stir in the grated apple.",
-        "Fold in the flour, oats, baking powder and cinnamon until just combined.",
-        "Divide between the cases and bake for 20 to 22 minutes until golden and a skewer comes out clean.",
-        "Cool in the tin for 5 minutes, then on a rack."
-      ],
-      "notes": [
-        "Snack. Vegetarian. Per serving: 1 muffin. About 7g sugar each.",
-        "Storage: keeps 3 days in an airtight container; freezes for 2 months."
-      ],
-      "nutrition": {
-        "kcal": 180,
-        "proteinG": 4,
-        "carbsG": 22,
-        "fatG": 8,
-        "fibreG": 2,
-        "sodiumMg": 100
-      }
     }
   ]
 }

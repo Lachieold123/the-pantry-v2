@@ -2,55 +2,6 @@
  "about": "House recipes, batch 04 (helper sA): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
  "recipes": [
   {
-   "id": "lemon-ricotta-cake",
-   "title": "Lemon Ricotta Cake",
-   "summary": "A soft, moist cake that gets its tenderness from ricotta and its zing from lemon.",
-   "cuisine": "italian",
-   "mealTypes": [
-    "snack"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 15,
-   "cookMinutes": 40,
-   "servings": 8,
-   "onePot": false,
-   "diets": [
-    "vegetarian"
-   ],
-   "ingredients": [
-    {
-     "items": [
-      "250g ricotta",
-      "3 egg",
-      "3/4 cup caster sugar",
-      "2 lemon, zested and juiced",
-      "1 cup plain flour",
-      "1 tsp baking powder",
-      "60g butter, melted",
-      "1 tbsp icing sugar"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oven to 170°C (150°C fan) and line a 20cm round tin with baking paper.",
-    "Whisk the ricotta, eggs, caster sugar, lemon zest and juice and melted butter together in a large bowl until smooth.",
-    "Fold in the flour and baking powder until just combined, then scrape into the tin.",
-    "Bake for 40 minutes, until golden and a skewer comes out clean. Cool in the tin, then dust with icing sugar."
-   ],
-   "notes": [
-    "Dessert.",
-    "Keeps 3 days in an airtight container."
-   ],
-   "nutrition": {
-    "kcal": 276,
-    "proteinG": 8,
-    "carbsG": 34,
-    "fatG": 12,
-    "fibreG": 1,
-    "sodiumMg": 170
-   }
-  },
-  {
    "id": "almond-amaretti-biscuits",
    "title": "Almond Amaretti Biscuits",
    "summary": "Chewy, crackled almond biscuits with no flour at all.",

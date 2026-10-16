@@ -741,55 +741,6 @@
    }
   },
   {
-   "id": "lunar-new-year-prawn-and-vegetable-fried-rice-for-prosperity",
-   "title": "Lunar New Year Prawn and Egg Fried Rice",
-   "summary": "Prawns, egg, peas and spring onion tossed through day-old rice, a quick dish for a new year spread.",
-   "cuisine": "chinese",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 12,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "pescatarian",
-    "no-dairy"
-   ],
-   "ingredients": [
-    {
-     "items": [
-      "400g prawns, peeled",
-      "4 cup cooked jasmine rice, cold",
-      "3 egg",
-      "1 cup frozen peas",
-      "4 spring onion, sliced",
-      "2 tbsp soy sauce",
-      "1 tbsp sesame oil",
-      "2 tbsp vegetable oil"
-     ]
-    }
-   ],
-   "steps": [
-    "Scramble the eggs in the oil for 1 minute until just set and push aside.",
-    "Add the prawns and cook for 3 minutes until pink and curled, then add the rice and peas and stir-fry for 4 minutes until hot.",
-    "Season with the soy and sesame oil and scatter with spring onion."
-   ],
-   "notes": [
-    "Contains egg, crustacean shellfish, soy, gluten and sesame. Use rice cooled quickly and refrigerated.",
-    "Food safety: cook fish until opaque and flaking, and shellfish until opaque and firm; keep raw seafood below 5°C, refrigerate leftovers within 2 hours and eat within 1 day. Cool rice within 1 hour and use within 1 day; reheat until steaming hot."
-   ],
-   "nutrition": {
-    "kcal": 480,
-    "proteinG": 28,
-    "carbsG": 62,
-    "fatG": 12,
-    "fibreG": 3,
-    "sodiumMg": 860
-   }
-  },
-  {
    "id": "australian-bush-spiced-beef-burgers-with-beetroot-and-onion",
    "title": "Bush-Spiced Beef Burgers with Beetroot and Caramelised Onion",
    "summary": "Beef burgers with an Australian mix of lemon myrtle and thyme, beetroot and caramelised onion in a bun.",
@@ -879,11 +830,11 @@
     "Food safety: cook fish until opaque and flaking, and shellfish until opaque and firm; keep raw seafood below 5°C, refrigerate leftovers within 2 hours and eat within 1 day."
    ],
    "nutrition": {
-    "kcal": 330,
-    "proteinG": 40,
-    "carbsG": 6,
-    "fatG": 15,
-    "fibreG": 2,
+    "kcal": 65,
+    "proteinG": 8,
+    "carbsG": 1,
+    "fatG": 3,
+    "fibreG": 0,
     "sodiumMg": 690
    }
   }

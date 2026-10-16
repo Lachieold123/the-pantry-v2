@@ -310,10 +310,10 @@
         "Storage: best the day they are made; keep airtight for 1 day."
       ],
       "nutrition": {
-        "kcal": 166,
+        "kcal": 266,
         "proteinG": 2,
-        "carbsG": 34,
-        "fatG": 2,
+        "carbsG": 32,
+        "fatG": 14,
         "fibreG": 2,
         "sodiumMg": 60
       }
@@ -361,11 +361,11 @@
         "Storage: best eaten warm on the day; the palm sugar centre will be hot when freshly cooked."
       ],
       "nutrition": {
-        "kcal": 234,
-        "proteinG": 3,
-        "carbsG": 40,
-        "fatG": 6,
-        "fibreG": 4,
+        "kcal": 167,
+        "proteinG": 2,
+        "carbsG": 29,
+        "fatG": 4,
+        "fibreG": 3,
         "sodiumMg": 190
       }
     },
@@ -563,10 +563,10 @@
         "Storage: best eaten the same day."
       ],
       "nutrition": {
-        "kcal": 188,
+        "kcal": 287,
         "proteinG": 4,
         "carbsG": 38,
-        "fatG": 2,
+        "fatG": 13,
         "fibreG": 1,
         "sodiumMg": 150
       }
@@ -617,64 +617,12 @@
         "Storage: keeps 3 days in an airtight container in the fridge."
       ],
       "nutrition": {
-        "kcal": 228,
-        "proteinG": 4,
-        "carbsG": 39,
-        "fatG": 6,
+        "kcal": 401,
+        "proteinG": 5,
+        "carbsG": 61,
+        "fatG": 15,
         "fibreG": 1,
         "sodiumMg": 120
-      }
-    },
-    {
-      "id": "basbousa",
-      "title": "Basbousa",
-      "summary": "A moist semolina and coconut cake soaked in lemon syrup, cut into diamonds.",
-      "cuisine": "middle-eastern",
-      "mealTypes": [
-        "snack"
-      ],
-      "difficulty": "easy",
-      "prepMinutes": 15,
-      "cookMinutes": 30,
-      "servings": 12,
-      "onePot": false,
-      "diets": [
-        "vegetarian"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "180g fine semolina",
-            "60g desiccated coconut",
-            "100g caster sugar",
-            "125g plain yoghurt",
-            "100g butter, melted",
-            "1 tsp baking powder",
-            "12 whole blanched almonds",
-            "150g caster sugar (for the syrup)",
-            "150ml water",
-            "1 tbsp lemon juice"
-          ]
-        }
-      ],
-      "steps": [
-        "Heat the oven to 170°C fan (190°C conventional). Grease and line a 20cm square tin.",
-        "Mix the semolina, coconut, 100g sugar and baking powder, then stir in the yoghurt and melted butter to a thick batter. Spread in the tin, smooth the top and cut into 12 diamonds, pressing an almond into each.",
-        "Bake for 28 to 30 minutes until golden and a skewer comes out clean.",
-        "Meanwhile boil the syrup sugar and water for 5 minutes, then stir in the lemon juice. Pour the cool syrup over the hot cake and let it soak in."
-      ],
-      "notes": [
-        "Snack. Vegetarian. Per serving: 1 diamond. Plus 20 minutes soaking.",
-        "Contains tree nuts (almonds).",
-        "Storage: keep covered for 4 days; it improves after a day."
-      ],
-      "nutrition": {
-        "kcal": 245,
-        "proteinG": 3,
-        "carbsG": 33,
-        "fatG": 11,
-        "fibreG": 1,
-        "sodiumMg": 90
       }
     },
     {
@@ -1028,10 +976,10 @@
         "Storage: best eaten within an hour of frying."
       ],
       "nutrition": {
-        "kcal": 144,
+        "kcal": 225,
         "proteinG": 3,
         "carbsG": 28,
-        "fatG": 2,
+        "fatG": 11,
         "fibreG": 1,
         "sodiumMg": 60
       }

@@ -978,57 +978,6 @@
       }
     },
     {
-      "id": "kachumber-salad",
-      "title": "Kachumber Salad",
-      "summary": "Crunchy cucumber, tomato and red onion with lemon, cumin and coriander.",
-      "cuisine": "indian",
-      "mealTypes": [
-        "lunch"
-      ],
-      "difficulty": "easy",
-      "prepMinutes": 10,
-      "cookMinutes": 0,
-      "servings": 4,
-      "onePot": true,
-      "diets": [
-        "vegetarian",
-        "vegan",
-        "no-gluten",
-        "no-dairy"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "2 cucumbers",
-            "3 tomatoes",
-            "1 red onion",
-            "2 tbsp coriander",
-            "2 tbsp lemon juice",
-            "1 tsp cumin",
-            "1 green chilli",
-            "1 pinch salt"
-          ]
-        }
-      ],
-      "steps": [
-        "Dice the cucumber, tomato and onion evenly.",
-        "Toss with coriander, chilli and cumin.",
-        "Dress with lemon juice and salt until coated."
-      ],
-      "notes": [
-        "Vegan.",
-        "Serve straight away."
-      ],
-      "nutrition": {
-        "kcal": 63,
-        "proteinG": 2,
-        "carbsG": 10,
-        "fatG": 1,
-        "fibreG": 3,
-        "sodiumMg": 200
-      }
-    },
-    {
       "id": "pesto-genovese-dairy-free",
       "title": "Pesto Genovese Dairy-Free",
       "summary": "A fresh basil and pine nut pesto without cheese, using nutritional yeast.",

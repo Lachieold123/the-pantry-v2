@@ -1320,53 +1320,6 @@
       ]
     },
     {
-      "id": "ugandan-chapati-egg-rolls",
-      "title": "Ugandan Chapati Egg Rolls",
-      "summary": "Egg omelettes rolled in roti with tomato.",
-      "cuisine": "east-african",
-      "mealTypes": [
-        "breakfast"
-      ],
-      "difficulty": "easy",
-      "prepMinutes": 10,
-      "cookMinutes": 12,
-      "servings": 2,
-      "onePot": false,
-      "diets": [
-        "vegetarian",
-        "no-dairy"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "4 roti",
-            "3 egg",
-            "1 tomato",
-            "1 spring onion",
-            "1 tbsp neutral oil"
-          ]
-        }
-      ],
-      "steps": [
-        "Beat the eggs with the finely diced tomato, sliced spring onion and a pinch of salt until well combined.",
-        "Heat a little oil in a non-stick pan over medium heat. Pour in half the egg mixture and swirl into a thin layer. Cook for 2 minutes until just set, then slide out. Repeat with the rest.",
-        "Warm each roti in a dry pan over medium heat for 30 seconds a side until soft and flecked with brown.",
-        "Place an omelette on each roti, roll up tightly and slice in half to serve warm."
-      ],
-      "notes": [
-        "Food safety: cook the egg until firm and eat promptly.",
-        "Tip: dice the tomato small and pat it dry so the omelettes do not go watery."
-      ],
-      "nutrition": {
-        "kcal": 442,
-        "proteinG": 20,
-        "carbsG": 49,
-        "fatG": 18,
-        "fibreG": 2,
-        "sodiumMg": 450
-      }
-    },
-    {
       "id": "maize-pap-bowls-with-curried-tomato-onion",
       "title": "Maize Pap Bowls with Curried Tomato Onion",
       "summary": "Maize pap with spiced tomato and onion, vegan.",

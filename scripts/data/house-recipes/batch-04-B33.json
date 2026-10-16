@@ -2,53 +2,6 @@
   "about": "House recipes, batch 04 (slice B): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
   "recipes": [
     {
-      "id": "apricot-jam-drop-biscuits",
-      "title": "Apricot Jam Drop Biscuits",
-      "summary": "Buttery vanilla biscuits with a pool of apricot jam in the middle, a classic for the biscuit tin.",
-      "cuisine": "british",
-      "mealTypes": [
-        "snack"
-      ],
-      "difficulty": "easy",
-      "prepMinutes": 20,
-      "cookMinutes": 14,
-      "servings": 10,
-      "onePot": false,
-      "diets": [
-        "vegetarian"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "125g butter, softened",
-            "1/2 cup caster sugar (110g)",
-            "1 egg",
-            "1 tsp vanilla extract",
-            "2 cups plain flour (250g)",
-            "1/3 cup apricot jam (110g)"
-          ]
-        }
-      ],
-      "steps": [
-        "Heat the oven to 160°C fan (180°C conventional) and line two trays with baking paper. Beat the butter and sugar for 3 minutes until pale and creamy, then beat in the egg and vanilla.",
-        "Stir in the flour to make a soft dough. Roll level tablespoons (about 30g each) into 20 balls and place them 4cm apart on the trays.",
-        "Press a thumb into the centre of each ball to make a deep well, then spoon about 1 tsp jam into each.",
-        "Bake for 14 minutes, swapping the trays halfway, until the edges are pale golden. Cool on the trays for 5 minutes, then move to a rack."
-      ],
-      "notes": [
-        "Snack. Vegetarian. Per serving: 2 biscuits. Keeps 5 days in an airtight tin.",
-        "Food safety: wash your hands and the bench after handling raw egg."
-      ],
-      "nutrition": {
-        "kcal": 248,
-        "proteinG": 3,
-        "carbsG": 36,
-        "fatG": 10,
-        "fibreG": 1,
-        "sodiumMg": 90
-      }
-    },
-    {
       "id": "lemon-yoghurt-loaf-slices",
       "title": "Lemon Yoghurt Loaf Slices",
       "summary": "A moist, tangy loaf with a thin lemon glaze, cut into thick slices for the lunchbox or afternoon tea.",
@@ -777,55 +730,6 @@
         "fatG": 28,
         "fibreG": 4,
         "sodiumMg": 380
-      }
-    },
-    {
-      "id": "apple-cinnamon-cake-wedges",
-      "title": "Apple Cinnamon Cake Wedges",
-      "summary": "A simple buttery cake with fanned apple slices on top, baked in a round tin and cut into wedges.",
-      "cuisine": "british",
-      "mealTypes": [
-        "snack"
-      ],
-      "difficulty": "medium",
-      "prepMinutes": 20,
-      "cookMinutes": 45,
-      "servings": 8,
-      "onePot": false,
-      "diets": [
-        "vegetarian"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "1 1/2 cups self-raising flour (225g)",
-            "1/2 cup brown sugar (90g)",
-            "2 eggs",
-            "100g butter, melted and cooled",
-            "1/2 cup milk (125ml)",
-            "2 apples (300g), cored and thinly sliced",
-            "2 tsp ground cinnamon",
-            "1 tbsp caster sugar"
-          ]
-        }
-      ],
-      "steps": [
-        "Heat the oven to 160°C fan (180°C conventional) and line a 20cm round tin with baking paper. Whisk the eggs and brown sugar together, then whisk in the butter and milk.",
-        "Fold in the flour and 1 tsp of the cinnamon until just combined and spread into the tin.",
-        "Arrange the apple slices in overlapping circles on top and sprinkle with the caster sugar and remaining cinnamon.",
-        "Bake for 45 minutes, until golden and a skewer comes out clean. Cool in the tin for 10 minutes before cutting into 8 wedges."
-      ],
-      "notes": [
-        "Snack. Vegetarian. Per serving: 1 wedge. Keeps 3 days airtight.",
-        "Food safety: wash your hands and the bench after handling raw egg."
-      ],
-      "nutrition": {
-        "kcal": 294,
-        "proteinG": 5,
-        "carbsG": 40,
-        "fatG": 12,
-        "fibreG": 3,
-        "sodiumMg": 190
       }
     },
     {

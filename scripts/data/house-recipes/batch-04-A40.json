@@ -684,10 +684,10 @@
     "Contains soy, sesame and tree nuts (walnut)."
    ],
    "nutrition": {
-    "kcal": 350,
-    "proteinG": 17,
-    "carbsG": 28,
-    "fatG": 19,
+    "kcal": 643,
+    "proteinG": 32,
+    "carbsG": 72,
+    "fatG": 23,
     "fibreG": 10,
     "sodiumMg": 800
    }
@@ -993,9 +993,9 @@
     "Contains crustacean shellfish."
    ],
    "nutrition": {
-    "kcal": 310,
-    "proteinG": 28,
-    "carbsG": 10,
+    "kcal": 452,
+    "proteinG": 33,
+    "carbsG": 38,
     "fatG": 18,
     "fibreG": 3,
     "sodiumMg": 500
@@ -1048,54 +1048,6 @@
     "fatG": 19,
     "fibreG": 5,
     "sodiumMg": 1300
-   }
-  },
-  {
-   "id": "smoked-salmon-cream-cheese-cucumber-rolls-low-carb",
-   "title": "Smoked Salmon and Cream Cheese Cucumber Rolls",
-   "summary": "Ribbons of cucumber wrapped around smoked salmon and dill cream cheese, a no-cook low-carb lunch.",
-   "cuisine": "scandinavian",
-   "mealTypes": [
-    "lunch"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 0,
-   "servings": 2,
-   "onePot": false,
-   "diets": [
-    "pescatarian",
-    "no-gluten"
-   ],
-   "ingredients": [
-    {
-     "items": [
-      "1 cucumber, sliced in long ribbons",
-      "100g cream cheese",
-      "1 tbsp dill, chopped",
-      "1 lemon, zested",
-      "100g smoked salmon",
-      "1 tbsp capers",
-      "1/4 tsp black pepper"
-     ]
-    }
-   ],
-   "steps": [
-    "Beat the cream cheese with the dill, lemon zest and pepper.",
-    "Spread over the cucumber ribbons, lay on the salmon, roll up and secure with a cocktail pick.",
-    "Chill for 10 minutes until firm, then top with capers."
-   ],
-   "notes": [
-    "Food safety: keep smoked salmon chilled and eat within 2 days of opening. Pregnant people should avoid smoked fish.",
-    "Contains fish and milk."
-   ],
-   "nutrition": {
-    "kcal": 340,
-    "proteinG": 24,
-    "carbsG": 4,
-    "fatG": 24,
-    "fibreG": 1,
-    "sodiumMg": 1800
    }
   },
   {

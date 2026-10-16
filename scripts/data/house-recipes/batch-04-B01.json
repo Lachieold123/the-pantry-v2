@@ -2500,54 +2500,6 @@
    }
   },
   {
-   "id": "kenyan-coconut-mandazi",
-   "title": "Kenyan Coconut Mandazi",
-   "summary": "Lightly sweet fried doughnuts scented with cardamom and coconut.",
-   "cuisine": "east-african",
-   "mealTypes": [
-    "snack"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 25,
-   "cookMinutes": 12,
-   "servings": 12,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "no-dairy"
-   ],
-   "ingredients": [
-    {
-     "items": [
-      "3 cups plain flour",
-      "1/3 cup caster sugar",
-      "2 tsp baking powder",
-      "1 tsp ground cardamom",
-      "3/4 cup coconut milk",
-      "1 egg",
-      "neutral oil for frying"
-     ]
-    }
-   ],
-   "steps": [
-    "Mix the dry ingredients, then the milk and egg to a soft dough, knead briefly and rest for 15 minutes.",
-    "Roll out, cut into triangles.",
-    "Fry in hot oil, turning, for 4 minutes until puffed and golden.",
-    "Drain the mandazi on paper and serve them warm."
-   ],
-   "notes": [
-    "Vegetarian."
-   ],
-   "nutrition": {
-    "kcal": 185,
-    "proteinG": 3,
-    "carbsG": 26,
-    "fatG": 8,
-    "fibreG": 1,
-    "sodiumMg": 280
-   }
-  },
-  {
    "id": "south-african-milk-tart-squares",
    "title": "South African Milk Tart Squares",
    "summary": "Cinnamon-dusted creamy milk custard in a crisp pastry.",

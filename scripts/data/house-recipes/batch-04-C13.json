@@ -617,56 +617,6 @@
       }
     },
     {
-      "id": "tabbouleh-lebanese-parsley-salad",
-      "title": "Tabbouleh Lebanese Parsley Salad",
-      "summary": "Parsley-heavy salad with tomato, mint, bulgur and lemon.",
-      "cuisine": "middle-eastern",
-      "mealTypes": [
-        "lunch"
-      ],
-      "difficulty": "easy",
-      "prepMinutes": 20,
-      "cookMinutes": 0,
-      "servings": 4,
-      "onePot": false,
-      "diets": [
-        "vegetarian",
-        "vegan",
-        "no-dairy"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "3 bunches flat-leaf parsley",
-            "1/2 cup mint",
-            "4 tomatoes",
-            "3 spring onions",
-            "60g fine bulgur",
-            "4 tbsp lemon juice",
-            "4 tbsp olive oil",
-            "1/2 tsp salt"
-          ]
-        }
-      ],
-      "steps": [
-        "Soak the bulgur in the lemon juice for 15 minutes until tender.",
-        "Chop the parsley, mint, tomatoes and spring onion finely.",
-        "Toss everything with the oil and salt until well coated."
-      ],
-      "notes": [
-        "Vegan.",
-        "Contains gluten."
-      ],
-      "nutrition": {
-        "kcal": 226,
-        "proteinG": 4,
-        "carbsG": 18,
-        "fatG": 14,
-        "fibreG": 6,
-        "sodiumMg": 280
-      }
-    },
-    {
       "id": "fattoush-pomegranate-and-sumac-salad",
       "title": "Fattoush Pomegranate and Sumac Salad",
       "summary": "Crunchy salad with toasted pita, sumac dressing and pomegranate.",

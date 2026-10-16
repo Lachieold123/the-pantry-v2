@@ -52,53 +52,6 @@
    }
   },
   {
-   "id": "honey-castella-sponge-loaf",
-   "title": "Honey Castella Sponge Loaf",
-   "summary": "A moist, dense Japanese-style honey sponge with a fine crumb and a caramelised top.",
-   "cuisine": "japanese",
-   "mealTypes": [
-    "snack"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 20,
-   "cookMinutes": 45,
-   "servings": 10,
-   "onePot": false,
-   "diets": [
-    "vegetarian"
-   ],
-   "ingredients": [
-    {
-     "items": [
-      "5 egg",
-      "3/4 cup caster sugar",
-      "3 tbsp honey",
-      "1 cup bread flour",
-      "2 tbsp milk",
-      "1 tbsp neutral oil"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oven to 160°C and line a loaf tin with baking paper.",
-    "Warm the eggs and sugar in a bowl over simmering water, whisking until the sugar dissolves, then whisk off the heat for 8 minutes until thick and tripled in volume.",
-    "Warm the honey, milk and oil and fold into the batter, then sift in the flour and fold until just combined.",
-    "Pour into the tin, tap out large bubbles and bake for 45 minutes until deep golden and a skewer comes out clean.",
-    "Cool in the tin, wrapped in baking paper, so the top stays moist."
-   ],
-   "notes": [
-    "Snack. Dessert. Vegetarian. Food safety: the sponge must be fully baked through."
-   ],
-   "nutrition": {
-    "kcal": 186,
-    "proteinG": 5,
-    "carbsG": 32,
-    "fatG": 4,
-    "fibreG": 1,
-    "sodiumMg": 60
-   }
-  },
-  {
    "id": "lemon-butter-mochi-squares",
    "title": "Lemon Butter Mochi Squares",
    "summary": "Chewy, buttery glutinous rice flour squares with lemon and coconut milk.",

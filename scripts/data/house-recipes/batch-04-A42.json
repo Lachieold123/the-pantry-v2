@@ -159,58 +159,6 @@
    }
   },
   {
-   "id": "big-tray-baked-chicken-and-chorizo-paella-for-eight",
-   "title": "Big-Tray Baked Chicken and Chorizo Paella for Eight",
-   "summary": "A hands-off paella baked in one large tray with chicken thigh, chorizo, peas and capsicum.",
-   "cuisine": "spanish",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 20,
-   "cookMinutes": 45,
-   "servings": 8,
-   "onePot": false,
-   "diets": [
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
-    {
-     "items": [
-      "800g chicken thigh, skinless and chopped",
-      "200g chorizo, sliced",
-      "2 tbsp olive oil",
-      "2 brown onion, diced",
-      "2 red capsicum, sliced",
-      "4 clove garlic, crushed",
-      "3 cup paella rice",
-      "1 tsp smoked paprika",
-      "1 tsp ground turmeric",
-      "6 cup chicken stock, hot",
-      "1 cup frozen peas",
-      "1 lemon, cut into wedges"
-     ]
-    }
-   ],
-   "steps": [
-    "Brown the chicken and chorizo in the oil for 8 minutes in a large ovenproof pan or tray, then add the onion, capsicum, garlic and spices and cook for 5 minutes.",
-    "Stir in the rice and hot stock, bring to a simmer and bake at 200°C for 25 minutes, until the stock is absorbed and the rice is tender.",
-    "Scatter with peas, return to the oven for 5 minutes, and serve with lemon."
-   ],
-   "notes": [
-    "Food safety: chicken must reach 75°C and chorizo must be cooked through; cool leftover rice within 1 hour, refrigerate and eat within 1 day."
-   ],
-   "nutrition": {
-    "kcal": 620,
-    "proteinG": 34,
-    "carbsG": 76,
-    "fatG": 19,
-    "fibreG": 4,
-    "sodiumMg": 1080
-   }
-  },
-  {
    "id": "slow-roasted-pork-shoulder-for-a-crowd-with-apple-slaw",
    "title": "Slow-Roasted Pork Shoulder for a Crowd with Apple Slaw",
    "summary": "A big pork shoulder roasted until it pulls apart, served with crunchy apple and cabbage slaw.",
@@ -402,11 +350,11 @@
     "Contains gluten and mustard. About $3 a serve."
    ],
    "nutrition": {
-    "kcal": 610,
-    "proteinG": 22,
-    "carbsG": 48,
-    "fatG": 37,
-    "fibreG": 6,
+    "kcal": 241,
+    "proteinG": 9,
+    "carbsG": 19,
+    "fatG": 15,
+    "fibreG": 2,
     "sodiumMg": 1220
    }
   },

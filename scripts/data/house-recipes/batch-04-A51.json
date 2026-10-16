@@ -40,10 +40,10 @@
     "Food safety: a cooked ham is reheated until steaming hot at the centre (at least 70°C); refrigerate leftovers within 2 hours and eat within 4 days."
    ],
    "nutrition": {
-    "kcal": 310,
-    "proteinG": 38,
+    "kcal": 536,
+    "proteinG": 75,
     "carbsG": 14,
-    "fatG": 11,
+    "fatG": 20,
     "fibreG": 0,
     "sodiumMg": 2050
    }
@@ -86,10 +86,10 @@
     "Food safety: turkey must reach 75°C in the centre; refrigerate leftovers within 2 hours and eat within 2 days."
    ],
    "nutrition": {
-    "kcal": 380,
-    "proteinG": 52,
-    "carbsG": 14,
-    "fatG": 13,
+    "kcal": 821,
+    "proteinG": 22,
+    "carbsG": 149,
+    "fatG": 15,
     "fibreG": 1,
     "sodiumMg": 330
    }
@@ -184,62 +184,12 @@
     "Food safety: turkey must reach 75°C at the thickest part, and stuffing baked separately until steaming hot; refrigerate leftovers within 2 hours and eat within 2 days."
    ],
    "nutrition": {
-    "kcal": 540,
-    "proteinG": 40,
-    "carbsG": 32,
-    "fatG": 26,
+    "kcal": 1311,
+    "proteinG": 41,
+    "carbsG": 256,
+    "fatG": 13,
     "fibreG": 3,
     "sodiumMg": 760
-   }
-  },
-  {
-   "id": "lunar-new-year-whole-steamed-barramundi-with-ginger-and-spring-onion",
-   "title": "Lunar New Year Steamed Whole Fish with Ginger and Spring Onion",
-   "summary": "A symbolic Lunar New Year dish: a whole fish steamed and finished with sizzling oil, ginger and soy.",
-   "cuisine": "chinese",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 15,
-   "cookMinutes": 15,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "pescatarian",
-    "no-dairy"
-   ],
-   "ingredients": [
-    {
-     "items": [
-      "1 whole barramundi, about 1kg, cleaned",
-      "3 tbsp ginger, shredded",
-      "4 spring onion, shredded",
-      "3 tbsp soy sauce",
-      "1 tbsp Shaoxing wine",
-      "2 tbsp vegetable oil",
-      "1 tsp sesame oil",
-      "1/4 cup coriander leaves",
-      "1.5 cup jasmine rice"
-     ]
-    }
-   ],
-   "steps": [
-    "Cook the rice. Place the fish on a heatproof plate over a steamer with half the ginger and the wine and steam for 14 minutes until the flesh is opaque and flakes near the bone.",
-    "Pour off the liquid, scatter the spring onion and remaining ginger on top and drizzle with the soy sauce and sesame oil.",
-    "Heat the vegetable oil until shimmering and pour over the fish. Serve with the coriander and rice."
-   ],
-   "notes": [
-    "Contains fish, soy, sesame and gluten (from the Shaoxing wine).",
-    "Food safety: cook fish until opaque and flaking, and shellfish until opaque and firm; keep raw seafood below 5°C, refrigerate leftovers within 2 hours and eat within 1 day."
-   ],
-   "nutrition": {
-    "kcal": 430,
-    "proteinG": 38,
-    "carbsG": 52,
-    "fatG": 8,
-    "fibreG": 1,
-    "sodiumMg": 990
    }
   },
   {
@@ -390,11 +340,11 @@
     "Food safety: chicken must reach 75°C at the thickest part with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
    ],
    "nutrition": {
-    "kcal": 640,
-    "proteinG": 40,
-    "carbsG": 76,
-    "fatG": 19,
-    "fibreG": 3,
+    "kcal": 364,
+    "proteinG": 23,
+    "carbsG": 43,
+    "fatG": 11,
+    "fibreG": 2,
     "sodiumMg": 560
    }
   },

@@ -2,11 +2,45 @@
 
 Made by `scripts/dedupe-batch04.mts` on branch house-recipes-batch-04-merge (re-run by `scripts/merge-batch04.sh`).
 
-- Now: 3301 unique batch-04 recipes. Dropped so far: 78. Last run 2026-10-17 09:44.
+- Now: 4345 unique batch-04 recipes. Dropped so far: 104. Last run 2026-10-17 10:17.
 - Rules: same slug, same title, title words 80%+ alike, or same cuisine with 90%+ of 6+ linked ingredients shared and a title word in common. The near rules skip vegetarian vs non-vegetarian pairs and a short hand-checked list (NOT_DUPLICATES in the script).
 - Existing means the catalogue (src/data/catalogue/recipes.json), batch-01/02, parked batch-03 and the 12 Oct pilot. Against those the batch-04 draft is always dropped.
 - Inside batch-04 the more detailed version is kept (ingredient lines, steps, method length, notes, nutrition).
 - Only the batch-04 draft files on this branch change. Nothing published is removed.
+
+## Run 2026-10-17 10:17
+
+- 4371 batch-04 recipes in 168 files; 26 duplicates (0 of existing recipes, 26 inside batch-04); 4345 unique left.
+- By rule: near-ingredients 21, near-title 4, slug 1.
+
+| Dropped (file) | Title | Kept (file) | Kept title | Rule |
+| --- | --- | --- | --- | --- |
+| lemon-ricotta-cake (batch-04-A01) | Lemon Ricotta Cake | baked-ricotta-frittelle-bites (batch-04-B41) | Baked Ricotta Frittelle Bites | near-ingredients 1.00 |
+| coconut-jam-drops (batch-04-A03) | Coconut Jam Drops | jam-tart-bars (batch-04-B46) | Jam Tart Bars | near-ingredients 1.00 |
+| gooey-cinnamon-rolls (batch-04-A03) | Gooey Cinnamon Rolls | cinnamon-sugar-scrolls-with-cream-cheese-glaze (batch-04-B47) | Cinnamon Sugar Scrolls with Cream Cheese Glaze | near-ingredients 1.00 |
+| spiced-honey-lebkuchen-biscuits (batch-04-A03) | Spiced Honey Lebkuchen Biscuits | iced-lebkuchen-spiced-honey-cookies (batch-04-B39) | Iced Lebkuchen Spiced Honey Cookies | near-ingredients 0.92 |
+| smoked-salmon-cream-cheese-cucumber-rolls-low-carb (batch-04-A40) | Smoked Salmon and Cream Cheese Cucumber Rolls | smoked-salmon-cucumber-rounds (batch-04-B42) | Smoked Salmon Cucumber Rounds | near-ingredients 1.00 |
+| air-fryer-lamb-koftas-with-tzatziki-and-flatbread (batch-04-A41) | Air-Fryer Lamb Koftas with Tzatziki and Flatbread | nut-free-lamb-kofta-with-tzatziki-and-flatbread (batch-04-A46) | Nut-Free Lamb Kofta with Tzatziki and Flatbread | near-ingredients 0.92 |
+| big-tray-baked-chicken-and-chorizo-paella-for-eight (batch-04-A42) | Big-Tray Baked Chicken and Chorizo Paella for Eight | spanish-chicken-and-chorizo-rice-bake (batch-04-A09) | Spanish Chicken and Chorizo Rice Bake | near-ingredients 0.92 |
+| saucy-mushroom-and-silken-tofu-in-chilli-bean-sauce (batch-04-A49) | Saucy Mushroom and Silken Tofu in Chilli Bean Sauce | silken-tofu-and-mushrooms-in-chilli-bean-sauce (batch-04-B01) | Silken Tofu and Mushrooms in Chilli Bean Sauce | near-title 0.86 |
+| lunar-new-year-whole-steamed-barramundi-with-ginger-and-spring-onion (batch-04-A51) | Lunar New Year Steamed Whole Fish with Ginger and Spring Onion | ginger-soy-steamed-white-fish-with-hot-oil (batch-04-B05) | Ginger Soy Steamed White Fish with Hot Oil | near-ingredients 0.90 |
+| lunar-new-year-prawn-and-vegetable-fried-rice-for-prosperity (batch-04-A55) | Lunar New Year Prawn and Egg Fried Rice | wok-rice-with-prawns-and-soft-egg-ribbons (batch-04-B02) | Wok Rice with Prawns and Soft Egg Ribbons | near-ingredients 1.00 |
+| kenyan-coconut-mandazi (batch-04-B01) | Kenyan Coconut Mandazi | mandazi (batch-04-B49) | Mandazi | near-ingredients 1.00 |
+| honey-castella-sponge-loaf (batch-04-B05) | Honey Castella Sponge Loaf | castella-cubes (batch-04-B49) | Castella Cubes | near-ingredients 1.00 |
+| ugandan-chapati-egg-rolls (batch-04-B08) | Ugandan Chapati Egg Rolls | ugandan-rolex-egg-and-chapati-rolls (batch-04-C50) | Ugandan Rolex Egg and Chapati Rolls | near-title 0.80 |
+| sapasui-samoan-chicken-and-glass-noodle-stir-fry (batch-04-B21) | Sapasui Samoan Chicken and Glass Noodle Stir-Fry | sapasui-samoan-glass-noodle-stir-fry (batch-04-A39) | Sapasui (Samoan Glass Noodle Stir-Fry) | near-title 0.86 |
+| apple-cinnamon-cake-wedges (batch-04-B33) | Apple Cinnamon Cake Wedges | apple-upside-down-cake (batch-04-B45) | Apple Upside-Down Cake | near-ingredients 1.00 |
+| apricot-jam-drop-biscuits (batch-04-B33) | Apricot Jam Drop Biscuits | jam-thumbprint-christmas-cookies (batch-04-B41) | Jam Thumbprint Christmas Cookies | near-ingredients 1.00 |
+| apple-oat-crumble-fingers (batch-04-B38) | Apple Oat Crumble Fingers | spiced-apple-crumble (batch-04-A03) | Spiced Apple Crumble | near-ingredients 1.00 |
+| quick-pickled-jalapenos (batch-04-B43) | Quick Pickled Jalapenos | quick-pickled-jalapenos (batch-04-C33) | (same title) | slug |
+| koulourakia-orange-butter-twists (batch-04-B44) | Koulourakia Orange Butter Twists | koulourakia-butter-twists (batch-04-A03) | Koulourakia Butter Twists | near-ingredients 1.00 |
+| sugar-reduced-apple-oat-muffins (batch-04-B45) | Sugar-Reduced Apple Oat Muffins | greek-yoghurt-oat-muffins (batch-04-B41) | Greek Yoghurt Oat Muffins | near-ingredients 0.90 |
+| basbousa (batch-04-B49) | Basbousa | basbousa-semolina-and-coconut-cake (batch-04-B34) | Basbousa Semolina and Coconut Cake | near-ingredients 0.90 |
+| kachumber-salad (batch-04-C08) | Kachumber Salad | kachumber-fine-chopped-cucumber-tomato-red-onion-salad-with-roasted-cumin (batch-04-C57) | Kachumber Fine-Chopped Cucumber Tomato Red Onion Salad with Roasted Cumin | near-ingredients 1.00 |
+| tabbouleh-lebanese-parsley-salad (batch-04-C13) | Tabbouleh Lebanese Parsley Salad | travel-tabbouleh-in-a-jar (batch-04-C52) | Travel Tabbouleh in a Jar | near-ingredients 1.00 |
+| cumin-roast-cauliflower-on-pomegranate-tahini (batch-04-C27) | Cumin Roast Cauliflower on Pomegranate Tahini | spice-rubbed-whole-cauliflower-with-lemon-tahini-and-pomegranate (batch-04-C54) | Spice-Rubbed Whole Cauliflower with Lemon Tahini and Pomegranate | near-ingredients 0.91 |
+| chermoula-herb-sauce-for-grilled-fish (batch-04-C46) | Chermoula Herb Sauce for Grilled Fish | moroccan-chermoula-herb-marinade (batch-04-C22) | Moroccan Chermoula Herb Marinade | near-ingredients 1.00 |
+| kids-sweet-potato-wedges-with-yoghurt-dip (batch-04-C51) | Kids' Sweet Potato Wedges with Yoghurt Dip | sweet-potato-wedges-with-yoghurt-dip (batch-04-B32) | Sweet Potato Wedges with Yoghurt Dip | near-title 0.83 |
 
 ## Run 2026-10-17 09:44
 
