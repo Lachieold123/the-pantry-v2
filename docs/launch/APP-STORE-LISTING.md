@@ -1,13 +1,13 @@
 # The Pantry: App Store listing
 
-**Drafted 7 October 2026** by Claude for P11, from the code as it stands (D-038 to D-044). Character counts were measured with Python (`len()`, which counts the way App Store Connect does for these fields).
+**Drafted 7 October 2026** by Claude for P11, from the code as it stands (D-038 to D-043, D-051). Character counts were measured with Python (`len()`, which counts the way App Store Connect does for these fields).
 
 This replaces `app-store-listing.md` (5 October). That file was written before Household, Accounts and Pro, and it says "no account" and "no server", which is no longer true. Keep it only for its App Review notes, and update those as `README.md` describes.
 
 > **Before you paste:** the description only claims what works today. Three things are built but need your dashboard steps before they work for real users, so check each one first:
 > 1. **Household** needs Supabase's anonymous sign-ins switched on, then the two-phone test (`docs/HOUSEHOLD.md` › Needs Lachlan). Until then, use the description **without** the SHARE THE KITCHEN block, and skip screenshot 8.
 > 2. **Sign in with Apple** needs the migration applied and the Apple provider set up (`docs/ACCOUNTS.md`). Until then, delete the last sentence of YOUR KITCHEN STAYS YOURS.
-> 3. **Pro isn't on sale** (RevenueCat is wired, D-045, but Apple returns no products until App Store Connect is finished), so nothing in the app is limited. The listing doesn't mention Pro or prices. When purchases go live, add the block in "When Pro goes on sale" below and list the in-app purchases.
+> 3. **Pro isn't on sale** (RevenueCat is wired, D-052, but Apple returns no products until App Store Connect is finished), so nothing in the app is limited. The listing doesn't mention Pro or prices. When purchases go live, add the block in "When Pro goes on sale" below and list the in-app purchases.
 
 ## Name and subtitle
 
@@ -101,7 +101,7 @@ The same text without the SHARE THE KITCHEN block.
 | --- | --- |
 | 270+ recipes | 273 `reviewed` recipes ship (D-036). The 12 `ai-draft` ones are hidden in store builds |
 | Dishes one or two things short, with what they need | Home's ranking and `MatchCard` ("Need 1: …") |
-| Every card says why it's there | D-044: each card's reason line comes from what scored |
+| Every card says why it's there | D-051: each card's reason line comes from what scored |
 | Breakfast, lunch and dinner, with servings | Plan's three slots and the servings pill |
 | Sunday reminder | `setSundayReminder`: a local notification at 4pm Sunday |
 | The list merges, sorts by aisle and leaves off the cupboard | `src/domain/shopping` |
