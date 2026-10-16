@@ -1,0 +1,1237 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "korean-spring-onion-and-sesame-pesto",
+      "title": "Korean Spring Onion and Sesame Pesto",
+      "summary": "A punchy no-cook paste of spring onion, toasted sesame and soy, spooned over rice, eggs or noodles.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 bunch spring onions, roughly chopped",
+            "1/4 cup toasted sesame seeds",
+            "3 tbsp soy sauce",
+            "2 tbsp sesame oil",
+            "2 tbsp rice vinegar",
+            "1 clove garlic",
+            "1/4 cup vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Blitz the spring onions, sesame seeds and garlic in a food processor until a coarse paste forms.",
+        "Add the soy sauce, sesame oil, vinegar and vegetable oil and pulse until combined but still textured.",
+        "Spoon into a jar and serve over rice, noodles or fried eggs."
+      ],
+      "notes": [
+        "Keeps 5 days in the fridge.",
+        "Use tamari for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 104,
+        "proteinG": 1,
+        "carbsG": 2,
+        "fatG": 10,
+        "fibreG": 1,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "korean-soy-spring-onion-dressing",
+      "title": "Korean Soy Spring Onion Dressing",
+      "summary": "A thin, savoury-sweet dressing for cold noodles, tofu and steamed greens.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1/4 cup soy sauce",
+            "2 tbsp rice vinegar",
+            "1 tbsp sesame oil",
+            "1 tbsp honey",
+            "2 spring onions, thinly sliced",
+            "1 clove garlic, grated",
+            "1 tsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the soy sauce, vinegar, sesame oil and honey together until the honey dissolves.",
+        "Stir in the spring onions, garlic and sesame seeds.",
+        "Spoon over noodles, tofu or greens just before serving."
+      ],
+      "notes": [
+        "Keeps 1 week in the fridge.",
+        "Use tamari for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 81,
+        "proteinG": 1,
+        "carbsG": 8,
+        "fatG": 5,
+        "fibreG": 0,
+        "sodiumMg": 840
+      }
+    },
+    {
+      "id": "cold-beetroot-soup-hlodnik",
+      "title": "Cold Beetroot Soup Hlodnik",
+      "summary": "A bright pink Lithuanian-style chilled soup of beetroot, yoghurt, cucumber and dill, served with a hot potato.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500 g beetroot, peeled and grated",
+            "2 cups plain yoghurt",
+            "2 cups cold water",
+            "1 cucumber, diced",
+            "4 radishes, sliced",
+            "1/2 cup chopped dill",
+            "4 spring onions, sliced",
+            "2 hard-boiled eggs, quartered",
+            "1 tbsp lemon juice",
+            "1/2 tsp salt",
+            "4 small potatoes"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the grated beetroot in 1 cup water for 15 minutes until tender, then cool completely in the fridge.",
+        "Boil the potatoes in salted water for 20 minutes until a knife slides in easily.",
+        "Stir the beetroot and its liquid into the yoghurt with the lemon juice and salt until the soup turns bright pink.",
+        "Fold in the cucumber, radishes, dill and spring onions and chill until very cold.",
+        "Ladle into bowls, top with egg quarters and serve a hot potato alongside."
+      ],
+      "notes": [
+        "Food safety: chill the soup within 2 hours of cooking, keep it at 5°C or below and eat within 2 days.",
+        "Use thick plant yoghurt thinned with water for dairy-free."
+      ],
+      "nutrition": {
+        "kcal": 328,
+        "proteinG": 15,
+        "carbsG": 42,
+        "fatG": 10,
+        "fibreG": 5,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "tomato-and-watermelon-gazpacho",
+      "title": "Tomato and Watermelon Gazpacho",
+      "summary": "A cold, no-cook soup of ripe tomato, sweet watermelon and cucumber with a little sherry vinegar.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600 g ripe tomatoes, chopped",
+            "2 cups diced watermelon",
+            "1 cucumber, peeled and chopped",
+            "1/2 red capsicum, chopped",
+            "1 clove garlic",
+            "3 tbsp olive oil",
+            "1 tbsp red wine vinegar",
+            "1/2 tsp salt",
+            "1/4 cup mint leaves"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the tomatoes, watermelon, cucumber, capsicum and garlic until completely smooth.",
+        "Blend in the olive oil, vinegar and salt until the soup is silky.",
+        "Chill for at least 1 hour, taste and adjust the seasoning.",
+        "Pour into bowls and scatter with torn mint."
+      ],
+      "notes": [
+        "Best made the day before.",
+        "Keeps 2 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 163,
+        "proteinG": 2,
+        "carbsG": 17,
+        "fatG": 9,
+        "fibreG": 3,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "maple-glazed-roasted-carrots-with-thyme",
+      "title": "Maple Glazed Roasted Carrots with Thyme",
+      "summary": "Whole carrots roasted until caramelised, brushed with maple and thyme.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700 g carrots, halved lengthways",
+            "2 tbsp olive oil",
+            "2 tbsp maple syrup",
+            "1 tbsp butter",
+            "6 sprigs thyme",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the carrots with the oil and salt on a large tray until evenly coated.",
+        "Roast at 220°C for 25 minutes until tender and browned at the edges.",
+        "Stir the maple syrup and butter into the hot tray with the thyme and roast for 8 minutes until the carrots turn glossy and sticky, then serve hot."
+      ],
+      "notes": [
+        "Use olive oil instead of butter for vegan."
+      ],
+      "nutrition": {
+        "kcal": 192,
+        "proteinG": 2,
+        "carbsG": 25,
+        "fatG": 8,
+        "fibreG": 6,
+        "sodiumMg": 350
+      }
+    },
+    {
+      "id": "honey-roasted-sweet-potato-wedges",
+      "title": "Honey Roasted Sweet Potato Wedges",
+      "summary": "Crisp-edged sweet potato wedges roasted with paprika and a final honey drizzle.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "900 g sweet potato, cut into wedges",
+            "3 tbsp olive oil",
+            "1 tsp smoked paprika",
+            "1/2 tsp salt",
+            "2 tbsp honey",
+            "1 tbsp lemon juice",
+            "2 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the wedges with the oil, paprika and salt on a large tray in a single layer.",
+        "Roast at 220°C for 30 minutes, turning once, until deep golden and tender inside.",
+        "Drizzle with the honey and lemon juice and roast for 5 minutes until sticky.",
+        "Scatter with parsley and serve."
+      ],
+      "notes": [
+        "Use maple syrup for vegan."
+      ],
+      "nutrition": {
+        "kcal": 297,
+        "proteinG": 3,
+        "carbsG": 48,
+        "fatG": 9,
+        "fibreG": 6,
+        "sodiumMg": 340
+      }
+    },
+    {
+      "id": "creamed-leeks-with-nutmeg",
+      "title": "Creamed Leeks with Nutmeg",
+      "summary": "Soft leeks in a light cream sauce, a quiet side for roast chicken or fish.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 leeks, white and pale green parts, sliced",
+            "1 tbsp butter",
+            "1 tbsp olive oil",
+            "1/2 cup cream",
+            "1/3 cup vegetable stock",
+            "1/4 tsp nutmeg",
+            "1/2 tsp salt",
+            "1 tbsp chopped chives"
+          ]
+        }
+      ],
+      "steps": [
+        "Melt the butter with the oil in a wide pan and cook the leeks over medium heat for 8 minutes until soft.",
+        "Add the stock, cover and cook for 5 minutes until the leeks are tender.",
+        "Stir in the cream, nutmeg and salt and simmer uncovered for 5 minutes until lightly thickened.",
+        "Scatter with chives and serve."
+      ],
+      "notes": [
+        "Wash the sliced leeks well in a bowl of cold water to remove grit."
+      ],
+      "nutrition": {
+        "kcal": 193,
+        "proteinG": 3,
+        "carbsG": 10,
+        "fatG": 15,
+        "fibreG": 3,
+        "sodiumMg": 360
+      }
+    },
+    {
+      "id": "barley-salad-with-sultanas-and-pecans",
+      "title": "Barley Salad with Sultanas and Pecans",
+      "summary": "Chewy pearl barley with dried sultanas, toasted pecans, celery and an apple cider dressing.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup pearl barley",
+            "1/2 cup sultanas",
+            "1/2 cup pecans, toasted",
+            "2 celery stalks, diced",
+            "4 spring onions, sliced",
+            "1/4 cup chopped parsley",
+            "3 tbsp olive oil",
+            "2 tbsp apple cider vinegar",
+            "1 tsp Dijon mustard",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the barley in plenty of water for 30 minutes until tender, then drain and cool for 10 minutes.",
+        "Whisk the oil, vinegar, mustard and salt together.",
+        "Toss the barley with the dressing, sultanas, pecans, celery, spring onions and parsley until evenly coated, then serve warm or cold."
+      ],
+      "notes": [
+        "Keeps 3 days in the fridge.",
+        "Not suitable for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 398,
+        "proteinG": 7,
+        "carbsG": 52,
+        "fatG": 16,
+        "fibreG": 9,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "brown-rice-salad-with-mango-and-cashews",
+      "title": "Brown Rice Salad with Mango and Cashews",
+      "summary": "Nutty brown rice tossed with ripe mango, cucumber, mint and toasted cashews in a lime dressing.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup brown rice",
+            "1 mango, diced",
+            "1 cucumber, diced",
+            "1/2 cup cashews, toasted",
+            "1/4 cup mint leaves",
+            "4 spring onions, sliced",
+            "3 tbsp lime juice",
+            "2 tbsp olive oil",
+            "1 tbsp soy sauce"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the rice in plenty of water for 28 minutes until tender, then drain and spread out to cool.",
+        "Whisk the lime juice, oil and soy sauce together.",
+        "Toss the cooled rice with the mango, cucumber, cashews, mint, spring onions and dressing until combined."
+      ],
+      "notes": [
+        "Food safety: cool the cooked rice and refrigerate within 1 hour, and eat within 1 day.",
+        "Use tamari for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 401,
+        "proteinG": 8,
+        "carbsG": 56,
+        "fatG": 15,
+        "fibreG": 5,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "quinoa-salad-with-roasted-corn-and-black-beans",
+      "title": "Quinoa Salad with Roasted Corn and Black Beans",
+      "summary": "Fluffy quinoa with charred corn, black beans, tomato and coriander in a cumin-lime dressing.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup quinoa",
+            "2 corn cobs",
+            "1 can black beans, drained",
+            "200 g cherry tomatoes, halved",
+            "1/2 cup chopped coriander",
+            "4 spring onions, sliced",
+            "3 tbsp lime juice",
+            "3 tbsp olive oil",
+            "1 tsp ground cumin",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the quinoa in 2 cups water for 15 minutes until the water is absorbed and the grains are tender, then fluff and cool.",
+        "Char the corn cobs in a hot dry pan for 10 minutes, turning, until browned in spots, then slice off the kernels.",
+        "Whisk the lime juice, oil, cumin and salt together.",
+        "Toss the quinoa with the corn, beans, tomatoes, coriander, spring onions and dressing until combined."
+      ],
+      "notes": [
+        "Keeps 3 days in the fridge.",
+        "Food safety: cool and refrigerate the cooked quinoa within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 381,
+        "proteinG": 11,
+        "carbsG": 50,
+        "fatG": 13,
+        "fibreG": 10,
+        "sodiumMg": 420
+      }
+    },
+    {
+      "id": "pearl-couscous-salad-with-preserved-lemon",
+      "title": "Pearl Couscous Salad with Preserved Lemon",
+      "summary": "Toasted pearl couscous with preserved lemon, chickpeas, olives and herbs.",
+      "cuisine": "north-african",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 1/2 cups pearl couscous",
+            "1 can chickpeas, drained",
+            "1/4 preserved lemon, rind finely chopped",
+            "1/3 cup green olives, sliced",
+            "1/2 cup chopped parsley",
+            "1/4 cup chopped mint",
+            "3 tbsp olive oil",
+            "2 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the couscous in a dry pan for 3 minutes until lightly golden.",
+        "Boil in salted water for 8 minutes until tender, then drain and cool for 10 minutes.",
+        "Toss with the chickpeas, preserved lemon, olives, parsley, mint, oil and lemon juice until combined."
+      ],
+      "notes": [
+        "Rinse the preserved lemon rind before chopping to cut the salt.",
+        "Not suitable for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 419,
+        "proteinG": 12,
+        "carbsG": 60,
+        "fatG": 13,
+        "fibreG": 7,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "black-rice-salad-with-edamame-and-ginger",
+      "title": "Black Rice Salad with Edamame and Ginger",
+      "summary": "Chewy black rice with edamame, carrot and spring onion in a ginger-soy dressing.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup black rice",
+            "1 cup frozen edamame",
+            "1 carrot, grated",
+            "4 spring onions, sliced",
+            "2 tbsp soy sauce",
+            "2 tbsp rice vinegar",
+            "1 tbsp sesame oil",
+            "2 cm ginger, grated",
+            "1 tbsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the black rice in plenty of water for 35 minutes until tender, adding the edamame for the last 4 minutes, then drain and cool.",
+        "Whisk the soy sauce, vinegar, sesame oil and ginger together.",
+        "Toss the rice and edamame with the carrot, spring onions and dressing until combined.",
+        "Scatter with sesame seeds."
+      ],
+      "notes": [
+        "Food safety: cool and refrigerate the cooked rice within 1 hour, and eat within 1 day.",
+        "Use tamari for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 316,
+        "proteinG": 10,
+        "carbsG": 48,
+        "fatG": 8,
+        "fibreG": 6,
+        "sodiumMg": 500
+      }
+    },
+    {
+      "id": "polish-krupnik-barley-soup",
+      "title": "Polish Krupnik Barley Soup",
+      "summary": "A thick, homely soup of pearl barley, root vegetables and chicken stock with dill.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 50,
+      "servings": 3,
+      "onePot": true,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "2/3 cup pearl barley",
+            "2 carrots, diced",
+            "2 potatoes, diced",
+            "1 onion, diced",
+            "2 celery stalks, diced",
+            "1 tbsp butter",
+            "6 cups chicken stock",
+            "2 bay leaves",
+            "1/4 cup chopped dill",
+            "1/2 tsp salt",
+            "2 tbsp sour cream"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion, carrots and celery in the butter in a large pot for 8 minutes until softened.",
+        "Add the barley, stock and bay leaves and simmer for 25 minutes until the barley is nearly tender.",
+        "Add the potatoes and simmer for 15 minutes until soft.",
+        "Stir in the salt and dill, remove the bay leaves and ladle into bowls with a spoonful of sour cream."
+      ],
+      "notes": [
+        "Thickens on standing, so loosen with water when reheating.",
+        "Use vegetable stock for vegetarian.",
+        "Not suitable for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 191,
+        "proteinG": 6,
+        "carbsG": 28,
+        "fatG": 5,
+        "fibreG": 5,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "russian-solyanka-sour-meat-soup",
+      "title": "Russian Solyanka Sour Meat Soup",
+      "summary": "A tangy, smoky soup of sausage, ham, pickles and olives, finished with lemon and dill.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 6,
+      "onePot": true,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "200 g smoked sausage, sliced",
+            "200 g ham, diced",
+            "1 onion, diced",
+            "3 dill pickles, diced",
+            "2 tbsp tomato paste",
+            "1 tbsp olive oil",
+            "6 cups beef stock",
+            "1/3 cup green olives, sliced",
+            "2 tbsp capers",
+            "1 lemon, sliced",
+            "1/4 cup chopped dill",
+            "2 tbsp sour cream"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion in the oil in a large pot for 6 minutes until soft.",
+        "Add the sausage and ham and cook for 5 minutes until lightly browned, then stir in the tomato paste for 1 minute.",
+        "Pour in the stock and diced pickles and simmer for 25 minutes until the flavours are well blended.",
+        "Stir in the olives and capers and simmer for 5 minutes until hot.",
+        "Serve with lemon slices, dill and a spoonful of sour cream."
+      ],
+      "notes": [
+        "Food safety: cool leftovers within 2 hours, refrigerate and reheat until steaming hot at 75°C or above.",
+        "Salty, so skip extra salt."
+      ],
+      "nutrition": {
+        "kcal": 213,
+        "proteinG": 14,
+        "carbsG": 9,
+        "fatG": 13,
+        "fibreG": 2,
+        "sodiumMg": 1380
+      }
+    },
+    {
+      "id": "serbian-sopska-salad",
+      "title": "Serbian Sopska Salad",
+      "summary": "Chopped tomato, cucumber and roasted capsicum under a snow of grated white cheese.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 ripe tomatoes, chopped",
+            "2 cucumbers, chopped",
+            "1 capsicum, chopped",
+            "1 small red onion, sliced",
+            "3 tbsp sunflower oil",
+            "1 tbsp white wine vinegar",
+            "1/2 tsp salt",
+            "150 g feta, grated",
+            "2 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the tomatoes, cucumbers, capsicum and onion with the oil, vinegar and salt until glossy.",
+        "Pile onto a platter and cover generously with grated feta.",
+        "Scatter with parsley and serve at once."
+      ],
+      "notes": [
+        "Traditionally made with sirene, a white brined cheese; feta is a close match."
+      ],
+      "nutrition": {
+        "kcal": 239,
+        "proteinG": 8,
+        "carbsG": 12,
+        "fatG": 17,
+        "fibreG": 3,
+        "sodiumMg": 720
+      }
+    },
+    {
+      "id": "bosnian-begova-chicken-and-okra-soup",
+      "title": "Bosnian Begova Chicken and Okra Soup",
+      "summary": "A creamy chicken and okra soup thickened with a butter and flour roux and finished with lemon.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 50,
+      "servings": 6,
+      "onePot": true,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "600 g chicken thigh fillets",
+            "200 g okra, sliced",
+            "2 carrots, diced",
+            "1 onion, diced",
+            "3 tbsp butter",
+            "3 tbsp plain flour",
+            "6 cups water",
+            "2 egg yolks",
+            "1/3 cup cream",
+            "1 tbsp lemon juice",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the chicken, carrots and onion in the water for 30 minutes until the chicken is cooked through, then lift out the chicken and shred it.",
+        "Add the okra to the broth and simmer for 10 minutes until tender.",
+        "Melt the butter, stir in the flour for 2 minutes until pale, then whisk in 1 cup of the hot broth until smooth and stir the mixture back into the pot.",
+        "Whisk the egg yolks, cream and lemon juice in a bowl, whisk in a ladle of hot soup, then stir it into the pot off the heat until the soup turns glossy.",
+        "Return the chicken, season with the salt and serve."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until the juices run clear and it reaches 75°C, and do not boil after adding the yolks; refrigerate leftovers within 2 hours.",
+        "Not suitable for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 304,
+        "proteinG": 22,
+        "carbsG": 12,
+        "fatG": 18,
+        "fibreG": 3,
+        "sodiumMg": 720
+      }
+    },
+    {
+      "id": "croatian-manestra-bean-and-corn-soup",
+      "title": "Croatian Manestra Bean and Corn Soup",
+      "summary": "A rustic Istrian soup of borlotti beans, corn and potato simmered with a little smoked bacon.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cans borlotti beans, drained",
+            "1 cup corn kernels",
+            "2 potatoes, diced",
+            "100 g smoked bacon, diced",
+            "1 onion, diced",
+            "2 cloves garlic, sliced",
+            "2 tbsp olive oil",
+            "5 cups water",
+            "1 tbsp tomato paste",
+            "1/2 tsp salt",
+            "1/4 cup chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the bacon in the oil in a large pot for 5 minutes until it turns golden, then add the onion and garlic and cook for 5 minutes until soft.",
+        "Stir in the tomato paste, then add the beans, corn, potatoes, water and salt.",
+        "Simmer for 25 minutes until the potatoes are tender and the soup thickens.",
+        "Mash a few beans against the side of the pot, scatter with parsley and serve."
+      ],
+      "notes": [
+        "Leave out the bacon for vegetarian and use smoked paprika instead.",
+        "Food safety: refrigerate leftovers within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 306,
+        "proteinG": 13,
+        "carbsG": 36,
+        "fatG": 10,
+        "fibreG": 10,
+        "sodiumMg": 720
+      }
+    },
+    {
+      "id": "hungarian-gulyasleves-beef-soup",
+      "title": "Hungarian Gulyasleves Beef Soup",
+      "summary": "The soup cousin of goulash: beef, potato and carrot in a paprika broth.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 90,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600 g beef chuck, diced",
+            "2 onions, diced",
+            "2 carrots, diced",
+            "3 potatoes, diced",
+            "1 capsicum, diced",
+            "2 tbsp sweet paprika",
+            "2 tbsp olive oil",
+            "2 cloves garlic, crushed",
+            "1 tbsp tomato paste",
+            "6 cups water",
+            "1 tsp caraway seeds",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the beef in the oil in a large pot over medium-high heat for 8 minutes until coloured, then lift out.",
+        "Cook the onions in the same pot for 8 minutes until soft, then stir in the garlic, paprika, tomato paste and caraway for 1 minute.",
+        "Return the beef, add the water and salt and simmer gently for 1 hour until the beef is tender.",
+        "Add the carrots, potatoes and capsicum and simmer for 20 minutes until the vegetables are soft."
+      ],
+      "notes": [
+        "Food safety: cool leftovers within 2 hours and reheat until steaming hot at 75°C or above.",
+        "Keep the heat low when adding paprika so it does not turn bitter."
+      ],
+      "nutrition": {
+        "kcal": 283,
+        "proteinG": 22,
+        "carbsG": 22,
+        "fatG": 11,
+        "fibreG": 4,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "latvian-sauerkraut-salad-with-caraway",
+      "title": "Latvian Sauerkraut Salad with Caraway",
+      "summary": "A crunchy sauerkraut and carrot salad with onion and caraway, a classic with roast pork and potatoes.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups sauerkraut, drained",
+            "2 carrots, grated",
+            "1 small onion, finely sliced",
+            "2 tbsp sunflower oil",
+            "1 tsp caraway seeds",
+            "1 tsp honey",
+            "2 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Squeeze the sauerkraut with your hands to remove excess brine.",
+        "Toss with the carrots, onion, oil, caraway seeds and honey until evenly coated.",
+        "Scatter with parsley and serve cold."
+      ],
+      "notes": [
+        "Rinse the sauerkraut briefly if you want it milder.",
+        "Keeps 4 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 121,
+        "proteinG": 2,
+        "carbsG": 10,
+        "fatG": 7,
+        "fibreG": 5,
+        "sodiumMg": 550
+      }
+    },
+    {
+      "id": "georgian-green-bean-salad-with-walnuts",
+      "title": "Georgian Green Bean Salad with Walnuts",
+      "summary": "Steamed green beans in a garlicky walnut and coriander dressing, a classic Georgian starter.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 8,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500 g green beans, trimmed",
+            "3/4 cup walnuts",
+            "2 cloves garlic",
+            "1/2 cup coriander leaves",
+            "2 tbsp red wine vinegar",
+            "1/2 tsp ground coriander",
+            "1/2 tsp salt",
+            "1/4 cup water",
+            "1/2 cup pomegranate seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Steam the beans for 6 minutes until just tender and bright green, then cool under cold water and drain.",
+        "Blitz the walnuts, garlic, coriander leaves, vinegar, ground coriander, salt and water to a thick paste.",
+        "Toss the beans in the paste until coated and scatter with pomegranate seeds."
+      ],
+      "notes": [
+        "Best served at room temperature.",
+        "Keeps 2 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 406,
+        "proteinG": 8,
+        "carbsG": 22,
+        "fatG": 30,
+        "fibreG": 8,
+        "sodiumMg": 310
+      }
+    },
+    {
+      "id": "georgian-ajika-chilli-paste",
+      "title": "Georgian Ajika Chilli Paste",
+      "summary": "A fiery red chilli and garlic paste with walnuts and dried herbs, used by the spoonful.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 red chillies, deseeded",
+            "6 cloves garlic",
+            "1/2 cup walnuts",
+            "1 tbsp ground coriander",
+            "1 tbsp dried fenugreek leaves",
+            "2 tbsp red wine vinegar",
+            "2 tbsp olive oil",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Blitz the chillies, garlic and walnuts until a coarse paste forms.",
+        "Add the coriander, fenugreek, vinegar, oil and salt and blitz until combined.",
+        "Pack into a jar and rest in the fridge before serving with grilled meat, bread or beans."
+      ],
+      "notes": [
+        "Wear gloves when handling the chillies.",
+        "Keeps 2 weeks in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 69,
+        "proteinG": 2,
+        "carbsG": 3,
+        "fatG": 5,
+        "fibreG": 2,
+        "sodiumMg": 200
+      }
+    },
+    {
+      "id": "bulgarian-kyopolou-eggplant-spread",
+      "title": "Bulgarian Kyopolou Eggplant Spread",
+      "summary": "Smoky charred eggplant blended with roasted capsicum, garlic and walnuts.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 large eggplants",
+            "2 red capsicums",
+            "2 cloves garlic",
+            "1/4 cup walnuts",
+            "3 tbsp olive oil",
+            "1 tbsp red wine vinegar",
+            "1/2 tsp salt",
+            "2 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the eggplants and capsicums at 230°C for 40 minutes, turning, until the skins blacken and the flesh collapses.",
+        "Peel the vegetables and drain the eggplant flesh for 5 minutes.",
+        "Mash the flesh with the garlic, walnuts, oil, vinegar and salt until chunky.",
+        "Spoon into a bowl and top with parsley."
+      ],
+      "notes": [
+        "Serve with bread or grilled meat.",
+        "Keeps 4 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 129,
+        "proteinG": 2,
+        "carbsG": 8,
+        "fatG": 9,
+        "fibreG": 4,
+        "sodiumMg": 200
+      }
+    },
+    {
+      "id": "hungarian-cucumber-salad-with-paprika",
+      "title": "Hungarian Cucumber Salad with Paprika",
+      "summary": "Paper-thin cucumber in a sweet-sour dressing with garlic, sour cream and a dusting of paprika.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 cucumbers, thinly sliced",
+            "1 tsp salt",
+            "2 tbsp white wine vinegar",
+            "1 tsp sugar",
+            "1 clove garlic, crushed",
+            "1/4 cup sour cream",
+            "1/2 tsp sweet paprika"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the cucumber slices with the salt and drain in a colander for 10 minutes, then squeeze out the water.",
+        "Whisk the vinegar, sugar, garlic and sour cream together until smooth.",
+        "Toss through the cucumber and dust with paprika."
+      ],
+      "notes": [
+        "Serve straight away so the cucumber stays crisp."
+      ],
+      "nutrition": {
+        "kcal": 80,
+        "proteinG": 2,
+        "carbsG": 8,
+        "fatG": 4,
+        "fibreG": 2,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "russian-vinegret-beetroot-salad",
+      "title": "Russian Vinegret Beetroot Salad",
+      "summary": "A ruby salad of diced beetroot, potato, carrot and pickles in sunflower oil.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 beetroot",
+            "2 potatoes",
+            "2 carrots",
+            "2 dill pickles, diced",
+            "1 cup sauerkraut, drained",
+            "1 small onion, finely diced",
+            "3 tbsp sunflower oil",
+            "1/4 cup chopped dill",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the beetroot, potatoes and carrots in their skins for 35 minutes until a knife slides in easily, then cool and peel.",
+        "Dice everything into 1 cm cubes.",
+        "Toss with the pickles, sauerkraut, onion, oil and salt, stirring the beetroot in last so the colour does not bleed.",
+        "Chill and scatter with dill."
+      ],
+      "notes": [
+        "Keeps 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 156,
+        "proteinG": 3,
+        "carbsG": 20,
+        "fatG": 6,
+        "fibreG": 5,
+        "sodiumMg": 480
+      }
+    }
+  ]
+}
