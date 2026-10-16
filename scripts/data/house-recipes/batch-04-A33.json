@@ -1,0 +1,1175 @@
+{
+ "about": "Batch 04, slice A, chunk A33: lunches (vegan and vegetarian sandwiches and wraps, pies and pastries, filled flatbreads, budget bowls, egg lunches, meal-prep).",
+ "recipes": [
+  {
+   "id": "chickpea-smash-sandwich-vegan",
+   "title": "Chickpea Smash Sandwich (Vegan)",
+   "summary": "Mashed chickpeas with lemon, mustard and herbs piled into toasted bread with crisp lettuce and tomato.",
+   "cuisine": "american",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 3,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g canned chickpeas, drained",
+      "2 tbsp tahini",
+      "1 tbsp lemon juice",
+      "1 tsp dijon mustard",
+      "2 tbsp parsley, chopped",
+      "1 spring onion, sliced",
+      "4 slices wholemeal bread",
+      "2 tomato, sliced",
+      "4 lettuce leaves"
+     ]
+    }
+   ],
+   "steps": [
+    "Mash the chickpeas roughly with the tahini, lemon juice, mustard, parsley, spring onion and salt until chunky but holding together.",
+    "Toast the bread until golden.",
+    "Pile the chickpea mix onto 2 slices and top with tomato and lettuce.",
+    "Top with the other 2 slices and halve."
+   ],
+   "notes": [
+    "Filling keeps 3 days in the fridge; assemble just before eating.",
+    "Contains gluten, sesame and mustard."
+   ],
+   "nutrition": {
+    "kcal": 450,
+    "proteinG": 20,
+    "carbsG": 58,
+    "fatG": 15,
+    "fibreG": 15,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "tofu-scramble-wrap-vegan",
+   "title": "Tofu Scramble Wrap (Vegan)",
+   "summary": "Turmeric and black salt style tofu scramble with capsicum and spinach in a warm tortilla.",
+   "cuisine": "american",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g firm tofu, crumbled",
+      "1 tbsp olive oil",
+      "1 red capsicum, diced",
+      "1/2 tsp ground turmeric",
+      "1/2 tsp ground cumin",
+      "60g baby spinach",
+      "2 tbsp nutritional yeast",
+      "2 flour tortilla",
+      "1 avocado, sliced",
+      "1 tbsp soy sauce"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the capsicum in the oil for 3 minutes, then add the tofu, turmeric, cumin and soy sauce.",
+    "Cook for 6 minutes, stirring, until the tofu is dry and golden at the edges.",
+    "Stir in the spinach and nutritional yeast until the leaves wilt.",
+    "Warm the tortillas, fill with the scramble and avocado and roll."
+   ],
+   "notes": [
+    "Eat within 2 days; keep the avocado separate.",
+    "Contains gluten and soy."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 28,
+    "carbsG": 46,
+    "fatG": 30,
+    "fibreG": 9,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "cottage-cheese-egg-wraps-high-protein",
+   "title": "Cottage Cheese Egg Wraps (High-Protein)",
+   "summary": "A thin egg and cottage cheese wrap with ham, spinach and mustard for a quick high-protein lunch.",
+   "cuisine": "american",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 eggs",
+      "1/2 cup cottage cheese",
+      "1 tsp olive oil",
+      "4 slices lean ham",
+      "40g baby spinach",
+      "1 tsp dijon mustard",
+      "1 tomato, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Blend the eggs and cottage cheese smooth with a pinch of salt.",
+    "Cook half the mixture in the oil in a non-stick pan over medium heat for 3 minutes until set, flip for 30 seconds, and repeat.",
+    "Spread each wrap with mustard and fill with ham, spinach and tomato.",
+    "Roll up tightly, tucking in the ends so the filling stays put, and halve to serve."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites and yolks are fully set. For packed lunches chill within 1 hour, keep below 5C and eat within 24 hours.",
+    "Contains egg and milk."
+   ],
+   "nutrition": {
+    "kcal": 310,
+    "proteinG": 32,
+    "carbsG": 6,
+    "fatG": 17,
+    "fibreG": 1,
+    "sodiumMg": 900
+   }
+  },
+  {
+   "id": "spinach-and-ricotta-hand-pies",
+   "title": "Spinach and Ricotta Hand Pies",
+   "summary": "Golden puff pastry parcels filled with spinach, ricotta, lemon and nutmeg.",
+   "cuisine": "british",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 22,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 sheet puff pastry",
+      "250g frozen spinach, thawed and squeezed dry",
+      "250g ricotta",
+      "1 egg",
+      "1 lemon, zested",
+      "1/4 tsp ground nutmeg",
+      "1 spring onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200C and cut each pastry sheet into 4 squares.",
+    "Mix the spinach, ricotta, half the egg, lemon zest, nutmeg, spring onion and salt.",
+    "Spoon onto half of each square, fold over and crimp the edges, then brush with the remaining beaten egg.",
+    "Bake for 20 to 22 minutes until deep golden and puffed."
+   ],
+   "notes": [
+    "Food safety: bake until the filling is steaming hot in the centre. For packed lunches chill within 1 hour, keep below 5C and eat within 24 hours.",
+    "Contains gluten, egg and milk. Check the pastry label for vegetarian suitability."
+   ],
+   "nutrition": {
+    "kcal": 430,
+    "proteinG": 13,
+    "carbsG": 32,
+    "fatG": 28,
+    "fibreG": 3,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "potato-and-pea-samosa-pasties",
+   "title": "Potato and Pea Samosa Pasties",
+   "summary": "Baked pasty parcels of curried potato and peas in puff pastry.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 sheet puff pastry",
+      "400g potato, peeled and diced",
+      "100g peas",
+      "1 tbsp vegetable oil",
+      "1 onion, diced",
+      "2 tsp garam masala",
+      "1 tsp ground cumin",
+      "1 tbsp lemon juice",
+      "1 egg"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the potato for 10 minutes until just tender and drain.",
+    "Soften the onion in the oil for 5 minutes, add the garam masala and cumin, then fold in the potato, peas and lemon juice and mash lightly.",
+    "Cut the pastry into 4 large rounds, fill with the mixture, fold, crimp and brush with beaten egg.",
+    "Bake at 200C for 25 minutes until golden."
+   ],
+   "notes": [
+    "Keeps 3 days in the fridge; reheat until steaming hot.",
+    "Contains gluten and egg. Check the pastry label for vegetarian suitability."
+   ],
+   "nutrition": {
+    "kcal": 460,
+    "proteinG": 10,
+    "carbsG": 56,
+    "fatG": 22,
+    "fibreG": 6,
+    "sodiumMg": 470
+   }
+  },
+  {
+   "id": "empanadas-de-queso-argentine-cheese-empanadas",
+   "title": "Empanadas de Queso (Argentine Cheese Empanadas)",
+   "summary": "Baked half-moon pastries of melted mozzarella and a little onion, crisp outside and oozy inside.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 sheet puff pastry",
+      "250g mozzarella, grated",
+      "1/2 onion, finely diced",
+      "1 spring onion, sliced",
+      "1 tsp dried oregano",
+      "1 egg"
+     ]
+    }
+   ],
+   "steps": [
+    "Cut the pastry into 8 rounds about 12cm across.",
+    "Mix the mozzarella, onion, spring onion and oregano and spoon onto each round.",
+    "Fold over, press and crimp the edges, then brush with the beaten egg.",
+    "Bake at 200C for 18 to 20 minutes until golden and the cheese bubbles."
+   ],
+   "notes": [
+    "Best warm; reheat until steaming hot. Keeps 2 days in the fridge.",
+    "Contains gluten, egg and milk."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 22,
+    "carbsG": 46,
+    "fatG": 34,
+    "fibreG": 2,
+    "sodiumMg": 620
+   }
+  },
+  {
+   "id": "manakish-jibneh-lebanese-cheese-flatbread",
+   "title": "Manakish Jibneh (Lebanese Cheese Flatbread)",
+   "summary": "Soft baked flatbreads topped with melted mozzarella and a sprinkle of za'atar.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 55,
+   "cookMinutes": 12,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g plain flour",
+      "1 tsp dried yeast",
+      "1 tsp sugar",
+      "1 tsp salt",
+      "180ml warm water",
+      "2 tbsp olive oil",
+      "200g mozzarella, grated",
+      "1 tbsp za'atar",
+      "1 tomato, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the flour, yeast, sugar and salt, add the water and 1 tbsp oil and knead for 6 minutes into a smooth dough, then cover and leave 40 minutes until doubled.",
+    "Divide into 4, roll into 15cm discs and press dimples in with your fingers.",
+    "Top with mozzarella and bake at 230C for 10 to 12 minutes until bubbling and golden.",
+    "Brush with the remaining oil, scatter with za'atar and serve with tomato."
+   ],
+   "notes": [
+    "Eat the same day or reheat until steaming hot.",
+    "Contains gluten and milk."
+   ],
+   "nutrition": {
+    "kcal": 780,
+    "proteinG": 32,
+    "carbsG": 104,
+    "fatG": 26,
+    "fibreG": 6,
+    "sodiumMg": 1130
+   }
+  },
+  {
+   "id": "shakshuka-pita-pockets",
+   "title": "Shakshuka Pita Pockets",
+   "summary": "Spiced tomato and capsicum with soft-set eggs tucked into warm pita.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 18,
+   "servings": 2,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 tbsp olive oil",
+      "1 onion, diced",
+      "1 red capsicum, diced",
+      "2 cloves garlic, minced",
+      "1 tsp ground cumin",
+      "1 tsp paprika",
+      "400g canned chopped tomatoes",
+      "4 eggs",
+      "2 pita bread",
+      "2 tbsp parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Soften the onion and capsicum in the oil for 6 minutes, then add the garlic, cumin and paprika for 1 minute.",
+    "Add the tomatoes and simmer for 8 minutes until thick.",
+    "Crack in the eggs, cover and cook for 4 minutes until the whites are fully set and the yolks are firm.",
+    "Split the pitas, spoon in the shakshuka and scatter with parsley."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites and yolks are fully set. For packed lunches chill within 1 hour, keep below 5C and eat within 24 hours.",
+    "Contains gluten and egg."
+   ],
+   "nutrition": {
+    "kcal": 450,
+    "proteinG": 22,
+    "carbsG": 56,
+    "fatG": 16,
+    "fibreG": 7,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "egg-foo-young-chinese-omelette-with-prawns",
+   "title": "Egg Foo Young (Chinese Omelette with Prawns)",
+   "summary": "Fluffy omelettes of egg, beansprouts and prawns with a simple soy gravy, served with rice.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 eggs",
+      "150g cooked prawns",
+      "100g beansprouts",
+      "2 spring onion, sliced",
+      "1 tbsp vegetable oil",
+      "1 tbsp soy sauce",
+      "200ml vegetable stock",
+      "1 tsp cornflour",
+      "1/2 cup long-grain rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the rice with 1 cup water, covered, for 12 minutes until tender. Beat the eggs with the prawns, beansprouts, spring onion and a pinch of salt.",
+    "Cook two ladlefuls in the oil in a hot pan for 2 minutes each side until golden and set through.",
+    "Simmer the soy sauce, stock and cornflour mixed with a splash of water for 2 minutes until glossy.",
+    "Serve the omelettes over the rice with the gravy."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites and yolks are fully set. For packed lunches chill within 1 hour, keep below 5C and eat within 24 hours. Use pre-cooked prawns only if bought chilled and used by their date.",
+    "Contains egg, crustacean shellfish and soy."
+   ],
+   "nutrition": {
+    "kcal": 480,
+    "proteinG": 36,
+    "carbsG": 42,
+    "fatG": 20,
+    "fibreG": 3,
+    "sodiumMg": 1020
+   }
+  },
+  {
+   "id": "rice-and-bean-burritos-budget-lunch",
+   "title": "Rice and Bean Burritos (Budget Lunch)",
+   "summary": "Rice, black beans, corn and a little cheese rolled in flour tortillas, a filling lunch for a few dollars.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup long-grain rice",
+      "400g canned black beans, drained",
+      "1 cup corn kernels",
+      "1 tsp ground cumin",
+      "1 tsp smoked paprika",
+      "4 large flour tortilla",
+      "100g cheddar cheese, grated",
+      "2 tomato, diced",
+      "1 lime, juiced"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the rice with 2 cups water, covered, for 12 minutes until tender.",
+    "Warm the beans, corn, cumin and paprika for 5 minutes, mashing some beans.",
+    "Warm the tortillas and fill with rice, beans, cheese, tomato and lime juice.",
+    "Fold in the ends and roll tightly."
+   ],
+   "notes": [
+    "Wrap in foil to freeze for up to 2 months; reheat until steaming hot. Cheddar here is not suitable for vegetarians unless labelled vegetarian hard cheese.",
+    "Contains gluten and milk."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 21,
+    "carbsG": 92,
+    "fatG": 12,
+    "fibreG": 11,
+    "sodiumMg": 720
+   }
+  },
+  {
+   "id": "lentil-dal-rice-bowl-budget-lunch",
+   "title": "Lentil Dal Rice Bowl (Budget Lunch)",
+   "summary": "A thick red lentil dal with turmeric and cumin over rice, topped with yoghurt and coriander.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 tbsp vegetable oil",
+      "1 onion, diced",
+      "2 cloves garlic, minced",
+      "1 tbsp ginger, grated",
+      "2 tsp ground cumin",
+      "1 tsp ground turmeric",
+      "1.5 cups red lentils",
+      "4 cups water",
+      "1 cup long-grain rice",
+      "1/2 cup plain yoghurt",
+      "2 tbsp coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Soften the onion, garlic and ginger in the oil for 5 minutes, then stir in the cumin and turmeric.",
+    "Add the lentils and water and simmer for 20 minutes, stirring, until soft and thick.",
+    "Simmer the rice with 2 cups water, covered, for 12 minutes until tender.",
+    "Serve the dal on the rice with yoghurt and coriander."
+   ],
+   "notes": [
+    "Cool within 1 hour; keeps 3 days in the fridge and freezes well. Reheat until steaming hot.",
+    "Contains milk."
+   ],
+   "nutrition": {
+    "kcal": 520,
+    "proteinG": 24,
+    "carbsG": 92,
+    "fatG": 7,
+    "fibreG": 11,
+    "sodiumMg": 70
+   }
+  },
+  {
+   "id": "ploughman-s-sandwich-with-vegetarian-hard-cheese-and-pickle",
+   "title": "Ploughman's Sandwich (with Vegetarian Hard Cheese and Pickle)",
+   "summary": "Crusty bread with sharp vegetarian hard cheese, chutney, apple and lettuce.",
+   "cuisine": "british",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 0,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 slices crusty bread",
+      "30g butter",
+      "200g vegetarian hard cheese, sliced",
+      "3 tbsp fruit chutney",
+      "1 apple, thinly sliced",
+      "4 lettuce leaves",
+      "2 pickled onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Butter the bread and spread two slices with chutney.",
+    "Layer the cheese, apple, lettuce and pickled onion on top.",
+    "Close with the remaining slices, press down until the filling holds together and halve."
+   ],
+   "notes": [
+    "Eat the same day; if packed, keep chilled below 5C.",
+    "Contains gluten and milk."
+   ],
+   "nutrition": {
+    "kcal": 640,
+    "proteinG": 28,
+    "carbsG": 66,
+    "fatG": 30,
+    "fibreG": 5,
+    "sodiumMg": 1090
+   }
+  },
+  {
+   "id": "porchetta-panino-italian-roast-pork-roll",
+   "title": "Porchetta Panino (Italian Roast Pork Roll)",
+   "summary": "Herb-rubbed roast pork sliced into a crusty roll with salsa verde and rocket.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 60,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g pork shoulder",
+      "2 cloves garlic, minced",
+      "1 tbsp fennel seeds",
+      "1 tbsp rosemary, chopped",
+      "1 tbsp olive oil",
+      "4 crusty rolls",
+      "2 tbsp capers",
+      "1/2 cup parsley, chopped",
+      "2 tbsp olive oil",
+      "1 lemon, juiced",
+      "60g rocket"
+     ]
+    }
+   ],
+   "steps": [
+    "Rub the pork with the garlic, fennel, rosemary, oil and salt and roast at 180C for 1 hour until the middle reaches 70°C and it is tender; rest 10 minutes and slice.",
+    "Chop the capers and mix with the parsley, second portion of oil and lemon juice for salsa verde.",
+    "Split the rolls and layer the pork, salsa verde and rocket.",
+    "Close the rolls and press gently with the heel of your hand until the pork sits snugly, then halve."
+   ],
+   "notes": [
+    "Food safety: cook pork to 70°C in the thickest part until steaming hot and no longer pink in the middle (poultry and mince to 75°C, pork to 70°C). For packed lunches chill within 1 hour, keep below 5C or with an ice pack, and eat within 3 days from the fridge (reheat until steaming hot, once only). Slice and chill within 1 hour; eat within 3 days.",
+    "Contains gluten."
+   ],
+   "nutrition": {
+    "kcal": 640,
+    "proteinG": 38,
+    "carbsG": 48,
+    "fatG": 32,
+    "fibreG": 3,
+    "sodiumMg": 880
+   }
+  },
+  {
+   "id": "bauru-brazilian-roast-beef-and-cheese-sandwich",
+   "title": "Bauru (Brazilian Roast Beef and Cheese Sandwich)",
+   "summary": "Warm sliced roast beef with melted mozzarella, tomato and pickles in a split roll.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 8,
+   "servings": 2,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "300g roast beef, sliced",
+      "150g mozzarella, sliced",
+      "2 crusty rolls",
+      "1 tomato, sliced",
+      "4 pickles, sliced lengthways",
+      "1 tbsp butter",
+      "1 tsp dried oregano"
+     ]
+    }
+   ],
+   "steps": [
+    "Split the rolls and butter the cut sides.",
+    "Layer the beef, mozzarella, tomato and pickles and sprinkle with oregano.",
+    "Bake at 200C for 8 minutes until the cheese melts and the beef is steaming hot.",
+    "Close the rolls, press down gently and halve for serving while still hot."
+   ],
+   "notes": [
+    "Food safety: cook roast beef that was chilled promptly after cooking until steaming hot and no longer pink in the middle (poultry and mince to 75°C, pork to 70°C). For packed lunches chill within 1 hour, keep below 5C or with an ice pack, and eat within 3 days from the fridge (reheat until steaming hot, once only). The filling should be steaming hot before eating.",
+    "Contains gluten and milk."
+   ],
+   "nutrition": {
+    "kcal": 690,
+    "proteinG": 50,
+    "carbsG": 48,
+    "fatG": 32,
+    "fibreG": 3,
+    "sodiumMg": 1370
+   }
+  },
+  {
+   "id": "bun-cha-gio-bowl-vietnamese-spring-roll-noodle-bowl",
+   "title": "Bun Cha Gio Bowl (Vietnamese Spring Roll Noodle Bowl)",
+   "summary": "Crisp baked pork spring rolls over vermicelli with herbs, cucumber and nuoc cham.",
+   "cuisine": "vietnamese",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 20,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "200g pork mince",
+      "1 carrot, grated",
+      "2 spring onion, sliced",
+      "1 clove garlic, minced",
+      "6 spring roll wrapper",
+      "1 tbsp vegetable oil",
+      "150g rice vermicelli",
+      "1/2 cucumber, sliced",
+      "1/4 cup mint leaves",
+      "3 tbsp fish sauce",
+      "3 tbsp lime juice",
+      "1 tbsp sugar",
+      "1 red chilli, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the pork, carrot, spring onion, garlic and a pinch of salt, roll in the wrappers and brush with oil.",
+    "Bake at 200C for 20 minutes, turning once, until golden and cooked through (75°C).",
+    "Soak the vermicelli in boiling water for 4 minutes, then drain and rinse.",
+    "Stir the fish sauce, lime juice, sugar and chilli with 3 tbsp water and serve over the noodles, cucumber, mint and rolls."
+   ],
+   "notes": [
+    "Food safety: cook pork mince rolls to 75°C in the centre until steaming hot and no longer pink in the middle (poultry and mince to 75°C, pork to 70°C). For packed lunches chill within 1 hour, keep below 5C or with an ice pack, and eat within 3 days from the fridge (reheat until steaming hot, once only). Eat the same day; if packed, keep sauce separate.",
+    "Contains gluten, fish and sugar."
+   ],
+   "nutrition": {
+    "kcal": 640,
+    "proteinG": 28,
+    "carbsG": 80,
+    "fatG": 20,
+    "fibreG": 5,
+    "sodiumMg": 1760
+   }
+  },
+  {
+   "id": "turkey-and-vegetable-rice-bowls",
+   "title": "Turkey and Vegetable Rice Bowls",
+   "summary": "Lean turkey mince stir-fried with carrot, zucchini and ginger over rice, a high-protein prep lunch.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g turkey mince",
+      "1 tbsp vegetable oil",
+      "2 carrot, diced",
+      "2 zucchini, diced",
+      "1 tbsp ginger, grated",
+      "2 cloves garlic, minced",
+      "3 tbsp soy sauce",
+      "1 tbsp sesame oil",
+      "1.5 cups long-grain rice",
+      "2 spring onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the rice with 3 cups water, covered, for 12 minutes until tender.",
+    "Brown the turkey in the oil for 8 minutes until cooked through (75°C), then add the carrot, zucchini, ginger and garlic for 4 minutes.",
+    "Stir in the soy sauce and sesame oil until the sauce coats the mince.",
+    "Divide into 4 boxes over the rice and top with spring onion."
+   ],
+   "notes": [
+    "Food safety: cook turkey mince to 75°C with no pink until steaming hot and no longer pink in the middle (poultry and mince to 75°C, pork to 70°C). For packed lunches chill within 1 hour, keep below 5C or with an ice pack, and eat within 3 days from the fridge (reheat until steaming hot, once only). Cool within 1 hour, keep below 5C and eat within 3 days; reheat until steaming hot.",
+    "Contains soy and sesame."
+   ],
+   "nutrition": {
+    "kcal": 500,
+    "proteinG": 36,
+    "carbsG": 58,
+    "fatG": 12,
+    "fibreG": 3,
+    "sodiumMg": 820
+   }
+  },
+  {
+   "id": "tofu-katsu-sando-vegan",
+   "title": "Tofu Katsu Sando (Vegan)",
+   "summary": "Panko-crumbed tofu with tangy sauce and cabbage in soft white bread.",
+   "cuisine": "japanese",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g firm tofu, sliced into 2 slabs",
+      "2 tbsp plain flour",
+      "4 tbsp soy milk",
+      "1/2 cup panko breadcrumbs",
+      "3 tbsp vegetable oil",
+      "4 slices soft white bread",
+      "2 tbsp tomato paste",
+      "100g cabbage, finely shredded",
+      "1 tbsp lemon juice"
+     ]
+    }
+   ],
+   "steps": [
+    "Press the tofu dry and season. Mix the flour with the soy milk into a thick batter.",
+    "Dip the tofu in the batter, then press into the panko.",
+    "Shallow-fry in the oil over medium-high heat for 3 minutes each side until crisp and golden.",
+    "Toss the cabbage with the lemon juice and a pinch of salt, spread the bread with the tomato paste mixed with a splash of soy sauce, fill and halve."
+   ],
+   "notes": [
+    "Eat the same day for best crunch.",
+    "Contains gluten and soy."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 24,
+    "carbsG": 64,
+    "fatG": 22,
+    "fibreG": 4,
+    "sodiumMg": 970
+   }
+  },
+  {
+   "id": "koshari-bowl-egyptian-lentil-rice-and-pasta",
+   "title": "Koshari Bowl (Egyptian Lentil, Rice and Pasta)",
+   "summary": "Layers of lentils, rice and macaroni with spiced tomato sauce and crisp onions.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup brown lentils",
+      "1 cup long-grain rice",
+      "1 cup macaroni",
+      "3 onion, thinly sliced",
+      "2 tbsp vegetable oil",
+      "2 cloves garlic, minced",
+      "400g canned chopped tomatoes",
+      "1 tsp ground cumin",
+      "2 tbsp white vinegar",
+      "400g canned chickpeas, drained"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the lentils in 3 cups water for 20 minutes until tender, adding the rice and 2 cups water for the last 12 minutes, and cook the macaroni separately until al dente.",
+    "Fry the onion in the oil for 15 minutes until deep golden and crisp.",
+    "Simmer the garlic, tomatoes, cumin and vinegar for 10 minutes until thick.",
+    "Layer the grains, chickpeas, sauce and onions into 4 bowls."
+   ],
+   "notes": [
+    "Keeps 3 days in the fridge; reheat until steaming hot.",
+    "Contains gluten."
+   ],
+   "nutrition": {
+    "kcal": 700,
+    "proteinG": 26,
+    "carbsG": 128,
+    "fatG": 10,
+    "fibreG": 19,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "pad-kra-pao-chicken-rice-bowl-with-fried-egg",
+   "title": "Pad Kra Pao Chicken Rice Bowl with Fried Egg",
+   "summary": "Chilli-basil chicken mince stir-fry over rice with a crisp-edged fried egg.",
+   "cuisine": "thai",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 12,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g chicken mince",
+      "1 tbsp vegetable oil",
+      "3 cloves garlic, minced",
+      "2 red chilli, sliced",
+      "2 tbsp soy sauce",
+      "1 tbsp oyster sauce",
+      "1 tsp sugar",
+      "1 cup thai basil leaves",
+      "2 eggs",
+      "3/4 cup jasmine rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the rice in 1.5 cups water, covered, for 12 minutes until tender. Fry the garlic and chilli in the oil for 30 seconds, then add the chicken and cook for 6 minutes until cooked through (75°C).",
+    "Add the soy sauce, oyster sauce and sugar and cook 1 minute, then stir in the basil until wilted.",
+    "Fry the eggs in a little oil until the whites are set and edges crisp.",
+    "Serve the chicken over the rice with an egg on top."
+   ],
+   "notes": [
+    "Food safety: cook chicken mince to 75°C until steaming hot and no longer pink in the middle (poultry and mince to 75°C, pork to 70°C). For packed lunches chill within 1 hour, keep below 5C or with an ice pack, and eat within 3 days from the fridge (reheat until steaming hot, once only). Cook the egg until the white is fully set; eat the same day.",
+    "Contains egg, soy, shellfish (oyster sauce) and gluten."
+   ],
+   "nutrition": {
+    "kcal": 620,
+    "proteinG": 40,
+    "carbsG": 60,
+    "fatG": 24,
+    "fibreG": 3,
+    "sodiumMg": 1150
+   }
+  },
+  {
+   "id": "stuffed-baked-sweet-potato-with-black-beans-vegan",
+   "title": "Stuffed Baked Sweet Potato with Black Beans (Vegan)",
+   "summary": "Baked sweet potatoes filled with spiced black beans, corn salsa and avocado.",
+   "cuisine": "american",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 50,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegan",
+    "vegetarian",
+    "no-dairy",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 sweet potato",
+      "400g canned black beans, drained",
+      "1 tsp ground cumin",
+      "1 tsp smoked paprika",
+      "1 cup corn kernels",
+      "1 tomato, diced",
+      "1 lime, juiced",
+      "1 avocado, sliced",
+      "2 tbsp coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Prick the sweet potatoes and bake at 200C for 45 to 50 minutes until soft when squeezed.",
+    "Warm the beans with the cumin and paprika for 5 minutes, mashing some.",
+    "Mix the corn, tomato, lime juice and coriander.",
+    "Split the potatoes, fill with the beans, salsa and avocado."
+   ],
+   "notes": [
+    "Keeps 3 days in the fridge without the avocado.",
+    "Check labels on canned goods for gluten."
+   ],
+   "nutrition": {
+    "kcal": 580,
+    "proteinG": 18,
+    "carbsG": 100,
+    "fatG": 12,
+    "fibreG": 26,
+    "sodiumMg": 430
+   }
+  },
+  {
+   "id": "bean-burger-with-avocado-vegan",
+   "title": "Bean Burger with Avocado (Vegan)",
+   "summary": "Smoky black bean and oat patties in a bun with avocado, tomato and lettuce.",
+   "cuisine": "american",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 12,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegan",
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g canned black beans, drained",
+      "1/2 cup rolled oats",
+      "1 tsp smoked paprika",
+      "1 tsp ground cumin",
+      "2 tbsp tomato paste",
+      "1 tbsp vegetable oil",
+      "2 burger buns",
+      "1 avocado, sliced",
+      "1 tomato, sliced",
+      "4 lettuce leaves"
+     ]
+    }
+   ],
+   "steps": [
+    "Mash the beans with the oats, paprika, cumin, tomato paste and salt until they hold together, then shape into 2 patties.",
+    "Fry in the oil over medium heat for 5 minutes each side until crisp and heated through.",
+    "Toast the buns cut side down in a dry pan for 1 to 2 minutes until golden.",
+    "Build with the patties, avocado, tomato and lettuce."
+   ],
+   "notes": [
+    "Patties keep 3 days in the fridge or freeze for 2 months.",
+    "Contains gluten."
+   ],
+   "nutrition": {
+    "kcal": 640,
+    "proteinG": 22,
+    "carbsG": 92,
+    "fatG": 22,
+    "fibreG": 19,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "egg-bhurji-pav-indian-spiced-scrambled-egg-bun",
+   "title": "Egg Bhurji Pav (Indian Spiced Scrambled Egg Bun)",
+   "summary": "Mumbai-style scrambled eggs with onion, tomato and green chilli, served with buttered rolls.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 eggs",
+      "1 tbsp vegetable oil",
+      "1 onion, finely diced",
+      "1 tomato, diced",
+      "1 green chilli, sliced",
+      "1/2 tsp ground turmeric",
+      "1/2 tsp garam masala",
+      "2 tbsp coriander, chopped",
+      "4 soft bread rolls",
+      "2 tbsp butter"
+     ]
+    }
+   ],
+   "steps": [
+    "Soften the onion and chilli in the oil for 4 minutes, then add the tomato and turmeric and cook 3 minutes until pulpy.",
+    "Pour in the beaten eggs and stir for 2 to 3 minutes until fully set.",
+    "Stir through the garam masala and coriander.",
+    "Toast the split rolls in the butter until golden and serve with the bhurji."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites and yolks are fully set. For packed lunches chill within 1 hour, keep below 5C and eat within 24 hours.",
+    "Contains gluten, egg and milk."
+   ],
+   "nutrition": {
+    "kcal": 550,
+    "proteinG": 23,
+    "carbsG": 52,
+    "fatG": 27,
+    "fibreG": 4,
+    "sodiumMg": 660
+   }
+  },
+  {
+   "id": "bulgogi-beef-lettuce-wraps-high-protein",
+   "title": "Bulgogi Beef Lettuce Wraps (High-Protein)",
+   "summary": "Sweet soy beef strips with ginger in crisp lettuce cups with rice and kimchi.",
+   "cuisine": "korean",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 8,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g beef rump, thinly sliced",
+      "3 tbsp soy sauce",
+      "1 tbsp sugar",
+      "1 tbsp sesame oil",
+      "1 tbsp ginger, grated",
+      "2 cloves garlic, minced",
+      "1 tbsp vegetable oil",
+      "8 lettuce leaves",
+      "1/2 cup short-grain rice",
+      "1/2 cup kimchi",
+      "2 spring onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the beef with the soy sauce, sugar, sesame oil, ginger and garlic.",
+    "Sear in the oil in a very hot pan for 3 minutes until browned and cooked through.",
+    "Simmer the rice in 1 cup water, covered, for 12 minutes until tender, then spoon it and the beef into the lettuce leaves.",
+    "Top with kimchi and spring onion."
+   ],
+   "notes": [
+    "Food safety: cook beef strips until browned all through with no pink until steaming hot and no longer pink in the middle (poultry and mince to 75°C, pork to 70°C). For packed lunches chill within 1 hour, keep below 5C or with an ice pack, and eat within 3 days from the fridge (reheat until steaming hot, once only). Eat within 3 days if packed, keeping the lettuce separate.",
+    "Contains soy and sesame."
+   ],
+   "nutrition": {
+    "kcal": 480,
+    "proteinG": 38,
+    "carbsG": 38,
+    "fatG": 19,
+    "fibreG": 3,
+    "sodiumMg": 1380
+   }
+  }
+ ]
+}

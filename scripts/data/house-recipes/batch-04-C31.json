@@ -1,0 +1,1285 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "indian-rava-idli-with-cashews",
+      "title": "Indian Rava Idli with Cashews",
+      "summary": "Soft steamed semolina cakes with cashews, mustard seed and curry leaf, ready without any fermenting.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g semolina",
+            "250g plain yoghurt",
+            "120ml water",
+            "1 tbsp vegetable oil",
+            "1 tsp mustard seeds",
+            "1 handful curry leaves",
+            "2 tbsp chopped cashews",
+            "1 green chilli, chopped",
+            "1 tsp grated ginger",
+            "3/4 tsp salt",
+            "1/2 tsp bicarbonate of soda"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil and fry the mustard seeds, curry leaves, cashews, chilli and ginger for 2 minutes, until the cashews turn golden.",
+        "Stir in the semolina and toast for 3 minutes, until fragrant, then cool.",
+        "Mix in the yoghurt, water and salt to a thick batter and rest for 10 minutes.",
+        "Stir in the bicarbonate of soda and spoon into greased idli moulds.",
+        "Steam for 12 minutes, until a skewer comes out clean."
+      ],
+      "notes": [
+        "Serve hot with coconut chutney and sambar.",
+        "Makes about 12 idli."
+      ],
+      "nutrition": {
+        "kcal": 273,
+        "proteinG": 9,
+        "carbsG": 38,
+        "fatG": 9,
+        "fibreG": 2,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "indian-rava-dosa-crisp-semolina-crepes",
+      "title": "Indian Rava Dosa Crisp Semolina Crepes",
+      "summary": "Lacy, crisp restaurant-style crepes of semolina, rice flour and plain flour with cumin, pepper and cashews.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g semolina",
+            "100g rice flour",
+            "50g plain flour",
+            "150g plain yoghurt",
+            "600ml water",
+            "1 tsp cumin seeds",
+            "1 tsp black peppercorns, crushed",
+            "1 green chilli, chopped",
+            "2 tbsp chopped cashews",
+            "1 red onion, finely chopped",
+            "1 handful curry leaves",
+            "3/4 tsp salt",
+            "3 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the semolina, rice flour, plain flour, yoghurt, water and salt into a very thin batter and rest for 15 minutes.",
+        "Stir in the cumin, pepper, chilli, cashews, onion and curry leaves.",
+        "Heat a flat pan until very hot and pour the batter from a height in a lacy pattern to cover the pan.",
+        "Drizzle with oil and cook for 3 minutes, until the underside is crisp and golden, then fold and serve."
+      ],
+      "notes": [
+        "Stir the batter before each dosa as the semolina settles.",
+        "Makes about 8 rava dosa."
+      ],
+      "nutrition": {
+        "kcal": 320,
+        "proteinG": 10,
+        "carbsG": 46,
+        "fatG": 10,
+        "fibreG": 3,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "indian-spinach-and-chickpea-flour-pancakes",
+      "title": "Indian Spinach and Chickpea Flour Pancakes",
+      "summary": "Quick savoury chickpea-flour pancakes with spinach, onion, green chilli and spices.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g chickpea flour",
+            "350ml water",
+            "1/2 tsp ground turmeric",
+            "1 tsp cumin seeds",
+            "1/2 tsp chilli powder",
+            "3/4 tsp salt",
+            "2 cups baby spinach, chopped",
+            "1 red onion, finely chopped",
+            "1 green chilli, finely chopped",
+            "2 tbsp chopped coriander",
+            "3 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the chickpea flour, water, turmeric, cumin, chilli powder and salt into a smooth batter.",
+        "Stir in the spinach, onion, chilli and coriander.",
+        "Pour a ladleful onto a hot oiled pan and spread into a thin round.",
+        "Cook for 2 minutes, until the underside is golden, then flip and cook for 2 minutes, until set and speckled brown."
+      ],
+      "notes": [
+        "Serve with mint chutney or yoghurt.",
+        "Makes about 8 chilla."
+      ],
+      "nutrition": {
+        "kcal": 224,
+        "proteinG": 11,
+        "carbsG": 20,
+        "fatG": 10,
+        "fibreG": 5,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "indian-instant-rava-uttapam-with-onion-and-tomato",
+      "title": "Indian Instant Rava Uttapam with Onion and Tomato",
+      "summary": "Thick, soft semolina and yoghurt pancakes with onion, tomato, chilli and coriander, with no fermenting.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g semolina",
+            "200g plain yoghurt",
+            "250ml water",
+            "1/2 tsp salt",
+            "1/2 tsp bicarbonate of soda",
+            "1 red onion, finely chopped",
+            "1 tomato, finely chopped",
+            "1 green chilli, finely chopped",
+            "2 tbsp chopped coriander",
+            "3 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the semolina, yoghurt, water and salt and rest for 15 minutes, until thick.",
+        "Stir in the bicarbonate of soda.",
+        "Pour a ladleful onto a hot oiled pan, spreading into a 12cm round, then scatter over the onion, tomato, chilli and coriander.",
+        "Drizzle oil around the edge and cook for 3 minutes, until the underside is golden.",
+        "Flip and cook for 2 minutes, until the topping is tender and the centre is cooked through."
+      ],
+      "notes": [
+        "Makes about 6 uttapam.",
+        "Serve with coconut chutney."
+      ],
+      "nutrition": {
+        "kcal": 283,
+        "proteinG": 9,
+        "carbsG": 40,
+        "fatG": 9,
+        "fibreG": 3,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "indian-kanda-poha-maharashtrian-flattened-rice",
+      "title": "Indian Kanda Poha Maharashtrian Flattened Rice",
+      "summary": "A fluffy, turmeric-yellow breakfast of flattened rice, onion, peanut and curry leaf with lemon and coriander.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g thick flattened rice (poha)",
+            "2 tbsp vegetable oil",
+            "1 tsp mustard seeds",
+            "2 tbsp raw peanuts",
+            "1 handful curry leaves",
+            "2 green chillies, slit",
+            "2 red onions, chopped",
+            "1 potato, finely diced",
+            "1/2 tsp ground turmeric",
+            "1/2 tsp salt",
+            "1 tsp sugar",
+            "2 tbsp lemon juice",
+            "3 tbsp chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Rinse the poha in a sieve until just soft, then drain and sprinkle with the salt, sugar and turmeric.",
+        "Heat the oil, fry the mustard seeds and peanuts for 2 minutes, until the seeds pop and the peanuts are golden.",
+        "Add the curry leaves, chillies, onion and potato and cook for 6 minutes, until the potato is tender.",
+        "Fold in the poha and cook for 3 minutes, until heated through.",
+        "Finish with the lemon juice and coriander."
+      ],
+      "notes": [
+        "Serve with sev and a wedge of lemon.",
+        "Do not over-rinse the poha or it turns mushy."
+      ],
+      "nutrition": {
+        "kcal": 331,
+        "proteinG": 7,
+        "carbsG": 54,
+        "fatG": 9,
+        "fibreG": 3,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "indian-egg-bhurji-with-green-chilli",
+      "title": "Indian Egg Bhurji with Green Chilli",
+      "summary": "Spiced scrambled eggs with onion, tomato, green chilli and turmeric, scooped up with toast or paratha.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 eggs",
+            "1 tbsp vegetable oil",
+            "1 tsp cumin seeds",
+            "1 red onion, finely chopped",
+            "1 green chilli, finely chopped",
+            "1 tomato, finely chopped",
+            "1/4 tsp ground turmeric",
+            "1/2 tsp garam masala",
+            "1/4 tsp salt",
+            "2 tbsp chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil and fry the cumin for 30 seconds, until it sizzles.",
+        "Add the onion and chilli and cook for 4 minutes, until soft and golden.",
+        "Add the tomato, turmeric and garam masala and cook for 3 minutes, until pulpy.",
+        "Whisk the eggs with the salt, pour in and stir gently for 3 minutes, until just set.",
+        "Scatter over the coriander and serve at once."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until fully set with no runny egg.",
+        "Serve with buttered toast or paratha."
+      ],
+      "nutrition": {
+        "kcal": 217,
+        "proteinG": 15,
+        "carbsG": 9,
+        "fatG": 13,
+        "fibreG": 2,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "indian-lemon-rice-with-peanuts",
+      "title": "Indian Lemon Rice with Peanuts",
+      "summary": "A bright South Indian rice dish tempered with mustard seed, peanut and curry leaf and finished with lemon.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g basmati rice",
+            "2 tbsp vegetable oil",
+            "1 tsp mustard seeds",
+            "3 tbsp raw peanuts",
+            "2 dried red chillies",
+            "1 handful curry leaves",
+            "1 green chilli, slit",
+            "1/2 tsp ground turmeric",
+            "3/4 tsp salt",
+            "3 tbsp lemon juice",
+            "2 tbsp chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice, drain and spread out to cool for 10 minutes, until the grains are dry and separate.",
+        "Heat the oil and fry the mustard seeds and peanuts for 2 minutes, until the seeds pop and the peanuts are golden.",
+        "Add the dried chillies, curry leaves, green chilli and turmeric and cook for 1 minute, until fragrant.",
+        "Fold in the rice and salt and heat for 3 minutes, until hot.",
+        "Finish with the lemon juice and coriander."
+      ],
+      "notes": [
+        "Serve with yoghurt and papad.",
+        "Cooked rice should be cooled quickly and not left out for long."
+      ],
+      "nutrition": {
+        "kcal": 402,
+        "proteinG": 9,
+        "carbsG": 68,
+        "fatG": 10,
+        "fibreG": 2,
+        "sodiumMg": 480
+      }
+    },
+    {
+      "id": "indian-masoor-sambar-with-pumpkin-and-beans",
+      "title": "Indian Masoor Sambar with Pumpkin and Beans",
+      "summary": "A tangy South Indian lentil and vegetable stew with tamarind, pumpkin and green beans.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g red lentils",
+            "1 litre water",
+            "1/2 tsp ground turmeric",
+            "1 tbsp tamarind paste",
+            "200g green beans, cut into lengths",
+            "200g pumpkin, cubed",
+            "1 tomato, chopped",
+            "1 red onion, sliced",
+            "1 tbsp ground coriander",
+            "1 tsp ground cumin",
+            "1 tsp chilli powder",
+            "1 tbsp vegetable oil",
+            "1 tsp mustard seeds",
+            "1 handful curry leaves",
+            "2 dried red chillies",
+            "3/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the lentils with the water and turmeric for 20 minutes, until completely soft, then mash.",
+        "Add the tamarind, beans, pumpkin, tomato, onion, coriander, cumin and chilli powder and simmer for 15 minutes, until the vegetables are tender.",
+        "Heat the oil and fry the mustard seeds, curry leaves and chillies for 1 minute, until the seeds pop.",
+        "Pour the tempering into the sambar and stir in the salt."
+      ],
+      "notes": [
+        "Serve with idli, dosa or rice.",
+        "Thin with hot water if it thickens as it stands."
+      ],
+      "nutrition": {
+        "kcal": 230,
+        "proteinG": 12,
+        "carbsG": 32,
+        "fatG": 4,
+        "fibreG": 9,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "indian-tomato-rasam",
+      "title": "Indian Tomato Rasam",
+      "summary": "A thin, peppery, sour South Indian soup of tomato, tamarind and garlic with cumin and mustard tempering.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 ripe tomatoes, chopped",
+            "1 tbsp tamarind paste",
+            "1 litre water",
+            "4 garlic cloves, crushed",
+            "2 tsp cumin seeds",
+            "1 tsp black peppercorns, crushed",
+            "1/2 tsp ground turmeric",
+            "1 tbsp ghee",
+            "1 tsp mustard seeds",
+            "1 handful curry leaves",
+            "2 dried red chillies",
+            "3/4 tsp salt",
+            "2 tbsp chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the tomato, tamarind, water, turmeric and salt for 10 minutes, until the tomato is soft.",
+        "Mash and add the garlic, 1 tsp cumin and the pepper, then simmer for 5 minutes.",
+        "Heat the ghee and fry the mustard seeds, remaining cumin, curry leaves and chillies for 1 minute, until the seeds pop.",
+        "Pour the tempering into the rasam and top with the coriander."
+      ],
+      "notes": [
+        "Serve in small cups as a soup or over rice.",
+        "Do not boil hard after adding the tempering."
+      ],
+      "nutrition": {
+        "kcal": 98,
+        "proteinG": 2,
+        "carbsG": 12,
+        "fatG": 4,
+        "fibreG": 3,
+        "sodiumMg": 550
+      }
+    },
+    {
+      "id": "indian-gujarati-kadhi",
+      "title": "Indian Gujarati Kadhi",
+      "summary": "A silky, lightly sweet and sour yoghurt soup thickened with chickpea flour and tempered with cumin and curry leaf.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g plain yoghurt",
+            "3 tbsp chickpea flour",
+            "800ml water",
+            "1 piece ginger, 2cm, grated",
+            "2 green chillies, slit",
+            "1 tbsp sugar",
+            "3/4 tsp salt",
+            "1 tbsp ghee",
+            "1 tsp cumin seeds",
+            "1 tsp mustard seeds",
+            "1 handful curry leaves",
+            "2 dried red chillies",
+            "1/4 tsp ground turmeric"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the yoghurt, chickpea flour and water until smooth.",
+        "Pour into a pot with the ginger, chillies, sugar, salt and turmeric and simmer over low heat for 15 minutes, stirring, until it thickens slightly.",
+        "Heat the ghee and fry the cumin, mustard seeds, curry leaves and dried chillies for 1 minute, until the seeds pop.",
+        "Pour the tempering over the kadhi."
+      ],
+      "notes": [
+        "Stir constantly at first so the yoghurt does not split.",
+        "Serve with steamed rice and khichdi."
+      ],
+      "nutrition": {
+        "kcal": 159,
+        "proteinG": 8,
+        "carbsG": 15,
+        "fatG": 7,
+        "fibreG": 2,
+        "sodiumMg": 550
+      }
+    },
+    {
+      "id": "indian-dhokla-steamed-chickpea-cake",
+      "title": "Indian Dhokla Steamed Chickpea Cake",
+      "summary": "A light, springy, tangy Gujarati steamed cake of chickpea flour, with a mustard and sesame tempering.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g chickpea flour",
+            "150g plain yoghurt",
+            "200ml water",
+            "1 tsp grated ginger",
+            "1 green chilli, paste",
+            "1/2 tsp ground turmeric",
+            "3/4 tsp salt",
+            "1 tsp sugar",
+            "1 tsp fruit salt (Eno)",
+            "1 tbsp vegetable oil",
+            "1 tsp mustard seeds",
+            "1 handful curry leaves",
+            "1 tsp sesame seeds",
+            "2 tbsp chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the chickpea flour, yoghurt and water into a smooth batter, then stir in the ginger, chilli, turmeric, salt and sugar and rest for 10 minutes.",
+        "Pour into a greased 20cm tin and stir in the fruit salt just before steaming.",
+        "Steam for 18 minutes, until a skewer comes out clean.",
+        "Heat the oil and fry the mustard seeds, curry leaves and sesame for 1 minute, until the seeds pop.",
+        "Pour over the dhokla, cut into squares and top with coriander."
+      ],
+      "notes": [
+        "Serve warm with green chutney.",
+        "Steam as soon as the fruit salt goes in."
+      ],
+      "nutrition": {
+        "kcal": 169,
+        "proteinG": 9,
+        "carbsG": 20,
+        "fatG": 5,
+        "fibreG": 4,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "indian-thepla-fenugreek-flatbread",
+      "title": "Indian Thepla Fenugreek Flatbread",
+      "summary": "Soft Gujarati flatbreads of wholemeal flour, fresh fenugreek and yoghurt that keep well for travelling.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g wholemeal flour",
+            "1 cup fresh fenugreek leaves (methi), chopped",
+            "3 tbsp plain yoghurt",
+            "1 tsp ground cumin",
+            "1/2 tsp ground turmeric",
+            "1 tsp chilli powder",
+            "1 tsp sugar",
+            "3/4 tsp salt",
+            "2 tbsp vegetable oil",
+            "120ml water"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour, fenugreek, yoghurt, spices, sugar, salt and 1 tbsp oil.",
+        "Add the water bit by bit and knead for 5 minutes into a soft dough, then rest it for 15 minutes.",
+        "Divide into 10 balls and roll each into a thin round.",
+        "Cook each on a hot pan for 1 minute per side, brushing with the rest of the oil, until brown spots appear."
+      ],
+      "notes": [
+        "Serve with pickle and yoghurt.",
+        "Keep in a covered container for up to 2 days."
+      ],
+      "nutrition": {
+        "kcal": 272,
+        "proteinG": 9,
+        "carbsG": 42,
+        "fatG": 6,
+        "fibreG": 7,
+        "sodiumMg": 480
+      }
+    },
+    {
+      "id": "indian-aloo-paratha-breakfast",
+      "title": "Indian Aloo Paratha Breakfast",
+      "summary": "Wholemeal flatbreads stuffed with spiced mashed potato and pan-fried in ghee until golden.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g wholemeal flour",
+            "150ml water",
+            "3 potatoes, boiled and mashed",
+            "1 green chilli, chopped",
+            "1 tsp ground cumin",
+            "1 tsp garam masala",
+            "1/2 tsp chilli powder",
+            "2 tbsp chopped coriander",
+            "3/4 tsp salt",
+            "3 tbsp ghee"
+          ]
+        }
+      ],
+      "steps": [
+        "Knead the flour, water and a pinch of salt into a soft dough and rest for 15 minutes.",
+        "Mix the potato, chilli, cumin, garam masala, chilli powder, coriander and the rest of the salt.",
+        "Roll a ball of dough into a small round, add 2 tbsp filling, seal like a purse and roll out gently.",
+        "Cook on a hot pan for 2 minutes per side with a little ghee, until golden with brown spots."
+      ],
+      "notes": [
+        "Serve with yoghurt, butter and pickle.",
+        "Makes 6 parathas."
+      ],
+      "nutrition": {
+        "kcal": 423,
+        "proteinG": 11,
+        "carbsG": 66,
+        "fatG": 11,
+        "fibreG": 8,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "indian-semiya-upma-vermicelli-breakfast",
+      "title": "Indian Semiya Upma Vermicelli Breakfast",
+      "summary": "A quick South Indian breakfast of toasted vermicelli with mustard seed, onion, peas and curry leaf.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g rice vermicelli, broken into short lengths",
+            "2 tbsp vegetable oil",
+            "1 tsp mustard seeds",
+            "1 handful curry leaves",
+            "2 tbsp cashews",
+            "1 red onion, chopped",
+            "1 green chilli, chopped",
+            "1 carrot, finely diced",
+            "100g peas",
+            "600ml water",
+            "3/4 tsp salt",
+            "2 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Dry-roast the vermicelli in a pan for 4 minutes, until lightly golden, then set aside.",
+        "Heat the oil and fry the mustard seeds, curry leaves and cashews for 2 minutes, until the seeds pop.",
+        "Add the onion, chilli and carrot and cook for 5 minutes, until soft.",
+        "Add the water, peas and salt, bring to the boil until bubbling, then stir in the vermicelli.",
+        "Cover and cook for 4 minutes, until the vermicelli is tender and the water is absorbed.",
+        "Finish with the lemon juice."
+      ],
+      "notes": [
+        "Serve with coconut chutney.",
+        "Do not over-stir or the vermicelli turns sticky."
+      ],
+      "nutrition": {
+        "kcal": 379,
+        "proteinG": 8,
+        "carbsG": 60,
+        "fatG": 11,
+        "fibreG": 4,
+        "sodiumMg": 480
+      }
+    },
+    {
+      "id": "indian-bisi-bele-bath",
+      "title": "Indian Bisi Bele Bath",
+      "summary": "Karnataka's spiced rice and lentil one-pot with vegetables, tamarind and a ghee tempering.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g short-grain rice",
+            "100g red lentils",
+            "1.2 litres water",
+            "1/2 tsp ground turmeric",
+            "100g green beans, cut into lengths",
+            "1 carrot, diced",
+            "100g peas",
+            "1 tbsp tamarind paste",
+            "1 tbsp ground coriander",
+            "1 tsp ground cumin",
+            "1 tsp chilli powder",
+            "1 tsp garam masala",
+            "3/4 tsp salt",
+            "2 tbsp ghee",
+            "1 tsp mustard seeds",
+            "1 handful curry leaves",
+            "2 dried red chillies",
+            "2 tbsp cashews"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice, dal, turmeric and water for 20 minutes, until both are very soft and mushy.",
+        "Add the beans, carrot, peas, tamarind, spice powder and salt and simmer for 12 minutes, until the vegetables are tender.",
+        "Heat the ghee and fry the mustard seeds, curry leaves, chillies and cashews for 2 minutes, until the cashews are golden.",
+        "Stir the tempering into the rice and loosen with hot water to a porridge-like consistency."
+      ],
+      "notes": [
+        "Serve with boondi, papad and yoghurt.",
+        "Thin with hot water if it thickens."
+      ],
+      "nutrition": {
+        "kcal": 430,
+        "proteinG": 14,
+        "carbsG": 62,
+        "fatG": 12,
+        "fibreG": 9,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "indian-tomato-onion-chutney",
+      "title": "Indian Tomato Onion Chutney",
+      "summary": "A tangy, spicy South Indian chutney of slow-cooked tomato and onion with tamarind and chilli, ideal with dosa.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp vegetable oil",
+            "1 tsp mustard seeds",
+            "1 handful curry leaves",
+            "2 red onions, sliced",
+            "4 tomatoes, chopped",
+            "4 dried red chillies",
+            "4 garlic cloves",
+            "1 tsp tamarind paste",
+            "3/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat 1 tbsp oil and fry the mustard seeds and curry leaves for 1 minute, until the seeds pop, then set aside.",
+        "Fry the onion, chillies and garlic in the rest of the oil for 6 minutes, until golden.",
+        "Add the tomato, tamarind and salt and cook for 8 minutes, until pulpy and the oil separates.",
+        "Blend to a coarse chutney and stir in the tempering."
+      ],
+      "notes": [
+        "Keeps in the fridge for 4 days.",
+        "Serve with idli, dosa or uttapam."
+      ],
+      "nutrition": {
+        "kcal": 93,
+        "proteinG": 2,
+        "carbsG": 9,
+        "fatG": 5,
+        "fibreG": 2,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "sri-lankan-appam-hoppers",
+      "title": "Sri Lankan Appam Hoppers",
+      "summary": "Lacy, bowl-shaped fermented rice and coconut pancakes with a soft centre and crisp edge.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g rice flour",
+            "1 tsp dried yeast",
+            "1 tbsp sugar",
+            "400ml coconut milk",
+            "150ml water",
+            "1/2 tsp salt",
+            "1 tbsp coconut oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the yeast, sugar and 100ml warm water and leave for 10 minutes, until frothy.",
+        "Mix with the rice flour, coconut milk, remaining water and salt to a thin batter and rest for 4 hours, until bubbly.",
+        "Heat a small hopper pan, grease with a little oil and pour in a ladleful of batter, then swirl to coat the sides.",
+        "Cover and cook for 3 minutes over medium heat, until the edges are crisp and the centre is set."
+      ],
+      "notes": [
+        "Makes about 8 hoppers.",
+        "Serve with pol sambol or a curry."
+      ],
+      "nutrition": {
+        "kcal": 454,
+        "proteinG": 6,
+        "carbsG": 66,
+        "fatG": 18,
+        "fibreG": 2,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "sri-lankan-string-hoppers",
+      "title": "Sri Lankan String Hoppers",
+      "summary": "Steamed nests of fine rice-flour noodles, served with coconut sambol and dhal.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g rice flour",
+            "400ml boiling water",
+            "1/2 tsp salt",
+            "1 tsp coconut oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the rice flour and salt, then add the boiling water bit by bit and knead into a soft, smooth dough.",
+        "Brush a string hopper press or large piping bag with oil and fill it with dough.",
+        "Press out spirals onto oiled trays or mats.",
+        "Steam for 8 minutes, until firm and cooked through."
+      ],
+      "notes": [
+        "Serve with dhal, coconut sambol and fish curry.",
+        "Makes about 20 string hoppers."
+      ],
+      "nutrition": {
+        "kcal": 304,
+        "proteinG": 5,
+        "carbsG": 66,
+        "fatG": 2,
+        "fibreG": 1,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "sri-lankan-lunu-miris-chilli-and-onion-sambol",
+      "title": "Sri Lankan Lunu Miris Chilli and Onion Sambol",
+      "summary": "A fiery red onion, chilli and lime pounded paste, traditionally eaten with hoppers and roti.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 red onions, finely chopped",
+            "2 tbsp dried chilli flakes",
+            "1 tsp salt",
+            "1 tbsp lime juice",
+            "1 tsp sugar"
+          ]
+        }
+      ],
+      "steps": [
+        "Crush the chilli flakes, salt and sugar with a little onion in a mortar to a paste.",
+        "Add the rest of the onion and the lime juice and crush lightly.",
+        "Crush until the mixture is moist and well combined, then adjust the salt and lime."
+      ],
+      "notes": [
+        "Eat the same day.",
+        "Serve with hoppers or roti."
+      ],
+      "nutrition": {
+        "kcal": 54,
+        "proteinG": 2,
+        "carbsG": 10,
+        "fatG": 0,
+        "fibreG": 3,
+        "sodiumMg": 1300
+      }
+    },
+    {
+      "id": "sri-lankan-kiri-bath-milk-rice",
+      "title": "Sri Lankan Kiri Bath Milk Rice",
+      "summary": "Creamy coconut milk rice cut into diamonds, a festive Sri Lankan breakfast served with lunu miris.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 30,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g short-grain rice",
+            "600ml water",
+            "400ml coconut milk",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Rinse the rice and cook with the water and salt for 15 minutes, until the water is absorbed.",
+        "Stir in the coconut milk and cook gently for 10 minutes, until the mixture is thick and creamy.",
+        "Press into a greased tray and smooth the top.",
+        "Cool for 15 minutes, then cut into diamonds."
+      ],
+      "notes": [
+        "Serve with lunu miris or katta sambol.",
+        "Eat the same day."
+      ],
+      "nutrition": {
+        "kcal": 351,
+        "proteinG": 6,
+        "carbsG": 52,
+        "fatG": 13,
+        "fibreG": 1,
+        "sodiumMg": 550
+      }
+    },
+    {
+      "id": "sri-lankan-pittu-steamed-rice-and-coconut",
+      "title": "Sri Lankan Pittu Steamed Rice and Coconut",
+      "summary": "Cylinders of steamed rice flour and fresh coconut, crumbly and soft, served with coconut milk and sambol.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g rice flour",
+            "100g desiccated coconut, soaked in 3 tbsp warm water",
+            "1/2 tsp salt",
+            "80ml warm water"
+          ]
+        }
+      ],
+      "steps": [
+        "Dry-roast the rice flour in a pan for 5 minutes, until fragrant and no longer raw-smelling, then cool.",
+        "Mix with the salt and water, rubbing between your fingers until it forms damp crumbs that hold when squeezed.",
+        "Layer the crumbs with coconut in a pittu steamer or tall tin.",
+        "Steam for 10 minutes, until steam rises through the top layer."
+      ],
+      "notes": [
+        "Serve with coconut milk gravy and pol sambol.",
+        "Do not add too much water or the pittu turns gummy."
+      ],
+      "nutrition": {
+        "kcal": 342,
+        "proteinG": 5,
+        "carbsG": 61,
+        "fatG": 8,
+        "fibreG": 3,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "sri-lankan-mallung-greens-with-coconut",
+      "title": "Sri Lankan Mallung Greens with Coconut",
+      "summary": "Finely shredded greens quickly stir-fried with fresh coconut, onion, turmeric and green chilli.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 8,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g silverbeet leaves, finely shredded",
+            "2 tbsp coconut oil",
+            "1 red onion, finely chopped",
+            "2 green chillies, sliced",
+            "1 handful curry leaves",
+            "1/2 tsp ground turmeric",
+            "40g desiccated coconut",
+            "1/2 tsp salt",
+            "1 tbsp lime juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil and fry the onion, chillies and curry leaves for 3 minutes, until soft and golden.",
+        "Add the turmeric and silverbeet and cook for 3 minutes, until wilted.",
+        "Stir in the coconut and salt and cook for 2 minutes, until tender.",
+        "Finish with the lime juice."
+      ],
+      "notes": [
+        "Serve with rice and curry.",
+        "Swap in kale or spinach."
+      ],
+      "nutrition": {
+        "kcal": 180,
+        "proteinG": 3,
+        "carbsG": 8,
+        "fatG": 14,
+        "fibreG": 5,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "mexican-huevos-a-la-mexicana",
+      "title": "Mexican Huevos a la Mexicana",
+      "summary": "Scrambled eggs with tomato, onion, jalapeno and coriander in the colours of the Mexican flag.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 eggs",
+            "1 tbsp vegetable oil",
+            "1/2 white onion, finely chopped",
+            "1 jalapeno, finely chopped",
+            "2 tomatoes, finely chopped",
+            "1/4 tsp salt",
+            "2 tbsp chopped coriander",
+            "4 corn tortillas, warmed"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the eggs with the salt.",
+        "Fry the onion and jalapeno in the oil for 3 minutes, until soft.",
+        "Add the tomato and cook for 3 minutes, until the juices reduce.",
+        "Pour in the eggs and stir gently for 3 minutes, until just set.",
+        "Top with the coriander and serve with warm tortillas."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until fully set with no runny egg.",
+        "Serve with refried beans."
+      ],
+      "nutrition": {
+        "kcal": 289,
+        "proteinG": 17,
+        "carbsG": 24,
+        "fatG": 13,
+        "fibreG": 4,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "mexican-molletes",
+      "title": "Mexican Molletes",
+      "summary": "Open bolillo rolls spread with refried beans, topped with melted cheese and fresh pico de gallo.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 bolillo rolls, halved lengthways",
+            "250g tinned black beans, drained and mashed",
+            "100g grated mozzarella",
+            "2 tomatoes, finely chopped",
+            "1/4 white onion, finely chopped",
+            "1 jalapeno, finely chopped",
+            "2 tbsp chopped coriander",
+            "1 tbsp lime juice",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the roll halves under the grill for 2 minutes, until lightly golden.",
+        "Spread each with the mashed beans and top with the cheese.",
+        "Grill for 4 minutes, until the cheese melts and bubbles.",
+        "Mix the tomato, onion, jalapeno, coriander, lime juice and salt and spoon over the molletes."
+      ],
+      "notes": [
+        "Serve straight away.",
+        "Add sliced avocado if you like."
+      ],
+      "nutrition": {
+        "kcal": 520,
+        "proteinG": 22,
+        "carbsG": 58,
+        "fatG": 20,
+        "fibreG": 10,
+        "sodiumMg": 1100
+      }
+    }
+  ]
+}

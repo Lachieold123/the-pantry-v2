@@ -1,0 +1,1504 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "chicken-caesar-grain-bowl",
+      "title": "Chicken Caesar Grain Bowl",
+      "summary": "Grilled chicken, brown rice and cos lettuce tossed in a lemony caesar dressing with croutons.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "500g chicken breast",
+            "1 tbsp olive oil",
+            "200g brown rice",
+            "1 head cos lettuce, chopped",
+            "2 slices bread, cubed",
+            "3 tbsp mayonnaise",
+            "1 tbsp lemon juice",
+            "1 garlic clove, crushed",
+            "2 anchovy fillets, mashed",
+            "30g vegetarian hard cheese, shaved"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice in plenty of boiling water for 25 minutes until tender, then drain and cool.",
+        "Cook the chicken in the oil for 6 minutes each side, until golden and 75°C in the centre, then rest and slice.",
+        "Toast the bread cubes in a dry pan for 4 minutes until crisp.",
+        "Whisk the mayonnaise, lemon juice, garlic and anchovies, then toss with the rice and lettuce.",
+        "Top with the chicken, croutons and cheese."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until 75°C in the thickest part with no pink inside."
+      ],
+      "nutrition": {
+        "kcal": 547,
+        "proteinG": 40,
+        "carbsG": 52,
+        "fatG": 19,
+        "fibreG": 4,
+        "sodiumMg": 560
+      }
+    },
+    {
+      "id": "roast-beetroot-salad-with-goats-cheese-and-walnuts",
+      "title": "Roast Beetroot Salad with Goats Cheese and Walnuts",
+      "summary": "Sweet roast beetroot with peppery rocket, creamy goats cheese and toasted walnuts in a mustard vinaigrette.",
+      "cuisine": "french",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g beetroot, scrubbed",
+            "2 tbsp olive oil",
+            "100g goats cheese",
+            "50g walnuts",
+            "80g rocket",
+            "1 tbsp balsamic vinegar",
+            "1 tsp Dijon mustard",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C, wrap the beetroot in foil with 1 tbsp oil and roast for 45 minutes until a knife slides in.",
+        "Toast the walnuts in a dry pan for 4 minutes until fragrant.",
+        "Peel and wedge the beetroot once cool enough to handle.",
+        "Whisk the remaining oil, balsamic, mustard and salt, then toss with the beetroot and rocket.",
+        "Top with crumbled goats cheese and walnuts."
+      ],
+      "notes": [
+        "Wear gloves when peeling the beetroot to avoid staining."
+      ],
+      "nutrition": {
+        "kcal": 312,
+        "proteinG": 9,
+        "carbsG": 17,
+        "fatG": 22,
+        "fibreG": 5,
+        "sodiumMg": 410
+      }
+    },
+    {
+      "id": "italian-chickpea-and-tuna-salad-with-red-onion",
+      "title": "Italian Chickpea and Tuna Salad with Red Onion",
+      "summary": "Quick tinned chickpea and tuna salad with parsley, red onion and lemon.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cans chickpeas (400g each), drained",
+            "2 cans tuna in oil (185g each), drained",
+            "1 red onion, thinly sliced",
+            "1 small bunch parsley, chopped",
+            "3 tbsp olive oil",
+            "3 tbsp lemon juice",
+            "200g cherry tomatoes, halved",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the onion slices in cold water for 5 minutes, then drain.",
+        "Whisk the oil, lemon juice and salt.",
+        "Toss the chickpeas, tuna, onion, parsley and tomatoes with the dressing.",
+        "Rest for 10 minutes until the flavours meld."
+      ],
+      "notes": [
+        "Food safety: keep the salad chilled and eat within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 496,
+        "proteinG": 38,
+        "carbsG": 32,
+        "fatG": 22,
+        "fibreG": 9,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "spanish-ensalada-de-garbanzos-with-roasted-capsicum",
+      "title": "Spanish Ensalada de Garbanzos with Roasted Capsicum",
+      "summary": "Chickpeas with roasted capsicum, tomato, cucumber and sherry vinegar dressing.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cans chickpeas (400g each), drained",
+            "1 jar roasted red capsicum (250g), sliced",
+            "2 tomatoes, diced",
+            "1 cucumber, diced",
+            "1 small red onion, finely diced",
+            "3 tbsp olive oil",
+            "2 tbsp sherry vinegar",
+            "1 tsp smoked paprika",
+            "1 small bunch parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the oil, vinegar and paprika.",
+        "Toss the chickpeas with the capsicum, tomatoes, cucumber and onion.",
+        "Pour over the dressing and fold in the parsley.",
+        "Chill for 15 minutes until the flavours soften."
+      ],
+      "notes": [
+        "Keeps in the fridge for 3 days."
+      ],
+      "nutrition": {
+        "kcal": 328,
+        "proteinG": 13,
+        "carbsG": 33,
+        "fatG": 14,
+        "fibreG": 9,
+        "sodiumMg": 550
+      }
+    },
+    {
+      "id": "spanish-pipirrana-andalusian-summer-salad",
+      "title": "Spanish Pipirrana Andalusian Summer Salad",
+      "summary": "Finely diced tomato, cucumber and capsicum in a sherry vinegar dressing, often served with seafood.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 ripe tomatoes, diced",
+            "1 cucumber, diced",
+            "1 green capsicum, diced",
+            "1 small red onion, finely diced",
+            "3 tbsp olive oil",
+            "2 tbsp sherry vinegar",
+            "1/2 tsp salt",
+            "1 small bunch parsley, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Combine the tomatoes, cucumber, capsicum, onion and parsley in a bowl.",
+        "Whisk the oil, vinegar and salt and pour over.",
+        "Toss and rest for 10 minutes until juicy.",
+        "Serve cold with bread to mop up the juices."
+      ],
+      "notes": [
+        "Peel the cucumber if the skin is thick."
+      ],
+      "nutrition": {
+        "kcal": 157,
+        "proteinG": 2,
+        "carbsG": 11,
+        "fatG": 11,
+        "fibreG": 3,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "spanish-sopa-de-ajo-castilian-garlic-soup",
+      "title": "Spanish Sopa de Ajo Castilian Garlic Soup",
+      "summary": "Garlic and paprika soup with stale bread and a poached egg dropped in at the end.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "dinner",
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 garlic cloves, sliced",
+            "4 tbsp olive oil",
+            "200g stale bread, sliced",
+            "2 tsp smoked paprika",
+            "1 litre chicken stock",
+            "4 eggs",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the garlic in the oil for 2 minutes until golden, then add the bread for 3 minutes until crisp.",
+        "Stir in the paprika for 20 seconds, then pour in the stock.",
+        "Simmer for 15 minutes until the bread is soft and thick.",
+        "Crack in the eggs and poach for 4 minutes until the whites are set."
+      ],
+      "notes": [
+        "Food safety: cook until the egg whites are fully set; cook the yolks through for anyone vulnerable."
+      ],
+      "nutrition": {
+        "kcal": 333,
+        "proteinG": 16,
+        "carbsG": 28,
+        "fatG": 17,
+        "fibreG": 2,
+        "sodiumMg": 910
+      }
+    },
+    {
+      "id": "spanish-salmorejo-cordoba-tomato-and-bread-soup",
+      "title": "Spanish Salmorejo Cordoba Tomato and Bread Soup",
+      "summary": "Thick chilled tomato and bread soup, finished with olive oil, egg and ham.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 kg ripe tomatoes, chopped",
+            "150g stale bread, no crusts",
+            "1 garlic clove",
+            "100ml olive oil",
+            "2 tbsp sherry vinegar",
+            "1/2 tsp salt",
+            "2 eggs",
+            "40g ham, diced"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the eggs for 10 minutes until firm, then cool and chop.",
+        "Blend the tomatoes, bread, garlic, vinegar and salt until completely smooth.",
+        "Blend in the oil slowly until the soup is thick and pale orange.",
+        "Chill for 1 hour, then top with egg and ham."
+      ],
+      "notes": [
+        "Food safety: boil the eggs until fully set; keep the soup cold and eat within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 403,
+        "proteinG": 12,
+        "carbsG": 30,
+        "fatG": 25,
+        "fibreG": 5,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "portuguese-sopa-de-feijao-bean-and-cabbage-soup",
+      "title": "Portuguese Sopa de Feijao Bean and Cabbage Soup",
+      "summary": "Hearty bean, carrot and cabbage soup with garlic and olive oil, finished with a splash of vinegar.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cans kidney beans (400g each), drained",
+            "1 brown onion, diced",
+            "2 carrots, diced",
+            "3 garlic cloves, sliced",
+            "3 tbsp olive oil",
+            "200g cabbage, shredded",
+            "1 litre vegetable stock",
+            "1 bay leaf",
+            "1 tbsp red wine vinegar",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion, carrots and garlic in the oil for 8 minutes until soft.",
+        "Add the beans, stock and bay leaf and simmer for 15 minutes.",
+        "Add the cabbage and simmer for 6 minutes until tender.",
+        "Stir in the vinegar and salt and remove the bay leaf."
+      ],
+      "notes": [
+        "Mash a ladle of beans against the pot to thicken the soup."
+      ],
+      "nutrition": {
+        "kcal": 328,
+        "proteinG": 14,
+        "carbsG": 38,
+        "fatG": 10,
+        "fibreG": 15,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "french-soupe-a-l-oignon-gratinee-onion-soup-with-cheese-toast",
+      "title": "French Soupe a l'Oignon Gratinee Onion Soup with Cheese Toast",
+      "summary": "Deeply caramelised onions in beef stock topped with toasted bread and melted cheese.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 60,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "1 kg brown onions, thinly sliced",
+            "50g butter",
+            "1 tbsp olive oil",
+            "2 tsp plain flour",
+            "150ml dry white wine",
+            "1 litre beef stock",
+            "3 thyme sprigs",
+            "4 thick slices baguette",
+            "100g vegetarian hard cheese, grated"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onions in the butter and oil over low heat for 40 minutes, stirring often, until deep brown and jammy.",
+        "Stir in the flour for 1 minute, pour in the wine and let it bubble for 3 minutes.",
+        "Add the stock and thyme and simmer for 15 minutes.",
+        "Top the baguette with the cheese and grill for 3 minutes until melted and bubbling.",
+        "Ladle the soup into bowls and float a toast on top while the cheese is still bubbling."
+      ],
+      "notes": [
+        "Cook the onions slowly; rushing them leaves a bitter taste."
+      ],
+      "nutrition": {
+        "kcal": 427,
+        "proteinG": 17,
+        "carbsG": 40,
+        "fatG": 21,
+        "fibreG": 5,
+        "sodiumMg": 1050
+      }
+    },
+    {
+      "id": "french-soupe-au-pistou-vegetable-soup-with-basil-paste",
+      "title": "French Soupe au Pistou Vegetable Soup with Basil Paste",
+      "summary": "Summer vegetable and white bean soup stirred with a garlicky basil pistou.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 can white beans (400g), drained",
+            "2 potatoes, diced",
+            "2 carrots, diced",
+            "150g green beans, cut",
+            "2 zucchini, diced",
+            "1 brown onion, diced",
+            "1.5 litres water",
+            "100g small pasta",
+            "1 large bunch basil",
+            "3 garlic cloves",
+            "80ml olive oil",
+            "30g vegetarian hard cheese, grated"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the onion, potatoes, carrots and water for 15 minutes.",
+        "Add the green beans, zucchini and white beans and cook for 10 minutes more.",
+        "Add the pasta and cook for 8 minutes until al dente.",
+        "Crush the basil, garlic, oil and cheese to a green paste.",
+        "Stir the pistou into the soup off the heat and serve."
+      ],
+      "notes": [
+        "Do not boil the soup after adding the pistou or the basil turns dark."
+      ],
+      "nutrition": {
+        "kcal": 336,
+        "proteinG": 10,
+        "carbsG": 38,
+        "fatG": 14,
+        "fibreG": 9,
+        "sodiumMg": 420
+      }
+    },
+    {
+      "id": "french-salade-de-lentilles-du-puy-with-mustard-vinaigrette",
+      "title": "French Salade de Lentilles du Puy with Mustard Vinaigrette",
+      "summary": "Green lentils tossed warm with shallot, carrot, parsley and mustard vinaigrette.",
+      "cuisine": "french",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g green lentils",
+            "1 carrot, finely diced",
+            "1 small shallot, finely diced",
+            "1 bay leaf",
+            "3 tbsp olive oil",
+            "2 tbsp red wine vinegar",
+            "1 tbsp Dijon mustard",
+            "1 small bunch parsley, chopped",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the lentils with the bay leaf in plenty of water for 22 minutes until tender but whole.",
+        "Drain and discard the bay leaf.",
+        "Whisk the oil, vinegar, mustard and salt.",
+        "Toss the warm lentils with the carrot, shallot, parsley and dressing."
+      ],
+      "notes": [
+        "Better the next day once the lentils absorb the dressing."
+      ],
+      "nutrition": {
+        "kcal": 319,
+        "proteinG": 16,
+        "carbsG": 33,
+        "fatG": 11,
+        "fibreG": 12,
+        "sodiumMg": 340
+      }
+    },
+    {
+      "id": "french-crepes-bretonnes-buckwheat-galettes-with-ham-and-egg",
+      "title": "French Crepes Bretonnes Buckwheat Galettes with Ham and Egg",
+      "summary": "Savoury buckwheat crepes folded around ham, cheese and a baked egg.",
+      "cuisine": "french",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "150g buckwheat flour",
+            "1/2 tsp salt",
+            "1 egg",
+            "400ml water",
+            "4 eggs",
+            "100g ham",
+            "100g vegetarian hard cheese, grated",
+            "30g butter"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the buckwheat flour, salt, 1 egg and water to a thin batter and rest for 15 minutes.",
+        "Cook thin crepes in buttered pan for 2 minutes each side until crisp at the edges.",
+        "Add ham, cheese and an egg to the centre of each crepe and cook for 4 minutes until the white is set.",
+        "Fold the edges in to make a square and serve."
+      ],
+      "notes": [
+        "Food safety: cook until the egg whites are fully set; cook the yolks through for anyone vulnerable."
+      ],
+      "nutrition": {
+        "kcal": 401,
+        "proteinG": 26,
+        "carbsG": 21,
+        "fatG": 23,
+        "fibreG": 3,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "swiss-birchermuesli-overnight-apple-oats",
+      "title": "Swiss Birchermuesli Overnight Apple Oats",
+      "summary": "Rolled oats soaked in milk and yoghurt with grated apple, honey and nuts.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g rolled oats",
+            "250ml milk",
+            "200g natural yoghurt",
+            "2 apples, grated",
+            "1 tbsp lemon juice",
+            "2 tbsp honey",
+            "40g hazelnuts, chopped",
+            "1 handful raisins"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the oats, milk, yoghurt and lemon juice in a bowl.",
+        "Cover and soak in the fridge overnight until creamy.",
+        "Stir through the grated apple, honey and raisins.",
+        "Top with the chopped hazelnuts and serve."
+      ],
+      "notes": [
+        "Keeps for 2 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 390,
+        "proteinG": 13,
+        "carbsG": 54,
+        "fatG": 12,
+        "fibreG": 7,
+        "sodiumMg": 90
+      }
+    },
+    {
+      "id": "german-kaiserschmarrn-torn-pancake-with-apple-compote",
+      "title": "German Kaiserschmarrn Torn Pancake with Apple Compote",
+      "summary": "A fluffy thick pancake torn into pieces and caramelised, served with fruit.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g plain flour",
+            "250ml milk",
+            "4 eggs, separated",
+            "2 tbsp sugar",
+            "1 pinch salt",
+            "40g butter",
+            "2 tbsp raisins",
+            "2 tbsp icing sugar",
+            "4 apples, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the flour, milk, yolks, sugar and salt into a smooth batter, then fold in whipped egg whites.",
+        "Melt half the butter in a large pan, pour in the batter, scatter with raisins and cook for 5 minutes until golden underneath.",
+        "Flip, tear into pieces with two forks and fry for 4 minutes with the remaining butter until caramelised.",
+        "Simmer the apples with a splash of water for 5 minutes until soft and serve with the pancake dusted with icing sugar."
+      ],
+      "notes": [
+        "Food safety: cook the batter until the egg is fully set."
+      ],
+      "nutrition": {
+        "kcal": 401,
+        "proteinG": 13,
+        "carbsG": 52,
+        "fatG": 15,
+        "fibreG": 3,
+        "sodiumMg": 190
+      }
+    },
+    {
+      "id": "slovak-halusky-with-cabbage-and-bacon",
+      "title": "Slovak Halusky with Cabbage and Bacon",
+      "summary": "Soft grated potato dumplings tossed with fried cabbage and crisp bacon.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g potatoes, peeled",
+            "200g plain flour",
+            "1 egg",
+            "1/2 tsp salt",
+            "4 rashers bacon, chopped",
+            "300g cabbage, shredded",
+            "1 brown onion, sliced",
+            "1 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Finely grate the potatoes and mix with the flour, egg and salt to a sticky dough.",
+        "Drop small pieces into boiling salted water and cook for 3 minutes until they float.",
+        "Fry the bacon for 5 minutes until crisp, then cook the onion and cabbage in the fat and oil for 8 minutes until soft and golden.",
+        "Toss the dumplings through and serve hot."
+      ],
+      "notes": [
+        "Food safety: cook the bacon until crisp and the dumpling dough until firm all the way through."
+      ],
+      "nutrition": {
+        "kcal": 522,
+        "proteinG": 17,
+        "carbsG": 70,
+        "fatG": 18,
+        "fibreG": 6,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "norwegian-lapskaus-root-vegetable-and-beef-stew",
+      "title": "Norwegian Lapskaus Root Vegetable and Beef Stew",
+      "summary": "Chunky winter stew of beef, potato, carrot and swede in a light broth.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 50,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g beef chuck, cubed",
+            "600g potatoes, cubed",
+            "2 carrots, cubed",
+            "200g swede, cubed",
+            "1 brown onion, diced",
+            "1.2 litres beef stock",
+            "2 bay leaves",
+            "1/2 tsp salt",
+            "1/2 tsp black pepper",
+            "1 tbsp butter"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the beef in the butter for 6 minutes, then add the onion for 3 minutes.",
+        "Pour in the stock, add the bay leaves and simmer for 30 minutes.",
+        "Add the vegetables and simmer for 20 minutes until the beef and vegetables are tender.",
+        "Season and serve with flatbread."
+      ],
+      "notes": [
+        "Food safety: simmer until the beef is tender and 71°C throughout."
+      ],
+      "nutrition": {
+        "kcal": 284,
+        "proteinG": 22,
+        "carbsG": 24,
+        "fatG": 10,
+        "fibreG": 5,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "finnish-karjalanpiirakka-karelian-rice-pies",
+      "title": "Finnish Karjalanpiirakka Karelian Rice Pies",
+      "summary": "Thin rye shells filled with creamy rice porridge, baked and brushed with butter, topped with egg butter.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "breakfast",
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 25,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g rye flour",
+            "100g plain flour",
+            "1/2 tsp salt",
+            "120ml water",
+            "150g short-grain rice",
+            "500ml milk",
+            "200ml water",
+            "40g butter, melted",
+            "2 eggs",
+            "30g butter, soft"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the rice with the milk and 200ml water for 25 minutes, stirring, until a thick porridge.",
+        "Knead the flours, salt and 120ml water to a dough, divide into 8, and roll each thin.",
+        "Spoon porridge into the centre of each, pinch the edges and bake at 250°C for 12 minutes until the crust is golden.",
+        "Boil the eggs for 10 minutes, chop and mix with the soft butter.",
+        "Brush the pies with melted butter and top with egg butter."
+      ],
+      "notes": [
+        "Food safety: boil the eggs until fully set."
+      ],
+      "nutrition": {
+        "kcal": 247,
+        "proteinG": 8,
+        "carbsG": 32,
+        "fatG": 9,
+        "fibreG": 3,
+        "sodiumMg": 160
+      }
+    },
+    {
+      "id": "chinese-spring-onion-pancakes",
+      "title": "Chinese Spring Onion Pancakes",
+      "summary": "Flaky layered pancakes with spring onions and sesame oil, pan-fried until crisp.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "breakfast",
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g plain flour",
+            "180ml hot water",
+            "1/2 tsp salt",
+            "2 tbsp sesame oil",
+            "6 spring onions, sliced",
+            "4 tbsp vegetable oil",
+            "2 tbsp soy sauce",
+            "1 tbsp rice vinegar"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour and hot water to a dough and knead for 5 minutes, then rest for 30 minutes.",
+        "Divide into 4, roll thin, brush with sesame oil and salt, scatter with spring onion, roll into a log and coil.",
+        "Flatten and roll to 1 cm thick and fry in oil for 3 minutes each side until golden and crisp.",
+        "Mix the soy sauce and vinegar for dipping."
+      ],
+      "notes": [
+        "Press the pancake lightly while frying so the layers separate."
+      ],
+      "nutrition": {
+        "kcal": 374,
+        "proteinG": 8,
+        "carbsG": 48,
+        "fatG": 16,
+        "fibreG": 3,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "chinese-wonton-soup-in-clear-chicken-broth",
+      "title": "Chinese Wonton Soup in Clear Chicken Broth",
+      "summary": "Silky pork and prawn wontons in a clear ginger broth with bok choy.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g pork mince",
+            "150g prawns, chopped",
+            "1 tbsp soy sauce",
+            "1 tsp sesame oil",
+            "1 tsp grated ginger",
+            "24 wonton wrappers",
+            "1 litre chicken stock",
+            "2 slices ginger",
+            "2 bunches bok choy, halved",
+            "2 spring onions, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the pork, prawns, soy sauce, sesame oil and grated ginger.",
+        "Place a teaspoon of filling in each wrapper and fold into a parcel.",
+        "Simmer the stock and sliced ginger for 5 minutes.",
+        "Add the wontons and cook for 4 minutes until they float and the filling reaches 75°C.",
+        "Add the bok choy for 1 minute and serve with spring onions."
+      ],
+      "notes": [
+        "Food safety: cook the pork and prawn filling until 75°C and the prawns are opaque; chill leftovers within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 308,
+        "proteinG": 24,
+        "carbsG": 34,
+        "fatG": 8,
+        "fibreG": 2,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "chinese-black-vinegar-dumpling-dipping-sauce",
+      "title": "Chinese Black Vinegar Dumpling Dipping Sauce",
+      "summary": "Sharp, salty dipping sauce of Chinkiang vinegar, soy and fresh ginger.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 tbsp black vinegar",
+            "2 tbsp soy sauce",
+            "1 tsp sesame oil",
+            "1 tbsp finely shredded ginger",
+            "1 tsp sugar",
+            "1 garlic clove, minced",
+            "1 tsp chilli oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Stir the vinegar, soy sauce and sugar until the sugar dissolves.",
+        "Add the sesame oil, ginger, garlic and chilli oil.",
+        "Rest for 5 minutes so the garlic mellows.",
+        "Serve in small dishes for dumplings."
+      ],
+      "notes": [
+        "Keeps in the fridge for 5 days."
+      ],
+      "nutrition": {
+        "kcal": 60,
+        "proteinG": 1,
+        "carbsG": 5,
+        "fatG": 4,
+        "fibreG": 0,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "chinese-sesame-noodle-salad-with-cucumber",
+      "title": "Chinese Sesame Noodle Salad with Cucumber",
+      "summary": "Cold wheat noodles in a creamy sesame and soy dressing with crisp cucumber and carrot.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g dried wheat noodles",
+            "3 tbsp tahini",
+            "2 tbsp soy sauce",
+            "1 tbsp rice vinegar",
+            "1 tbsp sesame oil",
+            "1 tsp sugar",
+            "1 garlic clove",
+            "1 cucumber, shredded",
+            "1 carrot, shredded",
+            "2 tbsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the noodles for 5 minutes until tender, then rinse in cold water and drain.",
+        "Whisk the tahini, soy sauce, vinegar, sesame oil, sugar and garlic with 3 tbsp warm water until smooth.",
+        "Toss the noodles with the dressing, cucumber and carrot.",
+        "Scatter with sesame seeds."
+      ],
+      "notes": [
+        "Serve with chilli oil for extra heat."
+      ],
+      "nutrition": {
+        "kcal": 456,
+        "proteinG": 16,
+        "carbsG": 55,
+        "fatG": 18,
+        "fibreG": 5,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "japanese-potato-salad-with-cucumber-and-ham",
+      "title": "Japanese Potato Salad with Cucumber and Ham",
+      "summary": "Creamy mashed potato salad with cucumber, carrot and ham in a Japanese-style mayonnaise.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g potatoes, peeled and cubed",
+            "1 carrot, thinly sliced",
+            "1 cucumber, thinly sliced",
+            "1/2 tsp salt",
+            "4 tbsp mayonnaise",
+            "1 tsp rice vinegar",
+            "1 tsp sugar",
+            "3 slices ham, diced",
+            "2 eggs"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes and carrot for 15 minutes until soft, adding the eggs for the last 10 minutes.",
+        "Salt the cucumber and squeeze out the liquid after 10 minutes.",
+        "Drain the potatoes, mash roughly, and cool.",
+        "Mix with the mayonnaise, vinegar, sugar, ham, cucumber and chopped eggs."
+      ],
+      "notes": [
+        "Food safety: boil the eggs until fully set and keep the salad chilled, eating within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 322,
+        "proteinG": 14,
+        "carbsG": 33,
+        "fatG": 14,
+        "fibreG": 4,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "japanese-tonkatsu-sauce-sweet-fruity-cutlet-sauce",
+      "title": "Japanese Tonkatsu Sauce Sweet Fruity Cutlet Sauce",
+      "summary": "Thick, sweet and tangy sauce for crumbed cutlets and cabbage.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 5,
+      "servings": 3,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 tbsp tomato sauce",
+            "2 tbsp Worcestershire sauce",
+            "1 tbsp soy sauce",
+            "1 tbsp sugar",
+            "1 tbsp apple juice",
+            "1 tsp mustard"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the tomato sauce, Worcestershire sauce, soy sauce, sugar, apple juice and mustard in a small pot.",
+        "Simmer for 3 minutes until slightly thickened and glossy.",
+        "Cool and pour into a jar.",
+        "Serve with fried pork cutlets or shredded cabbage."
+      ],
+      "notes": [
+        "Keeps in the fridge for 2 weeks."
+      ],
+      "nutrition": {
+        "kcal": 44,
+        "proteinG": 0,
+        "carbsG": 11,
+        "fatG": 0,
+        "fibreG": 0,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "korean-tteokguk-new-year-rice-cake-soup",
+      "title": "Korean Tteokguk New Year Rice Cake Soup",
+      "summary": "Beef broth with sliced rice cakes and egg ribbons, eaten on Lunar New Year.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g sliced rice cakes",
+            "200g beef brisket, sliced",
+            "1.5 litres water",
+            "4 garlic cloves, minced",
+            "2 tbsp soy sauce",
+            "1 tbsp sesame oil",
+            "2 eggs, beaten",
+            "2 spring onions, sliced",
+            "1 sheet nori, shredded"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the beef in the sesame oil for 4 minutes, add the garlic and 1 tbsp soy sauce, then pour in the water.",
+        "Simmer for 20 minutes until the beef is tender.",
+        "Add the rice cakes and cook for 6 minutes until soft and floating.",
+        "Stream in the eggs and stir for 1 minute until set in ribbons.",
+        "Season with the remaining soy sauce and top with spring onions and nori."
+      ],
+      "notes": [
+        "Food safety: simmer the beef until 71°C throughout and the egg is fully set."
+      ],
+      "nutrition": {
+        "kcal": 434,
+        "proteinG": 24,
+        "carbsG": 52,
+        "fatG": 14,
+        "fibreG": 2,
+        "sodiumMg": 1000
+      }
+    },
+    {
+      "id": "indonesian-sambal-matah-raw-lemongrass-sambal",
+      "title": "Indonesian Sambal Matah Raw Lemongrass Sambal",
+      "summary": "Bali-style raw shallot, lemongrass and chilli sambal softened with hot coconut oil.",
+      "cuisine": "indonesian",
+      "mealTypes": [
+        "snack",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 5,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 shallots, thinly sliced",
+            "2 lemongrass stalks, white part only, finely sliced",
+            "4 red chillies, finely sliced",
+            "2 kaffir lime leaves",
+            "1/2 tsp salt",
+            "3 tbsp coconut oil",
+            "2 tbsp lime juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the shallots, lemongrass, chillies and torn lime leaves in a bowl.",
+        "Heat the coconut oil in a small pan for 2 minutes until shimmering and pour over the mix, stirring as it sizzles.",
+        "Add the salt and lime juice.",
+        "Rest for 10 minutes before serving with grilled fish or rice."
+      ],
+      "notes": [
+        "Best eaten the day it is made."
+      ],
+      "nutrition": {
+        "kcal": 99,
+        "proteinG": 1,
+        "carbsG": 7,
+        "fatG": 7,
+        "fibreG": 2,
+        "sodiumMg": 190
+      }
+    },
+    {
+      "id": "indonesian-sambal-kecap-sweet-soy-chilli-sauce",
+      "title": "Indonesian Sambal Kecap Sweet Soy Chilli Sauce",
+      "summary": "Sweet soy sauce with fresh chilli, shallot and lime, a table sauce for satay and grilled food.",
+      "cuisine": "indonesian",
+      "mealTypes": [
+        "snack",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 5,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 tbsp sweet soy sauce",
+            "2 red chillies, finely sliced",
+            "2 shallots, finely diced",
+            "1 garlic clove, minced",
+            "2 tbsp lime juice",
+            "1 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the shallots, garlic and chillies in the oil for 2 minutes until fragrant.",
+        "Remove from the heat and stir in the sweet soy sauce and lime juice.",
+        "Rest for 5 minutes so the flavours blend.",
+        "Serve in a bowl with satay, grilled meat or eggs."
+      ],
+      "notes": [
+        "Keeps in the fridge for 1 week."
+      ],
+      "nutrition": {
+        "kcal": 65,
+        "proteinG": 1,
+        "carbsG": 8,
+        "fatG": 3,
+        "fibreG": 1,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "thai-jok-pork-and-ginger-rice-porridge",
+      "title": "Thai Jok Pork and Ginger Rice Porridge",
+      "summary": "Silky rice porridge with pork meatballs, ginger and a soft egg, a Bangkok breakfast.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g jasmine rice, rinsed",
+            "1.5 litres chicken stock",
+            "250g pork mince",
+            "1 tbsp soy sauce",
+            "1 tsp white pepper",
+            "3 cm ginger, shredded",
+            "2 eggs",
+            "2 spring onions, sliced",
+            "1 small bunch coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the rice in the stock for 25 minutes, stirring, until broken and creamy.",
+        "Mix the pork with the soy sauce and pepper and roll into small balls.",
+        "Drop the meatballs into the porridge and simmer for 6 minutes until cooked through at 75°C.",
+        "Crack in the eggs and stir through for 2 minutes until set.",
+        "Top with ginger, spring onions and coriander."
+      ],
+      "notes": [
+        "Food safety: cook the pork until 75°C and the eggs until fully set."
+      ],
+      "nutrition": {
+        "kcal": 320,
+        "proteinG": 21,
+        "carbsG": 36,
+        "fatG": 10,
+        "fibreG": 1,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "sri-lankan-pol-sambol-coconut-relish",
+      "title": "Sri Lankan Pol Sambol Coconut Relish",
+      "summary": "Spicy dry coconut, chilli and lime relish eaten with hoppers and rice.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack",
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g desiccated coconut",
+            "3 shallots, finely diced",
+            "2 red chillies, finely chopped",
+            "1 tsp chilli flakes",
+            "2 tbsp lime juice",
+            "1/2 tsp salt",
+            "2 tbsp warm water"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the coconut in the warm water for 5 minutes until just moist.",
+        "Mix with the shallots, chillies, chilli flakes and salt.",
+        "Add the lime juice and crush with clean fingers for 2 minutes until the colour is even.",
+        "Serve with breads or rice."
+      ],
+      "notes": [
+        "Best eaten the day it is made."
+      ],
+      "nutrition": {
+        "kcal": 236,
+        "proteinG": 3,
+        "carbsG": 7,
+        "fatG": 20,
+        "fibreG": 8,
+        "sodiumMg": 190
+      }
+    },
+    {
+      "id": "sri-lankan-kiribath-coconut-milk-rice-cake",
+      "title": "Sri Lankan Kiribath Coconut Milk Rice Cake",
+      "summary": "Creamy coconut milk rice pressed into diamonds, served with sambol.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 30,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g short-grain rice, rinsed",
+            "500ml water",
+            "400ml coconut milk",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the rice with the water and salt for 15 minutes until the water is absorbed.",
+        "Stir in the coconut milk and cook for 10 minutes more, stirring, until thick and sticky.",
+        "Press into a greased dish, 3 cm thick, and cool for 10 minutes.",
+        "Cut into diamonds and serve with a spicy sambol."
+      ],
+      "notes": [
+        "Serve with the pol sambol for a classic breakfast."
+      ],
+      "nutrition": {
+        "kcal": 345,
+        "proteinG": 6,
+        "carbsG": 50,
+        "fatG": 13,
+        "fibreG": 2,
+        "sodiumMg": 210
+      }
+    },
+    {
+      "id": "nepali-aloo-achar-spiced-potato-salad-with-sesame",
+      "title": "Nepali Aloo Achar Spiced Potato Salad with Sesame",
+      "summary": "Warm boiled potato with toasted sesame, lemon, chilli and mustard oil style dressing.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "lunch",
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g potatoes, boiled and cubed",
+            "2 tbsp sesame seeds",
+            "3 tbsp vegetable oil",
+            "1 tsp cumin seeds",
+            "1/2 tsp ground turmeric",
+            "1 tsp chilli flakes",
+            "2 tbsp lemon juice",
+            "1/2 tsp salt",
+            "1 small bunch coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the sesame seeds in a dry pan for 2 minutes until golden, then grind coarsely.",
+        "Heat the oil and fry the cumin for 30 seconds until sizzling, then add the turmeric and chilli.",
+        "Pour over the potato with the sesame, lemon juice and salt.",
+        "Toss and scatter with coriander."
+      ],
+      "notes": [
+        "Serve warm or at room temperature."
+      ],
+      "nutrition": {
+        "kcal": 251,
+        "proteinG": 5,
+        "carbsG": 31,
+        "fatG": 11,
+        "fibreG": 4,
+        "sodiumMg": 290
+      }
+    }
+  ]
+}

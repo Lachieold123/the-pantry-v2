@@ -1,0 +1,1111 @@
+{
+  "about": "House recipes, batch 04 (slice B): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "gaeng-som-southern-thai-sour-fish-curry",
+      "title": "Gaeng Som Southern Thai Sour Fish Curry",
+      "summary": "A thin, sharp and fiery orange curry of white fish and vegetables with no coconut, tangy with tamarind.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g firm white fish fillet, cut into chunks",
+            "4 cups water",
+            "3 tbsp red curry paste",
+            "2 tbsp tamarind paste",
+            "2 tbsp fish sauce",
+            "1 tbsp palm sugar",
+            "1 carrot, sliced",
+            "200g green beans, cut into lengths",
+            "1/4 cabbage, chopped",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Stir the curry paste into the water in a pot and bring to a boil until the water turns deep orange.",
+        "Add the tamarind, fish sauce, sugar, carrot and cabbage and simmer for 8 minutes until the carrot is tender.",
+        "Add the beans and fish and simmer gently for 5 minutes until the fish is opaque and flakes easily at 63°C.",
+        "Taste for sour, salty and sweet balance and serve in bowls with the rice."
+      ],
+      "notes": [
+        "Food safety: cook the fish until opaque and flaking, at least 63°C. Contains fish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 454,
+        "proteinG": 36,
+        "carbsG": 66,
+        "fatG": 4,
+        "fibreG": 5,
+        "sodiumMg": 1500
+      }
+    },
+    {
+      "id": "gaeng-panang-thai-peanut-beef-curry",
+      "title": "Gaeng Panang Thai Peanut Beef Curry",
+      "summary": "A thick, mild, sweet-salty coconut curry of tender beef with peanut and lime leaf.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g beef rump, thinly sliced",
+            "2 tbsp red curry paste",
+            "400ml coconut milk",
+            "2 tbsp peanut butter",
+            "2 tbsp fish sauce",
+            "1 tbsp palm sugar",
+            "6 kaffir lime leaves",
+            "1 red capsicum, sliced",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Simmer half the coconut milk with the curry paste in a wide pan for 5 minutes until the oil separates.",
+        "Add the beef, fish sauce and sugar and cook 5 minutes, then stir in the remaining coconut milk, peanut butter and lime leaves.",
+        "Simmer for 10 minutes until the beef is tender and reaches 71°C, adding the capsicum for the last 4 minutes.",
+        "Spoon the curry over the rice, spoon the thickened coconut cream from the top of the pan and serve while hot."
+      ],
+      "notes": [
+        "Food safety: cook the beef to at least 71°C. Contains peanuts and fish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 721,
+        "proteinG": 38,
+        "carbsG": 66,
+        "fatG": 33,
+        "fibreG": 4,
+        "sodiumMg": 1250
+      }
+    },
+    {
+      "id": "kai-palo-thai-five-spice-egg-and-pork-stew",
+      "title": "Kai Palo Thai Five-Spice Egg and Pork Stew",
+      "summary": "Hard-boiled eggs and pork belly in a sweet five-spice broth, served over rice with pickled greens.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g pork belly, cut into cubes",
+            "6 eggs",
+            "3 cups water",
+            "3 tbsp soy sauce",
+            "2 tbsp palm sugar",
+            "1 tsp five-spice powder",
+            "4 cloves garlic, crushed",
+            "1 tbsp fish sauce",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Hard-boil the eggs for 9 minutes, cool in cold water and peel.",
+        "Simmer the pork in the water with soy sauce, sugar, five-spice, garlic and fish sauce for 30 minutes until the pork is tender and reaches 70°C.",
+        "Add the eggs and simmer for 10 minutes until the eggs are tinted brown and the sauce is glossy.",
+        "Cook the rice until tender and fluffy and serve with the stew spooned over."
+      ],
+      "notes": [
+        "Food safety: simmer the pork to at least 70°C and hard-boil the eggs. Contains egg and fish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 652,
+        "proteinG": 28,
+        "carbsG": 62,
+        "fatG": 32,
+        "fibreG": 2,
+        "sodiumMg": 1350
+      }
+    },
+    {
+      "id": "or-lam-luang-prabang-smoky-eggplant-stew",
+      "title": "Or Lam Luang Prabang Smoky Eggplant Stew",
+      "summary": "A Lao stew of pork, eggplant and beans thickened with ground rice and perfumed with dill.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g pork shoulder, cubed",
+            "2 eggplants, cut into chunks",
+            "200g green beans, cut into lengths",
+            "4 cups water",
+            "2 tbsp ground jasmine rice",
+            "3 tbsp fish sauce",
+            "3 shallots, sliced",
+            "4 cloves garlic",
+            "2 red chillies",
+            "30g dill, chopped",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Crush the garlic, shallots and chillies to a paste.",
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Simmer the pork in the water with the paste and fish sauce for 20 minutes.",
+        "Add the eggplant and ground rice and simmer for 10 minutes until the eggplant is tender and the stew thickens.",
+        "Add the beans for the last 4 minutes, check the pork reaches 70°C and is tender, then stir through the dill."
+      ],
+      "notes": [
+        "Food safety: cook the pork to at least 70°C. Contains fish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 548,
+        "proteinG": 32,
+        "carbsG": 66,
+        "fatG": 16,
+        "fibreG": 6,
+        "sodiumMg": 1200
+      }
+    },
+    {
+      "id": "nom-banh-chok-khmer-fish-gravy-noodles",
+      "title": "Nom Banh Chok Khmer Fish Gravy Noodles",
+      "summary": "Fresh rice noodles with a lemongrass and turmeric fish gravy and a platter of raw herbs and vegetables.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g white fish fillet",
+            "3 cups water",
+            "2 stalks lemongrass, chopped",
+            "1 tsp turmeric",
+            "4 cloves garlic",
+            "1 tbsp ginger",
+            "2 tbsp fish sauce",
+            "1/2 cup coconut milk",
+            "400g rice noodles",
+            "1 cucumber, sliced",
+            "100g bean sprouts",
+            "1 cup mint leaves"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the fish in the water for 8 minutes until opaque and flaking at 63°C, then flake it apart.",
+        "Blend the fish with the lemongrass, turmeric, garlic and ginger to a rough paste.",
+        "Return to the pot with the cooking water, fish sauce and coconut milk and simmer 12 minutes until thick.",
+        "Cook the noodles until tender, about 4 minutes, and drain.",
+        "Pile the noodles into bowls, ladle over the gravy and serve with the cucumber, sprouts and mint."
+      ],
+      "notes": [
+        "Food safety: cook the fish until opaque and flaking, at least 63°C. Contains fish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 504,
+        "proteinG": 32,
+        "carbsG": 74,
+        "fatG": 8,
+        "fibreG": 4,
+        "sodiumMg": 1050
+      }
+    },
+    {
+      "id": "shan-khao-swe-burmese-chicken-noodles",
+      "title": "Shan Khao Swe Burmese Chicken Noodles",
+      "summary": "Noodles in a mild tomato and turmeric chicken sauce, topped with crisp garlic and pickled greens.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g chicken thigh fillets, diced",
+            "4 tomatoes, chopped",
+            "1 onion, chopped",
+            "4 cloves garlic, minced",
+            "1 tsp turmeric",
+            "2 tbsp fish sauce",
+            "2 tbsp vegetable oil",
+            "2 cups water",
+            "300g rice noodles",
+            "2 tbsp roasted peanuts, crushed",
+            "1 handful coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onion and garlic in the oil for 5 minutes until golden.",
+        "Add the turmeric, tomatoes and chicken and cook 6 minutes, stirring.",
+        "Pour in the water and fish sauce and simmer 15 minutes until the chicken reaches 75°C and the sauce thickens.",
+        "Cook the noodles until tender, about 4 minutes, and divide into bowls.",
+        "Spoon over the chicken sauce and scatter with peanuts and coriander."
+      ],
+      "notes": [
+        "Food safety: cook the chicken to 75°C in the centre. Contains peanuts and fish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 521,
+        "proteinG": 36,
+        "carbsG": 54,
+        "fatG": 17,
+        "fibreG": 4,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "ohn-no-khao-swe-burmese-coconut-chicken-noodle-soup",
+      "title": "Ohn No Khao Swe Burmese Coconut Chicken Noodle Soup",
+      "summary": "The signature Burmese coconut chicken noodle soup, golden and soothing, topped with boiled egg and chilli.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g chicken thigh fillets, cut into chunks",
+            "400ml coconut milk",
+            "3 cups chicken stock",
+            "1 onion, chopped",
+            "4 cloves garlic",
+            "1 tbsp ginger",
+            "1 tsp turmeric",
+            "2 tbsp fish sauce",
+            "2 tbsp chickpea flour",
+            "300g egg noodles",
+            "4 eggs",
+            "1 lime, in wedges"
+          ]
+        }
+      ],
+      "steps": [
+        "Hard-boil the eggs for 9 minutes, cool and peel.",
+        "Blend the onion, garlic and ginger, fry in a pot with the turmeric for 5 minutes.",
+        "Add the chicken, stock, coconut milk and fish sauce and simmer for 20 minutes until the chicken reaches 75°C.",
+        "Stir the chickpea flour with 1/4 cup cold water, add and simmer 5 minutes until the soup thickens.",
+        "Boil the noodles until tender, about 4 minutes, divide into bowls, ladle over the soup and top with halved eggs and lime."
+      ],
+      "notes": [
+        "Food safety: cook the chicken to 75°C in the centre and hard-boil the eggs. Contains egg, gluten and fish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 738,
+        "proteinG": 42,
+        "carbsG": 64,
+        "fatG": 34,
+        "fibreG": 4,
+        "sodiumMg": 1200
+      }
+    },
+    {
+      "id": "canh-chua-ca-southern-vietnamese-sour-fish-soup",
+      "title": "Canh Chua Ca Southern Vietnamese Sour Fish Soup",
+      "summary": "A sweet-sour tamarind soup of fish, tomato and pineapple with sprouts and herbs.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g firm white fish fillet, cut into chunks",
+            "4 cups water",
+            "2 tbsp tamarind paste",
+            "2 tomatoes, cut into wedges",
+            "1 cup pineapple pieces",
+            "100g bean sprouts",
+            "2 tbsp fish sauce",
+            "1 tbsp sugar",
+            "2 cloves garlic, minced",
+            "1 cup coriander leaves",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Bring the water, tamarind, garlic, fish sauce and sugar to a simmer for 5 minutes.",
+        "Add the tomatoes and pineapple and simmer 4 minutes.",
+        "Add the fish and cook gently for 5 minutes until opaque and flaking at 63°C.",
+        "Stir through the sprouts and coriander and serve with the rice."
+      ],
+      "notes": [
+        "Food safety: cook the fish until opaque and flaking, at least 63°C. Contains fish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 417,
+        "proteinG": 30,
+        "carbsG": 66,
+        "fatG": 3,
+        "fibreG": 3,
+        "sodiumMg": 1050
+      }
+    },
+    {
+      "id": "nasi-goreng-kampung-anchovy-fried-rice",
+      "title": "Nasi Goreng Kampung Anchovy Fried Rice",
+      "summary": "Village-style fried rice with chilli, anchovies and greens, topped with a fried egg.",
+      "cuisine": "indonesian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g cooked jasmine rice, chilled",
+            "4 eggs",
+            "6 anchovy fillets",
+            "4 shallots, sliced",
+            "3 cloves garlic",
+            "2 red chillies",
+            "2 tbsp kecap manis",
+            "150g green beans, sliced",
+            "3 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Crush the shallots, garlic and chillies to a paste.",
+        "Heat 2 tbsp oil in a wok and fry the paste and anchovies for 2 minutes.",
+        "Add the beans and rice and fry on high for 5 minutes, stirring until piping hot, then add the kecap manis.",
+        "Fry the eggs in the remaining oil until the whites are set.",
+        "Top each serve with an egg."
+      ],
+      "notes": [
+        "Food safety: use rice that was chilled within 1 hour of cooking, reheat until steaming hot, and fry the eggs until the whites are set. Contains egg and fish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 500,
+        "proteinG": 17,
+        "carbsG": 66,
+        "fatG": 18,
+        "fibreG": 3,
+        "sodiumMg": 1000
+      }
+    },
+    {
+      "id": "bak-kut-teh-klang-herbal-pork-rib-soup",
+      "title": "Bak Kut Teh Klang Herbal Pork Rib Soup",
+      "summary": "A peppery garlic and herb pork rib soup, simmered long and eaten with rice and dark soy.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 90,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1kg pork ribs, cut into pieces",
+            "8 cups water",
+            "2 bulbs garlic, halved",
+            "1 tbsp black peppercorns, crushed",
+            "3 tbsp soy sauce",
+            "1 tbsp dark soy sauce",
+            "1 tsp white pepper",
+            "200g firm tofu puffs",
+            "200g bok choy",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Blanch the ribs in boiling water for 5 minutes, drain and rinse.",
+        "Simmer the ribs in the 8 cups water with the garlic, spice mix, soy sauce and pepper for 75 minutes until the meat is tender and reaches 70°C.",
+        "Add the tofu puffs and simmer 8 minutes.",
+        "Cook the rice until tender and fluffy and blanch the bok choy for 2 minutes.",
+        "Serve the soup with the rice, bok choy and the dark soy for dipping."
+      ],
+      "notes": [
+        "Food safety: simmer the ribs until tender and at least 70°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 668,
+        "proteinG": 36,
+        "carbsG": 66,
+        "fatG": 28,
+        "fibreG": 4,
+        "sodiumMg": 1250
+      }
+    },
+    {
+      "id": "chilli-prawns-singapore-sweet-tangy-style",
+      "title": "Chilli Prawns Singapore Sweet-Tangy Style",
+      "summary": "Prawns in a sweet-tangy tomato chilli sauce with a ribboned egg, mopped up with rice or buns.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g raw prawns, peeled",
+            "3 tbsp tomato sauce",
+            "2 tbsp sweet chilli sauce",
+            "2 red chillies, chopped",
+            "4 cloves garlic, minced",
+            "1 tbsp ginger",
+            "2 tbsp vegetable oil",
+            "1 tsp cornflour",
+            "1/2 cup water",
+            "2 eggs, beaten",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Fry the garlic, ginger and chillies in the oil for 1 minute, then add the prawns and cook 3 minutes until pink and curled.",
+        "Stir the tomato sauce, sweet chilli sauce, cornflour and water together and pour in, simmering 2 minutes until glossy.",
+        "Stir the beaten egg slowly into the sauce and cook 1 minute until it forms ribbons and sets.",
+        "Spoon the prawns and sauce over the rice, scatter with the remaining egg ribbons and serve while hot."
+      ],
+      "notes": [
+        "Food safety: cook the prawns until pink and opaque, at least 63°C inside, and the eggs until set. Contains egg and shellfish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 546,
+        "proteinG": 38,
+        "carbsG": 66,
+        "fatG": 14,
+        "fibreG": 2,
+        "sodiumMg": 1050
+      }
+    },
+    {
+      "id": "sinigang-na-baboy-sour-tamarind-pork-soup",
+      "title": "Sinigang na Baboy Sour Tamarind Pork Soup",
+      "summary": "Tender pork in a sour tamarind broth with radish, beans and greens.",
+      "cuisine": "filipino",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 60,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g pork ribs, cut into pieces",
+            "6 cups water",
+            "3 tbsp tamarind paste",
+            "1 onion, quartered",
+            "2 tomatoes, quartered",
+            "1 daikon, sliced",
+            "200g green beans",
+            "200g spinach",
+            "3 tbsp fish sauce",
+            "2 green chillies",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the pork with the onion, tomatoes and water for 40 minutes, skimming, until tender.",
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Stir in the tamarind, daikon and fish sauce and simmer 8 minutes.",
+        "Add the beans and chillies and simmer 4 minutes, check the pork reaches 70°C and add the spinach for the last minute.",
+        "Serve in bowls with the rice."
+      ],
+      "notes": [
+        "Food safety: simmer the pork until tender and at least 70°C. Contains fish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 624,
+        "proteinG": 34,
+        "carbsG": 66,
+        "fatG": 24,
+        "fibreG": 4,
+        "sodiumMg": 1300
+      }
+    },
+    {
+      "id": "tinolang-manok-filipino-ginger-chicken-soup",
+      "title": "Tinolang Manok Filipino Ginger Chicken Soup",
+      "summary": "A clear ginger and chicken soup with green papaya-style chayote and leafy greens, plain and restorative.",
+      "cuisine": "filipino",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g chicken drumsticks",
+            "6 cups water",
+            "4 tbsp ginger, sliced",
+            "1 onion, sliced",
+            "4 cloves garlic",
+            "2 zucchini, cut into wedges",
+            "3 tbsp fish sauce",
+            "200g spinach",
+            "1 tbsp vegetable oil",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onion, garlic and ginger in the oil for 4 minutes until fragrant.",
+        "Add the chicken and fish sauce and cook 4 minutes.",
+        "Pour in the water and simmer for 20 minutes until the chicken reaches 75°C.",
+        "Add the chayote and simmer 8 minutes until tender, then stir in the spinach for 1 minute.",
+        "Cook the rice until tender and fluffy and serve alongside."
+      ],
+      "notes": [
+        "Food safety: cook the chicken to 75°C at the thickest part. Contains fish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 542,
+        "proteinG": 36,
+        "carbsG": 66,
+        "fatG": 14,
+        "fibreG": 4,
+        "sodiumMg": 1250
+      }
+    },
+    {
+      "id": "egg-kari-mamak-malaysian-egg-curry",
+      "title": "Egg Kari Mamak Malaysian Egg Curry",
+      "summary": "Boiled eggs in a spiced tomato and coconut gravy, mopped up with rice.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 eggs",
+            "1 onion, chopped",
+            "3 cloves garlic",
+            "1 tbsp ginger",
+            "2 tbsp curry powder",
+            "4 tomatoes, chopped",
+            "200ml coconut milk",
+            "1 cup water",
+            "2 tbsp vegetable oil",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Hard-boil the eggs for 9 minutes, cool and peel.",
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Fry the onion, garlic and ginger in the oil for 5 minutes until soft, then stir in the curry powder for 1 minute.",
+        "Add the tomatoes, coconut milk and water and simmer 12 minutes until thick.",
+        "Slide in the eggs, warm 3 minutes and serve with the rice."
+      ],
+      "notes": [
+        "Food safety: hard-boil the eggs until the yolk is firm. Contains egg. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 590,
+        "proteinG": 21,
+        "carbsG": 66,
+        "fatG": 26,
+        "fibreG": 4,
+        "sodiumMg": 750
+      }
+    },
+    {
+      "id": "kai-jeow-moo-sap-thai-pork-omelette-rice-bowl",
+      "title": "Kai Jeow Moo Sap Thai Pork Omelette Rice Bowl",
+      "summary": "A puffy, crisp-edged omelette with minced pork over rice, drizzled with a salty-sweet sauce.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 eggs",
+            "150g minced pork",
+            "1 tbsp fish sauce",
+            "1 tsp soy sauce",
+            "1/2 cup vegetable oil",
+            "1 cup jasmine rice",
+            "1 tbsp sweet chilli sauce",
+            "1 cucumber, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Beat the eggs with the fish sauce and soy sauce and stir through the pork.",
+        "Heat the oil in a wok until shimmering and pour in the egg mix from a height.",
+        "Fry for 2 minutes per side until puffed, golden and the pork reaches 75°C, then drain on paper.",
+        "Serve over the rice with the sweet chilli sauce and cucumber."
+      ],
+      "notes": [
+        "Food safety: cook the pork mince to 75°C and the eggs until set. Contains egg and fish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 770,
+        "proteinG": 30,
+        "carbsG": 76,
+        "fatG": 38,
+        "fibreG": 2,
+        "sodiumMg": 1000
+      }
+    },
+    {
+      "id": "mee-rebus-mamak-sweet-potato-gravy-noodles",
+      "title": "Mee Rebus Mamak Sweet Potato Gravy Noodles",
+      "summary": "Yellow noodles in a thick sweet-potato and peanut gravy topped with egg, tofu and lime.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 sweet potatoes, peeled and cubed",
+            "3 cups water",
+            "2 tbsp roasted peanuts",
+            "3 shallots",
+            "3 cloves garlic",
+            "1 tbsp curry powder",
+            "2 tbsp vegetable oil",
+            "2 tbsp soy sauce",
+            "300g egg noodles",
+            "4 eggs",
+            "200g firm tofu, cubed",
+            "1 lime, in wedges"
+          ]
+        }
+      ],
+      "steps": [
+        "Hard-boil the eggs for 9 minutes, cool and peel.",
+        "Boil the sweet potato in the water for 12 minutes until soft, then blend with the peanuts, shallots and garlic.",
+        "Fry the curry powder in the oil for 1 minute, add the blended gravy and soy sauce and simmer 12 minutes until thick.",
+        "Boil the noodles until tender, about 4 minutes, and divide into bowls.",
+        "Pour over the gravy and top with halved egg, tofu and lime."
+      ],
+      "notes": [
+        "Food safety: hard-boil the eggs until the yolk is firm. Contains egg, gluten and peanuts. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 576,
+        "proteinG": 22,
+        "carbsG": 78,
+        "fatG": 18,
+        "fibreG": 7,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "bun-rieu-cua-vietnamese-tomato-crab-style-noodle-soup",
+      "title": "Bun Rieu Cua Vietnamese Tomato Crab-Style Noodle Soup",
+      "summary": "A tomato broth with soft prawn-and-egg cakes, tofu and rice noodles.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g raw prawns, peeled and finely chopped",
+            "2 eggs",
+            "4 tomatoes, chopped",
+            "5 cups water",
+            "2 shallots, sliced",
+            "2 tbsp fish sauce",
+            "1 tbsp tamarind paste",
+            "2 tbsp vegetable oil",
+            "200g firm tofu, cubed",
+            "300g rice noodles",
+            "100g bean sprouts"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the prawns, eggs and 1 tsp fish sauce into a paste.",
+        "Fry the shallots and tomatoes in the oil for 6 minutes until soft.",
+        "Add the water, tamarind and remaining fish sauce and bring to a simmer until steaming.",
+        "Drop spoonfuls of the prawn mix into the broth and simmer 8 minutes until the cakes float, are firm and pink, then add the tofu.",
+        "Cook the noodles until tender, about 4 minutes, and serve with broth, cakes and sprouts."
+      ],
+      "notes": [
+        "Food safety: cook the prawn cakes until firm and pink, at least 63°C inside, and the eggs until set. Contains egg, fish and shellfish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 482,
+        "proteinG": 30,
+        "carbsG": 62,
+        "fatG": 12,
+        "fibreG": 3,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "pho-ga-hanoi-chicken-noodle-soup",
+      "title": "Pho Ga Hanoi Chicken Noodle Soup",
+      "summary": "A clear chicken broth with ginger, onion and star anise over rice noodles and herbs.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 50,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 chicken, about 1.4kg",
+            "8 cups water",
+            "1 onion, halved",
+            "6 slices ginger",
+            "2 star anise",
+            "2 tbsp fish sauce",
+            "300g rice noodles",
+            "2 spring onions, sliced",
+            "1 cup coriander leaves",
+            "100g bean sprouts",
+            "1 lime, in wedges"
+          ]
+        }
+      ],
+      "steps": [
+        "Char the onion and ginger in a dry pan for 5 minutes.",
+        "Simmer the chicken with the onion, ginger, star anise and water for 40 minutes until the thickest part reaches 75°C.",
+        "Lift out the chicken, shred the meat and strain the broth, seasoning with fish sauce and 1 tsp salt.",
+        "Cook the noodles until tender, about 4 minutes, and divide into bowls.",
+        "Top with the chicken, ladle over the hot broth and serve with spring onion, coriander, sprouts and lime."
+      ],
+      "notes": [
+        "Food safety: cook the chicken to 75°C at the thickest part. Contains fish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 516,
+        "proteinG": 40,
+        "carbsG": 56,
+        "fatG": 14,
+        "fibreG": 3,
+        "sodiumMg": 1200
+      }
+    },
+    {
+      "id": "cha-ca-la-vong-turmeric-fish-with-dill",
+      "title": "Cha Ca La Vong Turmeric Fish with Dill",
+      "summary": "Hanoi turmeric fish seared with dill and spring onion, served over noodles with peanuts and fish dip.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g firm white fish fillet, cut into chunks",
+            "1 tbsp turmeric",
+            "1 tbsp ginger, grated",
+            "3 tbsp vegetable oil",
+            "2 cups dill, chopped",
+            "4 spring onions, cut into lengths",
+            "300g rice noodles",
+            "3 tbsp roasted peanuts",
+            "3 tbsp fish sauce",
+            "1 tbsp lime juice",
+            "1 tsp sugar"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the fish with the turmeric, ginger and 1 tsp salt.",
+        "Cook the noodles until tender, about 4 minutes, and drain.",
+        "Stir the fish sauce, lime juice, sugar and 2 tbsp water into a dip.",
+        "Sear the fish in the oil for 6 minutes until golden and opaque, flaking easily at 63°C.",
+        "Toss in the dill and spring onions for 1 minute, then serve over the noodles with peanuts and the dip."
+      ],
+      "notes": [
+        "Food safety: cook the fish until opaque and flaking, at least 63°C. Contains fish and peanuts. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 562,
+        "proteinG": 38,
+        "carbsG": 56,
+        "fatG": 20,
+        "fibreG": 3,
+        "sodiumMg": 1300
+      }
+    },
+    {
+      "id": "gaeng-hung-lay-northern-thai-pork-belly-curry",
+      "title": "Gaeng Hung Lay Northern Thai Pork Belly Curry",
+      "summary": "A dry-spiced Chiang Mai pork curry with ginger and tamarind, sweet-sour and rich, with no coconut milk.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 75,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g pork belly, cut into cubes",
+            "3 tbsp red curry paste",
+            "2 tbsp tamarind paste",
+            "2 tbsp palm sugar",
+            "2 tbsp fish sauce",
+            "3 tbsp ginger, cut into matchsticks",
+            "6 cloves garlic, crushed",
+            "2 tbsp soy sauce",
+            "2 cups water",
+            "2 tbsp peanuts, crushed",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the curry paste in a dry heavy pot for 3 minutes, then add the pork and brown for 6 minutes.",
+        "Add the water, tamarind, sugar, fish sauce and soy sauce and simmer, covered, for 50 minutes until the pork is tender.",
+        "Add the ginger and garlic and simmer uncovered for 15 minutes until the sauce is thick and the pork reaches 70°C.",
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Scatter the curry with peanuts and serve spooned over the rice with a little of the glossy sauce."
+      ],
+      "notes": [
+        "Food safety: simmer the pork until tender and at least 70°C. Contains peanuts and fish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 784,
+        "proteinG": 30,
+        "carbsG": 70,
+        "fatG": 42,
+        "fibreG": 3,
+        "sodiumMg": 1350
+      }
+    },
+    {
+      "id": "mie-aceh-spicy-curried-prawn-noodles",
+      "title": "Mie Aceh Spicy Curried Prawn Noodles",
+      "summary": "Thick noodles in a spicy, curry-spiced tomato sauce with prawns, from the Sumatran coast.",
+      "cuisine": "indonesian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g raw prawns, peeled",
+            "300g egg noodles",
+            "4 shallots",
+            "4 cloves garlic",
+            "3 red chillies",
+            "1 tbsp curry powder",
+            "2 tomatoes, chopped",
+            "1 cup water",
+            "2 tbsp kecap manis",
+            "2 tbsp vegetable oil",
+            "2 eggs",
+            "100g bean sprouts"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the shallots, garlic and chillies to a paste.",
+        "Boil the noodles until tender, about 4 minutes, and drain.",
+        "Fry the paste and curry powder in the oil for 4 minutes, add the tomatoes and cook 4 minutes until soft.",
+        "Add the prawns, water and kecap manis and cook 4 minutes until the prawns turn pink and opaque.",
+        "Push to the side, scramble the eggs until set, toss in the noodles and sprouts for 2 minutes until hot and coated."
+      ],
+      "notes": [
+        "Food safety: cook the prawns until pink and opaque, at least 63°C inside, and the eggs until set. Contains egg, gluten and shellfish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 528,
+        "proteinG": 32,
+        "carbsG": 62,
+        "fatG": 16,
+        "fibreG": 4,
+        "sodiumMg": 950
+      }
+    }
+  ]
+}

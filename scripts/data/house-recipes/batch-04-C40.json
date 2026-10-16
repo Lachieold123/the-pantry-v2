@@ -1,0 +1,1206 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "vegan-oat-porridge-with-stewed-apple-and-cinnamon",
+      "title": "Vegan Oat Porridge with Stewed Apple and Cinnamon",
+      "summary": "Creamy oats cooked in soy milk with soft cinnamon apple, entirely plant-based.",
+      "cuisine": "british",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup rolled oats",
+            "2 cups soy milk",
+            "2 apples, diced",
+            "1 tsp ground cinnamon",
+            "1 tbsp maple syrup",
+            "2 tbsp walnuts, chopped",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the apples with 2 tbsp of water and half the cinnamon for 6 minutes until soft.",
+        "Cook the oats with the soy milk and salt over medium heat for 6 minutes, stirring, until thick and creamy.",
+        "Spoon into bowls, top with the apple, maple syrup and walnuts."
+      ],
+      "notes": [
+        "Use certified gluten-free oats for coeliacs.",
+        "Stewed apple keeps 4 days."
+      ],
+      "nutrition": {
+        "kcal": 407,
+        "proteinG": 14,
+        "carbsG": 63,
+        "fatG": 9,
+        "fibreG": 9,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "gluten-free-buckwheat-pancakes-with-cinnamon-apple",
+      "title": "Gluten-Free Buckwheat Pancakes with Cinnamon Apple",
+      "summary": "Light buckwheat flour pancakes with a sharp spoonful of cinnamon apple.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup buckwheat flour",
+            "1 tsp baking powder",
+            "1 egg",
+            "1 cup milk",
+            "1 tbsp butter, melted",
+            "1 tbsp butter, extra, for the pan",
+            "2 apples, sliced",
+            "1 tbsp honey"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the flour, baking powder, egg, milk and melted butter into a smooth batter and rest 5 minutes.",
+        "Simmer the apples with the honey, a pinch of cinnamon and 2 tbsp of water for 5 minutes until soft and syrupy.",
+        "Cook ladlefuls of batter in a buttered pan over medium heat for 2 minutes a side until golden and cooked through.",
+        "Stack the pancakes and spoon over the apple."
+      ],
+      "notes": [
+        "Food safety: cook the pancakes until the centres are set and no longer wet, especially for pregnant women, older people and young children.",
+        "Check the buckwheat flour label if cooking for coeliacs."
+      ],
+      "nutrition": {
+        "kcal": 281,
+        "proteinG": 8,
+        "carbsG": 40,
+        "fatG": 9,
+        "fibreG": 4,
+        "sodiumMg": 160
+      }
+    },
+    {
+      "id": "vegan-chickpea-flour-pancakes-with-spinach-and-tomato",
+      "title": "Vegan Chickpea Flour Pancakes with Spinach and Tomato",
+      "summary": "Savoury besan pancakes cooked with spinach and cherry tomatoes, no egg or dairy.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup chickpea flour",
+            "1 cup water",
+            "1/2 tsp ground turmeric",
+            "1/2 tsp ground cumin",
+            "1/2 tsp salt",
+            "1 cup baby spinach, chopped",
+            "100 g cherry tomatoes, halved",
+            "2 tbsp olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the chickpea flour, water, turmeric, cumin and salt into a smooth batter and stir in the spinach.",
+        "Heat half the oil in a non-stick pan and pour in half the batter, scattering with tomatoes.",
+        "Cook for 3 minutes until the base is golden and the top is set, then flip and cook 2 minutes more until firm.",
+        "Repeat with the remaining oil and batter."
+      ],
+      "notes": [
+        "Let the batter sit 10 minutes for a softer texture.",
+        "Serve with coconut yoghurt."
+      ],
+      "nutrition": {
+        "kcal": 305,
+        "proteinG": 13,
+        "carbsG": 26,
+        "fatG": 15,
+        "fibreG": 7,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "tofu-scramble-with-turmeric-kale-and-cherry-tomatoes",
+      "title": "Tofu Scramble with Turmeric, Kale and Cherry Tomatoes",
+      "summary": "Savoury crumbled tofu scramble with kale and cherry tomatoes, vegan and high in protein.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300 g firm tofu",
+            "1 tbsp olive oil",
+            "1/2 tsp ground turmeric",
+            "1/2 tsp ground cumin",
+            "1 tbsp soy sauce",
+            "1 tbsp nutritional yeast",
+            "2 cups shredded kale",
+            "100 g cherry tomatoes, halved",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Crumble the tofu into a bowl with your hands.",
+        "Heat the oil in a frying pan, add the tofu, turmeric and cumin and cook for 5 minutes until the edges colour and most of the water has gone.",
+        "Stir in the kale, tomatoes and soy sauce and cook for 3 minutes until the kale wilts.",
+        "Finish with the nutritional yeast and pepper."
+      ],
+      "notes": [
+        "Serve on gluten-free toast with avocado.",
+        "Use tamari for gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 273,
+        "proteinG": 22,
+        "carbsG": 10,
+        "fatG": 15,
+        "fibreG": 5,
+        "sodiumMg": 570
+      }
+    },
+    {
+      "id": "gluten-free-quinoa-breakfast-bowl-with-cinnamon-pears",
+      "title": "Gluten-Free Quinoa Breakfast Bowl with Cinnamon Pears",
+      "summary": "Warm quinoa simmered in milk with spiced pears and toasted seeds.",
+      "cuisine": "american",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 20,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1/2 cup white quinoa, rinsed",
+            "1 cup milk",
+            "1/2 cup water",
+            "2 pears, diced",
+            "1 tsp ground cinnamon",
+            "1 tbsp maple syrup",
+            "2 tbsp pumpkin seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the quinoa with the milk and water for 15 minutes until soft and the liquid is mostly absorbed.",
+        "Cook the pears in a small pan with the cinnamon and 2 tbsp of water for 5 minutes until tender.",
+        "Spoon the quinoa into bowls, top with the pears, maple syrup and pumpkin seeds."
+      ],
+      "notes": [
+        "Use oat or soy milk to make it vegan.",
+        "Quinoa keeps 4 days cooked for quick bowls."
+      ],
+      "nutrition": {
+        "kcal": 369,
+        "proteinG": 12,
+        "carbsG": 56,
+        "fatG": 9,
+        "fibreG": 8,
+        "sodiumMg": 80
+      }
+    },
+    {
+      "id": "vegan-coconut-jasmine-rice-porridge-with-lime-and-mango",
+      "title": "Vegan Coconut Jasmine Rice Porridge with Lime and Mango",
+      "summary": "Creamy coconut milk rice pudding, topped with fresh mango.",
+      "cuisine": "pacific-islands",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3/4 cup jasmine rice",
+            "400 ml can coconut milk",
+            "1 1/2 cups water",
+            "2 tbsp maple syrup",
+            "1 pinch salt",
+            "1 mango, diced",
+            "2 tbsp shredded coconut, toasted"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the rice with the coconut milk, water and salt, stirring often, for 28 minutes until the rice is very soft and the pudding is thick.",
+        "Stir through the maple syrup.",
+        "Serve warm in bowls topped with the mango and toasted coconut."
+      ],
+      "notes": [
+        "Stir often at the end to prevent sticking.",
+        "Thin with a splash of water if it thickens on standing."
+      ],
+      "nutrition": {
+        "kcal": 382,
+        "proteinG": 5,
+        "carbsG": 53,
+        "fatG": 16,
+        "fibreG": 3,
+        "sodiumMg": 90
+      }
+    },
+    {
+      "id": "gluten-free-polenta-porridge-with-maple-and-walnuts",
+      "title": "Gluten-Free Polenta Porridge with Maple and Walnuts",
+      "summary": "Soft, creamy cornmeal porridge sweetened with maple and topped with crunchy walnuts.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3/4 cup polenta",
+            "3 cups water",
+            "1 cup milk",
+            "1 pinch salt",
+            "3 tbsp maple syrup",
+            "1/2 cup walnuts, toasted",
+            "1 tsp ground cinnamon"
+          ]
+        }
+      ],
+      "steps": [
+        "Bring the water, milk and salt to a gentle simmer until steaming.",
+        "Whisk in the polenta in a thin stream and cook for 12 minutes, stirring often, until thick and no longer gritty.",
+        "Serve in bowls topped with maple syrup, walnuts and cinnamon."
+      ],
+      "notes": [
+        "Use soy milk for dairy-free.",
+        "Leftovers set firm; slice and pan-fry."
+      ],
+      "nutrition": {
+        "kcal": 294,
+        "proteinG": 7,
+        "carbsG": 38,
+        "fatG": 12,
+        "fibreG": 3,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "vegan-savoury-oats-with-mushrooms-and-soy",
+      "title": "Vegan Savoury Oats with Mushrooms and Soy",
+      "summary": "Savoury rolled oats cooked in stock with fried mushrooms and spring onion.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup rolled oats",
+            "2 1/2 cups vegetable stock",
+            "200 g mushrooms, sliced",
+            "1 tbsp vegetable oil",
+            "1 tbsp soy sauce",
+            "2 spring onions, sliced",
+            "1 tsp sesame oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the mushrooms in the oil over high heat for 5 minutes until golden and the liquid has gone.",
+        "Simmer the oats in the stock for 6 minutes, stirring, until thick and creamy.",
+        "Stir in the soy sauce, then top with the mushrooms, spring onion and sesame oil."
+      ],
+      "notes": [
+        "Add a soft egg for non-vegan protein.",
+        "Use tamari and gluten-free oats for coeliacs."
+      ],
+      "nutrition": {
+        "kcal": 305,
+        "proteinG": 10,
+        "carbsG": 38,
+        "fatG": 11,
+        "fibreG": 7,
+        "sodiumMg": 880
+      }
+    },
+    {
+      "id": "smoky-sweet-potato-capsicum-and-bean-hash-vegan",
+      "title": "Smoky Sweet Potato, Capsicum and Bean Hash, Vegan",
+      "summary": "Crisp sweet potato cubes, black beans and capsicum with smoky paprika.",
+      "cuisine": "american",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 3,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 sweet potatoes, diced",
+            "1 red capsicum, diced",
+            "400 g can black beans, drained",
+            "2 tbsp olive oil",
+            "1 tsp smoked paprika",
+            "1 tsp ground cumin",
+            "2 spring onions, sliced",
+            "1/2 tsp salt",
+            "1 avocado, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the sweet potato in the oil over medium heat for 15 minutes, turning, until tender and browned.",
+        "Add the capsicum, paprika, cumin and salt and cook for 5 minutes until softened.",
+        "Stir in the beans and cook for 3 minutes until hot.",
+        "Top with spring onion and avocado."
+      ],
+      "notes": [
+        "Cover the pan for the first 5 minutes to soften the sweet potato faster.",
+        "Add a squeeze of lime."
+      ],
+      "nutrition": {
+        "kcal": 435,
+        "proteinG": 11,
+        "carbsG": 52,
+        "fatG": 17,
+        "fibreG": 15,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "japanese-breakfast-rice-bowl-with-soft-egg-and-nori",
+      "title": "Japanese Breakfast Rice Bowl with Soft Egg and Nori",
+      "summary": "Warm rice topped with a soft-boiled egg, nori and soy for a quick Japanese-style breakfast.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups cooked short-grain rice, warm",
+            "2 eggs",
+            "1 sheet nori, shredded",
+            "2 spring onions, sliced",
+            "1 tbsp soy sauce",
+            "1 tsp sesame oil",
+            "1 tsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the eggs for 6 1/2 minutes until the whites are set and the yolks soft, then cool in cold water and peel.",
+        "Divide the warm rice between bowls and drizzle with the sesame oil.",
+        "Top with the halved eggs, nori, spring onion, soy sauce and sesame seeds."
+      ],
+      "notes": [
+        "Food safety: soft yolks carry a small salmonella risk; pregnant women, older people and young children should boil eggs until firm.",
+        "Cool leftover rice and refrigerate within 1 hour; reheat until steaming hot and eat within 1 day."
+      ],
+      "nutrition": {
+        "kcal": 352,
+        "proteinG": 13,
+        "carbsG": 56,
+        "fatG": 8,
+        "fibreG": 2,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "mexican-breakfast-bowl-with-black-beans-eggs-and-salsa",
+      "title": "Mexican Breakfast Bowl with Black Beans, Eggs and Salsa",
+      "summary": "Black beans, rice and fried eggs topped with fresh salsa and avocado.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup cooked brown rice",
+            "200 g canned black beans, drained",
+            "2 eggs",
+            "1 tbsp olive oil",
+            "1 tomato, diced",
+            "1/4 red onion, finely diced",
+            "2 tbsp coriander leaves",
+            "1 lime, juiced",
+            "1/2 avocado, sliced",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the beans and rice together in a small pan for 3 minutes until hot.",
+        "Mix the tomato, onion, coriander, lime juice and salt for a quick salsa.",
+        "Fry the eggs in the oil over medium heat for 3 minutes until the whites are set and opaque.",
+        "Spoon the rice and beans into bowls and top with the eggs, salsa and avocado."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set; pregnant women, older people and young children should have yolks firm.",
+        "Add hot sauce to taste."
+      ],
+      "nutrition": {
+        "kcal": 450,
+        "proteinG": 18,
+        "carbsG": 48,
+        "fatG": 18,
+        "fibreG": 12,
+        "sodiumMg": 420
+      }
+    },
+    {
+      "id": "turkish-menemen-breakfast-bowl-with-yoghurt",
+      "title": "Turkish Menemen Breakfast Bowl with Yoghurt",
+      "summary": "Soft scrambled eggs cooked in a pepper and tomato sauce, served over cool garlic yoghurt.",
+      "cuisine": "turkish",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "1 green capsicum, diced",
+            "3 tomatoes, grated",
+            "1/2 tsp chilli flakes",
+            "4 eggs",
+            "1/2 cup Greek yoghurt",
+            "1 clove garlic, crushed",
+            "1/4 tsp salt",
+            "1 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the capsicum in the oil for 4 minutes until soft.",
+        "Add the tomatoes and chilli and simmer for 6 minutes until thick and jammy.",
+        "Crack the eggs in and stir gently for 3 minutes until just set but still creamy and cooked through.",
+        "Spoon the yoghurt mixed with garlic and salt into bowls, top with the eggs and parsley."
+      ],
+      "notes": [
+        "Food safety: cook eggs until fully set, especially for pregnant women, older people and young children.",
+        "Serve with crusty bread."
+      ],
+      "nutrition": {
+        "kcal": 296,
+        "proteinG": 19,
+        "carbsG": 13,
+        "fatG": 18,
+        "fibreG": 3,
+        "sodiumMg": 530
+      }
+    },
+    {
+      "id": "savoury-masala-oats-bowl-with-peas-and-carrot",
+      "title": "Savoury Masala Oats Bowl with Peas and Carrot",
+      "summary": "Spiced savoury oats cooked with onion, peas and carrot, a quick Indian-style breakfast.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup rolled oats",
+            "1 tbsp vegetable oil",
+            "1 tsp cumin seeds",
+            "1/2 onion, finely chopped",
+            "1 carrot, grated",
+            "1/2 cup frozen peas",
+            "1 tsp garam masala",
+            "1/2 tsp ground turmeric",
+            "2 cups water",
+            "1/2 tsp salt",
+            "2 tbsp coriander leaves"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the cumin seeds in the oil for 30 seconds until they sizzle, then add the onion and cook 4 minutes until soft.",
+        "Add the carrot, garam masala and turmeric and cook for 2 minutes until fragrant.",
+        "Stir in the oats, water, peas and salt and simmer for 6 minutes, stirring, until thick.",
+        "Serve topped with coriander."
+      ],
+      "notes": [
+        "Add a squeeze of lemon to brighten.",
+        "Use gluten-free oats for coeliacs."
+      ],
+      "nutrition": {
+        "kcal": 302,
+        "proteinG": 10,
+        "carbsG": 39,
+        "fatG": 10,
+        "fibreG": 8,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "middle-eastern-shakshuka-grain-bowl",
+      "title": "Middle Eastern Shakshuka Grain Bowl",
+      "summary": "Warm barley or rice topped with eggs poached in a spiced tomato sauce.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup cooked pearl barley, warm",
+            "1 tbsp olive oil",
+            "1/2 onion, diced",
+            "1 red capsicum, diced",
+            "400 g can crushed tomatoes",
+            "1 tsp ground cumin",
+            "1 tsp sweet paprika",
+            "2 eggs",
+            "2 tbsp chopped parsley",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onion and capsicum in the oil for 6 minutes until soft.",
+        "Stir in the cumin, paprika, tomatoes and salt and simmer for 8 minutes until thick.",
+        "Make two wells, crack in the eggs, cover and cook for 5 minutes until the whites are set.",
+        "Spoon the barley into bowls, top with the eggs and sauce, and scatter with parsley."
+      ],
+      "notes": [
+        "Food safety: cook eggs until the whites are firm and the yolks are not runny for pregnant women, older people and young children.",
+        "Add feta if you like."
+      ],
+      "nutrition": {
+        "kcal": 381,
+        "proteinG": 15,
+        "carbsG": 46,
+        "fatG": 13,
+        "fibreG": 10,
+        "sodiumMg": 580
+      }
+    },
+    {
+      "id": "vietnamese-egg-and-pork-rice-breakfast-bowl",
+      "title": "Vietnamese Egg and Pork Rice Breakfast Bowl",
+      "summary": "Rice topped with a fried egg, savoury caramelised pork mince and fresh cucumber.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups cooked jasmine rice, warm",
+            "150 g pork mince",
+            "1 clove garlic, crushed",
+            "1 tbsp fish sauce",
+            "1 tsp sugar",
+            "2 eggs",
+            "1 tbsp vegetable oil",
+            "1/2 Lebanese cucumber, sliced",
+            "2 spring onions, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the pork mince with the garlic for 6 minutes, breaking it up, until browned with no pink left.",
+        "Stir in the fish sauce and sugar and cook for 2 minutes until sticky.",
+        "Fry the eggs in the oil for 3 minutes until the whites are crisp at the edges and set.",
+        "Serve the rice topped with the pork, eggs, cucumber and spring onion."
+      ],
+      "notes": [
+        "Food safety: cook pork mince to 75°C throughout with no pink; cook eggs until whites are set, firm yolks for pregnant women, older people and young children.",
+        "Add chilli sauce."
+      ],
+      "nutrition": {
+        "kcal": 511,
+        "proteinG": 24,
+        "carbsG": 60,
+        "fatG": 19,
+        "fibreG": 2,
+        "sodiumMg": 730
+      }
+    },
+    {
+      "id": "hangover-bacon-egg-and-cheese-brekkie-rolls",
+      "title": "Hangover Bacon, Egg and Cheese Brekkie Rolls",
+      "summary": "Soft rolls stuffed with crisp bacon and a fried egg, a classic hangover fix.",
+      "cuisine": "british",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 12,
+      "servings": 2,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "4 rashers bacon",
+            "2 eggs",
+            "2 soft bread rolls, split",
+            "1 tbsp butter",
+            "2 tbsp tomato sauce",
+            "1 tsp vegetable oil",
+            "2 slices cheddar"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the bacon in the oil for 5 minutes, turning, until crisp.",
+        "Fry the eggs in the same pan for 3 minutes until the whites are set and the yolks are cooked as you like.",
+        "Butter the rolls, fill with the bacon, eggs and cheddar until the cheese melts, and add the tomato sauce."
+      ],
+      "notes": [
+        "Food safety: cook eggs until the whites and yolks are fully set for pregnant women, older people and young children; cook bacon until no pink remains.",
+        "Add a slice of cheese for extra comfort."
+      ],
+      "nutrition": {
+        "kcal": 469,
+        "proteinG": 25,
+        "carbsG": 35,
+        "fatG": 25,
+        "fibreG": 2,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "hangover-fry-up-tray-bake",
+      "title": "Hangover Fry-Up Tray Bake",
+      "summary": "Sausages, bacon, tomatoes, mushrooms and eggs baked on one tray for an easy fry-up.",
+      "cuisine": "british",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 pork sausages",
+            "4 rashers bacon",
+            "2 tomatoes, halved",
+            "200 g button mushrooms",
+            "4 eggs",
+            "1 tbsp olive oil",
+            "4 slices toast",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C and arrange the sausages and bacon on a large tray with the tomatoes and mushrooms, drizzled with oil.",
+        "Bake for 18 minutes, turning the sausages once, until golden and sausages are cooked through with no pink.",
+        "Make four gaps, crack in the eggs, and bake 6 minutes more until the whites are set.",
+        "Toast the bread until golden and serve with the tray bake and pepper."
+      ],
+      "notes": [
+        "Food safety: cook sausages to 75°C throughout with no pink; cook eggs until fully set for pregnant women, older people and young children.",
+        "Add baked beans in a small ovenproof dish."
+      ],
+      "nutrition": {
+        "kcal": 442,
+        "proteinG": 27,
+        "carbsG": 19,
+        "fatG": 28,
+        "fibreG": 3,
+        "sodiumMg": 1200
+      }
+    },
+    {
+      "id": "hangover-cheesy-baked-beans-on-toast-with-fried-egg",
+      "title": "Hangover Cheesy Baked Beans on Toast with Fried Egg",
+      "summary": "Hot baked beans melted with cheddar on buttered toast, topped with a fried egg.",
+      "cuisine": "british",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "pescatarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 can baked beans",
+            "1/3 cup grated cheddar",
+            "2 eggs",
+            "2 slices thick toast",
+            "1 tbsp butter",
+            "1 dash Worcestershire sauce",
+            "1 tsp olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the beans with the Worcestershire sauce in a saucepan for 4 minutes until bubbling, then stir through the cheddar until melted.",
+        "Fry the eggs in the oil for 3 minutes until the whites are set.",
+        "Butter the toast, spoon over the beans until generously covered and top with the eggs."
+      ],
+      "notes": [
+        "Food safety: cook eggs until fully set for pregnant women, older people and young children.",
+        "Worcestershire sauce contains anchovy, so it is not vegetarian."
+      ],
+      "nutrition": {
+        "kcal": 520,
+        "proteinG": 24,
+        "carbsG": 50,
+        "fatG": 22,
+        "fibreG": 13,
+        "sodiumMg": 1090
+      }
+    },
+    {
+      "id": "hangover-ginger-and-spring-onion-rice-congee",
+      "title": "Hangover Ginger and Spring Onion Rice Congee",
+      "summary": "A soothing rice porridge with fresh ginger, soy and a soft egg, easy on the stomach.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 35,
+      "servings": 3,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1/2 cup jasmine rice",
+            "5 cups water",
+            "3 cm ginger, sliced",
+            "2 eggs",
+            "1 tbsp soy sauce",
+            "2 spring onions, sliced",
+            "1 tsp sesame oil",
+            "1/4 tsp white pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the rice with the water and ginger, stirring now and then, for 30 minutes until the grains break down into a thick porridge.",
+        "Crack the eggs into the simmering congee and cook for 3 minutes until the whites are set.",
+        "Season with the soy sauce and pepper and serve topped with spring onion and sesame oil."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until firm for pregnant women, older people and young children.",
+        "Add shredded chicken to make it more filling."
+      ],
+      "nutrition": {
+        "kcal": 212,
+        "proteinG": 8,
+        "carbsG": 31,
+        "fatG": 6,
+        "fibreG": 1,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "hangover-egg-drop-miso-soup-with-rice",
+      "title": "Hangover Egg Drop Miso Soup with Rice",
+      "summary": "Warm miso broth with ribbons of egg, tofu and a scoop of rice.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 cups water",
+            "1 tbsp instant dashi granules",
+            "3 tbsp white miso paste",
+            "100 g silken tofu, cubed",
+            "2 eggs, beaten",
+            "1 cup cooked short-grain rice",
+            "2 spring onions, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Bring the water and dashi to a gentle simmer until steaming.",
+        "Dissolve the miso paste in a ladleful of the hot dashi, then stir it back into the pot without boiling.",
+        "Pour in the egg in a thin stream, stirring gently, and cook 1 minute until it forms ribbons and is set.",
+        "Add the tofu, heat for 1 minute until warm, and ladle over the rice with spring onion."
+      ],
+      "notes": [
+        "Food safety: eggs are cooked fully set in the hot broth.",
+        "Dashi granules contain fish; use a kombu stock for vegetarian."
+      ],
+      "nutrition": {
+        "kcal": 278,
+        "proteinG": 16,
+        "carbsG": 34,
+        "fatG": 8,
+        "fibreG": 3,
+        "sodiumMg": 1320
+      }
+    },
+    {
+      "id": "hangover-spicy-egg-breakfast-burrito",
+      "title": "Hangover Spicy Egg Breakfast Burrito",
+      "summary": "Scrambled eggs, beans, cheese and hot sauce wrapped in a warm tortilla.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 eggs",
+            "2 large flour tortillas",
+            "1/2 cup canned black beans, drained",
+            "1/3 cup grated cheddar",
+            "1 tbsp butter",
+            "1 tbsp hot sauce",
+            "1 tomato, diced"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the tortillas in a dry pan for 20 seconds each until pliable.",
+        "Melt the butter and scramble the eggs over medium heat for 3 minutes, stirring, until just set and cooked through.",
+        "Fill the tortillas with the eggs, beans, cheese, tomato and hot sauce.",
+        "Roll up tightly and toast in the pan for 1 minute a side until golden."
+      ],
+      "notes": [
+        "Food safety: cook eggs until fully set for pregnant women, older people and young children.",
+        "Wrap in foil to take out."
+      ],
+      "nutrition": {
+        "kcal": 520,
+        "proteinG": 27,
+        "carbsG": 45,
+        "fatG": 24,
+        "fibreG": 8,
+        "sodiumMg": 970
+      }
+    },
+    {
+      "id": "hangover-hash-brown-stack-with-egg-and-bacon",
+      "title": "Hangover Hash Brown Stack with Egg and Bacon",
+      "summary": "Crisp potato hash brown topped with bacon, a poached egg and chives.",
+      "cuisine": "american",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 large potatoes, grated",
+            "2 tbsp vegetable oil",
+            "4 rashers bacon",
+            "2 eggs",
+            "1 tbsp white vinegar",
+            "2 tbsp chopped chives",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Squeeze the grated potato dry in a cloth and mix with the salt.",
+        "Fry two large mounds in the oil for 6 minutes a side, pressing flat, until crisp and golden.",
+        "Cook the bacon in a pan for 5 minutes until crisp.",
+        "Poach the eggs in barely simmering water with the vinegar for 3 minutes until the whites are set, then stack on the hash browns with the bacon and chives."
+      ],
+      "notes": [
+        "Food safety: cook bacon until no pink remains and eggs until whites are fully set for pregnant women, older people and young children.",
+        "Add hollandaise if you are brave."
+      ],
+      "nutrition": {
+        "kcal": 474,
+        "proteinG": 22,
+        "carbsG": 36,
+        "fatG": 26,
+        "fibreG": 4,
+        "sodiumMg": 820
+      }
+    },
+    {
+      "id": "clear-chicken-stock-from-roasted-bones",
+      "title": "Clear Chicken Stock from Roasted Bones",
+      "summary": "A golden, clear chicken stock built from roasted bones, aromatics and a long, gentle simmer.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 240,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1.5 kg chicken wings",
+            "2 onions, halved",
+            "2 carrots, roughly chopped",
+            "2 celery stalks, roughly chopped",
+            "1 head garlic, halved",
+            "4 bay leaves",
+            "10 black peppercorns",
+            "4 litres cold water"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the chicken bones at 220°C for 35 minutes until deep golden.",
+        "Tip the bones into a large pot with the onion, carrot, celery, garlic, bay and peppercorns, and cover with the cold water.",
+        "Bring to a bare simmer over medium heat, skimming the scum, then reduce the heat so only a few bubbles break the surface.",
+        "Simmer uncovered for 3 hours, topping up with water if needed, until rich and golden.",
+        "Strain through a fine sieve, cool quickly and chill; lift the set fat off the top. Check the meat on the wings has reached at least 75°C."
+      ],
+      "notes": [
+        "Food safety: the stock must simmer well above 75°C, cool within 2 hours and keep in the fridge for 3 days or freeze for 3 months; reheat until boiling hot.",
+        "Never salt the stock; season whatever you make with it."
+      ],
+      "nutrition": {
+        "kcal": 70,
+        "proteinG": 10,
+        "carbsG": 3,
+        "fatG": 2,
+        "fibreG": 0,
+        "sodiumMg": 130
+      }
+    },
+    {
+      "id": "roasted-vegetable-stock-with-leek-and-mushroom",
+      "title": "Roasted Vegetable Stock with Leek and Mushroom",
+      "summary": "A deeply savoury vegetable stock from roasted onion, leek, mushroom and herbs.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 90,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 onions, quartered",
+            "2 leeks, roughly chopped",
+            "3 carrots, roughly chopped",
+            "200 g mushrooms, halved",
+            "1 head garlic, halved",
+            "2 tbsp olive oil",
+            "1 bunch parsley stalks",
+            "3 bay leaves",
+            "8 peppercorns",
+            "3 litres water"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the onions, leeks, carrots, mushrooms and garlic with the oil at 220°C for 30 minutes until browned at the edges.",
+        "Tip into a large pot with the parsley, bay, peppercorns and water.",
+        "Bring to the boil, then simmer gently for 1 hour until the stock tastes rich and savoury.",
+        "Strain through a fine sieve and cool."
+      ],
+      "notes": [
+        "Keeps 4 days in the fridge or 3 months frozen.",
+        "Skip the cabbage family; it turns the stock bitter."
+      ],
+      "nutrition": {
+        "kcal": 65,
+        "proteinG": 1,
+        "carbsG": 8,
+        "fatG": 3,
+        "fibreG": 1,
+        "sodiumMg": 40
+      }
+    }
+  ]
+}

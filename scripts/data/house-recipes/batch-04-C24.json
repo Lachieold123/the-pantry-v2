@@ -1,0 +1,1712 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "french-vinaigrette-a-la-moutarde-dijon-mustard-dressing",
+      "title": "French Vinaigrette a la Moutarde Dijon Mustard Dressing",
+      "summary": "The everyday French dressing of mustard, red wine vinegar and olive oil, emulsified until glossy.",
+      "cuisine": "french",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp Dijon mustard",
+            "3 tbsp red wine vinegar",
+            "1 small shallot, finely diced",
+            "1/2 tsp salt",
+            "1/4 tsp black pepper",
+            "120ml olive oil",
+            "1 tsp honey",
+            "1 handful mixed salad leaves"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the mustard, vinegar, shallot, salt, pepper and honey in a bowl until combined.",
+        "Pour in the oil in a thin stream, whisking until thick and glossy.",
+        "Taste and adjust the salt or vinegar to your liking.",
+        "Toss with the salad leaves just before serving."
+      ],
+      "notes": [
+        "Keeps in a jar in the fridge for 2 weeks; shake well before using."
+      ],
+      "nutrition": {
+        "kcal": 174,
+        "proteinG": 0,
+        "carbsG": 3,
+        "fatG": 18,
+        "fibreG": 0,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "japanese-wafu-onion-dressing-for-grilled-meat-and-salads",
+      "title": "Japanese Wafu Onion Dressing for Grilled Meat and Salads",
+      "summary": "Grated onion, soy and rice vinegar dressing that is savoury, sweet and sharp, spooned over salad or steak.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 5,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1/2 brown onion, finely grated",
+            "3 tbsp soy sauce",
+            "3 tbsp rice vinegar",
+            "2 tbsp mirin",
+            "2 tbsp vegetable oil",
+            "1 tsp sesame oil",
+            "1 tsp sugar",
+            "1 tsp grated ginger"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the mirin for 1 minute to cook off the alcohol, then cool.",
+        "Mix the onion, soy sauce, vinegar, oils, sugar and ginger in a jar.",
+        "Add the cooled mirin and shake for 20 seconds until blended.",
+        "Leave for 10 minutes so the onion mellows before using."
+      ],
+      "notes": [
+        "Keeps in the fridge for 5 days."
+      ],
+      "nutrition": {
+        "kcal": 77,
+        "proteinG": 1,
+        "carbsG": 7,
+        "fatG": 5,
+        "fibreG": 0,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "thai-nam-prik-pao-roasted-chilli-jam",
+      "title": "Thai Nam Prik Pao Roasted Chilli Jam",
+      "summary": "Sweet, smoky chilli jam of dried chilli, garlic and shallot, stirred into soups, noodles and fried eggs.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "snack",
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 10,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "10 dried red chillies, deseeded",
+            "6 garlic cloves, peeled",
+            "4 shallots, peeled",
+            "80ml vegetable oil",
+            "3 tbsp palm sugar",
+            "3 tbsp tamarind paste",
+            "2 tbsp fish sauce",
+            "2 tbsp water"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the chillies in a dry pan for 2 minutes until fragrant and darker, then soak in hot water for 10 minutes.",
+        "Fry the garlic and shallots in half the oil for 6 minutes until golden, then cool.",
+        "Blend the chillies, garlic and shallots to a coarse paste.",
+        "Fry the paste in the remaining oil for 8 minutes, add the sugar, tamarind, fish sauce and water and simmer for 6 minutes until dark and jammy.",
+        "Cool and spoon into a clean jar."
+      ],
+      "notes": [
+        "Keeps in the fridge for 3 weeks."
+      ],
+      "nutrition": {
+        "kcal": 110,
+        "proteinG": 1,
+        "carbsG": 8,
+        "fatG": 8,
+        "fibreG": 1,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "thai-panang-curry-paste",
+      "title": "Thai Panang Curry Paste",
+      "summary": "Rich dry red curry paste with roasted peanuts and coriander seed, the base of panang curry.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 0,
+      "servings": 10,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 dried red chillies, deseeded and soaked",
+            "4 garlic cloves",
+            "3 shallots",
+            "1 tbsp grated ginger",
+            "2 lemongrass stalks, white part only",
+            "1 tbsp coriander seeds",
+            "1 tsp cumin seeds",
+            "2 tbsp roasted peanuts",
+            "1 tsp salt",
+            "1 tbsp lime zest",
+            "1 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the coriander and cumin seeds in a dry pan for 2 minutes until fragrant, then grind finely.",
+        "Drain the chillies and chop with the lemongrass.",
+        "Crush or blend everything together with the peanuts, salt, zest and oil to a smooth thick paste.",
+        "Scrape the paste into a clean jar and press it down."
+      ],
+      "notes": [
+        "Use 3 tbsp per can of coconut milk with chicken or tofu; keeps in the fridge for 2 weeks."
+      ],
+      "nutrition": {
+        "kcal": 60,
+        "proteinG": 1,
+        "carbsG": 4,
+        "fatG": 4,
+        "fibreG": 2,
+        "sodiumMg": 220
+      }
+    },
+    {
+      "id": "thai-yellow-curry-paste",
+      "title": "Thai Yellow Curry Paste",
+      "summary": "Mild golden curry paste of turmeric, lemongrass and dried chilli with warm spices.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 0,
+      "servings": 10,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 dried red chillies, deseeded and soaked",
+            "4 shallots",
+            "4 garlic cloves",
+            "1 tbsp grated ginger",
+            "2 lemongrass stalks, white part only",
+            "1 tbsp ground turmeric",
+            "1 tbsp ground coriander",
+            "1 tsp ground cumin",
+            "1 tsp salt",
+            "1 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Drain the chillies and chop them with the lemongrass.",
+        "Blend with the shallots, garlic, ginger, turmeric, coriander, cumin, salt and oil to a smooth paste, scraping the bowl often.",
+        "Fry a teaspoon of paste in a pan for 30 seconds until fragrant, to check the balance.",
+        "Spoon into a jar and cover with a film of oil."
+      ],
+      "notes": [
+        "Use 3 tbsp per can of coconut milk with chicken, potato and onion; keeps in the fridge for 2 weeks."
+      ],
+      "nutrition": {
+        "kcal": 49,
+        "proteinG": 1,
+        "carbsG": 4,
+        "fatG": 3,
+        "fibreG": 1,
+        "sodiumMg": 200
+      }
+    },
+    {
+      "id": "malaysian-rendang-spice-paste",
+      "title": "Malaysian Rendang Spice Paste",
+      "summary": "Fragrant blended paste of galangal, lemongrass and chilli that flavours beef, chicken or jackfruit rendang.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 10,
+      "servings": 10,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 dried red chillies, deseeded and soaked",
+            "6 shallots",
+            "4 garlic cloves",
+            "3 cm ginger",
+            "3 cm galangal",
+            "3 lemongrass stalks, white part only",
+            "1 tsp ground turmeric",
+            "1 tsp salt",
+            "3 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Drain the chillies and chop with the shallots, garlic, ginger, galangal and lemongrass.",
+        "Blend with the turmeric and 1 tbsp oil to a smooth paste.",
+        "Fry the paste in the remaining oil over medium heat for 8 minutes until the oil separates and the aroma is deep.",
+        "Stir in the salt and cool."
+      ],
+      "notes": [
+        "Use 5 tbsp per 1 kg of meat; freezes for 3 months in ice cube trays."
+      ],
+      "nutrition": {
+        "kcal": 66,
+        "proteinG": 1,
+        "carbsG": 6,
+        "fatG": 4,
+        "fibreG": 1,
+        "sodiumMg": 250
+      }
+    },
+    {
+      "id": "indian-tandoori-chicken-marinade-and-oven-chicken",
+      "title": "Indian Tandoori Chicken Marinade and Oven Chicken",
+      "summary": "Yoghurt, lemon and spice marinade that gives chicken thighs the smoky red look of the tandoor.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g chicken thigh fillets",
+            "200g natural yoghurt",
+            "2 tbsp lemon juice",
+            "1 tbsp grated ginger",
+            "4 garlic cloves, minced",
+            "2 tsp paprika",
+            "2 tsp garam masala",
+            "1 tsp ground cumin",
+            "1 tsp chilli powder",
+            "1/2 tsp salt",
+            "1 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the yoghurt, lemon juice, ginger, garlic, spices, salt and oil, then coat the chicken and marinate in the fridge for at least 2 hours.",
+        "Heat the oven to 230°C and line a tray.",
+        "Arrange the chicken on a rack on the tray and roast for 30 minutes, turning once, until charred at the edges and 75°C inside.",
+        "Rest for 5 minutes, then slice and serve with lemon and onion."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until 75°C in the thickest part. Discard the used marinade and wash hands and board after raw chicken."
+      ],
+      "nutrition": {
+        "kcal": 304,
+        "proteinG": 38,
+        "carbsG": 6,
+        "fatG": 14,
+        "fibreG": 1,
+        "sodiumMg": 480
+      }
+    },
+    {
+      "id": "goan-vindaloo-curry-paste",
+      "title": "Goan Vindaloo Curry Paste",
+      "summary": "Hot, tangy Goan paste of dried chilli, vinegar and warm spices for pork, beef or potatoes.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 5,
+      "servings": 10,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "10 dried red chillies, deseeded and soaked",
+            "6 garlic cloves",
+            "3 cm ginger",
+            "1 tsp cumin seeds",
+            "1 tsp black peppercorns",
+            "4 cloves",
+            "1 cinnamon stick",
+            "1 tsp ground turmeric",
+            "80ml white vinegar",
+            "1 tsp sugar",
+            "1 tsp salt",
+            "2 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the cumin, peppercorns, cloves and cinnamon in a dry pan for 2 minutes until fragrant, then grind fine.",
+        "Blend the drained chillies, garlic, ginger, ground spices, turmeric, vinegar, sugar and salt to a smooth paste.",
+        "Fry the paste in the oil for 4 minutes until the oil separates and it darkens.",
+        "Cool completely and spoon into a clean jar."
+      ],
+      "notes": [
+        "Use 4 tbsp per 600g of meat or vegetables; keeps in the fridge for 3 weeks."
+      ],
+      "nutrition": {
+        "kcal": 54,
+        "proteinG": 1,
+        "carbsG": 3,
+        "fatG": 4,
+        "fibreG": 1,
+        "sodiumMg": 280
+      }
+    },
+    {
+      "id": "cuban-mojo-criollo-garlic-and-citrus-marinade",
+      "title": "Cuban Mojo Criollo Garlic and Citrus Marinade",
+      "summary": "Garlicky sour orange style marinade and sauce, hot oil poured over raw garlic and citrus.",
+      "cuisine": "caribbean",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 5,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 garlic cloves, minced",
+            "120ml orange juice",
+            "60ml lime juice",
+            "1 tsp ground cumin",
+            "1 tsp dried oregano",
+            "1 tsp salt",
+            "80ml olive oil",
+            "1 small bunch coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the garlic, orange juice, lime juice, cumin, oregano and salt in a heatproof bowl.",
+        "Heat the oil in a small pan for 2 minutes until shimmering and pour over the garlic mixture, stirring as it sizzles.",
+        "Cool for 10 minutes and add the coriander.",
+        "Use as a marinade for pork or chicken, or as a sauce over yuca and rice."
+      ],
+      "notes": [
+        "Keeps in the fridge for 4 days."
+      ],
+      "nutrition": {
+        "kcal": 106,
+        "proteinG": 0,
+        "carbsG": 4,
+        "fatG": 10,
+        "fibreG": 0,
+        "sodiumMg": 290
+      }
+    },
+    {
+      "id": "korean-bulgogi-beef-and-lettuce-wraps",
+      "title": "Korean Bulgogi Beef and Lettuce Wraps",
+      "summary": "Thinly sliced beef in a sweet soy and pear marinade, grilled quickly and wrapped in lettuce.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g beef sirloin, very thinly sliced",
+            "3 tbsp soy sauce",
+            "1 tbsp sugar",
+            "1 tbsp sesame oil",
+            "4 garlic cloves, minced",
+            "1 pear, grated",
+            "2 spring onions, sliced",
+            "1 tbsp vegetable oil",
+            "8 lettuce leaves",
+            "2 cups cooked rice",
+            "2 tbsp ssamjang (or chilli paste)"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the soy sauce, sugar, sesame oil, garlic, pear and spring onions, add the beef and marinate in the fridge for 30 minutes.",
+        "Heat the oil in a pan over high heat until smoking.",
+        "Cook the beef in two batches for 3 minutes each, until browned and the centre reaches 71°C.",
+        "Serve in lettuce leaves with rice and chilli paste."
+      ],
+      "notes": [
+        "Food safety: cook the beef until 71°C in the centre, and discard any raw marinade left in the bowl."
+      ],
+      "nutrition": {
+        "kcal": 428,
+        "proteinG": 32,
+        "carbsG": 38,
+        "fatG": 16,
+        "fibreG": 2,
+        "sodiumMg": 880
+      }
+    },
+    {
+      "id": "spanish-alioli-garlic-emulsion",
+      "title": "Spanish Alioli Garlic Emulsion",
+      "summary": "Traditional garlic and olive oil sauce, pounded smooth and whisked in the old way with an egg yolk for stability.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "snack",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 garlic cloves",
+            "1/2 tsp salt",
+            "1 egg yolk",
+            "150ml olive oil",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Crush the garlic and salt to a smooth paste in a bowl.",
+        "Whisk in the egg yolk until pale.",
+        "Add the oil drop by drop at first, then in a thin stream, whisking until thick and glossy.",
+        "Stir in the lemon juice and taste for salt."
+      ],
+      "notes": [
+        "Food safety: raw egg yolk is not recommended for pregnant women, young children, older people or anyone vulnerable; use pasteurised egg. Keep chilled and eat within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 188,
+        "proteinG": 1,
+        "carbsG": 1,
+        "fatG": 20,
+        "fibreG": 0,
+        "sodiumMg": 90
+      }
+    },
+    {
+      "id": "georgian-adjika-fresh-chilli-and-walnut-paste",
+      "title": "Georgian Adjika Fresh Chilli and Walnut Paste",
+      "summary": "Sharp, herby red chilli paste with garlic, walnuts and coriander, stirred into soups and grilled meat.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "snack",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 10,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 red chillies, deseeded",
+            "6 garlic cloves",
+            "1 large bunch coriander",
+            "60g walnuts",
+            "1 tbsp ground coriander",
+            "1 tsp paprika",
+            "1 tsp salt",
+            "2 tbsp red wine vinegar"
+          ]
+        }
+      ],
+      "steps": [
+        "Chop the chillies, garlic and fresh coriander roughly, until evenly small.",
+        "Blend with the walnuts, ground coriander, paprika, salt and vinegar to a coarse paste.",
+        "Taste and adjust the salt and vinegar.",
+        "Rest for 30 minutes before using."
+      ],
+      "notes": [
+        "Keeps in the fridge for 10 days."
+      ],
+      "nutrition": {
+        "kcal": 91,
+        "proteinG": 2,
+        "carbsG": 4,
+        "fatG": 7,
+        "fibreG": 2,
+        "sodiumMg": 230
+      }
+    },
+    {
+      "id": "georgian-satsebeli-plum-tomato-sauce",
+      "title": "Georgian Satsebeli Plum Tomato Sauce",
+      "summary": "Sweet and sour cooked tomato sauce with garlic and coriander, a table sauce for grilled meats and potatoes.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "dinner",
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g ripe tomatoes, chopped",
+            "2 tbsp sugar",
+            "4 garlic cloves, minced",
+            "1 small bunch coriander, chopped",
+            "1 tbsp red wine vinegar",
+            "1 tsp chilli flakes",
+            "1 tsp salt",
+            "2 tbsp olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the tomatoes with the sugar and salt for 20 minutes until reduced and thick.",
+        "Stir in the garlic, chilli, vinegar and oil and cook for 4 minutes.",
+        "Add the coriander and cool.",
+        "Spoon the sauce into a clean jar and cool."
+      ],
+      "notes": [
+        "Keeps in the fridge for 5 days."
+      ],
+      "nutrition": {
+        "kcal": 67,
+        "proteinG": 1,
+        "carbsG": 8,
+        "fatG": 3,
+        "fibreG": 2,
+        "sodiumMg": 320
+      }
+    },
+    {
+      "id": "armenian-aubergine-and-walnut-spread",
+      "title": "Armenian Aubergine and Walnut Spread",
+      "summary": "Roasted aubergine mashed with walnuts, garlic and parsley, served as a dip or spread.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "snack",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 large aubergines",
+            "60g walnuts",
+            "2 garlic cloves",
+            "2 tbsp lemon juice",
+            "3 tbsp olive oil",
+            "1 small bunch parsley",
+            "1/2 tsp salt",
+            "4 pita breads"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C and roast the whole aubergines for 35 minutes until collapsed and soft.",
+        "Scoop out the flesh and drain in a sieve for 5 minutes.",
+        "Blend the flesh with the walnuts, garlic, lemon juice, oil and salt to a rough paste.",
+        "Fold in the parsley and serve with warm pita."
+      ],
+      "notes": [
+        "Pierce the aubergine skin before roasting so steam can escape."
+      ],
+      "nutrition": {
+        "kcal": 318,
+        "proteinG": 7,
+        "carbsG": 28,
+        "fatG": 18,
+        "fibreG": 8,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "swiss-rosti-golden-potato-cake",
+      "title": "Swiss Rosti Golden Potato Cake",
+      "summary": "Grated potato pressed and fried in butter until golden and crisp outside, soft within.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "breakfast",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g waxy potatoes, boiled for 8 minutes and cooled",
+            "50g butter",
+            "1/2 tsp salt",
+            "1/4 tsp black pepper",
+            "1 tbsp vegetable oil",
+            "4 eggs"
+          ]
+        }
+      ],
+      "steps": [
+        "Peel and coarsely grate the cooled potatoes and toss with the salt and pepper.",
+        "Heat half the butter and the oil in a pan and press in the potato in an even cake.",
+        "Cook over medium heat for 10 minutes until golden, then flip using a plate and add the rest of the butter.",
+        "Cook for 10 minutes more, then fry the eggs and serve on top."
+      ],
+      "notes": [
+        "Food safety: fry the eggs until the whites are fully set; cook the yolks through for anyone vulnerable."
+      ],
+      "nutrition": {
+        "kcal": 376,
+        "proteinG": 14,
+        "carbsG": 33,
+        "fatG": 20,
+        "fibreG": 4,
+        "sodiumMg": 440
+      }
+    },
+    {
+      "id": "german-bratkartoffeln-pan-fried-potatoes-with-onion",
+      "title": "German Bratkartoffeln Pan-Fried Potatoes with Onion",
+      "summary": "Sliced cooked potatoes fried in butter with onion until deeply golden and crisp edged.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g waxy potatoes, boiled and cooled",
+            "1 brown onion, sliced",
+            "40g butter",
+            "2 tbsp vegetable oil",
+            "1/2 tsp salt",
+            "1/2 tsp black pepper",
+            "1 small bunch parsley, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Slice the cooled potatoes about 5 mm thick.",
+        "Heat the oil and half the butter in a large pan and fry the potatoes in a single layer for 12 minutes, turning only once, until golden.",
+        "Add the onion and remaining butter and cook for 8 minutes until the onion is soft and caramelised.",
+        "Season and scatter with parsley."
+      ],
+      "notes": [
+        "Leave the potatoes undisturbed so they crisp rather than steam."
+      ],
+      "nutrition": {
+        "kcal": 310,
+        "proteinG": 6,
+        "carbsG": 38,
+        "fatG": 14,
+        "fibreG": 4,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "swedish-hasselbackspotatis-fanned-roast-potatoes",
+      "title": "Swedish Hasselbackspotatis Fanned Roast Potatoes",
+      "summary": "Whole potatoes sliced into fans and roasted with butter and breadcrumbs until crisp on top.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 50,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 medium potatoes",
+            "50g butter, melted",
+            "2 tbsp olive oil",
+            "1/2 tsp salt",
+            "3 tbsp breadcrumbs",
+            "40g vegetarian hard cheese, finely grated",
+            "1 tsp dried thyme"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C and slice each potato crosswise nearly through, every 3 mm.",
+        "Brush with the butter and oil, season with the salt and roast for 35 minutes.",
+        "Sprinkle with the breadcrumbs, cheese and thyme.",
+        "Roast for 15 minutes more until golden and a knife slides in easily."
+      ],
+      "notes": [
+        "Rest the potatoes on wooden spoons while slicing to stop the knife cutting through."
+      ],
+      "nutrition": {
+        "kcal": 370,
+        "proteinG": 10,
+        "carbsG": 44,
+        "fatG": 16,
+        "fibreG": 5,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "polish-placki-ziemniaczane-potato-pancakes-with-sour-cream",
+      "title": "Polish Placki Ziemniaczane Potato Pancakes with Sour Cream",
+      "summary": "Crisp lacy grated potato pancakes with onion, served with sour cream.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "breakfast",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g starchy potatoes, peeled",
+            "1 brown onion",
+            "1 egg",
+            "3 tbsp plain flour",
+            "1/2 tsp salt",
+            "5 tbsp vegetable oil",
+            "120g sour cream",
+            "1 small bunch dill"
+          ]
+        }
+      ],
+      "steps": [
+        "Grate the potatoes and onion, then squeeze out as much liquid as you can.",
+        "Mix with the egg, flour and salt.",
+        "Fry spoonfuls in the hot oil for 4 minutes each side, until deep golden and crisp.",
+        "Drain on paper and serve with sour cream and dill."
+      ],
+      "notes": [
+        "Food safety: fry the pancakes until the egg is fully cooked through and the centre is hot."
+      ],
+      "nutrition": {
+        "kcal": 401,
+        "proteinG": 9,
+        "carbsG": 42,
+        "fatG": 21,
+        "fibreG": 4,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "dutch-boerenkool-stamppot-kale-and-potato-mash-with-sausage",
+      "title": "Dutch Boerenkool Stamppot Kale and Potato Mash with Sausage",
+      "summary": "Winter mash of potato and kale served with smoked sausage and a pool of gravy.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "1 kg potatoes, peeled and chopped",
+            "300g kale, stripped and chopped",
+            "100ml milk",
+            "40g butter",
+            "1/2 tsp salt",
+            "1/2 tsp ground nutmeg",
+            "1 smoked sausage (300g)",
+            "1 tbsp mustard"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes for 18 minutes until tender, adding the kale for the last 6 minutes.",
+        "Warm the sausage in simmering water for 12 minutes until hot through at 75°C.",
+        "Drain the potato and kale, then mash with the milk, butter, salt and nutmeg.",
+        "Slice the sausage and serve on the mash with mustard."
+      ],
+      "notes": [
+        "Food safety: heat the sausage until 75°C in the centre."
+      ],
+      "nutrition": {
+        "kcal": 481,
+        "proteinG": 17,
+        "carbsG": 48,
+        "fatG": 23,
+        "fibreG": 7,
+        "sodiumMg": 860
+      }
+    },
+    {
+      "id": "belgian-liege-waffles-with-brown-sugar",
+      "title": "Belgian Liege Waffles with Brown Sugar",
+      "summary": "Yeasted waffle dough with butter and caramelising sugar for a chewy golden waffle.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g plain flour",
+            "7g dried yeast",
+            "3 tbsp sugar",
+            "1/2 tsp salt",
+            "120ml warm milk",
+            "2 eggs",
+            "120g butter, soft",
+            "1 tsp vanilla extract",
+            "4 tbsp brown sugar"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour, yeast, sugar and salt, then stir in the milk and eggs to a sticky dough.",
+        "Beat in the soft butter and vanilla, then cover and prove for 1 hour until doubled.",
+        "Fold in the brown sugar until just marbled, then divide into 6 balls.",
+        "Cook each ball in a hot waffle iron for 4 minutes until deeply golden."
+      ],
+      "notes": [
+        "Food safety: cook the waffles until the egg is cooked through and the centre is hot."
+      ],
+      "nutrition": {
+        "kcal": 378,
+        "proteinG": 9,
+        "carbsG": 44,
+        "fatG": 18,
+        "fibreG": 2,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "dutch-poffertjes-mini-pancakes-with-butter-and-icing-sugar",
+      "title": "Dutch Poffertjes Mini Pancakes with Butter and Icing Sugar",
+      "summary": "Small puffy yeasted pancakes, served hot with melting butter and icing sugar.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "breakfast",
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g plain flour",
+            "100g buckwheat flour",
+            "7g dried yeast",
+            "300ml warm milk",
+            "1 egg",
+            "1/2 tsp salt",
+            "2 tbsp sugar",
+            "40g butter",
+            "3 tbsp icing sugar"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the flours, yeast, milk, egg, salt and sugar into a smooth batter and rest for 30 minutes.",
+        "Heat a pan with a little butter and drop small spoonfuls of batter in, cooking for 1 minute until bubbles show.",
+        "Flip with a fork and cook for 1 minute more until puffed and golden.",
+        "Serve piled high with butter and icing sugar."
+      ],
+      "notes": [
+        "Food safety: cook the pancakes until the egg is fully set."
+      ],
+      "nutrition": {
+        "kcal": 389,
+        "proteinG": 11,
+        "carbsG": 60,
+        "fatG": 11,
+        "fibreG": 3,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "finnish-ohukaiset-thin-pancakes-with-berries",
+      "title": "Finnish Ohukaiset Thin Pancakes with Berries",
+      "summary": "Thin lacy pancakes made with a milky batter and served with jam or fruit.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g plain flour",
+            "500ml milk",
+            "2 eggs",
+            "1/2 tsp salt",
+            "2 tbsp sugar",
+            "2 tbsp butter",
+            "4 tbsp apricot jam",
+            "100g yoghurt"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the flour, milk, eggs, salt and sugar into a thin smooth batter and rest for 10 minutes.",
+        "Melt a little butter in a hot pan and pour in a thin ladle of batter, swirling to cover.",
+        "Cook for 1 minute each side until golden and lacy.",
+        "Fold and serve with jam and yoghurt."
+      ],
+      "notes": [
+        "Food safety: cook until the egg is fully set."
+      ],
+      "nutrition": {
+        "kcal": 353,
+        "proteinG": 11,
+        "carbsG": 52,
+        "fatG": 11,
+        "fibreG": 1,
+        "sodiumMg": 280
+      }
+    },
+    {
+      "id": "hungarian-palacsinta-crepes-with-apricot-jam",
+      "title": "Hungarian Palacsinta Crepes with Apricot Jam",
+      "summary": "Thin Hungarian crepes, rolled around apricot jam and dusted with icing sugar.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g plain flour",
+            "300ml milk",
+            "100ml soda water",
+            "2 eggs",
+            "1/2 tsp salt",
+            "1 tbsp sugar",
+            "2 tbsp vegetable oil",
+            "6 tbsp apricot jam",
+            "2 tbsp icing sugar"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the flour, milk, soda water, eggs, salt and sugar into a thin batter and rest for 15 minutes.",
+        "Brush a pan with oil and pour in a thin layer of batter, cooking for 1 minute each side until golden.",
+        "Spread each crepe with jam and roll up.",
+        "Dust the rolled crepes generously with icing sugar."
+      ],
+      "notes": [
+        "Food safety: cook the crepes until the egg is fully set."
+      ],
+      "nutrition": {
+        "kcal": 365,
+        "proteinG": 10,
+        "carbsG": 56,
+        "fatG": 11,
+        "fibreG": 1,
+        "sodiumMg": 190
+      }
+    },
+    {
+      "id": "indonesian-martabak-manis-thick-sweet-pancake",
+      "title": "Indonesian Martabak Manis Thick Sweet Pancake",
+      "summary": "A thick, honeycombed pancake filled with chocolate sprinkles, peanuts and condensed milk.",
+      "cuisine": "indonesian",
+      "mealTypes": [
+        "snack",
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g plain flour",
+            "1 tsp baking powder",
+            "2 eggs",
+            "300ml milk",
+            "3 tbsp sugar",
+            "1/2 tsp bicarbonate of soda",
+            "30g butter",
+            "3 tbsp crushed peanuts",
+            "3 tbsp chocolate chips",
+            "3 tbsp condensed milk"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the flour, baking powder, eggs, milk, sugar and bicarb into a smooth batter and rest for 20 minutes.",
+        "Pour into a greased lidded pan over medium heat and cook for 10 minutes until bubbles form and the top is nearly set.",
+        "Scatter with peanuts and chocolate chips, drizzle with condensed milk, fold in half and brush with butter.",
+        "Cut in squares and serve warm."
+      ],
+      "notes": [
+        "Food safety: cook the batter until the top is no longer wet and the egg is fully set."
+      ],
+      "nutrition": {
+        "kcal": 409,
+        "proteinG": 11,
+        "carbsG": 52,
+        "fatG": 17,
+        "fibreG": 2,
+        "sodiumMg": 340
+      }
+    },
+    {
+      "id": "korean-hobak-juk-sweet-pumpkin-porridge",
+      "title": "Korean Hobak Juk Sweet Pumpkin Porridge",
+      "summary": "Smooth rice and pumpkin porridge, mellow and slightly sweet, served warm.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g pumpkin, peeled and cubed",
+            "60g glutinous rice flour",
+            "750ml water",
+            "1 tbsp sugar",
+            "1/2 tsp salt",
+            "2 tbsp pine nuts"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the pumpkin in the water for 20 minutes until completely soft.",
+        "Blend until smooth, then return to the pot.",
+        "Whisk in the rice flour mixed with 3 tbsp cold water and simmer for 8 minutes, stirring, until thick.",
+        "Season with the sugar and salt and top with the pine nuts."
+      ],
+      "notes": [
+        "Stir constantly as it thickens to avoid lumps."
+      ],
+      "nutrition": {
+        "kcal": 158,
+        "proteinG": 3,
+        "carbsG": 26,
+        "fatG": 4,
+        "fibreG": 3,
+        "sodiumMg": 290
+      }
+    },
+    {
+      "id": "korean-dakjuk-chicken-and-rice-porridge",
+      "title": "Korean Dakjuk Chicken and Rice Porridge",
+      "summary": "Comforting rice porridge cooked in a ginger and chicken broth with shredded chicken.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g chicken breast",
+            "150g short-grain rice, rinsed",
+            "1.5 litres water",
+            "3 garlic cloves, sliced",
+            "2 cm ginger, sliced",
+            "1 tbsp sesame oil",
+            "1 carrot, finely diced",
+            "1 tsp salt",
+            "2 spring onions, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the chicken in the water with the garlic and ginger for 15 minutes until cooked through at 75°C, then lift out and shred.",
+        "Add the rice and carrot to the broth and simmer for 25 minutes, stirring often, until soft and creamy.",
+        "Stir in the shredded chicken, sesame oil and salt.",
+        "Serve with spring onions."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until 75°C in the thickest part and chill leftovers within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 319,
+        "proteinG": 22,
+        "carbsG": 41,
+        "fatG": 7,
+        "fibreG": 2,
+        "sodiumMg": 740
+      }
+    },
+    {
+      "id": "scottish-skirlie-toasted-oatmeal-and-onion-side",
+      "title": "Scottish Skirlie Toasted Oatmeal and Onion Side",
+      "summary": "Toasted oats fried with onion in butter, a nutty traditional side or stuffing.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100g steel-cut oats",
+            "1 brown onion, finely diced",
+            "40g butter",
+            "1/2 tsp salt",
+            "1/2 tsp black pepper",
+            "1 small bunch parsley, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Melt the butter in a pan and cook the onion for 6 minutes until soft.",
+        "Add the oats and toast over medium heat for 6 minutes, stirring, until golden and fragrant.",
+        "Season with salt, pepper and the parsley.",
+        "Serve warm with roast meat or soup once the oats are crisp."
+      ],
+      "notes": [
+        "Serve under a poached egg for a quick breakfast."
+      ],
+      "nutrition": {
+        "kcal": 209,
+        "proteinG": 4,
+        "carbsG": 22,
+        "fatG": 11,
+        "fibreG": 3,
+        "sodiumMg": 350
+      }
+    },
+    {
+      "id": "persian-tahdig-crispy-saffron-rice",
+      "title": "Persian Tahdig Crispy Saffron Rice",
+      "summary": "Fluffy rice with a golden crust of saffron and yoghurt baked in the base of the pot.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 55,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g basmati rice, rinsed",
+            "2 tbsp salt",
+            "3 tbsp natural yoghurt",
+            "1 pinch saffron threads",
+            "60g butter",
+            "2 tbsp vegetable oil",
+            "1 tbsp hot water"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the rice in warm water with the salt for 1 hour, then drain and boil for 6 minutes until al dente.",
+        "Bloom the saffron in the hot water, then mix half with the yoghurt and 3 tbsp rice.",
+        "Heat the oil and 2 tbsp butter in a non-stick pot, spread the yoghurt rice over the base and pile the rest on top.",
+        "Cover with a towel-wrapped lid and steam on low for 40 minutes until a golden crust forms.",
+        "Drizzle with the remaining butter and saffron water, then invert onto a plate."
+      ],
+      "notes": [
+        "Dip the pot base in cold water for 1 minute before inverting so the crust releases."
+      ],
+      "nutrition": {
+        "kcal": 382,
+        "proteinG": 6,
+        "carbsG": 62,
+        "fatG": 12,
+        "fibreG": 1,
+        "sodiumMg": 360
+      }
+    },
+    {
+      "id": "mexican-arroz-rojo-tomato-rice",
+      "title": "Mexican Arroz Rojo Tomato Rice",
+      "summary": "Fluffy long-grain rice toasted in oil and cooked in a blended tomato, onion and garlic broth.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g long-grain rice",
+            "3 tbsp vegetable oil",
+            "2 tomatoes, roughly chopped",
+            "1/2 brown onion",
+            "2 garlic cloves",
+            "500ml vegetable stock",
+            "1 carrot, finely diced",
+            "1/2 cup peas",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the tomato, onion and garlic with a splash of the stock until smooth.",
+        "Fry the rice in the oil for 4 minutes until pale golden.",
+        "Add the tomato mix and cook for 3 minutes, then add the stock, carrot, peas and salt.",
+        "Cover and simmer on low for 15 minutes until the liquid is absorbed, then rest for 5 minutes."
+      ],
+      "notes": [
+        "Use vegetable stock to keep it plant-based."
+      ],
+      "nutrition": {
+        "kcal": 324,
+        "proteinG": 6,
+        "carbsG": 55,
+        "fatG": 8,
+        "fibreG": 4,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "jamaican-rice-and-peas-with-coconut-milk",
+      "title": "Jamaican Rice and Peas with Coconut Milk",
+      "summary": "Rice cooked in coconut milk with kidney beans, thyme, garlic and allspice.",
+      "cuisine": "caribbean",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g long-grain rice",
+            "1 can kidney beans (400g), drained",
+            "1 can coconut milk (400ml)",
+            "250ml water",
+            "2 garlic cloves, crushed",
+            "3 spring onions",
+            "3 thyme sprigs",
+            "1 tsp ground allspice",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Combine the coconut milk, water, garlic, spring onions, thyme, allspice and salt in a pot and bring to a simmer until steaming.",
+        "Add the beans and rinsed rice.",
+        "Cover and cook on low for 22 minutes until the rice is tender and the liquid is gone.",
+        "Rest for 5 minutes, remove the thyme and fluff."
+      ],
+      "notes": [
+        "Keep the lid on while cooking so the rice steams properly."
+      ],
+      "nutrition": {
+        "kcal": 391,
+        "proteinG": 9,
+        "carbsG": 52,
+        "fatG": 15,
+        "fibreG": 6,
+        "sodiumMg": 480
+      }
+    },
+    {
+      "id": "cuban-moros-y-cristianos-black-beans-and-rice",
+      "title": "Cuban Moros y Cristianos Black Beans and Rice",
+      "summary": "Black beans cooked with rice, green capsicum, garlic and cumin in one pot.",
+      "cuisine": "caribbean",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g long-grain rice",
+            "1 can black beans (400g), with liquid",
+            "3 tbsp olive oil",
+            "1 brown onion, finely diced",
+            "1 green capsicum, diced",
+            "4 garlic cloves, minced",
+            "1 tsp ground cumin",
+            "1 tsp dried oregano",
+            "1 bay leaf",
+            "450ml water",
+            "1 tsp salt",
+            "1 tbsp vinegar"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion, capsicum and garlic in the oil for 6 minutes until soft, then add the cumin and oregano for 1 minute.",
+        "Add the rice, beans with liquid, bay leaf, water and salt.",
+        "Bring to a boil, cover and cook on low for 22 minutes until the rice is tender.",
+        "Stir in the vinegar and remove the bay leaf."
+      ],
+      "notes": [
+        "Serve with sliced avocado and lime."
+      ],
+      "nutrition": {
+        "kcal": 355,
+        "proteinG": 9,
+        "carbsG": 56,
+        "fatG": 9,
+        "fibreG": 7,
+        "sodiumMg": 580
+      }
+    },
+    {
+      "id": "turkish-bulgur-pilav-with-vermicelli-and-tomato",
+      "title": "Turkish Bulgur Pilav with Vermicelli and Tomato",
+      "summary": "Nutty bulgur cooked with toasted vermicelli, tomato paste and butter.",
+      "cuisine": "turkish",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g coarse bulgur",
+            "40g vermicelli, broken",
+            "30g butter",
+            "1 brown onion, finely diced",
+            "1 tbsp tomato paste",
+            "500ml vegetable stock",
+            "1/2 tsp salt",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Melt the butter and cook the vermicelli for 2 minutes until golden, then add the onion for 4 minutes.",
+        "Stir in the tomato paste for 1 minute, add the bulgur and toast for 2 minutes.",
+        "Add the stock, salt and pepper and simmer covered on low for 12 minutes until absorbed.",
+        "Rest for 5 minutes and fluff with a fork."
+      ],
+      "notes": [
+        "Swap the butter for olive oil to keep it dairy-free."
+      ],
+      "nutrition": {
+        "kcal": 332,
+        "proteinG": 9,
+        "carbsG": 53,
+        "fatG": 8,
+        "fibreG": 6,
+        "sodiumMg": 420
+      }
+    },
+    {
+      "id": "greek-dakos-cretan-barley-rusk-salad",
+      "title": "Greek Dakos Cretan Barley Rusk Salad",
+      "summary": "Crunchy rusks softened by grated tomato and topped with feta, olives and oregano.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 barley rusks (or thick dried bread slices)",
+            "4 ripe tomatoes, grated",
+            "150g feta",
+            "12 olives",
+            "4 tbsp olive oil",
+            "1 tsp dried oregano",
+            "1 tbsp capers"
+          ]
+        }
+      ],
+      "steps": [
+        "Wet the rusks with a splash of water for 20 seconds until slightly softened but still chewy.",
+        "Top with the grated tomato.",
+        "Crumble over the feta and scatter with olives, capers and oregano.",
+        "Drizzle with the olive oil."
+      ],
+      "notes": [
+        "Eat straight after assembling so the rusks keep some crunch."
+      ],
+      "nutrition": {
+        "kcal": 397,
+        "proteinG": 11,
+        "carbsG": 30,
+        "fatG": 25,
+        "fibreG": 4,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "mexican-esquites-charred-corn-cup",
+      "title": "Mexican Esquites Charred Corn Cup",
+      "summary": "Charred corn tossed with mayonnaise, lime, chilli and cotija style cheese, served in a cup.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "snack",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 corn cobs, kernels cut off",
+            "1 tbsp vegetable oil",
+            "4 tbsp mayonnaise",
+            "2 tbsp lime juice",
+            "40g feta, crumbled",
+            "1 tsp chilli powder",
+            "1 small bunch coriander, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Char the corn kernels in the oil in a hot pan for 8 minutes, stirring, until deeply golden.",
+        "Mix with the mayonnaise, lime juice and chilli powder while still warm.",
+        "Spoon into cups and top with the feta and coriander.",
+        "Serve warm in cups with extra lime wedges."
+      ],
+      "notes": [
+        "Serve with extra lime wedges."
+      ],
+      "nutrition": {
+        "kcal": 298,
+        "proteinG": 8,
+        "carbsG": 28,
+        "fatG": 16,
+        "fibreG": 5,
+        "sodiumMg": 330
+      }
+    }
+  ]
+}

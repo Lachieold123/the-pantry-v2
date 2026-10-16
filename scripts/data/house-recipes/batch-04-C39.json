@@ -1,0 +1,1264 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "pearl-barley-salad-with-roasted-carrots-and-feta",
+      "title": "Pearl Barley Salad with Roasted Carrots and Feta",
+      "summary": "Chewy barley, caramelised carrots, feta and parsley in a lemon dressing, good warm or cold.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup pearl barley",
+            "500 g carrots, cut into batons",
+            "2 tbsp olive oil",
+            "1 tsp ground cumin",
+            "100 g feta, crumbled",
+            "1 cup flat-leaf parsley leaves",
+            "2 tbsp lemon juice",
+            "1 tbsp olive oil, extra",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C and toss the carrots with the oil and cumin on a tray.",
+        "Roast for 25 minutes, turning once, until the edges are browned and the carrots are tender.",
+        "Simmer the barley in plenty of salted water for 30 minutes until tender but still chewy, then drain well.",
+        "Toss the warm barley with the lemon juice, extra oil, salt and parsley, then fold through the carrots and feta."
+      ],
+      "notes": [
+        "Swap the barley for farro-style grains only if your pantry has them; wheat berries also work.",
+        "Keeps 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 381,
+        "proteinG": 11,
+        "carbsG": 46,
+        "fatG": 15,
+        "fibreG": 9,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "quinoa-chickpea-and-cucumber-salad-with-lemon-tahini",
+      "title": "Quinoa, Chickpea and Cucumber Salad with Lemon Tahini",
+      "summary": "A vegan protein salad of fluffy quinoa, chickpeas and crunchy cucumber with a creamy lemon tahini dressing.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup white quinoa, rinsed",
+            "400 g can chickpeas, drained",
+            "2 Lebanese cucumbers, diced",
+            "200 g cherry tomatoes, halved",
+            "1/2 cup chopped parsley",
+            "3 tbsp tahini",
+            "3 tbsp lemon juice",
+            "1 clove garlic, crushed",
+            "3 tbsp water",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the quinoa in 2 cups of water for 12 minutes until the water is absorbed, then rest covered for 5 minutes and fluff with a fork.",
+        "Whisk the tahini, lemon juice, garlic, water and salt until smooth and pourable.",
+        "Toss the cooled quinoa with the chickpeas, cucumber, tomatoes and parsley.",
+        "Drizzle with the dressing and toss until everything is coated."
+      ],
+      "notes": [
+        "Add a handful of toasted pumpkin seeds for crunch.",
+        "Keeps 3 days in the fridge; add the dressing just before serving."
+      ],
+      "nutrition": {
+        "kcal": 362,
+        "proteinG": 14,
+        "carbsG": 45,
+        "fatG": 12,
+        "fibreG": 9,
+        "sodiumMg": 430
+      }
+    },
+    {
+      "id": "brown-rice-edamame-and-carrot-salad-with-sesame-ginger-dressing",
+      "title": "Brown Rice, Edamame and Carrot Salad with Sesame Ginger Dressing",
+      "summary": "Nutty brown rice with edamame, shredded carrot and spring onion in a gingery sesame dressing.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup brown rice",
+            "1 cup shelled edamame",
+            "2 carrots, grated",
+            "3 spring onions, sliced",
+            "1 tbsp sesame seeds, toasted",
+            "2 tbsp soy sauce",
+            "2 tbsp rice vinegar",
+            "1 tbsp sesame oil",
+            "1 tbsp grated ginger",
+            "1 tsp honey"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the rice in 2 1/2 cups of water, covered, for 30 minutes until tender, then rinse under cold water and drain.",
+        "Boil the edamame for 3 minutes until bright green and tender, then drain.",
+        "Whisk the soy sauce, vinegar, sesame oil, ginger and honey together.",
+        "Toss the rice with the edamame, carrot, spring onion and dressing, then scatter over the sesame seeds."
+      ],
+      "notes": [
+        "Use tamari for a gluten-free version.",
+        "Keeps 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 329,
+        "proteinG": 11,
+        "carbsG": 48,
+        "fatG": 9,
+        "fibreG": 6,
+        "sodiumMg": 620
+      }
+    },
+    {
+      "id": "lentil-and-roasted-carrot-salad-with-parsley-and-pumpkin-seeds",
+      "title": "Lentil and Roasted Carrot Salad with Parsley and Pumpkin Seeds",
+      "summary": "Earthy green lentils with sweet roasted carrot, herbs and toasted seeds.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup green lentils",
+            "600 g carrots, cut into chunks",
+            "2 tbsp olive oil",
+            "1/3 cup pumpkin seeds",
+            "1 cup chopped parsley",
+            "2 tbsp apple cider vinegar",
+            "1 tbsp olive oil, extra",
+            "1 tsp Dijon mustard",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the carrots with the oil at 200°C for 25 minutes until golden and tender.",
+        "Simmer the lentils in plenty of water for 22 minutes until tender but not mushy, then drain.",
+        "Toast the pumpkin seeds in a dry pan for 3 minutes until they pop.",
+        "Whisk the vinegar, extra oil, mustard and salt, then toss everything together with the parsley."
+      ],
+      "notes": [
+        "Vegan and gluten-free as written.",
+        "Good with a spoonful of yoghurt on top."
+      ],
+      "nutrition": {
+        "kcal": 364,
+        "proteinG": 10,
+        "carbsG": 41,
+        "fatG": 16,
+        "fibreG": 8,
+        "sodiumMg": 430
+      }
+    },
+    {
+      "id": "quinoa-tabbouleh-with-mint-and-tomato",
+      "title": "Quinoa Tabbouleh with Mint and Tomato",
+      "summary": "A gluten-free take on tabbouleh using fluffy quinoa, loads of herbs and ripe tomato.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3/4 cup white quinoa, rinsed",
+            "4 ripe tomatoes, finely diced",
+            "2 cups chopped flat-leaf parsley",
+            "1/2 cup chopped mint",
+            "4 spring onions, sliced",
+            "1/4 cup lemon juice",
+            "1/4 cup olive oil",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the quinoa in 1 1/2 cups of water for 12 minutes until the water is absorbed.",
+        "Rest covered for 5 minutes, then fluff with a fork and spread out until cool.",
+        "Mix the cooled millet with the tomato, parsley, mint and spring onion.",
+        "Dress with the lemon juice, oil and salt and toss until glossy."
+      ],
+      "notes": [
+        "Drain the diced tomato briefly so the salad does not turn watery.",
+        "Best eaten the day it is made."
+      ],
+      "nutrition": {
+        "kcal": 268,
+        "proteinG": 5,
+        "carbsG": 28,
+        "fatG": 14,
+        "fibreG": 5,
+        "sodiumMg": 350
+      }
+    },
+    {
+      "id": "chicken-quinoa-and-avocado-power-bowl-salad",
+      "title": "Chicken, Quinoa and Avocado Power Bowl Salad",
+      "summary": "A high-protein salad of shredded chicken, quinoa, avocado and lime-dressed greens.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500 g chicken breast fillets",
+            "1 cup white quinoa, rinsed",
+            "2 avocados, sliced",
+            "100 g baby spinach",
+            "1 cup corn kernels",
+            "1 red capsicum, diced",
+            "2 limes, juiced",
+            "3 tbsp olive oil",
+            "1 tsp ground cumin",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Poach the chicken in simmering salted water for 15 minutes until cooked through with no pink and the juices run clear, then shred.",
+        "Simmer the quinoa in 2 cups of water for 12 minutes until the water is absorbed, then fluff and cool slightly.",
+        "Whisk the lime juice, oil, cumin and salt.",
+        "Toss the quinoa, spinach, corn and capsicum with the dressing, then top with the chicken and avocado."
+      ],
+      "notes": [
+        "Food safety: cook chicken until it reaches 75°C in the thickest part; refrigerate leftovers within 2 hours and eat within 2 days.",
+        "Slice the avocado just before serving."
+      ],
+      "nutrition": {
+        "kcal": 528,
+        "proteinG": 35,
+        "carbsG": 38,
+        "fatG": 24,
+        "fibreG": 10,
+        "sodiumMg": 430
+      }
+    },
+    {
+      "id": "lentil-and-grilled-halloumi-salad-with-roasted-capsicum",
+      "title": "Lentil and Grilled Halloumi Salad with Roasted Capsicum",
+      "summary": "Savoury lentils, squeaky halloumi and smoky capsicum in a lemony dressing.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup green lentils",
+            "2 red capsicums, quartered",
+            "250 g halloumi, sliced",
+            "100 g rocket",
+            "1/4 cup lemon juice",
+            "1/4 cup olive oil",
+            "1 tsp ground cumin",
+            "1 clove garlic, crushed",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the lentils in plenty of water for 22 minutes until tender but not mushy, then drain.",
+        "Grill the capsicum skin-side up under a hot grill for 10 minutes until blistered, then slice.",
+        "Fry the halloumi in a dry non-stick pan for 2 minutes each side until golden.",
+        "Whisk the lemon juice, oil, cumin, garlic and salt, toss with the lentils, capsicum and rocket, then top with the halloumi."
+      ],
+      "notes": [
+        "Halloumi is made with rennet-free options in some brands; check the label if you need it vegetarian.",
+        "Serve warm."
+      ],
+      "nutrition": {
+        "kcal": 479,
+        "proteinG": 24,
+        "carbsG": 34,
+        "fatG": 25,
+        "fibreG": 11,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "soft-boiled-egg-edamame-and-brown-rice-salad-jars",
+      "title": "Soft-Boiled Egg, Edamame and Brown Rice Salad Jars",
+      "summary": "Make-ahead lunch jars layered with brown rice, edamame, cucumber and a jammy egg.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup brown rice",
+            "4 eggs",
+            "1 cup shelled edamame",
+            "2 Lebanese cucumbers, sliced",
+            "1 carrot, grated",
+            "2 tbsp soy sauce",
+            "1 tbsp rice vinegar",
+            "1 tbsp sesame oil",
+            "1 tsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the rice in 2 1/2 cups of water, covered, for 30 minutes until tender, then cool.",
+        "Boil the eggs for 7 minutes until the whites are set and the yolks jammy, then cool in cold water and peel.",
+        "Boil the edamame for 3 minutes until tender, then drain.",
+        "Whisk the soy sauce, vinegar and sesame oil into the base of each jar, then layer the rice, edamame, cucumber and carrot, and top with the halved egg and sesame seeds."
+      ],
+      "notes": [
+        "Food safety: use fresh eggs, keep the jars chilled and eat within 2 days; pregnant women, older people and young children should have the eggs boiled hard.",
+        "Shake or tip the jar into a bowl to serve."
+      ],
+      "nutrition": {
+        "kcal": 347,
+        "proteinG": 17,
+        "carbsG": 42,
+        "fatG": 11,
+        "fibreG": 6,
+        "sodiumMg": 660
+      }
+    },
+    {
+      "id": "smoked-salmon-chickpea-and-dill-yoghurt-salad",
+      "title": "Smoked Salmon, Chickpea and Dill Yoghurt Salad",
+      "summary": "Flaked smoked salmon over crisp chickpeas, cucumber and a cool dill yoghurt dressing.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400 g can chickpeas, drained",
+            "200 g smoked salmon, torn",
+            "2 Lebanese cucumbers, diced",
+            "1 red onion, thinly sliced",
+            "100 g mixed salad leaves",
+            "3/4 cup Greek yoghurt",
+            "2 tbsp chopped dill",
+            "2 tbsp lemon juice",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Stir the yoghurt, dill, lemon juice and salt together until smooth.",
+        "Toss the chickpeas, cucumber, onion and leaves together in a large bowl.",
+        "Divide between plates, top with the smoked salmon and spoon over the dill yoghurt until generously coated."
+      ],
+      "notes": [
+        "Food safety: smoked salmon is a ready-to-eat chilled fish; pregnant women, older people and those with weakened immunity should avoid it and use hot-cooked salmon instead.",
+        "Keep chilled until serving."
+      ],
+      "nutrition": {
+        "kcal": 255,
+        "proteinG": 22,
+        "carbsG": 23,
+        "fatG": 7,
+        "fibreG": 6,
+        "sodiumMg": 860
+      }
+    },
+    {
+      "id": "crisp-tofu-and-soba-salad-with-peanut-lime-dressing",
+      "title": "Crisp Tofu and Soba Salad with Peanut Lime Dressing",
+      "summary": "Golden tofu cubes and cold soba with crunchy veg in a lime peanut dressing.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300 g firm tofu, cubed",
+            "200 g soba noodles",
+            "2 tbsp vegetable oil",
+            "1 carrot, julienned",
+            "1 cup shredded red cabbage",
+            "3 spring onions, sliced",
+            "3 tbsp peanut butter",
+            "2 tbsp lime juice",
+            "2 tbsp soy sauce",
+            "1 tbsp maple syrup",
+            "3 tbsp warm water"
+          ]
+        }
+      ],
+      "steps": [
+        "Pat the tofu dry and fry in the oil over medium-high heat for 8 minutes, turning, until golden on all sides.",
+        "Boil the soba for 5 minutes until just tender, then rinse under cold water and drain.",
+        "Whisk the peanut butter, lime juice, soy sauce, maple syrup and warm water until smooth.",
+        "Toss the noodles, carrot, cabbage and spring onion with the dressing and top with the tofu."
+      ],
+      "notes": [
+        "Use 100 percent buckwheat soba and tamari for a gluten-free version.",
+        "Add chilli flakes for heat."
+      ],
+      "nutrition": {
+        "kcal": 415,
+        "proteinG": 19,
+        "carbsG": 44,
+        "fatG": 17,
+        "fibreG": 5,
+        "sodiumMg": 760
+      }
+    },
+    {
+      "id": "cottage-cheese-tomato-and-basil-protein-salad-bowl",
+      "title": "Cottage Cheese, Tomato and Basil Protein Salad Bowl",
+      "summary": "A no-cook high-protein bowl of cottage cheese with juicy tomato, cucumber, basil and olives.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup cottage cheese",
+            "2 ripe tomatoes, chopped",
+            "1 Lebanese cucumber, diced",
+            "10 black olives, halved",
+            "1/4 cup basil leaves, torn",
+            "2 tsp olive oil",
+            "1 tsp balsamic vinegar",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Spoon the cottage cheese into two bowls, chilled until you are ready to serve.",
+        "Pile the tomato, cucumber and olives over the top.",
+        "Drizzle with the oil and vinegar, scatter over the basil and pepper, and serve straight away."
+      ],
+      "notes": [
+        "Add a boiled egg for extra protein.",
+        "Use dairy-free cottage cheese substitutes only if they are labelled to suit."
+      ],
+      "nutrition": {
+        "kcal": 194,
+        "proteinG": 18,
+        "carbsG": 11,
+        "fatG": 8,
+        "fibreG": 3,
+        "sodiumMg": 660
+      }
+    },
+    {
+      "id": "beef-and-black-bean-taco-salad",
+      "title": "Beef and Black Bean Taco Salad",
+      "summary": "Spiced beef mince and black beans over crisp lettuce with corn, tomato and a lime yoghurt dressing.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500 g lean beef mince",
+            "400 g can black beans, drained",
+            "1 tbsp taco spice mix",
+            "1 tbsp olive oil",
+            "1 cos lettuce, shredded",
+            "1 cup corn kernels",
+            "2 tomatoes, diced",
+            "1 avocado, diced",
+            "1/2 cup Greek yoghurt",
+            "2 tbsp lime juice",
+            "1/2 cup grated cheddar"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the mince in the oil over high heat for 6 minutes, breaking it up, until no pink remains.",
+        "Stir in the spice mix and beans and cook for 3 minutes until hot and sticky.",
+        "Stir the yoghurt and lime juice together.",
+        "Pile the lettuce, corn, tomato and avocado onto plates, top with the beef mixture, cheddar and the lime yoghurt."
+      ],
+      "notes": [
+        "Food safety: cook mince until it reaches 75°C throughout with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
+        "Crush a few corn chips over the top if you like."
+      ],
+      "nutrition": {
+        "kcal": 456,
+        "proteinG": 34,
+        "carbsG": 26,
+        "fatG": 22,
+        "fibreG": 9,
+        "sodiumMg": 620
+      }
+    },
+    {
+      "id": "shaved-cabbage-apple-and-walnut-autumn-salad",
+      "title": "Shaved Cabbage, Apple and Walnut Autumn Salad",
+      "summary": "Crunchy shaved cabbage with crisp apple, toasted walnuts and a mustardy cider dressing.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1/2 small green cabbage, finely shaved",
+            "2 crisp red apples, sliced into matchsticks",
+            "1/2 cup walnuts, toasted",
+            "1/4 cup chopped parsley",
+            "3 tbsp apple cider vinegar",
+            "3 tbsp olive oil",
+            "1 tsp wholegrain mustard",
+            "1 tsp honey",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the vinegar, oil, mustard, honey and salt together until emulsified.",
+        "Toss the cabbage and apple with the dressing straight away, until coated, so the apple does not brown.",
+        "Fold through the walnuts and parsley and serve."
+      ],
+      "notes": [
+        "Rest 10 minutes for a softer slaw.",
+        "Use maple syrup for a vegan version."
+      ],
+      "nutrition": {
+        "kcal": 255,
+        "proteinG": 4,
+        "carbsG": 19,
+        "fatG": 17,
+        "fibreG": 5,
+        "sodiumMg": 310
+      }
+    },
+    {
+      "id": "sauteed-asparagus-with-garlic-and-lemon-zest",
+      "title": "Sauteed Asparagus with Garlic and Lemon Zest",
+      "summary": "Spring asparagus tossed quickly in garlic butter and finished with lemon zest.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 6,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 bunches asparagus, woody ends snapped off",
+            "2 tbsp butter",
+            "2 cloves garlic, sliced",
+            "1 lemon, zested",
+            "1/4 tsp salt",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Melt the butter in a large frying pan over medium-high heat.",
+        "Add the asparagus and cook for 4 minutes, turning, until bright green and just tender.",
+        "Add the garlic and cook for 1 minute until fragrant, then toss through the lemon zest, salt and pepper."
+      ],
+      "notes": [
+        "Thick spears may need 1 extra minute.",
+        "Use olive oil for a dairy-free side."
+      ],
+      "nutrition": {
+        "kcal": 96,
+        "proteinG": 4,
+        "carbsG": 5,
+        "fatG": 6,
+        "fibreG": 3,
+        "sodiumMg": 190
+      }
+    },
+    {
+      "id": "charred-broccolini-with-chilli-garlic-oil",
+      "title": "Charred Broccolini with Chilli Garlic Oil",
+      "summary": "Blistered broccolini glugged with warm garlic and chilli oil.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 bunches broccolini",
+            "2 tbsp olive oil",
+            "3 cloves garlic, sliced",
+            "1/2 tsp chilli flakes",
+            "1 tbsp lemon juice",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Blanch the broccolini in boiling water for 1 minute until bright green, then drain and pat dry.",
+        "Char in a hot dry frying pan for 4 minutes, turning, until blistered in spots.",
+        "Warm the oil with the garlic and chilli over low heat for 2 minutes until the garlic is pale gold.",
+        "Pour the oil over the broccolini and finish with the lemon juice and salt."
+      ],
+      "notes": [
+        "Watch the garlic closely; it turns bitter if it browns.",
+        "Good with grilled fish."
+      ],
+      "nutrition": {
+        "kcal": 142,
+        "proteinG": 6,
+        "carbsG": 9,
+        "fatG": 8,
+        "fibreG": 5,
+        "sodiumMg": 200
+      }
+    },
+    {
+      "id": "zucchini-ribbons-with-ricotta-mint-and-lemon",
+      "title": "Zucchini Ribbons with Ricotta, Mint and Lemon",
+      "summary": "Raw zucchini ribbons tossed with creamy ricotta, fresh mint and lemon.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 medium zucchini",
+            "200 g fresh ricotta",
+            "1/4 cup mint leaves, torn",
+            "1 lemon, zested and juiced",
+            "2 tbsp olive oil",
+            "2 tbsp pine nuts, toasted",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Shave the zucchini into long ribbons with a vegetable peeler.",
+        "Toss the ribbons with the lemon juice, oil and salt in a bowl.",
+        "Spoon the ricotta over the top and scatter with the mint, lemon zest and pine nuts until evenly covered."
+      ],
+      "notes": [
+        "Serve straight away; the zucchini weeps if left.",
+        "Toast pine nuts until golden for the best flavour."
+      ],
+      "nutrition": {
+        "kcal": 204,
+        "proteinG": 8,
+        "carbsG": 6,
+        "fatG": 16,
+        "fibreG": 2,
+        "sodiumMg": 200
+      }
+    },
+    {
+      "id": "buttered-new-potatoes-with-dill-and-peas",
+      "title": "Buttered New Potatoes with Dill and Peas",
+      "summary": "Waxy new potatoes tossed with butter, sweet peas and fresh dill.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800 g new potatoes, halved",
+            "1 cup frozen peas",
+            "40 g butter",
+            "2 tbsp chopped dill",
+            "1 tsp lemon juice",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Cover the potatoes with cold salted water and simmer for 15 minutes until a knife slides in easily.",
+        "Add the peas for the last 2 minutes of cooking until bright green and hot.",
+        "Drain well and return to the pot, then toss with the butter, dill, lemon juice and salt until glossy."
+      ],
+      "notes": [
+        "Mint works well in place of dill.",
+        "Use olive oil to keep it dairy-free."
+      ],
+      "nutrition": {
+        "kcal": 221,
+        "proteinG": 6,
+        "carbsG": 31,
+        "fatG": 7,
+        "fibreG": 5,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "roasted-radishes-with-brown-butter-and-chives",
+      "title": "Roasted Radishes with Brown Butter and Chives",
+      "summary": "Halved radishes roasted until sweet and mellow, finished with nutty brown butter.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 bunches radishes, halved",
+            "1 tbsp olive oil",
+            "40 g butter",
+            "2 tbsp chopped chives",
+            "1 tsp lemon juice",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the radishes with the oil and salt on a tray and roast at 220°C for 15 minutes until tender and golden at the edges.",
+        "Melt the butter in a small pan over medium heat for 3 minutes, swirling, until it smells nutty and turns light brown.",
+        "Pour the brown butter over the radishes with the lemon juice and toss until coated, then scatter with chives."
+      ],
+      "notes": [
+        "Roasting takes away the peppery bite.",
+        "Leave a little stalk on for looks."
+      ],
+      "nutrition": {
+        "kcal": 118,
+        "proteinG": 1,
+        "carbsG": 5,
+        "fatG": 10,
+        "fibreG": 2,
+        "sodiumMg": 180
+      }
+    },
+    {
+      "id": "creamed-spinach-with-nutmeg",
+      "title": "Creamed Spinach with Nutmeg",
+      "summary": "Silky wilted spinach in a light béchamel with a grating of nutmeg.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500 g frozen spinach, thawed",
+            "30 g butter",
+            "2 tbsp plain flour",
+            "1 cup milk",
+            "1/4 tsp ground nutmeg",
+            "1/2 tsp salt",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Squeeze the thawed spinach hard in a clean cloth to remove the water.",
+        "Melt the butter in a saucepan, stir in the flour and cook for 1 minute until bubbling.",
+        "Whisk in the milk a little at a time and simmer for 4 minutes, stirring, until thick and smooth.",
+        "Stir in the spinach, nutmeg, salt and pepper and cook for 3 minutes until hot."
+      ],
+      "notes": [
+        "Add a splash of cream for a richer finish.",
+        "Reheats well."
+      ],
+      "nutrition": {
+        "kcal": 144,
+        "proteinG": 6,
+        "carbsG": 10,
+        "fatG": 8,
+        "fibreG": 4,
+        "sodiumMg": 430
+      }
+    },
+    {
+      "id": "vegan-cashew-basil-pesto",
+      "title": "Vegan Cashew Basil Pesto",
+      "summary": "A dairy-free pesto using cashews and nutritional yeast for a cheesy depth.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups basil leaves, packed",
+            "1/2 cup raw cashews",
+            "1/3 cup olive oil",
+            "2 tbsp nutritional yeast",
+            "1 clove garlic",
+            "2 tbsp lemon juice",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Pulse the cashews, garlic and nutritional yeast in a food processor until coarsely ground.",
+        "Add the basil, lemon juice and salt and pulse until finely chopped.",
+        "With the motor running, drizzle in the oil until the pesto is thick and green, then taste for salt."
+      ],
+      "notes": [
+        "Keeps 5 days in the fridge under a layer of oil, or freezes for 3 months.",
+        "Toss through 400 g of cooked pasta."
+      ],
+      "nutrition": {
+        "kcal": 161,
+        "proteinG": 3,
+        "carbsG": 3,
+        "fatG": 15,
+        "fibreG": 1,
+        "sodiumMg": 70
+      }
+    },
+    {
+      "id": "classic-basil-pesto-with-vegetarian-hard-cheese",
+      "title": "Classic Basil Pesto with Vegetarian Hard Cheese",
+      "summary": "Bright Genoese-style pesto made with pine nuts and a vegetarian hard cheese.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups basil leaves, packed",
+            "1/3 cup pine nuts, toasted",
+            "1/2 cup grated vegetarian hard cheese",
+            "1 clove garlic",
+            "1/2 cup olive oil",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Crush or pulse the garlic, pine nuts and salt in a food processor until a coarse paste forms.",
+        "Add the basil and pulse until finely chopped.",
+        "Stir in the cheese, then drizzle in the oil until the pesto is thick and glossy."
+      ],
+      "notes": [
+        "Parmesan is not vegetarian because it uses animal rennet; use a vegetarian hard cheese.",
+        "Keeps 5 days in the fridge under a layer of oil."
+      ],
+      "nutrition": {
+        "kcal": 216,
+        "proteinG": 3,
+        "carbsG": 1,
+        "fatG": 22,
+        "fibreG": 1,
+        "sodiumMg": 110
+      }
+    },
+    {
+      "id": "mexican-salsa-verde-with-coriander-and-green-chilli",
+      "title": "Mexican Salsa Verde with Coriander and Green Chilli",
+      "summary": "Tangy cooked green salsa with green chilli, lime and coriander.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "snack",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 green tomatoes, quartered",
+            "2 long green chillies, roughly chopped",
+            "1/2 white onion, chopped",
+            "2 cloves garlic",
+            "1 cup coriander leaves",
+            "2 tbsp lime juice",
+            "1/2 tsp salt",
+            "1 tsp olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the green tomatoes, chillies, onion and garlic in 1/2 cup of water for 10 minutes until very soft.",
+        "Blend with the coriander, lime juice, salt and oil until smooth but still a little textured.",
+        "Cool and taste, adding more lime or salt as needed."
+      ],
+      "notes": [
+        "Seed the chillies for a milder sauce.",
+        "Keeps 5 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 59,
+        "proteinG": 1,
+        "carbsG": 6,
+        "fatG": 3,
+        "fibreG": 2,
+        "sodiumMg": 200
+      }
+    },
+    {
+      "id": "peppery-rocket-and-walnut-pesto",
+      "title": "Peppery Rocket and Walnut Pesto",
+      "summary": "A punchy rocket pesto with toasted walnuts and lemon, great on pasta or toast.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100 g rocket",
+            "1/2 cup walnuts, toasted",
+            "1/3 cup grated vegetarian hard cheese",
+            "1 clove garlic",
+            "1/3 cup olive oil",
+            "2 tbsp lemon juice",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Pulse the walnuts and garlic in a food processor until coarsely ground.",
+        "Add the rocket, cheese, lemon juice and salt and pulse until a rough paste forms.",
+        "Drizzle in the oil with the motor running until thick and spoonable."
+      ],
+      "notes": [
+        "Use a vegetarian hard cheese; parmesan is not vegetarian.",
+        "Keeps 5 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 175,
+        "proteinG": 3,
+        "carbsG": 2,
+        "fatG": 17,
+        "fibreG": 1,
+        "sodiumMg": 110
+      }
+    },
+    {
+      "id": "tahini-and-parsley-green-sauce",
+      "title": "Tahini and Parsley Green Sauce",
+      "summary": "A creamy, tangy green sauce of parsley, tahini and lemon for falafel, fish and roast vegetables.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup flat-leaf parsley leaves",
+            "1/3 cup tahini",
+            "1/4 cup lemon juice",
+            "1 clove garlic",
+            "1/2 cup cold water",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Blitz the parsley, garlic and lemon juice in a food processor until finely chopped.",
+        "Add the tahini and salt, then pour in the water with the motor running until the sauce is smooth and pourable.",
+        "Taste and add more lemon or salt until balanced."
+      ],
+      "notes": [
+        "Thickens in the fridge; loosen with a splash of water.",
+        "Keeps 5 days."
+      ],
+      "nutrition": {
+        "kcal": 90,
+        "proteinG": 2,
+        "carbsG": 2,
+        "fatG": 8,
+        "fibreG": 1,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "thai-green-chilli-lime-and-coriander-dipping-sauce",
+      "title": "Thai Green Chilli, Lime and Coriander Dipping Sauce",
+      "summary": "A sharp, fragrant sauce of green chilli, lime, garlic and coriander for grilled meat and fish.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 green bird's eye chillies, sliced",
+            "3 cloves garlic",
+            "1/2 cup coriander leaves",
+            "1/4 cup lime juice",
+            "2 tbsp fish sauce",
+            "1 tbsp palm sugar",
+            "2 tbsp water"
+          ]
+        }
+      ],
+      "steps": [
+        "Crush the chillies, garlic and sugar in a mortar until a rough paste forms.",
+        "Stir in the lime juice, fish sauce and water until the sugar dissolves.",
+        "Fold through the coriander and taste for a balance of sour, salty and sweet."
+      ],
+      "notes": [
+        "Keeps 3 days in the fridge.",
+        "Use soy sauce in place of fish sauce for a vegetarian version."
+      ],
+      "nutrition": {
+        "kcal": 47,
+        "proteinG": 1,
+        "carbsG": 8,
+        "fatG": 1,
+        "fibreG": 1,
+        "sodiumMg": 640
+      }
+    }
+  ]
+}

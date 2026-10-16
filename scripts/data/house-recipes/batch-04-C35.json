@@ -1,0 +1,1141 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "manhattan-tomato-chowder-with-clams",
+      "title": "Manhattan Tomato Chowder with Clams",
+      "summary": "A tomato-based chowder with potato, celery and tender clams, lighter than the creamy kind.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp olive oil",
+            "100 g bacon, diced",
+            "1 brown onion, diced",
+            "2 stalks celery, diced",
+            "1 carrot, diced",
+            "2 cloves garlic, crushed",
+            "2 potatoes, diced",
+            "400 g canned diced tomatoes",
+            "3 cups fish stock",
+            "2 x 100 g cans clams, drained",
+            "1 tsp thyme leaves",
+            "2 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the bacon in the oil in a large pot for 4 minutes until it renders and crisps.",
+        "Add the onion, celery, carrot and garlic and cook for 5 minutes until soft.",
+        "Stir in the potatoes, tomatoes, stock and thyme, then simmer for 15 minutes until the potatoes are tender.",
+        "Add the clams and heat through for 3 minutes. Scatter with parsley."
+      ],
+      "notes": [
+        "Food safety: cook the bacon through, heat the clams until steaming hot and opaque at 75°C, and keep leftovers in the fridge for up to 2 days.",
+        "Serve with crackers."
+      ],
+      "nutrition": {
+        "kcal": 328,
+        "proteinG": 17,
+        "carbsG": 31,
+        "fatG": 14,
+        "fibreG": 5,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "creamy-white-fish-chowder-with-thyme",
+      "title": "Creamy White Fish Chowder with Thyme",
+      "summary": "A chunky chowder of white fish, potato and sweetcorn in a gently thickened milk base.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp butter",
+            "1 brown onion, diced",
+            "2 stalks celery, diced",
+            "2 potatoes, diced",
+            "1 tbsp plain flour",
+            "2 cups fish stock",
+            "2 cups milk",
+            "1 cup corn kernels",
+            "500 g firm white fish fillets, cubed",
+            "1 tsp thyme leaves",
+            "1/4 cup cream",
+            "2 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Melt the butter in a large pot and cook the onion and celery for 5 minutes until soft.",
+        "Stir in the flour for 1 minute, then add the stock, milk, potatoes and thyme.",
+        "Simmer for 12 minutes until the potatoes are tender.",
+        "Add the corn and fish and poach gently for 5 minutes until the fish is opaque and flakes easily.",
+        "Stir in the cream and parsley."
+      ],
+      "notes": [
+        "Food safety: cook the fish until opaque throughout and the chowder steaming at 75°C, and eat leftovers within 2 days.",
+        "Do not boil hard once the fish is in or it will break up."
+      ],
+      "nutrition": {
+        "kcal": 399,
+        "proteinG": 32,
+        "carbsG": 32,
+        "fatG": 15,
+        "fibreG": 4,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "prawn-bisque",
+      "title": "Prawn Bisque",
+      "summary": "A silky, deeply flavoured bisque made from prawn shells, tomato paste and a splash of cream.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600 g raw prawns, shells on",
+            "2 tbsp butter",
+            "1 brown onion, diced",
+            "1 carrot, diced",
+            "2 stalks celery, diced",
+            "2 tbsp tomato paste",
+            "1/4 cup white rice",
+            "4 cups fish stock",
+            "1/2 cup cream",
+            "1 tsp paprika",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Peel the prawns and keep the shells. Refrigerate the prawn meat.",
+        "Fry the shells in the butter for 5 minutes until bright orange and fragrant.",
+        "Add the onion, carrot and celery and cook for 5 minutes, then stir in the tomato paste and paprika.",
+        "Add the rice and stock and simmer for 25 minutes until the rice is very soft.",
+        "Blend well and strain through a sieve, pressing out all the liquid.",
+        "Return to the pot, add the prawns and cook for 3 minutes until pink and curled. Stir in the cream and lemon juice."
+      ],
+      "notes": [
+        "Food safety: cook the prawns until opaque and firm, and bring the bisque to 75°C before serving. Keep leftovers refrigerated and eat within 2 days.",
+        "The rice thickens the soup so no flour is needed."
+      ],
+      "nutrition": {
+        "kcal": 332,
+        "proteinG": 27,
+        "carbsG": 19,
+        "fatG": 16,
+        "fibreG": 2,
+        "sodiumMg": 760
+      }
+    },
+    {
+      "id": "crab-and-sweetcorn-bisque",
+      "title": "Crab and Sweetcorn Bisque",
+      "summary": "A smooth corn bisque finished with sweet crab meat and a swirl of cream.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp butter",
+            "1 brown onion, diced",
+            "2 cloves garlic, crushed",
+            "3 cups corn kernels",
+            "2 cups chicken stock",
+            "1 cup milk",
+            "1/2 cup cream",
+            "200 g cooked crab meat",
+            "1 tsp paprika",
+            "1 tbsp lemon juice",
+            "2 tbsp chopped chives"
+          ]
+        }
+      ],
+      "steps": [
+        "Melt the butter and cook the onion and garlic for 5 minutes until soft.",
+        "Add the corn, stock and paprika and simmer for 12 minutes until the corn is tender.",
+        "Blend with the milk until very smooth, then return to the pot.",
+        "Stir in the cream and crab and warm gently for 3 minutes until steaming. Add the lemon juice.",
+        "Ladle into bowls and serve with chives on top."
+      ],
+      "notes": [
+        "Food safety: use fresh, refrigerated crab meat, heat until the crab is opaque and the bisque a steaming 75°C. Eat leftovers within 2 days.",
+        "Strain for a restaurant style finish."
+      ],
+      "nutrition": {
+        "kcal": 336,
+        "proteinG": 17,
+        "carbsG": 29,
+        "fatG": 16,
+        "fibreG": 4,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "mushroom-bisque",
+      "title": "Mushroom Bisque",
+      "summary": "An earthy, velvety soup of browned mushrooms, thyme and cream, with no flour needed.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500 g mushrooms, sliced",
+            "2 tbsp butter",
+            "1 brown onion, diced",
+            "2 cloves garlic, crushed",
+            "1 potato, diced",
+            "1 tsp thyme leaves",
+            "4 cups vegetable stock",
+            "1/3 cup cream",
+            "1 tbsp soy sauce",
+            "2 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the mushrooms in the butter in a large pot over high heat for 8 minutes until deeply golden.",
+        "Add the onion, garlic and thyme and cook for 4 minutes until soft.",
+        "Stir in the potato, stock and soy sauce, then simmer for 15 minutes until the potato is tender.",
+        "Blend until smooth, stir in the cream and reheat until steaming. Scatter with parsley."
+      ],
+      "notes": [
+        "Reserve a few fried mushroom slices to garnish.",
+        "Keeps for 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 215,
+        "proteinG": 6,
+        "carbsG": 17,
+        "fatG": 13,
+        "fibreG": 3,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "roasted-butternut-bisque",
+      "title": "Roasted Butternut Bisque",
+      "summary": "Roasted pumpkin blended with apple and a touch of cream for a sweet, silky soup.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 kg butternut pumpkin, cubed",
+            "1 apple, peeled and chopped",
+            "1 brown onion, quartered",
+            "3 tbsp olive oil",
+            "1 tsp ground cumin",
+            "4 cups vegetable stock",
+            "1/3 cup cream",
+            "1 pinch nutmeg",
+            "2 tbsp pepitas"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C and toss the pumpkin, apple and onion with the oil and cumin on a tray.",
+        "Roast for 35 minutes until soft and caramelised at the edges.",
+        "Blend with the stock until smooth and warm in a pot until steaming.",
+        "Stir in the cream and nutmeg, then scatter with pepitas."
+      ],
+      "notes": [
+        "Skip the cream and use coconut milk for a dairy free version.",
+        "Freezes well for 3 months."
+      ],
+      "nutrition": {
+        "kcal": 224,
+        "proteinG": 4,
+        "carbsG": 23,
+        "fatG": 12,
+        "fibreG": 4,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "salmon-and-leek-chowder",
+      "title": "Salmon and Leek Chowder",
+      "summary": "Fresh salmon, sweet leek and potato in a creamy, dill-scented chowder.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp butter",
+            "2 leeks, sliced",
+            "2 potatoes, diced",
+            "3 cups fish stock",
+            "1 cup milk",
+            "400 g salmon fillet, skinned and cubed",
+            "1/4 cup cream",
+            "2 tbsp chopped dill",
+            "1 tbsp lemon juice",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Melt the butter and cook the leeks for 6 minutes until soft.",
+        "Add the potatoes, stock and milk and simmer for 15 minutes until the potatoes are tender.",
+        "Crush a few potatoes against the side of the pot to thicken the soup.",
+        "Add the salmon and poach gently for 4 minutes until opaque and just cooked through.",
+        "Stir in the cream, dill, lemon juice and pepper."
+      ],
+      "notes": [
+        "Food safety: cook the salmon until opaque throughout and the chowder steaming at 75°C. Eat leftovers within 2 days.",
+        "Do not boil once the salmon is in."
+      ],
+      "nutrition": {
+        "kcal": 393,
+        "proteinG": 28,
+        "carbsG": 26,
+        "fatG": 19,
+        "fibreG": 3,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "potato-and-bacon-chowder",
+      "title": "Potato and Bacon Chowder",
+      "summary": "A thick, hearty potato soup loaded with smoky bacon, chives and a little cheddar.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "6 rashers bacon, diced",
+            "1 brown onion, diced",
+            "2 stalks celery, diced",
+            "600 g potatoes, diced",
+            "2 cups chicken stock",
+            "2 cups milk",
+            "1 tbsp plain flour",
+            "1/2 cup grated cheddar",
+            "2 tbsp chopped chives",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the bacon in a large pot for 6 minutes until crisp, then lift half out for garnish.",
+        "Cook the onion and celery in the bacon fat for 5 minutes until soft, then stir in the flour.",
+        "Add the stock, milk and potatoes and simmer for 15 minutes until the potatoes are very tender.",
+        "Mash some of the potatoes roughly, stir in the cheddar and pepper until melted.",
+        "Serve with the crisp bacon and chives."
+      ],
+      "notes": [
+        "Food safety: cook the bacon through and bring the chowder to a steaming 75°C. Keep leftovers refrigerated and eat within 2 days.",
+        "Use a little less cheddar for a lighter bowl."
+      ],
+      "nutrition": {
+        "kcal": 414,
+        "proteinG": 20,
+        "carbsG": 37,
+        "fatG": 20,
+        "fibreG": 3,
+        "sodiumMg": 880
+      }
+    },
+    {
+      "id": "roasted-tomato-and-basil-bisque",
+      "title": "Roasted Tomato and Basil Bisque",
+      "summary": "Slow roasted tomatoes and garlic blended into a rich, creamy soup with fresh basil.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 kg ripe tomatoes, halved",
+            "1 brown onion, quartered",
+            "4 cloves garlic, unpeeled",
+            "3 tbsp olive oil",
+            "2 cups vegetable stock",
+            "1/3 cup cream",
+            "1/2 cup basil leaves",
+            "1 tsp sugar",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C and roast the tomatoes, onion and garlic with the oil for 35 minutes until collapsed and caramelised.",
+        "Squeeze the garlic from the skins and tip everything into a pot with the stock and sugar.",
+        "Simmer for 5 minutes, then blend with the basil until smooth.",
+        "Stir in the cream and pepper and reheat until steaming."
+      ],
+      "notes": [
+        "Serve with a grilled cheese sandwich.",
+        "Keeps for 4 days in the fridge or freezes for 3 months."
+      ],
+      "nutrition": {
+        "kcal": 210,
+        "proteinG": 4,
+        "carbsG": 15,
+        "fatG": 14,
+        "fibreG": 4,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "vietnamese-cold-vermicelli-bowl-with-lemongrass-beef",
+      "title": "Vietnamese Cold Vermicelli Bowl with Lemongrass Beef",
+      "summary": "Cool rice vermicelli with fresh herbs, pickled carrot and sizzling lemongrass beef.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 8,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200 g rice vermicelli",
+            "400 g beef rump, thinly sliced",
+            "2 stalks lemongrass, finely chopped",
+            "2 cloves garlic, crushed",
+            "2 tbsp fish sauce",
+            "1 tbsp sugar",
+            "1 tbsp vegetable oil",
+            "1 carrot, cut into matchsticks",
+            "1 cucumber, cut into matchsticks",
+            "1 cup mint leaves",
+            "1 cup bean sprouts",
+            "1/4 cup crushed peanuts",
+            "1/4 cup lime juice",
+            "2 tbsp water"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the beef with the lemongrass, garlic, 1 tbsp fish sauce and half the sugar.",
+        "Cook the vermicelli in boiling water for 4 minutes until tender, then rinse under cold water and drain.",
+        "Whisk the lime juice, remaining fish sauce, sugar and water into a dressing.",
+        "Sear the beef in the oil over high heat for 2 to 3 minutes until browned and cooked through.",
+        "Divide the noodles, vegetables, herbs and beef between bowls and finish with peanuts and dressing."
+      ],
+      "notes": [
+        "Food safety: cook the beef until browned with no pink inside, and cook the beef to at least 71°C, and keep any raw marinated meat refrigerated until cooking.",
+        "Use grilled tofu for a vegetarian bowl."
+      ],
+      "nutrition": {
+        "kcal": 475,
+        "proteinG": 31,
+        "carbsG": 52,
+        "fatG": 15,
+        "fibreG": 4,
+        "sodiumMg": 880
+      }
+    },
+    {
+      "id": "korean-bibim-guksu-spicy-cold-noodles",
+      "title": "Korean Bibim Guksu Spicy Cold Noodles",
+      "summary": "Chewy wheat noodles tossed in a sweet, spicy gochujang sauce with crunchy vegetables and egg.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 8,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200 g thin wheat noodles",
+            "2 tbsp gochujang",
+            "1 tbsp soy sauce",
+            "1 tbsp rice vinegar",
+            "1 tbsp sugar",
+            "1 tbsp sesame oil",
+            "1 clove garlic, crushed",
+            "1 cucumber, cut into matchsticks",
+            "1 cup kimchi, chopped",
+            "2 eggs",
+            "1 tbsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the eggs for 8 minutes until the yolks are set, then cool in iced water and halve.",
+        "Cook the noodles in boiling water for 3 minutes until tender, then rinse well under cold water.",
+        "Whisk the gochujang, soy sauce, vinegar, sugar, sesame oil and garlic into a sauce.",
+        "Toss the noodles with the sauce, then top with cucumber, kimchi, egg and sesame seeds."
+      ],
+      "notes": [
+        "Food safety: boil the eggs until the yolks are fully set, especially for pregnant women, older people and young children.",
+        "Add more gochujang for extra heat."
+      ],
+      "nutrition": {
+        "kcal": 469,
+        "proteinG": 17,
+        "carbsG": 69,
+        "fatG": 13,
+        "fibreG": 4,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "thai-glass-noodle-salad-with-prawns",
+      "title": "Thai Glass Noodle Salad with Prawns",
+      "summary": "Slippery glass noodles with prawns, lime, chilli and fresh herbs in a bright Thai dressing.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 8,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100 g glass noodles",
+            "300 g raw prawns, peeled",
+            "2 tbsp lime juice",
+            "2 tbsp fish sauce",
+            "1 tbsp sugar",
+            "1 red chilli, sliced",
+            "1 clove garlic, crushed",
+            "1 carrot, cut into matchsticks",
+            "1/4 red onion, sliced",
+            "1 cup coriander leaves",
+            "1/2 cup mint leaves",
+            "1/4 cup crushed peanuts"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the noodles in hot water for 5 minutes until soft and translucent, then drain and cut.",
+        "Poach the prawns in simmering water for 2 to 3 minutes until pink and opaque, then drain.",
+        "Whisk the lime juice, fish sauce, sugar, chilli and garlic until the sugar dissolves.",
+        "Toss the noodles, prawns, carrot, onion and herbs with the dressing and top with peanuts."
+      ],
+      "notes": [
+        "Food safety: cook the prawns until pink, firm and opaque throughout, and keep the salad chilled until serving.",
+        "Serve straight away so the noodles stay slippery."
+      ],
+      "nutrition": {
+        "kcal": 264,
+        "proteinG": 19,
+        "carbsG": 32,
+        "fatG": 6,
+        "fibreG": 3,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "chilled-buckwheat-noodles-with-ginger-soy-edamame",
+      "title": "Chilled Buckwheat Noodles with Ginger Soy Edamame",
+      "summary": "Nutty buckwheat noodles with edamame, cucumber and a sharp ginger soy dressing.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 8,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250 g soba noodles",
+            "1 cup shelled edamame",
+            "1 cucumber, sliced",
+            "2 spring onions, sliced",
+            "2 tbsp soy sauce",
+            "2 tbsp rice vinegar",
+            "1 tbsp grated ginger",
+            "2 tsp sesame oil",
+            "1 tsp honey",
+            "1 tbsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the soba in boiling water for 4 to 5 minutes until just tender, adding the edamame for the last 2 minutes.",
+        "Drain and rinse under cold water until the noodles are cold.",
+        "Whisk the soy sauce, vinegar, ginger, sesame oil and honey together.",
+        "Toss with the noodles, cucumber and spring onions, then scatter with sesame seeds."
+      ],
+      "notes": [
+        "Rinsing removes the surface starch so the noodles do not clump.",
+        "Keeps for 2 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 312,
+        "proteinG": 13,
+        "carbsG": 49,
+        "fatG": 6,
+        "fibreG": 5,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "somen-noodle-salad-with-tomato-and-shiso",
+      "title": "Somen Noodle Salad with Tomato and Shiso",
+      "summary": "Fine chilled somen with juicy tomato, cucumber and a light citrus soy dressing.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 3,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250 g thin wheat noodles",
+            "3 tomatoes, diced",
+            "1 cucumber, sliced",
+            "1/4 cup mint leaves",
+            "2 tbsp soy sauce",
+            "2 tbsp rice vinegar",
+            "1 tbsp lemon juice",
+            "1 tsp sesame oil",
+            "1 tbsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the noodles in boiling water for 2 minutes until tender, then rinse in iced water and drain well.",
+        "Whisk the soy sauce, vinegar, lemon juice and sesame oil.",
+        "Toss the noodles with the tomato, cucumber and mint, then pour over the dressing and top with sesame seeds."
+      ],
+      "notes": [
+        "Mint stands in for shiso if you cannot find it.",
+        "Serve very cold on a hot day."
+      ],
+      "nutrition": {
+        "kcal": 262,
+        "proteinG": 9,
+        "carbsG": 46,
+        "fatG": 4,
+        "fibreG": 3,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "cold-dan-dan-noodle-salad",
+      "title": "Cold Dan Dan Noodle Salad",
+      "summary": "Sesame and chilli noodles dressed in a nutty Sichuan style sauce with cucumber and peanuts.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 8,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300 g wheat noodles",
+            "3 tbsp tahini",
+            "2 tbsp soy sauce",
+            "1 tbsp rice vinegar",
+            "1 tbsp chilli oil",
+            "1 tsp sugar",
+            "1 clove garlic, crushed",
+            "2 tbsp warm water",
+            "1 cucumber, cut into matchsticks",
+            "2 spring onions, sliced",
+            "1/4 cup crushed peanuts"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the noodles in boiling water for 4 minutes until tender, then rinse under cold water and drain.",
+        "Whisk the tahini, soy sauce, vinegar, chilli oil, sugar, garlic and warm water until smooth and pourable.",
+        "Toss the noodles with the sauce, then top with cucumber, spring onions and peanuts."
+      ],
+      "notes": [
+        "Add more chilli oil for heat.",
+        "Sauce can be made 3 days ahead."
+      ],
+      "nutrition": {
+        "kcal": 443,
+        "proteinG": 14,
+        "carbsG": 52,
+        "fatG": 19,
+        "fibreG": 4,
+        "sodiumMg": 680
+      }
+    },
+    {
+      "id": "cold-sesame-tofu-noodle-bowl",
+      "title": "Cold Sesame Tofu Noodle Bowl",
+      "summary": "Cold noodles with silken tofu, cucumber and a soy sesame dressing for a no-cook lunch.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 5,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200 g wheat noodles",
+            "200 g silken tofu, cubed",
+            "1 cucumber, sliced",
+            "1 carrot, grated",
+            "2 tbsp soy sauce",
+            "1 tbsp sesame oil",
+            "1 tbsp rice vinegar",
+            "1 tsp sugar",
+            "1 tbsp sesame seeds",
+            "2 spring onions, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the noodles in boiling water for 3 to 4 minutes until tender, then rinse cold and drain.",
+        "Whisk the soy sauce, sesame oil, vinegar and sugar together.",
+        "Toss the noodles with the dressing, cucumber and carrot.",
+        "Top with the tofu, spring onions and sesame seeds."
+      ],
+      "notes": [
+        "Handle the silken tofu gently so it stays in cubes.",
+        "Use extra firm tofu if you prefer more bite."
+      ],
+      "nutrition": {
+        "kcal": 438,
+        "proteinG": 17,
+        "carbsG": 63,
+        "fatG": 12,
+        "fibreG": 5,
+        "sodiumMg": 820
+      }
+    },
+    {
+      "id": "rice-noodle-bowl-with-peanut-lime-tofu",
+      "title": "Rice Noodle Bowl with Peanut Lime Tofu",
+      "summary": "Cool rice noodles, crunchy raw vegetables and crisp tofu in a peanut lime sauce.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200 g rice noodles",
+            "300 g firm tofu, cubed",
+            "1 tbsp vegetable oil",
+            "2 tbsp peanut butter",
+            "2 tbsp lime juice",
+            "1 tbsp soy sauce",
+            "1 tsp sugar",
+            "1 tbsp water",
+            "1 carrot, grated",
+            "1 cup shredded red cabbage",
+            "1/2 cup coriander leaves",
+            "1/4 cup crushed peanuts"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the noodles in boiling water for 4 minutes until tender, then rinse cold and drain.",
+        "Pan-fry the tofu in the oil for 8 minutes until golden on all sides.",
+        "Whisk the peanut butter, lime juice, soy sauce, sugar and water until smooth.",
+        "Toss the noodles with the sauce and vegetables, then top with tofu, coriander and peanuts."
+      ],
+      "notes": [
+        "Thin the sauce with extra water if it is too thick.",
+        "Keeps well for a packed lunch."
+      ],
+      "nutrition": {
+        "kcal": 413,
+        "proteinG": 17,
+        "carbsG": 50,
+        "fatG": 15,
+        "fibreG": 5,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "apple-oat-pancakes-for-kids",
+      "title": "Apple Oat Pancakes for Kids",
+      "summary": "Soft, naturally sweet pancakes made from apple and oats with no added sugar.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 apples, grated",
+            "1 cup rolled oats",
+            "2 eggs",
+            "1/2 cup milk",
+            "1 tsp baking powder",
+            "1/2 tsp cinnamon",
+            "1 tbsp butter",
+            "1/2 cup plain yoghurt"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the apples, oats, eggs, milk, baking powder and cinnamon until smooth. Rest for 5 minutes.",
+        "Melt a little butter in a non-stick pan over medium heat.",
+        "Cook small spoonfuls for 2 minutes each side until golden and cooked through.",
+        "Stack on plates and serve with a spoonful of yoghurt."
+      ],
+      "notes": [
+        "Food safety: cook until the centre is set and no longer wet, especially for young children, pregnant women and older people.",
+        "Freeze cooked pancakes and reheat in the toaster."
+      ],
+      "nutrition": {
+        "kcal": 268,
+        "proteinG": 11,
+        "carbsG": 36,
+        "fatG": 8,
+        "fibreG": 4,
+        "sodiumMg": 200
+      }
+    },
+    {
+      "id": "peanut-butter-and-apple-toast-fingers",
+      "title": "Peanut Butter and Apple Toast Fingers",
+      "summary": "Wholemeal toast spread with smooth peanut butter and thin apple slices, cut into fingers for small hands.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 3,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 slices wholemeal bread",
+            "2 tbsp smooth peanut butter",
+            "1 apple, thinly sliced",
+            "1 pinch cinnamon"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the bread until golden.",
+        "Spread with the peanut butter and top with the apple slices.",
+        "Dust with cinnamon and cut into fingers."
+      ],
+      "notes": [
+        "Use a nut-free spread such as sunflower seed butter for school and childcare settings.",
+        "Cut into small pieces for toddlers."
+      ],
+      "nutrition": {
+        "kcal": 349,
+        "proteinG": 14,
+        "carbsG": 45,
+        "fatG": 11,
+        "fibreG": 7,
+        "sodiumMg": 350
+      }
+    },
+    {
+      "id": "rainbow-fruit-and-yoghurt-pots",
+      "title": "Rainbow Fruit and Yoghurt Pots",
+      "summary": "Layers of mango, berries and orange over creamy yoghurt, no sweetener needed.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups plain yoghurt",
+            "1 mango, diced",
+            "1 cup frozen berries, thawed",
+            "2 oranges, segmented",
+            "1/4 cup rolled oats, toasted"
+          ]
+        }
+      ],
+      "steps": [
+        "Spoon a layer of yoghurt into four small cups or jars.",
+        "Add layers of mango, berries and orange.",
+        "Repeat the layers until the cups are full and top with the toasted oats just before serving."
+      ],
+      "notes": [
+        "Keep the toasted oats separate until serving so it stays crisp.",
+        "Make the pots the night before for a quick breakfast."
+      ],
+      "nutrition": {
+        "kcal": 179,
+        "proteinG": 8,
+        "carbsG": 24,
+        "fatG": 5,
+        "fibreG": 3,
+        "sodiumMg": 100
+      }
+    },
+    {
+      "id": "cheesy-scrambled-egg-fingers",
+      "title": "Cheesy Scrambled Egg Fingers",
+      "summary": "Soft scrambled egg with a little grated cheddar, spooned over toast fingers.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 5,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 eggs",
+            "2 tbsp milk",
+            "1/4 cup grated cheddar",
+            "1 tbsp butter",
+            "2 slices wholemeal bread"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the eggs and milk together.",
+        "Melt the butter in a small pan over low heat, pour in the eggs and stir gently for 2 to 3 minutes until set but still soft.",
+        "Fold through the cheddar until it melts.",
+        "Toast the bread until golden, cut into fingers and top with the egg."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until fully set and no longer runny, especially for young children, pregnant women and older people.",
+        "Leave out salt for babies and toddlers."
+      ],
+      "nutrition": {
+        "kcal": 307,
+        "proteinG": 19,
+        "carbsG": 14,
+        "fatG": 19,
+        "fibreG": 2,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "apple-oat-breakfast-muffins",
+      "title": "Apple Oat Breakfast Muffins",
+      "summary": "Wholegrain muffins sweetened only with apple and a little honey, ideal for school mornings.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 22,
+      "servings": 12,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 1/2 cups rolled oats",
+            "1 cup wholemeal self-raising flour",
+            "2 apples, grated",
+            "2 eggs",
+            "3/4 cup milk",
+            "1/4 cup honey",
+            "1/4 cup vegetable oil",
+            "1 tsp cinnamon"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C and line a 12 hole muffin tin.",
+        "Mix the oats, flour and cinnamon, then stir in the apples.",
+        "Whisk the eggs, milk, honey and oil, then fold into the dry mix until just combined.",
+        "Spoon into the tin and bake for 20 to 22 minutes until golden and a skewer comes out clean."
+      ],
+      "notes": [
+        "Food safety: bake until a skewer comes out clean so the egg is fully cooked.",
+        "Freeze for up to 3 months."
+      ],
+      "nutrition": {
+        "kcal": 193,
+        "proteinG": 5,
+        "carbsG": 26,
+        "fatG": 7,
+        "fibreG": 3,
+        "sodiumMg": 110
+      }
+    }
+  ]
+}

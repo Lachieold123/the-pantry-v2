@@ -1,0 +1,1251 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "barbecue-coleslaw-with-cider-dressing",
+      "title": "Barbecue Coleslaw with Cider Dressing",
+      "summary": "A crunchy, creamy-tangy slaw of cabbage, carrot and apple, built to sit beside pulled pork and ribs.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1/2 green cabbage, finely shredded",
+            "1/4 red cabbage, finely shredded",
+            "2 carrots, grated",
+            "1 apple, cut into matchsticks",
+            "1/3 cup mayonnaise",
+            "3 tbsp apple cider vinegar",
+            "1 tbsp honey",
+            "1 tsp dijon mustard",
+            "1/2 tsp celery seeds",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss both cabbages, the carrots and the apple in a large bowl.",
+        "Whisk the mayonnaise, vinegar, honey, mustard, celery seeds and pepper until smooth.",
+        "Pour the dressing over and toss until everything is evenly coated.",
+        "Chill for 30 minutes until the cabbage softens slightly, then toss again."
+      ],
+      "notes": [
+        "Best eaten within 2 days.",
+        "Squeeze the lime or lemon over just before serving if you like extra tang."
+      ],
+      "nutrition": {
+        "kcal": 104,
+        "proteinG": 1,
+        "carbsG": 10,
+        "fatG": 6,
+        "fibreG": 3,
+        "sodiumMg": 110
+      }
+    },
+    {
+      "id": "grilled-corn-with-chilli-lime-butter",
+      "title": "Grilled Corn with Chilli Lime Butter",
+      "summary": "Charred corn cobs brushed with a chilli, lime and coriander butter, grilled until the kernels blister.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 corn cobs, husks removed",
+            "80 g butter, softened",
+            "1 red chilli, finely chopped",
+            "1 lime, zested and juiced",
+            "2 tbsp chopped coriander",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Mash the butter with the chilli, lime zest, coriander and salt.",
+        "Heat a barbecue or grill to medium-high and cook the corn for 12 to 15 minutes, turning, until charred in spots and tender.",
+        "Brush generously with the butter and squeeze over the lime juice."
+      ],
+      "notes": [
+        "Wrap in foil and grill for 20 minutes if you prefer softer corn.",
+        "Keep leftover butter in the fridge for 1 week."
+      ],
+      "nutrition": {
+        "kcal": 240,
+        "proteinG": 4,
+        "carbsG": 27,
+        "fatG": 12,
+        "fibreG": 4,
+        "sodiumMg": 220
+      }
+    },
+    {
+      "id": "slow-baked-beans-for-the-barbecue",
+      "title": "Slow Baked Beans for the Barbecue",
+      "summary": "Smoky, sweet baked beans in a thick tomato sauce, simmered low until glossy, with bacon for depth.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 60,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 rashers bacon, diced",
+            "1 brown onion, diced",
+            "2 cloves garlic, crushed",
+            "2 x 400 g cans cannellini beans, drained",
+            "1 cup tomato sauce",
+            "2 tbsp brown sugar",
+            "1 tbsp apple cider vinegar",
+            "1 tbsp worcestershire sauce",
+            "1 tsp smoked paprika",
+            "1 tsp dijon mustard",
+            "1/2 cup water"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the bacon in a heavy pot for 5 minutes until crisp.",
+        "Add the onion and garlic and cook for 5 minutes until soft.",
+        "Stir in the beans, tomato sauce, sugar, vinegar, worcestershire sauce, paprika, mustard and water.",
+        "Simmer very gently with the lid ajar for 45 minutes until thick and glossy, stirring occasionally."
+      ],
+      "notes": [
+        "Food safety: cook the bacon through to 75°C and bring the beans to a steaming heat before serving.",
+        "Even better the next day."
+      ],
+      "nutrition": {
+        "kcal": 251,
+        "proteinG": 11,
+        "carbsG": 36,
+        "fatG": 5,
+        "fibreG": 9,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "creamy-picnic-macaroni-salad-with-celery",
+      "title": "Creamy Picnic Macaroni Salad with Celery",
+      "summary": "Classic cold macaroni in a tangy creamy dressing with celery, carrot and boiled egg.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 12,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300 g macaroni",
+            "3 eggs",
+            "2 stalks celery, finely diced",
+            "1 carrot, grated",
+            "1/4 red onion, finely diced",
+            "1/2 cup mayonnaise",
+            "1/4 cup sour cream",
+            "1 tbsp apple cider vinegar",
+            "1 tsp dijon mustard",
+            "2 tbsp chopped parsley",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the eggs for 9 minutes until the yolks are fully set, cool in cold water, peel and chop.",
+        "Cook the macaroni in salted boiling water for 10 minutes until tender, then rinse under cold water and drain.",
+        "Whisk the mayonnaise, sour cream, vinegar, mustard and pepper.",
+        "Fold the pasta, vegetables, egg and parsley through the dressing.",
+        "Chill for 1 hour until cold."
+      ],
+      "notes": [
+        "Food safety: boil the eggs until the yolks are fully set and keep the salad chilled below 5°C until serving, especially in hot weather.",
+        "Loosen with a splash of milk if the pasta absorbs the dressing."
+      ],
+      "nutrition": {
+        "kcal": 272,
+        "proteinG": 10,
+        "carbsG": 30,
+        "fatG": 12,
+        "fibreG": 2,
+        "sodiumMg": 230
+      }
+    },
+    {
+      "id": "charred-zucchini-salad-with-mint-and-feta",
+      "title": "Charred Zucchini Salad with Mint and Feta",
+      "summary": "Smoky grilled zucchini ribbons with mint, lemon and creamy feta, fast on the barbecue.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 8,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 zucchini, sliced lengthways",
+            "2 tbsp olive oil",
+            "100 g feta, crumbled",
+            "1/2 cup mint leaves",
+            "1 lemon, zested and juiced",
+            "1 tbsp pine nuts",
+            "1 pinch chilli flakes",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Brush the zucchini with half the oil and grill on a hot barbecue for 2 to 3 minutes each side until charred and tender.",
+        "Toast the pine nuts in a dry pan for 2 minutes until golden.",
+        "Arrange the zucchini on a platter and dress with the remaining oil, lemon juice and zest.",
+        "Scatter with the feta, mint, pine nuts and chilli flakes."
+      ],
+      "notes": [
+        "Cut the zucchini thickly so it does not collapse on the grill.",
+        "Serve warm or at room temperature."
+      ],
+      "nutrition": {
+        "kcal": 175,
+        "proteinG": 7,
+        "carbsG": 6,
+        "fatG": 13,
+        "fibreG": 3,
+        "sodiumMg": 350
+      }
+    },
+    {
+      "id": "grilled-pineapple-with-lime-and-chilli",
+      "title": "Grilled Pineapple with Lime and Chilli",
+      "summary": "Sweet, caramelised pineapple rings brushed with lime, chilli and a little honey, served warm.",
+      "cuisine": "caribbean",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 8,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 pineapple, peeled and cut into rings",
+            "2 limes, juiced",
+            "1 tbsp honey",
+            "1/2 tsp chilli flakes",
+            "1 tbsp coconut oil, melted",
+            "2 tbsp chopped mint"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the lime juice, honey, chilli flakes and oil together.",
+        "Brush the pineapple rings and grill on a hot barbecue for 3 to 4 minutes each side until caramelised with dark grill marks.",
+        "Brush again with the dressing and scatter with mint."
+      ],
+      "notes": [
+        "Excellent beside grilled chicken, pork or fish.",
+        "Serve with vanilla yoghurt for dessert."
+      ],
+      "nutrition": {
+        "kcal": 113,
+        "proteinG": 1,
+        "carbsG": 19,
+        "fatG": 3,
+        "fibreG": 3,
+        "sodiumMg": 5
+      }
+    },
+    {
+      "id": "beef-and-barley-soup",
+      "title": "Beef and Barley Soup",
+      "summary": "A thick, comforting soup of beef chuck, pearl barley and root vegetables simmered until the meat falls apart.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 90,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500 g beef chuck, cubed",
+            "2 tbsp olive oil",
+            "1 brown onion, diced",
+            "2 carrots, diced",
+            "2 stalks celery, diced",
+            "2 cloves garlic, crushed",
+            "1 tbsp tomato paste",
+            "1/2 cup pearl barley",
+            "6 cups beef stock",
+            "2 sprigs thyme",
+            "1 bay leaf",
+            "2 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the beef in the oil in batches in a large pot for 6 minutes and set aside.",
+        "Cook the onion, carrots and celery in the same pot for 6 minutes, then add the garlic and tomato paste.",
+        "Return the beef, add the barley, stock, thyme and bay leaf and bring to the boil and stir until the barley is submerged.",
+        "Simmer gently for 75 to 90 minutes until the beef is tender and the barley is soft.",
+        "Remove the bay leaf and thyme and serve with parsley."
+      ],
+      "notes": [
+        "Food safety: cook the beef until tender and the soup reaches a steaming 75°C. Refrigerate leftovers within 2 hours and eat within 3 days.",
+        "The soup thickens overnight, so add a splash of stock when reheating."
+      ],
+      "nutrition": {
+        "kcal": 275,
+        "proteinG": 22,
+        "carbsG": 24,
+        "fatG": 9,
+        "fibreG": 5,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "lemony-chicken-and-rice-soup-with-dill",
+      "title": "Lemony Chicken and Rice Soup with Dill",
+      "summary": "A bright, comforting soup of chicken, rice and carrot finished with lemon juice and plenty of dill.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500 g chicken thigh fillets",
+            "1 tbsp olive oil",
+            "1 brown onion, diced",
+            "2 carrots, diced",
+            "2 stalks celery, diced",
+            "2 cloves garlic, crushed",
+            "6 cups chicken stock",
+            "1/2 cup white rice",
+            "2 eggs",
+            "2 lemons, juiced",
+            "2 tbsp chopped dill"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion, carrots and celery in the oil for 6 minutes until soft, adding the garlic for the last minute.",
+        "Add the stock and chicken and simmer gently for 15 minutes until the chicken is cooked through.",
+        "Lift out the chicken, shred it and return it to the pot with the rice.",
+        "Simmer for 12 minutes until the rice is tender.",
+        "Whisk the eggs and lemon juice, slowly whisk in a ladle of hot soup, then stir it all back into the pot off the heat until the soup turns creamy. Add the dill."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until no pink remains and it reaches 75°C, and do not boil the soup after adding the eggs. Eat leftovers within 2 days.",
+        "Warm gently when reheating so the eggs do not scramble."
+      ],
+      "nutrition": {
+        "kcal": 278,
+        "proteinG": 24,
+        "carbsG": 22,
+        "fatG": 10,
+        "fibreG": 2,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "chilean-cazuela-chicken-and-pumpkin-stew",
+      "title": "Chilean Cazuela Chicken and Pumpkin Stew",
+      "summary": "A soupy Chilean chicken stew with pumpkin, potato, corn and rice, served in a deep bowl with coriander.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 50,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 chicken drumsticks",
+            "1 tbsp olive oil",
+            "1 brown onion, diced",
+            "3 cloves garlic, crushed",
+            "1 red capsicum, diced",
+            "1 tsp paprika",
+            "6 cups chicken stock",
+            "400 g pumpkin, cubed",
+            "2 potatoes, cubed",
+            "2 corn cobs, cut into rounds",
+            "1/3 cup white rice",
+            "1/4 cup chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the drumsticks in the oil in a large pot for 8 minutes and set aside.",
+        "Cook the onion, garlic and capsicum for 5 minutes, then stir in the paprika.",
+        "Return the chicken, add the stock, potatoes and corn and simmer for 20 minutes.",
+        "Add the pumpkin and rice and simmer for 15 minutes until the rice and vegetables are tender.",
+        "Scatter with coriander and serve."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until the juices run clear and the thickest part reaches 75°C, and refrigerate leftovers within 2 hours.",
+        "A drumstick in each bowl is the traditional way to serve."
+      ],
+      "nutrition": {
+        "kcal": 367,
+        "proteinG": 25,
+        "carbsG": 35,
+        "fatG": 13,
+        "fibreG": 5,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "venezuelan-sancocho-chicken-and-root-vegetable-soup",
+      "title": "Venezuelan Sancocho Chicken and Root Vegetable Soup",
+      "summary": "A hearty South American soup of chicken, potato, sweet potato and corn with lime and coriander.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 50,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800 g chicken pieces, bone in",
+            "1 tbsp olive oil",
+            "1 brown onion, diced",
+            "3 cloves garlic, crushed",
+            "1 tsp ground cumin",
+            "7 cups water",
+            "2 potatoes, cubed",
+            "1 sweet potato, cubed",
+            "2 corn cobs, cut into rounds",
+            "1/4 cup chopped coriander",
+            "2 limes, cut into wedges"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the chicken in the oil in a large pot for 8 minutes and set aside.",
+        "Cook the onion and garlic for 5 minutes, then stir in the cumin.",
+        "Return the chicken, add the water and simmer for 20 minutes.",
+        "Add the potatoes, sweet potato and corn and simmer for 20 minutes until the chicken is cooked and the vegetables are tender.",
+        "Stir through the coriander and serve with the lime wedges."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C and the juices run clear, and refrigerate leftovers within 2 hours.",
+        "Serve with white rice and avocado."
+      ],
+      "nutrition": {
+        "kcal": 352,
+        "proteinG": 27,
+        "carbsG": 36,
+        "fatG": 10,
+        "fibreG": 5,
+        "sodiumMg": 160
+      }
+    },
+    {
+      "id": "winter-lamb-shoulder-and-pearl-barley-soup",
+      "title": "Winter Lamb Shoulder and Pearl Barley Soup",
+      "summary": "A thick, old-fashioned lamb and vegetable broth with barley, swede and leek.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 90,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500 g diced lamb shoulder",
+            "1 tbsp vegetable oil",
+            "1 brown onion, diced",
+            "1 leek, sliced",
+            "2 carrots, diced",
+            "1 swede, diced",
+            "1/2 cup pearl barley",
+            "6 cups water",
+            "2 sprigs thyme",
+            "2 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the lamb in the oil in a large pot for 6 minutes.",
+        "Add the water and barley, bring to the boil and skim until the scum is gone from the surface.",
+        "Simmer for 45 minutes, then add the onion, leek, carrots, swede and thyme.",
+        "Simmer for 30 to 40 minutes until the lamb is tender and the barley soft, then stir in the parsley."
+      ],
+      "notes": [
+        "Food safety: cook the lamb until tender and at least 75°C throughout, and refrigerate leftovers within 2 hours.",
+        "Better the day after, thinned with a little water."
+      ],
+      "nutrition": {
+        "kcal": 270,
+        "proteinG": 19,
+        "carbsG": 23,
+        "fatG": 10,
+        "fibreG": 6,
+        "sodiumMg": 160
+      }
+    },
+    {
+      "id": "cock-a-leekie-soup",
+      "title": "Cock-a-Leekie Soup",
+      "summary": "A Scottish chicken and leek soup with a little rice and dried fruit, simple and soothing.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500 g chicken thigh fillets",
+            "4 leeks, sliced",
+            "1 carrot, diced",
+            "6 cups chicken stock",
+            "1/3 cup white rice",
+            "1/4 cup sultanas",
+            "1 bay leaf",
+            "2 tbsp chopped parsley",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the chicken, stock and bay leaf in a large pot for 20 minutes until the chicken is cooked through.",
+        "Lift out the chicken, shred it and return it to the pot.",
+        "Add the leeks, carrot and rice and simmer for 15 minutes until the rice is tender.",
+        "Add the sultanas for the last 5 minutes. Season with pepper and finish with parsley."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until no pink remains and it reaches 75°C, and eat leftovers within 2 days.",
+        "Dried fruit is traditional and add gentle sweetness."
+      ],
+      "nutrition": {
+        "kcal": 223,
+        "proteinG": 19,
+        "carbsG": 24,
+        "fatG": 5,
+        "fibreG": 3,
+        "sodiumMg": 680
+      }
+    },
+    {
+      "id": "split-pea-and-ham-hock-soup",
+      "title": "Split Pea and Ham Hock Soup",
+      "summary": "A thick, smoky winter soup of green split peas simmered with ham hock until silky.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 90,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 smoked ham hock",
+            "1 1/2 cups green split peas",
+            "1 brown onion, diced",
+            "2 carrots, diced",
+            "2 stalks celery, diced",
+            "2 cloves garlic, crushed",
+            "1 tbsp olive oil",
+            "8 cups water",
+            "1 bay leaf",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion, carrots and celery in the oil for 6 minutes, adding the garlic for the last minute.",
+        "Add the ham hock, split peas, water and bay leaf and bring to the boil, skimming until the foam stops.",
+        "Simmer gently for 80 to 90 minutes until the peas break down and the meat is falling off the bone.",
+        "Lift out the hock, shred the meat, discard the skin and bone and stir the meat back in.",
+        "Season with pepper, tasting for salt as the hock is already salty."
+      ],
+      "notes": [
+        "Food safety: simmer until the meat is tender and the soup reaches a steaming 75°C. Eat leftovers within 3 days.",
+        "The soup thickens as it stands, so thin with a little water."
+      ],
+      "nutrition": {
+        "kcal": 314,
+        "proteinG": 24,
+        "carbsG": 35,
+        "fatG": 6,
+        "fibreG": 12,
+        "sodiumMg": 880
+      }
+    },
+    {
+      "id": "sweet-potato-and-black-bean-chilli-soup",
+      "title": "Sweet Potato and Black Bean Chilli Soup",
+      "summary": "A smoky, thick vegetarian soup of sweet potato and black beans with chipotle and lime.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "1 brown onion, diced",
+            "3 cloves garlic, crushed",
+            "2 sweet potatoes, cubed",
+            "2 x 400 g cans black beans, drained",
+            "400 g canned diced tomatoes",
+            "4 cups vegetable stock",
+            "1 tsp ground cumin",
+            "1 tsp smoked paprika",
+            "1 chipotle chilli in adobo, chopped",
+            "1 lime, juiced",
+            "1/4 cup chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion in the oil for 5 minutes until soft, adding the garlic, cumin and paprika for the last minute.",
+        "Add the sweet potato, beans, tomatoes, stock and chipotle.",
+        "Simmer for 25 minutes until the sweet potato is very tender.",
+        "Mash roughly with a potato masher to thicken, then stir in the lime juice and coriander."
+      ],
+      "notes": [
+        "Top with avocado and sour cream.",
+        "Freezes well for 3 months."
+      ],
+      "nutrition": {
+        "kcal": 261,
+        "proteinG": 10,
+        "carbsG": 38,
+        "fatG": 5,
+        "fibreG": 12,
+        "sodiumMg": 590
+      }
+    },
+    {
+      "id": "tofu-and-mushroom-hot-pot-broth",
+      "title": "Tofu and Mushroom Hot Pot Broth",
+      "summary": "A light, savoury broth for the table, with tofu, mushrooms, cabbage and noodles cooked at the table.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 cups vegetable stock",
+            "1 piece ginger, sliced",
+            "3 spring onions, cut into lengths",
+            "2 tbsp soy sauce",
+            "1 tbsp Shaoxing wine",
+            "300 g firm tofu, cubed",
+            "200 g shiitake mushrooms, sliced",
+            "1/4 Chinese cabbage, chopped",
+            "200 g udon noodles",
+            "1 tsp sesame oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Bring the stock, ginger, spring onions, soy sauce and wine to a gentle simmer in a wide pot for 10 minutes.",
+        "Add the tofu and mushrooms and simmer for 5 minutes until the mushrooms are tender.",
+        "Add the cabbage and noodles and cook for 3 to 4 minutes until the noodles are soft and the cabbage wilted.",
+        "Drizzle with the sesame oil and serve straight from the pot."
+      ],
+      "notes": [
+        "Add thinly sliced beef or fish balls for non-vegetarian hot pot, cooking them until no pink remains.",
+        "Dip cooked pieces in soy sauce and chilli."
+      ],
+      "nutrition": {
+        "kcal": 341,
+        "proteinG": 17,
+        "carbsG": 45,
+        "fatG": 9,
+        "fibreG": 6,
+        "sodiumMg": 1300
+      }
+    },
+    {
+      "id": "sichuan-style-hot-pot-soup",
+      "title": "Sichuan Style Hot Pot Soup",
+      "summary": "A numbing, spicy broth with chilli bean paste and Sichuan pepper, loaded with vegetables and tofu.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp vegetable oil",
+            "3 tbsp chilli bean paste",
+            "1 tbsp Sichuan peppercorns",
+            "1 piece ginger, sliced",
+            "4 cloves garlic, sliced",
+            "6 cups chicken stock",
+            "300 g firm tofu, cubed",
+            "200 g enoki mushrooms",
+            "1 head baby bok choy, halved",
+            "1 carrot, sliced",
+            "2 spring onions, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a pot and fry the chilli bean paste, peppercorns, ginger and garlic for 2 minutes until the oil turns red and fragrant.",
+        "Pour in the stock and simmer for 15 minutes.",
+        "Add the carrot and tofu and cook for 5 minutes until tender.",
+        "Add the mushrooms and bok choy and cook for 2 minutes until just wilted.",
+        "Scatter with spring onions."
+      ],
+      "notes": [
+        "Reduce the chilli bean paste for less heat.",
+        "Fish out the peppercorns before eating if you prefer."
+      ],
+      "nutrition": {
+        "kcal": 221,
+        "proteinG": 11,
+        "carbsG": 13,
+        "fatG": 13,
+        "fibreG": 4,
+        "sodiumMg": 1280
+      }
+    },
+    {
+      "id": "tomato-egg-drop-soup",
+      "title": "Tomato Egg Drop Soup",
+      "summary": "A quick Chinese style soup of ripe tomato and ribbons of egg in a gingery broth.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 ripe tomatoes, chopped",
+            "1 tbsp vegetable oil",
+            "1 piece ginger, grated",
+            "4 cups chicken stock",
+            "1 tbsp soy sauce",
+            "1 tsp sugar",
+            "1 tbsp cornflour",
+            "2 tbsp water",
+            "3 eggs, beaten",
+            "2 spring onions, sliced",
+            "1 tsp sesame oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the tomatoes and ginger in the oil for 4 minutes until soft and pulpy.",
+        "Add the stock, soy sauce and sugar and simmer for 5 minutes.",
+        "Mix the cornflour with the water, stir into the soup and cook for 1 minute until slightly thickened.",
+        "Slowly pour in the eggs in a thin stream, stirring gently until they form ribbons and are set.",
+        "Finish with spring onions and sesame oil."
+      ],
+      "notes": [
+        "Food safety: cook the egg until fully set and the soup steaming at 75°C, especially for pregnant women, older people and young children.",
+        "Ripe tomatoes give the best flavour."
+      ],
+      "nutrition": {
+        "kcal": 161,
+        "proteinG": 9,
+        "carbsG": 10,
+        "fatG": 9,
+        "fibreG": 2,
+        "sodiumMg": 720
+      }
+    },
+    {
+      "id": "barbecue-potato-salad-with-bacon-and-chives",
+      "title": "Barbecue Potato Salad with Bacon and Chives",
+      "summary": "A warm-to-cold potato salad with crisp bacon, a creamy mustard dressing and lots of chives.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 kg waxy potatoes, cubed",
+            "6 rashers bacon, diced",
+            "3 eggs",
+            "1/2 cup mayonnaise",
+            "1/4 cup sour cream",
+            "1 tbsp wholegrain mustard",
+            "1 tbsp apple cider vinegar",
+            "1/4 cup chopped chives",
+            "2 stalks celery, diced",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes in salted water for 12 to 15 minutes until just tender, then drain and cool for 10 minutes.",
+        "Boil the eggs for 9 minutes until the yolks are fully set, then peel and chop. Fry the bacon for 6 minutes until crisp.",
+        "Whisk the mayonnaise, sour cream, mustard, vinegar and pepper.",
+        "Fold the potatoes, bacon, eggs, celery and half the chives through the dressing.",
+        "Chill for 30 minutes until cold and top with the remaining chives."
+      ],
+      "notes": [
+        "Food safety: boil the eggs until the yolks are set, cook the bacon through to 75°C and keep the salad chilled below 5°C until serving.",
+        "Dress the potatoes while still slightly warm for more flavour."
+      ],
+      "nutrition": {
+        "kcal": 284,
+        "proteinG": 12,
+        "carbsG": 22,
+        "fatG": 16,
+        "fibreG": 2,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "grilled-halloumi-and-watermelon-salad",
+      "title": "Grilled Halloumi and Watermelon Salad",
+      "summary": "Salty golden halloumi, juicy watermelon, mint and rocket with a lime dressing, ideal for summer barbecues.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 6,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250 g halloumi, sliced",
+            "600 g watermelon, cubed",
+            "2 cups rocket",
+            "1/2 cup mint leaves",
+            "1 lime, juiced",
+            "2 tbsp olive oil",
+            "1 tbsp pepitas",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Grill the halloumi on a hot barbecue for 2 to 3 minutes each side until golden with dark grill marks.",
+        "Toss the watermelon, rocket and mint on a platter.",
+        "Whisk the lime juice, oil and pepper, then drizzle over.",
+        "Top with the warm halloumi and pepitas."
+      ],
+      "notes": [
+        "Halloumi is salty, so no extra salt is needed.",
+        "Serve straight away while the cheese is warm."
+      ],
+      "nutrition": {
+        "kcal": 283,
+        "proteinG": 15,
+        "carbsG": 12,
+        "fatG": 19,
+        "fibreG": 2,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "smoky-eggplant-dip-from-the-barbecue",
+      "title": "Smoky Eggplant Dip from the Barbecue",
+      "summary": "Eggplants charred whole on the grill, then mashed with tahini, garlic and lemon for a smoky dip.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 large eggplants",
+            "2 tbsp tahini",
+            "1 clove garlic, crushed",
+            "2 tbsp lemon juice",
+            "2 tbsp olive oil",
+            "1 tbsp chopped parsley",
+            "1/2 tsp smoked paprika",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Grill the whole eggplants over a hot barbecue for 25 to 30 minutes, turning, until the skins blacken and the flesh collapses.",
+        "Cool slightly, then scoop out the soft flesh and drain in a sieve for 10 minutes.",
+        "Mash the flesh with the tahini, garlic, lemon juice and salt until creamy.",
+        "Transfer to a bowl, drizzle with the oil and top with parsley and paprika."
+      ],
+      "notes": [
+        "Keeps for 4 days in the fridge.",
+        "Serve with warm flatbread."
+      ],
+      "nutrition": {
+        "kcal": 134,
+        "proteinG": 3,
+        "carbsG": 6,
+        "fatG": 10,
+        "fibreG": 4,
+        "sodiumMg": 100
+      }
+    },
+    {
+      "id": "barbecued-pear-salad-with-ricotta-and-walnuts",
+      "title": "Barbecued Pear Salad with Ricotta and Walnuts",
+      "summary": "Caramelised pears with peppery rocket, creamy ricotta and a balsamic drizzle.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 6,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 firm ripe pears, halved",
+            "2 tbsp olive oil",
+            "3 cups rocket",
+            "1/2 cup ricotta",
+            "1/4 cup walnuts, chopped",
+            "1 tbsp balsamic vinegar",
+            "1 tsp honey",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Brush the pears with half the oil and grill cut-side down for 3 to 4 minutes until caramelised with grill marks.",
+        "Slice the pears and arrange over the rocket.",
+        "Dot with the ricotta and scatter with the walnuts.",
+        "Whisk the remaining oil, vinegar, honey and pepper and drizzle over."
+      ],
+      "notes": [
+        "Use firm-ripe pears that hold their shape on the grill.",
+        "Peaches also work in summer."
+      ],
+      "nutrition": {
+        "kcal": 263,
+        "proteinG": 7,
+        "carbsG": 19,
+        "fatG": 17,
+        "fibreG": 3,
+        "sodiumMg": 60
+      }
+    },
+    {
+      "id": "barbecue-broccolini-with-garlic-lemon-and-almonds",
+      "title": "Barbecue Broccolini with Garlic, Lemon and Almonds",
+      "summary": "Blistered broccolini tossed with garlic, lemon and chilli flakes, a quick grilled side.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 8,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 bunches broccolini",
+            "2 tbsp olive oil",
+            "2 cloves garlic, sliced",
+            "1 lemon, zested and juiced",
+            "1/2 tsp chilli flakes",
+            "2 tbsp flaked almonds",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Blanch the broccolini in boiling water for 1 minute, then drain and dry well.",
+        "Toss with half the oil and grill on a hot barbecue for 3 to 4 minutes until charred and tender.",
+        "Warm the garlic in the remaining oil for 1 minute until fragrant.",
+        "Toss the broccolini with the garlic oil, lemon juice and zest, chilli flakes, almonds and salt."
+      ],
+      "notes": [
+        "Do not let the garlic brown or it turns bitter.",
+        "Good with grilled fish or steak."
+      ],
+      "nutrition": {
+        "kcal": 156,
+        "proteinG": 6,
+        "carbsG": 8,
+        "fatG": 10,
+        "fibreG": 5,
+        "sodiumMg": 160
+      }
+    },
+    {
+      "id": "grilled-capsicum-and-white-bean-salad",
+      "title": "Grilled Capsicum and White Bean Salad",
+      "summary": "Charred capsicum with creamy cannellini beans, red onion, parsley and a sharp red wine dressing.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 red capsicums, halved",
+            "2 x 400 g cans cannellini beans, drained",
+            "1/2 red onion, thinly sliced",
+            "1/2 cup chopped parsley",
+            "3 tbsp olive oil",
+            "2 tbsp red wine vinegar",
+            "1 clove garlic, crushed",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Grill the capsicums skin-side up on a hot barbecue for 10 to 12 minutes until blackened, then cover and rest for 10 minutes.",
+        "Peel off the skins and slice the flesh.",
+        "Whisk the oil, vinegar, garlic and salt.",
+        "Toss the capsicum, beans, onion and parsley with the dressing."
+      ],
+      "notes": [
+        "Keeps for 3 days in the fridge and improves overnight.",
+        "Serve with grilled sausages or lamb."
+      ],
+      "nutrition": {
+        "kcal": 208,
+        "proteinG": 8,
+        "carbsG": 22,
+        "fatG": 8,
+        "fibreG": 8,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "barbecue-baked-potatoes-with-sour-cream-and-chives",
+      "title": "Barbecue Baked Potatoes with Sour Cream and Chives",
+      "summary": "Foil-wrapped potatoes cooked in the coals until fluffy, split and loaded with sour cream and chives.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 60,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 medium potatoes",
+            "2 tbsp olive oil",
+            "1 tsp salt",
+            "3/4 cup sour cream",
+            "1/4 cup chopped chives",
+            "1/2 cup grated cheddar",
+            "50 g butter"
+          ]
+        }
+      ],
+      "steps": [
+        "Prick the potatoes, rub with the oil and salt, and wrap each tightly in foil.",
+        "Cook on a covered barbecue or in the coals for 50 to 60 minutes, turning once, until a skewer slides in easily.",
+        "Split each potato and fluff the flesh with a fork.",
+        "Add butter, sour cream, cheddar and chives."
+      ],
+      "notes": [
+        "Cook on indirect heat so the skins do not burn.",
+        "Try adding crisp bacon pieces for a loaded version."
+      ],
+      "nutrition": {
+        "kcal": 363,
+        "proteinG": 8,
+        "carbsG": 38,
+        "fatG": 19,
+        "fibreG": 4,
+        "sodiumMg": 680
+      }
+    }
+  ]
+}

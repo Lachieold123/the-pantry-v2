@@ -1,0 +1,2888 @@
+{
+ "about": "House recipes, batch 04 (helper sA): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+ "recipes": [
+  {
+   "id": "lemon-semifreddo",
+   "title": "Lemon Semifreddo",
+   "summary": "A frozen, no-churn cream dessert with a bright lemon flavour and a soft, mousse-like texture.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 0,
+   "servings": 8,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 cups thickened cream",
+      "3/4 cup icing sugar",
+      "2 lemon, zested and juiced",
+      "1 tsp vanilla extract",
+      "1/2 cup mascarpone"
+     ]
+    }
+   ],
+   "steps": [
+    "Line a loaf tin with baking paper.",
+    "Whisk the cream with the icing sugar until it forms soft peaks, then fold in the mascarpone, lemon zest, lemon juice and vanilla until smooth.",
+    "Pour into the tin, cover and freeze until firm enough to slice.",
+    "Slice with a warm knife and serve straight away."
+   ],
+   "notes": [
+    "Dessert.",
+    "Plus 6 hours freezing.",
+    "Vegetarian and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 316,
+    "proteinG": 3,
+    "carbsG": 22,
+    "fatG": 24,
+    "fibreG": 0,
+    "sodiumMg": 30
+   }
+  },
+  {
+   "id": "ricotta-and-honey-crostata",
+   "title": "Ricotta and Honey Crostata",
+   "summary": "A free-form rustic tart with a sweet ricotta filling and a jammy glaze.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 35,
+   "servings": 8,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 1/2 cups plain flour",
+      "100g butter, cold and cubed",
+      "2 tbsp icing sugar",
+      "1 egg yolk",
+      "3 tbsp iced water",
+      "400g ricotta",
+      "1/4 cup honey",
+      "1 egg",
+      "1 lemon, zested",
+      "2 tbsp apricot jam"
+     ]
+    }
+   ],
+   "steps": [
+    "Rub the butter into the flour and icing sugar until it looks like breadcrumbs, then mix in the egg yolk and enough iced water to bring the dough together. Wrap and chill.",
+    "Heat the oven to 190°C (170°C fan). Mix the ricotta, honey, egg and lemon zest until smooth.",
+    "Roll the pastry to a 30cm round on baking paper, spoon the filling into the centre and fold the edges over, leaving the middle open.",
+    "Bake for 35 minutes, until the pastry is golden and the filling is just set. Brush the pastry with warm jam."
+   ],
+   "notes": [
+    "Dessert.",
+    "Plus 30 minutes chilling.",
+    "Vegetarian.",
+    "Food safety: bake until the ricotta filling is set and the egg is fully cooked."
+   ],
+   "nutrition": {
+    "kcal": 316,
+    "proteinG": 9,
+    "carbsG": 34,
+    "fatG": 16,
+    "fibreG": 1,
+    "sodiumMg": 150
+   }
+  },
+  {
+   "id": "flourless-chocolate-torta-caprese",
+   "title": "Flourless Chocolate Torta Caprese",
+   "summary": "A fudgy, naturally gluten-free chocolate and almond cake from Capri.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 35,
+   "servings": 10,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "200g dark chocolate, chopped",
+      "150g butter",
+      "4 egg, separated",
+      "3/4 cup caster sugar",
+      "1 1/2 cups almond meal",
+      "1 tbsp icing sugar"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 170°C (150°C fan) and line a 22cm springform tin.",
+    "Melt the chocolate and butter together in a bowl over simmering water, stirring until smooth. Cool for 10 minutes.",
+    "Beat the yolks with half the sugar until pale, then stir in the chocolate and almond meal.",
+    "Whisk the egg whites to soft peaks, add the remaining sugar and whisk until glossy. Fold into the batter in two batches.",
+    "Bake for 35 minutes, until the top is set and cracked and a skewer comes out with moist crumbs. Cool in the tin and dust with icing sugar."
+   ],
+   "notes": [
+    "Dessert.",
+    "Gluten-free and vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 361,
+    "proteinG": 8,
+    "carbsG": 26,
+    "fatG": 25,
+    "fibreG": 3,
+    "sodiumMg": 90
+   }
+  },
+  {
+   "id": "crisp-rosemary-grissini",
+   "title": "Crisp Rosemary Grissini",
+   "summary": "Thin, crunchy breadsticks flecked with rosemary and sea salt.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 18,
+   "servings": 8,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 cups bread flour",
+      "1 tsp instant dried yeast",
+      "1 tsp salt",
+      "3/4 cup warm water",
+      "3 tbsp olive oil",
+      "1 tbsp rosemary, finely chopped",
+      "1 tsp sea salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the flour, yeast, salt, water and 2 tbsp oil to a dough and knead for 8 minutes, until smooth. Cover and rise until doubled.",
+    "Heat the oven to 200°C (180°C fan). Roll the dough out to a rectangle and cut into 24 thin strips.",
+    "Roll each strip into a long thin stick, lay on lined trays and brush with the remaining oil. Sprinkle with the rosemary and sea salt.",
+    "Bake for 18 minutes, until deep golden and crisp all the way through."
+   ],
+   "notes": [
+    "Plus 1 hour rising.",
+    "Vegan."
+   ],
+   "nutrition": {
+    "kcal": 222,
+    "proteinG": 6,
+    "carbsG": 36,
+    "fatG": 6,
+    "fibreG": 1,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "brown-butter-almond-financiers",
+   "title": "Brown Butter Almond Financiers",
+   "summary": "Small, buttery French almond cakes with nutty brown butter and a chewy edge.",
+   "cuisine": "french",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 15,
+   "servings": 12,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "125g butter",
+      "4 egg white",
+      "3/4 cup icing sugar",
+      "1/2 cup almond meal",
+      "1/4 cup plain flour",
+      "1 tsp vanilla extract",
+      "2 tbsp flaked almond"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the butter in a saucepan over medium heat for 5 minutes, until it smells nutty and turns golden-brown, then cool.",
+    "Heat the oven to 200°C (180°C fan) and grease a 12-hole muffin tin.",
+    "Whisk the egg whites lightly, then stir in the icing sugar, almond meal, flour and vanilla until just combined. Fold in the brown butter.",
+    "Spoon into the holes, scatter with flaked almonds and bake for 15 minutes, until golden with a crisp edge."
+   ],
+   "notes": [
+    "Dessert.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 188,
+    "proteinG": 4,
+    "carbsG": 16,
+    "fatG": 12,
+    "fibreG": 1,
+    "sodiumMg": 60
+   }
+  },
+  {
+   "id": "cheddar-gougeres",
+   "title": "Cheddar Gougères",
+   "summary": "Light, airy choux puffs baked with sharp cheddar and a hint of mustard.",
+   "cuisine": "french",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 25,
+   "cookMinutes": 30,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup water",
+      "80g butter",
+      "1 cup plain flour",
+      "4 egg",
+      "1 1/2 cups cheddar, grated",
+      "1 tsp Dijon mustard",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan) and line two trays.",
+    "Bring the water, butter and salt to the boil in a saucepan, tip in the flour and beat for 2 minutes, until the dough pulls from the sides.",
+    "Cool for 5 minutes, then beat in the eggs one at a time until glossy, then the mustard and 1 cup of the cheddar.",
+    "Spoon 24 mounds onto the trays, top with the remaining cheese and bake for 30 minutes, until puffed and deep golden. Do not open the oven in the first 20 minutes."
+   ],
+   "notes": [
+    "Vegetarian. Best eaten warm."
+   ],
+   "nutrition": {
+    "kcal": 340,
+    "proteinG": 15,
+    "carbsG": 16,
+    "fatG": 24,
+    "fibreG": 1,
+    "sodiumMg": 540
+   }
+  },
+  {
+   "id": "pan-fried-chocolate-fondants",
+   "title": "Pan-Fried Chocolate Fondants",
+   "summary": "Little warm chocolate cakes with a molten, runny middle.",
+   "cuisine": "french",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 20,
+   "cookMinutes": 12,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "150g dark chocolate, chopped",
+      "100g butter",
+      "2 egg",
+      "2 egg yolks",
+      "1/4 cup caster sugar",
+      "2 tbsp plain flour",
+      "1 tbsp cocoa powder"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan) and grease four ramekins with butter and dust with cocoa.",
+    "Melt the chocolate and butter together, stirring until smooth, and cool a little.",
+    "Whisk the eggs, yolks and sugar until pale and thick, then fold in the chocolate and flour.",
+    "Fill the ramekins and bake for 12 minutes, until the edges are set and the centre still wobbles. Turn out onto plates and serve immediately."
+   ],
+   "notes": [
+    "Dessert.",
+    "Food safety: the centre stays soft by design; skip this recipe for anyone pregnant, elderly or immunocompromised, or bake 3 minutes longer until firm.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 455,
+    "proteinG": 9,
+    "carbsG": 26,
+    "fatG": 35,
+    "fibreG": 3,
+    "sodiumMg": 120
+   }
+  },
+  {
+   "id": "pissaladiere-onion-and-anchovy-tart",
+   "title": "Pissaladière Onion and Anchovy Tart",
+   "summary": "Sweet, slow-cooked onions and salty anchovies on crisp pastry, a Nice classic.",
+   "cuisine": "french",
+   "mealTypes": [
+    "lunch",
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 40,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 brown onion, thinly sliced",
+      "3 tbsp olive oil",
+      "3 thyme",
+      "1 bay leaf",
+      "2 sheets puff pastry",
+      "8 anchovy",
+      "1/2 cup kalamata olive"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the onions in the oil with the thyme and bay leaf over low heat for 30 minutes, stirring often, until deeply golden and jammy.",
+    "Heat the oven to 200°C (180°C fan). Lay the pastry on a lined tray, prick it and score a 2cm border.",
+    "Spread with the onions, arrange the anchovies in a lattice and dot with olives.",
+    "Bake for 25 minutes, until the pastry is puffed and golden."
+   ],
+   "notes": [
+    "Food safety: tinned anchovies are cured and safe to eat as they are; keep opened tins chilled."
+   ],
+   "nutrition": {
+    "kcal": 366,
+    "proteinG": 8,
+    "carbsG": 34,
+    "fatG": 22,
+    "fibreG": 3,
+    "sodiumMg": 850
+   }
+  },
+  {
+   "id": "tarta-de-santiago",
+   "title": "Tarta de Santiago",
+   "summary": "A moist, gluten-free Galician almond cake with a lemon scent.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 35,
+   "servings": 10,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 egg",
+      "1 cup caster sugar",
+      "2 cups almond meal",
+      "1 lemon, zested",
+      "1/2 tsp ground cinnamon",
+      "1 tbsp icing sugar"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 180°C (160°C fan) and line a 22cm springform tin.",
+    "Whisk the eggs and sugar for 4 minutes, until pale and thick, then fold in the almond meal, lemon zest and cinnamon.",
+    "Pour into the tin and bake for 35 minutes, until golden and a skewer comes out clean. Cool and dust with icing sugar."
+   ],
+   "notes": [
+    "Dessert.",
+    "Gluten-free and vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 302,
+    "proteinG": 9,
+    "carbsG": 26,
+    "fatG": 18,
+    "fibreG": 3,
+    "sodiumMg": 45
+   }
+  },
+  {
+   "id": "torrijas",
+   "title": "Torrijas",
+   "summary": "Spanish-style sweet fried bread soaked in cinnamon milk, caramelised in a pan.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "snack",
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 10,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 slices white bread",
+      "1 1/2 cups milk",
+      "1 cinnamon stick",
+      "2 tbsp caster sugar",
+      "2 egg",
+      "2 tbsp neutral oil",
+      "2 tbsp caster sugar",
+      "1/2 tsp ground cinnamon"
+     ]
+    }
+   ],
+   "steps": [
+    "Warm the milk, cinnamon stick and 2 tbsp sugar in a pan until steaming, then pour into a shallow dish and cool a little.",
+    "Dip each slice of bread briefly into the milk, then into the beaten eggs.",
+    "Fry in the oil over medium heat for 3 minutes each side, until deeply golden.",
+    "Dust with the remaining sugar and ground cinnamon and serve warm."
+   ],
+   "notes": [
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 352,
+    "proteinG": 11,
+    "carbsG": 50,
+    "fatG": 12,
+    "fibreG": 2,
+    "sodiumMg": 380
+   }
+  },
+  {
+   "id": "marinated-olives-with-orange-and-rosemary",
+   "title": "Marinated Olives with Orange and Rosemary",
+   "summary": "Green olives steeped in olive oil, orange peel, garlic and chilli.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 0,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g green olive, drained",
+      "1/4 cup olive oil",
+      "1 orange, peeled in strips",
+      "2 garlic, sliced",
+      "1 rosemary",
+      "1/2 tsp chilli flakes"
+     ]
+    }
+   ],
+   "steps": [
+    "Lightly crush the olives with the flat of a knife.",
+    "Stir in the oil, orange peel, garlic, rosemary and chilli flakes.",
+    "Cover and marinate until the flavours have mingled. Serve at room temperature."
+   ],
+   "notes": [
+    "Plus 4 hours marinating.",
+    "Vegan and gluten-free. Keeps 1 week in the fridge."
+   ],
+   "nutrition": {
+    "kcal": 150,
+    "proteinG": 1,
+    "carbsG": 5,
+    "fatG": 14,
+    "fibreG": 2,
+    "sodiumMg": 980
+   }
+  },
+  {
+   "id": "koulourakia-butter-twists",
+   "title": "Koulourakia Butter Twists",
+   "summary": "Greek orange-scented butter biscuits twisted into little braids.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 18,
+   "servings": 12,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "125g butter, softened",
+      "1/2 cup caster sugar",
+      "2 egg",
+      "1 orange, zested",
+      "2 cups plain flour",
+      "2 tsp baking powder",
+      "1 tbsp sesame seed"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 180°C (160°C fan) and line two trays.",
+    "Beat the butter and sugar until pale, then beat in 1 egg and the orange zest. Stir in the flour and baking powder to a soft dough.",
+    "Roll pieces of dough into 15cm ropes, fold in half and twist.",
+    "Brush with the second beaten egg, scatter with sesame seeds and bake for 18 minutes, until golden."
+   ],
+   "notes": [
+    "Dessert.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 192,
+    "proteinG": 4,
+    "carbsG": 26,
+    "fatG": 8,
+    "fibreG": 1,
+    "sodiumMg": 70
+   }
+  },
+  {
+   "id": "kourabiedes-almond-shortbread",
+   "title": "Kourabiedes Almond Shortbread",
+   "summary": "Buttery almond biscuits piled with a snowy coating of icing sugar.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 20,
+   "servings": 12,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "200g butter, softened",
+      "1/3 cup icing sugar",
+      "1 egg yolk",
+      "1 tsp vanilla extract",
+      "2 cups plain flour",
+      "1/2 cup almond meal",
+      "1/2 cup icing sugar"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 170°C (150°C fan) and line two trays.",
+    "Beat the butter and 1/3 cup icing sugar until very pale, about 6 minutes, then beat in the yolk and vanilla.",
+    "Stir in the flour and almond meal. Roll into balls or crescents, set on the trays and bake for 20 minutes, until pale golden.",
+    "Cool for 5 minutes, then roll in the remaining icing sugar."
+   ],
+   "notes": [
+    "Dessert.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 314,
+    "proteinG": 4,
+    "carbsG": 34,
+    "fatG": 18,
+    "fibreG": 1,
+    "sodiumMg": 90
+   }
+  },
+  {
+   "id": "smoky-baba-ganoush",
+   "title": "Smoky Baba Ganoush",
+   "summary": "Charred eggplant blended with tahini, lemon and garlic into a silky dip.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 40,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 eggplant",
+      "3 tbsp tahini",
+      "1 lemon, juiced",
+      "1 garlic, crushed",
+      "2 tbsp olive oil",
+      "1/2 tsp ground cumin",
+      "1/2 tsp salt",
+      "1 tbsp parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 240°C (220°C fan). Prick the eggplants and roast them for 40 minutes, turning once, until the skin is blackened and the flesh collapses.",
+    "Scoop the flesh into a colander and drain for 10 minutes, then mash with the tahini, lemon juice, garlic, cumin and salt.",
+    "Spoon into a bowl, swirl with olive oil and scatter with parsley."
+   ],
+   "notes": [
+    "Vegan and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 151,
+    "proteinG": 3,
+    "carbsG": 10,
+    "fatG": 11,
+    "fibreG": 4,
+    "sodiumMg": 260
+   }
+  },
+  {
+   "id": "tahini-sesame-cookies",
+   "title": "Tahini Sesame Cookies",
+   "summary": "Nutty, crumbly cookies made with tahini and rolled in sesame seeds.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 12,
+   "servings": 12,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1/2 cup tahini",
+      "1/3 cup maple syrup",
+      "1/4 cup brown sugar",
+      "1 egg",
+      "1 tsp vanilla extract",
+      "1 1/2 cups plain flour",
+      "1/2 tsp baking powder",
+      "1/4 cup sesame seed"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 180°C (160°C fan) and line a tray.",
+    "Whisk the tahini, maple syrup, sugar, egg and vanilla until smooth, then stir in the flour and baking powder.",
+    "Roll tablespoons of the dough in the sesame seeds, set them on the tray and flatten slightly.",
+    "Bake for 12 minutes, until golden at the edges. Cool on the tray."
+   ],
+   "notes": [
+    "Dessert.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 200,
+    "proteinG": 4,
+    "carbsG": 28,
+    "fatG": 8,
+    "fibreG": 2,
+    "sodiumMg": 40
+   }
+  },
+  {
+   "id": "cardamom-rice-pudding",
+   "title": "Cardamom Rice Pudding",
+   "summary": "Creamy rice cooked slowly in milk with cardamom and rose water.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 40,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1/2 cup white rice",
+      "1 litre milk",
+      "1/3 cup caster sugar",
+      "3 cardamom pod, crushed",
+      "1 tbsp rose water",
+      "2 tbsp pistachio, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the rice, milk, sugar and cardamom in a heavy saucepan over low heat for 40 minutes, stirring often, until the rice is very soft and the pudding is thick.",
+    "Take the pan off the heat and stir in the rose water, tasting for sweetness.",
+    "Pour into bowls and top with pistachios. Serve warm or chilled."
+   ],
+   "notes": [
+    "Dessert.",
+    "Vegetarian and gluten-free.",
+    "Food safety: cool leftovers quickly and refrigerate within an hour."
+   ],
+   "nutrition": {
+    "kcal": 234,
+    "proteinG": 7,
+    "carbsG": 38,
+    "fatG": 6,
+    "fibreG": 0,
+    "sodiumMg": 75
+   }
+  },
+  {
+   "id": "chermoula-roasted-chickpeas",
+   "title": "Chermoula Roasted Chickpeas",
+   "summary": "Crunchy chickpeas roasted with herby, garlicky Moroccan spice.",
+   "cuisine": "north-african",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g tinned chickpeas, drained and patted dry",
+      "2 tbsp olive oil",
+      "2 garlic, crushed",
+      "1 tsp ground cumin",
+      "1 tsp sweet paprika",
+      "1/2 tsp ground coriander",
+      "1 lemon, juiced",
+      "1/4 cup coriander, chopped",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Toss the chickpeas with 1 tbsp oil, the cumin, paprika, ground coriander and salt on a lined tray.",
+    "Roast for 30 minutes, shaking the tray halfway, until crisp and golden.",
+    "Stir the garlic, lemon juice, fresh coriander and remaining oil together and toss through the hot chickpeas."
+   ],
+   "notes": [
+    "Vegan and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 246,
+    "proteinG": 11,
+    "carbsG": 28,
+    "fatG": 10,
+    "fibreG": 9,
+    "sodiumMg": 440
+   }
+  },
+  {
+   "id": "almond-briouats",
+   "title": "Almond Briouats",
+   "summary": "Crisp filo triangles filled with sweet orange-spiced almond paste and glazed with honey.",
+   "cuisine": "north-african",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 40,
+   "cookMinutes": 20,
+   "servings": 10,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 cups almond meal",
+      "1/3 cup caster sugar",
+      "1 orange, zested",
+      "1/2 tsp ground cinnamon",
+      "2 tbsp butter, softened",
+      "10 sheets filo pastry",
+      "50g butter, melted",
+      "1/3 cup honey",
+      "1 tbsp sesame seed"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the almond meal, sugar, orange zest, cinnamon and softened butter into a firm paste.",
+    "Heat the oven to 180°C (160°C fan). Cut the filo into long strips, brush with melted butter and place a teaspoon of almond filling at one end.",
+    "Fold into triangles, working down the strip, and place seam-side down on a lined tray. Brush with butter.",
+    "Bake for 20 minutes, until golden and crisp. Brush with warm honey and scatter with sesame seeds."
+   ],
+   "notes": [
+    "Dessert.",
+    "Keep unused filo covered with a damp cloth.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 325,
+    "proteinG": 6,
+    "carbsG": 28,
+    "fatG": 21,
+    "fibreG": 3,
+    "sodiumMg": 110
+   }
+  },
+  {
+   "id": "golden-syrup-flapjacks",
+   "title": "Golden Syrup Flapjacks",
+   "summary": "Chewy oat flapjacks with a buttery, caramelised golden syrup edge.",
+   "cuisine": "british",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 12,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "150g butter",
+      "1/2 cup brown sugar",
+      "1/3 cup golden syrup",
+      "3 cups rolled oats",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 170°C (150°C fan) and line a 20cm square tin.",
+    "Melt the butter, sugar and golden syrup in a saucepan over low heat until smooth, then stir in the oats and salt.",
+    "Press firmly into the tin and bake for 25 minutes, until golden around the edges but still soft in the middle.",
+    "Cool completely in the tin before cutting into 12 pieces."
+   ],
+   "notes": [
+    "Dessert.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 239,
+    "proteinG": 3,
+    "carbsG": 32,
+    "fatG": 11,
+    "fibreG": 2,
+    "sodiumMg": 140
+   }
+  },
+  {
+   "id": "carrot-cake-with-cream-cheese-frosting",
+   "title": "Carrot Cake with Cream Cheese Frosting",
+   "summary": "A spiced, moist carrot and walnut cake with tangy frosting.",
+   "cuisine": "british",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 45,
+   "servings": 12,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "3 egg",
+      "3/4 cup brown sugar",
+      "3/4 cup neutral oil",
+      "2 cups carrot, grated",
+      "1 1/2 cups plain flour",
+      "2 tsp baking powder",
+      "1 tsp ground cinnamon",
+      "1/2 cup walnut, chopped",
+      "200g cream cheese",
+      "60g butter, softened",
+      "1 cup icing sugar"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 170°C (150°C fan) and line a 22cm tin.",
+    "Whisk the eggs, brown sugar and oil until smooth, then stir in the carrot. Fold in the flour, baking powder, cinnamon and walnuts.",
+    "Pour into the tin and bake for 45 minutes, until a skewer comes out clean. Cool completely.",
+    "Beat the cream cheese, butter and icing sugar until smooth and spread over the cake."
+   ],
+   "notes": [
+    "Dessert.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 444,
+    "proteinG": 6,
+    "carbsG": 42,
+    "fatG": 28,
+    "fibreG": 2,
+    "sodiumMg": 260
+   }
+  },
+  {
+   "id": "lemon-drizzle-loaf",
+   "title": "Lemon Drizzle Loaf",
+   "summary": "A zesty butter loaf with a crackly sugar-lemon topping.",
+   "cuisine": "british",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 45,
+   "servings": 10,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "125g butter, softened",
+      "3/4 cup caster sugar",
+      "2 egg",
+      "1 1/2 cups self-raising flour",
+      "1/3 cup milk",
+      "2 lemon, zested and juiced",
+      "1/3 cup white sugar"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 170°C (150°C fan) and line a loaf tin.",
+    "Beat the butter and caster sugar until pale, then beat in the eggs. Fold in the flour, milk and lemon zest.",
+    "Bake for 45 minutes, until golden and a skewer comes out clean.",
+    "Mix the lemon juice with the white sugar and spoon over the hot loaf. Cool in the tin so the topping sets crisp."
+   ],
+   "notes": [
+    "Dessert.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 284,
+    "proteinG": 4,
+    "carbsG": 40,
+    "fatG": 12,
+    "fibreG": 1,
+    "sodiumMg": 230
+   }
+  },
+  {
+   "id": "spiced-apple-crumble",
+   "title": "Spiced Apple Crumble",
+   "summary": "Soft cinnamon apples under a buttery, oaty crumble topping.",
+   "cuisine": "british",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 40,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "6 apple, peeled and sliced",
+      "2 tbsp brown sugar",
+      "1 tsp ground cinnamon",
+      "1 lemon, juiced",
+      "1 cup plain flour",
+      "1/2 cup rolled oats",
+      "1/2 cup brown sugar",
+      "100g butter, cold and cubed"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 180°C (160°C fan). Toss the apple with 2 tbsp sugar, cinnamon and lemon juice and tip into a baking dish.",
+    "Rub the flour, oats, 1/2 cup sugar and butter together until crumbly.",
+    "Scatter the topping over the apple and bake for 40 minutes, until the top is golden and the apples are bubbling."
+   ],
+   "notes": [
+    "Dessert.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 389,
+    "proteinG": 4,
+    "carbsG": 64,
+    "fatG": 13,
+    "fibreG": 5,
+    "sodiumMg": 100
+   }
+  },
+  {
+   "id": "hot-cross-buns",
+   "title": "Hot Cross Buns",
+   "summary": "Soft spiced fruit buns marked with a flour cross and glazed with apricot jam.",
+   "cuisine": "british",
+   "mealTypes": [
+    "breakfast",
+    "snack"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 40,
+   "cookMinutes": 20,
+   "servings": 12,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 cups bread flour",
+      "2 tsp instant dried yeast",
+      "1/3 cup caster sugar",
+      "1 tsp ground cinnamon",
+      "1/2 tsp nutmeg",
+      "1/2 tsp salt",
+      "1 cup milk",
+      "60g butter, melted",
+      "1 egg",
+      "3/4 cup sultana",
+      "1/2 cup plain flour",
+      "3 tbsp apricot jam"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the bread flour, yeast, sugar, spices and salt, then stir in the warm milk, butter and egg to a dough. Knead for 10 minutes, until elastic, and fold in the sultanas. Cover and rise until doubled.",
+    "Divide into 12 balls, set them close together in a lined tin and rise again until puffy.",
+    "Heat the oven to 200°C (180°C fan). Mix the plain flour with about 4 tbsp water into a paste and pipe crosses over the buns.",
+    "Bake for 20 minutes, until deep golden. Brush with warm jam while hot."
+   ],
+   "notes": [
+    "Plus about 2 hours rising.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 294,
+    "proteinG": 8,
+    "carbsG": 52,
+    "fatG": 6,
+    "fibreG": 2,
+    "sodiumMg": 230
+   }
+  },
+  {
+   "id": "apfelkuchen-sunken-apple-cake",
+   "title": "Apfelkuchen Sunken Apple Cake",
+   "summary": "A tender German apple cake with apples pressed into the batter and a cinnamon crust.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 50,
+   "servings": 10,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "125g butter, softened",
+      "3/4 cup caster sugar",
+      "2 egg",
+      "1 1/2 cups plain flour",
+      "2 tsp baking powder",
+      "1/2 cup milk",
+      "4 apple, peeled and sliced",
+      "1 tsp ground cinnamon",
+      "2 tbsp brown sugar"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 180°C (160°C fan) and line a 24cm springform tin.",
+    "Beat the butter and caster sugar until pale, then beat in the eggs. Fold in the flour, baking powder and milk.",
+    "Spread the batter into the tin until level, press the apple slices into the surface and sprinkle with cinnamon and brown sugar.",
+    "Bake for 50 minutes, until golden and a skewer comes out clean."
+   ],
+   "notes": [
+    "Dessert.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 274,
+    "proteinG": 4,
+    "carbsG": 42,
+    "fatG": 10,
+    "fibreG": 2,
+    "sodiumMg": 210
+   }
+  },
+  {
+   "id": "pogacsa-cheese-scones",
+   "title": "Pogácsa Cheese Scones",
+   "summary": "Hungarian-style flaky cheddar scones with a cross-hatched top.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 22,
+   "servings": 8,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 cups plain flour",
+      "1 tsp baking powder",
+      "1 tsp salt",
+      "100g butter, cold and cubed",
+      "1 cup cheddar, grated",
+      "1/2 cup sour cream",
+      "1 egg",
+      "1 egg yolk"
+     ]
+    }
+   ],
+   "steps": [
+    "Rub the butter into the flour, baking powder and salt until it resembles breadcrumbs, then stir in the cheese.",
+    "Mix in the sour cream and the whole egg to a soft dough, fold it over itself three times, then wrap and chill.",
+    "Heat the oven to 200°C (180°C fan). Roll the dough out 2cm thick, score a crosshatch pattern on top and cut 5cm rounds.",
+    "Brush with the egg yolk and bake for 22 minutes, until puffed and deep golden."
+   ],
+   "notes": [
+    "Plus 30 minutes chilling.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 350,
+    "proteinG": 10,
+    "carbsG": 28,
+    "fatG": 22,
+    "fibreG": 1,
+    "sodiumMg": 610
+   }
+  },
+  {
+   "id": "spiced-honey-lebkuchen-biscuits",
+   "title": "Spiced Honey Lebkuchen Biscuits",
+   "summary": "Chewy German gingerbread-style biscuits spiced with cinnamon, ginger and cloves.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 12,
+   "servings": 12,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1/2 cup honey",
+      "1/4 cup brown sugar",
+      "60g butter",
+      "2 cups plain flour",
+      "1 tsp bicarbonate of soda",
+      "2 tsp ground cinnamon",
+      "1 tsp ground ginger",
+      "1/2 tsp ground cloves",
+      "1/2 cup almond meal",
+      "1 egg",
+      "1 cup icing sugar"
+     ]
+    }
+   ],
+   "steps": [
+    "Warm the honey, brown sugar and butter in a saucepan, stirring, until melted. Cool for 10 minutes.",
+    "Mix the flour, bicarbonate of soda, spices and almond meal, then stir in the honey mixture and egg to form a dough. Chill until firm.",
+    "Heat the oven to 180°C (160°C fan). Roll the dough 5mm thick, cut rounds and bake on lined trays for 12 minutes, until set.",
+    "Mix the icing sugar with 2 tbsp water and brush over the warm biscuits."
+   ],
+   "notes": [
+    "Dessert.",
+    "Plus 1 hour chilling.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 272,
+    "proteinG": 4,
+    "carbsG": 46,
+    "fatG": 8,
+    "fibreG": 1,
+    "sodiumMg": 110
+   }
+  },
+  {
+   "id": "ginger-crunch-slice",
+   "title": "Ginger Crunch Slice",
+   "summary": "A crisp, buttery ginger base topped with a sticky ginger icing.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 12,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "125g butter, melted",
+      "1/2 cup caster sugar",
+      "1 cup plain flour",
+      "1/2 cup desiccated coconut",
+      "2 tsp ground ginger",
+      "1/2 tsp baking powder",
+      "60g butter",
+      "1 cup icing sugar",
+      "1 tbsp golden syrup",
+      "2 tsp ground ginger"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 180°C (160°C fan) and line a 20cm square tin.",
+    "Mix the melted butter, caster sugar, flour, coconut, 2 tsp ginger and baking powder and press into the tin.",
+    "Bake for 25 minutes, until golden.",
+    "Melt 60g butter with the golden syrup, then stir in the icing sugar and 2 tsp ginger until smooth. Spread over the hot base, cool and cut into pieces."
+   ],
+   "notes": [
+    "Dessert.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 253,
+    "proteinG": 2,
+    "carbsG": 32,
+    "fatG": 13,
+    "fibreG": 1,
+    "sodiumMg": 130
+   }
+  },
+  {
+   "id": "coconut-jam-drops",
+   "title": "Coconut Jam Drops",
+   "summary": "Soft, crumbly coconut biscuits with a bright dot of jam.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 14,
+   "servings": 12,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "125g butter, softened",
+      "1/2 cup caster sugar",
+      "1 egg",
+      "1 tsp vanilla extract",
+      "1 1/2 cups plain flour",
+      "1/2 cup desiccated coconut",
+      "1 tsp baking powder",
+      "1/3 cup apricot jam"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 170°C (150°C fan) and line two trays.",
+    "Beat the butter and sugar until pale, then beat in the egg and vanilla. Stir in the flour, coconut and baking powder.",
+    "Roll into 24 balls, set them on the trays and press a hollow into the middle of each.",
+    "Bake for 14 minutes, until pale gold, then fill the hollows with jam while the biscuits are warm."
+   ],
+   "notes": [
+    "Dessert.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 248,
+    "proteinG": 3,
+    "carbsG": 32,
+    "fatG": 12,
+    "fibreG": 1,
+    "sodiumMg": 90
+   }
+  },
+  {
+   "id": "snickerdoodle-cookies",
+   "title": "Snickerdoodle Cookies",
+   "summary": "Soft cinnamon-sugar cookies with a slightly tangy, chewy centre.",
+   "cuisine": "american",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 10,
+   "servings": 12,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "125g butter, softened",
+      "3/4 cup caster sugar",
+      "1 egg",
+      "1 tsp vanilla extract",
+      "1 3/4 cups plain flour",
+      "1/2 tsp bicarbonate of soda",
+      "1 tsp ground cinnamon",
+      "2 tbsp caster sugar"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 180°C (160°C fan) and line two trays.",
+    "Beat the butter and 3/4 cup sugar until creamy, then beat in the egg and vanilla. Stir in the flour and bicarbonate of soda.",
+    "Mix the remaining sugar with the cinnamon, roll tablespoons of dough into balls and coat in the cinnamon sugar.",
+    "Bake for 10 minutes, until set at the edges but still soft in the centre."
+   ],
+   "notes": [
+    "Dessert.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 213,
+    "proteinG": 3,
+    "carbsG": 30,
+    "fatG": 9,
+    "fibreG": 1,
+    "sodiumMg": 100
+   }
+  },
+  {
+   "id": "gooey-cinnamon-rolls",
+   "title": "Gooey Cinnamon Rolls",
+   "summary": "Soft yeasted rolls swirled with cinnamon sugar and topped with cream cheese icing.",
+   "cuisine": "american",
+   "mealTypes": [
+    "breakfast",
+    "snack"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 45,
+   "cookMinutes": 25,
+   "servings": 10,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "3 1/2 cups bread flour",
+      "2 tsp instant dried yeast",
+      "1/4 cup caster sugar",
+      "1/2 tsp salt",
+      "1 cup warm milk",
+      "60g butter, melted",
+      "1 egg",
+      "80g butter, softened",
+      "3/4 cup brown sugar",
+      "2 tbsp ground cinnamon",
+      "100g cream cheese",
+      "1 cup icing sugar"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the flour, yeast, caster sugar and salt, then stir in the milk, melted butter and egg. Knead for 10 minutes, until smooth, then cover and rise until doubled.",
+    "Roll the dough into a 40 x 30cm rectangle, spread with the softened butter and scatter with the brown sugar and cinnamon.",
+    "Roll up from the long side, cut into 10 pieces and set cut-side up in a lined tin. Rise again for 30 minutes.",
+    "Bake at 180°C (160°C fan) for 25 minutes, until golden and cooked through.",
+    "Beat the cream cheese and icing sugar until smooth and spread over the warm rolls."
+   ],
+   "notes": [
+    "Plus about 2 hours rising.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 420,
+    "proteinG": 9,
+    "carbsG": 60,
+    "fatG": 16,
+    "fibreG": 2,
+    "sodiumMg": 250
+   }
+  },
+  {
+   "id": "pecan-pie-bars",
+   "title": "Pecan Pie Bars",
+   "summary": "A buttery shortbread base with a gooey maple pecan topping.",
+   "cuisine": "american",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 40,
+   "servings": 12,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 1/2 cups plain flour",
+      "1/4 cup icing sugar",
+      "125g butter, cold and cubed",
+      "3 egg",
+      "3/4 cup brown sugar",
+      "1/2 cup maple syrup",
+      "60g butter, melted",
+      "1 tsp vanilla extract",
+      "1 1/2 cups pecan, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 180°C (160°C fan) and line a 20cm square tin.",
+    "Rub the flour, icing sugar and cold butter together until it clumps, press into the tin and bake for 15 minutes, until pale gold.",
+    "Whisk the eggs, brown sugar, maple syrup, melted butter and vanilla, then stir in the pecans and pour over the base.",
+    "Bake for 25 minutes more, until the filling is set with a slight wobble. Cool completely before cutting."
+   ],
+   "notes": [
+    "Dessert.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 374,
+    "proteinG": 4,
+    "carbsG": 40,
+    "fatG": 22,
+    "fibreG": 2,
+    "sodiumMg": 130
+   }
+  },
+  {
+   "id": "mexican-hot-chocolate-pots",
+   "title": "Mexican Hot Chocolate Pots",
+   "summary": "Rich chocolate pots spiced with cinnamon and a pinch of chilli.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 10,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "200g dark chocolate, chopped",
+      "1 1/2 cups thickened cream",
+      "1/2 cup milk",
+      "4 egg yolks",
+      "2 tbsp caster sugar",
+      "1 tsp ground cinnamon",
+      "1/4 tsp cayenne pepper"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the cream, milk, cinnamon and cayenne until just steaming, then pour over the chocolate and stir until smooth.",
+    "Whisk the yolks and sugar together, then slowly whisk in the warm chocolate mixture.",
+    "Return to the pan and stir over low heat for 5 minutes, until thick and reaching 75°C. Pour into six cups and chill until set."
+   ],
+   "notes": [
+    "Dessert.",
+    "Plus 4 hours chilling.",
+    "Food safety: heat the egg mixture to 75°C so the yolks are cooked.",
+    "Gluten-free and vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 360,
+    "proteinG": 5,
+    "carbsG": 22,
+    "fatG": 28,
+    "fibreG": 3,
+    "sodiumMg": 50
+   }
+  },
+  {
+   "id": "pecan-wedding-cookies",
+   "title": "Pecan Wedding Cookies",
+   "summary": "Melt-in-the-mouth buttery pecan cookies rolled in icing sugar.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 15,
+   "servings": 12,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "200g butter, softened",
+      "1/2 cup icing sugar",
+      "1 tsp vanilla extract",
+      "2 cups plain flour",
+      "1 cup pecan, finely chopped",
+      "1/2 cup icing sugar"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 170°C (150°C fan) and line two trays.",
+    "Beat the butter, 1/2 cup icing sugar and vanilla until pale, then stir in the flour and pecans.",
+    "Roll into 24 balls, set on the trays and bake for 15 minutes, until pale gold on the bottom.",
+    "Cool for 5 minutes, then roll in the remaining icing sugar."
+   ],
+   "notes": [
+    "Dessert.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 368,
+    "proteinG": 4,
+    "carbsG": 34,
+    "fatG": 24,
+    "fibreG": 2,
+    "sodiumMg": 100
+   }
+  },
+  {
+   "id": "coconut-quindim",
+   "title": "Coconut Quindim",
+   "summary": "Glossy Brazilian coconut custards, baked upside down so the coconut forms a golden crown.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 40,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 egg yolk",
+      "1 cup caster sugar",
+      "1 cup desiccated coconut",
+      "50g butter, melted",
+      "1/2 cup coconut milk"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 170°C (150°C fan) and butter six ramekins with extra butter.",
+    "Whisk the yolks gently with the sugar, then stir in the coconut, melted butter and coconut milk. Rest for 10 minutes.",
+    "Fill the ramekins, set them in a roasting dish and pour in hot water to halfway up the sides.",
+    "Bake for 40 minutes, until set and the custard reaches 75°C. Cool, then turn out."
+   ],
+   "notes": [
+    "Dessert.",
+    "Food safety: bake until the custard is set and reaches 75°C.",
+    "Gluten-free and vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 378,
+    "proteinG": 5,
+    "carbsG": 40,
+    "fatG": 22,
+    "fibreG": 2,
+    "sodiumMg": 50
+   }
+  },
+  {
+   "id": "spiced-sweet-potato-pudding",
+   "title": "Spiced Sweet Potato Pudding",
+   "summary": "A dense, creamy Caribbean sweet potato pudding with coconut and warm spices.",
+   "cuisine": "caribbean",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 50,
+   "servings": 8,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g sweet potato, peeled and grated",
+      "400ml coconut milk",
+      "1/2 cup brown sugar",
+      "1 tsp ground cinnamon",
+      "1/2 tsp nutmeg",
+      "1 tsp vanilla extract",
+      "1/4 cup raisin",
+      "1/3 cup plain flour",
+      "1 egg"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 180°C (160°C fan) and grease a 20cm baking dish.",
+    "Mix the sweet potato, coconut milk, sugar, spices, vanilla, raisins, flour and egg until combined.",
+    "Pour into the dish and bake for 50 minutes, until firm, dark at the edges and a skewer comes out clean. Cool before slicing."
+   ],
+   "notes": [
+    "Dessert.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 270,
+    "proteinG": 3,
+    "carbsG": 42,
+    "fatG": 10,
+    "fibreG": 3,
+    "sodiumMg": 45
+   }
+  },
+  {
+   "id": "cinnamon-baked-plantain",
+   "title": "Cinnamon Baked Plantain",
+   "summary": "Sweet, soft plantain halves roasted with butter, cinnamon and brown sugar.",
+   "cuisine": "caribbean",
+   "mealTypes": [
+    "snack"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "700g plantain, peeled and halved lengthways",
+      "2 tbsp coconut oil",
+      "1 tbsp brown sugar",
+      "1 tsp ground cinnamon",
+      "1/2 tsp salt",
+      "1 lime, juiced"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan).",
+    "Toss the plantain with the coconut oil, sugar, cinnamon and salt on a lined tray.",
+    "Roast for 25 minutes, turning once, until golden and caramelised at the edges. Squeeze over the lime juice."
+   ],
+   "notes": [
+    "Vegan and gluten-free. Use very ripe plantain with black skin for the sweetest result."
+   ],
+   "nutrition": {
+    "kcal": 231,
+    "proteinG": 2,
+    "carbsG": 40,
+    "fatG": 7,
+    "fibreG": 4,
+    "sodiumMg": 300
+   }
+  },
+  {
+   "id": "salami-mozzarella-and-rocket-panini",
+   "title": "Salami, Mozzarella and Rocket Panini",
+   "summary": "A pressed panini with salty salami, melted mozzarella and peppery rocket.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 8,
+   "servings": 2,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "4 slices sourdough",
+      "2 tbsp pesto",
+      "80g salami",
+      "120g mozzarella, sliced",
+      "1 cup rocket",
+      "1 tbsp olive oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Spread the pesto on the bread, then layer the salami, mozzarella and rocket between two slices each.",
+    "Brush the outsides with olive oil.",
+    "Press in a hot frying pan for 4 minutes each side, until golden and the cheese has melted."
+   ],
+   "notes": [
+    "Salami is cured and ready to eat."
+   ],
+   "nutrition": {
+    "kcal": 554,
+    "proteinG": 28,
+    "carbsG": 34,
+    "fatG": 34,
+    "fibreG": 3,
+    "sodiumMg": 1450
+   }
+  },
+  {
+   "id": "sun-dried-tomato-pasta-salad",
+   "title": "Sun-Dried Tomato Pasta Salad",
+   "summary": "A chilled pasta salad with olives, capers and a punchy red wine dressing.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 12,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g pasta",
+      "1/2 cup sun-dried tomato, sliced",
+      "1/2 cup kalamata olive",
+      "2 tbsp caper",
+      "1 cup rocket",
+      "2 tbsp olive oil",
+      "2 tbsp red wine vinegar",
+      "1/4 cup basil, torn"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the pasta in salted boiling water for 12 minutes, until al dente, then drain and rinse under cold water.",
+    "Toss with the sun-dried tomato, olives, capers, rocket and basil.",
+    "Whisk the oil and vinegar and toss through. Season to taste and chill until needed."
+   ],
+   "notes": [
+    "Vegan."
+   ],
+   "nutrition": {
+    "kcal": 418,
+    "proteinG": 13,
+    "carbsG": 60,
+    "fatG": 14,
+    "fibreG": 5,
+    "sodiumMg": 720
+   }
+  },
+  {
+   "id": "lyonnaise-salad-with-bacon-and-poached-egg",
+   "title": "Lyonnaise Salad with Bacon and Poached Egg",
+   "summary": "Crisp bacon, a runny egg and a mustardy dressing over frisée-style salad leaves.",
+   "cuisine": "french",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 15,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "150g bacon, cut into strips",
+      "4 slice crusty bread",
+      "1 tbsp olive oil",
+      "2 cup salad leaves",
+      "1 tbsp Dijon mustard",
+      "1 tbsp red wine vinegar",
+      "2 egg"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the bacon in a dry frying pan over medium heat for 8 minutes, until crisp, and set aside, saving 1 tbsp of the fat.",
+    "Cube the bread and fry in the oil until golden, about 5 minutes, to make croutons.",
+    "Whisk the bacon fat, mustard and vinegar and toss through the salad leaves.",
+    "Poach the eggs in barely simmering water for 3 minutes, until the whites are set. Top the salad with bacon, croutons and eggs."
+   ],
+   "notes": [
+    "Food safety: poached eggs have a runny yolk; cook until the whites are fully set and skip the runny yolk for anyone pregnant, elderly or immunocompromised.",
+    "Bacon should be cooked until crisp and browned."
+   ],
+   "nutrition": {
+    "kcal": 488,
+    "proteinG": 26,
+    "carbsG": 24,
+    "fatG": 32,
+    "fibreG": 2,
+    "sodiumMg": 1250
+   }
+  },
+  {
+   "id": "french-lentil-salad-with-goat-cheese",
+   "title": "French Lentil Salad with Goat Cheese",
+   "summary": "Peppery lentils in a Dijon vinaigrette with crumbled goat cheese and herbs.",
+   "cuisine": "french",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup brown lentil",
+      "1 carrot, finely diced",
+      "1 bay leaf",
+      "2 tbsp olive oil",
+      "1 tbsp Dijon mustard",
+      "1 tbsp red wine vinegar",
+      "1/4 cup parsley, chopped",
+      "1/2 red onion, finely diced",
+      "100g goat cheese, crumbled"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the lentils with the carrot and bay leaf in plenty of water for 25 minutes, until tender but still holding their shape. Drain and discard the bay.",
+    "Whisk the oil, mustard and vinegar and toss through the warm lentils.",
+    "Fold in the parsley and onion and top with goat cheese once cooled."
+   ],
+   "notes": [
+    "Vegetarian and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 337,
+    "proteinG": 19,
+    "carbsG": 36,
+    "fatG": 13,
+    "fibreG": 14,
+    "sodiumMg": 230
+   }
+  },
+  {
+   "id": "chorizo-and-manchego-bocadillo",
+   "title": "Chorizo and Manchego Bocadillo",
+   "summary": "A crusty bread roll filled with seared chorizo, roasted capsicum and manchego.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 8,
+   "servings": 2,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "150g chorizo, sliced",
+      "2 bread roll",
+      "1/2 cup roasted capsicum",
+      "60g manchego, sliced",
+      "1 cup rocket",
+      "1 tbsp olive oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the chorizo in a dry pan over medium heat for 5 minutes, until browned at the edges and the fat runs.",
+    "Split and toast the rolls until golden, then drizzle with olive oil.",
+    "Fill with the chorizo, capsicum, manchego and rocket."
+   ],
+   "notes": [
+    "Chorizo is cured; cook until hot and sizzling."
+   ],
+   "nutrition": {
+    "kcal": 614,
+    "proteinG": 28,
+    "carbsG": 40,
+    "fatG": 38,
+    "fibreG": 3,
+    "sodiumMg": 1650
+   }
+  },
+  {
+   "id": "lemon-chickpea-salad-with-oregano",
+   "title": "Lemon Chickpea Salad with Oregano",
+   "summary": "A quick chickpea salad with cucumber, tomato, red onion and olives.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 0,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g tinned chickpeas, drained",
+      "1 cucumber, diced",
+      "2 tomato, diced",
+      "1/2 red onion, thinly sliced",
+      "1/2 cup kalamata olive",
+      "2 tbsp olive oil",
+      "1 lemon, juiced",
+      "1 tsp dried oregano",
+      "100g feta, crumbled"
+     ]
+    }
+   ],
+   "steps": [
+    "Combine the chickpeas, cucumber, tomato, onion and olives in a large bowl.",
+    "Whisk the oil, lemon juice and oregano and toss through until everything is coated.",
+    "Top with the feta and serve at room temperature."
+   ],
+   "notes": [
+    "Vegetarian and gluten-free. Leave out the feta and it is vegan."
+   ],
+   "nutrition": {
+    "kcal": 369,
+    "proteinG": 16,
+    "carbsG": 38,
+    "fatG": 17,
+    "fibreG": 10,
+    "sodiumMg": 800
+   }
+  },
+  {
+   "id": "halloumi-and-roast-vegetable-wraps",
+   "title": "Halloumi and Roast Vegetable Wraps",
+   "summary": "Warm wraps stuffed with golden halloumi, roasted capsicum and zucchini, and tzatziki.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 zucchini, sliced",
+      "2 capsicum, sliced",
+      "1 red onion, sliced",
+      "2 tbsp olive oil",
+      "1 tsp dried oregano",
+      "250g halloumi, sliced",
+      "4 flatbread",
+      "1/2 cup tzatziki"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Toss the zucchini, capsicum and onion with the oil and oregano and roast for 25 minutes, until tender and charred at the edges.",
+    "Fry the halloumi in a dry non-stick pan for 2 minutes each side, until golden.",
+    "Warm the flatbreads, spread with tzatziki and fill with the vegetables and halloumi."
+   ],
+   "notes": [
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 506,
+    "proteinG": 24,
+    "carbsG": 44,
+    "fatG": 26,
+    "fibreG": 6,
+    "sodiumMg": 1250
+   }
+  },
+  {
+   "id": "chickpea-shawarma-wraps",
+   "title": "Chickpea Shawarma Wraps",
+   "summary": "Spiced, crisp-roasted chickpeas in flatbread with tahini and pickles.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g tinned chickpeas, drained and patted dry",
+      "2 tbsp olive oil",
+      "2 tsp ground cumin",
+      "2 tsp sweet paprika",
+      "1 tsp ground cinnamon",
+      "1/2 tsp ground turmeric",
+      "4 flatbread",
+      "3 tbsp tahini",
+      "1 lemon, juiced",
+      "1 cucumber, sliced",
+      "1/4 cup pickled turnip"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Toss the chickpeas with the oil and spices on a tray and roast for 25 minutes, until crisp.",
+    "Whisk the tahini, lemon juice and 3 tbsp water into a pourable sauce.",
+    "Warm the flatbreads and fill with the chickpeas, cucumber, pickled turnip and tahini sauce."
+   ],
+   "notes": [
+    "Vegan."
+   ],
+   "nutrition": {
+    "kcal": 482,
+    "proteinG": 18,
+    "carbsG": 62,
+    "fatG": 18,
+    "fibreG": 14,
+    "sodiumMg": 1010
+   }
+  },
+  {
+   "id": "apricot-almond-couscous-salad",
+   "title": "Apricot Almond Couscous Salad",
+   "summary": "Fluffy couscous with dried apricots, toasted almonds, herbs and a lemon-cumin dressing.",
+   "cuisine": "north-african",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup couscous",
+      "1 cup boiling water",
+      "1/2 cup dried apricot, chopped",
+      "1/3 cup almond, roughly chopped",
+      "1/2 cup parsley, chopped",
+      "1/2 cup mint, chopped",
+      "3 tbsp olive oil",
+      "1 lemon, juiced",
+      "1 tsp ground cumin"
+     ]
+    }
+   ],
+   "steps": [
+    "Put the couscous in a bowl, pour over the boiling water, cover and stand for 5 minutes, until the water is absorbed. Fluff with a fork.",
+    "Toast the almonds in a dry frying pan for 4 minutes, until golden.",
+    "Toss the couscous with the apricots, almonds, herbs, oil, lemon juice and cumin."
+   ],
+   "notes": [
+    "Vegan."
+   ],
+   "nutrition": {
+    "kcal": 363,
+    "proteinG": 9,
+    "carbsG": 48,
+    "fatG": 15,
+    "fibreG": 5,
+    "sodiumMg": 20
+   }
+  },
+  {
+   "id": "egg-mayo-sandwiches-with-watercress",
+   "title": "Egg Mayo Sandwiches with Watercress",
+   "summary": "Creamy egg mayonnaise on soft bread with peppery greens.",
+   "cuisine": "british",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 egg",
+      "3 tbsp mayonnaise",
+      "1 tsp Dijon mustard",
+      "1 tbsp chives, chopped",
+      "4 slices white bread",
+      "1 tbsp butter",
+      "1 cup rocket"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the eggs for 10 minutes, until fully set, then cool in cold water and peel.",
+    "Mash the eggs with the mayonnaise, mustard and chives.",
+    "Butter the bread and fill with the egg mixture and rocket."
+   ],
+   "notes": [
+    "Food safety: boil the eggs until the yolks are firm and keep the filling chilled; eat within 24 hours.",
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 444,
+    "proteinG": 18,
+    "carbsG": 30,
+    "fatG": 28,
+    "fibreG": 2,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "pea-and-ham-soup",
+   "title": "Pea and Ham Soup",
+   "summary": "A thick, savoury soup of split peas and smoky ham.",
+   "cuisine": "british",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 60,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g ham, diced",
+      "1 tbsp neutral oil",
+      "1 brown onion, diced",
+      "2 carrot, diced",
+      "2 celery, diced",
+      "2 cup pea",
+      "1.5 litres chicken stock",
+      "1 bay leaf"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the onion, carrot and celery in the oil for 8 minutes, until soft.",
+    "Add the ham, peas, stock and bay leaf and simmer for 50 minutes, until the peas have broken down and the soup is thick.",
+    "Remove the bay leaf and stir well. Serve hot."
+   ],
+   "notes": [
+    "Food safety: ham is cooked; make sure the soup is steaming hot throughout before serving."
+   ],
+   "nutrition": {
+    "kcal": 278,
+    "proteinG": 22,
+    "carbsG": 34,
+    "fatG": 6,
+    "fibreG": 10,
+    "sodiumMg": 1180
+   }
+  },
+  {
+   "id": "cheese-and-onion-toastie",
+   "title": "Cheese and Onion Toastie",
+   "summary": "Sharp cheddar and soft, caramelised red onion in a crisp toastie.",
+   "cuisine": "british",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 18,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 red onion, thinly sliced",
+      "1 tbsp butter",
+      "1 tbsp balsamic vinegar",
+      "4 slices white bread",
+      "1 tbsp butter",
+      "150g cheddar, grated"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the onion in 1 tbsp butter in a frying pan over low heat for 10 minutes, until soft and golden, then add the balsamic and cook for 1 minute more.",
+    "Spread the onion over two slices of bread, top with the cheddar and the other slices and butter the outsides.",
+    "Cook in a frying pan over medium heat for 4 minutes each side, until golden and melted."
+   ],
+   "notes": [
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 528,
+    "proteinG": 22,
+    "carbsG": 38,
+    "fatG": 32,
+    "fibreG": 2,
+    "sodiumMg": 1000
+   }
+  },
+  {
+   "id": "currywurst-with-potato-wedges",
+   "title": "Currywurst with Potato Wedges",
+   "summary": "Sliced sausage in a curried tomato sauce, Berlin-style, with crisp potato wedges.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g potato, cut into wedges",
+      "2 tbsp neutral oil",
+      "600g bratwurst",
+      "1 brown onion, diced",
+      "3 tbsp tomato paste",
+      "1/2 cup tomato sauce",
+      "1 tbsp curry powder",
+      "1 tsp sweet paprika",
+      "1 tbsp brown sugar"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Toss the potato with 1 tbsp oil and roast for 30 minutes, turning once, until golden and crisp.",
+    "Brown the bratwurst in a frying pan for 12 minutes, turning, until cooked and the centre reaches 75°C. Slice.",
+    "Cook the onion in the remaining oil for 5 minutes, then add the tomato paste, tomato sauce, curry powder, paprika, sugar and 1/2 cup water and simmer for 8 minutes, until thick.",
+    "Pour the sauce over the sliced sausage and serve with the wedges."
+   ],
+   "notes": [
+    "Food safety: sausages must reach 75°C in the centre with no pink inside."
+   ],
+   "nutrition": {
+    "kcal": 576,
+    "proteinG": 24,
+    "carbsG": 48,
+    "fatG": 32,
+    "fibreG": 5,
+    "sodiumMg": 1450
+   }
+  },
+  {
+   "id": "zwiebelkuchen-onion-tart",
+   "title": "Zwiebelkuchen Onion Tart",
+   "summary": "A Southern German savoury onion and bacon tart with a creamy egg custard.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 40,
+   "servings": 6,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "400g puff pastry",
+      "4 brown onion, thinly sliced",
+      "100g bacon, diced",
+      "1 tbsp neutral oil",
+      "3 egg",
+      "1/2 cup sour cream",
+      "1/2 tsp caraway seed",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the bacon in the oil in a frying pan for 6 minutes, until crisp. Add the onion and cook over low heat for 15 minutes, until soft and golden.",
+    "Heat the oven to 200°C (180°C fan) and line a 24cm tart tin with the pastry. Prick the base.",
+    "Whisk the eggs, sour cream, caraway and salt, stir in the onion mixture and pour into the case.",
+    "Bake for 40 minutes, until set in the centre and golden."
+   ],
+   "notes": [
+    "Food safety: the egg custard must be fully set in the centre; bacon should be cooked until crisp."
+   ],
+   "nutrition": {
+    "kcal": 430,
+    "proteinG": 14,
+    "carbsG": 26,
+    "fatG": 30,
+    "fibreG": 2,
+    "sodiumMg": 720
+   }
+  },
+  {
+   "id": "beetroot-burgers-with-tzatziki",
+   "title": "Beetroot Burgers with Tzatziki",
+   "summary": "Ruby beetroot and bean patties on toasted buns with cool tzatziki.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g tinned kidney bean, drained",
+      "2 beetroot, cooked and grated",
+      "1/2 cup rolled oats",
+      "1 egg",
+      "1 tsp ground cumin",
+      "1 garlic, crushed",
+      "2 tbsp olive oil",
+      "4 burger bun",
+      "1/2 cup tzatziki",
+      "1 cup lettuce"
+     ]
+    }
+   ],
+   "steps": [
+    "Mash the beans roughly and mix with the beetroot, oats, egg, cumin and garlic. Shape into 4 patties and chill for 15 minutes.",
+    "Fry in the oil over medium heat for 5 minutes each side, until crisp and heated through.",
+    "Toast the buns until golden and build with tzatziki, lettuce and a patty."
+   ],
+   "notes": [
+    "Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 414,
+    "proteinG": 16,
+    "carbsG": 56,
+    "fatG": 14,
+    "fibreG": 13,
+    "sodiumMg": 820
+   }
+  },
+  {
+   "id": "prawn-cocktail-rolls",
+   "title": "Prawn Cocktail Rolls",
+   "summary": "Plump cold prawns in a tangy pink sauce piled in soft rolls.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 0,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g cooked prawn",
+      "1/3 cup mayonnaise",
+      "2 tbsp tomato sauce",
+      "1 tsp Worcestershire sauce",
+      "1 lemon, juiced",
+      "1 cup lettuce, shredded",
+      "4 bread roll",
+      "1 tbsp chives, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the mayonnaise, tomato sauce, Worcestershire sauce and lemon juice into a pink sauce.",
+    "Fold the prawns through the sauce until coated.",
+    "Split the rolls, add the lettuce and fill with the prawn mix. Top with chives."
+   ],
+   "notes": [
+    "Food safety: use fully cooked prawns that have been kept below 5°C, and eat within a day."
+   ],
+   "nutrition": {
+    "kcal": 384,
+    "proteinG": 24,
+    "carbsG": 36,
+    "fatG": 16,
+    "fibreG": 2,
+    "sodiumMg": 1050
+   }
+  },
+  {
+   "id": "classic-tuna-salad-sandwiches",
+   "title": "Classic Tuna Salad Sandwiches",
+   "summary": "Creamy tuna, celery and lemon on soft bread with crisp lettuce.",
+   "cuisine": "american",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 0,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "185g tinned tuna, drained",
+      "3 tbsp mayonnaise",
+      "1 celery, finely diced",
+      "1 tbsp lemon juice",
+      "1 tbsp pickle, chopped",
+      "4 slices white bread",
+      "1 cup lettuce"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the tuna, mayonnaise, celery, lemon juice and pickle until creamy.",
+    "Pile onto two slices of bread.",
+    "Top with the lettuce and the remaining slices and cut in half."
+   ],
+   "notes": [
+    "Food safety: keep the tuna mixture chilled and eat it within 24 hours; tinned tuna is already cooked."
+   ],
+   "nutrition": {
+    "kcal": 438,
+    "proteinG": 26,
+    "carbsG": 34,
+    "fatG": 22,
+    "fibreG": 3,
+    "sodiumMg": 980
+   }
+  },
+  {
+   "id": "waldorf-salad-with-apple-and-walnuts",
+   "title": "Waldorf Salad with Apple and Walnuts",
+   "summary": "Crisp apple, celery and grapes in a creamy yoghurt dressing with walnuts.",
+   "cuisine": "american",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 0,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "3 apple, cored and diced",
+      "2 celery, sliced",
+      "1/2 cup walnut, roughly chopped",
+      "1/3 cup mayonnaise",
+      "1/3 cup Greek yoghurt",
+      "1 lemon, juiced",
+      "1 cos lettuce, shredded"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the apple with the lemon juice so it stays crisp.",
+    "Whisk the mayonnaise and yoghurt, then fold through the apple, celery and walnuts until coated.",
+    "Serve piled on the lettuce."
+   ],
+   "notes": [
+    "Vegetarian and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 296,
+    "proteinG": 5,
+    "carbsG": 24,
+    "fatG": 20,
+    "fibreG": 5,
+    "sodiumMg": 200
+   }
+  },
+  {
+   "id": "smoky-black-bean-jacket-sweet-potatoes",
+   "title": "Smoky Black Bean Jacket Sweet Potatoes",
+   "summary": "Baked sweet potatoes topped with spiced black beans, avocado and lime.",
+   "cuisine": "american",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 50,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 sweet potato",
+      "400g tinned black bean, drained",
+      "1 tsp ground cumin",
+      "1 tsp smoked paprika",
+      "1 lime, juiced",
+      "1 avocado, sliced",
+      "1/4 cup coriander, chopped",
+      "1/2 cup salsa"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Prick the sweet potatoes and bake for 50 minutes, until very soft.",
+    "Warm the beans with the cumin, paprika and half the lime juice in a saucepan until steaming, about 5 minutes.",
+    "Split the potatoes and top with the beans, avocado, salsa, coriander and remaining lime juice."
+   ],
+   "notes": [
+    "Vegan and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 414,
+    "proteinG": 13,
+    "carbsG": 68,
+    "fatG": 10,
+    "fibreG": 17,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "bean-and-cheese-burritos",
+   "title": "Bean and Cheese Burritos",
+   "summary": "Warm tortillas wrapped around refried-style beans, rice and melted cheese.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 10,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g tinned kidney bean, drained",
+      "1 tsp ground cumin",
+      "1 cup white rice, cooked",
+      "4 flour tortilla",
+      "1 cup cheddar, grated",
+      "1/2 cup salsa",
+      "1/2 cup sour cream",
+      "1/4 cup coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Mash the beans roughly with the cumin in a saucepan over low heat until hot and thick, about 5 minutes.",
+    "Warm the tortillas, then fill with the rice, beans, cheddar, salsa, sour cream and coriander.",
+    "Fold in the sides, roll up tightly and toast in a dry pan for 2 minutes each side, until golden."
+   ],
+   "notes": [
+    "Vegetarian.",
+    "Food safety: cool and refrigerate cooked rice within an hour if making ahead."
+   ],
+   "nutrition": {
+    "kcal": 564,
+    "proteinG": 20,
+    "carbsG": 76,
+    "fatG": 20,
+    "fibreG": 12,
+    "sodiumMg": 980
+   }
+  },
+  {
+   "id": "avocado-and-black-bean-tostadas",
+   "title": "Avocado and Black Bean Tostadas",
+   "summary": "Crisp corn tortillas piled with mashed black beans, avocado and quick-pickled onion.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 10,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 corn tortilla",
+      "400g tinned black bean, drained",
+      "1 tsp ground cumin",
+      "2 avocado, sliced",
+      "1/2 red onion, thinly sliced",
+      "2 tbsp lime juice",
+      "1/4 cup coriander, chopped",
+      "1 tbsp olive oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Soak the onion in the lime juice for 10 minutes.",
+    "Brush the tortillas with oil and bake at 200°C (180°C fan) for 10 minutes, until crisp.",
+    "Warm the beans with the cumin and mash roughly. Spread over the tortillas, top with avocado, pickled onion and coriander."
+   ],
+   "notes": [
+    "Vegan and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 418,
+    "proteinG": 14,
+    "carbsG": 50,
+    "fatG": 18,
+    "fibreG": 17,
+    "sodiumMg": 380
+   }
+  },
+  {
+   "id": "cuban-sandwich",
+   "title": "Cuban Sandwich",
+   "summary": "Pressed pork, ham, swiss cheese, pickles and mustard in crusty bread.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "2 bread roll",
+      "2 tbsp American mustard",
+      "150g roast pork, sliced",
+      "100g ham, sliced",
+      "100g swiss cheese, sliced",
+      "1/2 cup pickle, sliced",
+      "1 tbsp butter"
+     ]
+    }
+   ],
+   "steps": [
+    "Split the rolls and spread with mustard. Layer with the pork, ham, cheese and pickles.",
+    "Butter the outsides of the rolls.",
+    "Press in a hot frying pan with a weighted plate for 4 minutes each side, until crisp and the cheese has melted and the filling is steaming hot."
+   ],
+   "notes": [
+    "Food safety: reheat cooked roast pork until steaming hot, 75°C in the middle."
+   ],
+   "nutrition": {
+    "kcal": 626,
+    "proteinG": 40,
+    "carbsG": 40,
+    "fatG": 34,
+    "fibreG": 2,
+    "sodiumMg": 2100
+   }
+  },
+  {
+   "id": "jerk-chickpea-wraps",
+   "title": "Jerk Chickpea Wraps",
+   "summary": "Spiced chickpeas with a jerk-style rub, crunchy slaw and lime in flatbread.",
+   "cuisine": "caribbean",
+   "mealTypes": [
+    "lunch"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g tinned chickpeas, drained and patted dry",
+      "2 tbsp neutral oil",
+      "2 tsp allspice",
+      "1 tsp dried thyme",
+      "1 tsp garlic powder",
+      "1/2 tsp cayenne pepper",
+      "1 tsp salt",
+      "4 flour tortilla",
+      "2 cup coleslaw",
+      "1 lime, juiced"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Toss the chickpeas with the oil, allspice, thyme, garlic powder, cayenne and salt and roast for 20 minutes, until crisp.",
+    "Warm the tortillas and fill with the chickpeas and coleslaw.",
+    "Squeeze over the lime juice and roll up."
+   ],
+   "notes": [
+    "Vegan: check that the coleslaw dressing is egg-free."
+   ],
+   "nutrition": {
+    "kcal": 480,
+    "proteinG": 16,
+    "carbsG": 68,
+    "fatG": 16,
+    "fibreG": 13,
+    "sodiumMg": 1180
+   }
+  }
+ ]
+}

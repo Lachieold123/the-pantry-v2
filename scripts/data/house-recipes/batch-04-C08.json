@@ -1,0 +1,1135 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "malaysian-chicken-curry-mee-soup",
+      "title": "Malaysian Chicken Curry Mee Soup",
+      "summary": "A coconut chicken noodle soup with a mild curry paste, tofu puffs and bean sprouts.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g chicken thigh, sliced",
+            "3 tbsp curry powder",
+            "2 shallots",
+            "3 garlic cloves",
+            "20g ginger",
+            "2 tbsp vegetable oil",
+            "600ml chicken stock",
+            "300ml coconut milk",
+            "200g egg noodles",
+            "8 tofu puffs",
+            "100g bean sprouts",
+            "2 limes"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the shallots, garlic and ginger with the curry powder into a paste.",
+        "Fry the paste in the oil for 6 minutes until the oil separates and it smells toasty.",
+        "Add the chicken and stir until it is sealed on all sides.",
+        "Pour in the stock and simmer for 15 minutes until the chicken is cooked through.",
+        "Stir in the coconut milk and tofu puffs and heat for 5 minutes until hot.",
+        "Boil the noodles until tender, divide among bowls, then ladle over the soup and top with sprouts and lime."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C and no pink remains.",
+        "Add sambal on the side for extra heat."
+      ],
+      "nutrition": {
+        "kcal": 598,
+        "proteinG": 34,
+        "carbsG": 46,
+        "fatG": 30,
+        "fibreG": 4,
+        "sodiumMg": 1150
+      }
+    },
+    {
+      "id": "sambal-tumis-prawns",
+      "title": "Sambal Tumis Prawns",
+      "summary": "Prawns cooked in a sweet, sticky tamarind chilli sambal, served over steamed rice.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g raw prawns, peeled",
+            "4 tbsp chilli paste",
+            "2 brown onions, sliced",
+            "3 garlic cloves",
+            "2 tbsp tamarind paste",
+            "1 tbsp palm sugar",
+            "3 tbsp vegetable oil",
+            "4 tomatoes, quartered",
+            "300g jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice according to the packet until fluffy, then keep warm.",
+        "Fry the onions in the oil for 6 minutes until soft and golden.",
+        "Add the garlic and chilli paste and fry for 4 minutes until the oil rises to the top.",
+        "Stir in the tamarind, sugar and tomatoes and simmer for 5 minutes until jammy.",
+        "Add the prawns and cook for 3 minutes until pink and opaque.",
+        "Serve spooned over the rice."
+      ],
+      "notes": [
+        "Food safety: cook the prawns until opaque and pink all the way through.",
+        "Balance the sweet, sour and heat with extra sugar or tamarind."
+      ],
+      "nutrition": {
+        "kcal": 520,
+        "proteinG": 30,
+        "carbsG": 62,
+        "fatG": 16,
+        "fibreG": 4,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "telur-dadar-malaysian-omelette",
+      "title": "Telur Dadar Malaysian Omelette",
+      "summary": "A thin, crisp-edged omelette with onion, chilli and spring onion, folded over and served with rice or toast.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 6,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 eggs",
+            "1 small onion, sliced",
+            "1 red chilli, sliced",
+            "2 spring onions",
+            "1 tbsp fish sauce",
+            "2 tbsp vegetable oil",
+            "1 pinch white pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the eggs with the fish sauce and white pepper until well combined.",
+        "Stir in the onion, chilli and spring onion.",
+        "Heat the oil in a frying pan until shimmering.",
+        "Pour in the egg and cook for 3 minutes until the base is golden and crisp at the edge.",
+        "Flip and cook for 1 minute until the egg is fully set, then fold and serve."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until firm with no liquid egg remaining.",
+        "Serve with sambal and plain rice."
+      ],
+      "nutrition": {
+        "kcal": 327,
+        "proteinG": 21,
+        "carbsG": 4,
+        "fatG": 25,
+        "fibreG": 1,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "roasted-tomato-gazpacho",
+      "title": "Roasted Tomato Gazpacho",
+      "summary": "A chilled summer soup of roasted tomatoes, cucumber, capsicum and sherry vinegar.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1kg ripe tomatoes",
+            "1 cucumber",
+            "1 red capsicum",
+            "2 garlic cloves",
+            "3 tbsp olive oil",
+            "2 tbsp sherry vinegar",
+            "1 slice day-old bread",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the tomatoes and garlic at 200C for 30 minutes until the skins blister.",
+        "Cool, then peel the tomatoes.",
+        "Blend with the cucumber, capsicum, bread and vinegar until smooth.",
+        "Stream in the oil while blending until the soup emulsifies.",
+        "Chill for at least 2 hours until very cold."
+      ],
+      "notes": [
+        "Serve in chilled bowls.",
+        "Taste for salt once cold, as chilling dulls flavour."
+      ],
+      "nutrition": {
+        "kcal": 191,
+        "proteinG": 4,
+        "carbsG": 17,
+        "fatG": 11,
+        "fibreG": 4,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "corn-chowder-with-smoked-paprika",
+      "title": "Corn Chowder with Smoked Paprika",
+      "summary": "A creamy summer corn chowder with potato, smoked paprika and bacon.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 corn cobs, kernels cut off",
+            "150g bacon, diced",
+            "1 brown onion",
+            "2 potatoes, diced",
+            "600ml chicken stock",
+            "200ml milk",
+            "1 tsp smoked paprika",
+            "1 tbsp butter",
+            "2 spring onions"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the bacon in the butter for 6 minutes until crisp, then lift out.",
+        "Soften the onion in the same pot for 5 minutes until translucent.",
+        "Add the paprika, potato, corn and stock and simmer for 15 minutes until the potato is tender.",
+        "Blend a third of the soup until smooth and stir back in.",
+        "Add the milk and heat gently, then top with bacon and spring onion."
+      ],
+      "notes": [
+        "Food safety: cook the bacon until crisp and fully cooked.",
+        "Do not boil after adding milk."
+      ],
+      "nutrition": {
+        "kcal": 394,
+        "proteinG": 16,
+        "carbsG": 44,
+        "fatG": 16,
+        "fibreG": 5,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "spring-pea-and-mint-soup",
+      "title": "Spring Pea and Mint Soup",
+      "summary": "A vivid green spring soup of peas, mint and lettuce, served with a swirl of cream.",
+      "cuisine": "british",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g frozen peas",
+            "1 brown onion",
+            "1 cos lettuce",
+            "600ml vegetable stock",
+            "1 tbsp butter",
+            "2 tbsp mint",
+            "60ml cream"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion in the butter for 5 minutes until translucent.",
+        "Add the stock and bring to a simmer until the surface bubbles lightly.",
+        "Add the peas and lettuce and cook for 5 minutes until just tender but still green.",
+        "Add the mint and blend until completely smooth.",
+        "Season and serve with a swirl of cream."
+      ],
+      "notes": [
+        "Do not overcook or the green turns dull.",
+        "Serve hot or chilled."
+      ],
+      "nutrition": {
+        "kcal": 202,
+        "proteinG": 9,
+        "carbsG": 16,
+        "fatG": 10,
+        "fibreG": 6,
+        "sodiumMg": 420
+      }
+    },
+    {
+      "id": "wombok-and-ginger-chicken-broth",
+      "title": "Wombok and Ginger Chicken Broth",
+      "summary": "A clear chicken broth with wombok, ginger and egg noodles, light and restoring.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g chicken breast, sliced",
+            "1 litre chicken stock",
+            "30g ginger",
+            "2 garlic cloves",
+            "300g wombok, shredded",
+            "150g egg noodles",
+            "2 tbsp soy sauce",
+            "1 tsp sesame oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the stock with ginger and garlic for 10 minutes.",
+        "Add the chicken and poach for 6 minutes until cooked through at 75°C.",
+        "Add the noodles and cook for 3 minutes until tender.",
+        "Stir in the wombok until just wilted.",
+        "Season with soy sauce and sesame oil."
+      ],
+      "notes": [
+        "Food safety: poach the chicken until it reaches 75°C with no pink.",
+        "Add chilli oil at the table."
+      ],
+      "nutrition": {
+        "kcal": 324,
+        "proteinG": 30,
+        "carbsG": 36,
+        "fatG": 6,
+        "fibreG": 3,
+        "sodiumMg": 1150
+      }
+    },
+    {
+      "id": "ribollita-tuscan-bread-soup",
+      "title": "Ribollita Tuscan Bread Soup",
+      "summary": "A thick Tuscan soup of cannellini beans, cavolo nero and day-old bread, better the next day.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 50,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tins cannellini beans",
+            "1 brown onion",
+            "2 carrots",
+            "2 celery stalks",
+            "3 garlic cloves",
+            "1 bunch cavolo nero",
+            "400g tinned tomatoes",
+            "1 litre vegetable stock",
+            "4 slices day-old bread",
+            "4 tbsp olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onion, carrot, celery and garlic in half the oil for 10 minutes until soft.",
+        "Add the tomatoes, stock and half the beans and simmer for 20 minutes.",
+        "Mash the remaining beans and stir in.",
+        "Add the cavolo nero and cook for 10 minutes until tender.",
+        "Tear the bread into the soup and stir until it thickens.",
+        "Serve with remaining oil."
+      ],
+      "notes": [
+        "Vegan.",
+        "Reheat the next day until thick."
+      ],
+      "nutrition": {
+        "kcal": 405,
+        "proteinG": 15,
+        "carbsG": 50,
+        "fatG": 13,
+        "fibreG": 14,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "cold-soba-salad-with-sesame-dressing",
+      "title": "Cold Soba Salad with Sesame Dressing",
+      "summary": "Chilled soba, cucumber and edamame in a soy and sesame dressing, a light summer meal.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 8,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g soba noodles",
+            "1 cucumber",
+            "150g edamame",
+            "1 carrot",
+            "2 tbsp soy sauce",
+            "1 tbsp tahini",
+            "1 tbsp rice vinegar",
+            "1 tsp honey",
+            "1 tbsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the soba for 5 minutes until tender, then rinse under cold water.",
+        "Cook the edamame for 3 minutes until bright green.",
+        "Whisk the soy sauce, tahini, vinegar and honey until smooth.",
+        "Toss the noodles, vegetables and dressing until coated.",
+        "Sprinkle with sesame seeds."
+      ],
+      "notes": [
+        "Check the soba is 100% buckwheat for gluten-free.",
+        "Serve cold."
+      ],
+      "nutrition": {
+        "kcal": 470,
+        "proteinG": 20,
+        "carbsG": 66,
+        "fatG": 12,
+        "fibreG": 9,
+        "sodiumMg": 760
+      }
+    },
+    {
+      "id": "waldorf-salad-with-walnuts",
+      "title": "Waldorf Salad with Walnuts",
+      "summary": "Crisp apple, celery and grapes in a light yoghurt dressing with toasted walnuts.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 apples",
+            "3 celery stalks",
+            "1 pear, sliced",
+            "60g walnuts",
+            "150g Greek yoghurt",
+            "1 tbsp mayonnaise",
+            "1 tbsp lemon juice",
+            "2 cos lettuce leaves"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the walnuts in a dry pan until golden and fragrant.",
+        "Slice the apples and celery and toss with lemon juice.",
+        "Mix the yoghurt and mayonnaise.",
+        "Fold the apples, celery, grapes and walnuts through the dressing until coated.",
+        "Spoon into lettuce cups and serve straight away."
+      ],
+      "notes": [
+        "Contains egg in the mayonnaise.",
+        "Squeeze lemon on the apple to stop browning."
+      ],
+      "nutrition": {
+        "kcal": 159,
+        "proteinG": 3,
+        "carbsG": 15,
+        "fatG": 9,
+        "fibreG": 3,
+        "sodiumMg": 220
+      }
+    },
+    {
+      "id": "chicken-larb-lettuce-cups",
+      "title": "Chicken Larb Lettuce Cups",
+      "summary": "Minced chicken tossed with lime, fish sauce, mint and toasted rice powder in crisp lettuce cups.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g chicken mince",
+            "3 tbsp lime juice",
+            "2 tbsp fish sauce",
+            "1 tbsp toasted rice powder",
+            "2 shallots, sliced",
+            "1 handful mint",
+            "1 handful coriander",
+            "1 tsp chilli flakes",
+            "8 cos lettuce leaves",
+            "1 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the chicken mince in the oil for 8 minutes, breaking it up, until it reaches 75°C and no pink remains.",
+        "Cool the cooked chicken for 2 minutes until just warm.",
+        "Toss with lime juice, fish sauce, rice powder and chilli.",
+        "Fold through the shallots and herbs.",
+        "Spoon into the lettuce leaves."
+      ],
+      "notes": [
+        "Food safety: cook mince until it reaches 75°C and no pink remains.",
+        "High-protein and dairy-free."
+      ],
+      "nutrition": {
+        "kcal": 246,
+        "proteinG": 32,
+        "carbsG": 6,
+        "fatG": 10,
+        "fibreG": 2,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "quinoa-and-roasted-pumpkin-salad",
+      "title": "Quinoa and Roasted Pumpkin Salad",
+      "summary": "Fluffy quinoa with roasted pumpkin, chickpeas, rocket and a lemon tahini dressing, vegan and high in protein.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g quinoa",
+            "600g pumpkin, cubed",
+            "1 tin chickpeas",
+            "2 tbsp olive oil",
+            "80g rocket",
+            "2 tbsp tahini",
+            "2 tbsp lemon juice",
+            "1 garlic clove"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the pumpkin and chickpeas with the oil at 200C for 25 minutes until golden.",
+        "Cook the quinoa for 15 minutes until the grains uncurl.",
+        "Whisk the tahini, lemon juice, garlic and water until smooth.",
+        "Toss everything until coated.",
+        "Serve warm or cold, as a side or a main."
+      ],
+      "notes": [
+        "Dairy-free and vegan.",
+        "Keeps 3 days."
+      ],
+      "nutrition": {
+        "kcal": 465,
+        "proteinG": 17,
+        "carbsG": 56,
+        "fatG": 17,
+        "fibreG": 10,
+        "sodiumMg": 340
+      }
+    },
+    {
+      "id": "prawn-and-avocado-salad",
+      "title": "Prawn and Avocado Salad",
+      "summary": "Chilled prawns with avocado, cucumber and a lime and chilli dressing.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 5,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g cooked prawns",
+            "2 avocados",
+            "1 cucumber",
+            "1 red chilli",
+            "3 tbsp lime juice",
+            "2 tbsp olive oil",
+            "1 handful coriander",
+            "1 cos lettuce"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the lime juice, oil and chilli.",
+        "Slice the avocado and cucumber.",
+        "Arrange the lettuce on a platter.",
+        "Layer with the avocado, cucumber and prawns.",
+        "Spoon over the dressing until coated."
+      ],
+      "notes": [
+        "Food safety: use fully cooked prawns kept cold, with flesh opaque and pink.",
+        "Eat within a day."
+      ],
+      "nutrition": {
+        "kcal": 372,
+        "proteinG": 28,
+        "carbsG": 8,
+        "fatG": 24,
+        "fibreG": 6,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "garlic-butter-mushrooms-on-toast",
+      "title": "Garlic Butter Mushrooms on Toast",
+      "summary": "Golden mushrooms in garlic butter and thyme piled on crisp sourdough.",
+      "cuisine": "french",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g mixed mushrooms",
+            "40g butter",
+            "3 garlic cloves",
+            "2 thyme sprigs",
+            "2 slices sourdough",
+            "1 tbsp parsley",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat half the butter in a pan until foaming.",
+        "Add the mushrooms and cook for 6 minutes until deeply golden.",
+        "Add the garlic, thyme and remaining butter for 1 minute until fragrant.",
+        "Toast the bread until crisp.",
+        "Pile the mushrooms on top."
+      ],
+      "notes": [
+        "Vegetarian.",
+        "Don't crowd the pan."
+      ],
+      "nutrition": {
+        "kcal": 332,
+        "proteinG": 8,
+        "carbsG": 32,
+        "fatG": 18,
+        "fibreG": 5,
+        "sodiumMg": 420
+      }
+    },
+    {
+      "id": "shakshuka-with-chickpeas",
+      "title": "Shakshuka with Chickpeas",
+      "summary": "Eggs poached in spiced tomato and capsicum sauce with chickpeas.",
+      "cuisine": "north-african",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 brown onion",
+            "1 red capsicum",
+            "3 garlic cloves",
+            "2 tsp cumin",
+            "1 tsp paprika",
+            "800g tinned tomatoes",
+            "1 tin chickpeas",
+            "6 eggs",
+            "2 tbsp olive oil",
+            "2 tbsp parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion and capsicum in the oil for 8 minutes until soft.",
+        "Add garlic and spices for 1 minute until fragrant.",
+        "Add the tomatoes and chickpeas and simmer for 10 minutes until thick.",
+        "Make wells and crack in the eggs.",
+        "Cover and cook for 6 minutes until the whites are set.",
+        "Top with chopped parsley and serve straight from the pan."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set.",
+        "Serve with bread."
+      ],
+      "nutrition": {
+        "kcal": 356,
+        "proteinG": 16,
+        "carbsG": 36,
+        "fatG": 14,
+        "fibreG": 11,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "green-smoothie-bowl-with-seeds",
+      "title": "Green Smoothie Bowl with Seeds",
+      "summary": "A thick spinach, avocado and pineapple smoothie topped with seeds.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 1,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "60g baby spinach",
+            "1/2 avocado",
+            "150g pineapple",
+            "150ml coconut milk",
+            "1 tbsp pumpkin seeds",
+            "1 tbsp sesame seeds",
+            "1 tbsp desiccated coconut"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the spinach, avocado, pineapple and coconut milk until thick and smooth.",
+        "Pour into a bowl and smooth the surface flat.",
+        "Top with the seeds and coconut."
+      ],
+      "notes": [
+        "Vegan.",
+        "Use frozen pineapple for thickness."
+      ],
+      "nutrition": {
+        "kcal": 1210,
+        "proteinG": 22,
+        "carbsG": 94,
+        "fatG": 78,
+        "fibreG": 22,
+        "sodiumMg": 90
+      }
+    },
+    {
+      "id": "potato-rosti-with-poached-egg",
+      "title": "Potato Rosti with Poached Egg",
+      "summary": "A crisp grated potato cake topped with a soft poached egg and chives.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g potatoes",
+            "1 small onion",
+            "2 tbsp butter",
+            "2 eggs",
+            "1 tbsp chives",
+            "1 tsp vinegar",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Grate the potato and onion and squeeze out the water.",
+        "Season and shape into two cakes.",
+        "Fry in the butter for 8 minutes per side until deep golden.",
+        "Poach the eggs in simmering water with the vinegar for 3 minutes.",
+        "Top the rosti with the eggs."
+      ],
+      "notes": [
+        "Food safety: poached eggs have a runny yolk, so cook until firm for vulnerable people.",
+        "Squeeze potato well for crispness."
+      ],
+      "nutrition": {
+        "kcal": 327,
+        "proteinG": 12,
+        "carbsG": 34,
+        "fatG": 15,
+        "fibreG": 4,
+        "sodiumMg": 360
+      }
+    },
+    {
+      "id": "overnight-chia-style-sesame-muesli",
+      "title": "Overnight Chia-Style Sesame Muesli",
+      "summary": "Soaked oats with sesame, apple and coconut milk, vegan and dairy-free.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100g rolled oats",
+            "200ml coconut milk",
+            "100ml water",
+            "1 apple, grated",
+            "2 tbsp sesame seeds",
+            "1 tbsp maple syrup",
+            "1 tsp cinnamon"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the oats, coconut milk, water, apple, cinnamon and syrup.",
+        "Cover and refrigerate overnight until the oats are soft.",
+        "Stir in sesame seeds and serve cold."
+      ],
+      "notes": [
+        "Vegan.",
+        "Add fruit before serving."
+      ],
+      "nutrition": {
+        "kcal": 832,
+        "proteinG": 15,
+        "carbsG": 92,
+        "fatG": 42,
+        "fibreG": 13,
+        "sodiumMg": 20
+      }
+    },
+    {
+      "id": "tzatziki-dip",
+      "title": "Tzatziki Dip",
+      "summary": "Thick yoghurt with grated cucumber, garlic, dill and lemon.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g Greek yoghurt",
+            "1 cucumber",
+            "2 garlic cloves",
+            "2 tbsp dill",
+            "1 tbsp lemon juice",
+            "1 tbsp olive oil",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Grate the cucumber and squeeze out the water until dry.",
+        "Mix with the yoghurt, garlic, dill and lemon juice until combined.",
+        "Chill for 30 minutes and drizzle with oil."
+      ],
+      "notes": [
+        "Vegetarian.",
+        "Squeeze the cucumber well."
+      ],
+      "nutrition": {
+        "kcal": 108,
+        "proteinG": 8,
+        "carbsG": 5,
+        "fatG": 6,
+        "fibreG": 1,
+        "sodiumMg": 110
+      }
+    },
+    {
+      "id": "tahini-lemon-sauce",
+      "title": "Tahini Lemon Sauce",
+      "summary": "A creamy lemon tahini sauce with garlic for falafel and roasted vegetables.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100g tahini",
+            "3 tbsp lemon juice",
+            "1 garlic clove",
+            "80ml cold water",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the tahini, lemon juice and garlic.",
+        "Add the water slowly until the sauce turns pale and smooth.",
+        "Season to taste with salt and more lemon until bright."
+      ],
+      "notes": [
+        "Vegan and dairy-free.",
+        "It seizes before it loosens, so keep whisking."
+      ],
+      "nutrition": {
+        "kcal": 134,
+        "proteinG": 4,
+        "carbsG": 2,
+        "fatG": 12,
+        "fibreG": 1,
+        "sodiumMg": 60
+      }
+    },
+    {
+      "id": "kachumber-salad",
+      "title": "Kachumber Salad",
+      "summary": "Crunchy cucumber, tomato and red onion with lemon, cumin and coriander.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cucumbers",
+            "3 tomatoes",
+            "1 red onion",
+            "2 tbsp coriander",
+            "2 tbsp lemon juice",
+            "1 tsp cumin",
+            "1 green chilli",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Dice the cucumber, tomato and onion evenly.",
+        "Toss with coriander, chilli and cumin.",
+        "Dress with lemon juice and salt until coated."
+      ],
+      "notes": [
+        "Vegan.",
+        "Serve straight away."
+      ],
+      "nutrition": {
+        "kcal": 63,
+        "proteinG": 2,
+        "carbsG": 10,
+        "fatG": 1,
+        "fibreG": 3,
+        "sodiumMg": 200
+      }
+    },
+    {
+      "id": "pesto-genovese-dairy-free",
+      "title": "Pesto Genovese Dairy-Free",
+      "summary": "A fresh basil and pine nut pesto without cheese, using nutritional yeast.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 bunches basil",
+            "40g pine nuts",
+            "2 garlic cloves",
+            "2 tbsp nutritional yeast",
+            "100ml olive oil",
+            "1 tbsp lemon juice",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the pine nuts until golden.",
+        "Blend with the basil, garlic and yeast until a coarse paste forms.",
+        "Stream in the oil and lemon juice.",
+        "Season with salt and serve straight away at room temperature."
+      ],
+      "notes": [
+        "Vegan and dairy-free.",
+        "Cover with oil to stop browning."
+      ],
+      "nutrition": {
+        "kcal": 175,
+        "proteinG": 3,
+        "carbsG": 2,
+        "fatG": 17,
+        "fibreG": 1,
+        "sodiumMg": 70
+      }
+    }
+  ]
+}

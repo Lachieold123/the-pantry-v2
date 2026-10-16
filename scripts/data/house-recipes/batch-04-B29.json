@@ -1,0 +1,743 @@
+{
+  "about": "House recipes, batch 04 (slice B): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "muc-rang-muoi-vietnamese-salt-and-chilli-squid",
+      "title": "Muc Rang Muoi Vietnamese Salt and Chilli Squid",
+      "summary": "Tender squid tossed in a hot pan with garlic, chilli and salt, crisp-edged and served with lime and rice.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 8,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g squid tubes, scored and cut into pieces",
+            "2 tbsp cornflour",
+            "4 tbsp neutral oil",
+            "6 cloves garlic, chopped",
+            "2 red chillies, sliced",
+            "3 spring onions, sliced",
+            "1 tsp salt",
+            "1 tsp sugar",
+            "1 lime, cut into wedges",
+            "1 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Pat the squid dry and toss with the cornflour.",
+        "Fry in 3 tbsp oil in a very hot pan for 2 minutes, in 2 batches, until golden and curled. Lift out.",
+        "Add the remaining oil, garlic and chillies for 30 seconds, return the squid with the salt, sugar and spring onions and toss for 30 seconds.",
+        "Serve with the lime and rice."
+      ],
+      "notes": [
+        "Food safety: cook the squid until opaque and firm, at least 63°C; do not overcook or it turns rubbery. Contains shellfish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 427,
+        "proteinG": 28,
+        "carbsG": 44,
+        "fatG": 15,
+        "fibreG": 2,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "sate-lilit-balinese-fish-skewers",
+      "title": "Sate Lilit Balinese Fish Skewers",
+      "summary": "Minced fish with coconut, lime leaf and spice paste wrapped around lemongrass sticks and grilled.",
+      "cuisine": "indonesian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g firm white fish fillets, finely minced",
+            "1/2 cup desiccated coconut",
+            "3 shallots, finely chopped",
+            "3 cloves garlic, crushed",
+            "1 tbsp grated ginger",
+            "2 red chillies, finely chopped",
+            "1 tbsp lime juice",
+            "1 tbsp palm sugar",
+            "1 tsp salt",
+            "8 lemongrass stalks, trimmed",
+            "1 tbsp neutral oil",
+            "1 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Mix the fish with the coconut, shallots, garlic, ginger, chillies, lime juice, sugar and salt, kneading for 2 minutes until sticky.",
+        "Mould a heaped spoonful around each lemongrass stalk, pressing firmly.",
+        "Brush with the oil and grill over medium-high heat for 5 minutes, turning, until golden and opaque, then serve with the rice."
+      ],
+      "notes": [
+        "Food safety: cook the fish until opaque and flaking, at least 63°C. Contains fish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 402,
+        "proteinG": 30,
+        "carbsG": 46,
+        "fatG": 10,
+        "fibreG": 4,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "bebek-goreng-indonesian-crispy-fried-duck",
+      "title": "Bebek Goreng Indonesian Crispy Fried Duck",
+      "summary": "Duck legs simmered in spiced coconut water, then fried until the skin crackles, served with sambal and rice.",
+      "cuisine": "indonesian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 120,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 duck legs, about 250g each",
+            "2 cups coconut water",
+            "4 shallots, chopped",
+            "4 cloves garlic, crushed",
+            "1 tbsp ground coriander",
+            "1 tsp ground turmeric",
+            "2 tsp salt",
+            "3 bay leaves",
+            "4 tbsp neutral oil",
+            "1/4 cup sambal oelek",
+            "1 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Put the duck, coconut water, shallots, garlic, coriander, turmeric, salt and bay in a pot, cover and simmer gently for 90 minutes until the duck is very tender.",
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Lift out the duck and pat dry thoroughly.",
+        "Fry in the oil over medium-high heat for 8 minutes, turning, until the skin is deep golden and crisp.",
+        "Serve with the sambal and rice."
+      ],
+      "notes": [
+        "Food safety: duck must reach at least 75°C; long simmering takes it well past that. Keep hot oil away from water. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 684,
+        "proteinG": 36,
+        "carbsG": 44,
+        "fatG": 40,
+        "fibreG": 2,
+        "sodiumMg": 1300
+      }
+    },
+    {
+      "id": "empal-gepuk-javanese-sweet-fried-beef",
+      "title": "Empal Gepuk Javanese Sweet Fried Beef",
+      "summary": "Beef simmered in palm sugar, coriander and galangal, flattened, then fried until crisp-edged and sweet.",
+      "cuisine": "indonesian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 100,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g beef shin, cut into large pieces",
+            "2 cups water",
+            "4 shallots, chopped",
+            "4 cloves garlic, crushed",
+            "1 tbsp ground coriander",
+            "4 slices galangal",
+            "3 tbsp palm sugar",
+            "2 tbsp sweet soy sauce",
+            "1 tsp salt",
+            "3 tbsp neutral oil",
+            "1 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Put the beef, water, shallots, garlic, coriander, galangal, sugar, soy sauce and salt in a pot, cover and simmer for 80 minutes until tender.",
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Lift out the beef, drain, and press flat with the back of a heavy pan.",
+        "Fry in the oil over medium heat for 4 minutes each side until browned and crisp at the edges.",
+        "Slice and serve with the rice."
+      ],
+      "notes": [
+        "Food safety: beef must reach at least 71°C and be tender before serving. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 534,
+        "proteinG": 40,
+        "carbsG": 52,
+        "fatG": 18,
+        "fibreG": 2,
+        "sodiumMg": 950
+      }
+    },
+    {
+      "id": "sambal-sotong-malaysian-squid-in-sambal",
+      "title": "Sambal Sotong Malaysian Squid in Sambal",
+      "summary": "Squid rings tossed in a fiery sweet-sour chilli sambal and served with rice.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g squid tubes, cut into rings",
+            "3 tbsp neutral oil",
+            "6 dried red chillies, soaked",
+            "4 shallots",
+            "3 cloves garlic",
+            "2 tomatoes, chopped",
+            "1 tbsp tamarind paste",
+            "1 tbsp palm sugar",
+            "1 tsp salt",
+            "1 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the chillies, shallots and garlic into a paste.",
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Fry the paste in the oil for 6 minutes until the oil rises, then add the tomatoes, tamarind, sugar and salt and cook for 4 minutes.",
+        "Add the squid and cook for 2 minutes only, until opaque and curled, then serve with the rice."
+      ],
+      "notes": [
+        "Food safety: cook the squid until opaque and firm, at least 63°C. Contains shellfish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 427,
+        "proteinG": 28,
+        "carbsG": 48,
+        "fatG": 13,
+        "fibreG": 3,
+        "sodiumMg": 950
+      }
+    },
+    {
+      "id": "daing-na-isda-garlic-vinegar-fried-fish",
+      "title": "Daing na Isda Garlic Vinegar Fried Fish",
+      "summary": "Fish fillets marinated in vinegar, garlic and pepper then fried until crisp, served with garlic rice.",
+      "cuisine": "filipino",
+      "mealTypes": [
+        "breakfast",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g snapper fillets",
+            "1/3 cup cane vinegar",
+            "8 cloves garlic, crushed",
+            "1 tsp black pepper",
+            "1 tsp salt",
+            "3 tbsp neutral oil",
+            "1 cup jasmine rice",
+            "2 tomatoes, sliced",
+            "1/4 cup white vinegar"
+          ]
+        }
+      ],
+      "steps": [
+        "Marinate the fish in the cane vinegar, half the garlic, pepper and salt.",
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Fry the fish in 2 tbsp oil for 4 minutes each side until crisp and opaque.",
+        "Fry the remaining garlic in the last tbsp of oil until golden and stir through the rice.",
+        "Serve the fish with the garlic rice, tomato and white vinegar for dipping."
+      ],
+      "notes": [
+        "Food safety: cook the fish until opaque and flaking, at least 63°C. Contains fish. Refrigerate leftovers within 1 hour.",
+        "Plus 30 minutes marinating."
+      ],
+      "nutrition": {
+        "kcal": 449,
+        "proteinG": 32,
+        "carbsG": 50,
+        "fatG": 13,
+        "fibreG": 2,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "tokwa-t-baboy-filipino-tofu-and-pork",
+      "title": "Tokwa't Baboy Filipino Tofu and Pork",
+      "summary": "Fried tofu and tender pork tossed in a sharp soy, vinegar and onion dressing, served with rice.",
+      "cuisine": "filipino",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g pork shoulder, cut into 3cm pieces",
+            "400g firm tofu, cubed",
+            "1/3 cup cane vinegar",
+            "1/3 cup soy sauce",
+            "2 onions, thinly sliced",
+            "2 red chillies, sliced",
+            "3 tbsp neutral oil",
+            "1 tsp black pepper",
+            "1 cup jasmine rice",
+            "3 cups water"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the pork in the water until tender, about 25 minutes, then drain and pat dry.",
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Fry the tofu in 2 tbsp oil for 8 minutes until golden on all sides, then lift out.",
+        "Fry the pork in the remaining oil for 5 minutes until browned.",
+        "Mix the vinegar, soy sauce, onions, chillies and pepper, toss through the tofu and pork, and serve with the rice."
+      ],
+      "notes": [
+        "Food safety: pork must reach at least 70°C; simmered until tender it will. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 532,
+        "proteinG": 34,
+        "carbsG": 48,
+        "fatG": 22,
+        "fibreG": 3,
+        "sodiumMg": 1250
+      }
+    },
+    {
+      "id": "ayam-goreng-kalasan-javanese-sweet-fried-chicken",
+      "title": "Ayam Goreng Kalasan Javanese Sweet Fried Chicken",
+      "summary": "Chicken simmered in coconut water and palm sugar, then fried until golden, a Yogyakarta classic.",
+      "cuisine": "indonesian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 65,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g chicken thigh, bone in",
+            "2 cups coconut water",
+            "4 shallots, chopped",
+            "4 cloves garlic, crushed",
+            "1 tbsp ground coriander",
+            "1 tsp ground turmeric",
+            "2 tbsp palm sugar",
+            "2 bay leaves",
+            "1 tsp salt",
+            "4 tbsp neutral oil",
+            "1 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the chicken with the coconut water, shallots, garlic, coriander, turmeric, sugar, bay and salt for 35 minutes until tender and the liquid has nearly gone.",
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Drain the chicken, reserving any remaining paste.",
+        "Fry in the oil over medium heat for 8 minutes, turning, until deep golden.",
+        "Serve with the rice and the reserved paste."
+      ],
+      "notes": [
+        "Food safety: chicken must reach at least 75°C at the thickest part. Keep hot oil away from water. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 592,
+        "proteinG": 36,
+        "carbsG": 48,
+        "fatG": 28,
+        "fibreG": 2,
+        "sodiumMg": 850
+      }
+    },
+    {
+      "id": "ga-nuong-sa-vietnamese-lemongrass-grilled-chicken",
+      "title": "Ga Nuong Sa Vietnamese Lemongrass Grilled Chicken",
+      "summary": "Chicken thighs marinated in lemongrass, garlic and fish sauce, grilled until sticky, served with rice and pickles.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g boneless chicken thigh",
+            "3 stalks lemongrass, finely chopped",
+            "5 cloves garlic, crushed",
+            "2 tbsp fish sauce",
+            "1 tbsp sugar",
+            "1 tbsp honey",
+            "1 tbsp neutral oil",
+            "1 cup jasmine rice",
+            "1 cucumber, sliced",
+            "1 carrot, grated",
+            "2 tbsp rice vinegar"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the lemongrass, garlic, fish sauce, sugar, honey and oil, and coat the chicken.",
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Toss the carrot with the vinegar for quick pickles.",
+        "Grill the chicken over medium-high heat for 8 minutes each side, until charred in spots and cooked through.",
+        "Slice and serve with the rice, cucumber and pickles."
+      ],
+      "notes": [
+        "Food safety: chicken must reach at least 75°C at the thickest part. Refrigerate leftovers within 1 hour.",
+        "Plus 1 hour marinating."
+      ],
+      "nutrition": {
+        "kcal": 530,
+        "proteinG": 40,
+        "carbsG": 46,
+        "fatG": 20,
+        "fibreG": 3,
+        "sodiumMg": 850
+      }
+    },
+    {
+      "id": "singapore-black-pepper-prawns",
+      "title": "Singapore Black Pepper Prawns",
+      "summary": "Prawns tossed in a hot buttery sauce with cracked black pepper, garlic and oyster sauce.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g raw king prawns, shells on",
+            "2 tbsp butter",
+            "1 tbsp neutral oil",
+            "6 cloves garlic, chopped",
+            "1 tbsp black peppercorns, crushed",
+            "2 tbsp oyster sauce",
+            "1 tbsp soy sauce",
+            "1 tbsp sugar",
+            "3 spring onions, sliced",
+            "1 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Heat the oil and butter in a wok over high heat, add the prawns and cook for 3 minutes until pink.",
+        "Add the garlic and pepper for 30 seconds until fragrant.",
+        "Add the oyster sauce, soy sauce and sugar and toss for 1 minute until glossy.",
+        "Scatter with the spring onions and serve with the rice."
+      ],
+      "notes": [
+        "Food safety: cook the prawns until pink and opaque, at least 63°C. Contains shellfish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 424,
+        "proteinG": 32,
+        "carbsG": 46,
+        "fatG": 12,
+        "fibreG": 2,
+        "sodiumMg": 1250
+      }
+    },
+    {
+      "id": "sai-oua-lao-herb-pork-patties",
+      "title": "Sai Oua Lao Herb Pork Patties",
+      "summary": "Lao herb sausage mixture shaped into patties with lemongrass, galangal and chilli, served with sticky rice.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g pork mince",
+            "2 stalks lemongrass, finely chopped",
+            "3 slices galangal, finely chopped",
+            "4 cloves garlic, crushed",
+            "3 red chillies, chopped",
+            "3 shallots, chopped",
+            "2 tbsp fish sauce",
+            "1/4 cup dill, chopped",
+            "1 tbsp neutral oil",
+            "1 cup glutinous rice",
+            "1 cucumber, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the pork with the lemongrass, galangal, garlic, chillies, shallots, fish sauce and dill, kneading for 2 minutes until sticky.",
+        "Steam the rice, soaked beforehand, for 25 minutes until tender and sticky.",
+        "Shape into 8 flat patties.",
+        "Pan-fry in the oil over medium heat for 6 minutes each side until browned and cooked through.",
+        "Serve with the sticky rice and cucumber."
+      ],
+      "notes": [
+        "Food safety: pork mince must be cooked through to at least 75°C. Refrigerate leftovers within 1 hour.",
+        "Plus 4 hours soaking the rice."
+      ],
+      "nutrition": {
+        "kcal": 542,
+        "proteinG": 30,
+        "carbsG": 46,
+        "fatG": 26,
+        "fibreG": 2,
+        "sodiumMg": 1000
+      }
+    },
+    {
+      "id": "mok-pa-lao-steamed-fish-parcels",
+      "title": "Mok Pa Lao Steamed Fish Parcels",
+      "summary": "Fish mixed with dill, lemongrass and coconut cream, steamed in parcels until soft and set.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g white fish fillets, roughly chopped",
+            "1/2 cup coconut cream",
+            "1 cup dill, chopped",
+            "2 stalks lemongrass, finely chopped",
+            "3 spring onions, sliced",
+            "2 red chillies, chopped",
+            "2 tbsp fish sauce",
+            "2 tbsp rice flour",
+            "1 cup glutinous rice",
+            "100g lettuce leaves"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the fish with the coconut cream, dill, lemongrass, spring onions, chillies, fish sauce and rice flour.",
+        "Steam the rice, soaked beforehand, for 25 minutes until tender and sticky.",
+        "Divide the mixture among 4 squares of baking paper, fold into sealed parcels and steam over boiling water for 18 minutes until set.",
+        "Open the parcels and serve with the sticky rice and lettuce."
+      ],
+      "notes": [
+        "Food safety: cook the fish until set and flaking, at least 63°C. Contains fish. Refrigerate leftovers within 1 hour.",
+        "Plus 4 hours soaking the rice."
+      ],
+      "nutrition": {
+        "kcal": 418,
+        "proteinG": 30,
+        "carbsG": 46,
+        "fatG": 12,
+        "fibreG": 3,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "kahuku-style-garlic-prawns-with-rice-and-mac-salad",
+      "title": "Kahuku Style Garlic Prawns with Rice and Mac Salad",
+      "summary": "Shell-on prawns sautéed in lots of garlic butter with lemon, served with rice and macaroni salad.",
+      "cuisine": "pacific-islands",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g raw king prawns, shells on",
+            "3 tbsp butter",
+            "10 cloves garlic, crushed",
+            "1 tbsp neutral oil",
+            "2 tbsp cornflour",
+            "1 lemon, juiced",
+            "1 tsp paprika",
+            "1 tsp salt",
+            "1 cup jasmine rice",
+            "2 cups cooked macaroni",
+            "1/3 cup mayonnaise"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Toss the macaroni with the mayonnaise and a pinch of salt.",
+        "Toss the prawns with the cornflour, paprika and salt, and fry in the oil over high heat for 3 minutes until pink and crisp.",
+        "Add the butter and garlic for 1 minute until fragrant, then finish with the lemon juice.",
+        "Serve with the rice and macaroni."
+      ],
+      "notes": [
+        "Food safety: cook the prawns until pink and opaque, at least 63°C. Contains shellfish, egg and gluten. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 630,
+        "proteinG": 36,
+        "carbsG": 66,
+        "fatG": 24,
+        "fibreG": 3,
+        "sodiumMg": 1200
+      }
+    },
+    {
+      "id": "ghanaian-grilled-snapper-with-pepper-sauce",
+      "title": "Ghanaian Grilled Snapper with Pepper Sauce",
+      "summary": "Whole snapper rubbed with ginger and chilli, grilled until crisp, with a fresh tomato and pepper sauce.",
+      "cuisine": "west-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 whole snapper, about 600g each, scaled and gutted",
+            "1 tbsp grated ginger",
+            "4 cloves garlic, crushed",
+            "1 tsp chilli powder",
+            "1 tsp salt",
+            "2 tbsp neutral oil",
+            "4 tomatoes, chopped",
+            "2 red chillies",
+            "1 onion, chopped",
+            "1 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Slash the fish on both sides and rub with the ginger, garlic, chilli powder, salt and 1 tbsp oil.",
+        "Cook the rice until tender and fluffy, about 15 minutes.",
+        "Grill or roast the fish at 220C for 22 minutes, turning once, until the skin is crisp and the flesh opaque.",
+        "Blend the tomatoes, chillies and onion, then simmer in the remaining oil for 8 minutes until thick.",
+        "Serve the fish with the sauce and rice."
+      ],
+      "notes": [
+        "Food safety: cook the fish until opaque and flaking, at least 63°C. Contains fish. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 449,
+        "proteinG": 40,
+        "carbsG": 46,
+        "fatG": 11,
+        "fibreG": 3,
+        "sodiumMg": 800
+      }
+    }
+  ]
+}

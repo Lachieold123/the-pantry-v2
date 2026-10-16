@@ -1,0 +1,1385 @@
+{
+ "about": "House recipes, batch 04 (helper sA): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+ "recipes": [
+  {
+   "id": "peposo-tuscan-slow-cooked-black-pepper-beef",
+   "title": "Peposo (Tuscan Slow-Cooked Black Pepper Beef)",
+   "summary": "A Tuscan beef braise driven by a lot of black pepper, red wine and tomato, cooked until spoon tender.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 150,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g beef chuck, cut into large chunks",
+      "1 tbsp olive oil",
+      "6 clove garlic, peeled",
+      "1 tbsp cracked black pepper",
+      "1 tbsp tomato paste",
+      "1.5 cup red wine",
+      "1 cup beef stock",
+      "2 sprig rosemary",
+      "600g potato, cut into chunks"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 160°C (140°C fan). Brown the beef in the oil in a heavy pot for 8 minutes, in batches.",
+    "Return all the beef, add the garlic, pepper, tomato paste, wine, stock, rosemary and 1 tsp salt. Bring to a simmer, until bubbling gently.",
+    "Cover and braise for 2 hours, until the beef is very tender. Add the potato for the last 40 minutes.",
+    "Rest for 10 minutes and serve with the pan juices."
+   ],
+   "notes": [
+    "Food safety: braised beef is safe once it reaches at least 70°C and is tender. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 454,
+    "proteinG": 40,
+    "carbsG": 24,
+    "fatG": 22,
+    "fibreG": 3,
+    "sodiumMg": 700
+   }
+  },
+  {
+   "id": "polpettone-italian-baked-meatloaf-with-peas-and-tomato",
+   "title": "Polpettone (Italian Baked Meatloaf with Peas and Tomato)",
+   "summary": "A baked Italian meatloaf of beef and pork with parsley and cheese, finished in tomato sauce with peas.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 55,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "400g beef mince",
+      "200g pork mince",
+      "1 egg",
+      "1/2 cup breadcrumbs",
+      "1/2 cup grated vegetarian hard cheese",
+      "1/4 cup chopped parsley",
+      "2 clove garlic, crushed",
+      "1 tsp dried oregano",
+      "400g canned diced tomatoes",
+      "1 cup frozen peas"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 180°C (160°C fan). Mix the minces, egg, breadcrumbs, cheese, parsley, garlic, oregano and 1 tsp salt and shape into a loaf in a baking dish.",
+    "Pour the tomatoes around the loaf. Bake for 45 minutes.",
+    "Scatter in the peas, bake 10 minutes more, until the loaf reaches 75°C in the centre.",
+    "Rest 10 minutes, slice and spoon over the sauce."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains egg, milk and gluten."
+   ],
+   "nutrition": {
+    "kcal": 416,
+    "proteinG": 34,
+    "carbsG": 16,
+    "fatG": 24,
+    "fibreG": 4,
+    "sodiumMg": 800
+   }
+  },
+  {
+   "id": "maiale-al-latte-pork-slow-cooked-in-milk-and-sage",
+   "title": "Maiale al Latte (Pork Slow-Cooked in Milk and Sage)",
+   "summary": "A Bolognese braise where pork shoulder cooks gently in milk until the sauce turns nutty and thick.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 120,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g pork shoulder, in one piece",
+      "1 tbsp olive oil",
+      "20g butter",
+      "4 clove garlic, bruised",
+      "6 sage leaf",
+      "3 cup milk",
+      "1 lemon, zest in strips",
+      "400g potato, cut into chunks"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the pork all over in the oil and butter in a heavy pot for 10 minutes. Add the garlic, sage, lemon zest, 1 tsp salt and the milk.",
+    "Simmer, partly covered, on low for 1 hour 45 minutes, turning the pork now and then, until the milk has reduced to a thick golden sauce and the pork is very tender. Add the potato for the last 30 minutes.",
+    "Slice the pork and serve with the sauce spooned over."
+   ],
+   "notes": [
+    "Food safety: pork must reach at least 70°C in the centre, with clear juices, and rest before serving. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains milk. The sauce looks curdled; it is meant to."
+   ],
+   "nutrition": {
+    "kcal": 499,
+    "proteinG": 40,
+    "carbsG": 24,
+    "fatG": 27,
+    "fibreG": 2,
+    "sodiumMg": 650
+   }
+  },
+  {
+   "id": "spezzatino-di-manzo-con-piselli-italian-beef-and-pea-stew",
+   "title": "Spezzatino di Manzo con Piselli (Italian Beef and Pea Stew)",
+   "summary": "A gentle Italian beef stew with tomato, carrot and sweet peas, good with soft polenta.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 120,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "700g beef chuck, diced",
+      "1 tbsp olive oil",
+      "1 brown onion, diced",
+      "2 carrot, diced",
+      "2 stick celery, diced",
+      "2 tbsp tomato paste",
+      "1/2 cup red wine",
+      "2 cup beef stock",
+      "1 cup frozen peas",
+      "1 cup polenta"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the beef in the oil for 8 minutes. Lift out, then cook the onion, carrot and celery for 8 minutes.",
+    "Stir in the tomato paste, then the wine and stock. Return the beef, cover and simmer for 1 hour 45 minutes, until tender. Stir in the peas for the last 5 minutes.",
+    "Cook the polenta in 4 cups of salted water for 10 minutes, stirring, until thick. Serve the stew over the polenta."
+   ],
+   "notes": [
+    "Food safety: braised beef is safe once it reaches at least 70°C and is tender. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 456,
+    "proteinG": 38,
+    "carbsG": 40,
+    "fatG": 16,
+    "fibreG": 6,
+    "sodiumMg": 750
+   }
+  },
+  {
+   "id": "poule-au-pot-french-poached-chicken-with-winter-vegetables",
+   "title": "Poule au Pot (French Poached Chicken with Winter Vegetables)",
+   "summary": "Henri IV's Sunday chicken, gently poached with leek, carrot and swede in its own broth.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 90,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.5kg whole chicken",
+      "2 leek, cut into chunks",
+      "3 carrot, cut into chunks",
+      "1 swede, cut into chunks",
+      "1 brown onion, halved",
+      "2 bay leaf",
+      "6 black peppercorn",
+      "1 tbsp wholegrain mustard",
+      "1/4 cup chopped parsley"
+     ]
+    }
+   ],
+   "steps": [
+    "Put the chicken, onion, bay leaves, peppercorns and 2 tsp salt in a large pot and cover with cold water. Bring to a gentle simmer and cook for 40 minutes, skimming.",
+    "Add the carrot, swede and leek and simmer for 30 minutes, until the chicken reaches 75°C at the thigh and the vegetables are tender.",
+    "Carve the chicken, serve with vegetables and a ladle of broth, with the mustard and parsley."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part with no pink juices. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free and gluten-free. Keep the broth for soup."
+   ],
+   "nutrition": {
+    "kcal": 344,
+    "proteinG": 38,
+    "carbsG": 12,
+    "fatG": 16,
+    "fibreG": 5,
+    "sodiumMg": 750
+   }
+  },
+  {
+   "id": "tian-provencal-baked-provencal-vegetable-gratin",
+   "title": "Tian Provencal (Baked Provencal Vegetable Gratin)",
+   "summary": "Slices of zucchini, eggplant, tomato and potato layered upright and baked with thyme and olive oil.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 25,
+   "cookMinutes": 55,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 zucchini, sliced",
+      "1 eggplant, sliced",
+      "4 tomato, sliced",
+      "400g waxy potato, sliced thin",
+      "1 brown onion, sliced",
+      "3 clove garlic, sliced",
+      "1/4 cup olive oil",
+      "1 tbsp thyme",
+      "1/2 cup grated vegetarian hard cheese",
+      "1 cup cooked puy-style brown lentil"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 190°C (170°C fan). Soften the onion and garlic in 1 tbsp oil for 6 minutes and spread over a baking dish with the lentils.",
+    "Stand the sliced vegetables in rows over the top, drizzle with the remaining oil, thyme, 1 tsp salt and pepper.",
+    "Cover and bake for 35 minutes. Uncover, add the cheese and bake 15 minutes more, until golden and the potato is tender."
+   ],
+   "notes": [
+    "Vegetarian. Contains milk."
+   ],
+   "nutrition": {
+    "kcal": 356,
+    "proteinG": 15,
+    "carbsG": 38,
+    "fatG": 16,
+    "fibreG": 9,
+    "sodiumMg": 500
+   }
+  },
+  {
+   "id": "soupe-au-pistou-provencal-vegetable-and-white-bean-soup",
+   "title": "Soupe au Pistou (Provencal Vegetable and White Bean Soup)",
+   "summary": "A summer vegetable and bean soup finished with a basil, garlic and cheese pistou stirred through.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 brown onion, diced",
+      "2 tbsp olive oil",
+      "2 carrot, diced",
+      "2 zucchini, diced",
+      "300g potato, diced",
+      "400g canned cannellini bean, drained",
+      "1.5L vegetable stock",
+      "1/2 cup small pasta",
+      "1 cup basil leaves",
+      "2 clove garlic",
+      "1/3 cup grated vegetarian hard cheese"
+     ]
+    }
+   ],
+   "steps": [
+    "Soften the onion in 1 tbsp oil for 5 minutes, then add the carrot, zucchini, potato, beans and stock. Simmer for 20 minutes.",
+    "Add the pasta and cook for 8 minutes, until tender.",
+    "Crush or blitz the basil, garlic, cheese and remaining oil with a pinch of salt into a paste. Stir through the soup off the heat."
+   ],
+   "notes": [
+    "Vegetarian. Contains milk and gluten."
+   ],
+   "nutrition": {
+    "kcal": 382,
+    "proteinG": 16,
+    "carbsG": 48,
+    "fatG": 14,
+    "fibreG": 12,
+    "sodiumMg": 900
+   }
+  },
+  {
+   "id": "gigot-d-agneau-aux-anchois-french-roast-leg-of-lamb-with-anchovy-and-garlic",
+   "title": "Gigot d'Agneau aux Anchois (French Roast Leg of Lamb with Anchovy and Garlic)",
+   "summary": "A leg of lamb studded with garlic, rosemary and anchovy, roasted until pink and rested well.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 90,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.8kg lamb leg",
+      "6 clove garlic, sliced",
+      "4 anchovy",
+      "2 sprig rosemary",
+      "2 tbsp olive oil",
+      "800g potato, cut into chunks",
+      "1 cup white wine",
+      "1 cup chicken stock"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Cut small slits in the lamb and push in the garlic, anchovy and rosemary. Rub with the oil and 1 tsp salt.",
+    "Roast on a bed of potato for 20 minutes, then reduce to 170°C (150°C fan) and roast for 1 hour 10 minutes, until a thermometer reads 60°C for medium.",
+    "Rest the lamb for 20 minutes. Simmer the wine and stock in the tin for 8 minutes to a sauce. Carve and serve."
+   ],
+   "notes": [
+    "Food safety: lamb pieces are safe once they reach at least 70°C and are tender; whole cuts are safe at 63°C with a 3 minute rest. Refrigerate leftovers within an hour and reheat until steaming hot. Contains fish (anchovy).",
+    "Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 422,
+    "proteinG": 43,
+    "carbsG": 22,
+    "fatG": 18,
+    "fibreG": 2,
+    "sodiumMg": 700
+   }
+  },
+  {
+   "id": "cuisses-de-canard-aux-lentilles-roast-duck-legs-with-lentils",
+   "title": "Cuisses de Canard aux Lentilles (Roast Duck Legs with Lentils)",
+   "summary": "Crisp roasted duck legs on a bed of lentils cooked with carrot, thyme and white wine.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 80,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 duck leg",
+      "1 cup brown lentil",
+      "1 brown onion, diced",
+      "2 carrot, diced",
+      "2 clove garlic, crushed",
+      "1 cup white wine",
+      "2 cup chicken stock",
+      "1 tsp thyme",
+      "1 tbsp dijon mustard"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Salt the duck legs, set on a rack and roast for 70 minutes, until the skin is crisp and the meat tender.",
+    "Meanwhile, cook the onion, carrot and garlic in 1 tbsp duck fat from the tray for 6 minutes. Add the lentils, wine, stock and thyme and simmer for 30 minutes, until tender. Stir in the mustard.",
+    "Serve the duck on the lentils."
+   ],
+   "notes": [
+    "Food safety: duck must reach 75°C in the thickest part with clear juices. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 610,
+    "proteinG": 42,
+    "carbsG": 34,
+    "fatG": 34,
+    "fibreG": 9,
+    "sodiumMg": 700
+   }
+  },
+  {
+   "id": "baeckeoffe-alsatian-baker-s-oven-casserole",
+   "title": "Baeckeoffe (Alsatian Baker's Oven Casserole)",
+   "summary": "Three meats layered with potato, leek and onion and baked slowly in white wine, the classic Alsatian Sunday pot.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 150,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g lamb shoulder, diced",
+      "400g pork shoulder, diced",
+      "400g beef chuck, diced",
+      "1kg potato, sliced",
+      "2 leek, sliced",
+      "2 carrot, sliced",
+      "1 brown onion, sliced",
+      "3 clove garlic, crushed",
+      "2 cup white wine",
+      "2 bay leaf",
+      "1 tsp thyme"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 160°C (140°C fan). Season all the meat with 2 tsp salt, pepper and the garlic.",
+    "Layer half the potato, then the vegetables, then the meat, then the rest of the vegetables and potato in a lidded casserole, adding the bay and thyme.",
+    "Pour in the wine and 1 cup water. Cover and bake for 2 hours 30 minutes, until the meat is tender."
+   ],
+   "notes": [
+    "Food safety: pork must reach at least 70°C in the centre, with clear juices, and rest before serving. Refrigerate leftovers within an hour and reheat until steaming hot. Beef and lamb must be tender and above 70°C.",
+    "Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 496,
+    "proteinG": 40,
+    "carbsG": 30,
+    "fatG": 24,
+    "fibreG": 5,
+    "sodiumMg": 700
+   }
+  },
+  {
+   "id": "steak-frites-bistro-pan-seared-steak-with-oven-chips-and-pepper-butter",
+   "title": "Steak Frites (Bistro Pan-Seared Steak with Oven Chips and Pepper Butter)",
+   "summary": "The bistro classic: a well-rested seared steak with crisp oven chips and a quick pepper butter.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 beef sirloin steak",
+      "800g potato, cut into chips",
+      "2 tbsp olive oil",
+      "60g butter, softened",
+      "1 tsp cracked black pepper",
+      "1 tbsp chopped parsley",
+      "1 clove garlic, crushed",
+      "100g rocket"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Toss the chips with the oil and 1 tsp salt and bake for 35 minutes, turning once, until golden.",
+    "Mash the butter with the pepper, parsley and garlic.",
+    "Pat the steaks dry and sear in a very hot pan for 3 to 4 minutes a side for medium. Rest 5 minutes.",
+    "Top the steaks with the butter and serve with the chips and rocket."
+   ],
+   "notes": [
+    "Food safety: sear steak on the outside; whole steaks are safe at 63°C with a rest, and any pieces must be cooked through if cut or minced. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains milk."
+   ],
+   "nutrition": {
+    "kcal": 652,
+    "proteinG": 44,
+    "carbsG": 38,
+    "fatG": 36,
+    "fibreG": 4,
+    "sodiumMg": 500
+   }
+  },
+  {
+   "id": "gratin-de-courgettes-french-zucchini-and-egg-gratin",
+   "title": "Gratin de Courgettes (French Zucchini and Egg Gratin)",
+   "summary": "A custardy zucchini gratin baked with onion, thyme and cheese, a light bistro main with a salad.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g zucchini, sliced",
+      "1 brown onion, sliced",
+      "1 tbsp olive oil",
+      "4 egg",
+      "3/4 cup thickened cream",
+      "3/4 cup grated vegetarian hard cheese",
+      "1 tsp thyme",
+      "1/2 cup breadcrumbs"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 190°C (170°C fan). Cook the onion in the oil for 5 minutes, add the zucchini and cook for 8 minutes, until just soft.",
+    "Whisk the eggs, cream, half the cheese, thyme and 1/2 tsp salt. Fold in the zucchini and pour into a baking dish.",
+    "Top with the breadcrumbs and remaining cheese. Bake for 25 minutes, until set and golden."
+   ],
+   "notes": [
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Vegetarian. Contains egg, milk and gluten."
+   ],
+   "nutrition": {
+    "kcal": 370,
+    "proteinG": 18,
+    "carbsG": 16,
+    "fatG": 26,
+    "fibreG": 3,
+    "sodiumMg": 500
+   }
+  },
+  {
+   "id": "lancashire-hotpot-lamb-and-potato-pot",
+   "title": "Lancashire Hotpot (Lamb and Potato Pot)",
+   "summary": "Lamb and onion in a rich stock beneath overlapping golden potato slices, a northern English classic.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 25,
+   "cookMinutes": 150,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "800g lamb shoulder, diced",
+      "2 brown onion, sliced",
+      "2 carrot, sliced",
+      "1 tbsp plain flour",
+      "2 cup beef stock",
+      "1 tbsp worcestershire sauce",
+      "2 sprig thyme",
+      "800g potato, sliced thin",
+      "30g butter, melted"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 160°C (140°C fan). Toss the lamb with the flour and layer in a casserole with the onion and carrot.",
+    "Pour over the stock and worcestershire sauce, add the thyme and 1 tsp salt. Lay the potato in overlapping rows on top and brush with the butter.",
+    "Cover and bake for 2 hours. Uncover and bake 25 minutes, until the potato is golden and the lamb tender."
+   ],
+   "notes": [
+    "Food safety: lamb pieces are safe once they reach at least 70°C and are tender; whole cuts are safe at 63°C with a 3 minute rest. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains milk and gluten."
+   ],
+   "nutrition": {
+    "kcal": 462,
+    "proteinG": 34,
+    "carbsG": 32,
+    "fatG": 22,
+    "fibreG": 5,
+    "sodiumMg": 700
+   }
+  },
+  {
+   "id": "cornish-pasty-beef-potato-and-swede-in-short-pastry",
+   "title": "Cornish Pasty (Beef, Potato and Swede in Short Pastry)",
+   "summary": "A hand-sized pasty of beef, potato, swede and onion baked in a sturdy pastry crust.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 35,
+   "cookMinutes": 55,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "3 cup plain flour",
+      "150g butter, cold and diced",
+      "300g beef chuck, finely diced",
+      "250g potato, diced",
+      "150g swede, diced",
+      "1 brown onion, diced",
+      "1 egg, beaten"
+     ]
+    }
+   ],
+   "steps": [
+    "Rub the butter into the flour with 1 tsp salt, add about 1/3 cup cold water to make a firm dough and rest it while you prep the filling.",
+    "Heat the oven to 200°C (180°C fan). Mix the beef, potato, swede, onion, 1 tsp salt and pepper. Roll the dough and cut four 20cm rounds.",
+    "Pile filling onto each, fold over and crimp the edge. Brush with the egg.",
+    "Bake for 15 minutes, then at 170°C (150°C fan) for 40 minutes, until golden and the beef is cooked through."
+   ],
+   "notes": [
+    "Food safety: braised beef is safe once it reaches at least 70°C and is tender. Refrigerate leftovers within an hour and reheat until steaming hot. Pasties must be steaming hot throughout.",
+    "Contains egg, milk and gluten."
+   ],
+   "nutrition": {
+    "kcal": 644,
+    "proteinG": 24,
+    "carbsG": 56,
+    "fatG": 36,
+    "fibreG": 5,
+    "sodiumMg": 650
+   }
+  },
+  {
+   "id": "cawl-welsh-lamb-and-root-vegetable-broth",
+   "title": "Cawl (Welsh Lamb and Root Vegetable Broth)",
+   "summary": "A Welsh lamb and root vegetable broth, thick with leek and potato, traditionally eaten from a bowl with bread.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 100,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "700g lamb shoulder, diced",
+      "1 brown onion, diced",
+      "3 carrot, diced",
+      "1 swede, diced",
+      "500g potato, diced",
+      "2 leek, sliced",
+      "1.5L beef stock",
+      "2 sprig thyme",
+      "2 tbsp chopped parsley"
+     ]
+    }
+   ],
+   "steps": [
+    "Put the lamb, onion, stock, thyme and 1 tsp salt in a pot, bring to a simmer and cook gently for 1 hour, skimming.",
+    "Add the carrot, swede and potato and simmer for 25 minutes. Add the leek and cook 10 minutes more, until the lamb is tender.",
+    "Stir in the parsley and serve with bread."
+   ],
+   "notes": [
+    "Food safety: lamb pieces are safe once they reach at least 70°C and are tender; whole cuts are safe at 63°C with a 3 minute rest. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 326,
+    "proteinG": 26,
+    "carbsG": 24,
+    "fatG": 14,
+    "fibreG": 6,
+    "sodiumMg": 650
+   }
+  },
+  {
+   "id": "beef-and-ale-casserole-with-herb-dumplings",
+   "title": "Beef and Ale Casserole with Herb Dumplings",
+   "summary": "A deep brown beef and dark beer casserole with fluffy herb dumplings steamed on top.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 25,
+   "cookMinutes": 150,
+   "servings": 6,
+   "onePot": true,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "900g beef chuck, diced",
+      "1 tbsp vegetable oil",
+      "2 brown onion, sliced",
+      "3 carrot, sliced",
+      "2 tbsp plain flour",
+      "1.5 cup dark beer",
+      "2 cup beef stock",
+      "1 tbsp tomato paste",
+      "1 cup self-raising flour",
+      "50g butter, cold",
+      "1 tbsp thyme"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 160°C (140°C fan). Brown the beef in the oil in batches. Add the onion and carrot and cook for 6 minutes, stir in the plain flour and tomato paste, then the beer and stock.",
+    "Cover and cook in the oven for 2 hours, until tender.",
+    "Rub the butter into the self-raising flour with the thyme and 1/2 tsp salt, add 1/3 cup cold water and form 6 dumplings.",
+    "Set on top of the casserole, cover and cook for 20 minutes, until puffed."
+   ],
+   "notes": [
+    "Food safety: braised beef is safe once it reaches at least 70°C and is tender. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains gluten and milk. Beer is cooked off but not fully removed."
+   ],
+   "nutrition": {
+    "kcal": 478,
+    "proteinG": 36,
+    "carbsG": 34,
+    "fatG": 22,
+    "fibreG": 4,
+    "sodiumMg": 650
+   }
+  },
+  {
+   "id": "leek-and-potato-gratin-with-wholegrain-mustard",
+   "title": "Leek and Potato Gratin with Wholegrain Mustard",
+   "summary": "A creamy baked leek and potato gratin with mustard and a golden cheese crust, good as a vegetarian main with greens.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 60,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g waxy potato, sliced thin",
+      "3 leek, sliced",
+      "1 cup thickened cream",
+      "1 cup milk",
+      "1 tbsp wholegrain mustard",
+      "1 clove garlic, crushed",
+      "3/4 cup grated vegetarian hard cheese",
+      "2 cup baby spinach"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 180°C (160°C fan). Warm the cream, milk, mustard, garlic and 1 tsp salt together.",
+    "Layer the potato, leek and spinach in a baking dish, pouring over the creamy mix as you go. Top with the cheese.",
+    "Cover and bake for 40 minutes, uncover and bake 20 minutes more, until the potato is tender and golden."
+   ],
+   "notes": [
+    "Vegetarian. Contains milk."
+   ],
+   "nutrition": {
+    "kcal": 482,
+    "proteinG": 15,
+    "carbsG": 38,
+    "fatG": 30,
+    "fibreG": 5,
+    "sodiumMg": 550
+   }
+  },
+  {
+   "id": "lentejas-con-chorizo-spanish-lentil-and-chorizo-stew",
+   "title": "Lentejas con Chorizo (Spanish Lentil and Chorizo Stew)",
+   "summary": "A homely Spanish lentil pot with chorizo, potato, carrot and smoked paprika.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 45,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.5 cup brown lentil",
+      "150g chorizo, sliced",
+      "1 brown onion, diced",
+      "1 carrot, diced",
+      "1 green capsicum, diced",
+      "300g potato, diced",
+      "2 clove garlic, crushed",
+      "1 tsp smoked paprika",
+      "1 bay leaf",
+      "1L chicken stock"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the chorizo in a pot for 4 minutes, until it releases its oil. Add the onion, carrot, capsicum and garlic and cook for 6 minutes.",
+    "Add the paprika, lentils, bay leaf, potato and stock. Simmer for 30 minutes, until the lentils are tender and the stew thickened.",
+    "Season with salt and serve with bread."
+   ],
+   "notes": [
+    "Food safety: sausage and cured meats must be steaming hot, reaching at least 75°C. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 512,
+    "proteinG": 30,
+    "carbsG": 62,
+    "fatG": 16,
+    "fibreG": 17,
+    "sodiumMg": 1100
+   }
+  },
+  {
+   "id": "caldereta-de-cordero-spanish-lamb-stew-with-peppers-and-wine",
+   "title": "Caldereta de Cordero (Spanish Lamb Stew with Peppers and Wine)",
+   "summary": "A Spanish shepherd's lamb stew with capsicum, garlic, paprika and white wine.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 100,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g lamb shoulder, diced",
+      "2 tbsp olive oil",
+      "1 brown onion, diced",
+      "1 red capsicum, sliced",
+      "4 clove garlic, crushed",
+      "1 tsp smoked paprika",
+      "1 cup white wine",
+      "400g canned diced tomatoes",
+      "2 bay leaf",
+      "500g potato, cut into chunks"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the lamb in the oil in batches, 8 minutes. Cook the onion, capsicum and garlic in the same pot for 6 minutes. Stir in the paprika.",
+    "Add the wine, tomatoes, bay and 1 tsp salt and return the lamb. Cover and simmer gently for 1 hour.",
+    "Add the potato and simmer 30 minutes more, until the lamb and potato are tender."
+   ],
+   "notes": [
+    "Food safety: lamb pieces are safe once they reach at least 70°C and are tender; whole cuts are safe at 63°C with a 3 minute rest. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 490,
+    "proteinG": 38,
+    "carbsG": 26,
+    "fatG": 26,
+    "fibreG": 5,
+    "sodiumMg": 700
+   }
+  },
+  {
+   "id": "kavurma-turkish-slow-fried-lamb-with-tomato-and-peppers",
+   "title": "Kavurma (Turkish Slow-Fried Lamb with Tomato and Peppers)",
+   "summary": "Lamb cooked down in its own juices with onion, tomato and peppers until tender and glossy, eaten with rice or bread.",
+   "cuisine": "turkish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 90,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g lamb shoulder, diced",
+      "2 tbsp olive oil",
+      "2 brown onion, sliced",
+      "2 green capsicum, sliced",
+      "3 tomato, chopped",
+      "2 clove garlic, crushed",
+      "1 tsp ground cumin",
+      "1 tsp chilli flakes",
+      "1 cup basmati rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil and brown the lamb in a heavy pot over medium-high heat for 10 minutes. Add the onion, capsicum, garlic, cumin and chilli and cook for 8 minutes.",
+    "Add the tomatoes and 1 tsp salt, cover and cook on low for 1 hour 10 minutes, until the lamb is very tender and the juices thick.",
+    "Cook the rice in salted water for 12 minutes, drain and serve with the lamb."
+   ],
+   "notes": [
+    "Food safety: lamb pieces are safe once they reach at least 70°C and are tender; whole cuts are safe at 63°C with a 3 minute rest. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 568,
+    "proteinG": 38,
+    "carbsG": 50,
+    "fatG": 24,
+    "fibreG": 4,
+    "sodiumMg": 650
+   }
+  },
+  {
+   "id": "moroccan-lamb-kefta-tagine-with-baked-eggs",
+   "title": "Moroccan Lamb Kefta Tagine with Baked Eggs",
+   "summary": "Spiced lamb meatballs simmered in a cumin and paprika tomato sauce, with eggs set on top and bread to mop up.",
+   "cuisine": "north-african",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g lamb mince",
+      "1 brown onion, grated",
+      "3 clove garlic, crushed",
+      "2 tsp ground cumin",
+      "1 tsp paprika",
+      "1/4 cup chopped coriander",
+      "1 tbsp olive oil",
+      "800g canned diced tomatoes",
+      "1 tsp ground cinnamon",
+      "4 egg"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the lamb, onion, half the garlic, half the cumin, the paprika, coriander and 1 tsp salt and roll into 20 small balls.",
+    "Brown the balls in the oil for 6 minutes. Add the remaining garlic and cumin, the cinnamon, tomatoes and 1/2 cup water and simmer for 15 minutes, until the sauce is thick and the meatballs cooked through.",
+    "Make 4 wells, crack in the eggs, cover and cook for 6 minutes, until the whites are set. Serve with bread."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C in the centre with no pink inside. Refrigerate leftovers within an hour and reheat until steaming hot. Cook the eggs until the whites are fully set.",
+    "Contains egg. Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 450,
+    "proteinG": 38,
+    "carbsG": 16,
+    "fatG": 26,
+    "fibreG": 4,
+    "sodiumMg": 750
+   }
+  },
+  {
+   "id": "kapusta-z-kielbasa-polish-braised-cabbage-with-smoked-sausage-and-potato",
+   "title": "Kapusta z Kielbasa (Polish Braised Cabbage with Smoked Sausage and Potato)",
+   "summary": "A Polish one-pot of soft braised cabbage, smoked sausage and potato, seasoned with caraway and a splash of vinegar.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 45,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g smoked sausage, sliced",
+      "1 tbsp vegetable oil",
+      "1 brown onion, sliced",
+      "1/2 cabbage, shredded",
+      "500g potato, diced",
+      "1 tsp caraway seed",
+      "1 tsp paprika",
+      "1 cup chicken stock",
+      "1 tbsp apple cider vinegar"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the sausage in the oil for 5 minutes. Add the onion and cook for 5 minutes, until soft.",
+    "Add the cabbage, potato, caraway, paprika, stock and 1/2 tsp salt. Cover and simmer for 30 minutes, until the cabbage and potato are tender.",
+    "Stir in the vinegar and serve."
+   ],
+   "notes": [
+    "Food safety: sausage and cured meats must be steaming hot, reaching at least 75°C. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 450,
+    "proteinG": 20,
+    "carbsG": 34,
+    "fatG": 26,
+    "fibreG": 7,
+    "sodiumMg": 1100
+   }
+  },
+  {
+   "id": "pierogi-ruskie-polish-potato-and-cheese-dumplings-with-fried-onion",
+   "title": "Pierogi Ruskie (Polish Potato and Cheese Dumplings with Fried Onion)",
+   "summary": "Tender dumplings filled with potato and ricotta, boiled and finished in butter with caramelised onion.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 50,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "3 cup plain flour",
+      "1 egg",
+      "300g potato, boiled and mashed",
+      "1/2 cup ricotta",
+      "1 brown onion, diced",
+      "60g butter",
+      "1/2 cup sour cream"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the flour, egg, 1/2 tsp salt and about 3/4 cup warm water into a soft dough. Cover and set aside.",
+    "Cook half the onion in 20g butter for 8 minutes. Mix into the mash with the ricotta and 1/2 tsp salt.",
+    "Roll the dough thin, cut 8cm rounds, fill with the potato mix and pinch to seal.",
+    "Boil in batches for 4 minutes, until they float. Fry the remaining onion in the remaining butter until golden and toss the dumplings through. Serve with sour cream."
+   ],
+   "notes": [
+    "Food safety: eggs should be cooked until the whites are fully set. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Vegetarian. Contains egg, gluten and milk."
+   ],
+   "nutrition": {
+    "kcal": 576,
+    "proteinG": 20,
+    "carbsG": 70,
+    "fatG": 24,
+    "fibreG": 4,
+    "sodiumMg": 550
+   }
+  },
+  {
+   "id": "karelian-stew-finnish-slow-baked-beef-and-pork-with-allspice",
+   "title": "Karelian Stew (Finnish Slow-Baked Beef and Pork with Allspice)",
+   "summary": "A Finnish stew of beef and pork baked low for hours with onion and allspice, served with mash.",
+   "cuisine": "scandinavian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 180,
+   "servings": 6,
+   "onePot": true,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "500g beef chuck, diced",
+      "500g pork shoulder, diced",
+      "2 brown onion, sliced",
+      "8 allspice berry",
+      "3 bay leaf",
+      "1 tbsp plain flour",
+      "1 cup beef stock",
+      "800g potato, boiled and mashed",
+      "30g butter"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 150°C (130°C fan). Toss the meat with the flour and 2 tsp salt and layer in a casserole with the onion, allspice and bay.",
+    "Pour over the stock. Cover tightly and bake for 3 hours, until the meat is tender and the juices rich.",
+    "Mash the potato with the butter and a splash of the cooking juices, then serve the stew over the mash."
+   ],
+   "notes": [
+    "Food safety: pork must reach at least 70°C in the centre, with clear juices, and rest before serving. Refrigerate leftovers within an hour and reheat until steaming hot. Beef must be tender and above 70°C.",
+    "Contains milk and gluten."
+   ],
+   "nutrition": {
+    "kcal": 536,
+    "proteinG": 36,
+    "carbsG": 26,
+    "fatG": 32,
+    "fibreG": 3,
+    "sodiumMg": 600
+   }
+  },
+  {
+   "id": "stegt-flaesk-med-persillesovs-danish-crisp-pork-belly-with-parsley-sauce",
+   "title": "Stegt Flaesk med Persillesovs (Danish Crisp Pork Belly with Parsley Sauce)",
+   "summary": "The Danish national dish: crisp fried pork belly slices with potatoes and a creamy parsley sauce.",
+   "cuisine": "scandinavian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "600g pork belly, sliced",
+      "800g potato, boiled",
+      "40g butter",
+      "3 tbsp plain flour",
+      "2 cup milk",
+      "1 cup chopped parsley"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the pork belly slices in a dry pan over medium heat for 8 minutes a side, until golden and crisp. Drain on paper.",
+    "Melt the butter, stir in the flour for 1 minute and whisk in the milk. Simmer for 5 minutes, add the parsley, 1/2 tsp salt and pepper.",
+    "Serve the pork with the potatoes and sauce."
+   ],
+   "notes": [
+    "Food safety: pork must reach at least 70°C in the centre, with clear juices, and rest before serving. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains milk and gluten."
+   ],
+   "nutrition": {
+    "kcal": 730,
+    "proteinG": 32,
+    "carbsG": 38,
+    "fatG": 50,
+    "fibreG": 4,
+    "sodiumMg": 600
+   }
+  },
+  {
+   "id": "chicken-and-dumplings-american-southern-comfort-stew",
+   "title": "Chicken and Dumplings (American Southern Comfort Stew)",
+   "summary": "A creamy chicken and vegetable stew topped with tender drop dumplings, an American family favourite.",
+   "cuisine": "american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 45,
+   "servings": 4,
+   "onePot": true,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "600g chicken thigh fillets, diced",
+      "1 tbsp butter",
+      "1 brown onion, diced",
+      "2 carrot, diced",
+      "2 stick celery, diced",
+      "1/4 cup plain flour",
+      "1.2L chicken stock",
+      "1/2 cup thickened cream",
+      "1 cup self-raising flour",
+      "40g butter, cold",
+      "1/2 cup milk"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the chicken in the butter for 6 minutes. Add the onion, carrot and celery and cook for 6 minutes. Stir in the plain flour, then the stock and cream. Simmer for 15 minutes.",
+    "Rub the cold butter into the self-raising flour with 1/2 tsp salt, stir in the milk and spoon in 8 dumplings.",
+    "Cover and cook for 15 minutes without lifting the lid, until the dumplings are cooked through and the chicken reaches 75°C."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part with no pink juices. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Contains milk and gluten."
+   ],
+   "nutrition": {
+    "kcal": 520,
+    "proteinG": 34,
+    "carbsG": 42,
+    "fatG": 24,
+    "fibreG": 3,
+    "sodiumMg": 900
+   }
+  },
+  {
+   "id": "sancocho-colombian-style-beef-yuca-and-plantain-stew",
+   "title": "Sancocho (Colombian-Style Beef, Yuca and Plantain Stew)",
+   "summary": "A big pot of beef broth with corn, plantain and potato, eaten as a hearty Latin American family dinner.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 100,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "700g beef chuck, diced",
+      "1 brown onion, diced",
+      "3 clove garlic, crushed",
+      "2 corn cob, cut into pieces",
+      "2 green plantain, sliced",
+      "500g potato, chopped",
+      "1 carrot, sliced",
+      "1 tsp ground cumin",
+      "1.5L beef stock",
+      "1/4 cup chopped coriander",
+      "2 lime, cut into wedges"
+     ]
+    }
+   ],
+   "steps": [
+    "Put the beef, onion, garlic, cumin, stock, 1 tsp salt and 2 cups water in a pot. Simmer for 1 hour, until nearly tender.",
+    "Add the potato, carrot, plantain and corn and simmer for 30 minutes more.",
+    "Serve with coriander and lime."
+   ],
+   "notes": [
+    "Food safety: braised beef is safe once it reaches at least 70°C and is tender. Refrigerate leftovers within an hour and reheat until steaming hot.",
+    "Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 388,
+    "proteinG": 28,
+    "carbsG": 42,
+    "fatG": 12,
+    "fibreG": 5,
+    "sodiumMg": 700
+   }
+  },
+  {
+   "id": "lamb-cutlets-with-salsa-verde-and-crisp-roast-potatoes",
+   "title": "Lamb Cutlets with Salsa Verde and Crisp Roast Potatoes",
+   "summary": "Grilled lamb cutlets with a sharp parsley, caper and anchovy salsa verde and golden roast potatoes.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "12 lamb cutlet",
+      "700g potato, cut into chunks",
+      "3 tbsp olive oil",
+      "1 cup parsley leaves",
+      "2 tbsp caper",
+      "2 anchovy",
+      "1 clove garlic",
+      "1 tbsp dijon mustard",
+      "1 lemon, juiced"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Toss the potato with 1 tbsp oil and 1 tsp salt and roast for 40 minutes, turning once, until golden and crisp.",
+    "Chop the parsley, capers, anchovy and garlic finely, then mix with the mustard, lemon juice and 2 tbsp oil.",
+    "Season the cutlets and grill or pan fry for 3 minutes a side for medium, until browned. Rest for 5 minutes and serve with the salsa and potatoes."
+   ],
+   "notes": [
+    "Food safety: lamb pieces are safe once they reach at least 70°C and are tender; whole cuts are safe at 63°C with a 3 minute rest. Refrigerate leftovers within an hour and reheat until steaming hot. Contains fish (anchovy).",
+    "Dairy-free and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 542,
+    "proteinG": 36,
+    "carbsG": 32,
+    "fatG": 30,
+    "fibreG": 4,
+    "sodiumMg": 600
+   }
+  }
+ ]
+}

@@ -1,0 +1,982 @@
+{
+  "about": "Batch 04, slice A, chunk A29: lunches (sandwiches, wraps, tacos, tarts, noodle and rice bowls) from France, the US, the UK, Mexico, the Middle East, Japan, Korea, China, Thailand and Indonesia.",
+  "recipes": [
+    {
+      "id": "jambon-beurre-french-ham-and-butter-baguette",
+      "title": "Jambon-Beurre (French Ham and Butter Baguette)",
+      "summary": "The Parisian lunch classic: crisp baguette, soft butter, good ham and a swipe of Dijon.",
+      "cuisine": "french",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 0,
+      "servings": 2,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "1 baguette",
+            "60g butter, softened",
+            "200g ham",
+            "2 tsp dijon mustard",
+            "4 cornichon pickles, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Split the baguette lengthways, leaving one edge attached, and cut it in half crossways.",
+        "Spread both cut sides generously with the butter and the mustard.",
+        "Layer the ham and the sliced pickles along the base, close firmly and press down until the filling holds together.",
+        "Eat straight away, or wrap tightly for the lunchbox."
+      ],
+      "notes": [
+        "Food safety: ham is ready to eat but should stay below 5°C. For a packed lunch keep it in an insulated bag with an ice pack and eat within 4 hours, or refrigerate until lunch.",
+        "Contains gluten and milk."
+      ],
+      "nutrition": {
+        "kcal": 590,
+        "proteinG": 26,
+        "carbsG": 60,
+        "fatG": 26,
+        "fibreG": 3,
+        "sodiumMg": 1500
+      }
+    },
+    {
+      "id": "pan-bagnat-nicoise-tuna-sandwich",
+      "title": "Pan Bagnat (Nicoise Tuna Sandwich)",
+      "summary": "Tuna, egg, anchovy, tomato and olives pressed into a roll with olive oil, made for the beach.",
+      "cuisine": "french",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 9,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 bread roll",
+            "2 egg",
+            "1 can tinned tuna, drained",
+            "2 tomato, sliced",
+            "1/2 cucumber, sliced",
+            "1/2 red onion, thinly sliced",
+            "8 green olive, sliced",
+            "4 anchovy",
+            "2 tbsp olive oil",
+            "1 tsp red wine vinegar",
+            "6 basil leaves"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the eggs for 9 minutes, cool under cold water, peel and slice.",
+        "Split the rolls and pull out a little crumb from the middle. Mix the oil and vinegar and brush it over the cut sides.",
+        "Layer the tuna, tomato, cucumber, onion, olives, anchovy, egg and basil in the rolls, then close and press firmly.",
+        "Wrap tightly and press under a weight for 15 minutes, until the bread has soaked up the juices."
+      ],
+      "notes": [
+        "Food safety: hard-boiled egg and tuna must stay below 5°C. For a packed lunch use an insulated bag with an ice pack and eat within 4 hours.",
+        "Contains egg, fish and gluten."
+      ],
+      "nutrition": {
+        "kcal": 520,
+        "proteinG": 32,
+        "carbsG": 42,
+        "fatG": 24,
+        "fibreG": 4,
+        "sodiumMg": 1250
+      }
+    },
+    {
+      "id": "muffuletta-new-orleans-olive-salad-sandwich",
+      "title": "Muffuletta (New Orleans Olive Salad Sandwich)",
+      "summary": "A big sandwich of salami, ham and mozzarella with a punchy chopped olive and artichoke salad that soaks into the bread.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "1 crusty bread",
+            "150g green olive, chopped",
+            "100g marinated artichoke, chopped",
+            "1 roasted capsicum, chopped",
+            "2 tbsp olive oil",
+            "1 tbsp red wine vinegar",
+            "1 garlic clove, minced",
+            "1/2 tsp dried oregano",
+            "150g salami",
+            "150g ham",
+            "200g mozzarella, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Stir the olives, artichoke, roasted capsicum, oil, vinegar, garlic and oregano together in a bowl.",
+        "Slice the loaf in half horizontally and pull out a little of the soft middle. Spread the olive salad over both cut sides.",
+        "Layer the ham, salami and mozzarella on the base, close, wrap tightly and press under a weight for 20 minutes, until the bread is soaked through, then cut into four wedges."
+      ],
+      "notes": [
+        "Food safety: cured meats and cheese should stay below 5°C. Wrapped wedges keep in the fridge for 2 days; for a packed lunch use an ice pack and eat within 4 hours.",
+        "Contains gluten and milk."
+      ],
+      "nutrition": {
+        "kcal": 560,
+        "proteinG": 28,
+        "carbsG": 38,
+        "fatG": 32,
+        "fibreG": 3,
+        "sodiumMg": 2100
+      }
+    },
+    {
+      "id": "cubano-cuban-pressed-pork-and-ham-sandwich",
+      "title": "Cubano (Cuban Pressed Pork and Ham Sandwich)",
+      "summary": "Roast pork, ham, Swiss cheese, pickles and mustard in buttered bread, pressed in a pan until crisp and melted.",
+      "cuisine": "caribbean",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 8,
+      "servings": 2,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "1 crusty bread, cut into 2 lengths",
+            "30g butter, softened",
+            "2 tbsp yellow mustard",
+            "150g roast pork, sliced",
+            "100g ham",
+            "100g swiss cheese, sliced",
+            "4 pickles, sliced lengthways"
+          ]
+        }
+      ],
+      "steps": [
+        "Split the bread lengths, butter the outsides and spread the mustard inside.",
+        "Layer the pork, ham, cheese and pickles, and close.",
+        "Cook in a hot frying pan over medium heat, pressing down firmly with a heavy pan or a plate, for 4 minutes each side, until golden and the cheese has melted.",
+        "Slice on the diagonal and serve hot."
+      ],
+      "notes": [
+        "Food safety: use cooked roast pork that has been chilled promptly. The sandwich should be steaming hot in the middle after pressing; eat within 4 hours if packed, with an ice pack until you can reheat it.",
+        "Contains gluten and milk."
+      ],
+      "nutrition": {
+        "kcal": 640,
+        "proteinG": 38,
+        "carbsG": 42,
+        "fatG": 34,
+        "fibreG": 2,
+        "sodiumMg": 1900
+      }
+    },
+    {
+      "id": "chicken-shawarma-wrap-with-garlic-yoghurt",
+      "title": "Chicken Shawarma Wrap (with Garlic Yoghurt)",
+      "summary": "Spiced chicken thigh seared hard and rolled in flatbread with garlic yoghurt, tomato and pickled turnip.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "600g chicken thigh, sliced",
+            "2 tsp ground cumin",
+            "2 tsp paprika",
+            "1 tsp ground turmeric",
+            "1/2 tsp ground cinnamon",
+            "3 garlic clove, minced",
+            "2 tbsp olive oil",
+            "1 lemon, juiced",
+            "1 cup greek yoghurt",
+            "4 flatbread",
+            "2 tomato, sliced",
+            "1 cucumber, sliced",
+            "1/2 cup pickled turnip"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the chicken with the spices, 2 of the garlic cloves, the oil, half the lemon juice and 1 tsp salt.",
+        "Sear in a very hot pan in two batches for 5 minutes each, until browned and cooked through to 75°C.",
+        "Mix the yoghurt with the remaining garlic, lemon juice and a pinch of salt.",
+        "Warm the flatbreads, spread with the yoghurt and fill with chicken, tomato, cucumber and turnip. Roll tightly."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C in the thickest piece with no pink. Cool leftovers within an hour; for a packed lunch keep with an ice pack, eat within 4 hours and reheat until steaming hot.",
+        "Contains gluten and milk."
+      ],
+      "nutrition": {
+        "kcal": 530,
+        "proteinG": 42,
+        "carbsG": 38,
+        "fatG": 22,
+        "fibreG": 4,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "egg-salad-sandwich-with-chives",
+      "title": "Egg Salad Sandwich (with Chives)",
+      "summary": "Creamy chopped egg with mustard and chives on soft white bread with crisp lettuce, a lunchbox staple.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 egg",
+            "3 tbsp mayonnaise",
+            "1 tsp dijon mustard",
+            "2 tbsp chives, snipped",
+            "4 white bread",
+            "2 lettuce leaf"
+          ]
+        }
+      ],
+      "steps": [
+        "Cover the eggs with cold water, bring to the boil and cook for 10 minutes. Cool in cold water, then peel.",
+        "Chop the eggs roughly and mix until creamy but still chunky, with the mayonnaise, mustard, chives, a pinch of salt and pepper.",
+        "Pile onto two slices of bread with the lettuce and top with the remaining bread. Cut in half."
+      ],
+      "notes": [
+        "Food safety: egg mixtures spoil quickly. Keep below 5°C, pack with an ice pack and eat within 4 hours, or keep in the fridge until lunch.",
+        "Contains egg and gluten."
+      ],
+      "nutrition": {
+        "kcal": 395,
+        "proteinG": 18,
+        "carbsG": 30,
+        "fatG": 22,
+        "fibreG": 2,
+        "sodiumMg": 680
+      }
+    },
+    {
+      "id": "bacon-butty-english-bacon-roll",
+      "title": "Bacon Butty (English Bacon Roll)",
+      "summary": "Crisp streaky bacon in a buttered soft roll with a squirt of tomato sauce, the 10-minute brunch-or-lunch fix.",
+      "cuisine": "british",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 3,
+      "cookMinutes": 8,
+      "servings": 2,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "8 rashers bacon",
+            "2 bread roll",
+            "20g butter",
+            "2 tbsp tomato sauce"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the bacon in a dry frying pan over medium heat for 8 minutes, turning once, until crisp and well browned with no pink.",
+        "Split and butter the rolls.",
+        "Fill with the bacon and the sauce and eat hot."
+      ],
+      "notes": [
+        "Food safety: bacon must be cooked right through until the fat is rendered and the meat is no longer pink. Eat hot; if packed, keep chilled and reheat until steaming.",
+        "Contains gluten and milk."
+      ],
+      "nutrition": {
+        "kcal": 480,
+        "proteinG": 24,
+        "carbsG": 38,
+        "fatG": 25,
+        "fibreG": 2,
+        "sodiumMg": 1650
+      }
+    },
+    {
+      "id": "chip-butty-english-hot-chips-in-buttered-bread",
+      "title": "Chip Butty (English Hot Chips in Buttered Bread)",
+      "summary": "Oven chips in soft buttered white bread with malt vinegar, the comfort lunch of northern England.",
+      "cuisine": "british",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 3,
+      "cookMinutes": 25,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g frozen chips",
+            "4 white bread",
+            "30g butter, softened",
+            "1 tbsp malt vinegar",
+            "2 tbsp tomato sauce"
+          ]
+        }
+      ],
+      "steps": [
+        "Bake the chips on a tray at 220°C (200°C fan) for 25 minutes, turning once, until golden and crisp.",
+        "Butter the bread and pile the hot chips onto two slices. Sprinkle with the vinegar and salt, add the sauce and top with the remaining bread.",
+        "Press down gently and eat while hot."
+      ],
+      "notes": [
+        "Eat straight away, as the chips go soft in the bread.",
+        "Contains gluten and milk."
+      ],
+      "nutrition": {
+        "kcal": 560,
+        "proteinG": 11,
+        "carbsG": 86,
+        "fatG": 20,
+        "fibreG": 6,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "torta-de-jamon-mexican-ham-roll-with-avocado",
+      "title": "Torta de Jamon (Mexican Ham Roll with Avocado)",
+      "summary": "A toasted roll of ham, melted cheese, avocado and pickled jalapeno, a Mexico City street lunch.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 4,
+      "servings": 2,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "2 bread roll",
+            "200g ham",
+            "100g monterey jack, sliced",
+            "1 avocado, sliced",
+            "2 tbsp mayonnaise",
+            "2 tbsp pickled jalapeno",
+            "1 tomato, sliced",
+            "2 lettuce leaf"
+          ]
+        }
+      ],
+      "steps": [
+        "Split the rolls and toast the cut sides in a dry pan for 2 minutes.",
+        "Spread with mayonnaise and layer the ham and cheese on the base. Grill for 2 minutes, until the cheese melts.",
+        "Top with the avocado, jalapeno, tomato and lettuce, close and press down."
+      ],
+      "notes": [
+        "Food safety: ham should stay below 5°C until cooking. Eat hot; if packed, keep chilled and eat within 4 hours.",
+        "Contains egg, milk and gluten."
+      ],
+      "nutrition": {
+        "kcal": 640,
+        "proteinG": 32,
+        "carbsG": 42,
+        "fatG": 38,
+        "fibreG": 8,
+        "sodiumMg": 1700
+      }
+    },
+    {
+      "id": "tacos-de-papa-mexican-crispy-potato-tacos",
+      "title": "Tacos de Papa (Mexican Crispy Potato Tacos)",
+      "summary": "Spiced mashed potato folded into corn tortillas and crisped in a pan, topped with lettuce, salsa and a little cheese.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g potato, peeled and cubed",
+            "1 tbsp neutral oil",
+            "1/2 brown onion, finely diced",
+            "1 tsp ground cumin",
+            "1 tsp paprika",
+            "8 corn tortilla",
+            "2 tbsp neutral oil",
+            "1 cup shredded lettuce",
+            "1/2 cup salsa",
+            "1/2 cup sour cream",
+            "100g feta"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potato in salted water for 15 minutes, until soft. Drain and mash roughly.",
+        "Cook the onion in the first oil for 4 minutes, stir in the spices, then mix into the potato and season.",
+        "Warm the tortillas to soften them. Put 2 tbsp of potato on one half of each, fold over and press the edges.",
+        "Fry the tacos in the second oil for 2 minutes each side, until crisp and golden.",
+        "Top with lettuce, salsa, sour cream and crumbled feta."
+      ],
+      "notes": [
+        "Eat hot for the best crunch. The potato filling keeps 3 days in the fridge.",
+        "Contains milk."
+      ],
+      "nutrition": {
+        "kcal": 430,
+        "proteinG": 11,
+        "carbsG": 55,
+        "fatG": 19,
+        "fibreG": 6,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "tarte-a-la-moutarde-french-tomato-and-mustard-tart",
+      "title": "Tarte a la Moutarde (French Tomato and Mustard Tart)",
+      "summary": "A Burgundy-style tart of puff pastry brushed with sharp Dijon, layered with ripe tomato and melted mozzarella.",
+      "cuisine": "french",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 28,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 sheet puff pastry",
+            "3 tbsp dijon mustard",
+            "300g mozzarella, sliced",
+            "4 tomato, sliced",
+            "1 tsp thyme leaves",
+            "1 tbsp olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (180°C fan). Lay the pastry on a lined tray and score a border 2cm in.",
+        "Spread the mustard inside the border, then layer the cheese and tomatoes.",
+        "Scatter the thyme, drizzle with oil and season with pepper.",
+        "Bake for 28 minutes, until the pastry is puffed and golden."
+      ],
+      "notes": [
+        "Eat warm or at room temperature. Keeps 2 days in the fridge.",
+        "Contains gluten and milk."
+      ],
+      "nutrition": {
+        "kcal": 470,
+        "proteinG": 18,
+        "carbsG": 29,
+        "fatG": 32,
+        "fibreG": 3,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "tamago-sando-japanese-egg-sandwich",
+      "title": "Tamago Sando (Japanese Egg Sandwich)",
+      "summary": "Ultra-soft egg salad with Japanese mayonnaise in fluffy white bread, crusts trimmed.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 egg",
+            "3 tbsp kewpie mayonnaise",
+            "1 tsp milk",
+            "1 tsp sugar",
+            "4 white bread",
+            "20g butter, softened"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the eggs for 10 minutes, cool in cold water and peel.",
+        "Mash the eggs with the mayonnaise, milk, sugar and a pinch of salt until creamy but still a little chunky.",
+        "Butter the bread, spread the filling thickly on two slices and top with the rest. Trim off the crusts and cut in half."
+      ],
+      "notes": [
+        "Food safety: keep the filling below 5°C. For a packed lunch use an ice pack and eat within 4 hours.",
+        "Contains egg, milk and gluten."
+      ],
+      "nutrition": {
+        "kcal": 460,
+        "proteinG": 18,
+        "carbsG": 30,
+        "fatG": 28,
+        "fibreG": 1,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "teriyaki-chicken-bento-with-egg-and-edamame",
+      "title": "Teriyaki Chicken Bento (with Egg and Edamame)",
+      "summary": "Glazed chicken thigh, rolled omelette, edamame and carrot packed over rice in a box that eats well cold.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g chicken thigh, cut into pieces",
+            "2 tbsp teriyaki sauce",
+            "1 tsp neutral oil",
+            "3 egg",
+            "1 tsp soy sauce",
+            "1 tsp sugar",
+            "1 tsp neutral oil",
+            "1 cup edamame",
+            "1 carrot, sliced",
+            "2 cup cooked sushi rice",
+            "1 tsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Sear the chicken in the first oil for 6 minutes, add the teriyaki sauce and cook for 3 more minutes, until glossy and cooked through to 75°C.",
+        "Whisk the eggs with the soy sauce and sugar. Cook in the second oil in a small pan over low heat, rolling it up as it sets, about 5 minutes, then slice.",
+        "Boil the edamame and carrot for 3 minutes and drain.",
+        "Pack the rice into two boxes and arrange the chicken, egg, edamame and carrot on top. Sprinkle with sesame seeds."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C. Cool the rice and chicken quickly, then keep below 5°C. For a packed lunch use an ice pack and eat within 4 hours.",
+        "Contains egg, soy and sesame."
+      ],
+      "nutrition": {
+        "kcal": 680,
+        "proteinG": 50,
+        "carbsG": 64,
+        "fatG": 22,
+        "fibreG": 6,
+        "sodiumMg": 1000
+      }
+    },
+    {
+      "id": "oyakodon-japanese-chicken-and-egg-rice-bowl",
+      "title": "Oyakodon (Japanese Chicken and Egg Rice Bowl)",
+      "summary": "Tender chicken and onion simmered in a sweet soy broth, finished with loosely set egg over steaming rice.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g chicken thigh, sliced",
+            "1 brown onion, sliced",
+            "3/4 cup chicken stock",
+            "2 tbsp soy sauce",
+            "2 tbsp mirin",
+            "1 tsp sugar",
+            "3 egg, lightly beaten",
+            "2 cup cooked sushi rice",
+            "2 spring onion, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the stock, soy sauce, mirin and sugar in a wide pan. Add the onion and chicken and cook for 8 minutes, until the chicken reaches 75°C.",
+        "Pour the egg over in a circle, cover and cook for 2 minutes, until just set but still soft.",
+        "Slide it over the rice in two bowls and top with spring onion."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C and the egg should be set, not runny. Best eaten straight away; refrigerate leftovers within an hour and eat within a day.",
+        "Contains egg, soy and gluten."
+      ],
+      "nutrition": {
+        "kcal": 590,
+        "proteinG": 40,
+        "carbsG": 72,
+        "fatG": 14,
+        "fibreG": 2,
+        "sodiumMg": 1250
+      }
+    },
+    {
+      "id": "chicken-yakisoba-japanese-stir-fried-noodles",
+      "title": "Chicken Yakisoba (Japanese Stir-Fried Noodles)",
+      "summary": "Chewy wheat noodles tossed with chicken, cabbage and carrot in a tangy Worcestershire and soy sauce.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 3,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g dried wheat noodles",
+            "300g chicken thigh, sliced",
+            "2 tbsp neutral oil",
+            "3 cup cabbage, shredded",
+            "1 carrot, cut into matchsticks",
+            "3 spring onion, sliced",
+            "3 tbsp worcestershire sauce",
+            "2 tbsp soy sauce",
+            "1 tbsp oyster sauce",
+            "1 tsp sugar"
+          ]
+        }
+      ],
+      "steps": [
+        "Loosen the noodles in boiling water for 1 minute and drain.",
+        "Stir-fry the chicken in half the oil over high heat for 5 minutes, until cooked through to 75°C. Remove.",
+        "Stir-fry the cabbage and carrot in the remaining oil for 3 minutes.",
+        "Add the noodles, chicken, sauces and sugar and toss for 2 minutes. Scatter with spring onion."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C. Refrigerate leftovers within an hour; for a packed lunch use an ice pack, eat within 4 hours and reheat until steaming hot.",
+        "Contains gluten, soy and fish (Worcestershire sauce)."
+      ],
+      "nutrition": {
+        "kcal": 560,
+        "proteinG": 32,
+        "carbsG": 72,
+        "fatG": 16,
+        "fibreG": 5,
+        "sodiumMg": 1500
+      }
+    },
+    {
+      "id": "korean-egg-toast-gilgeori-toast",
+      "title": "Korean Egg Toast (Gilgeori Toast)",
+      "summary": "A thick vegetable omelette in buttery toast with a sprinkle of sugar, the Seoul street breakfast.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 8,
+      "cookMinutes": 8,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 egg",
+            "1/2 cup cabbage, finely shredded",
+            "1 carrot, grated",
+            "2 spring onion, finely sliced",
+            "40g butter",
+            "4 white bread",
+            "2 tsp sugar",
+            "2 tbsp tomato sauce"
+          ]
+        }
+      ],
+      "steps": [
+        "Beat the eggs with the cabbage, carrot, spring onion and a pinch of salt.",
+        "Melt a little butter in a pan and toast the bread on both sides for about 2 minutes each, until golden. Set aside.",
+        "Pour half the egg mixture into the pan, shape into a square the size of the bread and cook for 3 minutes, folding the edges in and flipping once, until fully set. Repeat.",
+        "Sprinkle the toast with sugar, put the omelette on, squeeze on the tomato sauce and close, pressing until the toast is warm through."
+      ],
+      "notes": [
+        "Food safety: the egg must be cooked through with no wet patches. Eat straight away.",
+        "Contains egg, milk and gluten."
+      ],
+      "nutrition": {
+        "kcal": 430,
+        "proteinG": 18,
+        "carbsG": 38,
+        "fatG": 22,
+        "fibreG": 3,
+        "sodiumMg": 620
+      }
+    },
+    {
+      "id": "pad-see-ew-thai-soy-sauce-rice-noodles-with-chicken",
+      "title": "Pad See Ew (Thai Soy Sauce Rice Noodles with Chicken)",
+      "summary": "Wide, charred rice noodles with chicken, egg and gai lan in a sweet-savoury dark soy sauce, a 20-minute wok lunch.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g fresh rice noodles",
+            "250g chicken thigh, sliced",
+            "2 tbsp neutral oil",
+            "3 garlic clove, minced",
+            "2 egg",
+            "4 gai lan, chopped",
+            "2 tbsp dark soy sauce",
+            "1 tbsp soy sauce",
+            "1 tbsp oyster sauce",
+            "1 tsp sugar"
+          ]
+        }
+      ],
+      "steps": [
+        "Separate the noodles gently, microwaving for 30 seconds if they are stiff.",
+        "Stir-fry the chicken in the oil in a hot wok for 4 minutes, until cooked through to 75°C. Add the garlic for 30 seconds.",
+        "Push to one side, scramble the eggs in the gap, then add the gai lan stems for 1 minute.",
+        "Add the noodles, sauces and sugar and toss for 3 minutes, until some noodles catch and char, adding the leaves for the last minute."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C. Cool and refrigerate leftovers within an hour; reheat until steaming hot.",
+        "Contains egg, soy and gluten."
+      ],
+      "nutrition": {
+        "kcal": 590,
+        "proteinG": 38,
+        "carbsG": 72,
+        "fatG": 16,
+        "fibreG": 4,
+        "sodiumMg": 1650
+      }
+    },
+    {
+      "id": "egg-fried-rice-with-peas-and-spring-onion",
+      "title": "Egg Fried Rice (with Peas and Spring Onion)",
+      "summary": "Day-old rice fried hot with scrambled egg, peas and carrot, a 10-minute lunch for leftover rice.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 8,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 cup cooked white rice, cold",
+            "3 egg",
+            "2 tbsp neutral oil",
+            "1 carrot, finely diced",
+            "1/2 cup frozen peas",
+            "3 spring onion, sliced",
+            "2 tbsp soy sauce",
+            "1 tsp sesame oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Beat the eggs. Heat half the oil in a wok and scramble the eggs for 1 minute, then remove.",
+        "Fry the carrot in the remaining oil for 2 minutes, add the peas and the cold rice, breaking up clumps, and stir-fry for 3 minutes.",
+        "Return the egg, add the soy sauce, sesame oil and spring onion and toss until the rice is steaming hot."
+      ],
+      "notes": [
+        "Food safety: use rice that was cooled within an hour of cooking and kept below 5°C for no more than a day. Never reheat rice twice. Eat hot; for a packed lunch use an ice pack and eat within 4 hours.",
+        "Contains egg, soy and sesame."
+      ],
+      "nutrition": {
+        "kcal": 590,
+        "proteinG": 20,
+        "carbsG": 85,
+        "fatG": 19,
+        "fibreG": 4,
+        "sodiumMg": 930
+      }
+    },
+    {
+      "id": "mie-goreng-indonesian-sweet-soy-prawn-noodles",
+      "title": "Mie Goreng (Indonesian Sweet Soy Prawn Noodles)",
+      "summary": "Egg noodles wok-tossed with prawns, egg and cabbage in sweet kecap manis with a kick of sambal.",
+      "cuisine": "indonesian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 3,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g dried egg noodles",
+            "250g prawn, peeled",
+            "2 tbsp neutral oil",
+            "2 shallot, sliced",
+            "3 garlic clove, minced",
+            "2 egg",
+            "2 cup cabbage, shredded",
+            "3 tbsp kecap manis",
+            "1 tbsp soy sauce",
+            "1 tsp sambal oelek",
+            "fried shallots"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the noodles per the packet until tender, drain and toss with a little oil.",
+        "Stir-fry the shallot and garlic in the oil for 1 minute, add the prawns for 2 minutes until pink and opaque, then push aside.",
+        "Scramble the eggs in the gap, then add the cabbage for 2 minutes.",
+        "Add the noodles, kecap manis, soy sauce and sambal and toss for 3 minutes. Top with fried shallots."
+      ],
+      "notes": [
+        "Food safety: prawns must be pink and opaque throughout. Refrigerate leftovers within an hour and eat within a day; for a packed lunch use an ice pack, eat within 4 hours and reheat until steaming hot.",
+        "Contains crustacean, egg, gluten and soy."
+      ],
+      "nutrition": {
+        "kcal": 540,
+        "proteinG": 28,
+        "carbsG": 72,
+        "fatG": 14,
+        "fibreG": 4,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "singapore-noodles-curried-vermicelli-with-prawn-and-egg",
+      "title": "Singapore Noodles (Curried Vermicelli with Prawn and Egg)",
+      "summary": "Thin rice vermicelli stir-fried with curry powder, prawns, egg, capsicum and bean sprouts, light and fragrant.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 3,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g rice vermicelli",
+            "250g prawn, peeled",
+            "2 egg",
+            "2 tbsp neutral oil",
+            "1 capsicum, sliced",
+            "2 cup bean sprouts",
+            "3 spring onion, sliced",
+            "1 tbsp curry powder",
+            "2 tbsp soy sauce",
+            "1 tsp sesame oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the vermicelli in boiling water for 4 minutes, drain and snip into shorter lengths.",
+        "Scramble the eggs in half the oil for 1 minute and remove.",
+        "Stir-fry the prawns for 2 minutes until pink and opaque, add the capsicum and curry powder for 2 minutes.",
+        "Add the noodles, soy sauce, sesame oil, egg, sprouts and spring onion and toss for 2 minutes."
+      ],
+      "notes": [
+        "Food safety: prawns must be pink and opaque right through. Cool and refrigerate leftovers within an hour; for a packed lunch use an ice pack and eat within 4 hours.",
+        "Contains crustacean, egg and soy."
+      ],
+      "nutrition": {
+        "kcal": 470,
+        "proteinG": 25,
+        "carbsG": 55,
+        "fatG": 12,
+        "fibreG": 4,
+        "sodiumMg": 1000
+      }
+    }
+  ]
+}

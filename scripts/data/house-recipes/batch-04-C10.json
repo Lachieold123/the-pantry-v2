@@ -1,0 +1,1243 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "nyonya-chicken-kapitan-curry-bowls",
+      "title": "Nyonya Chicken Kapitan Curry Bowls",
+      "summary": "A fragrant Penang-style chicken curry with lemongrass, turmeric and coconut, served over rice.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g chicken thigh, bone-in",
+            "3 shallots",
+            "4 garlic cloves",
+            "20g ginger",
+            "2 lemongrass stalks",
+            "1 tsp turmeric",
+            "3 tbsp chilli paste",
+            "400ml coconut milk",
+            "2 tbsp tamarind paste",
+            "2 tbsp vegetable oil",
+            "300g jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the shallots, garlic, ginger, lemongrass, turmeric and chilli paste into a smooth paste.",
+        "Fry the paste in the oil for 8 minutes until the oil separates and it smells toasty.",
+        "Add the chicken and brown it for 5 minutes.",
+        "Pour in the coconut milk, tamarind and 200ml water and simmer for 30 minutes until the chicken reaches 75°C and the sauce thickens.",
+        "Cook the rice until fluffy and serve with the curry."
+      ],
+      "notes": [
+        "Food safety: cook bone-in chicken until it reaches 75°C at the thickest part and the juices run clear.",
+        "Dairy-free."
+      ],
+      "nutrition": {
+        "kcal": 1146,
+        "proteinG": 57,
+        "carbsG": 105,
+        "fatG": 54,
+        "fibreG": 6,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "penang-assam-laksa-fish-noodle-soup",
+      "title": "Penang Assam Laksa Fish Noodle Soup",
+      "summary": "A sour, spicy tamarind fish soup with thick rice noodles, pineapple, cucumber and mint.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 30,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g white fish fillets",
+            "1.5 litres water",
+            "4 tbsp tamarind paste",
+            "6 dried chillies",
+            "3 shallots",
+            "2 lemongrass stalks",
+            "20g ginger",
+            "1 tbsp shrimp paste",
+            "250g thick rice noodles",
+            "1 cucumber",
+            "100g pineapple",
+            "1 handful mint",
+            "2 red chillies"
+          ]
+        }
+      ],
+      "steps": [
+        "Poach the fish in the water for 8 minutes until opaque and flaking, then lift out and flake the flesh.",
+        "Blend the soaked chillies, shallots, lemongrass, ginger and shrimp paste smooth.",
+        "Simmer the paste in the fish broth with the tamarind for 25 minutes until the soup tastes tangy and rich.",
+        "Cook the noodles until tender.",
+        "Divide the noodles into bowls and top with flaked fish, cucumber, pineapple, mint and sliced chilli.",
+        "Ladle over the hot soup until the noodles are just covered."
+      ],
+      "notes": [
+        "Food safety: cook the fish until opaque and flaking.",
+        "Dairy-free."
+      ],
+      "nutrition": {
+        "kcal": 414,
+        "proteinG": 34,
+        "carbsG": 58,
+        "fatG": 4,
+        "fibreG": 5,
+        "sodiumMg": 1050
+      }
+    },
+    {
+      "id": "roti-jala-lacy-net-pancakes",
+      "title": "Roti Jala Lacy Net Pancakes",
+      "summary": "Delicate lacy crepes drizzled in a net pattern, served with chicken curry or sweet kaya.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g plain flour",
+            "1 egg",
+            "350ml coconut milk",
+            "100ml water",
+            "1 tsp turmeric",
+            "1 pinch salt",
+            "1 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the flour, egg, coconut milk, water, turmeric and salt until a thin batter forms.",
+        "Rest the batter for 20 minutes.",
+        "Heat a lightly oiled pan until hot.",
+        "Drizzle the batter in a lacy net pattern using a squeezy bottle.",
+        "Cook for 1 minute until the lace is set, then fold into quarters."
+      ],
+      "notes": [
+        "Food safety: cook until the batter is fully set.",
+        "Serve with curry."
+      ],
+      "nutrition": {
+        "kcal": 714,
+        "proteinG": 18,
+        "carbsG": 86,
+        "fatG": 32,
+        "fibreG": 5,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "ayam-masak-merah-tomato-chilli-chicken",
+      "title": "Ayam Masak Merah Tomato Chilli Chicken",
+      "summary": "Chicken simmered in a sweet and spicy red tomato chilli sauce.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g chicken thigh, cubed",
+            "3 tbsp chilli paste",
+            "2 brown onions",
+            "4 garlic cloves",
+            "20g ginger",
+            "4 tomatoes",
+            "3 tbsp tomato paste",
+            "2 tbsp vegetable oil",
+            "1 tbsp sugar",
+            "200ml water"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onions, garlic and ginger in the oil for 6 minutes until soft.",
+        "Add the chilli paste and tomato paste and cook for 5 minutes until deep red.",
+        "Add the chicken and brown for 4 minutes.",
+        "Add the tomatoes, sugar and water and simmer for 20 minutes until the chicken reaches 75°C and the sauce is thick."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C and no pink remains.",
+        "Serve with rice."
+      ],
+      "nutrition": {
+        "kcal": 388,
+        "proteinG": 32,
+        "carbsG": 18,
+        "fatG": 20,
+        "fibreG": 4,
+        "sodiumMg": 480
+      }
+    },
+    {
+      "id": "gado-gado-style-peanut-vegetable-plate",
+      "title": "Gado Gado Style Peanut Vegetable Plate",
+      "summary": "Blanched vegetables, potato, tofu and egg with a rich peanut sauce.",
+      "cuisine": "indonesian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g potatoes",
+            "200g green beans",
+            "200g cabbage",
+            "200g firm tofu",
+            "4 eggs",
+            "100g bean sprouts",
+            "1 cucumber",
+            "120g peanut butter",
+            "2 tbsp soy sauce",
+            "1 tbsp palm sugar",
+            "2 tbsp lime juice",
+            "1 red chilli",
+            "1 garlic clove",
+            "100ml hot water"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes for 15 minutes until tender, then slice.",
+        "Boil the eggs for 9 minutes until firm, cool and halve.",
+        "Blanch the beans, cabbage and sprouts for 2 minutes each until just tender.",
+        "Fry the tofu until golden.",
+        "Blend the peanut butter, soy, sugar, lime, chilli, garlic and hot water until smooth.",
+        "Arrange the vegetables, tofu and eggs on a platter and pour over the sauce."
+      ],
+      "notes": [
+        "Food safety: boil the eggs until firm.",
+        "Vegetarian."
+      ],
+      "nutrition": {
+        "kcal": 556,
+        "proteinG": 28,
+        "carbsG": 34,
+        "fatG": 32,
+        "fibreG": 10,
+        "sodiumMg": 750
+      }
+    },
+    {
+      "id": "pisang-goreng-style-plantain-fritters",
+      "title": "Pisang Goreng Style Plantain Fritters",
+      "summary": "Crisp golden plantain fritters in a light rice flour batter.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 ripe plantains",
+            "100g plain flour",
+            "50g rice flour",
+            "1 tsp baking powder",
+            "150ml water",
+            "1 tbsp sugar",
+            "500ml vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the flours, baking powder, sugar and water until smooth.",
+        "Slice the plantains lengthways into thick pieces.",
+        "Heat the oil in a deep pan to 180C until a drop of batter sizzles.",
+        "Dip the plantain in the batter and fry for 3 minutes until crisp and golden.",
+        "Drain on paper and serve hot."
+      ],
+      "notes": [
+        "Keep the oil at 180C for a crisp batter.",
+        "Vegan."
+      ],
+      "nutrition": {
+        "kcal": 1056,
+        "proteinG": 10,
+        "carbsG": 150,
+        "fatG": 44,
+        "fibreG": 10,
+        "sodiumMg": 140
+      }
+    },
+    {
+      "id": "dhal-tadka-red-lentil-breakfast-soup",
+      "title": "Dhal Tadka Red Lentil Breakfast Soup",
+      "summary": "Silky red lentils finished with a sizzling garlic and cumin tadka.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g red lentils",
+            "1 litre water",
+            "1 tsp turmeric",
+            "1 tomato",
+            "3 tbsp ghee",
+            "4 garlic cloves",
+            "1 tsp cumin seeds",
+            "1 dried chilli",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the lentils with turmeric and water for 20 minutes until they collapse.",
+        "Stir in the chopped tomato for 5 minutes until soft.",
+        "Heat the ghee in a small pan and fry the cumin, garlic and chilli for 1 minute until golden.",
+        "Pour the tadka over the dhal and finish with lemon juice."
+      ],
+      "notes": [
+        "Vegetarian.",
+        "Use oil instead of ghee for vegan."
+      ],
+      "nutrition": {
+        "kcal": 367,
+        "proteinG": 20,
+        "carbsG": 42,
+        "fatG": 11,
+        "fibreG": 10,
+        "sodiumMg": 20
+      }
+    },
+    {
+      "id": "pao-de-queijo-cheese-bread-bites",
+      "title": "Pao de Queijo Cheese Bread Bites",
+      "summary": "Chewy gluten-free Brazilian cheese breads with a crisp crust.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 10,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g tapioca starch",
+            "120ml milk",
+            "60ml olive oil",
+            "1 egg",
+            "100g vegetarian hard cheese, grated",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the milk, oil and salt until simmering.",
+        "Pour over the tapioca starch and stir until a sticky dough forms.",
+        "Cool for 5 minutes, then mix in the egg and cheese.",
+        "Roll the dough into walnut-sized balls with wet hands.",
+        "Bake at 200C for 22 minutes until puffed and golden."
+      ],
+      "notes": [
+        "Food safety: bake until the centres are cooked through.",
+        "Vegetarian when made with vegetarian hard cheese, and gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 210,
+        "proteinG": 6,
+        "carbsG": 24,
+        "fatG": 10,
+        "fibreG": 0,
+        "sodiumMg": 160
+      }
+    },
+    {
+      "id": "hungarian-lecso-pepper-stew",
+      "title": "Hungarian Lecso Pepper Stew",
+      "summary": "A stewed summer capsicum and tomato dish with onion and paprika, finished with eggs.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 capsicums",
+            "4 tomatoes",
+            "1 brown onion",
+            "2 tbsp olive oil",
+            "1 tbsp sweet paprika",
+            "4 eggs",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion in the oil for 6 minutes until golden.",
+        "Add the paprika, capsicum and tomato.",
+        "Simmer for 15 minutes until the peppers are soft and the sauce is thick.",
+        "Make wells and crack in the eggs.",
+        "Cover and cook for 4 minutes until the whites are set."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are firm.",
+        "Vegetarian and gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 252,
+        "proteinG": 11,
+        "carbsG": 18,
+        "fatG": 14,
+        "fibreG": 5,
+        "sodiumMg": 170
+      }
+    },
+    {
+      "id": "persian-kuku-sabzi-herb-frittata",
+      "title": "Persian Kuku Sabzi Herb Frittata",
+      "summary": "A green herb frittata packed with parsley, dill and coriander, with walnuts and barberries.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 bunches parsley",
+            "1 bunch coriander",
+            "1 bunch dill",
+            "6 spring onions",
+            "6 eggs",
+            "40g walnuts",
+            "1 tsp turmeric",
+            "1 tbsp plain flour",
+            "3 tbsp olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Chop the herbs and spring onions finely.",
+        "Whisk the eggs with turmeric, flour and a pinch of salt.",
+        "Fold in the herbs and walnuts.",
+        "Heat the oil in a pan and pour in the mixture.",
+        "Cook on low heat for 12 minutes until the base is set, then flip and cook for 8 minutes until firm."
+      ],
+      "notes": [
+        "Food safety: cook until the egg is fully set.",
+        "Serve with yoghurt."
+      ],
+      "nutrition": {
+        "kcal": 231,
+        "proteinG": 11,
+        "carbsG": 7,
+        "fatG": 17,
+        "fibreG": 3,
+        "sodiumMg": 160
+      }
+    },
+    {
+      "id": "tarator-cold-bulgarian-yoghurt-soup",
+      "title": "Tarator Cold Bulgarian Yoghurt Soup",
+      "summary": "Cold yoghurt soup with cucumber, dill, garlic and walnuts for hot days.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g plain yoghurt",
+            "2 cucumbers",
+            "2 garlic cloves",
+            "2 tbsp dill",
+            "40g walnuts",
+            "200ml cold water",
+            "2 tbsp olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Dice the cucumbers finely.",
+        "Whisk the yoghurt with the water until smooth.",
+        "Stir in the cucumber, garlic and dill.",
+        "Chill for 1 hour until very cold, then top with walnuts and oil."
+      ],
+      "notes": [
+        "Vegetarian.",
+        "Serve in chilled bowls."
+      ],
+      "nutrition": {
+        "kcal": 239,
+        "proteinG": 14,
+        "carbsG": 11,
+        "fatG": 15,
+        "fibreG": 2,
+        "sodiumMg": 130
+      }
+    },
+    {
+      "id": "avgolemono-greek-egg-and-lemon-soup",
+      "title": "Avgolemono Greek Egg and Lemon Soup",
+      "summary": "Silky chicken and rice soup thickened with egg and lemon.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1.2 litres chicken stock",
+            "80g short grain rice",
+            "300g chicken breast",
+            "3 eggs",
+            "3 lemons",
+            "1 handful dill"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the stock and rice for 12 minutes until the rice is tender.",
+        "Poach the chicken in the stock for 10 minutes until it reaches 75°C, then shred.",
+        "Whisk the eggs with the lemon juice until frothy.",
+        "Ladle hot stock into the eggs slowly, whisking, then stir back into the pot.",
+        "Heat gently without boiling until slightly thickened, then add the chicken and dill."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C and heat the soup until it coats a spoon with no raw egg.",
+        "Do not boil after adding the egg."
+      ],
+      "nutrition": {
+        "kcal": 316,
+        "proteinG": 32,
+        "carbsG": 24,
+        "fatG": 10,
+        "fibreG": 1,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "caldo-verde-portuguese-kale-and-potato-soup",
+      "title": "Caldo Verde Portuguese Kale and Potato Soup",
+      "summary": "A rustic soup of potato, thin shredded kale and smoky chorizo.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g potatoes",
+            "1 brown onion",
+            "3 garlic cloves",
+            "1 litre chicken stock",
+            "150g chorizo, sliced",
+            "150g kale",
+            "3 tbsp olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion and garlic in half the oil for 5 minutes until translucent.",
+        "Add the potatoes and stock and simmer for 20 minutes until completely tender.",
+        "Mash the potatoes into the soup until creamy.",
+        "Fry the chorizo until crisp.",
+        "Add the kale to the soup for 5 minutes until tender, then serve with chorizo."
+      ],
+      "notes": [
+        "Food safety: cook the chorizo until hot and browned throughout.",
+        "Dairy-free."
+      ],
+      "nutrition": {
+        "kcal": 462,
+        "proteinG": 16,
+        "carbsG": 38,
+        "fatG": 26,
+        "fibreG": 6,
+        "sodiumMg": 1000
+      }
+    },
+    {
+      "id": "sopa-de-lima-yucatan-chicken-lime-soup",
+      "title": "Sopa de Lima Yucatan Chicken Lime Soup",
+      "summary": "A bright lime and chicken soup with crisp tortilla strips and avocado.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g chicken thigh",
+            "1.2 litres chicken stock",
+            "1 brown onion",
+            "3 garlic cloves",
+            "4 limes",
+            "2 tomatoes",
+            "4 corn tortillas",
+            "2 tbsp olive oil",
+            "1 avocado",
+            "1 handful coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the chicken, onion, garlic and stock for 20 minutes until the chicken reaches 75°C.",
+        "Shred the chicken and return to the strained broth.",
+        "Cut the tortillas into strips and fry in the oil until crisp.",
+        "Add the tomatoes and lime juice to the soup and heat for 5 minutes.",
+        "Serve topped with avocado, tortilla strips and coriander."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C.",
+        "Dairy-free."
+      ],
+      "nutrition": {
+        "kcal": 434,
+        "proteinG": 32,
+        "carbsG": 24,
+        "fatG": 22,
+        "fibreG": 6,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "egyptian-koshari-lentil-rice-bowl",
+      "title": "Egyptian Koshari Lentil Rice Bowl",
+      "summary": "Layers of rice, lentils, pasta and chickpeas with spiced tomato sauce and crispy onions.",
+      "cuisine": "north-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g brown lentils",
+            "200g rice",
+            "150g macaroni",
+            "1 tin chickpeas",
+            "400g tinned tomatoes",
+            "3 garlic cloves",
+            "2 brown onions",
+            "2 tbsp white vinegar",
+            "1 tsp cumin",
+            "4 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the lentils for 20 minutes until tender and cook the rice until fluffy.",
+        "Boil the macaroni until tender.",
+        "Slice and fry the onions in the oil for 15 minutes until deep brown and crisp.",
+        "Simmer the tomatoes, garlic, cumin and vinegar for 15 minutes until thick.",
+        "Layer the grains, pasta, lentils and chickpeas in bowls and top with sauce and onions."
+      ],
+      "notes": [
+        "Vegan.",
+        "Keeps well for lunches."
+      ],
+      "nutrition": {
+        "kcal": 524,
+        "proteinG": 18,
+        "carbsG": 80,
+        "fatG": 12,
+        "fibreG": 12,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "injera-style-teff-pancake-breakfast-with-lentils",
+      "title": "Injera Style Teff Pancake Breakfast with Lentils",
+      "summary": "Sour fermented teff pancakes topped with a spiced red lentil stew.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g teff flour",
+            "500ml water",
+            "1 pinch salt",
+            "200g red lentils",
+            "1 brown onion",
+            "3 garlic cloves",
+            "2 tbsp paprika",
+            "2 tbsp vegetable oil",
+            "600ml water"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the teff flour and water and leave it for 2 days at room temperature until sour and bubbly.",
+        "Simmer the onion, garlic and paprika in the oil for 6 minutes until fragrant.",
+        "Add the lentils and water and simmer for 25 minutes until thick and soft.",
+        "Pour a thin layer of batter into a hot pan and cook for 3 minutes until set and covered in holes.",
+        "Serve the lentils on the injera."
+      ],
+      "notes": [
+        "Vegan and gluten-free.",
+        "Fermenting time is waiting time."
+      ],
+      "nutrition": {
+        "kcal": 402,
+        "proteinG": 16,
+        "carbsG": 56,
+        "fatG": 10,
+        "fibreG": 12,
+        "sodiumMg": 320
+      }
+    },
+    {
+      "id": "hummus-from-dried-chickpeas",
+      "title": "Hummus from Dried Chickpeas",
+      "summary": "Ultra-smooth hummus from chickpeas cooked until falling apart, with tahini and lemon.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 20,
+      "cookMinutes": 90,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g dried chickpeas",
+            "1 tsp bicarbonate of soda",
+            "120g tahini",
+            "4 tbsp lemon juice",
+            "2 garlic cloves",
+            "60ml iced water",
+            "1 tsp cumin",
+            "3 tbsp olive oil",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the chickpeas overnight in water with the bicarbonate of soda.",
+        "Drain and simmer in fresh water for 60 minutes until very soft and falling apart.",
+        "Blend the warm chickpeas with the tahini, lemon, garlic, cumin and salt.",
+        "Add the iced water until pale and silky.",
+        "Drizzle with the olive oil and serve at room temperature."
+      ],
+      "notes": [
+        "Vegan.",
+        "Peel the chickpeas for the smoothest result."
+      ],
+      "nutrition": {
+        "kcal": 259,
+        "proteinG": 8,
+        "carbsG": 20,
+        "fatG": 15,
+        "fibreG": 6,
+        "sodiumMg": 280
+      }
+    },
+    {
+      "id": "baba-ganoush-smoky-eggplant-dip",
+      "title": "Baba Ganoush Smoky Eggplant Dip",
+      "summary": "Charred eggplant blended with tahini, lemon and garlic.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 40,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 eggplants",
+            "3 tbsp tahini",
+            "3 tbsp lemon juice",
+            "2 garlic cloves",
+            "2 tbsp olive oil",
+            "1 tbsp parsley",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Char the whole eggplants over a flame or at 230C for 40 minutes until collapsed and blackened.",
+        "Scoop out the flesh and drain for 10 minutes.",
+        "Mash with the tahini, lemon, garlic and salt until creamy.",
+        "Drizzle with oil and parsley."
+      ],
+      "notes": [
+        "Vegan.",
+        "Charring gives the smoky flavour."
+      ],
+      "nutrition": {
+        "kcal": 175,
+        "proteinG": 4,
+        "carbsG": 12,
+        "fatG": 11,
+        "fibreG": 6,
+        "sodiumMg": 120
+      }
+    },
+    {
+      "id": "bibimbap-vegetable-rice-bowl",
+      "title": "Bibimbap Vegetable Rice Bowl",
+      "summary": "Rice topped with seasoned vegetables, fried egg and gochujang.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g jasmine rice",
+            "200g spinach",
+            "2 carrots",
+            "200g bean sprouts",
+            "1 zucchini",
+            "4 eggs",
+            "2 tbsp sesame oil",
+            "2 tbsp gochujang",
+            "2 tbsp soy sauce",
+            "2 garlic cloves"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice until fluffy.",
+        "Blanch the spinach and sprouts for 1 minute each, then season with soy sauce and garlic.",
+        "Stir-fry the carrot and zucchini in oil for 3 minutes until just tender.",
+        "Fry the eggs until the whites are set.",
+        "Arrange everything over the rice and add gochujang."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are firm.",
+        "Vegetarian."
+      ],
+      "nutrition": {
+        "kcal": 538,
+        "proteinG": 20,
+        "carbsG": 70,
+        "fatG": 18,
+        "fibreG": 8,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "vietnamese-egg-coffee-style-breakfast-toast",
+      "title": "Vietnamese Egg Coffee Style Breakfast Toast",
+      "summary": "Banh mi style toast with fried egg, pickled carrot and chilli mayo.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 8,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 slices white bread",
+            "2 eggs",
+            "1 carrot, julienned",
+            "2 tbsp white vinegar",
+            "1 tbsp sugar",
+            "2 tbsp mayonnaise",
+            "1 tsp chilli sauce",
+            "1 handful coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Pickle the carrot in the vinegar and sugar for 10 minutes.",
+        "Fry the eggs until the whites are fully set.",
+        "Toast the bread until golden.",
+        "Mix the mayonnaise and chilli sauce until smooth, then spread on the toast.",
+        "Top with egg, carrot and coriander."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are firm.",
+        "Vegetarian."
+      ],
+      "nutrition": {
+        "kcal": 367,
+        "proteinG": 14,
+        "carbsG": 38,
+        "fatG": 17,
+        "fibreG": 3,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "mojo-verde-canarian-green-sauce",
+      "title": "Mojo Verde Canarian Green Sauce",
+      "summary": "A garlic and coriander green sauce for potatoes and fish.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 bunch coriander",
+            "3 garlic cloves",
+            "1 green chilli",
+            "1 tsp cumin",
+            "100ml olive oil",
+            "2 tbsp white wine vinegar",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the coriander, garlic, chilli and cumin to a rough paste.",
+        "Add the vinegar and oil and blend until emulsified.",
+        "Season and rest for 20 minutes."
+      ],
+      "notes": [
+        "Vegan.",
+        "Serve with boiled potatoes."
+      ],
+      "nutrition": {
+        "kcal": 122,
+        "proteinG": 1,
+        "carbsG": 2,
+        "fatG": 12,
+        "fibreG": 1,
+        "sodiumMg": 70
+      }
+    },
+    {
+      "id": "salsa-roja-roasted-tomato-salsa",
+      "title": "Salsa Roja Roasted Tomato Salsa",
+      "summary": "Smoky roasted tomato and chilli salsa.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 tomatoes",
+            "1 white onion",
+            "3 garlic cloves",
+            "2 chillies",
+            "3 tbsp lime juice",
+            "1 handful coriander",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Roast the tomatoes, onion, garlic and chillies at 220C for 20 minutes until charred.",
+        "Cool them for 5 minutes until safe to handle.",
+        "Blend roughly with the lime, coriander and salt until chunky."
+      ],
+      "notes": [
+        "Vegan.",
+        "Keeps 5 days."
+      ],
+      "nutrition": {
+        "kcal": 59,
+        "proteinG": 2,
+        "carbsG": 9,
+        "fatG": 1,
+        "fibreG": 3,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "sweet-chilli-dipping-sauce",
+      "title": "Sweet Chilli Dipping Sauce",
+      "summary": "A sticky sweet chilli sauce with garlic and rice vinegar.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 10,
+      "servings": 10,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 red chillies",
+            "4 garlic cloves",
+            "200ml rice vinegar",
+            "200g sugar",
+            "100ml water",
+            "1 tbsp cornflour"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the chillies and garlic.",
+        "Simmer with the vinegar, sugar and water for 8 minutes.",
+        "Whisk the cornflour with water and stir in until clear and thick."
+      ],
+      "notes": [
+        "Vegan.",
+        "Thickens as it cools."
+      ],
+      "nutrition": {
+        "kcal": 88,
+        "proteinG": 0,
+        "carbsG": 22,
+        "fatG": 0,
+        "fibreG": 0,
+        "sodiumMg": 5
+      }
+    },
+    {
+      "id": "black-garlic-soy-dipping-sauce",
+      "title": "Black Garlic Soy Dipping Sauce",
+      "summary": "A sweet and savoury black garlic and soy dipping sauce for dumplings.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 black garlic cloves",
+            "4 tbsp soy sauce",
+            "2 tbsp rice vinegar",
+            "1 tsp sesame oil",
+            "1 tsp sugar"
+          ]
+        }
+      ],
+      "steps": [
+        "Mash the black garlic to a smooth paste.",
+        "Whisk in the soy sauce, vinegar, oil and sugar until smooth.",
+        "Rest for 10 minutes so the flavours meld."
+      ],
+      "notes": [
+        "Vegan.",
+        "Keeps a week."
+      ],
+      "nutrition": {
+        "kcal": 50,
+        "proteinG": 2,
+        "carbsG": 6,
+        "fatG": 2,
+        "fibreG": 0,
+        "sodiumMg": 700
+      }
+    }
+  ]
+}

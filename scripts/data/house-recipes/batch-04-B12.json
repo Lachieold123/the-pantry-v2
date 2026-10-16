@@ -1,0 +1,779 @@
+{
+  "about": "House recipes, batch 04 (slice B): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "ethiopian-awaze-beef-tibs-with-peppers",
+      "title": "Ethiopian Awaze Beef Tibs with Peppers",
+      "summary": "Quick-seared Ethiopian beef tibs with onion, capsicum and a spiced awaze-style chilli paste, served with rice.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g beef sirloin, cut in 2cm cubes",
+            "2 brown onion, sliced",
+            "1 green capsicum, sliced",
+            "2 jalapeño, sliced",
+            "3 garlic clove, minced",
+            "1 tbsp ginger, grated",
+            "2 tbsp butter",
+            "1 tbsp chilli powder",
+            "1 tsp sweet paprika",
+            "1/2 tsp ground cardamom",
+            "1/2 tsp ground cumin",
+            "1/4 cup water",
+            "2 cup basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the chilli powder, paprika, cardamom, cumin, 1/2 tsp salt and the water into a thin spice paste.",
+        "Cook the rice by your usual method until tender and fluffy.",
+        "Melt the butter in a large pan over high heat and sear the beef in two batches for 3 minutes each until browned outside. Lift out.",
+        "Fry the onion for 5 minutes until golden, then add the garlic, ginger, capsicum and jalapeño for 2 minutes until fragrant.",
+        "Stir in the spice paste for 1 minute, return the beef and toss for 2 minutes until coated and hot through. Serve with the rice."
+      ],
+      "notes": [
+        "Food safety: cook the beef until browned all over and the centre reaches at least 63°C, resting it briefly.",
+        "Ethiopia. Dinner. Gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 630,
+        "proteinG": 38,
+        "carbsG": 68,
+        "fatG": 22,
+        "fibreG": 4,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "cape-malay-denningvleis-tamarind-lamb",
+      "title": "Cape Malay Denningvleis Tamarind Lamb",
+      "summary": "A slow-cooked Cape Malay lamb stew sweet and sour with tamarind, bay and allspice, falling apart over yellow rice.",
+      "cuisine": "south-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 110,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1kg lamb shoulder, cut in 4cm pieces",
+            "2 brown onion, sliced",
+            "3 garlic clove, minced",
+            "3 tbsp tamarind paste",
+            "2 tbsp brown sugar",
+            "4 bay leaf",
+            "1 tsp allspice",
+            "1 tsp ground turmeric",
+            "1 cinnamon stick",
+            "2 cup water",
+            "2 tbsp neutral oil",
+            "2 cup basmati rice",
+            "1/2 cup sultana"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the lamb in the oil in a heavy pot over medium-high heat for 8 minutes in batches until deeply coloured. Lift out.",
+        "Cook the onion in the same pot for 6 minutes until soft and golden, then add the garlic, allspice and cinnamon for 1 minute until fragrant.",
+        "Return the lamb with the tamarind, sugar, bay, 1 tsp salt and water. Cover and simmer gently for 90 minutes until the lamb is very tender and the sauce thick.",
+        "Cook the rice with the turmeric and sultana by your usual method until tender and fluffy.",
+        "Serve the lamb and sauce over the rice."
+      ],
+      "notes": [
+        "Food safety: cook the lamb until tender and at least 75°C in the centre; refrigerate leftovers within 2 hours.",
+        "Cape Malay. Dinner. Gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 638,
+        "proteinG": 36,
+        "carbsG": 68,
+        "fatG": 24,
+        "fibreG": 3,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "fijian-coconut-curry-fish-with-pumpkin",
+      "title": "Fijian Coconut Curry Fish with Pumpkin",
+      "summary": "Fijian-style fish in a gentle turmeric coconut curry with pumpkin and a little heat, served with rice.",
+      "cuisine": "pacific-islands",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g white fish fillet, cut in chunks",
+            "400ml coconut milk",
+            "400g pumpkin, cut in 3cm cubes",
+            "1 brown onion, diced",
+            "3 garlic clove, minced",
+            "1 tbsp ginger, grated",
+            "1 tbsp curry powder",
+            "1 tsp ground turmeric",
+            "1 green chilli, sliced",
+            "1 lime",
+            "1 tbsp neutral oil",
+            "2 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a wide pan over medium heat and cook the onion for 5 minutes until soft. Add the garlic, ginger, curry powder and turmeric and stir for 1 minute until fragrant.",
+        "Pour in the coconut milk, add the pumpkin and chilli, and simmer for 12 minutes until the pumpkin is tender.",
+        "Cook the rice by your usual method until tender and fluffy.",
+        "Nestle in the fish and simmer for 5 minutes until opaque and flaking. Squeeze over the lime and season with salt.",
+        "Serve the curry over the rice."
+      ],
+      "notes": [
+        "Food safety: cook the fish until opaque and flakes easily, to at least 63°C, and eat the same day.",
+        "Fiji. Dinner. Gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 642,
+        "proteinG": 34,
+        "carbsG": 66,
+        "fatG": 26,
+        "fibreG": 4,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "samaki-wa-kupaka-swahili-grilled-fish-in-coconut-tamarind",
+      "title": "Samaki wa Kupaka Swahili Grilled Fish in Coconut Tamarind",
+      "summary": "Coastal Swahili fish grilled and coated in a coconut, tamarind and cumin sauce, with coconut-flavoured rice.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 white fish fillet",
+            "1 cup coconut milk",
+            "2 tbsp tamarind paste",
+            "3 garlic clove, minced",
+            "1 tsp ground cumin",
+            "1 tsp ground coriander",
+            "1 tsp ground turmeric",
+            "1 red chilli, sliced",
+            "1 tbsp neutral oil",
+            "2 cup basmati rice",
+            "1/2 cup coconut milk",
+            "1 lime"
+          ]
+        }
+      ],
+      "steps": [
+        "Season the fish with turmeric and salt. Cook the rice with the extra 1/2 cup coconut milk and water by your usual method until tender and fluffy.",
+        "Heat the oil in a pan over medium-high heat and cook the fish for 3 minutes each side until golden and just cooked. Lift onto a tray.",
+        "In the same pan, fry the garlic, cumin, coriander and chilli for 1 minute until fragrant. Add the coconut milk and tamarind and simmer for 6 minutes until slightly thick.",
+        "Return the fish and spoon over the sauce for 2 minutes until heated through.",
+        "Serve with the rice and lime wedges."
+      ],
+      "notes": [
+        "Food safety: cook the fish until it flakes easily and reaches 63°C; eat the same day.",
+        "Swahili coast. Dinner. Gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 658,
+        "proteinG": 36,
+        "carbsG": 64,
+        "fatG": 28,
+        "fibreG": 3,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "sri-lankan-devilled-chicken",
+      "title": "Sri Lankan Devilled Chicken",
+      "summary": "Sri Lankan style devilled chicken: crisp fried pieces tossed in a sweet, sour and chilli sauce with capsicum and onion.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g chicken thigh, cut in bite-size pieces",
+            "1 cup neutral oil",
+            "2 tbsp cornflour",
+            "1 egg",
+            "2 brown onion, cut in wedges",
+            "1 capsicum, cut in chunks",
+            "3 garlic clove, minced",
+            "1 tbsp ginger, grated",
+            "2 tbsp tomato sauce",
+            "1 tbsp sweet chilli sauce",
+            "1 tbsp soy sauce",
+            "1 tbsp white vinegar",
+            "1 tsp chilli flakes",
+            "2 cup basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the chicken with the cornflour, egg and a pinch of salt. Cook the rice by your usual method until tender and fluffy.",
+        "Heat the oil in a deep pan to 170C and fry the chicken in batches for 5 minutes until golden and cooked through. Drain on paper.",
+        "Pour off all but 1 tbsp of oil. Stir-fry the onion and capsicum for 3 minutes until just tender but still bright.",
+        "Add the garlic, ginger and chilli flakes for 30 seconds until fragrant, then the tomato sauce, sweet chilli sauce, soy and vinegar. Simmer for 2 minutes until glossy.",
+        "Toss the chicken through the sauce for 1 minute until coated and serve over the rice."
+      ],
+      "notes": [
+        "Food safety: fry the chicken until golden and cooked through to at least 75°C, and keep the eggs fully cooked.",
+        "Sri Lanka. Dinner."
+      ],
+      "nutrition": {
+        "kcal": 740,
+        "proteinG": 40,
+        "carbsG": 76,
+        "fatG": 30,
+        "fibreG": 3,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "sri-lankan-ambul-thiyal-sour-fish-curry",
+      "title": "Sri Lankan Ambul Thiyal Sour Fish Curry",
+      "summary": "Southern Sri Lankan sour fish curry, dry-cooked with black pepper and goraka-style tamarind until dark and sticky.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g white fish fillet, cut in 3cm cubes",
+            "2 tbsp tamarind paste",
+            "2 tsp black pepper",
+            "1 tsp ground turmeric",
+            "4 garlic clove, minced",
+            "1 tbsp ginger, grated",
+            "10g curry leaf",
+            "1 cinnamon stick",
+            "1/2 cup water",
+            "1 tsp salt",
+            "1 tbsp coconut oil",
+            "2 cup basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the tamarind, pepper, turmeric, garlic, ginger and salt into a paste and coat the fish in it.",
+        "Put the tuna in a wide pan with the curry leaf, cinnamon stick, coconut oil and water.",
+        "Cover and simmer over low heat for 12 minutes until the fish is cooked through and the liquid is almost gone.",
+        "Uncover and cook for 5 minutes, stirring gently, until the pieces are dark, dry and coated.",
+        "Cook the rice by your usual method until tender and fluffy, and serve with the fish."
+      ],
+      "notes": [
+        "Food safety: cook the fish until it reaches 63°C in the thickest part; eat the same day.",
+        "Sri Lanka. Dinner. Gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 506,
+        "proteinG": 36,
+        "carbsG": 62,
+        "fatG": 12,
+        "fibreG": 3,
+        "sodiumMg": 750
+      }
+    },
+    {
+      "id": "dak-bokkeumtang-korean-braised-chicken-and-potatoes",
+      "title": "Dak Bokkeumtang Korean Braised Chicken and Potatoes",
+      "summary": "Korean spicy braised chicken with potato and carrot in a gochujang and soy sauce that turns sticky and glossy.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g bone-in chicken thigh",
+            "3 potato, cut in chunks",
+            "2 carrot, cut in chunks",
+            "1 brown onion, cut in wedges",
+            "3 tbsp gochujang",
+            "1 tbsp gochugaru",
+            "3 tbsp soy sauce",
+            "1 tbsp honey",
+            "4 garlic clove, minced",
+            "1 tbsp sesame oil",
+            "1 1/2 cup water",
+            "2 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the gochujang, gochugaru, soy sauce, honey, garlic and sesame oil in a large pot, then stir in the water.",
+        "Add the chicken and bring to the boil, then cover and simmer for 10 minutes.",
+        "Add the potato, carrot and onion, cover and simmer for 15 minutes until the vegetables are tender.",
+        "Uncover and cook on medium-high for 8 minutes until the sauce is thick and glossy and the chicken is cooked through.",
+        "Cook the rice by your usual method until tender and fluffy, then serve the chicken and sauce over it."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until the juices run clear and it reaches 75°C.",
+        "Korea. Dinner."
+      ],
+      "nutrition": {
+        "kcal": 680,
+        "proteinG": 38,
+        "carbsG": 84,
+        "fatG": 20,
+        "fibreG": 6,
+        "sodiumMg": 1500
+      }
+    },
+    {
+      "id": "khua-kling-southern-thai-dry-pork-curry",
+      "title": "Khua Kling Southern Thai Dry Pork Curry",
+      "summary": "Fiery dry-fried southern Thai pork with turmeric, lemongrass and makrut lime leaf, served with rice.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g pork mince",
+            "2 tbsp red curry paste",
+            "1 tsp ground turmeric",
+            "1 stem lemongrass, finely sliced",
+            "4 makrut lime leaf, finely sliced",
+            "3 garlic clove, minced",
+            "2 bird's eye chilli, sliced",
+            "1 tbsp fish sauce",
+            "1 tsp palm sugar",
+            "1 tbsp neutral oil",
+            "2 cup jasmine rice",
+            "1 cucumber, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice by your usual method until tender and fluffy.",
+        "Heat the oil in a wok over medium heat and fry the curry paste, turmeric, lemongrass and garlic for 2 minutes until fragrant.",
+        "Add the pork and stir-fry over high heat for 8 minutes, breaking it up, until fully cooked and dry with no liquid left.",
+        "Add the fish sauce, palm sugar, chilli and lime leaf and stir for 2 minutes until the pork is dark and aromatic.",
+        "Serve with the rice and cucumber slices."
+      ],
+      "notes": [
+        "Food safety: cook the pork mince until it reaches 75°C and no pink remains.",
+        "Southern Thailand. Dinner. Gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 598,
+        "proteinG": 30,
+        "carbsG": 64,
+        "fatG": 24,
+        "fibreG": 3,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "bo-kho-vietnamese-beef-stew-with-carrot",
+      "title": "Bo Kho Vietnamese Beef Stew with Carrot",
+      "summary": "Vietnamese lemongrass beef stew with star anise, carrot and tomato, thick with annatto-coloured sauce, eaten with.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 110,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1kg beef chuck, cut in 4cm cubes",
+            "3 carrot, cut in chunks",
+            "2 stem lemongrass, bruised",
+            "2 star anise",
+            "1 cinnamon stick",
+            "3 garlic clove, minced",
+            "2 shallot, chopped",
+            "2 tbsp tomato paste",
+            "2 tbsp fish sauce",
+            "1 tbsp annatto seed",
+            "3 cup water",
+            "1 tbsp neutral oil",
+            "2 cup jasmine rice",
+            "1/2 cup coriander, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the oil with the annatto seed in a small pan for 1 minute until the oil turns orange, then strain and discard the seed.",
+        "Brown the beef in the orange oil in a heavy pot over medium-high heat for 8 minutes until coloured. Add the shallot and garlic for 1 minute until fragrant.",
+        "Add the tomato paste, lemongrass, star anise, cinnamon, fish sauce and water. Cover and simmer gently for 80 minutes until the beef is tender.",
+        "Add the carrot and simmer uncovered for 20 minutes until the carrot is soft and the sauce thick.",
+        "Cook the rice by your usual method until tender and fluffy. Serve the stew over the rice with coriander."
+      ],
+      "notes": [
+        "Food safety: simmer the beef until tender and at least 75°C in the centre; cool and refrigerate leftovers within 2 hours.",
+        "Vietnam. Dinner. Gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 606,
+        "proteinG": 38,
+        "carbsG": 62,
+        "fatG": 22,
+        "fibreG": 4,
+        "sodiumMg": 1150
+      }
+    },
+    {
+      "id": "ayam-bakar-taliwang-lombok-grilled-chicken",
+      "title": "Ayam Bakar Taliwang Lombok Grilled Chicken",
+      "summary": "Lombok chilli-garlic chicken roasted until charred, brushed with a spicy sweet sambal and served with rice.",
+      "cuisine": "indonesian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "900g chicken drumstick",
+            "8 red chilli",
+            "3 bird's eye chilli",
+            "5 shallot",
+            "5 garlic clove",
+            "2 tomato",
+            "1 tbsp shrimp paste",
+            "2 tbsp kecap manis",
+            "1 tbsp palm sugar",
+            "2 tbsp lime juice",
+            "3 tbsp neutral oil",
+            "2 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the chillies, shallot, garlic, tomato and shrimp paste to a coarse paste. Fry in the oil in a pan for 10 minutes until darkened and the oil separates.",
+        "Stir in the kecap manis, palm sugar, lime juice and 1 tsp salt, then cool slightly.",
+        "Toss the chicken in half the sambal and roast on a tray at 200C for 30 minutes, turning once, until deep brown and cooked through.",
+        "Cook the rice by your usual method until tender and fluffy.",
+        "Brush the chicken with the remaining sambal and grill for 3 minutes until charred at the edges, then serve with the rice."
+      ],
+      "notes": [
+        "Food safety: roast the chicken until it reaches 75°C at the thickest part and the juices run clear.",
+        "Lombok. Dinner."
+      ],
+      "nutrition": {
+        "kcal": 640,
+        "proteinG": 38,
+        "carbsG": 66,
+        "fatG": 24,
+        "fibreG": 4,
+        "sodiumMg": 1000
+      }
+    },
+    {
+      "id": "ikan-bakar-malaysian-foil-baked-fish-with-sambal",
+      "title": "Ikan Bakar Malaysian Foil-Baked Fish with Sambal",
+      "summary": "Malaysian banana-leaf-style fish baked in foil with a chilli, lemongrass and shrimp paste sambal, served with rice.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 white fish fillet",
+            "4 red chilli",
+            "3 shallot",
+            "3 garlic clove",
+            "1 stem lemongrass, sliced",
+            "1 tsp shrimp paste",
+            "1 tbsp tamarind paste",
+            "1 tbsp palm sugar",
+            "1 tbsp neutral oil",
+            "1 lime",
+            "2 cup jasmine rice",
+            "1 cucumber, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the chillies, shallot, garlic, lemongrass, shrimp paste and tamarind to a paste. Fry in the oil for 6 minutes until darkened and fragrant, then add the palm sugar and 1/2 tsp salt.",
+        "Spread the sambal over both sides of each fish fillet and wrap each in foil, sealing the edges.",
+        "Bake the parcels at 200C for 15 minutes until the fish is opaque and flakes easily.",
+        "Cook the rice by your usual method until tender and fluffy.",
+        "Open the parcels and finish under the grill for 3 minutes until the sambal caramelises. Serve with the rice, cucumber and lime."
+      ],
+      "notes": [
+        "Food safety: cook the fish until it reaches 63°C and flakes easily; eat the same day.",
+        "Malaysia. Dinner. Gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 498,
+        "proteinG": 34,
+        "carbsG": 62,
+        "fatG": 12,
+        "fibreG": 3,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "oxtail-kare-kare-filipino-peanut-stew",
+      "title": "Oxtail Kare-Kare Filipino Peanut Stew",
+      "summary": "Filipino oxtail stew in a rich peanut sauce with green beans and eggplant, traditionally served with a salty.",
+      "cuisine": "filipino",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 30,
+      "cookMinutes": 170,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1.5kg oxtail",
+            "1/2 cup peanut butter",
+            "1 brown onion, diced",
+            "4 garlic clove, minced",
+            "1 tbsp annatto seed",
+            "2 tbsp neutral oil",
+            "2 tbsp fish sauce",
+            "1 eggplant, sliced",
+            "200g green bean, cut in lengths",
+            "1 bok choy, halved",
+            "1 tbsp shrimp paste",
+            "6 cup water",
+            "2 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the oxtail in the water for 2 hours, skimming, until the meat is tender and pulls from the bone. Lift out and keep 3 cups of the broth.",
+        "Warm the oil with the annatto seed for 1 minute until the oil turns orange, then strain out the seed. Cook the onion and garlic in the oil for 5 minutes until soft.",
+        "Whisk in the peanut butter and the reserved broth and simmer for 15 minutes until thick and glossy, seasoning with the fish sauce.",
+        "Add the oxtail, eggplant and green beans and simmer for 10 minutes until tender, adding the bok choy for the final 2 minutes until wilted.",
+        "Cook the rice by your usual method until tender and fluffy. Serve with the stew and shrimp paste on the side."
+      ],
+      "notes": [
+        "Food safety: simmer the oxtail until tender and at least 75°C throughout; refrigerate leftovers within 2 hours.",
+        "Visayan and Luzon tradition. Dinner. Gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 690,
+        "proteinG": 40,
+        "carbsG": 40,
+        "fatG": 40,
+        "fibreG": 5,
+        "sodiumMg": 1300
+      }
+    },
+    {
+      "id": "rajasthani-laal-maas-fiery-lamb",
+      "title": "Rajasthani Laal Maas Fiery Lamb",
+      "summary": "A Rajasthani fiery red lamb curry cooked in ghee with Kashmiri chilli, garlic and yoghurt, hot but richly flavoured.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 25,
+      "cookMinutes": 100,
+      "servings": 5,
+      "onePot": true,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "900g lamb shoulder, cut in 4cm cubes",
+            "1/2 cup Greek yoghurt",
+            "10 dried chilli",
+            "1 tbsp Kashmiri chilli powder",
+            "8 garlic clove",
+            "2 brown onion, sliced",
+            "3 tbsp ghee",
+            "1 tbsp coriander seed",
+            "1 tsp cumin seed",
+            "4 black cardamom pod",
+            "2 bay leaf",
+            "1 cinnamon stick",
+            "2 cup water",
+            "2 cup basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the dried chillies in hot water for 15 minutes, then blend with the garlic and Kashmiri chilli powder to a smooth paste.",
+        "Heat the ghee in a heavy pot over medium heat and fry the cumin seed, coriander seed, cardamom, bay and cinnamon for 1 minute until fragrant. Add the onion and cook for 10 minutes until deep golden.",
+        "Add the lamb and brown for 8 minutes, then stir in the chilli paste for 3 minutes until the oil rises. Whisk in the yoghurt gradually so it does not split.",
+        "Add the water and 1 tsp salt, cover and simmer for 75 minutes until the lamb is very tender and the sauce is thick and red.",
+        "Cook the rice by your usual method until tender and fluffy, and serve with the lamb."
+      ],
+      "notes": [
+        "Food safety: cook the lamb until tender and at least 75°C in the centre; refrigerate leftovers within 2 hours.",
+        "Rajasthan. Dinner. Gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 696,
+        "proteinG": 38,
+        "carbsG": 62,
+        "fatG": 32,
+        "fibreG": 4,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "hawaiian-loco-moco-rice-bowls",
+      "title": "Hawaiian Loco Moco Rice Bowls",
+      "summary": "Hawaiian loco moco: rice topped with a beef patty, a runny fried egg and onion gravy.",
+      "cuisine": "pacific-islands",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "500g beef mince",
+            "1 egg",
+            "2 tbsp breadcrumbs",
+            "1 brown onion, sliced",
+            "3 tbsp butter",
+            "2 tbsp plain flour",
+            "1 1/2 cup beef stock",
+            "1 tbsp soy sauce",
+            "4 egg",
+            "2 cup jasmine rice",
+            "2 spring onion, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the beef mince with the egg, breadcrumbs and 1/2 tsp salt, shape into 4 patties. Cook the rice by your usual method until tender and fluffy.",
+        "Fry the patties in a pan over medium heat for 5 minutes each side until browned and cooked through. Rest them on a plate.",
+        "Cook the onion in 1 tbsp butter for 6 minutes until golden. Stir in the flour for 1 minute, then whisk in the stock and soy sauce and simmer for 4 minutes until it thickens into gravy.",
+        "Fry the 4 eggs in the remaining butter for 3 minutes until the whites are set and the yolks stay soft.",
+        "Pile rice into bowls, add a patty, an egg, spoon over the gravy and scatter with spring onion."
+      ],
+      "notes": [
+        "Food safety: cook the patties until they reach 75°C in the centre; cook the egg whites firm. Avoid soft yolks for vulnerable eaters.",
+        "Hawaii. Lunch."
+      ],
+      "nutrition": {
+        "kcal": 702,
+        "proteinG": 36,
+        "carbsG": 66,
+        "fatG": 32,
+        "fibreG": 3,
+        "sodiumMg": 1000
+      }
+    }
+  ]
+}

@@ -1,0 +1,750 @@
+{
+  "about": "House recipes, batch 04 (slice B): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "orange-almond-biscotti",
+      "title": "Orange Almond Biscotti",
+      "summary": "Twice-baked Italian biscuits with almonds and orange zest, made for dunking.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "servings": 10,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups plain flour",
+            "1 cup caster sugar",
+            "1 tsp baking powder",
+            "2 eggs",
+            "1 tbsp orange zest",
+            "1 cup whole almonds",
+            "1 tsp vanilla extract"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional) and line a tray. Mix the flour, sugar and baking powder.",
+        "Beat the eggs with the zest and vanilla, stir into the flour, then knead in the almonds to form a stiff dough.",
+        "Shape into a log 30cm long and 6cm wide and bake for 30 minutes until firm and pale golden. Cool for 15 minutes.",
+        "Slice the log on the diagonal into 20 pieces, 1.5cm thick, lay cut side down and bake for 15 minutes more, turning once, until dry and golden.",
+        "Cool on a rack for 20 minutes, where they crisp up further."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 biscotti.",
+        "Food safety: wash hands after handling raw egg."
+      ],
+      "nutrition": {
+        "kcal": 198,
+        "proteinG": 5,
+        "carbsG": 30,
+        "fatG": 6,
+        "fibreG": 2,
+        "sodiumMg": 40
+      }
+    },
+    {
+      "id": "soft-ginger-biscuits",
+      "title": "Soft Ginger Biscuits",
+      "summary": "Spicy golden-brown ginger biscuits with a chewy centre.",
+      "cuisine": "british",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 12,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups plain flour",
+            "100g butter, softened",
+            "1/2 cup brown sugar",
+            "1/4 cup golden syrup",
+            "1 tbsp ground ginger",
+            "1 tsp bicarbonate of soda",
+            "1 egg yolk"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional) and line two trays.",
+        "Beat the butter, sugar and golden syrup, then beat in the yolk.",
+        "Stir in the flour, ginger and bicarbonate of soda to make a soft dough.",
+        "Roll into 20 balls, place 5cm apart and flatten slightly.",
+        "Bake for 12 minutes until golden at the edges and cracked on top. Cool for 10 minutes on the tray."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 to 3 biscuits.",
+        "Food safety: wash hands after handling raw egg yolk."
+      ],
+      "nutrition": {
+        "kcal": 251,
+        "proteinG": 4,
+        "carbsG": 38,
+        "fatG": 9,
+        "fibreG": 1,
+        "sodiumMg": 260
+      }
+    },
+    {
+      "id": "fudgy-brownie-bites",
+      "title": "Fudgy Brownie Bites",
+      "summary": "Rich, fudgy chocolate squares with a crackly top.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 22,
+      "servings": 9,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g butter",
+            "200g dark chocolate",
+            "3/4 cup caster sugar",
+            "3 eggs",
+            "3/4 cup plain flour",
+            "2 tbsp cocoa",
+            "1/2 cup walnuts, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional) and line a 20cm square tin.",
+        "Melt the butter and chocolate together over low heat, stirring until smooth, and cool for 5 minutes.",
+        "Whisk in the sugar and eggs, then fold in the flour and cocoa.",
+        "Stir through the walnuts, pour into the tin and bake for 22 minutes until the top is crackly and a skewer has a few moist crumbs.",
+        "Cool in the tin for 30 minutes, then cut into 18 squares."
+      ],
+      "notes": [
+        "Plus 30 minutes cooling.",
+        "Snack. Vegetarian. Per serving: 2 squares.",
+        "Food safety: wash hands after handling raw egg."
+      ],
+      "nutrition": {
+        "kcal": 304,
+        "proteinG": 5,
+        "carbsG": 25,
+        "fatG": 20,
+        "fibreG": 2,
+        "sodiumMg": 90
+      }
+    },
+    {
+      "id": "mango-yoghurt-ice-blocks",
+      "title": "Mango Yoghurt Ice Blocks",
+      "summary": "Creamy mango and yoghurt ice blocks with a pinch of ground ginger.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 mangoes, peeled and chopped",
+            "1 cup natural yoghurt",
+            "2 tbsp honey",
+            "1/4 tsp ground ginger",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the mango, yoghurt, honey, ginger and lemon juice for 2 minutes until completely smooth.",
+        "Pour into 6 ice-block moulds.",
+        "Freeze for 5 hours until solid.",
+        "Run the moulds under warm water for 10 seconds to release.",
+        "Eat straight away while the ice block is firm and before it starts to drip."
+      ],
+      "notes": [
+        "Plus 5 hours freezing.",
+        "Snack. Vegetarian. Per serving: 1 ice block."
+      ],
+      "nutrition": {
+        "kcal": 75,
+        "proteinG": 2,
+        "carbsG": 14,
+        "fatG": 1,
+        "fibreG": 1,
+        "sodiumMg": 35
+      }
+    },
+    {
+      "id": "baked-polenta-chips",
+      "title": "Baked Polenta Chips",
+      "summary": "Crisp-edged baked polenta fingers with rosemary and sea salt.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup polenta",
+            "4 cups water",
+            "1 tsp salt",
+            "2 tbsp olive oil",
+            "1 tsp chopped rosemary",
+            "1/2 cup natural yoghurt"
+          ]
+        }
+      ],
+      "steps": [
+        "Bring the water and salt to the boil, whisk in the polenta and cook over low heat for 10 minutes, stirring, until very thick.",
+        "Spread into a lined 20cm tin and cool for 1 hour until firm.",
+        "Heat the oven to 220°C fan (240°C conventional). Cut into 16 chips and toss with the oil and rosemary.",
+        "Bake on a tray for 30 minutes, turning once, until golden and crisp at the edges.",
+        "Serve with the yoghurt as a dip."
+      ],
+      "notes": [
+        "Plus 1 hour setting.",
+        "Snack. Vegetarian. Per serving: 4 chips with dip."
+      ],
+      "nutrition": {
+        "kcal": 216,
+        "proteinG": 5,
+        "carbsG": 30,
+        "fatG": 8,
+        "fibreG": 2,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "cheese-and-tomato-pizza-scrolls",
+      "title": "Cheese and Tomato Pizza Scrolls",
+      "summary": "Soft yeast-free scrolls spread with tomato paste and cheese, a classic school lunchbox snack.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups self-raising flour",
+            "3/4 cup natural yoghurt",
+            "1/4 cup tomato paste",
+            "1 tsp dried oregano",
+            "1 cup grated mozzarella",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional) and line a tray.",
+        "Mix the flour, yoghurt and salt into a soft dough and knead for 2 minutes until smooth.",
+        "Roll into a 25 x 35cm rectangle, spread with the tomato paste, then scatter with oregano and mozzarella.",
+        "Roll up from the long side and cut into 12 slices.",
+        "Place cut side up and bake for 20 minutes until puffed and golden. Cool for 5 minutes."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 scrolls."
+      ],
+      "nutrition": {
+        "kcal": 254,
+        "proteinG": 11,
+        "carbsG": 38,
+        "fatG": 6,
+        "fibreG": 2,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "potato-latkes",
+      "title": "Potato Latkes",
+      "summary": "Crisp-edged grated potato pancakes with onion, served with apple and sour cream.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g potato, grated",
+            "1 onion, grated",
+            "2 eggs",
+            "1/4 cup plain flour",
+            "1 tsp salt",
+            "1/2 cup neutral oil",
+            "1 apple, grated",
+            "1/2 cup sour cream"
+          ]
+        }
+      ],
+      "steps": [
+        "Squeeze the grated potato and onion hard in a tea towel to remove the liquid.",
+        "Mix with the eggs, flour and salt.",
+        "Heat the oil in a wide frying pan over medium heat and spoon in heaped tablespoons, flattening each into a disc.",
+        "Fry for 3 to 4 minutes each side until deep golden and crisp, draining on paper towel.",
+        "Serve hot with the grated apple and sour cream."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 4 latkes.",
+        "Food safety: wash hands after handling raw egg."
+      ],
+      "nutrition": {
+        "kcal": 367,
+        "proteinG": 9,
+        "carbsG": 38,
+        "fatG": 19,
+        "fibreG": 4,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "fish-fingers-with-tartare-dip",
+      "title": "Fish Fingers with Tartare Dip",
+      "summary": "Crumb-coated white fish strips baked until crisp, with a quick pickle and yoghurt dip.",
+      "cuisine": "british",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g firm white fish fillets, such as barramundi",
+            "1/2 cup plain flour",
+            "1 egg",
+            "1 cup breadcrumbs",
+            "1 tbsp olive oil",
+            "1/2 cup natural yoghurt",
+            "2 tbsp chopped pickles",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C fan (240°C conventional). Cut the fish into 12 fingers.",
+        "Roll in the flour, then the beaten egg, then the breadcrumbs.",
+        "Place on a lined tray, drizzle with the oil and bake for 15 minutes, turning once, until golden and the fish flakes easily and reaches at least 63°C.",
+        "Mix the yoghurt, pickles and lemon juice for the dip.",
+        "Serve the fish fingers hot straight from the oven with the dip alongside."
+      ],
+      "notes": [
+        "Snack. Per serving: 3 fish fingers with dip.",
+        "Food safety: keep raw fish refrigerated, cook to at least 63°C and wash hands and boards after handling raw fish and egg."
+      ],
+      "nutrition": {
+        "kcal": 299,
+        "proteinG": 26,
+        "carbsG": 28,
+        "fatG": 9,
+        "fibreG": 1,
+        "sodiumMg": 480
+      }
+    },
+    {
+      "id": "cheesy-corn-muffins",
+      "title": "Cheesy Corn Muffins",
+      "summary": "Savoury cornbread muffins with cheddar and chives.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup polenta",
+            "1 cup plain flour",
+            "1 tbsp baking powder",
+            "1 tsp salt",
+            "1 cup milk",
+            "1 egg",
+            "1/4 cup neutral oil",
+            "1 cup frozen corn",
+            "100g cheddar, grated",
+            "2 tbsp chopped chives"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional) and line a 6-hole muffin tin.",
+        "Mix the polenta, flour, baking powder and salt.",
+        "Whisk the milk, egg and oil, then stir into the dry mix with the corn, cheddar and chives until just combined.",
+        "Divide between the holes and bake for 20 minutes until golden and a skewer comes out clean.",
+        "Cool in the tin for 5 minutes."
+      ],
+      "notes": [
+        "Snack. Per serving: 1 muffin.",
+        "Food safety: wash hands after handling raw egg."
+      ],
+      "nutrition": {
+        "kcal": 378,
+        "proteinG": 13,
+        "carbsG": 44,
+        "fatG": 16,
+        "fibreG": 3,
+        "sodiumMg": 820
+      }
+    },
+    {
+      "id": "sweet-potato-wedges-with-yoghurt-dip",
+      "title": "Sweet Potato Wedges with Yoghurt Dip",
+      "summary": "Crisp-edged baked sweet potato wedges with smoked paprika and a lemony yoghurt dip.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g sweet potato",
+            "2 tbsp olive oil",
+            "2 tsp smoked paprika",
+            "1 tsp salt",
+            "1 cup natural yoghurt",
+            "1 tbsp lemon juice",
+            "1 clove garlic, crushed"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C fan (240°C conventional).",
+        "Cut the sweet potato into thick wedges and toss with the oil, paprika and salt.",
+        "Spread on two trays without crowding and roast for 35 minutes, turning once, until the edges are crisp and a knife slides in easily.",
+        "Stir the yoghurt, lemon juice and garlic together.",
+        "Serve the wedges hot with the dip."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: a quarter of the wedges with dip."
+      ],
+      "nutrition": {
+        "kcal": 310,
+        "proteinG": 7,
+        "carbsG": 49,
+        "fatG": 8,
+        "fibreG": 7,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "spinach-and-ricotta-filo-rolls",
+      "title": "Spinach and Ricotta Filo Rolls",
+      "summary": "Crisp filo cigars filled with spinach, ricotta and lemon.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g baby spinach",
+            "250g ricotta",
+            "1 egg",
+            "1 tbsp lemon zest",
+            "1/4 tsp ground nutmeg",
+            "1/2 tsp salt",
+            "8 sheets filo pastry",
+            "3 tbsp olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Wilt the spinach in a pan for 2 minutes, cool for 10 minutes, squeeze very dry and chop.",
+        "Mix with the ricotta, egg, lemon zest, nutmeg and salt.",
+        "Heat the oven to 200°C fan (220°C conventional). Halve each filo sheet, brush with oil, spoon filling along one short edge and roll into a cigar, folding in the sides.",
+        "Place seam down on a lined tray, brush with the remaining oil and bake for 20 minutes until deep golden.",
+        "Rest for 5 minutes before eating."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 or 3 rolls.",
+        "Food safety: wash hands after handling raw egg."
+      ],
+      "nutrition": {
+        "kcal": 215,
+        "proteinG": 10,
+        "carbsG": 18,
+        "fatG": 11,
+        "fibreG": 2,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "prawn-rice-paper-rolls-with-peanut-dip",
+      "title": "Prawn Rice Paper Rolls with Peanut Dip",
+      "summary": "Fresh rice paper rolls with cooked prawns, herbs and vermicelli, served with a peanut dipping sauce.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 5,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "12 cooked prawns, halved lengthways",
+            "12 rice paper sheets",
+            "100g rice vermicelli",
+            "1 carrot, cut into thin sticks",
+            "1 cucumber, cut into thin sticks",
+            "1 cup mint leaves",
+            "1/4 cup peanut butter",
+            "2 tbsp hoisin sauce",
+            "2 tbsp warm water",
+            "1 tbsp lime juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the vermicelli in boiling water for 5 minutes until tender, drain and rinse under cold water.",
+        "Dip a rice paper sheet in warm water for 10 seconds until just pliable and lay flat.",
+        "Arrange 2 prawn halves, a little vermicelli, carrot, cucumber and mint, then fold in the sides and roll up tightly.",
+        "Repeat with the remaining sheets until you have 12 tightly rolled rolls.",
+        "Whisk the peanut butter, hoisin, warm water and lime juice until smooth and serve for dipping."
+      ],
+      "notes": [
+        "Snack. Per serving: 3 rolls with dip.",
+        "Food safety: use cooked prawns kept below 5°C, eat the rolls within 4 hours of making, and discard any left out for more than 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 336,
+        "proteinG": 14,
+        "carbsG": 46,
+        "fatG": 10,
+        "fibreG": 3,
+        "sodiumMg": 760
+      }
+    },
+    {
+      "id": "oat-and-raisin-cookies",
+      "title": "Oat and Raisin Cookies",
+      "summary": "Chewy oat cookies packed with raisins and cinnamon.",
+      "cuisine": "american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 12,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "125g butter, softened",
+            "3/4 cup brown sugar",
+            "1 egg",
+            "1 cup plain flour",
+            "1 1/2 cups rolled oats",
+            "1 cup raisins",
+            "1/2 tsp bicarbonate of soda",
+            "1 tsp ground cinnamon"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C fan (180°C conventional) and line two trays.",
+        "Beat the butter and sugar until pale, then beat in the egg.",
+        "Fold in the flour, oats, raisins, bicarbonate of soda and cinnamon.",
+        "Roll into 16 balls, place 5cm apart and flatten slightly.",
+        "Bake for 12 minutes until golden at the edges but soft in the middle. Cool for 10 minutes on the tray."
+      ],
+      "notes": [
+        "Snack. Vegetarian. Per serving: 2 cookies.",
+        "Food safety: wash hands after handling raw egg."
+      ],
+      "nutrition": {
+        "kcal": 349,
+        "proteinG": 5,
+        "carbsG": 56,
+        "fatG": 11,
+        "fibreG": 3,
+        "sodiumMg": 170
+      }
+    },
+    {
+      "id": "tomato-basil-bruschetta-bites",
+      "title": "Tomato Basil Bruschetta Bites",
+      "summary": "Crisp baguette slices topped with juicy tomatoes, basil and garlic.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 baguette, cut into 16 slices",
+            "3 tbsp olive oil",
+            "4 ripe tomatoes, finely diced",
+            "1 clove garlic, crushed",
+            "1/2 cup basil leaves, torn",
+            "1 tbsp balsamic vinegar",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional).",
+        "Brush the baguette slices with 2 tbsp oil and bake for 8 minutes until golden and crisp.",
+        "Mix the tomato, garlic, basil, vinegar, salt and remaining oil, and rest for 10 minutes.",
+        "Spoon onto the toasts just before serving.",
+        "Eat within 15 minutes so the bread stays crisp."
+      ],
+      "notes": [
+        "Snack. Vegan. Per serving: 4 bites."
+      ],
+      "nutrition": {
+        "kcal": 276,
+        "proteinG": 7,
+        "carbsG": 38,
+        "fatG": 10,
+        "fibreG": 3,
+        "sodiumMg": 580
+      }
+    },
+    {
+      "id": "honey-soy-chicken-drumettes",
+      "title": "Honey Soy Chicken Drumettes",
+      "summary": "Sticky baked chicken wing drumettes in a honey, soy and ginger glaze.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g chicken drumettes",
+            "3 tbsp soy sauce",
+            "2 tbsp honey",
+            "1 tbsp grated ginger",
+            "2 cloves garlic, crushed",
+            "1 tbsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C fan (220°C conventional).",
+        "Mix the soy sauce, honey, ginger and garlic and toss with the chicken.",
+        "Spread on a lined tray and bake for 35 minutes, turning and basting twice, until sticky, deep golden and at least 75°C at the thickest part.",
+        "Scatter with the sesame seeds.",
+        "Rest for 5 minutes before eating."
+      ],
+      "notes": [
+        "Snack. Per serving: about 5 drumettes.",
+        "Food safety: cook chicken to at least 75°C, wash hands and boards after handling raw chicken, and refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 321,
+        "proteinG": 30,
+        "carbsG": 12,
+        "fatG": 17,
+        "fibreG": 0,
+        "sodiumMg": 880
+      }
+    }
+  ]
+}

@@ -1,0 +1,522 @@
+{
+ "about": "House recipes, batch 04 (helper sA): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+ "recipes": [
+  {
+   "id": "aussie-burger-with-the-lot",
+   "title": "Aussie Burger with the Lot",
+   "summary": "A beef patty piled with bacon, egg, beetroot, pineapple, cheese and tomato sauce on a toasted bun.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 25,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "600g beef mince",
+      "1 tsp salt",
+      "1 brown onion, sliced",
+      "2 tbsp olive oil",
+      "4 bacon rashers",
+      "4 egg",
+      "4 slice tasty cheese",
+      "4 burger bun, toasted",
+      "4 slice canned pineapple",
+      "4 slice canned beetroot",
+      "1 tomato, sliced",
+      "4 lettuce leaf",
+      "1/4 cup tomato sauce"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the mince with the salt and shape into four patties about 2cm thick. Press a dent into the middle of each.",
+    "Heat half the oil in a large frying pan over medium heat and cook the onion for 10 minutes, until soft and golden. Push to the side, add the bacon and cook for 4 minutes, until crisp.",
+    "Cook the patties on a hot barbecue plate or in the pan for 5 minutes each side, until browned and cooked through. Top each with cheese for the last minute, until melted.",
+    "Fry the eggs in the remaining oil for 3 minutes, until the whites are set, and grill the pineapple for 1 minute each side, until lightly charred.",
+    "Build the burgers on the buns with lettuce, tomato, beetroot, pineapple, patty, bacon, egg, onion and tomato sauce."
+   ],
+   "notes": [
+    "Food safety: burger patties must reach 75°C in the centre with no pink inside. Fry the eggs until the whites are fully set.",
+    "Swap the beef for a vegetarian patty if you like, but check the label."
+   ],
+   "nutrition": {
+    "kcal": 770,
+    "proteinG": 52,
+    "carbsG": 46,
+    "fatG": 42,
+    "fibreG": 4,
+    "sodiumMg": 1500
+   }
+  },
+  {
+   "id": "sweet-potato-and-chickpea-hash-with-poached-eggs",
+   "title": "Sweet Potato and Chickpea Hash with Poached Eggs",
+   "summary": "Crisp spiced sweet potato and chickpeas topped with poached eggs, avocado and lime.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g sweet potato, cut into 1cm cubes",
+      "2 tbsp olive oil",
+      "2 tsp ground cumin",
+      "1 tsp smoked paprika",
+      "400g canned chickpeas, drained",
+      "1 red onion, diced",
+      "4 egg",
+      "1 avocado, sliced",
+      "1 lime, cut into wedges",
+      "1/4 cup coriander leaves"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Toss the sweet potato with the oil, cumin, paprika and salt on a large tray and roast for 20 minutes, until browned.",
+    "Add the chickpeas and onion, toss and roast for 10 minutes, until the onion softens and the chickpeas are crisp at the edges.",
+    "Bring a wide pan of water to a gentle simmer. Crack in the eggs one at a time and poach for 3 minutes, until the whites are set. Lift out with a slotted spoon.",
+    "Divide the hash among plates and top with the eggs, avocado, coriander and a lime wedge."
+   ],
+   "notes": [
+    "Food safety: poach the eggs until the whites are fully set; skip runny yolks for children, older adults and anyone pregnant.",
+    "Vegetarian and gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 390,
+    "proteinG": 15,
+    "carbsG": 42,
+    "fatG": 18,
+    "fibreG": 10,
+    "sodiumMg": 330
+   }
+  },
+  {
+   "id": "macadamia-crusted-chicken-schnitzel-with-lemon",
+   "title": "Macadamia-Crusted Chicken Schnitzel with Lemon",
+   "summary": "Thin chicken fillets in a crunchy macadamia and panko crumb, shallow-fried and served with lemon.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g chicken breast, sliced in half horizontally",
+      "1/4 cup plain flour",
+      "2 egg",
+      "1/2 cup panko breadcrumbs",
+      "1/2 cup macadamias, finely chopped",
+      "1/4 cup olive oil",
+      "2 lemon, cut into wedges",
+      "2 tbsp chopped parsley"
+     ]
+    }
+   ],
+   "steps": [
+    "Place the chicken between two sheets of baking paper and flatten to 1cm with a rolling pin. Season with salt.",
+    "Put the flour on one plate, the beaten eggs in a shallow bowl and the panko mixed with the macadamias on a third plate. Dust the chicken in flour, dip in egg, then press into the crumbs to coat.",
+    "Heat the oil in a large frying pan over medium heat and fry the schnitzels for 4 minutes each side, until deep golden and cooked through. Drain on paper towel.",
+    "Scatter with parsley and serve with the lemon wedges."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the thickest part, with no pink inside. Keep the pan at medium so the crumb does not burn before the centre is cooked.",
+    "Serve with steamed greens or a pile of chips."
+   ],
+   "nutrition": {
+    "kcal": 517,
+    "proteinG": 42,
+    "carbsG": 22,
+    "fatG": 29,
+    "fibreG": 2,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "chicken-and-sweetcorn-pie-with-mustard-cream",
+   "title": "Chicken and Sweetcorn Pie with Mustard Cream",
+   "summary": "A creamy chicken, leek and corn filling under a crisp puff pastry lid.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 50,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "600g chicken thigh fillet, diced",
+      "40g butter",
+      "2 leek, sliced",
+      "40g plain flour",
+      "1 1/2 cup chicken stock",
+      "1/2 cup milk",
+      "1 cup corn kernels",
+      "1 tbsp wholegrain mustard",
+      "250g puff pastry",
+      "1 egg, beaten"
+     ]
+    }
+   ],
+   "steps": [
+    "Melt the butter in a large pan over medium heat and cook the chicken and leek for 8 minutes, until the chicken is no longer pink on the outside and the leek is soft.",
+    "Stir in the flour for 1 minute, then add the stock and milk gradually, stirring, and simmer for 8 minutes, until thick. Stir in the corn and mustard, season and cool for 15 minutes.",
+    "Heat the oven to 200°C (180°C fan). Spoon the filling into a 1.5L pie dish, cover with the pastry, trim and crimp the edges and brush with the egg.",
+    "Cut a small steam hole and bake for 30 minutes, until the pastry is puffed and golden and the filling is bubbling."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C in the centre and the filling must be piping hot. Refrigerate leftovers within an hour.",
+    "Egg wash is raw egg on the pastry only; it is fully cooked in the oven."
+   ],
+   "nutrition": {
+    "kcal": 665,
+    "proteinG": 33,
+    "carbsG": 50,
+    "fatG": 37,
+    "fibreG": 4,
+    "sodiumMg": 820
+   }
+  },
+  {
+   "id": "trofie-al-pesto-with-potato-and-green-beans",
+   "title": "Trofie al Pesto with Potato and Green Beans",
+   "summary": "The Ligurian way: twisted pasta cooked with potato and beans, tossed through fresh basil pesto.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "360g trofie (or short twisted pasta)",
+      "2 potato, peeled and diced",
+      "150g green beans, cut into short lengths",
+      "2 cup basil leaves, packed",
+      "1/3 cup pine nuts",
+      "1 garlic",
+      "1/3 cup olive oil",
+      "50g vegetarian hard cheese, grated"
+     ]
+    }
+   ],
+   "steps": [
+    "Blitz the basil, pine nuts, garlic, oil and cheese in a food processor with a pinch of salt until a coarse paste forms, adding a splash of cold water if it is thick.",
+    "Bring a large pot of salted water to the boil and cook the potato for 5 minutes. Add the pasta and cook for 8 minutes, adding the beans for the last 3 minutes, until the pasta is al dente.",
+    "Scoop out a mug of the cooking water, then drain. Return to the pot off the heat and toss with the pesto and enough cooking water to make it creamy."
+   ],
+   "notes": [
+    "Vegetarian.",
+    "Add the pesto off the heat so the basil keeps its colour."
+   ],
+   "nutrition": {
+    "kcal": 667,
+    "proteinG": 19,
+    "carbsG": 87,
+    "fatG": 27,
+    "fibreG": 7,
+    "sodiumMg": 330
+   }
+  },
+  {
+   "id": "provencal-chicken-with-olives-tomato-and-thyme",
+   "title": "Provençal Chicken with Olives, Tomato and Thyme",
+   "summary": "Bone-in chicken braised with ripe tomatoes, black olives, white wine and orange peel.",
+   "cuisine": "french",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 55,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1kg chicken thigh, bone in",
+      "2 tbsp olive oil",
+      "1 brown onion, sliced",
+      "4 garlic, sliced",
+      "1/2 cup white wine",
+      "400g canned tomatoes",
+      "1/2 cup black olives",
+      "3 strips orange peel",
+      "4 thyme sprigs",
+      "2 zucchini, cut into chunks"
+     ]
+    }
+   ],
+   "steps": [
+    "Season the chicken. Heat the oil in a wide pan over medium-high heat and brown the chicken for 10 minutes, until golden all over. Set aside.",
+    "Cook the onion and garlic in the same pan for 6 minutes, until soft. Pour in the wine and boil for 2 minutes, until reduced by half.",
+    "Add the tomatoes, olives, orange peel and thyme, return the chicken and simmer covered for 25 minutes.",
+    "Add the zucchini and cook uncovered for 10 minutes, until the chicken is cooked through and the sauce is thick."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C at the thickest part, with clear juices.",
+    "Gluten-free and dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 405,
+    "proteinG": 33,
+    "carbsG": 12,
+    "fatG": 25,
+    "fibreG": 3,
+    "sodiumMg": 700
+   }
+  },
+  {
+   "id": "piperade-with-fried-eggs-and-jam-n",
+   "title": "Piperade with Fried Eggs and Jamón",
+   "summary": "A Basque pan of slowly stewed capsicum, onion and tomato topped with ham and fried eggs.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp olive oil",
+      "1 brown onion, sliced",
+      "2 red capsicum, cut into strips",
+      "1 green capsicum, cut into strips",
+      "3 garlic, sliced",
+      "1 tsp smoked paprika",
+      "400g canned crushed tomatoes",
+      "80g prosciutto",
+      "4 egg"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oil in a wide pan over medium heat and cook the onion, capsicum and garlic for 12 minutes, until very soft. Stir in the paprika for 30 seconds.",
+    "Add the tomatoes and a pinch of salt and simmer for 15 minutes, until thick and glossy.",
+    "Make four wells in the sauce and crack an egg into each. Cover and cook for 5 minutes, until the whites are set.",
+    "Lay the prosciutto over the top and serve from the pan with bread."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until the whites are fully set; skip runny yolks for children, older adults and anyone pregnant.",
+    "Gluten-free if served without bread."
+   ],
+   "nutrition": {
+    "kcal": 304,
+    "proteinG": 14,
+    "carbsG": 26,
+    "fatG": 16,
+    "fibreG": 6,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "lomo-saltado-peruvian-beef-stir-fry-with-chips",
+   "title": "Lomo Saltado (Peruvian Beef Stir-Fry with Chips)",
+   "summary": "Beef, red onion and tomato wok-tossed with soy and vinegar, served over rice with oven chips.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g potato, cut into thick chips",
+      "3 tbsp olive oil",
+      "1 cup jasmine rice",
+      "500g beef sirloin, cut into strips",
+      "4 garlic, crushed",
+      "2 red onion, cut into wedges",
+      "3 tomato, cut into wedges",
+      "1 red chilli, sliced",
+      "3 tbsp soy sauce",
+      "2 tbsp red wine vinegar",
+      "1/4 cup coriander leaves"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Toss the chips with 1 tablespoon of oil and salt on a tray and bake for 30 minutes, until golden and crisp.",
+    "Cook the rice in a covered pot with 1 1/2 cups of water for 12 minutes, until the water is absorbed, then rest covered for 5 minutes.",
+    "Heat a wok over very high heat with the remaining oil and sear the beef in two batches for 2 minutes each, until browned. Set aside.",
+    "Stir-fry the garlic, onion and chilli for 2 minutes, until charred at the edges. Add the tomato, soy and vinegar and toss for 1 minute, then return the beef and cook for 1 minute.",
+    "Fold in the chips and coriander and serve over the rice."
+   ],
+   "notes": [
+    "Food safety: beef strips are cooked once browned and hot through (at least 63°C). Keep cooked rice hot, or cool and refrigerate it within an hour.",
+    "Dairy-free."
+   ],
+   "nutrition": {
+    "kcal": 652,
+    "proteinG": 40,
+    "carbsG": 69,
+    "fatG": 24,
+    "fibreG": 5,
+    "sodiumMg": 980
+   }
+  },
+  {
+   "id": "aji-de-gallina-peruvian-creamy-chicken",
+   "title": "Aji de Gallina (Peruvian Creamy Chicken)",
+   "summary": "Shredded chicken in a mild, golden walnut and chilli sauce, served over potatoes with egg.",
+   "cuisine": "latin-american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 45,
+   "servings": 4,
+   "onePot": true,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "600g chicken breast",
+      "4 cup water",
+      "4 slice white bread, crusts removed",
+      "1 cup milk",
+      "1/3 cup walnuts",
+      "2 tbsp olive oil",
+      "1 brown onion, finely diced",
+      "3 garlic, crushed",
+      "2 tbsp mild chilli paste",
+      "1 tsp ground turmeric",
+      "1 tsp ground cumin",
+      "30g vegetarian hard cheese, grated",
+      "4 potato, boiled and halved",
+      "2 egg, hard boiled and halved",
+      "8 black olives"
+     ]
+    }
+   ],
+   "steps": [
+    "Poach the chicken in the water with a pinch of salt over low heat for 18 minutes, until cooked through. Lift out, shred and keep 1 cup of the stock.",
+    "Soak the bread in the milk, then blitz with the walnuts and reserved stock until a smooth sauce forms.",
+    "Heat the oil in a deep pan over medium heat and cook the onion and garlic for 8 minutes, until soft. Stir in the chilli paste, turmeric and cumin for 1 minute.",
+    "Add the sauce and cheese, stir for 8 minutes until thick, then fold in the chicken and warm through for 3 minutes.",
+    "Serve over the potatoes with the egg and olives."
+   ],
+   "notes": [
+    "Food safety: poached chicken must reach 75°C in the centre with no pink inside; the finished dish must be piping hot.",
+    "Cook the eggs for 10 minutes so the yolks are firm."
+   ],
+   "nutrition": {
+    "kcal": 633,
+    "proteinG": 49,
+    "carbsG": 44,
+    "fatG": 29,
+    "fibreG": 5,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "oaxacan-style-black-bean-tlayudas",
+   "title": "Oaxacan-Style Black Bean Tlayudas",
+   "summary": "Big crisp tortillas spread with garlicky black beans, melting cheese, cabbage, avocado and lime.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g canned black beans, drained",
+      "2 garlic, crushed",
+      "1 tsp ground cumin",
+      "2 tbsp olive oil",
+      "8 corn tortilla, large",
+      "200g mozzarella, grated",
+      "1 cup shredded cabbage",
+      "1 avocado, sliced",
+      "1 tomato, diced",
+      "1 lime, juiced",
+      "1/4 cup coriander leaves",
+      "1 red chilli, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat 1 tablespoon of oil in a small pan, cook the garlic and cumin for 1 minute, then add the beans with a splash of water and mash roughly for 4 minutes, until thick and spreadable.",
+    "Heat the oven to 220°C (200°C fan). Lay the tortillas on two trays and bake for 5 minutes, until stiff and lightly browned.",
+    "Spread the beans over the tortillas, scatter with the mozzarella and bake for 6 minutes, until the cheese has melted and the edges are crisp.",
+    "Toss the cabbage with the lime juice and the remaining oil, then pile onto the tortillas with the avocado, tomato, coriander and chilli."
+   ],
+   "notes": [
+    "Vegetarian.",
+    "Use the biggest tortillas you can find; two per person makes a generous dinner."
+   ],
+   "nutrition": {
+    "kcal": 458,
+    "proteinG": 19,
+    "carbsG": 55,
+    "fatG": 18,
+    "fibreG": 12,
+    "sodiumMg": 650
+   }
+  }
+ ]
+}
