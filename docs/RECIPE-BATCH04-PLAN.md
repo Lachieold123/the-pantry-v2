@@ -74,6 +74,16 @@ Across the whole set:
 3. After every 200: Lachlan spot-checks 20 at random plus every recipe tagged vegan or no-gluten that has a near-miss ingredient (soy sauce, oats, baking powder, stock).
 4. Stop when weekly usage reaches about 80%, and leave a handoff note.
 
+## Progress (17 Oct, phase 2, chunks 01 and 02)
+
+100 new recipes in `batch-04-01.json` and `batch-04-02.json` (plus the 5 samples in `batch-04.json`, 105 total). Validator: 105/105 pass, 0 failures. Counts of the 100 new:
+
+- Cuisine: modern-australian 9, indian 8, italian 8, chinese 7, middle-eastern 5, japanese 5, east-african 5, pacific-islands 4, caribbean 4, korean 4, mexican 4, greek 4, american 4, thai 4, scandinavian 3, west-african 3, french 3, turkish 3, vietnamese 2, british 2, south-african 2, latin-american 2, malaysian 2, spanish 1, north-african 1, indonesian 1.
+- Main meal: breakfast 38, dinner 47, lunch 11, snack 4 (snacks, baking and desserts are the biggest gap).
+- Diets: vegetarian 58 (vegan 25), pescatarian 18, no-gluten 41. Difficulty: easy 66, medium 29, hard 5. 30 minutes or less: 43.
+
+Decisions applied (Lachlan, msgs 1495 and 1498): hard cheese is not vegetarian unless written "vegetarian hard cheese"; nutrition stays as data in the batch file; pacific-islands, east-african and caribbean added to `CUISINES` and `CUISINE_LABELS` (copied from batch-03 by `git diff`); desserts use existing meal types (the schema has no tags, so a "Dessert" line sits in the notes); prep time excludes marinating, resting and chilling and the notes say "Plus 4 hours marinating"; every meat, poultry and seafood recipe has a "Food safety" note.
+
 ## Open calls for Lachlan
 
 1. Hard cheese: the validator treats parmesan, pecorino, Gruyère and similar as not vegetarian (unless the line says vegetarian) but the app's `deriveDiets` still tags them vegetarian (D-036). Batch-04 recipes avoid the clash by leaving hard cheese out of vegetarian dishes or writing "vegetarian hard cheese". Which rule wins?
