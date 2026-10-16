@@ -389,7 +389,9 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
 - **Waits for Lachlan:** applying the migration, and the dashboard steps in `docs/ACCOUNTS.md` (anonymous sign-ins, manual linking, Apple provider, the email templates showing the code, custom SMTP).
 - **Why:** an account only earns its place when it gives something back (a backup, a second phone, a household that survives a new phone), and asking up front costs people at the door. Apple and email codes have no password to forget.
 
-## D-044 · How Home ranks what it shows
+## D-051 · How Home ranks what it shows
+
+_Renumbered from D-044 on 17 Oct 2026: the house-recipes branch had already used D-044 and D-045 (house recipe batches, photos), and D-046 to D-050 are taken on other branches._
 
 - **Date:** 7 October 2026 · **Decided by:** Claude (delegated; Lachlan asked to "fully develop the algorithm that decides what is shown on the homepage"). The open calls are listed for Lachlan in `docs/HOME-RANKING.md` §9, built with the recommended answers.
 - **Decision:** the plan and the weights are `docs/HOME-RANKING.md`.
@@ -399,7 +401,9 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
   - Every card's line says why it's there, chosen from what actually scored, and is checked against the raw data in the tests.
 - **Why:** the old picks were dinner-only, said "Picked for you" on every card, and ignored the clock, the season, Cookmarks, the cooking log's "cooked again" and variety.
 
-## D-045 · Pro is bought through RevenueCat, and only limits what can be bought
+## D-052 · Pro is bought through RevenueCat, and only limits what can be bought
+
+_Renumbered from D-045 on 17 Oct 2026 (see D-051)._
 
 - **Date:** 7 October 2026 · **Decided by:** Lachlan (approved adding `react-native-purchases`); the wiring as recommended.
 - **Decision:** Pro purchases go through RevenueCat (`react-native-purchases` 10.11, native, iPhone only) with the public iOS key in `src/lib/purchases.ts`, the `pro` entitlement and the `default` offering's `$rc_monthly` and `$rc_annual` packages. How it works and how to test it with a sandbox account: `docs/PRO.md`.

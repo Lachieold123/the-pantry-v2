@@ -37,7 +37,7 @@ async function prepare(): Promise<void> {
   ]);
   if (loaded === 'timed-out') console.warn('[startup] saved data took too long to load; opening anyway');
   // Start RevenueCat (iPhone only), ask who is Pro and what's on sale; the saved
-  // mirror covers an offline start. Never blocks opening (D-045).
+  // mirror covers an offline start. Never blocks opening (D-052).
   startPurchases();
   // A household's sync starts once the kitchen has loaded; it never holds up opening (D-039).
   startSync();

@@ -1,4 +1,4 @@
-// Keeping Pro in step with the store (D-045): starting RevenueCat at launch,
+// Keeping Pro in step with the store (D-052): starting RevenueCat at launch,
 // asking what's on sale, refreshing who is Pro, listening for renewals and
 // approvals, and tying purchases to the account. Lives in the store layer so
 // no feature has to know about accounts (features never import features).

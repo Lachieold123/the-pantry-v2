@@ -1,4 +1,4 @@
-// Turning the store's answers into The Pantry's words (D-038, D-045): which
+// Turning the store's answers into The Pantry's words (D-038, D-052): which
 // plans are on sale and at what price, who is Pro, and what went wrong with a
 // purchase. Plain logic with no packages (D-015): the shapes below are the
 // few fields read from RevenueCat's objects, so a test can build them by hand

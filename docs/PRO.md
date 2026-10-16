@@ -1,6 +1,6 @@
 # The Pantry Pro: the freemium plan
 
-Decided by Lachlan on 6 October 2026 (D-038). Purchases wired to RevenueCat on 7 October 2026 (D-045). The code is in `src/domain/pro`, `src/store/pro.ts`, `src/store/proSync.ts`, `src/lib/purchases.ts` and `src/features/pro`.
+Decided by Lachlan on 6 October 2026 (D-038). Purchases wired to RevenueCat on 7 October 2026 (D-052). The code is in `src/domain/pro`, `src/store/pro.ts`, `src/store/proSync.ts`, `src/lib/purchases.ts` and `src/features/pro`.
 
 ## The rule
 
@@ -37,7 +37,7 @@ When Pro lapses, nothing is taken away. Extra collections, recipes and next week
 - **Development and preview builds** have two Settings switches, "Preview the free limits" and "Pretend to be Pro", to try both sides before buying works. They never appear in a store build.
 - **Who is Pro** is a saved mirror of RevenueCat's answer, refreshed at launch. RevenueCat is always the truth. A lapsed subscription stops counting at its expiry time even offline.
 
-## How buying is wired (D-045)
+## How buying is wired (D-052)
 
 - **Library:** `react-native-purchases` (RevenueCat). It's native, so it needs a development or store build; Expo Go, the web and Android never start it and say "Pro isn't on sale here yet".
 - **Key:** the public iOS SDK key is the constant `REVENUECAT_IOS_KEY` in `src/lib/purchases.ts`. Public keys are made to ship in the app. The secret key never goes in the code.

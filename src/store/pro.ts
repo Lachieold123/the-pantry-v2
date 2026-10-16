@@ -5,7 +5,7 @@
 // Limits apply only once Pro can actually be bought on this phone: RevenueCat
 // is running (an iPhone build) and the store has a plan on sale (`sale`, set
 // by ./proSync). Until then nothing is locked with no way to pay (D-038,
-// D-045). Development and preview builds can preview the limits, and pretend
+// D-052). Development and preview builds can preview the limits, and pretend
 // to be Pro, from Settings.
 import { useRouter } from 'expo-router';
 import { create } from 'zustand';

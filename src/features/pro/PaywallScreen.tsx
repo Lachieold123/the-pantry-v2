@@ -1,4 +1,4 @@
-// The Pantry Pro (D-038, D-045). Opens worded for what you just tried (a
+// The Pantry Pro (D-038, D-052). Opens worded for what you just tried (a
 // fourth collection, a day next week), lists only what Pro really does, and
 // says what stays free. Then, honestly, whichever is true on this phone:
 // - you're Pro: says so, and when it renews, ends or the trial ends;

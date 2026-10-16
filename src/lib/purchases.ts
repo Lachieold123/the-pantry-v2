@@ -1,4 +1,4 @@
-// Buying Pro (D-038, D-045), through RevenueCat with the products
+// Buying Pro (D-038, D-052), through RevenueCat with the products
 // `thepantry_pro_monthly` and `thepantry_pro_yearly` in the offering's
 // standard `$rc_monthly` and `$rc_annual` packages. The yearly carries the
 // free trial as an App Store introductory offer; its length is read from the

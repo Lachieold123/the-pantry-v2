@@ -1,4 +1,4 @@
-// Settings' Pro section (D-038, D-045): where you stand (Free, Trial ends
+// Settings' Pro section (D-038, D-052): where you stand (Free, Trial ends
 // <date>, Pro renews or ends <date>), the way to Pro, and, for a real
 // subscription, Apple's page to manage or cancel it (only Apple can).
 // Development and preview (TestFlight) builds also get two switches to try

@@ -1,5 +1,5 @@
 // The paywall's buying part, shown only when the store has plans on sale
-// (D-045). Yearly (with the store's trial, if it reports one) or monthly,
+// (D-052). Yearly (with the store's trial, if it reports one) or monthly,
 // the auto-renew terms Apple requires beside the button, Restore, and the
 // legal links. Every outcome has its own state:
 // - buying or restoring: the button is busy and nothing else can be pressed;
