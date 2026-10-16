@@ -5,8 +5,8 @@ D = __file__.rsplit('/', 1)[0]
 J = lambda f: json.load(open(f'{D}/{f}'))
 dump = lambda o: json.dumps(o, ensure_ascii=False, separators=(',', ':'))
 old_u = open(f'{D}/chunks/u04.sql').read(); old_i = open(f'{D}/chunks/i01.sql').read()
-u_tail = old_u[old_u.index(']$j$::jsonb)') + len(']$j$'):].replace('$j$','$q$')
-i_tail = old_i[old_i.index(']$::jsonb)') + len(']$'):]
+u_tail = old_u[old_u.index(']$q$::jsonb)') + len(']$q$'):]
+i_tail = old_i[old_i.index(']$q$::jsonb)') + len(']$q$'):]
 assert i_tail.startswith('::jsonb)')
 comp = J('feed-compact-updates.json'); ins = J('feed-inserts.json')
 def w(name, sql):
