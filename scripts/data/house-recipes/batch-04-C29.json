@@ -1,0 +1,814 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "indian-masala-omelette-roll-with-green-chilli",
+      "title": "Indian Masala Omelette Roll with Green Chilli",
+      "summary": "A fluffy omelette packed with onion, tomato, green chilli and coriander, rolled up for a quick Indian breakfast.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 8,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 eggs",
+            "1 small red onion, finely chopped",
+            "1 tomato, deseeded and chopped",
+            "1 green chilli, finely chopped",
+            "1 handful coriander leaves, chopped",
+            "1/4 tsp ground turmeric",
+            "1/4 tsp salt",
+            "2 tsp butter"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the eggs with the onion, tomato, chilli, coriander, turmeric and salt.",
+        "Melt half the butter in a nonstick pan over medium heat.",
+        "Pour in half the mixture and cook for 3 minutes, until the underside is golden and the top is almost set.",
+        "Roll up and slide onto a plate, then repeat with the rest."
+      ],
+      "notes": [
+        "Food safety: cook the omelette until the egg is fully set with no runny egg.",
+        "Serve with buttered toast or paratha."
+      ],
+      "nutrition": {
+        "kcal": 182,
+        "proteinG": 14,
+        "carbsG": 4,
+        "fatG": 12,
+        "fibreG": 1,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "greek-spanakopita-breakfast-scramble",
+      "title": "Greek Spanakopita Breakfast Scramble",
+      "summary": "Soft scrambled eggs with wilted spinach, feta and dill, finished with lemon and served on toast.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 eggs",
+            "150g baby spinach",
+            "60g feta, crumbled",
+            "1 tbsp olive oil",
+            "2 spring onions, sliced",
+            "1 tbsp chopped dill",
+            "1/2 lemon, juiced",
+            "2 slices sourdough"
+          ]
+        }
+      ],
+      "steps": [
+        "Wilt the spinach and spring onion in the oil for 2 minutes, until soft, then press out the water.",
+        "Beat the eggs and pour into the pan.",
+        "Stir gently for 3 minutes, until just set and creamy.",
+        "Fold in the feta, dill and lemon juice.",
+        "Toast the sourdough until golden and pile the eggs on top."
+      ],
+      "notes": [
+        "Food safety: cook until the egg is fully set if serving anyone vulnerable."
+      ],
+      "nutrition": {
+        "kcal": 330,
+        "proteinG": 20,
+        "carbsG": 20,
+        "fatG": 18,
+        "fibreG": 4,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "italian-frittata-with-zucchini-and-ricotta",
+      "title": "Italian Frittata with Zucchini and Ricotta",
+      "summary": "A light baked frittata of zucchini, spring onion and mint, studded with ricotta.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 eggs",
+            "2 zucchini, grated",
+            "4 spring onions, sliced",
+            "150g ricotta",
+            "1 tbsp olive oil",
+            "1 tbsp chopped mint",
+            "1/2 tsp salt",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 190°C and grease a 20cm ovenproof dish.",
+        "Squeeze the zucchini dry and cook with the spring onion in the oil for 4 minutes, until soft.",
+        "Whisk the eggs with the mint, salt and pepper and pour over.",
+        "Dot the ricotta over and bake for 14 minutes, until puffed and just set in the centre.",
+        "Rest for 3 minutes, then slice."
+      ],
+      "notes": [
+        "Food safety: bake until the centre is set and no longer liquid.",
+        "Great cold in lunchboxes."
+      ],
+      "nutrition": {
+        "kcal": 231,
+        "proteinG": 17,
+        "carbsG": 6,
+        "fatG": 15,
+        "fibreG": 2,
+        "sodiumMg": 430
+      }
+    },
+    {
+      "id": "german-bauernfruhstuck-farmer-s-breakfast",
+      "title": "German Bauernfruhstuck Farmer's Breakfast",
+      "summary": "Crispy fried potatoes with bacon, onion and eggs, a hearty German breakfast cooked in one pan.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g cooked potatoes, sliced",
+            "100g bacon, diced",
+            "1 brown onion, sliced",
+            "1 tbsp butter",
+            "4 eggs",
+            "1 tbsp chives, chopped",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the bacon in the butter for 5 minutes, until crisp.",
+        "Add the potatoes and fry for 10 minutes, turning rarely, until golden and crunchy.",
+        "Add the onion and cook for 4 minutes, until soft.",
+        "Beat the eggs and pour over, then cook for 4 minutes, stirring gently, until set.",
+        "Scatter with chives and pepper."
+      ],
+      "notes": [
+        "Food safety: cook the bacon until crisp and piping hot, and the eggs until fully set.",
+        "Cook the potatoes ahead for crisp results."
+      ],
+      "nutrition": {
+        "kcal": 526,
+        "proteinG": 28,
+        "carbsG": 38,
+        "fatG": 28,
+        "fibreG": 5,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "ricotta-hotcakes-with-lemon-and-warm-apple-compote",
+      "title": "Ricotta Hotcakes with Lemon and Warm Apple Compote",
+      "summary": "Light, tender ricotta hotcakes served with warm blueberry compote and a squeeze of lemon.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g ricotta",
+            "3 eggs, separated",
+            "120ml milk",
+            "100g plain flour",
+            "1 tsp baking powder",
+            "2 tbsp sugar",
+            "1 lemon, zested",
+            "20g butter",
+            "2 apples, peeled and diced",
+            "1 tbsp honey",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the ricotta, egg yolks, milk and lemon zest together.",
+        "Fold in the flour, baking powder and sugar.",
+        "Whisk the egg whites to stiff peaks and gently fold them in.",
+        "Melt a little butter in a pan and cook 1/4 cup scoops for 2 minutes each side, until puffed and golden.",
+        "Simmer the apple, honey and lemon juice in a small pan for 6 minutes, until soft and syrupy, and spoon over."
+      ],
+      "notes": [
+        "Food safety: cook the hotcakes until the batter is set in the middle.",
+        "Add a pinch of cinnamon to the compote."
+      ],
+      "nutrition": {
+        "kcal": 345,
+        "proteinG": 16,
+        "carbsG": 40,
+        "fatG": 13,
+        "fibreG": 2,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "scandinavian-smorrebrod-smoked-salmon-and-dill-rye",
+      "title": "Scandinavian Smorrebrod Smoked Salmon and Dill Rye",
+      "summary": "Open rye sandwiches with dill cream cheese, smoked salmon, cucumber and capers.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "pescatarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 slices dark rye bread",
+            "100g cream cheese",
+            "2 tbsp dill, chopped",
+            "1 tsp lemon juice",
+            "150g smoked salmon",
+            "1/2 cucumber, thinly sliced",
+            "2 tbsp capers",
+            "1/4 red onion, thinly sliced",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Beat the cream cheese with the dill and lemon juice until smooth.",
+        "Spread thickly over the rye slices.",
+        "Layer on the cucumber and fold the smoked salmon on top.",
+        "Scatter with the capers, onion and pepper and serve straight away."
+      ],
+      "notes": [
+        "Food safety: keep smoked salmon chilled and avoid it in pregnancy or when serving anyone vulnerable.",
+        "Add boiled egg slices for more protein."
+      ],
+      "nutrition": {
+        "kcal": 468,
+        "proteinG": 26,
+        "carbsG": 38,
+        "fatG": 22,
+        "fibreG": 7,
+        "sodiumMg": 1300
+      }
+    },
+    {
+      "id": "vietnamese-banh-mi-omelette-baguette",
+      "title": "Vietnamese Banh Mi Omelette Baguette",
+      "summary": "Egg omelette in a crisp baguette with pickled carrot, cucumber, coriander and chilli mayonnaise.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 8,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "pescatarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 small baguettes",
+            "4 eggs",
+            "1 tsp fish sauce",
+            "1 tsp butter",
+            "2 tbsp mayonnaise",
+            "1 tsp sriracha",
+            "1 carrot, grated",
+            "1 tbsp rice vinegar",
+            "1 tsp sugar",
+            "1/2 cucumber, sliced",
+            "1 handful coriander leaves"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the carrot with the vinegar and sugar and leave for 10 minutes, until lightly pickled.",
+        "Whisk the eggs with the fish sauce.",
+        "Cook in the butter in a pan for 3 minutes, until set, then fold and halve.",
+        "Mix the mayonnaise and sriracha and spread inside the warmed baguettes.",
+        "Fill with the omelette, pickled carrot, cucumber and coriander."
+      ],
+      "notes": [
+        "Food safety: cook the egg until fully set with no runny egg.",
+        "Add pate for a classic version."
+      ],
+      "nutrition": {
+        "kcal": 602,
+        "proteinG": 24,
+        "carbsG": 70,
+        "fatG": 24,
+        "fibreG": 5,
+        "sodiumMg": 1200
+      }
+    },
+    {
+      "id": "korean-gyeran-ppang-egg-bread",
+      "title": "Korean Gyeran Ppang Egg Bread",
+      "summary": "Fluffy Korean street-food muffins baked with a whole egg in the middle, sweet and savoury at once.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g plain flour",
+            "1 tsp baking powder",
+            "2 tbsp sugar",
+            "1/2 tsp salt",
+            "150ml milk",
+            "2 tbsp butter, melted",
+            "1 egg",
+            "4 eggs for topping",
+            "1 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C and grease a 4-hole muffin tin.",
+        "Whisk the flour, baking powder, sugar and salt, then add the milk, butter and 1 egg to make a thick batter.",
+        "Fill the holes half full, then crack an egg into the middle of each.",
+        "Bake for 18 minutes, until the batter is golden and the egg whites are set.",
+        "Sprinkle with parsley and eat warm."
+      ],
+      "notes": [
+        "Food safety: bake until the whites are fully set, and until the yolk is set if serving anyone vulnerable."
+      ],
+      "nutrition": {
+        "kcal": 332,
+        "proteinG": 15,
+        "carbsG": 36,
+        "fatG": 14,
+        "fibreG": 1,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "chinese-jianbing-crepe-with-egg-and-crackers",
+      "title": "Chinese Jianbing Crepe with Egg and Crackers",
+      "summary": "A Tianjin street crepe with egg, hoisin and chilli sauce wrapped around crispy wonton wrappers.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 8,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "80g plain flour",
+            "40g wholemeal flour",
+            "250ml water",
+            "2 eggs",
+            "2 spring onions, sliced",
+            "1 handful coriander leaves",
+            "2 tbsp hoisin sauce",
+            "1 tsp chilli sauce",
+            "2 wonton wrappers, deep-fried",
+            "1 tbsp sesame seeds",
+            "1 tbsp oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the flours and water into a thin batter.",
+        "Heat a nonstick pan with a little oil and pour in half the batter, swirling thin.",
+        "Cook for 1 minute, then crack an egg on top, spread it and scatter with sesame and spring onion.",
+        "Cook for 2 minutes, until the egg is set, then flip.",
+        "Spread with the hoisin and chilli sauces, add the coriander and fried wonton wrapper, and fold up."
+      ],
+      "notes": [
+        "Food safety: cook the egg until fully set.",
+        "Repeat for the second crepe."
+      ],
+      "nutrition": {
+        "kcal": 348,
+        "proteinG": 14,
+        "carbsG": 36,
+        "fatG": 16,
+        "fibreG": 2,
+        "sodiumMg": 760
+      }
+    },
+    {
+      "id": "ghanaian-hausa-koko-millet-porridge",
+      "title": "Ghanaian Hausa Koko Millet Porridge",
+      "summary": "A peppery, ginger-spiced millet porridge sweetened with sugar and served with milk.",
+      "cuisine": "west-african",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g millet flour",
+            "1 litre water",
+            "1 tsp grated ginger",
+            "1/2 tsp ground cloves",
+            "1/2 tsp black pepper",
+            "2 tbsp sugar",
+            "200ml milk",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the millet flour with 200ml cold water into a paste.",
+        "Bring the remaining water, ginger, cloves and pepper to a rolling boil, until fragrant.",
+        "Whisk in the paste and simmer for 12 minutes, stirring, until thick and smooth.",
+        "Stir in the sugar and salt and serve with the milk."
+      ],
+      "notes": [
+        "Add groundnut paste for extra richness.",
+        "Strain through a sieve for a very smooth porridge."
+      ],
+      "nutrition": {
+        "kcal": 221,
+        "proteinG": 7,
+        "carbsG": 40,
+        "fatG": 3,
+        "fibreG": 3,
+        "sodiumMg": 100
+      }
+    },
+    {
+      "id": "south-african-mealie-pap-with-tomato-relish",
+      "title": "South African Mealie Pap with Tomato Relish",
+      "summary": "Soft white maize porridge served with a warm tomato and onion relish, a South African staple.",
+      "cuisine": "south-african",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g cornmeal",
+            "1 litre water",
+            "1/2 tsp salt",
+            "2 tbsp butter",
+            "1 brown onion, chopped",
+            "3 tomatoes, chopped",
+            "1 tbsp olive oil",
+            "1 tsp curry powder",
+            "1 tsp sugar",
+            "1 pinch chilli flakes"
+          ]
+        }
+      ],
+      "steps": [
+        "Bring the water and salt to a rolling boil, then slowly whisk in the cornmeal until no lumps remain.",
+        "Cover and cook on low heat for 20 minutes, stirring often, until thick and cooked.",
+        "Cook the onion in the oil for 5 minutes, then add the tomatoes, curry powder, sugar and chilli and cook for 8 minutes, until pulpy.",
+        "Stir the butter into the pap and serve with the warm relish."
+      ],
+      "notes": [
+        "Add more water for a runny porridge."
+      ],
+      "nutrition": {
+        "kcal": 306,
+        "proteinG": 6,
+        "carbsG": 46,
+        "fatG": 10,
+        "fibreG": 4,
+        "sodiumMg": 490
+      }
+    },
+    {
+      "id": "caribbean-cornmeal-porridge-with-nutmeg-and-cinnamon",
+      "title": "Caribbean Cornmeal Porridge with Nutmeg and Cinnamon",
+      "summary": "Smooth Jamaican-style cornmeal porridge flavoured with cinnamon, nutmeg and vanilla and sweetened with condensed milk.",
+      "cuisine": "caribbean",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g yellow cornmeal",
+            "1 litre water",
+            "1 cinnamon stick",
+            "1/4 tsp ground nutmeg",
+            "1/2 tsp vanilla extract",
+            "1 pinch salt",
+            "200ml milk",
+            "3 tbsp condensed milk"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the cornmeal with 250ml cold water into a paste.",
+        "Bring the remaining water and cinnamon to a rolling boil, until the water smells spiced.",
+        "Whisk in the paste and simmer for 15 minutes, stirring, until thick and smooth.",
+        "Remove the cinnamon, add the nutmeg, vanilla, salt, milk and condensed milk and warm for 2 minutes."
+      ],
+      "notes": [
+        "Stir often to avoid lumps.",
+        "Add extra condensed milk to taste."
+      ],
+      "nutrition": {
+        "kcal": 306,
+        "proteinG": 7,
+        "carbsG": 54,
+        "fatG": 6,
+        "fibreG": 4,
+        "sodiumMg": 90
+      }
+    },
+    {
+      "id": "caribbean-cornmeal-johnnycakes",
+      "title": "Caribbean Cornmeal Johnnycakes",
+      "summary": "Golden pan-fried cornmeal and flour cakes with a crisp edge and soft centre, great with butter and fried fish or eggs.",
+      "cuisine": "caribbean",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g plain flour",
+            "100g cornmeal",
+            "1 tbsp sugar",
+            "2 tsp baking powder",
+            "1/2 tsp salt",
+            "50g butter",
+            "150ml milk",
+            "2 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the flour, cornmeal, sugar, baking powder and salt together.",
+        "Rub in the butter until it resembles crumbs, then add the milk to make a soft dough.",
+        "Knead briefly, then shape into 8 flat discs.",
+        "Fry in the oil over medium heat for 4 minutes each side, until golden and cooked through."
+      ],
+      "notes": [
+        "Serve warm.",
+        "Store cooled cakes in a sealed container for 2 days."
+      ],
+      "nutrition": {
+        "kcal": 419,
+        "proteinG": 9,
+        "carbsG": 56,
+        "fatG": 17,
+        "fibreG": 3,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "ethiopian-genfo-barley-porridge-with-spiced-butter",
+      "title": "Ethiopian Genfo Barley Porridge with Spiced Butter",
+      "summary": "A thick barley flour porridge with a well of spiced butter and berbere-style paprika sauce in the centre.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g barley flour",
+            "800ml water",
+            "1/2 tsp salt",
+            "60g butter",
+            "1 tsp paprika",
+            "1/2 tsp ground cardamom",
+            "1/2 tsp ground ginger",
+            "1/4 tsp chilli flakes",
+            "150g plain yoghurt"
+          ]
+        }
+      ],
+      "steps": [
+        "Bring the water and salt to a rolling boil, until bubbling hard.",
+        "Whisk in the flour and cook for 12 minutes, stirring hard with a wooden spoon, until the porridge is thick and smooth.",
+        "Melt the butter with the paprika, cardamom, ginger and chilli for 2 minutes, until sizzling.",
+        "Shape the porridge into bowls, make a well and fill with the spiced butter.",
+        "Serve with the yoghurt alongside and eat while hot."
+      ],
+      "notes": [
+        "Eat by scooping the porridge into the butter.",
+        "Use oat flour if barley flour is hard to find."
+      ],
+      "nutrition": {
+        "kcal": 370,
+        "proteinG": 8,
+        "carbsG": 45,
+        "fatG": 16,
+        "fibreG": 7,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "peruvian-quinoa-breakfast-porridge-with-cinnamon",
+      "title": "Peruvian Quinoa Breakfast Porridge with Cinnamon",
+      "summary": "Warm quinoa cooked in milk with cinnamon, cloves and apple, sweetened with honey.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 20,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g quinoa, rinsed",
+            "500ml milk",
+            "1 cinnamon stick",
+            "2 cloves",
+            "1 apple, diced",
+            "2 tbsp honey",
+            "30g almonds, chopped",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the quinoa, milk, cinnamon, cloves and salt for 18 minutes, stirring often, until the grains are tender and the porridge thick.",
+        "Add the apple and honey and cook for 2 minutes.",
+        "Remove the cinnamon and cloves.",
+        "Serve with the toasted almonds scattered over the top."
+      ],
+      "notes": [
+        "Use almond milk for a no-dairy bowl."
+      ],
+      "nutrition": {
+        "kcal": 494,
+        "proteinG": 18,
+        "carbsG": 70,
+        "fatG": 14,
+        "fibreG": 8,
+        "sodiumMg": 160
+      }
+    },
+    {
+      "id": "french-gougeres-cheese-puffs",
+      "title": "French Gougeres Cheese Puffs",
+      "summary": "Light choux pastry puffs flavoured with vegetarian hard cheese, mustard and nutmeg, best eaten warm.",
+      "cuisine": "french",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "120ml water",
+            "120ml milk",
+            "90g butter",
+            "1/2 tsp salt",
+            "150g plain flour",
+            "4 eggs",
+            "100g vegetarian hard cheese, grated",
+            "1 tsp Dijon mustard",
+            "1/4 tsp ground nutmeg"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C and line two trays with baking paper.",
+        "Bring the water, milk, butter and salt to the boil, then tip in the flour and stir for 2 minutes, until a smooth ball forms.",
+        "Beat in the eggs one at a time, then the cheese, mustard and nutmeg, until glossy.",
+        "Pipe or spoon walnut-sized mounds onto the trays.",
+        "Bake for 25 minutes, until puffed and deep golden."
+      ],
+      "notes": [
+        "Food safety: bake until deep golden and cooked through, as the dough contains raw egg.",
+        "Do not open the oven in the first 15 minutes, or they collapse."
+      ],
+      "nutrition": {
+        "kcal": 233,
+        "proteinG": 10,
+        "carbsG": 14,
+        "fatG": 15,
+        "fibreG": 1,
+        "sodiumMg": 300
+      }
+    }
+  ]
+}
