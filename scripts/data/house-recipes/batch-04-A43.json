@@ -1,0 +1,1180 @@
+{
+ "about": "Batch 04, slice A, chunk A43: high-protein, pregnancy-friendly and teen-cook dinners plus air-fryer, slow-cooker and crowd mains.",
+ "recipes": [
+  {
+   "id": "high-protein-chicken-and-quinoa-power-bowl",
+   "title": "High-Protein Chicken and Quinoa Power Bowl",
+   "summary": "Grilled chicken breast over quinoa with edamame, avocado and a lemon-tahini dressing.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 20,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 chicken breast",
+      "1 tsp olive oil",
+      "1/2 tsp smoked paprika",
+      "1/4 tsp salt",
+      "1 cup quinoa, rinsed",
+      "1 cup edamame, shelled",
+      "1 avocado, sliced",
+      "1 cup cherry tomatoes, halved",
+      "2 tbsp tahini",
+      "1 lemon, juiced"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the quinoa in 2 cups water for 15 minutes until tender and the water is absorbed.",
+    "Season the chicken with paprika, salt and oil and cook in a hot pan for 6 minutes a side, until it reaches 75°C and is white throughout.",
+    "Whisk the tahini, lemon juice and 2 tbsp water, slice the chicken and serve over the quinoa with edamame, avocado and tomatoes."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C with no pink; eat leftovers within 2 days.",
+    "Contains sesame and soy."
+   ],
+   "nutrition": {
+    "kcal": 740,
+    "proteinG": 60,
+    "carbsG": 64,
+    "fatG": 27,
+    "fibreG": 15,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "high-protein-beef-and-egg-breakfast-style-rice-bowl",
+   "title": "High-Protein Beef and Egg Rice Bowl",
+   "summary": "Lean beef mince with ginger and soy over rice, topped with a fried egg and greens.",
+   "cuisine": "korean",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "250g lean beef mince",
+      "1 tsp vegetable oil",
+      "2 clove garlic, crushed",
+      "1 tsp ginger, grated",
+      "2 tbsp soy sauce",
+      "1 tsp sesame oil",
+      "1.5 cup cooked rice",
+      "2 egg",
+      "1 cup baby spinach",
+      "1 spring onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the mince in the oil for 6 minutes until cooked through, add the garlic, ginger and soy sauce and cook for 2 minutes.",
+    "Fry the eggs for 3 minutes until the whites are set.",
+    "Serve the beef over rice with spinach, eggs, sesame oil and spring onion."
+   ],
+   "notes": [
+    "Food safety: beef mince must reach 75°C in the centre and the egg whites must be set; eat leftovers within 2 days.",
+    "Contains egg, soy and sesame."
+   ],
+   "nutrition": {
+    "kcal": 640,
+    "proteinG": 43,
+    "carbsG": 62,
+    "fatG": 24,
+    "fibreG": 3,
+    "sodiumMg": 1150
+   }
+  },
+  {
+   "id": "high-protein-turkey-chilli-with-black-beans",
+   "title": "High-Protein Turkey Chilli with Black Beans",
+   "summary": "A lean, smoky turkey and black bean chilli that gives more than 40 g of protein a bowl.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g turkey mince",
+      "1 tbsp olive oil",
+      "1 brown onion, diced",
+      "3 clove garlic, crushed",
+      "2 tsp ground cumin",
+      "1 tsp smoked paprika",
+      "1 tsp salt",
+      "1 can crushed tomatoes",
+      "2 can black beans, drained and rinsed",
+      "1 cup chicken stock",
+      "1 cup Greek yoghurt"
+     ]
+    }
+   ],
+   "steps": [
+    "Soften the onion and garlic in the oil for 5 minutes, add the mince and spices and brown for 8 minutes.",
+    "Add the tomatoes, beans and stock and simmer for 20 minutes, until thick and the turkey reaches 75°C.",
+    "Serve with a spoonful of yoghurt."
+   ],
+   "notes": [
+    "Food safety: turkey mince must reach 75°C; refrigerate within 2 hours and eat within 3 days.",
+    "Contains milk."
+   ],
+   "nutrition": {
+    "kcal": 420,
+    "proteinG": 42,
+    "carbsG": 38,
+    "fatG": 10,
+    "fibreG": 13,
+    "sodiumMg": 860
+   }
+  },
+  {
+   "id": "high-protein-salmon-and-sweet-potato-tray-with-greens",
+   "title": "High-Protein Salmon and Sweet Potato Tray with Greens",
+   "summary": "Salmon fillets with roasted sweet potato and green beans, a recovery dinner rich in protein and omega-3.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 salmon fillet",
+      "2 sweet potato, cubed",
+      "1 tbsp olive oil",
+      "200g green beans, trimmed",
+      "1 lemon, cut into wedges",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C (200°C fan). Roast the sweet potato in half the oil for 15 minutes.",
+    "Add the salmon and beans with the remaining oil and salt and roast for 10 minutes, until the salmon flakes easily.",
+    "Serve the salmon on the sweet potato and beans with lemon wedges for squeezing."
+   ],
+   "notes": [
+    "Food safety: cook salmon until opaque and flaking, at least 63°C; eat leftovers cold within 1 day.",
+    "Contains fish."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 37,
+    "carbsG": 48,
+    "fatG": 24,
+    "fibreG": 9,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "high-protein-lean-lamb-kofta-bowls-with-lentils",
+   "title": "High-Protein Lean Lamb Kofta Bowls with Lentils",
+   "summary": "Grilled lean lamb koftas over spiced lentils with yoghurt and cucumber.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g lamb mince",
+      "1 tsp ground cumin",
+      "1 tsp ground coriander",
+      "2 clove garlic, crushed",
+      "1 tsp salt",
+      "1 cup green lentils, rinsed",
+      "1 cup Greek yoghurt",
+      "1 Lebanese cucumber, diced",
+      "1 tomato, diced",
+      "1 tbsp olive oil",
+      "1 lemon, juiced"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the lamb, cumin, coriander, garlic and half the salt and shape into 12 koftas.",
+    "Simmer the lentils in water for 20 minutes until tender, drain and toss with the oil, lemon juice and remaining salt.",
+    "Grill the koftas for 10 minutes, turning, until browned and they reach 75°C, and serve over the lentils with yoghurt, cucumber and tomato."
+   ],
+   "notes": [
+    "Food safety: lamb mince must reach 75°C in the centre; eat leftovers within 2 days.",
+    "Contains milk."
+   ],
+   "nutrition": {
+    "kcal": 520,
+    "proteinG": 41,
+    "carbsG": 34,
+    "fatG": 24,
+    "fibreG": 9,
+    "sodiumMg": 720
+   }
+  },
+  {
+   "id": "high-protein-tofu-and-edamame-stir-fry-with-brown-rice",
+   "title": "High-Protein Tofu and Edamame Stir-Fry with Brown Rice",
+   "summary": "Firm tofu, edamame and broccoli in a ginger soy sauce, a plant-based high-protein dinner.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g firm tofu, cubed",
+      "1 tbsp vegetable oil",
+      "1 cup edamame, shelled",
+      "1 head broccoli, cut into florets",
+      "2 clove garlic, crushed",
+      "1 tsp ginger, grated",
+      "2 tbsp soy sauce",
+      "1 tsp sesame oil",
+      "1.5 cup cooked brown rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Fry the tofu in the oil for 6 minutes until golden on all sides, then set aside.",
+    "Stir-fry the broccoli, edamame, garlic and ginger for 4 minutes until the broccoli is tender-crisp.",
+    "Return the tofu, add the soy sauce and sesame oil and toss for 1 minute, then serve over rice."
+   ],
+   "notes": [
+    "Contains soy, gluten and sesame."
+   ],
+   "nutrition": {
+    "kcal": 570,
+    "proteinG": 34,
+    "carbsG": 60,
+    "fatG": 23,
+    "fibreG": 11,
+    "sodiumMg": 1070
+   }
+  },
+  {
+   "id": "high-protein-chicken-san-choy-bau-cups-with-rice",
+   "title": "High-Protein Chicken Mince Lettuce Cups with Rice",
+   "summary": "Chicken mince with water chestnuts and hoisin in crisp lettuce cups, with rice on the side.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g chicken mince",
+      "1 tbsp vegetable oil",
+      "2 clove garlic, crushed",
+      "1 tsp ginger, grated",
+      "1 carrot, finely diced",
+      "2 tbsp hoisin sauce",
+      "1 tbsp soy sauce",
+      "6 iceberg lettuce leaf",
+      "1 cup cooked rice",
+      "2 spring onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the mince in the oil for 6 minutes, breaking it up, until cooked through and no pink remains.",
+    "Add the garlic, ginger and carrot for 2 minutes, then the hoisin and soy sauce and cook for 1 minute.",
+    "Spoon into the lettuce leaves, scatter with spring onion and serve with rice."
+   ],
+   "notes": [
+    "Food safety: chicken mince must reach 75°C throughout with no pink; eat leftovers within 2 days.",
+    "Contains soy and gluten."
+   ],
+   "nutrition": {
+    "kcal": 500,
+    "proteinG": 38,
+    "carbsG": 48,
+    "fatG": 17,
+    "fibreG": 3,
+    "sodiumMg": 1150
+   }
+  },
+  {
+   "id": "pregnancy-friendly-well-cooked-chicken-and-vegetable-bake",
+   "title": "Pregnancy-Friendly Well-Cooked Chicken and Vegetable Bake",
+   "summary": "Fully cooked chicken thighs with pumpkin, spinach and brown rice, rich in iron, folate and protein.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 chicken thigh, skinless",
+      "500g pumpkin, cubed",
+      "1 brown onion, wedges",
+      "2 tbsp olive oil",
+      "1 tsp ground cumin",
+      "1 tsp salt",
+      "200g baby spinach",
+      "2 cup cooked brown rice",
+      "1 lemon, juiced"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 210°C (190°C fan). Toss the chicken, pumpkin and onion with the oil, cumin and salt on a tray.",
+    "Roast for 40 minutes, until the chicken reaches 75°C, juices run clear and the pumpkin is tender.",
+    "Wilt the spinach on the hot tray for 2 minutes, squeeze over lemon and serve with rice."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C with no pink; reheat leftovers until steaming hot and eat within 2 days. Suitable in pregnancy because all meat is well cooked; wash the spinach well."
+   ],
+   "nutrition": {
+    "kcal": 510,
+    "proteinG": 38,
+    "carbsG": 46,
+    "fatG": 19,
+    "fibreG": 6,
+    "sodiumMg": 740
+   }
+  },
+  {
+   "id": "pregnancy-friendly-baked-salmon-with-sweet-potato-mash",
+   "title": "Pregnancy-Friendly Baked Salmon with Sweet Potato Mash",
+   "summary": "Well-cooked salmon, a low-mercury fish rich in omega-3, with creamy sweet potato mash and peas.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 salmon fillet",
+      "2 sweet potato, peeled and cubed",
+      "1 tbsp butter",
+      "1 tbsp olive oil",
+      "1 cup frozen peas",
+      "1 lemon, cut into wedges",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the sweet potato for 15 minutes until soft, drain and mash with the butter and half the salt.",
+    "Bake the salmon with the oil at 200°C for 12 minutes, until opaque and flaking all the way through.",
+    "Simmer the peas for 3 minutes until hot and serve everything with lemon."
+   ],
+   "notes": [
+    "Food safety: cook salmon until opaque all the way through, at least 63°C and ideally flaking; do not eat it raw or lightly cooked while pregnant. Salmon is low in mercury; limit to 2 to 3 serves of low-mercury fish a week.",
+    "Contains fish and milk."
+   ],
+   "nutrition": {
+    "kcal": 570,
+    "proteinG": 36,
+    "carbsG": 52,
+    "fatG": 24,
+    "fibreG": 9,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "pregnancy-friendly-beef-and-spinach-lasagne-style-pasta",
+   "title": "Pregnancy-Friendly Beef and Spinach Pasta Bake",
+   "summary": "A well-cooked, iron-rich pasta bake of beef mince, spinach and pasteurised cheese.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "300g penne",
+      "400g beef mince",
+      "1 tbsp olive oil",
+      "1 brown onion, diced",
+      "2 clove garlic, crushed",
+      "1 can crushed tomatoes",
+      "150g baby spinach",
+      "1 tsp dried oregano",
+      "1/2 tsp salt",
+      "1 cup mozzarella, grated"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the penne for 8 minutes until just tender and drain.",
+    "Soften the onion and garlic in the oil for 4 minutes, add the mince and cook for 8 minutes until browned, then add the tomatoes, oregano and salt and simmer for 8 minutes. Stir in the spinach until wilted.",
+    "Mix with the pasta, top with mozzarella and bake at 200°C for 15 minutes, until the cheese is golden and the centre is steaming hot at 75°C."
+   ],
+   "notes": [
+    "Food safety: beef mince must reach 75°C in the centre with no pink; use pasteurised cheese and eat leftovers within 2 days. Pregnancy-friendly: everything is cooked until steaming hot.",
+    "Contains gluten and milk."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 36,
+    "carbsG": 62,
+    "fatG": 19,
+    "fibreG": 5,
+    "sodiumMg": 600
+   }
+  },
+  {
+   "id": "pregnancy-friendly-lentil-and-vegetable-shepherds-pie",
+   "title": "Pregnancy-Friendly Lentil and Vegetable Shepherd's Pie",
+   "summary": "A folate-rich lentil and vegetable pie under golden mash, fully cooked and suitable for pregnancy.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 45,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 tbsp olive oil",
+      "1 brown onion, diced",
+      "2 carrot, diced",
+      "2 clove garlic, crushed",
+      "1 cup brown lentils, rinsed",
+      "2 tbsp tomato paste",
+      "2 cup vegetable stock",
+      "1 cup frozen peas",
+      "800g potato, peeled and cubed",
+      "40g butter",
+      "1/3 cup milk",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Soften the onion, carrot and garlic in the oil for 6 minutes, add the lentils, paste and stock and simmer for 25 minutes until the lentils are tender. Stir in the peas.",
+    "Boil the potatoes for 15 minutes until soft, then mash with the butter, milk and salt.",
+    "Spread the mash over the lentils and bake at 200°C for 20 minutes, until golden and bubbling hot."
+   ],
+   "notes": [
+    "Contains milk. Use olive oil spread and plant milk for vegan."
+   ],
+   "nutrition": {
+    "kcal": 470,
+    "proteinG": 17,
+    "carbsG": 78,
+    "fatG": 11,
+    "fibreG": 13,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "pregnancy-friendly-fully-cooked-egg-and-veg-fried-rice",
+   "title": "Pregnancy-Friendly Fully Cooked Egg and Veg Fried Rice",
+   "summary": "A veg-packed fried rice with firmly cooked eggs and no raw ingredients, served piping hot.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp vegetable oil",
+      "3 egg, beaten",
+      "2 cup cooked rice, cold",
+      "1 cup frozen peas",
+      "1 carrot, finely diced",
+      "2 clove garlic, crushed",
+      "2 tbsp soy sauce",
+      "2 spring onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the egg in half the oil, stirring, for 2 minutes until completely set and no liquid remains, then remove.",
+    "Fry the carrot and garlic in the remaining oil for 3 minutes, add the rice and peas and stir-fry for 4 minutes, until steaming hot.",
+    "Return the egg, add the soy sauce and spring onion and toss through."
+   ],
+   "notes": [
+    "Food safety: eggs must be fully set with a firm yolk; use rice that was cooled and refrigerated within 1 hour and eat within 1 day, reheated until steaming hot. Pregnancy-friendly.",
+    "Contains egg, soy and gluten."
+   ],
+   "nutrition": {
+    "kcal": 520,
+    "proteinG": 19,
+    "carbsG": 60,
+    "fatG": 22,
+    "fibreG": 6,
+    "sodiumMg": 1010
+   }
+  },
+  {
+   "id": "easy-teen-cook-pan-fried-chicken-quesadillas",
+   "title": "Easy Teen Cook: Pan-Fried Chicken Quesadillas",
+   "summary": "A first-cook recipe: shredded chicken and cheese in a tortilla, crisped in a frying pan.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "2 cup cooked chicken, shredded",
+      "8 flour tortilla",
+      "1.5 cup tasty cheese, grated",
+      "1 tsp ground cumin",
+      "2 tbsp olive oil",
+      "1/4 cup tomato salsa",
+      "1/2 cup sour cream"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the chicken with the cumin, salsa and cheese.",
+    "Spread over four tortillas, top with the other four and fry in the oil for 3 minutes a side, until golden and the cheese has melted.",
+    "Cut into wedges and serve with sour cream."
+   ],
+   "notes": [
+    "Food safety: use fully cooked chicken, reheat until steaming hot (75°C) and eat leftovers within 2 days.",
+    "Contains gluten and milk. A good first recipe for a teen: ask an adult to help with the hot pan."
+   ],
+   "nutrition": {
+    "kcal": 590,
+    "proteinG": 38,
+    "carbsG": 48,
+    "fatG": 27,
+    "fibreG": 3,
+    "sodiumMg": 880
+   }
+  },
+  {
+   "id": "easy-teen-cook-one-pot-spaghetti-with-meat-sauce",
+   "title": "Easy Teen Cook: One-Pot Spaghetti with Meat Sauce",
+   "summary": "Everything cooks in one pot: mince, tomato and spaghetti, with almost no washing up.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": true,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "1 tbsp olive oil",
+      "1 brown onion, diced",
+      "400g beef mince",
+      "1 can crushed tomatoes",
+      "3 cup beef stock",
+      "1 tsp dried oregano",
+      "1/2 tsp salt",
+      "300g spaghetti, broken in half",
+      "1/2 cup tasty cheese, grated"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the onion in the oil for 4 minutes, add the mince and brown for 8 minutes, breaking it up.",
+    "Add the tomatoes, stock, oregano and salt, bring to the boil, then add the spaghetti. Simmer for 14 minutes, stirring often, until the pasta is tender and the sauce is thick.",
+    "Top with cheese and serve."
+   ],
+   "notes": [
+    "Food safety: beef mince must reach 75°C and have no pink; eat leftovers within 2 days.",
+    "Contains gluten and milk. A good first recipe for a teen: ask an adult to help with the boiling pot."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 32,
+    "carbsG": 66,
+    "fatG": 18,
+    "fibreG": 5,
+    "sodiumMg": 860
+   }
+  },
+  {
+   "id": "easy-teen-cook-sheet-pan-nachos-with-beef",
+   "title": "Easy Teen Cook: Sheet-Pan Beef Nachos",
+   "summary": "A tray of corn chips, taco beef, beans and melted cheese, cooked mostly in the oven.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g beef mince",
+      "1 tbsp olive oil",
+      "2 tsp taco seasoning",
+      "1/2 cup water",
+      "200g corn chips",
+      "1 can black beans, drained and rinsed",
+      "1.5 cup tasty cheese, grated",
+      "1 tomato, diced",
+      "1/2 cup sour cream",
+      "1 avocado, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the mince in the oil for 8 minutes, add the seasoning and water and cook for 3 minutes until thick and no pink remains.",
+    "Spread the chips on a tray, scatter over the beef and beans and top with cheese.",
+    "Bake at 200°C for 8 minutes, until the cheese is melted and bubbling, then top with tomato, sour cream and avocado."
+   ],
+   "notes": [
+    "Food safety: beef mince must reach 75°C with no pink; eat leftovers within 2 days.",
+    "Contains milk. A good first recipe for a teen: ask an adult to help with the hot oven."
+   ],
+   "nutrition": {
+    "kcal": 640,
+    "proteinG": 28,
+    "carbsG": 50,
+    "fatG": 37,
+    "fibreG": 10,
+    "sodiumMg": 720
+   }
+  },
+  {
+   "id": "easy-teen-cook-cheesy-veggie-omelette-with-toast",
+   "title": "Easy Teen Cook: Cheesy Veggie Omelette with Toast",
+   "summary": "A simple three-egg omelette with cheese and capsicum, served with buttered toast.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 8,
+   "servings": 1,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "3 egg",
+      "1 tbsp butter",
+      "1/4 red capsicum, diced",
+      "1/4 cup tasty cheese, grated",
+      "1/4 tsp salt",
+      "2 slice bread, toasted"
+     ]
+    }
+   ],
+   "steps": [
+    "Whisk the eggs with the salt. Soften the capsicum in half the butter in a small frying pan for 2 minutes.",
+    "Pour in the eggs and cook on medium heat for 3 minutes, until the base is set and the top is nearly set.",
+    "Add the cheese, fold the omelette over and cook for 1 minute more, until the egg is firm. Serve with buttered toast."
+   ],
+   "notes": [
+    "Food safety: cook the eggs until firm with no runny egg left, and eat straight away.",
+    "Contains egg, milk and gluten. A good first recipe for a teen."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 30,
+    "carbsG": 28,
+    "fatG": 38,
+    "fibreG": 3,
+    "sodiumMg": 880
+   }
+  },
+  {
+   "id": "easy-teen-cook-chicken-and-veg-noodle-stir-fry",
+   "title": "Easy Teen Cook: Chicken and Veg Noodle Stir-Fry",
+   "summary": "A fast stir-fry with chicken, frozen stir-fry vegetables and noodles in a bottled sauce.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 12,
+   "servings": 3,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g chicken breast, thinly sliced",
+      "1 tbsp vegetable oil",
+      "400g frozen stir-fry vegetables",
+      "300g egg noodles",
+      "3 tbsp soy sauce",
+      "1 tbsp oyster sauce",
+      "1 clove garlic, crushed"
+     ]
+    }
+   ],
+   "steps": [
+    "Soak the noodles in boiling water for 4 minutes until tender and drain.",
+    "Stir-fry the chicken in the oil for 5 minutes until white throughout, add the garlic and vegetables and cook for 4 minutes.",
+    "Add the noodles, soy sauce and oyster sauce and toss for 2 minutes until hot."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C with no pink; eat leftovers within 2 days.",
+    "Contains gluten, egg and soy. A good first recipe for a teen: ask an adult to help with the hot wok."
+   ],
+   "nutrition": {
+    "kcal": 520,
+    "proteinG": 34,
+    "carbsG": 66,
+    "fatG": 12,
+    "fibreG": 6,
+    "sodiumMg": 1340
+   }
+  },
+  {
+   "id": "easy-teen-cook-baked-sausage-and-potato-tray",
+   "title": "Easy Teen Cook: Baked Sausage and Potato Tray",
+   "summary": "Chop, toss and bake: sausages, potato and onion on one tray with nothing tricky.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "6 pork sausage",
+      "500g potato, cubed",
+      "1 brown onion, wedges",
+      "2 tbsp olive oil",
+      "1 tsp dried mixed herbs",
+      "1/2 tsp salt",
+      "1 cup frozen peas"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 210°C (190°C fan). Toss the potato and onion with the oil, herbs and salt on a tray.",
+    "Add the sausages and bake for 35 minutes, turning once, until golden and cooked through.",
+    "Boil the peas for 3 minutes until tender and serve alongside."
+   ],
+   "notes": [
+    "Food safety: pork sausages must reach 75°C in the centre with no pink; eat leftovers within 2 days.",
+    "Contains gluten. A good first recipe for a teen: ask an adult to help with the hot oven."
+   ],
+   "nutrition": {
+    "kcal": 540,
+    "proteinG": 19,
+    "carbsG": 40,
+    "fatG": 33,
+    "fibreG": 6,
+    "sodiumMg": 980
+   }
+  },
+  {
+   "id": "easy-teen-cook-tuna-and-sweetcorn-patties",
+   "title": "Easy Teen Cook: Tuna and Sweetcorn Patties",
+   "summary": "Pan-fried patties made from tinned tuna, corn and egg, served with a squeeze of lemon.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 can tuna in oil, drained",
+      "1 can sweetcorn, drained",
+      "2 egg",
+      "1/2 cup breadcrumbs",
+      "2 spring onion, sliced",
+      "2 tbsp olive oil",
+      "1 lemon, cut into wedges"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the tuna, corn, eggs, breadcrumbs and spring onion and shape into 8 patties.",
+    "Fry in the oil for 4 minutes a side, until golden and firm all the way through.",
+    "Serve hot with lemon wedges."
+   ],
+   "notes": [
+    "Food safety: cook patties until firm and steaming hot (75°C) in the centre because they contain raw egg when mixed; eat leftovers within 2 days.",
+    "Contains fish, egg and gluten. A good first recipe for a teen."
+   ],
+   "nutrition": {
+    "kcal": 290,
+    "proteinG": 26,
+    "carbsG": 18,
+    "fatG": 13,
+    "fibreG": 2,
+    "sodiumMg": 430
+   }
+  },
+  {
+   "id": "air-fryer-honey-garlic-chicken-thighs-with-broccoli",
+   "title": "Air-Fryer Honey Garlic Chicken Thighs with Broccoli",
+   "summary": "Sticky honey garlic chicken thighs and broccoli, done in 20 minutes in the air fryer.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 chicken thigh, skinless",
+      "3 tbsp soy sauce",
+      "2 tbsp honey",
+      "3 clove garlic, crushed",
+      "1 tsp ginger, grated",
+      "1 head broccoli, cut into florets",
+      "1 tbsp olive oil",
+      "2 cup cooked rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Marinate the chicken in the soy sauce, honey, garlic and ginger for 10 minutes, then air-fry at 190°C for 15 minutes, turning once, until golden and the juices run clear.",
+    "Toss the broccoli with the oil and air-fry for the last 6 minutes, until tender.",
+    "Brush the chicken with any remaining marinade and serve with rice."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C with no pink; do not reuse raw marinade unless boiled, and eat leftovers within 2 days.",
+    "Contains soy and gluten."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 42,
+    "carbsG": 56,
+    "fatG": 17,
+    "fibreG": 4,
+    "sodiumMg": 1080
+   }
+  },
+  {
+   "id": "air-fryer-barramundi-with-lemon-pepper-and-sweet-potato-chips",
+   "title": "Air-Fryer Barramundi with Lemon Pepper and Sweet Potato Chips",
+   "summary": "Flaky barramundi and crisp sweet potato chips, both cooked in the air fryer.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 18,
+   "servings": 2,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 barramundi fillet",
+      "2 sweet potato, cut into chips",
+      "1 tbsp olive oil",
+      "1 tsp lemon pepper seasoning",
+      "1/2 tsp salt",
+      "1 lemon, cut into wedges",
+      "1/4 cup mayonnaise"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the sweet potato with half the oil and salt and air-fry at 200°C for 18 minutes, shaking twice, until crisp.",
+    "Rub the fish with the remaining oil and lemon pepper and air-fry for the last 8 minutes, until opaque and flaking.",
+    "Serve with lemon wedges and mayonnaise."
+   ],
+   "notes": [
+    "Food safety: cook fish until opaque and flaking, at least 63°C; eat leftovers within 1 day.",
+    "Contains fish and egg."
+   ],
+   "nutrition": {
+    "kcal": 640,
+    "proteinG": 40,
+    "carbsG": 58,
+    "fatG": 28,
+    "fibreG": 8,
+    "sodiumMg": 820
+   }
+  },
+  {
+   "id": "slow-cooker-moroccan-chicken-and-apricot-tagine",
+   "title": "Slow-Cooker Moroccan Chicken and Apricot Tagine",
+   "summary": "Chicken thighs, apricots and chickpeas in warm spices, simmered until tender and served with couscous.",
+   "cuisine": "north-african",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 300,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "900g chicken thigh, skinless",
+      "1 brown onion, sliced",
+      "3 clove garlic, crushed",
+      "2 tsp ground cumin",
+      "2 tsp ground cinnamon",
+      "1 tsp ground ginger",
+      "1 can chickpeas, drained and rinsed",
+      "1 can crushed tomatoes",
+      "1/2 cup dried apricots, halved",
+      "1 cup chicken stock",
+      "1 tsp salt",
+      "1.5 cup couscous",
+      "2 tbsp coriander, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Put the chicken, onion, garlic, spices, chickpeas, tomatoes, apricots, stock and salt into the slow cooker and stir. Cook on low for 5 hours, until the chicken is tender and reaches 75°C.",
+    "Cover the couscous with 1.5 cups boiling water for 5 minutes until fluffy.",
+    "Serve the tagine over couscous with coriander."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C; cool leftovers within 2 hours and eat within 2 days.",
+    "Contains gluten."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 40,
+    "carbsG": 70,
+    "fatG": 13,
+    "fibreG": 10,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "slow-cooker-creamy-tuscan-white-bean-and-chicken-stew",
+   "title": "Slow-Cooker Creamy Tuscan Chicken and White Bean Stew",
+   "summary": "Chicken thigh, cannellini beans, sun-dried tomato and spinach in a creamy garlic sauce.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 300,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "900g chicken thigh, skinless",
+      "2 can cannellini beans, drained and rinsed",
+      "1 brown onion, diced",
+      "3 clove garlic, crushed",
+      "1/2 cup sun-dried tomato, chopped",
+      "1 cup chicken stock",
+      "1 tsp dried Italian herbs",
+      "1 tsp salt",
+      "1/2 cup cream",
+      "150g baby spinach"
+     ]
+    }
+   ],
+   "steps": [
+    "Put the chicken, beans, onion, garlic, sun-dried tomato, stock, herbs and salt into the slow cooker. Cook on low for 5 hours, until the chicken is tender and reaches 75°C.",
+    "Stir in the cream and spinach and cook for 10 minutes more, until the spinach has wilted.",
+    "Ladle into bowls and serve with warm crusty bread to mop up the sauce."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C; cool leftovers within 2 hours and eat within 2 days.",
+    "Contains milk."
+   ],
+   "nutrition": {
+    "kcal": 440,
+    "proteinG": 40,
+    "carbsG": 26,
+    "fatG": 19,
+    "fibreG": 8,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "feed-a-crowd-sheet-pan-fajitas-for-ten",
+   "title": "Feed-a-Crowd Sheet-Pan Fajitas for Ten",
+   "summary": "Spiced chicken, capsicum and onion roasted on two trays and served with tortillas and toppings.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 30,
+   "servings": 10,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "1.2kg chicken breast, sliced",
+      "5 capsicum, sliced",
+      "3 red onion, sliced",
+      "4 tbsp olive oil",
+      "3 tbsp fajita seasoning",
+      "1 tsp salt",
+      "20 small flour tortilla",
+      "2 cup sour cream",
+      "2 cup tasty cheese, grated",
+      "3 lime, cut into wedges"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 230°C (210°C fan). Toss the chicken, capsicum and onion with the oil, seasoning and salt on two large trays.",
+    "Roast for 25 to 30 minutes, stirring once, until the chicken reaches 75°C and the vegetables are charred at the edges.",
+    "Warm the tortillas and serve with sour cream, cheese and lime."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C with no pink; cool leftovers within 2 hours and eat within 2 days.",
+    "Contains gluten and milk."
+   ],
+   "nutrition": {
+    "kcal": 600,
+    "proteinG": 40,
+    "carbsG": 52,
+    "fatG": 25,
+    "fibreG": 5,
+    "sodiumMg": 1080
+   }
+  }
+ ]
+}

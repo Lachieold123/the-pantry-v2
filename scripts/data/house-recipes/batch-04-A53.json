@@ -1,0 +1,1159 @@
+{
+ "about": "House recipes, batch 04 (helper sA): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+ "recipes": [
+  {
+   "id": "slow-cooker-beef-and-barley-stew-with-root-vegetables",
+   "title": "Slow-Cooker Beef and Barley Stew with Root Vegetables",
+   "summary": "A hearty stew of diced beef, pearl barley, carrot and potato that cooks all day while you are out.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 480,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g beef chuck, diced",
+      "1 cup pearl barley",
+      "3 carrot, chopped",
+      "2 potato, chopped",
+      "2 onion, diced",
+      "3 clove garlic, crushed",
+      "2 tbsp tomato paste",
+      "4 cup beef stock",
+      "2 bay leaf",
+      "1 tbsp olive oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the beef in the oil in batches for 5 minutes and tip into the slow cooker.",
+    "Add the onion, garlic, tomato paste, stock, bay leaves, carrot, potato and barley and stir well.",
+    "Cook on low for 8 hours until the beef is tender and the barley is soft, then remove the bay leaves and serve."
+   ],
+   "notes": [
+    "Contains gluten.",
+    "Food safety: cook beef until tender and steaming hot throughout (at least 75°C); refrigerate leftovers within 2 hours and eat within 3 days."
+   ],
+   "nutrition": {
+    "kcal": 470,
+    "proteinG": 38,
+    "carbsG": 44,
+    "fatG": 15,
+    "fibreG": 9,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "pressure-cooker-chicken-and-chickpea-tagine",
+   "title": "Pressure-Cooker Chicken and Chickpea Tagine",
+   "summary": "Chicken thighs, chickpeas and dried apricots in a warm spiced sauce, ready in about 35 minutes in the pressure cooker.",
+   "cuisine": "north-african",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "700g chicken thigh, diced",
+      "400g tinned chickpeas, drained",
+      "1 onion, sliced",
+      "3 clove garlic, crushed",
+      "2 tsp ground cumin",
+      "2 tsp paprika",
+      "1 tsp ground cinnamon",
+      "400g tinned tomatoes",
+      "1/2 cup dried apricots, halved",
+      "1 cup chicken stock",
+      "1 tbsp olive oil",
+      "1/4 cup coriander leaves",
+      "1.5 cup couscous"
+     ]
+    }
+   ],
+   "steps": [
+    "Use the sauté setting to soften the onion in the oil for 4 minutes, add the garlic and spices for 1 minute.",
+    "Add the chicken, chickpeas, tomatoes, apricots and stock, seal and cook at high pressure for 10 minutes, then release the pressure.",
+    "Check the chicken is cooked through at 75°C. Prepare the couscous with boiling water until the grains are tender, then serve the tagine over it with the coriander."
+   ],
+   "notes": [
+    "Contains gluten (couscous).",
+    "Food safety: chicken must reach 75°C at the thickest part with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 610,
+    "proteinG": 45,
+    "carbsG": 68,
+    "fatG": 17,
+    "fibreG": 10,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "sheet-pan-garlic-thyme-chicken-legs-with-potatoes-and-green-beans",
+   "title": "Sheet-Pan Garlic and Thyme Chicken with Potatoes and Green Beans",
+   "summary": "Chicken thighs roasted on one tray with baby potatoes, lemon and thyme, with green beans added at the end.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 chicken thigh, bone in",
+      "600g baby potatoes, halved",
+      "300g green beans, trimmed",
+      "2 lemon, sliced",
+      "4 clove garlic, whole",
+      "1 tbsp thyme leaves",
+      "3 tbsp olive oil",
+      "1 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C. Toss the potatoes, garlic, lemon, thyme, oil and salt on a large tray, then nestle the chicken on top, skin side up.",
+    "Roast for 25 minutes, add the beans, and roast for 12 minutes more until the chicken is golden and cooked through.",
+    "Rest for 5 minutes and spoon the tray juices over to serve."
+   ],
+   "notes": [
+    "Gluten free.",
+    "Food safety: chicken must reach 75°C at the thickest part with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 620,
+    "proteinG": 42,
+    "carbsG": 30,
+    "fatG": 36,
+    "fibreG": 5,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "freezer-batch-turkey-and-vegetable-meatballs-in-tomato-sauce",
+   "title": "Freezer-Batch Turkey and Vegetable Meatballs in Tomato Sauce",
+   "summary": "Turkey meatballs with grated zucchini and carrot, simmered in tomato sauce and portioned for the freezer.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 30,
+   "servings": 8,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "800g turkey mince",
+      "2 zucchini, grated",
+      "1 carrot, grated",
+      "1 cup breadcrumbs",
+      "1 egg",
+      "1/4 cup parmesan, grated",
+      "1 tsp dried oregano",
+      "800g tinned tomatoes",
+      "1 onion, diced",
+      "3 clove garlic, crushed",
+      "2 tbsp olive oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the mince, zucchini, carrot, crumbs, egg, parmesan and oregano and roll into 32 balls.",
+    "Soften the onion and garlic in the oil for 5 minutes, add the tomatoes and 1/2 cup of water, and bring to a simmer.",
+    "Add the meatballs, cover and simmer for 20 minutes, turning once, until cooked through.",
+    "Cool, portion into containers and freeze."
+   ],
+   "notes": [
+    "Contains egg, dairy and gluten. Parmesan is not vegetarian.",
+    "Food safety: mince must reach 75°C throughout with no pink; refrigerate leftovers within 2 hours and eat within 2 days. Freeze in portions for up to 3 months and thaw in the fridge overnight; reheat until steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 290,
+    "proteinG": 28,
+    "carbsG": 18,
+    "fatG": 12,
+    "fibreG": 3,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "slow-cooker-pulled-pork-with-apple-slaw-rolls",
+   "title": "Slow-Cooker Pulled Pork Rolls with Apple Slaw",
+   "summary": "Smoky pulled pork shoulder piled into rolls with a crisp apple and cabbage slaw.",
+   "cuisine": "american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 480,
+   "servings": 8,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.5kg pork shoulder",
+      "1 onion, sliced",
+      "3 tbsp brown sugar",
+      "2 tsp smoked paprika",
+      "1 tsp ground cumin",
+      "1/4 cup apple cider vinegar",
+      "1/2 cup chicken stock",
+      "2 cup cabbage, shredded",
+      "2 apple, grated",
+      "1/3 cup mayonnaise",
+      "8 bread roll"
+     ]
+    }
+   ],
+   "steps": [
+    "Rub the pork with the sugar, paprika, cumin and 1 teaspoon of salt, then set on the sliced onion in the slow cooker with the vinegar and stock.",
+    "Cook on low for 8 hours until the pork shreds easily, then shred and toss in the juices.",
+    "Toss the cabbage, apple and mayonnaise for the slaw and pile into the rolls with the pork."
+   ],
+   "notes": [
+    "Contains egg and gluten.",
+    "Food safety: pork must reach 70°C or more with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 38,
+    "carbsG": 48,
+    "fatG": 22,
+    "fibreG": 4,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "instant-pot-lamb-and-chickpea-curry",
+   "title": "Pressure-Cooker Lamb and Chickpea Curry",
+   "summary": "Tender lamb shoulder and chickpeas in a mild tomato curry sauce, pressure cooked in under an hour.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 35,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g lamb shoulder, diced",
+      "400g tinned chickpeas, drained",
+      "2 onion, diced",
+      "4 clove garlic, crushed",
+      "1 tbsp ginger, grated",
+      "2 tbsp garam masala",
+      "1 tsp ground turmeric",
+      "400g tinned tomatoes",
+      "1 cup beef stock",
+      "2 tbsp vegetable oil",
+      "1 cup natural yoghurt",
+      "2 cup basmati rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the lamb in the oil using the sauté setting for 6 minutes, then add the onion, garlic, ginger and spices for 3 minutes.",
+    "Add the tomatoes, chickpeas and stock, seal and cook at high pressure for 25 minutes, then release naturally.",
+    "Cook the rice separately until tender. Check the lamb is tender and steaming hot, then stir the yoghurt through the curry off the heat and serve."
+   ],
+   "notes": [
+    "Contains dairy.",
+    "Food safety: cook lamb until tender and at least 75°C throughout; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 640,
+    "proteinG": 40,
+    "carbsG": 66,
+    "fatG": 22,
+    "fibreG": 8,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "one-pot-chicken-and-rice-with-peas-and-lemon",
+   "title": "One-Pot Lemon Chicken and Rice with Peas",
+   "summary": "Chicken thighs and rice cooked together in one pot with lemon, garlic and peas.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g chicken thigh, diced",
+      "1.5 cup long grain rice",
+      "2 cup chicken stock",
+      "1 cup frozen peas",
+      "1 onion, diced",
+      "3 clove garlic, crushed",
+      "1 lemon, zested and juiced",
+      "2 tbsp olive oil",
+      "1/4 cup parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the chicken in the oil in a lidded pot for 5 minutes, add the onion and garlic and cook for 3 minutes.",
+    "Stir in the rice, stock and lemon zest, cover and simmer on low for 18 minutes until the rice is tender.",
+    "Stir through the peas and lemon juice, rest covered for 5 minutes, then scatter with parsley."
+   ],
+   "notes": [
+    "Gluten free.",
+    "Food safety: chicken must reach 75°C at the thickest part with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 570,
+    "proteinG": 40,
+    "carbsG": 64,
+    "fatG": 16,
+    "fibreG": 5,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "sheet-pan-baked-salmon-with-broccolini-and-sweet-potato",
+   "title": "Sheet-Pan Baked Salmon with Broccolini and Sweet Potato",
+   "summary": "Salmon fillets roasted with sweet potato wedges and broccolini on one tray, finished with lemon.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 salmon fillet",
+      "600g sweet potato, cut into wedges",
+      "2 bunch broccolini",
+      "3 tbsp olive oil",
+      "1 lemon, cut into wedges",
+      "1 tsp smoked paprika",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C. Toss the sweet potato with half the oil, paprika and salt on a tray and roast for 15 minutes.",
+    "Add the broccolini and salmon, drizzle with the remaining oil, and roast for 12 minutes until the salmon flakes.",
+    "Serve with the lemon wedges."
+   ],
+   "notes": [
+    "Gluten free and dairy free.",
+    "Food safety: cook fish until opaque and flaking, and shellfish until opaque and firm; keep raw seafood below 5°C, refrigerate leftovers within 2 hours and eat within 1 day."
+   ],
+   "nutrition": {
+    "kcal": 500,
+    "proteinG": 34,
+    "carbsG": 32,
+    "fatG": 26,
+    "fibreG": 6,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "freezer-friendly-beef-and-bean-burrito-parcels",
+   "title": "Freezer-Friendly Beef and Bean Burrito Parcels",
+   "summary": "Beef mince, black beans and cheese rolled in tortillas, wrapped individually and frozen for quick lunches.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 20,
+   "servings": 8,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "500g beef mince",
+      "800g tinned black beans, drained",
+      "1 onion, diced",
+      "2 tsp ground cumin",
+      "2 tsp smoked paprika",
+      "1/2 cup tomato paste",
+      "1 cup cheddar, grated",
+      "8 tortilla",
+      "1 tbsp vegetable oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the mince and onion in the oil for 8 minutes, add the spices, tomato paste, beans and 1/2 cup of water and simmer for 8 minutes.",
+    "Cool the filling, then roll with the cheese into the tortillas and wrap each in baking paper.",
+    "Freeze, then reheat from frozen in a 180°C oven for 25 minutes or until steaming hot throughout."
+   ],
+   "notes": [
+    "Contains dairy and gluten.",
+    "Food safety: mince must reach 75°C throughout with no pink; refrigerate leftovers within 2 hours and eat within 2 days. Freeze in portions for up to 3 months and thaw in the fridge overnight; reheat until steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 470,
+    "proteinG": 28,
+    "carbsG": 50,
+    "fatG": 17,
+    "fibreG": 9,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "slow-cooker-chicken-cacciatore-with-olives",
+   "title": "Slow-Cooker Chicken Cacciatore with Olives",
+   "summary": "Chicken thighs braised with capsicum, tomato and olives, served over soft polenta.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 360,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "900g chicken thigh, bone in",
+      "2 capsicum, sliced",
+      "1 onion, sliced",
+      "3 clove garlic, crushed",
+      "800g tinned tomatoes",
+      "1/2 cup black olives",
+      "1/2 cup chicken stock",
+      "1 tsp dried oregano",
+      "1 cup instant polenta",
+      "1 tbsp olive oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the chicken in the oil for 5 minutes and place in the slow cooker with the onion, capsicum, garlic, tomatoes, olives, stock and oregano.",
+    "Cook on low for 6 hours until the chicken falls from the bone.",
+    "Cook the polenta in 4 cups of water until thick, and serve under the chicken."
+   ],
+   "notes": [
+    "Gluten free.",
+    "Food safety: chicken must reach 75°C at the thickest part with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 480,
+    "proteinG": 36,
+    "carbsG": 34,
+    "fatG": 20,
+    "fibreG": 5,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "high-protein-chicken-burrito-bowl-meal-prep",
+   "title": "High-Protein Chicken Burrito Bowl Meal Prep",
+   "summary": "Four lunch boxes of spiced chicken, rice, black beans and corn with a lime yoghurt dressing.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g chicken breast, sliced",
+      "1.5 cup brown rice",
+      "400g tinned black beans, drained",
+      "1 cup corn kernels",
+      "2 tsp ground cumin",
+      "2 tsp smoked paprika",
+      "1 tbsp olive oil",
+      "1/2 cup natural yoghurt",
+      "1 lime, juiced",
+      "2 tomato, diced",
+      "1 cup cos lettuce, shredded"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the rice until tender and cool. Toss the chicken with the cumin, paprika and oil and pan-fry for 8 minutes until cooked through.",
+    "Divide the rice, chicken, beans, corn, tomato and lettuce into four containers.",
+    "Mix the yoghurt and lime and add a spoonful to each. Keep refrigerated."
+   ],
+   "notes": [
+    "Contains dairy.",
+    "Food safety: chicken must reach 75°C at the thickest part with no pink; refrigerate leftovers within 2 hours and eat within 2 days. Eat within 2 days of cooking when packed."
+   ],
+   "nutrition": {
+    "kcal": 540,
+    "proteinG": 46,
+    "carbsG": 62,
+    "fatG": 10,
+    "fibreG": 10,
+    "sodiumMg": 380
+   }
+  },
+  {
+   "id": "pressure-cooker-beef-ragu-with-pappardelle",
+   "title": "Pressure-Cooker Beef Ragu with Pappardelle",
+   "summary": "A rich shredded beef and tomato ragu cooked fast in the pressure cooker and tossed through ribbon pasta.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 60,
+   "servings": 6,
+   "onePot": true,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "900g beef chuck, in large pieces",
+      "1 onion, diced",
+      "2 carrot, diced",
+      "2 celery stalk, diced",
+      "3 clove garlic, crushed",
+      "2 tbsp tomato paste",
+      "800g tinned tomatoes",
+      "1 cup beef stock",
+      "1 tsp dried rosemary",
+      "2 tbsp olive oil",
+      "375g pappardelle",
+      "1/4 cup parmesan, grated"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the beef in the oil on the sauté setting, then add the onion, carrot, celery, garlic and tomato paste for 4 minutes.",
+    "Add the tomatoes, stock and rosemary, seal and cook at high pressure for 45 minutes, then release naturally.",
+    "Shred the beef into the sauce. Cook the pasta until tender, toss with the ragu and top with parmesan."
+   ],
+   "notes": [
+    "Contains gluten and dairy.",
+    "Food safety: cook beef until tender and steaming hot throughout (at least 75°C); refrigerate leftovers within 2 hours and eat within 3 days."
+   ],
+   "nutrition": {
+    "kcal": 600,
+    "proteinG": 42,
+    "carbsG": 64,
+    "fatG": 18,
+    "fibreG": 5,
+    "sodiumMg": 560
+   }
+  },
+  {
+   "id": "sheet-pan-sausage-and-vegetable-bake-with-zucchini",
+   "title": "Sheet-Pan Sausage and Vegetable Bake with Zucchini",
+   "summary": "Pork sausages roasted with zucchini, red onion, capsicum and potatoes on one tray.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 pork sausage",
+      "500g potatoes, cut into chunks",
+      "2 zucchini, sliced",
+      "2 red onion, cut into wedges",
+      "2 capsicum, sliced",
+      "3 tbsp olive oil",
+      "1 tsp dried oregano",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 210°C. Toss the potatoes, zucchini, onion, capsicum, oil, oregano and salt on a large tray.",
+    "Roast for 15 minutes, add the sausages and roast for 25 minutes more, turning once, until golden.",
+    "Check a sausage reaches 75°C in the centre with no pink, rest for 5 minutes and serve."
+   ],
+   "notes": [
+    "Check the sausage label for gluten.",
+    "Food safety: pork must reach 70°C or more with no pink; refrigerate leftovers within 2 hours and eat within 2 days. Sausages must reach 75°C."
+   ],
+   "nutrition": {
+    "kcal": 620,
+    "proteinG": 24,
+    "carbsG": 40,
+    "fatG": 40,
+    "fibreG": 7,
+    "sodiumMg": 880
+   }
+  },
+  {
+   "id": "slow-cooker-lentil-and-sweet-potato-dal",
+   "title": "Slow-Cooker Lentil and Sweet Potato Dal",
+   "summary": "Red lentils and sweet potato simmered slowly with ginger and turmeric in coconut milk.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 300,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 cup red lentils, rinsed",
+      "500g sweet potato, diced",
+      "1 onion, diced",
+      "3 clove garlic, crushed",
+      "1 tbsp ginger, grated",
+      "2 tsp ground cumin",
+      "1 tsp ground turmeric",
+      "400ml coconut milk",
+      "3 cup vegetable stock",
+      "200g baby spinach",
+      "2 cup basmati rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Add the lentils, sweet potato, onion, garlic, ginger, spices, coconut milk and stock to the slow cooker.",
+    "Cook on low for 5 hours until the lentils are soft and the sweet potato is tender.",
+    "Stir in the spinach until wilted, about 2 minutes.",
+    "Cook the rice separately until tender and serve the dal over it."
+   ],
+   "notes": [
+    "Vegan and gluten free."
+   ],
+   "nutrition": {
+    "kcal": 540,
+    "proteinG": 20,
+    "carbsG": 86,
+    "fatG": 13,
+    "fibreG": 11,
+    "sodiumMg": 380
+   }
+  },
+  {
+   "id": "freezer-batch-chicken-and-vegetable-pot-pie-filling",
+   "title": "Freezer-Batch Chicken and Vegetable Pot Pie Filling",
+   "summary": "A creamy chicken, leek and pea filling frozen in portions, then topped with puff pastry and baked when needed.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 35,
+   "servings": 8,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "800g chicken breast, diced",
+      "2 leek, sliced",
+      "2 carrot, diced",
+      "1 cup frozen peas",
+      "3 tbsp butter",
+      "1/4 cup plain flour",
+      "2 cup milk",
+      "1 cup chicken stock",
+      "1 tsp thyme leaves",
+      "4 sheet puff pastry"
+     ]
+    }
+   ],
+   "steps": [
+    "Melt the butter, soften the leek and carrot for 6 minutes, add the chicken and cook for 6 minutes.",
+    "Stir in the flour, then gradually add the milk and stock, and simmer for 10 minutes until thick. Add the peas and thyme, and cool.",
+    "Freeze the filling in 8 pots. To serve, thaw, top each with a pastry round and bake at 200°C for 25 minutes until golden and steaming hot."
+   ],
+   "notes": [
+    "Contains dairy and gluten.",
+    "Food safety: chicken must reach 75°C at the thickest part with no pink; refrigerate leftovers within 2 hours and eat within 2 days. Freeze in portions for up to 3 months and thaw in the fridge overnight; reheat until steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 480,
+    "proteinG": 30,
+    "carbsG": 34,
+    "fatG": 25,
+    "fibreG": 4,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "low-fodmap-friendly-chicken-and-rice-stir-fry-with-capsicum",
+   "title": "Chicken and Rice Stir-Fry with Capsicum, Carrot and Spring Onion Greens",
+   "summary": "A simple stir-fry that uses garlic-infused oil and the green tops of spring onion in place of garlic and onion.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 12,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g chicken breast, sliced",
+      "2 capsicum, sliced",
+      "2 carrot, cut into thin sticks",
+      "1 cup spring onion, green tops only, sliced",
+      "3 tbsp garlic-infused oil",
+      "2 tbsp soy sauce",
+      "1 tbsp ginger, grated",
+      "1 tbsp rice vinegar",
+      "3 cup cooked jasmine rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat half the oil in a wok and stir-fry the chicken for 5 minutes until cooked through, then remove.",
+    "Add the remaining oil, capsicum, carrot and ginger and stir-fry for 4 minutes.",
+    "Return the chicken with the soy, vinegar, rice and spring onion greens and toss for 2 minutes until hot."
+   ],
+   "notes": [
+    "Made with ingredient choices that avoid onion and garlic pieces; check the soy sauce label. Dairy free.",
+    "Food safety: chicken must reach 75°C at the thickest part with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 490,
+    "proteinG": 38,
+    "carbsG": 52,
+    "fatG": 14,
+    "fibreG": 4,
+    "sodiumMg": 860
+   }
+  },
+  {
+   "id": "low-fodmap-friendly-baked-salmon-with-potato-and-spinach",
+   "title": "Baked Salmon with Herbed Potatoes and Wilted Spinach",
+   "summary": "Salmon with chive-and-parsley potatoes and spinach, using ingredients commonly chosen for low-FODMAP eating.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 salmon fillet",
+      "600g baby potatoes, halved",
+      "200g baby spinach",
+      "2 tbsp chives, snipped",
+      "1/4 cup parsley, chopped",
+      "3 tbsp olive oil",
+      "1 lemon, juiced"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 210°C. Roast the potatoes with half the oil for 20 minutes.",
+    "Add the salmon, brush with oil, and roast for 10 minutes until it flakes.",
+    "Wilt the spinach in a hot pan for 1 minute, toss with the potatoes, herbs and lemon and serve with the salmon."
+   ],
+   "notes": [
+    "Gluten free and dairy free.",
+    "Food safety: cook fish until opaque and flaking, and shellfish until opaque and firm; keep raw seafood below 5°C, refrigerate leftovers within 2 hours and eat within 1 day."
+   ],
+   "nutrition": {
+    "kcal": 480,
+    "proteinG": 33,
+    "carbsG": 28,
+    "fatG": 26,
+    "fibreG": 4,
+    "sodiumMg": 150
+   }
+  },
+  {
+   "id": "ramadan-lamb-and-chickpea-harira-style-stew",
+   "title": "Ramadan Iftar Lamb and Chickpea Stew",
+   "summary": "A warming Moroccan-style stew of lamb, chickpeas, lentils and tomato, good for breaking the fast.",
+   "cuisine": "north-african",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 75,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g lamb shoulder, diced",
+      "400g tinned chickpeas, drained",
+      "1/2 cup brown lentils",
+      "1 onion, diced",
+      "2 celery stalk, diced",
+      "800g tinned tomatoes",
+      "4 cup beef stock",
+      "1 tsp ground cinnamon",
+      "1 tsp ground turmeric",
+      "1 tbsp olive oil",
+      "1 lemon, juiced",
+      "1/2 cup coriander leaves",
+      "dried apricots, 6"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the lamb in the oil for 5 minutes, add the onion and celery for 4 minutes and the spices for 1 minute.",
+    "Add the tomatoes, lentils, chickpeas and stock, cover and simmer for 60 minutes until the lamb and lentils are tender.",
+    "Finish with the lemon and coriander and serve with the apricots on the side."
+   ],
+   "notes": [
+    "Gluten free and dairy free.",
+    "Food safety: cook lamb until tender and at least 75°C throughout; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 420,
+    "proteinG": 30,
+    "carbsG": 46,
+    "fatG": 13,
+    "fibreG": 10,
+    "sodiumMg": 560
+   }
+  },
+  {
+   "id": "suhoor-spiced-egg-and-bean-shakshuka-with-wholemeal-bread",
+   "title": "Suhoor Spiced Egg and Bean Shakshuka",
+   "summary": "Eggs poached in a spiced tomato and white bean sauce, a filling pre-dawn meal served with wholemeal bread.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "breakfast",
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "8 egg",
+      "400g tinned white beans, drained",
+      "800g tinned tomatoes",
+      "1 capsicum, diced",
+      "1 onion, diced",
+      "2 clove garlic, crushed",
+      "2 tsp ground cumin",
+      "1 tsp paprika",
+      "2 tbsp olive oil",
+      "4 wholemeal bread slice"
+     ]
+    }
+   ],
+   "steps": [
+    "Soften the onion and capsicum in the oil for 6 minutes, add the garlic and spices for 1 minute.",
+    "Add the tomatoes and beans, simmer for 8 minutes, then make 8 wells and crack in the eggs.",
+    "Cover and cook for 5 minutes until the whites are set and the yolks are firm enough. Serve with the bread."
+   ],
+   "notes": [
+    "Contains egg and gluten.",
+    "Food safety: cook the eggs until the whites and yolks are set; refrigerate leftovers within 2 hours and eat within 1 day."
+   ],
+   "nutrition": {
+    "kcal": 430,
+    "proteinG": 25,
+    "carbsG": 42,
+    "fatG": 18,
+    "fibreG": 12,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "shabbat-slow-roast-chicken-with-root-vegetables-and-honey",
+   "title": "Shabbat Slow-Roast Chicken with Root Vegetables and Honey",
+   "summary": "A whole chicken roasted over carrot, potato and onion with honey and thyme for a Friday night table.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 100,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.8kg whole chicken",
+      "800g potatoes, cut into chunks",
+      "4 carrot, cut into chunks",
+      "2 onion, cut into wedges",
+      "2 tbsp honey",
+      "1 tbsp thyme leaves",
+      "3 tbsp olive oil",
+      "1 lemon, halved"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C. Spread the vegetables in a deep tray, drizzle with half the oil and season.",
+    "Rub the chicken with the remaining oil, place the lemon inside, set on the vegetables and roast for 80 minutes, brushing with the honey in the last 20 minutes.",
+    "Check the thickest part of the thigh reaches 75°C, rest for 15 minutes, carve and serve with the tray juices."
+   ],
+   "notes": [
+    "Gluten free and dairy free.",
+    "Food safety: chicken must reach 75°C at the thickest part with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 45,
+    "carbsG": 40,
+    "fatG": 26,
+    "fibreG": 6,
+    "sodiumMg": 300
+   }
+  },
+  {
+   "id": "lunar-new-year-braised-pork-belly-with-star-anise-and-eggs",
+   "title": "Lunar New Year Braised Pork Belly with Star Anise and Eggs",
+   "summary": "Slow-braised pork belly and boiled eggs in a sweet soy sauce, served with steamed rice.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 100,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g pork belly, cut into chunks",
+      "6 egg",
+      "1/3 cup soy sauce",
+      "2 tbsp brown sugar",
+      "3 star anise",
+      "1 tbsp ginger, sliced",
+      "3 clove garlic, crushed",
+      "3 cup water",
+      "4 cup cooked jasmine rice",
+      "1 bunch bok choy"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the eggs for 8 minutes, cool and peel. Blanch the pork in boiling water for 5 minutes and drain.",
+    "Simmer the pork with the soy, sugar, star anise, ginger, garlic and water, covered, for 75 minutes until tender, adding the eggs for the last 15 minutes.",
+    "Steam the bok choy for 3 minutes until tender and serve everything over the rice."
+   ],
+   "notes": [
+    "Contains egg, soy and gluten.",
+    "Food safety: pork must reach 70°C or more with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 690,
+    "proteinG": 36,
+    "carbsG": 56,
+    "fatG": 36,
+    "fibreG": 2,
+    "sodiumMg": 1150
+   }
+  },
+  {
+   "id": "lemon-myrtle-pan-seared-snapper-with-roast-pumpkin",
+   "title": "Lemon Myrtle Pan-Seared Snapper with Roast Pumpkin",
+   "summary": "Snapper fillets seared crisp-skinned with lemon myrtle, served on roast pumpkin with rocket.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 snapper fillet",
+      "1 tsp ground lemon myrtle",
+      "600g pumpkin, cut into wedges",
+      "3 tbsp olive oil",
+      "100g rocket",
+      "1 tbsp balsamic vinegar"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C and roast the pumpkin with half the oil for 25 minutes until golden.",
+    "Rub the fish with lemon myrtle, salt and the remaining oil and sear in a hot pan skin side down for 4 minutes, then turn for 2 minutes until opaque and flaking.",
+    "Serve on the pumpkin and rocket with the balsamic."
+   ],
+   "notes": [
+    "Gluten free and dairy free.",
+    "Food safety: cook fish until opaque and flaking, and shellfish until opaque and firm; keep raw seafood below 5°C, refrigerate leftovers within 2 hours and eat within 1 day."
+   ],
+   "nutrition": {
+    "kcal": 360,
+    "proteinG": 38,
+    "carbsG": 18,
+    "fatG": 15,
+    "fibreG": 3,
+    "sodiumMg": 140
+   }
+  },
+  {
+   "id": "lemon-myrtle-and-herb-crusted-lamb-rack-with-roast-vegetables",
+   "title": "Lemon Myrtle and Herb-Crusted Lamb Rack with Roast Vegetables",
+   "summary": "Lamb racks coated with lemon myrtle, thyme and breadcrumbs, roasted with carrot and potato.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 lamb rack, trimmed",
+      "1 tsp ground lemon myrtle",
+      "1 tbsp thyme leaves",
+      "1/2 cup breadcrumbs",
+      "2 tbsp dijon mustard",
+      "600g potatoes, cut into chunks",
+      "3 carrot, cut into batons",
+      "3 tbsp olive oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C. Roast the potato and carrot with 2 tablespoons of oil for 15 minutes.",
+    "Sear the lamb in the remaining oil for 3 minutes until browned, brush with mustard and press on the lemon myrtle, thyme and crumbs.",
+    "Add to the tray and roast for 15 to 18 minutes, then rest for 10 minutes before cutting into cutlets."
+   ],
+   "notes": [
+    "Contains gluten.",
+    "Food safety: cook lamb racks to at least 63°C for medium, then rest for 3 minutes; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 680,
+    "proteinG": 42,
+    "carbsG": 46,
+    "fatG": 34,
+    "fibreG": 5,
+    "sodiumMg": 420
+   }
+  }
+ ]
+}

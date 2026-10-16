@@ -1,0 +1,891 @@
+{
+ "about": "House recipes, batch 04 (helper sA): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+ "recipes": [
+  {
+   "id": "slow-cooker-lamb-shoulder-with-garlic-and-rosemary",
+   "title": "Slow-Cooker Lamb Shoulder with Garlic, Rosemary and Chickpeas",
+   "summary": "Lamb shoulder cooked until it falls apart over garlic, rosemary and chickpeas, with flatbread to serve.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 480,
+   "servings": 8,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.5kg lamb shoulder",
+      "800g tinned chickpeas, drained",
+      "1 onion, sliced",
+      "6 clove garlic, whole",
+      "2 tbsp rosemary leaves",
+      "2 lemon, juiced",
+      "1 cup chicken stock",
+      "2 tbsp olive oil",
+      "8 flatbread"
+     ]
+    }
+   ],
+   "steps": [
+    "Rub the lamb with the oil, rosemary and salt and sit it on the onion, garlic and chickpeas in the slow cooker.",
+    "Pour over the lemon and stock and cook on low for 8 hours until the lamb shreds with a fork.",
+    "Shred, toss in the juices and serve with the flatbread."
+   ],
+   "notes": [
+    "Contains gluten.",
+    "Food safety: cook lamb until tender and at least 75°C throughout; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 540,
+    "proteinG": 40,
+    "carbsG": 38,
+    "fatG": 24,
+    "fibreG": 7,
+    "sodiumMg": 520
+   }
+  },
+  {
+   "id": "slow-cooker-moroccan-chicken-with-olives-and-preserved-lemon-style-zest",
+   "title": "Slow-Cooker Moroccan Chicken with Olives and Lemon",
+   "summary": "Chicken thighs slow cooked with olives, lemon zest, turmeric and ginger, served over couscous.",
+   "cuisine": "north-african",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 360,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "900g chicken thigh, bone in",
+      "1/2 cup green olives",
+      "1 lemon, zested and juiced",
+      "1 onion, sliced",
+      "3 clove garlic, crushed",
+      "1 tsp ground turmeric",
+      "1 tsp ground ginger",
+      "1 tsp ground cumin",
+      "1 cup chicken stock",
+      "1.5 cup couscous",
+      "1/4 cup coriander leaves"
+     ]
+    }
+   ],
+   "steps": [
+    "Place the onion, garlic, spices, lemon, olives and stock in the slow cooker and nestle in the chicken.",
+    "Cook on low for 6 hours until the chicken falls from the bone and reaches 75°C.",
+    "Prepare the couscous with boiling water until the grains are tender, and serve with the chicken, juices and coriander."
+   ],
+   "notes": [
+    "Contains gluten (couscous).",
+    "Food safety: chicken must reach 75°C at the thickest part with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 520,
+    "proteinG": 40,
+    "carbsG": 42,
+    "fatG": 19,
+    "fibreG": 3,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "slow-cooker-beef-short-rib-ragu-with-polenta",
+   "title": "Slow-Cooker Beef Rib Ragu with Soft Polenta",
+   "summary": "Beef short ribs cooked until tender in a rich tomato sauce and served on creamy polenta.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 540,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.2kg beef short rib",
+      "800g tinned tomatoes",
+      "1 onion, diced",
+      "2 carrot, diced",
+      "4 clove garlic, crushed",
+      "2 tbsp tomato paste",
+      "1 cup beef stock",
+      "1 tsp dried thyme",
+      "1 cup instant polenta",
+      "1/4 cup parmesan, grated"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the ribs in a hot pan for 8 minutes and add to the slow cooker with the onion, carrot, garlic, paste, tomatoes, stock and thyme.",
+    "Cook on low for 9 hours until the meat falls off the bone; remove the bones and shred the meat.",
+    "Cook the polenta in 4 cups of water until thick, stir through the parmesan and serve under the ragu."
+   ],
+   "notes": [
+    "Contains dairy.",
+    "Food safety: cook beef until tender and at least 75°C throughout; refrigerate leftovers within 2 hours and eat within 3 days."
+   ],
+   "nutrition": {
+    "kcal": 640,
+    "proteinG": 42,
+    "carbsG": 40,
+    "fatG": 34,
+    "fibreG": 4,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "pressure-cooker-chicken-congee-with-ginger-and-spring-onion",
+   "title": "Pressure-Cooker Chicken Congee with Ginger and Spring Onion",
+   "summary": "A silky rice porridge with chicken, ginger and spring onion, ready in about 40 minutes.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "breakfast",
+    "lunch",
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup jasmine rice",
+      "500g chicken thigh",
+      "8 cup chicken stock",
+      "2 tbsp ginger, sliced",
+      "4 spring onion, sliced",
+      "2 tbsp soy sauce",
+      "1 tbsp sesame oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Add the rice, chicken, stock and ginger to the pressure cooker, seal and cook at high pressure for 20 minutes, then release naturally.",
+    "Lift out the chicken, check it reaches 75°C, shred, then stir the congee until creamy.",
+    "Serve topped with the chicken, spring onion, soy and sesame oil."
+   ],
+   "notes": [
+    "Contains soy, gluten and sesame.",
+    "Food safety: chicken must reach 75°C at the thickest part with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 400,
+    "proteinG": 30,
+    "carbsG": 44,
+    "fatG": 11,
+    "fibreG": 1,
+    "sodiumMg": 1050
+   }
+  },
+  {
+   "id": "pressure-cooker-split-pea-and-ham-hock-stew",
+   "title": "Pressure-Cooker Pea and Ham Hock Stew",
+   "summary": "A thick stew of split peas, carrot and smoked ham hock, cooked in about an hour.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 50,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 ham hock",
+      "2 cup split peas",
+      "2 carrot, diced",
+      "2 celery stalk, diced",
+      "1 onion, diced",
+      "6 cup water",
+      "2 bay leaf",
+      "1 tbsp olive oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Soften the onion, carrot and celery in the oil on the sauté setting for 5 minutes.",
+    "Add the peas, hock, water and bay leaves, seal and cook at high pressure for 40 minutes, then release naturally.",
+    "Shred the meat from the hock, return it to the pot and stir until the stew is thick."
+   ],
+   "notes": [
+    "Gluten free and dairy free.",
+    "Food safety: pork must reach 70°C or more with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 380,
+    "proteinG": 28,
+    "carbsG": 50,
+    "fatG": 6,
+    "fibreG": 16,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "sheet-pan-miso-glazed-salmon-with-sweet-potato-and-bok-choy",
+   "title": "Sheet-Pan Miso-Glazed Salmon with Sweet Potato and Bok Choy",
+   "summary": "Salmon glazed with miso and honey, roasted with sweet potato and bok choy on one tray.",
+   "cuisine": "japanese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 salmon fillet",
+      "3 tbsp white miso paste",
+      "1 tbsp honey",
+      "1 tbsp rice vinegar",
+      "600g sweet potato, cut into wedges",
+      "3 bok choy, halved",
+      "2 tbsp vegetable oil",
+      "2 cup cooked jasmine rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220°C. Roast the sweet potato with the oil for 15 minutes.",
+    "Mix the miso, honey and vinegar, brush onto the salmon, add the fish and bok choy to the tray and roast for 12 minutes until the salmon flakes.",
+    "Rest for 2 minutes, then serve the salmon and vegetables over the rice with the tray juices."
+   ],
+   "notes": [
+    "Contains soy. Dairy free.",
+    "Food safety: cook fish until opaque and flaking, and shellfish until opaque and firm; keep raw seafood below 5°C, refrigerate leftovers within 2 hours and eat within 1 day."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 34,
+    "carbsG": 64,
+    "fatG": 19,
+    "fibreG": 6,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "one-pot-beef-and-vegetable-pasta-bolognese",
+   "title": "One-Pot Beef and Vegetable Pasta",
+   "summary": "Beef mince, tomato and short pasta cooked together in one pot with grated vegetables.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 6,
+   "onePot": true,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "500g beef mince",
+      "300g short pasta",
+      "1 onion, diced",
+      "1 carrot, grated",
+      "1 zucchini, grated",
+      "3 clove garlic, crushed",
+      "800g tinned tomatoes",
+      "2 cup beef stock",
+      "1 tsp dried oregano",
+      "1 tbsp olive oil",
+      "1/2 cup parmesan, grated"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the mince, onion and garlic in the oil for 8 minutes until no pink remains.",
+    "Add the carrot, zucchini, tomatoes, stock, oregano and pasta, cover and simmer for 18 minutes, stirring often, until the pasta is tender.",
+    "Stir in the parmesan and serve."
+   ],
+   "notes": [
+    "Contains gluten and dairy.",
+    "Food safety: mince must reach 75°C throughout with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 460,
+    "proteinG": 28,
+    "carbsG": 52,
+    "fatG": 15,
+    "fibreG": 5,
+    "sodiumMg": 560
+   }
+  },
+  {
+   "id": "one-pot-coconut-prawn-and-rice-with-lime",
+   "title": "One-Pot Coconut Prawn and Rice with Lime",
+   "summary": "Prawns steamed on top of coconut rice with ginger and lime, all in one pot.",
+   "cuisine": "thai",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g prawns, peeled",
+      "1.5 cup jasmine rice",
+      "400ml coconut milk",
+      "1 cup water",
+      "1 tbsp ginger, grated",
+      "2 lime, juiced",
+      "1 cup frozen peas",
+      "1/4 cup coriander leaves",
+      "1 chilli, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Bring the rice, coconut milk, water and ginger to a simmer, cover and cook on low for 12 minutes.",
+    "Scatter the prawns and peas over the rice, cover and cook for 6 minutes until the rice is tender and the prawns are pink.",
+    "Stir in the lime, coriander and chilli and serve."
+   ],
+   "notes": [
+    "Gluten free and dairy free. Contains crustacean shellfish.",
+    "Food safety: cook fish until opaque and flaking, and shellfish until opaque and firm; keep raw seafood below 5°C, refrigerate leftovers within 2 hours and eat within 1 day."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 30,
+    "carbsG": 70,
+    "fatG": 18,
+    "fibreG": 5,
+    "sodiumMg": 320
+   }
+  },
+  {
+   "id": "one-pot-chickpea-spinach-and-feta-orzo",
+   "title": "One-Pot Chickpea, Spinach and Feta Orzo",
+   "summary": "Orzo cooked in tomato stock with chickpeas and spinach, finished with feta and lemon.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g orzo",
+      "800g tinned chickpeas, drained",
+      "200g baby spinach",
+      "400g tinned tomatoes",
+      "2 cup vegetable stock",
+      "1 onion, diced",
+      "3 clove garlic, crushed",
+      "1 lemon, juiced",
+      "100g feta",
+      "1 tbsp olive oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Soften the onion and garlic in the oil for 5 minutes.",
+    "Add the orzo, chickpeas, tomatoes and stock and simmer for 12 minutes, stirring, until the orzo is tender.",
+    "Stir in the spinach until wilted, then the lemon, and crumble over the feta."
+   ],
+   "notes": [
+    "Contains gluten and dairy. Vegetarian."
+   ],
+   "nutrition": {
+    "kcal": 520,
+    "proteinG": 22,
+    "carbsG": 76,
+    "fatG": 13,
+    "fibreG": 11,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "ramadan-iftar-chicken-biryani-with-yoghurt-raita",
+   "title": "Iftar Chicken Biryani with Cucumber Raita",
+   "summary": "Spiced chicken layered with fragrant basmati rice and finished with a cooling raita.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 25,
+   "cookMinutes": 50,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g chicken thigh, diced",
+      "2 cup basmati rice",
+      "1 cup natural yoghurt",
+      "2 onion, sliced",
+      "4 clove garlic, crushed",
+      "1 tbsp ginger, grated",
+      "2 tbsp garam masala",
+      "1 tsp ground turmeric",
+      "2 tbsp vegetable oil",
+      "1/4 cup mint leaves",
+      "1 cucumber, grated"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the onions in the oil for 12 minutes until golden, then add the chicken, garlic, ginger, spices and half the yoghurt and cook for 15 minutes until the chicken reaches 75°C.",
+    "Boil the rice in salted water for 6 minutes until just tender and drain. Layer over the chicken with the mint, cover tightly and cook on low for 15 minutes.",
+    "Mix the cucumber into the remaining yoghurt for the raita and serve alongside."
+   ],
+   "notes": [
+    "Contains dairy. Gluten free.",
+    "Food safety: chicken must reach 75°C at the thickest part with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 620,
+    "proteinG": 40,
+    "carbsG": 70,
+    "fatG": 20,
+    "fibreG": 4,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "ramadan-suhoor-oats-and-egg-savoury-bowl",
+   "title": "Suhoor Savoury Oats with Egg and Spinach",
+   "summary": "Slow-release oats cooked with stock, topped with a soft egg, spinach and cheese for a filling pre-dawn meal.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 5,
+   "cookMinutes": 12,
+   "servings": 2,
+   "onePot": true,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "1 cup rolled oats",
+      "2 cup chicken stock",
+      "2 egg",
+      "1 cup baby spinach",
+      "1/4 cup cheddar, grated",
+      "1 tsp olive oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the oats in the stock for 6 minutes, stirring, until thick and creamy; stir in the spinach until wilted.",
+    "Fry the eggs in the oil for 3 minutes until the whites are set.",
+    "Spoon the oats into bowls and top with the egg and cheese."
+   ],
+   "notes": [
+    "Contains egg, dairy and gluten.",
+    "Food safety: cook eggs until the whites and yolks are set; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 380,
+    "proteinG": 22,
+    "carbsG": 36,
+    "fatG": 16,
+    "fibreG": 5,
+    "sodiumMg": 720
+   }
+  },
+  {
+   "id": "eid-slow-cooked-lamb-shoulder-with-spiced-rice-and-almonds",
+   "title": "Eid Slow-Roasted Lamb Shoulder with Spiced Rice and Almonds",
+   "summary": "Lamb shoulder roasted slowly with cumin and garlic, served on fragrant rice with toasted almonds.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 240,
+   "servings": 8,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2kg lamb shoulder",
+      "6 clove garlic, sliced",
+      "2 tsp ground cumin",
+      "2 tsp ground coriander",
+      "1 tsp ground cinnamon",
+      "3 tbsp olive oil",
+      "2 cup basmati rice",
+      "1/2 cup flaked almonds",
+      "1/4 cup parsley, chopped",
+      "1 cup chicken stock"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 160°C. Stud the lamb with the garlic, rub with the spices, oil and salt, add the stock to the tray, cover tightly with foil and roast for 4 hours until the meat is tender and falls apart.",
+    "Cook the rice until tender. Toast the almonds in a dry pan for 3 minutes until golden.",
+    "Shred the lamb, serve over the rice with the almonds and parsley."
+   ],
+   "notes": [
+    "Contains nuts. Gluten free and dairy free.",
+    "Food safety: cook lamb until tender and at least 75°C throughout; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 690,
+    "proteinG": 46,
+    "carbsG": 50,
+    "fatG": 30,
+    "fibreG": 3,
+    "sodiumMg": 380
+   }
+  },
+  {
+   "id": "passover-braised-beef-brisket-with-carrots-and-potatoes",
+   "title": "Passover Braised Beef Brisket with Carrots and Potatoes",
+   "summary": "Brisket braised slowly with onions, carrots and potatoes in its own juices for the holiday table.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 210,
+   "servings": 8,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1.5kg beef brisket",
+      "4 carrot, cut into chunks",
+      "800g potatoes, cut into chunks",
+      "3 onion, sliced",
+      "4 clove garlic, crushed",
+      "2 tbsp tomato paste",
+      "2 cup beef stock",
+      "2 tbsp olive oil",
+      "1 tsp paprika"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 160°C. Rub the brisket with paprika and salt and sear in the oil for 8 minutes.",
+    "Place the brisket on the onion, garlic, paste, stock, carrot and potatoes in a deep tray, cover tightly and braise for 3 hours until fork-tender.",
+    "Rest for 15 minutes, slice across the grain and spoon over the juices."
+   ],
+   "notes": [
+    "Gluten free and dairy free. Check labels for Passover certification if observing.",
+    "Food safety: cook beef until tender and at least 75°C throughout; refrigerate leftovers within 2 hours and eat within 3 days."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 44,
+    "carbsG": 30,
+    "fatG": 28,
+    "fibreG": 4,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "lunar-new-year-longevity-noodles-with-chicken-and-mushrooms",
+   "title": "Lunar New Year Longevity Noodles with Chicken and Mushrooms",
+   "summary": "Long wheat noodles stir-fried with chicken, mushrooms and greens, left uncut for good fortune.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g egg noodles",
+      "400g chicken breast, sliced",
+      "200g mushrooms, sliced",
+      "2 bok choy, chopped",
+      "3 clove garlic, crushed",
+      "1 tbsp ginger, grated",
+      "3 tbsp soy sauce",
+      "1 tbsp sesame oil",
+      "2 tbsp vegetable oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the noodles until tender, drain and toss with the sesame oil.",
+    "Stir-fry the chicken in the oil for 5 minutes until cooked through at 75°C, add the mushrooms, garlic and ginger for 3 minutes.",
+    "Add the bok choy, soy and noodles and toss for 3 minutes until hot and the greens are tender."
+   ],
+   "notes": [
+    "Contains egg, gluten, soy and sesame.",
+    "Food safety: chicken must reach 75°C at the thickest part with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 480,
+    "proteinG": 34,
+    "carbsG": 56,
+    "fatG": 13,
+    "fibreG": 4,
+    "sodiumMg": 1000
+   }
+  },
+  {
+   "id": "lunar-new-year-steamed-chicken-with-ginger-and-shiitake",
+   "title": "Lunar New Year Steamed Chicken with Ginger and Shiitake",
+   "summary": "Chicken pieces steamed over rice with ginger and shiitake mushrooms in a light soy sauce.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "700g chicken thigh, bone in, chopped",
+      "150g shiitake mushrooms, sliced",
+      "2 tbsp ginger, cut into strips",
+      "2 tbsp soy sauce",
+      "1 tbsp rice wine vinegar",
+      "1 tsp sesame oil",
+      "3 spring onion, sliced",
+      "3 cup cooked jasmine rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the chicken with the soy, vinegar, ginger and mushrooms in a heatproof dish.",
+    "Steam for 25 minutes until the chicken reaches 75°C and the juices run clear.",
+    "Drizzle with sesame oil, scatter with spring onion and serve with the rice."
+   ],
+   "notes": [
+    "Contains soy, gluten and sesame. Dairy free.",
+    "Food safety: chicken must reach 75°C at the thickest part with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 450,
+    "proteinG": 36,
+    "carbsG": 46,
+    "fatG": 13,
+    "fibreG": 2,
+    "sodiumMg": 800
+   }
+  },
+  {
+   "id": "lunar-new-year-prawn-and-vegetable-fried-rice-for-prosperity",
+   "title": "Lunar New Year Prawn and Egg Fried Rice",
+   "summary": "Prawns, egg, peas and spring onion tossed through day-old rice, a quick dish for a new year spread.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 12,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g prawns, peeled",
+      "4 cup cooked jasmine rice, cold",
+      "3 egg",
+      "1 cup frozen peas",
+      "4 spring onion, sliced",
+      "2 tbsp soy sauce",
+      "1 tbsp sesame oil",
+      "2 tbsp vegetable oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Scramble the eggs in the oil for 1 minute until just set and push aside.",
+    "Add the prawns and cook for 3 minutes until pink and curled, then add the rice and peas and stir-fry for 4 minutes until hot.",
+    "Season with the soy and sesame oil and scatter with spring onion."
+   ],
+   "notes": [
+    "Contains egg, crustacean shellfish, soy, gluten and sesame. Use rice cooled quickly and refrigerated.",
+    "Food safety: cook fish until opaque and flaking, and shellfish until opaque and firm; keep raw seafood below 5°C, refrigerate leftovers within 2 hours and eat within 1 day. Cool rice within 1 hour and use within 1 day; reheat until steaming hot."
+   ],
+   "nutrition": {
+    "kcal": 480,
+    "proteinG": 28,
+    "carbsG": 62,
+    "fatG": 12,
+    "fibreG": 3,
+    "sodiumMg": 860
+   }
+  },
+  {
+   "id": "australian-bush-spiced-beef-burgers-with-beetroot-and-onion",
+   "title": "Bush-Spiced Beef Burgers with Beetroot and Caramelised Onion",
+   "summary": "Beef burgers with an Australian mix of lemon myrtle and thyme, beetroot and caramelised onion in a bun.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "600g beef mince",
+      "1 tsp ground lemon myrtle",
+      "1 tbsp thyme leaves",
+      "2 onion, sliced",
+      "1 tbsp brown sugar",
+      "4 burger bun",
+      "4 slice cheddar",
+      "2 beetroot, cooked and sliced",
+      "1 cup rocket",
+      "1 tbsp olive oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the onion in the oil with the sugar on low for 15 minutes until soft and golden.",
+    "Mix the mince with the lemon myrtle, thyme and salt, shape into 4 patties and pan-fry for 5 minutes each side until no pink remains and they reach 75°C.",
+    "Top with the cheese until melted and build in the buns with the beetroot, onion and rocket."
+   ],
+   "notes": [
+    "Contains dairy and gluten.",
+    "Food safety: mince must reach 75°C throughout with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 640,
+    "proteinG": 40,
+    "carbsG": 48,
+    "fatG": 32,
+    "fibreG": 4,
+    "sodiumMg": 760
+   }
+  },
+  {
+   "id": "barbecue-whole-snapper-with-chilli-lime-and-herb-salad",
+   "title": "Barbecue Whole Snapper with Chilli, Lime and Herb Salad",
+   "summary": "A whole snapper grilled over medium heat and finished with a chilli lime dressing and herbs.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 whole snapper, about 1.2kg, scaled and gutted",
+      "2 lime, juiced",
+      "1 chilli, finely sliced",
+      "2 tbsp olive oil",
+      "1 tbsp fish sauce",
+      "1/2 cup coriander leaves",
+      "1/2 cup mint leaves",
+      "1 cucumber, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Slash the fish, oil it and grill over medium heat for 10 to 12 minutes each side until the flesh flakes at the thickest part.",
+    "Whisk the lime, chilli, fish sauce and the remaining oil.",
+    "Toss the herbs and cucumber and serve with the fish and dressing."
+   ],
+   "notes": [
+    "Gluten free and dairy free.",
+    "Food safety: cook fish until opaque and flaking, and shellfish until opaque and firm; keep raw seafood below 5°C, refrigerate leftovers within 2 hours and eat within 1 day."
+   ],
+   "nutrition": {
+    "kcal": 330,
+    "proteinG": 40,
+    "carbsG": 6,
+    "fatG": 15,
+    "fibreG": 2,
+    "sodiumMg": 690
+   }
+  }
+ ]
+}

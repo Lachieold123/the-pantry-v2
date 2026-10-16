@@ -1,0 +1,1220 @@
+{
+ "about": "Batch 04, slice A, chunk A45: themed one-pot pasta, fakeaway, lightened comfort classics and Mediterranean dinners.",
+ "recipes": [
+  {
+   "id": "one-pot-creamy-tomato-and-basil-penne",
+   "title": "One-Pot Creamy Tomato and Basil Penne",
+   "summary": "Penne cooks right in a garlicky tomato sauce, finished with cream and fresh basil.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "320g penne",
+      "1 tbsp olive oil",
+      "1 onion, diced",
+      "3 clove garlic, crushed",
+      "400g tinned tomatoes",
+      "2 cup vegetable stock",
+      "1/2 cup cream",
+      "1/4 cup basil, torn",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Soften the onion in the oil in a wide pot for 4 minutes, add the garlic for 30 seconds until fragrant.",
+    "Add the tomatoes, stock, salt and penne, bring to the boil, then simmer for 12 minutes, stirring often, until the pasta is tender and the sauce is thick.",
+    "Stir through the cream and basil and heat for 1 minute until glossy."
+   ],
+   "notes": [
+    "Contains gluten and milk. Refrigerate leftovers within 2 hours and eat within 3 days."
+   ],
+   "nutrition": {
+    "kcal": 470,
+    "proteinG": 13,
+    "carbsG": 70,
+    "fatG": 15,
+    "fibreG": 5,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "one-pot-chicken-alfredo-pasta",
+   "title": "One-Pot Chicken Alfredo Pasta",
+   "summary": "Chicken, fettuccine and a creamy garlic sauce made in a single pot with no draining.",
+   "cuisine": "american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": true,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "400g chicken breast, sliced",
+      "300g fettuccine",
+      "1 tbsp olive oil",
+      "3 clove garlic, crushed",
+      "2 cup chicken stock",
+      "1 cup milk",
+      "1/2 cup cream",
+      "1/2 cup parmesan, grated",
+      "1/2 tsp salt",
+      "1/2 tsp black pepper"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the chicken in the oil for 5 minutes until golden, then add the garlic for 30 seconds.",
+    "Add the stock, milk, fettuccine, salt and pepper, bring to a simmer and cook for 12 minutes, stirring often, until the pasta is tender and the sauce has thickened.",
+    "Stir in the cream and parmesan for 2 minutes until silky and the chicken is cooked through."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
+    "Contains gluten and milk."
+   ],
+   "nutrition": {
+    "kcal": 640,
+    "proteinG": 43,
+    "carbsG": 60,
+    "fatG": 25,
+    "fibreG": 3,
+    "sodiumMg": 980
+   }
+  },
+  {
+   "id": "one-pot-beef-bolognese-spaghetti",
+   "title": "One-Pot Beef Bolognese Spaghetti",
+   "summary": "Spaghetti simmers straight in a rich beef and tomato sauce, so there is only one pot to wash.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g beef mince",
+      "300g spaghetti",
+      "1 tbsp olive oil",
+      "1 onion, diced",
+      "1 carrot, grated",
+      "3 clove garlic, crushed",
+      "400g tinned tomatoes",
+      "2 cup beef stock",
+      "1 tbsp tomato paste",
+      "1 tsp dried oregano",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the mince in the oil for 6 minutes until no pink remains, then add the onion, carrot and garlic for 4 minutes until soft.",
+    "Stir in the tomatoes, paste, stock, oregano, salt and the spaghetti snapped in half, and bring to the boil until bubbling.",
+    "Simmer for 13 minutes, stirring often, until the spaghetti is tender and the sauce clings."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C right through with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
+    "Contains gluten."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 35,
+    "carbsG": 65,
+    "fatG": 17,
+    "fibreG": 6,
+    "sodiumMg": 860
+   }
+  },
+  {
+   "id": "one-pot-sausage-and-kale-orecchiette",
+   "title": "One-Pot Sausage and Kale Orecchiette",
+   "summary": "Sausage, kale and orecchiette in a garlicky tomato broth, all cooked together.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g pork sausage",
+      "300g orecchiette",
+      "1 tbsp olive oil",
+      "1 onion, diced",
+      "3 clove garlic, crushed",
+      "400g tinned tomatoes",
+      "2 cup chicken stock",
+      "150g kale, chopped",
+      "1/2 tsp chilli flakes"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the sausage in the oil for 6 minutes, breaking it into chunks, then add the onion and garlic for 4 minutes until soft.",
+    "Add the tomatoes, stock, chilli and orecchiette and simmer for 12 minutes, stirring often, until the pasta is nearly tender.",
+    "Stir in the kale for 3 minutes until wilted and the pasta is cooked."
+   ],
+   "notes": [
+    "Food safety: pork sausage must reach 75°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
+    "Contains gluten."
+   ],
+   "nutrition": {
+    "kcal": 620,
+    "proteinG": 28,
+    "carbsG": 64,
+    "fatG": 28,
+    "fibreG": 6,
+    "sodiumMg": 1040
+   }
+  },
+  {
+   "id": "one-pot-lemon-prawn-linguine",
+   "title": "One-Pot Lemon Prawn Linguine",
+   "summary": "Linguine cooked in garlicky lemon stock, topped with quick-seared prawns and parsley.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g linguine",
+      "400g prawns, peeled",
+      "2 tbsp olive oil",
+      "4 clove garlic, crushed",
+      "1 lemon, zested and juiced",
+      "3 cup vegetable stock",
+      "1/2 tsp chilli flakes",
+      "1/4 cup parsley, chopped",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Sear the prawns in half the oil for 2 minutes until pink, then set aside.",
+    "Soften the garlic and chilli in the remaining oil for 30 seconds, add the stock, lemon juice, salt and linguine and simmer for 11 minutes, stirring, until tender and the liquid is mostly absorbed.",
+    "Return the prawns with the zest and parsley and toss for 1 minute until hot."
+   ],
+   "notes": [
+    "Food safety: cook prawns until pink and opaque; refrigerate leftovers within 2 hours and eat within 1 day.",
+    "Contains gluten and crustacean shellfish."
+   ],
+   "nutrition": {
+    "kcal": 430,
+    "proteinG": 29,
+    "carbsG": 60,
+    "fatG": 9,
+    "fibreG": 3,
+    "sodiumMg": 900
+   }
+  },
+  {
+   "id": "one-pot-mushroom-and-spinach-pasta",
+   "title": "One-Pot Mushroom and Spinach Pasta",
+   "summary": "Creamy-tasting vegan pasta with mushrooms, spinach and garlic cooked in one pot.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "320g penne",
+      "2 tbsp olive oil",
+      "300g mushroom, sliced",
+      "1 onion, diced",
+      "3 clove garlic, crushed",
+      "3 cup vegetable stock",
+      "1/2 cup coconut milk",
+      "100g spinach",
+      "1 tsp dried thyme",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the mushrooms in the oil for 6 minutes until golden, then add the onion and garlic for 3 minutes until soft.",
+    "Add the stock, thyme, salt and penne and simmer for 11 minutes, stirring often, until the pasta is tender.",
+    "Stir in the coconut milk and spinach for 2 minutes until the spinach has wilted."
+   ],
+   "notes": [
+    "Contains gluten. Refrigerate leftovers within 2 hours and eat within 3 days."
+   ],
+   "nutrition": {
+    "kcal": 440,
+    "proteinG": 12,
+    "carbsG": 63,
+    "fatG": 15,
+    "fibreG": 5,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "fakeaway-chicken-tikka-masala-with-basmati-rice",
+   "title": "Fakeaway Chicken Tikka Masala with Basmati Rice",
+   "summary": "A mild, creamy tikka masala with yoghurt-marinated chicken, just like the takeaway.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "600g chicken thigh, diced",
+      "1/2 cup yoghurt",
+      "2 tsp garam masala",
+      "1 tsp ground turmeric",
+      "1 tsp paprika",
+      "2 tbsp vegetable oil",
+      "1 onion, diced",
+      "3 clove garlic, crushed",
+      "1 tbsp ginger, grated",
+      "400g tinned tomatoes",
+      "1/2 cup cream",
+      "1 1/2 cup basmati rice",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Mix the chicken with the yoghurt, half the garam masala, turmeric and paprika and marinate for at least 30 minutes.",
+    "Fry the onion in the oil for 6 minutes, add the garlic, ginger and remaining garam masala for 1 minute, then add the tomatoes and simmer for 10 minutes until thick.",
+    "Add the chicken and simmer for 12 minutes until cooked through, then stir in the cream and salt.",
+    "Cook the rice for 12 minutes until tender, drain and serve under the curry."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C with no pink; refrigerate rice within 1 hour and leftovers within 2 hours, and reheat until steaming hot.",
+    "Contains milk."
+   ],
+   "nutrition": {
+    "kcal": 690,
+    "proteinG": 38,
+    "carbsG": 75,
+    "fatG": 24,
+    "fibreG": 4,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "fakeaway-sweet-and-sour-chicken-with-rice",
+   "title": "Fakeaway Sweet and Sour Chicken with Rice",
+   "summary": "Crispy-coated chicken in a glossy sweet and sour sauce with capsicum and pineapple.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g chicken breast, diced",
+      "1/2 cup cornflour",
+      "1 egg",
+      "3 tbsp vegetable oil",
+      "1 capsicum, diced",
+      "1 onion, cut in wedges",
+      "1 cup pineapple, diced",
+      "1/3 cup tomato sauce",
+      "3 tbsp rice vinegar",
+      "2 tbsp sugar",
+      "1 tbsp soy sauce",
+      "1 1/2 cup jasmine rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the chicken in the egg, then the cornflour. Fry in the oil in batches for 6 minutes until golden and cooked through, then set aside.",
+    "Whisk the tomato sauce, vinegar, sugar and soy sauce together. Stir-fry the capsicum and onion for 3 minutes, add the sauce and pineapple and simmer for 3 minutes until glossy.",
+    "Return the chicken for 1 minute to coat. Cook the rice for 12 minutes until tender and serve."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C with no pink; refrigerate rice within 1 hour and leftovers within 2 hours.",
+    "Contains egg, soy and gluten."
+   ],
+   "nutrition": {
+    "kcal": 640,
+    "proteinG": 36,
+    "carbsG": 92,
+    "fatG": 14,
+    "fibreG": 3,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "fakeaway-sichuan-peanut-chicken-with-rice",
+   "title": "Fakeaway Sichuan Peanut Chicken with Rice",
+   "summary": "Spicy, tangy chicken stir-fried with peanuts, capsicum and dried chilli, served over rice.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g chicken thigh, diced",
+      "1 tbsp cornflour",
+      "2 tbsp vegetable oil",
+      "1 capsicum, diced",
+      "3 clove garlic, crushed",
+      "1 tbsp ginger, grated",
+      "1/3 cup peanuts",
+      "2 tsp chilli flakes",
+      "2 tbsp soy sauce",
+      "1 tbsp rice vinegar",
+      "1 tbsp sugar",
+      "2 spring onion, sliced",
+      "1 1/2 cup jasmine rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the chicken with the cornflour. Cook the rice for 12 minutes until tender.",
+    "Stir-fry the chicken in the oil over high heat for 6 minutes until golden, add the capsicum, garlic, ginger and chilli for 2 minutes.",
+    "Add the soy sauce, vinegar, sugar and peanuts and toss for 2 minutes until the sauce is sticky and the chicken is cooked through. Scatter with spring onion and serve over the rice."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C with no pink; refrigerate rice within 1 hour and leftovers within 2 hours.",
+    "Contains peanuts, soy and gluten."
+   ],
+   "nutrition": {
+    "kcal": 640,
+    "proteinG": 36,
+    "carbsG": 78,
+    "fatG": 20,
+    "fibreG": 4,
+    "sodiumMg": 980
+   }
+  },
+  {
+   "id": "fakeaway-lamb-doner-kebab-bowls",
+   "title": "Fakeaway Lamb Doner Kebab Bowls",
+   "summary": "Spiced lamb patty slices with salad, pickled onion and garlic yoghurt, no skewer needed.",
+   "cuisine": "turkish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "500g lamb mince",
+      "1 tsp ground cumin",
+      "1 tsp paprika",
+      "1 tsp dried oregano",
+      "2 clove garlic, crushed",
+      "1/2 tsp salt",
+      "1 tbsp olive oil",
+      "2 tomato, diced",
+      "1 cucumber, diced",
+      "1/2 red onion, sliced",
+      "1/2 cup yoghurt",
+      "1 tbsp lemon juice",
+      "4 flatbread"
+     ]
+    }
+   ],
+   "steps": [
+    "Knead the mince with the cumin, paprika, oregano, half the garlic and the salt until sticky, then press into a flat loaf about 2cm thick.",
+    "Fry in the oil for 8 minutes a side until deeply browned and cooked to 75°C, then slice thinly.",
+    "Stir the remaining garlic and lemon juice into the yoghurt. Pile the lamb, tomato, cucumber and onion over warm flatbread and spoon on the sauce."
+   ],
+   "notes": [
+    "Food safety: lamb mince must reach 75°C right through with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
+    "Contains gluten and milk."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 33,
+    "carbsG": 42,
+    "fatG": 28,
+    "fibreG": 4,
+    "sodiumMg": 760
+   }
+  },
+  {
+   "id": "fakeaway-naan-pizzas-margherita",
+   "title": "Fakeaway Naan Pizzas Margherita",
+   "summary": "Crisp naan bases with tomato sauce, mozzarella and basil, ready from the oven in minutes.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 naan",
+      "1/2 cup tomato passata",
+      "1 clove garlic, crushed",
+      "1 tsp dried oregano",
+      "200g mozzarella, sliced",
+      "1 tbsp olive oil",
+      "1/4 cup basil leaves"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 230°C (210°C fan) and mix the passata, garlic and oregano.",
+    "Spread the sauce over the naan, top with mozzarella and drizzle with oil. Bake on trays for 8 minutes until bubbling and golden at the edges.",
+    "Scatter with basil and serve."
+   ],
+   "notes": [
+    "Contains gluten and milk. Refrigerate leftovers within 2 hours."
+   ],
+   "nutrition": {
+    "kcal": 480,
+    "proteinG": 20,
+    "carbsG": 52,
+    "fatG": 20,
+    "fibreG": 3,
+    "sodiumMg": 860
+   }
+  },
+  {
+   "id": "fakeaway-chicken-katsu-curry",
+   "title": "Fakeaway Chicken Katsu Curry",
+   "summary": "Crisp panko chicken with a mild, sweet Japanese-style curry sauce over rice.",
+   "cuisine": "japanese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 chicken breast, thin cut",
+      "1/2 cup flour",
+      "2 egg",
+      "1 1/2 cup panko breadcrumbs",
+      "1/4 cup vegetable oil",
+      "1 onion, diced",
+      "1 carrot, diced",
+      "2 clove garlic, crushed",
+      "2 tbsp curry powder",
+      "1 tbsp flour",
+      "2 cup chicken stock",
+      "1 tbsp soy sauce",
+      "1 tsp sugar",
+      "1 1/2 cup jasmine rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Soften the onion and carrot in a little oil for 6 minutes, stir in the garlic, curry powder and 1 tablespoon flour for 1 minute, then add the stock, soy sauce and sugar and simmer for 12 minutes until thick. Blend if you like it smooth.",
+    "Coat the chicken in flour, egg and panko. Shallow-fry in the oil for 4 minutes a side until golden and cooked to 75°C.",
+    "Cook the rice for 12 minutes until tender. Slice the chicken and serve over rice with the sauce."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C with no pink; refrigerate rice within 1 hour and leftovers within 2 hours.",
+    "Contains egg, soy and gluten."
+   ],
+   "nutrition": {
+    "kcal": 740,
+    "proteinG": 48,
+    "carbsG": 88,
+    "fatG": 22,
+    "fibreG": 4,
+    "sodiumMg": 900
+   }
+  },
+  {
+   "id": "fakeaway-crispy-chilli-beef",
+   "title": "Fakeaway Crispy Chilli Beef",
+   "summary": "Crunchy strips of beef tossed in a sticky sweet chilli sauce with capsicum and spring onion.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g beef steak, thin strips",
+      "1/2 cup cornflour",
+      "1 egg white",
+      "1/3 cup vegetable oil",
+      "1 capsicum, sliced",
+      "3 clove garlic, crushed",
+      "1/4 cup sweet chilli sauce",
+      "2 tbsp soy sauce",
+      "1 tbsp rice vinegar",
+      "2 spring onion, sliced",
+      "1 1/2 cup jasmine rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Toss the beef with the egg white and cornflour. Fry in batches in the oil for 3 minutes until crisp and browned, then drain.",
+    "Stir-fry the capsicum and garlic for 2 minutes, add the sweet chilli sauce, soy sauce and vinegar and simmer for 1 minute until sticky.",
+    "Toss in the beef and spring onion for 30 seconds. Cook the rice for 12 minutes until tender and serve."
+   ],
+   "notes": [
+    "Food safety: beef strips should reach 71°C with no pink; refrigerate rice within 1 hour and leftovers within 2 hours.",
+    "Contains egg, soy and gluten."
+   ],
+   "nutrition": {
+    "kcal": 640,
+    "proteinG": 34,
+    "carbsG": 82,
+    "fatG": 20,
+    "fibreG": 3,
+    "sodiumMg": 950
+   }
+  },
+  {
+   "id": "fakeaway-tamarind-noodles-with-prawns-and-egg",
+   "title": "Fakeaway Tamarind Noodles with Prawns and Egg",
+   "summary": "Rice noodles tossed with prawns, egg, bean sprouts and a tangy tamarind-style sauce.",
+   "cuisine": "thai",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "250g rice noodles",
+      "300g prawns, peeled",
+      "2 tbsp vegetable oil",
+      "2 egg",
+      "3 clove garlic, crushed",
+      "1 cup bean sprouts",
+      "4 spring onion, sliced",
+      "3 tbsp fish sauce",
+      "3 tbsp sugar",
+      "3 tbsp lime juice",
+      "1/4 cup peanuts, crushed"
+     ]
+    }
+   ],
+   "steps": [
+    "Soak the noodles in hot water for 8 minutes until pliable, then drain. Stir the fish sauce, sugar and lime juice together.",
+    "Stir-fry the garlic and prawns in the oil for 2 minutes until pink, push aside and scramble the eggs for 1 minute.",
+    "Add the noodles and sauce and toss for 3 minutes until tender, then add the sprouts and spring onion for 1 minute. Top with peanuts."
+   ],
+   "notes": [
+    "Food safety: cook prawns until pink and opaque and eggs until set; refrigerate leftovers within 2 hours and eat within 1 day.",
+    "Contains egg, peanuts, crustacean shellfish and fish."
+   ],
+   "nutrition": {
+    "kcal": 470,
+    "proteinG": 26,
+    "carbsG": 64,
+    "fatG": 12,
+    "fibreG": 3,
+    "sodiumMg": 1180
+   }
+  },
+  {
+   "id": "lightened-cauliflower-mac-and-cheese",
+   "title": "Lightened Cauliflower Mac and Cheese",
+   "summary": "Creamy baked mac and cheese with cauliflower blended into the sauce for less fat.",
+   "cuisine": "american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "300g macaroni",
+      "1/2 head cauliflower, cut into florets",
+      "2 cup milk",
+      "1 tbsp flour",
+      "1 tsp mustard",
+      "1 cup cheddar, grated",
+      "1/4 cup vegetarian hard cheese, grated",
+      "1/4 cup breadcrumbs",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Boil the macaroni for 8 minutes until just tender, then drain.",
+    "Simmer the cauliflower in the milk for 10 minutes until very soft. Blend with the flour, mustard and salt until smooth, then heat for 2 minutes until thickened and stir in the cheddar until melted.",
+    "Fold through the macaroni, tip into a dish, top with the hard cheese and breadcrumbs and bake for 15 minutes until golden."
+   ],
+   "notes": [
+    "Contains gluten and milk. Refrigerate leftovers within 2 hours and eat within 3 days."
+   ],
+   "nutrition": {
+    "kcal": 510,
+    "proteinG": 25,
+    "carbsG": 66,
+    "fatG": 16,
+    "fibreG": 5,
+    "sodiumMg": 760
+   }
+  },
+  {
+   "id": "lightened-grilled-chicken-parmigiana",
+   "title": "Lightened Grilled Chicken Parmigiana",
+   "summary": "Chicken breast under tomato sauce and melted mozzarella, grilled rather than fried.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 chicken breast, thin cut",
+      "1 tbsp olive oil",
+      "400g tinned tomatoes",
+      "2 clove garlic, crushed",
+      "1 tsp dried oregano",
+      "150g mozzarella, grated",
+      "1/4 cup parmesan, grated",
+      "1/2 tsp salt",
+      "200g green beans"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the tomatoes, garlic, oregano and half the salt for 10 minutes until thick.",
+    "Rub the chicken with the oil and remaining salt. Grill or pan-fry for 5 minutes a side until golden.",
+    "Top with the sauce and cheeses and grill for 4 minutes until bubbling and the chicken is 75°C. Steam the beans for 5 minutes until tender and serve alongside."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
+    "Contains milk."
+   ],
+   "nutrition": {
+    "kcal": 410,
+    "proteinG": 52,
+    "carbsG": 10,
+    "fatG": 18,
+    "fibreG": 3,
+    "sodiumMg": 760
+   }
+  },
+  {
+   "id": "lightened-beef-stroganoff-with-yoghurt",
+   "title": "Lightened Beef Stroganoff with Yoghurt",
+   "summary": "All the creamy mushroom flavour of stroganoff using yoghurt in place of cream.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "500g beef steak, thin strips",
+      "2 tbsp olive oil",
+      "1 onion, sliced",
+      "300g mushroom, sliced",
+      "2 clove garlic, crushed",
+      "1 tbsp paprika",
+      "1 tbsp flour",
+      "1 cup beef stock",
+      "1/2 cup yoghurt",
+      "1 tbsp mustard",
+      "300g egg noodles"
+     ]
+    }
+   ],
+   "steps": [
+    "Sear the beef in half the oil in batches for 2 minutes until browned, then set aside.",
+    "Cook the onion and mushrooms in the remaining oil for 8 minutes until golden, add the garlic, paprika and flour for 1 minute, then pour in the stock and simmer for 5 minutes until thick.",
+    "Boil the noodles for 6 minutes until tender. Off the heat stir the yoghurt and mustard into the sauce, return the beef and serve over the noodles."
+   ],
+   "notes": [
+    "Food safety: beef strips should reach 71°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
+    "Contains gluten, egg and milk."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 42,
+    "carbsG": 52,
+    "fatG": 19,
+    "fibreG": 4,
+    "sodiumMg": 540
+   }
+  },
+  {
+   "id": "lightened-shepherds-pie-with-cauliflower-mash",
+   "title": "Lightened Shepherd's Pie with Cauliflower Mash",
+   "summary": "Lamb and vegetable filling under a fluffy potato and cauliflower mash topping.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 45,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "500g lamb mince",
+      "1 tbsp olive oil",
+      "1 onion, diced",
+      "2 carrot, diced",
+      "2 clove garlic, crushed",
+      "1 tbsp tomato paste",
+      "1 cup beef stock",
+      "1 cup frozen peas",
+      "1 tbsp Worcestershire sauce",
+      "400g potato, peeled and cubed",
+      "1/2 head cauliflower, cut into florets",
+      "1/4 cup milk",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the lamb in the oil for 6 minutes until no pink remains, add the onion, carrot and garlic for 5 minutes, then the paste, stock and Worcestershire sauce and simmer for 12 minutes until thick. Stir in the peas.",
+    "Boil the potato and cauliflower for 15 minutes until soft, drain and mash with the milk and salt.",
+    "Heat the oven to 200°C (180°C fan). Spoon the filling into a dish, top with the mash and bake for 20 minutes until golden."
+   ],
+   "notes": [
+    "Food safety: lamb mince must reach 75°C right through with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
+    "Contains milk. Worcestershire sauce contains fish and gluten."
+   ],
+   "nutrition": {
+    "kcal": 430,
+    "proteinG": 29,
+    "carbsG": 34,
+    "fatG": 20,
+    "fibreG": 8,
+    "sodiumMg": 720
+   }
+  },
+  {
+   "id": "lightened-chicken-pot-pie-with-filo-top",
+   "title": "Lightened Chicken Pot Pie with Filo Top",
+   "summary": "Creamy chicken and vegetable filling under a crisp filo lid for far less pastry.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "500g chicken breast, diced",
+      "1 tbsp olive oil",
+      "1 onion, diced",
+      "2 carrot, diced",
+      "1 leek, sliced",
+      "2 tbsp flour",
+      "2 cup chicken stock",
+      "1/2 cup milk",
+      "1 cup frozen peas",
+      "1 tsp dried thyme",
+      "4 sheet filo pastry",
+      "1 tbsp butter, melted"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the chicken in the oil for 5 minutes, add the onion, carrot and leek for 6 minutes until soft, then stir in the flour for 1 minute.",
+    "Add the stock, milk and thyme and simmer for 12 minutes until thick and the chicken is cooked through. Stir in the peas.",
+    "Heat the oven to 200°C (180°C fan). Pour into a dish, scrunch the filo over the top, brush with butter and bake for 15 minutes until golden and crisp."
+   ],
+   "notes": [
+    "Food safety: chicken must reach 75°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
+    "Contains gluten and milk."
+   ],
+   "nutrition": {
+    "kcal": 400,
+    "proteinG": 38,
+    "carbsG": 36,
+    "fatG": 11,
+    "fibreG": 6,
+    "sodiumMg": 640
+   }
+  },
+  {
+   "id": "lightened-zucchini-and-beef-lasagne",
+   "title": "Lightened Zucchini and Beef Lasagne",
+   "summary": "A pasta-light lasagne layering zucchini ribbons, beef ragu and ricotta.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 50,
+   "servings": 6,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "500g beef mince",
+      "1 tbsp olive oil",
+      "1 onion, diced",
+      "3 clove garlic, crushed",
+      "400g tinned tomatoes",
+      "2 tbsp tomato paste",
+      "1 tsp dried oregano",
+      "3 zucchini, sliced lengthways",
+      "250g ricotta",
+      "1 egg",
+      "100g mozzarella, grated",
+      "4 sheet lasagne",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the mince in the oil for 6 minutes until no pink remains, add the onion and garlic for 4 minutes, then the tomatoes, paste, oregano and salt and simmer for 15 minutes until thick.",
+    "Heat the oven to 190°C (170°C fan). Mix the ricotta and egg. Layer the ragu, zucchini, lasagne sheets and ricotta in a dish, finishing with the mozzarella.",
+    "Cover with foil and bake for 25 minutes, then uncover for 10 minutes until golden and bubbling."
+   ],
+   "notes": [
+    "Food safety: mince must reach 75°C right through with no pink; refrigerate leftovers within 2 hours and eat within 3 days.",
+    "Contains gluten, egg and milk."
+   ],
+   "nutrition": {
+    "kcal": 400,
+    "proteinG": 31,
+    "carbsG": 22,
+    "fatG": 21,
+    "fibreG": 4,
+    "sodiumMg": 560
+   }
+  },
+  {
+   "id": "lightened-sweet-potato-topped-fish-pie",
+   "title": "Lightened Sweet Potato Topped Fish Pie",
+   "summary": "Salmon and white fish in a light herby sauce under a golden sweet potato mash.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 40,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g white fish fillet, cubed",
+      "250g salmon fillet, cubed",
+      "500g sweet potato, peeled and cubed",
+      "1 1/2 cup milk",
+      "1 bay leaf",
+      "1 tbsp butter",
+      "1 tbsp flour",
+      "1 cup frozen peas",
+      "2 tbsp dill, chopped",
+      "1 lemon, zested",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the sweet potato for 15 minutes until soft, drain and mash with half the salt.",
+    "Poach the fish in the milk with the bay leaf for 4 minutes, lift out and strain the milk. Melt the butter, stir in the flour for 1 minute, whisk in the milk and simmer for 4 minutes until thick, then fold in the fish, peas, dill and zest.",
+    "Heat the oven to 200°C (180°C fan). Spoon into a dish, top with the mash and bake for 20 minutes until golden and bubbling."
+   ],
+   "notes": [
+    "Food safety: fish should be opaque and flake easily, reaching 63°C; refrigerate leftovers within 2 hours and eat within 1 day.",
+    "Contains fish, milk and gluten."
+   ],
+   "nutrition": {
+    "kcal": 430,
+    "proteinG": 37,
+    "carbsG": 42,
+    "fatG": 12,
+    "fibreG": 6,
+    "sodiumMg": 540
+   }
+  },
+  {
+   "id": "mediterranean-baked-cod-with-tomatoes-olives-and-capers",
+   "title": "Mediterranean Baked Cod with Tomatoes, Olives and Capers",
+   "summary": "Cod baked on a bed of cherry tomatoes, olives and capers with lemon and oregano.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 cod fillet",
+      "400g cherry tomato, halved",
+      "1/2 cup olives",
+      "2 tbsp capers",
+      "3 tbsp olive oil",
+      "3 clove garlic, sliced",
+      "1 tsp dried oregano",
+      "1 lemon, sliced",
+      "500g baby potato, halved"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Roast the potatoes with a third of the oil for 15 minutes.",
+    "Add the tomatoes, olives, capers, garlic, oregano and remaining oil, nestle in the cod and top with lemon.",
+    "Bake for 15 minutes until the fish flakes easily and the tomatoes have burst."
+   ],
+   "notes": [
+    "Food safety: fish should be opaque and flake easily, reaching 63°C; refrigerate leftovers within 2 hours and eat within 1 day.",
+    "Contains fish."
+   ],
+   "nutrition": {
+    "kcal": 420,
+    "proteinG": 36,
+    "carbsG": 32,
+    "fatG": 17,
+    "fibreG": 5,
+    "sodiumMg": 860
+   }
+  },
+  {
+   "id": "mediterranean-chickpea-stew-with-paprika-and-lemon",
+   "title": "Mediterranean Chickpea Stew with Paprika and Lemon",
+   "summary": "A fragrant tomato and chickpea stew with spinach, paprika and a squeeze of lemon.",
+   "cuisine": "spanish",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "onePot": true,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp olive oil",
+      "1 onion, diced",
+      "3 clove garlic, crushed",
+      "2 tsp smoked paprika",
+      "1 tsp ground cumin",
+      "400g tinned tomatoes",
+      "800g tinned chickpeas, drained",
+      "1 cup vegetable stock",
+      "150g spinach",
+      "1 lemon, juiced",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Soften the onion in the oil for 5 minutes, then stir in the garlic, paprika and cumin for 1 minute until fragrant.",
+    "Add the tomatoes, chickpeas, stock and salt and simmer for 15 minutes until thick.",
+    "Stir in the spinach and lemon juice for 2 minutes until wilted."
+   ],
+   "notes": [
+    "Refrigerate leftovers within 2 hours and eat within 4 days."
+   ],
+   "nutrition": {
+    "kcal": 330,
+    "proteinG": 14,
+    "carbsG": 44,
+    "fatG": 11,
+    "fibreG": 12,
+    "sodiumMg": 740
+   }
+  },
+  {
+   "id": "mediterranean-salmon-with-herby-couscous",
+   "title": "Mediterranean Salmon with Herby Couscous",
+   "summary": "Roasted salmon with lemon on couscous loaded with parsley, cucumber and tomato.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 salmon fillet",
+      "2 tbsp olive oil",
+      "1 lemon, zested and juiced",
+      "1 clove garlic, crushed",
+      "1 1/2 cup couscous",
+      "1 1/2 cup boiling water",
+      "1 cucumber, diced",
+      "2 tomato, diced",
+      "1/2 cup parsley, chopped",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Rub the salmon with half the oil, lemon zest, garlic and half the salt and roast for 12 minutes until it flakes.",
+    "Pour the boiling water over the couscous with the remaining salt, cover for 5 minutes until fluffy, then fork through the remaining oil and lemon juice.",
+    "Fold in the cucumber, tomato and parsley and top with the salmon."
+   ],
+   "notes": [
+    "Food safety: salmon should reach 63°C and flake easily; refrigerate leftovers within 2 hours and eat within 1 day.",
+    "Contains fish and gluten."
+   ],
+   "nutrition": {
+    "kcal": 610,
+    "proteinG": 40,
+    "carbsG": 52,
+    "fatG": 26,
+    "fibreG": 4,
+    "sodiumMg": 520
+   }
+  }
+ ]
+}

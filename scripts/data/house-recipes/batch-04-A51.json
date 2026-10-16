@@ -1,0 +1,1096 @@
+{
+ "about": "House recipes, batch 04 (helper sA): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+ "recipes": [
+  {
+   "id": "christmas-glazed-ham-with-orange-and-mustard-glaze",
+   "title": "Christmas Glazed Ham with Orange Mustard Glaze",
+   "summary": "A cooked leg ham scored and baked with an orange, mustard and brown sugar glaze, great hot or cold on Christmas Day.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 60,
+   "servings": 10,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4kg cooked leg ham on the bone",
+      "2 tbsp whole cloves",
+      "1/2 cup orange marmalade",
+      "1/4 cup brown sugar",
+      "2 tbsp wholegrain mustard",
+      "1 orange, juiced"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 180°C (160°C fan). Peel the rind off the ham, leaving a thin layer of fat, and score it in a diamond pattern, pressing a clove into each cross.",
+    "Warm the marmalade, sugar, mustard and juice in a pan for 3 minutes until syrupy.",
+    "Brush the ham with half the glaze and bake for 1 hour, brushing every 20 minutes until deep, sticky and golden."
+   ],
+   "notes": [
+    "Christmas in summer: serve cold with salad and bread if it is hot. Ham is salty.",
+    "Food safety: a cooked ham is reheated until steaming hot at the centre (at least 70°C); refrigerate leftovers within 2 hours and eat within 4 days."
+   ],
+   "nutrition": {
+    "kcal": 310,
+    "proteinG": 38,
+    "carbsG": 14,
+    "fatG": 11,
+    "fibreG": 0,
+    "sodiumMg": 2050
+   }
+  },
+  {
+   "id": "summer-christmas-roast-turkey-breast-with-cranberry-and-herb-butter",
+   "title": "Christmas Turkey Breast Roll with Herb Butter and Cranberry",
+   "summary": "A boneless turkey breast roasted with herb butter, perfect for a smaller Christmas table.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 75,
+   "servings": 6,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "1.5kg turkey breast roll",
+      "80g butter, softened",
+      "2 tbsp thyme leaves",
+      "2 clove garlic, crushed",
+      "1 lemon, zested",
+      "1 onion, sliced",
+      "1 cup chicken stock",
+      "1/2 cup cranberry sauce"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 190°C (170°C fan). Mix the butter, thyme, garlic and zest and rub all over the turkey.",
+    "Sit it on the onion in a tray with the stock and roast for 75 minutes until golden and a thermometer in the centre reads 75°C.",
+    "Rest for 15 minutes, slice and serve with the pan juices and cranberry sauce."
+   ],
+   "notes": [
+    "Contains dairy.",
+    "Food safety: turkey must reach 75°C in the centre; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 380,
+    "proteinG": 52,
+    "carbsG": 14,
+    "fatG": 13,
+    "fibreG": 1,
+    "sodiumMg": 330
+   }
+  },
+  {
+   "id": "christmas-prawn-and-avocado-platter-with-lime-mayo",
+   "title": "Christmas Prawn and Mango Platter with Lime Mayo",
+   "summary": "A cold summer-Christmas platter of cooked prawns, mango, avocado and lime mayonnaise.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 25,
+   "cookMinutes": 0,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1kg cooked king prawn",
+      "2 mango, sliced",
+      "2 avocado, sliced",
+      "1 cos lettuce, leaves separated",
+      "1/2 cup mayonnaise",
+      "2 lime, zested and juiced",
+      "1/4 cup coriander leaves",
+      "1 red chilli, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Arrange the lettuce on a platter and top with the mango and avocado.",
+    "Check the prawns are opaque and firm, then pile them on top and scatter over the chilli and coriander.",
+    "Stir the mayonnaise with the lime zest and juice, adding a spoonful of water until pourable, and serve alongside."
+   ],
+   "notes": [
+    "Contains shellfish and egg. Keep chilled until serving.",
+    "Food safety: keep cooked prawns below 5°C and serve within 30 minutes of leaving the fridge; eat leftovers within 1 day."
+   ],
+   "nutrition": {
+    "kcal": 340,
+    "proteinG": 28,
+    "carbsG": 18,
+    "fatG": 19,
+    "fibreG": 4,
+    "sodiumMg": 890
+   }
+  },
+  {
+   "id": "thanksgiving-roast-turkey-breast-with-sage-gravy-and-cornbread-stuffing",
+   "title": "Thanksgiving Turkey Breast with Sage Gravy and Cornbread Stuffing",
+   "summary": "A smaller-scale Thanksgiving dinner using a turkey breast roll, a sage gravy and cornbread stuffing.",
+   "cuisine": "american",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "hard",
+   "prepMinutes": 30,
+   "cookMinutes": 75,
+   "servings": 6,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "1.5kg turkey breast roll",
+      "2 tbsp butter",
+      "1 tbsp sage, chopped",
+      "2 tbsp plain flour",
+      "2 cup chicken stock",
+      "4 cup cornbread, cubed",
+      "1 onion, diced",
+      "2 celery, diced",
+      "1 egg",
+      "1 cup chicken stock"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Rub the turkey with the butter and sage and roast on a tray for 70 minutes, until the thickest part reaches 75°C.",
+    "Soften the onion and celery in a little butter for 6 minutes, mix with the cornbread, egg and 1 cup of stock and bake in a dish alongside for 30 minutes until golden.",
+    "Rest the turkey, stir the flour into the pan juices for 1 minute, add 2 cups of stock and simmer for 5 minutes until thick for the gravy."
+   ],
+   "notes": [
+    "Contains gluten, dairy and egg.",
+    "Food safety: turkey must reach 75°C at the thickest part, and stuffing baked separately until steaming hot; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 540,
+    "proteinG": 40,
+    "carbsG": 32,
+    "fatG": 26,
+    "fibreG": 3,
+    "sodiumMg": 760
+   }
+  },
+  {
+   "id": "lunar-new-year-whole-steamed-barramundi-with-ginger-and-spring-onion",
+   "title": "Lunar New Year Steamed Whole Fish with Ginger and Spring Onion",
+   "summary": "A symbolic Lunar New Year dish: a whole fish steamed and finished with sizzling oil, ginger and soy.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 15,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1 whole barramundi, about 1kg, cleaned",
+      "3 tbsp ginger, shredded",
+      "4 spring onion, shredded",
+      "3 tbsp soy sauce",
+      "1 tbsp Shaoxing wine",
+      "2 tbsp vegetable oil",
+      "1 tsp sesame oil",
+      "1/4 cup coriander leaves",
+      "1.5 cup jasmine rice"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the rice. Place the fish on a heatproof plate over a steamer with half the ginger and the wine and steam for 14 minutes until the flesh is opaque and flakes near the bone.",
+    "Pour off the liquid, scatter the spring onion and remaining ginger on top and drizzle with the soy sauce and sesame oil.",
+    "Heat the vegetable oil until shimmering and pour over the fish. Serve with the coriander and rice."
+   ],
+   "notes": [
+    "Contains fish, soy, sesame and gluten (from the Shaoxing wine).",
+    "Food safety: cook fish until opaque and flaking, and shellfish until opaque and firm; keep raw seafood below 5°C, refrigerate leftovers within 2 hours and eat within 1 day."
+   ],
+   "nutrition": {
+    "kcal": 430,
+    "proteinG": 38,
+    "carbsG": 52,
+    "fatG": 8,
+    "fibreG": 1,
+    "sodiumMg": 990
+   }
+  },
+  {
+   "id": "lunar-new-year-longevity-noodles-with-prawns-and-greens",
+   "title": "Lunar New Year Longevity Noodles with Prawns and Greens",
+   "summary": "Long egg noodles tossed in garlicky soy sauce with prawns, mushrooms and bok choy.",
+   "cuisine": "chinese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 15,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "400g egg noodles",
+      "2 tbsp vegetable oil",
+      "400g peeled prawn",
+      "4 clove garlic, sliced",
+      "200g shiitake mushroom, sliced",
+      "6 baby bok choy, halved",
+      "3 tbsp soy sauce",
+      "1 tbsp oyster sauce",
+      "1 tsp sesame oil",
+      "4 spring onion, sliced"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the noodles for 4 minutes until tender and drain. Fry the prawns in half the oil for 3 minutes until pink and set aside.",
+    "Fry the garlic and mushroom in the remaining oil for 4 minutes until golden, add the bok choy for 2 minutes until wilted.",
+    "Toss in the noodles, prawns, soy sauce, oyster sauce and sesame oil until everything is coated and scatter with spring onion."
+   ],
+   "notes": [
+    "Contains shellfish, gluten, soy, egg and sesame.",
+    "Food safety: cook fish until opaque and flaking, and shellfish until opaque and firm; keep raw seafood below 5°C, refrigerate leftovers within 2 hours and eat within 1 day."
+   ],
+   "nutrition": {
+    "kcal": 520,
+    "proteinG": 32,
+    "carbsG": 72,
+    "fatG": 11,
+    "fibreG": 5,
+    "sodiumMg": 1380
+   }
+  },
+  {
+   "id": "eid-lamb-kofta-biryani-style-rice-tray-bake",
+   "title": "Eid Spiced Lamb and Rice Tray Bake",
+   "summary": "A halal-friendly, fragrant tray bake of spiced lamb, rice, almonds and sultanas that feeds a crowd.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 50,
+   "servings": 8,
+   "onePot": false,
+   "diets": [
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "1kg lamb mince",
+      "2 onion, finely diced",
+      "2 tsp ground cumin",
+      "2 tsp ground coriander",
+      "1 tsp ground cinnamon",
+      "2 tbsp olive oil",
+      "2 cup basmati rice",
+      "4 cup chicken stock",
+      "1/2 cup sultanas",
+      "1/2 cup flaked almonds",
+      "1/4 cup parsley, chopped",
+      "1 cup Greek yoghurt"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Mix the lamb, onion and spices and press into the base of a large deep tray with the oil.",
+    "Scatter over the rice, sultanas and half the almonds, pour in the hot stock and cover tightly with foil.",
+    "Bake for 45 minutes until the rice is tender and the lamb is cooked through. Scatter the parsley and remaining almonds and serve with yoghurt."
+   ],
+   "notes": [
+    "Made with halal-certified meat and stock if required. Contains dairy, nuts and gluten (if stock contains it).",
+    "Food safety: lamb mince must reach 75°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 30,
+    "carbsG": 56,
+    "fatG": 22,
+    "fibreG": 3,
+    "sodiumMg": 480
+   }
+  },
+  {
+   "id": "eid-chicken-and-chickpea-mandi-style-rice",
+   "title": "Eid Chicken Mandi-Style Rice with Tomato Sauce",
+   "summary": "Spiced chicken legs over fragrant rice with raisins and a fiery tomato salsa.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 55,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "6 chicken leg quarter",
+      "2 tsp ground cumin",
+      "2 tsp ground coriander",
+      "1 tsp ground turmeric",
+      "1 tsp ground cardamom",
+      "3 tbsp olive oil",
+      "2 cup basmati rice",
+      "4 cup chicken stock",
+      "1/2 cup raisins",
+      "2 tomato, diced",
+      "1 red chilli, finely diced",
+      "1/4 cup coriander leaves"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Rub the chicken with the spices and oil and roast for 45 minutes until golden and the thickest part reaches 75°C.",
+    "Meanwhile simmer the rice in the stock with raisins, covered, for 15 minutes until tender.",
+    "Mix the tomato, chilli and coriander into a salsa and serve the chicken over the rice."
+   ],
+   "notes": [
+    "Made with halal chicken if required.",
+    "Food safety: chicken must reach 75°C at the thickest part with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 640,
+    "proteinG": 40,
+    "carbsG": 76,
+    "fatG": 19,
+    "fibreG": 3,
+    "sodiumMg": 560
+   }
+  },
+  {
+   "id": "diwali-paneer-and-pea-masala-with-jeera-rice",
+   "title": "Diwali Paneer Pea Masala with Jeera Rice",
+   "summary": "A festive vegetarian main of paneer and peas in a creamy tomato masala with cumin rice.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 30,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 tbsp ghee",
+      "1 onion, diced",
+      "1 tbsp ginger, grated",
+      "3 clove garlic, crushed",
+      "2 tsp garam masala",
+      "1 tsp ground turmeric",
+      "400g tinned tomatoes",
+      "1/2 cup cream",
+      "400g paneer, cubed",
+      "1 cup frozen peas",
+      "1.5 cup basmati rice",
+      "1 tsp cumin seeds"
+     ]
+    }
+   ],
+   "steps": [
+    "Cook the onion in the ghee for 8 minutes until golden, add the ginger, garlic and spices for 1 minute, then the tomatoes and simmer for 10 minutes. Blend until smooth if you like.",
+    "Stir in the cream, paneer and peas and simmer for 6 minutes until the peas are tender.",
+    "Cook the rice with the cumin seeds for 12 minutes until tender and serve."
+   ],
+   "notes": [
+    "Contains dairy. Paneer is a vegetarian cheese made without animal rennet."
+   ],
+   "nutrition": {
+    "kcal": 680,
+    "proteinG": 26,
+    "carbsG": 72,
+    "fatG": 32,
+    "fibreG": 6,
+    "sodiumMg": 560
+   }
+  },
+  {
+   "id": "diwali-stuffed-capsicum-with-spiced-potato-and-cashews",
+   "title": "Diwali Stuffed Capsicum with Spiced Potato and Cashews",
+   "summary": "Whole capsicums stuffed with spiced potato, peas and cashews and baked until soft.",
+   "cuisine": "indian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 25,
+   "cookMinutes": 35,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 capsicum, tops cut off",
+      "600g potato, boiled and cubed",
+      "1 cup frozen peas",
+      "1/3 cup cashews, chopped",
+      "1 onion, diced",
+      "2 tbsp vegetable oil",
+      "1 tsp cumin seeds",
+      "2 tsp garam masala",
+      "1 tsp ground turmeric",
+      "1 tbsp lemon juice",
+      "1/4 cup coriander leaves",
+      "1 cup Greek yoghurt"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Fry the cumin seeds and onion in the oil for 5 minutes until golden, add the spices, potato, peas and cashews for 4 minutes, then the lemon and coriander.",
+    "Fill the capsicums with the mix, stand them upright in a dish with 1/4 cup of water and replace the tops.",
+    "Bake for 30 minutes until the capsicums are tender and slightly charred. Serve with the yoghurt."
+   ],
+   "notes": [
+    "Contains nuts and dairy. Use dairy-free yoghurt for vegan."
+   ],
+   "nutrition": {
+    "kcal": 360,
+    "proteinG": 13,
+    "carbsG": 52,
+    "fatG": 12,
+    "fibreG": 9,
+    "sodiumMg": 230
+   }
+  },
+  {
+   "id": "passover-slow-roast-lamb-shoulder-with-lemon-and-herbs",
+   "title": "Passover-Style Slow-Roast Lamb Shoulder with Lemon and Herbs",
+   "summary": "Lamb shoulder roasted until falling apart with garlic, lemon and rosemary. Contains no flour, grains or leavening.",
+   "cuisine": "modern-australian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 240,
+   "servings": 8,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2.5kg lamb shoulder, bone in",
+      "6 clove garlic, sliced",
+      "2 lemon, juiced",
+      "1/4 cup rosemary, chopped",
+      "1/4 cup olive oil",
+      "1 kg potato, cut into wedges",
+      "1 cup chicken stock"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 160°C (140°C fan). Stab the lamb all over, push in the garlic, and rub with the rosemary, lemon and oil.",
+    "Place on the potato in a deep tray, add the stock, cover tightly with foil and roast for 3.5 hours.",
+    "Remove the foil, raise to 220°C (200°C fan) and roast for 20 minutes until browned and the meat shreds easily."
+   ],
+   "notes": [
+    "Uses no flour, grains or leavening, but check packaged ingredients such as stock for Passover certification if you observe it.",
+    "Food safety: lamb must be cooked until tender and above 75°C; refrigerate leftovers within 2 hours and eat within 3 days."
+   ],
+   "nutrition": {
+    "kcal": 530,
+    "proteinG": 44,
+    "carbsG": 22,
+    "fatG": 29,
+    "fibreG": 2,
+    "sodiumMg": 260
+   }
+  },
+  {
+   "id": "slow-braised-brisket-with-carrots-and-onions-for-passover",
+   "title": "Slow-Braised Brisket with Carrots and Onions for Passover",
+   "summary": "Beef brisket braised for hours with onions, carrots and garlic until it slices easily. Uses no flour or grains.",
+   "cuisine": "central-european",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 240,
+   "servings": 8,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2kg beef brisket",
+      "2 tbsp olive oil",
+      "3 onion, sliced",
+      "6 clove garlic, crushed",
+      "4 carrot, cut into chunks",
+      "2 tbsp tomato paste",
+      "2 cup beef stock",
+      "2 bay leaf",
+      "1 tsp paprika",
+      "1/4 cup parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 150°C (130°C fan). Brown the seasoned brisket in the oil on all sides for 10 minutes and set aside.",
+    "Soften the onions for 8 minutes, add the garlic, paprika and paste for 1 minute, then the stock and bay leaf. Return the brisket with the carrots, cover tightly and braise for 3.5 hours until very tender.",
+    "Rest for 20 minutes, slice across the grain and serve with the sauce and parsley."
+   ],
+   "notes": [
+    "Uses no flour, grains or leavening, but check packaged ingredients such as stock for Passover certification if you observe it.",
+    "Food safety: braise until very tender and well above 75°C; cool quickly, refrigerate within 2 hours and eat within 3 days."
+   ],
+   "nutrition": {
+    "kcal": 480,
+    "proteinG": 48,
+    "carbsG": 14,
+    "fatG": 24,
+    "fibreG": 3,
+    "sodiumMg": 460
+   }
+  },
+  {
+   "id": "easter-roast-leg-of-lamb-with-garlic-rosemary-and-spring-vegetables",
+   "title": "Easter Roast Lamb with Garlic, Rosemary and Spring Vegetables",
+   "summary": "A classic Easter lamb leg roasted pink with asparagus and baby carrots.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 100,
+   "servings": 8,
+   "onePot": false,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2kg leg of lamb, bone in",
+      "6 clove garlic, sliced",
+      "1/4 cup rosemary, chopped",
+      "3 tbsp olive oil",
+      "1 lemon, zested",
+      "1 kg new potato",
+      "500g baby carrot",
+      "2 bunch asparagus, trimmed"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Stud the lamb with garlic and rub with rosemary, oil and zest.",
+    "Roast with the potato and carrots for 90 minutes until a thermometer reads 60°C for medium or 70°C for well done. Add the asparagus for the last 10 minutes.",
+    "Rest the lamb for 20 minutes and slice."
+   ],
+   "notes": [
+    "Spring vegetables suit Easter in the northern hemisphere; in Australia, use autumn veg like pumpkin.",
+    "Food safety: whole cuts of lamb can be served medium (60°C) when the outside is seared; cook to 70°C for children, the elderly and pregnancy. Refrigerate leftovers within 2 hours and eat within 3 days."
+   ],
+   "nutrition": {
+    "kcal": 470,
+    "proteinG": 42,
+    "carbsG": 26,
+    "fatG": 22,
+    "fibreG": 5,
+    "sodiumMg": 180
+   }
+  },
+  {
+   "id": "easter-hot-cross-bun-style-ham-and-egg-pie",
+   "title": "Easter Ham and Egg Pie with Parsley",
+   "summary": "A shortcrust-free, puff-topped pie of ham, egg and parsley.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 20,
+   "cookMinutes": 40,
+   "servings": 6,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "2 sheet puff pastry",
+      "300g leg ham, chopped",
+      "8 egg",
+      "1/2 cup parsley, chopped",
+      "1/2 cup cream",
+      "1/4 cup parmesan, grated",
+      "1 tsp black pepper"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan) and line a pie dish with one sheet of pastry.",
+    "Layer the ham and parsley in the base, crack in 6 eggs, and pour over the cream mixed with the remaining 2 beaten eggs, parmesan and pepper.",
+    "Cover with the second sheet, seal, cut a slit and bake for 40 minutes until puffed and golden and the egg is set in the centre."
+   ],
+   "notes": [
+    "Contains gluten, dairy and egg.",
+    "Food safety: cook until the egg is fully set; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 28,
+    "carbsG": 28,
+    "fatG": 38,
+    "fibreG": 1,
+    "sodiumMg": 1020
+   }
+  },
+  {
+   "id": "ramadan-iftar-chicken-and-rice-with-apricot-and-almond",
+   "title": "Iftar Chicken and Rice with Apricots and Almonds",
+   "summary": "A gentle, nourishing iftar main of spiced chicken, rice, sweet apricots and toasted almonds.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 40,
+   "servings": 6,
+   "onePot": true,
+   "diets": [
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "800g chicken thigh fillet, diced",
+      "2 tbsp olive oil",
+      "1 onion, diced",
+      "1 tsp ground cumin",
+      "1 tsp ground cinnamon",
+      "1.5 cup basmati rice",
+      "3 cup chicken stock",
+      "1/3 cup dried apricot, sliced",
+      "1/4 cup flaked almonds",
+      "1/4 cup parsley, chopped"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the chicken in the oil for 6 minutes, add the onion and spices for 4 minutes until soft.",
+    "Stir in the rice, stock and apricots, cover and cook gently for 20 minutes until the rice is tender and the chicken reaches 75°C.",
+    "Toast the almonds in a dry pan for 2 minutes until golden and scatter over with the parsley."
+   ],
+   "notes": [
+    "Made with halal chicken if required. Contains nuts.",
+    "Food safety: chicken must reach 75°C at the thickest part with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 40,
+    "carbsG": 66,
+    "fatG": 16,
+    "fibreG": 4,
+    "sodiumMg": 420
+   }
+  },
+  {
+   "id": "ramadan-lentil-soup-with-lemon-and-spiced-lamb-fatayer",
+   "title": "Iftar Red Lentil Soup with Lemon and Spiced Lamb Fatayer",
+   "summary": "A comforting lentil soup served with small pastry pockets of spiced lamb.",
+   "cuisine": "middle-eastern",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 40,
+   "servings": 6,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 cup red lentils",
+      "1 onion, diced",
+      "2 carrot, diced",
+      "1 tsp ground cumin",
+      "1 litre vegetable stock",
+      "1 lemon, juiced",
+      "400g lamb mince",
+      "1 onion, finely diced",
+      "1 tsp allspice",
+      "500g pizza dough",
+      "2 tbsp olive oil"
+     ]
+    }
+   ],
+   "steps": [
+    "Simmer the lentils, onion, carrot, cumin and stock for 25 minutes until the lentils are soft, blend smooth and add the lemon.",
+    "Fry the lamb, onion and allspice in the oil for 8 minutes until browned with no pink left. Heat the oven to 220°C (200°C fan).",
+    "Cut the dough into 12 rounds, fill, pinch into triangles and bake for 15 minutes until golden. Serve with the soup."
+   ],
+   "notes": [
+    "Contains gluten. Made with halal lamb if required.",
+    "Food safety: lamb mince must reach 75°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "proteinG": 32,
+    "carbsG": 72,
+    "fatG": 16,
+    "fibreG": 13,
+    "sodiumMg": 500
+   }
+  },
+  {
+   "id": "ramadan-grilled-fish-with-chermoula-and-saffron-rice",
+   "title": "Iftar Grilled Fish with Chermoula and Saffron Rice",
+   "summary": "Firm white fish grilled with a fresh coriander and cumin chermoula over saffron rice.",
+   "cuisine": "north-african",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 20,
+   "servings": 4,
+   "onePot": false,
+   "diets": [
+    "pescatarian",
+    "no-gluten",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 firm white fish fillet",
+      "1 cup coriander leaves",
+      "1/2 cup parsley",
+      "3 clove garlic",
+      "2 tsp ground cumin",
+      "1 tsp paprika",
+      "1 lemon, juiced",
+      "1/4 cup olive oil",
+      "1.5 cup basmati rice",
+      "1 pinch saffron threads"
+     ]
+    }
+   ],
+   "steps": [
+    "Blend the coriander, parsley, garlic, cumin, paprika, lemon and oil into a chermoula and spoon half over the fish.",
+    "Cook the rice with the saffron in 3 cups of water for 12 minutes until tender.",
+    "Grill the fish for 5 minutes each side until opaque and flaking, and serve with the remaining chermoula over the rice."
+   ],
+   "notes": [
+    "Contains fish.",
+    "Food safety: cook fish until opaque and flaking, and shellfish until opaque and firm; keep raw seafood below 5°C, refrigerate leftovers within 2 hours and eat within 1 day."
+   ],
+   "nutrition": {
+    "kcal": 500,
+    "proteinG": 36,
+    "carbsG": 60,
+    "fatG": 13,
+    "fibreG": 2,
+    "sodiumMg": 180
+   }
+  },
+  {
+   "id": "picnic-roast-vegetable-and-halloumi-tray-bake-bites",
+   "title": "Picnic Halloumi and Roast Vegetable Frittata Squares",
+   "summary": "A portable frittata of roasted vegetables and halloumi, cut into squares for the picnic basket.",
+   "cuisine": "greek",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 35,
+   "servings": 8,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "no-gluten"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "2 zucchini, diced",
+      "1 capsicum, diced",
+      "1 red onion, diced",
+      "2 tbsp olive oil",
+      "10 egg",
+      "1/2 cup milk",
+      "200g halloumi, grated",
+      "1/4 cup basil, chopped",
+      "1/2 tsp salt"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 190°C (170°C fan) and line a 20cm by 30cm tin. Roast the zucchini, capsicum and onion with the oil for 15 minutes until soft.",
+    "Whisk the eggs, milk, halloumi, basil and salt and stir in the vegetables, then pour into the tin.",
+    "Bake for 25 minutes until puffed and set in the centre. Cool and cut into squares."
+   ],
+   "notes": [
+    "Contains egg and dairy. Keep cold in a cooler bag.",
+    "Food safety: cook until the egg is set; keep chilled below 5°C and eat within 2 hours of leaving the fridge; refrigerate leftovers and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 250,
+    "proteinG": 15,
+    "carbsG": 6,
+    "fatG": 18,
+    "fibreG": 1,
+    "sodiumMg": 540
+   }
+  },
+  {
+   "id": "layered-chicken-corn-and-black-bean-enchilada-bake-for-a-crowd",
+   "title": "Layered Chicken, Corn and Black Bean Enchilada Bake for a Crowd",
+   "summary": "A layered, make-ahead enchilada bake with shredded chicken, corn, beans and cheese that travels well.",
+   "cuisine": "mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 25,
+   "cookMinutes": 35,
+   "servings": 10,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "800g chicken breast, cooked and shredded",
+      "2 cup enchilada sauce",
+      "400g tinned black beans, drained",
+      "2 cup corn kernels",
+      "12 corn tortilla",
+      "2 cup cheddar, grated",
+      "1 cup sour cream",
+      "1/4 cup coriander leaves"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Mix the chicken, beans, corn and 1 cup of the sauce.",
+    "Layer tortillas, chicken mixture and cheese in a large dish, three times, and pour over the remaining sauce.",
+    "Bake for 30 minutes until bubbling and golden. Serve with sour cream and coriander."
+   ],
+   "notes": [
+    "Contains dairy.",
+    "Food safety: chicken must be cooked to 75°C before shredding; reheat until steaming hot and refrigerate leftovers within 2 hours."
+   ],
+   "nutrition": {
+    "kcal": 420,
+    "proteinG": 30,
+    "carbsG": 40,
+    "fatG": 16,
+    "fibreG": 6,
+    "sodiumMg": 760
+   }
+  },
+  {
+   "id": "potluck-cold-sesame-noodle-salad-with-edamame-and-cucumber",
+   "title": "Potluck Sesame Noodle Salad with Edamame and Cucumber",
+   "summary": "A cold noodle salad with a creamy sesame dressing that travels beautifully.",
+   "cuisine": "japanese",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 15,
+   "cookMinutes": 5,
+   "servings": 10,
+   "onePot": false,
+   "diets": [
+    "vegetarian",
+    "vegan",
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "500g soba noodles",
+      "2 cup edamame, shelled",
+      "2 cucumber, cut into batons",
+      "3 carrot, grated",
+      "1/2 cup tahini",
+      "1/4 cup soy sauce",
+      "3 tbsp rice vinegar",
+      "1 tbsp sesame oil",
+      "1 tbsp maple syrup",
+      "1/4 cup sesame seeds"
+     ]
+    }
+   ],
+   "steps": [
+    "Boil the soba for 5 minutes until tender, drain and rinse under cold water. Cook the edamame in boiling water for 3 minutes until bright green.",
+    "Whisk the tahini, soy, vinegar, sesame oil, maple syrup and 1/4 cup of water until smooth.",
+    "Toss everything together with the dressing and sprinkle with the sesame seeds."
+   ],
+   "notes": [
+    "Contains gluten, soy and sesame. Use 100% buckwheat soba and tamari for gluten-free."
+   ],
+   "nutrition": {
+    "kcal": 350,
+    "proteinG": 15,
+    "carbsG": 44,
+    "fatG": 14,
+    "fibreG": 5,
+    "sodiumMg": 730
+   }
+  },
+  {
+   "id": "potluck-baked-ziti-with-sausage-and-spinach",
+   "title": "Potluck Baked Ziti with Italian Sausage and Spinach",
+   "summary": "A hearty baked pasta for a crowd with sausage, tomato, spinach and melting mozzarella.",
+   "cuisine": "italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "easy",
+   "prepMinutes": 20,
+   "cookMinutes": 35,
+   "servings": 10,
+   "onePot": false,
+   "diets": [],
+   "ingredients": [
+    {
+     "items": [
+      "500g penne",
+      "500g Italian sausage, casings removed",
+      "1 onion, diced",
+      "3 clove garlic, crushed",
+      "800g tinned tomatoes",
+      "200g spinach",
+      "250g ricotta",
+      "2 cup mozzarella, grated",
+      "1/2 cup parmesan, grated"
+     ]
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200°C (180°C fan). Boil the penne for 8 minutes until almost tender and drain.",
+    "Brown the sausage and onion for 8 minutes until cooked through with no pink, add the garlic and tomatoes and simmer for 10 minutes, then stir in the spinach until wilted.",
+    "Toss the pasta with the sauce and ricotta, tip into a dish, top with the cheeses and bake for 25 minutes until golden and bubbling."
+   ],
+   "notes": [
+    "Contains gluten and dairy.",
+    "Food safety: sausage must reach 75°C with no pink; reheat until steaming hot and refrigerate leftovers within 2 hours."
+   ],
+   "nutrition": {
+    "kcal": 540,
+    "proteinG": 27,
+    "carbsG": 56,
+    "fatG": 23,
+    "fibreG": 5,
+    "sodiumMg": 780
+   }
+  },
+  {
+   "id": "picnic-chicken-and-vegetable-pasties-for-the-basket",
+   "title": "Picnic Chicken and Vegetable Hand Pies",
+   "summary": "Handheld puff pastry pies with chicken, corn and carrot that are good cold.",
+   "cuisine": "british",
+   "mealTypes": [
+    "dinner"
+   ],
+   "difficulty": "medium",
+   "prepMinutes": 30,
+   "cookMinutes": 30,
+   "servings": 8,
+   "onePot": false,
+   "diets": [
+    "no-dairy"
+   ],
+   "ingredients": [
+    {
+     "items": [
+      "4 sheet puff pastry",
+      "500g chicken thigh fillet, diced",
+      "1 tbsp olive oil",
+      "1 onion, diced",
+      "2 carrot, finely diced",
+      "1 cup corn kernels",
+      "2 tbsp plain flour",
+      "1 cup chicken stock",
+      "1 egg, beaten"
+     ]
+    }
+   ],
+   "steps": [
+    "Brown the chicken in the oil for 5 minutes, add the onion and carrot for 5 minutes, stir in the flour, then the stock and corn and simmer for 5 minutes until thick. Cool completely.",
+    "Heat the oven to 200°C (180°C fan). Cut the pastry into 8 squares, fill, fold over, crimp and brush with egg.",
+    "Bake for 25 minutes until puffed and golden and the filling is steaming."
+   ],
+   "notes": [
+    "Contains gluten and egg.",
+    "Food safety: chicken must reach 75°C at the thickest part with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+   ],
+   "nutrition": {
+    "kcal": 430,
+    "proteinG": 17,
+    "carbsG": 36,
+    "fatG": 24,
+    "fibreG": 3,
+    "sodiumMg": 300
+   }
+  }
+ ]
+}
