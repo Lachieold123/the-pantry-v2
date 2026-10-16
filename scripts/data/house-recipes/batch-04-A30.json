@@ -1,0 +1,1038 @@
+{
+  "about": "Batch 04, slice A, chunk A30: lunches (pitas, wraps, panini, rice and lentil bowls, savoury pastries, hot sandwiches) from Turkey, Greece, the Middle East, Italy, India, the Caribbean, Mexico, Spain, Scandinavia and the US.",
+  "recipes": [
+    {
+      "id": "peynirli-ispanakli-pide-turkish-spinach-and-feta-flatbread",
+      "title": "Peynirli Ispanakli Pide (Turkish Spinach and Feta Flatbread)",
+      "summary": "A boat-shaped flatbread baked with spinach, feta and an egg in the middle, a bakery lunch from Turkey.",
+      "cuisine": "turkish",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 pizza base",
+            "2 cup baby spinach",
+            "1/2 brown onion, thinly sliced",
+            "150g feta",
+            "2 egg",
+            "1 tbsp olive oil",
+            "1/2 tsp chilli flakes"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 230°C (210°C fan). Cut the base in half and roll each piece into an oval, pinching the long edges up to make a rim.",
+        "Soften the spinach and onion in the oil in a pan for 3 minutes until the spinach wilts, then cool slightly and mix with the crumbled feta.",
+        "Fill the boats and bake for 10 minutes, until the edges are golden.",
+        "Crack an egg into the middle of each, sprinkle with chilli and bake for 3 more minutes, until the white is set."
+      ],
+      "notes": [
+        "Food safety: the egg white must be set right through. Keeps 2 days in the fridge; reheat until steaming hot.",
+        "Contains egg, milk and gluten."
+      ],
+      "nutrition": {
+        "kcal": 600,
+        "proteinG": 24,
+        "carbsG": 62,
+        "fatG": 28,
+        "fibreG": 4,
+        "sodiumMg": 1400
+      }
+    },
+    {
+      "id": "pork-souvlaki-pitas-with-tzatziki",
+      "title": "Pork Souvlaki Pitas (with Tzatziki)",
+      "summary": "Lemon and oregano pork skewers pan-seared and wrapped in warm pita with tzatziki, tomato and onion.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "500g pork loin, cut into 2cm cubes",
+            "3 tbsp olive oil",
+            "1 lemon, juiced",
+            "3 garlic clove, minced",
+            "2 tsp dried oregano",
+            "4 pita",
+            "1 cup tzatziki",
+            "2 tomato, sliced",
+            "1/2 red onion, thinly sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the pork with the oil, lemon juice, garlic, oregano and 1 tsp salt.",
+        "Thread onto skewers or leave loose and cook in a hot pan for 8 to 10 minutes, turning, until browned and cooked through to 70°C with no pink inside.",
+        "Warm the pitas, spread with tzatziki and fill with the pork, tomato and onion."
+      ],
+      "notes": [
+        "Food safety: pork must be cooked through with no pink. Cool leftovers within an hour; for a packed lunch pack the meat chilled with an ice pack, eat within 4 hours and reheat until steaming hot.",
+        "Contains milk and gluten."
+      ],
+      "nutrition": {
+        "kcal": 480,
+        "proteinG": 35,
+        "carbsG": 38,
+        "fatG": 20,
+        "fibreG": 3,
+        "sodiumMg": 850
+      }
+    },
+    {
+      "id": "greek-chicken-gyro-pitas-with-red-onion",
+      "title": "Greek Chicken Gyro Pitas (with Red Onion)",
+      "summary": "Oregano and lemon chicken thigh seared until charred, tucked into warm pita with tzatziki, tomato and red onion.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "600g chicken thigh, sliced",
+            "2 tbsp olive oil",
+            "1 lemon, juiced",
+            "2 tsp dried oregano",
+            "1 tsp paprika",
+            "2 garlic clove, minced",
+            "4 pita",
+            "1 cup tzatziki",
+            "2 tomato, sliced",
+            "1 red onion, thinly sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the chicken with the oil, lemon juice, oregano, paprika, garlic and 1 tsp salt.",
+        "Cook in a hot frying pan in two batches for 6 minutes each, until charred in places and cooked through to 75°C.",
+        "Warm the pitas and fill with tzatziki, chicken, tomato and onion."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C. Refrigerate leftovers within an hour; for a packed lunch use an ice pack, eat within 4 hours and reheat until steaming hot.",
+        "Contains milk and gluten."
+      ],
+      "nutrition": {
+        "kcal": 520,
+        "proteinG": 36,
+        "carbsG": 38,
+        "fatG": 22,
+        "fibreG": 3,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "spiced-lamb-and-hummus-bowl-with-pita",
+      "title": "Spiced Lamb and Hummus Bowl (with Pita)",
+      "summary": "Cumin-spiced lamb mince over a swirl of hummus with cucumber, tomato and parsley, scooped up with warm pita.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g lamb mince",
+            "1 tsp ground cumin",
+            "1 tsp ground coriander",
+            "1/2 tsp ground cinnamon",
+            "1 tbsp olive oil",
+            "1 cup hummus",
+            "1 cucumber, diced",
+            "2 tomato, diced",
+            "1/2 cup parsley, chopped",
+            "4 pita"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the lamb in the oil over high heat for 8 minutes, breaking it up, with the spices and salt, until cooked through to 75°C.",
+        "Spread the hummus in four bowls and top with the lamb.",
+        "Add the cucumber, tomato and parsley and serve with the warmed pita."
+      ],
+      "notes": [
+        "Food safety: lamb mince must reach 75°C with no pink. Refrigerate leftovers within an hour and reheat until steaming hot; for a packed lunch keep the lamb and hummus below 5°C with an ice pack and eat within 4 hours.",
+        "Contains gluten and sesame."
+      ],
+      "nutrition": {
+        "kcal": 580,
+        "proteinG": 31,
+        "carbsG": 42,
+        "fatG": 33,
+        "fibreG": 6,
+        "sodiumMg": 850
+      }
+    },
+    {
+      "id": "tuna-nicoise-bowl-with-potato-and-green-beans",
+      "title": "Tuna Nicoise Bowl (with Potato and Green Beans)",
+      "summary": "Tinned tuna, boiled egg, potato, beans and olives with a mustard dressing, a lunch bowl that holds up in a lunchbox.",
+      "cuisine": "french",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g waxy potato, halved",
+            "150g green beans",
+            "2 egg",
+            "1 can tinned tuna, drained",
+            "1 cup cherry tomato, halved",
+            "12 kalamata olive",
+            "2 tbsp olive oil",
+            "1 tbsp lemon juice",
+            "1 tsp dijon mustard"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes for 12 minutes, adding the beans for the last 3 minutes, until the potatoes are tender. Drain.",
+        "Boil the eggs for 9 minutes, cool in cold water, peel and halve.",
+        "Whisk the oil, lemon juice and mustard with salt and pepper.",
+        "Arrange the potatoes, beans, tuna, tomato, olives and eggs in two boxes and pour over the dressing."
+      ],
+      "notes": [
+        "Food safety: tuna, egg and potatoes must stay below 5°C. For a packed lunch use an ice pack and eat within 4 hours.",
+        "Contains egg and fish."
+      ],
+      "nutrition": {
+        "kcal": 450,
+        "proteinG": 32,
+        "carbsG": 33,
+        "fatG": 22,
+        "fibreG": 6,
+        "sodiumMg": 850
+      }
+    },
+    {
+      "id": "quinoa-and-chickpea-lunch-bowl-with-feta",
+      "title": "Quinoa and Chickpea Lunch Bowl (with Feta)",
+      "summary": "Fluffy quinoa, chickpeas, cucumber, tomato and feta in a lemon dressing that keeps well in the fridge.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup quinoa",
+            "2 cup water",
+            "1 can chickpeas, drained",
+            "1 cucumber, diced",
+            "2 tomato, diced",
+            "100g feta, crumbled",
+            "1/2 cup parsley, chopped",
+            "3 tbsp olive oil",
+            "1 lemon, juiced"
+          ]
+        }
+      ],
+      "steps": [
+        "Rinse the quinoa, simmer in the water for 15 minutes, until the water is absorbed and the grains are tender, then cool.",
+        "Toss with the chickpeas, cucumber, tomato, feta and parsley.",
+        "Dress with the oil, lemon juice and salt and pepper."
+      ],
+      "notes": [
+        "Keeps 3 days in a sealed container in the fridge. For a packed lunch use an ice pack.",
+        "Contains milk."
+      ],
+      "nutrition": {
+        "kcal": 400,
+        "proteinG": 15,
+        "carbsG": 40,
+        "fatG": 20,
+        "fibreG": 9,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "caprese-panini-with-pesto",
+      "title": "Caprese Panini (with Pesto)",
+      "summary": "Pressed crusty bread with melting mozzarella, ripe tomato, basil and a spoon of pesto, crisp outside and gooey inside.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 8,
+      "cookMinutes": 8,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 crusty bread, halved and split",
+            "2 tbsp pesto",
+            "150g mozzarella, sliced",
+            "2 tomato, sliced",
+            "6 basil leaves",
+            "1 tbsp olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Spread the pesto on both cut sides of the bread, then layer the mozzarella, tomato and basil on the base. Season and close.",
+        "Brush the outsides with the oil.",
+        "Press in a hot pan or sandwich press for 4 minutes each side, until golden and the cheese has melted."
+      ],
+      "notes": [
+        "Pesto is traditionally made with a hard cheese; check the label if you need it vegetarian.",
+        "Contains milk, gluten and nuts."
+      ],
+      "nutrition": {
+        "kcal": 550,
+        "proteinG": 24,
+        "carbsG": 52,
+        "fatG": 27,
+        "fibreG": 4,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "piadina-romagnola-with-prosciutto-mozzarella-and-rocket",
+      "title": "Piadina Romagnola (with Prosciutto, Mozzarella and Rocket)",
+      "summary": "A warm Italian flatbread folded around prosciutto, creamy mozzarella and peppery rocket, ready in 10 minutes.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 5,
+      "servings": 2,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "2 flatbread",
+            "80g prosciutto",
+            "100g mozzarella, sliced",
+            "1 cup rocket",
+            "1 tbsp olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm each flatbread in a dry pan for 1 minute each side, until soft with a few brown spots.",
+        "Cover half of each with the mozzarella and warm for 1 minute until it just softens.",
+        "Add the prosciutto and rocket, drizzle with oil and fold over."
+      ],
+      "notes": [
+        "Food safety: prosciutto and mozzarella should stay below 5°C until use. For a packed lunch use an ice pack and eat within 4 hours.",
+        "Contains gluten and milk."
+      ],
+      "nutrition": {
+        "kcal": 600,
+        "proteinG": 30,
+        "carbsG": 60,
+        "fatG": 26,
+        "fibreG": 3,
+        "sodiumMg": 1700
+      }
+    },
+    {
+      "id": "dal-tadka-with-ghee-and-basmati-rice",
+      "title": "Dal Tadka (with Ghee and Basmati Rice)",
+      "summary": "Creamy red lentils finished with a sizzling ghee, cumin and garlic tempering, served over basmati rice.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1.5 cup red lentils",
+            "4 cup water",
+            "1 tsp ground turmeric",
+            "1 brown onion, diced",
+            "2 tomato, diced",
+            "1 cup basmati rice",
+            "2 tbsp ghee",
+            "1 tsp cumin seeds",
+            "3 garlic clove, sliced",
+            "1/2 tsp chilli flakes"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the lentils, water, turmeric, onion, tomato and 1 tsp salt for 20 minutes, until the lentils break down into a thick soup.",
+        "Cook the rice per the packet until tender, about 12 minutes.",
+        "Heat the ghee in a small pan, fry the cumin seeds and garlic for 1 minute until golden, add the chilli flakes and pour the tempering sizzling over the dal.",
+        "Serve the dal over the rice."
+      ],
+      "notes": [
+        "Food safety: cool leftover rice within an hour; reheat once until steaming hot. The dal keeps 4 days in the fridge and freezes well.",
+        "Contains milk (ghee)."
+      ],
+      "nutrition": {
+        "kcal": 520,
+        "proteinG": 23,
+        "carbsG": 88,
+        "fatG": 8,
+        "fibreG": 12,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "paneer-kathi-rolls-with-mint-chutney",
+      "title": "Paneer Kathi Rolls (with Mint Chutney)",
+      "summary": "Spiced paneer, capsicum and onion rolled in warm flour tortillas with a smear of mint chutney, a Kolkata street classic.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g paneer, cut into strips",
+            "2 tbsp neutral oil",
+            "1 capsicum, sliced",
+            "1 red onion, sliced",
+            "2 tsp garam masala",
+            "1 lemon, juiced",
+            "4 flour tortilla",
+            "4 tbsp mint chutney"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the paneer in the oil over medium-high heat for 4 minutes, until golden on all sides.",
+        "Add the capsicum, onion and garam masala and cook for 4 minutes, until the vegetables soften. Squeeze over the lemon and season.",
+        "Warm the tortillas, spread with the chutney, fill with the paneer mixture and roll tightly."
+      ],
+      "notes": [
+        "Keeps 1 day in the fridge wrapped in foil. For a packed lunch use an ice pack and eat within 4 hours.",
+        "Contains milk and gluten."
+      ],
+      "nutrition": {
+        "kcal": 445,
+        "proteinG": 18,
+        "carbsG": 32,
+        "fatG": 27,
+        "fibreG": 3,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "vada-pav-mumbai-spiced-potato-fritter-in-a-bread-roll",
+      "title": "Vada Pav (Mumbai Spiced Potato Fritter in a Bread Roll)",
+      "summary": "A garlicky spiced potato fritter in a soft bread roll with mint chutney, Mumbai's favourite hand-held lunch.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g potato, peeled and cubed",
+            "1 tsp mustard seeds",
+            "1 sprig curry leaf",
+            "3 garlic clove, minced",
+            "1 green chilli, minced",
+            "1/2 tsp ground turmeric",
+            "1 tbsp neutral oil",
+            "1/2 cup chickpea flour",
+            "1/3 cup water",
+            "1/2 cup neutral oil",
+            "4 bread roll",
+            "4 tbsp mint chutney"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potato for 15 minutes until tender, drain and mash roughly.",
+        "Fry the mustard seeds, curry leaves, garlic, chilli and turmeric in the first oil for 1 minute, then mix into the potato with 1 tsp salt. Shape into 8 patties.",
+        "Whisk the chickpea flour, water and a pinch of salt into a thick batter. Dip the patties and shallow fry in the second oil for 3 minutes each side, until deep golden.",
+        "Split the rolls, spread with chutney and fill with two fritters each."
+      ],
+      "notes": [
+        "Best eaten hot. The potato mixture keeps 2 days in the fridge.",
+        "Contains gluten."
+      ],
+      "nutrition": {
+        "kcal": 360,
+        "proteinG": 11,
+        "carbsG": 61,
+        "fatG": 8,
+        "fibreG": 6,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "lemon-rice-south-indian-with-peanuts-and-curry-leaves",
+      "title": "Lemon Rice (South Indian, with Peanuts and Curry Leaves)",
+      "summary": "Turmeric-gold rice with a zesty lemon kick, crunchy peanuts and mustard seeds, a lunchbox favourite that eats well cold.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 8,
+      "cookMinutes": 18,
+      "servings": 3,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup basmati rice",
+            "2 tbsp neutral oil",
+            "1 tsp mustard seeds",
+            "1 sprig curry leaf",
+            "1/4 cup peanuts",
+            "1/2 tsp ground turmeric",
+            "2 lemon, juiced",
+            "1 green chilli, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice per the packet until tender, about 12 minutes, then spread out to cool for 10 minutes.",
+        "Heat the oil, add the mustard seeds until they pop, then the curry leaves, peanuts and chilli for 2 minutes, until the peanuts are golden.",
+        "Stir in the turmeric, then toss through the rice with the lemon juice and 1 tsp salt."
+      ],
+      "notes": [
+        "Food safety: rice must be cooled within an hour and kept below 5°C; eat within a day. For a packed lunch use an ice pack.",
+        "Contains peanuts."
+      ],
+      "nutrition": {
+        "kcal": 380,
+        "proteinG": 8,
+        "carbsG": 54,
+        "fatG": 14,
+        "fibreG": 3,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "curd-rice-south-indian-yoghurt-rice-with-cucumber",
+      "title": "Curd Rice (South Indian Yoghurt Rice with Cucumber)",
+      "summary": "Cooling rice stirred with yoghurt, tempered with mustard seeds and curry leaves, with cucumber and pomegranate on top.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 8,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3/4 cup white rice",
+            "1 cup greek yoghurt",
+            "1/4 cup milk",
+            "1 tbsp neutral oil",
+            "1 tsp mustard seeds",
+            "1 sprig curry leaf",
+            "1 tsp ginger, grated",
+            "1/2 cucumber, diced",
+            "2 tbsp pomegranate seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice in plenty of water for 15 minutes until very soft, drain and mash lightly. Cool for 10 minutes.",
+        "Stir through the yoghurt, milk and 1/2 tsp salt.",
+        "Heat the oil, add the mustard seeds until they pop, then the curry leaves and ginger for 30 seconds and pour over the rice.",
+        "Top with the cucumber and pomegranate."
+      ],
+      "notes": [
+        "Food safety: cool the rice within an hour and keep below 5°C. For a packed lunch use an ice pack, eat within 4 hours and do not reheat.",
+        "Contains milk."
+      ],
+      "nutrition": {
+        "kcal": 480,
+        "proteinG": 16,
+        "carbsG": 70,
+        "fatG": 14,
+        "fibreG": 2,
+        "sodiumMg": 420
+      }
+    },
+    {
+      "id": "egg-bhurji-on-buttered-toast-indian-spiced-scrambled-eggs",
+      "title": "Egg Bhurji on Buttered Toast (Indian Spiced Scrambled Eggs)",
+      "summary": "Soft scrambled eggs cooked with onion, tomato, chilli and turmeric, served on buttery toast in under 15 minutes.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 8,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 egg",
+            "1 brown onion, finely diced",
+            "1 tomato, diced",
+            "1 green chilli, minced",
+            "1/2 tsp ground turmeric",
+            "30g butter",
+            "4 white bread",
+            "2 tbsp coriander, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion, chilli and tomato in half the butter for 4 minutes, until soft. Stir in the turmeric.",
+        "Add the beaten eggs and stir gently for 2 minutes, until just set but still creamy.",
+        "Toast and butter the bread until golden, then spoon the eggs on top. Sprinkle with coriander."
+      ],
+      "notes": [
+        "Food safety: the eggs should be cooked until set, with no runny parts. Eat straight away.",
+        "Contains egg, milk and gluten."
+      ],
+      "nutrition": {
+        "kcal": 360,
+        "proteinG": 18,
+        "carbsG": 34,
+        "fatG": 16,
+        "fibreG": 3,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "jamaican-beef-patties-flaky-spiced-pastry-pockets",
+      "title": "Jamaican Beef Patties (Flaky Spiced Pastry Pockets)",
+      "summary": "Flaky pastry pockets of curried, thyme-scented beef with a little scotch bonnet heat, perfect for the lunchbox.",
+      "cuisine": "caribbean",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 35,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g beef mince",
+            "1 brown onion, finely diced",
+            "2 garlic clove, minced",
+            "1 tbsp curry powder",
+            "1 tsp dried thyme",
+            "1/2 tsp allspice",
+            "1/2 scotch bonnet, minced",
+            "1/2 cup breadcrumbs",
+            "1/2 cup water",
+            "2 sheet puff pastry",
+            "1 egg, beaten"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the beef with the onion for 8 minutes, add the garlic, curry powder, thyme, allspice and scotch bonnet and cook for 2 minutes.",
+        "Add the water and breadcrumbs and simmer for 5 minutes, until thick. Season and cool completely.",
+        "Heat the oven to 200°C (180°C fan). Cut each pastry sheet into 3 rectangles, fill one half with the beef, fold over and crimp the edges with a fork.",
+        "Brush with the egg and bake for 20 minutes, until puffed and deep golden."
+      ],
+      "notes": [
+        "Food safety: the beef must reach 75°C before it is cooled and filled, and the baked patties must be steaming hot in the middle. Cool within an hour; they keep 3 days in the fridge, and for a packed lunch use an ice pack and eat within 4 hours.",
+        "Contains egg and gluten."
+      ],
+      "nutrition": {
+        "kcal": 320,
+        "proteinG": 12,
+        "carbsG": 22,
+        "fatG": 20,
+        "fibreG": 1,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "cuban-picadillo-bowl-with-rice-olives-and-raisins",
+      "title": "Cuban Picadillo Bowl (with Rice, Olives and Raisins)",
+      "summary": "Savoury-sweet beef simmered with tomato, olives and raisins, served over rice, a make-ahead lunch that reheats well.",
+      "cuisine": "caribbean",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g beef mince",
+            "1 brown onion, diced",
+            "1 capsicum, diced",
+            "3 garlic clove, minced",
+            "1 tbsp olive oil",
+            "1 tsp ground cumin",
+            "1 tsp dried oregano",
+            "1 can tinned tomatoes",
+            "1/3 cup green olive, sliced",
+            "1/4 cup raisins",
+            "1 cup white rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion and capsicum in the oil for 5 minutes, add the beef and brown for 8 minutes, breaking it up, until no pink remains.",
+        "Stir in the garlic, spices, tomatoes, olives and raisins and simmer for 15 minutes, until thick and the beef reaches 75°C.",
+        "Meanwhile cook the rice per the packet until tender.",
+        "Serve the picadillo over the rice."
+      ],
+      "notes": [
+        "Food safety: beef mince must reach 75°C. Cool within an hour; keeps 3 days in the fridge and freezes well. Reheat until steaming hot.",
+        "For a packed lunch use an ice pack and eat within 4 hours."
+      ],
+      "nutrition": {
+        "kcal": 570,
+        "proteinG": 30,
+        "carbsG": 57,
+        "fatG": 23,
+        "fibreG": 4,
+        "sodiumMg": 800
+      }
+    },
+    {
+      "id": "meatball-subs-with-marinara-and-melted-mozzarella",
+      "title": "Meatball Subs (with Marinara and Melted Mozzarella)",
+      "summary": "Tender beef meatballs in tangy marinara, piled into toasted rolls and grilled under melted mozzarella.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "500g beef mince",
+            "1/2 cup breadcrumbs",
+            "1 egg",
+            "2 garlic clove, minced",
+            "1 tsp dried oregano",
+            "2 cup marinara",
+            "4 bread roll",
+            "150g mozzarella, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the mince, breadcrumbs, egg, garlic, oregano and 1 tsp salt and roll into 16 balls. Bake at 200°C (180°C fan) for 12 minutes, until browned.",
+        "Simmer the meatballs in the marinara for 10 minutes, until they reach 75°C in the centre.",
+        "Split the rolls, fill with meatballs and sauce, top with the cheese and grill for 3 minutes, until bubbling."
+      ],
+      "notes": [
+        "Food safety: meatballs must reach 75°C with no pink. Refrigerate leftovers within an hour and reheat until steaming hot.",
+        "Contains egg, milk and gluten."
+      ],
+      "nutrition": {
+        "kcal": 650,
+        "proteinG": 41,
+        "carbsG": 51,
+        "fatG": 28,
+        "fibreG": 4,
+        "sodiumMg": 1300
+      }
+    },
+    {
+      "id": "steak-sandwich-with-caramelised-onion-and-rocket",
+      "title": "Steak Sandwich (with Caramelised Onion and Rocket)",
+      "summary": "Seared sirloin sliced over sweet onions, mustard mayo and rocket in a toasted crusty roll, a pub-style lunch.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g beef sirloin",
+            "1 tbsp neutral oil",
+            "1 brown onion, sliced",
+            "1 crusty bread, halved and split",
+            "2 tbsp mayonnaise",
+            "1 tsp dijon mustard",
+            "1 cup rocket"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion in half the oil over medium heat for 15 minutes, until soft and caramelised. Remove.",
+        "Season the steak and sear in the remaining oil for 3 minutes each side for medium, until browned with a core of 60°C. Rest for 5 minutes and slice thinly.",
+        "Toast the bread until crisp, spread with the mayonnaise and mustard and fill with the onions, steak and rocket."
+      ],
+      "notes": [
+        "Food safety: whole steaks may be eaten medium once seared on the outside. For a packed lunch keep chilled with an ice pack and eat within 4 hours; cook the steak through if serving to anyone vulnerable.",
+        "Contains egg and gluten."
+      ],
+      "nutrition": {
+        "kcal": 660,
+        "proteinG": 44,
+        "carbsG": 56,
+        "fatG": 30,
+        "fibreG": 4,
+        "sodiumMg": 950
+      }
+    },
+    {
+      "id": "chicken-club-sandwich-with-bacon-and-tomato",
+      "title": "Chicken Club Sandwich (with Bacon and Tomato)",
+      "summary": "A triple-decker of seared chicken, crisp bacon, tomato and lettuce with mayonnaise, a diner classic.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g chicken breast, butterflied",
+            "1 tbsp neutral oil",
+            "4 rashers bacon",
+            "6 white bread, toasted",
+            "3 tbsp mayonnaise",
+            "1 tomato, sliced",
+            "4 lettuce leaf"
+          ]
+        }
+      ],
+      "steps": [
+        "Season the chicken and sear in the oil for 6 minutes each side, until cooked through to 75°C. Rest, then slice.",
+        "Cook the bacon in a dry pan for 6 minutes, until crisp.",
+        "Toast the bread until golden and spread with mayonnaise. Layer chicken, lettuce and tomato on two slices, add a second slice, then the bacon and the remaining slices.",
+        "Secure with picks, halve and serve."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C and bacon must be cooked right through. For a packed lunch keep chilled with an ice pack and eat within 4 hours.",
+        "Contains egg and gluten."
+      ],
+      "nutrition": {
+        "kcal": 690,
+        "proteinG": 48,
+        "carbsG": 45,
+        "fatG": 35,
+        "fibreG": 3,
+        "sodiumMg": 1500
+      }
+    },
+    {
+      "id": "open-prawn-smorrebrod-on-rye-with-dill-and-egg",
+      "title": "Open Prawn Smorrebrod (on Rye with Dill and Egg)",
+      "summary": "Buttered rye topped with cooked prawns, egg, cucumber and dill mayonnaise, a Danish open sandwich.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 9,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "pescatarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 rye bread",
+            "20g butter, softened",
+            "200g cooked prawn",
+            "2 egg",
+            "2 tbsp mayonnaise",
+            "2 tbsp dill, chopped",
+            "1 lemon, juiced",
+            "1/2 cucumber, thinly sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the eggs for 9 minutes until hard, cool in cold water, peel and slice.",
+        "Mix the mayonnaise with half the dill and a squeeze of lemon.",
+        "Butter the rye, layer on the cucumber, egg and prawns until generously covered, and spoon over the mayonnaise. Finish with the remaining dill and lemon."
+      ],
+      "notes": [
+        "Food safety: cooked prawns and egg must stay below 5°C; use within a day of cooking and eat within 4 hours at room temperature. For a packed lunch pack separately with an ice pack.",
+        "Contains crustacean, egg, milk and gluten."
+      ],
+      "nutrition": {
+        "kcal": 540,
+        "proteinG": 34,
+        "carbsG": 36,
+        "fatG": 26,
+        "fibreG": 6,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "sloppy-joes-with-capsicum-on-toasted-buns",
+      "title": "Sloppy Joes (with Capsicum on Toasted Buns)",
+      "summary": "Saucy, sweet-tangy beef mince with capsicum piled into toasted burger buns, a quick American lunch.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g beef mince",
+            "1 brown onion, diced",
+            "1 capsicum, diced",
+            "2 garlic clove, minced",
+            "2 tbsp tomato paste",
+            "1/2 cup tomato sauce",
+            "1 tbsp worcestershire sauce",
+            "1 tbsp brown sugar",
+            "1 tbsp yellow mustard",
+            "4 burger bun"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the beef with the onion and capsicum for 10 minutes, breaking it up, until no pink remains.",
+        "Add the garlic, paste, tomato sauce, Worcestershire, sugar, mustard and 1/4 cup water and simmer for 8 minutes, until thick and the beef reaches 75°C.",
+        "Toast the buns until golden and pile on the filling."
+      ],
+      "notes": [
+        "Food safety: beef mince must reach 75°C. Refrigerate leftovers within an hour; for a packed lunch pack the filling in an insulated container, eat within 4 hours, or reheat until steaming hot.",
+        "Contains gluten, fish (Worcestershire) and milk may be in buns."
+      ],
+      "nutrition": {
+        "kcal": 510,
+        "proteinG": 30,
+        "carbsG": 48,
+        "fatG": 20,
+        "fibreG": 3,
+        "sodiumMg": 1100
+      }
+    }
+  ]
+}
