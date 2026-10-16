@@ -1,0 +1,1036 @@
+{
+  "about": "House recipes, batch 04 (slice B): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "embutido-filipino-baked-pork-meatloaf-with-sweet-pickle",
+      "title": "Embutido Filipino Baked Pork Meatloaf with Sweet Pickle",
+      "summary": "A baked pork loaf with carrot, raisins and a boiled egg centre, sliced and served with rice.",
+      "cuisine": "filipino",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 60,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g minced pork",
+            "1 carrot, grated",
+            "1/4 cup raisins",
+            "1/2 cup breadcrumbs",
+            "3 eggs",
+            "2 tbsp soy sauce",
+            "1 tsp ground pepper",
+            "1 tbsp tomato sauce",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil 2 eggs for 9 minutes, cool and peel.",
+        "Mix the pork, carrot, raisins, breadcrumbs, remaining egg, soy sauce, pepper and 1/2 tsp salt.",
+        "Press half the mixture into a lined loaf tin, lay in the boiled eggs, then cover with the rest.",
+        "Bake at 180°C for 50 minutes until firm and browned, brushing with tomato sauce for the last 10.",
+        "Cook the rice until tender and fluffy, rest the loaf 10 minutes, slice and serve."
+      ],
+      "notes": [
+        "Food safety: cook the pork loaf until it reaches 75°C in the centre, and hard-boil the eggs. Contains egg. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 568,
+        "proteinG": 32,
+        "carbsG": 64,
+        "fatG": 20,
+        "fibreG": 2,
+        "sodiumMg": 750
+      }
+    },
+    {
+      "id": "pochero-filipino-chicken-and-banana-tomato-stew",
+      "title": "Pochero Filipino Chicken and Banana Tomato Stew",
+      "summary": "A mild tomato stew with chicken, chickpeas, potatoes and green beans served over rice.",
+      "cuisine": "filipino",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g chicken drumsticks",
+            "400g canned chickpeas, drained",
+            "2 potatoes, quartered",
+            "1 cup green beans, trimmed",
+            "1 onion, sliced",
+            "3 cloves garlic, minced",
+            "400g canned crushed tomatoes",
+            "1 tbsp fish sauce",
+            "1 tbsp vegetable oil",
+            "1 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onion and garlic in the oil for 4 minutes, then brown the chicken for 6 minutes.",
+        "Add the tomatoes, fish sauce, potatoes, chickpeas and 1 cup water and simmer covered for 25 minutes until the potato is tender.",
+        "Add the beans for 5 minutes until just tender.",
+        "Cook the rice until tender and fluffy, and serve with the stew."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C near the bone. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 610,
+        "proteinG": 38,
+        "carbsG": 78,
+        "fatG": 14,
+        "fibreG": 10,
+        "sodiumMg": 750
+      }
+    },
+    {
+      "id": "paksiw-na-isda-filipino-vinegar-poached-fish-with-ginger",
+      "title": "Paksiw na Isda Filipino Vinegar-Poached Fish with Ginger",
+      "summary": "White fish gently simmered with vinegar, ginger, garlic and green chilli, served with rice.",
+      "cuisine": "filipino",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g white fish fillet, cut in pieces",
+            "1/3 cup white vinegar",
+            "1 tbsp fresh ginger, sliced",
+            "4 cloves garlic, crushed",
+            "1 onion, sliced",
+            "2 green chillies",
+            "1 tsp ground pepper",
+            "1 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Layer the onion, ginger, garlic and chillies in a wide pan.",
+        "Add the fish, vinegar, 1/2 cup water, pepper and 1/2 tsp salt and bring to a boil without stirring until bubbling.",
+        "Simmer covered for 12 minutes until the fish is opaque and flakes.",
+        "Cook the rice until tender and fluffy, and serve with the fish and pan juices."
+      ],
+      "notes": [
+        "Food safety: cook the fish until opaque and it reaches 63°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 360,
+        "proteinG": 32,
+        "carbsG": 48,
+        "fatG": 4,
+        "fibreG": 2,
+        "sodiumMg": 500
+      }
+    },
+    {
+      "id": "escabeche-filipino-sweet-and-sour-fried-fish-with-vegetables",
+      "title": "Escabeche Filipino Sweet and Sour Fried Fish with Vegetables",
+      "summary": "Crisp fried fish topped with a sweet-sour sauce of capsicum, carrot and ginger, served with rice.",
+      "cuisine": "filipino",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g white fish fillet",
+            "1/2 cup plain flour",
+            "1/2 cup vegetable oil",
+            "1 capsicum, sliced",
+            "1 carrot, cut in thin sticks",
+            "1 tbsp fresh ginger, cut in thin sticks",
+            "1/3 cup white vinegar",
+            "3 tbsp brown sugar",
+            "1 tbsp cornflour",
+            "1 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Dust the fish in flour and salt, then fry 4 minutes each side until golden and cooked through.",
+        "Cook the rice until tender and fluffy.",
+        "Simmer the vinegar, sugar, ginger, carrot and 1/2 cup water for 4 minutes, then add the capsicum and cornflour mixed with 2 tbsp water, and stir until glossy.",
+        "Pour over the fish and serve with the rice."
+      ],
+      "notes": [
+        "Food safety: cook the fish until opaque and it reaches 63°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 610,
+        "proteinG": 34,
+        "carbsG": 72,
+        "fatG": 20,
+        "fibreG": 3,
+        "sodiumMg": 500
+      }
+    },
+    {
+      "id": "mechado-filipino-braised-beef-in-tomato-and-soy",
+      "title": "Mechado Filipino Braised Beef in Tomato and Soy",
+      "summary": "Beef braised until fall-apart with potatoes, carrots and a tangy tomato-soy sauce, served with rice.",
+      "cuisine": "filipino",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 105,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g beef chuck, cubed",
+            "2 potatoes, quartered",
+            "2 carrots, chunked",
+            "1 onion, chopped",
+            "4 cloves garlic, minced",
+            "400g canned crushed tomatoes",
+            "3 tbsp soy sauce",
+            "1 tbsp lemon juice",
+            "1 bay leaf",
+            "2 tbsp vegetable oil",
+            "1 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the beef in the oil in batches for 10 minutes, then fry the onion and garlic for 4 minutes.",
+        "Add the tomatoes, soy sauce, lemon juice, bay leaf and 2 cups water and simmer covered for 1 hour 15 minutes until the beef is tender.",
+        "Add the potatoes and carrots and cook for 20 minutes until soft.",
+        "Cook the rice until tender and fluffy, and serve with the beef."
+      ],
+      "notes": [
+        "Food safety: cook the beef until it reaches 75°C and is tender. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 666,
+        "proteinG": 44,
+        "carbsG": 66,
+        "fatG": 24,
+        "fibreG": 5,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "waakye-ghanaian-rice-and-beans-with-egg-and-tomato-stew",
+      "title": "Waakye Ghanaian Rice and Beans with Egg and Tomato Stew",
+      "summary": "Rice and black-eyed beans cooked together, served with boiled eggs and a spicy tomato stew.",
+      "cuisine": "west-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 50,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup basmati rice",
+            "400g canned black-eyed peas, drained",
+            "4 eggs",
+            "4 tomatoes, chopped",
+            "1 onion, chopped",
+            "2 cloves garlic, minced",
+            "1 tsp chilli powder",
+            "2 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the rice and peas together with 2 cups water and 1/2 tsp salt covered for 18 minutes until tender.",
+        "Boil the eggs for 9 minutes, cool and peel.",
+        "Fry the onion and garlic in the oil for 5 minutes, add the tomatoes and chilli and cook for 15 minutes until thick.",
+        "Serve the rice and beans with the stew and halved eggs."
+      ],
+      "notes": [
+        "Food safety: hard-boil the eggs until the yolk is firm. Contains egg. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 502,
+        "proteinG": 20,
+        "carbsG": 74,
+        "fatG": 12,
+        "fibreG": 9,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "efo-riro-nigerian-spinach-stew-with-chicken",
+      "title": "Efo Riro Nigerian Spinach Stew with Chicken",
+      "summary": "Chicken in a rich pepper and spinach stew with onions, served with rice.",
+      "cuisine": "west-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g chicken drumsticks",
+            "400g frozen spinach, thawed",
+            "2 capsicums, chopped",
+            "2 tomatoes, chopped",
+            "1 onion, chopped",
+            "1 tsp chilli powder",
+            "3 tbsp vegetable oil",
+            "1 cup basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Blend the capsicums, tomatoes, half the onion and chilli powder.",
+        "Simmer the chicken in water with the remaining onion and salt for 20 minutes until cooked through.",
+        "Fry the blended sauce in the oil for 12 minutes until reduced and the oil rises.",
+        "Add the squeezed spinach, chicken and 1/2 cup stock and simmer for 5 minutes.",
+        "Cook the rice until tender and fluffy, and serve with the stew."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C near the bone. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 602,
+        "proteinG": 38,
+        "carbsG": 60,
+        "fatG": 22,
+        "fibreG": 6,
+        "sodiumMg": 550
+      }
+    },
+    {
+      "id": "poulet-dg-cameroonian-chicken-with-plantain-and-vegetables",
+      "title": "Poulet DG Cameroonian Chicken with Plantain and Vegetables",
+      "summary": "Pan-fried chicken in a tomato and herb sauce with fried plantain, carrots and green beans.",
+      "cuisine": "west-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g chicken pieces, bone-in",
+            "2 plantains, sliced",
+            "2 carrots, sliced",
+            "1 cup green beans, trimmed",
+            "2 tomatoes, chopped",
+            "1 onion, sliced",
+            "3 cloves garlic, minced",
+            "1 tbsp fresh ginger, grated",
+            "1 tsp dried thyme",
+            "1/2 cup vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the chicken in 2 tbsp oil for 10 minutes, then remove.",
+        "Fry the onion, garlic and ginger in the same pan for 5 minutes, add the tomatoes and thyme and cook 8 minutes.",
+        "Return the chicken with 1 cup water and the carrots and simmer covered for 20 minutes until cooked through, adding the beans for 5.",
+        "Fry the plantain in the remaining oil for 3 minutes each side until golden, and serve on the side."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C near the bone. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 648,
+        "proteinG": 40,
+        "carbsG": 56,
+        "fatG": 28,
+        "fibreG": 6,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "domoda-gambian-peanut-butter-stew-with-sweet-potato-and-rice",
+      "title": "Domoda Gambian Peanut Butter Stew with Sweet Potato and Rice",
+      "summary": "A smooth peanut and tomato stew with chicken and sweet potato, served with rice.",
+      "cuisine": "west-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g chicken thighs, boneless, cubed",
+            "2 sweet potatoes, cubed",
+            "1/2 cup peanut butter",
+            "2 tbsp tomato paste",
+            "1 onion, chopped",
+            "2 cloves garlic, minced",
+            "1 tbsp vegetable oil",
+            "1 cup basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onion and garlic in the oil for 5 minutes, add the chicken and brown 5 minutes.",
+        "Stir the peanut butter and tomato paste into 3 cups water and add with the sweet potato and 1/2 tsp salt.",
+        "Simmer for 20 minutes until the chicken is cooked through and the sauce thick.",
+        "Cook the rice until tender and fluffy, and serve with the stew."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C. Contains peanuts. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 704,
+        "proteinG": 40,
+        "carbsG": 70,
+        "fatG": 28,
+        "fibreG": 6,
+        "sodiumMg": 500
+      }
+    },
+    {
+      "id": "durban-chicken-curry-with-potatoes-and-roti",
+      "title": "Durban Chicken Curry with Potatoes and Roti",
+      "summary": "A fragrant Durban-style chicken curry with potato, served with flatbread.",
+      "cuisine": "south-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g chicken pieces, bone-in",
+            "2 potatoes, quartered",
+            "2 onions, chopped",
+            "3 tomatoes, chopped",
+            "3 cloves garlic, minced",
+            "1 tbsp fresh ginger, grated",
+            "2 tbsp curry powder",
+            "2 tbsp vegetable oil",
+            "4 flatbreads"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onions in the oil for 8 minutes, add the garlic, ginger and curry powder for 1 minute.",
+        "Add the tomatoes and chicken and cook 8 minutes, then add the potatoes and 1 cup water.",
+        "Simmer covered 25 minutes until the chicken is cooked and the potato tender.",
+        "Warm the flatbreads and serve with the curry."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C near the bone. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 634,
+        "proteinG": 42,
+        "carbsG": 60,
+        "fatG": 24,
+        "fibreG": 5,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "pap-en-wors-south-african-maize-porridge-with-sausage-and-tomato-relish",
+      "title": "Pap en Wors South African Maize Porridge with Sausage and Tomato Relish",
+      "summary": "Grilled sausages with soft polenta-style pap and a quick tomato and onion gravy.",
+      "cuisine": "south-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g pork sausages",
+            "1 cup polenta",
+            "2 tomatoes, chopped",
+            "1 onion, sliced",
+            "1 tbsp tomato paste",
+            "1 tsp sugar",
+            "1 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Bring 4 cups water and 1/2 tsp salt to a boil and whisk in the polenta, then cook on low for 20 minutes until thick, stirring often.",
+        "Fry the onion in the oil for 5 minutes, add the tomatoes, paste and sugar and simmer for 10 minutes until saucy.",
+        "Grill or pan-fry the sausages for 12 minutes, turning, until browned and cooked through.",
+        "Serve the sausages on the pap with the relish."
+      ],
+      "notes": [
+        "Food safety: cook the sausages until they reach 75°C in the centre. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 594,
+        "proteinG": 24,
+        "carbsG": 46,
+        "fatG": 34,
+        "fibreG": 4,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "mishkaki-swahili-marinated-beef-skewers-with-coconut-rice",
+      "title": "Mishkaki Swahili Marinated Beef Skewers with Coconut Rice",
+      "summary": "Tender beef skewers marinated with garlic, lemon and paprika, grilled and served with coconut rice.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g beef sirloin, cubed",
+            "3 cloves garlic, minced",
+            "1 tbsp fresh ginger, grated",
+            "1 lemon",
+            "2 tsp paprika",
+            "1 tsp ground cumin",
+            "2 tbsp vegetable oil",
+            "1 cup basmati rice",
+            "1/2 cup coconut milk"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the beef with the garlic, ginger, lemon juice, spices, oil and 1 tsp salt.",
+        "Cook the rice with the coconut milk and 1 cup water until tender and fluffy.",
+        "Thread the beef onto skewers and grill for 10 minutes, turning, until charred and cooked through.",
+        "Serve with the coconut rice."
+      ],
+      "notes": [
+        "Food safety: cook the beef until it reaches 75°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 612,
+        "proteinG": 42,
+        "carbsG": 56,
+        "fatG": 24,
+        "fibreG": 2,
+        "sodiumMg": 500
+      }
+    },
+    {
+      "id": "firfir-ethiopian-shredded-injera-in-spiced-beef-sauce",
+      "title": "Firfir Ethiopian Shredded Injera in Spiced Beef Sauce",
+      "summary": "Torn flatbread soaked in a spicy beef and tomato sauce, a hearty Ethiopian breakfast-or-dinner plate.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g beef chuck, diced",
+            "4 flatbreads, torn",
+            "2 onions, chopped",
+            "3 tomatoes, chopped",
+            "3 cloves garlic, minced",
+            "1 tbsp fresh ginger, grated",
+            "2 tsp paprika",
+            "1 tsp chilli powder",
+            "1/2 tsp ground cardamom",
+            "3 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onions dry for 8 minutes, add the oil, garlic, ginger and spices and cook for 2 minutes.",
+        "Add the beef, tomatoes and 1 cup water and simmer covered for 30 minutes until the beef is tender.",
+        "Fold the torn flatbread through for 2 minutes until it absorbs the sauce."
+      ],
+      "notes": [
+        "Food safety: cook the beef until it reaches 75°C and is tender. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 558,
+        "proteinG": 36,
+        "carbsG": 52,
+        "fatG": 22,
+        "fibreG": 4,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "beef-sambusa-somali-spiced-pastry-pockets-with-lime-yoghurt",
+      "title": "Beef Sambusa Somali Spiced Pastry Pockets with Lime Yoghurt",
+      "summary": "Crisp baked pastry triangles filled with spiced beef, onion and coriander.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 40,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "12 spring roll wrappers",
+            "400g minced beef",
+            "1 onion, finely chopped",
+            "2 cloves garlic, minced",
+            "1 tsp ground cumin",
+            "1 tsp ground coriander",
+            "1/4 cup fresh coriander, chopped",
+            "2 tbsp vegetable oil",
+            "1 cup plain yoghurt",
+            "1 lime"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onion, garlic and beef in 1 tbsp oil for 10 minutes until cooked through, then add the spices, salt and coriander and cool.",
+        "Fold the wrappers around a spoonful of filling into triangles, sealing with water.",
+        "Brush with the remaining oil and bake at 200°C for 15 minutes until crisp and golden.",
+        "Stir lime juice into the yoghurt and serve alongside."
+      ],
+      "notes": [
+        "Food safety: cook the beef filling until it reaches 75°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 440,
+        "proteinG": 28,
+        "carbsG": 36,
+        "fatG": 20,
+        "fibreG": 2,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "kenyan-grilled-tilapia-style-fish-with-tomato-salsa-and-ugali",
+      "title": "Kenyan Grilled Tilapia-Style Fish with Tomato Salsa and Ugali",
+      "summary": "Whole-style white fish grilled with chilli and lemon, served with a tomato and onion salsa and maize porridge.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g white fish fillet",
+            "1 lemon",
+            "2 cloves garlic, minced",
+            "1 tsp chilli powder",
+            "2 tbsp vegetable oil",
+            "2 tomatoes, diced",
+            "1 red onion, finely sliced",
+            "1 cup polenta"
+          ]
+        }
+      ],
+      "steps": [
+        "Rub the fish with the lemon juice, garlic, chilli, oil and 1/2 tsp salt.",
+        "Bring 3 cups water to a boil, whisk in the polenta and stir over low heat for 15 minutes until thick and stiff.",
+        "Grill the fish for 4 minutes each side until opaque and flaking.",
+        "Mix the tomatoes, onion and a pinch of salt for the salsa and serve all together."
+      ],
+      "notes": [
+        "Food safety: cook the fish until opaque and it reaches 63°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 458,
+        "proteinG": 38,
+        "carbsG": 48,
+        "fatG": 12,
+        "fibreG": 3,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "ethiopian-fasting-plate-with-gomen-greens-and-spiced-lentils",
+      "title": "Ethiopian Fasting Plate with Gomen Greens and Spiced Lentils",
+      "summary": "A vegan Ethiopian plate of collard-style greens and spiced red lentils with flatbread.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup red lentils",
+            "500g silverbeet, shredded",
+            "2 onions, finely chopped",
+            "3 cloves garlic, minced",
+            "1 tbsp fresh ginger, grated",
+            "1 tsp paprika",
+            "1 tsp ground turmeric",
+            "3 tbsp vegetable oil",
+            "4 flatbreads"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook one onion dry for 6 minutes, add 1 tbsp oil, garlic, paprika and turmeric for 1 minute.",
+        "Add the lentils and 3 cups water and simmer 20 minutes until soft and thick.",
+        "Soften the other onion and ginger in the remaining oil for 5 minutes, add the silverbeet and 1/2 cup water and cook for 12 minutes until tender.",
+        "Serve both with the flatbreads."
+      ],
+      "nutrition": {
+        "kcal": 570,
+        "proteinG": 20,
+        "carbsG": 84,
+        "fatG": 14,
+        "fibreG": 14,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "laulau-hawaiian-pork-and-silverbeet-parcels-with-rice",
+      "title": "Laulau Hawaiian Pork and Silverbeet Parcels with Rice",
+      "summary": "Pork wrapped in silverbeet leaves and steamed slowly until silky, served with rice.",
+      "cuisine": "pacific-islands",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 120,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g pork shoulder, cubed",
+            "8 large silverbeet leaves",
+            "2 tbsp soy sauce",
+            "1 tsp salt",
+            "1 tbsp fresh ginger, grated",
+            "1 1/2 cups jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the pork with the soy sauce, salt and ginger.",
+        "Wrap a portion of pork in 2 silverbeet leaves, then in foil, making 4 parcels.",
+        "Steam for 1 hour 45 minutes until the pork is tender and the leaves soft.",
+        "Cook the rice until tender and fluffy, and serve with the opened parcels."
+      ],
+      "notes": [
+        "Food safety: cook the pork until it reaches 75°C and is tender. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 620,
+        "proteinG": 38,
+        "carbsG": 66,
+        "fatG": 22,
+        "fibreG": 3,
+        "sodiumMg": 850
+      }
+    },
+    {
+      "id": "hawaiian-kalbi-short-ribs-with-pineapple-rice",
+      "title": "Hawaiian Kalbi Short Ribs with Pineapple Rice",
+      "summary": "Thin sliced beef short ribs in a sweet soy, garlic and pineapple marinade, grilled until caramelised.",
+      "cuisine": "pacific-islands",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g beef short ribs, thinly sliced",
+            "1/4 cup soy sauce",
+            "2 tbsp brown sugar",
+            "1/2 cup pineapple juice",
+            "4 cloves garlic, minced",
+            "1 tsp sesame oil",
+            "1 1/2 cups jasmine rice",
+            "1 cup canned pineapple pieces, drained"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the soy sauce, sugar, juice, garlic and sesame oil, and coat the ribs.",
+        "Cook the rice until tender and fluffy, then fold through the pineapple.",
+        "Grill the ribs over high heat for 3 minutes each side until charred and cooked through.",
+        "Serve the ribs with the rice."
+      ],
+      "notes": [
+        "Food safety: cook the beef until it reaches 75°C. Boil any marinade used on raw meat before serving. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 744,
+        "proteinG": 38,
+        "carbsG": 84,
+        "fatG": 28,
+        "fibreG": 2,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "sapasui-samoan-chicken-and-glass-noodle-stir-fry",
+      "title": "Sapasui Samoan Chicken and Glass Noodle Stir-Fry",
+      "summary": "A comforting Samoan noodle dish with chicken, carrot and soy, a family favourite.",
+      "cuisine": "pacific-islands",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g boneless chicken thighs, sliced",
+            "200g rice noodles",
+            "1 onion, sliced",
+            "2 carrots, cut in thin strips",
+            "3 cloves garlic, minced",
+            "1 tbsp fresh ginger, grated",
+            "3 tbsp soy sauce",
+            "1 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the noodles until soft, then drain and cut shorter.",
+        "Fry the onion, garlic and ginger in the oil for 4 minutes, add the chicken and cook for 6 minutes until cooked through.",
+        "Add the carrots, soy sauce and 1 cup water and simmer for 5 minutes until the carrots are tender.",
+        "Toss the noodles through for 2 minutes until they absorb the sauce."
+      ],
+      "notes": [
+        "Food safety: cook the chicken until it reaches 75°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 476,
+        "proteinG": 32,
+        "carbsG": 58,
+        "fatG": 12,
+        "fibreG": 4,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "puaka-tunu-tongan-roast-pork-with-coconut-sweet-potato",
+      "title": "Puaka Tunu Tongan Roast Pork with Coconut Sweet Potato",
+      "summary": "Slow-roasted pork shoulder with garlic and salt, served with sweet potato simmered in coconut milk.",
+      "cuisine": "pacific-islands",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 90,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1kg pork shoulder, in one piece",
+            "4 cloves garlic, minced",
+            "500g sweet potato, cubed",
+            "400ml coconut milk",
+            "1 onion, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Rub the pork with the garlic and 2 tsp salt and roast at 160°C for 1 hour 30 minutes until tender, then rest for 10 minutes.",
+        "Simmer the sweet potato, onion, coconut milk and 1/2 cup water for 25 minutes until the sweet potato is soft.",
+        "Slice the pork and serve with the sweet potato."
+      ],
+      "notes": [
+        "Food safety: cook the pork until it reaches 75°C and is tender. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 670,
+        "proteinG": 42,
+        "carbsG": 38,
+        "fatG": 38,
+        "fibreG": 4,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "manapua-hawaiian-steamed-char-siu-pork-buns",
+      "title": "Manapua Hawaiian Steamed Char Siu Pork Buns",
+      "summary": "Soft steamed buns stuffed with sticky sweet roast pork, a Hawaiian plate-lunch classic.",
+      "cuisine": "pacific-islands",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 45,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cups plain flour",
+            "1 tsp instant yeast",
+            "1 tbsp sugar",
+            "400g pork shoulder, diced small",
+            "3 tbsp hoisin sauce",
+            "1 tbsp soy sauce",
+            "1 tbsp honey",
+            "2 tsp cornflour",
+            "1 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Knead the flour, yeast, sugar and 3/4 cup warm water, then rise for 1 hour until doubled.",
+        "Brown the pork in the oil for 6 minutes, add the hoisin, soy sauce, honey and 1/3 cup water and simmer 25 minutes until tender.",
+        "Stir the cornflour with 1 tbsp water in and simmer until thick, then cool.",
+        "Divide the dough into 8, fill and seal.",
+        "Steam for 15 minutes until puffed and firm."
+      ],
+      "notes": [
+        "Food safety: cook the pork until it reaches 75°C. Refrigerate leftovers within 1 hour."
+      ],
+      "nutrition": {
+        "kcal": 466,
+        "proteinG": 24,
+        "carbsG": 64,
+        "fatG": 12,
+        "fibreG": 3,
+        "sodiumMg": 650
+      }
+    }
+  ]
+}
