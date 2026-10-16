@@ -62,3 +62,6 @@ The 15 tag additions in the compact file (e.g. dosa no-gluten, karahi no-dairy) 
 - New smaller chunks s01..s28 (15 rows each, compact rows 91-506, fit one tool output). Next: s02. Do NOT use u04..u17 (they overlap s-series; s01 covers part of u04).
 - Remaining: s02..s28 (updates), i01..i11 (inserts; 12 rows is ~41KB, too big for one output: split to ~4-6 rows before applying).
 - Published count now: see Telegram report (before 592, inserts not yet applied).
+
+### Progress, session 3 (17 Oct, helper via MCP)
+- Done: s02, s03, s04, s05 (15/15 each). Next: s06 onward (s06..s28), then i01..i11 (split to ~5 rows). Inserts not started; no errors.
