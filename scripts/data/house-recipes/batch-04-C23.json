@@ -1,0 +1,1476 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "filipino-tapsilog-beef-and-garlic-rice",
+      "title": "Filipino Tapsilog Beef and Garlic Rice",
+      "summary": "Thin soy and calamansi-style marinated beef with garlic fried rice and a fried egg, the classic silog plate.",
+      "cuisine": "filipino",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g beef sirloin, sliced very thin",
+            "3 tbsp soy sauce",
+            "2 tbsp lemon juice",
+            "1 tsp sugar",
+            "1/2 tsp black pepper",
+            "4 garlic cloves, minced",
+            "3 cups cooked rice, cold",
+            "2 tbsp vegetable oil",
+            "4 eggs",
+            "1 tomato, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the beef with the soy sauce, lemon juice, sugar, pepper and half the garlic, then leave to marinate for 30 minutes.",
+        "Fry the remaining garlic in 1 tbsp oil for 1 minute until golden, add the rice and toss for 4 minutes until hot and lightly toasted.",
+        "Fry the beef in a hot pan in two batches for 3 minutes each, until browned and cooked through at 71°C.",
+        "Fry the eggs in the remaining oil for 3 minutes until the whites are set.",
+        "Serve the rice with the beef, an egg and sliced tomato on each plate."
+      ],
+      "notes": [
+        "Food safety: cook the beef slices right through and the egg whites until fully set; cook the yolks through for anyone vulnerable. Cool leftover rice within an hour and refrigerate it, eating it within a day."
+      ],
+      "nutrition": {
+        "kcal": 542,
+        "proteinG": 33,
+        "carbsG": 52,
+        "fatG": 22,
+        "fibreG": 2,
+        "sodiumMg": 900
+      }
+    },
+    {
+      "id": "filipino-longsilog-sausage-and-egg-breakfast",
+      "title": "Filipino Longsilog Sausage and Egg Breakfast",
+      "summary": "Sweet garlicky pork sausages with garlic rice, a fried egg and a quick vinegar dip.",
+      "cuisine": "filipino",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 small pork sausages",
+            "3 cups cooked rice, cold",
+            "4 garlic cloves, minced",
+            "2 tbsp vegetable oil",
+            "4 eggs",
+            "3 tbsp white vinegar",
+            "1 small red onion, finely diced",
+            "1/2 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the sausages in a pan with a splash of water over medium heat for 12 minutes, turning, until browned and cooked through at 75°C.",
+        "Fry the garlic in half the oil for 1 minute until golden, add the rice and stir-fry for 4 minutes until hot.",
+        "Fry the eggs in the remaining oil for 3 minutes until the whites are set.",
+        "Mix the vinegar, onion and pepper for the dipping sauce.",
+        "Plate the rice with the sausages and eggs and serve with the dip."
+      ],
+      "notes": [
+        "Food safety: cook the sausages until 75°C in the centre and the egg whites fully set; cook the yolks through for anyone vulnerable. Cool leftover rice and refrigerate it within an hour."
+      ],
+      "nutrition": {
+        "kcal": 682,
+        "proteinG": 30,
+        "carbsG": 54,
+        "fatG": 38,
+        "fibreG": 2,
+        "sodiumMg": 1100
+      }
+    },
+    {
+      "id": "filipino-ginataang-kalabasa-pumpkin-in-coconut-milk",
+      "title": "Filipino Ginataang Kalabasa Pumpkin in Coconut Milk",
+      "summary": "Pumpkin and green beans simmered in coconut milk with garlic and ginger, creamy and lightly savoury.",
+      "cuisine": "filipino",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g pumpkin, cut in 3 cm cubes",
+            "1 can coconut milk (400ml)",
+            "1 brown onion, sliced",
+            "3 garlic cloves, minced",
+            "1 tbsp grated ginger",
+            "150g green beans, trimmed",
+            "1 tbsp fish sauce",
+            "1 tbsp vegetable oil",
+            "1/2 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion, garlic and ginger in the oil for 4 minutes until soft.",
+        "Add the pumpkin and coconut milk and simmer for 12 minutes until the pumpkin is tender.",
+        "Add the beans and fish sauce and cook for 4 minutes until the beans are bright and just tender.",
+        "Season with the pepper and serve with rice."
+      ],
+      "notes": [
+        "Swap the fish sauce for soy sauce to keep it plant-based."
+      ],
+      "nutrition": {
+        "kcal": 223,
+        "proteinG": 4,
+        "carbsG": 16,
+        "fatG": 15,
+        "fibreG": 4,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "south-african-bobotie-breakfast-muffins",
+      "title": "South African Bobotie Breakfast Muffins",
+      "summary": "Curried beef mince baked in muffin tins under a savoury egg custard, a handheld take on bobotie.",
+      "cuisine": "south-african",
+      "mealTypes": [
+        "breakfast",
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 6,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "400g beef mince",
+            "1 brown onion, finely diced",
+            "2 tsp curry powder",
+            "1 tsp ground turmeric",
+            "1 tbsp apricot jam",
+            "1 tbsp lemon juice",
+            "1 slice bread, soaked in 60ml milk",
+            "2 tbsp sultanas",
+            "1 tbsp vegetable oil",
+            "3 eggs",
+            "120ml milk",
+            "6 bay leaves"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C and grease a 6-hole muffin tin.",
+        "Cook the onion in the oil for 5 minutes, add the mince, curry powder and turmeric and cook for 8 minutes until browned.",
+        "Stir in the jam, lemon juice, sultanas and soaked bread, then press the mix into the muffin holes.",
+        "Whisk the eggs with the milk and pour over each muffin, then top with a bay leaf.",
+        "Bake for 20 minutes until the custard is set and golden, with the mince at 75°C."
+      ],
+      "notes": [
+        "Food safety: cook the mince until 75°C all the way through and the egg custard until fully set. Chill leftovers within 2 hours and reheat until steaming hot."
+      ],
+      "nutrition": {
+        "kcal": 289,
+        "proteinG": 20,
+        "carbsG": 18,
+        "fatG": 15,
+        "fibreG": 1,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "south-african-potjie-style-butternut-soup",
+      "title": "South African Potjie Style Butternut Soup",
+      "summary": "Butternut, carrot and apricot simmered in one pot with mild curry spice and blended smooth.",
+      "cuisine": "south-african",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g butternut pumpkin, peeled and cubed",
+            "1 carrot, diced",
+            "1 brown onion, chopped",
+            "2 garlic cloves, minced",
+            "1 tbsp vegetable oil",
+            "2 tsp mild curry powder",
+            "4 dried apricots, chopped",
+            "750ml vegetable stock",
+            "100ml coconut milk",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion and garlic in the oil for 5 minutes until soft, then stir in the curry powder for 1 minute until fragrant.",
+        "Add the pumpkin, carrot, apricots and stock and simmer for 22 minutes until all the vegetables are very soft.",
+        "Blend until smooth, then stir in the coconut milk and lemon juice.",
+        "Reheat gently for 2 minutes and serve hot."
+      ],
+      "notes": [
+        "Freezes well for up to 3 months."
+      ],
+      "nutrition": {
+        "kcal": 201,
+        "proteinG": 4,
+        "carbsG": 28,
+        "fatG": 7,
+        "fibreG": 5,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "south-african-boerewors-breakfast-roll",
+      "title": "South African Boerewors Breakfast Roll",
+      "summary": "Coiled spiced beef and pork sausage in a soft roll with fried onion and tomato relish.",
+      "cuisine": "south-african",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g thick beef sausages",
+            "4 soft bread rolls",
+            "1 brown onion, sliced",
+            "1 tbsp vegetable oil",
+            "4 tbsp tomato chutney",
+            "1 tomato, sliced",
+            "1 handful rocket"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the sausage in a pan over medium heat for 15 minutes, turning, until browned and cooked through at 75°C.",
+        "Fry the onion in the oil in a second pan for 8 minutes until soft and golden.",
+        "Split the rolls and spread with chutney.",
+        "Fill with the sausage cut in pieces, the onion, tomato and rocket."
+      ],
+      "notes": [
+        "Food safety: cook the sausage until 75°C in the centre with no pink inside."
+      ],
+      "nutrition": {
+        "kcal": 568,
+        "proteinG": 24,
+        "carbsG": 40,
+        "fatG": 34,
+        "fibreG": 3,
+        "sodiumMg": 1250
+      }
+    },
+    {
+      "id": "ethiopian-firfir-spiced-torn-flatbread",
+      "title": "Ethiopian Firfir Spiced Torn Flatbread",
+      "summary": "Torn flatbread soaked in a warm berbere-spiced tomato sauce, a classic Ethiopian morning dish.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 flatbreads (or large wraps), torn into pieces",
+            "2 tbsp vegetable oil",
+            "1 red onion, finely diced",
+            "3 garlic cloves, minced",
+            "1 tbsp grated ginger",
+            "2 tbsp chilli powder",
+            "1 tsp sweet paprika",
+            "2 tomatoes, chopped",
+            "250ml water",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion in a dry pan for 4 minutes, add the oil, garlic and ginger and cook for 2 minutes.",
+        "Stir in the chilli powder and paprika and tomatoes and simmer for 8 minutes until thick and glossy.",
+        "Add the water and salt and simmer for 3 minutes, until the sauce is loose and glossy.",
+        "Fold in the torn bread and toss for 2 minutes until it has soaked up the sauce."
+      ],
+      "notes": [
+        "Serve with a fried egg on top if you like."
+      ],
+      "nutrition": {
+        "kcal": 291,
+        "proteinG": 8,
+        "carbsG": 42,
+        "fatG": 9,
+        "fibreG": 5,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "ethiopian-azifa-green-lentil-salad",
+      "title": "Ethiopian Azifa Green Lentil Salad",
+      "summary": "Cold lentils dressed with mustard, lemon and chilli, a zesty fasting-day salad.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g brown lentils, rinsed",
+            "1 red onion, finely diced",
+            "1 green chilli, finely chopped",
+            "3 tbsp lemon juice",
+            "1 tbsp Dijon mustard",
+            "2 tbsp olive oil",
+            "1 tbsp grated ginger",
+            "1 small bunch parsley, chopped",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the lentils in plenty of water for 20 minutes until tender but holding their shape, then drain and cool.",
+        "Whisk the lemon juice, mustard, oil, ginger and salt.",
+        "Toss the lentils with the onion, chilli, parsley and dressing.",
+        "Chill for 15 minutes before serving."
+      ],
+      "notes": [
+        "Keeps in the fridge for 3 days."
+      ],
+      "nutrition": {
+        "kcal": 273,
+        "proteinG": 15,
+        "carbsG": 32,
+        "fatG": 7,
+        "fibreG": 11,
+        "sodiumMg": 340
+      }
+    },
+    {
+      "id": "peruvian-huancaina-sauce-for-potatoes",
+      "title": "Peruvian Huancaina Sauce for Potatoes",
+      "summary": "Creamy yellow chilli and cheese sauce that is spooned over boiled potatoes and egg.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "lunch",
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g feta",
+            "2 slices white bread",
+            "120ml evaporated milk",
+            "2 yellow chillies, deseeded",
+            "1 garlic clove",
+            "2 tbsp vegetable oil",
+            "1 tsp lime juice",
+            "4 potatoes, boiled and sliced",
+            "2 eggs, hard boiled",
+            "6 olives"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the bread in the milk for 5 minutes.",
+        "Blend the feta, bread and milk, chillies, garlic, oil and lime juice until smooth and creamy.",
+        "Arrange the potato slices on a platter and pour the sauce over.",
+        "Top with the halved eggs and olives."
+      ],
+      "notes": [
+        "Food safety: boil the eggs for at least 10 minutes until fully set. Keep the sauce in the fridge and use within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 292,
+        "proteinG": 12,
+        "carbsG": 28,
+        "fatG": 14,
+        "fibreG": 3,
+        "sodiumMg": 580
+      }
+    },
+    {
+      "id": "peruvian-quinoa-and-avocado-salad",
+      "title": "Peruvian Quinoa and Avocado Salad",
+      "summary": "Fluffy quinoa with avocado, corn, tomato and lime, a fresh Lima-style lunch salad.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g quinoa, rinsed",
+            "2 avocados, diced",
+            "1 cup corn kernels, cooked",
+            "2 tomatoes, diced",
+            "1 red onion, finely diced",
+            "1 small bunch coriander, chopped",
+            "3 tbsp lime juice",
+            "2 tbsp olive oil",
+            "1/2 tsp ground cumin",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the quinoa in 400ml water for 14 minutes until the water is absorbed, then cool.",
+        "Whisk the lime juice, oil, cumin and salt.",
+        "Toss the quinoa with the avocado, corn, tomato, onion and coriander.",
+        "Pour over the dressing and fold gently."
+      ],
+      "notes": [
+        "Add a handful of toasted pepitas for crunch."
+      ],
+      "nutrition": {
+        "kcal": 470,
+        "proteinG": 10,
+        "carbsG": 48,
+        "fatG": 24,
+        "fibreG": 11,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "peruvian-tacu-tacu-rice-and-bean-cakes",
+      "title": "Peruvian Tacu Tacu Rice and Bean Cakes",
+      "summary": "Day-old rice and canned beans fried together into crisp golden cakes with garlic and chilli.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "breakfast",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 cups cooked rice, cold",
+            "1 can cannellini beans (400g), drained",
+            "1 brown onion, finely diced",
+            "3 garlic cloves, minced",
+            "1 red chilli, finely chopped",
+            "3 tbsp vegetable oil",
+            "1 tsp ground cumin",
+            "1/2 tsp salt",
+            "1 small bunch parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onion, garlic and chilli in 1 tbsp oil for 5 minutes until soft.",
+        "Roughly mash the beans, then mix with the rice, cumin, salt and the onion mix.",
+        "Shape into 4 thick patties.",
+        "Fry in the remaining oil for 4 minutes each side until crisp and golden.",
+        "Scatter with parsley and serve hot."
+      ],
+      "notes": [
+        "Top with a fried egg or avocado."
+      ],
+      "nutrition": {
+        "kcal": 413,
+        "proteinG": 12,
+        "carbsG": 62,
+        "fatG": 11,
+        "fibreG": 9,
+        "sodiumMg": 510
+      }
+    },
+    {
+      "id": "peruvian-crema-de-zapallo-pumpkin-soup",
+      "title": "Peruvian Crema de Zapallo Pumpkin Soup",
+      "summary": "Smooth pumpkin soup with garlic and a touch of cumin, finished with a swirl of cream.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g pumpkin, cubed",
+            "1 brown onion, chopped",
+            "2 garlic cloves, minced",
+            "1 tbsp olive oil",
+            "1 tsp ground cumin",
+            "700ml vegetable stock",
+            "60ml cream",
+            "1 small bunch coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion and garlic in the oil for 5 minutes until soft.",
+        "Add the cumin, pumpkin and stock and simmer for 18 minutes until very soft.",
+        "Blend until completely smooth.",
+        "Stir in the cream, reheat gently for 2 minutes and scatter with coriander."
+      ],
+      "notes": [
+        "Use coconut milk in place of cream for a dairy-free soup."
+      ],
+      "nutrition": {
+        "kcal": 193,
+        "proteinG": 4,
+        "carbsG": 22,
+        "fatG": 9,
+        "fibreG": 4,
+        "sodiumMg": 590
+      }
+    },
+    {
+      "id": "argentinian-salsa-golf-seafood-sauce",
+      "title": "Argentinian Salsa Golf Seafood Sauce",
+      "summary": "Sweet pink mayonnaise and ketchup sauce served with prawns, ham and palm hearts on every Buenos Aires menu.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 tbsp mayonnaise",
+            "3 tbsp tomato sauce",
+            "1 tsp Worcestershire sauce",
+            "1 tsp lemon juice",
+            "1 pinch paprika",
+            "1 pinch salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Stir the mayonnaise, tomato sauce, Worcestershire sauce, lemon juice and paprika until smooth and pale pink.",
+        "Taste and add the pinch of salt as needed.",
+        "Chill for 10 minutes before serving.",
+        "Serve with cooked prawns, boiled egg or crisp chips."
+      ],
+      "notes": [
+        "Keeps in the fridge for 4 days."
+      ],
+      "nutrition": {
+        "kcal": 84,
+        "proteinG": 0,
+        "carbsG": 3,
+        "fatG": 8,
+        "fibreG": 0,
+        "sodiumMg": 190
+      }
+    },
+    {
+      "id": "argentinian-ensalada-rusa-potato-salad",
+      "title": "Argentinian Ensalada Rusa Potato Salad",
+      "summary": "Diced potato, carrot and peas bound with mayonnaise and egg, a staple of Argentinian tables.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g potatoes, peeled and diced",
+            "2 carrots, diced",
+            "1 cup peas",
+            "3 eggs",
+            "5 tbsp mayonnaise",
+            "1 tbsp lemon juice",
+            "1/2 tsp salt",
+            "1 small bunch parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes and carrots in salted water for 12 minutes until just tender, adding the peas for the last 2 minutes.",
+        "Boil the eggs for 10 minutes until firm, then peel and chop.",
+        "Drain the vegetables well and cool completely.",
+        "Fold in the mayonnaise, lemon juice, eggs and parsley.",
+        "Chill for 15 minutes before serving so the flavours settle."
+      ],
+      "notes": [
+        "Food safety: boil the eggs until fully set and keep the salad cold, eating within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 227,
+        "proteinG": 7,
+        "carbsG": 23,
+        "fatG": 11,
+        "fibreG": 4,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "argentinian-tortilla-de-papas-potato-omelette",
+      "title": "Argentinian Tortilla de Papas Potato Omelette",
+      "summary": "A thick golden omelette of sliced potato and onion, flipped and served warm or cold.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g potatoes, thinly sliced",
+            "1 brown onion, thinly sliced",
+            "5 tbsp olive oil",
+            "6 eggs",
+            "1/2 tsp salt",
+            "1 small bunch parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the potato and onion in the oil over low heat for 15 minutes, turning, until very soft but not browned.",
+        "Beat the eggs with the salt, then fold in the warm potato mix.",
+        "Pour back into the pan and cook for 6 minutes over low heat until the base is set.",
+        "Flip using a plate and cook for 3 minutes more until the egg is fully set.",
+        "Rest for 5 minutes and slice."
+      ],
+      "notes": [
+        "Food safety: cook the omelette until the egg is fully set in the centre."
+      ],
+      "nutrition": {
+        "kcal": 348,
+        "proteinG": 14,
+        "carbsG": 22,
+        "fatG": 22,
+        "fibreG": 3,
+        "sodiumMg": 360
+      }
+    },
+    {
+      "id": "indian-aloo-tikki-chaat",
+      "title": "Indian Aloo Tikki Chaat",
+      "summary": "Crisp spiced potato patties topped with yoghurt, tamarind and mint chutneys.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "snack",
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g potatoes, boiled and mashed",
+            "2 tbsp cornflour",
+            "1 tsp ground cumin",
+            "1 tsp garam masala",
+            "1 green chilli, finely chopped",
+            "1 small bunch coriander, chopped",
+            "3 tbsp vegetable oil",
+            "200g natural yoghurt",
+            "2 tbsp tamarind sauce",
+            "2 tbsp mint chutney",
+            "1 small red onion, diced"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the potato, cornflour, cumin, garam masala, chilli and half the coriander and season, then shape into 8 patties.",
+        "Fry in the oil for 4 minutes each side until crisp and golden.",
+        "Whisk the yoghurt until smooth.",
+        "Plate the patties and top with yoghurt, tamarind sauce, mint chutney, onion and the remaining coriander."
+      ],
+      "notes": [
+        "Serve straight away so the patties stay crisp."
+      ],
+      "nutrition": {
+        "kcal": 271,
+        "proteinG": 7,
+        "carbsG": 30,
+        "fatG": 13,
+        "fibreG": 3,
+        "sodiumMg": 390
+      }
+    },
+    {
+      "id": "indian-besan-chilla-chickpea-flour-pancakes",
+      "title": "Indian Besan Chilla Chickpea Flour Pancakes",
+      "summary": "Savoury batter pancakes of chickpea flour with onion, tomato and spices.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g chickpea flour",
+            "350ml water",
+            "1 small red onion, finely diced",
+            "1 tomato, finely diced",
+            "1 green chilli, finely chopped",
+            "1/2 tsp ground turmeric",
+            "1/2 tsp ground cumin",
+            "1/2 tsp salt",
+            "2 tbsp vegetable oil",
+            "1 small bunch coriander, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the flour, water, turmeric, cumin and salt into a smooth batter, then rest for 10 minutes.",
+        "Stir in the onion, tomato, chilli and coriander.",
+        "Heat a little oil in a non-stick pan and pour in a ladle of batter, spreading thin.",
+        "Cook for 3 minutes each side until golden and set, and repeat with the rest."
+      ],
+      "notes": [
+        "Serve with mint chutney or yoghurt."
+      ],
+      "nutrition": {
+        "kcal": 215,
+        "proteinG": 11,
+        "carbsG": 24,
+        "fatG": 7,
+        "fibreG": 6,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "italian-insalata-di-riso-summer-rice-salad",
+      "title": "Italian Insalata di Riso Summer Rice Salad",
+      "summary": "Chilled rice with tuna, olives, tomatoes and capers, a picnic favourite across Italy.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g long-grain rice",
+            "2 cans tuna in oil (185g each), drained",
+            "200g cherry tomatoes, halved",
+            "100g green olives, sliced",
+            "2 tbsp capers",
+            "3 eggs",
+            "1 small bunch parsley",
+            "4 tbsp olive oil",
+            "3 tbsp lemon juice",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice in boiling salted water for 12 minutes until tender, then drain, rinse and cool.",
+        "Boil the eggs for 10 minutes until firm, cool, peel and quarter.",
+        "Whisk the oil, lemon juice and salt.",
+        "Toss the rice with the tuna, tomatoes, olives, capers, parsley and dressing, then top with the eggs."
+      ],
+      "notes": [
+        "Food safety: keep the salad chilled and eat within 2 days. Boil the eggs until fully set."
+      ],
+      "nutrition": {
+        "kcal": 456,
+        "proteinG": 20,
+        "carbsG": 52,
+        "fatG": 18,
+        "fibreG": 3,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "italian-fagioli-all-uccelletto-tuscan-tomato-beans",
+      "title": "Italian Fagioli all Uccelletto Tuscan Tomato Beans",
+      "summary": "Cannellini beans simmered with sage, garlic and tomato, an easy Tuscan side or light meal.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cans cannellini beans (400g each), drained",
+            "3 tbsp olive oil",
+            "4 garlic cloves, sliced",
+            "8 sage leaves",
+            "1 can crushed tomatoes (400g)",
+            "1/2 tsp chilli flakes",
+            "1/2 tsp salt",
+            "1/2 tsp black pepper",
+            "4 slices crusty bread"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the oil with the garlic and sage for 2 minutes until fragrant.",
+        "Add the tomatoes, chilli, salt and pepper and simmer for 8 minutes.",
+        "Add the beans and simmer for 12 minutes until the sauce clings and thickens.",
+        "Serve the beans spooned over the toasted bread."
+      ],
+      "notes": [
+        "Finish with a little extra virgin olive oil."
+      ],
+      "nutrition": {
+        "kcal": 396,
+        "proteinG": 17,
+        "carbsG": 48,
+        "fatG": 12,
+        "fibreG": 14,
+        "sodiumMg": 760
+      }
+    },
+    {
+      "id": "italian-salsa-verde-piemontese-parsley-sauce",
+      "title": "Italian Salsa Verde Piemontese Parsley Sauce",
+      "summary": "Punchy parsley, caper and anchovy sauce served with boiled meats and eggs.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "snack",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 large bunch parsley, leaves only",
+            "2 tbsp capers, rinsed",
+            "4 anchovy fillets",
+            "1 garlic clove",
+            "1 slice bread, crumbed",
+            "2 tbsp red wine vinegar",
+            "120ml olive oil",
+            "1 hard boiled egg yolk"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the bread crumbs in the vinegar for 5 minutes.",
+        "Finely chop the parsley, capers, anchovies and garlic together.",
+        "Mix in the bread, egg yolk and oil until it forms a loose, rich sauce.",
+        "Rest for 10 minutes so the flavours meld."
+      ],
+      "notes": [
+        "Food safety: boil the egg for at least 10 minutes until fully set. Keep chilled and use within 3 days."
+      ],
+      "nutrition": {
+        "kcal": 148,
+        "proteinG": 2,
+        "carbsG": 3,
+        "fatG": 14,
+        "fibreG": 1,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "italian-bagna-cauda-warm-anchovy-and-garlic-dip",
+      "title": "Italian Bagna Cauda Warm Anchovy and Garlic Dip",
+      "summary": "Warm olive oil and butter dip with garlic and anchovy, served with raw and roasted vegetables.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "snack",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "pescatarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 garlic cloves, thinly sliced",
+            "8 anchovy fillets",
+            "100ml olive oil",
+            "50g butter",
+            "4 carrots, cut in sticks",
+            "2 celery stalks, cut in sticks",
+            "1 red capsicum, cut in strips",
+            "1 head cos lettuce, leaves separated",
+            "6 slices crusty bread"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the garlic gently in the oil and butter for 8 minutes without browning.",
+        "Add the anchovies and stir for 4 minutes until they melt into the oil.",
+        "Pour into a small pot over a candle or low heat to keep warm.",
+        "Serve with the vegetables and bread for dipping."
+      ],
+      "notes": [
+        "Keep the heat low so the garlic stays sweet and does not turn bitter."
+      ],
+      "nutrition": {
+        "kcal": 348,
+        "proteinG": 7,
+        "carbsG": 24,
+        "fatG": 24,
+        "fibreG": 4,
+        "sodiumMg": 740
+      }
+    },
+    {
+      "id": "italian-pesto-alla-trapanese-almond-and-tomato-pesto",
+      "title": "Italian Pesto alla Trapanese Almond and Tomato Pesto",
+      "summary": "Sicilian pesto of raw tomato, almonds, garlic and basil tossed through pasta.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "320g spaghetti",
+            "300g ripe tomatoes, chopped",
+            "60g blanched almonds",
+            "1 garlic clove",
+            "1 large bunch basil",
+            "80ml olive oil",
+            "40g pecorino (or vegetarian hard cheese), grated",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the pasta in salted water for 10 minutes until al dente.",
+        "Blend the tomatoes, almonds, garlic, basil, oil, cheese and salt into a rough sauce.",
+        "Drain the pasta, keeping 60ml of the water.",
+        "Toss with the sauce, loosening with the water until glossy."
+      ],
+      "notes": [
+        "Use vegetarian hard cheese to keep this vegetarian."
+      ],
+      "nutrition": {
+        "kcal": 587,
+        "proteinG": 17,
+        "carbsG": 66,
+        "fatG": 27,
+        "fibreG": 6,
+        "sodiumMg": 480
+      }
+    },
+    {
+      "id": "egyptian-ful-medames-breakfast-beans",
+      "title": "Egyptian Ful Medames Breakfast Beans",
+      "summary": "Mashed warm broad-style beans with garlic, cumin and lemon, a daily Cairo breakfast.",
+      "cuisine": "north-african",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cans cannellini beans (400g each), drained",
+            "3 garlic cloves, minced",
+            "1 tsp ground cumin",
+            "3 tbsp lemon juice",
+            "3 tbsp olive oil",
+            "1 tomato, diced",
+            "1 small bunch parsley, chopped",
+            "4 pita breads",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the beans in a pot with 100ml water for 8 minutes, until hot.",
+        "Mash roughly with the garlic, cumin and salt.",
+        "Stir in the lemon juice and half the oil.",
+        "Spoon into bowls and top with tomato, parsley and the remaining oil, then serve with warm pita."
+      ],
+      "notes": [
+        "Add a boiled egg on top for extra protein."
+      ],
+      "nutrition": {
+        "kcal": 440,
+        "proteinG": 18,
+        "carbsG": 58,
+        "fatG": 12,
+        "fibreG": 14,
+        "sodiumMg": 840
+      }
+    },
+    {
+      "id": "moroccan-msemen-layered-pan-fried-pancakes",
+      "title": "Moroccan Msemen Layered Pan-fried Pancakes",
+      "summary": "Folded square pancakes of semolina dough, crisp outside and soft within, eaten with honey.",
+      "cuisine": "north-african",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g plain flour",
+            "100g fine semolina",
+            "1/2 tsp salt",
+            "1 tsp sugar",
+            "250ml warm water",
+            "60ml vegetable oil",
+            "4 tbsp honey",
+            "30g butter"
+          ]
+        }
+      ],
+      "steps": [
+        "Knead the flour, semolina, salt, sugar and water for 8 minutes until smooth, then rest for 15 minutes.",
+        "Divide into 6 balls and brush with oil.",
+        "Stretch each ball thin on an oiled bench, fold into a square and press flat.",
+        "Cook in a hot pan for 3 minutes each side until golden and flaky.",
+        "Serve with melted butter and honey."
+      ],
+      "notes": [
+        "Brush each pancake with butter while hot for extra flakiness."
+      ],
+      "nutrition": {
+        "kcal": 351,
+        "proteinG": 7,
+        "carbsG": 55,
+        "fatG": 11,
+        "fibreG": 2,
+        "sodiumMg": 340
+      }
+    },
+    {
+      "id": "hazelnut-dukkah-egyptian-spice-and-nut-blend",
+      "title": "Hazelnut Dukkah Egyptian Spice and Nut Blend",
+      "summary": "A dry crumbly mix of toasted hazelnuts, sesame, coriander and cumin for dipping bread in olive oil.",
+      "cuisine": "north-african",
+      "mealTypes": [
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100g hazelnuts",
+            "3 tbsp sesame seeds",
+            "2 tbsp coriander seeds",
+            "1 tbsp cumin seeds",
+            "1 tsp black pepper",
+            "1/2 tsp salt",
+            "8 slices bread",
+            "4 tbsp olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the hazelnuts in a dry pan for 5 minutes, then rub off the skins.",
+        "Toast the sesame, coriander and cumin seeds in the pan for 3 minutes until fragrant.",
+        "Crush everything together coarsely with the pepper and salt.",
+        "Dip bread in olive oil, then into the dukkah."
+      ],
+      "notes": [
+        "Store in a jar for up to 3 weeks."
+      ],
+      "nutrition": {
+        "kcal": 245,
+        "proteinG": 6,
+        "carbsG": 15,
+        "fatG": 17,
+        "fibreG": 4,
+        "sodiumMg": 230
+      }
+    },
+    {
+      "id": "irish-colcannon-mash-with-cabbage-and-butter",
+      "title": "Irish Colcannon Mash with Cabbage and Butter",
+      "summary": "Creamy potato mash folded with buttery cabbage and spring onion.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 kg potatoes, peeled and chopped",
+            "300g green cabbage, shredded",
+            "4 spring onions, sliced",
+            "120ml milk",
+            "60g butter",
+            "1/2 tsp salt",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes in salted water for 18 minutes until very tender, then drain.",
+        "Boil the cabbage in a separate pot for 4 minutes until tender, then drain well.",
+        "Warm the milk with the spring onions for 3 minutes.",
+        "Mash the potatoes with the milk, butter, salt and pepper, then fold in the cabbage."
+      ],
+      "notes": [
+        "Make a well in the centre and add a knob of butter to serve."
+      ],
+      "nutrition": {
+        "kcal": 246,
+        "proteinG": 6,
+        "carbsG": 31,
+        "fatG": 10,
+        "fibreG": 4,
+        "sodiumMg": 340
+      }
+    },
+    {
+      "id": "english-bubble-and-squeak-fried-leftover-veg-cakes",
+      "title": "English Bubble and Squeak Fried Leftover Veg Cakes",
+      "summary": "Mashed potato and cabbage fried until crisp, topped with a poached egg and bacon.",
+      "cuisine": "british",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g cold mashed potato",
+            "200g cooked cabbage, chopped",
+            "1 brown onion, finely diced",
+            "2 tbsp vegetable oil",
+            "4 rashers bacon",
+            "4 eggs",
+            "1/2 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the potato, cabbage, onion and pepper and shape into 4 patties.",
+        "Fry the patties in the oil for 5 minutes each side until deeply golden and crisp.",
+        "Grill or fry the bacon for 5 minutes until crisp.",
+        "Poach the eggs in barely simmering water for 3 minutes until the whites are set.",
+        "Top each cake with bacon and an egg."
+      ],
+      "notes": [
+        "Food safety: cook the bacon until crisp and the egg whites fully set; cook the yolks through for anyone vulnerable."
+      ],
+      "nutrition": {
+        "kcal": 342,
+        "proteinG": 17,
+        "carbsG": 26,
+        "fatG": 18,
+        "fibreG": 4,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "portuguese-molho-de-piri-piri-chilli-and-lemon-sauce",
+      "title": "Portuguese Molho de Piri Piri Chilli and Lemon Sauce",
+      "summary": "A bright, hot sauce of chilli, garlic, lemon and olive oil for brushing over grilled food.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "snack",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 5,
+      "servings": 8,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 red birds-eye chillies, chopped",
+            "4 garlic cloves",
+            "80ml olive oil",
+            "60ml lemon juice",
+            "2 tbsp white vinegar",
+            "1 tsp sweet paprika",
+            "1/2 tsp salt",
+            "1 tsp dried oregano"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the oil with the chillies and garlic over low heat for 4 minutes until fragrant.",
+        "Cool slightly, then blend with the lemon juice, vinegar, paprika, salt and oregano.",
+        "Pour into a clean jar and seal while still slightly warm.",
+        "Rest for an hour before using."
+      ],
+      "notes": [
+        "Keeps in the fridge for 2 weeks."
+      ],
+      "nutrition": {
+        "kcal": 98,
+        "proteinG": 0,
+        "carbsG": 2,
+        "fatG": 10,
+        "fibreG": 0,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "scottish-cranachan-oat-porridge-with-apple-and-honey",
+      "title": "Scottish Cranachan Oat Porridge with Apple and Honey",
+      "summary": "Creamy oats finished with cream, honey and raspberries in the style of the Scottish dessert.",
+      "cuisine": "british",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "80g rolled oats",
+            "500ml milk",
+            "1 pinch salt",
+            "1 apple, finely diced",
+            "2 tbsp honey",
+            "60ml cream",
+            "2 tbsp toasted oats"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the oats with the milk and salt for 8 minutes, stirring, until thick and creamy.",
+        "Spoon the porridge into two warm bowls.",
+        "Top with the apple, honey and a swirl of cream.",
+        "Scatter over the toasted oats."
+      ],
+      "notes": [
+        "Stir through a spoon of yoghurt for extra tang."
+      ],
+      "nutrition": {
+        "kcal": 445,
+        "proteinG": 14,
+        "carbsG": 55,
+        "fatG": 17,
+        "fibreG": 8,
+        "sodiumMg": 280
+      }
+    }
+  ]
+}
