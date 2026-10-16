@@ -47,7 +47,14 @@ export type HouseRecipe = {
   provenance?: Provenance;
   /** A real, freely licensed photo (D-045): the file at assets/recipes/<key>.jpg, the credit shown under it, and its source page. */
   image?: { key: string; credit: string; source: string };
+  /**
+   * The author's estimate per serve (batch-04 on). Not shown in the app yet and not copied into the
+   * catalogue; validate-house-recipes.mts checks it against the macros and a rough sum of the ingredients.
+   */
+  nutrition?: Nutrition;
 };
+
+export type Nutrition = { kcal: number; proteinG: number; carbsG: number; fatG: number; fibreG: number; sodiumMg: number };
 
 export type HouseBatch = { about: string; recipes: HouseRecipe[] };
 
@@ -86,7 +93,8 @@ function checkImage(h: HouseRecipe, root: string, problem: (m: string) => void):
   if (!/^https:\/\//.test(source)) problem(`${h.id}: photo needs the https link to its source page`);
 }
 
-function toRecipe(h: HouseRecipe, root: string, index: IngredientIndex, problem: (m: string) => void): Recipe {
+/** One batch entry as a catalogue recipe, with the repo's checks reported through `problem`. Also used by validate-house-recipes.mts. */
+export function toRecipe(h: HouseRecipe, root: string, index: IngredientIndex, problem: (m: string) => void): Recipe {
   const ingredientGroups = h.ingredients.map((group) => {
     const items = group.items.map((raw) => {
       const { line, issues } = parseIngredientLine(raw, index.match);
