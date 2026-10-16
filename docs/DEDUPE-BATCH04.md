@@ -2,11 +2,23 @@
 
 Made by `scripts/dedupe-batch04.mts` on branch house-recipes-batch-04-merge (re-run by `scripts/merge-batch04.sh`).
 
-- Now: 4345 unique batch-04 recipes. Dropped so far: 104. Last run 2026-10-17 10:17.
+- Now: 4501 unique batch-04 recipes. Dropped so far: 108. Last run 2026-10-17 10:32.
 - Rules: same slug, same title, title words 80%+ alike, or same cuisine with 90%+ of 6+ linked ingredients shared and a title word in common. The near rules skip vegetarian vs non-vegetarian pairs and a short hand-checked list (NOT_DUPLICATES in the script).
 - Existing means the catalogue (src/data/catalogue/recipes.json), batch-01/02, parked batch-03 and the 12 Oct pilot. Against those the batch-04 draft is always dropped.
 - Inside batch-04 the more detailed version is kept (ingredient lines, steps, method length, notes, nutrition).
 - Only the batch-04 draft files on this branch change. Nothing published is removed.
+
+## Run 2026-10-17 10:32
+
+- 4505 batch-04 recipes in 175 files; 4 duplicates (0 of existing recipes, 4 inside batch-04); 4501 unique left.
+- By rule: near-title 1, near-ingredients 3.
+
+| Dropped (file) | Title | Kept (file) | Kept title | Rule |
+| --- | --- | --- | --- | --- |
+| egg-fried-rice-with-peas-and-spring-onion (batch-04-A29) | Egg Fried Rice (with Peas and Spring Onion) | chinese-egg-fried-rice-with-peas-and-spring-onion (batch-04-C61) | Chinese Egg Fried Rice with Peas and Spring Onion | near-title 0.86 |
+| diwali-feast-jeera-aloo-dry-cumin-potato-cubes-with-amchur-style-lemon (batch-04-C57) | Diwali Feast Jeera Aloo Dry Cumin Potato Cubes with Amchur-Style Lemon | indian-aloo-jeera-cumin-potatoes (batch-04-C61) | Indian Aloo Jeera Cumin Potatoes | near-ingredients 1.00 |
+| bavarian-style-warm-potato-and-gherkin-salad (batch-04-C61) | Bavarian-Style Warm Potato and Gherkin Salad | german-kartoffelsalat-swabian-warm-potato-salad (batch-04-C32) | German Kartoffelsalat Swabian Warm Potato Salad | near-ingredients 0.91 |
+| salmorejo-cordobes-with-egg (batch-04-C62) | Salmorejo Cordobes with Egg | salmorejo-cordoban-tomato-soup (batch-04-C46) | Salmorejo Cordoban Tomato Soup | near-ingredients 1.00 |
 
 ## Run 2026-10-17 10:17
 

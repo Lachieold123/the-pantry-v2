@@ -825,55 +825,6 @@
       }
     },
     {
-      "id": "egg-fried-rice-with-peas-and-spring-onion",
-      "title": "Egg Fried Rice (with Peas and Spring Onion)",
-      "summary": "Day-old rice fried hot with scrambled egg, peas and carrot, a 10-minute lunch for leftover rice.",
-      "cuisine": "chinese",
-      "mealTypes": [
-        "lunch"
-      ],
-      "difficulty": "easy",
-      "prepMinutes": 5,
-      "cookMinutes": 8,
-      "servings": 2,
-      "onePot": true,
-      "diets": [
-        "vegetarian",
-        "no-dairy"
-      ],
-      "ingredients": [
-        {
-          "items": [
-            "3 cup cooked white rice, cold",
-            "3 egg",
-            "2 tbsp neutral oil",
-            "1 carrot, finely diced",
-            "1/2 cup frozen peas",
-            "3 spring onion, sliced",
-            "2 tbsp soy sauce",
-            "1 tsp sesame oil"
-          ]
-        }
-      ],
-      "steps": [
-        "Beat the eggs. Heat half the oil in a wok and scramble the eggs for 1 minute, then remove.",
-        "Fry the carrot in the remaining oil for 2 minutes, add the peas and the cold rice, breaking up clumps, and stir-fry for 3 minutes.",
-        "Return the egg, add the soy sauce, sesame oil and spring onion and toss until the rice is steaming hot."
-      ],
-      "notes": [
-        "Food safety: use rice that was cooled within an hour of cooking and kept below 5°C for no more than a day. Never reheat rice twice. Eat hot; for a packed lunch use an ice pack and eat within 4 hours.",
-        "Contains egg, soy and sesame."
-      ],
-      "nutrition": {
-        "kcal": 590,
-        "proteinG": 20,
-        "carbsG": 85,
-        "fatG": 19,
-        "fibreG": 4,
-        "sodiumMg": 930
-      }
-    },
-    {
       "id": "mie-goreng-indonesian-sweet-soy-prawn-noodles",
       "title": "Mie Goreng (Indonesian Sweet Soy Prawn Noodles)",
       "summary": "Egg noodles wok-tossed with prawns, egg and cabbage in sweet kecap manis with a kick of sambal.",

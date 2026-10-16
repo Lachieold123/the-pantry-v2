@@ -1,0 +1,1166 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "albanian-baked-lamb-and-rice-with-yoghurt-crust",
+      "title": "Albanian Baked Lamb and Rice with Yoghurt Crust",
+      "summary": "Tender lamb and rice baked under a golden egg and yoghurt crust, inspired by Albanian tave kosi.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 75,
+      "servings": 4,
+      "onePot": true,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "500g lamb shoulder, cut in chunks",
+            "1 onion, diced",
+            "2 garlic cloves, crushed",
+            "1 tsp dried oregano",
+            "150g basmati rice",
+            "400ml water",
+            "1/2 tsp salt",
+            "400g plain yoghurt",
+            "2 eggs",
+            "1 tbsp plain flour",
+            "1/2 tsp paprika"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180C. Heat the oil in a frying pan and brown the lamb over high heat for 6 minutes until coloured, then add the onion, garlic and oregano for 3 minutes until soft.",
+        "Tip the lamb mixture into a baking dish with the rice, water and salt, cover with foil and bake for 40 minutes until the lamb and rice are tender.",
+        "Whisk the yoghurt, eggs and flour until smooth, pour over the dish and dust with paprika.",
+        "Bake uncovered for 20 minutes until the top is set and golden."
+      ],
+      "notes": [
+        "Let the dish stand for 5 minutes before serving so the crust firms up.",
+        "Food safety: cook the lamb until very tender and at least 75°C inside, and the egg topping until fully set; refrigerate leftovers within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 476,
+        "proteinG": 33,
+        "carbsG": 36,
+        "fatG": 22,
+        "fibreG": 1,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "bulgarian-cheese-and-egg-filo-squares",
+      "title": "Bulgarian Cheese and Egg Filo Squares",
+      "summary": "Crisp filo layered with eggs, yoghurt and feta, baked and cut into squares in the style of banitsa.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 sheets filo pastry",
+            "40g butter, melted",
+            "4 eggs",
+            "250g plain yoghurt",
+            "200g feta, crumbled",
+            "1/4 tsp black pepper",
+            "1/2 tsp baking soda"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180C and grease a 20cm square dish.",
+        "Whisk the eggs, yoghurt, feta, pepper and baking soda in a bowl until combined.",
+        "Brush each filo sheet with butter, scrunch it loosely and layer in the dish, spooning some of the filling between layers until all is used.",
+        "Bake for 35 minutes until deep golden and the filling is set in the centre. Rest for 10 minutes and cut into squares."
+      ],
+      "notes": [
+        "Keep unused filo covered with a damp tea towel so it does not dry out.",
+        "Food safety: bake until the egg filling is fully set with no wet centre."
+      ],
+      "nutrition": {
+        "kcal": 291,
+        "proteinG": 14,
+        "carbsG": 20,
+        "fatG": 17,
+        "fibreG": 1,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "eritrean-chickpea-and-egg-breakfast-scramble",
+      "title": "Eritrean Chickpea and Egg Breakfast Scramble",
+      "summary": "Chickpeas and eggs scrambled with onion, tomato and mild spices, scooped up with bread.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp vegetable oil",
+            "1 onion, diced",
+            "1 green chilli, sliced",
+            "1 tomato, chopped",
+            "1 tsp ground cumin",
+            "1/2 tsp ground turmeric",
+            "240g canned chickpeas, drained",
+            "4 eggs, beaten",
+            "1/4 tsp salt",
+            "2 tbsp chopped coriander",
+            "2 slices bread"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a frying pan and cook the onion and chilli for 5 minutes over medium heat until soft.",
+        "Add the tomato, cumin and turmeric and cook for 3 minutes until the tomato breaks down, then stir in the chickpeas for 2 minutes until hot.",
+        "Pour in the eggs and salt and stir gently over low heat for 3 minutes until set with no liquid egg remaining.",
+        "Scatter with coriander and serve with bread."
+      ],
+      "notes": [
+        "Mash a few of the chickpeas for a creamier scramble.",
+        "Food safety: cook eggs until fully set; avoid undercooked eggs for young children, pregnant women and older adults."
+      ],
+      "nutrition": {
+        "kcal": 413,
+        "proteinG": 22,
+        "carbsG": 38,
+        "fatG": 17,
+        "fibreG": 10,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "beetroot-and-apple-slaw-with-horseradish-yoghurt",
+      "title": "Beetroot and Apple Slaw with Horseradish Yoghurt",
+      "summary": "A vivid raw beetroot and apple slaw dressed with a sharp horseradish yoghurt.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 beetroot, peeled and grated",
+            "2 apples, cut in matchsticks",
+            "100g red cabbage, shredded",
+            "3 tbsp chopped dill",
+            "200g plain yoghurt",
+            "1 tbsp prepared horseradish",
+            "1 tbsp lemon juice",
+            "1 tsp honey",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the beetroot, apple, cabbage and dill in a large bowl.",
+        "Whisk the yoghurt, horseradish, lemon juice, honey and salt in a small bowl until smooth.",
+        "Pour the dressing over the slaw and toss until coated, then chill for 10 minutes before serving."
+      ],
+      "notes": [
+        "Wear gloves when grating the beetroot to avoid staining your hands.",
+        "Add the dressing just before serving to keep the colour bright."
+      ],
+      "nutrition": {
+        "kcal": 52,
+        "proteinG": 2,
+        "carbsG": 8,
+        "fatG": 1,
+        "fibreG": 2,
+        "sodiumMg": 190
+      }
+    },
+    {
+      "id": "shredded-kale-salad-with-shaved-cheese-and-lemon",
+      "title": "Shredded Kale Salad with Shaved Cheese and Lemon",
+      "summary": "Finely shredded kale massaged with lemon and olive oil, topped with shaved parmesan and toasted breadcrumbs.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g kale, stems removed and thinly shredded",
+            "3 tbsp olive oil",
+            "2 lemons, juiced",
+            "1 garlic clove, crushed",
+            "1/4 tsp salt",
+            "40g vegetarian hard cheese, shaved",
+            "30g breadcrumbs",
+            "1 tsp olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the breadcrumbs in 1 tsp oil in a dry pan for 3 minutes until golden and crisp.",
+        "Place the kale in a large bowl with the oil, lemon juice, garlic and salt and massage for 2 minutes until the leaves soften and darken.",
+        "Top with the cheese and breadcrumbs and serve."
+      ],
+      "notes": [
+        "Let it sit for 10 minutes for a more tender salad.",
+        "Slice the kale as thinly as you can."
+      ],
+      "nutrition": {
+        "kcal": 221,
+        "proteinG": 9,
+        "carbsG": 11,
+        "fatG": 15,
+        "fibreG": 3,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "indian-cabbage-thoran-with-coconut",
+      "title": "Indian Cabbage Thoran with Coconut",
+      "summary": "A dry south Indian stir-fry of finely shredded cabbage with mustard seeds and coconut.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp vegetable oil",
+            "1 tsp mustard seeds",
+            "1 onion, thinly sliced",
+            "2 green chillies, chopped",
+            "1 tsp ground turmeric",
+            "500g cabbage, finely shredded",
+            "1/2 tsp salt",
+            "4 tbsp desiccated coconut",
+            "2 tbsp chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a wide pan over medium heat and add the mustard seeds until they pop.",
+        "Add the onion and chilli and cook for 4 minutes until soft, then stir in the turmeric.",
+        "Add the cabbage and salt and stir-fry for 5 minutes until just tender and still bright.",
+        "Stir through the coconut and coriander for 1 minute until warm, and serve."
+      ],
+      "notes": [
+        "Do not add water; the cabbage releases enough as it cooks.",
+        "Great beside rice and dal."
+      ],
+      "nutrition": {
+        "kcal": 174,
+        "proteinG": 3,
+        "carbsG": 11,
+        "fatG": 12,
+        "fibreG": 5,
+        "sodiumMg": 320
+      }
+    },
+    {
+      "id": "indian-palak-dal-spinach-lentils",
+      "title": "Indian Palak Dal Spinach Lentils",
+      "summary": "Red lentils simmered with spinach, garlic and cumin for a quick, comforting dal.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g red lentils",
+            "800ml water",
+            "1 tsp ground turmeric",
+            "1 tbsp ghee",
+            "1 tsp cumin seeds",
+            "3 garlic cloves, sliced",
+            "1 onion, diced",
+            "1 tbsp grated ginger",
+            "200g baby spinach",
+            "1/2 tsp salt",
+            "1 lemon, juiced"
+          ]
+        }
+      ],
+      "steps": [
+        "Rinse the lentils and simmer with the water and turmeric for 20 minutes until soft and creamy.",
+        "Heat the ghee in a small pan and fry the cumin seeds, garlic, onion and ginger for 6 minutes until golden.",
+        "Stir the spinach into the lentils for 2 minutes until wilted, then add the salt and lemon juice.",
+        "Pour the spiced onion mix over the top and serve with rice."
+      ],
+      "notes": [
+        "Skim off any foam from the lentils as they start to simmer.",
+        "Add a little water if the dal thickens too much."
+      ],
+      "nutrition": {
+        "kcal": 271,
+        "proteinG": 16,
+        "carbsG": 36,
+        "fatG": 5,
+        "fibreG": 9,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "persian-herbed-rice-with-dill-and-peas",
+      "title": "Persian Herbed Rice with Dill and Peas",
+      "summary": "Fragrant basmati rice cooked with plenty of dill, parsley and peas, with a golden crust if you like.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g basmati rice",
+            "1 tsp salt",
+            "150g frozen peas",
+            "1 cup chopped dill",
+            "1 cup chopped parsley",
+            "3 tbsp olive oil",
+            "1 tbsp butter",
+            "1/2 tsp ground turmeric"
+          ]
+        }
+      ],
+      "steps": [
+        "Rinse the rice, then boil in a large pot of salted water for 7 minutes until just tender, adding the peas for the last 2 minutes, and drain.",
+        "Mix the dill and parsley through the rice.",
+        "Heat the oil, butter and turmeric in the pot, spoon in the rice, cover with a tea towel and lid and cook on low for 20 minutes until steamed through and the base is crisp.",
+        "Fluff and serve, breaking up the crust."
+      ],
+      "notes": [
+        "Wrap the lid in a tea towel to catch steam and keep the rice fluffy.",
+        "Delicious alongside grilled chicken or lamb."
+      ],
+      "nutrition": {
+        "kcal": 318,
+        "proteinG": 7,
+        "carbsG": 53,
+        "fatG": 8,
+        "fibreG": 3,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "spanish-rice-with-peas-and-paprika",
+      "title": "Spanish Rice with Peas and Paprika",
+      "summary": "A simple one-pan rice with smoked paprika, tomato and peas, a Spanish-style side.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp olive oil",
+            "1 onion, diced",
+            "3 garlic cloves, crushed",
+            "1 tsp smoked paprika",
+            "200g long grain rice",
+            "2 tomatoes, grated",
+            "500ml hot vegetable stock",
+            "150g frozen peas",
+            "1/2 tsp salt",
+            "1 lemon, cut in wedges"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a wide pan and cook the onion for 5 minutes over medium heat until soft.",
+        "Add the garlic, paprika and rice and stir for 2 minutes until coated, then add the tomatoes and cook for 2 minutes until thick.",
+        "Pour in the stock and salt, bring to a simmer, cover and cook on low for 12 minutes until the rice is tender, adding the peas for the last 3 minutes.",
+        "Rest for 5 minutes, fluff and serve with lemon."
+      ],
+      "notes": [
+        "Do not stir after adding the stock for fluffier rice.",
+        "Add a pinch of saffron if you have it."
+      ],
+      "nutrition": {
+        "kcal": 336,
+        "proteinG": 8,
+        "carbsG": 56,
+        "fatG": 8,
+        "fibreG": 4,
+        "sodiumMg": 360
+      }
+    },
+    {
+      "id": "roasted-broccoli-with-cheese-and-lemon-crumbs",
+      "title": "Roasted Broccoli with Cheese and Lemon Crumbs",
+      "summary": "Crisp-edged roasted broccoli finished with parmesan and a lemony toasted crumb.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g broccoli, cut in florets",
+            "3 tbsp olive oil",
+            "1/2 tsp salt",
+            "40g breadcrumbs",
+            "30g vegetarian hard cheese, grated",
+            "1 lemon, zested and juiced",
+            "1 garlic clove, crushed"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220C. Toss the broccoli with 2 tbsp oil and the salt on a tray.",
+        "Roast for 15 minutes until charred at the edges and tender.",
+        "Mix the crumbs, cheese, zest, garlic and remaining oil, scatter over the broccoli and roast for 5 minutes until golden.",
+        "Squeeze over the lemon juice and serve hot."
+      ],
+      "notes": [
+        "Dry the broccoli well before roasting for better browning.",
+        "Add a pinch of chilli flakes for heat."
+      ],
+      "nutrition": {
+        "kcal": 238,
+        "proteinG": 11,
+        "carbsG": 14,
+        "fatG": 14,
+        "fibreG": 6,
+        "sodiumMg": 480
+      }
+    },
+    {
+      "id": "grilled-capsicum-with-garlic-and-parsley-oil",
+      "title": "Grilled Capsicum with Garlic and Parsley Oil",
+      "summary": "Charred red capsicum strips dressed in garlic, parsley and good olive oil.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 red capsicums",
+            "3 tbsp olive oil",
+            "2 garlic cloves, finely chopped",
+            "3 tbsp chopped parsley",
+            "1 tbsp red wine vinegar",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Grill or roast the capsicums at 230C for 20 minutes, turning, until the skin is blistered and black.",
+        "Place in a covered bowl for 10 minutes, then peel, deseed and slice into strips.",
+        "Toss with the oil, garlic, parsley, vinegar and salt and serve at room temperature."
+      ],
+      "notes": [
+        "Keep the juices that collect in the bowl for the dressing.",
+        "Good with crusty bread and cheese."
+      ],
+      "nutrition": {
+        "kcal": 153,
+        "proteinG": 2,
+        "carbsG": 10,
+        "fatG": 11,
+        "fibreG": 3,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "charred-spring-onions-with-almond-dressing",
+      "title": "Charred Spring Onions with Almond Dressing",
+      "summary": "Sweet charred spring onions served on a nutty almond and garlic dressing.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 bunches spring onions, trimmed",
+            "2 tbsp olive oil",
+            "60g almonds, roasted",
+            "1 garlic clove",
+            "2 tbsp red wine vinegar",
+            "4 tbsp olive oil",
+            "1 slice bread",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the spring onions with 2 tbsp oil and grill on a hot pan for 8 minutes, turning, until charred and tender.",
+        "Blitz the almonds, garlic, vinegar, remaining oil, soaked bread and salt in a blender with 3 tbsp water until a coarse sauce forms.",
+        "Spread the sauce on a platter, lay the spring onions on top and serve warm."
+      ],
+      "notes": [
+        "Use a smoky paprika pinch to echo the char.",
+        "Trim the roots, but leave the white ends intact so the onions hold together."
+      ],
+      "nutrition": {
+        "kcal": 266,
+        "proteinG": 6,
+        "carbsG": 9,
+        "fatG": 22,
+        "fibreG": 4,
+        "sodiumMg": 150
+      }
+    },
+    {
+      "id": "hash-brown-cakes-with-spring-onion-and-cheddar",
+      "title": "Hash Brown Cakes with Spring Onion and Cheddar",
+      "summary": "Crisp grated potato cakes with spring onion and cheddar, perfect beside eggs.",
+      "cuisine": "american",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 potatoes, peeled and grated",
+            "4 spring onions, sliced",
+            "80g grated cheddar",
+            "1 egg",
+            "2 tbsp plain flour",
+            "1/2 tsp salt",
+            "1/4 tsp black pepper",
+            "3 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Squeeze the grated potato in a clean tea towel until very dry.",
+        "Mix with the spring onion, cheddar, egg, flour, salt and pepper, then shape into 8 patties.",
+        "Fry in the oil over medium heat for 5 minutes each side until deep golden and cooked through.",
+        "Drain on paper towel and serve hot."
+      ],
+      "notes": [
+        "Squeezing out the moisture is the secret to crisp edges.",
+        "Food safety: cook until the potato is tender and the egg is cooked through."
+      ],
+      "nutrition": {
+        "kcal": 307,
+        "proteinG": 11,
+        "carbsG": 26,
+        "fatG": 17,
+        "fibreG": 3,
+        "sodiumMg": 450
+      }
+    },
+    {
+      "id": "creamy-polenta-with-cheese-and-black-pepper",
+      "title": "Creamy Polenta with Cheese and Black Pepper",
+      "summary": "Creamy polenta stirred with butter, parmesan and plenty of black pepper.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 litre water",
+            "1/2 tsp salt",
+            "200g polenta",
+            "30g butter",
+            "50g vegetarian hard cheese, grated",
+            "1/2 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Bring the water and salt to a simmer in a heavy saucepan and pour in the polenta in a thin stream, whisking until smooth.",
+        "Cook on low heat for 20 minutes, stirring often, until thick and the grains are tender.",
+        "Stir in the butter, cheese and pepper until melted and creamy, and serve at once."
+      ],
+      "notes": [
+        "Add a splash of hot water if it stiffens before serving.",
+        "Serve under braised meats or roasted vegetables."
+      ],
+      "nutrition": {
+        "kcal": 290,
+        "proteinG": 11,
+        "carbsG": 38,
+        "fatG": 10,
+        "fibreG": 2,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "pumpkin-and-sage-rice-cakes",
+      "title": "Pumpkin and Sage Rice Cakes",
+      "summary": "Golden pan-fried cakes made from pumpkin and sage risotto, crisp outside and soft inside.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g cooked rice",
+            "300g cooked pumpkin, mashed",
+            "2 tbsp chopped sage",
+            "40g vegetarian hard cheese, grated",
+            "2 eggs",
+            "3 tbsp plain flour",
+            "1/2 tsp salt",
+            "3 tbsp olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the rice, pumpkin, sage, cheese, eggs, flour and salt in a bowl until it holds together.",
+        "Shape into 8 patties and chill for 15 minutes.",
+        "Fry in the oil over medium heat for 4 minutes each side until golden and heated through.",
+        "Drain on paper towel and serve hot with a green salad and lemon wedges."
+      ],
+      "notes": [
+        "Chilling the patties helps them hold their shape.",
+        "Food safety: fry until golden and hot throughout, and cool and refrigerate leftovers within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 324,
+        "proteinG": 12,
+        "carbsG": 36,
+        "fatG": 14,
+        "fibreG": 3,
+        "sodiumMg": 460
+      }
+    },
+    {
+      "id": "cheese-and-herb-scones-for-soup",
+      "title": "Cheese and Herb Scones for Soup",
+      "summary": "Savoury scones with cheddar and chives, ideal for dunking into soup.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 18,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g self-raising flour",
+            "1/2 tsp salt",
+            "40g cold butter, cubed",
+            "100g grated cheddar",
+            "3 tbsp chopped chives",
+            "200ml milk",
+            "1 egg for brushing"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220C and line a tray. Rub the butter into the flour and salt until like breadcrumbs.",
+        "Stir in the cheddar and chives, then add the milk and mix gently with a knife until a soft dough forms.",
+        "Pat out to 3cm thick, cut into 8 rounds, place on the tray and brush with beaten egg.",
+        "Bake for 18 minutes until risen, golden and cooked through."
+      ],
+      "notes": [
+        "Do not overwork the dough or the scones will be tough.",
+        "Food safety: bake until golden and cooked through in the middle."
+      ],
+      "nutrition": {
+        "kcal": 252,
+        "proteinG": 9,
+        "carbsG": 31,
+        "fatG": 10,
+        "fibreG": 1,
+        "sodiumMg": 420
+      }
+    },
+    {
+      "id": "herbed-cornbread-with-jalapeno",
+      "title": "Herbed Cornbread with Jalapeno",
+      "summary": "A moist cornbread with jalapeno and fresh herbs, baked in a tin.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g cornmeal",
+            "150g plain flour",
+            "1 tbsp baking powder",
+            "1/2 tsp salt",
+            "2 eggs",
+            "250ml milk",
+            "60g butter, melted",
+            "1 tbsp honey",
+            "2 jalapenos, finely chopped",
+            "3 tbsp chopped chives"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200C and grease a 20cm square tin.",
+        "Mix the cornmeal, flour, baking powder and salt in a bowl.",
+        "Whisk the eggs, milk, butter and honey, pour into the dry mix with the jalapeno and chives and stir until just combined.",
+        "Pour into the tin and bake for 25 minutes until golden and a skewer comes out clean."
+      ],
+      "notes": [
+        "Serve warm with butter or alongside chilli and soup.",
+        "Food safety: bake until a skewer comes out clean."
+      ],
+      "nutrition": {
+        "kcal": 237,
+        "proteinG": 7,
+        "carbsG": 31,
+        "fatG": 9,
+        "fibreG": 2,
+        "sodiumMg": 490
+      }
+    },
+    {
+      "id": "asparagus-soup-with-lemon-cream",
+      "title": "Asparagus Soup with Lemon Cream",
+      "summary": "A silky green asparagus soup finished with a swirl of lemon cream.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "1 onion, diced",
+            "1 potato, diced",
+            "600g asparagus, trimmed and chopped",
+            "800ml vegetable stock",
+            "1/2 tsp salt",
+            "100ml thickened cream",
+            "1 lemon, zested and juiced",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a pot and cook the onion for 5 minutes over medium heat until soft, then add the potato, asparagus, stock and salt.",
+        "Simmer for 15 minutes until the potato and asparagus are very tender.",
+        "Blend until smooth, then stir in half the cream and half the lemon juice and reheat until steaming.",
+        "Whip the remaining cream with the zest and pepper, spoon over the soup and serve."
+      ],
+      "notes": [
+        "Save a few tips to garnish.",
+        "Do not boil after adding the cream."
+      ],
+      "nutrition": {
+        "kcal": 209,
+        "proteinG": 6,
+        "carbsG": 15,
+        "fatG": 13,
+        "fibreG": 4,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "seafood-chowder-with-dill",
+      "title": "Seafood Chowder with Dill",
+      "summary": "A creamy chowder of white fish, prawns and potato with sweet corn and fresh dill.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp butter",
+            "1 onion, diced",
+            "2 celery stalks, diced",
+            "2 potatoes, diced",
+            "600ml fish stock",
+            "300ml milk",
+            "200g sweet corn kernels",
+            "300g white fish fillet, cut in chunks",
+            "200g peeled raw prawns",
+            "3 tbsp chopped dill",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Melt the butter in a large pot and cook the onion and celery for 5 minutes over medium heat until soft.",
+        "Add the potato and stock and simmer for 12 minutes until the potato is tender.",
+        "Add the milk, corn and fish and simmer gently for 4 minutes, then add the prawns and cook for 3 minutes until the fish flakes and the prawns are pink and opaque.",
+        "Stir in the dill and salt and serve hot."
+      ],
+      "notes": [
+        "Keep the heat low once the milk goes in so it does not curdle.",
+        "Food safety: cook fish and prawns until opaque and 63°C inside; eat leftovers within 1 day and reheat until piping hot."
+      ],
+      "nutrition": {
+        "kcal": 321,
+        "proteinG": 30,
+        "carbsG": 28,
+        "fatG": 9,
+        "fibreG": 4,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "silverbeet-and-ricotta-egg-muffins",
+      "title": "Silverbeet and Ricotta Egg Muffins",
+      "summary": "Make-ahead egg muffins packed with silverbeet, ricotta and a little parmesan.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 eggs",
+            "150g ricotta",
+            "200g silverbeet, finely chopped",
+            "4 spring onions, sliced",
+            "30g vegetarian hard cheese, grated",
+            "1/4 tsp salt",
+            "1/4 tsp black pepper",
+            "1 tsp olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180C and grease a 6-hole muffin tin with the oil.",
+        "Wilt the silverbeet in a hot pan for 2 minutes until soft, cool slightly and squeeze dry.",
+        "Whisk the eggs, ricotta, silverbeet, spring onion, cheese, salt and pepper and divide among the holes.",
+        "Bake for 25 minutes until puffed, golden and set in the centre."
+      ],
+      "notes": [
+        "Keep refrigerated and reheat until hot for weekday breakfasts.",
+        "Food safety: bake until the centres are fully set; refrigerate within 2 hours and eat within 3 days, reheating until piping hot."
+      ],
+      "nutrition": {
+        "kcal": 143,
+        "proteinG": 12,
+        "carbsG": 3,
+        "fatG": 9,
+        "fibreG": 1,
+        "sodiumMg": 270
+      }
+    },
+    {
+      "id": "carrot-cake-porridge-with-walnuts",
+      "title": "Carrot Cake Porridge with Walnuts",
+      "summary": "Creamy rolled oats cooked with grated carrot, cinnamon and sultanas, topped with walnuts.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "80g rolled oats",
+            "400ml milk",
+            "1 carrot, grated",
+            "1 tsp ground cinnamon",
+            "1/4 tsp ground nutmeg",
+            "20g sultanas",
+            "1 tbsp maple syrup",
+            "30g walnuts, chopped",
+            "100g plain yoghurt"
+          ]
+        }
+      ],
+      "steps": [
+        "Combine the oats, milk, carrot, cinnamon and nutmeg in a saucepan.",
+        "Cook over medium heat, stirring, for 8 minutes until thick and creamy.",
+        "Stir in the sultanas and maple syrup, then spoon into bowls and top with the walnuts and yoghurt."
+      ],
+      "notes": [
+        "Add a splash of milk if you like it looser.",
+        "Swap the walnuts for pecans or almonds."
+      ],
+      "nutrition": {
+        "kcal": 496,
+        "proteinG": 18,
+        "carbsG": 62,
+        "fatG": 18,
+        "fibreG": 7,
+        "sodiumMg": 130
+      }
+    },
+    {
+      "id": "corn-and-capsicum-breakfast-tacos-with-scrambled-egg",
+      "title": "Corn and Capsicum Breakfast Tacos with Scrambled Egg",
+      "summary": "Soft tortillas filled with fluffy scrambled egg, charred corn and capsicum.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "1 red capsicum, diced",
+            "200g sweet corn kernels",
+            "6 eggs, beaten",
+            "1/4 tsp salt",
+            "8 small tortillas",
+            "1 avocado, sliced",
+            "2 tbsp chopped coriander",
+            "1 lime, cut in wedges"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a pan and cook the capsicum and corn over high heat for 4 minutes until charred and tender.",
+        "Pour in the eggs and salt and stir over low heat for 3 minutes until the egg is just set.",
+        "Warm the tortillas in a dry pan for 30 seconds each side.",
+        "Fill the tortillas with the egg mixture, top with avocado and coriander and serve with lime."
+      ],
+      "notes": [
+        "Keep the egg soft but fully set.",
+        "Food safety: cook eggs until set with no liquid egg remaining; avoid undercooked eggs for young children, pregnant women and older adults."
+      ],
+      "nutrition": {
+        "kcal": 694,
+        "proteinG": 25,
+        "carbsG": 100,
+        "fatG": 20,
+        "fibreG": 7,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "tofu-and-mushroom-hot-pot-with-rice-noodles",
+      "title": "Tofu and Mushroom Hot Pot with Rice Noodles",
+      "summary": "A fragrant ginger broth simmered with vegetables, tofu and rice noodles.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1.2 litres vegetable stock",
+            "3 slices ginger",
+            "2 tbsp soy sauce",
+            "200g mushrooms, sliced",
+            "300g bok choy, chopped",
+            "200g firm tofu, cubed",
+            "150g rice noodles",
+            "2 spring onions, sliced",
+            "1 tsp sesame oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Bring the stock, ginger and soy sauce to a simmer in a large pot and cook for 8 minutes until fragrant.",
+        "Add the mushrooms and tofu and simmer for 4 minutes until tender.",
+        "Add the rice noodles and cook for 4 minutes until tender, then add the bok choy for 2 minutes until wilted.",
+        "Stir in the sesame oil, scatter with spring onion and serve in bowls."
+      ],
+      "notes": [
+        "Soak the noodles first if they are very thick.",
+        "Add chilli oil at the table if you like heat."
+      ],
+      "nutrition": {
+        "kcal": 318,
+        "proteinG": 14,
+        "carbsG": 45,
+        "fatG": 8,
+        "fibreG": 5,
+        "sodiumMg": 1000
+      }
+    }
+  ]
+}

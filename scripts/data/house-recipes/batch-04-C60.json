@@ -1,0 +1,1379 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "turkish-kahvalti-plate-with-olives-and-cucumber",
+      "title": "Turkish Kahvalti Plate with Olives and Cucumber",
+      "summary": "A relaxed Turkish breakfast spread of soft-boiled eggs, feta, olives, tomato, cucumber and warm bread.",
+      "cuisine": "turkish",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 eggs",
+            "100g feta",
+            "100g black olives",
+            "2 tomatoes, sliced",
+            "1 cucumber, sliced",
+            "4 slices wholemeal bread, toasted",
+            "2 tbsp honey",
+            "1 tbsp olive oil",
+            "1 tsp dried oregano",
+            "1 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Lower the eggs into a pan of boiling water and simmer for 7 minutes until the whites are set and the yolks are jammy, then cool in cold water and peel.",
+        "Arrange the feta, olives, tomato and cucumber on a large platter, drizzle the feta with the olive oil and scatter with oregano and parsley.",
+        "Toast the bread until golden, then serve with the eggs and honey so everyone can build their own plate."
+      ],
+      "notes": [
+        "Slice the feta thickly so it holds its shape on the plate.",
+        "Food safety: cook eggs until the whites are fully set and keep leftovers in the fridge for no more than 2 days."
+      ],
+      "nutrition": {
+        "kcal": 558,
+        "proteinG": 22,
+        "carbsG": 52,
+        "fatG": 28,
+        "fibreG": 5,
+        "sodiumMg": 1200
+      }
+    },
+    {
+      "id": "turkish-sigara-boregi-cheese-rolls",
+      "title": "Turkish Sigara Boregi Cheese Rolls",
+      "summary": "Thin filo cigars filled with feta and parsley, baked until golden and crisp.",
+      "cuisine": "turkish",
+      "mealTypes": [
+        "breakfast",
+        "snack"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 sheets filo pastry",
+            "200g feta, crumbled",
+            "1 egg",
+            "3 tbsp chopped parsley",
+            "1/4 tsp black pepper",
+            "40g butter, melted"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C. Mix the feta, parsley, pepper and half the egg until evenly combined.",
+        "Cut each filo sheet in half, brush lightly with butter, then spoon a line of filling along the short edge and roll up tightly like a cigar, tucking in the sides.",
+        "Place seam side down on a lined tray, brush with the remaining egg and bake for 18 to 20 minutes until deep golden and crisp."
+      ],
+      "notes": [
+        "Keep unused filo under a damp tea towel so it does not dry out.",
+        "Food safety: bake until golden and piping hot throughout, and keep leftovers refrigerated for up to 2 days."
+      ],
+      "nutrition": {
+        "kcal": 297,
+        "proteinG": 12,
+        "carbsG": 28,
+        "fatG": 15,
+        "fibreG": 1,
+        "sodiumMg": 760
+      }
+    },
+    {
+      "id": "turkish-kuymak-cornmeal-and-cheese-pan",
+      "title": "Turkish Kuymak Cornmeal and Cheese Pan",
+      "summary": "A stretchy, molten cornmeal and cheese breakfast from the Black Sea coast, eaten with bread.",
+      "cuisine": "turkish",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 15,
+      "servings": 3,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 tbsp fine cornmeal",
+            "40g butter",
+            "250ml water",
+            "150ml milk",
+            "150g mozzarella, grated",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Melt the butter in a small heavy pan, add the cornmeal and stir over medium heat for 3 minutes until it smells nutty and darkens slightly.",
+        "Pour in the water and milk, whisking constantly, and cook for 5 minutes until thick and smooth.",
+        "Stir in the mozzarella and salt over low heat for 2 to 3 minutes until the cheese melts into long strands, then serve straight from the pan."
+      ],
+      "notes": [
+        "Whisk as you pour in the liquid to avoid lumps.",
+        "Serve with torn bread for dipping."
+      ],
+      "nutrition": {
+        "kcal": 306,
+        "proteinG": 14,
+        "carbsG": 17,
+        "fatG": 20,
+        "fibreG": 1,
+        "sodiumMg": 480
+      }
+    },
+    {
+      "id": "turkish-zucchini-mucver-fritters-with-dill",
+      "title": "Turkish Zucchini Mucver Fritters with Dill",
+      "summary": "Grated zucchini fritters with feta and dill, pan-cooked until golden and served with garlic yoghurt.",
+      "cuisine": "turkish",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g zucchini, grated",
+            "100g feta, crumbled",
+            "2 eggs",
+            "4 tbsp plain flour",
+            "3 tbsp chopped dill",
+            "2 spring onions, sliced",
+            "1/4 tsp black pepper",
+            "1 tbsp olive oil",
+            "150g plain yoghurt",
+            "1 small garlic clove, crushed"
+          ]
+        }
+      ],
+      "steps": [
+        "Salt-free squeeze: wrap the grated zucchini in a clean tea towel and wring out as much liquid as possible.",
+        "Mix the zucchini with the feta, eggs, flour, dill, spring onions and pepper until a thick batter forms.",
+        "Heat the oil in a non-stick pan over medium heat, drop in spoonfuls of batter and cook for 3 to 4 minutes each side until deep golden and cooked through.",
+        "Stir the garlic into the yoghurt and serve alongside."
+      ],
+      "notes": [
+        "Squeezing the zucchini well keeps the fritters crisp.",
+        "Food safety: cook until the centres are firm and set, and refrigerate leftovers within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 223,
+        "proteinG": 13,
+        "carbsG": 17,
+        "fatG": 11,
+        "fibreG": 2,
+        "sodiumMg": 560
+      }
+    },
+    {
+      "id": "georgian-lobiani-butter-bean-bread",
+      "title": "Georgian Lobiani Butter Bean Bread",
+      "summary": "A flaky Georgian flatbread filled with spiced mashed butter beans and onion.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 25,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g plain flour",
+            "1/2 tsp baking powder",
+            "1/2 tsp salt",
+            "80g plain yoghurt",
+            "60ml warm water",
+            "2 tbsp olive oil",
+            "1 x 400g can butter beans, drained",
+            "1 small onion, finely diced",
+            "1 garlic clove, crushed",
+            "1/2 tsp ground coriander",
+            "1/2 tsp paprika",
+            "2 tbsp chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour, baking powder, salt, yoghurt, water and 1 tbsp oil into a soft dough and knead for 3 minutes until smooth, then cover.",
+        "Fry the onion in the remaining oil for 5 minutes until soft, add the garlic and spices for 1 minute, then mash in the beans and fresh coriander until a thick paste forms.",
+        "Divide the dough into 3, roll each into a circle, spread the filling over half, fold the other half over and press out to a thin circle about 20cm wide.",
+        "Cook each flatbread in a dry hot pan for 3 to 4 minutes each side until golden and speckled."
+      ],
+      "notes": [
+        "Press gently so the filling does not break through the dough.",
+        "Best eaten warm; reheat in a dry pan."
+      ],
+      "nutrition": {
+        "kcal": 276,
+        "proteinG": 9,
+        "carbsG": 44,
+        "fatG": 6,
+        "fibreG": 5,
+        "sodiumMg": 360
+      }
+    },
+    {
+      "id": "georgian-chikhirtma-chicken-and-egg-soup",
+      "title": "Georgian Chikhirtma Chicken and Egg Soup",
+      "summary": "A silky Georgian soup of chicken broth thickened with beaten egg, lemon and fresh herbs.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "500g chicken thigh fillets",
+            "1.5 litres water",
+            "1 onion, halved",
+            "1 carrot, chopped",
+            "2 eggs",
+            "2 tbsp plain flour",
+            "2 tbsp lemon juice",
+            "3 tbsp chopped coriander",
+            "2 tbsp chopped parsley",
+            "1 tsp salt",
+            "1/4 tsp black pepper",
+            "2 tbsp butter"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the chicken, onion, carrot, salt and water for 25 minutes until the chicken reaches 75°C and is cooked through, then lift out and shred.",
+        "Melt the butter in a small pan, stir in the flour for 1 minute, whisk in 200ml hot broth until smooth, and return it to the pot, simmering for 5 minutes until lightly thickened.",
+        "Beat the eggs with the lemon juice, then slowly whisk in a ladle of hot broth, and pour back into the pot off the boil, stirring for 2 minutes until the soup turns silky and pale.",
+        "Return the chicken, add the herbs and pepper and ladle into bowls."
+      ],
+      "notes": [
+        "Keep the pot off a hard boil once the egg goes in so it does not scramble.",
+        "Food safety: chicken must reach 75°C, and the egg-thickened soup should be heated until steaming hot before serving."
+      ],
+      "nutrition": {
+        "kcal": 307,
+        "proteinG": 30,
+        "carbsG": 8,
+        "fatG": 17,
+        "fibreG": 1,
+        "sodiumMg": 760
+      }
+    },
+    {
+      "id": "georgian-baked-eggs-in-walnut-tomato-sauce",
+      "title": "Georgian Baked Eggs in Walnut Tomato Sauce",
+      "summary": "Eggs baked in a tomato sauce enriched with ground walnuts, garlic and warm spices.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "1 onion, diced",
+            "2 garlic cloves, crushed",
+            "1 x 400g can chopped tomatoes",
+            "40g walnuts, finely ground",
+            "1/2 tsp ground coriander",
+            "1/2 tsp paprika",
+            "1/4 tsp chilli flakes",
+            "4 eggs",
+            "2 tbsp chopped coriander",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion in the oil in an ovenproof pan for 5 minutes until golden, then add the garlic and spices for 1 minute until fragrant.",
+        "Add the tomatoes, walnuts and salt and simmer for 10 minutes until thick and jammy.",
+        "Make four wells, crack in the eggs, cover and bake at 190°C for 8 to 10 minutes until the whites are set.",
+        "Scatter with coriander and serve with bread."
+      ],
+      "notes": [
+        "Ground walnuts thicken the sauce and add a gentle richness.",
+        "Food safety: bake until the whites are fully set and the yolks are no longer runny if serving to anyone vulnerable."
+      ],
+      "nutrition": {
+        "kcal": 350,
+        "proteinG": 17,
+        "carbsG": 14,
+        "fatG": 24,
+        "fibreG": 5,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "ethiopian-style-firfir-with-spiced-tomato-sauce",
+      "title": "Ethiopian-Style Firfir with Spiced Tomato Sauce",
+      "summary": "Torn flatbread soaked in a spicy berbere tomato sauce, a classic Ethiopian breakfast.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 3,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "1 onion, finely diced",
+            "2 garlic cloves, crushed",
+            "1 tsp grated ginger",
+            "2 tsp smoked paprika",
+            "1/2 tsp chilli powder",
+            "1/4 tsp ground ginger",
+            "1 tbsp tomato paste",
+            "1 x 400g can chopped tomatoes",
+            "200ml water",
+            "3 wholemeal flatbreads, torn",
+            "1/2 tsp salt",
+            "2 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onion in the oil in a wide pan for 6 minutes until soft and golden, then stir in the garlic, ginger, paprika and chilli for 1 minute until fragrant.",
+        "Add the tomato paste, tomatoes, water and salt and simmer for 10 minutes until reduced to a thick sauce.",
+        "Fold in the torn flatbread and cook for 2 minutes until it has soaked up the sauce, then top with parsley."
+      ],
+      "notes": [
+        "Day-old flatbread works best as it absorbs the sauce without going mushy.",
+        "Add more chilli for extra heat."
+      ],
+      "nutrition": {
+        "kcal": 266,
+        "proteinG": 9,
+        "carbsG": 41,
+        "fatG": 6,
+        "fibreG": 6,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "ethiopian-style-spiced-butter-bean-ful",
+      "title": "Ethiopian-Style Spiced Butter Bean Ful",
+      "summary": "Creamy butter beans warmed with cumin, tomato and green chilli and topped with a squeeze of lemon.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "1 small onion, diced",
+            "1 tomato, diced",
+            "1 garlic clove, crushed",
+            "1/2 tsp ground cumin",
+            "1/4 tsp turmeric",
+            "1 x 400g can butter beans, drained",
+            "100ml water",
+            "1 small green chilli, finely sliced",
+            "1 tbsp lemon juice",
+            "2 tbsp chopped parsley",
+            "2 slices wholemeal bread, toasted"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onion in the oil for 5 minutes until soft, then add the garlic, cumin and turmeric for 1 minute until fragrant.",
+        "Add the tomato and cook for 3 minutes until it breaks down, then tip in the beans and water and simmer for 6 minutes until creamy.",
+        "Mash roughly with a fork until creamy but still chunky, then stir in the chilli, lemon juice and parsley and serve with the toast."
+      ],
+      "notes": [
+        "Mash only part of the beans so the dish keeps some texture.",
+        "Keeps 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 312,
+        "proteinG": 14,
+        "carbsG": 40,
+        "fatG": 8,
+        "fibreG": 12,
+        "sodiumMg": 480
+      }
+    },
+    {
+      "id": "ethiopian-atkilt-wat-cabbage-carrot-and-potato",
+      "title": "Ethiopian Atkilt Wat Cabbage Carrot and Potato",
+      "summary": "A mild turmeric-scented stew of cabbage, carrot and potato, served with flatbread or rice.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp olive oil",
+            "1 large onion, sliced",
+            "3 garlic cloves, crushed",
+            "1 tbsp grated ginger",
+            "1 tsp turmeric",
+            "1/2 tsp ground cumin",
+            "400g potatoes, cut in chunks",
+            "2 carrots, sliced",
+            "300g green cabbage, shredded",
+            "250ml water",
+            "3/4 tsp salt",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion in the oil in a large pot for 6 minutes until soft, then add the garlic, ginger and spices for 1 minute until fragrant.",
+        "Add the potatoes, carrots and water, cover and simmer for 10 minutes until the potato is just starting to soften.",
+        "Stir in the cabbage and salt, cover and cook for 12 minutes more until all the vegetables are tender.",
+        "Finish with the lemon juice."
+      ],
+      "notes": [
+        "The vegetables should be tender but not falling apart.",
+        "Keeps 4 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 242,
+        "proteinG": 5,
+        "carbsG": 34,
+        "fatG": 8,
+        "fibreG": 7,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "filipino-longsilog-sausage-garlic-rice-and-egg",
+      "title": "Filipino Longsilog Sausage Garlic Rice and Egg",
+      "summary": "Sweet pork sausages with garlic fried rice and a fried egg, a Filipino breakfast favourite.",
+      "cuisine": "filipino",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 pork sausages",
+            "1 tbsp vegetable oil",
+            "4 garlic cloves, minced",
+            "300g cooked cold jasmine rice",
+            "2 eggs",
+            "1/2 tsp salt",
+            "1 tomato, sliced",
+            "1 tbsp vinegar",
+            "1 spring onion, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the sausages in a pan over medium heat for 12 to 14 minutes, turning, until browned and cooked through to 75°C inside.",
+        "Fry the garlic in the oil in a large pan for 1 minute until golden, add the rice and salt and stir-fry for 4 minutes until hot and lightly crisp.",
+        "Fry the eggs in the same pan for 3 minutes until the whites are set.",
+        "Serve the rice with the sausages, eggs, tomato and a small dish of vinegar with spring onion."
+      ],
+      "notes": [
+        "Day-old rice fries better than fresh.",
+        "Food safety: pork sausages must reach 75°C. Cool leftover rice and refrigerate it within 1 hour, and use it within 1 day."
+      ],
+      "nutrition": {
+        "kcal": 368,
+        "proteinG": 16,
+        "carbsG": 28,
+        "fatG": 21,
+        "fibreG": 1,
+        "sodiumMg": 1300
+      }
+    },
+    {
+      "id": "malaysian-telur-belado-egg-sambal",
+      "title": "Malaysian Telur Belado Egg Sambal",
+      "summary": "Boiled eggs coated in a sweet and tangy chilli sambal, great over rice.",
+      "cuisine": "malaysian",
+      "mealTypes": [
+        "breakfast",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 3,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 eggs",
+            "1 tbsp vegetable oil",
+            "1 onion, sliced",
+            "3 garlic cloves, minced",
+            "2 red chillies, finely chopped",
+            "1 tbsp tomato paste",
+            "1 tomato, chopped",
+            "1 tbsp tamarind paste",
+            "1 tsp sugar",
+            "1/2 tsp salt",
+            "100ml water"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the eggs for 9 minutes until firm, cool in cold water, peel and set aside.",
+        "Fry the onion, garlic and chillies in the oil for 6 minutes until soft and fragrant, then add the tomato paste, tomato, tamarind, sugar, salt and water.",
+        "Simmer for 8 minutes until the sambal is thick and glossy, then stir in the eggs for 2 minutes until coated and hot."
+      ],
+      "notes": [
+        "Use fewer chillies for a milder sambal.",
+        "Food safety: boil eggs until fully firm, and keep leftovers refrigerated for up to 2 days."
+      ],
+      "nutrition": {
+        "kcal": 234,
+        "proteinG": 15,
+        "carbsG": 11,
+        "fatG": 14,
+        "fibreG": 2,
+        "sodiumMg": 560
+      }
+    },
+    {
+      "id": "indonesian-vegetable-salad-with-spiced-peanut-dressing",
+      "title": "Indonesian Vegetable Salad with Spiced Peanut Dressing",
+      "summary": "A bowl of blanched vegetables, potato, egg and tofu with a rich peanut dressing.",
+      "cuisine": "indonesian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g potatoes, cut in chunks",
+            "150g green beans",
+            "200g cabbage, shredded",
+            "150g bean sprouts",
+            "200g firm tofu, cubed",
+            "4 eggs",
+            "1 cucumber, sliced",
+            "80g crunchy peanut butter",
+            "1 garlic clove, crushed",
+            "1 tbsp soy sauce",
+            "1 tbsp lime juice",
+            "1 tsp brown sugar",
+            "1 red chilli, sliced",
+            "150ml warm water"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes for 12 minutes until tender, lift out, then boil the eggs in the same water for 9 minutes until firm, cool and halve.",
+        "Blanch the green beans, cabbage and bean sprouts for 2 minutes in boiling water until just tender, then drain and cool.",
+        "Whisk the peanut butter, garlic, soy, lime, sugar, chilli and warm water until smooth and pourable.",
+        "Arrange the vegetables, potato, tofu, egg and cucumber on plates and spoon over the sauce."
+      ],
+      "notes": [
+        "Thin the sauce with more warm water if it thickens as it stands.",
+        "Food safety: boil the eggs until firm and eat the salad within 1 day."
+      ],
+      "nutrition": {
+        "kcal": 423,
+        "proteinG": 22,
+        "carbsG": 28,
+        "fatG": 23,
+        "fibreG": 8,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "indonesian-sayur-asem-tamarind-vegetable-soup",
+      "title": "Indonesian Sayur Asem Tamarind Vegetable Soup",
+      "summary": "A light sweet and sour vegetable soup with sweetcorn, green beans and tamarind.",
+      "cuisine": "indonesian",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp vegetable oil",
+            "1 onion, sliced",
+            "3 garlic cloves, minced",
+            "1.2 litres water",
+            "2 tbsp tamarind paste",
+            "1 tbsp brown sugar",
+            "2 corn cobs, cut in rounds",
+            "150g green beans, halved",
+            "200g pumpkin, cubed",
+            "100g cabbage, shredded",
+            "2 tomatoes, quartered",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onion and garlic in the oil for 4 minutes until soft and fragrant.",
+        "Add the water, tamarind, sugar and salt and bring to a simmer, then add the corn and pumpkin and cook for 10 minutes until nearly tender.",
+        "Add the beans, cabbage and tomatoes and cook for 5 minutes until the beans are tender and the soup is tangy."
+      ],
+      "notes": [
+        "Taste and balance the sweet and sour with more sugar or tamarind.",
+        "Keeps 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 118,
+        "proteinG": 2,
+        "carbsG": 18,
+        "fatG": 3,
+        "fibreG": 4,
+        "sodiumMg": 700
+      }
+    },
+    {
+      "id": "south-indian-instant-rava-dosa-with-potato-masala",
+      "title": "South Indian Instant Rava Dosa with Potato Masala",
+      "summary": "Thin crisp semolina crepes, ready without fermenting, filled with a turmeric potato masala.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100g fine semolina",
+            "50g rice flour",
+            "30g plain flour",
+            "1 tsp cumin seeds",
+            "1/2 tsp salt",
+            "100g plain yoghurt",
+            "500ml water",
+            "2 tbsp vegetable oil",
+            "400g potatoes, boiled and cubed",
+            "1 onion, sliced",
+            "1 tsp mustard seeds",
+            "1/2 tsp turmeric",
+            "1 green chilli, chopped",
+            "2 tbsp chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the semolina, flours, cumin, salt, yoghurt and water into a thin batter and let it stand while you make the filling.",
+        "Heat half the oil in a pan, pop the mustard seeds, then cook the onion for 5 minutes until soft, add the turmeric, chilli and potato and stir for 4 minutes until coated and hot, then add the coriander.",
+        "Heat a wide non-stick pan, ladle in the batter from the edge inwards in a lacy pattern and drizzle with a little oil, cooking for 2 to 3 minutes until crisp and golden.",
+        "Fill with the potato masala and fold."
+      ],
+      "notes": [
+        "The batter is thin, so stir it before each ladle.",
+        "Eat dosa straight away while crisp."
+      ],
+      "nutrition": {
+        "kcal": 294,
+        "proteinG": 8,
+        "carbsG": 46,
+        "fatG": 8,
+        "fibreG": 3,
+        "sodiumMg": 380
+      }
+    },
+    {
+      "id": "south-indian-ven-pongal-with-black-pepper-and-cashews",
+      "title": "South Indian Ven Pongal with Black Pepper and Cashews",
+      "summary": "Soft, creamy rice and lentil porridge tempered with pepper, cumin, ginger and cashews.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g short-grain rice",
+            "80g red lentils",
+            "1 litre water",
+            "1 tbsp ghee",
+            "40g cashews",
+            "1 tsp cumin seeds",
+            "1 tsp black peppercorns, crushed",
+            "1 tbsp grated ginger",
+            "1 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Rinse the rice and lentils, then simmer them with the water and salt, stirring now and then, for 25 minutes until completely soft and creamy.",
+        "Heat the ghee in a small pan, fry the cashews for 1 minute until golden, then add the cumin, pepper, ginger  for 1 minute until sizzling.",
+        "Stir the tempering into the pongal and loosen with hot water if needed."
+      ],
+      "notes": [
+        "Serve with coconut chutney or sambar.",
+        "The pongal thickens as it cools; add water when reheating."
+      ],
+      "nutrition": {
+        "kcal": 355,
+        "proteinG": 12,
+        "carbsG": 50,
+        "fatG": 11,
+        "fibreG": 4,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "south-indian-onion-semolina-uttapam",
+      "title": "South Indian Onion Semolina Uttapam",
+      "summary": "Thick savoury semolina pancakes studded with onion, tomato and green chilli.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g fine semolina",
+            "150g plain yoghurt",
+            "150ml water",
+            "1/2 tsp salt",
+            "1/2 tsp baking powder",
+            "1 onion, finely diced",
+            "1 tomato, finely diced",
+            "1 green chilli, finely chopped",
+            "3 tbsp chopped coriander",
+            "2 tbsp vegetable oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Stir the semolina, yoghurt, water and salt into a thick batter, then fold in the baking powder just before cooking.",
+        "Heat a non-stick pan with a little oil, pour on a ladle of batter and spread to about 12cm.",
+        "Scatter with onion, tomato, chilli and coriander, press lightly and cook for 3 minutes until the base is golden, then flip and cook for 2 minutes until the topping is tender and the centre is set."
+      ],
+      "notes": [
+        "Keep the heat at medium so the centres cook through.",
+        "Serve with coconut chutney or tomato chutney."
+      ],
+      "nutrition": {
+        "kcal": 210,
+        "proteinG": 7,
+        "carbsG": 31,
+        "fatG": 6,
+        "fibreG": 2,
+        "sodiumMg": 390
+      }
+    },
+    {
+      "id": "south-indian-rasam-with-black-pepper-and-tomato",
+      "title": "South Indian Rasam with Black Pepper and Tomato",
+      "summary": "A thin, peppery tomato and tamarind soup that is sharp, warming and easy to sip.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp vegetable oil",
+            "1 tsp mustard seeds",
+            "1 tsp cumin seeds",
+            "2 dried chillies",
+            "3 garlic cloves, crushed",
+            "3 tomatoes, chopped",
+            "1 tbsp tamarind paste",
+            "1 tsp black pepper, crushed",
+            "1/2 tsp turmeric",
+            "1 litre water",
+            "1 tsp salt",
+            "3 tbsp chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil, pop the mustard and cumin seeds for 30 seconds, then add the chillies and garlic for 1 minute until fragrant.",
+        "Add the tomatoes and cook for 4 minutes until soft, then stir in the tamarind, pepper, turmeric, salt and water.",
+        "Simmer gently for 12 minutes until the flavours are well blended, then stir in the coriander."
+      ],
+      "notes": [
+        "Do not boil hard or the aroma will fade.",
+        "Serve as a soup or spooned over rice."
+      ],
+      "nutrition": {
+        "kcal": 80,
+        "proteinG": 2,
+        "carbsG": 8,
+        "fatG": 4,
+        "fibreG": 2,
+        "sodiumMg": 620
+      }
+    },
+    {
+      "id": "south-indian-vegetable-sambar",
+      "title": "South Indian Vegetable Sambar",
+      "summary": "A tangy lentil and vegetable stew with tamarind and sambar spices, served with rice or idli.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g red lentils",
+            "1 litre water",
+            "1/2 tsp turmeric",
+            "1 tbsp vegetable oil",
+            "1 tsp mustard seeds",
+            "1 onion, diced",
+            "2 tbsp curry powder",
+            "1 carrot, sliced",
+            "150g pumpkin, cubed",
+            "100g green beans, chopped",
+            "2 tomatoes, chopped",
+            "1 tbsp tamarind paste",
+            "3/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the lentils with the water and turmeric for 20 minutes until completely soft, then mash lightly.",
+        "Heat the oil, pop the mustard seeds, then fry onion and curry powder for 4 minutes until soft and fragrant.",
+        "Add the carrot, pumpkin, beans, tomatoes, tamarind and salt with the lentils and simmer for 15 minutes until the vegetables are tender."
+      ],
+      "notes": [
+        "Thin with water for a soupier sambar.",
+        "Keeps 4 days in the fridge and freezes well."
+      ],
+      "nutrition": {
+        "kcal": 235,
+        "proteinG": 11,
+        "carbsG": 32,
+        "fatG": 5,
+        "fibreG": 9,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "south-indian-tomato-rice-with-curry-leaves",
+      "title": "South Indian Tomato Rice with Curry Leaves",
+      "summary": "Fragrant rice cooked with tomato, onion and whole spices, a favourite lunchbox dish.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g basmati rice",
+            "1 tbsp vegetable oil",
+            "1 tsp mustard seeds",
+            "1 tsp cumin seeds",
+            "1 onion, sliced",
+            "2 garlic cloves, crushed",
+            "1 tbsp grated ginger",
+            "3 tomatoes, chopped",
+            "1 tsp chilli powder",
+            "1/2 tsp turmeric",
+            "450ml water",
+            "3/4 tsp salt",
+            "2 tbsp chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Rinse the rice until the water runs clear. Heat the oil, pop the mustard and cumin seeds, then add the onion and cook for 5 minutes until soft.",
+        "Stir in the garlic, ginger, tomatoes, chilli and turmeric and cook for 5 minutes until the tomatoes collapse into a thick paste.",
+        "Add the rice, water and salt, bring to the boil, cover and cook on low for 12 minutes until the water is absorbed and the rice is tender, then rest for 5 minutes and fluff with coriander."
+      ],
+      "notes": [
+        "Cover tightly so the steam cooks the rice evenly.",
+        "Keeps 2 days in the fridge; reheat until steaming hot."
+      ],
+      "nutrition": {
+        "kcal": 319,
+        "proteinG": 7,
+        "carbsG": 60,
+        "fatG": 5,
+        "fibreG": 3,
+        "sodiumMg": 480
+      }
+    },
+    {
+      "id": "mexican-huevos-rancheros-with-black-beans",
+      "title": "Mexican Huevos Rancheros with Black Beans",
+      "summary": "Fried eggs on crisp tortillas with warm black beans and a chilli tomato salsa.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "4 small corn tortillas",
+            "4 eggs",
+            "1 x 400g can black beans, drained",
+            "1/2 tsp ground cumin",
+            "1 x 400g can chopped tomatoes",
+            "1 small onion, diced",
+            "1 garlic clove, crushed",
+            "1 small chilli, sliced",
+            "1/4 tsp salt",
+            "2 tbsp chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the onion, garlic, chilli, tomatoes and salt in a small pan for 10 minutes until thick, then blend roughly for a salsa.",
+        "Warm the beans with the cumin and a splash of water for 5 minutes until hot and mashable, then mash part of them.",
+        "Fry the tortillas in the oil for 1 minute each side until crisp, then fry the eggs for 3 minutes until the whites are set.",
+        "Layer the tortillas with beans, eggs and salsa and top with coriander."
+      ],
+      "notes": [
+        "Cook the eggs until firm if serving to young children.",
+        "Food safety: cook eggs until the whites are set and the yolks thickening; keep leftover salsa refrigerated for up to 3 days."
+      ],
+      "nutrition": {
+        "kcal": 487,
+        "proteinG": 24,
+        "carbsG": 52,
+        "fatG": 17,
+        "fibreG": 15,
+        "sodiumMg": 780
+      }
+    },
+    {
+      "id": "mexican-molletes-bean-and-cheese-toasts",
+      "title": "Mexican Molletes Bean and Cheese Toasts",
+      "summary": "Split bread rolls spread with refried-style black beans, topped with cheese and grilled until bubbling.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 bread rolls, halved",
+            "1 x 400g can black beans, drained",
+            "1 garlic clove, crushed",
+            "1/2 tsp ground cumin",
+            "1 tbsp olive oil",
+            "150g mozzarella, grated",
+            "1 tomato, diced",
+            "1 small onion, finely diced",
+            "2 tbsp chopped coriander",
+            "1 tbsp lime juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Mash the beans in a small pan with the garlic, cumin, oil and a splash of water and warm for 4 minutes until thick and spreadable.",
+        "Spread the beans over the cut sides of the rolls, top with mozzarella and grill for 4 to 5 minutes until the cheese is bubbling and golden.",
+        "Mix the tomato, onion, coriander and lime juice into a quick salsa and spoon over the toasts."
+      ],
+      "notes": [
+        "Keep the grill at medium so the bread toasts without burning.",
+        "Use a bolillo-style roll if you can find one."
+      ],
+      "nutrition": {
+        "kcal": 354,
+        "proteinG": 17,
+        "carbsG": 40,
+        "fatG": 12,
+        "fibreG": 9,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "honduran-style-baleadas-with-beans-and-cheese",
+      "title": "Honduran-Style Baleadas with Beans and Cheese",
+      "summary": "Soft folded flour tortillas filled with creamy beans, cheese and a drizzle of cream.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g plain flour",
+            "1/2 tsp baking powder",
+            "3/4 tsp salt",
+            "150ml warm water",
+            "3 tbsp olive oil",
+            "1 x 400g can black beans, drained",
+            "1 garlic clove, crushed",
+            "100g feta, crumbled",
+            "4 tbsp sour cream",
+            "4 eggs"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the flour, baking powder, salt, water and 2 tbsp oil into a soft dough and knead for 2 minutes, then cover and rest.",
+        "Mash the beans in a small pan with the garlic and a splash of water, warming for 5 minutes until thick and creamy.",
+        "Roll the dough into 4 circles and cook in a dry pan for 1 to 2 minutes each side until puffed and spotted, then fry the eggs in the remaining oil for 3 minutes until the whites are set.",
+        "Spread each tortilla with beans, feta and cream, add an egg and fold."
+      ],
+      "notes": [
+        "Keep the cooked tortillas wrapped in a cloth so they stay soft.",
+        "Food safety: cook the eggs until the whites are fully set."
+      ],
+      "nutrition": {
+        "kcal": 512,
+        "proteinG": 21,
+        "carbsG": 62,
+        "fatG": 18,
+        "fibreG": 9,
+        "sodiumMg": 760
+      }
+    },
+    {
+      "id": "panamanian-style-sancocho-chicken-and-corn-soup",
+      "title": "Panamanian-Style Sancocho Chicken and Corn Soup",
+      "summary": "A comforting chicken soup with corn, sweet potato and coriander, finished with lime.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "servings": 5,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g chicken thigh fillets",
+            "1.8 litres water",
+            "1 onion, diced",
+            "3 garlic cloves, crushed",
+            "2 corn cobs, cut in rounds",
+            "2 sweet potatoes, cubed",
+            "2 carrots, sliced",
+            "2 celery sticks, sliced",
+            "1 tbsp olive oil",
+            "1 tsp ground cumin",
+            "1 1/2 tsp salt",
+            "1/4 cup chopped coriander",
+            "2 limes, cut in wedges"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion in the oil for 5 minutes until soft, add the garlic and cumin for 1 minute, then add the chicken, water and salt.",
+        "Simmer for 20 minutes until the chicken is cooked through to 75°C, then lift out, shred and return to the pot.",
+        "Add the corn, sweet potato, carrots and celery and simmer for 15 minutes until the vegetables are tender.",
+        "Stir in the coriander and serve with lime wedges."
+      ],
+      "notes": [
+        "Stew keeps 3 days in the fridge.",
+        "Food safety: chicken must reach 75°C before shredding, and the soup should be reheated until steaming hot."
+      ],
+      "nutrition": {
+        "kcal": 354,
+        "proteinG": 29,
+        "carbsG": 30,
+        "fatG": 12,
+        "fibreG": 5,
+        "sodiumMg": 880
+      }
+    },
+    {
+      "id": "polish-nale-niki-sweet-cheese-crepes",
+      "title": "Polish Naleśniki Sweet Cheese Crepes",
+      "summary": "Thin crepes rolled around sweet ricotta filling and pan-warmed in butter until golden.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g plain flour",
+            "2 eggs",
+            "300ml milk",
+            "1/4 tsp salt",
+            "1 tbsp melted butter",
+            "250g ricotta",
+            "2 tbsp caster sugar",
+            "1 tsp vanilla extract",
+            "1 tsp lemon zest",
+            "20g butter",
+            "1 apple, grated"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the flour, eggs, milk, salt and melted butter into a thin lump-free batter.",
+        "Cook thin crepes in a lightly buttered non-stick pan, about 1 minute each side until pale golden, and stack them.",
+        "Mix the ricotta, sugar, vanilla, zest and grated apple, spoon along each crepe, roll up and warm in the butter for 2 minutes each side until golden and hot through."
+      ],
+      "notes": [
+        "The batter should be the consistency of single cream.",
+        "Food safety: cook until the crepes are golden and the filling is hot."
+      ],
+      "nutrition": {
+        "kcal": 324,
+        "proteinG": 15,
+        "carbsG": 38,
+        "fatG": 12,
+        "fibreG": 2,
+        "sodiumMg": 300
+      }
+    },
+    {
+      "id": "russian-blini-with-smoked-salmon-and-sour-cream",
+      "title": "Russian Blini with Smoked Salmon and Sour Cream",
+      "summary": "Small yeast-free pancakes topped with smoked salmon, sour cream and dill.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g plain flour",
+            "1 tsp baking powder",
+            "1/4 tsp salt",
+            "1 tsp sugar",
+            "1 egg",
+            "250ml milk",
+            "1 tbsp butter, melted",
+            "200g smoked salmon",
+            "100g sour cream",
+            "2 tbsp chopped dill",
+            "1 lemon, cut in wedges"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the flour, baking powder, salt, sugar, egg, milk and melted butter into a smooth batter.",
+        "Cook spoonfuls in a lightly oiled non-stick pan for 2 minutes each side until puffed and golden.",
+        "Top the warm blini with sour cream, smoked salmon and dill and serve with lemon."
+      ],
+      "notes": [
+        "Make the blini small so they are easy to eat by hand.",
+        "Food safety: smoked salmon should be kept at or below 4°C and not left out for more than 2 hours; avoid in pregnancy."
+      ],
+      "nutrition": {
+        "kcal": 340,
+        "proteinG": 20,
+        "carbsG": 33,
+        "fatG": 14,
+        "fibreG": 1,
+        "sodiumMg": 780
+      }
+    }
+  ]
+}

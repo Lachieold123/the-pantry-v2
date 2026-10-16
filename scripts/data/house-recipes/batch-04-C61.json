@@ -1,0 +1,1325 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "freezer-breakfast-burritos-with-black-beans-and-cheese",
+      "title": "Freezer Breakfast Burritos with Black Beans and Cheese",
+      "summary": "Scrambled egg, black beans and cheese rolled in tortillas, wrapped and frozen for quick reheating.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 eggs",
+            "1 tbsp olive oil",
+            "1 red capsicum, diced",
+            "1 small onion, diced",
+            "1 x 400g can black beans, drained",
+            "1 tsp ground cumin",
+            "150g cheddar, grated",
+            "6 large flour tortillas",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onion and capsicum in the oil for 5 minutes until soft, then add the beans and cumin and cook for 2 minutes until warmed through.",
+        "Whisk the eggs with the salt, pour into the pan and stir gently for 3 minutes until just set and no liquid egg remains.",
+        "Cool the filling for 15 minutes, stir in the cheese, divide among the tortillas, fold in the sides and roll up tightly.",
+        "Wrap each burrito in baking paper and freeze for up to 2 months.",
+        "To reheat, microwave one from frozen for 2 minutes then turn and heat for 1 to 2 minutes more until steaming hot throughout."
+      ],
+      "notes": [
+        "Cool the filling before wrapping or the tortillas go soggy.",
+        "Food safety: cook eggs until fully set, cool burritos within 2 hours before freezing and reheat until steaming hot (at least 75°C)."
+      ],
+      "nutrition": {
+        "kcal": 420,
+        "proteinG": 21,
+        "carbsG": 40,
+        "fatG": 18,
+        "fibreG": 7,
+        "sodiumMg": 820
+      }
+    },
+    {
+      "id": "make-ahead-egg-and-spinach-muffin-cups",
+      "title": "Make-Ahead Egg and Spinach Muffin Cups",
+      "summary": "Baked egg cups with spinach and cheese that keep all week in the fridge.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 22,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 eggs",
+            "100g baby spinach, chopped",
+            "80g cheddar, grated",
+            "1 small red onion, finely diced",
+            "60ml milk",
+            "1/2 tsp salt",
+            "1/4 tsp black pepper",
+            "1 tsp olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C and brush a 12-hole muffin tin lightly with the oil.",
+        "Whisk the eggs, milk, salt and pepper, then stir in the spinach, onion and cheese.",
+        "Pour into the tin holes about three-quarters full and bake for 20 to 22 minutes until puffed and set in the centre."
+      ],
+      "notes": [
+        "Cool completely before storing in an airtight box.",
+        "Food safety: bake until the centres are firm, refrigerate within 2 hours, eat within 4 days and reheat until steaming hot."
+      ],
+      "nutrition": {
+        "kcal": 178,
+        "proteinG": 14,
+        "carbsG": 3,
+        "fatG": 12,
+        "fibreG": 1,
+        "sodiumMg": 430
+      }
+    },
+    {
+      "id": "cold-soaked-oats-with-grated-apple-walnuts-and-honey",
+      "title": "Cold-Soaked Oats with Grated Apple, Walnuts and Honey",
+      "summary": "Creamy cold oats softened in milk and yoghurt with grated apple and a hint of cinnamon.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100g rolled oats",
+            "250ml milk",
+            "100g plain yoghurt",
+            "1 apple, grated",
+            "1 tsp ground cinnamon",
+            "1 tbsp honey",
+            "2 tbsp walnuts, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Stir the oats, milk, yoghurt, apple, cinnamon, and honey together in a jar or bowl until combined.",
+        "Cover and chill in the fridge overnight until the oats are soft and the mixture is thick.",
+        "Stir, loosen with a splash of milk if needed and top with the walnuts."
+      ],
+      "notes": [
+        "Keeps 3 days in the fridge.",
+        "Use any grated firm fruit in place of the apple."
+      ],
+      "nutrition": {
+        "kcal": 430,
+        "proteinG": 14,
+        "carbsG": 62,
+        "fatG": 12,
+        "fibreG": 9,
+        "sodiumMg": 120
+      }
+    },
+    {
+      "id": "baked-apple-and-walnut-oatmeal-squares",
+      "title": "Baked Apple and Walnut Oatmeal Squares",
+      "summary": "Chewy baked oat squares with apple and cinnamon, cut up for the week ahead.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast",
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g rolled oats",
+            "1 tsp baking powder",
+            "1 tsp ground cinnamon",
+            "1/4 tsp salt",
+            "2 eggs",
+            "400ml milk",
+            "3 tbsp maple syrup",
+            "1 tsp vanilla extract",
+            "2 apples, diced",
+            "60g walnuts, chopped",
+            "30g butter, melted"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C and line a 20cm square tin with baking paper.",
+        "Mix the oats, baking powder, cinnamon, salt and half the apple and walnuts in a bowl.",
+        "Whisk the eggs, milk, maple syrup, vanilla and butter, pour over the oats and stir, then tip into the tin and top with the remaining apple and walnuts.",
+        "Bake for 30 minutes until golden and the centre is firm."
+      ],
+      "notes": [
+        "Cut into squares once cool for neat edges.",
+        "Food safety: bake until set in the centre, refrigerate within 2 hours and eat within 4 days."
+      ],
+      "nutrition": {
+        "kcal": 275,
+        "proteinG": 8,
+        "carbsG": 34,
+        "fatG": 11,
+        "fibreG": 4,
+        "sodiumMg": 190
+      }
+    },
+    {
+      "id": "mango-coconut-soaked-oat-jars",
+      "title": "Mango Coconut Soaked Oat Jars",
+      "summary": "Coconut-milk soaked oats layered with fresh mango, set in jars overnight.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast",
+        "snack"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 3,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "80g rolled oats",
+            "300ml milk",
+            "100ml coconut milk",
+            "1 tbsp honey",
+            "1/2 tsp vanilla extract",
+            "1 large mango, diced",
+            "2 tbsp toasted coconut flakes",
+            "1 lime, juiced"
+          ]
+        }
+      ],
+      "steps": [
+        "Stir the oats, milk, coconut milk, honey and vanilla together.",
+        "Cover and chill for at least 4 hours or overnight until the oats are soft and the mixture is thick.",
+        "Mix the mango with the lime juice, then spoon the pudding and mango into jars in layers and finish with the coconut."
+      ],
+      "notes": [
+        "Stir once more before layering for a creamy texture.",
+        "Keeps 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 280,
+        "proteinG": 6,
+        "carbsG": 28,
+        "fatG": 14,
+        "fibreG": 9,
+        "sodiumMg": 60
+      }
+    },
+    {
+      "id": "freezer-wholemeal-pancakes",
+      "title": "Freezer Wholemeal Pancakes",
+      "summary": "Fluffy wholemeal pancakes cooked in batches and frozen between sheets of baking paper.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g wholemeal self-raising flour",
+            "1 tbsp sugar",
+            "1/4 tsp salt",
+            "2 eggs",
+            "300ml milk",
+            "2 tbsp melted butter",
+            "1 tsp vanilla extract",
+            "1 tsp olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the flour, sugar and salt, then add the eggs, milk, butter and vanilla and stir until just combined with a few small lumps.",
+        "Heat a non-stick pan with a little oil over medium heat, pour in about 1/4 cup batter per pancake and cook for 2 minutes until bubbles appear and the edges set.",
+        "Flip and cook for 1 to 2 minutes until golden and cooked through.",
+        "Cool, stack between baking paper and freeze for up to 2 months; reheat in the toaster until hot."
+      ],
+      "notes": [
+        "Do not overmix the batter or the pancakes turn tough.",
+        "Food safety: cook until no wet batter remains, cool within 2 hours before freezing and reheat until steaming hot."
+      ],
+      "nutrition": {
+        "kcal": 248,
+        "proteinG": 9,
+        "carbsG": 33,
+        "fatG": 8,
+        "fibreG": 4,
+        "sodiumMg": 490
+      }
+    },
+    {
+      "id": "savoury-corn-and-cheddar-breakfast-muffins",
+      "title": "Savoury Corn and Cheddar Breakfast Muffins",
+      "summary": "Tender cornmeal muffins with sweetcorn, cheddar and chives for a grab-and-go breakfast.",
+      "cuisine": "american",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 22,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g plain flour",
+            "100g cornmeal",
+            "2 tsp baking powder",
+            "1/2 tsp salt",
+            "2 eggs",
+            "250ml milk",
+            "60ml olive oil",
+            "150g corn kernels",
+            "100g cheddar, grated",
+            "2 tbsp chopped chives"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 190°C and line a 6-hole muffin tin.",
+        "Stir the flour, cornmeal, baking powder and salt in a bowl, whisk the eggs, milk and oil together and fold into the dry mix until just combined, then fold in the corn, cheese and chives.",
+        "Spoon into the cases and bake for 20 to 22 minutes until golden and a skewer comes out clean."
+      ],
+      "notes": [
+        "Best warm, split and spread with butter.",
+        "Food safety: bake until a skewer comes out clean, and refrigerate leftovers within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 395,
+        "proteinG": 12,
+        "carbsG": 38,
+        "fatG": 21,
+        "fibreG": 3,
+        "sodiumMg": 600
+      }
+    },
+    {
+      "id": "cottage-cheese-egg-bake-with-chives",
+      "title": "Cottage Cheese Egg Bake with Chives",
+      "summary": "A high-protein baked egg and cottage cheese dish, sliced like a frittata.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "6 eggs",
+            "250g cottage cheese",
+            "1 zucchini, grated",
+            "3 tbsp chopped chives",
+            "1/2 tsp salt",
+            "1/4 tsp black pepper",
+            "1 tsp olive oil",
+            "40g cheddar, grated"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C and grease a 20cm baking dish with the oil.",
+        "Whisk the eggs with the cottage cheese, zucchini, chives, salt and pepper until combined.",
+        "Pour into the dish, scatter with the cheddar and bake for 28 to 30 minutes until puffed, golden and set in the centre."
+      ],
+      "notes": [
+        "Squeeze the grated zucchini in a cloth first so the bake stays firm.",
+        "Food safety: bake until the centre is firm and fully set, then refrigerate leftovers within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 248,
+        "proteinG": 25,
+        "carbsG": 5,
+        "fatG": 14,
+        "fibreG": 1,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "high-protein-greek-yoghurt-bowl-with-nuts-and-honey",
+      "title": "High-Protein Greek Yoghurt Bowl with Nuts and Honey",
+      "summary": "Thick Greek yoghurt with toasted nuts, seeds and honey for a quick protein-rich start.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 0,
+      "servings": 1,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g Greek yoghurt",
+            "1 tbsp honey",
+            "20g almonds, chopped",
+            "1 tbsp pumpkin seeds",
+            "1 apple, diced",
+            "1/2 tsp ground cinnamon"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the almonds and pumpkin seeds in a dry pan over medium heat for 3 minutes until golden and fragrant, then cool briefly.",
+        "Dice the apple and spoon the yoghurt into a bowl.",
+        "Top with the apple and toasted nuts, drizzle with the honey and dust with cinnamon."
+      ],
+      "notes": [
+        "Add a handful of rolled oats for extra fibre.",
+        "Swap in any fruit that is in season."
+      ],
+      "nutrition": {
+        "kcal": 482,
+        "proteinG": 28,
+        "carbsG": 36,
+        "fatG": 24,
+        "fibreG": 5,
+        "sodiumMg": 110
+      }
+    },
+    {
+      "id": "lentil-and-egg-breakfast-hash",
+      "title": "Lentil and Egg Breakfast Hash",
+      "summary": "Crisp potato and lentil hash topped with fried eggs, smoky paprika and fresh parsley.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "300g potatoes, cut in small cubes",
+            "1 small onion, diced",
+            "1 tsp smoked paprika",
+            "1 x 400g can lentils, drained",
+            "2 eggs",
+            "2 tbsp chopped parsley",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the potato in a wide pan with the oil for 10 minutes, turning, until golden and tender.",
+        "Add the onion and paprika and cook for 3 minutes until soft, then stir in the lentils and salt and cook for 3 minutes until hot and crisp in places.",
+        "Make two wells, crack in the eggs, cover and cook for 3 to 4 minutes until the whites are set, then top with the parsley."
+      ],
+      "notes": [
+        "Use pre-cooked potato to save time.",
+        "Food safety: cook until the egg whites are fully set."
+      ],
+      "nutrition": {
+        "kcal": 694,
+        "proteinG": 37,
+        "carbsG": 94,
+        "fatG": 16,
+        "fibreG": 13,
+        "sodiumMg": 520
+      }
+    },
+    {
+      "id": "edamame-and-avocado-toast-with-lime",
+      "title": "Edamame and Avocado Toast with Lime",
+      "summary": "Smashed edamame and avocado piled on seeded toast with chilli and lime.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 5,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100g shelled edamame",
+            "1 avocado",
+            "2 tbsp lime juice",
+            "1/4 tsp salt",
+            "4 slices seeded bread",
+            "1/4 tsp chilli flakes",
+            "1 tbsp sesame seeds",
+            "1 spring onion, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the edamame in boiling water for 3 minutes until tender, then drain.",
+        "Mash the edamame roughly with the avocado, lime juice and salt, leaving some texture.",
+        "Toast the bread until crisp and golden, spread with the mixture and finish with chilli, sesame and spring onion."
+      ],
+      "notes": [
+        "Add a poached egg for extra protein.",
+        "Eat soon after making as avocado browns."
+      ],
+      "nutrition": {
+        "kcal": 453,
+        "proteinG": 17,
+        "carbsG": 38,
+        "fatG": 23,
+        "fibreG": 13,
+        "sodiumMg": 560
+      }
+    },
+    {
+      "id": "lentil-salad-with-roast-carrots-and-tahini",
+      "title": "Lentil Salad with Roast Carrots and Tahini",
+      "summary": "Warm roast carrots on lentils with a lemony tahini dressing and parsley.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g carrots, cut in sticks",
+            "2 tbsp olive oil",
+            "1 tsp ground cumin",
+            "480g canned lentils, drained",
+            "3 tbsp tahini",
+            "3 tbsp lemon juice",
+            "1 garlic clove, crushed",
+            "4 tbsp water",
+            "1/2 tsp salt",
+            "1/2 cup chopped parsley",
+            "1 red onion, thinly sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C, toss the carrots with the oil, cumin and a pinch of salt and roast for 25 minutes until tender and caramelised.",
+        "Whisk the tahini, lemon juice, garlic, water and salt until smooth and pourable.",
+        "Toss the lentils with the red onion and parsley, top with the warm carrots and drizzle with the dressing."
+      ],
+      "notes": [
+        "Serve warm or at room temperature.",
+        "Keeps 3 days in the fridge without the parsley."
+      ],
+      "nutrition": {
+        "kcal": 605,
+        "proteinG": 31,
+        "carbsG": 75,
+        "fatG": 17,
+        "fibreG": 14,
+        "sodiumMg": 620
+      }
+    },
+    {
+      "id": "chickpea-tabbouleh-with-mint-and-lemon",
+      "title": "Chickpea Tabbouleh with Mint and Lemon",
+      "summary": "Herb-heavy tabbouleh bulked up with chickpeas and a little fine bulgur.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "60g fine bulgur",
+            "1 x 400g can chickpeas, drained",
+            "2 bunches parsley, finely chopped",
+            "1/2 bunch mint, chopped",
+            "4 tomatoes, diced",
+            "1 cucumber, diced",
+            "4 spring onions, sliced",
+            "3 tbsp lemon juice",
+            "3 tbsp olive oil",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the bulgur in 100ml boiling water for 10 minutes until tender, then drain well.",
+        "Toss the herbs, tomatoes, cucumber, spring onions and chickpeas together.",
+        "Mix in the bulgur, lemon juice, olive oil and salt and toss again until everything is glossy."
+      ],
+      "notes": [
+        "Chop the herbs finely with a sharp knife so they stay fresh.",
+        "Keeps 2 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 295,
+        "proteinG": 10,
+        "carbsG": 30,
+        "fatG": 13,
+        "fibreG": 9,
+        "sodiumMg": 440
+      }
+    },
+    {
+      "id": "bulgur-and-tomato-kisir-with-pomegranate-molasses",
+      "title": "Bulgur and Tomato Kisir with Pomegranate Molasses",
+      "summary": "A Turkish bulgur salad with tomato paste, parsley and tangy pomegranate molasses.",
+      "cuisine": "turkish",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g fine bulgur",
+            "300ml boiling water",
+            "2 tbsp tomato paste",
+            "1 tbsp pomegranate molasses",
+            "3 tbsp olive oil",
+            "3 tbsp lemon juice",
+            "4 spring onions, sliced",
+            "1 bunch parsley, chopped",
+            "1/2 bunch mint, chopped",
+            "2 tomatoes, diced",
+            "1/2 tsp chilli flakes",
+            "1/2 tsp salt",
+            "8 lettuce leaves"
+          ]
+        }
+      ],
+      "steps": [
+        "Pour the boiling water over the bulgur and tomato paste, stir, cover and let stand for 15 minutes until the grains are tender and the water is absorbed.",
+        "Mix in the molasses, oil, lemon juice, chilli and salt.",
+        "Fold in the spring onions, herbs and tomatoes and serve in lettuce leaves."
+      ],
+      "notes": [
+        "Pomegranate molasses can be replaced with an extra splash of lemon juice.",
+        "Keeps 2 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 299,
+        "proteinG": 6,
+        "carbsG": 40,
+        "fatG": 11,
+        "fibreG": 8,
+        "sodiumMg": 400
+      }
+    },
+    {
+      "id": "warm-kale-salad-with-roast-sweet-potato-and-pepitas",
+      "title": "Warm Kale Salad with Roast Sweet Potato and Pepitas",
+      "summary": "Roast sweet potato on massaged kale with toasted pepitas and a maple mustard dressing.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g sweet potato, cubed",
+            "3 tbsp olive oil",
+            "1 tsp smoked paprika",
+            "200g kale, stalks removed and torn",
+            "3 tbsp pepitas",
+            "2 tbsp lemon juice",
+            "1 tbsp Dijon mustard",
+            "1 tbsp maple syrup",
+            "1/2 tsp salt",
+            "50g feta, crumbled"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C, toss the sweet potato with 1 tbsp oil, paprika and a pinch of salt and roast for 25 minutes until tender and caramelised at the edges.",
+        "Whisk the remaining oil, lemon juice, mustard, maple and salt together, then massage into the kale for 2 minutes until softened.",
+        "Toss the kale with the warm sweet potato, scatter with the pepitas and feta and serve."
+      ],
+      "notes": [
+        "Massaging the kale takes away the bitterness.",
+        "Keeps 2 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 347,
+        "proteinG": 8,
+        "carbsG": 37,
+        "fatG": 17,
+        "fibreG": 7,
+        "sodiumMg": 530
+      }
+    },
+    {
+      "id": "roast-cauliflower-salad-with-tahini-and-raisins",
+      "title": "Roast Cauliflower Salad with Tahini and Raisins",
+      "summary": "Spiced roast cauliflower with sweet raisins, almonds and herbs in a garlicky tahini drizzle.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 large cauliflower, cut in florets",
+            "3 tbsp olive oil",
+            "1 tsp ground cumin",
+            "1/2 tsp ground coriander",
+            "50g raisins",
+            "40g almonds, chopped",
+            "3 tbsp tahini",
+            "3 tbsp lemon juice",
+            "1 small garlic clove",
+            "4 tbsp water",
+            "1/2 tsp salt",
+            "1/2 cup chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 230°C, toss the cauliflower with the oil, cumin, coriander and half the salt and roast for 25 minutes until deep golden at the edges and tender.",
+        "Whisk the tahini, lemon juice, garlic, water and remaining salt until smooth.",
+        "Toss the warm cauliflower with the raisins, almonds and parsley and drizzle with the dressing."
+      ],
+      "notes": [
+        "Roast on a single layer so the florets brown rather than steam.",
+        "Keeps 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 343,
+        "proteinG": 10,
+        "carbsG": 25,
+        "fatG": 21,
+        "fibreG": 7,
+        "sodiumMg": 360
+      }
+    },
+    {
+      "id": "roast-carrot-salad-with-harissa-yoghurt-and-pistachios",
+      "title": "Roast Carrot Salad with Harissa Yoghurt and Pistachios",
+      "summary": "Sweet roast carrots on cooling harissa yoghurt with mint and crushed pistachios.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g carrots, halved lengthways",
+            "2 tbsp olive oil",
+            "1 tsp ground cumin",
+            "200g Greek yoghurt",
+            "1 tbsp harissa paste",
+            "1 tbsp lemon juice",
+            "1/2 tsp salt",
+            "30g pistachios, crushed",
+            "2 tbsp chopped mint",
+            "1 tbsp honey"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C, toss the carrots with the oil, cumin and a pinch of salt and roast for 30 minutes until tender and charred at the edges.",
+        "Mix the yoghurt with the harissa, lemon juice and remaining salt.",
+        "Spread the yoghurt on a platter, top with the warm carrots, drizzle with the honey and scatter with pistachios and mint."
+      ],
+      "notes": [
+        "Use less harissa for a milder yoghurt.",
+        "Keeps 2 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 275,
+        "proteinG": 8,
+        "carbsG": 28,
+        "fatG": 13,
+        "fibreG": 7,
+        "sodiumMg": 470
+      }
+    },
+    {
+      "id": "spring-pea-and-edamame-salad-with-mint-and-feta",
+      "title": "Spring Pea and Edamame Salad with Mint and Feta",
+      "summary": "A bright, fresh salad of peas, edamame and cucumber with mint, lemon and feta.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 5,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g frozen peas",
+            "200g shelled edamame",
+            "1 cucumber, diced",
+            "2 spring onions, sliced",
+            "1/4 cup chopped mint",
+            "100g feta, crumbled",
+            "3 tbsp olive oil",
+            "2 tbsp lemon juice",
+            "1 tsp honey",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the peas and edamame in boiling water for 3 minutes until tender and bright green, then drain and cool in cold water.",
+        "Whisk the oil, lemon juice, honey and salt together.",
+        "Toss the peas, edamame, cucumber and spring onions with the dressing, then fold in the mint and feta."
+      ],
+      "notes": [
+        "Dress just before serving to keep the colour bright.",
+        "Keeps 1 day in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 291,
+        "proteinG": 15,
+        "carbsG": 15,
+        "fatG": 17,
+        "fibreG": 9,
+        "sodiumMg": 420
+      }
+    },
+    {
+      "id": "winter-red-cabbage-and-pear-slaw",
+      "title": "Winter Red Cabbage and Pear Slaw",
+      "summary": "Crunchy red cabbage with pear, walnuts and a light cider mustard dressing.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g red cabbage, finely shredded",
+            "2 pears, cut in matchsticks",
+            "1 carrot, grated",
+            "50g walnuts, chopped",
+            "3 tbsp olive oil",
+            "2 tbsp apple cider vinegar",
+            "1 tbsp Dijon mustard",
+            "1 tbsp honey",
+            "1/2 tsp salt",
+            "2 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the oil, vinegar, mustard, honey and salt until emulsified.",
+        "Toss the cabbage, pears, carrot and parsley with the dressing.",
+        "Fold through the walnuts and let stand for 10 minutes before serving so the cabbage softens slightly."
+      ],
+      "notes": [
+        "Add the pear just before serving so it stays crisp and pale.",
+        "Keeps 2 days in the fridge without the walnuts."
+      ],
+      "nutrition": {
+        "kcal": 196,
+        "proteinG": 3,
+        "carbsG": 17,
+        "fatG": 12,
+        "fibreG": 4,
+        "sodiumMg": 230
+      }
+    },
+    {
+      "id": "green-beans-almondine-with-lemon",
+      "title": "Green Beans Almondine with Lemon",
+      "summary": "Crisp-tender green beans tossed with butter, toasted almonds and lemon zest.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 8,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g green beans, trimmed",
+            "30g butter",
+            "40g flaked almonds",
+            "1 garlic clove, thinly sliced",
+            "1 tsp lemon zest",
+            "1 tbsp lemon juice",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the beans in salted water for 4 minutes until bright green and just tender, then drain.",
+        "Melt the butter in a pan and cook the almonds for 2 minutes until golden, then add the garlic for 30 seconds until fragrant.",
+        "Toss the beans in the pan with the lemon zest, juice and salt until glossy and hot."
+      ],
+      "notes": [
+        "Do not let the almonds burn once they start to colour.",
+        "Serve with fish or roast chicken."
+      ],
+      "nutrition": {
+        "kcal": 160,
+        "proteinG": 5,
+        "carbsG": 10,
+        "fatG": 10,
+        "fibreG": 5,
+        "sodiumMg": 250
+      }
+    },
+    {
+      "id": "indian-aloo-jeera-cumin-potatoes",
+      "title": "Indian Aloo Jeera Cumin Potatoes",
+      "summary": "Quick pan-cooked potatoes with cumin seeds, turmeric and coriander.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "700g potatoes, cut in 2cm cubes",
+            "2 tbsp vegetable oil",
+            "2 tsp cumin seeds",
+            "1/2 tsp turmeric",
+            "1/2 tsp chilli powder",
+            "1 tsp ground coriander",
+            "1/2 tsp salt",
+            "1 tbsp lemon juice",
+            "3 tbsp chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes for 8 minutes until just tender and drain well.",
+        "Heat the oil in a wide pan, add the cumin seeds for 30 seconds until sizzling, then add the turmeric, chilli and ground coriander.",
+        "Add the potatoes and salt and cook for 8 minutes, turning, until golden and crisp at the edges.",
+        "Finish with lemon juice and fresh coriander."
+      ],
+      "notes": [
+        "Drain the potatoes very well so they fry rather than steam.",
+        "Keeps 3 days in the fridge."
+      ],
+      "nutrition": {
+        "kcal": 219,
+        "proteinG": 5,
+        "carbsG": 32,
+        "fatG": 7,
+        "fibreG": 4,
+        "sodiumMg": 290
+      }
+    },
+    {
+      "id": "indian-jeera-rice-with-whole-spices",
+      "title": "Indian Jeera Rice with Whole Spices",
+      "summary": "Fluffy basmati scented with cumin seeds, bay leaf and cardamom.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g basmati rice",
+            "1 tbsp ghee",
+            "2 tsp cumin seeds",
+            "1 bay leaf",
+            "3 cardamom pods",
+            "1 tsp salt",
+            "540ml water"
+          ]
+        }
+      ],
+      "steps": [
+        "Rinse the rice until the water runs clear, then drain.",
+        "Heat the ghee in a pot and fry the cumin, bay leaf and cardamom for 1 minute until sizzling and fragrant.",
+        "Add the rice, salt and water, bring to the boil, cover and cook on the lowest heat for 12 minutes until all the water is absorbed.",
+        "Rest, covered, for 5 minutes and fluff with a fork."
+      ],
+      "notes": [
+        "Do not lift the lid while the rice cooks.",
+        "Food safety: cool leftover rice within 1 hour and refrigerate; eat within 1 day and reheat until steaming hot."
+      ],
+      "nutrition": {
+        "kcal": 355,
+        "proteinG": 7,
+        "carbsG": 70,
+        "fatG": 5,
+        "fibreG": 1,
+        "sodiumMg": 590
+      }
+    },
+    {
+      "id": "chinese-egg-fried-rice-with-peas-and-spring-onion",
+      "title": "Chinese Egg Fried Rice with Peas and Spring Onion",
+      "summary": "Quick wok-style fried rice with softly scrambled egg, sweet peas and a splash of soy.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 tbsp vegetable oil",
+            "3 eggs",
+            "600g cooked cold rice",
+            "100g frozen peas",
+            "4 spring onions, sliced",
+            "2 garlic cloves, minced",
+            "2 tbsp soy sauce",
+            "1 tsp sesame oil",
+            "1/4 tsp white pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Beat the eggs, heat 1 tbsp oil in a large pan and scramble the eggs for 1 minute until just set, then lift out.",
+        "Heat the remaining oil, fry the garlic and spring onion whites for 30 seconds until fragrant, then add the rice and stir-fry for 4 minutes until hot and starting to crisp.",
+        "Add the peas, soy sauce, sesame oil and pepper and stir-fry for 2 minutes until the peas are hot, then fold in the egg and green spring onion."
+      ],
+      "notes": [
+        "Use cold rice so the grains stay separate.",
+        "Food safety: cook until the egg is fully set; cool leftover rice within 1 hour and use within 1 day."
+      ],
+      "nutrition": {
+        "kcal": 418,
+        "proteinG": 11,
+        "carbsG": 65,
+        "fatG": 12,
+        "fibreG": 3,
+        "sodiumMg": 640
+      }
+    },
+    {
+      "id": "hasselback-potatoes-with-garlic-and-thyme",
+      "title": "Hasselback Potatoes with Garlic and Thyme",
+      "summary": "Fan-cut potatoes roasted until crisp at the edges and soft in the middle, with garlic and thyme.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 55,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 medium potatoes, scrubbed",
+            "3 tbsp olive oil",
+            "3 garlic cloves, thinly sliced",
+            "1 tbsp thyme leaves",
+            "3/4 tsp salt",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C. Cut thin slits across each potato about 3mm apart, stopping before the base, using two chopsticks as guides.",
+        "Brush with the oil, tuck garlic slices into some slits and sprinkle with thyme, salt and pepper.",
+        "Roast for 50 to 55 minutes, basting once, until the edges are crisp and golden and the centres are soft when pierced."
+      ],
+      "notes": [
+        "Chopsticks either side of the potato stop the knife cutting all the way through.",
+        "Serve straight away while crisp."
+      ],
+      "nutrition": {
+        "kcal": 433,
+        "proteinG": 7,
+        "carbsG": 74,
+        "fatG": 11,
+        "fibreG": 5,
+        "sodiumMg": 320
+      }
+    },
+    {
+      "id": "sweet-potato-wedges-with-smoked-paprika-and-lime",
+      "title": "Sweet Potato Wedges with Smoked Paprika and Lime",
+      "summary": "Crisp roast sweet potato wedges with smoked paprika, finished with lime and a cooling yoghurt dip.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g sweet potatoes, cut in wedges",
+            "2 tbsp olive oil",
+            "1 tsp smoked paprika",
+            "1/2 tsp garlic powder",
+            "1/2 tsp salt",
+            "150g plain yoghurt",
+            "1 tbsp lime juice",
+            "2 tbsp chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C and toss the wedges with the oil, paprika, garlic powder and salt.",
+        "Roast on a lined tray, turning once, for 30 to 35 minutes until crisp at the edges and tender inside.",
+        "Stir the lime juice and coriander into the yoghurt and serve alongside."
+      ],
+      "notes": [
+        "Leave space between the wedges so they crisp.",
+        "Eat the same day for best crunch."
+      ],
+      "nutrition": {
+        "kcal": 272,
+        "proteinG": 6,
+        "carbsG": 41,
+        "fatG": 8,
+        "fibreG": 6,
+        "sodiumMg": 310
+      }
+    },
+    {
+      "id": "peruvian-papa-a-la-huancaina-with-boiled-egg",
+      "title": "Peruvian Papa a la Huancaina with Boiled Egg",
+      "summary": "Sliced potatoes under a creamy cheese and chilli sauce, a Peruvian classic.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g waxy potatoes",
+            "2 eggs",
+            "150g feta",
+            "100ml evaporated milk",
+            "1 tbsp lime juice",
+            "1 small chilli, deseeded",
+            "1 slice bread",
+            "2 tbsp olive oil",
+            "8 black olives",
+            "4 lettuce leaves",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes for 18 to 20 minutes until tender, and boil the eggs for 9 minutes until firm, then cool both.",
+        "Blend the feta, evaporated milk, lime juice, chilli, bread, oil and salt until smooth and creamy.",
+        "Peel and slice the potatoes, arrange on lettuce, spoon over the sauce and top with halved eggs and olives."
+      ],
+      "notes": [
+        "The sauce thickens as it chills; thin with a splash of milk.",
+        "Food safety: boil eggs until firm and eat within 1 day if keeping."
+      ],
+      "nutrition": {
+        "kcal": 361,
+        "proteinG": 14,
+        "carbsG": 36,
+        "fatG": 17,
+        "fibreG": 4,
+        "sodiumMg": 780
+      }
+    }
+  ]
+}

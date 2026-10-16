@@ -1,0 +1,915 @@
+{
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
+    {
+      "id": "pork-and-apple-soup-with-sage",
+      "title": "Pork and Apple Soup with Sage",
+      "summary": "A gentle pork shoulder soup with apple, sage, carrot and potato.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 60,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "500g pork shoulder, cubed",
+            "1 onion, diced",
+            "2 carrots, diced",
+            "1 apple, diced",
+            "2 tbsp chopped sage",
+            "2 potatoes, cubed",
+            "1.2 litres chicken stock",
+            "1/2 tsp salt",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a large pot and brown the pork in two batches over high heat for 5 minutes until coloured.",
+        "Add the onion and carrot and cook for 5 minutes until soft, then add the sage, stock, salt and pepper and simmer gently for 35 minutes until the pork is tender.",
+        "Add the potato and apple and simmer for 15 minutes until the potato is cooked and the apple is soft.",
+        "Taste, adjust the seasoning and serve hot."
+      ],
+      "notes": [
+        "Choose a tart apple so it holds some shape.",
+        "Food safety: cook the pork until tender and at least 75°C inside; refrigerate leftovers within 2 hours and reheat until steaming."
+      ],
+      "nutrition": {
+        "kcal": 483,
+        "proteinG": 40,
+        "carbsG": 27,
+        "fatG": 23,
+        "fibreG": 4,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "ham-and-corn-fritters-with-chive-yoghurt",
+      "title": "Ham and Corn Fritters with Chive Yoghurt",
+      "summary": "Golden pan-fried fritters with ham and sweet corn, served with a cool chive yoghurt.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "150g plain flour",
+            "1 tsp baking powder",
+            "2 eggs",
+            "150ml milk",
+            "300g sweet corn kernels",
+            "100g ham, diced",
+            "3 spring onions, sliced",
+            "1/4 tsp salt",
+            "2 tbsp vegetable oil",
+            "150g plain yoghurt",
+            "2 tbsp chopped chives"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the flour, baking powder, eggs, milk and salt into a thick batter, then fold in the corn, ham and spring onion.",
+        "Heat a little oil in a frying pan over medium heat and spoon in the batter in 1/4 cup mounds.",
+        "Cook for 3 minutes each side until golden and cooked through, keeping the cooked fritters warm.",
+        "Stir the chives into the yoghurt and serve with the fritters."
+      ],
+      "notes": [
+        "Do not overcrowd the pan or the fritters will steam.",
+        "Food safety: cook until golden and the centres are fully set with no wet batter; refrigerate leftovers within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 340,
+        "proteinG": 17,
+        "carbsG": 39,
+        "fatG": 12,
+        "fibreG": 4,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "coconut-porridge-with-roasted-pineapple",
+      "title": "Coconut Porridge with Roasted Pineapple",
+      "summary": "Creamy oats cooked in coconut milk, topped with caramelised roasted pineapple and toasted coconut.",
+      "cuisine": "pacific-islands",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g pineapple, cut in chunks",
+            "1 tbsp honey",
+            "80g rolled oats",
+            "125ml coconut milk",
+            "375ml water",
+            "1/4 tsp salt",
+            "2 tbsp desiccated coconut"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200C. Place the pineapple on a tray, drizzle with honey and roast for 15 minutes until golden and caramelised.",
+        "Cook the oats, coconut milk, water and salt in a saucepan over medium heat, stirring, for 8 minutes until thick and creamy.",
+        "Toast the coconut in a dry pan for 2 minutes until golden.",
+        "Spoon the porridge into bowls and top with pineapple and toasted coconut."
+      ],
+      "notes": [
+        "Use canned pineapple rings in juice if fresh is not available; drain well.",
+        "Stir in a little extra water if the porridge is too thick."
+      ],
+      "nutrition": {
+        "kcal": 418,
+        "proteinG": 8,
+        "carbsG": 62,
+        "fatG": 14,
+        "fibreG": 6,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "apple-and-oat-yoghurt-parfait",
+      "title": "Apple and Oat Yoghurt Parfait",
+      "summary": "Layers of yoghurt, stewed cinnamon apple and crunchy toasted oats.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 apples, diced",
+            "2 tbsp water",
+            "1/2 tsp ground cinnamon",
+            "1 tbsp honey",
+            "40g rolled oats",
+            "1 tsp butter",
+            "300g plain yoghurt",
+            "20g chopped walnuts"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the apples, water and cinnamon in a saucepan for 6 minutes until soft, then stir in the honey and cool.",
+        "Toast the oats in the butter in a dry pan for 4 minutes until golden and crisp.",
+        "Layer the yoghurt, apple and oats in two glasses and top with walnuts."
+      ],
+      "notes": [
+        "Make the apple the night before for quick mornings.",
+        "Add a pinch of nutmeg if you like."
+      ],
+      "nutrition": {
+        "kcal": 428,
+        "proteinG": 17,
+        "carbsG": 51,
+        "fatG": 16,
+        "fibreG": 6,
+        "sodiumMg": 130
+      }
+    },
+    {
+      "id": "sticky-soy-roasted-pumpkin-wedges",
+      "title": "Sticky Soy Roasted Pumpkin Wedges",
+      "summary": "Roasted pumpkin glazed in soy, honey and ginger until sticky and caramelised.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g pumpkin, cut in wedges",
+            "2 tbsp vegetable oil",
+            "2 tbsp soy sauce",
+            "1 tbsp honey",
+            "1 tbsp grated ginger",
+            "1 garlic clove, crushed",
+            "1 tbsp sesame seeds",
+            "2 spring onions, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220C. Toss the pumpkin with the oil and roast for 20 minutes until starting to brown.",
+        "Mix the soy, honey, ginger and garlic, brush over the pumpkin and roast for 12 minutes until sticky and tender.",
+        "Scatter with sesame seeds and spring onion and serve."
+      ],
+      "notes": [
+        "Line the tray with baking paper to avoid sticking.",
+        "Keep the skin on for easier handling."
+      ],
+      "nutrition": {
+        "kcal": 204,
+        "proteinG": 4,
+        "carbsG": 27,
+        "fatG": 8,
+        "fibreG": 4,
+        "sodiumMg": 540
+      }
+    },
+    {
+      "id": "spiced-cabbage-and-potato-side",
+      "title": "Spiced Cabbage and Potato Side",
+      "summary": "A dry-spiced cabbage and potato stir-fry with mustard seeds and turmeric.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp vegetable oil",
+            "1 tsp mustard seeds",
+            "1 tsp cumin seeds",
+            "1 onion, sliced",
+            "3 potatoes, diced",
+            "1 tsp ground turmeric",
+            "1 tsp ground coriander",
+            "1/2 tsp salt",
+            "400g cabbage, shredded",
+            "3 tbsp water",
+            "2 tbsp chopped coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a wide pan and fry the mustard and cumin seeds for 30 seconds until they pop.",
+        "Add the onion and cook for 4 minutes until soft, then add the potato, turmeric, ground coriander and salt and cook for 8 minutes, stirring, until the potato starts to soften.",
+        "Add the cabbage and water, cover and cook for 8 minutes until both are tender.",
+        "Scatter with coriander and serve."
+      ],
+      "notes": [
+        "Cut the potato small so it cooks at the same pace as the cabbage.",
+        "Add a squeeze of lemon at the end."
+      ],
+      "nutrition": {
+        "kcal": 236,
+        "proteinG": 5,
+        "carbsG": 33,
+        "fatG": 8,
+        "fibreG": 6,
+        "sodiumMg": 340
+      }
+    },
+    {
+      "id": "turmeric-rice-with-peas-and-cashews",
+      "title": "Turmeric Rice with Peas and Cashews",
+      "summary": "Fluffy turmeric rice with peas and toasted cashews, a bright side for curries.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp ghee",
+            "1 tsp cumin seeds",
+            "1 onion, diced",
+            "200g basmati rice",
+            "1 tsp ground turmeric",
+            "400ml water",
+            "1/2 tsp salt",
+            "100g frozen peas",
+            "40g cashews, toasted"
+          ]
+        }
+      ],
+      "steps": [
+        "Melt the ghee in a saucepan and fry the cumin seeds for 30 seconds until they sizzle, then add the onion and cook for 5 minutes until soft.",
+        "Stir in the rice and turmeric for 1 minute, add the water and salt, cover and cook on low for 12 minutes until the water is absorbed, adding the peas for the last 3 minutes.",
+        "Rest for 5 minutes, fluff with a fork and stir through the cashews."
+      ],
+      "notes": [
+        "Rinse the rice first for separate grains.",
+        "Do not lift the lid while it cooks."
+      ],
+      "nutrition": {
+        "kcal": 344,
+        "proteinG": 8,
+        "carbsG": 54,
+        "fatG": 10,
+        "fibreG": 3,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "smoky-baked-bean-side-with-bacon",
+      "title": "Smoky Baked Bean Side with Bacon",
+      "summary": "Slow-simmered white beans in a smoky tomato sauce with bacon and a little brown sugar.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "100g bacon, diced",
+            "1 onion, diced",
+            "2 garlic cloves, crushed",
+            "1 tsp smoked paprika",
+            "400g canned tomatoes",
+            "2 tbsp brown sugar",
+            "1 tbsp apple cider vinegar",
+            "720g canned cannellini beans, drained",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the bacon and oil in a saucepan over medium heat for 5 minutes until crisp, then add the onion and garlic and cook for 4 minutes until soft.",
+        "Stir in the paprika, tomatoes, sugar and vinegar and simmer for 8 minutes until slightly thick.",
+        "Add the beans and salt and simmer gently for 15 minutes until the sauce clings to the beans.",
+        "Stir once more until glossy and heated through, then serve hot with grilled meats or on toast."
+      ],
+      "notes": [
+        "It thickens as it cools; add a splash of water to loosen.",
+        "Food safety: cook the bacon until crisp and refrigerate leftovers within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 248,
+        "proteinG": 13,
+        "carbsG": 31,
+        "fatG": 6,
+        "fibreG": 9,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "tangy-pickled-carrots",
+      "title": "Tangy Pickled Carrots",
+      "summary": "Crisp carrot batons in a sweet and tangy vinegar brine, ready to eat the next day.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 5,
+      "servings": 8,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g carrots, cut in batons",
+            "250ml white vinegar",
+            "250ml water",
+            "3 tbsp sugar",
+            "1 tbsp salt",
+            "1 tsp mustard seeds",
+            "2 garlic cloves, sliced",
+            "1 tsp black peppercorns"
+          ]
+        }
+      ],
+      "steps": [
+        "Pack the carrots into clean jars.",
+        "Heat the vinegar, water, sugar, salt, mustard seeds, garlic and peppercorns in a saucepan for 4 minutes until the sugar dissolves and the brine is steaming.",
+        "Pour the hot brine over the carrots, cool and refrigerate."
+      ],
+      "notes": [
+        "Keeps in the fridge for up to 3 weeks.",
+        "Only part of the brine is eaten, so the sodium is an estimate."
+      ],
+      "nutrition": {
+        "kcal": 40,
+        "proteinG": 1,
+        "carbsG": 8,
+        "fatG": 0,
+        "fibreG": 2,
+        "sodiumMg": 560
+      }
+    },
+    {
+      "id": "mince-and-vegetable-soup-with-macaroni",
+      "title": "Mince and Vegetable Soup with Macaroni",
+      "summary": "A family-style soup with beef mince, vegetables and macaroni.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "400g beef mince",
+            "1 onion, diced",
+            "2 carrots, diced",
+            "2 celery stalks, diced",
+            "3 garlic cloves, crushed",
+            "400g canned tomatoes",
+            "1.2 litres beef stock",
+            "1 tsp dried oregano",
+            "120g macaroni",
+            "100g frozen peas",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a large pot and brown the mince over high heat for 6 minutes, breaking it up, until no pink remains.",
+        "Add the onion, carrot, celery and garlic and cook for 5 minutes until soft, then add the tomatoes, stock and oregano and simmer for 15 minutes.",
+        "Add the macaroni and simmer for 8 minutes until tender, adding the peas for the last 3 minutes.",
+        "Season with salt and serve hot."
+      ],
+      "notes": [
+        "The pasta will absorb liquid on standing, so add water when reheating.",
+        "Food safety: cook the mince until no pink remains and at least 75°C; refrigerate leftovers within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 299,
+        "proteinG": 20,
+        "carbsG": 32,
+        "fatG": 9,
+        "fibreG": 5,
+        "sodiumMg": 650
+      }
+    },
+    {
+      "id": "smoky-sausage-and-capsicum-soup",
+      "title": "Smoky Sausage and Capsicum Soup",
+      "summary": "Sausage, capsicum and tomato simmered with smoked paprika and white beans.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "4 beef sausages, sliced",
+            "1 onion, sliced",
+            "2 red capsicums, sliced",
+            "3 garlic cloves, crushed",
+            "2 tsp smoked paprika",
+            "400g canned tomatoes",
+            "800ml chicken stock",
+            "480g canned white beans, drained",
+            "1/2 tsp salt",
+            "2 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a pot and brown the sausage over medium heat for 6 minutes until golden and cooked.",
+        "Add the onion and capsicum and cook for 6 minutes until soft, then stir in the garlic and paprika for 1 minute.",
+        "Add the tomatoes, stock, beans and salt and simmer for 15 minutes until the capsicum is tender and the soup is slightly thick.",
+        "Scatter with parsley and serve."
+      ],
+      "notes": [
+        "Mash a few beans to thicken the soup.",
+        "Food safety: cook sausages until no pink remains and at least 75°C inside; refrigerate leftovers within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 252,
+        "proteinG": 14,
+        "carbsG": 19,
+        "fatG": 12,
+        "fibreG": 6,
+        "sodiumMg": 1200
+      }
+    },
+    {
+      "id": "italian-sausage-and-tortellini-soup",
+      "title": "Italian Sausage and Tortellini Soup",
+      "summary": "Italian sausage, spinach and cheese tortellini in a tomato broth.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp olive oil",
+            "300g Italian sausage, removed from casings",
+            "1 onion, diced",
+            "3 garlic cloves, crushed",
+            "400g canned tomatoes",
+            "1 litre chicken stock",
+            "250g cheese tortellini",
+            "100g baby spinach",
+            "1 tsp dried oregano",
+            "1/4 tsp black pepper"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil in a pot and cook the sausage meat over medium-high heat for 7 minutes, breaking it up, until browned and cooked through.",
+        "Add the onion and garlic and cook for 4 minutes until soft, then pour in the tomatoes, stock, oregano and pepper and simmer for 8 minutes.",
+        "Add the tortellini and cook for 4 minutes until it floats and is tender, then stir in the spinach for 1 minute until wilted.",
+        "Ladle into warm bowls and serve hot with crusty bread."
+      ],
+      "notes": [
+        "Choose fresh tortellini from the chilled aisle.",
+        "Food safety: cook the sausage until no pink remains and at least 75°C inside; refrigerate leftovers within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 462,
+        "proteinG": 25,
+        "carbsG": 34,
+        "fatG": 24,
+        "fibreG": 5,
+        "sodiumMg": 1300
+      }
+    },
+    {
+      "id": "eggy-bread-with-maple-bacon",
+      "title": "Eggy Bread with Maple Bacon",
+      "summary": "Egg-dipped bread fried until golden, served with maple-glazed crispy bacon.",
+      "cuisine": "american",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": true,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "4 rashers bacon",
+            "1 tbsp maple syrup",
+            "2 eggs",
+            "80ml milk",
+            "1/4 tsp ground cinnamon",
+            "4 slices bread",
+            "1 tbsp butter"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the bacon in a dry pan over medium heat for 5 minutes until crisp, then brush with maple syrup and cook for 1 minute until glossy and set aside.",
+        "Whisk the eggs, milk and cinnamon in a shallow dish.",
+        "Dip the bread into the egg mix until soaked, then fry in the butter for 3 minutes each side until golden and cooked through.",
+        "Serve the eggy bread topped with the bacon."
+      ],
+      "notes": [
+        "Use slightly stale bread for the best texture.",
+        "Food safety: cook the egg-soaked bread until golden and no wet egg remains; avoid undercooked eggs for young children, pregnant women and older adults."
+      ],
+      "nutrition": {
+        "kcal": 417,
+        "proteinG": 23,
+        "carbsG": 33,
+        "fatG": 21,
+        "fibreG": 2,
+        "sodiumMg": 1000
+      }
+    },
+    {
+      "id": "spinach-and-cheese-breakfast-quesadilla",
+      "title": "Spinach and Cheese Breakfast Quesadilla",
+      "summary": "Crisp tortilla folded around scrambled egg, wilted spinach and melted cheese.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 2,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tsp olive oil",
+            "100g baby spinach",
+            "3 eggs, beaten",
+            "1/4 tsp salt",
+            "2 large tortillas",
+            "80g grated mozzarella",
+            "1 tomato, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Wilt the spinach in a hot pan with the oil for 2 minutes until soft, then pour in the eggs and salt and stir for 2 minutes until just set.",
+        "Sprinkle half of each tortilla with the cheese, top with the egg and spinach and the tomato, and fold over.",
+        "Toast in a dry pan over medium heat for 2 minutes each side until golden and the cheese has melted.",
+        "Cut into wedges and serve."
+      ],
+      "notes": [
+        "Press down lightly with a spatula for even browning.",
+        "Food safety: cook eggs until set with no liquid egg remaining; avoid undercooked eggs for young children, pregnant women and older adults."
+      ],
+      "nutrition": {
+        "kcal": 380,
+        "proteinG": 24,
+        "carbsG": 29,
+        "fatG": 18,
+        "fibreG": 3,
+        "sodiumMg": 760
+      }
+    },
+    {
+      "id": "broccoli-salad-with-bacon-and-sunflower-seeds",
+      "title": "Broccoli Salad with Bacon and Sunflower Seeds",
+      "summary": "Raw broccoli florets with crispy bacon, sunflower seeds and a tangy yoghurt dressing.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 8,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100g bacon, diced",
+            "500g broccoli, cut in small florets",
+            "1/2 red onion, finely sliced",
+            "40g sunflower seeds",
+            "40g sultanas",
+            "150g plain yoghurt",
+            "2 tbsp mayonnaise",
+            "1 tbsp apple cider vinegar",
+            "1 tsp honey",
+            "1/4 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the bacon in a dry pan over medium heat for 6 minutes until crisp, then drain on paper towel.",
+        "Toss the broccoli, onion, sunflower seeds and sultanas in a large bowl.",
+        "Whisk the yoghurt, mayonnaise, vinegar, honey and salt, pour over the salad and toss to coat.",
+        "Top with the bacon and serve cold."
+      ],
+      "notes": [
+        "Chop the florets small so every bite has some dressing.",
+        "Food safety: cook the bacon until crisp and refrigerate leftovers within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 306,
+        "proteinG": 13,
+        "carbsG": 21,
+        "fatG": 18,
+        "fibreG": 4,
+        "sodiumMg": 500
+      }
+    },
+    {
+      "id": "herbed-cauliflower-rice-salad",
+      "title": "Herbed Cauliflower Rice Salad",
+      "summary": "Finely chopped cauliflower tossed with herbs, tomato and lemon in a tabbouleh style.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 5,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cauliflower, grated or finely chopped (about 600g)",
+            "2 tbsp olive oil",
+            "3 tomatoes, diced",
+            "1 cucumber, diced",
+            "1 cup chopped parsley",
+            "1/2 cup chopped mint",
+            "3 spring onions, sliced",
+            "1 lemon, juiced",
+            "3 tbsp olive oil",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat 2 tbsp oil in a pan and cook the cauliflower for 4 minutes over medium heat until just tender, then cool.",
+        "Toss with the tomato, cucumber, parsley, mint and spring onion.",
+        "Dress with the lemon juice, remaining oil and salt and toss until combined.",
+        "Chill for 10 minutes before serving."
+      ],
+      "notes": [
+        "Squeeze the cauliflower in a tea towel after cooking to avoid a watery salad.",
+        "Serve with grilled meats or falafel."
+      ],
+      "nutrition": {
+        "kcal": 209,
+        "proteinG": 5,
+        "carbsG": 11,
+        "fatG": 15,
+        "fibreG": 5,
+        "sodiumMg": 330
+      }
+    },
+    {
+      "id": "cheesy-garlic-mushrooms-side",
+      "title": "Cheesy Garlic Mushrooms Side",
+      "summary": "Pan-roasted mushrooms in garlic butter with melted mozzarella and parsley.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g button mushrooms, halved",
+            "2 tbsp butter",
+            "3 garlic cloves, sliced",
+            "1 tbsp olive oil",
+            "1/4 tsp salt",
+            "1/4 tsp black pepper",
+            "80g grated mozzarella",
+            "2 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oil and half the butter in a wide pan and cook the mushrooms over high heat for 8 minutes until golden and any liquid has gone.",
+        "Add the remaining butter, garlic, salt and pepper and cook for 1 minute until fragrant.",
+        "Scatter with the mozzarella, cover and cook for 2 minutes until melted, then top with parsley and serve."
+      ],
+      "notes": [
+        "Do not crowd the pan or the mushrooms will steam instead of browning.",
+        "Serve on toast for a quick lunch."
+      ],
+      "nutrition": {
+        "kcal": 199,
+        "proteinG": 10,
+        "carbsG": 5,
+        "fatG": 15,
+        "fibreG": 2,
+        "sodiumMg": 280
+      }
+    },
+    {
+      "id": "cabbage-steaks-with-garlic-butter",
+      "title": "Cabbage Steaks with Garlic Butter",
+      "summary": "Thick cabbage slices roasted until caramelised and brushed with garlic butter.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 small green cabbage (about 800g), cut in 4 thick slices",
+            "3 tbsp olive oil",
+            "1/2 tsp salt",
+            "40g butter",
+            "3 garlic cloves, crushed",
+            "1 lemon, juiced",
+            "2 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220C. Brush the cabbage with the oil, season with salt and arrange on a tray.",
+        "Roast for 25 minutes, turning once, until the edges are charred and the centres are tender.",
+        "Melt the butter with the garlic for 1 minute until fragrant and bubbling, then stir in the lemon juice.",
+        "Drizzle the garlic butter over the cabbage and scatter with parsley."
+      ],
+      "notes": [
+        "Keep the core in each slice so the layers stay together.",
+        "Add chilli flakes for a little heat."
+      ],
+      "nutrition": {
+        "kcal": 246,
+        "proteinG": 4,
+        "carbsG": 14,
+        "fatG": 18,
+        "fibreG": 6,
+        "sodiumMg": 440
+      }
+    }
+  ]
+}
