@@ -71,6 +71,14 @@ const REVIEWED: Record<string, Record<string, string>> = {
   'slow-cooker-lamb-neck-with-tomato': { time: 'the step sum counts the low and high options twice' },
   'gravad-lax-med-senapssas': { amounts: 'curing salt, wiped off before serving' },
   'gat-kimchi': { amounts: 'brining salt, rinsed off' },
+  // Real condiments, pastes, pickles and a side under the 40 kcal floor, worked out from food tables
+  // (docs/NUTRITION-13-SOURCES.md). OWNER DECISION pending: keep these exemptions or change the floor rule.
+  'base-genep': { nutrition: 'a spice paste; 28 kcal a serve is true' },
+  'nozawana-zuke': { nutrition: 'a pickled leaf; 22 kcal a serve is true' },
+  'pico-de-gallo': { nutrition: 'a fresh salsa; 39 kcal a serve is true' },
+  torshi: { nutrition: 'a pickle; 32 kcal a serve is true' },
+  'horenso-no-ohitashi': { nutrition: 'a spinach side; 39 kcal a serve is true' },
+  'jaew-makhuea-thet-charred-tomato-jaew': { nutrition: 'a dipping sauce; 36 kcal a serve is true' },
 };
 const fail = (check: string, detail: string) =>
   REVIEWED[current.id]?.[check]
