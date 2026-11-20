@@ -61869,10 +61869,12 @@
             "ingredientId": "chilli-flakes"
           },
           {
-            "item": "400g tins crushed tomatoes",
+            "item": "crushed tomatoes",
             "raw": "2 x 400g tins crushed tomatoes",
-            "quantity": 2,
-            "ingredientId": "tinned-tomatoes"
+            "quantity": 800,
+            "unit": "g",
+            "ingredientId": "tinned-tomatoes",
+            "note": "tins"
           },
           {
             "item": "pitted kalamata olives",
@@ -65475,10 +65477,12 @@
             "ingredientId": "chilli-flakes"
           },
           {
-            "item": "400g tins crushed tomatoes",
+            "item": "crushed tomatoes",
             "raw": "2 x 400g tins crushed tomatoes",
-            "quantity": 2,
-            "ingredientId": "tinned-tomatoes"
+            "quantity": 800,
+            "unit": "g",
+            "ingredientId": "tinned-tomatoes",
+            "note": "tins"
           },
           {
             "item": "water",
@@ -73435,11 +73439,13 @@
             "ingredientId": "ground-cumin"
           },
           {
-            "item": "400g tins pinto beans",
+            "item": "pinto beans",
             "raw": "2 x 400g tins pinto beans, drained, 60ml liquid kept",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "kidney-beans",
-            "prep": "drained, 60ml liquid kept"
+            "prep": "drained, 60ml liquid kept",
+            "note": "tins"
           },
           {
             "item": "salt",
@@ -93920,10 +93926,12 @@
             "ingredientId": "laksa-paste"
           },
           {
-            "item": "400 ml tin coconut milk",
+            "item": "coconut milk",
             "raw": "1 x 400 ml tin coconut milk",
-            "quantity": 1,
-            "ingredientId": "coconut-milk"
+            "quantity": 400,
+            "unit": "ml",
+            "ingredientId": "coconut-milk",
+            "note": "tin"
           },
           {
             "item": "tamarind paste",
@@ -136372,10 +136380,12 @@
             "prep": "sliced"
           },
           {
-            "item": "400 ml tin coconut cream",
+            "item": "coconut cream",
             "raw": "2 x 400 ml tin coconut cream",
-            "quantity": 2,
-            "ingredientId": "coconut-cream"
+            "quantity": 800,
+            "unit": "ml",
+            "ingredientId": "coconut-cream",
+            "note": "tin"
           },
           {
             "item": "salt",
@@ -152361,10 +152371,12 @@
             "ingredientId": "harissa"
           },
           {
-            "item": "400g tins diced tomatoes",
+            "item": "diced tomatoes",
             "raw": "2 x 400g tins diced tomatoes",
-            "quantity": 2,
-            "ingredientId": "tinned-tomatoes"
+            "quantity": 800,
+            "unit": "g",
+            "ingredientId": "tinned-tomatoes",
+            "note": "tins"
           },
           {
             "item": "eggs",
@@ -153012,11 +153024,13 @@
       {
         "items": [
           {
-            "item": "400g tins chickpeas",
+            "item": "chickpeas",
             "raw": "2 x 400g tins chickpeas, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "chickpeas",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "tins"
           },
           {
             "item": "garlic",
@@ -158228,11 +158242,13 @@
             "ingredientId": "tomato-paste"
           },
           {
-            "item": "400g tins cannellini beans",
+            "item": "cannellini beans",
             "raw": "2 x 400g tins cannellini beans, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "cannellini-beans",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "tins"
           },
           {
             "item": "vegetable stock",
@@ -162292,11 +162308,13 @@
       {
         "items": [
           {
-            "item": "400g tins cannellini beans",
+            "item": "cannellini beans",
             "raw": "2 x 400g tins cannellini beans, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "cannellini-beans",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "tins"
           },
           {
             "item": "olive oil",
@@ -182874,9 +182892,10 @@
             "ingredientId": "ground-cumin"
           },
           {
-            "item": "400g tinned black beans",
+            "item": "tinned black beans",
             "raw": "2 x 400g tinned black beans, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "black-beans",
             "prep": "drained"
           },
@@ -183544,9 +183563,10 @@
             "prep": "sliced"
           },
           {
-            "item": "400g tinned black beans",
+            "item": "tinned black beans",
             "raw": "1 x 400g tinned black beans, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "black-beans",
             "prep": "drained"
           },
@@ -184219,9 +184239,10 @@
             "ingredientId": "beef-stock"
           },
           {
-            "item": "400g tinned black beans",
+            "item": "tinned black beans",
             "raw": "2 x 400g tinned black beans, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "black-beans",
             "prep": "drained"
           },
@@ -185065,9 +185086,10 @@
             "ingredientId": "egg"
           },
           {
-            "item": "185g tinned tuna",
+            "item": "tinned tuna",
             "raw": "1 x 185g tinned tuna, drained",
-            "quantity": 1,
+            "quantity": 185,
+            "unit": "g",
             "ingredientId": "tinned-tuna",
             "prep": "drained"
           },
@@ -185187,9 +185209,10 @@
             "prep": "juiced"
           },
           {
-            "item": "400g tinned chickpeas",
+            "item": "tinned chickpeas",
             "raw": "2 x 400g tinned chickpeas, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "chickpeas",
             "prep": "drained"
           },
@@ -185398,9 +185421,10 @@
       {
         "items": [
           {
-            "item": "400g tinned chickpeas",
+            "item": "tinned chickpeas",
             "raw": "1 x 400g tinned chickpeas, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "chickpeas",
             "prep": "drained"
           },
@@ -185733,9 +185757,10 @@
             "prep": "cut into wedges"
           },
           {
-            "item": "400g tinned chickpeas",
+            "item": "tinned chickpeas",
             "raw": "1 x 400g tinned chickpeas, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "chickpeas",
             "prep": "drained"
           },
@@ -186211,9 +186236,10 @@
             "ingredientId": "olive-oil"
           },
           {
-            "item": "400g tinned chickpeas",
+            "item": "tinned chickpeas",
             "raw": "2 x 400g tinned chickpeas, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "chickpeas",
             "prep": "drained"
           },
@@ -187405,9 +187431,10 @@
       {
         "items": [
           {
-            "item": "400g tinned black beans",
+            "item": "tinned black beans",
             "raw": "2 x 400g tinned black beans, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "black-beans",
             "prep": "drained"
           },
@@ -188026,9 +188053,10 @@
             "prep": "cubed"
           },
           {
-            "item": "400g tinned chickpeas",
+            "item": "tinned chickpeas",
             "raw": "1 x 400g tinned chickpeas, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "chickpeas",
             "prep": "drained"
           },
@@ -188082,9 +188110,10 @@
             "ingredientId": "thyme"
           },
           {
-            "item": "400ml tinned coconut milk",
+            "item": "tinned coconut milk",
             "raw": "1 x 400ml tinned coconut milk",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "ml",
             "ingredientId": "coconut-milk"
           },
           {
@@ -189455,9 +189484,10 @@
             "ingredientId": "italian-sausage"
           },
           {
-            "item": "400g tinned cannellini beans",
+            "item": "tinned cannellini beans",
             "raw": "2 x 400g tinned cannellini beans, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "cannellini-beans",
             "prep": "drained"
           },
@@ -190704,9 +190734,10 @@
       {
         "items": [
           {
-            "item": "400g tinned cannellini beans",
+            "item": "tinned cannellini beans",
             "raw": "3 x 400g tinned cannellini beans, drained",
-            "quantity": 3,
+            "quantity": 1200,
+            "unit": "g",
             "ingredientId": "cannellini-beans",
             "prep": "drained"
           },
@@ -192095,9 +192126,10 @@
             "ingredientId": "neutral-oil"
           },
           {
-            "item": "400g tinned baked beans",
+            "item": "tinned baked beans",
             "raw": "1 x 400g tinned baked beans",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "baked-beans"
           },
           {
@@ -192998,9 +193030,10 @@
             "ingredientId": "sweet-potato"
           },
           {
-            "item": "400g tinned black beans",
+            "item": "tinned black beans",
             "raw": "1 x 400g tinned black beans, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "black-beans",
             "prep": "drained"
           },
@@ -193798,9 +193831,10 @@
             "ingredientId": "neutral-oil"
           },
           {
-            "item": "400g tinned black beans",
+            "item": "tinned black beans",
             "raw": "1 x 400g tinned black beans, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "black-beans",
             "prep": "drained"
           },
@@ -194459,9 +194493,10 @@
             "ingredientId": "chorizo"
           },
           {
-            "item": "400g tinned red kidney beans",
+            "item": "tinned red kidney beans",
             "raw": "1 x 400g tinned red kidney beans, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "kidney-beans",
             "prep": "drained"
           },
@@ -194781,9 +194816,10 @@
       {
         "items": [
           {
-            "item": "400g tinned black beans",
+            "item": "tinned black beans",
             "raw": "2 x 400g tinned black beans, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "black-beans",
             "prep": "drained"
           },
@@ -195100,9 +195136,10 @@
             "prep": "cubed"
           },
           {
-            "item": "400g tinned chickpeas",
+            "item": "tinned chickpeas",
             "raw": "1 x 400g tinned chickpeas, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "chickpeas",
             "prep": "drained"
           },
@@ -195502,9 +195539,10 @@
             "prep": "bone in"
           },
           {
-            "item": "400g tinned chickpeas",
+            "item": "tinned chickpeas",
             "raw": "2 x 400g tinned chickpeas, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "chickpeas",
             "prep": "drained"
           },
@@ -195925,9 +195963,10 @@
             "ingredientId": "tinned-tomatoes"
           },
           {
-            "item": "400g tinned chickpeas",
+            "item": "tinned chickpeas",
             "raw": "1 x 400g tinned chickpeas, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "chickpeas",
             "prep": "drained"
           },
@@ -196218,9 +196257,10 @@
       {
         "items": [
           {
-            "item": "400g tinned chickpeas",
+            "item": "tinned chickpeas",
             "raw": "2 x 400g tinned chickpeas, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "chickpeas",
             "prep": "drained"
           },
@@ -196922,16 +196962,18 @@
             "ingredientId": "white-rice"
           },
           {
-            "item": "400g tinned black-eyed beans",
+            "item": "tinned black-eyed beans",
             "raw": "1 x 400g tinned black-eyed beans, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "black-eyed-beans",
             "prep": "drained"
           },
           {
-            "item": "400ml tinned coconut milk",
+            "item": "tinned coconut milk",
             "raw": "1 x 400ml tinned coconut milk",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "ml",
             "ingredientId": "coconut-milk"
           },
           {
@@ -197190,9 +197232,10 @@
             "prep": "whole"
           },
           {
-            "item": "400g tinned cannellini beans",
+            "item": "tinned cannellini beans",
             "raw": "2 x 400g tinned cannellini beans, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "cannellini-beans",
             "prep": "drained"
           },
@@ -198917,9 +198960,10 @@
       {
         "items": [
           {
-            "item": "400g tinned red kidney beans",
+            "item": "tinned red kidney beans",
             "raw": "3 x 400g tinned red kidney beans, drained",
-            "quantity": 3,
+            "quantity": 1200,
+            "unit": "g",
             "ingredientId": "kidney-beans",
             "prep": "drained"
           },
@@ -199278,9 +199322,10 @@
             "ingredientId": "white-rice"
           },
           {
-            "item": "400g tinned black beans",
+            "item": "tinned black beans",
             "raw": "1 x 400g tinned black beans, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "black-beans",
             "prep": "drained"
           },
@@ -199513,9 +199558,10 @@
             "ingredientId": "tinned-tomatoes"
           },
           {
-            "item": "400g tinned black beans",
+            "item": "tinned black beans",
             "raw": "1 x 400g tinned black beans, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "black-beans",
             "prep": "drained"
           },
@@ -199986,9 +200032,10 @@
             "ingredientId": "tinned-tomatoes"
           },
           {
-            "item": "400ml tinned coconut milk",
+            "item": "tinned coconut milk",
             "raw": "1 x 400ml tinned coconut milk",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "ml",
             "ingredientId": "coconut-milk"
           },
           {
@@ -200616,9 +200663,10 @@
             "ingredientId": "chicken-stock"
           },
           {
-            "item": "400g tinned chickpeas",
+            "item": "tinned chickpeas",
             "raw": "1 x 400g tinned chickpeas, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "chickpeas",
             "prep": "drained"
           },
@@ -201614,9 +201662,10 @@
             "prep": "chopped"
           },
           {
-            "item": "400g tinned chickpeas",
+            "item": "tinned chickpeas",
             "raw": "1 x 400g tinned chickpeas, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "chickpeas",
             "prep": "drained"
           }
@@ -201802,9 +201851,10 @@
             "ingredientId": "olive-oil"
           },
           {
-            "item": "400g tinned chickpeas",
+            "item": "tinned chickpeas",
             "raw": "2 x 400g tinned chickpeas, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "chickpeas",
             "prep": "drained"
           },
@@ -202245,9 +202295,10 @@
             "prep": "diced"
           },
           {
-            "item": "400g tinned chickpeas",
+            "item": "tinned chickpeas",
             "raw": "1 x 400g tinned chickpeas, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "chickpeas",
             "prep": "drained"
           },
@@ -203790,9 +203841,10 @@
             "ingredientId": "chilli-powder"
           },
           {
-            "item": "400g tinned cannellini beans",
+            "item": "tinned cannellini beans",
             "raw": "2 x 400g tinned cannellini beans, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "cannellini-beans",
             "prep": "drained"
           },
@@ -204308,9 +204360,10 @@
             "prep": "juiced"
           },
           {
-            "item": "400g tinned cannellini beans",
+            "item": "tinned cannellini beans",
             "raw": "2 x 400g tinned cannellini beans, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "cannellini-beans",
             "prep": "drained"
           },
@@ -204719,9 +204772,10 @@
       {
         "items": [
           {
-            "item": "400g tinned cannellini beans",
+            "item": "tinned cannellini beans",
             "raw": "2 x 400g tinned cannellini beans, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "cannellini-beans",
             "prep": "drained"
           },
@@ -208087,9 +208141,10 @@
             "ingredientId": "neutral-oil"
           },
           {
-            "item": "400g tinned black beans",
+            "item": "tinned black beans",
             "raw": "2 x 400g tinned black beans, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "black-beans",
             "prep": "drained"
           },
@@ -208352,9 +208407,10 @@
             "ingredientId": "white-rice"
           },
           {
-            "item": "400g tinned black beans",
+            "item": "tinned black beans",
             "raw": "1 x 400g tinned black beans, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "black-beans",
             "prep": "drained"
           },
@@ -213334,11 +213390,13 @@
             "prep": "for deep frying"
           },
           {
-            "item": "400g can chickpeas",
+            "item": "chickpeas",
             "raw": "2 x 400g can chickpeas, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "chickpeas",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "can"
           },
           {
             "item": "brown onion",
@@ -221564,9 +221622,10 @@
             "ingredientId": "tinned-tomatoes"
           },
           {
-            "item": "400g canned kidney beans",
+            "item": "canned kidney beans",
             "raw": "2 x 400g canned kidney beans, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "kidney-beans",
             "prep": "drained"
           },
@@ -222388,9 +222447,10 @@
             "prep": "crushed"
           },
           {
-            "item": "400g canned black-eyed beans",
+            "item": "canned black-eyed beans",
             "raw": "2 x 400g canned black-eyed beans, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "black-eyed-beans",
             "prep": "drained"
           },
@@ -222939,9 +222999,10 @@
       {
         "items": [
           {
-            "item": "400g canned chickpeas",
+            "item": "canned chickpeas",
             "raw": "3 x 400g canned chickpeas, drained",
-            "quantity": 3,
+            "quantity": 1200,
+            "unit": "g",
             "ingredientId": "chickpeas",
             "prep": "drained"
           },
@@ -223405,9 +223466,10 @@
             "ingredientId": "tinned-tomatoes"
           },
           {
-            "item": "400g canned cannellini beans",
+            "item": "canned cannellini beans",
             "raw": "2 x 400g canned cannellini beans, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "cannellini-beans",
             "prep": "drained"
           },
@@ -223966,9 +224028,10 @@
       {
         "items": [
           {
-            "item": "400g canned black beans",
+            "item": "canned black beans",
             "raw": "2 x 400g canned black beans, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "black-beans",
             "prep": "drained"
           },
@@ -251591,9 +251654,10 @@
       {
         "items": [
           {
-            "item": "400g canned chickpea",
+            "item": "canned chickpea",
             "raw": "2 x 400g canned chickpea, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "chickpeas",
             "prep": "drained"
           },
@@ -252968,9 +253032,10 @@
       {
         "items": [
           {
-            "item": "400g canned cannellini bean",
+            "item": "canned cannellini bean",
             "raw": "2 x 400g canned cannellini bean, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "cannellini-beans",
             "prep": "drained"
           },
@@ -417896,11 +417961,13 @@
       {
         "items": [
           {
-            "item": "400g cans chickpeas",
+            "item": "chickpeas",
             "raw": "2 x 400g cans chickpeas, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "chickpeas",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "cans"
           },
           {
             "item": "neutral oil",
@@ -424766,11 +424833,13 @@
       {
         "items": [
           {
-            "item": "400g tins chickpeas",
+            "item": "chickpeas",
             "raw": "2 x 400g tins chickpeas, drained and rinsed",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "chickpeas",
-            "prep": "drained and rinsed"
+            "prep": "drained and rinsed",
+            "note": "tins"
           },
           {
             "item": "olive oil",
@@ -442384,11 +442453,13 @@
       {
         "items": [
           {
-            "item": "400g cans chickpeas",
+            "item": "chickpeas",
             "raw": "2 x 400g cans chickpeas, drained and rinsed",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "chickpeas",
-            "prep": "drained and rinsed"
+            "prep": "drained and rinsed",
+            "note": "cans"
           },
           {
             "item": "olive oil",
@@ -474399,9 +474470,10 @@
       {
         "items": [
           {
-            "item": "400g tinned kidney beans",
+            "item": "tinned kidney beans",
             "raw": "2 x 400g tinned kidney beans, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "kidney-beans",
             "prep": "drained"
           },
@@ -479621,9 +479693,10 @@
             "prep": "cubed"
           },
           {
-            "item": "400g tinned corn kernels",
+            "item": "tinned corn kernels",
             "raw": "2 x 400g tinned corn kernels, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "corn-kernels",
             "prep": "drained"
           },
@@ -482933,9 +483006,10 @@
       {
         "items": [
           {
-            "item": "400g tinned black-eyed beans",
+            "item": "tinned black-eyed beans",
             "raw": "2 x 400g tinned black-eyed beans, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "black-eyed-beans",
             "prep": "drained"
           },
@@ -484138,9 +484212,10 @@
       {
         "items": [
           {
-            "item": "400g tinned black beans",
+            "item": "tinned black beans",
             "raw": "2 x 400g tinned black beans, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "black-beans",
             "prep": "drained"
           },
@@ -484566,9 +484641,10 @@
       {
         "items": [
           {
-            "item": "400g tinned kidney beans",
+            "item": "tinned kidney beans",
             "raw": "2 x 400g tinned kidney beans, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "kidney-beans",
             "prep": "drained"
           },
@@ -488496,9 +488572,10 @@
             "prep": "cubed"
           },
           {
-            "item": "400g tinned kidney beans",
+            "item": "tinned kidney beans",
             "raw": "2 x 400g tinned kidney beans, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "kidney-beans",
             "prep": "drained"
           },
@@ -515689,18 +515766,22 @@
       {
         "items": [
           {
-            "item": "400g can chickpeas",
+            "item": "chickpeas",
             "raw": "1 x 400g can chickpeas, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "chickpeas",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "can"
           },
           {
-            "item": "400g can kidney beans",
+            "item": "kidney beans",
             "raw": "1 x 400g can kidney beans, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "kidney-beans",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "can"
           },
           {
             "item": "brown lentils",
@@ -518533,11 +518614,13 @@
             "ingredientId": "white-rice"
           },
           {
-            "item": "400g can black-eyed beans",
+            "item": "black-eyed beans",
             "raw": "1 x 400g can black-eyed beans, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "black-eyed-beans",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "can"
           },
           {
             "item": "chicken thigh fillet",
@@ -522441,11 +522524,13 @@
       {
         "items": [
           {
-            "item": "400g tins cannellini beans",
+            "item": "cannellini beans",
             "raw": "2 x 400g tins cannellini beans, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "cannellini-beans",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "tins"
           },
           {
             "item": "olive oil",
@@ -522902,11 +522987,13 @@
       {
         "items": [
           {
-            "item": "400g tins chickpeas",
+            "item": "chickpeas",
             "raw": "2 x 400g tins chickpeas, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "chickpeas",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "tins"
           },
           {
             "item": "tahini",
@@ -523280,11 +523367,13 @@
       {
         "items": [
           {
-            "item": "400g tins chickpeas",
+            "item": "chickpeas",
             "raw": "2 x 400g tins chickpeas, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "chickpeas",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "tins"
           },
           {
             "item": "olive oil",
@@ -564452,11 +564541,13 @@
             "ingredientId": "fish-stock"
           },
           {
-            "item": "100 g cans clams",
+            "item": "clams",
             "raw": "2 x 100 g cans clams, drained",
-            "quantity": 2,
+            "quantity": 200,
+            "unit": "g",
             "ingredientId": "clams",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "cans"
           },
           {
             "item": "thyme leaves",
@@ -569538,11 +569629,13 @@
             "prep": "crushed"
           },
           {
-            "item": "400 g cans cannellini beans",
+            "item": "cannellini beans",
             "raw": "2 x 400 g cans cannellini beans, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "cannellini-beans",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "cans"
           },
           {
             "item": "tomato sauce",
@@ -570832,11 +570925,13 @@
             "prep": "cubed"
           },
           {
-            "item": "400 g cans black beans",
+            "item": "black beans",
             "raw": "2 x 400 g cans black beans, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "black-beans",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "cans"
           },
           {
             "item": "canned diced tomatoes",
@@ -571829,11 +571924,13 @@
             "prep": "halved"
           },
           {
-            "item": "400 g cans cannellini beans",
+            "item": "cannellini beans",
             "raw": "2 x 400 g cans cannellini beans, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "cannellini-beans",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "cans"
           },
           {
             "item": "red onion",
@@ -598352,10 +598449,12 @@
             "prep": "chopped"
           },
           {
-            "item": "400g cans chopped tomatoes",
+            "item": "chopped tomatoes",
             "raw": "2 x 400g cans chopped tomatoes",
-            "quantity": 2,
-            "ingredientId": "tinned-tomatoes"
+            "quantity": 800,
+            "unit": "g",
+            "ingredientId": "tinned-tomatoes",
+            "note": "cans"
           },
           {
             "item": "brown onions",
@@ -600316,10 +600415,12 @@
             "prep": "diced"
           },
           {
-            "item": "400g tins whole peeled tomatoes",
+            "item": "whole peeled tomatoes",
             "raw": "2 x 400g tins whole peeled tomatoes",
-            "quantity": 2,
-            "ingredientId": "tinned-tomatoes"
+            "quantity": 800,
+            "unit": "g",
+            "ingredientId": "tinned-tomatoes",
+            "note": "tins"
           },
           {
             "item": "low-FODMAP vegetable stock",
@@ -600708,10 +600809,12 @@
             "prep": "finely diced"
           },
           {
-            "item": "400g tins crushed tomatoes",
+            "item": "crushed tomatoes",
             "raw": "2 x 400g tins crushed tomatoes",
-            "quantity": 2,
-            "ingredientId": "tinned-tomatoes"
+            "quantity": 800,
+            "unit": "g",
+            "ingredientId": "tinned-tomatoes",
+            "note": "tins"
           },
           {
             "item": "water",
@@ -601443,11 +601546,13 @@
             "prep": "crushed"
           },
           {
-            "item": "400g tins butter beans",
+            "item": "butter beans",
             "raw": "2 x 400g tins butter beans, drained and rinsed",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "cannellini-beans",
-            "prep": "drained and rinsed"
+            "prep": "drained and rinsed",
+            "note": "tins"
           },
           {
             "item": "crushed tomatoes",
@@ -601539,11 +601644,13 @@
       {
         "items": [
           {
-            "item": "400g tins chickpeas",
+            "item": "chickpeas",
             "raw": "2 x 400g tins chickpeas, drained and rinsed",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "chickpeas",
-            "prep": "drained and rinsed"
+            "prep": "drained and rinsed",
+            "note": "tins"
           },
           {
             "item": "Lebanese cucumbers",
@@ -603152,17 +603259,21 @@
             "prep": "crushed"
           },
           {
-            "item": "400g tins diced tomatoes",
+            "item": "diced tomatoes",
             "raw": "2 x 400g tins diced tomatoes",
-            "quantity": 2,
-            "ingredientId": "tinned-tomatoes"
+            "quantity": 800,
+            "unit": "g",
+            "ingredientId": "tinned-tomatoes",
+            "note": "tins"
           },
           {
-            "item": "400g tins cannellini beans",
+            "item": "cannellini beans",
             "raw": "2 x 400g tins cannellini beans, drained",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "cannellini-beans",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "tins"
           },
           {
             "item": "vegetable stock",
@@ -603625,11 +603736,13 @@
             "prep": "crushed"
           },
           {
-            "item": "400g tins butter beans",
+            "item": "butter beans",
             "raw": "2 x 400g tins butter beans, drained and rinsed",
-            "quantity": 2,
+            "quantity": 800,
+            "unit": "g",
             "ingredientId": "cannellini-beans",
-            "prep": "drained and rinsed"
+            "prep": "drained and rinsed",
+            "note": "tins"
           },
           {
             "item": "chicken stock",
@@ -604055,10 +604168,12 @@
             "prep": "crushed"
           },
           {
-            "item": "400g tins crushed tomatoes",
+            "item": "crushed tomatoes",
             "raw": "2 x 400g tins crushed tomatoes",
-            "quantity": 2,
-            "ingredientId": "tinned-tomatoes"
+            "quantity": 800,
+            "unit": "g",
+            "ingredientId": "tinned-tomatoes",
+            "note": "tins"
           },
           {
             "item": "vegetable stock",
@@ -618757,11 +618872,13 @@
             "ingredientId": "penne"
           },
           {
-            "item": "185g tins tuna in olive oil",
+            "item": "tuna in olive oil",
             "raw": "2 x 185g tins tuna in olive oil, drained",
-            "quantity": 2,
+            "quantity": 370,
+            "unit": "g",
             "ingredientId": "tinned-tuna",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "tins"
           },
           {
             "item": "cherry tomatoes",
@@ -619599,11 +619716,13 @@
             "prep": "drained"
           },
           {
-            "item": "210g tins pink salmon",
+            "item": "pink salmon",
             "raw": "2 x 210g tins pink salmon, drained",
-            "quantity": 2,
+            "quantity": 420,
+            "unit": "g",
             "ingredientId": "salmon",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "tins"
           },
           {
             "item": "rocket",
@@ -620602,11 +620721,13 @@
             "ingredientId": "olive-oil"
           },
           {
-            "item": "400g can butter beans",
+            "item": "butter beans",
             "raw": "1 x 400g can butter beans, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "cannellini-beans",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "can"
           },
           {
             "item": "small onion",
@@ -620837,10 +620958,12 @@
             "prep": "crushed"
           },
           {
-            "item": "400g can chopped tomatoes",
+            "item": "chopped tomatoes",
             "raw": "1 x 400g can chopped tomatoes",
-            "quantity": 1,
-            "ingredientId": "tinned-tomatoes"
+            "quantity": 400,
+            "unit": "g",
+            "ingredientId": "tinned-tomatoes",
+            "note": "can"
           },
           {
             "item": "walnuts",
@@ -620994,10 +621117,12 @@
             "ingredientId": "tomato-paste"
           },
           {
-            "item": "400g can chopped tomatoes",
+            "item": "chopped tomatoes",
             "raw": "1 x 400g can chopped tomatoes",
-            "quantity": 1,
-            "ingredientId": "tinned-tomatoes"
+            "quantity": 400,
+            "unit": "g",
+            "ingredientId": "tinned-tomatoes",
+            "note": "can"
           },
           {
             "item": "water",
@@ -621113,11 +621238,13 @@
             "ingredientId": "ground-turmeric"
           },
           {
-            "item": "400g can butter beans",
+            "item": "butter beans",
             "raw": "1 x 400g can butter beans, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "cannellini-beans",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "can"
           },
           {
             "item": "water",
@@ -622611,11 +622738,13 @@
             "ingredientId": "egg"
           },
           {
-            "item": "400g can black beans",
+            "item": "black beans",
             "raw": "1 x 400g can black beans, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "black-beans",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "can"
           },
           {
             "item": "ground cumin",
@@ -622625,10 +622754,12 @@
             "ingredientId": "ground-cumin"
           },
           {
-            "item": "400g can chopped tomatoes",
+            "item": "chopped tomatoes",
             "raw": "1 x 400g can chopped tomatoes",
-            "quantity": 1,
-            "ingredientId": "tinned-tomatoes"
+            "quantity": 400,
+            "unit": "g",
+            "ingredientId": "tinned-tomatoes",
+            "note": "can"
           },
           {
             "item": "small onion",
@@ -622717,11 +622848,13 @@
             "prep": "halved"
           },
           {
-            "item": "400g can black beans",
+            "item": "black beans",
             "raw": "1 x 400g can black beans, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "black-beans",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "can"
           },
           {
             "item": "garlic",
@@ -622857,11 +622990,13 @@
             "ingredientId": "olive-oil"
           },
           {
-            "item": "400g can black beans",
+            "item": "black beans",
             "raw": "1 x 400g can black beans, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "black-beans",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "can"
           },
           {
             "item": "garlic",
@@ -623333,11 +623468,13 @@
             "prep": "diced"
           },
           {
-            "item": "400g can black beans",
+            "item": "black beans",
             "raw": "1 x 400g can black beans, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "black-beans",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "can"
           },
           {
             "item": "ground cumin",
@@ -624241,11 +624378,13 @@
             "ingredientId": "smoked-paprika"
           },
           {
-            "item": "400g can lentils",
+            "item": "lentils",
             "raw": "1 x 400g can lentils, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "brown-lentils",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "can"
           },
           {
             "item": "eggs",
@@ -624538,11 +624677,13 @@
             "ingredientId": "bulgur"
           },
           {
-            "item": "400g can chickpeas",
+            "item": "chickpeas",
             "raw": "1 x 400g can chickpeas, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "chickpeas",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "can"
           },
           {
             "item": "parsley",
@@ -627184,10 +627325,12 @@
             "prep": "crushed"
           },
           {
-            "item": "400g can chopped tomatoes",
+            "item": "chopped tomatoes",
             "raw": "1 x 400g can chopped tomatoes",
-            "quantity": 1,
-            "ingredientId": "tinned-tomatoes"
+            "quantity": 400,
+            "unit": "g",
+            "ingredientId": "tinned-tomatoes",
+            "note": "can"
           },
           {
             "item": "vegetable stock",
@@ -627204,11 +627347,13 @@
             "prep": "diced"
           },
           {
-            "item": "400g can cannellini beans",
+            "item": "cannellini beans",
             "raw": "1 x 400g can cannellini beans, drained",
-            "quantity": 1,
+            "quantity": 400,
+            "unit": "g",
             "ingredientId": "cannellini-beans",
-            "prep": "drained"
+            "prep": "drained",
+            "note": "can"
           },
           {
             "item": "small pasta shapes",
@@ -631880,12 +632025,13 @@
       {
         "items": [
           {
-            "item": "95g cans tuna in springwater",
+            "item": "tuna in springwater",
             "raw": "2 x 95g cans tuna in springwater, drained (190g)",
-            "quantity": 2,
+            "quantity": 190,
+            "unit": "g",
             "ingredientId": "tinned-tuna",
             "prep": "drained",
-            "note": "190g"
+            "note": "190g; cans"
           },
           {
             "item": "desiccated coconut",
