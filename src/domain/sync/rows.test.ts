@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
 import { EMPTY_EDITS } from '../shopping/derive';
+import { rowFits } from './limits';
 import {
   canonicalRows,
   changedRows,
@@ -63,6 +64,19 @@ describe('the personal side as rows', () => {
   it('round-trips: rows rebuild exactly what they came from', () => {
     const rows = changedRows({}, personal, 30, 'phone');
     assert.deepEqual(personalFromRows(rows), personal);
+  });
+  it('cooking skill and what you came for travel too (DATA-14)', () => {
+    const withSkill: Personal = { ...personal, prefs: { ...personal.prefs, skill: 'confident', intents: ['plan', 'tonight'] } };
+    assert.deepEqual(personalFromRows(changedRows({}, withSkill, 30)).prefs, withSkill.prefs);
+  });
+  it('a huge collection still reaches other phones whole: its own row fits, the members carry the rest (DATA-6)', () => {
+    const ids = Array.from({ length: 3000 }, (_, i) => `recipe-number-${String(i).padStart(5, '0')}`);
+    const big: Personal = { ...EMPTY_PERSONAL, collections: [{ id: 'c1', name: 'All', recipeIds: ids, createdAt: 1, updatedAt: 2 }] };
+    const rows = changedRows({}, big, 30);
+    assert.ok(rows.every(rowFits));
+    const back = personalFromRows(rows).collections[0];
+    assert.equal(back?.recipeIds.length, 3000);
+    assert.deepEqual(back?.recipeIds.slice(0, 10), ids.slice(0, 10)); // your order, as far as it fits
   });
   it('a snapshot only makes rows for the parts it holds', () => {
     const kinds = new Set([...canonicalRows({ ...kitchen, ...personal }).values()].map((c) => c.kind));

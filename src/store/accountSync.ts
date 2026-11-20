@@ -17,6 +17,7 @@ import type { TimeFilter } from '@/domain/recipes/search';
 import type { CuisineId } from '@/domain/recipes/types';
 import type { Shelf } from '@/domain/cupboard/cookable';
 import { storedRecipes } from '@/domain/recipes/stored';
+import { INTENTS, SKILLS, type Skill } from '@/domain/welcome/onboarding';
 import {
   changedRows,
   KITCHEN_KINDS,
@@ -61,6 +62,8 @@ export function localPersonal(): Personal {
       units: p.units,
       shelf: cupboard.shelf,
       moveTicked: cupboard.moveTickedToCupboard,
+      skill: p.skill ?? null,
+      intents: p.intents,
     },
   };
 }
@@ -86,6 +89,8 @@ function applyPrefs(prefs: Personal['prefs']): void {
   if (Array.isArray(prefs.cuisines)) next.cuisines = prefs.cuisines as CuisineId[];
   if ('weeknight' in prefs) next.weeknight = typeof prefs.weeknight === 'string' ? (prefs.weeknight as TimeFilter) : undefined;
   if (prefs.units === 'metric' || prefs.units === 'imperial') next.units = prefs.units as UnitSystem;
+  if ('skill' in prefs) next.skill = SKILLS.includes(prefs.skill as Skill) ? (prefs.skill as Skill) : undefined;
+  if (Array.isArray(prefs.intents)) next.intents = INTENTS.filter((i) => (prefs.intents as unknown[]).includes(i));
   usePreferences.setState(next);
   const cupboard: Partial<ReturnType<typeof useCupboard.getState>> = {};
   if (isObj(prefs.shelf) && typeof prefs.shelf.mode === 'string') cupboard.shelf = prefs.shelf as Shelf;

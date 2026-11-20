@@ -18,9 +18,10 @@ export type SyncCollection = { id: string; name: string; recipeIds: readonly str
  * your kitchen. The theme, high contrast and the Sunday reminder stay on each
  * phone: the first two suit the screen and the eyes in front of it, and the
  * reminder is a notification only this phone can schedule, so syncing it
- * would show "on" on a phone that never asked permission.
+ * would show "on" on a phone that never asked permission. Cooking skill and
+ * what you came for are about you too, and Home ranks by skill (DATA-14).
  */
-export const SYNCED_PREFS = ['diet', 'avoid', 'cuisines', 'weeknight', 'units', 'shelf', 'moveTicked'] as const;
+export const SYNCED_PREFS = ['diet', 'avoid', 'cuisines', 'weeknight', 'units', 'shelf', 'moveTicked', 'skill', 'intents'] as const;
 export type SyncedPref = (typeof SYNCED_PREFS)[number];
 
 export type Personal = {
@@ -45,7 +46,7 @@ export const RECENT_KEY = 'list';
 export function personalRecords(p: Personal, put: Put): void {
   for (const b of p.bookmarks) put('bookmark', b.recipeId, { savedAt: b.savedAt });
   for (const c of p.collections) {
-    put('collection', c.id, { name: c.name, recipeIds: [...c.recipeIds], createdAt: c.createdAt, updatedAt: c.updatedAt });
+    put('collection', c.id, { name: c.name, recipeIds: orderThatFits(c.recipeIds), createdAt: c.createdAt, updatedAt: c.updatedAt });
     // One row per recipe in it too, so two phones adding to the same collection offline both keep theirs (BUG-29).
     for (const id of c.recipeIds) put('collection', memberKey(c.id, id), {});
   }
@@ -54,6 +55,26 @@ export function personalRecords(p: Personal, put: Put): void {
   if (p.recent.length) put('recent', RECENT_KEY, { ids: [...p.recent] });
   for (const e of p.cookLog) put('cooklog', e.id, { recipeId: e.recipeId, cookedAt: e.cookedAt });
   for (const name of SYNCED_PREFS) if (name in p.prefs) put('prefs', name, { value: p.prefs[name] ?? null });
+}
+
+/** Characters of ids a collection's own row keeps its order for: well under the server's row cap, even in three-byte characters. */
+export const MAX_ORDER_CHARS = 15_000;
+
+/**
+ * The head row keeps the order of as many recipes as fit (DATA-6). A huge
+ * collection's own row used to be set aside, and other phones then had no
+ * collection at all. The member rows still carry every recipe; past the cap
+ * they just come back sorted rather than in your order.
+ */
+function orderThatFits(ids: readonly string[]): string[] {
+  let chars = 0;
+  const kept: string[] = [];
+  for (const id of ids) {
+    chars += id.length + 3;
+    if (chars > MAX_ORDER_CHARS) break;
+    kept.push(id);
+  }
+  return kept;
 }
 
 const isObj = (v: unknown): v is Record<string, unknown> => typeof v === 'object' && v !== null;
