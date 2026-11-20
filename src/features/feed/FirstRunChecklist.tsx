@@ -8,6 +8,7 @@ import { Pressable, ScrollView, View } from 'react-native';
 
 import type { ChecklistStepId } from '@/domain/welcome/checklist';
 import { useChecklist, useFirstRunChecklist } from '@/store/checklist';
+import { useTour } from '@/store/tour';
 import { Icon, type IconName } from '@/ui/primitives/Icon';
 import { IconButton } from '@/ui/primitives/IconButton';
 import { Text } from '@/ui/primitives/Text';
@@ -29,11 +30,13 @@ export function FirstRunChecklist() {
   const router = useRouter();
   const { steps, done, total, visible } = useFirstRunChecklist();
   const dismiss = useChecklist((s) => s.dismiss);
-  if (!visible) return null;
+  // Held until the tour is done: two first-run guides at once compete (UX-13). The tour starts itself until seen.
+  const touring = useTour((s) => !s.seen || s.step !== undefined);
+  if (!visible || touring) return null;
   return (
     <View style={styles.card} testID="checklist">
       <View style={styles.head}>
-        <View style={styles.ring} accessibilityLabel={`${done} of ${total} done`} testID="checklist-count">
+        <View style={styles.ring} accessible accessibilityLabel={`${done} of ${total} done`} testID="checklist-count">
           <Text variant="numberDay" colour="ink">{`${done}/${total}`}</Text>
         </View>
         <View style={styles.fill}>

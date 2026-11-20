@@ -11,7 +11,8 @@ export const TOUR_STEPS: readonly TourStep[] = [
     // A tile: the stop covers the switch and the "From N things" line under it.
     shape: 'tile',
     title: 'What I have',
-    body: 'Dishes you can cook right now with what’s in your cupboard. Tap Everything to see the rest.',
+    // Says what to do first: on day one the cupboard is empty, so this list is too (UX-13).
+    body: 'Fill your cupboard and this shows what you can cook now. Tap Everything to see the rest.',
   },
   {
     target: 'tab-cupboard',

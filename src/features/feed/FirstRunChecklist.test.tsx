@@ -6,6 +6,7 @@ import { useCupboard } from '@/store/cupboard';
 import { usePlan } from '@/store/plan';
 import { usePreferences } from '@/store/preferences';
 import { useSaved } from '@/store/saved';
+import { useTour } from '@/store/tour';
 import { FirstRunChecklist } from './FirstRunChecklist';
 
 const mockRouter = { push: jest.fn() };
@@ -19,9 +20,18 @@ beforeEach(() => {
   usePlan.setState({ entries: [] });
   useSaved.setState({ bookmarks: [] });
   useCookLog.setState({ log: [] });
+  useTour.setState({ seen: true, step: undefined });
 });
 
 describe('FirstRunChecklist', () => {
+  it('waits while the tour is still to come or showing (UX-13)', async () => {
+    useTour.setState({ seen: false, step: undefined });
+    await render(<FirstRunChecklist />);
+    expect(screen.queryByTestId('checklist')).toBeNull();
+    useTour.setState({ seen: true, step: 1 });
+    expect(screen.queryByTestId('checklist')).toBeNull();
+  });
+
   it('stays hidden until the welcome starts it', async () => {
     useChecklist.setState({ started: false });
     await render(<FirstRunChecklist />);
