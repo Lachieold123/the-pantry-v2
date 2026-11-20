@@ -18,6 +18,19 @@ it('refuses a page that says it is too big, or turns out to be', async () => {
   expect(await fetchPage('https://x.test')).toEqual({ ok: false, problem: 'too-big' });
 });
 
+it('stops reading a page with no length once it passes the cap (S2-12)', async () => {
+  const chunk = new Uint8Array(1024 * 1024);
+  let reads = 0;
+  const body = {
+    getReader: () => ({ read: async () => (reads++ < 6 ? { done: false, value: chunk } : { done: true, value: undefined }) }),
+  };
+  const text = jest.fn(async () => 'x');
+  jest.spyOn(global, 'fetch').mockResolvedValue({ ...answer(''), body, text } as unknown as Response);
+  expect(await fetchPage('https://x.test')).toEqual({ ok: false, problem: 'too-big' });
+  expect(reads).toBe(6); // the sixth megabyte passed 5 MB: no more was read
+  expect(text).not.toHaveBeenCalled();
+});
+
 it('refuses something that is not a web page', async () => {
   jest.spyOn(global, 'fetch').mockResolvedValue(answer('…', { 'content-type': 'video/mp4' }));
   expect(await fetchPage('https://x.test')).toEqual({ ok: false, problem: 'not-a-page' });

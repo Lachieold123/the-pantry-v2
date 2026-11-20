@@ -21,6 +21,26 @@ export const LINK_IMPORT_MESSAGES: Record<LinkImportFailure, string> = {
 /** Failures where typing the recipe in is the sensible next step. */
 export const writeByHandHelps = (failure: LinkImportFailure | undefined) => failure === 'unreachable' || failure === 'no-recipe';
 
+/**
+ * The longest ingredients or method a link brings across. Both together, even in
+ * three-byte characters, stay under the 60 KB a backed-up row can hold, so an
+ * imported recipe is never refused by the server and set aside (S2-13).
+ */
+export const MAX_IMPORTED_TEXT = 8_000;
+export const CUT_NOTE = 'This recipe was very long, so the end of the ingredients or method was cut. Check it against the page.';
+
+/** @internal Exported for its test. Cuts over-long text, and says so in the notes, where the editor shows it. */
+export function capDraft(draft: RecipeDraft): RecipeDraft {
+  const cut = draft.ingredientsText.length > MAX_IMPORTED_TEXT || draft.methodText.length > MAX_IMPORTED_TEXT;
+  if (!cut) return draft;
+  return {
+    ...draft,
+    ingredientsText: draft.ingredientsText.slice(0, MAX_IMPORTED_TEXT),
+    methodText: draft.methodText.slice(0, MAX_IMPORTED_TEXT),
+    notesText: [draft.notesText, CUT_NOTE].filter(Boolean).join('\n'),
+  };
+}
+
 export function useLinkImport(onFound: (draft: RecipeDraft, url: string) => void) {
   const [busy, setBusy] = useState(false);
   const [failure, setFailure] = useState<LinkImportFailure | undefined>();
@@ -49,7 +69,7 @@ export function useLinkImport(onFound: (draft: RecipeDraft, url: string) => void
       draft = undefined;
     }
     if (!draft) return setFailure('no-recipe');
-    onFound(draft, url);
+    onFound(capDraft(draft), url);
   };
 
   return {
