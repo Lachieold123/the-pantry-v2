@@ -1,6 +1,6 @@
 // The North Star (PRODUCT.md): plan a dinner, the List builds itself, tick at
 // the shops. And D-037: add a recipe's ingredients without planning it.
-import { countIn, expect, ONBOARDED, open, test } from './kitchen';
+import { countIn, expect, isoDay, ONBOARDED, open, test } from './kitchen';
 
 test('planning a dinner puts its shopping on the List, and ticking takes one off', async ({ page }) => {
   await open(page, '/recipe/carbonara', ONBOARDED);
@@ -30,4 +30,12 @@ test('Add to list puts a recipe’s ingredients on the List without planning it'
   await page.goto('/list');
   await expect(page.getByTestId('shopping-item-spaghetti')).toBeVisible();
   await expect(page.getByTestId('shopping-item-pecorino')).toHaveCount(0);
+});
+
+test('a planned dinner goes straight to Cook Mode from the Plan tab, for the planned number (UX-7)', async ({ page }) => {
+  const entry = { id: 'e1', recipeId: 'carbonara', day: isoDay(0), slot: 'dinner', servings: 3 };
+  await open(page, '/plan', { ...ONBOARDED, plan: { entries: [entry], listEdits: {} } });
+  await page.getByTestId('plan-entry-e1-cook').click();
+  await expect(page.getByTestId('cook-step')).toBeVisible();
+  await expect(page).toHaveURL(/servings=3/);
 });

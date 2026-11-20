@@ -141,6 +141,17 @@ function SlotCard({ entry, past }: { entry: PlanEntry; past: boolean }) {
           </View>
         </View>
         {past ? null : (
+          // Straight into Cook Mode for the planned number: Tuesday 6pm is two taps from the Plan tab (UX-7).
+          <IconButton
+            icon="cook"
+            label={`Cook ${recipe.title} for ${entry.servings}`}
+            onPress={() => router.push({ pathname: '/recipe/[id]/cook', params: { id: recipe.id, servings: String(entry.servings) } })}
+            colour="inkMuted"
+            size={ICON.small}
+            testID={`plan-entry-${entry.id}-cook`}
+          />
+        )}
+        {past ? null : (
           <IconButton
             icon="close"
             label={`Take ${recipe.title} off the plan`}
