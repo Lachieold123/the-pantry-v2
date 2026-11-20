@@ -1,7 +1,7 @@
 # Add a recipe's ingredients to the list without planning it (D-037). With an
 # empty cupboard everything not a staple starts ticked; the list then has
 # the recipe's things, and opening the sheet again names them as already there.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

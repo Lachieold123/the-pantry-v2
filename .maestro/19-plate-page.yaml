@@ -2,7 +2,7 @@
 # photo picker, so a real plate can't be made here (see 18-share-a-dish). This
 # checks what can be: Home shows no plates before you share one, and a plate
 # link that points at nothing says so plainly and offers a way back.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

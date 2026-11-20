@@ -4,7 +4,7 @@
 # Discard clears it.
 # Not covered: picking a photo. The camera and photo library are the system's
 # own screens, which tests can't drive, so a plate is never actually shared here.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

@@ -1,5 +1,5 @@
 # First launch: Skip goes straight to the app, with picks to swipe through.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

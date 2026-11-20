@@ -2,7 +2,7 @@
 # tab. Ticking an item off drops the count by one, keeps the item in its aisle,
 # and (with "Move ticked shopping here" on, the default) puts it in the
 # cupboard; unticking takes it back out.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

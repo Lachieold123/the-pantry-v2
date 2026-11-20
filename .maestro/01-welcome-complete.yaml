@@ -2,7 +2,7 @@
 # time and skill, a few taps in "What's in your cupboard?", "Tonight, for you",
 # the notification primer, then Home on What I have with the tour and the
 # first-run checklist.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

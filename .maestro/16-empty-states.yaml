@@ -1,6 +1,6 @@
 # Every empty state on a fresh install says what's missing and offers a next step.
 # The library and stats are reached the way a person would: from the side menu.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

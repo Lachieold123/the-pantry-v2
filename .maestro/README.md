@@ -3,7 +3,7 @@
 > Everyday journey checks now run on the web build (`npm run test:web`, `e2e/web`, D-040). Maestro is for release checks of what only an iPhone shows.
 
 End-to-end tests that tap through The Pantry the way a person would, on the iOS
-Simulator, in Expo Go. There's one flow per area of the app. Every flow starts
+Simulator, in the development build (Expo Go cannot load the app's native modules). There's one flow per area of the app. Every flow starts
 from a fresh install (`clearState`), so each one stands alone and can run by
 itself.
 
@@ -22,13 +22,19 @@ when it's done. The report and screenshots go to
   `curl -fsSL "https://get.maestro.mobile.dev" | bash`
   Then open a new Terminal window and check it with `maestro --version`.
 - **Node 22 or later**, and the project's packages (`npm install`).
-- **Expo Go on the simulator.** `npx expo start --go --ios` installs it the first
-  time and opens the app in it. Keep that Metro server running while the tests
-  run. Flows open the app at `${METRO_URL}`; the runner starts its own Metro on port 8082 and passes `-e METRO_URL=exp://127.0.0.1:8082`. To run a flow by hand: `maestro test -e METRO_URL=exp://127.0.0.1:8081 .maestro/07-plan.yaml`.
+- **The development build on the simulator** (`com.lachlanoldfield.thepantry`; build it with
+  the `development-simulator` EAS profile or `npx expo run:ios`). Keep Metro running
+  (`npx expo start --dev-client`) while the tests run. Flows open the app at `${METRO_URL}`,
+  which is `thepantry://expo-development-client/?url=http%3A%2F%2F127.0.0.1%3A8081`
+  (change 8081 if Metro is on another port). To run a flow by hand:
+  `maestro test -e METRO_URL="thepantry://expo-development-client/?url=http%3A%2F%2F127.0.0.1%3A8081" .maestro/07-plan.yaml`.
+- **Unrun:** these flows were switched from Expo Go to the development build on 20 Nov 2026
+  without being run. `scripts/run-maestro.command` still starts Expo Go and passes an
+  `exp://` link, so it needs the same change before the easy way works.
 
 ## Run them
 
-From the repo root, with Metro running (`npx expo start --go --ios`):
+From the repo root, with Metro running (`npx expo start --dev-client`) and `METRO_URL` passed with `-e`:
 
 ```
 maestro test .maestro/                          # every flow, in the order in config.yaml
@@ -72,7 +78,7 @@ writing or fixing a flow.
 
 Shared steps live in `subflows/` and only run when a flow calls them:
 
-- `_wait_for_app.yaml`: waits for the app to load in Expo Go.
+- `_wait_for_app.yaml`: waits for the app to load in the development build.
 - `_setup_skip_welcome.yaml`: gets past the welcome and the first-use tour to Home.
 - `_open_recipe.yaml`: opens a recipe straight from a link over Home (`RECIPE_ID`), so Back lands on Home.
 - `_open_browse.yaml`: opens Browse from Home's search bar (Browse isn't a tab since D-033).
@@ -84,7 +90,7 @@ Shared steps live in `subflows/` and only run when a flow calls them:
   Ids for lists come from the data: `plan-entry-<id>`, `shopping-item-<ingredient>`,
   `cupboard-item-<ingredient>`, `collection-row-<id>`, `recipe-card-<recipeId>`.
 - `optional: true` is only used for things outside the app: iOS permission
-  alerts, the "Open in Expo Go?" prompt, and the share sheet's Close button.
+  alerts, the "Open in The Pantry?" prompt, and the share sheet's Close button.
 - On iOS a control inside another tappable control (the bookmark on a grid card,
   the + and − of a stepper, the "For 2" pill and × on a planned meal) is hidden
   from tests, and so is any text inside a control that has its own label. Those

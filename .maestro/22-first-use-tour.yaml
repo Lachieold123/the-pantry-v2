@@ -2,7 +2,7 @@
 # fresh install, Skip tour ends it from any stop, it doesn't come back after a
 # relaunch, and Settings replays it from the start over Home.
 # (01-welcome-complete walks it after finishing the quiz; this is the Skip path.)
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

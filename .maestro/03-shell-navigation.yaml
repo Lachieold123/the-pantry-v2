@@ -1,5 +1,5 @@
 # The shell: the four tabs and the centre "+", the side menu to every destination and back, adding a recipe and the avatar.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

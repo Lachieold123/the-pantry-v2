@@ -1,6 +1,6 @@
 # Gets past the first-launch welcome by tapping Skip, then the
 # first-use tour and the first-run checklist, and leaves the app on Home. Run it straight after launchApp + openLink.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - runFlow: _wait_for_app.yaml
 - tapOn:

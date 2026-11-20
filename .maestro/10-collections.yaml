@@ -1,7 +1,7 @@
 # The library's Collections tab: create in the naming dialog, refuse a
 # duplicate, open, rename and delete from the ⋯ sheet (with Undo), long-press
 # actions, and a recipe added to one from its page showing in the mosaic and inside.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

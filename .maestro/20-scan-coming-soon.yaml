@@ -1,7 +1,7 @@
 # The Cupboard's scan sheets while the reader isn't connected (D-030): both say
 # "Coming soon" plainly, show no camera button that wouldn't work, close with
 # Not now, and "Add a list instead" leads to the typed list, which does work.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

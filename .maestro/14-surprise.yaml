@@ -1,6 +1,6 @@
 # Surprise me (v1 called it the spinner): the deck, settings and their pickers, tap the
 # card to spin, spin again, Why this, how it works, plan it, cook this.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

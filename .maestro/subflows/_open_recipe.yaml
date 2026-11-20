@@ -1,6 +1,6 @@
 # Opens a recipe straight from a link, so Home is underneath and Back lands there.
 # env: RECIPE_ID (the recipe to open). QUERY is no longer needed but harmless.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - openLink: ${METRO_URL}/--/recipe/${RECIPE_ID}
 - tapOn:

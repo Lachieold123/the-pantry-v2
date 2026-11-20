@@ -1,6 +1,6 @@
 # The library's My recipes tab (v1's rows): import rejects a bad link; write a recipe (validation first),
 # save, open, edit, delete with undo; cancelling with changes asks first.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

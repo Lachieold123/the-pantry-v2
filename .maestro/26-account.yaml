@@ -5,7 +5,7 @@
 # email step (a mistyped address is refused before sending). No real sign-in:
 # Apple's sheet and a real inbox can't be automated, so those are checked by
 # hand (docs/ACCOUNTS.md).
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

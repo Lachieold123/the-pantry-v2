@@ -1,6 +1,6 @@
 # The library's Recent tab and Kitchen stats (still its own page): empty, then
 # filled by opening and cooking a recipe, then each cleared and restored with Undo.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

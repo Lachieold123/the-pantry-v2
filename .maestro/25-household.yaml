@@ -2,7 +2,7 @@
 # sync up to date, then leave and keep everything. Needs the internet and
 # anonymous sign-ins switched on in Supabase. Syncing between two phones is
 # checked by hand (docs/HOUSEHOLD.md); one simulator can't be two people.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

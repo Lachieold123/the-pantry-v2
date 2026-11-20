@@ -1,7 +1,7 @@
 # Home: the "What I have / Everything" switch, filter chips, five cards to swipe,
 # the grid; a filter narrows both and "Clear filters" brings them back; tonight's
 # planned dinner leads; with something in the cupboard, "What I have" shows it.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

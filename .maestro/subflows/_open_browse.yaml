@@ -1,6 +1,6 @@
 # Opens Browse from Home's search bar (Browse isn't a tab since D-033).
 # Works from any tab, or from Browse itself (it goes back to Home first).
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - runFlow:
     when:

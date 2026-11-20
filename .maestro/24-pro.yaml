@@ -3,7 +3,7 @@
 # Settings; with them on, planning a day past the week you're shopping for
 # opens Pro instead. (On Sundays the whole week ahead is free, so that part
 # only runs Monday to Saturday.)
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

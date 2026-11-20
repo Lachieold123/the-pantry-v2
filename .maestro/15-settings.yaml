@@ -1,6 +1,6 @@
 # Settings: appearance, high contrast, units, the four cooking preferences,
 # the Sunday reminder, and redoing the welcome flow.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true

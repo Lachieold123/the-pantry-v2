@@ -1,7 +1,7 @@
 # Home's "What I have | Everything" switch (D-034): with an empty cupboard it
 # says so and the line under it opens the Cupboard; with things in, the line
 # counts them; Everything hides the line; search beside it opens Browse.
-appId: host.exp.Exponent
+appId: com.lachlanoldfield.thepantry
 ---
 - launchApp:
     clearState: true
