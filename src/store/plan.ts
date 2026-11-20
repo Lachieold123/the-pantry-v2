@@ -53,16 +53,20 @@ export const usePlan = create<PlanState>()(
     {
       name: `${STORAGE_PREFIX}/plan`,
       version: 1,
-      storage: persistentStorage(),
+      storage: persistentStorage(1),
       partialize: ({ entries, listEdits }) => ({ entries, listEdits }),
       // Old weeks are pruned when the app starts (D-009); the cook log keeps the history.
+      // A throw here would stop hydration finishing, and with it sync and backup on every launch (DATA-9),
+      // so odd saved fields (null, a newer build's shape) are read as empty rather than trusted.
       onRehydrateStorage: () => (state) => {
         if (!state) return;
         const today = toISODate(new Date());
         const cutoff = pruneCutoff(today);
+        const entries = Array.isArray(state.entries) ? state.entries.filter((e) => typeof e === 'object' && e !== null) : [];
+        const edits = typeof state.listEdits === 'object' && state.listEdits !== null ? state.listEdits : {};
         usePlan.setState({
-          entries: pruneOldEntries(state.entries, today),
-          listEdits: Object.fromEntries(Object.entries(state.listEdits).filter(([week]) => week >= cutoff)),
+          entries: pruneOldEntries(entries, today),
+          listEdits: Object.fromEntries(Object.entries(edits).filter(([week]) => week >= cutoff)),
         });
       },
     },

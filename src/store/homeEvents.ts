@@ -44,7 +44,7 @@ export const useHomeEvents = create<HomeEventsState>()(
     {
       name: `${STORAGE_PREFIX}/home-events`,
       version: 1,
-      storage: persistentStorage(),
+      storage: persistentStorage(1),
       partialize: ({ events, asCookId }) => ({ events, asCookId }),
       // A bad entry is dropped rather than failing the whole log.
       merge: (saved, current) => {

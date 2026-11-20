@@ -50,7 +50,7 @@ export const useHousehold = create<HouseholdState>()(
   persist((): HouseholdState => ({ ...EMPTY_HOUSEHOLD, userId: undefined, lastSyncedAt: undefined, rejoin: undefined }), {
     name: `${STORAGE_PREFIX}/household`,
     version: 1,
-    storage: persistentStorage(),
+    storage: persistentStorage(1),
     partialize: ({ household, userId, mirror, pending, setAside, sharedRecipes, lastSyncedAt, rejoin, cursor, unsent }) => ({
       unsent,
       household,

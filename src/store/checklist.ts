@@ -33,7 +33,7 @@ export const useChecklist = create<ChecklistState>()(
     {
       name: `${STORAGE_PREFIX}/checklist`,
       version: 1,
-      storage: persistentStorage(),
+      storage: persistentStorage(1),
       partialize: ({ started, dismissed }) => ({ started, dismissed }),
     },
   ),

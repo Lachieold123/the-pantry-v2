@@ -37,6 +37,6 @@ export const useCookLog = create<CookLogState>()(
           return { log: [...s.log, ...events.filter((e) => !have.has(e.id))].sort((a, b) => a.cookedAt - b.cookedAt) };
         }),
     }),
-    { name: `${STORAGE_PREFIX}/cook-log`, version: 1, storage: persistentStorage(), partialize: ({ log }) => ({ log }) },
+    { name: `${STORAGE_PREFIX}/cook-log`, version: 1, storage: persistentStorage(1), partialize: ({ log }) => ({ log }) },
   ),
 );

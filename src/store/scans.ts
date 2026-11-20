@@ -15,7 +15,7 @@ export const useScans = create<ScansState>()(
       usedAt: [],
       record: () => set((s) => ({ usedAt: [...pruneScans(s.usedAt, new Date()), Date.now()] })),
     }),
-    { name: `${STORAGE_PREFIX}/scans`, version: 1, storage: persistentStorage(), partialize: ({ usedAt }) => ({ usedAt }) },
+    { name: `${STORAGE_PREFIX}/scans`, version: 1, storage: persistentStorage(1), partialize: ({ usedAt }) => ({ usedAt }) },
   ),
 );
 

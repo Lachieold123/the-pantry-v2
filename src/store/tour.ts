@@ -31,7 +31,7 @@ export const useTour = create<TourState>()(
       // Skipping and finishing both count as seen: it never comes back uninvited.
       finish: () => set({ seen: true, step: undefined }),
     }),
-    { name: `${STORAGE_PREFIX}/tour`, version: 1, storage: persistentStorage(), partialize: ({ seen }) => ({ seen }) },
+    { name: `${STORAGE_PREFIX}/tour`, version: 1, storage: persistentStorage(1), partialize: ({ seen }) => ({ seen }) },
   ),
 );
 

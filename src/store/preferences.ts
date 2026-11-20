@@ -94,7 +94,7 @@ export const usePreferences = create<PreferencesState>()(
     {
       name: `${STORAGE_PREFIX}/preferences`,
       version: 4,
-      storage: persistentStorage(),
+      storage: persistentStorage(4),
       partialize: (s) => ({
         appearance: s.appearance,
         highContrast: s.highContrast,

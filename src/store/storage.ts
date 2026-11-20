@@ -12,9 +12,24 @@ export const STORAGE_PREFIX = 'the-pantry-v2';
 /** The longest startup waits for saved data before opening anyway. */
 const STARTUP_WAIT_MS = 4000;
 
-/** The storage each store's persist options use: `storage: persistentStorage()`. */
-export function persistentStorage<S>(): PersistStorage<S> {
-  return storage as PersistStorage<S>;
+/**
+ * The storage each store's persist options use: `storage: persistentStorage(version)`, with the
+ * store's own version. Saved data from a newer build (a TestFlight rollback) can't be read here,
+ * so the store starts empty for this session and the newer data is never saved over (DATA-8).
+ */
+export function persistentStorage<S>(version: number): PersistStorage<S> {
+  return {
+    ...storage,
+    getItem: async (name) => {
+      const saved = await storage.getItem(name);
+      if (saved && typeof saved.version === 'number' && saved.version > version) {
+        console.warn(`[storage] ${name} was saved by a newer version of the app; won't save over it`);
+        unreadable.add(name);
+        return null;
+      }
+      return saved;
+    },
+  } as PersistStorage<S>;
 }
 
 /**

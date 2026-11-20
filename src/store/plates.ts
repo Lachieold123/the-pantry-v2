@@ -41,7 +41,7 @@ export const usePlates = create<PlatesState>()(
     {
       name: `${STORAGE_PREFIX}/plates`,
       version: 1,
-      storage: persistentStorage(),
+      storage: persistentStorage(1),
       partialize: ({ plates, draft }) => ({ plates, draft }),
     },
   ),

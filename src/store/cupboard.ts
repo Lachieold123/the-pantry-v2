@@ -55,7 +55,7 @@ export const useCupboard = create<CupboardState>()(
     {
       name: `${STORAGE_PREFIX}/cupboard`,
       version: 2,
-      storage: persistentStorage(),
+      storage: persistentStorage(2),
       partialize: ({ items, shelf, moveTickedToCupboard }) => ({ items, shelf, moveTickedToCupboard }),
       // Version 2 added the shelf; older saves keep their items and assume a stocked shelf.
       migrate: (saved) => ({ shelf: DEFAULT_SHELF, ...(saved as object) }) as unknown as CupboardState,

@@ -70,7 +70,7 @@ export const useAccount = create<AccountState>()(
   persist((): AccountState => ({ ...signedOutState(), device: newId(), offered: {}, offer: undefined }), {
     name: `${STORAGE_PREFIX}/account`,
     version: 1,
-    storage: persistentStorage(),
+    storage: persistentStorage(1),
     // "Signing in" never survives a restart: it's signed in or it isn't.
     partialize: ({ who, device, needsMerge, code, offered, mirror, pending, setAside, lastSyncedAt, cursor, lapsed }) => ({
       status: (who ? 'signed-in' : 'signed-out') as AccountStatus,

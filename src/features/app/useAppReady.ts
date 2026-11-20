@@ -5,41 +5,26 @@
 import { useFonts } from 'expo-font';
 import { useEffect, useState } from 'react';
 
-import { useAccount } from '@/store/account';
 import { startAccount } from '@/store/accountActions';
-import { useChecklist } from '@/store/checklist';
-import { useCookLog } from '@/store/cookLog';
-import { useCupboard } from '@/store/cupboard';
-import { useMyRecipes } from '@/store/myRecipes';
-import { importFromOldAppOnce, useWelcomeBack } from '@/store/oldAppImport';
-import { usePlan } from '@/store/plan';
-import { usePreferences } from '@/store/preferences';
-import { recoverHousehold, startSync, useHousehold } from '@/store/household';
-import { usePro } from '@/store/pro';
+import { importFromOldAppOnce } from '@/store/oldAppImport';
+import { recoverHousehold, startSync } from '@/store/household';
+import { PERSISTED_STORES } from '@/store/persisted';
 import { startPurchases } from '@/store/proSync';
-import { useSaved } from '@/store/saved';
 import { allHydrated, hydrated } from '@/store/storage';
 import { FONT_FILES } from '@/ui/theme/fonts';
 
-const STORES = [
-  usePreferences,
-  usePlan,
-  useSaved,
-  useCookLog,
-  useCupboard,
-  useMyRecipes,
-  useWelcomeBack,
-  usePro,
-  useHousehold,
-  useAccount,
-  useChecklist,
-];
+// Every saved store (REPO-11): plates, tour, scans and the Home log too, so none shows defaults on the first frame.
+const STORES = PERSISTED_STORES;
 
 async function prepare(): Promise<void> {
   // Every store, so nothing on the first screen jumps in late (audit PERF-7). The wait has
   // a limit, so a store that never loads can't hold the splash screen up forever (ARCH-6).
   const loaded = await allHydrated(STORES);
-  if (loaded === 'timed-out') console.warn('[startup] saved data took too long to load; opening anyway');
+  if (loaded === 'timed-out') {
+    // Name the stores, so a store whose loading failed (DATA-9) shows up in the logs rather than silently holding sync back.
+    const late = STORES.filter((s) => !s.persist.hasHydrated()).map((s) => s.persist.getOptions().name);
+    console.warn('[startup] saved data took too long to load; opening anyway', late);
+  }
   // Start RevenueCat (iPhone only), ask who is Pro and what's on sale; the saved
   // mirror covers an offline start. Never blocks opening (D-052).
   startPurchases();
