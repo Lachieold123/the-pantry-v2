@@ -1,0 +1,11 @@
+S2-1,held,c9d61e5,Household lockdown migration is in apply order and proven on the test database; waits on the live apply
+S2-2,held,e7ec90b,Row quotas and a home_events write lock are ready and tested; CAPTCHA and rate limits are owner dashboard steps
+S2-3,part-fixed,c9d61e5,Repo versions now match live history and the runbook records the accounts row; the live apply itself waits on a yes
+S2-4,held,e7ec90b,Apple token store and service-role functions are ready and the edge functions call them; waits on the apply and the owner's Apple key and deploy
+S2-5,held,e7ec90b,delete_account now also removes home_events and is tested; the RevenueCat customer is still an owner decision
+S2-8,held,e7ec90b,RLS for seed and backup tables is ready and tested; dropping the backup tables and the vault secret is for the owner
+S2-15,part-fixed,e7ec90b,Feed tables are read-only for anon and users in a tested migration; pg_net cannot be revoked from a migration so the owner disables it
+S2-17,held,e7ec90b,Policy rewording and the two foreign-key indexes are ready and tested; waits on the live apply
+DATA-1,held,c9d61e5,Every missing server fix is ready in order with pre-checks and rollbacks; waits on the live apply
+DATA-2,fixed,c9d61e5,Migration files carry the live versions and a guard test blocks duplicate versions and parked files
+DATA-3,held,7ec12aa,Private broadcast is last and gated on a two-phone test of a new build; still unproven on a device
