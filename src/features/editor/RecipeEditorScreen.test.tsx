@@ -4,6 +4,7 @@
 import { fireEvent, render, screen } from '@testing-library/react-native';
 
 import { EMPTY_DRAFT } from '@/domain/recipes/draft';
+import { MAX_IMPORTED_TEXT } from '@/lib/useLinkImport';
 import { useMyRecipes } from '@/store/myRecipes';
 import { usePendingImport } from '@/store/pendingImport';
 import { RecipeEditorScreen } from './RecipeEditorScreen';
@@ -61,5 +62,15 @@ describe('the free allowance (F-8)', () => {
     await fireEvent.press(screen.getByTestId('editor-save'));
     await fireEvent.press(screen.getByTestId('editor-save-draft'));
     expect(Object.keys(useMyRecipes.getState().recipes)).toHaveLength(1);
+  });
+});
+
+describe('the length cap (S2-13)', () => {
+  it('stops pasted ingredients, method and notes at the sync row cap', async () => {
+    await render(<RecipeEditorScreen id={undefined} fromImport={false} startTitle="Soup" />);
+    await fireEvent.changeText(screen.getByTestId('editor-ingredients'), 'x'.repeat(MAX_IMPORTED_TEXT + 500));
+    await fireEvent.changeText(screen.getByTestId('editor-notes'), 'y'.repeat(MAX_IMPORTED_TEXT));
+    expect(screen.getByTestId('editor-ingredients').props.value).toHaveLength(MAX_IMPORTED_TEXT);
+    expect(screen.getByTestId('editor-notes').props.value).toHaveLength(MAX_IMPORTED_TEXT / 4);
   });
 });

@@ -11,6 +11,14 @@ import { useToast } from '@/ui/patterns/Toast';
 import { usePendingImport } from '@/store/pendingImport';
 import { useAllowance } from '@/store/pro';
 import { goBack } from '@/lib/navigation';
+import { MAX_IMPORTED_TEXT } from '@/lib/useLinkImport';
+
+/** Ingredients and method share the import's cap; notes get a quarter, so all three stay under the row limit. */
+const TEXT_CAP: Partial<Record<keyof RecipeDraft, number>> = {
+  ingredientsText: MAX_IMPORTED_TEXT,
+  methodText: MAX_IMPORTED_TEXT,
+  notesText: MAX_IMPORTED_TEXT / 4,
+};
 
 /** A new recipe's starting draft: the name typed into My recipes' "Add" row, if any. */
 export function startingDraft(startTitle: string | undefined): RecipeDraft {
@@ -46,7 +54,10 @@ export function useRecipeEditor(id: string | undefined, fromImport: boolean, sta
   const built = useMemo(() => buildRecipe(id ?? 'my-new', draft, source, INGREDIENTS), [draft, id, source]);
 
   const update = <K extends keyof RecipeDraft>(key: K, value: RecipeDraft[K]) => {
-    setDraft((d) => ({ ...d, [key]: value }));
+    // Typed or pasted text stops at the same cap as an import, so the recipe always fits a backed-up row (S2-13).
+    const cap = TEXT_CAP[key];
+    const capped = cap !== undefined && typeof value === 'string' ? value.slice(0, cap) : value;
+    setDraft((d) => ({ ...d, [key]: capped }));
     setDirty(true);
   };
 
