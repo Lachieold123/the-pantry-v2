@@ -53,9 +53,7 @@ export function planTerms(plan: StorePlan): PlanTerms {
   const name = plan.id === 'yearly' ? 'Yearly' : 'Monthly';
   const length = periodLength(plan.period);
   const renews = plan.period.count === 1 ? `every ${plan.period.unit}` : `every ${length}`;
-  const detail = plan.trialDays
-    ? `${plan.trialDays} days free, then ${plan.price} ${perPeriod(plan.period)}`
-    : `Renews ${renews}`;
+  const detail = plan.trialDays ? `${plan.trialDays} days free, then ${plan.price} ${perPeriod(plan.period)}` : `Renews ${renews}`;
   return {
     name,
     length,

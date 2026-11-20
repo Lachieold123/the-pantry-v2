@@ -33,7 +33,10 @@ function canon(v: Json): Json {
 }
 const canonText = (v: unknown) => JSON.stringify(canon(v as Json));
 /** md5 of the canonical (sorted-key, compact) JSON, so Postgres jsonb key order and spacing cannot matter. */
-export const stepsMd5 = (steps: unknown) => createHash('md5').update(canonText(steps ?? null)).digest('hex');
+export const stepsMd5 = (steps: unknown) =>
+  createHash('md5')
+    .update(canonText(steps ?? null))
+    .digest('hex');
 
 export const isStub = (n: unknown) => typeof n === 'string' && n.trim() === 'Food safety:';
 const FORBIDDEN_VEG = ['parmesan', 'parmigiano', 'pecorino', 'gelatin', 'gelatine'];
@@ -147,7 +150,10 @@ export function parseLive(text: string): LiveRow[] {
   const t = text.trim();
   if (!t) return [];
   if (t.startsWith('[')) return JSON.parse(t) as LiveRow[];
-  return t.split('\n').filter((l) => l.trim()).map((l) => JSON.parse(l) as LiveRow);
+  return t
+    .split('\n')
+    .filter((l) => l.trim())
+    .map((l) => JSON.parse(l) as LiveRow);
 }
 
 const liveSteps = (r: LiveRow): Json => {
@@ -223,8 +229,14 @@ function main() {
       live.push(...parseLive(readFileSync(f, 'utf8')));
     }
     const d = diffLive(expected, live);
-    console.log(`\nLive diff (${live.length} live rows): ${d.matched} match, ${d.mismatched.length} mismatched, ${d.missing.length} missing, ${d.extra.length} extra.`);
-    for (const [label, list] of [['MISMATCHED', d.mismatched], ['MISSING', d.missing], ['EXTRA', d.extra]] as const)
+    console.log(
+      `\nLive diff (${live.length} live rows): ${d.matched} match, ${d.mismatched.length} mismatched, ${d.missing.length} missing, ${d.extra.length} extra.`,
+    );
+    for (const [label, list] of [
+      ['MISMATCHED', d.mismatched],
+      ['MISSING', d.missing],
+      ['EXTRA', d.extra],
+    ] as const)
       list.slice(0, 100).forEach((x) => console.log(`  ${label} ${x}`));
     if (d.mismatched.length || d.missing.length || d.extra.length) failed = true;
   }

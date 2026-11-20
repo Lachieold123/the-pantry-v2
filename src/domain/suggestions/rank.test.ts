@@ -262,6 +262,9 @@ describe('cooking skill (D-050)', () => {
     assert.ok(easyShare('starting') >= easyShare(undefined));
     assert.ok(easyShare('confident') <= easyShare(undefined));
     const all = rankHome(rankInput({ taste: { ...NO_TASTE, skill: 'starting' }, depth: 0 })).picks;
-    assert.ok(all.some((p) => p.difficulty !== 'easy'), 'harder dishes still appear further down');
+    assert.ok(
+      all.some((p) => p.difficulty !== 'easy'),
+      'harder dishes still appear further down',
+    );
   });
 });

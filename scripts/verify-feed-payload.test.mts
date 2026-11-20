@@ -4,7 +4,8 @@ import { check, chunkRows, diffLive, dietConflicts, parseLive, stepsMd5, type In
 
 const steps = [{ text: 'Boil.', n: 1 }];
 const group = (item: string) => [{ items: [{ item }] }];
-const chunkSql = (rows: unknown[]) => `with d as (select value r from jsonb_array_elements($q$${JSON.stringify(rows)}$q$::jsonb)) select 1;`;
+const chunkSql = (rows: unknown[]) =>
+  `with d as (select value r from jsonb_array_elements($q$${JSON.stringify(rows)}$q$::jsonb)) select 1;`;
 
 function fixture(): Inputs {
   const full = [

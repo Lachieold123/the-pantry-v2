@@ -100,7 +100,9 @@ test('an imported recipe credits the site it came from, and the credit opens it 
   };
   await open(page, '/recipe/my-import-1', {
     ...ONBOARDED,
-    'my-recipes': { recipes: { 'my-import-1': { id: 'my-import-1', draft, source: 'imported', sourceUrl: url, createdAt: 1, updatedAt: 1 } } },
+    'my-recipes': {
+      recipes: { 'my-import-1': { id: 'my-import-1', draft, source: 'imported', sourceUrl: url, createdAt: 1, updatedAt: 1 } },
+    },
   });
   const credit = page.getByRole('link', { name: 'From example.com' });
   await expect(credit).toBeVisible();

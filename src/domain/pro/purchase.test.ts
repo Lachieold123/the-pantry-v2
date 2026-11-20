@@ -35,7 +35,11 @@ describe('plans from the store', () => {
     ]);
   });
   it('takes the store’s own billing period when it reports one (K-38)', () => {
-    const quarterly = { identifier: '$rc_monthly', packageType: 'MONTHLY', product: { priceString: 'A$12', subscriptionPeriod: 'P3M', introPrice: null } };
+    const quarterly = {
+      identifier: '$rc_monthly',
+      packageType: 'MONTHLY',
+      product: { priceString: 'A$12', subscriptionPeriod: 'P3M', introPrice: null },
+    };
     assert.deepEqual(plansFrom([quarterly])[0]?.period, { unit: 'month', count: 3 });
   });
   it('ignores packages that aren’t monthly or yearly, and duplicates', () => {

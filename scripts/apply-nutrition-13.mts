@@ -57,60 +57,144 @@ type Line = [food: keyof typeof FOOD, grams: number, eaten?: number];
 const RECIPES: Record<string, { servings: number; lines: Line[] }> = {
   'base-genep': {
     servings: 4,
-    lines: [['chilli', 40], ['garlic', 12], ['ginger', 25], ['shallot', 75], ['limeJuice', 15], ['salt', 3]],
+    lines: [
+      ['chilli', 40],
+      ['garlic', 12],
+      ['ginger', 25],
+      ['shallot', 75],
+      ['limeJuice', 15],
+      ['salt', 3],
+    ],
   },
   'nozawana-zuke': {
     // Salt only draws water out and is rinsed off (10% kept); the pickling liquid is mostly left (30% eaten).
     servings: 4,
-    lines: [['turnipGreens', 200], ['salt', 18, 0.1], ['chilli', 8], ['riceVinegar', 100, 0.3], ['sugar', 13, 0.3], ['soy', 5, 0.3]],
+    lines: [
+      ['turnipGreens', 200],
+      ['salt', 18, 0.1],
+      ['chilli', 8],
+      ['riceVinegar', 100, 0.3],
+      ['sugar', 13, 0.3],
+      ['soy', 5, 0.3],
+    ],
   },
   'pico-de-gallo': {
     servings: 4,
-    lines: [['tomato', 480], ['onion', 150], ['coriander', 15], ['limeJuice', 30], ['salt', 3]],
+    lines: [
+      ['tomato', 480],
+      ['onion', 150],
+      ['coriander', 15],
+      ['limeJuice', 30],
+      ['salt', 3],
+    ],
   },
   'pol-sambol': {
     servings: 4,
-    lines: [['coconut', 400], ['limeJuice', 90], ['chilli', 16], ['driedFish', 6], ['onion', 70], ['salt', 3]],
+    lines: [
+      ['coconut', 400],
+      ['limeJuice', 90],
+      ['chilli', 16],
+      ['driedFish', 6],
+      ['onion', 70],
+      ['salt', 3],
+    ],
   },
   'salsa-de-pasilla-oaxaquena': {
     servings: 4,
-    lines: [['driedChilli', 48], ['garlic', 9], ['salt', 2.5], ['oil', 14]],
+    lines: [
+      ['driedChilli', 48],
+      ['garlic', 9],
+      ['salt', 2.5],
+      ['oil', 14],
+    ],
   },
   'teh-tarik': {
     servings: 2,
-    lines: [['condensed', 60], ['evaporated', 31]],
+    lines: [
+      ['condensed', 60],
+      ['evaporated', 31],
+    ],
   },
   torshi: {
     // Kept in the brine; a quarter of the vinegar and salt is eaten with the vegetables.
     servings: 8,
-    lines: [['cauliflower', 450], ['turnip', 280], ['chilli', 28], ['garlic', 18], ['pepper', 6], ['whiteVinegar', 250, 0.25], ['salt', 12, 0.25]],
+    lines: [
+      ['cauliflower', 450],
+      ['turnip', 280],
+      ['chilli', 28],
+      ['garlic', 18],
+      ['pepper', 6],
+      ['whiteVinegar', 250, 0.25],
+      ['salt', 12, 0.25],
+    ],
   },
   'kina-with-rewena': {
     servings: 2,
-    lines: [['roe', 200], ['bread', 100], ['lemon', 15]],
+    lines: [
+      ['roe', 200],
+      ['bread', 100],
+      ['lemon', 15],
+    ],
   },
   'nabak-kimchi': {
     // Water kimchi: the brine is drunk, so half of its salt is eaten; the salting salt is rinsed off (10% kept).
     servings: 4,
-    lines: [['daikon', 540], ['salt', 18, 0.1], ['salt', 36, 0.5], ['chilliPowder', 5], ['garlic', 9], ['ginger', 5], ['springOnion', 60], ['fishSauce', 3], ['sugar', 4]],
+    lines: [
+      ['daikon', 540],
+      ['salt', 18, 0.1],
+      ['salt', 36, 0.5],
+      ['chilliPowder', 5],
+      ['garlic', 9],
+      ['ginger', 5],
+      ['springOnion', 60],
+      ['fishSauce', 3],
+      ['sugar', 4],
+    ],
   },
   'horenso-no-ohitashi': {
     servings: 4,
-    lines: [['spinach', 500], ['soy', 36], ['mirin', 5], ['bonito', 3]],
+    lines: [
+      ['spinach', 500],
+      ['soy', 36],
+      ['mirin', 5],
+      ['bonito', 3],
+    ],
   },
   'gat-kimchi': {
     // Brining salt is rinsed off (10% kept).
     servings: 4,
-    lines: [['mustardGreens', 800], ['salt', 54, 0.1], ['riceFlour', 10], ['sugar', 12], ['garlic', 12], ['ginger', 9], ['chilliPowder', 5], ['fishSauce', 18], ['springOnion', 30], ['sesame', 3]],
+    lines: [
+      ['mustardGreens', 800],
+      ['salt', 54, 0.1],
+      ['riceFlour', 10],
+      ['sugar', 12],
+      ['garlic', 12],
+      ['ginger', 9],
+      ['chilliPowder', 5],
+      ['fishSauce', 18],
+      ['springOnion', 30],
+      ['sesame', 3],
+    ],
   },
   'jaew-makhuea-thet-charred-tomato-jaew': {
     servings: 4,
-    lines: [['tomato', 600], ['chilli', 10], ['garlic', 12], ['limeJuice', 30], ['fishSauce', 18], ['salt', 1.5]],
+    lines: [
+      ['tomato', 600],
+      ['chilli', 10],
+      ['garlic', 12],
+      ['limeJuice', 30],
+      ['fishSauce', 18],
+      ['salt', 1.5],
+    ],
   },
   'grilled-fish-wrapped-in-vine-leaves': {
     // 2 whole fish of 400 g: about 45% is flesh. The vine leaves are a wrapper and are not counted. Oil: 20 g over both.
     servings: 2,
-    lines: [['snapper', 360], ['oil', 20], ['salt', 1.5]],
+    lines: [
+      ['snapper', 360],
+      ['oil', 20],
+      ['salt', 1.5],
+    ],
   },
 };
 

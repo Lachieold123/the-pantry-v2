@@ -112,7 +112,16 @@ describe('sourceLink', () => {
   });
 
   it('gives no credit for a missing, malformed or unsafe link', () => {
-    for (const bad of [undefined, '', '   ', 'not a url', 'bbcgoodfood.com/pie', 'javascript:alert(1)', 'ftp://site.com/x', 'https://localhost/x']) {
+    for (const bad of [
+      undefined,
+      '',
+      '   ',
+      'not a url',
+      'bbcgoodfood.com/pie',
+      'javascript:alert(1)',
+      'ftp://site.com/x',
+      'https://localhost/x',
+    ]) {
       assert.equal(sourceLink(bad), undefined, String(bad));
     }
   });
