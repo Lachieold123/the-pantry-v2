@@ -96,8 +96,8 @@ const CLAIMS: [string, RegExp, string[]][] = [
   ['dairy-free', /\bdairy[- ]free\b/i, ['dairy']],
   ['egg-free', /\begg[- ]free\b/i, ['egg']],
   ['nut-free', /\bnut[- ]free\b/i, ['tree-nuts', 'peanuts']],
-  ['vegan', /^(?:vegan\b|.*\b(?:is|naturally|fully|completely|and) vegan\b)/i, ['meat', 'fish', 'shellfish', 'dairy', 'egg', 'animal-product', 'non-vegetarian']],
-  ['vegetarian', /^(?:vegetarian\b|.*\b(?:is|naturally|fully|and) vegetarian\b)/i, ['meat', 'fish', 'shellfish', 'non-vegetarian']],
+  ['vegan', /^(?:vegan\b|.*\b(?:is|naturally|fully|completely|and|a|an) vegan\b|.*,\s*vegan[.!]?$)/i, ['meat', 'fish', 'shellfish', 'dairy', 'egg', 'animal-product', 'non-vegetarian']],
+  ['vegetarian', /^(?:vegetarian\b|.*\b(?:is|naturally|fully|and|a|an) vegetarian\b|.*,\s*vegetarian[.!]?$)/i, ['meat', 'fish', 'shellfish', 'non-vegetarian']],
 ];
 // A sentence that offers a swap or a condition ("leave out the feta and it is vegan") isn't a plain claim.
 const HEDGE =

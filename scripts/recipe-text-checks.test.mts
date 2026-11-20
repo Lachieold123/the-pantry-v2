@@ -71,6 +71,7 @@ test('honey only matters in a dish for babies; reheating needs steaming hot', ()
 test('a hedged diet claim passes; a flat one a line breaks fails', () => {
   assert.equal(claimProblems(['Gluten-free.'], new Set(['gluten'])).length, 1);
   assert.deepEqual(claimProblems(['Gluten-free if you use gluten-free soy sauce.'], new Set(['gluten'])), []);
+  assert.equal(claimProblems(['Tofu and egg under a peanut sauce, vegetarian.'], new Set(['shellfish'])).length, 1);
 });
 
 test('"X-free" artefacts are caught, real free-words are not', () => {
