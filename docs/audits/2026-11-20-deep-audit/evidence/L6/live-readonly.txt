@@ -1,0 +1,21 @@
+L6 read-only live calls, 20 Nov 2026 (no keys printed, no writes)
+
+RevenueCat project proj629bfff6
+- list-apps: app7070cd1ca7 "The Pantry (App Store)", bundle_id com.lachlanoldfield.thepantry, ASC API key configured, subscription key configured. app9adce87afe "Test Store". -> project IS this app.
+- list-products: thepantry_pro_yearly (P1Y, trial_duration null, indicative_price null), thepantry_pro_monthly (P1M, trial_duration null, indicative_price null). Both active.
+- list-entitlements: lookup_key "pro" (entlec9df2ced1) -> both products. lookup_key "The Pantry Pro" (entl48c5745bc2) -> no products (unused).
+- list-offerings (expand package.product): "default" is_current, paywall_id null; $rc_monthly -> thepantry_pro_monthly; $rc_annual -> thepantry_pro_yearly.
+- Code: PRO_ENTITLEMENT = 'pro' (src/domain/pro/purchase.ts:10); packages $rc_annual/$rc_monthly (purchase.ts:50-51). Match.
+
+Expo build_list (project f9f673ff-...)
+- 25: FINISHED, production, STORE, 2.0.0, sdk 57.0.0, runtimeVersion null, channel null, commit 38bef97, 6 Oct.
+- 24: FINISHED, production, 3561d48. 23: ERRORED (Bundle JavaScript phase), runtimeVersion 2.0.0.
+- 9-13: v1 builds, 1.0.0, sdk 54, channel production, runtimeVersion 1.0.0 (June).
+
+Supabase eozyhllkvajvrecojdxu (SELECT only)
+- cooks: 100 (official 1, person 99). persons whose bio or name contains the word "AI": 0. persons with follower_count > 0: 99 (max 39).
+- published_recipes: 731; published in last 30 days: 0.
+- public functions present of {household_rows_since, account_rows_since, delete_account, preview_invite}: delete_account only.
+- household_rows.received_at column: absent. household_rows 0 rows, account_rows 0 rows.
+- list_migrations: 20261006000618 households, 20261006000720 household_rows_newest_wins, 20261007011855, 20261007014646, 20261012094607 home_events, 20261012094611 home_ranking, 20261016204729 seed_kitchen_retired. (Repo: 20261006000000/0100/0200, 20261008000000-0300, 20261009000000/0100, 20261012000000/0100, 20261017000000.)
+- list_edge_functions: seed-kitchen only (apple-token, delete-account not deployed).

@@ -1,0 +1,37 @@
+npm notice run the-pantry-v2@1.0.0 npx
+npm notice run 'tsx' docs/audits/2026-11-20-deep-audit/tools/L6/assets.mts
+{
+ "filesInFolder": 625,
+ "folderMB": 61.7,
+ "storeMapEntries": 270,
+ "storeFiles": 264,
+ "storeMB": 24.1,
+ "storeEntriesForNonShippingRecipes": [],
+ "draftMapEntries": 361,
+ "draftFilesOnly": 361,
+ "draftOnlyMB": 37.6,
+ "draftEntriesForShippingRecipes": [],
+ "unusedFiles": [],
+ "nonWebp": [],
+ "byteIdenticalGroups": 0,
+ "byteIdenticalExtraMB": 0,
+ "storeByteIdenticalGroups": [],
+ "largestStore": [
+  "turkish-pide.webp 350KB",
+  "beef-brisket.webp 292KB",
+  "lamb-kofta.webp 271KB",
+  "paella.webp 231KB",
+  "pad-thai.webp 216KB",
+  "meatloaf.webp 198KB",
+  "buffalo-wings.webp 183KB",
+  "peri-peri-chicken.webp 174KB"
+ ],
+ "over300KB": 4,
+ "brand": [
+  "adaptive-icon.png 46KB",
+  "favicon.png 6KB",
+  "icon.png 46KB",
+  "splash-icon.png 18KB",
+  "welcome.jpg 52KB"
+ ]
+}

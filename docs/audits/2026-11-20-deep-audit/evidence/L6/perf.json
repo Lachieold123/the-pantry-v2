@@ -1,0 +1,62 @@
+npm notice run the-pantry-v2@1.0.0 npx
+npm notice run 'tsx' --expose-gc docs/audits/2026-11-20-deep-audit/tools/L6/perf.mts
+{
+ "fileBytes": 18682694,
+ "heapAfterParseMB": 20.2,
+ "parseMs": 29.2,
+ "recipes": 5496,
+ "byProvenance": {
+  "reviewed": 271,
+  "ai-draft": 4664,
+  "ai-assisted": 561
+ },
+ "storeRecipes": 271,
+ "storeBytes": 940240,
+ "draftBytes": 11002436,
+ "fieldMB": {
+  "ingredientGroups": 5.8,
+  "steps": 2.7,
+  "notes": 0.8,
+  "summary": 0.5,
+  "title": 0.2,
+  "id": 0.2,
+  "diets": 0.2,
+  "mealTypes": 0.1,
+  "provenance": 0.1,
+  "cuisine": 0.1,
+  "difficulty": 0.1,
+  "source": 0.1
+ },
+ "ingredientIndexMs": 3.4,
+ "kitchenMs": 0.3,
+ "byIdMapMs": 0.2,
+ "storeFilterMs": 0.1,
+ "store": {
+  "eatable": 271,
+  "eatableMs": 2.1,
+  "searchIndexMs": 10,
+  "search:chicken": 1,
+  "search:chiken": 0.8,
+  "search:pasta tomato": 1.1,
+  "search:sh": 0.3,
+  "whatCanICookMs": 2.2,
+  "quickAddsMs": 0.9,
+  "ready": 4,
+  "nearly": 53,
+  "rankHomeMs": 4.1
+ },
+ "all": {
+  "eatable": 5496,
+  "eatableMs": 18,
+  "searchIndexMs": 122.2,
+  "search:chicken": 3.4,
+  "search:chiken": 4,
+  "search:pasta tomato": 7.2,
+  "search:sh": 4.1,
+  "whatCanICookMs": 26.9,
+  "quickAddsMs": 7.4,
+  "ready": 272,
+  "nearly": 1869,
+  "rankHomeMs": 44.1
+ }
+}

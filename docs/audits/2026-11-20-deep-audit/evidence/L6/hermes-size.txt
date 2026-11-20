@@ -1,0 +1,7 @@
+tools/L6/hermes-gen.mts wrote /tmp/l6hermes/{all,store}.js (catalogue as one minified JS literal, as Metro bundles a JSON import);
+compiled with node_modules/hermes-compiler/hermesc/osx-bin/hermesc -O -emit-binary.
+
+all   5,496 recipes  JS 11,942,770 bytes  ->  Hermes bytecode 6,852,565 bytes
+store   271 recipes  JS    940,337 bytes  ->  Hermes bytecode   547,226 bytes
+
+No Hermes VM on this Mac (the `hermes` on PATH is an unrelated agent tool), so on-device eval time was not measured.
