@@ -61,9 +61,12 @@ const PRINT_FRACTIONS: readonly [number, string][] = [
   [1 / 8, '⅛'],
   [1 / 4, '¼'],
   [1 / 3, '⅓'],
+  [3 / 8, '⅜'],
   [1 / 2, '½'],
+  [5 / 8, '⅝'],
   [2 / 3, '⅔'],
   [3 / 4, '¾'],
+  [7 / 8, '⅞'],
 ];
 /** Imperial weights read oddly in eighths and thirds ("1⅛ lb"), so they snap to quarters only. */
 const QUARTER_FRACTIONS: readonly [number, string][] = [
@@ -79,12 +82,16 @@ const QUARTER_FRACTIONS: readonly [number, string][] = [
  */
 export function formatKitchenNumber(n: number, style: 'kitchen' | 'quarters' = 'kitchen'): string {
   if (!Number.isFinite(n) || n <= 0) return '0';
+  const fractions = style === 'quarters' ? QUARTER_FRACTIONS : PRINT_FRACTIONS;
+  // A pinch scaled down is still a pinch: some is never printed as "0" (F-2).
+  const [smallest, smallestText] = fractions[0] ?? [0, '0'];
+  if (n < smallest) return smallestText;
   const whole = Math.floor(n + 1e-9);
   const frac = n - whole;
   if (frac < 1 / 24) return String(whole);
   if (frac > 1 - 1 / 24) return String(whole + 1);
   let best: [number, string] | undefined;
-  for (const candidate of style === 'quarters' ? QUARTER_FRACTIONS : PRINT_FRACTIONS) {
+  for (const candidate of fractions) {
     if (!best || Math.abs(frac - candidate[0]) < Math.abs(frac - best[0])) best = candidate;
   }
   if (best && Math.abs(frac - best[0]) <= 1 / 24) return whole === 0 ? best[1] : `${whole}${best[1]}`;
@@ -98,7 +105,7 @@ export function formatKitchenNumber(n: number, style: 'kitchen' | 'quarters' = '
  */
 export function formatMeasuredNumber(n: number): string {
   if (!Number.isFinite(n) || n <= 0) return '0';
-  if (n < 10) return String(Math.round(n * 10) / 10);
+  if (n < 10) return String(Math.max(0.1, Math.round(n * 10) / 10));
   if (n < 100) return String(Math.round(n));
   if (n < 1000) return String(Math.round(n / 5) * 5);
   return String(Math.round(n / 10) * 10);
