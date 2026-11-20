@@ -1,4 +1,5 @@
 // The sync engine's shapes (./sync): what a scope keeps, and what it plugs in.
+import type { Cursor } from '@/domain/sync/cursor';
 import type { Row, Snapshot } from '@/domain/sync/rows';
 
 export type SyncStatus = 'idle' | 'syncing' | 'offline';
@@ -11,7 +12,12 @@ export type ScopeState = {
   lastSyncedAt: number | undefined;
   /** Rows the server refused, kept on this phone (they're still in the mirror) but never sent again. */
   setAside?: Record<string, Row> | undefined;
+  /** Where the next pull starts (K-36): the newest server stamp pulled, and the household or account it's from. */
+  cursor?: Cursor | undefined;
 };
+
+/** A pull's answer: the rows, and the newest server stamp among them (none from an older server). */
+export type Pulled = { rows: Row[]; newest: number | undefined };
 
 /** `rejected`: the server answered and refused the rows (not a network problem), so sending again won't help. */
 export type Outcome<T> = { ok: true; value: T } | { ok: false; rejected?: boolean | undefined };
@@ -36,7 +42,10 @@ export type ScopeAdapter = {
   /** Subscribes to every store `local` reads; returns the stops. */
   watch: (onChange: () => void) => (() => void)[];
   author: () => string | undefined;
-  pull: () => Promise<Outcome<Row[]>>;
+  /** The household or account being synced, so a pull mark is never used for another. */
+  id: () => string;
+  /** Rows the server received after a stamp, or every row when it's undefined. */
+  pull: (after: number | undefined) => Promise<Outcome<Pulled>>;
   push: (rows: Row[]) => Promise<Outcome<null>>;
   listen: (onRow: (row: Row) => void) => () => void;
   /**

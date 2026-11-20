@@ -1,9 +1,9 @@
 // Talking to the household backend (D-039): sign in quietly, make or join a
 // household, and move rows. Every call answers with a result instead of
 // throwing, so a dropped connection is a message on screen, never a crash.
-import type { RealtimeChannel } from '@supabase/supabase-js';
-
-import type { Row, RowKind } from '@/domain/household/rows';
+import type { Row } from '@/domain/household/rows';
+import { listenRows } from './liveRows';
+import { pullSince, type Pulled } from './pullRows';
 import { pushTo, type PushResult } from './pushRows';
 import { supabase } from './supabase';
 
@@ -109,38 +109,16 @@ export async function myHousehold(): Promise<Result<Household | undefined>> {
   }
 }
 
-type DbRow = { kind: RowKind; key: string; data: unknown; deleted: boolean; updated_at: number; updated_by: string };
-const fromDb = (r: DbRow): Row => ({
-  kind: r.kind,
-  key: r.key,
-  data: r.data,
-  deleted: r.deleted,
-  updatedAt: Number(r.updated_at),
-  updatedBy: r.updated_by,
-});
+/** Rows the server received after `after` (every row when undefined), with the newest stamp among them (K-36). */
+export async function pullRowsSince(householdId: string, after: number | undefined): Promise<Result<Pulled>> {
+  const pulled = await pullSince('household_rows', { column: 'household_id', id: householdId }, after);
+  return pulled.ok ? pulled : fail(problemFrom(pulled.error.message));
+}
 
-/** Every row of the household, a page at a time. */
+/** Every row of the household. */
 export async function pullRows(householdId: string): Promise<Result<Row[]>> {
-  const page = 1000;
-  const out: Row[] = [];
-  try {
-    for (let from = 0; ; from += page) {
-      const { data, error } = await supabase()
-        .from('household_rows')
-        .select('kind, key, data, deleted, updated_at, updated_by')
-        .eq('household_id', householdId)
-        // A total order (no ties), so paging past 1,000 rows never skips or repeats one.
-        .order('updated_at')
-        .order('kind')
-        .order('key')
-        .range(from, from + page - 1);
-      if (error) return fail(problemFrom(error.message));
-      out.push(...(data as DbRow[]).map(fromDb));
-      if (!data || data.length < page) return { ok: true, value: out };
-    }
-  } catch (e) {
-    return fail(problemFrom(String(e)));
-  }
+  const pulled = await pullRowsSince(householdId, undefined);
+  return pulled.ok ? { ok: true, value: pulled.value.rows } : pulled;
 }
 
 /** Sends rows. The server keeps whichever version of a row is newest. */
@@ -149,22 +127,11 @@ export function pushRows(householdId: string, userId: string, rows: readonly Row
 }
 
 /**
- * Calls back with each row another phone writes. The member list isn't
- * published any more (SEC-06): the store re-reads it on return to the app and
- * when a row arrives from someone it doesn't know. Returns a stop function.
+ * Calls back with each row another phone writes, over the household's private
+ * topic (K-32). The member list isn't published (SEC-06): the store re-reads
+ * it on return to the app and when a row arrives from someone it doesn't
+ * know. Returns a stop function.
  */
 export function listen(householdId: string, onRow: (row: Row) => void): () => void {
-  const channel: RealtimeChannel = supabase()
-    .channel(`household:${householdId}`)
-    .on(
-      'postgres_changes',
-      { event: '*', schema: 'public', table: 'household_rows', filter: `household_id=eq.${householdId}` },
-      (payload) => {
-        if (payload.new && typeof payload.new === 'object' && 'kind' in payload.new) onRow(fromDb(payload.new as DbRow));
-      },
-    )
-    .subscribe();
-  return () => {
-    void supabase().removeChannel(channel);
-  };
+  return listenRows({ scope: 'household', id: householdId }, onRow);
 }

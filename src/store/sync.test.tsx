@@ -3,6 +3,7 @@
 // session or clock skew). Each case failed before its fix.
 import { AppState } from 'react-native';
 
+import { OVERLAP_MS } from '@/domain/sync/cursor';
 import { rowId, type Row } from '@/domain/sync/rows';
 import { createEngine, type ScopeState } from './sync';
 
@@ -14,11 +15,14 @@ jest.spyOn(AppState, 'addEventListener').mockImplementation((_type, fn) => {
   return { remove: () => undefined } as ReturnType<typeof AppState.addEventListener>;
 });
 
-function makeScope(opts: { push?: Push; ready?: () => Promise<boolean>; pull?: Row[] } = {}) {
+type Pull = (after: number | undefined) => Promise<{ ok: true; value: { rows: Row[]; newest: number | undefined } } | { ok: false }>;
+
+function makeScope(opts: { push?: Push; ready?: () => Promise<boolean>; pull?: Row[]; pullWith?: Pull; id?: () => string } = {}) {
   let state: ScopeState = { mirror: {}, pending: {}, status: 'idle', lastSyncedAt: undefined, setAside: {} };
   let cupboard: string[] = [];
   const listeners = new Set<() => void>();
   const sent: Row[][] = [];
+  const pulls: (number | undefined)[] = [];
   const push: Push =
     opts.push ??
     (async (rows) => {
@@ -45,7 +49,11 @@ function makeScope(opts: { push?: Push; ready?: () => Promise<boolean>; pull?: R
       return [() => listeners.delete(onChange)];
     },
     author: () => 'me',
-    pull: async () => ({ ok: true, value: opts.pull ?? [] }),
+    id: opts.id ?? (() => 'h1'),
+    pull: async (after) => {
+      pulls.push(after);
+      return opts.pullWith ? opts.pullWith(after) : { ok: true, value: { rows: opts.pull ?? [], newest: undefined } };
+    },
     push: async (rows) => {
       const r = await push(rows);
       if (r.ok) sent.push(rows);
@@ -58,7 +66,7 @@ function makeScope(opts: { push?: Push; ready?: () => Promise<boolean>; pull?: R
     cupboard = ids;
     for (const l of listeners) l();
   };
-  return { engine, change, sent, state: () => state, cupboard: () => cupboard };
+  return { engine, change, sent, pulls, state: () => state, cupboard: () => cupboard };
 }
 
 const tick = (ms = 0) => new Promise((r) => setTimeout(r, ms));
@@ -167,5 +175,68 @@ it('flush waits for a send already running, so sign-out never sees "unsaved" mid
   await second;
   await first;
   expect(s.engine.waiting()).toBe(0);
+  s.engine.stop();
+});
+
+const milk = (updatedAt: number): Row => ({
+  kind: 'cupboard',
+  key: 'milk',
+  data: { addedAt: 1, source: 'manual' },
+  deleted: false,
+  updatedAt,
+  updatedBy: 'b',
+});
+
+it('K-36: pulls everything once, then only what the server received since, from a little before the mark', async () => {
+  const s = makeScope({ pullWith: async () => ({ ok: true, value: { rows: [milk(1)], newest: 1_000_000 } }) });
+  s.engine.start();
+  await tick();
+  expect(s.pulls).toEqual([undefined]);
+  expect(s.state().cursor).toEqual({ scope: 'h1', at: 1_000_000 });
+  appStateListener?.('active');
+  await tick();
+  expect(s.pulls).toEqual([undefined, 1_000_000 - OVERLAP_MS]);
+  s.engine.stop();
+});
+
+it('K-36: a pull that finds nothing new, or fails, keeps the mark', async () => {
+  const answers = [
+    { ok: true as const, value: { rows: [milk(1)], newest: 2_000_000 } },
+    { ok: true as const, value: { rows: [], newest: undefined } },
+    { ok: false as const },
+  ];
+  const s = makeScope({ pullWith: async () => answers.shift() ?? { ok: false } });
+  s.engine.start();
+  await tick();
+  const mark = { scope: 'h1', at: 2_000_000 };
+  expect(s.state().cursor).toEqual(mark);
+  await s.engine.pull();
+  expect(s.state().cursor).toEqual(mark);
+  await s.engine.pull();
+  expect(s.state().cursor).toEqual(mark);
+  expect(s.state().status).toBe('offline');
+  s.engine.stop();
+});
+
+it("K-36: a mark from another household is ignored, so the new one's first pull is a full one", async () => {
+  let id = 'h1';
+  const s = makeScope({ id: () => id, pullWith: async () => ({ ok: true, value: { rows: [milk(2)], newest: 5_000_000 } }) });
+  s.engine.start();
+  await tick();
+  id = 'h2';
+  await s.engine.pull();
+  expect(s.pulls).toEqual([undefined, undefined]);
+  expect(s.state().cursor).toEqual({ scope: 'h2', at: 5_000_000 });
+  s.engine.stop();
+});
+
+it('K-36: an older server (no stamps) is pulled in full every time, as before', async () => {
+  const s = makeScope({ pull: [milk(3)] });
+  s.engine.start();
+  await tick();
+  await s.engine.pull();
+  expect(s.pulls).toEqual([undefined, undefined]);
+  expect(s.state().cursor).toBeUndefined();
+  expect(s.cupboard()).toEqual(['milk']);
   s.engine.stop();
 });

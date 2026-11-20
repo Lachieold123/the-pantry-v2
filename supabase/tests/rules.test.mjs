@@ -1,74 +1,10 @@
-// Database rules tested on a throwaway Postgres (PGlite), never the live project.
-// Loads every migration in order into a Supabase-like setup (anon and
-// authenticated roles, Supabase's default grants, auth.uid() and auth.jwt()),
-// then runs the audit's exploits (8 October 2026) as those roles.
-//
-// PGlite isn't an app dependency. Install it somewhere else and point at it:
-//   (cd /tmp/pg && npm i @electric-sql/pglite@0.3.7)
-//   PGLITE=/tmp/pg/node_modules/@electric-sql/pglite/dist/index.js node supabase/tests/rules.test.mjs
+// Database rules tested on a throwaway Postgres (PGlite), never the live project
+// (./harness.mjs: how to run it). The audit's exploits (8 October 2026), run
+// as the roles the app's users have.
 import assert from 'node:assert/strict';
-import { readdirSync, readFileSync } from 'node:fs';
-import { dirname, join } from 'node:path';
 import { test } from 'node:test';
-import { fileURLToPath, pathToFileURL } from 'node:url';
 
-const pgliteAt = process.env.PGLITE ?? '@electric-sql/pglite';
-const { PGlite } = await import(pgliteAt);
-// pgcrypto ships as a bundle beside PGlite; some versions have no wrapper for it, so name it directly.
-const pgcrypto = { name: 'pgcrypto', setup: async () => ({ bundlePath: new URL('pgcrypto.tar.gz', pathToFileURL(pgliteAt)) }) };
-
-const here = dirname(fileURLToPath(import.meta.url));
-const migrations = join(here, '..', 'migrations');
-
-const SUPABASE_LIKE = `
-  create role anon nologin; create role authenticated nologin; create role service_role nologin bypassrls;
-  create schema auth; create schema extensions;
-  create table auth.users (id uuid primary key, is_anonymous boolean not null default false,
-    created_at timestamptz not null default now(), last_sign_in_at timestamptz);
-  create function auth.uid() returns uuid language sql stable as $$ select nullif(current_setting('request.jwt.claim.sub', true), '')::uuid $$;
-  create function auth.jwt() returns jsonb language sql stable as $$ select coalesce(nullif(current_setting('request.jwt.claims', true), ''), '{}')::jsonb $$;
-  grant usage on schema public, auth, extensions to anon, authenticated;
-  grant execute on all functions in schema auth to anon, authenticated;
-  alter default privileges in schema public grant all on tables to anon, authenticated, service_role;
-  alter default privileges in schema public grant all on functions to anon, authenticated, service_role;
-  create publication supabase_realtime;
-`;
-
-const db = new PGlite({ extensions: { pgcrypto } });
-await db.exec(SUPABASE_LIKE);
-// UPTO=<file name> loads only the migrations up to that one: run with the last old one to see the exploits work.
-const upto = process.env.UPTO ?? '~';
-for (const file of readdirSync(migrations)
-  .filter((f) => f.endsWith('.sql') && f <= upto)
-  .sort()) {
-  await db.exec(readFileSync(join(migrations, file), 'utf8'));
-}
-
-const users = {
-  alice: '11111111-1111-1111-1111-111111111111',
-  bob: '22222222-2222-2222-2222-222222222222',
-  mallory: '33333333-3333-3333-3333-333333333333',
-  carol: '44444444-4444-4444-4444-444444444444',
-  anon: '55555555-5555-5555-5555-555555555555',
-};
-for (const [name, id] of Object.entries(users)) {
-  await db.query('insert into auth.users (id, is_anonymous) values ($1, $2)', [id, name === 'anon' || name === 'mallory']);
-}
-
-/** Runs SQL as a signed-in user, the way PostgREST does: role authenticated, the user's id in the JWT. */
-async function as(user, sql, params = []) {
-  const claims = JSON.stringify({ sub: users[user], is_anonymous: user === 'anon' || user === 'mallory' });
-  return db.transaction(async (tx) => {
-    await tx.query(`select set_config('request.jwt.claim.sub', $1, true), set_config('request.jwt.claims', $2, true)`, [
-      users[user],
-      claims,
-    ]);
-    await tx.exec('set local role authenticated');
-    return tx.query(sql, params);
-  });
-}
-const fails = async (promise, pattern) => assert.rejects(promise, pattern);
-const now = () => Date.now();
+import { as, db, fails, now, users } from './harness.mjs';
 
 const aliceHouse = (await as('alice', `select public.create_household('Alice') as id`)).rows[0].id;
 const malloryHouse = (await as('mallory', `select public.create_household('Mallory') as id`)).rows[0].id;
@@ -213,9 +149,7 @@ test('SEC-07: a household past its row ceiling is refused as a check violation',
   );
 });
 
-test('SEC-06: the member list is no longer published to Realtime', async () => {
-  const tables = (await db.query(`select tablename from pg_publication_tables where pubname = 'supabase_realtime' order by 1`)).rows.map(
-    (r) => r.tablename,
-  );
-  assert.deepEqual(tables, ['account_rows', 'household_rows']);
+test("SEC-06, K-32: no table is published to Postgres Changes, so no deleted row's key goes out", async () => {
+  const tables = (await db.query(`select tablename from pg_publication_tables where pubname = 'supabase_realtime' order by 1`)).rows;
+  assert.deepEqual(tables, []);
 });

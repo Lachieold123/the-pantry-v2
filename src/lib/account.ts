@@ -8,9 +8,11 @@
 // account, it switches to that account instead and says so (`switched`), and
 // the store merges this phone into it.
 import * as AppleAuthentication from 'expo-apple-authentication';
-import type { RealtimeChannel, Session, User } from '@supabase/supabase-js';
+import type { Session, User } from '@supabase/supabase-js';
 
-import type { Row, RowKind } from '@/domain/sync/rows';
+import type { Row } from '@/domain/sync/rows';
+import { listenRows } from './liveRows';
+import { pullSince, type Pulled } from './pullRows';
 import { pushTo, type PushResult } from './pushRows';
 import { supabase } from './supabase';
 
@@ -211,36 +213,16 @@ export function deleteAccount(): Promise<Result<null>> {
   });
 }
 
-type DbRow = { kind: RowKind; key: string; data: unknown; deleted: boolean; updated_at: number; updated_by: string };
-const fromDb = (r: DbRow): Row => ({
-  kind: r.kind,
-  key: r.key,
-  data: r.data,
-  deleted: r.deleted,
-  updatedAt: Number(r.updated_at),
-  updatedBy: r.updated_by,
-});
+/** Rows the server received after `after` (every row when undefined), with the newest stamp among them (K-36). */
+export async function pullAccountRowsSince(userId: string, after: number | undefined): Promise<Result<Pulled>> {
+  const pulled = await pullSince('account_rows', { column: 'user_id', id: userId }, after);
+  return pulled.ok ? pulled : fail(problemFrom(pulled.error));
+}
 
-/** Every row of the account, a page at a time. */
-export function pullAccountRows(userId: string): Promise<Result<Row[]>> {
-  return attempt(async () => {
-    const page = 1000;
-    const out: Row[] = [];
-    for (let from = 0; ; from += page) {
-      const { data, error } = await supabase()
-        .from('account_rows')
-        .select('kind, key, data, deleted, updated_at, updated_by')
-        .eq('user_id', userId)
-        // A total order (no ties), so paging past 1,000 rows never skips or repeats one.
-        .order('updated_at')
-        .order('kind')
-        .order('key')
-        .range(from, from + page - 1);
-      if (error) return fail(problemFrom(error));
-      out.push(...(data as DbRow[]).map(fromDb));
-      if (!data || data.length < page) return { ok: true, value: out };
-    }
-  });
+/** Every row of the account. */
+export async function pullAccountRows(userId: string): Promise<Result<Row[]>> {
+  const pulled = await pullAccountRowsSince(userId, undefined);
+  return pulled.ok ? { ok: true, value: pulled.value.rows } : pulled;
 }
 
 /** Sends rows. The server keeps whichever version of a row is newest. `by` names this phone, so two phones can break a tie. */
@@ -248,15 +230,7 @@ export function pushAccountRows(userId: string, by: string, rows: readonly Row[]
   return pushTo('account_rows', { user_id: userId }, by, rows, 'user_id,kind,key');
 }
 
-/** Calls back with each row another phone on the same account writes. Returns a stop function. */
+/** Calls back with each row another phone on the same account writes, over its private topic (K-32). Returns a stop function. */
 export function listenAccount(userId: string, onRow: (row: Row) => void): () => void {
-  const channel: RealtimeChannel = supabase()
-    .channel(`account:${userId}`)
-    .on('postgres_changes', { event: '*', schema: 'public', table: 'account_rows', filter: `user_id=eq.${userId}` }, (payload) => {
-      if (payload.new && typeof payload.new === 'object' && 'kind' in payload.new) onRow(fromDb(payload.new as DbRow));
-    })
-    .subscribe();
-  return () => {
-    void supabase().removeChannel(channel);
-  };
+  return listenRows({ scope: 'account', id: userId }, onRow);
 }

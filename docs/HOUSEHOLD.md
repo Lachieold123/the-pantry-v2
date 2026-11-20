@@ -33,8 +33,9 @@ OurGroceries shares a list someone typed. The Pantry shares the kitchen the list
 - **Sync** (`src/store/household.ts`):
   - The plan, list and cupboard stores stay the truth on each phone. A mirror of the household's rows sits beside them.
   - A change becomes a few rows. They are saved at once and sent when the network allows.
-  - Rows from other phones arrive live through Supabase Realtime and are merged in. The newest change wins, and the database refuses a late write that's older than what it holds.
-  - Offline, everything still works and catches up on reconnect, and every time the app comes to the front.
+  - Rows from other phones arrive live and are merged in. The newest change wins, and the database refuses a late write that's older than what it holds.
+  - Live rows come over a **private Realtime Broadcast channel** (K-32): the database broadcasts each write to `household:<id>` (or `account:<user id>`), and Realtime lets a phone join only if it's a member (or the account's owner). Deleted rows are never broadcast.
+  - Offline, everything still works and catches up on reconnect, and every time the app comes to the front. Catching up pulls only rows the server **received** since the last pull (K-36): the server stamps each row with its own clock (`received_at`), because phones' clocks can't be trusted.
 - **Leaving** keeps the plan, list and cupboard on that phone as they are and stops sharing. The last person out deletes the household.
 - **Limits:** one household per phone, and up to 8 people.
 
@@ -58,6 +59,13 @@ OurGroceries shares a list someone typed. The Pantry shares the kitchen the list
 4. **Test on two phones:**
    - Start on one phone and join on the other.
    - Tick, add and remove on both, online and in flight mode, and check they agree within seconds.
+
+5. **Private live updates (K-32) and smaller pulls (K-36).** After K-18's four migrations, apply `supabase/migrations/20261009000000_rows_received_at.sql` then `20261009000100_realtime_private_broadcast.sql`. Then in the dashboard:
+   - **Realtime → Settings:** turn off **"Allow public access"** and save, so every channel needs Realtime Authorization. (Nothing in the app uses a public channel.)
+   - **Database → Publications → `supabase_realtime`:** check `household_rows` and `account_rows` are no longer listed (the migration takes them out).
+   - Nothing else needs switching on: Broadcast from the database and the policy come with the migration.
+   - Then the two-phone test above: a tick on one phone shows on the other within seconds, and after a few minutes in flight mode, both catch up when brought back to the front.
+   - Builds from before this change don't join the private channel, so after the migration they only catch up when they come to the front. Builds with it work before and after.
 
 ## Later
 

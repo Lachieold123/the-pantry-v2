@@ -28,7 +28,7 @@ import {
   type SharedKitchen,
   type Snapshot,
 } from '@/domain/sync/rows';
-import { listenAccount, pullAccountRows, pushAccountRows, sessionReady } from '@/lib/account';
+import { listenAccount, pullAccountRowsSince, pushAccountRows, sessionReady } from '@/lib/account';
 import { useAccount } from './account';
 import { useCookLog } from './cookLog';
 import { useCupboard } from './cupboard';
@@ -128,7 +128,7 @@ const fail = { ok: false } as const;
 export const accountEngine = createEngine({
   read: () => {
     const s = useAccount.getState();
-    return { mirror: s.mirror, pending: s.pending, setAside: s.setAside, status: s.sync, lastSyncedAt: s.lastSyncedAt };
+    return { mirror: s.mirror, pending: s.pending, setAside: s.setAside, status: s.sync, lastSyncedAt: s.lastSyncedAt, cursor: s.cursor };
   },
   write: ({ status, ...rest }) => useAccount.setState({ ...rest, ...(status ? { sync: status } : {}) }),
   active: () => useAccount.getState().who !== undefined && !useAccount.getState().needsMerge,
@@ -151,9 +151,10 @@ export const accountEngine = createEngine({
   author: () => useAccount.getState().device,
   // The saved sign-in loads first, so the live connection carries it and row security lets the rows through.
   ready: sessionReady,
-  pull: async () => {
+  id: () => userId() ?? '',
+  pull: async (after) => {
     const id = userId();
-    return id ? pullAccountRows(id) : fail;
+    return id ? pullAccountRowsSince(id, after) : fail;
   },
   push: async (rows) => {
     const id = userId();

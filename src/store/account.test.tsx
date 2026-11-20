@@ -40,6 +40,7 @@ jest.mock('@/lib/account', () => ({
     return { ok: true, value: null };
   },
   pullAccountRows: async () => ({ ok: true, value: [...mockServer.rows.values()] }),
+  pullAccountRowsSince: async () => ({ ok: true, value: { rows: [...mockServer.rows.values()], newest: undefined } }),
   pushAccountRows: async (_u: string, _by: string, rows: Row[]) => {
     for (const r of rows) mockServer.rows.set(`${r.kind}:${r.key}`, r);
     return { ok: true, value: null };
@@ -51,6 +52,7 @@ jest.mock('@/lib/household', () => ({
   myHousehold: async () => ({ ok: true, value: mockHouse.current }),
   leaveHousehold: async () => ({ ok: true, value: null }),
   pullRows: async () => ({ ok: true, value: mockHouseRows }),
+  pullRowsSince: async () => ({ ok: true, value: { rows: mockHouseRows, newest: undefined } }),
   pushRows: async () => ({ ok: true, value: null }),
   listen: () => () => undefined,
 }));

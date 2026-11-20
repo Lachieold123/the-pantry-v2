@@ -7,7 +7,8 @@
 // - Rows from another phone arrive live, merge into the mirror "newest
 //   wins", and the stores are rebuilt from it.
 // - Offline, everything still works; it pulls and sends again on reconnect
-//   and whenever the app comes to the front.
+//   and whenever the app comes to the front. A pull asks only for what the
+//   server received since the last one (K-36, domain/sync/cursor).
 //
 // - A row the server refuses (too long, malformed) is set aside, so it never
 //   holds up the rest (BUG-03). Network trouble keeps everything waiting.
@@ -17,6 +18,7 @@
 import { AppState } from 'react-native';
 
 import { pruneCutoff, toISODate } from '@/domain/plan/week';
+import { advance, pullAfter } from '@/domain/sync/cursor';
 import { isPastKeeping, rowFits, stampAfter } from '@/domain/sync/limits';
 import { changedRows, mergeRows, rowId, type Row, type Snapshot } from '@/domain/sync/rows';
 import type { Engine, ScopeAdapter } from './syncTypes';
@@ -177,17 +179,23 @@ export function createEngine(scope: ScopeAdapter): Engine {
     scope.write({ pending: left });
   }
 
+  /** Pulls what the server received since the last pull (K-36); everything the first time, or for a new scope. */
   async function pull(): Promise<boolean> {
     if (!scope.active()) return false;
     const asked = generation;
-    const rows = await scope.pull();
-    if (asked !== generation || !scope.active()) return false;
-    if (!rows.ok) {
+    const id = scope.id();
+    const pulled = await scope.pull(pullAfter(scope.read().cursor, id));
+    if (asked !== generation || !scope.active() || scope.id() !== id) return false;
+    if (!pulled.ok) {
       scope.write({ status: 'offline' });
       return false;
     }
-    receive(rows.value);
-    scope.write({ lastSyncedAt: Date.now(), ...(Object.keys(scope.read().pending).length ? {} : { status: 'idle' }) });
+    receive(pulled.value.rows);
+    scope.write({
+      cursor: advance(scope.read().cursor, id, pulled.value.newest),
+      lastSyncedAt: Date.now(),
+      ...(Object.keys(scope.read().pending).length ? {} : { status: 'idle' }),
+    });
     return true;
   }
 

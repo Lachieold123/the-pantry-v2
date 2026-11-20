@@ -10,7 +10,7 @@ import { persist } from 'zustand/middleware';
 
 import { storedRecipes } from '@/domain/recipes/stored';
 import { kitchenFromRows, plannedOwnRecipes, type Row, type SharedKitchen } from '@/domain/sync/rows';
-import { listen, myHousehold, pullRows, pushRows, signedInUser, type Household, type Result } from '@/lib/household';
+import { listen, myHousehold, pullRowsSince, pushRows, signedInUser, type Household, type Result } from '@/lib/household';
 import { useCupboard } from './cupboard';
 import { useMyRecipes, type MyRecipe } from './myRecipes';
 import { usePlan } from './plan';
@@ -38,6 +38,7 @@ export const EMPTY_HOUSEHOLD = {
   setAside: {},
   sharedRecipes: {},
   status: 'idle',
+  cursor: undefined,
 } as const satisfies Partial<HouseholdState>;
 
 export const useHousehold = create<HouseholdState>()(
@@ -45,7 +46,7 @@ export const useHousehold = create<HouseholdState>()(
     name: `${STORAGE_PREFIX}/household`,
     version: 1,
     storage: persistentStorage(),
-    partialize: ({ household, userId, mirror, pending, setAside, sharedRecipes, lastSyncedAt, rejoin }) => ({
+    partialize: ({ household, userId, mirror, pending, setAside, sharedRecipes, lastSyncedAt, rejoin, cursor }) => ({
       household,
       userId,
       mirror,
@@ -54,6 +55,7 @@ export const useHousehold = create<HouseholdState>()(
       sharedRecipes,
       lastSyncedAt,
       rejoin,
+      cursor,
     }),
   }),
 );
@@ -90,7 +92,8 @@ const engine = createEngine({
   apply: applyKitchen,
   watch: (onChange) => [usePlan.subscribe(onChange), useCupboard.subscribe(onChange), useMyRecipes.subscribe(onChange)],
   author: () => useHousehold.getState().userId,
-  pull: async () => (householdId() ? pullRows(householdId()) : fail),
+  id: householdId,
+  pull: async (after) => (householdId() ? pullRowsSince(householdId(), after) : fail),
   push: async (rows) => {
     const { userId } = useHousehold.getState();
     return householdId() && userId ? pushRows(householdId(), userId, rows) : fail;

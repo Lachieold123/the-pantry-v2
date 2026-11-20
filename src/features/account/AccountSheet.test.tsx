@@ -28,6 +28,7 @@ jest.mock('@/lib/account', () => ({
   sendEmailCode: async () => ({ ok: true, value: 'email_change' }),
   verifyEmailCode: async () => mockLib.verify,
   pullAccountRows: async () => ({ ok: true, value: [] }),
+  pullAccountRowsSince: async () => ({ ok: true, value: { rows: [], newest: undefined } }),
   pushAccountRows: async () => ({ ok: true, value: null }),
   listenAccount: () => () => undefined,
 }));
