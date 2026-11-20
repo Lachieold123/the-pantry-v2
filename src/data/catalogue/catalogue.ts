@@ -5,18 +5,18 @@
 import { buildKitchen, type KitchenData } from '@/domain/cupboard/kitchen';
 import { buildIngredientIndex, type IngredientDef } from '@/domain/ingredients/database';
 import { withAliases, type HierarchyData } from '@/domain/ingredients/hierarchy';
-import { shipsInStoreBuilds } from '@/domain/recipes/provenance';
 import type { Recipe } from '@/domain/recipes/types';
 import ingredientsJson from '../ingredients/ingredients.json';
 import hierarchyJson from '../ingredients/hierarchy.json';
 import kitchenJson from '../ingredients/kitchen.json';
-import recipesJson from './recipes.json';
+import titlesJson from './titles.json';
 
-const all = recipesJson as unknown as Recipe[];
-
-const showDrafts = __DEV__ || process.env.EXPO_PUBLIC_SHOW_DRAFT_RECIPES === '1';
-
-export const CATALOGUE: readonly Recipe[] = showDrafts ? all : all.filter((r) => shipsInStoreBuilds(r.provenance));
+// A store build bundles only the recipes it shows (recipes.store.json, generated with the
+// photo maps), not all 5,496 (PERF-1). The check is fixed at build time and must stay inline:
+// that, and require() rather than import, is what lets Metro leave the other file out.
+export const CATALOGUE: readonly Recipe[] = (
+  __DEV__ || process.env.EXPO_PUBLIC_SHOW_DRAFT_RECIPES === '1' ? require('./recipes.json') : require('./recipes.store.json')
+) as Recipe[];
 
 const byId = new Map(CATALOGUE.map((r) => [r.id, r]));
 
@@ -26,10 +26,10 @@ export function getCatalogueRecipe(id: string): Recipe | undefined {
 
 // Every catalogue id, drafts included: imported old data may point at a dish
 // that isn't vetted yet, and it should reappear once it is.
-const allById = new Map(all.map((r) => [r.id, r]));
-export const ALL_CATALOGUE_IDS: ReadonlySet<string> = new Set(allById.keys());
+const titleById = new Map(Object.entries(titlesJson as Record<string, string>));
+export const ALL_CATALOGUE_IDS: ReadonlySet<string> = new Set(titleById.keys());
 export function catalogueTitle(id: string): string | undefined {
-  return allById.get(id)?.title;
+  return titleById.get(id);
 }
 
 const HIERARCHY = hierarchyJson as unknown as HierarchyData;

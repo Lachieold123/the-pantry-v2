@@ -2,6 +2,8 @@ dist
 node_modules
 .expo
 src/data/catalogue/recipes.json
+src/data/catalogue/recipes.store.json
+src/data/catalogue/titles.json
 src/data/ingredients/ingredients.json
 docs
 *.md
