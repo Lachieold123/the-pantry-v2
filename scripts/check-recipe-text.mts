@@ -8,6 +8,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { buildIngredientIndex, type IngredientDef } from '../src/domain/ingredients/database.ts';
+import { PHOTO_SOURCES } from '../src/data/catalogue/photoSources.ts';
 import type { Recipe } from '../src/domain/recipes/types.ts';
 import { artefactProblems, claimProblems, containsGaps, dietTextProblems, orLines } from './recipe-text-checks.mts';
 
@@ -30,7 +31,9 @@ for (const r of recipes) {
   const counted = r.ingredientGroups.flatMap((g) => g.items).filter((l) => !l.optional);
   const groups = new Set(counted.flatMap((l) => (l.ingredientId ? (index.byId.get(l.ingredientId)?.groups ?? []) : [])));
   for (const p of claimProblems([r.title, r.summary ?? '', ...(r.notes ?? [])], groups)) problems.push(`${r.id} (${r.source}): ${p}`);
-  for (const g of containsGaps(r.notes ?? [], groups)) problems.push(`${r.id} (${r.source}): "${g.from}" leaves out ${g.missing.join(", ")}`);
+  for (const g of containsGaps(r.notes ?? [], groups)) problems.push(`${r.id} (${r.source}): "${g.from}" leaves out ${g.missing.join(', ')}`);
+  // CC BY and BY-SA need a source link: the Commons file page (FOOD-10).
+  if (/CC[- ]BY/i.test(JSON.stringify(r.image ?? '')) && !PHOTO_SOURCES[r.id]) problems.push(`${r.id} (${r.source}): CC BY photo with no Commons file page in photoSources.ts`);
   for (const p of artefactProblems([r.title, r.summary ?? '', ...counted.map((l) => l.raw), ...r.steps.map((s) => s.text)]))
     problems.push(`${r.id} (${r.source}): ${p}`);
 }

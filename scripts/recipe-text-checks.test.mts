@@ -10,7 +10,7 @@ import { artefactProblems, claimProblems, containsGaps, safetyProblems, type Saf
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 
-test('the validator fails every known-bad recipe for the reason it is bad', () => {
+test('the validator fails every known-bad recipe for the reason it is bad', { timeout: 120_000 }, () => {
   let out = '';
   try {
     execFileSync('npx', ['tsx', 'scripts/validate-house-recipes.mts', '--no-nutrition', 'scripts/fixtures/known-bad-l7.json'], {
@@ -39,7 +39,7 @@ test('the validator fails every known-bad recipe for the reason it is bad', () =
   ];
   for (const [id, what] of expected)
     assert.ok(out.split('\n').some((l) => l.includes(`  ${id}  `) && l.includes(what)), `${id}: expected ${what}`);
-}, { timeout: 120_000 });
+});
 
 const base: SafetyInput = { ids: new Set(), isPoultry: () => false, lineText: '', title: 'Dish', summary: '', steps: [], notes: [] };
 const safety = (r: Partial<SafetyInput>) => safetyProblems({ ...base, ...r });
