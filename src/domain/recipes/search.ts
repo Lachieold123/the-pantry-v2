@@ -57,8 +57,13 @@ function spelledRightIn(words: ReadonlySet<string>, q: string): boolean {
  * Typos are only forgiven for a word nothing matches as typed: otherwise
  * "pasta" would also find every recipe with curry paste.
  */
+const CONNECTORS: ReadonlySet<string> = new Set(['and', 'n']);
+
 export function searchRecipes(index: readonly Indexed[], query: string): Recipe[] {
-  const words = normaliseWords(query).map(spellings);
+  // "mac n cheese", "mac 'n' cheese", "mac & cheese": the joining word never has to match (F-13).
+  const words = normaliseWords(query)
+    .filter((w) => !CONNECTORS.has(w))
+    .map(spellings);
   if (words.length === 0) return index.map((i) => i.recipe);
   const weight = { exact: 3, prefix: 2, fuzzy: 0 } as const;
   const vocabulary = wordsOf(index);
