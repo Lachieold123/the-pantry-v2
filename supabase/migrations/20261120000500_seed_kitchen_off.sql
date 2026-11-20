@@ -1,15 +1,17 @@
--- PENDING, NOT APPLIED. Lives in _pending/ so `supabase db push` never picks it up.
--- To apply: move it up one folder, then run the migration. See docs/SEED-KITCHEN-OFF.md.
---
 -- Finishes turning the seed kitchen off (retired 17 Oct 2026, see
--- 20261017000000_seed_kitchen_retired.sql). Deletes nothing: tables, rows,
--- cooks and published recipes all stay.
+-- 20261016204729_seed_kitchen_retired.sql). Deletes nothing: tables, rows,
+-- cooks and published recipes all stay. Was _pending/20261021000000 until the
+-- 20 Nov 2026 backend fix gave it its place in the apply order (supabase/APPLY-LIVE.md).
 
 -- 1. Drop the cron job if it is still scheduled. Safe to run twice.
+--    Two ifs, not one `and`: plpgsql plans the whole condition, and cron.job
+--    doesn't exist where pg_cron isn't installed.
 do $$
 begin
-  if to_regclass('cron.job') is not null and exists (select 1 from cron.job where jobname = 'seed-kitchen') then
-    perform cron.unschedule('seed-kitchen');
+  if to_regclass('cron.job') is not null then
+    if exists (select 1 from cron.job where jobname = 'seed-kitchen') then
+      perform cron.unschedule('seed-kitchen');
+    end if;
   end if;
 end $$;
 
