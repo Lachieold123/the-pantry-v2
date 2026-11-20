@@ -2,13 +2,40 @@
 // "Food safety: ..." note from the rules in docs/backups/feed-payloads-2026-10-17/fs_notes.py, keeping any real
 // existing safety note's words. Batch recipes -> /tmp/l7-safety-edits.json (edit-batch.ts); converted ones ->
 // /tmp/l7-safety-fixes.json (merge-fixes.ts). --list prints id | problems | new note instead.
+// --live (FOOD-16): runs over the 719 live feed rows as of 17 Oct (the published_recipes backup, overlaid with the
+// update and insert payloads and the compact note updates) and writes FIX-L7-LIVE.sql instead: one statement per row
+// that adds the missing safety note, or removes a diet tag the checked catalogue copy of the same recipe has lost
+// because of a line the live row also has.
 import { readFileSync, writeFileSync } from 'node:fs';
 import { buildIngredientIndex, type IngredientDef } from '../../../../../src/domain/ingredients/database.ts';
-import { allLines, type Recipe } from '../../../../../src/domain/recipes/types.ts';
+import { allLines, type DietTag, type Recipe } from '../../../../../src/domain/recipes/types.ts';
 import { safetyProblems } from '../../../../../scripts/recipe-text-checks.mts';
 import { all } from './batch-io.ts';
 const ROOT = new URL('../../../../../', import.meta.url).pathname;
-const recipes: Recipe[] = JSON.parse(readFileSync(ROOT + 'src/data/catalogue/recipes.json', 'utf8'));
+const live = process.argv.includes('--live');
+const PAY = ROOT + 'docs/backups/feed-payloads-2026-10-17/';
+type Row = { id?: string; slug?: string; title?: string; notes?: string[]; diets?: DietTag[]; recipe: Recipe };
+const rowsOf = (f: string): Row[] => JSON.parse(readFileSync(PAY + f, 'utf8'));
+const catalogue: Recipe[] = JSON.parse(readFileSync(ROOT + 'src/data/catalogue/recipes.json', 'utf8'));
+const liveRows: Row[] = [];
+if (live) {
+  const byId = new Map<string, Row>(
+    (JSON.parse(readFileSync(ROOT + 'docs/backups/supabase-2026-10-17/published_recipes.json', 'utf8')) as Row[]).map((r) => [r.id!, r]),
+  );
+  for (const u of rowsOf('feed-updates.json')) byId.set(u.id!, { ...byId.get(u.id!), ...u });
+  const compact = new Map(rowsOf('feed-compact-updates.json').map((r) => [r.id ?? '', r.notes]));
+  liveRows.push(...byId.values(), ...rowsOf('feed-inserts.json'));
+  for (const r of liveRows) {
+    const notes = (compact.get(r.id ?? '') ?? r.recipe.notes ?? []).filter((n) => n.trim() !== 'Food safety:');
+    r.recipe = { ...r.recipe, notes, diets: r.diets ?? r.recipe.diets };
+  }
+}
+// The live row's key: its uuid, or its unique slug for inserts (their uuid was made by the database).
+const keyOf = new Map<Recipe, string>(liveRows.map((r) => [r.recipe, r.id ? `id = '${r.id}'` : `slug = '${r.slug}'`]));
+const slugOf = new Map<Recipe, string>(liveRows.map((r) => [r.recipe, r.slug ?? r.recipe.id]));
+const recipes: Recipe[] = live ? liveRows.map((r) => r.recipe) : catalogue;
+const sql: string[] = [];
+const q = (s: string) => s.replace(/'/g, "''");
 const index = buildIngredientIndex(JSON.parse(readFileSync(ROOT + 'src/data/ingredients/ingredients.json', 'utf8')) as IngredientDef[]);
 const inBatch = new Set([...all()].map(({ h }) => h.id as string));
 const list = process.argv.includes('--list');
@@ -81,11 +108,92 @@ for (const r of recipes) {
   const body = [...kept, ...out].map((s) => (/[.!]$/.test(s) ? s : `${s}.`)).join(' ');
   const note = `Food safety: ${body}`;
   if (list) { console.log(`${r.id} | ${p.map((x) => x.replace(/:.*/, '')).join(', ')} | ${note}`); continue; }
+  if (live) {
+    // Live: add only, so a new note with just the missing sentences; an existing note stays as it is.
+    const add = `Food safety: ${out.map((s) => (/[.!]$/.test(s) ? s : `${s}.`)).join(' ')}`;
+    const where = `where ${keyOf.get(r)}`;
+    // The proof: the recipe's own line or step that needs the note.
+    const PROOF: [string, RegExp][] = [['reheat', /reheat/i], ['mince', /mince|sausage|meatball|liver/i], ['fresh pork', /pork/i],
+      ['raw poultry', /chicken|duck|turkey|quail|rabbit|poultry/i], ['garlic', /oil/i], ['raw or soft egg', /egg|yolk/i],
+      ['cooked rice', /rice/i], ['raw seafood', /fish|prawn|squid|mussel|clam|salmon|tuna/i], ['beef', /beef|lamb|veal/i]];
+    const texts = [...lines.map((l) => l.raw), ...r.steps.map((s) => s.text), ...(r.notes ?? [])];
+    const proofs = p.map((x) => {
+      const re = PROOF.find(([k]) => x.startsWith(k))?.[1];
+      const t = re && texts.find((s) => re.test(s));
+      return t ? `"${t.slice(0, 90)}${t.length > 90 ? '...' : ''}"` : x;
+    });
+    sql.push(
+      `-- ${r.title}: ${[...new Set(p.map((x) => x.replace(/:.*/, '')))].join(', ')}. Proof: ${q([...new Set(proofs)].join('; ')).replace(/\n/g, ' ')}`,
+      `update public.published_recipes set recipe = jsonb_set(recipe, '{notes}', coalesce(recipe->'notes', '[]'::jsonb) || to_jsonb('${q(add)}'::text)) ${where} and not coalesce(recipe->'notes', '[]'::jsonb) @> jsonb_build_array('${q(add)}'::text);`,
+      `-- undo: update public.published_recipes set recipe = jsonb_set(recipe, '{notes}', coalesce((select jsonb_agg(n) from jsonb_array_elements(recipe->'notes') n where n #>> '{}' <> '${q(add)}'), '[]'::jsonb)) ${where};`,
+      '',
+    );
+    continue;
+  }
   const e = { dropNotes: old, addNotes: [note] };
   if (inBatch.has(r.id)) edits[r.id] = e;
   else fixes[r.id] = old.length ? e : { addNotes: [note] };
 }
-if (!list) {
+if (live) {
+  // Diet tags: the catalogue copy (derived from its lines, all FOOD fixes in) has lost the tag, and the counted line
+  // that breaks it is in the live row word for word.
+  const BREAK: Record<string, string[]> = {
+    vegetarian: ['meat', 'beef', 'pork', 'lamb', 'poultry', 'fish', 'shellfish', 'non-vegetarian'],
+    vegan: ['meat', 'beef', 'pork', 'lamb', 'poultry', 'fish', 'shellfish', 'dairy', 'egg', 'animal-product', 'non-vegetarian'],
+    pescatarian: ['meat', 'beef', 'pork', 'lamb', 'poultry'],
+    'no-gluten': ['gluten'],
+    'no-dairy': ['dairy'],
+  };
+  const cat = new Map(catalogue.map((c) => [c.id, c]));
+  const diet: string[] = [];
+  const noCopy: string[] = [];
+  for (const r of recipes) {
+    const c = cat.get(slugOf.get(r)!);
+    if (!c) { noCopy.push(slugOf.get(r)!); continue; }
+    const liveRaw = new Set(allLines(r).filter((l) => !l.optional).map((l) => l.raw.trim()));
+    for (const tag of r.diets.filter((t) => !c.diets.includes(t))) {
+      const proof = allLines(c).find((l) => !l.optional && l.ingredientId && liveRaw.has(l.raw.trim())
+        && (index.byId.get(l.ingredientId)?.groups ?? []).some((g) => BREAK[tag]?.includes(g)));
+      if (!proof) {
+        const brk = allLines(c).filter((l) => !l.optional && l.ingredientId && (index.byId.get(l.ingredientId)?.groups ?? []).some((g) => BREAK[tag]?.includes(g)));
+        console.log('DIET-NO-PROOF', slugOf.get(r), tag, '| catalogue:', brk.map((l) => l.raw).join(' ; ').slice(0, 200));
+        continue;
+      }
+      const p = `tagged ${tag}, but "${proof.raw}" is ${proof.ingredientId} (${index.byId.get(proof.ingredientId!)!.groups.join(', ')})`;
+      const where = `where ${keyOf.get(r)}`;
+      diet.push(
+        `-- ${r.title}: ${q(p).slice(0, 200)}`,
+        `update public.published_recipes set diets = array_remove(diets, '${tag}'), recipe = jsonb_set(recipe, '{diets}', coalesce((select jsonb_agg(d) from jsonb_array_elements(recipe->'diets') d where d #>> '{}' <> '${tag}'), '[]'::jsonb)) ${where} and '${tag}' = any(diets);`,
+        `-- undo: update public.published_recipes set diets = array_append(diets, '${tag}'), recipe = jsonb_set(recipe, '{diets}', (recipe->'diets') || '["${tag}"]'::jsonb) ${where};`,
+        '',
+      );
+    }
+  }
+  const head = [
+    '-- FIX-L7-LIVE.sql (FOOD-16, deep audit 20 Nov 2026). NOT RUN. For the owner to review and run on the-pantry\'s live database.',
+    `-- Built offline by tools/FIX-L7/safety-notes.ts --live over the ${recipes.length} live rows as of 17 Oct: the published_recipes backup`,
+    '-- overlaid with the update and insert payloads, their compact note updates and the 24 Oct vegan fixes. Rows edited after',
+    '-- that are not seen, so look at a row before running its statement if it may have changed.',
+    '-- Each statement only removes a wrong diet tag or adds a missing "Food safety" note. Each is keyed by the row id (or the',
+    '-- unique slug for rows inserted from feed-inserts.json, whose id the database made) and does nothing if already done.',
+    '-- The undo for each is the comment under it. Diet tags come off only where the checked catalogue copy of the same recipe',
+    `-- has lost the tag and the line that breaks it is in the live row word for word; ${noCopy.length} live rows have no catalogue copy`,
+    '-- and get the safety check only.',
+    '',
+    '-- Pasta e Lenticchie: Parmesan is made with animal rennet (D-053), so it is not vegetarian (24 Oct kept the tag).',
+    "update public.published_recipes set diets = array_remove(diets, 'vegetarian'), recipe = jsonb_set(recipe, '{diets}', coalesce((select jsonb_agg(d) from jsonb_array_elements(recipe->'diets') d where d #>> '{}' <> 'vegetarian'), '[]'::jsonb)) where id = 'fcc4ff98-09d0-4068-9c82-add53a836973' and 'vegetarian' = any(diets);",
+    "-- undo: update public.published_recipes set diets = array_append(diets, 'vegetarian'), recipe = jsonb_set(recipe, '{diets}', (recipe->'diets') || '[\"vegetarian\"]'::jsonb) where id = 'fcc4ff98-09d0-4068-9c82-add53a836973';",
+    '',
+    '-- Pasta e Fagioli (id from the 17 Oct backup): its only Parmesan is "1 parmesan rind (optional)", and optional lines do not',
+    '-- count, so it stays vegetarian. Owner call: run this only if an optional rennet cheese should cost the tag.',
+    "-- update public.published_recipes set diets = array_remove(diets, 'vegetarian'), recipe = jsonb_set(recipe, '{diets}', coalesce((select jsonb_agg(d) from jsonb_array_elements(recipe->'diets') d where d #>> '{}' <> 'vegetarian'), '[]'::jsonb)) where id = 'e41dc0af-b04b-46c3-a247-af994654e44d' and title = 'Pasta e Fagioli' and 'vegetarian' = any(diets);",
+    '',
+    '-- ===== Diet tags =====',
+    '',
+  ];
+  writeFileSync(ROOT + 'docs/audits/2026-11-20-deep-audit/FIX-L7-LIVE.sql', [...head, ...diet, '-- ===== Food safety notes =====', '', ...sql].join('\n'));
+  console.log({ dietStatements: diet.length / 4, noteStatements: sql.length / 4 });
+} else if (!list) {
   writeFileSync('/tmp/l7-safety-edits.json', JSON.stringify(edits, null, 1));
   writeFileSync('/tmp/l7-safety-fixes.json', JSON.stringify(fixes, null, 1));
 }
