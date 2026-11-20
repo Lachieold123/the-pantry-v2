@@ -47,11 +47,12 @@ describe('intents', () => {
 });
 
 describe('skill', () => {
-  it('only ever lifts, and a beginner’s easy dish most', () => {
+  it('only ever lifts: a beginner’s easy dish, and a confident cook’s hard one, most', () => {
     assert.equal(skillLift('easy', 'starting'), 2);
     assert.equal(skillLift('hard', 'starting'), 0);
     assert.equal(skillLift('medium', 'comfortable'), 1);
-    assert.equal(skillLift('hard', 'confident'), 1);
+    // Enough to beat the time cost of a long hard dish, so a confident cook sees some (F-15).
+    assert.ok(skillLift('hard', 'confident') > skillLift('medium', 'confident') + 2);
     assert.equal(skillLift('easy', 'confident'), 0);
     assert.equal(skillLift('easy', undefined), 0);
   });

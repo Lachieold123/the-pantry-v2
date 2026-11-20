@@ -28,7 +28,7 @@ export type Weights = {
   swap: number;
   likedCuisine: number;
   learnedCuisine: number;
-  /** Points per step of skillLift (beginner + easy is 2 steps, confident + harder is 1). */
+  /** Points per step of skillLift (beginner + easy is 2 steps, confident + hard 4, confident + medium 1). */
   skill: number;
   saved: number;
   savedUncooked: number;

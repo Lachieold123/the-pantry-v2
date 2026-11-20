@@ -39,8 +39,13 @@ const SKILL_FITS: Readonly<Record<Skill, readonly Difficulty[]>> = {
 /** How much a recipe's difficulty lifts it for this cook. Never negative: a hard dish still shows for a beginner. */
 export function skillLift(difficulty: Difficulty, skill: Skill | undefined): number {
   if (!skill || !SKILL_FITS[skill].includes(difficulty)) return 0;
-  // A beginner's fit matters more than a confident cook's taste for a challenge.
-  return skill === 'starting' ? 2 : 1;
+  // A beginner's fit matters more than a confident cook's taste for medium.
+  if (skill === 'starting') return 2;
+  // Hard dishes are rare (1 in 18) and long, so the time fit costs them about
+  // 2 points against a medium one. At 1 step "up for a challenge" never saw a
+  // hard dish in Home's top 25 (F-15). At 4: 9 in 25 at Saturday breakfast, none
+  // on a weeknight (the weeknight hard-dish penalty still holds).
+  return difficulty === 'hard' ? 4 : 1;
 }
 
 export type WelcomeStep = 'hello' | 'intent' | 'eat' | 'cuisines' | 'time' | 'cupboard' | 'reveal' | 'notify';
