@@ -70,6 +70,31 @@ export async function open(page: Page, path: string, seed: Seed = {}): Promise<v
   await page.goto(path);
 }
 
+/**
+ * Gives the page the saved sharing sign-in a phone in a household always has.
+ * Without one, the app rightly treats the household as lapsed (DATA-4).
+ * Call before `open`. The token is fake; the tests block the server anyway.
+ */
+export async function signedInAs(page: Page, userId: string): Promise<void> {
+  await page.addInitScript(
+    ({ key, session }: { key: string; session: string }) => {
+      if (!sessionStorage.getItem('e2e-seeded')) localStorage.setItem(key, session);
+    },
+    {
+      key: 'sb-eozyhllkvajvrecojdxu-auth-token',
+      session: JSON.stringify({
+        access_token: 'e2e',
+        refresh_token: 'e2e',
+        token_type: 'bearer',
+        expires_in: 3600,
+        // Far off, so it never asks the (blocked) server for a fresh one.
+        expires_at: 4102444800,
+        user: { id: userId, aud: 'authenticated', is_anonymous: true },
+      }),
+    },
+  );
+}
+
 /** Every test fails if the page throws, even when the screen looks fine. */
 export const test = base.extend<{ errors: string[] }>({
   errors: [

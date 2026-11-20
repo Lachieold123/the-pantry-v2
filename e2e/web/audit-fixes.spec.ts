@@ -1,7 +1,7 @@
 // What the 8 October audit fixes show on screen: how recipes are made (REL-23),
 // the list agreeing with What I have (BUG-06), and taking someone out of a
 // household (SEC-15).
-import { expect, ONBOARDED, open, STOCKED, test } from './kitchen';
+import { expect, ONBOARDED, open, signedInAs, STOCKED, test } from './kitchen';
 
 test('a recipe says how it was made, and Settings › About explains it', async ({ page }) => {
   await open(page, '/recipe/carbonara', ONBOARDED);
@@ -39,6 +39,7 @@ test('in a household, each other member can be removed, and unused codes cancell
     lastSyncedAt: 1,
   };
   await page.route(/supabase\.co/, (route) => route.abort('internetdisconnected'));
+  await signedInAs(page, 'me');
   await open(page, '/household', { ...ONBOARDED, household });
   await expect(page.getByTestId('household-remove-s')).toBeVisible();
   await expect(page.getByTestId('household-remove-me')).toHaveCount(0);

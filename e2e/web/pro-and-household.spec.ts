@@ -1,7 +1,7 @@
 // Pro (D-038) is honest while it isn't on sale, and its limits work when
 // previewed. Household (D-039) says plainly when it can't reach the server,
 // and shows who you share with once you do.
-import { expect, isoDay, ONBOARDED, open, test } from './kitchen';
+import { expect, isoDay, ONBOARDED, open, signedInAs, test } from './kitchen';
 
 test('the Pro page says it isn’t on sale yet, and nothing is limited', async ({ page }) => {
   await open(page, '/settings', ONBOARDED);
@@ -52,6 +52,7 @@ test('in a household, the page lists who’s in and the List says who it’s sha
   };
   // No server here: the sync quietly stays offline.
   await page.route(/supabase\.co/, (route) => route.abort('internetdisconnected'));
+  await signedInAs(page, 'me');
   await open(page, '/household', { ...ONBOARDED, household });
   await expect(page.getByText('Lachlan (you)')).toBeVisible();
   await expect(page.getByText('Sam', { exact: true })).toBeVisible();
