@@ -1,0 +1,24 @@
+REL2-2,fixed,edf79cf,Pro on sale only with both legal links; limits follow
+F-5,fixed,edf79cf,same guard as REL2-2
+REL2-1,fixed,7f324c4,store builds hide feed/cook routes and Home/menu entries
+UX-2,fixed,7f324c4,same flag as REL2-1
+REL2-8,fixed,7f324c4,scan tiles and route hidden until scanning is connected
+UX-6,fixed,7f324c4,same flag as REL2-8
+REPO-13,part-fixed,7f324c4,one INTERNAL_BUILD flag; owner to check EAS production env
+PERF-3,fixed,54d4779,sheet and drawer timers cleared; Settings tour timer intended
+UX-3,fixed,68573c3,controlEdge token 3:1
+UX-9,fixed,68573c3,inkSubtle and accent 3:1
+UX-12,fixed,68573c3,jar and library colours 3:1
+UX-10,part-fixed,68573c3,photo meta raised; welcome quiz scrim left
+UX-1,fixed,cc9c396,Add a plate / Save / no sharing promise
+UX-5,fixed,cc9c396,Home uses Ready now / Nearly there; Plan keeps Picked for you
+UX-14,fixed,cc9c396,cupboard subtitle
+UX-15,fixed,cc9c396,cookable list words; no per-row Ready to cook
+UX-16,fixed,cc9c396,one offline line; curly apostrophe
+UX-11,fixed,2086fe4,missing collection shows one empty state
+F-10,part-fixed,2086fe4,display half: Plan badge and empty collection
+UX-13,fixed,df7dcfb,checklist waits for the tour; tour step 1 words
+UX-17,fixed,df7dcfb,count ring accessible
+UX-18,fixed,66c8af2,badge caps at 99+
+REL2-12,owner,85b6a6e,crash logged to device; crash reporting needs owner (K-8)
+DATA-5,part-fixed,397c22a,display half
