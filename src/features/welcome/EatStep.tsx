@@ -1,4 +1,4 @@
-// Step 1 of 2: "Anything you don't eat?" The diet and the avoid list on one
+// "Anything you don't eat?" The diet and the avoid list on one
 // short screen, in v1's onboarding look (frosted chips on the dark photo).
 // Answers save as they're tapped, so skipping part way keeps whatever was
 // chosen, and nothing here is required: "Everything" starts ticked.
@@ -29,7 +29,7 @@ export function EatStep() {
   );
   return (
     <View>
-      <StepHeading kicker="Step 1 of 2" title="Anything you don’t eat?" sub="Tap any that apply. If none do, carry on." />
+      <StepHeading kicker="Eating style" title="Anything you don’t eat?" sub="Tap any that apply. If none do, carry on." />
       <StepHeading kicker="I eat" />
       <Wrap>
         {DIETS.map((d) => (

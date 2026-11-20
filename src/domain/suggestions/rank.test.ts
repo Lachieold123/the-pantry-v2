@@ -251,3 +251,17 @@ describe('edges', () => {
     }
   });
 });
+
+describe('cooking skill (D-050)', () => {
+  const easyShare = (skill: 'starting' | 'confident' | undefined) => {
+    const picks = top(12, rankHome(rankInput({ taste: { ...NO_TASTE, skill } })).picks);
+    return picks.filter((p) => p.difficulty === 'easy').length / picks.length;
+  };
+
+  it('lifts easy dishes for a beginner and harder ones for a confident cook, without ruling any out', () => {
+    assert.ok(easyShare('starting') >= easyShare(undefined));
+    assert.ok(easyShare('confident') <= easyShare(undefined));
+    const all = rankHome(rankInput({ taste: { ...NO_TASTE, skill: 'starting' }, depth: 0 })).picks;
+    assert.ok(all.some((p) => p.difficulty !== 'easy'), 'harder dishes still appear further down');
+  });
+});

@@ -13,6 +13,7 @@ import type { IngredientIndex } from '../ingredients/database';
 import type { AvoidList, DietPreference } from '../recipes/diets';
 import type { TimeFilter } from '../recipes/search';
 import type { CuisineId, Recipe } from '../recipes/types';
+import type { Skill } from '../welcome/onboarding';
 import { diversify, type Facets } from './diversify';
 import { asRecipeFilters, type HomeFilters } from './home';
 import { dayKind, mealWindow, quickLimit, seasonFor, timeBudget, type Moment } from './moment';
@@ -20,8 +21,15 @@ import { scoreRecipe, WEIGHTS, type Reason, type ScoreContext, type Weights } fr
 import { deriveSignals, mainProtein, type History } from './signals';
 import { eligibleForSurprise } from './surprise';
 
-/** What the cook has told us in Settings: diet and leave-outs are hard rules; cuisines and weeknight time only reorder. */
-export type Taste = { diet: DietPreference; avoid: AvoidList; cuisines: readonly CuisineId[]; weeknight: TimeFilter | undefined };
+/** What the cook has told us in Settings: diet and leave-outs are hard rules; cuisines, weeknight time and skill only reorder. */
+export type Taste = {
+  diet: DietPreference;
+  avoid: AvoidList;
+  cuisines: readonly CuisineId[];
+  weeknight: TimeFilter | undefined;
+  /** From the welcome's skill question (D-050); unset means no lift either way. */
+  skill?: Skill | undefined;
+};
 
 export type RankInput = {
   /** Every recipe this cook can see: the catalogue and their own. */
@@ -108,6 +116,7 @@ function contextFor(input: RankInput, matches: readonly CookableMatch[]): ScoreC
     quick: quickLimit(taste.weeknight),
     season: seasonFor(moment.today),
     liked: new Set(taste.cuisines),
+    skill: taste.skill,
     // Taste is learned from everything they've touched, hidden or filtered out included.
     signals: deriveSignals(input.history, new Map(input.recipes.map((r) => [r.id, r] as const)), moment.nowMs),
     cupboard: new Map(matches.map((m) => [m.recipe.id, m] as const)),

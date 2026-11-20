@@ -1,5 +1,7 @@
-# First launch: "Anything you don't eat?", then tap a few things in "What's in
-# your cupboard?", and Home opens on What I have, with the tour over it.
+# First launch, in v1's order (P7): what brings you here, what you eat, cuisines,
+# time and skill, a few taps in "What's in your cupboard?", "Tonight, for you",
+# the notification primer, then Home on What I have with the tour and the
+# first-run checklist.
 appId: host.exp.Exponent
 ---
 - launchApp:
@@ -13,6 +15,12 @@ appId: host.exp.Exponent
 
 - tapOn:
     id: "welcome-start"
+- assertVisible: "What brings you here?"
+- tapOn:
+    id: "intent-plan"
+- takeScreenshot: welcome-intent
+- tapOn:
+    id: "welcome-next"
 - assertVisible: 'Anything you don.t eat\?'
 # Nothing is required: until something is ticked the way on says "None of these".
 - assertVisible: "None of these"
@@ -24,10 +32,26 @@ appId: host.exp.Exponent
     id: "welcome-next"
 
 # Back goes back a step and keeps the answers.
-- assertVisible: 'What.s in your cupboard\?'
+- assertVisible: "What do you love eating?"
 - tapOn:
     id: "welcome-back"
 - assertVisible: 'Anything you don.t eat\?'
+- tapOn:
+    id: "welcome-next"
+- tapOn:
+    id: "cuisine-italian"
+- takeScreenshot: welcome-cuisines
+- tapOn:
+    id: "welcome-next"
+- assertVisible: "How long do you have?"
+- tapOn:
+    id: "weeknight-under-30"
+- scrollUntilVisible:
+    element:
+      id: "skill-starting"
+- tapOn:
+    id: "skill-starting"
+- takeScreenshot: welcome-time-skill
 - tapOn:
     id: "welcome-next"
 
@@ -45,7 +69,25 @@ appId: host.exp.Exponent
 - assertVisible: "3 things"
 - takeScreenshot: welcome-cupboard
 - tapOn:
-    id: "welcome-finish"
+    id: "welcome-next"
+
+# "Tonight, for you": three picks; Spin again, then put one on tonight's plan.
+- assertVisible: ".*Your menu.s ready.*"
+- takeScreenshot: welcome-reveal
+- tapOn:
+    id: "welcome-spin"
+- tapOn:
+    id: "welcome-next"
+
+# The primer shows the real Sunday reminder; "Allow notifications" brings up iOS's prompt.
+- assertVisible:
+    id: "welcome-notify"
+- takeScreenshot: welcome-notify
+- tapOn:
+    id: "welcome-allow"
+- tapOn:
+    text: "Allow"
+    optional: true
 
 # Then the four-stop tour over Home (D-035): Next, Next, Next, Start cooking.
 # Wait for the card, not just the dim: it appears once its spotlight has settled.
@@ -74,7 +116,15 @@ appId: host.exp.Exponent
 
 # Garlic, egg and chicken thigh make something tonight, so Home leads with What I have.
 - assertVisible: ".*From 3 things in your cupboard.*"
+# The first-run checklist: the cupboard and the plan are already done.
+- assertVisible:
+    id: "checklist"
+- assertVisible: "2/4"
 - takeScreenshot: welcome-done-feed
+- tapOn:
+    id: "checklist-dismiss"
+- assertNotVisible:
+    id: "checklist"
 
 # It doesn't come back on its own; Settings can replay it.
 - tapOn:

@@ -27,6 +27,7 @@ The ranking's job is to put the right five dishes on those cards, in a sensible 
 | Weeknight time limit | Settings → Cooking | Soft |
 | What's in the cupboard: ready, or 1–2 things short | Cupboard (the shared engine, D-030) | Soft, and decides the What I have lists |
 | Favourite cuisines | Settings → Cooking | Soft |
+| Cooking skill | Welcome, Settings → Cooking | Soft |
 | What you've cooked, how often, how lately | Cooking log | Soft: taste and freshness |
 | Cookmarks | Bookmarks | Soft |
 | Recently opened | Library → Recent | Soft: interest |
@@ -153,6 +154,7 @@ All in one table in `score.ts` (`WEIGHTS`). Tuning Home means changing these num
 | Cupboard: each stand-in | 0 | −0.25 | The exact ingredient is better than a swap. |
 | A cuisine you picked | +2 | +2 | You told us; strong, but not enough to win alone. |
 | A cuisine you cook (× 0–1 lean) | up to +2 | up to +2 | Learned taste counts as much as stated taste. |
+| Suits your cooking skill (D-050; `skillLift` steps × 0.75) | +1.5 beginner, +0.75 otherwise | same | Only lifts, never hides. Added when the P7 onboarding merged (20 Nov integration). |
 | In Cookmarks | +2.5 | +2.5 | You saved it to cook it. |
 | …and not cooked yet | +0.5 | +0.5 | A nudge to finally cook it. |
 | A regular (cooked 2+ times) | +2 | +2 | The best evidence of a dish you love. |

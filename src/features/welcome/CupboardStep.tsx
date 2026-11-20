@@ -1,6 +1,6 @@
-// Step 2 of 2: "What's in your cupboard?" What I have is the point of the app
-// (D-034), so the welcome ends by filling the cupboard with a few taps rather
-// than asking about cuisines; those are learnt or set later in Settings.
+// "What's in your cupboard?" What I have is the point of the app (D-034), so
+// the questions end by filling the cupboard with a few taps (D-041's step,
+// kept in v1's longer flow) and Home then opens on what it can make.
 import { useMemo, useState } from 'react';
 import { View } from 'react-native';
 
@@ -50,7 +50,7 @@ export function CupboardStep({ picks, picked, onToggle, onSkip }: Props) {
   return (
     <View>
       <StepHeading
-        kicker="Step 2 of 2"
+        kicker="Your cupboard"
         title="What’s in your cupboard?"
         sub="Tap what you have right now. You can change it any time in the Cupboard tab."
       />

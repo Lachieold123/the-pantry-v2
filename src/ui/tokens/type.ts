@@ -166,6 +166,7 @@ export const SHADOW = {
   sheet: { shadowOpacity: 0.25, shadowRadius: 24, shadowOffset: { width: 0, height: -8 }, elevation: 12 },
   photoDisc: { shadowOpacity: 0.18, shadowRadius: 4, shadowOffset: { width: 0, height: 2 }, elevation: 2 },
   hero: { shadowOpacity: 0.55, shadowRadius: 30, shadowOffset: { width: 0, height: 30 }, elevation: 10 },
+  checklist: { shadowOpacity: 0.06, shadowRadius: 11, shadowOffset: { width: 0, height: 6 }, elevation: 3 },
   peek: { shadowOpacity: 0.35, shadowRadius: 16, shadowOffset: { width: 0, height: 12 }, elevation: 4 },
 } as const satisfies Record<string, Shadow>;
 

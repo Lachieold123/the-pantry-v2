@@ -28,6 +28,7 @@ export function useHomeRanking(filters: HomeFilters, depth: number): HomeRanking
   const avoid = usePreferences((s) => s.avoid);
   const cuisines = usePreferences((s) => s.cuisines);
   const weeknight = usePreferences((s) => s.weeknight);
+  const skill = usePreferences((s) => s.skill);
   const hidden = useSaved((s) => s.hidden);
   const bookmarks = useSaved((s) => s.bookmarks);
   const recentlyViewed = useSaved((s) => s.recentlyViewed);
@@ -42,7 +43,7 @@ export function useHomeRanking(filters: HomeFilters, depth: number): HomeRanking
     const moment = momentOf(new Date(quarter));
     return rankHome({
       recipes,
-      taste: { diet, avoid, cuisines, weeknight },
+      taste: { diet, avoid, cuisines, weeknight, skill },
       hidden: new Set(hidden),
       filters,
       history: {
@@ -62,6 +63,7 @@ export function useHomeRanking(filters: HomeFilters, depth: number): HomeRanking
     avoid,
     cuisines,
     weeknight,
+    skill,
     hidden,
     filters,
     cookLog,
@@ -85,6 +87,7 @@ export function useSlotIdeas(day: ISODate, slot: Slot | undefined, depth: number
   const avoid = usePreferences((s) => s.avoid);
   const cuisines = usePreferences((s) => s.cuisines);
   const weeknight = usePreferences((s) => s.weeknight);
+  const skill = usePreferences((s) => s.skill);
   const hidden = useSaved((s) => s.hidden);
   const bookmarks = useSaved((s) => s.bookmarks);
   const recentlyViewed = useSaved((s) => s.recentlyViewed);
@@ -99,7 +102,7 @@ export function useSlotIdeas(day: ISODate, slot: Slot | undefined, depth: number
     () =>
       rankForSlot({
         recipes,
-        taste: { diet, avoid, cuisines, weeknight },
+        taste: { diet, avoid, cuisines, weeknight, skill },
         hidden: new Set(hidden),
         history: { cookLog, bookmarks, recentlyViewed },
         plan,
@@ -110,6 +113,6 @@ export function useSlotIdeas(day: ISODate, slot: Slot | undefined, depth: number
         nowMs: quarter,
         depth,
       }).picks,
-    [recipes, diet, avoid, cuisines, weeknight, hidden, cookLog, bookmarks, recentlyViewed, plan, ready, nearly, day, slot, quarter, depth],
+    [recipes, diet, avoid, cuisines, weeknight, skill, hidden, cookLog, bookmarks, recentlyViewed, plan, ready, nearly, day, slot, quarter, depth],
   );
 }

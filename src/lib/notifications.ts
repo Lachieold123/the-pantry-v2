@@ -50,6 +50,8 @@ export async function cancelScheduled(id: string | undefined): Promise<void> {
 }
 
 const SUNDAY_REMINDER = 'sunday-plan';
+/** The reminder's words, shared with the welcome's preview of it so the two can't disagree. */
+export const SUNDAY_REMINDER_TEXT = { title: 'Plan the week?', body: 'Pick a few dinners and your shopping list writes itself.' } as const;
 
 /**
  * A weekly nudge at 4pm on Sunday to plan the week. Returns whether it's on:
@@ -67,7 +69,7 @@ export async function setSundayReminder(on: boolean): Promise<boolean> {
     if (!(await ensureNotificationPermission())) return false;
     await Notifications.scheduleNotificationAsync({
       identifier: SUNDAY_REMINDER,
-      content: { title: 'Plan the week?', body: 'Pick a few dinners and your shopping list writes itself.' },
+      content: { ...SUNDAY_REMINDER_TEXT },
       // Expo counts weekdays from Sunday = 1.
       trigger: { type: Notifications.SchedulableTriggerInputTypes.WEEKLY, weekday: 1, hour: 16, minute: 0 },
     });

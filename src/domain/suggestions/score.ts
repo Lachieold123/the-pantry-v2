@@ -10,6 +10,7 @@ import { totalMinutes, type CuisineId, type Recipe, type Season } from '../recip
 import { stableJitter } from './jitter';
 import { mealFit, seasonFit, type DayKind, type MealWindow, type TimeBudget } from './moment';
 import type { Signals } from './signals';
+import { skillLift, type Skill } from '../welcome/onboarding';
 
 /** Every number the ranking uses, in points. Tuning Home means changing this table, nothing else. */
 export type Weights = {
@@ -27,6 +28,8 @@ export type Weights = {
   swap: number;
   likedCuisine: number;
   learnedCuisine: number;
+  /** Points per step of skillLift (beginner + easy is 2 steps, confident + harder is 1). */
+  skill: number;
   saved: number;
   savedUncooked: number;
   regular: number;
@@ -58,6 +61,7 @@ const EVERYTHING: Weights = {
   swap: 0,
   likedCuisine: 2,
   learnedCuisine: 2,
+  skill: 0.75,
   saved: 2.5,
   savedUncooked: 0.5,
   regular: 2,
@@ -138,6 +142,8 @@ export type ScoreContext = {
   quick: number;
   season: Season;
   liked: ReadonlySet<CuisineId>;
+  /** The welcome's cooking-skill answer (D-050). */
+  skill?: Skill | undefined;
   signals: Signals;
   cupboard: ReadonlyMap<string, { tier: Tier; result: Cookable }>;
   /** Today's date: the order holds all day and moves on tomorrow. */
@@ -220,6 +226,8 @@ export function scoreRecipe(recipe: Recipe, ctx: ScoreContext, w: Weights): Scor
     add('taste', w.likedCuisine);
     say('liked-cuisine', `Because you like ${cuisine}`, w.likedCuisine);
   }
+  // Skill only lifts dishes that suit it; nothing is pushed down or hidden (D-050).
+  add('taste', w.skill * skillLift(recipe.difficulty, ctx.skill));
   const lean = ctx.signals.cuisineAffinity.get(recipe.cuisine) ?? 0;
   if (lean > 0) {
     add('taste', w.learnedCuisine * lean);
