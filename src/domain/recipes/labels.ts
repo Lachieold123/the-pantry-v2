@@ -137,15 +137,16 @@ export function recipeAsText(recipe: Pick<Recipe, 'title' | 'summary' | 'serving
 /**
  * How a house recipe was made, said plainly on its page (REL-23, with D-029's
  * photo label). Every house recipe began as an AI draft (D-008); reviewed ones
- * were checked and edited by us (D-036), vetted ones also cooked by us.
+ * were checked against our written standards with AI tools (D-036), vetted ones
+ * also cooked by us. The words match terms §5: no claim a person read each one (S2-6).
  */
 export const RECIPE_ORIGIN: Readonly<Record<Provenance, string>> = {
   vetted: 'Drafted with AI help, then checked, edited and cooked by us',
-  reviewed: 'Drafted with AI help, then checked and edited by us',
+  reviewed: 'Drafted and checked with AI help, to our written standards. Not cook-tested yet',
   'ai-draft': 'An AI-drafted recipe we haven’t checked yet',
   'ai-assisted': AI_ASSISTED_LABEL,
 };
 
 /** The same, for Settings › About. */
 export const ABOUT_RECIPES =
-  'Our recipes were drafted with AI help, then checked and edited by us before they’re published. Some photos are AI-generated; each one is labelled on its recipe.';
+  'Our recipes were drafted with AI help, then checked line by line against our written standards, also with AI help. None has been cook-tested yet. Some photos are AI-generated; each one is labelled on its recipe.';
