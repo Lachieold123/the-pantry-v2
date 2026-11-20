@@ -2,8 +2,6 @@
 // cook eats. Every screen that shows cupboard matches reads it from here, so
 // they always agree. Diet, the avoid list and "not for us" always apply (the
 // old Cupboard and Browse sections ignored them: a vegetarian saw chicken).
-import { useMemo } from 'react';
-
 import { INGREDIENTS, KITCHEN } from '@/data/catalogue/catalogue';
 import { quickAdds, whatCanICook, type CookableMatch } from '@/domain/cupboard/cookable';
 import { cupboardIds } from '@/domain/cupboard/match';
@@ -37,23 +35,53 @@ export function useCookableNow(): CookableNow {
   const bookmarks = useSaved((s) => s.bookmarks);
   const recipes = useAllRecipes();
   const today = useToday();
-  return useMemo(() => {
-    const have = cupboardIds(items);
-    const eats = eligibleForSurprise({ recipes, filters: NO_FILTERS, diet, avoid, hidden: new Set(hidden), index: INGREDIENTS });
-    const savedIds = [...bookmarks].sort((a, b) => b.savedAt - a.savedAt).map((b) => b.recipeId);
-    const { ready, nearly } = whatCanICook({
-      recipes: eats,
-      have,
-      shelf,
-      index: INGREDIENTS,
-      kitchen: KITCHEN,
-      saved: new Set(savedIds),
-      seed: today,
-    });
-    const fromSaved = savedMatches({ recipes: eats, saved: savedIds, have, shelf, index: INGREDIENTS, kitchen: KITCHEN });
-    const suggested = suggestedMatches(ready, nearly, fromSaved);
-    return { ready, nearly, quick: quickAdds(eats, have, INGREDIENTS, KITCHEN), have, fromSaved, suggested };
-  }, [items, shelf, diet, avoid, hidden, bookmarks, recipes, today]);
+  return cookableFor([items, shelf, diet, avoid, hidden, bookmarks, recipes, today]);
+}
+
+type Cupboard = ReturnType<typeof useCupboard.getState>;
+type Prefs = ReturnType<typeof usePreferences.getState>;
+type Saved = ReturnType<typeof useSaved.getState>;
+type Inputs = [
+  Cupboard['items'],
+  Cupboard['shelf'],
+  Prefs['diet'],
+  Prefs['avoid'],
+  Saved['hidden'],
+  Saved['bookmarks'],
+  ReturnType<typeof useAllRecipes>,
+  string,
+];
+
+/**
+ * One answer shared by every screen that asks (PERF-2): Home, Plan, Cupboard,
+ * Browse and Surprise are all mounted at once, and each used to work it out again.
+ */
+let cache: { inputs: Inputs; value: CookableNow } | undefined;
+
+/** @internal Exported for its test. */
+export function cookableFor(inputs: Inputs): CookableNow {
+  if (cache && cache.inputs.every((v, i) => v === inputs[i])) return cache.value;
+  const value = compute(...inputs);
+  cache = { inputs, value };
+  return value;
+}
+
+function compute(...[items, shelf, diet, avoid, hidden, bookmarks, recipes, today]: Inputs): CookableNow {
+  const have = cupboardIds(items);
+  const eats = eligibleForSurprise({ recipes, filters: NO_FILTERS, diet, avoid, hidden: new Set(hidden), index: INGREDIENTS });
+  const savedIds = [...bookmarks].sort((a, b) => b.savedAt - a.savedAt).map((b) => b.recipeId);
+  const { ready, nearly } = whatCanICook({
+    recipes: eats,
+    have,
+    shelf,
+    index: INGREDIENTS,
+    kitchen: KITCHEN,
+    saved: new Set(savedIds),
+    seed: today,
+  });
+  const fromSaved = savedMatches({ recipes: eats, saved: savedIds, have, shelf, index: INGREDIENTS, kitchen: KITCHEN });
+  const suggested = suggestedMatches(ready, nearly, fromSaved);
+  return { ready, nearly, quick: quickAdds(eats, have, INGREDIENTS, KITCHEN), have, fromSaved, suggested };
 }
 
 /** The name a cook reads for an ingredient id. */
