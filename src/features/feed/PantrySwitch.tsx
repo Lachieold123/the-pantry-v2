@@ -57,7 +57,8 @@ export function PantrySwitch({ mode, onMode, ready, stocked, onCupboard, onSearc
             </Text>
             <View style={[styles.count, pantry && styles.countOn]}>
               <Text variant="badge" colour={pantry ? 'bg' : 'inkMuted'} maxFontSizeMultiplier={HOME.countMaxScale}>
-                {String(ready)}
+                {/* Capped so a three-digit count can't squeeze the label to "What I h…" (UX-18); the spoken label keeps the real number. */}
+                {ready > 99 ? '99+' : String(ready)}
               </Text>
             </View>
           </Pressable>
