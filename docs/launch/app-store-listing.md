@@ -2,6 +2,8 @@
 
 **Written:** 5 October 2026, by Claude, from the code and the media pack. Every claim below was checked against the app as it is today (no accounts, no server, scanning "Coming soon"). Character counts were measured with Python; Apple counts characters the same way for these fields.
 
+> **12 October 2026 (K-23):** the app on `preview-2026-10-08` now has optional accounts (Sign in with Apple, email codes) and households on Supabase in Sydney. The App Privacy answers, the shared-content age-rating answer (REL-24) and the App Review notes are now in `app-store-privacy-and-review.md`, and the description's privacy paragraph below is redrafted. Everything else here is as written on 5 October.
+
 > Before you paste anything in, read the **Blockers** in `README.md`. Recipes that passed the editorial review now ship (D-036); none is cook-tested yet.
 
 ## Name and subtitle
@@ -67,14 +69,16 @@ AND THE REST
 • Light and dark mode, and a high-contrast option
 
 YOUR KITCHEN STAYS YOURS
-No account, no ads, no tracking. Everything you add stays on your iPhone.
+No ads, no tracking, and no account needed. Sign in with Apple or your email only if you want a backup on your other devices, or share your kitchen with the people you live with.
 
 A note on allergies: "Ingredients to avoid" steers suggestions, but it isn't an allergy filter. Always check ingredients and labels yourself.
 ```
 
 **Count: 1718 / 4,000**
 
-What it deliberately leaves out, because it isn't true yet: accounts, sharing dishes with other people, scanning, Pro, nutrition, and any number of recipes. "[number] recipes" is true now (the reviewed count); "cook-tested" is only true for recipes you've cooked.
+> DECIDE: the new privacy paragraph adds about 120 characters (well under 4,000); re-measure the count above once you settle the wording. If you want to sell sharing, a line under "AND THE REST" such as "• Share one plan, list and cupboard with your household" is now true.
+
+What it deliberately leaves out, because it isn't true yet: sharing dishes with other people, scanning, Pro, nutrition, and any number of recipes. "[number] recipes" is true now (the reviewed count); "cook-tested" is only true for recipes you've cooked.
 
 ## Keywords
 
@@ -110,7 +114,7 @@ Answer App Store Connect's age-rating questionnaire like this. The expected resu
 | Simulated gambling, contests, real gambling | None / No | |
 | Loot boxes | No | |
 | Unrestricted web access | No | "Import from a link" reads a recipe from a page; it doesn't display web pages. |
-| User-generated content shared with others | No | Plates stay on the phone and only you see them. **Change to Yes when social launches.** |
+| User-generated content shared with others | No (DECIDE) | Plates stay on the phone. Household members see each other's names, the shared plan, list and cupboard, and recipes the plan uses, but only inside a private, invite-only household of up to 8. See `app-store-privacy-and-review.md` §2 (REL-24) for the options. **Change to Yes when social launches.** |
 | Messaging or chat | No | **Change when messages launch.** |
 | Advertising | No | |
 | Parental controls / age assurance | No | |
@@ -163,22 +167,4 @@ Note on the version number: `app.json` says **2.0.0**, deliberately (D-017, so o
 
 ## App Review notes
 
-Paste into App Store Connect › App Review Information › Notes. Tick **"Sign-in required": No**.
-
-```
-The Pantry is a cooking app: it shows what you can cook with what's in your cupboard, plans the week, builds a shopping list from the plan, and walks you through cooking.
-
-- No login or account is needed. Everything is stored on the device; the app has no server.
-- To see the main feature: open the Cupboard tab, add a few things (e.g. eggs, tomato, onion, feta, bread), then go back to Home. "What I have" shows the dishes you can cook now, and "Nearly there" shows dishes one or two things short.
-- Plan: tap Plan, then add a dinner to any day. The List tab then shows the shopping list built from the plan. Tapping the share button opens the standard iOS share sheet.
-- Cook Mode: open any recipe and tap Cook. Timers in the steps schedule a local notification, which is why notification permission is requested (only when a timer or the Sunday reminder is first used).
-- Camera and Photos are used only by "Share a dish" (the centre + button), to attach photos of a dish you cooked. These photos stay on the device and are not uploaded or shown to anyone else; the screen says so.
-- Cupboard > Scan receipt / Photo of food shows "Coming soon". Scanning isn't switched on in this version and sends nothing anywhere; the sheet offers typing a list instead.
-- "Import from a link" (side menu > My recipes > Import from a link) fetches the public web page the user pastes, directly from the device, and reads its schema.org Recipe data.
-- Some recipe photos are AI-generated and are labelled "AI-generated photo" on the recipe page; the others are credited Pexels photos.
-- No in-app purchases, ads, analytics or tracking.
-
-Contact: [your name], [contact email], [phone number]
-```
-
-**Count: 1678 / 4,000**
+Replaced on 12 October 2026: the old notes said "No login or account is needed … the app has no server", which is no longer true. Use the notes in `app-store-privacy-and-review.md` §3 instead.
