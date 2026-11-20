@@ -1,0 +1,44 @@
+npm notice run the-pantry-v2@1.0.0 npx
+npm notice run 'tsx' docs/audits/2026-11-20-deep-audit/tools/L2/catalogue-maths.ts
+recipes 5496 ship in store builds 271
+
+note holds an amount that never scales: 354 lines in 252 recipes
+  arancini: 100g ragu, defrosted (or 100g cooked ham, diced)
+  baked-cod: 4 cod fillets (180g each), skinless
+  baked-salmon: 4 salmon fillets (180g each), skin on
+  bbq-ribs: 2 racks American-style pork spare ribs (about 1.5kg total)
+
+overnight step still has a timer: 34 lines in 34 recipes
+  arancini: Cook the risotto: sweat the onion in butter for 5 minutes. Add the rice and toast 2 minute
+  beef-tikka: Combine all marinade ingredients with the beef. Rest 4 hours minimum, ideally overnight.
+  biryani: Marinate the chicken with all marinade ingredients. Rest at least 1 hour, ideally overnigh
+  chicken-and-waffles: Marinate the chicken with buttermilk, hot sauce, the 1 tbsp salt and pepper. Rest at least
+
+a time in a step with no timer: 97 lines in 95 recipes
+  baked-ziti: Rest 10 minutes before serving.
+  beef-brisket: After 6 hours, check the internal temperature. When it stalls around 70°C, wrap tightly in
+  caprese-salad: Bring the mozzarella to room temperature 30 minutes before serving, cold mozzarella tastes
+  chicken-pot-pie: Rest 5 minutes before serving.
+
+"0.x kg" at 1 serving: 248 lines in 239 recipes
+  bbq-pulled-chicken: 1kg chicken thighs, boneless -> 0.2 kg chicken thighs, boneless
+  beef-brisket: 3kg whole brisket, point and flat -> 0.4 kg whole brisket, point and flat
+  beef-rendang: 1.2kg beef chuck, in 4cm cubes -> 0.2 kg beef chuck, in 4cm cubes
+  beef-roast-dinner: 1kg roasting potatoes, peeled and halved -> 0.2 kg roasting potatoes, peeled and halved
+
+min-to-hour range gives two timers: 1 lines in 1 recipes
+  bulgogi: Whisk all marinade ingredients in a bowl. Add the sliced beef and massage in. Rest 30 minu
+
+shows "0 …" at 1 serving: 656 lines in 461 recipes
+  pumpkin-soup: 1/4 tsp nutmeg -> 0 tsp nutmeg
+  spanakopita: 1/4 cup mint leaves, chopped -> 0 cup mint leaves, chopped
+  spanakopita: 1/4 tsp ground nutmeg -> 0 tsp ground nutmeg
+  pastitsio: 1/4 tsp black pepper -> 0 tsp black pepper
+
+decimal spoon/cup at 12 servings: 579 lines in 197 recipes
+  koshari: 1/4 tsp salt -> 0.6 tsp salt
+  koshari: 1 tsp ground cumin -> 2.4 tsp ground cumin
+  koshari: 1 tsp salt -> 2.4 tsp salt
+  koshari: 1/2 tsp chilli flakes -> 1.2 tsp chilli flakes
+
+servings values 1:36 2:621 3:128 4:3120 5:18 6:843 8:347 9:2 10:91 12:286 20:3 24:1

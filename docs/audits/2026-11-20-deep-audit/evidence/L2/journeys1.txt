@@ -1,0 +1,33 @@
+npm notice run the-pantry-v2@1.0.0 npx
+npm notice run 'tsx' docs/audits/2026-11-20-deep-audit/tools/L2/journeys1.ts
+1 plan entries after double tap: 1 ["2026-11-20/dinner/2"]
+2 list egg before: Egg 3 | count 4 ITEMS
+2 count after tick: 3 ITEMS
+2 stepper text:  For 2 
+2 stepper after 30 plus:  For 24 
+2 egg after servings up: Egg 36 | aria-checked null | count 4 ITEMS
+2 cupboard after tick (moveTickedToCupboard): ["egg"]
+3 shared: {"text":"Shopping list, this week\n\nMeat\n- Guanciale, 1.4 kg\n\nDairy and eggs\n- Egg, 36\n- Pecorino, 720 g\n\nPasta, rice and grains\n- Spaghetti, 2.4 kg"}
+3 body after share:  The Pantry  LIST Shopping list  This week · 16 – 22 Nov Next week · 23 – 29 Nov 4 ITEMS  By aisle Clear all  MEAT Guanciale 1.4 kg  DAIRY AND EGGS Egg 36  Pecorino 720 g  PASTA, RICE AND GRAI
+errors []
+4 ingredients (imperial): 7.1 oz spaghetti (or rigatoni) | 4¼ oz guanciale, in 5mm strips (or pancetta) | 3 egg yolks + 1 whole egg | 2.1 oz pecorino romano, finely grated, plus extra to serve | Lots of freshly cracked black pepper | Salt for pasta water
+4 servings at min:  Serves 1 
+4 servings at max:  Serves 24 
+4 ingredients at max: 5¼ lb spaghetti (or rigatoni) | 3.2 lb guanciale, in 5mm strips (or pancetta) | 36 egg yolks + 1 whole egg | 1.6 lb pecorino romano, finely grated, plus extra to serve | Lots of freshly cracked black pepper | Salt for pasta water
+4 servings after reload:  2 serves TAP TO ADJUST
+5 tick state: true
+5 after reload: false
+errors []
+6 steps:
+   1 / 7: Bring a large pot of well-salted water to the boil. Cook the pasta until just sh
+   2 / 7: Meanwhile, render the guanciale in a cold dry pan over medium heat. Crisp the ed
+   3 / 7: In a bowl, whisk the yolks, whole egg, and pecorino into a thick paste. Add lots
+   4 / 7: When the pasta is ready, reserve a mug of pasta water. Drain.
+   5 / 7: Tip the hot pasta into the pan with the guanciale (off the heat) and toss to coa
+   6 / 7: Now the key move: add a small splash of pasta water to the egg mixture to temper
+   7 / 7: Plate immediately. Top with more pecorino and pepper.
+6 timers running: 0 
+6 after done:  COOK MODE Carbonara  7 / 7 07 STEP Plate immediately. Top with more pecorino and pepper.  Previous Done Used anything up?  Tick what’s finished and we’ll take it out of your cupboard. Guanciale Egg Pecorino Nothing Done
+6 cook log entries: 1
+6 cupboard after used-up: ["spaghetti","pecorino","guanciale"]
+errors []

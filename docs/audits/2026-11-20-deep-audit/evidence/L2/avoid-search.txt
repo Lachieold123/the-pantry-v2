@@ -1,0 +1,54 @@
+npm notice run the-pantry-v2@1.0.0 npx
+npm notice run 'tsx' docs/audits/2026-11-20-deep-audit/tools/L2/avoid-search.ts
+line | matched id | avoid options that hide it
+100 g cashews | cashews | nuts | diets vegetarian,vegan,no-gluten,no-dairy
+2 tbsp peanut butter | peanut-butter | nuts | diets vegetarian,vegan,no-gluten,no-dairy
+50 g macadamia praline | macadamias | nuts | diets vegetarian,vegan,no-gluten,no-dairy
+1 tbsp satay sauce | satay-sauce | nuts | diets vegetarian,vegan,no-gluten,no-dairy
+100 g pesto | pesto | nuts,dairy | diets no-gluten
+2 tbsp tahini | tahini | sesame | diets vegetarian,vegan,no-gluten,no-dairy
+100 g marzipan | - | NONE | diets 
+200 g prawns | prawn | shellfish | diets pescatarian,no-gluten,no-dairy
+1 tbsp fish sauce | fish-sauce | fish | diets pescatarian,no-gluten,no-dairy
+1 tbsp oyster sauce | oyster-sauce | shellfish,gluten | diets pescatarian,no-dairy
+100 g crab sticks | crab | shellfish | diets pescatarian,no-gluten,no-dairy
+1 tbsp worcestershire sauce | worcestershire-sauce | fish,gluten | diets pescatarian,no-dairy
+2 tbsp nutella | - | NONE | diets 
+100 g feta | feta | dairy | diets vegetarian,no-gluten
+1 cup milk | milk | dairy | diets vegetarian,no-gluten
+50 g ghee | ghee | dairy | diets vegetarian,no-gluten
+2 tbsp miso | miso | soy,gluten | diets vegetarian,vegan,no-dairy
+1 tbsp hoisin | hoisin-sauce | sesame,soy,gluten | diets vegetarian,vegan,no-dairy
+1 tbsp gochujang | gochujang | soy,gluten | diets vegetarian,vegan,no-dairy
+100 g frangipane | - | NONE | diets 
+1 tbsp XO sauce | - | NONE | diets 
+
+--- search ---
+"carbonara": 1 results in 5 ms; top: carbonara
+"carbonarra": 2 results in 4 ms; top: carbonara, carbonada-criolla-argentine-beef-stew-served-in-pumpkin
+"spag bol": 4 results in 4 ms; top: spaghetti-bolognese, lentil-bolognese-with-spaghetti-vegan, one-pot-beef-bolognese-spaghetti
+"spaghetti bolognese": 4 results in 4 ms; top: spaghetti-bolognese, lentil-bolognese-with-spaghetti-vegan, one-pot-beef-bolognese-spaghetti
+"bolognaise": 5 results in 2 ms; top: spaghetti-bolognese, cheat-s-bolognese, lentil-bolognese-with-spaghetti-vegan
+"aubergine": 98 results in 5 ms; top: eggplant-parmesan, stuffed-eggplant, miso-glazed-eggplant
+"eggplant": 89 results in 2 ms; top: eggplant-parmesan, stuffed-eggplant, miso-glazed-eggplant
+"courgette": 121 results in 4 ms; top: baked-zucchini-boats, zucchini-noodles, zucchini-frittata
+"zucchini": 120 results in 2 ms; top: baked-zucchini-boats, zucchini-noodles, zucchini-frittata
+"coriander": 851 results in 2 ms; top: black-bean-and-charred-corn-salad-with-cilantro-lime, masala-omelette-with-green-chilli, seco-de-cordero-peruvian-lamb-and-coriander-stew
+"cilantro": 852 results in 3 ms; top: black-bean-and-charred-corn-salad-with-cilantro-lime, masala-omelette-with-green-chilli, seco-de-cordero-peruvian-lamb-and-coriander-stew
+"capsicum": 367 results in 2 ms; top: roasted-capsicum-and-walnut-muhammara, mexican-beef-and-rice-stuffed-capsicums, capsicum-egg-rings-with-salsa
+"bell pepper": 99 results in 6 ms; top: black-pepper-beef-with-capsicum, stuffed-peppers, turkish-menemen-eggs-with-peppers
+"prawn": 196 results in 3 ms; top: prawn-curry, prawn-linguine, shrimp-alfredo
+"shrimp": 223 results in 4 ms; top: prawn-curry, prawn-linguine, shrimp-alfredo
+"mince": 356 results in 3 ms; top: vetkoek, beef-mince-tacos-with-frozen-veg, baked-curried-mince-with-egg-custard
+"ground beef": 154 results in 4 ms; top: beef-burrito, beef-curry, beef-enchiladas
+"chicken": 908 results in 2 ms; top: bbq-chicken-pizza, bbq-pulled-chicken, butter-chicken
+"chiken": 910 results in 2 ms; top: bbq-chicken-pizza, bbq-pulled-chicken, butter-chicken
+"pad thai": 24 results in 2 ms; top: pad-thai, shrimp-pad-thai, pad-see-ew-thai-soy-sauce-rice-noodles-with-chicken
+"phad thai": 25 results in 4 ms; top: pad-thai, shrimp-pad-thai, pad-see-ew-thai-soy-sauce-rice-noodles-with-chicken
+"tikka masala": 11 results in 4 ms; top: tikka-masala, chickpea-tikka-masala-meal-prep-boxes, fakeaway-chicken-tikka-masala-with-basmati-rice
+"mac and cheese": 7 results in 3 ms; top: mac-and-cheese, hidden-vegetable-mac-and-cheese, lightened-cauliflower-mac-and-cheese
+"mac n cheese": 0 results in 3 ms; top: 
+"🍝": 5496 results in 0 ms; top: arancini, arepas, avocado-toast
+"x": 0 results in 0 ms; top: 
+"   ": 5496 results in 0 ms; top: arancini, arepas, avocado-toast
+"aaaaaaaaaa…": 0 results in 0 ms; top: 

@@ -1,0 +1,77 @@
+npm notice run the-pantry-v2@1.0.0 npx
+npm notice run 'tsx' docs/audits/2026-11-20-deep-audit/tools/L2/missing-recipe.ts
+
+## /
+ ids: feed-screen=1
+ errors: ["console: Failed to load resource: net::ERR_FAILED","console: Failed to load resource: net::ERR_FAILED"]
+ text:  The Pantry   What I have 0 Everything  Meal  Time  Cuisine  Difficulty  IN SEASON FOR SPRING Yassa au Poulet 1h · Serves 4 · West African IN SEASON FOR SPRING Shakshuka Tunisienne 30m · Serves 4 · North African IN SEASON FOR SPRING Milanesa de Ternera 30m · Serves 4 · Latin American IN SEASON FOR SPRING Oyakodon 20m · Serves 2 · Japanese IN SEASON FOR SPRING Calcots amb Romesco 45m · Serves 4 · Spanish MORE 
+
+## /plan
+ ids: plan-screen=1
+ errors: []
+ text:  The Pantry  PLAN Your week  3 of 21 meals MON 16 TUE 17 WED 18 THU 19 FRI 20 SAT 21 SUN 22 MON 23 TUE 24 WED 25 THU 26 FRI 27 SAT 28 SUN 29 Friday · 20 Nov BREAKFAST  Add breakfast LUNCH  Add lunch DINNER A recipe that’s no longer available  IDEAS FOR THIS DAY Picked for you MODERN AUSTRALIAN Smashed Avocado on Sourdough with Za'atar 8m TURKISH Çilbir 15m NORTH AFRICAN Shakshuka 35m MEXICAN Breakfast Burrito 5
+
+## /list
+ ids: shopping-screen=1
+ errors: []
+ text:  The Pantry  LIST Shopping list  This week · 16 – 22 Nov Next week · 23 – 29 Nov 4 ITEMS  By aisle Clear all  MEAT Guanciale 120 g  DAIRY AND EGGS Egg 3  Pecorino 60 g  PASTA, RICE AND GRAINS Spaghetti 200 g   Home  3 Plan   4 List  Cupboard
+
+## /library
+ ids: library-screen=1
+ errors: ["console: Failed to load resource: net::ERR_FAILED","console: Failed to load resource: net::ERR_FAILED"]
+ text:  YOUR KITCHEN Library 1 saved recipe Cookmarks Collections My recipes Recent  ITALIAN Carbonara  20m Medium
+
+## /library?tab=recent
+ ids: library-screen=1
+ errors: ["console: Failed to load resource: net::ERR_FAILED","console: Failed to load resource: net::ERR_FAILED"]
+ text:  YOUR KITCHEN Library 0 recipes Cookmarks Collections My recipes Recent Nothing viewed yet Recipes you open show up here, so the one you were looking at is easy to find again. Browse recipes
+
+## /collections/c1
+ ids: collection-screen=1 collection-missing=0
+ errors: ["console: Failed to load resource: net::ERR_FAILED","console: Failed to load resource: net::ERR_FAILED"]
+ text:   COLLECTION Gone ones 0 recipes This collection is empty Add recipes from any recipe page: tap ⋯, then Add to a collection. Browse recipes
+
+## /stats
+ ids: stats-screen=1
+ errors: ["console: Failed to load resource: net::ERR_FAILED","console: Failed to load resource: net::ERR_FAILED"]
+ text:  KITCHEN STATS Your cooking 2 days cooking streak 2 This week 2 Total cooks 2 Best streak Clear cooking history
+
+## /recipe/gone-recipe
+ ids: recipe-missing=1
+ errors: ["console: Failed to load resource: net::ERR_FAILED","console: Failed to load resource: net::ERR_FAILED"]
+ text:  Recipe We couldn't find that recipe It may have been removed or renamed. Browse recipes
+
+## /recipe/gone-recipe/cook
+ ids: cook-missing=1
+ errors: ["console: Failed to load resource: net::ERR_FAILED","console: Failed to load resource: net::ERR_FAILED"]
+ text: We couldn’t find that recipe It may have been removed. Close
+
+## /recipe/gone-recipe/plan
+ ids: 
+ errors: ["console: Failed to load resource: net::ERR_FAILED","console: Failed to load resource: net::ERR_FAILED"]
+ text: Plan  This recipe isn’t available any more.
+
+## /recipe/gone-recipe/list
+ ids: 
+ errors: ["console: Failed to load resource: net::ERR_FAILED","console: Failed to load resource: net::ERR_FAILED"]
+ text: Add to list  This recipe isn’t available any more.
+
+## /recipe/gone-recipe/collect
+ ids: 
+ errors: ["console: Failed to load resource: net::ERR_FAILED","console: Failed to load resource: net::ERR_FAILED"]
+ text: Add to collection   Gone ones 0 NEW COLLECTION Create and add
+
+## /plate/nope
+ ids: plate-missing=1
+ errors: ["console: Failed to load resource: net::ERR_FAILED","console: Failed to load resource: net::ERR_FAILED"]
+ text: That plate is gone It may have been removed. Back
+
+## /collections/nope
+ ids: collection-missing=1
+ errors: ["console: Failed to load resource: net::ERR_FAILED","console: Failed to load resource: net::ERR_FAILED"]
+ text:  COLLECTION Not found 0 recipes This collection is gone It may have been deleted. Back to collections
+
+## /my-recipe/edit?id=nope
+ ids: editor-missing=1
+ errors: ["console: Failed to load resource: net::ERR_FAILED","console: Failed to load resource: net::ERR_FAILED"]
+ text: That recipe is gone It may have been deleted. Back

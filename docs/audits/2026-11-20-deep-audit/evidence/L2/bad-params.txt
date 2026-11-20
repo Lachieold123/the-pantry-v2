@@ -1,0 +1,82 @@
+npm notice run the-pantry-v2@1.0.0 npx
+npm notice run 'tsx' docs/audits/2026-11-20-deep-audit/tools/L2/bad-params.ts
+
+## /plan/add?day=garbage
+ errors: []
+ text: PLAN Add dinner for today  Breakfast Lunch Dinner  IDEAS FOR DINNER WEST AFRICAN Yassa au Poulet 1h · Serves 4 NORTH AFRICAN Shakshuka Tunisienne 30m · Serves 4 LATIN AMERICAN Milanesa de Ternera 30m · Serves 4 JAPANES
+
+## /plan/add
+ errors: []
+ text: PLAN Add dinner for today  Breakfast Lunch Dinner  IDEAS FOR DINNER WEST AFRICAN Yassa au Poulet 1h · Serves 4 NORTH AFRICAN Shakshuka Tunisienne 30m · Serves 4 LATIN AMERICAN Milanesa de Ternera 30m · Serves 4 JAPANES
+
+## /plan/add?day=2026-02-30&slot=dinner
+ errors: []
+ text: PLAN Add dinner for today  Breakfast Lunch Dinner  IDEAS FOR DINNER WEST AFRICAN Yassa au Poulet 1h · Serves 4 NORTH AFRICAN Shakshuka Tunisienne 30m · Serves 4 LATIN AMERICAN Milanesa de Ternera 30m · Serves 4 JAPANES
+
+## /plan/add?day=2030-01-01&slot=dinner
+ errors: []
+ text: PLAN Add dinner for Tuesday  Breakfast Lunch Dinner  IDEAS FOR DINNER AMERICAN Poke Bowl 40m · Serves 2 INDIAN Mango Curry 45m · Serves 4 VIETNAMESE Bún Chả Hà Nội 35m · Serves 4 ITALIAN Pesto Pasta 25m · Serves 4 NORT
+
+## /plan/add?day=2020-01-01&slot=brunch
+ errors: []
+ text: PLAN Add dinner for Wednesday  Breakfast Lunch Dinner  IDEAS FOR DINNER ITALIAN Pesto Pasta 25m · Serves 4 GREEK Greek Salad 15m · Serves 4 AMERICAN Tuna Poke 35m · Serves 2 VIETNAMESE Canh Chua Chay 35m · Serves 4 IND
+
+## /recipe/carbonara/list?servings=-3
+ errors: []
+ text: CARBONARA Add to list  FOR  2 people  YOU NEED  Spaghetti 200 g  Guanciale 120 g  Egg 3  Pecorino 60 g YOU HAVE THESE Black pepper staple Salt staple Add 4 to list
+
+## /recipe/carbonara/list?servings=1e9
+ errors: []
+ text: CARBONARA Add to list  FOR  1000000000 people  YOU NEED  Spaghetti 100000000 kg  Guanciale 60000000 kg  Egg 1500000000  Pecorino 30000000 kg YOU HAVE THESE Black pepper staple Salt staple Add 4 to list
+
+## /recipe/carbonara/cook?servings=abc
+ errors: []
+ text:  COOK MODE Carbonara  1 / 7 01 STEP Bring a large pot of well-salted water to the boil. Cook the pasta until just shy of al dente.  Previous Next step 
+
+## /recipe/carbonara/cook?servings=0.5
+ errors: []
+ text:  COOK MODE Carbonara  1 / 7 01 STEP Bring a large pot of well-salted water to the boil. Cook the pasta until just shy of al dente.  Previous Next step 
+
+## /library?tab=zzz
+ errors: []
+ text:  YOUR KITCHEN Library 0 saved recipes Cookmarks Collections My recipes Recent Nothing saved yet Tap the bookmark on any recipe to keep it here. Browse recipes
+
+## /cupboard/scan?kind=zzz
+ errors: []
+ text: CUPBOARD Scan a receipt  Take a photo of your shopping receipt and we’ll add what you bought to your cupboard. Coming soon Scanning isn’t switched on yet. Until it is, the quickest way in is to type or paste a list: “eg
+
+## /pro?from=zzz
+ errors: []
+ text: THE PANTRY PRO The Pantry Pro  Everything free stays free. Pro is for planning further ahead and keeping more.  Plan further ahead Plan next week while this one’s still going, and send both lists.  Unlimited collectio
+
+## /browse?search=%F0%9F%8D%9D
+ errors: []
+ text:  BROWSE Discover    TODAY Recipe of the day CHINESE Beef and Spring Onion Stir-Fry Rice Pasta Curry 30 min Vegetarian Vegan One-pot In season Soup Easy Breakfast COLLECTIONS Cook by mood Easy weeknights 1358 recipes 
+
+## /recipe/%20
+ errors: []
+ text:  Recipe We couldn't find that recipe It may have been removed or renamed. Browse recipes
+
+## /my-recipe/edit?from=zzz&title=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ errors: []
+ text: Cancel New recipe Save NAME SHORT DESCRIPTION Optional. One line on why it’s good. INGREDIENTS One per line, like “2 tbsp olive oil”. End a line with a colon to start a group, like “Sauce:”. METHOD One step per line. Cui
+
+## /my-recipe/import
+ errors: []
+ text: Import from a link  Paste a link to a recipe page. You’ll check it over before it’s saved. RECIPE LINK Import
+
+## /dev/gallery
+ errors: []
+ text:  The Pantry   What I have 0 Everything  Meal  Time  Cuisine  Difficulty  IN SEASON FOR SPRING Yassa au Poulet 1h · Serves 4 · West African IN SEASON FOR SPRING Shakshuka Tunisienne 30m · Serves 4 · North African 
+
+## /dev/home-viewer
+ errors: []
+ text:  TESTING Rank Home as Me Your own follows and events Current  Loading cooks…
+
+## /nope/nope
+ errors: []
+ text: This page doesn’t exist The link may be old or mistyped. Back to Home
+
+## /account?moment=zzz
+ errors: []
+ text: YOUR ACCOUNT Back up your kitchen  Backing up with your Apple ID is available on iPhone. Email sign-in is coming soon. Everything keeps working without an account. Done

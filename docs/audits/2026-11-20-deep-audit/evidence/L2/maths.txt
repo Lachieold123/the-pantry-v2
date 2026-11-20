@@ -1,0 +1,191 @@
+npm notice run the-pantry-v2@1.0.0 npx
+npm notice run 'tsx' docs/audits/2026-11-20-deep-audit/tools/L2/maths.ts
+"0.33 cup milk" => {"q":0.33,"u":"cup","item":"milk"} no-ingredient-match
+     x1: ⅓ cup milk | imp ⅓ cup milk
+     4->1: 0.1 cup milk | imp 0.1 cup milk
+     4->12: 1 cup milk | imp 1 cup milk
+     4->3: ¼ cup milk | imp ¼ cup milk
+"1/3 cup milk" => {"q":0.3333333333333333,"u":"cup","item":"milk"} no-ingredient-match
+     x1: ⅓ cup milk | imp ⅓ cup milk
+     4->1: 0.1 cup milk | imp 0.1 cup milk
+     4->12: 1 cup milk | imp 1 cup milk
+     4->3: ¼ cup milk | imp ¼ cup milk
+"1 x 400 g tin chopped tomatoes" => {"q":400,"u":"g","item":"chopped tomatoes","note":"tin"} no-ingredient-match
+     x1: 400 g chopped tomatoes (tin) | imp 14.1 oz chopped tomatoes (tin)
+     4->1: 100 g chopped tomatoes (tin) | imp 3½ oz chopped tomatoes (tin)
+     4->12: 1.2 kg chopped tomatoes (tin) | imp 2.6 lb chopped tomatoes (tin)
+     4->3: 300 g chopped tomatoes (tin) | imp 10.6 oz chopped tomatoes (tin)
+"1 x 400g tin chickpeas" => {"q":400,"u":"g","item":"chickpeas","note":"tin"} no-ingredient-match
+     x1: 400 g chickpeas (tin) | imp 14.1 oz chickpeas (tin)
+     4->1: 100 g chickpeas (tin) | imp 3½ oz chickpeas (tin)
+     4->12: 1.2 kg chickpeas (tin) | imp 2.6 lb chickpeas (tin)
+     4->3: 300 g chickpeas (tin) | imp 10.6 oz chickpeas (tin)
+"2 x 400 g tins tomatoes" => {"q":800,"u":"g","item":"tomatoes","note":"tins"} no-ingredient-match
+     x1: 800 g tomatoes (tins) | imp 1¾ lb tomatoes (tins)
+     4->1: 200 g tomatoes (tins) | imp 7.1 oz tomatoes (tins)
+     4->12: 2.4 kg tomatoes (tins) | imp 5¼ lb tomatoes (tins)
+     4->3: 600 g tomatoes (tins) | imp 1.3 lb tomatoes (tins)
+"1,500 g potatoes" => {"q":1500,"u":"g","item":"potatoes"} no-ingredient-match
+     x1: 1½ kg potatoes | imp 3.3 lb potatoes
+     4->1: 375 g potatoes | imp 13¼ oz potatoes
+     4->12: 4½ kg potatoes | imp 9.9 lb potatoes
+     4->3: 1.1 kg potatoes | imp 2½ lb potatoes
+"1.5 kg potatoes" => {"q":1.5,"u":"kg","item":"potatoes"} no-ingredient-match
+     x1: 1½ kg potatoes | imp 3.3 lb potatoes
+     4->1: 0.4 kg potatoes | imp 13¼ oz potatoes
+     4->12: 4½ kg potatoes | imp 9.9 lb potatoes
+     4->3: 1.1 kg potatoes | imp 2½ lb potatoes
+"1,5 kg potatoes" => {"q":1.5,"u":"kg","item":"potatoes"} no-ingredient-match
+     x1: 1½ kg potatoes | imp 3.3 lb potatoes
+     4->1: 0.4 kg potatoes | imp 13¼ oz potatoes
+     4->12: 4½ kg potatoes | imp 9.9 lb potatoes
+     4->3: 1.1 kg potatoes | imp 2½ lb potatoes
+"2 to 3 garlic cloves" => {"q":{"min":2,"max":3},"u":"clove","item":"garlic"} no-ingredient-match
+     x1: 2–3 cloves garlic | imp 2–3 cloves garlic
+     4->1: ½–1 clove garlic | imp ½–1 clove garlic
+     4->12: 6–9 cloves garlic | imp 6–9 cloves garlic
+     4->3: 1½–2½ cloves garlic | imp 1½–2½ cloves garlic
+"2-3 tbsp oil" => {"q":{"min":2,"max":3},"u":"tbsp","item":"oil"} no-ingredient-match
+     x1: 2–3 tbsp oil | imp 2–3 tbsp oil
+     4->1: ½–¾ tbsp oil | imp ½–¾ tbsp oil
+     4->12: 6–9 tbsp oil | imp 6–9 tbsp oil
+     4->3: 1½–2¼ tbsp oil | imp 1½–2¼ tbsp oil
+"a pinch of salt" => {"q":1,"u":"pinch","item":"salt"} no-ingredient-match
+     x1: 1 pinch salt | imp 1 pinch salt
+     4->1: ½ pinch salt | imp ½ pinch salt
+     4->12: 3 pinches salt | imp 3 pinches salt
+     4->3: 1 pinch salt | imp 1 pinch salt
+"pinch salt" => {"q":1,"u":"pinch","item":"salt"} no-ingredient-match
+     x1: 1 pinch salt | imp 1 pinch salt
+     4->1: ½ pinch salt | imp ½ pinch salt
+     4->12: 3 pinches salt | imp 3 pinches salt
+     4->3: 1 pinch salt | imp 1 pinch salt
+"1/8 tsp cayenne" => {"q":0.125,"u":"tsp","item":"cayenne"} no-ingredient-match
+     x1: ⅛ tsp cayenne | imp ⅛ tsp cayenne
+     4->1: 0 tsp cayenne | imp 0 tsp cayenne
+     4->12: 0.4 tsp cayenne | imp 0.4 tsp cayenne
+     4->3: ⅛ tsp cayenne | imp ⅛ tsp cayenne
+"½ tsp salt" => {"q":0.5,"u":"tsp","item":"salt"} no-ingredient-match
+     x1: ½ tsp salt | imp ½ tsp salt
+     4->1: ⅛ tsp salt | imp ⅛ tsp salt
+     4->12: 1½ tsp salt | imp 1½ tsp salt
+     4->3: 0.4 tsp salt | imp 0.4 tsp salt
+"3 large onions" => {"q":3,"item":"large onions"} no-ingredient-match
+     x1: 3 large onions | imp 3 large onions
+     4->1: 1 large onion | imp 1 large onion
+     4->12: 9 large onions | imp 9 large onions
+     4->3: 2½ large onions | imp 2½ large onions
+"1 egg" => {"q":1,"item":"egg"} no-ingredient-match
+     x1: 1 egg | imp 1 egg
+     4->1: ½ egg | imp ½ egg
+     4->12: 3 eggs | imp 3 eggs
+     4->3: 1 egg | imp 1 egg
+"0 eggs" => {"q":0,"item":"eggs"} no-ingredient-match
+     x1: ½ eggs | imp ½ eggs
+     4->1: ½ eggs | imp ½ eggs
+     4->12: ½ eggs | imp ½ eggs
+     4->3: ½ eggs | imp ½ eggs
+"-2 eggs" => {"item":"-2 eggs"} no-quantity,no-ingredient-match
+     x1: -2 eggs | imp -2 eggs
+     4->1: -2 eggs | imp -2 eggs
+     4->12: -2 eggs | imp -2 eggs
+     4->3: -2 eggs | imp -2 eggs
+"1000000 g flour" => {"q":1000000,"u":"g","item":"flour"} no-ingredient-match
+     x1: 1000 kg flour | imp 2204.6 lb flour
+     4->1: 250 kg flour | imp 551.2 lb flour
+     4->12: 3000 kg flour | imp 6613.9 lb flour
+     4->3: 750 kg flour | imp 1653½ lb flour
+"1 1/2 cups flour" => {"q":1.5,"u":"cup","item":"flour"} no-ingredient-match
+     x1: 1½ cups flour | imp 1½ cups flour
+     4->1: 0.4 cup flour | imp 0.4 cup flour
+     4->12: 4½ cups flour | imp 4½ cups flour
+     4->3: 1⅛ cups flour | imp 1⅛ cups flour
+"1½ cups flour" => {"q":1.5,"u":"cup","item":"flour"} no-ingredient-match
+     x1: 1½ cups flour | imp 1½ cups flour
+     4->1: 0.4 cup flour | imp 0.4 cup flour
+     4->12: 4½ cups flour | imp 4½ cups flour
+     4->3: 1⅛ cups flour | imp 1⅛ cups flour
+"250ml milk" => {"q":250,"u":"ml","item":"milk"} no-ingredient-match
+     x1: 250 ml milk | imp 8.5 fl oz milk
+     4->1: 63 ml milk | imp 2.1 fl oz milk
+     4->12: 750 ml milk | imp 25.4 fl oz milk
+     4->3: 190 ml milk | imp 6.3 fl oz milk
+"2 cups (500 ml) stock" => {"q":2,"u":"cup","item":"stock","note":"500 ml"} no-ingredient-match
+     x1: 2 cups stock (500 ml) | imp 2 cups stock (500 ml)
+     4->1: ½ cup stock (500 ml) | imp ½ cup stock (500 ml)
+     4->12: 6 cups stock (500 ml) | imp 6 cups stock (500 ml)
+     4->3: 1½ cups stock (500 ml) | imp 1½ cups stock (500 ml)
+"salt and pepper, to taste" => {"item":"salt and pepper"} no-quantity,no-ingredient-match
+     x1: salt and pepper, to taste | imp salt and pepper, to taste
+     4->1: salt and pepper, to taste | imp salt and pepper, to taste
+     4->12: salt and pepper, to taste | imp salt and pepper, to taste
+     4->3: salt and pepper, to taste | imp salt and pepper, to taste
+"🍅 2 tomatoes" => {"item":"🍅 2 tomatoes"} no-quantity,no-ingredient-match
+     x1: 🍅 2 tomatoes | imp 🍅 2 tomatoes
+     4->1: 🍅 2 tomatoes | imp 🍅 2 tomatoes
+     4->12: 🍅 2 tomatoes | imp 🍅 2 tomatoes
+     4->3: 🍅 2 tomatoes | imp 🍅 2 tomatoes
+"1 lemon, juiced" => {"q":1,"item":"lemon"} no-ingredient-match
+     x1: 1 lemon, juiced | imp 1 lemon, juiced
+     4->1: ½ lemon, juiced | imp ½ lemon, juiced
+     4->12: 3 lemons, juiced | imp 3 lemons, juiced
+     4->3: 1 lemon, juiced | imp 1 lemon, juiced
+"juice of 1 lemon" => {"q":1,"item":"lemon"} no-ingredient-match
+     x1: 1 lemon, juiced | imp 1 lemon, juiced
+     4->1: ½ lemon, juiced | imp ½ lemon, juiced
+     4->12: 3 lemons, juiced | imp 3 lemons, juiced
+     4->3: 1 lemon, juiced | imp 1 lemon, juiced
+"400 g can coconut milk" => {"q":400,"u":"g","item":"coconut milk","note":"can"} no-ingredient-match
+     x1: 400 g coconut milk (can) | imp 14.1 oz coconut milk (can)
+     4->1: 100 g coconut milk (can) | imp 3½ oz coconut milk (can)
+     4->12: 1.2 kg coconut milk (can) | imp 2.6 lb coconut milk (can)
+     4->3: 300 g coconut milk (can) | imp 10.6 oz coconut milk (can)
+"1 (400 g) can beans" => {"q":1,"u":"tin","item":"beans","note":"400 g"} no-ingredient-match
+     x1: 1 tin beans (400 g) | imp 1 tin beans (400 g)
+     4->1: ½ tin beans (400 g) | imp ½ tin beans (400 g)
+     4->12: 3 tins beans (400 g) | imp 3 tins beans (400 g)
+     4->3: 1 tin beans (400 g) | imp 1 tin beans (400 g)
+"12 oz pasta" => {"q":12,"u":"oz","item":"pasta"} no-ingredient-match
+     x1: 340 g pasta | imp 12 oz pasta
+     4->1: 85 g pasta | imp 3 oz pasta
+     4->12: 1 kg pasta | imp 36 oz pasta
+     4->3: 255 g pasta | imp 9 oz pasta
+"3/0 cup sugar" => {"u":"cup","item":"sugar"} no-quantity,no-ingredient-match
+     x1: sugar | imp sugar
+     4->1: sugar | imp sugar
+     4->12: sugar | imp sugar
+     4->3: sugar | imp sugar
+
+--- merging on the list ---
+1 tbsp oil + 2 tsp oil => [{"quantity":1.5,"unit":"tbsp"}]
+1 cup flour + 100 g flour => [{"quantity":1,"unit":"cup"},{"quantity":100,"unit":"g"}]
+2 cloves garlic + 1 tsp garlic => [{"quantity":2,"unit":"clove"},{"quantity":1,"unit":"tsp"}]
+1 tin tomatoes + 400 g tomatoes => [{"quantity":1,"unit":"tin"},{"quantity":400,"unit":"g"}]
+2 eggs + 1 egg => [{"quantity":3}]
+500 ml stock + 1 l stock => [{"quantity":1500,"unit":"ml"}]
+2-3 tbsp oil + 1 tbsp oil => [{"quantity":{"min":3,"max":4},"unit":"tbsp"}]
+1 onion + 1 clove onion => [{"quantity":1},{"quantity":1,"unit":"clove"}]
+½ cup milk + ¼ cup milk + 2 tbsp milk => [{"quantity":0.91,"unit":"cup"}]
+
+--- timers ---
+"Simmer for 10 minutes, then rest for 10 minutes." => [{"type":"timer","label":"10 minutes","seconds":600},{"type":"timer","label":"10 minutes","seconds":600}]
+"Bake 1 hour 30 minutes." => [{"type":"timer","label":"1 hour 30 minutes","seconds":5400}]
+"Cook 1½ hours." => [{"type":"timer","label":"1½ hours","seconds":5400}]
+"Cook 8–10 mins." => [{"type":"timer","label":"8–10 mins","seconds":600}]
+"Roast for 1 1/2 hours." => [{"type":"timer","label":"1 1/2 hours","seconds":5400}]
+"Boil 30 seconds." => [{"type":"timer","label":"30 seconds","seconds":30}]
+"Marinate for 2 hours." => []
+"Keeps for 3 days." => []
+"Bake for 5 hours." => []
+"Cook for 90 minutes" => [{"type":"timer","label":"90 minutes","seconds":5400}]
+"Cook for 2 hrs 15 mins" => [{"type":"timer","label":"2 hrs 15 mins","seconds":8100}]
+"Cook for 1 hour and 15 minutes." => [{"type":"timer","label":"1 hour and 15 minutes","seconds":4500}]
+"Leave 10-15 min." => [{"type":"timer","label":"10-15 min","seconds":900}]
+"Rest 0 minutes" => []
+"Cook 1.5 hrs" => [{"type":"timer","label":"1.5 hrs","seconds":5400}]
+"Fry 3 to 4 minutes per side" => [{"type":"timer","label":"3 to 4 minutes","seconds":240}]
+"Cook for 1 hr, 20 mins" => [{"type":"timer","label":"1 hr, 20 mins","seconds":4800}]
+"Cook for 45 min to 1 hour" => [{"type":"timer","label":"45 min","seconds":2700},{"type":"timer","label":"1 hour","seconds":3600}]
+"Chill for at least 30 minutes" => [{"type":"timer","label":"30 minutes","seconds":1800}]
+"Microwave 1 minute 30 seconds" => [{"type":"timer","label":"1 minute","seconds":60},{"type":"timer","label":"30 seconds","seconds":30}]
+countdown 0=0:00 59=0:59 60=1:00 3599=59:59 3600=1:00:00 5400=1:30:00 -5=-1:-5
