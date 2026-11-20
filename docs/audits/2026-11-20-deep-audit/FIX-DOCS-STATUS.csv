@@ -1,0 +1,7 @@
+S2-6,part-fixed,5679ec6,Every draft now matches the store build; the lawyer review and the live steps the drafts depend on are the owner's.
+S2-10,fixed,5679ec6,docs/launch/RELEASE-NOTES.md says build 25 must not use Household once the migrations are applied.
+S2-16,owner,5679ec6,Policy and terms now say the app doesn't ask age; the minimum age and any age gate wait on the owner and a lawyer.
+REPO-9,part-fixed,5679ec6,One listing file is tracked and the tree is clean; the parked branches and stash holding old copies were left alone.
+REL2-9,fixed,5679ec6,Listing counts trial wording left-out list and age-rating notes now match the store build.
+REL2-4,owner,5679ec6,Hosting the three pages filling LEGAL_URLS and a support email are the owner's; the path is in FIX-DOCS.md.
+REL2-13,fixed,5679ec6,Docs now say a store build shows 271 recipes; whether ai-assisted recipes ship stays the owner's call.
