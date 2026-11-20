@@ -1,0 +1,434 @@
+{
+ "02-home-tour": {
+  "controls": [
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Open menu",
+    "w": 44,
+    "h": 44,
+    "testid": "header-menu"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Your profile and settings",
+    "w": 44,
+    "h": 44,
+    "testid": "header-avatar"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Close the checklist",
+    "w": 44,
+    "h": 44,
+    "testid": "checklist-dismiss"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Fill your cupboard. See what you can cook now",
+    "w": 132,
+    "h": 124,
+    "testid": "checklist-cupboard"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Plan a dinner. Your list writes itself",
+    "w": 132,
+    "h": 124,
+    "testid": "checklist-plan"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Save a recipe. Keep it in Cookmarks",
+    "w": 132,
+    "h": 124,
+    "testid": "checklist-save"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Cook something. Let Surprise me choose",
+    "w": 132,
+    "h": 124,
+    "testid": "checklist-cook"
+   },
+   {
+    "tag": "DIV",
+    "role": "radio",
+    "name": "What I have, 0 dishes ready",
+    "w": 173,
+    "h": 44,
+    "testid": "home-mode-pantry"
+   },
+   {
+    "tag": "DIV",
+    "role": "radio",
+    "name": "Everything",
+    "w": 111,
+    "h": 44,
+    "testid": "home-mode-all"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Search recipes",
+    "w": 44,
+    "h": 44,
+    "testid": "home-search"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Meal",
+    "w": 81,
+    "h": 40,
+    "testid": "home-filter-meal"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Time",
+    "w": 82,
+    "h": 40,
+    "testid": "home-filter-time"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Cuisine",
+    "w": 99,
+    "h": 40,
+    "testid": "home-filter-cuisine"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Difficulty",
+    "w": 111,
+    "h": 40,
+    "testid": "home-filter-difficulty"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Yassa au Poulet. In season for spring. 1h · Serves 4 · West ",
+    "w": 350,
+    "h": 438,
+    "testid": "home-hero-yassa-au-poulet"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Shakshuka Tunisienne. In season for spring. 30m · Serves 4 ·",
+    "w": 350,
+    "h": 438,
+    "testid": "home-hero-shakshuka-tunisienne"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Milanesa de Ternera. In season for spring. 30m · Serves 4 · ",
+    "w": 350,
+    "h": 438,
+    "testid": "home-hero-milanesa-de-ternera"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Oyakodon. In season for spring. 20m · Serves 2 · Japanese",
+    "w": 350,
+    "h": 438,
+    "testid": "home-hero-oyakodon"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Calcots amb Romesco. In season for spring. 45m · Serves 4 · ",
+    "w": 350,
+    "h": 438,
+    "testid": "home-hero-calcots-amb-romesco"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Bún Chả Hà Nội, Vietnamese, 35m · Serves 4",
+    "w": 169,
+    "h": 186,
+    "testid": "recipe-card-bun-cha-ha-noi"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Pad Phed Gai, Thai, 18m · Serves 1",
+    "w": 169,
+    "h": 186,
+    "testid": "recipe-card-pad-phed-gai"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Snapper and Sambal Oelek Pasta, Modern Australian, 25m · Ser",
+    "w": 169,
+    "h": 206,
+    "testid": "recipe-card-snapper-and-sambal-oelek-pasta"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Ají de Gallina, Latin American, 1h · Serves 4",
+    "w": 169,
+    "h": 206,
+    "testid": "recipe-card-aji-de-gallina"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Shami Kebab, Indian, 1h · Serves 4",
+    "w": 169,
+    "h": 186,
+    "testid": "recipe-card-shami-kebab"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Falafel Salad, Middle Eastern, 35m · Serves 4",
+    "w": 169,
+    "h": 186,
+    "testid": "recipe-card-falafel-salad"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Txuleta de Buey, Spanish, 22m · Serves 2",
+    "w": 169,
+    "h": 186,
+    "testid": "recipe-card-txuleta-de-buey"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Canh Chua Chay, Vietnamese, 35m · Serves 4",
+    "w": 169,
+    "h": 186,
+    "testid": "recipe-card-canh-chua-chay"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Shrimp and Bamboo Shoot Dumplings, Chinese, 1h 10m · Serves ",
+    "w": 169,
+    "h": 206,
+    "testid": "recipe-card-shrimp-and-bamboo-shoot-dumplings"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Pork Adobo, Filipino, 1h 10m · Serves 4",
+    "w": 169,
+    "h": 206,
+    "testid": "recipe-card-pork-adobo"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Chana Masala, Indian, 45m · Serves 4",
+    "w": 169,
+    "h": 206,
+    "testid": "recipe-card-chana-masala"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Chicken Caesar Pasta, American, 35m · Serves 4",
+    "w": 169,
+    "h": 206,
+    "testid": "recipe-card-chicken-caesar-pasta"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Gyudon, Japanese, 25m · Serves 2",
+    "w": 169,
+    "h": 206,
+    "testid": "recipe-card-gyudon"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Roasted Veggie Bowl, Modern Australian, 50m · Serves 4",
+    "w": 169,
+    "h": 206,
+    "testid": "recipe-card-roasted-veggie-bowl"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Gaeng Som Pla, Thai, 45m · Serves 4",
+    "w": 169,
+    "h": 206,
+    "testid": "recipe-card-gaeng-som-pla"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Choy Sum with Garlic and Oil, Chinese, 10m · Serves 4",
+    "w": 169,
+    "h": 206,
+    "testid": "recipe-card-choy-sum-with-garlic-and-oil"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Dhal, Indian, 55m · Serves 4",
+    "w": 169,
+    "h": 206,
+    "testid": "recipe-card-dhal"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "BBQ Chicken Pizza, American, 35m · Serves 2",
+    "w": 169,
+    "h": 206,
+    "testid": "recipe-card-bbq-chicken-pizza"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Schnitzel, Central European, 30m · Serves 4",
+    "w": 169,
+    "h": 186,
+    "testid": "recipe-card-schnitzel"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Teriyaki Pork, Japanese, 35m · Serves 4",
+    "w": 169,
+    "h": 186,
+    "testid": "recipe-card-teriyaki-pork"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Arrós a Banda, Spanish, 50m · Serves 4",
+    "w": 169,
+    "h": 186,
+    "testid": "recipe-card-arros-a-banda"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Tofu Stir Fry, Chinese, 32m · Serves 4",
+    "w": 169,
+    "h": 186,
+    "testid": "recipe-card-tofu-stir-fry"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Stuffed Eggplant, Turkish, 1h 10m · Serves 4",
+    "w": 169,
+    "h": 186,
+    "testid": "recipe-card-stuffed-eggplant"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Chicken Piccata, Italian, 25m · Serves 4",
+    "w": 169,
+    "h": 186,
+    "testid": "recipe-card-chicken-piccata"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Change",
+    "w": 72,
+    "h": 44,
+    "testid": "home-viewing-as-change"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Browse all recipes",
+    "w": 350,
+    "h": 44,
+    "testid": "home-browse-all"
+   },
+   {
+    "tag": "DIV",
+    "role": "tab",
+    "name": "Home",
+    "w": 73,
+    "h": 57,
+    "testid": "tab-index"
+   },
+   {
+    "tag": "DIV",
+    "role": "tab",
+    "name": "Plan",
+    "w": 73,
+    "h": 57,
+    "testid": "tab-plan"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Share a dish you cooked",
+    "w": 66,
+    "h": 66,
+    "testid": "tab-add"
+   },
+   {
+    "tag": "DIV",
+    "role": "tab",
+    "name": "List",
+    "w": 73,
+    "h": 57,
+    "testid": "tab-list"
+   },
+   {
+    "tag": "DIV",
+    "role": "tab",
+    "name": "Cupboard",
+    "w": 73,
+    "h": 57,
+    "testid": "tab-cupboard"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Skip tour",
+    "w": 83,
+    "h": 44,
+    "testid": "tour-skip"
+   },
+   {
+    "tag": "BUTTON",
+    "role": "button",
+    "name": "Next",
+    "w": 74,
+    "h": 44,
+    "testid": "tour-next"
+   }
+  ],
+  "headings": [
+   "The Pantry",
+   "A few things to try first",
+   "What's cooking?",
+   "Picked for you",
+   "What I have"
+  ],
+  "errors": [],
+  "requests": [
+   "ABORT GET https://eozyhllkvajvrecojdxu.supabase.co/rest/v1/published_recipes"
+  ],
+  "url": "http://localhost:4415/"
+ }
+}

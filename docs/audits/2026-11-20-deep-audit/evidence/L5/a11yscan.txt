@@ -1,0 +1,15 @@
+npm notice run the-pantry-v2@1.0.0 npx
+npm notice run 'tsx' docs/audits/2026-11-20-deep-audit/tools/L5/a11yscan.ts
+src/features/cook/CookIngredientsSheet.tsx:106 <Pressable> missing label
+src/features/feed/PantrySwitch.tsx:88 <Pressable> missing label
+src/features/recipes/FiltersScreen.tsx:183 <Pressable> missing label
+src/features/saved/LibraryTabs.tsx:47 <Pressable> missing label
+src/features/shopping/ShoppingListView.tsx:150 <Pressable> missing label
+src/features/shopping/ShoppingRows.tsx:90 <Pressable> missing label (has a spread)
+src/features/shopping/ShoppingScreen.tsx:109 <Pressable> missing label
+src/ui/patterns/ActionSheet.tsx:40 <Pressable> missing label
+src/ui/patterns/CollectionNameDialog.tsx:84 <Pressable> missing label
+src/ui/patterns/CollectionNameDialog.tsx:92 <Pressable> missing label
+src/ui/patterns/DropdownChips.tsx:71 <Pressable> missing label
+
+11 hits in 195 files
