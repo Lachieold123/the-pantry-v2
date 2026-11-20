@@ -13,9 +13,7 @@ Deno.serve(async (req) => {
   if (!authorizationCode) return new Response('no code', { status: 400 });
   const token = await refreshTokenFor(authorizationCode);
   if (!token) return new Response('apple refused the code', { status: 502 });
-  const { error } = await admin
-    .schema('private')
-    .from('apple_tokens')
-    .upsert({ user_id: data.user.id, refresh_token: token, updated_at: new Date().toISOString() });
+  // private.apple_tokens isn't served by PostgREST; this service-role-only function reaches it.
+  const { error } = await admin.rpc('apple_token_save', { p_user: data.user.id, p_token: token });
   return error ? new Response('could not save', { status: 500 }) : new Response(null, { status: 204 });
 });

@@ -9,14 +9,9 @@
 //        APPLE_KEY_ID        the new key's id
 //        APPLE_PRIVATE_KEY   the .p8 file's contents
 //        APPLE_CLIENT_ID     com.lachlanoldfield.thepantry
-//   3. Create the private table (SQL editor):
-//        create table private.apple_tokens (
-//          user_id uuid primary key references auth.users (id) on delete cascade,
-//          refresh_token text not null,
-//          updated_at timestamptz not null default now()
-//        );
-//        -- No grants: only the service role (these functions) can read it.
-//   4. supabase functions deploy apple-token delete-account
+//   3. Apply migration 20261120001100_apple_tokens.sql: private.apple_tokens,
+//      reached only through apple_token_save / apple_token_take (service role).
+//   4. supabase functions deploy apple-token delete-account (supabase/APPLY-LIVE.md)
 //   5. In the app (src/lib/account.ts): after Apple sign-in, send
 //      credential.authorizationCode to apple-token; for deletion, call
 //      delete-account instead of the delete_account RPC.

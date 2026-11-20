@@ -13,9 +13,12 @@ Deno.serve(async (req) => {
   const { data } = await admin.auth.getUser(auth.replace(/^Bearer /, ''));
   if (!data.user) return new Response('not signed in', { status: 401 });
 
-  const saved = await admin.schema('private').from('apple_tokens').select('refresh_token').eq('user_id', data.user.id).maybeSingle();
+  // private.apple_tokens isn't served by PostgREST; this service-role-only function reads it.
+  const saved = await admin.rpc('apple_token_take', { p_user: data.user.id });
+  if (saved.error) return new Response('could not read the apple token', { status: 500 });
+  const refreshToken = saved.data as string | null;
   // An Apple account must be revoked; if Apple can't be reached, stop and let the app say "try again".
-  if (saved.data?.refresh_token && !(await revoke(saved.data.refresh_token))) return new Response('apple unreachable', { status: 502 });
+  if (refreshToken && !(await revoke(refreshToken))) return new Response('apple unreachable', { status: 502 });
 
   // As the user, so delete_account() acts on auth.uid() exactly as the app's RPC does today.
   const asUser = createClient(url, Deno.env.get('SUPABASE_ANON_KEY') ?? '', { global: { headers: { Authorization: auth } } });
