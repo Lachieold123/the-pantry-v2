@@ -3,7 +3,7 @@ import { describe, it } from 'node:test';
 
 import { index } from '../testing/fixtures';
 import { buildRecipe } from './draft';
-import { cleanText, extractRecipe, minutesFromDuration, normaliseLink } from './importLink';
+import { cleanText, extractRecipe, minutesFromDuration, normaliseLink, sourceLink } from './importLink';
 
 const page = (jsonld: unknown) =>
   `<html><head><script type="application/ld+json">${JSON.stringify(jsonld)}</script></head><body>ads</body></html>`;
@@ -99,5 +99,21 @@ describe('character codes that are not characters (BUG-24)', () => {
     assert.equal(cleanText('Pie &#9999999999;'), 'Pie &#9999999999;');
     assert.equal(cleanText('Caf&#233;'), 'Café');
     assert.equal(cleanText('&#x110000;'), '&#x110000;');
+  });
+});
+
+describe('sourceLink', () => {
+  it('names the site without www and keeps the full link', () => {
+    assert.deepEqual(sourceLink('https://www.bbcgoodfood.com/recipes/pie?x=1'), {
+      host: 'bbcgoodfood.com',
+      url: 'https://www.bbcgoodfood.com/recipes/pie?x=1',
+    });
+    assert.equal(sourceLink('  http://recipetineats.com/a  ')?.host, 'recipetineats.com');
+  });
+
+  it('gives no credit for a missing, malformed or unsafe link', () => {
+    for (const bad of [undefined, '', '   ', 'not a url', 'bbcgoodfood.com/pie', 'javascript:alert(1)', 'ftp://site.com/x', 'https://localhost/x']) {
+      assert.equal(sourceLink(bad), undefined, String(bad));
+    }
   });
 });
