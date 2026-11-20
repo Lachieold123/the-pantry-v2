@@ -75,3 +75,18 @@ describe('more ways of writing a time (BUG-21)', () => {
     assert.deepEqual(timers('Boil for 3 minutes, then simmer another 3 minutes.'), [180, 180]);
   });
 });
+
+describe('ranges and seconds written out (F-12)', () => {
+  const timers = (text: string) => splitStepTimers(text).flatMap((s) => (s.type === 'timer' ? [s.seconds] : []));
+  it('reads "45 min to 1 hour" as one timer for the upper end', () => {
+    assert.deepEqual(timers('Cook for 45 min to 1 hour.'), [3600]);
+    assert.deepEqual(timers('Bake 50 minutes - 1 hour.'), [3600]);
+  });
+  it('reads "1 minute 30 seconds" as one 90-second timer', () => {
+    assert.deepEqual(timers('Microwave 1 minute 30 seconds.'), [90]);
+    assert.deepEqual(timers('Blitz for 2 mins and 15 secs.'), [135]);
+  });
+  it('still keeps "10 minutes, 5 minutes" as two timers', () => {
+    assert.deepEqual(timers('Fry 10 minutes, then 5 minutes more.'), [600, 300]);
+  });
+});

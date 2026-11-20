@@ -5,12 +5,18 @@ export type StepSegment = { type: 'text'; text: string } | { type: 'timer'; labe
 
 /**
  * A time in a step: "10 minutes", "8–10 mins", "1½ hours", "1 1/2 hours", and
- * "1 hour 30 minutes" as one timer (BUG-21). A number must start where a word
- * could, so nothing matches from the middle of "12" or "1/2".
+ * "1 hour 30 minutes" as one timer (BUG-21), and "45 min to 1 hour" or
+ * "1 minute 30 seconds" as one timer too (F-12). A number must start where a
+ * word could, so nothing matches from the middle of "12" or "1/2".
+ * Groups: 1 number, 2 its unit when a range follows, 3 range end,
+ * 4 hours (5 extra minutes), 6 minutes (7 extra seconds), 8 seconds.
  */
+const H = String.raw`(?:hours?|hrs?)`;
+const M = String.raw`(?:minutes?|mins?)`;
+const S = String.raw`(?:seconds?|secs?)`;
 const DURATION = new RegExp(
-  String.raw`(?<![\w/.])(${NUMBER_PATTERN})(?:\s*(?:-|–|to)\s*(${NUMBER_PATTERN}))?\s*` +
-    String.raw`(?:(hours?|hrs?)\b(?:,?\s*(?:and\s+)?(\d+)\s*(?:minutes?|mins?)\b)?|(minutes?|mins?|seconds?|secs?)\b)`,
+  String.raw`(?<![\w/.])(${NUMBER_PATTERN})(?:\s*(${H}|${M}|${S})?\s*(?:-|–|to)\s*(${NUMBER_PATTERN}))?\s*` +
+    String.raw`(?:(${H})\b(?:,?\s*(?:and\s+)?(\d+)\s*${M}\b)?|(${M})\b(?:,?\s*(?:and\s+)?(\d+)\s*${S}\b)?|(${S})\b)`,
   'gi',
 );
 
@@ -38,8 +44,11 @@ export function splitStepTimers(text: string): StepSegment[] {
     const end = start + m[0].length;
     const before = text.slice(Math.max(0, start - 30), start);
     const after = text.slice(end, end + 25);
-    const upperBound = parseNumber(m[2] ?? m[1] ?? '') ?? 0;
-    const seconds = toSeconds(upperBound, m[3] ?? m[5] ?? 'min') + (m[4] ? Number(m[4]) * 60 : 0);
+    const unit = m[4] ?? m[6] ?? m[8] ?? 'min';
+    const first = toSeconds(parseNumber(m[1] ?? '') ?? 0, m[2] ?? unit);
+    const upto = m[3] === undefined ? 0 : toSeconds(parseNumber(m[3]) ?? 0, unit);
+    const extra = (m[5] ? Number(m[5]) * 60 : 0) + (m[7] ? Number(m[7]) : 0);
+    const seconds = Math.max(first, upto) + extra;
     if (NOT_A_TIMER_BEFORE.test(before) || NOT_A_TIMER_AFTER.test(after) || seconds <= 0 || seconds > 4 * 3600) continue;
     if (start > last) out.push({ type: 'text', text: text.slice(last, start) });
     out.push({ type: 'timer', label: m[0], seconds });
