@@ -8,7 +8,7 @@ import { useState } from 'react';
 import { View } from 'react-native';
 
 import { firstOpenSlot, weekAsText, weekProgress } from '@/domain/plan/summary';
-import { entriesFor, fromISODate, isPast, visibleWeeks, weekDays, weekStart, type ISODate } from '@/domain/plan/week';
+import { entriesFor, entriesWithRecipes, fromISODate, isPast, visibleWeeks, weekDays, weekStart, type ISODate } from '@/domain/plan/week';
 import { longDate, shortDate, weekdayName } from '@/lib/dates';
 import { shareText } from '@/lib/share';
 import { useToday } from '@/lib/today';
@@ -40,7 +40,7 @@ export function PlanScreen() {
   const [picked, setSelected] = useState<ISODate | undefined>();
   const selected = picked !== undefined && days.includes(picked) ? picked : today;
   const week = weekStart(selected);
-  const progress = weekProgress(entries, week);
+  const progress = weekProgress(entriesWithRecipes(entries, (id) => getRecipe(id) !== undefined), week);
   const dayWeek = useWeekList(week);
   const past = isPast(selected, today);
   // Past the week you're shopping for is Pro (D-038). What's already planned there still shows.

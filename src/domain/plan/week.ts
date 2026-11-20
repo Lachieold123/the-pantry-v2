@@ -132,3 +132,12 @@ export function shoppingWeek(today: ISODate): ISODate {
 export function listWeek(today: ISODate, nextWeekHasAnything: boolean): ISODate {
   return shoppingWeek(today) !== weekStart(today) && nextWeekHasAnything ? shoppingWeek(today) : weekStart(today);
 }
+
+/**
+ * Entries whose recipe still exists. A removed recipe stays in the plan, shown
+ * as "no longer available" so it can be taken off, but it isn't a meal: every
+ * count ("3 of 21 meals", the Plan badge, the list's meals) leaves it out (F-10).
+ */
+export function entriesWithRecipes(entries: readonly PlanEntry[], exists: (recipeId: string) => boolean): PlanEntry[] {
+  return entries.filter((e) => exists(e.recipeId));
+}

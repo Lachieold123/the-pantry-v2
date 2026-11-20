@@ -43,3 +43,11 @@ describe('free limits', () => {
     expect(useSaved.getState().collections).toHaveLength(4);
   });
 });
+
+describe('a recipe that no longer exists (F-10)', () => {
+  it('says so and offers nothing to add it to', async () => {
+    await render(<CollectSheet id="gone-recipe" />);
+    expect(screen.getByTestId('collect-missing')).toBeTruthy();
+    expect(screen.queryByTestId('collect-create')).toBeNull();
+  });
+});

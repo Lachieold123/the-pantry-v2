@@ -4,6 +4,7 @@ import { describe, it } from 'node:test';
 import {
   addDays,
   entriesInWeek,
+  entriesWithRecipes,
   fromISODate,
   isISODate,
   plannableDay,
@@ -98,5 +99,15 @@ describe('a day from a link (F-11)', () => {
     assert.equal(plannableDay('2026-11-30', today), today);
     assert.equal(plannableDay('garbage', today), today);
     assert.equal(plannableDay(undefined, today), today);
+  });
+});
+
+describe('gone recipes are not meals (F-10)', () => {
+  const e = (id: string, recipeId: string, day: string): PlanEntry => ({ id, recipeId, day, slot: 'dinner', servings: 2 });
+  it('leaves a recipe that no longer exists out of the count', () => {
+    const entries = [e('1', 'carbonara', '2026-11-19'), e('2', 'gone', '2026-11-20'), e('3', 'laksa', '2026-11-21')];
+    const live = entriesWithRecipes(entries, (id) => id !== 'gone');
+    assert.equal(upcomingCount(live, '2026-11-19'), 2);
+    assert.deepEqual(live.map((x) => x.id), ['1', '3']);
   });
 });

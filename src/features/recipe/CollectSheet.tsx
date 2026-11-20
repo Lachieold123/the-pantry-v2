@@ -37,9 +37,20 @@ export function CollectSheet({ id }: { id: string }) {
     setName('');
   };
 
+  // A gone recipe (an old link) can't be collected: it would sit in the collection as nothing (F-10).
+  if (!recipe) {
+    return (
+      <Sheet title="Add to collection" onClose={() => goBack(router)}>
+        <Text variant="body" testID="collect-missing">
+          This recipe isn’t available any more.
+        </Text>
+      </Sheet>
+    );
+  }
+
   return (
     <Sheet title="Add to collection" onClose={() => goBack(router)}>
-      {recipe ? <Text variant="meta">{recipe.title}</Text> : null}
+      <Text variant="meta">{recipe.title}</Text>
       {collections.length === 0 ? (
         <Text variant="body" colour="inkSoft">
           No collections yet. Name your first one below.
