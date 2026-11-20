@@ -1,0 +1,61 @@
+slug,route,provenance,family,missingGroup,words,item,raw,linkedId,linkedGroups,optional,certainty
+beef-korma,"scripts/data/recipe-fixes.json (converted, D-014)",reviewed,dairy,dairy,milk,saffron in 2 tbsp warm milk,Pinch of saffron in 2 tbsp warm milk (optional),saffron,,true,certain
+carbonara,"scripts/data/recipe-fixes.json (converted, D-014)",reviewed,gluten,gluten,pasta,Salt for pasta water,Salt for pasta water,salt,,false,certain
+four-cheese-pizza,"scripts/data/recipe-fixes.json (converted, D-014)",reviewed,rennet-gelatine,non-vegetarian,gorgonzola,Gorgonzola dolce,"100g Gorgonzola dolce, in chunks",blue-cheese,dairy,false,certain
+hot-dogs,"scripts/data/recipe-fixes.json (converted, D-014)",reviewed,pork,pork,hot dog,hot dog buns,4 hot dog buns (preferably top-split),hot-dog-bun,gluten|soy,false,certain
+kare-kare,"scripts/data/recipe-fixes.json (converted, D-014)",reviewed,fish,fish,bagoong,bagoong,4 tbsp bagoong (Filipino shrimp paste),shrimp-paste,shellfish,false,certain
+lobster-roll,"scripts/data/recipe-fixes.json (converted, D-014)",ai-draft,pork,pork,hot dog,top-split hot dog buns,4 top-split hot dog buns (or brioche),hot-dog-bun,gluten|soy,false,certain
+massaman-curry,"scripts/data/recipe-fixes.json (converted, D-014)",reviewed,peanuts,peanuts,massaman,massaman curry paste,4 tbsp massaman curry paste (good quality),massaman-curry-paste,shellfish|chilli,false,review
+nasi-goreng,"scripts/data/recipe-fixes.json (converted, D-014)",reviewed,gluten,gluten,crackers,Prawn crackers,Prawn crackers,prawn-crackers,shellfish,false,review
+pork-schnitzel,"scripts/data/recipe-fixes.json (converted, D-014)",reviewed,beef,beef,steaks,pork loin steaks,"4 pork loin steaks (about 200g each), pounded to 5mm thin",pork-loin,meat|pork,false,review
+pulled-pork,"scripts/data/recipe-fixes.json (converted, D-014)",reviewed,pork,pork,pork,Pan juices from the pork,Pan juices from the pork,,,false,certain
+schnitzel,"scripts/data/recipe-fixes.json (converted, D-014)",reviewed,dairy,dairy,butter,Boiled baby potatoes tossed with butter and parsley,Boiled baby potatoes tossed with butter and parsley,waxy-potato,,false,review
+spring-rolls,"scripts/data/recipe-fixes.json (converted, D-014)",reviewed,gluten,gluten,noodles,rice vermicelli noodles,100g rice vermicelli noodles,rice-vermicelli,,false,review
+stuffed-mushrooms,"scripts/data/recipe-fixes.json (converted, D-014)",reviewed,dairy,dairy,butter,panko mixed with 20g melted butter,30g panko mixed with 20g melted butter,panko,gluten,false,review
+turkey-burger,"scripts/data/recipe-fixes.json (converted, D-014)",reviewed,dairy,dairy,milk,panko soaked in 3 tbsp milk,40g panko soaked in 3 tbsp milk,panko,gluten,false,certain
+gado-gado,scripts/data/house-recipes/batch-01.json,ai-draft,gluten,gluten,crackers,Prawn crackers,"Prawn crackers, to serve (optional)",prawn-crackers,shellfish,true,review
+lamb-pumpkin-feta-salad,scripts/data/house-recipes/batch-01.json,ai-draft,beef,beef,steaks,lamb leg steaks,600g lamb leg steaks,lamb-leg,meat|lamb,false,review
+kasespatzle,scripts/data/house-recipes/batch-02.json,ai-draft,rennet-gelatine,non-vegetarian,emmental,emmental,"100g emmental, grated",swiss-cheese,dairy,false,certain
+masala-dosa,scripts/data/house-recipes/batch-03.json,ai-assisted,gluten,gluten,batter,dosa batter,250 ml dosa batter (stored in fridge),dosa-batter,,false,review
+curry-goat,scripts/data/house-recipes/batch-03.json,ai-assisted,lamb,lamb,goat,goat shoulder,"1.5 kg goat shoulder, cut into 5 cm chunks",goat,meat,false,certain
+shanghainese-soup-dumplings,scripts/data/house-recipes/batch-03.json,ai-assisted,meat,meat,gelatine,gelatine,"50 g gelatine, finely chopped (or 4 leaves gelatine, finely chopped)",gelatine,animal-product|non-vegetarian,false,certain
+pate-de-foies-de-morue,scripts/data/house-recipes/batch-03.json,ai-assisted,meat,meat,livers,fresh cod livers,"300 g fresh cod livers, rinsed",white-fish,fish,false,review
+idli,scripts/data/house-recipes/batch-03.json,ai-assisted,gluten,gluten,batter,dosa batter,2 cups dosa batter (from the fridge),dosa-batter,,false,review
+uttapam,scripts/data/house-recipes/batch-03.json,ai-assisted,gluten,gluten,batter,dosa batter,"1 cup dosa batter, room temperature",dosa-batter,,false,review
+banga-soup,scripts/data/house-recipes/batch-03.json,ai-assisted,tree-nuts,tree-nuts,nuts,fresh palm nuts,"1 kg fresh palm nuts, husked and cleaned",palm-nuts,,false,review
+pig-s-blood-cake,scripts/data/house-recipes/batch-03.json,ai-assisted,gluten,gluten,cake,tinned pig's blood cake,"300 g tinned pig's blood cake, cut into 2 cm cubes",pigs-blood-cake,meat|pork,false,review
+wattleseed-shortbread,scripts/data/house-recipes/batch-03.json,ai-assisted,gluten,gluten,flour,wattleseed flour,50 g wattleseed flour,wattleseed,,false,certain
+indonesian-gado-gado-with-peanut-sauce,scripts/data/house-recipes/batch-04-02.json,ai-draft,gluten,gluten,cracker,Prawn cracker,"Prawn cracker, to serve",prawn-crackers,shellfish,false,review
+harira-chickpea-and-lentil-soup,scripts/data/house-recipes/batch-04-A02.json,ai-draft,gluten,gluten,vermicelli,vermicelli,1/4 cup vermicelli,rice-vermicelli,,false,review
+caribbean-spiced-pork-chops-with-mango-salsa,scripts/data/house-recipes/batch-04-A08.json,ai-draft,beef,beef,steak,pork loin steak,4 pork loin steak,pork-loin,meat|pork,false,review
+pork-normande-with-apples-and-mustard,scripts/data/house-recipes/batch-04-A09.json,ai-draft,beef,beef,steak,pork loin steak,4 pork loin steak,pork-loin,meat|pork,false,review
+kotlet-schabowy-polish-crumbed-pork-cutlets,scripts/data/house-recipes/batch-04-A21.json,ai-draft,beef,beef,steaks,pork loin steaks,4 pork loin steaks,pork-loin,meat|pork,false,review
+chilli-dogs-with-beef-and-bean-sauce,scripts/data/house-recipes/batch-04-A31.json,ai-draft,pork,pork,hot dog,hot dog bun,4 hot dog bun,hot-dog-bun,gluten|soy,false,certain
+katsu-sando-japanese-pork-cutlet-sandwich,scripts/data/house-recipes/batch-04-A32.json,ai-draft,beef,beef,steaks,pork loin steaks,"2 pork loin steaks, about 120g each",pork-loin,meat|pork,false,review
+boerewors-style-sausage-rolls-with-tomato-relish,scripts/data/house-recipes/batch-04-A39.json,ai-draft,pork,pork,hot dog,hot dog bun,2 hot dog bun,hot-dog-bun,gluten|soy,false,certain
+pylsur-icelandic-hot-dogs-with-crispy-onion-and-remoulade,scripts/data/house-recipes/batch-04-A40.json,ai-draft,pork,pork,hot dog,hot dog bun,4 hot dog bun,hot-dog-bun,gluten|soy,false,certain
+crispy-tofu-and-greens-with-black-bean-sauce,scripts/data/house-recipes/batch-04-A49.json,ai-draft,gluten,gluten,black bean sauce,black bean sauce,2 tbsp black bean sauce,black-beans,,false,certain
+crispy-tofu-and-greens-with-black-bean-sauce,scripts/data/house-recipes/batch-04-A49.json,ai-draft,soy,soy,black bean sauce,black bean sauce,2 tbsp black bean sauce,black-beans,,false,certain
+summer-christmas-roast-turkey-breast-with-cranberry-and-herb-butter,scripts/data/house-recipes/batch-04-A51.json,ai-draft,poultry,poultry,turkey,turkey breast roll,1.5kg turkey breast roll,bread-roll,gluten|soy,false,certain
+thanksgiving-roast-turkey-breast-with-sage-gravy-and-cornbread-stuffing,scripts/data/house-recipes/batch-04-A51.json,ai-draft,poultry,poultry,turkey,turkey breast roll,1.5kg turkey breast roll,bread-roll,gluten|soy,false,certain
+massaman-sweet-potato-curry,scripts/data/house-recipes/batch-04-B03.json,ai-draft,peanuts,peanuts,massaman,massaman curry paste,3 tbsp massaman curry paste,massaman-curry-paste,shellfish|chilli,false,review
+gluten-free-japanese-style-ginger-pork-with-rice,scripts/data/house-recipes/batch-04-B10.json,ai-draft,pork,pork,pork,pork scotch fillet,"500g pork scotch fillet, sliced",beef-rib-eye,meat|beef,false,certain
+char-siu-cantonese-roast-pork-with-rice-and-greens,scripts/data/house-recipes/batch-04-B13.json,ai-draft,pork,pork,pork,pork scotch fillet,"700g pork scotch fillet, cut in strips",beef-rib-eye,meat|beef,false,certain
+bun-thit-nuong-vietnamese-grilled-pork-with-vermicelli,scripts/data/house-recipes/batch-04-B20.json,ai-draft,pork,pork,pork,pork scotch fillet,"600g pork scotch fillet, sliced thin",beef-rib-eye,meat|beef,false,certain
+guoqiao-mixian-crossing-the-bridge-noodles,scripts/data/house-recipes/batch-04-B22.json,ai-draft,poultry,poultry,quail,quail eggs,4 quail eggs,egg,egg,false,certain
+teriyaki-buri-glazed-yellowtail,scripts/data/house-recipes/batch-04-B27.json,ai-draft,fish,fish,kingfish,kingfish steaks,"4 kingfish steaks, about 160g each",beef-steak,meat|beef,false,certain
+meen-varuthathu-kerala-fried-fish-with-rice,scripts/data/house-recipes/batch-04-B28.json,ai-draft,fish,fish,kingfish,kingfish steaks,"4 kingfish steaks, about 160g each",beef-steak,meat|beef,false,certain
+chocolate-crackles,scripts/data/house-recipes/batch-04-B38.json,ai-draft,gluten,gluten,cereal,puffed rice cereal,90g puffed rice cereal,white-rice,,false,review
+honey-rice-bubble-bars,scripts/data/house-recipes/batch-04-B38.json,ai-draft,gluten,gluten,cereal,puffed rice cereal,120g puffed rice cereal,white-rice,,false,review
+berry-trifle-cups,scripts/data/house-recipes/batch-04-B48.json,ai-draft,gluten,gluten,sponge|cake,vanilla sponge cake,"200g vanilla sponge cake, cubed",vanilla-extract,alcohol,false,review
+marsala-trifle-cups,scripts/data/house-recipes/batch-04-B48.json,ai-draft,gluten,gluten,sponge|cake,vanilla sponge cake,"200g vanilla sponge cake, cubed",vanilla-extract,alcohol,false,review
+warm-lamb-and-bulgur-salad,scripts/data/house-recipes/batch-04-C09.json,ai-draft,beef,beef,steaks,lamb leg steaks,400g lamb leg steaks,lamb-leg,meat|lamb,false,review
+moroccan-spiced-lentil-harira-soup,scripts/data/house-recipes/batch-04-C09.json,ai-draft,gluten,gluten,vermicelli,vermicelli,60g vermicelli,rice-vermicelli,,false,review
+bak-chor-mee-minced-pork-noodles,scripts/data/house-recipes/batch-04-C11.json,ai-draft,pork,pork,pork,pork stock,1 litre pork stock (or chicken stock),chicken-stock,meat|poultry,false,certain
+nigerian-moi-moi-steamed-bean-pudding,scripts/data/house-recipes/batch-04-C16.json,ai-draft,gluten,gluten,stock cube,vegetable stock cube,1 vegetable stock cube,vegetable-stock,,false,certain
+nigerian-ofada-ata-rodo-pepper-sauce,scripts/data/house-recipes/batch-04-C17.json,ai-draft,gluten,gluten,stock cube,vegetable stock cube,1 vegetable stock cube,vegetable-stock,,false,certain
+ghanaian-kontomire-spinach-stew,scripts/data/house-recipes/batch-04-C17.json,ai-draft,gluten,gluten,stock cube,vegetable stock cube,1 vegetable stock cube,vegetable-stock,,false,certain
+south-african-boerewors-breakfast-roll,scripts/data/house-recipes/batch-04-C23.json,ai-draft,beef,beef,beef,thick beef sausages,500g thick beef sausages,pork-sausage,meat|pork|gluten,false,certain
+turkish-bulgur-pilav-with-vermicelli-and-tomato,scripts/data/house-recipes/batch-04-C24.json,ai-draft,gluten,gluten,vermicelli,vermicelli,"40g vermicelli, broken",rice-vermicelli,,false,review
+sheer-khurma-eid-vermicelli-pudding,scripts/data/house-recipes/batch-04-C36.json,ai-draft,gluten,gluten,vermicelli,fine vermicelli,"1 cup fine vermicelli, broken",rice-vermicelli,,false,review
+smoky-sausage-and-capsicum-soup,scripts/data/house-recipes/batch-04-C66.json,ai-draft,beef,beef,beef,beef sausages,"4 beef sausages, sliced",pork-sausage,meat|pork|gluten,false,certain

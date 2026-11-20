@@ -1,0 +1,18 @@
+typecheck exit=0 secs=6
+lint exit=2 secs=14
+format exit=0 secs=2
+cat-house exit=0 secs=1
+cat-text exit=0 secs=0
+cat-ingredients exit=0 secs=1
+cat-validate exit=1 secs=3
+cat-validate-full exit=1 secs=3
+feed-verify exit=1 secs=0
+domain exit=0 secs=54
+jest1 exit=0 secs=16
+jest2 exit=0 secs=9
+audit exit=1 secs=24
+doctor exit=1 secs=3
+installcheck exit=1 secs=0
+export exit=0 secs=12
+testweb exit=1 secs=16
+ALLDONE

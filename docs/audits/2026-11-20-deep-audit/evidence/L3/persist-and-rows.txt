@@ -1,0 +1,26 @@
+npm notice run the-pantry-v2@1.0.0 npx
+npm notice run 'tsx' --test docs/audits/2026-11-20-deep-audit/tools/L3/persist-and-rows.probe.test.ts
+State loaded from storage couldn't be migrated since no migrate function was provided
+▶ DATA-persist: zustand 5 persist as the stores use it
+  ✔ a blob from a NEWER build (version 2) on a version-1 store without migrate loads as empty, then the next change overwrites it (25.619167ms)
+  ✔ a throw inside onRehydrateStorage (plan.ts prunes there) leaves hasHydrated false and never fires onFinishHydration (11.186917ms)
+✔ DATA-persist: zustand 5 persist as the stores use it (37.745ms)
+▶ DATA-rows: what the server will and will not take
+  ✔ a recipe of your own with about 60 KB of method text is set aside (never backed up, nothing on screen) (0.718041ms)
+  ✔ a collection whose own row is set aside vanishes on the other phone even though its member rows arrived (3.313125ms)
+  ✔ delete_account (live and pending versions) removes the leaver's recipe rows but keeps the plan rows that point at them (1.249459ms)
+✔ DATA-rows: what the server will and will not take (5.448625ms)
+▶ DATA-merge: joining and signing in do not prune
+  ✔ rowsToBringAlong / adoptHousehold keep weeks the plan has pruned; only receive() filters them (0.318542ms)
+✔ DATA-merge: joining and signing in do not prune (0.380042ms)
+▶ DATA-cursor sanity (refutation checks)
+  ✔ a mark from another household is ignored and never moves back (0.141166ms)
+✔ DATA-cursor sanity (refutation checks) (0.254875ms)
+ℹ tests 7
+ℹ suites 4
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 168.695167

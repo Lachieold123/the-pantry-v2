@@ -1,0 +1,570 @@
+[
+ {
+  "id": "green-chilli",
+  "name": "green chilli",
+  "phrase": "serrano chilli",
+  "missingGroup": "pork",
+  "words": "serrano",
+  "groups": "chilli"
+ },
+ {
+  "id": "green-chilli",
+  "name": "green chilli",
+  "phrase": "serrano chillies",
+  "missingGroup": "pork",
+  "words": "serrano",
+  "groups": "chilli"
+ },
+ {
+  "id": "beef-chuck",
+  "name": "beef chuck",
+  "phrase": "gravy beef",
+  "missingGroup": "gluten",
+  "words": "gravy",
+  "groups": "meat,beef"
+ },
+ {
+  "id": "beef-mince",
+  "name": "beef mince",
+  "phrase": "beef or lamb mince",
+  "missingGroup": "lamb",
+  "words": "lamb",
+  "groups": "meat,beef"
+ },
+ {
+  "id": "beef-mince",
+  "name": "beef mince",
+  "phrase": "beef and pork mince",
+  "missingGroup": "pork",
+  "words": "pork",
+  "groups": "meat,beef"
+ },
+ {
+  "id": "duck-fat",
+  "name": "duck fat",
+  "phrase": "duck fat or beef dripping",
+  "missingGroup": "beef",
+  "words": "beef|dripping",
+  "groups": "meat,poultry"
+ },
+ {
+  "id": "pork-loin",
+  "name": "pork loin",
+  "phrase": "pork loin steak",
+  "missingGroup": "beef",
+  "words": "steak",
+  "groups": "meat,pork"
+ },
+ {
+  "id": "roast-pork",
+  "name": "roast pork",
+  "phrase": "roast pork or shredded chicken",
+  "missingGroup": "poultry",
+  "words": "chicken",
+  "groups": "meat,pork"
+ },
+ {
+  "id": "prawn",
+  "name": "prawn",
+  "phrase": "raw prawn or 300g cooked chicken",
+  "missingGroup": "poultry",
+  "words": "chicken",
+  "groups": "shellfish"
+ },
+ {
+  "id": "swiss-cheese",
+  "name": "Swiss cheese",
+  "phrase": "emmental",
+  "missingGroup": "non-vegetarian",
+  "words": "emmental",
+  "groups": "dairy"
+ },
+ {
+  "id": "blue-cheese",
+  "name": "blue cheese",
+  "phrase": "gorgonzola",
+  "missingGroup": "non-vegetarian",
+  "words": "gorgonzola",
+  "groups": "dairy"
+ },
+ {
+  "id": "blue-cheese",
+  "name": "blue cheese",
+  "phrase": "gorgonzola dolce",
+  "missingGroup": "non-vegetarian",
+  "words": "gorgonzola",
+  "groups": "dairy"
+ },
+ {
+  "id": "blue-cheese",
+  "name": "blue cheese",
+  "phrase": "roquefort",
+  "missingGroup": "non-vegetarian",
+  "words": "roquefort",
+  "groups": "dairy"
+ },
+ {
+  "id": "vegetarian-hard-cheese",
+  "name": "vegetarian hard cheese",
+  "phrase": "vegetarian-rennet parmesan",
+  "missingGroup": "non-vegetarian",
+  "words": "parmesan",
+  "groups": "dairy"
+ },
+ {
+  "id": "vegetarian-hard-cheese",
+  "name": "vegetarian hard cheese",
+  "phrase": "vegetarian rennet parmesan",
+  "missingGroup": "non-vegetarian",
+  "words": "parmesan",
+  "groups": "dairy"
+ },
+ {
+  "id": "corn-tortilla",
+  "name": "corn tortilla",
+  "phrase": "taco tortilla",
+  "missingGroup": "gluten",
+  "words": "tortilla",
+  "groups": ""
+ },
+ {
+  "id": "hot-dog-bun",
+  "name": "hot dog bun",
+  "phrase": "hot dog bun",
+  "missingGroup": "pork",
+  "words": "hot dog",
+  "groups": "gluten,soy"
+ },
+ {
+  "id": "hot-dog-bun",
+  "name": "hot dog bun",
+  "phrase": "hot dog roll",
+  "missingGroup": "pork",
+  "words": "hot dog",
+  "groups": "gluten,soy"
+ },
+ {
+  "id": "hot-dog-bun",
+  "name": "hot dog bun",
+  "phrase": "top-split hot dog bun",
+  "missingGroup": "pork",
+  "words": "hot dog",
+  "groups": "gluten,soy"
+ },
+ {
+  "id": "beef-stock",
+  "name": "beef stock",
+  "phrase": "beef or lamb stock",
+  "missingGroup": "lamb",
+  "words": "lamb",
+  "groups": "meat,beef"
+ },
+ {
+  "id": "beef-stock",
+  "name": "beef stock",
+  "phrase": "beef or chicken stock",
+  "missingGroup": "poultry",
+  "words": "chicken",
+  "groups": "meat,beef"
+ },
+ {
+  "id": "beef-stock",
+  "name": "beef stock",
+  "phrase": "beef bouillon",
+  "missingGroup": "gluten",
+  "words": "bouillon",
+  "groups": "meat,beef"
+ },
+ {
+  "id": "beef-stock",
+  "name": "beef stock",
+  "phrase": "beef stock cube",
+  "missingGroup": "gluten",
+  "words": "stock cube",
+  "groups": "meat,beef"
+ },
+ {
+  "id": "chicken-stock",
+  "name": "chicken stock",
+  "phrase": "chicken or shrimp stock",
+  "missingGroup": "shellfish",
+  "words": "shrimp",
+  "groups": "meat,poultry"
+ },
+ {
+  "id": "chicken-stock",
+  "name": "chicken stock",
+  "phrase": "chicken or seafood stock",
+  "missingGroup": "shellfish",
+  "words": "seafood",
+  "groups": "meat,poultry"
+ },
+ {
+  "id": "chicken-stock",
+  "name": "chicken stock",
+  "phrase": "chicken bouillon",
+  "missingGroup": "gluten",
+  "words": "bouillon",
+  "groups": "meat,poultry"
+ },
+ {
+  "id": "chicken-stock",
+  "name": "chicken stock",
+  "phrase": "chicken stock cube",
+  "missingGroup": "gluten",
+  "words": "stock cube",
+  "groups": "meat,poultry"
+ },
+ {
+  "id": "kidney-beans",
+  "name": "kidney bean",
+  "phrase": "kidney or pinto bean",
+  "missingGroup": "meat",
+  "words": "kidney",
+  "groups": ""
+ },
+ {
+  "id": "marinara",
+  "name": "pasta sauce",
+  "phrase": "pasta sauce",
+  "missingGroup": "gluten",
+  "words": "pasta",
+  "groups": ""
+ },
+ {
+  "id": "marinara",
+  "name": "pasta sauce",
+  "phrase": "tomato pasta sauce",
+  "missingGroup": "gluten",
+  "words": "pasta",
+  "groups": ""
+ },
+ {
+  "id": "pickles",
+  "name": "pickle",
+  "phrase": "bread and butter pickle",
+  "missingGroup": "dairy",
+  "words": "butter",
+  "groups": ""
+ },
+ {
+  "id": "pickles",
+  "name": "pickle",
+  "phrase": "bread and butter pickle",
+  "missingGroup": "gluten",
+  "words": "bread",
+  "groups": ""
+ },
+ {
+  "id": "vegetable-stock",
+  "name": "vegetable stock",
+  "phrase": "vegetable bouillon",
+  "missingGroup": "gluten",
+  "words": "bouillon",
+  "groups": ""
+ },
+ {
+  "id": "vegetable-stock",
+  "name": "vegetable stock",
+  "phrase": "vegetable stock cube",
+  "missingGroup": "gluten",
+  "words": "stock cube",
+  "groups": ""
+ },
+ {
+  "id": "neutral-oil",
+  "name": "neutral oil",
+  "phrase": "rice bran oil",
+  "missingGroup": "gluten",
+  "words": "bran",
+  "groups": ""
+ },
+ {
+  "id": "tamari",
+  "name": "tamari",
+  "phrase": "tamari soy sauce",
+  "missingGroup": "gluten",
+  "words": "soy sauce",
+  "groups": "soy"
+ },
+ {
+  "id": "cassava-flour",
+  "name": "cassava flour",
+  "phrase": "manioc flour",
+  "missingGroup": "gluten",
+  "words": "flour",
+  "groups": ""
+ },
+ {
+  "id": "gelatine",
+  "name": "gelatine",
+  "phrase": "gelatine",
+  "missingGroup": "meat",
+  "words": "gelatine",
+  "groups": "animal-product,non-vegetarian"
+ },
+ {
+  "id": "gelatine",
+  "name": "gelatine",
+  "phrase": "gelatin",
+  "missingGroup": "meat",
+  "words": "gelatin",
+  "groups": "animal-product,non-vegetarian"
+ },
+ {
+  "id": "gelatine",
+  "name": "gelatine",
+  "phrase": "gelatine leaf",
+  "missingGroup": "meat",
+  "words": "gelatine",
+  "groups": "animal-product,non-vegetarian"
+ },
+ {
+  "id": "gelatine",
+  "name": "gelatine",
+  "phrase": "gelatine leaves",
+  "missingGroup": "meat",
+  "words": "gelatine",
+  "groups": "animal-product,non-vegetarian"
+ },
+ {
+  "id": "gelatine",
+  "name": "gelatine",
+  "phrase": "gelatine sheet",
+  "missingGroup": "meat",
+  "words": "gelatine",
+  "groups": "animal-product,non-vegetarian"
+ },
+ {
+  "id": "gelatine",
+  "name": "gelatine",
+  "phrase": "powdered gelatine",
+  "missingGroup": "meat",
+  "words": "gelatine",
+  "groups": "animal-product,non-vegetarian"
+ },
+ {
+  "id": "peking-duck-pancakes",
+  "name": "Peking duck pancake",
+  "phrase": "Peking duck pancake",
+  "missingGroup": "poultry",
+  "words": "duck",
+  "groups": "gluten"
+ },
+ {
+  "id": "peking-duck-pancakes",
+  "name": "Peking duck pancake",
+  "phrase": "duck pancake",
+  "missingGroup": "poultry",
+  "words": "duck",
+  "groups": "gluten"
+ },
+ {
+  "id": "corn-chips",
+  "name": "corn chip",
+  "phrase": "tortilla chip",
+  "missingGroup": "gluten",
+  "words": "tortilla",
+  "groups": ""
+ },
+ {
+  "id": "rice-noodles",
+  "name": "dried rice noodle",
+  "phrase": "rice stick noodle",
+  "missingGroup": "gluten",
+  "words": "noodle",
+  "groups": ""
+ },
+ {
+  "id": "rice-noodles",
+  "name": "dried rice noodle",
+  "phrase": "pad thai noodle",
+  "missingGroup": "gluten",
+  "words": "noodle",
+  "groups": ""
+ },
+ {
+  "id": "massaman-curry-paste",
+  "name": "massaman curry paste",
+  "phrase": "massaman curry paste",
+  "missingGroup": "peanuts",
+  "words": "massaman",
+  "groups": "shellfish,chilli"
+ },
+ {
+  "id": "massaman-curry-paste",
+  "name": "massaman curry paste",
+  "phrase": "massaman paste",
+  "missingGroup": "peanuts",
+  "words": "massaman",
+  "groups": "shellfish,chilli"
+ },
+ {
+  "id": "prawn-crackers",
+  "name": "prawn cracker",
+  "phrase": "prawn cracker",
+  "missingGroup": "gluten",
+  "words": "cracker",
+  "groups": "shellfish"
+ },
+ {
+  "id": "rice-vermicelli",
+  "name": "rice vermicelli",
+  "phrase": "rice vermicelli noodle",
+  "missingGroup": "gluten",
+  "words": "noodle",
+  "groups": ""
+ },
+ {
+  "id": "rice-vermicelli",
+  "name": "rice vermicelli",
+  "phrase": "vermicelli",
+  "missingGroup": "gluten",
+  "words": "vermicelli",
+  "groups": ""
+ },
+ {
+  "id": "rice-vermicelli",
+  "name": "rice vermicelli",
+  "phrase": "bun noodle",
+  "missingGroup": "gluten",
+  "words": "noodle",
+  "groups": ""
+ },
+ {
+  "id": "shrimp-paste",
+  "name": "shrimp paste",
+  "phrase": "bagoong",
+  "missingGroup": "fish",
+  "words": "bagoong",
+  "groups": "shellfish"
+ },
+ {
+  "id": "oyster-crackers",
+  "name": "oyster cracker",
+  "phrase": "oyster cracker",
+  "missingGroup": "shellfish",
+  "words": "oyster",
+  "groups": "gluten"
+ },
+ {
+  "id": "kina",
+  "name": "kina",
+  "phrase": "sea urchin roe",
+  "missingGroup": "fish",
+  "words": "roe",
+  "groups": "shellfish"
+ },
+ {
+  "id": "goat",
+  "name": "goat meat",
+  "phrase": "goat meat",
+  "missingGroup": "lamb",
+  "words": "goat",
+  "groups": "meat"
+ },
+ {
+  "id": "goat",
+  "name": "goat meat",
+  "phrase": "goat shoulder",
+  "missingGroup": "lamb",
+  "words": "goat",
+  "groups": "meat"
+ },
+ {
+  "id": "goat",
+  "name": "goat meat",
+  "phrase": "goat leg",
+  "missingGroup": "lamb",
+  "words": "goat",
+  "groups": "meat"
+ },
+ {
+  "id": "goat",
+  "name": "goat meat",
+  "phrase": "goat curry meat",
+  "missingGroup": "lamb",
+  "words": "goat",
+  "groups": "meat"
+ },
+ {
+  "id": "goat",
+  "name": "goat meat",
+  "phrase": "diced goat",
+  "missingGroup": "lamb",
+  "words": "goat",
+  "groups": "meat"
+ },
+ {
+  "id": "pigs-blood-cake",
+  "name": "pig's blood cake",
+  "phrase": "pig's blood cake",
+  "missingGroup": "gluten",
+  "words": "cake",
+  "groups": "meat,pork"
+ },
+ {
+  "id": "pigs-blood-cake",
+  "name": "pig's blood cake",
+  "phrase": "tinned pig's blood cake",
+  "missingGroup": "gluten",
+  "words": "cake",
+  "groups": "meat,pork"
+ },
+ {
+  "id": "pigs-blood-cake",
+  "name": "pig's blood cake",
+  "phrase": "pig blood cake",
+  "missingGroup": "gluten",
+  "words": "cake",
+  "groups": "meat,pork"
+ },
+ {
+  "id": "luncheon-meat",
+  "name": "luncheon meat",
+  "phrase": "corned mutton",
+  "missingGroup": "lamb",
+  "words": "mutton",
+  "groups": "meat,pork"
+ },
+ {
+  "id": "tripe",
+  "name": "beef tripe",
+  "phrase": "honeycomb tripe",
+  "missingGroup": "animal-product",
+  "words": "honeycomb",
+  "groups": "meat,beef"
+ },
+ {
+  "id": "palm-nuts",
+  "name": "palm nuts",
+  "phrase": "palm nuts",
+  "missingGroup": "tree-nuts",
+  "words": "nuts",
+  "groups": ""
+ },
+ {
+  "id": "palm-nuts",
+  "name": "palm nuts",
+  "phrase": "fresh palm nuts",
+  "missingGroup": "tree-nuts",
+  "words": "nuts",
+  "groups": ""
+ },
+ {
+  "id": "dosa-batter",
+  "name": "dosa batter",
+  "phrase": "dosa batter",
+  "missingGroup": "gluten",
+  "words": "batter",
+  "groups": ""
+ },
+ {
+  "id": "dosa-batter",
+  "name": "dosa batter",
+  "phrase": "idli batter",
+  "missingGroup": "gluten",
+  "words": "batter",
+  "groups": ""
+ }
+]

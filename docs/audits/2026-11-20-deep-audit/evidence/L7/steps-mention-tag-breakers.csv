@@ -1,0 +1,486 @@
+slug,route,provenance,tag,family,words,sentence,certainty
+arepas,"scripts/data/recipe-fixes.json (converted, D-014)",reviewed,no-gluten,gluten,pita,Split each arepa horizontally like a pita pocket.,review
+biryani,"scripts/data/recipe-fixes.json (converted, D-014)",reviewed,no-gluten,gluten,flour,Seal the lid with foil or a paste of flour and water.,review
+chicken-biryani,"scripts/data/recipe-fixes.json (converted, D-014)",ai-draft,no-gluten,gluten,flour,Seal the lid with foil or a paste of flour and water.,review
+fish-and-chips,"scripts/data/recipe-fixes.json (converted, D-014)",reviewed,pescatarian,pork,crackling,"While the fish drains, give the chips a second fry at 190°C for 3–4 minutes until properly golden and crackling.",review
+greek-salad,"scripts/data/recipe-fixes.json (converted, D-014)",reviewed,no-gluten,gluten,bread,Serve with crusty bread to mop up the salad juices.,review
+huevos-rancheros,"scripts/data/recipe-fixes.json (converted, D-014)",reviewed,no-gluten,gluten,flour,"Charred corn tortillas, not flour.",review
+lemon-pepper-salmon,"scripts/data/recipe-fixes.json (converted, D-014)",reviewed,pescatarian,pork,crackling,The crackling skin is half the appeal.,review
+lentil-soup,"scripts/data/recipe-fixes.json (converted, D-014)",reviewed,vegetarian,fish,fish,Fish out the bay.,review
+massaman-curry,"scripts/data/recipe-fixes.json (converted, D-014)",reviewed,no-dairy,dairy,cream,"Pour in the rest of the coconut milk and cream, plus 250ml water.",review
+roasted-veggie-bowl,"scripts/data/recipe-fixes.json (converted, D-014)",reviewed,no-gluten,gluten,croutons,Better than croutons.,review
+salmon-teriyaki,"scripts/data/recipe-fixes.json (converted, D-014)",reviewed,pescatarian,pork,crackling,"Cook 5 minutes without moving, the skin should be crackling crisp.",review
+seafood-paella,"scripts/data/recipe-fixes.json (converted, D-014)",reviewed,pescatarian,pork,crackling,Listen for crackling.,review
+seafood-pasta,"scripts/data/recipe-fixes.json (converted, D-014)",reviewed,no-dairy,dairy,parmesan,No parmesan on seafood pasta.,review
+thai-green-curry,"scripts/data/recipe-fixes.json (converted, D-014)",reviewed,no-dairy,dairy,cream,"Scoop the thick cream off the top, you should have 4–5 tablespoons.",review
+fattoush,scripts/data/house-recipes/batch-01.json,ai-draft,vegetarian,lamb,lamb,Serve with grilled chicken or lamb to make it dinner.,review
+fattoush,scripts/data/house-recipes/batch-01.json,ai-draft,vegan,lamb,lamb,Serve with grilled chicken or lamb to make it dinner.,review
+potato-pancakes,scripts/data/house-recipes/batch-01.json,ai-draft,vegetarian,fish,salmon,Smoked salmon and a dollop of sour cream turns these into a weekend brunch.,review
+keema-matar,scripts/data/house-recipes/batch-01.json,ai-draft,no-gluten,gluten,wrap|roti,Wrap leftovers in warm roti with a spoon of yoghurt for lunch.,review
+keema-matar,scripts/data/house-recipes/batch-01.json,ai-draft,no-dairy,dairy,yoghurt,Wrap leftovers in warm roti with a spoon of yoghurt for lunch.,review
+leek-potato-soup,scripts/data/house-recipes/batch-02.json,ai-draft,vegetarian,fish,fish,Fish out the bay leaf and thyme stalks.,review
+menemen,scripts/data/house-recipes/batch-02.json,ai-draft,vegetarian,poultry,turkey,Whether onion goes in menemen is a running argument in Turkey.,review
+moroccan-carrot-salad,scripts/data/house-recipes/batch-02.json,ai-draft,vegetarian,lamb,lamb,"Good alongside grilled lamb, chicken or a pile of flatbreads and hummus.",review
+moroccan-carrot-salad,scripts/data/house-recipes/batch-02.json,ai-draft,no-gluten,gluten,flatbreads,"Good alongside grilled lamb, chicken or a pile of flatbreads and hummus.",review
+vetkoek,scripts/data/house-recipes/batch-02.json,ai-draft,no-dairy,dairy,butter|cheese,"Vetkoek are also good with butter and golden syrup, or cheese and apricot jam.",review
+rajma,scripts/data/house-recipes/batch-02.json,ai-draft,no-gluten,gluten,roti,"Rajma chawal (with rice) is the classic, but it's also good with roti.",review
+banh-xeo,scripts/data/house-recipes/batch-02.json,ai-draft,no-dairy,dairy,cream,"Whisk the rice flour, turmeric, salt, coconut milk and soda water to a thin batter, like pouring cream.",review
+pajeon,scripts/data/house-recipes/batch-02.json,ai-draft,vegetarian,shellfish,prawns|squid|seafood,"For haemul pajeon, scatter 150g chopped raw prawns or squid over the spring onions before adding the batter, and cook until the seafood is opaque.",review
+char-kway-teow,scripts/data/house-recipes/batch-02.json,ai-draft,pescatarian,pork,chinese sausage|lap cheong,Hawkers add sliced Chinese sausage (lap cheong) and cockles.,review
+perkedel,scripts/data/house-recipes/batch-02.json,ai-draft,vegetarian,beef,beef,"For the meaty version, fry 150g beef mince until cooked through and mix it into the potato.",review
+sayur-lodeh,scripts/data/house-recipes/batch-02.json,ai-draft,vegetarian,shellfish,shrimp,In Java it's usually seasoned with shrimp paste.,review
+sayur-lodeh,scripts/data/house-recipes/batch-02.json,ai-draft,vegan,shellfish,shrimp,In Java it's usually seasoned with shrimp paste.,review
+paneer-tikka,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,roti,"Transfer to a serving plate, scatter with fresh coriander and serve hot with lemon wedges and roti or rice.",review
+stifado,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,This is good with crusty bread or over rice to soak up the sauce.,review
+stifado,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,"Serve with crusty bread, rice, or soft polenta to soak up the incredible sauce.",review
+carnitas-tostadas,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,flour|tortillas,"Flour tortillas work fine, but corn is the real deal.",review
+karahi-chicken,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,naan|roti,"Scatter with fresh coriander and serve hot with naan, roti or steamed rice.",review
+sugo-di-calabria,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,pasta,Serve over pasta with grated parmesan.,review
+sugo-di-calabria,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,pasta|pappardelle|rigatoni,"Serve over fresh pasta, pappardelle, or rigatoni, with a scatter of fresh basil and parmesan.",review
+sugo-di-calabria,scripts/data/house-recipes/batch-03.json,ai-assisted,no-dairy,dairy,parmesan,Serve over pasta with grated parmesan.,review
+sugo-di-calabria,scripts/data/house-recipes/batch-03.json,ai-assisted,no-dairy,dairy,parmesan,"Serve over fresh pasta, pappardelle, or rigatoni, with a scatter of fresh basil and parmesan.",review
+bacalao-a-la-vizcaina,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,Eat with good bread and a glass of txakoli or dry white wine.,review
+meen-curry,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,flatbread,"Serve with steamed rice, appam, or flatbread to soak up the coconut broth.",review
+tagine-d-agneau-aux-pruneaux,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,couscous|flatbread,Serve with couscous or warm flatbread to soak up the sauce.,review
+galette-de-ble-noir-aux-moules,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,flour|batter,"Pour the wet ingredients into the flour, whisking until you have a smooth batter with no lumps.",review
+tempe-goreng-sambal-matah,scripts/data/house-recipes/batch-03.json,ai-assisted,vegan,egg,eggs,"Make a big batch of sambal matah and keep it in the fridge for up to three days, it's brilliant on rice, eggs, or any leftover protein.",review
+tahdig,scripts/data/house-recipes/batch-03.json,ai-assisted,vegetarian,pork,crackling,"You want to hear a gentle crackling sound after about 15 minutes, that's the tahdig forming.",review
+tahdig,scripts/data/house-recipes/batch-03.json,ai-assisted,vegetarian,pork,crackling,Listen for the gentle crackling around 15 minutes in.,review
+gudeg-nangka-muda,scripts/data/house-recipes/batch-03.json,ai-assisted,vegan,egg,eggs,"Serve with steamed rice and a simple fried chicken or hard-boiled eggs on the side, Yogyakarta style.",review
+com-chien-hai-san,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,soy sauce,"For extra flavour, add a splash of soy sauce or a drizzle of chilli oil after cooking.",review
+k-rm-z-mercimekli-kofte,scripts/data/house-recipes/batch-03.json,ai-assisted,vegetarian,meat,meatballs,"With damp hands, shape the mixture into oval meatballs about 4 cm long.",review
+k-rm-z-mercimekli-kofte,scripts/data/house-recipes/batch-03.json,ai-assisted,vegan,meat,meatballs,"With damp hands, shape the mixture into oval meatballs about 4 cm long.",review
+k-rm-z-mercimekli-kofte,scripts/data/house-recipes/batch-03.json,ai-assisted,vegan,dairy,yoghurt,Serve warm with lemon wedges and yoghurt on the side.,review
+k-rm-z-mercimekli-kofte,scripts/data/house-recipes/batch-03.json,ai-assisted,vegan,dairy,yoghurt,"Serve with yoghurt, lemon wedges, and fresh salad, or tuck into flatbread with tomato and onion.",review
+k-rm-z-mercimekli-kofte,scripts/data/house-recipes/batch-03.json,ai-assisted,no-dairy,dairy,yoghurt,Serve warm with lemon wedges and yoghurt on the side.,review
+k-rm-z-mercimekli-kofte,scripts/data/house-recipes/batch-03.json,ai-assisted,no-dairy,dairy,yoghurt,"Serve with yoghurt, lemon wedges, and fresh salad, or tuck into flatbread with tomato and onion.",review
+fiji-style-fish-curry,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,roti|flatbread,"Serve with roti, steamed rice or just with flatbread to soak up the sauce.",review
+stinky-tofu,scripts/data/house-recipes/batch-03.json,ai-assisted,vegetarian,pork,crackling,Eat while it's still crackling.,review
+stinky-tofu,scripts/data/house-recipes/batch-03.json,ai-assisted,vegan,pork,crackling,Eat while it's still crackling.,review
+nozawana-zuke,scripts/data/house-recipes/batch-03.json,ai-assisted,vegetarian,fish,fish,"Serve alongside rice, grilled fish, or simply as a palate cleanser with any meal.",review
+nozawana-zuke,scripts/data/house-recipes/batch-03.json,ai-assisted,vegan,fish,fish,"Serve alongside rice, grilled fish, or simply as a palate cleanser with any meal.",review
+fava,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,"This is also lovely cold, straight from the fridge, with toasted bread and a scatter of caper berries or olives.",review
+waakye,scripts/data/house-recipes/batch-03.json,ai-assisted,vegan,egg,egg,"Serve hot with your choice of toppings: grated hard-boiled egg, fried plantain, avocado, hot shito sauce, or a rich stew.",review
+waakye,scripts/data/house-recipes/batch-03.json,ai-assisted,vegan,egg,egg,"The best toppings are fried plantain, avocado slices, grated hard-boiled egg, and a spoonful of hot shito (pepper) sauce on the side.",review
+shakshuka-tunisienne,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,Serve with torn bread to soak up the sauce.,review
+salatit-al-khudar,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,Serve straight away with warm bread to eat it with.,review
+suquet-de-peix,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,Serve with crusty bread to soak up the broth.,review
+doro-wat,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,"Serve hot with injera, spooning the stew onto the spongy bread so people can tear it and scoop the chicken, eggs and sauce together.",review
+braised-brisket-with-onions,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,noodles|bread|gravy,"Serve with egg noodles, boiled potatoes, or just good bread for soaking up the gravy.",review
+etli-lentil-stew,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,"Serve with crusty bread for soaking up the broth, or with plain white rice.",review
+chimichurri-verde,scripts/data/house-recipes/batch-03.json,ai-assisted,vegetarian,beef,beef,"Serve with grilled beef, chicken, or even crusty bread, it's not just for meat, though that's what Inés says it's for.",review
+chimichurri-verde,scripts/data/house-recipes/batch-03.json,ai-assisted,vegan,beef,beef,"Serve with grilled beef, chicken, or even crusty bread, it's not just for meat, though that's what Inés says it's for.",review
+chimichurri-verde,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,"Serve at room temperature with grilled meat, bread, or anything that needs the taste of home.",review
+chimichurri-verde,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,"Serve with grilled beef, chicken, or even crusty bread, it's not just for meat, though that's what Inés says it's for.",review
+simit,scripts/data/house-recipes/batch-03.json,ai-assisted,vegan,dairy,cheese,Simit are best eaten warm with Turkish tea or cheese.,review
+simit,scripts/data/house-recipes/batch-03.json,ai-assisted,no-dairy,dairy,cheese,Simit are best eaten warm with Turkish tea or cheese.,review
+dashimaki-tamago,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,soy sauce,"Slice into 8 pieces with a damp sharp knife and serve with a drizzle of soy sauce, or pack into bento.",review
+rasam,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,"Pour the tempering into the pot of rasam, stir through, and serve hot with rice, dosa or a simple bread.",review
+apple-and-cider-pork-braise,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,Serve with crusty bread or mashed potato.,review
+apple-and-cider-pork-braise,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,"Serve with mashed potato, crusty bread or steamed greens.",review
+moi-moi,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,Serve warm with bread or rice.,review
+spiced-potato-roti-filling,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,roti,Set aside to cool slightly before using to fill roti.,review
+makki-di-roti,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,roti,The roti will stay soft and slightly crumbly.,review
+torshi,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,"Serve as a side to mezze, with fresh bread, or alongside grilled vegetables and legumes.",review
+ika-samoa,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,"Serve with steamed white rice, taro or fresh soda bread to soak up the coconut broth.",review
+oyster-omelette,scripts/data/house-recipes/batch-03.json,ai-assisted,pescatarian,pork,crackling,The magic is eating it right away when the edges are still crackling.,review
+slow-cooker-oxtail-stew,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread|gravy,"Serve with crusty bread, mash, or over rice to soak up the gravy.",review
+potjiekos,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,"Serve straight from the pot, family-style, with crusty bread to soak up the liquid.",review
+perkedel-kentang,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,soy sauce,Serve with sambal or sweet soy sauce for dipping.,review
+kleftiko,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,Serve with horta (simply boiled greens) or crusty bread to mop it up.,review
+zurek-z-zytem,scripts/data/house-recipes/batch-03.json,ai-assisted,no-dairy,dairy,sour cream,Traditionally served with rye bread and a dollop of sour cream.,review
+caponata,scripts/data/house-recipes/batch-03.json,ai-assisted,vegetarian,fish,fish,"Serve it at room temperature or cold, as a side dish, on bruschetta, or alongside grilled fish.",review
+caponata,scripts/data/house-recipes/batch-03.json,ai-assisted,vegan,fish,fish,"Serve it at room temperature or cold, as a side dish, on bruschetta, or alongside grilled fish.",review
+mulligatawny,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,"Serve with rice, or tear up some bread to dip in.",review
+oxtail-braised-in-red-wine,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread|gravy,"Serve with creamy mash, crusty bread or buttered rice to soak up every drop of gravy.",review
+zaalouk,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,Scatter the remaining coriander over the top and serve warm or at room temperature with bread.,review
+zaalouk,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,"This is traditionally served as part of a mezze spread alongside olives, preserved lemons and bread.",review
+asado-de-tira,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,Serve warm with crusty bread to soak up every drop of chimichurri and meat juices.,review
+barbacoa,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,flour|tortillas,"Serve on warm flour tortillas with diced onion, fresh coriander and lime wedges.",review
+soupe-a-l-oignon,scripts/data/house-recipes/batch-03.json,ai-assisted,no-dairy,dairy,crème fraîche|yoghurt,"For extra richness, some cooks stir in a spoonful of crème fraîche or Greek yoghurt just before serving.",review
+banga-soup,scripts/data/house-recipes/batch-03.json,ai-assisted,no-dairy,dairy,cream,"Press through a fine sieve or colander lined with muslin cloth, squeezing gently to extract all the cream.",review
+banga-soup,scripts/data/house-recipes/batch-03.json,ai-assisted,no-dairy,dairy,cream,Skip the pounding and straining; just heat the tinned cream gently and follow from step 3.,review
+buniga-ni-lolo,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,roti,"Serve with roti, dhal puri or rice.",review
+slow-roasted-tomatoes-and-onions-with-oregano,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,Serve warm with crusty bread.,review
+slow-roasted-tomatoes-and-onions-with-oregano,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,Serve warm or at room temperature with crusty bread for scooping.,review
+squid-and-chilli,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,Serve with crusty bread to mop up the pan juices.,review
+cavolfiore-affogato,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,Best served warm with crusty bread to soak up the sauce.,review
+naam-tok-gai,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,flour,"Let it cool, then pound it in a mortar until it's crumbly with some fine powder, not flour-fine, but grainy.",review
+rabo-de-toro,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,"Serve with crusty bread to soak up the sauce, and a simple green salad or steamed greens on the side.",review
+cendol,scripts/data/house-recipes/batch-03.json,ai-assisted,vegan,dairy,condensed milk,"The batter should be thin, like condensed milk in consistency.",review
+cendol,scripts/data/house-recipes/batch-03.json,ai-assisted,no-dairy,dairy,condensed milk,"The batter should be thin, like condensed milk in consistency.",review
+atsuage,scripts/data/house-recipes/batch-03.json,ai-assisted,pescatarian,pork,crackling,"Atsuage is best eaten straight away, while the outside is still crackling and the inside soft.",review
+dhal-and-jaggery,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,roti,"Serve with steamed rice, hoppers or roti to soak up the sauce.",review
+jaew-makhuea-thet-charred-tomato-jaew,scripts/data/house-recipes/batch-03.json,ai-assisted,pescatarian,pork,pork,"Serve with sticky rice, grilled chicken, prawns or crispy pork, and plenty of fresh vegetables.",review
+chapli-kebab,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,naan|flatbread,"Serve with naan or flatbread, sliced onions, lemon and a dollop of cooling yoghurt.",review
+chapli-kebab,scripts/data/house-recipes/batch-03.json,ai-assisted,no-dairy,dairy,yoghurt,"Serve hot with lemon wedges, sliced onions and yoghurt on the side.",review
+chapli-kebab,scripts/data/house-recipes/batch-03.json,ai-assisted,no-dairy,dairy,naan|yoghurt,"Serve with naan or flatbread, sliced onions, lemon and a dollop of cooling yoghurt.",review
+fideua,scripts/data/house-recipes/batch-03.json,ai-assisted,pescatarian,pork,crackling,"Increase the heat to medium-high for the last minute to create the socarrat, listen for a gentle crackling sound from the bottom.",review
+fideua,scripts/data/house-recipes/batch-03.json,ai-assisted,pescatarian,pork,crackling,"The socarrat is crucial, that dark, crackling crust at the bottom.",review
+flathead-with-lemon-and-thyme,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,"Serve with something simple: crushed new potatoes, a green salad, or just good bread to soak up the juices.",review
+kartoffelsuppe-med-persille-og-l-g,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,rye|bread,Serve with rye bread and butter.,review
+laabda,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,flatbread,Serve hot with rice or flatbread.,review
+labskaus,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,"Serve hot in bowls, with dark bread on the side.",review
+che-ba-mau,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,breadcrumbs,"Mix well, squeezing the mixture between your fingers until it looks like damp breadcrumbs; if it's too dry, add a little more water.",review
+eggplant-and-chickpea-stew,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,Serve warm with rice or bread.,review
+viande-a-la-tomate,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,Serve hot with rice or bread to soak up the sauce.,review
+teff-injera,scripts/data/house-recipes/batch-03.json,ai-assisted,vegan,dairy,cream,"Stir until you have a smooth, thin batter with no lumps, thinner than pancake batter, about the consistency of single cream.",review
+teff-injera,scripts/data/house-recipes/batch-03.json,ai-assisted,no-dairy,dairy,cream,"Stir until you have a smooth, thin batter with no lumps, thinner than pancake batter, about the consistency of single cream.",review
+haydari,scripts/data/house-recipes/batch-03.json,ai-assisted,vegan,dairy,yoghurt,"Traditionally made with yoghurt; this version is just as creamy, and Layla's family has eaten it both ways for years.",review
+haydari,scripts/data/house-recipes/batch-03.json,ai-assisted,no-dairy,dairy,yoghurt,"Traditionally made with yoghurt; this version is just as creamy, and Layla's family has eaten it both ways for years.",review
+sambal-matah,scripts/data/house-recipes/batch-03.json,ai-assisted,vegetarian,fish,fish,"Serve at room temperature with rice, grilled fish or sate.",review
+sambal-matah,scripts/data/house-recipes/batch-03.json,ai-assisted,vegan,fish,fish,"Serve at room temperature with rice, grilled fish or sate.",review
+labaneh-with-za-atar,scripts/data/house-recipes/batch-03.json,ai-assisted,vegetarian,beef,dripping,"Tie the corners of the cloth together and hang it over a bowl (or suspend it in the fridge) to drain overnight, or for at least 12 hours, until the whey has stopped dripping.",review
+slow-cooker-lamb-neck-with-tomato,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,"Serve with crusty bread to soak up the sauce, or over rice or mash.",review
+slow-cooked-beef-cheeks-with-native-pepper,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,Serve with mashed potato or crusty bread.,review
+bacalao-al-pil-pil,scripts/data/house-recipes/batch-03.json,ai-assisted,pescatarian,meat,gelatine,The gelatine from the fish will start to emulsify the oil into a creamy sauce.,review
+kaldolmere,scripts/data/house-recipes/batch-03.json,ai-assisted,no-dairy,dairy,sour cream,A dollop of sour cream on the side is traditional.,review
+kaldolmere,scripts/data/house-recipes/batch-03.json,ai-assisted,no-dairy,dairy,sour cream|yoghurt,Sour cream or Greek yoghurt to serve is traditional.,review
+artsoppa-med-flask,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,rye|bread,Serve hot in bowls with rye bread and Swedish mustard on the side.,review
+rotkohl-mit-apfeln,scripts/data/house-recipes/batch-03.json,ai-assisted,vegetarian,fish,fish,"Serve warm, as a side to roasted meat or alongside a good piece of fish.",review
+rotkohl-mit-apfeln,scripts/data/house-recipes/batch-03.json,ai-assisted,vegan,fish,fish,"Serve warm, as a side to roasted meat or alongside a good piece of fish.",review
+fasolada,scripts/data/house-recipes/batch-03.json,ai-assisted,no-gluten,gluten,bread,"Serve warm, with crusty bread on the side.",review
+eggs-in-purgatory,scripts/data/house-recipes/batch-04-A06.json,ai-draft,vegetarian,rennet-gelatine,parmesan,Scatter with basil and parmesan and serve with the bread.,review
+baked-eggs-with-spinach-and-cream,scripts/data/house-recipes/batch-04-A06.json,ai-draft,vegetarian,rennet-gelatine,gruyere,"Divide the spinach and cream between two ramekins, crack in two eggs each and top with gruyere.",review
+szekely-pork-and-sauerkraut-stew,scripts/data/house-recipes/batch-04-A07.json,ai-draft,no-gluten,gluten,bread,Scatter the dill over the stew and serve it hot with crusty bread or boiled potatoes.,review
+roast-cauliflower-tagine-with-green-olives,scripts/data/house-recipes/batch-04-A08.json,ai-draft,no-gluten,gluten,couscous|bread,Scatter with coriander and serve with couscous or bread.,review
+beef-stifado-with-whole-onions-and-cinnamon,scripts/data/house-recipes/batch-04-A10.json,ai-draft,no-gluten,gluten,bread,Serve with crusty bread or boiled potatoes.,review
+pollo-a-la-vasca-basque-chicken-with-capsicum-and-ham,scripts/data/house-recipes/batch-04-A10.json,ai-draft,no-gluten,gluten,bread,Serve with rice or crusty bread.,review
+pollo-al-ajillo-spanish-garlic-chicken,scripts/data/house-recipes/batch-04-A10.json,ai-draft,no-gluten,gluten,bread,Finish with the lemon juice and parsley and serve with bread or potatoes.,review
+boeuf-en-daube-provencale,scripts/data/house-recipes/batch-04-A11.json,ai-draft,no-gluten,gluten,pasta,Serve with creamy mash or buttered pasta.,review
+piperade-with-fried-eggs-and-jam-n,scripts/data/house-recipes/batch-04-A12.json,ai-draft,no-gluten,gluten,bread,Lay the prosciutto over the top and serve from the pan with bread.,review
+hungarian-beef-goulash,scripts/data/house-recipes/batch-04-A14.json,ai-draft,no-gluten,gluten,bread|noodles,Serve with bread or egg noodles.,review
+moroccan-chicken-tagine-with-preserved-lemon,scripts/data/house-recipes/batch-04-A14.json,ai-draft,no-gluten,gluten,couscous,Scatter with coriander and serve with couscous.,review
+algerian-chicken-chakchouka,scripts/data/house-recipes/batch-04-A14.json,ai-draft,no-gluten,gluten,bread,Top with parsley and serve with bread.,review
+huevos-a-la-flamenca-baked-eggs-with-chorizo-and-peas,scripts/data/house-recipes/batch-04-A16.json,ai-draft,no-gluten,gluten,bread,Serve with crusty bread.,review
+irish-stew-lamb-and-potato,scripts/data/house-recipes/batch-04-A16.json,ai-draft,no-gluten,gluten,worcestershire,A splash of Worcestershire sauce is common but not traditional.,review
+fasolakia-ladera-greek-braised-green-beans-and-potatoes,scripts/data/house-recipes/batch-04-A17.json,ai-draft,no-gluten,gluten,bread,Scatter with parsley and serve with feta and bread.,review
+revithada-greek-oven-baked-chickpeas-with-lemon,scripts/data/house-recipes/batch-04-A17.json,ai-draft,no-gluten,gluten,bread,Stir in the lemon juice and parsley and serve with bread.,review
+loubia-moroccan-white-bean-stew-with-paprika-and-cumin,scripts/data/house-recipes/batch-04-A17.json,ai-draft,no-gluten,gluten,bread,Serve with bread or rice.,review
+feijoada-transmontana-portuguese-pork-and-bean-stew,scripts/data/house-recipes/batch-04-A18.json,ai-draft,no-gluten,gluten,bread,Serve with crusty bread.,review
+chakhokhbili-georgian-chicken-and-tomato-stew,scripts/data/house-recipes/batch-04-A18.json,ai-draft,no-gluten,gluten,bread,Scatter the rest over and serve with bread or rice.,review
+lobio-georgian-kidney-bean-stew-with-walnuts,scripts/data/house-recipes/batch-04-A18.json,ai-draft,no-gluten,gluten,bread,Serve with bread.,review
+chashushuli-georgian-beef-and-tomato-stew,scripts/data/house-recipes/batch-04-A18.json,ai-draft,no-gluten,gluten,bread,"Stir through the herbs, season and serve with bread or rice.",review
+risotto-alla-pescatora-seafood-risotto,scripts/data/house-recipes/batch-04-A18.json,ai-draft,no-dairy,dairy,cheese,Serve straight away; no cheese is added.,review
+zarzuela-de-mariscos-catalan-seafood-stew,scripts/data/house-recipes/batch-04-A19.json,ai-draft,no-gluten,gluten,bread,Scatter with parsley and serve with bread.,review
+bacalao-al-pil-pil-basque-salt-cod-in-garlic-oil-emulsion,scripts/data/house-recipes/batch-04-A19.json,ai-draft,pescatarian,meat,gelatin,"Off the heat, swirl the pan in a circular motion for 5 minutes as the oil cools; the gelatin from the skin makes it thicken into a sauce.",review
+karides-g-vec-turkish-prawn-casserole,scripts/data/house-recipes/batch-04-A20.json,ai-draft,no-gluten,gluten,bread,Scatter with parsley and serve with bread.,review
+tangia-marrakchia-marrakech-slow-cooked-beef-pot,scripts/data/house-recipes/batch-04-A20.json,ai-draft,no-gluten,gluten,bread,"Stir once in the middle, then serve with bread.",review
+barbunya-pilaki-turkish-borlotti-beans-in-tomato,scripts/data/house-recipes/batch-04-A20.json,ai-draft,no-gluten,gluten,bread,Scatter with parsley and serve with lemon and bread.,review
+pollo-alla-cacciatora-hunters-chicken-with-tomato-olives-and-capsicum,scripts/data/house-recipes/batch-04-A21.json,ai-draft,no-gluten,gluten,bread,"Uncover and simmer for 5 minutes, until the sauce is thick, and serve with polenta or crusty bread.",review
+tfaya-moroccan-chicken-with-caramelised-onions-and-raisins,scripts/data/house-recipes/batch-04-A21.json,ai-draft,no-gluten,gluten,couscous,"Pile the topping over the chicken, scatter with almonds and serve with couscous.",review
+tfaya-moroccan-chicken-with-caramelised-onions-and-raisins,scripts/data/house-recipes/batch-04-A21.json,ai-draft,no-gluten,gluten,couscous,Serve with couscous.,review
+carbonada-criolla-argentine-beef-stew-served-in-pumpkin,scripts/data/house-recipes/batch-04-A22.json,ai-draft,no-gluten,gluten,bread,Serve in bowls with crusty bread.,review
+bistecca-alla-pizzaiola-steak-in-tomato-and-oregano-sauce,scripts/data/house-recipes/batch-04-A22.json,ai-draft,no-gluten,gluten,bread,"Slice and serve with the sauce, parsley and potatoes or bread.",review
+fabada-asturiana-white-bean-pork-and-chorizo-stew,scripts/data/house-recipes/batch-04-A22.json,ai-draft,no-gluten,gluten,bread,Ladle into bowls with crusty bread.,review
+pinchos-morunos-spanish-spiced-pork-skewers,scripts/data/house-recipes/batch-04-A22.json,ai-draft,no-gluten,gluten,flatbread,Rest for 3 minutes and serve with lemon wedges and flatbread.,review
+arni-fricassee-greek-lamb-with-cos-lettuce-and-dill,scripts/data/house-recipes/batch-04-A22.json,ai-draft,no-gluten,gluten,bread,Serve with crusty bread.,review
+tavuk-sote-turkish-chicken-saute-with-capsicum-and-tomato,scripts/data/house-recipes/batch-04-A22.json,ai-draft,no-gluten,gluten,bread,Serve with rice or bread.,review
+biber-dolmasi-turkish-lamb-and-rice-stuffed-capsicums,scripts/data/house-recipes/batch-04-A22.json,ai-draft,no-dairy,dairy,yoghurt,Serve with yoghurt.,review
+kafta-bil-tahini-lebanese-lamb-and-potato-bake,scripts/data/house-recipes/batch-04-A22.json,ai-draft,no-gluten,gluten,flatbread,Serve with rice or flatbread.,review
+lubia-polo-persian-green-bean-beef-and-rice,scripts/data/house-recipes/batch-04-A22.json,ai-draft,no-dairy,dairy,yoghurt,Serve with yoghurt.,review
+mrouzia-moroccan-lamb-with-honey-raisins-and-almonds,scripts/data/house-recipes/batch-04-A22.json,ai-draft,no-gluten,gluten,couscous,Serve with couscous and almonds scattered over.,review
+kefta-mkaouara-moroccan-meatballs-with-tomato-and-eggs,scripts/data/house-recipes/batch-04-A22.json,ai-draft,no-gluten,gluten,bread,Serve with bread.,review
+ojja-tunisian-spicy-sausage-and-egg-skillet,scripts/data/house-recipes/batch-04-A22.json,ai-draft,no-gluten,gluten,bread,Scatter with parsley and serve with bread.,review
+cawl-welsh-lamb-and-root-vegetable-broth,scripts/data/house-recipes/batch-04-A27.json,ai-draft,no-gluten,gluten,bread,Stir in the parsley and serve with bread.,review
+lentejas-con-chorizo-spanish-lentil-and-chorizo-stew,scripts/data/house-recipes/batch-04-A27.json,ai-draft,no-gluten,gluten,bread,Season with salt and serve with bread.,review
+moroccan-lamb-kefta-tagine-with-baked-eggs,scripts/data/house-recipes/batch-04-A27.json,ai-draft,no-gluten,gluten,bread,Serve with bread.,review
+abgoosht-persian-lamb-and-chickpea-stew,scripts/data/house-recipes/batch-04-A28.json,ai-draft,no-gluten,gluten,bread,"Serve the broth with bread, and mash the solids to eat alongside.",review
+sloppy-joes-with-capsicum-on-toasted-buns,scripts/data/house-recipes/batch-04-A30.json,ai-draft,no-dairy,dairy,milk,"Contains gluten, fish (Worcestershire) and milk may be in buns.",review
+ebi-katsu-sando-japanese-prawn-cutlet-sandwich,scripts/data/house-recipes/batch-04-A32.json,ai-draft,pescatarian,pork,pork,"Food safety: cook prawns until pink and opaque all the way through until steaming hot and no longer pink in the middle (poultry and mince to 75°C, pork to 70°C).",review
+egg-roti-wrap-malaysian-style-roti-telur,scripts/data/house-recipes/batch-04-A32.json,ai-draft,vegetarian,pork,pork,"Food safety: cook the omelettes until fully set with no runny egg until steaming hot and no longer pink in the middle (poultry and mince to 75°C, pork to 70°C).",review
+salmon-avocado-rice-paper-rolls,scripts/data/house-recipes/batch-04-A32.json,ai-draft,pescatarian,pork,pork,"Food safety: cook salmon until opaque and flaking all the way through until steaming hot and no longer pink in the middle (poultry and mince to 75°C, pork to 70°C).",review
+egg-and-veg-muffin-cups-high-protein-meal-prep,scripts/data/house-recipes/batch-04-A32.json,ai-draft,vegetarian,pork,pork,"Food safety: cook the egg cups until set in the centre until steaming hot and no longer pink in the middle (poultry and mince to 75°C, pork to 70°C).",review
+tuna-and-white-bean-meal-prep-boxes,scripts/data/house-recipes/batch-04-A32.json,ai-draft,pescatarian,pork,pork,"Food safety: cook canned tuna only from a freshly opened can until steaming hot and no longer pink in the middle (poultry and mince to 75°C, pork to 70°C).",review
+tuna-salad-wrap-with-avocado,scripts/data/house-recipes/batch-04-A34.json,ai-draft,pescatarian,pork,pork,"Food safety: cook canned tuna only from a freshly opened can until steaming hot and no longer pink in the middle (poultry and mince to 75°C, pork to 70°C).",review
+fish-finger-sandwich,scripts/data/house-recipes/batch-04-A34.json,ai-draft,pescatarian,pork,pork,"Food safety: cook fish to 63°C until opaque and flaking until steaming hot and no longer pink in the middle (poultry and mince to 75°C, pork to 70°C).",review
+tuna-onigiri-bento-with-cucumber-and-egg,scripts/data/house-recipes/batch-04-A34.json,ai-draft,pescatarian,pork,pork,"Food safety: cook canned tuna only from a freshly opened can until steaming hot and no longer pink in the middle (poultry and mince to 75°C, pork to 70°C).",review
+egg-kathi-roll-calcutta-style,scripts/data/house-recipes/batch-04-A35.json,ai-draft,no-dairy,dairy,milk,"Contains egg, gluten and milk.",review
+fish-finger-wraps-for-kids-with-crunchy-slaw,scripts/data/house-recipes/batch-04-A37.json,ai-draft,no-dairy,dairy,milk,"Contains fish, gluten, egg and milk.",review
+sanguche-de-pollo-peruvian-chicken-sandwich-with-aji-cream,scripts/data/house-recipes/batch-04-A39.json,ai-draft,no-dairy,dairy,cream,"Fill the rolls with lettuce, chicken, onion and the cream.",review
+chickpea-flour-socca-with-spinach-and-tomato-vegan,scripts/data/house-recipes/batch-04-A40.json,ai-draft,vegan,egg,egg,"Naturally free of gluten, dairy and egg.",review
+date-night-mushroom-and-thyme-risotto-for-two,scripts/data/house-recipes/batch-04-A41.json,ai-draft,vegetarian,rennet-gelatine,parmesan,"Fold in the mushrooms, thyme, parmesan and salt.",review
+cooking-for-one-garlic-butter-gnocchi-with-spinach,scripts/data/house-recipes/batch-04-A41.json,ai-draft,vegetarian,rennet-gelatine,parmesan,Season with pepper and finish with parmesan.,review
+five-ingredient-creamy-tomato-chicken-thighs,scripts/data/house-recipes/batch-04-A42.json,ai-draft,no-gluten,gluten,bread,Serve with rice or bread.,review
+slow-cooker-creamy-tuscan-white-bean-and-chicken-stew,scripts/data/house-recipes/batch-04-A43.json,ai-draft,no-gluten,gluten,bread,Ladle into bowls and serve with warm crusty bread to mop up the sauce.,review
+pumpkin-and-chickpea-stew-with-ras-el-hanout-and-preserved-lemon,scripts/data/house-recipes/batch-04-A49.json,ai-draft,no-gluten,gluten,flatbread|couscous,Serve with flatbread or couscous.,review
+brazilian-feijoada-style-black-bean-stew,scripts/data/house-recipes/batch-04-A49.json,ai-draft,vegetarian,pork,pork,Traditional feijoada includes pork; this version is plant-based.,review
+brazilian-feijoada-style-black-bean-stew,scripts/data/house-recipes/batch-04-A49.json,ai-draft,vegan,pork,pork,Traditional feijoada includes pork; this version is plant-based.,review
+christmas-glazed-ham-with-orange-and-mustard-glaze,scripts/data/house-recipes/batch-04-A51.json,ai-draft,no-gluten,gluten,bread,Christmas in summer: serve cold with salad and bread if it is hot.,review
+black-sesame-tang-yuan,scripts/data/house-recipes/batch-04-B01.json,ai-draft,no-gluten,gluten,flour,Knead the flour with 3/4 cup water into a soft dough.,review
+sweet-potato-mochi-pillows,scripts/data/house-recipes/batch-04-B01.json,ai-draft,no-gluten,gluten,flour,"Whisk the flour, water and sugar in a heatproof bowl until smooth.",review
+pandan-free-coconut-custard-pots,scripts/data/house-recipes/batch-04-B01.json,ai-draft,no-dairy,dairy,cream|milk,"Warm the cream, milk and sugar until the sugar dissolves, then whisk into the eggs with the vanilla and salt.",review
+pisang-free-cassava-cake,scripts/data/house-recipes/batch-04-B01.json,ai-draft,no-dairy,dairy,milk,"Whisk the eggs, milk, sugar and oil, then beat in the cassava flour and baking powder.",review
+besan-ladoo-sweet-balls,scripts/data/house-recipes/batch-04-B01.json,ai-draft,no-gluten,gluten,flour,"Roast the flour in the ghee over low heat for 15 minutes, stirring until fragrant and golden.",review
+sesame-seed-balls-with-sweet-potato-filling,scripts/data/house-recipes/batch-04-B02.json,ai-draft,no-gluten,gluten,flour,"Mix the flour with the hot water into a soft dough, divide into 8 and flatten each piece.",review
+green-curry-chicken-lunch-bowls,scripts/data/house-recipes/batch-04-B02.json,ai-draft,no-dairy,dairy,milk,"Add the milk, stock, beans, fish sauce and sugar and simmer for 12 minutes until the chicken is cooked through.",review
+thai-peanut-satay-tofu-skewers,scripts/data/house-recipes/batch-04-B02.json,ai-draft,vegan,dairy,milk,"Warm the peanut butter, satay sauce, lime juice and milk until smooth and bubbling.",review
+thai-peanut-satay-tofu-skewers,scripts/data/house-recipes/batch-04-B02.json,ai-draft,no-dairy,dairy,milk,"Warm the peanut butter, satay sauce, lime juice and milk until smooth and bubbling.",review
+pandan-free-coconut-rice-cake,scripts/data/house-recipes/batch-04-B02.json,ai-draft,vegan,dairy,milk,"Whisk the flours, milk, water and sugar until smooth.",review
+pandan-free-coconut-rice-cake,scripts/data/house-recipes/batch-04-B02.json,ai-draft,no-dairy,dairy,milk,"Whisk the flours, milk, water and sugar until smooth.",review
+serabi-coconut-pancakes,scripts/data/house-recipes/batch-04-B02.json,ai-draft,vegan,dairy,milk,"Whisk the flour, milk, water, sugar, baking powder and salt into a smooth batter and rest.",review
+serabi-coconut-pancakes,scripts/data/house-recipes/batch-04-B02.json,ai-draft,no-dairy,dairy,milk,"Whisk the flour, milk, water, sugar, baking powder and salt into a smooth batter and rest.",review
+tanzanian-coconut-rice-with-peas,scripts/data/house-recipes/batch-04-B02.json,ai-draft,vegan,dairy,milk,"Bring the milk, water, spices and salt to the boil, add the rice and cover until simmering gently.",review
+tanzanian-coconut-rice-with-peas,scripts/data/house-recipes/batch-04-B02.json,ai-draft,no-dairy,dairy,milk,"Bring the milk, water, spices and salt to the boil, add the rice and cover until simmering gently.",review
+walnut-date-free-sticky-rice-cake,scripts/data/house-recipes/batch-04-B03.json,ai-draft,no-gluten,gluten,flour,"Mix the flour, water and sugar until smooth and fold in the walnut.",review
+massaman-sweet-potato-curry,scripts/data/house-recipes/batch-04-B03.json,ai-draft,no-dairy,dairy,milk,"Fry the paste for 2 minutes until fragrant, then add the milk and stock.",review
+coconut-pancakes-with-palm-sugar,scripts/data/house-recipes/batch-04-B03.json,ai-draft,no-dairy,dairy,milk,"Whisk the flour, baking powder, milk, egg and half the sugar into a batter.",review
+yellow-curry-cauliflower-lunch-pots,scripts/data/house-recipes/batch-04-B03.json,ai-draft,no-dairy,dairy,milk,"Add the milk, stock, fish sauce, potato and cauliflower.",review
+gudeg-style-jackfruit-free-sweet-pumpkin-stew,scripts/data/house-recipes/batch-04-B03.json,ai-draft,no-dairy,dairy,milk,"Simmer the pumpkin, milk, water, sugar, garlic, onion and bay for 20 minutes until the pumpkin is tender.",review
+black-rice-pudding-jars,scripts/data/house-recipes/batch-04-B03.json,ai-draft,vegan,dairy,milk,Stir in the sugar and chill with the milk poured over; top with mango.,review
+black-rice-pudding-jars,scripts/data/house-recipes/batch-04-B03.json,ai-draft,no-dairy,dairy,milk,Stir in the sugar and chill with the milk poured over; top with mango.,review
+kuih-ketayap-pandan-free-coconut-crepes,scripts/data/house-recipes/batch-04-B03.json,ai-draft,no-dairy,dairy,milk,"Whisk the flour, milk, water, egg and a pinch of salt into a thin batter.",review
+coconut-rice-plates-with-chilli-eggs-and-peanuts,scripts/data/house-recipes/batch-04-B03.json,ai-draft,no-dairy,dairy,milk,"Cook the rice with the milk, water and salt, covered, for 15 minutes until absorbed.",review
+spiced-cauliflower-pakora-with-mint-dip,scripts/data/house-recipes/batch-04-B03.json,ai-draft,no-gluten,gluten,flour|batter,"Whisk the flour, water, spices and salt into a thick batter.",review
+chickpea-flour-omelette-wraps,scripts/data/house-recipes/batch-04-B03.json,ai-draft,no-gluten,gluten,flour|batter,"Whisk the flour, water, turmeric and salt into a smooth batter and stir in the onion, tomato, chilli and coriander.",review
+coconut-prawn-curry-with-curry-leaves,scripts/data/house-recipes/batch-04-B03.json,ai-draft,no-dairy,dairy,milk,Add the milk and tamarind and simmer for 8 minutes.,review
+zanzibar-style-tomato-coconut-fish-pot,scripts/data/house-recipes/batch-04-B03.json,ai-draft,no-dairy,dairy,milk,Add the tomato and milk and simmer for 8 minutes.,review
+spiced-samoan-coconut-rice-pudding,scripts/data/house-recipes/batch-04-B03.json,ai-draft,vegan,dairy,milk,"Combine the rice, milk, water and sugar in a pot and simmer for 30 minutes, stirring until thick.",review
+spiced-samoan-coconut-rice-pudding,scripts/data/house-recipes/batch-04-B03.json,ai-draft,no-dairy,dairy,milk,"Combine the rice, milk, water and sugar in a pot and simmer for 30 minutes, stirring until thick.",review
+palm-sugar-coconut-rice-balls,scripts/data/house-recipes/batch-04-B05.json,ai-draft,no-gluten,gluten,flour,"Mix the flour, water and turmeric into a soft dough.",review
+besan-chilla-vegan-pancakes,scripts/data/house-recipes/batch-04-B07.json,ai-draft,no-gluten,gluten,flour|batter,"Whisk the flour, water, turmeric, cumin, chilli powder and salt into a smooth batter, then fold through the onion, tomato and coriander.",review
+roti-jala-lace-pancakes-with-curry-dip,scripts/data/house-recipes/batch-04-B09.json,ai-draft,no-dairy,dairy,cream,"Whisk the flour, egg, coconut milk, water, turmeric and 1/2 tsp salt until completely smooth and the consistency of thin cream.",review
+potjie-style-chicken-and-butternut-stew,scripts/data/house-recipes/batch-04-B10.json,ai-draft,no-gluten,gluten,bread,Season with salt and serve with rice or bread.,review
+tahu-isi-stuffed-tofu-with-peanut-sauce,scripts/data/house-recipes/batch-04-B10.json,ai-draft,vegan,dairy,cream,"Whisk the peanut butter, soy sauce, lime juice and 1/4 cup warm water until smooth and pourable like cream.",review
+tahu-isi-stuffed-tofu-with-peanut-sauce,scripts/data/house-recipes/batch-04-B10.json,ai-draft,no-dairy,dairy,cream,"Whisk the peanut butter, soy sauce, lime juice and 1/4 cup warm water until smooth and pourable like cream.",review
+bicol-express-pork-in-chilli-coconut-cream,scripts/data/house-recipes/batch-04-B13.json,ai-draft,no-dairy,dairy,cream,Simmer gently for 30 minutes until the pork is tender and the cream reduces and turns oily.,review
+gaeng-keow-wan-gai-thai-green-chicken-curry,scripts/data/house-recipes/batch-04-B15.json,ai-draft,no-dairy,dairy,milk,"Add the chicken and cook for 5 minutes until sealed, then the remaining milk, eggplant, fish sauce and sugar.",review
+mushroom-arancini,scripts/data/house-recipes/batch-04-B30.json,ai-draft,vegetarian,rennet-gelatine,parmesan,Stir through the parmesan and spread on a tray to cool completely.,review
+masala-vada,scripts/data/house-recipes/batch-04-B30.json,ai-draft,vegan,dairy,yoghurt,"Serve warm, with chutney or yoghurt on the side, within 20 minutes of frying while the crust is crisp.",review
+masala-vada,scripts/data/house-recipes/batch-04-B30.json,ai-draft,no-dairy,dairy,yoghurt,"Serve warm, with chutney or yoghurt on the side, within 20 minutes of frying while the crust is crisp.",review
+potato-bhajia,scripts/data/house-recipes/batch-04-B31.json,ai-draft,vegan,dairy,cream,"Whisk the besan, water, turmeric, cumin, chilli and salt into a batter the thickness of pouring cream.",review
+potato-bhajia,scripts/data/house-recipes/batch-04-B31.json,ai-draft,no-dairy,dairy,cream,"Whisk the besan, water, turmeric, cumin, chilli and salt into a batter the thickness of pouring cream.",review
+vegan-mushroom-and-walnut-pate,scripts/data/house-recipes/batch-04-B43.json,ai-draft,vegetarian,meat,pate,"Toast the sourdough until golden, cut each slice in half and serve with the pate.",review
+vegan-mushroom-and-walnut-pate,scripts/data/house-recipes/batch-04-B43.json,ai-draft,vegetarian,meat,pate,Per serving: 1 half slice with pate.,review
+vegan-mushroom-and-walnut-pate,scripts/data/house-recipes/batch-04-B43.json,ai-draft,vegan,meat,pate,"Toast the sourdough until golden, cut each slice in half and serve with the pate.",review
+vegan-mushroom-and-walnut-pate,scripts/data/house-recipes/batch-04-B43.json,ai-draft,vegan,meat,pate,Per serving: 1 half slice with pate.,review
+pumpkin-and-ginger-soup-with-toasted-pepitas,scripts/data/house-recipes/batch-04-C01.json,ai-draft,vegan,dairy,cream,Serve with a swirl of cream and the seeds.,review
+pumpkin-and-ginger-soup-with-toasted-pepitas,scripts/data/house-recipes/batch-04-C01.json,ai-draft,no-dairy,dairy,cream,Serve with a swirl of cream and the seeds.,review
+raisin-and-almond-breakfast-pudding,scripts/data/house-recipes/batch-04-C02.json,ai-draft,no-dairy,dairy,milk,"Simmer the oats, milk and raisins for 10 minutes, until the oats are soft.",review
+tom-kha-style-mushroom-and-coconut-soup,scripts/data/house-recipes/batch-04-C02.json,ai-draft,vegetarian,fish,fish,Fish out the aromatics before eating.,review
+tom-kha-style-mushroom-and-coconut-soup,scripts/data/house-recipes/batch-04-C02.json,ai-draft,vegan,fish,fish,Fish out the aromatics before eating.,review
+fresh-tomato-lime-salsa-with-jalapeno,scripts/data/house-recipes/batch-04-C03.json,ai-draft,vegetarian,fish,fish,"Serve with corn chips, grilled fish or tacos.",review
+fresh-tomato-lime-salsa-with-jalapeno,scripts/data/house-recipes/batch-04-C03.json,ai-draft,vegan,fish,fish,"Serve with corn chips, grilled fish or tacos.",review
+chipotle-tomato-salsa,scripts/data/house-recipes/batch-04-C03.json,ai-draft,vegan,egg,eggs,Season with salt and chill; serve with chips or eggs.,review
+fermented-flatbread-injera-style,scripts/data/house-recipes/batch-04-C04.json,ai-draft,vegan,dairy,cream,"Stir the batter, add the salt and enough of the remaining water to make a thin pouring consistency like cream.",review
+fermented-flatbread-injera-style,scripts/data/house-recipes/batch-04-C04.json,ai-draft,no-dairy,dairy,cream,"Stir the batter, add the salt and enough of the remaining water to make a thin pouring consistency like cream.",review
+maharagwe-ya-nazi-coconut-beans,scripts/data/house-recipes/batch-04-C04.json,ai-draft,no-gluten,gluten,chapati,"Serve with rice, chapati or ugali.",review
+pili-pili-hot-sauce,scripts/data/house-recipes/batch-04-C04.json,ai-draft,vegan,egg,eggs,"Serve with grilled meats, eggs or beans.",review
+jerk-marinade,scripts/data/house-recipes/batch-04-C04.json,ai-draft,vegetarian,pork,pork,"Food safety: cook marinated chicken to 75°C and pork to at least 70°C, and never reuse marinade that touched raw meat.",review
+jerk-marinade,scripts/data/house-recipes/batch-04-C04.json,ai-draft,vegan,pork,pork,"Food safety: cook marinated chicken to 75°C and pork to at least 70°C, and never reuse marinade that touched raw meat.",review
+cornmeal-porridge-with-coconut-and-nutmeg,scripts/data/house-recipes/batch-04-C04.json,ai-draft,vegan,dairy,milk,Loosen with a splash of milk if it thickens as it cools.,review
+cornmeal-porridge-with-coconut-and-nutmeg,scripts/data/house-recipes/batch-04-C04.json,ai-draft,no-dairy,dairy,milk,Loosen with a splash of milk if it thickens as it cools.,review
+ensaladang-mangga-green-mango-salad,scripts/data/house-recipes/batch-04-C04.json,ai-draft,pescatarian,pork,pork,Serve with grilled fish or pork.,review
+chakalaka-south-african-vegetable-relish,scripts/data/house-recipes/batch-04-C04.json,ai-draft,no-gluten,gluten,bread,"Serve warm or cold with pap, grilled meat or bread.",review
+palusami-spinach-in-coconut-cream,scripts/data/house-recipes/batch-04-C04.json,ai-draft,vegetarian,pork,pork,"Serve with roast pork, fish or sweet potato.",review
+palusami-spinach-in-coconut-cream,scripts/data/house-recipes/batch-04-C04.json,ai-draft,vegetarian,fish,fish,Stir well until creamy and serve hot alongside roast meat or fish.,review
+palusami-spinach-in-coconut-cream,scripts/data/house-recipes/batch-04-C04.json,ai-draft,vegetarian,fish,fish,"Serve with roast pork, fish or sweet potato.",review
+palusami-spinach-in-coconut-cream,scripts/data/house-recipes/batch-04-C04.json,ai-draft,vegan,pork,pork,"Serve with roast pork, fish or sweet potato.",review
+palusami-spinach-in-coconut-cream,scripts/data/house-recipes/batch-04-C04.json,ai-draft,vegan,fish,fish,Stir well until creamy and serve hot alongside roast meat or fish.,review
+palusami-spinach-in-coconut-cream,scripts/data/house-recipes/batch-04-C04.json,ai-draft,vegan,fish,fish,"Serve with roast pork, fish or sweet potato.",review
+palusami-spinach-in-coconut-cream,scripts/data/house-recipes/batch-04-C04.json,ai-draft,vegan,dairy,cream,Cover with foil and bake for 25 minutes until the greens are soft and the cream has thickened.,review
+palusami-spinach-in-coconut-cream,scripts/data/house-recipes/batch-04-C04.json,ai-draft,no-dairy,dairy,cream,Cover with foil and bake for 25 minutes until the greens are soft and the cream has thickened.,review
+hawaiian-style-macaroni-salad,scripts/data/house-recipes/batch-04-C04.json,ai-draft,no-dairy,dairy,milk,"The pasta absorbs the dressing, so loosen with milk if needed.",review
+beurre-blanc,scripts/data/house-recipes/batch-04-C05.json,ai-draft,vegetarian,fish,salmon,Serve with poached salmon or asparagus.,review
+suya-spice-rub-and-yaji-mix,scripts/data/house-recipes/batch-04-C05.json,ai-draft,vegetarian,beef,beef,"Food safety: when using the rub on chicken, cook to 75°C; on beef, cook to at least 70°C.",review
+suya-spice-rub-and-yaji-mix,scripts/data/house-recipes/batch-04-C05.json,ai-draft,vegan,beef,beef,"Food safety: when using the rub on chicken, cook to 75°C; on beef, cook to at least 70°C.",review
+chickpea-flour-omelette-with-herbs,scripts/data/house-recipes/batch-04-C05.json,ai-draft,vegan,dairy,yoghurt,Serve with tomato chutney or yoghurt.,review
+chickpea-flour-omelette-with-herbs,scripts/data/house-recipes/batch-04-C05.json,ai-draft,no-dairy,dairy,yoghurt,Serve with tomato chutney or yoghurt.,review
+supu-ya-samaki-swahili-coconut-fish-soup,scripts/data/house-recipes/batch-04-C05.json,ai-draft,no-gluten,gluten,chapati,Serve with chapati or rice.,review
+timatim-ethiopian-tomato-salad,scripts/data/house-recipes/batch-04-C05.json,ai-draft,no-gluten,gluten,flatbread,Serve with injera or flatbread.,review
+zanzibar-spiced-pilau-rice,scripts/data/house-recipes/batch-04-C05.json,ai-draft,vegetarian,beef,beef,Add cooked beef for a meat pilau.,review
+zanzibar-spiced-pilau-rice,scripts/data/house-recipes/batch-04-C05.json,ai-draft,vegan,beef,beef,Add cooked beef for a meat pilau.,review
+champorado-chocolate-rice-porridge,scripts/data/house-recipes/batch-04-C05.json,ai-draft,vegetarian,fish,fish,Traditionally served with salty dried fish.,review
+coq-au-vin-blanc-style-chicken-soup,scripts/data/house-recipes/batch-04-C06.json,ai-draft,no-gluten,gluten,bread,Serve with crusty bread.,review
+cioppino-san-francisco-seafood-stew,scripts/data/house-recipes/batch-04-C06.json,ai-draft,no-gluten,gluten,sourdough,Serve with sourdough.,review
+smoky-kumara-and-black-bean-pan-hash,scripts/data/house-recipes/batch-04-C06.json,ai-draft,vegan,egg,eggs,Add fried eggs for extra protein.,review
+moroccan-spiced-chickpea-breakfast-bowl,scripts/data/house-recipes/batch-04-C06.json,ai-draft,no-gluten,gluten,flatbread,Serve with flatbread.,review
+pineapple-mango-slaw-with-lime-and-chilli,scripts/data/house-recipes/batch-04-C06.json,ai-draft,vegetarian,fish,fish,Serve with jerk chicken or fish.,review
+fiji-style-rourou-greens-with-coconut-milk,scripts/data/house-recipes/batch-04-C06.json,ai-draft,vegetarian,fish,fish,"Season with the salt and simmer until glossy, then serve hot with roast fish or meat.",review
+fiji-style-rourou-greens-with-coconut-milk,scripts/data/house-recipes/batch-04-C06.json,ai-draft,vegan,fish,fish,"Season with the salt and simmer until glossy, then serve hot with roast fish or meat.",review
+mango-avocado-salsa-with-lime,scripts/data/house-recipes/batch-04-C06.json,ai-draft,vegetarian,fish,fish,Serve with grilled fish or corn chips.,review
+mango-avocado-salsa-with-lime,scripts/data/house-recipes/batch-04-C06.json,ai-draft,vegan,fish,fish,Serve with grilled fish or corn chips.,review
+kuih-dadar-coconut-pancakes,scripts/data/house-recipes/batch-04-C07.json,ai-draft,no-dairy,dairy,cream,The batter should be thin like cream.,review
+kimchi-napa-cabbage,scripts/data/house-recipes/batch-04-C07.json,ai-draft,no-gluten,gluten,flour,"Blend the garlic, ginger, fish sauce and sugar with the gochugaru and flour paste.",review
+pommes-anna,scripts/data/house-recipes/batch-04-C07.json,ai-draft,vegetarian,fish,fish,Brush a frying pan with butter and arrange a circle of slices overlapping like fish scales.,review
+high-protein-peanut-butter-oats,scripts/data/house-recipes/batch-04-C07.json,ai-draft,vegan,dairy,milk,Simmer the oats and milk for 4 minutes.,review
+high-protein-peanut-butter-oats,scripts/data/house-recipes/batch-04-C07.json,ai-draft,vegan,dairy,milk,Add more milk if too thick.,review
+high-protein-peanut-butter-oats,scripts/data/house-recipes/batch-04-C07.json,ai-draft,no-dairy,dairy,milk,Simmer the oats and milk for 4 minutes.,review
+high-protein-peanut-butter-oats,scripts/data/house-recipes/batch-04-C07.json,ai-draft,no-dairy,dairy,milk,Add more milk if too thick.,review
+shakshuka-with-chickpeas,scripts/data/house-recipes/batch-04-C08.json,ai-draft,no-gluten,gluten,bread,Serve with bread.,review
+sri-lankan-egg-hopper-pancakes,scripts/data/house-recipes/batch-04-C09.json,ai-draft,no-gluten,gluten,flour,"Mix the flour, coconut milk, water, sugar, yeast and salt until smooth.",review
+kenyan-coconut-tomato-fish-sauce,scripts/data/house-recipes/batch-04-C11.json,ai-draft,vegetarian,fish,fish,Serve over grilled white fish or with chapati.,review
+kenyan-coconut-tomato-fish-sauce,scripts/data/house-recipes/batch-04-C11.json,ai-draft,vegan,fish,fish,Serve over grilled white fish or with chapati.,review
+kenyan-coconut-tomato-fish-sauce,scripts/data/house-recipes/batch-04-C11.json,ai-draft,no-gluten,gluten,chapati,Serve over grilled white fish or with chapati.,review
+tahitian-coconut-lime-sauce-for-raw-fish,scripts/data/house-recipes/batch-04-C11.json,ai-draft,vegetarian,fish,fish,Serve over very fresh sashimi-grade fish only.,review
+tahitian-coconut-lime-sauce-for-raw-fish,scripts/data/house-recipes/batch-04-C11.json,ai-draft,vegetarian,fish,fish,Fish served raw is not suitable for anyone pregnant or vulnerable.,review
+tahitian-coconut-lime-sauce-for-raw-fish,scripts/data/house-recipes/batch-04-C11.json,ai-draft,vegan,fish,fish,Serve over very fresh sashimi-grade fish only.,review
+tahitian-coconut-lime-sauce-for-raw-fish,scripts/data/house-recipes/batch-04-C11.json,ai-draft,vegan,fish,fish,Fish served raw is not suitable for anyone pregnant or vulnerable.,review
+fijian-lolo-coconut-cream-sauce,scripts/data/house-recipes/batch-04-C11.json,ai-draft,vegan,dairy,cream,Do not boil hard or the cream may split.,review
+fijian-lolo-coconut-cream-sauce,scripts/data/house-recipes/batch-04-C11.json,ai-draft,no-dairy,dairy,cream,Do not boil hard or the cream may split.,review
+chwee-kueh-with-chye-poh-topping,scripts/data/house-recipes/batch-04-C12.json,ai-draft,vegan,egg,egg,Contains no egg or dairy.,review
+jamaican-escovitch-pickled-vegetable-sauce,scripts/data/house-recipes/batch-04-C16.json,ai-draft,vegetarian,fish,fish,"Cool to room temperature, then spoon over hot fried fish or chicken.",review
+jamaican-escovitch-pickled-vegetable-sauce,scripts/data/house-recipes/batch-04-C16.json,ai-draft,vegan,fish,fish,"Cool to room temperature, then spoon over hot fried fish or chicken.",review
+nigerian-moi-moi-steamed-bean-pudding,scripts/data/house-recipes/batch-04-C16.json,ai-draft,vegetarian,meat,stock cube,"Stir in the oil, salt and crumbled stock cube, then fold the sliced eggs through gently.",review
+brazilian-farofa-toasted-cassava-flour,scripts/data/house-recipes/batch-04-C16.json,ai-draft,no-gluten,gluten,flour,"Add the flour and stir for 3 minutes, until golden and toasty, then fold through the parsley.",review
+danish-h-nsesalat-chicken-and-asparagus-salad,scripts/data/house-recipes/batch-04-C17.json,ai-draft,no-gluten,gluten,rye|bread,Chill for 20 minutes and serve on rye bread or with lettuce.,review
+nigerian-ofada-ata-rodo-pepper-sauce,scripts/data/house-recipes/batch-04-C17.json,ai-draft,vegetarian,meat,stock cube,"Season with the cumin, stock cube and salt and serve with rice.",review
+nigerian-ofada-ata-rodo-pepper-sauce,scripts/data/house-recipes/batch-04-C17.json,ai-draft,vegan,meat,stock cube,"Season with the cumin, stock cube and salt and serve with rice.",review
+ghanaian-kontomire-spinach-stew,scripts/data/house-recipes/batch-04-C17.json,ai-draft,vegetarian,meat,stock cube,"Add the spinach and stock cube and simmer for 8 minutes, until the leaves are soft but still green.",review
+middle-eastern-hummus-masabacha-warm-chickpeas,scripts/data/house-recipes/batch-04-C19.json,ai-draft,no-gluten,gluten,pita,Serve with warm pita.,review
+greek-revithia-chickpea-soup,scripts/data/house-recipes/batch-04-C19.json,ai-draft,no-gluten,gluten,bread,Serve hot with crusty bread.,review
+colombian-hogao-tomato-and-onion-sofrito,scripts/data/house-recipes/batch-04-C19.json,ai-draft,vegan,egg,eggs,"Stir in the coriander and salt and serve warm over rice, eggs or arepas.",review
+tomato-kuthu-chutney-spicy-roast-tomato-chutney,scripts/data/house-recipes/batch-04-C20.json,ai-draft,no-gluten,gluten,flatbread,Serve warm or at room temperature with flatbread.,review
+japanese-goma-dare-sesame-dressing,scripts/data/house-recipes/batch-04-C20.json,ai-draft,vegan,dairy,cream,"Stir in the water a spoonful at a time, until it pours like thin cream.",review
+japanese-goma-dare-sesame-dressing,scripts/data/house-recipes/batch-04-C20.json,ai-draft,no-dairy,dairy,cream,"Stir in the water a spoonful at a time, until it pours like thin cream.",review
+swedish-pressgurka-pressed-pickled-cucumber,scripts/data/house-recipes/batch-04-C20.json,ai-draft,vegetarian,meat,meatballs,Serve cold with meatballs or fish.,review
+swedish-pressgurka-pressed-pickled-cucumber,scripts/data/house-recipes/batch-04-C20.json,ai-draft,vegetarian,fish,fish,Serve cold with meatballs or fish.,review
+swedish-pressgurka-pressed-pickled-cucumber,scripts/data/house-recipes/batch-04-C20.json,ai-draft,vegan,meat,meatballs,Serve cold with meatballs or fish.,review
+swedish-pressgurka-pressed-pickled-cucumber,scripts/data/house-recipes/batch-04-C20.json,ai-draft,vegan,fish,fish,Serve cold with meatballs or fish.,review
+warm-cannellini-and-kale-salad,scripts/data/house-recipes/batch-04-C21.json,ai-draft,no-gluten,gluten,bread,Serve warm with crusty bread.,review
+moroccan-chermoula-herb-marinade,scripts/data/house-recipes/batch-04-C22.json,ai-draft,vegetarian,fish,fish,Use for marinating only before cooking; do not reuse marinade that touched raw meat or fish.,review
+moroccan-chermoula-herb-marinade,scripts/data/house-recipes/batch-04-C22.json,ai-draft,vegan,fish,fish,Use for marinating only before cooking; do not reuse marinade that touched raw meat or fish.,review
+sambal-matah-balinese-raw-shallot-sambal,scripts/data/house-recipes/batch-04-C22.json,ai-draft,vegetarian,fish,fish,Serve within an hour with grilled fish or rice.,review
+sambal-matah-balinese-raw-shallot-sambal,scripts/data/house-recipes/batch-04-C22.json,ai-draft,vegan,fish,fish,Serve within an hour with grilled fish or rice.,review
+peruvian-tacu-tacu-rice-and-bean-cakes,scripts/data/house-recipes/batch-04-C23.json,ai-draft,vegan,egg,egg,Top with a fried egg or avocado.,review
+egyptian-ful-medames-breakfast-beans,scripts/data/house-recipes/batch-04-C23.json,ai-draft,vegan,egg,egg,Add a boiled egg on top for extra protein.,review
+cuban-mojo-criollo-garlic-and-citrus-marinade,scripts/data/house-recipes/batch-04-C24.json,ai-draft,vegetarian,pork,pork,"Use as a marinade for pork or chicken, or as a sauce over yuca and rice.",review
+cuban-mojo-criollo-garlic-and-citrus-marinade,scripts/data/house-recipes/batch-04-C24.json,ai-draft,vegan,pork,pork,"Use as a marinade for pork or chicken, or as a sauce over yuca and rice.",review
+spanish-pipirrana-andalusian-summer-salad,scripts/data/house-recipes/batch-04-C25.json,ai-draft,no-gluten,gluten,bread,Serve cold with bread to mop up the juices.,review
+japanese-tonkatsu-sauce-sweet-fruity-cutlet-sauce,scripts/data/house-recipes/batch-04-C25.json,ai-draft,pescatarian,pork,pork,Serve with fried pork cutlets or shredded cabbage.,review
+indonesian-sambal-kecap-sweet-soy-chilli-sauce,scripts/data/house-recipes/batch-04-C25.json,ai-draft,vegan,egg,eggs,"Serve in a bowl with satay, grilled meat or eggs.",review
+sri-lankan-pol-sambol-coconut-relish,scripts/data/house-recipes/batch-04-C25.json,ai-draft,no-gluten,gluten,breads,Serve with breads or rice.,review
+irish-boxty-potato-pancakes,scripts/data/house-recipes/batch-04-C26.json,ai-draft,vegetarian,pork,bacon,Serve hot with more butter or alongside bacon and eggs.,review
+greek-fakes-lentil-soup-with-vinegar-and-oregano,scripts/data/house-recipes/batch-04-C28.json,ai-draft,vegan,dairy,feta,Serve with feta and olives for a fuller meal.,review
+greek-fakes-lentil-soup-with-vinegar-and-oregano,scripts/data/house-recipes/batch-04-C28.json,ai-draft,no-dairy,dairy,feta,Serve with feta and olives for a fuller meal.,review
+spiced-chickpea-flour-stew-with-paprika-and-ginger,scripts/data/house-recipes/batch-04-C28.json,ai-draft,no-gluten,gluten,flour,Whisk constantly as you add the flour to prevent lumps.,review
+spiced-chickpea-flour-stew-with-paprika-and-ginger,scripts/data/house-recipes/batch-04-C28.json,ai-draft,no-gluten,gluten,bread,Serve with bread or rice.,review
+indian-masala-omelette-roll-with-green-chilli,scripts/data/house-recipes/batch-04-C29.json,ai-draft,no-gluten,gluten,paratha,Serve with buttered toast or paratha.,review
+vietnamese-banh-mi-omelette-baguette,scripts/data/house-recipes/batch-04-C29.json,ai-draft,pescatarian,meat,pate,Add pate for a classic version.,review
+thai-gaeng-jued-woonsen-glass-noodle-soup,scripts/data/house-recipes/batch-04-C30.json,ai-draft,no-gluten,gluten,soy sauce,Add a splash of soy sauce for more depth.,review
+indian-spinach-and-chickpea-flour-pancakes,scripts/data/house-recipes/batch-04-C31.json,ai-draft,vegan,dairy,yoghurt,Serve with mint chutney or yoghurt.,review
+indian-spinach-and-chickpea-flour-pancakes,scripts/data/house-recipes/batch-04-C31.json,ai-draft,no-dairy,dairy,yoghurt,Serve with mint chutney or yoghurt.,review
+indian-egg-bhurji-with-green-chilli,scripts/data/house-recipes/batch-04-C31.json,ai-draft,no-gluten,gluten,paratha,Serve with buttered toast or paratha.,review
+indian-lemon-rice-with-peanuts,scripts/data/house-recipes/batch-04-C31.json,ai-draft,vegan,dairy,yoghurt,Serve with yoghurt and papad.,review
+indian-lemon-rice-with-peanuts,scripts/data/house-recipes/batch-04-C31.json,ai-draft,no-dairy,dairy,yoghurt,Serve with yoghurt and papad.,review
+sri-lankan-string-hoppers,scripts/data/house-recipes/batch-04-C31.json,ai-draft,vegetarian,fish,fish,"Serve with dhal, coconut sambol and fish curry.",review
+sri-lankan-string-hoppers,scripts/data/house-recipes/batch-04-C31.json,ai-draft,vegan,fish,fish,"Serve with dhal, coconut sambol and fish curry.",review
+sri-lankan-lunu-miris-chilli-and-onion-sambol,scripts/data/house-recipes/batch-04-C31.json,ai-draft,no-gluten,gluten,roti,Serve with hoppers or roti.,review
+greek-patatosalata-lemon-and-oregano-potato-salad,scripts/data/house-recipes/batch-04-C32.json,ai-draft,vegetarian,fish,fish,Serve with grilled fish or as part of a meze table.,review
+greek-patatosalata-lemon-and-oregano-potato-salad,scripts/data/house-recipes/batch-04-C32.json,ai-draft,vegan,fish,fish,Serve with grilled fish or as part of a meze table.,review
+french-salade-de-pommes-de-terre-dijon-potato-salad,scripts/data/house-recipes/batch-04-C32.json,ai-draft,vegan,egg,egg,Serve with roast chicken or a poached egg for lunch.,review
+argentinian-salsa-criolla-onion-tomato-and-pepper-relish,scripts/data/house-recipes/batch-04-C32.json,ai-draft,no-gluten,gluten,bread,Spoon over grilled meat or bread.,review
+italian-pearl-barley-salad-with-roast-tomatoes-and-rocket,scripts/data/house-recipes/batch-04-C32.json,ai-draft,vegan,dairy,feta,Add crumbled feta for a salty finish.,review
+italian-pearl-barley-salad-with-roast-tomatoes-and-rocket,scripts/data/house-recipes/batch-04-C32.json,ai-draft,no-dairy,dairy,feta,Add crumbled feta for a salty finish.,review
+italian-insalata-di-orzo-with-lemon-peas-and-mint,scripts/data/house-recipes/batch-04-C32.json,ai-draft,vegetarian,fish,tuna,Add flaked tuna or cooked chicken for a main meal.,review
+italian-insalata-di-orzo-with-lemon-peas-and-mint,scripts/data/house-recipes/batch-04-C32.json,ai-draft,vegan,fish,tuna,Add flaked tuna or cooked chicken for a main meal.,review
+lebanese-sumac-bulgur-salad-with-walnuts,scripts/data/house-recipes/batch-04-C32.json,ai-draft,vegetarian,lamb,lamb,"Serve with grilled lamb or chicken, or as part of a mezze spread.",review
+lebanese-sumac-bulgur-salad-with-walnuts,scripts/data/house-recipes/batch-04-C32.json,ai-draft,vegan,lamb,lamb,"Serve with grilled lamb or chicken, or as part of a mezze spread.",review
+quick-pickled-celery-and-orange,scripts/data/house-recipes/batch-04-C33.json,ai-draft,vegetarian,pork,ham,Spoon onto grilled fish or ham sandwiches.,review
+quick-pickled-celery-and-orange,scripts/data/house-recipes/batch-04-C33.json,ai-draft,vegetarian,fish,fish,Spoon onto grilled fish or ham sandwiches.,review
+quick-pickled-celery-and-orange,scripts/data/house-recipes/batch-04-C33.json,ai-draft,vegan,pork,ham,Spoon onto grilled fish or ham sandwiches.,review
+quick-pickled-celery-and-orange,scripts/data/house-recipes/batch-04-C33.json,ai-draft,vegan,fish,fish,Spoon onto grilled fish or ham sandwiches.,review
+tartare-sauce,scripts/data/house-recipes/batch-04-C34.json,ai-draft,vegetarian,fish,fish,"Chill for 20 minutes, until the flavours have melded, before serving with crumbed fish.",review
+louisiana-style-remoulade,scripts/data/house-recipes/batch-04-C34.json,ai-draft,vegetarian,shellfish,crab|prawns,"Serve with crab cakes, boiled prawns or fried green tomatoes.",review
+prawn-bisque,scripts/data/house-recipes/batch-04-C35.json,ai-draft,no-gluten,gluten,flour,The rice thickens the soup so no flour is needed.,review
+orange-and-berry-sauce-for-the-christmas-table,scripts/data/house-recipes/batch-04-C36.json,ai-draft,vegetarian,pork,ham,Stir through a spoon of horseradish for ham.,review
+orange-and-berry-sauce-for-the-christmas-table,scripts/data/house-recipes/batch-04-C36.json,ai-draft,vegan,pork,ham,Stir through a spoon of horseradish for ham.,review
+jeera-aloo-cumin-potatoes-for-diwali,scripts/data/house-recipes/batch-04-C36.json,ai-draft,no-gluten,gluten,flatbread,Serve warm with puri or flatbread.,review
+grilled-pineapple-with-lime-and-chilli,scripts/data/house-recipes/batch-04-C37.json,ai-draft,vegetarian,pork,pork,"Excellent beside grilled chicken, pork or fish.",review
+grilled-pineapple-with-lime-and-chilli,scripts/data/house-recipes/batch-04-C37.json,ai-draft,vegetarian,fish,fish,"Excellent beside grilled chicken, pork or fish.",review
+grilled-pineapple-with-lime-and-chilli,scripts/data/house-recipes/batch-04-C37.json,ai-draft,no-dairy,dairy,yoghurt,Serve with vanilla yoghurt for dessert.,review
+sweet-potato-and-black-bean-chilli-soup,scripts/data/house-recipes/batch-04-C37.json,ai-draft,vegan,dairy,sour cream,Top with avocado and sour cream.,review
+sweet-potato-and-black-bean-chilli-soup,scripts/data/house-recipes/batch-04-C37.json,ai-draft,no-dairy,dairy,sour cream,Top with avocado and sour cream.,review
+smoky-eggplant-dip-from-the-barbecue,scripts/data/house-recipes/batch-04-C37.json,ai-draft,no-gluten,gluten,flatbread,Serve with warm flatbread.,review
+barbecue-broccolini-with-garlic-lemon-and-almonds,scripts/data/house-recipes/batch-04-C37.json,ai-draft,vegetarian,fish,fish,Good with grilled fish or steak.,review
+barbecue-broccolini-with-garlic-lemon-and-almonds,scripts/data/house-recipes/batch-04-C37.json,ai-draft,vegan,fish,fish,Good with grilled fish or steak.,review
+grilled-capsicum-and-white-bean-salad,scripts/data/house-recipes/batch-04-C37.json,ai-draft,vegetarian,lamb,lamb,Serve with grilled sausages or lamb.,review
+grilled-capsicum-and-white-bean-salad,scripts/data/house-recipes/batch-04-C37.json,ai-draft,vegan,lamb,lamb,Serve with grilled sausages or lamb.,review
+sticky-barbecue-sweet-potato-wedges,scripts/data/house-recipes/batch-04-C38.json,ai-draft,no-dairy,dairy,sour cream,Serve with sour cream and chives.,review
+minted-yoghurt-sauce,scripts/data/house-recipes/batch-04-C38.json,ai-draft,no-gluten,gluten,flatbread,Use as a dip with warm flatbread.,review
+lentil-and-roasted-carrot-salad-with-parsley-and-pumpkin-seeds,scripts/data/house-recipes/batch-04-C39.json,ai-draft,vegan,dairy,yoghurt,Good with a spoonful of yoghurt on top.,review
+lentil-and-roasted-carrot-salad-with-parsley-and-pumpkin-seeds,scripts/data/house-recipes/batch-04-C39.json,ai-draft,no-dairy,dairy,yoghurt,Good with a spoonful of yoghurt on top.,review
+charred-broccolini-with-chilli-garlic-oil,scripts/data/house-recipes/batch-04-C39.json,ai-draft,vegetarian,fish,fish,Good with grilled fish.,review
+charred-broccolini-with-chilli-garlic-oil,scripts/data/house-recipes/batch-04-C39.json,ai-draft,vegan,fish,fish,Good with grilled fish.,review
+vegan-cashew-basil-pesto,scripts/data/house-recipes/batch-04-C39.json,ai-draft,no-gluten,gluten,pasta,Toss through 400 g of cooked pasta.,review
+turkish-menemen-breakfast-bowl-with-yoghurt,scripts/data/house-recipes/batch-04-C40.json,ai-draft,no-gluten,gluten,bread,Serve with crusty bread.,review
+korean-spring-onion-and-sesame-pesto,scripts/data/house-recipes/batch-04-C42.json,ai-draft,vegan,egg,eggs,"Spoon into a jar and serve over rice, noodles or fried eggs.",review
+georgian-ajika-chilli-paste,scripts/data/house-recipes/batch-04-C42.json,ai-draft,no-gluten,gluten,bread,"Pack into a jar and rest in the fridge before serving with grilled meat, bread or beans.",review
+bulgarian-kyopolou-eggplant-spread,scripts/data/house-recipes/batch-04-C42.json,ai-draft,no-gluten,gluten,bread,Serve with bread or grilled meat.,review
+bajan-cou-cou-cornmeal-and-okra,scripts/data/house-recipes/batch-04-C43.json,ai-draft,vegetarian,fish,fish,Traditionally served with flying fish or a spicy stew.,review
+polish-barszcz-clear-beetroot-soup,scripts/data/house-recipes/batch-04-C44.json,ai-draft,no-gluten,gluten,bread,Serve with small mushroom dumplings or bread.,review
+roasted-garlic-and-herb-vegetable-broth,scripts/data/house-recipes/batch-04-C45.json,ai-draft,no-gluten,gluten,bread,Squeeze the leftover roasted garlic into mash or bread.,review
+honey-mustard-roasted-onions,scripts/data/house-recipes/batch-04-C45.json,ai-draft,no-dairy,dairy,cheese,Good with roast meat or a cheese board.,review
+hawaiian-lomi-lomi-tomato-salad,scripts/data/house-recipes/batch-04-C46.json,ai-draft,vegetarian,pork,pork,Traditionally served with salmon or pork.,review
+hawaiian-lomi-lomi-tomato-salad,scripts/data/house-recipes/batch-04-C46.json,ai-draft,vegetarian,fish,salmon,Traditionally served with salmon or pork.,review
+hawaiian-lomi-lomi-tomato-salad,scripts/data/house-recipes/batch-04-C46.json,ai-draft,vegan,pork,pork,Traditionally served with salmon or pork.,review
+hawaiian-lomi-lomi-tomato-salad,scripts/data/house-recipes/batch-04-C46.json,ai-draft,vegan,fish,salmon,Traditionally served with salmon or pork.,review
+finnish-creamy-mushroom-salad,scripts/data/house-recipes/batch-04-C46.json,ai-draft,no-gluten,gluten,rye|bread,Serve on rye bread or beside roast meats.,review
+lemon-caper-butter-sauce-for-fish,scripts/data/house-recipes/batch-04-C47.json,ai-draft,vegetarian,fish,fish,"Take off the heat, stir in the lemon juice and parsley and spoon over the fish.",review
+mango-salsa-for-grilled-fish,scripts/data/house-recipes/batch-04-C47.json,ai-draft,vegetarian,fish,fish,Spoon over grilled fish or chicken.,review
+mango-salsa-for-grilled-fish,scripts/data/house-recipes/batch-04-C47.json,ai-draft,vegan,fish,fish,Spoon over grilled fish or chicken.,review
+miso-glaze-for-grilled-fish,scripts/data/house-recipes/batch-04-C47.json,ai-draft,vegetarian,fish,fish,Stir in the sesame oil and brush onto fish or vegetables before grilling.,review
+lemon-and-garlic-gremolata,scripts/data/house-recipes/batch-04-C47.json,ai-draft,vegetarian,fish,fish,Stir in the oil and spoon over grilled meat or fish.,review
+lemon-and-garlic-gremolata,scripts/data/house-recipes/batch-04-C47.json,ai-draft,vegan,fish,fish,Stir in the oil and spoon over grilled meat or fish.,review
+pacific-pineapple-and-cucumber-salad,scripts/data/house-recipes/batch-04-C48.json,ai-draft,vegetarian,fish,fish,Serve with grilled fish or chicken.,review
+pacific-pineapple-and-cucumber-salad,scripts/data/house-recipes/batch-04-C48.json,ai-draft,vegan,fish,fish,Serve with grilled fish or chicken.,review
+dill-yoghurt-sauce-for-grilled-salmon,scripts/data/house-recipes/batch-04-C48.json,ai-draft,vegetarian,fish,salmon,Spoon beside grilled salmon and finish with a little extra dill.,review
+charred-spring-onion-salsa-for-grilled-meat,scripts/data/house-recipes/batch-04-C48.json,ai-draft,vegetarian,lamb,lamb,"Spoon over grilled steak, lamb or chicken.",review
+charred-spring-onion-salsa-for-grilled-meat,scripts/data/house-recipes/batch-04-C48.json,ai-draft,vegan,lamb,lamb,"Spoon over grilled steak, lamb or chicken.",review
+estonian-cucumber-and-sour-cream-salad,scripts/data/house-recipes/batch-04-C49.json,ai-draft,vegetarian,fish,fish,Serve straight away with potatoes or grilled fish.,review
+spanish-garlic-mushrooms-champinones-al-ajillo,scripts/data/house-recipes/batch-04-C49.json,ai-draft,no-gluten,gluten,bread,Serve with crusty bread to mop up the oil.,review
+peruvian-corn-tomato-and-feta-salad,scripts/data/house-recipes/batch-04-C49.json,ai-draft,vegetarian,fish,fish,Serve with grilled meat or fish.,review
+smoky-paprika-aioli-for-grilled-fish,scripts/data/house-recipes/batch-04-C49.json,ai-draft,vegetarian,fish,fish,Spoon beside grilled fish or prawns.,review
+smoky-paprika-aioli-for-grilled-fish,scripts/data/house-recipes/batch-04-C49.json,ai-draft,vegetarian,shellfish,prawns,Spoon beside grilled fish or prawns.,review
+coriander-and-lime-dressing-for-fish-tacos,scripts/data/house-recipes/batch-04-C49.json,ai-draft,vegetarian,fish,fish,"Drizzle over fish, slaw or tacos.",review
+savoury-mushroom-and-barley-breakfast-porridge,scripts/data/house-recipes/batch-04-C49.json,ai-draft,vegan,egg,egg,Add a poached egg for extra protein.,review
+danish-brown-butter-carrots-with-parsley,scripts/data/house-recipes/batch-04-C50.json,ai-draft,vegetarian,pork,pork,"Pairs well with roast chicken, fish or pork.",review
+danish-brown-butter-carrots-with-parsley,scripts/data/house-recipes/batch-04-C50.json,ai-draft,vegetarian,fish,fish,"Pairs well with roast chicken, fish or pork.",review
+turmeric-silverbeet-with-ginger-ethiopian-style,scripts/data/house-recipes/batch-04-C50.json,ai-draft,no-gluten,gluten,flatbread,"Serve with flatbread, lentils or rice.",review
+lemon-roasted-asparagus-with-toasted-almonds,scripts/data/house-recipes/batch-04-C51.json,ai-draft,vegetarian,fish,fish,Serve with grilled fish or chicken.,review
+lemon-roasted-asparagus-with-toasted-almonds,scripts/data/house-recipes/batch-04-C51.json,ai-draft,vegan,fish,fish,Serve with grilled fish or chicken.,review
+fresh-pea-and-mint-soup-with-lemon,scripts/data/house-recipes/batch-04-C51.json,ai-draft,vegan,dairy,yoghurt,Swirl through a spoonful of yoghurt for extra creaminess.,review
+fresh-pea-and-mint-soup-with-lemon,scripts/data/house-recipes/batch-04-C51.json,ai-draft,no-dairy,dairy,yoghurt,Swirl through a spoonful of yoghurt for extra creaminess.,review
+radish-and-cucumber-spring-salad-with-dill-yoghurt,scripts/data/house-recipes/batch-04-C51.json,ai-draft,vegetarian,fish,smoked fish,Serve with rye bread or smoked fish.,review
+radish-and-cucumber-spring-salad-with-dill-yoghurt,scripts/data/house-recipes/batch-04-C51.json,ai-draft,no-gluten,gluten,rye|bread,Serve with rye bread or smoked fish.,review
+cauliflower-and-potato-smash-for-fussy-eaters,scripts/data/house-recipes/batch-04-C51.json,ai-draft,vegetarian,fish,fish,Serve with sausages or crumbed fish.,review
+kids-hidden-veg-tomato-sauce,scripts/data/house-recipes/batch-04-C51.json,ai-draft,no-gluten,gluten,pasta,Toss through pasta or spread on pizza bases.,review
+picnic-potato-salad-with-herbs-and-mustard,scripts/data/house-recipes/batch-04-C52.json,ai-draft,vegan,egg,mayonnaise,"Without mayonnaise this travels better, but still keep it in a cooler bag and eat within 4 hours.",review
+freezer-batch-minestrone,scripts/data/house-recipes/batch-04-C52.json,ai-draft,no-gluten,gluten,pasta,Freeze without pasta.,review
+freezer-batch-minestrone,scripts/data/house-recipes/batch-04-C52.json,ai-draft,no-gluten,gluten,pasta,"To serve, reheat until steaming and add a handful of cooked small pasta.",review
+roast-cherry-tomato-pasta-sauce,scripts/data/house-recipes/batch-04-C53.json,ai-draft,no-gluten,gluten,pasta,Spoon over cooked pasta or serve on toast.,review
+spiced-pear-chutney,scripts/data/house-recipes/batch-04-C53.json,ai-draft,vegan,dairy,cheese,"Serve with cheese, curries or cold meats.",review
+spiced-pear-chutney,scripts/data/house-recipes/batch-04-C53.json,ai-draft,no-dairy,dairy,cheese,"Serve with cheese, curries or cold meats.",review
+crisp-pear-and-chilli-salsa-for-barbecued-fish,scripts/data/house-recipes/batch-04-C53.json,ai-draft,vegetarian,fish,barramundi,Delicious with grilled barramundi or prawns.,review
+crisp-pear-and-chilli-salsa-for-barbecued-fish,scripts/data/house-recipes/batch-04-C53.json,ai-draft,vegetarian,shellfish,prawns,Delicious with grilled barramundi or prawns.,review
+crisp-pear-and-chilli-salsa-for-barbecued-fish,scripts/data/house-recipes/batch-04-C53.json,ai-draft,vegan,fish,barramundi,Delicious with grilled barramundi or prawns.,review
+crisp-pear-and-chilli-salsa-for-barbecued-fish,scripts/data/house-recipes/batch-04-C53.json,ai-draft,vegan,shellfish,prawns,Delicious with grilled barramundi or prawns.,review
+apple-and-orange-christmas-relish,scripts/data/house-recipes/batch-04-C57.json,ai-draft,vegetarian,poultry,turkey,Serve warm or cold with ham and turkey.,review
+apple-and-orange-christmas-relish,scripts/data/house-recipes/batch-04-C57.json,ai-draft,vegetarian,pork,ham,Serve warm or cold with ham and turkey.,review
+apple-and-orange-christmas-relish,scripts/data/house-recipes/batch-04-C57.json,ai-draft,vegan,poultry,turkey,Serve warm or cold with ham and turkey.,review
+apple-and-orange-christmas-relish,scripts/data/house-recipes/batch-04-C57.json,ai-draft,vegan,pork,ham,Serve warm or cold with ham and turkey.,review
+carrot-tzimmes,scripts/data/house-recipes/batch-04-C57.json,ai-draft,vegetarian,beef,brisket,Serve with roast chicken or brisket.,review
+next-day-roast-pork-shreds-in-caraway-cabbage-broth,scripts/data/house-recipes/batch-04-C58.json,ai-draft,no-gluten,gluten,rye|bread,Serve with rye bread.,review
+baked-shakshuka-for-six,scripts/data/house-recipes/batch-04-C58.json,ai-draft,no-gluten,gluten,flatbread,Serve with warm flatbread.,review
+camp-vinegar-coleslaw,scripts/data/house-recipes/batch-04-C59.json,ai-draft,vegan,egg,mayonnaise,Keeps well in a cooler for hours because there is no mayonnaise.,review
+flaked-salmon-cannellini-bean-lunch-salad-with-dill-lemon-and-rocket,scripts/data/house-recipes/batch-04-C59.json,ai-draft,no-gluten,gluten,bread,Serve with crusty bread.,review
+greek-chicken-and-chickpea-salad,scripts/data/house-recipes/batch-04-C59.json,ai-draft,no-gluten,gluten,pita|bread,Serve with pita bread.,review
+turkish-kuymak-cornmeal-and-cheese-pan,scripts/data/house-recipes/batch-04-C60.json,ai-draft,no-gluten,gluten,bread,Serve with torn bread for dipping.,review
+georgian-baked-eggs-in-walnut-tomato-sauce,scripts/data/house-recipes/batch-04-C60.json,ai-draft,no-gluten,gluten,bread,Scatter with coriander and serve with bread.,review
+high-protein-greek-yoghurt-bowl-with-nuts-and-honey,scripts/data/house-recipes/batch-04-C61.json,ai-draft,no-gluten,gluten,rolled oats,Add a handful of rolled oats for extra fibre.,review
+edamame-and-avocado-toast-with-lime,scripts/data/house-recipes/batch-04-C61.json,ai-draft,vegan,egg,egg,Add a poached egg for extra protein.,review
+green-beans-almondine-with-lemon,scripts/data/house-recipes/batch-04-C61.json,ai-draft,vegetarian,fish,fish,Serve with fish or roast chicken.,review
+bajan-cou-cou-with-steamed-greens,scripts/data/house-recipes/batch-04-C64.json,ai-draft,vegetarian,fish,fish,Traditionally served with fish or stew.,review
+green-shakshuka-with-zucchini-and-herbs,scripts/data/house-recipes/batch-04-C64.json,ai-draft,no-gluten,gluten,bread,Scatter with feta and serve with bread.,review
+shakshuka-with-roasted-capsicum-and-olives,scripts/data/house-recipes/batch-04-C64.json,ai-draft,no-gluten,gluten,bread,Scatter with parsley and serve with bread.,review
+persian-herbed-rice-with-dill-and-peas,scripts/data/house-recipes/batch-04-C65.json,ai-draft,vegetarian,lamb,lamb,Delicious alongside grilled chicken or lamb.,review
+grilled-capsicum-with-garlic-and-parsley-oil,scripts/data/house-recipes/batch-04-C65.json,ai-draft,vegan,dairy,cheese,Good with crusty bread and cheese.,review
+grilled-capsicum-with-garlic-and-parsley-oil,scripts/data/house-recipes/batch-04-C65.json,ai-draft,no-gluten,gluten,bread,Good with crusty bread and cheese.,review
+grilled-capsicum-with-garlic-and-parsley-oil,scripts/data/house-recipes/batch-04-C65.json,ai-draft,no-dairy,dairy,cheese,Good with crusty bread and cheese.,review
+vegan-lemon-olive-oil-loaf,scripts/data/house-recipes/batch-04.json,ai-draft,vegan,dairy,milk,"The milk will thicken and curdle a little, which is what you want.",review
+vegan-lemon-olive-oil-loaf,scripts/data/house-recipes/batch-04.json,ai-draft,no-dairy,dairy,milk,"The milk will thicken and curdle a little, which is what you want.",review
+besan-chilla-spinach-tomato,scripts/data/house-recipes/batch-04.json,ai-draft,vegan,dairy,cream,Slowly whisk in the water until you have a smooth batter about as thick as pouring cream.,review
+besan-chilla-spinach-tomato,scripts/data/house-recipes/batch-04.json,ai-draft,no-gluten,gluten,flour,Leave it to stand for 10 minutes so the flour hydrates.,review
+besan-chilla-spinach-tomato,scripts/data/house-recipes/batch-04.json,ai-draft,no-gluten,gluten,wheat,Chickpea flour has no gluten but is sometimes milled alongside wheat.,review
+besan-chilla-spinach-tomato,scripts/data/house-recipes/batch-04.json,ai-draft,no-gluten,gluten,wheat|flour,"Most hing powder is cut with wheat flour, so it is left out here.",review
+besan-chilla-spinach-tomato,scripts/data/house-recipes/batch-04.json,ai-draft,no-dairy,dairy,cream,Slowly whisk in the water until you have a smooth batter about as thick as pouring cream.,review

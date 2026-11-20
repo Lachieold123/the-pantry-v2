@@ -1,0 +1,34 @@
+item,linkedId,matchedPhrase,otherIngredientNamed,groupsTheLinkLoses,groupsTheLinkAdds,lines,slugs,routes
+buckwheat flour,buckwheat,buckwheat,plain-flour,gluten,,7,galette-de-ble-noir-aux-moules crepes-aux-pommes-et-cidre galette-compl-te-buckwheat-crepes-with-ham-egg-and-gruyere buckwheat-galettes-with-ham-egg-and-cheese dutch-poffertjes-mini-pancakes-with-butter-and-icing-sugar french-crepes-bretonnes-buckwheat-galettes-with-ham-and-egg gluten-free-buckwheat-pancakes-with-cinnamon-apple,scripts/data/house-recipes/batch-03.json scripts/data/house-recipes/batch-04-A11.json scripts/data/house-recipes/batch-04-A37.json scripts/data/house-recipes/batch-04-C24.json scripts/data/house-recipes/batch-04-C25.json scripts/data/house-recipes/batch-04-C40.json
+dark chocolate chips,dark-chocolate,dark chocolate,crisps,,dairy|soy,7,soft-baked-chocolate-chip-cookies peanut-butter-oat-protein-bites chickpea-chocolate-brownie-bites sunflower-seed-chocolate-oat-balls chocolate-oat-breakfast-bars chocolate-hazelnut-biscotti honey-oat-energy-balls,scripts/data/house-recipes/batch-04-B33.json scripts/data/house-recipes/batch-04-B40.json scripts/data/house-recipes/batch-04-B43.json scripts/data/house-recipes/batch-04-B44.json scripts/data/house-recipes/batch-04-B51.json
+cornflour mixed with 2 tbsp water,cornflour,cornflour,water,,gluten,5,sweet-and-sour-pork teriyaki-tofu mapo-eggplant jjajangmyeon-black-bean-noodles budget-egg-drop-soup-with-spinach,"scripts/data/recipe-fixes.json (converted, D-014) scripts/data/house-recipes/batch-04-B16.json scripts/data/house-recipes/batch-04-C52.json"
+cornflour mixed with 3 tbsp water,cornflour,cornflour,water,,gluten,4,chicken-stir-fry mapo-tofu tofu-stir-fry veggie-stir-fry,"scripts/data/recipe-fixes.json (converted, D-014)"
+cornflour mixed with 1 tbsp water,cornflour,cornflour,water,,gluten,4,teriyaki-beef-bowl teriyaki-shrimp-bowl mitarashi-dango-with-sweet-soy-glaze chinese-doufu-nao-savoury-silken-tofu-pudding,"scripts/data/recipe-fixes.json (converted, D-014) scripts/data/house-recipes/batch-04-B34.json scripts/data/house-recipes/batch-04-C18.json"
+low-salt chicken stock,chicken-stock,chicken stock,salt,,meat|poultry,3,kids-chicken-noodle-soup-for-the-thermos gentle-rice-and-chicken-soup-with-ginger pumpkin-and-chicken-soup-with-thyme,scripts/data/house-recipes/batch-04-C41.json scripts/data/house-recipes/batch-04-C50.json
+warm milk infused with a pinch of saffron,milk,warm milk infused,saffron,,dairy,2,biryani chicken-biryani,"scripts/data/recipe-fixes.json (converted, D-014)"
+lamb leg steaks,lamb-leg,lamb leg,beef-steak,beef,lamb,2,lamb-pumpkin-feta-salad warm-lamb-and-bulgur-salad,scripts/data/house-recipes/batch-01.json scripts/data/house-recipes/batch-04-C09.json
+crusty bread roll,crusty-bread,crusty bread,bread-roll,soy,,2,cuban-pan-con-lechon torta-ahogada-guadalajara-drowned-pork-sandwich,scripts/data/house-recipes/batch-04-A14.json scripts/data/house-recipes/batch-04-A25.json
+sweet potato flour,sweet-potato,sweet potato,plain-flour,gluten,,2,taiwanese-popcorn-chicken-rice-plate-with-basil yan-su-ji-taiwanese-salt-and-pepper-chicken,scripts/data/house-recipes/batch-04-B20.json scripts/data/house-recipes/batch-04-B27.json
+saffron in 2 tbsp warm milk,saffron,saffron,milk,dairy,,1,beef-korma,"scripts/data/recipe-fixes.json (converted, D-014)"
+nori strips and sesame seeds,sesame-seeds,sesame seed,nori,,sesame,1,bibimbap,"scripts/data/recipe-fixes.json (converted, D-014)"
+salt for pasta water,salt,salt for,pasta,gluten,,1,carbonara,"scripts/data/recipe-fixes.json (converted, D-014)"
+oil for warming tortillas,flour-tortilla,tortilla,neutral-oil,,gluten,1,enchiladas,"scripts/data/recipe-fixes.json (converted, D-014)"
+sumac and za'atar for dusting,zaatar,za atar,sumac,,sesame,1,mediterranean-platter,"scripts/data/recipe-fixes.json (converted, D-014)"
+extra parmesan and basil to serve,parmesan,parmesan,basil,,dairy|animal-product|non-vegetarian,1,pesto-pasta,"scripts/data/recipe-fixes.json (converted, D-014)"
+chopped capers and anchovy,anchovy,anchovy,capers,,fish,1,schnitzel,"scripts/data/recipe-fixes.json (converted, D-014)"
+panko mixed with 20g melted butter,panko,panko mixed with,butter,dairy,gluten,1,stuffed-mushrooms,"scripts/data/recipe-fixes.json (converted, D-014)"
+panko soaked in 3 tbsp milk,panko,panko soaked in,milk,dairy,gluten,1,turkey-burger,"scripts/data/recipe-fixes.json (converted, D-014)"
+pork blood sausage,pigs-blood-cake,pork blood,pork-sausage,gluten,,1,bun-bo-hue,scripts/data/house-recipes/batch-03.json
+wattleseed flour,wattleseed,wattleseed,plain-flour,gluten,,1,wattleseed-shortbread,scripts/data/house-recipes/batch-03.json
+hokey pokey ice cream,cream,cream,water,,dairy,1,hokey-pokey-pavlova,scripts/data/house-recipes/batch-03.json
+firm white fish steak,white-fish,firm white fish,beef-steak,meat|beef,fish,1,bistek-na-isda,scripts/data/house-recipes/batch-03.json
+rice crackers,crackers,cracker,white-rice,,gluten,1,mi-quang-central-vietnamese-turmeric-noodles,scripts/data/house-recipes/batch-04-B16.json
+milk chocolate,dark-chocolate,chocolate,milk,,soy,1,chocolate-oat-fingers,scripts/data/house-recipes/batch-04-B38.json
+cornflour mixed with 4 tbsp water,cornflour,cornflour,water,,gluten,1,sichuan-hot-and-sour-soup-suan-la-tang,scripts/data/house-recipes/batch-04-C12.json
+kombu dashi stock,dashi,dashi stock,kombu,,fish,1,japanese-kenchinjiru-root-vegetable-and-tofu-soup,scripts/data/house-recipes/batch-04-C18.json
+doenjang fermented soybean paste,miso,doenjang,edamame,,gluten,1,korean-ssamjang-dipping-sauce,scripts/data/house-recipes/batch-04-C18.json
+sourdough toast,sourdough,sourdough,white-bread,soy,,1,oeufs-cocotte-with-spinach-and-cream,scripts/data/house-recipes/batch-04-C22.json
+thick beef sausages,pork-sausage,sausage,beef-steak,beef,pork|gluten,1,south-african-boerewors-breakfast-roll,scripts/data/house-recipes/batch-04-C23.json
+chocolate chips,dark-chocolate,chocolate,crisps,,dairy|soy,1,indonesian-martabak-manis-thick-sweet-pancake,scripts/data/house-recipes/batch-04-C24.json
+millet flour,millet,millet,plain-flour,gluten,,1,ghanaian-hausa-koko-millet-porridge,scripts/data/house-recipes/batch-04-C29.json
+beef sausages,pork-sausage,sausage,beef-steak,beef,pork|gluten,1,smoky-sausage-and-capsicum-soup,scripts/data/house-recipes/batch-04-C66.json

@@ -1,0 +1,5 @@
+npm notice run the-pantry-v2@1.0.0 npx
+npm notice run 'tsx' scripts/validate-house-recipes.mts --report docs/audits/2026-11-20-deep-audit/evidence/L7/validator-all-batches.txt
+Recipes failing, by check: nutrition 1
+Recipes warned, by check: style 2811, doneness 777, time 417, link 229, alternative 26, near-duplicate 24, nutrition 10, servings 4, steps 4, duplicate 2, amounts 2
+PASS 5209/5210; 1 failures, 4528 warnings

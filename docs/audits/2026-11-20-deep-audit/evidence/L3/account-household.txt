@@ -1,0 +1,12 @@
+npm notice run the-pantry-v2@1.0.0 npx
+npm notice run 'jest' --testMatch <rootDir>/docs/audits/2026-11-20-deep-audit/tools/L3/*.probe.test.tsx
+PASS docs/audits/2026-11-20-deep-audit/tools/L3/account-household.probe.test.tsx
+  ✓ signOut succeeds and wipes the phone while a set-aside row (never on the server) is only on this phone (5 ms)
+  ✓ leave() drops household rows still waiting to send: the others never get them
+  ✓ a dropped session turns a household-only phone into a new anonymous user and it silently leaves its household, losing unsent changes (57 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       3 passed, 3 total
+Snapshots:   0 total
+Time:        2.931 s
+Ran all test suites.
