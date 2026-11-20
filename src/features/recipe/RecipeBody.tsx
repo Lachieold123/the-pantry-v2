@@ -12,6 +12,7 @@ import { Icon } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { ICON, PRESSED, RADIUS, RECIPE, SMALL_CONTROL, SPACE, TAP_TARGET } from '@/ui/tokens/type';
+import { AvoidNote } from './AvoidNote';
 
 function Heading({ children }: { children: string }) {
   return (
@@ -61,6 +62,7 @@ export function Ingredients({ recipe, servings, units, have, onAddToList }: Ingr
           </Pressable>
         ) : null}
       </View>
+      <AvoidNote recipe={recipe} />
       {recipe.ingredientGroups.map((group, gi) => (
         <View key={gi}>
           {group.title ? (

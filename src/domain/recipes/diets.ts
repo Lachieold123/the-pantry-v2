@@ -96,3 +96,26 @@ export function containsAvoided(recipe: Pick<Recipe, 'ingredientGroups'>, avoid:
     return customWords.some((cw) => cw.every((w) => words.includes(w)));
   });
 }
+
+export type AvoidNotice = { avoided: boolean; unchecked: string[] };
+
+/**
+ * What the recipe page tells someone with an avoid list (F-3). Lines the
+ * ingredient database couldn't identify ("nutella" in a typed recipe) can't be
+ * checked against the fixed options, so they're named rather than passed as
+ * safe. Undefined when there's nothing to say.
+ */
+export function avoidNotice(
+  recipe: Pick<Recipe, 'ingredientGroups'>,
+  avoid: AvoidList,
+  index: IngredientIndex,
+): AvoidNotice | undefined {
+  if (avoid.options.length === 0 && avoid.custom.length === 0) return undefined;
+  const avoided = containsAvoided(recipe, avoid, index);
+  const unknown = allLines(recipe)
+    .filter((l) => !l.ingredientId || !index.byId.has(l.ingredientId))
+    .map((l) => l.item.trim())
+    .filter((item) => item.length > 0);
+  const unchecked = [...new Set(unknown)];
+  return avoided || unchecked.length > 0 ? { avoided, unchecked } : undefined;
+}
