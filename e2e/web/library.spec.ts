@@ -12,7 +12,7 @@ test('saving a recipe puts it in Cookmarks', async ({ page }) => {
   await expect(page.getByTestId('library-tab-cookmarks')).toHaveAttribute('aria-selected', 'true');
   await expect(page.getByTestId('cookmarks-screen')).toBeVisible();
   await expect(page.getByLabel('1 saved recipe', { exact: true })).toBeVisible();
-  await expect(page.getByTestId('recipe-card-carbonara')).toBeVisible();
+  await expect(page.getByTestId('cookmarks-screen').getByTestId('recipe-card-carbonara')).toBeVisible();
 });
 
 test('the library switches tabs in place, and a link opens the tab it names', async ({ page }) => {
@@ -27,13 +27,15 @@ test('the library switches tabs in place, and a link opens the tab it names', as
   await expect(page.getByTestId('mine-empty')).toBeVisible();
   await expect(page.getByLabel('Recipe link')).toBeVisible();
   await page.getByTestId('library-tab-recent').click();
-  await expect(page.getByTestId('recipe-card-carbonara')).toBeVisible();
+  // Scoped to the tab: Home stays mounted underneath and has its own Carbonara card (F-9).
+  const recent = page.getByTestId('recent-screen');
+  await expect(recent.getByTestId('recipe-card-carbonara')).toBeVisible();
   await expect(page.getByLabel('1 recipe', { exact: true })).toBeVisible();
   // Switching is local: the address doesn't change, so Back leaves the library.
   await expect(page).toHaveURL(/\/library$/);
 
   // Opening a recipe and coming back keeps the tab.
-  await page.getByTestId('recipe-card-carbonara').click();
+  await recent.getByTestId('recipe-card-carbonara').click();
   await expect(page.getByTestId('recipe-screen')).toBeVisible();
   await page.goBack();
   await expect(page.getByTestId('library-tab-recent')).toHaveAttribute('aria-selected', 'true');
