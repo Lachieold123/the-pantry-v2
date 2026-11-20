@@ -25,6 +25,7 @@ import { ACCOUNT, SETTINGS } from '@/ui/tokens/screens';
 import { SPACE, TAP_TARGET } from '@/ui/tokens/type';
 import { accountProblemWords, BACKUP_ON_IPHONE } from './accountWords';
 import { SettingsSection } from './SettingsParts';
+import { SetAsideNote } from './SetAsideNote';
 
 export function AccountSection() {
   const router = useRouter();
@@ -127,6 +128,7 @@ function SignedIn({ who }: { who: Account }) {
           {line}
         </Text>
       </View>
+      <SetAsideNote />
       {confirming ? (
         <View style={styles.confirm}>
           <Text variant="bodySmall" colour="inkSoft">

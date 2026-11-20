@@ -47,6 +47,20 @@ describe('Settings → Account, signed out', () => {
     await waitFor(() => expect(screen.getByTestId('settings-account-backup')).toBeTruthy());
   });
 
+  it('signed in, names what the server set aside so it can be shortened (DATA-5)', async () => {
+    const row = (kind: 'myrecipe' | 'plan', data: unknown) => ({ kind, key: kind, data, deleted: false, updatedAt: 1 });
+    useAccount.setState({
+      status: 'signed-in',
+      who: { id: 'user-1', email: 'a@b.co', apple: false, name: undefined },
+      setAside: { a: row('myrecipe', { title: 'Nan’s lasagne' }), b: row('plan', { recipeId: 'x' }) },
+    });
+    await render(<AccountSection />);
+    expect(screen.getByText('These are too big to back up. Shorten them to keep them safe:')).toBeTruthy();
+    expect(screen.getByText('• One of your recipes: “Nan’s lasagne”')).toBeTruthy();
+    expect(screen.getByText('• A planned meal')).toBeTruthy();
+    useAccount.setState({ setAside: {} });
+  });
+
   it('anywhere, once email codes are connected', async () => {
     mockWays.email = true;
     await render(<AccountSection />);
