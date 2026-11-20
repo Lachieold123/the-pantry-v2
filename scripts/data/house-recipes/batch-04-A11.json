@@ -1,538 +1,540 @@
 {
- "about": "House recipes, batch 04 (helper sA): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
- "recipes": [
-  {
-   "id": "croque-madame",
-   "title": "Croque Madame",
-   "summary": "Toasted ham and gruyere sandwiches under a creamy cheese sauce, topped with a fried egg.",
-   "cuisine": "french",
-   "mealTypes": [
-    "breakfast"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 20,
-   "cookMinutes": 25,
-   "servings": 4,
-   "onePot": false,
-   "diets": [],
-   "ingredients": [
+  "about": "House recipes, batch 04 (helper sA): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
     {
-     "items": [
-      "40g butter",
-      "40g plain flour",
-      "2 cup milk",
-      "1/4 tsp ground nutmeg",
-      "8 slice sandwich bread",
-      "200g sliced ham",
-      "150g gruyere, grated",
-      "4 egg"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oven to 220°C (200°C fan) and line a tray with baking paper. Melt the butter in a saucepan over medium heat, stir in the flour for 1 minute, then whisk in the milk a little at a time and simmer for 5 minutes, until thick. Season with nutmeg and salt.",
-    "Top 4 slices of bread with the ham and half the gruyere, then close the sandwiches with the other slices. Place on the tray and spread each with the white sauce.",
-    "Scatter the remaining gruyere on top and bake for 12 minutes, until the cheese is bubbling and golden.",
-    "Fry the eggs in a non-stick pan over medium heat for 3 minutes, until the whites are set, and place one on each sandwich."
-   ],
-   "notes": [
-    "Food safety: fry the eggs until the whites are fully set; skip runny yolks for children, older adults and anyone pregnant.",
-    "Use sliced bread that is a day old if you can, as it holds the sauce better."
-   ],
-   "nutrition": {
-    "kcal": 608,
-    "proteinG": 36,
-    "carbsG": 44,
-    "fatG": 32,
-    "fibreG": 2,
-    "sodiumMg": 1400
-   }
-  },
-  {
-   "id": "galette-compl-te-buckwheat-crepes-with-ham-egg-and-gruyere",
-   "title": "Galette Complète (Buckwheat Crepes with Ham, Egg and Gruyere)",
-   "summary": "Lacy buckwheat crepes folded around ham, melted gruyere and a soft egg.",
-   "cuisine": "french",
-   "mealTypes": [
-    "breakfast"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 15,
-   "cookMinutes": 35,
-   "servings": 4,
-   "onePot": false,
-   "diets": ["no-gluten"],
-   "ingredients": [
+      "id": "croque-madame",
+      "title": "Croque Madame",
+      "summary": "Toasted ham and gruyere sandwiches under a creamy cheese sauce, topped with a fried egg.",
+      "cuisine": "french",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "40g butter",
+            "40g plain flour",
+            "2 cup milk",
+            "1/4 tsp ground nutmeg",
+            "8 slice sandwich bread",
+            "200g sliced ham",
+            "150g gruyere, grated",
+            "4 egg"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (200°C fan) and line a tray with baking paper. Melt the butter in a saucepan over medium heat, stir in the flour for 1 minute, then whisk in the milk a little at a time and simmer for 5 minutes, until thick. Season with nutmeg and salt.",
+        "Top 4 slices of bread with the ham and half the gruyere, then close the sandwiches with the other slices. Place on the tray and spread each with the white sauce.",
+        "Scatter the remaining gruyere on top and bake for 12 minutes, until the cheese is bubbling and golden.",
+        "Fry the eggs in a non-stick pan over medium heat for 3 minutes, until the whites are set, and place one on each sandwich."
+      ],
+      "notes": [
+        "Food safety: fry the eggs until the whites are fully set; skip runny yolks for children, older adults and anyone pregnant.",
+        "Use sliced bread that is a day old if you can, as it holds the sauce better."
+      ],
+      "nutrition": {
+        "kcal": 608,
+        "proteinG": 36,
+        "carbsG": 44,
+        "fatG": 32,
+        "fibreG": 2,
+        "sodiumMg": 1400
+      }
+    },
     {
-     "items": [
-      "1 cup buckwheat flour",
-      "1 egg",
-      "1 1/2 cup water",
-      "1/2 tsp salt",
-      "60g butter",
-      "150g sliced ham",
-      "100g gruyere, grated",
-      "4 egg"
-     ]
-    }
-   ],
-   "steps": [
-    "Whisk the buckwheat flour, 1 egg, water and salt in a bowl until smooth, then melt 20g of the butter and whisk it in.",
-    "Heat a large non-stick pan over medium-high heat and brush with a little butter. Pour in a quarter of the batter and swirl to coat. Cook for 2 minutes, until the edges lift and the base is crisp, then flip.",
-    "Scatter a quarter of the ham and gruyere in the centre, crack an egg on top and cook for 4 minutes, until the white is set and the cheese has melted.",
-    "Fold in the four sides to make a square, slide onto a plate and repeat with the remaining batter and filling."
-   ],
-   "notes": [
-    "Food safety: cook the egg until the white is fully set; skip runny yolks for children, older adults and anyone pregnant.",
-    "Gluten-free: buckwheat flour is gluten-free but check the packet for cross-contamination."
-   ],
-   "nutrition": {
-    "kcal": 505,
-    "proteinG": 28,
-    "carbsG": 42,
-    "fatG": 25,
-    "fibreG": 5,
-    "sodiumMg": 900
-   }
-  },
-  {
-   "id": "boeuf-en-daube-provencale",
-   "title": "Boeuf en Daube Provençale",
-   "summary": "Beef braised for hours with red wine, orange peel, tomato and olives, in the style of Provence.",
-   "cuisine": "french",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 30,
-   "cookMinutes": 180,
-   "servings": 6,
-   "onePot": true,
-   "diets": [
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "galette-compl-te-buckwheat-crepes-with-ham-egg-and-gruyere",
+      "title": "Galette Complète (Buckwheat Crepes with Ham, Egg and Gruyere)",
+      "summary": "Lacy buckwheat crepes folded around ham, melted gruyere and a soft egg.",
+      "cuisine": "french",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup buckwheat flour",
+            "1 egg",
+            "1 1/2 cup water",
+            "1/2 tsp salt",
+            "60g butter",
+            "150g sliced ham",
+            "100g gruyere, grated",
+            "4 egg"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the buckwheat flour, 1 egg, water and salt in a bowl until smooth, then melt 20g of the butter and whisk it in.",
+        "Heat a large non-stick pan over medium-high heat and brush with a little butter. Pour in a quarter of the batter and swirl to coat. Cook for 2 minutes, until the edges lift and the base is crisp, then flip.",
+        "Scatter a quarter of the ham and gruyere in the centre, crack an egg on top and cook for 4 minutes, until the white is set and the cheese has melted.",
+        "Fold in the four sides to make a square, slide onto a plate and repeat with the remaining batter and filling."
+      ],
+      "notes": [
+        "Food safety: cook the egg until the white is fully set; skip runny yolks for children, older adults and anyone pregnant.",
+        "Gluten-free: buckwheat flour is gluten-free but check the packet for cross-contamination."
+      ],
+      "nutrition": {
+        "kcal": 505,
+        "proteinG": 28,
+        "carbsG": 42,
+        "fatG": 25,
+        "fibreG": 5,
+        "sodiumMg": 900
+      }
+    },
     {
-     "items": [
-      "1.2kg beef chuck, cut into 5cm chunks",
-      "100g pancetta, diced",
-      "2 tbsp olive oil",
-      "2 brown onion, sliced",
-      "2 carrot, thickly sliced",
-      "4 garlic, crushed",
-      "2 cup red wine",
-      "400g canned tomatoes",
-      "3 strips orange peel",
-      "4 thyme sprigs",
-      "2 bay leaf",
-      "1/2 cup black olives"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oven to 150°C (130°C fan). Brown the beef in the oil in a heavy casserole over high heat in batches for 4 minutes each, until deep brown. Set aside.",
-    "Cook the pancetta, onion and carrot in the same pot for 8 minutes, until golden. Add the garlic for 1 minute.",
-    "Pour in the wine and boil for 5 minutes, until reduced by a third. Return the beef, add the tomatoes, orange peel, thyme and bay leaves and bring to a simmer.",
-    "Cover and bake for 2 hours 30 minutes, until the beef is very tender, adding the olives for the last 15 minutes. Season to taste."
-   ],
-   "notes": [
-    "Food safety: braised beef is tender at around 90°C inside. Cool leftovers within an hour and refrigerate for up to 3 days; it improves on day two.",
-    "Gluten-free. Serve with creamy mash or buttered pasta."
-   ],
-   "nutrition": {
-    "kcal": 444,
-    "proteinG": 40,
-    "carbsG": 17,
-    "fatG": 24,
-    "fibreG": 3,
-    "sodiumMg": 820
-   }
-  },
-  {
-   "id": "poulet-r-ti-l-ail-roast-chicken-with-whole-garlic",
-   "title": "Poulet Rôti à l'Ail (Roast Chicken with Whole Garlic)",
-   "summary": "Roast chicken scented with thyme and lemon, surrounded by soft, sweet cloves of garlic and crisp potatoes.",
-   "cuisine": "french",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 20,
-   "cookMinutes": 90,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "no-gluten"
-   ],
-   "ingredients": [
+      "id": "boeuf-en-daube-provencale",
+      "title": "Boeuf en Daube Provençale",
+      "summary": "Beef braised for hours with red wine, orange peel, tomato and olives, in the style of Provence.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 180,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1.2kg beef chuck, cut into 5cm chunks",
+            "100g pancetta, diced",
+            "2 tbsp olive oil",
+            "2 brown onion, sliced",
+            "2 carrot, thickly sliced",
+            "4 garlic, crushed",
+            "2 cup red wine",
+            "400g canned tomatoes",
+            "3 strips orange peel",
+            "4 thyme sprigs",
+            "2 bay leaf",
+            "1/2 cup black olives"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 150°C (130°C fan). Brown the beef in the oil in a heavy casserole over high heat in batches for 4 minutes each, until deep brown. Set aside.",
+        "Cook the pancetta, onion and carrot in the same pot for 8 minutes, until golden. Add the garlic for 1 minute.",
+        "Pour in the wine and boil for 5 minutes, until reduced by a third. Return the beef, add the tomatoes, orange peel, thyme and bay leaves and bring to a simmer.",
+        "Cover and bake for 2 hours 30 minutes, until the beef is very tender, adding the olives for the last 15 minutes. Season to taste."
+      ],
+      "notes": [
+        "Food safety: braised beef is tender at around 90°C inside. Cool leftovers within an hour and refrigerate for up to 3 days; it improves on day two.",
+        "Gluten-free. Serve with creamy mash or buttered pasta."
+      ],
+      "nutrition": {
+        "kcal": 444,
+        "proteinG": 40,
+        "carbsG": 17,
+        "fatG": 24,
+        "fibreG": 3,
+        "sodiumMg": 820
+      }
+    },
     {
-     "items": [
-      "1.6kg whole chicken",
-      "40g butter, softened",
-      "4 thyme sprigs",
-      "1 lemon, halved",
-      "20 garlic, unpeeled",
-      "500g potato, cut into chunks",
-      "1 brown onion, cut into wedges",
-      "1/2 cup white wine"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oven to 200°C (180°C fan). Rub the chicken all over with the butter and salt, then put the lemon and half the thyme in the cavity.",
-    "Scatter the potatoes, onion, garlic and remaining thyme in a roasting tin and sit the chicken on top. Pour the wine into the tin.",
-    "Roast for 1 hour 15 minutes, until the skin is golden and the juices run clear, turning the potatoes once.",
-    "Rest the chicken for 15 minutes, then carve and serve with the potatoes, squeezing the soft garlic from its skins."
-   ],
-   "notes": [
-    "Food safety: chicken must reach 75°C in the thickest part of the thigh, with clear juices. Rest it for 15 minutes.",
-    "Gluten-free."
-   ],
-   "nutrition": {
-    "kcal": 768,
-    "proteinG": 59,
-    "carbsG": 28,
-    "fatG": 46,
-    "fibreG": 3,
-    "sodiumMg": 520
-   }
-  },
-  {
-   "id": "tartiflette-style-potato-bake",
-   "title": "Tartiflette-Style Potato Bake",
-   "summary": "Sliced potatoes baked with bacon, onion, white wine and melting soft cheese.",
-   "cuisine": "french",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 25,
-   "cookMinutes": 50,
-   "servings": 6,
-   "onePot": false,
-   "diets": [
-    "no-gluten"
-   ],
-   "ingredients": [
+      "id": "poulet-r-ti-l-ail-roast-chicken-with-whole-garlic",
+      "title": "Poulet Rôti à l'Ail (Roast Chicken with Whole Garlic)",
+      "summary": "Roast chicken scented with thyme and lemon, surrounded by soft, sweet cloves of garlic and crisp potatoes.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 90,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1.6kg whole chicken",
+            "40g butter, softened",
+            "4 thyme sprigs",
+            "1 lemon, halved",
+            "20 garlic, unpeeled",
+            "500g potato, cut into chunks",
+            "1 brown onion, cut into wedges",
+            "1/2 cup white wine"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (180°C fan). Rub the chicken all over with the butter and salt, then put the lemon and half the thyme in the cavity.",
+        "Scatter the potatoes, onion, garlic and remaining thyme in a roasting tin and sit the chicken on top. Pour the wine into the tin.",
+        "Roast for 1 hour 15 minutes, until the skin is golden and the juices run clear, turning the potatoes once.",
+        "Rest the chicken for 15 minutes, then carve and serve with the potatoes, squeezing the soft garlic from its skins."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C in the thickest part of the thigh, with clear juices. Rest it for 15 minutes.",
+        "Gluten-free."
+      ],
+      "nutrition": {
+        "kcal": 768,
+        "proteinG": 59,
+        "carbsG": 28,
+        "fatG": 46,
+        "fibreG": 3,
+        "sodiumMg": 520
+      }
+    },
     {
-     "items": [
-      "1kg potato, peeled and sliced 5mm thick",
-      "200g bacon, diced",
-      "1 brown onion, sliced",
-      "1 tbsp olive oil",
-      "1/2 cup white wine",
-      "1/2 cup thickened cream",
-      "400g gruyere, sliced"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oven to 200°C (180°C fan). Boil the potato slices in salted water for 8 minutes, until just tender, then drain.",
-    "Cook the bacon and onion in the oil in a frying pan over medium heat for 8 minutes, until golden. Add the wine and boil for 2 minutes, until reduced.",
-    "Layer half the potato in a baking dish, scatter with half the bacon mixture and half the cheese. Repeat, then pour the cream over the top.",
-    "Bake for 25 minutes, until the cheese is bubbling and golden. Rest for 5 minutes before serving."
-   ],
-   "notes": [
-    "Food safety: cook the bacon until browned and serve the dish piping hot; refrigerate leftovers within an hour.",
-    "Traditionally made with reblochon; gruyere melts just as well."
-   ],
-   "nutrition": {
-    "kcal": 574,
-    "proteinG": 25,
-    "carbsG": 33,
-    "fatG": 38,
-    "fibreG": 3,
-    "sodiumMg": 880
-   }
-  },
-  {
-   "id": "fish-meuni-re-with-lemon-butter-and-baby-potatoes",
-   "title": "Fish Meunière with Lemon Butter and Baby Potatoes",
-   "summary": "Flour-dusted white fish fillets pan-fried in butter and finished with lemon, parsley and capers.",
-   "cuisine": "french",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 15,
-   "cookMinutes": 25,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "pescatarian"
-   ],
-   "ingredients": [
+      "id": "tartiflette-style-potato-bake",
+      "title": "Tartiflette-Style Potato Bake",
+      "summary": "Sliced potatoes baked with bacon, onion, white wine and melting soft cheese.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 25,
+      "cookMinutes": 50,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1kg potato, peeled and sliced 5mm thick",
+            "200g bacon, diced",
+            "1 brown onion, sliced",
+            "1 tbsp olive oil",
+            "1/2 cup white wine",
+            "1/2 cup thickened cream",
+            "400g gruyere, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (180°C fan). Boil the potato slices in salted water for 8 minutes, until just tender, then drain.",
+        "Cook the bacon and onion in the oil in a frying pan over medium heat for 8 minutes, until golden. Add the wine and boil for 2 minutes, until reduced.",
+        "Layer half the potato in a baking dish, scatter with half the bacon mixture and half the cheese. Repeat, then pour the cream over the top.",
+        "Bake for 25 minutes, until the cheese is bubbling and golden. Rest for 5 minutes before serving."
+      ],
+      "notes": [
+        "Food safety: cook the bacon until browned and serve the dish piping hot; refrigerate leftovers within an hour.",
+        "Traditionally made with reblochon; gruyere melts just as well."
+      ],
+      "nutrition": {
+        "kcal": 574,
+        "proteinG": 25,
+        "carbsG": 33,
+        "fatG": 38,
+        "fibreG": 3,
+        "sodiumMg": 880
+      }
+    },
     {
-     "items": [
-      "500g baby potato, halved",
-      "4 white fish fillets",
-      "1/4 cup plain flour",
-      "60g butter",
-      "1 lemon, juiced",
-      "1 tbsp capers",
-      "2 tbsp chopped parsley"
-     ]
-    }
-   ],
-   "steps": [
-    "Boil the potatoes in salted water for 15 minutes, until tender, then drain and keep warm.",
-    "Season the fish and dust lightly with the flour. Melt half the butter in a large frying pan over medium-high heat and cook the fish for 3 minutes each side, until golden and opaque all the way through. Lift onto plates.",
-    "Add the remaining butter to the pan and cook for 2 minutes, until it smells nutty and is golden brown. Take off the heat and stir in the lemon juice, capers and parsley.",
-    "Spoon the butter over the fish and serve with the potatoes."
-   ],
-   "notes": [
-    "Food safety: fish is cooked when it turns opaque and flakes easily with a fork.",
-    "Use any firm white fish such as snapper, flathead or whiting."
-   ],
-   "nutrition": {
-    "kcal": 413,
-    "proteinG": 32,
-    "carbsG": 33,
-    "fatG": 17,
-    "fibreG": 3,
-    "sodiumMg": 520
-   }
-  },
-  {
-   "id": "quiche-lorraine",
-   "title": "Quiche Lorraine",
-   "summary": "A buttery homemade pastry case filled with bacon, gruyere and a silky egg and cream custard.",
-   "cuisine": "french",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 30,
-   "cookMinutes": 50,
-   "servings": 6,
-   "onePot": false,
-   "diets": [],
-   "ingredients": [
+      "id": "fish-meuni-re-with-lemon-butter-and-baby-potatoes",
+      "title": "Fish Meunière with Lemon Butter and Baby Potatoes",
+      "summary": "Flour-dusted white fish fillets pan-fried in butter and finished with lemon, parsley and capers.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g baby potato, halved",
+            "4 white fish fillets",
+            "1/4 cup plain flour",
+            "60g butter",
+            "1 lemon, juiced",
+            "1 tbsp capers",
+            "2 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes in salted water for 15 minutes, until tender, then drain and keep warm.",
+        "Season the fish and dust lightly with the flour. Melt half the butter in a large frying pan over medium-high heat and cook the fish for 3 minutes each side, until golden and opaque all the way through. Lift onto plates.",
+        "Add the remaining butter to the pan and cook for 2 minutes, until it smells nutty and is golden brown. Take off the heat and stir in the lemon juice, capers and parsley.",
+        "Spoon the butter over the fish and serve with the potatoes."
+      ],
+      "notes": [
+        "Food safety: fish is cooked when it turns opaque and flakes easily with a fork.",
+        "Use any firm white fish such as snapper, flathead or whiting."
+      ],
+      "nutrition": {
+        "kcal": 413,
+        "proteinG": 32,
+        "carbsG": 33,
+        "fatG": 17,
+        "fibreG": 3,
+        "sodiumMg": 520
+      }
+    },
     {
-     "items": [
-      "250g plain flour",
-      "125g cold butter, diced",
-      "1 egg",
-      "3 tbsp iced water",
-      "200g bacon, diced",
-      "3 egg",
-      "1 cup thickened cream",
-      "1/2 cup milk",
-      "80g gruyere, grated",
-      "1/4 tsp ground nutmeg"
-     ]
-    }
-   ],
-   "steps": [
-    "Rub the butter into the flour with your fingertips until it looks like breadcrumbs, then mix in the egg and iced water until a dough forms. Wrap and chill for 30 minutes. Heat the oven to 200°C (180°C fan), roll the dough out to fit a 23cm tart tin, prick the base with a fork and bake with baking paper and weights for 15 minutes, until pale golden. Remove the paper and weights and bake for 5 minutes more.",
-    "Fry the bacon in a pan over medium heat for 5 minutes, until golden, and scatter over the pastry with the gruyere.",
-    "Whisk the eggs, cream, milk, nutmeg and a pinch of salt and pour over the filling. Reduce the oven to 170°C (150°C fan).",
-    "Bake for 30 minutes, until the filling is set with a slight wobble in the centre. Rest for 10 minutes before slicing."
-   ],
-   "notes": [
-    "Food safety: the custard must be set and the centre hot (at least 72°C). Refrigerate leftovers within 2 hours and eat within 2 days.",
-    "Good served warm or cold."
-   ],
-   "nutrition": {
-    "kcal": 614,
-    "proteinG": 17,
-    "carbsG": 33,
-    "fatG": 46,
-    "fibreG": 2,
-    "sodiumMg": 720
-   }
-  },
-  {
-   "id": "frittata-di-pasta-italian-pasta-frittata",
-   "title": "Frittata di Pasta (Italian Pasta Frittata)",
-   "summary": "A thick, golden omelette studded with spaghetti, peas and herbs, sliced like a cake.",
-   "cuisine": "italian",
-   "mealTypes": [
-    "breakfast"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 25,
-   "servings": 4,
-   "onePot": true,
-   "diets": [
-    "vegetarian"
-   ],
-   "ingredients": [
+      "id": "quiche-lorraine",
+      "title": "Quiche Lorraine",
+      "summary": "A buttery homemade pastry case filled with bacon, gruyere and a silky egg and cream custard.",
+      "cuisine": "french",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 50,
+      "servings": 6,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "250g plain flour",
+            "125g cold butter, diced",
+            "1 egg",
+            "3 tbsp iced water",
+            "200g bacon, diced",
+            "3 egg",
+            "1 cup thickened cream",
+            "1/2 cup milk",
+            "80g gruyere, grated",
+            "1/4 tsp ground nutmeg"
+          ]
+        }
+      ],
+      "steps": [
+        "Rub the butter into the flour with your fingertips until it looks like breadcrumbs, then mix in the egg and iced water until a dough forms. Wrap and chill for 30 minutes. Heat the oven to 200°C (180°C fan), roll the dough out to fit a 23cm tart tin, prick the base with a fork and bake with baking paper and weights for 15 minutes, until pale golden. Remove the paper and weights and bake for 5 minutes more.",
+        "Fry the bacon in a pan over medium heat for 5 minutes, until golden, and scatter over the pastry with the gruyere.",
+        "Whisk the eggs, cream, milk, nutmeg and a pinch of salt and pour over the filling. Reduce the oven to 170°C (150°C fan).",
+        "Bake for 30 minutes, until the filling is set with a slight wobble in the centre. Rest for 10 minutes before slicing."
+      ],
+      "notes": [
+        "Food safety: the custard must be set and the centre hot (at least 72°C). Refrigerate leftovers within 2 hours and eat within 2 days.",
+        "Good served warm or cold."
+      ],
+      "nutrition": {
+        "kcal": 614,
+        "proteinG": 17,
+        "carbsG": 33,
+        "fatG": 46,
+        "fibreG": 2,
+        "sodiumMg": 720
+      }
+    },
     {
-     "items": [
-      "150g spaghetti",
-      "1 cup frozen peas",
-      "2 tbsp olive oil",
-      "6 egg",
-      "50g vegetarian hard cheese, grated",
-      "2 tbsp chopped parsley"
-     ]
-    }
-   ],
-   "steps": [
-    "Cook the spaghetti in salted boiling water for 8 minutes, adding the peas for the last minute, then drain and cut roughly with scissors.",
-    "Beat the eggs with the cheese, parsley, salt and pepper and stir in the pasta and peas.",
-    "Heat the oil in a 24cm non-stick frying pan over medium heat, pour in the mixture and cook for 8 minutes, until the base is golden and the edge is set.",
-    "Slide onto a plate, flip back into the pan and cook for 5 minutes, until the centre is firm. Cut into wedges."
-   ],
-   "notes": [
-    "Food safety: cook until the egg is fully firm; refrigerate leftovers within an hour and eat within 2 days.",
-    "Vegetarian; good warm or at room temperature."
-   ],
-   "nutrition": {
-    "kcal": 366,
-    "proteinG": 20,
-    "carbsG": 31,
-    "fatG": 18,
-    "fibreG": 4,
-    "sodiumMg": 330
-   }
-  },
-  {
-   "id": "ricotta-and-honey-toast-with-pear-and-walnuts",
-   "title": "Ricotta and Honey Toast with Pear and Walnuts",
-   "summary": "Thick sourdough toast spread with creamy ricotta, sliced pear, toasted walnuts and honey.",
-   "cuisine": "italian",
-   "mealTypes": [
-    "breakfast"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 5,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian"
-   ],
-   "ingredients": [
+      "id": "frittata-di-pasta-italian-pasta-frittata",
+      "title": "Frittata di Pasta (Italian Pasta Frittata)",
+      "summary": "A thick, golden omelette studded with spaghetti, peas and herbs, sliced like a cake.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g spaghetti",
+            "1 cup frozen peas",
+            "2 tbsp olive oil",
+            "6 egg",
+            "50g vegetarian hard cheese, grated",
+            "2 tbsp chopped parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the spaghetti in salted boiling water for 8 minutes, adding the peas for the last minute, then drain and cut roughly with scissors.",
+        "Beat the eggs with the cheese, parsley, salt and pepper and stir in the pasta and peas.",
+        "Heat the oil in a 24cm non-stick frying pan over medium heat, pour in the mixture and cook for 8 minutes, until the base is golden and the edge is set.",
+        "Slide onto a plate, flip back into the pan and cook for 5 minutes, until the centre is firm. Cut into wedges."
+      ],
+      "notes": [
+        "Food safety: cook until the egg is fully firm; refrigerate leftovers within an hour and eat within 2 days.",
+        "Vegetarian; good warm or at room temperature."
+      ],
+      "nutrition": {
+        "kcal": 366,
+        "proteinG": 20,
+        "carbsG": 31,
+        "fatG": 18,
+        "fibreG": 4,
+        "sodiumMg": 330
+      }
+    },
     {
-     "items": [
-      "4 thick slice sourdough bread, toasted",
-      "250g ricotta",
-      "2 pear, thinly sliced",
-      "1/2 cup walnuts, chopped",
-      "1/4 cup honey",
-      "1 tsp lemon zest"
-     ]
-    }
-   ],
-   "steps": [
-    "Toast the walnuts in a dry frying pan over medium heat for 3 minutes, until fragrant.",
-    "Stir the lemon zest into the ricotta and spread thickly over the toast.",
-    "Top with the pear slices and walnuts and drizzle with the honey."
-   ],
-   "notes": [
-    "Vegetarian.",
-    "Ripe, juicy pears work best; swap in figs when in season."
-   ],
-   "nutrition": {
-    "kcal": 415,
-    "proteinG": 14,
-    "carbsG": 56,
-    "fatG": 15,
-    "fibreG": 5,
-    "sodiumMg": 300
-   }
-  },
-  {
-   "id": "sweet-polenta-porridge-with-cinnamon-apples-and-almonds",
-   "title": "Sweet Polenta Porridge with Cinnamon Apples and Almonds",
-   "summary": "Creamy polenta cooked in milk and served with buttery spiced apple and crunchy almonds.",
-   "cuisine": "italian",
-   "mealTypes": [
-    "breakfast"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 20,
-   "servings": 4,
-   "onePot": true,
-   "diets": [
-    "vegetarian",
-    "no-gluten"
-   ],
-   "ingredients": [
+      "id": "ricotta-and-honey-toast-with-pear-and-walnuts",
+      "title": "Ricotta and Honey Toast with Pear and Walnuts",
+      "summary": "Thick sourdough toast spread with creamy ricotta, sliced pear, toasted walnuts and honey.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 5,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 thick slice sourdough bread, toasted",
+            "250g ricotta",
+            "2 pear, thinly sliced",
+            "1/2 cup walnuts, chopped",
+            "1/4 cup honey",
+            "1 tsp lemon zest"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the walnuts in a dry frying pan over medium heat for 3 minutes, until fragrant.",
+        "Stir the lemon zest into the ricotta and spread thickly over the toast.",
+        "Top with the pear slices and walnuts and drizzle with the honey."
+      ],
+      "notes": [
+        "Vegetarian.",
+        "Ripe, juicy pears work best; swap in figs when in season."
+      ],
+      "nutrition": {
+        "kcal": 415,
+        "proteinG": 14,
+        "carbsG": 56,
+        "fatG": 15,
+        "fibreG": 5,
+        "sodiumMg": 300
+      }
+    },
     {
-     "items": [
-      "3/4 cup polenta",
-      "3 cup milk",
-      "1 cup water",
-      "2 tbsp honey",
-      "2 apple, diced",
-      "20g butter",
-      "1 tsp ground cinnamon",
-      "1/3 cup flaked almonds"
-     ]
-    }
-   ],
-   "steps": [
-    "Bring the milk, water and honey to a gentle simmer in a saucepan, then whisk in the polenta in a thin stream. Cook, stirring often, for 10 minutes, until thick and creamy.",
-    "Melt the butter in a frying pan over medium heat and cook the apple with the cinnamon for 5 minutes, until soft and golden.",
-    "Toast the almonds in a dry pan for 2 minutes, until golden.",
-    "Spoon the porridge into bowls and top with the apple and almonds."
-   ],
-   "notes": [
-    "Vegetarian and gluten-free.",
-    "Loosen with a splash of hot milk if it thickens as it stands."
-   ],
-   "nutrition": {
-    "kcal": 399,
-    "proteinG": 11,
-    "carbsG": 55,
-    "fatG": 15,
-    "fibreG": 5,
-    "sodiumMg": 120
-   }
-  },
-  {
-   "id": "egg-bruschetta-with-roasted-tomatoes-and-ricotta",
-   "title": "Egg Bruschetta with Roasted Tomatoes and Ricotta",
-   "summary": "Garlic-rubbed sourdough topped with blistered cherry tomatoes, ricotta and a fried egg.",
-   "cuisine": "italian",
-   "mealTypes": [
-    "breakfast"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 20,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian"
-   ],
-   "ingredients": [
+      "id": "sweet-polenta-porridge-with-cinnamon-apples-and-almonds",
+      "title": "Sweet Polenta Porridge with Cinnamon Apples and Almonds",
+      "summary": "Creamy polenta cooked in milk and served with buttery spiced apple and crunchy almonds.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3/4 cup polenta",
+            "3 cup milk",
+            "1 cup water",
+            "2 tbsp honey",
+            "2 apple, diced",
+            "20g butter",
+            "1 tsp ground cinnamon",
+            "1/3 cup flaked almonds"
+          ]
+        }
+      ],
+      "steps": [
+        "Bring the milk, water and honey to a gentle simmer in a saucepan, then whisk in the polenta in a thin stream. Cook, stirring often, for 10 minutes, until thick and creamy.",
+        "Melt the butter in a frying pan over medium heat and cook the apple with the cinnamon for 5 minutes, until soft and golden.",
+        "Toast the almonds in a dry pan for 2 minutes, until golden.",
+        "Spoon the porridge into bowls and top with the apple and almonds."
+      ],
+      "notes": [
+        "Vegetarian and gluten-free.",
+        "Loosen with a splash of hot milk if it thickens as it stands."
+      ],
+      "nutrition": {
+        "kcal": 399,
+        "proteinG": 11,
+        "carbsG": 55,
+        "fatG": 15,
+        "fibreG": 5,
+        "sodiumMg": 120
+      }
+    },
     {
-     "items": [
-      "300g cherry tomato",
-      "2 tbsp olive oil",
-      "4 slice sourdough bread, toasted",
-      "1 garlic, halved",
-      "125g ricotta",
-      "4 egg",
-      "8 basil leaf"
-     ]
+      "id": "egg-bruschetta-with-roasted-tomatoes-and-ricotta",
+      "title": "Egg Bruschetta with Roasted Tomatoes and Ricotta",
+      "summary": "Garlic-rubbed sourdough topped with blistered cherry tomatoes, ricotta and a fried egg.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g cherry tomato",
+            "2 tbsp olive oil",
+            "4 slice sourdough bread, toasted",
+            "1 garlic, halved",
+            "125g ricotta",
+            "4 egg",
+            "8 basil leaf"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (200°C fan). Toss the tomatoes with half the oil and a pinch of salt in a tin and roast for 12 minutes, until blistered and bursting.",
+        "Rub the toasted bread with the cut garlic and spread with the ricotta, until evenly covered.",
+        "Fry the eggs in the remaining oil in a non-stick pan over medium heat for 3 minutes, until the whites are set.",
+        "Pile the tomatoes on the bread, top with the eggs and basil, then serve right away."
+      ],
+      "notes": [
+        "Food safety: fry the eggs until the whites are fully set; skip runny yolks for children, older adults and anyone pregnant.",
+        "Vegetarian."
+      ],
+      "nutrition": {
+        "kcal": 324,
+        "proteinG": 15,
+        "carbsG": 30,
+        "fatG": 16,
+        "fibreG": 3,
+        "sodiumMg": 360
+      }
     }
-   ],
-   "steps": [
-    "Heat the oven to 220°C (200°C fan). Toss the tomatoes with half the oil and a pinch of salt in a tin and roast for 12 minutes, until blistered and bursting.",
-    "Rub the toasted bread with the cut garlic and spread with the ricotta, until evenly covered.",
-    "Fry the eggs in the remaining oil in a non-stick pan over medium heat for 3 minutes, until the whites are set.",
-    "Pile the tomatoes on the bread, top with the eggs and basil, then serve right away."
-   ],
-   "notes": [
-    "Food safety: fry the eggs until the whites are fully set; skip runny yolks for children, older adults and anyone pregnant.",
-    "Vegetarian."
-   ],
-   "nutrition": {
-    "kcal": 324,
-    "proteinG": 15,
-    "carbsG": 30,
-    "fatG": 16,
-    "fibreG": 3,
-    "sodiumMg": 360
-   }
-  }
- ]
+  ]
 }

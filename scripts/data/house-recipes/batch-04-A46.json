@@ -1,1163 +1,1163 @@
 {
- "about": "Batch 04, slice A, chunk A46: plant-forward, gluten-free, dairy-free, egg-free and nut-free family dinners.",
- "recipes": [
-  {
-   "id": "blended-mushroom-and-beef-burgers-with-slaw",
-   "title": "Blended Mushroom and Beef Burgers with Slaw",
-   "summary": "Finely chopped mushrooms stretch the beef for juicy burgers with extra veg and less meat.",
-   "cuisine": "american",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 20,
-   "cookMinutes": 15,
-   "servings": 4,
-   "onePot": false,
-   "diets": [],
-   "ingredients": [
+  "about": "Batch 04, slice A, chunk A46: plant-forward, gluten-free, dairy-free, egg-free and nut-free family dinners.",
+  "recipes": [
     {
-     "items": [
-      "300g beef mince",
-      "200g mushroom, finely chopped",
-      "1 tbsp olive oil",
-      "1 clove garlic, crushed",
-      "1 tsp smoked paprika",
-      "1/2 tsp salt",
-      "4 burger bun",
-      "2 cup cabbage, shredded",
-      "1 carrot, grated",
-      "2 tbsp yoghurt",
-      "1 tbsp lemon juice"
-     ]
-    }
-   ],
-   "steps": [
-    "Fry the mushrooms in half the oil for 6 minutes until dry and golden, then cool a little. Mix with the mince, garlic, paprika and salt and shape into 4 patties.",
-    "Cook the patties in the remaining oil for 5 minutes a side until browned and cooked to 75°C.",
-    "Toss the cabbage, carrot, yoghurt and lemon juice together and pile into toasted buns with the patties."
-   ],
-   "notes": [
-    "Food safety: burger patties must reach 75°C right through with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
-    "Contains gluten and milk."
-   ],
-   "nutrition": {
-    "kcal": 430,
-    "proteinG": 28,
-    "carbsG": 38,
-    "fatG": 18,
-    "fibreG": 5,
-    "sodiumMg": 640
-   }
-  },
-  {
-   "id": "beef-and-lentil-chilli-with-rice",
-   "title": "Beef and Lentil Chilli with Rice",
-   "summary": "Half the beef is swapped for lentils in a smoky chilli that feeds a crowd for less.",
-   "cuisine": "mexican",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 40,
-   "servings": 6,
-   "onePot": true,
-   "diets": [
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "blended-mushroom-and-beef-burgers-with-slaw",
+      "title": "Blended Mushroom and Beef Burgers with Slaw",
+      "summary": "Finely chopped mushrooms stretch the beef for juicy burgers with extra veg and less meat.",
+      "cuisine": "american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "300g beef mince",
+            "200g mushroom, finely chopped",
+            "1 tbsp olive oil",
+            "1 clove garlic, crushed",
+            "1 tsp smoked paprika",
+            "1/2 tsp salt",
+            "4 burger bun",
+            "2 cup cabbage, shredded",
+            "1 carrot, grated",
+            "2 tbsp yoghurt",
+            "1 tbsp lemon juice"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the mushrooms in half the oil for 6 minutes until dry and golden, then cool a little. Mix with the mince, garlic, paprika and salt and shape into 4 patties.",
+        "Cook the patties in the remaining oil for 5 minutes a side until browned and cooked to 75°C.",
+        "Toss the cabbage, carrot, yoghurt and lemon juice together and pile into toasted buns with the patties."
+      ],
+      "notes": [
+        "Food safety: burger patties must reach 75°C right through with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
+        "Contains gluten and milk."
+      ],
+      "nutrition": {
+        "kcal": 430,
+        "proteinG": 28,
+        "carbsG": 38,
+        "fatG": 18,
+        "fibreG": 5,
+        "sodiumMg": 640
+      }
+    },
     {
-     "items": [
-      "300g beef mince",
-      "1 cup red lentils",
-      "1 tbsp olive oil",
-      "1 onion, diced",
-      "3 clove garlic, crushed",
-      "2 tsp ground cumin",
-      "2 tsp smoked paprika",
-      "400g tinned tomatoes",
-      "400g tinned kidney beans, drained",
-      "2 cup beef stock",
-      "1 1/2 cup basmati rice"
-     ]
-    }
-   ],
-   "steps": [
-    "Brown the mince in the oil for 6 minutes until no pink remains, then add the onion and garlic for 4 minutes until soft and stir in the spices for 1 minute.",
-    "Add the tomatoes, beans, lentils and stock and simmer for 25 minutes, stirring now and then, until the lentils are soft and the chilli is thick.",
-    "Cook the rice for 12 minutes until tender and serve with the chilli."
-   ],
-   "notes": [
-    "Food safety: mince must reach 75°C with no pink; refrigerate rice within 1 hour and leftovers within 2 hours."
-   ],
-   "nutrition": {
-    "kcal": 500,
-    "proteinG": 29,
-    "carbsG": 75,
-    "fatG": 10,
-    "fibreG": 13,
-    "sodiumMg": 620
-   }
-  },
-  {
-   "id": "cauliflower-and-chickpea-tikka-tray-bake",
-   "title": "Cauliflower and Chickpea Tikka Tray Bake",
-   "summary": "Tikka-spiced cauliflower and chickpeas roasted on one tray, served with yoghurt and rice.",
-   "cuisine": "indian",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 15,
-   "cookMinutes": 35,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "no-gluten"
-   ],
-   "ingredients": [
+      "id": "beef-and-lentil-chilli-with-rice",
+      "title": "Beef and Lentil Chilli with Rice",
+      "summary": "Half the beef is swapped for lentils in a smoky chilli that feeds a crowd for less.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 40,
+      "servings": 6,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g beef mince",
+            "1 cup red lentils",
+            "1 tbsp olive oil",
+            "1 onion, diced",
+            "3 clove garlic, crushed",
+            "2 tsp ground cumin",
+            "2 tsp smoked paprika",
+            "400g tinned tomatoes",
+            "400g tinned kidney beans, drained",
+            "2 cup beef stock",
+            "1 1/2 cup basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the mince in the oil for 6 minutes until no pink remains, then add the onion and garlic for 4 minutes until soft and stir in the spices for 1 minute.",
+        "Add the tomatoes, beans, lentils and stock and simmer for 25 minutes, stirring now and then, until the lentils are soft and the chilli is thick.",
+        "Cook the rice for 12 minutes until tender and serve with the chilli."
+      ],
+      "notes": [
+        "Food safety: mince must reach 75°C with no pink; refrigerate rice within 1 hour and leftovers within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 500,
+        "proteinG": 29,
+        "carbsG": 75,
+        "fatG": 10,
+        "fibreG": 13,
+        "sodiumMg": 620
+      }
+    },
     {
-     "items": [
-      "1 head cauliflower, cut into florets",
-      "800g tinned chickpeas, drained",
-      "1/2 cup yoghurt",
-      "2 tsp garam masala",
-      "1 tsp ground turmeric",
-      "1 tsp paprika",
-      "2 tbsp olive oil",
-      "1 red onion, cut in wedges",
-      "1 lemon, juiced",
-      "1 1/2 cup basmati rice",
-      "1/2 tsp salt"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oven to 220°C (200°C fan). Mix half the yoghurt with the spices, oil, salt and half the lemon juice and toss through the cauliflower, chickpeas and onion on a large tray.",
-    "Roast for 35 minutes, turning once, until the cauliflower is charred at the edges.",
-    "Cook the rice for 12 minutes until tender. Stir the remaining lemon juice into the remaining yoghurt and serve over the tray bake and rice."
-   ],
-   "notes": [
-    "Contains milk. Refrigerate rice within 1 hour and leftovers within 2 hours."
-   ],
-   "nutrition": {
-    "kcal": 490,
-    "proteinG": 18,
-    "carbsG": 78,
-    "fatG": 12,
-    "fibreG": 13,
-    "sodiumMg": 590
-   }
-  },
-  {
-   "id": "tofu-and-vegetable-coconut-curry",
-   "title": "Tofu and Vegetable Coconut Curry",
-   "summary": "Golden tofu and seasonal vegetables simmered in a mild coconut curry sauce.",
-   "cuisine": "thai",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 15,
-   "cookMinutes": 25,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "pescatarian",
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "cauliflower-and-chickpea-tikka-tray-bake",
+      "title": "Cauliflower and Chickpea Tikka Tray Bake",
+      "summary": "Tikka-spiced cauliflower and chickpeas roasted on one tray, served with yoghurt and rice.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 head cauliflower, cut into florets",
+            "800g tinned chickpeas, drained",
+            "1/2 cup yoghurt",
+            "2 tsp garam masala",
+            "1 tsp ground turmeric",
+            "1 tsp paprika",
+            "2 tbsp olive oil",
+            "1 red onion, cut in wedges",
+            "1 lemon, juiced",
+            "1 1/2 cup basmati rice",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (200°C fan). Mix half the yoghurt with the spices, oil, salt and half the lemon juice and toss through the cauliflower, chickpeas and onion on a large tray.",
+        "Roast for 35 minutes, turning once, until the cauliflower is charred at the edges.",
+        "Cook the rice for 12 minutes until tender. Stir the remaining lemon juice into the remaining yoghurt and serve over the tray bake and rice."
+      ],
+      "notes": [
+        "Contains milk. Refrigerate rice within 1 hour and leftovers within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 490,
+        "proteinG": 18,
+        "carbsG": 78,
+        "fatG": 12,
+        "fibreG": 13,
+        "sodiumMg": 590
+      }
+    },
     {
-     "items": [
-      "400g firm tofu, cubed",
-      "2 tbsp vegetable oil",
-      "1 onion, sliced",
-      "2 clove garlic, crushed",
-      "1 tbsp ginger, grated",
-      "2 tbsp red curry paste",
-      "400ml coconut milk",
-      "1 cup vegetable stock",
-      "1 capsicum, sliced",
-      "200g green beans",
-      "1 zucchini, sliced",
-      "1 tbsp lime juice",
-      "1 1/2 cup jasmine rice"
-     ]
-    }
-   ],
-   "steps": [
-    "Fry the tofu in half the oil for 8 minutes until golden on all sides, then set aside.",
-    "Soften the onion in the remaining oil for 4 minutes, stir in the garlic, ginger and curry paste for 1 minute, then add the coconut milk and stock.",
-    "Add the capsicum, beans and zucchini and simmer for 10 minutes until tender, then return the tofu with the lime juice. Cook the rice for 12 minutes until tender and serve."
-   ],
-   "notes": [
-    "Contains soy. Refrigerate rice within 1 hour and leftovers within 2 hours."
-   ],
-   "nutrition": {
-    "kcal": 640,
-    "proteinG": 19,
-    "carbsG": 64,
-    "fatG": 32,
-    "fibreG": 6,
-    "sodiumMg": 560
-   }
-  },
-  {
-   "id": "black-bean-and-sweet-potato-enchilada-bake",
-   "title": "Black Bean and Sweet Potato Enchilada Bake",
-   "summary": "Roasted sweet potato and black beans rolled in tortillas under red sauce and melted cheese.",
-   "cuisine": "mexican",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 25,
-   "cookMinutes": 40,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian"
-   ],
-   "ingredients": [
+      "id": "tofu-and-vegetable-coconut-curry",
+      "title": "Tofu and Vegetable Coconut Curry",
+      "summary": "Golden tofu and seasonal vegetables simmered in a mild coconut curry sauce.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g firm tofu, cubed",
+            "2 tbsp vegetable oil",
+            "1 onion, sliced",
+            "2 clove garlic, crushed",
+            "1 tbsp ginger, grated",
+            "2 tbsp red curry paste",
+            "400ml coconut milk",
+            "1 cup vegetable stock",
+            "1 capsicum, sliced",
+            "200g green beans",
+            "1 zucchini, sliced",
+            "1 tbsp lime juice",
+            "1 1/2 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the tofu in half the oil for 8 minutes until golden on all sides, then set aside.",
+        "Soften the onion in the remaining oil for 4 minutes, stir in the garlic, ginger and curry paste for 1 minute, then add the coconut milk and stock.",
+        "Add the capsicum, beans and zucchini and simmer for 10 minutes until tender, then return the tofu with the lime juice. Cook the rice for 12 minutes until tender and serve."
+      ],
+      "notes": [
+        "Contains soy. Refrigerate rice within 1 hour and leftovers within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 640,
+        "proteinG": 19,
+        "carbsG": 64,
+        "fatG": 32,
+        "fibreG": 6,
+        "sodiumMg": 560
+      }
+    },
     {
-     "items": [
-      "500g sweet potato, cubed",
-      "2 tbsp olive oil",
-      "2 tsp ground cumin",
-      "400g tinned black beans, drained",
-      "1 cup corn kernels",
-      "1 1/2 cup tomato passata",
-      "1 tsp smoked paprika",
-      "2 clove garlic, crushed",
-      "8 flour tortilla",
-      "1 cup cheddar, grated",
-      "1/2 tsp salt"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oven to 220°C (200°C fan). Roast the sweet potato with the oil, cumin and salt for 20 minutes until soft and golden. Mix with the beans and corn.",
-    "Simmer the passata, paprika and garlic for 5 minutes. Spread a third in a dish, fill the tortillas with the mix, roll and place seam-down.",
-    "Pour over the rest of the sauce, top with the cheddar and bake at 200°C (180°C fan) for 15 minutes until bubbling."
-   ],
-   "notes": [
-    "Contains gluten and milk. Refrigerate leftovers within 2 hours and eat within 3 days."
-   ],
-   "nutrition": {
-    "kcal": 690,
-    "proteinG": 20,
-    "carbsG": 100,
-    "fatG": 22,
-    "fibreG": 14,
-    "sodiumMg": 900
-   }
-  },
-  {
-   "id": "gluten-free-chicken-and-vegetable-rice-bowls",
-   "title": "Gluten-Free Chicken and Vegetable Rice Bowls",
-   "summary": "Herby roast chicken and vegetables over fluffy rice, with nothing containing gluten.",
-   "cuisine": "modern-australian",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 15,
-   "cookMinutes": 30,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "black-bean-and-sweet-potato-enchilada-bake",
+      "title": "Black Bean and Sweet Potato Enchilada Bake",
+      "summary": "Roasted sweet potato and black beans rolled in tortillas under red sauce and melted cheese.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g sweet potato, cubed",
+            "2 tbsp olive oil",
+            "2 tsp ground cumin",
+            "400g tinned black beans, drained",
+            "1 cup corn kernels",
+            "1 1/2 cup tomato passata",
+            "1 tsp smoked paprika",
+            "2 clove garlic, crushed",
+            "8 flour tortilla",
+            "1 cup cheddar, grated",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (200°C fan). Roast the sweet potato with the oil, cumin and salt for 20 minutes until soft and golden. Mix with the beans and corn.",
+        "Simmer the passata, paprika and garlic for 5 minutes. Spread a third in a dish, fill the tortillas with the mix, roll and place seam-down.",
+        "Pour over the rest of the sauce, top with the cheddar and bake at 200°C (180°C fan) for 15 minutes until bubbling."
+      ],
+      "notes": [
+        "Contains gluten and milk. Refrigerate leftovers within 2 hours and eat within 3 days."
+      ],
+      "nutrition": {
+        "kcal": 690,
+        "proteinG": 20,
+        "carbsG": 100,
+        "fatG": 22,
+        "fibreG": 14,
+        "sodiumMg": 900
+      }
+    },
     {
-     "items": [
-      "600g chicken thigh, diced",
-      "2 tbsp olive oil",
-      "1 tsp smoked paprika",
-      "1 tsp dried oregano",
-      "1 zucchini, sliced",
-      "1 capsicum, diced",
-      "1 red onion, cut in wedges",
-      "1 lemon, juiced",
-      "1 1/2 cup basmati rice",
-      "1/2 tsp salt"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oven to 220°C (200°C fan). Toss the chicken and vegetables with the oil, paprika, oregano and salt on a tray.",
-    "Roast for 25 minutes, turning once, until the chicken is cooked to 75°C and the vegetables are charred.",
-    "Cook the rice for 12 minutes until tender. Spoon the chicken and vegetables over the rice and squeeze over the lemon."
-   ],
-   "notes": [
-    "Food safety: chicken must reach 75°C with no pink; refrigerate rice within 1 hour and leftovers within 2 hours."
-   ],
-   "nutrition": {
-    "kcal": 580,
-    "proteinG": 38,
-    "carbsG": 62,
-    "fatG": 20,
-    "fibreG": 3,
-    "sodiumMg": 540
-   }
-  },
-  {
-   "id": "gluten-free-pork-meatballs-with-creamy-polenta",
-   "title": "Gluten-Free Pork Meatballs with Creamy Polenta",
-   "summary": "Tender pork meatballs bound with rice flour, in tomato sauce over soft polenta.",
-   "cuisine": "italian",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 20,
-   "cookMinutes": 35,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "no-gluten"
-   ],
-   "ingredients": [
+      "id": "gluten-free-chicken-and-vegetable-rice-bowls",
+      "title": "Gluten-Free Chicken and Vegetable Rice Bowls",
+      "summary": "Herby roast chicken and vegetables over fluffy rice, with nothing containing gluten.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g chicken thigh, diced",
+            "2 tbsp olive oil",
+            "1 tsp smoked paprika",
+            "1 tsp dried oregano",
+            "1 zucchini, sliced",
+            "1 capsicum, diced",
+            "1 red onion, cut in wedges",
+            "1 lemon, juiced",
+            "1 1/2 cup basmati rice",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (200°C fan). Toss the chicken and vegetables with the oil, paprika, oregano and salt on a tray.",
+        "Roast for 25 minutes, turning once, until the chicken is cooked to 75°C and the vegetables are charred.",
+        "Cook the rice for 12 minutes until tender. Spoon the chicken and vegetables over the rice and squeeze over the lemon."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C with no pink; refrigerate rice within 1 hour and leftovers within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 580,
+        "proteinG": 38,
+        "carbsG": 62,
+        "fatG": 20,
+        "fibreG": 3,
+        "sodiumMg": 540
+      }
+    },
     {
-     "items": [
-      "500g pork mince",
-      "1/4 cup rice flour",
-      "1 egg",
-      "2 clove garlic, crushed",
-      "1 tsp dried oregano",
-      "1 tbsp olive oil",
-      "400g tinned tomatoes",
-      "1 cup polenta",
-      "4 cup water",
-      "1/2 cup parmesan, grated",
-      "1/2 tsp salt"
-     ]
-    }
-   ],
-   "steps": [
-    "Mix the mince, rice flour, egg, half the garlic, oregano and half the salt and roll into 16 balls. Brown in the oil for 6 minutes.",
-    "Add the tomatoes and remaining garlic and simmer for 15 minutes until the meatballs reach 75°C and the sauce is thick.",
-    "Whisk the polenta into the boiling water with the remaining salt and cook for 8 minutes, stirring, until thick. Stir in the parmesan and serve under the meatballs."
-   ],
-   "notes": [
-    "Food safety: pork mince meatballs must reach 75°C right through with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
-    "Contains egg and milk."
-   ],
-   "nutrition": {
-    "kcal": 560,
-    "proteinG": 36,
-    "carbsG": 48,
-    "fatG": 24,
-    "fibreG": 4,
-    "sodiumMg": 820
-   }
-  },
-  {
-   "id": "gluten-free-beef-and-potato-tray-roast",
-   "title": "Gluten-Free Beef and Potato Tray Roast",
-   "summary": "Beef strips roasted with potatoes, carrots and rosemary, with a rice-flour-thickened pan sauce.",
-   "cuisine": "british",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 15,
-   "cookMinutes": 40,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "gluten-free-pork-meatballs-with-creamy-polenta",
+      "title": "Gluten-Free Pork Meatballs with Creamy Polenta",
+      "summary": "Tender pork meatballs bound with rice flour, in tomato sauce over soft polenta.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g pork mince",
+            "1/4 cup rice flour",
+            "1 egg",
+            "2 clove garlic, crushed",
+            "1 tsp dried oregano",
+            "1 tbsp olive oil",
+            "400g tinned tomatoes",
+            "1 cup polenta",
+            "4 cup water",
+            "1/2 cup parmesan, grated",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the mince, rice flour, egg, half the garlic, oregano and half the salt and roll into 16 balls. Brown in the oil for 6 minutes.",
+        "Add the tomatoes and remaining garlic and simmer for 15 minutes until the meatballs reach 75°C and the sauce is thick.",
+        "Whisk the polenta into the boiling water with the remaining salt and cook for 8 minutes, stirring, until thick. Stir in the parmesan and serve under the meatballs."
+      ],
+      "notes": [
+        "Food safety: pork mince meatballs must reach 75°C right through with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
+        "Contains egg and milk."
+      ],
+      "nutrition": {
+        "kcal": 560,
+        "proteinG": 36,
+        "carbsG": 48,
+        "fatG": 24,
+        "fibreG": 4,
+        "sodiumMg": 820
+      }
+    },
     {
-     "items": [
-      "600g beef steak, cut in chunks",
-      "600g potato, cubed",
-      "2 carrot, cut in chunks",
-      "1 onion, cut in wedges",
-      "3 tbsp olive oil",
-      "2 sprig rosemary",
-      "1 tsp salt",
-      "1 tbsp rice flour",
-      "1 cup water",
-      "1 tbsp tomato paste"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oven to 220°C (200°C fan). Toss the potato, carrot and onion with two-thirds of the oil, rosemary and half the salt and roast for 25 minutes.",
-    "Toss the beef with the remaining oil and salt, add to the tray and roast for 12 minutes until browned and 71°C inside.",
-    "Whisk the rice flour into the water with the tomato paste, pour into a pan with the tray juices and simmer for 3 minutes until glossy and thick. Serve over the tray."
-   ],
-   "notes": [
-    "Food safety: beef chunks should reach 71°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
-   ],
-   "nutrition": {
-    "kcal": 560,
-    "proteinG": 38,
-    "carbsG": 44,
-    "fatG": 26,
-    "fibreG": 6,
-    "sodiumMg": 720
-   }
-  },
-  {
-   "id": "gluten-free-chicken-and-rice-soup",
-   "title": "Gluten-Free Chicken and Rice Soup",
-   "summary": "A soothing soup of chicken, rice and vegetables that works for the whole family.",
-   "cuisine": "modern-australian",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 30,
-   "servings": 4,
-   "onePot": true,
-   "diets": [
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "gluten-free-beef-and-potato-tray-roast",
+      "title": "Gluten-Free Beef and Potato Tray Roast",
+      "summary": "Beef strips roasted with potatoes, carrots and rosemary, with a rice-flour-thickened pan sauce.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g beef steak, cut in chunks",
+            "600g potato, cubed",
+            "2 carrot, cut in chunks",
+            "1 onion, cut in wedges",
+            "3 tbsp olive oil",
+            "2 sprig rosemary",
+            "1 tsp salt",
+            "1 tbsp rice flour",
+            "1 cup water",
+            "1 tbsp tomato paste"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (200°C fan). Toss the potato, carrot and onion with two-thirds of the oil, rosemary and half the salt and roast for 25 minutes.",
+        "Toss the beef with the remaining oil and salt, add to the tray and roast for 12 minutes until browned and 71°C inside.",
+        "Whisk the rice flour into the water with the tomato paste, pour into a pan with the tray juices and simmer for 3 minutes until glossy and thick. Serve over the tray."
+      ],
+      "notes": [
+        "Food safety: beef chunks should reach 71°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 560,
+        "proteinG": 38,
+        "carbsG": 44,
+        "fatG": 26,
+        "fibreG": 6,
+        "sodiumMg": 720
+      }
+    },
     {
-     "items": [
-      "400g chicken thigh, diced",
-      "1 tbsp olive oil",
-      "1 onion, diced",
-      "2 carrot, diced",
-      "2 celery, diced",
-      "2 clove garlic, crushed",
-      "1 cup basmati rice",
-      "6 cup water",
-      "1 tsp salt",
-      "1 lemon, juiced",
-      "1/4 cup parsley, chopped"
-     ]
-    }
-   ],
-   "steps": [
-    "Soften the onion, carrot, celery and garlic in the oil for 6 minutes until tender.",
-    "Add the chicken, rice, water and salt, bring to the boil and simmer for 18 minutes until the rice is tender and the chicken reaches 75°C.",
-    "Stir in the lemon juice and parsley."
-   ],
-   "notes": [
-    "Food safety: chicken must reach 75°C with no pink; refrigerate rice within 1 hour and leftovers within 2 hours, and reheat until steaming hot."
-   ],
-   "nutrition": {
-    "kcal": 390,
-    "proteinG": 24,
-    "carbsG": 46,
-    "fatG": 11,
-    "fibreG": 3,
-    "sodiumMg": 780
-   }
-  },
-  {
-   "id": "gluten-free-fish-and-polenta-chips-with-peas",
-   "title": "Gluten-Free Fish and Polenta Chips with Peas",
-   "summary": "Crisp-coated baked fish and golden polenta chips with minty mashed peas.",
-   "cuisine": "british",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 20,
-   "cookMinutes": 30,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "pescatarian",
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "gluten-free-chicken-and-rice-soup",
+      "title": "Gluten-Free Chicken and Rice Soup",
+      "summary": "A soothing soup of chicken, rice and vegetables that works for the whole family.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g chicken thigh, diced",
+            "1 tbsp olive oil",
+            "1 onion, diced",
+            "2 carrot, diced",
+            "2 celery, diced",
+            "2 clove garlic, crushed",
+            "1 cup basmati rice",
+            "6 cup water",
+            "1 tsp salt",
+            "1 lemon, juiced",
+            "1/4 cup parsley, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion, carrot, celery and garlic in the oil for 6 minutes until tender.",
+        "Add the chicken, rice, water and salt, bring to the boil and simmer for 18 minutes until the rice is tender and the chicken reaches 75°C.",
+        "Stir in the lemon juice and parsley."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C with no pink; refrigerate rice within 1 hour and leftovers within 2 hours, and reheat until steaming hot."
+      ],
+      "nutrition": {
+        "kcal": 390,
+        "proteinG": 24,
+        "carbsG": 46,
+        "fatG": 11,
+        "fibreG": 3,
+        "sodiumMg": 780
+      }
+    },
     {
-     "items": [
-      "4 white fish fillet",
-      "1/2 cup rice flour",
-      "1 egg",
-      "1/2 cup polenta",
-      "1 tsp paprika",
-      "2 tbsp olive oil",
-      "1 cup polenta",
-      "4 cup water",
-      "1 1/2 cup frozen peas",
-      "1 tbsp mint, chopped",
-      "1/2 tsp salt"
-     ]
-    }
-   ],
-   "steps": [
-    "Boil the 1 cup polenta in the water with half the salt for 8 minutes until thick, pour into a tray and chill for 20 minutes, then cut into chips.",
-    "Heat the oven to 220°C (200°C fan). Coat the fish in rice flour, egg, then the dry polenta mixed with paprika. Bake the fish and chips with the oil on trays for 20 minutes until golden and the fish flakes.",
-    "Simmer the peas for 3 minutes until tender, mash with the mint and remaining salt and serve."
-   ],
-   "notes": [
-    "Food safety: fish should be opaque and flake easily, reaching 63°C; refrigerate leftovers within 2 hours and eat within 1 day.",
-    "Contains egg and fish."
-   ],
-   "nutrition": {
-    "kcal": 470,
-    "proteinG": 38,
-    "carbsG": 54,
-    "fatG": 12,
-    "fibreG": 7,
-    "sodiumMg": 560
-   }
-  },
-  {
-   "id": "dairy-free-coconut-chicken-curry",
-   "title": "Dairy-Free Coconut Chicken Curry",
-   "summary": "A creamy, mild curry made with coconut milk instead of cream or yoghurt.",
-   "cuisine": "indian",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 15,
-   "cookMinutes": 30,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "gluten-free-fish-and-polenta-chips-with-peas",
+      "title": "Gluten-Free Fish and Polenta Chips with Peas",
+      "summary": "Crisp-coated baked fish and golden polenta chips with minty mashed peas.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 white fish fillet",
+            "1/2 cup rice flour",
+            "1 egg",
+            "1/2 cup polenta",
+            "1 tsp paprika",
+            "2 tbsp olive oil",
+            "1 cup polenta",
+            "4 cup water",
+            "1 1/2 cup frozen peas",
+            "1 tbsp mint, chopped",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the 1 cup polenta in the water with half the salt for 8 minutes until thick, pour into a tray and chill for 20 minutes, then cut into chips.",
+        "Heat the oven to 220°C (200°C fan). Coat the fish in rice flour, egg, then the dry polenta mixed with paprika. Bake the fish and chips with the oil on trays for 20 minutes until golden and the fish flakes.",
+        "Simmer the peas for 3 minutes until tender, mash with the mint and remaining salt and serve."
+      ],
+      "notes": [
+        "Food safety: fish should be opaque and flake easily, reaching 63°C; refrigerate leftovers within 2 hours and eat within 1 day.",
+        "Contains egg and fish."
+      ],
+      "nutrition": {
+        "kcal": 470,
+        "proteinG": 38,
+        "carbsG": 54,
+        "fatG": 12,
+        "fibreG": 7,
+        "sodiumMg": 560
+      }
+    },
     {
-     "items": [
-      "600g chicken thigh, diced",
-      "2 tbsp vegetable oil",
-      "1 onion, diced",
-      "3 clove garlic, crushed",
-      "1 tbsp ginger, grated",
-      "2 tbsp curry powder",
-      "400ml coconut milk",
-      "400g tinned tomatoes",
-      "200g spinach",
-      "1 1/2 cup basmati rice",
-      "1/2 tsp salt"
-     ]
-    }
-   ],
-   "steps": [
-    "Brown the chicken in the oil for 5 minutes, add the onion, garlic and ginger for 4 minutes until soft, then stir in the curry powder for 1 minute.",
-    "Add the coconut milk, tomatoes and salt and simmer for 18 minutes until thick and the chicken reaches 75°C. Stir in the spinach until wilted.",
-    "Cook the rice for 12 minutes until tender and serve."
-   ],
-   "notes": [
-    "Food safety: chicken must reach 75°C with no pink; refrigerate rice within 1 hour and leftovers within 2 hours."
-   ],
-   "nutrition": {
-    "kcal": 770,
-    "proteinG": 40,
-    "carbsG": 72,
-    "fatG": 32,
-    "fibreG": 4,
-    "sodiumMg": 600
-   }
-  },
-  {
-   "id": "dairy-free-tuscan-chicken-with-coconut-cream",
-   "title": "Dairy-Free Tuscan Chicken with Coconut Cream",
-   "summary": "Chicken in a garlicky sun-dried tomato and spinach sauce, creamed with coconut milk.",
-   "cuisine": "italian",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 25,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "dairy-free-coconut-chicken-curry",
+      "title": "Dairy-Free Coconut Chicken Curry",
+      "summary": "A creamy, mild curry made with coconut milk instead of cream or yoghurt.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g chicken thigh, diced",
+            "2 tbsp vegetable oil",
+            "1 onion, diced",
+            "3 clove garlic, crushed",
+            "1 tbsp ginger, grated",
+            "2 tbsp curry powder",
+            "400ml coconut milk",
+            "400g tinned tomatoes",
+            "200g spinach",
+            "1 1/2 cup basmati rice",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the chicken in the oil for 5 minutes, add the onion, garlic and ginger for 4 minutes until soft, then stir in the curry powder for 1 minute.",
+        "Add the coconut milk, tomatoes and salt and simmer for 18 minutes until thick and the chicken reaches 75°C. Stir in the spinach until wilted.",
+        "Cook the rice for 12 minutes until tender and serve."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C with no pink; refrigerate rice within 1 hour and leftovers within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 770,
+        "proteinG": 40,
+        "carbsG": 72,
+        "fatG": 32,
+        "fibreG": 4,
+        "sodiumMg": 600
+      }
+    },
     {
-     "items": [
-      "4 chicken breast",
-      "2 tbsp olive oil",
-      "3 clove garlic, crushed",
-      "1/3 cup sun-dried tomatoes, sliced",
-      "1 tsp dried oregano",
-      "1 cup chicken stock",
-      "1/2 cup coconut milk",
-      "150g spinach",
-      "500g baby potato, halved",
-      "1/2 tsp salt"
-     ]
-    }
-   ],
-   "steps": [
-    "Boil the potatoes for 15 minutes until tender and drain.",
-    "Sear the chicken in the oil for 5 minutes a side until golden, then set aside. Add the garlic, tomatoes and oregano for 1 minute, pour in the stock and coconut milk and simmer for 5 minutes until slightly thick.",
-    "Return the chicken for 5 minutes until it reaches 75°C, stir in the spinach and salt until wilted and serve with the potatoes."
-   ],
-   "notes": [
-    "Food safety: chicken must reach 75°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
-   ],
-   "nutrition": {
-    "kcal": 520,
-    "proteinG": 48,
-    "carbsG": 34,
-    "fatG": 22,
-    "fibreG": 5,
-    "sodiumMg": 780
-   }
-  },
-  {
-   "id": "dairy-free-beef-and-broccoli-stir-fry-with-noodles",
-   "title": "Dairy-Free Beef and Broccoli Stir-Fry with Noodles",
-   "summary": "Tender beef and broccoli in a garlicky ginger sauce tossed through egg noodles.",
-   "cuisine": "chinese",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 15,
-   "cookMinutes": 15,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "dairy-free-tuscan-chicken-with-coconut-cream",
+      "title": "Dairy-Free Tuscan Chicken with Coconut Cream",
+      "summary": "Chicken in a garlicky sun-dried tomato and spinach sauce, creamed with coconut milk.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 chicken breast",
+            "2 tbsp olive oil",
+            "3 clove garlic, crushed",
+            "1/3 cup sun-dried tomatoes, sliced",
+            "1 tsp dried oregano",
+            "1 cup chicken stock",
+            "1/2 cup coconut milk",
+            "150g spinach",
+            "500g baby potato, halved",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potatoes for 15 minutes until tender and drain.",
+        "Sear the chicken in the oil for 5 minutes a side until golden, then set aside. Add the garlic, tomatoes and oregano for 1 minute, pour in the stock and coconut milk and simmer for 5 minutes until slightly thick.",
+        "Return the chicken for 5 minutes until it reaches 75°C, stir in the spinach and salt until wilted and serve with the potatoes."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 520,
+        "proteinG": 48,
+        "carbsG": 34,
+        "fatG": 22,
+        "fibreG": 5,
+        "sodiumMg": 780
+      }
+    },
     {
-     "items": [
-      "500g beef steak, thin strips",
-      "1 tbsp cornflour",
-      "2 tbsp vegetable oil",
-      "1 head broccoli, cut into florets",
-      "3 clove garlic, crushed",
-      "1 tbsp ginger, grated",
-      "3 tbsp soy sauce",
-      "1 tbsp honey",
-      "1/2 cup water",
-      "250g egg noodles"
-     ]
-    }
-   ],
-   "steps": [
-    "Toss the beef with the cornflour. Boil the noodles for 4 minutes until tender and drain.",
-    "Stir-fry the beef in half the oil for 3 minutes until browned and 71°C inside, then set aside. Stir-fry the broccoli, garlic and ginger in the remaining oil for 3 minutes.",
-    "Add the soy sauce, honey and water and simmer for 2 minutes until glossy, then toss with the beef and noodles."
-   ],
-   "notes": [
-    "Food safety: beef strips should reach 71°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
-    "Contains gluten, soy and egg."
-   ],
-   "nutrition": {
-    "kcal": 540,
-    "proteinG": 38,
-    "carbsG": 56,
-    "fatG": 18,
-    "fibreG": 5,
-    "sodiumMg": 1020
-   }
-  },
-  {
-   "id": "dairy-free-creamy-mushroom-pasta-with-coconut",
-   "title": "Dairy-Free Creamy Mushroom Pasta with Coconut",
-   "summary": "Garlicky mushrooms in a silky coconut sauce, with no dairy and no nuts.",
-   "cuisine": "italian",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 20,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "vegan",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "dairy-free-beef-and-broccoli-stir-fry-with-noodles",
+      "title": "Dairy-Free Beef and Broccoli Stir-Fry with Noodles",
+      "summary": "Tender beef and broccoli in a garlicky ginger sauce tossed through egg noodles.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g beef steak, thin strips",
+            "1 tbsp cornflour",
+            "2 tbsp vegetable oil",
+            "1 head broccoli, cut into florets",
+            "3 clove garlic, crushed",
+            "1 tbsp ginger, grated",
+            "3 tbsp soy sauce",
+            "1 tbsp honey",
+            "1/2 cup water",
+            "250g egg noodles"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the beef with the cornflour. Boil the noodles for 4 minutes until tender and drain.",
+        "Stir-fry the beef in half the oil for 3 minutes until browned and 71°C inside, then set aside. Stir-fry the broccoli, garlic and ginger in the remaining oil for 3 minutes.",
+        "Add the soy sauce, honey and water and simmer for 2 minutes until glossy, then toss with the beef and noodles."
+      ],
+      "notes": [
+        "Food safety: beef strips should reach 71°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
+        "Contains gluten, soy and egg."
+      ],
+      "nutrition": {
+        "kcal": 540,
+        "proteinG": 38,
+        "carbsG": 56,
+        "fatG": 18,
+        "fibreG": 5,
+        "sodiumMg": 1020
+      }
+    },
     {
-     "items": [
-      "320g penne",
-      "2 tbsp olive oil",
-      "400g mushroom, sliced",
-      "3 clove garlic, crushed",
-      "1 tsp dried thyme",
-      "1/2 cup white wine",
-      "1 cup coconut milk",
-      "150g spinach",
-      "1/2 tsp salt"
-     ]
-    }
-   ],
-   "steps": [
-    "Boil the penne for 10 minutes until al dente and keep half a cup of the water.",
-    "Cook the mushrooms in the oil for 8 minutes until golden, add the garlic and thyme for 1 minute, then the wine and simmer for 2 minutes.",
-    "Add the coconut milk and salt and simmer for 3 minutes until slightly thick, stir in the spinach until wilted, then toss with the pasta and a splash of the water."
-   ],
-   "notes": [
-    "Contains gluten. Refrigerate leftovers within 2 hours and eat within 3 days."
-   ],
-   "nutrition": {
-    "kcal": 480,
-    "proteinG": 13,
-    "carbsG": 66,
-    "fatG": 18,
-    "fibreG": 5,
-    "sodiumMg": 320
-   }
-  },
-  {
-   "id": "dairy-free-salmon-fishcakes-with-herby-potato",
-   "title": "Dairy-Free Salmon Fishcakes with Herby Potato",
-   "summary": "Crisp salmon and potato cakes with dill and lemon, served with a green salad.",
-   "cuisine": "british",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 25,
-   "cookMinutes": 20,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "pescatarian",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "dairy-free-creamy-mushroom-pasta-with-coconut",
+      "title": "Dairy-Free Creamy Mushroom Pasta with Coconut",
+      "summary": "Garlicky mushrooms in a silky coconut sauce, with no dairy and no nuts.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "320g penne",
+            "2 tbsp olive oil",
+            "400g mushroom, sliced",
+            "3 clove garlic, crushed",
+            "1 tsp dried thyme",
+            "1/2 cup white wine",
+            "1 cup coconut milk",
+            "150g spinach",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the penne for 10 minutes until al dente and keep half a cup of the water.",
+        "Cook the mushrooms in the oil for 8 minutes until golden, add the garlic and thyme for 1 minute, then the wine and simmer for 2 minutes.",
+        "Add the coconut milk and salt and simmer for 3 minutes until slightly thick, stir in the spinach until wilted, then toss with the pasta and a splash of the water."
+      ],
+      "notes": [
+        "Contains gluten. Refrigerate leftovers within 2 hours and eat within 3 days."
+      ],
+      "nutrition": {
+        "kcal": 480,
+        "proteinG": 13,
+        "carbsG": 66,
+        "fatG": 18,
+        "fibreG": 5,
+        "sodiumMg": 320
+      }
+    },
     {
-     "items": [
-      "500g potato, peeled and cubed",
-      "400g salmon fillet",
-      "1 egg",
-      "2 tbsp dill, chopped",
-      "1 lemon, zested and juiced",
-      "1/2 cup breadcrumbs",
-      "3 tbsp olive oil",
-      "1/2 tsp salt",
-      "100g salad leaves"
-     ]
-    }
-   ],
-   "steps": [
-    "Boil the potato for 15 minutes until soft, drain and mash with the salt. Poach the salmon in simmering water for 6 minutes until it flakes, then flake into the mash with the egg, dill and zest.",
-    "Shape into 8 cakes, press into the breadcrumbs and chill for 10 minutes.",
-    "Fry in the oil for 4 minutes a side until golden and hot through. Dress the leaves with the juice and serve."
-   ],
-   "notes": [
-    "Food safety: salmon should reach 63°C and the cakes 75°C in the centre; refrigerate leftovers within 2 hours and eat within 1 day.",
-    "Contains fish, egg and gluten."
-   ],
-   "nutrition": {
-    "kcal": 420,
-    "proteinG": 29,
-    "carbsG": 38,
-    "fatG": 17,
-    "fibreG": 4,
-    "sodiumMg": 420
-   }
-  },
-  {
-   "id": "egg-free-chicken-schnitzel-with-mustard-crumb",
-   "title": "Egg-Free Chicken Schnitzel with Mustard Crumb",
-   "summary": "Crunchy schnitzel where mustard and milk replace the egg, served with lemony cabbage slaw.",
-   "cuisine": "central-european",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 15,
-   "cookMinutes": 15,
-   "servings": 4,
-   "onePot": false,
-   "diets": [],
-   "ingredients": [
+      "id": "dairy-free-salmon-fishcakes-with-herby-potato",
+      "title": "Dairy-Free Salmon Fishcakes with Herby Potato",
+      "summary": "Crisp salmon and potato cakes with dill and lemon, served with a green salad.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g potato, peeled and cubed",
+            "400g salmon fillet",
+            "1 egg",
+            "2 tbsp dill, chopped",
+            "1 lemon, zested and juiced",
+            "1/2 cup breadcrumbs",
+            "3 tbsp olive oil",
+            "1/2 tsp salt",
+            "100g salad leaves"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the potato for 15 minutes until soft, drain and mash with the salt. Poach the salmon in simmering water for 6 minutes until it flakes, then flake into the mash with the egg, dill and zest.",
+        "Shape into 8 cakes, press into the breadcrumbs and chill for 10 minutes.",
+        "Fry in the oil for 4 minutes a side until golden and hot through. Dress the leaves with the juice and serve."
+      ],
+      "notes": [
+        "Food safety: salmon should reach 63°C and the cakes 75°C in the centre; refrigerate leftovers within 2 hours and eat within 1 day.",
+        "Contains fish, egg and gluten."
+      ],
+      "nutrition": {
+        "kcal": 420,
+        "proteinG": 29,
+        "carbsG": 38,
+        "fatG": 17,
+        "fibreG": 4,
+        "sodiumMg": 420
+      }
+    },
     {
-     "items": [
-      "4 chicken breast, thin cut",
-      "1/4 cup flour",
-      "2 tbsp mustard",
-      "1/4 cup milk",
-      "1 cup breadcrumbs",
-      "1/4 cup olive oil",
-      "2 cup cabbage, shredded",
-      "1 lemon, juiced",
-      "1/2 tsp salt"
-     ]
-    }
-   ],
-   "steps": [
-    "Whisk the mustard into the milk. Coat the chicken in flour, then the mustard milk, then the breadcrumbs.",
-    "Shallow-fry in the oil for 4 minutes a side until golden and the chicken reaches 75°C.",
-    "Toss the cabbage with the lemon juice and salt and serve with the schnitzel."
-   ],
-   "notes": [
-    "Food safety: chicken must reach 75°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
-    "Egg-free recipe. Contains gluten and milk."
-   ],
-   "nutrition": {
-    "kcal": 470,
-    "proteinG": 46,
-    "carbsG": 28,
-    "fatG": 19,
-    "fibreG": 3,
-    "sodiumMg": 720
-   }
-  },
-  {
-   "id": "egg-free-chickpea-burgers-with-yoghurt-sauce",
-   "title": "Egg-Free Chickpea Burgers with Yoghurt Sauce",
-   "summary": "Herby chickpea patties that hold together with oats rather than egg.",
-   "cuisine": "middle-eastern",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 20,
-   "cookMinutes": 15,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian"
-   ],
-   "ingredients": [
+      "id": "egg-free-chicken-schnitzel-with-mustard-crumb",
+      "title": "Egg-Free Chicken Schnitzel with Mustard Crumb",
+      "summary": "Crunchy schnitzel where mustard and milk replace the egg, served with lemony cabbage slaw.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "4 chicken breast, thin cut",
+            "1/4 cup flour",
+            "2 tbsp mustard",
+            "1/4 cup milk",
+            "1 cup breadcrumbs",
+            "1/4 cup olive oil",
+            "2 cup cabbage, shredded",
+            "1 lemon, juiced",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the mustard into the milk. Coat the chicken in flour, then the mustard milk, then the breadcrumbs.",
+        "Shallow-fry in the oil for 4 minutes a side until golden and the chicken reaches 75°C.",
+        "Toss the cabbage with the lemon juice and salt and serve with the schnitzel."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
+        "Egg-free recipe. Contains gluten and milk."
+      ],
+      "nutrition": {
+        "kcal": 470,
+        "proteinG": 46,
+        "carbsG": 28,
+        "fatG": 19,
+        "fibreG": 3,
+        "sodiumMg": 720
+      }
+    },
     {
-     "items": [
-      "800g tinned chickpeas, drained",
-      "1/2 cup rolled oats",
-      "1 tsp ground cumin",
-      "1 tsp ground coriander",
-      "2 clove garlic, crushed",
-      "1/4 cup parsley, chopped",
-      "1 lemon, juiced",
-      "2 tbsp olive oil",
-      "1/2 cup yoghurt",
-      "4 burger bun",
-      "1 tomato, sliced",
-      "1/2 tsp salt"
-     ]
-    }
-   ],
-   "steps": [
-    "Mash the chickpeas roughly and mix with the oats, spices, half the garlic, parsley, half the lemon juice and the salt. Rest 5 minutes, then shape into 4 patties.",
-    "Fry in the oil for 5 minutes a side until crisp and golden.",
-    "Stir the remaining garlic and lemon juice into the yoghurt and serve the patties in buns with tomato and the sauce."
-   ],
-   "notes": [
-    "Egg-free recipe. Contains gluten and milk. Refrigerate leftovers within 2 hours and eat within 3 days."
-   ],
-   "nutrition": {
-    "kcal": 480,
-    "proteinG": 19,
-    "carbsG": 70,
-    "fatG": 13,
-    "fibreG": 12,
-    "sodiumMg": 680
-   }
-  },
-  {
-   "id": "egg-free-spaghetti-with-lentil-ragu",
-   "title": "Egg-Free Spaghetti with Lentil Ragu",
-   "summary": "A rich lentil and carrot ragu over dried spaghetti, a budget meal with no eggs or meat.",
-   "cuisine": "italian",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 35,
-   "servings": 4,
-   "onePot": true,
-   "diets": [
-    "vegetarian",
-    "vegan",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "egg-free-chickpea-burgers-with-yoghurt-sauce",
+      "title": "Egg-Free Chickpea Burgers with Yoghurt Sauce",
+      "summary": "Herby chickpea patties that hold together with oats rather than egg.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g tinned chickpeas, drained",
+            "1/2 cup rolled oats",
+            "1 tsp ground cumin",
+            "1 tsp ground coriander",
+            "2 clove garlic, crushed",
+            "1/4 cup parsley, chopped",
+            "1 lemon, juiced",
+            "2 tbsp olive oil",
+            "1/2 cup yoghurt",
+            "4 burger bun",
+            "1 tomato, sliced",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Mash the chickpeas roughly and mix with the oats, spices, half the garlic, parsley, half the lemon juice and the salt. Rest 5 minutes, then shape into 4 patties.",
+        "Fry in the oil for 5 minutes a side until crisp and golden.",
+        "Stir the remaining garlic and lemon juice into the yoghurt and serve the patties in buns with tomato and the sauce."
+      ],
+      "notes": [
+        "Egg-free recipe. Contains gluten and milk. Refrigerate leftovers within 2 hours and eat within 3 days."
+      ],
+      "nutrition": {
+        "kcal": 480,
+        "proteinG": 19,
+        "carbsG": 70,
+        "fatG": 13,
+        "fibreG": 12,
+        "sodiumMg": 680
+      }
+    },
     {
-     "items": [
-      "320g spaghetti",
-      "1 tbsp olive oil",
-      "1 onion, diced",
-      "1 carrot, diced",
-      "2 celery, diced",
-      "3 clove garlic, crushed",
-      "1 cup red lentils",
-      "400g tinned tomatoes",
-      "2 cup vegetable stock",
-      "1 tsp dried oregano",
-      "1/2 tsp salt"
-     ]
-    }
-   ],
-   "steps": [
-    "Soften the onion, carrot, celery and garlic in the oil for 6 minutes until tender.",
-    "Add the lentils, tomatoes, stock, oregano and salt and simmer for 25 minutes, stirring now and then, until the lentils are soft and the sauce is thick.",
-    "Boil the spaghetti for 10 minutes until al dente, drain and toss with the ragu."
-   ],
-   "notes": [
-    "Egg-free recipe. Contains gluten. Refrigerate leftovers within 2 hours and eat within 3 days."
-   ],
-   "nutrition": {
-    "kcal": 470,
-    "proteinG": 19,
-    "carbsG": 86,
-    "fatG": 6,
-    "fibreG": 11,
-    "sodiumMg": 520
-   }
-  },
-  {
-   "id": "egg-free-pork-and-apple-meatballs-with-mash",
-   "title": "Egg-Free Pork and Apple Meatballs with Mash",
-   "summary": "Juicy meatballs held together with breadcrumbs and milk, with grated apple and creamy mash.",
-   "cuisine": "british",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 25,
-   "cookMinutes": 30,
-   "servings": 4,
-   "onePot": false,
-   "diets": [],
-   "ingredients": [
+      "id": "egg-free-spaghetti-with-lentil-ragu",
+      "title": "Egg-Free Spaghetti with Lentil Ragu",
+      "summary": "A rich lentil and carrot ragu over dried spaghetti, a budget meal with no eggs or meat.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "320g spaghetti",
+            "1 tbsp olive oil",
+            "1 onion, diced",
+            "1 carrot, diced",
+            "2 celery, diced",
+            "3 clove garlic, crushed",
+            "1 cup red lentils",
+            "400g tinned tomatoes",
+            "2 cup vegetable stock",
+            "1 tsp dried oregano",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion, carrot, celery and garlic in the oil for 6 minutes until tender.",
+        "Add the lentils, tomatoes, stock, oregano and salt and simmer for 25 minutes, stirring now and then, until the lentils are soft and the sauce is thick.",
+        "Boil the spaghetti for 10 minutes until al dente, drain and toss with the ragu."
+      ],
+      "notes": [
+        "Egg-free recipe. Contains gluten. Refrigerate leftovers within 2 hours and eat within 3 days."
+      ],
+      "nutrition": {
+        "kcal": 470,
+        "proteinG": 19,
+        "carbsG": 86,
+        "fatG": 6,
+        "fibreG": 11,
+        "sodiumMg": 520
+      }
+    },
     {
-     "items": [
-      "500g pork mince",
-      "1/3 cup breadcrumbs",
-      "1/4 cup milk",
-      "1 apple, grated",
-      "1 tsp dried sage",
-      "1/2 tsp salt",
-      "1 tbsp olive oil",
-      "600g potato, peeled and cubed",
-      "20g butter",
-      "1/4 cup milk",
-      "1 1/2 cup frozen peas"
-     ]
-    }
-   ],
-   "steps": [
-    "Mix the mince, breadcrumbs, first milk, apple, sage and half the salt and roll into 16 balls.",
-    "Brown in the oil for 6 minutes, then cover and cook gently for 12 minutes until they reach 75°C right through.",
-    "Boil the potato for 15 minutes until soft and mash with the butter, second milk and remaining salt. Simmer the peas for 3 minutes and serve all together."
-   ],
-   "notes": [
-    "Food safety: pork mince meatballs must reach 75°C right through with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
-    "Egg-free recipe. Contains gluten and milk."
-   ],
-   "nutrition": {
-    "kcal": 560,
-    "proteinG": 33,
-    "carbsG": 52,
-    "fatG": 24,
-    "fibreG": 6,
-    "sodiumMg": 640
-   }
-  },
-  {
-   "id": "nut-free-sunflower-seed-satay-chicken-with-rice",
-   "title": "Nut-Free Sunflower Seed Satay Chicken with Rice",
-   "summary": "Satay-style chicken with a sauce blended from sunflower seeds, safe for nut-free homes.",
-   "cuisine": "thai",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 15,
-   "cookMinutes": 20,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "egg-free-pork-and-apple-meatballs-with-mash",
+      "title": "Egg-Free Pork and Apple Meatballs with Mash",
+      "summary": "Juicy meatballs held together with breadcrumbs and milk, with grated apple and creamy mash.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "500g pork mince",
+            "1/3 cup breadcrumbs",
+            "1/4 cup milk",
+            "1 apple, grated",
+            "1 tsp dried sage",
+            "1/2 tsp salt",
+            "1 tbsp olive oil",
+            "600g potato, peeled and cubed",
+            "20g butter",
+            "1/4 cup milk",
+            "1 1/2 cup frozen peas"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the mince, breadcrumbs, first milk, apple, sage and half the salt and roll into 16 balls.",
+        "Brown in the oil for 6 minutes, then cover and cook gently for 12 minutes until they reach 75°C right through.",
+        "Boil the potato for 15 minutes until soft and mash with the butter, second milk and remaining salt. Simmer the peas for 3 minutes and serve all together."
+      ],
+      "notes": [
+        "Food safety: pork mince meatballs must reach 75°C right through with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
+        "Egg-free recipe. Contains gluten and milk."
+      ],
+      "nutrition": {
+        "kcal": 560,
+        "proteinG": 33,
+        "carbsG": 52,
+        "fatG": 24,
+        "fibreG": 6,
+        "sodiumMg": 640
+      }
+    },
     {
-     "items": [
-      "600g chicken thigh, diced",
-      "1 tbsp vegetable oil",
-      "1/3 cup sunflower seeds",
-      "1 cup coconut milk",
-      "2 tbsp soy sauce",
-      "1 tbsp lime juice",
-      "1 tbsp brown sugar",
-      "2 clove garlic, crushed",
-      "1 tsp ginger, grated",
-      "1 1/2 cup jasmine rice",
-      "1 cucumber, sliced"
-     ]
-    }
-   ],
-   "steps": [
-    "Brown the chicken in the oil for 6 minutes. Cook the rice for 12 minutes until tender.",
-    "Blend the seeds, coconut milk, soy sauce, lime juice, sugar, garlic and ginger together, add to the chicken and simmer for 10 minutes until thick and the chicken reaches 75°C.",
-    "Serve over the rice with cucumber."
-   ],
-   "notes": [
-    "Food safety: chicken must reach 75°C with no pink; refrigerate rice within 1 hour and leftovers within 2 hours.",
-    "Nut-free recipe: check every label for nut traces. Contains soy and gluten."
-   ],
-   "nutrition": {
-    "kcal": 700,
-    "proteinG": 41,
-    "carbsG": 68,
-    "fatG": 31,
-    "fibreG": 3,
-    "sodiumMg": 780
-   }
-  },
-  {
-   "id": "nut-free-sunflower-seed-pesto-pasta-with-peas",
-   "title": "Nut-Free Sunflower Seed Pesto Pasta with Peas",
-   "summary": "Basil pesto made with sunflower seeds, tossed through pasta and sweet peas.",
-   "cuisine": "italian",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 15,
-   "cookMinutes": 12,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian"
-   ],
-   "ingredients": [
+      "id": "nut-free-sunflower-seed-satay-chicken-with-rice",
+      "title": "Nut-Free Sunflower Seed Satay Chicken with Rice",
+      "summary": "Satay-style chicken with a sauce blended from sunflower seeds, safe for nut-free homes.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g chicken thigh, diced",
+            "1 tbsp vegetable oil",
+            "1/3 cup sunflower seeds",
+            "1 cup coconut milk",
+            "2 tbsp soy sauce",
+            "1 tbsp lime juice",
+            "1 tbsp brown sugar",
+            "2 clove garlic, crushed",
+            "1 tsp ginger, grated",
+            "1 1/2 cup jasmine rice",
+            "1 cucumber, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the chicken in the oil for 6 minutes. Cook the rice for 12 minutes until tender.",
+        "Blend the seeds, coconut milk, soy sauce, lime juice, sugar, garlic and ginger together, add to the chicken and simmer for 10 minutes until thick and the chicken reaches 75°C.",
+        "Serve over the rice with cucumber."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C with no pink; refrigerate rice within 1 hour and leftovers within 2 hours.",
+        "Nut-free recipe: check every label for nut traces. Contains soy and gluten."
+      ],
+      "nutrition": {
+        "kcal": 700,
+        "proteinG": 41,
+        "carbsG": 68,
+        "fatG": 31,
+        "fibreG": 3,
+        "sodiumMg": 780
+      }
+    },
     {
-     "items": [
-      "320g fusilli",
-      "1/3 cup sunflower seeds",
-      "1 cup basil leaves",
-      "1 clove garlic",
-      "1/3 cup olive oil",
-      "1 lemon, juiced",
-      "1/3 cup vegetarian hard cheese, grated",
-      "1 1/2 cup frozen peas",
-      "1/2 tsp salt"
-     ]
-    }
-   ],
-   "steps": [
-    "Boil the fusilli for 10 minutes until al dente, adding the peas for the last 2 minutes, then drain and keep half a cup of water.",
-    "Blend the seeds, basil, garlic, oil, lemon juice, cheese and salt until a rough paste.",
-    "Toss the pesto through the pasta and peas with a splash of the water until glossy."
-   ],
-   "notes": [
-    "Nut-free recipe: check every label for nut traces. Contains gluten and milk."
-   ],
-   "nutrition": {
-    "kcal": 560,
-    "proteinG": 18,
-    "carbsG": 70,
-    "fatG": 24,
-    "fibreG": 7,
-    "sodiumMg": 540
-   }
-  },
-  {
-   "id": "nut-free-lamb-kofta-with-tzatziki-and-flatbread",
-   "title": "Nut-Free Lamb Kofta with Tzatziki and Flatbread",
-   "summary": "Spiced lamb skewers with cool cucumber yoghurt, tomato and warm flatbread.",
-   "cuisine": "middle-eastern",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 25,
-   "cookMinutes": 15,
-   "servings": 4,
-   "onePot": false,
-   "diets": [],
-   "ingredients": [
+      "id": "nut-free-sunflower-seed-pesto-pasta-with-peas",
+      "title": "Nut-Free Sunflower Seed Pesto Pasta with Peas",
+      "summary": "Basil pesto made with sunflower seeds, tossed through pasta and sweet peas.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "320g fusilli",
+            "1/3 cup sunflower seeds",
+            "1 cup basil leaves",
+            "1 clove garlic",
+            "1/3 cup olive oil",
+            "1 lemon, juiced",
+            "1/3 cup vegetarian hard cheese, grated",
+            "1 1/2 cup frozen peas",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the fusilli for 10 minutes until al dente, adding the peas for the last 2 minutes, then drain and keep half a cup of water.",
+        "Blend the seeds, basil, garlic, oil, lemon juice, cheese and salt until a rough paste.",
+        "Toss the pesto through the pasta and peas with a splash of the water until glossy."
+      ],
+      "notes": [
+        "Nut-free recipe: check every label for nut traces. Contains gluten and milk."
+      ],
+      "nutrition": {
+        "kcal": 560,
+        "proteinG": 18,
+        "carbsG": 70,
+        "fatG": 24,
+        "fibreG": 7,
+        "sodiumMg": 540
+      }
+    },
     {
-     "items": [
-      "500g lamb mince",
-      "1 onion, grated",
-      "2 clove garlic, crushed",
-      "1 tsp ground cumin",
-      "1 tsp ground coriander",
-      "1/4 cup parsley, chopped",
-      "1/2 tsp salt",
-      "1 cup yoghurt",
-      "1/2 cucumber, grated",
-      "1 tbsp lemon juice",
-      "4 flatbread",
-      "2 tomato, sliced"
-     ]
-    }
-   ],
-   "steps": [
-    "Squeeze the liquid from the onion and mix it with the mince, half the garlic, spices, parsley and salt until sticky. Shape into 12 sausages around skewers.",
-    "Grill or pan-fry for 10 minutes, turning, until browned and cooked to 75°C.",
-    "Squeeze the cucumber dry and stir into the yoghurt with the remaining garlic and lemon juice. Serve the kofta with flatbread, tomato and the tzatziki."
-   ],
-   "notes": [
-    "Food safety: lamb mince must reach 75°C right through with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
-    "Nut-free recipe: check every label for nut traces. Contains gluten and milk."
-   ],
-   "nutrition": {
-    "kcal": 520,
-    "proteinG": 34,
-    "carbsG": 38,
-    "fatG": 26,
-    "fibreG": 4,
-    "sodiumMg": 640
-   }
-  },
-  {
-   "id": "nut-free-pad-see-ew-style-noodles-with-chicken",
-   "title": "Nut-Free Chicken Pad See Ew-Style Noodles",
-   "summary": "Wide rice noodles with chicken, greens and egg in a sweet-salty soy sauce, with no nuts.",
-   "cuisine": "thai",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 15,
-   "cookMinutes": 15,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "nut-free-lamb-kofta-with-tzatziki-and-flatbread",
+      "title": "Nut-Free Lamb Kofta with Tzatziki and Flatbread",
+      "summary": "Spiced lamb skewers with cool cucumber yoghurt, tomato and warm flatbread.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "500g lamb mince",
+            "1 onion, grated",
+            "2 clove garlic, crushed",
+            "1 tsp ground cumin",
+            "1 tsp ground coriander",
+            "1/4 cup parsley, chopped",
+            "1/2 tsp salt",
+            "1 cup yoghurt",
+            "1/2 cucumber, grated",
+            "1 tbsp lemon juice",
+            "4 flatbread",
+            "2 tomato, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Squeeze the liquid from the onion and mix it with the mince, half the garlic, spices, parsley and salt until sticky. Shape into 12 sausages around skewers.",
+        "Grill or pan-fry for 10 minutes, turning, until browned and cooked to 75°C.",
+        "Squeeze the cucumber dry and stir into the yoghurt with the remaining garlic and lemon juice. Serve the kofta with flatbread, tomato and the tzatziki."
+      ],
+      "notes": [
+        "Food safety: lamb mince must reach 75°C right through with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
+        "Nut-free recipe: check every label for nut traces. Contains gluten and milk."
+      ],
+      "nutrition": {
+        "kcal": 520,
+        "proteinG": 34,
+        "carbsG": 38,
+        "fatG": 26,
+        "fibreG": 4,
+        "sodiumMg": 640
+      }
+    },
     {
-     "items": [
-      "250g rice noodles",
-      "400g chicken thigh, sliced",
-      "2 tbsp vegetable oil",
-      "3 clove garlic, crushed",
-      "2 egg",
-      "200g broccoli, chopped",
-      "3 tbsp soy sauce",
-      "1 tbsp oyster sauce",
-      "1 tbsp sugar"
-     ]
+      "id": "nut-free-pad-see-ew-style-noodles-with-chicken",
+      "title": "Nut-Free Chicken Pad See Ew-Style Noodles",
+      "summary": "Wide rice noodles with chicken, greens and egg in a sweet-salty soy sauce, with no nuts.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g rice noodles",
+            "400g chicken thigh, sliced",
+            "2 tbsp vegetable oil",
+            "3 clove garlic, crushed",
+            "2 egg",
+            "200g broccoli, chopped",
+            "3 tbsp soy sauce",
+            "1 tbsp oyster sauce",
+            "1 tbsp sugar"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the noodles in hot water for 8 minutes until pliable and drain. Whisk the soy sauce, oyster sauce and sugar together.",
+        "Stir-fry the chicken in the oil for 5 minutes until cooked, add the garlic and broccoli for 3 minutes, push aside and scramble the eggs for 1 minute until set.",
+        "Add the noodles and sauce and toss for 3 minutes until tender and caramelised at the edges."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C with no pink and eggs must be set; refrigerate leftovers within 2 hours and eat within 1 day.",
+        "Nut-free recipe: check every label for nut traces. Contains egg, soy, gluten and shellfish (oyster sauce)."
+      ],
+      "nutrition": {
+        "kcal": 490,
+        "proteinG": 32,
+        "carbsG": 62,
+        "fatG": 14,
+        "fibreG": 3,
+        "sodiumMg": 1240
+      }
     }
-   ],
-   "steps": [
-    "Soak the noodles in hot water for 8 minutes until pliable and drain. Whisk the soy sauce, oyster sauce and sugar together.",
-    "Stir-fry the chicken in the oil for 5 minutes until cooked, add the garlic and broccoli for 3 minutes, push aside and scramble the eggs for 1 minute until set.",
-    "Add the noodles and sauce and toss for 3 minutes until tender and caramelised at the edges."
-   ],
-   "notes": [
-    "Food safety: chicken must reach 75°C with no pink and eggs must be set; refrigerate leftovers within 2 hours and eat within 1 day.",
-    "Nut-free recipe: check every label for nut traces. Contains egg, soy, gluten and shellfish (oyster sauce)."
-   ],
-   "nutrition": {
-    "kcal": 490,
-    "proteinG": 32,
-    "carbsG": 62,
-    "fatG": 14,
-    "fibreG": 3,
-    "sodiumMg": 1240
-   }
-  }
- ]
+  ]
 }

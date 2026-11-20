@@ -1,877 +1,877 @@
 {
- "about": "House recipes, batch 04 (helper sA): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
- "recipes": [
-  {
-   "id": "chana-masala-with-tomato-onion-and-ginger",
-   "title": "Chana Masala with Fresh Ginger and Coriander",
-   "summary": "A North Indian chickpea curry in a tangy tomato and onion gravy, served with rice.",
-   "cuisine": "indian",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 30,
-   "servings": 4,
-   "onePot": true,
-   "diets": [
-    "vegetarian",
-    "vegan",
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+  "about": "House recipes, batch 04 (helper sA): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
     {
-     "items": [
-      "2 tbsp vegetable oil",
-      "1 onion, diced",
-      "1 tbsp ginger, grated",
-      "3 clove garlic, crushed",
-      "2 tsp garam masala",
-      "1 tsp ground cumin",
-      "1 tsp ground turmeric",
-      "400g tinned tomatoes",
-      "800g tinned chickpeas, drained",
-      "1 lemon, juiced",
-      "1/4 cup coriander leaves",
-      "1.5 cup basmati rice"
-     ]
-    }
-   ],
-   "steps": [
-    "Soften the onion in the oil for 8 minutes until golden, add the ginger, garlic and spices for 1 minute.",
-    "Add the tomatoes and chickpeas with 1/2 cup of water and simmer for 20 minutes until thick. Cook the rice separately until tender.",
-    "Finish with the lemon and coriander and serve over the rice."
-   ],
-   "notes": [
-    "Vegan and gluten free."
-   ],
-   "nutrition": {
-    "kcal": 540,
-    "proteinG": 19,
-    "carbsG": 92,
-    "fatG": 11,
-    "fibreG": 16,
-    "sodiumMg": 520
-   }
-  },
-  {
-   "id": "egyptian-style-stewed-beans-with-tahini-and-soft-egg",
-   "title": "Egyptian-Style Stewed Beans with Lemon, Tahini and Soft Egg",
-   "summary": "Stewed beans in the style of ful medames, with cumin, lemon and tahini, served with a boiled egg and flatbread.",
-   "cuisine": "middle-eastern",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 15,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "chana-masala-with-tomato-onion-and-ginger",
+      "title": "Chana Masala with Fresh Ginger and Coriander",
+      "summary": "A North Indian chickpea curry in a tangy tomato and onion gravy, served with rice.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp vegetable oil",
+            "1 onion, diced",
+            "1 tbsp ginger, grated",
+            "3 clove garlic, crushed",
+            "2 tsp garam masala",
+            "1 tsp ground cumin",
+            "1 tsp ground turmeric",
+            "400g tinned tomatoes",
+            "800g tinned chickpeas, drained",
+            "1 lemon, juiced",
+            "1/4 cup coriander leaves",
+            "1.5 cup basmati rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion in the oil for 8 minutes until golden, add the ginger, garlic and spices for 1 minute.",
+        "Add the tomatoes and chickpeas with 1/2 cup of water and simmer for 20 minutes until thick. Cook the rice separately until tender.",
+        "Finish with the lemon and coriander and serve over the rice."
+      ],
+      "notes": [
+        "Vegan and gluten free."
+      ],
+      "nutrition": {
+        "kcal": 540,
+        "proteinG": 19,
+        "carbsG": 92,
+        "fatG": 11,
+        "fibreG": 16,
+        "sodiumMg": 520
+      }
+    },
     {
-     "items": [
-      "800g tinned butter beans, drained",
-      "2 clove garlic, crushed",
-      "1 tsp ground cumin",
-      "2 lemon, juiced",
-      "3 tbsp olive oil",
-      "3 tbsp tahini",
-      "4 egg",
-      "2 tomato, diced",
-      "1/4 cup parsley, chopped",
-      "4 flatbread"
-     ]
-    }
-   ],
-   "steps": [
-    "Simmer the beans with the garlic, cumin and 1/2 cup of water for 8 minutes until heated through and lightly mashed.",
-    "Boil the eggs for 7 minutes until the yolks are just set, then peel. Whisk the tahini with half the lemon and 2 tablespoons of water until smooth.",
-    "Stir the remaining lemon and the oil through the beans, top with the egg, tahini, tomato and parsley and serve with the flatbread."
-   ],
-   "notes": [
-    "Contains egg, gluten and sesame.",
-    "Food safety: boil eggs until the whites and yolks are set; refrigerate leftovers within 2 hours and eat within 2 days."
-   ],
-   "nutrition": {
-    "kcal": 480,
-    "proteinG": 21,
-    "carbsG": 56,
-    "fatG": 19,
-    "fibreG": 14,
-    "sodiumMg": 720
-   }
-  },
-  {
-   "id": "rajma-kidney-bean-curry-with-jeera-rice",
-   "title": "Rajma Kidney Bean Curry with Cumin Rice",
-   "summary": "A creamy Punjabi-style red kidney bean curry served with cumin rice.",
-   "cuisine": "indian",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 35,
-   "servings": 4,
-   "onePot": true,
-   "diets": [
-    "vegetarian",
-    "vegan",
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "egyptian-style-stewed-beans-with-tahini-and-soft-egg",
+      "title": "Egyptian-Style Stewed Beans with Lemon, Tahini and Soft Egg",
+      "summary": "Stewed beans in the style of ful medames, with cumin, lemon and tahini, served with a boiled egg and flatbread.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g tinned butter beans, drained",
+            "2 clove garlic, crushed",
+            "1 tsp ground cumin",
+            "2 lemon, juiced",
+            "3 tbsp olive oil",
+            "3 tbsp tahini",
+            "4 egg",
+            "2 tomato, diced",
+            "1/4 cup parsley, chopped",
+            "4 flatbread"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the beans with the garlic, cumin and 1/2 cup of water for 8 minutes until heated through and lightly mashed.",
+        "Boil the eggs for 7 minutes until the yolks are just set, then peel. Whisk the tahini with half the lemon and 2 tablespoons of water until smooth.",
+        "Stir the remaining lemon and the oil through the beans, top with the egg, tahini, tomato and parsley and serve with the flatbread."
+      ],
+      "notes": [
+        "Contains egg, gluten and sesame.",
+        "Food safety: boil eggs until the whites and yolks are set; refrigerate leftovers within 2 hours and eat within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 480,
+        "proteinG": 21,
+        "carbsG": 56,
+        "fatG": 19,
+        "fibreG": 14,
+        "sodiumMg": 720
+      }
+    },
     {
-     "items": [
-      "2 tbsp vegetable oil",
-      "1 onion, finely diced",
-      "1 tbsp ginger, grated",
-      "3 clove garlic, crushed",
-      "2 tsp garam masala",
-      "1 tsp ground turmeric",
-      "400g tinned tomatoes",
-      "800g tinned kidney beans, drained",
-      "1 tsp cumin seeds",
-      "1.5 cup basmati rice",
-      "1/4 cup coriander leaves"
-     ]
-    }
-   ],
-   "steps": [
-    "Cook the onion in the oil for 8 minutes until golden, add the ginger, garlic and spices for 1 minute, then the tomatoes and simmer for 8 minutes.",
-    "Add the beans and 1/2 cup of water and simmer for 20 minutes until thick, mashing a few beans against the pan.",
-    "Cook the rice with the cumin seeds until tender and serve with the curry and coriander."
-   ],
-   "notes": [
-    "Vegan and gluten free."
-   ],
-   "nutrition": {
-    "kcal": 540,
-    "proteinG": 19,
-    "carbsG": 94,
-    "fatG": 10,
-    "fibreG": 17,
-    "sodiumMg": 470
-   }
-  },
-  {
-   "id": "feijao-tropeiro-style-bean-and-egg-pan",
-   "title": "Brazilian Bean and Egg Pan with Greens",
-   "summary": "A Brazilian-inspired pan of pinto beans, silverbeet, garlic and fried eggs.",
-   "cuisine": "latin-american",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 20,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "rajma-kidney-bean-curry-with-jeera-rice",
+      "title": "Rajma Kidney Bean Curry with Cumin Rice",
+      "summary": "A creamy Punjabi-style red kidney bean curry served with cumin rice.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp vegetable oil",
+            "1 onion, finely diced",
+            "1 tbsp ginger, grated",
+            "3 clove garlic, crushed",
+            "2 tsp garam masala",
+            "1 tsp ground turmeric",
+            "400g tinned tomatoes",
+            "800g tinned kidney beans, drained",
+            "1 tsp cumin seeds",
+            "1.5 cup basmati rice",
+            "1/4 cup coriander leaves"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onion in the oil for 8 minutes until golden, add the ginger, garlic and spices for 1 minute, then the tomatoes and simmer for 8 minutes.",
+        "Add the beans and 1/2 cup of water and simmer for 20 minutes until thick, mashing a few beans against the pan.",
+        "Cook the rice with the cumin seeds until tender and serve with the curry and coriander."
+      ],
+      "notes": [
+        "Vegan and gluten free."
+      ],
+      "nutrition": {
+        "kcal": 540,
+        "proteinG": 19,
+        "carbsG": 94,
+        "fatG": 10,
+        "fibreG": 17,
+        "sodiumMg": 470
+      }
+    },
     {
-     "items": [
-      "2 tbsp olive oil",
-      "1 onion, diced",
-      "4 clove garlic, crushed",
-      "800g tinned pinto beans, drained",
-      "1 bunch silverbeet, shredded",
-      "1 tsp smoked paprika",
-      "4 egg",
-      "1/4 cup spring onion, sliced",
-      "1 lime, cut into wedges",
-      "1.5 cup jasmine rice"
-     ]
-    }
-   ],
-   "steps": [
-    "Cook the rice. Soften the onion in the oil for 5 minutes, add the garlic and paprika for 1 minute.",
-    "Add the beans and silverbeet and cook for 6 minutes until the greens are wilted and the beans are hot.",
-    "Fry or poach the eggs until the whites are set and serve over the beans with the spring onion, lime and rice."
-   ],
-   "notes": [
-    "Contains egg.",
-    "Food safety: cook eggs until the whites are set; refrigerate leftovers within 2 hours and eat within 2 days."
-   ],
-   "nutrition": {
-    "kcal": 560,
-    "proteinG": 25,
-    "carbsG": 86,
-    "fatG": 14,
-    "fibreG": 15,
-    "sodiumMg": 480
-   }
-  },
-  {
-   "id": "white-bean-and-silverbeet-ribollita-style-stew",
-   "title": "White Bean and Silverbeet Stew with Rustic Bread",
-   "summary": "A thick Tuscan-style stew of cannellini beans, silverbeet and tomato thickened with bread.",
-   "cuisine": "italian",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 15,
-   "cookMinutes": 35,
-   "servings": 4,
-   "onePot": true,
-   "diets": [
-    "vegetarian"
-   ],
-   "ingredients": [
+      "id": "feijao-tropeiro-style-bean-and-egg-pan",
+      "title": "Brazilian Bean and Egg Pan with Greens",
+      "summary": "A Brazilian-inspired pan of pinto beans, silverbeet, garlic and fried eggs.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp olive oil",
+            "1 onion, diced",
+            "4 clove garlic, crushed",
+            "800g tinned pinto beans, drained",
+            "1 bunch silverbeet, shredded",
+            "1 tsp smoked paprika",
+            "4 egg",
+            "1/4 cup spring onion, sliced",
+            "1 lime, cut into wedges",
+            "1.5 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice. Soften the onion in the oil for 5 minutes, add the garlic and paprika for 1 minute.",
+        "Add the beans and silverbeet and cook for 6 minutes until the greens are wilted and the beans are hot.",
+        "Fry or poach the eggs until the whites are set and serve over the beans with the spring onion, lime and rice."
+      ],
+      "notes": [
+        "Contains egg.",
+        "Food safety: cook eggs until the whites are set; refrigerate leftovers within 2 hours and eat within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 560,
+        "proteinG": 25,
+        "carbsG": 86,
+        "fatG": 14,
+        "fibreG": 15,
+        "sodiumMg": 480
+      }
+    },
     {
-     "items": [
-      "2 tbsp olive oil",
-      "1 onion, diced",
-      "2 carrot, diced",
-      "2 celery, diced",
-      "3 clove garlic, crushed",
-      "400g tinned tomatoes",
-      "800g tinned cannellini beans, drained",
-      "3 cup vegetable stock",
-      "1 bunch silverbeet, shredded",
-      "4 slice sourdough, torn",
-      "1/4 cup vegetarian hard cheese, grated"
-     ]
-    }
-   ],
-   "steps": [
-    "Soften the onion, carrot and celery in the oil for 8 minutes, add the garlic for 1 minute.",
-    "Add the tomatoes, beans and stock and simmer for 20 minutes until thick, then add the silverbeet for 5 minutes until wilted.",
-    "Stir through the bread until it breaks down and thickens the stew and serve topped with the cheese."
-   ],
-   "notes": [
-    "Contains gluten and dairy. Skip the cheese for vegan."
-   ],
-   "nutrition": {
-    "kcal": 470,
-    "proteinG": 21,
-    "carbsG": 76,
-    "fatG": 10,
-    "fibreG": 17,
-    "sodiumMg": 780
-   }
-  },
-  {
-   "id": "ethiopian-style-misir-wot-red-lentil-stew-with-greens",
-   "title": "Ethiopian-Style Red Lentil Stew with Collard Greens",
-   "summary": "A warming, spicy red lentil stew in the style of misir wot, with sauteed greens and injera-style flatbread.",
-   "cuisine": "east-african",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 35,
-   "servings": 4,
-   "onePot": true,
-   "diets": [
-    "vegetarian",
-    "vegan",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "white-bean-and-silverbeet-ribollita-style-stew",
+      "title": "White Bean and Silverbeet Stew with Rustic Bread",
+      "summary": "A thick Tuscan-style stew of cannellini beans, silverbeet and tomato thickened with bread.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp olive oil",
+            "1 onion, diced",
+            "2 carrot, diced",
+            "2 celery, diced",
+            "3 clove garlic, crushed",
+            "400g tinned tomatoes",
+            "800g tinned cannellini beans, drained",
+            "3 cup vegetable stock",
+            "1 bunch silverbeet, shredded",
+            "4 slice sourdough, torn",
+            "1/4 cup vegetarian hard cheese, grated"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion, carrot and celery in the oil for 8 minutes, add the garlic for 1 minute.",
+        "Add the tomatoes, beans and stock and simmer for 20 minutes until thick, then add the silverbeet for 5 minutes until wilted.",
+        "Stir through the bread until it breaks down and thickens the stew and serve topped with the cheese."
+      ],
+      "notes": [
+        "Contains gluten and dairy. Skip the cheese for vegan."
+      ],
+      "nutrition": {
+        "kcal": 470,
+        "proteinG": 21,
+        "carbsG": 76,
+        "fatG": 10,
+        "fibreG": 17,
+        "sodiumMg": 780
+      }
+    },
     {
-     "items": [
-      "2 tbsp vegetable oil",
-      "2 onion, finely diced",
-      "3 clove garlic, crushed",
-      "1 tbsp ginger, grated",
-      "2 tbsp paprika",
-      "1 tsp ground cumin",
-      "1 tbsp tomato paste",
-      "1.5 cup red lentils, rinsed",
-      "4 cup vegetable stock",
-      "1 bunch silverbeet, shredded",
-      "4 flatbread"
-     ]
-    }
-   ],
-   "steps": [
-    "Cook the onions in the oil for 10 minutes until very soft, add the garlic, ginger, spices and paste for 2 minutes.",
-    "Add the lentils and stock and simmer for 20 minutes, stirring, until thick and soft.",
-    "Stir through the silverbeet for 4 minutes until wilted and serve with the flatbread."
-   ],
-   "notes": [
-    "Contains gluten (flatbread). Add chilli flakes for heat."
-   ],
-   "nutrition": {
-    "kcal": 470,
-    "proteinG": 22,
-    "carbsG": 76,
-    "fatG": 10,
-    "fibreG": 15,
-    "sodiumMg": 640
-   }
-  },
-  {
-   "id": "caribbean-red-bean-and-sweet-potato-stew-with-coconut",
-   "title": "Caribbean Red Bean and Sweet Potato Stew with Coconut",
-   "summary": "Kidney beans and sweet potato simmered in coconut milk with thyme and allspice, served with rice.",
-   "cuisine": "caribbean",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 35,
-   "servings": 4,
-   "onePot": true,
-   "diets": [
-    "vegetarian",
-    "vegan",
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "ethiopian-style-misir-wot-red-lentil-stew-with-greens",
+      "title": "Ethiopian-Style Red Lentil Stew with Collard Greens",
+      "summary": "A warming, spicy red lentil stew in the style of misir wot, with sauteed greens and injera-style flatbread.",
+      "cuisine": "east-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp vegetable oil",
+            "2 onion, finely diced",
+            "3 clove garlic, crushed",
+            "1 tbsp ginger, grated",
+            "2 tbsp paprika",
+            "1 tsp ground cumin",
+            "1 tbsp tomato paste",
+            "1.5 cup red lentils, rinsed",
+            "4 cup vegetable stock",
+            "1 bunch silverbeet, shredded",
+            "4 flatbread"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the onions in the oil for 10 minutes until very soft, add the garlic, ginger, spices and paste for 2 minutes.",
+        "Add the lentils and stock and simmer for 20 minutes, stirring, until thick and soft.",
+        "Stir through the silverbeet for 4 minutes until wilted and serve with the flatbread."
+      ],
+      "notes": [
+        "Contains gluten (flatbread). Add chilli flakes for heat."
+      ],
+      "nutrition": {
+        "kcal": 470,
+        "proteinG": 22,
+        "carbsG": 76,
+        "fatG": 10,
+        "fibreG": 15,
+        "sodiumMg": 640
+      }
+    },
     {
-     "items": [
-      "1 tbsp vegetable oil",
-      "1 onion, diced",
-      "3 clove garlic, crushed",
-      "1 tbsp ginger, grated",
-      "1 tsp allspice",
-      "1 tsp dried thyme",
-      "600g sweet potato, cubed",
-      "800g tinned kidney beans, drained",
-      "400ml coconut milk",
-      "1 cup vegetable stock",
-      "1.5 cup jasmine rice",
-      "2 spring onion, sliced"
-     ]
-    }
-   ],
-   "steps": [
-    "Soften the onion in the oil for 5 minutes, add the garlic, ginger, allspice and thyme for 1 minute.",
-    "Add the sweet potato, beans, coconut milk and stock and simmer for 25 minutes until the sweet potato is tender. Cook the rice separately until tender.",
-    "Serve over the rice and scatter with the spring onion."
-   ],
-   "notes": [
-    "Vegan and gluten free. Use tinned kidney beans; if using dried, soak overnight and boil hard for 10 minutes before simmering."
-   ],
-   "nutrition": {
-    "kcal": 640,
-    "proteinG": 19,
-    "carbsG": 98,
-    "fatG": 20,
-    "fibreG": 18,
-    "sodiumMg": 480
-   }
-  },
-  {
-   "id": "pan-seared-snapper-with-celery-tomato-and-white-beans",
-   "title": "Pan-Seared Snapper with Celery, Tomato and White Beans",
-   "summary": "A Mediterranean fillet of snapper over a warm celery, tomato and cannellini bean base.",
-   "cuisine": "italian",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 20,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "pescatarian",
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "caribbean-red-bean-and-sweet-potato-stew-with-coconut",
+      "title": "Caribbean Red Bean and Sweet Potato Stew with Coconut",
+      "summary": "Kidney beans and sweet potato simmered in coconut milk with thyme and allspice, served with rice.",
+      "cuisine": "caribbean",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 tbsp vegetable oil",
+            "1 onion, diced",
+            "3 clove garlic, crushed",
+            "1 tbsp ginger, grated",
+            "1 tsp allspice",
+            "1 tsp dried thyme",
+            "600g sweet potato, cubed",
+            "800g tinned kidney beans, drained",
+            "400ml coconut milk",
+            "1 cup vegetable stock",
+            "1.5 cup jasmine rice",
+            "2 spring onion, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion in the oil for 5 minutes, add the garlic, ginger, allspice and thyme for 1 minute.",
+        "Add the sweet potato, beans, coconut milk and stock and simmer for 25 minutes until the sweet potato is tender. Cook the rice separately until tender.",
+        "Serve over the rice and scatter with the spring onion."
+      ],
+      "notes": [
+        "Vegan and gluten free. Use tinned kidney beans; if using dried, soak overnight and boil hard for 10 minutes before simmering."
+      ],
+      "nutrition": {
+        "kcal": 640,
+        "proteinG": 19,
+        "carbsG": 98,
+        "fatG": 20,
+        "fibreG": 18,
+        "sodiumMg": 480
+      }
+    },
     {
-     "items": [
-      "4 snapper fillet",
-      "3 tbsp olive oil",
-      "2 celery, thinly sliced",
-      "2 clove garlic, sliced",
-      "200g cherry tomato, halved",
-      "800g tinned cannellini beans, drained",
-      "1/2 cup white wine",
-      "1 lemon, zested",
-      "1/4 cup parsley, chopped"
-     ]
-    }
-   ],
-   "steps": [
-    "Soften the celery in half the oil for 6 minutes, add the garlic and tomato for 3 minutes, then the wine, beans and zest and simmer for 6 minutes.",
-    "Sear the seasoned fish in the remaining oil, skin side down, for 4 minutes, turn and cook for 2 minutes until opaque and flaking.",
-    "Serve the fish on the beans with the parsley."
-   ],
-   "notes": [
-    "Contains fish.",
-    "Food safety: cook fish until opaque and flaking, and shellfish until opaque and firm; keep raw seafood below 5°C, refrigerate leftovers within 2 hours and eat within 1 day."
-   ],
-   "nutrition": {
-    "kcal": 450,
-    "proteinG": 40,
-    "carbsG": 36,
-    "fatG": 16,
-    "fibreG": 10,
-    "sodiumMg": 520
-   }
-  },
-  {
-   "id": "seared-tuna-with-salsa-verde-and-roast-potatoes",
-   "title": "Seared Tuna with Salsa Verde and Roast Potatoes",
-   "summary": "Seared tuna fillets with a punchy parsley, caper and lemon salsa verde and roasted potatoes.",
-   "cuisine": "italian",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 15,
-   "cookMinutes": 25,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "pescatarian",
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "pan-seared-snapper-with-celery-tomato-and-white-beans",
+      "title": "Pan-Seared Snapper with Celery, Tomato and White Beans",
+      "summary": "A Mediterranean fillet of snapper over a warm celery, tomato and cannellini bean base.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 snapper fillet",
+            "3 tbsp olive oil",
+            "2 celery, thinly sliced",
+            "2 clove garlic, sliced",
+            "200g cherry tomato, halved",
+            "800g tinned cannellini beans, drained",
+            "1/2 cup white wine",
+            "1 lemon, zested",
+            "1/4 cup parsley, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the celery in half the oil for 6 minutes, add the garlic and tomato for 3 minutes, then the wine, beans and zest and simmer for 6 minutes.",
+        "Sear the seasoned fish in the remaining oil, skin side down, for 4 minutes, turn and cook for 2 minutes until opaque and flaking.",
+        "Serve the fish on the beans with the parsley."
+      ],
+      "notes": [
+        "Contains fish.",
+        "Food safety: cook fish until opaque and flaking, and shellfish until opaque and firm; keep raw seafood below 5°C, refrigerate leftovers within 2 hours and eat within 1 day."
+      ],
+      "nutrition": {
+        "kcal": 450,
+        "proteinG": 40,
+        "carbsG": 36,
+        "fatG": 16,
+        "fibreG": 10,
+        "sodiumMg": 520
+      }
+    },
     {
-     "items": [
-      "4 tuna fillet",
-      "800g potato, cut into wedges",
-      "3 tbsp olive oil",
-      "1 cup parsley",
-      "2 tbsp capers",
-      "2 clove garlic",
-      "1 lemon, juiced",
-      "1/4 cup olive oil",
-      "200g green beans"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oven to 220°C (200°C fan). Roast the potato with 2 tablespoons of oil for 25 minutes until crisp.",
-    "Blitz the parsley, capers, garlic, lemon and 1/4 cup oil into a rough salsa verde. Steam the beans for 4 minutes until tender.",
-    "Sear the tuna in the remaining oil for 2 minutes each side until browned outside and slightly pink within, and serve with the salsa verde, potato and beans."
-   ],
-   "notes": [
-    "Contains fish. Choose pole-and-line or sustainably certified tuna.",
-    "Food safety: tuna may be served rare in the centre only if very fresh and sashimi-grade; cook through to opaque for children, pregnancy or the elderly. Keep below 5°C, refrigerate leftovers within 2 hours and eat within 1 day."
-   ],
-   "nutrition": {
-    "kcal": 540,
-    "proteinG": 42,
-    "carbsG": 40,
-    "fatG": 25,
-    "fibreG": 5,
-    "sodiumMg": 380
-   }
-  },
-  {
-   "id": "squid-and-chorizo-pan-with-chickpeas-and-lemon",
-   "title": "Squid and Chorizo Pan with Chickpeas and Lemon",
-   "summary": "Quick-seared squid with chorizo and chickpeas in a smoky tomato sauce.",
-   "cuisine": "spanish",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 20,
-   "servings": 4,
-   "onePot": true,
-   "diets": [
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "seared-tuna-with-salsa-verde-and-roast-potatoes",
+      "title": "Seared Tuna with Salsa Verde and Roast Potatoes",
+      "summary": "Seared tuna fillets with a punchy parsley, caper and lemon salsa verde and roasted potatoes.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 tuna fillet",
+            "800g potato, cut into wedges",
+            "3 tbsp olive oil",
+            "1 cup parsley",
+            "2 tbsp capers",
+            "2 clove garlic",
+            "1 lemon, juiced",
+            "1/4 cup olive oil",
+            "200g green beans"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (200°C fan). Roast the potato with 2 tablespoons of oil for 25 minutes until crisp.",
+        "Blitz the parsley, capers, garlic, lemon and 1/4 cup oil into a rough salsa verde. Steam the beans for 4 minutes until tender.",
+        "Sear the tuna in the remaining oil for 2 minutes each side until browned outside and slightly pink within, and serve with the salsa verde, potato and beans."
+      ],
+      "notes": [
+        "Contains fish. Choose pole-and-line or sustainably certified tuna.",
+        "Food safety: tuna may be served rare in the centre only if very fresh and sashimi-grade; cook through to opaque for children, pregnancy or the elderly. Keep below 5°C, refrigerate leftovers within 2 hours and eat within 1 day."
+      ],
+      "nutrition": {
+        "kcal": 540,
+        "proteinG": 42,
+        "carbsG": 40,
+        "fatG": 25,
+        "fibreG": 5,
+        "sodiumMg": 380
+      }
+    },
     {
-     "items": [
-      "500g squid tubes, sliced",
-      "150g chorizo, sliced",
-      "2 tbsp olive oil",
-      "1 onion, diced",
-      "3 clove garlic, crushed",
-      "1 tsp smoked paprika",
-      "400g tinned tomatoes",
-      "400g tinned chickpeas, drained",
-      "1 lemon, juiced",
-      "1/4 cup parsley, chopped"
-     ]
-    }
-   ],
-   "steps": [
-    "Fry the chorizo in the oil for 4 minutes until crisp and the oil turns red, add the onion for 5 minutes, then the garlic and paprika for 1 minute.",
-    "Add the tomatoes and chickpeas and simmer for 8 minutes until thick.",
-    "Stir in the squid and cook for 2 minutes until just opaque, then finish with the lemon and parsley."
-   ],
-   "notes": [
-    "Squid goes tough past 3 minutes of cooking.",
-    "Food safety: cook fish until opaque and flaking, and shellfish until opaque and firm; keep raw seafood below 5°C, refrigerate leftovers within 2 hours and eat within 1 day."
-   ],
-   "nutrition": {
-    "kcal": 400,
-    "proteinG": 30,
-    "carbsG": 28,
-    "fatG": 19,
-    "fibreG": 7,
-    "sodiumMg": 820
-   }
-  },
-  {
-   "id": "crab-and-lime-fritters-with-smashed-avocado",
-   "title": "Crab and Lime Fritters with Smashed Avocado",
-   "summary": "Pan-fried fritters with crab and sweetcorn, served with a fresh avocado and lime salsa.",
-   "cuisine": "modern-australian",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 20,
-   "cookMinutes": 15,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "pescatarian"
-   ],
-   "ingredients": [
+      "id": "squid-and-chorizo-pan-with-chickpeas-and-lemon",
+      "title": "Squid and Chorizo Pan with Chickpeas and Lemon",
+      "summary": "Quick-seared squid with chorizo and chickpeas in a smoky tomato sauce.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g squid tubes, sliced",
+            "150g chorizo, sliced",
+            "2 tbsp olive oil",
+            "1 onion, diced",
+            "3 clove garlic, crushed",
+            "1 tsp smoked paprika",
+            "400g tinned tomatoes",
+            "400g tinned chickpeas, drained",
+            "1 lemon, juiced",
+            "1/4 cup parsley, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the chorizo in the oil for 4 minutes until crisp and the oil turns red, add the onion for 5 minutes, then the garlic and paprika for 1 minute.",
+        "Add the tomatoes and chickpeas and simmer for 8 minutes until thick.",
+        "Stir in the squid and cook for 2 minutes until just opaque, then finish with the lemon and parsley."
+      ],
+      "notes": [
+        "Squid goes tough past 3 minutes of cooking.",
+        "Food safety: cook fish until opaque and flaking, and shellfish until opaque and firm; keep raw seafood below 5°C, refrigerate leftovers within 2 hours and eat within 1 day."
+      ],
+      "nutrition": {
+        "kcal": 400,
+        "proteinG": 30,
+        "carbsG": 28,
+        "fatG": 19,
+        "fibreG": 7,
+        "sodiumMg": 820
+      }
+    },
     {
-     "items": [
-      "1 cup plain flour",
-      "1 tsp baking powder",
-      "2 egg",
-      "1/2 cup milk",
-      "2 cup corn kernels",
-      "250g cooked crab meat",
-      "4 spring onion, sliced",
-      "2 tbsp olive oil",
-      "2 avocado, diced",
-      "1 tomato, diced",
-      "1 lime, juiced",
-      "1/4 cup coriander leaves"
-     ]
-    }
-   ],
-   "steps": [
-    "Whisk the flour, baking powder, eggs and milk into a thick batter and fold in the corn, crab and spring onion.",
-    "Fry heaped spoonfuls in the oil for 3 minutes each side until golden and cooked through, in batches.",
-    "Mix the avocado, tomato, lime and coriander and serve on top."
-   ],
-   "notes": [
-    "Contains shellfish, gluten, egg and dairy.",
-    "Food safety: cook fish until opaque and flaking, and shellfish until opaque and firm; keep raw seafood below 5°C, refrigerate leftovers within 2 hours and eat within 1 day."
-   ],
-   "nutrition": {
-    "kcal": 480,
-    "proteinG": 22,
-    "carbsG": 46,
-    "fatG": 24,
-    "fibreG": 6,
-    "sodiumMg": 520
-   }
-  },
-  {
-   "id": "slow-braised-beef-cheek-ragu-with-pappardelle",
-   "title": "Slow-Braised Beef Cheek Ragu with Pappardelle",
-   "summary": "Tender beef cheeks braised in tomato and red wine, shredded through ribbon pasta.",
-   "cuisine": "italian",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 20,
-   "cookMinutes": 170,
-   "servings": 6,
-   "onePot": false,
-   "diets": [],
-   "ingredients": [
+      "id": "crab-and-lime-fritters-with-smashed-avocado",
+      "title": "Crab and Lime Fritters with Smashed Avocado",
+      "summary": "Pan-fried fritters with crab and sweetcorn, served with a fresh avocado and lime salsa.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 cup plain flour",
+            "1 tsp baking powder",
+            "2 egg",
+            "1/2 cup milk",
+            "2 cup corn kernels",
+            "250g cooked crab meat",
+            "4 spring onion, sliced",
+            "2 tbsp olive oil",
+            "2 avocado, diced",
+            "1 tomato, diced",
+            "1 lime, juiced",
+            "1/4 cup coriander leaves"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the flour, baking powder, eggs and milk into a thick batter and fold in the corn, crab and spring onion.",
+        "Fry heaped spoonfuls in the oil for 3 minutes each side until golden and cooked through, in batches.",
+        "Mix the avocado, tomato, lime and coriander and serve on top."
+      ],
+      "notes": [
+        "Contains shellfish, gluten, egg and dairy.",
+        "Food safety: cook fish until opaque and flaking, and shellfish until opaque and firm; keep raw seafood below 5°C, refrigerate leftovers within 2 hours and eat within 1 day."
+      ],
+      "nutrition": {
+        "kcal": 480,
+        "proteinG": 22,
+        "carbsG": 46,
+        "fatG": 24,
+        "fibreG": 6,
+        "sodiumMg": 520
+      }
+    },
     {
-     "items": [
-      "800g beef cheek, trimmed",
-      "2 tbsp olive oil",
-      "1 onion, diced",
-      "2 carrot, diced",
-      "3 clove garlic, crushed",
-      "1 cup red wine",
-      "400g tinned tomatoes",
-      "1 cup beef stock",
-      "2 sprig rosemary",
-      "400g pappardelle",
-      "1/2 cup vegetarian hard cheese, grated"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oven to 150°C (130°C fan). Brown the beef in the oil in batches and set aside.",
-    "Soften the onion and carrot for 6 minutes, add the garlic, wine, tomatoes, stock and rosemary, return the beef, cover and braise for 2.5 hours until the cheeks fall apart.",
-    "Shred the beef into the sauce. Boil the pappardelle for 9 minutes until al dente and toss with the ragu and parmesan."
-   ],
-   "notes": [
-    "Contains gluten and dairy.",
-    "Food safety: beef must be cooked until tender and well above 75°C; cool leftovers quickly, refrigerate within 2 hours and eat within 3 days."
-   ],
-   "nutrition": {
-    "kcal": 620,
-    "proteinG": 42,
-    "carbsG": 58,
-    "fatG": 22,
-    "fibreG": 4,
-    "sodiumMg": 560
-   }
-  },
-  {
-   "id": "beef-heart-and-mushroom-stir-fry-with-black-pepper",
-   "title": "Black Pepper Beef Heart and Mushroom Stir-Fry",
-   "summary": "Thin slices of lean beef heart stir-fried hot and fast with mushrooms and black pepper sauce.",
-   "cuisine": "chinese",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 20,
-   "cookMinutes": 10,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "slow-braised-beef-cheek-ragu-with-pappardelle",
+      "title": "Slow-Braised Beef Cheek Ragu with Pappardelle",
+      "summary": "Tender beef cheeks braised in tomato and red wine, shredded through ribbon pasta.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 170,
+      "servings": 6,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "800g beef cheek, trimmed",
+            "2 tbsp olive oil",
+            "1 onion, diced",
+            "2 carrot, diced",
+            "3 clove garlic, crushed",
+            "1 cup red wine",
+            "400g tinned tomatoes",
+            "1 cup beef stock",
+            "2 sprig rosemary",
+            "400g pappardelle",
+            "1/2 cup vegetarian hard cheese, grated"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 150°C (130°C fan). Brown the beef in the oil in batches and set aside.",
+        "Soften the onion and carrot for 6 minutes, add the garlic, wine, tomatoes, stock and rosemary, return the beef, cover and braise for 2.5 hours until the cheeks fall apart.",
+        "Shred the beef into the sauce. Boil the pappardelle for 9 minutes until al dente and toss with the ragu and parmesan."
+      ],
+      "notes": [
+        "Contains gluten and dairy.",
+        "Food safety: beef must be cooked until tender and well above 75°C; cool leftovers quickly, refrigerate within 2 hours and eat within 3 days."
+      ],
+      "nutrition": {
+        "kcal": 620,
+        "proteinG": 42,
+        "carbsG": 58,
+        "fatG": 22,
+        "fibreG": 4,
+        "sodiumMg": 560
+      }
+    },
     {
-     "items": [
-      "500g beef heart, trimmed and thinly sliced",
-      "2 tbsp cornflour",
-      "3 tbsp vegetable oil",
-      "250g mushroom, sliced",
-      "1 capsicum, sliced",
-      "3 clove garlic, crushed",
-      "2 tbsp soy sauce",
-      "1 tbsp oyster sauce",
-      "2 tsp black pepper",
-      "1.5 cup jasmine rice",
-      "4 spring onion, sliced"
-     ]
-    }
-   ],
-   "steps": [
-    "Cook the rice until tender. Toss the beef heart with the cornflour.",
-    "Stir-fry the beef in half the oil in a very hot wok for 3 minutes until browned and cooked through, then set aside. Stir-fry the mushroom, capsicum and garlic in the remaining oil for 4 minutes.",
-    "Return the beef with the soy, oyster sauce and pepper for 1 minute and serve over the rice with spring onion."
-   ],
-   "notes": [
-    "Heart is a lean muscle, not tough if sliced thinly and cooked quickly. Contains soy and gluten.",
-    "Food safety: cook offal until no pink remains and it reaches 75°C; refrigerate leftovers within 2 hours and eat within 2 days."
-   ],
-   "nutrition": {
-    "kcal": 520,
-    "proteinG": 38,
-    "carbsG": 62,
-    "fatG": 13,
-    "fibreG": 3,
-    "sodiumMg": 980
-   }
-  },
-  {
-   "id": "chicken-livers-peri-peri-style-with-garlic-bread",
-   "title": "Peri-Peri-Style Chicken Livers with Garlic Bread",
-   "summary": "A South African-Portuguese favourite: chicken livers in a warm chilli and cream sauce with garlic bread.",
-   "cuisine": "south-african",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 15,
-   "servings": 4,
-   "onePot": false,
-   "diets": [],
-   "ingredients": [
+      "id": "beef-heart-and-mushroom-stir-fry-with-black-pepper",
+      "title": "Black Pepper Beef Heart and Mushroom Stir-Fry",
+      "summary": "Thin slices of lean beef heart stir-fried hot and fast with mushrooms and black pepper sauce.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g beef heart, trimmed and thinly sliced",
+            "2 tbsp cornflour",
+            "3 tbsp vegetable oil",
+            "250g mushroom, sliced",
+            "1 capsicum, sliced",
+            "3 clove garlic, crushed",
+            "2 tbsp soy sauce",
+            "1 tbsp oyster sauce",
+            "2 tsp black pepper",
+            "1.5 cup jasmine rice",
+            "4 spring onion, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the rice until tender. Toss the beef heart with the cornflour.",
+        "Stir-fry the beef in half the oil in a very hot wok for 3 minutes until browned and cooked through, then set aside. Stir-fry the mushroom, capsicum and garlic in the remaining oil for 4 minutes.",
+        "Return the beef with the soy, oyster sauce and pepper for 1 minute and serve over the rice with spring onion."
+      ],
+      "notes": [
+        "Heart is a lean muscle, not tough if sliced thinly and cooked quickly. Contains soy and gluten.",
+        "Food safety: cook offal until no pink remains and it reaches 75°C; refrigerate leftovers within 2 hours and eat within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 520,
+        "proteinG": 38,
+        "carbsG": 62,
+        "fatG": 13,
+        "fibreG": 3,
+        "sodiumMg": 980
+      }
+    },
     {
-     "items": [
-      "500g chicken liver, trimmed",
-      "2 tbsp olive oil",
-      "1 onion, diced",
-      "3 clove garlic, crushed",
-      "2 tsp chilli flakes",
-      "1/2 cup cream",
-      "1 tbsp lemon juice",
-      "1/4 cup parsley, chopped",
-      "1 baguette, sliced",
-      "40g butter"
-     ]
-    }
-   ],
-   "steps": [
-    "Fry the onion in the oil for 5 minutes until soft, add the garlic and the livers and cook for 4 minutes until browned.",
-    "Add the chilli, cream and lemon and simmer for 3 minutes until the livers are cooked through with no pink.",
-    "Toast the baguette with the butter until golden and serve with the livers and parsley."
-   ],
-   "notes": [
-    "Contains gluten and dairy. Avoid in pregnancy due to high vitamin A.",
-    "Food safety: cook liver until no pink remains and it reaches 75°C; refrigerate leftovers within 2 hours and eat within 1 day."
-   ],
-   "nutrition": {
-    "kcal": 560,
-    "proteinG": 28,
-    "carbsG": 46,
-    "fatG": 30,
-    "fibreG": 3,
-    "sodiumMg": 600
-   }
-  },
-  {
-   "id": "crispy-baked-tofu-with-sweet-chilli-and-sesame-greens",
-   "title": "Crispy Baked Tofu with Sweet Chilli and Sesame Greens",
-   "summary": "Oven-baked tofu cubes in a sticky sweet chilli glaze with sesame broccolini and rice.",
-   "cuisine": "thai",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 15,
-   "cookMinutes": 25,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "vegan",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "chicken-livers-peri-peri-style-with-garlic-bread",
+      "title": "Peri-Peri-Style Chicken Livers with Garlic Bread",
+      "summary": "A South African-Portuguese favourite: chicken livers in a warm chilli and cream sauce with garlic bread.",
+      "cuisine": "south-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "500g chicken liver, trimmed",
+            "2 tbsp olive oil",
+            "1 onion, diced",
+            "3 clove garlic, crushed",
+            "2 tsp chilli flakes",
+            "1/2 cup cream",
+            "1 tbsp lemon juice",
+            "1/4 cup parsley, chopped",
+            "1 baguette, sliced",
+            "40g butter"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the onion in the oil for 5 minutes until soft, add the garlic and the livers and cook for 4 minutes until browned.",
+        "Add the chilli, cream and lemon and simmer for 3 minutes until the livers are cooked through with no pink.",
+        "Toast the baguette with the butter until golden and serve with the livers and parsley."
+      ],
+      "notes": [
+        "Contains gluten and dairy. Avoid in pregnancy due to high vitamin A.",
+        "Food safety: cook liver until no pink remains and it reaches 75°C; refrigerate leftovers within 2 hours and eat within 1 day."
+      ],
+      "nutrition": {
+        "kcal": 560,
+        "proteinG": 28,
+        "carbsG": 46,
+        "fatG": 30,
+        "fibreG": 3,
+        "sodiumMg": 600
+      }
+    },
     {
-     "items": [
-      "600g firm tofu, pressed and cubed",
-      "2 tbsp cornflour",
-      "1 tbsp soy sauce",
-      "2 tbsp vegetable oil",
-      "1/3 cup sweet chilli sauce",
-      "2 bunch broccolini",
-      "1 tbsp sesame oil",
-      "1 tbsp sesame seeds",
-      "1.5 cup jasmine rice"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oven to 220°C (200°C fan). Toss the tofu in the soy, cornflour and oil and bake on a tray for 25 minutes until golden and crisp, turning once.",
-    "Cook the rice. Steam the broccolini for 4 minutes until tender and toss with the sesame oil and seeds.",
-    "Toss the hot tofu with the sweet chilli sauce for 1 minute and serve with the greens and rice."
-   ],
-   "notes": [
-    "Contains soy and sesame."
-   ],
-   "nutrition": {
-    "kcal": 500,
-    "proteinG": 24,
-    "carbsG": 66,
-    "fatG": 16,
-    "fibreG": 5,
-    "sodiumMg": 780
-   }
-  },
-  {
-   "id": "braised-tofu-and-mushroom-claypot-style-rice",
-   "title": "Braised Tofu and Mushroom Claypot-Style Rice",
-   "summary": "Rice, tofu, shiitake and greens cooked together in one pot with a caramelised soy base.",
-   "cuisine": "chinese",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 15,
-   "cookMinutes": 35,
-   "servings": 4,
-   "onePot": true,
-   "diets": [
-    "pescatarian",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "crispy-baked-tofu-with-sweet-chilli-and-sesame-greens",
+      "title": "Crispy Baked Tofu with Sweet Chilli and Sesame Greens",
+      "summary": "Oven-baked tofu cubes in a sticky sweet chilli glaze with sesame broccolini and rice.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g firm tofu, pressed and cubed",
+            "2 tbsp cornflour",
+            "1 tbsp soy sauce",
+            "2 tbsp vegetable oil",
+            "1/3 cup sweet chilli sauce",
+            "2 bunch broccolini",
+            "1 tbsp sesame oil",
+            "1 tbsp sesame seeds",
+            "1.5 cup jasmine rice"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (200°C fan). Toss the tofu in the soy, cornflour and oil and bake on a tray for 25 minutes until golden and crisp, turning once.",
+        "Cook the rice. Steam the broccolini for 4 minutes until tender and toss with the sesame oil and seeds.",
+        "Toss the hot tofu with the sweet chilli sauce for 1 minute and serve with the greens and rice."
+      ],
+      "notes": [
+        "Contains soy and sesame."
+      ],
+      "nutrition": {
+        "kcal": 500,
+        "proteinG": 24,
+        "carbsG": 66,
+        "fatG": 16,
+        "fibreG": 5,
+        "sodiumMg": 780
+      }
+    },
     {
-     "items": [
-      "1.5 cup jasmine rice",
-      "600g firm tofu, cubed",
-      "200g shiitake mushroom, sliced",
-      "2 tbsp vegetable oil",
-      "3 clove garlic, sliced",
-      "1 tbsp ginger, shredded",
-      "2 tbsp soy sauce",
-      "1 tbsp oyster sauce",
-      "2 cup vegetable stock",
-      "4 baby bok choy, halved",
-      "1 tbsp sesame oil"
-     ]
-    }
-   ],
-   "steps": [
-    "Brown the tofu in the oil for 6 minutes until golden, add the mushroom, garlic and ginger for 4 minutes.",
-    "Stir in the rice, soy, oyster sauce and stock, cover and cook gently for 15 minutes until the rice is nearly tender.",
-    "Lay the bok choy on top, cover for 5 minutes until wilted and drizzle with sesame oil."
-   ],
-   "notes": [
-    "Contains soy, gluten and sesame. Use vegetarian mushroom sauce for a vegan version."
-   ],
-   "nutrition": {
-    "kcal": 520,
-    "proteinG": 22,
-    "carbsG": 70,
-    "fatG": 16,
-    "fibreG": 4,
-    "sodiumMg": 1010
-   }
-  },
-  {
-   "id": "eggplant-and-lentil-moussaka-style-bake",
-   "title": "Eggplant and Lentil Moussaka-Style Bake",
-   "summary": "A plant-based moussaka layered with lentil ragu, grilled eggplant and a creamy yoghurt topping.",
-   "cuisine": "greek",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 25,
-   "cookMinutes": 45,
-   "servings": 6,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "no-gluten"
-   ],
-   "ingredients": [
+      "id": "braised-tofu-and-mushroom-claypot-style-rice",
+      "title": "Braised Tofu and Mushroom Claypot-Style Rice",
+      "summary": "Rice, tofu, shiitake and greens cooked together in one pot with a caramelised soy base.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1.5 cup jasmine rice",
+            "600g firm tofu, cubed",
+            "200g shiitake mushroom, sliced",
+            "2 tbsp vegetable oil",
+            "3 clove garlic, sliced",
+            "1 tbsp ginger, shredded",
+            "2 tbsp soy sauce",
+            "1 tbsp oyster sauce",
+            "2 cup vegetable stock",
+            "4 baby bok choy, halved",
+            "1 tbsp sesame oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the tofu in the oil for 6 minutes until golden, add the mushroom, garlic and ginger for 4 minutes.",
+        "Stir in the rice, soy, oyster sauce and stock, cover and cook gently for 15 minutes until the rice is nearly tender.",
+        "Lay the bok choy on top, cover for 5 minutes until wilted and drizzle with sesame oil."
+      ],
+      "notes": [
+        "Contains soy, gluten and sesame. Use vegetarian mushroom sauce for a vegan version."
+      ],
+      "nutrition": {
+        "kcal": 520,
+        "proteinG": 22,
+        "carbsG": 70,
+        "fatG": 16,
+        "fibreG": 4,
+        "sodiumMg": 1010
+      }
+    },
     {
-     "items": [
-      "3 eggplant, sliced",
-      "3 tbsp olive oil",
-      "1 onion, diced",
-      "3 clove garlic, crushed",
-      "1 cup brown lentils, rinsed",
-      "400g tinned tomatoes",
-      "1 cup vegetable stock",
-      "1 tsp ground cinnamon",
-      "2 egg",
-      "1.5 cup Greek yoghurt",
-      "1/2 cup vegetarian hard cheese, grated"
-     ]
+      "id": "eggplant-and-lentil-moussaka-style-bake",
+      "title": "Eggplant and Lentil Moussaka-Style Bake",
+      "summary": "A plant-based moussaka layered with lentil ragu, grilled eggplant and a creamy yoghurt topping.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 25,
+      "cookMinutes": 45,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 eggplant, sliced",
+            "3 tbsp olive oil",
+            "1 onion, diced",
+            "3 clove garlic, crushed",
+            "1 cup brown lentils, rinsed",
+            "400g tinned tomatoes",
+            "1 cup vegetable stock",
+            "1 tsp ground cinnamon",
+            "2 egg",
+            "1.5 cup Greek yoghurt",
+            "1/2 cup vegetarian hard cheese, grated"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (180°C fan). Brush the eggplant with oil and roast for 20 minutes until golden.",
+        "Soften the onion in a little oil, add the garlic, lentils, tomatoes, stock and cinnamon and simmer for 25 minutes until the lentils are tender and thick.",
+        "Layer the eggplant and lentils in a dish. Whisk the eggs, yoghurt and half the cheese, pour over, top with the remaining cheese and bake for 25 minutes until golden and set."
+      ],
+      "notes": [
+        "Contains egg and dairy.",
+        "Food safety: bake until the egg topping is set; refrigerate leftovers within 2 hours and eat within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 380,
+        "proteinG": 19,
+        "carbsG": 40,
+        "fatG": 16,
+        "fibreG": 13,
+        "sodiumMg": 360
+      }
     }
-   ],
-   "steps": [
-    "Heat the oven to 200°C (180°C fan). Brush the eggplant with oil and roast for 20 minutes until golden.",
-    "Soften the onion in a little oil, add the garlic, lentils, tomatoes, stock and cinnamon and simmer for 25 minutes until the lentils are tender and thick.",
-    "Layer the eggplant and lentils in a dish. Whisk the eggs, yoghurt and half the cheese, pour over, top with the remaining cheese and bake for 25 minutes until golden and set."
-   ],
-   "notes": [
-    "Contains egg and dairy.",
-    "Food safety: bake until the egg topping is set; refrigerate leftovers within 2 hours and eat within 2 days."
-   ],
-   "nutrition": {
-    "kcal": 380,
-    "proteinG": 19,
-    "carbsG": 40,
-    "fatG": 16,
-    "fibreG": 13,
-    "sodiumMg": 360
-   }
-  }
- ]
+  ]
 }

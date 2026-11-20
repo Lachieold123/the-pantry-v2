@@ -1,764 +1,764 @@
 {
- "about": "Batch 04, slice A, chunk A48: Mediterranean-diet, lightened comfort, fakeaway, BBQ, one-pot and freezer-to-table dinners.",
- "recipes": [
-  {
-   "id": "mediterranean-tuna-lemon-and-cherry-tomato-spaghetti",
-   "title": "Mediterranean Tuna, Lemon and Cherry Tomato Spaghetti",
-   "summary": "Pantry spaghetti with tinned tuna, cherry tomatoes, garlic, lemon and parsley.",
-   "cuisine": "italian",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 8,
-   "cookMinutes": 15,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "pescatarian",
-    "no-dairy"
-   ],
-   "ingredients": [
+  "about": "Batch 04, slice A, chunk A48: Mediterranean-diet, lightened comfort, fakeaway, BBQ, one-pot and freezer-to-table dinners.",
+  "recipes": [
     {
-     "items": [
-      "300g spaghetti",
-      "2 tbsp olive oil",
-      "3 clove garlic, sliced",
-      "1/2 tsp chilli flakes",
-      "300g cherry tomato, halved",
-      "250g tinned tuna, drained",
-      "1 lemon, zested and juiced",
-      "1/4 cup parsley, chopped",
-      "1/4 cup breadcrumbs"
-     ]
-    }
-   ],
-   "steps": [
-    "Boil the spaghetti for 10 minutes until al dente and keep half a cup of the water.",
-    "Fry the garlic and chilli in half the oil for 1 minute, add the tomatoes for 6 minutes until they burst, then flake in the tuna and heat for 2 minutes.",
-    "Toast the breadcrumbs in the remaining oil for 3 minutes until golden. Toss the pasta with the sauce, lemon and parsley and a splash of water, and top with the crumbs."
-   ],
-   "notes": [
-    "Contains fish and gluten. Refrigerate leftovers within 2 hours and eat within 1 day."
-   ],
-   "nutrition": {
-    "kcal": 520,
-    "proteinG": 24,
-    "carbsG": 70,
-    "fatG": 16,
-    "fibreG": 5,
-    "sodiumMg": 420
-   }
-  },
-  {
-   "id": "mediterranean-chicken-with-olives-lemon-and-potatoes",
-   "title": "Mediterranean Chicken with Olives, Lemon and Potatoes",
-   "summary": "Tray-roasted chicken legs with potatoes, green olives, lemon and thyme.",
-   "cuisine": "greek",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 15,
-   "cookMinutes": 50,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "mediterranean-tuna-lemon-and-cherry-tomato-spaghetti",
+      "title": "Mediterranean Tuna, Lemon and Cherry Tomato Spaghetti",
+      "summary": "Pantry spaghetti with tinned tuna, cherry tomatoes, garlic, lemon and parsley.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 8,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g spaghetti",
+            "2 tbsp olive oil",
+            "3 clove garlic, sliced",
+            "1/2 tsp chilli flakes",
+            "300g cherry tomato, halved",
+            "250g tinned tuna, drained",
+            "1 lemon, zested and juiced",
+            "1/4 cup parsley, chopped",
+            "1/4 cup breadcrumbs"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the spaghetti for 10 minutes until al dente and keep half a cup of the water.",
+        "Fry the garlic and chilli in half the oil for 1 minute, add the tomatoes for 6 minutes until they burst, then flake in the tuna and heat for 2 minutes.",
+        "Toast the breadcrumbs in the remaining oil for 3 minutes until golden. Toss the pasta with the sauce, lemon and parsley and a splash of water, and top with the crumbs."
+      ],
+      "notes": [
+        "Contains fish and gluten. Refrigerate leftovers within 2 hours and eat within 1 day."
+      ],
+      "nutrition": {
+        "kcal": 520,
+        "proteinG": 24,
+        "carbsG": 70,
+        "fatG": 16,
+        "fibreG": 5,
+        "sodiumMg": 420
+      }
+    },
     {
-     "items": [
-      "8 chicken drumstick",
-      "600g potato, cut into wedges",
-      "3 tbsp olive oil",
-      "1 lemon, sliced",
-      "1/2 cup olives",
-      "3 clove garlic, sliced",
-      "1 tsp dried thyme",
-      "1/2 tsp salt",
-      "200g cherry tomato"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oven to 220°C (200°C fan). Toss the chicken, potato, oil, lemon, garlic, thyme and salt on a large tray.",
-    "Roast for 35 minutes, then add the olives and tomatoes and roast for 15 minutes more until the skin is crisp and the chicken reaches 75°C.",
-    "Serve straight from the tray with the pan juices."
-   ],
-   "notes": [
-    "Food safety: chicken must reach 75°C at the thickest part with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
-   ],
-   "nutrition": {
-    "kcal": 520,
-    "proteinG": 34,
-    "carbsG": 36,
-    "fatG": 28,
-    "fibreG": 5,
-    "sodiumMg": 760
-   }
-  },
-  {
-   "id": "mediterranean-white-bean-and-vegetable-stew-with-gremolata",
-   "title": "Mediterranean White Bean and Vegetable Stew with Gremolata",
-   "summary": "Cannellini beans, zucchini and tomato stewed with garlic and finished with lemony parsley gremolata.",
-   "cuisine": "italian",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 30,
-   "servings": 4,
-   "onePot": true,
-   "diets": [
-    "vegetarian",
-    "vegan",
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "mediterranean-chicken-with-olives-lemon-and-potatoes",
+      "title": "Mediterranean Chicken with Olives, Lemon and Potatoes",
+      "summary": "Tray-roasted chicken legs with potatoes, green olives, lemon and thyme.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 50,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 chicken drumstick",
+            "600g potato, cut into wedges",
+            "3 tbsp olive oil",
+            "1 lemon, sliced",
+            "1/2 cup olives",
+            "3 clove garlic, sliced",
+            "1 tsp dried thyme",
+            "1/2 tsp salt",
+            "200g cherry tomato"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (200°C fan). Toss the chicken, potato, oil, lemon, garlic, thyme and salt on a large tray.",
+        "Roast for 35 minutes, then add the olives and tomatoes and roast for 15 minutes more until the skin is crisp and the chicken reaches 75°C.",
+        "Serve straight from the tray with the pan juices."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C at the thickest part with no pink; refrigerate leftovers within 2 hours and eat within 2 days."
+      ],
+      "nutrition": {
+        "kcal": 520,
+        "proteinG": 34,
+        "carbsG": 36,
+        "fatG": 28,
+        "fibreG": 5,
+        "sodiumMg": 760
+      }
+    },
     {
-     "items": [
-      "2 tbsp olive oil",
-      "1 onion, diced",
-      "2 carrot, diced",
-      "3 clove garlic, crushed",
-      "400g tinned tomatoes",
-      "800g tinned cannellini beans, drained",
-      "2 cup vegetable stock",
-      "1 zucchini, diced",
-      "1 tsp dried rosemary",
-      "1/4 cup parsley, chopped",
-      "1 lemon, zested",
-      "1/2 tsp salt"
-     ]
-    }
-   ],
-   "steps": [
-    "Soften the onion and carrot in the oil for 6 minutes, add two-thirds of the garlic and the rosemary for 1 minute.",
-    "Add the tomatoes, beans, stock and salt and simmer for 15 minutes, adding the zucchini for the last 8 minutes, until thick.",
-    "Mix the parsley, lemon zest and remaining crushed garlic and scatter over the stew."
-   ],
-   "notes": [
-    "Refrigerate leftovers within 2 hours and eat within 4 days."
-   ],
-   "nutrition": {
-    "kcal": 330,
-    "proteinG": 16,
-    "carbsG": 48,
-    "fatG": 8,
-    "fibreG": 13,
-    "sodiumMg": 640
-   }
-  },
-  {
-   "id": "mediterranean-baked-eggplant-with-chickpeas-and-feta",
-   "title": "Mediterranean Baked Eggplant with Chickpeas and Feta",
-   "summary": "Roasted eggplant halves filled with tomatoey chickpeas and crumbled feta.",
-   "cuisine": "greek",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 20,
-   "cookMinutes": 45,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "no-gluten"
-   ],
-   "ingredients": [
+      "id": "mediterranean-white-bean-and-vegetable-stew-with-gremolata",
+      "title": "Mediterranean White Bean and Vegetable Stew with Gremolata",
+      "summary": "Cannellini beans, zucchini and tomato stewed with garlic and finished with lemony parsley gremolata.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp olive oil",
+            "1 onion, diced",
+            "2 carrot, diced",
+            "3 clove garlic, crushed",
+            "400g tinned tomatoes",
+            "800g tinned cannellini beans, drained",
+            "2 cup vegetable stock",
+            "1 zucchini, diced",
+            "1 tsp dried rosemary",
+            "1/4 cup parsley, chopped",
+            "1 lemon, zested",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion and carrot in the oil for 6 minutes, add two-thirds of the garlic and the rosemary for 1 minute.",
+        "Add the tomatoes, beans, stock and salt and simmer for 15 minutes, adding the zucchini for the last 8 minutes, until thick.",
+        "Mix the parsley, lemon zest and remaining crushed garlic and scatter over the stew."
+      ],
+      "notes": [
+        "Refrigerate leftovers within 2 hours and eat within 4 days."
+      ],
+      "nutrition": {
+        "kcal": 330,
+        "proteinG": 16,
+        "carbsG": 48,
+        "fatG": 8,
+        "fibreG": 13,
+        "sodiumMg": 640
+      }
+    },
     {
-     "items": [
-      "2 eggplant, halved",
-      "3 tbsp olive oil",
-      "1 onion, diced",
-      "2 clove garlic, crushed",
-      "1 tsp ground cumin",
-      "400g tinned tomatoes",
-      "400g tinned chickpeas, drained",
-      "100g feta",
-      "2 tbsp parsley, chopped",
-      "1/2 tsp salt"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oven to 200°C (180°C fan). Score the eggplant, brush with two-thirds of the oil and roast cut-side down for 25 minutes until soft.",
-    "Soften the onion in the remaining oil for 5 minutes, add the garlic and cumin for 1 minute, then the tomatoes, chickpeas and salt and simmer for 10 minutes until thick.",
-    "Turn the eggplant over, fill with the chickpeas, top with feta and bake for 10 minutes until golden."
-   ],
-   "notes": [
-    "Contains milk. Refrigerate leftovers within 2 hours and eat within 3 days."
-   ],
-   "nutrition": {
-    "kcal": 390,
-    "proteinG": 15,
-    "carbsG": 38,
-    "fatG": 21,
-    "fibreG": 12,
-    "sodiumMg": 780
-   }
-  },
-  {
-   "id": "mediterranean-grilled-fish-with-tomato-and-white-bean-salad",
-   "title": "Mediterranean Grilled Fish with Tomato and White Bean Salad",
-   "summary": "Lemony grilled fish over a salad of tomato, white beans, red onion and basil.",
-   "cuisine": "italian",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 15,
-   "cookMinutes": 10,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "pescatarian",
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "mediterranean-baked-eggplant-with-chickpeas-and-feta",
+      "title": "Mediterranean Baked Eggplant with Chickpeas and Feta",
+      "summary": "Roasted eggplant halves filled with tomatoey chickpeas and crumbled feta.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 eggplant, halved",
+            "3 tbsp olive oil",
+            "1 onion, diced",
+            "2 clove garlic, crushed",
+            "1 tsp ground cumin",
+            "400g tinned tomatoes",
+            "400g tinned chickpeas, drained",
+            "100g feta",
+            "2 tbsp parsley, chopped",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (180°C fan). Score the eggplant, brush with two-thirds of the oil and roast cut-side down for 25 minutes until soft.",
+        "Soften the onion in the remaining oil for 5 minutes, add the garlic and cumin for 1 minute, then the tomatoes, chickpeas and salt and simmer for 10 minutes until thick.",
+        "Turn the eggplant over, fill with the chickpeas, top with feta and bake for 10 minutes until golden."
+      ],
+      "notes": [
+        "Contains milk. Refrigerate leftovers within 2 hours and eat within 3 days."
+      ],
+      "nutrition": {
+        "kcal": 390,
+        "proteinG": 15,
+        "carbsG": 38,
+        "fatG": 21,
+        "fibreG": 12,
+        "sodiumMg": 780
+      }
+    },
     {
-     "items": [
-      "4 white fish fillet",
-      "3 tbsp olive oil",
-      "1 lemon, juiced",
-      "1 clove garlic, crushed",
-      "400g tinned cannellini beans, drained",
-      "300g cherry tomato, halved",
-      "1/2 red onion, sliced",
-      "1/4 cup basil, torn",
-      "1/2 tsp salt"
-     ]
-    }
-   ],
-   "steps": [
-    "Rub the fish with half the oil, half the lemon juice and the garlic. Grill for 4 minutes a side until it flakes easily.",
-    "Toss the beans, tomato, onion and basil with the remaining oil, lemon juice and salt.",
-    "Serve the fish over the salad."
-   ],
-   "notes": [
-    "Food safety: fish should be opaque and flake easily, reaching 63°C; refrigerate leftovers within 2 hours and eat within 1 day.",
-    "Contains fish."
-   ],
-   "nutrition": {
-    "kcal": 370,
-    "proteinG": 38,
-    "carbsG": 24,
-    "fatG": 13,
-    "fibreG": 7,
-    "sodiumMg": 560
-   }
-  },
-  {
-   "id": "mediterranean-lamb-and-vegetable-souvlaki-bowls",
-   "title": "Mediterranean Lamb and Vegetable Souvlaki Bowls",
-   "summary": "Oregano lamb with roast vegetables, quick tzatziki and rice in a satisfying bowl.",
-   "cuisine": "greek",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 20,
-   "cookMinutes": 20,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "no-gluten"
-   ],
-   "ingredients": [
+      "id": "mediterranean-grilled-fish-with-tomato-and-white-bean-salad",
+      "title": "Mediterranean Grilled Fish with Tomato and White Bean Salad",
+      "summary": "Lemony grilled fish over a salad of tomato, white beans, red onion and basil.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 white fish fillet",
+            "3 tbsp olive oil",
+            "1 lemon, juiced",
+            "1 clove garlic, crushed",
+            "400g tinned cannellini beans, drained",
+            "300g cherry tomato, halved",
+            "1/2 red onion, sliced",
+            "1/4 cup basil, torn",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Rub the fish with half the oil, half the lemon juice and the garlic. Grill for 4 minutes a side until it flakes easily.",
+        "Toss the beans, tomato, onion and basil with the remaining oil, lemon juice and salt.",
+        "Serve the fish over the salad."
+      ],
+      "notes": [
+        "Food safety: fish should be opaque and flake easily, reaching 63°C; refrigerate leftovers within 2 hours and eat within 1 day.",
+        "Contains fish."
+      ],
+      "nutrition": {
+        "kcal": 370,
+        "proteinG": 38,
+        "carbsG": 24,
+        "fatG": 13,
+        "fibreG": 7,
+        "sodiumMg": 560
+      }
+    },
     {
-     "items": [
-      "500g lamb leg, cubed",
-      "3 tbsp olive oil",
-      "2 tsp dried oregano",
-      "2 clove garlic, crushed",
-      "1 lemon, juiced",
-      "1 zucchini, sliced",
-      "1 capsicum, diced",
-      "1 cup yoghurt",
-      "1/2 cucumber, grated",
-      "1 cup basmati rice",
-      "1/2 tsp salt"
-     ]
-    }
-   ],
-   "steps": [
-    "Marinate the lamb in two-thirds of the oil, oregano, half the garlic, lemon juice and salt for at least 30 minutes.",
-    "Grill or pan-fry the lamb for 8 minutes, turning, until browned and 71°C inside, and roast or fry the zucchini and capsicum in the remaining oil for 10 minutes. Cook the rice for 12 minutes until tender.",
-    "Squeeze the cucumber dry and mix into the yoghurt with the remaining garlic. Serve over the rice."
-   ],
-   "notes": [
-    "Food safety: lamb pieces should reach 71°C with no pink; refrigerate rice within 1 hour and leftovers within 2 hours.",
-    "Contains milk."
-   ],
-   "nutrition": {
-    "kcal": 570,
-    "proteinG": 38,
-    "carbsG": 50,
-    "fatG": 24,
-    "fibreG": 3,
-    "sodiumMg": 560
-   }
-  },
-  {
-   "id": "lightened-butter-chicken-with-cauliflower-rice",
-   "title": "Lightened Butter Chicken with Cauliflower Rice",
-   "summary": "All the creamy tomato flavour of butter chicken with yoghurt and less butter, over cauliflower rice.",
-   "cuisine": "indian",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 20,
-   "cookMinutes": 30,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "no-gluten"
-   ],
-   "ingredients": [
+      "id": "mediterranean-lamb-and-vegetable-souvlaki-bowls",
+      "title": "Mediterranean Lamb and Vegetable Souvlaki Bowls",
+      "summary": "Oregano lamb with roast vegetables, quick tzatziki and rice in a satisfying bowl.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "500g lamb leg, cubed",
+            "3 tbsp olive oil",
+            "2 tsp dried oregano",
+            "2 clove garlic, crushed",
+            "1 lemon, juiced",
+            "1 zucchini, sliced",
+            "1 capsicum, diced",
+            "1 cup yoghurt",
+            "1/2 cucumber, grated",
+            "1 cup basmati rice",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Marinate the lamb in two-thirds of the oil, oregano, half the garlic, lemon juice and salt for at least 30 minutes.",
+        "Grill or pan-fry the lamb for 8 minutes, turning, until browned and 71°C inside, and roast or fry the zucchini and capsicum in the remaining oil for 10 minutes. Cook the rice for 12 minutes until tender.",
+        "Squeeze the cucumber dry and mix into the yoghurt with the remaining garlic. Serve over the rice."
+      ],
+      "notes": [
+        "Food safety: lamb pieces should reach 71°C with no pink; refrigerate rice within 1 hour and leftovers within 2 hours.",
+        "Contains milk."
+      ],
+      "nutrition": {
+        "kcal": 570,
+        "proteinG": 38,
+        "carbsG": 50,
+        "fatG": 24,
+        "fibreG": 3,
+        "sodiumMg": 560
+      }
+    },
     {
-     "items": [
-      "600g chicken breast, diced",
-      "1/2 cup yoghurt",
-      "2 tsp garam masala",
-      "1 tsp paprika",
-      "1 tbsp butter",
-      "1 onion, diced",
-      "3 clove garlic, crushed",
-      "1 tbsp ginger, grated",
-      "400g tinned tomatoes",
-      "1/4 cup cream",
-      "1 head cauliflower, grated",
-      "1/2 tsp salt"
-     ]
-    }
-   ],
-   "steps": [
-    "Marinate the chicken in half the yoghurt, half the garam masala and the paprika for at least 30 minutes.",
-    "Cook the onion in the butter for 5 minutes, add the garlic, ginger and remaining garam masala for 1 minute, then the tomatoes and simmer for 10 minutes. Blend until smooth and add the chicken, simmering for 10 minutes until it reaches 75°C. Stir in the remaining yoghurt and the cream.",
-    "Fry the cauliflower in a dry pan for 5 minutes until tender, season with the salt and serve under the curry."
-   ],
-   "notes": [
-    "Food safety: chicken must reach 75°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
-    "Contains milk."
-   ],
-   "nutrition": {
-    "kcal": 330,
-    "proteinG": 40,
-    "carbsG": 16,
-    "fatG": 12,
-    "fibreG": 5,
-    "sodiumMg": 560
-   }
-  },
-  {
-   "id": "lightened-creamy-chicken-and-leek-pie-bake",
-   "title": "Lightened Creamy Chicken and Leek Pasta Bake",
-   "summary": "A comforting bake of chicken, leek and pasta in a light yoghurt-milk sauce.",
-   "cuisine": "british",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 15,
-   "cookMinutes": 35,
-   "servings": 4,
-   "onePot": false,
-   "diets": [],
-   "ingredients": [
+      "id": "lightened-butter-chicken-with-cauliflower-rice",
+      "title": "Lightened Butter Chicken with Cauliflower Rice",
+      "summary": "All the creamy tomato flavour of butter chicken with yoghurt and less butter, over cauliflower rice.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g chicken breast, diced",
+            "1/2 cup yoghurt",
+            "2 tsp garam masala",
+            "1 tsp paprika",
+            "1 tbsp butter",
+            "1 onion, diced",
+            "3 clove garlic, crushed",
+            "1 tbsp ginger, grated",
+            "400g tinned tomatoes",
+            "1/4 cup cream",
+            "1 head cauliflower, grated",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Marinate the chicken in half the yoghurt, half the garam masala and the paprika for at least 30 minutes.",
+        "Cook the onion in the butter for 5 minutes, add the garlic, ginger and remaining garam masala for 1 minute, then the tomatoes and simmer for 10 minutes. Blend until smooth and add the chicken, simmering for 10 minutes until it reaches 75°C. Stir in the remaining yoghurt and the cream.",
+        "Fry the cauliflower in a dry pan for 5 minutes until tender, season with the salt and serve under the curry."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
+        "Contains milk."
+      ],
+      "nutrition": {
+        "kcal": 330,
+        "proteinG": 40,
+        "carbsG": 16,
+        "fatG": 12,
+        "fibreG": 5,
+        "sodiumMg": 560
+      }
+    },
     {
-     "items": [
-      "400g chicken breast, diced",
-      "250g penne",
-      "1 tbsp olive oil",
-      "2 leek, sliced",
-      "2 clove garlic, crushed",
-      "1 tbsp flour",
-      "1 1/2 cup milk",
-      "1/2 cup yoghurt",
-      "1 tbsp mustard",
-      "1/2 cup cheddar, grated",
-      "1/4 cup breadcrumbs"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oven to 200°C (180°C fan). Boil the penne for 8 minutes until just tender and drain.",
-    "Cook the chicken in the oil for 5 minutes, add the leek and garlic for 5 minutes, stir in the flour for 1 minute, then whisk in the milk and simmer for 5 minutes until thick. Off the heat, stir in the yoghurt and mustard.",
-    "Fold through the pasta, tip into a dish, top with the cheese and breadcrumbs and bake for 15 minutes until golden and the chicken reaches 75°C."
-   ],
-   "notes": [
-    "Food safety: chicken must reach 75°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
-    "Contains gluten and milk."
-   ],
-   "nutrition": {
-    "kcal": 500,
-    "proteinG": 38,
-    "carbsG": 60,
-    "fatG": 12,
-    "fibreG": 4,
-    "sodiumMg": 520
-   }
-  },
-  {
-   "id": "fakeaway-chicken-doner-kebab-plates-with-chilli-sauce",
-   "title": "Fakeaway Chicken Doner Kebab Plates with Chilli Sauce",
-   "summary": "Spiced chicken thigh grilled until charred, served with salad, chips and garlic chilli sauce.",
-   "cuisine": "turkish",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 20,
-   "cookMinutes": 30,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "no-gluten"
-   ],
-   "ingredients": [
+      "id": "lightened-creamy-chicken-and-leek-pie-bake",
+      "title": "Lightened Creamy Chicken and Leek Pasta Bake",
+      "summary": "A comforting bake of chicken, leek and pasta in a light yoghurt-milk sauce.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "400g chicken breast, diced",
+            "250g penne",
+            "1 tbsp olive oil",
+            "2 leek, sliced",
+            "2 clove garlic, crushed",
+            "1 tbsp flour",
+            "1 1/2 cup milk",
+            "1/2 cup yoghurt",
+            "1 tbsp mustard",
+            "1/2 cup cheddar, grated",
+            "1/4 cup breadcrumbs"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (180°C fan). Boil the penne for 8 minutes until just tender and drain.",
+        "Cook the chicken in the oil for 5 minutes, add the leek and garlic for 5 minutes, stir in the flour for 1 minute, then whisk in the milk and simmer for 5 minutes until thick. Off the heat, stir in the yoghurt and mustard.",
+        "Fold through the pasta, tip into a dish, top with the cheese and breadcrumbs and bake for 15 minutes until golden and the chicken reaches 75°C."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
+        "Contains gluten and milk."
+      ],
+      "nutrition": {
+        "kcal": 500,
+        "proteinG": 38,
+        "carbsG": 60,
+        "fatG": 12,
+        "fibreG": 4,
+        "sodiumMg": 520
+      }
+    },
     {
-     "items": [
-      "600g chicken thigh, sliced",
-      "1/2 cup yoghurt",
-      "2 tsp ground cumin",
-      "2 tsp paprika",
-      "3 clove garlic, crushed",
-      "1 tbsp olive oil",
-      "600g potato, cut into chips",
-      "2 tbsp olive oil",
-      "2 cup cabbage, shredded",
-      "2 tomato, diced",
-      "1/2 red onion, sliced",
-      "1 tbsp chilli sauce"
-     ]
-    }
-   ],
-   "steps": [
-    "Marinate the chicken in half the yoghurt, the cumin, paprika, two-thirds of the garlic and the oil for at least 30 minutes.",
-    "Heat the oven to 220°C (200°C fan) and roast the chips with the 2 tablespoons oil for 30 minutes until golden. Grill or fry the chicken for 10 minutes until charred and 75°C inside.",
-    "Mix the remaining yoghurt, garlic and chilli sauce. Serve the chicken with the chips, cabbage, tomato and onion and drizzle with sauce."
-   ],
-   "notes": [
-    "Food safety: chicken must reach 75°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
-    "Contains milk."
-   ],
-   "nutrition": {
-    "kcal": 620,
-    "proteinG": 38,
-    "carbsG": 48,
-    "fatG": 31,
-    "fibreG": 6,
-    "sodiumMg": 540
-   }
-  },
-  {
-   "id": "bbq-teriyaki-salmon-skewers-with-sesame-rice",
-   "title": "BBQ Teriyaki Salmon Skewers with Sesame Rice",
-   "summary": "Glazed salmon skewers grilled for a few minutes and served over sesame rice with cucumber.",
-   "cuisine": "japanese",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 15,
-   "cookMinutes": 10,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "pescatarian",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "fakeaway-chicken-doner-kebab-plates-with-chilli-sauce",
+      "title": "Fakeaway Chicken Doner Kebab Plates with Chilli Sauce",
+      "summary": "Spiced chicken thigh grilled until charred, served with salad, chips and garlic chilli sauce.",
+      "cuisine": "turkish",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g chicken thigh, sliced",
+            "1/2 cup yoghurt",
+            "2 tsp ground cumin",
+            "2 tsp paprika",
+            "3 clove garlic, crushed",
+            "1 tbsp olive oil",
+            "600g potato, cut into chips",
+            "2 tbsp olive oil",
+            "2 cup cabbage, shredded",
+            "2 tomato, diced",
+            "1/2 red onion, sliced",
+            "1 tbsp chilli sauce"
+          ]
+        }
+      ],
+      "steps": [
+        "Marinate the chicken in half the yoghurt, the cumin, paprika, two-thirds of the garlic and the oil for at least 30 minutes.",
+        "Heat the oven to 220°C (200°C fan) and roast the chips with the 2 tablespoons oil for 30 minutes until golden. Grill or fry the chicken for 10 minutes until charred and 75°C inside.",
+        "Mix the remaining yoghurt, garlic and chilli sauce. Serve the chicken with the chips, cabbage, tomato and onion and drizzle with sauce."
+      ],
+      "notes": [
+        "Food safety: chicken must reach 75°C with no pink; refrigerate leftovers within 2 hours and eat within 2 days.",
+        "Contains milk."
+      ],
+      "nutrition": {
+        "kcal": 620,
+        "proteinG": 38,
+        "carbsG": 48,
+        "fatG": 31,
+        "fibreG": 6,
+        "sodiumMg": 540
+      }
+    },
     {
-     "items": [
-      "600g salmon fillet, cubed",
-      "3 tbsp soy sauce",
-      "2 tbsp honey",
-      "1 tbsp rice vinegar",
-      "1 clove garlic, crushed",
-      "1 1/2 cup jasmine rice",
-      "1 tbsp sesame seeds",
-      "1 cucumber, sliced",
-      "2 spring onion, sliced"
-     ]
-    }
-   ],
-   "steps": [
-    "Simmer the soy sauce, honey, vinegar and garlic for 3 minutes until syrupy and cool. Toss half with the salmon and thread onto skewers.",
-    "Cook the rice for 12 minutes until tender and stir through the sesame seeds. Grill the skewers over medium-high heat for 5 minutes, turning and brushing with the glaze, until the fish flakes.",
-    "Serve over the rice with cucumber and spring onion and drizzle with the remaining glaze."
-   ],
-   "notes": [
-    "Food safety: salmon should reach 63°C; use fresh glaze for serving, not the portion that touched raw fish; refrigerate rice within 1 hour and leftovers within 2 hours.",
-    "Contains fish, soy, gluten and sesame."
-   ],
-   "nutrition": {
-    "kcal": 570,
-    "proteinG": 36,
-    "carbsG": 72,
-    "fatG": 15,
-    "fibreG": 2,
-    "sodiumMg": 900
-   }
-  },
-  {
-   "id": "bbq-halloumi-and-vegetable-skewers-with-couscous",
-   "title": "BBQ Halloumi and Vegetable Skewers with Couscous",
-   "summary": "Grilled halloumi, zucchini and capsicum skewers with lemony couscous and mint yoghurt.",
-   "cuisine": "middle-eastern",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 20,
-   "cookMinutes": 12,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian"
-   ],
-   "ingredients": [
+      "id": "bbq-teriyaki-salmon-skewers-with-sesame-rice",
+      "title": "BBQ Teriyaki Salmon Skewers with Sesame Rice",
+      "summary": "Glazed salmon skewers grilled for a few minutes and served over sesame rice with cucumber.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 10,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g salmon fillet, cubed",
+            "3 tbsp soy sauce",
+            "2 tbsp honey",
+            "1 tbsp rice vinegar",
+            "1 clove garlic, crushed",
+            "1 1/2 cup jasmine rice",
+            "1 tbsp sesame seeds",
+            "1 cucumber, sliced",
+            "2 spring onion, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the soy sauce, honey, vinegar and garlic for 3 minutes until syrupy and cool. Toss half with the salmon and thread onto skewers.",
+        "Cook the rice for 12 minutes until tender and stir through the sesame seeds. Grill the skewers over medium-high heat for 5 minutes, turning and brushing with the glaze, until the fish flakes.",
+        "Serve over the rice with cucumber and spring onion and drizzle with the remaining glaze."
+      ],
+      "notes": [
+        "Food safety: salmon should reach 63°C; use fresh glaze for serving, not the portion that touched raw fish; refrigerate rice within 1 hour and leftovers within 2 hours.",
+        "Contains fish, soy, gluten and sesame."
+      ],
+      "nutrition": {
+        "kcal": 570,
+        "proteinG": 36,
+        "carbsG": 72,
+        "fatG": 15,
+        "fibreG": 2,
+        "sodiumMg": 900
+      }
+    },
     {
-     "items": [
-      "250g halloumi, cubed",
-      "2 zucchini, thick slices",
-      "2 capsicum, cubed",
-      "1 red onion, cut in wedges",
-      "2 tbsp olive oil",
-      "1 tsp dried oregano",
-      "1 1/2 cup couscous",
-      "1 1/2 cup boiling water",
-      "1 lemon, juiced",
-      "1/2 cup yoghurt",
-      "2 tbsp mint, chopped"
-     ]
-    }
-   ],
-   "steps": [
-    "Thread the halloumi and vegetables onto skewers and brush with the oil and oregano.",
-    "Pour the boiling water over the couscous, cover for 5 minutes until fluffy and fork through the lemon juice. Grill the skewers over medium-high heat for 10 minutes, turning, until charred and the halloumi is golden.",
-    "Stir the mint into the yoghurt and serve with the skewers and couscous."
-   ],
-   "notes": [
-    "Contains milk and gluten. Refrigerate leftovers within 2 hours."
-   ],
-   "nutrition": {
-    "kcal": 540,
-    "proteinG": 24,
-    "carbsG": 62,
-    "fatG": 22,
-    "fibreG": 6,
-    "sodiumMg": 760
-   }
-  },
-  {
-   "id": "one-pot-chicken-and-chorizo-paella-style-rice",
-   "title": "One-Pot Chicken and Chorizo Paella-Style Rice",
-   "summary": "Rice, chicken and chorizo simmered with paprika and peas for an easy weeknight paella.",
-   "cuisine": "spanish",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 10,
-   "cookMinutes": 40,
-   "servings": 4,
-   "onePot": true,
-   "diets": [
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "bbq-halloumi-and-vegetable-skewers-with-couscous",
+      "title": "BBQ Halloumi and Vegetable Skewers with Couscous",
+      "summary": "Grilled halloumi, zucchini and capsicum skewers with lemony couscous and mint yoghurt.",
+      "cuisine": "middle-eastern",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g halloumi, cubed",
+            "2 zucchini, thick slices",
+            "2 capsicum, cubed",
+            "1 red onion, cut in wedges",
+            "2 tbsp olive oil",
+            "1 tsp dried oregano",
+            "1 1/2 cup couscous",
+            "1 1/2 cup boiling water",
+            "1 lemon, juiced",
+            "1/2 cup yoghurt",
+            "2 tbsp mint, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Thread the halloumi and vegetables onto skewers and brush with the oil and oregano.",
+        "Pour the boiling water over the couscous, cover for 5 minutes until fluffy and fork through the lemon juice. Grill the skewers over medium-high heat for 10 minutes, turning, until charred and the halloumi is golden.",
+        "Stir the mint into the yoghurt and serve with the skewers and couscous."
+      ],
+      "notes": [
+        "Contains milk and gluten. Refrigerate leftovers within 2 hours."
+      ],
+      "nutrition": {
+        "kcal": 540,
+        "proteinG": 24,
+        "carbsG": 62,
+        "fatG": 22,
+        "fibreG": 6,
+        "sodiumMg": 760
+      }
+    },
     {
-     "items": [
-      "400g chicken thigh, diced",
-      "150g chorizo, sliced",
-      "2 tbsp olive oil",
-      "1 onion, diced",
-      "1 capsicum, diced",
-      "3 clove garlic, crushed",
-      "2 tsp smoked paprika",
-      "1 1/2 cup arborio rice",
-      "3 cup chicken stock",
-      "1 cup frozen peas",
-      "1 lemon, cut in wedges"
-     ]
-    }
-   ],
-   "steps": [
-    "Brown the chicken and chorizo in the oil for 8 minutes until golden and the chicken reaches 75°C, then add the onion, capsicum and garlic for 4 minutes and stir in the paprika.",
-    "Add the rice and stock, bring to a simmer and cook gently, uncovered and without stirring, for 20 minutes until the rice is tender and the liquid absorbed. Scatter on the peas for the last 3 minutes.",
-    "Rest covered for 5 minutes and serve with lemon."
-   ],
-   "notes": [
-    "Food safety: chicken and chorizo must reach 75°C with no pink; refrigerate rice within 1 hour and leftovers within 2 hours, and reheat until steaming hot."
-   ],
-   "nutrition": {
-    "kcal": 640,
-    "proteinG": 34,
-    "carbsG": 70,
-    "fatG": 24,
-    "fibreG": 4,
-    "sodiumMg": 980
-   }
-  },
-  {
-   "id": "one-pot-creamy-garlic-prawn-and-spinach-orzo",
-   "title": "One-Pot Creamy Garlic Prawn and Spinach Orzo",
-   "summary": "Orzo cooks in garlicky stock and finishes with cream, spinach and quick prawns.",
-   "cuisine": "italian",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 8,
-   "cookMinutes": 20,
-   "servings": 4,
-   "onePot": true,
-   "diets": [
-    "pescatarian"
-   ],
-   "ingredients": [
+      "id": "one-pot-chicken-and-chorizo-paella-style-rice",
+      "title": "One-Pot Chicken and Chorizo Paella-Style Rice",
+      "summary": "Rice, chicken and chorizo simmered with paprika and peas for an easy weeknight paella.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 40,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g chicken thigh, diced",
+            "150g chorizo, sliced",
+            "2 tbsp olive oil",
+            "1 onion, diced",
+            "1 capsicum, diced",
+            "3 clove garlic, crushed",
+            "2 tsp smoked paprika",
+            "1 1/2 cup arborio rice",
+            "3 cup chicken stock",
+            "1 cup frozen peas",
+            "1 lemon, cut in wedges"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the chicken and chorizo in the oil for 8 minutes until golden and the chicken reaches 75°C, then add the onion, capsicum and garlic for 4 minutes and stir in the paprika.",
+        "Add the rice and stock, bring to a simmer and cook gently, uncovered and without stirring, for 20 minutes until the rice is tender and the liquid absorbed. Scatter on the peas for the last 3 minutes.",
+        "Rest covered for 5 minutes and serve with lemon."
+      ],
+      "notes": [
+        "Food safety: chicken and chorizo must reach 75°C with no pink; refrigerate rice within 1 hour and leftovers within 2 hours, and reheat until steaming hot."
+      ],
+      "nutrition": {
+        "kcal": 640,
+        "proteinG": 34,
+        "carbsG": 70,
+        "fatG": 24,
+        "fibreG": 4,
+        "sodiumMg": 980
+      }
+    },
     {
-     "items": [
-      "300g orzo",
-      "400g prawns, peeled",
-      "2 tbsp olive oil",
-      "4 clove garlic, crushed",
-      "3 cup vegetable stock",
-      "1/2 cup cream",
-      "150g spinach",
-      "1 lemon, zested and juiced",
-      "1/2 tsp salt"
-     ]
-    }
-   ],
-   "steps": [
-    "Sear the prawns in half the oil for 2 minutes until pink and set aside.",
-    "Cook the garlic in the remaining oil for 30 seconds, add the orzo and stock and simmer for 10 minutes, stirring often, until tender and mostly absorbed.",
-    "Stir in the cream, spinach, lemon and salt for 2 minutes until wilted, then return the prawns for 1 minute."
-   ],
-   "notes": [
-    "Food safety: cook prawns until pink and opaque; refrigerate leftovers within 2 hours and eat within 1 day.",
-    "Contains gluten, milk and crustacean shellfish."
-   ],
-   "nutrition": {
-    "kcal": 520,
-    "proteinG": 30,
-    "carbsG": 58,
-    "fatG": 17,
-    "fibreG": 4,
-    "sodiumMg": 780
-   }
-  },
-  {
-   "id": "freezer-to-table-turkey-meatballs-in-tomato-sauce",
-   "title": "Freezer-to-Table Turkey Meatballs in Tomato Sauce",
-   "summary": "Batch-cooked turkey meatballs in tomato sauce that go from freezer to table in 30 minutes.",
-   "cuisine": "italian",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 30,
-   "cookMinutes": 40,
-   "servings": 6,
-   "onePot": false,
-   "diets": [
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "one-pot-creamy-garlic-prawn-and-spinach-orzo",
+      "title": "One-Pot Creamy Garlic Prawn and Spinach Orzo",
+      "summary": "Orzo cooks in garlicky stock and finishes with cream, spinach and quick prawns.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 8,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": true,
+      "diets": [
+        "pescatarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g orzo",
+            "400g prawns, peeled",
+            "2 tbsp olive oil",
+            "4 clove garlic, crushed",
+            "3 cup vegetable stock",
+            "1/2 cup cream",
+            "150g spinach",
+            "1 lemon, zested and juiced",
+            "1/2 tsp salt"
+          ]
+        }
+      ],
+      "steps": [
+        "Sear the prawns in half the oil for 2 minutes until pink and set aside.",
+        "Cook the garlic in the remaining oil for 30 seconds, add the orzo and stock and simmer for 10 minutes, stirring often, until tender and mostly absorbed.",
+        "Stir in the cream, spinach, lemon and salt for 2 minutes until wilted, then return the prawns for 1 minute."
+      ],
+      "notes": [
+        "Food safety: cook prawns until pink and opaque; refrigerate leftovers within 2 hours and eat within 1 day.",
+        "Contains gluten, milk and crustacean shellfish."
+      ],
+      "nutrition": {
+        "kcal": 520,
+        "proteinG": 30,
+        "carbsG": 58,
+        "fatG": 17,
+        "fibreG": 4,
+        "sodiumMg": 780
+      }
+    },
     {
-     "items": [
-      "600g turkey mince",
-      "1/2 cup breadcrumbs",
-      "1 egg",
-      "2 clove garlic, crushed",
-      "1 tsp dried oregano",
-      "1/2 tsp salt",
-      "1 tbsp olive oil",
-      "800g tinned tomatoes",
-      "1 onion, diced",
-      "300g spaghetti"
-     ]
-    }
-   ],
-   "steps": [
-    "Mix the mince, breadcrumbs, egg, half the garlic, oregano and salt and roll into 24 meatballs. Brown in the oil for 6 minutes.",
-    "Add the onion, tomatoes and remaining garlic and simmer for 15 minutes until the meatballs reach 75°C and the sauce is thick. Cool within 1 hour, portion and freeze for up to 3 months.",
-    "Reheat from frozen, covered, over low heat for 25 minutes, stirring, until steaming hot. Boil the spaghetti for 10 minutes until al dente and serve."
-   ],
-   "notes": [
-    "Food safety: turkey mince must reach 75°C right through with no pink; reheat only once until steaming hot (75°C), do not refreeze and eat within 2 days of thawing.",
-    "Contains egg and gluten."
-   ],
-   "nutrition": {
-    "kcal": 460,
-    "proteinG": 34,
-    "carbsG": 54,
-    "fatG": 11,
-    "fibreG": 5,
-    "sodiumMg": 520
-   }
-  },
-  {
-   "id": "freezer-to-table-vegetable-and-bean-chilli-bake",
-   "title": "Freezer-to-Table Vegetable and Bean Chilli Bake",
-   "summary": "A vegetarian chilli topped with cornbread-style crumbs, baked straight from frozen.",
-   "cuisine": "mexican",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 20,
-   "cookMinutes": 45,
-   "servings": 6,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "no-gluten"
-   ],
-   "ingredients": [
+      "id": "freezer-to-table-turkey-meatballs-in-tomato-sauce",
+      "title": "Freezer-to-Table Turkey Meatballs in Tomato Sauce",
+      "summary": "Batch-cooked turkey meatballs in tomato sauce that go from freezer to table in 30 minutes.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 30,
+      "cookMinutes": 40,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g turkey mince",
+            "1/2 cup breadcrumbs",
+            "1 egg",
+            "2 clove garlic, crushed",
+            "1 tsp dried oregano",
+            "1/2 tsp salt",
+            "1 tbsp olive oil",
+            "800g tinned tomatoes",
+            "1 onion, diced",
+            "300g spaghetti"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the mince, breadcrumbs, egg, half the garlic, oregano and salt and roll into 24 meatballs. Brown in the oil for 6 minutes.",
+        "Add the onion, tomatoes and remaining garlic and simmer for 15 minutes until the meatballs reach 75°C and the sauce is thick. Cool within 1 hour, portion and freeze for up to 3 months.",
+        "Reheat from frozen, covered, over low heat for 25 minutes, stirring, until steaming hot. Boil the spaghetti for 10 minutes until al dente and serve."
+      ],
+      "notes": [
+        "Food safety: turkey mince must reach 75°C right through with no pink; reheat only once until steaming hot (75°C), do not refreeze and eat within 2 days of thawing.",
+        "Contains egg and gluten."
+      ],
+      "nutrition": {
+        "kcal": 460,
+        "proteinG": 34,
+        "carbsG": 54,
+        "fatG": 11,
+        "fibreG": 5,
+        "sodiumMg": 520
+      }
+    },
     {
-     "items": [
-      "2 tbsp olive oil",
-      "1 onion, diced",
-      "1 capsicum, diced",
-      "1 zucchini, diced",
-      "3 clove garlic, crushed",
-      "2 tsp ground cumin",
-      "1 tsp smoked paprika",
-      "800g tinned tomatoes",
-      "800g tinned kidney beans, drained",
-      "1 cup corn kernels",
-      "1 cup polenta",
-      "1 cup cheddar, grated"
-     ]
+      "id": "freezer-to-table-vegetable-and-bean-chilli-bake",
+      "title": "Freezer-to-Table Vegetable and Bean Chilli Bake",
+      "summary": "A vegetarian chilli topped with cornbread-style crumbs, baked straight from frozen.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 tbsp olive oil",
+            "1 onion, diced",
+            "1 capsicum, diced",
+            "1 zucchini, diced",
+            "3 clove garlic, crushed",
+            "2 tsp ground cumin",
+            "1 tsp smoked paprika",
+            "800g tinned tomatoes",
+            "800g tinned kidney beans, drained",
+            "1 cup corn kernels",
+            "1 cup polenta",
+            "1 cup cheddar, grated"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion, capsicum, zucchini and garlic in the oil for 8 minutes, stir in the spices, then add the tomatoes, beans and corn and simmer for 15 minutes until thick. Cool and spoon into a dish.",
+        "Scatter the polenta and cheese over the top and freeze, wrapped, for up to 3 months.",
+        "Bake from frozen, covered, at 190°C (170°C fan) for 45 minutes, then uncovered for 15 minutes until golden and hot in the centre."
+      ],
+      "notes": [
+        "Contains milk. Cool before freezing and reheat only once until steaming hot (75°C)."
+      ],
+      "nutrition": {
+        "kcal": 420,
+        "proteinG": 18,
+        "carbsG": 62,
+        "fatG": 13,
+        "fibreG": 13,
+        "sodiumMg": 640
+      }
     }
-   ],
-   "steps": [
-    "Soften the onion, capsicum, zucchini and garlic in the oil for 8 minutes, stir in the spices, then add the tomatoes, beans and corn and simmer for 15 minutes until thick. Cool and spoon into a dish.",
-    "Scatter the polenta and cheese over the top and freeze, wrapped, for up to 3 months.",
-    "Bake from frozen, covered, at 190°C (170°C fan) for 45 minutes, then uncovered for 15 minutes until golden and hot in the centre."
-   ],
-   "notes": [
-    "Contains milk. Cool before freezing and reheat only once until steaming hot (75°C)."
-   ],
-   "nutrition": {
-    "kcal": 420,
-    "proteinG": 18,
-    "carbsG": 62,
-    "fatG": 13,
-    "fibreG": 13,
-    "sodiumMg": 640
-   }
-  }
- ]
+  ]
 }

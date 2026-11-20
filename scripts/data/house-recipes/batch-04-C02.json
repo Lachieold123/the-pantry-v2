@@ -1,2106 +1,2106 @@
 {
- "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
- "recipes": [
-  {
-   "id": "spiced-ful-medames-with-tahini-and-soft-egg",
-   "title": "Spiced Ful Medames with Tahini and Soft Egg",
-   "summary": "Warm mashed broad beans with lemon, cumin and a soft-boiled egg.",
-   "cuisine": "north-african",
-   "mealTypes": [
-    "breakfast",
-    "lunch"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 15,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "no-dairy"
-   ],
-   "ingredients": [
+  "about": "House recipes, batch 04 (slice C): written by Claude in a Max-plan session, original, ai-draft. Nutrition is a per-serve estimate kept as data only.",
+  "recipes": [
     {
-     "items": [
-      "800g tinned kidney beans, drained",
-      "2 garlic cloves",
-      "1 tsp ground cumin",
-      "2 tbsp lemon juice",
-      "3 tbsp olive oil",
-      "2 tbsp tahini",
-      "4 eggs",
-      "2 tomato, diced",
-      "1 handful parsley",
-      "4 flatbread"
-     ]
-    }
-   ],
-   "steps": [
-    "Warm the beans with the garlic, cumin and 100ml water for 8 minutes, until hot, then mash roughly with a fork.",
-    "Stir in the lemon juice, half the oil and salt.",
-    "Boil the eggs for 6 minutes, until the whites are set and the yolks soft, then peel.",
-    "Spoon the beans into bowls, drizzle with tahini and the remaining oil, and add the tomato, parsley and an egg.",
-    "Serve with warm flatbread."
-   ],
-   "notes": [
-    "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
-   ],
-   "nutrition": {
-    "kcal": 491,
-    "proteinG": 24,
-    "carbsG": 56,
-    "fatG": 19,
-    "fibreG": 13,
-    "sodiumMg": 760
-   }
-  },
-  {
-   "id": "brown-rice-breakfast-bowl-with-miso-greens-and-egg",
-   "title": "Brown Rice Breakfast Bowl with Miso Greens and Egg",
-   "summary": "Leftover rice topped with miso-glazed greens and a jammy egg.",
-   "cuisine": "japanese",
-   "mealTypes": [
-    "breakfast",
-    "lunch"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 5,
-   "cookMinutes": 15,
-   "servings": 2,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "spiced-ful-medames-with-tahini-and-soft-egg",
+      "title": "Spiced Ful Medames with Tahini and Soft Egg",
+      "summary": "Warm mashed broad beans with lemon, cumin and a soft-boiled egg.",
+      "cuisine": "north-african",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g tinned kidney beans, drained",
+            "2 garlic cloves",
+            "1 tsp ground cumin",
+            "2 tbsp lemon juice",
+            "3 tbsp olive oil",
+            "2 tbsp tahini",
+            "4 eggs",
+            "2 tomato, diced",
+            "1 handful parsley",
+            "4 flatbread"
+          ]
+        }
+      ],
+      "steps": [
+        "Warm the beans with the garlic, cumin and 100ml water for 8 minutes, until hot, then mash roughly with a fork.",
+        "Stir in the lemon juice, half the oil and salt.",
+        "Boil the eggs for 6 minutes, until the whites are set and the yolks soft, then peel.",
+        "Spoon the beans into bowls, drizzle with tahini and the remaining oil, and add the tomato, parsley and an egg.",
+        "Serve with warm flatbread."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
+      ],
+      "nutrition": {
+        "kcal": 491,
+        "proteinG": 24,
+        "carbsG": 56,
+        "fatG": 19,
+        "fibreG": 13,
+        "sodiumMg": 760
+      }
+    },
     {
-     "items": [
-      "300g brown rice, cooked",
-      "200g kale, shredded",
-      "1 tbsp miso",
-      "1 tbsp mirin",
-      "2 eggs",
-      "1 tsp sesame oil",
-      "1 tbsp sesame seeds",
-      "1 nori sheet, torn"
-     ]
-    }
-   ],
-   "steps": [
-    "Boil the eggs for 7 minutes, until the whites are set and the yolks jammy, then peel.",
-    "Warm the sesame oil and cook the kale for 4 minutes, until wilted and bright.",
-    "Whisk the miso and mirin with 2 tbsp water and stir through the kale until glossy.",
-    "Heat the rice until steaming, then divide between bowls and top with kale, egg, sesame and nori."
-   ],
-   "notes": [
-    "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
-   ],
-   "nutrition": {
-    "kcal": 434,
-    "proteinG": 19,
-    "carbsG": 58,
-    "fatG": 14,
-    "fibreG": 6,
-    "sodiumMg": 640
-   }
-  },
-  {
-   "id": "savoury-mince-on-toast-with-poached-egg",
-   "title": "Savoury Mince on Toast with Poached Egg",
-   "summary": "A comforting British breakfast of spiced beef mince on buttered toast.",
-   "cuisine": "british",
-   "mealTypes": [
-    "breakfast",
-    "lunch"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 20,
-   "servings": 4,
-   "onePot": false,
-   "diets": [],
-   "ingredients": [
+      "id": "brown-rice-breakfast-bowl-with-miso-greens-and-egg",
+      "title": "Brown Rice Breakfast Bowl with Miso Greens and Egg",
+      "summary": "Leftover rice topped with miso-glazed greens and a jammy egg.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g brown rice, cooked",
+            "200g kale, shredded",
+            "1 tbsp miso",
+            "1 tbsp mirin",
+            "2 eggs",
+            "1 tsp sesame oil",
+            "1 tbsp sesame seeds",
+            "1 nori sheet, torn"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the eggs for 7 minutes, until the whites are set and the yolks jammy, then peel.",
+        "Warm the sesame oil and cook the kale for 4 minutes, until wilted and bright.",
+        "Whisk the miso and mirin with 2 tbsp water and stir through the kale until glossy.",
+        "Heat the rice until steaming, then divide between bowls and top with kale, egg, sesame and nori."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
+      ],
+      "nutrition": {
+        "kcal": 434,
+        "proteinG": 19,
+        "carbsG": 58,
+        "fatG": 14,
+        "fibreG": 6,
+        "sodiumMg": 640
+      }
+    },
     {
-     "items": [
-      "400g beef mince",
-      "1 brown onion, diced",
-      "2 carrots, grated",
-      "2 tbsp tomato paste",
-      "200ml beef stock",
-      "1 tbsp worcestershire sauce",
-      "4 slices white bread",
-      "4 eggs",
-      "1 tbsp butter"
-     ]
-    }
-   ],
-   "steps": [
-    "Brown the mince with the onion until no pink remains.",
-    "Stir in the carrot, tomato paste, stock and worcestershire sauce and simmer for 12 minutes, until thick and rich.",
-    "Poach the eggs for 3 minutes, until the whites are set.",
-    "Butter the toasted bread until the slices are glossy, then spoon over the mince and add an egg."
-   ],
-   "notes": [
-    "Food safety: cook the mince until 75°C in the centre and no pink remains.",
-    "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
-   ],
-   "nutrition": {
-    "kcal": 456,
-    "proteinG": 36,
-    "carbsG": 24,
-    "fatG": 24,
-    "fibreG": 3,
-    "sodiumMg": 880
-   }
-  },
-  {
-   "id": "cinnamon-rice-porridge-with-poached-pear",
-   "title": "Cinnamon Rice Porridge with Poached Pear",
-   "summary": "Creamy rice pudding style porridge with warm cinnamon and soft pear.",
-   "cuisine": "modern-australian",
-   "mealTypes": [
-    "breakfast"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 5,
-   "cookMinutes": 30,
-   "servings": 2,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "no-gluten"
-   ],
-   "ingredients": [
+      "id": "savoury-mince-on-toast-with-poached-egg",
+      "title": "Savoury Mince on Toast with Poached Egg",
+      "summary": "A comforting British breakfast of spiced beef mince on buttered toast.",
+      "cuisine": "british",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "400g beef mince",
+            "1 brown onion, diced",
+            "2 carrots, grated",
+            "2 tbsp tomato paste",
+            "200ml beef stock",
+            "1 tbsp worcestershire sauce",
+            "4 slices white bread",
+            "4 eggs",
+            "1 tbsp butter"
+          ]
+        }
+      ],
+      "steps": [
+        "Brown the mince with the onion until no pink remains.",
+        "Stir in the carrot, tomato paste, stock and worcestershire sauce and simmer for 12 minutes, until thick and rich.",
+        "Poach the eggs for 3 minutes, until the whites are set.",
+        "Butter the toasted bread until the slices are glossy, then spoon over the mince and add an egg."
+      ],
+      "notes": [
+        "Food safety: cook the mince until 75°C in the centre and no pink remains.",
+        "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
+      ],
+      "nutrition": {
+        "kcal": 456,
+        "proteinG": 36,
+        "carbsG": 24,
+        "fatG": 24,
+        "fibreG": 3,
+        "sodiumMg": 880
+      }
+    },
     {
-     "items": [
-      "100g arborio rice",
-      "500ml milk",
-      "1 pear, sliced",
-      "1 cinnamon stick",
-      "2 tbsp maple syrup",
-      "1 tbsp butter",
-      "2 tbsp walnuts, chopped"
-     ]
-    }
-   ],
-   "steps": [
-    "Simmer the rice, milk and cinnamon stick, stirring, for 20 minutes, until the rice is tender and creamy.",
-    "Melt the butter and cook the pear for 5 minutes, until soft and golden.",
-    "Remove the cinnamon, stir in half the maple syrup, and spoon into bowls.",
-    "Top with pear, walnuts and the remaining syrup."
-   ],
-   "notes": [
-    "Use oat milk for a dairy free version."
-   ],
-   "nutrition": {
-    "kcal": 459,
-    "proteinG": 13,
-    "carbsG": 68,
-    "fatG": 15,
-    "fibreG": 4,
-    "sodiumMg": 160
-   }
-  },
-  {
-   "id": "pesto-scrambled-eggs-on-sourdough",
-   "title": "Pesto Scrambled Eggs on Sourdough",
-   "summary": "Soft scrambled eggs ribboned with basil pesto and cherry tomatoes.",
-   "cuisine": "italian",
-   "mealTypes": [
-    "breakfast"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 5,
-   "cookMinutes": 8,
-   "servings": 2,
-   "onePot": false,
-   "diets": [],
-   "ingredients": [
+      "id": "cinnamon-rice-porridge-with-poached-pear",
+      "title": "Cinnamon Rice Porridge with Poached Pear",
+      "summary": "Creamy rice pudding style porridge with warm cinnamon and soft pear.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 30,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100g arborio rice",
+            "500ml milk",
+            "1 pear, sliced",
+            "1 cinnamon stick",
+            "2 tbsp maple syrup",
+            "1 tbsp butter",
+            "2 tbsp walnuts, chopped"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the rice, milk and cinnamon stick, stirring, for 20 minutes, until the rice is tender and creamy.",
+        "Melt the butter and cook the pear for 5 minutes, until soft and golden.",
+        "Remove the cinnamon, stir in half the maple syrup, and spoon into bowls.",
+        "Top with pear, walnuts and the remaining syrup."
+      ],
+      "notes": [
+        "Use oat milk for a dairy free version."
+      ],
+      "nutrition": {
+        "kcal": 459,
+        "proteinG": 13,
+        "carbsG": 68,
+        "fatG": 15,
+        "fibreG": 4,
+        "sodiumMg": 160
+      }
+    },
     {
-     "items": [
-      "4 eggs",
-      "2 tbsp pesto",
-      "1 tbsp butter",
-      "100g cherry tomato, halved",
-      "2 slices sourdough",
-      "1 handful rocket"
-     ]
-    }
-   ],
-   "steps": [
-    "Whisk the eggs and a pinch of salt.",
-    "Melt the butter and add the tomatoes for 2 minutes, until blistered.",
-    "Pour in the eggs and stir gently over low heat for 3 minutes, until just softly set.",
-    "Fold in the pesto and serve on toasted sourdough with rocket."
-   ],
-   "notes": [
-    "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
-   ],
-   "nutrition": {
-    "kcal": 400,
-    "proteinG": 22,
-    "carbsG": 24,
-    "fatG": 24,
-    "fibreG": 3,
-    "sodiumMg": 820
-   }
-  },
-  {
-   "id": "mushroom-congee-with-soy-cashews",
-   "title": "Mushroom Congee with Soy Cashews",
-   "summary": "Plant-based rice porridge with seared mushrooms and crunchy soy cashews.",
-   "cuisine": "chinese",
-   "mealTypes": [
-    "breakfast",
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 50,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "vegan",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "pesto-scrambled-eggs-on-sourdough",
+      "title": "Pesto Scrambled Eggs on Sourdough",
+      "summary": "Soft scrambled eggs ribboned with basil pesto and cherry tomatoes.",
+      "cuisine": "italian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 8,
+      "servings": 2,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "4 eggs",
+            "2 tbsp pesto",
+            "1 tbsp butter",
+            "100g cherry tomato, halved",
+            "2 slices sourdough",
+            "1 handful rocket"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the eggs and a pinch of salt.",
+        "Melt the butter and add the tomatoes for 2 minutes, until blistered.",
+        "Pour in the eggs and stir gently over low heat for 3 minutes, until just softly set.",
+        "Fold in the pesto and serve on toasted sourdough with rocket."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
+      ],
+      "nutrition": {
+        "kcal": 400,
+        "proteinG": 22,
+        "carbsG": 24,
+        "fatG": 24,
+        "fibreG": 3,
+        "sodiumMg": 820
+      }
+    },
     {
-     "items": [
-      "200g jasmine rice",
-      "1.5 litres vegetable stock",
-      "300g mixed mushrooms, sliced",
-      "1 tbsp ginger, sliced",
-      "2 tbsp soy sauce",
-      "60g cashews",
-      "1 tbsp sesame oil",
-      "2 spring onions, sliced"
-     ]
-    }
-   ],
-   "steps": [
-    "Simmer the rice, stock and ginger for 45 minutes, stirring now and then, until the grains burst and the porridge is thick.",
-    "Sear the mushrooms in a dry pan until golden, then add the soy sauce until glossy.",
-    "Toast the cashews in a pan until golden.",
-    "Ladle the congee into bowls and top with mushrooms, cashews, spring onion and sesame oil."
-   ],
-   "notes": [
-    "Vegan. Use tamari for gluten free."
-   ],
-   "nutrition": {
-    "kcal": 332,
-    "proteinG": 10,
-    "carbsG": 46,
-    "fatG": 12,
-    "fibreG": 3,
-    "sodiumMg": 1100
-   }
-  },
-  {
-   "id": "dutch-baby-pancake-with-roasted-berries",
-   "title": "Dutch Baby Pancake with Roasted Berries",
-   "summary": "A puffed oven pancake served with warm roast berries and yoghurt.",
-   "cuisine": "american",
-   "mealTypes": [
-    "breakfast"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 10,
-   "cookMinutes": 20,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian"
-   ],
-   "ingredients": [
+      "id": "mushroom-congee-with-soy-cashews",
+      "title": "Mushroom Congee with Soy Cashews",
+      "summary": "Plant-based rice porridge with seared mushrooms and crunchy soy cashews.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "breakfast",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 50,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g jasmine rice",
+            "1.5 litres vegetable stock",
+            "300g mixed mushrooms, sliced",
+            "1 tbsp ginger, sliced",
+            "2 tbsp soy sauce",
+            "60g cashews",
+            "1 tbsp sesame oil",
+            "2 spring onions, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the rice, stock and ginger for 45 minutes, stirring now and then, until the grains burst and the porridge is thick.",
+        "Sear the mushrooms in a dry pan until golden, then add the soy sauce until glossy.",
+        "Toast the cashews in a pan until golden.",
+        "Ladle the congee into bowls and top with mushrooms, cashews, spring onion and sesame oil."
+      ],
+      "notes": [
+        "Vegan. Use tamari for gluten free."
+      ],
+      "nutrition": {
+        "kcal": 332,
+        "proteinG": 10,
+        "carbsG": 46,
+        "fatG": 12,
+        "fibreG": 3,
+        "sodiumMg": 1100
+      }
+    },
     {
-     "items": [
-      "3 eggs",
-      "120g plain flour",
-      "120ml milk",
-      "2 tbsp butter",
-      "2 tbsp caster sugar",
-      "200g frozen berries",
-      "1 tbsp honey",
-      "100g greek yoghurt"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oven to 220°C with a 24cm ovenproof frying pan inside.",
-    "Blend the eggs, flour, milk and sugar until smooth.",
-    "Melt the butter in the hot pan, pour in the batter and bake for 18 minutes, until puffed and golden.",
-    "Warm the berries with the honey for 3 minutes until they release their juices.",
-    "Serve the pancake with berries and yoghurt."
-   ],
-   "notes": [
-    "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
-   ],
-   "nutrition": {
-    "kcal": 336,
-    "proteinG": 15,
-    "carbsG": 42,
-    "fatG": 12,
-    "fibreG": 3,
-    "sodiumMg": 200
-   }
-  },
-  {
-   "id": "turkish-egg-and-yoghurt-with-chilli-butter-cilbir",
-   "title": "Turkish Egg and Yoghurt with Chilli Butter (Cilbir)",
-   "summary": "Poached eggs on garlicky yoghurt with sizzling paprika butter.",
-   "cuisine": "turkish",
-   "mealTypes": [
-    "breakfast"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 10,
-   "cookMinutes": 10,
-   "servings": 2,
-   "onePot": false,
-   "diets": [
-    "vegetarian"
-   ],
-   "ingredients": [
+      "id": "dutch-baby-pancake-with-roasted-berries",
+      "title": "Dutch Baby Pancake with Roasted Berries",
+      "summary": "A puffed oven pancake served with warm roast berries and yoghurt.",
+      "cuisine": "american",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "3 eggs",
+            "120g plain flour",
+            "120ml milk",
+            "2 tbsp butter",
+            "2 tbsp caster sugar",
+            "200g frozen berries",
+            "1 tbsp honey",
+            "100g greek yoghurt"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C with a 24cm ovenproof frying pan inside.",
+        "Blend the eggs, flour, milk and sugar until smooth.",
+        "Melt the butter in the hot pan, pour in the batter and bake for 18 minutes, until puffed and golden.",
+        "Warm the berries with the honey for 3 minutes until they release their juices.",
+        "Serve the pancake with berries and yoghurt."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
+      ],
+      "nutrition": {
+        "kcal": 336,
+        "proteinG": 15,
+        "carbsG": 42,
+        "fatG": 12,
+        "fibreG": 3,
+        "sodiumMg": 200
+      }
+    },
     {
-     "items": [
-      "4 eggs",
-      "250g greek yoghurt",
-      "1 garlic clove, crushed",
-      "2 tbsp butter",
-      "1 tsp paprika",
-      "1 pinch chilli flakes",
-      "1 tbsp dill, chopped",
-      "2 slices sourdough"
-     ]
-    }
-   ],
-   "steps": [
-    "Mix the yoghurt and garlic with a pinch of salt and let it come to room temperature.",
-    "Poach the eggs in barely simmering water for 3 minutes, until the whites are set.",
-    "Melt the butter with the paprika and chilli until foaming and deep red.",
-    "Spoon the eggs onto the yoghurt, drizzle with the butter until it pools, and scatter with dill. Serve with toast."
-   ],
-   "notes": [
-    "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
-   ],
-   "nutrition": {
-    "kcal": 417,
-    "proteinG": 26,
-    "carbsG": 22,
-    "fatG": 25,
-    "fibreG": 2,
-    "sodiumMg": 740
-   }
-  },
-  {
-   "id": "beetroot-and-feta-rye-toast",
-   "title": "Beetroot and Feta Rye Toast",
-   "summary": "Earthy roast beetroot, creamy feta and walnuts on seeded rye.",
-   "cuisine": "central-european",
-   "mealTypes": [
-    "breakfast",
-    "lunch"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 0,
-   "servings": 2,
-   "onePot": false,
-   "diets": [
-    "vegetarian"
-   ],
-   "ingredients": [
+      "id": "turkish-egg-and-yoghurt-with-chilli-butter-cilbir",
+      "title": "Turkish Egg and Yoghurt with Chilli Butter (Cilbir)",
+      "summary": "Poached eggs on garlicky yoghurt with sizzling paprika butter.",
+      "cuisine": "turkish",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 eggs",
+            "250g greek yoghurt",
+            "1 garlic clove, crushed",
+            "2 tbsp butter",
+            "1 tsp paprika",
+            "1 pinch chilli flakes",
+            "1 tbsp dill, chopped",
+            "2 slices sourdough"
+          ]
+        }
+      ],
+      "steps": [
+        "Mix the yoghurt and garlic with a pinch of salt and let it come to room temperature.",
+        "Poach the eggs in barely simmering water for 3 minutes, until the whites are set.",
+        "Melt the butter with the paprika and chilli until foaming and deep red.",
+        "Spoon the eggs onto the yoghurt, drizzle with the butter until it pools, and scatter with dill. Serve with toast."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
+      ],
+      "nutrition": {
+        "kcal": 417,
+        "proteinG": 26,
+        "carbsG": 22,
+        "fatG": 25,
+        "fibreG": 2,
+        "sodiumMg": 740
+      }
+    },
     {
-     "items": [
-      "2 slices rye bread",
-      "2 beetroot, cooked and sliced",
-      "100g feta",
-      "2 tbsp walnuts, chopped",
-      "1 tbsp olive oil",
-      "1 tsp honey",
-      "1 handful rocket"
-     ]
-    }
-   ],
-   "steps": [
-    "Toast the rye until crisp.",
-    "Mash the feta with the oil until spreadable.",
-    "Spread the feta on the toast, and layer with beetroot and rocket until generously piled.",
-    "Top with walnuts and a drizzle of honey."
-   ],
-   "notes": [
-    "Vegetarian."
-   ],
-   "nutrition": {
-    "kcal": 390,
-    "proteinG": 14,
-    "carbsG": 34,
-    "fatG": 22,
-    "fibreG": 6,
-    "sodiumMg": 720
-   }
-  },
-  {
-   "id": "spicy-tofu-scramble-with-black-beans",
-   "title": "Spicy Tofu Scramble with Black Beans",
-   "summary": "A smoky vegan scramble loaded with capsicum, beans and fresh herbs.",
-   "cuisine": "mexican",
-   "mealTypes": [
-    "breakfast"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 12,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "vegan",
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "beetroot-and-feta-rye-toast",
+      "title": "Beetroot and Feta Rye Toast",
+      "summary": "Earthy roast beetroot, creamy feta and walnuts on seeded rye.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 slices rye bread",
+            "2 beetroot, cooked and sliced",
+            "100g feta",
+            "2 tbsp walnuts, chopped",
+            "1 tbsp olive oil",
+            "1 tsp honey",
+            "1 handful rocket"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the rye until crisp.",
+        "Mash the feta with the oil until spreadable.",
+        "Spread the feta on the toast, and layer with beetroot and rocket until generously piled.",
+        "Top with walnuts and a drizzle of honey."
+      ],
+      "notes": [
+        "Vegetarian."
+      ],
+      "nutrition": {
+        "kcal": 390,
+        "proteinG": 14,
+        "carbsG": 34,
+        "fatG": 22,
+        "fibreG": 6,
+        "sodiumMg": 720
+      }
+    },
     {
-     "items": [
-      "400g firm tofu",
-      "1 red onion, diced",
-      "1 red capsicum, diced",
-      "200g tinned black beans, drained",
-      "1 tsp ground cumin",
-      "1 tsp smoked paprika",
-      "1 tsp ground turmeric",
-      "2 tbsp olive oil",
-      "2 tbsp coriander, chopped",
-      "4 corn tortilla"
-     ]
-    }
-   ],
-   "steps": [
-    "Soften the onion and capsicum in the oil for 5 minutes, until tender.",
-    "Crumble in the tofu with the spices and cook for 5 minutes, until golden at the edges.",
-    "Stir through the beans and warm until hot.",
-    "Warm the tortillas and serve the scramble inside, topped with coriander."
-   ],
-   "notes": [
-    "Vegan and gluten free."
-   ],
-   "nutrition": {
-    "kcal": 317,
-    "proteinG": 18,
-    "carbsG": 32,
-    "fatG": 13,
-    "fibreG": 9,
-    "sodiumMg": 560
-   }
-  },
-  {
-   "id": "overnight-oats-with-coconut-and-mango",
-   "title": "Overnight Oats with Coconut and Mango",
-   "summary": "Make-ahead oats in coconut milk topped with fresh mango.",
-   "cuisine": "pacific-islands",
-   "mealTypes": [
-    "breakfast"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 0,
-   "servings": 2,
-   "onePot": false,
-   "diets": [
-    "vegetarian"
-   ],
-   "ingredients": [
+      "id": "spicy-tofu-scramble-with-black-beans",
+      "title": "Spicy Tofu Scramble with Black Beans",
+      "summary": "A smoky vegan scramble loaded with capsicum, beans and fresh herbs.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g firm tofu",
+            "1 red onion, diced",
+            "1 red capsicum, diced",
+            "200g tinned black beans, drained",
+            "1 tsp ground cumin",
+            "1 tsp smoked paprika",
+            "1 tsp ground turmeric",
+            "2 tbsp olive oil",
+            "2 tbsp coriander, chopped",
+            "4 corn tortilla"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion and capsicum in the oil for 5 minutes, until tender.",
+        "Crumble in the tofu with the spices and cook for 5 minutes, until golden at the edges.",
+        "Stir through the beans and warm until hot.",
+        "Warm the tortillas and serve the scramble inside, topped with coriander."
+      ],
+      "notes": [
+        "Vegan and gluten free."
+      ],
+      "nutrition": {
+        "kcal": 317,
+        "proteinG": 18,
+        "carbsG": 32,
+        "fatG": 13,
+        "fibreG": 9,
+        "sodiumMg": 560
+      }
+    },
     {
-     "items": [
-      "100g rolled oats",
-      "200ml coconut milk",
-      "100g greek yoghurt",
-      "1 tbsp honey",
-      "1 mango, diced",
-      "2 tbsp desiccated coconut",
-      "1 lime, zested"
-     ]
-    }
-   ],
-   "steps": [
-    "Stir the oats, coconut milk, yoghurt and honey together.",
-    "Chill overnight, until the oats are soft and creamy.",
-    "Spoon into bowls and top with mango, toasted coconut and lime zest."
-   ],
-   "notes": [
-    "Plus overnight chilling.",
-    "Vegetarian."
-   ],
-   "nutrition": {
-    "kcal": 481,
-    "proteinG": 13,
-    "carbsG": 62,
-    "fatG": 20,
-    "fibreG": 7,
-    "sodiumMg": 55
-   }
-  },
-  {
-   "id": "soba-noodle-breakfast-bowl-with-soft-egg-and-dashi",
-   "title": "Soba Noodle Breakfast Bowl with Soft Egg and Dashi",
-   "summary": "Warm noodles in a light dashi broth with an egg and spring onion.",
-   "cuisine": "japanese",
-   "mealTypes": [
-    "breakfast",
-    "lunch"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 5,
-   "cookMinutes": 12,
-   "servings": 2,
-   "onePot": false,
-   "diets": [
-    "pescatarian",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "overnight-oats-with-coconut-and-mango",
+      "title": "Overnight Oats with Coconut and Mango",
+      "summary": "Make-ahead oats in coconut milk topped with fresh mango.",
+      "cuisine": "pacific-islands",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100g rolled oats",
+            "200ml coconut milk",
+            "100g greek yoghurt",
+            "1 tbsp honey",
+            "1 mango, diced",
+            "2 tbsp desiccated coconut",
+            "1 lime, zested"
+          ]
+        }
+      ],
+      "steps": [
+        "Stir the oats, coconut milk, yoghurt and honey together.",
+        "Chill overnight, until the oats are soft and creamy.",
+        "Spoon into bowls and top with mango, toasted coconut and lime zest."
+      ],
+      "notes": [
+        "Plus overnight chilling.",
+        "Vegetarian."
+      ],
+      "nutrition": {
+        "kcal": 481,
+        "proteinG": 13,
+        "carbsG": 62,
+        "fatG": 20,
+        "fibreG": 7,
+        "sodiumMg": 55
+      }
+    },
     {
-     "items": [
-      "150g soba noodles",
-      "600ml dashi",
-      "1 tbsp soy sauce",
-      "1 tbsp mirin",
-      "2 eggs",
-      "2 spring onions, sliced",
-      "1 nori sheet, sliced"
-     ]
-    }
-   ],
-   "steps": [
-    "Boil the eggs for 6 minutes, until the whites are set, then peel.",
-    "Cook the soba in boiling water until tender, about 4 minutes, then drain.",
-    "Heat the dashi with the soy and mirin until steaming.",
-    "Divide the noodles into bowls, pour over the broth and top with egg, spring onion and nori."
-   ],
-   "notes": [
-    "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable.",
-    "Check the soba label for gluten if needed."
-   ],
-   "nutrition": {
-    "kcal": 372,
-    "proteinG": 20,
-    "carbsG": 59,
-    "fatG": 6,
-    "fibreG": 3,
-    "sodiumMg": 1400
-   }
-  },
-  {
-   "id": "garlic-mushroom-frittata-with-thyme",
-   "title": "Garlic Mushroom Frittata with Thyme",
-   "summary": "A thick baked frittata studded with browned mushrooms and thyme.",
-   "cuisine": "french",
-   "mealTypes": [
-    "breakfast",
-    "lunch"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 25,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-     "no-gluten"
-   ],
-   "ingredients": [
+      "id": "soba-noodle-breakfast-bowl-with-soft-egg-and-dashi",
+      "title": "Soba Noodle Breakfast Bowl with Soft Egg and Dashi",
+      "summary": "Warm noodles in a light dashi broth with an egg and spring onion.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 12,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g soba noodles",
+            "600ml dashi",
+            "1 tbsp soy sauce",
+            "1 tbsp mirin",
+            "2 eggs",
+            "2 spring onions, sliced",
+            "1 nori sheet, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the eggs for 6 minutes, until the whites are set, then peel.",
+        "Cook the soba in boiling water until tender, about 4 minutes, then drain.",
+        "Heat the dashi with the soy and mirin until steaming.",
+        "Divide the noodles into bowls, pour over the broth and top with egg, spring onion and nori."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable.",
+        "Check the soba label for gluten if needed."
+      ],
+      "nutrition": {
+        "kcal": 372,
+        "proteinG": 20,
+        "carbsG": 59,
+        "fatG": 6,
+        "fibreG": 3,
+        "sodiumMg": 1400
+      }
+    },
     {
-     "items": [
-      "8 eggs",
-      "300g button mushroom, sliced",
-      "1 brown onion, sliced",
-      "2 garlic cloves",
-      "1 tbsp thyme",
-      "2 tbsp olive oil",
-      "100ml cream",
-      "100g vegetarian gruyere"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oven to 180°C. Fry the mushrooms in the oil until golden and the liquid cooks off.",
-    "Add the onion, garlic and thyme and soften for 4 minutes.",
-    "Whisk the eggs and cream with salt and pour over the vegetables in an ovenproof pan, adding the gruyere.",
-    "Bake for 18 minutes, until set in the centre and golden on top."
-   ],
-   "notes": [
-    "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
-   ],
-   "nutrition": {
-    "kcal": 354,
-    "proteinG": 24,
-    "carbsG": 6,
-    "fatG": 26,
-    "fibreG": 2,
-    "sodiumMg": 420
-   }
-  },
-  {
-   "id": "baked-coconut-rice-pudding-breakfast-with-cardamom",
-   "title": "Baked Coconut Rice Pudding Breakfast with Cardamom",
-   "summary": "A baked, creamy rice breakfast scented with cardamom.",
-   "cuisine": "indian",
-   "mealTypes": [
-    "breakfast"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 55,
-   "servings": 6,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "no-gluten"
-   ],
-   "ingredients": [
+      "id": "garlic-mushroom-frittata-with-thyme",
+      "title": "Garlic Mushroom Frittata with Thyme",
+      "summary": "A thick baked frittata studded with browned mushrooms and thyme.",
+      "cuisine": "french",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "8 eggs",
+            "300g button mushroom, sliced",
+            "1 brown onion, sliced",
+            "2 garlic cloves",
+            "1 tbsp thyme",
+            "2 tbsp olive oil",
+            "100ml cream",
+            "100g vegetarian gruyere"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C. Fry the mushrooms in the oil until golden and the liquid cooks off.",
+        "Add the onion, garlic and thyme and soften for 4 minutes.",
+        "Whisk the eggs and cream with salt and pour over the vegetables in an ovenproof pan, adding the gruyere.",
+        "Bake for 18 minutes, until set in the centre and golden on top."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
+      ],
+      "nutrition": {
+        "kcal": 354,
+        "proteinG": 24,
+        "carbsG": 6,
+        "fatG": 26,
+        "fibreG": 2,
+        "sodiumMg": 420
+      }
+    },
     {
-     "items": [
-      "150g basmati rice",
-      "400ml coconut milk",
-      "500ml milk",
-      "3 tbsp sugar",
-      "1 tsp ground cardamom",
-      "50g sultanas",
-      "2 tbsp pistachios"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oven to 160°C. Mix the rice, coconut milk, milk, sugar, cardamom and sultanas in a baking dish.",
-    "Bake, stirring once, for 50 minutes, until the rice is tender and the pudding is creamy.",
-    "Rest for 5 minutes and scatter with pistachios."
-   ],
-   "notes": [
-    "Plus 5 minutes resting.",
-    "Vegetarian and gluten free."
-   ],
-   "nutrition": {
-    "kcal": 316,
-    "proteinG": 8,
-    "carbsG": 45,
-    "fatG": 12,
-    "fibreG": 2,
-    "sodiumMg": 70
-   }
-  },
-  {
-   "id": "roast-tomato-and-ricotta-breakfast-tart",
-   "title": "Roast Tomato and Ricotta Breakfast Tart",
-   "summary": "A buttery puff pastry tart filled with ricotta, tomatoes and basil.",
-   "cuisine": "french",
-   "mealTypes": [
-    "breakfast",
-    "lunch"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 15,
-   "cookMinutes": 30,
-   "servings": 6,
-   "onePot": false,
-   "diets": [
-    "vegetarian"
-   ],
-   "ingredients": [
+      "id": "baked-coconut-rice-pudding-breakfast-with-cardamom",
+      "title": "Baked Coconut Rice Pudding Breakfast with Cardamom",
+      "summary": "A baked, creamy rice breakfast scented with cardamom.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 55,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g basmati rice",
+            "400ml coconut milk",
+            "500ml milk",
+            "3 tbsp sugar",
+            "1 tsp ground cardamom",
+            "50g sultanas",
+            "2 tbsp pistachios"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C. Mix the rice, coconut milk, milk, sugar, cardamom and sultanas in a baking dish.",
+        "Bake, stirring once, for 50 minutes, until the rice is tender and the pudding is creamy.",
+        "Rest for 5 minutes and scatter with pistachios."
+      ],
+      "notes": [
+        "Plus 5 minutes resting.",
+        "Vegetarian and gluten free."
+      ],
+      "nutrition": {
+        "kcal": 316,
+        "proteinG": 8,
+        "carbsG": 45,
+        "fatG": 12,
+        "fibreG": 2,
+        "sodiumMg": 70
+      }
+    },
     {
-     "items": [
-      "1 sheet puff pastry",
-      "250g ricotta",
-      "1 egg",
-      "300g cherry tomato",
-      "2 tbsp olive oil",
-      "1 handful basil",
-      "1 tsp thyme"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oven to 200°C. Score a 2cm border on the pastry and prick the middle.",
-    "Mix the ricotta with the egg, thyme and salt and spread inside the border.",
-    "Top with tomatoes and oil and bake for 28 minutes, until puffed and golden and scatter with basil."
-   ],
-   "notes": [
-    "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
-   ],
-   "nutrition": {
-    "kcal": 265,
-    "proteinG": 10,
-    "carbsG": 18,
-    "fatG": 17,
-    "fibreG": 2,
-    "sodiumMg": 310
-   }
-  },
-  {
-   "id": "chia-free-berry-bircher-with-grated-apple",
-   "title": "Chia-Free Berry Bircher with Grated Apple",
-   "summary": "Soaked oats and grated apple with berries and a nutty finish.",
-   "cuisine": "scandinavian",
-   "mealTypes": [
-    "breakfast"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 0,
-   "servings": 2,
-   "onePot": false,
-   "diets": [
-    "vegetarian"
-   ],
-   "ingredients": [
+      "id": "roast-tomato-and-ricotta-breakfast-tart",
+      "title": "Roast Tomato and Ricotta Breakfast Tart",
+      "summary": "A buttery puff pastry tart filled with ricotta, tomatoes and basil.",
+      "cuisine": "french",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1 sheet puff pastry",
+            "250g ricotta",
+            "1 egg",
+            "300g cherry tomato",
+            "2 tbsp olive oil",
+            "1 handful basil",
+            "1 tsp thyme"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C. Score a 2cm border on the pastry and prick the middle.",
+        "Mix the ricotta with the egg, thyme and salt and spread inside the border.",
+        "Top with tomatoes and oil and bake for 28 minutes, until puffed and golden and scatter with basil."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
+      ],
+      "nutrition": {
+        "kcal": 265,
+        "proteinG": 10,
+        "carbsG": 18,
+        "fatG": 17,
+        "fibreG": 2,
+        "sodiumMg": 310
+      }
+    },
     {
-     "items": [
-      "100g rolled oats",
-      "1 apple, grated",
-      "200ml apple juice",
-      "100g greek yoghurt",
-      "100g frozen berries",
-      "2 tbsp almonds"
-     ]
-    }
-   ],
-   "steps": [
-    "Combine the oats, apple, juice and yoghurt.",
-    "Chill overnight, until the oats have softened.",
-    "Top with berries and almonds."
-   ],
-   "notes": [
-    "Plus overnight chilling.",
-    "Vegetarian."
-   ],
-   "nutrition": {
-    "kcal": 353,
-    "proteinG": 12,
-    "carbsG": 56,
-    "fatG": 9,
-    "fibreG": 7,
-    "sodiumMg": 60
-   }
-  },
-  {
-   "id": "filipino-garlic-rice-with-tomato-and-fried-egg",
-   "title": "Filipino Garlic Rice with Tomato and Fried Egg",
-   "summary": "Fragrant garlic fried rice with a runny egg and fresh tomato.",
-   "cuisine": "filipino",
-   "mealTypes": [
-    "breakfast"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 5,
-   "cookMinutes": 10,
-   "servings": 2,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "chia-free-berry-bircher-with-grated-apple",
+      "title": "Chia-Free Berry Bircher with Grated Apple",
+      "summary": "Soaked oats and grated apple with berries and a nutty finish.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100g rolled oats",
+            "1 apple, grated",
+            "200ml apple juice",
+            "100g greek yoghurt",
+            "100g frozen berries",
+            "2 tbsp almonds"
+          ]
+        }
+      ],
+      "steps": [
+        "Combine the oats, apple, juice and yoghurt.",
+        "Chill overnight, until the oats have softened.",
+        "Top with berries and almonds."
+      ],
+      "notes": [
+        "Plus overnight chilling.",
+        "Vegetarian."
+      ],
+      "nutrition": {
+        "kcal": 353,
+        "proteinG": 12,
+        "carbsG": 56,
+        "fatG": 9,
+        "fibreG": 7,
+        "sodiumMg": 60
+      }
+    },
     {
-     "items": [
-      "300g white rice, cooked and cooled",
-      "6 garlic cloves, minced",
-      "2 tbsp neutral oil",
-      "2 eggs",
-      "1 tomato, sliced",
-      "1 spring onion, sliced",
-      "1 tbsp soy sauce"
-     ]
-    }
-   ],
-   "steps": [
-    "Fry the garlic in the oil until golden and crisp, then lift out half.",
-    "Add the rice and soy sauce and stir-fry for 4 minutes, until hot and lightly toasted.",
-    "Fry the eggs until the whites are set.",
-    "Serve the rice topped with the egg, tomato, spring onion and the crisp garlic."
-   ],
-   "notes": [
-    "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
-   ],
-   "nutrition": {
-    "kcal": 441,
-    "proteinG": 14,
-    "carbsG": 58,
-    "fatG": 17,
-    "fibreG": 2,
-    "sodiumMg": 820
-   }
-  },
-  {
-   "id": "ginger-sweet-potato-pancakes-with-maple-yoghurt",
-   "title": "Ginger Sweet Potato Pancakes with Maple Yoghurt",
-   "summary": "Fluffy spiced pancakes made with mashed sweet potato.",
-   "cuisine": "american",
-   "mealTypes": [
-    "breakfast"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 15,
-   "cookMinutes": 15,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian"
-   ],
-   "ingredients": [
+      "id": "filipino-garlic-rice-with-tomato-and-fried-egg",
+      "title": "Filipino Garlic Rice with Tomato and Fried Egg",
+      "summary": "Fragrant garlic fried rice with a runny egg and fresh tomato.",
+      "cuisine": "filipino",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 10,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g white rice, cooked and cooled",
+            "6 garlic cloves, minced",
+            "2 tbsp neutral oil",
+            "2 eggs",
+            "1 tomato, sliced",
+            "1 spring onion, sliced",
+            "1 tbsp soy sauce"
+          ]
+        }
+      ],
+      "steps": [
+        "Fry the garlic in the oil until golden and crisp, then lift out half.",
+        "Add the rice and soy sauce and stir-fry for 4 minutes, until hot and lightly toasted.",
+        "Fry the eggs until the whites are set.",
+        "Serve the rice topped with the egg, tomato, spring onion and the crisp garlic."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
+      ],
+      "nutrition": {
+        "kcal": 441,
+        "proteinG": 14,
+        "carbsG": 58,
+        "fatG": 17,
+        "fibreG": 2,
+        "sodiumMg": 820
+      }
+    },
     {
-     "items": [
-      "300g sweet potato, cooked and mashed",
-      "150g plain flour",
-      "1 tsp baking powder",
-      "2 eggs",
-      "200ml milk",
-      "1 tsp ground ginger",
-      "1 tsp ground cinnamon",
-      "2 tbsp butter",
-      "150g greek yoghurt",
-      "2 tbsp maple syrup"
-     ]
-    }
-   ],
-   "steps": [
-    "Whisk the sweet potato, eggs and milk until smooth, then stir in the flour, baking powder and spices.",
-    "Melt a little butter in a pan and cook ladles of batter for 3 minutes, until bubbles form, then flip for 2 minutes until golden.",
-    "Mix the yoghurt and syrup and serve over the stacks."
-   ],
-   "notes": [
-    "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
-   ],
-   "nutrition": {
-    "kcal": 354,
-    "proteinG": 14,
-    "carbsG": 52,
-    "fatG": 10,
-    "fibreG": 4,
-    "sodiumMg": 330
-   }
-  },
-  {
-   "id": "breakfast-burrito-with-chorizo-beans-and-avocado",
-   "title": "Breakfast Burrito with Chorizo, Beans and Avocado",
-   "summary": "A hand-held burrito packed with spicy chorizo, eggs and avocado.",
-   "cuisine": "mexican",
-   "mealTypes": [
-    "breakfast"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 12,
-   "servings": 4,
-   "onePot": false,
-   "diets": [],
-   "ingredients": [
+      "id": "ginger-sweet-potato-pancakes-with-maple-yoghurt",
+      "title": "Ginger Sweet Potato Pancakes with Maple Yoghurt",
+      "summary": "Fluffy spiced pancakes made with mashed sweet potato.",
+      "cuisine": "american",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g sweet potato, cooked and mashed",
+            "150g plain flour",
+            "1 tsp baking powder",
+            "2 eggs",
+            "200ml milk",
+            "1 tsp ground ginger",
+            "1 tsp ground cinnamon",
+            "2 tbsp butter",
+            "150g greek yoghurt",
+            "2 tbsp maple syrup"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the sweet potato, eggs and milk until smooth, then stir in the flour, baking powder and spices.",
+        "Melt a little butter in a pan and cook ladles of batter for 3 minutes, until bubbles form, then flip for 2 minutes until golden.",
+        "Mix the yoghurt and syrup and serve over the stacks."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
+      ],
+      "nutrition": {
+        "kcal": 354,
+        "proteinG": 14,
+        "carbsG": 52,
+        "fatG": 10,
+        "fibreG": 4,
+        "sodiumMg": 330
+      }
+    },
     {
-     "items": [
-      "4 flour tortilla",
-      "200g chorizo, diced",
-      "6 eggs",
-      "200g tinned black beans, drained",
-      "1 avocado, sliced",
-      "50g cheddar, grated",
-      "2 tbsp salsa"
-     ]
-    }
-   ],
-   "steps": [
-    "Cook the chorizo until crisp and the fat runs.",
-    "Add the beans, then pour in the whisked eggs and stir for 3 minutes until just set.",
-    "Warm the tortillas, fill with the eggs, avocado, cheddar and salsa, and roll up."
-   ],
-   "notes": [
-    "Food safety: cook the chorizo to 75°C and the eggs until fully set."
-   ],
-   "nutrition": {
-    "kcal": 595,
-    "proteinG": 30,
-    "carbsG": 40,
-    "fatG": 35,
-    "fibreG": 8,
-    "sodiumMg": 1180
-   }
-  },
-  {
-   "id": "rye-porridge-with-cardamom-stewed-apples",
-   "title": "Rye Porridge with Cardamom Stewed Apples",
-   "summary": "A hearty Nordic porridge with soft cinnamon apples.",
-   "cuisine": "scandinavian",
-   "mealTypes": [
-    "breakfast"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 5,
-   "cookMinutes": 25,
-   "servings": 2,
-   "onePot": false,
-   "diets": [
-    "vegetarian"
-   ],
-   "ingredients": [
+      "id": "breakfast-burrito-with-chorizo-beans-and-avocado",
+      "title": "Breakfast Burrito with Chorizo, Beans and Avocado",
+      "summary": "A hand-held burrito packed with spicy chorizo, eggs and avocado.",
+      "cuisine": "mexican",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "4 flour tortilla",
+            "200g chorizo, diced",
+            "6 eggs",
+            "200g tinned black beans, drained",
+            "1 avocado, sliced",
+            "50g cheddar, grated",
+            "2 tbsp salsa"
+          ]
+        }
+      ],
+      "steps": [
+        "Cook the chorizo until crisp and the fat runs.",
+        "Add the beans, then pour in the whisked eggs and stir for 3 minutes until just set.",
+        "Warm the tortillas, fill with the eggs, avocado, cheddar and salsa, and roll up."
+      ],
+      "notes": [
+        "Food safety: cook the chorizo to 75°C and the eggs until fully set."
+      ],
+      "nutrition": {
+        "kcal": 595,
+        "proteinG": 30,
+        "carbsG": 40,
+        "fatG": 35,
+        "fibreG": 8,
+        "sodiumMg": 1180
+      }
+    },
     {
-     "items": [
-      "100g rolled oats",
-      "40g rye bread, crumbed",
-      "500ml milk",
-      "2 apples, diced",
-      "1 tsp ground cardamom",
-      "1 tbsp brown sugar",
-      "1 tbsp butter"
-     ]
-    }
-   ],
-   "steps": [
-    "Simmer the oats, crumbs and milk for 12 minutes, stirring, until thick.",
-    "Cook the apples with the butter, sugar and cardamom for 8 minutes, until soft and syrupy.",
-    "Spoon the porridge into bowls and top with the apples."
-   ],
-   "notes": [
-    "Vegetarian."
-   ],
-   "nutrition": {
-    "kcal": 412,
-    "proteinG": 14,
-    "carbsG": 62,
-    "fatG": 12,
-    "fibreG": 7,
-    "sodiumMg": 180
-   }
-  },
-  {
-   "id": "mushroom-and-spinach-savoury-breakfast-crepes",
-   "title": "Mushroom and Spinach Savoury Breakfast Crepes",
-   "summary": "Thin buckwheat style crepes filled with garlicky mushrooms and spinach.",
-   "cuisine": "french",
-   "mealTypes": [
-    "breakfast",
-    "lunch"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 15,
-   "cookMinutes": 25,
-   "servings": 4,
-   "onePot": false,
-   "diets": [],
-   "ingredients": [
+      "id": "rye-porridge-with-cardamom-stewed-apples",
+      "title": "Rye Porridge with Cardamom Stewed Apples",
+      "summary": "A hearty Nordic porridge with soft cinnamon apples.",
+      "cuisine": "scandinavian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 25,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "100g rolled oats",
+            "40g rye bread, crumbed",
+            "500ml milk",
+            "2 apples, diced",
+            "1 tsp ground cardamom",
+            "1 tbsp brown sugar",
+            "1 tbsp butter"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the oats, crumbs and milk for 12 minutes, stirring, until thick.",
+        "Cook the apples with the butter, sugar and cardamom for 8 minutes, until soft and syrupy.",
+        "Spoon the porridge into bowls and top with the apples."
+      ],
+      "notes": [
+        "Vegetarian."
+      ],
+      "nutrition": {
+        "kcal": 412,
+        "proteinG": 14,
+        "carbsG": 62,
+        "fatG": 12,
+        "fibreG": 7,
+        "sodiumMg": 180
+      }
+    },
     {
-     "items": [
-      "150g plain flour",
-      "2 eggs",
-      "350ml milk",
-      "1 tbsp butter",
-      "300g mixed mushrooms, sliced",
-      "150g baby spinach",
-      "2 garlic cloves",
-      "100g vegetarian gruyere"
-     ]
-    }
-   ],
-   "steps": [
-    "Whisk the flour, eggs and milk to a thin batter.",
-    "Cook the mushrooms and garlic in butter until golden, then wilt in the spinach.",
-    "Cook ladles of batter in a lightly oiled pan for 1 to 2 minutes each side, until the edges lift and set.",
-    "Fill each crepe with vegetables and gruyere and fold."
-   ],
-   "notes": [
-    "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
-   ],
-   "nutrition": {
-    "kcal": 315,
-    "proteinG": 17,
-    "carbsG": 28,
-    "fatG": 15,
-    "fibreG": 3,
-    "sodiumMg": 420
-   }
-  },
-  {
-   "id": "raisin-and-almond-breakfast-pudding",
-   "title": "Raisin and Almond Breakfast Pudding",
-   "summary": "Warm oat and almond pudding sweetened with raisins.",
-   "cuisine": "north-african",
-   "mealTypes": [
-    "breakfast"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 5,
-   "cookMinutes": 15,
-   "servings": 2,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "mushroom-and-spinach-savoury-breakfast-crepes",
+      "title": "Mushroom and Spinach Savoury Breakfast Crepes",
+      "summary": "Thin buckwheat style crepes filled with garlicky mushrooms and spinach.",
+      "cuisine": "french",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "150g plain flour",
+            "2 eggs",
+            "350ml milk",
+            "1 tbsp butter",
+            "300g mixed mushrooms, sliced",
+            "150g baby spinach",
+            "2 garlic cloves",
+            "100g vegetarian gruyere"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the flour, eggs and milk to a thin batter.",
+        "Cook the mushrooms and garlic in butter until golden, then wilt in the spinach.",
+        "Cook ladles of batter in a lightly oiled pan for 1 to 2 minutes each side, until the edges lift and set.",
+        "Fill each crepe with vegetables and gruyere and fold."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
+      ],
+      "nutrition": {
+        "kcal": 315,
+        "proteinG": 17,
+        "carbsG": 28,
+        "fatG": 15,
+        "fibreG": 3,
+        "sodiumMg": 420
+      }
+    },
     {
-     "items": [
-      "80g rolled oats",
-      "400ml almond milk",
-      "50g raisins",
-      "2 tbsp almonds",
-      "1 tsp ground cinnamon",
-      "1 tbsp honey"
-     ]
-    }
-   ],
-   "steps": [
-    "Simmer the oats, milk and raisins for 10 minutes, until the oats are soft.",
-    "Stir in the cinnamon and honey.",
-    "Top with toasted almonds."
-   ],
-   "notes": [
-    "Vegetarian; vegan with maple syrup."
-   ],
-   "nutrition": {
-    "kcal": 315,
-    "proteinG": 8,
-    "carbsG": 49,
-    "fatG": 10,
-    "fibreG": 6,
-    "sodiumMg": 150
-   }
-  },
-  {
-   "id": "spinach-and-paneer-breakfast-bhurji",
-   "title": "Spinach and Paneer Breakfast Bhurji",
-   "summary": "Soft scrambled paneer with spinach, tomato and chilli.",
-   "cuisine": "indian",
-   "mealTypes": [
-    "breakfast"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 5,
-   "cookMinutes": 12,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian"
-   ],
-   "ingredients": [
+      "id": "raisin-and-almond-breakfast-pudding",
+      "title": "Raisin and Almond Breakfast Pudding",
+      "summary": "Warm oat and almond pudding sweetened with raisins.",
+      "cuisine": "north-african",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 15,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "80g rolled oats",
+            "400ml almond milk",
+            "50g raisins",
+            "2 tbsp almonds",
+            "1 tsp ground cinnamon",
+            "1 tbsp honey"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the oats, milk and raisins for 10 minutes, until the oats are soft.",
+        "Stir in the cinnamon and honey.",
+        "Top with toasted almonds."
+      ],
+      "notes": [
+        "Vegetarian; vegan with maple syrup."
+      ],
+      "nutrition": {
+        "kcal": 315,
+        "proteinG": 8,
+        "carbsG": 49,
+        "fatG": 10,
+        "fibreG": 6,
+        "sodiumMg": 150
+      }
+    },
     {
-     "items": [
-      "250g paneer, crumbled",
-      "200g baby spinach",
-      "2 tomato, chopped",
-      "1 brown onion, diced",
-      "1 tsp cumin seeds",
-      "1 tsp ground turmeric",
-      "1 green chilli",
-      "2 tbsp ghee",
-      "4 roti"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the ghee and fry the cumin seeds until they crackle.",
-    "Cook the onion and chilli for 5 minutes until soft, then add turmeric and tomato for 3 minutes.",
-    "Stir in the spinach until wilted, then the paneer to warm through and serve with warm roti."
-   ],
-   "notes": [
-    "Vegetarian."
-   ],
-   "nutrition": {
-    "kcal": 424,
-    "proteinG": 18,
-    "carbsG": 34,
-    "fatG": 24,
-    "fibreG": 4,
-    "sodiumMg": 520
-   }
-  },
-  {
-   "id": "smashed-avocado-with-dukkah-eggs-on-seeded-toast",
-   "title": "Smashed Avocado with Dukkah Eggs on Seeded Toast",
-   "summary": "Smashed avocado topped with dukkah-crusted soft eggs.",
-   "cuisine": "modern-australian",
-   "mealTypes": [
-    "breakfast"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 8,
-   "servings": 2,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "spinach-and-paneer-breakfast-bhurji",
+      "title": "Spinach and Paneer Breakfast Bhurji",
+      "summary": "Soft scrambled paneer with spinach, tomato and chilli.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 5,
+      "cookMinutes": 12,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g paneer, crumbled",
+            "200g baby spinach",
+            "2 tomato, chopped",
+            "1 brown onion, diced",
+            "1 tsp cumin seeds",
+            "1 tsp ground turmeric",
+            "1 green chilli",
+            "2 tbsp ghee",
+            "4 roti"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the ghee and fry the cumin seeds until they crackle.",
+        "Cook the onion and chilli for 5 minutes until soft, then add turmeric and tomato for 3 minutes.",
+        "Stir in the spinach until wilted, then the paneer to warm through and serve with warm roti."
+      ],
+      "notes": [
+        "Vegetarian."
+      ],
+      "nutrition": {
+        "kcal": 424,
+        "proteinG": 18,
+        "carbsG": 34,
+        "fatG": 24,
+        "fibreG": 4,
+        "sodiumMg": 520
+      }
+    },
     {
-     "items": [
-      "2 avocado",
-      "2 slices sourdough",
-      "4 eggs",
-      "2 tbsp mixed seeds",
-      "1 tsp cumin seeds",
-      "1 tsp sesame seeds",
-      "1 lemon",
-      "1 tbsp olive oil"
-     ]
-    }
-   ],
-   "steps": [
-    "Toast the mixed seeds, cumin and sesame in a dry pan until fragrant, then crush coarsely with salt for a dukkah.",
-    "Mash the avocado with lemon juice and oil.",
-    "Boil the eggs for 6 minutes, until the whites are set and the yolks soft, then peel.",
-    "Toast the bread until crisp, then spread with avocado and top with halved eggs and dukkah."
-   ],
-   "notes": [
-    "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
-   ],
-   "nutrition": {
-    "kcal": 589,
-    "proteinG": 22,
-    "carbsG": 24,
-    "fatG": 45,
-    "fibreG": 11,
-    "sodiumMg": 540
-   }
-  },
-  {
-   "id": "hearty-lentil-and-kale-soup-with-smoked-paprika",
-   "title": "Hearty Lentil and Kale Soup with Smoked Paprika",
-   "summary": "A thick soup of brown lentils, kale and paprika for a cold day.",
-   "cuisine": "spanish",
-   "mealTypes": [
-    "lunch",
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 35,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "vegan",
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "smashed-avocado-with-dukkah-eggs-on-seeded-toast",
+      "title": "Smashed Avocado with Dukkah Eggs on Seeded Toast",
+      "summary": "Smashed avocado topped with dukkah-crusted soft eggs.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "breakfast"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 8,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 avocado",
+            "2 slices sourdough",
+            "4 eggs",
+            "2 tbsp mixed seeds",
+            "1 tsp cumin seeds",
+            "1 tsp sesame seeds",
+            "1 lemon",
+            "1 tbsp olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the mixed seeds, cumin and sesame in a dry pan until fragrant, then crush coarsely with salt for a dukkah.",
+        "Mash the avocado with lemon juice and oil.",
+        "Boil the eggs for 6 minutes, until the whites are set and the yolks soft, then peel.",
+        "Toast the bread until crisp, then spread with avocado and top with halved eggs and dukkah."
+      ],
+      "notes": [
+        "Food safety: cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable."
+      ],
+      "nutrition": {
+        "kcal": 589,
+        "proteinG": 22,
+        "carbsG": 24,
+        "fatG": 45,
+        "fibreG": 11,
+        "sodiumMg": 540
+      }
+    },
     {
-     "items": [
-      "250g brown lentils",
-      "1 brown onion, diced",
-      "2 carrots, diced",
-      "3 garlic cloves",
-      "1 tbsp smoked paprika",
-      "1.2 litres vegetable stock",
-      "150g kale",
-      "1 tbsp sherry vinegar",
-      "2 tbsp olive oil"
-     ]
-    }
-   ],
-   "steps": [
-    "Soften the onion and carrots in the oil for 6 minutes, until tender.",
-    "Stir in the garlic and paprika for 30 seconds until fragrant.",
-    "Add the lentils and stock and simmer for 25 minutes, until the lentils are tender.",
-    "Add the kale for 3 minutes until wilted, then finish with the vinegar."
-   ],
-   "notes": [
-    "Vegan and gluten free."
-   ],
-   "nutrition": {
-    "kcal": 308,
-    "proteinG": 17,
-    "carbsG": 42,
-    "fatG": 8,
-    "fibreG": 14,
-    "sodiumMg": 540
-   }
-  },
-  {
-   "id": "roasted-tomato-and-red-capsicum-soup",
-   "title": "Roasted Tomato and Red Capsicum Soup",
-   "summary": "A velvety soup of slow-roasted tomatoes and red capsicum.",
-   "cuisine": "modern-australian",
-   "mealTypes": [
-    "lunch",
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 45,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "vegan",
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "hearty-lentil-and-kale-soup-with-smoked-paprika",
+      "title": "Hearty Lentil and Kale Soup with Smoked Paprika",
+      "summary": "A thick soup of brown lentils, kale and paprika for a cold day.",
+      "cuisine": "spanish",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g brown lentils",
+            "1 brown onion, diced",
+            "2 carrots, diced",
+            "3 garlic cloves",
+            "1 tbsp smoked paprika",
+            "1.2 litres vegetable stock",
+            "150g kale",
+            "1 tbsp sherry vinegar",
+            "2 tbsp olive oil"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion and carrots in the oil for 6 minutes, until tender.",
+        "Stir in the garlic and paprika for 30 seconds until fragrant.",
+        "Add the lentils and stock and simmer for 25 minutes, until the lentils are tender.",
+        "Add the kale for 3 minutes until wilted, then finish with the vinegar."
+      ],
+      "notes": [
+        "Vegan and gluten free."
+      ],
+      "nutrition": {
+        "kcal": 308,
+        "proteinG": 17,
+        "carbsG": 42,
+        "fatG": 8,
+        "fibreG": 14,
+        "sodiumMg": 540
+      }
+    },
     {
-     "items": [
-      "1kg tomato, halved",
-      "2 red capsicum, quartered",
-      "1 brown onion, quartered",
-      "4 garlic cloves",
-      "3 tbsp olive oil",
-      "750ml vegetable stock",
-      "1 tbsp balsamic vinegar",
-      "1 handful basil"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oven to 200°C. Roast the tomato, capsicum, onion and garlic in the oil for 40 minutes, until blistered and caramelised.",
-    "Blend with the stock and vinegar until smooth.",
-    "Reheat gently and season. Serve with basil."
-   ],
-   "notes": [
-    "Vegan and gluten free."
-   ],
-   "nutrition": {
-    "kcal": 211,
-    "proteinG": 6,
-    "carbsG": 22,
-    "fatG": 11,
-    "fibreG": 6,
-    "sodiumMg": 460
-   }
-  },
-  {
-   "id": "chicken-and-sweet-corn-egg-drop-soup",
-   "title": "Chicken and Sweet Corn Egg Drop Soup",
-   "summary": "A silky Chinese style soup with sweet corn and ribbons of egg.",
-   "cuisine": "chinese",
-   "mealTypes": [
-    "lunch",
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 15,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "roasted-tomato-and-red-capsicum-soup",
+      "title": "Roasted Tomato and Red Capsicum Soup",
+      "summary": "A velvety soup of slow-roasted tomatoes and red capsicum.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1kg tomato, halved",
+            "2 red capsicum, quartered",
+            "1 brown onion, quartered",
+            "4 garlic cloves",
+            "3 tbsp olive oil",
+            "750ml vegetable stock",
+            "1 tbsp balsamic vinegar",
+            "1 handful basil"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C. Roast the tomato, capsicum, onion and garlic in the oil for 40 minutes, until blistered and caramelised.",
+        "Blend with the stock and vinegar until smooth.",
+        "Reheat gently and season. Serve with basil."
+      ],
+      "notes": [
+        "Vegan and gluten free."
+      ],
+      "nutrition": {
+        "kcal": 211,
+        "proteinG": 6,
+        "carbsG": 22,
+        "fatG": 11,
+        "fibreG": 6,
+        "sodiumMg": 460
+      }
+    },
     {
-     "items": [
-      "2 chicken breasts, finely diced",
-      "1 litre chicken stock",
-      "400g corn kernels",
-      "2 eggs, beaten",
-      "1 tbsp cornflour",
-      "1 tbsp soy sauce",
-      "1 tbsp ginger, grated",
-      "2 spring onions"
-     ]
-    }
-   ],
-   "steps": [
-    "Simmer the stock with the ginger and corn for 5 minutes.",
-    "Add the chicken and cook for 5 minutes, until opaque and cooked through.",
-    "Stir the cornflour with 3 tbsp water and add, simmering until slightly thickened.",
-    "Stream in the eggs while stirring until ribbons form, then add soy and spring onion."
-   ],
-   "notes": [
-    "Food safety: cook the chicken to 75°C and until white all the way through."
-   ],
-   "nutrition": {
-    "kcal": 279,
-    "proteinG": 28,
-    "carbsG": 26,
-    "fatG": 7,
-    "fibreG": 3,
-    "sodiumMg": 1150
-   }
-  },
-  {
-   "id": "smoky-black-bean-soup-with-lime-and-avocado",
-   "title": "Smoky Black Bean Soup with Lime and Avocado",
-   "summary": "A hearty Latin American soup topped with creamy avocado.",
-   "cuisine": "latin-american",
-   "mealTypes": [
-    "dinner",
-    "lunch"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 35,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "vegan",
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "chicken-and-sweet-corn-egg-drop-soup",
+      "title": "Chicken and Sweet Corn Egg Drop Soup",
+      "summary": "A silky Chinese style soup with sweet corn and ribbons of egg.",
+      "cuisine": "chinese",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 chicken breasts, finely diced",
+            "1 litre chicken stock",
+            "400g corn kernels",
+            "2 eggs, beaten",
+            "1 tbsp cornflour",
+            "1 tbsp soy sauce",
+            "1 tbsp ginger, grated",
+            "2 spring onions"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the stock with the ginger and corn for 5 minutes.",
+        "Add the chicken and cook for 5 minutes, until opaque and cooked through.",
+        "Stir the cornflour with 3 tbsp water and add, simmering until slightly thickened.",
+        "Stream in the eggs while stirring until ribbons form, then add soy and spring onion."
+      ],
+      "notes": [
+        "Food safety: cook the chicken to 75°C and until white all the way through."
+      ],
+      "nutrition": {
+        "kcal": 279,
+        "proteinG": 28,
+        "carbsG": 26,
+        "fatG": 7,
+        "fibreG": 3,
+        "sodiumMg": 1150
+      }
+    },
     {
-     "items": [
-      "800g tinned black beans, drained",
-      "1 brown onion, diced",
-      "3 garlic cloves",
-      "1 tsp ground cumin",
-      "1 tsp smoked paprika",
-      "800ml vegetable stock",
-      "1 lime, juiced",
-      "1 avocado",
-      "1 handful coriander"
-     ]
-    }
-   ],
-   "steps": [
-    "Soften the onion in oil until translucent, then cook the garlic and spices for 1 minute.",
-    "Add the beans and stock and simmer for 25 minutes, until the beans break down.",
-    "Blend half the soup and stir it back in.",
-    "Add the lime juice and serve with avocado and coriander."
-   ],
-   "notes": [
-    "Vegan and gluten free."
-   ],
-   "nutrition": {
-    "kcal": 290,
-    "proteinG": 14,
-    "carbsG": 36,
-    "fatG": 10,
-    "fibreG": 15,
-    "sodiumMg": 610
-   }
-  },
-  {
-   "id": "creamy-potato-and-leek-soup-with-crispy-bacon",
-   "title": "Creamy Potato and Leek Soup with Crispy Bacon",
-   "summary": "Smooth potato soup finished with crisp bacon pieces.",
-   "cuisine": "british",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 30,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "no-gluten"
-   ],
-   "ingredients": [
+      "id": "smoky-black-bean-soup-with-lime-and-avocado",
+      "title": "Smoky Black Bean Soup with Lime and Avocado",
+      "summary": "A hearty Latin American soup topped with creamy avocado.",
+      "cuisine": "latin-american",
+      "mealTypes": [
+        "dinner",
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g tinned black beans, drained",
+            "1 brown onion, diced",
+            "3 garlic cloves",
+            "1 tsp ground cumin",
+            "1 tsp smoked paprika",
+            "800ml vegetable stock",
+            "1 lime, juiced",
+            "1 avocado",
+            "1 handful coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the onion in oil until translucent, then cook the garlic and spices for 1 minute.",
+        "Add the beans and stock and simmer for 25 minutes, until the beans break down.",
+        "Blend half the soup and stir it back in.",
+        "Add the lime juice and serve with avocado and coriander."
+      ],
+      "notes": [
+        "Vegan and gluten free."
+      ],
+      "nutrition": {
+        "kcal": 290,
+        "proteinG": 14,
+        "carbsG": 36,
+        "fatG": 10,
+        "fibreG": 15,
+        "sodiumMg": 610
+      }
+    },
     {
-     "items": [
-      "600g potato, cubed",
-      "2 leek, sliced",
-      "1 brown onion, diced",
-      "900ml chicken stock",
-      "150ml cream",
-      "4 slices bacon",
-      "1 tbsp butter",
-      "1 tbsp chives"
-     ]
-    }
-   ],
-   "steps": [
-    "Soften the leek and onion in the butter for 8 minutes, until very soft.",
-    "Add the potato and stock and simmer for 18 minutes, until the potato is tender.",
-    "Blend until smooth and stir in the cream.",
-    "Fry the bacon until crisp and scatter over with the chives."
-   ],
-   "notes": [
-    "Food safety: cook the bacon until crisp and well done."
-   ],
-   "nutrition": {
-    "kcal": 374,
-    "proteinG": 14,
-    "carbsG": 30,
-    "fatG": 22,
-    "fibreG": 4,
-    "sodiumMg": 980
-   }
-  },
-  {
-   "id": "tom-kha-style-mushroom-and-coconut-soup",
-   "title": "Tom Kha Style Mushroom and Coconut Soup",
-   "summary": "A fragrant coconut soup with galangal, lemongrass and mushrooms.",
-   "cuisine": "thai",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 20,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "vegan",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "creamy-potato-and-leek-soup-with-crispy-bacon",
+      "title": "Creamy Potato and Leek Soup with Crispy Bacon",
+      "summary": "Smooth potato soup finished with crisp bacon pieces.",
+      "cuisine": "british",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 30,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "600g potato, cubed",
+            "2 leek, sliced",
+            "1 brown onion, diced",
+            "900ml chicken stock",
+            "150ml cream",
+            "4 slices bacon",
+            "1 tbsp butter",
+            "1 tbsp chives"
+          ]
+        }
+      ],
+      "steps": [
+        "Soften the leek and onion in the butter for 8 minutes, until very soft.",
+        "Add the potato and stock and simmer for 18 minutes, until the potato is tender.",
+        "Blend until smooth and stir in the cream.",
+        "Fry the bacon until crisp and scatter over with the chives."
+      ],
+      "notes": [
+        "Food safety: cook the bacon until crisp and well done."
+      ],
+      "nutrition": {
+        "kcal": 374,
+        "proteinG": 14,
+        "carbsG": 30,
+        "fatG": 22,
+        "fibreG": 4,
+        "sodiumMg": 980
+      }
+    },
     {
-     "items": [
-      "400ml coconut milk",
-      "500ml vegetable stock",
-      "300g mixed mushrooms",
-      "2 lemongrass stalks, bruised",
-      "3 slices galangal",
-      "3 makrut lime leaf",
-      "2 tbsp lime juice",
-      "1 tbsp soy sauce",
-      "1 red chilli"
-     ]
-    }
-   ],
-   "steps": [
-    "Simmer the stock, lemongrass, galangal and lime leaves for 10 minutes, until fragrant.",
-    "Add the coconut milk and mushrooms and simmer for 6 minutes until tender.",
-    "Season with soy sauce and lime juice and top with chilli."
-   ],
-   "notes": [
-    "Vegan. Fish out the aromatics before eating."
-   ],
-   "nutrition": {
-    "kcal": 246,
-    "proteinG": 7,
-    "carbsG": 11,
-    "fatG": 19,
-    "fibreG": 3,
-    "sodiumMg": 780
-   }
-  },
-  {
-   "id": "turkish-yoghurt-soup-with-rice-and-mint-yayla",
-   "title": "Turkish Yoghurt Soup with Rice and Mint (Yayla)",
-   "summary": "A tangy warm yoghurt soup with tender rice and mint butter.",
-   "cuisine": "turkish",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 10,
-   "cookMinutes": 25,
-   "servings": 4,
-   "onePot": false,
-   "diets": [],
-   "ingredients": [
+      "id": "tom-kha-style-mushroom-and-coconut-soup",
+      "title": "Tom Kha Style Mushroom and Coconut Soup",
+      "summary": "A fragrant coconut soup with galangal, lemongrass and mushrooms.",
+      "cuisine": "thai",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400ml coconut milk",
+            "500ml vegetable stock",
+            "300g mixed mushrooms",
+            "2 lemongrass stalks, bruised",
+            "3 slices galangal",
+            "3 makrut lime leaf",
+            "2 tbsp lime juice",
+            "1 tbsp soy sauce",
+            "1 red chilli"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the stock, lemongrass, galangal and lime leaves for 10 minutes, until fragrant.",
+        "Add the coconut milk and mushrooms and simmer for 6 minutes until tender.",
+        "Season with soy sauce and lime juice and top with chilli."
+      ],
+      "notes": [
+        "Vegan. Fish out the aromatics before eating."
+      ],
+      "nutrition": {
+        "kcal": 246,
+        "proteinG": 7,
+        "carbsG": 11,
+        "fatG": 19,
+        "fibreG": 3,
+        "sodiumMg": 780
+      }
+    },
     {
-     "items": [
-      "500g greek yoghurt",
-      "1 egg yolk",
-      "1 tbsp plain flour",
-      "1 litre chicken stock",
-      "60g white rice",
-      "2 tbsp butter",
-      "1 tbsp dried mint",
-      "1 pinch chilli flakes"
-     ]
-    }
-   ],
-   "steps": [
-    "Simmer the rice in the stock for 15 minutes, until soft.",
-    "Whisk the yoghurt, yolk and flour in a bowl, then temper in a ladle of hot stock.",
-    "Stir the mixture back into the pot over low heat for 5 minutes, until slightly thickened. Do not boil.",
-    "Sizzle the butter with the mint and chilli until foaming, then drizzle over."
-   ],
-   "notes": [
-    "Vegetarian if made with vegetable stock."
-   ],
-   "nutrition": {
-    "kcal": 328,
-    "proteinG": 16,
-    "carbsG": 30,
-    "fatG": 16,
-    "fibreG": 1,
-    "sodiumMg": 860
-   }
-  },
-  {
-   "id": "pearl-barley-and-mushroom-soup-with-dill",
-   "title": "Pearl Barley and Mushroom Soup with Dill",
-   "summary": "A warming Central European mushroom and barley soup.",
-   "cuisine": "central-european",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 50,
-   "servings": 6,
-   "onePot": false,
-   "diets": [
-    "vegetarian"
-   ],
-   "ingredients": [
+      "id": "turkish-yoghurt-soup-with-rice-and-mint-yayla",
+      "title": "Turkish Yoghurt Soup with Rice and Mint (Yayla)",
+      "summary": "A tangy warm yoghurt soup with tender rice and mint butter.",
+      "cuisine": "turkish",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [],
+      "ingredients": [
+        {
+          "items": [
+            "500g greek yoghurt",
+            "1 egg yolk",
+            "1 tbsp plain flour",
+            "1 litre chicken stock",
+            "60g white rice",
+            "2 tbsp butter",
+            "1 tbsp dried mint",
+            "1 pinch chilli flakes"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the rice in the stock for 15 minutes, until soft.",
+        "Whisk the yoghurt, yolk and flour in a bowl, then temper in a ladle of hot stock.",
+        "Stir the mixture back into the pot over low heat for 5 minutes, until slightly thickened. Do not boil.",
+        "Sizzle the butter with the mint and chilli until foaming, then drizzle over."
+      ],
+      "notes": [
+        "Vegetarian if made with vegetable stock."
+      ],
+      "nutrition": {
+        "kcal": 328,
+        "proteinG": 16,
+        "carbsG": 30,
+        "fatG": 16,
+        "fibreG": 1,
+        "sodiumMg": 860
+      }
+    },
     {
-     "items": [
-      "150g pearl barley",
-      "400g mixed mushrooms",
-      "1 brown onion, diced",
-      "2 carrots, diced",
-      "1.5 litres vegetable stock",
-      "2 tbsp butter",
-      "2 tbsp dill, chopped",
-      "100g sour cream"
-     ]
-    }
-   ],
-   "steps": [
-    "Sweat the onion and carrots in butter for 8 minutes, until soft.",
-    "Add the mushrooms and cook for 6 minutes until golden.",
-    "Add the barley and stock and simmer for 40 minutes, until the barley is tender.",
-    "Stir in the sour cream and dill."
-   ],
-   "notes": [
-    "Vegetarian."
-   ],
-   "nutrition": {
-    "kcal": 258,
-    "proteinG": 8,
-    "carbsG": 34,
-    "fatG": 10,
-    "fibreG": 7,
-    "sodiumMg": 620
-   }
-  },
-  {
-   "id": "silky-ramen-style-chicken-broth-with-greens",
-   "title": "Silky Ramen-Style Chicken Broth with Greens",
-   "summary": "A clean, savoury chicken broth with noodles, soy egg and greens.",
-   "cuisine": "japanese",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "hard",
-   "prepMinutes": 15,
-   "cookMinutes": 150,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "pearl-barley-and-mushroom-soup-with-dill",
+      "title": "Pearl Barley and Mushroom Soup with Dill",
+      "summary": "A warming Central European mushroom and barley soup.",
+      "cuisine": "central-european",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 50,
+      "servings": 6,
+      "onePot": false,
+      "diets": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "150g pearl barley",
+            "400g mixed mushrooms",
+            "1 brown onion, diced",
+            "2 carrots, diced",
+            "1.5 litres vegetable stock",
+            "2 tbsp butter",
+            "2 tbsp dill, chopped",
+            "100g sour cream"
+          ]
+        }
+      ],
+      "steps": [
+        "Sweat the onion and carrots in butter for 8 minutes, until soft.",
+        "Add the mushrooms and cook for 6 minutes until golden.",
+        "Add the barley and stock and simmer for 40 minutes, until the barley is tender.",
+        "Stir in the sour cream and dill."
+      ],
+      "notes": [
+        "Vegetarian."
+      ],
+      "nutrition": {
+        "kcal": 258,
+        "proteinG": 8,
+        "carbsG": 34,
+        "fatG": 10,
+        "fibreG": 7,
+        "sodiumMg": 620
+      }
+    },
     {
-     "items": [
-      "1kg chicken wings",
-      "2 litres water",
-      "1 brown onion, halved",
-      "6 garlic cloves",
-      "1 piece ginger, sliced",
-      "3 tbsp soy sauce",
-      "2 tbsp mirin",
-      "4 eggs",
-      "200g ramen noodles",
-      "200g bok choy",
-      "2 spring onions, sliced"
-     ]
-    }
-   ],
-   "steps": [
-    "Cover the wings with water and bring to a gentle simmer, skimming the scum, then add onion, garlic and ginger and cook for 2 hours, until the broth is rich and golden.",
-    "Boil the eggs for 6.5 minutes, then peel and soak in the soy and mirin until tinted.",
-    "Strain the broth and season.",
-    "Cook the noodles until tender and wilt the bok choy in the broth.",
-    "Ladle over the noodles, halve the eggs onto the top and add spring onion."
-   ],
-   "notes": [
-    "Food safety: simmer the chicken until cooked through at 75°C; cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable.",
-    "Plus 1 hour soaking the eggs."
-   ],
-   "nutrition": {
-    "kcal": 361,
-    "proteinG": 30,
-    "carbsG": 43,
-    "fatG": 7,
-    "fibreG": 3,
-    "sodiumMg": 1750
-   }
-  },
-  {
-   "id": "watermelon-feta-and-mint-salad-with-lime",
-   "title": "Watermelon, Feta and Mint Salad with Lime",
-   "summary": "A cooling summer salad of watermelon and salty feta.",
-   "cuisine": "greek",
-   "mealTypes": [
-    "lunch"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 0,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "no-gluten"
-   ],
-   "ingredients": [
+      "id": "silky-ramen-style-chicken-broth-with-greens",
+      "title": "Silky Ramen-Style Chicken Broth with Greens",
+      "summary": "A clean, savoury chicken broth with noodles, soy egg and greens.",
+      "cuisine": "japanese",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "hard",
+      "prepMinutes": 15,
+      "cookMinutes": 150,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "1kg chicken wings",
+            "2 litres water",
+            "1 brown onion, halved",
+            "6 garlic cloves",
+            "1 piece ginger, sliced",
+            "3 tbsp soy sauce",
+            "2 tbsp mirin",
+            "4 eggs",
+            "200g ramen noodles",
+            "200g bok choy",
+            "2 spring onions, sliced"
+          ]
+        }
+      ],
+      "steps": [
+        "Cover the wings with water and bring to a gentle simmer, skimming the scum, then add onion, garlic and ginger and cook for 2 hours, until the broth is rich and golden.",
+        "Boil the eggs for 6.5 minutes, then peel and soak in the soy and mirin until tinted.",
+        "Strain the broth and season.",
+        "Cook the noodles until tender and wilt the bok choy in the broth.",
+        "Ladle over the noodles, halve the eggs onto the top and add spring onion."
+      ],
+      "notes": [
+        "Food safety: simmer the chicken until cooked through at 75°C; cook the eggs until the whites are fully set; cook the yolks through if serving anyone vulnerable.",
+        "Plus 1 hour soaking the eggs."
+      ],
+      "nutrition": {
+        "kcal": 361,
+        "proteinG": 30,
+        "carbsG": 43,
+        "fatG": 7,
+        "fibreG": 3,
+        "sodiumMg": 1750
+      }
+    },
     {
-     "items": [
-      "800g watermelon, cubed",
-      "150g feta",
-      "1 handful mint",
-      "1 red onion, thinly sliced",
-      "2 tbsp olive oil",
-      "1 lime, juiced",
-      "1 tbsp pistachios"
-     ]
-    }
-   ],
-   "steps": [
-    "Toss the watermelon with the onion, lime juice and oil until coated.",
-    "Crumble the feta over and scatter with mint and pistachios.",
-    "Serve at once, while the watermelon is still cold."
-   ],
-   "notes": [
-    "Vegetarian and gluten free."
-   ],
-   "nutrition": {
-    "kcal": 243,
-    "proteinG": 9,
-    "carbsG": 18,
-    "fatG": 15,
-    "fibreG": 2,
-    "sodiumMg": 400
-   }
-  },
-  {
-   "id": "roasted-beetroot-orange-and-goat-cheese-salad",
-   "title": "Roasted Beetroot, Orange and Goat Cheese Salad",
-   "summary": "Earthy beetroot with orange and creamy goat cheese on rocket.",
-   "cuisine": "french",
-   "mealTypes": [
-    "lunch",
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 15,
-   "cookMinutes": 45,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "no-gluten"
-   ],
-   "ingredients": [
+      "id": "watermelon-feta-and-mint-salad-with-lime",
+      "title": "Watermelon, Feta and Mint Salad with Lime",
+      "summary": "A cooling summer salad of watermelon and salty feta.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "800g watermelon, cubed",
+            "150g feta",
+            "1 handful mint",
+            "1 red onion, thinly sliced",
+            "2 tbsp olive oil",
+            "1 lime, juiced",
+            "1 tbsp pistachios"
+          ]
+        }
+      ],
+      "steps": [
+        "Toss the watermelon with the onion, lime juice and oil until coated.",
+        "Crumble the feta over and scatter with mint and pistachios.",
+        "Serve at once, while the watermelon is still cold."
+      ],
+      "notes": [
+        "Vegetarian and gluten free."
+      ],
+      "nutrition": {
+        "kcal": 243,
+        "proteinG": 9,
+        "carbsG": 18,
+        "fatG": 15,
+        "fibreG": 2,
+        "sodiumMg": 400
+      }
+    },
     {
-     "items": [
-      "4 beetroot",
-      "2 oranges, segmented",
-      "100g goat cheese",
-      "100g rocket",
-      "40g walnuts",
-      "2 tbsp olive oil",
-      "1 tbsp balsamic vinegar"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oven to 200°C. Wrap the beetroot in foil and roast for 45 minutes, until a knife slides in easily.",
-    "Peel and wedge the beetroot.",
-    "Whisk the oil and vinegar and toss with the rocket.",
-    "Arrange with the beetroot, orange, cheese and walnuts."
-   ],
-   "notes": [
-    "Vegetarian and gluten free."
-   ],
-   "nutrition": {
-    "kcal": 236,
-    "proteinG": 7,
-    "carbsG": 21,
-    "fatG": 14,
-    "fibreG": 4,
-    "sodiumMg": 260
-   }
-  },
-  {
-   "id": "asian-pear-and-cabbage-slaw-with-gochujang-dressing",
-   "title": "Asian Pear and Cabbage Slaw with Gochujang Dressing",
-   "summary": "A crunchy, sweet and spicy slaw with fresh pear and gochujang.",
-   "cuisine": "korean",
-   "mealTypes": [
-    "lunch",
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 15,
-   "cookMinutes": 0,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "vegan",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "roasted-beetroot-orange-and-goat-cheese-salad",
+      "title": "Roasted Beetroot, Orange and Goat Cheese Salad",
+      "summary": "Earthy beetroot with orange and creamy goat cheese on rocket.",
+      "cuisine": "french",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "4 beetroot",
+            "2 oranges, segmented",
+            "100g goat cheese",
+            "100g rocket",
+            "40g walnuts",
+            "2 tbsp olive oil",
+            "1 tbsp balsamic vinegar"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C. Wrap the beetroot in foil and roast for 45 minutes, until a knife slides in easily.",
+        "Peel and wedge the beetroot.",
+        "Whisk the oil and vinegar and toss with the rocket.",
+        "Arrange with the beetroot, orange, cheese and walnuts."
+      ],
+      "notes": [
+        "Vegetarian and gluten free."
+      ],
+      "nutrition": {
+        "kcal": 236,
+        "proteinG": 7,
+        "carbsG": 21,
+        "fatG": 14,
+        "fibreG": 4,
+        "sodiumMg": 260
+      }
+    },
     {
-     "items": [
-      "300g cabbage, shredded",
-      "2 pear, julienned",
-      "2 carrots, julienned",
-      "3 spring onions",
-      "2 tbsp gochujang",
-      "2 tbsp rice vinegar",
-      "1 tbsp sesame oil",
-      "1 tbsp sesame seeds"
-     ]
-    }
-   ],
-   "steps": [
-    "Whisk the gochujang, vinegar and sesame oil until smooth.",
-    "Toss the cabbage, pear, carrot and spring onion with the dressing.",
-    "Serve topped with sesame seeds."
-   ],
-   "notes": [
-    "Vegan."
-   ],
-   "nutrition": {
-    "kcal": 133,
-    "proteinG": 3,
-    "carbsG": 21,
-    "fatG": 4,
-    "fibreG": 5,
-    "sodiumMg": 420
-   }
-  },
-  {
-   "id": "chicken-caesar-salad-with-anchovy-crumbs",
-   "title": "Chicken Caesar Salad with Anchovy Crumbs",
-   "summary": "Crisp cos with grilled chicken and a creamy anchovy dressing.",
-   "cuisine": "american",
-   "mealTypes": [
-    "lunch",
-    "dinner"
-   ],
-   "difficulty": "medium",
-   "prepMinutes": 15,
-   "cookMinutes": 15,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "asian-pear-and-cabbage-slaw-with-gochujang-dressing",
+      "title": "Asian Pear and Cabbage Slaw with Gochujang Dressing",
+      "summary": "A crunchy, sweet and spicy slaw with fresh pear and gochujang.",
+      "cuisine": "korean",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "300g cabbage, shredded",
+            "2 pear, julienned",
+            "2 carrots, julienned",
+            "3 spring onions",
+            "2 tbsp gochujang",
+            "2 tbsp rice vinegar",
+            "1 tbsp sesame oil",
+            "1 tbsp sesame seeds"
+          ]
+        }
+      ],
+      "steps": [
+        "Whisk the gochujang, vinegar and sesame oil until smooth.",
+        "Toss the cabbage, pear, carrot and spring onion with the dressing.",
+        "Serve topped with sesame seeds."
+      ],
+      "notes": [
+        "Vegan."
+      ],
+      "nutrition": {
+        "kcal": 133,
+        "proteinG": 3,
+        "carbsG": 21,
+        "fatG": 4,
+        "fibreG": 5,
+        "sodiumMg": 420
+      }
+    },
     {
-     "items": [
-      "2 chicken breasts",
-      "1 cos lettuce",
-      "3 tbsp mayonnaise",
-      "2 anchovy",
-      "1 garlic clove",
-      "1 lemon, juiced",
-      "2 tbsp olive oil",
-      "60g breadcrumbs",
-      "1 tsp dijon mustard"
-     ]
-    }
-   ],
-   "steps": [
-    "Toast the breadcrumbs in oil until crisp and golden.",
-    "Pan-fry the chicken for 6 minutes each side, until golden and 75°C inside, then slice.",
-    "Mash the anchovy and garlic and whisk in mayonnaise, mustard and lemon juice.",
-    "Toss the lettuce with dressing, top with chicken and crumbs."
-   ],
-   "notes": [
-    "Food safety: cook chicken to 75°C in the thickest part."
-   ],
-   "nutrition": {
-    "kcal": 424,
-    "proteinG": 36,
-    "carbsG": 16,
-    "fatG": 24,
-    "fibreG": 3,
-    "sodiumMg": 780
-   }
-  },
-  {
-   "id": "lentil-cucumber-and-herb-salad-with-preserved-lemon",
-   "title": "Lentil, Cucumber and Herb Salad with Preserved Lemon",
-   "summary": "A fresh lentil salad with herbs and bright preserved lemon.",
-   "cuisine": "north-african",
-   "mealTypes": [
-    "lunch",
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 15,
-   "cookMinutes": 20,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "vegan",
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "chicken-caesar-salad-with-anchovy-crumbs",
+      "title": "Chicken Caesar Salad with Anchovy Crumbs",
+      "summary": "Crisp cos with grilled chicken and a creamy anchovy dressing.",
+      "cuisine": "american",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "medium",
+      "prepMinutes": 15,
+      "cookMinutes": 15,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 chicken breasts",
+            "1 cos lettuce",
+            "3 tbsp mayonnaise",
+            "2 anchovy",
+            "1 garlic clove",
+            "1 lemon, juiced",
+            "2 tbsp olive oil",
+            "60g breadcrumbs",
+            "1 tsp dijon mustard"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the breadcrumbs in oil until crisp and golden.",
+        "Pan-fry the chicken for 6 minutes each side, until golden and 75°C inside, then slice.",
+        "Mash the anchovy and garlic and whisk in mayonnaise, mustard and lemon juice.",
+        "Toss the lettuce with dressing, top with chicken and crumbs."
+      ],
+      "notes": [
+        "Food safety: cook chicken to 75°C in the thickest part."
+      ],
+      "nutrition": {
+        "kcal": 424,
+        "proteinG": 36,
+        "carbsG": 16,
+        "fatG": 24,
+        "fibreG": 3,
+        "sodiumMg": 780
+      }
+    },
     {
-     "items": [
-      "250g brown lentils",
-      "1 cucumber, diced",
-      "1 handful parsley",
-      "1 handful mint",
-      "1 preserved lemon, diced",
-      "2 tbsp olive oil",
-      "1 tbsp red wine vinegar",
-      "1 red onion"
-     ]
-    }
-   ],
-   "steps": [
-    "Simmer the lentils for 20 minutes, until tender but holding their shape, then drain and cool.",
-    "Whisk the oil and vinegar.",
-    "Toss the lentils with the cucumber, herbs, preserved lemon, onion and dressing."
-   ],
-   "notes": [
-    "Vegan and gluten free."
-   ],
-   "nutrition": {
-    "kcal": 293,
-    "proteinG": 17,
-    "carbsG": 36,
-    "fatG": 9,
-    "fibreG": 14,
-    "sodiumMg": 420
-   }
-  },
-  {
-   "id": "noodle-salad-with-peanut-lime-dressing",
-   "title": "Noodle Salad with Peanut Lime Dressing",
-   "summary": "Cold rice noodles with crunchy veg and a zesty peanut lime dressing.",
-   "cuisine": "vietnamese",
-   "mealTypes": [
-    "lunch",
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 15,
-   "cookMinutes": 5,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "pescatarian",
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "lentil-cucumber-and-herb-salad-with-preserved-lemon",
+      "title": "Lentil, Cucumber and Herb Salad with Preserved Lemon",
+      "summary": "A fresh lentil salad with herbs and bright preserved lemon.",
+      "cuisine": "north-african",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "250g brown lentils",
+            "1 cucumber, diced",
+            "1 handful parsley",
+            "1 handful mint",
+            "1 preserved lemon, diced",
+            "2 tbsp olive oil",
+            "1 tbsp red wine vinegar",
+            "1 red onion"
+          ]
+        }
+      ],
+      "steps": [
+        "Simmer the lentils for 20 minutes, until tender but holding their shape, then drain and cool.",
+        "Whisk the oil and vinegar.",
+        "Toss the lentils with the cucumber, herbs, preserved lemon, onion and dressing."
+      ],
+      "notes": [
+        "Vegan and gluten free."
+      ],
+      "nutrition": {
+        "kcal": 293,
+        "proteinG": 17,
+        "carbsG": 36,
+        "fatG": 9,
+        "fibreG": 14,
+        "sodiumMg": 420
+      }
+    },
     {
-     "items": [
-      "200g rice vermicelli",
-      "1 cucumber",
-      "2 carrots",
-      "1 handful mint",
-      "1 handful coriander",
-      "50g peanuts",
-      "3 tbsp peanut butter",
-      "2 limes, juiced",
-      "1 tbsp fish sauce",
-      "1 tbsp sweet chilli sauce"
-     ]
-    }
-   ],
-   "steps": [
-    "Soak the vermicelli in boiling water for 4 minutes, until tender, then drain and rinse cold.",
-    "Whisk the peanut butter, lime juice, fish sauce, chilli sauce and 3 tbsp water until smooth.",
-    "Toss the noodles with julienned vegetables and herbs, drizzle with dressing and sprinkle with peanuts."
-   ],
-   "notes": [
-    "Contains peanuts."
-   ],
-   "nutrition": {
-    "kcal": 354,
-    "proteinG": 11,
-    "carbsG": 46,
-    "fatG": 14,
-    "fibreG": 5,
-    "sodiumMg": 860
-   }
-  },
-  {
-   "id": "grilled-pear-halloumi-and-rocket-salad",
-   "title": "Grilled Pear, Halloumi and Rocket Salad",
-   "summary": "Charred pears with salty halloumi on peppery rocket.",
-   "cuisine": "modern-australian",
-   "mealTypes": [
-    "lunch"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 8,
-   "servings": 2,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "no-gluten"
-   ],
-   "ingredients": [
+      "id": "noodle-salad-with-peanut-lime-dressing",
+      "title": "Noodle Salad with Peanut Lime Dressing",
+      "summary": "Cold rice noodles with crunchy veg and a zesty peanut lime dressing.",
+      "cuisine": "vietnamese",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 15,
+      "cookMinutes": 5,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "pescatarian",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "200g rice vermicelli",
+            "1 cucumber",
+            "2 carrots",
+            "1 handful mint",
+            "1 handful coriander",
+            "50g peanuts",
+            "3 tbsp peanut butter",
+            "2 limes, juiced",
+            "1 tbsp fish sauce",
+            "1 tbsp sweet chilli sauce"
+          ]
+        }
+      ],
+      "steps": [
+        "Soak the vermicelli in boiling water for 4 minutes, until tender, then drain and rinse cold.",
+        "Whisk the peanut butter, lime juice, fish sauce, chilli sauce and 3 tbsp water until smooth.",
+        "Toss the noodles with julienned vegetables and herbs, drizzle with dressing and sprinkle with peanuts."
+      ],
+      "notes": [
+        "Contains peanuts."
+      ],
+      "nutrition": {
+        "kcal": 354,
+        "proteinG": 11,
+        "carbsG": 46,
+        "fatG": 14,
+        "fibreG": 5,
+        "sodiumMg": 860
+      }
+    },
     {
-     "items": [
-      "2 pear, halved",
-      "200g halloumi, sliced",
-      "80g rocket",
-      "1 tbsp honey",
-      "2 tbsp olive oil",
-      "1 tbsp balsamic vinegar",
-      "2 tbsp pistachios"
-     ]
-    }
-   ],
-   "steps": [
-    "Grill the pears cut side down in a hot pan for 3 minutes, until charred.",
-    "Fry the halloumi for 2 minutes each side, until golden.",
-    "Toss the rocket with oil and vinegar and top with peach, halloumi, honey and pistachios."
-   ],
-   "notes": [
-    "Vegetarian and gluten free."
-   ],
-   "nutrition": {
-    "kcal": 452,
-    "proteinG": 20,
-    "carbsG": 30,
-    "fatG": 28,
-    "fibreG": 4,
-    "sodiumMg": 1000
-   }
-  },
-  {
-   "id": "mediterranean-chickpea-and-roast-vegetable-salad",
-   "title": "Mediterranean Chickpea and Roast Vegetable Salad",
-   "summary": "Warm chickpeas with roasted zucchini, capsicum and lemon.",
-   "cuisine": "greek",
-   "mealTypes": [
-    "lunch",
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 25,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "vegan",
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "grilled-pear-halloumi-and-rocket-salad",
+      "title": "Grilled Pear, Halloumi and Rocket Salad",
+      "summary": "Charred pears with salty halloumi on peppery rocket.",
+      "cuisine": "modern-australian",
+      "mealTypes": [
+        "lunch"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 8,
+      "servings": 2,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 pear, halved",
+            "200g halloumi, sliced",
+            "80g rocket",
+            "1 tbsp honey",
+            "2 tbsp olive oil",
+            "1 tbsp balsamic vinegar",
+            "2 tbsp pistachios"
+          ]
+        }
+      ],
+      "steps": [
+        "Grill the pears cut side down in a hot pan for 3 minutes, until charred.",
+        "Fry the halloumi for 2 minutes each side, until golden.",
+        "Toss the rocket with oil and vinegar and top with peach, halloumi, honey and pistachios."
+      ],
+      "notes": [
+        "Vegetarian and gluten free."
+      ],
+      "nutrition": {
+        "kcal": 452,
+        "proteinG": 20,
+        "carbsG": 30,
+        "fatG": 28,
+        "fibreG": 4,
+        "sodiumMg": 1000
+      }
+    },
     {
-     "items": [
-      "400g chickpeas, drained",
-      "2 zucchini, chunked",
-      "1 red capsicum, chunked",
-      "1 red onion, wedged",
-      "3 tbsp olive oil",
-      "1 lemon, juiced",
-      "1 tsp dried oregano",
-      "1 handful parsley"
-     ]
-    }
-   ],
-   "steps": [
-    "Heat the oven to 200°C. Roast the vegetables in 2 tbsp oil for 25 minutes, until tender and charred.",
-    "Add the chickpeas for the last 10 minutes.",
-    "Toss with lemon juice, oregano, parsley and the remaining oil."
-   ],
-   "notes": [
-    "Vegan and gluten free."
-   ],
-   "nutrition": {
-    "kcal": 284,
-    "proteinG": 10,
-    "carbsG": 34,
-    "fatG": 12,
-    "fibreG": 10,
-    "sodiumMg": 240
-   }
-  },
-  {
-   "id": "cucumber-yoghurt-salad-with-toasted-cumin-and-chilli",
-   "title": "Cucumber Yoghurt Salad with Toasted Cumin and Chilli",
-   "summary": "A cooling Indian-style kachumber with creamy yoghurt.",
-   "cuisine": "indian",
-   "mealTypes": [
-    "lunch",
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 0,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "no-gluten"
-   ],
-   "ingredients": [
+      "id": "mediterranean-chickpea-and-roast-vegetable-salad",
+      "title": "Mediterranean Chickpea and Roast Vegetable Salad",
+      "summary": "Warm chickpeas with roasted zucchini, capsicum and lemon.",
+      "cuisine": "greek",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g chickpeas, drained",
+            "2 zucchini, chunked",
+            "1 red capsicum, chunked",
+            "1 red onion, wedged",
+            "3 tbsp olive oil",
+            "1 lemon, juiced",
+            "1 tsp dried oregano",
+            "1 handful parsley"
+          ]
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C. Roast the vegetables in 2 tbsp oil for 25 minutes, until tender and charred.",
+        "Add the chickpeas for the last 10 minutes.",
+        "Toss with lemon juice, oregano, parsley and the remaining oil."
+      ],
+      "notes": [
+        "Vegan and gluten free."
+      ],
+      "nutrition": {
+        "kcal": 284,
+        "proteinG": 10,
+        "carbsG": 34,
+        "fatG": 12,
+        "fibreG": 10,
+        "sodiumMg": 240
+      }
+    },
     {
-     "items": [
-      "2 cucumber, diced",
-      "2 tomato, diced",
-      "1 red onion, diced",
-      "200g greek yoghurt",
-      "1 tsp cumin seeds",
-      "1 green chilli, chopped",
-      "2 tbsp coriander"
-     ]
-    }
-   ],
-   "steps": [
-    "Toast the cumin seeds in a dry pan until fragrant.",
-    "Mix the vegetables, yoghurt, chilli and coriander.",
-    "Season and top with the cumin."
-   ],
-   "notes": [
-    "Vegetarian and gluten free."
-   ],
-   "nutrition": {
-    "kcal": 72,
-    "proteinG": 5,
-    "carbsG": 8,
-    "fatG": 2,
-    "fibreG": 1,
-    "sodiumMg": 190
-   }
-  },
-  {
-   "id": "warm-green-bean-and-tomato-salad-with-fried-shallots",
-   "title": "Warm Green Bean and Tomato Salad with Fried Shallots",
-   "summary": "A West African inspired warm bean salad topped with crisp shallots.",
-   "cuisine": "west-african",
-   "mealTypes": [
-    "dinner"
-   ],
-   "difficulty": "easy",
-   "prepMinutes": 10,
-   "cookMinutes": 8,
-   "servings": 4,
-   "onePot": false,
-   "diets": [
-    "vegetarian",
-    "vegan",
-    "no-gluten",
-    "no-dairy"
-   ],
-   "ingredients": [
+      "id": "cucumber-yoghurt-salad-with-toasted-cumin-and-chilli",
+      "title": "Cucumber Yoghurt Salad with Toasted Cumin and Chilli",
+      "summary": "A cooling Indian-style kachumber with creamy yoghurt.",
+      "cuisine": "indian",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "no-gluten"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "2 cucumber, diced",
+            "2 tomato, diced",
+            "1 red onion, diced",
+            "200g greek yoghurt",
+            "1 tsp cumin seeds",
+            "1 green chilli, chopped",
+            "2 tbsp coriander"
+          ]
+        }
+      ],
+      "steps": [
+        "Toast the cumin seeds in a dry pan until fragrant.",
+        "Mix the vegetables, yoghurt, chilli and coriander.",
+        "Season and top with the cumin."
+      ],
+      "notes": [
+        "Vegetarian and gluten free."
+      ],
+      "nutrition": {
+        "kcal": 72,
+        "proteinG": 5,
+        "carbsG": 8,
+        "fatG": 2,
+        "fibreG": 1,
+        "sodiumMg": 190
+      }
+    },
     {
-     "items": [
-      "400g green beans",
-      "200g cherry tomato",
-      "2 tbsp neutral oil",
-      "1 red onion",
-      "1 tbsp lemon juice",
-      "2 tbsp fried shallots"
-     ]
+      "id": "warm-green-bean-and-tomato-salad-with-fried-shallots",
+      "title": "Warm Green Bean and Tomato Salad with Fried Shallots",
+      "summary": "A West African inspired warm bean salad topped with crisp shallots.",
+      "cuisine": "west-african",
+      "mealTypes": [
+        "dinner"
+      ],
+      "difficulty": "easy",
+      "prepMinutes": 10,
+      "cookMinutes": 8,
+      "servings": 4,
+      "onePot": false,
+      "diets": [
+        "vegetarian",
+        "vegan",
+        "no-gluten",
+        "no-dairy"
+      ],
+      "ingredients": [
+        {
+          "items": [
+            "400g green beans",
+            "200g cherry tomato",
+            "2 tbsp neutral oil",
+            "1 red onion",
+            "1 tbsp lemon juice",
+            "2 tbsp fried shallots"
+          ]
+        }
+      ],
+      "steps": [
+        "Boil the beans for 4 minutes, until just tender.",
+        "Fry the onion and tomato in oil for 4 minutes, until soft.",
+        "Toss with beans, lemon juice and salt and sprinkle with fried shallots."
+      ],
+      "notes": [
+        "Vegan and gluten free."
+      ],
+      "nutrition": {
+        "kcal": 136,
+        "proteinG": 4,
+        "carbsG": 12,
+        "fatG": 8,
+        "fibreG": 5,
+        "sodiumMg": 50
+      }
     }
-   ],
-   "steps": [
-    "Boil the beans for 4 minutes, until just tender.",
-    "Fry the onion and tomato in oil for 4 minutes, until soft.",
-    "Toss with beans, lemon juice and salt and sprinkle with fried shallots."
-   ],
-   "notes": [
-    "Vegan and gluten free."
-   ],
-   "nutrition": {
-    "kcal": 136,
-    "proteinG": 4,
-    "carbsG": 12,
-    "fatG": 8,
-    "fibreG": 5,
-    "sodiumMg": 50
-   }
-  }
- ]
+  ]
 }
