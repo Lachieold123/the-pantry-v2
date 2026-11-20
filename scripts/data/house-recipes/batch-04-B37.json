@@ -829,7 +829,7 @@
       ],
       "notes": [
         "Snack. Per serving: 1 scone. Best on the day; keeps 2 days in the fridge and reheats at 160°C fan for 6 minutes. Check labels for gluten-free certification.",
-        "Food safety: use fresh, uncracked eggs and bake the scones until cooked through."
+        "Food safety: use fresh, uncracked eggs and bake the scones until cooked through. Reheat leftovers until steaming hot right through."
       ],
       "nutrition": {
         "kcal": 249,
@@ -843,7 +843,7 @@
     {
       "id": "flourless-orange-almond-squares",
       "title": "Flourless Orange Almond Squares",
-      "summary": "A moist gluten-free cake made with whole boiled oranges and almond meal.",
+      "summary": "A moist cake made with whole boiled oranges and almond meal.",
       "cuisine": "modern-australian",
       "mealTypes": [
         "snack"
@@ -1046,7 +1046,8 @@
       "servings": 12,
       "onePot": false,
       "diets": [
-        "vegetarian"
+        "vegetarian",
+        "no-gluten"
       ],
       "ingredients": [
         {
@@ -1057,7 +1058,7 @@
             "120g butter, softened",
             "3 eggs",
             "2 lemons, zest and juice",
-            "1 tsp baking powder"
+            "1 tsp gluten-free baking powder"
           ]
         }
       ],

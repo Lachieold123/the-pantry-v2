@@ -39,7 +39,8 @@
     },
     "avocado-toast": {
       "addNotes": [
-        "Soft-boiled eggs and smoked salmon: if you're pregnant, cooking for young children or older people, or have a weakened immune system, boil the eggs until the yolks are firm and skip the smoked salmon."
+        "Soft-boiled eggs and smoked salmon: if you're pregnant, cooking for young children or older people, or have a weakened immune system, boil the eggs until the yolks are firm and skip the smoked salmon.",
+        "Food safety: Use fresh, uncracked eggs; for pregnant women, older people, young children and anyone with low immunity, cook the eggs until the yolks are firm."
       ],
       "ingredients": [
         {
@@ -62,6 +63,9 @@
           "from": "Mashed potato or rice",
           "to": "Mashed potato (or rice)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook fish until it turns opaque and flakes easily, about 63°C in the thickest part."
       ]
     },
     "baked-salmon": {
@@ -70,12 +74,18 @@
           "from": "Roasted asparagus or green beans",
           "to": "Roasted asparagus (or green beans)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook fish until it turns opaque and flakes easily, about 63°C in the thickest part."
       ]
     },
     "baked-ziti": {
       "times": {
         "prepMinutes": 30
-      }
+      },
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
+      ]
     },
     "baked-zucchini-boats": {
       "ingredients": [
@@ -83,6 +93,9 @@
           "from": "500g beef or lamb mince",
           "to": "500g beef mince (or lamb mince)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
       ]
     },
     "bangers-and-mash": {
@@ -104,6 +117,9 @@
           "from": "and the sausages cook through.",
           "to": "and the sausages are cooked through (75°C in the centre)."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
       ]
     },
     "banh-mi": {
@@ -115,6 +131,9 @@
           "from": "Sliced jalapeño or fresh red chilli",
           "to": "Sliced jalapeño (or fresh red chilli)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook fresh pork until the centre reaches 70°C and the juices run clear."
       ]
     },
     "bbq-chicken-pizza": {
@@ -126,7 +145,10 @@
       "times": {
         "prepMinutes": 55,
         "cookMinutes": 230
-      }
+      },
+      "addNotes": [
+        "Food safety: Cook fresh pork until the centre reaches 70°C and the juices run clear."
+      ]
     },
     "bbq-ribs-plate": {
       "times": {
@@ -144,6 +166,9 @@
           "from": "2 tbsp butter, 2 tbsp sugar,",
           "to": "2 tbsp butter, 2 tbsp brown sugar,"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook fresh pork until the centre reaches 70°C and the juices run clear."
       ]
     },
     "beef-bourguignon": {
@@ -159,6 +184,9 @@
           "from": "300g pearl onions or shallots, peeled",
           "to": "300g pearl onions (or shallots), peeled"
         }
+      ],
+      "addNotes": [
+        "Food safety: Slow-cooked meat is safe once it is tender and the centre has reached at least 75°C."
       ]
     },
     "beef-brisket": {
@@ -171,6 +199,9 @@
           "from": "Soft white rolls or texas toast",
           "to": "Soft white rolls (or Texas toast)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Slow-cooked meat is safe once it is tender and the centre has reached at least 75°C."
       ]
     },
     "beef-bulgogi-bowl": {
@@ -193,12 +224,18 @@
           "after": "Mix the marinade. Toss with the beef. Rest 30 minutes.",
           "text": "While the beef marinates, cook the rice, blanch the spinach and bean sprouts, and quickly sauté the carrot. Fry the eggs just before serving."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook whole cuts of beef, lamb and veal to at least 63°C in the thickest part, then rest for 3 minutes; cook rolled or stuffed cuts to 75°C. Use fresh, uncracked eggs; for pregnant women, older people, young children and anyone with low immunity, cook the eggs until the yolks are firm."
       ]
     },
     "beef-burrito": {
       "times": {
         "cookMinutes": 30
-      }
+      },
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
+      ]
     },
     "beef-curry": {
       "times": {
@@ -220,6 +257,9 @@
           "from": "Serve over rice with naan and yogurt.",
           "to": "Serve over rice (or with naan) and yogurt."
         }
+      ],
+      "addNotes": [
+        "Food safety: Slow-cooked meat is safe once it is tender and the centre has reached at least 75°C."
       ]
     },
     "beef-enchiladas": {
@@ -235,6 +275,9 @@
           "from": "Crumbled feta or queso fresco",
           "to": "Crumbled feta (or queso fresco)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
       ]
     },
     "beef-korma": {
@@ -257,6 +300,9 @@
           "group": "Curry",
           "line": "2 tbsp warm milk, for the saffron (optional)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Slow-cooked meat is safe once it is tender and the centre has reached at least 75°C."
       ]
     },
     "beef-lasagna": {
@@ -269,6 +315,9 @@
           "from": "Repeat 4 times.",
           "to": "Repeat to make 4 layers in all."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
       ]
     },
     "beef-noodle-soup": {
@@ -289,6 +338,9 @@
           "from": "1 small bunch bok choy or gai lan",
           "to": "1 small bunch bok choy (or gai lan)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Slow-cooked meat is safe once it is tender and the centre has reached at least 75°C."
       ]
     },
     "beef-pho": {
@@ -311,12 +363,18 @@
           "group": "To serve",
           "line": "Sriracha"
         }
+      ],
+      "addNotes": [
+        "Food safety: Slow-cooked meat is safe once it is tender and the centre has reached at least 75°C."
       ]
     },
     "beef-rendang": {
       "times": {
         "prepMinutes": 45
-      }
+      },
+      "addNotes": [
+        "Food safety: Slow-cooked meat is safe once it is tender and the centre has reached at least 75°C."
+      ]
     },
     "beef-roast-dinner": {
       "times": {
@@ -354,6 +412,9 @@
           "from": "Rest the beef 20 minutes on a board, tented with foil.",
           "to": "Rest the beef 20 minutes on a board, tented with foil. Meanwhile, turn the oven back up to 220°C and roast the potatoes until crisp and golden."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook whole cuts of beef, lamb and veal to at least 63°C in the thickest part, then rest for 3 minutes; cook rolled or stuffed cuts to 75°C."
       ]
     },
     "beef-shawarma-plate": {
@@ -379,6 +440,9 @@
           "from": "Drizzle with tahini.",
           "to": "Drizzle with tahini sauce and toum."
         }
+      ],
+      "addNotes": [
+        "Food safety: Slow-cooked meat is safe once it is tender and the centre has reached at least 75°C."
       ]
     },
     "beef-stroganoff": {
@@ -391,6 +455,9 @@
           "from": "Buttered pappardelle, egg noodles, or rice",
           "to": "Buttered pappardelle (or egg noodles or rice)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook whole cuts of beef, lamb and veal to at least 63°C in the thickest part, then rest for 3 minutes; cook rolled or stuffed cuts to 75°C."
       ]
     },
     "beef-tacos": {
@@ -403,6 +470,9 @@
           "from": "Crumbled feta or queso fresco",
           "to": "Crumbled feta (or queso fresco)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
       ]
     },
     "beef-tikka": {
@@ -420,7 +490,8 @@
         }
       ],
       "addNotes": [
-        "Start the day before: the beef marinates overnight."
+        "Start the day before: the beef marinates overnight.",
+        "Food safety: Slow-cooked meat is safe once it is tender and the centre has reached at least 75°C."
       ]
     },
     "beef-wellington": {
@@ -433,6 +504,9 @@
           "from": "2 tbsp dry sherry or madeira",
           "to": "2 tbsp dry sherry (or madeira)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook whole cuts of beef, lamb and veal to at least 63°C in the thickest part, then rest for 3 minutes; cook rolled or stuffed cuts to 75°C."
       ]
     },
     "bibimbap": {
@@ -453,7 +527,8 @@
         }
       ],
       "addNotes": [
-        "Soft or runny egg: if you're pregnant, cooking for young children or older people, or have a weakened immune system, cook the egg until the yolk is firm."
+        "Soft or runny egg: if you're pregnant, cooking for young children or older people, or have a weakened immune system, cook the egg until the yolk is firm.",
+        "Food safety: Cook whole cuts of beef, lamb and veal to at least 63°C in the thickest part, then rest for 3 minutes; cook rolled or stuffed cuts to 75°C. Use fresh, uncracked eggs; for pregnant women, older people, young children and anyone with low immunity, cook the eggs until the yolks are firm."
       ],
       "image": false
     },
@@ -480,7 +555,8 @@
         }
       ],
       "addNotes": [
-        "Start the day before: the chicken marinates overnight."
+        "Start the day before: the chicken marinates overnight.",
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "blt-sandwich": {
@@ -505,6 +581,9 @@
           "from": "6 bay leaves or lemon leaves",
           "to": "6 bay leaves (or lemon leaves)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
       ]
     },
     "bratwurst": {
@@ -522,6 +601,9 @@
           "from": "they should split slightly and develop dark patches.",
           "to": "they should split slightly and develop dark patches, and reach 75°C in the centre."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
       ]
     },
     "breakfast-burrito": {
@@ -535,13 +617,17 @@
         }
       ],
       "addNotes": [
-        "Soft scrambled eggs: if you're pregnant, cooking for young children or older people, or have a weakened immune system, cook the eggs until firm."
+        "Soft scrambled eggs: if you're pregnant, cooking for young children or older people, or have a weakened immune system, cook the eggs until firm.",
+        "Food safety: Use fresh, uncracked eggs; for pregnant women, older people, young children and anyone with low immunity, cook the eggs until the yolks are firm."
       ]
     },
     "buffalo-wings": {
       "times": {
         "prepMinutes": 70
-      }
+      },
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
+      ]
     },
     "bulgogi": {
       "times": {
@@ -552,6 +638,9 @@
           "from": "700g beef rib eye or sirloin, frozen",
           "to": "700g beef rib eye (or sirloin), frozen"
         }
+      ],
+      "addNotes": [
+        "Food safety: Slow-cooked meat is safe once it is tender and the centre has reached at least 75°C."
       ]
     },
     "bunny-chow": {
@@ -563,6 +652,9 @@
           "from": "500ml beef stock or water",
           "to": "500ml beef stock (or water)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook whole cuts of beef, lamb and veal to at least 63°C in the thickest part, then rest for 3 minutes; cook rolled or stuffed cuts to 75°C."
       ]
     },
     "burgers": {
@@ -581,6 +673,9 @@
           "from": "4 slices American or cheddar cheese",
           "to": "4 slices American cheese (or cheddar)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
       ]
     },
     "butter-chicken": {
@@ -603,6 +698,9 @@
           "from": "until the chicken is cooked through and the sauce coats a spoon",
           "to": "until the chicken is cooked through (75°C in the centre) and the sauce coats a spoon"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "butternut-squash-risotto": {
@@ -631,7 +729,8 @@
     },
     "caesar-salad": {
       "addNotes": [
-        "The dressing uses raw egg yolks. If you're pregnant, cooking for young children or older people, or have a weakened immune system, use good-quality mayonnaise as the base instead."
+        "The dressing uses raw egg yolks. If you're pregnant, cooking for young children or older people, or have a weakened immune system, use good-quality mayonnaise as the base instead.",
+        "Food safety: This uses raw or lightly cooked egg: pregnant women, older people, young children and anyone with low immunity should skip it or use pasteurised eggs."
       ]
     },
     "calzone": {
@@ -677,6 +776,9 @@
           "from": "Crispy fries or boiled new potatoes",
           "to": "Crispy fries (or boiled new potatoes)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Slow-cooked meat is safe once it is tender and the centre has reached at least 75°C."
       ]
     },
     "ceviche": {
@@ -712,6 +814,9 @@
           "from": "until golden and just cooked through",
           "to": "until golden and cooked through (75°C in the thickest part)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-alfredo-bake": {
@@ -750,6 +855,9 @@
           "from": "Rest 10 minutes covered.",
           "to": "Check the thickest thigh reaches 75°C, then rest 10 minutes covered."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-and-waffles": {
@@ -778,7 +886,8 @@
         }
       ],
       "addNotes": [
-        "Start in the morning or the day before: the chicken marinates for at least 4 hours, ideally overnight."
+        "Start in the morning or the day before: the chicken marinates for at least 4 hours, ideally overnight.",
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-biryani": {
@@ -809,7 +918,8 @@
         }
       ],
       "addNotes": [
-        "Start at least an hour ahead: the chicken marinates for 1 hour, ideally overnight."
+        "Start at least an hour ahead: the chicken marinates for 1 hour, ideally overnight.",
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-burrito-bowl": {
@@ -817,7 +927,8 @@
         "prepMinutes": 25
       },
       "addNotes": [
-        "Cool any cooked rice quickly (spread it out on a tray), refrigerate it within an hour and reheat it until steaming hot."
+        "Cool any cooked rice quickly (spread it out on a tray), refrigerate it within an hour and reheat it until steaming hot.",
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-caesar-pasta": {
@@ -832,6 +943,9 @@
           "from": "sear 4 minutes a side in oil.",
           "to": "sear 4 minutes a side in oil until cooked through (75°C in the thickest part)."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-caesar-wrap": {
@@ -840,6 +954,9 @@
           "from": "until golden and just done.",
           "to": "until golden and cooked through (75°C in the thickest part)."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-cordon-bleu": {
@@ -848,6 +965,9 @@
           "from": "4 slices Gruyère or Swiss",
           "to": "4 slices Gruyère (or Swiss cheese)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-enchilada-casserole": {
@@ -872,7 +992,8 @@
         }
       ],
       "addNotes": [
-        "Cool any cooked rice quickly (spread it out on a tray), refrigerate it within an hour and reheat it until steaming hot."
+        "Cool any cooked rice quickly (spread it out on a tray), refrigerate it within an hour and reheat it until steaming hot.",
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-fried-rice": {
@@ -883,7 +1004,8 @@
         }
       ],
       "addNotes": [
-        "If you cook rice for this, spread it on a tray to cool quickly, then refrigerate within an hour. Don't leave cooked rice sitting out."
+        "If you cook rice for this, spread it on a tray to cool quickly, then refrigerate within an hour. Don't leave cooked rice sitting out.",
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-fried-steak": {
@@ -895,6 +1017,9 @@
           "from": "Buttered green beans or corn",
           "to": "Buttered green beans (or corn)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook whole cuts of beef, lamb and veal to at least 63°C in the thickest part, then rest for 3 minutes; cook rolled or stuffed cuts to 75°C."
       ]
     },
     "chicken-gyoza": {
@@ -921,6 +1046,9 @@
           "from": "Steam 5 minutes.",
           "to": "Steam 5 minutes, until the filling is cooked through (75°C)."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone. Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
       ]
     },
     "chicken-gyro": {
@@ -932,11 +1060,15 @@
           "from": "3 minutes a side until charred at the edges.",
           "to": "3 minutes a side until charred at the edges and cooked through."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-gyudon": {
       "addNotes": [
-        "Raw or soft-cooked egg isn't recommended if you're pregnant, cooking for young children or older people, or have a weakened immune system. Use a hard-boiled egg instead."
+        "Raw or soft-cooked egg isn't recommended if you're pregnant, cooking for young children or older people, or have a weakened immune system. Use a hard-boiled egg instead.",
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone. This uses raw or lightly cooked egg: pregnant women, older people, young children and anyone with low immunity should skip it or use pasteurised eggs."
       ]
     },
     "chicken-katsu": {
@@ -945,6 +1077,9 @@
           "from": "until deep golden and crisp. Drain on a rack",
           "to": "until deep golden, crisp and 75°C in the thickest part. Drain on a rack"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-kiev": {
@@ -962,6 +1097,9 @@
           "from": "Steamed greens or buttered green beans",
           "to": "Steamed greens (or buttered green beans)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-marsala": {
@@ -980,6 +1118,9 @@
           "from": "Cook the chicken 3 minutes a side until golden.",
           "to": "Cook the chicken 3 minutes a side until golden and cooked through."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-meatballs": {
@@ -994,6 +1135,9 @@
           "from": "Simmer 8 minutes until cooked through and sauce thickens.",
           "to": "Simmer 8 minutes until cooked through (75°C in the centre) and the sauce thickens."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone. Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
       ]
     },
     "chicken-milanese": {
@@ -1002,6 +1146,9 @@
           "from": "for that rippled golden crust. Drain",
           "to": "for that rippled golden crust, until cooked through. Drain"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-noodle-soup": {
@@ -1025,6 +1172,9 @@
           "from": "2 celery sticks, diced (from above)",
           "to": "2 celery sticks, diced"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-pad-see-ew": {
@@ -1043,6 +1193,9 @@
           "from": "Add the noodles. Press",
           "to": "Add the last tbsp of oil, then the noodles. Press"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-parmesan": {
@@ -1059,6 +1212,9 @@
           "from": "and the sauce is bubbling.",
           "to": "and the sauce is bubbling, and the chicken reaches 75°C in the thickest part."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-pesto-pasta": {
@@ -1067,6 +1223,9 @@
           "from": "Sear in olive oil 4 minutes a side until golden.",
           "to": "Sear in olive oil 4 minutes a side until golden and cooked through (75°C in the thickest part)."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-piccata": {
@@ -1081,6 +1240,9 @@
           "from": "3 minutes a side until deeply golden.",
           "to": "3 minutes a side until deeply golden and cooked through."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-pot-pie": {
@@ -1092,6 +1254,9 @@
           "from": "Tip into a pie dish.",
           "to": "Heat the oven to 200°C. Tip into a pie dish."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-quesadilla": {
@@ -1107,6 +1272,9 @@
           "from": "Place the quesadilla in.",
           "to": "Place two quesadillas in, straight edges together."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-ramen-bowl": {
@@ -1132,7 +1300,8 @@
         }
       ],
       "addNotes": [
-        "Soft-boiled eggs aren't recommended if you're pregnant, cooking for young children or older people, or have a weakened immune system. Boil them for 10 minutes instead."
+        "Soft-boiled eggs aren't recommended if you're pregnant, cooking for young children or older people, or have a weakened immune system. Boil them for 10 minutes instead.",
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone. Use fresh, uncracked eggs; for pregnant women, older people, young children and anyone with low immunity, cook the eggs until the yolks are firm."
       ]
     },
     "chicken-satay": {
@@ -1150,6 +1319,9 @@
           "from": "basting once with leftover marinade. The edges should char.",
           "to": "basting with leftover marinade only in the first 4 minutes. The edges should char and the chicken be cooked through."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-satay-bowl": {
@@ -1161,6 +1333,9 @@
           "from": "3 minutes a side until charred.",
           "to": "3 minutes a side until charred and cooked through."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-schnitzel": {
@@ -1169,6 +1344,9 @@
           "from": "200g panko or fine breadcrumbs",
           "to": "200g panko (or fine breadcrumbs)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-shawarma-bowl": {
@@ -1188,7 +1366,8 @@
         }
       ],
       "addNotes": [
-        "Cool any cooked rice quickly (spread it out on a tray), refrigerate it within an hour and reheat it until steaming hot."
+        "Cool any cooked rice quickly (spread it out on a tray), refrigerate it within an hour and reheat it until steaming hot.",
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-shawarma-plate": {
@@ -1223,6 +1402,9 @@
           "from": "Stuff with pita pieces.",
           "to": "Serve with warm pita."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-souvlaki": {
@@ -1238,6 +1420,9 @@
           "from": "feta crumble, lemon squeeze",
           "to": "feta crumble, a few olives, lemon squeeze"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-stir-fry": {
@@ -1253,6 +1438,9 @@
           "from": "Cook chicken in a single layer 3 minutes.",
           "to": "Cook chicken in a single layer 3 minutes until cooked through."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-teriyaki": {
@@ -1261,6 +1449,9 @@
           "from": "until the sauce thickens to a syrup and clings to the chicken.",
           "to": "until the sauce thickens to a syrup, clings to the chicken and the chicken reaches 75°C in the thickest part."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-tikka": {
@@ -1274,7 +1465,8 @@
         }
       ],
       "addNotes": [
-        "Best started the day before: the chicken marinates at least 4 hours, ideally overnight."
+        "Best started the day before: the chicken marinates at least 4 hours, ideally overnight.",
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-wings": {
@@ -1288,7 +1480,8 @@
         }
       ],
       "addNotes": [
-        "For the crispest skin, start the day before: the wings dry in the fridge for at least 1 hour, ideally overnight."
+        "For the crispest skin, start the day before: the wings dry in the fridge for at least 1 hour, ideally overnight.",
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-wrap": {
@@ -1300,6 +1493,9 @@
           "from": "3 minutes a side until charred at the edges.",
           "to": "3 minutes a side until charred at the edges and cooked through."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chicken-yakitori": {
@@ -1316,6 +1512,9 @@
           "from": "Final brush as they come off the grill.",
           "to": "Final brush with the reserved tare as they come off the grill."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "chili-con-carne": {
@@ -1331,6 +1530,9 @@
           "from": "Steamed rice or warm cornbread",
           "to": "Steamed rice (or warm cornbread)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Slow-cooked meat is safe once it is tender and the centre has reached at least 75°C. Soak dried kidney beans, then boil them hard for at least 10 minutes before simmering."
       ]
     },
     "chili-garlic-noodles": {
@@ -1345,6 +1547,9 @@
           "from": "Drain (don't rinse).",
           "to": "Blanch the greens in the noodle water for the last minute, then drain (don't rinse)."
         }
+      ],
+      "addNotes": [
+        "Food safety: Keep any leftover garlic, herb or chilli oil in the fridge and use it within 4 days."
       ]
     },
     "chow-mein": {
@@ -1353,6 +1558,9 @@
           "from": "for 3 minutes until just done.",
           "to": "for 3 minutes until cooked through (75°C)."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "clam-chowder": {
@@ -1367,6 +1575,9 @@
           "from": "Oyster crackers or warm crusty bread",
           "to": "Warm crusty bread (or oyster crackers)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook fish until it turns opaque and flakes easily, about 63°C in the thickest part. Cook mussels and clams only if they are alive and tightly closed (or close when tapped), and throw out any that stay shut after cooking."
       ]
     },
     "club-sandwich": {
@@ -1379,6 +1590,9 @@
           "from": "8 cocktail picks or skewers",
           "to": "8 cocktail picks (or skewers)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "cobb-salad": {
@@ -1390,6 +1604,9 @@
           "from": "Rest 15 minutes. Shred.",
           "to": "Rest 15 minutes, until the chicken reaches 75°C in the thickest part. Shred."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "coq-au-vin": {
@@ -1408,7 +1625,8 @@
         }
       ],
       "addNotes": [
-        "Start the day before: the chicken marinates overnight."
+        "Start the day before: the chicken marinates overnight.",
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "couscous": {
@@ -1434,7 +1652,8 @@
         }
       ],
       "addNotes": [
-        "Start the day before: the duck dry-brines in the fridge overnight."
+        "Start the day before: the duck dry-brines in the fridge overnight.",
+        "Food safety: Cook poultry until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "croque-monsieur": {
@@ -1465,6 +1684,9 @@
           "from": "for 10–12 minutes until firm to the touch.",
           "to": "for 10–12 minutes until firm to the touch and cooked through (75°C in the centre). Steam in batches if they don't all fit."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre. Cook prawns and other shellfish until the shells turn pink and the flesh is opaque and firm."
       ]
     },
     "eggplant-parmesan": {
@@ -1475,7 +1697,10 @@
     "empanadas": {
       "times": {
         "prepMinutes": 105
-      }
+      },
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
+      ]
     },
     "enchiladas": {
       "ingredients": [
@@ -1512,6 +1737,9 @@
           "from": "(it should char heavily). Rest on a board.",
           "to": "(it should char heavily). If using chicken thigh, cook 5–6 minutes a side until it reaches 75°C. Rest on a board."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook whole cuts of beef, lamb and veal to at least 63°C in the thickest part, then rest for 3 minutes; cook rolled or stuffed cuts to 75°C."
       ]
     },
     "falafel-wrap": {
@@ -1547,7 +1775,8 @@
         }
       ],
       "addNotes": [
-        "Start the day before: the black beans soak overnight."
+        "Start the day before: the black beans soak overnight.",
+        "Food safety: Cook fresh pork until the centre reaches 70°C and the juices run clear. Slow-cooked meat is safe once it is tender and the centre has reached at least 75°C."
       ],
       "addIngredients": [
         {
@@ -1559,7 +1788,10 @@
     "fish-and-chips": {
       "times": {
         "prepMinutes": 30
-      }
+      },
+      "addNotes": [
+        "Food safety: Cook fish until it turns opaque and flakes easily, about 63°C in the thickest part."
+      ]
     },
     "four-cheese-pizza": {
       "ingredients": [
@@ -1587,7 +1819,8 @@
         "cookMinutes": 35
       },
       "addNotes": [
-        "Start the day before: the chicken marinates in buttermilk overnight (4 hours at a minimum)."
+        "Start the day before: the chicken marinates in buttermilk overnight (4 hours at a minimum).",
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "gazpacho": {
@@ -1603,7 +1836,10 @@
     "gnocchi-bake": {
       "times": {
         "cookMinutes": 45
-      }
+      },
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
+      ]
     },
     "goulash": {
       "ingredients": [
@@ -1615,6 +1851,9 @@
           "from": "3 tbsp lard or neutral oil",
           "to": "3 tbsp lard (or neutral oil)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Slow-cooked meat is safe once it is tender and the centre has reached at least 75°C."
       ]
     },
     "greek-chicken-bowl": {
@@ -1632,12 +1871,18 @@
           "from": "until deep golden and just cooked.",
           "to": "until deep golden and cooked through (75°C)."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "greek-lamb": {
       "times": {
         "cookMinutes": 255
-      }
+      },
+      "addNotes": [
+        "Food safety: Slow-cooked meat is safe once it is tender and the centre has reached at least 75°C."
+      ]
     },
     "grilled-cheese": {
       "ingredients": [
@@ -1650,7 +1895,10 @@
     "grilled-chicken-salad": {
       "times": {
         "prepMinutes": 35
-      }
+      },
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
+      ]
     },
     "grilled-halloumi": {
       "ingredients": [
@@ -1666,6 +1914,9 @@
           "from": "Grilled asparagus or green salad",
           "to": "Grilled asparagus (or green salad)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook fish until it turns opaque and flakes easily, about 63°C in the thickest part."
       ]
     },
     "grilled-steak": {
@@ -1682,12 +1933,18 @@
           "from": "Roasted potatoes or fries",
           "to": "Roasted potatoes (or fries)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook whole cuts of beef, lamb and veal to at least 63°C in the thickest part, then rest for 3 minutes; cook rolled or stuffed cuts to 75°C."
       ]
     },
     "gumbo": {
       "times": {
         "cookMinutes": 135
-      }
+      },
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone. Cook prawns and other shellfish until the shells turn pink and the flesh is opaque and firm."
+      ]
     },
     "gyros": {
       "times": {
@@ -1698,11 +1955,15 @@
           "from": "About 3 minutes per batch.",
           "to": "About 3 minutes per batch, until cooked through (75°C if using chicken)."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook fresh pork until the centre reaches 70°C and the juices run clear."
       ]
     },
     "gyudon": {
       "addNotes": [
-        "Raw or soft-cooked egg isn't recommended if you're pregnant, cooking for young children or older people, or have a weakened immune system. Use a hard-boiled egg instead."
+        "Raw or soft-cooked egg isn't recommended if you're pregnant, cooking for young children or older people, or have a weakened immune system. Use a hard-boiled egg instead.",
+        "Food safety: Cook whole cuts of beef, lamb and veal to at least 63°C in the thickest part, then rest for 3 minutes; cook rolled or stuffed cuts to 75°C. Use fresh, uncracked eggs; for pregnant women, older people, young children and anyone with low immunity, cook the eggs until the yolks are firm."
       ],
       "ingredients": [
         {
@@ -1733,6 +1994,9 @@
           "from": "Flip. Cook 4 more minutes.",
           "to": "Flip. Cook 4 more minutes, until cooked through (75°C in the thickest part)."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "hot-dogs": {
@@ -1764,7 +2028,8 @@
         }
       ],
       "addNotes": [
-        "Runny or soft-cooked egg isn't recommended if you're pregnant, cooking for young children or older people, or have a weakened immune system. Cook the eggs until the yolks are firm."
+        "Runny or soft-cooked egg isn't recommended if you're pregnant, cooking for young children or older people, or have a weakened immune system. Cook the eggs until the yolks are firm.",
+        "Food safety: Use fresh, uncracked eggs; for pregnant women, older people, young children and anyone with low immunity, cook the eggs until the yolks are firm."
       ]
     },
     "hummus-plate": {
@@ -1802,6 +2067,9 @@
           "from": "Cover and simmer 15 minutes, they finish cooking and the sauce thickens around them.",
           "to": "Cover and simmer 15 minutes, until the meatballs are cooked through (75°C in the centre) and the sauce thickens around them."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
       ]
     },
     "jambalaya": {
@@ -1809,7 +2077,8 @@
         "cookMinutes": 65
       },
       "addNotes": [
-        "Leftovers: spread the rice out to cool quickly and refrigerate within an hour. Don't leave cooked rice sitting out."
+        "Leftovers: spread the rice out to cool quickly and refrigerate within an hour. Don't leave cooked rice sitting out.",
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone. Cook prawns and other shellfish until the shells turn pink and the flesh is opaque and firm."
       ]
     },
     "jollof-rice": {
@@ -1850,6 +2119,9 @@
           "from": "Sauté 4 tbsp bagoong with a little oil, garlic, and a pinch of sugar",
           "to": "Sauté the bagoong with a little oil, the minced garlic, and the pinch of sugar"
         }
+      ],
+      "addNotes": [
+        "Food safety: Slow-cooked meat is safe once it is tender and the centre has reached at least 75°C."
       ]
     },
     "katsu-curry": {
@@ -1858,6 +2130,9 @@
           "from": "Fry the cutlets 3 minutes a side until deep golden.",
           "to": "Fry the cutlets 3 minutes a side until deep golden and 75°C in the centre."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "kebab": {
@@ -1880,6 +2155,9 @@
           "from": "Thread lamb, alternating with onion, capsicum, and a tomato now and then. Pack the lamb tight on its own skewers if you want it more charred, the veg skewer cooks separately.",
           "to": "Thread the lamb tightly onto its own skewers, and the onion, capsicum and tomatoes onto separate skewers, since they need different cooking times."
         }
+      ],
+      "addNotes": [
+        "Food safety: Slow-cooked meat is safe once it is tender and the centre has reached at least 75°C."
       ]
     },
     "korean-bbq-beef": {
@@ -1891,6 +2169,9 @@
           "from": "Marinate beef 30 minutes.",
           "to": "Mix all the marinade ingredients, toss through the beef and marinate 30 minutes."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook whole cuts of beef, lamb and veal to at least 63°C in the thickest part, then rest for 3 minutes; cook rolled or stuffed cuts to 75°C."
       ]
     },
     "korean-fried-chicken": {
@@ -1902,12 +2183,18 @@
           "from": "until deeply golden and properly crisp.",
           "to": "until deeply golden, properly crisp and 75°C at the thickest part."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "kung-pao-chicken": {
       "times": {
         "prepMinutes": 25
-      }
+      },
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
+      ]
     },
     "lamb-chops": {
       "times": {
@@ -1918,6 +2205,9 @@
           "from": "8 lamb cutlets or loin chops (about 1kg)",
           "to": "8 lamb cutlets (or loin chops), about 1kg"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook whole cuts of beef, lamb and veal to at least 63°C in the thickest part, then rest for 3 minutes; cook rolled or stuffed cuts to 75°C."
       ]
     },
     "lamb-kofta": {
@@ -1940,12 +2230,18 @@
           "from": "Build: yogurt sauce, lettuce or salad, kofta off the skewer, sumac, parsley, lemon.",
           "to": "Build: yogurt sauce, tomato, cucumber and onion, kofta off the skewer, pickled chillies, sumac, parsley, lemon."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
       ]
     },
     "lasagna": {
       "times": {
         "cookMinutes": 150
-      }
+      },
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre. Reheat leftovers until steaming hot right through."
+      ]
     },
     "lemon-herb-chicken": {
       "times": {
@@ -1963,6 +2259,9 @@
           "from": "until cooked through.",
           "to": "until cooked through (75°C in the thickest part)."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "lemon-pepper-salmon": {
@@ -1971,6 +2270,9 @@
           "from": "Steamed rice or new potatoes",
           "to": "Steamed rice (or new potatoes)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook fish until it turns opaque and flakes easily, about 63°C in the thickest part."
       ]
     },
     "lentil-soup": {
@@ -2001,12 +2303,18 @@
           "from": "300g chicken or pork, sliced thin (or 300g mixed vegetables for veg)",
           "to": "300g chicken, sliced thin (or pork, or mixed vegetables)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "loaded-nachos": {
       "times": {
         "cookMinutes": 25
-      }
+      },
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
+      ]
     },
     "lobster-roll": {
       "steps": [
@@ -2023,7 +2331,10 @@
         "prepMinutes": 50,
         "cookMinutes": 20
       },
-      "difficulty": "medium"
+      "difficulty": "medium",
+      "addNotes": [
+        "Food safety: Cook prawns and other shellfish until the shells turn pink and the flesh is opaque and firm."
+      ]
     },
     "mac-and-cheese": {
       "times": {
@@ -2048,12 +2359,21 @@
       "times": {
         "prepMinutes": 110,
         "cookMinutes": 20
-      }
+      },
+      "steps": [
+        {
+          "from": "(250°C / 480°F)",
+          "to": "(250°C)"
+        }
+      ]
     },
     "massaman-curry": {
       "times": {
         "cookMinutes": 105
-      }
+      },
+      "addNotes": [
+        "Food safety: Slow-cooked meat is safe once it is tender and the centre has reached at least 75°C."
+      ]
     },
     "meatloaf": {
       "times": {
@@ -2076,6 +2396,9 @@
           "from": "internal temperature 70°C",
           "to": "until the centre reaches 75°C"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
       ]
     },
     "mediterranean-platter": {
@@ -2103,6 +2426,9 @@
           "from": "Dust hummus with sumac and paprika.",
           "to": "Dust the hummus with sumac."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
       ]
     },
     "minestrone": {
@@ -2122,7 +2448,10 @@
       ],
       "times": {
         "cookMinutes": 50
-      }
+      },
+      "addNotes": [
+        "Food safety: Reheat leftovers until steaming hot right through."
+      ]
     },
     "miso-soup": {
       "ingredients": [
@@ -2146,6 +2475,9 @@
           "from": "100g kefalotyri or parmesan, grated",
           "to": "100g parmesan (or kefalotyri), grated"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
       ]
     },
     "mushroom-risotto": {
@@ -2172,7 +2504,8 @@
       ],
       "addNotes": [
         "Cook the rice ahead and cool it quickly: spread it on a tray and refrigerate within an hour. Don't leave cooked rice sitting out.",
-        "Runny or soft-cooked egg isn't recommended for pregnant people, young children, older people or anyone with a weakened immune system. Cook their eggs until firm."
+        "Runny or soft-cooked egg isn't recommended for pregnant people, young children, older people or anyone with a weakened immune system. Cook their eggs until firm.",
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone. Cook prawns and other shellfish until the shells turn pink and the flesh is opaque and firm. Use fresh, uncracked eggs; for pregnant women, older people, young children and anyone with low immunity, cook the eggs until the yolks are firm."
       ]
     },
     "nicoise-salad": {
@@ -2186,7 +2519,8 @@
         }
       ],
       "addNotes": [
-        "Runny or soft-cooked egg isn't recommended for pregnant people, young children, older people or anyone with a weakened immune system. Cook their eggs until firm."
+        "Runny or soft-cooked egg isn't recommended for pregnant people, young children, older people or anyone with a weakened immune system. Cook their eggs until firm.",
+        "Food safety: Use fresh, uncracked eggs; for pregnant women, older people, young children and anyone with low immunity, cook the eggs until the yolks are firm."
       ]
     },
     "okonomiyaki": {
@@ -2198,6 +2532,9 @@
           "from": "8 thin slices pork belly or streaky bacon",
           "to": "8 thin slices pork belly (or streaky bacon)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook fresh pork until the centre reaches 70°C and the juices run clear."
       ]
     },
     "omelette": {
@@ -2214,6 +2551,9 @@
           "from": "500ml beef or chicken stock",
           "to": "500ml beef stock (or chicken stock)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Slow-cooked meat is safe once it is tender and the centre has reached at least 75°C."
       ]
     },
     "paella": {
@@ -2241,7 +2581,8 @@
         }
       ],
       "addNotes": [
-        "Leftovers: spread the rice out to cool quickly and refrigerate within an hour. Don't leave cooked rice sitting out."
+        "Leftovers: spread the rice out to cool quickly and refrigerate within an hour. Don't leave cooked rice sitting out.",
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone. Cook mussels and clams only if they are alive and tightly closed (or close when tapped), and throw out any that stay shut after cooking. Cook prawns and other shellfish until the shells turn pink and the flesh is opaque and firm."
       ]
     },
     "paneer-butter-masala": {
@@ -2316,7 +2657,8 @@
         }
       ],
       "addNotes": [
-        "Start the day before: the duck dries uncovered in the fridge overnight."
+        "Start the day before: the duck dries uncovered in the fridge overnight.",
+        "Food safety: Cook poultry until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "penne-arrabbiata": {
@@ -2350,7 +2692,10 @@
       "times": {
         "prepMinutes": 75,
         "cookMinutes": 50
-      }
+      },
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
+      ]
     },
     "pesto-pasta": {
       "times": {
@@ -2384,6 +2729,9 @@
           "group": "To serve",
           "line": "Sriracha"
         }
+      ],
+      "addNotes": [
+        "Food safety: Slow-cooked meat is safe once it is tender and the centre has reached at least 75°C."
       ]
     },
     "pierogi": {
@@ -2409,6 +2757,9 @@
           "from": "1kg pork belly or pork shoulder",
           "to": "1kg pork belly (or pork shoulder)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook fresh pork until the centre reaches 70°C and the juices run clear."
       ]
     },
     "pork-dumplings": {
@@ -2427,11 +2778,15 @@
           "from": "When they float again, they're done, about 6 minutes total.",
           "to": "When they float again, they're done, about 6 minutes total. Cut one open: the filling should be cooked through with no pink (75°C)."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
       ]
     },
     "pork-fried-rice": {
       "addNotes": [
-        "If you cook the rice for this, spread it out to cool quickly and refrigerate it within an hour. Don't leave cooked rice sitting out."
+        "If you cook the rice for this, spread it out to cool quickly and refrigerate it within an hour. Don't leave cooked rice sitting out.",
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
       ]
     },
     "pork-roast": {
@@ -2449,7 +2804,8 @@
         }
       ],
       "addNotes": [
-        "Start the day before: the pork skin dries in the fridge overnight."
+        "Start the day before: the pork skin dries in the fridge overnight.",
+        "Food safety: Cook fresh pork until the centre reaches 70°C and the juices run clear."
       ]
     },
     "pork-tacos": {
@@ -2466,6 +2822,9 @@
           "from": "Crumbled feta or queso fresco",
           "to": "Crumbled feta (or queso fresco)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook fresh pork until the centre reaches 70°C and the juices run clear."
       ]
     },
     "prawn-curry": {
@@ -2478,6 +2837,9 @@
           "from": "2 tbsp coconut oil or ghee",
           "to": "2 tbsp coconut oil (or ghee)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook prawns and other shellfish until the shells turn pink and the flesh is opaque and firm."
       ]
     },
     "pulled-pork": {
@@ -2486,6 +2848,9 @@
           "from": "250ml apple juice or apple cider vinegar in a spray bottle",
           "to": "250ml apple juice (or apple cider vinegar), in a spray bottle"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook fresh pork until the centre reaches 70°C and the juices run clear."
       ]
     },
     "pumpkin-soup": {
@@ -2527,6 +2892,9 @@
           "from": "Heat a dry pan over medium heat. Place the quesadilla in and weigh down",
           "to": "Heat a dry pan (or one very lightly brushed with butter) over medium heat. Place two quesadillas in, straight edges to the middle, and weigh down"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "quiche-lorraine": {
@@ -2543,7 +2911,8 @@
         }
       ],
       "addNotes": [
-        "The eggs have soft yolks. If you're pregnant, cooking for young children or older people, or have a weakened immune system, cook them until the yolks are firm."
+        "The eggs have soft yolks. If you're pregnant, cooking for young children or older people, or have a weakened immune system, cook them until the yolks are firm.",
+        "Food safety: Use fresh, uncracked eggs; for pregnant women, older people, young children and anyone with low immunity, cook the eggs until the yolks are firm."
       ]
     },
     "ratatouille": {
@@ -2584,7 +2953,10 @@
       "times": {
         "prepMinutes": 45,
         "cookMinutes": 95
-      }
+      },
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
+      ]
     },
     "roasted-veggie-bowl": {
       "ingredients": [
@@ -2614,7 +2986,10 @@
     "rogan-josh": {
       "times": {
         "cookMinutes": 135
-      }
+      },
+      "addNotes": [
+        "Food safety: Slow-cooked meat is safe once it is tender and the centre has reached at least 75°C."
+      ]
     },
     "saag-paneer": {
       "ingredients": [
@@ -2636,6 +3011,9 @@
           "from": "Buttered peas or green beans",
           "to": "Buttered peas (or green beans)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
       ]
     },
     "salmon-nigiri": {
@@ -2681,6 +3059,9 @@
           "from": "Steamed broccoli or bok choy",
           "to": "Steamed broccoli (or bok choy)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook fish until it turns opaque and flakes easily, about 63°C in the thickest part."
       ]
     },
     "samosas": {
@@ -2720,6 +3101,9 @@
           "from": "Steamed rice or fresh roti",
           "to": "Steamed rice (or fresh roti)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "schnitzel": {
@@ -2728,6 +3112,9 @@
           "from": "Lingonberry jam or cranberry sauce",
           "to": "Lingonberry jam (or cranberry sauce)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook whole cuts of beef, lamb and veal to at least 63°C in the thickest part, then rest for 3 minutes; cook rolled or stuffed cuts to 75°C."
       ]
     },
     "seafood-paella": {
@@ -2743,6 +3130,9 @@
           "from": "1L hot seafood or fish stock",
           "to": "1L hot seafood stock (or fish stock)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook fish until it turns opaque and flakes easily, about 63°C in the thickest part. Cook mussels and clams only if they are alive and tightly closed (or close when tapped), and throw out any that stay shut after cooking. Cook prawns and other shellfish until the shells turn pink and the flesh is opaque and firm. Cook squid, octopus and scallops until opaque and just firm, and keep seafood chilled until you cook it."
       ]
     },
     "seafood-pasta": {
@@ -2751,6 +3141,9 @@
           "from": "400g linguine or spaghetti",
           "to": "400g linguine (or spaghetti)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook fish until it turns opaque and flakes easily, about 63°C in the thickest part. Cook mussels and clams only if they are alive and tightly closed (or close when tapped), and throw out any that stay shut after cooking. Cook prawns and other shellfish until the shells turn pink and the flesh is opaque and firm. Cook squid, octopus and scallops until opaque and just firm, and keep seafood chilled until you cook it."
       ]
     },
     "seafood-risotto": {
@@ -2777,6 +3170,9 @@
           "from": "in a bit of oil",
           "to": "in the remaining 1 tbsp oil"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook fish until it turns opaque and flakes easily, about 63°C in the thickest part. Cook mussels and clams only if they are alive and tightly closed (or close when tapped), and throw out any that stay shut after cooking. Cook prawns and other shellfish until the shells turn pink and the flesh is opaque and firm. Cook squid, octopus and scallops until opaque and just firm, and keep seafood chilled until you cook it."
       ]
     },
     "shakshuka": {
@@ -2787,7 +3183,8 @@
         }
       ],
       "addNotes": [
-        "The yolks are left runny. If you're pregnant, cooking for young children or older people, or have a weakened immune system, cook the eggs until the yolks are firm."
+        "The yolks are left runny. If you're pregnant, cooking for young children or older people, or have a weakened immune system, cook the eggs until the yolks are firm.",
+        "Food safety: Use fresh, uncracked eggs; for pregnant women, older people, young children and anyone with low immunity, cook the eggs until the yolks are firm."
       ]
     },
     "shawarma": {
@@ -2799,6 +3196,9 @@
           "from": "until charred at the edges and cooked through.",
           "to": "until charred at the edges and cooked through (75°C in the thickest part)."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "shepherd-s-pie": {
@@ -2807,6 +3207,9 @@
           "from": "300ml beef or lamb stock",
           "to": "300ml beef stock (or lamb stock)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
       ]
     },
     "shrimp-alfredo": {
@@ -2815,17 +3218,24 @@
           "from": "400g fettuccine or linguine",
           "to": "400g fettuccine (or linguine)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook fish until it turns opaque and flakes easily, about 63°C in the thickest part. Cook prawns and other shellfish until the shells turn pink and the flesh is opaque and firm."
       ]
     },
     "shrimp-fried-rice": {
       "addNotes": [
-        "If you cook the rice for this, spread it out to cool quickly and refrigerate it within an hour. Don't leave cooked rice sitting out."
+        "If you cook the rice for this, spread it out to cool quickly and refrigerate it within an hour. Don't leave cooked rice sitting out.",
+        "Food safety: Cook prawns and other shellfish until the shells turn pink and the flesh is opaque and firm."
       ]
     },
     "shrimp-pad-thai": {
       "times": {
         "prepMinutes": 25
-      }
+      },
+      "addNotes": [
+        "Food safety: Cook fish until it turns opaque and flakes easily, about 63°C in the thickest part. Cook prawns and other shellfish until the shells turn pink and the flesh is opaque and firm."
+      ]
     },
     "shrimp-scampi": {
       "ingredients": [
@@ -2833,6 +3243,9 @@
           "from": "400g linguine or spaghetti",
           "to": "400g linguine (or spaghetti)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook fish until it turns opaque and flakes easily, about 63°C in the thickest part. Cook prawns and other shellfish until the shells turn pink and the flesh is opaque and firm."
       ]
     },
     "shrimp-tacos": {
@@ -2841,12 +3254,18 @@
           "from": "4 tbsp Greek yogurt or sour cream",
           "to": "4 tbsp Greek yogurt (or sour cream)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook prawns and other shellfish until the shells turn pink and the flesh is opaque and firm."
       ]
     },
     "shrimp-tempura": {
       "times": {
         "cookMinutes": 20
-      }
+      },
+      "addNotes": [
+        "Food safety: Cook prawns and other shellfish until the shells turn pink and the flesh is opaque and firm."
+      ]
     },
     "sisig": {
       "times": {
@@ -2876,7 +3295,8 @@
         }
       ],
       "addNotes": [
-        "The egg stays soft. If you're pregnant, cooking for young children or older people, or have a weakened immune system, stir it through until fully set."
+        "The egg stays soft. If you're pregnant, cooking for young children or older people, or have a weakened immune system, stir it through until fully set.",
+        "Food safety: Cook fresh pork until the centre reaches 70°C and the juices run clear."
       ]
     },
     "sloppy-joes": {
@@ -2885,6 +3305,9 @@
           "from": "4 soft burger buns or kaiser rolls",
           "to": "4 soft burger buns (or kaiser rolls)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
       ]
     },
     "smash-burger": {
@@ -2903,6 +3326,9 @@
           "from": "Lay a slice of cheese on each. Cook 30 seconds more.",
           "to": "Lay a slice of cheese on each. Cook 30 seconds more, until no pink remains. Repeat with the remaining 4 balls."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
       ]
     },
     "soba-noodles": {
@@ -2927,6 +3353,9 @@
           "from": "150g pancetta or streaky bacon",
           "to": "150g pancetta (or streaky bacon)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
       ]
     },
     "spicy-beef-bowl": {
@@ -2950,7 +3379,8 @@
         }
       ],
       "addNotes": [
-        "The eggs have soft yolks. If you're pregnant, cooking for young children or older people, or have a weakened immune system, cook them until the yolks are firm."
+        "The eggs have soft yolks. If you're pregnant, cooking for young children or older people, or have a weakened immune system, cook them until the yolks are firm.",
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre. Use fresh, uncracked eggs; for pregnant women, older people, young children and anyone with low immunity, cook the eggs until the yolks are firm."
       ]
     },
     "spicy-ramen": {
@@ -2961,7 +3391,8 @@
         }
       ],
       "addNotes": [
-        "Soft-boiled eggs have runny yolks. If you're pregnant, cooking for young children or older people, or have a weakened immune system, cook the eggs until the yolks are firm."
+        "Soft-boiled eggs have runny yolks. If you're pregnant, cooking for young children or older people, or have a weakened immune system, cook the eggs until the yolks are firm.",
+        "Food safety: Use fresh, uncracked eggs; for pregnant women, older people, young children and anyone with low immunity, cook the eggs until the yolks are firm."
       ]
     },
     "spicy-sausage-pasta": {
@@ -2976,6 +3407,9 @@
           "from": "Simmer 10 minutes until thick.",
           "to": "Simmer 10 minutes until thick. Season with salt and pepper."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
       ]
     },
     "spicy-thai-noodles": {
@@ -2994,6 +3428,9 @@
           "from": "Cook the protein 2 minutes.",
           "to": "Cook the protein 2–3 minutes until just cooked through."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "spring-rolls": {
@@ -3043,6 +3480,9 @@
           "from": "Crusty bread or boiled potatoes",
           "to": "Crusty bread (or boiled potatoes)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre. Reheat leftovers until steaming hot right through."
       ]
     },
     "stuffed-peppers": {
@@ -3066,7 +3506,8 @@
         }
       ],
       "addNotes": [
-        "If using leftover rice, it must have been cooled quickly and kept in the fridge. Use it within a day."
+        "If using leftover rice, it must have been cooled quickly and kept in the fridge. Use it within a day.",
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre. Cool cooked rice quickly, refrigerate it within 1 hour and reheat it until steaming hot."
       ]
     },
     "sunday-roast": {
@@ -3113,11 +3554,15 @@
           "from": "4 tbsp duck fat or beef dripping (or vegetable oil)",
           "to": "4 tbsp duck fat (or beef dripping or vegetable oil)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Slow-cooked meat is safe once it is tender and the centre has reached at least 75°C."
       ]
     },
     "sushi-rolls": {
       "addNotes": [
-        "Uses raw fish. Not recommended during pregnancy or for anyone with a weakened immune system."
+        "Uses raw fish. Not recommended during pregnancy or for anyone with a weakened immune system.",
+        "Food safety: Cook fish until it turns opaque and flakes easily, about 63°C in the thickest part."
       ]
     },
     "swedish-meatballs": {
@@ -3130,6 +3575,9 @@
           "from": "Spoon lingonberry on the side.",
           "to": "Spoon lingonberry and pickled cucumber on the side."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
       ]
     },
     "tandoori-chicken": {
@@ -3144,7 +3592,8 @@
         }
       ],
       "addNotes": [
-        "Start the day before: the chicken marinates overnight."
+        "Start the day before: the chicken marinates overnight.",
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ],
       "ingredients": [
         {
@@ -3166,6 +3615,9 @@
           "from": "Sliced jamón serrano or prosciutto",
           "to": "Sliced jamón serrano (or prosciutto)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook prawns and other shellfish until the shells turn pink and the flesh is opaque and firm."
       ]
     },
     "teriyaki-beef-bowl": {
@@ -3178,6 +3630,9 @@
           "from": "1 cup steamed broccoli or sugar snap peas",
           "to": "1 cup steamed broccoli (or sugar snap peas)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook whole cuts of beef, lamb and veal to at least 63°C in the thickest part, then rest for 3 minutes; cook rolled or stuffed cuts to 75°C."
       ]
     },
     "teriyaki-chicken-bowl": {
@@ -3188,7 +3643,8 @@
         }
       ],
       "addNotes": [
-        "Soft-boiled eggs have runny yolks. If you're pregnant, cooking for young children or older people, or have a weakened immune system, cook the eggs until the yolks are firm."
+        "Soft-boiled eggs have runny yolks. If you're pregnant, cooking for young children or older people, or have a weakened immune system, cook the eggs until the yolks are firm.",
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "teriyaki-pork": {
@@ -3197,6 +3653,9 @@
           "from": "Steamed broccoli or pak choy",
           "to": "Steamed broccoli (or pak choy)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook fresh pork until the centre reaches 70°C and the juices run clear."
       ]
     },
     "teriyaki-tofu": {
@@ -3242,7 +3701,8 @@
         }
       ],
       "addNotes": [
-        "The egg yolk stays runny. If you're pregnant, cooking for young children or older people, or have a weakened immune system, cook the egg until the yolk is firm."
+        "The egg yolk stays runny. If you're pregnant, cooking for young children or older people, or have a weakened immune system, cook the egg until the yolk is firm.",
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone. Use fresh, uncracked eggs; for pregnant women, older people, young children and anyone with low immunity, cook the eggs until the yolks are firm."
       ]
     },
     "thai-green-curry": {
@@ -3255,13 +3715,19 @@
           "from": "100g snake beans or green beans",
           "to": "100g snake beans (or green beans)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "tikka-masala": {
       "times": {
         "prepMinutes": 140,
         "cookMinutes": 40
-      }
+      },
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
+      ]
     },
     "tofu-buddha-bowl": {
       "ingredients": [
@@ -3295,6 +3761,9 @@
           "from": "Serve with rice.",
           "to": "Serve with rice and chilli oil."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
       ]
     },
     "tom-yum-soup": {
@@ -3303,6 +3772,9 @@
           "from": "1.2L chicken or shrimp stock",
           "to": "1.2L chicken stock (or prawn stock)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook fish until it turns opaque and flakes easily, about 63°C in the thickest part. Cook prawns and other shellfish until the shells turn pink and the flesh is opaque and firm."
       ]
     },
     "tortilla-soup": {
@@ -3373,6 +3845,9 @@
           "from": "40g panko soaked in 3 tbsp milk",
           "to": "40g panko"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook poultry until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone. Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
       ]
     },
     "turkish-pide": {
@@ -3396,7 +3871,8 @@
         }
       ],
       "addNotes": [
-        "The egg yolk stays runny. If you're pregnant, cooking for young children or older people, or have a weakened immune system, cook the egg until the yolk is firm."
+        "The egg yolk stays runny. If you're pregnant, cooking for young children or older people, or have a weakened immune system, cook the egg until the yolk is firm.",
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre. Use fresh, uncracked eggs; for pregnant women, older people, young children and anyone with low immunity, cook the eggs until the yolks are firm."
       ]
     },
     "udon-noodles": {
@@ -3528,6 +4004,9 @@
           "from": "add lemon zest, juice, basil, parmesan.",
           "to": "add lemon zest, juice, basil, parmesan, and the mozzarella and pine nuts if using."
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook prawns and other shellfish until the shells turn pink and the flesh is opaque and firm."
       ]
     },
     "laksa": {
@@ -3536,6 +4015,9 @@
           "from": "Vietnamese mint or coriander",
           "to": "Vietnamese mint (or coriander)"
         }
+      ],
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone. Cook fish until it turns opaque and flakes easily, about 63°C in the thickest part. Cook prawns and other shellfish until the shells turn pink and the flesh is opaque and firm."
       ]
     },
     "stuffed-mushrooms": {
@@ -3550,6 +4032,111 @@
           "group": "Top",
           "line": "20g butter, melted"
         }
+      ]
+    },
+    "bbq-pulled-chicken": {
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
+      ]
+    },
+    "chicken-adobo": {
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
+      ]
+    },
+    "chicken-tagine": {
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
+      ]
+    },
+    "chili-cheese-fries": {
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre. Soak dried kidney beans, then boil them hard for at least 10 minutes before simmering."
+      ]
+    },
+    "cottage-pie": {
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
+      ]
+    },
+    "fish-curry": {
+      "addNotes": [
+        "Food safety: Cook fish until it turns opaque and flakes easily, about 63°C in the thickest part."
+      ]
+    },
+    "fish-tacos": {
+      "addNotes": [
+        "Food safety: Cook fish until it turns opaque and flakes easily, about 63°C in the thickest part."
+      ]
+    },
+    "lamb-tagine": {
+      "addNotes": [
+        "Food safety: Slow-cooked meat is safe once it is tender and the centre has reached at least 75°C."
+      ]
+    },
+    "mango-curry": {
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
+      ]
+    },
+    "mapo-tofu": {
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
+      ]
+    },
+    "pad-thai": {
+      "addNotes": [
+        "Food safety: Cook fish until it turns opaque and flakes easily, about 63°C in the thickest part. Cook prawns and other shellfish until the shells turn pink and the flesh is opaque and firm."
+      ]
+    },
+    "picanha": {
+      "addNotes": [
+        "Food safety: Cook whole cuts of beef, lamb and veal to at least 63°C in the thickest part, then rest for 3 minutes; cook rolled or stuffed cuts to 75°C."
+      ]
+    },
+    "pork-belly-bao": {
+      "addNotes": [
+        "Food safety: Cook fresh pork until the centre reaches 70°C and the juices run clear."
+      ]
+    },
+    "pork-schnitzel": {
+      "addNotes": [
+        "Food safety: Cook fresh pork until the centre reaches 70°C and the juices run clear."
+      ]
+    },
+    "prawn-linguine": {
+      "addNotes": [
+        "Food safety: Cook fish until it turns opaque and flakes easily, about 63°C in the thickest part. Cook prawns and other shellfish until the shells turn pink and the flesh is opaque and firm."
+      ]
+    },
+    "stuffed-chicken-breast": {
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
+      ]
+    },
+    "stuffed-eggplant": {
+      "addNotes": [
+        "Food safety: Cook mince, sausages, meatballs and liver right through to 75°C, with no pink in the centre."
+      ]
+    },
+    "sweet-and-sour-pork": {
+      "addNotes": [
+        "Food safety: Cook fresh pork until the centre reaches 70°C and the juices run clear."
+      ]
+    },
+    "tagine": {
+      "addNotes": [
+        "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
+      ]
+    },
+    "takoyaki": {
+      "addNotes": [
+        "Food safety: Cook squid, octopus and scallops until opaque and just firm, and keep seafood chilled until you cook it."
+      ]
+    },
+    "teriyaki-shrimp-bowl": {
+      "addNotes": [
+        "Food safety: Cook prawns and other shellfish until the shells turn pink and the flesh is opaque and firm."
       ]
     }
   }

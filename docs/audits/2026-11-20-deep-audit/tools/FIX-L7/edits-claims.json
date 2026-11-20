@@ -1,0 +1,297 @@
+{
+  "whole-orange-and-almond-cake": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "A dense, fragrant, naturally gluten-free cake made with boiled whole oranges.",
+        "to": "A dense, fragrant cake made with boiled whole oranges."
+      },
+      {
+        "in": "text",
+        "from": "Gluten-free.",
+        "to": "Gluten-free if you use gluten-free baking powder."
+      }
+    ]
+  },
+  "crema-catalana": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "Gluten-free and vegetarian.",
+        "to": "Vegetarian; gluten-free if you use cornflour labelled gluten-free."
+      }
+    ]
+  },
+  "pavlova-with-berries-and-cream": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "Gluten-free and vegetarian.",
+        "to": "Vegetarian; gluten-free if you use cornflour labelled gluten-free."
+      }
+    ]
+  },
+  "feijoada-style-black-bean-and-pork-stew": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "Gluten-free.",
+        "to": "Gluten-free if you use a sausage labelled gluten-free."
+      }
+    ]
+  },
+  "baked-falafel-plates-with-tahini": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "Gluten-free.",
+        "to": "Gluten-free if you use gluten-free baking powder."
+      }
+    ]
+  },
+  "rinderrouladen-with-mustard-and-pickles": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "Gluten-free.",
+        "to": "Gluten-free if you use cornflour labelled gluten-free."
+      }
+    ]
+  },
+  "escovitch-fish-with-pickled-vegetables": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "Gluten-free.",
+        "to": "Gluten-free if you use cornflour labelled gluten-free."
+      }
+    ]
+  },
+  "rakott-krumpli-layered-potato-bake": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "Gluten-free.",
+        "to": "Gluten-free if you use a sausage labelled gluten-free."
+      }
+    ]
+  },
+  "hungarian-paprika-potatoes-with-fried-eggs": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "Gluten-free.",
+        "to": "Gluten-free if you use a sausage labelled gluten-free."
+      }
+    ]
+  },
+  "kapusta-z-kielbasa-polish-braised-cabbage-with-smoked-sausage-and-potato": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "Dairy-free and gluten-free.",
+        "to": "Dairy-free; gluten-free if you use a sausage labelled gluten-free."
+      }
+    ]
+  },
+  "black-sesame-cream-pudding": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "Vegetarian and gluten-free.",
+        "to": "Vegetarian; gluten-free if you use cornflour labelled gluten-free."
+      }
+    ]
+  },
+  "pisang-free-cassava-cake": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "Vegetarian and gluten-free.",
+        "to": "Vegetarian; gluten-free if you use gluten-free baking powder."
+      }
+    ]
+  },
+  "serabi-coconut-pancakes": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "Vegan and gluten-free.",
+        "to": "Vegan; gluten-free if you use gluten-free baking powder."
+      }
+    ]
+  },
+  "cassava-coconut-pancakes": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "Gluten-free pancakes made with cassava flour and coconut milk.",
+        "to": "Pancakes made with cassava flour and coconut milk."
+      },
+      {
+        "in": "text",
+        "from": "Vegetarian and gluten-free.",
+        "to": "Vegetarian; gluten-free if you use gluten-free baking powder."
+      }
+    ]
+  },
+  "coconut-rice-flour-cake": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "A tender, lightly sweet gluten-free cake made with rice flour and coconut milk.",
+        "to": "A tender, lightly sweet cake made with rice flour and coconut milk."
+      },
+      {
+        "in": "text",
+        "from": "Vegetarian and gluten-free.",
+        "to": "Vegetarian; gluten-free if you use gluten-free baking powder."
+      }
+    ]
+  },
+  "cardamom-almond-cake": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "Vegetarian and gluten-free.",
+        "to": "Vegetarian; gluten-free if you use gluten-free baking powder."
+      }
+    ]
+  },
+  "black-sesame-rice-flour-muffins": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "Nutty gluten-free muffins with ground black sesame and a soft crumb.",
+        "to": "Nutty muffins with ground black sesame and a soft crumb."
+      },
+      {
+        "in": "text",
+        "from": "Vegetarian and gluten-free.",
+        "to": "Vegetarian; gluten-free if you use gluten-free baking powder."
+      }
+    ]
+  },
+  "sweet-potato-almond-brownies": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "Fudgy gluten-free squares with mashed sweet potato, almond meal and cocoa.",
+        "to": "Fudgy squares with mashed sweet potato, almond meal and cocoa."
+      },
+      {
+        "in": "text",
+        "from": "Vegetarian and gluten-free.",
+        "to": "Vegetarian; gluten-free if you use gluten-free baking powder."
+      }
+    ]
+  },
+  "lemon-butter-mochi-squares": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "Vegetarian and gluten-free.",
+        "to": "Vegetarian; gluten-free if you use gluten-free baking powder."
+      }
+    ]
+  },
+  "haupia-coconut-pudding-squares": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "Vegan and gluten-free.",
+        "to": "Vegan; gluten-free if you use cornflour labelled gluten-free."
+      }
+    ]
+  },
+  "soy-milk-pudding-cups-with-orange-syrup": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "Vegan and gluten-free.",
+        "to": "Vegan; gluten-free if you use cornflour labelled gluten-free."
+      }
+    ]
+  },
+  "thai-coconut-cream-pudding-cups-with-lime": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "Vegan and gluten-free.",
+        "to": "Vegan; gluten-free if you use cornflour labelled gluten-free."
+      }
+    ]
+  },
+  "vietnamese-steamed-rice-honeycomb-cake": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "Vegan and gluten-free.",
+        "to": "Vegan; gluten-free if you use gluten-free baking powder."
+      }
+    ]
+  },
+  "bibingka-baked-rice-cakes-with-cheddar": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "Vegetarian and gluten-free.",
+        "to": "Vegetarian; gluten-free if you use gluten-free baking powder."
+      }
+    ]
+  },
+  "salt-and-pepper-squid-cantonese-style-with-rice": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "Naturally gluten-free.",
+        "to": "Gluten-free if you use cornflour labelled gluten-free."
+      }
+    ]
+  },
+  "flourless-orange-almond-squares": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "A moist gluten-free cake made with whole boiled oranges and almond meal.",
+        "to": "A moist cake made with whole boiled oranges and almond meal."
+      }
+    ]
+  },
+  "whole-orange-gluten-free-tea-cake": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "A moist gluten-free cake made from whole simmered oranges and ground almonds.",
+        "to": "A moist cake made from whole simmered oranges and ground almonds."
+      }
+    ]
+  },
+  "orange-polenta-cake-wedges": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "A rustic gluten-free-style cake of polenta and almond meal with orange syrup.",
+        "to": "A rustic cake of polenta and almond meal with orange syrup."
+      }
+    ]
+  },
+  "mini-pavlova-nests": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "Gluten free.",
+        "to": "Gluten-free if you use cornflour labelled gluten-free."
+      }
+    ]
+  },
+  "quesadilla-salvadorena": {
+    "replace": [
+      {
+        "in": "text",
+        "from": "Gluten-free.",
+        "to": "Gluten-free if you use gluten-free baking powder."
+      }
+    ]
+  }
+}

@@ -807,8 +807,8 @@
       ],
       "notes": [
         "Snack. Vegetarian. Per serving: 2 triangles.",
-        "Food safety: wash hands and the bench after handling raw egg.",
-        "Best the same day; reheat in a 160°C fan oven for 5 minutes."
+        "Best the same day; reheat in a 160°C fan oven for 5 minutes.",
+        "Food safety: wash hands and the bench after handling raw egg. Reheat leftovers until steaming hot right through."
       ],
       "nutrition": {
         "kcal": 318,
@@ -922,7 +922,7 @@
     {
       "id": "whole-orange-gluten-free-tea-cake",
       "title": "Whole Orange Gluten-Free Tea Cake",
-      "summary": "A moist gluten-free cake made from whole simmered oranges and ground almonds.",
+      "summary": "A moist cake made from whole simmered oranges and ground almonds.",
       "cuisine": "greek",
       "mealTypes": [
         "snack"
@@ -934,6 +934,7 @@
       "onePot": false,
       "diets": [
         "vegetarian",
+        "no-gluten",
         "no-dairy"
       ],
       "ingredients": [
@@ -943,7 +944,7 @@
             "250g ground almonds",
             "180g caster sugar",
             "4 eggs",
-            "1 tsp baking powder"
+            "1 tsp gluten-free baking powder"
           ]
         }
       ],
@@ -955,7 +956,7 @@
         "Cool in the tin, then cut into 12 slices."
       ],
       "notes": [
-        "Snack. Vegetarian. Gluten-free if the baking powder is gluten-free. Per serving: 1 slice.",
+        "Snack. Vegetarian and gluten-free. Per serving: 1 slice.",
         "Food safety: wash hands and the bench after handling raw egg.",
         "Keeps in the fridge for up to 4 days; it is better the next day."
       ],

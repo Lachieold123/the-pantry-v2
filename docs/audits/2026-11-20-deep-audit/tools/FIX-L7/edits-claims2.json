@@ -1,0 +1,20 @@
+{
+  "cardamom-almond-cake": { "replace": [{ "in": "summary", "from": "A moist gluten-free almond cake", "to": "A moist almond cake" }] },
+  "rice-flour-crepes-with-cream-cheese-and-warm-berries": { "replace": [{ "in": "summary", "from": "Delicate gluten-free crepes", "to": "Delicate crepes" }] },
+  "super-seed-crackers": { "replace": [{ "in": "summary", "from": "Thin, crisp gluten-free crackers", "to": "Thin, crisp crackers" }] },
+  "gluten-free-tamari-beef-and-broccoli": { "replace": [{ "in": "items", "from": "1 tbsp cornflour", "to": "1 tbsp gluten-free cornflour" }] },
+  "gluten-free-lemon-polenta-squares": { "replace": [{ "in": "items", "from": "1 tsp baking powder", "to": "1 tsp gluten-free baking powder" }] },
+  "whole-orange-gluten-free-tea-cake": {
+    "replace": [
+      { "in": "items", "from": "1 tsp baking powder", "to": "1 tsp gluten-free baking powder" },
+      { "in": "notes", "from": "Vegetarian. Gluten-free if the baking powder is gluten-free.", "to": "Vegetarian and gluten-free." }
+    ]
+  },
+  "gluten-free-buckwheat-pancakes-with-cinnamon-apple": { "replace": [{ "in": "items", "from": "1 tsp baking powder", "to": "1 tsp gluten-free baking powder" }] },
+  "vegan-chocolate-avocado-mousse-cups": {
+    "replace": [
+      { "in": "items", "from": "20g dark chocolate, grated", "to": "20g dairy-free dark chocolate, grated" },
+      { "in": "notes", "from": " Check that the chocolate is dairy free.", "to": " Check the chocolate label says dairy-free." }
+    ]
+  }
+}

@@ -46,6 +46,12 @@ const NEW: [string, string, string, IngredientGroup[], string[]][] = [
   ['teff-flour', 'teff flour', 'plain-flour', [], ['teff', 'ivory teff flour', 'brown teff flour']],
   ['maize-flour', 'maize flour', 'plain-flour', [], ['maize meal', 'white maize flour', 'unga', 'mealie meal', 'mielie meal']],
   ['dried-sweet-pepper', 'dried sweet pepper', 'capsicum', [], ['dried choricero pepper', 'choricero pepper', 'choricero', 'peperoni cruschi', 'peperone crusco', 'dried crusco pepper', 'cruschi pepper', 'nora pepper', 'ñora pepper']],
+  // Second shift: Australian "cornflour" is often wheaten, so plain cornflour keeps gluten; a line that names maize or
+  // gluten-free cornflour gets this one.
+  ['maize-cornflour', 'maize cornflour', 'cornflour', [], ['gluten-free cornflour', 'maize starch', 'gluten-free maize cornflour']],
+  // Bottled stir-fry sauce matched frozen chips ("fry"). Most are soy sauce based and many carry oyster sauce; the label decides.
+  ['stir-fry-sauce', 'stir-fry sauce', 'soy-sauce', ['gluten', 'soy', 'shellfish'], ['stir fry sauce', 'bottled stir-fry sauce']],
+  ['dairy-free-dark-chocolate', 'dairy-free dark chocolate', 'dark-chocolate', ['soy'], ['vegan dark chocolate', 'dairy-free chocolate', 'vegan chocolate']],
 ];
 const ADD: Record<string, string[]> = {
   'pork-shoulder': ['pork scotch fillet'],

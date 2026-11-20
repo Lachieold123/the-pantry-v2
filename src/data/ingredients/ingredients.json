@@ -9022,5 +9022,43 @@
       "mielie meal"
     ],
     "groups": []
+  },
+  {
+    "id": "maize-cornflour",
+    "name": "maize cornflour",
+    "aisle": "baking",
+    "aliases": [
+      "gluten-free cornflour",
+      "maize starch",
+      "gluten-free maize cornflour"
+    ],
+    "groups": []
+  },
+  {
+    "id": "dairy-free-dark-chocolate",
+    "name": "dairy-free dark chocolate",
+    "aisle": "baking",
+    "aliases": [
+      "vegan dark chocolate",
+      "dairy-free chocolate",
+      "vegan chocolate"
+    ],
+    "groups": [
+      "soy"
+    ]
+  },
+  {
+    "id": "stir-fry-sauce",
+    "name": "stir-fry sauce",
+    "aisle": "sauces-oils",
+    "aliases": [
+      "stir fry sauce",
+      "bottled stir-fry sauce"
+    ],
+    "groups": [
+      "gluten",
+      "soy",
+      "shellfish"
+    ]
   }
 ]
