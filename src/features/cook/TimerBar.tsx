@@ -19,13 +19,13 @@ export function TimerBar({ timers, now, onDismiss }: { timers: CookTimer[]; now:
       {timers.map((t) => {
         const left = secondsLeft(t, now);
         return (
-          <View
-            key={t.id}
-            style={[styles.timer, left === 0 && styles.done]}
-            accessibilityLiveRegion={left === 0 ? 'assertive' : 'none'}
-            testID={`cook-timer-${t.id}`}
-          >
-            <View style={{ flex: 1 }}>
+          // No live region: useAnnounce above already says "Time's up", and Android read it twice (UX-8).
+          <View key={t.id} style={[styles.timer, left === 0 && styles.done]} testID={`cook-timer-${t.id}`}>
+            <View
+              style={{ flex: 1 }}
+              accessible
+              accessibilityLabel={`${t.label}, step ${t.stepIndex + 1}, ${left === 0 ? 'time’s up' : `${formatCountdown(left)} left`}`}
+            >
               <Text variant="meta" colour={left === 0 ? 'onAccent' : 'inkMuted'}>
                 Step {t.stepIndex + 1} · {t.label}
               </Text>
@@ -35,7 +35,7 @@ export function TimerBar({ timers, now, onDismiss }: { timers: CookTimer[]; now:
             </View>
             <IconButton
               icon="close"
-              label={left === 0 ? 'Dismiss timer' : 'Cancel timer'}
+              label={`${left === 0 ? 'Dismiss' : 'Cancel'} ${t.label} timer`}
               onPress={() => onDismiss(t.id)}
               colour={left === 0 ? 'onAccent' : 'inkMuted'}
               testID={`cook-timer-${t.id}-dismiss`}

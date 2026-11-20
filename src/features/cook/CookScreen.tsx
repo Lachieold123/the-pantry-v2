@@ -14,12 +14,14 @@ import { INGREDIENTS, KITCHEN } from '@/data/catalogue/catalogue';
 import { cookable } from '@/domain/cupboard/cookable';
 import { clampServings } from '@/domain/recipes/servings';
 import { cupboardIds } from '@/domain/cupboard/match';
+import { leaveWarning } from '@/domain/cook/timers';
 import { goBack } from '@/lib/navigation';
 import { ingredientName } from '@/store/cookable';
 import { useCookLog } from '@/store/cookLog';
 import { useCupboard } from '@/store/cupboard';
 import { usePreferences } from '@/store/preferences';
 import { useRecipe } from '@/store/recipeBook';
+import { ActionSheet } from '@/ui/patterns/ActionSheet';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { announce } from '@/ui/primitives/accessibility';
 import { useToast } from '@/ui/patterns/Toast';
@@ -71,7 +73,12 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
     () => (fromCupboard ? new Set([...cupboard, ...fromCupboard.swaps.map((s) => s.need)]) : cupboard),
     [cupboard, fromCupboard],
   );
+  const addToCupboard = useCupboard((s) => s.add);
   const { timers, now, start, dismiss } = useCookTimers(recipe?.title ?? '');
+  /** Close or Done, held while the cook says whether to stop running timers (F-6). */
+  const [leaving, setLeaving] = useState<(() => void) | undefined>(undefined);
+  const warning = leaveWarning(timers, now);
+  const guard = (action: () => void) => () => (warning ? setLeaving(() => action) : action());
 
   if (!recipe) {
     return (
@@ -116,7 +123,14 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
       const event = markCooked(recipe.id);
       for (const i of usedUp) removeFromCupboard(i);
       goBack(router);
-      toast({ message: `${recipe.title} cooked. Nice work.`, undo: () => undoCooked(event.id) });
+      toast({
+        message: `${recipe.title} cooked. Nice work.`,
+        // Undo puts back what "Used anything up?" took out of the cupboard, not just the cook log (F-7).
+        undo: () => {
+          undoCooked(event.id);
+          if (usedUp.length) addToCupboard(usedUp, 'manual');
+        },
+      });
     });
   const done = () => (used.length ? setAskUsedUp(true) : finish([]));
 
@@ -126,7 +140,7 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
         title={recipe.title}
         step={step}
         total={total}
-        onClose={() => goBack(router)}
+        onClose={guard(() => goBack(router))}
         onIngredients={() => setShowIngredients(true)}
       />
       <View style={styles.timers}>
@@ -149,7 +163,7 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
           </ScrollView>
         </Pressable>
       </GestureDetector>
-      <CookFooter first={step === 0} last={last} onPrevious={previous} onNext={next} onDone={done} />
+      <CookFooter first={step === 0} last={last} onPrevious={previous} onNext={next} onDone={guard(done)} />
       <CookIngredientsSheet
         visible={showIngredients}
         recipe={recipe}
@@ -164,6 +178,21 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
         nameOf={(i) => capitalise(ingredientName(i))}
         onFinish={finish}
         onCancel={() => setAskUsedUp(false)}
+      />
+      <ActionSheet
+        visible={leaving !== undefined}
+        onClose={() => setLeaving(undefined)}
+        title={warning ?? 'Your timers have finished.'}
+        actions={[
+          {
+            label: 'Leave anyway',
+            icon: 'close',
+            destructive: true,
+            testID: 'cook-leave',
+            // The sheet has already cleared `leaving` by now; this render's copy still holds the action.
+            onPress: () => leaving?.(),
+          },
+        ]}
       />
     </View>
   );

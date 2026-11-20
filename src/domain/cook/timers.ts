@@ -29,3 +29,15 @@ export function formatCountdown(seconds: number): string {
   const ss = String(s).padStart(2, '0');
   return h > 0 ? `${h}:${String(m).padStart(2, '0')}:${ss}` : `${m}:${ss}`;
 }
+
+/**
+ * What Cook Mode asks before closing or finishing while timers still count
+ * down: leaving stops them and their alerts, so it never happens silently (F-6).
+ */
+export function leaveWarning(timers: readonly CookTimer[], now: number): string | undefined {
+  const running = timers.filter((t) => !isFinished(t, now));
+  const [only] = running;
+  if (!only) return undefined;
+  if (running.length > 1) return `${running.length} timers are still running. Leaving stops them.`;
+  return `${formatCountdown(secondsLeft(only, now))} left on your timer. Leaving stops it.`;
+}

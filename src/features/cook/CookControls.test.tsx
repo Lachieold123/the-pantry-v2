@@ -69,3 +69,20 @@ describe('TimerBar', () => {
     spoken.mockRestore();
   });
 });
+
+describe('TimerBar for VoiceOver (UX-8)', () => {
+  it('reads each timer as one element and says which one Cancel stops', async () => {
+    const a = { id: 'a', label: '20 minutes', stepIndex: 2, seconds: 1200, endsAt: 1_200_000 };
+    const b = { id: 'b', label: '5 minutes', stepIndex: 3, seconds: 300, endsAt: 300_000 };
+    await render(<TimerBar timers={[a, b]} now={0} onDismiss={jest.fn()} />);
+    expect(screen.getByLabelText('20 minutes, step 3, 20:00 left')).toBeTruthy();
+    expect(screen.getByRole('button', { name: 'Cancel 20 minutes timer' })).toBeTruthy();
+    expect(screen.getByRole('button', { name: 'Cancel 5 minutes timer' })).toBeTruthy();
+  });
+  it('says when one is up, and Dismiss names it', async () => {
+    const a = { id: 'a', label: '20 minutes', stepIndex: 2, seconds: 1200, endsAt: 1_000 };
+    await render(<TimerBar timers={[a]} now={2_000} onDismiss={jest.fn()} />);
+    expect(screen.getByLabelText('20 minutes, step 3, time’s up')).toBeTruthy();
+    expect(screen.getByRole('button', { name: 'Dismiss 20 minutes timer' })).toBeTruthy();
+  });
+});
