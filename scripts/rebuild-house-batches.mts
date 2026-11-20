@@ -42,7 +42,8 @@ function pendingFix(r: Recipe, fix: Fix | undefined): Fix | undefined {
   const lines = allLines(r).map((l) => l.raw);
   const steps = r.steps.map((s) => s.text);
   const todo = (texts: string[]) => (x: { from: string; to: string }) =>
-    texts.some((t) => t.includes(x.from)) && !texts.some((t) => t.includes(x.to));
+    // A "to" that contains its "from" can't be told apart by the "from" alone.
+    texts.some((t) => t.includes(x.from)) && !(x.to.includes(x.from) && texts.some((t) => t.includes(x.to)));
   const out = {
     ingredients: (fix.ingredients ?? []).filter(todo(lines)),
     steps: (fix.steps ?? []).filter(todo(steps)),
