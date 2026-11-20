@@ -9,7 +9,7 @@ import { fileURLToPath } from 'node:url';
 
 import { buildIngredientIndex, type IngredientDef } from '../src/domain/ingredients/database.ts';
 import type { Recipe } from '../src/domain/recipes/types.ts';
-import { dietTextProblems, orLines } from './recipe-text-checks.mts';
+import { artefactProblems, claimProblems, dietTextProblems, orLines } from './recipe-text-checks.mts';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const recipes = JSON.parse(readFileSync(join(root, 'src/data/catalogue/recipes.json'), 'utf8')) as Recipe[];
@@ -27,6 +27,11 @@ for (const r of recipes) {
     index.match,
   ))
     problems.push(`${r.id} (${r.source}): one ingredient per line, put the alternative in brackets: "${l}"`);
+  const counted = r.ingredientGroups.flatMap((g) => g.items).filter((l) => !l.optional);
+  const groups = new Set(counted.flatMap((l) => (l.ingredientId ? (index.byId.get(l.ingredientId)?.groups ?? []) : [])));
+  for (const p of claimProblems([r.title, r.summary ?? '', ...(r.notes ?? [])], groups)) problems.push(`${r.id} (${r.source}): ${p}`);
+  for (const p of artefactProblems([r.title, r.summary ?? '', ...counted.map((l) => l.raw), ...r.steps.map((s) => s.text)]))
+    problems.push(`${r.id} (${r.source}): ${p}`);
 }
 console.log(`Recipe text: ${recipes.length} recipes, ${problems.length} problem(s).`);
 for (const p of problems) console.log(`  ✗ ${p}`);

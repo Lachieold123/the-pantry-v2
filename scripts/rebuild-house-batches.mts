@@ -48,6 +48,7 @@ function pendingFix(r: Recipe, fix: Fix | undefined): Fix | undefined {
     ingredients: (fix.ingredients ?? []).filter(todo(lines)),
     steps: (fix.steps ?? []).filter(todo(steps)),
     addNotes: (fix.addNotes ?? []).filter((n) => !(r.notes ?? []).includes(n)),
+    dropNotes: (fix.dropNotes ?? []).filter((n) => (r.notes ?? []).includes(n)),
     addSteps: (fix.addSteps ?? []).filter((a) => !steps.includes(a.text)),
     addIngredients: (fix.addIngredients ?? []).filter((a) => !lines.includes(a.line)),
   };

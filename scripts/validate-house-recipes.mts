@@ -22,9 +22,10 @@ import { buildIngredientIndex, normaliseWords, type IngredientDef, type Ingredie
 import { parseIngredientLine } from '../src/domain/ingredients/parse.ts';
 import type { IngredientLine } from '../src/domain/ingredients/types.ts';
 import { deriveDiets } from '../src/domain/recipes/diets.ts';
-import { CUISINES, DIET_TAGS, DIFFICULTIES, MEAL_TYPES, SEASONS, type Recipe } from '../src/domain/recipes/types.ts';
+import { allLines, CUISINES, DIET_TAGS, DIFFICULTIES, MEAL_TYPES, SEASONS, type Recipe } from '../src/domain/recipes/types.ts';
 import { validateRecipe } from '../src/domain/recipes/validate.ts';
 import { batchFiles, HOUSE_DIR, readBatch, toRecipe, type HouseRecipe } from './house-recipes.mts';
+import { artefactProblems, claimProblems, safetyProblems } from './recipe-text-checks.mts';
 import { estimateKcalPerServe, estimateMacrosPerServe } from './nutrition-estimate.mts';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -140,9 +141,9 @@ const ALLERGENS: Record<string, { groups: IngredientGroup[]; words: RegExp; exce
   gluten: {
     groups: ['gluten'],
     words:
-      /\b(flour|bread|breadcrumbs?|panko|pasta|spaghetti|linguine|penne|fettuccine|rigatoni|macaroni|orzo|noodles?|soy sauce|shoyu|beer|couscous|bulgur|burghul|barley|rye|semolina|wheat|seitan|pastry|filo|phyllo|roti|naan|pita|tortillas?|dumpling wrappers?|wonton|malt|hoisin|oyster sauce|udon|ramen|freekeh|farro|spelt|crackers?|biscuits?|oats|miso|worcestershire|kecap)\b/i,
+      /\b(flour|bread|breadcrumbs?|panko|pasta|spaghetti|linguine|penne|fettuccine|rigatoni|macaroni|orzo|noodles?|soy sauce|shoyu|beer|couscous|bulgur|burghul|barley|rye|semolina|wheat|seitan|pastry|filo|phyllo|roti|naan|pita|tortillas?|dumpling wrappers?|wonton|malt|hoisin|oyster sauce|udon|ramen|freekeh|farro|spelt|crackers?|biscuits?|oats|miso|worcestershire|kecap|sponge|savoiardi|lady ?fingers?|vermicelli|puffed rice|rice bubbles|corn ?flakes|paratha|black bean sauce|shaoxing|stock cubes?|stock powder|brioche)\b/i,
     except:
-      /\b(rice flour|rice noodles?|glass noodles?|rice vermicelli|vermicelli rice|chickpea flour|besan|gram flour|tapioca flour|potato flour|cassava flour|coconut flour|almond flour|buckwheat( flour)?|prawn crackers?|corn tortillas?|masa|teff|sweet potato noodles?|mung bean noodles?|shirataki|gluten-free|tamari|rice paper|sorghum flour|millet flour|wattleseed flour|cooking the noodles)\b/gi,
+      /\b(teff flour|maize flour|gluten-free \w+( \w+)?|rice flour|rice noodles?|glass noodles?|rice vermicelli|vermicelli rice|chickpea flour|besan|gram flour|tapioca flour|potato flour|cassava flour|coconut flour|almond flour|buckwheat( flour)?|prawn crackers?|corn tortillas?|masa|teff|sweet potato noodles?|mung bean noodles?|shirataki|gluten-free|tamari|rice paper|sorghum flour|millet flour|wattleseed flour|cooking the noodles|(rice|tapioca|bean|sweet potato|mung bean|glass) vermicelli|gluten-free \w+( \w+)?)\b/gi,
   },
   dairy: {
     groups: ['dairy'],
@@ -165,7 +166,7 @@ const ALLERGENS: Record<string, { groups: IngredientGroup[]; words: RegExp; exce
   fish: {
     groups: ['fish'],
     words:
-      /\b(fish|salmon|tuna|anchov(y|ies)|sardines?|cod|snapper|barramundi|mackerel|trout|bonito|katsuobushi|dashi|fish sauce|worcestershire)\b/i,
+      /\b(fish|salmon|tuna|anchov(y|ies)|sardines?|cod|snapper|barramundi|mackerel|trout|bonito|katsuobushi|dashi|fish sauce|worcestershire|kingfish|yellowtail|whiting|flathead|hake|haddock|bream|tilapia|swordfish|john dory|basa|herring|kippers?|halibut|monkfish|ling)\b/i,
     except: /\b(fish slice|kombu dashi)\b/gi,
   },
   soy: {
@@ -194,63 +195,23 @@ const HARD_CHEESE = /\b(parmesan|parmigiano|grana padano|pecorino|gruy[eè]re|co
 const VEG_RENNET = /\bvegetarian\b|\bnon-animal rennet\b|\bmicrobial rennet\b/i;
 
 const MEAT_WORDS =
-  /\b(chicken|pork|beef|lamb|veal|mince|pancetta|bacon|ham|sausages?|prosciutto|duck|steak|brisket|chorizo|salami|lard|gelatine?)\b/i;
-const MEAT_EXCEPT = /\b(vegetarian sausages?|plant-based mince|mushroom mince|(fish|salmon|tuna|swordfish|cauliflower) steaks?)\b/gi;
+  /\b(chicken|pork|beef|lamb|veal|mince|pancetta|bacon|ham|sausages?|prosciutto|duck|steak|brisket|chorizo|salami|lard|gelatine?|turkey|venison|kangaroo|rabbit|quail|boerewors|merguez|kransky|kielbasa|pepperoni|mortadella|guanciale|speck|bratwurst)\b/i;
+const MEAT_EXCEPT =
+  /\b(vegetarian sausages?|plant-based mince|mushroom mince|(fish|salmon|tuna|swordfish|cauliflower|kingfish) steaks?|(vegetarian|vegan|plant-based) (turkey|pepperoni|kransky)|turkey berr(y|ies))\b/gi;
 
-// Food safety (Australian guidance): poultry and mince/sausages to 75°C, fresh pork to 70°C,
-// whole cuts and braises carry a temperature, seafood a cooked-through cue.
-const RAW_POULTRY = new Set(
-  defs
-    .filter((d) => d.groups.includes('poultry'))
-    .map((d) => d.id)
-    .filter((id) => !['cooked-chicken', 'duck-fat', 'pate', 'chicken-stock'].includes(id)),
-);
-const MINCE = new Set([
-  'beef-mince',
-  'lamb-mince',
-  'pork-mince',
-  'chicken-mince',
-  'turkey-mince',
-  'italian-sausage',
-  'pork-sausage',
-  'bratwurst',
-]);
-const FRESH_PORK = new Set(['pork-belly', 'pork-fillet', 'pork-loin', 'pork-shoulder', 'pork-ribs', 'pork-ear']);
-const WHOLE_CUTS = new Set([
-  'beef-eye-fillet',
-  'beef-rib-eye',
-  'beef-rump',
-  'beef-sirloin',
-  'beef-steak',
-  'skirt-steak',
-  'picanha',
-  'lamb-cutlet',
-  'veal-escalope',
-  'beef-brisket',
-  'beef-chuck',
-  'beef-shin',
-  'oxtail',
-  'veal-shank',
-  'lamb-shoulder',
-  'lamb-leg',
-  'beef-topside',
-  'lamb-mince',
-]);
-const RAW_SEAFOOD = new Set([
-  'salmon',
-  'fresh-tuna',
-  'white-fish',
-  'calamari',
-  'clams',
-  'crab',
-  'lobster',
-  'mussels',
-  'octopus',
-  'prawn',
-  'scallops',
-]);
-const RAW_EGG =
-  /\b(raw (egg|yolk)s?|uncooked egg|steak tartare|eggnog|tiramisu|mousse|homemade (mayonnaise|mayo|aioli)|runny|jammy|soft-boiled|soft boiled|poach(ed)? eggs?|fried eggs?|just set)\b/i;
+/** The shared food-safety checks (recipe-text-checks.mts) for a built recipe, house or converted. */
+function safetyFor(r: Recipe): string[] {
+  const lines = allLines(r).filter((l) => !l.optional);
+  return safetyProblems({
+    ids: new Set(lines.flatMap((l) => (l.ingredientId ? [l.ingredientId] : []))),
+    isPoultry: (id) => def(id)?.groups.includes('poultry') ?? false,
+    lineText: lines.map((l) => l.raw.replace(/\(([^)]*)\)/g, ' ')).join(' | '),
+    title: r.title,
+    summary: r.summary ?? '',
+    steps: r.steps.map((s) => s.text),
+    notes: r.notes ?? [],
+  });
+}
 
 const COOK_VERB = /\b(cook|simmer|bake|roast|fry|boil|grill|steam|poach|sear|stir-fry|braise|toast|sauté|saute|char|brown)\b/i;
 const CUE =
@@ -462,28 +423,8 @@ function checkRecipe(h: HouseRecipe, file: string, seen: Map<string, string>): v
       `"${HARD_CHEESE.exec(text)?.[0]}" is usually made with animal rennet: not vegetarian (D-053). Use "vegetarian hard cheese" or drop it`,
     );
 
-  // 5. Food safety.
-  const method = [...h.steps, ...(h.notes ?? [])].join(' ');
-  const safetyNote = (h.notes ?? []).some((x) => /^Food safety/.test(x));
-  const need = (what: string, cue: RegExp, cueLabel: string) => {
-    if (!safetyNote) fail('food-safety', `${what}: needs a note starting "Food safety"`);
-    if (!cue.test(method)) fail('food-safety', `${what}: no ${cueLabel} in the steps or notes`);
-  };
-  if ([...ids].some((i) => RAW_POULTRY.has(i))) need('raw poultry', /75\s?°C/, '75°C');
-  if ([...ids].some((i) => MINCE.has(i))) need('mince or sausage', /75\s?°C/, '75°C');
-  if ([...ids].some((i) => FRESH_PORK.has(i))) need('fresh pork', /7[05]\s?°C/, '70°C (or 75°C)');
-  if ([...ids].some((i) => WHOLE_CUTS.has(i) && !MINCE.has(i)))
-    need('beef, lamb or veal cut', /\d\s?°C(?! oven)/, 'internal temperature in °C');
-  if ([...ids].some((i) => RAW_SEAFOOD.has(i)))
-    need('raw seafood', /opaque|flakes|63\s?°C|shells? (have |has )?open/i, 'opaque / flakes / 63°C cue');
-  if (ids.has('egg') && RAW_EGG.test(method) && !safetyNote) fail('food-safety', 'raw or soft egg: needs a note starting "Food safety"');
-  if (
-    /\b(leftover|cooked and (cooled|chilled)|day-old) rice\b|\bfried rice\b/i.test(`${method} ${text} ${h.title}`) &&
-    !/within (1|an|one) hour/i.test(method)
-  )
-    fail('food-safety', 'cooked rice: say to cool and refrigerate it within an hour');
-  if (ids.has('kidney-beans') && /dried/i.test(text) && !/boil[^.]*10 min/i.test(method))
-    fail('food-safety', 'dried kidney beans need a hard 10-minute boil');
+  // 5. Food safety, and the recipe's own claims and words (shared with converted recipes below).
+  for (const p of safetyFor(recipe)) fail('food-safety', p);
 
   // 6. Times.
   const total = h.prepMinutes + h.cookMinutes;
@@ -588,6 +529,24 @@ function checkRecipe(h: HouseRecipe, file: string, seen: Map<string, string>): v
 const seen = new Map<string, string>();
 for (const { file, r } of targetRecipes) checkRecipe(r, file, seen);
 
+// The converted recipes (in the catalogue, not in any batch) ship too, so a full run puts them through the
+// same safety, claim and wording checks (L7 FOOD-4, FOOD-7). Their lines are already linked in recipes.json.
+let convertedChecked = 0;
+if (!fileArgs.length) {
+  const batchIds = new Set(batchFiles(root).flatMap((f) => readBatch(f).recipes.map((x) => x.id)));
+  for (const r of catalogue.filter((x) => !batchIds.has(x.id))) {
+    current = { file: 'recipes.json (converted)', id: r.id };
+    convertedChecked++;
+    for (const p of safetyFor(r)) fail('food-safety', p);
+    const lines = allLines(r).filter((l) => !l.optional);
+    const groups = new Set(lines.flatMap((l) => def(l.ingredientId)?.groups ?? []));
+    for (const p of claimProblems([r.title, r.summary ?? '', ...(r.notes ?? [])], groups)) fail('claim', p);
+    for (const p of artefactProblems([r.title, r.summary ?? '', ...lines.map((l) => l.raw), ...r.steps.map((s) => s.text)])) fail('artefact', p);
+    const words = [r.title, r.summary ?? '', ...lines.map((l) => l.raw), ...r.steps.map((s) => s.text), ...(r.notes ?? [])].join('\n');
+    if (/\b\d+\s*°F\b|\bfahrenheit\b/i.test(words)) fail('style', 'Fahrenheit');
+  }
+}
+
 const failed = new Set(findings.filter((f) => f.level === 'fail').map((f) => f.id));
 const byCheck = (level: Finding['level']) =>
   Object.entries(
@@ -600,14 +559,14 @@ const byCheck = (level: Finding['level']) =>
     .join(', ');
 const out: string[] = [];
 out.push(
-  `Checked ${targetRecipes.length} recipe(s) in ${targets.map((f) => basename(f)).join(', ')} against ${known.length} existing titles.`,
+  `Checked ${targetRecipes.length} recipe(s) in ${targets.map((f) => basename(f)).join(', ')} against ${known.length} existing titles, and ${convertedChecked} converted recipe(s) for safety, claims and wording.`,
 );
 for (const f of findings) out.push(`${f.level === 'fail' ? 'FAIL' : 'warn'}  ${f.id}  [${f.check}] ${f.detail}`);
 out.push('');
 out.push(`Recipes failing, by check: ${byCheck('fail') || 'none'}`);
 out.push(`Recipes warned, by check: ${byCheck('warn') || 'none'}`);
 out.push(
-  `PASS ${targetRecipes.length - failed.size}/${targetRecipes.length}; ${findings.filter((f) => f.level === 'fail').length} failures, ${findings.filter((f) => f.level === 'warn').length} warnings`,
+  `PASS ${targetRecipes.length + convertedChecked - failed.size}/${targetRecipes.length + convertedChecked}; ${findings.filter((f) => f.level === 'fail').length} failures, ${findings.filter((f) => f.level === 'warn').length} warnings`,
 );
 if (reportPath) writeFileSync(isAbsolute(reportPath) ? reportPath : join(process.cwd(), reportPath), `${out.join('\n')}\n`);
 console.log(reportPath ? out.slice(-3).join('\n') : out.join('\n'));

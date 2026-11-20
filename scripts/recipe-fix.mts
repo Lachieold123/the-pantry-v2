@@ -17,6 +17,8 @@ export type Fix = {
   steps?: Replacement[];
   ingredients?: Replacement[];
   addNotes?: string[];
+  /** Exact notes to remove, e.g. an empty "Food safety: " note being replaced by a written one. */
+  dropNotes?: string[];
   /** `false` drops a photo that shows the wrong dish, so the recipe gets its plain cuisine tile instead. */
   image?: false;
   times?: { prepMinutes?: number; cookMinutes?: number };
@@ -115,7 +117,8 @@ export function applyFix(id: string, recipe: RawRecipe, fix: Fix | undefined, re
     report.applied(`${id} (add step)`);
   }
 
-  const notes = [...(recipe.notes ?? []), ...(fix.addNotes ?? [])];
+  const notes = [...(recipe.notes ?? []).filter((n) => !fix.dropNotes?.includes(n)), ...(fix.addNotes ?? [])];
+  fix.dropNotes?.forEach((n) => { if ((recipe.notes ?? []).includes(n)) report.applied(`${id} (drop note)`); });
   fix.addNotes?.forEach(() => report.applied(`${id} (note)`));
   for (const what of ['times', 'difficulty', 'servings'] as const) if (fix[what] !== undefined) report.applied(`${id} (${what})`);
 
