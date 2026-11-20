@@ -1,5 +1,6 @@
 // A list of actions in a small sheet (spec §4.15, the recipe "⋯" menu). Each
 // row closes the sheet, then acts, so the next screen opens cleanly.
+import { useEffect, useRef } from 'react';
 import { Pressable, View } from 'react-native';
 
 import { Icon, type IconName } from '@/ui/primitives/Icon';
@@ -14,6 +15,9 @@ type Props = { visible: boolean; onClose: () => void; title: string; actions: Sh
 
 export function ActionSheet({ visible, onClose, title, actions }: Props) {
   const styles = useStyles();
+  // Cleared if the screen goes first, so an action never runs on a screen that has gone (PERF-3).
+  const timer = useRef<ReturnType<typeof setTimeout>>(undefined);
+  useEffect(() => () => clearTimeout(timer.current), []);
   return (
     <ModalSheet visible={visible} onClose={onClose} title={title}>
       {actions.map((a) => (
@@ -25,7 +29,7 @@ export function ActionSheet({ visible, onClose, title, actions }: Props) {
           onPress={() => {
             onClose();
             // Act once the sheet has gone: iOS can't present a new screen while a modal is still closing.
-            setTimeout(a.onPress, MOTION.slow);
+            timer.current = setTimeout(a.onPress, MOTION.slow);
           }}
           style={({ pressed }) => [styles.row, pressed && styles.pressed]}
         >

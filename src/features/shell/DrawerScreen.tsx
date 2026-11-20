@@ -5,7 +5,7 @@
 // dimmed by the scrim, as in v1. Nothing here may paint a full-screen
 // background: only the scrim and the panel.
 import { useRouter, type Href } from 'expo-router';
-import { useEffect, useState, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { Pressable, ScrollView, StyleSheet, useWindowDimensions, View } from 'react-native';
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -36,6 +36,9 @@ export function DrawerScreen() {
   const panelWidth = Math.max(CHROME.drawerMin, Math.min(CHROME.drawerMax, Math.round(width * 0.86)));
   const open = useSharedValue(0);
   const [closing, setClosing] = useState(false);
+  // Cleared if the menu goes some other way first, so it never goes back twice (PERF-3).
+  const timer = useRef<ReturnType<typeof setTimeout>>(undefined);
+  useEffect(() => () => clearTimeout(timer.current), []);
 
   useEffect(() => {
     open.set(withTiming(1, { duration: MOTION.standard }));
@@ -46,7 +49,7 @@ export function DrawerScreen() {
     if (closing) return;
     setClosing(true);
     open.set(withTiming(0, { duration: MOTION.quick }));
-    setTimeout(() => (then ? then() : goBack(router)), MOTION.quick);
+    timer.current = setTimeout(() => (then ? then() : goBack(router)), MOTION.quick);
   };
   const tab = (href: Href) => close(() => router.dismissTo(href));
   const page = (href: Href) => close(() => router.replace(href));
