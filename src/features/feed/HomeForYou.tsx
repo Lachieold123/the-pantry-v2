@@ -36,7 +36,7 @@ export function HomeForYou() {
 
   return (
     <View testID="home-for-you" style={{ marginBottom: HOME.afterCarousel, gap: SPACE.md }}>
-      <SectionHeader kicker="From other cooks" tone="accent" title="Picked for you" />
+      <SectionHeader kicker="From other cooks" tone="accent" title="What they’re cooking" />
       {/* Test builds can rank Home as one of the AI cooks (Settings has no switch for this). */}
       {INTERNAL_BUILD ? (
         <View style={{ flexDirection: 'row', alignItems: 'center', gap: SPACE.sm }}>

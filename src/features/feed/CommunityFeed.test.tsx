@@ -72,7 +72,7 @@ describe('the full feed', () => {
   it('says plainly when the server can’t be reached, and tries again', async () => {
     mockFeed.mockResolvedValueOnce({ ok: false, problem: 'offline' }).mockResolvedValueOnce(page(1, 1));
     await render(<CommunityFeedScreen />);
-    expect(await screen.findByText('Couldn’t reach the server. Check your connection and try again.')).toBeTruthy();
+    expect(await screen.findByText('Couldn’t reach The Pantry. Check you’re online and try again.')).toBeTruthy();
     await fireEvent.press(screen.getByTestId('feed-retry'));
     expect(await screen.findByText('Dish 1')).toBeTruthy();
   });

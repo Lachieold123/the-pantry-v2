@@ -101,7 +101,7 @@ export function TabBar({ state, navigation }: TabBarProps) {
           onPress={() => router.push('/post')}
           testID="tab-add"
           accessibilityRole="button"
-          accessibilityLabel="Share a dish you cooked"
+          accessibilityLabel="Add a plate you cooked"
           style={({ pressed }) => [styles.fab, pressed && styles.pressed]}
         >
           <Icon name="add" size={ICON.large} colour="bg" />

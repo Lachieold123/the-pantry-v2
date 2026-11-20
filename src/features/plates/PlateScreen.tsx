@@ -76,7 +76,7 @@ export function PlateScreen({ id }: { id: string | undefined }) {
           testID="plate-recipe"
         />
       ) : null}
-      <Text variant="meta">Only you can see your plates for now. Sharing with friends comes with accounts.</Text>
+      <Text variant="meta">Only you can see your plates.</Text>
       <Button
         label="Remove this plate"
         kind="quiet"

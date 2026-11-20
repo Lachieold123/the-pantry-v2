@@ -1,4 +1,4 @@
-// "Can cook now" and "Missing 1-2" for other cooks' recipes on Home: the
+// "Ready now" and "Nearly there" for other cooks' recipes on Home (Home's own words, UX-5): the
 // published recipes your cupboard fully covers, then the ones one or two
 // things short, each with what's missing. Rows, not cards, so they stay short.
 import { useState } from 'react';
@@ -19,8 +19,8 @@ export function HomeTiers({ canCook, missingFew, onOpen }: Props) {
   if (!canCook.length && !missingFew.length) return null;
   return (
     <View style={{ gap: SPACE.md }} testID="home-tiers">
-      <Tier title="Can cook now" list={canCook} onOpen={onOpen} testID="home-can-cook" />
-      <Tier title="Missing 1-2" list={missingFew} onOpen={onOpen} testID="home-missing-few" />
+      <Tier title="Ready now" list={canCook} onOpen={onOpen} testID="home-can-cook" />
+      <Tier title="Nearly there" list={missingFew} onOpen={onOpen} testID="home-missing-few" />
     </View>
   );
 }

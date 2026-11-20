@@ -184,10 +184,10 @@ appId: com.lachlanoldfield.thepantry
 - tapOn:
     id: "back"
 
-# The centre "+" opens "Share a dish"; Close with nothing typed just closes it.
+# The centre "+" opens "Add a plate"; Close with nothing typed just closes it.
 - tapOn:
     id: "tab-add"
-- assertVisible: "Share a dish"
+- assertVisible: "Add a plate"
 - assertVisible:
     id: "post-add-photo"
 - takeScreenshot: post-new

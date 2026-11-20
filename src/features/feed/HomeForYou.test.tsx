@@ -1,5 +1,5 @@
 // Home's ranked section from other cooks: followed cooks first with the reason
-// on the card, "Can cook now" and "Missing 1-2" from the cupboard, "Not for
+// on the card, "Ready now" and "Nearly there" from the cupboard, "Not for
 // me" hides a recipe, and every shown card is logged as an impression. The
 // server is mocked with rows shaped as it sends them.
 import { act, fireEvent, render, screen } from '@testing-library/react-native';
@@ -63,12 +63,16 @@ describe('Home, picked for you', () => {
     expect(screen.getByTestId('home-viewing-as').props.children).toMatch(/AI cook/);
   });
 
-  it('shows Can cook now and Missing 1-2 from the cupboard, with what is missing', async () => {
+  it('shows Ready now and Nearly there from the cupboard, with what is missing', async () => {
     useCupboard.setState({ items: ['egg', 'lemon'].map((ingredientId) => ({ ingredientId, addedAt: 1, source: 'manual' as const })) });
     await render(<HomeForYou />);
     expect(await screen.findByTestId(`home-can-cook-${EGGS.item.id}`)).toBeTruthy();
     expect(screen.getByTestId(`home-missing-few-${NEARLY.item.id}`)).toBeTruthy();
     expect(screen.getByText('Need leek')).toBeTruthy();
+    // Home's own words for the same ideas (UX-5), and no second "Picked for you" (Plan's ideas use it).
+    expect(screen.getByText('Ready now · 1')).toBeTruthy();
+    expect(screen.getByText('Nearly there · 1')).toBeTruthy();
+    expect(screen.queryByText('Picked for you')).toBeNull();
     expect(screen.getByText(/You can cook this now: 2\/2 ingredients/)).toBeTruthy();
   });
 

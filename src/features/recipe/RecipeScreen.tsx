@@ -91,7 +91,7 @@ export function RecipeScreen({ id }: { id: string }) {
       <Screen>
         <PushedHeader title="Recipe" />
         <EmptyState
-          title="We couldn't find that recipe"
+          title="We couldn’t find that recipe"
           body="It may have been removed or renamed."
           action={{ label: 'Browse recipes', onPress: () => router.navigate('/browse') }}
           testID="recipe-missing"

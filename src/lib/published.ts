@@ -104,7 +104,8 @@ export const photoUrl = (bucket: Bucket, path: string | undefined) => storageUrl
 
 /** Words for a problem, for screens to show. Raw error text never reaches people. */
 export function problemWords(problem: ReadProblem): string {
-  if (problem === 'offline') return 'Couldn’t reach the server. Check your connection and try again.';
+  // The same words as the household's offline line (UX-16).
+  if (problem === 'offline') return 'Couldn’t reach The Pantry. Check you’re online and try again.';
   if (problem === 'not-found') return 'This may have been taken down.';
   return 'Something went wrong loading this. Try again in a moment.';
 }

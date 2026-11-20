@@ -14,7 +14,7 @@ appId: com.lachlanoldfield.thepantry
     id: "tab-add"
 - assertVisible:
     id: "post-screen"
-- assertVisible: "Share a dish"
+- assertVisible: "Add a plate"
 - assertVisible: "Photos · 0 of \\d+"
 - assertNotVisible:
     id: "post-discard"
@@ -52,7 +52,7 @@ appId: com.lachlanoldfield.thepantry
     id: "post-link-carbonara"
 - assertVisible: "From the recipe: Carbonara"
 # Tap the plain header to close the keyboard (the page doesn't hide it on a swipe).
-- tapOn: "Share a dish"
+- tapOn: "Add a plate"
 # The preview card follows: the name, and the time and serves the link filled in.
 - scrollUntilVisible:
     element:

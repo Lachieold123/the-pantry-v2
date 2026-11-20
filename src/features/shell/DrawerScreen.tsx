@@ -105,7 +105,7 @@ export function DrawerScreen() {
             <DrawerRow icon="surprise" label="Surprise me" onPress={() => page('/surprise')} testID="menu-surprise" />
             <DrawerRow icon="plan" label="Plan" count={counts.planned} onPress={() => tab('/plan')} testID="menu-plan" />
             <DrawerRow icon="basket" label="Shopping list" onPress={() => tab('/list')} testID="menu-list" />
-            <DrawerRow icon="camera" label="Share a dish" onPress={() => page('/post')} testID="menu-post" />
+            <DrawerRow icon="camera" label="Add a plate" onPress={() => page('/post')} testID="menu-post" />
             <DrawerRow icon="add" label="Add a recipe" onPress={() => page('/my-recipe/edit')} testID="menu-add-recipe" />
           </Section>
           <View style={styles.rule}>

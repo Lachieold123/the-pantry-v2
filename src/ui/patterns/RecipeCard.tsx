@@ -22,7 +22,7 @@ type Props = {
   size: 'large' | 'medium' | 'row';
   onPress: () => void;
   /** Replaces the default "35 min · Serves 4" line. */
-  note?: string;
+  note?: string | undefined;
   /** Row only: the "01" rank beside the thumbnail. */
   rank?: number;
   saved?: boolean;

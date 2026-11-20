@@ -1,4 +1,5 @@
-// The centre "+": share a dish you cooked (v1's CreatePostModal, D-033).
+// The centre "+": add a plate, a photo log of something you cooked (v1's CreatePostModal, D-033).
+// It stays on this phone, so the words never promise sharing (UX-1).
 // Photo first, then what it is, a few words, time, serves and how hard, with
 // a preview of the card it makes. Linking one of our recipes fills the blanks.
 // Until accounts arrive (P9) a plate stays on this phone, and the page says so
@@ -78,9 +79,9 @@ export function PostScreen() {
       <View style={styles.bar}>
         <Button label="Close" kind="quiet" onPress={close} testID="post-close" />
         <Text variant="row" accessibilityRole="header">
-          Share a dish
+          Add a plate
         </Text>
-        <Button label="Share" kind="primary" onPress={submit} testID="post-share" />
+        <Button label="Save" kind="primary" onPress={submit} testID="post-share" />
       </View>
       {tried && problems.length ? (
         <Text variant="bodySmall" colour="danger" accessibilityLiveRegion="polite" testID="post-problems">
@@ -224,12 +225,12 @@ export function PostScreen() {
         <View style={{ width: PLATE.preview }}>
           <PlateCard photo={draft.photoUris[0]} title={draft.title.trim()} meta={plateMeta(draft)} testID="post-preview" />
         </View>
-        <Text variant="meta">Only you can see your plates for now. Sharing with friends comes with accounts.</Text>
+        <Text variant="meta">Only you can see your plates.</Text>
       </View>
 
       {draftHasContent(draft) ? (
         <Button
-          label="Discard this dish"
+          label="Discard this plate"
           kind="quiet"
           onPress={() => {
             discardDraft();

@@ -47,7 +47,7 @@ export function CupboardScreen() {
   // there, then see what that cooks.
   return (
     <Screen tab testID="cupboard-screen">
-      <TitleBlock kicker="Cupboard" title="What do you have?" subtitle="Tell us what you have. We'll show what you can cook tonight." />
+      <TitleBlock kicker="Cupboard" title="What do you have?" subtitle="We’ll show what you can cook tonight." />
 
       <View style={{ gap: SPACE.md }}>
         <SectionHeader kicker="Step 1" title="Add what you have" />

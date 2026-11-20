@@ -21,8 +21,8 @@ export function CookableList() {
   const { colours } = useTheme();
   const { ready, nearly } = useCookableNow();
   const sections = [
-    { key: 'ready', title: 'Ready to cook', data: ready },
-    { key: 'nearly', title: 'Need 1–2 things', data: nearly },
+    { key: 'ready', title: 'Ready now', data: ready },
+    { key: 'nearly', title: 'Nearly there', data: nearly },
   ].filter((s) => s.data.length > 0);
   return (
     <SectionList
@@ -54,7 +54,8 @@ export function CookableList() {
           recipe={item.recipe}
           image={RECIPE_IMAGES[item.recipe.id]}
           size="row"
-          note={needLine(item.result, ingredientName)}
+          // The "Ready now" heading already says it; only nearly-there rows say what's missing (UX-15).
+          note={item.result.missing.length ? needLine(item.result, ingredientName) : undefined}
           onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: item.recipe.id } })}
         />
       )}

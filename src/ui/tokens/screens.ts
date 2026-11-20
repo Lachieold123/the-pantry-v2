@@ -165,7 +165,7 @@ export const FEED = {
   endThreshold: 0.6,
   /** Home's ranked section: how many cards show at first, and how many each "Show more" adds. */
   rankedPage: 8,
-  /** Home's "Can cook now" and "Missing 1-2" lists: rows before "Show all", and the most "Show all" shows. */
+  /** Home's other-cooks "Ready now" and "Nearly there" lists: rows before "Show all", and the most "Show all" shows. */
   tierPreview: 3,
   tierMax: 12,
 } as const;
