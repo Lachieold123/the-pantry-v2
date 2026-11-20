@@ -1,5 +1,7 @@
 # Runs on every push and pull request: the app must typecheck, lint clean
 # and pass every test before anything reaches Lachlan's phone.
+# Actions are pinned to full commit SHAs (version in the comment); the node version comes from .nvmrc,
+# the same one eas.json pins for EAS builds.
 name: CI
 on:
   push:
@@ -11,10 +13,10 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
-          node-version: 22
+          node-version-file: .nvmrc
           cache: npm
       - run: npm ci --no-audit --no-fund
       # Typed routes come from Expo's dev server; without them a mistyped route still typechecks (REL-12).
@@ -31,7 +33,18 @@ jobs:
         env:
           TZ: Australia/Sydney
       - run: npm run test:ui
+      # A production build must never show draft recipes (K-29, REL2-11).
+      - run: node .github/scripts/check-eas-env.mjs
+      # Catalogue gates (D-053). None needs the old app or the network; catalogue:convert does, so it is not here.
       - run: npm run catalogue:check-ingredients
+      - run: npm run catalogue:check-house
+      - run: npm run catalogue:check-text
+      # Advisory (continue-on-error) for now: it reports about 990 failures today, mostly food-safety wording.
+      # Remove continue-on-error once the catalogue repair brings it to zero (REPO-6, REPO-8).
+      - run: npm run catalogue:validate -- --no-nutrition
+        continue-on-error: true
+      # The community feed upload: a recipe tagged vegan with parmesan in it fails here (REPO-2).
+      - run: npm run feed:verify
       # Packages must match the Expo SDK (REL-17, K-28). A native version change also needs
       # a new development build on the Mac.
       - run: npx expo install --check
@@ -40,10 +53,10 @@ jobs:
     # The web journey tests (D-040): the main paths, tapped through in light and dark.
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
-          node-version: 22
+          node-version-file: .nvmrc
           cache: npm
       - run: npm ci --no-audit --no-fund
       - run: npx playwright install --with-deps chromium
@@ -54,14 +67,15 @@ jobs:
       - run: npm run test:web
 
   database:
-    # Row security and the database functions, on a throwaway Postgres (PGlite), never the live project.
+    # Row security, sync and the database functions, on a throwaway Postgres (PGlite), never the live project.
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
-          node-version: 22
+          node-version-file: .nvmrc
+      # PGlite is pinned here, outside package.json, so the app's lockfile stays untouched (moving it into devDependencies is a dependency-step job).
       - run: mkdir -p /tmp/pg && cd /tmp/pg && npm init -y > /dev/null && npm i --no-audit --no-fund @electric-sql/pglite@0.3.7
-      - run: node --test supabase/tests/rules.test.mjs
+      - run: node --test supabase/tests/*.test.mjs
         env:
           PGLITE: /tmp/pg/node_modules/@electric-sql/pglite/dist/index.js
