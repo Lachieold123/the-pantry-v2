@@ -26,6 +26,8 @@ export type StorePackage = {
   identifier: string;
   packageType: string;
   product: {
+    /** The store's product id ("thepantry_pro_yearly"). */
+    identifier?: string;
     priceString: string;
     /** ISO 8601 ("P1Y", "P1M"); RevenueCat leaves it null for some products. */
     subscriptionPeriod?: string | null;
@@ -65,23 +67,39 @@ export function trialDaysOf(intro: StorePackage['product']['introPrice']): numbe
   return unit * intro.periodNumberOfUnits * Math.max(1, intro.cycles);
 }
 
-export function planFrom(pkg: StorePackage): Plan | undefined {
+/** RevenueCat's INTRO_ELIGIBILITY_STATUS_ELIGIBLE (the domain can't import the package: D-015). */
+const INTRO_ELIGIBLE = 2;
+/** RevenueCat's answer to "can this buyer have the introductory offer?", by product id. */
+export type IntroEligibility = Readonly<Record<string, { status: number } | undefined>>;
+
+/**
+ * A product's introductory offer is only a trial for this buyer when the store
+ * says they're eligible: someone who already had it would be charged at once
+ * (F-4). Unknown, ineligible or no answer all mean no trial wording.
+ */
+export function planFrom(pkg: StorePackage, eligibility: IntroEligibility = {}): Plan | undefined {
   const id = planIdOf(pkg);
   if (!id) return undefined;
+  const eligible = eligibility[pkg.product.identifier ?? '']?.status === INTRO_ELIGIBLE;
   return {
     id,
     price: pkg.product.priceString,
     // The package type already says which; the store's own period wins when it reports one.
     period: periodFromISO(pkg.product.subscriptionPeriod ?? '') ?? { unit: id === 'yearly' ? 'year' : 'month', count: 1 },
-    trialDays: trialDaysOf(pkg.product.introPrice),
+    trialDays: eligible ? trialDaysOf(pkg.product.introPrice) : undefined,
   };
 }
 
+/** The products whose introductory offer is free: the ones worth asking the store about. */
+export function trialProductIds(packages: readonly StorePackage[]): string[] {
+  return packages.flatMap((p) => (p.product.identifier && trialDaysOf(p.product.introPrice) ? [p.product.identifier] : []));
+}
+
 /** The plans on sale, yearly first, one of each. Anything else in the offering is ignored. */
-export function plansFrom(packages: readonly StorePackage[]): Plan[] {
+export function plansFrom(packages: readonly StorePackage[], eligibility: IntroEligibility = {}): Plan[] {
   const out: Plan[] = [];
   for (const pkg of packages) {
-    const plan = planFrom(pkg);
+    const plan = planFrom(pkg, eligibility);
     if (plan && !out.some((p) => p.id === plan.id)) out.push(plan);
   }
   return out.sort((a, b) => (a.id === b.id ? 0 : a.id === 'yearly' ? -1 : 1));

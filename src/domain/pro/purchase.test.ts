@@ -11,8 +11,10 @@ import {
   purchaseMessage,
   purchaseProblem,
   trialDaysOf,
+  trialProductIds,
   type StorePackage,
 } from './purchase';
+import { buyLabel } from './terms';
 
 const pkg = (
   identifier: string,
@@ -22,17 +24,31 @@ const pkg = (
 ): StorePackage => ({
   identifier,
   packageType,
-  product: { priceString, introPrice },
+  product: { identifier: `${identifier}-product`, priceString, introPrice },
 });
 const week = { price: 0, periodUnit: 'DAY', periodNumberOfUnits: 7, cycles: 1 };
+const ELIGIBLE = { status: 2 };
 
 describe('plans from the store', () => {
+  const both = () => [pkg('$rc_monthly', 'MONTHLY', 'A$4.99'), pkg('$rc_annual', 'ANNUAL', 'A$44.99', week)];
   it('reads the standard packages, yearly first, with the store’s own prices', () => {
-    const plans = plansFrom([pkg('$rc_monthly', 'MONTHLY', 'A$4.99'), pkg('$rc_annual', 'ANNUAL', 'A$44.99', week)]);
+    const plans = plansFrom(both(), { '$rc_annual-product': ELIGIBLE });
     assert.deepEqual(plans, [
       { id: 'yearly', price: 'A$44.99', period: { unit: 'year', count: 1 }, trialDays: 7 },
       { id: 'monthly', price: 'A$4.99', period: { unit: 'month', count: 1 }, trialDays: undefined },
     ]);
+  });
+  it('offers the trial only to a buyer the store says can have it (F-4)', () => {
+    // 1 ineligible (had it before), 0 unknown, 3 no offer: none of them is told "free trial".
+    for (const status of [0, 1, 3]) {
+      const yearly = plansFrom(both(), { '$rc_annual-product': { status } })[0];
+      assert.equal(yearly?.trialDays, undefined);
+      assert.equal(buyLabel(yearly), 'Subscribe');
+    }
+    assert.equal(plansFrom(both())[0]?.trialDays, undefined);
+  });
+  it('asks the store only about products with a free introductory offer', () => {
+    assert.deepEqual(trialProductIds(both()), ['$rc_annual-product']);
   });
   it('takes the store’s own billing period when it reports one (K-38)', () => {
     const quarterly = {

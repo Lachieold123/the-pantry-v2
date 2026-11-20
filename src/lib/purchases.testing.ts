@@ -17,6 +17,7 @@ export type MockPurchases = {
   logIn: Fn;
   logOut: Fn;
   isAnonymous: Fn;
+  checkTrialOrIntroductoryPriceEligibility: Fn;
 };
 
 let current: MockPurchases | undefined;
@@ -34,6 +35,8 @@ export function revenueCatModule(): { __esModule: true; default: MockPurchases; 
     logIn: jest.fn(),
     logOut: jest.fn(),
     isAnonymous: jest.fn(async () => true),
+    // Eligible unless a test says otherwise: the stand-in offering has a 7-day trial (F-4).
+    checkTrialOrIntroductoryPriceEligibility: jest.fn(async (ids: string[]) => Object.fromEntries(ids.map((id) => [id, { status: 2 }]))),
   };
   return { __esModule: true, default: current, LOG_LEVEL: { DEBUG: 'DEBUG', ERROR: 'ERROR' } };
 }

@@ -1,8 +1,8 @@
 // Buying Pro (D-038, D-052), through RevenueCat with the products
 // `thepantry_pro_monthly` and `thepantry_pro_yearly` in the offering's
-// standard `$rc_monthly` and `$rc_annual` packages. The yearly carries the
-// free trial as an App Store introductory offer; its length is read from the
-// store, never assumed here.
+// standard `$rc_monthly` and `$rc_annual` packages. A free trial, if App
+// Store Connect has one, is an introductory offer: its length is read from the
+// store and it's only offered to a buyer the store says is eligible.
 //
 // Only on an iPhone build with RevenueCat's native module. The web, Android
 // (no app yet) and Expo Go answer "not available here", so nothing is ever
@@ -20,6 +20,8 @@ import {
   plansFrom,
   purchaseMessage,
   purchaseProblem,
+  trialProductIds,
+  type IntroEligibility,
   type Plan,
   type PlanId,
   type StoreCustomer,
@@ -90,7 +92,21 @@ export function configurePurchases(appUserId?: string): boolean {
   return configured;
 }
 
-/** The plans on sale in the current offering, with the store's prices and any free trial. */
+/**
+ * Which free trials this Apple ID can still have (F-4). If the store can't
+ * say, the answer is none: a plain "Subscribe" never surprises anyone.
+ */
+async function trialEligibility(available: readonly PurchasesPackage[]): Promise<IntroEligibility> {
+  const ids = trialProductIds(available);
+  if (ids.length === 0) return {};
+  try {
+    return await Purchases.checkTrialOrIntroductoryPriceEligibility(ids);
+  } catch {
+    return {};
+  }
+}
+
+/** The plans on sale in the current offering, with the store's prices and any free trial this buyer can have. */
 export async function loadPlans(): Promise<PlansResult> {
   if (!configured) return { status: 'not-connected' };
   try {
@@ -101,7 +117,7 @@ export async function loadPlans(): Promise<PlansResult> {
       const id = planIdOf(pkg);
       if (id && !packages[id]) packages[id] = pkg;
     }
-    const plans = plansFrom(available);
+    const plans = plansFrom(available, await trialEligibility(available));
     return plans.length ? { status: 'ok', plans } : { status: 'not-on-sale' };
   } catch (e) {
     // RevenueCat answers "configuration" when none of the products can be fetched from Apple yet.
