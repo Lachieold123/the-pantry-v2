@@ -30,9 +30,13 @@ describe('plans from the store', () => {
   it('reads the standard packages, yearly first, with the store’s own prices', () => {
     const plans = plansFrom([pkg('$rc_monthly', 'MONTHLY', 'A$4.99'), pkg('$rc_annual', 'ANNUAL', 'A$44.99', week)]);
     assert.deepEqual(plans, [
-      { id: 'yearly', price: 'A$44.99', period: 'a year', trialDays: 7 },
-      { id: 'monthly', price: 'A$4.99', period: 'a month', trialDays: undefined },
+      { id: 'yearly', price: 'A$44.99', period: { unit: 'year', count: 1 }, trialDays: 7 },
+      { id: 'monthly', price: 'A$4.99', period: { unit: 'month', count: 1 }, trialDays: undefined },
     ]);
+  });
+  it('takes the store’s own billing period when it reports one (K-38)', () => {
+    const quarterly = { identifier: '$rc_monthly', packageType: 'MONTHLY', product: { priceString: 'A$12', subscriptionPeriod: 'P3M', introPrice: null } };
+    assert.deepEqual(plansFrom([quarterly])[0]?.period, { unit: 'month', count: 3 });
   });
   it('ignores packages that aren’t monthly or yearly, and duplicates', () => {
     const plans = plansFrom([

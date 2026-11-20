@@ -41,8 +41,8 @@ describe('starting RevenueCat', () => {
     expect(usePro.getState().sale).toEqual({
       state: 'on-sale',
       plans: [
-        { id: 'yearly', price: 'A$44.99', period: 'a year', trialDays: 7 },
-        { id: 'monthly', price: 'A$4.99', period: 'a month', trialDays: undefined },
+        { id: 'yearly', price: 'A$44.99', period: { unit: 'year', count: 1 }, trialDays: 7 },
+        { id: 'monthly', price: 'A$4.99', period: { unit: 'month', count: 1 }, trialDays: undefined },
       ],
     });
   });

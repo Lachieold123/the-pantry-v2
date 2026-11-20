@@ -10,6 +10,7 @@
 import { useState } from 'react';
 import { Linking, View } from 'react-native';
 
+import { buyLabel } from '@/domain/pro/terms';
 import { legalLinks } from '@/lib/legal';
 import type { Plan, PlanId } from '@/lib/purchases';
 import { purchasePro, restorePro, type Outcome } from '@/store/proSync';
@@ -69,7 +70,7 @@ export function BuyPanel({ plans, onPro }: { plans: readonly Plan[]; onPro: (mes
         </Text>
       ) : null}
       <Button
-        label={plan?.trialDays ? 'Start free trial' : 'Continue'}
+        label={buyLabel(plan)}
         kind="primary"
         block
         busy={busy === 'buying'}

@@ -4,6 +4,7 @@
 // few fields read from RevenueCat's objects, so a test can build them by hand
 // and the domain never depends on the library.
 import type { Entitlement } from './pro';
+import { periodFromISO, type BillingPeriod } from './terms';
 
 /** RevenueCat's entitlement identifier for Pro, set in its dashboard. */
 export const PRO_ENTITLEMENT = 'pro';
@@ -14,8 +15,8 @@ export type Plan = {
   id: PlanId;
   /** The store's own price string, in the buyer's currency ("A$44.99"). Never hard-coded. */
   price: string;
-  /** "a month" / "a year" */
-  period: string;
+  /** How long each billing period lasts (K-38: shown beside the price). */
+  period: BillingPeriod;
   /** Days of free trial the store offers this buyer, if any. Read from the store, never assumed. */
   trialDays?: number | undefined;
 };
@@ -26,6 +27,8 @@ export type StorePackage = {
   packageType: string;
   product: {
     priceString: string;
+    /** ISO 8601 ("P1Y", "P1M"); RevenueCat leaves it null for some products. */
+    subscriptionPeriod?: string | null;
     introPrice: { price: number; periodUnit: string; periodNumberOfUnits: number; cycles: number } | null;
   };
 };
@@ -68,7 +71,8 @@ export function planFrom(pkg: StorePackage): Plan | undefined {
   return {
     id,
     price: pkg.product.priceString,
-    period: id === 'yearly' ? 'a year' : 'a month',
+    // The package type already says which; the store's own period wins when it reports one.
+    period: periodFromISO(pkg.product.subscriptionPeriod ?? '') ?? { unit: id === 'yearly' ? 'year' : 'month', count: 1 },
     trialDays: trialDaysOf(pkg.product.introPrice),
   };
 }

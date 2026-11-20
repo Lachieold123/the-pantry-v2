@@ -9,7 +9,7 @@ const mockRouter = { back: jest.fn(), replace: jest.fn(), push: jest.fn(), canGo
 jest.mock('expo-router', () => ({ useRouter: () => mockRouter, router: mockRouter }));
 
 const YEAR_AHEAD = new Date(Date.now() + 400 * 864e5);
-const plans = [{ id: 'yearly' as const, price: 'A$44.99', period: 'a year' }];
+const plans = [{ id: 'yearly' as const, price: 'A$44.99', period: { unit: 'year' as const, count: 1 } }];
 
 beforeEach(() => {
   jest.clearAllMocks();

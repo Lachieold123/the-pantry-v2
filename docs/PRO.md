@@ -22,7 +22,7 @@ When Pro lapses, nothing is taken away. Extra collections, recipes and next week
 ## Price and trial
 
 - Price: the existing RevenueCat products, `thepantry_pro_monthly` ($4.99) and `thepantry_pro_yearly` ($44.99). Each country's actual price is set in App Store Connect. The app only ever shows the store's own price string, in the buyer's currency.
-- Trial: 7 days free on the yearly plan, set up in App Store Connect as an introductory offer. The app reads the trial's length from the store (the product's free introductory price) and never assumes it, so the paywall only says "7 days free, then A$… a year" when Apple actually offers it to this buyer. Settings and the paywall show the date the trial ends.
+- Trial: 7 days free on the yearly plan, set up in App Store Connect as an introductory offer. The app reads the trial's length from the store (the product's free introductory price) and never assumes it, so the paywall only says "7 days free, then A$… a year" when Apple actually offers it to this buyer. Each plan shows its length beside its price ("A$44.99 for 1 year"), and the trial says what it costs once it ends, as guideline 3.1.2 asks (K-38). Settings and the paywall show the date the trial ends.
 - The paywall leads with the yearly plan.
 
 ## How it behaves

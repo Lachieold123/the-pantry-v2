@@ -82,13 +82,19 @@ describe('PaywallScreen, on sale', () => {
   it('leads with yearly and the store’s trial, shows Apple’s renewal terms and Restore', async () => {
     await render(<PaywallScreen from="plan-ahead" />);
     expect(screen.getByText('7 days free, then A$44.99 a year')).toBeTruthy();
-    expect(screen.getByText('A$4.99 a month')).toBeTruthy();
-    expect(screen.getByTestId('pro-buy')).toHaveTextContent('Start free trial');
+    expect(screen.getByText('Renews every month')).toBeTruthy();
+    // Each plan's length beside its price (3.1.2, K-38).
+    expect(screen.getByTestId('pro-plan-yearly-price')).toHaveTextContent('A$44.99 for 1 year');
+    expect(screen.getByTestId('pro-plan-monthly-price')).toHaveTextContent('A$4.99 for 1 month');
+    expect(screen.getByTestId('pro-plan-yearly').props.accessibilityLabel).toBe(
+      'Yearly, A$44.99 for 1 year. 7 days free, then A$44.99 a year.',
+    );
+    expect(screen.getByTestId('pro-buy')).toHaveTextContent('Start 7-day free trial');
     expect(screen.getByTestId('pro-terms')).toHaveTextContent(/renews automatically unless you cancel at least 24 hours before/);
     expect(screen.getByTestId('pro-terms')).toHaveTextContent(/free trial turns into a paid subscription/);
     expect(screen.getByTestId('pro-restore')).toBeTruthy();
     await fireEvent.press(screen.getByTestId('pro-plan-monthly'));
-    expect(screen.getByTestId('pro-buy')).toHaveTextContent('Continue');
+    expect(screen.getByTestId('pro-buy')).toHaveTextContent('Subscribe');
     expect(screen.getByTestId('pro-terms')).not.toHaveTextContent(/free trial/);
   });
 
