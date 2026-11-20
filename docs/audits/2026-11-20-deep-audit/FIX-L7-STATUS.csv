@@ -1,0 +1,18 @@
+FOOD-1,fixed,69c86bc,wrong ingredient links fixed at the root (24 new ingredients and alias fixes); diets re-derived; all 28 certain offenders re-checked clean
+FOOD-2,fixed,69c86bc,same root fix as FOOD-1; second shift added stir-fry-sauce (it had matched frozen chips) and maize-cornflour (1241649)
+FOOD-3,fixed,69c86bc e8da8d1 1241649,flat diet claims hedged or lines changed; check-text claim rule widened; check-text 99 problems to 0
+FOOD-4,fixed,1241649,safety notes written for 607 recipes (400 batch and 207 converted) from the fs_notes.py rules
+FOOD-5,fixed,1241649,141 empty Food safety notes replaced with written ones
+FOOD-6,fixed,c2b5a21 1241649,raw and soft egg rule narrowed from 229 crude hits to 34 real ones; all now carry the vulnerable-people warning
+FOOD-7,fixed,c2b5a21,validators catch every known-bad fixture (scripts/recipe-text-checks.test.mts with 7 tests); validator 935 failures to 0 (PASS 5496/5496)
+FOOD-8,owner,,invented cooks on the live feed: left for the owner as briefed
+FOOD-9,part-fixed,43dc846,feed payloads now match the 24 Oct live vegan fixes and feed:verify passes; Pasta e Fagioli is not in the payloads; the supabase-2026-10-17 snapshot is left as a true snapshot
+FOOD-10,part-fixed,ff2a3eb,156 CC BY credits already have their Commons page in photoSources.ts and check-text now enforces it; 120 uncredited old-app photos and 6 missing image files listed in FIX-L7-PHOTOS-TODO.csv for the owner
+FOOD-11,fixed,1241649,45 find-and-replace artefacts fixed; Cassava Cake retitled Coconut Cassava Cake to avoid a duplicate; the 33 left in the crude scan are recipe ids or real cheese-free and mayo-free wording
+FOOD-12,fixed,4dfd0e4,345 Contains notes corrected from the counted lines with 30 spot-checked; check-text now runs containsGaps
+FOOD-13,fixed,69c86bc,45 unused A-or-B aliases and 3 hiding aliases removed and their lines rewritten
+FOOD-14,fixed,69c86bc,fresh chillies relinked away from black pepper
+FOOD-15,fixed,1241649,taro-and-pisupo-bake recomputed from its lines (311 to 635 kcal); turkey breast roll also recomputed (821 to 460 kcal)
+FOOD-16,held,9c1d8e9,FIX-L7-LIVE.sql written and not run: 3 diet tags off and 150 safety notes added; each has an undo; checked on PGlite against the 17 Oct backup; waits for the owner
+FOOD-17,fixed,1241649,margherita-pizza loses its Fahrenheit
+FOOD-18,fixed,1241649,smaller safety wording now covered: reheating rule (steaming hot) and garlic-or-chilli-in-oil rule
