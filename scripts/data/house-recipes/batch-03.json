@@ -8224,7 +8224,6 @@
       "servings": 4,
       "onePot": true,
       "diets": [
-        "no-gluten",
         "no-dairy"
       ],
       "ingredients": [
@@ -8406,6 +8405,7 @@
       "diets": [
         "vegetarian",
         "vegan",
+        "no-gluten",
         "no-dairy"
       ],
       "ingredients": [
@@ -33084,6 +33084,7 @@
       "diets": [
         "vegetarian",
         "vegan",
+        "no-gluten",
         "no-dairy"
       ],
       "ingredients": [

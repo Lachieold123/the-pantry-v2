@@ -707,13 +707,14 @@
       "servings": 12,
       "onePot": false,
       "diets": [
-        "vegetarian"
+        "vegetarian",
+        "no-gluten"
       ],
       "ingredients": [
         {
           "items": [
             "300g gluten-free plain flour",
-            "2 tsp baking powder",
+            "2 tsp gluten-free baking powder",
             "120g caster sugar",
             "2 eggs",
             "200ml milk",
@@ -805,13 +806,14 @@
       "servings": 8,
       "onePot": false,
       "diets": [
-        "vegetarian"
+        "vegetarian",
+        "no-gluten"
       ],
       "ingredients": [
         {
           "items": [
             "300g gluten-free plain flour",
-            "3 tsp baking powder",
+            "3 tsp gluten-free baking powder",
             "60g cold butter, cubed",
             "100g grated mozzarella",
             "2 tbsp chopped chives",

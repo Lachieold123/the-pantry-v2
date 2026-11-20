@@ -3802,11 +3802,20 @@
             "ingredientId": "salt"
           },
           {
-            "item": "saffron in 2 tbsp warm milk",
-            "raw": "Pinch of saffron in 2 tbsp warm milk (optional)",
+            "item": "saffron",
+            "raw": "Pinch of saffron (optional)",
             "quantity": 1,
             "unit": "pinch",
             "ingredientId": "saffron",
+            "optional": true
+          },
+          {
+            "item": "warm milk",
+            "raw": "2 tbsp warm milk, for the saffron (optional)",
+            "quantity": 2,
+            "unit": "tbsp",
+            "ingredientId": "milk",
+            "prep": "for the saffron",
             "optional": true
           }
         ]
@@ -4489,9 +4498,14 @@
             "ingredientId": "red-chilli"
           },
           {
-            "item": "Hoisin and sriracha",
-            "raw": "Hoisin and sriracha",
+            "item": "Hoisin sauce",
+            "raw": "Hoisin sauce",
             "ingredientId": "hoisin-sauce"
+          },
+          {
+            "item": "Sriracha",
+            "raw": "Sriracha",
+            "ingredientId": "sriracha"
           }
         ]
       }
@@ -21512,9 +21526,7 @@
     "title": "Feijoada",
     "summary": "Black beans slow-cooked with pork belly, sausage and beef, served with rice and farofa.",
     "cuisine": "latin-american",
-    "diets": [
-      "no-dairy"
-    ],
+    "diets": [],
     "mealTypes": [
       "dinner"
     ],
@@ -21637,9 +21649,9 @@
           },
           {
             "item": "Farofa",
-            "raw": "Farofa (toasted cassava flour with butter)",
+            "raw": "Farofa (toasted cassava flour)",
             "ingredientId": "cassava-flour",
-            "note": "toasted cassava flour with butter"
+            "note": "toasted cassava flour"
           },
           {
             "item": "Sautéed collard greens",
@@ -21657,6 +21669,14 @@
             "item": "Hot sauce",
             "raw": "Hot sauce",
             "ingredientId": "hot-sauce"
+          },
+          {
+            "item": "butter",
+            "raw": "30g butter, for toasting the farofa",
+            "quantity": 30,
+            "unit": "g",
+            "ingredientId": "butter",
+            "prep": "for toasting the farofa"
           }
         ]
       }
@@ -35248,9 +35268,14 @@
             "ingredientId": "red-chilli"
           },
           {
-            "item": "Hoisin and sriracha",
-            "raw": "Hoisin and sriracha",
+            "item": "Hoisin sauce",
+            "raw": "Hoisin sauce",
             "ingredientId": "hoisin-sauce"
+          },
+          {
+            "item": "Sriracha",
+            "raw": "Sriracha",
+            "ingredientId": "sriracha"
           }
         ]
       }
@@ -45787,11 +45812,12 @@
         "title": "Top",
         "items": [
           {
-            "item": "panko mixed with 20g melted butter",
-            "raw": "30g panko mixed with 20g melted butter",
+            "item": "panko",
+            "raw": "30g panko, for the top",
             "quantity": 30,
             "unit": "g",
-            "ingredientId": "panko"
+            "ingredientId": "panko",
+            "prep": "for the top"
           },
           {
             "item": "grated parmesan",
@@ -45799,6 +45825,14 @@
             "quantity": 20,
             "unit": "g",
             "ingredientId": "parmesan"
+          },
+          {
+            "item": "butter",
+            "raw": "20g butter, melted",
+            "quantity": 20,
+            "unit": "g",
+            "ingredientId": "butter",
+            "prep": "melted"
           }
         ]
       }
@@ -51082,6 +51116,14 @@
             "quantity": 2,
             "unit": "tbsp",
             "ingredientId": "olive-oil"
+          },
+          {
+            "item": "milk",
+            "raw": "3 tbsp milk, for soaking the panko",
+            "quantity": 3,
+            "unit": "tbsp",
+            "ingredientId": "milk",
+            "prep": "for soaking the panko"
           }
         ]
       },
@@ -84128,7 +84170,7 @@
             "item": "dried choricero peppers",
             "raw": "4 dried choricero peppers (or 3 large dried red peppers)",
             "quantity": 4,
-            "ingredientId": "black-pepper",
+            "ingredientId": "dried-sweet-pepper",
             "note": "or 3 large dried red peppers"
           },
           {
@@ -89611,7 +89653,7 @@
           {
             "item": "Pepper sauce",
             "raw": "Pepper sauce, to taste (optional)",
-            "ingredientId": "black-pepper",
+            "ingredientId": "hot-sauce",
             "prep": "to taste",
             "optional": true
           },
@@ -95149,7 +95191,6 @@
     "summary": "Fiery Nigerian beef or goat soup, spiced and medicinal, served steaming hot.",
     "cuisine": "west-african",
     "diets": [
-      "no-gluten",
       "no-dairy"
     ],
     "mealTypes": [
@@ -95231,7 +95272,7 @@
             "item": "stock cubes",
             "raw": "2 stock cubes (beef or chicken), crushed",
             "quantity": 2,
-            "ingredientId": "chicken-stock",
+            "ingredientId": "chicken-stock-cube",
             "prep": "crushed",
             "note": "beef or chicken"
           },
@@ -95545,6 +95586,7 @@
     "diets": [
       "vegetarian",
       "vegan",
+      "no-gluten",
       "no-dairy"
     ],
     "mealTypes": [
@@ -95567,7 +95609,7 @@
             "raw": "500 g teff flour",
             "quantity": 500,
             "unit": "g",
-            "ingredientId": "plain-flour"
+            "ingredientId": "teff-flour"
           },
           {
             "item": "water",
@@ -95964,7 +96006,7 @@
             "item": "poblano peppers",
             "raw": "4 poblano peppers (or large capsicum)",
             "quantity": 4,
-            "ingredientId": "black-pepper",
+            "ingredientId": "green-chilli",
             "note": "or large capsicum"
           },
           {
@@ -96064,7 +96106,7 @@
             "raw": "200 g dried cruschi peppers",
             "quantity": 200,
             "unit": "g",
-            "ingredientId": "black-pepper"
+            "ingredientId": "dried-sweet-pepper"
           },
           {
             "item": "breadcrumbs",
@@ -112513,7 +112555,7 @@
             "item": "merguez sausages",
             "raw": "2 merguez sausages, cut into thick rounds",
             "quantity": 2,
-            "ingredientId": "pork-sausage",
+            "ingredientId": "merguez",
             "prep": "cut into thick rounds"
           },
           {
@@ -115418,7 +115460,7 @@
             "raw": "250 g shishito pepper",
             "quantity": 250,
             "unit": "g",
-            "ingredientId": "black-pepper"
+            "ingredientId": "green-chilli"
           },
           {
             "item": "neutral oil",
@@ -126278,7 +126320,7 @@
             "item": "piquillo peppers",
             "raw": "12 piquillo peppers (from a tin or jar)",
             "quantity": 12,
-            "ingredientId": "black-pepper",
+            "ingredientId": "roasted-capsicum",
             "note": "from a tin or jar"
           },
           {
@@ -130091,7 +130133,7 @@
             "item": "poblano chillies",
             "raw": "4 poblano chillies",
             "quantity": 4,
-            "ingredientId": "red-chilli"
+            "ingredientId": "green-chilli"
           },
           {
             "item": "jalapeños",
@@ -144214,7 +144256,7 @@
             "item": "poblano chillies",
             "raw": "3 poblano chillies",
             "quantity": 3,
-            "ingredientId": "red-chilli"
+            "ingredientId": "green-chilli"
           },
           {
             "item": "Oaxaca cheese",
@@ -145008,7 +145050,7 @@
             "item": "poblano chillies",
             "raw": "4 poblano chillies",
             "quantity": 4,
-            "ingredientId": "red-chilli"
+            "ingredientId": "green-chilli"
           },
           {
             "item": "Oaxaca cheese",
@@ -146570,6 +146612,7 @@
     "diets": [
       "vegetarian",
       "vegan",
+      "no-gluten",
       "no-dairy"
     ],
     "mealTypes": [
@@ -146589,7 +146632,7 @@
             "raw": "250 g teff flour",
             "quantity": 250,
             "unit": "g",
-            "ingredientId": "plain-flour"
+            "ingredientId": "teff-flour"
           },
           {
             "item": "warm water",
@@ -157903,7 +157946,7 @@
   },
   {
     "id": "vegan-mushroom-ragu-pappardelle",
-    "title": "Vegan Mushroom Ragu with Pappardelle",
+    "title": "Mushroom Ragu with Pappardelle",
     "summary": "A deep, wine-rich mushroom ragu with porcini and thyme over wide ribbons of pasta.",
     "cuisine": "italian",
     "diets": [
@@ -158023,7 +158066,7 @@
       }
     ],
     "notes": [
-      "Vegan. Wine is fine for most vegans but check the label if strict."
+      "Pappardelle is usually made with egg; use an egg-free pasta to make it vegan. Wine is fine for most vegans but check the label if strict."
     ],
     "source": "house",
     "provenance": "ai-draft"
@@ -162916,7 +162959,7 @@
   {
     "id": "indonesian-gado-gado-with-peanut-sauce",
     "title": "Gado-Gado with Peanut Sauce",
-    "summary": "Steamed vegetables, tofu and egg under a rich, tangy peanut sauce, vegetarian and gluten-free.",
+    "summary": "Steamed vegetables, tofu and egg under a rich, tangy peanut sauce, vegetarian.",
     "cuisine": "indonesian",
     "diets": [
       "pescatarian",
@@ -172429,7 +172472,6 @@
     "diets": [
       "vegetarian",
       "vegan",
-      "no-gluten",
       "no-dairy"
     ],
     "mealTypes": [
@@ -172527,7 +172569,7 @@
             "raw": "1/4 cup vermicelli",
             "quantity": 0.25,
             "unit": "cup",
-            "ingredientId": "rice-vermicelli"
+            "ingredientId": "wheat-vermicelli"
           },
           {
             "item": "coriander",
@@ -267117,7 +267159,7 @@
             "raw": "3 tbsp black bean paste",
             "quantity": 3,
             "unit": "tbsp",
-            "ingredientId": "black-beans"
+            "ingredientId": "black-bean-sauce"
           },
           {
             "item": "sugar",
@@ -268858,8 +268900,7 @@
     "summary": "A beaten egg cooked onto a flaky paratha with onion, lime and chilli, rolled up as a street-style lunch.",
     "cuisine": "indian",
     "diets": [
-      "vegetarian",
-      "no-dairy"
+      "vegetarian"
     ],
     "mealTypes": [
       "lunch"
@@ -268876,7 +268917,7 @@
             "item": "frozen parathas",
             "raw": "2 frozen parathas",
             "quantity": 2,
-            "ingredientId": "roti"
+            "ingredientId": "paratha"
           },
           {
             "item": "eggs",
@@ -273303,7 +273344,7 @@
     ],
     "notes": [
       "Food safety: cook fish until opaque and flaking; check for bones before serving to young children.",
-      "Contains fish, gluten, egg and milk."
+      "Contains fish, gluten and egg."
     ],
     "source": "house",
     "provenance": "ai-draft"
@@ -302161,7 +302202,7 @@
             "raw": "2 tbsp black bean sauce",
             "quantity": 2,
             "unit": "tbsp",
-            "ingredientId": "black-beans"
+            "ingredientId": "black-bean-sauce"
           },
           {
             "item": "garlic",
@@ -304685,7 +304726,7 @@
       }
     ],
     "notes": [
-      "Contains soy. Vegan and gluten free."
+      "Contains soy. Vegan. Use tamari instead of soy sauce for gluten-free."
     ],
     "source": "house",
     "provenance": "ai-draft"
@@ -305826,7 +305867,7 @@
             "raw": "1.5kg turkey breast roll",
             "quantity": 1.5,
             "unit": "kg",
-            "ingredientId": "bread-roll"
+            "ingredientId": "turkey-breast-roll"
           },
           {
             "item": "butter",
@@ -306020,7 +306061,7 @@
             "raw": "1.5kg turkey breast roll",
             "quantity": 1.5,
             "unit": "kg",
-            "ingredientId": "bread-roll"
+            "ingredientId": "turkey-breast-roll"
           },
           {
             "item": "butter",
@@ -317809,7 +317850,7 @@
       }
     ],
     "notes": [
-      "Vegetarian. Kimchi may contain fish sauce; check the label."
+      "Most kimchi has fish sauce or shrimp in it; use a vegan kimchi to make it vegetarian. Kimchi may contain fish sauce; check the label."
     ],
     "source": "house",
     "provenance": "ai-draft"
@@ -323035,7 +323076,7 @@
       }
     ],
     "notes": [
-      "Vegetarian. Kimchi may contain fish sauce."
+      "Most kimchi has fish sauce or shrimp in it; use a vegan kimchi to make it vegetarian. Kimchi may contain fish sauce."
     ],
     "source": "house",
     "provenance": "ai-draft"
@@ -329049,7 +329090,7 @@
       }
     ],
     "notes": [
-      "Vegan and gluten-free."
+      "Many massaman pastes contain shrimp paste; check the label, or use a vegan paste, to keep it vegan."
     ],
     "source": "house",
     "provenance": "ai-draft"
@@ -334199,7 +334240,7 @@
     ],
     "notes": [
       "Food safety: pork must reach at least 75°C in the centre; for pulling it should reach 90°C and be fork-tender.",
-      "Dinner. Dairy-free. Gluten-free."
+      "Dinner. Dairy-free. Use tamari instead of soy sauce for gluten-free."
     ],
     "source": "house",
     "provenance": "ai-draft"
@@ -335958,7 +335999,7 @@
       }
     ],
     "notes": [
-      "Dinner. Vegan. Check the curry paste label if you avoid shrimp paste."
+      "Dinner. Most red curry pastes contain shrimp paste; check the label, or use a vegan paste, to keep it vegan. Check the curry paste label if you avoid shrimp paste."
     ],
     "source": "house",
     "provenance": "ai-draft"
@@ -345980,7 +346021,7 @@
       }
     ],
     "notes": [
-      "Food safety: fry until the centres are set. Snack. Vegetarian."
+      "Food safety: fry until the centres are set. Snack. Most red curry pastes contain shrimp paste; check the label, or use a vegan paste, to keep it vegetarian."
     ],
     "source": "house",
     "provenance": "ai-draft"
@@ -352019,7 +352060,7 @@
   {
     "id": "cantonese-steamed-chicken-with-ginger-and-shiitake",
     "title": "Cantonese Steamed Chicken with Ginger and Shiitake",
-    "summary": "Tender chicken pieces steamed with shiitake and ginger, gluten free with tamari.",
+    "summary": "Tender chicken pieces steamed with shiitake and ginger.",
     "cuisine": "chinese",
     "diets": [
       "no-dairy"
@@ -359807,7 +359848,7 @@
             "raw": "500g pork scotch fillet, sliced",
             "quantity": 500,
             "unit": "g",
-            "ingredientId": "beef-rib-eye",
+            "ingredientId": "pork-shoulder",
             "prep": "sliced"
           },
           {
@@ -369070,7 +369111,7 @@
             "raw": "700g pork scotch fillet, cut in strips",
             "quantity": 700,
             "unit": "g",
-            "ingredientId": "beef-rib-eye",
+            "ingredientId": "pork-shoulder",
             "prep": "cut in strips"
           },
           {
@@ -372691,7 +372732,7 @@
             "raw": "800g boerewors sausage",
             "quantity": 800,
             "unit": "g",
-            "ingredientId": "pork-sausage"
+            "ingredientId": "boerewors"
           },
           {
             "item": "cornmeal",
@@ -376997,7 +377038,7 @@
             "raw": "1 tbsp soybean paste",
             "quantity": 1,
             "unit": "tbsp",
-            "ingredientId": "edamame"
+            "ingredientId": "miso"
           },
           {
             "item": "Shaoxing wine",
@@ -379030,7 +379071,7 @@
             "raw": "3 tbsp black bean paste",
             "quantity": 3,
             "unit": "tbsp",
-            "ingredientId": "black-beans"
+            "ingredientId": "black-bean-sauce"
           },
           {
             "item": "onions",
@@ -391082,7 +391123,7 @@
             "raw": "600g pork scotch fillet, sliced thin",
             "quantity": 600,
             "unit": "g",
-            "ingredientId": "beef-rib-eye",
+            "ingredientId": "pork-shoulder",
             "prep": "sliced thin"
           },
           {
@@ -408249,6 +408290,7 @@
     "summary": "Pan-seared yellowtail steaks glazed in a homemade teriyaki until sticky and lacquered.",
     "cuisine": "japanese",
     "diets": [
+      "pescatarian",
       "no-dairy"
     ],
     "mealTypes": [
@@ -408266,7 +408308,7 @@
             "item": "kingfish steaks",
             "raw": "4 kingfish steaks, about 160g each",
             "quantity": 4,
-            "ingredientId": "beef-steak",
+            "ingredientId": "kingfish",
             "prep": "about 160g each"
           },
           {
@@ -410192,6 +410234,7 @@
     "summary": "Kingfish steaks rubbed with chilli, turmeric and pepper and shallow-fried in coconut oil, served with rice.",
     "cuisine": "indian",
     "diets": [
+      "pescatarian",
       "no-gluten",
       "no-dairy"
     ],
@@ -410210,7 +410253,7 @@
             "item": "kingfish steaks",
             "raw": "4 kingfish steaks, about 160g each",
             "quantity": 4,
-            "ingredientId": "beef-steak",
+            "ingredientId": "kingfish",
             "prep": "about 160g each"
           },
           {
@@ -416799,7 +416842,7 @@
     ],
     "notes": [
       "Plus 1 hour proving.",
-      "Snack. Vegan. Per serving: 5 bites."
+      "Snack. Swap the honey for golden syrup to make them vegan. Per serving: 5 bites."
     ],
     "source": "house",
     "provenance": "ai-draft"
@@ -427396,8 +427439,7 @@
     "summary": "Crushed ice layered with mango, pineapple and milk, a no-cook take on the Filipino classic.",
     "cuisine": "filipino",
     "diets": [
-      "vegetarian",
-      "no-gluten"
+      "vegetarian"
     ],
     "mealTypes": [
       "snack"
@@ -427438,7 +427480,7 @@
             "raw": "30g corn flakes",
             "quantity": 30,
             "unit": "g",
-            "ingredientId": "corn"
+            "ingredientId": "corn-flakes"
           },
           {
             "item": "evaporated milk",
@@ -429467,7 +429509,8 @@
     "summary": "Tender gluten-free muffins dotted with frozen berries.",
     "cuisine": "modern-australian",
     "diets": [
-      "vegetarian"
+      "vegetarian",
+      "no-gluten"
     ],
     "mealTypes": [
       "snack"
@@ -429485,14 +429528,14 @@
             "raw": "300g gluten-free plain flour",
             "quantity": 300,
             "unit": "g",
-            "ingredientId": "plain-flour"
+            "ingredientId": "gluten-free-flour"
           },
           {
-            "item": "baking powder",
-            "raw": "2 tsp baking powder",
+            "item": "gluten-free baking powder",
+            "raw": "2 tsp gluten-free baking powder",
             "quantity": 2,
             "unit": "tsp",
-            "ingredientId": "baking-powder"
+            "ingredientId": "gluten-free-baking-powder"
           },
           {
             "item": "caster sugar",
@@ -429667,7 +429710,8 @@
     "summary": "Savoury gluten-free scones with melty mozzarella and fresh chives.",
     "cuisine": "modern-australian",
     "diets": [
-      "vegetarian"
+      "vegetarian",
+      "no-gluten"
     ],
     "mealTypes": [
       "snack"
@@ -429685,14 +429729,14 @@
             "raw": "300g gluten-free plain flour",
             "quantity": 300,
             "unit": "g",
-            "ingredientId": "plain-flour"
+            "ingredientId": "gluten-free-flour"
           },
           {
-            "item": "baking powder",
-            "raw": "3 tsp baking powder",
+            "item": "gluten-free baking powder",
+            "raw": "3 tsp gluten-free baking powder",
             "quantity": 3,
             "unit": "tsp",
-            "ingredientId": "baking-powder"
+            "ingredientId": "gluten-free-baking-powder"
           },
           {
             "item": "cold butter",
@@ -430364,8 +430408,7 @@
     "summary": "Crunchy corn flake clusters in a buttery honey coating, baked in patty cases.",
     "cuisine": "modern-australian",
     "diets": [
-      "vegetarian",
-      "no-gluten"
+      "vegetarian"
     ],
     "mealTypes": [
       "snack"
@@ -430383,7 +430426,7 @@
             "raw": "120g corn flakes",
             "quantity": 120,
             "unit": "g",
-            "ingredientId": "corn"
+            "ingredientId": "corn-flakes"
           },
           {
             "item": "butter",
@@ -430435,7 +430478,6 @@
     "diets": [
       "vegetarian",
       "vegan",
-      "no-gluten",
       "no-dairy"
     ],
     "mealTypes": [
@@ -430454,7 +430496,7 @@
             "raw": "90g puffed rice cereal",
             "quantity": 90,
             "unit": "g",
-            "ingredientId": "white-rice"
+            "ingredientId": "puffed-rice-cereal"
           },
           {
             "item": "icing sugar",
@@ -430648,7 +430690,7 @@
             "raw": "45g corn flakes",
             "quantity": 45,
             "unit": "g",
-            "ingredientId": "corn"
+            "ingredientId": "corn-flakes"
           },
           {
             "item": "icing sugar",
@@ -432135,8 +432177,7 @@
     "summary": "Chewy puffed rice bars set with butter, honey and brown sugar.",
     "cuisine": "modern-australian",
     "diets": [
-      "vegetarian",
-      "no-gluten"
+      "vegetarian"
     ],
     "mealTypes": [
       "snack"
@@ -432154,7 +432195,7 @@
             "raw": "120g puffed rice cereal",
             "quantity": 120,
             "unit": "g",
-            "ingredientId": "white-rice"
+            "ingredientId": "puffed-rice-cereal"
           },
           {
             "item": "butter",
@@ -453503,7 +453544,7 @@
             "raw": "200g vanilla sponge cake, cubed",
             "quantity": 200,
             "unit": "g",
-            "ingredientId": "vanilla-extract",
+            "ingredientId": "sponge-cake",
             "prep": "cubed"
           },
           {
@@ -453592,8 +453633,7 @@
     "summary": "Sponge soaked in a Marsala syrup with mascarpone cream and cocoa, a tiramisu-style cup.",
     "cuisine": "italian",
     "diets": [
-      "vegetarian",
-      "no-gluten"
+      "vegetarian"
     ],
     "mealTypes": [
       "snack"
@@ -453611,7 +453651,7 @@
             "raw": "200g vanilla sponge cake, cubed",
             "quantity": 200,
             "unit": "g",
-            "ingredientId": "vanilla-extract",
+            "ingredientId": "sponge-cake",
             "prep": "cubed"
           },
           {
@@ -460066,7 +460106,7 @@
             "raw": "120g puffed rice",
             "quantity": 120,
             "unit": "g",
-            "ingredientId": "white-rice"
+            "ingredientId": "puffed-rice-cereal"
           },
           {
             "item": "honey",
@@ -497739,7 +497779,6 @@
     "diets": [
       "vegetarian",
       "vegan",
-      "no-gluten",
       "no-dairy"
     ],
     "mealTypes": [
@@ -497827,7 +497866,7 @@
             "raw": "60g vermicelli",
             "quantity": 60,
             "unit": "g",
-            "ingredientId": "rice-vermicelli"
+            "ingredientId": "wheat-vermicelli"
           },
           {
             "item": "coriander",
@@ -500446,6 +500485,7 @@
     "diets": [
       "vegetarian",
       "vegan",
+      "no-gluten",
       "no-dairy"
     ],
     "mealTypes": [
@@ -500464,7 +500504,7 @@
             "raw": "200g teff flour",
             "quantity": 200,
             "unit": "g",
-            "ingredientId": "plain-flour"
+            "ingredientId": "teff-flour"
           },
           {
             "item": "water",
@@ -501955,7 +501995,7 @@
             "raw": "1 litre pork stock (or chicken stock)",
             "quantity": 1,
             "unit": "l",
-            "ingredientId": "chicken-stock",
+            "ingredientId": "pork-stock",
             "note": "or chicken stock"
           },
           {
@@ -502168,7 +502208,6 @@
     "cuisine": "malaysian",
     "diets": [
       "vegetarian",
-      "no-gluten",
       "no-dairy"
     ],
     "mealTypes": [
@@ -502213,7 +502252,7 @@
             "raw": "2 tbsp fermented soybean paste",
             "quantity": 2,
             "unit": "tbsp",
-            "ingredientId": "edamame"
+            "ingredientId": "miso"
           },
           {
             "item": "tamarind paste",
@@ -515303,7 +515342,6 @@
     "cuisine": "west-african",
     "diets": [
       "vegetarian",
-      "no-gluten",
       "no-dairy"
     ],
     "mealTypes": [
@@ -515376,7 +515414,7 @@
             "item": "vegetable stock cube",
             "raw": "1 vegetable stock cube",
             "quantity": 1,
-            "ingredientId": "vegetable-stock"
+            "ingredientId": "vegetable-stock-cube"
           }
         ]
       }
@@ -518721,7 +518759,6 @@
     "diets": [
       "vegetarian",
       "vegan",
-      "no-gluten",
       "no-dairy"
     ],
     "mealTypes": [
@@ -518778,7 +518815,7 @@
             "item": "vegetable stock cube",
             "raw": "1 vegetable stock cube",
             "quantity": 1,
-            "ingredientId": "vegetable-stock"
+            "ingredientId": "vegetable-stock-cube"
           },
           {
             "item": "salt",
@@ -518891,7 +518928,6 @@
     "cuisine": "west-african",
     "diets": [
       "vegetarian",
-      "no-gluten",
       "no-dairy"
     ],
     "mealTypes": [
@@ -518964,7 +519000,7 @@
             "item": "vegetable stock cube",
             "raw": "1 vegetable stock cube",
             "quantity": 1,
-            "ingredientId": "vegetable-stock"
+            "ingredientId": "vegetable-stock-cube"
           },
           {
             "item": "Salt",
@@ -532242,7 +532278,7 @@
             "raw": "500g thick beef sausages",
             "quantity": 500,
             "unit": "g",
-            "ingredientId": "pork-sausage"
+            "ingredientId": "beef-sausage"
           },
           {
             "item": "soft bread rolls",
@@ -537459,7 +537495,7 @@
             "raw": "40g vermicelli, broken",
             "quantity": 40,
             "unit": "g",
-            "ingredientId": "rice-vermicelli",
+            "ingredientId": "wheat-vermicelli",
             "prep": "broken"
           },
           {
@@ -557339,7 +557375,7 @@
             "item": "poblano chillies",
             "raw": "4 poblano chillies",
             "quantity": 4,
-            "ingredientId": "red-chilli"
+            "ingredientId": "green-chilli"
           },
           {
             "item": "butter",
@@ -568685,8 +568721,7 @@
     "summary": "A creamy, cardamom-scented milk pudding with fine vermicelli, pistachios and sultanas.",
     "cuisine": "indian",
     "diets": [
-      "vegetarian",
-      "no-gluten"
+      "vegetarian"
     ],
     "mealTypes": [
       "dinner"
@@ -568704,7 +568739,7 @@
             "raw": "1 cup fine vermicelli, broken",
             "quantity": 1,
             "unit": "cup",
-            "ingredientId": "rice-vermicelli",
+            "ingredientId": "wheat-vermicelli",
             "prep": "broken"
           },
           {
@@ -575897,7 +575932,7 @@
       }
     ],
     "notes": [
-      "Serve on gluten-free toast with avocado.",
+      "Serve on toast with avocado. For gluten-free, use tamari instead of soy sauce and gluten-free toast.",
       "Use tamari for gluten-free."
     ],
     "source": "house",
@@ -579216,7 +579251,9 @@
     "title": "Gluten-Free Cornbread Stuffing Muffins",
     "summary": "Cornmeal and sage stuffing baked into muffins with crisp tops, a gluten-free side for Thanksgiving.",
     "cuisine": "american",
-    "diets": [],
+    "diets": [
+      "no-gluten"
+    ],
     "mealTypes": [
       "dinner"
     ],
@@ -579233,7 +579270,7 @@
             "raw": "2 cups gluten-free cornbread, cubed",
             "quantity": 2,
             "unit": "cup",
-            "ingredientId": "cornbread",
+            "ingredientId": "gluten-free-cornbread",
             "prep": "cubed"
           },
           {
@@ -592813,6 +592850,7 @@
     "diets": [
       "vegetarian",
       "vegan",
+      "no-gluten",
       "no-dairy"
     ],
     "mealTypes": [
@@ -592831,7 +592869,7 @@
             "raw": "1/2 cup maize flour",
             "quantity": 0.5,
             "unit": "cup",
-            "ingredientId": "plain-flour"
+            "ingredientId": "maize-flour"
           },
           {
             "item": "water",
@@ -595893,6 +595931,7 @@
     "diets": [
       "vegetarian",
       "vegan",
+      "no-gluten",
       "no-dairy"
     ],
     "mealTypes": [
@@ -595911,7 +595950,7 @@
             "raw": "1/2 cup maize flour",
             "quantity": 0.5,
             "unit": "cup",
-            "ingredientId": "plain-flour"
+            "ingredientId": "maize-flour"
           },
           {
             "item": "water",
@@ -598312,7 +598351,6 @@
     "diets": [
       "vegetarian",
       "vegan",
-      "no-gluten",
       "no-dairy"
     ],
     "mealTypes": [
@@ -598385,7 +598423,7 @@
             "raw": "2 tsp vegetable stock powder",
             "quantity": 2,
             "unit": "tsp",
-            "ingredientId": "vegetable-stock"
+            "ingredientId": "vegetable-stock-cube"
           },
           {
             "item": "dried thyme",
@@ -603206,7 +603244,6 @@
     "diets": [
       "vegetarian",
       "vegan",
-      "no-gluten",
       "no-dairy"
     ],
     "mealTypes": [
@@ -603315,6 +603352,14 @@
             "item": "Salt and black pepper",
             "raw": "Salt and black pepper",
             "ingredientId": "salt"
+          },
+          {
+            "item": "small pasta",
+            "raw": "150g small pasta, cooked, to add when serving",
+            "quantity": 150,
+            "unit": "g",
+            "ingredientId": "pasta",
+            "prep": "cooked, to add when serving"
           }
         ]
       }
@@ -637210,7 +637255,7 @@
             "item": "beef sausages",
             "raw": "4 beef sausages, sliced",
             "quantity": 4,
-            "ingredientId": "pork-sausage",
+            "ingredientId": "beef-sausage",
             "prep": "sliced"
           },
           {

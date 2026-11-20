@@ -668,7 +668,9 @@
       "cookMinutes": 30,
       "servings": 6,
       "onePot": false,
-      "diets": [],
+      "diets": [
+        "no-gluten"
+      ],
       "ingredients": [
         {
           "items": [

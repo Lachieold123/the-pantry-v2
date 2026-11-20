@@ -246,6 +246,16 @@
         {
           "from": "1/2 tsp ground mace or nutmeg",
           "to": "1/2 tsp ground mace (or nutmeg)"
+        },
+        {
+          "from": "Pinch of saffron in 2 tbsp warm milk (optional)",
+          "to": "Pinch of saffron (optional)"
+        }
+      ],
+      "addIngredients": [
+        {
+          "group": "Curry",
+          "line": "2 tbsp warm milk, for the saffron (optional)"
         }
       ]
     },
@@ -290,6 +300,16 @@
         {
           "from": "1 tbsp salt",
           "to": "1 tsp salt"
+        },
+        {
+          "from": "Hoisin and sriracha",
+          "to": "Hoisin sauce"
+        }
+      ],
+      "addIngredients": [
+        {
+          "group": "To serve",
+          "line": "Sriracha"
         }
       ]
     },
@@ -1520,10 +1540,20 @@
         {
           "from": "Sautéed kale or collard greens (couve à mineira)",
           "to": "Sautéed collard greens (or kale), couve à mineira"
+        },
+        {
+          "from": "Farofa (toasted cassava flour with butter)",
+          "to": "Farofa (toasted cassava flour)"
         }
       ],
       "addNotes": [
         "Start the day before: the black beans soak overnight."
+      ],
+      "addIngredients": [
+        {
+          "group": "To serve",
+          "line": "30g butter, for toasting the farofa"
+        }
       ]
     },
     "fish-and-chips": {
@@ -2341,6 +2371,18 @@
         {
           "from": "Pour over the boiling broth,",
           "to": "Bring the broth back to a rolling boil and pour it over,"
+        }
+      ],
+      "ingredients": [
+        {
+          "from": "Hoisin and sriracha",
+          "to": "Hoisin sauce"
+        }
+      ],
+      "addIngredients": [
+        {
+          "group": "To serve",
+          "line": "Sriracha"
         }
       ]
     },
@@ -3314,12 +3356,22 @@
         {
           "group": "To assemble",
           "line": "20g butter, softened"
+        },
+        {
+          "group": "Patties",
+          "line": "3 tbsp milk, for soaking the panko"
         }
       ],
       "steps": [
         {
           "from": "Toast buns butter-side-down.",
           "to": "Butter the cut sides of the buns and toast them butter-side-down in a hot pan."
+        }
+      ],
+      "ingredients": [
+        {
+          "from": "40g panko soaked in 3 tbsp milk",
+          "to": "40g panko"
         }
       ]
     },
@@ -3483,6 +3535,20 @@
         {
           "from": "Vietnamese mint or coriander",
           "to": "Vietnamese mint (or coriander)"
+        }
+      ]
+    },
+    "stuffed-mushrooms": {
+      "ingredients": [
+        {
+          "from": "30g panko mixed with 20g melted butter",
+          "to": "30g panko, for the top"
+        }
+      ],
+      "addIngredients": [
+        {
+          "group": "Top",
+          "line": "20g butter, melted"
         }
       ]
     }

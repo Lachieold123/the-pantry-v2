@@ -1,0 +1,53 @@
+{
+  "freezer-batch-minestrone": {
+    "addItems": [{ "group": 0, "line": "150g small pasta, cooked, to add when serving" }]
+  },
+  "fish-finger-wraps-for-kids-with-crunchy-slaw": {
+    "replace": [{ "in": "notes", "from": "Contains fish, gluten, egg and milk.", "to": "Contains fish, gluten and egg." }]
+  },
+  "vegan-mushroom-ragu-pappardelle": {
+    "replace": [
+      { "in": "title", "from": "Vegan Mushroom Ragu with Pappardelle", "to": "Mushroom Ragu with Pappardelle" },
+      { "in": "text", "from": "Vegan.", "to": "Pappardelle is usually made with egg; use an egg-free pasta to make it vegan." }
+    ]
+  },
+  "indonesian-gado-gado-with-peanut-sauce": {
+    "replace": [{ "in": "summary", "from": ", vegetarian and gluten-free.", "to": ", vegetarian." }]
+  },
+  "mushroom-and-lentil-pie-with-sweet-potato-top": {
+    "replace": [{ "in": "text", "from": "Vegan and gluten free.", "to": "Vegan. Use tamari instead of soy sauce for gluten-free." }]
+  },
+  "tofu-scramble-with-turmeric-kale-and-cherry-tomatoes": {
+    "replace": [{ "in": "text", "from": "Serve on gluten-free toast with avocado.", "to": "Serve on toast with avocado. For gluten-free, use tamari instead of soy sauce and gluten-free toast." }]
+  },
+  "kimchi-cheese-toastie-rolls": {
+    "replace": [{ "in": "text", "from": "Vegetarian.", "to": "Most kimchi has fish sauce or shrimp in it; use a vegan kimchi to make it vegetarian." }]
+  },
+  "crisp-kimchi-and-spring-onion-wedges": {
+    "replace": [{ "in": "text", "from": "Vegetarian.", "to": "Most kimchi has fish sauce or shrimp in it; use a vegan kimchi to make it vegetarian." }]
+  },
+  "massaman-sweet-potato-curry": {
+    "replace": [{ "in": "text", "from": "Vegan and gluten-free.", "to": "Many massaman pastes contain shrimp paste; check the label, or use a vegan paste, to keep it vegan." }]
+  },
+  "kalua-style-slow-pork-shoulder-with-rice": {
+    "replace": [{ "in": "text", "from": "Gluten-free.", "to": "Use tamari instead of soy sauce for gluten-free." }]
+  },
+  "pumpkin-red-curry-with-rice": {
+    "replace": [{ "in": "text", "from": "Vegan.", "to": "Most red curry pastes contain shrimp paste; check the label, or use a vegan paste, to keep it vegan." }]
+  },
+  "thai-sweet-corn-fritters-with-cucumber-dip": {
+    "replace": [{ "in": "text", "from": "Vegetarian.", "to": "Most red curry pastes contain shrimp paste; check the label, or use a vegan paste, to keep it vegetarian." }]
+  },
+  "cantonese-steamed-chicken-with-ginger-and-shiitake": {
+    "replace": [{ "in": "summary", "from": ", gluten free with tamari.", "to": "." }]
+  },
+  "lokma-honey-doughnut-bites": {
+    "replace": [{ "in": "text", "from": "Vegan.", "to": "Swap the honey for golden syrup to make them vegan." }]
+  },
+  "gluten-free-berry-muffins": {
+    "replace": [{ "in": "items", "from": "2 tsp baking powder", "to": "2 tsp gluten-free baking powder" }]
+  },
+  "gluten-free-mozzarella-and-chive-scones": {
+    "replace": [{ "in": "items", "from": "3 tsp baking powder", "to": "3 tsp gluten-free baking powder" }]
+  }
+}

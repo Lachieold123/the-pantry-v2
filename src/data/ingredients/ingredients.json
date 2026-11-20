@@ -387,7 +387,6 @@
       "tofu",
       "extra-firm tofu",
       "extra firm tofu",
-      "firm or extra-firm tofu",
       "bean curd"
     ],
     "groups": [
@@ -504,7 +503,14 @@
       "long green chilli",
       "long green chillies",
       "serrano chilli",
-      "serrano chillies"
+      "serrano chillies",
+      "poblano",
+      "poblano pepper",
+      "poblano chilli",
+      "shishito",
+      "shishito pepper",
+      "padron pepper",
+      "padrón pepper"
     ],
     "groups": [
       "chilli"
@@ -538,8 +544,7 @@
     "name": "iceberg lettuce",
     "aisle": "fruit-veg",
     "aliases": [
-      "iceberg",
-      "iceberg or romaine"
+      "iceberg"
     ],
     "groups": []
   },
@@ -1194,8 +1199,7 @@
       "chuck steak",
       "chuck",
       "gravy beef",
-      "stewing beef",
-      "beef chuck or shin"
+      "stewing beef"
     ],
     "groups": [
       "meat",
@@ -1242,7 +1246,6 @@
     "aliases": [
       "minced beef",
       "ground beef",
-      "beef or lamb mince",
       "beef and pork mince"
     ],
     "groups": [
@@ -1481,8 +1484,7 @@
     "plural": "duck fat",
     "aisle": "meat",
     "aliases": [
-      "goose fat",
-      "duck fat or beef dripping"
+      "goose fat"
     ],
     "groups": [
       "meat",
@@ -1579,8 +1581,7 @@
     "name": "lamb shoulder",
     "aisle": "meat",
     "aliases": [
-      "bone-in lamb shoulder",
-      "lamb shoulder or leg"
+      "bone-in lamb shoulder"
     ],
     "groups": [
       "meat",
@@ -1593,8 +1594,7 @@
     "plural": "lard",
     "aisle": "meat",
     "aliases": [
-      "pork lard",
-      "lard or neutral oil"
+      "pork lard"
     ],
     "groups": [
       "meat",
@@ -1618,8 +1618,7 @@
     "plural": "pancetta",
     "aisle": "meat",
     "aliases": [
-      "salt pork",
-      "pancetta or streaky bacon"
+      "salt pork"
     ],
     "groups": [
       "meat",
@@ -1645,10 +1644,7 @@
     "name": "pork belly",
     "plural": "pork bellies",
     "aisle": "meat",
-    "aliases": [
-      "pork belly or pork shoulder",
-      "pork belly or streaky bacon"
-    ],
+    "aliases": [],
     "groups": [
       "meat",
       "pork"
@@ -1745,7 +1741,8 @@
       "pork scotch",
       "pork neck",
       "boston butt",
-      "pork butt"
+      "pork butt",
+      "pork scotch fillet"
     ],
     "groups": [
       "meat",
@@ -1777,7 +1774,6 @@
       "shredded cooked pork",
       "char siu",
       "chashu",
-      "roast pork or shredded chicken",
       "bbq pork"
     ],
     "groups": [
@@ -1951,8 +1947,7 @@
     "name": "mussel",
     "aisle": "seafood",
     "aliases": [
-      "black mussel",
-      "mussels or clams"
+      "black mussel"
     ],
     "groups": [
       "shellfish"
@@ -1981,8 +1976,7 @@
       "king prawn",
       "tiger prawn",
       "shrimp",
-      "tempura prawn",
-      "raw prawn or 300g cooked chicken"
+      "tempura prawn"
     ],
     "groups": [
       "shellfish"
@@ -2035,7 +2029,6 @@
       "fresh tuna",
       "yellowfin tuna",
       "ahi tuna",
-      "sashimi-grade tuna or salmon",
       "sashimi-grade ahi",
       "ahi"
     ],
@@ -2343,7 +2336,9 @@
       "roasted red pepper",
       "roast capsicum",
       "chargrilled capsicum",
-      "roasted pepper"
+      "roasted pepper",
+      "piquillo pepper",
+      "piquillo"
     ],
     "groups": []
   },
@@ -2527,8 +2522,7 @@
       "unsalted butter",
       "salted butter",
       "softened butter",
-      "cold butter",
-      "butter or oil"
+      "cold butter"
     ],
     "groups": [
       "dairy"
@@ -2641,10 +2635,7 @@
     "plural": "ghee",
     "aisle": "dairy-eggs",
     "aliases": [
-      "clarified butter",
-      "ghee or neutral oil",
-      "ghee or oil",
-      "ghee or butter"
+      "clarified butter"
     ],
     "groups": [
       "dairy"
@@ -2672,8 +2663,6 @@
     "aisle": "dairy-eggs",
     "aliases": [
       "gruyere",
-      "gruyère or fontina",
-      "gruyere or fontina",
       "comté",
       "comte",
       "fontina"
@@ -2793,8 +2782,7 @@
       "parmigiano reggiano",
       "parmigiano",
       "grana padano",
-      "parmesan rind",
-      "parmesan or pecorino"
+      "parmesan rind"
     ],
     "groups": [
       "dairy",
@@ -2880,11 +2868,7 @@
     "name": "sour cream",
     "plural": "sour cream",
     "aisle": "dairy-eggs",
-    "aliases": [
-      "sour cream or greek yogurt",
-      "sour cream or crème fraîche",
-      "sour cream or creme fraiche"
-    ],
+    "aliases": [],
     "groups": [
       "dairy"
     ]
@@ -2929,8 +2913,7 @@
     "aliases": [
       "french stick",
       "vietnamese baguette",
-      "banh mi roll",
-      "baguette or sourdough"
+      "banh mi roll"
     ],
     "groups": [
       "gluten"
@@ -3296,8 +3279,7 @@
     "plural": "linguine",
     "aisle": "pasta-rice-grains",
     "aliases": [
-      "linguini",
-      "linguine or spaghetti"
+      "linguini"
     ],
     "groups": [
       "gluten"
@@ -3412,8 +3394,7 @@
     "aisle": "pasta-rice-grains",
     "aliases": [
       "ziti",
-      "penne rigate",
-      "penne or rigatoni"
+      "penne rigate"
     ],
     "groups": [
       "gluten"
@@ -3440,7 +3421,6 @@
     "plural": "quinoa",
     "aisle": "pasta-rice-grains",
     "aliases": [
-      "quinoa or brown rice",
       "cooked quinoa"
     ],
     "groups": []
@@ -3562,11 +3542,7 @@
     "aliases": [
       "beef broth",
       "good beef stock",
-      "beef or lamb stock",
-      "beef or chicken stock",
-      "veal stock",
-      "beef bouillon",
-      "beef stock cube"
+      "veal stock"
     ],
     "groups": [
       "meat",
@@ -3628,11 +3604,6 @@
       "stock",
       "chicken broth",
       "good chicken stock",
-      "chicken or vegetable stock",
-      "vegetable or chicken stock",
-      "chicken or shrimp stock",
-      "chicken or seafood stock",
-      "chicken stock or water",
       "chicken bouillon",
       "chicken stock cube"
     ],
@@ -3773,7 +3744,6 @@
     "aliases": [
       "red kidney bean",
       "pinto bean",
-      "kidney or pinto bean",
       "borlotti bean"
     ],
     "groups": []
@@ -3972,8 +3942,7 @@
       "tomato salsa",
       "salsa verde",
       "pico de gallo",
-      "chunky salsa",
-      "salsa or pico de gallo"
+      "chunky salsa"
     ],
     "groups": [
       "chilli"
@@ -3995,8 +3964,6 @@
     "aliases": [
       "shrimp stock",
       "prawn stock",
-      "seafood or fish stock",
-      "fish or seafood stock",
       "shellfish stock"
     ],
     "groups": [
@@ -4071,8 +4038,7 @@
     "aliases": [
       "veg stock",
       "vegetable broth",
-      "vegetable bouillon",
-      "vegetable stock cube"
+      "vegetable bouillon"
     ],
     "groups": []
   },
@@ -4308,8 +4274,7 @@
     "plural": "hoisin sauce",
     "aisle": "sauces-oils",
     "aliases": [
-      "hoisin",
-      "hoisin and sriracha"
+      "hoisin"
     ],
     "groups": [
       "gluten",
@@ -4325,8 +4290,7 @@
     "aliases": [
       "grated horseradish",
       "prepared horseradish",
-      "fresh horseradish",
-      "mustard or horseradish"
+      "fresh horseradish"
     ],
     "groups": []
   },
@@ -4356,7 +4320,10 @@
       "franks redhot",
       "louisiana hot sauce",
       "chilli sauce",
-      "habanero sauce"
+      "habanero sauce",
+      "pepper sauce",
+      "caribbean pepper sauce",
+      "scotch bonnet pepper sauce"
     ],
     "groups": [
       "chilli"
@@ -4584,8 +4551,7 @@
     "plural": "sriracha",
     "aisle": "sauces-oils",
     "aliases": [
-      "sriracha sauce",
-      "sriracha or thai chilli paste"
+      "sriracha sauce"
     ],
     "groups": [
       "chilli"
@@ -5550,8 +5516,7 @@
       "light brown sugar",
       "dark brown sugar",
       "soft brown sugar",
-      "muscovado",
-      "rock or brown sugar"
+      "muscovado"
     ],
     "groups": []
   },
@@ -5683,8 +5648,7 @@
     "aisle": "baking",
     "aliases": [
       "raw honey",
-      "runny honey",
-      "corn syrup or honey"
+      "runny honey"
     ],
     "groups": [
       "animal-product"
@@ -5759,10 +5723,7 @@
     "aliases": [
       "panko",
       "panko breadcrumb",
-      "japanese breadcrumb",
-      "panko mixed with",
-      "panko soaked in",
-      "panko or fine breadcrumb"
+      "japanese breadcrumb"
     ],
     "groups": [
       "gluten"
@@ -5984,8 +5945,7 @@
       "shaoxing",
       "shao hsing wine",
       "chinese cooking wine",
-      "shaoxing rice wine",
-      "shaoxing wine or sake"
+      "shaoxing rice wine"
     ],
     "groups": [
       "gluten",
@@ -6437,8 +6397,10 @@
       "white miso",
       "red miso",
       "shiro miso",
-      "white or red miso paste",
-      "doenjang"
+      "doenjang",
+      "soybean paste",
+      "fermented soybean paste",
+      "yellow soybean paste"
     ],
     "groups": [
       "gluten",
@@ -6538,7 +6500,8 @@
       "kerupuk"
     ],
     "groups": [
-      "shellfish"
+      "shellfish",
+      "gluten"
     ]
   },
   {
@@ -6587,7 +6550,6 @@
     "aisle": "asian-international",
     "aliases": [
       "rice vermicelli noodle",
-      "vermicelli",
       "bun noodle",
       "bee hoon"
     ],
@@ -6810,8 +6772,7 @@
       "thick wheat noodle",
       "chinese noodle",
       "biang biang noodle",
-      "knife-cut noodle",
-      "wheat noodles or udon"
+      "knife-cut noodle"
     ],
     "groups": [
       "gluten"
@@ -7619,7 +7580,6 @@
     "aliases": [
       "pork bone",
       "pork knuckle",
-      "pork knuckle or pork bone",
       "pork hock"
     ],
     "groups": [
@@ -7783,8 +7743,7 @@
     "aliases": [
       "banana leaves",
       "agave leaves",
-      "agave leaf",
-      "agave leaves or banana leaves"
+      "agave leaf"
     ],
     "groups": []
   },
@@ -7868,7 +7827,6 @@
     "aliases": [
       "cicoria",
       "dandelion greens",
-      "chicory or dandelion greens",
       "wild chicory"
     ],
     "groups": []
@@ -8702,8 +8660,7 @@
     "aliases": [
       "wooden skewers",
       "bamboo skewers",
-      "metal skewers",
-      "metal skewers or wooden skewers"
+      "metal skewers"
     ],
     "groups": []
   },
@@ -8737,5 +8694,333 @@
     "groups": [
       "soy"
     ]
+  },
+  {
+    "id": "kingfish",
+    "name": "kingfish",
+    "aisle": "seafood",
+    "aliases": [
+      "kingfish steak",
+      "kingfish fillet",
+      "yellowtail",
+      "yellowtail kingfish",
+      "hiramasa",
+      "buri"
+    ],
+    "groups": [
+      "fish"
+    ]
+  },
+  {
+    "id": "turkey-breast",
+    "name": "turkey breast",
+    "aisle": "meat",
+    "aliases": [
+      "turkey breast fillet"
+    ],
+    "groups": [
+      "meat",
+      "poultry"
+    ]
+  },
+  {
+    "id": "turkey-breast-roll",
+    "name": "turkey breast roll",
+    "aisle": "meat",
+    "aliases": [
+      "turkey roll",
+      "turkey breast roast"
+    ],
+    "groups": [
+      "meat",
+      "poultry",
+      "gluten"
+    ]
+  },
+  {
+    "id": "black-bean-sauce",
+    "name": "black bean sauce",
+    "aisle": "sauces-oils",
+    "aliases": [
+      "black bean paste",
+      "chunjang",
+      "black bean garlic sauce",
+      "chinese black bean sauce"
+    ],
+    "groups": [
+      "gluten",
+      "soy"
+    ]
+  },
+  {
+    "id": "beef-sausage",
+    "name": "beef sausage",
+    "aisle": "meat",
+    "aliases": [
+      "thick beef sausage",
+      "beef chipolata"
+    ],
+    "groups": [
+      "meat",
+      "beef",
+      "gluten"
+    ]
+  },
+  {
+    "id": "boerewors",
+    "name": "boerewors",
+    "aisle": "meat",
+    "aliases": [
+      "boerewors sausage",
+      "boerewors coil"
+    ],
+    "groups": [
+      "meat",
+      "beef",
+      "pork",
+      "lamb",
+      "gluten"
+    ]
+  },
+  {
+    "id": "merguez",
+    "name": "merguez sausage",
+    "aisle": "meat",
+    "aliases": [
+      "merguez"
+    ],
+    "groups": [
+      "meat",
+      "lamb",
+      "beef",
+      "gluten"
+    ]
+  },
+  {
+    "id": "pork-stock",
+    "name": "pork stock",
+    "aisle": "tins-jars",
+    "aliases": [
+      "pork broth",
+      "pork bone broth"
+    ],
+    "groups": [
+      "meat",
+      "pork"
+    ]
+  },
+  {
+    "id": "sponge-cake",
+    "name": "sponge cake",
+    "aisle": "bakery",
+    "aliases": [
+      "vanilla sponge cake",
+      "plain sponge cake",
+      "trifle sponge",
+      "savoiardi",
+      "sponge finger",
+      "ladyfinger"
+    ],
+    "groups": [
+      "gluten",
+      "egg",
+      "dairy"
+    ]
+  },
+  {
+    "id": "puffed-rice-cereal",
+    "name": "puffed rice cereal",
+    "aisle": "pasta-rice-grains",
+    "aliases": [
+      "puffed rice",
+      "rice bubbles",
+      "rice krispies"
+    ],
+    "groups": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "corn-flakes",
+    "name": "corn flakes",
+    "aisle": "pasta-rice-grains",
+    "aliases": [
+      "cornflakes",
+      "cornflake",
+      "corn flake"
+    ],
+    "groups": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "wheat-vermicelli",
+    "name": "wheat vermicelli",
+    "aisle": "pasta-rice-grains",
+    "aliases": [
+      "vermicelli",
+      "fine vermicelli",
+      "seviyan",
+      "sevai",
+      "vermicelli pasta"
+    ],
+    "groups": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "paratha",
+    "name": "paratha",
+    "aisle": "bakery",
+    "aliases": [
+      "frozen paratha",
+      "flaky paratha",
+      "lachha paratha",
+      "parotta"
+    ],
+    "groups": [
+      "gluten",
+      "dairy"
+    ]
+  },
+  {
+    "id": "vegetable-stock-cube",
+    "name": "vegetable stock cube",
+    "aisle": "tins-jars",
+    "aliases": [
+      "vegetable bouillon cube",
+      "vegetable stock powder"
+    ],
+    "groups": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "chicken-stock-cube",
+    "name": "chicken stock cube",
+    "aisle": "tins-jars",
+    "aliases": [
+      "stock cube",
+      "chicken stock powder",
+      "stock powder",
+      "chicken bouillon cube"
+    ],
+    "groups": [
+      "meat",
+      "poultry",
+      "gluten"
+    ]
+  },
+  {
+    "id": "beef-stock-cube",
+    "name": "beef stock cube",
+    "aisle": "tins-jars",
+    "aliases": [
+      "beef stock powder",
+      "beef bouillon cube"
+    ],
+    "groups": [
+      "meat",
+      "beef",
+      "gluten"
+    ]
+  },
+  {
+    "id": "emmental",
+    "name": "Emmental",
+    "aisle": "dairy-eggs",
+    "aliases": [
+      "emmentaler",
+      "emmenthal"
+    ],
+    "groups": [
+      "dairy",
+      "animal-product",
+      "non-vegetarian"
+    ]
+  },
+  {
+    "id": "gorgonzola",
+    "name": "Gorgonzola",
+    "aisle": "dairy-eggs",
+    "aliases": [
+      "gorgonzola dolce",
+      "gorgonzola piccante"
+    ],
+    "groups": [
+      "dairy",
+      "animal-product",
+      "non-vegetarian"
+    ]
+  },
+  {
+    "id": "dried-sweet-pepper",
+    "name": "dried sweet pepper",
+    "aisle": "fruit-veg",
+    "aliases": [
+      "dried choricero pepper",
+      "choricero pepper",
+      "choricero",
+      "peperoni cruschi",
+      "peperone crusco",
+      "dried crusco pepper",
+      "cruschi pepper",
+      "nora pepper",
+      "ñora pepper"
+    ],
+    "groups": []
+  },
+  {
+    "id": "gluten-free-flour",
+    "name": "gluten-free plain flour",
+    "aisle": "baking",
+    "aliases": [
+      "gluten-free flour",
+      "gf flour",
+      "gluten-free self-raising flour",
+      "gluten-free all-purpose flour"
+    ],
+    "groups": []
+  },
+  {
+    "id": "gluten-free-baking-powder",
+    "name": "gluten-free baking powder",
+    "aisle": "baking",
+    "aliases": [],
+    "groups": []
+  },
+  {
+    "id": "gluten-free-cornbread",
+    "name": "gluten-free cornbread",
+    "aisle": "bakery",
+    "aliases": [],
+    "groups": [
+      "dairy",
+      "egg"
+    ]
+  },
+  {
+    "id": "teff-flour",
+    "name": "teff flour",
+    "aisle": "baking",
+    "aliases": [
+      "teff",
+      "ivory teff flour",
+      "brown teff flour"
+    ],
+    "groups": []
+  },
+  {
+    "id": "maize-flour",
+    "name": "maize flour",
+    "aisle": "baking",
+    "aliases": [
+      "maize meal",
+      "white maize flour",
+      "unga",
+      "mealie meal",
+      "mielie meal"
+    ],
+    "groups": []
   }
 ]

@@ -1,0 +1,22 @@
+{
+  "beef-pho": {
+    "ingredients": [{ "from": "Hoisin and sriracha", "to": "Hoisin sauce" }],
+    "addIngredients": [{ "group": "To serve", "line": "Sriracha" }]
+  },
+  "pho": {
+    "ingredients": [{ "from": "Hoisin and sriracha", "to": "Hoisin sauce" }],
+    "addIngredients": [{ "group": "To serve", "line": "Sriracha" }]
+  },
+  "beef-korma": {
+    "ingredients": [{ "from": "Pinch of saffron in 2 tbsp warm milk (optional)", "to": "Pinch of saffron (optional)" }],
+    "addIngredients": [{ "group": "Curry", "line": "2 tbsp warm milk, for the saffron (optional)" }]
+  },
+  "stuffed-mushrooms": {
+    "ingredients": [{ "from": "30g panko mixed with 20g melted butter", "to": "30g panko, for the top" }],
+    "addIngredients": [{ "group": "Top", "line": "20g butter, melted" }]
+  },
+  "turkey-burger": {
+    "ingredients": [{ "from": "40g panko soaked in 3 tbsp milk", "to": "40g panko" }],
+    "addIngredients": [{ "group": "Patties", "line": "3 tbsp milk, for soaking the panko" }]
+  }
+}
