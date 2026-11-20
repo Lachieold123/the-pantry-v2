@@ -16,6 +16,7 @@ import { fileURLToPath } from 'node:url';
 
 import { buildIngredientIndex, type IngredientDef } from '../src/domain/ingredients/database.ts';
 import { parseIngredientLine } from '../src/domain/ingredients/parse.ts';
+import type { IngredientLine } from '../src/domain/ingredients/types.ts';
 import { deriveDiets } from '../src/domain/recipes/diets.ts';
 import { allLines, type Recipe } from '../src/domain/recipes/types.ts';
 import { validateRecipe } from '../src/domain/recipes/validate.ts';
@@ -42,14 +43,14 @@ function pendingFix(r: Recipe, fix: Fix | undefined): Fix | undefined {
   const steps = r.steps.map((s) => s.text);
   const todo = (texts: string[]) => (x: { from: string; to: string }) =>
     texts.some((t) => t.includes(x.from)) && !texts.some((t) => t.includes(x.to));
-  const out: Fix = {
+  const out = {
     ingredients: (fix.ingredients ?? []).filter(todo(lines)),
     steps: (fix.steps ?? []).filter(todo(steps)),
     addNotes: (fix.addNotes ?? []).filter((n) => !(r.notes ?? []).includes(n)),
     addSteps: (fix.addSteps ?? []).filter((a) => !steps.includes(a.text)),
     addIngredients: (fix.addIngredients ?? []).filter((a) => !lines.includes(a.line)),
   };
-  return Object.values(out).some((v) => v.length) ? out : undefined;
+  return Object.values(out).some((v) => v.length > 0) ? out : undefined;
 }
 
 /** A converted recipe with its pending fixes applied, every line re-linked to the current database, and its diets worked out again. */
@@ -72,8 +73,9 @@ function refreshConverted(r: Recipe): Recipe {
       const was = old.get(text);
       // An unchanged line keeps its parsed shape and only takes the current link.
       if (!was) return line;
-      const kept = { ...was, ingredientId: line.ingredientId };
-      if (!line.ingredientId) delete kept.ingredientId;
+      const kept: IngredientLine = { ...was };
+      if (line.ingredientId) kept.ingredientId = line.ingredientId;
+      else delete kept.ingredientId;
       return kept;
     });
     return g.section ? { title: g.section, items } : { items };
