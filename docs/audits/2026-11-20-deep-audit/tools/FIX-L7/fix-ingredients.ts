@@ -52,6 +52,13 @@ const NEW: [string, string, string, IngredientGroup[], string[]][] = [
   // Bottled stir-fry sauce matched frozen chips ("fry"). Most are soy sauce based and many carry oyster sauce; the label decides.
   ['stir-fry-sauce', 'stir-fry sauce', 'soy-sauce', ['gluten', 'soy', 'shellfish'], ['stir fry sauce', 'bottled stir-fry sauce']],
   ['dairy-free-dark-chocolate', 'dairy-free dark chocolate', 'dark-chocolate', ['soy'], ['vegan dark chocolate', 'dairy-free chocolate', 'vegan chocolate']],
+  // FIX-LOGIC-DATA-TODO §2: nut and shellfish words the avoid list could not see. Nutella-type spreads carry milk and soy too.
+  ['hazelnut-spread', 'chocolate hazelnut spread', 'hazelnuts', ['tree-nuts', 'dairy', 'soy'], ['nutella', 'gianduja', 'gianduia', 'hazelnut spread']],
+  ['praline', 'praline', 'hazelnuts', ['tree-nuts'], ['praline paste', 'hazelnut praline', 'almond praline']],
+  ['marzipan', 'marzipan', 'almond-meal', ['tree-nuts'], ['almond paste']],
+  ['frangipane', 'frangipane', 'almond-meal', ['tree-nuts', 'dairy', 'egg', 'gluten'], ['almond cream']],
+  // XO sauce is dried scallop, dried shrimp and cured ham in oil.
+  ['xo-sauce', 'XO sauce', 'oyster-sauce', ['shellfish', 'meat', 'pork'], ['xo', 'x.o. sauce']],
 ];
 const ADD: Record<string, string[]> = {
   'pork-shoulder': ['pork scotch fillet'],

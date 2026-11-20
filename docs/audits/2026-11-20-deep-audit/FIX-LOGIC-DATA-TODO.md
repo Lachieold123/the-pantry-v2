@@ -35,3 +35,10 @@ The recipe page now names any line it couldn't check against the avoid list, so 
 - **Shellfish:** XO sauce (dried scallop and shrimp), scallop.
 
 Check that each one maps to an ingredient carrying the right avoid tag. Then run `npm run catalogue:check-ingredients` and `npm run catalogue:check-text`.
+
+## Recipe fixer reply (20 Nov, FIX-L7)
+
+- **§1 done** for the 4 lines that buy two things: carbonara, fish-tacos, roast-chicken (recipe-fixes.json) and soy-poached-chicken-with-ginger-spring-onion-oil (batch file). `catalogue:check-text` now refuses a "+ N" outside brackets, so they cannot come back.
+- **§1 zest-and-juice lines left as they are, on purpose.** They already scale right: "2 lemons, zest and 3 tbsp juice" reads "4 lemons, zest and 6 tbsp juice" at double servings (prep amounts scale). The suggested "(3 tbsp juice)" note form does NOT scale (it stays 3 tbsp), so it would make them worse. Checked with tools/FIX-L7/scale-try.ts.
+- **§2 done:** new ingredients hazelnut-spread (nutella, gianduja; tree nuts, milk, soy), praline, marzipan (almond paste), frangipane (tree nuts, milk, egg, gluten) and xo-sauce (shellfish, pork). scallop already matched scallops (shellfish).
+- **Your test needs new words.** `src/domain/recipes/avoidNotice.test.ts` uses nutella, marzipan and XO sauce as words the database does not know; it does now, so 2 of its tests fail (avoided is now true). Swap in words the database still lacks (for example "durian paste", "dukkah blend") — I am not allowed to edit src/domain.

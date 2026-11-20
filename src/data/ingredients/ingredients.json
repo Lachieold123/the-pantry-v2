@@ -9060,5 +9060,73 @@
       "soy",
       "shellfish"
     ]
+  },
+  {
+    "id": "hazelnut-spread",
+    "name": "chocolate hazelnut spread",
+    "aisle": "nuts-dried",
+    "aliases": [
+      "nutella",
+      "gianduja",
+      "gianduia",
+      "hazelnut spread"
+    ],
+    "groups": [
+      "tree-nuts",
+      "dairy",
+      "soy"
+    ]
+  },
+  {
+    "id": "praline",
+    "name": "praline",
+    "aisle": "nuts-dried",
+    "aliases": [
+      "praline paste",
+      "hazelnut praline",
+      "almond praline"
+    ],
+    "groups": [
+      "tree-nuts"
+    ]
+  },
+  {
+    "id": "marzipan",
+    "name": "marzipan",
+    "aisle": "nuts-dried",
+    "aliases": [
+      "almond paste"
+    ],
+    "groups": [
+      "tree-nuts"
+    ]
+  },
+  {
+    "id": "frangipane",
+    "name": "frangipane",
+    "aisle": "nuts-dried",
+    "aliases": [
+      "almond cream"
+    ],
+    "groups": [
+      "tree-nuts",
+      "dairy",
+      "egg",
+      "gluten"
+    ]
+  },
+  {
+    "id": "xo-sauce",
+    "name": "XO sauce",
+    "aisle": "sauces-oils",
+    "aliases": [
+      "xo",
+      "x.o. sauce"
+    ],
+    "groups": [
+      "shellfish",
+      "meat",
+      "pork"
+    ]
   }
 ]

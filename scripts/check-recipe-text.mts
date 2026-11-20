@@ -28,6 +28,9 @@ for (const r of recipes) {
     index.match,
   ))
     problems.push(`${r.id} (${r.source}): one ingredient per line, put the alternative in brackets: "${l}"`);
+  // "3 egg yolks + 1 whole egg" buys two things but the shopping list counts one quantity (F-1).
+  for (const l of r.ingredientGroups.flatMap((g) => g.items))
+    if (/\+\s*\d/.test(l.raw.replace(/\([^)]*\)/g, ''))) problems.push(`${r.id} (${r.source}): one thing to buy per line, split "${l.raw}"`);
   const counted = r.ingredientGroups.flatMap((g) => g.items).filter((l) => !l.optional);
   const groups = new Set(counted.flatMap((l) => (l.ingredientId ? (index.byId.get(l.ingredientId)?.groups ?? []) : [])));
   for (const p of claimProblems([r.title, r.summary ?? '', ...(r.notes ?? [])], groups)) problems.push(`${r.id} (${r.source}): ${p}`);

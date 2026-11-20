@@ -761,10 +761,20 @@
         {
           "from": "200g spaghetti or rigatoni",
           "to": "200g spaghetti (or rigatoni)"
+        },
+        {
+          "from": "3 egg yolks + 1 whole egg",
+          "to": "3 egg yolks"
         }
       ],
       "addNotes": [
         "The egg is only lightly cooked by the pasta's heat. If you're pregnant, cooking for young children or older people, or have a weakened immune system, choose a fully cooked pasta dish instead."
+      ],
+      "addIngredients": [
+        {
+          "group": null,
+          "line": "1 egg"
+        }
       ]
     },
     "carbonnade": {
@@ -2956,6 +2966,18 @@
       },
       "addNotes": [
         "Food safety: Cook chicken until the thickest part reaches 75°C and the juices run clear, with no pink meat near the bone."
+      ],
+      "ingredients": [
+        {
+          "from": "2 tbsp chopped thyme + 1 tbsp rosemary",
+          "to": "2 tbsp chopped thyme"
+        }
+      ],
+      "addIngredients": [
+        {
+          "group": null,
+          "line": "1 tbsp chopped rosemary"
+        }
       ]
     },
     "roasted-veggie-bowl": {
@@ -4067,6 +4089,18 @@
     "fish-tacos": {
       "addNotes": [
         "Food safety: Cook fish until it turns opaque and flakes easily, about 63°C in the thickest part."
+      ],
+      "ingredients": [
+        {
+          "from": "1 chipotle in adobo, chopped + 1 tsp adobo sauce",
+          "to": "1 chipotle in adobo, chopped"
+        }
+      ],
+      "addIngredients": [
+        {
+          "group": "Chipotle crema",
+          "line": "1 tsp adobo sauce"
+        }
       ]
     },
     "lamb-tagine": {

@@ -9086,8 +9086,8 @@
             "note": "or pancetta"
           },
           {
-            "item": "egg yolks + 1 whole egg",
-            "raw": "3 egg yolks + 1 whole egg",
+            "item": "egg yolks",
+            "raw": "3 egg yolks",
             "quantity": 3,
             "ingredientId": "egg"
           },
@@ -9108,6 +9108,12 @@
             "item": "Salt for pasta water",
             "raw": "Salt for pasta water",
             "ingredientId": "salt"
+          },
+          {
+            "item": "egg",
+            "raw": "1 egg",
+            "quantity": 1,
+            "ingredientId": "egg"
           }
         ]
       }
@@ -22336,10 +22342,10 @@
           },
           {
             "item": "chipotle in adobo",
-            "raw": "1 chipotle in adobo, chopped + 1 tsp adobo sauce",
+            "raw": "1 chipotle in adobo, chopped",
             "quantity": 1,
             "ingredientId": "chipotle-in-adobo",
-            "prep": "chopped + 1 tsp adobo sauce"
+            "prep": "chopped"
           },
           {
             "item": "lime juice",
@@ -22355,6 +22361,13 @@
             "unit": "clove",
             "ingredientId": "garlic",
             "prep": "grated"
+          },
+          {
+            "item": "adobo sauce",
+            "raw": "1 tsp adobo sauce",
+            "quantity": 1,
+            "unit": "tsp",
+            "ingredientId": "chipotle-in-adobo"
           }
         ]
       },
@@ -38924,11 +38937,11 @@
             "prep": "halved"
           },
           {
-            "item": "chopped thyme + 1 tbsp rosemary",
-            "raw": "2 tbsp chopped thyme + 1 tbsp rosemary",
+            "item": "chopped thyme",
+            "raw": "2 tbsp chopped thyme",
             "quantity": 2,
             "unit": "tbsp",
-            "ingredientId": "rosemary"
+            "ingredientId": "thyme"
           },
           {
             "item": "salt",
@@ -38962,6 +38975,13 @@
             "quantity": 4,
             "unit": "sprig",
             "ingredientId": "thyme"
+          },
+          {
+            "item": "chopped rosemary",
+            "raw": "1 tbsp chopped rosemary",
+            "quantity": 1,
+            "unit": "tbsp",
+            "ingredientId": "rosemary"
           }
         ]
       },
@@ -341857,11 +341877,11 @@
             "prep": "sliced"
           },
           {
-            "item": "spring onion",
-            "raw": "6 spring onion, 3 sliced and 3 whole",
-            "quantity": 6,
+            "item": "spring onions",
+            "raw": "3 spring onions, sliced",
+            "quantity": 3,
             "ingredientId": "spring-onion",
-            "prep": "3 sliced and 3 whole"
+            "prep": "sliced"
           },
           {
             "item": "soy sauce",
@@ -341911,6 +341931,13 @@
             "quantity": 1,
             "ingredientId": "cucumber",
             "prep": "sliced"
+          },
+          {
+            "item": "spring onions",
+            "raw": "3 spring onions, whole",
+            "quantity": 3,
+            "ingredientId": "spring-onion",
+            "prep": "whole"
           }
         ]
       }
