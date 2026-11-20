@@ -18,6 +18,7 @@
     "catalogue:check-text": "tsx scripts/check-recipe-text.mts",
     "feed:verify": "tsx scripts/verify-feed-payload.mts",
     "catalogue:validate": "tsx scripts/validate-house-recipes.mts",
+    "catalogue:photo-sources": "tsx scripts/write-photo-sources.mts",
     "export:web": "expo export --platform web",
     "format:check": "prettier --check \"src/**/*.{ts,tsx}\" \"scripts/**/*.mts\" \"e2e/**/*.{ts,mjs}\"",
     "test:web": "playwright test -c e2e/web/playwright.config.ts"

@@ -8,6 +8,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { INGREDIENTS, KITCHEN } from '@/data/catalogue/catalogue';
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
+import { PHOTO_SOURCES } from '@/data/catalogue/photoSources';
 import { hasCooked } from '@/domain/cook/cook';
 import { cookable } from '@/domain/cupboard/cookable';
 import { cupboardIds } from '@/domain/cupboard/match';
@@ -35,6 +36,7 @@ import { makeStyles } from '@/ui/theme/makeStyles';
 import { RADIUS, RECIPE, SPACE } from '@/ui/tokens/type';
 import { Ingredients, Method, Notes } from './RecipeBody';
 import { CupboardSummary } from './CupboardSummary';
+import { PhotoCredit } from './PhotoCredit';
 import { RecipeHeader } from './RecipeHeader';
 import { ServingsSheet } from './ServingsSheet';
 import { goBack } from '@/lib/navigation';
@@ -205,11 +207,7 @@ export function RecipeScreen({ id }: { id: string }) {
                   {originNote}
                 </Text>
               ) : null}
-              {photoNote ? (
-                <Text variant="metaSmall" align="center" testID="recipe-photo-credit">
-                  {photoNote}
-                </Text>
-              ) : null}
+              {photoNote ? <PhotoCredit credit={photoNote} page={mine ? undefined : PHOTO_SOURCES[recipe.id]} /> : null}
             </View>
           ) : null}
         </ScrollView>
