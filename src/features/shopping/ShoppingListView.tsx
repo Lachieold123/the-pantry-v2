@@ -10,6 +10,7 @@ import { Pressable, View } from 'react-native';
 import { INGREDIENTS } from '@/data/catalogue/catalogue';
 import { AISLE_LABELS } from '@/domain/recipes/labels';
 import {
+  capitalise,
   clearList,
   countToBuy,
   EMPTY_EDITS,
@@ -29,7 +30,9 @@ import { useToast } from '@/ui/patterns/Toast';
 import { Chip } from '@/ui/primitives/Chip';
 import { Icon } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
-import { PLAN, SPACE } from '@/ui/tokens/type';
+import { PLAN } from '@/ui/tokens/plan';
+import { ICON, SPACE } from '@/ui/tokens/type';
+import { undoClear } from '@/domain/shopping/extras';
 import { AddItemRow, itemLabel, ListCard, Pill, ShoppingRow } from './ShoppingRows';
 
 export function ShoppingListView({ week, weekLabel, onPlan }: { week: ISODate; weekLabel: string; onPlan: () => void }) {
@@ -59,10 +62,10 @@ export function ShoppingListView({ week, weekLabel, onPlan }: { week: ISODate; w
     });
   };
   const clearAll = () => {
-    // Undo stands in for a confirm step: the old edits come straight back.
-    const before = edits;
-    edit((e) => clearList(e, list));
-    toast({ message: 'List cleared', undo: () => edit(() => before) });
+    // Undo stands in for a confirm step: what clearing took comes back, and nothing else changes (BUG-18).
+    const cleared = clearList(edits, list);
+    edit(() => cleared);
+    toast({ message: 'List cleared', undo: () => edit(undoClear(edits, cleared)) });
   };
   const addExtra = (text: string) => edit((e) => ({ ...e, extras: [...e.extras, { id: newId(), text, addedAt: Date.now() }] }));
 
@@ -150,7 +153,7 @@ export function ShoppingListView({ week, weekLabel, onPlan }: { week: ISODate; w
           testID="shopping-restore"
           style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: SPACE.xxs, paddingVertical: PLAN.rowY }}
         >
-          <Icon name="refresh" size={13} colour="inkSoft" />
+          <Icon name="refresh" size={ICON.meta} colour="inkSoft" />
           <Text variant="meta" colour="inkSoft">
             {`Restore ${list.removedCount} removed ${list.removedCount === 1 ? 'item' : 'items'}`}
           </Text>
@@ -159,6 +162,16 @@ export function ShoppingListView({ week, weekLabel, onPlan }: { week: ISODate; w
       <InCupboard
         items={list.inCupboard}
         onBack={(item) => {
+          // A stand-in or a shelf item isn't in the cupboard itself: asking for it puts it on the list.
+          if (item.coveredBy) {
+            const extra = { id: newId(), text: capitalise(item.name), ingredientId: item.key, addedAt: Date.now() };
+            edit((e) => ({ ...e, extras: [...e.extras, extra] }));
+            toast({
+              message: `${capitalise(item.name)} is on the list`,
+              undo: () => edit((e) => ({ ...e, extras: e.extras.filter((x) => x.id !== extra.id) })),
+            });
+            return;
+          }
           removeFromCupboard(item.key);
           toast({ message: `${item.name} is back on the list`, undo: () => addToCupboard([item.key], 'manual') });
         }}
@@ -167,7 +180,13 @@ export function ShoppingListView({ week, weekLabel, onPlan }: { week: ISODate; w
   );
 }
 
-/** Things left off because you have them: shown quietly, never dropped (D-010). Tap one to put it back. */
+const ingredientName = (id: string) => INGREDIENTS.byId.get(id)?.name ?? id;
+
+/**
+ * Things left off because you have them: shown quietly, never dropped (D-010). A stand-in names
+ * what you have instead, "White onion (brown onion)"; shelf items are the ones you're assumed to keep.
+ * Tap one to put it back.
+ */
 function InCupboard({ items, onBack }: { items: ShoppingItem[]; onBack: (item: ShoppingItem) => void }) {
   const others = items.filter((i) => !INGREDIENTS.byId.get(i.key)?.staple);
   if (others.length === 0) return null;
@@ -183,7 +202,9 @@ function InCupboard({ items, onBack }: { items: ShoppingItem[]; onBack: (item: S
             key={item.key}
             kind="quick"
             icon="add"
-            label={itemLabel(item)}
+            label={
+              item.coveredBy && item.coveredBy !== 'shelf' ? `${itemLabel(item)} (${ingredientName(item.coveredBy)})` : itemLabel(item)
+            }
             selected={false}
             onPress={() => onBack(item)}
             testID={`shopping-back-${item.key}`}

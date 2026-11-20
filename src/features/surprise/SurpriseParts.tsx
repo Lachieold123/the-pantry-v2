@@ -12,7 +12,8 @@ import { Button } from '@/ui/primitives/Button';
 import { IconButton } from '@/ui/primitives/IconButton';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
-import { SPACE, SURPRISE } from '@/ui/tokens/type';
+import { SURPRISE } from '@/ui/tokens/surprise';
+import { SPACE } from '@/ui/tokens/type';
 
 const pad = (n: number) => String(n).padStart(2, '0');
 

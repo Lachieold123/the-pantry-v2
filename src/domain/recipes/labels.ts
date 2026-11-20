@@ -2,7 +2,7 @@
 import type { AisleId } from '../ingredients/database';
 import type { AvoidOption, DietPreference } from './diets';
 import type { TimeFilter } from './search';
-import type { CuisineId, DietTag, Difficulty, MealType, Recipe } from './types';
+import type { CuisineId, Difficulty, MealType, Provenance, Recipe } from './types';
 
 export const CUISINE_LABELS: Readonly<Record<CuisineId, string>> = {
   italian: 'Italian',
@@ -56,14 +56,6 @@ export const TIME_FILTER_LABELS: Readonly<Record<TimeFilter, string>> = {
   'under-45': '≤ 45 min',
   'under-60': '≤ 1 hr',
   'over-60': 'Over 1 hr',
-};
-
-export const DIET_LABELS: Readonly<Record<DietTag, string>> = {
-  vegetarian: 'Vegetarian',
-  vegan: 'Vegan',
-  pescatarian: 'Pescatarian',
-  'no-gluten': 'No gluten ingredients',
-  'no-dairy': 'No dairy ingredients',
 };
 
 export const AISLE_LABELS: Readonly<Record<AisleId, string>> = {
@@ -141,3 +133,19 @@ export function recipeAsText(recipe: Pick<Recipe, 'title' | 'summary' | 'serving
     ...(recipe.notes?.length ? ['', 'Notes', ...recipe.notes] : []),
   ].join('\n');
 }
+
+/**
+ * How a house recipe was made, said plainly on its page (REL-23, with D-029's
+ * photo label). Every house recipe began as an AI draft (D-008); reviewed ones
+ * were checked and edited by us (D-036), vetted ones also cooked by us.
+ */
+export const RECIPE_ORIGIN: Readonly<Record<Provenance, string>> = {
+  vetted: 'Drafted with AI help, then checked, edited and cooked by us',
+  reviewed: 'Drafted with AI help, then checked and edited by us',
+  'ai-draft': 'An AI-drafted recipe we haven’t checked yet',
+  'ai-assisted': AI_ASSISTED_LABEL,
+};
+
+/** The same, for Settings › About. */
+export const ABOUT_RECIPES =
+  'Our recipes were drafted with AI help, then checked and edited by us before they’re published. Some photos are AI-generated; each one is labelled on its recipe.';

@@ -11,6 +11,7 @@ import { useAppReady } from '@/features/app/useAppReady';
 import { ToastProvider } from '@/ui/patterns/Toast';
 import { AppChrome } from '@/ui/theme/AppChrome';
 import { ThemeProvider, useTheme } from '@/ui/theme/ThemeProvider';
+import { FIXED } from '@/ui/tokens/colour';
 
 void SplashScreen.preventAutoHideAsync();
 
@@ -59,7 +60,7 @@ function RootStack() {
       {/* The side menu draws its own slide and backdrop over whatever is underneath. */}
       <Stack.Screen
         name="menu"
-        options={{ presentation: 'transparentModal', animation: 'none', contentStyle: { backgroundColor: 'transparent' } }}
+        options={{ presentation: 'transparentModal', animation: 'none', contentStyle: { backgroundColor: FIXED.clear } }}
       />
       <Stack.Screen name="settings/index" />
       <Stack.Screen name="library" />

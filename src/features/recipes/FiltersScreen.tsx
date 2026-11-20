@@ -11,9 +11,8 @@ import { CUISINE_LABELS, DIFFICULTY_LABELS, MEAL_TYPE_LABELS } from '@/domain/re
 import { seasonOn, type TimeFilter } from '@/domain/recipes/search';
 import { CUISINES, DIFFICULTIES, MEAL_TYPES } from '@/domain/recipes/types';
 import { goBack } from '@/lib/navigation';
-import { useAllRecipes } from '@/store/recipeBook';
+import { useEatableRecipes } from '@/store/eatable';
 import { toggleIn, useRecipeFilters } from '@/store/recipeFilters';
-import { useSaved } from '@/store/saved';
 import { ActionBar } from '@/ui/patterns/ActionBar';
 import { Button } from '@/ui/primitives/Button';
 import { IconButton } from '@/ui/primitives/IconButton';
@@ -23,7 +22,7 @@ import { useTheme } from '@/ui/theme/ThemeProvider';
 import type { ColourTokens } from '@/ui/tokens/colour';
 import { cuisineTint } from '@/ui/tokens/cuisine';
 import { FILTERS, FILTER_TINTS } from '@/ui/tokens/screens';
-import { PRESSED, RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
+import { ICON, PRESSED, RADIUS, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 import { useRecipeResults } from './useRecipeResults';
 
 const DIETS: readonly { value: DietPreference; label: string }[] = [
@@ -79,11 +78,10 @@ export function FiltersScreen() {
     useShallow(({ filters, update, clear, setShowAll }) => ({ filters, update, clear, setShowAll })),
   );
   const { results, activeFilters, browsing } = useRecipeResults();
-  const all = useAllRecipes();
-  const hidden = useSaved((s) => s.hidden);
+  const eatable = useEatableRecipes();
   const season = seasonOn(new Date());
-  // With nothing chosen Browse shows its shelves, so the count is everything the cook hasn't hidden.
-  const count = browsing ? all.filter((r) => !hidden.includes(r.id)).length : results.length;
+  // With nothing chosen Browse shows its shelves, so the count is everything this cook eats.
+  const count = browsing ? eatable.length : results.length;
   const show = () => {
     // "Show 170 recipes" should show them, not the shelves.
     if (browsing) setShowAll(true);
@@ -93,7 +91,7 @@ export function FiltersScreen() {
   return (
     <View style={styles.page} testID="filters-screen">
       <View style={styles.head}>
-        <IconButton icon="back" label="Back" shape="squareOnSoft" size={24} onPress={() => goBack(router)} testID="filters-back" />
+        <IconButton icon="back" label="Back" shape="squareOnSoft" size={ICON.nav} onPress={() => goBack(router)} testID="filters-back" />
         <Text variant="titleSansLarge" accessibilityRole="header" style={styles.title}>
           {'Refine your\nrotation'}
         </Text>

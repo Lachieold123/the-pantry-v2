@@ -3,12 +3,13 @@
 // for the same ingredient are merged, amounts are scaled to the servings
 // chosen, and lime juice becomes limes. Each row says whether you already
 // have it, so the sheet can tick only what you need.
-import { normaliseWords, type IngredientIndex } from '../ingredients/database';
+import type { IngredientIndex } from '../ingredients/database';
 import { formatQuantity, type UnitSystem } from '../ingredients/format';
 import { mapQuantity } from '../ingredients/quantity';
 import type { IngredientLine } from '../ingredients/types';
 import { allLines, type Recipe } from '../recipes/types';
-import { asWholeFruit, capitalise, mergeAmounts, type ListExtra, type ShoppingList } from './derive';
+import { listKey, mergeAmounts, wholeFruitLines } from './amounts';
+import { capitalise, type ListExtra, type ShoppingList } from './derive';
 import type { ListAddition } from './extras';
 
 /** need: not in the cupboard · have: in the cupboard · staple: salt, oil, water · on-list: this recipe's already there. */
@@ -41,10 +42,12 @@ export function recipeListRows(args: {
   const { recipe, servings, index, has, onList, units } = args;
   const ratio = servings / recipe.servings;
   const groups = new Map<string, IngredientLine[]>();
-  for (const line of allLines(recipe)) {
-    const scaled = asWholeFruit(line.quantity === undefined ? line : { ...line, quantity: mapQuantity(line.quantity, (n) => n * ratio) });
-    const key = rowKey(line);
-    groups.set(key, [...(groups.get(key) ?? []), scaled]);
+  const scaled = allLines(recipe).map((line) =>
+    line.quantity === undefined ? line : { ...line, quantity: mapQuantity(line.quantity, (n) => n * ratio) },
+  );
+  for (const line of wholeFruitLines(scaled)) {
+    const key = listKey(line);
+    groups.set(key, [...(groups.get(key) ?? []), line]);
   }
   const rows: RecipeListRow[] = [];
   for (const [key, lines] of groups) {
@@ -86,15 +89,7 @@ export function recipeKeysOnList(list: ShoppingList, extras: readonly ListExtra[
     if (item.recipeIds.includes(recipeId)) keys.add(item.key);
   }
   for (const x of extras) {
-    if (x.recipeId === recipeId && !x.ingredientId) keys.add(textKey(x.text.split(',')[0] ?? x.text));
+    if (x.recipeId === recipeId && !x.ingredientId) keys.add(listKey({ item: x.text.split(',')[0] ?? x.text }));
   }
   return keys;
-}
-
-function rowKey(line: IngredientLine): string {
-  return line.ingredientId ?? textKey(line.item);
-}
-
-function textKey(item: string): string {
-  return `text:${normaliseWords(item).join(' ')}`;
 }

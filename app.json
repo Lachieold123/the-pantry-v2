@@ -130,7 +130,7 @@
       [
         "expo-image-picker",
         {
-          "photosPermission": "The Pantry uses your photos when you share a dish you cooked.",
+          "photosPermission": "The Pantry uses the photos you choose when you share a dish you cooked.",
           "cameraPermission": "The Pantry uses the camera to photograph a dish you cooked.",
           "microphonePermission": false
         }

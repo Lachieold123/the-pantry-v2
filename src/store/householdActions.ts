@@ -7,10 +7,16 @@ import {
   joinHousehold,
   leaveHousehold,
   myHousehold,
+  previewInvite,
   pullRows,
+  removeMember as removeOnServer,
+  revokeInvites,
   type Household,
+  type InvitePreview,
+  type Problem,
   type Result,
 } from '@/lib/household';
+import { deleteAccount as deleteUser } from '@/lib/account';
 import {
   applyMirror,
   EMPTY_HOUSEHOLD,
@@ -28,7 +34,7 @@ export async function startHousehold(name: string): Promise<Result<Household>> {
   const me = await signIn();
   if (!me.ok) return me;
   const made = await createHousehold(name);
-  if (!made.ok) return made;
+  if (!made.ok) return made.problem === 'already-in-household' ? recover(me.value, made) : made;
   const house = await myHousehold();
   if (!house.ok || !house.value) return house.ok ? { ok: false, problem: 'failed' } : house;
   useHousehold.setState({ ...EMPTY_HOUSEHOLD, household: house.value, rejoin: undefined });
@@ -61,15 +67,66 @@ export async function joinWithCode(code: string, name: string): Promise<Result<H
   const me = await signIn();
   if (!me.ok) return me;
   const joined = await joinHousehold(code, name);
-  if (!joined.ok) return joined;
+  if (!joined.ok) return joined.problem === 'already-in-household' ? recover(me.value, joined) : joined;
   const house = await myHousehold();
   if (!house.ok || !house.value) return house.ok ? { ok: false, problem: 'failed' } : house;
   return adoptHousehold(house.value, me.value);
 }
 
+/**
+ * The server says this phone is already in a household, but the phone doesn't
+ * know it: an earlier start or join went through and the answer was lost
+ * (BUG-10). Take that household up rather than leave the phone stuck.
+ */
+async function recover(userId: string, problem: { ok: false; problem: Problem }): Promise<Result<Household>> {
+  const house = await myHousehold();
+  if (!house.ok || !house.value) return problem;
+  return adoptHousehold(house.value, userId);
+}
+
+/** At launch: a phone that has signed in for a household but doesn't think it's in one checks with the server. */
+export async function recoverHousehold(): Promise<void> {
+  const { household, userId } = useHousehold.getState();
+  if (household || !userId) return;
+  const house = await myHousehold();
+  if (house.ok && house.value && !useHousehold.getState().household) await adoptHousehold(house.value, userId);
+}
+
 /** A link and code to send someone. */
 export async function inviteCode(): Promise<Result<string>> {
   return createInvite();
+}
+
+/** Which household a code is for, before joining (SEC-16). */
+export function inviteFor(code: string): Promise<Result<InvitePreview | undefined>> {
+  return previewInvite(code);
+}
+
+/** Cancels the household's unused invite codes (SEC-08). */
+export function cancelInvites(): Promise<Result<null>> {
+  return revokeInvites();
+}
+
+/** Takes someone else out of the household (SEC-15), then shows the list without them. */
+export async function removeMember(userId: string): Promise<Result<null>> {
+  const removed = await removeOnServer(userId);
+  if (!removed.ok) return removed;
+  const fresh = await myHousehold();
+  if (fresh.ok && fresh.value) useHousehold.setState({ household: fresh.value });
+  return removed;
+}
+
+/**
+ * For a phone that shared a kitchen without an account (the quiet anonymous
+ * user): deletes that user and everything the server keeps for it, leaving
+ * any household first. The plan, list and cupboard stay on this phone.
+ */
+export async function deleteHouseholdData(): Promise<Result<null>> {
+  const gone = await deleteUser();
+  if (!gone.ok) return { ok: false, problem: gone.problem === 'offline' ? 'offline' : 'failed' };
+  stopSync();
+  useHousehold.setState({ ...EMPTY_HOUSEHOLD, userId: undefined, rejoin: undefined, lastSyncedAt: undefined });
+  return { ok: true, value: null };
 }
 
 /** Leave: this phone keeps its plan, list and cupboard as they are, and stops sharing. */

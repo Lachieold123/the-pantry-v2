@@ -101,14 +101,28 @@ const FIELD_FOR: Record<string, DraftProblem['field']> = {
   steps: 'method',
 };
 
-function toDraftProblem(p: RecipeProblem): DraftProblem {
+/** The ingredient line a problem is about, so the message can name it (BUG-26). */
+function lineAt(path: string, recipe: Recipe): string | undefined {
+  const m = /^ingredientGroups\[(\d+)\]\.items\[(\d+)\](?:\.(\w+))?/.exec(path);
+  if (!m) return undefined;
+  return recipe.ingredientGroups[Number(m[1])]?.items[Number(m[2])]?.raw;
+}
+
+function ingredientMessage(p: RecipeProblem, recipe: Recipe): string {
+  const raw = lineAt(p.path, recipe);
+  if (raw === undefined) return 'Add at least one ingredient.';
+  if (p.path.endsWith('.item')) return `Say what "${raw}" is: it has an amount but no ingredient.`;
+  return `Check the amount in "${raw}".`;
+}
+
+function toDraftProblem(p: RecipeProblem, recipe: Recipe): DraftProblem {
   const root = p.path.split(/[.[]/)[0] ?? '';
   const field = FIELD_FOR[root] ?? 'other';
   const message =
     field === 'title' && p.message === 'is empty'
       ? 'Give it a name.'
       : field === 'ingredients'
-        ? 'Add at least one ingredient.'
+        ? ingredientMessage(p, recipe)
         : field === 'method'
           ? 'Add at least one step.'
           : field === 'mealTypes'
@@ -146,7 +160,7 @@ export function buildRecipe(id: string, draft: RecipeDraft, source: RecipeSource
   if (draft.summary.trim()) recipe.summary = draft.summary.trim();
   if (notes.length) recipe.notes = notes;
   for (const p of validateRecipe(recipe)) {
-    const d = toDraftProblem(p);
+    const d = toDraftProblem(p, recipe);
     if (!problems.some((x) => x.field === d.field)) problems.push(d);
   }
   return problems.length ? { problems, unsure } : { recipe, problems, unsure };

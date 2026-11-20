@@ -10,14 +10,17 @@ import { View } from 'react-native';
 
 import { useMyRecipeList } from '@/store/recipeBook';
 import { useSaved } from '@/store/saved';
+import { LibraryCardRow, libraryRowKey, libraryRows } from '@/ui/patterns/LibraryCard';
 import { LibraryHead, type CountUnit } from '@/ui/patterns/LibraryHeader';
+import { ListScreen } from '@/ui/primitives/ListScreen';
 import { Screen } from '@/ui/primitives/Screen';
+import { LIBRARY } from '@/ui/tokens/library';
 import { CollectionsTab } from './CollectionsTab';
-import { CookmarksTab, useCookmarkCount } from './CookmarksTab';
+import { CookmarksEmpty, useCookmarkCount, useCookmarks } from './CookmarksTab';
 import { LibraryTabs, tabFromLink, type LibraryTab } from './LibraryTabs';
 import { MyRecipesTab } from './MyRecipesTab';
 import { RecentTab, useRecentCount } from './RecentTab';
-import { RECIPES_UNIT } from './libraryHooks';
+import { imageFor, RECIPES_UNIT, useOpenRecipe } from './libraryHooks';
 
 // Under a head titled "Library", a bare "4 items" wouldn't say what was counted.
 const UNIT: Record<LibraryTab, CountUnit> = {
@@ -27,8 +30,7 @@ const UNIT: Record<LibraryTab, CountUnit> = {
   recent: RECIPES_UNIT,
 };
 
-const BODY: Record<LibraryTab, ComponentType> = {
-  cookmarks: CookmarksTab,
+const BODY: Record<Exclude<LibraryTab, 'cookmarks'>, ComponentType> = {
   collections: CollectionsTab,
   mine: MyRecipesTab,
   recent: RecentTab,
@@ -57,14 +59,37 @@ export function LibraryScreen({ initialTab }: Props) {
     mine: useMyRecipeList().length,
     recent: useRecentCount(),
   };
-  const Body = BODY[tab];
+  const cookmarks = useCookmarks();
+  const open = useOpenRecipe();
+  const head = (
+    <View>
+      <LibraryHead kicker="Your kitchen" title="Library" count={counts[tab]} unit={UNIT[tab]} />
+      <LibraryTabs value={tab} onChange={setTab} />
+    </View>
+  );
 
+  // Cookmarks can hold the whole catalogue, so its cards are a virtualised list (REL-14).
+  if (tab === 'cookmarks') {
+    return (
+      <ListScreen
+        testID="library-screen"
+        header={
+          <View testID="cookmarks-screen">
+            {head}
+            {cookmarks.recipes.length ? null : <CookmarksEmpty />}
+          </View>
+        }
+        items={libraryRows(cookmarks.recipes)}
+        keyOf={libraryRowKey}
+        gap={LIBRARY.gridGap}
+        renderItem={(row) => <LibraryCardRow row={row} imageFor={imageFor} onOpen={open} onUnsave={cookmarks.unsave} />}
+      />
+    );
+  }
+  const Body = BODY[tab];
   return (
     <Screen testID="library-screen">
-      <View>
-        <LibraryHead kicker="Your kitchen" title="Library" count={counts[tab]} unit={UNIT[tab]} />
-        <LibraryTabs value={tab} onChange={setTab} />
-      </View>
+      {head}
       <Body />
     </Screen>
   );

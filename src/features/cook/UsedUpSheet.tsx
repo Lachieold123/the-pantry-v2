@@ -10,9 +10,16 @@ import { Checkbox } from '@/ui/primitives/Checkbox';
 import { Text } from '@/ui/primitives/Text';
 import { SPACE } from '@/ui/tokens/type';
 
-type Props = { visible: boolean; ids: readonly string[]; nameOf: (id: string) => string; onFinish: (usedUp: string[]) => void };
+type Props = {
+  visible: boolean;
+  ids: readonly string[];
+  nameOf: (id: string) => string;
+  onFinish: (usedUp: string[]) => void;
+  /** Swiped away (or VoiceOver's escape): back to Cook Mode, nothing logged. Logging takes a choice. */
+  onCancel: () => void;
+};
 
-export function UsedUpSheet({ visible, ids, nameOf, onFinish }: Props) {
+export function UsedUpSheet({ visible, ids, nameOf, onFinish, onCancel }: Props) {
   const [ticked, setTicked] = useState<ReadonlySet<string>>(new Set());
   const toggle = (id: string) =>
     setTicked((t) => {
@@ -22,7 +29,7 @@ export function UsedUpSheet({ visible, ids, nameOf, onFinish }: Props) {
       return next;
     });
   return (
-    <ModalSheet visible={visible} onClose={() => onFinish([])} title="Used anything up?" testID="used-up-sheet">
+    <ModalSheet visible={visible} onClose={onCancel} title="Used anything up?" testID="used-up-sheet">
       <View style={{ gap: SPACE.xs, paddingVertical: SPACE.xs }}>
         <Text variant="bodySmall" colour="inkSoft">
           {'Tick what’s finished and we’ll take it out of your cupboard.'}

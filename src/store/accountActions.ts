@@ -22,7 +22,7 @@ import { myHousehold } from '@/lib/household';
 import { signedOutState, useAccount, watchOffers } from './account';
 import { accountEngine, accountSnapshot } from './accountSync';
 import { adoptHousehold, EMPTY_HOUSEHOLD, householdFlush, householdWaiting, stopSync as stopHousehold, useHousehold } from './household';
-import { resetThisPhone } from './reset';
+import { resetThisPhone, wipeAfterDeletion } from './reset';
 
 /** Why an account action didn't happen. `unsaved`: changes are still waiting to send, so signing out would lose them. */
 export type AccountProblem = Problem | 'unsaved';
@@ -173,5 +173,6 @@ export async function deleteAccount(): Promise<AccountResult<null>> {
   const gone = await deleteOnServer();
   if (!gone.ok) return gone;
   clearThisPhone();
+  await wipeAfterDeletion();
   return { ok: true, value: null };
 }

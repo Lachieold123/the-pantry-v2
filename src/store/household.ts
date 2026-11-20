@@ -8,6 +8,7 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
+import { storedRecipes } from '@/domain/recipes/stored';
 import { kitchenFromRows, plannedOwnRecipes, type Row, type SharedKitchen } from '@/domain/sync/rows';
 import { listen, myHousehold, pullRows, pushRows, signedInUser, type Household, type Result } from '@/lib/household';
 import { useCupboard } from './cupboard';
@@ -34,6 +35,7 @@ export const EMPTY_HOUSEHOLD = {
   household: undefined,
   mirror: {},
   pending: {},
+  setAside: {},
   sharedRecipes: {},
   status: 'idle',
 } as const satisfies Partial<HouseholdState>;
@@ -43,11 +45,12 @@ export const useHousehold = create<HouseholdState>()(
     name: `${STORAGE_PREFIX}/household`,
     version: 1,
     storage: persistentStorage(),
-    partialize: ({ household, userId, mirror, pending, sharedRecipes, lastSyncedAt, rejoin }) => ({
+    partialize: ({ household, userId, mirror, pending, setAside, sharedRecipes, lastSyncedAt, rejoin }) => ({
       household,
       userId,
       mirror,
       pending,
+      setAside,
       sharedRecipes,
       lastSyncedAt,
       rejoin,
@@ -65,17 +68,12 @@ export function localKitchen(): SharedKitchen {
   return { entries, listEdits, cupboard: useCupboard.getState().items, recipes: plannedOwnRecipes(entries, { ...shared, ...own }) };
 }
 
-const isMyRecipe = (v: unknown): v is MyRecipe =>
-  typeof v === 'object' && v !== null && typeof (v as MyRecipe).id === 'string' && typeof (v as MyRecipe).draft === 'object';
-
 /** Rebuilds the plan, list and cupboard from the household's rows. */
 function applyKitchen(rows: Row[]): void {
   const kitchen = kitchenFromRows(rows);
   const own = useMyRecipes.getState().recipes;
-  const sharedRecipes = Object.fromEntries(Object.entries(kitchen.recipes).filter(([id, r]) => !own[id] && isMyRecipe(r))) as Record<
-    string,
-    MyRecipe
-  >;
+  // Another phone's recipe is checked before it's shown: a malformed one is skipped, not a crash (SEC-05).
+  const sharedRecipes = Object.fromEntries(Object.entries(storedRecipes(kitchen.recipes)).filter(([id]) => !own[id]));
   useHousehold.setState({ sharedRecipes });
   usePlan.setState({ entries: [...kitchen.entries], listEdits: { ...kitchen.listEdits } });
   useCupboard.setState({ items: [...kitchen.cupboard] });
@@ -97,7 +95,13 @@ const engine = createEngine({
     const { userId } = useHousehold.getState();
     return householdId() && userId ? pushRows(householdId(), userId, rows) : fail;
   },
-  listen: (onRow) => listen(householdId(), onRow, () => void refreshMembers()),
+  listen: (onRow) =>
+    listen(householdId(), (row) => {
+      onRow(row);
+      // A row from someone not on the list: a new member. Re-read who's in.
+      const known = useHousehold.getState().household?.members.some((m) => m.userId === row.updatedBy);
+      if (!known) void refreshMembers();
+    }),
   // The saved sign-in loads first, so the live connection carries it and row security lets the rows through.
   ready: async () => {
     await signIn();
@@ -145,5 +149,16 @@ export async function signIn(): Promise<Result<string>> {
   return me;
 }
 
-export { adoptHousehold, inviteCode, joinWithCode, leave, startHousehold } from './householdActions';
-export type { Household, Problem } from '@/lib/household';
+export {
+  adoptHousehold,
+  cancelInvites,
+  deleteHouseholdData,
+  inviteCode,
+  inviteFor,
+  joinWithCode,
+  leave,
+  recoverHousehold,
+  removeMember,
+  startHousehold,
+} from './householdActions';
+export type { Household, InvitePreview, Problem } from '@/lib/household';

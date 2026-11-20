@@ -15,7 +15,8 @@ import { Icon } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { FIXED } from '@/ui/tokens/colour';
-import { SHADOW, SPACE, SURPRISE } from '@/ui/tokens/type';
+import { SURPRISE } from '@/ui/tokens/surprise';
+import { ICON, SHADOW, SPACE } from '@/ui/tokens/type';
 
 const settleEase = Easing.bezier(...SURPRISE.settleCurve);
 const driftEase = Easing.bezier(...SURPRISE.driftCurve);
@@ -111,7 +112,7 @@ export function SpinDeck({ recipe, before, after, spinning, tick, landed, reduce
               <View style={styles.meta}>
                 {minutes > 0 ? (
                   <>
-                    <Icon name="time" size={13} tone={FIXED.onPhotoMuted} />
+                    <Icon name="time" size={ICON.meta} tone={FIXED.onPhotoMuted} />
                     <Text variant="value" tone={FIXED.onPhotoMuted}>
                       {formatMinutes(minutes)}
                     </Text>

@@ -9,7 +9,7 @@ import { Avatar } from '@/ui/primitives/Avatar';
 import { IconButton } from '@/ui/primitives/IconButton';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
-import { CHROME, SPACE, TAP_TARGET } from '@/ui/tokens/type';
+import { CHROME, ICON, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 
 export function AppHeader() {
   const router = useRouter();
@@ -18,7 +18,7 @@ export function AppHeader() {
   return (
     <View style={[styles.bar, { paddingTop: insets.top + SPACE.xs }]}>
       <View style={styles.side}>
-        <IconButton icon="menu" label="Open menu" size={28} onPress={() => router.push('/menu')} testID="header-menu" />
+        <IconButton icon="menu" label="Open menu" size={ICON.menu} onPress={() => router.push('/menu')} testID="header-menu" />
       </View>
       <Text variant="wordmark" numberOfLines={1} accessibilityRole="header" style={styles.wordmark} maxFontSizeMultiplier={1.2}>
         The Pantry

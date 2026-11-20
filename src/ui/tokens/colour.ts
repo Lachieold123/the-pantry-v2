@@ -159,6 +159,8 @@ export const THEMES: Readonly<Record<ThemeName, { normal: ColourTokens; highCont
 
 /** Colours that are the same in every theme because they sit on photos, video or fixed cream surfaces. */
 export const FIXED = {
+  /** A screen that draws nothing behind itself (the side menu's modal). */
+  clear: 'transparent',
   onPhoto: '#FFFFFF',
   onPhotoCream: '#F7F3EA',
   onPhotoMuted: 'rgba(255,255,255,0.85)',
@@ -175,7 +177,6 @@ export const FIXED = {
   /** The cream recipe cards in Saved and Collections, the same in both modes. */
   libraryCard: '#F7F3EA',
   libraryCardInk: '#0E0E0E',
-  libraryCardMeta: 'rgba(20,18,16,0.55)',
   libraryWell: '#1A1815',
   amberLight: '#E8C891',
   amberRule: 'rgba(232,200,145,0.85)',

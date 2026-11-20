@@ -111,3 +111,13 @@ export function shoppingWeek(today: ISODate): ISODate {
   const start = weekStart(today);
   return fromISODate(today).getDay() === 0 ? addDays(start, 7) : start;
 }
+
+/**
+ * The week the List tab opens on and its badge counts: next week on a Sunday
+ * once it has anything on it (meals or things you added), otherwise this
+ * week. One rule for the screen, the badge and "Add to list" (BUG-08), so
+ * things added on a Sunday never land on a week nobody is looking at.
+ */
+export function listWeek(today: ISODate, nextWeekHasAnything: boolean): ISODate {
+  return shoppingWeek(today) !== weekStart(today) && nextWeekHasAnything ? shoppingWeek(today) : weekStart(today);
+}

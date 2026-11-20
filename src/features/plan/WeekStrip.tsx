@@ -6,7 +6,8 @@ import { Pressable, ScrollView, View } from 'react-native';
 import { entriesFor, fromISODate, SLOTS, type ISODate, type PlanEntry } from '@/domain/plan/week';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
-import { PLAN, RADIUS, SPACE } from '@/ui/tokens/type';
+import { PLAN } from '@/ui/tokens/plan';
+import { RADIUS, SPACE } from '@/ui/tokens/type';
 
 const WEEKDAY = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
 /** Day cells that fit on a phone before the strip scrolls. */
@@ -82,10 +83,10 @@ const useStyles = makeStyles(({ colours }) => ({
     borderColor: colours.border,
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 2,
+    gap: SPACE.hair,
   },
   cellOn: { backgroundColor: colours.ink, borderColor: colours.ink },
-  dots: { flexDirection: 'row', gap: 3, marginTop: SPACE.xxs },
+  dots: { flexDirection: 'row', gap: SPACE.fine, marginTop: SPACE.xxs },
   dot: { width: PLAN.dot, height: PLAN.dot, borderRadius: PLAN.dot, backgroundColor: colours.border },
   dotOn: { backgroundColor: colours.ink },
   dotOnSelected: { backgroundColor: colours.bg },

@@ -17,7 +17,7 @@ import { Icon } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { FIXED } from '@/ui/tokens/colour';
-import { CHROME, MOTION, RADIUS, SHADOW, SPACE } from '@/ui/tokens/type';
+import { CHROME, ICON, MOTION, RADIUS, SHADOW, SPACE } from '@/ui/tokens/type';
 import { DrawerRow } from './DrawerRow';
 import { useDrawerCounts } from './useCounts';
 import { goBack } from '@/lib/navigation';
@@ -122,7 +122,7 @@ export function DrawerScreen() {
               {profileSub}
             </Text>
           </View>
-          <Icon name="forward" size={18} colour="inkMuted" />
+          <Icon name="forward" size={ICON.standard} colour="inkMuted" />
         </Pressable>
       </Animated.View>
     </View>
@@ -174,6 +174,6 @@ const useStyles = makeStyles(({ colours }) => ({
     borderTopWidth: StyleSheet.hairlineWidth,
     borderTopColor: colours.border,
   },
-  profileText: { flex: 1, gap: 2 },
+  profileText: { flex: 1, gap: SPACE.hair },
   pressed: { backgroundColor: colours.bgSoft },
 }));

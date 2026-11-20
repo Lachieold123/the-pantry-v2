@@ -28,9 +28,11 @@ import { Sheet } from '@/ui/primitives/Sheet';
 import { Stepper } from '@/ui/primitives/Stepper';
 import { Text } from '@/ui/primitives/Text';
 import { SPACE } from '@/ui/tokens/type';
+import { useOnce } from '@/lib/useOnce';
 
 export function AddToListSheet({ id, servings: startServings }: { id: string; servings: number | undefined }) {
   const router = useRouter();
+  const once = useOnce();
   const toast = useToast();
   const recipe = useRecipe(id);
   const units = usePreferences((s) => s.units);
@@ -83,14 +85,15 @@ export function AddToListSheet({ id, servings: startServings }: { id: string; se
   const already = rows.filter((r) => r.status === 'on-list');
   const chosen = rows.filter((r) => r.status !== 'on-list' && picked.has(r.key));
 
-  const add = () => {
-    const undo = addToList(chosen.map((r) => r.addition));
-    toast({
-      message: undo ? `${chosen.length} added to your shopping list` : 'Already on your shopping list',
-      ...(undo ? { undo } : {}),
+  const add = () =>
+    once(() => {
+      const undo = addToList(chosen.map((r) => r.addition));
+      toast({
+        message: undo ? `${chosen.length} added to your shopping list` : 'Already on your shopping list',
+        ...(undo ? { undo } : {}),
+      });
+      goBack(router);
     });
-    goBack(router);
-  };
 
   return (
     <Sheet title="Add to list" kicker={recipe.title} onClose={() => goBack(router)}>

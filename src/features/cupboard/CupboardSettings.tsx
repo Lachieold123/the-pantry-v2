@@ -10,7 +10,7 @@ import { Text } from '@/ui/primitives/Text';
 import { Toggle } from '@/ui/primitives/Toggle';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { CUPBOARD } from '@/ui/tokens/cupboard';
-import { PRESSED, SPACE, TAP_TARGET } from '@/ui/tokens/type';
+import { ICON, PRESSED, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 
 type Props = {
   shelfDetail: string;
@@ -34,7 +34,7 @@ export function CupboardSettings({ shelfDetail, onShelf, moveTicked, onMoveTicke
           <Text variant="rowSmall">Always in my kitchen</Text>
           <Text variant="caption">{shelfDetail}</Text>
         </View>
-        <Icon name="forward" size={16} colour="inkMuted" />
+        <Icon name="forward" size={ICON.small} colour="inkMuted" />
       </Pressable>
       <View style={[styles.row, styles.divider]}>
         <View style={styles.text}>

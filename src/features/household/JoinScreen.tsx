@@ -1,11 +1,12 @@
 // Opened from an invite link (thepantry://join/CODE, D-039): one question,
 // your name, then you're in. If this phone already shares a kitchen, it says
-// so instead of quietly switching.
+// so instead of quietly switching. It first says which household the code is
+// for (SEC-16), so a stranger's link can't pull your kitchen in unawares.
 import { useRouter } from 'expo-router';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { View } from 'react-native';
 
-import { joinWithCode, useHousehold } from '@/store/household';
+import { inviteFor, joinWithCode, useHousehold, type InvitePreview } from '@/store/household';
 import { goBack } from '@/lib/navigation';
 import { useToast } from '@/ui/patterns/Toast';
 import { useAnnounce } from '@/ui/primitives/accessibility';
@@ -25,6 +26,21 @@ export function JoinScreen({ code }: { code: string }) {
   const [problem, setProblem] = useState<string | undefined>();
   useAnnounce(problem);
   const clean = code.trim().toUpperCase();
+  // undefined: still looking; null: the code doesn't work.
+  const [preview, setPreview] = useState<InvitePreview | null | undefined>();
+  useEffect(() => {
+    if (current) return;
+    let alive = true;
+    void inviteFor(clean).then((r) => {
+      if (!alive) return;
+      // Too many wrong codes is worth saying now; anything else (offline) just means no preview.
+      if (r.ok) setPreview(r.value ?? null);
+      else if (r.problem === 'too-many-attempts') setProblem(PROBLEM_WORDS[r.problem]);
+    });
+    return () => {
+      alive = false;
+    };
+  }, [clean, current]);
 
   const join = async () => {
     setBusy(true);
@@ -47,6 +63,16 @@ export function JoinScreen({ code }: { code: string }) {
         </View>
       ) : (
         <View style={{ gap: SPACE.lg }}>
+          {preview ? (
+            <Text variant="row" testID="join-preview">
+              {`${preview.name} · ${preview.members === 1 ? '1 person' : `${preview.members} people`}`}
+            </Text>
+          ) : null}
+          {preview === null ? (
+            <Text variant="bodySmall" colour="danger" testID="join-preview-missing">
+              {PROBLEM_WORDS['invite-not-found']}
+            </Text>
+          ) : null}
           <Text variant="body" colour="inkSoft">
             You’ll share the week’s plan, the shopping list and the cupboard. Anything already planned or in your cupboard comes along too.
           </Text>
@@ -64,7 +90,7 @@ export function JoinScreen({ code }: { code: string }) {
             kind="primary"
             block
             busy={busy}
-            disabled={!name.trim() || busy}
+            disabled={!name.trim() || busy || preview === null}
             onPress={() => void join()}
             testID="join-confirm"
           />

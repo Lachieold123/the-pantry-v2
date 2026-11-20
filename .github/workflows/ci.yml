@@ -4,6 +4,9 @@ name: CI
 on:
   push:
   pull_request:
+# Read-only: CI checks code, it never writes to the repo (REL-12).
+permissions:
+  contents: read
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -14,6 +17,13 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci --no-audit --no-fund
+      # Typed routes come from Expo's dev server; without them a mistyped route still typechecks (REL-12).
+      - name: Generate typed routes
+        run: |
+          (CI=1 npx expo start --offline --port 8095 > /tmp/expo.log 2>&1 &)
+          for i in $(seq 1 60); do [ -f .expo/types/router.d.ts ] && break; sleep 2; done
+          pkill -f "expo start --offline --port 8095" || true
+          test -f .expo/types/router.d.ts
       - run: npm run typecheck
       - run: npm run lint
       - run: npm run format:check
@@ -22,3 +32,35 @@ jobs:
           TZ: Australia/Sydney
       - run: npm run test:ui
       - run: npm run catalogue:check-ingredients
+      # Not yet: Expo's check that packages match the SDK fails until `npx expo install --fix`
+      # is run and a new development build made (REL-17, Lachlan). Then add: - run: npx expo install --check
+
+  journeys:
+    # The web journey tests (D-040): the main paths, tapped through in light and dark.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npx playwright install --with-deps chromium
+      # --clear: EXPO_PUBLIC_ values are baked in, and a cached bundle can keep an old one.
+      - run: npx expo export --platform web --clear
+        env:
+          EXPO_PUBLIC_SHOW_DRAFT_RECIPES: '1'
+      - run: npm run test:web
+
+  database:
+    # Row security and the database functions, on a throwaway Postgres (PGlite), never the live project.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: mkdir -p /tmp/pg && cd /tmp/pg && npm init -y > /dev/null && npm i --no-audit --no-fund @electric-sql/pglite@0.3.7
+      - run: node --test supabase/tests/rules.test.mjs
+        env:
+          PGLITE: /tmp/pg/node_modules/@electric-sql/pglite/dist/index.js

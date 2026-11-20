@@ -11,7 +11,7 @@ import type { Recipe } from '@/domain/recipes/types';
 import { Icon } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
-import { PRESSED, RADIUS, RECIPE, SPACE, TAP_TARGET } from '@/ui/tokens/type';
+import { ICON, PRESSED, RADIUS, RECIPE, SMALL_CONTROL, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 
 function Heading({ children }: { children: string }) {
   return (
@@ -88,7 +88,7 @@ export function Ingredients({ recipe, servings, units, have, onAddToList }: Ingr
                   </Text>
                   {inCupboard ? (
                     <View style={styles.have}>
-                      <Icon name="check" size={10} colour="bg" />
+                      <Icon name="check" size={ICON.dot} colour="bg" />
                       <Text variant="pill" colour="bg">
                         Have
                       </Text>
@@ -97,7 +97,7 @@ export function Ingredients({ recipe, servings, units, have, onAddToList }: Ingr
                 </Pressable>
                 {tip ? (
                   <View style={styles.tip}>
-                    <Icon name="substitute" size={12} colour="accentText" />
+                    <Icon name="substitute" size={ICON.hint} colour="accentText" />
                     <Text variant="note" colour="inkMuted" style={{ flex: 1 }}>
                       {tip}
                     </Text>
@@ -172,7 +172,7 @@ const useStyles = makeStyles(({ colours }) => ({
   headRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: SPACE.sm },
   addToList: { flexDirection: 'row', alignItems: 'center', gap: SPACE.xxs, minHeight: TAP_TARGET, paddingLeft: SPACE.sm },
   groupTitle: { marginTop: SPACE.sm, marginBottom: SPACE.xxs },
-  line: { flexDirection: 'row', alignItems: 'center', gap: SPACE.sm, paddingVertical: 7, minHeight: 36 },
+  line: { flexDirection: 'row', alignItems: 'center', gap: SPACE.sm, paddingVertical: SPACE.pillY, minHeight: SMALL_CONTROL },
   bullet: { width: RECIPE.bullet, height: RECIPE.bullet, borderRadius: RECIPE.bullet, backgroundColor: colours.bullet },
   bulletDone: { backgroundColor: colours.accent },
   lineText: { flex: 1 },
@@ -180,19 +180,19 @@ const useStyles = makeStyles(({ colours }) => ({
   have: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 3,
-    paddingLeft: 5,
-    paddingRight: 7,
-    paddingVertical: 3,
+    gap: SPACE.fine,
+    paddingLeft: RECIPE.pillLeft,
+    paddingRight: SPACE.pillY,
+    paddingVertical: SPACE.fine,
     borderRadius: RADIUS.pill,
     backgroundColor: colours.ink,
   },
-  tip: { flexDirection: 'row', gap: SPACE.xs, marginLeft: RECIPE.bullet + SPACE.sm, marginTop: -2, marginBottom: 6 },
-  step: { flexDirection: 'row', gap: SPACE.md - 2, marginBottom: SPACE.xs, paddingLeft: 2 },
+  tip: { flexDirection: 'row', gap: SPACE.xs, marginLeft: RECIPE.bullet + SPACE.sm, marginTop: -SPACE.hair, marginBottom: SPACE.snug },
+  step: { flexDirection: 'row', gap: SPACE.field, marginBottom: SPACE.xs, paddingLeft: SPACE.hair },
   stepNumber: { width: RECIPE.stepNumber },
   stepRule: { width: RECIPE.stepRule, borderRadius: 1, backgroundColor: colours.accent, marginRight: SPACE.xxs },
   stepText: { flex: 1 },
   timer: { fontWeight: '700', backgroundColor: colours.accentSoft },
-  notes: { backgroundColor: colours.bgSoft, borderRadius: RADIUS.big, padding: SPACE.md, gap: 6 },
+  notes: { backgroundColor: colours.bgSoft, borderRadius: RADIUS.big, padding: SPACE.md, gap: SPACE.snug },
   note: { flexDirection: 'row', gap: SPACE.sm - 2 },
 }));

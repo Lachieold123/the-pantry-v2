@@ -17,6 +17,7 @@ import { SPACE } from '@/ui/tokens/type';
 import { planningDays } from './weekChoices';
 import { goBack } from '@/lib/navigation';
 import { useDayLocked, usePlanAhead } from '@/store/pro';
+import { useOnce } from '@/lib/useOnce';
 
 const SLOTS = [
   { value: 'breakfast', label: 'Breakfast' },
@@ -26,6 +27,7 @@ const SLOTS = [
 
 export function PlanRecipeSheet({ id }: { id: string }) {
   const router = useRouter();
+  const once = useOnce();
   const toast = useToast();
   const recipe = useRecipe(id);
   const addEntry = usePlan((s) => s.addEntry);
@@ -57,12 +59,13 @@ export function PlanRecipeSheet({ id }: { id: string }) {
       ? 'tonight'
       : `${chosen.long === 'tonight' ? 'today' : chosen.long} ${slot}`
     : slot;
-  const add = () => {
-    if (!planAhead(day)) return;
-    const entry = addEntry(recipe.id, day, slot, servings);
-    toast({ message: `${recipe.title} planned for ${where}`, undo: () => removeEntry(entry.id) });
-    goBack(router);
-  };
+  const add = () =>
+    once(() => {
+      if (!planAhead(day)) return false;
+      const entry = addEntry(recipe.id, day, slot, servings);
+      toast({ message: `${recipe.title} planned for ${where}`, undo: () => removeEntry(entry.id) });
+      goBack(router);
+    });
 
   return (
     <Sheet title={`Plan ${recipe.title}`} onClose={() => goBack(router)}>

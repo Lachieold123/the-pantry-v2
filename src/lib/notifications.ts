@@ -14,12 +14,17 @@ function configure(): void {
 
 /** Asks only when the cook first wants a notification (a timer, the Sunday reminder). Returns false if they said no. */
 export async function ensureNotificationPermission(): Promise<boolean> {
-  configure();
-  const current = await Notifications.getPermissionsAsync();
-  if (current.granted) return true;
-  if (!current.canAskAgain) return false;
-  const asked = await Notifications.requestPermissionsAsync();
-  return asked.granted;
+  // Never throws: a failure reads as "no permission", and the in-app timer still runs (BUG-23).
+  try {
+    configure();
+    const current = await Notifications.getPermissionsAsync();
+    if (current.granted) return true;
+    if (!current.canAskAgain) return false;
+    const asked = await Notifications.requestPermissionsAsync();
+    return asked.granted;
+  } catch {
+    return false;
+  }
 }
 
 export async function scheduleAt(when: number, title: string, body: string): Promise<string | undefined> {

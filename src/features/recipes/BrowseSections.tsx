@@ -11,7 +11,7 @@ import { INGREDIENTS } from '@/data/catalogue/catalogue';
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { dailyPicks, moods, presetActive, quickChips, recipeOfTheDay, recipesFor, togglePreset } from '@/domain/recipes/browse';
 import { needLine } from '@/domain/cupboard/cookable';
-import { toISODate } from '@/domain/plan/week';
+import { useToday } from '@/lib/today';
 import { NO_FILTERS, seasonOn } from '@/domain/recipes/search';
 import type { Recipe } from '@/domain/recipes/types';
 import { eligibleForSurprise } from '@/domain/suggestions/surprise';
@@ -43,7 +43,7 @@ export function BrowseSections() {
   const apply = useRecipeFilters((s) => s.apply);
   const setShowAll = useRecipeFilters((s) => s.setShowAll);
   const bookmarks = useBookmarks();
-  const today = toISODate(new Date());
+  const today = useToday();
   const season = seasonOn(new Date());
   const open = (id: string) => router.push({ pathname: '/recipe/[id]', params: { id } });
 

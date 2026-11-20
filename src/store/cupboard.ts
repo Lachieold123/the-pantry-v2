@@ -15,7 +15,13 @@ type CupboardState = {
   remove: (ingredientId: string) => void;
   /** Empties the cupboard and returns what was there, for undo. */
   clear: () => CupboardItem[];
+  /**
+   * Undo: puts these back, keeping anything added since (a household member's
+   * jar, say). Never a snapshot that wipes newer changes (BUG-18).
+   */
   restore: (items: CupboardItem[]) => void;
+  /** Undo an add: takes out just these, if they're still the ones that add put in. */
+  takeBack: (added: readonly CupboardItem[]) => void;
   setShelf: (shelf: Shelf) => void;
   setMoveTicked: (on: boolean) => void;
 };
@@ -33,7 +39,16 @@ export const useCupboard = create<CupboardState>()(
         set({ items: [] });
         return was;
       },
-      restore: (items) => set({ items }),
+      restore: (items) =>
+        set((s) => {
+          const have = new Set(s.items.map((i) => i.ingredientId));
+          return { items: [...s.items, ...items.filter((i) => !have.has(i.ingredientId))] };
+        }),
+      takeBack: (added) =>
+        set((s) => {
+          const mine = new Set(added.map((i) => `${i.ingredientId}|${i.addedAt}`));
+          return { items: s.items.filter((i) => !mine.has(`${i.ingredientId}|${i.addedAt}`)) };
+        }),
       setShelf: (shelf) => set({ shelf }),
       setMoveTicked: (moveTickedToCupboard) => set({ moveTickedToCupboard }),
     }),

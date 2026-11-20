@@ -2,6 +2,7 @@
 // count follows it, and switching is local, so it never navigates.
 import { fireEvent, render, screen } from '@testing-library/react-native';
 
+import { CATALOGUE } from '@/data/catalogue/catalogue';
 import { useSaved } from '@/store/saved';
 import { LibraryScreen } from './LibraryScreen';
 
@@ -41,5 +42,14 @@ describe('the library', () => {
     // Only the empty states' own actions navigate; the tabs never do.
     expect(mockRouter.push).not.toHaveBeenCalled();
     expect(mockRouter.navigate).not.toHaveBeenCalled();
+  });
+
+  it('mounts only the first Cookmarks, not every one, with the whole catalogue saved (REL-14)', async () => {
+    useSaved.setState({ bookmarks: CATALOGUE.map((r, i) => ({ recipeId: r.id, savedAt: i })) });
+    await render(<LibraryScreen />);
+    expect(screen.getByLabelText(`${CATALOGUE.length} saved recipes`)).toBeTruthy();
+    const mounted = screen.getAllByTestId(/^recipe-card-/).filter((n) => !String(n.props.testID).endsWith('-save')).length;
+    expect(mounted).toBeGreaterThan(0);
+    expect(mounted).toBeLessThan(40);
   });
 });

@@ -22,6 +22,8 @@ import { CookingSection } from './CookingSection';
 import { DeleteAccount } from './DeleteAccount';
 import { ProSection } from './ProSection';
 import { SharingSection } from './SharingSection';
+import { ABOUT_RECIPES } from '@/domain/recipes/labels';
+import { LegalRows } from './LegalRows';
 import { CardButton, ChoiceRow, InfoRow, SettingsSection, SwitchRow } from './SettingsParts';
 
 const APPEARANCE = [
@@ -98,6 +100,10 @@ export function SettingsScreen() {
 
       <SettingsSection label="About">
         <InfoRow icon="info" label="Version" value={VERSION} />
+        <ChoiceRow icon="sparkles" label="How our recipes are made" helper={ABOUT_RECIPES}>
+          {null}
+        </ChoiceRow>
+        <LegalRows />
         {__DEV__ ? (
           <ListRow
             icon="sparkles"

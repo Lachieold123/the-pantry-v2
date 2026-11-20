@@ -40,3 +40,26 @@ export function addExtras(
   }
   return { edits: added.length ? { ...edits, extras: [...edits.extras, ...added] } : edits, added };
 }
+
+/**
+ * Undo for "Clear all": puts back only what clearing took away (the lines it
+ * removed, the extras it dropped), on top of the list as it is now. Restoring
+ * the whole earlier list would also wipe a tick a household member made in
+ * the seconds since (BUG-18).
+ */
+export function undoClear(before: WeekListEdits, cleared: WeekListEdits): (now: WeekListEdits) => WeekListEdits {
+  const addedRemovals = Object.keys(cleared.removed).filter((k) => before.removed[k] !== cleared.removed[k]);
+  const droppedExtras = before.extras.filter((x) => !cleared.extras.some((y) => y.id === x.id));
+  return (now) => {
+    const removed = { ...now.removed };
+    for (const k of addedRemovals) {
+      if (removed[k] !== cleared.removed[k]) continue; // Changed since: leave it.
+      const was = before.removed[k];
+      if (was === undefined) delete removed[k];
+      else removed[k] = was;
+    }
+    const extras = [...now.extras, ...droppedExtras.filter((x) => !now.extras.some((y) => y.id === x.id))];
+    const ticked = droppedExtras.filter((x) => before.checkedExtras.includes(x.id)).map((x) => x.id);
+    return { ...now, removed, extras, checkedExtras: [...new Set([...now.checkedExtras, ...ticked])] };
+  };
+}

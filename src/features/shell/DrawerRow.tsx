@@ -5,7 +5,7 @@ import { Badge } from '@/ui/primitives/Badge';
 import { Icon, type IconName } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
-import { RADIUS, SPACE } from '@/ui/tokens/type';
+import { ICON, RADIUS, SPACE } from '@/ui/tokens/type';
 
 type Props = { icon: IconName; label: string; count?: number; onPress: () => void; testID: string };
 
@@ -20,7 +20,7 @@ export function DrawerRow({ icon, label, count = 0, onPress, testID }: Props) {
       style={({ pressed }) => [styles.row, pressed && styles.pressed]}
     >
       <View style={styles.icon}>
-        <Icon name={icon} size={22} />
+        <Icon name={icon} size={ICON.drawer} />
       </View>
       <Text variant="row" style={styles.label} numberOfLines={1}>
         {label}

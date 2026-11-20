@@ -13,7 +13,7 @@ import { cookable } from '@/domain/cupboard/cookable';
 import { cupboardIds } from '@/domain/cupboard/match';
 import { allOnList, cupboardTally, recipeWords } from '@/domain/cupboard/summary';
 import { shoppingWeek, toISODate } from '@/domain/plan/week';
-import { AI_ASSISTED_LABEL, recipeAsText } from '@/domain/recipes/labels';
+import { recipeAsText, RECIPE_ORIGIN } from '@/domain/recipes/labels';
 import { recipeListRows } from '@/domain/shopping/fromRecipe';
 import { useCookLog } from '@/store/cookLog';
 import { ingredientName } from '@/store/cookable';
@@ -98,8 +98,8 @@ export function RecipeScreen({ id }: { id: string }) {
   const wordOf = (ingredientId: string) => words?.get(ingredientId) ?? ingredientName(ingredientId);
   // House photos without a photographer's credit are the original app's AI-generated images (D-029).
   const photoNote = recipe.image?.credit ?? (!mine && RECIPE_IMAGES[recipe.id] !== undefined ? 'AI-generated photo' : undefined);
-  // Recipes the earlier AI pipeline wrote say so, in the same place as the photo credit (batch 03).
-  const originNote = !mine && recipe.provenance === 'ai-assisted' ? AI_ASSISTED_LABEL : undefined;
+  // And how the recipe itself was made (REL-23; batch 03's "AI-assisted recipe" is one of these). Your own recipes are yours: nothing to say.
+  const originNote = mine ? undefined : RECIPE_ORIGIN[recipe.provenance ?? 'ai-draft'];
   const edit = () => router.push({ pathname: '/my-recipe/edit', params: { id: recipe.id } });
   const plan = () => router.push({ pathname: '/recipe/[id]/plan', params: { id: recipe.id } });
   const share = async () => {
@@ -283,7 +283,7 @@ const useStyles = makeStyles(({ colours }) => ({
     marginTop: SPACE.xs,
   },
   nav: { position: 'absolute', left: SPACE.gutter, right: SPACE.gutter, flexDirection: 'row', justifyContent: 'space-between' },
-  credit: { paddingTop: SPACE.md, borderTopWidth: 1, borderTopColor: colours.border },
+  credit: { paddingTop: SPACE.md, gap: SPACE.xxs, borderTopWidth: 1, borderTopColor: colours.border },
 }));
 
 const NONE: ReadonlySet<string> = new Set();

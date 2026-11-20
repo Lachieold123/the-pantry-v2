@@ -4,7 +4,7 @@
 import { Pressable, View } from 'react-native';
 
 import { makeStyles } from '@/ui/theme/makeStyles';
-import { SPACE, TAP_TARGET } from '@/ui/tokens/type';
+import { ICON, SPACE, TAP_TARGET } from '@/ui/tokens/type';
 import { Icon, type IconName } from './Icon';
 import { Text } from './Text';
 
@@ -20,7 +20,7 @@ export function ListRow({ title, detail, value, icon, onPress, testID }: Props) 
       accessibilityLabel={value ? `${title}, ${value}` : title}
       style={({ pressed }) => [styles.row, pressed && styles.pressed]}
     >
-      {icon ? <Icon name={icon} size={20} /> : null}
+      {icon ? <Icon name={icon} size={ICON.row} /> : null}
       <View style={styles.text}>
         <Text variant="rowSmall">{title}</Text>
         {detail ? <Text variant="caption">{detail}</Text> : null}
@@ -30,14 +30,14 @@ export function ListRow({ title, detail, value, icon, onPress, testID }: Props) 
           {value}
         </Text>
       ) : null}
-      <Icon name="forward" size={16} colour="inkMuted" />
+      <Icon name="forward" size={ICON.small} colour="inkMuted" />
     </Pressable>
   );
 }
 
 const useStyles = makeStyles(() => ({
   row: { minHeight: TAP_TARGET, flexDirection: 'row', alignItems: 'center', gap: SPACE.sm, paddingVertical: SPACE.md - 2 },
-  text: { flex: 1, gap: 2 },
+  text: { flex: 1, gap: SPACE.hair },
   value: { maxWidth: '45%' },
   pressed: { opacity: 0.6 },
 }));

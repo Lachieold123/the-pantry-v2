@@ -25,6 +25,7 @@ import { useToast } from '@/ui/patterns/Toast';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { COOK } from '@/ui/tokens/cook';
 import { MOTION, SPACE } from '@/ui/tokens/type';
+import { useOnce } from '@/lib/useOnce';
 import { CookFooter } from './CookFooter';
 import { CookHeader } from './CookHeader';
 import { CookIngredientsSheet } from './CookIngredientsSheet';
@@ -44,6 +45,7 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
     };
   }, []);
   const router = useRouter();
+  const once = useOnce();
   const toast = useToast();
   const insets = useSafeAreaInsets();
   const styles = useStyles();
@@ -107,13 +109,14 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
     });
   // Fresh things this recipe took from the cupboard: offered for removal once you're done.
   const used = fromCupboard ? [...fromCupboard.have, ...fromCupboard.swaps.map((s) => s.use)].filter((i) => KITCHEN.isPerishable(i)) : [];
-  const finish = (usedUp: string[]) => {
-    setAskUsedUp(false);
-    const event = markCooked(recipe.id);
-    for (const i of usedUp) removeFromCupboard(i);
-    goBack(router);
-    toast({ message: `${recipe.title} cooked. Nice work.`, undo: () => undoCooked(event.id) });
-  };
+  const finish = (usedUp: string[]) =>
+    once(() => {
+      setAskUsedUp(false);
+      const event = markCooked(recipe.id);
+      for (const i of usedUp) removeFromCupboard(i);
+      goBack(router);
+      toast({ message: `${recipe.title} cooked. Nice work.`, undo: () => undoCooked(event.id) });
+    });
   const done = () => (used.length ? setAskUsedUp(true) : finish([]));
 
   return (
@@ -139,7 +142,7 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
                 step={step}
                 timers={timers}
                 now={now}
-                onStartTimer={(label, seconds) => void start(label, step, seconds)}
+                onStartTimer={(label, seconds, segment) => void start(label, step, seconds, segment)}
               />
             </Animated.View>
           </ScrollView>
@@ -154,7 +157,13 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
         have={have}
         onClose={() => setShowIngredients(false)}
       />
-      <UsedUpSheet visible={askUsedUp} ids={used} nameOf={(i) => capitalise(ingredientName(i))} onFinish={finish} />
+      <UsedUpSheet
+        visible={askUsedUp}
+        ids={used}
+        nameOf={(i) => capitalise(ingredientName(i))}
+        onFinish={finish}
+        onCancel={() => setAskUsedUp(false)}
+      />
     </View>
   );
 }

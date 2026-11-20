@@ -8,6 +8,7 @@ import type { HomeFilters } from '@/domain/suggestions/home';
 import { momentOf } from '@/domain/suggestions/moment';
 import { rankHome, type HomeRanking } from '@/domain/suggestions/rank';
 import { rankForSlot } from '@/domain/suggestions/slot';
+import { useToday } from '@/lib/today';
 import { useCookableNow } from './cookable';
 import { useCookLog } from './cookLog';
 import { usePlan } from './plan';
@@ -34,6 +35,8 @@ export function useHomeRanking(filters: HomeFilters, depth: number): HomeRanking
   const cookLog = useCookLog((s) => s.log);
   const recipes = useAllRecipes();
   const { ready, nearly } = useCookableNow();
+  // Re-renders at midnight and on return to the front, so a mounted Home doesn't keep yesterday (BUG-12).
+  useToday();
   const quarter = Math.floor(new Date().getTime() / QUARTER_HOUR) * QUARTER_HOUR;
   return useMemo(() => {
     const moment = momentOf(new Date(quarter));
@@ -89,6 +92,7 @@ export function useSlotIdeas(day: ISODate, slot: Slot | undefined, depth: number
   const cookLog = useCookLog((s) => s.log);
   const recipes = useAllRecipes();
   const { ready, nearly } = useCookableNow();
+  useToday();
   // Read to the quarter hour, like Home, so the list holds still while the sheet is open.
   const quarter = Math.floor(new Date().getTime() / QUARTER_HOUR) * QUARTER_HOUR;
   return useMemo(

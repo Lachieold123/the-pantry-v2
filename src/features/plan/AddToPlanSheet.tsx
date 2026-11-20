@@ -1,16 +1,18 @@
 // Add a meal to a chosen day: saved recipes first, then search the catalogue.
 import { useRouter } from 'expo-router';
-import { useMemo, useState } from 'react';
+import { useDeferredValue, useMemo, useState } from 'react';
 import { View } from 'react-native';
 
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
+import { INGREDIENTS } from '@/data/catalogue/catalogue';
 import { CUISINE_LABELS } from '@/domain/recipes/labels';
 import { indexForSearch, searchRecipes } from '@/domain/recipes/search';
 import type { Recipe } from '@/domain/recipes/types';
 import { fromISODate, isISODate, toISODate, type Slot } from '@/domain/plan/week';
 import { longDate } from '@/lib/dates';
 import { usePlan } from '@/store/plan';
-import { useAllRecipes, useRecipeLookup } from '@/store/recipeBook';
+import { useRecipeLookup } from '@/store/recipeBook';
+import { useEatableRecipes } from '@/store/eatable';
 import { useSaved } from '@/store/saved';
 import { useSlotIdeas } from '@/store/suggestions';
 import { RecipeCard } from '@/ui/patterns/RecipeCard';
@@ -22,6 +24,7 @@ import { Text } from '@/ui/primitives/Text';
 import { SPACE } from '@/ui/tokens/type';
 import { goBack } from '@/lib/navigation';
 import { usePlanAhead } from '@/store/pro';
+import { useOnce } from '@/lib/useOnce';
 
 const SLOTS = [
   { value: 'breakfast', label: 'Breakfast' },
@@ -34,6 +37,7 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
   // A malformed link falls back to today rather than crashing.
   const day = isISODate(requested) ? requested : toISODate(new Date());
   const router = useRouter();
+  const once = useOnce();
   const toast = useToast();
   const addEntry = usePlan((s) => s.addEntry);
   const planAhead = usePlanAhead();
@@ -42,9 +46,11 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
   const hidden = useSaved((s) => s.hidden);
   const [slot, setSlot] = useState<Slot>(() => SLOTS.find((s) => s.value === requestedSlot)?.value ?? 'dinner');
   const [query, setQuery] = useState('');
-  const all = useAllRecipes();
+  const searching = useDeferredValue(query);
   const getRecipe = useRecipeLookup();
-  const searchIndex = useMemo(() => indexForSearch(all, (c) => CUISINE_LABELS[c]), [all]);
+  // Search only what this cook eats: diet and avoid are hard rules here too (BUG-07).
+  const eatable = useEatableRecipes();
+  const searchIndex = useMemo(() => indexForSearch(eatable, (c) => CUISINE_LABELS[c], INGREDIENTS), [eatable]);
 
   // Saved recipes for this meal only: arancini isn't a breakfast. Search still finds anything.
   const saved = useMemo(
@@ -54,18 +60,19 @@ export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: s
   // Before a search, ideas for this meal on this day (Home's ranking, scored for the slot), not the catalogue A–Z.
   const ideas = useSlotIdeas(day, slot, MAX_RESULTS);
   const results = useMemo(() => {
-    const pool = query.trim() ? searchRecipes(searchIndex, query) : ideas;
+    const pool = searching.trim() ? searchRecipes(searchIndex, searching) : ideas;
     return pool.filter((r) => !hidden.includes(r.id)).slice(0, MAX_RESULTS);
-  }, [query, hidden, searchIndex, ideas]);
+  }, [searching, hidden, searchIndex, ideas]);
 
   const dayName = day === toISODate(new Date()) ? 'today' : (longDate(fromISODate(day)).split(' ')[0] ?? day);
-  const pick = (recipe: Recipe) => {
-    // A link straight to a day next week still meets the plan-ahead check (D-038).
-    if (!planAhead(day)) return;
-    const entry = addEntry(recipe.id, day, slot, recipe.servings);
-    toast({ message: `${recipe.title} planned for ${dayName} ${slot}`, undo: () => removeEntry(entry.id) });
-    goBack(router);
-  };
+  const pick = (recipe: Recipe) =>
+    once(() => {
+      // A link straight to a day next week still meets the plan-ahead check (D-038).
+      if (!planAhead(day)) return false;
+      const entry = addEntry(recipe.id, day, slot, recipe.servings);
+      toast({ message: `${recipe.title} planned for ${dayName} ${slot}`, undo: () => removeEntry(entry.id) });
+      goBack(router);
+    });
 
   return (
     <Sheet kicker="Plan" title={`Add ${slot} for ${dayName === 'today' ? 'today' : dayName}`} onClose={() => goBack(router)}>

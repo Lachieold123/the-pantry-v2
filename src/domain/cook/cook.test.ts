@@ -60,3 +60,18 @@ describe('Cook Mode timer clock', () => {
     assert.equal(formatCountdown(0), '0:00');
   });
 });
+
+describe('more ways of writing a time (BUG-21)', () => {
+  const timers = (text: string) => splitStepTimers(text).flatMap((s) => (s.type === 'timer' ? [s.seconds] : []));
+  it('reads "1 hour 30 minutes" as one timer', () => {
+    assert.deepEqual(timers('Simmer for 1 hour 30 minutes, stirring.'), [5400]);
+    assert.deepEqual(timers('Roast for 1 hr 15 mins.'), [4500]);
+  });
+  it('reads mixed and unicode fractions', () => {
+    assert.deepEqual(timers('Bake 1 1/2 hours.'), [5400]);
+    assert.deepEqual(timers('Cook for 1½ hours.'), [5400]);
+  });
+  it('keeps two separate times separate', () => {
+    assert.deepEqual(timers('Boil for 3 minutes, then simmer another 3 minutes.'), [180, 180]);
+  });
+});

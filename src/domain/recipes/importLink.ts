@@ -33,12 +33,17 @@ const ENTITIES: Readonly<Record<string, string>> = {
   hellip: '…',
 };
 
+/** A numeric entity's character, or the entity as written when the number isn't a character (BUG-24). */
+function codePoint(n: number, written: string): string {
+  return Number.isInteger(n) && n > 0 && n <= 0x10ffff ? String.fromCodePoint(n) : written;
+}
+
 /** Plain text from a JSON-LD string: entities decoded, stray tags and whitespace removed. */
 export function cleanText(text: string): string {
   return text
     .replace(/<[^>]*>/g, ' ')
-    .replace(/&#(\d+);/g, (_m, n: string) => String.fromCodePoint(Number(n)))
-    .replace(/&#x([0-9a-f]+);/gi, (_m, n: string) => String.fromCodePoint(Number.parseInt(n, 16)))
+    .replace(/&#(\d+);/g, (m, n: string) => codePoint(Number(n), m))
+    .replace(/&#x([0-9a-f]+);/gi, (m, n: string) => codePoint(Number.parseInt(n, 16), m))
     .replace(/&([a-z0-9]+);/gi, (m, name: string) => ENTITIES[name.toLowerCase()] ?? m)
     .replace(/\s+/g, ' ')
     .trim();

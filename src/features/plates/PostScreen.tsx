@@ -8,6 +8,7 @@ import { useRouter } from 'expo-router';
 import { useMemo, useState } from 'react';
 import { Pressable, ScrollView, View } from 'react-native';
 
+import { INGREDIENTS } from '@/data/catalogue/catalogue';
 import { CUISINE_LABELS, DIFFICULTY_LABELS } from '@/domain/recipes/labels';
 import { indexForSearch, searchRecipes } from '@/domain/recipes/search';
 import { DIFFICULTIES, totalMinutes } from '@/domain/recipes/types';
@@ -31,7 +32,7 @@ import { TextField } from '@/ui/primitives/TextField';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { FIXED } from '@/ui/tokens/colour';
 import { PLATE } from '@/ui/tokens/screens';
-import { PRESSED, RADIUS, SPACE, slopFor } from '@/ui/tokens/type';
+import { ICON, PRESSED, RADIUS, SPACE, slopFor } from '@/ui/tokens/type';
 
 const SUGGEST = 3;
 
@@ -45,7 +46,7 @@ export function PostScreen() {
   const share = usePlates((s) => s.share);
   const all = useAllRecipes();
   const getRecipe = useRecipeLookup();
-  const index = useMemo(() => indexForSearch(all, (c) => CUISINE_LABELS[c]), [all]);
+  const index = useMemo(() => indexForSearch(all, (c) => CUISINE_LABELS[c], INGREDIENTS), [all]);
   const [choosing, setChoosing] = useState(false);
   const [problem, setProblem] = useState<string | undefined>();
   const [tried, setTried] = useState(false);
@@ -98,7 +99,7 @@ export function PostScreen() {
               testID="post-add-photo"
               style={({ pressed }) => [styles.addTile, pressed && { opacity: PRESSED.row }]}
             >
-              <Icon name="camera" size={26} />
+              <Icon name="camera" size={ICON.large} />
               <Text variant="chip">Add photo</Text>
             </Pressable>
           ) : null}
@@ -119,7 +120,7 @@ export function PostScreen() {
                 testID={`post-remove-photo-${i}`}
                 style={styles.removeDisc}
               >
-                <Icon name="close" size={14} tone={FIXED.photoDiscInk} />
+                <Icon name="close" size={ICON.chip} tone={FIXED.photoDiscInk} />
               </Pressable>
             </View>
           ))}

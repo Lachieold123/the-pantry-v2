@@ -5,9 +5,8 @@ import { Pressable, TextInput, View } from 'react-native';
 import { textStyle } from '@/ui/theme/fonts';
 import { makeStyles } from '@/ui/theme/makeStyles';
 import { useTheme } from '@/ui/theme/ThemeProvider';
-import { PRESSED, RADIUS, SPACE, TYPE } from '@/ui/tokens/type';
+import { ICON, RADIUS, SPACE, TYPE } from '@/ui/tokens/type';
 import { Icon } from './Icon';
-import { Text } from './Text';
 
 type Props = {
   value: string;
@@ -25,7 +24,7 @@ export function SearchField({ value, onChange, placeholder, label, onSubmit, aut
   const { colours } = useTheme();
   return (
     <View style={styles.box}>
-      <Icon name="search" size={18} colour="inkMuted" />
+      <Icon name="search" size={ICON.standard} colour="inkMuted" />
       <TextInput
         value={value}
         onChangeText={onChange}
@@ -52,29 +51,10 @@ export function SearchField({ value, onChange, placeholder, label, onSubmit, aut
           hitSlop={12}
           {...(testID ? { testID: `${testID}-clear` } : {})}
         >
-          <Icon name="clear" size={18} colour="inkMuted" />
+          <Icon name="clear" size={ICON.standard} colour="inkMuted" />
         </Pressable>
       ) : null}
     </View>
-  );
-}
-
-/** Looks like the search box but opens a search page (Home's "Search recipes", D-033). */
-export function SearchButton({ placeholder, onPress, testID }: { placeholder: string; onPress: () => void; testID?: string | undefined }) {
-  const styles = useStyles();
-  return (
-    <Pressable
-      onPress={onPress}
-      accessibilityRole="search"
-      accessibilityLabel={placeholder}
-      {...(testID ? { testID } : {})}
-      style={({ pressed }) => [styles.box, styles.alone, pressed && { opacity: PRESSED.row }]}
-    >
-      <Icon name="search" size={18} colour="inkMuted" />
-      <Text variant="body" colour="inkMuted" numberOfLines={1}>
-        {placeholder}
-      </Text>
-    </Pressable>
   );
 }
 
@@ -86,13 +66,12 @@ const useStyles = makeStyles(({ colours }) => ({
     flexDirection: 'row',
     alignItems: 'center',
     gap: SPACE.xs,
-    paddingHorizontal: 14,
+    paddingHorizontal: SPACE.field,
     borderRadius: RADIUS.lg,
     borderWidth: 1,
     borderColor: colours.border,
     backgroundColor: colours.bgSoft,
   },
   // On its own in a column it keeps its height; the field version grows across a row.
-  alone: { flexGrow: 0, flexShrink: 0, flexBasis: 'auto' },
   input: { flex: 1, minHeight: 46, color: colours.ink, ...textStyle(TYPE.body), lineHeight: undefined },
 }));

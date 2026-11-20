@@ -1,7 +1,7 @@
 // v1's cream library card (spec §4.6, CookmarksModal): a square photo on a
 // dark well, the cuisine eyebrow, a two-line serif title, then time and
 // difficulty. On Saved, a cream disc on the photo unsaves the recipe.
-// LibraryCardGrid lays them two to a row; an odd last card keeps its width.
+// LibraryCardRow lays them two to a row, in a virtualised list (REL-14).
 import { Image } from 'expo-image';
 import { Pressable, View } from 'react-native';
 
@@ -83,34 +83,33 @@ export function LibraryCard({ recipe, image, onPress, onUnsave }: CardProps) {
   );
 }
 
-type GridProps = {
-  recipes: readonly Recipe[];
+type RowProps = {
+  row: readonly Recipe[];
   imageFor: (id: string) => number | undefined;
   onOpen: (id: string) => void;
   onUnsave?: ((recipe: Recipe) => void) | undefined;
 };
 
-export function LibraryCardGrid({ recipes, imageFor, onOpen, onUnsave }: GridProps) {
-  const styles = useStyles();
+/** Two to a row, for a virtualised list (ui/primitives/ListScreen). */
+export function libraryRows(recipes: readonly Recipe[]): Recipe[][] {
   const rows: Recipe[][] = [];
   for (let i = 0; i < recipes.length; i += 2) rows.push(recipes.slice(i, i + 2));
+  return rows;
+}
+
+export const libraryRowKey = (row: readonly Recipe[]) => row.map((r) => r.id).join();
+
+/** One row of the grid. An odd last card keeps its width. */
+export function LibraryCardRow({ row, imageFor, onOpen, onUnsave }: RowProps) {
+  const styles = useStyles();
   return (
-    <View style={styles.grid}>
-      {rows.map((row) => (
-        <View key={row.map((r) => r.id).join()} style={styles.row}>
-          {row.map((r) => (
-            <View key={r.id} style={styles.cell}>
-              <LibraryCard
-                recipe={r}
-                image={imageFor(r.id)}
-                onPress={() => onOpen(r.id)}
-                onUnsave={onUnsave ? () => onUnsave(r) : undefined}
-              />
-            </View>
-          ))}
-          {row.length === 1 ? <View style={styles.cell} /> : null}
+    <View style={styles.row}>
+      {row.map((r) => (
+        <View key={r.id} style={styles.cell}>
+          <LibraryCard recipe={r} image={imageFor(r.id)} onPress={() => onOpen(r.id)} onUnsave={onUnsave ? () => onUnsave(r) : undefined} />
         </View>
       ))}
+      {row.length === 1 ? <View style={styles.cell} /> : null}
     </View>
   );
 }
@@ -120,8 +119,7 @@ export function LibraryCardGrid({ recipes, imageFor, onOpen, onUnsave }: GridPro
 const useStyles = makeStyles(({ name }) => {
   const c = libraryColours(name);
   return {
-    grid: { gap: LIBRARY.gridGap, marginHorizontal: LIBRARY.gridX - SPACE.gutter },
-    row: { flexDirection: 'row', gap: LIBRARY.gridGap },
+    row: { flexDirection: 'row', gap: LIBRARY.gridGap, marginHorizontal: LIBRARY.gridX - SPACE.gutter },
     cell: { flex: 1 },
     card: { backgroundColor: c.card, borderRadius: RADIUS.card, overflow: 'hidden' },
     pressed: { opacity: PRESSED.card },

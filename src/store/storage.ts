@@ -17,13 +17,22 @@ export function persistentStorage<S>(): PersistStorage<S> {
   return storage as PersistStorage<S>;
 }
 
+/**
+ * Stores whose saved data couldn't be read (storage unavailable, not corrupt).
+ * They start empty for this session and are never saved over, so the real
+ * data is still there next launch. A corrupt blob is different: it's backed up first.
+ */
+const unreadable = new Set<string>();
+
 const storage: PersistStorage<unknown> = {
   getItem: async (name) => {
     let raw: string | null = null;
     try {
       raw = await AsyncStorage.getItem(name);
+      unreadable.delete(name);
     } catch (e) {
-      console.warn(`[storage] couldn't read ${name}`, e);
+      console.warn(`[storage] couldn't read ${name}; won't save over it this session`, e);
+      unreadable.add(name);
       return null;
     }
     const { saved, problem } = readSaved(raw);
@@ -34,6 +43,7 @@ const storage: PersistStorage<unknown> = {
     return saved as StorageValue<unknown> | null;
   },
   setItem: async (name, value) => {
+    if (unreadable.has(name)) return;
     try {
       await AsyncStorage.setItem(name, JSON.stringify(value));
     } catch (e) {

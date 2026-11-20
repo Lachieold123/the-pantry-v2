@@ -93,3 +93,11 @@ describe('normaliseLink', () => {
     assert.equal(normaliseLink(''), undefined);
   });
 });
+
+describe('character codes that are not characters (BUG-24)', () => {
+  it('keeps the entity as written instead of throwing', () => {
+    assert.equal(cleanText('Pie &#9999999999;'), 'Pie &#9999999999;');
+    assert.equal(cleanText('Caf&#233;'), 'Café');
+    assert.equal(cleanText('&#x110000;'), '&#x110000;');
+  });
+});

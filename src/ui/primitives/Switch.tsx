@@ -10,7 +10,7 @@ type Props = { label: string; detail?: string; value: boolean; onChange: (value:
 export function Switch({ label, detail, value, onChange, testID }: Props) {
   return (
     <View style={{ minHeight: TAP_TARGET, flexDirection: 'row', alignItems: 'center', gap: SPACE.md, paddingVertical: SPACE.xs }}>
-      <View style={{ flex: 1, gap: 2 }}>
+      <View style={{ flex: 1, gap: SPACE.hair }}>
         <Text variant="row">{label}</Text>
         {detail ? <Text variant="meta">{detail}</Text> : null}
       </View>

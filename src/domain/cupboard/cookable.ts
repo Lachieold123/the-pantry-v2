@@ -65,6 +65,18 @@ export function cookable(recipe: Recipe, have: ReadonlySet<string>, shelf: Shelf
   return result;
 }
 
+/**
+ * The shopping list's "do I have it?" (BUG-06): the stand-in you have, or
+ * 'shelf' for a shelf item you're assumed to keep. Exact matches are the
+ * caller's to check. The same rules as `cookable`, so the list and "What I
+ * have" never disagree.
+ */
+export function coverFor(id: string, have: ReadonlySet<string>, shelf: Shelf, kitchen: Kitchen): string | undefined {
+  const stand = kitchen.swapsFor(id).find((s) => have.has(s));
+  if (stand) return stand;
+  return onShelf(id, shelf, kitchen) ? 'shelf' : undefined;
+}
+
 /** Ready (nothing to buy) or Nearly (one or two things). A recipe must use something from your cupboard to count at all. */
 export function tierOf(c: Cookable): Tier | undefined {
   if (c.have.length + c.swaps.length === 0) return undefined;

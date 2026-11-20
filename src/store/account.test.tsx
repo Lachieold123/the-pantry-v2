@@ -2,6 +2,7 @@
 // to this phone's user, switching to an account that already has things and
 // merging, the email code, signing out (refused while changes wait, then a
 // clean phone), deleting, and the once-only offer.
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { act } from '@testing-library/react-native';
 
 import type { Row } from '@/domain/sync/rows';
@@ -10,6 +11,7 @@ import { deleteAccount, sendCode, signInWithApple, signOut, verifyCode } from '.
 import { accountEngine } from './accountSync';
 import { useCupboard } from './cupboard';
 import { adoptHousehold, leave, useHousehold } from './household';
+import { usePlates } from './plates';
 import { usePlan } from './plan';
 import { usePreferences } from './preferences';
 import { useSaved } from './saved';
@@ -260,8 +262,10 @@ describe('signing out and deleting', () => {
     expect(mockServer.rows.get('bookmark:pho')?.deleted).toBe(false);
   });
 
-  it('deleting the account removes it on the server and clears this phone', async () => {
+  it('deleting the account removes it on the server and clears this phone, dishes and backups too (SEC-12)', async () => {
     useSaved.getState().toggleBookmark('pho');
+    usePlates.setState({ plates: [{ id: 'p1', title: 'Our pie', caption: '', photos: [], createdAt: 1 } as never] });
+    await AsyncStorage.setItem('the-pantry-v2/plan.corrupt.123', '{oops');
     await signIn();
     await act(async () => {
       expect((await deleteAccount()).ok).toBe(true);
@@ -269,6 +273,8 @@ describe('signing out and deleting', () => {
     expect(mockServer.deleted).toBe(true);
     expect(useAccount.getState().who).toBeUndefined();
     expect(useSaved.getState().bookmarks).toEqual([]);
+    expect(usePlates.getState().plates).toEqual([]);
+    expect(await AsyncStorage.getItem('the-pantry-v2/plan.corrupt.123')).toBeNull();
   });
 });
 
