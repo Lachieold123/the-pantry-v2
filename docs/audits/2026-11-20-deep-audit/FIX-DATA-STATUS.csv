@@ -1,0 +1,22 @@
+DATA-4,fixed,b4b1f62,A dead sharing sign-in now goes to the rejoin state and keeps its unsent rows instead of becoming a new anonymous user.
+DATA-5,fixed,b4b1f62,Signing out is refused while any change is set aside and editing the item clears its set-aside entry.
+DATA-6,fixed,e7b078d,A collection's own row keeps only as much order as fits so it is never set aside and the member rows carry every recipe.
+DATA-7,fixed,b4b1f62,Leaving or deleting household data sends unsent rows first and refuses if they can't be sent.
+DATA-8,fixed,41aff5b,Data saved by a newer build is never loaded as empty or saved over.
+DATA-9,fixed,41aff5b,A plan saved with odd fields loads as empty fields so startup and sync still finish.
+DATA-10,part-fixed,b4b1f62,Other members' recipes the plan uses stay when sharing stops; marking plan rows that point at deleted recipes is server-side.
+DATA-11,fixed,41aff5b,Every saved store is listed as cleared on sign-out or deletion or kept and deletion now clears the Home log.
+DATA-12,fixed,b4b1f62,A lapsed sign-in keeps its unsent rows sends them on signing back in and tells the person once.
+DATA-13,fixed,b4b1f62,The code error no longer promises single-use codes or a two-day life.
+DATA-14,fixed,e7b078d,Cooking skill and intents now sync with the account.
+DATA-15,fixed,b4b1f62,Joining a household or signing in drops weeks past the 8-week keep.
+DATA-16,fixed,b4b1f62,Adopting a household is single-flight so two at once pull once.
+DATA-17,fixed,41aff5b,The old-app import marks itself pending then done and a re-run uses the same ids so nothing doubles.
+DATA-18,fixed,b4b1f62,Invite previews no longer create an anonymous user on a fresh phone.
+REPO-11,fixed,41aff5b,Startup waits for all 15 saved stores and a test checks the list against the source.
+S2-11,fixed,b4b1f62,A household function missing on the server reads as not available instead of a vague failure.
+S2-12,fixed,4b61735,Link import reads the page as a stream and stops at the 5 MB cap.
+S2-13,fixed,4b61735,Imported ingredients and method are cut to fit a backed-up row and the notes say so.
+PERF-2,fixed,914e74b,Cupboard matching is worked out once per change and shared by every screen.
+PERF-3,fixed,b4b1f62,The account merge retry keeps one timer instead of stacking them.
+S2-4,part-fixed,0669db8,Client half: Apple's code goes to apple-token and deletion calls delete-account with the RPC fallback; server half is the server fixer's.
