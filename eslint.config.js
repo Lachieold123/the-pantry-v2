@@ -39,7 +39,8 @@ const noColourLiterals = {
 module.exports = defineConfig([
   expoConfig,
   // Edge Functions run on Deno (npm: imports, Deno globals), not in the app; the retired seed kitchen is a bundled copy kept for the record.
-  { ignores: ['dist/*', '.expo/*', 'node_modules/*', 'ios/*', 'android/*', 'coverage/*', 'supabase/functions/**'] },
+  // Generated test output and audit scratch are not app code; walking e2e-report crashed ESLint on its huge bundle (REPO-5).
+  { ignores: ['dist/*', '.expo/*', 'node_modules/*', 'ios/*', 'android/*', 'coverage/*', 'supabase/functions/**', 'e2e-report/**', 'test-results/**', 'docs/**', '.claude/**', 'scripts/.cache/**'] },
   {
     files: ['src/**/*.{ts,tsx}'],
     ignores: ['src/ui/tokens/**'],
