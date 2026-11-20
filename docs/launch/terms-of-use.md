@@ -1,4 +1,14 @@
 > **Draft for Lachlan and a lawyer to review. Not legal advice.** Drafted by an AI (Claude) on 12 October 2026 from the code on the `preview-2026-10-08` branch (K-23). It replaces the 5 October draft, which described an app with no accounts and no server. Points that need Lachlan's decision are marked **DECIDE:**. Fill every [square-bracket placeholder], settle every DECIDE:, then delete this box, every "Note for Lachlan" and every DECIDE: line before publishing.
+>
+> **Re-checked against the code on 20 November 2026** (branch `audit/deep-1120`, deep audit S2-6 and S2-7). Every factual sentence now describes a store build. Proof: `docs/audits/2026-11-20-deep-audit/FIX-DOCS.md`.
+
+> **OWNER TO DO BEFORE SUBMITTING**
+> 1. Host these terms, the privacy policy and a support page on HTTPS and paste the URLs into `src/lib/legal.ts`. Filling the privacy and terms links is what puts Pro on sale, so section 10 applies from that build on.
+> 2. Check in App Store Connect whether either Pro product has an introductory offer (free trial). Section 10 covers both cases; the listing must not promise a trial unless there is one.
+> 3. Apply the live database migrations (`supabase/APPLY-LIVE.md`). Section 4's 48-hour one-person codes and section 7's member removal depend on them.
+> 4. Settle the minimum age with the lawyer (section 4; it must match the privacy policy, section 9).
+> 5. Get a support email address and fill [contact email].
+> 6. Have a lawyer review it, especially sections 5, 9 and 10.
 
 # The Pantry: Terms of Use
 
@@ -24,25 +34,25 @@ We give you a personal, non-exclusive, non-transferable licence to use The Pantr
 
 Please don't copy, resell, reverse-engineer or redistribute the app or its recipes and photos, except as the law allows.
 
-The Pantry is currently free. The Pantry Pro, an optional subscription, isn't on sale yet; section 10 will apply once it is.
+The Pantry is free to use. The Pantry Pro is an optional subscription; section 10 explains it.
 
 ## 4. Accounts and households
 
 You don't need an account to use The Pantry. Two optional features use our servers:
 
-- **An account** backs up your kitchen and puts it on any phone you sign in on. You sign in with Apple or with a code we email you.
+- **An account** backs up your kitchen and puts it on any phone you sign in on. You sign in with Apple.
 - **A household** lets up to 8 people share one plan, shopping list and cupboard. You join with an invite, with or without an account.
 
 If you use either:
 
 - **Age.** You must be at least [16] to create an account or start or join a household.
-- **Keep access to your email or Apple ID safe.** Anyone who can read your email or use your Apple ID can sign in to your account.
+- **Keep your Apple ID safe.** Anyone who can use your Apple ID can sign in to your account.
 - **One person per account.** To share with family, use a household rather than sharing an account.
 - **Give a name you're happy for your household to see.** It must not pretend to be someone else, or be offensive.
 - **Only invite people you know.** Whoever uses your invite code first can join while it's valid (48 hours). Every member can see and change the shared plan, list and cupboard, and see the recipes of yours that the shared plan uses.
 - **Signing out and deleting.** You can sign out, leave a household, or delete your account in **Settings** at any time. Deleting is permanent; the Privacy Policy explains exactly what's deleted and what stays with the household.
 
-> DECIDE: the minimum age (13, 16 or 18). It must match the Privacy Policy, section 9. The app doesn't check age today; ask the lawyer whether a statement is enough.
+> DECIDE: the minimum age (13, 16 or 18). It must match the Privacy Policy, section 9. The app doesn't ask anyone's age (audit S2-16); ask the lawyer whether a statement is enough. The "48 hours" above is true only once migration `20261120000200_invites.sql` is applied; until then live codes last 14 days and anyone can reuse them (to-do 3). Note for Lachlan: email codes are built but switched off (`src/lib/emailCodes.ts:9`); when you switch them on, add "or with a code we email you" and "your email or" back.
 
 ## 5. Recipes, food safety and your health
 
@@ -54,9 +64,9 @@ Our recipes have been written and checked with care, and some carry food-safety 
 - **Kitchens have hazards.** Take care with knives, hot oil, steam and hot surfaces, and supervise children.
 - **This isn't medical, dietary or nutritional advice.** The Pantry is a cooking app. If you have a medical condition, an allergy or special dietary needs, follow the advice of your doctor or an accredited practising dietitian.
 
-**How the recipes are made.** The recipes in The Pantry were first drafted with the help of AI writing tools, then reviewed and edited by us before they're published.
+**How the recipes are made.** The recipes built into The Pantry were first drafted with the help of AI writing tools. Before release, each one was read line by line against our written standards and edited, with the help of AI tools, and we settled the questions that review raised. None of them has been cook-tested yet. Recipes you write or import yourself are yours, and we don't check them.
 
-> DECIDE: whether to add a cook-testing sentence. Only keep one that's literally true for the build you ship. Today none of the shipped recipes is cook-tested (D-036), and there's no "Tested in The Pantry kitchen" label in the app. Also check this paragraph matches the in-app wording in `src/domain/recipes/labels.ts` (D-049).
+> DECIDE (lawyer): this sentence replaces "reviewed and edited by us before they're published" (audit S2-6, S2-7). What's true: a store build shows only the 271 recipes marked `reviewed` (`src/domain/recipes/provenance.ts:7`); the October 2026 review of them was done by AI agents working to a written brief (`docs/reports/recipe-review-2026-10.md`), with your calls on the open questions (D-036); none is cook-tested; 68 of them still lack some house food-safety cues (audit FOOD-4, being fixed). If you read and approved each one yourself, say so instead. The 719 recipes under the 99 AI cooks on the server were only machine-checked (`auto-checked`); they're hidden in store builds, and this sentence must not cover them if those screens are ever turned on. The in-app wording ("checked and edited by us", `src/domain/recipes/labels.ts:144` and `:151`) says the same as the old sentence; make it match whatever you keep here.
 
 ## 6. What you add to the app
 
@@ -83,7 +93,7 @@ If someone in your household is behaving badly, you can leave the household at a
 
 Any member can also remove another member from the household.
 
-> DECIDE: member removal and 48-hour single-use codes (D-048) only work once the K-18 migrations are applied to the live project. Apply them before publishing, or delete the line above and change "48 hours" to "14 days".
+> DECIDE: member removal and 48-hour single-use codes (D-048) only work once the live migrations are applied (`supabase/APPLY-LIVE.md`; audit S2-11: `remove_member` and `revoke_invites` don't exist live yet). Apply them before publishing, or delete the line above and change "48 hours" to "14 days" in section 4.
 
 ## 8. Our content, and photo credits
 
@@ -118,9 +128,19 @@ Nothing in these terms limits liability for death or personal injury caused by o
 
 > DECIDE: hosting. The Supabase project is on the free plan, which pauses after about a week without use (docs/HOUSEHOLD.md). Move to a paid plan before launch, or households and sign-in will stop working without warning.
 
-## 10. [Add when Pro goes on sale] Pro subscriptions
+## 10. The Pantry Pro
 
-> [Draft wording to adapt: "Pro is an optional subscription, sold through the App Store, at the price shown in the app before you buy. Payment is charged to your Apple Account. It renews automatically unless you turn off auto-renew at least 24 hours before the end of the current period, in your Apple Account settings. If a free trial is offered, you're charged when it ends unless you cancel at least 24 hours before. Refunds are handled by Apple under its policies, and your rights under the Australian Consumer Law. Free features stay free; Pro adds [list exactly what Pro does at the time]. If Pro ends, nothing you made is taken away." Apple requires the title, length and price of the subscription, and links to these terms and the privacy policy, on the paywall itself (docs/PRO.md, K-38).]
+Pro is an optional subscription, monthly or yearly, sold through the App Store at the price shown in the app before you buy.
+
+- **Payment** is charged to your Apple Account when you confirm the purchase.
+- **It renews automatically** unless you turn off auto-renew at least 24 hours before the end of the current period. Manage or cancel it in your Apple Account's subscription settings.
+- **Free trials.** If the app offers you a free trial, it says so on the button before you buy. You're charged when the trial ends unless you cancel at least 24 hours before. The app only offers a trial your Apple Account can still have.
+- **Refunds** are handled by Apple under its policies, and your rights under the Australian Consumer Law aren't affected.
+- **What Pro adds.** Everything else in the app is free, including planning the week you're shopping for. Pro adds planning next week as well, and no limits on collections (free: 3), your own recipes (free: 10) and recipes imported from web links (free: 5 a month).
+- **If Pro ends,** nothing you made is taken away. You keep every collection and recipe; you just can't add more past the free limits.
+- **Restoring.** If you change phones, tap Restore purchases on the Pro screen.
+
+> DECIDE (lawyer): this section replaces the bracketed draft. It's true to the code: limits in `src/domain/pro/pro.ts:15-19` and `PRO_BENEFITS` (line 81); trial wording only when the store product has a free introductory offer and Apple says the buyer is eligible (`src/domain/pro/purchase.ts:76-89`); Restore on the paywall (`BuyPanel.tsx`). Check "If Pro ends" against what the app does with existing items over the limit (the code limits adding, not keeping). Apple requires the title, length and price of the subscription, and links to these terms and the privacy policy, on the paywall itself: the app shows them only once `LEGAL_URLS` is filled (`src/lib/legal.ts`). Settle section 9's refund wording at the same time.
 
 ## 11. Changes to the app and these terms
 

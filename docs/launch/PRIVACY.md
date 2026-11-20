@@ -1,17 +1,23 @@
 # Privacy manifest and App Privacy answers
 
-Written 7 October 2026 by Claude from the code, for P11 (launch readiness). It replaces the "Data Not Collected" appendix in `privacy-policy.md`, which was written on 5 October before Household (D-039) and Accounts (D-043) existed. That appendix is now wrong and must not be used.
+Written 7 October 2026 by Claude from the code, for P11 (launch readiness). **Re-checked against the code on 20 November 2026** (branch `audit/deep-1120`, deep audit S2-6): every line describes a store build (`INTERNAL_BUILD` false). Proof: `docs/audits/2026-11-20-deep-audit/FIX-DOCS.md`.
 
-**What to do with this:** paste `docs/launch/privacy-manifest.json` under `expo.ios.privacyManifests` in `app.json` (replacing the empty one there now), and answer App Store Connect › App Privacy as in §3. Both need your OK first: the manifest is native config, and it ships in the next EAS build.
+**What this is now:** the notes behind the iOS privacy manifest. `app.json` › `ios.privacyManifests` already holds the same entries as `docs/launch/privacy-manifest.json` (Name, Email Address, User ID, Other User Content, Product Interaction, Purchase History). The App Store Connect › App Privacy answers live in one place only: `app-store-privacy-and-review.md` §1.
+
+> **OWNER TO DO BEFORE SUBMITTING:** read RevenueCat's App Privacy guide for `react-native-purchases` 10.11 and check whether it lists a device identifier or diagnostics. If it does, add them to the manifest and the App Privacy answers together (`app-store-privacy-and-review.md` §1, DECIDE 1 and 2). Check the generated `PrivacyInfo.xcprivacy` after the next `expo prebuild` (K-35).
 
 ## 1. What leaves the phone, and when
 
-Nothing leaves the phone until the cook uses a backend feature. The Supabase client is only created on first use (`src/lib/supabase.ts`), so someone who never starts a household and never signs in sends us nothing.
+Two things leave the phone:
+
+- **RevenueCat, at every launch on an iPhone.** `startPurchases()` runs during start-up (`src/features/app/useAppReady.ts:30`) and configures RevenueCat (`src/store/proSync.ts:58-78`, `src/lib/purchases.ts:81-93`). That creates a RevenueCat customer: a random anonymous ID, or the Supabase user ID while signed in (`Purchases.logIn` / `logOut`). It happens whether or not Pro is on sale. No name, email or other attribute is sent to RevenueCat.
+- **Supabase, only when the cook uses a backend feature.** The client is created on first use (`src/lib/supabase.ts:11`). The household sync runs only inside a household (`src/store/household.ts:96`), and the account only when signed in (`src/store/accountActions.ts:50`). A store build doesn't read the public feed: Home's "From other cooks", `/feed`, cook pages and the Home viewer are all behind `COMMUNITY_SHOWN` / `INTERNAL_BUILD` (`src/lib/build.ts:19`, `FeedScreen.tsx:196`). So someone who never starts a household and never signs in sends Supabase nothing.
 
 | What | When it's sent | Where it goes | Code |
 | --- | --- | --- | --- |
+| **RevenueCat customer ID and purchase history** | Every launch on an iPhone; purchases when bought or restored | RevenueCat (US company) | `src/store/proSync.ts`, `src/lib/purchases.ts` |
 | **User ID** (Supabase's random id, anonymous until sign-in) | First time a household is started or joined, or on sign-in | Supabase Auth, Sydney | `src/lib/household.ts` `signedInUser`, `src/lib/account.ts` |
-| **Email address** | Signing in with an email code, or with Apple (Apple may give its private-relay address) | Supabase Auth | `sendEmailCode`, `continueWithApple` |
+| **Email address** | Signing in with Apple (Apple may give its private-relay address). Email codes are built but off (`EMAIL_CODES_CONNECTED = false`, `src/lib/emailCodes.ts:9`) | Supabase Auth | `continueWithApple` |
 | **Name** | Apple's name (first Apple sign-in only) is saved to `profiles.display_name`. Household members type the name others see when they start or join | `profiles`, `household_members` | `saveDisplayName`, `createHousehold`, `joinHousehold` |
 | **Kitchen and personal data** (plan, list ticks/removals/extras, cupboard, own recipes, Cookmarks, collections, hidden dishes, cooking log, taste settings: diet, leave-outs, cuisines, weeknight time, units) | Signed in, or in a household | `account_rows` (owner only) or `household_rows` (household members) | `src/domain/sync/types.ts` lists every kind |
 | **Recently viewed recipes** | Signed in | `account_rows` (`recent`) | `src/domain/sync/personal.ts` |
@@ -19,7 +25,8 @@ Nothing leaves the phone until the cook uses a backend feature. The Supabase cli
 **Stays on the phone, never sent:**
 
 - **Plates (Share a dish photos).** `src/store/plates.ts` keeps the photo URI, name and notes in AsyncStorage. The plates store isn't a sync kind, and no code uploads it. The post screen says so.
-- **Camera and photo library access** (`src/lib/photos.ts`) only feeds plates. Scanning would also use it, but `SCAN_CONNECTED = false` and `readPhoto` sends nothing (`src/lib/scan.ts`).
+- **Camera and photo library access** (`src/lib/photos.ts`) only feeds plates. Scanning would also use it, but `SCAN_CONNECTED = false` (`src/lib/scan.ts:13`), and a store build hides the scan ways in and the scan route (`SCAN_WAYS_SHOWN`, `src/lib/build.ts:20`).
+- **Home's interaction log** (what was shown, opened, hidden) stays in AsyncStorage (`src/store/homeEvents.ts`). The server's `home_events` table exists, but no code uploads to it.
 - **Notifications** are local only: Cook Mode timers and the Sunday 4pm reminder (`src/lib/notifications.ts`). No push token is ever requested.
 - **Theme, high contrast and the reminder switch** are per phone and don't sync (`SYNCED_PREFS`).
 
@@ -46,15 +53,18 @@ Every one is **linked to the user** (it sits against their Supabase user id), **
 | `NSPrivacyCollectedDataTypeEmailAddress` | Email Address | Email-code or Apple sign-in |
 | `NSPrivacyCollectedDataTypeName` | Name | Apple's name, and the display name household members see |
 | `NSPrivacyCollectedDataTypeOtherUserContent` | Other User Content | Plan, list edits, cupboard, own recipes, Cookmarks, collections, cooking log, taste settings |
-| `NSPrivacyCollectedDataTypeProductInteraction` | Product Interaction | Recently viewed recipes. It's kept to show them back, not for analytics, but Apple's definition ("how the user interacts with the app") fits it best. Declaring it is the safe side |
+| `NSPrivacyCollectedDataTypeProductInteraction` | Product Interaction | Recently viewed recipes and the cooking log. They're kept to show them back, not for analytics, but Apple's definition ("how the user interacts with the app") fits best. Declaring it is the safe side |
+| `NSPrivacyCollectedDataTypePurchaseHistory` | Purchase History | RevenueCat's record of Pro (D-052), made at every iPhone launch. Linked: the customer ID is RevenueCat's app user ID, which is the Supabase user ID while signed in |
+
+The User ID entry also covers RevenueCat's customer ID.
 
 **Deliberately not declared:**
 
 - **Photos or Videos:** plates stay on the phone. *Add this the day plates sync or social posting ships (P9).*
 - **Health:** "Ingredients to avoid" and the diet (everything, vegetarian, pescatarian, vegan) are food preferences, not medical records, and the app never asks why. If an "allergies" field is ever added, revisit this.
-- **Purchase History:** RevenueCat is in the app (D-052) and starts on iPhone builds, creating a customer record (an anonymous id, or the account id when signed in) even before anything is bought. *Add before the next App Store submission* (PRO.md, "Still needs Lachlan" step 4): linked to the user when signed in, because the account id is RevenueCat's app user id.
+- **Device ID:** the app's sync tag is a random ID it makes. Whether the RevenueCat SDK sends a device identifier of its own is the open check in the to-do above.
 - **Crash Data / Performance Data:** no Sentry yet. *Add when K-8 lands*, not linked if no user id is attached.
-- **Coarse Location / IP address:** Supabase sees the connecting IP, as any server does, and keeps it briefly in its own logs. The app doesn't read, store or use it, so it isn't declared. Mention Supabase's logs in the privacy policy.
+- **Coarse Location / IP address:** Supabase and RevenueCat see the connecting IP, as any server does, and keep it briefly in their own logs. The app doesn't read, store or use it, so it isn't declared. The privacy policy mentions both (3E, 3F).
 
 ### Required reason APIs
 
@@ -76,54 +86,19 @@ Libraries checked with no manifest of their own and no required-reason calls in 
 
 ## 3. App Store Connect › App Privacy answers
 
-**Do you or your third-party partners collect data from this app?** **Yes.**
-
-Apple's "collect" means sent off the phone and kept longer than needed to handle the request in real time. A household's and an account's rows are kept, so it's yes.
-
-For each type below, App Store Connect asks the same three questions. The answers are the same for all five:
-
-- **Purposes:** App Functionality only. (Not Analytics, not Product Personalisation, not Advertising, not Developer's Advertising or Marketing, not Other.)
-- **Is it linked to the user's identity?** Yes.
-- **Is it used for tracking?** No.
-
-| Category › type | Tick it? | Why |
-| --- | --- | --- |
-| Contact Info › **Name** | Yes | Apple sign-in name; household display name |
-| Contact Info › **Email Address** | Yes | Sign-in |
-| Contact Info › Phone, Physical Address, Other | No | |
-| Health & Fitness | No | See "Health" above |
-| Financial Info | No | Until Pro: then Purchases › Purchase History |
-| Location | No | |
-| Sensitive Info | No | |
-| Contacts | No | |
-| User Content › Emails or Text Messages | No | No messaging yet (P9) |
-| User Content › Photos or Videos | **No** | Plates stay on the phone. Yes once they sync or post |
-| User Content › Audio, Gameplay, Customer Support | No | |
-| User Content › **Other User Content** | Yes | Plan, list, cupboard, recipes, collections, cooking log, taste settings |
-| Browsing History | No | Recipe history inside the app isn't web browsing |
-| Search History | No | Searches aren't synced |
-| Identifiers › **User ID** | Yes | Supabase user id |
-| Identifiers › Device ID | No | The sync "device" tag is a random id the app makes (`useAccount.device`), not a hardware or advertising id. It's stored with rows as `updated_by`. If you want to be extra careful, tick Device ID too (App Functionality, linked, not tracking) |
-| Purchases | No | Until Pro |
-| Usage Data › **Product Interaction** | Yes | Recently viewed |
-| Usage Data › Advertising Data, Other Usage Data | No | |
-| Diagnostics | No | Until Sentry |
-| Other Data | No | |
-
-The App Store will show **"Data Linked to You": Contact Info, User Content, Identifiers, Usage Data**, and nothing under "Data Used to Track You".
+Moved on 20 November 2026 to `app-store-privacy-and-review.md` §1, so there's one set of answers. The table that was here said Purchases "No" while the manifest already declared Purchase History; the answers there now match the manifest.
 
 ## 4. Re-answer when
 
 | Change | Manifest | App Privacy |
 | --- | --- | --- |
-| Pro goes on sale (RevenueCat) | Add `NSPrivacyCollectedDataTypePurchaseHistory` (linked, App Functionality) and RevenueCat's own required reasons from its pod | Purchases › Purchase History |
+| Community screens on in store builds | No change, unless follows or Home events start uploading (then Other User Content and Product Interaction already cover them) | Recheck `app-store-privacy-and-review.md` §1 "Re-answer when" |
 | Sentry (K-8) | Add `CrashData` and `PerformanceData` (not linked if no user id; Analytics or App Functionality) and Sentry's required reasons | Diagnostics |
 | Plates sync, or social posting (P9) | Add `PhotosorVideos` (linked, App Functionality) | User Content › Photos or Videos; Emails or Text Messages if messages are stored |
 | Scanning connected | Add `PhotosorVideos` if the scan photo is kept; name the AI provider in the policy | Same |
 | `expo-updates` | Nothing collected; add its required reasons if Apple emails | No change |
 | Push notifications (P9) | Add `DeviceID` if the push token is stored against the user | Identifiers › Device ID |
 
-## 5. Also out of date
+## 5. Still open
 
-- `privacy-policy.md` still says "no accounts and no server". Sections 5A (accounts) and the Household row in `README.md` need folding in, with Supabase in Sydney named for APP 8 and in-app account deletion (Settings › Account › Delete account) described in §7.
-- `README.md` blocker 3 (Privacy and Terms rows in Settings) still applies: `LEGAL_URLS` in `src/lib/legal.ts` is empty until the pages are hosted.
+- `LEGAL_URLS` in `src/lib/legal.ts` is empty until the pages are hosted. Until then Settings › About, the paywall and the welcome show no legal links, and Pro can't be sold (`canSellPro`).
