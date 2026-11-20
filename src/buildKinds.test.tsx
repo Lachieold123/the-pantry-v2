@@ -1,3 +1,4 @@
+// Lives outside src/app: Expo Router bundles every file there as a route, tests included.
 // What a store build hides and an internal build keeps (REL2-1, REL2-8,
 // REPO-13). The flags themselves come from __DEV__ and
 // EXPO_PUBLIC_SHOW_DRAFT_RECIPES; the screens read them from src/lib/build.
@@ -8,11 +9,11 @@ import { WaysIn } from '@/features/cupboard/WaysIn';
 import { FeedScreen } from '@/features/feed/FeedScreen';
 import { ProSection } from '@/features/settings/ProSection';
 import { DrawerScreen } from '@/features/shell/DrawerScreen';
-import CooksRoute from './cooks/[id]';
-import ScanRoute from './cupboard/scan';
-import HomeViewerRoute from './dev/home-viewer';
-import PublishedRoute from './feed/[id]';
-import FeedRoute from './feed/index';
+import CooksRoute from '@/app/cooks/[id]';
+import ScanRoute from '@/app/cupboard/scan';
+import HomeViewerRoute from '@/app/dev/home-viewer';
+import PublishedRoute from '@/app/feed/[id]';
+import FeedRoute from '@/app/feed/index';
 
 const mockKind = { internal: true };
 jest.mock('@/lib/build', () => ({
