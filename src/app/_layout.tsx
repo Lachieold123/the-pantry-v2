@@ -15,7 +15,9 @@ import { FIXED } from '@/ui/tokens/colour';
 
 void SplashScreen.preventAutoHideAsync();
 
-export function ErrorBoundary({ retry }: ErrorBoundaryProps) {
+export function ErrorBoundary({ error, retry }: ErrorBoundaryProps) {
+  // shortcut: the crash only reaches the device log (Console.app, Xcode), until crash reporting is set up (REL2-12, K-8).
+  useEffect(() => console.error('[crash]', error), [error]);
   return (
     <ThemeProvider>
       <RootErrorScreen retry={retry} />
