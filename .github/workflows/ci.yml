@@ -39,10 +39,8 @@ jobs:
       - run: npm run catalogue:check-ingredients
       - run: npm run catalogue:check-house
       - run: npm run catalogue:check-text
-      # Advisory (continue-on-error) for now: it reports about 990 failures today, mostly food-safety wording.
-      # Remove continue-on-error once the catalogue repair brings it to zero (REPO-6, REPO-8).
+      # A hard gate since 20 November 2026, when the catalogue repair brought it to 5,496 of 5,496 (REPO-6, FOOD-15).
       - run: npm run catalogue:validate -- --no-nutrition
-        continue-on-error: true
       # The community feed upload: a recipe tagged vegan with parmesan in it fails here (REPO-2).
       - run: npm run feed:verify
       # Packages must match the Expo SDK (REL-17, K-28). A native version change also needs

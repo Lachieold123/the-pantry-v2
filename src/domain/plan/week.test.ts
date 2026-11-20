@@ -108,6 +108,9 @@ describe('gone recipes are not meals (F-10)', () => {
     const entries = [e('1', 'carbonara', '2026-11-19'), e('2', 'gone', '2026-11-20'), e('3', 'laksa', '2026-11-21')];
     const live = entriesWithRecipes(entries, (id) => id !== 'gone');
     assert.equal(upcomingCount(live, '2026-11-19'), 2);
-    assert.deepEqual(live.map((x) => x.id), ['1', '3']);
+    assert.deepEqual(
+      live.map((x) => x.id),
+      ['1', '3'],
+    );
   });
 });

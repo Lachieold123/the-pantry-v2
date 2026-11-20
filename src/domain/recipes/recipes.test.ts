@@ -90,9 +90,18 @@ describe('search', () => {
   it('"mac n cheese" finds what "mac and cheese" finds (F-13)', () => {
     const and = searchRecipes(searchIndex, 'mac and cheese').map((r) => r.id);
     assert.ok(and.length > 0);
-    assert.deepEqual(searchRecipes(searchIndex, 'mac n cheese').map((r) => r.id), and);
-    assert.deepEqual(searchRecipes(searchIndex, "mac 'n' cheese").map((r) => r.id), and);
-    assert.deepEqual(searchRecipes(searchIndex, 'mac & cheese').map((r) => r.id), and);
+    assert.deepEqual(
+      searchRecipes(searchIndex, 'mac n cheese').map((r) => r.id),
+      and,
+    );
+    assert.deepEqual(
+      searchRecipes(searchIndex, "mac 'n' cheese").map((r) => r.id),
+      and,
+    );
+    assert.deepEqual(
+      searchRecipes(searchIndex, 'mac & cheese').map((r) => r.id),
+      and,
+    );
   });
   it('returns nothing for nonsense, everything for an empty query', () => {
     assert.equal(searchRecipes(searchIndex, 'zzqxj').length, 0);

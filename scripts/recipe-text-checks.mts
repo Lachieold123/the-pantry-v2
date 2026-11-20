@@ -96,8 +96,16 @@ const CLAIMS: [string, RegExp, string[]][] = [
   ['dairy-free', /\bdairy[- ]free\b/i, ['dairy']],
   ['egg-free', /\begg[- ]free\b/i, ['egg']],
   ['nut-free', /\bnut[- ]free\b/i, ['tree-nuts', 'peanuts']],
-  ['vegan', /^(?:vegan\b|.*\b(?:is|naturally|fully|completely|and|a|an) vegan\b|.*,\s*vegan[.!]?$)/i, ['meat', 'fish', 'shellfish', 'dairy', 'egg', 'animal-product', 'non-vegetarian']],
-  ['vegetarian', /^(?:vegetarian\b|.*\b(?:is|naturally|fully|and|a|an) vegetarian\b|.*,\s*vegetarian[.!]?$)/i, ['meat', 'fish', 'shellfish', 'non-vegetarian']],
+  [
+    'vegan',
+    /^(?:vegan\b|.*\b(?:is|naturally|fully|completely|and|a|an) vegan\b|.*,\s*vegan[.!]?$)/i,
+    ['meat', 'fish', 'shellfish', 'dairy', 'egg', 'animal-product', 'non-vegetarian'],
+  ],
+  [
+    'vegetarian',
+    /^(?:vegetarian\b|.*\b(?:is|naturally|fully|and|a|an) vegetarian\b|.*,\s*vegetarian[.!]?$)/i,
+    ['meat', 'fish', 'shellfish', 'non-vegetarian'],
+  ],
 ];
 // A sentence that offers a swap or a condition ("leave out the feta and it is vegan") isn't a plain claim.
 const HEDGE =
@@ -130,7 +138,10 @@ const ALLERGEN_WORDS: [string, string, RegExp][] = [
 const CONTAINS = /\bContains (?!no\b|none\b)([^.;]+)([.;]|$)/;
 
 /** A "Contains ..." sentence that leaves out an allergen its counted lines carry, with the sentence it should be. */
-export function containsGaps(notes: readonly string[], groups: ReadonlySet<string>): { note: string; from: string; to: string; missing: string[] }[] {
+export function containsGaps(
+  notes: readonly string[],
+  groups: ReadonlySet<string>,
+): { note: string; from: string; to: string; missing: string[] }[] {
   const out: { note: string; from: string; to: string; missing: string[] }[] = [];
   for (const note of notes) {
     const m = CONTAINS.exec(note);
@@ -138,7 +149,13 @@ export function containsGaps(notes: readonly string[], groups: ReadonlySet<strin
     const listed = m[1]!;
     const missing = ALLERGEN_WORDS.filter(([g, , rx]) => groups.has(g) && !rx.test(listed)).map(([, word]) => word);
     if (!missing.length) continue;
-    const words = [...listed.split(/,\s*|\s+and\s+/).map((w) => w.trim()).filter(Boolean), ...missing];
+    const words = [
+      ...listed
+        .split(/,\s*|\s+and\s+/)
+        .map((w) => w.trim())
+        .filter(Boolean),
+      ...missing,
+    ];
     const list = words.length > 1 ? `${words.slice(0, -1).join(', ')} and ${words.at(-1)}` : words[0]!;
     out.push({ note, from: m[0], to: `Contains ${list}${m[2] || '.'}`, missing });
   }
@@ -153,7 +170,9 @@ const FREE_OK =
 
 /** "<x>-free" words that aren't diet or method words: the mark of a find-and-replace that ran over food names. */
 export function artefactProblems(texts: readonly string[]): string[] {
-  const words = texts.flatMap((t) => [...t.toLowerCase().matchAll(/\b([a-z]+)-free\b/g)].filter((m) => !FREE_OK.test(m[1]!)).map((m) => m[0]));
+  const words = texts.flatMap((t) =>
+    [...t.toLowerCase().matchAll(/\b([a-z]+)-free\b/g)].filter((m) => !FREE_OK.test(m[1]!)).map((m) => m[0]),
+  );
   return [...new Set(words)].map((w) => `"${w}" looks like find-and-replace damage`);
 }
 
@@ -163,14 +182,60 @@ export function artefactProblems(texts: readonly string[]): string[] {
 // beans boiled hard for 10 minutes; raw or lightly cooked egg and raw seafood name the people who should
 // avoid them; no honey for babies under 12 months; garlic or chilli in oil kept in the fridge.
 
-export const MINCE = new Set(['beef-mince', 'lamb-mince', 'pork-mince', 'chicken-mince', 'turkey-mince', 'italian-sausage', 'pork-sausage', 'bratwurst']);
-const NOT_RAW_POULTRY = new Set(['cooked-chicken', 'duck-fat', 'pate', 'chicken-stock', 'chicken-stock-cube']);
-const FRESH_PORK = new Set(['pork-belly', 'pork-fillet', 'pork-loin', 'pork-shoulder', 'pork-ribs', 'pork-ear', 'pork-heart', 'pork-liver']);
-const WHOLE_CUTS = new Set([
-  'beef-eye-fillet', 'beef-rib-eye', 'beef-rump', 'beef-sirloin', 'beef-steak', 'skirt-steak', 'picanha', 'lamb-cutlet', 'veal-escalope',
-  'beef-brisket', 'beef-chuck', 'beef-shin', 'oxtail', 'veal-shank', 'lamb-shoulder', 'lamb-leg', 'beef-topside',
+export const MINCE = new Set([
+  'beef-mince',
+  'lamb-mince',
+  'pork-mince',
+  'chicken-mince',
+  'turkey-mince',
+  'italian-sausage',
+  'pork-sausage',
+  'bratwurst',
 ]);
-const RAW_SEAFOOD = new Set(['salmon', 'fresh-tuna', 'white-fish', 'kingfish', 'calamari', 'clams', 'crab', 'lobster', 'mussels', 'octopus', 'prawn', 'scallops']);
+const NOT_RAW_POULTRY = new Set(['cooked-chicken', 'duck-fat', 'pate', 'chicken-stock', 'chicken-stock-cube']);
+const FRESH_PORK = new Set([
+  'pork-belly',
+  'pork-fillet',
+  'pork-loin',
+  'pork-shoulder',
+  'pork-ribs',
+  'pork-ear',
+  'pork-heart',
+  'pork-liver',
+]);
+const WHOLE_CUTS = new Set([
+  'beef-eye-fillet',
+  'beef-rib-eye',
+  'beef-rump',
+  'beef-sirloin',
+  'beef-steak',
+  'skirt-steak',
+  'picanha',
+  'lamb-cutlet',
+  'veal-escalope',
+  'beef-brisket',
+  'beef-chuck',
+  'beef-shin',
+  'oxtail',
+  'veal-shank',
+  'lamb-shoulder',
+  'lamb-leg',
+  'beef-topside',
+]);
+const RAW_SEAFOOD = new Set([
+  'salmon',
+  'fresh-tuna',
+  'white-fish',
+  'kingfish',
+  'calamari',
+  'clams',
+  'crab',
+  'lobster',
+  'mussels',
+  'octopus',
+  'prawn',
+  'scallops',
+]);
 export const RAW_EGG =
   // Egg eaten raw or soft. A bare "raw egg" is usually mixed in and then baked or fried, so it doesn't count;
   // "runny" and "jammy" count only about the egg (not honey, icing or tomatoes cooked down).
@@ -203,7 +268,8 @@ export function safetyProblems(r: SafetyInput): string[] {
   const method = [...r.steps, ...r.notes].join(' ');
   const all = `${r.title} ${r.summary} ${method}`;
   const safetyNotes = r.notes.filter((n) => /^Food safety/.test(n));
-  for (const n of safetyNotes) if (!SAFETY_SAYS.test(n.replace(/^Food safety:?/, ''))) out.push(`the "Food safety" note says nothing: "${n}"`);
+  for (const n of safetyNotes)
+    if (!SAFETY_SAYS.test(n.replace(/^Food safety:?/, ''))) out.push(`the "Food safety" note says nothing: "${n}"`);
   const safetyNote = safetyNotes.some((n) => SAFETY_SAYS.test(n.replace(/^Food safety:?/, '')));
   const need = (what: string, cue: RegExp, cueLabel: string) => {
     if (!safetyNote) out.push(`${what}: needs a note starting "Food safety"`);
@@ -218,22 +284,31 @@ export function safetyProblems(r: SafetyInput): string[] {
   if (ids.some((i) => WHOLE_CUTS.has(i))) need('beef, lamb or veal cut', /\d\s?°C(?! oven)/, 'internal temperature in °C');
   // The dish's name and summary only: steps "poke holes", and tartare sauce isn't raw fish.
   // A raw-fish name needs raw seafood in the lines too (a tofu poke bowl isn't one), and tartare sauce or dip isn't raw fish.
-  const rawFish = (ids.some((i) => RAW_SEAFOOD.has(i)) || /oyster/i.test(r.lineText)) &&
+  const rawFish =
+    (ids.some((i) => RAW_SEAFOOD.has(i)) || /oyster/i.test(r.lineText)) &&
     RAW_FISH_DISH.test(`${r.title} ${r.summary}`.replace(/\b(yoghurt |yogurt )?tartare? (sauce|dip|mayo)\b|\byog(h)?urt tartare\b/gi, ' '));
-  if (ids.some((i) => RAW_SEAFOOD.has(i)) && !rawFish) need('raw seafood', /opaque|flakes|63\s?°C|shells? (have |has )?open/i, 'opaque / flakes / 63°C cue');
-  if (rawFish && !VULNERABLE.test(method)) out.push('raw or lightly cured seafood: say who should avoid it (pregnant women, young children, older people, low immunity)');
+  if (ids.some((i) => RAW_SEAFOOD.has(i)) && !rawFish)
+    need('raw seafood', /opaque|flakes|63\s?°C|shells? (have |has )?open/i, 'opaque / flakes / 63°C cue');
+  if (rawFish && !VULNERABLE.test(method))
+    out.push('raw or lightly cured seafood: say who should avoid it (pregnant women, young children, older people, low immunity)');
   if (r.ids.has('egg') && RAW_EGG.test(method.replace(NOT_RAW_EGG, ' '))) {
     if (!safetyNote) out.push('raw or soft egg: needs a note starting "Food safety"');
-    else if (!VULNERABLE.test(method)) out.push('raw or soft egg: the note should say who should avoid it (pregnant women, young children, older people, low immunity)');
+    else if (!VULNERABLE.test(method))
+      out.push('raw or soft egg: the note should say who should avoid it (pregnant women, young children, older people, low immunity)');
   }
-  if (/\b(leftover|cooked and (cooled|chilled)|day-old) rice\b|\bfried rice\b/i.test(`${method} ${r.lineText} ${r.title}`) && !/within (1|an|one) hour/i.test(method))
+  if (
+    /\b(leftover|cooked and (cooled|chilled)|day-old) rice\b|\bfried rice\b/i.test(`${method} ${r.lineText} ${r.title}`) &&
+    !/within (1|an|one) hour/i.test(method)
+  )
     out.push('cooked rice: say to cool and refrigerate it within an hour');
-  if (r.ids.has('kidney-beans') && /dried/i.test(r.lineText) && !/boil[^.]*10 min/i.test(method)) out.push('dried kidney beans need a hard 10-minute boil');
+  if (r.ids.has('kidney-beans') && /dried/i.test(r.lineText) && !/boil[^.]*10 min/i.test(method))
+    out.push('dried kidney beans need a hard 10-minute boil');
   // A dish meant for a baby ("for babies from 6 months"), not baby spinach or "keeps 3 months".
   const forBaby = /\b(for (your |the )?(baby|babies)|babies|baby food|baby-led|infants?|toddlers?|from \d+ months|\d+\s*months? old)\b/i;
   if (/\bhoney\b/i.test(r.lineText) && forBaby.test(all) && !/12 months|under (1|one) year/i.test(all))
     out.push('honey in a dish for babies: say no honey under 12 months');
-  if (OIL_INFUSION.test(`${r.title} ${r.summary}`) && !/fridge|refrigerat/i.test(method)) out.push('garlic or chilli in oil: say to keep it in the fridge and use it within days');
+  if (OIL_INFUSION.test(`${r.title} ${r.summary}`) && !/fridge|refrigerat/i.test(method))
+    out.push('garlic or chilli in oil: say to keep it in the fridge and use it within days');
   if (/\breheat/i.test(method) && !/steaming hot|piping hot|75\s?°C/i.test(method)) out.push('reheating: say to reheat until steaming hot');
   return out;
 }

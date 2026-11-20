@@ -30,13 +30,16 @@ for (const r of recipes) {
     problems.push(`${r.id} (${r.source}): one ingredient per line, put the alternative in brackets: "${l}"`);
   // "3 egg yolks + 1 whole egg" buys two things but the shopping list counts one quantity (F-1).
   for (const l of r.ingredientGroups.flatMap((g) => g.items))
-    if (/\+\s*\d/.test(l.raw.replace(/\([^)]*\)/g, ''))) problems.push(`${r.id} (${r.source}): one thing to buy per line, split "${l.raw}"`);
+    if (/\+\s*\d/.test(l.raw.replace(/\([^)]*\)/g, '')))
+      problems.push(`${r.id} (${r.source}): one thing to buy per line, split "${l.raw}"`);
   const counted = r.ingredientGroups.flatMap((g) => g.items).filter((l) => !l.optional);
   const groups = new Set(counted.flatMap((l) => (l.ingredientId ? (index.byId.get(l.ingredientId)?.groups ?? []) : [])));
   for (const p of claimProblems([r.title, r.summary ?? '', ...(r.notes ?? [])], groups)) problems.push(`${r.id} (${r.source}): ${p}`);
-  for (const g of containsGaps(r.notes ?? [], groups)) problems.push(`${r.id} (${r.source}): "${g.from}" leaves out ${g.missing.join(', ')}`);
+  for (const g of containsGaps(r.notes ?? [], groups))
+    problems.push(`${r.id} (${r.source}): "${g.from}" leaves out ${g.missing.join(', ')}`);
   // CC BY and BY-SA need a source link: the Commons file page (FOOD-10).
-  if (/CC[- ]BY/i.test(JSON.stringify(r.image ?? '')) && !PHOTO_SOURCES[r.id]) problems.push(`${r.id} (${r.source}): CC BY photo with no Commons file page in photoSources.ts`);
+  if (/CC[- ]BY/i.test(JSON.stringify(r.image ?? '')) && !PHOTO_SOURCES[r.id])
+    problems.push(`${r.id} (${r.source}): CC BY photo with no Commons file page in photoSources.ts`);
   for (const p of artefactProblems([r.title, r.summary ?? '', ...counted.map((l) => l.raw), ...r.steps.map((s) => s.text)]))
     problems.push(`${r.id} (${r.source}): ${p}`);
 }

@@ -10,7 +10,11 @@ const mockRouter = { back: jest.fn(), replace: jest.fn(), push: jest.fn(), canGo
 jest.mock('expo-router', () => ({ useRouter: () => mockRouter }));
 const mockToast = jest.fn();
 jest.mock('@/ui/patterns/Toast', () => ({ useToast: () => mockToast }));
-jest.mock('@/lib/notifications', () => ({ ensureNotificationPermission: async () => false, scheduleAt: jest.fn(), cancelScheduled: jest.fn() }));
+jest.mock('@/lib/notifications', () => ({
+  ensureNotificationPermission: async () => false,
+  scheduleAt: jest.fn(),
+  cancelScheduled: jest.fn(),
+}));
 jest.mock('react-native-safe-area-context', () => ({ useSafeAreaInsets: () => ({ top: 0, bottom: 0, left: 0, right: 0 }) }));
 jest.mock('react-native-reanimated', () => {
   const { View } = jest.requireActual('react-native');

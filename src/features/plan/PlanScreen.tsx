@@ -40,7 +40,10 @@ export function PlanScreen() {
   const [picked, setSelected] = useState<ISODate | undefined>();
   const selected = picked !== undefined && days.includes(picked) ? picked : today;
   const week = weekStart(selected);
-  const progress = weekProgress(entriesWithRecipes(entries, (id) => getRecipe(id) !== undefined), week);
+  const progress = weekProgress(
+    entriesWithRecipes(entries, (id) => getRecipe(id) !== undefined),
+    week,
+  );
   const dayWeek = useWeekList(week);
   const past = isPast(selected, today);
   // Past the week you're shopping for is Pro (D-038). What's already planned there still shows.

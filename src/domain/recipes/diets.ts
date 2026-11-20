@@ -105,11 +105,7 @@ export type AvoidNotice = { avoided: boolean; unchecked: string[] };
  * checked against the fixed options, so they're named rather than passed as
  * safe. Undefined when there's nothing to say.
  */
-export function avoidNotice(
-  recipe: Pick<Recipe, 'ingredientGroups'>,
-  avoid: AvoidList,
-  index: IngredientIndex,
-): AvoidNotice | undefined {
+export function avoidNotice(recipe: Pick<Recipe, 'ingredientGroups'>, avoid: AvoidList, index: IngredientIndex): AvoidNotice | undefined {
   if (avoid.options.length === 0 && avoid.custom.length === 0) return undefined;
   const avoided = containsAvoided(recipe, avoid, index);
   const unknown = allLines(recipe)

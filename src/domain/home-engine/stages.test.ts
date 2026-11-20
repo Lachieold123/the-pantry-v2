@@ -56,12 +56,18 @@ describe('re-ranking', () => {
 
   it('breaks a run of one cook after two', () => {
     const list = [ranked('a', 'c1', 'x'), ranked('b', 'c1', 'y'), ranked('c', 'c1', 'z'), ranked('d', 'c2', 'w')];
-    assert.deepEqual(rerank(list, config).map((r) => r.item.id), ['a', 'b', 'd', 'c']);
+    assert.deepEqual(
+      rerank(list, config).map((r) => r.item.id),
+      ['a', 'b', 'd', 'c'],
+    );
   });
 
   it('breaks a run of one cuisine after three', () => {
     const list = ['a', 'b', 'c', 'd'].map((id, i) => ranked(id, `c${i}`, 'thai')).concat(ranked('e', 'c9', 'italian'));
-    assert.deepEqual(rerank(list, config).map((r) => r.item.id), ['a', 'b', 'c', 'e', 'd']);
+    assert.deepEqual(
+      rerank(list, config).map((r) => r.item.id),
+      ['a', 'b', 'c', 'e', 'd'],
+    );
   });
 
   it('caps one cook per page, but only in the cap check, not the run check', () => {
@@ -76,7 +82,10 @@ describe('re-ranking', () => {
   it('saves the explore slot for something exploratory', () => {
     const explore = withConfig({ ...config, exploreEvery: 3 });
     const list = [ranked('a', 'c1', 'x'), ranked('b', 'c2', 'y'), ranked('c', 'c3', 'z'), ranked('far', 'c4', 'w', ['explore'])];
-    assert.deepEqual(rerank(list, explore).map((r) => r.item.id), ['a', 'b', 'far', 'c']);
+    assert.deepEqual(
+      rerank(list, explore).map((r) => r.item.id),
+      ['a', 'b', 'far', 'c'],
+    );
   });
 
   it('keeps every item and stops at the limit', () => {

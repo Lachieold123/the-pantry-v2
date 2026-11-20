@@ -118,7 +118,9 @@ export function applyFix(id: string, recipe: RawRecipe, fix: Fix | undefined, re
   }
 
   const notes = [...(recipe.notes ?? []).filter((n) => !fix.dropNotes?.includes(n)), ...(fix.addNotes ?? [])];
-  fix.dropNotes?.forEach((n) => { if ((recipe.notes ?? []).includes(n)) report.applied(`${id} (drop note)`); });
+  fix.dropNotes?.forEach((n) => {
+    if ((recipe.notes ?? []).includes(n)) report.applied(`${id} (drop note)`);
+  });
   fix.addNotes?.forEach(() => report.applied(`${id} (note)`));
   for (const what of ['times', 'difficulty', 'servings'] as const) if (fix[what] !== undefined) report.applied(`${id} (${what})`);
 

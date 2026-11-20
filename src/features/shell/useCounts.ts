@@ -13,7 +13,12 @@ export function usePlanBadge(): number {
   const today = useToday();
   const getRecipe = useRecipeLookup();
   // A gone recipe stays in the plan to be taken off, but isn't a meal (F-10).
-  return usePlan((s) => upcomingCount(entriesWithRecipes(s.entries, (id) => getRecipe(id) !== undefined), today));
+  return usePlan((s) =>
+    upcomingCount(
+      entriesWithRecipes(s.entries, (id) => getRecipe(id) !== undefined),
+      today,
+    ),
+  );
 }
 
 export function useDrawerCounts() {

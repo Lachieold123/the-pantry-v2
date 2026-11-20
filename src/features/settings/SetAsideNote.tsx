@@ -42,7 +42,9 @@ export function SetAsideNote() {
   return (
     <View style={{ gap: SPACE.xxs }} accessible testID="settings-set-aside">
       <Text variant="bodySmall" colour="danger">
-        {names.length === 1 ? 'This is too big to back up. Shorten it to keep it safe:' : 'These are too big to back up. Shorten them to keep them safe:'}
+        {names.length === 1
+          ? 'This is too big to back up. Shorten it to keep it safe:'
+          : 'These are too big to back up. Shorten them to keep them safe:'}
       </Text>
       {names.map((n, i) => (
         <Text key={i} variant="bodySmall" colour="inkSoft">

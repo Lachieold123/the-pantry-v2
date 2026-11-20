@@ -38,7 +38,10 @@ test('the validator fails every known-bad recipe for the reason it is bad', { ti
     ['l7-leftover-rice', '[food-safety] cooked rice'],
   ];
   for (const [id, what] of expected)
-    assert.ok(out.split('\n').some((l) => l.includes(`  ${id}  `) && l.includes(what)), `${id}: expected ${what}`);
+    assert.ok(
+      out.split('\n').some((l) => l.includes(`  ${id}  `) && l.includes(what)),
+      `${id}: expected ${what}`,
+    );
 });
 
 const base: SafetyInput = { ids: new Set(), isPoultry: () => false, lineText: '', title: 'Dish', summary: '', steps: [], notes: [] };
@@ -49,7 +52,11 @@ test('soft egg needs a note for vulnerable people; runny honey and jammy tomatoe
   assert.deepEqual(safety({ ids: new Set(['egg']), steps: ['Warm the honey until runny.', 'Simmer the tomatoes until jammy.'] }), []);
   assert.deepEqual(safety({ ids: new Set(['egg']), steps: ['Mix in the raw egg, then bake until set.'] }), []);
   assert.deepEqual(
-    safety({ ids: new Set(['egg']), steps: ['Fry until the yolks are runny.'], notes: ['Food safety: pregnant women should have the yolks firm.'] }),
+    safety({
+      ids: new Set(['egg']),
+      steps: ['Fry until the yolks are runny.'],
+      notes: ['Food safety: pregnant women should have the yolks firm.'],
+    }),
     [],
   );
 });

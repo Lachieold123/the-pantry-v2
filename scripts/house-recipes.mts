@@ -136,9 +136,12 @@ export function toRecipe(h: HouseRecipe, root: string, index: IngredientIndex, p
   ))
     problem(`${h.id}: one ingredient per line, put the alternative in brackets: "${l}"`);
   // A plain claim ("Naturally vegan.") a counted line breaks, and bulk-edit damage ("Pandan-Free") (L7 FOOD-3, FOOD-11).
-  const groups = new Set(items.filter((l) => !l.optional).flatMap((l) => (l.ingredientId ? (index.byId.get(l.ingredientId)?.groups ?? []) : [])));
+  const groups = new Set(
+    items.filter((l) => !l.optional).flatMap((l) => (l.ingredientId ? (index.byId.get(l.ingredientId)?.groups ?? []) : [])),
+  );
   for (const p of claimProblems([h.title, h.summary ?? '', ...(h.notes ?? [])], groups)) problem(`${h.id}: ${p}`);
-  for (const p of artefactProblems([h.title, h.summary ?? '', ...h.ingredients.flatMap((g) => g.items), ...h.steps])) problem(`${h.id}: ${p}`);
+  for (const p of artefactProblems([h.title, h.summary ?? '', ...h.ingredients.flatMap((g) => g.items), ...h.steps]))
+    problem(`${h.id}: ${p}`);
   if (!h.summary?.trim()) problem(`${h.id}: no summary`);
   if (h.prepMinutes <= 0) problem(`${h.id}: prepMinutes must be more than 0`);
   if (h.prepMinutes + h.cookMinutes <= 0) problem(`${h.id}: no time given`);

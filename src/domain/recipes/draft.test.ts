@@ -146,7 +146,17 @@ describe('every problem has plain words (UX-4)', () => {
     prepMinutes: 99999,
     cookMinutes: -1,
     servings: 0,
-    ingredientGroups: [{ items: [] }, { items: [{ item: '', raw: '', unit: 'cup' }, { item: 'egg', raw: '0 egg', quantity: 0 }, { item: 'x', raw: 'x', quantity: { min: 3, max: 2 } }, { item: 'y', raw: 'y', unit: 'parsec' as UnitId, quantity: 1 }] }],
+    ingredientGroups: [
+      { items: [] },
+      {
+        items: [
+          { item: '', raw: '', unit: 'cup' },
+          { item: 'egg', raw: '0 egg', quantity: 0 },
+          { item: 'x', raw: 'x', quantity: { min: 3, max: 2 } },
+          { item: 'y', raw: 'y', unit: 'parsec' as UnitId, quantity: 1 },
+        ],
+      },
+    ],
     steps: [{ text: ' ' }],
   });
   const problems = [...validateRecipe(broken('')), ...validateRecipe(broken('x'.repeat(81)))];
@@ -156,7 +166,10 @@ describe('every problem has plain words (UX-4)', () => {
       const { message } = toDraftProblem(p, broken(''));
       assert.match(message, /^[A-Z]/);
       assert.doesNotMatch(message, /\b[a-z]+[A-Z]\w*\b/, 'no camelCase field names');
-      assert.doesNotMatch(message, /^(id|title|summary|cuisine|difficulty|mealTypes|diets|seasons|prepMinutes|cookMinutes|servings|steps|ingredientGroups)\b/i);
+      assert.doesNotMatch(
+        message,
+        /^(id|title|summary|cuisine|difficulty|mealTypes|diets|seasons|prepMinutes|cookMinutes|servings|steps|ingredientGroups)\b/i,
+      );
     });
   }
 });

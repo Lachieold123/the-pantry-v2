@@ -44,7 +44,7 @@ describe('a second amount in a line scales with the first (F-1)', () => {
     const cod: IngredientLine = { quantity: 4, item: 'cod fillets', note: '180g each', raw: '' };
     assert.equal(scaled(cod, 0.5), '2 cod fillets (180g each)');
   });
-  it('changes nothing at the recipe\'s own serves', () => {
+  it("changes nothing at the recipe's own serves", () => {
     const stock: IngredientLine = { quantity: 2, unit: 'cup', item: 'stock', note: '500 ml', raw: '' };
     assert.equal(scaleLine(stock, 1), stock);
   });

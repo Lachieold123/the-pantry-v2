@@ -541,7 +541,8 @@ if (!fileArgs.length) {
     const lines = allLines(r).filter((l) => !l.optional);
     const groups = new Set(lines.flatMap((l) => def(l.ingredientId)?.groups ?? []));
     for (const p of claimProblems([r.title, r.summary ?? '', ...(r.notes ?? [])], groups)) fail('claim', p);
-    for (const p of artefactProblems([r.title, r.summary ?? '', ...lines.map((l) => l.raw), ...r.steps.map((s) => s.text)])) fail('artefact', p);
+    for (const p of artefactProblems([r.title, r.summary ?? '', ...lines.map((l) => l.raw), ...r.steps.map((s) => s.text)]))
+      fail('artefact', p);
     const words = [r.title, r.summary ?? '', ...lines.map((l) => l.raw), ...r.steps.map((s) => s.text), ...(r.notes ?? [])].join('\n');
     if (/\b\d+\s*°F\b|\bfahrenheit\b/i.test(words)) fail('style', 'Fahrenheit');
   }
