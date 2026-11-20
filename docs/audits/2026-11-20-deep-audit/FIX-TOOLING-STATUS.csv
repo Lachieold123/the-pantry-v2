@@ -1,0 +1,9 @@
+REPO-6,fixed,77b182d,CI now runs the catalogue checks, feed:verify and all four database test files; validate is advisory until the catalogue is clean.
+REPO-17,part-fixed,77b182d,Both actions pinned to verified SHAs; the pglite pin and the stale Mac files are left for the dependency step and Lachlan.
+REL2-11,fixed,e7aee15,Production sets the drafts flag to 0 and a CI script fails if that ever changes.
+REL2-14,fixed,e7aee15,Node 22.20.0 pinned in eas.json and .nvmrc and CI now reads .nvmrc.
+REL2-16,owner,,Over-the-air updates are an owner decision so nothing was changed.
+REPO-15,part-fixed,c1b5e81,Flows now target the development build; unrun and run-maestro.command still starts Expo Go.
+REPO-10,fixed,48cd967,CLAUDE.md README and migration names fixed; the HQ launcher was edited outside git.
+REPO-14,left,,Lint was run once over the scripts (10 problems) and the full list is in FIX-TOOLING.md for a later step.
+REPO-16,fixed,,REPO-TIDY.md lists every worktree and branch with a recommendation; nothing was deleted.
