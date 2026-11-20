@@ -2,7 +2,7 @@
 // Recipe counts only count ids that still resolve to a recipe, the same way
 // the pages they open list them, so the number always matches the page
 // (health check 2026-10-05 #7).
-import { upcomingCount } from '@/domain/plan/week';
+import { entriesWithRecipes, upcomingCount } from '@/domain/plan/week';
 import { useToday } from '@/lib/today';
 import { useMyRecipes } from '@/store/myRecipes';
 import { useRecipeLookup } from '@/store/recipeBook';
@@ -11,7 +11,9 @@ import { useSaved } from '@/store/saved';
 
 export function usePlanBadge(): number {
   const today = useToday();
-  return usePlan((s) => upcomingCount(s.entries, today));
+  const getRecipe = useRecipeLookup();
+  // A gone recipe stays in the plan to be taken off, but isn't a meal (F-10).
+  return usePlan((s) => upcomingCount(entriesWithRecipes(s.entries, (id) => getRecipe(id) !== undefined), today));
 }
 
 export function useDrawerCounts() {

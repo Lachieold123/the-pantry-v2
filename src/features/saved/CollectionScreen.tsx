@@ -10,6 +10,7 @@ import { useSaved } from '@/store/saved';
 import { EmptyState } from '@/ui/patterns/EmptyState';
 import { LibraryCardRow, libraryRowKey, libraryRows } from '@/ui/patterns/LibraryCard';
 import { LibraryHead } from '@/ui/patterns/LibraryHeader';
+import { PushedHeader } from '@/ui/patterns/PushedHeader';
 import { IconButton } from '@/ui/primitives/IconButton';
 import { ListScreen } from '@/ui/primitives/ListScreen';
 import { Screen } from '@/ui/primitives/Screen';
@@ -26,17 +27,16 @@ export function CollectionScreen({ id }: { id: string }) {
 
   if (!collection) {
     return (
+      // One message, not a "Not found · 0 recipes" head over it (UX-11), as a missing recipe does.
       <Screen testID="collection-screen">
-        <View>
-          <LibraryHead kicker="Collection" title="Not found" count={0} unit={RECIPES_UNIT} />
-          <EmptyState
-            look="library"
-            title="This collection is gone"
-            body="It may have been deleted."
-            action={{ label: 'Back to collections', onPress: () => goBack(router) }}
-            testID="collection-missing"
-          />
-        </View>
+        <PushedHeader title="Collection" />
+        <EmptyState
+          look="library"
+          title="This collection is gone"
+          body="It may have been deleted."
+          action={{ label: 'Back to collections', onPress: () => goBack(router) }}
+          testID="collection-missing"
+        />
       </Screen>
     );
   }
