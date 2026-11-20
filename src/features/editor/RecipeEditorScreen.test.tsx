@@ -4,6 +4,7 @@
 import { fireEvent, render, screen } from '@testing-library/react-native';
 
 import { EMPTY_DRAFT } from '@/domain/recipes/draft';
+import { useMyRecipes } from '@/store/myRecipes';
 import { usePendingImport } from '@/store/pendingImport';
 import { RecipeEditorScreen } from './RecipeEditorScreen';
 import { startingDraft } from './useRecipeEditor';
@@ -11,11 +12,15 @@ import { startingDraft } from './useRecipeEditor';
 const mockRouter = { back: jest.fn(), replace: jest.fn(), push: jest.fn(), navigate: jest.fn(), canGoBack: () => true };
 jest.mock('expo-router', () => ({ useRouter: () => mockRouter }));
 jest.mock('@/ui/patterns/Toast', () => ({ useToast: () => jest.fn() }));
+const mockAllowed = jest.fn((_feature: string) => true);
+jest.mock('@/store/pro', () => ({ ...jest.requireActual('@/store/pro'), useAllowance: () => mockAllowed }));
 jest.mock('react-native-safe-area-context', () => ({ useSafeAreaInsets: () => ({ top: 0, bottom: 0, left: 0, right: 0 }) }));
 
 beforeEach(() => {
   jest.clearAllMocks();
   usePendingImport.setState({ pending: undefined });
+  useMyRecipes.setState({ recipes: {} });
+  mockAllowed.mockReturnValue(true);
 });
 
 describe('starting a recipe from a name', () => {
@@ -37,5 +42,24 @@ describe('starting a recipe from a name', () => {
     usePendingImport.setState({ pending: { draft: { ...EMPTY_DRAFT, title: 'Leek pie' }, url: 'https://example.com/pie' } });
     await render(<RecipeEditorScreen id={undefined} fromImport startTitle="Soup" />);
     expect(screen.getByTestId('editor-title').props.value).toBe('Leek pie');
+  });
+});
+
+describe('the free allowance (F-8)', () => {
+  it('a new recipe past the allowance opens the paywall and keeps the draft', async () => {
+    mockAllowed.mockReturnValue(false);
+    await render(<RecipeEditorScreen id={undefined} fromImport={false} startTitle="Soup" />);
+    await fireEvent.press(screen.getByTestId('editor-save'));
+    await fireEvent.press(screen.getByTestId('editor-save-draft'));
+    expect(mockAllowed).toHaveBeenCalledWith('my-recipes');
+    expect(Object.keys(useMyRecipes.getState().recipes)).toHaveLength(0);
+    expect(mockRouter.navigate).not.toHaveBeenCalled();
+    expect(screen.getByTestId('editor-title').props.value).toBe('Soup');
+  });
+  it('within the allowance it saves as before', async () => {
+    await render(<RecipeEditorScreen id={undefined} fromImport={false} startTitle="Soup" />);
+    await fireEvent.press(screen.getByTestId('editor-save'));
+    await fireEvent.press(screen.getByTestId('editor-save-draft'));
+    expect(Object.keys(useMyRecipes.getState().recipes)).toHaveLength(1);
   });
 });

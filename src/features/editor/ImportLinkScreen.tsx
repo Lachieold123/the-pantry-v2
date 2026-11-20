@@ -13,10 +13,16 @@ import { SPACE } from '@/ui/tokens/type';
 import { goBack } from '@/lib/navigation';
 import { useLinkImport, writeByHandHelps } from '@/lib/useLinkImport';
 import { beginImportReview } from '@/store/pendingImport';
+import { useAllowance } from '@/store/pro';
 
 export function ImportLinkScreen() {
   const router = useRouter();
   const [link, setLink] = useState('');
+  const allowed = useAllowance();
+  // The same allowance as My recipes' import row: this sheet is still reachable by link (F-8).
+  const run = () => {
+    if (allowed('my-recipes') && allowed('imports')) importer.run(link);
+  };
   const importer = useLinkImport((draft, url) => {
     beginImportReview(draft, url);
     router.replace({ pathname: '/my-recipe/edit', params: { from: 'import' } });
@@ -39,7 +45,7 @@ export function ImportLinkScreen() {
         autoCapitalize="none"
         autoCorrect={false}
         returnKeyType="go"
-        onSubmitEditing={() => importer.run(link)}
+        onSubmitEditing={run}
         error={importer.message}
         testID="import-link"
       />
@@ -49,7 +55,7 @@ export function ImportLinkScreen() {
           kind="primary"
           busy={importer.busy}
           disabled={!link.trim() || importer.busy}
-          onPress={() => importer.run(link)}
+          onPress={run}
           testID="import-submit"
         />
         {writeByHandHelps(importer.failure) ? (

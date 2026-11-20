@@ -9,6 +9,7 @@ import { buildRecipe, EMPTY_DRAFT, myRecipeId, type RecipeDraft } from '@/domain
 import { useMyRecipes } from '@/store/myRecipes';
 import { useToast } from '@/ui/patterns/Toast';
 import { usePendingImport } from '@/store/pendingImport';
+import { useAllowance } from '@/store/pro';
 import { goBack } from '@/lib/navigation';
 
 /** A new recipe's starting draft: the name typed into My recipes' "Add" row, if any. */
@@ -28,6 +29,7 @@ export function useRecipeEditor(id: string | undefined, fromImport: boolean, sta
   const saveRecipe = useMyRecipes((s) => s.save);
   const removeRecipe = useMyRecipes((s) => s.remove);
   const restoreRecipe = useMyRecipes((s) => s.restore);
+  const allowed = useAllowance();
 
   // Read once: the import waiting for review becomes this editor's starting point.
   const [imported] = useState(() => (fromImport && !id ? usePendingImport.getState().pending : undefined));
@@ -48,7 +50,10 @@ export function useRecipeEditor(id: string | undefined, fromImport: boolean, sta
     setDirty(true);
   };
 
+  /** Saves and returns the id, or undefined when a new recipe is past the free allowance (the paywall has opened). */
   const store = () => {
+    // Checked here, where every new recipe is made, so no way in (the menu, a link) skips it (F-8).
+    if (!id && !allowed('my-recipes')) return undefined;
     const recipeId = id ?? myRecipeId(draft.title, Math.random().toString(36).slice(2, 6));
     saveRecipe({ id: recipeId, draft: { ...draft, title: draft.title.trim() }, source, sourceUrl });
     usePendingImport.getState().set(undefined);
@@ -61,6 +66,7 @@ export function useRecipeEditor(id: string | undefined, fromImport: boolean, sta
     setShowProblems(true);
     if (!draft.title.trim() || !built.recipe) return;
     const recipeId = store();
+    if (!recipeId) return;
     toast({ message: id ? 'Changes saved' : 'Recipe saved' });
     if (id) goBack(router);
     else router.replace({ pathname: '/recipe/[id]', params: { id: recipeId } });
@@ -69,8 +75,7 @@ export function useRecipeEditor(id: string | undefined, fromImport: boolean, sta
   /** Keeps an unfinished recipe to come back to. Only needs a name. */
   const saveDraft = () => {
     setShowProblems(true);
-    if (!draft.title.trim()) return;
-    store();
+    if (!draft.title.trim() || !store()) return;
     toast({ message: 'Saved to finish later' });
     router.navigate('/library?tab=mine');
   };
