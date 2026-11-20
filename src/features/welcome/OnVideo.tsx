@@ -88,7 +88,7 @@ export function TextButton({ label, onPress, testID, accessibilityHint }: PressP
       hitSlop={8}
       style={({ pressed }) => [styles.textButton, pressed && styles.pressed]}
     >
-      <Text variant="chipLarge" tone={FIXED.onPhotoFaint}>
+      <Text variant="chipLarge" tone={FIXED.onPhotoMuted}>
         {label}
       </Text>
     </Pressable>
@@ -134,7 +134,7 @@ export function GlassChoice(props: {
         ) : null}
       </View>
       {icon ? (
-        <Icon name={selected ? 'checkCircle' : 'circle'} size={WELCOME.tileIcon} tone={selected ? FIXED.videoInk : FIXED.videoQuiet} />
+        <Icon name={selected ? 'checkCircle' : 'circle'} size={WELCOME.tileIcon} tone={selected ? FIXED.videoInk : FIXED.videoSub} />
       ) : null}
     </Pressable>
   );

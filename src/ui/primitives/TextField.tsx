@@ -44,7 +44,7 @@ const useStyles = makeStyles(({ colours }) => ({
     paddingHorizontal: SPACE.field,
     borderRadius: RADIUS.lg,
     borderWidth: 1,
-    borderColor: colours.border,
+    borderColor: colours.controlEdge,
     backgroundColor: colours.bgSoft,
     color: colours.ink,
     ...textStyle(TYPE.body),

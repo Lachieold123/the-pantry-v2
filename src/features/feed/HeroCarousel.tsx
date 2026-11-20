@@ -93,7 +93,7 @@ function HeroCard({ hero, servings, need, onPress }: { hero: Hero; servings: num
           <Text variant="onPhotoLarge" tone={FIXED.onPhoto} numberOfLines={2} style={{ marginBottom: HOME.titleGap }}>
             {recipe.title}
           </Text>
-          <Text variant="bodySmall" tone={FIXED.onPhotoFaint} numberOfLines={1}>
+          <Text variant="bodySmall" tone={FIXED.onPhotoMuted} numberOfLines={1}>
             {meta}
           </Text>
         </View>

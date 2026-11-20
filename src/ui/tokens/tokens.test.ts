@@ -4,7 +4,8 @@ import { describe, it } from 'node:test';
 import { CUISINES } from '../../domain/recipes/types';
 import { FIXED, THEMES, type ColourTokens } from './colour';
 import { contrastRatio } from './contrast';
-import { CUISINE_FAMILY_KEYS, cuisineEyebrow } from './cuisine';
+import { CUISINE_FAMILY_KEYS, cuisineEyebrow, PANTRY_CATEGORY, PANTRY_CATEGORY_DARK } from './cuisine';
+import { libraryColours } from './library';
 import { TYPE } from './type';
 
 const AA_TEXT = 4.5;
@@ -113,6 +114,66 @@ describe('colour tokens', () => {
     for (const c of CUISINES) {
       assert.ok(CUISINE_FAMILY_KEYS.includes(c), `no family for ${c}`);
       for (const ground of ['light', 'dark'] as const) assert.match(cuisineEyebrow(c, ground), /^#[0-9A-F]{6}$/i);
+    }
+  });
+});
+
+// Controls and their edges need 3:1 against what they sit on (WCAG 1.4.11; UX-3, UX-9, UX-12).
+const AA_UI = 3;
+const UI_PAIRS: [keyof ColourTokens, keyof ColourTokens][] = [
+  // The off switch track, empty plan slots, the Post photo box, sheet handles, carousel dots.
+  ['inkSubtle', 'bg'],
+  ['inkSubtle', 'card'],
+  // The on switch track, progress fill.
+  ['accent', 'bg'],
+  // Text fields, search boxes, steppers.
+  ['controlEdge', 'bg'],
+  ['controlEdge', 'bgSoft'],
+  ['controlEdge', 'card'],
+];
+
+describe('control edges (3:1)', () => {
+  for (const [name, variants] of Object.entries(THEMES)) {
+    for (const [label, t] of [
+      [name, variants.normal],
+      [`${name} high contrast`, variants.highContrast],
+    ] as const) {
+      it(`${label} passes 3:1 for every control pair`, () => {
+        for (const [fg, bg] of UI_PAIRS) {
+          const ratio = contrastRatio(t[fg], t[bg]);
+          assert.ok(ratio >= AA_UI, `${label}: ${fg} on ${bg} is ${ratio.toFixed(2)}:1`);
+        }
+      });
+    }
+    // Light mode's raised card has no edge on purpose: its shadow lifts it.
+    if (name === 'dark') {
+      it('dark: the tour card edge shows (3:1), in normal and high contrast', () => {
+        for (const t of [variants.normal, variants.highContrast]) assert.ok(contrastRatio(t.raisedEdge, t.bg) >= AA_UI);
+      });
+    }
+  }
+
+  it('the Library count text (4.5:1) and no-photo icon (3:1) pass in both themes', () => {
+    for (const theme of ['light', 'dark'] as const) {
+      const lib = libraryColours(theme);
+      const bg = THEMES[theme].normal.bg;
+      assert.ok(contrastRatio(lib.count, bg) >= AA_TEXT, `${theme} count ${contrastRatio(lib.count, bg).toFixed(2)}`);
+      assert.ok(contrastRatio(lib.wellIcon, lib.well) >= AA_UI, `${theme} wellIcon ${contrastRatio(lib.wellIcon, lib.well).toFixed(2)}`);
+    }
+  });
+
+  it('every cupboard jar line passes 3:1 on the page and cards in both themes', () => {
+    const sets = [
+      [PANTRY_CATEGORY, THEMES.light.normal],
+      [PANTRY_CATEGORY_DARK, THEMES.dark.normal],
+    ] as const;
+    for (const [palette, t] of sets) {
+      for (const [cat, c] of Object.entries(palette)) {
+        for (const ground of [t.bg, t.card]) {
+          const ratio = contrastRatio(c.soft, ground);
+          assert.ok(ratio >= AA_UI, `${cat} line on ${ground} is ${ratio.toFixed(2)}:1`);
+        }
+      }
     }
   });
 });

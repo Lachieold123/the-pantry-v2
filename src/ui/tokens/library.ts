@@ -25,7 +25,7 @@ export type LibraryColours = {
   discInk: string;
   /**
    * The italic count ("4 items"). v1's #E8C891 is 1.5:1 on white, so light mode
-   * uses a deeper amber that still reads as amber (4.3:1); dark keeps v1's.
+   * uses a deeper amber that still reads as amber (4.5:1, UX-9); dark keeps v1's.
    */
   count: string;
 };
@@ -41,7 +41,7 @@ const LIGHT: LibraryColours = {
   wellIcon: '#7A7266',
   disc: '#F7F3EA',
   discInk: '#1A1A1A',
-  count: '#A0712F',
+  count: '#9B6E2E',
 };
 
 const DARK: LibraryColours = {
@@ -50,7 +50,7 @@ const DARK: LibraryColours = {
   meta: 'rgba(247,243,234,0.62)',
   dot: 'rgba(247,243,234,0.35)',
   well: '#26221D',
-  wellIcon: '#6A6258',
+  wellIcon: '#736B62',
   disc: '#F7F3EA',
   discInk: '#1A1A1A',
   count: '#E8C891',

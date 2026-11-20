@@ -69,7 +69,7 @@ const useStyles = makeStyles(({ colours }) => ({
     paddingHorizontal: SPACE.field,
     borderRadius: RADIUS.lg,
     borderWidth: 1,
-    borderColor: colours.border,
+    borderColor: colours.controlEdge,
     backgroundColor: colours.bgSoft,
   },
   // On its own in a column it keeps its height; the field version grows across a row.

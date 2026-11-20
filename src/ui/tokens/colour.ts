@@ -12,15 +12,17 @@ export type ColourTokens = {
   bgSoft: string;
   /** Raised cards, the drawer panel, round buttons over photos. */
   card: string;
-  /** Every 1pt border, divider and progress track. */
+  /** Every 1pt divider, card edge and progress track. Decorative, so it stays a hairline. */
   border: string;
+  /** The edge that shows where a text field, search box or stepper is: 3:1 on the page (WCAG 1.4.11, UX-3). */
+  controlEdge: string;
   /** Primary text, and the fill of every "black" pill or card (cream in dark mode). */
   ink: string;
   /** Body copy, step text, secondary labels. */
   inkSoft: string;
   /** Meta, kickers, placeholders, inactive tabs. */
   inkMuted: string;
-  /** Handles, rules, disabled text, big italic numerals. */
+  /** Handles, rules, the off switch track, empty-slot outlines, disabled text, big italic numerals. 3:1 on the page and cards (UX-3). */
   inkSubtle: string;
   accent: string;
   accentDeep: string;
@@ -57,11 +59,12 @@ export const light: ColourTokens = {
   bgSoft: '#F7F7F7',
   card: '#FFFFFF',
   border: 'rgba(0,0,0,0.06)',
+  controlEdge: 'rgba(0,0,0,0.42)',
   ink: '#1A1A1A',
   inkSoft: '#4A4A4A',
   inkMuted: '#6E6E6E',
-  inkSubtle: '#BCBCBC',
-  accent: '#C99155',
+  inkSubtle: '#939393',
+  accent: '#BF8A51',
   // The original's #A2723D read at 3.6:1 on accentSoft; this is a shade darker and passes AA.
   accentDeep: '#8F6232',
   accentSoft: '#FBEDD6',
@@ -90,10 +93,11 @@ export const dark: ColourTokens = {
   bgSoft: '#141414',
   card: '#141414',
   border: 'rgba(255,255,255,0.10)',
+  controlEdge: 'rgba(255,255,255,0.34)',
   ink: '#F7F3EA',
   inkSoft: '#D1D1D6',
   inkMuted: '#9C968C',
-  inkSubtle: '#48484A',
+  inkSubtle: '#626263',
   accent: '#E0AC6E',
   accentDeep: '#C99155',
   accentSoft: '#3D2C13',
@@ -112,7 +116,7 @@ export const dark: ColourTokens = {
   tintRose: '#3D202A',
   tintNeutral: '#1F1F1F',
   raised: '#1F1D1A',
-  raisedEdge: 'rgba(247,243,234,0.22)',
+  raisedEdge: 'rgba(247,243,234,0.36)',
   scrimSpotlight: 'rgba(0,0,0,0.78)',
 };
 
@@ -121,6 +125,7 @@ export const lightHighContrast: ColourTokens = {
   ...light,
   bgSoft: '#F0F0F0',
   border: 'rgba(0,0,0,0.55)',
+  controlEdge: 'rgba(0,0,0,0.55)',
   ink: '#000000',
   inkSoft: '#1A1A1A',
   inkMuted: '#363636',
@@ -140,6 +145,7 @@ export const darkHighContrast: ColourTokens = {
   bgSoft: '#101010',
   card: '#000000',
   border: 'rgba(255,255,255,0.6)',
+  controlEdge: 'rgba(255,255,255,0.6)',
   ink: '#FFFFFF',
   inkSoft: '#F0F0F0',
   inkMuted: '#C8C8C8',

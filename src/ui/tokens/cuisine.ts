@@ -95,13 +95,13 @@ export const CUISINE_FAMILY_KEYS = Object.keys(FAMILY);
  */
 export const PANTRY_CATEGORY = {
   proteins: { tint: '#FFDBD2', bold: '#973023', soft: '#D37D6F' },
-  vegetables: { tint: '#CFF3D5', bold: '#006C28', soft: '#63AB74' },
-  fruit: { tint: '#F9E6BF', bold: '#7B4E00', soft: '#B7933F' },
-  sauces: { tint: '#FFDEC8', bold: '#923900', soft: '#CF8358' },
-  pantry: { tint: '#FDE4BF', bold: '#814A00', soft: '#BD8F41' },
-  dairy: { tint: '#F3E8BF', bold: '#715400', soft: '#AE9740' },
-  herbs: { tint: '#D8F1CC', bold: '#316800', soft: '#7AA761' },
-  other: { tint: '#FFE0C4', bold: '#8D3E00', soft: '#CA874E' },
+  vegetables: { tint: '#CFF3D5', bold: '#006C28', soft: '#5EA26E' },
+  fruit: { tint: '#F9E6BF', bold: '#7B4E00', soft: '#B18E3D' },
+  sauces: { tint: '#FFDEC8', bold: '#923900', soft: '#CC8157' },
+  pantry: { tint: '#FDE4BF', bold: '#814A00', soft: '#B88B3F' },
+  dairy: { tint: '#F3E8BF', bold: '#715400', soft: '#A9923E' },
+  herbs: { tint: '#D8F1CC', bold: '#316800', soft: '#759F5D' },
+  other: { tint: '#FFE0C4', bold: '#8D3E00', soft: '#C6844C' },
 } as const;
 export type PantryCategory = keyof typeof PANTRY_CATEGORY;
 export const PANTRY_CHIP_INK = '#2A2218';
@@ -111,13 +111,13 @@ export const PANTRY_CHIP_INK = '#2A2218';
  * black (spec §8.2 #7, D-025): these are deep tints with light ink instead.
  */
 export const PANTRY_CATEGORY_DARK: Readonly<Record<PantryCategory, { tint: string; bold: string; soft: string }>> = {
-  proteins: { tint: '#3A2320', bold: '#F0A393', soft: '#7A4238' },
+  proteins: { tint: '#3A2320', bold: '#F0A393', soft: '#88564D' },
   vegetables: { tint: '#1E3324', bold: '#8FD6A0', soft: '#3F6E4B' },
   fruit: { tint: '#372D17', bold: '#E7C67A', soft: '#7A6330' },
-  sauces: { tint: '#3A2618', bold: '#F2AE82', soft: '#7C4F33' },
+  sauces: { tint: '#3A2618', bold: '#F2AE82', soft: '#845A3F' },
   pantry: { tint: '#362A18', bold: '#E9C286', soft: '#7A5E32' },
   dairy: { tint: '#332E18', bold: '#E2CF83', soft: '#6F6430' },
   herbs: { tint: '#22321B', bold: '#A9D78F', soft: '#4E6E3D' },
-  other: { tint: '#38281A', bold: '#EFB585', soft: '#7A5536' },
+  other: { tint: '#38281A', bold: '#EFB585', soft: '#7F5C3E' },
 };
 export const PANTRY_CHIP_INK_DARK = '#EDE6DA';

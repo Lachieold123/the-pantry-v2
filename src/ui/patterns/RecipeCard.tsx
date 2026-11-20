@@ -106,7 +106,7 @@ export function RecipeCard({ recipe, image, size, onPress, note, rank, saved, on
               {recipe.title}
             </Text>
             {note ? (
-              <Text variant="meta" tone={FIXED.onPhotoFaint} numberOfLines={2}>
+              <Text variant="meta" tone={FIXED.onPhotoMuted} numberOfLines={2}>
                 {note}
               </Text>
             ) : null}

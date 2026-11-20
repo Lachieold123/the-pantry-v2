@@ -26,7 +26,7 @@ export function ShelfCard({ title, count, image, cuisine, onPress, testID }: Pro
           <Text variant="onPhotoSmall" tone={FIXED.onPhoto} numberOfLines={2}>
             {title}
           </Text>
-          <Text variant="meta" tone={FIXED.onPhotoFaint}>
+          <Text variant="meta" tone={FIXED.onPhotoMuted}>
             {countText}
           </Text>
         </View>

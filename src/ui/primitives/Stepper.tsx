@@ -62,7 +62,7 @@ const useStyles = makeStyles(({ colours }) => ({
     alignItems: 'center',
     alignSelf: 'flex-start',
     borderWidth: StyleSheet.hairlineWidth * 2,
-    borderColor: colours.border,
+    borderColor: colours.controlEdge,
     borderRadius: RADIUS.lg,
   },
   value: { minWidth: 36, paddingHorizontal: SPACE.xxs },
