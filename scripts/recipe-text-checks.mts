@@ -113,6 +113,38 @@ export function claimProblems(texts: readonly string[], groups: ReadonlySet<stri
   return out;
 }
 
+// ---------- "Contains ..." notes (L7 FOOD-12) ----------
+
+// The allergen groups a "Contains" note must name, with the words that count as naming it.
+const ALLERGEN_WORDS: [string, string, RegExp][] = [
+  ['gluten', 'gluten', /gluten|wheat/i],
+  ['dairy', 'milk', /dairy|milk|lactose/i],
+  ['egg', 'egg', /\begg/i],
+  ['soy', 'soy', /\bsoy/i],
+  ['sesame', 'sesame', /sesame/i],
+  ['fish', 'fish', /\bfish\b/i],
+  ['shellfish', 'shellfish', /shellfish|crustacea|mollusc|prawn|shrimp/i],
+  ['tree-nuts', 'tree nuts', /tree nuts?|\bnuts\b|almond|cashew|walnut|pistachio|hazelnut|pecan|macadamia|pine nut/i],
+  ['peanuts', 'peanuts', /peanut/i],
+];
+const CONTAINS = /\bContains (?!no\b|none\b)([^.;]+)([.;]|$)/;
+
+/** A "Contains ..." sentence that leaves out an allergen its counted lines carry, with the sentence it should be. */
+export function containsGaps(notes: readonly string[], groups: ReadonlySet<string>): { note: string; from: string; to: string; missing: string[] }[] {
+  const out: { note: string; from: string; to: string; missing: string[] }[] = [];
+  for (const note of notes) {
+    const m = CONTAINS.exec(note);
+    if (!m) continue;
+    const listed = m[1]!;
+    const missing = ALLERGEN_WORDS.filter(([g, , rx]) => groups.has(g) && !rx.test(listed)).map(([, word]) => word);
+    if (!missing.length) continue;
+    const words = [...listed.split(/,\s*|\s+and\s+/).map((w) => w.trim()).filter(Boolean), ...missing];
+    const list = words.length > 1 ? `${words.slice(0, -1).join(', ')} and ${words.at(-1)}` : words[0]!;
+    out.push({ note, from: m[0], to: `Contains ${list}${m[2] || '.'}`, missing });
+  }
+  return out;
+}
+
 // ---------- find-and-replace damage (L7 FOOD-11) ----------
 
 // "<word>-free" that is a real diet or method word; anything else ("Pandan-Free", "parsnip-free onion") is bulk-edit damage.

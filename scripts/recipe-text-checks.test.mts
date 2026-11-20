@@ -6,7 +6,7 @@ import { dirname, join } from 'node:path';
 import { test } from 'node:test';
 import { fileURLToPath } from 'node:url';
 
-import { artefactProblems, claimProblems, safetyProblems, type SafetyInput } from './recipe-text-checks.mts';
+import { artefactProblems, claimProblems, containsGaps, safetyProblems, type SafetyInput } from './recipe-text-checks.mts';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -77,4 +77,10 @@ test('a hedged diet claim passes; a flat one a line breaks fails', () => {
 test('"X-free" artefacts are caught, real free-words are not', () => {
   assert.equal(artefactProblems(['Pandan-Free Coconut Custard Pots']).length, 1);
   assert.deepEqual(artefactProblems(['Gluten-free and dairy-free pancakes, egg-free too']), []);
+});
+
+test('a Contains note gets the allergens its lines carry added', () => {
+  const [g] = containsGaps(['Contains egg and soy. Keeps 2 days.'], new Set(['egg', 'soy', 'gluten', 'sesame']));
+  assert.equal(g?.to, 'Contains egg, soy, gluten and sesame.');
+  assert.deepEqual(containsGaps(['Contains no meat.', 'Contains wheat and milk.'], new Set(['gluten', 'dairy'])), []);
 });
