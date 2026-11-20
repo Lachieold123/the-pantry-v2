@@ -1,0 +1,20 @@
+F-1,fixed,13d21b9,"+ N" part and measured prep amounts scale; compound lines still under-buy on the list until split (FIX-LOGIC-DATA-TODO)
+F-2,fixed,13d21b9,small amounts print as the smallest fraction or 0.1 never 0; kg/l under 1 shown as g/ml
+F-3,part-fixed,864d47f,recipe page names lines it couldn't check against the avoid list; missing database words go to the recipe fixer
+F-12,fixed,2102641,ranges and compound durations make one timer
+F-13,fixed,c7c5cc3,"and"/"n" ignored in search
+F-11,fixed,6ec0a07,servings clamped 1-24; plan links limited to today through next week
+F-4,fixed,c456732,trial shown only when RevenueCat says eligible; no answer means no trial
+REL2-7,fixed,c456732,same fix as F-4
+F-6,fixed,cf0c7d8,leaving Cook Mode with running timers asks first
+F-7,fixed,cf0c7d8,Undo on finish re-adds used-up cupboard items
+UX-8,fixed,cf0c7d8,timer chips read as one VoiceOver element with step and time left
+F-8,fixed,4c007ff,allowance checked in the editor's save and on the import-by-link sheet
+UX-4,fixed,c590431,every validator rule has plain editor words; test breaks every rule
+F-10,fixed,f606ccf,Plan progress skips gone recipes; Collect sheet shows a missing state; Plan badge line left for screens fixer
+F-15,fixed,1788d78,confident + hard lifts 4 steps; Sat 9am 9 hard in 25; weeknight stays 0 by the existing rule
+REPO-12,fixed,ba1a812,stages.test.ts covers heads features and re-rank rules
+F-9,fixed,fe7198f,library journey scoped to the tab
+UX-7,part-fixed,d9830f5,Cook button on a planned meal; "Fill the week" is the owner's call
+PERF-4,not-real,2ce2c89,full 21-meal week measured at 82-138 rows and 7 ms to derive; not worth virtualising now
+S2-13,fixed,20bd92c,editor half: ingredients/method capped at MAX_IMPORTED_TEXT and notes at a quarter
