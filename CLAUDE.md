@@ -69,6 +69,7 @@ npm run catalogue:check-house        # check the new house recipe batches (no ol
 npm run catalogue:check-text         # recipe words vs diet tags, and "A or B" lines, over the built catalogue (D-053)
 npm run catalogue:validate -- --no-nutrition  # the single gate for house batches: food safety, doneness, duplicates, style (D-053)
 npm run catalogue:photo-sources      # rebuild the photo credit links' file pages from the batches (no old app needed)
+npm run catalogue:photos             # regenerate the recipe photo maps from the catalogue (K-30)
 ```
 
 Routes live in `src/app/` (Expo Router, SDK 57 convention). Route files stay thin: they render a screen from `src/features/`.

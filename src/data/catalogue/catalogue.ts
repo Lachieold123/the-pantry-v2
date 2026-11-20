@@ -5,6 +5,7 @@
 import { buildKitchen, type KitchenData } from '@/domain/cupboard/kitchen';
 import { buildIngredientIndex, type IngredientDef } from '@/domain/ingredients/database';
 import { withAliases, type HierarchyData } from '@/domain/ingredients/hierarchy';
+import { shipsInStoreBuilds } from '@/domain/recipes/provenance';
 import type { Recipe } from '@/domain/recipes/types';
 import ingredientsJson from '../ingredients/ingredients.json';
 import hierarchyJson from '../ingredients/hierarchy.json';
@@ -15,9 +16,7 @@ const all = recipesJson as unknown as Recipe[];
 
 const showDrafts = __DEV__ || process.env.EXPO_PUBLIC_SHOW_DRAFT_RECIPES === '1';
 
-const SHIPS: ReadonlySet<string> = new Set(['reviewed', 'vetted']);
-
-export const CATALOGUE: readonly Recipe[] = showDrafts ? all : all.filter((r) => SHIPS.has(r.provenance ?? 'ai-draft'));
+export const CATALOGUE: readonly Recipe[] = showDrafts ? all : all.filter((r) => shipsInStoreBuilds(r.provenance));
 
 const byId = new Map(CATALOGUE.map((r) => [r.id, r]));
 

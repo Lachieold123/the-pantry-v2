@@ -1,0 +1,11 @@
+{
+  "about": "Recipes whose photo was byte-for-byte the same file as another recipe's (K-30). The photo is kept once, under the key on the right, and each recipe keeps its own credit. These dishes still need their own photos (Lachlan); when one arrives, add it as assets/recipes/<key>.webp and delete its line here.",
+  "shared": {
+    "beef-rendang": "beef-curry",
+    "chicken-gyudon": "gyudon",
+    "chicken-quesadilla": "quesadillas",
+    "chicken-schnitzel": "schnitzel",
+    "pork-schnitzel": "schnitzel",
+    "chicken-tagine": "tagine"
+  }
+}

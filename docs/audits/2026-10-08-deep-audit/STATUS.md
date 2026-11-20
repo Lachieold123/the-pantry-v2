@@ -96,7 +96,7 @@ The reports are in `~/Desktop/HQ/11-ThePantryV2/audits/2026-10-08/`. Fixed on br
 | REL-13 | Session in plain storage | Not done: native module (K-20) | |
 | REL-14 | Library grids not virtualised | Fixed | 19bbecd |
 | REL-15 | Thin tests where data can be lost | Fixed (error words, delete panel, sync engine, paging) | 70ab9db, 5044739 |
-| REL-16 | 39 MB of photos, duplicates | Not done: photos are on the other branch (K-30) | |
+| REL-16 | 39 MB of photos, duplicates | Fixed: WebP, drafts' photos left out of store builds, duplicates stored once; six dishes still need their own photo (K-30) | |
 | REL-17 | Expo SDK drift, @types/jest | Not done: install and dev build (K-28); K-1 closed | |
 | REL-18 | Loose version ranges, unused expo-symbols | Not done: K-28 | |
 | REL-19 | eas.json production guard | Not done: EAS is Lachlan's (K-29) | |

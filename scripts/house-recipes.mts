@@ -10,8 +10,8 @@
 // sauce in a "no-gluten" dish. New recipes are held to a stricter standard
 // than the converted ones: every line must name a known ingredient.
 //
-// A photo is optional. When a batch entry has one, the JPG lives at
-// assets/recipes/<key>.jpg and the entry carries its credit and the page it
+// A photo is optional. When a batch entry has one, the WebP lives at
+// assets/recipes/<key>.webp and the entry carries its credit and the page it
 // came from, so every photo's licence can be traced (D-045).
 //
 // Used by convert-old-recipes.mts (which writes the catalogue), by
@@ -27,6 +27,7 @@ import { deriveDiets } from '../src/domain/recipes/diets.ts';
 import { isCommonsFilePage, photoLicence } from '../src/domain/recipes/photoCredit.ts';
 import type { CuisineId, DietTag, Difficulty, MealType, Provenance, Recipe, Season } from '../src/domain/recipes/types.ts';
 import { validateRecipe } from '../src/domain/recipes/validate.ts';
+import { PHOTO_DIR, PHOTO_EXT } from './recipe-photos.mts';
 import { dietTextProblems, orLines } from './recipe-text-checks.mts';
 
 export type HouseRecipe = {
@@ -51,7 +52,7 @@ export type HouseRecipe = {
   /** Batch 03: who the recipe is credited to (always The Pantry) and the model that wrote it. */
   author?: string;
   generatedBy?: string;
-  /** A real, freely licensed photo (D-045): the file at assets/recipes/<key>.jpg, the credit shown under it, and its source page. */
+  /** A real, freely licensed photo (D-045): the file at assets/recipes/<key>.webp, the credit shown under it, and its source page. */
   image?: { key: string; credit: string; source: string };
   /**
    * The author's estimate per serve (batch-04 on). Not shown in the app yet and not copied into the
@@ -68,7 +69,6 @@ export type HouseBatch = { about: string; recipes: HouseRecipe[] };
 export type Taken = { ids: Set<string>; titles: Set<string> };
 
 export const HOUSE_DIR = 'scripts/data/house-recipes';
-export const PHOTO_DIR = 'assets/recipes';
 
 export function batchFiles(root: string): string[] {
   const dir = join(root, HOUSE_DIR);
@@ -94,7 +94,7 @@ function checkImage(h: HouseRecipe, root: string, problem: (m: string) => void):
   if (!h.image) return;
   const { key, credit, source } = h.image;
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(key)) problem(`${h.id}: image key "${key}" must be lower-case words joined by hyphens`);
-  if (!existsSync(join(root, PHOTO_DIR, `${key}.jpg`))) problem(`${h.id}: no photo at ${PHOTO_DIR}/${key}.jpg`);
+  if (!existsSync(join(root, PHOTO_DIR, `${key}${PHOTO_EXT}`))) problem(`${h.id}: no photo at ${PHOTO_DIR}/${key}${PHOTO_EXT}`);
   if (!CREDIT.test(credit)) problem(`${h.id}: photo credit should read "Photo: Name / Source", got "${credit}"`);
   // The later batches also use Pexels photos (free licence, no licence link to show), as main's check allowed.
   if (isPexelsPhoto(h.image)) return;
