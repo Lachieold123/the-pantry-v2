@@ -74,4 +74,6 @@ export type Engine = {
   pull: () => Promise<boolean>;
   flush: () => Promise<void>;
   waiting: () => number;
+  /** How many records the server refused: they're only on this phone. */
+  setAside: () => number;
 };

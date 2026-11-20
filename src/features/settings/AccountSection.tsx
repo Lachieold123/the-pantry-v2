@@ -30,6 +30,7 @@ export function AccountSection() {
   const router = useRouter();
   const who = useAccount((s) => s.who);
   const ways = useSignInWays();
+  const lapsed = useAccount((s) => s.lapsed !== undefined);
   if (who) return <SignedIn who={who} />;
   // While an iPhone is still being asked, the row stays tappable: it nearly always can.
   if (ways.apple === false && !ways.email) return <NoWayIn />;
@@ -38,7 +39,7 @@ export function AccountSection() {
       <ListRow
         icon="person"
         title="Back up your kitchen"
-        detail="Keep everything if you change phones. No password."
+        detail={lapsed ? 'You were signed out. Sign in again to keep your backup.' : 'Keep everything if you change phones. No password.'}
         onPress={() => router.push('/account')}
         testID="settings-account-backup"
       />

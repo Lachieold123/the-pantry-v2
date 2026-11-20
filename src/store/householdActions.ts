@@ -20,14 +20,18 @@ import { deleteAccount as deleteUser } from '@/lib/account';
 import {
   applyMirror,
   EMPTY_HOUSEHOLD,
+  householdFlush,
+  householdWaiting,
   localKitchen,
   record,
   resetLastKitchen,
   signIn,
   startSync,
+  stoppedSharing,
   stopSync,
   useHousehold,
 } from './household';
+import { keptRows } from './sync';
 
 /** Start a household with your kitchen in it. */
 export async function startHousehold(name: string): Promise<Result<Household>> {
@@ -50,13 +54,28 @@ export async function startHousehold(name: string): Promise<Result<Household>> {
  * joining, and when signing in on a phone to an account that's already in one (D-043).
  */
 export async function adoptHousehold(house: Household, userId: string): Promise<Result<Household>> {
+  // One adoption at a time: two at launch (recovery and the account's check) would pull twice (DATA-16).
+  adopting ??= adopt(house, userId).finally(() => {
+    adopting = undefined;
+  });
+  return adopting;
+}
+
+let adopting: Promise<Result<Household>> | undefined;
+
+async function adopt(house: Household, userId: string): Promise<Result<Household>> {
   const rows = await pullRows(house.id);
   if (!rows.ok) return rows;
-  const mirror = mergeRows({}, rows.value);
-  useHousehold.setState({ ...EMPTY_HOUSEHOLD, household: house, mirror, userId, rejoin: undefined });
+  // Weeks the plan has let go of don't come back (DATA-15).
+  const mirror = mergeRows({}, keptRows(rows.value));
+  // Changes made before this phone dropped out of this same household go out now (DATA-4).
+  const { unsent } = useHousehold.getState();
+  const carried = unsent?.householdId === house.id ? Object.values(unsent.rows) : [];
+  useHousehold.setState({ ...EMPTY_HOUSEHOLD, household: house, mirror, userId, rejoin: undefined, unsent: undefined });
   const mine = localKitchen();
   applyMirror();
-  record(rowsToBringAlong(mirror, mine, Date.now(), userId));
+  // Carried first, so a fresher bring-along row for the same record is the one that waits to send.
+  record([...carried, ...rowsToBringAlong(mirror, mine, Date.now(), userId)]);
   applyMirror();
   startSync();
   return { ok: true, value: house };
@@ -122,18 +141,28 @@ export async function removeMember(userId: string): Promise<Result<null>> {
  * any household first. The plan, list and cupboard stay on this phone.
  */
 export async function deleteHouseholdData(): Promise<Result<null>> {
+  const sent = await sendWaiting();
+  if (!sent.ok) return sent;
   const gone = await deleteUser();
   if (!gone.ok) return { ok: false, problem: gone.problem === 'offline' ? 'offline' : 'failed' };
   stopSync();
-  useHousehold.setState({ ...EMPTY_HOUSEHOLD, userId: undefined, rejoin: undefined, lastSyncedAt: undefined });
+  useHousehold.setState({ ...stoppedSharing(), userId: undefined, rejoin: undefined, lastSyncedAt: undefined, unsent: undefined });
   return { ok: true, value: null };
+}
+
+/** Changes still waiting go out first, so the others get them; refused (`unsent`) rather than lost while they can't (DATA-7). */
+async function sendWaiting(): Promise<Result<null>> {
+  if (householdWaiting() > 0) await householdFlush();
+  return householdWaiting() > 0 ? { ok: false, problem: 'unsent' } : { ok: true, value: null };
 }
 
 /** Leave: this phone keeps its plan, list and cupboard as they are, and stops sharing. */
 export async function leave(): Promise<Result<null>> {
+  const sent = await sendWaiting();
+  if (!sent.ok) return sent;
   const left = await leaveHousehold();
   if (!left.ok) return left;
   stopSync();
-  useHousehold.setState({ ...EMPTY_HOUSEHOLD });
+  useHousehold.setState(stoppedSharing());
   return left;
 }

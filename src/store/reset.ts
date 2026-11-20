@@ -33,7 +33,7 @@ export function resetThisPhone(): void {
     termsAcceptedAt,
     onboarded: true,
   });
-  useHousehold.setState({ ...EMPTY_HOUSEHOLD, userId: undefined, lastSyncedAt: undefined, rejoin: undefined });
+  useHousehold.setState({ ...EMPTY_HOUSEHOLD, userId: undefined, lastSyncedAt: undefined, rejoin: undefined, unsent: undefined });
 }
 
 /**

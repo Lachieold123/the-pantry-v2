@@ -10,6 +10,7 @@ import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
 import { COOKMARKS_OFFER_AT, reached, type Moment } from '@/domain/account/account';
+import type { Row } from '@/domain/sync/rows';
 import type { Account, CodeKind } from '@/lib/account';
 import { newId } from '@/lib/ids';
 import { useHousehold } from './household';
@@ -36,6 +37,14 @@ type AccountState = Omit<ScopeState, 'status'> & {
   offered: Partial<Record<Moment, true>>;
   /** An offer waiting for the sign-in sheet to open. */
   offer: Moment | undefined;
+  /**
+   * The sign-in went away by itself (its token was refused, or the account was
+   * deleted elsewhere: DATA-12). Settings asks to sign in again; changes that
+   * hadn't been sent are kept and go out if it's the same account.
+   */
+  lapsed?: { id: string; rows: Record<string, Row> } | undefined;
+  /** Set the moment a sign-in lapses, for one toast this session. Not saved. */
+  lapsedNotice?: boolean;
 };
 
 /** The account as a fresh install has it. `device` and `offered` are kept by a sign-out. */
@@ -63,8 +72,9 @@ export const useAccount = create<AccountState>()(
     version: 1,
     storage: persistentStorage(),
     // "Signing in" never survives a restart: it's signed in or it isn't.
-    partialize: ({ who, device, needsMerge, code, offered, mirror, pending, setAside, lastSyncedAt, cursor }) => ({
+    partialize: ({ who, device, needsMerge, code, offered, mirror, pending, setAside, lastSyncedAt, cursor, lapsed }) => ({
       status: (who ? 'signed-in' : 'signed-out') as AccountStatus,
+      lapsed,
       who,
       device,
       needsMerge,

@@ -6,6 +6,8 @@ import type { AccountProblem } from '@/store/accountActions';
 export function accountProblemWords(problem: AccountProblem): string {
   if (problem === 'unsaved') return 'Some changes haven’t saved yet. Try again when you’re online.';
   if (problem === 'offline') return 'You’re offline. Try again when you’re back online.';
+  if (problem === 'not-backed-up')
+    return 'Something on this phone is too big to back up, usually a very long recipe. Signing out would lose it. Shorten it, then try again.';
   return 'Something went wrong. Try again in a moment.';
 }
 

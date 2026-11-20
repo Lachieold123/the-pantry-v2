@@ -2,7 +2,7 @@
 // errors read on screen, an expired sign-in offline (BUG-05, BUG-16), paging
 // past 1,000 rows, and which push failures count as refusals (BUG-03).
 import { currentAccount, problemFrom as accountProblem, pullAccountRows, sessionReady } from './account';
-import { joinHousehold, previewInvite, problemFrom as householdProblem, signedInUser } from './household';
+import { joinHousehold, previewInvite, problemFrom as householdProblem, removeMember, revokeInvites, signedInUser } from './household';
 import { isRejection } from './pushRows';
 
 const mockAuth = {
@@ -70,10 +70,13 @@ describe('an expired sign-in while offline (BUG-05, BUG-16)', () => {
     expect(await signedInUser()).toEqual({ ok: false, problem: 'offline' });
     expect(mockAuth.signInAnonymously).not.toHaveBeenCalled();
   });
-  it('signs in anonymously only when there is no saved sign-in at all', async () => {
+  it('signs in anonymously only when there is no saved sign-in at all, and only when asked to', async () => {
     mockAuth.getSession.mockResolvedValue({ data: { session: null }, error: null });
     mockAuth.signInAnonymously.mockResolvedValue({ data: { user: { id: 'anon' } }, error: null });
-    expect(await signedInUser()).toEqual({ ok: true, value: 'anon' });
+    // A phone in a household whose sign-in died must not become someone new (DATA-4).
+    expect(await signedInUser()).toEqual({ ok: false, problem: 'signed-out' });
+    expect(mockAuth.signInAnonymously).not.toHaveBeenCalled();
+    expect(await signedInUser(true)).toEqual({ ok: true, value: 'anon' });
   });
 });
 
@@ -117,5 +120,15 @@ describe('invite codes (SEC-08, SEC-16)', () => {
     expect(await previewInvite('ABCD2345')).toEqual({ ok: true, value: { name: 'Our place', members: 2 } });
     mockRpc.mockResolvedValue({ data: [], error: null });
     expect(await previewInvite('ABCD2345')).toEqual({ ok: true, value: undefined });
+  });
+  it('says plainly when the server hasn’t got a call yet (S2-11)', async () => {
+    mockRpc.mockResolvedValue({ data: null, error: { code: 'PGRST202', message: 'Could not find the function public.remove_member' } });
+    expect(await removeMember('them')).toEqual({ ok: false, problem: 'not-available' });
+    expect(await revokeInvites()).toEqual({ ok: false, problem: 'not-available' });
+  });
+  it('a preview never makes a new user before the person agrees to join (DATA-18)', async () => {
+    mockAuth.getSession.mockResolvedValue({ data: { session: null }, error: null });
+    expect(await previewInvite('ABCD2345')).toEqual({ ok: false, problem: 'signed-out' });
+    expect(mockAuth.signInAnonymously).not.toHaveBeenCalled();
   });
 });

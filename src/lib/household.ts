@@ -3,7 +3,7 @@
 // throwing, so a dropped connection is a message on screen, never a crash.
 import type { Row } from '@/domain/household/rows';
 import { listenRows } from './liveRows';
-import { pullSince, type Pulled } from './pullRows';
+import { isMissingFunction, pullSince, type Pulled } from './pullRows';
 import { pushTo, type PushResult } from './pushRows';
 import { supabase } from './supabase';
 
@@ -11,8 +11,21 @@ export type Member = { userId: string; name: string };
 export type Household = { id: string; name: string; members: Member[] };
 
 /** Why a household call didn't work, in words the screen can show. */
+/**
+ * `signed-out`: this phone's sharing sign-in has gone (auth-js dropped a refused token), so it can't act for its household.
+ * `not-available`: the server doesn't have this yet (a migration not applied). `unsent`: changes are still waiting to send.
+ */
 export type Problem =
-  'offline' | 'sharing-off' | 'invite-not-found' | 'household-full' | 'already-in-household' | 'too-many-attempts' | 'failed';
+  | 'offline'
+  | 'sharing-off'
+  | 'invite-not-found'
+  | 'household-full'
+  | 'already-in-household'
+  | 'too-many-attempts'
+  | 'signed-out'
+  | 'not-available'
+  | 'unsent'
+  | 'failed';
 export type Result<T> = { ok: true; value: T } | { ok: false; problem: Problem };
 
 const fail = (problem: Problem): { ok: false; problem: Problem } => ({ ok: false, problem });
@@ -29,8 +42,12 @@ export function problemFrom(message: string | undefined): Problem {
   return 'failed';
 }
 
-/** This phone's id, signing in anonymously the first time (only when there's no saved sign-in at all). */
-export async function signedInUser(): Promise<Result<string>> {
+/**
+ * This phone's id. With no saved sign-in at all, it signs in anonymously only
+ * when `mayStartNew`: a phone in a household whose sign-in died must not
+ * quietly become someone new and drop out of it (DATA-4); it answers `signed-out`.
+ */
+export async function signedInUser(mayStartNew = false): Promise<Result<string>> {
   try {
     const auth = supabase().auth;
     const { data, error } = await auth.getSession();
@@ -38,6 +55,7 @@ export async function signedInUser(): Promise<Result<string>> {
     // A saved sign-in that couldn't be refreshed (a patchy network) is still this phone's.
     // Signing in anonymously now would replace it and quietly leave the household (BUG-16).
     if (error) return fail('offline');
+    if (!mayStartNew) return fail('signed-out');
     const signed = await auth.signInAnonymously();
     if (signed.error || !signed.data.user) return fail(problemFrom(signed.error?.message));
     return { ok: true, value: signed.data.user.id };
@@ -51,7 +69,8 @@ async function rpc<T>(name: string, args: Record<string, unknown> = {}): Promise
   if (!me.ok) return me;
   try {
     const { data, error } = await supabase().rpc(name, args);
-    if (error) return fail(problemFrom(error.message));
+    // Until the server migration is applied, the newer calls don't exist there (S2-11): say so plainly.
+    if (error) return fail(isMissingFunction(error) ? 'not-available' : problemFrom(error.message));
     return { ok: true, value: data as T };
   } catch (e) {
     return fail(problemFrom(String(e)));

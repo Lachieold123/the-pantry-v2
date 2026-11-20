@@ -34,6 +34,9 @@ export const APPLE_ON_IPHONE = 'Backing up with your Apple ID is available on iP
 export const EMAIL_SOON = 'Email sign-in is coming soon.';
 export const NO_WAY_IN = `${APPLE_ON_IPHONE} ${EMAIL_SOON} Everything keeps working without an account.`;
 
+const NOT_BACKED_UP =
+  'Something on this phone is too big to back up, usually a very long recipe. Signing out would lose it. Shorten it, then try again.';
+
 export const PROBLEM_WORDS: Record<AccountProblem, string> = {
   offline: 'You’re offline. Signing in needs the internet.',
   cancelled: '',
@@ -44,4 +47,8 @@ export const PROBLEM_WORDS: Record<AccountProblem, string> = {
   'sign-ins-off': 'Signing in isn’t switched on yet. It will be soon.',
   failed: 'Something went wrong. Try again in a moment.',
   unsaved: 'Some changes haven’t saved yet. Try again when you’re online.',
+  'not-backed-up': NOT_BACKED_UP,
 };
+
+/** The toast when a sign-in lapses by itself (DATA-12). */
+export const LAPSED_TOAST = 'You’ve been signed out. Sign in again in Settings to keep your backup.';

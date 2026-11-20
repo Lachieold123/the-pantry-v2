@@ -28,6 +28,12 @@ export type { Engine, ScopeAdapter, ScopeState, SyncStatus } from './syncTypes';
 const FLUSH_DELAY_MS = 400;
 const RETRY_DELAY_MS = 30_000;
 
+/** Rows without the weeks the plan has let go of (8 weeks back), for anything pulled into a mirror. */
+export function keptRows(rows: readonly Row[]): Row[] {
+  const cutoff = pruneCutoff(toISODate(new Date()));
+  return rows.filter((r) => !isPastKeeping(r, cutoff));
+}
+
 export function createEngine(scope: ScopeAdapter): Engine {
   let applying = false;
   let last: Snapshot | undefined;
@@ -61,8 +67,14 @@ export function createEngine(scope: ScopeAdapter): Engine {
     if (!rows.length) return;
     const s = scope.read();
     const pending = { ...s.pending };
-    for (const r of rows) pending[rowId(r.kind, r.key)] = r;
-    scope.write({ mirror: mergeRows(s.mirror, rows), pending });
+    // A newer version of a set-aside record (a recipe made shorter) gets its turn to send.
+    const setAside = { ...s.setAside };
+    for (const r of rows) {
+      const id = rowId(r.kind, r.key);
+      pending[id] = r;
+      delete setAside[id];
+    }
+    scope.write({ mirror: mergeRows(s.mirror, rows), pending, setAside });
     scheduleFlush();
   }
 
@@ -92,8 +104,7 @@ export function createEngine(scope: ScopeAdapter): Engine {
     const merged = mergeRows(before, rows);
     if (merged === before) return;
     // Weeks the plan has let go of stay out of the mirror, so it can't grow without end.
-    const cutoff = pruneCutoff(toISODate(new Date()));
-    const mirror = Object.fromEntries(Object.entries(merged).filter(([, r]) => !isPastKeeping(r, cutoff)));
+    const mirror = mergeRows({}, keptRows(Object.values(merged)));
     scope.write({ mirror });
     applyMirror();
   }
@@ -250,5 +261,6 @@ export function createEngine(scope: ScopeAdapter): Engine {
     pull,
     flush,
     waiting: () => Object.keys(scope.read().pending).length,
+    setAside: () => Object.keys(scope.read().setAside ?? {}).length,
   };
 }

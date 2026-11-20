@@ -29,6 +29,11 @@ type HouseholdState = ScopeState & {
    * isn't a member of it (D-043, a rare case): the Household page asks you to rejoin.
    */
   rejoin: string | undefined;
+  /**
+   * Changes this phone made for a household it then dropped out of before they
+   * were sent (its sharing sign-in died, DATA-4). Rejoining that household sends them.
+   */
+  unsent?: { householdId: string; rows: Record<string, Row> } | undefined;
 };
 
 export const EMPTY_HOUSEHOLD = {
@@ -46,7 +51,8 @@ export const useHousehold = create<HouseholdState>()(
     name: `${STORAGE_PREFIX}/household`,
     version: 1,
     storage: persistentStorage(),
-    partialize: ({ household, userId, mirror, pending, setAside, sharedRecipes, lastSyncedAt, rejoin, cursor }) => ({
+    partialize: ({ household, userId, mirror, pending, setAside, sharedRecipes, lastSyncedAt, rejoin, cursor, unsent }) => ({
+      unsent,
       household,
       userId,
       mirror,
@@ -107,7 +113,11 @@ const engine = createEngine({
     }),
   // The saved sign-in loads first, so the live connection carries it and row security lets the rows through.
   ready: async () => {
-    await signIn();
+    const me = await signIn();
+    if (!me.ok && me.problem === 'signed-out') {
+      lapse();
+      return false;
+    }
     return true;
   },
   refresh: () => void refreshMembers(),
@@ -123,14 +133,48 @@ export const resetLastKitchen = engine.rebase;
 export const householdWaiting = engine.waiting;
 /** Tries to send them now. */
 export const householdFlush = engine.flush;
+/** Household changes the server refused, kept only on this phone. */
+export const householdSetAside = engine.setAside;
+
+/**
+ * What sharing stopping leaves: no household, but the other members' recipes
+ * the plan still uses stay, so no planned meal points at nothing (DATA-10).
+ */
+export function stoppedSharing() {
+  const kept = plannedOwnRecipes(usePlan.getState().entries, useHousehold.getState().sharedRecipes) as Record<string, MyRecipe>;
+  return { ...EMPTY_HOUSEHOLD, sharedRecipes: kept };
+}
+
+/**
+ * This phone's sharing sign-in has gone (DATA-4): it can't send or receive
+ * for its household any more. Everything stays on the phone, unsent changes
+ * are kept for when it rejoins, and the Household page says what happened.
+ * Also used when signing in switches this phone to another user (D-043): `userId` is that user.
+ * @internal Shared with the account.
+ */
+export function lapse(userId?: string): void {
+  const { household, pending, unsent } = useHousehold.getState();
+  stopSync();
+  if (!household) return void useHousehold.setState({ userId });
+  const rows = { ...(unsent?.householdId === household.id ? unsent.rows : {}), ...pending };
+  useHousehold.setState({
+    ...stoppedSharing(),
+    userId,
+    rejoin: household.name,
+    unsent: Object.keys(rows).length ? { householdId: household.id, rows } : undefined,
+  });
+}
 
 async function refreshMembers(): Promise<void> {
   const fresh = await myHousehold();
-  if (!fresh.ok) return;
+  if (!fresh.ok) {
+    if (fresh.problem === 'signed-out') lapse();
+    return;
+  }
   if (!fresh.value) {
     // Removed from the household elsewhere (or it was deleted): keep the kitchen, stop sharing.
     stopSync();
-    useHousehold.setState({ ...EMPTY_HOUSEHOLD });
+    useHousehold.setState(stoppedSharing());
     return;
   }
   useHousehold.setState({ household: fresh.value });
@@ -147,7 +191,8 @@ export function stopSync(): void {
 
 /** @internal Shared with householdActions: signs in and remembers who this phone is. */
 export async function signIn(): Promise<Result<string>> {
-  const me = await signedInUser();
+  // Only a phone outside any household may become a new quiet user (DATA-4).
+  const me = await signedInUser(useHousehold.getState().household === undefined);
   if (me.ok) useHousehold.setState({ userId: me.value });
   return me;
 }

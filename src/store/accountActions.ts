@@ -21,13 +21,26 @@ import {
 import { myHousehold } from '@/lib/household';
 import { signedOutState, useAccount, watchOffers } from './account';
 import { accountEngine, accountSnapshot } from './accountSync';
-import { adoptHousehold, EMPTY_HOUSEHOLD, householdFlush, householdWaiting, stopSync as stopHousehold, useHousehold } from './household';
+import {
+  adoptHousehold,
+  householdFlush,
+  householdSetAside,
+  householdWaiting,
+  lapse,
+  stopSync as stopHousehold,
+  useHousehold,
+} from './household';
 import { resetThisPhone, wipeAfterDeletion } from './reset';
+import { keptRows } from './sync';
 
-/** Why an account action didn't happen. `unsaved`: changes are still waiting to send, so signing out would lose them. */
-export type AccountProblem = Problem | 'unsaved';
+/**
+ * Why an account action didn't happen. `unsaved`: changes are still waiting to send, so signing out would lose them.
+ * `not-backed-up`: the server refused something (too big), so it's only on this phone.
+ */
+export type AccountProblem = Problem | 'unsaved' | 'not-backed-up';
 export type AccountResult<T> = { ok: true; value: T } | { ok: false; problem: AccountProblem };
 const MERGE_RETRY_MS = 30_000;
+let mergeRetry: ReturnType<typeof setTimeout> | undefined;
 const fail = (problem: AccountProblem): { ok: false; problem: AccountProblem } => ({ ok: false, problem });
 
 /** Starts the account's side at launch: the once-only offers, and the backup if signed in. */
@@ -47,8 +60,11 @@ async function refreshWho(): Promise<void> {
   if (!fresh.ok || !useAccount.getState().who) return;
   if (fresh.value) useAccount.setState({ who: fresh.value });
   else {
+    // Never silent (DATA-12): Settings and a toast ask to sign in again, and unsent changes wait for it.
+    const s = useAccount.getState();
     accountEngine.stop();
-    useAccount.setState(signedOutState());
+    const rows = { ...(s.lapsed?.id === s.who?.id ? s.lapsed?.rows : {}), ...s.pending };
+    useAccount.setState({ ...signedOutState(), lapsed: { id: s.who?.id ?? '', rows }, lapsedNotice: true });
   }
 }
 
@@ -66,9 +82,8 @@ async function checkHousehold(): Promise<void> {
  * instead; otherwise the kitchen stays here and the Household page asks to rejoin.
  */
 async function moveHousehold(userId: string): Promise<void> {
-  const had = useHousehold.getState().household;
-  stopHousehold();
-  useHousehold.setState({ ...EMPTY_HOUSEHOLD, userId, rejoin: had?.name });
+  // Unsent household changes are kept: back in the same household (a lapsed sign-in renewed), they go out (DATA-4).
+  lapse(userId);
   const house = await myHousehold();
   if (house.ok && house.value) await adoptHousehold(house.value, userId);
 }
@@ -80,16 +95,29 @@ async function merge(): Promise<boolean> {
   const pulled = await pullAccountRows(who.id);
   if (!pulled.ok) {
     useAccount.setState({ sync: 'offline' });
-    // Try again shortly; the next launch tries too.
-    setTimeout(() => {
+    // Try again shortly; the next launch tries too. One retry waiting at a time (PERF-3).
+    if (mergeRetry) clearTimeout(mergeRetry);
+    mergeRetry = setTimeout(() => {
+      mergeRetry = undefined;
       if (useAccount.getState().needsMerge) void merge();
     }, MERGE_RETRY_MS);
     return false;
   }
-  const theirs = mergeRows({}, pulled.value);
-  const along = rowsToBringAlong(theirs, accountSnapshot(), Date.now(), useAccount.getState().device);
+  const theirs = keptRows(pulled.value);
+  const { lapsed, device } = useAccount.getState();
+  // Changes this phone hadn't sent before its sign-in lapsed go out now, if it's the same account (DATA-12).
+  const kept = lapsed?.id === who.id ? Object.values(lapsed.rows) : [];
+  const along = [...kept, ...rowsToBringAlong(mergeRows({}, theirs), accountSnapshot(), Date.now(), device)];
   // One rebuild with the merged result, so the stores never pass through empty on the way.
-  useAccount.setState({ mirror: mergeRows(theirs, along), pending: {}, needsMerge: false, lastSyncedAt: Date.now(), sync: 'idle' });
+  // Old weeks the plan has let go of stay out (DATA-15).
+  useAccount.setState({
+    mirror: mergeRows(mergeRows({}, theirs), along),
+    pending: {},
+    needsMerge: false,
+    lastSyncedAt: Date.now(),
+    sync: 'idle',
+    lapsed: undefined,
+  });
   accountEngine.record(along);
   accountEngine.applyMirror();
   accountEngine.start();
@@ -145,10 +173,12 @@ export function forgetCode(): void {
 
 /** A fresh install that skips the welcome: what a sign-out and a deletion leave. */
 function clearThisPhone(): void {
+  if (mergeRetry) clearTimeout(mergeRetry);
+  mergeRetry = undefined;
   accountEngine.stop();
   stopHousehold();
   resetThisPhone();
-  useAccount.setState({ ...signedOutState(), offer: undefined });
+  useAccount.setState({ ...signedOutState(), offer: undefined, lapsed: undefined, lapsedNotice: false });
 }
 
 /**
@@ -162,6 +192,8 @@ export async function signOut(): Promise<AccountResult<null>> {
     await Promise.all([accountEngine.flush(), householdFlush()]);
     if (accountEngine.waiting() + householdWaiting() > 0) return fail('unsaved');
   }
+  // Something the server refused (a very long recipe) is only on this phone: clearing it would lose it for good (DATA-5).
+  if (accountEngine.setAside() + householdSetAside() > 0) return fail('not-backed-up');
   const out = await signOutHere();
   if (!out.ok) return out;
   clearThisPhone();

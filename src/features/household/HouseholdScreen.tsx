@@ -16,7 +16,7 @@ import { Text } from '@/ui/primitives/Text';
 import { TextField } from '@/ui/primitives/TextField';
 import { SPACE } from '@/ui/tokens/type';
 import { Members } from './Members';
-import { inviteMessage, PROBLEM_WORDS } from './words';
+import { inviteMessage, PROBLEM_WORDS, rejoinWords } from './words';
 
 export function HouseholdScreen() {
   const household = useHousehold((s) => s.household);
@@ -35,8 +35,9 @@ function NotSharing() {
   const [busy, setBusy] = useState<'start' | 'join' | undefined>();
   const [problem, setProblem] = useState<string | undefined>();
   useAnnounce(problem);
-  // Signing in to an account that wasn't in this phone's household (D-043) leaves it behind: say so.
+  // Signing in to an account that wasn't in this phone's household (D-043), or an expired sharing sign-in, leaves it behind: say so.
   const rejoin = useHousehold((s) => s.rejoin);
+  const unsent = useHousehold((s) => s.unsent !== undefined);
   const trimmed = name.trim();
 
   const start = async () => {
@@ -60,7 +61,7 @@ function NotSharing() {
     <View style={{ gap: SPACE.lg }}>
       {rejoin ? (
         <Text variant="bodySmall" colour="inkSoft" testID="household-rejoin">
-          {`Since you signed in, this phone isn’t in ${rejoin} any more. Your plan, list and cupboard are still here. To share again, ask someone in ${rejoin} for a new invite.`}
+          {rejoinWords(rejoin, unsent)}
         </Text>
       ) : null}
       <Text variant="body" colour="inkSoft">
