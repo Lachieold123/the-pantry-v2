@@ -8,6 +8,7 @@ import { View } from 'react-native';
 
 import type { RankedItem } from '@/domain/home-engine/types';
 import type { FeedItem } from '@/domain/published/published';
+import { INTERNAL_BUILD } from '@/lib/build';
 import { useHomeEngine } from '@/lib/homeFeed';
 import { problemWords } from '@/lib/published';
 import { useHomeEvents } from '@/store/homeEvents';
@@ -18,9 +19,6 @@ import { FEED, HOME } from '@/ui/tokens/screens';
 import { SPACE } from '@/ui/tokens/type';
 import { HomeTiers } from './HomeTiers';
 import { PublishedCard } from './PublishedCard';
-
-/** Test builds can rank Home as one of the AI cooks (Settings has no switch for this). */
-const TESTING = __DEV__ || process.env.EXPO_PUBLIC_SHOW_DRAFT_RECIPES === '1';
 
 export function HomeForYou() {
   const router = useRouter();
@@ -39,7 +37,8 @@ export function HomeForYou() {
   return (
     <View testID="home-for-you" style={{ marginBottom: HOME.afterCarousel, gap: SPACE.md }}>
       <SectionHeader kicker="From other cooks" tone="accent" title="Picked for you" />
-      {TESTING ? (
+      {/* Test builds can rank Home as one of the AI cooks (Settings has no switch for this). */}
+      {INTERNAL_BUILD ? (
         <View style={{ flexDirection: 'row', alignItems: 'center', gap: SPACE.sm }}>
           <Text variant="metaSmall" style={{ flex: 1 }} testID="home-viewing-as">
             {asCookId ? 'Testing: ranked as an AI cook, with their follows' : 'Testing: ranked as you'}

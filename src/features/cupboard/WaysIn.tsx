@@ -1,8 +1,10 @@
 // Three ways to fill the cupboard in bulk, under the search box: type a list,
 // scan a receipt, or take a photo of your food (D-030, v1's Cupboard buttons).
+// Store builds show only the list until scanning is switched on (REL2-8).
 import { useRouter } from 'expo-router';
 import { Pressable, View } from 'react-native';
 
+import { SCAN_WAYS_SHOWN } from '@/lib/build';
 import { Icon, type IconName } from '@/ui/primitives/Icon';
 import { Text } from '@/ui/primitives/Text';
 import { makeStyles } from '@/ui/theme/makeStyles';
@@ -24,7 +26,7 @@ export function WaysIn() {
   const styles = useStyles();
   return (
     <View style={styles.row}>
-      {WAYS.map((w) => (
+      {WAYS.filter((w) => SCAN_WAYS_SHOWN || !w.href.startsWith('/cupboard/scan')).map((w) => (
         <Pressable
           key={w.testID}
           onPress={() => router.push(w.href)}

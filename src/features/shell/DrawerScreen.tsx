@@ -10,6 +10,7 @@ import { Pressable, ScrollView, StyleSheet, useWindowDimensions, View } from 're
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { COMMUNITY_SHOWN } from '@/lib/build';
 import { useAccount } from '@/store/account';
 import { Avatar } from '@/ui/primitives/Avatar';
 import { Divider } from '@/ui/primitives/Divider';
@@ -80,6 +81,9 @@ export function DrawerScreen() {
             <DrawerRow icon="feed" label="Home" onPress={() => tab('/')} testID="menu-feed" />
             <DrawerRow icon="browse" label="Browse recipes" onPress={() => page('/browse')} testID="menu-browse" />
             <DrawerRow icon="cupboard" label="Cupboard" onPress={() => tab('/cupboard')} testID="menu-cupboard" />
+            {COMMUNITY_SHOWN ? (
+              <DrawerRow icon="people" label="From other cooks" onPress={() => page('/feed')} testID="menu-community" />
+            ) : null}
           </Section>
           <Section label="My kitchen">
             <DrawerRow icon="saved" label="Cookmarks" count={counts.saved} onPress={() => page('/saved')} testID="menu-saved" />

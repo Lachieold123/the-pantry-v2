@@ -21,6 +21,7 @@ import {
   type HomeMode,
 } from '@/domain/suggestions/home';
 import { tonightsDinner } from '@/domain/plan/week';
+import { COMMUNITY_SHOWN } from '@/lib/build';
 import { useToday } from '@/lib/today';
 import { RECIPE_IMAGES } from '@/data/catalogue/images';
 import { ingredientName, useCookableNow } from '@/store/cookable';
@@ -191,8 +192,8 @@ export function FeedScreen() {
           </View>
         ) : null}
 
-        {/* Other cooks' recipes join below Home's own picks (D-027), ranked by the Home engine. */}
-        <HomeForYou />
+        {/* Other cooks' recipes join below Home's own picks (D-027), ranked by the Home engine; internal builds only for now (REL2-1). */}
+        {COMMUNITY_SHOWN ? <HomeForYou /> : null}
 
         {heroes.length ? (
           <Button label="Browse all recipes" kind="soft" block onPress={() => router.push('/browse')} testID="home-browse-all" />
