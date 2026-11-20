@@ -32,8 +32,8 @@ There are three loops (Discover → Save, Plan → Shop, Cook → Remember), and
   - Pure logic lives in `src/domain` (no React, no packages: D-015), and routes stay thin.
   - Features don't import other features.
   - Comments explain *why*.
-- **Recipe content changes go through `scripts/data/recipe-fixes.json`** and `npm run catalogue:convert`, never by hand-editing `src/data/catalogue/recipes.json` (D-014).
-- **New house recipes go in a batch file** in `scripts/data/house-recipes/` (one JSON file per batch, edited there directly), then `npm run catalogue:check-house` and `npm run catalogue:convert` (D-044).
+- **Recipe content changes go through `scripts/data/recipe-fixes.json`** and a catalogue rebuild (`npx tsx scripts/rebuild-house-batches.mts`), never by hand-editing `src/data/catalogue/recipes.json` (D-014).
+- **New house recipes go in a batch file** in `scripts/data/house-recipes/` (one JSON file per batch, edited there directly), then `npm run catalogue:check-house` and the same rebuild (D-044).
 - **Small verified steps.** For each change: typecheck, lint, test, simulator, screenshots (light and dark), Maestro flow, then Lachlan tries it on his phone. Never batch unverified changes.
 - **Push to GitHub at the end of every working session.** Check the push succeeded.
 
@@ -66,13 +66,14 @@ npm run export:web                   # static web build, used for screenshots (n
 npm run feed:verify                  # the community feed upload payload (diet tags vs ingredients)
 npm run format:check                 # Prettier check, as CI runs it
 node .github/scripts/check-eas-env.mjs  # fails if eas.json production could show draft recipes (K-29)
-npm run catalogue:convert -- <old>   # rebuild the catalogue from the old app at <old>
+npx tsx scripts/rebuild-house-batches.mts  # rebuild the catalogue (no old app needed): recipe-fixes.json, every house batch, then the photo maps
+npm run catalogue:convert -- <old>   # the original converter, from the old app at <old>; it no longer reproduces the converted recipes exactly, so use the rebuild above
 npm run catalogue:check-ingredients  # ingredient database coverage over the catalogue
 npm run catalogue:check-house        # check the new house recipe batches (no old app needed)
 npm run catalogue:check-text         # recipe words vs diet tags, and "A or B" lines, over the built catalogue (D-053)
 npm run catalogue:validate -- --no-nutrition  # the single gate for house batches: food safety, doneness, duplicates, style (D-053)
 npm run catalogue:photo-sources      # rebuild the photo credit links' file pages from the batches (no old app needed)
-npm run catalogue:photos             # regenerate the recipe photo maps from the catalogue (K-30)
+npm run catalogue:photos             # regenerate the recipe photo maps and the store-build catalogue files from the catalogue (K-30, D-054)
 ```
 
 Routes live in `src/app/` (Expo Router, SDK 57 convention). Route files stay thin: they render a screen from `src/features/`.

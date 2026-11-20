@@ -445,7 +445,7 @@ The decisions below were delegated to Claude by Lachlan on 29 September 2026 ("m
   - An invite code lets one person join and lasts 48 hours; a household keeps at most five live codes; ten wrong codes in an hour make a phone wait. Any member can cancel unused codes and remove another member. The join sheet shows the household's name and size before joining.
   - The server keeps timestamps no more than five minutes ahead of its clock, breaks same-millisecond ties the way the phones do, checks the shape of recipe, plan and extra rows, caps rows at 50,000 per account or household, and lets only permanent sign-ins write account rows.
   - Deleting an account removes your shared recipes from a household that carries on and takes your id off what you planned or ticked. A phone that shared without an account can delete its household data from Settings. Anonymous users not in a household are deleted after 30 days once pg_cron is switched on.
-  - Files: `supabase/migrations/20261008000000` to `…0300`, tested by `supabase/tests/rules.test.mjs` on PGlite.
+  - Files: `supabase/migrations/20261120000000` to `…0300` (renamed 20 November 2026 from `20261008…`), tested by `supabase/tests/rules.test.mjs` on PGlite.
 - **Why:** the audit showed a member could move into any household, one fast clock could freeze a row, one bad row could crash every phone, and codes could be guessed without limit.
 
 ## D-049 · Saying how the recipes are made
@@ -503,3 +503,22 @@ _Renumbered from D-045 on 17 Oct 2026 (see D-051)._
   - **Ingredient flags:** Japanese curry roux is gluten, soy and dairy; andouillette is pork and gluten (feed `ingredient_extras` too).
   - **The seed kitchen is retired.** The Supabase pipeline that called the Anthropic API is paused with a zero cap, `seed.start()` and `seed.tick()` refuse to run, and the edge function is a stub (`supabase/migrations/20261017000000_seed_kitchen_retired.sql`). Its source and schema are now in git. Nothing it made was deleted.
 - **Why:** a wrong "vegetarian" or "no-gluten" tag is a real harm, and API spend was never wanted.
+
+## D-054 · Calls made while fixing the 20 November deep audit
+
+- **Date:** 20 November 2026 · **Decided by:** Claude, on Lachlan's "fix everything you find, you don't need my permission" (each is easy to reverse; anything that isn't was left for him and is listed in `docs/audits/2026-11-20-deep-audit/REPORT.md`)
+- **Decision:**
+  - **This branch is the app.** `audit/deep-1120` joins `main` with the 8 October audit fixes, the Home engine and the `cloud/*` lines, which had never been merged (`INTEGRATION.md`). Build from it, not from bare `main`.
+  - **Nothing was changed on the live database.** Every server fix is a migration file proved on PGlite, with a 13-step runbook (`supabase/APPLY-LIVE.md`). Applying it is Lachlan's yes.
+  - **Store builds hide what isn't finished** (replaces D-041's "keep them visible"): the other-cooks feed, cook profiles and Home rail, and the "Coming soon" scan tiles. Internal builds keep them. How the AI-persona cooks are presented is still Lachlan's call (S2-7).
+  - **Pro is on sale only when both legal links are filled** (`src/lib/legal.ts`). Until then nothing is limited and nothing is sold. "Trial" is only said when the store product has an introductory offer and the buyer is eligible.
+  - **Plates are a private photo log** and the words say so; no promise of sharing.
+  - **How recipes are made is said truthfully:** "drafted and checked with AI help, to our written standards; not cook-tested yet" on the recipe page, in Settings and in the terms. Replaces D-049's "checked and edited by us".
+  - **A store build bundles only the recipes it shows** (`recipes.store.json`, generated with the photo maps; PERF-1). `titles.json` keeps every id and title for the old-app import.
+  - **Sync loses nothing by default:** a dead sharing sign-in moves the phone to the rejoin state, never to a new anonymous user; sign-out is refused while something is set aside; signing out keeps what the account doesn't hold (Home log, checklist, plates) and deleting the account clears it; a recipe too big for its row is trimmed and says so in its notes (notes cap 2,000 characters).
+  - **Recipe page and list:** an amount note scales unless it says "each" or "per"; lines the avoid list couldn't check are named on the page (no word lists in code: the ingredient database is the one source); Undo re-adds items as hand-added; a plan link can plan from today to the end of next week; servings cap at 24; the free limit counts new recipes only, edits are always allowed.
+  - **Home:** "Ready now" and "Nearly there" (the Cupboard's words); the first-days checklist waits for the tour; a confident cook's lift is 4 steps (2 and 3 changed nothing measurable); the "What I have" badge caps at 99+ and speaks the real number. Upcoming planned meals get a Cook button.
+  - **Recipes:** a wrong diet tag comes off rather than the recipe being rewritten (17 lost a tag, 10 gained one from fixed links); bread rolls count as soy, cornflour and baking powder as gluten, prawn stock as fish; "Contains" notes are recomputed from the ingredient lines; 607 recipes carry written food-safety notes. The zest-and-juice lines stay as they are (they scale; the suggested form wouldn't).
+  - **Tooling:** `catalogue:validate`, the text and ingredient checks, the feed check, Prettier, the Expo version check and the database tests are hard gates in CI. `eas.json` production sets the drafts flag to "0" and CI checks it. Migration files are named by their live version, and a test keeps them in order.
+  - **Left alone on purpose:** account deletion still stops if Apple can't be reached (so a sign-in is never left unrevoked); RevenueCat still starts at launch whenever it's configured (a build that can ship always has Pro on sale); the shopping list isn't virtualised (82 to 138 rows, 7 ms).
+- **Why:** each is the option that loses no data, tells no lie and changes the least. The rest needs an account, a key, money or a product call, so it waits for Lachlan.
