@@ -42,7 +42,9 @@ for (const file of files.filter((f) => /^L\d-.*\.md$/.test(f)).sort()) {
 }
 
 const status = new Map<string, { status: string; commit: string; note: string }>();
-for (const file of files.filter((f) => /^FIX-.*-STATUS\.csv$/.test(f))) {
+// FIX-FINAL is read last: it holds the combined verdict where two fixers each did half of one finding.
+const finalLast = (a: string, b: string) => Number(a.includes('FINAL')) - Number(b.includes('FINAL')) || a.localeCompare(b);
+for (const file of files.filter((f) => /^FIX-.*-STATUS\.csv$/.test(f)).sort(finalLast)) {
   for (const line of readFileSync(join(dir, file), 'utf8').split('\n')) {
     const [id, st, commit, ...note] = line.split(',');
     if (rows.has(id?.trim())) status.set(id.trim(), { status: st.trim(), commit: commit.trim(), note: note.join(',').trim() });

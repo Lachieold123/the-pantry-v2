@@ -1,0 +1,15 @@
+REPO-4,fixed,6c0cced,expo install --check passes: the four Expo packages are back in step with SDK 57.
+REPO-5,fixed,0db7234,ESLint ignores generated test output and audit scratch so lint no longer crashes after a browser test run.
+REPO-7,part-fixed,6c0cced,shell-quote is held at 1.12 by an override and npm audit fix took 13 advisories to 6 (none critical); decode-uri-component has no usable fix until expo-router moves off query-string 7.
+REL2-17,fixed,6c0cced,react-native-purchases is pinned to 10.11.0 like the other native modules.
+PERF-1,fixed,b092eb9,A store build bundles recipes.store.json (271 recipes) instead of all 5496; store web bundle 15.8 MB to 5.9 MB measured.
+REPO-1,part-fixed,,audit/deep-1120 is pushed to GitHub; making it main and pushing local main are the owner's.
+S2-9,owner,,Banning or deleting the 99 seed sign-ins is a live write on the server; it waits for the owner's yes (K-40).
+REL2-15,owner,,Removing the unused RevenueCat entitlement is a RevenueCat change; it waits for the owner (K-38).
+S2-14,owner,,Storage plan and clean-up are the owner's (K-24).
+F-10,fixed,f606ccf,Both halves done: Plan progress and the Collect sheet (f606ccf) and the Plan badge and empty collection (2086fe4) skip recipes that are gone.
+DATA-5,fixed,b4b1f62,Both halves done: sign-out is refused while anything is set aside (b4b1f62) and Settings shows what is set aside (397c22a; proved by a component test not a screenshot).
+F-3,fixed,864d47f,The recipe page names the lines it couldn't check (864d47f) and the ingredient database learnt the five missing allergen words (c86b381).
+S2-4,part-fixed,e7ec90b,Both halves are written: the private token store and functions (e7ec90b) and the app's calls (0669db8). Nothing is live until the migrations are applied and the owner sets the Apple key and deploys.
+REPO-17,part-fixed,77b182d,CI actions and PGlite are pinned; the stale files on the Mac (expo-preview.pid and pantry-overnight) are left for the owner.
+S2-6,part-fixed,5679ec6,Every launch draft and the in-app recipe wording (3e921d4) now match the store build; the lawyer review and hosting are the owner's.

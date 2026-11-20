@@ -5,7 +5,9 @@ import { expect, ONBOARDED, open, signedInAs, STOCKED, test } from './kitchen';
 
 test('a recipe says how it was made, and Settings › About explains it', async ({ page }) => {
   await open(page, '/recipe/carbonara', ONBOARDED);
-  await expect(page.getByTestId('recipe-origin')).toContainText('Drafted with AI help');
+  // The words must not claim a person checked each recipe, or that it was cooked (S2-6, D-054).
+  await expect(page.getByTestId('recipe-origin')).toContainText('Drafted and checked with AI help');
+  await expect(page.getByTestId('recipe-origin')).toContainText('Not cook-tested yet');
   await page.goto('/settings');
   await expect(page.getByText('How our recipes are made')).toBeVisible();
 });
