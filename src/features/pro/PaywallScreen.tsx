@@ -7,11 +7,13 @@
 // - asking the store: a busy button;
 // - the store has nothing on sale yet: says so, and nothing is limited;
 // - the store couldn't be reached: says so, with Try again;
-// - on sale: the plans and buying (BuyPanel).
+// - on sale, with the privacy policy and terms published (3.1.2): the plans
+//   and buying (BuyPanel). Without them it says not on sale yet.
 import { useRouter } from 'expo-router';
 import { View } from 'react-native';
 
 import { isProFeature, paywallHeading, proBenefits, type Entitlement } from '@/domain/pro/pro';
+import { canSellPro } from '@/lib/legal';
 import { goBack } from '@/lib/navigation';
 import { SCAN_CONNECTED } from '@/lib/scan';
 import { useIsPro, usePro } from '@/store/pro';
@@ -65,7 +67,7 @@ export function PaywallScreen({ from }: { from?: string | undefined }) {
 
       {pro ? (
         <Button label="Done" kind="primary" block onPress={close} testID="pro-done" />
-      ) : sale.state === 'on-sale' ? (
+      ) : sale.state === 'on-sale' && canSellPro() ? (
         <BuyPanel plans={sale.plans} onPro={onPro} />
       ) : sale.state === 'checking' ? (
         <Button label="Loading prices" kind="primary" block busy disabled onPress={() => undefined} testID="pro-loading" />

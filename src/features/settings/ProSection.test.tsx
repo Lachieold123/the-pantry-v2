@@ -2,6 +2,7 @@ import { act, fireEvent, render, screen } from '@testing-library/react-native';
 import { Linking } from 'react-native';
 
 import { FREE } from '@/domain/pro/pro';
+import { LEGAL_URLS } from '@/lib/legal';
 import { usePro } from '@/store/pro';
 import { MANAGE_SUBSCRIPTIONS_URL, ProSection } from './ProSection';
 
@@ -28,6 +29,7 @@ describe('Settings → The Pantry Pro', () => {
   });
 
   it('once on sale, a free user is just Free', async () => {
+    Object.assign(LEGAL_URLS, { privacy: 'https://example.com/privacy', terms: 'https://example.com/terms' });
     usePro.setState({ sale: { state: 'on-sale', plans } });
     await render(<ProSection />);
     expect(screen.getByText('Free')).toBeTruthy();

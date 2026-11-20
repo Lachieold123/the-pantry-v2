@@ -2,6 +2,7 @@ import { act, renderHook, waitFor } from '@testing-library/react-native';
 import { NativeModules, Platform } from 'react-native';
 
 import { FREE } from '@/domain/pro/pro';
+import { LEGAL_URLS } from '@/lib/legal';
 import { customer, mockPurchases, offerings, storeError, storePackage, type MockPurchases } from '@/lib/purchases.testing';
 import { useAccount } from './account';
 import { useLimitsApply, usePro, usePurchasesReady } from './pro';
@@ -27,6 +28,7 @@ beforeEach(() => {
   rc().getOfferings.mockResolvedValue(offerings());
   usePro.setState({ entitlement: FREE, sale: { state: 'unavailable' }, previewLimits: false, pretendPro: false, importsAt: [] });
   useAccount.setState({ who: undefined, status: 'signed-out' });
+  Object.assign(LEGAL_URLS, { privacy: 'https://example.com/privacy', terms: 'https://example.com/terms' });
 });
 
 async function started() {

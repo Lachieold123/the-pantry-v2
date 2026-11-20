@@ -24,6 +24,7 @@ import {
 } from '@/domain/pro/pro';
 import { proStatus } from '@/domain/pro/purchase';
 import { INTERNAL_BUILD } from '@/lib/build';
+import { canSellPro } from '@/lib/legal';
 import type { Plan } from '@/lib/purchases';
 import { useMyRecipes } from './myRecipes';
 import { useSaved } from './saved';
@@ -76,7 +77,7 @@ export const usePro = create<ProState>()(
     {
       name: `${STORAGE_PREFIX}/pro`,
       version: 1,
-      storage: persistentStorage(),
+      storage: persistentStorage(1),
       partialize: ({ entitlement, importsAt, previewLimits, pretendPro }) => ({ entitlement, importsAt, previewLimits, pretendPro }),
     },
   ),
@@ -89,9 +90,9 @@ export function useIsPro(): boolean {
   return (INTERNAL_BUILD && pretend) || isActive(entitlement, new Date().getTime());
 }
 
-/** Pro can be bought on this phone right now: RevenueCat is running and the store has at least one plan on sale. */
+/** Pro can be bought on this phone right now: RevenueCat is running, the store has at least one plan on sale, and the legal pages are published. */
 export function usePurchasesReady(): boolean {
-  return usePro((s) => s.sale.state === 'on-sale');
+  return usePro((s) => s.sale.state === 'on-sale') && canSellPro();
 }
 
 /** Free limits apply: Pro can be bought here (or a development build is previewing them) and this phone isn't Pro. */

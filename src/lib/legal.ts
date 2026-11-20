@@ -17,6 +17,15 @@ export function legalLinks(urls: typeof LEGAL_URLS = LEGAL_URLS): LegalLink[] {
 }
 
 /**
+ * Pro may be sold only once the privacy policy and the terms are both
+ * published (guideline 3.1.2). Until then the paywall shows "not on sale
+ * yet" and no free limit applies, even if the store has plans (REL2-2).
+ */
+export function canSellPro(urls: typeof LEGAL_URLS = LEGAL_URLS): boolean {
+  return legalLinks({ privacy: urls.privacy, terms: urls.terms }).length === 2;
+}
+
+/**
  * What the welcome asks the cook to agree to: the terms and the privacy
  * policy, whichever are published. Empty until the terms are, so the welcome
  * never asks anyone to agree to a page that doesn't exist.

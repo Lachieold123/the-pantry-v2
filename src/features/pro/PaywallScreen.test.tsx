@@ -1,10 +1,11 @@
-import { act, fireEvent, render, screen, waitFor } from '@testing-library/react-native';
+import { act, fireEvent, render, renderHook, screen, waitFor } from '@testing-library/react-native';
 import { NativeModules } from 'react-native';
 
 import { FREE } from '@/domain/pro/pro';
+import { LEGAL_URLS } from '@/lib/legal';
 import { configurePurchases } from '@/lib/purchases';
 import { customer, mockPurchases, offerings, storeError } from '@/lib/purchases.testing';
-import { usePro } from '@/store/pro';
+import { useLimitsApply, usePro } from '@/store/pro';
 import { checkSale } from '@/store/proSync';
 import { PaywallScreen } from './PaywallScreen';
 
@@ -27,6 +28,8 @@ beforeAll(() => {
 
 beforeEach(() => {
   jest.clearAllMocks();
+  // The legal pages as they will be once Lachlan publishes them; one test below takes them away.
+  Object.assign(LEGAL_URLS, { privacy: 'https://example.com/privacy', terms: 'https://example.com/terms' });
   rc().getOfferings.mockResolvedValue(offerings());
   usePro.setState({ entitlement: FREE, sale: { state: 'unavailable' }, pretendPro: false, previewLimits: false, importsAt: [] });
 });
@@ -58,6 +61,24 @@ describe('PaywallScreen, when Pro can’t be bought', () => {
     rc().getOfferings.mockResolvedValue(offerings());
     await fireEvent.press(screen.getByTestId('pro-check-again'));
     await waitFor(() => expect(screen.getByTestId('pro-buy')).toBeTruthy());
+  });
+
+  it('with plans in the store but no privacy policy or terms published (today): not on sale, nothing limited (3.1.2)', async () => {
+    Object.assign(LEGAL_URLS, { privacy: undefined, terms: undefined });
+    await onSale();
+    expect(usePro.getState().sale.state).toBe('on-sale');
+    await render(<PaywallScreen />);
+    expect(screen.queryByTestId('pro-buy')).toBeNull();
+    expect(screen.getByTestId('pro-not-on-sale')).toHaveTextContent('Pro isn’t on sale yet. Until it is, nothing in the app is limited.');
+    const { result } = await renderHook(() => useLimitsApply());
+    expect(result.current).toBe(false);
+  });
+
+  it('with only one of the two legal pages published, still not on sale', async () => {
+    Object.assign(LEGAL_URLS, { terms: undefined });
+    await onSale();
+    await render(<PaywallScreen />);
+    expect(screen.queryByTestId('pro-buy')).toBeNull();
   });
 
   it('while asking the store, shows a busy button', async () => {
