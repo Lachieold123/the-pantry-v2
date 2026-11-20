@@ -4,22 +4,22 @@ Nothing in this document has been run or deployed. Applying any of it is the own
 
 ## 1. Current state (from the repo, 21 Oct 2026)
 
-- Retired 17 Oct 2026 (D-053; `supabase/migrations/20261017000000_seed_kitchen_retired.sql`). Nothing it made was deleted.
+- Retired 17 Oct 2026 (D-053; `supabase/migrations/20261016204729_seed_kitchen_retired.sql`). Nothing it made was deleted.
 - `seed.config`: `paused = true`, `publishing = false`, spend caps `0`.
 - `seed.start()` and `seed.tick()` raise "seed kitchen is retired"; execute is revoked from public, anon and authenticated.
-- The cron job was reported unscheduled, but no migration in git does it (the retire migration does not call `seed.stop()`), so the pending SQL below unschedules it if it is still there.
+- The cron job was reported unscheduled, but no migration in git does it (the retire migration does not call `seed.stop()`), so the SQL below unschedules it if it is still there.
 - Edge function `seed-kitchen` is a stub that calls nothing and answers HTTP 410 (`supabase/functions/seed-kitchen/index.ts`). The old v8 source is kept in `supabase/functions/seed-kitchen-v8-retired/`. The stub already works as the guard (no key, no API call, no flag to flip), so I added nothing to it.
 - Schema `seed` already has usage revoked from public, anon and authenticated (`20261007011855`, line 141). Its tables are `seed.config`, `seed.personas`, `seed.dishes`, `seed.usage`, `seed.runs`.
 - Nothing in `src/` refers to `seed-kitchen` or `seed.*`.
 
-## 2. The pending SQL
+## 2. The SQL
 
-`supabase/migrations/_pending/20261021000000_seed_kitchen_off.sql` (in `_pending/`, so no tool applies it):
+`supabase/migrations/20261120000500_seed_kitchen_off.sql` (written 20 Nov 2026, in the migrations folder but not yet applied to the live project):
 
 1. Unschedules the `seed-kitchen` cron job if one exists (no error if it does not).
 2. Enables row level security, with no policies, on the five `seed.*` tables.
 
-It deletes no rows, tables or functions. To apply: move the file up into `supabase/migrations/`, then run it through your normal migration route (a Supabase production change: ask first).
+It deletes no rows, tables or functions. To apply: follow `supabase/APPLY-LIVE.md` (a Supabase production change: ask first).
 
 Check first, read-only: `select jobname, schedule, active from cron.job;` (expect no `seed-kitchen` row, or `active = false`).
 

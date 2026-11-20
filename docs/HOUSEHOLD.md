@@ -60,7 +60,7 @@ OurGroceries shares a list someone typed. The Pantry shares the kitchen the list
    - Start on one phone and join on the other.
    - Tick, add and remove on both, online and in flight mode, and check they agree within seconds.
 
-5. **Private live updates (K-32) and smaller pulls (K-36).** After K-18's four migrations, apply `supabase/migrations/20261009000000_rows_received_at.sql` then `20261009000100_realtime_private_broadcast.sql`. Then in the dashboard:
+5. **Private live updates (K-32) and smaller pulls (K-36).** After K-18's four migrations, apply `supabase/migrations/20261120000400_rows_received_at.sql` then `20261120009900_realtime_private_broadcast.sql` (order and live steps: `supabase/APPLY-LIVE.md`). Then in the dashboard:
    - **Realtime → Settings:** turn off **"Allow public access"** and save, so every channel needs Realtime Authorization. (Nothing in the app uses a public channel.)
    - **Database → Publications → `supabase_realtime`:** check `household_rows` and `account_rows` are no longer listed (the migration takes them out).
    - Nothing else needs switching on: Broadcast from the database and the policy come with the migration.

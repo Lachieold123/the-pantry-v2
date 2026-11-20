@@ -60,9 +60,12 @@ npm start                            # Expo dev server (then open the developmen
 npm run typecheck                    # tsc --noEmit
 npm run lint                         # ESLint, including the map's structure rules
 npm test                             # domain + token tests (node:test) then component tests (Jest)
-npm run test:web                     # journey tests on the web build (Playwright; export:web first; D-040)
+npm run test:web                     # journey tests on the web build (Playwright; D-040). Export first with EXPO_PUBLIC_SHOW_DRAFT_RECIPES=1 npx expo export --platform web --clear, as CI does; a plain export fails the draft-recipe journeys
 node --test supabase/tests/*.test.mjs  # database rules and sync on PGlite (set PGLITE; see supabase/tests/harness.mjs)
-npm run export:web                   # static web build, used for screenshots
+npm run export:web                   # static web build, used for screenshots (no drafts flag: not what test:web needs)
+npm run feed:verify                  # the community feed upload payload (diet tags vs ingredients)
+npm run format:check                 # Prettier check, as CI runs it
+node .github/scripts/check-eas-env.mjs  # fails if eas.json production could show draft recipes (K-29)
 npm run catalogue:convert -- <old>   # rebuild the catalogue from the old app at <old>
 npm run catalogue:check-ingredients  # ingredient database coverage over the catalogue
 npm run catalogue:check-house        # check the new house recipe batches (no old app needed)
