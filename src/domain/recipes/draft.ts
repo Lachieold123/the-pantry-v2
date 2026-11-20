@@ -115,7 +115,26 @@ function ingredientMessage(p: RecipeProblem, recipe: Recipe): string {
   return `Check the amount in "${raw}".`;
 }
 
-function toDraftProblem(p: RecipeProblem, recipe: Recipe): DraftProblem {
+/**
+ * The editor's words for each rule validateRecipe checks. The validator's own
+ * wording is for the catalogue tools ("prepMinutes must be whole minutes"), so
+ * it never reaches the screen (UX-4).
+ */
+const PLAIN: Record<string, string> = {
+  title: 'Shorten the name to 80 characters or fewer.',
+  summary: 'Keep the description to 120 characters or fewer.',
+  cuisine: 'Pick the closest cuisine.',
+  difficulty: 'Pick easy, medium or hard.',
+  prepMinutes: 'Times go up to 3 days, in whole minutes.',
+  cookMinutes: 'Times go up to 3 days, in whole minutes.',
+  servings: 'Serves can be 1 to 50.',
+  diets: 'Check the diets for this recipe.',
+  seasons: 'Check the seasons for this recipe.',
+};
+/** For a rule only the app itself could break (the id): never the code's words. */
+const SOMETHING_ELSE = 'Something in this recipe needs another look. Try saving it again.';
+
+export function toDraftProblem(p: RecipeProblem, recipe: Recipe): DraftProblem {
   const root = p.path.split(/[.[]/)[0] ?? '';
   const field = FIELD_FOR[root] ?? 'other';
   const message =
@@ -127,7 +146,7 @@ function toDraftProblem(p: RecipeProblem, recipe: Recipe): DraftProblem {
           ? 'Add at least one step.'
           : field === 'mealTypes'
             ? 'Pick at least one meal.'
-            : `${root} ${p.message}.`;
+            : (PLAIN[root] ?? SOMETHING_ELSE);
   return { field, message };
 }
 

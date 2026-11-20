@@ -2,7 +2,19 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
 import { catalogue, index } from '../testing/fixtures';
-import { buildRecipe, EMPTY_DRAFT, myRecipeId, parseIngredientsText, parseMethodText, recipeToDraft, type RecipeDraft } from './draft';
+import type { UnitId } from '../ingredients/units';
+import {
+  buildRecipe,
+  EMPTY_DRAFT,
+  myRecipeId,
+  parseIngredientsText,
+  parseMethodText,
+  recipeToDraft,
+  toDraftProblem,
+  type RecipeDraft,
+} from './draft';
+import type { DietTag, Recipe, Season } from './types';
+import { validateRecipe } from './validate';
 
 const draft = (over: Partial<RecipeDraft>): RecipeDraft => ({
   ...EMPTY_DRAFT,
@@ -117,4 +129,34 @@ describe('ingredient problems name the line (BUG-26)', () => {
     const built = buildRecipe('x', draft({ ingredientsText: '500 g' }), 'user', index);
     assert.match(built.problems.find((p) => p.field === 'ingredients')?.message ?? '', /no ingredient/);
   });
+});
+
+describe('every problem has plain words (UX-4)', () => {
+  // A recipe that breaks every rule validateRecipe has, so a new rule without plain words fails here.
+  const broken = (title: string): Recipe => ({
+    ...catalogue[0]!,
+    id: 'Not An Id',
+    title,
+    summary: 'x'.repeat(121),
+    cuisine: 'martian' as Recipe['cuisine'],
+    difficulty: 'extreme' as Recipe['difficulty'],
+    mealTypes: [],
+    diets: ['vegan', 'paleo' as DietTag],
+    seasons: ['monsoon' as Season],
+    prepMinutes: 99999,
+    cookMinutes: -1,
+    servings: 0,
+    ingredientGroups: [{ items: [] }, { items: [{ item: '', raw: '', unit: 'cup' }, { item: 'egg', raw: '0 egg', quantity: 0 }, { item: 'x', raw: 'x', quantity: { min: 3, max: 2 } }, { item: 'y', raw: 'y', unit: 'parsec' as UnitId, quantity: 1 }] }],
+    steps: [{ text: ' ' }],
+  });
+  const problems = [...validateRecipe(broken('')), ...validateRecipe(broken('x'.repeat(81)))];
+  it('covers the rules', () => assert.ok(problems.length >= 18));
+  for (const p of problems) {
+    it(`${p.path} ${p.message}`, () => {
+      const { message } = toDraftProblem(p, broken(''));
+      assert.match(message, /^[A-Z]/);
+      assert.doesNotMatch(message, /\b[a-z]+[A-Z]\w*\b/, 'no camelCase field names');
+      assert.doesNotMatch(message, /^(id|title|summary|cuisine|difficulty|mealTypes|diets|seasons|prepMinutes|cookMinutes|servings|steps|ingredientGroups)\b/i);
+    });
+  }
 });
