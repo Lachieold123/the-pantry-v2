@@ -12,6 +12,7 @@ import { INGREDIENTS, KITCHEN } from '@/data/catalogue/catalogue';
 import { cookable } from '@/domain/cupboard/cookable';
 import { cupboardIds } from '@/domain/cupboard/match';
 import { shoppingWeek, toISODate } from '@/domain/plan/week';
+import { clampServings, MAX_SERVINGS } from '@/domain/recipes/servings';
 import { capitalise, EMPTY_EDITS } from '@/domain/shopping/derive';
 import { recipeKeysOnList, recipeListRows, startPicked, type RecipeListRow } from '@/domain/shopping/fromRecipe';
 import { goBack } from '@/lib/navigation';
@@ -43,7 +44,7 @@ export function AddToListSheet({ id, servings: startServings }: { id: string; se
   const week = shoppingWeek(toISODate(new Date()));
   const { list } = useWeekList(week);
   const extras = usePlan((s) => s.listEdits[week] ?? EMPTY_EDITS).extras;
-  const [servings, setServings] = useState(startServings ?? recipe?.servings ?? 4);
+  const [servings, setServings] = useState(clampServings(startServings) ?? recipe?.servings ?? 4);
 
   const rows = useMemo(() => {
     if (!recipe) return [];
@@ -106,6 +107,7 @@ export function AddToListSheet({ id, servings: startServings }: { id: string; se
           value={servings}
           onChange={setServings}
           min={1}
+          max={MAX_SERVINGS}
           format={(n) => `${n} ${n === 1 ? 'person' : 'people'}`}
           testID="list-servings"
         />

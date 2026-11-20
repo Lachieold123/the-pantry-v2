@@ -62,6 +62,17 @@ export function visibleWeeks(today: ISODate): { thisWeek: ISODate; nextWeek: ISO
   return { thisWeek, nextWeek: addDays(thisWeek, 7) };
 }
 
+/**
+ * The day a link may plan into: today to the end of next week, so the meal
+ * lands where the Plan tab can show it and take it off again (F-11). A past,
+ * far-off or malformed day falls back to today.
+ */
+export function plannableDay(requested: unknown, today: ISODate): ISODate {
+  if (!isISODate(requested)) return today;
+  const last = addDays(visibleWeeks(today).nextWeek, 6);
+  return requested >= today && requested <= last ? requested : today;
+}
+
 export function entriesInWeek(entries: readonly PlanEntry[], start: ISODate): PlanEntry[] {
   const end = addDays(start, 7);
   return entries.filter((e) => e.day >= start && e.day < end);

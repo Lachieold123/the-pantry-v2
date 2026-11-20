@@ -12,6 +12,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { INGREDIENTS, KITCHEN } from '@/data/catalogue/catalogue';
 import { cookable } from '@/domain/cupboard/cookable';
+import { clampServings } from '@/domain/recipes/servings';
 import { cupboardIds } from '@/domain/cupboard/match';
 import { goBack } from '@/lib/navigation';
 import { ingredientName } from '@/store/cookable';
@@ -87,7 +88,7 @@ export function CookScreen({ id, servings: requested }: { id: string; servings?:
 
   const total = recipe.steps.length;
   const last = step === total - 1;
-  const servings = requested && requested > 0 ? requested : recipe.servings;
+  const servings = clampServings(requested) ?? recipe.servings;
   // A light tick under the thumb confirms the step changed without looking (v1 did the same).
   const go = (to: number) => {
     if (to < 0 || to >= total) return;

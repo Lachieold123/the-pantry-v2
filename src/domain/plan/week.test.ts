@@ -6,6 +6,7 @@ import {
   entriesInWeek,
   fromISODate,
   isISODate,
+  plannableDay,
   pruneOldEntries,
   tonightsDinner,
   upcomingCount,
@@ -80,5 +81,22 @@ describe('the week you shop for', () => {
   it('is this week, except on Sunday when it is the week ahead', () => {
     assert.equal(shoppingWeek('2026-09-30'), '2026-09-28'); // Wednesday
     assert.equal(shoppingWeek('2026-10-04'), '2026-10-05'); // Sunday
+  });
+});
+
+describe('a day from a link (F-11)', () => {
+  // Thursday 19 Nov 2026: the Plan tab shows 16 to 29 Nov.
+  const today = '2026-11-19';
+  it('keeps a day the Plan tab shows', () => {
+    assert.equal(plannableDay('2026-11-19', today), '2026-11-19');
+    assert.equal(plannableDay('2026-11-29', today), '2026-11-29');
+  });
+  it('turns a past day, a far-off day or junk into today', () => {
+    assert.equal(plannableDay('2026-11-18', today), today);
+    assert.equal(plannableDay('2020-01-01', today), today);
+    assert.equal(plannableDay('2030-01-01', today), today);
+    assert.equal(plannableDay('2026-11-30', today), today);
+    assert.equal(plannableDay('garbage', today), today);
+    assert.equal(plannableDay(undefined, today), today);
   });
 });

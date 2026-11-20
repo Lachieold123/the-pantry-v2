@@ -8,7 +8,7 @@ import { INGREDIENTS } from '@/data/catalogue/catalogue';
 import { CUISINE_LABELS } from '@/domain/recipes/labels';
 import { indexForSearch, searchRecipes } from '@/domain/recipes/search';
 import type { Recipe } from '@/domain/recipes/types';
-import { fromISODate, isISODate, toISODate, type Slot } from '@/domain/plan/week';
+import { fromISODate, plannableDay, toISODate, type Slot } from '@/domain/plan/week';
 import { longDate } from '@/lib/dates';
 import { usePlan } from '@/store/plan';
 import { useRecipeLookup } from '@/store/recipeBook';
@@ -34,8 +34,8 @@ const SLOTS = [
 const MAX_RESULTS = 25;
 
 export function AddToPlanSheet({ day: requested, slot: requestedSlot }: { day: string | undefined; slot?: string | undefined }) {
-  // A malformed link falls back to today rather than crashing.
-  const day = isISODate(requested) ? requested : toISODate(new Date());
+  // A malformed, past or far-off day in a link falls back to today (F-11).
+  const day = plannableDay(requested, toISODate(new Date()));
   const router = useRouter();
   const once = useOnce();
   const toast = useToast();

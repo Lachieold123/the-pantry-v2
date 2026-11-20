@@ -2,6 +2,7 @@
 import { View } from 'react-native';
 
 import type { UnitSystem } from '@/domain/ingredients/format';
+import { MAX_SERVINGS } from '@/domain/recipes/servings';
 import { ModalSheet } from '@/ui/patterns/ModalSheet';
 import { Button } from '@/ui/primitives/Button';
 import { Segmented } from '@/ui/primitives/Segmented';
@@ -33,7 +34,7 @@ export function ServingsSheet({ visible, onClose, servings, original, onServings
             label="Servings"
             value={servings}
             onChange={onServings}
-            max={24}
+            max={MAX_SERVINGS}
             format={(n) => `Serves ${n}`}
             testID="servings-stepper"
           />
