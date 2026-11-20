@@ -1,49 +1,36 @@
-// My recipes, the library's third tab: your own recipes. Finished ones behave
-// like any other recipe; drafts (no method yet, say) open straight in the
-// editor to be finished.
+// My recipes, the library's third tab: your own recipes, in v1's layout
+// (`light-19`): the Add and Import rows first, then the recipes. Finished ones
+// behave like any other recipe, Surprise me included; drafts (no method yet,
+// say) open straight in the editor to be finished.
 import { useRouter } from 'expo-router';
 import { View } from 'react-native';
 
 import { useMyRecipeList } from '@/store/recipeBook';
-import { EmptyState } from '@/ui/patterns/EmptyState';
 import { RecipeCard } from '@/ui/patterns/RecipeCard';
 import { SectionHeader } from '@/ui/patterns/SectionHeader';
-import { Button } from '@/ui/primitives/Button';
 import { ListRow } from '@/ui/primitives/ListRow';
+import { Text } from '@/ui/primitives/Text';
 import { SPACE } from '@/ui/tokens/type';
-import { useAllowance } from '@/store/pro';
+import { MyRecipesEntry } from './MyRecipesEntry';
 
 export function MyRecipesTab() {
   const router = useRouter();
   const mine = useMyRecipeList();
-  const allowed = useAllowance();
-  // Free keeps 10 recipes of your own and imports 5 links a month (D-038).
-  const write = () => allowed('my-recipes') && router.push('/my-recipe/edit');
-  const importLink = () => allowed('my-recipes') && allowed('imports') && router.push('/my-recipe/import');
   const edit = (id: string) => router.push({ pathname: '/my-recipe/edit', params: { id } });
-
-  if (mine.length === 0) {
-    return (
-      <View testID="my-recipes-screen">
-        <EmptyState
-          title="Your own recipes live here"
-          body="Write down the ones you already cook, or bring one in from a website. They scale, go on the shopping list and work in Cook Mode like any other."
-          action={{ label: 'Write a recipe', onPress: write }}
-          testID="mine-empty"
-        />
-        <Button label="Import from a link" icon="link" kind="quiet" onPress={importLink} testID="mine-import" />
-      </View>
-    );
-  }
-
   const finished = mine.filter((m) => m.recipe);
   const drafts = mine.filter((m) => !m.recipe);
+
   return (
     <View testID="my-recipes-screen" style={{ gap: SPACE.lg }}>
-      <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: SPACE.sm }}>
-        <Button label="Write a recipe" icon="add" onPress={write} testID="mine-write" />
-        <Button label="Import from a link" icon="link" kind="quiet" onPress={importLink} testID="mine-import" />
-      </View>
+      <MyRecipesEntry />
+      {mine.length === 0 ? (
+        // v1's quiet centred line, since the rows above are the actions (spec §7, My recipes).
+        <View testID="mine-empty" style={{ paddingHorizontal: SPACE.lg, paddingVertical: SPACE.xxl }}>
+          <Text variant="body" colour="inkMuted" style={{ textAlign: 'center' }}>
+            Add your favourites above. They scale, go on the shopping list, work in Cook Mode and turn up in Surprise me.
+          </Text>
+        </View>
+      ) : null}
       {drafts.length ? (
         <View style={{ gap: SPACE.xs }}>
           <SectionHeader title="To finish" />

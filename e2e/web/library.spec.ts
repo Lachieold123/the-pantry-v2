@@ -25,6 +25,7 @@ test('the library switches tabs in place, and a link opens the tab it names', as
   await expect(page.getByTestId('collections-empty')).toBeVisible();
   await page.getByTestId('library-tab-mine').click();
   await expect(page.getByTestId('mine-empty')).toBeVisible();
+  await expect(page.getByLabel('Recipe link')).toBeVisible();
   await page.getByTestId('library-tab-recent').click();
   await expect(page.getByTestId('recipe-card-carbonara')).toBeVisible();
   await expect(page.getByLabel('1 recipe', { exact: true })).toBeVisible();

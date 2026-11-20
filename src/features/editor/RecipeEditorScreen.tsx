@@ -46,9 +46,16 @@ function UnsureNote({ lines }: { lines: UnsureLine[] }) {
   );
 }
 
-export function RecipeEditorScreen({ id, fromImport }: { id: string | undefined; fromImport: boolean }) {
+type Props = {
+  id: string | undefined;
+  fromImport: boolean;
+  /** The name typed into My recipes' "Add" row, for a new recipe. */
+  startTitle?: string | undefined;
+};
+
+export function RecipeEditorScreen({ id, fromImport, startTitle }: Props) {
   const router = useRouter();
-  const editor = useRecipeEditor(id, fromImport);
+  const editor = useRecipeEditor(id, fromImport, startTitle);
   const { draft, update } = editor;
   const [confirmingCancel, setConfirmingCancel] = useState(false);
   const [confirmingDelete, setConfirmingDelete] = useState(false);

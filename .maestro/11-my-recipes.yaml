@@ -1,4 +1,4 @@
-# The library's My recipes tab: import rejects a bad link; write a recipe (validation first),
+# The library's My recipes tab (v1's rows): import rejects a bad link; write a recipe (validation first),
 # save, open, edit, delete with undo; cancelling with changes asks first.
 appId: host.exp.Exponent
 ---
@@ -17,23 +17,20 @@ appId: host.exp.Exponent
     timeout: 15000
 - takeScreenshot: my-recipes-empty
 
-# Import from a link: a bad link is refused in plain words.
+# Import from a link, inline as in v1: a bad link is refused in plain words.
 - tapOn:
-    id: "mine-import"
-- assertVisible: "Import from a link"
-- tapOn:
-    id: "import-link"
+    id: "mine-link"
 - inputText: "not a link"
 - tapOn:
-    id: "import-submit"
+    id: "mine-link-submit"
+- assertVisible:
+    id: "mine-link-error"
 - assertVisible: ".*look like a web link.*"
 - takeScreenshot: import-bad-link
-- tapOn:
-    id: "sheet-close"
 
-# Write a recipe: saving empty shows what's missing.
+# Write a recipe: Add with no name opens a blank editor; saving empty shows what's missing.
 - tapOn:
-    id: "mine-empty-action"
+    id: "mine-name-submit"
 - assertVisible: "New recipe"
 - tapOn:
     id: "editor-save"
@@ -123,13 +120,13 @@ appId: host.exp.Exponent
     id: "mine-recipe-.*"
 - takeScreenshot: my-recipes-one
 
-# Cancelling with changes asks before throwing them away.
+# A name typed into Add starts the recipe, and cancelling it asks before throwing it away.
 - tapOn:
-    id: "mine-write"
-- tapOn:
-    id: "editor-title"
+    id: "mine-name"
 - inputText: "Test"
-- tapOn: "New recipe"
+- tapOn:
+    id: "mine-name-submit"
+- assertVisible: "Test"
 - tapOn:
     id: "editor-cancel"
 - assertVisible: 'Throw away your changes\?'
