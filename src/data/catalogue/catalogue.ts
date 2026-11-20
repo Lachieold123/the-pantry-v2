@@ -4,8 +4,10 @@
 // set in eas.json) show the drafts too.
 import { buildKitchen, type KitchenData } from '@/domain/cupboard/kitchen';
 import { buildIngredientIndex, type IngredientDef } from '@/domain/ingredients/database';
+import { withAliases, type HierarchyData } from '@/domain/ingredients/hierarchy';
 import type { Recipe } from '@/domain/recipes/types';
 import ingredientsJson from '../ingredients/ingredients.json';
+import hierarchyJson from '../ingredients/hierarchy.json';
 import kitchenJson from '../ingredients/kitchen.json';
 import recipesJson from './recipes.json';
 
@@ -31,7 +33,10 @@ export function catalogueTitle(id: string): string | undefined {
   return allById.get(id)?.title;
 }
 
-export const INGREDIENTS = buildIngredientIndex(ingredientsJson as unknown as IngredientDef[]);
+const HIERARCHY = hierarchyJson as unknown as HierarchyData;
+
+/** The database plus the model's extra AU/UK/US names, so "bell pepper" or "cilantro" in a pantry list is understood. */
+export const INGREDIENTS = buildIngredientIndex(withAliases(ingredientsJson as unknown as IngredientDef[], HIERARCHY));
 
 /** How each ingredient behaves in a kitchen: swaps, shelf items, cupboard jars (D-030). */
-export const KITCHEN = buildKitchen(INGREDIENTS, kitchenJson as unknown as KitchenData);
+export const KITCHEN = buildKitchen(INGREDIENTS, kitchenJson as unknown as KitchenData, HIERARCHY);

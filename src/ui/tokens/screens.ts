@@ -124,6 +124,22 @@ export const PLATE = {
   railCard: 150,
 } as const;
 
+/** Recipes other cooks have published: Home's section, the full feed and a cook's profile. */
+export const FEED = {
+  /** How many of the newest show on Home before "See more". */
+  homeCount: 3,
+  captionLines: 3,
+  avatar: 32,
+  profileAvatar: 72,
+  /** Start the next page this far (in screen heights) before the end. */
+  endThreshold: 0.6,
+  /** Home's ranked section: how many cards show at first, and how many each "Show more" adds. */
+  rankedPage: 8,
+  /** Home's "Can cook now" and "Missing 1-2" lists: rows before "Show all", and the most "Show all" shows. */
+  tierPreview: 3,
+  tierMax: 12,
+} as const;
+
 /** The first-use tour (D-035): spotlight padding and ring, the dots, and a beat before it starts. */
 export const TOUR = {
   pad: 6,

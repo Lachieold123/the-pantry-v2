@@ -12,10 +12,18 @@
 import type { IngredientIndex } from '../ingredients/database';
 import { stableJitter } from '../suggestions/jitter';
 import { allLines, totalMinutes, type Recipe } from '../recipes/types';
+import { blocksMatch, COVER_CREDIT } from '../ingredients/hierarchy';
 import type { Kitchen } from './kitchen';
 
 /** The "always in my kitchen" setting: assume a stocked shelf, or only what you've ticked. */
-export type Shelf = { mode: 'assume' | 'mine'; ids: readonly string[] };
+export type Shelf = {
+  mode: 'assume' | 'mine';
+  ids: readonly string[];
+  /** Cooking oil counts as always in (the default). Off: recipes need oil like anything else. */
+  oil?: boolean;
+  /** Substitutes (dried thyme for fresh) count as having it. Off by default: they only earn partial credit. */
+  substitutes?: boolean;
+};
 export const DEFAULT_SHELF: Shelf = { mode: 'assume', ids: [] };
 
 export type Cookable = {
@@ -27,6 +35,8 @@ export type Cookable = {
   shelf: string[];
   /** Everything else: the things to buy. */
   missing: string[];
+  /** Missing things you have a substitute for (also in `missing` unless substitutes are on). */
+  partial?: { need: string; use: string }[];
   /** How many fresh (perishable) things from the cupboard it uses up. */
   perishablesUsed: number;
 };
@@ -39,30 +49,58 @@ export function onShelf(id: string, shelf: Shelf, kitchen: Kitchen): boolean {
   return shelf.mode === 'assume' || shelf.ids.includes(id);
 }
 
-/** Sorts each ingredient a recipe needs. Optional and unquantified lines ("to serve") don't count. */
-export function cookable(recipe: Recipe, have: ReadonlySet<string>, shelf: Shelf, index: IngredientIndex, kitchen: Kitchen): Cookable {
+/**
+ * Sorts each ingredient a recipe needs. Optional, garnish, "to serve" and
+ * unmeasured lines don't count. With the ingredient model (kitchen.model) a
+ * kind covers its generic, a variety generic covers its kinds, and
+ * substitutes earn partial credit; bad generator links are fixed first.
+ */
+export function cookable(
+  recipe: Pick<Recipe, 'ingredientGroups'>,
+  have: ReadonlySet<string>,
+  shelf: Shelf,
+  index: IngredientIndex,
+  kitchen: Kitchen,
+): Cookable {
   const result: Cookable = { have: [], swaps: [], shelf: [], missing: [], perishablesUsed: 0 };
+  const model = kitchen.model;
   const seen = new Set<string>();
   for (const line of allLines(recipe)) {
-    const id = line.ingredientId;
-    if (!id || line.optional || line.quantity === undefined || seen.has(id)) continue;
+    const id = model ? model.relink(line) : line.ingredientId;
+    if (!id || seen.has(id)) continue;
+    if (model ? !blocksMatch(line) : line.optional || line.quantity === undefined) continue;
     seen.add(id);
-    if (index.byId.get(id)?.staple) continue;
+    const def = index.byId.get(id);
+    if (def?.staple && !(model?.isOil(id) && shelf.oil === false)) continue;
     if (have.has(id)) {
       result.have.push(id);
       if (kitchen.isPerishable(id)) result.perishablesUsed++;
       continue;
     }
-    const stand = kitchen.swapsFor(id).find((s) => have.has(s));
-    if (stand) {
-      result.swaps.push({ need: id, use: stand });
-      if (kitchen.isPerishable(stand)) result.perishablesUsed++;
+    const cover = model ? model.bestCover(id, have) : undefined;
+    const stand = cover && cover.kind !== 'substitute' ? cover.id : model ? undefined : kitchen.swapsFor(id).find((s) => have.has(s));
+    if (stand || (cover && shelf.substitutes)) {
+      const use = stand ?? cover!.id;
+      result.swaps.push({ need: id, use });
+      if (kitchen.isPerishable(use)) result.perishablesUsed++;
       continue;
     }
-    if (onShelf(id, shelf, kitchen)) result.shelf.push(id);
-    else result.missing.push(id);
+    if (onShelf(id, shelf, kitchen)) {
+      result.shelf.push(id);
+      continue;
+    }
+    result.missing.push(id);
+    if (cover) (result.partial ??= []).push({ need: id, use: cover.id });
   }
   return result;
+}
+
+/** 0..1: how much of what the recipe needs you have, substitutes at partial credit. Shelf items count as had. */
+export function coverShare(c: Cookable): number {
+  const partial = (c.partial ?? []).length;
+  const total = c.have.length + c.swaps.length + c.shelf.length + c.missing.length;
+  if (total === 0) return 0;
+  return (c.have.length + c.swaps.length + c.shelf.length + partial * COVER_CREDIT.substitute) / total;
 }
 
 /**
@@ -72,7 +110,9 @@ export function cookable(recipe: Recipe, have: ReadonlySet<string>, shelf: Shelf
  * have" never disagree.
  */
 export function coverFor(id: string, have: ReadonlySet<string>, shelf: Shelf, kitchen: Kitchen): string | undefined {
-  const stand = kitchen.swapsFor(id).find((s) => have.has(s));
+  const cover = kitchen.model?.bestCover(id, have);
+  const viaModel = cover && cover.id !== id && (cover.kind !== 'substitute' || shelf.substitutes) ? cover.id : undefined;
+  const stand = kitchen.model ? viaModel : kitchen.swapsFor(id).find((s) => have.has(s));
   if (stand) return stand;
   return onShelf(id, shelf, kitchen) ? 'shelf' : undefined;
 }
@@ -128,7 +168,9 @@ export function whatCanICook(input: CookInput): { ready: CookableMatch[]; nearly
 /** The line a card shows instead of v1's percentage: "Ready", "Need 1: lemon", "Need 2: lemon, feta". */
 export function needLine(c: Cookable, nameOf: (id: string) => string): string {
   if (c.missing.length === 0) return 'Ready to cook';
-  return `Need ${c.missing.length}: ${c.missing.map(nameOf).join(', ')}`;
+  const subFor = new Map((c.partial ?? []).map((p) => [p.need, p.use]));
+  const words = c.missing.map((id) => (subFor.has(id) ? `${nameOf(id)} (or your ${nameOf(subFor.get(id)!)})` : nameOf(id)));
+  return `Need ${c.missing.length}: ${words.join(', ')}`;
 }
 
 /**

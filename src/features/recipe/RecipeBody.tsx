@@ -23,12 +23,12 @@ function Heading({ children }: { children: string }) {
 }
 
 type IngredientsProps = {
-  recipe: Recipe;
+  recipe: Pick<Recipe, 'servings' | 'ingredientGroups'>;
   servings: number;
   units: UnitSystem;
   have: ReadonlySet<string>;
-  /** Opens "Add to list" (D-037). */
-  onAddToList: () => void;
+  /** Opens "Add to list" (D-037). Left out where the recipe isn't in this phone's book (another cook's). */
+  onAddToList?: (() => void) | undefined;
 };
 
 export function Ingredients({ recipe, servings, units, have, onAddToList }: IngredientsProps) {
@@ -46,18 +46,20 @@ export function Ingredients({ recipe, servings, units, have, onAddToList }: Ingr
     <View style={styles.section}>
       <View style={styles.headRow}>
         <Heading>Ingredients</Heading>
-        <Pressable
-          onPress={onAddToList}
-          accessibilityRole="button"
-          accessibilityLabel="Add ingredients to your shopping list"
-          testID="recipe-add-to-list"
-          style={({ pressed }) => [styles.addToList, pressed && { opacity: PRESSED.row }]}
-        >
-          <Icon name="basket" size={RECIPE.addIcon} colour="accentText" />
-          <Text variant="label" colour="accentText">
-            Add to list
-          </Text>
-        </Pressable>
+        {onAddToList ? (
+          <Pressable
+            onPress={onAddToList}
+            accessibilityRole="button"
+            accessibilityLabel="Add ingredients to your shopping list"
+            testID="recipe-add-to-list"
+            style={({ pressed }) => [styles.addToList, pressed && { opacity: PRESSED.row }]}
+          >
+            <Icon name="basket" size={RECIPE.addIcon} colour="accentText" />
+            <Text variant="label" colour="accentText">
+              Add to list
+            </Text>
+          </Pressable>
+        ) : null}
       </View>
       {recipe.ingredientGroups.map((group, gi) => (
         <View key={gi}>
@@ -112,7 +114,7 @@ export function Ingredients({ recipe, servings, units, have, onAddToList }: Ingr
   );
 }
 
-export function Method({ recipe }: { recipe: Recipe }) {
+export function Method({ recipe }: { recipe: Pick<Recipe, 'steps'> }) {
   const styles = useStyles();
   return (
     <View style={styles.section}>

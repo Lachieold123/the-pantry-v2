@@ -4,6 +4,7 @@
 // text the way v1 did ("sage" matching sausage).
 
 import type { AisleId, IngredientIndex } from '../ingredients/database';
+import { buildIngredientModel, type HierarchyData, type IngredientModel } from '../ingredients/hierarchy';
 
 /** v1's seven cupboard jars, plus Other so nothing is silently misfiled. */
 export const CUPBOARD_CATEGORIES = ['proteins', 'vegetables', 'fruit', 'dairy', 'herbs', 'sauces', 'pantry', 'other'] as const;
@@ -31,6 +32,8 @@ export type Kitchen = {
   category: (id: string) => CupboardCategory;
   /** Every shelf ingredient, for the "always in my kitchen" sheet. */
   shelfIds: readonly string[];
+  /** Parents, varieties and substitutes (ingredients/hierarchy.ts). Absent in old tests: plain swaps only. */
+  model?: IngredientModel;
 };
 
 const AISLE_CATEGORY: Readonly<Record<AisleId, CupboardCategory>> = {
@@ -52,7 +55,7 @@ const AISLE_CATEGORY: Readonly<Record<AisleId, CupboardCategory>> = {
   other: 'other',
 };
 
-export function buildKitchen(index: IngredientIndex, data: KitchenData): Kitchen {
+export function buildKitchen(index: IngredientIndex, data: KitchenData, hierarchy?: HierarchyData): Kitchen {
   const swaps = new Map<string, string[]>();
   for (const members of Object.values(data.families)) {
     for (const id of members) {
@@ -99,5 +102,6 @@ export function buildKitchen(index: IngredientIndex, data: KitchenData): Kitchen
     },
     category,
     shelfIds,
+    ...(hierarchy ? { model: buildIngredientModel(index, hierarchy, data.families) } : {}),
   };
 }
