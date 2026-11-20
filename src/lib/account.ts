@@ -155,6 +155,12 @@ export function continueWithApple(): Promise<Result<SignedIn>> {
     }
     const given = credential.fullName ? AppleAuthentication.formatFullName(credential.fullName).trim() : '';
     if (given) await saveDisplayName(user.id, given);
+    // Kept so deleting the account can revoke Apple's sign-in (S2-4). Best effort: it never blocks signing in.
+    if (credential.authorizationCode) {
+      await supabase()
+        .functions.invoke('apple-token', { body: { authorizationCode: credential.authorizationCode } })
+        .catch(() => undefined);
+    }
     // The linked user may not carry the new identity yet; read it fresh.
     const fresh = (await auth.getUser()).data.user ?? user;
     return { ok: true, value: { account: await accountOf(fresh), switched } };
@@ -201,10 +207,16 @@ export function signOut(): Promise<Result<null>> {
   });
 }
 
-/** Leaves any household, deletes the account's rows and profile and the user itself (the RPC), then signs out here. */
+/**
+ * Leaves any household, deletes the account's rows and profile and the user itself, then signs out here.
+ * The `delete-account` function also revokes Apple's sign-in first (S2-4); until it is deployed, the RPC alone does the rest.
+ */
 export function deleteAccount(): Promise<Result<null>> {
   return attempt(async () => {
-    const { error } = await supabase().rpc('delete_account');
+    const viaFunction = await supabase().functions.invoke('delete-account', { method: 'POST' });
+    const status = (viaFunction.error as { context?: { status?: number } } | null)?.context?.status;
+    if (viaFunction.error && status !== 404) return fail(problemFrom(viaFunction.error));
+    const { error } = viaFunction.error ? await supabase().rpc('delete_account') : { error: null };
     if (error) return fail(problemFrom(error));
     await supabase()
       .auth.signOut({ scope: 'local' })
