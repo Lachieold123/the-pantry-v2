@@ -4,6 +4,8 @@ Kept by build. Newest first. Each entry says what a tester must know, not what c
 
 ## Next build (from `audit/deep-1120`, not built yet)
 
+Build 27 was tried on 23 November and failed at signing before it reached TestFlight (K-46): the first build with Sign in with Apple needs one run with Lachlan's Apple login.
+
 **Household: don't use build 25 once the database migrations are applied.** (Audit S2-10, 20 November 2026.)
 
 Build 25 (`38bef97`) was made before the D-048 database rules. Once the live migrations in `supabase/APPLY-LIVE.md` are applied, build 25's Household breaks in ways a tester won't see straight away:
