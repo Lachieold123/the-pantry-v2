@@ -2,9 +2,9 @@
 
 Kept by build. Newest first. Each entry says what a tester must know, not what changed in the code.
 
-## Next build (from `audit/deep-1120`, not built yet)
+## Build 28 (23 November 2026, `a00cf1a`, from `audit/deep-1120`): sent to TestFlight
 
-Build 27 was tried on 23 November and failed at signing before it reached TestFlight (K-46): the first build with Sign in with Apple needs one run with Lachlan's Apple login.
+Made with the production profile, before the live database migrations. Build 27 failed at signing the same morning because the signing profile had no Sign in with Apple; Lachlan logged in to Apple for build 28, which remade the profile, so later builds can run unattended again.
 
 **Household: don't use build 25 once the database migrations are applied.** (Audit S2-10, 20 November 2026.)
 
@@ -14,6 +14,6 @@ Build 25 (`38bef97`) was made before the D-048 database rules. Once the live mig
 - one bad row can stop its syncing for good, because it sends every row in one batch;
 - a wrong invite code reads as a success with no household, and codes become single-use.
 
-So: **test Household only on a new build made after the migrations are applied.** Build 25 is still fine for everything that doesn't touch Household (cupboard, plan, list, cooking). Nobody has used Household on build 25 (the live project had 0 households on 20 November), so no one loses anything.
+So: **test Household on build 28 or later, never on build 25.** Until the migrations are applied, build 28's Cancel codes and Remove answer "That isn't available yet" and the join preview doesn't load; joining still works. Build 25 is still fine for everything that doesn't touch Household (cupboard, plan, list, cooking). Nobody has used Household on build 25 (the live project had 0 households on 20 November), so no one loses anything.
 
 What a tester sees in this build that's new: the other cooks' screens and the scan buttons are gone from store builds and from TestFlight builds made with the production profile (preview builds keep them); Pro says "not on sale yet" until the legal pages are published.
